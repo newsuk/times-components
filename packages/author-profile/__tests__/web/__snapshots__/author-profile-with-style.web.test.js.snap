@@ -1,64 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. an article list header 1`] = `
-.c1 {
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
-}
-
-.c0 {
-  width: 100%;
-  padding-top: 30px;
-}
-
-.c3 {
-  color: #1D1D1B;
-  font-family: "TimesModern-Bold";
-  font-size: 30px;
-}
-
-.c4 {
-  width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c2 {
-  width: 100px;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    padding-top: 60px;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    font-size: 45px;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: 680px;
-  }
-}
-
-@media (min-width:1320px) {
-  .c4 {
-    max-width: 760px;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    width: 116px;
-  }
-}
-
 <style>
 .S1 {
   -webkit-font-smoothing: antialiased;
@@ -69,6 +11,7 @@ exports[`1. an article list header 1`] = `
 
 .S2 {
   -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
   -webkit-align-self: center;
   align-self: center;
 }
@@ -121,23 +64,23 @@ exports[`1. an article list header 1`] = `
 </style>
 
 <div
-  className="c0 responsiveweb__AuthorHeadWrapper-rnqjol-0 c0 css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-paddingBottom-1uwte3a r-width-13qz1uu S6"
+  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-paddingBottom-1uwte3a r-width-13qz1uu S6"
 >
   <div
-    className="c1 indexweb__FadeIn-v0crhg-0 c1 css-view-1dbjc4n r-width-13qz1uu S6"
+    className="css-view-1dbjc4n r-width-13qz1uu S6"
   >
     <div
       className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-1niwhzg r-pointerEvents-12vffkv r-width-13qz1uu S5"
     >
       <div
-        className="c2 responsiveweb__ImageContainer-rnqjol-3 c2 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <Image
           className="IS1"
         />
       </div>
       <h1
-        className="c3 css-reset-4rbku5 responsiveweb__AuthorNameWrapper-rnqjol-1 c3 css-text-901oao"
+        className="css-reset-4rbku5 css-text-901oao"
       >
         Name
       </h1>
@@ -162,7 +105,7 @@ exports[`1. an article list header 1`] = `
         </TextLink>
       </div>
       <div
-        className="c4 responsiveweb__BioContainer-rnqjol-2 c4 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <div
           className="css-text-901oao r-color-1khnkhu r-fontFamily-1feecvn r-fontSize-ubezar r-lineHeight-1kt6imw r-textAlign-q4m81j S4"
@@ -176,17 +119,6 @@ exports[`1. an article list header 1`] = `
 `;
 
 exports[`2. an article list header loading 1`] = `
-.c0 {
-  width: 100%;
-  padding-top: 30px;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    padding-top: 60px;
-  }
-}
-
 <style>
 .S1 {
   height: 100px;
@@ -207,7 +139,7 @@ exports[`2. an article list header loading 1`] = `
 </style>
 
 <div
-  className="c0 responsiveweb__AuthorHeadWrapper-rnqjol-0 c0 css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-paddingBottom-1uwte3a r-width-13qz1uu S3"
+  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-paddingBottom-1uwte3a r-width-13qz1uu S3"
 >
   <div
     className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-minHeight-1lv5adl r-width-13qz1uu S2"

@@ -1,122 +1,68 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a primary image 1`] = `
-.c8 {
-  width: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 > .c3 {
+.c4 > .c0 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c7 {
-  display: block;
-  -webkit-order: 4;
-  -ms-flex-order: 4;
-  order: 4;
-}
-
-.c6 {
+.c3 {
   background-color: #FFFFFF;
   height: 60px;
 }
 
-.c6 [data-tc-sticky-sizer] {
+.c3 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c6.tc-sticky {
+.c3.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c6[MOCK-PROGRESS-SELECTOR] {
+.c3[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.010000000000000002);
 }
 
-.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c3[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: rgba(219,219,219,0.9);
 }
 
-.c5 {
+.c2 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c5 + .c4 {
+.c2 + .c1 {
   margin-top: -1px !important;
 }
 
-.c5:last-child {
+.c2:last-child {
   margin-bottom: 30px;
 }
 
-.c5.contains-tc-sticky {
+.c2.contains-tc-sticky {
   border-bottom-color: transparent;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 @media (min-width:768px) {
-  .c8 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c8 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c1 {
-    padding-top: 20px;
+  .c2 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
+  .c2 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c2 {
     width: 56.2%;
   }
 }
@@ -136,27 +82,27 @@ exports[`1. a primary image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="css-view-1dbjc4n"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="c3 c4 c5"
+          className="c0 c1 c2"
         >
           <div
             className="IS2"
           />
           <div>
             <div
-              className="c6"
+              className="c3"
             >
               <div>
                 <SaveAndShareBar />
@@ -166,11 +112,11 @@ exports[`1. a primary image 1`] = `
         </div>
       </div>
       <article
-        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c8 responsiveweb__PrimaryImg-sc-16nqyj8-5 c8 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -187,105 +133,68 @@ exports[`1. a primary image 1`] = `
 `;
 
 exports[`2. a fullwidth image 1`] = `
-.c8 {
-  padding-bottom: 20px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 > .c3 {
+.c4 > .c0 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c7 {
-  display: block;
-  -webkit-order: 4;
-  -ms-flex-order: 4;
-  order: 4;
-}
-
-.c6 {
+.c3 {
   background-color: #FFFFFF;
   height: 60px;
 }
 
-.c6 [data-tc-sticky-sizer] {
+.c3 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c6.tc-sticky {
+.c3.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c6[MOCK-PROGRESS-SELECTOR] {
+.c3[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.010000000000000002);
 }
 
-.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c3[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: rgba(219,219,219,0.9);
 }
 
-.c5 {
+.c2 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c5 + .c4 {
+.c2 + .c1 {
   margin-top: -1px !important;
 }
 
-.c5:last-child {
+.c2:last-child {
   margin-bottom: 30px;
 }
 
-.c5.contains-tc-sticky {
+.c2.contains-tc-sticky {
   border-bottom-color: transparent;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-@media (min-width:1024px) {
-  .c1 {
-    padding-top: 20px;
+@media (min-width:768px) {
+  .c2 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
+  .c2 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c2 {
     width: 56.2%;
   }
 }
@@ -305,27 +214,27 @@ exports[`2. a fullwidth image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="css-view-1dbjc4n"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="c3 c4 c5"
+          className="c0 c1 c2"
         >
           <div
             className="IS2"
           />
           <div>
             <div
-              className="c6"
+              className="c3"
             >
               <div>
                 <SaveAndShareBar />
@@ -335,11 +244,11 @@ exports[`2. a fullwidth image 1`] = `
         </div>
       </div>
       <article
-        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c8 responsiveweb__FullWidthImg-sc-16nqyj8-6 c8 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -356,129 +265,68 @@ exports[`2. a fullwidth image 1`] = `
 `;
 
 exports[`3. a secondary image 1`] = `
-.c8 {
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 25px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 > .c3 {
+.c4 > .c0 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c7 {
-  display: block;
-  -webkit-order: 4;
-  -ms-flex-order: 4;
-  order: 4;
-}
-
-.c6 {
+.c3 {
   background-color: #FFFFFF;
   height: 60px;
 }
 
-.c6 [data-tc-sticky-sizer] {
+.c3 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c6.tc-sticky {
+.c3.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c6[MOCK-PROGRESS-SELECTOR] {
+.c3[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.010000000000000002);
 }
 
-.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c3[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: rgba(219,219,219,0.9);
 }
 
-.c5 {
+.c2 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c5 + .c4 {
+.c2 + .c1 {
   margin-top: -1px !important;
 }
 
-.c5:last-child {
+.c2:last-child {
   margin-bottom: 30px;
 }
 
-.c5.contains-tc-sticky {
+.c2.contains-tc-sticky {
   border-bottom-color: transparent;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 @media (min-width:768px) {
-  .c8 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c8 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c1 {
-    padding-top: 20px;
+  .c2 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
+  .c2 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c2 {
     width: 56.2%;
   }
 }
@@ -498,27 +346,27 @@ exports[`3. a secondary image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="css-view-1dbjc4n"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="c3 c4 c5"
+          className="c0 c1 c2"
         >
           <div
             className="IS2"
           />
           <div>
             <div
-              className="c6"
+              className="c3"
             >
               <div>
                 <SaveAndShareBar />
@@ -528,11 +376,11 @@ exports[`3. a secondary image 1`] = `
         </div>
       </div>
       <article
-        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c8 responsiveweb__SecondaryImg-sc-16nqyj8-7 c8 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -549,130 +397,68 @@ exports[`3. a secondary image 1`] = `
 `;
 
 exports[`4. an inline image 1`] = `
-.c8 {
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 0;
-  display: block;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 > .c3 {
+.c4 > .c0 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c7 {
-  display: block;
-  -webkit-order: 4;
-  -ms-flex-order: 4;
-  order: 4;
-}
-
-.c6 {
+.c3 {
   background-color: #FFFFFF;
   height: 60px;
 }
 
-.c6 [data-tc-sticky-sizer] {
+.c3 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c6.tc-sticky {
+.c3.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c6[MOCK-PROGRESS-SELECTOR] {
+.c3[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.010000000000000002);
 }
 
-.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c3[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: rgba(219,219,219,0.9);
 }
 
-.c5 {
+.c2 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c5 + .c4 {
+.c2 + .c1 {
   margin-top: -1px !important;
 }
 
-.c5:last-child {
+.c2:last-child {
   margin-bottom: 30px;
 }
 
-.c5.contains-tc-sticky {
+.c2.contains-tc-sticky {
   border-bottom-color: transparent;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 @media (min-width:768px) {
-  .c8 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c8 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c1 {
-    padding-top: 20px;
+  .c2 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
+  .c2 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c2 {
     width: 56.2%;
   }
 }
@@ -692,27 +478,27 @@ exports[`4. an inline image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="css-view-1dbjc4n"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="c3 c4 c5"
+          className="c0 c1 c2"
         >
           <div
             className="IS2"
           />
           <div>
             <div
-              className="c6"
+              className="c3"
             >
               <div>
                 <SaveAndShareBar />
@@ -722,11 +508,11 @@ exports[`4. an inline image 1`] = `
         </div>
       </div>
       <article
-        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c8 responsiveweb__InlineImg-sc-16nqyj8-8 c8 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>

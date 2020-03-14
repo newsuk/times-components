@@ -2,10 +2,10 @@
 
 exports[`Inline Newsletter Puff renders the Signup view when the user is NOT subscribed to the newsletter 1`] = `
 <div
-  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
+  className="css-view-1dbjc4n"
 >
   <div
-    className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv css-view-1dbjc4n"
+    className="css-view-1dbjc4n"
   >
     <Image
       aspectRatio={1.42}
@@ -13,28 +13,28 @@ exports[`Inline Newsletter Puff renders the Signup view when the user is NOT sub
     />
   </div>
   <div
-    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fgHAmw inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fgHAmw css-view-1dbjc4n"
+    className="css-view-1dbjc4n"
   >
     <div
-      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-6 fGDuEb inline-newsletter-puff__InpSignupLabel-sc-13hmjc-6 fGDuEb css-text-901oao"
+      className="css-text-901oao"
       dir="auto"
     >
       STRAIGHT IN YOUR INBOX
     </div>
     <div
-      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-7 kSVfs inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-7 kSVfs css-text-901oao"
+      className="css-text-901oao"
       dir="auto"
     >
       Politics. Explained.
     </div>
     <div
-      className="inline-newsletter-puff__InpCopy-sc-13hmjc-8 hLhbxF inline-newsletter-puff__InpCopy-sc-13hmjc-8 hLhbxF css-text-901oao"
+      className="css-text-901oao"
       dir="auto"
     >
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </div>
     <div
-      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO css-view-1dbjc4n"
+      className="css-view-1dbjc4n"
     >
       <a
         className="linkweb__RespLink-yfb9n-0 cCCShB"
@@ -43,10 +43,10 @@ exports[`Inline Newsletter Puff renders the Signup view when the user is NOT sub
         target={null}
       >
         <div
-          className="inline-newsletter-puff__InpSignup-sc-13hmjc-10 imrJVF inline-newsletter-puff__InpSignup-sc-13hmjc-10 imrJVF css-view-1dbjc4n"
+          className="css-view-1dbjc4n"
         >
           <div
-            className="inline-newsletter-puff__InpSignupText-sc-13hmjc-11 jaxEiV inline-newsletter-puff__InpSignupText-sc-13hmjc-11 jaxEiV css-text-901oao"
+            className="css-text-901oao"
             dir="auto"
           >
             Sign up to newsletter
@@ -60,10 +60,10 @@ exports[`Inline Newsletter Puff renders the Signup view when the user is NOT sub
 
 exports[`Inline Newsletter Puff renders the subscribed view when the user is subscribed to the newsletter 1`] = `
 <div
-  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
+  className="css-view-1dbjc4n"
 >
   <div
-    className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv css-view-1dbjc4n"
+    className="css-view-1dbjc4n"
   >
     <Image
       aspectRatio={1.42}
@@ -71,30 +71,30 @@ exports[`Inline Newsletter Puff renders the subscribed view when the user is sub
     />
   </div>
   <div
-    className="inline-newsletter-puff__InpSubscribedContainer-sc-13hmjc-2 cJNdAl inline-newsletter-puff__InpSubscribedContainer-sc-13hmjc-2 cJNdAl css-view-1dbjc4n"
+    className="css-view-1dbjc4n"
   >
     <div
-      className="inline-newsletter-puff__InpSubcribedHeadline-sc-13hmjc-3 clepKB inline-newsletter-puff__InpSubcribedHeadline-sc-13hmjc-3 clepKB css-text-901oao"
+      className="css-text-901oao"
       dir="auto"
     >
       You’ve successfully signed up
     </div>
     <div
-      className="inline-newsletter-puff__InpSubcribedCopy-sc-13hmjc-4 iDtSG inline-newsletter-puff__InpSubcribedCopy-sc-13hmjc-4 iDtSG css-text-901oao"
+      className="css-text-901oao"
       dir="auto"
     >
       Congratulations you can now enjoy daily updates from Red Box.
     </div>
     <div
-      className="inline-newsletter-puff__InpPreferencesContainer-sc-13hmjc-12 cZJpjJ inline-newsletter-puff__InpPreferencesContainer-sc-13hmjc-12 cZJpjJ css-view-1dbjc4n"
+      className="css-view-1dbjc4n"
     >
       <div
-        className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-13 eQpQAT inline-newsletter-puff__InpPreferencesText-sc-13hmjc-13 eQpQAT css-text-901oao"
+        className="css-text-901oao"
         dir="auto"
       >
         Manage preferences here
         <div
-          className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-14 kmTbJd inline-newsletter-puff__InpIconContainer-sc-13hmjc-14 kmTbJd css-view-1dbjc4n r-display-xoduu5"
+          className="css-view-1dbjc4n r-display-xoduu5"
         >
           <svg
             aria-label="icon-forward-arrow"
