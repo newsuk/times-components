@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 
-
 export const topicsPropTypes = {
   onPress: PropTypes.func.isRequired,
   style: PropTypes.shape({}),
