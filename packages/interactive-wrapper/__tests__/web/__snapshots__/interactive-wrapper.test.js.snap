@@ -17,9 +17,15 @@ exports[`interactive-wrapper polyfillWCIfNecessary adds the polyfill to the page
 exports[`interactive-wrapper re-shows the placeholder on re-render 1`] = `
 <div>
   <div
-    style="height: 150px; position: relative; display: block !important;"
+    style="height: 150px; position: relative; display: none !important;"
   />
-  <div />
+  <div>
+    <chapter-header
+      chaptercounter="Chapter%20one"
+      heading="A heading"
+      standfirst="A standfirst"
+    />
+  </div>
 </div>
 `;
 
