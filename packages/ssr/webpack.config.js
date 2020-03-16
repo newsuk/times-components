@@ -50,7 +50,7 @@ module.exports = {
       cacheGroups: {
         vendors: {
           test: /[\\/]node_modules[\\/]/,
-          chunks: 'all'
+          chunks: "all"
         },
         commons: {
           chunks: "initial",
