@@ -8,7 +8,6 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import { ContextProviderWithDefaults } from "@times-components/context";
 import { UserState } from "./mocks";
 import ArticleExtras from "../src/article-extras";
 import { relatedArticleSlice, topics } from "../fixtures/article-extras";
@@ -46,32 +45,6 @@ export default () => {
             spotAccountId="dummy-spot-id"
             topics={topics}
           />
-        );
-
-        expect(testInstance.toJSON()).toMatchSnapshot();
-      }
-    },
-    {
-      name: "renders correctly with newskit",
-      test: () => {
-        UserState.mockStates = [UserState.fullArticle];
-        const testInstance = TestRenderer.create(
-          <ContextProviderWithDefaults
-            value={{
-              newskit: true
-            }}
-          >
-            <ArticleExtras
-              analyticsStream={() => {}}
-              articleId="dummy-article-id"
-              commentsEnabled
-              registerNode={() => {}}
-              relatedArticleSlice={relatedArticleSlice}
-              relatedArticlesVisible
-              spotAccountId="dummy-spot-id"
-              topics={topics}
-            />
-          </ContextProviderWithDefaults>
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
