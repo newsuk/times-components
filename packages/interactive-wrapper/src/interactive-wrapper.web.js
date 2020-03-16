@@ -46,7 +46,7 @@ export function polyfillWCIfNecessary() {
   if (!htmlImportsSupported || !registerElementSupported) {
     return Promise.all([
       ensureScript(
-        "https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/webcomponents-lite.js"
+        "https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/webcomponents-lite.min.js"
       ),
       new Promise(resolve => {
         window.addEventListener("WebComponentsReady", resolve);
