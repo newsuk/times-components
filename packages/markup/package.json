@@ -64,7 +64,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.38.1"
+    "@times-components/styleguide": "3.38.2"
   },
   "resolutions": {
     "react": "16.9.0",

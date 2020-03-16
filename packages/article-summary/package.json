@@ -67,7 +67,7 @@
     "@times-components/date-publication": "0.21.41",
     "@times-components/markup": "3.4.40",
     "@times-components/markup-forest": "1.7.31",
-    "@times-components/styleguide": "3.38.1",
+    "@times-components/styleguide": "3.38.2",
     "@times-components/video-label": "2.4.42",
     "prop-types": "15.7.2"
   },
