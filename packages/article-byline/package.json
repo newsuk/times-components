@@ -66,7 +66,7 @@
     "@times-components/link": "3.6.24",
     "@times-components/markup": "3.4.40",
     "@times-components/markup-forest": "1.7.31",
-    "@times-components/styleguide": "3.38.1",
+    "@times-components/styleguide": "3.38.2",
     "@times-components/tracking": "2.6.6",
     "prop-types": "15.7.2"
   },

@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@times-components/button": "2.4.43",
-    "@times-components/styleguide": "3.38.1",
+    "@times-components/styleguide": "3.38.2",
     "prop-types": "15.7.2"
   },
   "publishConfig": {
