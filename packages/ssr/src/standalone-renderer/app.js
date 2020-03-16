@@ -54,6 +54,7 @@ const makeHtml = (
              <div id="nav"></div>
             <div id="main-container">${markup}</div>
           </body>
+          <script src="/vendors~article~author-profile~topic.react.bundle.js"></script>
           <script src="/common.react.bundle.js"></script>
           <script src="/${bundleName}.init.js"></script>
           <script src="/${bundleName}.react.bundle.js"></script>
