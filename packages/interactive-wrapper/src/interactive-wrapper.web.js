@@ -70,7 +70,7 @@ export default class InteractiveWrapper extends Component {
 
     fetchPolyfill().then(() => {
       this.insertComponent();
-    })
+    });
   }
 
   componentDidUpdate() {
