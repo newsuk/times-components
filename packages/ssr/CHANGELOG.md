@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.15.26](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.25...@times-components/ssr@2.15.26) (2020-03-16)
+
+
+### Bug Fixes
+
+* remove not used dependency (NewsKit) ([#2562](https://github.com/newsuk/times-components/issues/2562)) ([469a985](https://github.com/newsuk/times-components/commit/469a9850bfdb4a07ca0b351ec5332ef2bc3b8a87))
+
+
+
+
+
 ## [2.15.25](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.24...@times-components/ssr@2.15.25) (2020-03-14)
 
 **Note:** Version bump only for package @times-components/ssr
