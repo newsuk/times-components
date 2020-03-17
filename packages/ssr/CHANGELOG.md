@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.16.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.16.0...@times-components/ssr@2.16.1) (2020-03-17)
+
+
+### Reverts
+
+* Revert "feat: (TNLT-697) vendors.js bundle extracted from common.js (#2563)" (#2567) ([33161a9](https://github.com/newsuk/times-components/commit/33161a9083c03f45be9695e63b421e34f894cf28)), closes [#2563](https://github.com/newsuk/times-components/issues/2563) [#2567](https://github.com/newsuk/times-components/issues/2567)
+
+
+
+
+
 # [2.16.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.27...@times-components/ssr@2.16.0) (2020-03-17)
 
 
