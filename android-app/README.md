@@ -49,7 +49,6 @@ uploaded to maven.
 - Run `yarn android:app` in `times-components` to bundles the latest code on-the-fly once the emulator request a bundle.
 - Run `./gradlew assembleGPD` in `nu-projectd-times-smartphone-android` to install the latest android app
 - Open the Times app in the mobile emulator
-- Enable react article features in the developer settings
 - Navigate to an article page on the app
 - Reload the article by pressing key `]` to load the react-native article
 - To update the app to the latest times-component, update the dependancy [here](https://github.com/newsuk/nu-projectd-times-smartphone-android/blob/develop/mobile/build.gradle#L199) to the android-app version [here](https://github.com/newsuk/times-components/blob/10d3ec6dfaba08b376792fa17d6e2fced5747a7e/android-app/package.json#L3) and reinstall the app on the emulator
