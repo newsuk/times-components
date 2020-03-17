@@ -54,7 +54,7 @@ export function polyfillWCIfNecessary() {
     ]);
   }
 
-  return null;
+  return Promise.resolve();
 }
 
 export default class InteractiveWrapper extends Component {
