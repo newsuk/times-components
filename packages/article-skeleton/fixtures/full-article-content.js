@@ -293,12 +293,13 @@ export default [
       display: "secondary",
       element: {
         attributes: {
-          "chart-id": "csmgb"
+          town: "Salisbury"
         },
-        value: "times-datawrapper"
+        value: "bptl-price-comparison"
       },
       id: "d2f83305-d558-4f78-f582-32115c659355",
-      url: "https://interactive.io"
+      url:
+        "https://components.timesdev.tools/lib2/bptl-price-comparison-1.1.0/bptl-price-comparison.html"
     },
     children: [],
     name: "interactive"

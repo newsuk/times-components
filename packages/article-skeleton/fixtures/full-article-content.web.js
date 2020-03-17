@@ -272,12 +272,13 @@ export default [
           display: "secondary",
           element: {
             attributes: {
-              "chart-id": "csmgb"
+              town: "Salisbury"
             },
-            value: "times-datawrapper"
+            value: "bptl-price-comparison"
           },
           id: "d2f83305-d558-4f78-f582-32115c659355",
-          url: "https://interactive.io"
+          url:
+            "https://components.timesdev.tools/lib2/bptl-price-comparison-1.1.0/bptl-price-comparison.html"
         },
         children: [],
         name: "interactive"
@@ -295,6 +296,23 @@ export default [
           }
         ],
         name: "paragraph"
+      },
+      {
+        attributes: {
+          display: "secondary",
+          element: {
+            attributes: {
+              "embed-code":
+                "%3Ciframe%20title%3D%22Daily%20increase%20in%20cases%20in%20the%20UK%22%20aria-label%3D%22Interactive%20area%20chart%22%20id%3D%22datawrapper-chart-BCbWZ%22%20src%3D%22%2F%2Fdatawrapper.dwcdn.net%2FBCbWZ%2F1%2F%22%20scrolling%3D%22no%22%20frameborder%3D%220%22%20style%3D%22width%3A%200%3B%20min-width%3A%20100%25%20!important%3B%20border%3A%20none%3B%22%20height%3D%22533%22%3E%3C%2Fiframe%3E%3Cscript%20type%3D%22text%2Fjavascript%22%3E!function()%7B%22use%20strict%22%3Bwindow.addEventListener(%22message%22%2Cfunction(a)%7Bif(void%200!%3D%3Da.data%5B%22datawrapper-height%22%5D)for(var%20e%20in%20a.data%5B%22datawrapper-height%22%5D)%7Bvar%20t%3Ddocument.getElementById(%22datawrapper-chart-%22%2Be)%7C%7Cdocument.querySelector(%22iframe%5Bsrc*%3D’%22%2Be%2B%22’%5D%22)%3Bt%26%26(t.style.height%3Da.data%5B%22datawrapper-height%22%5D%5Be%5D%2B%22px%22)%7D%7D)%7D()%3B%20%3C%2Fscript%3E"
+            },
+            value: "times-datawrapper"
+          },
+          id: "d2f83305-d558-4f78-f582-32115c65935f",
+          url:
+            "https://components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
+        },
+        children: [],
+        name: "interactive"
       },
       {
         attributes: {

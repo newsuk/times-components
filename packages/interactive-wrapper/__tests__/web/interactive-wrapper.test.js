@@ -134,7 +134,7 @@ describe("interactive-wrapper", () => {
   });
 
   it("calls to fetch polyfill when mounting", () => {
-    const fetchPolyfill = jest.fn();
+    const fetchPolyfill = jest.fn(() => Promise.resolve());
     mount(<InteractiveWrapper {...props} fetchPolyfill={fetchPolyfill} />, {
       attachTo: container
     });
