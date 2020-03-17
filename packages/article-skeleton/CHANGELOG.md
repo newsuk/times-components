@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.2...@times-components/article-skeleton@1.33.3) (2020-03-17)
+
+
+### Bug Fixes
+
+* **TNLT-640, TNLT-771:** interactive components rendering on web ([#2566](https://github.com/newsuk/times-components/issues/2566)) ([5547b54](https://github.com/newsuk/times-components/commit/5547b54c27cf689fa8b99c5ec9d5a68abe3b3081))
+
+
+
+
+
 ## [1.33.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.1...@times-components/article-skeleton@1.33.2) (2020-03-16)
 
 **Note:** Version bump only for package @times-components/article-skeleton
