@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.16.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.27...@times-components/ssr@2.16.0) (2020-03-17)
+
+
+### Features
+
+* (TNLT-697) vendors.js bundle extracted from common.js ([#2563](https://github.com/newsuk/times-components/issues/2563)) ([2efc3f8](https://github.com/newsuk/times-components/commit/2efc3f844cca6bde80fec55005ff4bbcebe79d40))
+
+
+
+
+
 ## [2.15.27](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.26...@times-components/ssr@2.15.27) (2020-03-16)
 
 **Note:** Version bump only for package @times-components/ssr
