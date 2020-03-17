@@ -69,7 +69,7 @@ describe("interactive-wrapper", () => {
 
       it("does nothing if both html imports and custom elements are supported", () => {
         const { innerHTML } = document.body;
-        
+
         expect(document.body.innerHTML).toEqual(innerHTML);
         return expect(polyfillWCIfNecessary()).resolves.toBe(undefined);
       });
