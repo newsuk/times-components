@@ -102,14 +102,12 @@ class DOMContext extends PureComponent {
   };
 
   loadAd = () => {
-    console.log('loadAd==========', this.state.loaded);
     this.setState({
       loaded: true
     });
   };
 
   inViewport = () => {
-    console.log('inViewport');
     this.isVisible = true;
     this.webView.injectJavaScript(`
           if (typeof unrulyViewportStatus === "function") {

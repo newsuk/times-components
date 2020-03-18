@@ -120,7 +120,6 @@ const ArticleWithContent = props => {
     // FIXME: remove this when ios memory leaks are resolved
     if (Platform.OS === "ios") {
       return useCallback(
-        scrollprops =>
           <FlatList
             {...scrollprops}
             data={scrollprops.data.map((item, index) => Child({ item, index }))}
@@ -128,9 +127,10 @@ const ArticleWithContent = props => {
           />,
         [Child]
       );
-    } else {
+    } 
+    
       return <FlatList {...scrollprops} />;
-    }
+    
   };
 
   return (
