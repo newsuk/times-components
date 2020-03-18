@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.46](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.45...@times-components/interactive-wrapper@0.4.46) (2020-03-17)
+
+
+### Bug Fixes
+
+* resolve default Webcomponent polyfill response ([#2569](https://github.com/newsuk/times-components/issues/2569)) ([fa30c9f](https://github.com/newsuk/times-components/commit/fa30c9ffe20b6520c27bedc7f4b377ca33dc7054))
+
+
+
+
+
 ## [0.4.45](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.44...@times-components/interactive-wrapper@0.4.45) (2020-03-17)
 
 
