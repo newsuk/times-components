@@ -1,4 +1,3 @@
-console.disableYellowBox = true; 
 import React from "react";
 import PropTypes from "prop-types";
 import { NativeModules } from "react-native";
