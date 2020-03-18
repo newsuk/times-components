@@ -29,7 +29,7 @@ class DOMContext extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      loaded: true
+      loaded: false
     };
   }
 
@@ -188,8 +188,7 @@ class DOMContext extends PureComponent {
 
     return (
       <ViewportAwareView
-        onViewportEnter={() => console.log("ARON onViewportEnter")}
-        onViewportLeave={() => console.log("ARON onViewportLeave")}
+        onViewportEnter={this.loadAd}
         style={{
           height,
           width

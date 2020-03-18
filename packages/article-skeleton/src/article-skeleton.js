@@ -1,7 +1,8 @@
 import React, { useCallback, useState, useMemo } from "react";
-import { View, FlatList, ActivityIndicator, Platform } from "react-native";
+import { View, FlatList, ActivityIndicator, ScrollView, Text, Image, Platform } from "react-native";
 import PropTypes from "prop-types";
 import { screenWidth } from "@times-components/utils";
+import  Ad  from "@times-components/ad";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { Viewport } from "@skele/components";
 import { render } from "@times-components/markup-forest";
@@ -116,21 +117,23 @@ const ArticleWithContent = props => {
     [footer]
   );
 
-  // FIXME: remove this when ios memory leaks are resolved
-  const Scroller = React.useCallback(
-    scrollprops =>
-      Platform.select({
-        ios: (
-          <FlatList
-            {...scrollprops}
-            data={scrollprops.data.map((item, index) => Child({ item, index }))}
-            renderItem={({ item }) => item}
-          />
-        ),
-        android: <FlatList {...scrollprops} />
-      }),
-    [Child]
-  );
+
+  const Scroller = scrollprops => {
+    // FIXME: remove this when ios memory leaks are resolved
+    // if (Platform.OS === "ios") {
+    //   return useCallback(
+    //     scrollprops =>
+    //       <FlatList
+    //         {...scrollprops}
+    //         data={scrollprops.data.map((item, index) => Child({ item, index }))}
+    //         renderItem={({ item }) => item}
+    //       />,
+    //     [Child]
+    //   );
+    // } else {
+      return <FlatList {...scrollprops} />;
+    // }
+  };
 
   return (
     <View style={styles.articleContainer}>
