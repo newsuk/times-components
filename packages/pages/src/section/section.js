@@ -146,6 +146,7 @@ class SectionPage extends Component {
           onPuzzleBarPress={onPuzzleBarPress}
           onPuzzlePress={onPuzzlePress}
           section={section}
+          publicationName={publicationName}
         />
       </SectionContext.Provider>
     );
