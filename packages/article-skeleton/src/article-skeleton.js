@@ -116,22 +116,20 @@ const ArticleWithContent = props => {
     [footer]
   );
 
-  const Scroller = scrollprops => {
+  const iosScroller =
     // FIXME: remove this when ios memory leaks are resolved
-    if (Platform.OS === "ios") {
-      return useCallback(
-          <FlatList
-            {...scrollprops}
-            data={scrollprops.data.map((item, index) => Child({ item, index }))}
-            renderItem={({ item }) => item}
-          />,
-        [Child]
-      );
-    } 
-    
-      return <FlatList {...scrollprops} />;
-    
-  };
+    useCallback(
+      scrollprops => (
+        <FlatList
+          {...scrollprops}
+          data={scrollprops.data.map((item, index) => Child({ item, index }))}
+          renderItem={({ item }) => item}
+        />
+      ),
+      [Child]
+    );
+
+  const Scroller = Platform.OS === "ios" ? iosScroller : FlatList;
 
   return (
     <View style={styles.articleContainer}>
