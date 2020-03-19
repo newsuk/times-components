@@ -84,7 +84,7 @@ Object {
   "action": "Pressed",
   "attrs": Object {
     "edition_type": "current edition",
-    "parent_site": "",
+    "parent_site": "TIMES",
     "past_edition_date": null,
     "puzzleId": "0",
     "puzzleTitle": "Times Concise medium No 7881",
