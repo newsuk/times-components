@@ -90,11 +90,11 @@ class ArticleList extends Component {
     );
 
     const renderAdComponent = () => (
-        <AdContainer
-          isLoading={articlesLoading}
-          slotName="articleListAd"
-          style={styles.adContainer}
-        />
+      <AdContainer
+        isLoading={articlesLoading}
+        slotName="articleListAd"
+        style={styles.adContainer}
+      />
     );
 
     const data = articlesLoading
