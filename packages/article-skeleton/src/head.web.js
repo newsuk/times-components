@@ -155,7 +155,7 @@ function Head({ article, logoUrl, paidContentClassName }) {
     thumbnailUrl,
     dateModified
   };
-  console.log({ leadassetUrl });
+
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
