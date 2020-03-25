@@ -32,7 +32,6 @@ export default () => {
       test() {
         const testInstance = TestRenderer.create(
           <ArticleList
-            adConfig={adConfig}
             articles={articlesFixture.slice(0, 1)}
             emptyStateMessage="Empty state"
             pageSize={3}
@@ -58,7 +57,6 @@ export default () => {
 
         const testInstance = TestRenderer.create(
           <ArticleList
-            adConfig={adConfig}
             articles={[missingImage]}
             emptyStateMessage="Empty state"
             pageSize={3}
