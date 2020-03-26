@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.7...@times-components/article-skeleton@1.33.8) (2020-03-26)
+
+
+### Bug Fixes
+
+* **TNLT-604:** output social image with inline video ([#2574](https://github.com/newsuk/times-components/issues/2574)) ([26d7596](https://github.com/newsuk/times-components/commit/26d7596b31e6d796176236f48c0d94be433699e5))
+
+
+
+
+
 ## [1.33.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.6...@times-components/article-skeleton@1.33.7) (2020-03-26)
 
 **Note:** Version bump only for package @times-components/article-skeleton
