@@ -41,6 +41,10 @@ const videoArticle = articleFixture({
   hasVideo: true,
   leadAsset: videoLeadAsset()
 });
+const standardArticleWithInlineVideo = articleFixture({
+  ...testFixture,
+  hasVideo: true
+});
 
 const paidContentClassName = "class-name";
 const logoUrl =
@@ -380,6 +384,19 @@ describe("Head", () => {
 
   it("shows image tags if leadAsset available", () => {
     const testRenderer = TestRenderer.create(<Head article={article} />);
+
+    expect(
+      testRenderer.root.findAllByProps({ property: "og:image" })
+    ).toHaveLength(1);
+    expect(
+      testRenderer.root.findAllByProps({ name: "twitter:image" })
+    ).toHaveLength(1);
+  });
+
+  it("shows image tags if leadAsset is an image, but there is a video elsewhere in the article", () => {
+    const testRenderer = TestRenderer.create(
+      <Head article={standardArticleWithInlineVideo} />
+    );
 
     expect(
       testRenderer.root.findAllByProps({ property: "og:image" })

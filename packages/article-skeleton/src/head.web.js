@@ -60,7 +60,9 @@ const PUBLICATION_NAMES = {
 const get169CropUrl = asset => get(asset, "crop169.url", null);
 
 const getVideoLeadAssetUrl = article =>
-  get169CropUrl(get(article, "leadAsset.posterImage", null));
+  get169CropUrl(
+    get(article, "leadAsset.posterImage", get(article, "leadAsset", null))
+  );
 
 const getImageLeadAssetUrl = article =>
   get169CropUrl(get(article, "leadAsset", null));
