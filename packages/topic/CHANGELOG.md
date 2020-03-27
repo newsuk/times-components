@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/newsuk/times-components/compare/@times-components/topic@5.1.54...@times-components/topic@5.2.0) (2020-03-27)
+
+
+### Features
+
+* ad component changes to integrate with ad manager library ([#2573](https://github.com/newsuk/times-components/issues/2573)) ([3241b76](https://github.com/newsuk/times-components/commit/3241b765ed89197c8ed8b6d785d83686a7acb6f8))
+
+
+
+
+
 ## [5.1.54](https://github.com/newsuk/times-components/compare/@times-components/topic@5.1.53...@times-components/topic@5.1.54) (2020-03-20)
 
 **Note:** Version bump only for package @times-components/topic
