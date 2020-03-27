@@ -18,6 +18,7 @@ import { AspectRatioContainer } from "@times-components/utils";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import InlineNewsletterPuff from "./inline-newsletter-puff";
+import Datawrapper, { getIdFromEmbedCode } from "./datawrapper";
 import {
   PrimaryImg,
   SecondaryImg,
@@ -128,6 +129,19 @@ const renderers = ({ paidContentClassName, template }) => ({
             headline={headline}
           />
         );
+      }
+      case "times-datawrapper": {
+        try {
+          const { id, version } = parseDatawrapperAttributes(attributes);
+          
+          return (
+            <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+              <Datawrapper id={id} version={version} />
+            </InteractiveContainer>
+          );
+        } catch (e) {
+          return null;
+        }
       }
       default:
         return (
