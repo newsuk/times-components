@@ -243,7 +243,8 @@ export default {
   children: tileStories.map(({ name, Tile, mockTile }) => ({
     component: renderTile(Tile, mockTile),
     name,
-    type: "story"
+    type: "story",
+    platform: "native"
   })),
   name: "Composed/Edition/Tiles"
 };

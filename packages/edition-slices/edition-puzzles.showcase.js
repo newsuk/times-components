@@ -41,7 +41,8 @@ export default {
   children: sliceStories.map(({ mock, name, Slice }) => ({
     component: renderSlice(Slice, mock),
     name,
-    type: "story"
+    type: "story",
+    platform: "native"
   })),
   name: "Composed/Edition/Puzzles"
 };

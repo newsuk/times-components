@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.103.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.102.12...@times-components/edition-slices@0.103.0) (2020-03-26)
+
+
+### Features
+
+* (TNLT-697) remove unused slices for web ([#2568](https://github.com/newsuk/times-components/issues/2568)) ([cc63ca3](https://github.com/newsuk/times-components/commit/cc63ca32db3ce190d89514d65d57c28b40331bd4))
+
+
+
+
+
 ## [0.102.12](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.102.11...@times-components/edition-slices@0.102.12) (2020-03-16)
 
 **Note:** Version bump only for package @times-components/edition-slices

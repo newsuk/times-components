@@ -75,7 +75,8 @@ export default {
         </ScrollView>
       ),
       name: "Vertical Layout",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: ({ select }) => (
@@ -91,7 +92,8 @@ export default {
         </ScrollView>
       ),
       name: "LeadOneAndFour",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: ({ select }) => (
@@ -113,7 +115,8 @@ export default {
         </ScrollView>
       ),
       name: "LeadOneAndOne",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: () => (
@@ -254,7 +257,8 @@ export default {
         </ScrollView>
       ),
       name: "SecondaryFourSlice",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: ({ select }) => (
@@ -271,7 +275,8 @@ export default {
         </ScrollView>
       ),
       name: "SecondaryTwoAndTwoSlice",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: ({ select }) => (
@@ -287,7 +292,8 @@ export default {
         </ScrollView>
       ),
       name: "SecondaryOneAndFourSlice",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: ({ select }) => (
@@ -302,7 +308,8 @@ export default {
         </ScrollView>
       ),
       name: "SecondaryTwoNoPicAndTwoSlice",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: ({ select }) => (
@@ -317,7 +324,8 @@ export default {
         </ScrollView>
       ),
       name: "LeadTwoNoPicAndTwoSlice",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: ({ select }) => (
@@ -336,7 +344,8 @@ export default {
         </ScrollView>
       ),
       name: "ListTwoAndSixNoPic",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: ({ select }) => (
@@ -350,7 +359,8 @@ export default {
         </ScrollView>
       ),
       name: "Leaders",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: ({ select }) => (
@@ -363,7 +373,8 @@ export default {
         </ScrollView>
       ),
       name: "CommentLeadAndCartoon",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: ({ select }) => (
@@ -376,7 +387,8 @@ export default {
         </ScrollView>
       ),
       name: "SecondaryOneAndColumnistSlice",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: ({ select }) => {
