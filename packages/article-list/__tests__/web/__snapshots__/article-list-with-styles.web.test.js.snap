@@ -273,7 +273,7 @@ exports[`1. article list 1`] = `
         </Link>
       </div>
     </div>
-    <Ad
+    <AdContainer
       className="IS1"
     />
     <div

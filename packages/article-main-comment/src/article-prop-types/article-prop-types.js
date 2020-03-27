@@ -6,6 +6,7 @@ import {
 
 const articlePropTypes = {
   ...articlePagePropTypes,
+  adConfig: PropTypes.shape({}).isRequired,
   interactiveConfig: PropTypes.shape({}),
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
