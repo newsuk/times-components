@@ -2,7 +2,12 @@ const topic = require("../component/topic");
 const runClient = require("../lib/run-client");
 
 if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
-  const { rootTag, makeArticleUrl, makeTopicUrl } = window.nuk.ssr;
+  const {
+    rootTag,
+    makeArticleUrl,
+    makeTopicUrl,
+    mapTopicToAdConfig
+  } = window.nuk.ssr;
   const {
     debounceTimeMs,
     page,
@@ -15,6 +20,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
     debounceTimeMs,
     makeArticleUrl,
     makeTopicUrl,
+    mapTopicToAdConfig,
     page,
     pageSize,
     topicSlug
