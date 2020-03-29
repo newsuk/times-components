@@ -56,14 +56,10 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
           his being Black History Month, last week
         </p>
         <div>
-          <InteractiveWrapper
-            attributes={
-              Object {
-                "chart-id": "csmgb",
-              }
-            }
-            element="times-datawrapper"
-            source="//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
+          <iframe
+            height={0}
+            scrolling="no"
+            src="https://datawrapper.dwcdn.net/csmgb"
           />
         </div>
         <div
@@ -411,14 +407,10 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
           his being Black History Month, last week
         </p>
         <div>
-          <InteractiveWrapper
-            attributes={
-              Object {
-                "chart-id": "csmgb",
-              }
-            }
-            element="times-datawrapper"
-            source="//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
+          <iframe
+            height={0}
+            scrolling="no"
+            src="https://datawrapper.dwcdn.net/csmgb"
           />
         </div>
         <div

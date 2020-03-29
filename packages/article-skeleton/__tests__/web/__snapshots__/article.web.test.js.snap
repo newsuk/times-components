@@ -54,14 +54,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           his being Black History Month, last week
         </p>
         <div>
-          <InteractiveWrapper
-            attributes={
-              Object {
-                "chart-id": "csmgb",
-              }
-            }
-            element="times-datawrapper"
-            source="https://interactive.io"
+          <iframe
+            height={0}
+            scrolling="no"
+            src="https://datawrapper.dwcdn.net/csmgb"
           />
         </div>
         <div
@@ -444,25 +440,17 @@ exports[`2. an article with interactives 1`] = `
         role="article"
       >
         <div>
-          <InteractiveWrapper
-            attributes={
-              Object {
-                "chart-id": "csmgb",
-              }
-            }
-            element="times-datawrapper"
-            source="https://interactive.io"
+          <iframe
+            height={0}
+            scrolling="no"
+            src="https://datawrapper.dwcdn.net/csmgb"
           />
         </div>
         <div>
-          <InteractiveWrapper
-            attributes={
-              Object {
-                "chart-id": "csmgb",
-              }
-            }
-            element="times-datawrapper"
-            source="https://interactive.io"
+          <iframe
+            height={0}
+            scrolling="no"
+            src="https://datawrapper.dwcdn.net/csmgb"
           />
         </div>
         <div

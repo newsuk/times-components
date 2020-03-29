@@ -31,14 +31,10 @@ exports[`Article with user state Render full article when user has access to ful
           his being Black History Month, last week
         </p>
         <div>
-          <InteractiveWrapper
-            attributes={
-              Object {
-                "chart-id": "csmgb",
-              }
-            }
-            element="times-datawrapper"
-            source="//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
+          <iframe
+            height={0}
+            scrolling="no"
+            src="https://datawrapper.dwcdn.net/csmgb"
           />
         </div>
         <div
@@ -386,14 +382,10 @@ exports[`Article with user state Render teaser article when user does not have a
           his being Black History Month, last week
         </p>
         <div>
-          <InteractiveWrapper
-            attributes={
-              Object {
-                "chart-id": "csmgb",
-              }
-            }
-            element="times-datawrapper"
-            source="//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
+          <iframe
+            height={0}
+            scrolling="no"
+            src="https://datawrapper.dwcdn.net/csmgb"
           />
         </div>
         <div

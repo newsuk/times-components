@@ -5,7 +5,7 @@ import DatawrapperFrame from "../styles/datawrapper";
 
 export const parseDatawrapperAttributes = attributes => {
   if (attributes.hasOwnProperty('embed-code')) {
-    const matches = embedCode.match(/datawrapper.dwcdn.net%2F(.*?%2F.*?)%2F/);
+    const matches = attributes['embed-code'].match(/datawrapper.dwcdn.net%2F(.*?%2F.*?)%2F/);
 
     if (!matches[1]) {
       throw new Error("The provided Datawrapper embed code is not valid.");
@@ -28,6 +28,14 @@ export const parseDatawrapperAttributes = attributes => {
 
   throw new Error("Invalid attributes provided to the Datawrapper embed, unable to render.")
 };
+
+const buildFrameUrl = (id, version) => {
+  if (!version) {
+    return `https://datawrapper.dwcdn.net/${id}`;
+  }
+
+  return `https://datawrapper.dwcdn.net/${id}/${version}`;
+}
 
 const Datawrapper = ({ id, version }) => {
   const [frameHeight, setFrameHeight] = React.useState(0);
@@ -66,7 +74,7 @@ const Datawrapper = ({ id, version }) => {
 
   return (
     <DatawrapperFrame
-      src={`https://datawrapper.dwcdn.net/${id}/${version}`}
+      src={buildFrameUrl(id, version)}
       height={frameHeight}
       scrolling="no"
     />
@@ -75,7 +83,7 @@ const Datawrapper = ({ id, version }) => {
 
 Datawrapper.propTypes = {
   id: PropTypes.string.isRequired,
-  version: PropTypes.number.isRequired
+  version: PropTypes.string
 };
 
 export default Datawrapper;

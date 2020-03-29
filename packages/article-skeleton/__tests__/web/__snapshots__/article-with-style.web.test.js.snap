@@ -29,8 +29,14 @@ exports[`full article with style 1`] = `
   font-family: "TimesModern-Regular";
 }
 
-.c17 {
+.c18 {
   padding-left: 10px;
+}
+
+.c11 {
+  border: 0;
+  width: 100%;
+  height: 0px;
 }
 
 .c10 {
@@ -38,29 +44,16 @@ exports[`full article with style 1`] = `
   padding: 0 10px;
 }
 
-.c11 {
+.c12 {
   margin-bottom: 20px;
   width: 100%;
 }
 
-.c12 {
+.c13 {
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c13 {
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -74,21 +67,34 @@ exports[`full article with style 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c15 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c16 {
+.c17 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.c15 {
+.c16 {
   display: block;
 }
 
-.c18 {
+.c19 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -99,7 +105,7 @@ exports[`full article with style 1`] = `
   line-height: 25px;
 }
 
-.c19 {
+.c20 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -110,7 +116,7 @@ exports[`full article with style 1`] = `
   line-height: 22px;
 }
 
-.c20 {
+.c21 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -121,7 +127,7 @@ exports[`full article with style 1`] = `
   line-height: 19px;
 }
 
-.c21 {
+.c22 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -132,7 +138,7 @@ exports[`full article with style 1`] = `
   line-height: 17px;
 }
 
-.c22 {
+.c23 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -234,7 +240,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     padding-left: 0px;
   }
 }
@@ -255,24 +261,9 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c12 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c12 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
   .c13 {
     width: 80.8%;
     margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -298,7 +289,22 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c15 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c15 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c17 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -310,7 +316,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c15 {
+  .c16 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -319,13 +325,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c15 {
+  .c16 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c18 {
+  .c19 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -333,20 +339,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c18 {
+  .c19 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c18 {
+  .c19 {
     font-size: 28px;
     line-height: 28px;
   }
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c20 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -354,20 +360,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c19 {
+  .c20 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c20 {
     font-size: 24px;
     line-height: 24px;
   }
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c21 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -375,20 +381,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c20 {
+  .c21 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c21 {
     font-size: 20px;
     line-height: 20px;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c22 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -396,20 +402,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c22 {
     font-size: 19px;
     line-height: 19px;
   }
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c23 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -417,13 +423,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c22 {
+  .c23 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c23 {
     font-size: 19px;
     line-height: 19px;
   }
@@ -549,30 +555,34 @@ exports[`full article with style 1`] = `
         <div
           className="c10"
         >
-          <InteractiveWrapper />
+          <iframe
+            className="c11"
+          />
         </div>
         <div
-          className="c11"
+          className="c12"
         >
-          <InteractiveWrapper />
+          <iframe
+            className="c11"
+          />
         </div>
         <div>
           <div
-            className="c12 responsiveweb__PrimaryImg-sc-16nqyj8-5 c12 css-view-1dbjc4n"
+            className="c13 responsiveweb__PrimaryImg-sc-16nqyj8-5 c13 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c13 responsiveweb__SecondaryImg-sc-16nqyj8-7 c13 css-view-1dbjc4n"
+            className="c14 responsiveweb__SecondaryImg-sc-16nqyj8-7 c14 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c14 responsiveweb__InlineImg-sc-16nqyj8-8 c14 css-view-1dbjc4n"
+            className="c15 responsiveweb__InlineImg-sc-16nqyj8-8 c15 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -589,10 +599,10 @@ exports[`full article with style 1`] = `
             Some content
           </p>
           <div
-            className="c15 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c15 css-view-1dbjc4n"
+            className="c16 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c16 css-view-1dbjc4n"
           >
             <div
-              className="c16 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c16 css-view-1dbjc4n"
+              className="c17 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c17 css-view-1dbjc4n"
             >
               <PullQuote>
                 The pull quote content
@@ -600,7 +610,7 @@ exports[`full article with style 1`] = `
             </div>
           </div>
           <div
-            className="c12 responsiveweb__PrimaryImg-sc-16nqyj8-5 c12 css-view-1dbjc4n"
+            className="c13 responsiveweb__PrimaryImg-sc-16nqyj8-5 c13 css-view-1dbjc4n"
           >
             <figure
               className="IS9"
@@ -626,7 +636,7 @@ exports[`full article with style 1`] = `
               </div>
               <figcaption>
                 <div
-                  className="c17 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c17 css-view-1dbjc4n"
+                  className="c18 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c18 css-view-1dbjc4n"
                 >
                   <Caption />
                 </div>
@@ -636,27 +646,27 @@ exports[`full article with style 1`] = `
           <KeyFacts />
         </span>
         <h2
-          className="c18"
+          className="c19"
         >
           This is heading 2
         </h2>
         <h3
-          className="c19"
+          className="c20"
         >
           This is heading 3
         </h3>
         <h4
-          className="c20"
+          className="c21"
         >
           This is heading 4
         </h4>
         <h5
-          className="c21"
+          className="c22"
         >
           This is heading 5
         </h5>
         <h6
-          className="c22"
+          className="c23"
         >
           This is heading 6
         </h6>
