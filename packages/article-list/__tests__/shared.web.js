@@ -10,6 +10,7 @@ import TestRenderer from "react-test-renderer";
 import "./mocks";
 import { omitWeb as omitProps } from "./utils";
 import articlesFixture from "../fixtures/articles.json";
+import adConfig from "../fixtures/article-ad-config.json";
 import ArticleList from "../src/article-list";
 import shared from "./shared.base.web";
 
@@ -31,6 +32,7 @@ export default () => {
       test() {
         const testInstance = TestRenderer.create(
           <ArticleList
+            adConfig={adConfig}
             articles={articlesFixture.slice(0, 1)}
             emptyStateMessage="Empty state"
             pageSize={3}
@@ -56,6 +58,7 @@ export default () => {
 
         const testInstance = TestRenderer.create(
           <ArticleList
+            adConfig={adConfig}
             articles={[missingImage]}
             emptyStateMessage="Empty state"
             pageSize={3}

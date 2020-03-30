@@ -2,7 +2,12 @@ const authorProfile = require("../component/author-profile");
 const runClient = require("../lib/run-client");
 
 if (window.nuk && window.nuk.ssr && window.nuk.authorProfile) {
-  const { rootTag, makeArticleUrl, makeTopicUrl } = window.nuk.ssr;
+  const {
+    rootTag,
+    makeArticleUrl,
+    makeTopicUrl,
+    mapProfileToAdConfig
+  } = window.nuk.ssr;
   const {
     authorSlug,
     debounceTimeMs,
@@ -15,6 +20,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.authorProfile) {
     debounceTimeMs,
     makeArticleUrl,
     makeTopicUrl,
+    mapProfileToAdConfig,
     page,
     pageSize
   };
