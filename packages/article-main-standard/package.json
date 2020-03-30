@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-main-standard",
-  "version": "3.27.0",
+  "version": "3.27.1",
   "description": "Main Standard Article Template",
   "main": "dist/article-main-standard",
   "dev": "src/article-main-standard",
@@ -60,13 +60,13 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/ad": "2.12.0",
+    "@times-components/ad": "2.12.1",
     "@times-components/article-byline": "3.5.12",
     "@times-components/article-error": "0.2.164",
     "@times-components/article-flag": "2.9.41",
     "@times-components/article-label": "2.7.40",
     "@times-components/article-lead-asset": "1.6.17",
-    "@times-components/article-skeleton": "1.33.9",
+    "@times-components/article-skeleton": "1.33.10",
     "@times-components/article-topics": "4.1.27",
     "@times-components/caption": "3.0.124",
     "@times-components/context": "1.2.10",

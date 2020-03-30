@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.17.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.17.0...@times-components/ssr@2.17.1) (2020-03-30)
+
+
+### Reverts
+
+* Revert "feat: ad component changes to integrate with ad manager library (#2573)" (#2575) ([650fd9f](https://github.com/newsuk/times-components/commit/650fd9f233f358097c391725dfeeb9fe92dac38a)), closes [#2573](https://github.com/newsuk/times-components/issues/2573) [#2575](https://github.com/newsuk/times-components/issues/2575)
+
+
+
+
+
 # [2.17.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.16.7...@times-components/ssr@2.17.0) (2020-03-27)
 
 
