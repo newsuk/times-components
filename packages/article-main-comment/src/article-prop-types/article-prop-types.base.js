@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 
 const articlePagePropTypes = {
+  adConfig: PropTypes.shape({}).isRequired,
   analyticsStream: PropTypes.func.isRequired,
   article: PropTypes.shape({}),
   error: PropTypes.shape({

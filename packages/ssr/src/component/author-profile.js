@@ -15,6 +15,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     debounceTimeMs,
     makeArticleUrl,
     makeTopicUrl,
+    mapProfileToAdConfig,
     page,
     pageSize
   } = data;
@@ -38,6 +39,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             ContextProviderWithDefaults,
             { value: { makeArticleUrl, makeTopicUrl } },
             React.createElement(AuthorProfile, {
+              adConfig: mapProfileToAdConfig(),
               analyticsStream,
               author,
               error,
