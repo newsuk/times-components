@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Linking, View } from "react-native";
+import { Linking } from "react-native";
 import { WebView } from "react-native-webview";
 import PropTypes from "prop-types";
 import webviewEventCallbackSetup from "./webview-event-callback-setup";
@@ -24,7 +24,7 @@ class InteractiveWrapper extends Component {
   constructor() {
     super();
     this.state = {
-      height: 1
+      height: 0
     };
     this.onMessage = this.onMessage.bind(this);
     this.handleNavigationStateChange = this.handleNavigationStateChange.bind(
@@ -40,12 +40,9 @@ class InteractiveWrapper extends Component {
     ) {
       const { height } = this.state;
       const newHeight = parseInt(e.nativeEvent.data, 10);
-      // eslint-disable-next-line no-restricted-globals
-      if (!isNaN(newHeight) && newHeight > height) {
+
+      if (newHeight && newHeight > height && newHeight > 30) {
         this.setState({ height: newHeight });
-        if (this.webview) {
-          this.webview.reload();
-        }
       }
     } else {
       console.error(`Invalid height received ${e.nativeEvent.data}`); // eslint-disable-line no-console
@@ -74,24 +71,22 @@ class InteractiveWrapper extends Component {
       id
     } = this.props;
     const { height } = this.state;
-
     const uri = `${editorialLambdaProtocol}${editorialLambdaOrigin}/${editorialLambdaSlug}/${id}?dev=${dev}&env=${environment}&platform=${platform}&version=${version}`;
+    const scriptToInject = `window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};(${webviewEventCallbackSetup})({window});`;
 
     return (
-      <View style={{ height }}>
-        <WebView
-          injectedJavaScript={`window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};(${webviewEventCallbackSetup})({window});`}
-          onLoadEnd={this.onLoadEnd}
-          onMessage={this.onMessage}
-          onNavigationStateChange={this.handleNavigationStateChange}
-          ref={webview => {
-            this.webview = webview;
-          }}
-          scrollEnabled={false}
-          source={{ uri }}
-          style={{ height }}
-        />
-      </View>
+      <WebView
+        injectedJavaScript={scriptToInject}
+        onLoadEnd={this.onLoadEnd}
+        onMessage={this.onMessage}
+        onNavigationStateChange={this.handleNavigationStateChange}
+        ref={ref => {
+          this.webview = ref;
+        }}
+        scrollEnabled={false}
+        source={{ uri }}
+        style={{ height }}
+      />
     );
   }
 }
