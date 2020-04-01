@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.46...@times-components/interactive-wrapper@0.5.0) (2020-04-01)
+
+
+### Features
+
+* improve load of interactives ([#2576](https://github.com/newsuk/times-components/issues/2576)) ([3b2f011](https://github.com/newsuk/times-components/commit/3b2f011253a9503c1e572e1922b6600c5870db60))
+
+
+
+
+
 ## [0.4.46](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.45...@times-components/interactive-wrapper@0.4.46) (2020-03-17)
 
 
