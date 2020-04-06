@@ -106,7 +106,6 @@
     "luxon": "1.18.0",
     "memoize-one": "5.1.1",
     "mockdate": "2.0.2",
-    "polished": "3.4.1",
     "prop-types": "15.7.2",
     "react-helmet-async": "1.0.2",
     "styled-components": "4.3.2"
