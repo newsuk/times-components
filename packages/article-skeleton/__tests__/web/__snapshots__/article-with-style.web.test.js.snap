@@ -179,11 +179,11 @@ exports[`full article with style 1`] = `
 
 .c6[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.010000000000000002);
+  box-shadow: 0 2px 5px 0 #c9c7c7ed;
 }
 
 .c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
-  border-bottom-color: rgba(219,219,219,0.9);
+  border-bottom-color: #ffffffdb;
 }
 
 .c5 {
