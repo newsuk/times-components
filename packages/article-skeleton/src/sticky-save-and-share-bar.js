@@ -26,10 +26,11 @@ const SaveShareContainer = styled.div`
       computeProgressStyles(
         progress => css`
           height: ${60 - progress * 10}px;
-          box-shadow: 0 2px 5px 0 #c9c7c7ed;
+          box-shadow: 0 2px 5px 0 ${colours.functional.greyStickyBarBoxShadow};
 
           ${selectors.stickySizer(css`
-            border-bottom-color: #ffffffdb;
+            border-bottom-color: ${colours.functional
+              .greyStickyBarBorderBottom};
           `)};
         `
       )
