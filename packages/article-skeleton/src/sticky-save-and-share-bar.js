@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { rgba } from "polished";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 import Sticky, {
   computeProgressStyles,
@@ -27,13 +26,11 @@ const SaveShareContainer = styled.div`
       computeProgressStyles(
         progress => css`
           height: ${60 - progress * 10}px;
-          box-shadow: 0 2px 5px 0 ${rgba(0, 0, 0, 0.2 * progress)};
+          box-shadow: 0 2px 5px 0 ${colours.functional.greyStickyBarBoxShadow};
 
           ${selectors.stickySizer(css`
-            border-bottom-color: ${rgba(
-              colours.functional.keyline,
-              Math.max(0, 1 - 2 * progress)
-            )};
+            border-bottom-color: ${colours.functional
+              .greyStickyBarBorderBottom};
           `)};
         `
       )
