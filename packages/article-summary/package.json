@@ -55,7 +55,6 @@
     "react-art": "16.6.3",
     "react-dom": "16.9.0",
     "react-native": "0.61.1",
-    "react-native-web": "0.11.4",
     "react-test-renderer": "16.9.0",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1"
@@ -69,6 +68,7 @@
     "@times-components/markup-forest": "1.7.31",
     "@times-components/styleguide": "3.38.4",
     "@times-components/video-label": "2.4.44",
+    "react-native-web": "0.11.4",
     "prop-types": "15.7.2"
   },
   "resolutions": {
