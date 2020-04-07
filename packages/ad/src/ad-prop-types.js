@@ -1,7 +1,4 @@
-import { ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 export const propTypes = {
   baseUrl: PropTypes.string,
@@ -9,7 +6,7 @@ export const propTypes = {
   isLoading: PropTypes.bool,
   section: PropTypes.string,
   slotName: PropTypes.string.isRequired,
-  style: ViewPropTypesStyle
+  style: PropTypes.shape({})
 };
 
 export const defaultProps = {

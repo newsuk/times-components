@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, ViewPropTypes } from "react-native";
+import { View } from "react-native";
 import { ArticleFlags } from "@times-components/article-flag";
 
 import HeaderLabel from "../article-header-label/article-header-label";
@@ -8,8 +8,6 @@ import HeaderStandfirst from "./article-header-standfirst";
 import styles from "../styles/article-header";
 
 import { HeadlineContainer } from "../styles/article-header/responsive";
-
-const { style: ViewStylePropTypes } = ViewPropTypes;
 
 const ArticleHeader = ({
   flags,
@@ -46,7 +44,7 @@ ArticleHeader.propTypes = {
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
   standfirst: PropTypes.string,
-  style: ViewStylePropTypes
+  style: PropTypes.shape({})
 };
 
 ArticleHeader.defaultProps = {

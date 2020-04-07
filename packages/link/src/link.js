@@ -1,5 +1,5 @@
 import React from "react";
-import { TouchableOpacity, ViewPropTypes } from "react-native";
+import { TouchableOpacity } from "react-native";
 import PropTypes from "prop-types";
 
 const Link = ({ children, disabled, linkStyle, onPress }) => (
@@ -13,12 +13,10 @@ const Link = ({ children, disabled, linkStyle, onPress }) => (
   </TouchableOpacity>
 );
 
-const { style: ViewPropTypesStyle } = ViewPropTypes;
-
 Link.propTypes = {
   children: PropTypes.node.isRequired,
   disabled: PropTypes.bool,
-  linkStyle: ViewPropTypesStyle,
+  linkStyle: PropTypes.shape({}),
   onPress: PropTypes.func.isRequired
 };
 

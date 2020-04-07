@@ -1,5 +1,5 @@
 import React from "react";
-import { TouchableNativeFeedback, View, ViewPropTypes } from "react-native";
+import { TouchableNativeFeedback, View } from "react-native";
 import PropTypes from "prop-types";
 
 const Link = ({ children, linkStyle, onPress, disabled }) => (
@@ -13,12 +13,10 @@ const Link = ({ children, linkStyle, onPress, disabled }) => (
   </TouchableNativeFeedback>
 );
 
-const { style: ViewPropTypesStyle } = ViewPropTypes;
-
 Link.propTypes = {
   children: PropTypes.node.isRequired,
   disabled: PropTypes.bool,
-  linkStyle: ViewPropTypesStyle,
+  linkStyle: PropTypes.shape({}),
   onPress: PropTypes.func.isRequired
 };
 

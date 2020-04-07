@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
-import { ViewPropTypes } from "react-native";
 import { sharedPropTypes, sharedDefaultProps } from "./card-shared-prop-types";
 
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 export const cardPropTypes = {
   ...sharedPropTypes,
@@ -10,7 +8,7 @@ export const cardPropTypes = {
   fadeImageIn: PropTypes.bool,
   highResSize: PropTypes.number,
   imageAccessibilityLabel: PropTypes.string,
-  imageStyle: ViewPropTypesStyle,
+  imageStyle: PropTypes.shape({}),
   imageUri: PropTypes.string,
   isLoading: PropTypes.bool,
   lowResQuality: PropTypes.number,
