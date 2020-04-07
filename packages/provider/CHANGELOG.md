@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.22.9](https://github.com/newsuk/times-components/compare/@times-components/provider@1.22.8...@times-components/provider@1.22.9) (2020-04-07)
+
+
+### Bug Fixes
+
+* move rnw dep to dependencies ([#2578](https://github.com/newsuk/times-components/issues/2578)) ([b5b5dbe](https://github.com/newsuk/times-components/commit/b5b5dbe0695037c55c7ba6921d7b279cac07581a))
+
+
+
+
+
 ## [1.22.8](https://github.com/newsuk/times-components/compare/@times-components/provider@1.22.7...@times-components/provider@1.22.8) (2020-03-18)
 
 **Note:** Version bump only for package @times-components/provider

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.90](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.17.89...@times-components/ios-app@0.17.90) (2020-04-07)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
 ## [0.17.89](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.17.88...@times-components/ios-app@0.17.89) (2020-04-06)
 
 **Note:** Version bump only for package @times-components/ios-app

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.16.33](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.16.32...@times-components/article-summary@3.16.33) (2020-04-07)
+
+
+### Bug Fixes
+
+* move rnw dep to dependencies ([#2578](https://github.com/newsuk/times-components/issues/2578)) ([b5b5dbe](https://github.com/newsuk/times-components/commit/b5b5dbe0695037c55c7ba6921d7b279cac07581a))
+
+
+
+
+
 ## [3.16.32](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.16.31...@times-components/article-summary@3.16.32) (2020-04-06)
 
 **Note:** Version bump only for package @times-components/article-summary

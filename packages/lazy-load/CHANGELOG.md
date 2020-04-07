@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.8](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.7...@times-components/lazy-load@0.6.8) (2020-04-07)
+
+
+### Bug Fixes
+
+* move rnw dep to dependencies ([#2578](https://github.com/newsuk/times-components/issues/2578)) ([b5b5dbe](https://github.com/newsuk/times-components/commit/b5b5dbe0695037c55c7ba6921d7b279cac07581a))
+
+
+
+
+
 ## [0.6.7](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.6...@times-components/lazy-load@0.6.7) (2020-03-16)
 
 **Note:** Version bump only for package @times-components/lazy-load

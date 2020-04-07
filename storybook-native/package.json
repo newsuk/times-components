@@ -1,6 +1,6 @@
 {
   "name": "@times-components/storybook-native",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "license": "BSD-3-Clause",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
