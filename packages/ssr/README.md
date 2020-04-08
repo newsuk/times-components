@@ -86,8 +86,10 @@ simple implementation which could be developed to the point where editorial cont
 is developed with a TDD approach here, that just happens to use components in the monorepo.
 
 Currently there is one simple test that is run separately in CI with no coverage measured.
-
+test
 The tests can be developed as follows:
+
+test
 
 ```bash
 yarn start:testservers
