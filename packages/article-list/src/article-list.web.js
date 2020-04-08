@@ -124,7 +124,7 @@ class ArticleList extends Component {
 
               const renderAd = () => {
                 if (index === this.advertPosition) {
-                  return renderAdComponent({ key: `advert${index}` });
+                  return renderAdComponent();
                 }
 
                 return null;
@@ -139,7 +139,13 @@ class ArticleList extends Component {
               };
 
               return (
-                <Fragment key={elementId}>
+                <Fragment
+                  key={
+                    index === this.advertPosition
+                      ? "articleInlineAd"
+                      : elementId
+                  }
+                >
                   <div
                     accessibility-label={elementId}
                     data-testid={`article-list-item-${index}`}
