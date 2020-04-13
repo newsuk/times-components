@@ -77,12 +77,8 @@ export default class AttributedString {
       const attrSet = attrs[i];
       for (let j = 0; j < attrSet.length; j++) {
         if (chars.includes(this.string[i])) {
-          if (chars.includes(this.string[i])) {
-            chunks.push(this.slice(start, start + 1));
-            chunks.push(this.slice(start + 1, i));
-          } else {
-            chunks.push(this.slice(start, i));
-          }
+          chunks.push(this.slice(start, start + 1));
+          chunks.push(this.slice(start + 1, i));
           start = i;
           continue attrs;
         }
