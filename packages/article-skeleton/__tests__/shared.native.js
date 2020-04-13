@@ -175,7 +175,7 @@ export default () => {
     },
     {
       name: "an article with inline paragraph",
-      test () {
+      test() {
         const testInstance = TestRenderer.create(
           renderArticleContent(contentWithItalicText, "maincomment")
         );
