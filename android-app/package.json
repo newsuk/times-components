@@ -1,6 +1,6 @@
 {
   "name": "@times-components/android-app",
-  "version": "0.17.91",
+  "version": "0.17.92",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "./gradlew clean && ./gradlew generateReactArchives && ./gradlew assemble && ./gradlew publish",
@@ -12,8 +12,8 @@
   },
   "dependencies": {
     "@react-native-community/netinfo": "5.3.3",
-    "@times-components/pages": "2.1.88",
-    "@times-components/typeset": "0.1.1",
+    "@times-components/pages": "2.1.89",
+    "@times-components/typeset": "0.1.2",
     "prop-types": "15.7.2",
     "react": "16.9.0",
     "react-native": "0.61.1",
