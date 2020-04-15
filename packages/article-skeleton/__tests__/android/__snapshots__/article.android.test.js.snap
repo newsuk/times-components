@@ -1521,3 +1521,1580 @@ exports[`8. renders content 1`] = `
   </RCTScrollView>
 </View>
 `;
+
+exports[`9. an article with inline paragraph 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView
+    ListHeaderComponent={
+      <Gutter
+        style={
+          Object {
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Header
+          width={750}
+        />
+      </Gutter>
+    }
+    extraData={true}
+    initialNumToRender={2}
+    maxToRenderPerBatch={10}
+    nestedScrollEnabled={true}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    removeClippedSubviews={true}
+    scrollEventThrottle={50}
+    showsVerticalScrollIndicator={false}
+    updateCellsBatchingPeriod={50}
+    windowSize={3}
+  >
+    <View>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        />
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontFamily": "TimesModern-Regular",
+                  "fontSize": 216,
+                  "left": 9.791015625,
+                  "lineHeight": 204.23812500000003,
+                  "position": "absolute",
+                },
+              ]
+            }
+          >
+            I
+          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                },
+                Object {
+                  "marginBottom": 20,
+                },
+                false,
+                Object {},
+                Object {
+                  "height": 416,
+                },
+              ]
+            }
+          >
+            <View>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 50,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                f
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 71.41015625,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                you
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 137.46875,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                want
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 224.638671875,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                to
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 265.490234375,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                look
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 342.447265625,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                as
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 389.50390625,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                good
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 479.978515625,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                as
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 527.03515625,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Daniel
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 635.544921875,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Craig
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 50,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                does,
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 144.447265625,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                naked,
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 257.140625,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                at
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 297.39453125,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                52,
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 353.802734375,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                then
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 433.23828125,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                you’re
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 537.40625,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                going
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 635.84375,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                to
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 50,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                have
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 134.33984375,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                to
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 175.19140625,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                change
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 301.490234375,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                your
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 379.73046875,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                breakfast.
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 549.46484375,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Begone,
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 0,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                buttered
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 142.76953125,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                toast
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 233.525390625,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                stuffed
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 356.5546875,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                into
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 426.005859375,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                your
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 504.24609375,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                mouth
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 616.67578125,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                on
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 665.982421875,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                the
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 0,
+                      "position": "absolute",
+                      "top": 208,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                way
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 72.31640625,
+                      "position": "absolute",
+                      "top": 208,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                out
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 133.365234375,
+                      "position": "absolute",
+                      "top": 208,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                of
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 175.306640625,
+                      "position": "absolute",
+                      "top": 208,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                the
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 234.87890625,
+                      "position": "absolute",
+                      "top": 208,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                house.
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 351.10546875,
+                      "position": "absolute",
+                      "top": 208,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                While
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 448.330078125,
+                      "position": "absolute",
+                      "top": 208,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                filming
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 567.5625,
+                      "position": "absolute",
+                      "top": 208,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "fontStyle": "italic",
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                No
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 622.669921875,
+                      "position": "absolute",
+                      "top": 208,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "fontStyle": "italic",
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Time
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 0,
+                      "position": "absolute",
+                      "top": 260,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "fontStyle": "italic",
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                to
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 40.8515625,
+                      "position": "absolute",
+                      "top": 260,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "fontStyle": "italic",
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Die,
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 108.24609375,
+                      "position": "absolute",
+                      "top": 260,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                the
+              </Text>
+              <Text
+                accessibilityRole="link"
+                style={
+                  Array [
+                    Object {
+                      "textDecorationLine": "underline",
+                    },
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 18,
+                      "left": 167.818359375,
+                      "lineHeight": 26,
+                      "marginBottom": 25,
+                      "marginTop": 0,
+                      "position": "absolute",
+                      "top": 260,
+                    },
+                  ]
+                }
+              >
+                latest
+              </Text>
+              <Text
+                accessibilityRole="link"
+                style={
+                  Array [
+                    Object {
+                      "textDecorationLine": "underline",
+                    },
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 18,
+                      "left": 257.291015625,
+                      "lineHeight": 26,
+                      "marginBottom": 25,
+                      "marginTop": 0,
+                      "position": "absolute",
+                      "top": 260,
+                    },
+                  ]
+                }
+              >
+                 
+              </Text>
+              <Text
+                accessibilityRole="link"
+                style={
+                  Array [
+                    Object {
+                      "textDecorationLine": "underline",
+                    },
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 18,
+                      "left": 266.203125,
+                      "lineHeight": 26,
+                      "marginBottom": 25,
+                      "marginTop": 0,
+                      "position": "absolute",
+                      "top": 260,
+                    },
+                  ]
+                }
+              >
+                James
+              </Text>
+              <Text
+                accessibilityRole="link"
+                style={
+                  Array [
+                    Object {
+                      "textDecorationLine": "underline",
+                    },
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 18,
+                      "left": 374.8359375,
+                      "lineHeight": 26,
+                      "marginBottom": 25,
+                      "marginTop": 0,
+                      "position": "absolute",
+                      "top": 260,
+                    },
+                  ]
+                }
+              >
+                 
+              </Text>
+              <Text
+                accessibilityRole="link"
+                style={
+                  Array [
+                    Object {
+                      "textDecorationLine": "underline",
+                    },
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 18,
+                      "left": 383.748046875,
+                      "lineHeight": 26,
+                      "marginBottom": 25,
+                      "marginTop": 0,
+                      "position": "absolute",
+                      "top": 260,
+                    },
+                  ]
+                }
+              >
+                Bond
+              </Text>
+              <Text
+                accessibilityRole="link"
+                style={
+                  Array [
+                    Object {
+                      "textDecorationLine": "underline",
+                    },
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 18,
+                      "left": 466.857421875,
+                      "lineHeight": 26,
+                      "marginBottom": 25,
+                      "marginTop": 0,
+                      "position": "absolute",
+                      "top": 260,
+                    },
+                  ]
+                }
+              >
+                 
+              </Text>
+              <Text
+                accessibilityRole="link"
+                style={
+                  Array [
+                    Object {
+                      "textDecorationLine": "underline",
+                    },
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 18,
+                      "left": 475.76953125,
+                      "lineHeight": 26,
+                      "marginBottom": 25,
+                      "marginTop": 0,
+                      "position": "absolute",
+                      "top": 260,
+                    },
+                  ]
+                }
+              >
+                film,
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 553.271484375,
+                      "position": "absolute",
+                      "top": 260,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Craig
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 0,
+                      "position": "absolute",
+                      "top": 312,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                started
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 123.01171875,
+                      "position": "absolute",
+                      "top": 312,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                the
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 182.583984375,
+                      "position": "absolute",
+                      "top": 312,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                day
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 248.150390625,
+                      "position": "absolute",
+                      "top": 312,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                with
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 324.439453125,
+                      "position": "absolute",
+                      "top": 312,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                rye
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 381.7265625,
+                      "position": "absolute",
+                      "top": 312,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                bread,
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 488.70703125,
+                      "position": "absolute",
+                      "top": 312,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                poached
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 635.9765625,
+                      "position": "absolute",
+                      "top": 312,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                eggs,
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 0,
+                      "position": "absolute",
+                      "top": 364,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                avocado
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 145.1953125,
+                      "position": "absolute",
+                      "top": 364,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                and
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 213.85546875,
+                      "position": "absolute",
+                      "top": 364,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                kimchi,
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 335.77734375,
+                      "position": "absolute",
+                      "top": 364,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                maybe
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 451.86328125,
+                      "position": "absolute",
+                      "top": 364,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                some
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 550.494140625,
+                      "position": "absolute",
+                      "top": 364,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                kale.
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "maxWidth": "100%",
+                  "width": undefined,
+                },
+              ]
+            }
+          >
+            <ArticleExtras
+              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+              articleUrl="https://url.io"
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <ActivityIndicator
+            animating={true}
+            color={null}
+            hidesWhenStopped={true}
+            size="large"
+          />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

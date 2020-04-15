@@ -72,22 +72,14 @@ export default class AttributedString {
   public split = (chars: string[] = [' ', '\n']) => {
     const attrs = this.attributes;
     let start = 0;
-    let lastAttrs = attrs[0];
     const chunks: AttributedString[] = [];
     attrs: for (let i = 0; i < attrs.length; i++) {
       const attrSet = attrs[i];
       for (let j = 0; j < attrSet.length; j++) {
-        const attr = attrSet[j];
-        const lastAttr = lastAttrs[j];
-        if (attr !== lastAttr || chars.includes(this.string[i])) {
-          if (chars.includes(this.string[i])) {
-            chunks.push(this.slice(start, start + 1));
-            chunks.push(this.slice(start + 1, i));
-          } else {
-            chunks.push(this.slice(start, i));
-          }
+        if (chars.includes(this.string[i])) {
+          chunks.push(this.slice(start, start + 1));
+          chunks.push(this.slice(start + 1, i));
           start = i;
-          lastAttrs = attrSet;
           continue attrs;
         }
       }
