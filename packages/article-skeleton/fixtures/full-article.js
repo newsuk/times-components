@@ -1899,3 +1899,64 @@ export const testFixture = {
   ],
   url: "https://url.io"
 };
+
+export const contentWithItalicText = [
+  {
+    name: "paragraph",
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value:
+            "If you want to look as good as Daniel Craig does, naked, at 52, then you’re going to have to change your breakfast. Begone, buttered toast stuffed into your mouth on the way out of the house. While filming "
+        },
+        children: []
+      },
+      {
+        name: "italic",
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: "No Time to Die"
+            },
+            children: []
+          }
+        ]
+      },
+      {
+        name: "text",
+        attributes: {
+          value: ", the "
+        },
+        children: []
+      },
+      {
+        name: "link",
+        attributes: {
+          href:
+            "https://www.thetimes.co.uk/article/what-next-for-james-bond-m0s5vjkxz",
+          type: "article",
+          canonicalId: "what-next-for-james-bond-m0s5vjkxz"
+        },
+        children: [
+          {
+            name: "text",
+            attributes: {
+              value: "latest James Bond film"
+            },
+            children: []
+          }
+        ]
+      },
+      {
+        name: "text",
+        attributes: {
+          value:
+            ", Craig started the day with rye bread, poached eggs, avocado and kimchi, maybe some kale."
+        },
+        children: []
+      }
+    ]
+  }
+];
