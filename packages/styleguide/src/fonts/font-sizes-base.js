@@ -34,7 +34,11 @@ const fontSizes = {
   strapline: 22,
   teaser: 14,
   tertiary: 15,
-  tileLeadHeadline: 35
+  tileLeadHeadline: 35,
+  heading2Mobile: 25,
+  heading3Mobile: 22,
+  heading4Mobile: 19,
+  heading5Mobile: 17
 };
 
 export default fontSizes;

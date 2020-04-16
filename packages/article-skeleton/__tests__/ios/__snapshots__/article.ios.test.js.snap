@@ -1243,7 +1243,197 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
 </View>
 `;
 
-exports[`7. an inline link reports analytics event on press 1`] = `
+exports[`6. an article with heading tags 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView
+    ListHeaderComponent={
+      <Gutter
+        style={
+          Object {
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Header
+          width={750}
+        />
+      </Gutter>
+    }
+    extraData={true}
+    initialNumToRender={2}
+    maxToRenderPerBatch={10}
+    nestedScrollEnabled={true}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    removeClippedSubviews={true}
+    scrollEventThrottle={50}
+    showsVerticalScrollIndicator={false}
+    updateCellsBatchingPeriod={50}
+    windowSize={3}
+  >
+    <View>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        />
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                },
+                Object {
+                  "marginBottom": 20,
+                },
+                false,
+                Object {
+                  "marginBottom": 0,
+                },
+              ]
+            }
+          >
+            <View>
+              <Text
+                selectable={true}
+                style={
+                  Object {
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 25,
+                    "lineHeight": 26,
+                    "marginBottom": 10,
+                  }
+                }
+              >
+                This is heading 2
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                },
+                Object {
+                  "marginBottom": 20,
+                },
+                false,
+                Object {
+                  "marginBottom": 0,
+                },
+              ]
+            }
+          >
+            <View>
+              <Text
+                selectable={true}
+                style={
+                  Object {
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 22,
+                    "lineHeight": 26,
+                    "marginBottom": 10,
+                  }
+                }
+              >
+                This is heading 3
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 0,
+          }
+        }
+      />
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <ActivityIndicator
+            animating={true}
+            color="#999999"
+            hidesWhenStopped={true}
+            size="large"
+          />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`8. an inline link reports analytics event on press 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
@@ -1276,7 +1466,7 @@ Object {
 }
 `;
 
-exports[`8. renders content 1`] = `
+exports[`9. renders content 1`] = `
 <View
   style={
     Object {
@@ -1522,7 +1712,7 @@ exports[`8. renders content 1`] = `
 </View>
 `;
 
-exports[`9. an article with inline paragraph 1`] = `
+exports[`10. an article with inline paragraph 1`] = `
 <View
   style={
     Object {
