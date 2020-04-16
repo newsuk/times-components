@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.14...@times-components/article-skeleton@1.33.15) (2020-04-16)
+
+
+### Bug Fixes
+
+* TNLT-326 nested styling for inline paragraph links ([#2582](https://github.com/newsuk/times-components/issues/2582)) ([594543b](https://github.com/newsuk/times-components/commit/594543b0d3f2da8f128a1b8d1ddd72e2cb65fac3))
+
+
+
+
+
 ## [1.33.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.13...@times-components/article-skeleton@1.33.14) (2020-04-15)
 
 
