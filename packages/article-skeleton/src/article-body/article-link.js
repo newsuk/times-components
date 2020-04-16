@@ -11,6 +11,7 @@ const ArticleLink = props => (
       const styles = styleFactory(scale);
       return (
         <TextLink
+          allowFontScaling={false}
           onPress={props.onPress}
           style={
             props.style
