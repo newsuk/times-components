@@ -6,7 +6,7 @@ const fontSizes = () => ({
   heading2: 28,
   heading3: 24,
   heading4: 20,
-  heading5: 19,
+  heading5: 19
 });
 
 export default fontSizes;
