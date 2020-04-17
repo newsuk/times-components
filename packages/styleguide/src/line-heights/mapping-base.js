@@ -28,7 +28,11 @@ const mapping = {
     pageComponentHeadline: 27,
     pageHeadline: 40,
     smallHeadline: 27,
-    tileLeadHeadline: 35
+    tileLeadHeadline: 35,
+    heading2Mobile: 26,
+    heading3Mobile: 26,
+    heading4Mobile: 26,
+    heading5Mobile: 26
   },
   headlineRegular: {
     pageComponentHeadline: 30,
