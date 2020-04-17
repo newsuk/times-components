@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.38.5](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.4...@times-components/styleguide@3.38.5) (2020-04-17)
+
+
+### Bug Fixes
+
+* (TNLT-1156) native heading tags styling ([#2583](https://github.com/newsuk/times-components/issues/2583)) ([5e1224a](https://github.com/newsuk/times-components/commit/5e1224a8132582a10bd5571a15f19363ab940e34))
+
+
+
+
+
 ## [3.38.4](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.3...@times-components/styleguide@3.38.4) (2020-04-06)
 
 **Note:** Version bump only for package @times-components/styleguide

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.15...@times-components/article-skeleton@1.33.16) (2020-04-17)
+
+
+### Bug Fixes
+
+* (TNLT-1156) native heading tags styling ([#2583](https://github.com/newsuk/times-components/issues/2583)) ([5e1224a](https://github.com/newsuk/times-components/commit/5e1224a8132582a10bd5571a15f19363ab940e34))
+
+
+
+
+
 ## [1.33.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.14...@times-components/article-skeleton@1.33.15) (2020-04-16)
 
 
