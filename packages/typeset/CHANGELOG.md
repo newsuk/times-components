@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/newsuk/times-components/compare/@times-components/typeset@0.1.1...@times-components/typeset@0.1.2) (2020-04-15)
+
+
+### Bug Fixes
+
+* (TNLT-869, TNLT-678) last italic word and links wrapping in first paragraph with dropcap ([#2581](https://github.com/newsuk/times-components/issues/2581)) ([24ec867](https://github.com/newsuk/times-components/commit/24ec86743e579746f0da1430779a940335e2a962))
+
+
+
+
+
 ## [0.1.1](https://github.com/newsuk/times-components/compare/@times-components/typeset@0.1.0...@times-components/typeset@0.1.1) (2020-03-03)
 
 

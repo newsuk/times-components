@@ -5,6 +5,7 @@ import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales } from "@times-components/styleguide";
 import ArticleSkeleton from "../src/article-skeleton";
 import contentWithNestedFirstParagraph from "../fixtures/bold-article-content";
+import contentWithHeadingTags from "../fixtures/headings-article-content";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 
@@ -427,6 +428,18 @@ export const snapshotTests = renderComponent => [
         relatedArticleSlice: null,
         template,
         topics: []
+      });
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "an article with heading tags",
+    test() {
+      const article = articleFixture({
+        ...fixtureArgs,
+        content: contentWithHeadingTags
       });
       const output = renderComponent(renderArticle(article));
 

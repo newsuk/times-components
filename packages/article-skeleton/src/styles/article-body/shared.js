@@ -62,6 +62,41 @@ const sharedStyles = scale => {
       flexDirection: "column",
       paddingBottom: spacing(5),
       width: "100%"
+    },
+    heading2: {
+      ...fontFactory({
+        font: "headline",
+        fontSize: "heading2Mobile"
+      }),
+      marginBottom: spacing(2)
+    },
+    heading3: {
+      ...fontFactory({
+        font: "headline",
+        fontSize: "heading3Mobile"
+      }),
+      marginBottom: spacing(2)
+    },
+    heading4: {
+      ...fontFactory({
+        font: "headline",
+        fontSize: "heading4Mobile"
+      }),
+      marginBottom: spacing(2)
+    },
+    heading5: {
+      ...fontFactory({
+        font: "headline",
+        fontSize: "heading5Mobile"
+      }),
+      marginBottom: spacing(2)
+    },
+    heading6: {
+      ...fontFactory({
+        font: "headline",
+        fontSize: "heading5Mobile"
+      }),
+      marginBottom: spacing(2)
     }
   };
 };
