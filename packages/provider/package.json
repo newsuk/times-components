@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "1.22.9",
+  "version": "1.22.10",
   "main": "dist/provider",
   "dev": "src/provider",
   "scripts": {
