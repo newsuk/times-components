@@ -137,3 +137,17 @@ export const InpIconContainer = styled(View)`
   padding-left: 5px;
   padding-top: 6px;
 `;
+
+export const buttonStyles = {
+  alignItems: "center",
+  backgroundColor: "transparent",
+  borderColor: colours.functional.brandColour,
+  borderStyle: "solid",
+  borderWidth: "2px",
+  color: colours.functional.brandColour,
+  fontFamily: fonts.supporting,
+  height: "45px",
+  justifyContent: "center",
+  letterSpacing: 0.2,
+  width: "100%"
+};

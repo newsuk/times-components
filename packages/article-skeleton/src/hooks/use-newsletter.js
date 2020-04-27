@@ -1,7 +1,7 @@
 import { useEffect, useReducer, useCallback } from "react";
 
 const initialState = {
-  isSubscribedOnLoad: undefined,
+  alreadySubscribed: undefined,
   isSubscribed: undefined,
   loading: true,
   subscribing: false
@@ -15,7 +15,7 @@ function reducer(state, action) {
         ...state,
         loading: false,
         isSubscribed,
-        isSubscribedOnLoad: isSubscribed
+        alreadySubscribed: isSubscribed
       };
     }
 
@@ -39,7 +39,7 @@ function reducer(state, action) {
 
 export function useNewsletter(newsletterId) {
   const [
-    { isSubscribedOnLoad, isSubscribed, loading, subscribing },
+    { alreadySubscribed, isSubscribed, loading, subscribing },
     dispatch
   ] = useReducer(reducer, initialState);
 
@@ -71,22 +71,24 @@ export function useNewsletter(newsletterId) {
     });
   }, []);
 
+  const subscribeNewsletter = useCallback(async () => {
+    dispatch({ type: "SUBSCRIBE_NEWSLETTER_STARTED" });
+    const { subscribeNewsletter } = await makeRequest(
+      "mutation NewsletterPuffSubscribeNewsletter($id: String!) { subscribeNewsletter(id: $id) { id isSubscribed } }"
+    );
+    dispatch({
+      type: "SUBSCRIBE_NEWSLETTER_FINISHED",
+      payload: {
+        isSubscribed: subscribeNewsletter.isSubscribed
+      }
+    });
+  });
+
   return {
-    isSubscribedOnLoad,
+    alreadySubscribed,
     isSubscribed,
     loading,
-    subscribeNewsletter: async () => {
-      dispatch({ type: "SUBSCRIBE_NEWSLETTER_STARTED" });
-      const { subscribeNewsletter } = await makeRequest(
-        "mutation NewsletterPuffSubscribeNewsletter($id: String!) { subscribeNewsletter(id: $id) { id isSubscribed } }"
-      );
-      dispatch({
-        type: "SUBSCRIBE_NEWSLETTER_FINISHED",
-        payload: {
-          isSubscribed: subscribeNewsletter.isSubscribed
-        }
-      });
-    },
+    subscribeNewsletter,
     subscribing
   };
 }
