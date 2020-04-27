@@ -137,7 +137,8 @@ export default {
         </ScrollView>
       ),
       name: "LeadOneAndTwo",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: () => (
@@ -158,7 +159,8 @@ export default {
         </ScrollView>
       ),
       name: "LeadOneAndTwo With 1 Support",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: () => (
@@ -179,7 +181,8 @@ export default {
         </ScrollView>
       ),
       name: "LeadOneAndTwo With 2 Supports",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: () => (
@@ -200,7 +203,8 @@ export default {
         </ScrollView>
       ),
       name: "OpinionOneAndTwo",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: () => (
@@ -221,7 +225,8 @@ export default {
         </ScrollView>
       ),
       name: "OpinionOneAndTwo With 1 Support",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: () => (
@@ -242,7 +247,8 @@ export default {
         </ScrollView>
       ),
       name: "OpinionOneAndTwo With 2 Supports",
-      type: "story"
+      type: "story",
+      platform: "native"
     },
     {
       component: ({ select }) => (
