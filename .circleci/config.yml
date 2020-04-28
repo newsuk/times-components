@@ -3,7 +3,7 @@ version: 2.1
 executors:
     node:
         docker:
-            - image: circleci/node:10.13.0
+            - image: circleci/node:10.13.0-browsers
         resource_class: 2xlarge
 
 commands:
