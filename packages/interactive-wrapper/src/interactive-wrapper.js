@@ -41,8 +41,10 @@ class InteractiveWrapper extends Component {
       const { height } = this.state;
       const newHeight = parseInt(e.nativeEvent.data, 10);
 
-      if (newHeight && newHeight > height && newHeight > 30) {
-        this.setState({ height: newHeight });
+      if (newHeight && newHeight > height) {
+        const updateState =
+          newHeight < 30 ? { height: newHeight + 30 } : { height: newHeight };
+        this.setState(updateState);
       }
     } else {
       console.error(`Invalid height received ${e.nativeEvent.data}`); // eslint-disable-line no-console
