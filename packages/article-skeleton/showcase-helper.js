@@ -12,13 +12,57 @@ import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import fullArticleFixture from "./fixtures/full-article";
 import ArticleSkeleton from "./src/article-skeleton";
 
+import {
+  GET_NEWSLETTER,
+  SUBSCRIBE_NEWSLETTER
+} from "./src/article-body/inline-newsletter-puff";
+
+const mocks = [
+  {
+    request: {
+      query: GET_NEWSLETTER,
+      variables: {
+        id: "a2l6E000000CdHzQAK"
+      }
+    },
+    result: {
+      data: {
+        newsletter: {
+          id: "a2l6E000000CdHzQAK",
+          isSubscribed: false,
+          __typename: "Newsletter"
+        }
+      }
+    },
+    delay: 2000
+  },
+  {
+    request: {
+      query: SUBSCRIBE_NEWSLETTER,
+      variables: {
+        id: "a2l6E000000CdHzQAK"
+      }
+    },
+    result: {
+      data: {
+        subscribeNewsletter: {
+          id: "a2l6E000000CdHzQAK",
+          isSubscribed: true,
+          __typename: "Newsletter"
+        }
+      }
+    },
+    delay: 2000
+  }
+];
+
 const TestHeader = () => (
   <View
     style={{
       alignItems: "center",
       borderColor: "#66666",
       borderWidth: 1,
-      justfyContent: "center",
+      justifyContent: "center",
       margin: 20,
       padding: 20
     }}
@@ -61,7 +105,7 @@ const renderArticleSkeleton = ({
   const showHeader = header ? () => <TestHeader /> : () => null;
 
   return (
-    <MockBookmarksProvider delay={1000} articleId={data.id}>
+    <MockBookmarksProvider otherMocks={mocks} delay={1000} articleId={data.id}>
       <ContextProviderWithDefaults value={{ theme: { scale, sectionColour } }}>
         <ArticleSkeleton
           adConfig={articleAdConfig}

@@ -1,7 +1,11 @@
-import React from "react";
-import { Platform } from "react-native";
+import React, { useState } from "react";
+import { Platform, View } from "react-native";
 import PropTypes from "prop-types";
 
+import { Query, Mutation } from "react-apollo";
+import gql from "graphql-tag";
+
+import { Placeholder } from "@times-components/image";
 import Image from "@times-components/image";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
 import { IconForwardArrow } from "@times-components/icons";
@@ -15,91 +19,131 @@ import {
   InpImageContainer,
   InpPreferencesContainer,
   InpPreferencesText,
-  InpSignup,
   InpSignupContainer,
   InpSignupCTAContainer,
   InpSignupHeadline,
   InpSignupLabel,
-  InpSignupText,
-  InpSubcribedCopy,
-  InpSubcribedHeadline,
+  InpSubscribedCopy,
+  InpSubscribedHeadline,
   InpSubscribedContainer,
   buttonStyles
 } from "../styles/inline-newsletter-puff";
 
-import { useNewsletter } from "../hooks/use-newsletter";
-
-function onSignUpClick() {
+function onManagePreferencesPress() {
   if (Platform.OS !== "web") {
     InteractiveWrapper.openURLInBrowser("https://home.thetimes.co.uk/myNews");
   }
 }
 
-const InlineNewsletterPuff = ({ label, headline, copy, newsletterId }) => {
-  const {
-    alreadySubscribed,
-    isSubscribed,
-    loading,
-    subscribeNewsletter,
-    subscribing
-  } = useNewsletter(newsletterId);
+export const GET_NEWSLETTER = gql`
+  query GetNewsletter($id: String!) {
+    newsletter(id: $id) {
+      id
+      isSubscribed
+    }
+  }
+`;
+
+export const SUBSCRIBE_NEWSLETTER = gql`
+  mutation SubscribeNewsletter($id: String!) {
+    subscribeNewsletter(id: $id) {
+      id
+      isSubscribed
+    }
+  }
+`;
+
+export const InlineNewsletterPuff = ({
+  copy,
+  headline,
+  label,
+  newsletterId: id
+}) => {
+  const [justSubscribed, setJustSubscribed] = useState(false);
 
   return (
-    <InpContainer>
-      <InpImageContainer>
-        <Image
-          aspectRatio={1.42}
-          uri="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
-        />
-      </InpImageContainer>
-      {loading && (
-        <InpSubscribedContainer>
-          <InpSubcribedHeadline>Loading…</InpSubcribedHeadline>
-        </InpSubscribedContainer>
-      )}
-      {!loading &&
-        !isSubscribed && (
-          <InpSignupContainer>
-            <InpSignupLabel>{label}</InpSignupLabel>
-            <InpSignupHeadline>{headline}</InpSignupHeadline>
-            <InpCopy>{copy}</InpCopy>
-            <InpSignupCTAContainer>
-              {subscribing ? (
-                <>Subscribing…</>
-              ) : (
-                <Button
-                  title="Sign up to newsletter"
-                  onPress={subscribeNewsletter}
-                  style={buttonStyles}
-                />
-              )}
-            </InpSignupCTAContainer>
-          </InpSignupContainer>
-        )}
-      {!loading &&
-        isSubscribed && (
-          <InpSubscribedContainer>
-            <InpSubcribedHeadline>
-              {alreadySubscribed
-                ? "alreadySubscribed"
-                : "You’ve successfully signed up"}
-            </InpSubcribedHeadline>
-            <InpSubcribedCopy>
-              {alreadySubscribed
-                ? "alreadySubscribed"
-                : "Congratulations you can now enjoy daily updates from Red Box."}
-            </InpSubcribedCopy>
-            <InpPreferencesContainer>
-              <InpPreferencesText>
-                Manage preferences here
-                <InpIconContainer>
-                  <IconForwardArrow fillColour={colours.functional.action} />
-                </InpIconContainer>
-              </InpPreferencesText>
-            </InpPreferencesContainer>
-          </InpSubscribedContainer>
-        )}
-    </InpContainer>
+    <Query query={GET_NEWSLETTER} variables={{ id }}>
+      {({ loading, data: { newsletter } }) => {
+        if (loading || !newsletter) {
+          return (
+            <InpContainer style={{ height: 257 }}>
+              <Placeholder />
+            </InpContainer>
+          );
+        }
+
+        if (newsletter.isSubscribed && !justSubscribed) {
+          return null;
+        }
+
+        return (
+          <Mutation
+            mutation={SUBSCRIBE_NEWSLETTER}
+            onCompleted={({ subscribeNewsletter = {} }) => {
+              setJustSubscribed(subscribeNewsletter.isSubscribed);
+            }}
+          >
+            {(subscribeNewsletter, { loading: updatingSubscription }) => (
+              <InpContainer>
+                <InpImageContainer>
+                  <Image
+                    aspectRatio={1.42}
+                    uri="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
+                  />
+                </InpImageContainer>
+                {justSubscribed ? (
+                  <InpSubscribedContainer>
+                    <InpSubscribedHeadline>
+                      You’ve successfully signed up
+                    </InpSubscribedHeadline>
+                    <InpSubscribedCopy>
+                      Congratulations you can now enjoy daily updates from Red
+                      Box.
+                    </InpSubscribedCopy>
+                    <InpPreferencesContainer>
+                      <Link
+                        url="https://home.thetimes.co.uk/myNews"
+                        onPress={onManagePreferencesPress}
+                      >
+                        <InpPreferencesText>
+                          Manage preferences here
+                          <InpIconContainer>
+                            <IconForwardArrow
+                              fillColour={colours.functional.action}
+                            />
+                          </InpIconContainer>
+                        </InpPreferencesText>
+                      </Link>
+                    </InpPreferencesContainer>
+                  </InpSubscribedContainer>
+                ) : (
+                  <InpSignupContainer>
+                    <InpSignupLabel>{label}</InpSignupLabel>
+                    <InpSignupHeadline>{headline}</InpSignupHeadline>
+                    <InpCopy>{copy}</InpCopy>
+                    <InpSignupCTAContainer>
+                      <Button
+                        title={
+                          updatingSubscription
+                            ? "Saving…"
+                            : "Sign up to newsletter"
+                        }
+                        onPress={() => {
+                          if (!updatingSubscription) {
+                            subscribeNewsletter({ variables: { id } });
+                          }
+                        }}
+                        style={buttonStyles}
+                      />
+                    </InpSignupCTAContainer>
+                  </InpSignupContainer>
+                )}
+              </InpContainer>
+            )}
+          </Mutation>
+        );
+      }}
+    </Query>
   );
 };
 
@@ -109,5 +153,3 @@ InlineNewsletterPuff.propTypes = {
   copy: PropTypes.string.isRequired,
   newsletterId: PropTypes.string.isRequired
 };
-
-export default InlineNewsletterPuff;

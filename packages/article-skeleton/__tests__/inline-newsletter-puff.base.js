@@ -1,7 +1,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 
-import InlineNewsletterPuff from "../src/article-body/inline-newsletter-puff";
+import { InlineNewsletterPuff } from "../src/article-body/inline-newsletter-puff";
 
 jest.mock("@times-components/image", () => "Image");
 
