@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.5.2...@times-components/interactive-wrapper@0.6.0) (2020-04-30)
+
+
+### Features
+
+* fix deck quizzes not displaying ([#2587](https://github.com/newsuk/times-components/issues/2587)) ([355b985](https://github.com/newsuk/times-components/commit/355b9857b25dd4a6c6ea420f45f33e886d2ae4a0))
+
+
+
+
+
 ## [0.5.2](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.5.1...@times-components/interactive-wrapper@0.5.2) (2020-04-17)
 
 **Note:** Version bump only for package @times-components/interactive-wrapper
