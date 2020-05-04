@@ -3,7 +3,6 @@ import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import ArticleList from "../src/article-list";
 import articlesFixture from "../fixtures/articles.json";
-import adConfig from "../fixtures/article-ad-config.json";
 
 export default (additionalTests = []) => {
   const realIntl = Intl;
@@ -27,7 +26,6 @@ export default (additionalTests = []) => {
       test() {
         const testInstance = TestRenderer.create(
           <ArticleList
-            adConfig={adConfig}
             articles={articlesFixture}
             emptyStateMessage="Empty state"
             refetch={() => {}}
