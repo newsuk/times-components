@@ -62,15 +62,21 @@ export const InlineNewsletterPuff = ({
   const [justSubscribed, setJustSubscribed] = useState(false);
 
   return (
-    <Query query={GET_NEWSLETTER} variables={{ id }}>
-      {({ loading, data: { newsletter } }) => {
-        if (loading || !newsletter) {
+    <Query query={GET_NEWSLETTER} variables={{ id }} ssr={false}>
+      {({ loading, data, error }) => {
+        if (error) {
+          return null;
+        }
+
+        if (loading || !data || !data.newsletter) {
           return (
             <InpContainer style={{ height: 257 }}>
               <Placeholder />
             </InpContainer>
           );
         }
+
+        const { newsletter } = data;
 
         if (newsletter.isSubscribed && !justSubscribed) {
           return null;
