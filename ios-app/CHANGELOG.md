@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.97](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.17.95...@times-components/ios-app@0.17.97) (2020-04-30)
+
+
+### Bug Fixes
+
+* manual ios bump ([#2588](https://github.com/newsuk/times-components/issues/2588)) ([6b9b8f4](https://github.com/newsuk/times-components/commit/6b9b8f4d13dcbfd65c7abc88f806d40d0f94f9e7))
+
+
+
+
+
+## [0.17.95](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.17.94...@times-components/ios-app@0.17.95) (2020-04-30)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.17.94](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.17.93...@times-components/ios-app@0.17.94) (2020-04-21)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.17.93](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.17.92...@times-components/ios-app@0.17.93) (2020-04-17)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.17.92](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.17.91...@times-components/ios-app@0.17.92) (2020-04-16)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.17.91](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.17.90...@times-components/ios-app@0.17.91) (2020-04-15)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
 ## [0.17.90](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.17.89...@times-components/ios-app@0.17.90) (2020-04-07)
 
 **Note:** Version bump only for package @times-components/ios-app

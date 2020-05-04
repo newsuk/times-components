@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.18](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.17...@times-components/article-skeleton@1.33.18) (2020-04-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.33.17](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.16...@times-components/article-skeleton@1.33.17) (2020-04-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.33.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.15...@times-components/article-skeleton@1.33.16) (2020-04-17)
+
+
+### Bug Fixes
+
+* (TNLT-1156) native heading tags styling ([#2583](https://github.com/newsuk/times-components/issues/2583)) ([5e1224a](https://github.com/newsuk/times-components/commit/5e1224a8132582a10bd5571a15f19363ab940e34))
+
+
+
+
+
+## [1.33.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.14...@times-components/article-skeleton@1.33.15) (2020-04-16)
+
+
+### Bug Fixes
+
+* TNLT-326 nested styling for inline paragraph links ([#2582](https://github.com/newsuk/times-components/issues/2582)) ([594543b](https://github.com/newsuk/times-components/commit/594543b0d3f2da8f128a1b8d1ddd72e2cb65fac3))
+
+
+
+
+
+## [1.33.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.13...@times-components/article-skeleton@1.33.14) (2020-04-15)
+
+
+### Bug Fixes
+
+* (TNLT-869, TNLT-678) last italic word and links wrapping in first paragraph with dropcap ([#2581](https://github.com/newsuk/times-components/issues/2581)) ([24ec867](https://github.com/newsuk/times-components/commit/24ec86743e579746f0da1430779a940335e2a962))
+
+
+
+
+
 ## [1.33.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.12...@times-components/article-skeleton@1.33.13) (2020-04-07)
 
 **Note:** Version bump only for package @times-components/article-skeleton

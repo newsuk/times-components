@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.9](https://github.com/newsuk/times-components/compare/@times-components/storybook-native@0.2.8...@times-components/storybook-native@0.2.9) (2020-04-21)
+
+
+### Bug Fixes
+
+* deps fix ([#2584](https://github.com/newsuk/times-components/issues/2584)) ([fe7cfe7](https://github.com/newsuk/times-components/commit/fe7cfe7d26b97d0463ff5e95ffdb859d7e3f6dd7))
+
+
+
+
+
 ## [0.2.8](https://github.com/newsuk/times-components/compare/@times-components/storybook-native@0.2.7...@times-components/storybook-native@0.2.8) (2020-04-07)
 
 

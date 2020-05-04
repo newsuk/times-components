@@ -97,6 +97,7 @@ const InlineParagraph = ({
         const type = href ? href.type : null;
         const canonicalId = href ? href.canonicalId : null;
         if (href) {
+          const { color, ...linkStyle } = style;
           return (
             <LinkComponent
               url={href}
@@ -104,6 +105,7 @@ const InlineParagraph = ({
                 onLinkPress(e, { canonicalId, type, url: href.href })
               }
               style={{
+                ...linkStyle,
                 position: "absolute",
                 left: p.position.x,
                 top: p.position.y

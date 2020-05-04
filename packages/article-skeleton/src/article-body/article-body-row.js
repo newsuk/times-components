@@ -46,10 +46,6 @@ export default ({
   const { fontScale } = Dimensions.get("window");
   defaultFont.fontSize *= fontScale;
   defaultFont.lineHeight *= fontScale;
-  const headingSettings = fontFactory({
-    font: "headline",
-    fontSize: "smallHeadline"
-  });
 
   const fontConfig = {
     body: defaultFont,
@@ -58,10 +54,6 @@ export default ({
     },
     italic: {
       fontStyle: "italic"
-    },
-    subheading: {
-      font: headingSettings.fontFamily,
-      fontSize: headingSettings.fontSize
     }
   };
 
@@ -84,11 +76,7 @@ export default ({
           ast={tree}
           style={{ marginBottom: 0 }}
         >
-          <Text
-            selectable
-            allowFontScaling={false}
-            style={fontConfig.subheading}
-          >
+          <Text selectable style={styles[tree.name]}>
             {childStr.string}
           </Text>
         </ArticleParagraphWrapper>
