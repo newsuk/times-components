@@ -14,7 +14,12 @@ exports[`renders correctly 1`] = `
     allowsFullscreenVideo={false}
     androidHardwareAccelerationDisabled={false}
     cacheEnabled={true}
-    injectedJavaScript="window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};(function webviewEventCallbackSetup(options){var window=options.window;window.eventCallback=function(type,detail){window.ReactNativeWebView.postMessage(JSON.stringify({detail:detail,isTngMessage:true,type:type}));};window.addEventListener(\\"error\\",function(ev){var file=(ev.filename||\\"\\").substring(0,100);window.eventCallback(\\"error\\",\\"msg=\\"+(ev.message||\\"\\")+\\", file=\\"+file+\\", line=\\"+(ev.lineno||\\"\\")+\\", col=\\"+(ev.colno||\\"\\"));});window.console.error=function(){for(var _len=arguments.length,args=new Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}window.eventCallback(\\"error\\",args.join(\\"\\\\n\\"));};var meta=window.document.createElement(\\"meta\\");meta.setAttribute(\\"content\\",\\"width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0\\");meta.setAttribute(\\"name\\",\\"viewport\\");window.document.getElementsByTagName(\\"head\\")[0].appendChild(meta);})({window});"
+    injectedJavaScript="
+      setTimeout(function() {
+        window.ReactNativeWebView.postMessage(document.documentElement.scrollHeight);
+      }, 500);
+      true;
+    "
     overScrollMode="always"
     scrollEnabled={false}
     source={
@@ -26,7 +31,7 @@ exports[`renders correctly 1`] = `
       Object {
         "backgroundColor": "#ffffff",
         "flex": 1,
-        "height": 0,
+        "height": 50,
         "overflow": "hidden",
       }
     }

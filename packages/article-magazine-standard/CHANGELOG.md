@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.23.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.23.1...@times-components/article-magazine-standard@3.23.2) (2020-05-05)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.23.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.23.0...@times-components/article-magazine-standard@3.23.1) (2020-05-05)
+
+
+### Bug Fixes
+
+* broken deps ([#2592](https://github.com/newsuk/times-components/issues/2592)) ([5b460d0](https://github.com/newsuk/times-components/commit/5b460d010171d227030ee02bffe679cb36a5431e))
+
+
+
+
+
+# [3.23.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.22.9...@times-components/article-magazine-standard@3.23.0) (2020-05-05)
+
+
+### Features
+
+* Integrate ad manager library ([#2589](https://github.com/newsuk/times-components/issues/2589)) ([91d744b](https://github.com/newsuk/times-components/commit/91d744b01e7d8f05981d5cde56074f924d73d47e))
+
+
+
+
+
 ## [3.22.9](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.22.8...@times-components/article-magazine-standard@3.22.9) (2020-04-30)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard
