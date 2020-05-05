@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.23.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.22.9...@times-components/article-magazine-comment@3.23.0) (2020-05-05)
+
+
+### Features
+
+* Integrate ad manager library ([#2589](https://github.com/newsuk/times-components/issues/2589)) ([91d744b](https://github.com/newsuk/times-components/commit/91d744b01e7d8f05981d5cde56074f924d73d47e))
+
+
+
+
+
 ## [3.22.9](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.22.8...@times-components/article-magazine-comment@3.22.9) (2020-04-30)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
