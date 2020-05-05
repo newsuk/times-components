@@ -1,6 +1,6 @@
 {
   "name": "@times-components/watermark",
-  "version": "2.7.37",
+  "version": "2.7.38",
   "description": "Watermark",
   "main": "dist/watermark",
   "dev": "src/watermark",
@@ -59,7 +59,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.38.5",
+    "@times-components/styleguide": "3.38.6",
     "@times-components/svgs": "2.7.29",
     "prop-types": "15.7.2"
   },

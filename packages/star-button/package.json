@@ -56,8 +56,8 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/icons": "2.14.44",
-    "@times-components/link": "3.6.27",
+    "@times-components/icons": "2.14.45",
+    "@times-components/link": "3.6.28",
     "prop-types": "15.7.2"
   },
   "resolutions": {

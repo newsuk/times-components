@@ -35,16 +35,16 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
     "@storybook/addon-knobs": "4.1.18",
-    "@times-components/context": "1.2.12",
-    "@times-components/icons": "2.14.44",
-    "@times-components/link": "3.6.27",
-    "@times-components/message-bar": "0.3.47",
+    "@times-components/context": "1.2.13",
+    "@times-components/icons": "2.14.45",
+    "@times-components/link": "3.6.28",
+    "@times-components/message-bar": "0.3.48",
     "@times-components/provider-queries": "2.12.2",
     "@times-components/save-star-web": "0.6.32",
-    "@times-components/styleguide": "3.38.5",
+    "@times-components/styleguide": "3.38.6",
     "@times-components/tracking": "2.6.9",
-    "@times-components/user-state": "0.1.46",
-    "@times-components/utils": "6.3.9",
+    "@times-components/user-state": "0.1.47",
+    "@times-components/utils": "6.3.10",
     "prop-types": "15.7.2"
   },
   "devDependencies": {

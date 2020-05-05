@@ -62,9 +62,9 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/context": "1.2.12",
-    "@times-components/link": "3.6.27",
-    "@times-components/styleguide": "3.38.5",
+    "@times-components/context": "1.2.13",
+    "@times-components/link": "3.6.28",
+    "@times-components/styleguide": "3.38.6",
     "@times-components/tracking": "2.6.9",
     "prop-types": "15.7.2"
   },
