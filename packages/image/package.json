@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "6.7.20",
+  "version": "6.7.21",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -64,13 +64,13 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/gradient": "3.2.43",
-    "@times-components/link": "3.6.27",
-    "@times-components/responsive": "0.6.10",
+    "@times-components/gradient": "3.2.44",
+    "@times-components/link": "3.6.28",
+    "@times-components/responsive": "0.6.11",
     "@times-components/responsive-image": "0.6.7",
-    "@times-components/styleguide": "3.38.5",
+    "@times-components/styleguide": "3.38.6",
     "@times-components/svgs": "2.7.29",
-    "@times-components/utils": "6.3.9",
+    "@times-components/utils": "6.3.10",
     "hoist-non-react-statics": "2.5.5",
     "prop-types": "15.7.2",
     "react-native-image-zoom-viewer": "2.2.26",

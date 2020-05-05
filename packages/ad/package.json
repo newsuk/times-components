@@ -61,8 +61,8 @@
   "dependencies": {
     "@react-native-community/netinfo": "5.3.3",
     "@skele/components": "1.0.0-alpha.40",
-    "@times-components/styleguide": "3.38.5",
-    "@times-components/utils": "6.3.9",
+    "@times-components/styleguide": "3.38.6",
+    "@times-components/utils": "6.3.10",
     "prop-types": "15.7.2",
     "react-broadcast": "0.5.2",
     "react-native-device-info": "5.3.1",
