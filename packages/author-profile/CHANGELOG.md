@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.2.5...@times-components/author-profile@6.3.0) (2020-05-05)
+
+
+### Features
+
+* Integrate ad manager library ([#2589](https://github.com/newsuk/times-components/issues/2589)) ([91d744b](https://github.com/newsuk/times-components/commit/91d744b01e7d8f05981d5cde56074f924d73d47e))
+
+
+
+
+
 ## [6.2.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.2.4...@times-components/author-profile@6.2.5) (2020-04-21)
 
 **Note:** Version bump only for package @times-components/author-profile
