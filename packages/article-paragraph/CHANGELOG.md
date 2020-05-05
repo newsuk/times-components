@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.88](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.4.87...@times-components/article-paragraph@1.4.88) (2020-05-05)
+
+
+### Bug Fixes
+
+* broken deps ([#2592](https://github.com/newsuk/times-components/issues/2592)) ([5b460d0](https://github.com/newsuk/times-components/commit/5b460d010171d227030ee02bffe679cb36a5431e))
+
+
+
+
+
 ## [1.4.87](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.4.86...@times-components/article-paragraph@1.4.87) (2020-05-05)
 
 **Note:** Version bump only for package @times-components/article-paragraph

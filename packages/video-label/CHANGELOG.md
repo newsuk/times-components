@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.47](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.4.45...@times-components/video-label@2.4.47) (2020-05-05)
+
+
+### Bug Fixes
+
+* broken deps ([#2592](https://github.com/newsuk/times-components/issues/2592)) ([5b460d0](https://github.com/newsuk/times-components/commit/5b460d010171d227030ee02bffe679cb36a5431e))
+
+
+
+
+
 ## [2.4.45](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.4.44...@times-components/video-label@2.4.45) (2020-04-17)
 
 **Note:** Version bump only for package @times-components/video-label

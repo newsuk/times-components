@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.18.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.18.0...@times-components/ssr@2.18.1) (2020-05-05)
+
+
+### Bug Fixes
+
+* broken deps ([#2592](https://github.com/newsuk/times-components/issues/2592)) ([5b460d0](https://github.com/newsuk/times-components/commit/5b460d010171d227030ee02bffe679cb36a5431e))
+
+
+
+
+
 # [2.18.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.17.9...@times-components/ssr@2.18.0) (2020-05-05)
 
 

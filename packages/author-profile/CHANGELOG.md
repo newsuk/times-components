@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.3.0...@times-components/author-profile@6.3.1) (2020-05-05)
+
+
+### Bug Fixes
+
+* broken deps ([#2592](https://github.com/newsuk/times-components/issues/2592)) ([5b460d0](https://github.com/newsuk/times-components/commit/5b460d010171d227030ee02bffe679cb36a5431e))
+
+
+
+
+
 # [6.3.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.2.5...@times-components/author-profile@6.3.0) (2020-05-05)
 
 
