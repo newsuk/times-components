@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.46.4](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.46.2...@times-components/slice-layout@0.46.4) (2020-05-05)
+
+
+### Bug Fixes
+
+* broken deps ([#2592](https://github.com/newsuk/times-components/issues/2592)) ([5b460d0](https://github.com/newsuk/times-components/commit/5b460d010171d227030ee02bffe679cb36a5431e))
+
+
+
+
+
 ## [0.46.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.46.1...@times-components/slice-layout@0.46.2) (2020-04-17)
 
 **Note:** Version bump only for package @times-components/slice-layout
