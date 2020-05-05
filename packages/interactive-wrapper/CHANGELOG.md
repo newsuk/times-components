@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.6.1...@times-components/interactive-wrapper@0.7.0) (2020-05-05)
+
+
+### Features
+
+* improve loading for interactives on android ([#2591](https://github.com/newsuk/times-components/issues/2591)) ([6f0a37c](https://github.com/newsuk/times-components/commit/6f0a37c17ea9513bfbffe3cc290587f9244e8872))
+
+
+
+
+
 ## [0.6.1](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.6.0...@times-components/interactive-wrapper@0.6.1) (2020-05-05)
 
 
