@@ -69,12 +69,12 @@
   },
   "dependencies": {
     "@times-components/article-summary": "3.16.35",
-    "@times-components/card": "6.4.20",
-    "@times-components/context": "1.2.12",
-    "@times-components/link": "3.6.27",
+    "@times-components/card": "6.4.21",
+    "@times-components/context": "1.2.13",
+    "@times-components/link": "3.6.28",
     "@times-components/markup-forest": "1.7.31",
-    "@times-components/slice-layout": "0.46.2",
-    "@times-components/styleguide": "3.38.5",
+    "@times-components/slice-layout": "0.46.3",
+    "@times-components/styleguide": "3.38.6",
     "@times-components/tracking": "2.6.9",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2"
