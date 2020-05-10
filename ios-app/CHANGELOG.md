@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.101](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.17.91...@times-components/ios-app@0.17.101) (2020-05-10)
+
+
+### Reverts
+
+* Revert "Bump versions for pages & sections" ([12a5a94](https://github.com/newsuk/times-components/commit/12a5a9403c0910f3816e2c0dce12eff9adaa8ffc))
+* Revert "chore: Publish 5304e3857 [ci skip]" ([16304c5](https://github.com/newsuk/times-components/commit/16304c54fd16a1c81a1963f66acf1e00d56e05bf))
+
+
+
+
+
 ## [0.17.91](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.17.90...@times-components/ios-app@0.17.91) (2020-04-15)
 
 **Note:** Version bump only for package @times-components/ios-app
