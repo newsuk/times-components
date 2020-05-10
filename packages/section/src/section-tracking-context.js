@@ -8,7 +8,7 @@ export default Component =>
       const { slices } = section;
       const firstSlice = slices[0];
       const nonName = Object.keys(firstSlice).filter(n => n !== "name")[0];
-      const { article: data } = firstSlice[nonName];
+      const { article: data } = firstSlice[nonName] || {};
       const published = DateTime.fromJSDate(
         new Date(get(data, "publishedTime", ""))
       );
