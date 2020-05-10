@@ -291,7 +291,7 @@ workflows:
                   filters:
                     branches:
                         only: 
-                          - master
+                          - release/ios-0.17.91-with-patch
                   requires:
                       - build_storybook
                       - run_lint
@@ -312,6 +312,6 @@ workflows:
                   filters:
                     branches:
                         only: 
-                          - master
+                          - release/ios-0.17.91-with-patch
                   requires:
                       - publish_npm
