@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.97](https://github.com/newsuk/times-components/compare/@times-components/pages@2.1.89...@times-components/pages@2.1.97) (2020-05-10)
+
+
+### Reverts
+
+* Revert "Bump versions for pages & sections" ([12a5a94](https://github.com/newsuk/times-components/commit/12a5a9403c0910f3816e2c0dce12eff9adaa8ffc))
+
+
+
+
+
 ## [2.1.89](https://github.com/newsuk/times-components/compare/@times-components/pages@2.1.88...@times-components/pages@2.1.89) (2020-04-15)
 
 **Note:** Version bump only for package @times-components/pages
