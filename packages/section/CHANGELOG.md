@@ -3,17 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [1.6.57](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.53...@times-components/section@1.6.57) (2020-05-10)
-
-
-### Bug Fixes
-
-* Prevent crash if first slice is a "PuffSlice" ([1fb26ec](https://github.com/newsuk/times-components/commit/1fb26ec205fe32ca5a52fd3d8651409f20867b48))
-
-
-
-
-
 ## [1.6.53](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.52...@times-components/section@1.6.53) (2020-04-07)
 
 **Note:** Version bump only for package @times-components/section
