@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@react-native-community/netinfo": "5.3.3",
-    "@times-components/pages": "2.1.89",
+    "@times-components/pages": "2.1.97",
     "@times-components/typeset": "0.1.2",
     "prop-types": "15.7.2",
     "react": "16.9.0",
