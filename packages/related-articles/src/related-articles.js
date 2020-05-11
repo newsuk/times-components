@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import { View } from "react-native";
-import {
-  StandardSlice,
-  LeadOneAndTwoSlice,
-  OpinionOneAndTwoSlice
-} from "@times-components/slice-layout";
+import { StandardSlice } from "@times-components/slice-layout";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import propTypes from "./related-articles-prop-types";
@@ -19,8 +15,8 @@ class RelatedArticles extends Component {
   render() {
     const { isVisible, onPress, slice } = this.props;
     if (!slice) return null;
-    const { items, lead, opinion, sliceName, support1, support2 } = slice;
-    if (!sliceName || (!items && !lead && !opinion)) return null;
+    const { items, sliceName } = slice;
+    if (!sliceName || sliceName !== "StandardSlice" || !items) return null;
 
     const renderArticleItem = (config, article, leadAssetOverride) => {
       const {
@@ -56,75 +52,17 @@ class RelatedArticles extends Component {
       );
     };
 
-    const renderSlice = () => {
-      switch (sliceName) {
-        case "StandardSlice":
-        default:
-          return (
-            <StandardSlice
-              itemCount={items.length}
-              renderItems={config =>
-                items.map(item =>
-                  renderArticleItem(config, item.article, item.leadAsset)
-                )
-              }
-            />
-          );
-        case "LeadOneAndTwoSlice":
-          return (
-            <LeadOneAndTwoSlice
-              renderLead={config =>
-                renderArticleItem(config, lead.article, lead.leadAsset)
-              }
-              renderSupport1={config => {
-                if (!support1) return null;
-                return renderArticleItem(
-                  config,
-                  support1.article,
-                  support1.leadAsset
-                );
-              }}
-              renderSupport2={config => {
-                if (!support2) return null;
-                return renderArticleItem(
-                  config,
-                  support2.article,
-                  support2.leadAsset
-                );
-              }}
-            />
-          );
-        case "OpinionOneAndTwoSlice":
-          return (
-            <OpinionOneAndTwoSlice
-              renderOpinion={config =>
-                renderArticleItem(config, opinion.article, opinion.leadAsset)
-              }
-              renderSupport1={config => {
-                if (!support1) return null;
-                return renderArticleItem(
-                  config,
-                  support1.article,
-                  support1.leadAsset
-                );
-              }}
-              renderSupport2={config => {
-                if (!support2) return null;
-                return renderArticleItem(
-                  config,
-                  support2.article,
-                  support2.leadAsset
-                );
-              }}
-            />
-          );
-      }
-    };
-
     return (
       <View>
         <RelatedArticlesHeading />
-        {renderSlice()}
+        <StandardSlice
+          itemCount={items.length}
+          renderItems={config =>
+            items.map(item =>
+              renderArticleItem(config, item.article, item.leadAsset)
+            )
+          }
+        />
       </View>
     );
   }

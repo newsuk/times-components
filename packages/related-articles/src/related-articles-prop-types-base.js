@@ -8,17 +8,6 @@ export default {
         article: relatedArticleItemPropTypes.article
       })
     ),
-    lead: PropTypes.shape({
-      article: relatedArticleItemPropTypes.article
-    }),
-    opinion: PropTypes.shape({
-      article: relatedArticleItemPropTypes.article
-    }),
-    sliceName: PropTypes.string.isRequired,
-    supports: PropTypes.arrayOf(
-      PropTypes.shape({
-        article: relatedArticleItemPropTypes.article
-      })
-    )
+    sliceName: PropTypes.string.isRequired
   }).isRequired
 };
