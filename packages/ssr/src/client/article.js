@@ -4,12 +4,7 @@ const article = require("../component/article");
 const runClient = require("../lib/run-client");
 
 if (window.nuk && window.nuk.ssr && window.nuk.article) {
-  const {
-    rootTag,
-    makeArticleUrl,
-    makeTopicUrl,
-    mapArticleToAdConfig
-  } = window.nuk.ssr;
+  const { rootTag, makeArticleUrl, makeTopicUrl } = window.nuk.ssr;
   const {
     articleId,
     debounceTimeMs,
@@ -28,7 +23,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     makeTopicUrl,
     navigationMode,
     getCookieValue,
-    mapArticleToAdConfig,
     spotAccountId,
     paidContentClassName,
     userState,
