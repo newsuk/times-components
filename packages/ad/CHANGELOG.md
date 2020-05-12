@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.13.2](https://github.com/newsuk/times-components/compare/@times-components/ad@2.13.1...@times-components/ad@2.13.2) (2020-05-12)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
 ## [2.13.1](https://github.com/newsuk/times-components/compare/@times-components/ad@2.13.0...@times-components/ad@2.13.1) (2020-05-05)
 
 
