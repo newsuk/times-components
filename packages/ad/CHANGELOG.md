@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.13.3](https://github.com/newsuk/times-components/compare/@times-components/ad@2.13.2...@times-components/ad@2.13.3) (2020-05-12)
+
+
+### Bug Fixes
+
+* remove loaded check for ads in iOS ([#2596](https://github.com/newsuk/times-components/issues/2596)) ([d6f4133](https://github.com/newsuk/times-components/commit/d6f413331ace7c0a35a60798d621c2944066b76d))
+
+
+
+
+
 ## [2.13.2](https://github.com/newsuk/times-components/compare/@times-components/ad@2.13.1...@times-components/ad@2.13.2) (2020-05-12)
 
 **Note:** Version bump only for package @times-components/ad
