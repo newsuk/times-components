@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.47.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.46.4...@times-components/slice-layout@0.47.0) (2020-05-12)
+
+
+### Features
+
+* **TNLT-883:** Related articles clean-up ([#2585](https://github.com/newsuk/times-components/issues/2585)) ([5b523be](https://github.com/newsuk/times-components/commit/5b523be24e685899395ded8670d576dd73d3a1f7))
+
+
+
+
+
 ## [0.46.4](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.46.2...@times-components/slice-layout@0.46.4) (2020-05-05)
 
 
