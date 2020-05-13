@@ -80,6 +80,7 @@
     "@times-components/article-image": "7.5.23",
     "@times-components/article-paragraph": "1.4.92",
     "@times-components/article-topics": "4.1.33",
+    "@times-components/button": "2.4.49",
     "@times-components/caption": "3.0.129",
     "@times-components/context": "1.2.15",
     "@times-components/icons": "2.14.47",
