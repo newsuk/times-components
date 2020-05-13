@@ -35,5 +35,22 @@ export default () => {
     expect(onPressMock).toHaveBeenCalled();
   });
 
+  it("should render a Button with custon Text styles", () => {
+    const textStyle = {
+      color: "green",
+      textTransform: "uppercase"
+    };
+
+    const wrapper = shallow(
+      <Button
+        title="something else"
+        textStyle={textStyle}
+        onPress={() => null}
+      />
+    );
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
   shared(shallow);
 };
