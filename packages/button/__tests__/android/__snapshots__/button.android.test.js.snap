@@ -69,3 +69,39 @@ exports[`2. button with font and line-height 1`] = `
   </Text>
 </TouchableHighlight>
 `;
+
+exports[`should render a Button with custon Text styles 1`] = `
+<TouchableHighlight
+  activeOpacity={1}
+  delayPressOut={100}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#006699",
+      "borderRadius": 2,
+      "elevation": 3,
+      "height": 36,
+      "justifyContent": "center",
+      "minWidth": 100,
+      "width": "100%",
+    }
+  }
+  underlayColor="#0077B3"
+>
+  <Text
+    style={
+      Object {
+        "color": "green",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 16,
+        "lineHeight": 16,
+        "paddingTop": 0,
+        "textTransform": "uppercase",
+      }
+    }
+    title="Something else"
+  >
+    Something else
+  </Text>
+</TouchableHighlight>
+`;
