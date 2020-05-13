@@ -12,28 +12,6 @@ query ArticleExtrasQuery($id: ID!) {
           ...relatedProps
         }
       }
-      ... on LeadOneAndTwoSlice {
-        lead {
-          ...relatedProps
-        }
-        support1 {
-          ...relatedProps
-        }
-        support2 {
-          ...relatedProps
-        }
-      }
-      ... on OpinionOneAndTwoSlice {
-        opinion {
-          ...relatedProps
-        }
-        support1 {
-          ...relatedProps
-        }
-        support2 {
-          ...relatedProps
-        }
-      }
     }
     topics(maxCount: 5) {
       name

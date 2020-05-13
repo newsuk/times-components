@@ -192,7 +192,7 @@ class DOMContext extends PureComponent {
           width
         }}
       >
-        {loaded && (
+        {(Platform.OS === "ios" || loaded) && (
           <WebView
             onMessage={this.handleMessageEvent}
             onNavigationStateChange={this.handleNavigationStateChange}
