@@ -127,11 +127,15 @@ export const buttonStyles = {
   backgroundColor: "transparent",
   borderColor: colours.functional.brandColour,
   borderStyle: "solid",
-  borderWidth: "2px",
+  borderWidth: 2,
   color: colours.functional.brandColour,
   fontFamily: fonts.supporting,
-  height: "45px",
+  height: 45,
   justifyContent: "center",
   letterSpacing: 0.2,
   width: "100%"
+};
+
+export const textStyle = {
+  color: colours.functional.brandColour
 };

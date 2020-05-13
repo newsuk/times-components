@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { Platform, View } from "react-native";
+import { Platform } from "react-native";
 import PropTypes from "prop-types";
 
 import { Query, Mutation } from "react-apollo";
 import gql from "graphql-tag";
 
-import { Placeholder } from "@times-components/image";
-import Image from "@times-components/image";
+import Image, { Placeholder } from "@times-components/image";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
 import { IconForwardArrow } from "@times-components/icons";
 import Link from "@times-components/link";
@@ -26,7 +25,8 @@ import {
   InpSubscribedCopy,
   InpSubscribedHeadline,
   InpSubscribedContainer,
-  buttonStyles
+  buttonStyles,
+  textStyle
 } from "../styles/inline-newsletter-puff";
 
 function onManagePreferencesPress() {
@@ -140,6 +140,8 @@ export const InlineNewsletterPuff = ({
                           }
                         }}
                         style={buttonStyles}
+                        underlayColor="transparent"
+                        textStyle={textStyle}
                       />
                     </InpSignupCTAContainer>
                   </InpSignupContainer>
