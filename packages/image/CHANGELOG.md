@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.7.24](https://github.com/newsuk/times-components/compare/@times-components/image@6.7.23...@times-components/image@6.7.24) (2020-05-14)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
 ## [6.7.23](https://github.com/newsuk/times-components/compare/@times-components/image@6.7.22...@times-components/image@6.7.23) (2020-05-12)
 
 **Note:** Version bump only for package @times-components/image

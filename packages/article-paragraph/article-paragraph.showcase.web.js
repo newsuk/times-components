@@ -16,9 +16,9 @@ const dropCapTypes = { dropCap: dropCapData, dropCapAsLink, dropCapAsQuote };
 
 const renderParagraph = ({ select, boolean }, ast) => {
   const sections = Object.keys(colours.section).sort();
-  const sectionIdx = select("Section", sections, 0);
+  const sectionIdx = sections.indexOf(select("Section", sections, sections[0]));
   const enableDropcap = boolean && boolean("Enable DropCap", true);
-  const section = sections[sectionIdx];
+  const section = sections[sectionIdx] || sections[0];
   const theme = themeFactory(section, "magazinecomment");
   const colour = theme.sectionColour;
   const font = theme.dropCapFont;

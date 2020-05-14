@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.93](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.4.92...@times-components/article-paragraph@1.4.93) (2020-05-14)
+
+
+### Bug Fixes
+
+* **FNLT-1964:** update web font for ST magazine articles ([#2598](https://github.com/newsuk/times-components/issues/2598)) ([1228fa5](https://github.com/newsuk/times-components/commit/1228fa560436e95a5c55f6f332aef34deacccdce))
+
+
+
+
+
 ## [1.4.92](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.4.91...@times-components/article-paragraph@1.4.92) (2020-05-12)
 
 **Note:** Version bump only for package @times-components/article-paragraph

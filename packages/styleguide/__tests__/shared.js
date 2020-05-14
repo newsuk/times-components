@@ -110,6 +110,9 @@ const tests = [
         "dropCap"
       );
       expect(themeFactory().dropCapFont).toEqual("dropCap");
+      expect(
+        themeFactory("the sunday times magazine", "indepth").dropCapFont
+      ).toEqual("stMagazine");
     }
   },
   {
@@ -136,6 +139,9 @@ const tests = [
       expect(themeFactory("thesundaytimesmagazine", null).headlineFont).toEqual(
         "headline"
       );
+      expect(
+        themeFactory("the sunday times magazine", "indepth").headlineFont
+      ).toEqual("stMagazine");
     }
   },
   {
@@ -162,6 +168,9 @@ const tests = [
       expect(
         themeFactory("thesundaytimesmagazine", null).pullQuoteFont
       ).toEqual("headlineRegular");
+      expect(
+        themeFactory("the sunday times magazine", "indepth").pullQuoteFont
+      ).toEqual("stMagazine");
     }
   },
   {
