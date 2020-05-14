@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.50](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.49...@times-components/user-state@0.1.50) (2020-05-14)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
 ## [0.1.49](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.48...@times-components/user-state@0.1.49) (2020-05-12)
 
 **Note:** Version bump only for package @times-components/user-state

@@ -21686,12 +21686,7 @@ uuid@^3.0.0, uuid@^3.0.1, uuid@^3.1.0, uuid@^3.3.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
 
-v8-android@7.8.2:
-  version "7.8.2"
-  resolved "https://registry.yarnpkg.com/v8-android/-/v8-android-7.8.2.tgz#cab9196d2afad6b931630dcfa8ab3609ca18864e"
-  integrity sha512-LZLtehBxj4rLgf3+gWs3ITTmnVvlD3KQubLzFmtdI+l3G9tbi8ckWm6tJv7KQXZu3L/ok5M2bZz1AGnofPiMfQ==
-
-v8-android@~8.80.1:
+v8-android@8.80.1, v8-android@~8.80.1:
   version "8.80.1"
   resolved "https://registry.yarnpkg.com/v8-android/-/v8-android-8.80.1.tgz#ec4c9be7656445377e6c080ebc39b1ab7e95fbce"
   integrity sha512-YtJEYC4cEr/EJjCAllQN1T+PX+XtcrCCBXJv+dLdzxxRtVKkHlf8kAxyriXUOtGmiMtgzlz+d8hQugVPdq8ZfA==
