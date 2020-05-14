@@ -22,7 +22,7 @@
     "react-native-v8": "0.61.5-patch.3",
     "react-native-webview": "7.0.5",
     "url-polyfill": "1.1.0",
-    "v8-android": "7.8.2"
+    "v8-android": "8.80.1"
   },
   "devDependencies": {
     "@bam.tech/react-native-graphql-transformer": "0.1.5",
