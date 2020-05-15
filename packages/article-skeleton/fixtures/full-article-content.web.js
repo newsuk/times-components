@@ -138,7 +138,9 @@ export default [
               copy:
                 "Sign up to receive our brilliant Red Box newsletter, Matt Chorley’s poke at politics delivered every weekday morning at 8am.",
               label: "Straight in your inbox",
-              headline: "Politics. Explained."
+              headline: "Politics. Explained.",
+              imageUri:
+                "https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
             },
             value: "newsletter-puff"
           }

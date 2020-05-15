@@ -56,6 +56,7 @@ export const SUBSCRIBE_NEWSLETTER = gql`
 export const InlineNewsletterPuff = ({
   copy,
   headline,
+  imageUri,
   label,
   newsletterId: id
 }) => {
@@ -92,10 +93,7 @@ export const InlineNewsletterPuff = ({
             {(subscribeNewsletter, { loading: updatingSubscription }) => (
               <InpContainer>
                 <InpImageContainer>
-                  <Image
-                    aspectRatio={1.42}
-                    uri="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
-                  />
+                  <Image aspectRatio={1.42} uri={imageUri} />
                 </InpImageContainer>
                 {justSubscribed ? (
                   <InpSubscribedContainer>

@@ -245,6 +245,7 @@ export default ({
             label={decodeURIComponent(element.attributes.label)}
             headline={decodeURIComponent(element.attributes.headline)}
             copy={decodeURIComponent(element.attributes.copy)}
+            imageUri={decodeURIComponent(element.attributes.imageUri)}
           />
         );
       }

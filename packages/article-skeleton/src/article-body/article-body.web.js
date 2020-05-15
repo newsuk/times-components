@@ -119,6 +119,7 @@ const renderers = ({ paidContentClassName, template }) => ({
             label={decodeURIComponent(attributes.label)}
             headline={decodeURIComponent(attributes.headline)}
             copy={decodeURIComponent(attributes.copy)}
+            imageUri={decodeURIComponent(element.attributes.imageUri)}
           />
         );
       }

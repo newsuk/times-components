@@ -1,5 +1,5 @@
 import React from "react";
-import TestRenderer from "react-test-renderer";
+import { create } from "react-test-renderer";
 import wait from "waait";
 
 import { MockedProvider } from "@times-components/provider-test-tools";
@@ -10,12 +10,6 @@ import {
   GET_NEWSLETTER,
   SUBSCRIBE_NEWSLETTER
 } from "../src/article-body/inline-newsletter-puff";
-
-jest.mock("@times-components/image", () => ({
-  __esModule: true,
-  default: () => "Image rendered",
-  Placeholder: () => "Placeholder rendered"
-}));
 
 const renderComponent = (
   mocks = [
@@ -38,7 +32,7 @@ const renderComponent = (
     }
   ]
 ) =>
-  TestRenderer.create(
+  create(
     <MockedProvider mocks={mocks}>
       <InlineNewsletterPuff
         {...{
@@ -46,7 +40,9 @@ const renderComponent = (
           label: "STRAIGHT IN YOUR INBOX",
           headline: "Politics. Explained.",
           copy:
-            "Sign up to receive our brilliant Red Box newsletter, Matt Chorley`s poke at politics delivered every weekday morning at 8am."
+            "Sign up to receive our brilliant Red Box newsletter, Matt Chorley`s poke at politics delivered every weekday morning at 8am.",
+          imageUri:
+            "https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
         }}
       />
     </MockedProvider>
@@ -153,7 +149,7 @@ export default () => {
 
       component.root.findByType(Button).props.onPress();
 
-      await wait(2);
+      await wait(3);
 
       expect(component).toMatchSnapshot();
     });
