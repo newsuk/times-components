@@ -157,5 +157,6 @@ InlineNewsletterPuff.propTypes = {
   label: PropTypes.string.isRequired,
   headline: PropTypes.string.isRequired,
   copy: PropTypes.string.isRequired,
-  newsletterId: PropTypes.string.isRequired
+  newsletterId: PropTypes.string.isRequired,
+  imageUri: PropTypes.string.isRequired
 };
