@@ -1,4 +1,5 @@
 import React from "react";
+import { Platform } from "react-native";
 import ArticleMagazineComment from "@times-components/article-magazine-comment";
 import ArticleInDepth from "@times-components/article-in-depth";
 import ArticleMagazineStandard from "@times-components/article-magazine-standard";
@@ -8,6 +9,7 @@ import Responsive from "@times-components/responsive";
 import { scales } from "@times-components/styleguide";
 import { MessageManager } from "@times-components/message-bar";
 import { getMediaList, addIndexesToInlineImages } from "./utils";
+import handleTakeoverpageUrl from "./utils/handle-takeoverpage-url";
 
 export const templates = {
   indepth: ArticleInDepth,
@@ -28,15 +30,22 @@ const Article = props => {
   const { article, onImagePress } = props;
   const { leadAsset, template } = article || {};
   let { content } = article || {};
+
   if (template === "takeoverpage") {
+    if (Platform.OS === "ios") {
+      return handleTakeoverpageUrl(article.url);
+    }
     throw new TakeoverBailout("Aborted react render: Takeover page");
   }
+
   let onImagePressArticle = null;
+
   if (onImagePress) {
     content = addIndexesToInlineImages(content, leadAsset);
     const mediaList = getMediaList(content, leadAsset);
     onImagePressArticle = index => onImagePress(index, mediaList);
   }
+
   const Component = templates[template] || ArticleMainStandard;
   const newProps = {
     ...props,
