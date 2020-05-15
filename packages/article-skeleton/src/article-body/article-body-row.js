@@ -240,9 +240,6 @@ export default ({
       if (element && element.value === "newsletter-puff") {
         return (
           <InlineNewsletterPuff
-            // When the GeaphQL service is ready newsletterId will be passed as prop
-            // and with that we are going to check it the user is subscribed to
-            // this newsletter or not
             key={key}
             newsletterId={element.attributes.newsletterId}
             label={decodeURIComponent(element.attributes.label)}

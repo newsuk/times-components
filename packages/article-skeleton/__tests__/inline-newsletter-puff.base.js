@@ -53,7 +53,7 @@ const renderComponent = (
   );
 
 export default () => {
-  describe.only("Inline Newsletter Puff", () => {
+  describe("Inline Newsletter Puff", () => {
     it("renders placeholder when loading", () => {
       const component = renderComponent();
       expect(component).toMatchSnapshot();
