@@ -11,6 +11,12 @@ import {
   SUBSCRIBE_NEWSLETTER
 } from "../src/article-body/inline-newsletter-puff";
 
+jest.mock("@times-components/image", () => ({
+  __esModule: true,
+  default: ({ uri }) => `Image rendered with imageUri=${uri}`,
+  Placeholder: () => "Placeholder rendered"
+}));
+
 const renderComponent = (
   mocks = [
     {
