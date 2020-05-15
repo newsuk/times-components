@@ -22,7 +22,7 @@ exports[`Inline Newsletter Puff renders puff when not already subscribed 1`] = `
   <View
     className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv"
   >
-    Image rendered
+    Image rendered with imageUri=https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg
   </View>
   <View
     className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fhcdpp"
@@ -120,7 +120,7 @@ exports[`Inline Newsletter Puff renders saving when the button is clicked 1`] = 
   <View
     className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv"
   >
-    Image rendered
+    Image rendered with imageUri=https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg
   </View>
   <View
     className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fhcdpp"
@@ -218,7 +218,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
   <View
     className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv"
   >
-    Image rendered
+    Image rendered with imageUri=https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg
   </View>
   <View
     className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fhcdpp"
@@ -316,7 +316,7 @@ exports[`Inline Newsletter Puff renders the success view  1`] = `
   <View
     className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv"
   >
-    Image rendered
+    Image rendered with imageUri=https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg
   </View>
   <View
     className="inline-newsletter-puff__InpSubscribedContainer-sc-13hmjc-2 jAaZNR"
