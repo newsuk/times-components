@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
   s.summary          = "Times iOS React components"
   s.description      = "All the things for Times iOS React components including dependencies"
   s.homepage         = "https://www.news.co.uk"
-  s.license          = { type: 'MIT', file: 'LICENSE' }
+  s.license          = { :type => "MIT", :text => "BSD 3-Clause License" }
   s.author           = "News UK"
   s.platform         = :ios, '9.0'
   s.swift_version    = '4.2'

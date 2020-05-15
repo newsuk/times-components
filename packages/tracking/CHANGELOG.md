@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.12](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.6.11...@times-components/tracking@2.6.12) (2020-05-14)
+
+
+### Bug Fixes
+
+* v8-android version ([#2602](https://github.com/newsuk/times-components/issues/2602)) ([3581843](https://github.com/newsuk/times-components/commit/358184316144a8fcb607abfd4706bb2484f65bd8))
+
+
+
+
+
 ## [2.6.11](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.6.10...@times-components/tracking@2.6.11) (2020-05-12)
 
 **Note:** Version bump only for package @times-components/tracking

@@ -30,7 +30,8 @@ const magazineFontPicker = (defaultFont, section, template) => {
     style: "styleMagazine",
     Style: "styleMagazine",
     "The Sunday Times Magazine": "stMagazine",
-    thesundaytimesmagazine: "stMagazine"
+    thesundaytimesmagazine: "stMagazine",
+    "the sunday times magazine": "stMagazine"
   };
 
   const config = {
