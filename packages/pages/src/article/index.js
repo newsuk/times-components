@@ -2,8 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import { NativeModules } from "react-native";
 import { ArticleProvider } from "@times-components/provider";
-import ArticleBase from "./article-base";
+
+import { ErrorBoundary } from '../error-boundary';
 import { propTypes, defaultProps } from "./article-prop-types";
+import ArticleBase from "./article-base";
 import withNativeProvider from "../with-native-provider";
 
 const { refetch: refetchArticle } = NativeModules.ArticleEvents;
@@ -13,27 +15,31 @@ const ArticlePage = props => {
 
   if (article || error) {
     const ArticlePageView = withNativeProvider(
-      <ArticleBase
-        {...props}
-        article={article ? JSON.parse(article).data.article : null}
-        error={error ? { message: error } : null}
-        refetch={() => refetchArticle(articleId)}
-      />
+      <ErrorBoundary>
+        <ArticleBase
+          {...props}
+          article={article ? JSON.parse(article).data.article : null}
+          error={error ? { message: error } : null}
+          refetch={() => refetchArticle(articleId)}
+        />
+      </ErrorBoundary>
     );
     return <ArticlePageView />;
   }
   const ArticlePageView = withNativeProvider(
-    <ArticleProvider debounceTimeMs={100} id={articleId}>
-      {({ article: articleData, isLoading, error: errorData, refetch }) => (
-        <ArticleBase
-          {...props}
-          article={articleData}
-          error={errorData}
-          isLoading={isLoading}
-          refetch={refetch}
-        />
-      )}
-    </ArticleProvider>
+    <ErrorBoundary>
+      <ArticleProvider debounceTimeMs={100} id={articleId}>
+        {({ article: articleData, isLoading, error: errorData, refetch }) => (
+          <ArticleBase
+            {...props}
+            article={articleData}
+            error={errorData}
+            isLoading={isLoading}
+            refetch={refetch}
+          />
+        )}
+      </ArticleProvider>
+    </ErrorBoundary>
   );
   return <ArticlePageView />;
 };

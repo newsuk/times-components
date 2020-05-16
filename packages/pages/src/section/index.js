@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+
+import { ErrorBoundary } from '../error-boundary';
 import Section from "./section";
 
 const SectionPage = ({
@@ -7,11 +9,13 @@ const SectionPage = ({
   recentlyOpenedPuzzleCount,
   section
 }) => (
-  <Section
-    publicationName={publicationName}
-    recentlyOpenedPuzzleCount={recentlyOpenedPuzzleCount}
-    section={JSON.parse(section)}
-  />
+  <ErrorBoundary>
+    <Section
+      publicationName={publicationName}
+      recentlyOpenedPuzzleCount={recentlyOpenedPuzzleCount}
+      section={JSON.parse(section)}
+    />
+  </ErrorBoundary>
 );
 
 SectionPage.propTypes = {

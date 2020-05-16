@@ -3,6 +3,8 @@ import { NativeModules } from "react-native";
 import PropTypes from "prop-types";
 import Topic from "@times-components/topic";
 import { TopicProvider } from "@times-components/provider";
+
+import { ErrorBoundary } from '../error-boundary';
 import withNativeProvider from "../with-native-provider";
 
 const { onArticlePress } = NativeModules.TopicEvents;
@@ -10,21 +12,23 @@ const { track } = NativeModules.ReactAnalytics;
 
 const TopicPage = ({ topicSlug }) => {
   const TopicPageView = withNativeProvider(
-    <TopicProvider debounceTimeMs={250} page={1} pageSize={20} slug={topicSlug}>
-      {({ topic, isLoading, error, page, pageSize, refetch }) => (
-        <Topic
-          analyticsStream={track}
-          error={error}
-          isLoading={isLoading}
-          onArticlePress={(event, extras) => onArticlePress(extras.url)}
-          page={page}
-          pageSize={pageSize}
-          refetch={refetch}
-          slug={topicSlug}
-          topic={topic}
-        />
-      )}
-    </TopicProvider>
+    <ErrorBoundary>
+      <TopicProvider debounceTimeMs={250} page={1} pageSize={20} slug={topicSlug}>
+        {({ topic, isLoading, error, page, pageSize, refetch }) => (
+          <Topic
+            analyticsStream={track}
+            error={error}
+            isLoading={isLoading}
+            onArticlePress={(event, extras) => onArticlePress(extras.url)}
+            page={page}
+            pageSize={pageSize}
+            refetch={refetch}
+            slug={topicSlug}
+            topic={topic}
+          />
+        )}
+      </TopicProvider>
+    </ErrorBoundary>
   );
   return <TopicPageView />;
 };
