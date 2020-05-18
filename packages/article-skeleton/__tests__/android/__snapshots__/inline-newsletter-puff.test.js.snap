@@ -77,6 +77,7 @@ exports[`Inline Newsletter Puff renders puff when not already subscribed 1`] = `
               "borderStyle": "solid",
               "borderWidth": 2,
               "color": "#1D1D1B",
+              "elevation": 0,
               "fontFamily": "GillSansMTStd-Medium",
               "height": 45,
               "justifyContent": "center",
@@ -175,6 +176,7 @@ exports[`Inline Newsletter Puff renders saving when the button is clicked 1`] = 
               "borderStyle": "solid",
               "borderWidth": 2,
               "color": "#1D1D1B",
+              "elevation": 0,
               "fontFamily": "GillSansMTStd-Medium",
               "height": 45,
               "justifyContent": "center",
@@ -273,6 +275,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
               "borderStyle": "solid",
               "borderWidth": 2,
               "color": "#1D1D1B",
+              "elevation": 0,
               "fontFamily": "GillSansMTStd-Medium",
               "height": 45,
               "justifyContent": "center",
@@ -353,12 +356,16 @@ exports[`Inline Newsletter Puff renders the success view  1`] = `
         onStartShouldSetResponder={[Function]}
         style={Object {}}
       >
-        <Text
-          className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-11 bEnqSP"
+        <View
+          className="inline-newsletter-puff__InpPreferencesView-sc-13hmjc-13 iRumcp"
         >
-          Manage preferences here
+          <Text
+            className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-11 bEnqSP"
+          >
+            Manage preferences here
+          </Text>
           <View
-            className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-12 esMeGB"
+            className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-12 fJlAxF"
           >
             <RNSVGSvgView
               align="xMidYMid"
@@ -522,7 +529,7 @@ exports[`Inline Newsletter Puff renders the success view  1`] = `
               </RNSVGGroup>
             </RNSVGSvgView>
           </View>
-        </Text>
+        </View>
       </View>
     </View>
   </View>

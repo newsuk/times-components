@@ -60,6 +60,7 @@ exports[`Inline Newsletter Puff renders puff when not already subscribed 1`] = `
             "borderWidth": 2,
             "color": "#1D1D1B",
             "cursor": "pointer",
+            "elevation": 0,
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 16,
             "height": 45,
@@ -125,6 +126,7 @@ exports[`Inline Newsletter Puff renders saving when the button is clicked 1`] = 
             "borderWidth": 2,
             "color": "#1D1D1B",
             "cursor": "pointer",
+            "elevation": 0,
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 16,
             "height": 45,
@@ -190,6 +192,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
             "borderWidth": 2,
             "color": "#1D1D1B",
             "cursor": "pointer",
+            "elevation": 0,
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 16,
             "height": 45,
@@ -244,12 +247,16 @@ exports[`Inline Newsletter Puff renders the success view  1`] = `
         target={null}
       >
         <div
-          className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-11 bEnqSP inline-newsletter-puff__InpPreferencesText-sc-13hmjc-11 bEnqSP css-text-901oao"
-          dir="auto"
+          className="inline-newsletter-puff__InpPreferencesView-sc-13hmjc-13 iRumcp inline-newsletter-puff__InpPreferencesView-sc-13hmjc-13 iRumcp css-view-1dbjc4n"
         >
-          Manage preferences here
           <div
-            className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-12 esMeGB inline-newsletter-puff__InpIconContainer-sc-13hmjc-12 esMeGB css-view-1dbjc4n r-display-xoduu5"
+            className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-11 bEnqSP inline-newsletter-puff__InpPreferencesText-sc-13hmjc-11 bEnqSP css-text-901oao"
+            dir="auto"
+          >
+            Manage preferences here
+          </div>
+          <div
+            className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-12 fJlAxF inline-newsletter-puff__InpIconContainer-sc-13hmjc-12 fJlAxF css-view-1dbjc4n"
           >
             <svg
               aria-label="icon-forward-arrow"
