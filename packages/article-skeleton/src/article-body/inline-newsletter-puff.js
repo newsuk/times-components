@@ -12,20 +12,21 @@ import Link from "@times-components/link";
 import Button from "@times-components/button";
 import { colours } from "@times-components/styleguide";
 import {
+  buttonStyles,
   InpContainer,
   InpCopy,
   InpIconContainer,
   InpImageContainer,
   InpPreferencesContainer,
   InpPreferencesText,
+  InpPreferencesView,
   InpSignupContainer,
   InpSignupCTAContainer,
   InpSignupHeadline,
   InpSignupLabel,
+  InpSubscribedContainer,
   InpSubscribedCopy,
   InpSubscribedHeadline,
-  InpSubscribedContainer,
-  buttonStyles,
   textStyle
 } from "../styles/inline-newsletter-puff";
 
@@ -109,14 +110,16 @@ export const InlineNewsletterPuff = ({
                         url="https://home.thetimes.co.uk/myNews"
                         onPress={onManagePreferencesPress}
                       >
-                        <InpPreferencesText>
-                          Manage preferences here
+                        <InpPreferencesView>
+                          <InpPreferencesText>
+                            Manage preferences here
+                          </InpPreferencesText>
                           <InpIconContainer>
                             <IconForwardArrow
                               fillColour={colours.functional.action}
                             />
                           </InpIconContainer>
-                        </InpPreferencesText>
+                        </InpPreferencesView>
                       </Link>
                     </InpPreferencesContainer>
                   </InpSubscribedContainer>

@@ -118,8 +118,13 @@ export const InpPreferencesText = styled(Text)`
 `;
 
 export const InpIconContainer = styled(View)`
-  padding-left: 5px;
-  padding-top: 6px;
+  padding-left: 8px;
+  margin: auto;
+`;
+
+export const InpPreferencesView = styled(View)`
+  display: flex;
+  flex-direction: row;
 `;
 
 export const buttonStyles = {
@@ -129,6 +134,7 @@ export const buttonStyles = {
   borderStyle: "solid",
   borderWidth: 2,
   color: colours.functional.brandColour,
+  elevation: 0,
   fontFamily: fonts.supporting,
   height: 45,
   justifyContent: "center",
