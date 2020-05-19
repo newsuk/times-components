@@ -42,7 +42,7 @@ const renderComponent = (
     <MockedProvider mocks={mocks}>
       <InlineNewsletterPuff
         {...{
-          newsletterId: "a2l6E000000CdHzQAK",
+          code: "TNL-119",
           label: "STRAIGHT IN YOUR INBOX",
           headline: "Politics. Explained.",
           copy:
