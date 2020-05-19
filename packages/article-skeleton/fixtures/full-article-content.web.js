@@ -134,7 +134,7 @@ export default [
         attributes: {
           element: {
             attributes: {
-              newsletterId: "a2l6E000000CdHzQAK",
+              code: "TNL-119",
               copy:
                 "Sign up to receive our brilliant Red Box newsletter, Matt Chorley’s poke at politics delivered every weekday morning at 8am.",
               label: "Straight in your inbox",
