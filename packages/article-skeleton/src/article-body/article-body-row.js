@@ -238,16 +238,16 @@ export default ({
         );
       }
       if (element && element.value === "newsletter-puff") {
-      const { attributes } = element;
+        const { attributes } = element;
         return (
           <InlineNewsletterPuff
-          key={key}
-          code={attributes.code}
-          copy={decodeURIComponent(attributes.copy)}
-          headline={decodeURIComponent(attributes.headline)}
-          imageUri={decodeURIComponent(attributes.imageUri)}
-          label={decodeURIComponent(attributes.label)}
-        />
+            key={key}
+            code={attributes.code}
+            copy={decodeURIComponent(attributes.copy)}
+            headline={decodeURIComponent(attributes.headline)}
+            imageUri={decodeURIComponent(attributes.imageUri)}
+            label={decodeURIComponent(attributes.label)}
+          />
         );
       }
       return (
