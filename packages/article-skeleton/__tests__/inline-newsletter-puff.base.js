@@ -23,7 +23,7 @@ const renderComponent = (
       request: {
         query: GET_NEWSLETTER,
         variables: {
-          id: "a2l6E000000CdHzQAK"
+          code: "TNL-119"
         }
       },
       result: {
@@ -43,6 +43,7 @@ const renderComponent = (
       <InlineNewsletterPuff
         {...{
           code: "TNL-119",
+
           label: "STRAIGHT IN YOUR INBOX",
           headline: "Politics. Explained.",
           copy:
@@ -75,7 +76,7 @@ export default () => {
           request: {
             query: GET_NEWSLETTER,
             variables: {
-              id: "a2l6E000000CdHzQAK"
+              code: "TNL-119"
             }
           },
           result: {
@@ -119,7 +120,7 @@ export default () => {
           request: {
             query: GET_NEWSLETTER,
             variables: {
-              id: "a2l6E000000CdHzQAK"
+              code: "TNL-119"
             }
           },
           result: {
@@ -136,7 +137,7 @@ export default () => {
           request: {
             query: SUBSCRIBE_NEWSLETTER,
             variables: {
-              id: "a2l6E000000CdHzQAK"
+              code: "TNL-119"
             }
           },
           result: {
