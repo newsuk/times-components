@@ -115,11 +115,11 @@ const renderers = ({ paidContentClassName, template }) => ({
         return (
           <InlineNewsletterPuff
             key={key}
-            newsletterId={attributes.newsletterId}
-            label={decodeURIComponent(attributes.label)}
-            headline={decodeURIComponent(attributes.headline)}
+            code={attributes.code}
             copy={decodeURIComponent(attributes.copy)}
-            imageUri={decodeURIComponent(element.attributes.imageUri)}
+            headline={decodeURIComponent(attributes.headline)}
+            imageUri={decodeURIComponent(attributes.imageUri)}
+            label={decodeURIComponent(attributes.label)}
           />
         );
       }

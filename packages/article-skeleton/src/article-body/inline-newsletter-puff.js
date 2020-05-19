@@ -37,8 +37,8 @@ function onManagePreferencesPress() {
 }
 
 export const GET_NEWSLETTER = gql`
-  query GetNewsletter($id: String!) {
-    newsletter(id: $id) {
+  query GetNewsletter($code: String!) {
+    newsletter(code: $code) {
       id
       isSubscribed
     }
@@ -46,8 +46,8 @@ export const GET_NEWSLETTER = gql`
 `;
 
 export const SUBSCRIBE_NEWSLETTER = gql`
-  mutation SubscribeNewsletter($id: String!) {
-    subscribeNewsletter(id: $id) {
+  mutation SubscribeNewsletter($code: String!) {
+    subscribeNewsletter(code: $code) {
       id
       isSubscribed
     }
@@ -55,16 +55,16 @@ export const SUBSCRIBE_NEWSLETTER = gql`
 `;
 
 export const InlineNewsletterPuff = ({
+  code,
   copy,
   headline,
   imageUri,
-  label,
-  newsletterId: id
+  label
 }) => {
   const [justSubscribed, setJustSubscribed] = useState(false);
 
   return (
-    <Query query={GET_NEWSLETTER} variables={{ id }} ssr={false}>
+    <Query query={GET_NEWSLETTER} variables={{ code }} ssr={false}>
       {({ loading, data, error }) => {
         if (error) {
           return null;
@@ -137,7 +137,7 @@ export const InlineNewsletterPuff = ({
                         }
                         onPress={() => {
                           if (!updatingSubscription) {
-                            subscribeNewsletter({ variables: { id } });
+                            subscribeNewsletter({ variables: { code } });
                           }
                         }}
                         style={buttonStyles}
@@ -157,9 +157,9 @@ export const InlineNewsletterPuff = ({
 };
 
 InlineNewsletterPuff.propTypes = {
-  label: PropTypes.string.isRequired,
-  headline: PropTypes.string.isRequired,
+  code: PropTypes.string.isRequired,
   copy: PropTypes.string.isRequired,
-  newsletterId: PropTypes.string.isRequired,
-  imageUri: PropTypes.string.isRequired
+  headline: PropTypes.string.isRequired,
+  imageUri: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired
 };
