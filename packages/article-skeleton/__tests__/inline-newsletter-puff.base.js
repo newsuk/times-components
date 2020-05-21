@@ -5,9 +5,7 @@ import wait from "waait";
 import { MockedProvider } from "@times-components/provider-test-tools";
 
 import Button from "@times-components/button";
-import {
-  InlineNewsletterPuff,
-} from "../src/article-body/inline-newsletter-puff";
+import InlineNewsletterPuff from "../src/article-body/inline-newsletter-puff";
 
 import {
   GET_NEWSLETTER,

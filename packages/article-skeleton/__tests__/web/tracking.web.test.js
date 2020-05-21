@@ -13,7 +13,7 @@ import shared from "../shared-tracking";
 
 jest.mock("../../src/article-body/inline-newsletter-puff", () => ({
   __esModule: true,
-  InlineNewsletterPuff: () => "InlineNewsletterPuff"
+  default: () => "InlineNewsletterPuff"
 }));
 
 beforeEach(() => {

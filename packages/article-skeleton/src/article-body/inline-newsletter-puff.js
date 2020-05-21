@@ -28,7 +28,7 @@ import {
   InpSubscribedHeadline,
   textStyle
 } from "../styles/inline-newsletter-puff";
- import { GET_NEWSLETTER, SUBSCRIBE_NEWSLETTER} from "./newsletter-gql-queries"
+import { GET_NEWSLETTER, SUBSCRIBE_NEWSLETTER } from "./newsletter-gql-queries";
 
 function onManagePreferencesPress() {
   if (Platform.OS !== "web") {
@@ -36,13 +36,7 @@ function onManagePreferencesPress() {
   }
 }
 
-export const InlineNewsletterPuff = ({
-  code,
-  copy,
-  headline,
-  imageUri,
-  label
-}) => {
+const InlineNewsletterPuff = ({ code, copy, headline, imageUri, label }) => {
   const [justSubscribed, setJustSubscribed] = useState(false);
 
   return (
@@ -137,6 +131,8 @@ export const InlineNewsletterPuff = ({
     </Query>
   );
 };
+
+export default InlineNewsletterPuff;
 
 InlineNewsletterPuff.propTypes = {
   code: PropTypes.string.isRequired,

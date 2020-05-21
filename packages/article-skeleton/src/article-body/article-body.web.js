@@ -17,7 +17,7 @@ import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
-import { InlineNewsletterPuff } from "./inline-newsletter-puff";
+import InlineNewsletterPuff from "./inline-newsletter-puff";
 import {
   PrimaryImg,
   SecondaryImg,
