@@ -3,7 +3,6 @@ import { Platform } from "react-native";
 import PropTypes from "prop-types";
 
 import { Query, Mutation } from "react-apollo";
-import gql from "graphql-tag";
 
 import Image, { Placeholder } from "@times-components/image";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
@@ -29,30 +28,13 @@ import {
   InpSubscribedHeadline,
   textStyle
 } from "../styles/inline-newsletter-puff";
+ import { GET_NEWSLETTER, SUBSCRIBE_NEWSLETTER} from "./newsletter-gql-queries"
 
 function onManagePreferencesPress() {
   if (Platform.OS !== "web") {
     InteractiveWrapper.openURLInBrowser("https://home.thetimes.co.uk/myNews");
   }
 }
-
-export const GET_NEWSLETTER = gql`
-  query GetNewsletter($code: String!) {
-    newsletter(code: $code) {
-      id
-      isSubscribed
-    }
-  }
-`;
-
-export const SUBSCRIBE_NEWSLETTER = gql`
-  mutation SubscribeNewsletter($code: String!) {
-    subscribeNewsletter(code: $code) {
-      id
-      isSubscribed
-    }
-  }
-`;
 
 export const InlineNewsletterPuff = ({
   code,

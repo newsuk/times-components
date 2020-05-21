@@ -7,9 +7,12 @@ import { MockedProvider } from "@times-components/provider-test-tools";
 import Button from "@times-components/button";
 import {
   InlineNewsletterPuff,
+} from "../src/article-body/inline-newsletter-puff";
+
+import {
   GET_NEWSLETTER,
   SUBSCRIBE_NEWSLETTER
-} from "../src/article-body/inline-newsletter-puff";
+} from "../src/article-body/newsletter-gql-queries";
 
 jest.mock("@times-components/image", () => ({
   __esModule: true,

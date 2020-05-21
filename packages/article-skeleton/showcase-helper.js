@@ -15,7 +15,7 @@ import ArticleSkeleton from "./src/article-skeleton";
 import {
   GET_NEWSLETTER,
   SUBSCRIBE_NEWSLETTER
-} from "./src/article-body/inline-newsletter-puff";
+} from "./src/article-body/newsletter-gql-queries";
 
 const mocks = [
   {
