@@ -69,6 +69,23 @@ export default class AttributedString {
     }
   }
 
+  public splitByDifferenceInAttributes() {
+    const attrs = this.attributes;
+    const chunks: AttributedString[] = [];
+    let start = 0;
+
+    for (let i = 0; i < attrs.length; i++) {
+      if (attrs.length === i + 1) {
+        chunks.push(this.slice(start, i + 1));
+      } else if (attrs[i].length !== attrs[i + 1].length) {
+        chunks.push(this.slice(start, i + 1));
+        start = i + 1;
+      }
+    }
+
+    return chunks;
+  };
+
   public split = (chars: string[] = [' ', '\n']) => {
     const attrs = this.attributes;
     let start = 0;

@@ -21,31 +21,33 @@ const SimpleParagraph = ({
   return (
     <ArticleParagraphWrapper ast={tree} key={key} uid={key}>
       <Text allowFontScaling={false} selectable style={{ lineHeight }}>
-        {children.map(child => {
-          const [attribute, href] = child.collapsedAttributes(0);
-          const style = attribute ? attribute.settings : defaultFont;
-          const type = href ? href.type : null;
-          const canonicalId = href ? href.canonicalId : null;
-          if (href) {
-            const { color, ...linkStyle } = style;
+        {children.map(child =>
+          child.splitByDifferenceInAttributes().map(nestedChild => {
+            const [attribute, href] = nestedChild.collapsedAttributes(0);
+            const style = attribute ? attribute.settings : defaultFont;
+            const type = href ? href.type : null;
+            const canonicalId = href ? href.canonicalId : null;
+            if (href) {
+              const { color, ...linkStyle } = style;
+              return (
+                <LinkComponent
+                  url={href}
+                  style={linkStyle}
+                  onPress={e =>
+                    onLinkPress(e, { canonicalId, type, url: href.href })
+                  }
+                >
+                  {nestedChild.string}
+                </LinkComponent>
+              );
+            }
             return (
-              <LinkComponent
-                url={href}
-                style={linkStyle}
-                onPress={e =>
-                  onLinkPress(e, { canonicalId, type, url: href.href })
-                }
-              >
-                {child.string}
-              </LinkComponent>
+              <Text selectable allowFontScaling={false} style={style}>
+                {nestedChild.string}
+              </Text>
             );
-          }
-          return (
-            <Text selectable allowFontScaling={false} style={style}>
-              {child.string}
-            </Text>
-          );
-        })}
+          })
+        )}
       </Text>
     </ArticleParagraphWrapper>
   );

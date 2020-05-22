@@ -229,3 +229,249 @@ test('AttributedString.split()', () => {
     ]
   `);
 });
+
+test('AttributedString.splitByDifferenceInAttributes() should return flat attributed string when attributes length is the same', () => {
+  const attrs: AttributeTag[][] = [];
+  makeAttribute(attrs, 0, 7);
+  const newString = new AttributedString('foo bar', attrs);
+  const split = newString.splitByDifferenceInAttributes();
+
+  expect(split.length).toEqual(1);
+  expect(split).toMatchInlineSnapshot(`
+    Array [
+      AttributedString {
+        "attributes": Array [
+          Array [
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+          ],
+          Array [
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+          ],
+          Array [
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+          ],
+          Array [
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+          ],
+          Array [
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+          ],
+          Array [
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+          ],
+          Array [
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+          ],
+        ],
+        "length": 7,
+        "split": [Function],
+        "string": "foo bar",
+      },
+    ]
+  `);
+});
+
+test('AttributedString.splitByDifferenceInAttributes() should return attributed string with more than one element when string has nested attributes styling', () => {
+  const attrs: AttributeTag[][] = [];
+  makeAttribute(attrs, 0, 7);
+  makeAttribute(attrs, 4, 7);
+  const newString = new AttributedString('foo bar', attrs);
+  const split = newString.splitByDifferenceInAttributes();
+
+  expect(split.length).toEqual(2);
+  expect(split).toMatchInlineSnapshot(`
+    Array [
+      AttributedString {
+        "attributes": Array [
+          Array [
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+          ],
+          Array [
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+          ],
+          Array [
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+          ],
+          Array [
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+          ],
+        ],
+        "length": 4,
+        "split": [Function],
+        "string": "foo ",
+      },
+      AttributedString {
+        "attributes": Array [
+          Array [
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+          ],
+          Array [
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+          ],
+          Array [
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+            Object {
+              "settings": Object {
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 30,
+              },
+              "tag": "FONT",
+            },
+          ],
+        ],
+        "length": 3,
+        "split": [Function],
+        "string": "bar",
+      },
+    ]
+  `);
+});
