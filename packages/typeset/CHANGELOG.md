@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/newsuk/times-components/compare/@times-components/typeset@0.1.2...@times-components/typeset@0.1.3) (2020-05-26)
+
+
+### Bug Fixes
+
+* TNLT-1826 support bold/italic links for native ([#2604](https://github.com/newsuk/times-components/issues/2604)) ([e70eab5](https://github.com/newsuk/times-components/commit/e70eab54f0cd2585a5b513d11397d8e0b2e84f4d))
+
+
+
+
+
 ## [0.1.2](https://github.com/newsuk/times-components/compare/@times-components/typeset@0.1.1...@times-components/typeset@0.1.2) (2020-04-15)
 
 
