@@ -1017,3 +1017,685 @@ exports[`6. an article with heading tags 1`] = `
   </article>
 </div>
 `;
+
+exports[`7. an article with link 1`] = `
+<div>
+  <div
+    id="article-marketing-header"
+  />
+  <article
+    data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    data-article-template="mainstandard"
+    id="article-main"
+  >
+    <Head />
+    <div>
+      <AdContainer
+        slotName="header"
+      />
+    </div>
+    <main
+      role="main"
+    >
+      <div>
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline="Some Headline"
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article
+        role="article"
+      >
+        <p>
+          <Link
+            underlined={true}
+            url="https://www.thetimes.co.uk/article/i-like-it-boiling-hot-says-twitter-boss-jack-dorsey-cjclqjpb2"
+          >
+            Jack Dorsey
+          </Link>
+           said today that while the company was unlikely to open its offices before September, almost all staff could now work permanently from wherever they want.
+        </p>
+        <div
+          id="paywall-portal-article-footer"
+        />
+        <ArticleExtras
+          articleHeadline="Some Headline"
+          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          articleUrl="https://url.io"
+          commentsEnabled={true}
+          relatedArticleSlice={
+            Object {
+              "items": Array [
+                Object {
+                  "article": Object {
+                    "__typename": "Article",
+                    "bylines": Array [],
+                    "hasVideo": false,
+                    "headline": "RA Headline",
+                    "id": "ra-1",
+                    "label": "RA Label",
+                    "leadAsset": Object {
+                      "__typename": "Image",
+                      "crop169": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop169.io",
+                      },
+                      "crop32": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop32.io",
+                      },
+                      "title": "RA Title",
+                    },
+                    "publicationName": "TIMES",
+                    "publishedTime": "2015-03-23T19:39:39.000Z",
+                    "savingEnabled": true,
+                    "sharingEnabled": true,
+                    "shortHeadline": "Headline",
+                    "shortIdentifier": "2k629tpvh",
+                    "slug": "this-is-slug",
+                    "summary105": Array [],
+                    "summary125": Array [],
+                    "summary145": Array [],
+                    "summary160": Array [],
+                    "summary175": Array [],
+                    "summary225": Array [],
+                    "url": "https://ra.io",
+                  },
+                },
+              ],
+              "sliceName": "StandardSlice",
+            }
+          }
+          relatedArticlesVisible={false}
+          savingEnabled={true}
+          sharingEnabled={true}
+          spotAccountId=""
+          topics={
+            Array [
+              Object {
+                "name": "Topic",
+                "slug": "topic",
+              },
+            ]
+          }
+        />
+      </article>
+    </main>
+    <AdContainer
+      slotName="pixel"
+    />
+    <AdContainer
+      slotName="pixelteads"
+    />
+    <AdContainer
+      slotName="pixelskin"
+    />
+  </article>
+</div>
+`;
+
+exports[`8. an article with italic link 1`] = `
+<div>
+  <div
+    id="article-marketing-header"
+  />
+  <article
+    data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    data-article-template="mainstandard"
+    id="article-main"
+  >
+    <Head />
+    <div>
+      <AdContainer
+        slotName="header"
+      />
+    </div>
+    <main
+      role="main"
+    >
+      <div>
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline="Some Headline"
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article
+        role="article"
+      >
+        <p>
+          In his 2015 book on the tournaments, 
+          <Link
+            underlined={true}
+            url="https://www.thetimes.co.uk/article/superforecasting-by-philip-tetlock-and-dan-gardner-gkwwpbf3gsb"
+          >
+            <i>
+              Superforecasting
+            </i>
+          </Link>
+          , Professor Tetlock said the most accurate predictors all used very similar methods. They used a historical “base rate” for predicting how likely an event was, adjusting constantly in the light of new information.
+        </p>
+        <div
+          id="paywall-portal-article-footer"
+        />
+        <ArticleExtras
+          articleHeadline="Some Headline"
+          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          articleUrl="https://url.io"
+          commentsEnabled={true}
+          relatedArticleSlice={
+            Object {
+              "items": Array [
+                Object {
+                  "article": Object {
+                    "__typename": "Article",
+                    "bylines": Array [],
+                    "hasVideo": false,
+                    "headline": "RA Headline",
+                    "id": "ra-1",
+                    "label": "RA Label",
+                    "leadAsset": Object {
+                      "__typename": "Image",
+                      "crop169": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop169.io",
+                      },
+                      "crop32": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop32.io",
+                      },
+                      "title": "RA Title",
+                    },
+                    "publicationName": "TIMES",
+                    "publishedTime": "2015-03-23T19:39:39.000Z",
+                    "savingEnabled": true,
+                    "sharingEnabled": true,
+                    "shortHeadline": "Headline",
+                    "shortIdentifier": "2k629tpvh",
+                    "slug": "this-is-slug",
+                    "summary105": Array [],
+                    "summary125": Array [],
+                    "summary145": Array [],
+                    "summary160": Array [],
+                    "summary175": Array [],
+                    "summary225": Array [],
+                    "url": "https://ra.io",
+                  },
+                },
+              ],
+              "sliceName": "StandardSlice",
+            }
+          }
+          relatedArticlesVisible={false}
+          savingEnabled={true}
+          sharingEnabled={true}
+          spotAccountId=""
+          topics={
+            Array [
+              Object {
+                "name": "Topic",
+                "slug": "topic",
+              },
+            ]
+          }
+        />
+      </article>
+    </main>
+    <AdContainer
+      slotName="pixel"
+    />
+    <AdContainer
+      slotName="pixelteads"
+    />
+    <AdContainer
+      slotName="pixelskin"
+    />
+  </article>
+</div>
+`;
+
+exports[`9. an article with bold text followed by bold link 1`] = `
+<div>
+  <div
+    id="article-marketing-header"
+  />
+  <article
+    data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    data-article-template="mainstandard"
+    id="article-main"
+  >
+    <Head />
+    <div>
+      <AdContainer
+        slotName="header"
+      />
+    </div>
+    <main
+      role="main"
+    >
+      <div>
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline="Some Headline"
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article
+        role="article"
+      >
+        <p>
+          <b>
+            2 
+            <Link
+              underlined={true}
+              url="https://www.thetimes.co.uk/article/review-becoming-by-michelle-obama-the-astonishing-pressures-of-being-first-lady-zb6jkpffd"
+            >
+              Becoming by Michelle Obama
+            </Link>
+          </b>
+        </p>
+        <div
+          id="paywall-portal-article-footer"
+        />
+        <ArticleExtras
+          articleHeadline="Some Headline"
+          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          articleUrl="https://url.io"
+          commentsEnabled={true}
+          relatedArticleSlice={
+            Object {
+              "items": Array [
+                Object {
+                  "article": Object {
+                    "__typename": "Article",
+                    "bylines": Array [],
+                    "hasVideo": false,
+                    "headline": "RA Headline",
+                    "id": "ra-1",
+                    "label": "RA Label",
+                    "leadAsset": Object {
+                      "__typename": "Image",
+                      "crop169": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop169.io",
+                      },
+                      "crop32": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop32.io",
+                      },
+                      "title": "RA Title",
+                    },
+                    "publicationName": "TIMES",
+                    "publishedTime": "2015-03-23T19:39:39.000Z",
+                    "savingEnabled": true,
+                    "sharingEnabled": true,
+                    "shortHeadline": "Headline",
+                    "shortIdentifier": "2k629tpvh",
+                    "slug": "this-is-slug",
+                    "summary105": Array [],
+                    "summary125": Array [],
+                    "summary145": Array [],
+                    "summary160": Array [],
+                    "summary175": Array [],
+                    "summary225": Array [],
+                    "url": "https://ra.io",
+                  },
+                },
+              ],
+              "sliceName": "StandardSlice",
+            }
+          }
+          relatedArticlesVisible={false}
+          savingEnabled={true}
+          sharingEnabled={true}
+          spotAccountId=""
+          topics={
+            Array [
+              Object {
+                "name": "Topic",
+                "slug": "topic",
+              },
+            ]
+          }
+        />
+      </article>
+    </main>
+    <AdContainer
+      slotName="pixel"
+    />
+    <AdContainer
+      slotName="pixelteads"
+    />
+    <AdContainer
+      slotName="pixelskin"
+    />
+  </article>
+</div>
+`;
+
+exports[`10. an article with italic and normal text link 1`] = `
+<div>
+  <div
+    id="article-marketing-header"
+  />
+  <article
+    data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    data-article-template="mainstandard"
+    id="article-main"
+  >
+    <Head />
+    <div>
+      <AdContainer
+        slotName="header"
+      />
+    </div>
+    <main
+      role="main"
+    >
+      <div>
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline="Some Headline"
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article
+        role="article"
+      >
+        <p>
+          Family Action is one of two charities being supported by 
+          <Link
+            underlined={true}
+            url="https://www.thetimes.co.uk/article/the-times-coronavirus-charity-appeal-2020-help-those-in-hardship-lp6f2jdsb"
+          >
+            <i>
+              The Times
+            </i>
+             Coronavirus Charity Appeal
+          </Link>
+           to support people in greatest hardship under the restrictions. The second charity is The Big Issue Foundation.
+        </p>
+        <div
+          id="paywall-portal-article-footer"
+        />
+        <ArticleExtras
+          articleHeadline="Some Headline"
+          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          articleUrl="https://url.io"
+          commentsEnabled={true}
+          relatedArticleSlice={
+            Object {
+              "items": Array [
+                Object {
+                  "article": Object {
+                    "__typename": "Article",
+                    "bylines": Array [],
+                    "hasVideo": false,
+                    "headline": "RA Headline",
+                    "id": "ra-1",
+                    "label": "RA Label",
+                    "leadAsset": Object {
+                      "__typename": "Image",
+                      "crop169": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop169.io",
+                      },
+                      "crop32": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop32.io",
+                      },
+                      "title": "RA Title",
+                    },
+                    "publicationName": "TIMES",
+                    "publishedTime": "2015-03-23T19:39:39.000Z",
+                    "savingEnabled": true,
+                    "sharingEnabled": true,
+                    "shortHeadline": "Headline",
+                    "shortIdentifier": "2k629tpvh",
+                    "slug": "this-is-slug",
+                    "summary105": Array [],
+                    "summary125": Array [],
+                    "summary145": Array [],
+                    "summary160": Array [],
+                    "summary175": Array [],
+                    "summary225": Array [],
+                    "url": "https://ra.io",
+                  },
+                },
+              ],
+              "sliceName": "StandardSlice",
+            }
+          }
+          relatedArticlesVisible={false}
+          savingEnabled={true}
+          sharingEnabled={true}
+          spotAccountId=""
+          topics={
+            Array [
+              Object {
+                "name": "Topic",
+                "slug": "topic",
+              },
+            ]
+          }
+        />
+      </article>
+    </main>
+    <AdContainer
+      slotName="pixel"
+    />
+    <AdContainer
+      slotName="pixelteads"
+    />
+    <AdContainer
+      slotName="pixelskin"
+    />
+  </article>
+</div>
+`;
+
+exports[`11. an article with bold and italic text at the same time 1`] = `
+<div>
+  <div
+    id="article-marketing-header"
+  />
+  <article
+    data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    data-article-template="mainstandard"
+    id="article-main"
+  >
+    <Head />
+    <div>
+      <AdContainer
+        slotName="header"
+      />
+    </div>
+    <main
+      role="main"
+    >
+      <div>
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline="Some Headline"
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article
+        role="article"
+      >
+        <p>
+          <b>
+            <i>
+              Conversations with Friends
+            </i>
+          </b>
+        </p>
+        <div
+          id="paywall-portal-article-footer"
+        />
+        <ArticleExtras
+          articleHeadline="Some Headline"
+          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          articleUrl="https://url.io"
+          commentsEnabled={true}
+          relatedArticleSlice={
+            Object {
+              "items": Array [
+                Object {
+                  "article": Object {
+                    "__typename": "Article",
+                    "bylines": Array [],
+                    "hasVideo": false,
+                    "headline": "RA Headline",
+                    "id": "ra-1",
+                    "label": "RA Label",
+                    "leadAsset": Object {
+                      "__typename": "Image",
+                      "crop169": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop169.io",
+                      },
+                      "crop32": Object {
+                        "__typename": "Crop",
+                        "url": "https://racrop32.io",
+                      },
+                      "title": "RA Title",
+                    },
+                    "publicationName": "TIMES",
+                    "publishedTime": "2015-03-23T19:39:39.000Z",
+                    "savingEnabled": true,
+                    "sharingEnabled": true,
+                    "shortHeadline": "Headline",
+                    "shortIdentifier": "2k629tpvh",
+                    "slug": "this-is-slug",
+                    "summary105": Array [],
+                    "summary125": Array [],
+                    "summary145": Array [],
+                    "summary160": Array [],
+                    "summary175": Array [],
+                    "summary225": Array [],
+                    "url": "https://ra.io",
+                  },
+                },
+              ],
+              "sliceName": "StandardSlice",
+            }
+          }
+          relatedArticlesVisible={false}
+          savingEnabled={true}
+          sharingEnabled={true}
+          spotAccountId=""
+          topics={
+            Array [
+              Object {
+                "name": "Topic",
+                "slug": "topic",
+              },
+            ]
+          }
+        />
+      </article>
+    </main>
+    <AdContainer
+      slotName="pixel"
+    />
+    <AdContainer
+      slotName="pixelteads"
+    />
+    <AdContainer
+      slotName="pixelskin"
+    />
+  </article>
+</div>
+`;
