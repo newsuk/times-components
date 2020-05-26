@@ -8,10 +8,8 @@ import Image, { Placeholder } from "@times-components/image";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
 import { IconForwardArrow } from "@times-components/icons";
 import Link from "@times-components/link";
-import Button from "@times-components/button";
 import { colours } from "@times-components/styleguide";
 import {
-  buttonStyles,
   InpContainer,
   InpCopy,
   InpIconContainer,
@@ -25,14 +23,20 @@ import {
   InpSignupLabel,
   InpSubscribedContainer,
   InpSubscribedCopy,
-  InpSubscribedHeadline,
-  textStyle
+  InpSubscribedHeadline
 } from "../styles/inline-newsletter-puff";
 import { GET_NEWSLETTER, SUBSCRIBE_NEWSLETTER } from "./newsletter-gql-queries";
+import NewsletterPuffButton from "./newsletter-puff-button";
 
 function onManagePreferencesPress() {
   if (Platform.OS !== "web") {
     InteractiveWrapper.openURLInBrowser("https://home.thetimes.co.uk/myNews");
+  }
+}
+
+function onPressButton(subscribeNewsletter, updatingSubscription, code) {
+  if (!updatingSubscription) {
+    subscribeNewsletter({ variables: { code } });
   }
 }
 
@@ -105,20 +109,15 @@ const InlineNewsletterPuff = ({ code, copy, headline, imageUri, label }) => {
                     <InpSignupHeadline>{headline}</InpSignupHeadline>
                     <InpCopy>{copy}</InpCopy>
                     <InpSignupCTAContainer>
-                      <Button
-                        title={
-                          updatingSubscription
-                            ? "Saving…"
-                            : "Sign up to newsletter"
+                      <NewsletterPuffButton
+                        updatingSubscription={updatingSubscription}
+                        onPress={() =>
+                          onPressButton(
+                            subscribeNewsletter,
+                            updatingSubscription,
+                            code
+                          )
                         }
-                        onPress={() => {
-                          if (!updatingSubscription) {
-                            subscribeNewsletter({ variables: { code } });
-                          }
-                        }}
-                        style={buttonStyles}
-                        underlayColor="transparent"
-                        textStyle={textStyle}
                       />
                     </InpSignupCTAContainer>
                   </InpSignupContainer>

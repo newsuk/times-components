@@ -22,7 +22,7 @@ const mocks = [
     request: {
       query: GET_NEWSLETTER,
       variables: {
-        id: "a2l6E000000CdHzQAK"
+        code: "TNL-119"
       }
     },
     result: {
@@ -40,7 +40,7 @@ const mocks = [
     request: {
       query: SUBSCRIBE_NEWSLETTER,
       variables: {
-        id: "a2l6E000000CdHzQAK"
+        code: "TNL-119"
       }
     },
     result: {
