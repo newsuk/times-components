@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import Button from "@times-components/button";
 import { buttonStyles, textStyle } from "../styles/inline-newsletter-puff";
-import withTrackEvents from "../tracking/newsletter-button-tracking";
+import withTrackEvents from "../tracking/newsletter-puff-button-tracking";
 
 const NewsletterPuffButton = ({ updatingSubscription, onPress }) => (
   <Button
