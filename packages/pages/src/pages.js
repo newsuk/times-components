@@ -1,20 +1,12 @@
+import withErrorBoundaries from "./with-error-boundaries";
+
 /* eslint-disable global-require */
-export default page => {
-  switch (page) {
-    case "Article": {
-      return require("./article").default;
-    }
-    case "AuthorProfile": {
-      return require("./author-profile").default;
-    }
-    case "Section": {
-      return require("./section").default;
-    }
-    case "Topic": {
-      return require("./topic").default;
-    }
-    default: {
-      return require("./article").default;
-    }
-  }
+const pageMapper = {
+  Article: require("./article").default,
+  AuthorProfile: require("./author-profile").default,
+  Section: require("./section").default,
+  Topic: require("./topic").default
 };
+
+export default page =>
+  withErrorBoundaries(pageMapper[page] || require("./article").default);
