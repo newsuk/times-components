@@ -1,6 +1,8 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { NativeModules, View, Text } from "react-native";
 import { fonts, fontSizes } from "@times-components/styleguide";
+
+const { componentCaughtError } = NativeModules.ReactAnalytics;
 
 const styles= {
     container: {
@@ -25,17 +27,20 @@ export class ErrorBoundary extends React.Component {
     this.state = { hasError: false };
   }
 
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+
   componentDidCatch(error, errorInfo) {
-    this.setState({hasError: true})
-    // Report to external service - New Relic / Firebase
+    componentCaughtError(error.message, errorInfo.componentStack);
   }
 
   renderErrorMessage() {
     return (
       <View style={styles.container}>
-      <Text style={styles.title}>Something went wrong</Text>
-      <Text style={styles.subTitle}>Please try again</Text>
-    </View>
+        <Text style={styles.title}>Something went wrong</Text>
+        <Text style={styles.subTitle}>Please try again</Text>
+      </View>
     );
   }
 
