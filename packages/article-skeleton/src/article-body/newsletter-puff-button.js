@@ -3,7 +3,10 @@ import PropTypes from "prop-types";
 
 import Button from "@times-components/button";
 import { buttonStyles, textStyle } from "../styles/inline-newsletter-puff";
-import withTrackEvents from "../tracking/newsletter-puff-button-tracking";
+import {
+  withTrackingContext,
+  withTrackEvents
+} from "@times-components/tracking";
 
 const NewsletterPuffButton = ({ updatingSubscription, onPress }) => (
   <Button
@@ -19,4 +22,18 @@ NewsletterPuffButton.propTypes = {
   onPress: PropTypes.func.isRequired,
   updatingSubscription: PropTypes.bool.isRequired
 };
-export default withTrackEvents(NewsletterPuffButton);
+export default withTrackingContext(
+  withTrackEvents(NewsletterPuffButton, {
+    analyticsEvents: [
+      {
+        actionName: "onPress",
+        eventName: "onPress",
+        getAttrs: ({ updatingSubscription }) => ({
+          updatingSubscription: updatingSubscription
+        }),
+        trackingName: "widget : puff : sign up to newsletter"
+      }
+    ]
+  }),
+  { trackingObjectName: "NewsletterPuffButton" }
+);
