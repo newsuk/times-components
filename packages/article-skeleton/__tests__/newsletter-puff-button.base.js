@@ -1,21 +1,30 @@
 import React from "react";
 import { create } from "react-test-renderer";
-import withTrackingContext from "@times-components/tracking/__tests__/test-tracking-context";
 import Button from "@times-components/button";
+import mockDate from "mockdate";
 
 import NewsletterPuffButton from "../src/article-body/newsletter-puff-button";
 
 export default () => {
   describe("NewsletterPuffButton", () => {
+    beforeEach(() => {
+      mockDate.set(1514764800000, 0);
+    });
+
     afterEach(() => {
       jest.clearAllMocks();
+      mockDate.reset();
     });
+
+    afterEach(() => {});
 
     it("renders the button with the text `Sign up to newsletter`", () => {
       const mockedOnPress = jest.fn();
+      const mockedAnalyticsStream = jest.fn();
 
       const component = create(
         <NewsletterPuffButton
+          analyticsStream={mockedAnalyticsStream}
           updatingSubscription={false}
           onPress={mockedOnPress}
         />
@@ -28,9 +37,11 @@ export default () => {
 
     it("renders the button with the text `Saving...`", () => {
       const mockedOnPress = jest.fn();
+      const mockedAnalyticsStream = jest.fn();
 
       const component = create(
         <NewsletterPuffButton
+          analyticsStream={mockedAnalyticsStream}
           updatingSubscription={true}
           onPress={mockedOnPress}
         />
@@ -40,26 +51,36 @@ export default () => {
       expect(component).toMatchSnapshot();
     });
 
-    it("should track button clicks in analytics", () => {
-      const analyticsStream = jest.fn();
+    it("should track button viewed in analytics", () => {
+      const mockedAnalyticsStream = jest.fn();
       const onPress = jest.fn();
-      const WithTrackingAndContext = withTrackingContext(NewsletterPuffButton);
 
       const testInstance = create(
-        <WithTrackingAndContext
+        <NewsletterPuffButton
           updatingSubscription={false}
           onPress={onPress}
-          analyticsStream={analyticsStream}
+          analyticsStream={mockedAnalyticsStream}
+        />
+      );
+
+      expect(mockedAnalyticsStream.mock.calls).toMatchSnapshot();
+    });
+
+    it("should track button viewed and clicked in analytics", () => {
+      const mockedAnalyticsStream = jest.fn();
+      const onPress = jest.fn();
+
+      const testInstance = create(
+        <NewsletterPuffButton
+          updatingSubscription={false}
+          onPress={onPress}
+          analyticsStream={mockedAnalyticsStream}
         />
       );
 
       testInstance.root.findByType(Button).props.onPress();
 
-      expect(analyticsStream).toHaveBeenCalledWith({
-        action: "onPress",
-        attrs: {},
-        component: "widget : puff : sign up to newsletter"
-      });
+      expect(mockedAnalyticsStream.mock.calls).toMatchSnapshot();
     });
   });
 };
