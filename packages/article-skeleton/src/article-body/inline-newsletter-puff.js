@@ -6,17 +6,11 @@ import { Query, Mutation } from "react-apollo";
 
 import Image, { Placeholder } from "@times-components/image";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
-import { IconForwardArrow } from "@times-components/icons";
-import Link from "@times-components/link";
-import { colours } from "@times-components/styleguide";
 import {
   InpContainer,
   InpCopy,
-  InpIconContainer,
   InpImageContainer,
   InpPreferencesContainer,
-  InpPreferencesText,
-  InpPreferencesView,
   InpSignupContainer,
   InpSignupCTAContainer,
   InpSignupHeadline,
@@ -27,6 +21,7 @@ import {
 } from "../styles/inline-newsletter-puff";
 import { GET_NEWSLETTER, SUBSCRIBE_NEWSLETTER } from "./newsletter-gql-queries";
 import NewsletterPuffButton from "./newsletter-puff-button";
+import NewsletterPuffLink from "./newsletter-puff-link";
 
 function onManagePreferencesPress() {
   if (Platform.OS !== "web") {
@@ -40,7 +35,14 @@ function onPressButton(subscribeNewsletter, updatingSubscription, code) {
   }
 }
 
-const InlineNewsletterPuff = ({ code, copy, headline, imageUri, label }) => {
+const InlineNewsletterPuff = ({
+  analyticsStream,
+  code,
+  copy,
+  headline,
+  imageUri,
+  label
+}) => {
   const [justSubscribed, setJustSubscribed] = useState(false);
 
   return (
@@ -86,21 +88,10 @@ const InlineNewsletterPuff = ({ code, copy, headline, imageUri, label }) => {
                       Box.
                     </InpSubscribedCopy>
                     <InpPreferencesContainer>
-                      <Link
-                        url="https://home.thetimes.co.uk/myNews"
-                        onPress={onManagePreferencesPress}
-                      >
-                        <InpPreferencesView>
-                          <InpPreferencesText>
-                            Manage preferences here
-                          </InpPreferencesText>
-                          <InpIconContainer>
-                            <IconForwardArrow
-                              fillColour={colours.functional.action}
-                            />
-                          </InpIconContainer>
-                        </InpPreferencesView>
-                      </Link>
+                      <NewsletterPuffLink
+                        analyticsStream={analyticsStream}
+                        onPress={event => onManagePreferencesPress()}
+                      />
                     </InpPreferencesContainer>
                   </InpSubscribedContainer>
                 ) : (
@@ -110,8 +101,9 @@ const InlineNewsletterPuff = ({ code, copy, headline, imageUri, label }) => {
                     <InpCopy>{copy}</InpCopy>
                     <InpSignupCTAContainer>
                       <NewsletterPuffButton
+                        analyticsStream={analyticsStream}
                         updatingSubscription={updatingSubscription}
-                        onPress={() =>
+                        onPress={event =>
                           onPressButton(
                             subscribeNewsletter,
                             updatingSubscription,
