@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.27](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.26...@times-components/article-skeleton@1.33.27) (2020-05-26)
+
+
+### Bug Fixes
+
+* TNLT-1826 support bold/italic links for native ([#2604](https://github.com/newsuk/times-components/issues/2604)) ([e70eab5](https://github.com/newsuk/times-components/commit/e70eab54f0cd2585a5b513d11397d8e0b2e84f4d))
+
+
+
+
+
 ## [1.33.26](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.25...@times-components/article-skeleton@1.33.26) (2020-05-14)
 
 **Note:** Version bump only for package @times-components/article-skeleton

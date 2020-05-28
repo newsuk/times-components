@@ -8,6 +8,11 @@ import contentWithNestedFirstParagraph from "../fixtures/bold-article-content";
 import contentWithHeadingTags from "../fixtures/headings-article-content";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
+import articleContentWithLink from "../fixtures/link-text-article-content";
+import articleContentWithItalicLink from "../fixtures/italic-link-article-content";
+import articleContentWithTextAndBoldLink from "../fixtures/text-bold-link-article-content";
+import articleContentWithMixedLink from "../fixtures/mixed-link-article-content";
+import articleContentWithBoldItalicText from "../fixtures/boldItalic-text-article-content";
 
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
 
@@ -440,6 +445,66 @@ export const snapshotTests = renderComponent => [
       const article = articleFixture({
         ...fixtureArgs,
         content: contentWithHeadingTags
+      });
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "an article with link",
+    test() {
+      const article = articleFixture({
+        ...fixtureArgs,
+        content: articleContentWithLink
+      });
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "an article with italic link",
+    test() {
+      const article = articleFixture({
+        ...fixtureArgs,
+        content: articleContentWithItalicLink
+      });
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "an article with bold text followed by bold link",
+    test() {
+      const article = articleFixture({
+        ...fixtureArgs,
+        content: articleContentWithTextAndBoldLink
+      });
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "an article with italic and normal text link",
+    test() {
+      const article = articleFixture({
+        ...fixtureArgs,
+        content: articleContentWithMixedLink
+      });
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "an article with bold and italic text at the same time",
+    test() {
+      const article = articleFixture({
+        ...fixtureArgs,
+        content: articleContentWithBoldItalicText
       });
       const output = renderComponent(renderArticle(article));
 
