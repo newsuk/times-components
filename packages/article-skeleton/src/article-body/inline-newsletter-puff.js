@@ -6,29 +6,22 @@ import { Query, Mutation } from "react-apollo";
 
 import Image, { Placeholder } from "@times-components/image";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
-import { IconForwardArrow } from "@times-components/icons";
-import Link from "@times-components/link";
-import Button from "@times-components/button";
-import { colours } from "@times-components/styleguide";
 import {
-  buttonStyles,
   InpContainer,
   InpCopy,
-  InpIconContainer,
   InpImageContainer,
   InpPreferencesContainer,
-  InpPreferencesText,
-  InpPreferencesView,
   InpSignupContainer,
   InpSignupCTAContainer,
   InpSignupHeadline,
   InpSignupLabel,
   InpSubscribedContainer,
   InpSubscribedCopy,
-  InpSubscribedHeadline,
-  textStyle
+  InpSubscribedHeadline
 } from "../styles/inline-newsletter-puff";
 import { GET_NEWSLETTER, SUBSCRIBE_NEWSLETTER } from "./newsletter-gql-queries";
+import NewsletterPuffButton from "./newsletter-puff-button";
+import NewsletterPuffLink from "./newsletter-puff-link";
 
 function onManagePreferencesPress() {
   if (Platform.OS !== "web") {
@@ -36,7 +29,20 @@ function onManagePreferencesPress() {
   }
 }
 
-const InlineNewsletterPuff = ({ code, copy, headline, imageUri, label }) => {
+function onPressButton(subscribeNewsletter, updatingSubscription, code) {
+  if (!updatingSubscription) {
+    subscribeNewsletter({ variables: { code } });
+  }
+}
+
+const InlineNewsletterPuff = ({
+  analyticsStream,
+  code,
+  copy,
+  headline,
+  imageUri,
+  label
+}) => {
   const [justSubscribed, setJustSubscribed] = useState(false);
 
   return (
@@ -82,21 +88,10 @@ const InlineNewsletterPuff = ({ code, copy, headline, imageUri, label }) => {
                       Box.
                     </InpSubscribedCopy>
                     <InpPreferencesContainer>
-                      <Link
-                        url="https://home.thetimes.co.uk/myNews"
-                        onPress={onManagePreferencesPress}
-                      >
-                        <InpPreferencesView>
-                          <InpPreferencesText>
-                            Manage preferences here
-                          </InpPreferencesText>
-                          <InpIconContainer>
-                            <IconForwardArrow
-                              fillColour={colours.functional.action}
-                            />
-                          </InpIconContainer>
-                        </InpPreferencesView>
-                      </Link>
+                      <NewsletterPuffLink
+                        analyticsStream={analyticsStream}
+                        onPress={() => onManagePreferencesPress()}
+                      />
                     </InpPreferencesContainer>
                   </InpSubscribedContainer>
                 ) : (
@@ -105,20 +100,16 @@ const InlineNewsletterPuff = ({ code, copy, headline, imageUri, label }) => {
                     <InpSignupHeadline>{headline}</InpSignupHeadline>
                     <InpCopy>{copy}</InpCopy>
                     <InpSignupCTAContainer>
-                      <Button
-                        title={
-                          updatingSubscription
-                            ? "Saving…"
-                            : "Sign up to newsletter"
+                      <NewsletterPuffButton
+                        analyticsStream={analyticsStream}
+                        updatingSubscription={updatingSubscription}
+                        onPress={() =>
+                          onPressButton(
+                            subscribeNewsletter,
+                            updatingSubscription,
+                            code
+                          )
                         }
-                        onPress={() => {
-                          if (!updatingSubscription) {
-                            subscribeNewsletter({ variables: { code } });
-                          }
-                        }}
-                        style={buttonStyles}
-                        underlayColor="transparent"
-                        textStyle={textStyle}
                       />
                     </InpSignupCTAContainer>
                   </InpSignupContainer>
@@ -135,6 +126,7 @@ const InlineNewsletterPuff = ({ code, copy, headline, imageUri, label }) => {
 export default InlineNewsletterPuff;
 
 InlineNewsletterPuff.propTypes = {
+  analyticsStream: PropTypes.func.isRequired,
   code: PropTypes.string.isRequired,
   copy: PropTypes.string.isRequired,
   headline: PropTypes.string.isRequired,

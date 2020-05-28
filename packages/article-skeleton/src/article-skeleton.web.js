@@ -134,6 +134,7 @@ const ArticleSkeleton = ({
               <BodyContainer accessibilityRole="article">
                 {newContent && (
                   <ArticleBody
+                    analyticsStream={analyticsStream}
                     content={newContent}
                     contextUrl={url}
                     section={section}

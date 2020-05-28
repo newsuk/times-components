@@ -17,7 +17,7 @@ jest.mock("@times-components/image", () => ({
   default: ({ uri }) => `Image rendered with imageUri=${uri}`,
   Placeholder: () => "Placeholder rendered"
 }));
-
+const mockAnalyticsStream = jest.fn();
 const renderComponent = (
   mocks = [
     {
@@ -43,6 +43,7 @@ const renderComponent = (
     <MockedProvider mocks={mocks}>
       <InlineNewsletterPuff
         {...{
+          analyticsStream: mockAnalyticsStream,
           code: "TNL-119",
 
           label: "STRAIGHT IN YOUR INBOX",
@@ -97,7 +98,7 @@ export default () => {
       expect(component).toMatchSnapshot();
     });
 
-    it("renders puff when not already subscribed", async () => {
+    it("renders signup view when not already subscribed", async () => {
       const component = renderComponent();
 
       await wait(0);
@@ -105,7 +106,7 @@ export default () => {
       expect(component).toMatchSnapshot();
     });
 
-    it("renders saving when the button is clicked", async () => {
+    it("renders 'saving' when the button is clicked", async () => {
       const component = renderComponent();
 
       await wait(0);
@@ -115,7 +116,7 @@ export default () => {
       expect(component).toMatchSnapshot();
     });
 
-    it("renders the success view ", async () => {
+    it("renders the success view after subscribing ", async () => {
       const component = renderComponent([
         {
           request: {
