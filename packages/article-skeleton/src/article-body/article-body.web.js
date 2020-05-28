@@ -62,7 +62,7 @@ const highResSizeCalc = (observed, key, template) => {
   return indepthRetinaScreenWidth || screenWidth;
 };
 
-const renderers = ({ paidContentClassName, template }) => ({
+const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
   ...coreRenderers,
   ad(key) {
     return <AdContainer key={key} slotName="inline-ad" style={styles.ad} />;
@@ -114,6 +114,7 @@ const renderers = ({ paidContentClassName, template }) => ({
       case "newsletter-puff": {
         return (
           <InlineNewsletterPuff
+            analyticsStream={analyticsStream}
             key={key}
             code={attributes.code}
             copy={decodeURIComponent(attributes.copy)}

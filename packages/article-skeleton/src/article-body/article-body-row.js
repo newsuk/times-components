@@ -30,7 +30,8 @@ export default ({
   images = [],
   dropcapsDisabled,
   dropCapFont = "dropCap",
-  scale
+  scale,
+  analyticsStream
 }) => {
   const styles = styleFactory(scale);
   const { fontFactory } = styleguide({ scale });
@@ -241,6 +242,7 @@ export default ({
         const { attributes } = element;
         return (
           <InlineNewsletterPuff
+            analyticsStream={analyticsStream}
             key={key}
             code={attributes.code}
             copy={decodeURIComponent(attributes.copy)}
