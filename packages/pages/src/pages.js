@@ -1,6 +1,6 @@
 import withErrorBoundaries from "./with-error-boundaries";
-
 /* eslint-disable global-require */
+
 const pageMapper = {
   Article: require("./article").default,
   AuthorProfile: require("./author-profile").default,
@@ -9,4 +9,4 @@ const pageMapper = {
 };
 
 export default page =>
-  withErrorBoundaries(pageMapper[page] || require("./article").default);
+  withErrorBoundaries(pageMapper[page] || pageMapper.Article);

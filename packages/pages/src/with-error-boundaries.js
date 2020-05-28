@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { View, Text, NativeModules, Platform } from "react-native";
 import { fonts, fontSizes } from "@times-components/styleguide";
+
+const { componentCaughtError } = NativeModules.ReactAnalytics;
 
 const styles = {
   container: {
@@ -30,6 +32,10 @@ const withErrorBoundaries = WrappedComponent =>
       return { hasError: true };
     }
 
+    componentDidCatch(error, errorInfo) {
+      componentCaughtError(error.message, errorInfo.componentStack);
+    }
+
     renderErrorMessage = () => (
       <View style={styles.container}>
         <Text style={styles.title}>Something went wrong</Text>
@@ -39,7 +45,9 @@ const withErrorBoundaries = WrappedComponent =>
 
     render() {
       const { hasError } = this.state;
-      return hasError ? (
+      const isNative = Platform.OS === "ios" || Platform.OS === "android";
+
+      return isNative && hasError ? (
         this.renderErrorMessage()
       ) : (
         <WrappedComponent {...this.props} />
