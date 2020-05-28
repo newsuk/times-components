@@ -1,87 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `null`;
-
-exports[`Inline Newsletter Puff renders placeholder when loading 1`] = `
-<div
-  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
-  style={
-    Object {
-      "height": "257px",
-    }
-  }
->
-  Placeholder rendered
-</div>
-`;
-
-exports[`Inline Newsletter Puff renders puff when not already subscribed 1`] = `
-<div
-  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
->
-  <div
-    className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv css-view-1dbjc4n"
-  >
-    Image rendered with imageUri=https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg
-  </div>
-  <div
-    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fgHAmw inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fgHAmw css-view-1dbjc4n"
-  >
-    <div
-      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-6 fGDuEb inline-newsletter-puff__InpSignupLabel-sc-13hmjc-6 fGDuEb css-text-901oao"
-      dir="auto"
-    >
-      STRAIGHT IN YOUR INBOX
-    </div>
-    <div
-      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-7 kSVfs inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-7 kSVfs css-text-901oao"
-      dir="auto"
-    >
-      Politics. Explained.
-    </div>
-    <div
-      className="inline-newsletter-puff__InpCopy-sc-13hmjc-8 hLhbxF inline-newsletter-puff__InpCopy-sc-13hmjc-8 hLhbxF css-text-901oao"
-      dir="auto"
-    >
-      Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
-    </div>
-    <div
-      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO css-view-1dbjc4n"
-    >
-      <button
-        onClick={[Function]}
-        style={
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "transparent",
-            "borderColor": "#1D1D1B",
-            "borderRadius": 2,
-            "borderStyle": "solid",
-            "borderWidth": 2,
-            "color": "#1D1D1B",
-            "cursor": "pointer",
-            "elevation": 0,
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 16,
-            "height": 45,
-            "justifyContent": "center",
-            "letterSpacing": 0.2,
-            "lineHeight": 0,
-            "minWidth": 100,
-            "paddingTop": 4,
-            "width": "100%",
-          }
-        }
-        type="button"
-      >
-        Sign up to newsletter
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Inline Newsletter Puff renders saving when the button is clicked 1`] = `
+exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] = `
 <div
   className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
 >
@@ -144,6 +63,21 @@ exports[`Inline Newsletter Puff renders saving when the button is clicked 1`] = 
       </button>
     </div>
   </div>
+</div>
+`;
+
+exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `null`;
+
+exports[`Inline Newsletter Puff renders placeholder when loading 1`] = `
+<div
+  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
+  style={
+    Object {
+      "height": "257px",
+    }
+  }
+>
+  Placeholder rendered
 </div>
 `;
 
@@ -213,7 +147,73 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
 </div>
 `;
 
-exports[`Inline Newsletter Puff renders the success view  1`] = `
+exports[`Inline Newsletter Puff renders signup view when not already subscribed 1`] = `
+<div
+  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
+>
+  <div
+    className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv css-view-1dbjc4n"
+  >
+    Image rendered with imageUri=https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg
+  </div>
+  <div
+    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fgHAmw inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fgHAmw css-view-1dbjc4n"
+  >
+    <div
+      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-6 fGDuEb inline-newsletter-puff__InpSignupLabel-sc-13hmjc-6 fGDuEb css-text-901oao"
+      dir="auto"
+    >
+      STRAIGHT IN YOUR INBOX
+    </div>
+    <div
+      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-7 kSVfs inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-7 kSVfs css-text-901oao"
+      dir="auto"
+    >
+      Politics. Explained.
+    </div>
+    <div
+      className="inline-newsletter-puff__InpCopy-sc-13hmjc-8 hLhbxF inline-newsletter-puff__InpCopy-sc-13hmjc-8 hLhbxF css-text-901oao"
+      dir="auto"
+    >
+      Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
+    </div>
+    <div
+      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO css-view-1dbjc4n"
+    >
+      <button
+        onClick={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "transparent",
+            "borderColor": "#1D1D1B",
+            "borderRadius": 2,
+            "borderStyle": "solid",
+            "borderWidth": 2,
+            "color": "#1D1D1B",
+            "cursor": "pointer",
+            "elevation": 0,
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 16,
+            "height": 45,
+            "justifyContent": "center",
+            "letterSpacing": 0.2,
+            "lineHeight": 0,
+            "minWidth": 100,
+            "paddingTop": 4,
+            "width": "100%",
+          }
+        }
+        type="button"
+      >
+        Sign up to newsletter
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Inline Newsletter Puff renders the success view after subscribing  1`] = `
 <div
   className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
 >
