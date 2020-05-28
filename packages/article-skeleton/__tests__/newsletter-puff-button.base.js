@@ -42,7 +42,7 @@ export default () => {
       const component = create(
         <NewsletterPuffButton
           analyticsStream={mockedAnalyticsStream}
-          updatingSubscription={true}
+          updatingSubscription
           onPress={mockedOnPress}
         />
       );
@@ -55,7 +55,7 @@ export default () => {
       const mockedAnalyticsStream = jest.fn();
       const onPress = jest.fn();
 
-      const testInstance = create(
+      create(
         <NewsletterPuffButton
           updatingSubscription={false}
           onPress={onPress}

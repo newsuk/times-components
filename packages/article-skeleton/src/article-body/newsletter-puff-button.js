@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Button from "@times-components/button";
-import { buttonStyles, textStyle } from "../styles/inline-newsletter-puff";
 import {
   withTrackingContext,
   withTrackEvents
 } from "@times-components/tracking";
+import { buttonStyles, textStyle } from "../styles/inline-newsletter-puff";
 
 const NewsletterPuffButton = ({ updatingSubscription, onPress }) => (
   <Button
@@ -29,7 +29,7 @@ export default withTrackingContext(
         actionName: "onPress",
         eventName: "onPress",
         getAttrs: ({ updatingSubscription }) => ({
-          updatingSubscription: updatingSubscription
+          updatingSubscription
         }),
         trackingName: "widget : puff : sign up to newsletter"
       }

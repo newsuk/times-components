@@ -90,7 +90,7 @@ const InlineNewsletterPuff = ({
                     <InpPreferencesContainer>
                       <NewsletterPuffLink
                         analyticsStream={analyticsStream}
-                        onPress={event => onManagePreferencesPress()}
+                        onPress={() => onManagePreferencesPress()}
                       />
                     </InpPreferencesContainer>
                   </InpSubscribedContainer>
@@ -103,7 +103,7 @@ const InlineNewsletterPuff = ({
                       <NewsletterPuffButton
                         analyticsStream={analyticsStream}
                         updatingSubscription={updatingSubscription}
-                        onPress={event =>
+                        onPress={() =>
                           onPressButton(
                             subscribeNewsletter,
                             updatingSubscription,
@@ -126,6 +126,7 @@ const InlineNewsletterPuff = ({
 export default InlineNewsletterPuff;
 
 InlineNewsletterPuff.propTypes = {
+  analyticsStream: PropTypes.func.isRequired,
   code: PropTypes.string.isRequired,
   copy: PropTypes.string.isRequired,
   headline: PropTypes.string.isRequired,

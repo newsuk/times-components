@@ -36,7 +36,7 @@ export default () => {
       const mockedAnalyticsStream = jest.fn();
       const onPress = jest.fn();
 
-      const testInstance = create(
+      create(
         <NewsletterPuffLink
           onPress={onPress}
           analyticsStream={mockedAnalyticsStream}
