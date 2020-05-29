@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/newsuk/times-components/compare/@times-components/pages@2.1.104...@times-components/pages@2.2.0) (2020-05-29)
+
+
+### Features
+
+* add error boundaries to pages ([#2608](https://github.com/newsuk/times-components/issues/2608)) ([a826907](https://github.com/newsuk/times-components/commit/a8269070141f146542f10fcd8e3a4b94bf43a778))
+
+
+
+
+
 ## [2.1.104](https://github.com/newsuk/times-components/compare/@times-components/pages@2.1.103...@times-components/pages@2.1.104) (2020-05-26)
 
 **Note:** Version bump only for package @times-components/pages
