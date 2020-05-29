@@ -1,8 +1,8 @@
 import gql from "graphql-tag";
 
 export const GET_NEWSLETTER = gql`
-  query GetNewsletter($id: String!) {
-    newsletter(id: $id) {
+  query GetNewsletter($code: String!) {
+    newsletter(code: $code) {
       id
       isSubscribed
     }
@@ -10,8 +10,8 @@ export const GET_NEWSLETTER = gql`
 `;
 
 export const SUBSCRIBE_NEWSLETTER = gql`
-  mutation SubscribeNewsletter($id: String!) {
-    subscribeNewsletter(id: $id) {
+  mutation SubscribeNewsletter($code: String!) {
+    subscribeNewsletter(code: $code) {
       id
       isSubscribed
     }
