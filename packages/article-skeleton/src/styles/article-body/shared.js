@@ -68,35 +68,40 @@ const sharedStyles = scale => {
         font: "headline",
         fontSize: "heading2Mobile"
       }),
-      marginBottom: spacing(2)
+      marginBottom: spacing(2),
+      color: colours.functional.black
     },
     heading3: {
       ...fontFactory({
         font: "headline",
         fontSize: "heading3Mobile"
       }),
-      marginBottom: spacing(2)
+      marginBottom: spacing(2),
+      color: colours.functional.black
     },
     heading4: {
       ...fontFactory({
         font: "headline",
         fontSize: "heading4Mobile"
       }),
-      marginBottom: spacing(2)
+      marginBottom: spacing(2),
+      color: colours.functional.black
     },
     heading5: {
       ...fontFactory({
         font: "headline",
         fontSize: "heading5Mobile"
       }),
-      marginBottom: spacing(2)
+      marginBottom: spacing(2),
+      color: colours.functional.black
     },
     heading6: {
       ...fontFactory({
         font: "headline",
         fontSize: "heading5Mobile"
       }),
-      marginBottom: spacing(2)
+      marginBottom: spacing(2),
+      color: colours.functional.black
     }
   };
 };
