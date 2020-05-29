@@ -14,10 +14,6 @@ const styles = {
     fontFamily: fonts.headline,
     fontSize: fontSizes.heading2Mobile,
     marginBottom: 20
-  },
-  subTitle: {
-    fontFamily: fonts.body,
-    fontSize: fontSizes.heading4Mobile
   }
 };
 
@@ -39,7 +35,6 @@ const withErrorBoundaries = WrappedComponent =>
     renderErrorMessage = () => (
       <View style={styles.container}>
         <Text style={styles.title}>Something went wrong</Text>
-        <Text style={styles.subTitle}>Please try again</Text>
       </View>
     );
 
