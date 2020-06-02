@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.28](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.27...@times-components/article-skeleton@1.33.28) (2020-06-01)
+
+
+### Bug Fixes
+
+* TNLT-1210 heading color updated ([#2609](https://github.com/newsuk/times-components/issues/2609)) ([e9553b0](https://github.com/newsuk/times-components/commit/e9553b047375678fd1f3b764a5bf81972d172d41))
+
+
+
+
+
 ## [1.33.27](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.26...@times-components/article-skeleton@1.33.27) (2020-05-26)
 
 

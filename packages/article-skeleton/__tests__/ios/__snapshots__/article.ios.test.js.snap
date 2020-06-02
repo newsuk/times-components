@@ -1333,6 +1333,7 @@ exports[`6. an article with heading tags 1`] = `
                 selectable={true}
                 style={
                   Object {
+                    "color": "#000000",
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 25,
                     "lineHeight": 26,
@@ -1385,6 +1386,7 @@ exports[`6. an article with heading tags 1`] = `
                 selectable={true}
                 style={
                   Object {
+                    "color": "#000000",
                     "fontFamily": "TimesModern-Bold",
                     "fontSize": 22,
                     "lineHeight": 26,

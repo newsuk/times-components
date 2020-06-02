@@ -1,20 +1,22 @@
 /* eslint-disable global-require */
+import withErrorBoundaries from "./with-error-boundaries";
+
 export default page => {
   switch (page) {
     case "Article": {
-      return require("./article").default;
+      return withErrorBoundaries(require("./article").default);
     }
     case "AuthorProfile": {
-      return require("./author-profile").default;
+      return withErrorBoundaries(require("./author-profile").default);
     }
     case "Section": {
-      return require("./section").default;
+      return withErrorBoundaries(require("./section").default);
     }
     case "Topic": {
-      return require("./topic").default;
+      return withErrorBoundaries(require("./topic").default);
     }
     default: {
-      return require("./article").default;
+      return withErrorBoundaries(require("./article").default);
     }
   }
 };
