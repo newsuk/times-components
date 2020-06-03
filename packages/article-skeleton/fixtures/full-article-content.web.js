@@ -140,7 +140,7 @@ export default [
               label: "Straight in your inbox",
               headline: "Politics. Explained.",
               imageUri:
-                "https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
+                "https://www.uat-thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fsi-eb%2Fweb%2Fbin%2F852d8c90-9385-4b6c-9b4c-150353ada3d4.jpg?resize=1001"
             },
             value: "newsletter-puff"
           }
