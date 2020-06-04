@@ -13,10 +13,10 @@ import articleContentWithItalicLink from "../fixtures/italic-link-article-conten
 import articleContentWithTextAndBoldLink from "../fixtures/text-bold-link-article-content";
 import articleContentWithMixedLink from "../fixtures/mixed-link-article-content";
 import articleContentWithBoldItalicText from "../fixtures/boldItalic-text-article-content";
-import { 
-  paragraphWithSingleInlineMarkup, 
-  paragraphWithTextAndInlineMarkup, 
-  paragraphWithNestedInlineMarkup 
+import {
+  paragraphWithSingleInlineMarkup,
+  paragraphWithTextAndInlineMarkup,
+  paragraphWithNestedInlineMarkup
 } from "../fixtures/inline-paragraph-content";
 
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");

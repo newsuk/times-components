@@ -1,21 +1,23 @@
-export const paragraphWithSingleInlineMarkup = [{
-  name: "paragraph",
-  children: [
-    {
-      name: "inline",
-      children: [
-        {
-          name: "text",
-          children: [],
-          attributes: {
-            value:
-              "They may have been improved by the controversy that ensued when Watson appeared on the cover of Vanity Fair to promote it, wearing a top that partially exposed her breasts. She rejected criticism that the pose was at odds with her claim to be a feminist. “Feminism is not a stick with which to beat other women. It’s about liberation. It’s about equality,” she said, adding: “I really don’t know what my tits have to do with it.” "
+export const paragraphWithSingleInlineMarkup = [
+  {
+    name: "paragraph",
+    children: [
+      {
+        name: "inline",
+        children: [
+          {
+            name: "text",
+            children: [],
+            attributes: {
+              value:
+                "They may have been improved by the controversy that ensued when Watson appeared on the cover of Vanity Fair to promote it, wearing a top that partially exposed her breasts. She rejected criticism that the pose was at odds with her claim to be a feminist. “Feminism is not a stick with which to beat other women. It’s about liberation. It’s about equality,” she said, adding: “I really don’t know what my tits have to do with it.” "
+            }
           }
-        }
-      ]
-    }
-  ]
-}];
+        ]
+      }
+    ]
+  }
+];
 
 export const paragraphWithTextAndInlineMarkup = [
   {
