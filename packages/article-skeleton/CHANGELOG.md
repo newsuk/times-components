@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.29](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.28...@times-components/article-skeleton@1.33.29) (2020-06-05)
+
+
+### Bug Fixes
+
+* TNLT-2236 handle inline paragraphs for native ([#2610](https://github.com/newsuk/times-components/issues/2610)) ([77a5c9e](https://github.com/newsuk/times-components/commit/77a5c9e4169cc1e867ecbfecebaee3a8c31a3929))
+
+
+
+
+
 ## [1.33.28](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.27...@times-components/article-skeleton@1.33.28) (2020-06-01)
 
 
