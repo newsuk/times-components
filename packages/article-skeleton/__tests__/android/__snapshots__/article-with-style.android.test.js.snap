@@ -1616,7 +1616,353 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
 </View>
 `;
 
-exports[`12. an article skeleton with responsive items 1`] = `
+exports[`12. an article with text wrapped in inline element 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginBottom": 20,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    }
+                  }
+                >
+                  They may have been improved by the controversy that ensued when Watson appeared on the cover of Vanity Fair to promote it, wearing a top that partially exposed her breasts. She rejected criticism that the pose was at odds with her claim to be a feminist. “Feminism is not a stick with which to beat other women. It’s about liberation. It’s about equality,” she said, adding: “I really don’t know what my tits have to do with it.” 
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "width": undefined,
+              }
+            }
+          >
+            <ArticleExtras />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <ActivityIndicator />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`13. an article with paragraph with text and inline element 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginBottom": 20,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    }
+                  }
+                >
+                  20. 
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    }
+                  }
+                >
+                  Participants’ names and general locations will be published if they are the winner of the Competition in accordance with regulatory requirements, both during this and future promotions by the Promoter or any associated or subsidiary company of News Corp UK & Ireland Limited.
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "width": undefined,
+              }
+            }
+          >
+            <ArticleExtras />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <ActivityIndicator />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`14. an article with inline inside a bold tag 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginBottom": 20,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "fontWeight": "bold",
+                      "lineHeight": 52,
+                    }
+                  }
+                >
+                  Meera Menon, 15, 100min
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "width": undefined,
+              }
+            }
+          >
+            <ArticleExtras />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <ActivityIndicator />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`15. an article skeleton with responsive items 1`] = `
 <View
   style={
     Object {
