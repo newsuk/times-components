@@ -159,13 +159,12 @@ export default () => {
     done();
   });
 
-  it("handleNavigationStateChange should reload the webview when it opens a link", () => {
+  it("handleNavigationStateChange should initiate opening the URL in a browser", () => {
     const component = setUpNavigationTest(() => Promise.resolve(true));
     jest.spyOn(InteractiveWrapper, "openURLInBrowser");
     component.handleNavigationStateChange({
       url: "https://www.thetimes.co.uk"
     });
-    expect(component.webview.reload).toHaveBeenCalled();
     expect(InteractiveWrapper.openURLInBrowser).toHaveBeenCalled();
   });
 
