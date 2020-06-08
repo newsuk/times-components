@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.3](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.7.2...@times-components/interactive-wrapper@0.7.3) (2020-06-08)
+
+
+### Bug Fixes
+
+* multiple tabs on puffs click ([#2611](https://github.com/newsuk/times-components/issues/2611)) ([14d79ee](https://github.com/newsuk/times-components/commit/14d79eeeba82dbf8dfa640eddd02a7ab4afffd25))
+
+
+
+
+
 ## [0.7.2](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.7.1...@times-components/interactive-wrapper@0.7.2) (2020-05-14)
 
 **Note:** Version bump only for package @times-components/interactive-wrapper
