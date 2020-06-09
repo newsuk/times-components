@@ -14,9 +14,6 @@ query ArticleListQuery(
         label
         slug
         shortIdentifier
-        leadAsset {
-          __typename
-        }
         longSummary: summary(maxCharCount: $longSummaryLength)
         publicationName
         publishedTime
