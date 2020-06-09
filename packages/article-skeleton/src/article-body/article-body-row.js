@@ -69,6 +69,9 @@ export default ({
         attributes.value.split("").map(() => [attr])
       );
     },
+    inline(key, attributes, renderedChildren) {
+      return AttributedString.join(renderedChildren);
+    },
     heading2(key, attributes, children, index, tree) {
       const childStr = AttributedString.join(children);
       return (
