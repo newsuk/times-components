@@ -39,7 +39,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 "color": undefined,
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 216,
-                "left": 21.48046875,
+                "left": 10,
                 "lineHeight": 204.23812500000003,
                 "position": "absolute",
               }
@@ -64,7 +64,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
-                    "left": 146,
+                    "left": 139,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -79,7 +79,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
-                    "left": 165.828125,
+                    "left": 158.828125,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -94,7 +94,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
-                    "left": 202.0390625,
+                    "left": 195.0390625,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -109,7 +109,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
-                    "left": 299.017578125,
+                    "left": 292.017578125,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -124,7 +124,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
-                    "left": 395.75,
+                    "left": 388.75,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -139,7 +139,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
-                    "left": 519.095703125,
+                    "left": 512.095703125,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -154,7 +154,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
-                    "left": 638.486328125,
+                    "left": 631.486328125,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -169,7 +169,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
-                    "left": 146,
+                    "left": 139,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 52,
@@ -433,7 +433,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 "color": undefined,
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 216,
-                "left": 24.75,
+                "left": 10,
                 "lineHeight": 241.55085937500002,
                 "position": "absolute",
               }
@@ -459,7 +459,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 161,
+                    "left": 159,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -475,7 +475,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 182.357421875,
+                    "left": 180.357421875,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -491,7 +491,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 262.42578125,
+                    "left": 260.42578125,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -507,7 +507,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 357.541015625,
+                    "left": 355.541015625,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -523,7 +523,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 426.763671875,
+                    "left": 424.763671875,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -539,7 +539,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 445.466796875,
+                    "left": 443.466796875,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -555,7 +555,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 544.888671875,
+                    "left": 542.888671875,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -571,7 +571,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 161,
+                    "left": 159,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 52,
@@ -587,7 +587,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 304.560546875,
+                    "left": 302.560546875,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 52,
@@ -603,7 +603,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 345.412109375,
+                    "left": 343.412109375,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 52,
@@ -619,7 +619,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 422.6328125,
+                    "left": 420.6328125,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 52,
@@ -635,7 +635,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 469.689453125,
+                    "left": 467.689453125,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 52,
@@ -651,7 +651,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 498.18359375,
+                    "left": 496.18359375,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 52,
@@ -667,7 +667,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 599.75,
+                    "left": 597.75,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 52,
@@ -683,7 +683,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 161,
+                    "left": 159,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 104,
@@ -699,7 +699,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 288.494140625,
+                    "left": 286.494140625,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 104,
@@ -715,7 +715,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 364.818359375,
+                    "left": 362.818359375,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 104,
@@ -731,7 +731,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 401.029296875,
+                    "left": 399.029296875,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 104,
@@ -747,7 +747,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 36,
                     "fontWeight": "bold",
-                    "left": 475.75390625,
+                    "left": 473.75390625,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 104,
@@ -1962,7 +1962,909 @@ exports[`14. an article with inline inside a bold tag 1`] = `
 </View>
 `;
 
-exports[`15. an article skeleton with responsive items 1`] = `
+exports[`15. an article starting with single quote 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": undefined,
+                "fontFamily": "TimesModern-Regular",
+                "fontSize": 216,
+                "left": 10,
+                "lineHeight": 220.9306640625,
+                "position": "absolute",
+              }
+            }
+          >
+            ‘S
+          </Text>
+          <View
+            style={
+              Object {
+                "height": 208,
+                "marginBottom": 20,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 182,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                o
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 202.53125,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                rting
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 285.060546875,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                eyebrows?!
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 473.12890625,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                Really?
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 594.365234375,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                During
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 707.708984375,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                a
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 182,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 52,
+                  }
+                }
+              >
+                pandemic?!”
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 388.173828125,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 52,
+                  }
+                }
+              >
+                This
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 465.693359375,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 52,
+                  }
+                }
+              >
+                tweet
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 563.322265625,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 52,
+                  }
+                }
+              >
+                landed
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 680.09375,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 52,
+                  }
+                }
+              >
+                in
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 182,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 104,
+                  }
+                }
+              >
+                my
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 239.498046875,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 104,
+                  }
+                }
+              >
+                Twitter
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 359.451171875,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 104,
+                  }
+                }
+              >
+                feed
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 438.88671875,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 104,
+                  }
+                }
+              >
+                after
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 522.892578125,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 104,
+                  }
+                }
+              >
+                talking
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 638.92578125,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 104,
+                  }
+                }
+              >
+                to
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 182,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 156,
+                  }
+                }
+              >
+                Jenni
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 278.310546875,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 156,
+                  }
+                }
+              >
+                Murray
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 398.509765625,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 156,
+                  }
+                }
+              >
+                on
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 447.81640625,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 156,
+                  }
+                }
+              >
+                BBC
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 524.984375,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 156,
+                  }
+                }
+              >
+                Radio
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 625.21484375,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 156,
+                  }
+                }
+              >
+                4
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "width": undefined,
+              }
+            }
+          >
+            <ArticleExtras />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <ActivityIndicator />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`16. an article starting with double quote 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": undefined,
+                "fontFamily": "TimesModern-Regular",
+                "fontSize": 216,
+                "left": 10,
+                "lineHeight": 220.9306640625,
+                "position": "absolute",
+              }
+            }
+          >
+            “S
+          </Text>
+          <View
+            style={
+              Object {
+                "height": 260,
+                "marginBottom": 20,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 215,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                o
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 235.53125,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                rting
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 318.060546875,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                eyebrows?!
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 506.12890625,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                Really?
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 215,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 52,
+                  }
+                }
+              >
+                During
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 328.34375,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 52,
+                  }
+                }
+              >
+                a
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 356.837890625,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 52,
+                  }
+                }
+              >
+                pandemic?!”
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 563.01171875,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 52,
+                  }
+                }
+              >
+                This
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 640.53125,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 52,
+                  }
+                }
+              >
+                tweet
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 215,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 104,
+                  }
+                }
+              >
+                landed
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 331.771484375,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 104,
+                  }
+                }
+              >
+                in
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 369.283203125,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 104,
+                  }
+                }
+              >
+                my
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 426.78125,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 104,
+                  }
+                }
+              >
+                Twitter
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 546.734375,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 104,
+                  }
+                }
+              >
+                feed
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 626.169921875,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 104,
+                  }
+                }
+              >
+                after
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 215,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 156,
+                  }
+                }
+              >
+                talking
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 331.033203125,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 156,
+                  }
+                }
+              >
+                to
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 371.884765625,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 156,
+                  }
+                }
+              >
+                Jenni
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 468.1953125,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 156,
+                  }
+                }
+              >
+                Murray
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 588.39453125,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 156,
+                  }
+                }
+              >
+                on
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 637.701171875,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 156,
+                  }
+                }
+              >
+                BBC
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 0,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 208,
+                  }
+                }
+              >
+                Radio
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "left": 100.23046875,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 208,
+                  }
+                }
+              >
+                4
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "width": undefined,
+              }
+            }
+          >
+            <ArticleExtras />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <ActivityIndicator />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`17. an article skeleton with responsive items 1`] = `
 <View
   style={
     Object {
