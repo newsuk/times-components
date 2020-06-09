@@ -24,7 +24,10 @@ export default (scale, color, dropCapFont, paragraph) => {
   };
   const font = FontStorage.getFont(fontSettings);
   const { height } = getStringBounds(fontSettings, letter.string);
-  const dropCapAdvanceWidth = font.getAdvanceWidth(letter.string, fontSettings.fontSize);
+  const dropCapAdvanceWidth = font.getAdvanceWidth(
+    letter.string,
+    fontSettings.fontSize
+  );
 
   const exclusion = new BoxExclusion(
     0,

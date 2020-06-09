@@ -18,9 +18,9 @@ import {
   paragraphWithTextAndInlineMarkup,
   paragraphWithNestedInlineMarkup
 } from "../fixtures/inline-paragraph-content";
-import { 
+import {
   paragraphStartingWithSingleQuote,
-  paragraphStartingWithDoubleQuote 
+  paragraphStartingWithDoubleQuote
 } from "../fixtures/dropcap-article-content";
 
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
@@ -559,7 +559,6 @@ export const snapshotTests = renderComponent => [
   {
     name: "an article starting with single quote",
     test() {
-
       const article = articleFixture({
         ...fixtureArgs,
         content: paragraphStartingWithSingleQuote,
