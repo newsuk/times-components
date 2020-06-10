@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.31](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.30...@times-components/article-skeleton@1.33.31) (2020-06-10)
+
+
+### Bug Fixes
+
+* **TNLT-1844:** dropcap width calculation updated for native ([#2612](https://github.com/newsuk/times-components/issues/2612)) ([1c57765](https://github.com/newsuk/times-components/commit/1c5776505500a01194e024266bc8f38b55fec7dd))
+
+
+
+
+
 ## [1.33.30](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.29...@times-components/article-skeleton@1.33.30) (2020-06-08)
 
 **Note:** Version bump only for package @times-components/article-skeleton
