@@ -3,6 +3,7 @@ import { fonts } from "@times-components/styleguide";
 import { FontStorage, BoxExclusion } from "@times-components/typeset";
 import { Text } from "react-native";
 import { getStringBounds } from "../body-utils";
+import styles from "../styles/shared";
 
 export default (scale, color, dropCapFont, paragraph) => {
   let letter = paragraph.slice(0, 1);
@@ -22,12 +23,16 @@ export default (scale, color, dropCapFont, paragraph) => {
     color
   };
   const font = FontStorage.getFont(fontSettings);
-  const { width, height } = getStringBounds(fontSettings, letter.string);
-  const advance = font.getAdvanceWidth(letter.string, baseStyle.fontSize);
+  const { height } = getStringBounds(fontSettings, letter.string);
+  const dropCapAdvanceWidth = font.getAdvanceWidth(
+    letter.string,
+    fontSettings.fontSize
+  );
+
   const exclusion = new BoxExclusion(
     0,
     0,
-    width + letter.length * advance,
+    dropCapAdvanceWidth + styles.articleMainContentRow.paddingRight,
     height
   );
   const element = (
@@ -36,7 +41,7 @@ export default (scale, color, dropCapFont, paragraph) => {
       style={[
         {
           position: "absolute",
-          left: advance,
+          left: styles.articleMainContentRow.paddingLeft,
           fontSize,
           lineHeight: height * 1.33,
           fontFamily: fonts[dropCapFont],

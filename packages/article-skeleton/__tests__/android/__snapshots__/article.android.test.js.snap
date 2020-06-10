@@ -75,7 +75,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   "color": undefined,
                   "fontFamily": "TimesModern-Regular",
                   "fontSize": 216,
-                  "left": 21.48046875,
+                  "left": 10,
                   "lineHeight": 204.23812500000003,
                   "position": "absolute",
                 },
@@ -109,7 +109,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 146,
+                      "left": 139,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -130,7 +130,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 165.828125,
+                      "left": 158.828125,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -151,7 +151,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 202.0390625,
+                      "left": 195.0390625,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -172,7 +172,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 299.017578125,
+                      "left": 292.017578125,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -193,7 +193,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 395.75,
+                      "left": 388.75,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -214,7 +214,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 519.095703125,
+                      "left": 512.095703125,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -235,7 +235,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 638.486328125,
+                      "left": 631.486328125,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -256,7 +256,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 146,
+                      "left": 139,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -698,7 +698,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                   "color": undefined,
                   "fontFamily": "TimesModern-Regular",
                   "fontSize": 216,
-                  "left": 24.75,
+                  "left": 10,
                   "lineHeight": 241.55085937500002,
                   "position": "absolute",
                 },
@@ -732,7 +732,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 161,
+                      "left": 159,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -754,7 +754,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 182.357421875,
+                      "left": 180.357421875,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -776,7 +776,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 262.42578125,
+                      "left": 260.42578125,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -798,7 +798,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 357.541015625,
+                      "left": 355.541015625,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -820,7 +820,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 426.763671875,
+                      "left": 424.763671875,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -842,7 +842,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 445.466796875,
+                      "left": 443.466796875,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -864,7 +864,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 544.888671875,
+                      "left": 542.888671875,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -886,7 +886,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 161,
+                      "left": 159,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -908,7 +908,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 304.560546875,
+                      "left": 302.560546875,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -930,7 +930,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 345.412109375,
+                      "left": 343.412109375,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -952,7 +952,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 422.6328125,
+                      "left": 420.6328125,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -974,7 +974,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 469.689453125,
+                      "left": 467.689453125,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -996,7 +996,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 498.18359375,
+                      "left": 496.18359375,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -1018,7 +1018,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 599.75,
+                      "left": 597.75,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -1040,7 +1040,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 161,
+                      "left": 159,
                       "position": "absolute",
                       "top": 104,
                     },
@@ -1062,7 +1062,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 288.494140625,
+                      "left": 286.494140625,
                       "position": "absolute",
                       "top": 104,
                     },
@@ -1084,7 +1084,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 364.818359375,
+                      "left": 362.818359375,
                       "position": "absolute",
                       "top": 104,
                     },
@@ -1106,7 +1106,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 401.029296875,
+                      "left": 399.029296875,
                       "position": "absolute",
                       "top": 104,
                     },
@@ -1128,7 +1128,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 475.75390625,
+                      "left": 473.75390625,
                       "position": "absolute",
                       "top": 104,
                     },
@@ -2989,7 +2989,1319 @@ exports[`14. an article with inline inside a bold tag 1`] = `
 </View>
 `;
 
-exports[`16. an inline link reports analytics event on press 1`] = `
+exports[`15. an article starting with single quote 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView
+    ListHeaderComponent={
+      <Gutter
+        style={
+          Object {
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Header
+          width={750}
+        />
+      </Gutter>
+    }
+    extraData={true}
+    initialNumToRender={2}
+    maxToRenderPerBatch={10}
+    nestedScrollEnabled={true}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    removeClippedSubviews={true}
+    scrollEventThrottle={50}
+    showsVerticalScrollIndicator={false}
+    updateCellsBatchingPeriod={50}
+    windowSize={3}
+  >
+    <View>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        />
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontFamily": "TimesModern-Regular",
+                  "fontSize": 216,
+                  "left": 10,
+                  "lineHeight": 220.9306640625,
+                  "position": "absolute",
+                },
+              ]
+            }
+          >
+            ‘S
+          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                },
+                Object {
+                  "marginBottom": 20,
+                },
+                false,
+                Object {},
+                Object {
+                  "height": 208,
+                },
+              ]
+            }
+          >
+            <View>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 182,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                o
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 202.53125,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                rting
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 285.060546875,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                eyebrows?!
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 473.12890625,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Really?
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 594.365234375,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                During
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 707.708984375,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                a
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 182,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                pandemic?!”
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 388.173828125,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                This
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 465.693359375,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                tweet
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 563.322265625,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                landed
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 680.09375,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                in
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 182,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                my
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 239.498046875,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Twitter
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 359.451171875,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                feed
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 438.88671875,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                after
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 522.892578125,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                talking
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 638.92578125,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                to
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 182,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Jenni
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 278.310546875,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Murray
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 398.509765625,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                on
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 447.81640625,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                BBC
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 524.984375,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Radio
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 625.21484375,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                4
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "maxWidth": "100%",
+                  "width": undefined,
+                },
+              ]
+            }
+          >
+            <ArticleExtras
+              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+              articleUrl="https://url.io"
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <ActivityIndicator
+            animating={true}
+            color={null}
+            hidesWhenStopped={true}
+            size="large"
+          />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`16. an article starting with double quote 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView
+    ListHeaderComponent={
+      <Gutter
+        style={
+          Object {
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Header
+          width={750}
+        />
+      </Gutter>
+    }
+    extraData={true}
+    initialNumToRender={2}
+    maxToRenderPerBatch={10}
+    nestedScrollEnabled={true}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    removeClippedSubviews={true}
+    scrollEventThrottle={50}
+    showsVerticalScrollIndicator={false}
+    updateCellsBatchingPeriod={50}
+    windowSize={3}
+  >
+    <View>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        />
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontFamily": "TimesModern-Regular",
+                  "fontSize": 216,
+                  "left": 10,
+                  "lineHeight": 220.9306640625,
+                  "position": "absolute",
+                },
+              ]
+            }
+          >
+            “S
+          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                },
+                Object {
+                  "marginBottom": 20,
+                },
+                false,
+                Object {},
+                Object {
+                  "height": 260,
+                },
+              ]
+            }
+          >
+            <View>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 215,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                o
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 235.53125,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                rting
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 318.060546875,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                eyebrows?!
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 506.12890625,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Really?
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 215,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                During
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 328.34375,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                a
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 356.837890625,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                pandemic?!”
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 563.01171875,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                This
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 640.53125,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                tweet
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 215,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                landed
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 331.771484375,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                in
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 369.283203125,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                my
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 426.78125,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Twitter
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 546.734375,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                feed
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 626.169921875,
+                      "position": "absolute",
+                      "top": 104,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                after
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 215,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                talking
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 331.033203125,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                to
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 371.884765625,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Jenni
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 468.1953125,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Murray
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 588.39453125,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                on
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 637.701171875,
+                      "position": "absolute",
+                      "top": 156,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                BBC
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 0,
+                      "position": "absolute",
+                      "top": 208,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                Radio
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 100.23046875,
+                      "position": "absolute",
+                      "top": 208,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                4
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={null}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <View
+            style={
+              Array [
+                Object {
+                  "overflow": "hidden",
+                },
+                Object {
+                  "backgroundColor": "#ffffff",
+                  "maxWidth": "100%",
+                  "width": undefined,
+                },
+              ]
+            }
+          >
+            <ArticleExtras
+              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+              articleUrl="https://url.io"
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Array [
+              Object {
+                "overflow": "hidden",
+              },
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "width": undefined,
+              },
+            ]
+          }
+        >
+          <ActivityIndicator
+            animating={true}
+            color={null}
+            hidesWhenStopped={true}
+            size="large"
+          />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`18. an inline link reports analytics event on press 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
@@ -3022,7 +4334,7 @@ Object {
 }
 `;
 
-exports[`17. renders content 1`] = `
+exports[`19. renders content 1`] = `
 <View
   style={
     Object {
@@ -3268,7 +4580,7 @@ exports[`17. renders content 1`] = `
 </View>
 `;
 
-exports[`18. an article with inline paragraph 1`] = `
+exports[`20. an article with inline paragraph 1`] = `
 <View
   style={
     Object {
@@ -3343,7 +4655,7 @@ exports[`18. an article with inline paragraph 1`] = `
                   "color": undefined,
                   "fontFamily": "TimesModern-Regular",
                   "fontSize": 216,
-                  "left": 9.791015625,
+                  "left": 10,
                   "lineHeight": 204.23812500000003,
                   "position": "absolute",
                 },
@@ -3365,7 +4677,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 false,
                 Object {},
                 Object {
-                  "height": 416,
+                  "height": 468,
                 },
               ]
             }
@@ -3377,7 +4689,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 50,
+                      "left": 69,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -3398,7 +4710,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 71.41015625,
+                      "left": 90.41015625,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -3419,7 +4731,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 137.46875,
+                      "left": 156.46875,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -3440,7 +4752,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 224.638671875,
+                      "left": 243.638671875,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -3461,7 +4773,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 265.490234375,
+                      "left": 284.490234375,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -3482,7 +4794,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 342.447265625,
+                      "left": 361.447265625,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -3503,7 +4815,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 389.50390625,
+                      "left": 408.50390625,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -3524,7 +4836,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 479.978515625,
+                      "left": 498.978515625,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -3545,7 +4857,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 527.03515625,
+                      "left": 546.03515625,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -3566,9 +4878,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 635.544921875,
+                      "left": 69,
                       "position": "absolute",
-                      "top": 0,
+                      "top": 52,
                     },
                     Object {
                       "color": "#000000",
@@ -3587,7 +4899,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 50,
+                      "left": 161.337890625,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -3608,7 +4920,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 144.447265625,
+                      "left": 255.78515625,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -3629,7 +4941,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 257.140625,
+                      "left": 368.478515625,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -3650,7 +4962,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 297.39453125,
+                      "left": 408.732421875,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -3671,7 +4983,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 353.802734375,
+                      "left": 465.140625,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -3692,7 +5004,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 433.23828125,
+                      "left": 544.576171875,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -3713,9 +5025,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 537.40625,
+                      "left": 69,
                       "position": "absolute",
-                      "top": 52,
+                      "top": 104,
                     },
                     Object {
                       "color": "#000000",
@@ -3734,9 +5046,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 635.84375,
+                      "left": 167.4375,
                       "position": "absolute",
-                      "top": 52,
+                      "top": 104,
                     },
                     Object {
                       "color": "#000000",
@@ -3755,7 +5067,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 50,
+                      "left": 208.2890625,
                       "position": "absolute",
                       "top": 104,
                     },
@@ -3776,7 +5088,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 134.33984375,
+                      "left": 292.62890625,
                       "position": "absolute",
                       "top": 104,
                     },
@@ -3797,7 +5109,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 175.19140625,
+                      "left": 333.48046875,
                       "position": "absolute",
                       "top": 104,
                     },
@@ -3818,7 +5130,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 301.490234375,
+                      "left": 459.779296875,
                       "position": "absolute",
                       "top": 104,
                     },
@@ -3839,7 +5151,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 379.73046875,
+                      "left": 538.01953125,
                       "position": "absolute",
                       "top": 104,
                     },
@@ -3860,9 +5172,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 549.46484375,
+                      "left": 0,
                       "position": "absolute",
-                      "top": 104,
+                      "top": 156,
                     },
                     Object {
                       "color": "#000000",
@@ -3881,7 +5193,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 0,
+                      "left": 137.126953125,
                       "position": "absolute",
                       "top": 156,
                     },
@@ -3902,7 +5214,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 142.76953125,
+                      "left": 279.896484375,
                       "position": "absolute",
                       "top": 156,
                     },
@@ -3923,7 +5235,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 233.525390625,
+                      "left": 370.65234375,
                       "position": "absolute",
                       "top": 156,
                     },
@@ -3944,7 +5256,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 356.5546875,
+                      "left": 493.681640625,
                       "position": "absolute",
                       "top": 156,
                     },
@@ -3965,7 +5277,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 426.005859375,
+                      "left": 563.1328125,
                       "position": "absolute",
                       "top": 156,
                     },
@@ -3986,9 +5298,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 504.24609375,
+                      "left": 0,
                       "position": "absolute",
-                      "top": 156,
+                      "top": 208,
                     },
                     Object {
                       "color": "#000000",
@@ -4007,9 +5319,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 616.67578125,
+                      "left": 112.4296875,
                       "position": "absolute",
-                      "top": 156,
+                      "top": 208,
                     },
                     Object {
                       "color": "#000000",
@@ -4028,9 +5340,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 665.982421875,
+                      "left": 161.736328125,
                       "position": "absolute",
-                      "top": 156,
+                      "top": 208,
                     },
                     Object {
                       "color": "#000000",
@@ -4049,7 +5361,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 0,
+                      "left": 221.30859375,
                       "position": "absolute",
                       "top": 208,
                     },
@@ -4070,7 +5382,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 72.31640625,
+                      "left": 293.625,
                       "position": "absolute",
                       "top": 208,
                     },
@@ -4091,7 +5403,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 133.365234375,
+                      "left": 354.673828125,
                       "position": "absolute",
                       "top": 208,
                     },
@@ -4112,7 +5424,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 175.306640625,
+                      "left": 396.615234375,
                       "position": "absolute",
                       "top": 208,
                     },
@@ -4133,7 +5445,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 234.87890625,
+                      "left": 456.1875,
                       "position": "absolute",
                       "top": 208,
                     },
@@ -4154,7 +5466,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 351.10546875,
+                      "left": 572.4140625,
                       "position": "absolute",
                       "top": 208,
                     },
@@ -4175,9 +5487,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 448.330078125,
+                      "left": 0,
                       "position": "absolute",
-                      "top": 208,
+                      "top": 260,
                     },
                     Object {
                       "color": "#000000",
@@ -4196,9 +5508,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 567.5625,
+                      "left": 119.232421875,
                       "position": "absolute",
-                      "top": 208,
+                      "top": 260,
                     },
                     Object {
                       "color": "#000000",
@@ -4218,9 +5530,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 622.669921875,
+                      "left": 174.33984375,
                       "position": "absolute",
-                      "top": 208,
+                      "top": 260,
                     },
                     Object {
                       "color": "#000000",
@@ -4240,7 +5552,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 0,
+                      "left": 264.09375,
                       "position": "absolute",
                       "top": 260,
                     },
@@ -4262,7 +5574,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 40.8515625,
+                      "left": 304.9453125,
                       "position": "absolute",
                       "top": 260,
                     },
@@ -4284,7 +5596,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 108.24609375,
+                      "left": 372.33984375,
                       "position": "absolute",
                       "top": 260,
                     },
@@ -4310,7 +5622,7 @@ exports[`18. an article with inline paragraph 1`] = `
                       "color": "#006699",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "left": 167.818359375,
+                      "left": 431.912109375,
                       "lineHeight": 52,
                       "marginBottom": 25,
                       "marginTop": 0,
@@ -4333,7 +5645,7 @@ exports[`18. an article with inline paragraph 1`] = `
                       "color": "#006699",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "left": 257.291015625,
+                      "left": 521.384765625,
                       "lineHeight": 52,
                       "marginBottom": 25,
                       "marginTop": 0,
@@ -4356,7 +5668,7 @@ exports[`18. an article with inline paragraph 1`] = `
                       "color": "#006699",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "left": 266.203125,
+                      "left": 530.296875,
                       "lineHeight": 52,
                       "marginBottom": 25,
                       "marginTop": 0,
@@ -4379,7 +5691,7 @@ exports[`18. an article with inline paragraph 1`] = `
                       "color": "#006699",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "left": 374.8359375,
+                      "left": 638.9296875,
                       "lineHeight": 52,
                       "marginBottom": 25,
                       "marginTop": 0,
@@ -4402,12 +5714,12 @@ exports[`18. an article with inline paragraph 1`] = `
                       "color": "#006699",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "left": 383.748046875,
+                      "left": 0,
                       "lineHeight": 52,
                       "marginBottom": 25,
                       "marginTop": 0,
                       "position": "absolute",
-                      "top": 260,
+                      "top": 312,
                     },
                   ]
                 }
@@ -4425,12 +5737,12 @@ exports[`18. an article with inline paragraph 1`] = `
                       "color": "#006699",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "left": 466.857421875,
+                      "left": 83.109375,
                       "lineHeight": 52,
                       "marginBottom": 25,
                       "marginTop": 0,
                       "position": "absolute",
-                      "top": 260,
+                      "top": 312,
                     },
                   ]
                 }
@@ -4448,12 +5760,12 @@ exports[`18. an article with inline paragraph 1`] = `
                       "color": "#006699",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "left": 475.76953125,
+                      "left": 92.021484375,
                       "lineHeight": 52,
                       "marginBottom": 25,
                       "marginTop": 0,
                       "position": "absolute",
-                      "top": 260,
+                      "top": 312,
                     },
                   ]
                 }
@@ -4466,9 +5778,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 553.271484375,
+                      "left": 169.5234375,
                       "position": "absolute",
-                      "top": 260,
+                      "top": 312,
                     },
                     Object {
                       "color": "#000000",
@@ -4487,7 +5799,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 0,
+                      "left": 261.861328125,
                       "position": "absolute",
                       "top": 312,
                     },
@@ -4508,7 +5820,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 123.01171875,
+                      "left": 384.873046875,
                       "position": "absolute",
                       "top": 312,
                     },
@@ -4529,7 +5841,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 182.583984375,
+                      "left": 444.4453125,
                       "position": "absolute",
                       "top": 312,
                     },
@@ -4550,7 +5862,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 248.150390625,
+                      "left": 510.01171875,
                       "position": "absolute",
                       "top": 312,
                     },
@@ -4571,7 +5883,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 324.439453125,
+                      "left": 586.30078125,
                       "position": "absolute",
                       "top": 312,
                     },
@@ -4592,9 +5904,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 381.7265625,
+                      "left": 0,
                       "position": "absolute",
-                      "top": 312,
+                      "top": 364,
                     },
                     Object {
                       "color": "#000000",
@@ -4613,9 +5925,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 488.70703125,
+                      "left": 106.98046875,
                       "position": "absolute",
-                      "top": 312,
+                      "top": 364,
                     },
                     Object {
                       "color": "#000000",
@@ -4634,9 +5946,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 635.9765625,
+                      "left": 254.25,
                       "position": "absolute",
-                      "top": 312,
+                      "top": 364,
                     },
                     Object {
                       "color": "#000000",
@@ -4655,7 +5967,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 0,
+                      "left": 348.2578125,
                       "position": "absolute",
                       "top": 364,
                     },
@@ -4676,7 +5988,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 145.1953125,
+                      "left": 493.453125,
                       "position": "absolute",
                       "top": 364,
                     },
@@ -4697,7 +6009,7 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 213.85546875,
+                      "left": 562.11328125,
                       "position": "absolute",
                       "top": 364,
                     },
@@ -4718,9 +6030,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 335.77734375,
+                      "left": 0,
                       "position": "absolute",
-                      "top": 364,
+                      "top": 416,
                     },
                     Object {
                       "color": "#000000",
@@ -4739,9 +6051,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 451.86328125,
+                      "left": 116.0859375,
                       "position": "absolute",
-                      "top": 364,
+                      "top": 416,
                     },
                     Object {
                       "color": "#000000",
@@ -4760,9 +6072,9 @@ exports[`18. an article with inline paragraph 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 550.494140625,
+                      "left": 214.716796875,
                       "position": "absolute",
-                      "top": 364,
+                      "top": 416,
                     },
                     Object {
                       "color": "#000000",
