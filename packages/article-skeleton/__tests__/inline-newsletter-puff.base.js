@@ -1,10 +1,10 @@
 import React from "react";
 import { create } from "react-test-renderer";
-import wait from "waait";
 
+import { delay } from "@times-components/test-utils";
 import { MockedProvider } from "@times-components/provider-test-tools";
-
 import Button from "@times-components/button";
+
 import InlineNewsletterPuff from "../src/article-body/inline-newsletter-puff";
 
 import {
@@ -67,7 +67,7 @@ export default () => {
     it("renders signup state", async () => {
       const component = renderComponent();
 
-      await wait(0);
+      await delay(0);
 
       expect(component).toMatchSnapshot();
     });
@@ -93,7 +93,7 @@ export default () => {
         }
       ]);
 
-      await wait(0);
+      await delay(0);
 
       expect(component).toMatchSnapshot();
     });
@@ -101,7 +101,7 @@ export default () => {
     it("renders signup view when not already subscribed", async () => {
       const component = renderComponent();
 
-      await wait(0);
+      await delay(0);
 
       expect(component).toMatchSnapshot();
     });
@@ -109,7 +109,7 @@ export default () => {
     it("renders 'saving' when the button is clicked", async () => {
       const component = renderComponent();
 
-      await wait(0);
+      await delay(0);
 
       component.root.findByType(Button).props.onPress();
 
@@ -154,11 +154,11 @@ export default () => {
         }
       ]);
 
-      await wait(0);
+      await delay(0);
 
       component.root.findByType(Button).props.onPress();
 
-      await wait(3);
+      await delay(3);
 
       expect(component).toMatchSnapshot();
     });
