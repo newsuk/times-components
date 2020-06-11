@@ -25,7 +25,8 @@ import NewsletterPuffLink from "./newsletter-puff-link";
 
 function onManagePreferencesPress() {
   if (Platform.OS !== "web") {
-    Linking.canOpenURL("https://home.thetimes.co.uk/myNews")
+    const url = "https://home.thetimes.co.uk/myNews";
+    Linking.canOpenURL(url)
       .then(supported => {
         if (!supported) {
           return console.error("Cant open url", url); // eslint-disable-line no-console
@@ -56,9 +57,6 @@ const InlineNewsletterPuff = ({
     <GetNewsletter variables={{ code }} ssr={false} debounceTimeMs={0}>
       {({ loading, data, error }) => {
         if (error) {
-          console.log("errorrrrrrrrr");
-          console.log(error);
-          console.log("errorrrrrrrrr");
           return null;
         }
 
@@ -73,8 +71,6 @@ const InlineNewsletterPuff = ({
         const { newsletter } = data;
 
         if (newsletter.isSubscribed && !justSubscribed) {
-          console.log("isSubscribed");
-          console.log("isSubscribed");
           return null;
         }
 
@@ -138,7 +134,7 @@ const InlineNewsletterPuff = ({
 export default InlineNewsletterPuff;
 
 InlineNewsletterPuff.propTypes = {
-  analyticsStream: PropTypes.func,
+  analyticsStream: PropTypes.func.isRequired,
   code: PropTypes.string.isRequired,
   copy: PropTypes.string.isRequired,
   headline: PropTypes.string.isRequired,
