@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Platform } from "react-native";
+import { Linking, Platform } from "react-native";
+import { Mutation } from "react-apollo";
 import PropTypes from "prop-types";
 
-import { Query, Mutation } from "react-apollo";
-
+import { GetNewsletter } from "@times-components/provider";
+import { subscribeNewsletter } from "@times-components/provider-queries";
 import Image, { Placeholder } from "@times-components/image";
-import InteractiveWrapper from "@times-components/interactive-wrapper";
+
 import {
   InpContainer,
   InpCopy,
@@ -19,13 +20,19 @@ import {
   InpSubscribedCopy,
   InpSubscribedHeadline
 } from "../styles/inline-newsletter-puff";
-import { GET_NEWSLETTER, SUBSCRIBE_NEWSLETTER } from "./newsletter-gql-queries";
 import NewsletterPuffButton from "./newsletter-puff-button";
 import NewsletterPuffLink from "./newsletter-puff-link";
 
 function onManagePreferencesPress() {
   if (Platform.OS !== "web") {
-    InteractiveWrapper.openURLInBrowser("https://home.thetimes.co.uk/myNews");
+    Linking.canOpenURL("https://home.thetimes.co.uk/myNews")
+      .then(supported => {
+        if (!supported) {
+          return console.error("Cant open url", url); // eslint-disable-line no-console
+        }
+        return Linking.openURL(url);
+      })
+      .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
   }
 }
 
@@ -46,9 +53,12 @@ const InlineNewsletterPuff = ({
   const [justSubscribed, setJustSubscribed] = useState(false);
 
   return (
-    <Query query={GET_NEWSLETTER} variables={{ code }} ssr={false}>
+    <GetNewsletter variables={{ code }} ssr={false} debounceTimeMs={0}>
       {({ loading, data, error }) => {
         if (error) {
+          console.log("errorrrrrrrrr");
+          console.log(error);
+          console.log("errorrrrrrrrr");
           return null;
         }
 
@@ -63,12 +73,14 @@ const InlineNewsletterPuff = ({
         const { newsletter } = data;
 
         if (newsletter.isSubscribed && !justSubscribed) {
+          console.log("isSubscribed");
+          console.log("isSubscribed");
           return null;
         }
 
         return (
           <Mutation
-            mutation={SUBSCRIBE_NEWSLETTER}
+            mutation={subscribeNewsletter}
             onCompleted={({ subscribeNewsletter = {} }) => {
               setJustSubscribed(subscribeNewsletter.isSubscribed);
             }}
@@ -119,14 +131,14 @@ const InlineNewsletterPuff = ({
           </Mutation>
         );
       }}
-    </Query>
+    </GetNewsletter>
   );
 };
 
 export default InlineNewsletterPuff;
 
 InlineNewsletterPuff.propTypes = {
-  analyticsStream: PropTypes.func.isRequired,
+  analyticsStream: PropTypes.func,
   code: PropTypes.string.isRequired,
   copy: PropTypes.string.isRequired,
   headline: PropTypes.string.isRequired,
