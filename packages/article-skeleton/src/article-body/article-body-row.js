@@ -242,16 +242,18 @@ export default ({
         );
       }
       if (element && element.value === "newsletter-puff") {
-        const { attributes } = element;
+        const {
+          attributes: { code, copy, headline, imageUri, label }
+        } = element;
         return (
           <InlineNewsletterPuff
             analyticsStream={analyticsStream}
             key={key}
-            code={attributes.code}
-            copy={decodeURIComponent(attributes.copy)}
-            headline={decodeURIComponent(attributes.headline)}
-            imageUri={attributes.imageUri}
-            label={decodeURIComponent(attributes.label)}
+            code={code}
+            copy={decodeURIComponent(copy)}
+            headline={decodeURIComponent(headline)}
+            imageUri={imageUri}
+            label={decodeURIComponent(label)}
           />
         );
       }

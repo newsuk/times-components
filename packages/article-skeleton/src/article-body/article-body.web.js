@@ -108,7 +108,11 @@ const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
     );
   },
   interactive(key, { url, element, display }) {
-    const { attributes, value } = element;
+    const {
+      attributes: { code, copy, headline, imageUri, label },
+      attributes,
+      value
+    } = element;
 
     switch (value) {
       case "newsletter-puff": {
@@ -116,11 +120,11 @@ const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
           <InlineNewsletterPuff
             analyticsStream={analyticsStream}
             key={key}
-            code={attributes.code}
-            copy={decodeURIComponent(attributes.copy)}
-            headline={decodeURIComponent(attributes.headline)}
-            imageUri={attributes.imageUri}
-            label={decodeURIComponent(attributes.label)}
+            code={code}
+            copy={decodeURIComponent(copy)}
+            headline={decodeURIComponent(headline)}
+            imageUri={imageUri}
+            label={decodeURIComponent(label)}
           />
         );
       }
