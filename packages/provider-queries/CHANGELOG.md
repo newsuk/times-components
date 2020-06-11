@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.13.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.13.0...@times-components/provider-queries@2.13.1) (2020-06-11)
+
+
+### Bug Fixes
+
+* author page error ([#2613](https://github.com/newsuk/times-components/issues/2613)) ([7f614c4](https://github.com/newsuk/times-components/commit/7f614c4d41856c12aa4fb85bc28730bb7d1654bf))
+
+
+
+
+
 # [2.13.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.12.2...@times-components/provider-queries@2.13.0) (2020-05-12)
 
 
