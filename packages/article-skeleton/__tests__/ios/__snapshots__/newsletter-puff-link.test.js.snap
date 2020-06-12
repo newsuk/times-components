@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsletterPuffLink renders the link with the text \`Manage preferences here\` 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    className="inline-newsletter-puff__InpPreferencesView-sc-13hmjc-13 iRumcp"
+  >
+    <Text
+      className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-11 bEnqSP"
+    >
+      Manage preferences here
+    </Text>
+    <View
+      className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-12 fJlAxF"
+    >
+      <ARTSurfaceView
+        style={
+          Array [
+            undefined,
+            Object {
+              "height": 14,
+              "width": 7,
+            },
+          ]
+        }
+      >
+        <ARTGroup
+          opacity={1}
+          transform={
+            Array [
+              0.11666666666666667,
+              0,
+              0,
+              0.11666666666666667,
+              -4.9,
+              -1.4,
+            ]
+          }
+        >
+          <ARTGroup
+            opacity={1}
+            transform={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+          >
+            <ARTShape
+              d={
+                Array [
+                  0,
+                  45.8,
+                  132,
+                  2,
+                  42,
+                  128.2,
+                  2,
+                  74.8,
+                  72,
+                  2,
+                  42,
+                  15.8,
+                  2,
+                  45.8,
+                  12,
+                  2,
+                  102,
+                  72,
+                  1,
+                ]
+              }
+              fill={
+                Array [
+                  0,
+                  0,
+                  0.4,
+                  0.6,
+                  1,
+                ]
+              }
+              opacity={1}
+              stroke={null}
+              strokeCap={1}
+              strokeDash={null}
+              strokeJoin={1}
+              strokeWidth={1}
+              transform={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+            />
+          </ARTGroup>
+        </ARTGroup>
+      </ARTSurfaceView>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`NewsletterPuffLink should track link viewed and clicked in analytics 1`] = `
+Object {
+  "0": Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "eventTime": "2018-01-01T00:00:00.000Z",
+      },
+      "component": "Page",
+      "object": "NewsletterPuffLink",
+    },
+  ],
+  "1": Array [
+    Object {
+      "action": "onPress",
+      "attrs": Object {
+        "eventTime": "2018-01-01T00:00:00.000Z",
+      },
+      "component": "widget : puff : manage preferences here",
+      "object": "NewsletterPuffLink",
+    },
+  ],
+}
+`;
+
+exports[`NewsletterPuffLink should track link viewed in analytics 1`] = `
+Object {
+  "0": Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "eventTime": "2018-01-01T00:00:00.000Z",
+      },
+      "component": "Page",
+      "object": "NewsletterPuffLink",
+    },
+  ],
+}
+`;

@@ -1,91 +1,133 @@
-import React from "react";
-import { Platform } from "react-native";
+import React, { useState } from "react";
+import { Linking, Platform } from "react-native";
+import { Mutation } from "react-apollo";
 import PropTypes from "prop-types";
 
-import Image from "@times-components/image";
-import InteractiveWrapper from "@times-components/interactive-wrapper";
-import { IconForwardArrow } from "@times-components/icons";
-import Link from "@times-components/link";
-import { colours } from "@times-components/styleguide";
+import { GetNewsletter } from "@times-components/provider";
+import { subscribeNewsletter as subscribeNewsletterMutation } from "@times-components/provider-queries";
+import Image, { Placeholder } from "@times-components/image";
+
 import {
   InpContainer,
   InpCopy,
-  InpIconContainer,
   InpImageContainer,
   InpPreferencesContainer,
-  InpPreferencesText,
-  InpSignup,
   InpSignupContainer,
   InpSignupCTAContainer,
   InpSignupHeadline,
   InpSignupLabel,
-  InpSignupText,
-  InpSubcribedCopy,
-  InpSubcribedHeadline,
-  InpSubscribedContainer
+  InpSubscribedContainer,
+  InpSubscribedCopy,
+  InpSubscribedHeadline
 } from "../styles/inline-newsletter-puff";
+import NewsletterPuffButton from "./newsletter-puff-button";
+import NewsletterPuffLink from "./newsletter-puff-link";
 
-function onSignUpClick() {
+function onManagePreferencesPress() {
   if (Platform.OS !== "web") {
-    InteractiveWrapper.openURLInBrowser("https://home.thetimes.co.uk/myNews");
+    const url = "https://home.thetimes.co.uk/myNews";
+    Linking.canOpenURL(url)
+      .then(supported => {
+        if (!supported) {
+          return console.error("Cant open url", url); // eslint-disable-line no-console
+        }
+        return Linking.openURL(url);
+      })
+      .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
   }
 }
 
 const InlineNewsletterPuff = ({
-  label,
-  headline,
+  analyticsStream,
+  code,
   copy,
-  isSubscribedToNewsletter
-}) => (
-  <InpContainer>
-    <InpImageContainer>
-      <Image
-        aspectRatio={1.42}
-        uri="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
-      />
-    </InpImageContainer>
-    {isSubscribedToNewsletter ? (
-      <InpSubscribedContainer>
-        <InpSubcribedHeadline>
-          You’ve successfully signed up
-        </InpSubcribedHeadline>
-        <InpSubcribedCopy>
-          Congratulations you can now enjoy daily updates from Red Box.
-        </InpSubcribedCopy>
-        <InpPreferencesContainer>
-          <InpPreferencesText>
-            Manage preferences here
-            <InpIconContainer>
-              <IconForwardArrow fillColour={colours.functional.action} />
-            </InpIconContainer>
-          </InpPreferencesText>
-        </InpPreferencesContainer>
-      </InpSubscribedContainer>
-    ) : (
-      <InpSignupContainer>
-        <InpSignupLabel>{label}</InpSignupLabel>
-        <InpSignupHeadline>{headline}</InpSignupHeadline>
-        <InpCopy>{copy}</InpCopy>
-        <InpSignupCTAContainer>
-          <Link
-            url="https://home.thetimes.co.uk/myNews"
-            onPress={onSignUpClick}
-          >
-            <InpSignup>
-              <InpSignupText>Sign up to newsletter</InpSignupText>
-            </InpSignup>
-          </Link>
-        </InpSignupCTAContainer>
-      </InpSignupContainer>
-    )}
-  </InpContainer>
-);
+  headline,
+  imageUri,
+  label
+}) => {
+  const [justSubscribed, setJustSubscribed] = useState(false);
 
-InlineNewsletterPuff.propTypes = {
-  label: PropTypes.string.isRequired,
-  headline: PropTypes.string.isRequired,
-  copy: PropTypes.string.isRequired,
-  isSubscribedToNewsletter: PropTypes.bool.isRequired
+  return (
+    <GetNewsletter code={code} ssr={false} debounceTimeMs={0}>
+      {({ isLoading, error, newsletter }) => {
+        if (error) {
+          return null;
+        }
+
+        if (isLoading || !newsletter) {
+          return (
+            <InpContainer style={{ height: 257 }}>
+              <Placeholder />
+            </InpContainer>
+          );
+        }
+
+        if (newsletter.isSubscribed && !justSubscribed) {
+          return null;
+        }
+
+        return (
+          <Mutation
+            mutation={subscribeNewsletterMutation}
+            onCompleted={({ subscribeNewsletter = {} }) => {
+              setJustSubscribed(subscribeNewsletter.isSubscribed);
+            }}
+          >
+            {(subscribeNewsletter, { loading: updatingSubscription }) => (
+              <InpContainer>
+                <InpImageContainer>
+                  <Image aspectRatio={1.42} uri={imageUri} />
+                </InpImageContainer>
+                {justSubscribed ? (
+                  <InpSubscribedContainer>
+                    <InpSubscribedHeadline>
+                      You’ve successfully signed up
+                    </InpSubscribedHeadline>
+                    <InpSubscribedCopy>
+                      Congratulations you can now enjoy daily updates from Red
+                      Box.
+                    </InpSubscribedCopy>
+                    <InpPreferencesContainer>
+                      <NewsletterPuffLink
+                        analyticsStream={analyticsStream}
+                        onPress={() => onManagePreferencesPress()}
+                      />
+                    </InpPreferencesContainer>
+                  </InpSubscribedContainer>
+                ) : (
+                  <InpSignupContainer>
+                    <InpSignupLabel>{label}</InpSignupLabel>
+                    <InpSignupHeadline>{headline}</InpSignupHeadline>
+                    <InpCopy>{copy}</InpCopy>
+                    <InpSignupCTAContainer>
+                      <NewsletterPuffButton
+                        analyticsStream={analyticsStream}
+                        updatingSubscription={updatingSubscription}
+                        onPress={() => {
+                          if (!updatingSubscription) {
+                            subscribeNewsletter({ variables: { code } });
+                          }
+                        }}
+                      />
+                    </InpSignupCTAContainer>
+                  </InpSignupContainer>
+                )}
+              </InpContainer>
+            )}
+          </Mutation>
+        );
+      }}
+    </GetNewsletter>
+  );
 };
 
 export default InlineNewsletterPuff;
+
+InlineNewsletterPuff.propTypes = {
+  analyticsStream: PropTypes.func.isRequired,
+  code: PropTypes.string.isRequired,
+  copy: PropTypes.string.isRequired,
+  headline: PropTypes.string.isRequired,
+  imageUri: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired
+};

@@ -30,7 +30,8 @@ export default ({
   images = [],
   dropcapsDisabled,
   dropCapFont = "dropCap",
-  scale
+  scale,
+  analyticsStream
 }) => {
   const styles = styleFactory(scale);
   const { fontFactory } = styleguide({ scale });
@@ -241,21 +242,18 @@ export default ({
         );
       }
       if (element && element.value === "newsletter-puff") {
-        const copy = decodeURIComponent(element.attributes.copy);
-        const label = decodeURIComponent(element.attributes.label);
-        const headline = decodeURIComponent(element.attributes.headline);
-
+        const {
+          attributes: { code, copy, headline, imageUri, label }
+        } = element;
         return (
           <InlineNewsletterPuff
-            // When the GeaphQL service is ready newsletterId will be passed as prop
-            // and with that we are going to check it the user is subscribed to
-            // this newsletter or not
-            isSubscribedToNewsletter={false}
-            newsletterId={element.attributes.newsletterId}
+            analyticsStream={analyticsStream}
             key={key}
-            label={label}
-            headline={headline}
-            copy={copy}
+            code={code}
+            copy={decodeURIComponent(copy)}
+            headline={decodeURIComponent(headline)}
+            imageUri={imageUri}
+            label={decodeURIComponent(label)}
           />
         );
       }

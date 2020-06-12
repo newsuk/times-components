@@ -50,7 +50,7 @@
     "enzyme": "3.9.0",
     "eslint": "5.9.0",
     "graphql": "14.2.1",
-    "graphql-tag": "2.10.1",
+    "graphql-tag": "2.10.3",
     "jest": "24.8.0",
     "lodash.omit": "4.4.0",
     "prettier": "1.14.3",
@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "@times-components/provider-queries": "2.13.1",
-    "graphql-tag": "2.10.1",
+    "graphql-tag": "2.10.3",
     "hoist-non-react-statics": "2.5.5",
     "lodash.isequal": "4.4.0",
     "lodash.pick": "4.4.0",

@@ -62,7 +62,7 @@ const highResSizeCalc = (observed, key, template) => {
   return indepthRetinaScreenWidth || screenWidth;
 };
 
-const renderers = ({ paidContentClassName, template }) => ({
+const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
   ...coreRenderers,
   ad(key) {
     return <AdContainer key={key} slotName="inline-ad" style={styles.ad} />;
@@ -108,24 +108,23 @@ const renderers = ({ paidContentClassName, template }) => ({
     );
   },
   interactive(key, { url, element, display }) {
-    const { attributes, value } = element;
+    const {
+      attributes: { code, copy, headline, imageUri, label },
+      attributes,
+      value
+    } = element;
 
     switch (value) {
       case "newsletter-puff": {
-        const copy = decodeURIComponent(attributes.copy);
-        const label = decodeURIComponent(attributes.label);
-        const headline = decodeURIComponent(attributes.headline);
         return (
           <InlineNewsletterPuff
+            analyticsStream={analyticsStream}
             key={key}
-            // When the GeaphQL service is ready newsletterId will be passed as prop
-            // and with that we are going to check it the user is subscribed to
-            // this newsletter or not
-            newsletterId={attributes.newsletterId}
-            isSubscribedToNewsletter={false}
-            copy={copy}
-            label={label}
-            headline={headline}
+            code={code}
+            copy={decodeURIComponent(copy)}
+            headline={decodeURIComponent(headline)}
+            imageUri={imageUri}
+            label={decodeURIComponent(label)}
           />
         );
       }

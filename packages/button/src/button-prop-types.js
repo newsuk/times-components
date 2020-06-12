@@ -1,4 +1,4 @@
-import { ViewPropTypes } from "react-native";
+import { ViewPropTypes, Text } from "react-native";
 import PropTypes from "prop-types";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;
@@ -8,12 +8,16 @@ export const propTypes = {
   lineHeight: PropTypes.number,
   onPress: PropTypes.func.isRequired,
   style: ViewPropTypesStyle,
-  title: PropTypes.string
+  title: PropTypes.string,
+  textStyle: Text.propTypes.style,
+  underlayColor: PropTypes.string
 };
 
 export const defaultProps = {
   fontSize: null,
   lineHeight: null,
   style: null,
-  title: "Submit"
+  textStyle: null,
+  title: "Submit",
+  underlayColor: null
 };

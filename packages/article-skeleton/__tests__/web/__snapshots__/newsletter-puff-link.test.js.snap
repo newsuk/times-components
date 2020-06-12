@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsletterPuffLink renders the link with the text \`Manage preferences here\` 1`] = `
+<a
+  className="linkweb__RespLink-yfb9n-0 cCCShB"
+  href="https://home.thetimes.co.uk/myNews"
+  onClick={[Function]}
+  target={null}
+>
+  <div
+    className="inline-newsletter-puff__InpPreferencesView-sc-13hmjc-13 iRumcp inline-newsletter-puff__InpPreferencesView-sc-13hmjc-13 iRumcp css-view-1dbjc4n"
+  >
+    <div
+      className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-11 bEnqSP inline-newsletter-puff__InpPreferencesText-sc-13hmjc-11 bEnqSP css-text-901oao"
+      dir="auto"
+    >
+      Manage preferences here
+    </div>
+    <div
+      className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-12 fJlAxF inline-newsletter-puff__InpIconContainer-sc-13hmjc-12 fJlAxF css-view-1dbjc4n"
+    >
+      <svg
+        aria-label="icon-forward-arrow"
+        height={12}
+        style={Object {}}
+        viewBox="42 12 60 120"
+        width={7}
+      >
+        <g
+          fill="#006699"
+          style={Object {}}
+        >
+          <path
+            d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+            style={Object {}}
+          />
+        </g>
+      </svg>
+    </div>
+  </div>
+</a>
+`;
+
+exports[`NewsletterPuffLink should track link viewed and clicked in analytics 1`] = `
+Object {
+  "0": Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "eventTime": "2018-01-01T00:00:00.000Z",
+      },
+      "component": "Page",
+      "object": "NewsletterPuffLink",
+    },
+  ],
+  "1": Array [
+    Object {
+      "action": "onPress",
+      "attrs": Object {
+        "eventTime": "2018-01-01T00:00:00.000Z",
+      },
+      "component": "widget : puff : manage preferences here",
+      "object": "NewsletterPuffLink",
+    },
+  ],
+}
+`;
+
+exports[`NewsletterPuffLink should track link viewed in analytics 1`] = `
+Object {
+  "0": Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "eventTime": "2018-01-01T00:00:00.000Z",
+      },
+      "component": "Page",
+      "object": "NewsletterPuffLink",
+    },
+  ],
+}
+`;

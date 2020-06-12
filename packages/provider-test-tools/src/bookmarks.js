@@ -104,13 +104,17 @@ class MockBookmarksProvider extends Component {
 
   render() {
     const { mocks } = this.state;
-    const { children } = this.props;
+    const { children, otherMocks = [] } = this.props;
 
     if (!mocks.length) {
       return null;
     }
 
-    return <MockedProvider mocks={mocks}>{children}</MockedProvider>;
+    return (
+      <MockedProvider mocks={[...mocks, ...otherMocks]}>
+        {children}
+      </MockedProvider>
+    );
   }
 }
 

@@ -8,9 +8,51 @@ import { ContextProviderWithDefaults } from "@times-components/context";
 import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
-
+import {
+  getNewsletter,
+  subscribeNewsletter
+} from "@times-components/provider-queries";
 import fullArticleFixture from "./fixtures/full-article";
 import ArticleSkeleton from "./src/article-skeleton";
+
+const mocks = [
+  {
+    request: {
+      query: getNewsletter,
+      variables: {
+        code: "TNL-119"
+      }
+    },
+    result: {
+      data: {
+        newsletter: {
+          id: "a2l6E000000CdHzQAK",
+          isSubscribed: false,
+          __typename: "Newsletter"
+        }
+      }
+    },
+    delay: 2000
+  },
+  {
+    request: {
+      query: subscribeNewsletter,
+      variables: {
+        code: "TNL-119"
+      }
+    },
+    result: {
+      data: {
+        subscribeNewsletter: {
+          id: "a2l6E000000CdHzQAK",
+          isSubscribed: true,
+          __typename: "Newsletter"
+        }
+      }
+    },
+    delay: 2000
+  }
+];
 
 const TestHeader = () => (
   <View
@@ -18,7 +60,7 @@ const TestHeader = () => (
       alignItems: "center",
       borderColor: "#66666",
       borderWidth: 1,
-      justfyContent: "center",
+      justifyContent: "center",
       margin: 20,
       padding: 20
     }}
@@ -61,7 +103,7 @@ const renderArticleSkeleton = ({
   const showHeader = header ? () => <TestHeader /> : () => null;
 
   return (
-    <MockBookmarksProvider delay={1000} articleId={data.id}>
+    <MockBookmarksProvider otherMocks={mocks} delay={1000} articleId={data.id}>
       <ContextProviderWithDefaults value={{ theme: { scale, sectionColour } }}>
         <ArticleSkeleton
           adConfig={articleAdConfig}

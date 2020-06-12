@@ -41,7 +41,7 @@ export const InpSubscribedContainer = styled(View)`
   }
 `;
 
-export const InpSubcribedHeadline = styled(Text)`
+export const InpSubscribedHeadline = styled(Text)`
   color: ${colours.functional.brandColour};
   font-family: ${fonts.headline};
   text-align: center;
@@ -50,7 +50,7 @@ export const InpSubcribedHeadline = styled(Text)`
   margin-bottom: ${spacing(2)};
 `;
 
-export const InpSubcribedCopy = styled(Text)`
+export const InpSubscribedCopy = styled(Text)`
   font-family: ${fonts.body};
   font-size: ${fontSizes.newsletterPuffCopy}px;
   text-align: center;
@@ -108,22 +108,6 @@ export const InpSignupCTAContainer = styled(View)`
   }
 `;
 
-export const InpSignup = styled(View)`
-  border-width: 2px;
-  border-style: solid;
-  border-color: ${colours.functional.brandColour};
-  font-family: ${fonts.supporting};
-  letter-spacing: 0.2;
-  height: 45px;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const InpSignupText = styled(Text)`
-  font-size: ${fontSizes.newsletterPuffCopy}px;
-  font-family: ${fonts.supporting};
-`;
-
 export const InpPreferencesContainer = styled(View)`
   flex-direction: row;
   justify-content: center;
@@ -134,6 +118,30 @@ export const InpPreferencesText = styled(Text)`
 `;
 
 export const InpIconContainer = styled(View)`
-  padding-left: 5px;
-  padding-top: 6px;
+  padding-left: 8px;
+  margin: auto;
 `;
+
+export const InpPreferencesView = styled(View)`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const buttonStyles = {
+  alignItems: "center",
+  backgroundColor: "transparent",
+  borderColor: colours.functional.brandColour,
+  borderStyle: "solid",
+  borderWidth: 2,
+  color: colours.functional.brandColour,
+  elevation: 0,
+  fontFamily: fonts.supporting,
+  height: 45,
+  justifyContent: "center",
+  letterSpacing: 0.2,
+  width: "100%"
+};
+
+export const textStyle = {
+  color: colours.functional.brandColour
+};
