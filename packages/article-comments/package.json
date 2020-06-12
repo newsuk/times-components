@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-comments",
-  "version": "0.6.35",
+  "version": "0.6.36",
   "description": "Article Comments",
   "main": "dist/article-comments",
   "dev": "src/article-comments",
@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/button": "2.4.50",
+    "@times-components/button": "2.4.51",
     "@times-components/context": "1.2.16",
     "@times-components/link": "3.6.31",
     "@times-components/styleguide": "3.38.9",
