@@ -18,7 +18,7 @@ const Button = ({
   const fontSizeStyle = fontSize ? { fontSize } : null;
   const lineHeightStyle = lineHeight ? { lineHeight } : null;
   const underlayColorStyle = underlayColor
-    ? { underlayColor }
+    ? underlayColor
     : colours.functional.actionPressed;
   return (
     <TouchableHighlight
