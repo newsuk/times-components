@@ -5,9 +5,11 @@ import { delay } from "@times-components/test-utils";
 import { MockedProvider } from "@times-components/provider-test-tools";
 import Button from "@times-components/button";
 
+import {
+  getNewsletter,
+  subscribeNewsletter
+} from "@times-components/provider-queries";
 import InlineNewsletterPuff from "../src/article-body/inline-newsletter-puff";
-
-import { getNewsletter,subscribeNewsletter } from "@times-components/provider-queries";
 
 jest.mock("@times-components/image", () => ({
   __esModule: true,

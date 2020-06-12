@@ -8,11 +8,12 @@ import { ContextProviderWithDefaults } from "@times-components/context";
 import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
-
+import {
+  getNewsletter,
+  subscribeNewsletter
+} from "@times-components/provider-queries";
 import fullArticleFixture from "./fixtures/full-article";
 import ArticleSkeleton from "./src/article-skeleton";
-
-import { getNewsletter,subscribeNewsletter } from "@times-components/provider-queries";
 
 const mocks = [
   {
