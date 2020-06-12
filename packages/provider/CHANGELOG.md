@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.22.15](https://github.com/newsuk/times-components/compare/@times-components/provider@1.22.14...@times-components/provider@1.22.15) (2020-06-11)
+
+
+### Bug Fixes
+
+* author page error ([#2613](https://github.com/newsuk/times-components/issues/2613)) ([7f614c4](https://github.com/newsuk/times-components/commit/7f614c4d41856c12aa4fb85bc28730bb7d1654bf))
+
+
+
+
+
 ## [1.22.14](https://github.com/newsuk/times-components/compare/@times-components/provider@1.22.13...@times-components/provider@1.22.14) (2020-05-14)
 
 
