@@ -12,15 +12,12 @@ import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import fullArticleFixture from "./fixtures/full-article";
 import ArticleSkeleton from "./src/article-skeleton";
 
-import {
-  GET_NEWSLETTER,
-  SUBSCRIBE_NEWSLETTER
-} from "./src/article-body/newsletter-gql-queries";
+import { getNewsletter,subscribeNewsletter } from "@times-components/provider-queries";
 
 const mocks = [
   {
     request: {
-      query: GET_NEWSLETTER,
+      query: getNewsletter,
       variables: {
         code: "TNL-119"
       }
@@ -38,7 +35,7 @@ const mocks = [
   },
   {
     request: {
-      query: SUBSCRIBE_NEWSLETTER,
+      query: subscribeNewsletter,
       variables: {
         code: "TNL-119"
       }
