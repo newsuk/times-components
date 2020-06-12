@@ -4,7 +4,7 @@ import { Mutation } from "react-apollo";
 import PropTypes from "prop-types";
 
 import { GetNewsletter } from "@times-components/provider";
-import { subscribeNewsletter } from "@times-components/provider-queries";
+import { subscribeNewsletter as subscribeNewsletterMutation } from "@times-components/provider-queries";
 import Image, { Placeholder } from "@times-components/image";
 
 import {
@@ -37,12 +37,6 @@ function onManagePreferencesPress() {
   }
 }
 
-function onPressButton(subscribeNewsletter, updatingSubscription, code) {
-  if (!updatingSubscription) {
-    subscribeNewsletter({ variables: { code } });
-  }
-}
-
 const InlineNewsletterPuff = ({
   analyticsStream,
   code,
@@ -54,13 +48,13 @@ const InlineNewsletterPuff = ({
   const [justSubscribed, setJustSubscribed] = useState(false);
 
   return (
-    <GetNewsletter variables={{ code }} ssr={false} debounceTimeMs={0}>
-      {({ loading, data, error }) => {
+    <GetNewsletter code={code} ssr={false} debounceTimeMs={0}>
+      {({ isLoading, error, newsletter }) => {
         if (error) {
           return null;
         }
 
-        if (loading || !data || !data.newsletter) {
+        if (isLoading || !newsletter) {
           return (
             <InpContainer style={{ height: 257 }}>
               <Placeholder />
@@ -68,15 +62,13 @@ const InlineNewsletterPuff = ({
           );
         }
 
-        const { newsletter } = data;
-
         if (newsletter.isSubscribed && !justSubscribed) {
           return null;
         }
 
         return (
           <Mutation
-            mutation={subscribeNewsletter}
+            mutation={subscribeNewsletterMutation}
             onCompleted={({ subscribeNewsletter = {} }) => {
               setJustSubscribed(subscribeNewsletter.isSubscribed);
             }}
@@ -111,13 +103,11 @@ const InlineNewsletterPuff = ({
                       <NewsletterPuffButton
                         analyticsStream={analyticsStream}
                         updatingSubscription={updatingSubscription}
-                        onPress={() =>
-                          onPressButton(
-                            subscribeNewsletter,
-                            updatingSubscription,
-                            code
-                          )
-                        }
+                        onPress={() => {
+                          if (!updatingSubscription) {
+                            subscribeNewsletter({ variables: { code } });
+                          }
+                        }}
                       />
                     </InpSignupCTAContainer>
                   </InpSignupContainer>
