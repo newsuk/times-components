@@ -17,9 +17,7 @@ const Button = ({
   const transformedTitle = capitalise(title);
   const fontSizeStyle = fontSize ? { fontSize } : null;
   const lineHeightStyle = lineHeight ? { lineHeight } : null;
-  const underlayColorStyle = underlayColor
-    ? underlayColor
-    : colours.functional.actionPressed;
+  const underlayColorStyle = underlayColor || colours.functional.actionPressed;
   return (
     <TouchableHighlight
       accessibilityComponentType="button"
