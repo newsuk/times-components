@@ -7,10 +7,7 @@ import Button from "@times-components/button";
 
 import InlineNewsletterPuff from "../src/article-body/inline-newsletter-puff";
 
-import {
-  GET_NEWSLETTER,
-  SUBSCRIBE_NEWSLETTER
-} from "../src/article-body/newsletter-gql-queries";
+import { getNewsletter,subscribeNewsletter } from "@times-components/provider-queries";
 
 jest.mock("@times-components/image", () => ({
   __esModule: true,
@@ -22,7 +19,7 @@ const renderComponent = (
   mocks = [
     {
       request: {
-        query: GET_NEWSLETTER,
+        query: getNewsletter,
         variables: {
           code: "TNL-119"
         }
@@ -76,7 +73,7 @@ export default () => {
       const component = renderComponent([
         {
           request: {
-            query: GET_NEWSLETTER,
+            query: getNewsletter,
             variables: {
               code: "TNL-119"
             }
@@ -120,7 +117,7 @@ export default () => {
       const component = renderComponent([
         {
           request: {
-            query: GET_NEWSLETTER,
+            query: getNewsletter,
             variables: {
               code: "TNL-119"
             }
@@ -137,7 +134,7 @@ export default () => {
         },
         {
           request: {
-            query: SUBSCRIBE_NEWSLETTER,
+            query: subscribeNewsletter,
             variables: {
               code: "TNL-119"
             }
