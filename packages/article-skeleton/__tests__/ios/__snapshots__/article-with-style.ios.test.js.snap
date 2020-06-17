@@ -1616,85 +1616,7 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
 </View>
 `;
 
-exports[`12. an article with text wrapped in inline element 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#f0f0f0",
-    }
-  }
->
-  <RCTScrollView>
-    <View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "backgroundColor": "#ffffff",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "width": undefined,
-              }
-            }
-          >
-            <ArticleExtras />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
-          }
-        >
-          <ActivityIndicator />
-        </View>
-      </View>
-    </View>
-  </RCTScrollView>
-</View>
-`;
-
-exports[`14. an article starting with single quote 1`] = `
+exports[`12. an article starting with single quote 1`] = `
 <View
   style={
     Object {
@@ -2145,7 +2067,7 @@ exports[`14. an article starting with single quote 1`] = `
 </View>
 `;
 
-exports[`15. an article starting with double quote 1`] = `
+exports[`13. an article starting with double quote 1`] = `
 <View
   style={
     Object {
@@ -2596,7 +2518,7 @@ exports[`15. an article starting with double quote 1`] = `
 </View>
 `;
 
-exports[`16. an article skeleton with responsive items 1`] = `
+exports[`14. an article skeleton with responsive items 1`] = `
 <View
   style={
     Object {
