@@ -52,7 +52,7 @@ class InteractiveWrapper extends Component {
   }
 
   onLoadEnd() {
-    this.webview.postMessage("thetimes.co.uk", "*");
+    this.webview && this.webview.postMessage("thetimes.co.uk", "*");
   }
 
   // eslint-disable-next-line class-methods-use-this

@@ -533,18 +533,6 @@ export const snapshotTests = renderComponent => [
     }
   },
   {
-    name: "an article with paragraph with text and inline element",
-    test() {
-      const article = articleFixture({
-        ...fixtureArgs,
-        content: paragraphWithTextAndInlineMarkup
-      });
-      const output = renderComponent(renderArticle(article));
-
-      expect(output).toMatchSnapshot();
-    }
-  },
-  {
     name: "an article with inline inside a bold tag",
     test() {
       const article = articleFixture({

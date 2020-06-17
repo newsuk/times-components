@@ -16,8 +16,7 @@ import shared from "./shared.base";
 import ArticleSkeleton from "../src/article-skeleton";
 import articleFixture, {
   testFixture,
-  longContent,
-  contentWithItalicText
+  longContent
 } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleSkeletonProps from "./shared-article-skeleton-props";
@@ -168,16 +167,6 @@ export default () => {
       test() {
         const testInstance = TestRenderer.create(
           renderArticleContent(longContent)
-        );
-
-        expect(testInstance.toJSON()).toMatchSnapshot();
-      }
-    },
-    {
-      name: "an article with inline paragraph",
-      test() {
-        const testInstance = TestRenderer.create(
-          renderArticleContent(contentWithItalicText, "maincomment")
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
