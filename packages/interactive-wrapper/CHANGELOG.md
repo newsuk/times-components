@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.5](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.7.4...@times-components/interactive-wrapper@0.7.5) (2020-06-17)
+
+
+### Reverts
+
+* Revert "fix: error boundaries interactives error (#2615)" (#2617) ([78ef7b0](https://github.com/newsuk/times-components/commit/78ef7b08bf36d8431a923ffe27a3092b37757e0c)), closes [#2615](https://github.com/newsuk/times-components/issues/2615) [#2617](https://github.com/newsuk/times-components/issues/2617)
+
+
+
+
+
 ## [0.7.4](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.7.3...@times-components/interactive-wrapper@0.7.4) (2020-06-17)
 
 
