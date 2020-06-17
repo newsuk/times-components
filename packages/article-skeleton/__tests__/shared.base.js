@@ -14,6 +14,11 @@ import articleContentWithTextAndBoldLink from "../fixtures/text-bold-link-articl
 import articleContentWithMixedLink from "../fixtures/mixed-link-article-content";
 import articleContentWithBoldItalicText from "../fixtures/boldItalic-text-article-content";
 import {
+  paragraphWithSingleInlineMarkup,
+  paragraphWithTextAndInlineMarkup,
+  paragraphWithNestedInlineMarkup
+} from "../fixtures/inline-paragraph-content";
+import {
   paragraphStartingWithSingleQuote,
   paragraphStartingWithDoubleQuote
 } from "../fixtures/dropcap-article-content";
@@ -509,6 +514,42 @@ export const snapshotTests = renderComponent => [
       const article = articleFixture({
         ...fixtureArgs,
         content: articleContentWithBoldItalicText
+      });
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "an article with text wrapped in inline element",
+    test() {
+      const article = articleFixture({
+        ...fixtureArgs,
+        content: paragraphWithSingleInlineMarkup
+      });
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "an article with paragraph with text and inline element",
+    test() {
+      const article = articleFixture({
+        ...fixtureArgs,
+        content: paragraphWithTextAndInlineMarkup
+      });
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "an article with inline inside a bold tag",
+    test() {
+      const article = articleFixture({
+        ...fixtureArgs,
+        content: paragraphWithNestedInlineMarkup
       });
       const output = renderComponent(renderArticle(article));
 
