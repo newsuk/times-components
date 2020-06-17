@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.34](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.33...@times-components/article-skeleton@1.33.34) (2020-06-17)
+
+
+### Bug Fixes
+
+* error boundaries interactives error ([#2615](https://github.com/newsuk/times-components/issues/2615)) ([9299e83](https://github.com/newsuk/times-components/commit/9299e83a5579e91ae0df983f0abd8229d8099285))
+
+
+
+
+
 ## [1.33.33](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.32...@times-components/article-skeleton@1.33.33) (2020-06-12)
 
 **Note:** Version bump only for package @times-components/article-skeleton
