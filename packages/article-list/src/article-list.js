@@ -33,13 +33,17 @@ class ArticleList extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    const { articles } = this.props;
-    const { articles: nextArticles } = nextProps;
+    const { articles, articleListHeader } = this.props;
+    const {
+      articles: nextArticles,
+      articleListHeader: nextArticleListHeader
+    } = nextProps;
     return (
       !articles ||
       !nextArticles ||
       articles !== nextArticles ||
       articles.length !== nextArticles.length ||
+      articleListHeader !== nextArticleListHeader ||
       this.state !== nextState
     );
   }
