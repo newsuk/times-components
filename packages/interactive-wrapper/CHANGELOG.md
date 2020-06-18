@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.7.5...@times-components/interactive-wrapper@0.8.0) (2020-06-18)
+
+
+### Features
+
+* handle async code error boundary ([#2618](https://github.com/newsuk/times-components/issues/2618)) ([a036dde](https://github.com/newsuk/times-components/commit/a036dde0a637d89d11a0bdef9562ed55bc6b87d4))
+
+
+
+
+
 ## [0.7.5](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.7.4...@times-components/interactive-wrapper@0.7.5) (2020-06-17)
 
 
