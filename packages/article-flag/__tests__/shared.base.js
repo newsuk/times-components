@@ -7,7 +7,8 @@ import ArticleFlag, {
   NewArticleFlag,
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
-  SponsoredArticleFlag
+  SponsoredArticleFlag,
+  LongReadArticleFlag
 } from "../src/article-flag";
 
 export default () => {
@@ -102,6 +103,14 @@ export default () => {
       }
     },
     {
+      name: "long read article flag",
+      test: () => {
+        const testInstance = TestRenderer.create(<LongReadArticleFlag />);
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
       name: "article flags",
       test: () => {
         const testInstance = TestRenderer.create(
@@ -110,6 +119,24 @@ export default () => {
               { expiryTime: "2020-03-13T12:00:00.000Z", type: "UPDATED" },
               { expiryTime: "2020-03-14T12:00:00.000Z", type: "EXCLUSIVE" }
             ]}
+            longRead
+          />
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "article flags with container",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleFlags
+            flags={[
+              { expiryTime: "2020-03-13T12:00:00.000Z", type: "UPDATED" },
+              { expiryTime: "2020-03-14T12:00:00.000Z", type: "EXCLUSIVE" }
+            ]}
+            longRead
+            withContainer
           />
         );
 

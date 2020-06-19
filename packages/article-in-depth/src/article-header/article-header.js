@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { ArticleFlags, getActiveFlags } from "@times-components/article-flag";
+import { ArticleFlags } from "@times-components/article-flag";
 import Context from "@times-components/context";
 import { fontFactory } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";
@@ -21,7 +21,8 @@ const ArticleHeader = ({
   isTablet,
   label,
   standfirst,
-  textColour: rgbTextColour
+  textColour: rgbTextColour,
+  longRead
 }) => {
   const backgroundColour = gqlRgbaToStyle(rgbBackgroundColour);
   const textColour = gqlRgbaToStyle(rgbTextColour);
@@ -55,12 +56,7 @@ const ArticleHeader = ({
             >
               {headline}
             </Text>
-
-            {getActiveFlags(flags).length > 0 && (
-              <View style={styles.flags}>
-                <ArticleFlags color={textColour} flags={flags} />
-              </View>
-            )}
+            <ArticleFlags color={textColour} flags={flags} longRead={longRead} withContainer={true} />
             <Standfirst color={textColour} standfirst={standfirst} />
           </View>
         </View>

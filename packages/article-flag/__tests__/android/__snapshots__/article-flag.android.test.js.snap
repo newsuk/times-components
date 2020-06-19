@@ -88,7 +88,18 @@ exports[`8. sponsored article flag 1`] = `
 </View>
 `;
 
-exports[`9. article flags 1`] = `
+exports[`9. long read article flag 1`] = `
+<View>
+  <View />
+  <Text
+    accessibilityLabel="long read Flag"
+  >
+    long read
+  </Text>
+</View>
+`;
+
+exports[`10. article flags 1`] = `
 <View>
   <View>
     <View>
@@ -110,7 +121,54 @@ exports[`9. article flags 1`] = `
       </Text>
     </View>
   </View>
+  <View>
+    <View>
+      <View />
+      <Text
+        accessibilityLabel="long read Flag"
+      >
+        long read
+      </Text>
+    </View>
+  </View>
 </View>
 `;
 
-exports[`10. article flags with no flags 1`] = `null`;
+exports[`11. article flags with container 1`] = `
+<View>
+  <View>
+    <View>
+      <View>
+        <View />
+        <Text
+          accessibilityLabel="updated Flag"
+        >
+          updated
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View />
+        <Text
+          accessibilityLabel="exclusive Flag"
+        >
+          exclusive
+        </Text>
+      </View>
+    </View>
+    <View>
+      <View>
+        <View />
+        <Text
+          accessibilityLabel="long read Flag"
+        >
+          long read
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`12. article flags with no flags 1`] = `null`;

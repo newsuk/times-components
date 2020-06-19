@@ -13,14 +13,16 @@ const articleHeaderPropTypes = {
   label: PropTypes.string,
   publicationName: PropTypes.string.isRequired,
   publishedTime: PropTypes.string.isRequired,
-  standfirst: PropTypes.string
+  standfirst: PropTypes.string,
+  longRead: PropTypes.bool
 };
 
 const articleHeaderDefaultProps = {
   flags: [],
   hasVideo: false,
   label: null,
-  standfirst: null
+  standfirst: null,
+  longRead: false
 };
 
 export { articleHeaderPropTypes, articleHeaderDefaultProps };

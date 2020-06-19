@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import { ArticleFlags, getActiveFlags } from "@times-components/article-flag";
+import { ArticleFlags } from "@times-components/article-flag";
 import { ModalImage } from "@times-components/image";
 import Context from "@times-components/context";
 import { fontFactory } from "@times-components/styleguide";
@@ -26,7 +26,8 @@ const ArticleHeader = ({
   onAuthorPress,
   publicationName,
   publishedTime,
-  standfirst
+  standfirst,
+  longRead,
 }) => (
   <Context.Consumer>
     {({ theme: { headlineFont, headlineCase } }) => (
@@ -51,11 +52,7 @@ const ArticleHeader = ({
         >
           {headline}
         </Text>
-        {getActiveFlags(flags).length > 0 && (
-          <View style={styles.flags}>
-            <ArticleFlags flags={flags} />
-          </View>
-        )}
+        <ArticleFlags flags={flags} longRead={longRead} withContainer={true} />
         <Standfirst standfirst={standfirst} />
         <Meta
           bylines={bylines}

@@ -2049,6 +2049,8 @@ const defaultTextColour = {
 const defaultUrl =
   "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
 
+const defaultLongRead = false;
+
 const addProp = (obj, key, value) => {
   if (value != null) {
     return {
@@ -2082,7 +2084,8 @@ const makeDefaultConfig = ({
   savingEnabled = true,
   textColour = defaultTextColour,
   topics = defaultTopics,
-  url = defaultUrl
+  url = defaultUrl,
+  longRead = defaultLongRead
 } = {}) => ({
   backgroundColour,
   bylines,
@@ -2105,7 +2108,8 @@ const makeDefaultConfig = ({
   standfirst,
   textColour,
   topics,
-  url
+  url,
+  longRead
 });
 
 export default ({ withAds = true, ...config } = {}) => {
@@ -2271,5 +2275,6 @@ export const testFixture = {
       slug: "topic"
     }
   ],
-  url: "https://url.io"
+  url: "https://url.io",
+  longRead: false
 };

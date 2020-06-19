@@ -13,7 +13,8 @@ const ArticleHeader = ({
   headline,
   isTablet,
   label,
-  standfirst
+  standfirst,
+  longRead,
 }) => (
   <View
     style={[
@@ -27,7 +28,7 @@ const ArticleHeader = ({
       selectable
       style={[
         styles.articleHeadLineText,
-        !(getActiveFlags(flags).length > 0 || standfirst) &&
+        !(getActiveFlags(flags).length > 0 || longRead || standfirst) &&
           styles.articleHeadlineSpacer,
         isTablet && styles.articleHeadLineTextTablet
       ]}
@@ -35,12 +36,12 @@ const ArticleHeader = ({
       {headline}
     </Text>
     <HeaderStandfirst
-      hasFlags={getActiveFlags(flags).length > 0}
+      hasFlags={getActiveFlags(flags).length > 0 || longRead}
       standfirst={standfirst}
     />
-    {getActiveFlags(flags).length > 0 && (
+    {(getActiveFlags(flags).length > 0 || longRead) && (
       <View style={styles.flags}>
-        <ArticleFlags flags={flags} />
+        <ArticleFlags flags={flags} longRead={longRead} />
       </View>
     )}
   </View>
@@ -52,7 +53,8 @@ ArticleHeader.propTypes = {
   headline: PropTypes.string.isRequired,
   isTablet: PropTypes.bool,
   label: PropTypes.string,
-  standfirst: PropTypes.string
+  standfirst: PropTypes.string,
+  longRead: PropTypes.bool
 };
 
 ArticleHeader.defaultProps = {
@@ -60,7 +62,8 @@ ArticleHeader.defaultProps = {
   hasVideo: false,
   isTablet: false,
   label: null,
-  standfirst: null
+  standfirst: null,
+  longRead: false
 };
 
 export default ArticleHeader;

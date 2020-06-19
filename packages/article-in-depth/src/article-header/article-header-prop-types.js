@@ -26,7 +26,8 @@ const articleHeaderPropTypes = {
       green: PropTypes.number,
       red: PropTypes.number
     })
-  })
+  }),
+  longRead: PropTypes.bool
 };
 
 const articleHeaderDefaultProps = {
@@ -49,7 +50,8 @@ const articleHeaderDefaultProps = {
       green: 0,
       red: 0
     }
-  }
+  },
+  longRead: false
 };
 
 export { articleHeaderPropTypes, articleHeaderDefaultProps };

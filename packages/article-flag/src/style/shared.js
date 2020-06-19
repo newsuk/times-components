@@ -10,6 +10,10 @@ const styles = {
   flagPadding: {
     marginRight: spacing(3)
   },
+  flagsContainer: {
+    marginBottom: spacing(3),
+    marginTop: spacing(1)
+  },
   flags: {
     flexDirection: "row",
     flexWrap: "wrap",
