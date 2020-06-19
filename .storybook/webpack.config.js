@@ -1,25 +1,25 @@
 const path = require("path");
 const webpack = require("webpack");
 
-module.exports = async (baseConfig, env, defaultConfig) => {
-  baseConfig.devtool = "eval-source-map"
-  baseConfig.resolve = {
-    ...baseConfig.resolve,
+module.exports = async ({ config }, env, defaultConfig) => {
+  config.devtool = "eval-source-map"
+  config.resolve = {
+    ...config.resolve,
     alias: {
-      ...baseConfig.resolve.alias,
+      ...config.resolve.alias,
       "react-native": "react-native-web",
       "@storybook/react-native": "@storybook/react"
     },
     extensions: [".web.js", ".js", ".ios.js", ".android.js", ".mjs"],
     mainFields: ["devModule", "dev", "module", "main"]
   };
-  baseConfig.plugins.push(
+  config.plugins.push(
     new webpack.DllReferencePlugin({
       context: __dirname,
       manifest: path.resolve("./dist/public/vendor-manifest.json")
     })
   );
-  baseConfig.module.rules.push(
+  config.module.rules.push(
     {
       test: /\.(png|jpe?g|gif)$/,
       loader: 'react-native-web-image-loader?name=[hash].[ext]',
@@ -37,5 +37,5 @@ module.exports = async (baseConfig, env, defaultConfig) => {
     }
   );
 
-  return baseConfig;
+  return config
 };
