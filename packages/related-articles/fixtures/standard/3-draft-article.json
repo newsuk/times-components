@@ -1,0 +1,1410 @@
+{
+  "data": {
+    "relatedArticleSlice": {
+      "sliceName": "DraftStandardSlice",
+      "items": [
+        {
+          "leadAsset": null,
+          "article": {
+            "leadAsset": {
+              "crop169": {
+                "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimeseb%2Fprod%2Fweb%2Fbin%2F30f9fc30-a652-11ea-b184-d1e18278054a.jpg?crop=8324%2C4682%2C45%2C528"
+              },
+              "crop32": {
+                "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimeseb%2Fprod%2Fweb%2Fbin%2F30f9fc30-a652-11ea-b184-d1e18278054a.jpg?crop=8449%2C5633%2C0%2C0"
+              },
+              "id": "e695f3c1-2bd0-4e6f-bf40-841db15c5d5c",
+              "title": ""
+            },
+            "bylines": [
+              {
+                "byline": [
+                  {
+                    "name": "author",
+                    "children": [
+                      {
+                        "name": "text",
+                        "children": [],
+                        "attributes": {
+                          "value": "Chris Pearson"
+                        }
+                      }
+                    ],
+                    "attributes": {
+                      "slug": "chris-pearson"
+                    }
+                  }
+                ],
+                "image": null
+              }
+            ],
+            "hasVideo": false,
+            "headline": "Niels Lan Doky: River of Time — a smorgasbord of styles from a Scandi star",
+            "id": "b6714f92-a663-11ea-b184-d1e18278054a",
+            "label": "ALBUM review",
+            "publicationName": "TIMES",
+            "publishedTime": null,
+            "updatedTime": "2020-06-04T17:38:27.000Z",
+            "section": "times2",
+            "shortIdentifier": "2pg87kjcf",
+            "shortHeadline": "Niels Lan Doky: River of Time — a smorgasbord of styles from a Scandi star",
+            "slug": "niels-lan-doky-river-of-time-a-smorgasbord-of-styles-from-a-scandi-star",
+            "url": "https://www.thetimes.co.uk/article/niels-lan-doky-river-of-time-a-smorgasbord-of-styles-from-a-scandi-star-2pg87kjcf",
+            "summary105": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Niels Lan Doky"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "River of Time"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★★☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "GoGo Penguin"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "GoGo Penguin"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Maybe it’s because he spent some of his"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary125": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Niels Lan Doky"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "River of Time"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★★☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "GoGo Penguin"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "GoGo Penguin"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Maybe it’s because he spent some of his early years in New York"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary145": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Niels Lan Doky"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "River of Time"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★★☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "GoGo Penguin"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "GoGo Penguin"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Maybe it’s because he spent some of his early years in New York, but Niels Lan Doky"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary160": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Niels Lan Doky"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "River of Time"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★★☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "GoGo Penguin"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "GoGo Penguin"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Maybe it’s because he spent some of his early years in New York, but Niels Lan Doky is not like"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary175": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Niels Lan Doky"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "River of Time"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★★☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "GoGo Penguin"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "GoGo Penguin"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Maybe it’s because he spent some of his early years in New York, but Niels Lan Doky is not like most Scandinavian"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary225": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Niels Lan Doky"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "River of Time"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★★☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "GoGo Penguin"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "GoGo Penguin"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Maybe it’s because he spent some of his early years in New York, but Niels Lan Doky is not like most Scandinavian jazz pianists. Not for him the chilly"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "leadAsset": null,
+          "article": {
+            "leadAsset": {
+              "crop169": {
+                "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimeseb%2Fprod%2Fweb%2Fbin%2Ffc3f6864-a0dd-11ea-91ea-9f9d4f718820.jpg?crop=4281%2C2408%2C155%2C53"
+              },
+              "crop32": {
+                "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimeseb%2Fprod%2Fweb%2Fbin%2Ffc3f6864-a0dd-11ea-91ea-9f9d4f718820.jpg?crop=4632%2C3088%2C10%2C74"
+              },
+              "id": "a76e2fbc-b9e4-4fe8-8f8d-58872d84d404",
+              "title": "John Scofield ý Roberto Cifarelli"
+            },
+            "bylines": [
+              {
+                "byline": [
+                  {
+                    "name": "author",
+                    "children": [
+                      {
+                        "name": "text",
+                        "children": [],
+                        "attributes": {
+                          "value": "Chris Pearson"
+                        }
+                      }
+                    ],
+                    "attributes": {
+                      "slug": "chris-pearson"
+                    }
+                  }
+                ],
+                "image": null
+              }
+            ],
+            "hasVideo": false,
+            "headline": "John Scofield: Swallow Tales — mercurial pieces don’t soften the great jazz-rocker",
+            "id": "afd33cb6-a0de-11ea-91ea-9f9d4f718820",
+            "label": "album review",
+            "publicationName": "TIMES",
+            "publishedTime": null,
+            "updatedTime": "2020-05-28T17:43:17.000Z",
+            "section": "times2",
+            "shortIdentifier": "swgh5l29v",
+            "shortHeadline": "John Scofield: Swallow Tales — mercurial pieces don’t soften the great jazz-rocker",
+            "slug": "john-scofield-swallow-tales-mercurial-pieces-dont-soften-the-great-jazz-rocker",
+            "url": "https://www.thetimes.co.uk/article/john-scofield-swallow-tales-mercurial-pieces-dont-soften-the-great-jazz-rocker-swgh5l29v",
+            "summary105": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★★☆"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "It took just one afternoon to rectify a 50-year oversight. Steve Swallow’s tunes have been recorded"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary125": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★★☆"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "It took just one afternoon to rectify a 50-year oversight. Steve Swallow’s tunes have been recorded by artists ranging"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary145": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★★☆"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "It took just one afternoon to rectify a 50-year oversight. Steve Swallow’s tunes have been recorded by artists ranging from Bill Evans to"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary160": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★★☆"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "It took just one afternoon to rectify a 50-year oversight. Steve Swallow’s tunes have been recorded by artists ranging from Bill Evans to Pat Metheny, and"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary175": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★★☆"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "It took just one afternoon to rectify a 50-year oversight. Steve Swallow’s tunes have been recorded by artists ranging from Bill Evans to Pat Metheny, and some have"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary225": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★★☆"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "It took just one afternoon to rectify a 50-year oversight. Steve Swallow’s tunes have been recorded by artists ranging from Bill Evans to Pat Metheny, and some have become standards. Yet the pioneering American bass"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "leadAsset": null,
+          "article": {
+            "leadAsset": {
+              "crop169": {
+                "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimeseb%2Fprod%2Fweb%2Fbin%2Fca7c61fe-95db-11ea-97b5-8f15973668de.jpg?crop=3913%2C2201%2C98%2C269"
+              },
+              "crop32": {
+                "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimeseb%2Fprod%2Fweb%2Fbin%2Fca7c61fe-95db-11ea-97b5-8f15973668de.jpg?crop=4109%2C2739%2C0%2C0"
+              },
+              "id": "dbd8a315-35f7-4b81-a8d5-c35f99ce9c07",
+              "title": ""
+            },
+            "bylines": [
+              {
+                "byline": [
+                  {
+                    "name": "author",
+                    "children": [
+                      {
+                        "name": "text",
+                        "children": [],
+                        "attributes": {
+                          "value": "Chris Pearson"
+                        }
+                      }
+                    ],
+                    "attributes": {
+                      "slug": "chris-pearson"
+                    }
+                  }
+                ],
+                "image": null
+              }
+            ],
+            "hasVideo": false,
+            "headline": "Jon Balke: Discourses — Norwegian pianist’s clash between articulation and anger",
+            "id": "7667f716-95ec-11ea-97b5-8f15973668de",
+            "label": "album review",
+            "publicationName": "TIMES",
+            "publishedTime": null,
+            "updatedTime": "2020-05-14T16:10:27.000Z",
+            "section": "times2",
+            "shortIdentifier": "l9x7zf8nc",
+            "shortHeadline": "Jon Balke: Discourses — Norwegian pianist’s clash between articulation and anger",
+            "slug": "jon-balke-discourses-norwegian-pianists-clash-between-articulation-and-anger",
+            "url": "https://www.thetimes.co.uk/article/jon-balke-discourses-norwegian-pianists-clash-between-articulation-and-anger-l9x7zf8nc",
+            "summary105": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Jon Balke"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Discourses"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Benjamin Moussay"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Promontoire"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Jon Balke has been using electronics as a foil"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary125": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Jon Balke"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Discourses"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Benjamin Moussay"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Promontoire"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Jon Balke has been using electronics as a foil for his piano solos"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary145": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Jon Balke"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Discourses"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Benjamin Moussay"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Promontoire"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Jon Balke has been using electronics as a foil for his piano solos since 2015. Here, the"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary160": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Jon Balke"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Discourses"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Benjamin Moussay"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Promontoire"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Jon Balke has been using electronics as a foil for his piano solos since 2015. Here, the Norwegian uses"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary175": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Jon Balke"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Discourses"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Benjamin Moussay"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Promontoire"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Jon Balke has been using electronics as a foil for his piano solos since 2015. Here, the Norwegian uses the technique"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ],
+            "summary225": [
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Jon Balke"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Discourses"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "bold",
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Benjamin Moussay"
+                        },
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Promontoire"
+                    },
+                    "children": []
+                  },
+                  {
+                    "name": "break",
+                    "children": []
+                  },
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "★★★☆☆"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "paragraph",
+                "children": [
+                  {
+                    "name": "text",
+                    "attributes": {
+                      "value": "Jon Balke has been using electronics as a foil for his piano solos since 2015. Here, the Norwegian uses the technique to mourn what he believes is the death of public"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

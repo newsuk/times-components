@@ -10,6 +10,7 @@ import standard1RelatedArticleNoLabelFixture from "./fixtures/standard/1-article
 import standard1RelatedArticleNoBylineFixture from "./fixtures/standard/1-article-no-byline.json";
 import standard2RelatedArticlesFixture from "./fixtures/standard/2-articles";
 import standard3RelatedArticlesFixture from "./fixtures/standard/3-articles";
+import draftStandard3RelatedArticlesFixture from "./fixtures/standard/3-draft-article.json";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -96,6 +97,15 @@ export default {
           standard3RelatedArticlesFixture().data
         ),
       name: "Standard template with three related articles",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) =>
+        createRelatedArticles(
+          decorateAction,
+          draftStandard3RelatedArticlesFixture.data
+        ),
+      name: "Standard template with three DRAFT related articles (preview)",
       type: "story"
     }
   ],
