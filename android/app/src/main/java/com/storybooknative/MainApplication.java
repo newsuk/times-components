@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.facebook.react.ReactApplication;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
+import com.reactnativecommunity.netinfo.NetInfoPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -28,6 +29,7 @@ public class MainApplication extends Application implements ReactApplication {
             return Arrays.asList(
                     new MainReactPackage(),
                     new RNDeviceInfo(),
+                    new NetInfoPackage(),
                     new ComponentsPackage(),
                     new StorybookStubPackage(),
                     new SvgPackage(),
