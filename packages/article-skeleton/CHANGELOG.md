@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.38](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.37...@times-components/article-skeleton@1.33.38) (2020-06-19)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.33.37](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.36...@times-components/article-skeleton@1.33.37) (2020-06-19)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.33.36](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.35...@times-components/article-skeleton@1.33.36) (2020-06-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.33.35](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.34...@times-components/article-skeleton@1.33.35) (2020-06-17)
+
+
+### Reverts
+
+* Revert "fix: error boundaries interactives error (#2615)" (#2617) ([78ef7b0](https://github.com/newsuk/times-components/commit/78ef7b08bf36d8431a923ffe27a3092b37757e0c)), closes [#2615](https://github.com/newsuk/times-components/issues/2615) [#2617](https://github.com/newsuk/times-components/issues/2617)
+
+
+
+
+
+## [1.33.34](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.33...@times-components/article-skeleton@1.33.34) (2020-06-17)
+
+
+### Bug Fixes
+
+* error boundaries interactives error ([#2615](https://github.com/newsuk/times-components/issues/2615)) ([9299e83](https://github.com/newsuk/times-components/commit/9299e83a5579e91ae0df983f0abd8229d8099285))
+
+
+
+
+
 ## [1.33.33](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.32...@times-components/article-skeleton@1.33.33) (2020-06-12)
 
 **Note:** Version bump only for package @times-components/article-skeleton

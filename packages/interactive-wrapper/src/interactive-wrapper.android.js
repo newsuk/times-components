@@ -57,16 +57,17 @@ class InteractiveWrapper extends Component {
     }
   }
 
+  // eslint-disable-next-line class-methods-use-this
   handleNavigationStateChange(data) {
     if (
       !data.url.includes("data:text/html") &&
       data.url.includes("http") &&
       !data.url.includes(editorialLambdaOrigin)
     ) {
-      // Need to handle native routing when something is clicked.
       InteractiveWrapper.openURLInBrowser(data.url);
-      this.webview.reload();
+      return false;
     }
+    return true;
   }
 
   render() {
@@ -91,11 +92,11 @@ class InteractiveWrapper extends Component {
         injectedJavaScript={scriptToInject}
         onLoadEnd={this.onLoadEnd}
         onMessage={this.onMessage}
-        onNavigationStateChange={this.handleNavigationStateChange}
         ref={ref => {
           this.webview = ref;
         }}
         scrollEnabled={false}
+        onShouldStartLoadWithRequest={this.handleNavigationStateChange}
         source={{ uri }}
         style={{ height }}
       />
