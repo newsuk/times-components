@@ -43,9 +43,9 @@
   },
   "dependencies": {
     "@babel/core": "7.4.4",
-    "@storybook/addon-actions": "4.1.18",
-    "@storybook/addon-knobs": "4.1.18",
-    "@storybook/react-native": "4.1.18",
+    "@storybook/addon-actions": "5.3.18",
+    "@storybook/addon-knobs": "5.3.18",
+    "@storybook/react-native": "5.3.18",
     "@times-components/schema": "0.6.23",
     "@times-components/user-state": "0.1.50",
     "apollo-cache-inmemory": "1.5.1",

@@ -67,6 +67,7 @@ packages/*/rnw.js
 
 # Bundles
 ios/Index/
+ios/Pods/
 
 ios/main.jsbundle
 ios/main.jsbundle.meta

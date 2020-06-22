@@ -39,7 +39,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@storybook/addon-actions": "4.1.18",
+    "@storybook/addon-actions": "5.3.18",
     "@times-components/tealium": "1.13.29"
   },
   "resolutions": {

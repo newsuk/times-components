@@ -1,5 +1,6 @@
 import url from "url";
 import { AppRegistry, NativeModules, Platform } from "react-native";
+import AsyncStorage from "@react-native-community/async-storage";
 import {
   getStorybookUI,
   configure,
@@ -29,7 +30,8 @@ const { hostname } = url.parse(NativeModules.SourceCode.scriptURL);
 
 const StorybookUIRoot = getStorybookUI({
   port: 7007,
-  host: hostname
+  host: hostname,
+  asyncStorage: AsyncStorage
 });
 
 AppRegistry.registerComponent("storybooknative", () => StorybookUIRoot);
