@@ -165,46 +165,6 @@ export default (props, platformTests = []) => {
         expect(articleListHeader).toMatchSnapshot();
       }
     },
-    {
-      name: "an article list header only changes on loading state change",
-      test() {
-        const testInstance = TestRenderer.create(
-          <AuthorProfile {...props} isLoading />
-        );
-
-        const articleList = testInstance.root.find(
-          node => node.type === "ArticleList"
-        );
-
-        const ArticleListHeader = articleList.props.articleListHeader.type;
-
-        const articleListHeader = TestRenderer.create(
-          articleList.props.articleListHeader
-        );
-
-        expect(articleListHeader).toMatchSnapshot();
-
-        articleListHeader.update(
-          <ArticleListHeader
-            {...articleList.props.articleListHeader}
-            isLoading={false}
-            jobTitle="Title 1"
-          />
-        );
-
-        expect(articleListHeader).toMatchSnapshot();
-
-        articleListHeader.update(
-          <ArticleListHeader
-            {...articleList.props.articleListHeader}
-            isLoading={false}
-            jobTitle="Title 2"
-          />
-        );
-
-        expect(articleListHeader).toMatchSnapshot();
-      }
-    },
     ...platformTests
   ];
 
