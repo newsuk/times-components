@@ -37,9 +37,10 @@ Go to http://components.thetimes.co.uk
   1. `yarn storybook`
   2. go to http://localhost:9001
 - native storybook
-  1. `yarn storybook-native` and leave it running
-  2. `yarn ios` to start the iOS app
-  3. To start the Android app:
+  1. `cd ios && pod install && cd -`
+  2. `yarn storybook-native` and leave it running
+  3. `yarn ios` to start the iOS app
+  4. To start the Android app:
      - [Start a virtual device](https://developer.android.com/studio/run/managing-avds.html)
      - Check Android SDK path is exported to \$ANDROID_HOME. In Mac, android sdk
        is installed to ~/Library/Android/sdk by default. `export ANDROID_HOME="/Users/<USERNAME>/Library/Android/sdk"`
@@ -47,7 +48,7 @@ Go to http://components.thetimes.co.uk
      - If you get build errors, check your JDK version with `javac -version`,
        which should print `javac 1.8.XXXX`. Earlier or later versions may not
        work.
-  4. go to http://localhost:7007
+  5. go to http://localhost:7007
 
 ## Native App Dev Server
 

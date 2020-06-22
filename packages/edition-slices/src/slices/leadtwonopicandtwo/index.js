@@ -57,7 +57,7 @@ class LeadTwoNoPicAndTwo extends Component {
           />
         }
         support1={
-          <TileE
+          <TileD
             breakpoint={breakpoint}
             onPress={onPress}
             tile={support1}
@@ -65,7 +65,7 @@ class LeadTwoNoPicAndTwo extends Component {
           />
         }
         support2={
-          <TileD
+          <TileE
             breakpoint={breakpoint}
             onPress={onPress}
             tile={support2}
@@ -102,7 +102,7 @@ class LeadTwoNoPicAndTwo extends Component {
           />
         }
         support1={
-          <TileE
+          <TileAL
             breakpoint={breakpoint}
             onPress={onPress}
             tile={support1}
@@ -110,7 +110,7 @@ class LeadTwoNoPicAndTwo extends Component {
           />
         }
         support2={
-          <TileAL
+          <TileE
             breakpoint={breakpoint}
             onPress={onPress}
             tile={support2}

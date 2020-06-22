@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.2](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.1...@times-components/interactive-wrapper@0.8.2) (2020-06-22)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.1](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.0...@times-components/interactive-wrapper@0.8.1) (2020-06-19)
+
+
+### Bug Fixes
+
+* revert ios interactive wrapper ([#2622](https://github.com/newsuk/times-components/issues/2622)) ([2fc9d0e](https://github.com/newsuk/times-components/commit/2fc9d0e4d30a304a9244bdbd7ad6846e6f96e36a))
+
+
+
+
+
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.7.5...@times-components/interactive-wrapper@0.8.0) (2020-06-18)
+
+
+### Features
+
+* handle async code error boundary ([#2618](https://github.com/newsuk/times-components/issues/2618)) ([a036dde](https://github.com/newsuk/times-components/commit/a036dde0a637d89d11a0bdef9562ed55bc6b87d4))
+
+
+
+
+
+## [0.7.5](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.7.4...@times-components/interactive-wrapper@0.7.5) (2020-06-17)
+
+
+### Reverts
+
+* Revert "fix: error boundaries interactives error (#2615)" (#2617) ([78ef7b0](https://github.com/newsuk/times-components/commit/78ef7b08bf36d8431a923ffe27a3092b37757e0c)), closes [#2615](https://github.com/newsuk/times-components/issues/2615) [#2617](https://github.com/newsuk/times-components/issues/2617)
+
+
+
+
+
+## [0.7.4](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.7.3...@times-components/interactive-wrapper@0.7.4) (2020-06-17)
+
+
+### Bug Fixes
+
+* error boundaries interactives error ([#2615](https://github.com/newsuk/times-components/issues/2615)) ([9299e83](https://github.com/newsuk/times-components/commit/9299e83a5579e91ae0df983f0abd8229d8099285))
+
+
+
+
+
 ## [0.7.3](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.7.2...@times-components/interactive-wrapper@0.7.3) (2020-06-08)
 
 

@@ -16,7 +16,12 @@ class RelatedArticles extends Component {
     const { isVisible, onPress, slice } = this.props;
     if (!slice) return null;
     const { items, sliceName } = slice;
-    if (!sliceName || sliceName !== "StandardSlice" || !items) return null;
+    if (
+      !sliceName ||
+      (sliceName !== "StandardSlice" && sliceName !== "DraftStandardSlice") ||
+      !items
+    )
+      return null;
 
     const renderArticleItem = (config, article, leadAssetOverride) => {
       const {

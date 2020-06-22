@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.13.3](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.13.2...@times-components/provider-queries@2.13.3) (2020-06-22)
+
+
+### Bug Fixes
+
+* Order of articles on lead-2-no-pic-and-2 ([#2624](https://github.com/newsuk/times-components/issues/2624)) ([c5a2165](https://github.com/newsuk/times-components/commit/c5a216552218f5353c10b31182baad59a719dc46))
+
+
+
+
+
 ## [2.13.2](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.13.1...@times-components/provider-queries@2.13.2) (2020-06-12)
 
 **Note:** Version bump only for package @times-components/provider-queries

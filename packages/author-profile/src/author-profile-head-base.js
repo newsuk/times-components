@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { memo } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import { Animations } from "@times-components/styleguide";
@@ -8,23 +8,16 @@ import AuthorProfileHeadTwitter from "./author-profile-head-twitter";
 import authorProfileHeadTrackingEvents from "./author-profile-head-tracking-events";
 import styles from "./styles";
 
-export class AuthorProfileHeadBase extends Component {
-  shouldComponentUpdate(nextProps) {
-    const { isLoading } = this.props;
-    return isLoading !== nextProps.isLoading;
-  }
-
-  render() {
-    const {
-      isLoading,
-      jobTitle,
-      onTwitterLinkPress,
-      renderBiography,
-      renderImage,
-      renderName,
-      twitter
-    } = this.props;
-
+const AuthorProfileHeadBase = memo(
+  ({
+    isLoading,
+    jobTitle,
+    onTwitterLinkPress,
+    renderBiography,
+    renderImage,
+    renderName,
+    twitter
+  }) => {
     if (isLoading) {
       return <AuthorProfileHeadLoading />;
     }
@@ -63,7 +56,7 @@ export class AuthorProfileHeadBase extends Component {
       </Animations.FadeIn>
     );
   }
-}
+);
 
 AuthorProfileHeadBase.propTypes = {
   isLoading: PropTypes.bool,

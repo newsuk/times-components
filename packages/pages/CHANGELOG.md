@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.14](https://github.com/newsuk/times-components/compare/@times-components/pages@2.2.13...@times-components/pages@2.2.14) (2020-06-22)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.2.13](https://github.com/newsuk/times-components/compare/@times-components/pages@2.2.12...@times-components/pages@2.2.13) (2020-06-22)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.2.12](https://github.com/newsuk/times-components/compare/@times-components/pages@2.2.11...@times-components/pages@2.2.12) (2020-06-22)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.2.11](https://github.com/newsuk/times-components/compare/@times-components/pages@2.2.10...@times-components/pages@2.2.11) (2020-06-19)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.2.10](https://github.com/newsuk/times-components/compare/@times-components/pages@2.2.9...@times-components/pages@2.2.10) (2020-06-19)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.2.9](https://github.com/newsuk/times-components/compare/@times-components/pages@2.2.8...@times-components/pages@2.2.9) (2020-06-18)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.2.8](https://github.com/newsuk/times-components/compare/@times-components/pages@2.2.7...@times-components/pages@2.2.8) (2020-06-17)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.2.7](https://github.com/newsuk/times-components/compare/@times-components/pages@2.2.6...@times-components/pages@2.2.7) (2020-06-17)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
 ## [2.2.6](https://github.com/newsuk/times-components/compare/@times-components/pages@2.2.5...@times-components/pages@2.2.6) (2020-06-12)
 
 **Note:** Version bump only for package @times-components/pages

@@ -108,7 +108,8 @@ const sliceStories = [
   },
   {
     mock: mockLeadTwoNoPicAndTwoSlice(),
-    name: "Lead Two no pic and Two (Mobile: F,B,D,E, Tablet: X,Y,D,Z)",
+    name:
+      "Lead Two no pic and Two (Mobile: F,B,D,E, Tablet: X,Y,D,Z, Wide: X,Y,AL,E)",
     Slice: LeadTwoNoPicAndTwoSlice
   },
   {
