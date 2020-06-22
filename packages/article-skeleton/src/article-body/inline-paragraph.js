@@ -52,7 +52,9 @@ const InlineParagraph = ({
   const positioned = manager.layout();
 
   return [
-    dropCap && dropCap.element,
+    dropCap && (
+      <View style={{ left: gutters - spacing(1) }}>{dropCap.element}</View>
+    ),
     inline && (
       <View
         style={{
