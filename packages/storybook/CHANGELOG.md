@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.54](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.1.53...@times-components/storybook@4.1.54) (2020-06-22)
+
+
+### Bug Fixes
+
+* **TNLT-2740:** updates/fixes storybook on web/iOS/android ([#2623](https://github.com/newsuk/times-components/issues/2623)) ([6a53bff](https://github.com/newsuk/times-components/commit/6a53bff6c9a2292bfcea79008cc1bcb4aadb3bd4))
+
+
+
+
+
 ## [4.1.53](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.1.52...@times-components/storybook@4.1.53) (2020-05-14)
 
 **Note:** Version bump only for package @times-components/storybook

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ios-app",
-  "version": "0.17.125",
+  "version": "0.17.126",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "cat package.json | grep version | head -1 | sed 's/[\",\t ]//g' | awk -F: '{ print \"Bundle Version: \" $2 }' > ios-assets/js/version.meta",
@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@react-native-community/netinfo": "5.3.3",
-    "@times-components/pages": "2.2.12",
+    "@times-components/pages": "2.2.13",
     "@times-components/typeset": "0.1.3",
     "prop-types": "15.7.2",
     "react": "16.9.0",

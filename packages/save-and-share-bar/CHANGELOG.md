@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.44](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.43...@times-components/save-and-share-bar@0.9.44) (2020-06-22)
+
+
+### Bug Fixes
+
+* **TNLT-2740:** updates/fixes storybook on web/iOS/android ([#2623](https://github.com/newsuk/times-components/issues/2623)) ([6a53bff](https://github.com/newsuk/times-components/commit/6a53bff6c9a2292bfcea79008cc1bcb4aadb3bd4))
+
+
+
+
+
 ## [0.9.43](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.42...@times-components/save-and-share-bar@0.9.43) (2020-06-22)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar
