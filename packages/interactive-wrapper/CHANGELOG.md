@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.0...@times-components/interactive-wrapper@0.8.1) (2020-06-19)
+
+
+### Bug Fixes
+
+* revert ios interactive wrapper ([#2622](https://github.com/newsuk/times-components/issues/2622)) ([2fc9d0e](https://github.com/newsuk/times-components/commit/2fc9d0e4d30a304a9244bdbd7ad6846e6f96e36a))
+
+
+
+
+
 # [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.7.5...@times-components/interactive-wrapper@0.8.0) (2020-06-18)
 
 
