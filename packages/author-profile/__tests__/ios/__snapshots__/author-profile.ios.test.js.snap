@@ -280,57 +280,7 @@ exports[`9. an article list header loading 1`] = `
 </View>
 `;
 
-exports[`10. an article list header only changes on loading state change 1`] = `
-<View>
-  <View>
-    <View>
-      <Gradient />
-    </View>
-  </View>
-</View>
-`;
-
-exports[`10. an article list header only changes on loading state change 2`] = `
-<View>
-  <View>
-    <View
-      pointerEvents="box-none"
-    >
-      <Text
-        accessibilityRole="header"
-        aria-level="2"
-      >
-        title 1
-      </Text>
-      <View>
-        <Text />
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`10. an article list header only changes on loading state change 3`] = `
-<View>
-  <View>
-    <View
-      pointerEvents="box-none"
-    >
-      <Text
-        accessibilityRole="header"
-        aria-level="2"
-      >
-        title 1
-      </Text>
-      <View>
-        <Text />
-      </View>
-    </View>
-  </View>
-</View>
-`;
-
-exports[`11. twitter link uses ontwitterlinkpress 1`] = `
+exports[`10. twitter link uses ontwitterlinkpress 1`] = `
 Array [
   Array [
     "event",
