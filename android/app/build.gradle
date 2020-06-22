@@ -158,11 +158,12 @@ repositories {
 }
 
 dependencies {
+    implementation project(':@react-native-community_async-storage')
     implementation project(':react-native-device-info')
     implementation project(':@react-native-community_netinfo')
-    implementation "com.facebook.react:react-native:0.61.5"  // From node_modules
     implementation project(':react-native-svg')
     implementation project(':react-native-webview')
+    implementation "com.facebook.react:react-native:+"  // From node_modules
 
     implementation "androidx.appcompat:appcompat:1.1.0"
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
