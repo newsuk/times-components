@@ -84,8 +84,11 @@ const flagsMapping = color =>
 
 const ArticleFlags = ({ flags, longRead, color, style, withContainer }) => {
   const activeFlags = getActiveFlags(flags);
-  const allFlags = [...activeFlags, ...(longRead ? [{ type: 'LONGREAD'}] : []) ];
-  
+  const allFlags = [
+    ...activeFlags,
+    ...(longRead ? [{ type: "LONGREAD" }] : [])
+  ];
+
   if (!allFlags.length) return null;
 
   const flagsView = (
@@ -100,9 +103,7 @@ const ArticleFlags = ({ flags, longRead, color, style, withContainer }) => {
 
   if (!withContainer) return flagsView;
 
-  return (
-  <View style={styles.flagsContainer}>{flagsView}</View>
-  )
+  return <View style={styles.flagsContainer}>{flagsView}</View>;
 };
 
 ArticleFlags.propTypes = articleFlagsPropTypes;

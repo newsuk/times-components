@@ -47,7 +47,12 @@ class TileSummary extends Component {
     } = this.props;
 
     return (
-      <ArticleFlags {...flagColour} style={flagsStyle} flags={expirableFlags} longRead={longRead} />
+      <ArticleFlags
+        {...flagColour}
+        style={flagsStyle}
+        flags={expirableFlags}
+        longRead={longRead}
+      />
     );
   }
 

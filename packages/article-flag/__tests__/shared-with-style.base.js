@@ -27,7 +27,7 @@ export default () => {
               { expiryTime: "2030-03-14T12:00:00.000Z", type: "SPONSORED" }
             ]}
             longRead
-            />
+          />
         );
 
         expect(testInstance).toMatchSnapshot();

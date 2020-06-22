@@ -20,12 +20,12 @@ const ArticleHeader = ({
   hasVideo,
   headline,
   label,
+  longRead,
   onAuthorPress,
+  onImagePress,
   publicationName,
   publishedTime,
-  standfirst,
-  onImagePress,
-  longRead
+  standfirst
 }) => (
   <ResponsiveContext.Consumer>
     {({ isTablet }) => (
@@ -47,7 +47,7 @@ const ArticleHeader = ({
           >
             {headline}
           </Text>
-          <ArticleFlags flags={flags} longRead={longRead} withContainer={true} />
+          <ArticleFlags flags={flags} longRead={longRead} withContainer />
           <Standfirst standfirst={standfirst} />
           <Meta
             bylines={bylines}

@@ -1917,6 +1917,8 @@ const defaultTopics = [
 const defaultUrl =
   "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
 
+const defaultLongRead = false;
+
 const addProp = (obj, key, value) => {
   if (value != null) {
     return {
@@ -1940,6 +1942,7 @@ const makeDefaultConfig = ({
   keywords = defaultKeywords,
   label = defaultLabel,
   leadAsset = defaultLeadAsset,
+  longRead = defaultLongRead,
   relatedArticleSlice = defaultRelatedArticleSlice,
   section = defaultSection,
   shortHeadline = defaultShortHeadline,
@@ -1962,6 +1965,7 @@ const makeDefaultConfig = ({
   keywords,
   label,
   leadAsset,
+  longRead,
   relatedArticleSlice,
   section,
   savingEnabled,
@@ -2084,6 +2088,7 @@ export const testFixture = {
     id: "id-123",
     title: "Some Title"
   },
+  longRead: false,
   relatedArticleSlice: {
     __typename: "StandardSlice",
     items: [

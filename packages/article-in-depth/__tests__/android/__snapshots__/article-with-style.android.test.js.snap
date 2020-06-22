@@ -44,16 +44,7 @@ exports[`full article with style 1`] = `
       >
         Some Headline
       </Text>
-      <View
-        style={
-          Object {
-            "marginBottom": 15,
-            "marginTop": 5,
-          }
-        }
-      >
-        <ArticleFlags />
-      </View>
+      <ArticleFlags />
       <Text
         style={
           Object {
@@ -181,16 +172,7 @@ exports[`full article with style in the culture magazine 1`] = `
       >
         Some Headline
       </Text>
-      <View
-        style={
-          Object {
-            "marginBottom": 15,
-            "marginTop": 5,
-          }
-        }
-      >
-        <ArticleFlags />
-      </View>
+      <ArticleFlags />
       <Text
         style={
           Object {
@@ -319,16 +301,7 @@ exports[`full article with style in the style magazine 1`] = `
       >
         Some Headline
       </Text>
-      <View
-        style={
-          Object {
-            "marginBottom": 15,
-            "marginTop": 5,
-          }
-        }
-      >
-        <ArticleFlags />
-      </View>
+      <ArticleFlags />
       <Text
         style={
           Object {
@@ -456,16 +429,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
       >
         Some Headline
       </Text>
-      <View
-        style={
-          Object {
-            "marginBottom": 15,
-            "marginTop": 5,
-          }
-        }
-      >
-        <ArticleFlags />
-      </View>
+      <ArticleFlags />
       <Text
         style={
           Object {
@@ -593,16 +557,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
       >
         Some Headline
       </Text>
-      <View
-        style={
-          Object {
-            "marginBottom": 15,
-            "marginTop": 5,
-          }
-        }
-      >
-        <ArticleFlags />
-      </View>
+      <ArticleFlags />
       <Text
         style={
           Object {
@@ -731,16 +686,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
       >
         Some Headline
       </Text>
-      <View
-        style={
-          Object {
-            "marginBottom": 15,
-            "marginTop": 5,
-          }
-        }
-      >
-        <ArticleFlags />
-      </View>
+      <ArticleFlags />
       <Text
         style={
           Object {
@@ -868,16 +814,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
       >
         Some Headline
       </Text>
-      <View
-        style={
-          Object {
-            "marginBottom": 15,
-            "marginTop": 5,
-          }
-        }
-      >
-        <ArticleFlags />
-      </View>
+      <ArticleFlags />
       <Text
         style={
           Object {

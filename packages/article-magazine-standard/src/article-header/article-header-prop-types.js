@@ -11,18 +11,18 @@ const articleHeaderPropTypes = {
   hasVideo: PropTypes.bool,
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
+  longRead: PropTypes.bool,
   publicationName: PropTypes.string.isRequired,
   publishedTime: PropTypes.string.isRequired,
-  standfirst: PropTypes.string,
-  longRead: PropTypes.bool
+  standfirst: PropTypes.string
 };
 
 const articleHeaderDefaultProps = {
   flags: [],
   hasVideo: false,
   label: null,
-  standfirst: null,
-  longRead: false
+  longRead: false,
+  standfirst: null
 };
 
 export { articleHeaderPropTypes, articleHeaderDefaultProps };

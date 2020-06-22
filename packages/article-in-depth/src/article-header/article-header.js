@@ -20,9 +20,9 @@ const ArticleHeader = ({
   headline,
   isTablet,
   label,
+  longRead,
   standfirst,
-  textColour: rgbTextColour,
-  longRead
+  textColour: rgbTextColour
 }) => {
   const backgroundColour = gqlRgbaToStyle(rgbBackgroundColour);
   const textColour = gqlRgbaToStyle(rgbTextColour);
@@ -56,7 +56,12 @@ const ArticleHeader = ({
             >
               {headline}
             </Text>
-            <ArticleFlags color={textColour} flags={flags} longRead={longRead} withContainer={true} />
+            <ArticleFlags
+              color={textColour}
+              flags={flags}
+              longRead={longRead}
+              withContainer
+            />
             <Standfirst color={textColour} standfirst={standfirst} />
           </View>
         </View>

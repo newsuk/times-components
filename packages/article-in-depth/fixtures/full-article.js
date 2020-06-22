@@ -2074,6 +2074,7 @@ const makeDefaultConfig = ({
   keywords = defaultKeywords,
   label = defaultLabel,
   leadAsset = defaultLeadAsset,
+  longRead = defaultLongRead,
   relatedArticleSlice = defaultRelatedArticleSlice,
   section = defaultSection,
   shortHeadline = defaultShortHeadline,
@@ -2084,8 +2085,7 @@ const makeDefaultConfig = ({
   savingEnabled = true,
   textColour = defaultTextColour,
   topics = defaultTopics,
-  url = defaultUrl,
-  longRead = defaultLongRead
+  url = defaultUrl
 } = {}) => ({
   backgroundColour,
   bylines,
@@ -2098,6 +2098,7 @@ const makeDefaultConfig = ({
   keywords,
   label,
   leadAsset,
+  longRead,
   relatedArticleSlice,
   section,
   savingEnabled,
@@ -2108,8 +2109,7 @@ const makeDefaultConfig = ({
   standfirst,
   textColour,
   topics,
-  url,
-  longRead
+  url
 });
 
 export default ({ withAds = true, ...config } = {}) => {
@@ -2220,6 +2220,7 @@ export const testFixture = {
     id: "id-123",
     title: "Some Title"
   },
+  longRead: false,
   relatedArticleSlice: {
     __typename: "StandardSlice",
     items: [
@@ -2275,6 +2276,5 @@ export const testFixture = {
       slug: "topic"
     }
   ],
-  url: "https://url.io",
-  longRead: false
+  url: "https://url.io"
 };

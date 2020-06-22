@@ -21,11 +21,11 @@ const ArticleHeader = ({
   hasVideo,
   headline,
   label,
+  longRead,
   onAuthorPress,
   publicationName,
   publishedTime,
-  standfirst,
-  longRead
+  standfirst
 }) => (
   <Context.Consumer>
     {({ theme: { headlineFont, headlineCase } }) => (
@@ -45,8 +45,7 @@ const ArticleHeader = ({
         >
           {headline}
         </Text>
-        <ArticleFlags flags={flags} longRead={longRead} withContainer={true} />
-        )}
+        <ArticleFlags flags={flags} longRead={longRead} withContainer />
         <Standfirst standfirst={standfirst} />
         <Meta
           bylines={bylines}

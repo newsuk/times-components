@@ -13,8 +13,8 @@ const ArticleHeader = ({
   headline,
   isTablet,
   label,
-  standfirst,
   longRead,
+  standfirst
 }) => (
   <View
     style={[
@@ -53,8 +53,8 @@ ArticleHeader.propTypes = {
   headline: PropTypes.string.isRequired,
   isTablet: PropTypes.bool,
   label: PropTypes.string,
-  standfirst: PropTypes.string,
-  longRead: PropTypes.bool
+  longRead: PropTypes.bool,
+  standfirst: PropTypes.string
 };
 
 ArticleHeader.defaultProps = {
@@ -62,8 +62,8 @@ ArticleHeader.defaultProps = {
   hasVideo: false,
   isTablet: false,
   label: null,
-  standfirst: null,
-  longRead: false
+  longRead: false,
+  standfirst: null
 };
 
 export default ArticleHeader;

@@ -18,6 +18,7 @@ const articleHeaderPropTypes = {
   hasVideo: PropTypes.bool,
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
+  longRead: PropTypes.bool,
   standfirst: PropTypes.string,
   textColour: PropTypes.shape({
     rgba: PropTypes.shape({
@@ -26,8 +27,7 @@ const articleHeaderPropTypes = {
       green: PropTypes.number,
       red: PropTypes.number
     })
-  }),
-  longRead: PropTypes.bool
+  })
 };
 
 const articleHeaderDefaultProps = {
@@ -42,6 +42,7 @@ const articleHeaderDefaultProps = {
   flags: [],
   hasVideo: false,
   label: null,
+  longRead: false,
   standfirst: null,
   textColour: {
     rgba: {
@@ -50,8 +51,7 @@ const articleHeaderDefaultProps = {
       green: 0,
       red: 0
     }
-  },
-  longRead: false
+  }
 };
 
 export { articleHeaderPropTypes, articleHeaderDefaultProps };

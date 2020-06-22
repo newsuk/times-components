@@ -36,12 +36,12 @@ class ArticleInDepth extends Component {
       hasVideo,
       headline,
       label,
+      longRead,
       publicationName,
       publishedTime,
       shortHeadline,
       standfirst,
-      textColour,
-      longRead
+      textColour
     } = article;
     return (
       <ResponsiveContext.Consumer>
@@ -54,9 +54,9 @@ class ArticleInDepth extends Component {
               headline={getHeadline(headline, shortHeadline)}
               isTablet={isTablet}
               label={label}
+              longRead={longRead}
               standfirst={standfirst}
               textColour={textColour}
-              longRead={longRead}
             />
             <ArticleLeadAsset
               {...getLeadAsset(article)}

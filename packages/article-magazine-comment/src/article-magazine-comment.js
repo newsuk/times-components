@@ -34,6 +34,7 @@ class ArticleMagazineComment extends Component {
       hasVideo,
       headline,
       label,
+      longRead,
       publicationName,
       publishedTime,
       shortHeadline,
@@ -61,6 +62,7 @@ class ArticleMagazineComment extends Component {
               headline={getHeadline(headline, shortHeadline)}
               isTablet={isTablet}
               label={label}
+              longRead={longRead}
               onAuthorPress={onAuthorPress}
               publicationName={publicationName}
               publishedTime={publishedTime}

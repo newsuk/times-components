@@ -52,6 +52,7 @@ exports[`1. an article 1`] = `
               },
             ]
           }
+          longRead={false}
         />
       </View>
     </View>
@@ -108,7 +109,9 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
         Some Short Headline
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          longRead={false}
+        />
       </View>
     </View>
     <View>
@@ -138,7 +141,9 @@ exports[`5. an article with ads 1`] = `
         Some Headline
       </Text>
       <View>
-        <ArticleFlags />
+        <ArticleFlags
+          longRead={false}
+        />
       </View>
     </View>
     <View>
@@ -209,6 +214,7 @@ exports[`6. an article with no byline 1`] = `
               },
             ]
           }
+          longRead={false}
         />
       </View>
     </View>
@@ -274,6 +280,7 @@ exports[`7. an article with no label 1`] = `
               },
             ]
           }
+          longRead={false}
         />
       </View>
     </View>
