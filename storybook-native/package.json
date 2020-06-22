@@ -1,6 +1,6 @@
 {
   "name": "@times-components/storybook-native",
-  "version": "0.2.12",
+  "version": "0.2.13",
   "license": "BSD-3-Clause",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -19,6 +19,7 @@
     }
   },
   "dependencies": {
+    "@react-native-community/async-storage": "1.11.0",
     "@storybook/addon-actions": "5.3.18",
     "@storybook/addon-info": "5.3.18",
     "@storybook/addon-knobs": "5.3.18",
@@ -27,8 +28,7 @@
     "@storybook/addons": "5.3.18",
     "@storybook/react": "5.3.18",
     "@storybook/react-native": "5.3.18",
-    "@react-native-community/async-storage": "1.11.0",
-    "@times-components/storybook": "4.1.53",
+    "@times-components/storybook": "4.1.54",
     "core-js": "^2.6.5",
     "prop-types": "15.7.2",
     "react": "16.9.0",
