@@ -468,7 +468,11 @@ fragment commonSlicesSection on StandardSectionSlice {
         listingAsset {
           ...leadAsset32and45
         }
+        summary125: summary(maxCharCount: 125)
+        summary800: summary(maxCharCount: 800)
       }
+      teaser125: teaser(maxCharCount: 125)
+      teaser800: teaser(maxCharCount: 800)
     }
     support2 {
       headline

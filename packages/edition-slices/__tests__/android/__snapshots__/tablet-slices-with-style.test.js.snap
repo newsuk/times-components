@@ -285,7 +285,7 @@ exports[`5. lead two no pic and two - medium 1`] = `
         }
       }
     >
-      <TileE />
+      <TileD />
       <View
         style={
           Object {
@@ -295,7 +295,7 @@ exports[`5. lead two no pic and two - medium 1`] = `
           }
         }
       />
-      <TileD />
+      <TileE />
     </View>
   </View>
 </View>
