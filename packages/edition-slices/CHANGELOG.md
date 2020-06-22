@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.103.10](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.103.9...@times-components/edition-slices@0.103.10) (2020-06-22)
+
+
+### Bug Fixes
+
+* Order of articles on lead-2-no-pic-and-2 ([#2624](https://github.com/newsuk/times-components/issues/2624)) ([c5a2165](https://github.com/newsuk/times-components/commit/c5a216552218f5353c10b31182baad59a719dc46))
+
+
+
+
+
 ## [0.103.9](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.103.8...@times-components/edition-slices@0.103.9) (2020-05-14)
 
 **Note:** Version bump only for package @times-components/edition-slices
