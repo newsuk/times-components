@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.7.11](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.10...@times-components/article-list@9.7.11) (2020-06-22)
+
+
+### Bug Fixes
+
+* author profile page header loading issue ([#2620](https://github.com/newsuk/times-components/issues/2620)) ([9d15750](https://github.com/newsuk/times-components/commit/9d15750ee64d9f037167bd2ee87ca1c9deb09cc2))
+
+
+
+
+
 ## [9.7.10](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.9...@times-components/article-list@9.7.10) (2020-06-22)
 
 **Note:** Version bump only for package @times-components/article-list
