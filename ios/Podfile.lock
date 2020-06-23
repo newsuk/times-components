@@ -38,10 +38,20 @@ PODS:
     - React-RCTSettings (= 0.61.5)
     - React-RCTText (= 0.61.5)
     - React-RCTVibration (= 0.61.5)
+  - React-ART (0.61.5):
+    - React-Core/ARTHeaders (= 0.61.5)
   - React-Core (0.61.5):
     - Folly (= 2018.10.22.00)
     - glog
     - React-Core/Default (= 0.61.5)
+    - React-cxxreact (= 0.61.5)
+    - React-jsi (= 0.61.5)
+    - React-jsiexecutor (= 0.61.5)
+    - Yoga
+  - React-Core/ARTHeaders (0.61.5):
+    - Folly (= 2018.10.22.00)
+    - glog
+    - React-Core/Default
     - React-cxxreact (= 0.61.5)
     - React-jsi (= 0.61.5)
     - React-jsiexecutor (= 0.61.5)
@@ -238,6 +248,7 @@ DEPENDENCIES:
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
   - React (from `../node_modules/react-native/`)
+  - React-ART (from `../node_modules/react-native/Libraries/ART`)
   - React-Core (from `../node_modules/react-native/`)
   - React-Core/DevSupport (from `../node_modules/react-native/`)
   - React-Core/RCTWebSocket (from `../node_modules/react-native/`)
@@ -285,6 +296,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/TypeSafety"
   React:
     :path: "../node_modules/react-native/"
+  React-ART:
+    :path: "../node_modules/react-native/Libraries/ART"
   React-Core:
     :path: "../node_modules/react-native/"
   React-CoreModules:
@@ -340,6 +353,7 @@ SPEC CHECKSUMS:
   RCTRequired: b153add4da6e7dbc44aebf93f3cf4fcae392ddf1
   RCTTypeSafety: 9aa1b91d7f9310fc6eadc3cf95126ffe818af320
   React: b6a59ef847b2b40bb6e0180a97d0ca716969ac78
+  React-ART: 55e8252b97fbb378eea751592c04a49610562aab
   React-Core: 688b451f7d616cc1134ac95295b593d1b5158a04
   React-CoreModules: d04f8494c1a328b69ec11db9d1137d667f916dcb
   React-cxxreact: d0f7bcafa196ae410e5300736b424455e7fb7ba7
@@ -363,6 +377,6 @@ SPEC CHECKSUMS:
   RNSVG: be27aa7c58819f97399388ae53d7fa0572f32c7f
   Yoga: f2a7cd4280bfe2cca5a7aed98ba0eb3d1310f18b
 
-PODFILE CHECKSUM: 5b4cd191c8efe35d547ff560837120f794fa5d07
+PODFILE CHECKSUM: d3dec4569b3074e3ce5e8b734ab822b73c3e9438
 
 COCOAPODS: 1.9.1
