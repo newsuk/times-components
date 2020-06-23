@@ -68,7 +68,7 @@ exports[`NewsletterPuffButton renders the button with the text \`Saving...\` 1`]
 
 exports[`NewsletterPuffButton renders the button with the text \`Sign up to newsletter\` 1`] = `
 <View
-  accessibilityLabel="Sign up to newsletter"
+  accessibilityLabel="Sign up now"
   accessibilityRole="button"
   accessible={true}
   focusable={true}
@@ -125,9 +125,9 @@ exports[`NewsletterPuffButton renders the button with the text \`Sign up to news
         },
       ]
     }
-    title="Sign up to newsletter"
+    title="Sign up now"
   >
-    Sign up to newsletter
+    Sign up now
   </Text>
 </View>
 `;

@@ -10,7 +10,7 @@ import { buttonStyles, textStyle } from "../styles/inline-newsletter-puff";
 
 const NewsletterPuffButton = ({ updatingSubscription, onPress }) => (
   <Button
-    title={updatingSubscription ? "Saving…" : "Sign up to newsletter"}
+    title={updatingSubscription ? "Saving…" : "Sign up now"}
     onPress={onPress}
     style={buttonStyles}
     underlayColor="transparent"
