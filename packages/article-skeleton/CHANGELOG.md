@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.34.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.40...@times-components/article-skeleton@1.34.0) (2020-06-23)
+
+
+### Features
+
+* **TNLT-2519:** Decode imageUri and change NewsletterPuffButton copy ([#2627](https://github.com/newsuk/times-components/issues/2627)) ([b79a5c4](https://github.com/newsuk/times-components/commit/b79a5c407a45fe92ad03cc05de40cb5dfd5b54b1))
+
+
+
+
+
 ## [1.33.40](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.39...@times-components/article-skeleton@1.33.40) (2020-06-22)
 
 **Note:** Version bump only for package @times-components/article-skeleton
