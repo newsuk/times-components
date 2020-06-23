@@ -58,7 +58,7 @@ exports[`NewsletterPuffButton renders the button with the text \`Sign up to news
   }
   type="button"
 >
-  Sign up to newsletter
+  Sign up now
 </button>
 `;
 

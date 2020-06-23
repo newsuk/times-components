@@ -140,7 +140,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
         }
         type="button"
       >
-        Sign up to newsletter
+        Sign up now
       </button>
     </div>
   </div>
@@ -206,7 +206,7 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
         }
         type="button"
       >
-        Sign up to newsletter
+        Sign up now
       </button>
     </div>
   </div>

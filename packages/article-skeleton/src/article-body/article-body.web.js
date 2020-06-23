@@ -123,7 +123,7 @@ const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
             code={code}
             copy={decodeURIComponent(copy)}
             headline={decodeURIComponent(headline)}
-            imageUri={imageUri}
+            imageUri={decodeURIComponent(imageUri)}
             label={decodeURIComponent(label)}
           />
         );
