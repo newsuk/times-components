@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.11](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.3.10...@times-components/author-profile@6.3.11) (2020-06-22)
+
+
+### Bug Fixes
+
+* author profile page header loading issue ([#2620](https://github.com/newsuk/times-components/issues/2620)) ([9d15750](https://github.com/newsuk/times-components/commit/9d15750ee64d9f037167bd2ee87ca1c9deb09cc2))
+
+
+
+
+
 ## [6.3.10](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.3.9...@times-components/author-profile@6.3.10) (2020-06-22)
 
 **Note:** Version bump only for package @times-components/author-profile
