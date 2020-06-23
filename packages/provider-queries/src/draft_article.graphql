@@ -32,6 +32,7 @@ query ArticleDraftQuery($id: ID!) {
         ...imageProps
       }
     }
+    longRead
     relatedArticleSlice {
       sliceName: __typename
       ... on DraftStandardSlice {

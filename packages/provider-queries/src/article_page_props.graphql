@@ -30,6 +30,7 @@ fragment articlePageProps on Article {
       ...imageProps
     }
   }
+  longRead
   savingEnabled
   sharingEnabled
   standfirst

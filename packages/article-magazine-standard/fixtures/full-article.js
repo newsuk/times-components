@@ -1378,6 +1378,7 @@ const defaultLeadAsset = {
   id: "263b03a1-2ce6-4b94-b053-0d35316548c5",
   title: "Chris Reynolds Gordon at one of his party venues in London"
 };
+const defaultLongRead = false;
 const defaultRelatedArticleSlice = {
   __typename: "StandardSlice",
   items: [
@@ -2025,8 +2026,6 @@ const defaultTopics = [
 ];
 const defaultUrl =
   "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
-
-const defaultLongRead = false;
 
 const addProp = (obj, key, value) => {
   if (value != null) {

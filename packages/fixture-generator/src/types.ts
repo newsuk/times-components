@@ -1001,6 +1001,8 @@ export interface Article {
   flags?: (Flag | null)[] | null;
   /** List of time dependent with expiry time */
   expirableFlags?: (ExpirableFlag | null)[] | null;
+  /** Whether or not the article is considered a long read */
+  longRead?: boolean | null;
   /** Whether or not the article contains a video (as a lead asset or an inline video, or both) */
   hasVideo?: boolean | null;
   /** A longer SEO headline. Note this might not be populated so please use 'shortHeadline' as a fallback. */
