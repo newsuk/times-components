@@ -144,7 +144,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
       className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO"
     >
       <View
-        accessibilityLabel="Sign up to newsletter"
+        accessibilityLabel="Sign up now"
         accessibilityRole="button"
         accessible={true}
         focusable={true}
@@ -201,9 +201,9 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
               },
             ]
           }
-          title="Sign up to newsletter"
+          title="Sign up now"
         >
-          Sign up to newsletter
+          Sign up now
         </Text>
       </View>
     </View>
@@ -242,7 +242,7 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
       className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO"
     >
       <View
-        accessibilityLabel="Sign up to newsletter"
+        accessibilityLabel="Sign up now"
         accessibilityRole="button"
         accessible={true}
         focusable={true}
@@ -299,9 +299,9 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
               },
             ]
           }
-          title="Sign up to newsletter"
+          title="Sign up now"
         >
-          Sign up to newsletter
+          Sign up now
         </Text>
       </View>
     </View>
