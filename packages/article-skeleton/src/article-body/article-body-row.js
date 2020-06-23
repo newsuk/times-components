@@ -252,7 +252,7 @@ export default ({
             code={code}
             copy={decodeURIComponent(copy)}
             headline={decodeURIComponent(headline)}
-            imageUri={imageUri}
+            imageUri={decodeURIComponent(imageUri)}
             label={decodeURIComponent(label)}
           />
         );
