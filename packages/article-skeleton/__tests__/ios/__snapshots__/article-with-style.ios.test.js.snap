@@ -33,20 +33,28 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             }
           }
         >
-          <Text
+          <View
             style={
               Object {
-                "color": undefined,
-                "fontFamily": "TimesModern-Regular",
-                "fontSize": 216,
-                "left": 10,
-                "lineHeight": 204.23812500000003,
-                "position": "absolute",
+                "left": 45,
               }
             }
           >
-            T
-          </Text>
+            <Text
+              style={
+                Object {
+                  "color": undefined,
+                  "fontFamily": "TimesModern-Regular",
+                  "fontSize": 216,
+                  "left": 10,
+                  "lineHeight": 204.23812500000003,
+                  "position": "absolute",
+                }
+              }
+            >
+              T
+            </Text>
+          </View>
           <View
             style={
               Object {
@@ -427,20 +435,28 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
             }
           }
         >
-          <Text
+          <View
             style={
               Object {
-                "color": undefined,
-                "fontFamily": "TimesModern-Regular",
-                "fontSize": 216,
-                "left": 10,
-                "lineHeight": 241.55085937500002,
-                "position": "absolute",
+                "left": 45,
               }
             }
           >
-            Q
-          </Text>
+            <Text
+              style={
+                Object {
+                  "color": undefined,
+                  "fontFamily": "TimesModern-Regular",
+                  "fontSize": 216,
+                  "left": 10,
+                  "lineHeight": 241.55085937500002,
+                  "position": "absolute",
+                }
+              }
+            >
+              Q
+            </Text>
+          </View>
           <View
             style={
               Object {
@@ -1995,20 +2011,28 @@ exports[`15. an article starting with single quote 1`] = `
             }
           }
         >
-          <Text
+          <View
             style={
               Object {
-                "color": undefined,
-                "fontFamily": "TimesModern-Regular",
-                "fontSize": 216,
-                "left": 10,
-                "lineHeight": 220.9306640625,
-                "position": "absolute",
+                "left": 45,
               }
             }
           >
-            ‘S
-          </Text>
+            <Text
+              style={
+                Object {
+                  "color": undefined,
+                  "fontFamily": "TimesModern-Regular",
+                  "fontSize": 216,
+                  "left": 10,
+                  "lineHeight": 220.9306640625,
+                  "position": "absolute",
+                }
+              }
+            >
+              ‘S
+            </Text>
+          </View>
           <View
             style={
               Object {
@@ -2446,20 +2470,28 @@ exports[`16. an article starting with double quote 1`] = `
             }
           }
         >
-          <Text
+          <View
             style={
               Object {
-                "color": undefined,
-                "fontFamily": "TimesModern-Regular",
-                "fontSize": 216,
-                "left": 10,
-                "lineHeight": 220.9306640625,
-                "position": "absolute",
+                "left": 45,
               }
             }
           >
-            “S
-          </Text>
+            <Text
+              style={
+                Object {
+                  "color": undefined,
+                  "fontFamily": "TimesModern-Regular",
+                  "fontSize": 216,
+                  "left": 10,
+                  "lineHeight": 220.9306640625,
+                  "position": "absolute",
+                }
+              }
+            >
+              “S
+            </Text>
+          </View>
           <View
             style={
               Object {
