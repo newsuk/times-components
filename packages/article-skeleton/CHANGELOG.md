@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.34.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.34.0...@times-components/article-skeleton@1.34.1) (2020-06-24)
+
+
+### Bug Fixes
+
+* **TNLT-1893:** indents dropcap on tablet ([#2626](https://github.com/newsuk/times-components/issues/2626)) ([639f6cb](https://github.com/newsuk/times-components/commit/639f6cb90ca48aa150f01116ce35c1b8e105c95a))
+
+
+
+
+
 # [1.34.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.33.40...@times-components/article-skeleton@1.34.0) (2020-06-23)
 
 
