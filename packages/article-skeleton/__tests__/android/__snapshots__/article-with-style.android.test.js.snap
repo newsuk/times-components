@@ -36,7 +36,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           <View
             style={
               Object {
-                "left": 50,
+                "left": 45,
               }
             }
           >
@@ -438,7 +438,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
           <View
             style={
               Object {
-                "left": 50,
+                "left": 45,
               }
             }
           >
@@ -2014,7 +2014,7 @@ exports[`15. an article starting with single quote 1`] = `
           <View
             style={
               Object {
-                "left": 50,
+                "left": 45,
               }
             }
           >
@@ -2473,7 +2473,7 @@ exports[`16. an article starting with double quote 1`] = `
           <View
             style={
               Object {
-                "left": 50,
+                "left": 45,
               }
             }
           >

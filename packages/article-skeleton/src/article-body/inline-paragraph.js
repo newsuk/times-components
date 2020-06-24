@@ -53,7 +53,7 @@ const InlineParagraph = ({
 
   return [
     dropCap && (
-      <View style={{ left: gutters - spacing(1) }}>{dropCap.element}</View>
+      <View style={{ left: gutters - spacing(2) }}>{dropCap.element}</View>
     ),
     inline && (
       <View
