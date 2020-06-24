@@ -55,7 +55,6 @@ class MockArticle {
         }
       ],
       label: "label",
-      longRead: true,
       content: new MockMarkup()
         .addParagraphs(3)
         .addAds()
