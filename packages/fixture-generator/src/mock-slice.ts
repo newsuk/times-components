@@ -171,7 +171,7 @@ function mockLeadOneAndOneSlice(): LeadOneAndOneSliceWithName {
   ];
   const leadTile = {
     ...tiles[0],
-    article: { ...tiles[0].article, expirableFlags }
+    article: { ...tiles[0].article, expirableFlags, longRead: true }
   };
   return <LeadOneAndOneSliceWithName>{
     name: "LeadOneAndOneSlice",
