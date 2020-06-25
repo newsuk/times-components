@@ -45,7 +45,6 @@
     "@times-components-native/mocks": "0.1.15",
     "@times-components-native/provider-test-tools": "1.18.6",
     "@times-components-native/storybook": "4.1.54",
-    "@times-components-native/tealium-utils": "0.7.68",
     "@times-components-native/test-utils": "2.3.8",
     "apollo-client": "2.5.1",
     "babel-jest": "24.8.0",

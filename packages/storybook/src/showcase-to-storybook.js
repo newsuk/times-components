@@ -2,7 +2,6 @@ import React, { StrictMode } from "react";
 import { HelmetProvider } from "react-helmet-async";
 import PropTypes from "prop-types";
 import { Platform } from "react-native";
-import { addUserStateKnobs } from "@times-components-native/user-state";
 
 React.Fragment = ({ children }) => children;
 React.Fragment.propTypes = {
@@ -32,10 +31,6 @@ const addStories = (
     const args = [knobs, actions];
 
     builder.add(child.name, () => {
-      if (Platform.OS === "web") {
-        addUserStateKnobs(child.defaultUserState);
-      }
-
       return strictMode ? (
         <StrictWrapper>{child.component(...args)}</StrictWrapper>
       ) : (

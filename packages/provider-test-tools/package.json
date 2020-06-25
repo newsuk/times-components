@@ -53,7 +53,6 @@
     "@babel/core": "7.4.4",
     "@times-components-native/eslint-config-thetimes": "0.8.16",
     "@times-components-native/test-utils": "2.3.8",
-    "@times-components-native/webpack-configurator": "2.0.27",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",

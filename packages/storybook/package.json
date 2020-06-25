@@ -48,7 +48,6 @@
     "@storybook/addon-knobs": "5.3.18",
     "@storybook/react-native": "5.3.18",
     "@times-components-native/schema": "0.6.23",
-    "@times-components-native/user-state": "0.1.51",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link-http": "1.5.14",

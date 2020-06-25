@@ -44,7 +44,6 @@
   },
   "devDependencies": {
     "@times-components-native/eslint-config-thetimes": "0.8.16",
-    "@times-components-native/webpack-configurator": "2.0.27",
     "depcheck": "0.6.9",
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.12.1",
