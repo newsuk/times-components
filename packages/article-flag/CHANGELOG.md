@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.10.0](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.9.48...@times-components/article-flag@2.10.0) (2020-06-25)
+
+
+### Features
+
+* long read flag ([#2628](https://github.com/newsuk/times-components/issues/2628)) ([1e8cd32](https://github.com/newsuk/times-components/commit/1e8cd32edfb14a170da2ceeddf7579c73fc17eed))
+
+
+
+
+
 ## [2.9.48](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.9.47...@times-components/article-flag@2.9.48) (2020-06-22)
 
 **Note:** Version bump only for package @times-components/article-flag

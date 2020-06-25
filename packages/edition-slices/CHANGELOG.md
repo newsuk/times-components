@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.104.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.103.11...@times-components/edition-slices@0.104.0) (2020-06-25)
+
+
+### Features
+
+* long read flag ([#2628](https://github.com/newsuk/times-components/issues/2628)) ([1e8cd32](https://github.com/newsuk/times-components/commit/1e8cd32edfb14a170da2ceeddf7579c73fc17eed))
+
+
+
+
+
 ## [0.103.11](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.103.10...@times-components/edition-slices@0.103.11) (2020-06-22)
 
 **Note:** Version bump only for package @times-components/edition-slices

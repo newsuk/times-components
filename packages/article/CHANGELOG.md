@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.5.0](https://github.com/newsuk/times-components/compare/@times-components/article@7.4.114...@times-components/article@7.5.0) (2020-06-25)
+
+
+### Features
+
+* long read flag ([#2628](https://github.com/newsuk/times-components/issues/2628)) ([1e8cd32](https://github.com/newsuk/times-components/commit/1e8cd32edfb14a170da2ceeddf7579c73fc17eed))
+
+
+
+
+
 ## [7.4.114](https://github.com/newsuk/times-components/compare/@times-components/article@7.4.113...@times-components/article@7.4.114) (2020-06-24)
 
 **Note:** Version bump only for package @times-components/article

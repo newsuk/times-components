@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.19.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.18.6...@times-components/provider-test-tools@1.19.0) (2020-06-25)
+
+
+### Features
+
+* long read flag ([#2628](https://github.com/newsuk/times-components/issues/2628)) ([1e8cd32](https://github.com/newsuk/times-components/commit/1e8cd32edfb14a170da2ceeddf7579c73fc17eed))
+
+
+
+
+
 ## [1.18.6](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.18.5...@times-components/provider-test-tools@1.18.6) (2020-06-22)
 
 **Note:** Version bump only for package @times-components/provider-test-tools

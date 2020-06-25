@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.27.2...@times-components/fixture-generator@0.28.0) (2020-06-25)
+
+
+### Features
+
+* long read flag ([#2628](https://github.com/newsuk/times-components/issues/2628)) ([1e8cd32](https://github.com/newsuk/times-components/commit/1e8cd32edfb14a170da2ceeddf7579c73fc17eed))
+
+
+
+
+
 ## [0.27.2](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.27.1...@times-components/fixture-generator@0.27.2) (2020-03-12)
 
 
