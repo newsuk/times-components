@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/article-topics",
+  "name": "@times-components-native/article-topics",
   "version": "4.1.36",
+  "private": true,
   "description": "Map of Topics related to the Article",
   "main": "dist/article-topics",
   "dev": "src/article-topics",

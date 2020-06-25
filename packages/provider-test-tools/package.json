@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/provider-test-tools",
+  "name": "@times-components-native/provider-test-tools",
   "version": "1.18.6",
+  "private": true,
   "description": "utillity for testing apollo-client's behaviour",
   "main": "dist/index",
   "dev": "src/index",

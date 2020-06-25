@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/article-error",
+  "name": "@times-components-native/article-error",
   "version": "0.2.172",
+  "private": true,
   "description": "Article Error Template",
   "main": "dist/article-error",
   "dev": "src/article-error",

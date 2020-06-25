@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/card",
+  "name": "@times-components-native/card",
   "version": "6.4.25",
+  "private": true,
   "main": "dist/card",
   "dev": "src/card",
   "scripts": {

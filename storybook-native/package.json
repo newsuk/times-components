@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/storybook-native",
+  "name": "@times-components-native/storybook-native",
   "version": "0.2.13",
+  "private": true,
   "license": "BSD-3-Clause",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -42,6 +43,5 @@
     "prettier": "1.14.3",
     "react-native-storybook-loader": "1.8.0",
     "webpack": "4.30.0"
-  },
-  "private": true
+  }
 }

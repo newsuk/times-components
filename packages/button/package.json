@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/button",
+  "name": "@times-components-native/button",
   "version": "2.4.52",
+  "private": true,
   "description": "Button component",
   "main": "dist/button",
   "dev": "src/button",

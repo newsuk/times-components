@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/article-label",
+  "name": "@times-components-native/article-label",
   "version": "2.7.47",
+  "private": true,
   "description": "The article label",
   "main": "dist/article-label",
   "dev": "src/article-label",

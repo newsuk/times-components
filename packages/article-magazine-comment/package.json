@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/article-magazine-comment",
+  "name": "@times-components-native/article-magazine-comment",
   "version": "3.23.23",
+  "private": true,
   "description": "Magazine Comment Article Template",
   "main": "dist/article-magazine-comment",
   "dev": "src/article-magazine-comment",

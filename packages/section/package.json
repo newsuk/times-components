@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/section",
+  "name": "@times-components-native/section",
   "version": "1.6.65",
+  "private": true,
   "description": "Section Page",
   "main": "dist/section",
   "dev": "src/section",

@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/responsive",
+  "name": "@times-components-native/responsive",
   "version": "0.6.15",
+  "private": true,
   "description": "Responsive",
   "main": "dist/responsive",
   "dev": "src/responsive",

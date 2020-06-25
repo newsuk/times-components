@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/article-lead-asset",
+  "name": "@times-components-native/article-lead-asset",
   "version": "1.6.24",
+  "private": true,
   "description": "Generalised Lead Asset component for templates to consume & style",
   "main": "dist/article-lead-asset",
   "dev": "src/article-lead-asset",

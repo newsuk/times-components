@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/video",
+  "name": "@times-components-native/video",
   "version": "4.10.18",
+  "private": true,
   "main": "dist/video",
   "dev": "src/video",
   "scripts": {

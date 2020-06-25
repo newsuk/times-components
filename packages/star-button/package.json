@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/star-button",
+  "name": "@times-components-native/star-button",
   "version": "0.3.31",
+  "private": true,
   "description": "Star button",
   "main": "dist/star-button",
   "dev": "src/star-button",

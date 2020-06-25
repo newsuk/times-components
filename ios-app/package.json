@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/ios-app",
+  "name": "@times-components-native/ios-app",
   "version": "0.17.129",
+  "private": true,
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "cat package.json | grep version | head -1 | sed 's/[\",\t ]//g' | awk -F: '{ print \"Bundle Version: \" $2 }' > ios-assets/js/version.meta",
@@ -25,6 +26,5 @@
     "metro-react-native-babel-preset": "0.53.1",
     "prettier": "1.14.3",
     "webpack": "4.30.0"
-  },
-  "private": true
+  }
 }

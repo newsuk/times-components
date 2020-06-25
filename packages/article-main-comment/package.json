@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/article-main-comment",
+  "name": "@times-components-native/article-main-comment",
   "version": "2.23.23",
+  "private": true,
   "description": "Main Comment Article Template",
   "main": "dist/article-main-comment",
   "dev": "src/article-main-comment",

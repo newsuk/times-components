@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/edition-slices",
+  "name": "@times-components-native/edition-slices",
   "version": "0.103.11",
+  "private": true,
   "description": "Components used in edition pages including slices and tiles",
   "main": "dist/edition-slices",
   "dev": "src/edition-slices",

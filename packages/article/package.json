@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/article",
+  "name": "@times-components-native/article",
   "version": "7.4.114",
+  "private": true,
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",

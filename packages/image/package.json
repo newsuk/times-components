@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/image",
+  "name": "@times-components-native/image",
   "version": "6.7.25",
+  "private": true,
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {

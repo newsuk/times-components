@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/date-publication",
+  "name": "@times-components-native/date-publication",
   "version": "0.21.49",
+  "private": true,
   "description": "Date and Publication properties",
   "main": "dist/date-publication",
   "dev": "src/date-publication",

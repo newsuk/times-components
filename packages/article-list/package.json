@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/article-list",
+  "name": "@times-components-native/article-list",
   "version": "9.7.11",
+  "private": true,
   "description": "Paginated list of articles",
   "main": "dist/article-list",
   "dev": "src/article-list",

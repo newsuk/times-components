@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/depend",
+  "name": "@times-components-native/depend",
   "version": "2.1.26",
+  "private": true,
   "description": "dependency analyzer and fixer",
   "main": "dist/depend",
   "scripts": {

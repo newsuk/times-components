@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/utils",
+  "name": "@times-components-native/utils",
   "version": "6.3.14",
+  "private": true,
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "main": "dist",
   "dev": "src",

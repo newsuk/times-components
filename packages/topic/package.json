@@ -1,6 +1,7 @@
 {
-  "name": "@times-components/topic",
+  "name": "@times-components-native/topic",
   "version": "5.3.11",
+  "private": true,
   "description": "Topic page component",
   "main": "dist/topic",
   "dev": "src/topic",
