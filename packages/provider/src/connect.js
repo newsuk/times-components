@@ -75,7 +75,7 @@ QueryProvider.propTypes = {
 
 QueryProvider.defaultProps = {
   propsToVariables: i => i,
-  ssr: true
+  ssr: undefined
 };
 
 const connectGraphql = (query, propsToVariables) => props => (
