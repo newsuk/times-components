@@ -17,6 +17,10 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
     <Text>
       Some Short Headline
     </Text>
+    <ArticleFlags
+      longRead={false}
+      withContainer={true}
+    />
     <View>
       <View>
         <ArticleBylineWithLinks
@@ -85,6 +89,10 @@ exports[`4. an article with ads 1`] = `
     <Text>
       Some Headline
     </Text>
+    <ArticleFlags
+      longRead={false}
+      withContainer={true}
+    />
     <View>
       <View>
         <ArticleBylineWithLinks
@@ -159,18 +167,18 @@ exports[`7. an article with no author 1`] = `
     <Text>
       Some Headline
     </Text>
-    <View>
-      <ArticleFlags
-        flags={
-          Array [
-            Object {
-              "expiryTime": "2019-03-14T12:00:00.000Z",
-              "type": "NEW",
-            },
-          ]
-        }
-      />
-    </View>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2019-03-14T12:00:00.000Z",
+            "type": "NEW",
+          },
+        ]
+      }
+      longRead={false}
+      withContainer={true}
+    />
     <Text
       accessibilityRole="header"
       aria-level="2"

@@ -35,10 +35,6 @@ const sharedStyles = {
   datePulicationTablet: {
     marginTop: spacing(0)
   },
-  flags: {
-    marginBottom: spacing(3),
-    marginTop: spacing(1)
-  },
   headerText: {
     alignItems: "center"
   },

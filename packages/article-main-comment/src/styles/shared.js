@@ -40,10 +40,6 @@ const sharedStyles = {
   datePublicationTablet: {
     marginTop: "auto"
   },
-  flags: {
-    marginBottom: spacing(3),
-    marginTop: spacing(1)
-  },
   header: {
     // TODO: put back after design signoff
     marginBottom: spacing(3),

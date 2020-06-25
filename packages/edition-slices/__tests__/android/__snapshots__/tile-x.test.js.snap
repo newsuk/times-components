@@ -76,6 +76,7 @@ exports[`tile x huge 1`] = `
               },
             ]
           }
+          longRead={true}
         />
         <Text
           numberOfLines={2}
@@ -179,6 +180,7 @@ exports[`tile x medium 1`] = `
               },
             ]
           }
+          longRead={true}
         />
         <Text
           numberOfLines={2}
@@ -282,6 +284,7 @@ exports[`tile x wide 1`] = `
               },
             ]
           }
+          longRead={true}
         />
         <Text
           numberOfLines={2}

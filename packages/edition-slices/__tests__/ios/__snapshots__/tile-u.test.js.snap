@@ -62,6 +62,7 @@ exports[`tile u without breakpoint 1`] = `
           },
         ]
       }
+      longRead={true}
     />
   </View>
 </Link>

@@ -40,14 +40,19 @@ class TileSummary extends Component {
   renderFlags() {
     const {
       tile: {
-        article: { expirableFlags }
+        article: { expirableFlags, longRead }
       },
       flagColour,
       flagsStyle
     } = this.props;
 
     return (
-      <ArticleFlags {...flagColour} style={flagsStyle} flags={expirableFlags} />
+      <ArticleFlags
+        {...flagColour}
+        style={flagsStyle}
+        flags={expirableFlags}
+        longRead={longRead}
+      />
     );
   }
 

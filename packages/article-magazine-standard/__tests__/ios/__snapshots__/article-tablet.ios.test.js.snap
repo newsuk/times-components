@@ -38,16 +38,7 @@ exports[`1. article magazine standard - tablet 1`] = `
     >
       Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 15,
-          "marginTop": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
     <Text
       style={
         Object {

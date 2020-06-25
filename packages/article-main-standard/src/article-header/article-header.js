@@ -13,38 +13,43 @@ const ArticleHeader = ({
   headline,
   isTablet,
   label,
+  longRead,
   standfirst
-}) => (
-  <View
-    style={[
-      styles.articleMainContentRow,
-      isTablet && styles.articleMainContentRowTablet,
-      isTablet && styles.headerTablet
-    ]}
-  >
-    <HeaderLabel isVideo={hasVideo} label={label} />
-    <Text
-      selectable
+}) => {
+  const hasActiveFlags = getActiveFlags(flags).length > 0;
+
+  return (
+    <View
       style={[
-        styles.articleHeadLineText,
-        !(getActiveFlags(flags).length > 0 || standfirst) &&
-          styles.articleHeadlineSpacer,
-        isTablet && styles.articleHeadLineTextTablet
+        styles.articleMainContentRow,
+        isTablet && styles.articleMainContentRowTablet,
+        isTablet && styles.headerTablet
       ]}
     >
-      {headline}
-    </Text>
-    <HeaderStandfirst
-      hasFlags={getActiveFlags(flags).length > 0}
-      standfirst={standfirst}
-    />
-    {getActiveFlags(flags).length > 0 && (
-      <View style={styles.flags}>
-        <ArticleFlags flags={flags} />
-      </View>
-    )}
-  </View>
-);
+      <HeaderLabel isVideo={hasVideo} label={label} />
+      <Text
+        selectable
+        style={[
+          styles.articleHeadLineText,
+          !(hasActiveFlags || longRead || standfirst) &&
+            styles.articleHeadlineSpacer,
+          isTablet && styles.articleHeadLineTextTablet
+        ]}
+      >
+        {headline}
+      </Text>
+      <HeaderStandfirst
+        hasFlags={hasActiveFlags || longRead}
+        standfirst={standfirst}
+      />
+      {(hasActiveFlags || longRead) && (
+        <View style={styles.flags}>
+          <ArticleFlags flags={flags} longRead={longRead} />
+        </View>
+      )}
+    </View>
+  );
+};
 
 ArticleHeader.propTypes = {
   flags: PropTypes.arrayOf(PropTypes.string),
@@ -52,6 +57,7 @@ ArticleHeader.propTypes = {
   headline: PropTypes.string.isRequired,
   isTablet: PropTypes.bool,
   label: PropTypes.string,
+  longRead: PropTypes.bool,
   standfirst: PropTypes.string
 };
 
@@ -60,6 +66,7 @@ ArticleHeader.defaultProps = {
   hasVideo: false,
   isTablet: false,
   label: null,
+  longRead: false,
   standfirst: null
 };
 

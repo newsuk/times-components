@@ -71,6 +71,7 @@ exports[`tile as huge 1`] = `
           },
         ]
       }
+      longRead={true}
     />
     <Text
       style={
@@ -166,6 +167,7 @@ exports[`tile as medium 1`] = `
           },
         ]
       }
+      longRead={true}
     />
     <Text
       style={
@@ -261,6 +263,7 @@ exports[`tile as wide 1`] = `
           },
         ]
       }
+      longRead={true}
     />
     <Text
       style={

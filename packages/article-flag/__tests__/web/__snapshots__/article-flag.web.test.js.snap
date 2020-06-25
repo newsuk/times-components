@@ -88,7 +88,18 @@ exports[`8. sponsored article flag 1`] = `
 </div>
 `;
 
-exports[`9. article flags 1`] = `
+exports[`9. long read article flag 1`] = `
+<div>
+  <div />
+  <div
+    aria-label="long read Flag"
+  >
+    long read
+  </div>
+</div>
+`;
+
+exports[`10. article flags 1`] = `
 <div>
   <div>
     <div>
@@ -110,7 +121,54 @@ exports[`9. article flags 1`] = `
       </div>
     </div>
   </div>
+  <div>
+    <div>
+      <div />
+      <div
+        aria-label="long read Flag"
+      >
+        long read
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
-exports[`10. article flags with no flags 1`] = `null`;
+exports[`11. article flags with container 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <div />
+        <div
+          aria-label="updated Flag"
+        >
+          updated
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div />
+        <div
+          aria-label="exclusive Flag"
+        >
+          exclusive
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div />
+        <div
+          aria-label="long read Flag"
+        >
+          long read
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`12. article flags with no flags 1`] = `null`;

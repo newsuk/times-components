@@ -54,7 +54,9 @@ class MockArticle {
           expiryTime: "2030-03-14T12:00:00.000Z"
         }
       ],
+      isTeased: false,
       label: "label",
+      longRead: true,
       content: new MockMarkup()
         .addParagraphs(3)
         .addAds()

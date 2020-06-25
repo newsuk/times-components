@@ -29,10 +29,6 @@ const sharedStyles = {
   datePublicationTablet: {
     marginTop: "auto"
   },
-  flags: {
-    marginBottom: spacing(3),
-    marginTop: spacing(1)
-  },
   label: {
     marginBottom: spacing(2)
   },

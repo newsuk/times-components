@@ -70,6 +70,7 @@ exports[`tile c without breakpoint 1`] = `
           },
         ]
       }
+      longRead={true}
       style={
         Object {
           "marginBottom": 10,

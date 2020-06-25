@@ -21,7 +21,9 @@ const articleFlagsPropTypes = {
       expiryTime: PropTypes.string,
       type: PropTypes.string
     })
-  )
+  ),
+  longRead: PropTypes.bool,
+  withContainer: PropTypes.bool
 };
 
 const articleFlagDefaultProps = {

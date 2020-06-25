@@ -4,7 +4,8 @@ import {
   NewArticleFlag,
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
-  SponsoredArticleFlag
+  SponsoredArticleFlag,
+  LongReadArticleFlag
 } from "./src/article-flag";
 
 export default {
@@ -30,6 +31,11 @@ export default {
       type: "story"
     },
     {
+      component: () => <LongReadArticleFlag />,
+      name: "Article Flag (Long Read)",
+      type: "story"
+    },
+    {
       component: () => <NewArticleFlag color="blue" />,
       name: "Article Flag with text colour",
       type: "story"
@@ -43,9 +49,26 @@ export default {
             { expiryTime: "2030-03-14T12:00:00.000Z", type: "NEW" },
             { expiryTime: "2030-03-14T12:00:00.000Z", type: "SPONSORED" }
           ]}
+          longRead
         />
       ),
       name: "Article Flags",
+      type: "story"
+    },
+    {
+      component: () => (
+        <ArticleFlags
+          flags={[
+            { expiryTime: "2030-03-13T12:00:00.000Z", type: "UPDATED" },
+            { expiryTime: "2030-03-14T12:00:00.000Z", type: "EXCLUSIVE" },
+            { expiryTime: "2030-03-14T12:00:00.000Z", type: "NEW" },
+            { expiryTime: "2030-03-14T12:00:00.000Z", type: "SPONSORED" }
+          ]}
+          longRead
+          withContainer
+        />
+      ),
+      name: "Article Flags with container",
       type: "story"
     }
   ],

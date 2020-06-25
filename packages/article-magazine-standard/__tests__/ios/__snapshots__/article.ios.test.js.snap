@@ -10,6 +10,10 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
     <Text>
       Some Short Headline
     </Text>
+    <ArticleFlags
+      longRead={false}
+      withContainer={true}
+    />
     <View>
       <View>
         <ArticleBylineWithLinks
@@ -72,6 +76,10 @@ exports[`4. an article with ads 1`] = `
     <Text>
       Some Headline
     </Text>
+    <ArticleFlags
+      longRead={false}
+      withContainer={true}
+    />
     <View>
       <View>
         <ArticleBylineWithLinks

@@ -73,6 +73,7 @@ exports[`tile ar huge 1`] = `
               },
             ]
           }
+          longRead={true}
         />
         <Text
           numberOfLines={2}
@@ -173,6 +174,7 @@ exports[`tile ar medium 1`] = `
               },
             ]
           }
+          longRead={true}
         />
         <Text
           numberOfLines={2}
@@ -273,6 +275,7 @@ exports[`tile ar wide 1`] = `
               },
             ]
           }
+          longRead={true}
         />
         <Text
           numberOfLines={2}
@@ -373,6 +376,7 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
               },
             ]
           }
+          longRead={true}
         />
         <Text
           numberOfLines={2}

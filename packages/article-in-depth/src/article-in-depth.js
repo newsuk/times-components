@@ -36,6 +36,7 @@ class ArticleInDepth extends Component {
       hasVideo,
       headline,
       label,
+      longRead,
       publicationName,
       publishedTime,
       shortHeadline,
@@ -53,6 +54,7 @@ class ArticleInDepth extends Component {
               headline={getHeadline(headline, shortHeadline)}
               isTablet={isTablet}
               label={label}
+              longRead={longRead}
               standfirst={standfirst}
               textColour={textColour}
             />

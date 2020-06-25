@@ -29,6 +29,8 @@ export interface ArticleInput {
 
   dropcapsDisabled: boolean;
 
+  embeddedContent?: EmbeddedContentInput | null;
+
   expirableFlags: ExpirableFlagInput[];
 
   headline?: string | null;
@@ -49,6 +51,8 @@ export interface ArticleInput {
 
   section?: SectionName | null;
 
+  commercialSection?: string | null;
+
   publicationName: PublicationName;
 
   publishedTime: DateTime;
@@ -58,6 +62,8 @@ export interface ArticleInput {
   textColour?: ColourInput | null;
 
   savingEnabled: boolean;
+
+  seoDescription?: string | null;
 
   sharingEnabled: boolean;
 
@@ -74,6 +80,8 @@ export interface ArticleInput {
   content: ContentFragmentInput[];
 
   template?: TemplateType | null;
+
+  workDesk?: WorkDeskName | null;
 }
 
 export interface MediaInput {
@@ -99,9 +107,9 @@ export interface CropInput {
 
   ratio: Ratio;
 
-  horizontalOffset: number;
+  horizontalOffset: UnsignedInt;
 
-  verticalOffset: number;
+  verticalOffset: UnsignedInt;
 
   width: number;
 
@@ -126,6 +134,10 @@ export interface VideoInput {
   brightcoveVideoId: string;
 
   brightcoveAccountId: string;
+
+  paidOnly: boolean;
+
+  skySports: boolean;
 
   posterImage: ImageInput;
 
@@ -152,6 +164,26 @@ export interface RgbaInput {
   blue: TinyInt;
 
   alpha: UnitInterval;
+}
+
+export interface EmbeddedContentInput {
+  authorised: EmbeddedContentElementInput;
+
+  unauthorised: EmbeddedContentElementInput;
+}
+
+export interface EmbeddedContentElementInput {
+  content: string;
+
+  head?: string | null;
+
+  scripts: EmbeddedComponentResourceInput[];
+}
+
+export interface EmbeddedComponentResourceInput {
+  name: string;
+
+  url: string;
 }
 
 export interface ExpirableFlagInput {
@@ -335,6 +367,118 @@ export interface DailyUniversalRegisterItemInput {
 
   content: Markup;
 }
+/** all the booleans were left as we can default them to false/true in Ingestdepending on the fieldarrays were left as required because we can supply empty onesthese comments should be deleted before merging!!! */
+export interface DraftArticleInput {
+  authors: Slug[];
+
+  byline?: Markup | null;
+
+  bylines?: BylineInput[] | null;
+
+  backgroundColour?: ColourInput | null;
+
+  dropcapsDisabled: boolean;
+  /** we can use this field if we are ok with the required contentwhich we could default to an empty string in Ingest */
+  embeddedContent?: EmbeddedContentInput | null;
+
+  expirableFlags: ExpirableFlagInput[];
+
+  headline?: string | null;
+
+  shortHeadline?: string | null;
+
+  id: Uuid;
+
+  label?: string | null;
+  /** we can use MediaInput only if we are ok with the required title */
+  leadAsset?: MediaInput | null;
+
+  listingAsset?: MediaInput | null;
+
+  commentsEnabled: boolean;
+
+  commentsPreModerated?: boolean | null;
+
+  commercialTags: string[];
+
+  commercialSectionTags?: string[] | null;
+
+  section?: SectionName | null;
+
+  seoDescription?: string | null;
+
+  commercialSection?: string | null;
+
+  publicationName: PublicationName;
+  /** may appear when previewing a published article */
+  publishedTime?: DateTime | null;
+  /** we can use the same input as it only specifies articles by UUIDthe only problem is MediaInput which has a required 'title' fieldwhich we could default to an empty string in Ingest */
+  relatedArticleSlice?: DraftArticleSliceInput | null;
+
+  textColour?: ColourInput | null;
+
+  savingEnabled: boolean;
+
+  sharingEnabled: boolean;
+
+  slug?: Slug | null;
+
+  standfirst?: string | null;
+
+  strapline?: string | null;
+  /** always available from Methode */
+  updatedTime: DateTime;
+
+  isLegacy: boolean;
+  /** same thing as with ArticleSliceInput, there is an ImageInputwhich has a required title which we may default to an empty string */
+  content: ContentFragmentInput[];
+
+  template?: TemplateType | null;
+
+  workDesk?: WorkDeskName | null;
+}
+
+export interface DraftArticleSliceInput {
+  standardSlice?: DraftStandardSliceInput | null;
+
+  leadOneAndTwoSlice?: DraftLeadOneAndTwoSliceInput | null;
+
+  opinionOneAndTwoSlice?: DraftOpinionOneAndTwoSliceInput | null;
+}
+
+export interface DraftStandardSliceInput {
+  items: DraftTileInput[];
+}
+
+export interface DraftTileInput {
+  articleId?: Uuid | null;
+
+  draftArticleId?: Uuid | null;
+
+  headline?: string | null;
+
+  leadAsset?: MediaInput | null;
+
+  strapline?: string | null;
+
+  teaser?: Markup | null;
+}
+
+export interface DraftLeadOneAndTwoSliceInput {
+  lead: DraftTileInput;
+
+  support1: DraftTileInput;
+
+  support2: DraftTileInput;
+}
+
+export interface DraftOpinionOneAndTwoSliceInput {
+  opinion: DraftTileInput;
+
+  support1: DraftTileInput;
+
+  support2: DraftTileInput;
+}
 
 export interface EditionInput {
   id: Uuid;
@@ -421,9 +565,9 @@ export interface StandardSectionSliceInput {
 
   twoPicAndSixNoPicSlice?: TwoPicAndSixNoPicSliceInput | null;
 
-  puff?: PuffSliceInput | null;
+  puffSlice?: PuffSliceInput | null;
 
-  inTheNews?: InTheNewsSliceInput | null;
+  inTheNewsSlice?: InTheNewsSliceInput | null;
 
   dailyUniversalRegister?: DailyUniversalRegisterInput | null;
 }
@@ -599,21 +743,45 @@ export interface PuffInput {
 
   colour: ColourInput;
 
-  mainLink: NamedLinkInput;
+  mainLink: PuffMainLinkInput;
 
-  topicLink: NamedLinkInput;
+  secondaryLink: PuffSecondaryLinkInput;
 
   major: boolean;
+
+  leadImage?: ImageInput | null;
+
+  strapline?: string | null;
 }
 
-export interface NamedLinkInput {
-  name: string;
+export interface PuffMainLinkInput {
+  articleId?: Uuid | null;
 
-  url: Url;
+  link?: string | null;
+}
+
+export interface PuffSecondaryLinkInput {
+  articleId?: Uuid | null;
+
+  link?: string | null;
+
+  anchor?: string | null;
+
+  label: string;
 }
 
 export interface InTheNewsSliceInput {
-  items: TileInput[];
+  items: PuffLiteInput[];
+}
+
+export interface PuffLiteInput {
+  title: string;
+
+  strapline: string;
+
+  mainLink: PuffMainLinkInput;
+
+  leadImage: ImageInput;
 }
 
 export interface PuzzleSectionInput {
@@ -722,22 +890,8 @@ export interface PaginateArgs {
   desc?: boolean | null;
 }
 
-export interface PuffMainLinkInput {
-  tile?: TileInput | null;
-
-  namedLink?: NamedLinkInput | null;
-}
-
 export interface PuffSectionItemInput {
   puff?: PuffSliceInput | null;
-}
-
-export interface PuffTopicLinkInput {
-  standardSection?: StandardSectionInput | null;
-
-  puzzleSection?: PuzzleSectionInput | null;
-
-  namedLink?: NamedLinkInput | null;
 }
 
 export interface TagUpdateInput {
@@ -750,6 +904,8 @@ export interface TopicInput {
   slug: Slug;
 
   description?: RichText | null;
+
+  leadImage?: ImageInput | null;
 }
 
 export interface TopicTagInput {
@@ -764,6 +920,8 @@ export interface TopicUpdateInput {
   slug: Slug;
 
   description: RichText;
+
+  leadImage?: ImageInput | null;
 }
 
 export enum Flag {
@@ -801,6 +959,39 @@ export enum PublicationName {
   Sundaytimes = "SUNDAYTIMES",
   Times = "TIMES"
 }
+
+export enum TemplateType {
+  Magazinecomment = "magazinecomment",
+  Indepth = "indepth",
+  Magazinestandard = "magazinestandard",
+  Maincomment = "maincomment",
+  Mainstandard = "mainstandard",
+  Takeoverpage = "takeoverpage"
+}
+
+export enum WorkDeskName {
+  Bricksmortar = "bricksmortar",
+  Business = "business",
+  Comment = "comment",
+  Culture = "culture",
+  Home = "home",
+  Money = "money",
+  News = "news",
+  Newsreview = "newsreview",
+  Puzzle = "puzzle",
+  Register = "register",
+  Saturdayreview = "saturdayreview",
+  Sport = "sport",
+  Style = "style",
+  Thedish = "thedish",
+  Thegame = "thegame",
+  Thesundaytimesmagazine = "thesundaytimesmagazine",
+  Thetimesmagazine = "thetimesmagazine",
+  Times2 = "times2",
+  Travel = "travel",
+  Weekend = "weekend",
+  World = "world"
+}
 /** Predefined template names that should be used by all systems interested in templates to denote the template layout */
 export enum Template {
   Default = "DEFAULT",
@@ -817,14 +1008,6 @@ export enum SynonymType {
   WorkOfArt = "WORK_OF_ART",
   ConsumerGood = "CONSUMER_GOOD",
   Other = "OTHER"
-}
-
-export enum TemplateType {
-  Magazinecomment = "magazinecomment",
-  Indepth = "indepth",
-  Magazinestandard = "magazinestandard",
-  Maincomment = "maincomment",
-  Mainstandard = "mainstandard"
 }
 
 export enum Region {
@@ -883,6 +1066,9 @@ export type BigInt = any;
 /** Represents a date and time of day in ISO 8601 */
 export type ShortDate = any;
 
+/** Unsigned integer (range of 0 - MAX_SAFE_INTEGER) */
+export type UnsignedInt = any;
+
 /** An dictionary of string-based key-value pairs */
 export type Dictionary = any;
 
@@ -893,6 +1079,79 @@ export type Dictionary = any;
 // ====================================================
 // Interfaces
 // ====================================================
+
+/** This interface will be shared by Article and DraftArticleit will allow us to query their common fields in union types */
+export interface ArticleInterface {
+  backgroundColour?: Colour | null;
+
+  byline?: Markup | null;
+
+  bylines?: (ArticleByline | null)[] | null;
+
+  content?: Markup | null;
+
+  dropcapsDisabled?: boolean | null;
+
+  expirableFlags?: (ExpirableFlag | null)[] | null;
+
+  hasVideo?: boolean | null;
+
+  headline?: string | null;
+
+  id: Uuid;
+
+  label?: string | null;
+
+  commentsEnabled?: boolean | null;
+
+  commentsPreModerated?: boolean | null;
+
+  commercialTags?: (string | null)[] | null;
+
+  keywords: string[];
+
+  seoDescription?: string | null;
+
+  shortHeadline?: string | null;
+
+  shortIdentifier?: string | null;
+
+  section?: SectionName | null;
+
+  commercialSection?: string | null;
+
+  commercialSectionTags?: string[] | null;
+
+  leadAsset?: Media | null;
+
+  listingAsset?: Media | null;
+
+  publicationName: PublicationName;
+
+  publishedTime?: DateTime | null;
+
+  updatedTime?: DateTime | null;
+
+  savingEnabled?: boolean | null;
+
+  sharingEnabled?: boolean | null;
+
+  slug?: string | null;
+
+  standfirst?: string | null;
+
+  strapline?: string | null;
+
+  summary?: Markup | null;
+
+  textColour?: Colour | null;
+
+  url?: Url | null;
+
+  template?: TemplateType | null;
+
+  workDesk?: WorkDeskName | null;
+}
 
 export interface Byline {
   byline: Markup;
@@ -921,6 +1180,10 @@ export interface Section {
   colour: Colour;
 }
 
+export interface DraftArticleSlice {
+  items: DraftTile[];
+}
+
 // ====================================================
 // Types
 // ====================================================
@@ -934,6 +1197,10 @@ export interface Query {
   article?: Article | null;
 
   articles?: Articles | null;
+
+  draftArticle?: DraftArticle | null;
+
+  draftArticles?: DraftArticles | null;
 
   edition?: Edition | null;
 
@@ -954,6 +1221,10 @@ export interface Query {
   topics?: TopicConnection | null;
   /** The currently authenticated user */
   viewer?: User | null;
+
+  account?: Account | null;
+
+  newsletter?: Newsletter | null;
 }
 
 /** An author of a piece of writing */
@@ -984,7 +1255,7 @@ export interface AuthorArticles {
   list?: (Article | null)[] | null;
 }
 
-export interface Article {
+export interface Article extends ArticleInterface {
   /** Used for indepth templates to define the background colour to be used. */
   backgroundColour?: Colour | null;
   /** An AST of one or more authors that may contain job titles and/or locations */
@@ -1009,6 +1280,8 @@ export interface Article {
   id: Uuid;
   /** A user specific flag that indicates whether the article has been bookmarked(saved) by the user. This property can only be accessed by logged in users. */
   isBookmarked?: boolean | null;
+  /** A user specific flag that indicates whether the article's content is returned in full or teased only */
+  isTeased: boolean;
   /** A free piece of text to describe an article */
   label?: string | null;
   /** A flag set outside of the commenting system, usually used for controversial articles */
@@ -1019,14 +1292,20 @@ export interface Article {
   commentCount?: number | null;
   /** A rarely populated field that is a list of free text such as ["luxury", "ferrari"] */
   commercialTags?: (string | null)[] | null;
+  /** A field for take-over pages to use instead of content */
+  embeddedContent?: EmbeddedContent | null;
   /** A field that is populated from the article headline, a string delineated withcommas such as ["this", "is", "a", "headline"] */
   keywords: string[];
+  /** A field returning SEO description of the article content */
+  seoDescription?: string | null;
   /** A shorter headline useful for when space is at a premium. Note this may returnnull so please use `headline` field as a fallback. */
   shortHeadline?: string | null;
   /** Hashed version of the article identifier */
   shortIdentifier?: string | null;
   /** The name of the segment that the article appears in, for example Sport in a newspaper */
   section?: SectionName | null;
+  /** The name of the commercial segment that the article appears in, for special commercial campaign */
+  commercialSection?: string | null;
   /** A field that is a list of free text for commercial section tags */
   commercialSectionTags?: string[] | null;
 
@@ -1079,6 +1358,10 @@ export interface Article {
   synonyms: ArticleSynonymConnection;
 
   topicConnection: ArticleTopicConnection;
+  /** The name of the segment that the article appears in, for example Sport in a newspaper */
+  workDesk?: WorkDeskName | null;
+
+  longRead?: boolean | null;
 }
 
 export interface Colour {
@@ -1157,11 +1440,29 @@ export interface Video {
 
   brightcoveVideoId?: string | null;
 
+  paidOnly?: boolean | null;
+
+  skySports?: boolean | null;
+
   brightcoveAccountId?: string | null;
 
   posterImage?: Image | null;
 
   is360?: boolean | null;
+}
+
+export interface EmbeddedContent {
+  content: string;
+
+  head?: string | null;
+
+  scripts: EmbeddedComponentResource[];
+}
+
+export interface EmbeddedComponentResource {
+  name: string;
+
+  url: string;
 }
 
 /** An article presentation */
@@ -1199,6 +1500,8 @@ export interface Topic {
   createdAt?: DateTime | null;
 
   updatedAt?: DateTime | null;
+
+  leadImage?: Image | null;
 }
 
 export interface TopicArticles {
@@ -1347,25 +1650,135 @@ export interface Articles {
   list: (Article | null)[];
 }
 
+export interface DraftArticle extends ArticleInterface {
+  /** Used for indepth templates to define the background colour to be used. */
+  backgroundColour?: Colour | null;
+  /** An AST of one or more authors that may contain job titles and/or locations */
+  byline?: Markup | null;
+  /** Text or structured bylines for one or more authors */
+  bylines?: (ArticleByline | null)[] | null;
+  /** The content for the article in the shape of an AST */
+  content?: Markup | null;
+  /** Ability to disable dropcaps even if the given template has them by default */
+  dropcapsDisabled?: boolean | null;
+  /** List of time dependent with expiry time */
+  expirableFlags?: (ExpirableFlag | null)[] | null;
+  /** Whether or not the article contains a video (as a lead asset or an inline video, or both) */
+  hasVideo?: boolean | null;
+  /** A longer SEO headline. Note this might not be populated so please use 'shortHeadline' as a fallback. */
+  headline?: string | null;
+
+  id: Uuid;
+  /** A free piece of text to describe an article */
+  label?: string | null;
+  /** A flag set outside of the commenting system, usually used for controversial articles */
+  commentsEnabled?: boolean | null;
+  /** The commenting system moderation policy for this article */
+  commentsPreModerated?: boolean | null;
+  /** A rarely populated field that is a list of free text such as ["luxury", "ferrari"] */
+  commercialTags?: (string | null)[] | null;
+  /** A field for take-over pages to use instead of content */
+  embeddedContent?: DraftEmbeddedContent | null;
+  /** A field that is populated from the article headline, a string delineated withcommas such as ["this", "is", "a", "headline"] */
+  keywords: string[];
+  /** A field returning SEO description of the article content */
+  seoDescription?: string | null;
+  /** A shorter headline useful for when space is at a premium. Note this may returnnull so please use `headline` field as a fallback. */
+  shortHeadline?: string | null;
+  /** Hashed version of the article identifier */
+  shortIdentifier?: string | null;
+  /** The name of the segment that the article appears in, for example Sport in a newspaper */
+  section?: SectionName | null;
+  /** The name of the commercial segment that the article appears in, for special commercial campaign */
+  commercialSection?: string | null;
+  /** A field that is a list of free text for commercial section tags */
+  commercialSectionTags?: string[] | null;
+
+  leadAsset?: Media | null;
+
+  listingAsset?: Media | null;
+
+  publicationName: PublicationName;
+
+  publishedTime?: DateTime | null;
+
+  updatedTime?: DateTime | null;
+  /** Related article slice */
+  relatedArticleSlice?: DraftArticleSlice | null;
+
+  savingEnabled?: boolean | null;
+
+  sharingEnabled?: boolean | null;
+  /** Customisable field in the CMS, that is by default a slugified version of the article title */
+  slug?: string | null;
+  /** A brief introductory summary, typically appearing immediately after theheadline and typographically distinct from the rest of the article */
+  standfirst?: string | null;
+  /** A brief introductory summary, typically appearing immediately after the standfirst */
+  strapline?: string | null;
+  /** A predefined truncated version of the article with a max length of the teaser,can optionally choose a shorter length. Use this to avoid ACS. */
+  summary?: Markup | null;
+  /** Used for indepth templates to define the text colour to be used. */
+  textColour?: Colour | null;
+
+  url?: Url | null;
+
+  template?: TemplateType | null;
+
+  workDesk?: WorkDeskName | null;
+}
+
+export interface DraftEmbeddedContent {
+  authorised?: EmbeddedContent | null;
+
+  unauthorised?: EmbeddedContent | null;
+}
+
+/** An article presentation */
+export interface DraftTile {
+  draftArticleId?: Uuid | null;
+
+  articleId?: Uuid | null;
+
+  article: DraftTileArticle;
+
+  headline?: string | null;
+
+  leadAsset?: Media | null;
+
+  strapline?: string | null;
+
+  teaser?: Markup | null;
+}
+
+export interface DraftArticles {
+  list: DraftArticle[];
+}
+
 /** An edition for a single day */
 export interface Edition {
   id: Uuid;
   /** Journalist inputted text which denotes the last time an edition was published */
   updateText?: string | null;
   /** The date that the edition is intended for, not necessarily the date it was published (contrast with `publishedTime`) */
-  date?: ShortDate | null;
+  date: ShortDate;
 
   publicationName: PublicationName;
   /** The region the edition is intended for */
-  region?: Region | null;
+  region: Region;
   /** The date & time that the edition was published (contrast with `date`) */
-  publishedTime?: DateTime | null;
+  publishedTime: DateTime;
 
-  updatedTime?: DateTime | null;
+  updatedTime: DateTime;
 
   sections?: (Section | null)[] | null;
   /** Current version of the edition (used primarily for caching) */
   revision: BigInt;
+  /** List of images in the edition */
+  images: ImagesPaged;
+}
+
+export interface ImagesPaged {
+  list: Image[];
 }
 
 /** A list of editions with pagination meta data */
@@ -1456,10 +1869,45 @@ export interface Bookmark {
   id: Uuid;
 }
 
+export interface Account {
+  cpn: string;
+
+  id: string;
+}
+
+export interface Newsletter {
+  code: string;
+
+  description: string;
+
+  frequency: string;
+
+  id: string;
+
+  isSubscribed: boolean;
+
+  title: string;
+}
+
 export interface Mutation {
   saveBookmarks: Bookmark[];
 
   unsaveBookmarks: Uuid[];
+
+  subscribeNewsletter?: Newsletter | null;
+
+  unsubscribeNewsletter?: Newsletter | null;
+}
+
+/** HTML anchor */
+export interface Anchor {
+  value: string;
+}
+
+export interface ArticleLink {
+  articleId?: Uuid | null;
+
+  article?: Article | null;
 }
 
 export interface ArticleTagUpsertResult {
@@ -1521,6 +1969,37 @@ export interface Default extends Layout {
   template?: Template | null;
 }
 
+export interface DraftArticleUpsertResult {
+  id: Uuid;
+}
+
+/** A lead article and two supporting articles. This slice can also represent leadrelated articles slice of the same name (lead-1-and-2-puffs,related-links-lead-and-2) */
+export interface DraftLeadOneAndTwoSlice extends DraftArticleSlice {
+  lead: DraftTile;
+
+  support1: DraftTile;
+
+  support2: DraftTile;
+
+  items: DraftTile[];
+}
+
+/** A lead opinion related articles slice (related-links-opinion-and-2) */
+export interface DraftOpinionOneAndTwoSlice extends DraftArticleSlice {
+  opinion: DraftTile;
+
+  support1: DraftTile;
+
+  support2: DraftTile;
+
+  items: DraftTile[];
+}
+
+/** Fallback slice without any prescribed presentation, replaces standard related-links slice (related-links) */
+export interface DraftStandardSlice extends DraftArticleSlice {
+  items: DraftTile[];
+}
+
 export interface EditionUpsertResult {
   id: Uuid;
 }
@@ -1534,11 +2013,26 @@ export interface FocusSlice extends ArticleSlice {
   sections: Section[];
 }
 
-/** A special type of banner containing articles which is displayed at the top the new sections */
+/** A special type of banner containing references to articles or URLs which is displayed at the top the news section */
 export interface InTheNewsSlice {
-  items: Tile[];
+  items: PuffLite[];
 
   sections: Section[];
+}
+
+/** An article/link which is displayed in a light puff */
+export interface PuffLite {
+  title: string;
+
+  strapline: string;
+
+  mainLink: PuffMainLinkRef;
+
+  leadImage: Image;
+}
+
+export interface Link {
+  url: Url;
 }
 
 /** Three articles with one that has more importance over the others denoted by themain ID. Would usually be associated with a list of articles */
@@ -1852,41 +2346,30 @@ export interface Puff {
 
   colour: Colour;
 
-  mainLink: PuffMainLink;
+  mainLink: PuffMainLinkRef;
 
-  topicLink: PuffTopicLink;
+  secondaryLink: PuffSecondaryLink;
 
   major: boolean;
+
+  strapline?: string | null;
+
+  leadImage?: Image | null;
 }
 
-export interface NamedLink {
-  name: string;
+export interface PuffSecondaryLink {
+  label: string;
 
-  url: Url;
+  link: PuffSecondaryLinkRef;
 }
 
-export interface StandardSection extends Section {
-  id: Uuid;
+/** Three articles with one that has more importance over the others denoted by themain ID. Would usually be associated with a list of articles */
+export interface OpinionAndTwo extends Layout {
+  template?: Template | null;
 
-  title: string;
+  main?: Uuid | null;
 
-  slug: Slug;
-
-  colour: Colour;
-
-  slices: StandardSectionSlice[];
-}
-
-export interface PuzzleSection extends Section {
-  id: Uuid;
-
-  title: string;
-
-  slug: Slug;
-
-  colour: Colour;
-
-  slices: PuzzleSectionSlice[];
+  opinion?: Uuid | null;
 }
 
 /** A representation of a single puzzle for the puzzles section */
@@ -1902,13 +2385,16 @@ export interface Puzzle {
   image: Image;
 }
 
-/** Three articles with one that has more importance over the others denoted by themain ID. Would usually be associated with a list of articles */
-export interface OpinionAndTwo extends Layout {
-  template?: Template | null;
+export interface PuzzleSection extends Section {
+  id: Uuid;
 
-  main?: Uuid | null;
+  title: string;
 
-  opinion?: Uuid | null;
+  slug: Slug;
+
+  colour: Colour;
+
+  slices: PuzzleSectionSlice[];
 }
 
 export interface SectionUpdateResult {
@@ -1917,6 +2403,18 @@ export interface SectionUpdateResult {
 
 export interface SliceUpdateResult {
   id: Uuid;
+}
+
+export interface StandardSection extends Section {
+  id: Uuid;
+
+  title: string;
+
+  slug: Slug;
+
+  colour: Colour;
+
+  slices: StandardSectionSlice[];
 }
 
 export interface TagMergeResult {
@@ -1967,9 +2465,17 @@ export interface ArticleQueryArgs {
 export interface ArticlesQueryArgs {
   updatedSince?: DateTime | null;
 
+  updatedSysdateSince?: DateTime | null;
+
   ids?: string[] | null;
 
   shortIdentifier?: string | null;
+}
+export interface DraftArticleQueryArgs {
+  id: string;
+}
+export interface DraftArticlesQueryArgs {
+  ids?: string[] | null;
 }
 export interface EditionQueryArgs {
   id: string;
@@ -2014,6 +2520,9 @@ export interface TopicsQueryArgs {
   cursor?: Cursor | null;
 
   first?: number | null;
+}
+export interface NewsletterQueryArgs {
+  code: string;
 }
 export interface ListAuthorArticlesArgs {
   /** The maximum number of articles you want to take, defaults to 10 */
@@ -2100,6 +2609,18 @@ export interface ListArticlesArgs {
   /** The number of articles to skip over, useful for paging, defaults to 0 */
   skip?: number | null;
 }
+export interface ContentDraftArticleArgs {
+  /** If a teaser is required, use to truncate the article content by words. Ifthe client doesn't have permission for the content, the maximum will be thelesser of the predefined teaser length and requested maximum */
+  maxWordCount?: number | null;
+  /** If summary text is required, use to truncate the article content bycharacters. If the client doesn't have permission for the content, themaximum will be the lesser of the predefined teaser length and requestedmaximum. Has no effect if maxWordCount is specified */
+  maxCharCount?: number | null;
+}
+export interface SummaryDraftArticleArgs {
+  maxCharCount?: number | null;
+}
+export interface TeaserDraftTileArgs {
+  maxCharCount?: number | null;
+}
 export interface ListEditionsPagedArgs {
   /** The maximum number of editions you want to take, defaults to 10 */
   first?: number | null;
@@ -2124,6 +2645,12 @@ export interface SaveBookmarksMutationArgs {
 export interface UnsaveBookmarksMutationArgs {
   bookmarks: BookmarkUnsaveInput[];
 }
+export interface SubscribeNewsletterMutationArgs {
+  code: string;
+}
+export interface UnsubscribeNewsletterMutationArgs {
+  code: string;
+}
 
 // ====================================================
 // Unions
@@ -2132,6 +2659,10 @@ export interface UnsaveBookmarksMutationArgs {
 export type ArticleByline = TextByline | AuthorByline;
 
 export type Media = Image | Video;
+
+export type DraftTileArticle = Article | DraftArticle;
+
+export type PuffMainLinkRef = ArticleLink | Link;
 
 export type MagazineSectionSlice =
   | StandardSlice
@@ -2159,14 +2690,13 @@ export type MagazineSectionSlice =
   | TwoPicAndSixNoPicSlice
   | PuffSlice;
 
-export type PuffMainLink = Tile | NamedLink;
+export type PuffSecondaryLinkRef = ArticleLink | Link | Anchor;
 
-export type PuffTopicLink = StandardSection | PuzzleSection | NamedLink;
+export type PuzzleSectionSlice = Puzzle | PuffSlice;
 
 export type StandardSectionSlice =
   | StandardSlice
   | CommentLeadAndCartoonSlice
-  | InTheNewsSlice
   | LetterThundererPodcastSlice
   | CommentTwoAndNotebookSlice
   | FocusSlice
@@ -2188,7 +2718,6 @@ export type StandardSectionSlice =
   | SecondaryTwoAndTwoSlice
   | SecondaryTwoNoPicAndTwoSlice
   | TwoPicAndSixNoPicSlice
+  | InTheNewsSlice
   | PuffSlice
   | DailyUniversalRegister;
-
-export type PuzzleSectionSlice = Puzzle | PuffSlice;

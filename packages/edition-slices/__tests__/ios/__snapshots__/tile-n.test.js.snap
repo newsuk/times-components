@@ -77,6 +77,7 @@ exports[`tile n huge 1`] = `
             },
           ]
         }
+        longRead={true}
       />
     </View>
   </View>
@@ -176,6 +177,7 @@ exports[`tile n medium 1`] = `
             },
           ]
         }
+        longRead={true}
       />
     </View>
   </View>
@@ -276,6 +278,7 @@ exports[`tile n small 1`] = `
             },
           ]
         }
+        longRead={true}
       />
     </View>
   </View>
@@ -375,6 +378,7 @@ exports[`tile n wide 1`] = `
             },
           ]
         }
+        longRead={true}
       />
     </View>
   </View>
@@ -475,6 +479,7 @@ exports[`tile n with default star 1`] = `
             },
           ]
         }
+        longRead={true}
       />
     </View>
   </View>
@@ -575,6 +580,7 @@ exports[`tile n without breakpoint should be like small 1`] = `
             },
           ]
         }
+        longRead={true}
       />
     </View>
   </View>

@@ -104,6 +104,7 @@ exports[`tile af huge 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -215,6 +216,7 @@ exports[`tile af wide 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -326,6 +328,7 @@ exports[`tile af without breakpoint should be like wide 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>

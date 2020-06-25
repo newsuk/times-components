@@ -44,6 +44,9 @@ const ExclusiveArticleFlag = props => (
 const SponsoredArticleFlag = props => (
   <ArticleFlag {...props} title="sponsored" />
 );
+const LongReadArticleFlag = props => (
+  <ArticleFlag {...props} title="long read" />
+);
 
 NewArticleFlag.propTypes = articleFlagPropTypes;
 NewArticleFlag.defaultProps = {
@@ -65,32 +68,49 @@ SponsoredArticleFlag.defaultProps = {
   color: colours.functional.tertiary
 };
 
+LongReadArticleFlag.propTypes = articleFlagPropTypes;
+LongReadArticleFlag.defaultProps = {
+  color: colours.functional.secondary
+};
+
 const flagsMapping = color =>
   new Map([
     ["NEW", <NewArticleFlag color={color} />],
     ["UPDATED", <UpdatedArticleFlag color={color} />],
     ["EXCLUSIVE", <ExclusiveArticleFlag color={color} />],
-    ["SPONSORED", <SponsoredArticleFlag color={color} />]
+    ["SPONSORED", <SponsoredArticleFlag color={color} />],
+    ["LONGREAD", <LongReadArticleFlag color={color} />]
   ]);
 
-const ArticleFlags = ({ flags, color, style }) => {
+const ArticleFlags = ({ flags, longRead, color, style, withContainer }) => {
   const activeFlags = getActiveFlags(flags);
-  if (!activeFlags || activeFlags.length === 0) return null;
+  const allFlags = [
+    ...activeFlags,
+    ...(longRead ? [{ type: "LONGREAD" }] : [])
+  ];
 
-  return (
+  if (!allFlags.length) return null;
+
+  const flagsView = (
     <View style={[styles.flags, style]}>
-      {activeFlags.map(flag => (
-        <View key={flag.type} style={flags.length > 1 && styles.flagPadding}>
+      {allFlags.map(flag => (
+        <View key={flag.type} style={allFlags.length > 1 && styles.flagPadding}>
           {flagsMapping(color).get(flag.type)}
         </View>
       ))}
     </View>
   );
+
+  if (!withContainer) return flagsView;
+
+  return <View style={styles.flagsContainer}>{flagsView}</View>;
 };
 
 ArticleFlags.propTypes = articleFlagsPropTypes;
 ArticleFlags.defaultProps = {
-  flags: []
+  flags: [],
+  longRead: false,
+  withContainer: false
 };
 
 export default ArticleFlag;
@@ -101,5 +121,6 @@ export {
   NewArticleFlag,
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
-  SponsoredArticleFlag
+  SponsoredArticleFlag,
+  LongReadArticleFlag
 };

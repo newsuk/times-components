@@ -51,6 +51,7 @@ exports[`tile y huge 1`] = `
           },
         ]
       }
+      longRead={true}
     />
     <Text
       style={
@@ -126,6 +127,7 @@ exports[`tile y medium 1`] = `
           },
         ]
       }
+      longRead={true}
     />
     <Text
       style={
@@ -201,6 +203,7 @@ exports[`tile y wide 1`] = `
           },
         ]
       }
+      longRead={true}
     />
     <Text
       style={
@@ -276,6 +279,7 @@ exports[`tile y without breakpoint should be like medium 1`] = `
           },
         ]
       }
+      longRead={true}
     />
     <Text
       style={
