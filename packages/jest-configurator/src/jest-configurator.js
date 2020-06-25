@@ -16,7 +16,6 @@ const webSpecific = {
   moduleFileExtensions: ["graphql", "web.js", "js", "json"],
   moduleNameMapper: {
     "\\.(png)$": "identity-obj-proxy",
-    "^react-native$": "react-native-web"
   },
   testEnvironment: "jsdom"
 };
@@ -25,7 +24,6 @@ const nodeSpecific = {
   moduleFileExtensions: ["node.js", "web.js", "js", "ts", "json"],
   moduleNameMapper: {
     "\\.(png)$": "identity-obj-proxy",
-    "^react-native$": "react-native-web"
   },
   testEnvironment: "node"
 };

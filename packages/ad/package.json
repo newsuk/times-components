@@ -15,10 +15,8 @@
     "test:all": "yarn test:android --coverage && yarn test:ios --coverage"
   },
   "keywords": [
-    "react-native-web",
     "react",
     "native",
-    "web",
     "gpt",
     "component"
   ],
@@ -67,8 +65,7 @@
   "peerDependencies": {
     "react": ">=16.9",
     "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-native": ">=0.59"
   },
   "publishConfig": {
     "access": "public"

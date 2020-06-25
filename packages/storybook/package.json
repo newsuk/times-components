@@ -38,7 +38,6 @@
     "jest": "24.8.0",
     "prettier": "1.14.3",
     "react-art": "16.6.3",
-    "react-native-web": "0.11.4",
     "react-test-renderer": "16.9.0"
   },
   "dependencies": {
@@ -64,8 +63,7 @@
   "peerDependencies": {
     "react": ">=16.9",
     "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-native": ">=0.59"
   },
   "publishConfig": {
     "access": "public"

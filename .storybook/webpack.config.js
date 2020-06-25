@@ -7,7 +7,6 @@ module.exports = async ({ config }, env, defaultConfig) => {
     ...config.resolve,
     alias: {
       ...config.resolve.alias,
-      "react-native": "react-native-web",
       "@storybook/react-native": "@storybook/react"
     },
     extensions: [".web.js", ".js", ".ios.js", ".android.js", ".mjs"],

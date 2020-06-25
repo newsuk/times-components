@@ -30,10 +30,8 @@
     "url": "git+https://github.com/newsuk/times-components.git"
   },
   "keywords": [
-    "react-native-web",
     "react",
     "native",
-    "web",
     "video",
     "brightcove",
     "component"
@@ -63,7 +61,6 @@
     "react-art": "16.6.3",
     "react-dom": "16.9.0",
     "react-native": "0.61.5",
-    "react-native-web": "0.11.4",
     "react-test-renderer": "16.9.0"
   },
   "dependencies": {
@@ -83,8 +80,7 @@
   "peerDependencies": {
     "react": ">=16.9",
     "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-native": ">=0.59"
   },
   "_timesComponentsCliVariables": {
     "component": "Video",
