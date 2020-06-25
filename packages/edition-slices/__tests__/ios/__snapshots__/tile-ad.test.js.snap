@@ -59,6 +59,7 @@ exports[`tile ad huge 1`] = `
               },
             ]
           }
+          longRead={true}
         />
         <Text
           numberOfLines={2}
@@ -145,6 +146,7 @@ exports[`tile ad medium 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </View>
     </View>
@@ -211,6 +213,7 @@ exports[`tile ad wide 1`] = `
               },
             ]
           }
+          longRead={true}
         />
         <Text
           numberOfLines={2}
@@ -297,6 +300,7 @@ exports[`tile ad without breakpoint should be like medium 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </View>
     </View>

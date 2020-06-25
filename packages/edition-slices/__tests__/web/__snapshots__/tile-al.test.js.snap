@@ -115,6 +115,7 @@ exports[`tile al huge 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -237,6 +238,7 @@ exports[`tile al wide 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>

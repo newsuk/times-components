@@ -59,6 +59,7 @@ exports[`tile n huge 1`] = `
           },
         ]
       }
+      longRead={true}
     />
   </View>
 </Link>
@@ -123,6 +124,7 @@ exports[`tile n medium 1`] = `
           },
         ]
       }
+      longRead={true}
     />
   </View>
 </Link>
@@ -188,6 +190,7 @@ exports[`tile n small 1`] = `
           },
         ]
       }
+      longRead={true}
     />
   </View>
 </Link>
@@ -252,6 +255,7 @@ exports[`tile n wide 1`] = `
           },
         ]
       }
+      longRead={true}
     />
   </View>
 </Link>
@@ -317,6 +321,7 @@ exports[`tile n with default star 1`] = `
           },
         ]
       }
+      longRead={true}
     />
   </View>
 </Link>

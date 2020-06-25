@@ -104,6 +104,7 @@ exports[`tile aа without breakpoint 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>

@@ -133,6 +133,7 @@ exports[`tile g huge 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -273,6 +274,7 @@ exports[`tile g medium 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -411,6 +413,7 @@ exports[`tile g small 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -551,6 +554,7 @@ exports[`tile g wide 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -691,6 +695,7 @@ exports[`tile g without breakpoint should be like small 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>

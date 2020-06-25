@@ -93,6 +93,7 @@ exports[`tile ac huge 1`] = `
           },
         ]
       }
+      longRead={true}
     />
   </div>
 </Link>
@@ -191,6 +192,7 @@ exports[`tile ac medium 1`] = `
           },
         ]
       }
+      longRead={true}
     />
   </div>
 </Link>
@@ -289,6 +291,7 @@ exports[`tile ac wide 1`] = `
           },
         ]
       }
+      longRead={true}
     />
   </div>
 </Link>
@@ -387,6 +390,7 @@ exports[`tile ac without breakpoint should be like medium 1`] = `
           },
         ]
       }
+      longRead={true}
     />
   </div>
 </Link>

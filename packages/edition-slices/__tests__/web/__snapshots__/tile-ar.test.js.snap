@@ -121,6 +121,7 @@ exports[`tile ar huge 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -246,6 +247,7 @@ exports[`tile ar medium 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -374,6 +376,7 @@ exports[`tile ar wide 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -502,6 +505,7 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>

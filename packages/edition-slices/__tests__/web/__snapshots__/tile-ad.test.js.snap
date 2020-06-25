@@ -104,6 +104,7 @@ exports[`tile ad huge 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -187,6 +188,7 @@ exports[`tile ad medium 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -298,6 +300,7 @@ exports[`tile ad wide 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -381,6 +384,7 @@ exports[`tile ad without breakpoint should be like medium 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>

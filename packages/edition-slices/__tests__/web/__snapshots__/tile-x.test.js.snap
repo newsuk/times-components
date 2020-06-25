@@ -123,6 +123,7 @@ exports[`tile x huge 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -253,6 +254,7 @@ exports[`tile x medium 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>
@@ -383,6 +385,7 @@ exports[`tile x wide 1`] = `
               },
             ]
           }
+          longRead={true}
         />
       </div>
     </div>

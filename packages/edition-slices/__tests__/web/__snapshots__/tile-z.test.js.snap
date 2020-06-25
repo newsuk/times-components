@@ -127,6 +127,7 @@ exports[`tile z huge 1`] = `
                 },
               ]
             }
+            longRead={true}
           />
         </div>
       </div>
@@ -268,6 +269,7 @@ exports[`tile z wide 1`] = `
                 },
               ]
             }
+            longRead={true}
           />
         </div>
       </div>
@@ -409,6 +411,7 @@ exports[`tile z without breakpoint should be like wide 1`] = `
                 },
               ]
             }
+            longRead={true}
           />
         </div>
       </div>
