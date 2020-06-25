@@ -4,7 +4,7 @@ jest.mock(
   "Dimensions",
   () => {
     // eslint-disable-next-line global-require
-    const { breakpoints } = require("@times-components/styleguide");
+    const { breakpoints } = require("@times-components-native/styleguide");
     let dimensionChangeHandler;
     let dimensions = { height: 700, width: 500 };
 

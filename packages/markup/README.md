@@ -62,8 +62,8 @@ to see our available markup templates.
 ## How to use
 
 ```js
-import { renderTrees } from "@times-components/markup-forest";
-import coreRenderers from "@times-components/markup";
+import { renderTrees } from "@times-components-native/markup-forest";
+import coreRenderers from "@times-components-native/markup";
 
 const data = [
   {

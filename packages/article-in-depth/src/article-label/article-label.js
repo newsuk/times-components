@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
-import ArticleLabel from "@times-components/article-label";
-import VideoLabel from "@times-components/video-label";
+import ArticleLabel from "@times-components-native/article-label";
+import VideoLabel from "@times-components-native/video-label";
 
 import {
   articleLabelPropTypes,

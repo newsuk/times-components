@@ -1,12 +1,12 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import "./mocks";
 import AuthorProfile from "../src/author-profile";
 
 // eslint-disable-next-line global-require
-jest.mock("@times-components/provider", () => require("./mock-provider"));
-jest.mock("@times-components/tracking", () => {
+jest.mock("@times-components-native/provider", () => require("./mock-provider"));
+jest.mock("@times-components-native/tracking", () => {
   const id = x => x;
 
   return {

@@ -128,7 +128,7 @@ Depend itself does not have any rendering capabilities but `--graph` output can
 be directly piped into a [graphviz](https://www.graphviz.org/) renderer. `fdp`
 and `circo` can be obtained by installing the graphviz package.
 
-`depend -l . -g "@times-components/*=>dextrose@" | fdp -Tsvg -o dextrose.svg`
+`depend -l . -g "@times-components-native/*=>dextrose@" | fdp -Tsvg -o dextrose.svg`
 
 ![dextrose](https://user-images.githubusercontent.com/4670055/36293283-fe725ae0-12cf-11e8-989d-1d240be38f86.gif)
 

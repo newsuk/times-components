@@ -2,14 +2,14 @@ import React from "react";
 import get from "lodash.get";
 import ArticleList, {
   ArticleListPageError
-} from "@times-components/article-list";
-import { withPageState } from "@times-components/pagination";
+} from "@times-components-native/article-list";
+import { withPageState } from "@times-components-native/pagination";
 import {
   AuthorArticlesNoImagesProvider,
   AuthorArticlesWithImagesProvider
-} from "@times-components/provider";
-import Responsive from "@times-components/responsive";
-import { ratioTextToFloat } from "@times-components/utils";
+} from "@times-components-native/provider";
+import Responsive from "@times-components-native/responsive";
+import { ratioTextToFloat } from "@times-components-native/utils";
 import AuthorProfileHead from "./author-profile-head";
 import { propTypes, defaultProps } from "./author-profile-prop-types";
 import authorProfileTrackingContext from "./author-profile-tracking-context";

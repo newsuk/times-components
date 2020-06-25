@@ -1,7 +1,7 @@
 import React from "react";
 import { ActivityIndicator } from "react-native";
 import PropTypes from "prop-types";
-import { ArticleExtrasProvider } from "@times-components/provider";
+import { ArticleExtrasProvider } from "@times-components-native/provider";
 import ArticleExtrasError from "./article-extras-error";
 import ArticleExtrasContent from "./article-extras-content";
 

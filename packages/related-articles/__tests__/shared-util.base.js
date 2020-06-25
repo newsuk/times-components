@@ -1,7 +1,7 @@
 import React from "react";
 import mockDate from "mockdate";
-import { iterator } from "@times-components/test-utils";
-import Card from "@times-components/card";
+import { iterator } from "@times-components-native/test-utils";
+import Card from "@times-components-native/card";
 import RelatedArticles from "../src/related-articles";
 
 export const testSummary = summary => [

@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { ContextProviderWithDefaults } from "@times-components/context";
-import coreRenderers from "@times-components/markup";
-import { renderTree } from "@times-components/markup-forest";
-import { sections } from "@times-components/storybook";
-import { scales, themeFactory } from "@times-components/styleguide";
+import { ContextProviderWithDefaults } from "@times-components-native/context";
+import coreRenderers from "@times-components-native/markup";
+import { renderTree } from "@times-components-native/markup-forest";
+import { sections } from "@times-components-native/storybook";
+import { scales, themeFactory } from "@times-components-native/styleguide";
 import paragraphData from "./fixtures/paragraph-showcase.json";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
 import dropCapShortTextData from "./fixtures/drop-cap-short-text-showcase.json";

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View } from "react-native";
-import Image from "@times-components/image";
+import Image from "@times-components-native/image";
 import Touchable from "./touchable";
 import PlayIcon from "./play-icon.native";
 import { propTypes, defaultProps } from "./video-prop-types";

@@ -6,7 +6,7 @@ import {
   minimaliseTransform,
   minimalNativeTransform,
   print
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 import AdContainer from "../../src/ad-container.web";
 
 describe("ad-container", () => {

@@ -1,6 +1,6 @@
 import React from "react";
-import { setIsTablet } from "@times-components/mocks/dimensions";
-import { iterator } from "@times-components/test-utils";
+import { setIsTablet } from "@times-components-native/mocks/dimensions";
+import { iterator } from "@times-components-native/test-utils";
 import ArticleImage from "../src/article-image";
 import primaryImageFixture from "../fixtures/primary-image";
 import secondaryImageFixture from "../fixtures/secondary-image";

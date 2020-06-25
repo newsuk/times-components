@@ -1,11 +1,11 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import { nativeEdition } from "@times-components/provider-queries";
+import { nativeEdition } from "@times-components-native/provider-queries";
 import {
   nativeEdition as makeNativeEditionParams,
   MockedProvider,
   MockFixture
-} from "@times-components/provider-test-tools";
+} from "@times-components-native/provider-test-tools";
 import connectGraphql from "../src/connect";
 
 const NativeEditionProvider = connectGraphql(nativeEdition);

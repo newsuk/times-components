@@ -1,6 +1,6 @@
 import React from "react";
 import { create } from "react-test-renderer";
-import Link from "@times-components/link";
+import Link from "@times-components-native/link";
 import mockDate from "mockdate";
 
 import NewsletterPuffLink from "../src/article-body/newsletter-puff-link";

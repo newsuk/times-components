@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { Text } from "react-native";
-import renderTrees from "@times-components/markup-forest";
-import renderers from "@times-components/markup";
+import renderTrees from "@times-components-native/markup-forest";
+import renderers from "@times-components-native/markup";
 
 const bylineRenderers = (Component, textStyle, props = {}) => ({
   ...renderers,

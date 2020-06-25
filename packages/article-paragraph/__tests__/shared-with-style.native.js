@@ -7,10 +7,10 @@ import {
   minimaliseTransform,
   flattenStyleTransform,
   print
-} from "@times-components/jest-serializer";
-import Responsive from "@times-components/responsive";
-import { iterator } from "@times-components/test-utils";
-import { setIsTablet } from "@times-components/mocks/dimensions";
+} from "@times-components-native/jest-serializer";
+import Responsive from "@times-components-native/responsive";
+import { iterator } from "@times-components-native/test-utils";
+import { setIsTablet } from "@times-components-native/mocks/dimensions";
 
 import renderParagraph from "./renderer";
 import dropCapData from "./fixtures/drop-cap-showcase.json";

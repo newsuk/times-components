@@ -1,7 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 import TestRenderer from "react-test-renderer";
-import { scales } from "@times-components/styleguide";
+import { scales } from "@times-components-native/styleguide";
 import {
   addSerializers,
   compose,
@@ -9,8 +9,8 @@ import {
   minimaliseTransform,
   flattenStyleTransform,
   print
-} from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
+} from "@times-components-native/jest-serializer";
+import { iterator } from "@times-components-native/test-utils";
 import shared from "./shared.base";
 import "./mock-text-measure-module";
 import DropCap from "../src/drop-cap";

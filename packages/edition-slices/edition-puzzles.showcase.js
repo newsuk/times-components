@@ -1,7 +1,7 @@
 import React from "react";
 import { ScrollView } from "react-native";
-import Responsive from "@times-components/responsive";
-import { getPuzzleSlices } from "@times-components/fixture-generator";
+import Responsive from "@times-components-native/responsive";
+import { getPuzzleSlices } from "@times-components-native/fixture-generator";
 import { PuzzleSlice } from "./src/slices";
 
 const preventDefaultedAction = decorateAction =>

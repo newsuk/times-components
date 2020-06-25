@@ -10,8 +10,8 @@ import {
   rnwTransform,
   stylePrinter,
   replacePropTransform
-} from "@times-components/jest-serializer";
-import { hash, iterator } from "@times-components/test-utils";
+} from "@times-components-native/jest-serializer";
+import { hash, iterator } from "@times-components-native/test-utils";
 import Pagination from "../../src/pagination";
 
 addSerializers(

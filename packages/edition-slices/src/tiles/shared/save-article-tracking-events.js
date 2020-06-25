@@ -1,4 +1,4 @@
-import { withTrackEvents } from "@times-components/tracking";
+import { withTrackEvents } from "@times-components-native/tracking";
 
 const withArticleSaveTracking = Component =>
   withTrackEvents(Component, {

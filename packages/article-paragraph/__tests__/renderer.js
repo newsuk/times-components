@@ -1,7 +1,7 @@
 import React from "react";
-import { themeFactory } from "@times-components/styleguide";
-import { renderTree } from "@times-components/markup-forest";
-import renderers from "@times-components/markup";
+import { themeFactory } from "@times-components-native/styleguide";
+import { renderTree } from "@times-components-native/markup-forest";
+import renderers from "@times-components-native/markup";
 import ArticleParagraph from "../src";
 
 export default (ast, section = "default") => {

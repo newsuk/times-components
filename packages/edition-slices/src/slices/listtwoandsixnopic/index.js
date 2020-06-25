@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { ListTwoAndSixNoPic } from "@times-components/slice-layout";
+import { ListTwoAndSixNoPic } from "@times-components-native/slice-layout";
 import { ResponsiveSlice } from "../shared";
 import { TileL, TileC, TileAS } from "../../tiles";
 

@@ -4,7 +4,7 @@ import { ApolloProvider } from "react-apollo";
 import { ApolloClient } from "apollo-client";
 import { HttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
-import { fragmentMatcher } from "@times-components/schema";
+import { fragmentMatcher } from "@times-components-native/schema";
 import { text } from "@storybook/addon-knobs/react";
 
 const StorybookProvider = ({ children }) => {

@@ -1,5 +1,5 @@
 import { MockList } from "graphql-tools";
-import { articleExtras as articleExtrasQuery } from "@times-components/provider-queries";
+import { articleExtras as articleExtrasQuery } from "@times-components-native/provider-queries";
 import article from "../fixtures/article.json";
 
 const convertRatio = ratio => {

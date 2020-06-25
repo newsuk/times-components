@@ -1,18 +1,18 @@
 import React from "react";
-import { AdComposer } from "@times-components/ad";
-import { AuthorProfileProvider } from "@times-components/provider";
+import { AdComposer } from "@times-components-native/ad";
+import { AuthorProfileProvider } from "@times-components-native/provider";
 import {
   authorProfile as makeParams,
   fixtures,
   MockFixture,
   MockedProvider
-} from "@times-components/provider-test-tools";
-import StorybookProvider from "@times-components/storybook/storybook-provider";
+} from "@times-components-native/provider-test-tools";
+import StorybookProvider from "@times-components-native/storybook/storybook-provider";
 import {
   authorArticlesWithImages as authorArticlesWithImagesQuery,
   authorArticlesNoImages as authorArticlesNoImagesQuery
-} from "@times-components/provider-queries";
-import storybookReporter from "@times-components/tealium-utils";
+} from "@times-components-native/provider-queries";
+import storybookReporter from "@times-components-native/tealium-utils";
 import AuthorProfile from "./src/author-profile";
 
 const preventDefaultedAction = decorateAction =>

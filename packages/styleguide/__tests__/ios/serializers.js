@@ -1,6 +1,6 @@
 const {
   addSerializers,
   minimalNative
-} = require("@times-components/jest-serializer");
+} = require("@times-components-native/jest-serializer");
 
 addSerializers(expect, minimalNative);

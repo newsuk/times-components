@@ -1,5 +1,5 @@
 // eslint-disable-next-line global-require
-jest.mock("@times-components/article", () => "Article");
+jest.mock("@times-components-native/article", () => "Article");
 jest.mock("react-native", () => {
   const rn = require.requireActual("react-native");
   rn.NativeModules.ArticleEvents = {

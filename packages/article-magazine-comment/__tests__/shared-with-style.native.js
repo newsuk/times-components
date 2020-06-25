@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { ContextProviderWithDefaults } from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components-native/context";
 import {
   addSerializers,
   compose,
@@ -8,9 +8,9 @@ import {
   minimaliseTransform,
   minimalNativeTransform,
   print
-} from "@times-components/jest-serializer";
-import { themeFactory } from "@times-components/styleguide";
-import { setIsTablet } from "@times-components/mocks/dimensions";
+} from "@times-components-native/jest-serializer";
+import { themeFactory } from "@times-components-native/styleguide";
+import { setIsTablet } from "@times-components-native/mocks/dimensions";
 import "./mocks.native";
 import ArticleMagazineComment from "../src/article-magazine-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";

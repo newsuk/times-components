@@ -1,4 +1,4 @@
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import styleguide, { scales } from "../../src/styleguide";
 import shared from "../shared";
 import sharedNative from "../shared-native";

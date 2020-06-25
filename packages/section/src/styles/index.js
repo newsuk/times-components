@@ -3,7 +3,7 @@ import {
   fonts,
   spacing,
   editionBreakpoints
-} from "@times-components/styleguide";
+} from "@times-components-native/styleguide";
 
 const separatorSpacingResolver = {
   [editionBreakpoints.small]: spacing(0),

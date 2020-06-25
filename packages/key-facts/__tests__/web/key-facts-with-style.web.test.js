@@ -1,7 +1,7 @@
 import React from "react";
 import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
-import { ContextProviderWithDefaults } from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components-native/context";
 import {
   addSerializers,
   compose,
@@ -10,8 +10,8 @@ import {
   minimalWebTransform,
   rnwTransform,
   stylePrinter
-} from "@times-components/jest-serializer";
-import { scales } from "@times-components/styleguide";
+} from "@times-components-native/jest-serializer";
+import { scales } from "@times-components-native/styleguide";
 import KeyFacts from "../../src/key-facts";
 import data from "../../fixtures/key-facts-test.json";
 

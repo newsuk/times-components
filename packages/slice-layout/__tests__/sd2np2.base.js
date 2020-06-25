@@ -1,6 +1,6 @@
 import React from "react";
-import { iterator } from "@times-components/test-utils";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { iterator } from "@times-components-native/test-utils";
+import { editionBreakpoints } from "@times-components-native/styleguide";
 import createItem from "./utils";
 import { SecondaryTwoNoPicAndTwoSlice } from "../src/slice-layout";
 

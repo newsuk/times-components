@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { Modal, View, SafeAreaView } from "react-native";
-import { ResponsiveContext } from "@times-components/responsive";
-import Button from "@times-components/link";
+import { ResponsiveContext } from "@times-components-native/responsive";
+import Button from "@times-components-native/link";
 import ImageViewer from "react-native-image-zoom-viewer";
 import Url from "url-parse";
 import CloseButton from "../close-button";

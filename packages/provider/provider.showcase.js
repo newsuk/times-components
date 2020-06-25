@@ -7,8 +7,8 @@ import {
   MockedProvider,
   MockFixture,
   topic as makeTopicParams
-} from "@times-components/provider-test-tools";
-import { authorArticlesWithImages as authorArticlesWithImagesQuery } from "@times-components/provider-queries";
+} from "@times-components-native/provider-test-tools";
+import { authorArticlesWithImages as authorArticlesWithImagesQuery } from "@times-components-native/provider-queries";
 import connectGraphql, {
   ArticleProvider,
   AuthorProfileProvider,

@@ -1,13 +1,13 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import SaveAndShareBar from "@times-components/save-and-share-bar";
+import SaveAndShareBar from "@times-components-native/save-and-share-bar";
 import Sticky, {
   computeProgressStyles,
   selectors,
   mediaQuery
-} from "@times-components/sticky";
-import { breakpoints, colours } from "@times-components/styleguide";
-import { ServerClientRender } from "@times-components/utils";
+} from "@times-components-native/sticky";
+import { breakpoints, colours } from "@times-components-native/styleguide";
+import { ServerClientRender } from "@times-components-native/utils";
 import { ArticleKeylineItem } from "./keylines";
 
 const SaveShareContainer = styled.div`

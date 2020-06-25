@@ -1,13 +1,13 @@
 import React from "react";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import TestRenderer from "react-test-renderer";
-import Context from "@times-components/context";
+import Context from "@times-components-native/context";
 import ArticleSkeleton from "../src/article-skeleton";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleSkeletonProps from "./shared-article-skeleton-props";
 
-jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
+jest.mock("@times-components-native/save-and-share-bar", () => "SaveAndShareBar");
 
 const emptyArticle = {
   bylines: null,

@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { ActivityIndicator } from "react-native";
-import { IconEmail } from "@times-components/icons";
+import { IconEmail } from "@times-components-native/icons";
 import styles from "./styles";
 import BarItem from "./bar-item";
 

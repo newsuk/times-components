@@ -1,4 +1,4 @@
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import MessageBarTests from "./message-bar.base";
 import MessageManagerTests from "./message-manager.base";
 

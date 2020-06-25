@@ -11,7 +11,7 @@ E.g. `<rootDir>/packages/${component}/__tests__/${platform}/jest.config.js`.
 Then add platform specific code like below.
 
 ```js
-const jestConfigurator = require("@times-components/jest-configurator");
+const jestConfigurator = require("@times-components-native/jest-configurator");
 
 module.exports = jestConfigurator("android", __dirname);
 ```

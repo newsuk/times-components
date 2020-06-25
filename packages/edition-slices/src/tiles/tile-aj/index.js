@@ -1,8 +1,8 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import Link from "@times-components/link";
-import { ArticleSummaryHeadline } from "@times-components/article-summary";
+import Link from "@times-components-native/link";
+import { ArticleSummaryHeadline } from "@times-components-native/article-summary";
 import { withPuzzleTileTracking, TileImage } from "../shared";
 import styles from "./styles";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Byline from "@times-components/article-byline";
+import Byline from "@times-components-native/article-byline";
 import {
   getTileImage,
   getTileStrapline,

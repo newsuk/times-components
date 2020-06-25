@@ -1,7 +1,7 @@
 import React, { cloneElement } from "react";
 import { Text } from "react-native";
 import PropTypes from "prop-types";
-import { ResponsiveContext } from "@times-components/responsive";
+import { ResponsiveContext } from "@times-components-native/responsive";
 import styleFactory from "./styles";
 import { propTypes, defaultProps } from "./drop-cap-prop-types";
 

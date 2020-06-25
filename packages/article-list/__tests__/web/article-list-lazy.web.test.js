@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { mount } from "enzyme";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import {
   addSerializers,
   enzymeRenderedSerializer,
   minimalise
-} from "@times-components/jest-serializer";
-import { defaults } from "@times-components/context";
+} from "@times-components-native/jest-serializer";
+import { defaults } from "@times-components-native/context";
 import articleListFixture from "../../fixtures/articles.json";
 import adConfig from "../../fixtures/article-ad-config.json";
 import ArticleList from "../../src/article-list";

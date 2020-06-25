@@ -9,7 +9,7 @@ import {
   minimalWebTransform,
   print,
   rnwTransform
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 
 import "../mocks.web";
 
@@ -17,7 +17,7 @@ import StickySaveAndShareBar from "../../src/sticky-save-and-share-bar";
 
 window.matchMedia = jest.fn(() => ({ matches: true }));
 
-jest.mock("@times-components/save-and-share-bar", () => () =>
+jest.mock("@times-components-native/save-and-share-bar", () => () =>
   "SaveAndShareBar"
 );
 

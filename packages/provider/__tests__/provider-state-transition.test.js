@@ -3,9 +3,9 @@ import gql from "graphql-tag";
 import {
   providerTester,
   getRenderedQueries
-} from "@times-components/provider-test-tools";
+} from "@times-components-native/provider-test-tools";
 
-import { delayAndAdvance } from "@times-components/test-utils";
+import { delayAndAdvance } from "@times-components-native/test-utils";
 import connect from "../src/connect";
 
 function AuthorQueryResolver({ variables }) {

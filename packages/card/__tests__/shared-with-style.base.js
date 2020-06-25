@@ -1,6 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import Card from "../src/card";
 
 const props = {

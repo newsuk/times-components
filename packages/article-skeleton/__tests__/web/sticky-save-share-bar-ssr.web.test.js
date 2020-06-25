@@ -7,10 +7,10 @@ import { ServerStyleSheet } from "styled-components";
 
 import "../mocks.web";
 
-import { PROGRESS_ATTR_NAME } from "@times-components/sticky";
+import { PROGRESS_ATTR_NAME } from "@times-components-native/sticky";
 import StickySaveAndShareBar from "../../src/sticky-save-and-share-bar";
 
-jest.mock("@times-components/save-and-share-bar", () => () =>
+jest.mock("@times-components-native/save-and-share-bar", () => () =>
   "SaveAndShareBar"
 );
 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, Text, NativeModules, Platform } from "react-native";
-import { fonts, fontSizes } from "@times-components/styleguide";
+import { fonts, fontSizes } from "@times-components-native/styleguide";
 
 const { componentCaughtError } = NativeModules.ReactAnalytics;
 

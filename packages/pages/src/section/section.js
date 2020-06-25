@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { AppState, DeviceEventEmitter, NativeModules } from "react-native";
 import PropTypes from "prop-types";
-import { SectionContext } from "@times-components/context";
-import Section from "@times-components/section";
+import { SectionContext } from "@times-components-native/context";
+import Section from "@times-components-native/section";
 import trackSection from "./track-section";
 
 const {

@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import { Subscriber } from "react-broadcast";
 import { Platform, View } from "react-native";
-import { screenWidth } from "@times-components/utils";
+import { screenWidth } from "@times-components-native/utils";
 import NetInfo from "@react-native-community/netinfo";
 import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
 import adInit from "./utils/ad-init";

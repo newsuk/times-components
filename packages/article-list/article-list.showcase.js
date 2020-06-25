@@ -1,20 +1,20 @@
 import React from "react";
 import { Text, View } from "react-native";
-import storybookReporter from "@times-components/tealium-utils";
-import { withTrackingContext } from "@times-components/tracking";
+import storybookReporter from "@times-components-native/tealium-utils";
+import { withTrackingContext } from "@times-components-native/tracking";
 import {
   authorProfile as makeAuthorParams,
   MockedProvider,
   MockFixture
-} from "@times-components/provider-test-tools";
+} from "@times-components-native/provider-test-tools";
 import {
   authorArticlesNoImages as authorArticlesNoImagesQuery,
   authorArticlesWithImages as authorArticlesWithImagesQuery
-} from "@times-components/provider-queries";
+} from "@times-components-native/provider-queries";
 import {
   AuthorArticlesNoImagesProvider,
   AuthorArticlesWithImagesProvider
-} from "@times-components/provider";
+} from "@times-components-native/provider";
 import get from "lodash.get";
 import ArticleList, { ArticleListPageError } from "./src/article-list";
 import adConfig from "./fixtures/article-ad-config.json";

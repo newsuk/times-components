@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View } from "react-native";
-import { StandardSlice } from "@times-components/slice-layout";
+import { StandardSlice } from "@times-components-native/slice-layout";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import propTypes from "./related-articles-prop-types";

@@ -1,12 +1,12 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import ArticleMainStandard from "@times-components/article-main-standard";
-import ArticleMainComment from "@times-components/article-main-comment";
-import ArticleMagazineStandard from "@times-components/article-magazine-standard";
-import ArticleMagazineComment from "@times-components/article-magazine-comment";
+import ArticleMainStandard from "@times-components-native/article-main-standard";
+import ArticleMainComment from "@times-components-native/article-main-comment";
+import ArticleMagazineStandard from "@times-components-native/article-magazine-standard";
+import ArticleMagazineComment from "@times-components-native/article-magazine-comment";
 import Article from "../src/article";
 
-jest.mock("@times-components/image", () => "TimesImage");
+jest.mock("@times-components-native/image", () => "TimesImage");
 
 const requiredProps = {
   adConfig: {},

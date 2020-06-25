@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { spacing } from "@times-components/styleguide";
+import { spacing } from "@times-components-native/styleguide";
 
 const styles = StyleSheet.create({
   cardContainer: {

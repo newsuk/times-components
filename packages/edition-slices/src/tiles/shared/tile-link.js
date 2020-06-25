@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Link from "@times-components/link";
+import Link from "@times-components-native/link";
 
 const TileLink = ({
   children,

@@ -1,5 +1,5 @@
 import React from "react";
-import { MockedProvider } from "@times-components/provider-test-tools";
+import { MockedProvider } from "@times-components-native/provider-test-tools";
 import renderArticleSkeleton from "./showcase-helper";
 
 export default {

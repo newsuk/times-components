@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Context from "@times-components/context";
-import { TextLink } from "@times-components/link";
+import Context from "@times-components-native/context";
+import { TextLink } from "@times-components-native/link";
 import styleFactory from "../styles/article-body";
 import articleLinkTrackingEvents from "./article-link-tracking-events";
 

@@ -12,8 +12,8 @@ import standard1ArticleFixture from "../fixtures/standard/1-article";
 import standard2ArticlesFixture from "../fixtures/standard/2-articles";
 import standard3ArticlesFixture from "../fixtures/standard/3-articles";
 
-jest.mock("@times-components/video-label", () => "VideoLabel");
-jest.mock("@times-components/article-label", () => "ArticleLabel");
+jest.mock("@times-components-native/video-label", () => "VideoLabel");
+jest.mock("@times-components-native/article-label", () => "ArticleLabel");
 
 const standard0ArticleFixtureData = standard0ArticleFixture.data;
 const standard1ArticleFixtureData = standard1ArticleFixture({

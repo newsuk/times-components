@@ -1,4 +1,4 @@
-import styleguide from "@times-components/styleguide";
+import styleguide from "@times-components-native/styleguide";
 import sharedStylesFactory from "./shared";
 
 export default (dropCapFont, scale) => {

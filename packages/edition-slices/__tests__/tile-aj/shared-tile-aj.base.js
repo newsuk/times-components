@@ -1,7 +1,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import "../mocks-tiles";
-import Link from "@times-components/link";
+import Link from "@times-components-native/link";
 import { testPuzzleTile, puzzle } from "../shared-tile-utils";
 import { TileAJ } from "../../src/tiles";
 

@@ -1,6 +1,6 @@
 /* eslint-disable no-plusplus */
 import memoize from "memoize-one";
-import { FontStorage } from "@times-components/typeset";
+import { FontStorage } from "@times-components-native/typeset";
 
 // Collapse inlines into the following paragraphs on tablet
 const collapsed = (isTablet, content) =>

@@ -5,7 +5,7 @@ import {
   minimalWebTransform,
   print,
   minimaliseTransform
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 import renderKeyFacts from "../shared-render-key-facts";
 
 addSerializers(

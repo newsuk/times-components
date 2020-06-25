@@ -2,16 +2,16 @@
 import React from "react";
 import { Text, View } from "react-native";
 import pick from "lodash.pick";
-import { sections } from "@times-components/storybook";
-import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
-import { ContextProviderWithDefaults } from "@times-components/context";
-import { colours, scales } from "@times-components/styleguide";
-import storybookReporter from "@times-components/tealium-utils";
-import { MockBookmarksProvider } from "@times-components/provider-test-tools";
+import { sections } from "@times-components-native/storybook";
+import articleAdConfig from "@times-components-native/ad/fixtures/article-ad-config.json";
+import { ContextProviderWithDefaults } from "@times-components-native/context";
+import { colours, scales } from "@times-components-native/styleguide";
+import storybookReporter from "@times-components-native/tealium-utils";
+import { MockBookmarksProvider } from "@times-components-native/provider-test-tools";
 import {
   getNewsletter,
   subscribeNewsletter
-} from "@times-components/provider-queries";
+} from "@times-components-native/provider-queries";
 import fullArticleFixture from "./fixtures/full-article";
 import ArticleSkeleton from "./src/article-skeleton";
 

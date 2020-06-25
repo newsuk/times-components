@@ -2,9 +2,9 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import Link from "@times-components/link";
-import { ArticleSummaryHeadline } from "@times-components/article-summary";
-import { editionBreakpoints } from "@times-components/styleguide";
+import Link from "@times-components-native/link";
+import { ArticleSummaryHeadline } from "@times-components-native/article-summary";
+import { editionBreakpoints } from "@times-components-native/styleguide";
 import { withPuzzleTileTracking, TileImage } from "../shared";
 import stylesFactory from "./styles";
 

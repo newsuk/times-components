@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import TestRenderer from "react-test-renderer";
-import { iterator } from "@times-components/test-utils";
-import Link from "@times-components/link";
+import { iterator } from "@times-components-native/test-utils";
+import Link from "@times-components-native/link";
 import ArticleList from "../src/article-list";
 import articlesFixture from "../fixtures/articles.json";
 
-jest.mock("@times-components/image", () => "TimesImage");
+jest.mock("@times-components-native/image", () => "TimesImage");
 
 export default () => {
   jest.useFakeTimers();

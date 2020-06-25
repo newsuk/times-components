@@ -7,10 +7,10 @@ import {
   minimaliseTransform,
   minimalWebTransform,
   print
-} from "@times-components/jest-serializer";
-import { scales } from "@times-components/styleguide";
+} from "@times-components-native/jest-serializer";
+import { scales } from "@times-components-native/styleguide";
 
-import Context from "@times-components/context";
+import Context from "@times-components-native/context";
 import { UserState } from "../mocks.web";
 
 import { adConfig } from "../ad-mock";

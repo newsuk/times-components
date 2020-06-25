@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { ResponsiveContext } from "@times-components/responsive";
+import { ResponsiveContext } from "@times-components-native/responsive";
 import styleFactory from "./styles";
 
 const styles = styleFactory();

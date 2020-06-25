@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import {
   ItemRowSeparator,
   ItemColSeparator
-} from "@times-components/slice-layout";
+} from "@times-components-native/slice-layout";
 import { ResponsiveSlice } from "../shared";
 import { TileS } from "../../tiles";
 import styleFactory from "./styles";

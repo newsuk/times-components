@@ -1,7 +1,7 @@
 import React from "react";
 import { TouchableOpacity } from "react-native";
-import { scales } from "@times-components/styleguide";
-import { delay } from "@times-components/test-utils";
+import { scales } from "@times-components-native/styleguide";
+import { delay } from "@times-components-native/test-utils";
 import { shallow } from "enzyme";
 import TestRenderer from "react-test-renderer";
 import MessageBar from "../src/message-bar";

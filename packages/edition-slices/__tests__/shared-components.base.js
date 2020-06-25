@@ -1,23 +1,23 @@
 import React from "react";
 import { Text } from "react-native";
 import TestRenderer from "react-test-renderer";
-import Image from "@times-components/image";
-import { SectionContext } from "@times-components/context";
-import { ArticleSummaryHeadline } from "@times-components/article-summary";
-import { iterator } from "@times-components/test-utils";
-import { mockEditionSlice } from "@times-components/fixture-generator";
-import StarButton from "@times-components/star-button";
-import { ResponsiveContext } from "@times-components/responsive";
-import { editionBreakpoints } from "@times-components/styleguide";
+import Image from "@times-components-native/image";
+import { SectionContext } from "@times-components-native/context";
+import { ArticleSummaryHeadline } from "@times-components-native/article-summary";
+import { iterator } from "@times-components-native/test-utils";
+import { mockEditionSlice } from "@times-components-native/fixture-generator";
+import StarButton from "@times-components-native/star-button";
+import { ResponsiveContext } from "@times-components-native/responsive";
+import { editionBreakpoints } from "@times-components-native/styleguide";
 import { TileH, TileX } from "../src/tiles";
 import { TileLink, TileStar, TileSummary } from "../src/tiles/shared";
 import { ResponsiveSlice } from "../src/slices/shared";
 
-jest.mock("@times-components/article-flag", () => ({
+jest.mock("@times-components-native/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
 }));
 
-jest.mock("@times-components/image", () => "TimesImage");
+jest.mock("@times-components-native/image", () => "TimesImage");
 
 const tile = mockEditionSlice(1).items[0];
 

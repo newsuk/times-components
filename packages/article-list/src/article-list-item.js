@@ -3,11 +3,11 @@ import { View } from "react-native";
 import ArticleSummary, {
   ArticleSummaryHeadline,
   ArticleSummaryContent
-} from "@times-components/article-summary";
-import Card from "@times-components/card";
-import { ResponsiveContext } from "@times-components/responsive";
-import Link from "@times-components/link";
-import { colours, tabletWidth } from "@times-components/styleguide";
+} from "@times-components-native/article-summary";
+import Card from "@times-components-native/card";
+import { ResponsiveContext } from "@times-components-native/responsive";
+import Link from "@times-components-native/link";
+import { colours, tabletWidth } from "@times-components-native/styleguide";
 import articleListItemTrackingEvents from "./article-list-item-tracking-events";
 import { propTypes, defaultProps } from "./article-list-item-prop-types";
 import { getImageUri, getHeadline } from "./utils";

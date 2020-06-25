@@ -6,8 +6,8 @@ import {
   minimaliseTransform,
   print,
   replacePropTransform
-} from "@times-components/jest-serializer";
-import { hash } from "@times-components/test-utils";
+} from "@times-components-native/jest-serializer";
+import { hash } from "@times-components-native/test-utils";
 import shared from "./shared.base";
 import longKeysSet from "./shared-long-keys-set";
 

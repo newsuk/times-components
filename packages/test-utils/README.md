@@ -17,7 +17,7 @@ snapshot tests would be separated out from non-snapshot tests.
 Example:
 
 ```
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 
 const tests = [
   {

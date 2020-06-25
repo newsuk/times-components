@@ -3,7 +3,7 @@ const fs = require('fs')
 
 const buildConfig = dir => {
   const { name: packageName } = JSON.parse(fs.readFileSync(path.join(dir, 'package.json'), 'utf8'))
-  const name = packageName.replace("@times-components/", '')
+  const name = packageName.replace("@times-components-native/", '')
   return {
     rootDir: path.join(dir, '../..'),
     preset: "react-native",

@@ -6,10 +6,10 @@ import {
   minimaliseTransform,
   minimalNativeTransform,
   print
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 import TestRenderer from "react-test-renderer";
 import "./mocks";
-import ArticleSummaryHeadline from "@times-components/article-summary";
+import ArticleSummaryHeadline from "@times-components-native/article-summary";
 import { omitNative as omitProps } from "./utils";
 import ArticleList from "../src/article-list";
 import articlesFixture from "../fixtures/articles.json";

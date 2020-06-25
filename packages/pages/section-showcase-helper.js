@@ -1,7 +1,7 @@
 import React from "react";
 import { ActivityIndicator, Text } from "react-native";
 import PropTypes from "prop-types";
-import { EditionProvider } from "@times-components/provider";
+import { EditionProvider } from "@times-components-native/provider";
 import withNativeProvider from "./src/with-native-provider";
 import Section from "./src/section/section";
 

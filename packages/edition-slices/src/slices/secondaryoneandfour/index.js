@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { SectionContext } from "@times-components/context";
-import { TheSTLogo, TheTimesLogo } from "@times-components/icons";
+import { SectionContext } from "@times-components-native/context";
+import { TheSTLogo, TheTimesLogo } from "@times-components-native/icons";
 import {
   SecondaryOneAndFourSlice,
   ItemRowSeparator
-} from "@times-components/slice-layout";
+} from "@times-components-native/slice-layout";
 import { TileO, TileN } from "../../tiles";
 import styleFactory from "./styles";
 import { ResponsiveSlice } from "../shared";

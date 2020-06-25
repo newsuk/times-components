@@ -5,7 +5,7 @@ import {
   minimaliseTransform,
   minimalNativeTransform,
   print
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 import { shallow } from "enzyme";
 import shared from "./shared-accessible.base";
 

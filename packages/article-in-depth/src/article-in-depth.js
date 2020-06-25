@@ -2,17 +2,17 @@
 
 import React, { Component, Fragment } from "react";
 import { View } from "react-native";
-import ArticleError from "@times-components/article-error";
-import ArticleSkeleton from "@times-components/article-skeleton";
-import ArticleLeadAsset from "@times-components/article-lead-asset";
-import { CentredCaption } from "@times-components/caption";
-import { ResponsiveContext } from "@times-components/responsive";
+import ArticleError from "@times-components-native/article-error";
+import ArticleSkeleton from "@times-components-native/article-skeleton";
+import ArticleLeadAsset from "@times-components-native/article-lead-asset";
+import { CentredCaption } from "@times-components-native/caption";
+import { ResponsiveContext } from "@times-components-native/responsive";
 import {
   getHeadline,
   getLeadAsset,
   getStandardTemplateCrop
-} from "@times-components/utils";
-import Context from "@times-components/context";
+} from "@times-components-native/utils";
+import Context from "@times-components-native/context";
 import ArticleHeader from "./article-header/article-header";
 import {
   articlePropTypes,

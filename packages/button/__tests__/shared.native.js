@@ -8,7 +8,7 @@ import {
   minimaliseTransform,
   minimalNativeTransform,
   print
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 import Button from "../src/button";
 import shared from "./shared.base";
 

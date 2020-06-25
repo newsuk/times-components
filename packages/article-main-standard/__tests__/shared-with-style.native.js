@@ -7,7 +7,7 @@ import {
   minimaliseTransform,
   minimalNativeTransform,
   print
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 import { setIsTablet } from "./mocks.native";
 import ArticleMainStandard from "../src/article-main-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";

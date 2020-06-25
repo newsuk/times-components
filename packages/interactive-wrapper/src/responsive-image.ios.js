@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View, Image, ImageBackground } from "react-native";
-import { screenWidth } from "@times-components/utils";
+import { screenWidth } from "@times-components-native/utils";
 import PropTypes from "prop-types";
 
 const deckUrl = id =>

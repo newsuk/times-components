@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 import {
   ArticleBylineWithLinks,
   hasBylineData
-} from "@times-components/article-byline";
-import Context from "@times-components/context";
-import DatePublication from "@times-components/date-publication";
-import { colours } from "@times-components/styleguide";
+} from "@times-components-native/article-byline";
+import Context from "@times-components-native/context";
+import DatePublication from "@times-components-native/date-publication";
+import { colours } from "@times-components-native/styleguide";
 
 import metaPropTypes from "./article-meta-prop-types";
 import styles from "../styles";

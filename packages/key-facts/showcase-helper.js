@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import pick from "lodash.pick";
-import { sections } from "@times-components/storybook";
-import { ContextProviderWithDefaults } from "@times-components/context";
-import Responsive from "@times-components/responsive";
-import { colours, scales } from "@times-components/styleguide";
+import { sections } from "@times-components-native/storybook";
+import { ContextProviderWithDefaults } from "@times-components-native/context";
+import Responsive from "@times-components-native/responsive";
+import { colours, scales } from "@times-components-native/styleguide";
 import KeyFacts from "./src/key-facts";
 
 const selectScales = select => select("Scale", scales, scales.medium);

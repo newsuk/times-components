@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import sliceMap from "@times-components/edition-slices";
+import sliceMap from "@times-components-native/edition-slices";
 import withSliceTrackingContext from "./slice-tracking-context";
 
 const Slice = ({ slice, onPress }) => {

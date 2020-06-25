@@ -1,7 +1,7 @@
 import React from "react";
 import { Image } from "react-native";
 import PropTypes from "prop-types";
-import Button from "@times-components/link";
+import Button from "@times-components-native/link";
 import styles from "../styles";
 import closeImagePath from "../../assets/close-button.png";
 

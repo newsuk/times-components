@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import styleguideFactory from "@times-components/styleguide";
+import styleguideFactory from "@times-components-native/styleguide";
 import sharedStyles from "./shared";
 
 const { spacing, colours } = styleguideFactory();

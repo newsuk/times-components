@@ -1,4 +1,4 @@
-import { colours, spacing } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components-native/styleguide";
 
 const styles = {
   header: {

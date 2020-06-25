@@ -1,1 +1,1 @@
-export { default } from "@times-components/responsive-image";
+export { default } from "@times-components-native/responsive-image";

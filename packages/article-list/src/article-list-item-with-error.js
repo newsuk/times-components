@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ErrorView from "@times-components/error-view";
+import ErrorView from "@times-components-native/error-view";
 import ArticleListItem from "./article-list-item";
 import { propTypes, defaultProps } from "./article-list-item-prop-types";
 

@@ -1,6 +1,6 @@
 import React from "react";
-import { ResponsiveContext } from "@times-components/responsive";
-import { spacing } from "@times-components/styleguide";
+import { ResponsiveContext } from "@times-components-native/responsive";
+import { spacing } from "@times-components-native/styleguide";
 import { propTypes, defaultProps } from "./inset-caption-prop-types";
 
 const captionStyle = {

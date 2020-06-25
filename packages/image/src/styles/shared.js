@@ -1,4 +1,4 @@
-import { colours, spacing } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components-native/styleguide";
 
 const CLOSE_BUTTON_PHONE_SIZE = 25;
 const CLOSE_BUTTON_TABLET_SIZE = 30;

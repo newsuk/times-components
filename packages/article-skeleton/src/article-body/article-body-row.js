@@ -1,17 +1,17 @@
 /* eslint-disable prefer-destructuring */
 import React from "react";
 import { View, Text, Dimensions, Platform } from "react-native";
-import styleguide, { colours, tabletWidth } from "@times-components/styleguide";
-import { AttributedString } from "@times-components/typeset";
-import { screenWidth } from "@times-components/utils";
-import Ad from "@times-components/ad";
-import ArticleImage from "@times-components/article-image";
-import InteractiveWrapper from "@times-components/interactive-wrapper";
-import KeyFacts from "@times-components/key-facts";
-import PullQuote from "@times-components/pull-quote";
-import Video from "@times-components/video";
-import ArticleParagraphWrapper from "@times-components/article-paragraph";
-import Context from "@times-components/context";
+import styleguide, { colours, tabletWidth } from "@times-components-native/styleguide";
+import { AttributedString } from "@times-components-native/typeset";
+import { screenWidth } from "@times-components-native/utils";
+import Ad from "@times-components-native/ad";
+import ArticleImage from "@times-components-native/article-image";
+import InteractiveWrapper from "@times-components-native/interactive-wrapper";
+import KeyFacts from "@times-components-native/key-facts";
+import PullQuote from "@times-components-native/pull-quote";
+import Video from "@times-components-native/video";
+import ArticleParagraphWrapper from "@times-components-native/article-paragraph";
+import Context from "@times-components-native/context";
 import ArticleParagraph from "./article-body-paragraph";
 import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";

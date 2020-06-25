@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, TouchableHighlight } from "react-native";
-import { colours } from "@times-components/styleguide";
-import { capitalise } from "@times-components/utils";
+import { colours } from "@times-components-native/styleguide";
+import { capitalise } from "@times-components-native/utils";
 import { propTypes, defaultProps } from "./button-prop-types";
 import styles from "./styles";
 

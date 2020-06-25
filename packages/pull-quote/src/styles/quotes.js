@@ -1,4 +1,4 @@
-import styleguideFactory from "@times-components/styleguide";
+import styleguideFactory from "@times-components-native/styleguide";
 
 const { fonts, spacing } = styleguideFactory();
 

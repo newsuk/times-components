@@ -1,8 +1,8 @@
 /* eslint-disable global-require */
 import React from "react";
-import { MockEdition } from "@times-components/fixture-generator";
-import { SectionContext } from "@times-components/context";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { MockEdition } from "@times-components-native/fixture-generator";
+import { SectionContext } from "@times-components-native/context";
+import { editionBreakpoints } from "@times-components-native/styleguide";
 import {
   addSerializers,
   compose,
@@ -10,15 +10,15 @@ import {
   minimaliseTransform,
   minimalNativeTransform,
   print
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 import TestRenderer from "react-test-renderer";
 import SectionItemSeparator from "../src/section-item-separator";
 import Section from "../src/section";
 import PuzzleBar from "../src/puzzle-bar";
 
-jest.mock("@times-components/edition-slices", () => {
+jest.mock("@times-components-native/edition-slices", () => {
   const slicesMock = {};
-  const slicesMap = require.requireActual("@times-components/edition-slices")
+  const slicesMap = require.requireActual("@times-components-native/edition-slices")
     .default;
 
   Object.keys(slicesMap).forEach(key => {
@@ -31,10 +31,10 @@ jest.mock("@times-components/edition-slices", () => {
   };
 });
 
-jest.mock("@times-components/icons", () => ({
+jest.mock("@times-components-native/icons", () => ({
   IconForwardArrow: "IconForwardArrow"
 }));
-jest.mock("@times-components/image", () => ({
+jest.mock("@times-components-native/image", () => ({
   __esModule: true,
   default: "TimesImage"
 }));
@@ -91,8 +91,8 @@ export default () => {
   });
 
   it("should render secondary 2 and 2 for mobile (small breakpoint)", () => {
-    jest.doMock("@times-components/utils", () => {
-      const actualUtils = jest.requireActual("@times-components/utils");
+    jest.doMock("@times-components-native/utils", () => {
+      const actualUtils = jest.requireActual("@times-components-native/utils");
 
       return {
         ...actualUtils,

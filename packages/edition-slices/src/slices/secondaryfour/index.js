@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { SecondaryFourSlice } from "@times-components/slice-layout";
+import { SecondaryFourSlice } from "@times-components-native/slice-layout";
 import { TileC, TileAR, TileB } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 import stylesFactory from "./styles";

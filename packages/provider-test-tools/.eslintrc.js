@@ -1,11 +1,11 @@
 module.exports = {
-  extends: ["@times-components/thetimes"],
+  extends: ["@times-components-native/thetimes"],
   rules: {
     "graphql/template-strings": [
       "error",
       {
         env: "apollo",
-        schemaJson: require("@times-components/schema/schema.json")
+        schemaJson: require("@times-components-native/schema/schema.json")
       }
     ]
   },

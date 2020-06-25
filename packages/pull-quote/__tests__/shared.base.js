@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import PullQuotes from "../src/pull-quote";
 import PullQuoteTwitterLink from "../src/pull-quote-twitter-link";
 

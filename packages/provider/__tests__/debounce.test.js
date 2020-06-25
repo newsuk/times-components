@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { shallow } from "enzyme";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import {
   addSerializers,
   enzymeRootSerializer,
   minimalise
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 
 import Inner from "./inner";
 import withDebounce, { Debounce } from "../src/debounce";

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
+import Image from "@times-components-native/image";
 import styles from "./styles";
 
 const AuthorProfileHeadImage = ({ uri }) => (

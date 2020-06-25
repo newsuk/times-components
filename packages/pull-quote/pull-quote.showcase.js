@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { sections } from "@times-components/storybook";
-import { themeFactory } from "@times-components/styleguide";
+import { sections } from "@times-components-native/storybook";
+import { themeFactory } from "@times-components-native/styleguide";
 import PullQuotes from "./src/pull-quote";
 
 const preventDefaultedAction = decorateAction =>

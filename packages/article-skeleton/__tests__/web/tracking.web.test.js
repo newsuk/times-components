@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import TestRenderer from "react-test-renderer";
 import mockDate from "mockdate";
-import Link from "@times-components/link";
+import Link from "@times-components-native/link";
 import ArticleSkeleton from "../../src/article-skeleton";
 import articleFixture from "../../fixtures/full-article";
 import ArticleLink from "../../src/article-body/article-link";

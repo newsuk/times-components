@@ -6,9 +6,9 @@ import {
   minimalNativeTransform,
   print,
   replacePropTransform
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 import TestRenderer from "react-test-renderer";
-import { hash } from "@times-components/test-utils";
+import { hash } from "@times-components-native/test-utils";
 import shared from "./shared.base";
 import AuthorProfile from "../src/author-profile";
 import author from "./fixtures";

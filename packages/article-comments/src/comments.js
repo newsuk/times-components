@@ -1,10 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import Context from "@times-components/context";
-import Button from "@times-components/button";
-import { TextLink } from "@times-components/link";
-import styleguide from "@times-components/styleguide";
+import Context from "@times-components-native/context";
+import Button from "@times-components-native/button";
+import { TextLink } from "@times-components-native/link";
+import styleguide from "@times-components-native/styleguide";
 import styles from "./styles";
 
 const Comments = ({

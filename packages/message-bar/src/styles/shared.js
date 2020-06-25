@@ -1,4 +1,4 @@
-import { colours, fontFactory } from "@times-components/styleguide";
+import { colours, fontFactory } from "@times-components-native/styleguide";
 
 const height = 50;
 

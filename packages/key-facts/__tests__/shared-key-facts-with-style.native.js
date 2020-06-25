@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { ContextProviderWithDefaults } from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components-native/context";
 import {
   addSerializers,
   compose,
@@ -8,9 +8,9 @@ import {
   minimaliseTransform,
   minimalNativeTransform,
   print
-} from "@times-components/jest-serializer";
-import { scales } from "@times-components/styleguide";
-import { setIsTablet } from "@times-components/mocks/dimensions";
+} from "@times-components-native/jest-serializer";
+import { scales } from "@times-components-native/styleguide";
+import { setIsTablet } from "@times-components-native/mocks/dimensions";
 import KeyFacts from "../src/key-facts";
 import dataWithTitle from "../fixtures/key-facts-test.json";
 import dataWithoutTitle from "../fixtures/key-facts-no-title-test.json";

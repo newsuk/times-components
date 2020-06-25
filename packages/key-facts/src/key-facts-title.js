@@ -1,6 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
-import { ResponsiveContext } from "@times-components/responsive";
+import { ResponsiveContext } from "@times-components-native/responsive";
 import propTypes from "./key-facts-title-prop-types";
 import styles from "./styles";
 

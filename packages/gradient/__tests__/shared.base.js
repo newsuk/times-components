@@ -1,6 +1,6 @@
 import React from "react";
 import { ART, Text } from "react-native";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import Gradient, { OverlayGradient } from "../src/gradient";
 import GradientBase from "../src/gradient.base";
 

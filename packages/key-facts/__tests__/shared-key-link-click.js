@@ -1,6 +1,6 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { scales } from "@times-components/styleguide";
+import { scales } from "@times-components-native/styleguide";
 import KeyFactsText from "../src/key-facts-text";
 import data from "../fixtures/key-facts-test.json";
 

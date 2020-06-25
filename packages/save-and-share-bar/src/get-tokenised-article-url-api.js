@@ -1,5 +1,5 @@
-import { getTokenisedArticleUrl } from "@times-components/provider-queries";
-import { makeClient } from "@times-components/utils";
+import { getTokenisedArticleUrl } from "@times-components-native/provider-queries";
+import { makeClient } from "@times-components-native/utils";
 
 const client = makeClient();
 

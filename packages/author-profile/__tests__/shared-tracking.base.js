@@ -1,7 +1,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { mockNativeModules } from "@times-components/mocks";
-import { iterator } from "@times-components/test-utils";
+import { mockNativeModules } from "@times-components-native/mocks";
+import { iterator } from "@times-components-native/test-utils";
 import mockDate from "mockdate";
 import "./mocks";
 import AuthorProfile from "../src/author-profile";
@@ -10,7 +10,7 @@ import author from "./fixtures";
 
 mockNativeModules();
 // eslint-disable-next-line global-require
-jest.mock("@times-components/provider", () => require("./mock-provider"));
+jest.mock("@times-components-native/provider", () => require("./mock-provider"));
 
 export default props => {
   const tests = [

@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 import {
   ArticleBylineWithLinks,
   hasBylineData
-} from "@times-components/article-byline";
-import DatePublication from "@times-components/date-publication";
+} from "@times-components-native/article-byline";
+import DatePublication from "@times-components-native/date-publication";
 
 import metaPropTypes from "./article-meta-prop-types";
 import styles from "../styles";

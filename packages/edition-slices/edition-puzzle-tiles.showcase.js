@@ -1,6 +1,6 @@
 import React from "react";
 import { ScrollView } from "react-native";
-import { mockPuzzleSlice } from "@times-components/fixture-generator";
+import { mockPuzzleSlice } from "@times-components-native/fixture-generator";
 
 import { TileAJ, TileAK } from "./src/tiles";
 

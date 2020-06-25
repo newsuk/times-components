@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
-import { HoverIcon } from "@times-components/utils";
-import Link from "@times-components/link";
+import { HoverIcon } from "@times-components-native/utils";
+import Link from "@times-components-native/link";
 import PropTypes from "prop-types";
 import styles from "./styles";
 

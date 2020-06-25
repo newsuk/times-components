@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import {
   VerticalLayout,
   ListVerticalLayout
-} from "@times-components/slice-layout";
+} from "@times-components-native/slice-layout";
 import { TileK } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 import styles from "./styles";

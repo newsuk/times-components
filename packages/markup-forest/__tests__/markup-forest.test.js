@@ -1,5 +1,5 @@
 import React from "react";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import TestRenderer from "react-test-renderer";
 import renderTrees, {
   renderTree,

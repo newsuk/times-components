@@ -32,11 +32,11 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.38.10"
+    "@times-components-native/styleguide": "3.38.10"
   },
   "devDependencies": {
     "@babel/cli": "7.4.4",
-    "@times-components/eslint-config-thetimes": "0.8.16",
+    "@times-components-native/eslint-config-thetimes": "0.8.16",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-styled-components": "1.10.6",
     "eslint": "5.9.0",

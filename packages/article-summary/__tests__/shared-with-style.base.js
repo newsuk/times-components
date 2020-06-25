@@ -1,20 +1,20 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import ArticleSummary, { ArticleSummaryContent } from "../src/article-summary";
 import defaultFixture from "../fixtures/default";
 
-jest.mock("@times-components/article-byline", () => ({
+jest.mock("@times-components-native/article-byline", () => ({
   __esModule: true,
   ArticleBylineOpinion: "ArticleBylineOpinion",
   default: "ArticleByline"
 }));
-jest.mock("@times-components/article-flag", () => ({
+jest.mock("@times-components-native/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
 }));
-jest.mock("@times-components/article-label", () => "ArticleLabel");
-jest.mock("@times-components/date-publication", () => "DatePublication");
-jest.mock("@times-components/video-label", () => "VideoLabel");
+jest.mock("@times-components-native/article-label", () => "ArticleLabel");
+jest.mock("@times-components-native/date-publication", () => "DatePublication");
+jest.mock("@times-components-native/video-label", () => "VideoLabel");
 
 export default () => {
   const headline = "Test Headline";

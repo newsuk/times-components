@@ -1,6 +1,6 @@
 import React from "react";
-import { IconVideo360Player } from "@times-components/icons";
-import { colours } from "@times-components/styleguide";
+import { IconVideo360Player } from "@times-components-native/icons";
+import { colours } from "@times-components-native/styleguide";
 import Video360Container from "./styles/responsive";
 
 const video360Icon = () => (

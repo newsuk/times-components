@@ -1,7 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 import { shallow } from "enzyme";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 
 export default (withPageState, renderComponent) => {
   const tests = [

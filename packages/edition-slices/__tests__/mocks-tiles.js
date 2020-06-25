@@ -1,7 +1,7 @@
-jest.mock("@times-components/article-flag", () => ({
+jest.mock("@times-components-native/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
 }));
-jest.mock("@times-components/image", () => "Image");
-jest.mock("@times-components/link", () => "Link");
-jest.mock("@times-components/gradient", () => "Gradient");
-jest.mock("@times-components/article-label", () => "ArticleLabel");
+jest.mock("@times-components-native/image", () => "Image");
+jest.mock("@times-components-native/link", () => "Link");
+jest.mock("@times-components-native/gradient", () => "Gradient");
+jest.mock("@times-components-native/article-label", () => "ArticleLabel");

@@ -1,7 +1,7 @@
 import React from "react";
 import mockDate from "mockdate";
 import TestRenderer from "react-test-renderer";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import ArticleFlag, {
   ArticleFlags,
   NewArticleFlag,

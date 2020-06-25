@@ -17,7 +17,7 @@ const toBeExported = {
   }
 };
 
-const defaultConfiguration = require("@times-components/webpack-configurator")(
+const defaultConfiguration = require("@times-components-native/webpack-configurator")(
   __dirname,
   "dev"
 );

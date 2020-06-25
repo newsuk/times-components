@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components-native/styleguide";
 import sharedStyles, { captionStyles, tabletCaptionStyles } from "./shared";
 
 const styles = StyleSheet.create({

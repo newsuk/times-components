@@ -1,5 +1,5 @@
 import React from "react";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import ArticleImage from "../src/article-image";
 import landscapeInlineImageFixture from "../fixtures/landscape-inline-image";
 import portraitInlineImageFixture from "../fixtures/portrait-inline-image";

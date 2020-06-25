@@ -1,6 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
-import { gqlRgbaToHex } from "@times-components/utils";
+import { gqlRgbaToHex } from "@times-components-native/utils";
 import PropTypes from "prop-types";
 import styles from "./style";
 

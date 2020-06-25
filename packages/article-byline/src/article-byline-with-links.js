@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types, no-sequences, no-unused-expressions */
 import React from "react";
 import { Platform } from "react-native";
-import { TextLink } from "@times-components/link";
+import { TextLink } from "@times-components-native/link";
 import renderByline from "./render-byline";
 import { propTypes, defaultProps } from "./article-byline-prop-types";
 import styles from "./styles";

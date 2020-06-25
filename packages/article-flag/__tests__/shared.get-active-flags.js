@@ -1,5 +1,5 @@
 import mockDate from "mockdate";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import getActiveFlags from "../src/get-active-flags";
 
 export default () => {

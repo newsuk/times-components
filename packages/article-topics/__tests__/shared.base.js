@@ -1,10 +1,10 @@
 import React from "react";
 import mockDate from "mockdate";
 import TestRenderer from "react-test-renderer";
-import { mockNativeModules } from "@times-components/mocks";
-import { iterator } from "@times-components/test-utils";
-import Link from "@times-components/link";
-import { withTrackingContext } from "@times-components/tracking";
+import { mockNativeModules } from "@times-components-native/mocks";
+import { iterator } from "@times-components-native/test-utils";
+import Link from "@times-components-native/link";
+import { withTrackingContext } from "@times-components-native/tracking";
 import ArticleTopics from "../src/article-topics";
 import ArticleTopic from "../src/article-topic";
 import topicData from "../fixtures/topics";

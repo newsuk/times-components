@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import StarButton from "@times-components/star-button";
-import { SectionContext } from "@times-components/context";
+import StarButton from "@times-components-native/star-button";
+import { SectionContext } from "@times-components-native/context";
 import withArticleSaveTracking from "./save-article-tracking-events";
 
 const StarWithTracking = withArticleSaveTracking(

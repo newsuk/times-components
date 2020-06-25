@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { propTypes as treePropType } from "@times-components/markup-forest";
+import { propTypes as treePropType } from "@times-components-native/markup-forest";
 
 export const propTypes = {
   biography: PropTypes.arrayOf(treePropType),

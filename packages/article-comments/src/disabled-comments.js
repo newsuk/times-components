@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import { TextLink } from "@times-components/link";
+import { TextLink } from "@times-components-native/link";
 import styles from "./styles";
 
 const DisabledComments = ({ onCommentGuidelinesPress }) => (

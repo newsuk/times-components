@@ -11,7 +11,7 @@ exported components:
 ## How to use
 
 ```js
-import Gradient, { OverlayGradient } from "@times-components/gradient";
+import Gradient, { OverlayGradient } from "@times-components-native/gradient";
 
 // Works on it's own
 <Gradient

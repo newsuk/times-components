@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Text, View } from "react-native";
-import renderTrees from "@times-components/markup-forest";
-import coreRenderers from "@times-components/markup";
+import renderTrees from "@times-components-native/markup-forest";
+import coreRenderers from "@times-components-native/markup";
 import { propTypes, defaultProps } from "./topic-head-prop-types";
 import styles from "./styles";
 

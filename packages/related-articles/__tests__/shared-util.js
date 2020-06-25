@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import { shallow } from "enzyme";
 import PropTypes from "prop-types";
 import TestRenderer from "react-test-renderer";
-import Link from "@times-components/link";
+import Link from "@times-components-native/link";
 import RelatedArticleItem from "../src/related-article-item";
 import * as util from "./shared-util.base";
 

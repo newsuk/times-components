@@ -6,7 +6,7 @@ import {
   enzymeRootSerializer,
   minimaliseTransform,
   print
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 import adConfig from "../fixtures/article-ad-config.json";
 import Ad, { AdComposer } from "../src/ad";
 

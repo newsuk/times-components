@@ -1,13 +1,13 @@
 /* eslint-disable react/no-multi-comp */
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import ArticleMagazineComment from "../src/article-magazine-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
 import { adConfig } from "./ad-mock";
 
-jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
+jest.mock("@times-components-native/save-and-share-bar", () => "SaveAndShareBar");
 
 const findComponents = (testInstance, componentName) =>
   testInstance.root.findAll(node => {

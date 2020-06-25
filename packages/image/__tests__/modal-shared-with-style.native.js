@@ -8,9 +8,9 @@ import {
   minimaliseTransform,
   minimalNativeTransform,
   print
-} from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
-import Responsive from "@times-components/responsive";
+} from "@times-components-native/jest-serializer";
+import { iterator } from "@times-components-native/test-utils";
+import Responsive from "@times-components-native/responsive";
 import { setIsTablet } from "./mocks";
 
 import ModalImage from "../src/modal-image";

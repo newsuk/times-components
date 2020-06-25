@@ -1,7 +1,7 @@
 import {
   propTypes as captionPropTypes,
   defaultProps as captionDefaultProps
-} from "@times-components/caption";
+} from "@times-components-native/caption";
 
 export const propTypes = {
   ...captionPropTypes

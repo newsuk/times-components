@@ -1,6 +1,6 @@
 import get from "lodash.get";
 import { DateTime } from "luxon";
-import { withTrackingContext } from "@times-components/tracking";
+import { withTrackingContext } from "@times-components-native/tracking";
 
 export default Component =>
   withTrackingContext(Component, {

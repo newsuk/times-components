@@ -1,5 +1,5 @@
 /* global Intl */
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import { isLondonTimezone } from "../src/date";
 import "./mock-timezone-non-london";
 

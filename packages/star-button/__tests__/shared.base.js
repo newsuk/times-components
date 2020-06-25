@@ -1,11 +1,11 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import StarButton from "../src/star-button";
 
-jest.mock("@times-components/link", () => "Link");
+jest.mock("@times-components-native/link", () => "Link");
 
-jest.mock("@times-components/icons", () => ({
+jest.mock("@times-components-native/icons", () => ({
   IconStar: "IconStar"
 }));
 

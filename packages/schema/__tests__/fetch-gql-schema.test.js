@@ -2,7 +2,7 @@ const path = require("path");
 const fs = require("fs");
 const { promisify } = require("util");
 const rimraf = require("rimraf");
-const { iterator } = require("@times-components/test-utils");
+const { iterator } = require("@times-components-native/test-utils");
 const fetchGql = require("../fetch-gql-schema");
 
 const mkdir = promisify(fs.mkdir);

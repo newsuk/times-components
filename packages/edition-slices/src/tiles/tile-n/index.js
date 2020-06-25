@@ -2,7 +2,7 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { colours, editionBreakpoints } from "@times-components/styleguide";
+import { colours, editionBreakpoints } from "@times-components-native/styleguide";
 import {
   getTileImage,
   getTileStrapline,

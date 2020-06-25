@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import styleguide from "@times-components/styleguide";
+import styleguide from "@times-components-native/styleguide";
 
 const { colours, fontFactory, fonts, fontSizes, spacing } = styleguide();
 

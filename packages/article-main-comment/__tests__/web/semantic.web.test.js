@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { hash, iterator } from "@times-components/test-utils";
+import { hash, iterator } from "@times-components-native/test-utils";
 import {
   addSerializers,
   compose,
@@ -10,9 +10,9 @@ import {
   print,
   replacePropTransform,
   replaceTransform
-} from "@times-components/jest-serializer";
-import { ContextProviderWithDefaults } from "@times-components/context";
-import { scales } from "@times-components/styleguide";
+} from "@times-components-native/jest-serializer";
+import { ContextProviderWithDefaults } from "@times-components-native/context";
+import { scales } from "@times-components-native/styleguide";
 import Article from "../../src/article-main-comment";
 import articleFixture, { testFixture } from "../../fixtures/full-article";
 import { adConfig } from "../ad-mock";

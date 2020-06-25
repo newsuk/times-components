@@ -1,5 +1,5 @@
 import { MockList } from "graphql-tools";
-import { article as articleQuery } from "@times-components/provider-queries";
+import { article as articleQuery } from "@times-components-native/provider-queries";
 import bookmarks from "./bookmarks";
 import article from "../fixtures/article.json";
 

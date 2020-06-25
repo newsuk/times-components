@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { NativeModules } from "react-native";
-import { ArticleProvider } from "@times-components/provider";
+import { ArticleProvider } from "@times-components-native/provider";
 import ArticleBase from "./article-base";
 import { propTypes, defaultProps } from "./article-prop-types";
 import withNativeProvider from "../with-native-provider";

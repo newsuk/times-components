@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types,import/no-extraneous-dependencies */
 import React from "react";
-import { tabletWidthMax } from "@times-components/styleguide";
+import { tabletWidthMax } from "@times-components-native/styleguide";
 
 const MockArticleSkeletonWrapper = "ArticleSkeleton";
 

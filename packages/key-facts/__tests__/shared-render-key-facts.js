@@ -1,5 +1,5 @@
 import React from "react";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import KeyFacts from "../src/key-facts";
 import data from "../fixtures/key-facts-test.json";
 import dataNoTitle from "../fixtures/key-facts-no-title-test.json";

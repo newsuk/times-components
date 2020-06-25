@@ -1,6 +1,6 @@
 import React from "react";
-import { iterator } from "@times-components/test-utils";
-import { ContextProviderWithDefaults } from "@times-components/context";
+import { iterator } from "@times-components-native/test-utils";
+import { ContextProviderWithDefaults } from "@times-components-native/context";
 import Label from "../src/article-label/article-label";
 import Meta from "../src/article-meta/article-meta";
 import Standfirst from "../src/article-standfirst/article-standfirst";

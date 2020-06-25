@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ResponsiveContext } from "@times-components/responsive";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { ResponsiveContext } from "@times-components-native/responsive";
+import { editionBreakpoints } from "@times-components-native/styleguide";
 import Gutter from "./gutter";
 import ContentWrapper from "./content-wrapper";
 

@@ -1,4 +1,4 @@
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import { readFileSync } from "fs";
 import { getCacheKey, process as transform } from "../src/source-loader";
 

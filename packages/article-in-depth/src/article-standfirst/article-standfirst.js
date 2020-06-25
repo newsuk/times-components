@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Text } from "react-native";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components-native/styleguide";
 import styles from "../styles";
 
 const HeaderStandfirst = ({ standfirst, color }) => {

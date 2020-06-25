@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
-import { IconVideo } from "@times-components/icons";
+import { IconVideo } from "@times-components-native/icons";
 import PropTypes from "prop-types";
 import styles from "./style";
 

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { sections } from "@times-components/storybook";
+import { sections } from "@times-components-native/storybook";
 import Page from "./src/pages";
 import Section from "./section-showcase-helper";
 

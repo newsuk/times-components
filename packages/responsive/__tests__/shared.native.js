@@ -1,7 +1,7 @@
 /* eslint-disable global-require */
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { setDimension } from "@times-components/mocks/dimensions";
+import { setDimension } from "@times-components-native/mocks/dimensions";
 import Responsive, { ResponsiveContext } from "../src/responsive";
 import shared from "./shared.base";
 
@@ -27,8 +27,8 @@ export default () => {
   });
 
   it("addDimensionListener is called on mount", () => {
-    jest.doMock("@times-components/utils", () => {
-      const actualUtils = jest.requireActual("@times-components/utils");
+    jest.doMock("@times-components-native/utils", () => {
+      const actualUtils = jest.requireActual("@times-components-native/utils");
 
       return {
         ...actualUtils,
@@ -38,7 +38,7 @@ export default () => {
       };
     });
 
-    const { addDimensionsListener } = require("@times-components/utils");
+    const { addDimensionsListener } = require("@times-components-native/utils");
     // eslint-disable-next-line no-shadow
     const Responsive = require("../src/responsive").default;
 
@@ -54,8 +54,8 @@ export default () => {
   });
 
   it("removeDimensionListener is called on unmount", () => {
-    jest.doMock("@times-components/utils", () => {
-      const actualUtils = jest.requireActual("@times-components/utils");
+    jest.doMock("@times-components-native/utils", () => {
+      const actualUtils = jest.requireActual("@times-components-native/utils");
 
       return {
         ...actualUtils,
@@ -65,7 +65,7 @@ export default () => {
       };
     });
 
-    const { removeDimensionsListener } = require("@times-components/utils");
+    const { removeDimensionsListener } = require("@times-components-native/utils");
     // eslint-disable-next-line no-shadow
     const Responsive = require("../src/responsive").default;
 

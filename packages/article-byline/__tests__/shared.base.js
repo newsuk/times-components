@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import TestRenderer from "react-test-renderer";
 import { shallow } from "enzyme";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import ArticleByline from "../src/article-byline";
 import authorsFixture from "../fixtures/authors.json";
 import ArticleBylineWithLinks from "../src/article-byline-with-links";

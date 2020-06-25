@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Link from "@times-components/link";
-import { IconStar } from "@times-components/icons";
+import Link from "@times-components-native/link";
+import { IconStar } from "@times-components-native/icons";
 import styles, { getTheme } from "./styles";
 
 const StarButton = ({ disabled, height, isDark, onPress, selected, style }) => {

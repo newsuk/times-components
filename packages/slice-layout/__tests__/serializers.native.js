@@ -4,7 +4,7 @@ import {
   minimalNativeTransform,
   minimaliseTransform,
   print
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 
 addSerializers(
   expect,

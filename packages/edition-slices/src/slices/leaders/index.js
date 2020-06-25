@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text } from "react-native";
-import { SectionContext } from "@times-components/context";
-import { Leaders } from "@times-components/slice-layout";
+import { SectionContext } from "@times-components-native/context";
+import { Leaders } from "@times-components-native/slice-layout";
 import PropTypes from "prop-types";
 import { TileM } from "../../tiles";
 import styleFactory from "./styles";

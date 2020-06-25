@@ -12,7 +12,7 @@ import {
   replaceTransform,
   rnwTransform,
   stylePrinter
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 
 const styles = [
   "alignItems",

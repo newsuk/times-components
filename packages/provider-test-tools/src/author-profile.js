@@ -1,5 +1,5 @@
 import { MockList } from "graphql-tools";
-import { author as authorQuery } from "@times-components/provider-queries";
+import { author as authorQuery } from "@times-components-native/provider-queries";
 import generateQueries from "./generate-queries";
 
 const biography = [

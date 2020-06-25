@@ -1,5 +1,5 @@
 import React from "react";
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import createItem from "./utils";
 import { LeadOneAndTwoSlice } from "../src/slice-layout";
 

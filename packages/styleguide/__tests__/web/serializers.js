@@ -5,7 +5,7 @@ const {
   minimalWebTransform,
   print,
   rnwTransform
-} = require("@times-components/jest-serializer");
+} = require("@times-components-native/jest-serializer");
 
 addSerializers(
   expect,

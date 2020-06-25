@@ -1,4 +1,4 @@
-import { fontFactory, spacing } from "@times-components/styleguide";
+import { fontFactory, spacing } from "@times-components-native/styleguide";
 
 const styles = {
   container: {

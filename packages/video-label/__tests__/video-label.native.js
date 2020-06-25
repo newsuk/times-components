@@ -6,11 +6,11 @@ import {
   minimaliseTransform,
   minimalNativeTransform,
   print
-} from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
+} from "@times-components-native/jest-serializer";
+import { iterator } from "@times-components-native/test-utils";
 import VideoLabel from "../src/video-label";
 
-jest.mock("@times-components/icons", () => ({ IconVideo: "IconVideo" }));
+jest.mock("@times-components-native/icons", () => ({ IconVideo: "IconVideo" }));
 
 export default () => {
   addSerializers(

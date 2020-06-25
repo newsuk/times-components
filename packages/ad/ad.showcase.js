@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import React, { Fragment } from "react";
 import { Text } from "react-native";
-import { NewTab } from "@times-components/storybook";
+import { NewTab } from "@times-components-native/storybook";
 import Ad, { AdComposer } from "./src/ad";
 import adConfig from "./fixtures/article-ad-config.json";
 

@@ -3,14 +3,14 @@ import React from "react";
 import {
   addSerializers,
   enzymeTreeSerializer
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 import { mount } from "enzyme";
-import { delay } from "@times-components/test-utils";
+import { delay } from "@times-components-native/test-utils";
 import InteractiveWrapper, {
   polyfillWCIfNecessary
 } from "../../src/interactive-wrapper.web";
 
-jest.mock("@times-components/image", () => ({
+jest.mock("@times-components-native/image", () => ({
   __esModule: true,
   Placeholder: () => null
 }));

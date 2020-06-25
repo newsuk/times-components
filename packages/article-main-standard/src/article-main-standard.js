@@ -2,18 +2,18 @@
 import React, { Component, Fragment } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import ArticleError from "@times-components/article-error";
-import ArticleSkeleton from "@times-components/article-skeleton";
-import ArticleLeadAsset from "@times-components/article-lead-asset";
-import { ResponsiveContext } from "@times-components/responsive";
+import ArticleError from "@times-components-native/article-error";
+import ArticleSkeleton from "@times-components-native/article-skeleton";
+import ArticleLeadAsset from "@times-components-native/article-lead-asset";
+import { ResponsiveContext } from "@times-components-native/responsive";
 import {
   getHeadline,
   getLeadAsset,
   getStandardTemplateCrop
-} from "@times-components/utils";
-import { tabletWidth } from "@times-components/styleguide";
-import Caption from "@times-components/caption";
-import Context from "@times-components/context";
+} from "@times-components-native/utils";
+import { tabletWidth } from "@times-components-native/styleguide";
+import Caption from "@times-components-native/caption";
+import Context from "@times-components-native/context";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import stylesFactory from "./styles/article-body";

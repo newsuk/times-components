@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, Animated, TouchableOpacity } from "react-native";
 import PropTypes from "prop-types";
-import { CloseIcon } from "@times-components/icons";
+import { CloseIcon } from "@times-components-native/icons";
 import styleFactory from "./styles";
 
 class MessageBar extends Component {

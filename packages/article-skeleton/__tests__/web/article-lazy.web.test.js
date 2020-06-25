@@ -6,15 +6,15 @@ import {
   minimaliseTransform,
   minimalWebTransform,
   print
-} from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
+} from "@times-components-native/jest-serializer";
+import { iterator } from "@times-components-native/test-utils";
 import "../mocks.web";
 import { adConfig } from "../ad-mock";
 import ArticleSkeleton from "../../src/article-skeleton";
 import articleFixture, { testFixture } from "../../fixtures/full-article";
 
-jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
-jest.mock("@times-components/lazy-load", () => ({ children }) => {
+jest.mock("@times-components-native/save-and-share-bar", () => "SaveAndShareBar");
+jest.mock("@times-components-native/lazy-load", () => ({ children }) => {
   const observed = new Map([
     [
       "1",

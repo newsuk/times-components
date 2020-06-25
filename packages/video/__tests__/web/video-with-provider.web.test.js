@@ -9,8 +9,8 @@ import {
   replacePropTransform,
   rnwTransform,
   stylePrinter
-} from "@times-components/jest-serializer";
-import { hash, iterator } from "@times-components/test-utils";
+} from "@times-components-native/jest-serializer";
+import { hash, iterator } from "@times-components-native/test-utils";
 import IsPaidSubscriber from "../../src/is-paid-subscriber";
 import Video from "../../src/video";
 import defaultVideoProps from "../default-video-props";
@@ -22,8 +22,8 @@ const defaultWebVideoProps = {
   }
 };
 
-jest.mock("@times-components/image", () => "Image");
-jest.mock("@times-components/icons", () => ({
+jest.mock("@times-components-native/image", () => "Image");
+jest.mock("@times-components-native/icons", () => ({
   IconVideo360Player: "IconVideo360Player"
 }));
 

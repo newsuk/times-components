@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 import ArticleByline, {
   ArticleBylineOpinion,
   articleBylinePropTypes
-} from "@times-components/article-byline";
-import ArticleLabel from "@times-components/article-label";
-import VideoLabel from "@times-components/video-label";
-import DatePublication from "@times-components/date-publication";
-import renderTrees from "@times-components/markup-forest";
+} from "@times-components-native/article-byline";
+import ArticleLabel from "@times-components-native/article-label";
+import VideoLabel from "@times-components-native/video-label";
+import DatePublication from "@times-components-native/date-publication";
+import renderTrees from "@times-components-native/markup-forest";
 import ArticleSummaryContent from "./article-summary-content";
 import ArticleSummaryHeadline from "./article-summary-headline";
 import ArticleSummaryStrapline from "./article-summary-strapline";

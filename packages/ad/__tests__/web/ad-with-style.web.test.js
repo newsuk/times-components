@@ -14,14 +14,14 @@ import {
   replaceTransform,
   rnwTransform,
   stylePrinter
-} from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
+} from "@times-components-native/jest-serializer";
+import { iterator } from "@times-components-native/test-utils";
 import adInit from "../../src/utils/ad-init";
 import adConfig from "../../fixtures/article-ad-config.json";
 import Ad, { AdComposer } from "../../src/ad";
 
-jest.mock("@times-components/utils", () => {
-  const utils = jest.requireActual("@times-components/utils");
+jest.mock("@times-components-native/utils", () => {
+  const utils = jest.requireActual("@times-components-native/utils");
 
   function MockServerClientRender({ client }) {
     return client();

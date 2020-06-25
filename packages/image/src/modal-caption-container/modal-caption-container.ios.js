@@ -1,6 +1,6 @@
 import React from "react";
 import { Dimensions } from "react-native";
-import { OverlayGradient } from "@times-components/gradient";
+import { OverlayGradient } from "@times-components-native/gradient";
 import SafeAreaView from "../safeAreaView";
 
 const GRADIENT_HEIGHT = 140;

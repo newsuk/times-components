@@ -1,10 +1,10 @@
 import {
   addSerializers,
   minimalNative
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 import TestRenderer from "react-test-renderer";
-import { iterator } from "@times-components/test-utils";
-import { renderTree } from "@times-components/markup-forest";
+import { iterator } from "@times-components-native/test-utils";
+import { renderTree } from "@times-components-native/markup-forest";
 import coreRenderers from "../src/markup";
 import shared from "./shared.base";
 import subscriptWithFallback from "../fixtures/subscript-fallback.json";

@@ -1,4 +1,4 @@
-import schema from "@times-components/schema/schema.json";
+import schema from "@times-components-native/schema/schema.json";
 import article from "./article";
 import articleExtras from "./article-extras";
 import articleListNoImages from "./fixtures/article-list-no-images.json";

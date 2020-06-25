@@ -8,7 +8,7 @@ import {
   minimaliseTransform,
   minimalWebTransform,
   print
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 
 import "../mocks.web";
 import ArticleLink from "../../src/article-body/article-link.web";

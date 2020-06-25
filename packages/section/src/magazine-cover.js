@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { ResponsiveContext } from "@times-components/responsive";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { ResponsiveContext } from "@times-components-native/responsive";
+import { editionBreakpoints } from "@times-components-native/styleguide";
 import { Dimensions, Text, View, TouchableOpacity } from "react-native";
-import Image, { ModalImage } from "@times-components/image";
+import Image, { ModalImage } from "@times-components-native/image";
 import PropTypes from "prop-types";
 import styleFactory from "./styles/magazine-styles";
 import { getImage } from "./utils";

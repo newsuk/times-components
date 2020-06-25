@@ -1,6 +1,6 @@
 import React from "react";
 import { ScrollView } from "react-native";
-import storybookReporter from "@times-components/tealium-utils";
+import storybookReporter from "@times-components-native/tealium-utils";
 import RelatedArticles from "./src/related-articles";
 
 import standard1RelatedArticleFixture from "./fixtures/standard/1-article";

@@ -1,8 +1,8 @@
 import React from "react";
 import { NativeModules } from "react-native";
 import PropTypes from "prop-types";
-import Topic from "@times-components/topic";
-import { TopicProvider } from "@times-components/provider";
+import Topic from "@times-components-native/topic";
+import { TopicProvider } from "@times-components-native/provider";
 import withNativeProvider from "../with-native-provider";
 
 const { onArticlePress } = NativeModules.TopicEvents;

@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import { View, Platform } from "react-native";
 import PropTypes from "prop-types";
-import { ResponsiveContext } from "@times-components/responsive";
+import { ResponsiveContext } from "@times-components-native/responsive";
 import styleFactory from "./styles";
 import MessageBar from "./message-bar";
 import MessageContext from "./message-context";

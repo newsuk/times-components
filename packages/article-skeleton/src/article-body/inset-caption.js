@@ -1,6 +1,6 @@
 import React from "react";
-import Caption from "@times-components/caption";
-import { spacing } from "@times-components/styleguide";
+import Caption from "@times-components-native/caption";
+import { spacing } from "@times-components-native/styleguide";
 
 const captionStyle = {
   container: {

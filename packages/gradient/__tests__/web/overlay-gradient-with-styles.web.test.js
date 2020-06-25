@@ -10,8 +10,8 @@ import {
   minimalWebTransform,
   rnwTransform,
   stylePrinter
-} from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
+} from "@times-components-native/jest-serializer";
+import { iterator } from "@times-components-native/test-utils";
 import { OverlayGradient } from "../../src/gradient";
 
 addSerializers(

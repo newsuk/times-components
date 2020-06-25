@@ -7,11 +7,11 @@ import {
   print,
   minimaliseTransform,
   minimalNativeTransform
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 import "./mocks.native";
-import Responsive from "@times-components/responsive";
-import { iterator } from "@times-components/test-utils";
-import { setIsTablet } from "@times-components/mocks/dimensions";
+import Responsive from "@times-components-native/responsive";
+import { iterator } from "@times-components-native/test-utils";
+import { setIsTablet } from "@times-components-native/mocks/dimensions";
 
 import ArticleMagazineStandard from "../src/article-magazine-standard";
 import sharedProps from "./shared-props";

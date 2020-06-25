@@ -1,4 +1,4 @@
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 
 const headline = "I am a long headline used in Articles";
 const shortHeadline = "Short Headline";

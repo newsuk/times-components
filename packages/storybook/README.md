@@ -14,7 +14,7 @@ these stories into storybook.
 ## `my-component.stories.js`
 
 ```
-import { showcaseConverter } from "@times-components/storybook";
+import { showcaseConverter } from "@times-components-native/storybook";
 import showcase from "./my-component.showcase";
 
 showcaseConverter(module, showcase);

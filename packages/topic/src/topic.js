@@ -2,11 +2,11 @@ import React from "react";
 import get from "lodash.get";
 import ArticleList, {
   ArticleListPageError
-} from "@times-components/article-list";
-import { withPageState } from "@times-components/pagination";
-import { TopicArticlesProvider } from "@times-components/provider";
-import Responsive from "@times-components/responsive";
-import { ratioTextToFloat } from "@times-components/utils";
+} from "@times-components-native/article-list";
+import { withPageState } from "@times-components-native/pagination";
+import { TopicArticlesProvider } from "@times-components-native/provider";
+import Responsive from "@times-components-native/responsive";
+import { ratioTextToFloat } from "@times-components-native/utils";
 import { propTypes, defaultProps } from "./topic-prop-types";
 import topicTrackingContext from "./topic-tracking-context";
 import TopicHead from "./topic-head";

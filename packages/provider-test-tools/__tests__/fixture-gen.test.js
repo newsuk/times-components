@@ -1,4 +1,4 @@
-import { iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components-native/test-utils";
 import gql from "graphql-tag";
 import { addTypenameToDocument } from "apollo-utilities";
 import { graphql } from "graphql";

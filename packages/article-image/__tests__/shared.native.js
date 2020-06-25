@@ -5,7 +5,7 @@ import {
   minimaliseTransform,
   minimalNativeTransform,
   print
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 import TestRenderer from "react-test-renderer";
 import "./mocks.native.js";
 import shared from "./shared.base";

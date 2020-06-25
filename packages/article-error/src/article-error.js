@@ -1,7 +1,7 @@
 import React from "react";
 import { Image, ScrollView, Text, View } from "react-native";
 import PropTypes from "prop-types";
-import Button from "@times-components/button";
+import Button from "@times-components-native/button";
 import styles from "./styles";
 
 const ArticleError = ({ refetch }) => (

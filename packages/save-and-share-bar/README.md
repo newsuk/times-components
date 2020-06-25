@@ -10,7 +10,7 @@ package
 ## How to use
 
 ```js
-import SaveAndShareBar from "@times-components/save-and-share-bar";
+import SaveAndShareBar from "@times-components-native/save-and-share-bar";
 
 <SaveAndShareBar
   articleUrl={articleId}

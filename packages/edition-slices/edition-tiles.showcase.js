@@ -3,7 +3,7 @@ import { ScrollView } from "react-native";
 import {
   mockEditionSlice,
   mockDailyRegisterSlice
-} from "@times-components/fixture-generator";
+} from "@times-components-native/fixture-generator";
 
 import {
   TileA,

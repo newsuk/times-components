@@ -1,5 +1,5 @@
 {
-  "extends": ["@times-components/thetimes"],
+  "extends": ["@times-components-native/thetimes"],
   "globals": {
     "window": true
   },

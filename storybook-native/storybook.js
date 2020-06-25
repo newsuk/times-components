@@ -10,7 +10,7 @@ import { withKnobs } from "@storybook/addon-knobs";
 import {
   BarSpacingDecorator,
   WhiteBgColorDecorator
-} from "@times-components/storybook";
+} from "@times-components-native/storybook";
 import { loadStories } from "./story-loader";
 import "./rn-addons";
 

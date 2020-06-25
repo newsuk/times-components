@@ -1,12 +1,12 @@
 import React from "react";
-import ArticleMagazineComment from "@times-components/article-magazine-comment";
-import ArticleInDepth from "@times-components/article-in-depth";
-import ArticleMagazineStandard from "@times-components/article-magazine-standard";
-import ArticleMainStandard from "@times-components/article-main-standard";
-import ArticleMainComment from "@times-components/article-main-comment";
-import Responsive from "@times-components/responsive";
-import { scales } from "@times-components/styleguide";
-import { MessageManager } from "@times-components/message-bar";
+import ArticleMagazineComment from "@times-components-native/article-magazine-comment";
+import ArticleInDepth from "@times-components-native/article-in-depth";
+import ArticleMagazineStandard from "@times-components-native/article-magazine-standard";
+import ArticleMainStandard from "@times-components-native/article-main-standard";
+import ArticleMainComment from "@times-components-native/article-main-comment";
+import Responsive from "@times-components-native/responsive";
+import { scales } from "@times-components-native/styleguide";
+import { MessageManager } from "@times-components-native/message-bar";
 import { getMediaList, addIndexesToInlineImages } from "./utils";
 
 export const templates = {

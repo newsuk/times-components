@@ -9,7 +9,7 @@ import {
   minimalWebTransform,
   print,
   rnwTransform
-} from "@times-components/jest-serializer";
+} from "@times-components-native/jest-serializer";
 import VideoError from "../../src/video-error";
 
 addSerializers(

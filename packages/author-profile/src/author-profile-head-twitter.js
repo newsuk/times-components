@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View } from "react-native";
-import { IconTwitter } from "@times-components/icons";
-import { TextLink } from "@times-components/link";
+import { IconTwitter } from "@times-components-native/icons";
+import { TextLink } from "@times-components-native/link";
 import styles from "./styles";
 
 const AuthorProfileHeadTwitter = ({ onTwitterLinkPress, twitter, url }) => (

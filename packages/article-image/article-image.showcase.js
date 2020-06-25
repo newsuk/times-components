@@ -1,5 +1,5 @@
 import React from "react";
-import Responsive from "@times-components/responsive";
+import Responsive from "@times-components-native/responsive";
 import ArticleImage from "./src/article-image";
 import primaryImageFixture from "./fixtures/primary-image";
 import secondaryImageFixture from "./fixtures/secondary-image";

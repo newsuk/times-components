@@ -6,8 +6,8 @@ import {
   minimaliseTransform,
   minimalNativeTransform,
   print
-} from "@times-components/jest-serializer";
-import Button from "@times-components/button";
+} from "@times-components-native/jest-serializer";
+import Button from "@times-components-native/button";
 import ArticleError from "../src/article-error";
 
 const shared = () => {

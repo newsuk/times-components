@@ -4,7 +4,7 @@ import {
   colours,
   fonts,
   fontSizes
-} from "@times-components/styleguide";
+} from "@times-components-native/styleguide";
 import sharedStyles from "./shared";
 
 const nativeStyles = {
