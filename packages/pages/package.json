@@ -73,7 +73,7 @@
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16",
-    "react-native": ">=0.50",
+    "react-native": ">=0.50"
   },
   "publishConfig": {
     "access": "public"

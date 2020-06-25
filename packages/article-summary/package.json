@@ -58,7 +58,7 @@
     "@times-components-native/markup-forest": "1.7.31",
     "@times-components-native/styleguide": "3.38.10",
     "@times-components-native/video-label": "2.4.50",
-    "prop-types": "15.7.2",
+    "prop-types": "15.7.2"
   },
   "resolutions": {
     "react": "16.9.0",
