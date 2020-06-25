@@ -1,4 +1,4 @@
-import { colours } from '@times-components/styleguide';
+import { colours } from '@times-components-native/styleguide';
 import { ImageStyle, StyleProp, ViewStyle } from 'react-native';
 
 const imageStyle: StyleProp<ImageStyle> = {
