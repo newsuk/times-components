@@ -3,7 +3,7 @@ version: 2.1
 executors:
     node:
         docker:
-            - image: circleci/node:10.13.0-browsers
+            - image: circleci/node:10.13.0
         resource_class: 2xlarge
 
 commands:
@@ -28,6 +28,7 @@ commands:
                   key: yarn-packages-{{ checksum "yarn.lock" }}
                   paths:
                       - ~/.cache/yarn
+
     install-fontforge:
         description: 'Install fontforge'
         steps:
@@ -73,8 +74,7 @@ jobs:
                   at: ./
             - run:
                   name: Run No Specific Platform Tests
-                  command: |
-                      npx lerna run test --stream --since -- -- --ci --bail --coverage
+                  command: yarn run test --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
 
     run_android_tests:
@@ -85,8 +85,7 @@ jobs:
                   at: ./
             - run:
                   name: Run Android Tests
-                  command: |
-                      npx lerna run test:android --stream --since -- -- --ci --bail --coverage
+                  command: yarn run test:android --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
 
     run_ios_tests:
@@ -97,8 +96,7 @@ jobs:
                   at: ./
             - run:
                   name: Run iOS Tests
-                  command: |
-                      npx lerna run test:ios --stream --since -- -- --ci --bail --coverage
+                  command: yarn run test:ios --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
 
     run_unit_tests:
@@ -109,8 +107,7 @@ jobs:
                   at: ./
             - run:
                   name: Run Unit Tests
-                  command: |
-                      npx lerna run test:unit --stream --since -- -- --ci --bail --coverage
+                  command: yarn run test:unit --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
 
     publish_android:
@@ -179,8 +176,20 @@ workflows:
                     branches:
                         only: 
                           - master
+                  requires:
+                      - run_lint
+                      - run_noplatform_tests
+                      - run_android_tests
+                      - run_ios_tests
+                      - run_unit_tests
             - publish_ios:
                   filters:
                     branches:
                         only: 
                           - master
+                  requires:
+                      - run_lint
+                      - run_noplatform_tests
+                      - run_android_tests
+                      - run_ios_tests
+                      - run_unit_tests
