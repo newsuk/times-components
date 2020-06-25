@@ -65,18 +65,6 @@ jobs:
                       npx yarn@1.16.0 lint
                   working_directory: ~/project/
 
-    build_storybook:
-        executor: node
-        steps:
-            - checkout
-            - attach_workspace:
-                  at: ./
-            - run:
-                  name: Run Tests
-                  command: |
-                      npx yarn@1.16.0 test
-                  working_directory: ~/project/
-
     run_noplatform_tests:
         executor: node
         steps:
@@ -113,18 +101,6 @@ jobs:
                       npx lerna run test:ios --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
 
-    run_web_tests:
-        executor: node
-        steps:
-            - checkout
-            - attach_workspace:
-                  at: ./
-            - run:
-                  name: Run Web Tests
-                  command: |
-                      npx lerna run test:web --stream --since -- -- --ci --bail --coverage
-                  working_directory: ~/project/
-
     run_unit_tests:
         executor: node
         steps:
@@ -135,38 +111,6 @@ jobs:
                   name: Run Unit Tests
                   command: |
                       npx lerna run test:unit --stream --since -- -- --ci --bail --coverage
-                  working_directory: ~/project/
-
-    run_cypress_tests:
-        executor: node
-        steps:
-            - checkout
-            - attach_workspace:
-                  at: ./
-            - run:
-                  name: Install Cypress binary
-                  command: |
-                      npx yarn@1.16.0 cypress install
-                  working_directory: ~/project/
-            - run:
-                  name: Run Cypress Tests
-                  command: |
-                    sudo apt install lsof
-                    npx yarn@1.16.0 test:e2e
-                  working_directory: ~/project/
-
-    publish_coverage:
-        executor: node
-        steps:
-            - checkout
-            - attach_workspace:
-                  at: ./
-            - run:
-                  name: Publish coverage
-                  command: |
-                      export COVERALLS_GIT_COMMIT=$CIRCLE_SHA1
-                      export COVERALLS_GIT_BRANCH=$CIRCLE_BRANCH
-                      npx yarn@1.16.0 coverage:publish
                   working_directory: ~/project/
 
     publish_android:
@@ -195,6 +139,7 @@ jobs:
                       npx yarn@1.16.0 android:build-lib
                       npx yarn@1.16.0 android:publish-lib
                   working_directory: ~/project/
+
     publish_ios:
         executor: node
         steps:
@@ -208,31 +153,6 @@ jobs:
                       npx yarn@1.16.0 ios:publish-lib
                   working_directory: ~/project/
 
-    publish_npm:
-        executor: node
-        steps:
-            - checkout
-            - attach_workspace:
-                  at: ./
-            - run:
-                  name: Publish to npm
-                  command: |
-                      npx lerna run bundle --stream
-                      npx yarn@1.16.0 npm:publish
-                  working_directory: ~/project/
-
-    publish_storybook:
-        executor: node
-        steps:
-            - checkout
-            - attach_workspace:
-                  at: ./
-            - run:
-                  name: Publish Storybook
-                  command: |
-                      npx yarn@1.16.0 storybook:publish 
-                  working_directory: ~/project/
-
 workflows:
     version: 2
 
@@ -240,9 +160,6 @@ workflows:
         jobs:
             - setup
             - run_lint:
-                  requires:
-                      - setup
-            - build_storybook:
                   requires:
                       - setup
             - run_noplatform_tests:
@@ -254,64 +171,16 @@ workflows:
             - run_ios_tests:
                   requires:
                       - setup
-            - run_web_tests:
-                  requires:
-                      - setup
             - run_unit_tests:
                   requires:
                       - setup
-            - run_cypress_tests:
-                  requires:
-                      - setup
-            - publish_coverage:
-                  requires:
-                      - build_storybook
-                      - run_lint
-                      - run_noplatform_tests
-                      - run_android_tests
-                      - run_ios_tests
-                      - run_web_tests
-                      - run_unit_tests
-                      - run_cypress_tests
-            - publish_storybook:
-                  filters:
-                    branches:
-                        only: 
-                          - master
-                  requires:
-                      - build_storybook
-                      - run_lint
-                      - run_noplatform_tests
-                      - run_android_tests
-                      - run_ios_tests
-                      - run_web_tests
-                      - run_unit_tests
-                      - run_cypress_tests
-            - publish_npm:
-                  filters:
-                    branches:
-                        only: 
-                          - master
-                  requires:
-                      - build_storybook
-                      - run_lint
-                      - run_noplatform_tests
-                      - run_android_tests
-                      - run_ios_tests
-                      - run_web_tests
-                      - run_unit_tests
-                      - run_cypress_tests
             - publish_android:
                   filters:
                     branches:
                         only: 
                           - master
-                  requires:
-                      - publish_npm
             - publish_ios:
                   filters:
                     branches:
                         only: 
                           - master
-                  requires:
-                      - publish_npm

@@ -1,8 +1,5 @@
 # The Times Component Library
 
-[![Coverage Status](https://coveralls.io/repos/github/newsuk/times-components/badge.svg?branch=master)](https://coveralls.io/github/newsuk/times-components?branch=master)
-[![Build Status](https://app.bitrise.io/app/b82f579b5213b496#/builds)](https://app.bitrise.io/app/b82f579b5213b496#/builds)
-
 ### Purpose
 
 Home of The Times' `react`/`react native` components, using
