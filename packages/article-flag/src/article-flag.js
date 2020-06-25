@@ -94,7 +94,7 @@ const ArticleFlags = ({ flags, longRead, color, style, withContainer }) => {
   const flagsView = (
     <View style={[styles.flags, style]}>
       {allFlags.map(flag => (
-        <View key={flag.type} style={flags.length > 1 && styles.flagPadding}>
+        <View key={flag.type} style={allFlags.length > 1 && styles.flagPadding}>
           {flagsMapping(color).get(flag.type)}
         </View>
       ))}
