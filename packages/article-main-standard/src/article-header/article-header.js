@@ -15,37 +15,41 @@ const ArticleHeader = ({
   label,
   longRead,
   standfirst
-}) => (
-  <View
-    style={[
-      styles.articleMainContentRow,
-      isTablet && styles.articleMainContentRowTablet,
-      isTablet && styles.headerTablet
-    ]}
-  >
-    <HeaderLabel isVideo={hasVideo} label={label} />
-    <Text
-      selectable
+}) => {
+  const hasActiveFlags = getActiveFlags(flags).length > 0;
+
+  return (
+    <View
       style={[
-        styles.articleHeadLineText,
-        !(getActiveFlags(flags).length > 0 || longRead || standfirst) &&
-          styles.articleHeadlineSpacer,
-        isTablet && styles.articleHeadLineTextTablet
+        styles.articleMainContentRow,
+        isTablet && styles.articleMainContentRowTablet,
+        isTablet && styles.headerTablet
       ]}
     >
-      {headline}
-    </Text>
-    <HeaderStandfirst
-      hasFlags={getActiveFlags(flags).length > 0 || longRead}
-      standfirst={standfirst}
-    />
-    {(getActiveFlags(flags).length > 0 || longRead) && (
-      <View style={styles.flags}>
-        <ArticleFlags flags={flags} longRead={longRead} />
-      </View>
-    )}
-  </View>
-);
+      <HeaderLabel isVideo={hasVideo} label={label} />
+      <Text
+        selectable
+        style={[
+          styles.articleHeadLineText,
+          !(hasActiveFlags || longRead || standfirst) &&
+            styles.articleHeadlineSpacer,
+          isTablet && styles.articleHeadLineTextTablet
+        ]}
+      >
+        {headline}
+      </Text>
+      <HeaderStandfirst
+        hasFlags={hasActiveFlags || longRead}
+        standfirst={standfirst}
+      />
+      {(hasActiveFlags || longRead) && (
+        <View style={styles.flags}>
+          <ArticleFlags flags={flags} longRead={longRead} />
+        </View>
+      )}
+    </View>
+  );
+};
 
 ArticleHeader.propTypes = {
   flags: PropTypes.arrayOf(PropTypes.string),
