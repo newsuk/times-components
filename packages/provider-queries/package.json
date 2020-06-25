@@ -9,12 +9,9 @@
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "prepublishOnly": "yarn transpile && yarn bundle",
-    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
     "cpgql": "find . -name \"*.graphql\" -exec cp {} ./dist/ \\;",
     "transpile": "yarn cleanup-dist && babel src -d dist && yarn cpgql",
-    "bundle": "NODE_ENV=production webpack -p",
     "cleanup-graphql": "rm -rf ./node_modules/.cache/babel-loader"
   },
   "repository": {

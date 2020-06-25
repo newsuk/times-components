@@ -13,13 +13,8 @@
     "test": "jest roles.test.js --config='./__tests__/jest.config.js'",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage && yarn test",
-    "prepublishOnly": "yarn transpile && yarn bundle",
-    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
-    "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist",
-    "bundle": "NODE_ENV=production webpack -p"
+    "cleanup-dist": "rm -rf dist"
   },
   "repository": {
     "type": "git",

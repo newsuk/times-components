@@ -9,13 +9,8 @@
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,**/eslint*,graphql,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test": "yarn test:web && jest --config='./__tests__/jest.config.js'",
-    "prepublishOnly": "yarn transpile && yarn bundle",
-    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
-    "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist",
-    "bundle": "NODE_ENV=production webpack -p"
+    "cleanup-dist": "rm -rf dist"
   },
   "repository": {
     "type": "git",

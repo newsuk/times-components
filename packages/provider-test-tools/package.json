@@ -11,10 +11,8 @@
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,**/eslint*,graphql,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test": "jest",
-    "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist --copy-files",
-    "bundle": "NODE_ENV=production webpack -p"
+    "transpile": "yarn cleanup-dist && babel src -d dist --copy-files"
   },
   "jest": {
     "preset": "react-native",

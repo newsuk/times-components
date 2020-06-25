@@ -14,11 +14,7 @@
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:unit": "jest --config='./__tests__/unit/jest.config.js' ./__tests__/unit",
     "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:unit --coverage",
-    "prepublishOnly": "yarn transpile && yarn bundle",
-    "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist",
-    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
-    "bundle": "NODE_ENV=production webpack -p"
+    "cleanup-dist": "rm -rf dist"
   },
   "repository": {
     "type": "git",
