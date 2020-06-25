@@ -1,12 +1,22 @@
 import PropTypes from "prop-types";
-import {
-  articleDefaultProps as articleDefaultPropsBase,
-  articlePropTypes as articlePropTypesBase
-} from "./article-prop-types.web";
+
+import ArticleHeader from "../article-header/article-header";
+import ArticleMeta from "../article-meta/article-meta";
+
+const articlePropTypesBase = {
+  adConfig: PropTypes.shape({}).isRequired,
+  analyticsStream: PropTypes.func.isRequired,
+  data: PropTypes.shape({
+    ...ArticleHeader.propTypes,
+    ...ArticleMeta.propTypes
+    // Could have more here
+  }),
+  receiveChildList: PropTypes.func,
+  navigationMode: PropTypes.shape({}).isRequired
+};
 
 const articlePropTypes = {
   ...articlePropTypesBase,
-  adConfig: PropTypes.shape({}).isRequired,
   error: PropTypes.bool.isRequired,
   isLoading: PropTypes.bool.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
@@ -21,7 +31,8 @@ const articlePropTypes = {
 };
 
 const articleDefaultProps = {
-  ...articleDefaultPropsBase
+  data: null,
+  receiveChildList: () => {}
 };
 
 export { articlePropTypes, articleDefaultProps };
