@@ -3,8 +3,7 @@
   "version": "1.7.31",
   "private": true,
   "description": "Utility functions for traversing The Times' AST",
-  "main": "dist/markup-forest",
-  "dev": "src/markup-forest",
+  "main": "src/markup-forest",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

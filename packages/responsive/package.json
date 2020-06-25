@@ -3,8 +3,7 @@
   "version": "0.6.15",
   "private": true,
   "description": "Responsive",
-  "main": "dist/responsive",
-  "dev": "src/responsive",
+  "main": "src/responsive",
   "scripts": {
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",

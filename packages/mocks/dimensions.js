@@ -1,1 +1,1 @@
-module.exports = require("./dist/dimensions");
+module.exports = require("./src/dimensions");

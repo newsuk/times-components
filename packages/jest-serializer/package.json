@@ -3,8 +3,7 @@
   "version": "3.2.23",
   "private": true,
   "description": "serializer",
-  "main": "dist/index",
-  "dev": "src/jest-serializer",
+  "main": "src/index",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

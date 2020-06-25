@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native-web";
+import { StyleSheet } from "react-native";
 import traverse from "./traverse";
 import print from "./printers";
 

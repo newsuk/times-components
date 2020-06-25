@@ -3,8 +3,7 @@
   "version": "3.4.48",
   "private": true,
   "description": "a component which takes an HTML ast and renders the platform specific markup",
-  "main": "dist/markup",
-  "dev": "src/markup",
+  "main": "src/markup",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

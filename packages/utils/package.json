@@ -3,8 +3,7 @@
   "version": "6.3.14",
   "private": true,
   "description": "A set of helpers and/or workarounds to be shared across packages",
-  "main": "dist",
-  "dev": "src",
+  "main": "src",
   "scripts": {
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
