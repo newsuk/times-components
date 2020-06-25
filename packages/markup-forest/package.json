@@ -9,8 +9,7 @@
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
-    "test": "jest",
-    "cleanup-dist": "rm -rf dist"
+    "test": "jest"
   },
   "jest": {
     "testEnvironment": "jsdom",
@@ -43,9 +42,7 @@
     "jest": "24.8.0",
     "prettier": "1.14.3",
     "react": "16.9.0",
-    "react-test-renderer": "16.9.0",
-    "webpack": "4.30.0",
-    "webpack-cli": "3.3.1"
+    "react-test-renderer": "16.9.0"
   },
   "dependencies": {
     "prop-types": "15.7.2"

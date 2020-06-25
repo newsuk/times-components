@@ -13,8 +13,7 @@
     "test": "jest roles.test.js --config='./__tests__/jest.config.js'",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
-    "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage && yarn test",
-    "cleanup-dist": "rm -rf dist"
+    "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage && yarn test"
   },
   "repository": {
     "type": "git",
@@ -57,9 +56,7 @@
     "react-dom": "16.9.0",
     "react-native": "0.61.5",
     "react-native-web": "0.11.4",
-    "react-test-renderer": "16.9.0",
-    "webpack": "4.30.0",
-    "webpack-cli": "3.3.1"
+    "react-test-renderer": "16.9.0"
   },
   "dependencies": {
     "@times-components-native/article-summary": "3.16.40",

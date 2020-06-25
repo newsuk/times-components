@@ -12,8 +12,7 @@
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
-    "test:all": "yarn test:android --coverage && yarn test:ios --coverage",
-    "cleanup-dist": "rm -rf dist"
+    "test:all": "yarn test:android --coverage && yarn test:ios --coverage"
   },
   "repository": {
     "type": "git",
@@ -46,9 +45,7 @@
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-native": "0.61.5",
-    "react-test-renderer": "16.9.0",
-    "webpack": "4.30.0",
-    "webpack-cli": "3.3.1"
+    "react-test-renderer": "16.9.0"
   },
   "dependencies": {
     "@times-components-native/icons": "2.14.49",

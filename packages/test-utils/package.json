@@ -10,8 +10,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
-    "test": "jest",
-    "cleanup-dist": "rm -rf dist"
+    "test": "jest"
   },
   "jest": {
     "testEnvironment": "node",
@@ -47,9 +46,7 @@
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
-    "react": "16.9.0",
-    "webpack": "4.30.0",
-    "webpack-cli": "3.3.1"
+    "react": "16.9.0"
   },
   "publishConfig": {
     "access": "public"

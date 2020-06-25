@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "mute": [
-      "eslint"
-    ]
-  }
-}
