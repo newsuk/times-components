@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.24.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.23.0...@times-components/provider@1.24.0) (2020-06-26)
+
+
+### Features
+
+* **TNLT-2993:** Add ssr prop in QueryProvider ([#2630](https://github.com/newsuk/times-components/issues/2630)) ([d177068](https://github.com/newsuk/times-components/commit/d1770685928350a97671dcb207dad5893f5076ce))
+
+
+
+
+
 # [1.23.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.22.18...@times-components/provider@1.23.0) (2020-06-25)
 
 

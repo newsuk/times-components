@@ -1,6 +1,6 @@
 {
   "name": "@times-components/save-and-share-bar",
-  "version": "0.9.45",
+  "version": "0.9.46",
   "description": "Save and Share bar",
   "main": "dist/save-and-share-bar",
   "dev": "src/save-and-share-bar",
@@ -40,7 +40,7 @@
     "@times-components/link": "3.6.32",
     "@times-components/message-bar": "0.3.52",
     "@times-components/provider-queries": "2.14.0",
-    "@times-components/save-star-web": "0.6.42",
+    "@times-components/save-star-web": "0.6.43",
     "@times-components/styleguide": "3.38.10",
     "@times-components/tracking": "2.6.13",
     "@times-components/user-state": "0.1.51",
