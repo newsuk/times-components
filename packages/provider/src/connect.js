@@ -20,6 +20,7 @@ export const QueryProvider = ({
   query,
   propsToVariables,
   debounceTimeMs,
+  ssr,
   ...props
 }) => (
   <Debounce
@@ -31,7 +32,7 @@ export const QueryProvider = ({
       );
 
       return (
-        <Query query={query} variables={variables}>
+        <Query query={query} ssr={ssr} variables={variables}>
           {({ loading, data, refetch, fetchMore, error }) =>
             children({
               error,
@@ -68,11 +69,13 @@ QueryProvider.propTypes = {
         )
       })
     ).isRequired
-  }).isRequired
+  }).isRequired,
+  ssr: PropTypes.bool
 };
 
 QueryProvider.defaultProps = {
-  propsToVariables: i => i
+  propsToVariables: i => i,
+  ssr: undefined
 };
 
 const connectGraphql = (query, propsToVariables) => props => (
