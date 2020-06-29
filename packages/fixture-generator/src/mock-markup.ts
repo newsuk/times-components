@@ -183,6 +183,20 @@ const markupTypes: Markup = {
         children: []
       }
     ]
+  },
+  summary1000: {
+    name: "paragraph",
+    attributes: {},
+    children: [
+      {
+        name: "text",
+        attributes: {
+          value:
+            "Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit. to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today."
+        },
+        children: []
+      }
+    ]
   }
 };
 
