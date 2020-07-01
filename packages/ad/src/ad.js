@@ -76,13 +76,7 @@ class Ad extends Component {
   };
 
   renderAd(adConfig) {
-    const {
-      baseUrl,
-      contextUrl,
-      isLoading,
-      slotName,
-      style
-    } = this.props;
+    const { baseUrl, contextUrl, isLoading, slotName, style } = this.props;
     const { config, hasError, isAdReady, offline } = this.state;
 
     if (hasError || offline) return null;
