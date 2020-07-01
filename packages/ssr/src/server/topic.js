@@ -35,7 +35,7 @@ module.exports = (
       logger,
       uri: graphqlApiUrl,
       headers: {
-            "x-new-topic-data-source": true
+        "x-new-topic-data-source": true
       }
     },
     data: {

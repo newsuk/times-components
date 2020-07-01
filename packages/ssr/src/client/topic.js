@@ -3,12 +3,7 @@ const runClient = require("../lib/run-client");
 
 if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
   const { rootTag, makeArticleUrl, makeTopicUrl } = window.nuk.ssr;
-  const {
-    debounceTimeMs,
-    page,
-    pageSize,
-    topicSlug
-  } = window.nuk.topicPage;
+  const { debounceTimeMs, page, pageSize, topicSlug } = window.nuk.topicPage;
 
   const data = {
     debounceTimeMs,
@@ -24,7 +19,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
     useGET: true,
     skipAuthorization: true,
     headers: {
-          "x-new-topic-data-source": true
+      "x-new-topic-data-source": true
     }
   };
 
