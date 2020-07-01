@@ -80,7 +80,6 @@ class Ad extends Component {
       baseUrl,
       contextUrl,
       isLoading,
-      section,
       slotName,
       style
     } = this.props;
@@ -91,7 +90,7 @@ class Ad extends Component {
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
         slot,
-        section,
+        adConfig.slotTargeting.section,
         config.maxSizes.width,
         adConfig.biddersConfig.bidders
       )
@@ -118,7 +117,7 @@ class Ad extends Component {
         minPrice: adConfig.biddersConfig.minPrice,
         timeout: adConfig.biddersConfig.timeout
       }),
-      section,
+      section: adConfig.slotTargeting.section,
       sizingMap: config.mappings,
       slotName,
       slots: this.slots,
