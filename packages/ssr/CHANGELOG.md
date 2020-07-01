@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.19.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.18.26...@times-components/ssr@2.19.0) (2020-07-01)
+
+
+### Features
+
+* **TNLT-193:** add tm2 headers ([#2633](https://github.com/newsuk/times-components/issues/2633)) ([cf6313f](https://github.com/newsuk/times-components/commit/cf6313f16ce9169bd1eb434d0478418f10f72fef))
+
+
+
+
+
 ## [2.18.26](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.18.25...@times-components/ssr@2.18.26) (2020-06-26)
 
 **Note:** Version bump only for package @times-components/ssr
