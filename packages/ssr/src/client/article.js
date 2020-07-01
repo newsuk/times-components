@@ -31,7 +31,10 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
 
   const clientOptions = {
     rootTag,
-    useGET: false
+    useGET: false,
+    headers: {
+      "x-new-topic-data-source": true
+    }
   };
 
   runClient(article, clientOptions, data);
