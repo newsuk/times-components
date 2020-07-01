@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.14.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.14.0...@times-components/provider-queries@2.14.1) (2020-07-01)
+
+
+### Bug Fixes
+
+* increase summary length in tile X ([#2631](https://github.com/newsuk/times-components/issues/2631)) ([0e6d990](https://github.com/newsuk/times-components/commit/0e6d9908b58bc3e6a67c853f419bb084364a6c61))
+
+
+
+
+
 # [2.14.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.13.3...@times-components/provider-queries@2.14.0) (2020-06-25)
 
 
