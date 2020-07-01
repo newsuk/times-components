@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Linking, Platform } from "react-native";
-import { WebView } from "react-native-webview";
+import { Linking } from "react-native";
 import PropTypes from "prop-types";
-import webviewEventCallbackSetup from "./webview-event-callback-setup";
+import AutoHeightWebView from "react-native-autoheight-webview";
 import ResponsiveImageInteractive from "./responsive-image";
 
 const editorialLambdaProtocol = "https://";
@@ -24,31 +23,12 @@ class InteractiveWrapper extends Component {
   constructor() {
     super();
     this.state = {
-      height: Platform.OS === "ios" ? 0 : 50
+      height: 1
     };
-    this.onMessage = this.onMessage.bind(this);
-    this.handleNavigationStateChange = this.handleNavigationStateChange.bind(
+    this.handleOnShouldStartLoadWithRequest = this.handleOnShouldStartLoadWithRequest.bind(
       this
     );
     this.onLoadEnd = this.onLoadEnd.bind(this);
-  }
-
-  onMessage(e) {
-    if (
-      (e && e.nativeEvent && e.nativeEvent.data) ||
-      e.nativeEvent.data === "0"
-    ) {
-      const { height } = this.state;
-      const newHeight = parseInt(e.nativeEvent.data, 10);
-
-      if (newHeight && newHeight > height) {
-        const updateState =
-          newHeight < 30 ? { height: newHeight + 30 } : { height: newHeight };
-        this.setState(updateState);
-      }
-    } else {
-      console.error(`Invalid height received ${e.nativeEvent.data}`); // eslint-disable-line no-console
-    }
   }
 
   onLoadEnd() {
@@ -57,8 +37,15 @@ class InteractiveWrapper extends Component {
     }
   }
 
+  updateHeight = passedHeight => {
+    const { height } = this.state;
+    if (passedHeight !== height) {
+      this.setState({ height: passedHeight });
+    }
+  };
+
   // eslint-disable-next-line class-methods-use-this
-  handleNavigationStateChange(data) {
+  handleOnShouldStartLoadWithRequest(data) {
     if (
       !data.url.includes("data:text/html") &&
       data.url.includes("http") &&
@@ -77,28 +64,26 @@ class InteractiveWrapper extends Component {
     } = this.props;
     const { height } = this.state;
     const uri = `${editorialLambdaProtocol}${editorialLambdaOrigin}/${editorialLambdaSlug}/${id}?dev=${dev}&env=${environment}&platform=${platform}&version=${version}`;
-    const scriptToInjectIOS = `window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};(${webviewEventCallbackSetup})({window});`;
-    const scriptToInjectAndroid = `
+    const scriptToInject = `
       setTimeout(function() {
         window.ReactNativeWebView.postMessage(document.documentElement.scrollHeight);
       }, 500);
       true;
     `;
-    const scriptToInject =
-      Platform.OS === "ios" ? scriptToInjectIOS : scriptToInjectAndroid;
-
     return (
-      <WebView
+      <AutoHeightWebView
+        onSizeUpdated={size => this.updateHeight(size.height)}
+        scalesPageToFit
+        automaticallyAdjustContentInsets={false}
         injectedJavaScript={scriptToInject}
         onLoadEnd={this.onLoadEnd}
-        onMessage={this.onMessage}
         ref={ref => {
           this.webview = ref;
         }}
         scrollEnabled={false}
-        onShouldStartLoadWithRequest={this.handleNavigationStateChange}
+        onShouldStartLoadWithRequest={this.handleOnShouldStartLoadWithRequest}
         source={{ uri }}
-        style={{ height }}
+        style={{ height, width: "100%" }}
       />
     );
   }

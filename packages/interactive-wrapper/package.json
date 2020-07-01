@@ -62,6 +62,7 @@
     "@times-components/image": "6.7.25",
     "@times-components/utils": "6.3.14",
     "prop-types": "15.7.2",
+    "react-native-autoheight-webview": "1.5.1",
     "react-native-webview": "7.0.5"
   },
   "resolutions": {

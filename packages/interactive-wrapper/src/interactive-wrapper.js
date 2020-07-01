@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Linking, Platform } from "react-native";
+import { Linking } from "react-native";
 import { WebView } from "react-native-webview";
 import PropTypes from "prop-types";
 import webviewEventCallbackSetup from "./webview-event-callback-setup";
@@ -24,7 +24,7 @@ class InteractiveWrapper extends Component {
   constructor() {
     super();
     this.state = {
-      height: Platform.OS === "ios" ? 0 : 50
+      height: 0
     };
     this.onMessage = this.onMessage.bind(this);
     this.handleNavigationStateChange = this.handleNavigationStateChange.bind(
@@ -76,15 +76,7 @@ class InteractiveWrapper extends Component {
     } = this.props;
     const { height } = this.state;
     const uri = `${editorialLambdaProtocol}${editorialLambdaOrigin}/${editorialLambdaSlug}/${id}?dev=${dev}&env=${environment}&platform=${platform}&version=${version}`;
-    const scriptToInjectIOS = `window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};(${webviewEventCallbackSetup})({window});`;
-    const scriptToInjectAndroid = `
-      setTimeout(function() {
-        window.ReactNativeWebView.postMessage(document.documentElement.scrollHeight);
-      }, 500);
-      true;
-    `;
-    const scriptToInject =
-      Platform.OS === "ios" ? scriptToInjectIOS : scriptToInjectAndroid;
+    const scriptToInject = `window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};(${webviewEventCallbackSetup})({window});`;
 
     return (
       <WebView
