@@ -13,15 +13,94 @@ exports[`renders correctly 1`] = `
     allowFileAccess={false}
     allowsFullscreenVideo={false}
     androidHardwareAccelerationDisabled={false}
+    automaticallyAdjustContentInsets={false}
     cacheEnabled={true}
     injectedJavaScript="
-      setTimeout(function() {
-        window.ReactNativeWebView.postMessage(document.documentElement.scrollHeight);
-      }, 500);
-      true;
-    "
+    var styleElement = document.createElement('style');
+    styleElement.innerHTML = '\\\\n  body {\\\\n    margin: 0;\\\\n    padding: 0;\\\\n  }\\\\n';
+    document.head.appendChild(styleElement);
+    
+  ;
+  if (!document.getElementById(\\"rnahw-wrapper\\")) {
+    var wrapper = document.createElement('div');
+    wrapper.id = 'rnahw-wrapper';
+    while (document.body.firstChild instanceof Node) {
+      wrapper.appendChild(document.body.firstChild);
+    }
+    document.body.appendChild(wrapper);
+  }
+  
+  var usingScale = 0;
+  var scaling = false;
+  var zoomedin = false;
+  var lastHeight = 0;
+  var heightTheSameTimes = 0;
+  var maxHeightTheSameTimes = 5;
+  var forceRefreshDelay = 1000;
+  var forceRefreshTimeout;
+  var checkPostMessageTimeout;
+
+  function updateSize() {
+    if (zoomedin || scaling) {
+      return;
+    }
+    if (
+      !window.hasOwnProperty('ReactNativeWebView') || 
+      !window.ReactNativeWebView.hasOwnProperty('postMessage')
+    ) {
+      checkPostMessageTimeout = setTimeout(updateSize, 200);
+      return;
+    }
+
+    clearTimeout(checkPostMessageTimeout);
+    height = wrapper.offsetHeight || document.documentElement.offsetHeight;
+    width = wrapper.offsetWidth || document.documentElement.offsetWidth;
+
+    if(!usingScale && window.innerWidth) {
+      usingScale = screen.width / window.innerWidth;
+    }
+
+    window.ReactNativeWebView.postMessage(JSON.stringify({ width: Math.min(width, screen.width), height: height * usingScale }));
+
+    // Make additional height checks (required to fix issues wit twitter embeds)
+    clearTimeout(forceRefreshTimeout);
+
+    if (lastHeight !== height) {
+      heightTheSameTimes = 1;
+    } else {
+      heightTheSameTimes++;
+    }
+
+    lastHeight = height;
+
+    if (heightTheSameTimes <= maxHeightTheSameTimes) {
+      forceRefreshTimeout = setTimeout(
+        updateSize,
+        heightTheSameTimes * forceRefreshDelay
+      );
+    }
+  }
+  
+  window.addEventListener('load', updateSize);
+  window.addEventListener('resize', updateSize);
+  
+  var MutationObserver =
+    window.MutationObserver || window.WebKitMutationObserver;
+  var observer = new MutationObserver(updateSize);
+  observer.observe(document, {
+    subtree: true,
+    attributes: true
+  });
+
+  
+  
+  updateSize();
+  
+  "
     overScrollMode="always"
     scrollEnabled={false}
+    showsHorizontalScrollIndicator={false}
+    showsVerticalScrollIndicator={false}
     source={
       Object {
         "uri": "https://jotn9sgpg6.execute-api.eu-west-1.amazonaws.com/prod/component/a0534eee-682e-4955-8e1e-84b428ef1e79?dev=false&env=jest&platform=android&version=0.0.0",
@@ -29,10 +108,11 @@ exports[`renders correctly 1`] = `
     }
     style={
       Object {
-        "backgroundColor": "#ffffff",
+        "backgroundColor": "transparent",
         "flex": 1,
-        "height": 50,
+        "height": 1,
         "overflow": "hidden",
+        "width": "100%",
       }
     }
   />
