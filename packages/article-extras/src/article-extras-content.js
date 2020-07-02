@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
+import Ad from "@times-components/ad";
 import { ResponsiveContext } from "@times-components/responsive";
 import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
@@ -8,6 +9,7 @@ import ArticleTopics from "./article-topics";
 import styles from "./styles";
 
 const ArticleExtrasContent = ({
+  adConfig,
   analyticsStream,
   article,
   articleId,
@@ -40,6 +42,12 @@ const ArticleExtrasContent = ({
         </ResponsiveContext.Consumer>
       ) : null}
       {topics ? <ArticleTopics onPress={onTopicPress} topics={topics} /> : null}
+      {adConfig ? (
+        <Ad
+          adConfig={adConfig}
+          slotName="native-below-article"
+        />
+      ) : null}
       <ArticleComments
         articleId={articleId}
         commentCount={commentCount}
@@ -53,6 +61,7 @@ const ArticleExtrasContent = ({
 };
 
 ArticleExtrasContent.propTypes = {
+  adConfig: PropTypes.shape({}),
   analyticsStream: PropTypes.func.isRequired,
   article: PropTypes.shape({}).isRequired,
   articleId: PropTypes.string.isRequired,
@@ -61,6 +70,9 @@ ArticleExtrasContent.propTypes = {
   onCommentsPress: PropTypes.func.isRequired,
   onRelatedArticlePress: PropTypes.func.isRequired,
   onTopicPress: PropTypes.func.isRequired
+};
+ArticleExtrasContent.defaultProps = {
+  adConfig: {}
 };
 
 export default ArticleExtrasContent;

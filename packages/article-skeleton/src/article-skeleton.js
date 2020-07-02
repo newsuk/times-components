@@ -33,6 +33,7 @@ const isDropcapsDisabled = ({ template, dropcapsDisabled }) => {
 
 const ArticleWithContent = props => {
   const {
+    adConfig,
     Header,
     data,
     analyticsStream,
@@ -81,6 +82,7 @@ const ArticleWithContent = props => {
     () => (
       <Gutter>
         <ArticleExtras
+          adConfig={adConfig}
           analyticsStream={analyticsStream}
           articleId={id}
           articleUrl={url}
