@@ -1,7 +1,7 @@
 /* eslint-disable prefer-destructuring */
 import React from "react";
 import { View, Text, Dimensions, Platform } from "react-native";
-import styleguide, { colours, tabletWidth } from "@times-components/styleguide";
+import styleguide, { colours, tabletWidth, tabletRowPadding } from "@times-components/styleguide";
 import { AttributedString } from "@times-components/typeset";
 import { screenWidth } from "@times-components/utils";
 import Ad from "@times-components/ad";
@@ -325,8 +325,9 @@ export default ({
       }
     ) {
       const aspectRatio = 16 / 9;
-      const screenW = screenWidth(isTablet);
-      const height = screenW / aspectRatio;
+      const contentWidth = screenWidth(isTablet) - (isTablet && tabletRowPadding);
+      const height = contentWidth / aspectRatio;
+
       return (
         <View
           key={key}
@@ -339,7 +340,7 @@ export default ({
             policyKey={brightcovePolicyKey}
             poster={{ uri: posterImageUrl }}
             videoId={brightcoveVideoId}
-            width={screenW}
+            width={contentWidth}
           />
           <InsetCaption caption={caption} />
         </View>

@@ -307,7 +307,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   "marginBottom": 20,
                   "paddingHorizontal": 10,
                 },
-                undefined,
+                false,
                 false,
               ]
             }
@@ -428,7 +428,7 @@ exports[`2. an article with interactives 1`] = `
                   "marginBottom": 20,
                   "paddingHorizontal": 10,
                 },
-                undefined,
+                false,
                 false,
               ]
             }
@@ -463,7 +463,7 @@ exports[`2. an article with interactives 1`] = `
                   "marginBottom": 20,
                   "paddingHorizontal": 10,
                 },
-                undefined,
+                false,
                 Object {
                   "paddingHorizontal": 0,
                   "width": "100%",

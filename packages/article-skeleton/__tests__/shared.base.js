@@ -25,7 +25,7 @@ import {
 
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
 
-export const renderArticle = (data, header = null) => (
+export const renderArticle = (data, header = null, isTablet = false) => (
   <ContextProviderWithDefaults
     value={{
       theme: { scale: scales.medium, sectionColour: "#FF0000" },
@@ -37,6 +37,7 @@ export const renderArticle = (data, header = null) => (
       analyticsStream={() => {}}
       data={data}
       header={header}
+      isTablet={isTablet}
       onAuthorPress={() => {}}
       onCommentGuidelinesPress={() => {}}
       onCommentsPress={() => {}}
