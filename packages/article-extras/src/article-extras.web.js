@@ -73,7 +73,7 @@ const ArticleExtras = ({
             articleId={articleId}
             isEnabled={commentsEnabled}
             spotAccountId={spotAccountId}
-            isReadOnly={true}
+            isReadOnly
           />
         }
       >
