@@ -41,3 +41,36 @@ exports[`2. no related articles, topics and comments when user not logged in, on
   />
 </div>
 `;
+
+exports[`3. read only comments when the user is a share token reader 1`] = `
+Array [
+  <div />,
+  <div>
+    <nav
+      data-cy="topic-tags"
+    >
+      <ArticleTopics />
+    </nav>
+  </div>,
+  <div
+    id="related-articles"
+  >
+    <RelatedArticles
+      isVisible={true}
+    />
+  </div>,
+  <div
+    id="sponsored-article-container"
+  >
+    <div
+      id="sponsored-article"
+    />
+  </div>,
+  <ArticleComments
+    articleId="dummy-article-id"
+    isEnabled={true}
+    isReadOnly={true}
+    spotAccountId="dummy-spot-id"
+  />,
+]
+`;
