@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.69](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.68...@times-components/article-extras@0.5.69) (2020-07-22)
+
+
+### Bug Fixes
+
+* **TNLT-2359:** make Spot read only for share token users ([#2638](https://github.com/newsuk/times-components/issues/2638)) ([c8282ae](https://github.com/newsuk/times-components/commit/c8282ae436cee7d5f0daa75b69efed5b49ead3c6))
+
+
+
+
+
 ## [0.5.68](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.67...@times-components/article-extras@0.5.68) (2020-07-01)
 
 **Note:** Version bump only for package @times-components/article-extras
