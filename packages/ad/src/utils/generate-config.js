@@ -40,6 +40,7 @@ const sizeMap = {
   header: sizes.header,
   mpu: sizes.mpu,
   "native-inline-ad": sizes.native,
+  "native-below-article": sizes.nativeBelowArticle,
   pixel: sizes.pixel,
   pixelskin: sizes.pixel,
   pixelteads: sizes.pixel

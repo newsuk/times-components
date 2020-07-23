@@ -6,6 +6,7 @@ import ArticleExtrasError from "./article-extras-error";
 import ArticleExtrasContent from "./article-extras-content";
 
 const ArticleExtras = ({
+  adConfig,
   analyticsStream,
   articleId,
   articleUrl,
@@ -25,6 +26,7 @@ const ArticleExtras = ({
 
       return (
         <ArticleExtrasContent
+          adConfig={adConfig}
           analyticsStream={analyticsStream}
           article={article}
           articleId={articleId}
@@ -40,6 +42,7 @@ const ArticleExtras = ({
 );
 
 ArticleExtras.propTypes = {
+  adConfig: PropTypes.shape({}),
   analyticsStream: PropTypes.func.isRequired,
   articleId: PropTypes.string.isRequired,
   articleUrl: PropTypes.string.isRequired,
@@ -47,6 +50,9 @@ ArticleExtras.propTypes = {
   onCommentsPress: PropTypes.func.isRequired,
   onRelatedArticlePress: PropTypes.func.isRequired,
   onTopicPress: PropTypes.func.isRequired
+};
+ArticleExtras.defaultProps = {
+  adConfig: {}
 };
 
 export default ArticleExtras;
