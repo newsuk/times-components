@@ -16,6 +16,7 @@ const ArticleHeader = ({
   hasVideo,
   headline,
   label,
+  longRead,
   standfirst,
   style
 }) => (
@@ -30,7 +31,7 @@ const ArticleHeader = ({
     </HeadlineContainer>
     <HeaderStandfirst standfirst={standfirst} />
     <View style={styles.flags}>
-      <ArticleFlags flags={flags} />
+      <ArticleFlags flags={flags} longRead={longRead} />
     </View>
   </View>
 );
@@ -45,6 +46,7 @@ ArticleHeader.propTypes = {
   hasVideo: PropTypes.bool,
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
+  longRead: PropTypes.bool,
   standfirst: PropTypes.string,
   style: ViewStylePropTypes
 };
@@ -53,6 +55,7 @@ ArticleHeader.defaultProps = {
   flags: [],
   hasVideo: false,
   label: null,
+  longRead: false,
   standfirst: null,
   style: {}
 };

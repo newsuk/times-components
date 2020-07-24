@@ -31,10 +31,11 @@ const KEY_FACTS = 4;
 const LABEL = 8;
 const LEAD_ASSET = 16;
 const LINKED_BYLINE = 32;
-const PULL_QUOTE = 64;
-const STANDFIRST = 128;
-const VIDEO = 256;
-const TEASED_CONTENT = 512;
+const LONG_READ = 64;
+const PULL_QUOTE = 128;
+const STANDFIRST = 256;
+const VIDEO = 512;
+const TEASED_CONTENT = 1024;
 
 export const makeArticleConfiguration = ({
   withFlags,
@@ -43,6 +44,7 @@ export const makeArticleConfiguration = ({
   withLabel,
   withLeadAsset,
   withLinkedByline,
+  withLongRead,
   withPullQuote,
   withStandfirst,
   withVideo,
@@ -72,6 +74,10 @@ export const makeArticleConfiguration = ({
 
   if (withLinkedByline) {
     mask = mask | LINKED_BYLINE;
+  }
+
+  if (withLongRead) {
+    mask = mask | LONG_READ;
   }
 
   if (withPullQuote) {
@@ -123,6 +129,10 @@ const makeArticle = configuration => article => {
 
   if (configuration & LINKED_BYLINE) {
     configuredArticle.bylines = fixtures.bylineWithLink;
+  }
+
+  if (configuration & LONG_READ) {
+    configuredArticle.longRead = true;
   }
 
   if (configuration & PULL_QUOTE) {
@@ -197,7 +207,7 @@ class ArticleConfigurator extends Component {
     if (!mocks.length || reRendering) {
       return null;
     }
-
+    
     return <MockedProvider mocks={mocks}>{children}</MockedProvider>;
   }
 }
@@ -303,6 +313,7 @@ const renderArticleConfig = ({
   const withLabel = boolean("Label", true);
   const withLeadAsset = boolean("Lead Asset", true);
   const withLinkedByline = boolean("Linked Byline", true);
+  const withLongRead = boolean("Long Read", false);
   const withPullQuote = boolean("Pull Quote", false);
   const withStandfirst = boolean("Standfirst", true);
   const withVideo = boolean("Video", true);
@@ -335,6 +346,7 @@ const renderArticleConfig = ({
             withLabel,
             withLeadAsset,
             withLinkedByline,
+            withLongRead,
             withPullQuote,
             withStandfirst,
             withVideo,

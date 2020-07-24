@@ -28,6 +28,7 @@ class ArticlePage extends Component {
       hasVideo,
       headline,
       label,
+      longRead,
       publicationName,
       publishedTime,
       shortHeadline,
@@ -52,6 +53,7 @@ class ArticlePage extends Component {
           hasVideo={hasVideo}
           headline={getHeadline(headline, shortHeadline)}
           label={label}
+          longRead={longRead}
           publicationName={publicationName}
           publishedTime={publishedTime}
           standfirst={standfirst}
