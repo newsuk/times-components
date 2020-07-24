@@ -8,7 +8,8 @@ export default {
         <ArticleComments
           articleId="dummy-article-id"
           commentCount={123}
-          isEnabled={true}
+          commentsEnabled
+          isEnabled
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           url="dummy-article-url"
@@ -22,6 +23,7 @@ export default {
         <ArticleComments
           articleId="dummy-article-id"
           commentCount={123}
+          commentsEnabled={false}
           isEnabled={false}
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
