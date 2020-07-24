@@ -43,7 +43,7 @@ const ArticleHeader = ({
           ]}
         >
           {headline}
-          </HeadlineContainer>
+        </HeadlineContainer>
         <FlagsContainer>
           <ArticleFlags flags={flags} longRead={longRead} />
         </FlagsContainer>

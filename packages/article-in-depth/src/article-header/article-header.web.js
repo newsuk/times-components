@@ -52,7 +52,11 @@ const ArticleHeader = ({
               {headline}
             </HeadlineContainer>
             <FlagsContainer>
-              <ArticleFlags color={textColour} flags={flags} longRead={longRead} />
+              <ArticleFlags
+                color={textColour}
+                flags={flags}
+                longRead={longRead}
+              />
             </FlagsContainer>
             <Standfirst color={textColour} standfirst={standfirst} />
           </HeaderContainer>

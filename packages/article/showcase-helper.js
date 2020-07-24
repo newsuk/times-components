@@ -207,7 +207,7 @@ class ArticleConfigurator extends Component {
     if (!mocks.length || reRendering) {
       return null;
     }
-    
+
     return <MockedProvider mocks={mocks}>{children}</MockedProvider>;
   }
 }

@@ -46,7 +46,6 @@ export default ({
               });
             }
 
-
             return makeRelatedArticle(parent);
           },
           ArticleSlice: () => ({
