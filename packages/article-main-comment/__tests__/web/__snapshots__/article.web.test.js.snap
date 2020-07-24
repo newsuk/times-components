@@ -97,7 +97,9 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             Some Short Headline
           </h1>
           <div>
-            <ArticleFlags />
+            <ArticleFlags
+              longRead={false}
+            />
           </div>
           <div>
             <div>
@@ -343,7 +345,9 @@ exports[`4. an article with ads 1`] = `
             Some Headline
           </h1>
           <div>
-            <ArticleFlags />
+            <ArticleFlags
+              longRead={false}
+            />
           </div>
           <div>
             <div>
