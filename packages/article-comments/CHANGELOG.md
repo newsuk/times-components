@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.6.37...@times-components/article-comments@0.7.0) (2020-09-02)
+
+
+### Features
+
+* **TNLT-3719:** add once to spot IM comment call ([#2642](https://github.com/newsuk/times-components/issues/2642)) ([5bfa196](https://github.com/newsuk/times-components/commit/5bfa1961ca7ed1e034cb45989d03bfd917a24f2b))
+
+
+
+
+
 ## [0.6.37](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.6.36...@times-components/article-comments@0.6.37) (2020-06-22)
 
 **Note:** Version bump only for package @times-components/article-comments
