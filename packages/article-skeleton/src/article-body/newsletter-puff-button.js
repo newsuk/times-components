@@ -22,6 +22,7 @@ NewsletterPuffButton.propTypes = {
   onPress: PropTypes.func.isRequired,
   updatingSubscription: PropTypes.bool.isRequired
 };
+
 export default withTrackingContext(
   withTrackEvents(NewsletterPuffButton, {
     analyticsEvents: [

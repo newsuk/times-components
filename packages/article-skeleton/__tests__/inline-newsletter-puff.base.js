@@ -86,6 +86,7 @@ export default () => {
               newsletter: {
                 id: "a2l6E000000CdHzQAK",
                 isSubscribed: true,
+                title: "RED BOX",
                 __typename: "Newsletter"
               }
             }
@@ -130,6 +131,7 @@ export default () => {
               newsletter: {
                 id: "a2l6E000000CdHzQAK",
                 isSubscribed: false,
+                title: "RED BOX",
                 __typename: "Newsletter"
               }
             }
@@ -147,6 +149,7 @@ export default () => {
               subscribeNewsletter: {
                 id: "a2l6E000000CdHzQAK",
                 isSubscribed: true,
+                title: "RED BOX",
                 __typename: "Newsletter"
               }
             }
