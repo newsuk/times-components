@@ -8,19 +8,22 @@ import {
 } from "@times-components/tracking";
 import { buttonStyles, textStyle } from "../styles/inline-newsletter-puff";
 
-const NewsletterPuffButton = ({ updatingSubscription, onPress }) => (
-  <Button
-    title={updatingSubscription ? "Saving…" : "Sign up now"}
-    onPress={onPress}
-    style={buttonStyles}
-    underlayColor="transparent"
-    textStyle={textStyle}
-  />
-);
+const NewsletterPuffButton = ({ updatingSubscription, onPress }) => {
+  return (
+    <Button
+      title={updatingSubscription ? "Saving…" : "Sign up now"}
+      onPress={onPress}
+      style={buttonStyles}
+      underlayColor="transparent"
+      textStyle={textStyle}
+    />
+  );
+};
 
 NewsletterPuffButton.propTypes = {
   onPress: PropTypes.func.isRequired,
-  updatingSubscription: PropTypes.bool.isRequired
+  updatingSubscription: PropTypes.bool.isRequired,
+  newsletterPuffName: PropTypes.string.isRequired
 };
 export default withTrackingContext(
   withTrackEvents(NewsletterPuffButton, {
@@ -28,12 +31,23 @@ export default withTrackingContext(
       {
         actionName: "onPress",
         eventName: "onPress",
-        getAttrs: ({ updatingSubscription }) => ({
-          updatingSubscription
-        }),
-        trackingName: "widget : puff : sign up to newsletter"
+        getAttrs: ({ newsletterPuffName }) => ({
+          article_parent_name: `${newsletterPuffName}`,
+          event_navigation_name: "widget : puff : sign up now",
+          event_navigation_browsing_method: "click"
+        })
       }
     ]
   }),
-  { trackingObjectName: "NewsletterPuffButton" }
+  {
+    getAttrs: ({ newsletterPuffName }) => {
+      return {
+        event_navigation_action: "navigation",
+        event_navigation_name: "widget : puff : sign up now : displayed",
+        article_parent_name: `${newsletterPuffName}`,
+        event_navigation_browsing_method: "automated"
+      };
+    },
+    trackingObjectName: "NewsletterPuffButton"
+  }
 );
