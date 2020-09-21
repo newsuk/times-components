@@ -31,6 +31,7 @@ const renderComponent = (
           newsletter: {
             id: "a2l6E000000CdHzQAK",
             isSubscribed: false,
+            title: "RED BOX",
             __typename: "Newsletter"
           }
         }
