@@ -26,8 +26,7 @@ const NewsletterPuffLink = ({ onPress }) => (
 );
 
 NewsletterPuffLink.propTypes = {
-  onPress: PropTypes.func.isRequired,
-  newsletterPuffName: PropTypes.string.isRequired
+  onPress: PropTypes.func.isRequired
 };
 
 export default withTrackingContext(
@@ -45,15 +44,13 @@ export default withTrackingContext(
     ]
   }),
   {
-    getAttrs: ({ newsletterPuffName }) => {
-      return {
-        event_navigation_action: "navigation",
-        event_navigation_name:
-          "widget : puff : manage preferences here : displayed",
-        article_parent_name: `${newsletterPuffName}`,
-        event_navigation_browsing_method: "automated"
-      };
-    },
+    getAttrs: ({ newsletterPuffName }) => ({
+      event_navigation_action: "navigation",
+      event_navigation_name:
+        "widget : puff : manage preferences here : displayed",
+      article_parent_name: `${newsletterPuffName}`,
+      event_navigation_browsing_method: "automated"
+    }),
     trackingObjectName: "NewsletterPuffLink"
   }
 );
