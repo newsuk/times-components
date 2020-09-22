@@ -27,6 +27,7 @@ export default () => {
           analyticsStream={mockedAnalyticsStream}
           updatingSubscription={false}
           onPress={mockedOnPress}
+          newsletterPuffName="RED BOX"
         />
       );
 
@@ -44,6 +45,7 @@ export default () => {
           analyticsStream={mockedAnalyticsStream}
           updatingSubscription
           onPress={mockedOnPress}
+          newsletterPuffName="RED BOX"
         />
       );
 
@@ -60,6 +62,7 @@ export default () => {
           updatingSubscription={false}
           onPress={onPress}
           analyticsStream={mockedAnalyticsStream}
+          newsletterPuffName="RED BOX"
         />
       );
 
@@ -75,6 +78,7 @@ export default () => {
           updatingSubscription={false}
           onPress={onPress}
           analyticsStream={mockedAnalyticsStream}
+          newsletterPuffName="RED BOX"
         />
       );
 
