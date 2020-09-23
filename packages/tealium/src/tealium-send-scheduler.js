@@ -82,11 +82,7 @@ export default class TealiumSendScheduler {
 
       const e = this.queue.shift();
 
-      if (
-        this.w.utag_data &&
-        this.w.utag_data.action &&
-        this.w.utag_data.experiment_platform
-      ) {
+      if (this.w.utag_data && this.w.utag_data.experiment_platform) {
         e.experiment_platform = this.w.utag_data.experiment_platform;
         e.experiment_platform_user_id = this.w.utag_data.experiment_platform_user_id;
         e.experiment_data = this.w.utag_data.experiment_data;
