@@ -47,7 +47,11 @@ Object {
     Object {
       "action": "Viewed",
       "attrs": Object {
+        "article_parent_name": "RED BOX",
         "eventTime": "2018-01-01T00:00:00.000Z",
+        "event_navigation_action": "navigation",
+        "event_navigation_browsing_method": "automated",
+        "event_navigation_name": "widget : puff : manage preferences here : displayed",
       },
       "component": "Page",
       "object": "NewsletterPuffLink",
@@ -57,9 +61,13 @@ Object {
     Object {
       "action": "onPress",
       "attrs": Object {
+        "article_parent_name": "RED BOX",
         "eventTime": "2018-01-01T00:00:00.000Z",
+        "event_navigation_action": "navigation",
+        "event_navigation_browsing_method": "click",
+        "event_navigation_name": "widget : puff : manage preferences here",
       },
-      "component": "widget : puff : manage preferences here",
+      "component": "NewsletterPuffLink",
       "object": "NewsletterPuffLink",
     },
   ],
@@ -72,7 +80,11 @@ Object {
     Object {
       "action": "Viewed",
       "attrs": Object {
+        "article_parent_name": "RED BOX",
         "eventTime": "2018-01-01T00:00:00.000Z",
+        "event_navigation_action": "navigation",
+        "event_navigation_browsing_method": "automated",
+        "event_navigation_name": "widget : puff : manage preferences here : displayed",
       },
       "component": "Page",
       "object": "NewsletterPuffLink",

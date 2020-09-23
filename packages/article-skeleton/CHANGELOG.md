@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.34.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.34.6...@times-components/article-skeleton@1.34.7) (2020-09-22)
+
+
+### Bug Fixes
+
+* **TNLT-4872:** Update NewsletterPuff tracking ([#2647](https://github.com/newsuk/times-components/issues/2647)) ([9affb6d](https://github.com/newsuk/times-components/commit/9affb6de3460c9e653dd50bfc0e79caa948d49d2))
+
+
+
+
+
 ## [1.34.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.34.5...@times-components/article-skeleton@1.34.6) (2020-09-02)
 
 **Note:** Version bump only for package @times-components/article-skeleton

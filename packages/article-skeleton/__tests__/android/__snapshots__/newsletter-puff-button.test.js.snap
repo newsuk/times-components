@@ -140,7 +140,11 @@ Array [
     Object {
       "action": "Viewed",
       "attrs": Object {
+        "article_parent_name": "RED BOX",
         "eventTime": "2018-01-01T00:00:00.000Z",
+        "event_navigation_action": "navigation",
+        "event_navigation_browsing_method": "automated",
+        "event_navigation_name": "widget : puff : sign up now : displayed",
       },
       "component": "Page",
       "object": "NewsletterPuffButton",
@@ -150,10 +154,13 @@ Array [
     Object {
       "action": "onPress",
       "attrs": Object {
+        "article_parent_name": "RED BOX",
         "eventTime": "2018-01-01T00:00:00.000Z",
-        "updatingSubscription": false,
+        "event_navigation_action": "navigation",
+        "event_navigation_browsing_method": "click",
+        "event_navigation_name": "widget : puff : sign up now",
       },
-      "component": "widget : puff : sign up to newsletter",
+      "component": "NewsletterPuffButton",
       "object": "NewsletterPuffButton",
     },
   ],
@@ -166,7 +173,11 @@ Array [
     Object {
       "action": "Viewed",
       "attrs": Object {
+        "article_parent_name": "RED BOX",
         "eventTime": "2018-01-01T00:00:00.000Z",
+        "event_navigation_action": "navigation",
+        "event_navigation_browsing_method": "automated",
+        "event_navigation_name": "widget : puff : sign up now : displayed",
       },
       "component": "Page",
       "object": "NewsletterPuffButton",
