@@ -250,3 +250,36 @@ export const Heading6 = styled.h6`
     line-height: ${fontSizes.heading5}px;
   }
 `;
+
+export const NativeAd = styled.div`
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0 auto 30px;
+  width: 56.2%;
+  @media (max-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+  }
+`;
+
+export const NativeAdTitle = styled.h2`
+  border-bottom: 1px solid #DBDBDB;
+  color: #333;
+  flex: 1 1 100%;
+  font: normal ${fontSizes.teaser}px/17px ${fonts.bodyRegular};
+  margin-bottom: 10px;
+  padding: 5px 0;
+  text-transform: uppercase;
+`;
+
+export const Ad = styled.div`
+  flex: 1 1 50%;
+  @media (max-width: ${breakpoints.medium}px) {
+    flex: 1 1 46%;
+    &:first-of-type {
+      margin-right: 1.5%;
+    }
+    &:last-child {
+      margin-left: 1.5%;
+    }
+  }
+`;

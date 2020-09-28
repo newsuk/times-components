@@ -30,7 +30,10 @@ import {
   Heading3,
   Heading4,
   Heading5,
-  Heading6
+  Heading6,
+  NativeAd,
+  NativeAdTitle,
+  Ad
 } from "../styles/article-body/responsive";
 import styles from "../styles/article-body";
 
@@ -64,9 +67,7 @@ const highResSizeCalc = (observed, key, template) => {
 
 const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
   ...coreRenderers,
-  ad(key) {
-    return <AdContainer key={key} slotName="inline-ad" style={styles.ad} />;
-  },
+
   dropCap(key, attrs, children) {
     return (
       <Context.Consumer key={key}>
@@ -78,6 +79,15 @@ const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
           </DropCapView>
         )}
       </Context.Consumer>
+    );
+  },
+  nativeAd(key, attrs, children) {
+    return (
+      <NativeAd key={key}>
+        <NativeAdTitle>Sponsored</NativeAdTitle>
+        <Ad id="ad-native-in-article-1"></Ad>
+        <Ad id="ad-native-in-article-2"></Ad>
+      </NativeAd>
     );
   },
   image(key, { display, ratio, url, caption, credits }) {
