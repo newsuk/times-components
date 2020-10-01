@@ -135,12 +135,12 @@ const contentWithAd = [
 							children: []
 					},
 					{
-							name: 'nativeAd',
+							name: 'paragraph',
 							children: []
 					},
 					{
-							name: 'paragraph',
-							children: []
+						name: 'nativeAd',
+						children: []
 					},
 					{
 							name: 'paragraph',

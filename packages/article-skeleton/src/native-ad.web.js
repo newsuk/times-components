@@ -1,23 +1,36 @@
 const insertNativeAd = (children) => {
 	const child = children.find(item => item.name === 'paywall');
+	
+  if (!child) {
+    return children;
+  }
 
-	if (child) {
-		const clonedChildren = [...children];
-		const paywallChildren = child.children;
+	const clonedChildren = [...children];
+	const paywallChildren = child.children;
+	
+	let paraCount = 0;
+	let index = null;
 
-		const paraPosition = child.children.findIndex((item, i) => { 
-			if (item.name === 'paragraph' && i >= 7) return i;
-		});
+	// Counts the number of paragraphs and returns the index
+	paywallChildren.map((item, i) => {
+		if (item.name === 'paragraph') {
+			paraCount += 1;
+			if (paraCount === 7) index = i;
+		}
+	});
 
-		paywallChildren.splice(paraPosition + 1, 0,
+	// if nativeAd does not exist then place in the paragraph index number
+	const nativeAd = paywallChildren.find(item => item.name === 'nativeAd');
+	if (!nativeAd && index !== null) {
+		paywallChildren.splice(index + 1, 0,
 			{
 				name: "nativeAd",
 				children: []
 			}
 		);
-
-		return clonedChildren;
 	}
+
+	return clonedChildren;
 };
 
 export default insertNativeAd;
