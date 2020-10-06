@@ -8,23 +8,23 @@ describe('native-ad', () => {
 		expect(insertNativeAd(content)).toStrictEqual(contentWithAd);
 	});
 
-	test('Checks nativeAd does not already exist and that Paywall does exist', () => {
-		const content = [
-			{
-				name: 'paywall',
-				children: []
-			},
-			{
-				name: 'paragraph',
-				children: []
-			}
-		]
-		expect(content).toEqual(
-			expect.arrayContaining([
-				expect.objectContaining({name: 'paywall'}),
-				expect.not.objectContaining({name: 'nativeAd'})
-			])
-		);
-	});
+	// test('Checks nativeAd does not already exist and that Paywall does exist', () => {
+	// 	const content = [
+	// 		{
+	// 			name: 'paywall',
+	// 			children: []
+	// 		},
+	// 		{
+	// 			name: 'paragraph',
+	// 			children: []
+	// 		}
+	// 	]
+	// 	expect(content).toEqual(
+	// 		expect.arrayContaining([
+	// 			expect.objectContaining({name: 'paywall'}),
+	// 			expect.not.objectContaining({name: 'nativeAd'})
+	// 		])
+	// 	);
+	// });
 
 })
