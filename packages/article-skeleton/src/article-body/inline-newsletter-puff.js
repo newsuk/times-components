@@ -80,7 +80,7 @@ const InlineNewsletterPuff = ({
                 {justSubscribed ? (
                   <InpSubscribedContainer>
                     <InpSubscribedHeadline>
-                      You’ve successfully signed up to {newsletter.title}
+                      {`You’ve successfully signed up to ${newsletter.title}`}
                     </InpSubscribedHeadline>
                     <InpPreferencesContainer>
                       <NewsletterPuffLink

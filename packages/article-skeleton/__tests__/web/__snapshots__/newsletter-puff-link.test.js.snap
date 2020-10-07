@@ -8,16 +8,16 @@ exports[`NewsletterPuffLink renders the link with the text \`Manage preferences 
   target={null}
 >
   <div
-    className="inline-newsletter-puff__InpPreferencesView-sc-13hmjc-13 iRumcp inline-newsletter-puff__InpPreferencesView-sc-13hmjc-13 iRumcp css-view-1dbjc4n"
+    className="inline-newsletter-puff__InpPreferencesView-sc-13hmjc-12 eowBYw inline-newsletter-puff__InpPreferencesView-sc-13hmjc-12 eowBYw css-view-1dbjc4n"
   >
     <div
-      className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-11 bEnqSP inline-newsletter-puff__InpPreferencesText-sc-13hmjc-11 bEnqSP css-text-901oao"
+      className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-10 fjWboP inline-newsletter-puff__InpPreferencesText-sc-13hmjc-10 fjWboP css-text-901oao"
       dir="auto"
     >
       Manage preferences here
     </div>
     <div
-      className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-12 fJlAxF inline-newsletter-puff__InpIconContainer-sc-13hmjc-12 fJlAxF css-view-1dbjc4n"
+      className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-11 fjCqVn inline-newsletter-puff__InpIconContainer-sc-13hmjc-11 fjCqVn css-view-1dbjc4n"
     >
       <svg
         aria-label="icon-forward-arrow"
