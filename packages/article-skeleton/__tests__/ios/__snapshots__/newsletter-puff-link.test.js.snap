@@ -19,15 +19,15 @@ exports[`NewsletterPuffLink renders the link with the text \`Manage preferences 
   }
 >
   <View
-    className="inline-newsletter-puff__InpPreferencesView-sc-13hmjc-13 iRumcp"
+    className="inline-newsletter-puff__InpPreferencesView-sc-13hmjc-12 eowBYw"
   >
     <Text
-      className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-11 bEnqSP"
+      className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-10 fjWboP"
     >
       Manage preferences here
     </Text>
     <View
-      className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-12 fJlAxF"
+      className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-11 fjCqVn"
     >
       <ARTSurfaceView
         style={
