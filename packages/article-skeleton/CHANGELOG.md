@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.35.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.34.8...@times-components/article-skeleton@1.35.0) (2020-10-07)
+
+
+### Features
+
+* **TNLT-5506:** Change confirmation copy in newsletter puff ([#2649](https://github.com/newsuk/times-components/issues/2649)) ([10a82f9](https://github.com/newsuk/times-components/commit/10a82f9c737daa5ab718f11b3b1a9b1d39804499))
+
+
+
+
+
 ## [1.34.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.34.7...@times-components/article-skeleton@1.34.8) (2020-09-23)
 
 **Note:** Version bump only for package @times-components/article-skeleton
