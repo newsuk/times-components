@@ -50,21 +50,6 @@ export const InpSubscribedHeadline = styled(Text)`
   margin-bottom: ${spacing(2)};
 `;
 
-export const InpSubscribedCopy = styled(Text)`
-  font-family: ${fonts.body};
-  font-size: ${fontSizes.newsletterPuffCopy}px;
-  text-align: center;
-  color: ${colours.functional.primary};
-  margin-bottom: ${spacing(2)};
-  @media (min-width: ${breakpoints.small}px) {
-    padding: ${spacing(0)} ${spacing(1)};
-    margin-bottom: ${spacing(1)};
-  }
-  @media (min-width: ${breakpoints.medium}px) {
-    padding: ${spacing(0)} ${spacing(4)};
-  }
-`;
-
 export const InpSignupContainer = styled(View)`
   justify-content: center;
   padding: ${spacing(4)}px;
