@@ -83,10 +83,11 @@ const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
   },
   nativeAd(key, attrs, children) {
     return (
-      <NativeAd key={key}>
+      // need to add styling for the hidden class
+      <NativeAd className="group-3 hidden" key={key}>
         <NativeAdTitle>Sponsored</NativeAdTitle>
-        <Ad id="ad-native-in-article-1"></Ad>
-        <Ad id="ad-native-in-article-2"></Ad>
+        <Ad id="ad-native-in-article-1" data-parent="group-3"></Ad>
+        <Ad id="ad-native-in-article-2" data-parent="group-3"></Ad>
       </NativeAd>
     );
   },
