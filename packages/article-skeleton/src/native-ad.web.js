@@ -12,6 +12,10 @@ const insertNativeAd = (children) => {
 	// with the !native check in if statement it only renders once
 	const nativeAd = paywallChildren.find(item => item.name === 'nativeAd');
 
+	if(nativeAd) {
+		return clonedChildren
+	}
+
 	if (indexToAdd && indexToAdd !== null) {
 		paywallChildren.splice(indexToAdd + 1, 0,
 			{
