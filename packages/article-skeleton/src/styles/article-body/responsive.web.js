@@ -259,6 +259,11 @@ export const NativeAd = styled.div`
   @media (max-width: ${breakpoints.medium}px) {
     width: 80.8%;
   }
+  &.hidden {
+    margin: 0;
+    max-height: 0;
+    visibility: hidden;
+  }
 `;
 
 export const NativeAdTitle = styled.h2`
