@@ -13,7 +13,6 @@ const insertNativeAd = (children) => {
 	const nativeAd = paywallChildren.find(item => item.name === 'nativeAd');
 
 	if (nativeAd) {
-		console.log('no nativead ', clonedChildren);
 		return clonedChildren;
 	}
 	

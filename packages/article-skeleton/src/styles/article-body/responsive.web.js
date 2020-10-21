@@ -255,9 +255,9 @@ export const NativeAd = styled.div`
   display:flex;
   flex-wrap: wrap;
   margin: 0 auto 30px;
-  width: 56.2%;
-  @media (max-width: ${breakpoints.medium}px) {
-    width: 80.8%;
+  width: 80.8%;
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
   }
   &.hidden {
     margin: 0;
@@ -278,7 +278,7 @@ export const NativeAdTitle = styled.h2`
 
 export const Ad = styled.div`
   flex: 1 1 50%;
-  @media (max-width: ${breakpoints.medium}px) {
+  @media (max-width: 767px) {
     flex: 1 1 46%;
     &:first-of-type {
       margin-right: 1.5%;
