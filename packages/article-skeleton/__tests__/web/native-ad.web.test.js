@@ -1,5 +1,6 @@
 import insertNativeAd from "../../src/native-ad.web";
 import nativeAdFixture from "../../fixtures/native-ad";
+
 const { contentWithOutAd, contentWithAd, contentWithoutParagraphs, contentIncludesPaywall } = nativeAdFixture;
 
 describe('native-ad', () => {
