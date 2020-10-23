@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.13.29...@times-components/tealium@1.14.0) (2020-09-23)
+
+
+### Features
+
+* pass experiment data to tealiumTrack ([#2646](https://github.com/newsuk/times-components/issues/2646)) ([a923e3d](https://github.com/newsuk/times-components/commit/a923e3de70e66f9e7d9d69bb6164ef59eb9524f2))
+
+
+
+
+
 ## [1.13.29](https://github.com/newsuk/times-components/compare/@times-components/tealium@1.13.28...@times-components/tealium@1.13.29) (2020-02-13)
 
 **Note:** Version bump only for package @times-components/tealium

@@ -10,25 +10,25 @@ exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] 
     Image rendered with imageUri=https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg
   </View>
   <View
-    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fhcdpp"
+    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-4 kPWsJB"
   >
     <Text
-      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-6 bMAtxh"
+      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-5 hYAenB"
     >
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
-      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-7 hYPuGW"
+      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-6 dblhCJ"
     >
       Politics. Explained.
     </Text>
     <Text
-      className="inline-newsletter-puff__InpCopy-sc-13hmjc-8 jDEpQZ"
+      className="inline-newsletter-puff__InpCopy-sc-13hmjc-7 jiVhJw"
     >
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </Text>
     <View
-      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO"
+      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-8 ekxAnz"
     >
       <View
         accessibilityLabel="Saving…"
@@ -124,25 +124,25 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
     Image rendered with imageUri=https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg
   </View>
   <View
-    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fhcdpp"
+    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-4 kPWsJB"
   >
     <Text
-      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-6 bMAtxh"
+      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-5 hYAenB"
     >
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
-      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-7 hYPuGW"
+      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-6 dblhCJ"
     >
       Politics. Explained.
     </Text>
     <Text
-      className="inline-newsletter-puff__InpCopy-sc-13hmjc-8 jDEpQZ"
+      className="inline-newsletter-puff__InpCopy-sc-13hmjc-7 jiVhJw"
     >
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </Text>
     <View
-      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO"
+      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-8 ekxAnz"
     >
       <View
         accessibilityLabel="Sign up now"
@@ -223,25 +223,25 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
     Image rendered with imageUri=https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg
   </View>
   <View
-    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fhcdpp"
+    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-4 kPWsJB"
   >
     <Text
-      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-6 bMAtxh"
+      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-5 hYAenB"
     >
       STRAIGHT IN YOUR INBOX
     </Text>
     <Text
-      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-7 hYPuGW"
+      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-6 dblhCJ"
     >
       Politics. Explained.
     </Text>
     <Text
-      className="inline-newsletter-puff__InpCopy-sc-13hmjc-8 jDEpQZ"
+      className="inline-newsletter-puff__InpCopy-sc-13hmjc-7 jiVhJw"
     >
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </Text>
     <View
-      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO"
+      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-8 ekxAnz"
     >
       <View
         accessibilityLabel="Sign up now"
@@ -327,15 +327,10 @@ exports[`Inline Newsletter Puff renders the success view after subscribing  1`] 
     <Text
       className="inline-newsletter-puff__InpSubscribedHeadline-sc-13hmjc-3 jmCvyH"
     >
-      You’ve successfully signed up
-    </Text>
-    <Text
-      className="inline-newsletter-puff__InpSubscribedCopy-sc-13hmjc-4 bAdDVG"
-    >
-      Congratulations you can now enjoy daily updates from Red Box.
+      You’ve successfully signed up to RED BOX
     </Text>
     <View
-      className="inline-newsletter-puff__InpPreferencesContainer-sc-13hmjc-10 jWzuZh"
+      className="inline-newsletter-puff__InpPreferencesContainer-sc-13hmjc-9 kfcFGB"
     >
       <View
         accessible={true}
@@ -357,15 +352,15 @@ exports[`Inline Newsletter Puff renders the success view after subscribing  1`] 
         style={Object {}}
       >
         <View
-          className="inline-newsletter-puff__InpPreferencesView-sc-13hmjc-13 iRumcp"
+          className="inline-newsletter-puff__InpPreferencesView-sc-13hmjc-12 eowBYw"
         >
           <Text
-            className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-11 bEnqSP"
+            className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-10 fjWboP"
           >
             Manage preferences here
           </Text>
           <View
-            className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-12 fJlAxF"
+            className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-11 fjCqVn"
           >
             <RNSVGSvgView
               align="xMidYMid"

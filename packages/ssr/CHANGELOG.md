@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.19.6](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.19.5...@times-components/ssr@2.19.6) (2020-10-07)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.19.5](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.19.4...@times-components/ssr@2.19.5) (2020-09-23)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.19.4](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.19.3...@times-components/ssr@2.19.4) (2020-09-22)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.19.3](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.19.2...@times-components/ssr@2.19.3) (2020-09-02)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
 ## [2.19.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.19.1...@times-components/ssr@2.19.2) (2020-07-22)
 
 **Note:** Version bump only for package @times-components/ssr

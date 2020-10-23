@@ -17,7 +17,6 @@ import {
   InpSignupHeadline,
   InpSignupLabel,
   InpSubscribedContainer,
-  InpSubscribedCopy,
   InpSubscribedHeadline
 } from "../styles/inline-newsletter-puff";
 import NewsletterPuffButton from "./newsletter-puff-button";
@@ -81,14 +80,11 @@ const InlineNewsletterPuff = ({
                 {justSubscribed ? (
                   <InpSubscribedContainer>
                     <InpSubscribedHeadline>
-                      You’ve successfully signed up
+                      {`You’ve successfully signed up to ${newsletter.title}`}
                     </InpSubscribedHeadline>
-                    <InpSubscribedCopy>
-                      Congratulations you can now enjoy daily updates from Red
-                      Box.
-                    </InpSubscribedCopy>
                     <InpPreferencesContainer>
                       <NewsletterPuffLink
+                        newsletterPuffName={newsletter.title}
                         analyticsStream={analyticsStream}
                         onPress={() => onManagePreferencesPress()}
                       />
@@ -101,6 +97,7 @@ const InlineNewsletterPuff = ({
                     <InpCopy>{copy}</InpCopy>
                     <InpSignupCTAContainer>
                       <NewsletterPuffButton
+                        newsletterPuffName={newsletter.title}
                         analyticsStream={analyticsStream}
                         updatingSubscription={updatingSubscription}
                         onPress={() => {
