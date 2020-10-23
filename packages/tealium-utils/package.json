@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tealium-utils",
-  "version": "0.7.68",
+  "version": "0.7.69",
   "description": "React tealium helpers for Times Components",
   "main": "dist",
   "dev": "src",
@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@storybook/addon-actions": "5.3.18",
-    "@times-components/tealium": "1.13.29"
+    "@times-components/tealium": "1.14.0"
   },
   "resolutions": {
     "react": "16.9.0",

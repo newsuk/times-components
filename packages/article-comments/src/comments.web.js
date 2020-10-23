@@ -59,7 +59,10 @@ class Comments extends Component {
 
     document.addEventListener(
       "spot-im-current-user-typing-start",
-      onCommentStart
+      onCommentStart,
+      {
+        once: true
+      }
     );
     document.addEventListener(
       "spot-im-current-user-sent-message",

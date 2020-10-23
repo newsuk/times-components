@@ -2,5 +2,6 @@ query GetNewsletter($code: String!) {
   newsletter(code: $code) {
     id
     isSubscribed
+    title
   }
 }
