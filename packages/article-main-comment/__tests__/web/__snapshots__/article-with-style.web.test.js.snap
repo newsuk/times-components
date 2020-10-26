@@ -479,18 +479,6 @@ exports[`full article with style 1`] = `
 .IS9 {
   margin: 0;
 }
-
-.IS10 {
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1;
-  border-top-color: #DBDBDB;
-  border-top-width: 1;
-  margin-bottom: 30px;
-  padding-horizontal: 10px;
-  padding-vertical: 10px;
-  margin-top: 30px;
-  width: 100%;
-}
 </style>
 
 <div>
@@ -665,9 +653,6 @@ exports[`full article with style 1`] = `
             </figcaption>
           </figure>
         </div>
-        <AdContainer
-          className="IS10"
-        />
         <div>
           <div
             className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-7 c22 css-view-1dbjc4n"

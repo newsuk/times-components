@@ -455,9 +455,6 @@ exports[`4. an article with ads 1`] = `
       <article
         role="article"
       >
-        <AdContainer
-          slotName="inline-ad"
-        />
         <div
           id="paywall-portal-article-footer"
         />
