@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { AdContainer } from "@times-components/ad";	
+import { AdContainer } from "@times-components/ad";
 import LazyLoad from "@times-components/lazy-load";
 import ArticleImage from "@times-components/article-image";
 import ArticleParagraph, {
@@ -67,8 +67,8 @@ const highResSizeCalc = (observed, key, template) => {
 
 const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
   ...coreRenderers,
-  ad(key) {	
-    return <AdContainer key={key} slotName="inline-ad" style={styles.ad} />;	
+  ad(key) {
+    return <AdContainer key={key} slotName="inline-ad" style={styles.ad} />;
   },
   dropCap(key, attrs, children) {
     return (
