@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.36.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.35.0...@times-components/article-skeleton@1.36.0) (2020-10-27)
+
+
+### Features
+
+* **scb-525:** implement native ad slots replacing nativo on article pages ([#2648](https://github.com/newsuk/times-components/issues/2648)) ([c06d0ef](https://github.com/newsuk/times-components/commit/c06d0efe24b87577da211692041e638add30410d))
+
+
+
+
+
 # [1.35.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.34.8...@times-components/article-skeleton@1.35.0) (2020-10-07)
 
 
