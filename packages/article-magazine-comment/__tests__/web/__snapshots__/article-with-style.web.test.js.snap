@@ -535,6 +535,18 @@ exports[`full article with style 1`] = `
 .IS14 {
   margin: 0;
 }
+
+.IS15 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1;
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+  margin-bottom: 30px;
+  padding-horizontal: 10px;
+  padding-vertical: 10px;
+  margin-top: 30px;
+  width: 100%;
+}
 </style>
 
 <div>
@@ -735,6 +747,9 @@ exports[`full article with style 1`] = `
             </figcaption>
           </figure>
         </div>
+        <AdContainer
+          className="IS15"
+        />
         <div>
           <div
             className="c23 responsiveweb__SecondaryImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
@@ -1299,6 +1314,18 @@ exports[`full article with style in the culture magazine 1`] = `
 .IS15 {
   margin: 0;
 }
+
+.IS16 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1;
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+  margin-bottom: 30px;
+  padding-horizontal: 10px;
+  padding-vertical: 10px;
+  margin-top: 30px;
+  width: 100%;
+}
 </style>
 
 <div>
@@ -1499,6 +1526,9 @@ exports[`full article with style in the culture magazine 1`] = `
             </figcaption>
           </figure>
         </div>
+        <AdContainer
+          className="IS16"
+        />
         <div>
           <div
             className="c23 responsiveweb__SecondaryImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
@@ -2064,6 +2094,18 @@ exports[`full article with style in the style magazine 1`] = `
 .IS15 {
   margin: 0;
 }
+
+.IS16 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1;
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+  margin-bottom: 30px;
+  padding-horizontal: 10px;
+  padding-vertical: 10px;
+  margin-top: 30px;
+  width: 100%;
+}
 </style>
 
 <div>
@@ -2264,6 +2306,9 @@ exports[`full article with style in the style magazine 1`] = `
             </figcaption>
           </figure>
         </div>
+        <AdContainer
+          className="IS16"
+        />
         <div>
           <div
             className="c23 responsiveweb__SecondaryImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
@@ -2828,6 +2873,18 @@ exports[`full article with style in the sunday times magazine 1`] = `
 .IS15 {
   margin: 0;
 }
+
+.IS16 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1;
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+  margin-bottom: 30px;
+  padding-horizontal: 10px;
+  padding-vertical: 10px;
+  margin-top: 30px;
+  width: 100%;
+}
 </style>
 
 <div>
@@ -3028,6 +3085,9 @@ exports[`full article with style in the sunday times magazine 1`] = `
             </figcaption>
           </figure>
         </div>
+        <AdContainer
+          className="IS16"
+        />
         <div>
           <div
             className="c23 responsiveweb__SecondaryImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
