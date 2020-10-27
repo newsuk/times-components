@@ -57,7 +57,7 @@ const articleTemplateTest = template =>
 
       cy.get("#ad-header").should("exist");
 
-      cy.get("#ad-native-in-article-1").should("exist");
+      cy.get("#ad-article-inline").should("exist");
 
       cy.get("#ad-pixel").should("exist");
 

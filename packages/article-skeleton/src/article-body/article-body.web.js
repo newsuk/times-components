@@ -65,7 +65,9 @@ const highResSizeCalc = (observed, key, template) => {
 
 const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
   ...coreRenderers,
-
+  ad(key) {	
+    return <AdContainer key={key} slotName="inline-ad" style={styles.ad} />;	
+  },
   dropCap(key, attrs, children) {
     return (
       <Context.Consumer key={key}>
