@@ -252,7 +252,11 @@ export const Heading6 = styled.h6`
 `;
 
 export const NativeAd = styled.div`
+<<<<<<< HEAD
   display:flex;
+=======
+  display: flex;
+>>>>>>> master
   flex-wrap: wrap;
   margin: 0 auto 30px;
   width: 80.8%;
@@ -267,10 +271,10 @@ export const NativeAd = styled.div`
 `;
 
 export const NativeAdTitle = styled.h2`
-  border-bottom: 1px solid #DBDBDB;
+  border-bottom: 1px solid #dbdbdb;
   color: #333;
   flex: 1 1 100%;
-  font: normal ${fontSizes.teaser}px/17px ${fonts.bodyRegular};
+  font: normal ${fontSizes.teaser}px / 17px ${fonts.bodyRegular};
   margin-bottom: 10px;
   padding: 5px 0;
   text-transform: uppercase;
