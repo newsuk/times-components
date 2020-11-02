@@ -252,11 +252,7 @@ export const Heading6 = styled.h6`
 `;
 
 export const NativeAd = styled.div`
-<<<<<<< HEAD
-  display:flex;
-=======
   display: flex;
->>>>>>> master
   flex-wrap: wrap;
   margin: 0 auto 30px;
   width: 80.8%;
