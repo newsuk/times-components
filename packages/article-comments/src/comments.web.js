@@ -150,7 +150,6 @@ class Comments extends Component {
         onCommentNotification={onCommentNotification}
         onCommentReplyClick={onCommentReplyClick}
         onCommentSettingsClick={onCommentSettingsClick}
-        onCommentShare={onCommentShare}
         onCommentFilterNewest={onCommentFilterNewest}
         onCommentFilterMostRecommended={onCommentFilterMostRecommended}
         onCommentFilterOldest={onCommentFilterOldest}
@@ -181,7 +180,6 @@ Comments.propTypes = {
   onCommentFilterOldest: PropTypes.func,
   onCommentReplyClick: PropTypes.func,
   onCommentSettingsClick: PropTypes.func,
-  onCommentShare: PropTypes.func,
   onCommentShareLink: PropTypes.func,
   onCommentShareTwitter: PropTypes.func,
   onCommentShareEmail: PropTypes.func,
@@ -195,7 +193,6 @@ Comments.defaultProps = {
   onCommentNotification: () => {},
   onCommentReplyClick: () => {},
   onCommentSettingsClick: () => {},
-  onCommentShare: () => {},
   onCommentFilterNewest: () => {},
   onCommentFilterMostRecommended: () => {},
   onCommentFilterOldest: () => {},

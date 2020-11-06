@@ -6,16 +6,6 @@ exports[`disabled comments 1`] = `
   margin-right: auto;
 }
 
-.c2 {
-  color: #696969;
-  font-family: "GillSansMTStd-Medium";
-  font-size: 13px;
-  margin: 0;
-  padding-bottom: 30px;
-  padding-top: 5px;
-  text-align: center;
-}
-
 .c1 {
   color: #333333;
   font-family: "TimesModern-Bold";
@@ -45,20 +35,6 @@ exports[`disabled comments 1`] = `
     className="c1"
   >
     Comments for this article have been turned off
-  </p>
-  <p
-    className="c2"
-  >
-    Comments are subject to our community guidelines, which can be viewed
-     
-    <a
-      className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-textDecorationLine-1ddef8g"
-      href="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-      role="link"
-    >
-      here
-    </a>
-    .
   </p>
 </div>
 `;
