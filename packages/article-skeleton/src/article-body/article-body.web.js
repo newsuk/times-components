@@ -30,7 +30,10 @@ import {
   Heading3,
   Heading4,
   Heading5,
-  Heading6
+  Heading6,
+  NativeAd,
+  NativeAdTitle,
+  Ad
 } from "../styles/article-body/responsive";
 import styles from "../styles/article-body";
 
@@ -78,6 +81,15 @@ const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
           </DropCapView>
         )}
       </Context.Consumer>
+    );
+  },
+  nativeAd(key) {
+    return (
+      <NativeAd className="group-3 hidden" key={key}>
+        <NativeAdTitle>Sponsored</NativeAdTitle>
+        <Ad id="ad-native-in-article-1" data-parent="group-3" />
+        <Ad id="ad-native-in-article-2" data-parent="group-3" />
+      </NativeAd>
     );
   },
   image(key, { display, ratio, url, caption, credits }) {
