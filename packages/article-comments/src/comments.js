@@ -40,7 +40,6 @@ const Comments = ({
 Comments.propTypes = {
   articleId: PropTypes.string.isRequired,
   commentCount: PropTypes.number.isRequired,
-  onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
   url: PropTypes.string.isRequired
 };

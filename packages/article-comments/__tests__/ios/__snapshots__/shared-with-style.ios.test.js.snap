@@ -87,30 +87,6 @@ exports[`enabled comments 1`] = `
   >
     123 comments
   </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 15,
-        "lineHeight": 17,
-        "maxWidth": 280,
-        "textAlign": "center",
-      }
-    }
-  >
-    Comments are subject to our community guidelines, which can be viewed 
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "textDecorationLine": "underline",
-        }
-      }
-    >
-      here
-    </Text>
-  </Text>
   <View
     style={
       Object {
