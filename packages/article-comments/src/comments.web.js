@@ -11,9 +11,6 @@ class Comments extends Component {
   constructor() {
     super();
     this.container = null;
-    this.state = {
-      showLabel: false
-    };
   }
 
   componentDidMount() {
@@ -79,16 +76,16 @@ class Comments extends Component {
     );
     document.addEventListener(
       "spot-im-sort-by-select",
-      function(event) {
+      (event) => {
         switch (event.detail.sortedBy) {
           case 'best':
-            onCommentFilterMostRecommended;
+            return onCommentFilterMostRecommended;
           case 'oldest':
-            onCommentFilterOldest;
+            return onCommentFilterOldest;
           case 'newest':
-            onCommentFilterNewest
+            return onCommentFilterNewest
           default:
-            break;
+            return null
         }
       }
     );
@@ -102,19 +99,20 @@ class Comments extends Component {
     );
     document.addEventListener(
       "spot-im-share-type",
-      function(event) {
+      (event) => {
         switch(event.detail.type) {
           case 'link':
-            onCommentShareLink;
+            return onCommentShareLink;
           case 'email':
-            onCommentShareEmail;
+            return onCommentShareEmail;
           case 'twitter':
-            onCommentShareTwitter;
+            return onCommentShareTwitter;
           case 'facebook':
-            onCommentShareFacebook;
+            return onCommentShareFacebook;
           default:
-            break;
+            return null
         }
+        
       }
     );
   }
@@ -147,7 +145,6 @@ class Comments extends Component {
         onCommentStart={onCommentStart}
         onCommentPost={onCommentPost}
         onCommentNotification={onCommentNotification}
-        onCommentNotification={onCommentNotification}
         onCommentReplyClick={onCommentReplyClick}
         onCommentSettingsClick={onCommentSettingsClick}
         onCommentFilterNewest={onCommentFilterNewest}
@@ -170,7 +167,6 @@ class Comments extends Component {
 
 Comments.propTypes = {
   articleId: PropTypes.string.isRequired,
-  isReadOnly: PropTypes.bool.isRequired,
   spotAccountId: PropTypes.string.isRequired,
   onCommentStart: PropTypes.func,
   onCommentPost: PropTypes.func,
