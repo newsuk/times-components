@@ -29,32 +29,6 @@ exports[`disabled comments 1`] = `
   >
     Comments for this article have been turned off
   </Text>
-  <Text
-    style={
-      Object {
-        "color": "#696969",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": 15,
-        "lineHeight": 17,
-        "maxWidth": 280,
-        "textAlign": "center",
-      }
-    }
-  >
-    For more details, please see our 
-    
-
-    <Text
-      style={
-        Object {
-          "color": "#006699",
-          "textDecorationLine": "underline",
-        }
-      }
-    >
-      community guidelines
-    </Text>
-  </Text>
 </View>
 `;
 

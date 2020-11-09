@@ -46,7 +46,7 @@ export default Component =>
       {
         actionName: "navigation",
         eventName: "onCommentShareLink",
-        trackingName: "spot im : comment : share : link"
+        trackingName: "spot im : comment : share : copy link"
       },
       {
         actionName: "navigation",

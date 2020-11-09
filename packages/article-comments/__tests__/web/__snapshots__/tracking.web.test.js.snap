@@ -52,7 +52,7 @@ exports[`should track Comment shared by link event 1`] = `
 Object {
   "action": "navigation",
   "attrs": Object {},
-  "component": "spot im : comment : share : link",
+  "component": "spot im : comment : share : copy link",
 }
 `;
 
