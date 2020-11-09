@@ -2,9 +2,7 @@
 
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import {
-  CommentContainer,
-} from "./styles/responsive";
+import { CommentContainer } from "./styles/responsive";
 import withTrackEvents from "./tracking/with-track-events";
 
 class Comments extends Component {
@@ -74,21 +72,18 @@ class Comments extends Component {
       "spot-im-notification-drop-down-link",
       onCommentNotification
     );
-    document.addEventListener(
-      "spot-im-sort-by-select",
-      (event) => {
-        switch (event.detail.sortedBy) {
-          case 'best':
-            return onCommentFilterMostRecommended;
-          case 'oldest':
-            return onCommentFilterOldest;
-          case 'newest':
-            return onCommentFilterNewest
-          default:
-            return null
-        }
+    document.addEventListener("spot-im-sort-by-select", event => {
+      switch (event.detail.sortedBy) {
+        case "best":
+          return onCommentFilterMostRecommended;
+        case "oldest":
+          return onCommentFilterOldest;
+        case "newest":
+          return onCommentFilterNewest;
+        default:
+          return null;
       }
-    );
+    });
     document.addEventListener(
       "spot-im-user-clicked-reply",
       onCommentReplyClick
@@ -97,24 +92,20 @@ class Comments extends Component {
       "spot-im-clicked-settings",
       onCommentSettingsClick
     );
-    document.addEventListener(
-      "spot-im-share-type",
-      (event) => {
-        switch(event.detail.type) {
-          case 'link':
-            return onCommentShareLink;
-          case 'email':
-            return onCommentShareEmail;
-          case 'twitter':
-            return onCommentShareTwitter;
-          case 'facebook':
-            return onCommentShareFacebook;
-          default:
-            return null
-        }
-        
+    document.addEventListener("spot-im-share-type", event => {
+      switch (event.detail.type) {
+        case "link":
+          return onCommentShareLink;
+        case "email":
+          return onCommentShareEmail;
+        case "twitter":
+          return onCommentShareTwitter;
+        case "facebook":
+          return onCommentShareFacebook;
+        default:
+          return null;
       }
-    );
+    });
   }
 
   disposeComments() {
@@ -124,9 +115,9 @@ class Comments extends Component {
   }
 
   render() {
-    const { 
-      onCommentStart, 
-      onCommentPost, 
+    const {
+      onCommentStart,
+      onCommentPost,
       onCommentNotification,
       onCommentFilterNewest,
       onCommentFilterMostRecommended,
@@ -159,7 +150,7 @@ class Comments extends Component {
           ref={el => {
             this.container = el;
           }}
-        /> 
+        />
       </CommentContainer>
     );
   }

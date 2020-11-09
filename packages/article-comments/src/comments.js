@@ -6,12 +6,7 @@ import Button from "@times-components/button";
 import styleguide from "@times-components/styleguide";
 import styles from "./styles";
 
-const Comments = ({
-  articleId,
-  commentCount,
-  onCommentsPress,
-  url
-}) => (
+const Comments = ({ articleId, commentCount, onCommentsPress, url }) => (
   <View style={styles.container}>
     <Text style={styles.headline}>{`${commentCount} ${
       commentCount === 1 ? "comment" : "comments"

@@ -1,8 +1,5 @@
 import React from "react";
-import {
-  CommentContainer,
-  CommentDisabledHeadline,
-} from "./styles/responsive";
+import { CommentContainer, CommentDisabledHeadline } from "./styles/responsive";
 
 const DisabledComments = () => (
   <CommentContainer>

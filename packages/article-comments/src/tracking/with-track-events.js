@@ -62,6 +62,6 @@ export default Component =>
         actionName: "navigation",
         eventName: "onCommentShareFacebook",
         trackingName: "spot im : comment : share : facebook"
-      },
+      }
     ]
   });

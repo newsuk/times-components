@@ -10,5 +10,4 @@ const DisabledComments = () => (
   </View>
 );
 
-
 export default DisabledComments;
