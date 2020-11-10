@@ -34,7 +34,7 @@ export default withTrackingContext(
           event_navigation_name: "widget : puff : sign up now",
           event_navigation_browsing_method: "click"
         })
-      } 
+      }
     ]
   }),
   {
