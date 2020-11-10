@@ -1,5 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`should track Comment notification event 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : notification",
+}
+`;
+
 exports[`should track Comment post (complete) event  1`] = `
 Object {
   "action": "navigation",
@@ -8,10 +16,90 @@ Object {
 }
 `;
 
+exports[`should track Comment reply click event 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : reply",
+}
+`;
+
+exports[`should track Comment settings click event 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : settings: profile",
+}
+`;
+
+exports[`should track Comment shared by email event 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : comment : share : email",
+}
+`;
+
+exports[`should track Comment shared by facebook event 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : comment : share : facebook",
+}
+`;
+
+exports[`should track Comment shared by link event 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : comment : share : copy link",
+}
+`;
+
+exports[`should track Comment shared by twitter event 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : comment : share : twitter",
+}
+`;
+
 exports[`should track Comment start event  1`] = `
 Object {
   "action": "navigation",
   "attrs": Object {},
   "component": "spot im : comment : start",
+}
+`;
+
+exports[`should track Comment when it is recommended 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : vote up",
+}
+`;
+
+exports[`should track Comments filtered by most recommended 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : filter : best",
+}
+`;
+
+exports[`should track Comments filtered by newest event 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : filter : newest",
+}
+`;
+
+exports[`should track Comments filtered by oldest 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : filter : oldest",
 }
 `;

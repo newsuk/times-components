@@ -61,3 +61,157 @@ it("should track Comment post (complete) event ", () => {
   const [[callParams]] = analyticsStream.mock.calls;
   expect(callParams).toMatchSnapshot();
 });
+
+it("should track Comment notification event", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.onCommentNotification();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});
+
+it("should track Comments filtered by newest event", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.onCommentFilterNewest();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});
+
+it("should track Comments filtered by most recommended", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.onCommentFilterMostRecommended();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});
+
+it("should track Comments filtered by oldest", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.onCommentFilterOldest();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});
+
+it("should track Comment reply click event", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.onCommentReplyClick();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});
+
+it("should track Comment settings click event", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.onCommentSettingsClick();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});
+
+it("should track Comment shared by link event", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.onCommentShareLink();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});
+
+it("should track Comment shared by email event", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.onCommentShareEmail();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});
+
+it("should track Comment shared by twitter event", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.onCommentShareTwitter();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});
+
+it("should track Comment shared by facebook event", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.onCommentShareFacebook();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});
+
+it("should track Comment when it is recommended", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.onCommentRecommend();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});
