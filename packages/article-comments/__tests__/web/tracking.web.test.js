@@ -201,3 +201,17 @@ it("should track Comment shared by facebook event", () => {
   const [[callParams]] = analyticsStream.mock.calls;
   expect(callParams).toMatchSnapshot();
 });
+
+it("should track Comment when it is recommended", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.onCommentRecommend();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});

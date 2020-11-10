@@ -72,6 +72,14 @@ Object {
 }
 `;
 
+exports[`should track Comment when it is recommended 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : vote up",
+}
+`;
+
 exports[`should track Comments filtered by most recommended 1`] = `
 Object {
   "action": "navigation",

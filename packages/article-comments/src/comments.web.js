@@ -34,7 +34,8 @@ class Comments extends Component {
       onCommentShareLink,
       onCommentShareTwitter,
       onCommentShareEmail,
-      onCommentShareFacebook
+      onCommentShareFacebook,
+      onCommentRecommend
     } = this.props;
 
     if (!this.container || !articleId || !spotAccountId) {
@@ -72,6 +73,7 @@ class Comments extends Component {
       "spot-im-notification-drop-down-link",
       onCommentNotification
     );
+    document.addEventListener("spot-im-user-up-vote-click", onCommentRecommend);
     document.addEventListener("spot-im-sort-by-select", event => {
       switch (event.detail.sortedBy) {
         case "best":
@@ -127,7 +129,8 @@ class Comments extends Component {
       onCommentShareLink,
       onCommentShareTwitter,
       onCommentShareEmail,
-      onCommentShareFacebook
+      onCommentShareFacebook,
+      onCommentRecommend
     } = this.props;
 
     return (
@@ -145,6 +148,7 @@ class Comments extends Component {
         onCommentShareTwitter={onCommentShareTwitter}
         onCommentShareEmail={onCommentShareEmail}
         onCommentShareFacebook={onCommentShareFacebook}
+        onCommentRecommend={onCommentRecommend}
       >
         <div
           ref={el => {
@@ -170,7 +174,8 @@ Comments.propTypes = {
   onCommentShareLink: PropTypes.func,
   onCommentShareTwitter: PropTypes.func,
   onCommentShareEmail: PropTypes.func,
-  onCommentShareFacebook: PropTypes.func
+  onCommentShareFacebook: PropTypes.func,
+  onCommentRecommend: PropTypes.func
 };
 
 // onCommentStart and onCommentPost are added as props in order to allow this events to be tracked by analytics.
@@ -186,7 +191,8 @@ Comments.defaultProps = {
   onCommentShareLink: () => {},
   onCommentShareTwitter: () => {},
   onCommentShareEmail: () => {},
-  onCommentShareFacebook: () => {}
+  onCommentShareFacebook: () => {},
+  onCommentRecommend: () => {}
 };
 
 export default withTrackEvents(Comments);
