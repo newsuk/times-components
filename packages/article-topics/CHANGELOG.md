@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.1.37...@times-components/article-topics@4.2.0) (2020-11-12)
+
+
+### Features
+
+* **TNLT-5628:** added a width to avoid string coming out of the topic button ([#2652](https://github.com/newsuk/times-components/issues/2652)) ([1512ee0](https://github.com/newsuk/times-components/commit/1512ee063d2743f846e0fc055a3a56fe1585fb5e))
+
+
+
+
+
 ## [4.1.37](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.1.36...@times-components/article-topics@4.1.37) (2020-09-23)
 
 **Note:** Version bump only for package @times-components/article-topics
