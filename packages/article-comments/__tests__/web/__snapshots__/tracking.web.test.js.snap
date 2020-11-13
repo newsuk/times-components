@@ -24,11 +24,11 @@ Object {
 }
 `;
 
-exports[`should track Comment settings click event 1`] = `
+exports[`should track Comment settings button click event 1`] = `
 Object {
   "action": "navigation",
   "attrs": Object {},
-  "component": "spot im : settings: profile",
+  "component": "spot im : settings button clicked",
 }
 `;
 
@@ -101,5 +101,21 @@ Object {
   "action": "navigation",
   "attrs": Object {},
   "component": "spot im : filter : oldest",
+}
+`;
+
+exports[`should track when user clicks on a comment notification 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : notification clicked",
+}
+`;
+
+exports[`should track when user clicks on their username 1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : username clicked",
 }
 `;

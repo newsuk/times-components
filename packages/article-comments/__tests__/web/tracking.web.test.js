@@ -132,7 +132,7 @@ it("should track Comment reply click event", () => {
   expect(callParams).toMatchSnapshot();
 });
 
-it("should track Comment settings click event", () => {
+it("should track Comment settings button click event", () => {
   const analyticsStream = jest.fn();
 
   const testInstance = TestRenderer.create(
@@ -140,7 +140,7 @@ it("should track Comment settings click event", () => {
   );
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
-  commentsContainer.props.onCommentSettingsClick();
+  commentsContainer.props.onCommentSettingsClicked();
 
   const [[callParams]] = analyticsStream.mock.calls;
   expect(callParams).toMatchSnapshot();
@@ -211,6 +211,34 @@ it("should track Comment when it is recommended", () => {
   const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
 
   commentsContainer.props.onCommentRecommend();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});
+
+it("should track when user clicks on a comment notification", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.onCommentNotificationClicked();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
+});
+
+it("should track when user clicks on their username", () => {
+  const analyticsStream = jest.fn();
+
+  const testInstance = TestRenderer.create(
+    <WithTrackingContext analyticsStream={analyticsStream} />
+  );
+  const [commentsContainer] = testInstance.root.findAllByType(CommentContainer);
+
+  commentsContainer.props.onCommentUsernameClicked();
 
   const [[callParams]] = analyticsStream.mock.calls;
   expect(callParams).toMatchSnapshot();
