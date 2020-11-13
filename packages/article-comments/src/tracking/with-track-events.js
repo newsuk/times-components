@@ -40,8 +40,8 @@ export default Component =>
       },
       {
         actionName: "navigation",
-        eventName: "onCommentSettingsClick",
-        trackingName: "spot im : settings: profile"
+        eventName: "onCommentSettingsClicked",
+        trackingName: "spot im : settings button clicked"
       },
       {
         actionName: "navigation",
@@ -67,6 +67,16 @@ export default Component =>
         actionName: "navigation",
         eventName: "onCommentRecommend",
         trackingName: "spot im : vote up"
+      },
+      {
+        actionName: "navigation",
+        eventName: "onCommentUsernameClicked",
+        trackingName: "spot im : username clicked"
+      },
+      {
+        actionName: "navigation",
+        eventName: "onCommentNotificationClicked",
+        trackingName: "spot im : notification clicked"
       }
     ]
   });

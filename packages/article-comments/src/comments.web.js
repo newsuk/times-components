@@ -30,17 +30,47 @@ class Comments extends Component {
       onCommentFilterMostRecommended,
       onCommentFilterOldest,
       onCommentReplyClick,
-      onCommentSettingsClick,
       onCommentShareLink,
       onCommentShareTwitter,
       onCommentShareEmail,
       onCommentShareFacebook,
-      onCommentRecommend
+      onCommentRecommend,
+      onCommentNotificationClicked,
+      onCommentUsernameClicked,
+      onCommentSettingsClicked
     } = this.props;
 
     if (!this.container || !articleId || !spotAccountId) {
       return;
     }
+
+    const getFilterEvent = event => {
+      switch (event.detail.sortedBy) {
+        case "best":
+          return onCommentFilterMostRecommended;
+        case "oldest":
+          return onCommentFilterOldest;
+        case "newest":
+          return onCommentFilterNewest;
+        default:
+          return null;
+      }
+    };
+
+    const getShareEvent = event => {
+      switch (event.detail.type) {
+        case "link":
+          return onCommentShareLink;
+        case "email":
+          return onCommentShareEmail;
+        case "twitter":
+          return onCommentShareTwitter;
+        case "facebook":
+          return onCommentShareFacebook;
+        default:
+          return null;
+      }
+    };
 
     const launcherScript = document.createElement("script");
     launcherScript.setAttribute("async", "async");
@@ -74,40 +104,28 @@ class Comments extends Component {
       onCommentNotification
     );
     document.addEventListener("spot-im-user-up-vote-click", onCommentRecommend);
-    document.addEventListener("spot-im-sort-by-select", event => {
-      switch (event.detail.sortedBy) {
-        case "best":
-          return onCommentFilterMostRecommended;
-        case "oldest":
-          return onCommentFilterOldest;
-        case "newest":
-          return onCommentFilterNewest;
-        default:
-          return null;
-      }
-    });
+    document.addEventListener("spot-im-sort-by-select", event =>
+      getFilterEvent(event)
+    );
     document.addEventListener(
       "spot-im-user-clicked-reply",
       onCommentReplyClick
     );
     document.addEventListener(
       "spot-im-clicked-settings",
-      onCommentSettingsClick
+      onCommentSettingsClicked
     );
-    document.addEventListener("spot-im-share-type", event => {
-      switch (event.detail.type) {
-        case "link":
-          return onCommentShareLink;
-        case "email":
-          return onCommentShareEmail;
-        case "twitter":
-          return onCommentShareTwitter;
-        case "facebook":
-          return onCommentShareFacebook;
-        default:
-          return null;
-      }
-    });
+    document.addEventListener(
+      "spot-im-user-notifications-click",
+      onCommentNotificationClicked
+    );
+    document.addEventListener(
+      "spot-im-open-user-profile",
+      onCommentUsernameClicked
+    );
+    document.addEventListener("spot-im-share-type", event =>
+      getShareEvent(event)
+    );
   }
 
   disposeComments() {
@@ -125,12 +143,14 @@ class Comments extends Component {
       onCommentFilterMostRecommended,
       onCommentFilterOldest,
       onCommentReplyClick,
-      onCommentSettingsClick,
       onCommentShareLink,
       onCommentShareTwitter,
       onCommentShareEmail,
       onCommentShareFacebook,
-      onCommentRecommend
+      onCommentRecommend,
+      onCommentNotificationClicked,
+      onCommentUsernameClicked,
+      onCommentSettingsClicked
     } = this.props;
 
     return (
@@ -140,7 +160,6 @@ class Comments extends Component {
         onCommentPost={onCommentPost}
         onCommentNotification={onCommentNotification}
         onCommentReplyClick={onCommentReplyClick}
-        onCommentSettingsClick={onCommentSettingsClick}
         onCommentFilterNewest={onCommentFilterNewest}
         onCommentFilterMostRecommended={onCommentFilterMostRecommended}
         onCommentFilterOldest={onCommentFilterOldest}
@@ -149,6 +168,9 @@ class Comments extends Component {
         onCommentShareEmail={onCommentShareEmail}
         onCommentShareFacebook={onCommentShareFacebook}
         onCommentRecommend={onCommentRecommend}
+        onCommentNotificationClicked={onCommentNotificationClicked}
+        onCommentUsernameClicked={onCommentUsernameClicked}
+        onCommentSettingsClicked={onCommentSettingsClicked}
       >
         <div
           ref={el => {
@@ -170,12 +192,14 @@ Comments.propTypes = {
   onCommentFilterMostRecommended: PropTypes.func,
   onCommentFilterOldest: PropTypes.func,
   onCommentReplyClick: PropTypes.func,
-  onCommentSettingsClick: PropTypes.func,
   onCommentShareLink: PropTypes.func,
   onCommentShareTwitter: PropTypes.func,
   onCommentShareEmail: PropTypes.func,
   onCommentShareFacebook: PropTypes.func,
-  onCommentRecommend: PropTypes.func
+  onCommentRecommend: PropTypes.func,
+  onCommentNotificationClicked: PropTypes.func,
+  onCommentUsernameClicked: PropTypes.func,
+  onCommentSettingsClicked: PropTypes.func
 };
 
 // onCommentStart and onCommentPost are added as props in order to allow this events to be tracked by analytics.
@@ -184,7 +208,6 @@ Comments.defaultProps = {
   onCommentPost: () => {},
   onCommentNotification: () => {},
   onCommentReplyClick: () => {},
-  onCommentSettingsClick: () => {},
   onCommentFilterNewest: () => {},
   onCommentFilterMostRecommended: () => {},
   onCommentFilterOldest: () => {},
@@ -192,7 +215,10 @@ Comments.defaultProps = {
   onCommentShareTwitter: () => {},
   onCommentShareEmail: () => {},
   onCommentShareFacebook: () => {},
-  onCommentRecommend: () => {}
+  onCommentRecommend: () => {},
+  onCommentNotificationClicked: () => {},
+  onCommentUsernameClicked: () => {},
+  onCommentSettingsClicked: () => {}
 };
 
 export default withTrackEvents(Comments);
