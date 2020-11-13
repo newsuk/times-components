@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.8.0...@times-components/article-comments@0.9.0) (2020-11-13)
+
+
+### Features
+
+* **TNLT-5606:** Further tracking amendments [#2653](https://github.com/newsuk/times-components/issues/2653) ([efaf523](https://github.com/newsuk/times-components/commit/efaf5230776d3d331a31dc2268e9d62719eb68b9))
+
+
+
+
+
 # [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.7.1...@times-components/article-comments@0.8.0) (2020-11-10)
 
 
