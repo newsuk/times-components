@@ -1,6 +1,6 @@
 {
   "name": "@times-components/section",
-  "version": "1.6.68",
+  "version": "1.6.69",
   "description": "Section Page",
   "main": "dist/section",
   "dev": "src/section",
@@ -38,13 +38,13 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
     "@times-components/context": "1.2.17",
-    "@times-components/edition-slices": "0.104.2",
+    "@times-components/edition-slices": "0.104.3",
     "@times-components/icons": "2.14.49",
     "@times-components/image": "6.7.25",
     "@times-components/link": "3.6.32",
     "@times-components/responsive": "0.6.15",
     "@times-components/styleguide": "3.38.10",
-    "@times-components/tracking": "2.6.14",
+    "@times-components/tracking": "2.7.0",
     "lodash.get": "4.4.2",
     "luxon": "1.18.0",
     "memoize-one": "5.1.1",
