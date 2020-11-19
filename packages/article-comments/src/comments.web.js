@@ -47,11 +47,11 @@ class Comments extends Component {
     const getFilterEvent = event => {
       switch (event.detail.sortedBy) {
         case "best":
-          return onCommentFilterMostRecommended;
+          return onCommentFilterMostRecommended(event);
         case "oldest":
-          return onCommentFilterOldest;
+          return onCommentFilterOldest(event);
         case "newest":
-          return onCommentFilterNewest;
+          return onCommentFilterNewest(event);
         default:
           return null;
       }
@@ -60,13 +60,13 @@ class Comments extends Component {
     const getShareEvent = event => {
       switch (event.detail.type) {
         case "link":
-          return onCommentShareLink;
+          return onCommentShareLink(event);
         case "email":
-          return onCommentShareEmail;
+          return onCommentShareEmail(event);
         case "twitter":
-          return onCommentShareTwitter;
+          return onCommentShareTwitter(event);
         case "facebook":
-          return onCommentShareFacebook;
+          return onCommentShareFacebook(event);
         default:
           return null;
       }
