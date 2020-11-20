@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.9.1...@times-components/article-comments@0.10.0) (2020-11-20)
+
+
+### Features
+
+* **tnlt: 0000:** new solution for dynamic tracking events and updating snapshots ([#2655](https://github.com/newsuk/times-components/issues/2655)) ([d452fa6](https://github.com/newsuk/times-components/commit/d452fa692e01239ff4417f60206125c192a3077c))
+
+
+
+
+
 ## [0.9.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.9.0...@times-components/article-comments@0.9.1) (2020-11-16)
 
 **Note:** Version bump only for package @times-components/article-comments
