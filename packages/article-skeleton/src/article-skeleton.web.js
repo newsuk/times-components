@@ -56,7 +56,7 @@ const ArticleSkeleton = ({
   const newContent =
     content &&
     content.length > 0 &&
-    insertNativeAd(insertDropcapIntoAST(content, template, dropcapsDisabled));
+    insertDropcapIntoAST(content, template, dropcapsDisabled);
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
