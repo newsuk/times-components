@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.38.1...@times-components/article-skeleton@1.38.2) (2020-11-24)
+
+
+### Bug Fixes
+
+* **TNLT-000:** remove native ad placement ([#2656](https://github.com/newsuk/times-components/issues/2656)) ([5c2aced](https://github.com/newsuk/times-components/commit/5c2acedb1babe55698c1bf1178935f9c0e87b47d))
+
+
+
+
+
 ## [1.38.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.38.0...@times-components/article-skeleton@1.38.1) (2020-11-20)
 
 **Note:** Version bump only for package @times-components/article-skeleton
