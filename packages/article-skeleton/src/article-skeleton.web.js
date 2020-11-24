@@ -15,7 +15,6 @@ import {
 } from "./article-skeleton-prop-types";
 import articleTrackingContext from "./tracking/article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
-import insertNativeAd from "./native-ad.web";
 
 import {
   BodyContainer,
