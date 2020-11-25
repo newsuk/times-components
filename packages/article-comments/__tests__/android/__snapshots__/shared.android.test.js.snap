@@ -5,6 +5,16 @@ exports[`disabled comments 1`] = `
   <Text>
     Comments for this article have been turned off
   </Text>
+  <Text>
+    For more details, please see our 
+    
+
+    <Text
+      accessibilityRole="link"
+    >
+      community guidelines
+    </Text>
+  </Text>
 </View>
 `;
 
@@ -12,6 +22,14 @@ exports[`enabled comments 1`] = `
 <View>
   <Text>
     123 comments
+  </Text>
+  <Text>
+    Comments are subject to our community guidelines, which can be viewed 
+    <Text
+      accessibilityRole="link"
+    >
+      here
+    </Text>
   </Text>
   <View
     accessibilityLabel="View comments"
@@ -32,6 +50,14 @@ exports[`single comment 1`] = `
   <Text>
     1 comment
   </Text>
+  <Text>
+    Comments are subject to our community guidelines, which can be viewed 
+    <Text
+      accessibilityRole="link"
+    >
+      here
+    </Text>
+  </Text>
   <View
     accessibilityLabel="View comments"
     accessibilityRole="button"
@@ -50,6 +76,14 @@ exports[`zero comments 1`] = `
 <View>
   <Text>
     0 comments
+  </Text>
+  <Text>
+    Comments are subject to our community guidelines, which can be viewed 
+    <Text
+      accessibilityRole="link"
+    >
+      here
+    </Text>
   </Text>
   <View
     accessibilityLabel="Post a comment"
