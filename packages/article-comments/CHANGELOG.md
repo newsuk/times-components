@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.10.0...@times-components/article-comments@0.11.0) (2020-11-25)
+
+
+### Features
+
+* **TNLT-5606:** reinstating community guidelines [#2657](https://github.com/newsuk/times-components/issues/2657) ([522ef84](https://github.com/newsuk/times-components/commit/522ef8451aeeaab1574e37993138f1db8101a3a6))
+
+
+
+
+
 # [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.9.1...@times-components/article-comments@0.10.0) (2020-11-20)
 
 
