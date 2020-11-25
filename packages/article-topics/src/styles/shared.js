@@ -13,7 +13,8 @@ const styles = {
   },
   spacer: {
     marginRight: spacing(2),
-    marginTop: spacing(2)
+    marginTop: spacing(2),
+    maxWidth: "80%"
   },
   text: {
     color: colours.functional.secondary,
