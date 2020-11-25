@@ -21,17 +21,17 @@ export default Component =>
       {
         actionName: "navigation",
         eventName: "onCommentFilterNewest",
-        trackingName: "spot im : filter : newest"
+        trackingName: "spot im : sort : newest"
       },
       {
         actionName: "navigation",
         eventName: "onCommentFilterMostRecommended",
-        trackingName: "spot im : filter : best"
+        trackingName: "spot im : sort : best"
       },
       {
         actionName: "navigation",
         eventName: "onCommentFilterOldest",
-        trackingName: "spot im : filter : oldest"
+        trackingName: "spot im : sort : oldest"
       },
       {
         actionName: "navigation",

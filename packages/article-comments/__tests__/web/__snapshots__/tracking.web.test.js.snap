@@ -84,7 +84,7 @@ exports[`should track Comments filtered by most recommended 1`] = `
 Object {
   "action": "navigation",
   "attrs": Object {},
-  "component": "spot im : filter : best",
+  "component": "spot im : sort : best",
 }
 `;
 
@@ -92,7 +92,7 @@ exports[`should track Comments filtered by newest event 1`] = `
 Object {
   "action": "navigation",
   "attrs": Object {},
-  "component": "spot im : filter : newest",
+  "component": "spot im : sort : newest",
 }
 `;
 
@@ -100,7 +100,7 @@ exports[`should track Comments filtered by oldest 1`] = `
 Object {
   "action": "navigation",
   "attrs": Object {},
-  "component": "spot im : filter : oldest",
+  "component": "spot im : sort : oldest",
 }
 `;
 
