@@ -15,6 +15,7 @@ import {
 } from "./article-skeleton-prop-types";
 import articleTrackingContext from "./tracking/article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
+import insertNativeAd from "./native-ad.web";
 
 import {
   BodyContainer,
@@ -55,7 +56,7 @@ const ArticleSkeleton = ({
   const newContent =
     content &&
     content.length > 0 &&
-    insertDropcapIntoAST(content, template, dropcapsDisabled);
+    insertNativeAd(insertDropcapIntoAST(content, template, dropcapsDisabled));
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
