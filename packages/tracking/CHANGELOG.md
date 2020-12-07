@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.7.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.6.14...@times-components/tracking@2.7.0) (2020-11-16)
+
+
+### Features
+
+* **TNLT-4872:** Update newsletter puff tracking ([#2654](https://github.com/newsuk/times-components/issues/2654)) ([8643b9f](https://github.com/newsuk/times-components/commit/8643b9feecef503420f3bc5072f989f97aca670a))
+
+
+
+
+
 ## [2.6.14](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.6.13...@times-components/tracking@2.6.14) (2020-09-23)
 
 **Note:** Version bump only for package @times-components/tracking

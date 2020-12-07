@@ -3,6 +3,68 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.38.2...@times-components/article-skeleton@1.38.3) (2020-11-25)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.38.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.38.1...@times-components/article-skeleton@1.38.2) (2020-11-24)
+
+
+### Bug Fixes
+
+* **TNLT-000:** remove native ad placement ([#2656](https://github.com/newsuk/times-components/issues/2656)) ([5c2aced](https://github.com/newsuk/times-components/commit/5c2acedb1babe55698c1bf1178935f9c0e87b47d))
+
+
+
+
+
+## [1.38.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.38.0...@times-components/article-skeleton@1.38.1) (2020-11-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.38.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.37.3...@times-components/article-skeleton@1.38.0) (2020-11-16)
+
+
+### Features
+
+* **TNLT-4872:** Update newsletter puff tracking ([#2654](https://github.com/newsuk/times-components/issues/2654)) ([8643b9f](https://github.com/newsuk/times-components/commit/8643b9feecef503420f3bc5072f989f97aca670a))
+
+
+
+
+
+## [1.37.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.37.2...@times-components/article-skeleton@1.37.3) (2020-11-13)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.37.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.37.1...@times-components/article-skeleton@1.37.2) (2020-11-12)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.37.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.37.0...@times-components/article-skeleton@1.37.1) (2020-11-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 # [1.37.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.36.0...@times-components/article-skeleton@1.37.0) (2020-11-02)
 
 

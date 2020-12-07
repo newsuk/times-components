@@ -82,7 +82,7 @@ const withTrackingContext = (
     attemptTrackPageEvent(props) {
       if (
         isDataReady(props) &&
-        this.isRootTrackingContext() &&
+        (this.isRootTrackingContext() || props.enforceTracking) &&
         this.pageEventTriggered === false
       ) {
         this.pageEventTriggered = true;
