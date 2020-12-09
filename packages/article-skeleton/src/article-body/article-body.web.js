@@ -87,8 +87,8 @@ const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
     return (
       <NativeAd className="group-3 hidden" key={key}>
         <NativeAdTitle>Sponsored</NativeAdTitle>
-        <Ad id="ad-native-in-article-1" data-parent="group-3" />
-        <Ad id="ad-native-in-article-2" data-parent="group-3" />
+        <Ad id="advert-inarticle-native-1" data-parent="group-3" />
+        <Ad id="advert-inarticle-native-2" data-parent="group-3" />
       </NativeAd>
     );
   },
