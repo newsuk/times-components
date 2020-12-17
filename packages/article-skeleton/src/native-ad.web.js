@@ -4,6 +4,11 @@ const insertNativeAd = children => {
   const paragraph = clonedChildren.filter(x => x.name === "paragraph");
 
   if (!child) {
+    clonedChildren.splice(1, 0, {
+      name: "nativeAd",
+      children: []
+    });
+
     return clonedChildren;
   }
 
