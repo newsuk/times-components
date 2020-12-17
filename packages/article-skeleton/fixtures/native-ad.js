@@ -222,6 +222,14 @@ const contentIncludesPaywall = [
   {
     name: "paragraph",
     children: []
+  },
+  {
+    name: "nativeAd",
+    children: []
+  },
+  {
+    name: "paragraph",
+    children: []
   }
 ];
 
