@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.39.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.39.0...@times-components/article-skeleton@1.39.1) (2020-12-22)
+
+
+### Bug Fixes
+
+* **SCB-667:**  add native ads for unsubscribed users after 2nd para ([#2660](https://github.com/newsuk/times-components/issues/2660)) ([f617b81](https://github.com/newsuk/times-components/commit/f617b81270b6fd4bbc5bed26c2c772413977b802))
+
+
+
+
+
 # [1.39.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.38.3...@times-components/article-skeleton@1.39.0) (2020-12-10)
 
 
