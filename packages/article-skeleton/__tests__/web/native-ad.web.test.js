@@ -19,7 +19,7 @@ describe("native-ad", () => {
     );
   });
 
-  it("if paywall does not exist the original content is returned", () => {
+  it("if paywall does not exist the native ad is inserted after 2nd paragraph", () => {
     expect(insertNativeAd(contentIncludesPaywall)).toEqual(
       contentIncludesPaywall
     );

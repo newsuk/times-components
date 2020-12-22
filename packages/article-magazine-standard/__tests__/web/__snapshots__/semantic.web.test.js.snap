@@ -217,6 +217,9 @@ exports[`1. a full article 1`] = `
       >
         Some Link
       </a>
+      <h2>
+        Sponsored
+      </h2>
       <p>
         Some content
       </p>

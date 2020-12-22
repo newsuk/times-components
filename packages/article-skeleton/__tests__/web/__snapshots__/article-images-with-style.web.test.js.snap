@@ -9,6 +9,42 @@ exports[`1. a primary image 1`] = `
   padding-bottom: 25px;
 }
 
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto 30px;
+  width: 80.8%;
+}
+
+.c9.hidden {
+  margin: 0;
+  max-height: 0;
+  visibility: hidden;
+}
+
+.c10 {
+  border-bottom: 1px solid #dbdbdb;
+  color: #333;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  font: normal 14px / 17px TimesDigitalW04-Regular;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+
+.c11 {
+  -webkit-flex: 1 1 50%;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -93,6 +129,28 @@ exports[`1. a primary image 1`] = `
 @media (min-width:1024px) {
   .c8 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c9 {
+    width: 56.2%;
+  }
+}
+
+@media (max-width:767px) {
+  .c11 {
+    -webkit-flex: 1 1 46%;
+    -ms-flex: 1 1 46%;
+    flex: 1 1 46%;
+  }
+
+  .c11:first-of-type {
+    margin-right: 1.5%;
+  }
+
+  .c11:last-child {
+    margin-left: 1.5%;
   }
 }
 
@@ -175,6 +233,21 @@ exports[`1. a primary image 1`] = `
             <ArticleImage />
           </div>
         </div>
+        <div
+          className="group-3 hidden c9"
+        >
+          <h2
+            className="c10"
+          >
+            Sponsored
+          </h2>
+          <div
+            className="c11"
+          />
+          <div
+            className="c11"
+          />
+        </div>
         <div />
         <ArticleExtras />
       </article>
@@ -189,6 +262,42 @@ exports[`1. a primary image 1`] = `
 exports[`2. a fullwidth image 1`] = `
 .c8 {
   padding-bottom: 20px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto 30px;
+  width: 80.8%;
+}
+
+.c9.hidden {
+  margin: 0;
+  max-height: 0;
+  visibility: hidden;
+}
+
+.c10 {
+  border-bottom: 1px solid #dbdbdb;
+  color: #333;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  font: normal 14px / 17px TimesDigitalW04-Regular;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+
+.c11 {
+  -webkit-flex: 1 1 50%;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
 }
 
 .c2 {
@@ -263,6 +372,28 @@ exports[`2. a fullwidth image 1`] = `
   border-bottom-width: 1px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+@media (min-width:1024px) {
+  .c9 {
+    width: 56.2%;
+  }
+}
+
+@media (max-width:767px) {
+  .c11 {
+    -webkit-flex: 1 1 46%;
+    -ms-flex: 1 1 46%;
+    flex: 1 1 46%;
+  }
+
+  .c11:first-of-type {
+    margin-right: 1.5%;
+  }
+
+  .c11:last-child {
+    margin-left: 1.5%;
+  }
 }
 
 @media (min-width:1024px) {
@@ -344,6 +475,21 @@ exports[`2. a fullwidth image 1`] = `
             <ArticleImage />
           </div>
         </div>
+        <div
+          className="group-3 hidden c9"
+        >
+          <h2
+            className="c10"
+          >
+            Sponsored
+          </h2>
+          <div
+            className="c11"
+          />
+          <div
+            className="c11"
+          />
+        </div>
         <div />
         <ArticleExtras />
       </article>
@@ -367,6 +513,42 @@ exports[`3. a secondary image 1`] = `
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 25px;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto 30px;
+  width: 80.8%;
+}
+
+.c9.hidden {
+  margin: 0;
+  max-height: 0;
+  visibility: hidden;
+}
+
+.c10 {
+  border-bottom: 1px solid #dbdbdb;
+  color: #333;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  font: normal 14px / 17px TimesDigitalW04-Regular;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+
+.c11 {
+  -webkit-flex: 1 1 50%;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
 }
 
 .c2 {
@@ -455,6 +637,28 @@ exports[`3. a secondary image 1`] = `
 @media (min-width:1024px) {
   .c8 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c9 {
+    width: 56.2%;
+  }
+}
+
+@media (max-width:767px) {
+  .c11 {
+    -webkit-flex: 1 1 46%;
+    -ms-flex: 1 1 46%;
+    flex: 1 1 46%;
+  }
+
+  .c11:first-of-type {
+    margin-right: 1.5%;
+  }
+
+  .c11:last-child {
+    margin-left: 1.5%;
   }
 }
 
@@ -537,6 +741,21 @@ exports[`3. a secondary image 1`] = `
             <ArticleImage />
           </div>
         </div>
+        <div
+          className="group-3 hidden c9"
+        >
+          <h2
+            className="c10"
+          >
+            Sponsored
+          </h2>
+          <div
+            className="c11"
+          />
+          <div
+            className="c11"
+          />
+        </div>
         <div />
         <ArticleExtras />
       </article>
@@ -561,6 +780,42 @@ exports[`4. an inline image 1`] = `
   padding-right: 10px;
   padding-bottom: 0;
   display: block;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto 30px;
+  width: 80.8%;
+}
+
+.c9.hidden {
+  margin: 0;
+  max-height: 0;
+  visibility: hidden;
+}
+
+.c10 {
+  border-bottom: 1px solid #dbdbdb;
+  color: #333;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  font: normal 14px / 17px TimesDigitalW04-Regular;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+
+.c11 {
+  -webkit-flex: 1 1 50%;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
 }
 
 .c2 {
@@ -653,6 +908,28 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:1024px) {
+  .c9 {
+    width: 56.2%;
+  }
+}
+
+@media (max-width:767px) {
+  .c11 {
+    -webkit-flex: 1 1 46%;
+    -ms-flex: 1 1 46%;
+    flex: 1 1 46%;
+  }
+
+  .c11:first-of-type {
+    margin-right: 1.5%;
+  }
+
+  .c11:last-child {
+    margin-left: 1.5%;
+  }
+}
+
+@media (min-width:1024px) {
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
@@ -730,6 +1007,21 @@ exports[`4. an inline image 1`] = `
           >
             <ArticleImage />
           </div>
+        </div>
+        <div
+          className="group-3 hidden c9"
+        >
+          <h2
+            className="c10"
+          >
+            Sponsored
+          </h2>
+          <div
+            className="c11"
+          />
+          <div
+            className="c11"
+          />
         </div>
         <div />
         <ArticleExtras />

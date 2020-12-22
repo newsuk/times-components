@@ -180,6 +180,19 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         <p>
           Some content
         </p>
+        <div>
+          <h2>
+            Sponsored
+          </h2>
+          <div
+            data-parent="group-3"
+            id="advert-inarticle-native-1"
+          />
+          <div
+            data-parent="group-3"
+            id="advert-inarticle-native-2"
+          />
+        </div>
         <div
           id="paywall-portal-article-footer"
         />
@@ -434,6 +447,19 @@ exports[`4. an article with ads 1`] = `
         <AdContainer
           slotName="inline-ad"
         />
+        <div>
+          <h2>
+            Sponsored
+          </h2>
+          <div
+            data-parent="group-3"
+            id="advert-inarticle-native-1"
+          />
+          <div
+            data-parent="group-3"
+            id="advert-inarticle-native-2"
+          />
+        </div>
         <div
           id="paywall-portal-article-footer"
         />
