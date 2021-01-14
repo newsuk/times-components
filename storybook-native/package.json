@@ -1,6 +1,6 @@
 {
   "name": "@times-components/storybook-native",
-  "version": "0.2.13",
+  "version": "0.2.14",
   "license": "BSD-3-Clause",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -28,7 +28,7 @@
     "@storybook/addons": "5.3.18",
     "@storybook/react": "5.3.18",
     "@storybook/react-native": "5.3.18",
-    "@times-components/storybook": "4.1.54",
+    "@times-components/storybook": "4.1.55",
     "core-js": "^2.6.5",
     "prop-types": "15.7.2",
     "react": "16.9.0",

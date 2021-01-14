@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.79](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.78...@times-components/article-extras@0.5.79) (2021-01-14)
+
+
+### Bug Fixes
+
+* **TNLT-2359:** add new user state check for comments readOnly state ([#2662](https://github.com/newsuk/times-components/issues/2662)) ([ccec64a](https://github.com/newsuk/times-components/commit/ccec64af14af8f99536e7ebfcda6ee8e6a0a086a))
+
+
+
+
+
 ## [0.5.78](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.77...@times-components/article-extras@0.5.78) (2020-11-25)
 
 **Note:** Version bump only for package @times-components/article-extras
