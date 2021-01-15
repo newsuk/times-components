@@ -33,10 +33,7 @@ export default () => {
     {
       name: "renders correctly",
       test: () => {
-        UserState.mockStates = [
-          UserState.fullArticle,
-          UserState.loggedInOrLoggedInAndNotShared
-        ];
+        UserState.mockStates = [UserState.fullArticle, UserState.loggedIn];
         const testInstance = TestRenderer.create(
           <ArticleExtras
             analyticsStream={() => {}}

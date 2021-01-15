@@ -67,7 +67,7 @@ const ArticleExtras = ({
       {sponsoredArticles}
 
       <UserState
-        state={UserState.loggedInOrLoggedInAndNotShared}
+        state={UserState.loggedIn}
         fallback={
           <ArticleComments
             articleId={articleId}
