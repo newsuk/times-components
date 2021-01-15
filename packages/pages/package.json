@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pages",
-  "version": "2.2.36",
+  "version": "2.2.37",
   "main": "dist/pages",
   "dev": "src/pages",
   "scripts": {
@@ -38,7 +38,7 @@
     "@times-components/eslint-config-thetimes": "0.8.16",
     "@times-components/jest-configurator": "2.6.11",
     "@times-components/jest-serializer": "3.2.23",
-    "@times-components/storybook": "4.1.55",
+    "@times-components/storybook": "4.1.56",
     "@times-components/test-utils": "2.3.8",
     "@times-components/webpack-configurator": "2.0.27",
     "babel-jest": "24.8.0",
@@ -53,14 +53,14 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/article": "7.5.19",
-    "@times-components/author-profile": "6.3.18",
-    "@times-components/context": "1.2.18",
-    "@times-components/provider": "1.24.3",
+    "@times-components/article": "7.5.20",
+    "@times-components/author-profile": "6.3.19",
+    "@times-components/context": "1.2.19",
+    "@times-components/provider": "1.24.4",
     "@times-components/schema": "0.6.23",
-    "@times-components/section": "1.6.70",
-    "@times-components/styleguide": "3.38.11",
-    "@times-components/topic": "5.3.18",
+    "@times-components/section": "1.6.71",
+    "@times-components/styleguide": "3.38.12",
+    "@times-components/topic": "5.3.19",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link-http": "1.5.14",

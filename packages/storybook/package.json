@@ -1,6 +1,6 @@
 {
   "name": "@times-components/storybook",
-  "version": "4.1.55",
+  "version": "4.1.56",
   "description": "React storybook helpers for Times Components",
   "main": "dist/storybook",
   "dev": "src/storybook",
@@ -47,7 +47,7 @@
     "@storybook/addon-knobs": "5.3.18",
     "@storybook/react-native": "5.3.18",
     "@times-components/schema": "0.6.23",
-    "@times-components/user-state": "0.1.52",
+    "@times-components/user-state": "0.1.53",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link-http": "1.5.14",

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.50](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.49...@times-components/gradient@3.2.50) (2021-01-15)
+
+**Note:** Version bump only for package @times-components/gradient
+
+
+
+
+
 ## [3.2.49](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.48...@times-components/gradient@3.2.49) (2021-01-14)
 
 **Note:** Version bump only for package @times-components/gradient

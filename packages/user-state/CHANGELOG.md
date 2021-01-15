@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.53](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.52...@times-components/user-state@0.1.53) (2021-01-15)
+
+
+### Reverts
+
+* Revert "fix(TNLT-2359): add new user state check for comments readOnly state (#2662)" (#2663) ([13178fc](https://github.com/newsuk/times-components/commit/13178fc20325af4dd18f5930b58e9093fb8755a8)), closes [#2662](https://github.com/newsuk/times-components/issues/2662) [#2663](https://github.com/newsuk/times-components/issues/2663)
+
+
+
+
+
 ## [0.1.52](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.51...@times-components/user-state@0.1.52) (2021-01-14)
 
 
