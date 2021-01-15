@@ -18,6 +18,3 @@ export const shouldShowFullArticle = user =>
   isShared(user) || isNonMeteredExpiredUser(user);
 
 export const isLoggedInOrShared = user => isShared(user) || isLoggedIn(user);
-
-export const isLoggedInOrLoggedInAndNotShared = user =>
-  isLoggedIn(user) || (!isShared(user) && isLoggedIn(user));

@@ -20,8 +20,7 @@ import {
   isShared,
   shouldShowFullArticle,
   isSubscriber,
-  isLoggedInOrShared,
-  isLoggedInOrLoggedInAndNotShared
+  isLoggedInOrShared
 } from "./matchers";
 
 function UserState({
@@ -47,7 +46,6 @@ UserState.nonMeteredExpiredUser = isNonMeteredExpiredUser;
 UserState.fullArticle = shouldShowFullArticle;
 UserState.subscriber = isSubscriber;
 UserState.loggedInOrShared = isLoggedInOrShared;
-UserState.loggedInOrLoggedInAndNotShared = isLoggedInOrLoggedInAndNotShared;
 
 UserState.propTypes = {
   state: PropTypes.func.isRequired,
