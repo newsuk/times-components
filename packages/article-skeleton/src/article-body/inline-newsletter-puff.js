@@ -19,7 +19,7 @@ import {
   InpSubscribedContainer,
   InpSubscribedHeadline
 } from "../styles/inline-newsletter-puff";
-import NewsletterPuffButton from "./newsletter-puff-button";
+import {NewsletterPuffButton, PreviewNewsletterPuffButton} from "./newsletter-puff-button";
 import NewsletterPuffLink from "./newsletter-puff-link";
 
 function onManagePreferencesPress() {
@@ -34,6 +34,23 @@ function onManagePreferencesPress() {
       })
       .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
   }
+}
+export const PreviewNewsletterPuff = ({copy, headline, imageUri, label}) => {
+  return (
+    <InpContainer>
+      <InpImageContainer>
+        <Image aspectRatio={1.42} uri={imageUri} />
+      </InpImageContainer>
+      <InpSignupContainer>
+        <InpSignupLabel>{label}</InpSignupLabel>
+        <InpSignupHeadline>{headline}</InpSignupHeadline>
+        <InpCopy>{copy}</InpCopy>
+      <InpSignupCTAContainer>
+        <PreviewNewsletterPuffButton />
+      </InpSignupCTAContainer>
+      </InpSignupContainer>
+    </InpContainer>
+  )
 }
 
 const InlineNewsletterPuff = ({
@@ -121,6 +138,7 @@ const InlineNewsletterPuff = ({
 };
 
 export default InlineNewsletterPuff;
+
 
 InlineNewsletterPuff.propTypes = {
   analyticsStream: PropTypes.func.isRequired,
