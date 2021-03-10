@@ -134,15 +134,15 @@ const renderers = ({
     } = element;
 
     switch (value) {
-      case "newsletter-puff": 
-        isPreview ? (
-            <PreviewNewsletterPuff
-              copy={decodeURIComponent(copy)}
-              headline={decodeURIComponent(headline)}
-              imageUri={decodeURIComponent(imageUri)}
-              label={decodeURIComponent(label)}
-            />
-          ) : (
+      case "newsletter-puff":
+        return isPreview ? (
+          <PreviewNewsletterPuff
+            copy={decodeURIComponent(copy)}
+            headline={decodeURIComponent(headline)}
+            imageUri={decodeURIComponent(imageUri)}
+            label={decodeURIComponent(label)}
+          />
+        ) : (
           <InlineNewsletterPuff
             analyticsStream={analyticsStream}
             key={key}
@@ -153,7 +153,6 @@ const renderers = ({
             label={decodeURIComponent(label)}
           />
         );
-      break;
       default:
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
