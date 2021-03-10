@@ -135,18 +135,14 @@ const renderers = ({
 
     switch (value) {
       case "newsletter-puff": {
-        if (isPreview === true) {
-          return (
+        isPreview ? (
             <PreviewNewsletterPuff
               copy={decodeURIComponent(copy)}
               headline={decodeURIComponent(headline)}
               imageUri={decodeURIComponent(imageUri)}
               label={decodeURIComponent(label)}
             />
-          );
-        }
-
-        return (
+          ) : (
           <InlineNewsletterPuff
             analyticsStream={analyticsStream}
             key={key}
