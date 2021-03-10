@@ -17,7 +17,9 @@ import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
-import InlineNewsletterPuff, {PreviewNewsletterPuff} from "./inline-newsletter-puff";
+import InlineNewsletterPuff, {
+  PreviewNewsletterPuff
+} from "./inline-newsletter-puff";
 import {
   PrimaryImg,
   SecondaryImg,
@@ -65,7 +67,12 @@ const highResSizeCalc = (observed, key, template) => {
   return indepthRetinaScreenWidth || screenWidth;
 };
 
-const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
+const renderers = ({
+  paidContentClassName,
+  template,
+  analyticsStream,
+  isPreview
+}) => ({
   ...coreRenderers,
   ad(key) {
     return <AdContainer key={key} slotName="inline-ad" style={styles.ad} />;
@@ -126,22 +133,29 @@ const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
       value
     } = element;
 
-    switch (value) { 
+    switch (value) {
       case "newsletter-puff": {
-        
+        if (isPreview === true) {
+          return (
+            <PreviewNewsletterPuff
+              copy={decodeURIComponent(copy)}
+              headline={decodeURIComponent(headline)}
+              imageUri={decodeURIComponent(imageUri)}
+              label={decodeURIComponent(label)}
+            />
+          );
+        }
+
         return (
-          // <div>'Hello'</div>
-          <PreviewNewsletterPuff copy={decodeURIComponent(copy)} headline={decodeURIComponent(headline)} imageUri={decodeURIComponent(imageUri)} label={decodeURIComponent(label)}
-        />
-          // <InlineNewsletterPuff
-          //   analyticsStream={analyticsStream}
-          //   key={key}
-          //   code={code}
-          //   copy={decodeURIComponent(copy)}
-          //   headline={decodeURIComponent(headline)}
-          //   imageUri={decodeURIComponent(imageUri)}
-          //   label={decodeURIComponent(label)}
-          // />
+          <InlineNewsletterPuff
+            analyticsStream={analyticsStream}
+            key={key}
+            code={code}
+            copy={decodeURIComponent(copy)}
+            headline={decodeURIComponent(headline)}
+            imageUri={decodeURIComponent(imageUri)}
+            label={decodeURIComponent(label)}
+          />
         );
       }
       default:
@@ -272,11 +286,12 @@ const ArticleBody = ({
   contextUrl,
   section,
   paidContentClassName,
-  template
+  template,
+  isPreview
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
-    renderers({ paidContentClassName, template })
+    renderers({ paidContentClassName, template, isPreview })
   );
 
 ArticleBody.propTypes = {

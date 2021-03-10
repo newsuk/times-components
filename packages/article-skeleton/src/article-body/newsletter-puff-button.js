@@ -9,7 +9,12 @@ import {
 import { buttonStyles, textStyle } from "../styles/inline-newsletter-puff";
 
 export const PreviewNewsletterPuffButton = () => (
-<Button title="Sign up now" style={buttonStyles} underlayColor="transparent" textStyle={textStyle}/>
+  <Button
+    title="Sign up now"
+    style={buttonStyles}
+    underlayColor="transparent"
+    textStyle={textStyle}
+  />
 );
 
 const NewsletterPuffButton = ({ updatingSubscription, onPress }) => (
