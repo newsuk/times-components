@@ -8,6 +8,15 @@ import {
 } from "@times-components/tracking";
 import { buttonStyles, textStyle } from "../styles/inline-newsletter-puff";
 
+export const PreviewNewsletterPuffButton = () => (
+  <Button
+    title="Sign up now"
+    style={buttonStyles}
+    underlayColor="transparent"
+    textStyle={textStyle}
+  />
+);
+
 const NewsletterPuffButton = ({ updatingSubscription, onPress }) => (
   <Button
     title={updatingSubscription ? "Saving…" : "Sign up now"}

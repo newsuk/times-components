@@ -142,6 +142,7 @@ const ArticleSkeleton = ({
                     section={section}
                     paidContentClassName={paidContentClassName}
                     template={template}
+                    isPreview={isPreview}
                   />
                 )}
                 <PaywallPortal

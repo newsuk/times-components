@@ -17,7 +17,9 @@ import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
-import InlineNewsletterPuff from "./inline-newsletter-puff";
+import InlineNewsletterPuff, {
+  PreviewNewsletterPuff
+} from "./inline-newsletter-puff";
 import {
   PrimaryImg,
   SecondaryImg,
@@ -65,7 +67,12 @@ const highResSizeCalc = (observed, key, template) => {
   return indepthRetinaScreenWidth || screenWidth;
 };
 
-const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
+const renderers = ({
+  paidContentClassName,
+  template,
+  analyticsStream,
+  isPreview
+}) => ({
   ...coreRenderers,
   ad(key) {
     return <AdContainer key={key} slotName="inline-ad" style={styles.ad} />;
@@ -127,8 +134,15 @@ const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
     } = element;
 
     switch (value) {
-      case "newsletter-puff": {
-        return (
+      case "newsletter-puff":
+        return isPreview ? (
+          <PreviewNewsletterPuff
+            copy={decodeURIComponent(copy)}
+            headline={decodeURIComponent(headline)}
+            imageUri={decodeURIComponent(imageUri)}
+            label={decodeURIComponent(label)}
+          />
+        ) : (
           <InlineNewsletterPuff
             analyticsStream={analyticsStream}
             key={key}
@@ -139,7 +153,6 @@ const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
             label={decodeURIComponent(label)}
           />
         );
-      }
       default:
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
@@ -268,11 +281,12 @@ const ArticleBody = ({
   contextUrl,
   section,
   paidContentClassName,
-  template
+  template,
+  isPreview
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
-    renderers({ paidContentClassName, template })
+    renderers({ paidContentClassName, template, isPreview })
   );
 
 ArticleBody.propTypes = {
