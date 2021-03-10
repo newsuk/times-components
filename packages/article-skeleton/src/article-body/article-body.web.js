@@ -134,7 +134,7 @@ const renderers = ({
     } = element;
 
     switch (value) {
-      case "newsletter-puff": {
+      case "newsletter-puff": 
         isPreview ? (
             <PreviewNewsletterPuff
               copy={decodeURIComponent(copy)}
@@ -153,7 +153,7 @@ const renderers = ({
             label={decodeURIComponent(label)}
           />
         );
-      }
+      break;
       default:
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
