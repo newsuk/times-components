@@ -59,7 +59,7 @@ const ArticleSkeleton = ({
     content.length > 0 &&
     insertNativeAd(
       insertNewsletterPuff(
-        section, 
+        section,
         insertDropcapIntoAST(content, template, dropcapsDisabled)
       )
     );
