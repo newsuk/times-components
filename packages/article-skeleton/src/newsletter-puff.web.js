@@ -74,7 +74,7 @@ const getNewsletterPuff = section => {
   const newsletter = newslettersBySection.find(
       item => item.section === section.toLowerCase()
   );
-  if (newsletter) return newsletter.payload;
+  return (newsletter) ? newsletter.payload : undefined;
 };
 
 const newsletterPuffExists = children =>
