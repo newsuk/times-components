@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.40.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.39.4...@times-components/article-skeleton@1.40.0) (2021-03-15)
+
+
+### Features
+
+* **TNLT-6841:** insert newsletter in article pages ([#2665](https://github.com/newsuk/times-components/issues/2665)) ([8da7394](https://github.com/newsuk/times-components/commit/8da7394097da5bced5169200416e531e7c8a36cb))
+
+
+
+
+
 ## [1.39.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.39.3...@times-components/article-skeleton@1.39.4) (2021-03-10)
 
 **Note:** Version bump only for package @times-components/article-skeleton

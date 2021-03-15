@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.25.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.24.21...@times-components/article-magazine-comment@3.25.0) (2021-03-15)
+
+
+### Features
+
+* **TNLT-6841:** insert newsletter in article pages ([#2665](https://github.com/newsuk/times-components/issues/2665)) ([8da7394](https://github.com/newsuk/times-components/commit/8da7394097da5bced5169200416e531e7c8a36cb))
+
+
+
+
+
 ## [3.24.21](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.24.20...@times-components/article-magazine-comment@3.24.21) (2021-03-10)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
