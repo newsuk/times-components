@@ -37,7 +37,8 @@ const ArticleSkeleton = ({
   receiveChildList,
   spotAccountId,
   paidContentClassName,
-  isPreview
+  isPreview,
+  newsletterPuffFlag
 }) => {
   const {
     commentsEnabled,
@@ -60,9 +61,14 @@ const ArticleSkeleton = ({
     insertNativeAd(
       insertNewsletterPuff(
         section,
-        insertDropcapIntoAST(content, template, dropcapsDisabled)
+        insertDropcapIntoAST(content, template, dropcapsDisabled),
+        newsletterPuffFlag
       )
     );
+
+  console.log('---------------');
+  console.log(JSON.stringify(newContent));
+  console.log('---------------');
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 

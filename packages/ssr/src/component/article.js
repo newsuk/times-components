@@ -28,7 +28,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     getCookieValue,
     userState,
     paidContentClassName,
-    isPreview
+    isPreview,
+    newsletterPuffFlag
   } = data;
 
   return React.createElement(
@@ -83,7 +84,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               refetch,
               spotAccountId,
               paidContentClassName,
-              isPreview
+              isPreview,
+              newsletterPuffFlag
             })
           );
         }

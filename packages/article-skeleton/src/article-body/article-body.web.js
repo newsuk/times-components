@@ -71,7 +71,7 @@ const renderers = ({
   paidContentClassName,
   template,
   analyticsStream,
-  isPreview
+  isPreview,
 }) => ({
   ...coreRenderers,
   ad(key) {
