@@ -66,10 +66,6 @@ const ArticleSkeleton = ({
       )
     );
 
-  console.log('---------------');
-  console.log(JSON.stringify(newContent));
-  console.log('---------------');
-
   const HeaderAdContainer = getHeaderAdStyles(template);
 
   receiveChildList([
