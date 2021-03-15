@@ -94,15 +94,12 @@ const insertPaywall = (paywall, insertBefore, newsletterPuff) => ({
 });
 
 const insertNewsletterPuff = (section, children, flag) => {
-  console.log('************ flag', flag);
   if (!flag) return children;
 
   const newsletterPuff = getNewsletterPuff(section);
-  console.log('************ newsletterPuff', newsletterPuff);
   if (!newsletterPuff) return children;
 
   const paywall = children.find(item => item.name === "paywall");
-  console.log('************ paywall', paywall);
   if (!paywall) return children;
 
   if (
