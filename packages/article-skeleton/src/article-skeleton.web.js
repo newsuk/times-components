@@ -16,6 +16,7 @@ import {
 import articleTrackingContext from "./tracking/article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
 import insertNativeAd from "./native-ad.web";
+import insertNewsletterPuff from "./newsletter-puff.web";
 
 import {
   BodyContainer,
@@ -36,7 +37,8 @@ const ArticleSkeleton = ({
   receiveChildList,
   spotAccountId,
   paidContentClassName,
-  isPreview
+  isPreview,
+  newsletterPuffFlag
 }) => {
   const {
     commentsEnabled,
@@ -56,7 +58,13 @@ const ArticleSkeleton = ({
   const newContent =
     content &&
     content.length > 0 &&
-    insertNativeAd(insertDropcapIntoAST(content, template, dropcapsDisabled));
+    insertNativeAd(
+      insertNewsletterPuff(
+        section,
+        insertDropcapIntoAST(content, template, dropcapsDisabled),
+        newsletterPuffFlag
+      )
+    );
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
