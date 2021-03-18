@@ -206,6 +206,8 @@ exports[`full article with style 1`] = `
 }
 
 .c0 {
+  box-sizing: content-box;
+  min-height: 50px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -451,6 +453,18 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c5 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    min-height: 90px;
+  }
+}
+
+@media (min-width:970px) {
+  .c0 {
+    min-height: 250px;
   }
 }
 

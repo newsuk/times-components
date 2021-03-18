@@ -161,9 +161,11 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         <p>
           Some content
         </p>
-        <AdContainer
-          slotName="inline-ad"
-        />
+        <div>
+          <AdContainer
+            slotName="inline-ad"
+          />
+        </div>
         <div>
           <div>
             <PullQuote
