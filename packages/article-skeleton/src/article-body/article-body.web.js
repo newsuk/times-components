@@ -35,9 +35,9 @@ import {
   Heading6,
   NativeAd,
   NativeAdTitle,
-  Ad
+  Ad,
+  InlineAdWrapper
 } from "../styles/article-body/responsive";
-import styles from "../styles/article-body";
 
 export const responsiveDisplayWrapper = displayType => {
   switch (displayType) {
@@ -75,7 +75,11 @@ const renderers = ({
 }) => ({
   ...coreRenderers,
   ad(key) {
-    return <AdContainer key={key} slotName="inline-ad" style={styles.ad} />;
+    return (
+      <InlineAdWrapper>
+        <AdContainer key={key} slotName="inline-ad" />
+      </InlineAdWrapper>
+    );
   },
   dropCap(key, attrs, children) {
     return (
