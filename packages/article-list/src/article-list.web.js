@@ -16,7 +16,7 @@ import ArticleListPagination from "./article-list-pagination";
 import { propTypes, defaultProps } from "./article-list-prop-types";
 import ArticleListEmptyState from "./article-list-empty-state";
 import styles, { retryButtonStyles } from "./styles/index.web";
-import { ListContentContainer } from "./styles/responsive";
+import { ListContentContainer, InlineAdWrapper } from "./styles/responsive";
 
 class ArticleList extends Component {
   static getImageSize(node) {
@@ -90,11 +90,9 @@ class ArticleList extends Component {
     );
 
     const renderAdComponent = () => (
-      <AdContainer
-        isLoading={articlesLoading}
-        slotName="articleListAd"
-        style={styles.adContainer}
-      />
+      <InlineAdWrapper>
+        <AdContainer isLoading={articlesLoading} slotName="articleListAd" />
+      </InlineAdWrapper>
     );
 
     const data = articlesLoading
