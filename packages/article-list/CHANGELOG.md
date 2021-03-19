@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.7.21](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.20...@times-components/article-list@9.7.21) (2021-03-19)
+
+
+### Bug Fixes
+
+* **TNLT-6962:** Add set heights to ads times components ([#2666](https://github.com/newsuk/times-components/issues/2666)) ([575d987](https://github.com/newsuk/times-components/commit/575d9870952801640aff136ac30dd8b5ee2fec58))
+
+
+
+
+
 ## [9.7.20](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.19...@times-components/article-list@9.7.20) (2021-03-10)
 
 **Note:** Version bump only for package @times-components/article-list
