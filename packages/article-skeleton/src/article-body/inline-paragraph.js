@@ -89,7 +89,7 @@ const InlineParagraph = ({
         !positioned.length
           ? 0
           : positioned[positioned.length - 1].position.y +
-              defaultFont.lineHeight,
+            defaultFont.lineHeight,
         inlineExclusion ? inlineExclusion.height : 0
       )}
     >
