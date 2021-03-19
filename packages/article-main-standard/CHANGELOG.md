@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.30.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.30.1...@times-components/article-main-standard@3.30.2) (2021-03-19)
+
+
+### Bug Fixes
+
+* **TNLT-000:** minor ad native styles tweaks ([#2667](https://github.com/newsuk/times-components/issues/2667)) ([7b5094f](https://github.com/newsuk/times-components/commit/7b5094fc651599b3a9357b98cbc41eb327eafe9f))
+
+
+
+
+
 ## [3.30.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.30.0...@times-components/article-main-standard@3.30.1) (2021-03-19)
 
 
