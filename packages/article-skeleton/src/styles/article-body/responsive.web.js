@@ -256,7 +256,10 @@ export const NativeAd = styled.div`
   flex-wrap: wrap;
   margin: 0 auto 30px;
   width: 80.8%;
-  min-height: 320px;
+  min-height: 210px;
+  @media (min-width: 768px) {
+    min-height: 120px;
+  }
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
   }

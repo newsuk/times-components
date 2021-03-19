@@ -77,7 +77,7 @@ exports[`full article with style 1`] = `
   flex-wrap: wrap;
   margin: 0 auto 30px;
   width: 80.8%;
-  min-height: 320px;
+  min-height: 210px;
 }
 
 .c20.hidden {
@@ -359,6 +359,12 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c24 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    min-height: 120px;
   }
 }
 
