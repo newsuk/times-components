@@ -428,9 +428,11 @@ exports[`4. an article with ads 1`] = `
       <article
         role="article"
       >
-        <AdContainer
-          slotName="inline-ad"
-        />
+        <div>
+          <AdContainer
+            slotName="inline-ad"
+          />
+        </div>
         <div>
           <h2>
             Sponsored

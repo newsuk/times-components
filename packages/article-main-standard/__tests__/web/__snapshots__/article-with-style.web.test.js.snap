@@ -30,7 +30,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c27 {
+.c28 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -43,7 +43,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c28 {
+.c29 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -77,11 +77,10 @@ exports[`full article with style 1`] = `
   flex-wrap: wrap;
   margin: 0 auto 30px;
   width: 80.8%;
+  min-height: 320px;
 }
 
 .c20.hidden {
-  margin: 0;
-  max-height: 0;
   visibility: hidden;
 }
 
@@ -101,6 +100,27 @@ exports[`full article with style 1`] = `
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
+}
+
+.c27 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 250px;
+  margin: 30px 0;
+  box-sizing: content-box;
+  padding: 10px 0;
+  border-top: 1px solid rgb(219,219,219);
+  border-bottom: 1px solid rgb(219,219,219);
 }
 
 .c10 {
@@ -237,6 +257,8 @@ exports[`full article with style 1`] = `
 }
 
 .c1 {
+  box-sizing: content-box;
+  min-height: 50px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -284,7 +306,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c27 {
+  .c28 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -293,13 +315,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c27 {
+  .c28 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c29 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -308,7 +330,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c28 {
+  .c29 {
     width: 56.2%;
   }
 }
@@ -359,6 +381,18 @@ exports[`full article with style 1`] = `
 
   .c22:last-child {
     margin-left: 1.5%;
+  }
+}
+
+@media (min-width:768px) {
+  .c27 {
+    min-height: 90px;
+  }
+}
+
+@media (min-width:970px) {
+  .c27 {
+    min-height: 250px;
   }
 }
 
@@ -481,6 +515,18 @@ exports[`full article with style 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c1 {
+    min-height: 90px;
+  }
+}
+
+@media (min-width:970px) {
+  .c1 {
+    min-height: 250px;
+  }
+}
+
 <style>
 .S1 {
   font-weight: 400;
@@ -566,18 +612,6 @@ exports[`full article with style 1`] = `
 
 .IS10 {
   margin: 0;
-}
-
-.IS11 {
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1;
-  border-top-color: #DBDBDB;
-  border-top-width: 1;
-  margin-bottom: 30px;
-  padding-horizontal: 10px;
-  padding-vertical: 10px;
-  margin-top: 30px;
-  width: 100%;
 }
 </style>
 
@@ -837,19 +871,21 @@ exports[`full article with style 1`] = `
               </figcaption>
             </figure>
           </div>
-          <AdContainer
-            className="IS11"
-          />
+          <div
+            className="c27"
+          >
+            <AdContainer />
+          </div>
           <div>
             <div
-              className="c27 responsiveweb__SecondaryImg-sc-16nqyj8-7 c27 css-view-1dbjc4n"
+              className="c28 responsiveweb__SecondaryImg-sc-16nqyj8-7 c28 css-view-1dbjc4n"
             >
               <ArticleImage />
             </div>
           </div>
           <div>
             <div
-              className="c28 responsiveweb__InlineImg-sc-16nqyj8-8 c28 css-view-1dbjc4n"
+              className="c29 responsiveweb__InlineImg-sc-16nqyj8-8 c29 css-view-1dbjc4n"
             >
               <ArticleImage />
             </div>

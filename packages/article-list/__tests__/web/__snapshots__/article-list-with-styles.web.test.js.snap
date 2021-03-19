@@ -24,6 +24,26 @@ exports[`1. article list 1`] = `
   margin-right: 10px;
 }
 
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 250px;
+  box-sizing: content-box;
+  padding: 10px 0;
+  border-top: 1px solid rgb(219,219,219);
+  border-bottom: 1px solid rgb(219,219,219);
+}
+
 @media (min-width:768px) {
   .c0 {
     padding-left: 0;
@@ -71,6 +91,18 @@ exports[`1. article list 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c4 {
+    min-height: 90px;
+  }
+}
+
+@media (min-width:970px) {
+  .c4 {
+    min-height: 250px;
+  }
+}
+
 <style>
 .S1 {
   -ms-flex-negative: 1;
@@ -105,14 +137,6 @@ exports[`1. article list 1`] = `
 .S3 {
   background-color: rgba(219,219,219,1.00);
   height: 1px;
-}
-
-.IS1 {
-  border-bottom-width: 1;
-  border-color: #DBDBDB;
-  border-top-width: 1;
-  padding-vertical: 10px;
-  top: 1;
 }
 </style>
 
@@ -273,9 +297,11 @@ exports[`1. article list 1`] = `
         </Link>
       </div>
     </div>
-    <AdContainer
-      className="IS1"
-    />
+    <div
+      className="c4"
+    >
+      <AdContainer />
+    </div>
     <div
       className="css-view-1dbjc4n r-alignItems-1oszu61 r-flexDirection-18u37iz r-justifyContent-1777fci S2"
     >

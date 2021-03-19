@@ -19,11 +19,10 @@ exports[`1. a primary image 1`] = `
   flex-wrap: wrap;
   margin: 0 auto 30px;
   width: 80.8%;
+  min-height: 320px;
 }
 
 .c9.hidden {
-  margin: 0;
-  max-height: 0;
   visibility: hidden;
 }
 
@@ -108,6 +107,8 @@ exports[`1. a primary image 1`] = `
 }
 
 .c0 {
+  box-sizing: content-box;
+  min-height: 50px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -176,6 +177,18 @@ exports[`1. a primary image 1`] = `
 @media (min-width:1024px) {
   .c5 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    min-height: 90px;
+  }
+}
+
+@media (min-width:970px) {
+  .c0 {
+    min-height: 250px;
   }
 }
 
@@ -274,11 +287,10 @@ exports[`2. a fullwidth image 1`] = `
   flex-wrap: wrap;
   margin: 0 auto 30px;
   width: 80.8%;
+  min-height: 320px;
 }
 
 .c9.hidden {
-  margin: 0;
-  max-height: 0;
   visibility: hidden;
 }
 
@@ -363,6 +375,8 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 .c0 {
+  box-sizing: content-box;
+  min-height: 50px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -418,6 +432,18 @@ exports[`2. a fullwidth image 1`] = `
 @media (min-width:1024px) {
   .c5 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    min-height: 90px;
+  }
+}
+
+@media (min-width:970px) {
+  .c0 {
+    min-height: 250px;
   }
 }
 
@@ -525,11 +551,10 @@ exports[`3. a secondary image 1`] = `
   flex-wrap: wrap;
   margin: 0 auto 30px;
   width: 80.8%;
+  min-height: 320px;
 }
 
 .c9.hidden {
-  margin: 0;
-  max-height: 0;
   visibility: hidden;
 }
 
@@ -614,6 +639,8 @@ exports[`3. a secondary image 1`] = `
 }
 
 .c0 {
+  box-sizing: content-box;
+  min-height: 50px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -684,6 +711,18 @@ exports[`3. a secondary image 1`] = `
 @media (min-width:1024px) {
   .c5 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    min-height: 90px;
+  }
+}
+
+@media (min-width:970px) {
+  .c0 {
+    min-height: 250px;
   }
 }
 
@@ -792,11 +831,10 @@ exports[`4. an inline image 1`] = `
   flex-wrap: wrap;
   margin: 0 auto 30px;
   width: 80.8%;
+  min-height: 320px;
 }
 
 .c9.hidden {
-  margin: 0;
-  max-height: 0;
   visibility: hidden;
 }
 
@@ -881,6 +919,8 @@ exports[`4. an inline image 1`] = `
 }
 
 .c0 {
+  box-sizing: content-box;
+  min-height: 50px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -951,6 +991,18 @@ exports[`4. an inline image 1`] = `
 @media (min-width:1024px) {
   .c5 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    min-height: 90px;
+  }
+}
+
+@media (min-width:970px) {
+  .c0 {
+    min-height: 250px;
   }
 }
 

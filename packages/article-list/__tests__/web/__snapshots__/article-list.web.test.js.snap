@@ -466,9 +466,11 @@ exports[`1. article list 1`] = `
         </Link>
       </div>
     </div>
-    <AdContainer
-      slotName="articleListAd"
-    />
+    <div>
+      <AdContainer
+        slotName="articleListAd"
+      />
+    </div>
     <div>
       <div>
         <Pagination
