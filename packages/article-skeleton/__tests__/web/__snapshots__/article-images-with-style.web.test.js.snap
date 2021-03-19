@@ -19,7 +19,7 @@ exports[`1. a primary image 1`] = `
   flex-wrap: wrap;
   margin: 0 auto 30px;
   width: 80.8%;
-  min-height: 320px;
+  min-height: 210px;
 }
 
 .c9.hidden {
@@ -130,6 +130,12 @@ exports[`1. a primary image 1`] = `
 @media (min-width:1024px) {
   .c8 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    min-height: 120px;
   }
 }
 
@@ -287,7 +293,7 @@ exports[`2. a fullwidth image 1`] = `
   flex-wrap: wrap;
   margin: 0 auto 30px;
   width: 80.8%;
-  min-height: 320px;
+  min-height: 210px;
 }
 
 .c9.hidden {
@@ -386,6 +392,12 @@ exports[`2. a fullwidth image 1`] = `
   border-bottom-width: 1px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+@media (min-width:768px) {
+  .c9 {
+    min-height: 120px;
+  }
 }
 
 @media (min-width:1024px) {
@@ -551,7 +563,7 @@ exports[`3. a secondary image 1`] = `
   flex-wrap: wrap;
   margin: 0 auto 30px;
   width: 80.8%;
-  min-height: 320px;
+  min-height: 210px;
 }
 
 .c9.hidden {
@@ -664,6 +676,12 @@ exports[`3. a secondary image 1`] = `
 @media (min-width:1024px) {
   .c8 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    min-height: 120px;
   }
 }
 
@@ -831,7 +849,7 @@ exports[`4. an inline image 1`] = `
   flex-wrap: wrap;
   margin: 0 auto 30px;
   width: 80.8%;
-  min-height: 320px;
+  min-height: 210px;
 }
 
 .c9.hidden {
@@ -944,6 +962,12 @@ exports[`4. an inline image 1`] = `
 @media (min-width:1024px) {
   .c8 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    min-height: 120px;
   }
 }
 
