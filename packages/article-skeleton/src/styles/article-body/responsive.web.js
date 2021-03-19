@@ -259,7 +259,7 @@ export const NativeAd = styled.div`
   min-height: 210px;
   @media (min-width: 768px) {
     min-height: 120px;
-  };
+  }
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
   }

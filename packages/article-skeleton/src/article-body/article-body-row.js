@@ -284,13 +284,7 @@ export default ({
         </View>
       );
     },
-    pullQuote(
-      key,
-      {
-        caption: { name, text, twitter }
-      },
-      children
-    ) {
+    pullQuote(key, { caption: { name, text, twitter } }, children) {
       const content = children[0].string;
       const contentWidth = Math.min(screenWidth(), tabletWidth);
       return (

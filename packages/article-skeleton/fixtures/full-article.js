@@ -676,21 +676,23 @@ export const styledNestedContent = [
     name: "paragraph",
     children: []
       .concat(
-        ...longContent.filter(n => n.name === "paragraph").map(p => [
-          {
-            name: "bold",
-            children: [
-              { name: "break" },
-              { name: "break" },
-              {
-                name: "text",
-                attributes: { value: "test break bold" },
-                children: []
-              }
-            ]
-          },
-          ...p.children
-        ])
+        ...longContent
+          .filter(n => n.name === "paragraph")
+          .map(p => [
+            {
+              name: "bold",
+              children: [
+                { name: "break" },
+                { name: "break" },
+                {
+                  name: "text",
+                  attributes: { value: "test break bold" },
+                  children: []
+                }
+              ]
+            },
+            ...p.children
+          ])
       )
       .slice(2)
   }

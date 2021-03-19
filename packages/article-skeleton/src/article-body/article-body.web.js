@@ -207,13 +207,7 @@ const renderers = ({
       </span>
     );
   },
-  pullQuote(
-    key,
-    {
-      caption: { name, text, twitter }
-    },
-    children
-  ) {
+  pullQuote(key, { caption: { name, text, twitter } }, children) {
     return (
       <Context.Consumer key={key}>
         {({
