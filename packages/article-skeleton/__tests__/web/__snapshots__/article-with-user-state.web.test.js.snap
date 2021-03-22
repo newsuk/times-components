@@ -121,7 +121,9 @@ exports[`Article with user state Render full article when user has access to ful
           Some Link
         </Link>
         <span>
-          <p>
+          <p
+            id="last-paragraph"
+          >
             Some content
           </p>
           <div>
@@ -476,7 +478,9 @@ exports[`Article with user state Render teaser article when user does not have a
           Some Link
         </Link>
         <span>
-          <p>
+          <p
+            id="last-paragraph"
+          >
             Some content
           </p>
           <div>

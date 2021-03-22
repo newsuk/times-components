@@ -179,7 +179,9 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
           <p>
             Some paragraph 4
           </p>
-          <p>
+          <p
+            id="last-paragraph"
+          >
             Some paragraph 5
           </p>
         </span>

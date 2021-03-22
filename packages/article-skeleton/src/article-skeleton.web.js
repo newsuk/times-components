@@ -17,6 +17,7 @@ import articleTrackingContext from "./tracking/article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
 import insertNativeAd from "./native-ad.web";
 import insertNewsletterPuff from "./newsletter-puff.web";
+import tagLastParagraph from "./tracking/article-tracking-last-paragraph";
 
 import {
   BodyContainer,
@@ -28,6 +29,11 @@ import styles from "./styles/article-body/index.web";
 import Head from "./head";
 import PaywallPortal from "./paywall-portal";
 import StickySaveAndShareBar from "./sticky-save-and-share-bar";
+
+const reduceContent = (content, reducers) =>
+  content &&
+  content.length > 0 &&
+  reducers.reduce((result, next) => next(result), content);
 
 const ArticleSkeleton = ({
   analyticsStream,
@@ -55,22 +61,30 @@ const ArticleSkeleton = ({
     sharingEnabled
   } = article;
 
-  const newContent =
-    content &&
-    content.length > 0 &&
-    insertNativeAd(
-      insertNewsletterPuff(
-        section,
-        insertDropcapIntoAST(content, template, dropcapsDisabled),
-        newsletterPuffFlag
-      )
+  const insertNewsletterPuffCurry = newContent =>
+    insertNewsletterPuff(
+      section,
+      newContent,
+      newsletterPuffFlag
     );
+
+  const insertDropcapIntoASTCurry = (newContent) =>
+  insertDropcapIntoAST(newContent, template, dropcapsDisabled)
+
+  const contentReducers = [
+    insertDropcapIntoASTCurry,
+    insertNewsletterPuffCurry,
+    insertNativeAd,
+    tagLastParagraph
+  ];
+
+  const newContent = reduceContent(content, contentReducers);
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
   receiveChildList([
     {
-      elementId: "end-of-article-marker",
+      elementId: "last-paragraph",
       name: "end of article",
       eventNavigationName: "Article : View End"
     },
@@ -158,19 +172,6 @@ const ArticleSkeleton = ({
                     isPreview={isPreview}
                   />
                 )}
-                <div
-                  id="end-of-article-marker"
-                  style={{
-                    color: "rgba(100,100,100,0.3)",
-                    position: "relative",
-                    top: "calc(-1em + -25px)",
-                    textAlign: "right",
-                    height: 0,
-                    overflow: "visible"
-                  }}
-                >
-                  &lt;&lt;&lt; Last Line of Article
-                </div>
                 <PaywallPortal
                   id="paywall-portal-article-footer"
                   componentName="subscribe-cta"

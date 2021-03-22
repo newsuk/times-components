@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tagLastParagraph with paywall 1`] = `
+Array [
+  Object {
+    "attributes": Object {
+      "title": "title",
+    },
+    "children": Array [
+      Object {
+        "name": "unorderedList",
+      },
+    ],
+    "name": "keyFacts",
+  },
+  Object {
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": 1,
+        },
+        "children": Array [],
+        "name": "paragraph",
+      },
+      Object {
+        "attributes": Object {
+          "value": 2,
+        },
+        "children": Array [],
+        "name": "other",
+      },
+      Object {
+        "attributes": Object {
+          "value": 3,
+        },
+        "children": Array [],
+        "name": "paragraph",
+      },
+      Object {
+        "attributes": Object {
+          "value": 4,
+        },
+        "children": Array [],
+        "name": "other",
+      },
+      Object {
+        "attributes": Object {
+          "value": 5,
+        },
+        "children": Array [],
+        "name": "paragraph",
+      },
+      Object {
+        "attributes": Object {
+          "id": "last-paragraph",
+          "value": 6,
+        },
+        "children": Array [],
+        "name": "paragraph",
+      },
+      Object {
+        "attributes": Object {
+          "value": 7,
+        },
+        "children": Array [],
+        "name": "other",
+      },
+    ],
+    "name": "paywall",
+  },
+]
+`;
