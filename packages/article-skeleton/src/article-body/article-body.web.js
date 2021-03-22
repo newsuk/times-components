@@ -199,7 +199,11 @@ const renderers = ({
   },
   paragraph(key, attributes, children) {
     const id = attributes && attributes.id;
-    return <ArticleParagraph key={key} {...(id?{id}:{})}>{children}</ArticleParagraph>;
+    return (
+      <ArticleParagraph key={key} {...(id ? { id } : {})}>
+        {children}
+      </ArticleParagraph>
+    );
   },
   paywall(key, attributes, children) {
     return (

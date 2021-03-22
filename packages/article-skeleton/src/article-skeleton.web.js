@@ -62,14 +62,10 @@ const ArticleSkeleton = ({
   } = article;
 
   const insertNewsletterPuffCurry = newContent =>
-    insertNewsletterPuff(
-      section,
-      newContent,
-      newsletterPuffFlag
-    );
+    insertNewsletterPuff(section, newContent, newsletterPuffFlag);
 
-  const insertDropcapIntoASTCurry = (newContent) =>
-  insertDropcapIntoAST(newContent, template, dropcapsDisabled)
+  const insertDropcapIntoASTCurry = newContent =>
+    insertDropcapIntoAST(newContent, template, dropcapsDisabled);
 
   const contentReducers = [
     insertDropcapIntoASTCurry,

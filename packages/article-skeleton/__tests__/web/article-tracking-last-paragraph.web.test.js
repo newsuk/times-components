@@ -28,13 +28,13 @@ const articleWithPaywall = [
   },
   {
     children: [
-      { attributes: {value:1}, children: [], name: "paragraph" },
-      { attributes: {value:2}, children: [], name: "other" },
-      { attributes: {value:3}, children: [], name: "paragraph" },
-      { attributes: {value:4}, children: [], name: "other" },
-      { attributes: {value:5}, children: [], name: "paragraph" },
-      { attributes: {value:6}, children: [], name: "paragraph" },
-      { attributes: {value:7}, children: [], name: "other" }
+      { attributes: { value: 1 }, children: [], name: "paragraph" },
+      { attributes: { value: 2 }, children: [], name: "other" },
+      { attributes: { value: 3 }, children: [], name: "paragraph" },
+      { attributes: { value: 4 }, children: [], name: "other" },
+      { attributes: { value: 5 }, children: [], name: "paragraph" },
+      { attributes: { value: 6 }, children: [], name: "paragraph" },
+      { attributes: { value: 7 }, children: [], name: "other" }
     ],
     name: "paywall"
   }
