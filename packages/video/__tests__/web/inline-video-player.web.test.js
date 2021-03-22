@@ -31,7 +31,7 @@ describe("InlineVideoPlayer", () => {
     renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
 
     expect(document.body.innerHTML.trim()).toBe(
-      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js"></script>'
+      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js" defer=""></script>'
     );
   });
 
@@ -41,7 +41,7 @@ describe("InlineVideoPlayer", () => {
     );
 
     expect(document.body.innerHTML.trim()).toBe(
-      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js"></script>'
+      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js" defer=""></script>'
     );
   });
 
@@ -63,7 +63,7 @@ describe("InlineVideoPlayer", () => {
     window.IntersectionObserver.mock.calls[0][0]([{ isIntersecting: true }]);
 
     expect(document.body.innerHTML.trim()).toBe(
-      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js"></script>'
+      '<script src="//players.brightcove.net/[account id]/default_default/index.min.js" defer=""></script>'
     );
   });
 
