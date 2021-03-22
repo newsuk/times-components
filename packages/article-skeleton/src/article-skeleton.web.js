@@ -70,6 +70,11 @@ const ArticleSkeleton = ({
 
   receiveChildList([
     {
+      elementId: "end-of-article-marker",
+      name: "end of article",
+      eventNavigationName: "Article : View End"
+    },
+    {
       elementId: "related-articles",
       name: "related articles"
     }
@@ -153,6 +158,19 @@ const ArticleSkeleton = ({
                     isPreview={isPreview}
                   />
                 )}
+                <div
+                  id="end-of-article-marker"
+                  style={{
+                    color: "rgba(100,100,100,0.3)",
+                    position: "relative",
+                    top: "calc(-1em + -25px)",
+                    textAlign: "right",
+                    height: 0,
+                    overflow: "visible"
+                  }}
+                >
+                  &lt;&lt;&lt; Last Line of Article
+                </div>
                 <PaywallPortal
                   id="paywall-portal-article-footer"
                   componentName="subscribe-cta"
