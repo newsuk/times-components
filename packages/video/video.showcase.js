@@ -9,7 +9,7 @@ const policyKey =
 const accountId = "5436121857001";
 const videoId = "5831024132001";
 const posterImageURI =
-  "//www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fa036c92e-89b5-11eb-a627-ab1cfc779ef5.jpg?crop=2873%2C1616%2C218%2C494";
+  "https://clips.news.co.uk/thetimes/p5dzhoYzE6kYmndXxYdBsfnnyMzDVTyD/Ut_HKthATH4eww8X4xMDoxOmFkOxyVqc";
 
 const defaultVideoProps = {
   accountId,
@@ -37,7 +37,6 @@ export default {
     {
       component: () => (
         <View>
-          <View style={{ width: 5, height: 1500, backgroundColor: "red" }} />
           <Text
             style={{
               marginBottom: 10,
