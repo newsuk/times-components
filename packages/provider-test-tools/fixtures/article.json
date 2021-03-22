@@ -555,6 +555,25 @@
   ],
   "content": [
     {
+      "name": "interactive",
+      "attributes": {
+        "id": "e7c8c3ca-eaa7-433f-9668-417cb91a8a28",
+        "display": "primary",
+        "url": "https://components.timesdev.tools/lib2/newsletter-puff-1.0.0/newsletter-puff.html",
+        "element": {
+          "value": "newsletter-puff",
+          "attributes": {
+            "code": "TNL-103",
+            "copy": "In-depth%20analysis%20and%20comment%20on%20the%20latest%20financial%20and%20economic%20news.",
+            "label": "In%20your%20inbox",
+            "headline": "Business%20Briefing",
+            "imageUri": "https%3A%2F%2Fwww.thetimes.co.uk%2Fimageserver%2Fimage%2Fmethode%252Ftimes%252Fprod%252Fweb%252Fbin%252F306637af-2b6f-48fc-b264-d661b2067818.jpg%3Fresize%3D800"
+          }
+        }
+      },
+      "children": []
+    },
+    {
       "name": "heading2",
       "children": [
         {

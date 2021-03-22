@@ -17,7 +17,9 @@ import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
-import InlineNewsletterPuff from "./inline-newsletter-puff";
+import InlineNewsletterPuff, {
+  PreviewNewsletterPuff
+} from "./inline-newsletter-puff";
 import {
   PrimaryImg,
   SecondaryImg,
@@ -30,9 +32,12 @@ import {
   Heading3,
   Heading4,
   Heading5,
-  Heading6
+  Heading6,
+  NativeAd,
+  NativeAdTitle,
+  Ad,
+  InlineAdWrapper
 } from "../styles/article-body/responsive";
-import styles from "../styles/article-body";
 
 export const responsiveDisplayWrapper = displayType => {
   switch (displayType) {
@@ -62,10 +67,19 @@ const highResSizeCalc = (observed, key, template) => {
   return indepthRetinaScreenWidth || screenWidth;
 };
 
-const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
+const renderers = ({
+  paidContentClassName,
+  template,
+  analyticsStream,
+  isPreview
+}) => ({
   ...coreRenderers,
   ad(key) {
-    return <AdContainer key={key} slotName="inline-ad" style={styles.ad} />;
+    return (
+      <InlineAdWrapper>
+        <AdContainer key={key} slotName="inline-ad" />
+      </InlineAdWrapper>
+    );
   },
   dropCap(key, attrs, children) {
     return (
@@ -78,6 +92,15 @@ const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
           </DropCapView>
         )}
       </Context.Consumer>
+    );
+  },
+  nativeAd(key) {
+    return (
+      <NativeAd className="group-3 hidden" key={key}>
+        <NativeAdTitle>Sponsored</NativeAdTitle>
+        <Ad id="advert-inarticle-native-1" data-parent="group-3" />
+        <Ad id="advert-inarticle-native-2" data-parent="group-3" />
+      </NativeAd>
     );
   },
   image(key, { display, ratio, url, caption, credits }) {
@@ -115,8 +138,15 @@ const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
     } = element;
 
     switch (value) {
-      case "newsletter-puff": {
-        return (
+      case "newsletter-puff":
+        return isPreview ? (
+          <PreviewNewsletterPuff
+            copy={decodeURIComponent(copy)}
+            headline={decodeURIComponent(headline)}
+            imageUri={decodeURIComponent(imageUri)}
+            label={decodeURIComponent(label)}
+          />
+        ) : (
           <InlineNewsletterPuff
             analyticsStream={analyticsStream}
             key={key}
@@ -127,7 +157,6 @@ const renderers = ({ paidContentClassName, template, analyticsStream }) => ({
             label={decodeURIComponent(label)}
           />
         );
-      }
       default:
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
@@ -256,11 +285,12 @@ const ArticleBody = ({
   contextUrl,
   section,
   paidContentClassName,
-  template
+  template,
+  isPreview
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
-    renderers({ paidContentClassName, template })
+    renderers({ paidContentClassName, template, isPreview })
   );
 
 ArticleBody.propTypes = {

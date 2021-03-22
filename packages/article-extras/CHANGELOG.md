@@ -3,6 +3,119 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.81](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.80...@times-components/article-extras@0.5.81) (2021-03-10)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.5.80](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.79...@times-components/article-extras@0.5.80) (2021-01-15)
+
+
+### Reverts
+
+* Revert "fix(TNLT-2359): add new user state check for comments readOnly state (#2662)" (#2663) ([13178fc](https://github.com/newsuk/times-components/commit/13178fc20325af4dd18f5930b58e9093fb8755a8)), closes [#2662](https://github.com/newsuk/times-components/issues/2662) [#2663](https://github.com/newsuk/times-components/issues/2663)
+
+
+
+
+
+## [0.5.79](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.78...@times-components/article-extras@0.5.79) (2021-01-14)
+
+
+### Bug Fixes
+
+* **TNLT-2359:** add new user state check for comments readOnly state ([#2662](https://github.com/newsuk/times-components/issues/2662)) ([ccec64a](https://github.com/newsuk/times-components/commit/ccec64af14af8f99536e7ebfcda6ee8e6a0a086a))
+
+
+
+
+
+## [0.5.78](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.77...@times-components/article-extras@0.5.78) (2020-11-25)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.5.77](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.76...@times-components/article-extras@0.5.77) (2020-11-20)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.5.76](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.75...@times-components/article-extras@0.5.76) (2020-11-16)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.5.75](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.74...@times-components/article-extras@0.5.75) (2020-11-13)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.5.74](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.73...@times-components/article-extras@0.5.74) (2020-11-12)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.5.73](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.72...@times-components/article-extras@0.5.73) (2020-11-10)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.5.72](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.71...@times-components/article-extras@0.5.72) (2020-09-23)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.5.71](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.70...@times-components/article-extras@0.5.71) (2020-09-22)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.5.70](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.69...@times-components/article-extras@0.5.70) (2020-09-02)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.5.69](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.68...@times-components/article-extras@0.5.69) (2020-07-22)
+
+
+### Bug Fixes
+
+* **TNLT-2359:** make Spot read only for share token users ([#2638](https://github.com/newsuk/times-components/issues/2638)) ([c8282ae](https://github.com/newsuk/times-components/commit/c8282ae436cee7d5f0daa75b69efed5b49ead3c6))
+
+
+
+
+
 ## [0.5.68](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.67...@times-components/article-extras@0.5.68) (2020-07-01)
 
 **Note:** Version bump only for package @times-components/article-extras

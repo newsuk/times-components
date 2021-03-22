@@ -32,6 +32,7 @@ const ArticleExtras = ({
       <div id="sponsored-article" />
     </div>
   );
+
   return (
     <UserState state={UserState.fullArticle} fallback={sponsoredArticles}>
       <div style={clearingStyle} />
@@ -64,11 +65,24 @@ const ArticleExtras = ({
         />
       </div>
       {sponsoredArticles}
-      <ArticleComments
-        articleId={articleId}
-        isEnabled={commentsEnabled}
-        spotAccountId={spotAccountId}
-      />
+
+      <UserState
+        state={UserState.loggedIn}
+        fallback={
+          <ArticleComments
+            articleId={articleId}
+            isEnabled={commentsEnabled}
+            spotAccountId={spotAccountId}
+            isReadOnly
+          />
+        }
+      >
+        <ArticleComments
+          articleId={articleId}
+          isEnabled={commentsEnabled}
+          spotAccountId={spotAccountId}
+        />
+      </UserState>
     </UserState>
   );
 };

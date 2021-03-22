@@ -54,7 +54,7 @@ exports[`1. group of topics 1`] = `
   className="css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci r-marginBottom-15d164r S4"
 >
   <div
-    className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks S3"
+    className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks r-maxWidth-q5oqfz S3"
   >
     <a
       className="linkweb__RespLink-yfb9n-0 cCCShB"
@@ -127,7 +127,7 @@ exports[`2. group of topics at large scale 1`] = `
   className="css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci r-marginBottom-15d164r S4"
 >
   <div
-    className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks S3"
+    className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks r-maxWidth-q5oqfz S3"
   >
     <a
       className="linkweb__RespLink-yfb9n-0 cCCShB"
@@ -200,7 +200,7 @@ exports[`3. group of topics at xlarge scale 1`] = `
   className="css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci r-marginBottom-15d164r S4"
 >
   <div
-    className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks S3"
+    className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks r-maxWidth-q5oqfz S3"
   >
     <a
       className="linkweb__RespLink-yfb9n-0 cCCShB"
@@ -257,7 +257,7 @@ exports[`4. article topic with style 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks S3"
+  className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks r-maxWidth-q5oqfz S3"
 >
   <a
     className="linkweb__RespLink-yfb9n-0 cCCShB"
@@ -309,7 +309,7 @@ exports[`5. article topic with no additional style 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks S3"
+  className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks r-maxWidth-q5oqfz S3"
 >
   <a
     className="linkweb__RespLink-yfb9n-0 cCCShB"

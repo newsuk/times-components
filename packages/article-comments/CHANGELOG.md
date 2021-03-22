@@ -3,6 +3,93 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.11.1...@times-components/article-comments@0.11.2) (2021-01-15)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.11.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.11.0...@times-components/article-comments@0.11.1) (2021-01-14)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.10.0...@times-components/article-comments@0.11.0) (2020-11-25)
+
+
+### Features
+
+* **TNLT-5606:** reinstating community guidelines [#2657](https://github.com/newsuk/times-components/issues/2657) ([522ef84](https://github.com/newsuk/times-components/commit/522ef8451aeeaab1574e37993138f1db8101a3a6))
+
+
+
+
+
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.9.1...@times-components/article-comments@0.10.0) (2020-11-20)
+
+
+### Features
+
+* **tnlt: 0000:** new solution for dynamic tracking events and updating snapshots ([#2655](https://github.com/newsuk/times-components/issues/2655)) ([d452fa6](https://github.com/newsuk/times-components/commit/d452fa692e01239ff4417f60206125c192a3077c))
+
+
+
+
+
+## [0.9.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.9.0...@times-components/article-comments@0.9.1) (2020-11-16)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.8.0...@times-components/article-comments@0.9.0) (2020-11-13)
+
+
+### Features
+
+* **TNLT-5606:** Further tracking amendments [#2653](https://github.com/newsuk/times-components/issues/2653) ([efaf523](https://github.com/newsuk/times-components/commit/efaf5230776d3d331a31dc2268e9d62719eb68b9))
+
+
+
+
+
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.7.1...@times-components/article-comments@0.8.0) (2020-11-10)
+
+
+### Features
+
+* **TNLT-5606:** Adding more tracking events for comments ([a10357c](https://github.com/newsuk/times-components/commit/a10357ce18868acfd01f82b06426a5f8a494bf23))
+
+
+
+
+
+## [0.7.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.7.0...@times-components/article-comments@0.7.1) (2020-09-23)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.6.37...@times-components/article-comments@0.7.0) (2020-09-02)
+
+
+### Features
+
+* **TNLT-3719:** add once to spot IM comment call ([#2642](https://github.com/newsuk/times-components/issues/2642)) ([5bfa196](https://github.com/newsuk/times-components/commit/5bfa1961ca7ed1e034cb45989d03bfd917a24f2b))
+
+
+
+
+
 ## [0.6.37](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.6.36...@times-components/article-comments@0.6.37) (2020-06-22)
 
 **Note:** Version bump only for package @times-components/article-comments

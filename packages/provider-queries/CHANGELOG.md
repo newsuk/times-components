@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.14.2](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.14.1...@times-components/provider-queries@2.14.2) (2020-09-22)
+
+
+### Bug Fixes
+
+* **TNLT-4872:** Update NewsletterPuff tracking ([#2647](https://github.com/newsuk/times-components/issues/2647)) ([9affb6d](https://github.com/newsuk/times-components/commit/9affb6de3460c9e653dd50bfc0e79caa948d49d2))
+
+
+
+
+
 ## [2.14.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.14.0...@times-components/provider-queries@2.14.1) (2020-07-01)
 
 

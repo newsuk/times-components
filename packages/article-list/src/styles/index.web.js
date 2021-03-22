@@ -6,13 +6,6 @@ const { colours, fontFactory, spacing } = styleguide();
 
 const styles = StyleSheet.create({
   ...sharedStyles,
-  adContainer: {
-    borderBottomWidth: 1,
-    borderColor: colours.functional.keyline,
-    borderTopWidth: 1,
-    paddingVertical: spacing(2),
-    top: 1
-  },
   listContentErrorContainer: {
     flex: 1,
     margin: spacing(3)

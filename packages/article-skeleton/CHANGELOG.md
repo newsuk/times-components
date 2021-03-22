@@ -3,6 +3,215 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.40.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.40.1...@times-components/article-skeleton@1.40.2) (2021-03-19)
+
+
+### Bug Fixes
+
+* **TNLT-000:** minor ad native styles tweaks ([#2667](https://github.com/newsuk/times-components/issues/2667)) ([7b5094f](https://github.com/newsuk/times-components/commit/7b5094fc651599b3a9357b98cbc41eb327eafe9f))
+
+
+
+
+
+## [1.40.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.40.0...@times-components/article-skeleton@1.40.1) (2021-03-19)
+
+
+### Bug Fixes
+
+* **TNLT-6962:** Add set heights to ads times components ([#2666](https://github.com/newsuk/times-components/issues/2666)) ([575d987](https://github.com/newsuk/times-components/commit/575d9870952801640aff136ac30dd8b5ee2fec58))
+
+
+
+
+
+# [1.40.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.39.4...@times-components/article-skeleton@1.40.0) (2021-03-15)
+
+
+### Features
+
+* **TNLT-6841:** insert newsletter in article pages ([#2665](https://github.com/newsuk/times-components/issues/2665)) ([8da7394](https://github.com/newsuk/times-components/commit/8da7394097da5bced5169200416e531e7c8a36cb))
+
+
+
+
+
+## [1.39.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.39.3...@times-components/article-skeleton@1.39.4) (2021-03-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.39.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.39.2...@times-components/article-skeleton@1.39.3) (2021-01-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.39.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.39.1...@times-components/article-skeleton@1.39.2) (2021-01-14)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.39.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.39.0...@times-components/article-skeleton@1.39.1) (2020-12-22)
+
+
+### Bug Fixes
+
+* **SCB-667:**  add native ads for unsubscribed users after 2nd para ([#2660](https://github.com/newsuk/times-components/issues/2660)) ([f617b81](https://github.com/newsuk/times-components/commit/f617b81270b6fd4bbc5bed26c2c772413977b802))
+
+
+
+
+
+# [1.39.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.38.3...@times-components/article-skeleton@1.39.0) (2020-12-10)
+
+
+### Features
+
+* **SCB-525:** implement native ad slots replacing nativo on article pages ([#2658](https://github.com/newsuk/times-components/issues/2658)) ([f3f78e5](https://github.com/newsuk/times-components/commit/f3f78e5fe4f98a48b08254c9accd2b37f6154230))
+
+
+
+
+
+## [1.38.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.38.2...@times-components/article-skeleton@1.38.3) (2020-11-25)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.38.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.38.1...@times-components/article-skeleton@1.38.2) (2020-11-24)
+
+
+### Bug Fixes
+
+* **TNLT-000:** remove native ad placement ([#2656](https://github.com/newsuk/times-components/issues/2656)) ([5c2aced](https://github.com/newsuk/times-components/commit/5c2acedb1babe55698c1bf1178935f9c0e87b47d))
+
+
+
+
+
+## [1.38.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.38.0...@times-components/article-skeleton@1.38.1) (2020-11-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.38.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.37.3...@times-components/article-skeleton@1.38.0) (2020-11-16)
+
+
+### Features
+
+* **TNLT-4872:** Update newsletter puff tracking ([#2654](https://github.com/newsuk/times-components/issues/2654)) ([8643b9f](https://github.com/newsuk/times-components/commit/8643b9feecef503420f3bc5072f989f97aca670a))
+
+
+
+
+
+## [1.37.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.37.2...@times-components/article-skeleton@1.37.3) (2020-11-13)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.37.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.37.1...@times-components/article-skeleton@1.37.2) (2020-11-12)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.37.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.37.0...@times-components/article-skeleton@1.37.1) (2020-11-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.37.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.36.0...@times-components/article-skeleton@1.37.0) (2020-11-02)
+
+
+### Features
+
+* **scb-525:** implement native ad slots replacing nativo on article pages ([#2650](https://github.com/newsuk/times-components/issues/2650)) ([c468d11](https://github.com/newsuk/times-components/commit/c468d11aff6701407673894762242f665d65c896))
+
+
+
+
+
+# [1.36.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.35.0...@times-components/article-skeleton@1.36.0) (2020-10-27)
+
+
+### Features
+
+* **scb-525:** implement native ad slots replacing nativo on article pages ([#2648](https://github.com/newsuk/times-components/issues/2648)) ([c06d0ef](https://github.com/newsuk/times-components/commit/c06d0efe24b87577da211692041e638add30410d))
+
+
+
+
+
+# [1.35.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.34.8...@times-components/article-skeleton@1.35.0) (2020-10-07)
+
+
+### Features
+
+* **TNLT-5506:** Change confirmation copy in newsletter puff ([#2649](https://github.com/newsuk/times-components/issues/2649)) ([10a82f9](https://github.com/newsuk/times-components/commit/10a82f9c737daa5ab718f11b3b1a9b1d39804499))
+
+
+
+
+
+## [1.34.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.34.7...@times-components/article-skeleton@1.34.8) (2020-09-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.34.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.34.6...@times-components/article-skeleton@1.34.7) (2020-09-22)
+
+
+### Bug Fixes
+
+* **TNLT-4872:** Update NewsletterPuff tracking ([#2647](https://github.com/newsuk/times-components/issues/2647)) ([9affb6d](https://github.com/newsuk/times-components/commit/9affb6de3460c9e653dd50bfc0e79caa948d49d2))
+
+
+
+
+
+## [1.34.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.34.5...@times-components/article-skeleton@1.34.6) (2020-09-02)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.34.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.34.4...@times-components/article-skeleton@1.34.5) (2020-07-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.34.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.34.3...@times-components/article-skeleton@1.34.4) (2020-07-01)
 
 **Note:** Version bump only for package @times-components/article-skeleton

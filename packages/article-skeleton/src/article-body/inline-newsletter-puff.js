@@ -17,10 +17,11 @@ import {
   InpSignupHeadline,
   InpSignupLabel,
   InpSubscribedContainer,
-  InpSubscribedCopy,
   InpSubscribedHeadline
 } from "../styles/inline-newsletter-puff";
-import NewsletterPuffButton from "./newsletter-puff-button";
+import NewsletterPuffButton, {
+  PreviewNewsletterPuffButton
+} from "./newsletter-puff-button";
 import NewsletterPuffLink from "./newsletter-puff-link";
 
 function onManagePreferencesPress() {
@@ -36,6 +37,21 @@ function onManagePreferencesPress() {
       .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
   }
 }
+export const PreviewNewsletterPuff = ({ copy, headline, imageUri, label }) => (
+  <InpContainer>
+    <InpImageContainer>
+      <Image aspectRatio={1.42} uri={imageUri} />
+    </InpImageContainer>
+    <InpSignupContainer>
+      <InpSignupLabel>{label}</InpSignupLabel>
+      <InpSignupHeadline>{headline}</InpSignupHeadline>
+      <InpCopy>{copy}</InpCopy>
+      <InpSignupCTAContainer>
+        <PreviewNewsletterPuffButton />
+      </InpSignupCTAContainer>
+    </InpSignupContainer>
+  </InpContainer>
+);
 
 const InlineNewsletterPuff = ({
   analyticsStream,
@@ -81,14 +97,12 @@ const InlineNewsletterPuff = ({
                 {justSubscribed ? (
                   <InpSubscribedContainer>
                     <InpSubscribedHeadline>
-                      You’ve successfully signed up
+                      {`You’ve successfully signed up to ${newsletter.title}`}
                     </InpSubscribedHeadline>
-                    <InpSubscribedCopy>
-                      Congratulations you can now enjoy daily updates from Red
-                      Box.
-                    </InpSubscribedCopy>
                     <InpPreferencesContainer>
                       <NewsletterPuffLink
+                        enforceTracking
+                        newsletterPuffName={newsletter.title}
                         analyticsStream={analyticsStream}
                         onPress={() => onManagePreferencesPress()}
                       />
@@ -101,6 +115,8 @@ const InlineNewsletterPuff = ({
                     <InpCopy>{copy}</InpCopy>
                     <InpSignupCTAContainer>
                       <NewsletterPuffButton
+                        enforceTracking
+                        newsletterPuffName={newsletter.title}
                         analyticsStream={analyticsStream}
                         updatingSubscription={updatingSubscription}
                         onPress={() => {
@@ -122,6 +138,13 @@ const InlineNewsletterPuff = ({
 };
 
 export default InlineNewsletterPuff;
+
+PreviewNewsletterPuff.propTypes = {
+  copy: PropTypes.string.isRequired,
+  headline: PropTypes.string.isRequired,
+  imageUri: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired
+};
 
 InlineNewsletterPuff.propTypes = {
   analyticsStream: PropTypes.func.isRequired,

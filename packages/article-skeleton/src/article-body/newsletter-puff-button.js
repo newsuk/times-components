@@ -8,6 +8,15 @@ import {
 } from "@times-components/tracking";
 import { buttonStyles, textStyle } from "../styles/inline-newsletter-puff";
 
+export const PreviewNewsletterPuffButton = () => (
+  <Button
+    title="Sign up now"
+    style={buttonStyles}
+    underlayColor="transparent"
+    textStyle={textStyle}
+  />
+);
+
 const NewsletterPuffButton = ({ updatingSubscription, onPress }) => (
   <Button
     title={updatingSubscription ? "Saving…" : "Sign up now"}
@@ -22,18 +31,30 @@ NewsletterPuffButton.propTypes = {
   onPress: PropTypes.func.isRequired,
   updatingSubscription: PropTypes.bool.isRequired
 };
+
 export default withTrackingContext(
   withTrackEvents(NewsletterPuffButton, {
     analyticsEvents: [
       {
         actionName: "onPress",
         eventName: "onPress",
-        getAttrs: ({ updatingSubscription }) => ({
-          updatingSubscription
-        }),
-        trackingName: "widget : puff : sign up to newsletter"
+        trackingName: "NewsletterPuffButton",
+        getAttrs: ({ newsletterPuffName }) => ({
+          article_parent_name: `${newsletterPuffName}`,
+          event_navigation_name: "widget : puff : sign up now",
+          event_navigation_browsing_method: "click"
+        })
       }
     ]
   }),
-  { trackingObjectName: "NewsletterPuffButton" }
+  {
+    getAttrs: ({ newsletterPuffName }) => ({
+      event_navigation_action: "navigation",
+      event_navigation_name: "widget : puff : sign up now : displayed",
+      article_parent_name: `${newsletterPuffName}`,
+      event_navigation_browsing_method: "automated"
+    }),
+    trackingName: "NewsletterPuffButton",
+    trackingObjectName: "NewsletterPuffButton"
+  }
 );

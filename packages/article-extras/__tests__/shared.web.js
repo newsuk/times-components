@@ -33,7 +33,7 @@ export default () => {
     {
       name: "renders correctly",
       test: () => {
-        UserState.mockStates = [UserState.fullArticle];
+        UserState.mockStates = [UserState.fullArticle, UserState.loggedIn];
         const testInstance = TestRenderer.create(
           <ArticleExtras
             analyticsStream={() => {}}
@@ -55,6 +55,26 @@ export default () => {
         "no related articles, topics and comments when user not logged in, only sponsored div",
       test: () => {
         UserState.mockStates = [];
+        const testInstance = TestRenderer.create(
+          <ArticleExtras
+            analyticsStream={() => {}}
+            articleId="dummy-article-id"
+            commentsEnabled
+            registerNode={() => {}}
+            relatedArticleSlice={relatedArticleSlice}
+            relatedArticlesVisible
+            spotAccountId="dummy-spot-id"
+            topics={topics}
+          />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "read only comments when the user is a share token reader",
+      test: () => {
+        UserState.mockStates = [UserState.fullArticle, UserState.shared];
         const testInstance = TestRenderer.create(
           <ArticleExtras
             analyticsStream={() => {}}

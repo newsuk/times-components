@@ -16,6 +16,7 @@ exports[`1. group of topics 1`] = `
       Object {
         "marginRight": 10,
         "marginTop": 10,
+        "maxWidth": "80%",
       }
     }
   >
@@ -69,6 +70,7 @@ exports[`2. group of topics at large scale 1`] = `
       Object {
         "marginRight": 10,
         "marginTop": 10,
+        "maxWidth": "80%",
       }
     }
   >
@@ -122,6 +124,7 @@ exports[`3. group of topics at xlarge scale 1`] = `
       Object {
         "marginRight": 10,
         "marginTop": 10,
+        "maxWidth": "80%",
       }
     }
   >
@@ -165,6 +168,7 @@ exports[`4. article topic with style 1`] = `
     Object {
       "marginRight": 10,
       "marginTop": 10,
+      "maxWidth": "80%",
     }
   }
 >
@@ -207,6 +211,7 @@ exports[`5. article topic with no additional style 1`] = `
     Object {
       "marginRight": 10,
       "marginTop": 10,
+      "maxWidth": "80%",
     }
   }
 >
