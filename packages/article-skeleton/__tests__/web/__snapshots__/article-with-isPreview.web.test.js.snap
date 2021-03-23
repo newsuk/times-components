@@ -146,7 +146,9 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
           Some Link
         </Link>
         <span>
-          <p>
+          <p
+            id="last-paragraph"
+          >
             Some content
           </p>
           <div>
@@ -501,7 +503,9 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
           Some Link
         </Link>
         <span>
-          <p>
+          <p
+            id="last-paragraph"
+          >
             Some content
           </p>
           <div>

@@ -198,7 +198,12 @@ const renderers = ({
     );
   },
   paragraph(key, attributes, children) {
-    return <ArticleParagraph key={key}>{children}</ArticleParagraph>;
+    const id = attributes && attributes.id;
+    return (
+      <ArticleParagraph key={key} {...(id ? { id } : {})}>
+        {children}
+      </ArticleParagraph>
+    );
   },
   paywall(key, attributes, children) {
     return (

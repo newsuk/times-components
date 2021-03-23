@@ -75,7 +75,9 @@ export default (
             total: childProps.total
           }
         },
-        component: `${trackingName || componentName}Child`
+        component: childProps.eventNavigationName
+          ? childProps.eventNavigationName
+          : `${trackingName || componentName}Child`
       });
     }
 
