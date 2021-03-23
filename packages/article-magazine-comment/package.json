@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-magazine-comment",
-  "version": "3.25.3",
+  "version": "3.25.4",
   "description": "Magazine Comment Article Template",
   "main": "dist/article-magazine-comment",
   "dev": "src/article-magazine-comment",
@@ -62,12 +62,12 @@
   },
   "dependencies": {
     "@times-components/ad": "2.13.7",
-    "@times-components/article-byline": "3.5.25",
+    "@times-components/article-byline": "3.5.26",
     "@times-components/article-error": "0.2.174",
     "@times-components/article-flag": "2.10.2",
     "@times-components/article-label": "2.7.49",
     "@times-components/article-lead-asset": "1.6.27",
-    "@times-components/article-skeleton": "1.40.3",
+    "@times-components/article-skeleton": "1.40.4",
     "@times-components/caption": "3.0.133",
     "@times-components/context": "1.2.19",
     "@times-components/date-publication": "0.21.51",
