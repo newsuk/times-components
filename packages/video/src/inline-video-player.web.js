@@ -75,14 +75,20 @@ class InlineVideoPlayer extends Component {
     };
 
     this.id = `${props.videoId}-${props.accountId}-${props.id}`;
+    this.videoContainerRef = React.createRef();
+    this.observer = this.createIntersectionObserver();
   }
 
   componentDidMount() {
+    if (this.observer && this.videoContainerRef) {
+      this.observer.observe(this.videoContainerRef.current);
+    } else {
+      this.loadBrightcoveSDKIfRequired();
+    }
+
     if (InlineVideoPlayer.scriptLoadError) {
       this.handleError(InlineVideoPlayer.scriptLoadError);
     }
-
-    this.loadBrightcoveSDKIfRequired();
 
     InlineVideoPlayer.activePlayers.push(this);
 
@@ -99,6 +105,10 @@ class InlineVideoPlayer extends Component {
       this.player.dispose();
       this.player = null;
     }
+
+    if (this.observer) {
+      this.observer.disconnect();
+    }
   }
 
   handleError = () => {
@@ -114,6 +124,16 @@ class InlineVideoPlayer extends Component {
       }
     });
   };
+
+  createIntersectionObserver() {
+    return "IntersectionObserver" in window
+      ? new window.IntersectionObserver(entries => {
+          if (entries[0].isIntersecting) {
+            this.loadBrightcoveSDKIfRequired();
+          }
+        })
+      : null;
+  }
 
   loadBrightcoveSDKIfRequired() {
     if (!InlineVideoPlayer.brightcoveSDKLoadedStarted) {
@@ -139,6 +159,7 @@ class InlineVideoPlayer extends Component {
     const { accountId, playerId } = this.props;
     const s = document.createElement("script");
     s.src = `//players.brightcove.net/${accountId}/${playerId}_default/index.min.js`;
+    s.defer = true;
 
     return s;
   }
@@ -179,6 +200,7 @@ class InlineVideoPlayer extends Component {
       <div
         data-is-360={is360}
         data-testid="video-component"
+        ref={this.videoContainerRef}
         style={{ height, width }}
       >
         <div style={{ height, width, position: "relative" }}>

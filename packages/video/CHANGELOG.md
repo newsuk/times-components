@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.10.21](https://github.com/newsuk/times-components/compare/@times-components/video@4.10.20...@times-components/video@4.10.21) (2021-03-22)
+
+
+### Bug Fixes
+
+* **TNLT-6961:** lazily load brightcove script for videos ([#2669](https://github.com/newsuk/times-components/issues/2669)) ([5ca17c1](https://github.com/newsuk/times-components/commit/5ca17c1ebfc54d9d7b200cd6e5aaf9f2cbb09b86))
+
+
+
+
+
 ## [4.10.20](https://github.com/newsuk/times-components/compare/@times-components/video@4.10.19...@times-components/video@4.10.20) (2021-01-15)
 
 **Note:** Version bump only for package @times-components/video
