@@ -8,6 +8,7 @@ export const getHeaderAdStyles = template => {
 
   return styled(View)`
     box-sizing: content-box;
+    justif-content: center;
     min-height: 50px;
     display: flex;
     border-top-color: ${colours.functional.keyline};
