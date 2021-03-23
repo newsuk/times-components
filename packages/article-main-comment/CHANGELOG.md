@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.25.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.25.4...@times-components/article-main-comment@2.25.5) (2021-03-23)
+
+
+### Bug Fixes
+
+* **tnlt-000:** slight tweaks to ad styles ([#2670](https://github.com/newsuk/times-components/issues/2670)) ([53bfe4a](https://github.com/newsuk/times-components/commit/53bfe4acc3f7176245b933db4ecde9957a96ac98))
+
+
+
+
+
 ## [2.25.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.25.3...@times-components/article-main-comment@2.25.4) (2021-03-23)
 
 **Note:** Version bump only for package @times-components/article-main-comment
