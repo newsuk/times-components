@@ -258,6 +258,10 @@ exports[`full article with style 1`] = `
 
 .c1 {
   box-sizing: content-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-height: 50px;
   display: -webkit-box;
   display: -webkit-flex;

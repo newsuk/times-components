@@ -108,6 +108,10 @@ exports[`1. a primary image 1`] = `
 
 .c0 {
   box-sizing: content-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-height: 50px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -382,6 +386,10 @@ exports[`2. a fullwidth image 1`] = `
 
 .c0 {
   box-sizing: content-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-height: 50px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -652,6 +660,10 @@ exports[`3. a secondary image 1`] = `
 
 .c0 {
   box-sizing: content-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-height: 50px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -938,6 +950,10 @@ exports[`4. an inline image 1`] = `
 
 .c0 {
   box-sizing: content-box;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   min-height: 50px;
   display: -webkit-box;
   display: -webkit-flex;
