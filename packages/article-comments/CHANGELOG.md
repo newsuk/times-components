@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.11.4...@times-components/article-comments@0.11.5) (2021-03-26)
+
+
+### Bug Fixes
+
+* **TNLT-000:** restore web comments Storybook ([#2640](https://github.com/newsuk/times-components/issues/2640)) ([3463b0e](https://github.com/newsuk/times-components/commit/3463b0ecb49f38f73d0380daef51189c3c629792))
+
+
+
+
+
 ## [0.11.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.11.3...@times-components/article-comments@0.11.4) (2021-03-24)
 
 **Note:** Version bump only for package @times-components/article-comments
