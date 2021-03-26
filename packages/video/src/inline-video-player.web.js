@@ -76,10 +76,11 @@ class InlineVideoPlayer extends Component {
 
     this.id = `${props.videoId}-${props.accountId}-${props.id}`;
     this.videoContainerRef = React.createRef();
-    this.observer = this.createIntersectionObserver();
+    this.observer = null;
   }
 
   componentDidMount() {
+    this.observer = this.createIntersectionObserver();
     if (this.observer && this.videoContainerRef) {
       this.observer.observe(this.videoContainerRef.current);
     } else {
