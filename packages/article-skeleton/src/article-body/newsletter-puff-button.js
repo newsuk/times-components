@@ -8,6 +8,15 @@ import {
 } from "@times-components/tracking";
 import { buttonStyles, textStyle } from "../styles/inline-newsletter-puff";
 
+export const PreviewNewsletterPuffButton = () => (
+  <Button
+    title="Sign up now"
+    style={buttonStyles}
+    underlayColor="transparent"
+    textStyle={textStyle}
+  />
+);
+
 const NewsletterPuffButton = ({ updatingSubscription, onPress }) => (
   <Button
     title={updatingSubscription ? "Saving…" : "Sign up now"}
@@ -29,6 +38,7 @@ export default withTrackingContext(
       {
         actionName: "onPress",
         eventName: "onPress",
+        trackingName: "NewsletterPuffButton",
         getAttrs: ({ newsletterPuffName }) => ({
           article_parent_name: `${newsletterPuffName}`,
           event_navigation_name: "widget : puff : sign up now",
@@ -44,6 +54,7 @@ export default withTrackingContext(
       article_parent_name: `${newsletterPuffName}`,
       event_navigation_browsing_method: "automated"
     }),
+    trackingName: "NewsletterPuffButton",
     trackingObjectName: "NewsletterPuffButton"
   }
 );

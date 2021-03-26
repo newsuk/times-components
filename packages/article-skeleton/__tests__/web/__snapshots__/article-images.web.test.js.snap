@@ -71,6 +71,19 @@ exports[`1. a primary image 1`] = `
             />
           </div>
         </div>
+        <div>
+          <h2>
+            Sponsored
+          </h2>
+          <div
+            data-parent="group-3"
+            id="advert-inarticle-native-1"
+          />
+          <div
+            data-parent="group-3"
+            id="advert-inarticle-native-2"
+          />
+        </div>
         <div
           id="paywall-portal-article-footer"
         />
@@ -169,6 +182,19 @@ exports[`2. a fullwidth image 1`] = `
               }
             />
           </div>
+        </div>
+        <div>
+          <h2>
+            Sponsored
+          </h2>
+          <div
+            data-parent="group-3"
+            id="advert-inarticle-native-1"
+          />
+          <div
+            data-parent="group-3"
+            id="advert-inarticle-native-2"
+          />
         </div>
         <div
           id="paywall-portal-article-footer"
@@ -269,6 +295,19 @@ exports[`3. a secondary image 1`] = `
             />
           </div>
         </div>
+        <div>
+          <h2>
+            Sponsored
+          </h2>
+          <div
+            data-parent="group-3"
+            id="advert-inarticle-native-1"
+          />
+          <div
+            data-parent="group-3"
+            id="advert-inarticle-native-2"
+          />
+        </div>
         <div
           id="paywall-portal-article-footer"
         />
@@ -367,6 +406,19 @@ exports[`4. an inline image 1`] = `
               }
             />
           </div>
+        </div>
+        <div>
+          <h2>
+            Sponsored
+          </h2>
+          <div
+            data-parent="group-3"
+            id="advert-inarticle-native-1"
+          />
+          <div
+            data-parent="group-3"
+            id="advert-inarticle-native-2"
+          />
         </div>
         <div
           id="paywall-portal-article-footer"

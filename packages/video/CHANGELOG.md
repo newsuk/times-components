@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.11.0](https://github.com/newsuk/times-components/compare/@times-components/video@4.10.22...@times-components/video@4.11.0) (2021-03-26)
+
+
+### Features
+
+* **tnlt-000:** set intersectional observer in componentDidMount ([#2672](https://github.com/newsuk/times-components/issues/2672)) ([b87e063](https://github.com/newsuk/times-components/commit/b87e06321f4414ad680aafca0df376bc2393d8ef))
+
+
+
+
+
+## [4.10.22](https://github.com/newsuk/times-components/compare/@times-components/video@4.10.21...@times-components/video@4.10.22) (2021-03-24)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.10.21](https://github.com/newsuk/times-components/compare/@times-components/video@4.10.20...@times-components/video@4.10.21) (2021-03-22)
+
+
+### Bug Fixes
+
+* **TNLT-6961:** lazily load brightcove script for videos ([#2669](https://github.com/newsuk/times-components/issues/2669)) ([5ca17c1](https://github.com/newsuk/times-components/commit/5ca17c1ebfc54d9d7b200cd6e5aaf9f2cbb09b86))
+
+
+
+
+
+## [4.10.20](https://github.com/newsuk/times-components/compare/@times-components/video@4.10.19...@times-components/video@4.10.20) (2021-01-15)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.10.19](https://github.com/newsuk/times-components/compare/@times-components/video@4.10.18...@times-components/video@4.10.19) (2021-01-14)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
 ## [4.10.18](https://github.com/newsuk/times-components/compare/@times-components/video@4.10.17...@times-components/video@4.10.18) (2020-06-22)
 
 **Note:** Version bump only for package @times-components/video

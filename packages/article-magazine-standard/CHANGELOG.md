@@ -3,6 +3,205 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.25.8](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.25.7...@times-components/article-magazine-standard@3.25.8) (2021-03-26)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.25.7](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.25.6...@times-components/article-magazine-standard@3.25.7) (2021-03-24)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.25.6](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.25.5...@times-components/article-magazine-standard@3.25.6) (2021-03-24)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.25.5](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.25.4...@times-components/article-magazine-standard@3.25.5) (2021-03-23)
+
+
+### Bug Fixes
+
+* **tnlt-000:** slight tweaks to ad styles ([#2670](https://github.com/newsuk/times-components/issues/2670)) ([53bfe4a](https://github.com/newsuk/times-components/commit/53bfe4acc3f7176245b933db4ecde9957a96ac98))
+
+
+
+
+
+## [3.25.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.25.3...@times-components/article-magazine-standard@3.25.4) (2021-03-23)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.25.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.25.2...@times-components/article-magazine-standard@3.25.3) (2021-03-22)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.25.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.25.1...@times-components/article-magazine-standard@3.25.2) (2021-03-19)
+
+
+### Bug Fixes
+
+* **TNLT-000:** minor ad native styles tweaks ([#2667](https://github.com/newsuk/times-components/issues/2667)) ([7b5094f](https://github.com/newsuk/times-components/commit/7b5094fc651599b3a9357b98cbc41eb327eafe9f))
+
+
+
+
+
+## [3.25.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.25.0...@times-components/article-magazine-standard@3.25.1) (2021-03-19)
+
+
+### Bug Fixes
+
+* **TNLT-6962:** Add set heights to ads times components ([#2666](https://github.com/newsuk/times-components/issues/2666)) ([575d987](https://github.com/newsuk/times-components/commit/575d9870952801640aff136ac30dd8b5ee2fec58))
+
+
+
+
+
+# [3.25.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.21...@times-components/article-magazine-standard@3.25.0) (2021-03-15)
+
+
+### Features
+
+* **TNLT-6841:** insert newsletter in article pages ([#2665](https://github.com/newsuk/times-components/issues/2665)) ([8da7394](https://github.com/newsuk/times-components/commit/8da7394097da5bced5169200416e531e7c8a36cb))
+
+
+
+
+
+## [3.24.21](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.20...@times-components/article-magazine-standard@3.24.21) (2021-03-10)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.24.20](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.19...@times-components/article-magazine-standard@3.24.20) (2021-01-15)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.24.19](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.18...@times-components/article-magazine-standard@3.24.19) (2021-01-14)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.24.18](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.17...@times-components/article-magazine-standard@3.24.18) (2020-12-22)
+
+
+### Bug Fixes
+
+* **SCB-667:**  add native ads for unsubscribed users after 2nd para ([#2660](https://github.com/newsuk/times-components/issues/2660)) ([f617b81](https://github.com/newsuk/times-components/commit/f617b81270b6fd4bbc5bed26c2c772413977b802))
+
+
+
+
+
+## [3.24.17](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.16...@times-components/article-magazine-standard@3.24.17) (2020-12-10)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.24.16](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.15...@times-components/article-magazine-standard@3.24.16) (2020-11-25)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.24.15](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.14...@times-components/article-magazine-standard@3.24.15) (2020-11-24)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.24.14](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.13...@times-components/article-magazine-standard@3.24.14) (2020-11-20)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.24.13](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.12...@times-components/article-magazine-standard@3.24.13) (2020-11-16)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.24.12](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.11...@times-components/article-magazine-standard@3.24.12) (2020-11-13)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.24.11](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.10...@times-components/article-magazine-standard@3.24.11) (2020-11-12)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.24.10](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.9...@times-components/article-magazine-standard@3.24.10) (2020-11-10)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.24.9](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.8...@times-components/article-magazine-standard@3.24.9) (2020-11-02)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.24.8](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.7...@times-components/article-magazine-standard@3.24.8) (2020-10-27)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
 ## [3.24.7](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.24.6...@times-components/article-magazine-standard@3.24.7) (2020-10-07)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard

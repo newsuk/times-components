@@ -15,6 +15,10 @@ import {
 } from "./article-skeleton-prop-types";
 import articleTrackingContext from "./tracking/article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
+import insertNativeAd from "./native-ad.web";
+import insertNewsletterPuff from "./newsletter-puff.web";
+import tagLastParagraph from "./tracking/article-tracking-last-paragraph";
+
 import {
   BodyContainer,
   getHeaderAdStyles,
@@ -26,6 +30,11 @@ import Head from "./head";
 import PaywallPortal from "./paywall-portal";
 import StickySaveAndShareBar from "./sticky-save-and-share-bar";
 
+const reduceContent = (content, reducers) =>
+  content &&
+  content.length > 0 &&
+  reducers.reduce((result, next) => next(result), content);
+
 const ArticleSkeleton = ({
   analyticsStream,
   data: article,
@@ -34,7 +43,8 @@ const ArticleSkeleton = ({
   receiveChildList,
   spotAccountId,
   paidContentClassName,
-  isPreview
+  isPreview,
+  newsletterPuffFlag
 }) => {
   const {
     commentsEnabled,
@@ -51,14 +61,29 @@ const ArticleSkeleton = ({
     sharingEnabled
   } = article;
 
-  const newContent =
-    content &&
-    content.length > 0 &&
-    insertDropcapIntoAST(content, template, dropcapsDisabled);
+  const insertNewsletterPuffCurry = newContent =>
+    insertNewsletterPuff(section, newContent, newsletterPuffFlag);
+
+  const insertDropcapIntoASTCurry = newContent =>
+    insertDropcapIntoAST(newContent, template, dropcapsDisabled);
+
+  const contentReducers = [
+    insertDropcapIntoASTCurry,
+    insertNewsletterPuffCurry,
+    insertNativeAd,
+    tagLastParagraph
+  ];
+
+  const newContent = reduceContent(content, contentReducers);
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
   receiveChildList([
+    {
+      elementId: "last-paragraph",
+      name: "end of article",
+      eventNavigationName: "Article : View End"
+    },
     {
       elementId: "related-articles",
       name: "related articles"
@@ -140,6 +165,7 @@ const ArticleSkeleton = ({
                     section={section}
                     paidContentClassName={paidContentClassName}
                     template={template}
+                    isPreview={isPreview}
                   />
                 )}
                 <PaywallPortal
