@@ -75,7 +75,6 @@ const AutoNewsletterPuff = ({
                         enforceTracking
                         newsletterPuffName={newsletter.title}
                         analyticsStream={analyticsStream}
-                        onPress={() => onManagePreferencesPress()}
                       />
                     </InpPreferencesContainer>
                   </InpSubscribedContainer>
@@ -109,13 +108,6 @@ const AutoNewsletterPuff = ({
 };
 
 export default AutoNewsletterPuff;
-
-PreviewNewsletterPuff.propTypes = {
-  copy: PropTypes.string.isRequired,
-  headline: PropTypes.string.isRequired,
-  imageUri: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired
-};
 
 AutoNewsletterPuff.propTypes = {
   analyticsStream: PropTypes.func.isRequired,
