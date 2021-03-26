@@ -44,7 +44,7 @@ const ArticleSkeleton = ({
   spotAccountId,
   paidContentClassName,
   isPreview,
-  newsletterPuffFlag
+  newsletterPuffFlag = true
 }) => {
   const {
     commentsEnabled,
@@ -75,6 +75,8 @@ const ArticleSkeleton = ({
   ];
 
   const newContent = reduceContent(content, contentReducers);
+
+  console.log(newContent);
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
@@ -165,7 +167,7 @@ const ArticleSkeleton = ({
                     section={section}
                     paidContentClassName={paidContentClassName}
                     template={template}
-                    isPreview={isPreview}
+                    isPreview={true}
                   />
                 )}
                 <PaywallPortal

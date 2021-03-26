@@ -20,6 +20,7 @@ import InsetCaption from "./inset-caption";
 import InlineNewsletterPuff, {
   PreviewNewsletterPuff
 } from "./inline-newsletter-puff";
+import AutoNewsletterPuff from "./auto-newsletter-puff";
 import {
   PrimaryImg,
   SecondaryImg,
@@ -169,6 +170,31 @@ const renderers = ({
           </InteractiveContainer>
         );
     }
+  },
+  autoNewsletterPuff(key, { url, element, display }) {
+    const {
+      attributes: { code, copy, headline, imageUri, label },
+      attributes
+    } = element;
+    
+    return isPreview ? (
+      <PreviewNewsletterPuff
+        copy={decodeURIComponent(copy)}
+        headline={decodeURIComponent(headline)}
+        imageUri={decodeURIComponent(imageUri)}
+        label={decodeURIComponent(label)}
+      />
+    ) : (
+      <AutoNewsletterPuff
+        key={key}
+        analyticsStream={analyticsStream}
+        code={code}
+        copy={copy}
+        headline={headline}
+        imageUri={decodeURIComponent(imageUri)}
+        label={label}
+      />
+    );
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {
     return <KeyFacts ast={node} key={key} />;

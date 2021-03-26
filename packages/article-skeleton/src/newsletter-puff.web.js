@@ -1,5 +1,5 @@
 const setNewsletterPayload = attributes => ({
-  name: "interactive",
+  name: "autoNewsletterPuff",
   attributes: {
     element: {
       value: "newsletter-puff",
@@ -100,14 +100,14 @@ const insertNewsletterPuff = (section, children, flag) => {
   if (!newsletterPuff) return children;
 
   const paywall = children.find(item => item.name === "paywall");
-  if (!paywall) return children;
+  //if (!paywall) return children;
 
-  if (
+  /*if (
     newsletterPuffExists(children) ||
     newsletterPuffExists(paywall.children)
   ) {
     return children;
-  }
+  }*/
 
   const insertIndex = 3;
 
