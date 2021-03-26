@@ -9,6 +9,7 @@ export default {
           articleId="dummy-article-id"
           commentCount={123}
           commentsEnabled
+          isEnabled
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           url="dummy-article-url"
@@ -23,6 +24,7 @@ export default {
           articleId="dummy-article-id"
           commentCount={123}
           commentsEnabled={false}
+          isEnabled={false}
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           url="dummy-article-url"
