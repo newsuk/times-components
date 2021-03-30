@@ -10,6 +10,8 @@ import {
 } from "@times-components/jest-serializer";
 import { scales } from "@times-components/styleguide";
 import Context from "@times-components/context";
+import { MockedProvider } from "@times-components/provider-test-tools";
+import { getNewsletter } from "@times-components/provider-queries";
 
 import { UserState } from "../mocks.web";
 
@@ -51,27 +53,48 @@ const article = articleFixture({
   withAds: false,
   content
 });
-
+const mocks = [
+  {
+    request: {
+      query: getNewsletter,
+      variables: {
+        code: "TNL-101"
+      }
+    },
+    result: {
+      data: {
+        newsletter: {
+          id: "a2l6E000000CdHzQAK",
+          isSubscribed: false,
+          title: "RED BOX",
+          __typename: "Newsletter"
+        }
+      }
+    }
+  }
+];
 const renderArticle = (data, flag = false) => (
-  <Context.Provider
-    value={{
-      theme: { scale: scales.medium, sectionColour: "#FF0000" }
-    }}
-  >
-    <ArticleSkeleton
-      {...articleSkeletonProps}
-      analyticsStream={() => {}}
-      data={data}
-      onAuthorPress={() => {}}
-      onLinkPress={() => {}}
-      onRelatedArticlePress={() => {}}
-      onTopicPress={() => {}}
-      onTwitterLinkPress={() => {}}
-      onVideoPress={() => {}}
-      spotAccountId=""
-      newsletterPuffFlag={flag}
-    />
-  </Context.Provider>
+  <MockedProvider mocks={mocks}>
+    <Context.Provider
+      value={{
+        theme: { scale: scales.medium, sectionColour: "#FF0000" }
+      }}
+    >
+      <ArticleSkeleton
+        {...articleSkeletonProps}
+        analyticsStream={() => {}}
+        data={data}
+        onAuthorPress={() => {}}
+        onLinkPress={() => {}}
+        onRelatedArticlePress={() => {}}
+        onTopicPress={() => {}}
+        onTwitterLinkPress={() => {}}
+        onVideoPress={() => {}}
+        spotAccountId=""
+        newsletterPuffFlag={flag}
+      />
+    </Context.Provider>
+  </MockedProvider>
 );
 
 describe("Article with automatically placed NewsletterPuff", () => {

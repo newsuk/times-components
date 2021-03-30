@@ -171,28 +171,20 @@ const renderers = ({
         );
     }
   },
-  autoNewsletterPuff(key, { url, element, display }) {
+  autoNewsletterPuff(key, { element }) {
     const {
-      attributes: { code, copy, headline, imageUri, label },
-      attributes
+      attributes: { code, copy, headline, imageUri, label }
     } = element;
-    
-    return isPreview ? (
-      <PreviewNewsletterPuff
+
+    return (
+      <AutoNewsletterPuff
+        analyticsStream={analyticsStream}
+        key={key}
+        code={code}
         copy={decodeURIComponent(copy)}
         headline={decodeURIComponent(headline)}
         imageUri={decodeURIComponent(imageUri)}
         label={decodeURIComponent(label)}
-      />
-    ) : (
-      <AutoNewsletterPuff
-        key={key}
-        analyticsStream={analyticsStream}
-        code={code}
-        copy={copy}
-        headline={headline}
-        imageUri={decodeURIComponent(imageUri)}
-        label={label}
       />
     );
   },

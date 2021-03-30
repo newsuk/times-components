@@ -32,14 +32,11 @@ let storage = {};
 class MockStorage {
   getItem = key => {
     const value = storage[key] || null;
-    console.log(`getting ${key}: ${value}`);
     return value;
   };
 
   setItem = (key, value) => {
-    console.log(`saving ${key}: ${value}`);
     storage = { ...storage, [key]: value };
-    console.log(storage);
   };
 }
 

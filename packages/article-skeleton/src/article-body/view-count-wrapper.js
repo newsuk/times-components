@@ -64,7 +64,6 @@ const ViewCountWrapper = ({
     [ref]
   );
   const display = displayFunction(viewCount);
-  console.log({ viewCount, display });
   return <div ref={ref}>{display ? children : null}</div>;
 };
 
