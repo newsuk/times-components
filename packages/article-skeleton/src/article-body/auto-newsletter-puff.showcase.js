@@ -1,8 +1,11 @@
 import React from "react";
-import AutoNewsletterPuff from "./auto-newsletter-puff";
-import { text } from "@storybook/addon-knobs";
+import { text, optionsKnob, boolean } from "@storybook/addon-knobs";
 import { MockedProvider } from "@times-components/provider-test-tools";
 import { getNewsletter } from "@times-components/provider-queries";
+
+import AutoNewsletterPuff from "./auto-newsletter-puff";
+import ViewCountWrapper from "./view-count-wrapper";
+
 const mocks = [
   {
     request: {
@@ -23,6 +26,22 @@ const mocks = [
     }
   }
 ];
+
+let storage = {};
+
+class MockStorage {
+  getItem = key => {
+    const value = storage[key] || null;
+    console.log(`getting ${key}: ${value}`);
+    return value;
+  };
+
+  setItem = (key, value) => {
+    console.log(`saving ${key}: ${value}`);
+    storage = { ...storage, [key]: value };
+    console.log(storage);
+  };
+}
 
 export default {
   children: [
@@ -45,68 +64,65 @@ export default {
         </MockedProvider>
       ),
 
-      name: "Default",
+      name: "Auto Newsletter Puff",
+      platform: "web",
+      type: "story"
+    },
+
+    {
+      component: () => {
+        const mockStorage = new MockStorage();
+        const trackingName = "counter";
+        const show = boolean("show", true);
+
+        const height = optionsKnob(
+          "Content above component",
+          {
+            half: "50vh",
+            full: "100vh"
+          },
+          "50vh",
+          { display: "inline-radio" }
+        );
+        const contentStyle = {
+          background: "linear-gradient(#f4f4f4, #f4f4f4 50%, #eee 50%, #eee)",
+          backgroundSize: "100% 20px",
+          border: "30px solid #f4f4f4",
+          height
+        };
+        return (
+          <>
+            Current Count = {mockStorage.getItem("view-count")}
+            <div style={contentStyle} />
+            {show && (
+              <ViewCountWrapper
+                trackingName={trackingName}
+                displayFunction={count => [1, 3, 5, 7, 9].includes(count)}
+                storageProvider={mockStorage}
+              >
+                <div
+                  style={{
+                    background: "#aaa",
+                    width: 200,
+                    height: 200,
+                    border: "solid 5px #555",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"
+                  }}
+                >
+                  The Puff
+                </div>
+              </ViewCountWrapper>
+            )}
+            <div style={contentStyle} />
+          </>
+        );
+      },
+      name: "View Count Wrapper in a scroller",
       platform: "web",
       type: "story"
     }
   ],
-  name: "Primitives/AutoNewsletterPuff"
+  name: "Primitives/Auto Newsletter Puff"
 };
-
-// const newsletterData = [
-//   {
-//     section: "news",
-//     payload: {
-//       code: "TNL-101",
-//       headline: "Best of Times",
-//       copy:
-//         "We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.",
-//       imageUri:
-//         "https%3A%2F%2Fwww.thetimes.co.uk%2Fimageserver%2Fimage%2Fmethode%252Ftimes%252Fprod%252Fweb%252Fbin%252F728c3e68-5311-4533-809a-b313a6503789.jpg%3Fresize%3D800"
-//     }
-//   },
-//   {
-//     section: "comment",
-//     payload: {
-//       code: "TNL-104",
-//       headline: "Comment and Opinion",
-//       copy:
-//         "Wit and wisdom from our award-winning stable of columnists and guest writers, including Caitlin Moran, Matthew Parris, Rod Liddle and Dominic Lawson.",
-//       imageUri:
-//         "https%3A%2F%2Fwww.thetimes.co.uk%2Fimageserver%2Fimage%2Fmethode%252Ftimes%252Fprod%252Fweb%252Fbin%252Fb49851bd-b182-43fc-bd5d-1816bcda19fe.jpg%3Fresize%3D800"
-//     }
-//   },
-//   {
-//     section: "business",
-//     payload: {
-//       code: "TNL-103",
-//       headline: "Business briefing",
-//       copy:
-//         "In-depth analysis and comment on the latest financial and economic news from our award-winning Business teams.",
-//       imageUri:
-//         "https%3A%2F%2Fwww.thetimes.co.uk%2Fimageserver%2Fimage%2Fmethode%252Ftimes%252Fprod%252Fweb%252Fbin%252F306637af-2b6f-48fc-b264-d661b2067818.jpg%3Fresize%3D800"
-//     }
-//   },
-//   {
-//     section: "sport",
-//     payload: {
-//       code: "TNL-112",
-//       headline: "Sport",
-//       copy:
-//         "Every Friday morning, Elgan Alderman takes you through the best of sport from the past week and looks ahead to the weekend, featuring exclusive interviews, agenda-setting comment and razor-sharp analysis.",
-//       imageUri:
-//         "https%3A%2F%2Fwww.thetimes.co.uk%2Fimageserver%2Fimage%2Fmethode%252Ftimes%252Fprod%252Fweb%252Fbin%252F8920eef8-e084-47db-a1bf-00be3d72080e.jpg%3Fresize%3D800"
-//     }
-//   },
-//   {
-//     section: "scotland",
-//     payload: {
-//       code: "TNL-134",
-//       headline: "Editor’s Choice – Scotland",
-//       copy:
-//         "The biggest stories of the week from The Times and The Sunday Times Scotland, delivered directly to you every Saturday morning.",
-//       imageUri:
-//         "https%3A%2F%2Fwww.thetimes.co.uk%2Fimageserver%2Fimage%2Fmethode%252Ftimes%252Fprod%252Fweb%252Fbin%252F5777acf9-363f-4aa3-8176-1ea09cdae7d6.jpg%3Fresize%3D800"
-//     }
-//   }
-// ];
