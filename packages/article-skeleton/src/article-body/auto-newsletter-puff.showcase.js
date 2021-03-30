@@ -1,5 +1,4 @@
 import React from "react";
-import { text, optionsKnob, boolean } from "@storybook/addon-knobs";
 import { MockedProvider } from "@times-components/provider-test-tools";
 import { getNewsletter } from "@times-components/provider-queries";
 
@@ -43,7 +42,8 @@ class MockStorage {
 export default {
   children: [
     {
-      component: () => (
+      // eslint-disable-next-line react/prop-types
+      component: ({ text }) => (
         <MockedProvider mocks={mocks}>
           <AutoNewsletterPuff
             analyticsStream={() => {}}
@@ -67,19 +67,18 @@ export default {
     },
 
     {
-      component: () => {
+      component: ({ boolean, select }) => {
         const mockStorage = new MockStorage();
         const trackingName = "counter";
         const show = boolean("show", true);
 
-        const height = optionsKnob(
-          "Content above component",
+        const height = select(
+          "Content size above component",
           {
-            half: "50vh",
-            full: "100vh"
+            "Half Viewport": "50vh",
+            "Full Viewport": "100vh"
           },
-          "50vh",
-          { display: "inline-radio" }
+          "50vh"
         );
         const contentStyle = {
           background: "linear-gradient(#f4f4f4, #f4f4f4 50%, #eee 50%, #eee)",
