@@ -3,6 +3,15 @@ import PropTypes from "prop-types";
 
 const STORAGE_KEY = "view-count";
 
+const getCookies = () =>
+  window.document.cookie.split(";").reduce((result, el) => {
+    const [key, value] = el.split("=");
+    return { ...result, [key.trim()]: value };
+  }, {});
+
+const hasCookieConsent = () =>
+  getCookies()["nuk-consent-personalisation"] === "1";
+
 const storeCount = (storageProvider, trackingName, value) => {
   const viewCounts = JSON.parse(storageProvider.getItem(STORAGE_KEY));
   const newViewCounts = {
@@ -25,6 +34,7 @@ const incrementViewCount = (storageProvider, trackingName) => {
   const count = getCount(storageProvider, trackingName);
   storeCount(storageProvider, trackingName, count + 1);
 };
+
 const ViewCountWrapper = ({
   displayFunction = () => true,
   trackingName,
@@ -63,7 +73,9 @@ const ViewCountWrapper = ({
     },
     [ref]
   );
-  const display = displayFunction(viewCount);
+
+  const display = hasCookieConsent() && displayFunction(viewCount);
+
   return <div ref={ref}>{display ? children : null}</div>;
 };
 

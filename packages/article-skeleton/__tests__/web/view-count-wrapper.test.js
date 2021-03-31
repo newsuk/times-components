@@ -5,6 +5,13 @@ import { delay } from "@times-components/test-utils";
 import ViewCountWrapper from "../../src/article-body/view-count-wrapper";
 
 describe("<ViewCountWrapper>", () => {
+  beforeEach(() => {
+    window.document.cookie = "nuk-consent-personalisation=1";
+  });
+
+  afterEach(() => {
+    window.document.cookie = "nuk-consent-personalisation=;max-age=0";
+  });
   describe("display function", () => {
     it("always renders", () => {
       const mockStorage = {
@@ -17,6 +24,21 @@ describe("<ViewCountWrapper>", () => {
         </ViewCountWrapper>
       );
       expect(component.root.findAllByType("span").length).toEqual(1);
+      expect(component).toMatchSnapshot();
+    });
+    it("doesnt render without consent", () => {
+      const mockStorage = {
+        getItem: jest.fn(() => null),
+        setItem: jest.fn()
+      };
+      window.document.cookie = "nuk-consent-personalisation=;max-age=0";
+
+      const component = create(
+        <ViewCountWrapper trackingName="hello1" storageProvider={mockStorage}>
+          <span>Hello</span>
+        </ViewCountWrapper>
+      );
+      expect(component.root.findAllByType("span").length).toEqual(0);
       expect(component).toMatchSnapshot();
     });
     it("never renders", () => {

@@ -16,11 +16,11 @@ import fullArticleFixture from "./fixtures/full-article";
 import ArticleSkeleton from "./src/article-skeleton";
 
 const mocks = [
-  {
+  ...["TNL-119", "TNL-101"].map(code => ({
     request: {
       query: getNewsletter,
       variables: {
-        code: "TNL-119"
+        code
       }
     },
     result: {
@@ -28,12 +28,22 @@ const mocks = [
         newsletter: {
           id: "a2l6E000000CdHzQAK",
           isSubscribed: false,
+          title: "Title",
           __typename: "Newsletter"
         }
       }
     },
-    delay: 2000
-  },
+    newData: () => ({
+      data: {
+        newsletter: {
+          id: "a2l6E000000CdHzQAK",
+          isSubscribed: false,
+          title: "Title",
+          __typename: "Newsletter"
+        }
+      }
+    })
+  })),
   {
     request: {
       query: subscribeNewsletter,
@@ -94,11 +104,16 @@ const renderArticleSkeleton = ({
   const topics = boolean("Topics?", true);
   const header = boolean("Header?", false);
 
+  const isPreview = boolean("Preview?", false);
+  const newsletterPuffFlag = boolean("Auto Newsletter Puff?", false);
+
   const config = {
     commentsEnabled: commentsEnabled ? undefined : false,
     relatedArticleSlice: relatedArticleSlice ? undefined : null,
+    newsletterPuffFlag: newsletterPuffFlag ? true : undefined,
     topics: topics ? undefined : []
   };
+
   const data = fullArticleFixture(config);
   const showHeader = header ? () => <TestHeader /> : () => null;
 
@@ -110,6 +125,8 @@ const renderArticleSkeleton = ({
           analyticsStream={storybookReporter}
           data={data}
           Header={showHeader}
+          isPreview={isPreview}
+          newsletterPuffFlag={newsletterPuffFlag}
           onAuthorPress={preventDefaultedAction(decorateAction)(
             "onAuthorPress"
           )}

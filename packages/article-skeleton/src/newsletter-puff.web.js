@@ -93,8 +93,12 @@ const insertPaywall = (paywall, insertBefore, newsletterPuff) => ({
   )
 });
 
-const insertNewsletterPuff = (section, children, flag) => {
-  if (!flag) return children;
+const insertNewsletterPuff = (
+  section,
+  children,
+  { isPreview, newsletterPuffFlag }
+) => {
+  if (!newsletterPuffFlag || isPreview) return children;
 
   const newsletterPuff = getNewsletterPuff(section);
   if (!newsletterPuff) return children;

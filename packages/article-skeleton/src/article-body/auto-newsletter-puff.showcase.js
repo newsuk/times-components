@@ -5,6 +5,12 @@ import { getNewsletter } from "@times-components/provider-queries";
 import AutoNewsletterPuff from "./auto-newsletter-puff";
 import ViewCountWrapper from "./view-count-wrapper";
 
+const setCookieConsent = value => {
+  window.document.cookie = `nuk-consent-personalisation=${
+    value ? 1 : ";max-age=0"
+  }`;
+};
+
 const mocks = [
   {
     request: {
@@ -71,6 +77,9 @@ export default {
         const mockStorage = new MockStorage();
         const trackingName = "counter";
         const show = boolean("show", true);
+        const consent = boolean("Set Constent Cookie", true);
+
+        setCookieConsent(consent);
 
         const height = select(
           "Content size above component",
