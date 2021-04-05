@@ -184,6 +184,7 @@ const renderers = ({
         copy={copy}
         headline={headline}
         imageUri={imageUri}
+        label={label}
       />
     );
   },
