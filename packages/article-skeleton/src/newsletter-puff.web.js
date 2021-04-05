@@ -112,11 +112,7 @@ const consecutiveParagraphs = (children, paywall) => {
   return nonParagraphIndex + paywallNonParagraphIndex >= 5;
 };
 
-const insertNewsletterPuff = (
-  section,
-  children,
-  isPreview
-) => {
+const insertNewsletterPuff = (section, children, isPreview) => {
   if (isPreview) return children;
 
   const newsletterPuff = getNewsletterPuff(section);

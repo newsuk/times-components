@@ -73,10 +73,7 @@ const mocks = [
     }
   }
 ];
-const renderArticle = (
-  data,
-  isPreview = false
-) => (
+const renderArticle = (data, isPreview = false) => (
   <MockedProvider mocks={mocks}>
     <Context.Provider
       value={{

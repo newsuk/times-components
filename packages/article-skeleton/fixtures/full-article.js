@@ -1740,10 +1740,7 @@ const makeDefaultConfig = ({
   url
 });
 
-export default ({
-  withAds = true,
-  ...config
-} = {}) => {
+export default ({ withAds = true, ...config } = {}) => {
   const core = {
     __typename: "Article",
     id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
@@ -1759,10 +1756,8 @@ export default ({
       ({ name }) => name !== "ad"
     );
   }
-  
-  const paywall = filteredContent.content.find(
-    item => item.name === "paywall"
-  );
+
+  const paywall = filteredContent.content.find(item => item.name === "paywall");
   if (paywall) {
     const newPaywall = {
       ...paywall,
@@ -1776,7 +1771,7 @@ export default ({
       child => (child === paywall ? newPaywall : child)
     );
   }
-  
+
   return Object.entries(filteredContent).reduce(
     (articleFixture, [key, value]) => addProp(articleFixture, key, value),
     core
