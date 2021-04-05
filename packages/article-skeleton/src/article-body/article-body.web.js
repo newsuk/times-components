@@ -181,10 +181,9 @@ const renderers = ({
         analyticsStream={analyticsStream}
         key={key}
         code={code}
-        copy={decodeURIComponent(copy)}
-        headline={decodeURIComponent(headline)}
-        imageUri={decodeURIComponent(imageUri)}
-        label={decodeURIComponent(label)}
+        copy={copy}
+        headline={headline}
+        imageUri={imageUri}
       />
     );
   },
