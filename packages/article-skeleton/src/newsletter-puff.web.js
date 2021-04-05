@@ -115,9 +115,9 @@ const consecutiveParagraphs = (children, paywall) => {
 const insertNewsletterPuff = (
   section,
   children,
-  { isPreview, newsletterPuffFlag }
+  isPreview
 ) => {
-  if (!newsletterPuffFlag || isPreview) return children;
+  if (isPreview) return children;
 
   const newsletterPuff = getNewsletterPuff(section);
   if (!newsletterPuff) return children;

@@ -1742,7 +1742,6 @@ const makeDefaultConfig = ({
 
 export default ({
   withAds = true,
-  newsletterPuffFlag = false,
   ...config
 } = {}) => {
   const core = {
@@ -1760,25 +1759,24 @@ export default ({
       ({ name }) => name !== "ad"
     );
   }
-  if (newsletterPuffFlag) {
-    const paywall = filteredContent.content.find(
-      item => item.name === "paywall"
+  
+  const paywall = filteredContent.content.find(
+    item => item.name === "paywall"
+  );
+  if (paywall) {
+    const newPaywall = {
+      ...paywall,
+      children: paywall.children.filter(
+        item =>
+          item.name !== "interactive" ||
+          item.attributes.element.value !== "newsletter-puff"
+      )
+    };
+    filteredContent.content = filteredContent.content.map(
+      child => (child === paywall ? newPaywall : child)
     );
-    if (paywall) {
-      const newPaywall = {
-        ...paywall,
-        children: paywall.children.filter(
-          item =>
-            item.name !== "interactive" ||
-            item.attributes.element.value !== "newsletter-puff"
-        )
-      };
-      filteredContent.content = filteredContent.content.map(
-        child => (child === paywall ? newPaywall : child)
-      );
-    }
   }
-
+  
   return Object.entries(filteredContent).reduce(
     (articleFixture, [key, value]) => addProp(articleFixture, key, value),
     core

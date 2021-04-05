@@ -103,14 +103,11 @@ const renderArticleSkeleton = ({
   const relatedArticleSlice = boolean("Related Articles?", true);
   const topics = boolean("Topics?", true);
   const header = boolean("Header?", false);
-
   const isPreview = boolean("Preview?", false);
-  const newsletterPuffFlag = boolean("Auto Newsletter Puff?", false);
 
   const config = {
     commentsEnabled: commentsEnabled ? undefined : false,
     relatedArticleSlice: relatedArticleSlice ? undefined : null,
-    newsletterPuffFlag: newsletterPuffFlag ? true : undefined,
     topics: topics ? undefined : []
   };
 
@@ -126,7 +123,6 @@ const renderArticleSkeleton = ({
           data={data}
           Header={showHeader}
           isPreview={isPreview}
-          newsletterPuffFlag={newsletterPuffFlag}
           onAuthorPress={preventDefaultedAction(decorateAction)(
             "onAuthorPress"
           )}

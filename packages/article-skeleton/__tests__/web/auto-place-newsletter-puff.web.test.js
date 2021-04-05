@@ -75,7 +75,7 @@ const mocks = [
 ];
 const renderArticle = (
   data,
-  { newsletterPuffFlag = true, isPreview = false } = {}
+  isPreview = false
 ) => (
   <MockedProvider mocks={mocks}>
     <Context.Provider
@@ -94,7 +94,6 @@ const renderArticle = (
         onTwitterLinkPress={() => {}}
         onVideoPress={() => {}}
         spotAccountId=""
-        newsletterPuffFlag={newsletterPuffFlag}
         isPreview={isPreview}
       />
     </Context.Provider>
