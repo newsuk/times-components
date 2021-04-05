@@ -1757,21 +1757,6 @@ export default ({ withAds = true, ...config } = {}) => {
     );
   }
 
-  /*const paywall = filteredContent.content.find(item => item.name === "paywall");
-  if (paywall) {
-    const newPaywall = {
-      ...paywall,
-      children: paywall.children.filter(
-        item =>
-          item.name !== "interactive" ||
-          item.attributes.element.value !== "newsletter-puff"
-      )
-    };
-    filteredContent.content = filteredContent.content.map(
-      child => (child === paywall ? newPaywall : child)
-    );
-  }*/
-
   return Object.entries(filteredContent).reduce(
     (articleFixture, [key, value]) => addProp(articleFixture, key, value),
     core
