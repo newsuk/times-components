@@ -1757,7 +1757,7 @@ export default ({ withAds = true, ...config } = {}) => {
     );
   }
 
-  const paywall = filteredContent.content.find(item => item.name === "paywall");
+  /*const paywall = filteredContent.content.find(item => item.name === "paywall");
   if (paywall) {
     const newPaywall = {
       ...paywall,
@@ -1770,7 +1770,7 @@ export default ({ withAds = true, ...config } = {}) => {
     filteredContent.content = filteredContent.content.map(
       child => (child === paywall ? newPaywall : child)
     );
-  }
+  }*/
 
   return Object.entries(filteredContent).reduce(
     (articleFixture, [key, value]) => addProp(articleFixture, key, value),

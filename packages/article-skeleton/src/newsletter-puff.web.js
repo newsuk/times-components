@@ -93,23 +93,25 @@ const insertPaywall = (paywall, insertBefore, newsletterPuff) => ({
   )
 });
 
-const indexOfNonParagraph = children =>
-  children.findIndex(item => item.name !== "paragraph");
+const consecutiveParagraphs = children => {
+  const index = children.findIndex(item => item.name !== "paragraph");
+  return index === -1 ? children.length : index;
+};
 
-const consecutiveParagraphs = (children, paywall) => {
+const checkParagraphs = (children, paywall) => {
   const paywallIndex = children.findIndex(item => item.name === "paywall");
-  const nonParagraphIndex = indexOfNonParagraph(children);
-  const paywallNonParagraphIndex = indexOfNonParagraph(paywall.children);
+  const paragraphs = consecutiveParagraphs(children);
+  const paywallParagraphs = consecutiveParagraphs(paywall.children);
 
-  if (nonParagraphIndex >= 5) {
+  if (paragraphs >= 5) {
     return true;
   }
 
-  if (paywallIndex !== nonParagraphIndex) {
+  if (paywallIndex !== paragraphs) {
     return false;
   }
 
-  return nonParagraphIndex + paywallNonParagraphIndex >= 5;
+  return paragraphs + paywallParagraphs >= 5;
 };
 
 const insertNewsletterPuff = (section, children, isPreview) => {
@@ -128,7 +130,7 @@ const insertNewsletterPuff = (section, children, isPreview) => {
     return children;
   }
 
-  if (!consecutiveParagraphs(children, paywall)) {
+  if (!checkParagraphs(children, paywall)) {
     return children;
   }
 
