@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ViewCountWrapper> display function always renders 1`] = `
+<div>
+  <span>
+    Hello
+  </span>
+</div>
+`;
+
+exports[`<ViewCountWrapper> display function doesnt render without consent 1`] = `<div />`;
+
+exports[`<ViewCountWrapper> display function never renders 1`] = `<div />`;

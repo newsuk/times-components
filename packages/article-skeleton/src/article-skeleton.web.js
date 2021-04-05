@@ -43,8 +43,7 @@ const ArticleSkeleton = ({
   receiveChildList,
   spotAccountId,
   paidContentClassName,
-  isPreview,
-  newsletterPuffFlag
+  isPreview
 }) => {
   const {
     commentsEnabled,
@@ -62,7 +61,7 @@ const ArticleSkeleton = ({
   } = article;
 
   const insertNewsletterPuffCurry = newContent =>
-    insertNewsletterPuff(section, newContent, newsletterPuffFlag);
+    insertNewsletterPuff(section, newContent, isPreview);
 
   const insertDropcapIntoASTCurry = newContent =>
     insertDropcapIntoAST(newContent, template, dropcapsDisabled);

@@ -168,13 +168,15 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
         <p>
           Some paragraph 3
         </p>
-        <NewsletterPuff
-          code="TNL-101"
-          copy="We’ll send you our top stories, across all sections, straight to your inbox. Simple as that."
-          headline="Best of Times"
-          imageUri="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800"
-          label="In your inbox"
-        />
+        <div>
+          <NewsletterPuff
+            code="TNL-101"
+            copy="We’ll send you our top stories, across all sections, straight to your inbox. Simple as that."
+            headline="Best of Times"
+            imageUri="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800"
+            label="In your inbox"
+          />
+        </div>
         <span>
           <p>
             Some paragraph 4

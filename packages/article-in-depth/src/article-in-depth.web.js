@@ -74,8 +74,7 @@ class ArticlePage extends Component {
       navigationMode,
       receiveChildList,
       spotAccountId,
-      isPreview,
-      newsletterPuffFlag
+      isPreview
     } = this.props;
 
     if (error || isLoading) {
@@ -92,7 +91,6 @@ class ArticlePage extends Component {
         navigationMode={navigationMode}
         spotAccountId={spotAccountId}
         isPreview={isPreview}
-        newsletterPuffFlag={newsletterPuffFlag}
       />
     );
   }

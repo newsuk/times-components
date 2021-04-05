@@ -17,8 +17,7 @@ module.exports = (
     navigationMode,
     spotAccountId,
     paidContentClassName,
-    isPreview,
-    newsletterPuffFlag
+    isPreview
   },
   userState
 ) => {
@@ -63,8 +62,7 @@ module.exports = (
       spotAccountId,
       userState,
       paidContentClassName,
-      isPreview,
-      newsletterPuffFlag
+      isPreview
     },
     name: "article"
   };

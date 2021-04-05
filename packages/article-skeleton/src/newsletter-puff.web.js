@@ -1,5 +1,5 @@
 const setNewsletterPayload = attributes => ({
-  name: "interactive",
+  name: "autoNewsletterPuff",
   attributes: {
     element: {
       value: "newsletter-puff",
@@ -21,7 +21,7 @@ const newslettersBySection = [
       copy:
         "We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.",
       imageUri:
-        "https%3A%2F%2Fwww.thetimes.co.uk%2Fimageserver%2Fimage%2Fmethode%252Ftimes%252Fprod%252Fweb%252Fbin%252F728c3e68-5311-4533-809a-b313a6503789.jpg%3Fresize%3D800"
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800"
     })
   },
   {
@@ -32,7 +32,7 @@ const newslettersBySection = [
       copy:
         "Wit and wisdom from our award-winning stable of columnists and guest writers, including Caitlin Moran, Matthew Parris, Rod Liddle and Dominic Lawson.",
       imageUri:
-        "https%3A%2F%2Fwww.thetimes.co.uk%2Fimageserver%2Fimage%2Fmethode%252Ftimes%252Fprod%252Fweb%252Fbin%252Fb49851bd-b182-43fc-bd5d-1816bcda19fe.jpg%3Fresize%3D800"
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb49851bd-b182-43fc-bd5d-1816bcda19fe.jpg?resize=800"
     })
   },
   {
@@ -43,7 +43,7 @@ const newslettersBySection = [
       copy:
         "In-depth analysis and comment on the latest financial and economic news from our award-winning Business teams.",
       imageUri:
-        "https%3A%2F%2Fwww.thetimes.co.uk%2Fimageserver%2Fimage%2Fmethode%252Ftimes%252Fprod%252Fweb%252Fbin%252F306637af-2b6f-48fc-b264-d661b2067818.jpg%3Fresize%3D800"
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F306637af-2b6f-48fc-b264-d661b2067818.jpg?resize=800"
     })
   },
   {
@@ -54,7 +54,7 @@ const newslettersBySection = [
       copy:
         "Every Friday morning, Elgan Alderman takes you through the best of sport from the past week and looks ahead to the weekend, featuring exclusive interviews, agenda-setting comment and razor-sharp analysis.",
       imageUri:
-        "https%3A%2F%2Fwww.thetimes.co.uk%2Fimageserver%2Fimage%2Fmethode%252Ftimes%252Fprod%252Fweb%252Fbin%252F8920eef8-e084-47db-a1bf-00be3d72080e.jpg%3Fresize%3D800"
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8920eef8-e084-47db-a1bf-00be3d72080e.jpg?resize=800"
     })
   },
   {
@@ -65,7 +65,7 @@ const newslettersBySection = [
       copy:
         "The biggest stories of the week from The Times and The Sunday Times Scotland, delivered directly to you every Saturday morning.",
       imageUri:
-        "https%3A%2F%2Fwww.thetimes.co.uk%2Fimageserver%2Fimage%2Fmethode%252Ftimes%252Fprod%252Fweb%252Fbin%252F5777acf9-363f-4aa3-8176-1ea09cdae7d6.jpg%3Fresize%3D800"
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5777acf9-363f-4aa3-8176-1ea09cdae7d6.jpg?resize=800"
     })
   }
 ];
@@ -93,8 +93,29 @@ const insertPaywall = (paywall, insertBefore, newsletterPuff) => ({
   )
 });
 
-const insertNewsletterPuff = (section, children, flag) => {
-  if (!flag) return children;
+const consecutiveParagraphs = children => {
+  const index = children.findIndex(item => item.name !== "paragraph");
+  return index === -1 ? children.length : index;
+};
+
+const checkParagraphs = (children, paywall) => {
+  const paywallIndex = children.findIndex(item => item.name === "paywall");
+  const paragraphs = consecutiveParagraphs(children);
+  const paywallParagraphs = consecutiveParagraphs(paywall.children);
+
+  if (paragraphs >= 5) {
+    return true;
+  }
+
+  if (paywallIndex !== paragraphs) {
+    return false;
+  }
+
+  return paragraphs + paywallParagraphs >= 5;
+};
+
+const insertNewsletterPuff = (section, children, isPreview) => {
+  if (isPreview) return children;
 
   const newsletterPuff = getNewsletterPuff(section);
   if (!newsletterPuff) return children;
@@ -106,6 +127,10 @@ const insertNewsletterPuff = (section, children, flag) => {
     newsletterPuffExists(children) ||
     newsletterPuffExists(paywall.children)
   ) {
+    return children;
+  }
+
+  if (!checkParagraphs(children, paywall)) {
     return children;
   }
 
