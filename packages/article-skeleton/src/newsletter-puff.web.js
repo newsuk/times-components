@@ -93,6 +93,25 @@ const insertPaywall = (paywall, insertBefore, newsletterPuff) => ({
   )
 });
 
+const indexOfNonParagraph = children =>
+  children.findIndex(item => item.name !== "paragraph");
+
+const consecutiveParagraphs = (children, paywall) => {
+  const paywallIndex = children.findIndex(item => item.name === "paywall");
+  const nonParagraphIndex = indexOfNonParagraph(children);
+  const paywallNonParagraphIndex = indexOfNonParagraph(paywall.children);
+
+  if (nonParagraphIndex >= 5) {
+    return true;
+  }
+
+  if (paywallIndex !== nonParagraphIndex) {
+    return false;
+  }
+
+  return nonParagraphIndex + paywallNonParagraphIndex >= 5;
+};
+
 const insertNewsletterPuff = (
   section,
   children,
@@ -110,6 +129,10 @@ const insertNewsletterPuff = (
     newsletterPuffExists(children) ||
     newsletterPuffExists(paywall.children)
   ) {
+    return children;
+  }
+
+  if (!consecutiveParagraphs(children, paywall)) {
     return children;
   }
 
