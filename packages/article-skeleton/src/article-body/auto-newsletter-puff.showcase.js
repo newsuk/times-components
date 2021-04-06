@@ -61,7 +61,7 @@ export default {
             )}
             imageUri={text(
               "imageUri",
-              "https%3A%2F%2Fwww.thetimes.co.uk%2Fimageserver%2Fimage%2Fmethode%252Ftimes%252Fprod%252Fweb%252Fbin%252F728c3e68-5311-4533-809a-b313a6503789.jpg%3Fresize%3D800"
+              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800"
             )}
           />
         </MockedProvider>
