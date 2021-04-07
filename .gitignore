@@ -22,15 +22,6 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
-# Android/IntelliJ
-#
-build/
-.idea
-.gradle
-local.properties
-*.iml
-*.project
-
 # node.js
 #
 node_modules/
@@ -56,7 +47,6 @@ buck-out/
 */fastlane/Preview.html
 */fastlane/screenshots
 
-storybook-native/story-loader.js
 storybook-static
 coverage
 dist
@@ -64,14 +54,5 @@ packages/*/rnw.js
 
 # developer editor preferences
 .vscode
-
-# Bundles
-ios/Index/
-ios/Pods/
-
-ios/main.jsbundle
-ios/main.jsbundle.meta
-
-
 
 fragment-matcher.js

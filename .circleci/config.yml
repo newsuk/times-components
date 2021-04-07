@@ -88,7 +88,6 @@ jobs:
                   command: |
                       npx lerna run test --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
-
     run_android_tests:
         executor: node
         steps:
@@ -169,45 +168,6 @@ jobs:
                       npx yarn@1.16.0 coverage:publish
                   working_directory: ~/project/
 
-    publish_android:
-        executor: node
-        steps:
-            - checkout
-            - attach_workspace:
-                  at: ./
-            - run:
-                  name: Build and publish android js bundles
-                  command: |
-                      # Install JDK and android SDK   
-                      sudo apt-get update
-                      sudo apt install default-jdk
-                      cd /home
-                      sudo wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
-                      sudo unzip sdk-tools-linux-4333796.zip
-                      sudo rm sdk-tools-linux-4333796.zip
-                      sudo mkdir /home/android-sdk
-                      sudo mv tools /home/android-sdk/tools
-                      export ANDROID_SDK_ROOT=/home/android-sdk
-                      echo $(yes | sudo $ANDROID_SDK_ROOT/tools/bin/sdkmanager --licenses)
-                      sudo chmod ugo+rwx "android-sdk"
-                      cd ~/project/
-                      # TODO: move above lines in a docker image
-                      npx yarn@1.16.0 android:build-lib
-                      npx yarn@1.16.0 android:publish-lib
-                  working_directory: ~/project/
-    publish_ios:
-        executor: node
-        steps:
-            - checkout
-            - attach_workspace:
-                  at: ./
-            - run:
-                  name: Build and publish iOS js bundles
-                  command: |
-                      npx yarn@1.16.0 ios:build-lib
-                      npx yarn@1.16.0 ios:publish-lib
-                  working_directory: ~/project/
-
     publish_npm:
         executor: node
         steps:
@@ -248,13 +208,13 @@ workflows:
             - run_noplatform_tests:
                   requires:
                       - setup
+            - run_web_tests:
+                  requires:
+                      - setup
             - run_android_tests:
                   requires:
                       - setup
             - run_ios_tests:
-                  requires:
-                      - setup
-            - run_web_tests:
                   requires:
                       - setup
             - run_unit_tests:
@@ -268,8 +228,6 @@ workflows:
                       - build_storybook
                       - run_lint
                       - run_noplatform_tests
-                      - run_android_tests
-                      - run_ios_tests
                       - run_web_tests
                       - run_unit_tests
                       - run_cypress_tests
@@ -282,8 +240,6 @@ workflows:
                       - build_storybook
                       - run_lint
                       - run_noplatform_tests
-                      - run_android_tests
-                      - run_ios_tests
                       - run_web_tests
                       - run_unit_tests
                       - run_cypress_tests
@@ -296,22 +252,6 @@ workflows:
                       - build_storybook
                       - run_lint
                       - run_noplatform_tests
-                      - run_android_tests
-                      - run_ios_tests
                       - run_web_tests
                       - run_unit_tests
                       - run_cypress_tests
-            - publish_android:
-                  filters:
-                    branches:
-                        only: 
-                          - master
-                  requires:
-                      - publish_npm
-            - publish_ios:
-                  filters:
-                    branches:
-                        only: 
-                          - master
-                  requires:
-                      - publish_npm

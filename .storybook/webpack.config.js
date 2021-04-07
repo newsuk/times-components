@@ -10,7 +10,7 @@ module.exports = async ({ config }, env, defaultConfig) => {
       "react-native": "react-native-web",
       "@storybook/react-native": "@storybook/react"
     },
-    extensions: [".web.js", ".js", ".ios.js", ".android.js", ".mjs"],
+    extensions: [".web.js", ".js", ".mjs"],
     mainFields: ["devModule", "dev", "module", "main"]
   };
   config.plugins.push(
