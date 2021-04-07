@@ -5,14 +5,14 @@ Following these guidelines helps to get issues organised and PRs merged faster!
 
 ## Core Ideas
 
-* Components should work across all platforms (web, iOS, Android) to the same
+* Components should work across all platforms (web, iOS) to the same
   level of minimum functionality (as determined by UX). This is to ensure that
   master is always in a releasable state and app projects can use our components
   with confidence. To enable this we're using
   [react-native-web](https://github.com/necolas/react-native-web)
 * Components should provide a suite of sensible events for their interactions.
   This will allow metric components to report back for a given context
-* Screenshots are required for visual changes on web, iOS and Android. Pictures
+* Screenshots are required for visual changes on web, iOS. Pictures
   are worth a thousand words
 * Only add components that are wanted. They should form part of a larger feature
   and not be added in isolation because they might be useful in the future

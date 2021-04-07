@@ -4,7 +4,6 @@
 **/rnw.js
 dist
 __snapshots__
-android/*
 ios/*
 CHANGELOG.md
 .*
@@ -22,7 +21,6 @@ storybook-static
 *.sh
 *.log
 packages
-android-app
 ios-app
 coverage
 settings.gradle
