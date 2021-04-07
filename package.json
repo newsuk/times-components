@@ -29,7 +29,6 @@
     "prestorybook:test-build": "yarn storybook:build-vendor",
     "storybook:test-build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",
-    "storybook-native": "react-native start --config ./storybook-native/metro.config.js",
     "prefmt": "prettier --write '**/*.{js,json}'",
     "fmt": "lerna run fmt",
     "npm:publish": "sh ./lib/publish.sh",

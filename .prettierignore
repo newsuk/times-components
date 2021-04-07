@@ -13,7 +13,6 @@ yarn.lock
 *.log
 
 # specific to root
-storybook-native
 storybook-static
 *.yml
 *.html
