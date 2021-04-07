@@ -4,8 +4,6 @@
 **/rnw.js
 dist
 __snapshots__
-android/*
-ios/*
 CHANGELOG.md
 .*
 !*.json
@@ -15,16 +13,12 @@ yarn.lock
 *.log
 
 # specific to root
-storybook-native
 storybook-static
 *.yml
 *.html
 *.sh
 *.log
 packages
-android-app
-ios-app
 coverage
 settings.gradle
 build.gradle
-TimesReactIOS.podspec

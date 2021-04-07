@@ -5,14 +5,14 @@ Following these guidelines helps to get issues organised and PRs merged faster!
 
 ## Core Ideas
 
-* Components should work across all platforms (web, iOS, Android) to the same
+* Components should work across all platforms (web) to the same
   level of minimum functionality (as determined by UX). This is to ensure that
   master is always in a releasable state and app projects can use our components
   with confidence. To enable this we're using
   [react-native-web](https://github.com/necolas/react-native-web)
 * Components should provide a suite of sensible events for their interactions.
   This will allow metric components to report back for a given context
-* Screenshots are required for visual changes on web, iOS and Android. Pictures
+* Screenshots are required for visual changes on web. Pictures
   are worth a thousand words
 * Only add components that are wanted. They should form part of a larger feature
   and not be added in isolation because they might be useful in the future
@@ -138,94 +138,7 @@ with discussions for whatever you are including.
 Every component should have a `XXXX.test.js` file with the component's Jest
 tests split into the relevant platform folder e.g. `android`, `ios`, `web`.
 
-## Local App Deployment
-
-### Android
-
-Follow these steps to deploy storybook native to a real android device.
-
-* Plug the device into the computer
-* Make sure your android device has trusted the connected computer and that `usb
-  debugging / developer mode` has been turned on.
-* For Android <4.2 go to Developer Options => Enable USB Debugging, and for
-  Android >=4.2 go to About Phone/Tablet => Tap Build Number 7 Times =>
-  Developer Options => Enable USB Debugging
-* Install android tooling through `brew cask install android-platform-tools`
-* Optionally start a local instance of
-  [The Times Public Api](https://github.com/newsuk/times-public-api) (dependent
-  on the stories you intend to view)
-* Run `yarn`
-* Run `yarn storybook-native`
-* Run `yarn android:device` (to enable Times API)
-* Open [storybook native](http:localhost:7007) on your computer and load a story
-
-#### Troubleshooting
-
-* If your device is complaining about about `story-loader.js` not existing - run
-  `yarn storybook-native` before `yarn android`. This should generate the
-  missing file.
-* If your device is complaining about being unable to reach `localhost` or `404`
-  use the `adb` commands. Shake the device to bring up the developer menu and
-  reload the app
-* If still struggling; shake the device and `debug js remotely`. Open a console
-  on your computer for more info on the error
-* If you're still struggling verify that you are able to run `yarn storybook`
-  and that it works in web view.
-
-### iOS
-
-#### Building on Xcode 10
-
-We are currently using React Native 0.55.4 which does not fully support Xcode
-10<sup>[1](https://github.com/facebook/react-native/issues/14382#issuecomment-313163119),
-[2](https://github.com/facebook/react-native/issues/19569#issuecomment-399652331)</sup>.
-If you need to build with Xcode 10, you will need to run the below command,
-**only after you have installed dependencies**.
-
-```
-$ yarn ios; pushd node_modules/react-native/third-party/glog-*; ../../scripts/ios-configure-glog.sh; popd; cp ios/build/Build/Products/Debug-iphonesimulator/libfishhook.a node_modules/react-native/Libraries/WebSocket/;
-```
-
-#### Other iOS Build Issues
-
-If when trying to run `yarn ios` you receive a `":CFBundleIdentifier", Does Not
-Exist` error, either on XCode 10 after attempting the above instructions, or on
-a previous version of Xcode, try clearing your React Native cache with
-
-```
-rm -r ~/.rncache
-```
-
-and clearing third party libraries
-
-```
-rm -r node_modules/react-native/third_party
-```
-
-This happens when React Native caches third party tools for previous versions of
-React Native.
-
-If the above does not work, another approach is to change the XCode build
-system. Essentially you delete build artifacts by deleting the contents of your
-`Library/Developer/Xcode/DerivedData` folder.
-
-Then choose the [legacy build system](facebook/react-native#19573). Then clean
-the XCode project (CMD-Shift-K) and build it again. This did result in a new
-directory being created but we have
-[.gitignored it for now](https://github.com/newsuk/times-components/pull/1381)
-(until RN fix their issues with XCode 10).
-
 ### Font Naming Conventions
-
-Android and iOS interpret fonts differently. The style property for `fontFamily`
-on iOS refers to the internal post script name of the font. The style property
-for `fontFamily` on Android refers to the filename of the font. React Native
-Android only supports
-[4 font weights](https://github.com/facebook/react-native/blob/master/ReactAndroid/src/main/java/com/facebook/react/views/text/ReactFontManager.java),
-therefore we have made the following conventions
-
-Also the fonts should have the correct `weight` and `style` meta attributes
-
 ## For all fonts which are; regular, bold, italic, bold and italic variants
 
 ### Filename format (physical file name): `<fontname>_<weight>` eg
@@ -299,7 +212,7 @@ An example component/package looks like this:
   component stories and aliases the native imports to web
 * .storybook.native is home to the generated `story-loader.js` from the
   `prestorybook-native` npm script, and the storybook bootstrapping
-* android, ios, .babelrc, .buckconfig, .gitattributes, .watchmanconfig, app.json
+* .babelrc, .buckconfig, .gitattributes, .watchmanconfig, app.json
   are all from a stock react-native project in order to run the native storybook
 * lerna.json specifies that the packages are independent so different platforms
   can control which versions they consume and allows them to develop organically

@@ -1,6 +1,6 @@
 {
   "lerna": "3.2.1",
-  "packages": ["packages/*", "android-app", "ios-app", "storybook-native"],
+  "packages": ["packages/*"],
   "version": "independent",
   "useWorkspaces": true
 }
