@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.40.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.40.9...@times-components/article-skeleton@1.40.10) (2021-04-07)
+
+
+### Bug Fixes
+
+* **TE-35:** update storybook image ([#2674](https://github.com/newsuk/times-components/issues/2674)) ([ff48e0e](https://github.com/newsuk/times-components/commit/ff48e0ef4854c3ba746e8818d9cf6e6d993a1da9))
+
+
+
+
+
 ## [1.40.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.40.8...@times-components/article-skeleton@1.40.9) (2021-03-26)
 
 **Note:** Version bump only for package @times-components/article-skeleton
