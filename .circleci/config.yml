@@ -211,6 +211,12 @@ workflows:
             - run_web_tests:
                   requires:
                       - setup
+            - run_android_tests:
+                  requires:
+                      - setup
+            - run_ios_tests:
+                  requires:
+                      - setup
             - run_unit_tests:
                   requires:
                       - setup
