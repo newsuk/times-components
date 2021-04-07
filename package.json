@@ -30,12 +30,6 @@
     "storybook:test-build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",
     "storybook-native": "react-native start --config ./storybook-native/metro.config.js",
-    "ios": "react-native run-ios --no-packager",
-    "ios:logs": "yarn ios && react-native log-ios",
-    "ios:app": "react-native start --config ./ios-app/metro.config.js",
-    "ios:publish-lib": "./lib/publish-ios-assets.sh -v",
-    "ios:build-lib": "yarn ios:build-lib:js && cd ios-app && yarn build",
-    "ios:build-lib:js": "mkdir -p ios-app/ios-assets/js && mkdir -p ios-app/ios-assets/res/graphql && cp ./packages/provider-queries/src/*.graphql ./ios-app/ios-assets/res/graphql && react-native ram-bundle --platform ios --dev false --entry-file ios-app/index.ios.js --bundle-output ios-app/ios-assets/js/index.ios.bundle --assets-dest ios-app/ios-assets/res/",
     "prefmt": "prettier --write '**/*.{js,json}'",
     "fmt": "lerna run fmt",
     "npm:publish": "sh ./lib/publish.sh",
@@ -48,7 +42,6 @@
     "packages:publish-dry-run": "yarn packages:publish --no-git-tag-version --no-push",
     "commit": "git-cz",
     "prepublishOnly": "lerna run prepublishOnly",
-    "test:ios": "lerna run test:ios --stream",
     "test:web": "lerna run test:web --stream",
     "test:unit": "lerna run test:unit --stream",
     "test:e2e": "yarn bundle && lerna run test:integration --stream",
@@ -74,9 +67,7 @@
     }
   },
   "workspaces": [
-    "packages/*",
-    "ios-app",
-    "storybook-native"
+    "packages/*"
   ],
   "repository": {
     "type": "git",

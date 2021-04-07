@@ -32,31 +32,9 @@ Go to http://components.thetimes.co.uk
 
 3. Components can be seen running in a storybook:
 
-- web storybook
+- storybook
   1. `yarn storybook`
   2. go to http://localhost:9001
-- native storybook
-  1. `cd ios && pod install && cd -`
-  2. `yarn storybook-native` and leave it running
-  3. `yarn ios` to start the iOS app
-  4. go to http://localhost:7007
-
-## Native App Dev Server
-
-In order to run development servers for native applications, start react-native dev
-server via:
-
-`yarn ios:app`
-
-For step by step guide, see the corresponding Readme documentation for [ios](./ios-app/README.md)
-
-### Fonts ⚠️
-
-In order to view the storybook on native, you'll need to fix broken fonts. This
-fix is done automatically when running storybook (both web and native), but
-requires that [fontforge](http://fontforge.github.io/en-US/) is installed,
-otherwise the fix won't be applied and you'll get the classic red error screen
-when trying to use a broken font.
 
 ### Schema
 
@@ -77,19 +55,6 @@ To debug our web Storybook:
    _storybook-preview-iframe_ => _webpack://_ => _._ => _packages_
 
 Any of these source files can be debugged directly.
-
-To debug our native Storybook:
-
-1. `yarn storybook-native` and leave it running
-2. `yarn ios:logs` (this will build storybook app and output logs)
-   2a. Or you could just run `yarn ios` to just build the apps
-3. open the developer menu on your device (Cmd + D on iOS)
-   and tap _Debug JS Remotely_
-4. navigate to http://localhost:8081/debugger-ui if it hasn't opened
-   automatically
-5. open DevTools
-6. click _Sources_
-7. expand _debuggerWorker.js_ => _webpack://_ => _._ => _packages_
 
 ## Link times-components to the Render project
 

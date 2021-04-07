@@ -56,13 +56,4 @@ packages/*/rnw.js
 # developer editor preferences
 .vscode
 
-# Bundles
-ios/Index/
-ios/Pods/
-
-ios/main.jsbundle
-ios/main.jsbundle.meta
-
-
-
 fragment-matcher.js

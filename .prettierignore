@@ -4,7 +4,6 @@
 **/rnw.js
 dist
 __snapshots__
-ios/*
 CHANGELOG.md
 .*
 !*.json
@@ -21,8 +20,6 @@ storybook-static
 *.sh
 *.log
 packages
-ios-app
 coverage
 settings.gradle
 build.gradle
-TimesReactIOS.podspec
