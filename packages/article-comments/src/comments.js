@@ -3,7 +3,6 @@ import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
 import Button from "@times-components/button";
-import { TextLink } from "@times-components/link";
 import styleguide from "@times-components/styleguide";
 import styles from "./styles";
 
@@ -18,13 +17,6 @@ const Comments = ({
     <Text style={styles.headline}>{`${commentCount} ${
       commentCount === 1 ? "comment" : "comments"
     }`}</Text>
-    <Text style={styles.supporting}>
-      Comments are subject to our community guidelines, which can be
-      viewed&nbsp;
-      <TextLink onPress={onCommentGuidelinesPress} style={styles.link}>
-        here
-      </TextLink>
-    </Text>
     <Context.Consumer>
       {({ theme: { scale } }) => {
         const themedStyleguide = styleguide({ scale });

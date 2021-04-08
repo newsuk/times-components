@@ -2,13 +2,8 @@
 
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { TextLink } from "@times-components/link";
-import {
-  CommentContainer,
-  CommentEnabledGuidelines
-} from "./styles/responsive";
+import { CommentContainer } from "./styles/responsive";
 import executeSSOtransaction from "./comment-login";
-import styles from "./styles";
 import withTrackEvents from "./tracking/with-track-events";
 
 class Comments extends Component {
@@ -201,19 +196,6 @@ class Comments extends Component {
         onCommentUsernameClicked={onCommentUsernameClicked}
         onCommentSettingsClicked={onCommentSettingsClicked}
       >
-        {showLabel ? (
-          <CommentEnabledGuidelines>
-            Comments are subject to our community guidelines, which can be
-            viewed{" "}
-            <TextLink
-              style={styles.link}
-              url="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-            >
-              here
-            </TextLink>
-            .
-          </CommentEnabledGuidelines>
-        ) : null}
         <div
           ref={el => {
             this.container = el;
