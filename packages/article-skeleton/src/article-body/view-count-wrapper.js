@@ -5,7 +5,7 @@ const STORAGE_KEY = "view-count";
 
 const hasCookieConsent = () =>
   typeof window !== "undefined" &&
-  window.document.cookie.indexOf("nuk-consent-personalisation=1") > 0;
+  window.document.cookie.indexOf("nuk-consent-personalisation=1") >= 0;
 
 const storeCount = (storageProvider, trackingName, value) => {
   const viewCounts = JSON.parse(storageProvider.getItem(STORAGE_KEY));
