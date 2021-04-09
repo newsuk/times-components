@@ -15,7 +15,6 @@ const ArticleComments = ({
     <Comments
       articleId={articleId}
       commentCount={commentCount}
-      onCommentGuidelinesPress={onCommentGuidelinesPress}
       onCommentsPress={onCommentsPress}
       url={url}
     />
