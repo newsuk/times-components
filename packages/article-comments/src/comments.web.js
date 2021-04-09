@@ -10,9 +10,6 @@ class Comments extends Component {
   constructor() {
     super();
     this.container = null;
-    this.state = {
-      showLabel: false
-    };
   }
 
   componentDidMount() {
@@ -134,18 +131,10 @@ class Comments extends Component {
 
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
-        executeSSOtransaction(() => {
-          this.setState({
-            showLabel: true
-          });
-        });
+        executeSSOtransaction(() => {});
       } else {
         document.addEventListener("spot-im-api-ready", () =>
-          executeSSOtransaction(() => {
-            this.setState({
-              showLabel: true
-            });
-          })
+          executeSSOtransaction(() => {})
         );
       }
     }
@@ -158,7 +147,6 @@ class Comments extends Component {
   }
 
   render() {
-    const { showLabel } = this.state;
     const {
       onCommentStart,
       onCommentPost,
