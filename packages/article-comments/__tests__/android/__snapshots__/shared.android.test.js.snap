@@ -23,14 +23,6 @@ exports[`enabled comments 1`] = `
   <Text>
     123 comments
   </Text>
-  <Text>
-    Comments are subject to our community guidelines, which can be viewed 
-    <Text
-      accessibilityRole="link"
-    >
-      here
-    </Text>
-  </Text>
   <View
     accessibilityLabel="View comments"
     accessibilityRole="button"
@@ -50,14 +42,6 @@ exports[`single comment 1`] = `
   <Text>
     1 comment
   </Text>
-  <Text>
-    Comments are subject to our community guidelines, which can be viewed 
-    <Text
-      accessibilityRole="link"
-    >
-      here
-    </Text>
-  </Text>
   <View
     accessibilityLabel="View comments"
     accessibilityRole="button"
@@ -76,14 +60,6 @@ exports[`zero comments 1`] = `
 <View>
   <Text>
     0 comments
-  </Text>
-  <Text>
-    Comments are subject to our community guidelines, which can be viewed 
-    <Text
-      accessibilityRole="link"
-    >
-      here
-    </Text>
   </Text>
   <View
     accessibilityLabel="Post a comment"
