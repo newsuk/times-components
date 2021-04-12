@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.41.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.40.11...@times-components/article-skeleton@1.41.0) (2021-04-12)
+
+
+### Features
+
+* **TE-35:** add auto newsletter puff - fixed cookie check for ssr ([#2678](https://github.com/newsuk/times-components/issues/2678)) ([5aa8a9b](https://github.com/newsuk/times-components/commit/5aa8a9b928a6e0e293742adece02613df64011ad))
+
+
+
+
+
 ## [1.40.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.40.10...@times-components/article-skeleton@1.40.11) (2021-04-09)
 
 **Note:** Version bump only for package @times-components/article-skeleton
