@@ -3,14 +3,9 @@ import PropTypes from "prop-types";
 
 const STORAGE_KEY = "view-count";
 
-const getCookies = () =>
-  window.document.cookie.split(";").reduce((result, el) => {
-    const [key, value] = el.split("=");
-    return { ...result, [key.trim()]: value };
-  }, {});
-
 const hasCookieConsent = () =>
-  getCookies()["nuk-consent-personalisation"] === "1";
+  typeof window !== "undefined" &&
+  window.document.cookie.indexOf("nuk-consent-personalisation=1") >= 0;
 
 const storeCount = (storageProvider, trackingName, value) => {
   const viewCounts = JSON.parse(storageProvider.getItem(STORAGE_KEY));

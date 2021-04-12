@@ -1449,14 +1449,6 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@bam.tech/react-native-graphql-transformer@0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@bam.tech/react-native-graphql-transformer/-/react-native-graphql-transformer-0.1.5.tgz#b210a61ee15185f261ada8892a70faca198b718d"
-  integrity sha512-B9ENzSO5h4J6J0mbqNBZ77O0WKTFWJYTIQf/wPZJHvtsiYNimeHbt6ICjBhdSDLAUFvrfyJC9FBoPoZbqzdk4Q==
-  dependencies:
-    graphql-tag "^2.6.0"
-    semver "^5.4.1"
-
 "@base2/pretty-print-object@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@base2/pretty-print-object/-/pretty-print-object-1.0.0.tgz#860ce718b0b73f4009e153541faff2cb6b85d047"
@@ -2960,22 +2952,6 @@
     react-color "^2.17.0"
     react-lifecycles-compat "^3.0.4"
     react-select "^3.0.8"
-
-"@storybook/addon-ondevice-knobs@5.3.18":
-  version "5.3.18"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-knobs/-/addon-ondevice-knobs-5.3.18.tgz#96eb489b18646efb6b01ba2b1bbd396b3d4b7316"
-  integrity sha512-NB5+Ou4Aj5XcPY6fqYNJflqI2eXttMlJZXKr3eW27oxAuJYUE7VdubKGDyAvOdmxnkzqApsQcCxw2oVefdeDcw==
-  dependencies:
-    "@emotion/native" "^10.0.14"
-    "@storybook/addons" "5.3.18"
-    "@storybook/core-events" "5.3.18"
-    core-js "^3.0.1"
-    deep-equal "^1.0.1"
-    prop-types "^15.7.2"
-    react-native-color-picker "^0.4.0"
-    react-native-modal-datetime-picker "^7.4.2"
-    react-native-modal-selector "^1.0.2"
-    react-native-switch "^1.5.0"
 
 "@storybook/addon-options@5.3.18":
   version "5.3.18"
@@ -11559,7 +11535,7 @@ graphql-tag@2.10.0:
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.10.0.tgz#87da024be863e357551b2b8700e496ee2d4353ae"
   integrity sha512-9FD6cw976TLLf9WYIUPCaaTpniawIjHWZSwIRZSjrfufJamcXbVVYfN2TWvJYbw0Xf2JjYbl1/f2+wDnBVw3/w==
 
-graphql-tag@2.10.3, graphql-tag@^2.6.0, graphql-tag@^2.9.2:
+graphql-tag@2.10.3, graphql-tag@^2.9.2:
   version "2.10.3"
   resolved "https://registry.yarnpkg.com/graphql-tag/-/graphql-tag-2.10.3.tgz#ea1baba5eb8fc6339e4c4cf049dabe522b0edf03"
   integrity sha512-4FOv3ZKfA4WdOKJeHdz6B3F/vxBLSgmBcGeAFPf4n1F64ltJUvOOerNj0rsJxONQGdhUMynQIvd6LzB+1J5oKA==
@@ -18647,21 +18623,6 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-native-animatable@1.3.3:
-  version "1.3.3"
-  resolved "https://registry.yarnpkg.com/react-native-animatable/-/react-native-animatable-1.3.3.tgz#a13a4af8258e3bb14d0a9d839917e9bb9274ec8a"
-  integrity sha512-2ckIxZQAsvWn25Ho+DK3d1mXIgj7tITkrS4pYDvx96WyOttSvzzFeQnM2od0+FUMzILbdHDsDEqZvnz1DYNQ1w==
-  dependencies:
-    prop-types "^15.7.2"
-
-react-native-color-picker@^0.4.0:
-  version "0.4.6"
-  resolved "https://registry.yarnpkg.com/react-native-color-picker/-/react-native-color-picker-0.4.6.tgz#ae773ada067e80407cdcb931b606f3d6fdaa61f5"
-  integrity sha512-Uya/ZvAkBQoFtQS+sHMxzzRdPTCTkvsGWj+xCeVKARBuqWfvKp8Zfu1JkJ0+BPQ5mvHkWByQuDeAy3VD8BKBsg==
-  dependencies:
-    prop-types "^15.5.10"
-    tinycolor2 "^1.4.1"
-
 react-native-device-info@5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-5.3.1.tgz#d764732c4841b6b6c2f42516e8840075717ea88a"
@@ -18684,44 +18645,10 @@ react-native-image-zoom-viewer@2.2.26:
   dependencies:
     react-native-image-pan-zoom "^2.1.9"
 
-react-native-modal-datetime-picker@^7.4.2:
-  version "7.6.1"
-  resolved "https://registry.yarnpkg.com/react-native-modal-datetime-picker/-/react-native-modal-datetime-picker-7.6.1.tgz#463eaece1af98aa0b2fce00dab6cd203f89b86da"
-  integrity sha512-Ovq0p20Tbw6uWGV0VIDcCQ5qTaHxC9gEcYmB2a4fD1ksCSwCil9RJBEhC7VirvplvAGCKOKs3bblaKFmhiOBkg==
-  dependencies:
-    prop-types "^15.7.2"
-    react-native-modal "^11.0.2"
-
-react-native-modal-selector@^1.0.2:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/react-native-modal-selector/-/react-native-modal-selector-1.1.4.tgz#ea67943b93e85818a30cfe05dcaa61d66b036e27"
-  integrity sha512-FSSC+iqaki5Zi7dkP0t95jYKI/+ciRs1xgTAEubHEj1uycqh9eV6dCjpsJH434zC5g9uRcQKBl+uqw4gZGG7tA==
-  dependencies:
-    prop-types "^15.5.10"
-
-react-native-modal@^11.0.2:
-  version "11.5.6"
-  resolved "https://registry.yarnpkg.com/react-native-modal/-/react-native-modal-11.5.6.tgz#bb25a78c35a5e24f45de060e5f64284397d38a87"
-  integrity sha512-APGNfbvgC4hXbJqcSADu79GLoMKIHUmgR3fDQ7rCGZNBypkStSP8imZ4PKK/OzIZZfjGU9aP49jhMgGbhY9KHA==
-  dependencies:
-    prop-types "^15.6.2"
-    react-native-animatable "1.3.3"
-
 react-native-showcase-loader@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-native-showcase-loader/-/react-native-showcase-loader-1.1.0.tgz#8b9f2293f1e772cc5614c5ad47f4d495e611ffbc"
   integrity sha512-WRdTIMSAbPFH6dDV7FmyTtBVTOiTgR4DWnox1yfyKlAQTT8b3ad31MlBodmW98ntvsp39hDgBDU9pmq18Ur06Q==
-  dependencies:
-    colors "^1.1.2"
-    dot "^1.1.1"
-    findup "^0.1.5"
-    glob "^7.1.1"
-    yargs "^8.0.2"
-
-react-native-storybook-loader@1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/react-native-storybook-loader/-/react-native-storybook-loader-1.8.0.tgz#35056d62f01019af8692d540fd404a855464d4f3"
-  integrity sha512-uBAbL0K7QA6BTbGlPLobLGIcdlkV7+qEDH7FJtCLdJ/hM+2Sig6yTOo7LqD07JyUFi1EFmOV//xgzvxeRYv+qQ==
   dependencies:
     colors "^1.1.2"
     dot "^1.1.1"
@@ -18738,20 +18665,6 @@ react-native-swipe-gestures@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/react-native-swipe-gestures/-/react-native-swipe-gestures-1.0.5.tgz#a172cb0f3e7478ccd681fd36b8bfbcdd098bde7c"
   integrity sha512-Ns7Bn9H/Tyw278+5SQx9oAblDZ7JixyzeOczcBK8dipQk2pD7Djkcfnf1nB/8RErAmMLL9iXgW0QHqiII8AhKw==
-
-react-native-switch@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/react-native-switch/-/react-native-switch-1.5.0.tgz#a5c8e72f87def649d1c9de027c5ae27e2037ea40"
-  integrity sha1-pcjnL4fe9knRyd4CfFrifiA36kA=
-  dependencies:
-    prop-types "^15.6.0"
-
-react-native-v8@0.61.5-patch.3:
-  version "0.61.5-patch.3"
-  resolved "https://registry.yarnpkg.com/react-native-v8/-/react-native-v8-0.61.5-patch.3.tgz#c5f4f235f5b9922f5f982811d293c890d45fecd5"
-  integrity sha512-1cCc/zRK9uZ6Z/++aLPBMf5h78B74+qMdyKlJRDG9uREtd6BiAPvtqkW2QN37SYAe4IjH23BfO85rnpBGrnfgA==
-  dependencies:
-    v8-android "~8.80.1"
 
 react-native-web-image-loader@0.0.6:
   version "0.0.6"
@@ -22519,11 +22432,6 @@ uuid@^3.0.0, uuid@^3.0.1, uuid@^3.1.0, uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
-
-v8-android@8.80.1, v8-android@~8.80.1:
-  version "8.80.1"
-  resolved "https://registry.yarnpkg.com/v8-android/-/v8-android-8.80.1.tgz#ec4c9be7656445377e6c080ebc39b1ab7e95fbce"
-  integrity sha512-YtJEYC4cEr/EJjCAllQN1T+PX+XtcrCCBXJv+dLdzxxRtVKkHlf8kAxyriXUOtGmiMtgzlz+d8hQugVPdq8ZfA==
 
 v8-compile-cache@^2.0.2:
   version "2.1.0"
