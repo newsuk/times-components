@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.21.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.21.0...@times-components/ssr@2.21.1) (2021-04-13)
+
+
+### Bug Fixes
+
+* **TNLT-000:** session storage window issue ([#2680](https://github.com/newsuk/times-components/issues/2680)) ([2e5cf60](https://github.com/newsuk/times-components/commit/2e5cf60b310c5acac27ecc11a058aaf403f6daea))
+
+
+
+
+
 # [2.21.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.20.11...@times-components/ssr@2.21.0) (2021-04-12)
 
 
