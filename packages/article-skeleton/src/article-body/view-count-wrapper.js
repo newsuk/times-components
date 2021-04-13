@@ -30,10 +30,12 @@ const incrementViewCount = (storageProvider, trackingName) => {
   storeCount(storageProvider, trackingName, count + 1);
 };
 
+const getStorageProvider = () =>
+  typeof window !== "undefined" && window.sessionStorage;
+
 const ViewCountWrapper = ({
   displayFunction = () => true,
   trackingName,
-  storageProvider,
   children
 }) => {
   const [viewCount, setViewCount] = useState();
@@ -41,7 +43,7 @@ const ViewCountWrapper = ({
   let observer;
 
   useEffect(() => {
-    const newViewCount = getViewCount(storageProvider, trackingName);
+    const newViewCount = getViewCount(getStorageProvider(), trackingName);
     setViewCount(newViewCount);
   }, []);
 
@@ -54,7 +56,7 @@ const ViewCountWrapper = ({
           entries => {
             if (entries[0].isIntersecting) {
               observer.disconnect();
-              incrementViewCount(storageProvider, trackingName);
+              incrementViewCount(getStorageProvider(), trackingName);
             }
           },
           {

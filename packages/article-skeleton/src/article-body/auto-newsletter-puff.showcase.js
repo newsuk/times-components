@@ -32,19 +32,6 @@ const mocks = [
   }
 ];
 
-let storage = {};
-
-class MockStorage {
-  getItem = key => {
-    const value = storage[key] || null;
-    return value;
-  };
-
-  setItem = (key, value) => {
-    storage = { ...storage, [key]: value };
-  };
-}
-
 export default {
   children: [
     {
@@ -74,7 +61,6 @@ export default {
 
     {
       component: ({ boolean, select }) => {
-        const mockStorage = new MockStorage();
         const trackingName = "counter";
         const show = boolean("show", true);
         const consent = boolean("Set Constent Cookie", true);
@@ -97,13 +83,12 @@ export default {
         };
         return (
           <>
-            Current Count = {mockStorage.getItem("view-count")}
+            Current Count = {window.sessionStorage.getItem("view-count")}
             <div style={contentStyle} />
             {show && (
               <ViewCountWrapper
                 trackingName={trackingName}
                 displayFunction={count => [1, 3, 5, 7, 9].includes(count)}
-                storageProvider={mockStorage}
               >
                 <div
                   style={{

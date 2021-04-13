@@ -16,7 +16,6 @@ const AutoNewsletterPuff = ({
   <ViewCountWrapper
     trackingName={`auto-puff-${code}`}
     displayFunction={count => [1, 3, 5, 7].includes(count)}
-    storageProvider={window.sessionStorage}
   >
     <InlineNewsletterPuff
       analyticsStream={analyticsStream}
