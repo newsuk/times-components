@@ -6,35 +6,30 @@ import ViewCountWrapper from "../../src/article-body/view-count-wrapper";
 
 describe("<ViewCountWrapper>", () => {
   beforeEach(() => {
-    window.document.cookie = "nuk-consent-personalisation=1";
+    if (typeof window !== "undefined")
+      window.document.cookie = "nuk-consent-personalisation=1";
   });
 
   afterEach(() => {
-    window.document.cookie = "nuk-consent-personalisation=;max-age=0";
+    if (typeof window !== "undefined")
+      window.document.cookie = "nuk-consent-personalisation=;max-age=0";
   });
   describe("display function", () => {
     it("always renders", () => {
-      const mockStorage = {
-        getItem: jest.fn(() => null),
-        setItem: jest.fn()
-      };
       const component = create(
-        <ViewCountWrapper trackingName="hello1" storageProvider={mockStorage}>
+        <ViewCountWrapper trackingName="hello1">
           <span>Hello</span>
         </ViewCountWrapper>
       );
       expect(component.root.findAllByType("span").length).toEqual(1);
       expect(component).toMatchSnapshot();
     });
+
     it("doesnt render without consent", () => {
-      const mockStorage = {
-        getItem: jest.fn(() => null),
-        setItem: jest.fn()
-      };
       window.document.cookie = "nuk-consent-personalisation=;max-age=0";
 
       const component = create(
-        <ViewCountWrapper trackingName="hello1" storageProvider={mockStorage}>
+        <ViewCountWrapper trackingName="hello1">
           <span>Hello</span>
         </ViewCountWrapper>
       );
@@ -42,16 +37,8 @@ describe("<ViewCountWrapper>", () => {
       expect(component).toMatchSnapshot();
     });
     it("never renders", () => {
-      const mockStorage = {
-        getItem: jest.fn(() => null),
-        setItem: jest.fn()
-      };
       const component = create(
-        <ViewCountWrapper
-          trackingName="hello1"
-          storageProvider={mockStorage}
-          displayFunction={() => false}
-        >
+        <ViewCountWrapper trackingName="hello1" displayFunction={() => false}>
           <span>Hello</span>
         </ViewCountWrapper>
       );
@@ -91,34 +78,21 @@ describe("<ViewCountWrapper>", () => {
     });
 
     it("intersects", async () => {
-      const mockStorage = {
-        getItem: jest.fn(() => null),
-        setItem: jest.fn()
-      };
-
       create(
-        <ViewCountWrapper
-          trackingName="hello1"
-          storageProvider={mockStorage}
-          displayFunction={() => false}
-        >
+        <ViewCountWrapper trackingName="hello1" displayFunction={() => false}>
           <span>Hello</span>
         </ViewCountWrapper>
       );
       await delay(0);
-      expect(mockStorage.setItem).toHaveBeenCalledWith(
-        "view-count",
+      expect(window.sessionStorage.getItem("view-count")).toEqual(
         JSON.stringify({ hello1: 1 })
       );
 
       global.window.IntersectionObserver.intersect();
 
-      expect(mockStorage.setItem).toHaveBeenCalledTimes(2);
-      expect(mockStorage.setItem).toHaveBeenCalledWith(
-        "view-count",
+      expect(window.sessionStorage.getItem("view-count")).toEqual(
         JSON.stringify({ hello1: 2 })
       );
-
       expect(
         global.window.IntersectionObserver.disconnect
       ).toHaveBeenCalledWith();
@@ -126,42 +100,43 @@ describe("<ViewCountWrapper>", () => {
   });
   describe("using a display function [1,3,5]", () => {
     it("only on first", async () => {
-      let viewCount = 1;
-      const mockStorage = {
-        getItem: jest.fn(() => JSON.stringify({ hello1: viewCount })),
-        setItem: jest.fn()
-      };
+      const trackingName = "hello1";
+      const setCount = count =>
+        window.sessionStorage.setItem(
+          "view-count",
+          JSON.stringify({ [trackingName]: count })
+        );
+
       const render = () =>
         create(
           <ViewCountWrapper
-            trackingName="hello1"
-            storageProvider={mockStorage}
+            trackingName={trackingName}
             displayFunction={value => [1, 3].includes(value)}
           >
             <span>Hello</span>
           </ViewCountWrapper>
         );
-      viewCount = 1;
+      setCount(1);
       let component = render();
       await delay(0);
       expect(component.root.findAllByType("span").length).toEqual(1);
 
-      viewCount = 2;
+      setCount(2);
       component = render();
       await delay(0);
       expect(component.root.findAllByType("span").length).toEqual(0);
 
-      viewCount = 3;
+      setCount(3);
       component = render();
       await delay(0);
       expect(component.root.findAllByType("span").length).toEqual(1);
 
-      viewCount = 4;
+      setCount(4);
       component = render();
       await delay(0);
       expect(component.root.findAllByType("span").length).toEqual(0);
 
-      viewCount = 5;
+      setCount(5);
       component = render();
       await delay(0);
       expect(component.root.findAllByType("span").length).toEqual(0);

@@ -59,7 +59,6 @@ yarn start:testserver
 Simply starts the SSR server but sets the `SPOT_ID` to a fixed dummy value (so
 the SpotIM script will written on the article page, but not found/run), and sets
 `GRAPHQL_ENDPOINT` to port 4000 which is where the test TPA server should be running.
-This is a test
 
 ## Contributing
 
