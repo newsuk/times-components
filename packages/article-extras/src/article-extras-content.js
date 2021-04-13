@@ -6,6 +6,7 @@ import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import ArticleTopics from "./article-topics";
 import styles from "./styles";
+import { relatedArticleSlice as sampleRelatedArticleSlice } from "../fixtures/article-extras";
 
 const ArticleExtrasContent = ({
   analyticsStream,
@@ -34,6 +35,12 @@ const ArticleExtrasContent = ({
                 analyticsStream={analyticsStream}
                 onPress={onRelatedArticlePress}
                 slice={relatedArticleSlice}
+              />
+              <RelatedArticles
+                heading="Additional Featured Articles"
+                analyticsStream={analyticsStream}
+                onPress={onRelatedArticlePress}
+                slice={sampleRelatedArticleSlice}
               />
             </View>
           )}
