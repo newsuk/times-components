@@ -2,7 +2,9 @@
 
 const { ApolloClient } = require("apollo-client");
 const { AppRegistry } = require("react-native-web");
+const { ApolloLink } =  require("apollo-link");
 const { createHttpLink } = require("apollo-link-http");
+const { createPersistedQueryLink } = require("apollo-link-persisted-queries");
 const fetch = require("node-fetch");
 const { fragmentMatcher } = require("@times-components/schema");
 const { getDataFromTree } = require("react-apollo");
@@ -34,6 +36,7 @@ const makeClient = options => {
   const link = ApolloLink.from([
     new LoggingLink(options.uri, options.logger),
     errorLink(options.logger),
+    createPersistedQueryLink({ useGETForHashedQueries: true }),
     httpLink
   ]);
 
