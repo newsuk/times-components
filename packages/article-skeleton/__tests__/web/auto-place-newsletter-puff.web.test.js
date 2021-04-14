@@ -125,8 +125,9 @@ describe("Article with automatically placed NewsletterPuff", () => {
     article.section = "News";
     article.content[3] = paywallContent;
     const output = TestRenderer.create(renderArticle(article));
-    const isNewsletterPuffs = output.root.findAllByType("NewsletterPuff");
-    expect(isNewsletterPuffs.length).toBe(0);
+    expect(
+      output.root.findByProps({ className: "view-count" }).props.style.display
+    ).toEqual("none");
   });
 
   it("should render a NewsletterPuff correctly", async () => {

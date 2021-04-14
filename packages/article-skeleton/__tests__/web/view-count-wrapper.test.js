@@ -21,7 +21,10 @@ describe("<ViewCountWrapper>", () => {
           <span>Hello</span>
         </ViewCountWrapper>
       );
-      expect(component.root.findAllByType("span").length).toEqual(1);
+      expect(
+        component.root.findByProps({ className: "view-count" }).props.style
+          .display
+      ).toEqual("block");
       expect(component).toMatchSnapshot();
     });
 
@@ -33,7 +36,10 @@ describe("<ViewCountWrapper>", () => {
           <span>Hello</span>
         </ViewCountWrapper>
       );
-      expect(component.root.findAllByType("span").length).toEqual(0);
+      expect(
+        component.root.findByProps({ className: "view-count" }).props.style
+          .display
+      ).toEqual("none");
       expect(component).toMatchSnapshot();
     });
     it("never renders", () => {
@@ -42,7 +48,10 @@ describe("<ViewCountWrapper>", () => {
           <span>Hello</span>
         </ViewCountWrapper>
       );
-      expect(component.root.findAllByType("span").length).toEqual(0);
+      expect(
+        component.root.findByProps({ className: "view-count" }).props.style
+          .display
+      ).toEqual("none");
       expect(component).toMatchSnapshot();
     });
   });
@@ -98,8 +107,8 @@ describe("<ViewCountWrapper>", () => {
       ).toHaveBeenCalledWith();
     });
   });
-  describe("using a display function [1,3,5]", () => {
-    it("only on first", async () => {
+  describe("using a display function", () => {
+    it("[1,3]", async () => {
       const trackingName = "hello1";
       const setCount = count =>
         window.sessionStorage.setItem(
@@ -119,27 +128,42 @@ describe("<ViewCountWrapper>", () => {
       setCount(1);
       let component = render();
       await delay(0);
-      expect(component.root.findAllByType("span").length).toEqual(1);
+      expect(
+        component.root.findByProps({ className: "view-count" }).props.style
+          .display
+      ).toEqual("block");
 
       setCount(2);
       component = render();
       await delay(0);
-      expect(component.root.findAllByType("span").length).toEqual(0);
+      expect(
+        component.root.findByProps({ className: "view-count" }).props.style
+          .display
+      ).toEqual("none");
 
       setCount(3);
       component = render();
       await delay(0);
-      expect(component.root.findAllByType("span").length).toEqual(1);
+      expect(
+        component.root.findByProps({ className: "view-count" }).props.style
+          .display
+      ).toEqual("block");
 
       setCount(4);
       component = render();
       await delay(0);
-      expect(component.root.findAllByType("span").length).toEqual(0);
+      expect(
+        component.root.findByProps({ className: "view-count" }).props.style
+          .display
+      ).toEqual("none");
 
       setCount(5);
       component = render();
       await delay(0);
-      expect(component.root.findAllByType("span").length).toEqual(0);
+      expect(
+        component.root.findByProps({ className: "view-count" }).props.style
+          .display
+      ).toEqual("none");
     });
   });
 });
