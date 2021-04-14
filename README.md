@@ -73,7 +73,7 @@ Tests are currently using [jest](https://jestjs.io/) to run so if you want to de
 3. (START TESTS IN DEBUG MODE) We need to start the same command but through node while in debug mode like so:
    `node --inspect-brk ./node_modules/.bin/jest --config="./packages/provider/__tests__/jest.config.js" --runInBand`
 
-> NOTE: `--runInBand` is a `jest` flag that runs all tests serially in the current process. If we don't add this flag, only the node process that started `jest` will be debuggable.
+> NOTE: `--runInBand` is a `jest` flag that runs all tests serially in the current process. If we don't add this flag, only the node process that started `jest` will be debuggable .
 
 4. (ADD DEBUG STATEMENTS) Normaly we would add breakpoints, but when remote debugging that's not always possible, because the files we need to put the breakpoints on aren't loaded yet by `jest`. So in order to make the debugger stop where we want it to, we need to add [`debugger;`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger) statements instead of breakpoints in the code and re-transpile if necessary.
 
