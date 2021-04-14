@@ -11,7 +11,6 @@ const { getDataFromTree } = require("react-apollo");
 const { InMemoryCache } = require("apollo-cache-inmemory");
 const ReactDOMServer = require("react-dom/server");
 const { ServerStyleSheet } = require("styled-components");
-const { ApolloLink } = require("apollo-link");
 const safeStringify = require("./safe-stringify");
 const errorLink = require("./graphql-error-link");
 const LoggingLink = require("./graphql-logging-link");
