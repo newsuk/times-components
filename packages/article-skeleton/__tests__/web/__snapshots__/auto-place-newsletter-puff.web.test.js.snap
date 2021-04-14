@@ -168,6 +168,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
         <p>
           Some paragraph 3
         </p>
+        <div />
         <div>
           <NewsletterPuff
             code="TNL-101"
