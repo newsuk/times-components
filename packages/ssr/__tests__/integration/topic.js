@@ -5,7 +5,7 @@ import { MockTopic, MockArticle } from "@times-components/fixture-generator";
 [true, false].forEach(usePersistedQueries => {
   describe(`Topic Page - Persisted Queries: ${usePersistedQueries})`, () => {
     const topicPath = `/topic/canada`;
-    const pageUrl = `${topicPath}${usePersistedQueries ? '?pq=1' : ''}`;
+    const pageUrl = `${topicPath}${usePersistedQueries ? "?pq=1" : ""}`;
     before(() => {
       cy.task("startMockServerWith", {
         Article: new MockArticle().get(),

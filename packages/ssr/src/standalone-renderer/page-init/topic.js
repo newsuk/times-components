@@ -10,5 +10,5 @@ window.nuk.ssr = {
 };
 window.nuk.graphqlapi = {
   ...window.nuk.graphqlapi,
-  usePersistedQueries: !!new URLSearchParams(window.location.search).get('pq')
+  usePersistedQueries: !!new URLSearchParams(window.location.search).get("pq")
 };

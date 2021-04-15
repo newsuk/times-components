@@ -41,10 +41,13 @@ const makeClient = options => {
     networkInterfaceOptions.headers.Authorization = `Cookie acs_tnl=${acsTnlCookie};sacs_tnl=${sacsTnlCookie}`;
   }
 
-  const link = ApolloLink.from([
-    options.usePersistedQueries && createPersistedQueryLink({ useGETForHashedQueries: true }),
-    createHttpLink(networkInterfaceOptions)
-  ].filter(Boolean));
+  const link = ApolloLink.from(
+    [
+      options.usePersistedQueries &&
+        createPersistedQueryLink({ useGETForHashedQueries: true }),
+      createHttpLink(networkInterfaceOptions)
+    ].filter(Boolean)
+  );
 
   return new ApolloClient({
     cache: new InMemoryCache({ fragmentMatcher }).restore(

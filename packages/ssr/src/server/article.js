@@ -18,7 +18,7 @@ module.exports = (
     navigationMode,
     spotAccountId,
     paidContentClassName,
-    isPreview,
+    isPreview
   },
   userState
 ) => {

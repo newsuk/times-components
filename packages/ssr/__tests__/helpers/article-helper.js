@@ -2,10 +2,10 @@ import { MockArticle, MockUser } from "@times-components/fixture-generator";
 
 const relatedArticleCount = 3;
 
-const articleTemplateTest = (template) => {
-  [true, false].forEach(usePersistedQueries => {
+const articleTemplateTest = template => {
+  [true, false, true, false].forEach(usePersistedQueries => {
     const articlePath = `/article/8763d1a0-ca57-11e8-bde6-fae32479843d`;
-    const pageUrl = `${articlePath}${usePersistedQueries ? '?pq=1' : ''}`;
+    const pageUrl = `${articlePath}${usePersistedQueries ? "?pq=1" : ""}`;
 
     describe(`Article - ${template} - Persisted Queries: ${usePersistedQueries})`, () => {
       let sundayTimesArticleWithThreeRelatedArticles;
@@ -47,7 +47,9 @@ const articleTemplateTest = (template) => {
             cy.get("@raImages").each(item => {
               const url = new URL(item.attr("src"));
               const initialResize = "100";
-              expect(url.searchParams.get("resize")).to.not.equal(initialResize);
+              expect(url.searchParams.get("resize")).to.not.equal(
+                initialResize
+              );
             });
           }));
 
@@ -82,12 +84,18 @@ const articleTemplateTest = (template) => {
         }).visit(pageUrl);
 
         cy.get("script[data-spotim-module]")
-          .should("have.attr", "src", "https://launcher.spot.im/spot/5p0t_1m_1d")
+          .should(
+            "have.attr",
+            "src",
+            "https://launcher.spot.im/spot/5p0t_1m_1d"
+          )
           .should("have.attr", "data-post-id", articleWithCommentsEnabled.id)
           .should(
             "have.attr",
             "data-post-url",
-            `https://www.thetimes.co.uk/article/${articleWithCommentsEnabled.id}`
+            `https://www.thetimes.co.uk/article/${
+              articleWithCommentsEnabled.id
+            }`
           );
       });
 
@@ -134,6 +142,6 @@ const articleTemplateTest = (template) => {
       });
     });
   });
-}
+};
 
 export default articleTemplateTest;

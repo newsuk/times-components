@@ -164,7 +164,10 @@ server.get("/topic/:slug", (request, response) => {
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
 
   ssr
-    .topic({ currentPage, topicSlug }, { ...makeUrls, graphqlApiUrl, usePersistedQueries: !!pq, logger })
+    .topic(
+      { currentPage, topicSlug },
+      { ...makeUrls, graphqlApiUrl, usePersistedQueries: !!pq, logger }
+    )
     .then(
       ({
         headMarkup,

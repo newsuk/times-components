@@ -4,7 +4,7 @@ import { MockAuthor, MockArticle } from "@times-components/fixture-generator";
 [true, false].forEach(usePersistedQueries => {
   describe(`Author Profile - Persisted Queries: ${usePersistedQueries})`, () => {
     const profilePath = `/profile/fiona-hamilton`;
-    const pageUrl = `${profilePath}${usePersistedQueries ? '?pq=1' : ''}`;
+    const pageUrl = `${profilePath}${usePersistedQueries ? "?pq=1" : ""}`;
 
     before(() =>
       cy.task("startMockServerWith", {

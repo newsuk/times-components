@@ -32,12 +32,15 @@ const makeClient = options => {
 
   const httpLink = createHttpLink(networkInterfaceOptions);
 
-  const link = ApolloLink.from([
-    new LoggingLink(options.uri, options.logger),
-    errorLink(options.logger),
-    options.usePersistedQueries && createPersistedQueryLink({ useGETForHashedQueries: true }),
-    httpLink
-  ].filter(Boolean));
+  const link = ApolloLink.from(
+    [
+      new LoggingLink(options.uri, options.logger),
+      errorLink(options.logger),
+      options.usePersistedQueries &&
+        createPersistedQueryLink({ useGETForHashedQueries: true }),
+      httpLink
+    ].filter(Boolean)
+  );
 
   return new ApolloClient({
     cache: new InMemoryCache({ addTypename: true, fragmentMatcher }),
