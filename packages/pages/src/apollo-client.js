@@ -23,10 +23,13 @@ const httpLink = NativeFetch
       uri: graphqlEndPoint
     });
 
-const link = ApolloLink.from([
-  usePersistedQueries && createPersistedQueryLink({ useGETForHashedQueries: true }),
-  httpLink
-].filter(Boolean));
+const link = ApolloLink.from(
+  [
+    usePersistedQueries &&
+      createPersistedQueryLink({ useGETForHashedQueries: true }),
+    httpLink
+  ].filter(Boolean)
+);
 
 export default new ApolloClient({
   cache: new InMemoryCache({

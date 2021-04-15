@@ -23,6 +23,7 @@ const articleTemplateTest = template => {
 
       afterEach(() => {
         cy.task("stopMockServer");
+        cy.wait(3000);
       });
 
       it("loads hi-res images for related articles", () =>
