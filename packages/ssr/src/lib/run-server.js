@@ -2,7 +2,7 @@
 
 const { ApolloClient } = require("apollo-client");
 const { AppRegistry } = require("react-native-web");
-const { ApolloLink } =  require("apollo-link");
+const { ApolloLink } = require("apollo-link");
 const { createHttpLink } = require("apollo-link-http");
 const { createPersistedQueryLink } = require("apollo-link-persisted-queries");
 const fetch = require("node-fetch");
