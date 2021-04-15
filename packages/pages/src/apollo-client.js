@@ -8,7 +8,7 @@ import { fragmentMatcher } from "@times-components/schema";
 
 const {
   NativeFetch,
-  ReactConfig: { graphqlEndPoint }
+  ReactConfig: { graphqlEndPoint, usePersistedQueries }
 } = NativeModules;
 
 const httpLink = NativeFetch
@@ -24,9 +24,9 @@ const httpLink = NativeFetch
     });
 
 const link = ApolloLink.from([
-  createPersistedQueryLink({ useGETForHashedQueries: true }),
+  usePersistedQueries && createPersistedQueryLink({ useGETForHashedQueries: true }),
   httpLink
-]);
+].filter(Boolean));
 
 export default new ApolloClient({
   cache: new InMemoryCache({
