@@ -25,10 +25,13 @@ const makeClient = () => {
     "application/x-www-form-urlencoded";
   networkInterfaceOptions.headers.Authorization = `Cookie acs_tnl=${acsTnlCookie};sacs_tnl=${sacsTnlCookie}`;
 
-  const link = ApolloLink.from([
-    usePersistedQueries && createPersistedQueryLink({ useGETForHashedQueries: true }),
-    createHttpLink(networkInterfaceOptions)
-  ].filter(Boolean));
+  const link = ApolloLink.from(
+    [
+      usePersistedQueries &&
+        createPersistedQueryLink({ useGETForHashedQueries: true }),
+      createHttpLink(networkInterfaceOptions)
+    ].filter(Boolean)
+  );
 
   return new ApolloClient({
     cache: new InMemoryCache({ fragmentMatcher }),
