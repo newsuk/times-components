@@ -42,9 +42,9 @@ const makeClient = options => {
   }
 
   const link = ApolloLink.from([
-    createPersistedQueryLink({ useGETForHashedQueries: true }),
+    options.usePersistedQueries && createPersistedQueryLink({ useGETForHashedQueries: true }),
     createHttpLink(networkInterfaceOptions)
-  ]);
+  ].filter(Boolean));
 
   return new ApolloClient({
     cache: new InMemoryCache({ fragmentMatcher }).restore(
@@ -70,6 +70,7 @@ module.exports = (component, clientOptions, data) => {
     uri: window.nuk.graphqlapi.url,
     useGET: clientOptions.useGET,
     headers: clientOptions.headers,
+    usePersistedQueries: window.nuk.graphqlapi.usePersistedQueries, // TODO: should this be in clientOptions.usePersistedQueries instead?
     skipAuthorization: clientOptions.skipAuthorization
   });
 
