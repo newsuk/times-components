@@ -137,6 +137,7 @@ const tests = [
         >
           <Article
             adConfig={adConfig}
+            paidContentClassName="paid-content-class-name"
             analyticsStream={() => {}}
             article={article}
             onAuthorPress={() => {}}

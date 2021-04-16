@@ -74,6 +74,7 @@ class ArticlePage extends Component {
       navigationMode,
       receiveChildList,
       spotAccountId,
+      paidContentClassName,
       isPreview
     } = this.props;
 
@@ -90,6 +91,7 @@ class ArticlePage extends Component {
         receiveChildList={receiveChildList}
         navigationMode={navigationMode}
         spotAccountId={spotAccountId}
+        paidContentClassName={paidContentClassName}
         isPreview={isPreview}
       />
     );
