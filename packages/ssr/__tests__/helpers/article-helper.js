@@ -1,6 +1,6 @@
 import { MockArticle, MockUser } from "@times-components/fixture-generator";
 
-const relatedArticleCount = 3;
+const relatedArticleCount = 2;
 
 const articleTemplateTest = (template, n) =>
   describe(`Article - ${template} - Run #${n}`, () => {
