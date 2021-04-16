@@ -1,3 +1,3 @@
 import articleTests from "../helpers/article-helper";
 
-articleTests("mainstandard", 1);
+articleTests("mainstandard", 3);

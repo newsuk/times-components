@@ -1,3 +1,3 @@
 import articleTests from "../helpers/article-helper";
 
-articleTests("maincomment");
+articleTests("maincomment", 1);
