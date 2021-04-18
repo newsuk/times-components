@@ -16,7 +16,7 @@ import {
 import articleTrackingContext from "./tracking/article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
 import insertNativeAd from "./native-ad.web";
-import insertNewsletterPuff from "./newsletter-puff.web";
+// import insertNewsletterPuff from "./newsletter-puff.web";
 import tagLastParagraph from "./tracking/article-tracking-last-paragraph";
 
 import {
@@ -60,15 +60,15 @@ const ArticleSkeleton = ({
     sharingEnabled
   } = article;
 
-  const insertNewsletterPuffCurry = newContent =>
-    insertNewsletterPuff(section, newContent, isPreview);
+  /* const insertNewsletterPuffCurry = newContent =>
+    insertNewsletterPuff(section, newContent, isPreview); */
 
   const insertDropcapIntoASTCurry = newContent =>
     insertDropcapIntoAST(newContent, template, dropcapsDisabled);
 
   const contentReducers = [
     insertDropcapIntoASTCurry,
-    insertNewsletterPuffCurry,
+    // insertNewsletterPuffCurry,
     insertNativeAd,
     tagLastParagraph
   ];
