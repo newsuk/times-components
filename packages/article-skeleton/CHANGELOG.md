@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.43.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.43.0...@times-components/article-skeleton@1.43.1) (2021-04-19)
+
+
+### Bug Fixes
+
+* remove auto newsletter puff ([#2684](https://github.com/newsuk/times-components/issues/2684)) ([80d5995](https://github.com/newsuk/times-components/commit/80d599548a9cba4547c714a89cd846d34dbfc508))
+
+
+
+
+
 # [1.43.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.42.0...@times-components/article-skeleton@1.43.0) (2021-04-15)
 
 
