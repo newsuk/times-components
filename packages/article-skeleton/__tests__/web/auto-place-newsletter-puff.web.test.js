@@ -101,27 +101,28 @@ describe("Article with automatically placed NewsletterPuff", () => {
   beforeEach(() => {
     window.document.cookie = "nuk-consent-personalisation=;max-age=0";
   });
-  it("should not render a NewsletterPuff without feature flag", () => {
+
+  xit("should not render a NewsletterPuff without feature flag", () => {
     UserState.mockStates = [];
     const output = TestRenderer.create(renderArticle(article));
     const isNewsletterPuffs = output.root.findAllByType("NewsletterPuff");
     expect(isNewsletterPuffs.length).toBe(0);
   });
 
-  it("should not render a NewsletterPuff without the correct section", () => {
+  xit("should not render a NewsletterPuff without the correct section", () => {
     const output = TestRenderer.create(renderArticle(article));
     const isNewsletterPuffs = output.root.findAllByType("NewsletterPuff");
     expect(isNewsletterPuffs.length).toBe(0);
   });
 
-  it("should not render a NewsletterPuff without some paywall content", () => {
+  xit("should not render a NewsletterPuff without some paywall content", () => {
     article.section = "News";
     const output = TestRenderer.create(renderArticle(article));
     const isNewsletterPuffs = output.root.findAllByType("NewsletterPuff");
     expect(isNewsletterPuffs.length).toBe(0);
   });
 
-  it("shouldnt render a NewsletterPuff without cookie", async () => {
+  xit("shouldnt render a NewsletterPuff without cookie", async () => {
     article.section = "News";
     article.content[3] = paywallContent;
     const output = TestRenderer.create(renderArticle(article));
@@ -130,7 +131,7 @@ describe("Article with automatically placed NewsletterPuff", () => {
     ).toEqual("none");
   });
 
-  it("should render a NewsletterPuff correctly", async () => {
+  xit("should render a NewsletterPuff correctly", async () => {
     article.section = "News";
     article.content[3] = paywallContent;
     window.document.cookie = "nuk-consent-personalisation=1";
@@ -140,7 +141,7 @@ describe("Article with automatically placed NewsletterPuff", () => {
     expect(output).toMatchSnapshot();
   });
 
-  it("should not render another NewsletterPuff when one already exists", () => {
+  xit("should not render another NewsletterPuff when one already exists", () => {
     article.section = "News";
     article.content[3] = paywallContentWithNewsletter;
     const output = TestRenderer.create(renderArticle(article));
