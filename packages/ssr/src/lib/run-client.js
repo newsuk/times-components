@@ -73,7 +73,7 @@ module.exports = (component, clientOptions, data) => {
     uri: window.nuk.graphqlapi.url,
     useGET: clientOptions.useGET,
     headers: clientOptions.headers,
-    usePersistedQueries: window.nuk.graphqlapi.usePersistedQueries, // TODO: should this be in clientOptions.usePersistedQueries instead?
+    usePersistedQueries: window.nuk.graphqlapi.usePersistedQueries,
     skipAuthorization: clientOptions.skipAuthorization
   });
 
