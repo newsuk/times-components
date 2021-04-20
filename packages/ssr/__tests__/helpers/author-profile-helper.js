@@ -1,32 +1,29 @@
 /* eslint-disable no-unused-expressions */
+import { MockAuthor, MockArticle } from "@times-components/fixture-generator";
 
-import { MockTopic, MockArticle } from "@times-components/fixture-generator";
+export default ({ qs = "", variant = "Default" }) => {
+  describe(`Author Profile - ${variant}`, () => {
+    const profilePath = `/profile/fiona-hamilton`;
+    const pageUrl = `${profilePath}${qs}`;
 
-[true, false].forEach(usePersistedQueries => {
-  describe(`Topic Page - Persisted Queries: ${usePersistedQueries})`, () => {
-    const topicPath = `/topic/canada`;
-    const pageUrl = `${topicPath}${usePersistedQueries ? "?pq=1" : ""}`;
-    before(() => {
+    before(() =>
       cy.task("startMockServerWith", {
         Article: new MockArticle().get(),
-        Topic: new MockTopic().setTopicArticles(25).get()
-      });
-    });
+        Author: new MockAuthor().setAuthorArticles(35).get()
+      })
+    );
 
     beforeEach(() => {
       cy.visit(pageUrl);
     });
 
-    after(() => {
-      cy.task("stopMockServer");
-    });
+    after(() => cy.task("stopMockServer"));
 
-    it("Topic head has required elements", () => {
-      cy.get("#main-container > div:nth-child(1)");
-      cy.get("#main-container h1")
-        .first()
-        .contains("Topic Page");
-      cy.get('div[data-testid="topic-description"]');
+    it("should have the required Author head elements", () => {
+      cy.get('div[data-testid="author-head"]');
+      cy.get('h1[data-testid="author-name"]');
+      cy.get('h2[role="heading"]');
+      cy.get('div[data-testid="author-bio"]');
     });
 
     it("should take you to the article page once an article has been selected", () => {
@@ -59,14 +56,10 @@ import { MockTopic, MockArticle } from "@times-components/fixture-generator";
           {
             id: "region",
             enabled: false
-          },
-          {
-            id: "heading-order",
-            enabled: false
           }
         ]
       });
       cy.checkA11y();
     });
   });
-});
+};
