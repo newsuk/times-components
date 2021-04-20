@@ -17,14 +17,16 @@ const AutoNewsletterPuff = ({
     trackingName={`auto-puff-${code}`}
     displayFunction={count => [1, 3, 5, 7].includes(count)}
   >
-    <InlineNewsletterPuff
-      analyticsStream={analyticsStream}
-      code={code}
-      copy={copy}
-      headline={headline}
-      imageUri={imageUri}
-      label={label}
-    />
+    <div style={{ display: "none" }}>
+      <InlineNewsletterPuff
+        analyticsStream={analyticsStream}
+        code={code}
+        copy={copy}
+        headline={headline}
+        imageUri={imageUri}
+        label={label}
+      />
+    </div>
   </ViewCountWrapper>
 );
 

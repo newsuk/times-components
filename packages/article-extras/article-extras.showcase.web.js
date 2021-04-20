@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import React from "react";
 import ArticleExtras from "./src/article-extras";
 import { relatedArticleSlice, topics } from "./fixtures/article-extras";
@@ -5,7 +7,7 @@ import { relatedArticleSlice, topics } from "./fixtures/article-extras";
 export default {
   children: [
     {
-      component: () => (
+      component: ({ boolean }) => (
         <ArticleExtras
           analyticsStream={() => {}}
           articleId="dummy-article-id"
@@ -15,6 +17,11 @@ export default {
           relatedArticlesVisible
           spotAccountId="dummy-spot-id"
           topics={topics}
+          additionalRelatedArticlesFlag={boolean(
+            "Additional Featured Articles",
+            false,
+            "User State"
+          )}
         />
       ),
       name: "Article Extras",

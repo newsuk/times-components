@@ -7,31 +7,40 @@ const hasCookieConsent = () =>
   typeof window !== "undefined" &&
   window.document.cookie.indexOf("nuk-consent-personalisation=1") >= 0;
 
-const storeCount = (storageProvider, trackingName, value) => {
-  const viewCounts = JSON.parse(storageProvider.getItem(STORAGE_KEY));
-  const newViewCounts = {
-    ...(viewCounts || {}),
-    [trackingName]: value
-  };
-  storageProvider.setItem(STORAGE_KEY, JSON.stringify(newViewCounts));
+const getStorageProvider = () =>
+  typeof window !== "undefined" && window.sessionStorage;
+
+const setCounter = (trackingName, value) => {
+  const storageProvider = getStorageProvider();
+  if (storageProvider) {
+    const viewCounts = JSON.parse(storageProvider.getItem(STORAGE_KEY));
+    const newViewCounts = {
+      ...(viewCounts || {}),
+      [trackingName]: value
+    };
+    storageProvider.setItem(STORAGE_KEY, JSON.stringify(newViewCounts));
+  }
 };
-const getCount = (storageProvider, trackingName) => {
-  const viewCounts = JSON.parse(storageProvider.getItem(STORAGE_KEY));
-  return (viewCounts && viewCounts[trackingName]) || 1;
+
+const getCounter = trackingName => {
+  const storageProvider = getStorageProvider();
+  if (storageProvider) {
+    const viewCounts = JSON.parse(storageProvider.getItem(STORAGE_KEY));
+    return (viewCounts && viewCounts[trackingName]) || 1;
+  }
+  return null;
 };
-const getViewCount = (storageProvider, trackingName) => {
-  const count = getCount(storageProvider, trackingName);
-  storeCount(storageProvider, trackingName, count);
+
+const getViewCount = trackingName => {
+  const count = getCounter(trackingName);
+  setCounter(trackingName, count);
   return count;
 };
 
-const incrementViewCount = (storageProvider, trackingName) => {
-  const count = getCount(storageProvider, trackingName);
-  storeCount(storageProvider, trackingName, count + 1);
+const incrementViewCount = trackingName => {
+  const count = getCounter(trackingName);
+  setCounter(trackingName, count + 1);
 };
-
-const getStorageProvider = () =>
-  typeof window !== "undefined" && window.sessionStorage;
 
 const ViewCountWrapper = ({
   displayFunction = () => true,
@@ -43,7 +52,7 @@ const ViewCountWrapper = ({
   let observer;
 
   useEffect(() => {
-    const newViewCount = getViewCount(getStorageProvider(), trackingName);
+    const newViewCount = getViewCount(trackingName);
     setViewCount(newViewCount);
   }, []);
 
@@ -56,7 +65,7 @@ const ViewCountWrapper = ({
           entries => {
             if (entries[0].isIntersecting) {
               observer.disconnect();
-              incrementViewCount(getStorageProvider(), trackingName);
+              incrementViewCount(trackingName);
             }
           },
           {
@@ -73,7 +82,17 @@ const ViewCountWrapper = ({
 
   const display = hasCookieConsent() && displayFunction(viewCount);
 
-  return <div ref={ref}>{display ? children : null}</div>;
+  return (
+    <>
+      <div className="view-count-observer" ref={ref} />
+      <div
+        className="view-count"
+        style={{ display: display ? "block" : "none" }}
+      >
+        {children}
+      </div>
+    </>
+  );
 };
 
 ViewCountWrapper.propTypes = {

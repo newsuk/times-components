@@ -3,6 +3,50 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.44.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.43.1...@times-components/article-skeleton@1.44.0) (2021-04-20)
+
+
+### Features
+
+* **TE-33:** Additional Related Articles rail ([#2682](https://github.com/newsuk/times-components/issues/2682)) ([b407fb5](https://github.com/newsuk/times-components/commit/b407fb5b9bf7d5f3fd6435722a0167661aaf1b48))
+
+
+
+
+
+## [1.43.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.43.0...@times-components/article-skeleton@1.43.1) (2021-04-19)
+
+
+### Bug Fixes
+
+* remove auto newsletter puff ([#2684](https://github.com/newsuk/times-components/issues/2684)) ([80d5995](https://github.com/newsuk/times-components/commit/80d599548a9cba4547c714a89cd846d34dbfc508))
+
+
+
+
+
+# [1.43.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.42.0...@times-components/article-skeleton@1.43.0) (2021-04-15)
+
+
+### Features
+
+* hide auto newsletter puff by default ([#2683](https://github.com/newsuk/times-components/issues/2683)) ([af97e73](https://github.com/newsuk/times-components/commit/af97e73ae96a3b3098e3b6f9278f2fa77f1d3799))
+
+
+
+
+
+# [1.42.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.41.1...@times-components/article-skeleton@1.42.0) (2021-04-14)
+
+
+### Features
+
+* **TE-35:** add auto newsletter puff - refactored to use display:non… ([#2681](https://github.com/newsuk/times-components/issues/2681)) ([05a7d88](https://github.com/newsuk/times-components/commit/05a7d8857af518f9cb3be9269d97305384329ce4))
+
+
+
+
+
 ## [1.41.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.41.0...@times-components/article-skeleton@1.41.1) (2021-04-13)
 
 
