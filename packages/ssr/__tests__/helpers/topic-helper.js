@@ -2,11 +2,13 @@
 
 import { MockTopic, MockArticle } from "@times-components/fixture-generator";
 
-export default ({ qs = "", variant = "Default" }) => {
-  describe(`Topic Page - ${variant}`, () => {
-    const topicPath = `/topic/canada`;
-    const pageUrl = `${topicPath}${qs}`;
+export default (options = {}) => {
+  const qs = options.qs || "";
+  const variant = options.variant || "Default";
+  const topicPath = `/topic/canada`;
+  const pageUrl = `${topicPath}${qs}`;
 
+  describe(`Topic Page - ${variant}`, () => {
     before(() => {
       cy.task("startMockServerWith", {
         Article: new MockArticle().get(),

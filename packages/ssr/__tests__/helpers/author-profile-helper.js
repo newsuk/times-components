@@ -1,11 +1,13 @@
 /* eslint-disable no-unused-expressions */
 import { MockAuthor, MockArticle } from "@times-components/fixture-generator";
 
-export default ({ qs = "", variant = "Default" }) => {
-  describe(`Author Profile - ${variant}`, () => {
-    const profilePath = `/profile/fiona-hamilton`;
-    const pageUrl = `${profilePath}${qs}`;
+export default (options = {}) => {
+  const qs = options.qs || "";
+  const variant = options.variant || "Default";
+  const profilePath = `/profile/fiona-hamilton`;
+  const pageUrl = `${profilePath}${qs}`;
 
+  describe(`Author Profile - ${variant}`, () => {
     before(() =>
       cy.task("startMockServerWith", {
         Article: new MockArticle().get(),

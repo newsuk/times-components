@@ -2,7 +2,9 @@ import { MockArticle, MockUser } from "@times-components/fixture-generator";
 
 const relatedArticleCount = 3;
 
-const articleTemplateTest = (template, { qs = "", variant = "Default" }) => {
+const articleTemplateTest = (template, options = {}) => {
+  const qs = options.qs || "";
+  const variant = options.variant || "Default";
   const articlePath = `/article/8763d1a0-ca57-11e8-bde6-fae32479843d`;
   const pageUrl = `${articlePath}${qs}`;
 
@@ -22,7 +24,6 @@ const articleTemplateTest = (template, { qs = "", variant = "Default" }) => {
 
     afterEach(() => {
       cy.task("stopMockServer");
-      cy.wait(3000);
     });
 
     it("loads hi-res images for related articles", () =>
