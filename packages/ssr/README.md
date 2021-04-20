@@ -106,6 +106,14 @@ This will create a dev client side bundle with the mock `GRAPHQL_ENDPOINT`,
 start up the mock server and SSR, run the Cypress tests inside electron and
 then shutdown the servers.
 
+## Persisted Queries
+
+To enable persisted queries in the client, add the following line to your client-side javascript:
+
+```
+window.nuk.graphqlapi.usePersistedQueries = true;
+```
+
 ## Future
 
 - Publish : potentially we want to look at using this as our source of truth for

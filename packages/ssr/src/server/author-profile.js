@@ -3,7 +3,7 @@ const runServer = require("../lib/run-server");
 
 module.exports = (
   { authorSlug, currentPage },
-  { graphqlApiUrl, logger, makeArticleUrl, makeTopicUrl }
+  { graphqlApiUrl, usePersistedQueries, logger, makeArticleUrl, makeTopicUrl }
 ) => {
   if (typeof authorSlug !== "string") {
     throw new Error(`Author slug should be a string. Received ${authorSlug}`);
@@ -33,7 +33,8 @@ module.exports = (
   const options = {
     client: {
       logger,
-      uri: graphqlApiUrl
+      uri: graphqlApiUrl,
+      usePersistedQueries
     },
     data: {
       authorSlug,

@@ -63,7 +63,9 @@
     "@times-components/topic": "5.3.23",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
+    "apollo-link": "1.2.4",
     "apollo-link-http": "1.5.14",
+    "apollo-link-persisted-queries": "0.2.2",
     "graphql": "14.2.1",
     "prop-types": "15.7.2",
     "react-apollo": "2.5.5"

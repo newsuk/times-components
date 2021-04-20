@@ -68,6 +68,7 @@
     "apollo-link": "1.2.4",
     "apollo-link-error": "1.1.2",
     "apollo-link-http": "1.5.14",
+    "apollo-link-persisted-queries": "0.2.2",
     "node-fetch": "2.6.1",
     "react": "16.9.0",
     "react-apollo": "2.5.5",

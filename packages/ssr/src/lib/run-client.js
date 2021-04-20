@@ -3,7 +3,9 @@
 
 const { ApolloClient } = require("apollo-client");
 const { AppRegistry } = require("react-native");
+const { ApolloLink } = require("apollo-link");
 const { createHttpLink } = require("apollo-link-http");
+const { createPersistedQueryLink } = require("apollo-link-persisted-queries");
 const fetch = require("unfetch").default;
 const { fragmentMatcher } = require("@times-components/schema");
 const { InMemoryCache } = require("apollo-cache-inmemory");
@@ -39,11 +41,19 @@ const makeClient = options => {
     networkInterfaceOptions.headers.Authorization = `Cookie acs_tnl=${acsTnlCookie};sacs_tnl=${sacsTnlCookie}`;
   }
 
+  const link = ApolloLink.from(
+    [
+      options.usePersistedQueries &&
+        createPersistedQueryLink({ useGETForHashedQueries: true }),
+      createHttpLink(networkInterfaceOptions)
+    ].filter(Boolean)
+  );
+
   return new ApolloClient({
     cache: new InMemoryCache({ fragmentMatcher }).restore(
       options.initialState || {}
     ),
-    link: createHttpLink(networkInterfaceOptions)
+    link
   });
 };
 
@@ -63,6 +73,7 @@ module.exports = (component, clientOptions, data) => {
     uri: window.nuk.graphqlapi.url,
     useGET: clientOptions.useGET,
     headers: clientOptions.headers,
+    usePersistedQueries: window.nuk.graphqlapi.usePersistedQueries,
     skipAuthorization: clientOptions.skipAuthorization
   });
 

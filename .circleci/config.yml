@@ -153,6 +153,8 @@ jobs:
                     sudo apt install lsof
                     npx yarn@1.16.0 test:e2e
                   working_directory: ~/project/
+            - store_artifacts:
+                path: packages/ssr/__tests__/screenshots
 
     publish_coverage:
         executor: node
@@ -190,7 +192,7 @@ jobs:
             - run:
                   name: Publish Storybook
                   command: |
-                      npx yarn@1.16.0 storybook:publish 
+                      npx yarn@1.16.0 storybook:publish
                   working_directory: ~/project/
 
 workflows:
@@ -234,7 +236,7 @@ workflows:
             - publish_storybook:
                   filters:
                     branches:
-                        only: 
+                        only:
                           - master
                   requires:
                       - build_storybook
@@ -246,7 +248,7 @@ workflows:
             - publish_npm:
                   filters:
                     branches:
-                        only: 
+                        only:
                           - master
                   requires:
                       - build_storybook
