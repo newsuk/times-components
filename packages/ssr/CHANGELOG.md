@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.22.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.21.4...@times-components/ssr@2.22.0) (2021-04-20)
+
+
+### Features
+
+* **TE-33:** Additional Related Articles rail ([#2682](https://github.com/newsuk/times-components/issues/2682)) ([b407fb5](https://github.com/newsuk/times-components/commit/b407fb5b9bf7d5f3fd6435722a0167661aaf1b48))
+
+
+
+
+
 ## [2.21.4](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.21.3...@times-components/ssr@2.21.4) (2021-04-19)
 
 **Note:** Version bump only for package @times-components/ssr

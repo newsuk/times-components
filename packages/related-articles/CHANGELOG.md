@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.6.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.5.13...@times-components/related-articles@6.6.0) (2021-04-20)
+
+
+### Features
+
+* **TE-33:** Additional Related Articles rail ([#2682](https://github.com/newsuk/times-components/issues/2682)) ([b407fb5](https://github.com/newsuk/times-components/commit/b407fb5b9bf7d5f3fd6435722a0167661aaf1b48))
+
+
+
+
+
 ## [6.5.13](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.5.12...@times-components/related-articles@6.5.13) (2021-03-24)
 
 **Note:** Version bump only for package @times-components/related-articles
