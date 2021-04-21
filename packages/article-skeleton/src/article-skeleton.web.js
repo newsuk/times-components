@@ -18,6 +18,7 @@ import insertDropcapIntoAST from "./dropcap-util";
 import insertNativeAd from "./native-ad.web";
 // import insertNewsletterPuff from "./newsletter-puff.web";
 import tagLastParagraph from "./tracking/article-tracking-last-paragraph";
+import AlgoliaSearchProvider from "./algolia-search-provider";
 
 import {
   BodyContainer,
@@ -128,7 +129,7 @@ const ArticleSkeleton = ({
           logoUrl={logoUrl}
           paidContentClassName={paidContentClassName}
         />
-        <Fragment>
+        <AlgoliaSearchProvider headline={headline}>
           <Fragment>
             <HeaderAdContainer key="headerAd">
               <AdContainer slotName="header" style={styles.adMarginStyle} />
@@ -197,7 +198,7 @@ const ArticleSkeleton = ({
           <AdContainer slotName="pixel" />
           <AdContainer slotName="pixelteads" />
           <AdContainer slotName="pixelskin" />
-        </Fragment>
+        </AlgoliaSearchProvider>
       </article>
     </StickyProvider>
   );

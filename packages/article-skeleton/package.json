@@ -104,6 +104,7 @@
     "@times-components/user-state": "0.1.54",
     "@times-components/utils": "6.3.17",
     "@times-components/video": "4.11.0",
+    "algoliasearch": "4.9.0",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
     "luxon": "1.18.0",
