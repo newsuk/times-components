@@ -2,14 +2,15 @@
 
 const { ApolloClient } = require("apollo-client");
 const { AppRegistry } = require("react-native-web");
+const { ApolloLink } = require("apollo-link");
 const { createHttpLink } = require("apollo-link-http");
+const { createPersistedQueryLink } = require("apollo-link-persisted-queries");
 const fetch = require("node-fetch");
 const { fragmentMatcher } = require("@times-components/schema");
 const { getDataFromTree } = require("react-apollo");
 const { InMemoryCache } = require("apollo-cache-inmemory");
 const ReactDOMServer = require("react-dom/server");
 const { ServerStyleSheet } = require("styled-components");
-const { ApolloLink } = require("apollo-link");
 const safeStringify = require("./safe-stringify");
 const errorLink = require("./graphql-error-link");
 const LoggingLink = require("./graphql-logging-link");
@@ -31,11 +32,15 @@ const makeClient = options => {
 
   const httpLink = createHttpLink(networkInterfaceOptions);
 
-  const link = ApolloLink.from([
-    new LoggingLink(options.uri, options.logger),
-    errorLink(options.logger),
-    httpLink
-  ]);
+  const link = ApolloLink.from(
+    [
+      new LoggingLink(options.uri, options.logger),
+      errorLink(options.logger),
+      options.usePersistedQueries &&
+        createPersistedQueryLink({ useGETForHashedQueries: true }),
+      httpLink
+    ].filter(Boolean)
+  );
 
   return new ApolloClient({
     cache: new InMemoryCache({ addTypename: true, fragmentMatcher }),

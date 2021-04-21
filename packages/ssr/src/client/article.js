@@ -12,7 +12,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     spotAccountId,
     paidContentClassName,
     userState,
-    isPreview
+    isPreview,
+    additionalRelatedArticlesFlag
   } = window.nuk.article;
   const { getCookieValue } = window.nuk;
 
@@ -26,7 +27,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     spotAccountId,
     paidContentClassName,
     userState,
-    isPreview
+    isPreview,
+    additionalRelatedArticlesFlag
   };
 
   const clientOptions = {

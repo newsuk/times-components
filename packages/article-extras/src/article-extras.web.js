@@ -7,6 +7,7 @@ import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 import ArticleTopics from "./article-topics";
 import { ShareAndSaveContainer } from "./styles/responsive";
+import { relatedArticleSlice as sampleRelatedArticleSlice } from "../fixtures/article-extras";
 
 const clearingStyle = {
   clear: "both"
@@ -24,7 +25,8 @@ const ArticleExtras = ({
   relatedArticleSlice,
   relatedArticlesVisible,
   spotAccountId,
-  topics
+  topics,
+  additionalRelatedArticlesFlag
 }) => {
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticles = (
@@ -63,6 +65,14 @@ const ArticleExtras = ({
           isVisible={relatedArticlesVisible}
           slice={relatedArticleSlice}
         />
+        {additionalRelatedArticlesFlag && (
+          <RelatedArticles
+            heading="Additional Featured Articles"
+            analyticsStream={analyticsStream}
+            isVisible={relatedArticlesVisible}
+            slice={sampleRelatedArticleSlice}
+          />
+        )}
       </div>
       {sponsoredArticles}
 
@@ -99,7 +109,8 @@ ArticleExtras.propTypes = {
   spotAccountId: PropTypes.string,
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
-  sharingEnabled: PropTypes.bool.isRequired
+  sharingEnabled: PropTypes.bool.isRequired,
+  additionalRelatedArticlesFlag: PropTypes.bool.isRequired
 };
 
 ArticleExtras.defaultProps = {

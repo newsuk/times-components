@@ -213,7 +213,8 @@ const renderArticle = ({
   section,
   template,
   isTeaser,
-  isMeteredExpired
+  isMeteredExpired,
+  additionalRelatedArticlesFlag
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, error, refetch }) => {
@@ -272,6 +273,7 @@ const renderArticle = ({
               "onVideoPress"
             )}
             refetch={refetch}
+            additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
           />
         </ContextProviderWithDefaults>
       );
@@ -323,6 +325,11 @@ const renderArticleConfig = ({
   const { isLoggedIn, isMeteredExpired, isShared } = user;
   const isTeaser = !isShared && (isMeteredExpired || !isLoggedIn);
 
+  const additionalRelatedArticlesFlag = boolean(
+    "Additional Featured Articles",
+    false,
+    "User State"
+  );
   return (
     <Fragment>
       {link}
@@ -353,7 +360,8 @@ const renderArticleConfig = ({
             isMeteredExpired,
             scale,
             section,
-            template
+            template,
+            additionalRelatedArticlesFlag
           })}
         </ArticleConfigurator>
       }

@@ -2,8 +2,13 @@ import { MockArticle, MockUser } from "@times-components/fixture-generator";
 
 const relatedArticleCount = 3;
 
-const articleTemplateTest = template =>
-  describe(`Article - ${template}`, () => {
+const articleTemplateTest = (template, options = {}) => {
+  const qs = options.qs || "";
+  const variant = options.variant || "Default";
+  const articlePath = `/article/8763d1a0-ca57-11e8-bde6-fae32479843d`;
+  const pageUrl = `${articlePath}${qs}`;
+
+  describe(`Article - ${template} - ${variant}`, () => {
     let sundayTimesArticleWithThreeRelatedArticles;
     let userWithBookmarks;
 
@@ -27,7 +32,7 @@ const articleTemplateTest = template =>
           Article: sundayTimesArticleWithThreeRelatedArticles,
           User: userWithBookmarks
         })
-        .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
+        .visit(pageUrl)
         .get("#related-articles")
         .scrollIntoView()
         .then(() => {
@@ -52,7 +57,7 @@ const articleTemplateTest = template =>
         Article: sundayTimesArticleWithThreeRelatedArticles,
         User: userWithBookmarks
       })
-        .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
+        .visit(pageUrl)
         .wait(2000);
 
       cy.get("#ad-header").should("exist");
@@ -75,7 +80,7 @@ const articleTemplateTest = template =>
       cy.task("startMockServerWith", {
         Article: articleWithCommentsEnabled,
         User: userWithBookmarks
-      }).visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d");
+      }).visit(pageUrl);
 
       cy.get("script[data-spotim-module]")
         .should("have.attr", "src", "https://launcher.spot.im/spot/5p0t_1m_1d")
@@ -96,7 +101,7 @@ const articleTemplateTest = template =>
       cy.task("startMockServerWith", {
         Article: articleWithCommentsDisabled,
         User: userWithBookmarks
-      }).visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d");
+      }).visit(pageUrl);
 
       cy.get("script[data-spotim-module]").should("not.exist");
     });
@@ -106,7 +111,7 @@ const articleTemplateTest = template =>
         Article: sundayTimesArticleWithThreeRelatedArticles,
         User: userWithBookmarks
       })
-        .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
+        .visit(pageUrl)
         .wait(1000)
         .injectAxe()
         .wait(200)
@@ -129,5 +134,6 @@ const articleTemplateTest = template =>
         .checkA11y();
     });
   });
+};
 
 export default articleTemplateTest;

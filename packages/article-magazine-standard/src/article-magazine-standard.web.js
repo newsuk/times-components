@@ -67,7 +67,8 @@ class ArticlePage extends Component {
       receiveChildList,
       spotAccountId,
       paidContentClassName,
-      isPreview
+      isPreview,
+      additionalRelatedArticlesFlag
     } = this.props;
 
     if (error || isLoading) {
@@ -85,6 +86,7 @@ class ArticlePage extends Component {
         spotAccountId={spotAccountId}
         paidContentClassName={paidContentClassName}
         isPreview={isPreview}
+        additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
       />
     );
   }
