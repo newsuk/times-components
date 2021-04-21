@@ -20,12 +20,13 @@ const preventDefaultedAction = decorateAction =>
     }
   ]);
 
-const createRelatedArticles = (decorateAction, fixtureData) => {
+const createRelatedArticles = (decorateAction, fixtureData, extraProps) => {
   const { relatedArticleSlice } = fixtureData;
   const props = {
     analyticsStream: storybookReporter,
     onPress: preventDefaultedAction(decorateAction)("onArticlePress"),
-    slice: relatedArticleSlice
+    slice: relatedArticleSlice,
+    ...extraProps
   };
   return (
     <ScrollView>
@@ -106,6 +107,16 @@ export default {
           draftStandard3RelatedArticlesFixture.data
         ),
       name: "Standard template with three DRAFT related articles (preview)",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) =>
+        createRelatedArticles(
+          decorateAction,
+          standard3RelatedArticlesFixture().data,
+          { heading: "Additional Featured Articles" }
+        ),
+      name: "Alternate heading",
       type: "story"
     }
   ],

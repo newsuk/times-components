@@ -13,7 +13,7 @@ class RelatedArticles extends Component {
   }
 
   render() {
-    const { isVisible, onPress, slice } = this.props;
+    const { isVisible, onPress, slice, heading } = this.props;
     if (!slice) return null;
     const { items, sliceName } = slice;
     if (
@@ -59,7 +59,7 @@ class RelatedArticles extends Component {
 
     return (
       <View>
-        <RelatedArticlesHeading />
+        <RelatedArticlesHeading heading={heading} />
         <StandardSlice
           itemCount={items.length}
           renderItems={config =>

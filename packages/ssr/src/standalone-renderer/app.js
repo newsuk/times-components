@@ -72,7 +72,8 @@ const toNumber = input => {
 
 server.get("/article/:id", (request, response) => {
   const {
-    params: { id: articleId }
+    params: { id: articleId },
+    query: { pq }
   } = request;
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
   const spotAccountId = process.env.SPOT_ID;
@@ -93,6 +94,7 @@ server.get("/article/:id", (request, response) => {
       {
         ...makeUrls,
         graphqlApiUrl,
+        usePersistedQueries: !!pq,
         logger,
         spotAccountId
       },
@@ -122,7 +124,7 @@ server.get("/article/:id", (request, response) => {
 server.get("/profile/:slug", (request, response) => {
   const {
     params: { slug: authorSlug },
-    query: { page }
+    query: { page, pq }
   } = request;
   const currentPage = toNumber(page) || 1;
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
@@ -130,7 +132,7 @@ server.get("/profile/:slug", (request, response) => {
   ssr
     .authorProfile(
       { authorSlug, currentPage },
-      { ...makeUrls, graphqlApiUrl, logger }
+      { ...makeUrls, graphqlApiUrl, usePersistedQueries: !!pq, logger }
     )
     .then(
       ({
@@ -156,13 +158,16 @@ server.get("/profile/:slug", (request, response) => {
 server.get("/topic/:slug", (request, response) => {
   const {
     params: { slug: topicSlug },
-    query: { page }
+    query: { page, pq }
   } = request;
   const currentPage = toNumber(page) || 1;
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
 
   ssr
-    .topic({ currentPage, topicSlug }, { ...makeUrls, graphqlApiUrl, logger })
+    .topic(
+      { currentPage, topicSlug },
+      { ...makeUrls, graphqlApiUrl, usePersistedQueries: !!pq, logger }
+    )
     .then(
       ({
         headMarkup,

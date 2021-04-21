@@ -44,7 +44,8 @@ const ArticleSkeleton = ({
   receiveChildList,
   spotAccountId,
   paidContentClassName,
-  isPreview
+  isPreview,
+  additionalRelatedArticlesFlag
 }) => {
   const {
     commentsEnabled,
@@ -189,6 +190,9 @@ const ArticleSkeleton = ({
                       }
                       spotAccountId={spotAccountId}
                       topics={topics}
+                      additionalRelatedArticlesFlag={
+                        additionalRelatedArticlesFlag
+                      }
                     />
                   )}
                 </LazyLoad>

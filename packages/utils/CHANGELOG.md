@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.3.17...@times-components/utils@6.4.0) (2021-04-20)
+
+
+### Features
+
+* **CPP-748:** Add persisted queries to TPA clients ([#2685](https://github.com/newsuk/times-components/issues/2685)) ([8de4f0f](https://github.com/newsuk/times-components/commit/8de4f0fdd3a2cfaf7b433d30ba8f8ef9380ca9f4))
+
+
+
+
+
 ## [6.3.17](https://github.com/newsuk/times-components/compare/@times-components/utils@6.3.16...@times-components/utils@6.3.17) (2021-03-24)
 
 **Note:** Version bump only for package @times-components/utils
