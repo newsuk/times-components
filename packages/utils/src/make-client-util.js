@@ -34,6 +34,8 @@ const makeClient = () => {
   );
 
   return new ApolloClient({
+    name: `@times-components/utils (${window.nuk.graphqlapi.clientName ||
+      "unknown"})`,
     cache: new InMemoryCache({ fragmentMatcher }),
     link
   });

@@ -50,6 +50,7 @@ const makeClient = options => {
   );
 
   return new ApolloClient({
+    name: `@times-components/ssr/client (${options.clientName || "unknown"})`,
     cache: new InMemoryCache({ fragmentMatcher }).restore(
       options.initialState || {}
     ),
@@ -74,7 +75,8 @@ module.exports = (component, clientOptions, data) => {
     useGET: clientOptions.useGET,
     headers: clientOptions.headers,
     usePersistedQueries: window.nuk.graphqlapi.usePersistedQueries,
-    skipAuthorization: clientOptions.skipAuthorization
+    skipAuthorization: clientOptions.skipAuthorization,
+    clientName: window.nuk.graphqlapi.clientName
   });
 
   const reporterOptions = {

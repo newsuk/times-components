@@ -43,6 +43,7 @@ const makeClient = options => {
   );
 
   return new ApolloClient({
+    name: `@times-components/ssr/client (${options.clientName || "unknown"})`,
     cache: new InMemoryCache({ addTypename: true, fragmentMatcher }),
     link,
     ssrMode: true
