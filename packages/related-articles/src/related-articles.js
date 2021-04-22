@@ -1,17 +1,12 @@
 import React from "react";
 import { View } from "react-native";
-//import { useAlgoliaSearch } from "@times-components/article-skeleton";
 import { StandardSlice } from "@times-components/slice-layout";
-import { useAlgoliaSearch } from "../../article-skeleton/src/algolia-search-provider";
 import RelatedArticlesHeading from "./related-articles-heading";
 import RelatedArticleItem from "./related-article-item";
 import propTypes from "./related-articles-prop-types";
 import withTrackingContext from "./related-articles-tracking-context";
 
 const RelatedArticles = ({ isVisible, onPress, slice, heading }) => {
-  const { relatedArticles } = useAlgoliaSearch();
-  console.log("RelatedArticles useAlgoliaSearch", relatedArticles);
-
   if (!slice) return null;
   const { items, sliceName } = slice;
   if (

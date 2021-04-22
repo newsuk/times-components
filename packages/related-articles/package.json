@@ -68,7 +68,6 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-skeleton": "1.44.2",
     "@times-components/article-summary": "3.16.49",
     "@times-components/card": "6.4.30",
     "@times-components/context": "1.2.21",

@@ -5,6 +5,8 @@ import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
+import { useAlgoliaSearch } from "@times-components/utils";
+
 import ArticleTopics from "./article-topics";
 import { ShareAndSaveContainer } from "./styles/responsive";
 import { relatedArticleSlice as sampleRelatedArticleSlice } from "../fixtures/article-extras";
@@ -34,6 +36,16 @@ const ArticleExtras = ({
       <div id="sponsored-article" />
     </div>
   );
+
+  const { getRelatedArticles } = useAlgoliaSearch();
+
+  getRelatedArticles()
+    .then(data => {
+      console.log("useAlgoliaSearch RelatedArticles data", data);
+    })
+    .catch(error => {
+      console.log("useAlgoliaSearch RelatedArticles error", error);
+    });
 
   return (
     <UserState state={UserState.fullArticle} fallback={sponsoredArticles}>

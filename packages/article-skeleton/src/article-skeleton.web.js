@@ -8,6 +8,8 @@ import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
+import { AlgoliaSearchProvider } from "@times-components/utils";
+
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
   articleSkeletonDefaultProps,
@@ -18,7 +20,6 @@ import insertDropcapIntoAST from "./dropcap-util";
 import insertNativeAd from "./native-ad.web";
 // import insertNewsletterPuff from "./newsletter-puff.web";
 import tagLastParagraph from "./tracking/article-tracking-last-paragraph";
-import AlgoliaSearchProvider from "./algolia-search-provider";
 
 import {
   BodyContainer,
@@ -130,10 +131,7 @@ const ArticleSkeleton = ({
           logoUrl={logoUrl}
           paidContentClassName={paidContentClassName}
         />
-        <AlgoliaSearchProvider
-          active={additionalRelatedArticlesFlag}
-          headline={headline}
-        >
+        <AlgoliaSearchProvider>
           <Fragment>
             <HeaderAdContainer key="headerAd">
               <AdContainer slotName="header" style={styles.adMarginStyle} />
@@ -220,7 +218,5 @@ ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
 export { KeylineItem, ArticleKeylineItem } from "./keylines";
 
 export { ArticleLink };
-
-export { useAlgoliaSearch } from "./algolia-search-provider";
 
 export default articleTrackingContext(withTrackScrollDepth(ArticleSkeleton));
