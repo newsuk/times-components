@@ -11,6 +11,7 @@ module.exports = (
   {
     graphqlApiUrl,
     usePersistedQueries,
+    clientName,
     logger,
     logoUrl,
     makeArticleUrl,
@@ -53,7 +54,8 @@ module.exports = (
       headers,
       logger,
       uri: graphqlApiUrl,
-      usePersistedQueries
+      usePersistedQueries,
+      clientName
     },
     data: {
       articleId,

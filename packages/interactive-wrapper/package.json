@@ -1,6 +1,6 @@
 {
   "name": "@times-components/interactive-wrapper",
-  "version": "0.8.6",
+  "version": "0.8.7",
   "description": "Wrapper for legacy Interactive components",
   "main": "dist/interactive-wrapper",
   "dev": "src/interactive-wrapper",
@@ -42,7 +42,7 @@
     "@times-components/eslint-config-thetimes": "0.8.16",
     "@times-components/jest-configurator": "2.6.11",
     "@times-components/jest-serializer": "3.2.23",
-    "@times-components/storybook": "4.1.58",
+    "@times-components/storybook": "4.1.59",
     "@times-components/test-utils": "2.3.8",
     "@times-components/webpack-configurator": "2.0.27",
     "babel-jest": "24.8.0",
@@ -59,8 +59,8 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/image": "6.7.29",
-    "@times-components/utils": "6.4.0",
+    "@times-components/image": "6.7.30",
+    "@times-components/utils": "6.4.1",
     "prop-types": "15.7.2",
     "react-native-webview": "7.0.5"
   },
