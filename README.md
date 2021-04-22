@@ -13,8 +13,8 @@ Home of The Times' `react`/`react native` components, using
 We require MacOS with [Node.js](https://nodejs.org) (for specific version please check package.json restrictions),
 [yarn](https://yarnpkg.com) (latest)
 
-Native development
-requires [Xcode](https://developer.apple.com/xcode),
+Native development requires
+[Xcode](https://developer.apple.com/xcode),
 [JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html) and
 [pip](https://pip.pypa.io/en/stable/installing/).
 
