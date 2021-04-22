@@ -3,7 +3,14 @@ const runServer = require("../lib/run-server");
 
 module.exports = (
   { currentPage, topicSlug },
-  { graphqlApiUrl, usePersistedQueries, logger, makeArticleUrl, makeTopicUrl }
+  {
+    graphqlApiUrl,
+    usePersistedQueries,
+    clientName,
+    logger,
+    makeArticleUrl,
+    makeTopicUrl
+  }
 ) => {
   if (typeof topicSlug !== "string") {
     throw new Error(`Topic slug should be a string. Received ${topicSlug}`);
@@ -35,6 +42,7 @@ module.exports = (
       logger,
       uri: graphqlApiUrl,
       usePersistedQueries,
+      clientName,
       headers: {
         "x-new-topic-data-source": true
       }
