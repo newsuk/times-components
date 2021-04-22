@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.54](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.6.53...@times-components/save-star-web@0.6.54) (2021-04-22)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
 ## [0.6.53](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.6.52...@times-components/save-star-web@0.6.53) (2021-04-20)
 
 **Note:** Version bump only for package @times-components/save-star-web

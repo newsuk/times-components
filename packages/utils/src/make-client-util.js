@@ -12,12 +12,14 @@ const makeClient = () => {
   let usePersistedQueries = null;
   let acsTnlCookie = null;
   let sacsTnlCookie = null;
+  let clientName = "unknown";
 
   if (typeof window !== "undefined" && window.nuk) {
     graphqlapi = window.nuk.graphqlapi.url;
     usePersistedQueries = !!window.nuk.graphqlapi.usePersistedQueries;
     acsTnlCookie = window.nuk.getCookieValue("acs_tnl");
     sacsTnlCookie = window.nuk.getCookieValue("sacs_tnl");
+    clientName = window.nuk.graphqlapi.clientName || clientName;
   }
   const networkInterfaceOptions = { fetch, headers: {}, uri: graphqlapi };
 
@@ -34,6 +36,7 @@ const makeClient = () => {
   );
 
   return new ApolloClient({
+    name: `@times-components/utils (${clientName})`,
     cache: new InMemoryCache({ fragmentMatcher }),
     link
   });
