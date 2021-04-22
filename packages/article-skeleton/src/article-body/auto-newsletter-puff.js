@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import InlineNewsletterPuff from "./inline-newsletter-puff";
+import { ViewCountWrapper } from "@times-components/ts-components";
 
-import ViewCountWrapper from "./view-count-wrapper";
+import InlineNewsletterPuff from "./inline-newsletter-puff";
 
 const AutoNewsletterPuff = ({
   analyticsStream,
