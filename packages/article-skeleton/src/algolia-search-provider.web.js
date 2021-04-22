@@ -3,17 +3,18 @@ import PropTypes from "prop-types";
 
 import initAlgoliaClient from "./algolia-client";
 
-const AlgoliaSearchContext = React.createContext({});
+const AlgoliaSearchContext = React.createContext();
 
-const AlgoliaSearchProvider = ({ headline, children }) => {
+const AlgoliaSearchProvider = ({ active, headline, children }) => {
   const [client, setClient] = useState();
-
   const [relatedArticles, setRelatedArticles] = useState();
 
   useMemo(async () => {
-    const algolia = await initAlgoliaClient();
-    setClient(algolia);
-  }, []);
+    if (active) {
+      const algolia = await initAlgoliaClient();
+      setClient(algolia);
+    }
+  }, [active]);
 
   useMemo(
     async () => {
@@ -42,8 +43,13 @@ export const useAlgoliaSearch = () => {
 };
 
 AlgoliaSearchProvider.propTypes = {
+  active: PropTypes.bool,
   headline: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired
+};
+
+AlgoliaSearchProvider.defaultProps = {
+  active: false
 };
 
 export default AlgoliaSearchProvider;

@@ -130,7 +130,10 @@ const ArticleSkeleton = ({
           logoUrl={logoUrl}
           paidContentClassName={paidContentClassName}
         />
-        <AlgoliaSearchProvider headline={headline}>
+        <AlgoliaSearchProvider
+          active={additionalRelatedArticlesFlag}
+          headline={headline}
+        >
           <Fragment>
             <HeaderAdContainer key="headerAd">
               <AdContainer slotName="header" style={styles.adMarginStyle} />
@@ -217,5 +220,7 @@ ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
 export { KeylineItem, ArticleKeylineItem } from "./keylines";
 
 export { ArticleLink };
+
+export { useAlgoliaSearch } from "./algolia-search-provider";
 
 export default articleTrackingContext(withTrackScrollDepth(ArticleSkeleton));

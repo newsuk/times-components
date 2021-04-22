@@ -3,8 +3,8 @@ import algoliasearch from "algoliasearch";
 const initAlgoliaClient = async () => {
   try {
     const client = algoliasearch(
-      process.env.ALGOLIA_ID,
-      process.env.ALGOLIA_SEARCH_KEY
+      "PZGYBTWG3J",
+      "572d633b038f582c813e45a798b94238"
     );
     return await client.initIndex("prod_articles");
   } catch (error) {
