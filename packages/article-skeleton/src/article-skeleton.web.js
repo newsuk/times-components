@@ -131,7 +131,7 @@ const ArticleSkeleton = ({
           logoUrl={logoUrl}
           paidContentClassName={paidContentClassName}
         />
-        <AlgoliaSearchProvider>
+        <AlgoliaSearchProvider article={{ id: articleId }}>
           <Fragment>
             <HeaderAdContainer key="headerAd">
               <AdContainer slotName="header" style={styles.adMarginStyle} />
