@@ -8,6 +8,8 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
+import { AlgoliaSearchProvider } from "@times-components/utils";
+
 import { UserState } from "./mocks";
 import ArticleExtras from "../src/article-extras";
 import { relatedArticleSlice, topics } from "../fixtures/article-extras";
@@ -35,16 +37,18 @@ export default () => {
       test: () => {
         UserState.mockStates = [UserState.fullArticle, UserState.loggedIn];
         const testInstance = TestRenderer.create(
-          <ArticleExtras
-            analyticsStream={() => {}}
-            articleId="dummy-article-id"
-            commentsEnabled
-            registerNode={() => {}}
-            relatedArticleSlice={relatedArticleSlice}
-            relatedArticlesVisible
-            spotAccountId="dummy-spot-id"
-            topics={topics}
-          />
+          <AlgoliaSearchProvider article={{ id: "dummy-article-id" }}>
+            <ArticleExtras
+              analyticsStream={() => {}}
+              articleId="dummy-article-id"
+              commentsEnabled
+              registerNode={() => {}}
+              relatedArticleSlice={relatedArticleSlice}
+              relatedArticlesVisible
+              spotAccountId="dummy-spot-id"
+              topics={topics}
+            />
+          </AlgoliaSearchProvider>
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
@@ -56,16 +60,18 @@ export default () => {
       test: () => {
         UserState.mockStates = [];
         const testInstance = TestRenderer.create(
-          <ArticleExtras
-            analyticsStream={() => {}}
-            articleId="dummy-article-id"
-            commentsEnabled
-            registerNode={() => {}}
-            relatedArticleSlice={relatedArticleSlice}
-            relatedArticlesVisible
-            spotAccountId="dummy-spot-id"
-            topics={topics}
-          />
+          <AlgoliaSearchProvider article={{ id: "dummy-article-id" }}>
+            <ArticleExtras
+              analyticsStream={() => {}}
+              articleId="dummy-article-id"
+              commentsEnabled
+              registerNode={() => {}}
+              relatedArticleSlice={relatedArticleSlice}
+              relatedArticlesVisible
+              spotAccountId="dummy-spot-id"
+              topics={topics}
+            />
+          </AlgoliaSearchProvider>
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
@@ -76,16 +82,41 @@ export default () => {
       test: () => {
         UserState.mockStates = [UserState.fullArticle, UserState.shared];
         const testInstance = TestRenderer.create(
-          <ArticleExtras
-            analyticsStream={() => {}}
-            articleId="dummy-article-id"
-            commentsEnabled
-            registerNode={() => {}}
-            relatedArticleSlice={relatedArticleSlice}
-            relatedArticlesVisible
-            spotAccountId="dummy-spot-id"
-            topics={topics}
-          />
+          <AlgoliaSearchProvider article={{ id: "dummy-article-id" }}>
+            <ArticleExtras
+              analyticsStream={() => {}}
+              articleId="dummy-article-id"
+              commentsEnabled
+              registerNode={() => {}}
+              relatedArticleSlice={relatedArticleSlice}
+              relatedArticlesVisible
+              spotAccountId="dummy-spot-id"
+              topics={topics}
+            />
+          </AlgoliaSearchProvider>
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "renders the additional related articles",
+      test: () => {
+        UserState.mockStates = [UserState.fullArticle, UserState.loggedIn];
+        const testInstance = TestRenderer.create(
+          <AlgoliaSearchProvider article={{ id: "dummy-article-id" }}>
+            <ArticleExtras
+              analyticsStream={() => {}}
+              articleId="dummy-article-id"
+              commentsEnabled
+              registerNode={() => {}}
+              relatedArticleSlice={relatedArticleSlice}
+              relatedArticlesVisible
+              spotAccountId="dummy-spot-id"
+              topics={topics}
+              additionalRelatedArticlesFlag
+            />
+          </AlgoliaSearchProvider>
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
