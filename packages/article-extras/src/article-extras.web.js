@@ -38,13 +38,12 @@ const ArticleExtras = ({
 
   useMemo(
     () => {
-      if (additionalRelatedArticlesFlag) {
+      if (additionalRelatedArticlesFlag)
         getRelatedArticles()
           .then(data => {
             if (data) setAlgoliaRelatedArticleSlice(data);
           })
           .catch(e => console.error(e)); // eslint-disable-line no-console
-      }
     },
     [additionalRelatedArticlesFlag, getRelatedArticles]
   );

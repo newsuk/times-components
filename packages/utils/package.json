@@ -58,6 +58,7 @@
     "apollo-link": "1.2.4",
     "apollo-link-http": "1.5.14",
     "apollo-link-persisted-queries": "0.2.2",
+    "lodash.get": "4.4.2",
     "lodash.omitby": "4.6.0",
     "prop-types": "15.7.2",
     "react-native": "0.61.5",

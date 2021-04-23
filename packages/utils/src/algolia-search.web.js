@@ -4,11 +4,12 @@ import algoliasearch from "algoliasearch";
 
 import searchRelatedArticles from "./algolia-related-articles.web";
 
-const appId = "PZGYBTWG3J";
+const applicationId = "PZGYBTWG3J";
 const apiKey = "572d633b038f582c813e45a798b94238";
+const indexName = "prod_articles_by_published_date_desc";
 
 const createAlgoliaIndex = () =>
-  algoliasearch(appId, apiKey).initIndex("prod_articles");
+  algoliasearch(applicationId, apiKey).initIndex(indexName);
 
 const AlgoliaSearchContext = createContext();
 
@@ -38,8 +39,10 @@ export const useAlgoliaSearch = () => {
 
 AlgoliaSearchProvider.propTypes = {
   article: PropTypes.shape({
-    id: PropTypes.string.isRequired
-    // headline: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string,
+    section: PropTypes.string,
+    topics: PropTypes.arrayOf(PropTypes.shape({}))
   }).isRequired,
   children: PropTypes.node.isRequired
 };
