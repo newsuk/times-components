@@ -14,6 +14,19 @@ import { UserState } from "./mocks";
 import ArticleExtras from "../src/article-extras";
 import { relatedArticleSlice, topics } from "../fixtures/article-extras";
 
+jest.mock("@times-components/utils", () => {
+  const actualUtils = jest.requireActual("@times-components/utils");
+  return {
+    ...actualUtils,
+    useAlgoliaSearch: () => ({
+      getRelatedArticles: () => ({
+        sliceName: "StandardSlice",
+        items: []
+      })
+    })
+  };
+});
+
 export default () => {
   addSerializers(
     expect,
@@ -123,5 +136,6 @@ export default () => {
       }
     }
   ];
+
   iterator(tests);
 };

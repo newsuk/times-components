@@ -37,13 +37,11 @@ const ArticleExtras = ({
   const { getRelatedArticles } = useAlgoliaSearch();
 
   useMemo(
-    () => {
-      if (additionalRelatedArticlesFlag)
-        getRelatedArticles()
-          .then(data => {
-            if (data) setAlgoliaRelatedArticleSlice(data);
-          })
-          .catch(e => console.error(e)); // eslint-disable-line no-console
+    async () => {
+      if (additionalRelatedArticlesFlag) {
+        const data = await getRelatedArticles();
+        if (data) setAlgoliaRelatedArticleSlice(data);
+      }
     },
     [additionalRelatedArticlesFlag, getRelatedArticles]
   );
