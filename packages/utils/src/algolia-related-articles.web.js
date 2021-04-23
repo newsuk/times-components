@@ -59,6 +59,7 @@ const formatQuery = article => {
 const searchRelatedArticles = async (index, article) => {
   if (index) {
     const query = formatQuery(article);
+    console.log("AlgoliaSearch query", query); // eslint-disable-line no-console
     const search = await index.search(query, { hitsPerPage: 5 });
 
     if (search.hits.length > 0)
