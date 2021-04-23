@@ -86,7 +86,8 @@ const ArticleExtras = ({
         {additionalRelatedArticlesFlag &&
           algoliaRelatedArticleSlice && (
             <RelatedArticles
-              heading="Additional Featured Articles"
+              // heading="Additional Featured Articles"
+              heading={`AlgoliaSearch "${algoliaRelatedArticleSlice.query}"`}
               analyticsStream={analyticsStream}
               isVisible={relatedArticlesVisible}
               slice={algoliaRelatedArticleSlice}
