@@ -61,14 +61,15 @@ const searchRelatedArticles = async (index, article) => {
     const query = formatQuery(article);
     const search = await index.search(query, { hitsPerPage: 5 });
 
-    return {
-      query,
-      sliceName: "StandardSlice",
-      items: search.hits
-        .filter(({ id }) => id !== article.id)
-        .map(formatArticle)
-        .filter((item, i) => i < 3)
-    };
+    if (search.hits.length > 0)
+      return {
+        query,
+        sliceName: "StandardSlice",
+        items: search.hits
+          .filter(({ id }) => id !== article.id)
+          .map(formatArticle)
+          .filter((item, i) => i < 3)
+      };
   }
 
   return null;
