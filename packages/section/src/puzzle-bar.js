@@ -18,7 +18,7 @@ const PuzzleBar = ({ onPress }) => (
             {count > 1 && "s"}
           </Text>
           <View style={styles.puzzleBarArrow}>
-            <IconForwardArrow fillColour={colours.section.puzzle} />
+            <IconForwardArrow fillColour={colours.section.puzzle} height={12} width={7} />
           </View>
         </View>
       ) : null
