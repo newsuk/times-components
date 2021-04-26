@@ -6,7 +6,6 @@ import {
   colours,
   fonts,
 } from "@times-components/styleguide";
-import Image from "@times-components/image";
 import { IconForwardArrow } from "@times-components/icons";
 
 const Container = styled.div`
@@ -27,9 +26,11 @@ const Container = styled.div`
 `;
 
 const ImageContainer = styled.div`
+  padding-bottom: 13px;
   @media (min-width: ${breakpoints.medium}px) {
   width: 50%;
   padding-right: 20px;
+  padding-bottom: 0px;
 }
 `;
 
@@ -53,6 +54,7 @@ const Copy = styled.span`
   font-family: ${fonts.body};
   color: ${colours.functional.secondary};
   font-size: 16px;
+  padding-bottom: 8px;
 `;
 
 const LinkText = styled.span`
@@ -86,6 +88,12 @@ const LinkWrapper = styled.a`
   text-decoration: none;
 `
 
+const Image = styled.img`
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+`
+
 const InArticlePuff = ({
   label,
   imageUri,
@@ -98,7 +106,7 @@ const InArticlePuff = ({
     {
       imageUri ? (
         <ImageContainer>
-          <Image aspectRatio={1.42} uri={imageUri}/>
+          <Image src={imageUri} />
         </ImageContainer>) : null
     }
     <ContentContainer imageUri={imageUri}>
