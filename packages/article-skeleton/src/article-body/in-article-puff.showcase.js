@@ -1,9 +1,9 @@
 import React from "react";
-import InArticlePuff from "./in-article-puff";
 import styled from "styled-components";
 import {
   breakpoints,
 } from "@times-components/styleguide";
+import InArticlePuff from "./in-article-puff";
 
 const Wrapper = styled.div`
   width: 100%;

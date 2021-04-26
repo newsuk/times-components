@@ -115,6 +115,10 @@ const InArticlePuff = ({
   </Container>
 );
 
+const defaultProps = {
+  imageUri: null,
+}
+
 const propTypes = {
   label: PropTypes.string.isRequired,
   imageUri: PropTypes.string,
@@ -125,5 +129,6 @@ const propTypes = {
 };
 
 InArticlePuff.propTypes = propTypes;
+InArticlePuff.defaultProps = defaultProps;
 
 export default InArticlePuff;
