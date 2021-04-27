@@ -46,7 +46,8 @@ const ArticleSkeleton = ({
   spotAccountId,
   paidContentClassName,
   isPreview,
-  additionalRelatedArticlesFlag
+  additionalRelatedArticlesFlag,
+  algoliaSearchKeys
 }) => {
   const {
     commentsEnabled,
@@ -133,6 +134,7 @@ const ArticleSkeleton = ({
           paidContentClassName={paidContentClassName}
         />
         <AlgoliaSearchProvider
+          algoliaSearchKeys={algoliaSearchKeys}
           article={{ id: articleId, label, section, topics }}
         >
           <Fragment>
@@ -197,6 +199,7 @@ const ArticleSkeleton = ({
                       additionalRelatedArticlesFlag={
                         additionalRelatedArticlesFlag
                       }
+                      algoliaSearchKeys={algoliaSearchKeys}
                     />
                   )}
                 </LazyLoad>

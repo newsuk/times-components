@@ -20,7 +20,8 @@ module.exports = (
     spotAccountId,
     paidContentClassName,
     isPreview,
-    additionalRelatedArticlesFlag
+    additionalRelatedArticlesFlag,
+    algoliaSearchKeys
   },
   userState
 ) => {
@@ -68,7 +69,8 @@ module.exports = (
       userState,
       paidContentClassName,
       isPreview,
-      additionalRelatedArticlesFlag
+      additionalRelatedArticlesFlag,
+      algoliaSearchKeys
     },
     name: "article"
   };

@@ -75,7 +75,8 @@ class ArticlePage extends Component {
       receiveChildList,
       spotAccountId,
       isPreview,
-      additionalRelatedArticlesFlag
+      additionalRelatedArticlesFlag,
+      algoliaSearchKeys
     } = this.props;
 
     if (error || isLoading) {
@@ -93,6 +94,7 @@ class ArticlePage extends Component {
         spotAccountId={spotAccountId}
         isPreview={isPreview}
         additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
+        algoliaSearchKeys={algoliaSearchKeys}
       />
     );
   }

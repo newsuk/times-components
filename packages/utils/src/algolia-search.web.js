@@ -2,19 +2,17 @@ import React, { createContext, useMemo, useCallback, useContext } from "react";
 import PropTypes from "prop-types";
 import algoliasearch from "algoliasearch";
 
-import searchRelatedArticles from "./algolia-related-articles.web";
+import searchRelatedArticles from "./algolia-related-articles";
 
-const applicationId = "PZGYBTWG3J";
-const apiKey = "572d633b038f582c813e45a798b94238";
-const indexName = "prod_articles_by_published_date_desc";
-
-const createAlgoliaIndex = () =>
+const createAlgoliaIndex = ({ applicationId, apiKey, indexName }) =>
   algoliasearch(applicationId, apiKey).initIndex(indexName);
 
 const AlgoliaSearchContext = createContext();
 
-const AlgoliaSearchProvider = ({ article, children }) => {
-  const algoliaIndex = useMemo(() => createAlgoliaIndex(), []);
+const AlgoliaSearchProvider = ({ algoliaSearchKeys, article, children }) => {
+  const algoliaIndex = useMemo(() => createAlgoliaIndex(algoliaSearchKeys), [
+    algoliaSearchKeys
+  ]);
 
   const getRelatedArticles = useCallback(
     () => searchRelatedArticles(algoliaIndex, article),
@@ -38,6 +36,11 @@ export const useAlgoliaSearch = () => {
 };
 
 AlgoliaSearchProvider.propTypes = {
+  algoliaSearchKeys: PropTypes.shape({
+    applicationId: PropTypes.string.isRequired,
+    apiKey: PropTypes.string.isRequired,
+    indexName: PropTypes.string.isRequired
+  }).isRequired,
   article: PropTypes.shape({
     id: PropTypes.string.isRequired,
     label: PropTypes.string,

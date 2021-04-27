@@ -83,7 +83,8 @@ class ArticlePage extends Component {
       spotAccountId,
       paidContentClassName,
       isPreview,
-      additionalRelatedArticlesFlag
+      additionalRelatedArticlesFlag,
+      algoliaSearchKeys
     } = this.props;
 
     if (error || isLoading) {
@@ -102,6 +103,7 @@ class ArticlePage extends Component {
           paidContentClassName={paidContentClassName}
           isPreview={isPreview}
           additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
+          algoliaSearchKeys={algoliaSearchKeys}
         />
       </ArticleMainStandardContainer>
     );

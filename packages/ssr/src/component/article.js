@@ -29,7 +29,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     userState,
     paidContentClassName,
     isPreview,
-    additionalRelatedArticlesFlag
+    additionalRelatedArticlesFlag,
+    algoliaSearchKeys
   } = data;
 
   return React.createElement(
@@ -85,7 +86,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               spotAccountId,
               paidContentClassName,
               isPreview,
-              additionalRelatedArticlesFlag
+              additionalRelatedArticlesFlag,
+              algoliaSearchKeys
             })
           );
         }
