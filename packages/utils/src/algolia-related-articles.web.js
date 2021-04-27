@@ -68,8 +68,8 @@ const searchRelatedArticles = async (index, article) => {
         sliceName: "StandardSlice",
         items: search.hits
           .filter(({ id }) => id !== article.id)
+          .filter((a, i) => i < 3)
           .map(formatArticle)
-          .filter((item, i) => i < 3)
       };
   }
 

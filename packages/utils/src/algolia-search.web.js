@@ -4,8 +4,14 @@ import algoliasearch from "algoliasearch";
 
 import searchRelatedArticles from "./algolia-related-articles";
 
-const createAlgoliaIndex = ({ applicationId, apiKey, indexName }) =>
-  algoliasearch(applicationId, apiKey).initIndex(indexName);
+const createAlgoliaIndex = algoliaSearchKeys => {
+  if (algoliaSearchKeys) {
+    const { applicationId, apiKey, indexName } = algoliaSearchKeys;
+    return algoliasearch(applicationId, apiKey).initIndex(indexName);
+  }
+  
+  return null;
+};
 
 const AlgoliaSearchContext = createContext();
 
