@@ -141,7 +141,7 @@ const InArticlePuff: React.FC<InArticlePuffProps> = ({
       </MainContentContainer>
       <LinkWrapper href={link}>
         <LinkText>{linkText}</LinkText>
-        <IconForwardArrow fillColour='#BF0000' />
+        <IconForwardArrow fillColour='#BF0000' height={18} width={8} />
       </LinkWrapper>
     </ContentContainer>
   </Container>
