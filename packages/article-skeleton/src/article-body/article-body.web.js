@@ -15,13 +15,13 @@ import { colours, spacing } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
+import { InArticlePuff } from "@times-components/ts-components";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import InlineNewsletterPuff, {
   PreviewNewsletterPuff
 } from "./inline-newsletter-puff";
 import AutoNewsletterPuff from "./auto-newsletter-puff";
-import { InArticlePuff } from "@times-components/ts-components";
 import {
   PrimaryImg,
   SecondaryImg,
