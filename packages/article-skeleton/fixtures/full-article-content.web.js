@@ -149,6 +149,22 @@ export default [
         name: "interactive"
       },
       {
+        attributes: {
+          element: {
+            attributes: {
+              label: "INTERACTIVE",
+              copy: "See how the virus has escalated in areas scross the country as the number of identified cases in Britain continues to grow",
+              headline: "Tracking coronavirus in the UK: where latest cases have spread",
+              link: "https://www.thetimes.co.uk/",
+              linkText: "Read more"
+            },
+            value: "in-article-puff"
+          }
+        },
+        children: [],
+        name: "interactive"
+      },
+      {
         attributes: {},
         children: [
           {
