@@ -8,6 +8,8 @@ import {
   spacing,
   // @ts-ignore
 } from '@times-components/styleguide';
+// @ts-ignore
+import { IconForwardArrow } from '@times-components/icons';
 
 
 type InArticlePuffProps = {
@@ -139,6 +141,7 @@ const InArticlePuff: React.FC<InArticlePuffProps> = ({
       </MainContentContainer>
       <LinkWrapper href={link}>
         <LinkText>{linkText}</LinkText>
+        <IconForwardArrow fillColour='#BF0000' />
       </LinkWrapper>
     </ContentContainer>
   </Container>
