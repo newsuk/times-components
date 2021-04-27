@@ -9,7 +9,7 @@ const createAlgoliaIndex = algoliaSearchKeys => {
     const { applicationId, apiKey, indexName } = algoliaSearchKeys;
     return algoliasearch(applicationId, apiKey).initIndex(indexName);
   }
-  
+
   return null;
 };
 

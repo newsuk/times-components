@@ -6,11 +6,20 @@ import { AlgoliaSearchProvider } from "@times-components/utils";
 import ArticleExtras from "./src/article-extras";
 import { relatedArticleSlice, topics } from "./fixtures/article-extras";
 
+const algoliaSearchKeys = {
+  applicationId: "",
+  apiKey: "",
+  indexName: ""
+};
+
 export default {
   children: [
     {
       component: ({ boolean }) => (
-        <AlgoliaSearchProvider article={{ id: "dummy-article-id" }}>
+        <AlgoliaSearchProvider
+          algoliaSearchKeys={algoliaSearchKeys}
+          article={{ id: "dummy-article-id" }}
+        >
           <ArticleExtras
             analyticsStream={() => {}}
             articleId="dummy-article-id"
