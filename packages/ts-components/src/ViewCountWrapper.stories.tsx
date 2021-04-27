@@ -1,8 +1,8 @@
 import React from 'react';
 
 // @ts-ignore
-// tslint:disable-next-line:no-implicit-dependencies
 import { showcaseConverter } from '@times-components/storybook';
+
 import ViewCountWrapper from './ViewCountWrapper';
 
 const setCookieConsent = (value: boolean) => {
@@ -27,7 +27,7 @@ const showcase = {
       }) => {
         const trackingName = 'counter';
         const show = bool('show', true);
-        const consent = bool('Set Constent Cookie', true);
+        const consent = bool('Set Consent Cookie', true);
 
         setCookieConsent(consent);
 

@@ -1,7 +1,5 @@
-import React, {FC, useEffect, useRef, useState} from 'react';
-
-import {getStorageProvider, hasCookieConsent} from './utils';
-
+import React, { FC, useEffect, useRef, useState } from 'react';
+import { getStorageProvider, hasCookieConsent } from './utils';
 
 const STORAGE_KEY = 'view-count';
 
@@ -42,7 +40,7 @@ const incrementViewCount = (trackingName: string) => {
 const ViewCountWrapper: FC<{
   displayFunction?: (count: number) => boolean;
   trackingName: string;
-}> = ({displayFunction = () => true, trackingName, children}) => {
+}> = ({ displayFunction = () => true, trackingName, children }) => {
   const [viewCount, setViewCount] = useState();
   const ref = useRef<HTMLDivElement | null>(null);
   let observer: IntersectionObserver | null;
@@ -55,22 +53,23 @@ const ViewCountWrapper: FC<{
   useEffect(
     () => {
       observer =
-        typeof window !== 'undefined' &&
-        window.IntersectionObserver &&
-        new window.IntersectionObserver(
-          entries => {
-            if (entries[0].isIntersecting) {
-              observer?.disconnect();
-              incrementViewCount(trackingName);
+        (typeof window !== 'undefined' &&
+          window.IntersectionObserver &&
+          new window.IntersectionObserver(
+            entries => {
+              if (entries[0].isIntersecting) {
+                observer && observer.disconnect();
+                incrementViewCount(trackingName);
+              }
+            },
+            {
+              threshold: 0.5
             }
-          },
-          {
-            threshold: 0.5
-          }
-        ) || null;
+          )) ||
+        null;
       if (ref.current) {
-        const {current} = ref;
-        observer?.observe(current);
+        const { current } = ref;
+        observer && observer.observe(current);
       }
     },
     [ref]
@@ -80,10 +79,10 @@ const ViewCountWrapper: FC<{
 
   return (
     <>
-      <div className="view-count-observer" ref={ref}/>
+      <div className="view-count-observer" ref={ref} />
       <div
         className="view-count"
-        style={{display: display ? 'block' : 'none'}}
+        style={{ display: display ? 'block' : 'none' }}
       >
         {children}
       </div>

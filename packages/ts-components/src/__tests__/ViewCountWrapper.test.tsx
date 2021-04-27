@@ -3,6 +3,7 @@
  */
 import React from 'react';
 import { create } from 'react-test-renderer';
+
 // @ts-ignore
 import { delay } from '@times-components/test-utils';
 
@@ -60,22 +61,23 @@ describe('<ViewCountWrapper>', () => {
     });
   });
   describe('intersectionObserverTests', () => {
-    let oldIntersectionObserver:any;
+    type IntersectionObserver = {};
+    let oldIntersectionObserver: IntersectionObserver | typeof window.IntersectionObserver;
     beforeEach(() => {
       oldIntersectionObserver = window.IntersectionObserver;
+
+      type MockCallbackType = (props: { isIntersecting: boolean }[]) => {};
+
       class FakeIntersectionObserver {
-        static callback:any;
-
+        static callback: MockCallbackType;
         static observe = jest.fn();
-
         static disconnect = jest.fn();
 
-        constructor(callback:any) {
+        constructor(callback: MockCallbackType) {
           FakeIntersectionObserver.callback = callback;
         }
 
         observe = FakeIntersectionObserver.observe;
-
         disconnect = FakeIntersectionObserver.disconnect;
 
         static intersect() {
@@ -87,6 +89,7 @@ describe('<ViewCountWrapper>', () => {
     });
 
     afterEach(() => {
+      // @ts-ignore
       window.IntersectionObserver = oldIntersectionObserver;
     });
 
@@ -114,7 +117,7 @@ describe('<ViewCountWrapper>', () => {
   describe('using a display function', () => {
     it('[1,3]', async () => {
       const trackingName = 'hello1';
-      const setCount = (count:number) =>
+      const setCount = (count: number) =>
         window.sessionStorage.setItem(
           'view-count',
           JSON.stringify({ [trackingName]: count })
