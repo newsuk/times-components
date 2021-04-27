@@ -39,6 +39,7 @@ import {
   Ad,
   InlineAdWrapper
 } from "../styles/article-body/responsive";
+import InArticlePuff from "./in-article-puff";
 
 export const responsiveDisplayWrapper = displayType => {
   switch (displayType) {
@@ -133,7 +134,7 @@ const renderers = ({
   },
   interactive(key, { url, element, display }) {
     const {
-      attributes: { code, copy, headline, imageUri, label },
+      attributes: { code, copy, headline, imageUri, label, link, linkText },
       attributes,
       value
     } = element;
@@ -157,6 +158,17 @@ const renderers = ({
             imageUri={decodeURIComponent(imageUri)}
             label={decodeURIComponent(label)}
           />
+        );
+        case "in-article-puff": 
+        return (
+        <InArticlePuff 
+          label={label}
+          imageUri={imageUri}
+          headline={headline}
+          copy={copy}
+          link={link}
+          linkText={linkText}
+        />
         );
       default:
         return (

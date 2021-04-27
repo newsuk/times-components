@@ -5,23 +5,29 @@ import {
   breakpoints,
   colours,
   fonts,
+  spacing,
 } from "@times-components/styleguide";
 import { IconForwardArrow } from "@times-components/icons";
 
 const Container = styled.div`
   height: ${({ imageUri }) => imageUri ? '414px' : '274px'};
-  width: 100%;
   background-color: #F9F9F9;
   border-top: 2px #13354E solid;
   display: flex;
   flex-direction: column;
   padding: 20px;
+  margin-right: ${spacing(2)};
+  margin-bottom: ${spacing(4)};
+  margin-left: ${spacing(2)};
   @media (min-width: ${breakpoints.medium}px) {
     height: 208px;
     flex-direction: row;
+    width: 80.8%;
+    margin: 0 auto ${spacing(4)};
   }
   @media (min-width: ${breakpoints.wide}px) {
     height: 240px;
+    width: 56.2%
   }
 `;
 
@@ -78,6 +84,7 @@ const MainContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  height: 100%;
 `;
 
 const LinkWrapper = styled.a`
