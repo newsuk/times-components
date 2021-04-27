@@ -199,7 +199,6 @@ const ArticleSkeleton = ({
                       additionalRelatedArticlesFlag={
                         additionalRelatedArticlesFlag
                       }
-                      algoliaSearchKeys={algoliaSearchKeys}
                     />
                   )}
                 </LazyLoad>
