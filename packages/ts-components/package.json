@@ -53,6 +53,7 @@
     "react": "16.9.0"
   },
   "devDependencies": {
+    "@times-components/storybook": "4.1.59",
     "@types/react-test-renderer": "16.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
