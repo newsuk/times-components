@@ -1,20 +1,21 @@
 import React from 'react';
-// @ts-ignore
+
 import styled from 'styled-components';
+
 import {
   breakpoints,
   colours,
   fonts,
   spacing,
-  // @ts-ignore
 } from '@times-components/styleguide';
-// @ts-ignore
+
 import { IconForwardArrow } from '@times-components/icons';
 
 
 type InArticlePuffProps = {
   label: string,
   imageUri?: string,
+
   headline: string,
   copy: string,
   link: string,

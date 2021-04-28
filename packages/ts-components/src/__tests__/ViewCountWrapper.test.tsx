@@ -4,7 +4,6 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-// @ts-ignore
 import { delay } from '@times-components/test-utils';
 
 import ViewCountWrapper from '../ViewCountWrapper';
