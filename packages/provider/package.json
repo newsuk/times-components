@@ -64,7 +64,7 @@
   "dependencies": {
     "@times-components/provider-queries": "2.14.2",
     "graphql-tag": "2.10.3",
-    "hoist-non-react-statics": "2.5.5",
+    "hoist-non-react-statics": "3.3.2",
     "lodash.isequal": "4.4.0",
     "lodash.pick": "4.4.0",
     "prop-types": "15.7.2",

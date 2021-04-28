@@ -1,7 +1,5 @@
 import React from 'react';
 
-// @ts-ignore
-// tslint:disable-next-line:no-implicit-dependencies
 import { showcaseConverter } from '@times-components/storybook';
 import InArticlePuff from './InArticlePuff';
 

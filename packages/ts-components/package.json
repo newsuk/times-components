@@ -55,7 +55,9 @@
   "devDependencies": {
     "@times-components/storybook": "4.1.59",
     "@types/react-test-renderer": "16.9.0",
+    "@types/styled-components": "5.1.9",
     "jest": "24.8.0",
+    "metro-react-native-babel-preset": "0.53.1",
     "prettier": "1.14.3",
     "react-native": "0.61.5",
     "react-test-renderer": "16.9.0",
