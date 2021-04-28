@@ -159,16 +159,16 @@ const renderers = ({
             label={decodeURIComponent(label)}
           />
         );
-        case "in-article-puff": 
+      case "in-article-puff":
         return (
-        <InArticlePuff 
-          label={label}
-          imageUri={imageUri}
-          headline={headline}
-          copy={copy}
-          link={link}
-          linkText={linkText}
-        />
+          <InArticlePuff
+            label={label}
+            imageUri={imageUri}
+            headline={headline}
+            copy={copy}
+            link={link}
+            linkText={linkText}
+          />
         );
       default:
         return (
