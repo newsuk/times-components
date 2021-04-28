@@ -214,7 +214,8 @@ const renderArticle = ({
   template,
   isTeaser,
   isMeteredExpired,
-  additionalRelatedArticlesFlag
+  additionalRelatedArticlesFlag,
+  algoliaSearchKeys
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, error, refetch }) => {
@@ -274,6 +275,7 @@ const renderArticle = ({
             )}
             refetch={refetch}
             additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
+            algoliaSearchKeys={algoliaSearchKeys}
           />
         </ContextProviderWithDefaults>
       );
@@ -325,6 +327,12 @@ const renderArticleConfig = ({
   const { isLoggedIn, isMeteredExpired, isShared } = user;
   const isTeaser = !isShared && (isMeteredExpired || !isLoggedIn);
 
+  const algoliaSearchKeys = {
+    applicationId: "",
+    apiKey: "",
+    indexName: ""
+  };
+
   const additionalRelatedArticlesFlag = boolean(
     "Additional Featured Articles",
     false,
@@ -361,7 +369,8 @@ const renderArticleConfig = ({
             scale,
             section,
             template,
-            additionalRelatedArticlesFlag
+            additionalRelatedArticlesFlag,
+            algoliaSearchKeys
           })}
         </ArticleConfigurator>
       }

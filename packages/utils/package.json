@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "6.4.1",
+  "version": "6.5.0",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "main": "dist",
   "dev": "src",
@@ -51,12 +51,14 @@
   },
   "dependencies": {
     "@times-components/schema": "0.6.24",
-    "@times-components/styleguide": "3.38.15",
+    "@times-components/styleguide": "3.38.16",
+    "algoliasearch": "4.9.0",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link": "1.2.4",
     "apollo-link-http": "1.5.14",
     "apollo-link-persisted-queries": "0.2.2",
+    "lodash.get": "4.4.2",
     "lodash.omitby": "4.6.0",
     "prop-types": "15.7.2",
     "react-native": "0.61.5",

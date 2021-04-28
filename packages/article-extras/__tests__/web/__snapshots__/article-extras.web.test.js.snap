@@ -74,3 +74,35 @@ Array [
   />,
 ]
 `;
+
+exports[`4. renders the additional related articles 1`] = `
+Array [
+  <div />,
+  <div>
+    <nav
+      data-cy="topic-tags"
+    >
+      <ArticleTopics />
+    </nav>
+  </div>,
+  <div
+    id="related-articles"
+  >
+    <RelatedArticles
+      isVisible={true}
+    />
+  </div>,
+  <div
+    id="sponsored-article-container"
+  >
+    <div
+      id="sponsored-article"
+    />
+  </div>,
+  <ArticleComments
+    articleId="dummy-article-id"
+    isEnabled={true}
+    spotAccountId="dummy-spot-id"
+  />,
+]
+`;

@@ -8,6 +8,8 @@ import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
+import { AlgoliaSearchProvider } from "@times-components/utils";
+
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
   articleSkeletonDefaultProps,
@@ -44,7 +46,8 @@ const ArticleSkeleton = ({
   spotAccountId,
   paidContentClassName,
   isPreview,
-  additionalRelatedArticlesFlag
+  additionalRelatedArticlesFlag,
+  algoliaSearchKeys
 }) => {
   const {
     commentsEnabled,
@@ -54,6 +57,7 @@ const ArticleSkeleton = ({
     section,
     url,
     headline,
+    label,
     topics,
     relatedArticleSlice,
     template,
@@ -129,7 +133,10 @@ const ArticleSkeleton = ({
           logoUrl={logoUrl}
           paidContentClassName={paidContentClassName}
         />
-        <Fragment>
+        <AlgoliaSearchProvider
+          algoliaSearchKeys={algoliaSearchKeys}
+          article={{ id: articleId, label, section, topics }}
+        >
           <Fragment>
             <HeaderAdContainer key="headerAd">
               <AdContainer slotName="header" style={styles.adMarginStyle} />
@@ -201,7 +208,7 @@ const ArticleSkeleton = ({
           <AdContainer slotName="pixel" />
           <AdContainer slotName="pixelteads" />
           <AdContainer slotName="pixelskin" />
-        </Fragment>
+        </AlgoliaSearchProvider>
       </article>
     </StickyProvider>
   );

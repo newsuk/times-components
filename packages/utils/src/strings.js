@@ -11,3 +11,6 @@ export const ratioTextToFloat = s => {
 
   return !Number.isNaN(ratio) ? ratio : 1;
 };
+
+export const stripTags = (str, replacement) =>
+  str.replace(/(<([^>]+)>)/gi, replacement);

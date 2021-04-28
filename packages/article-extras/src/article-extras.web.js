@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState, useMemo } from "react";
 import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";
 import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
+import { useAlgoliaSearch } from "@times-components/utils";
+
 import ArticleTopics from "./article-topics";
 import { ShareAndSaveContainer } from "./styles/responsive";
-import { relatedArticleSlice as sampleRelatedArticleSlice } from "../fixtures/article-extras";
 
 const clearingStyle = {
   clear: "both"
@@ -28,6 +29,23 @@ const ArticleExtras = ({
   topics,
   additionalRelatedArticlesFlag
 }) => {
+  const [
+    algoliaRelatedArticleSlice,
+    setAlgoliaRelatedArticleSlice
+  ] = useState();
+
+  const { getRelatedArticles } = useAlgoliaSearch();
+
+  useMemo(
+    async () => {
+      if (additionalRelatedArticlesFlag) {
+        const data = await getRelatedArticles();
+        if (data) setAlgoliaRelatedArticleSlice(data);
+      }
+    },
+    [additionalRelatedArticlesFlag, getRelatedArticles]
+  );
+
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticles = (
     <div id="sponsored-article-container">
@@ -65,14 +83,16 @@ const ArticleExtras = ({
           isVisible={relatedArticlesVisible}
           slice={relatedArticleSlice}
         />
-        {additionalRelatedArticlesFlag && (
-          <RelatedArticles
-            heading="Additional Featured Articles"
-            analyticsStream={analyticsStream}
-            isVisible={relatedArticlesVisible}
-            slice={sampleRelatedArticleSlice}
-          />
-        )}
+        {additionalRelatedArticlesFlag &&
+          algoliaRelatedArticleSlice && (
+            <RelatedArticles
+              // heading="Additional Featured Articles"
+              heading={`AlgoliaSearch "${algoliaRelatedArticleSlice.query}"`}
+              analyticsStream={analyticsStream}
+              isVisible={relatedArticlesVisible}
+              slice={algoliaRelatedArticleSlice}
+            />
+          )}
       </div>
       {sponsoredArticles}
 
