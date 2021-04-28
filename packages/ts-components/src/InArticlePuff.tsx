@@ -25,10 +25,9 @@ type ContainerType = {
   imageUri?: string,
 }
 
-const Container = styled.div<ContainerType>`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
-  height: ${(props: ContainerType ) => props.imageUri ? '414px' : '274px' };
   background-color: #F9F9F9;
   border-top: 2px #13354E solid;
   padding: 20px;
@@ -36,13 +35,11 @@ const Container = styled.div<ContainerType>`
   margin-bottom: ${spacing(4)};
   margin-left: ${spacing(2)};
   @media (min-width: ${breakpoints.medium}px) {
-    height: 208px;
     flex-direction: row;
     width: 80.8%;
     margin: 0 auto ${spacing(4)};
   }
   @media (min-width: ${breakpoints.wide}px) {
-    height: 240px;
     width: 56.2%
   }
 `
@@ -61,6 +58,9 @@ const Label = styled.span`
   font-size: 12px;
   color: #13354E;
   padding-bottom: 8px;
+  @media (min-width: ${breakpoints.medium}px) {
+    padding-bottom: 12px;
+  }
 `;
 
 const Headline = styled.span`
@@ -76,7 +76,7 @@ const Copy = styled.span`
   font-family: ${fonts.body};
   color: ${colours.functional.secondary};
   font-size: 16px;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
 `;
 
 const LinkText = styled.span`
@@ -100,7 +100,6 @@ const MainContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 80%;
 `;
 
 const LinkWrapper = styled.a`
@@ -126,7 +125,7 @@ const InArticlePuff: React.FC<InArticlePuffProps> = ({
   link,
   linkText
 }) => (
-  <Container imageUri={imageUri}>
+  <Container>
     {
       imageUri ? (
         <ImageContainer>
