@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.19](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.18...@times-components/lazy-load@0.6.19) (2021-04-28)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
 ## [0.6.18](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.17...@times-components/lazy-load@0.6.18) (2021-04-22)
 
 **Note:** Version bump only for package @times-components/lazy-load
