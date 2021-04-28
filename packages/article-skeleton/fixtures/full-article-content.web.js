@@ -153,8 +153,9 @@ export default [
           element: {
             attributes: {
               label: "INTERACTIVE",
-              copy: "See how the virus has escalated in areas scross the country as the number of identified cases in Britain continues to grow",
-              headline: "Tracking coronavirus in the UK: where latest cases have spread",
+              imageUri: "https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg",
+              copy: "Enter your postcode in our tool to find your nearest vacination centre",
+              headline: "Where can I get a Covid vaccine in England?",
               link: "https://www.thetimes.co.uk/",
               linkText: "Read more"
             },
