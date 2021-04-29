@@ -19,7 +19,11 @@ const NewsletterPuffLink = ({ onPress }) => (
     <InpPreferencesView>
       <InpPreferencesText>Manage preferences here</InpPreferencesText>
       <InpIconContainer>
-        <IconForwardArrow fillColour={colours.functional.action} height={12} width={7}/>
+        <IconForwardArrow
+          fillColour={colours.functional.action}
+          height={12}
+          width={7}
+        />
       </InpIconContainer>
     </InpPreferencesView>
   </Link>
