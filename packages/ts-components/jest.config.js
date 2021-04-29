@@ -9,6 +9,7 @@ const buildConfig = dir => {
     preset: "react-native",
     moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
     transformIgnorePatterns: [],
+    testEnvironment: 'jsdom',
     setupFiles: [],
     testMatch: [`**/packages/${name}/**/__tests__/*.test.tsx`, `**/packages/${name}/**/__tests__/*.test.ts`],
     transform: {

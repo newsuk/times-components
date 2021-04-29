@@ -61,7 +61,9 @@ describe('<ViewCountWrapper>', () => {
   });
   describe('intersectionObserverTests', () => {
     type IntersectionObserver = {};
-    let oldIntersectionObserver: IntersectionObserver | typeof window.IntersectionObserver;
+    let oldIntersectionObserver:
+      | IntersectionObserver
+      | typeof window.IntersectionObserver;
     beforeEach(() => {
       oldIntersectionObserver = window.IntersectionObserver;
 

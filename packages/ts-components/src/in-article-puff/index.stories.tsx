@@ -6,8 +6,7 @@ import InArticlePuff from '.';
 const showcase = {
   children: [
     {
-      component: () =>
-      (
+      component: () => (
         <InArticlePuff
           label="INTERACTIVE"
           imageUri="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg"
@@ -17,12 +16,11 @@ const showcase = {
           linkText="Read more"
         />
       ),
-      name: "In Article Puff",
-      type: "story"
+      name: 'In Article Puff',
+      type: 'story'
     },
     {
-      component: () =>
-      (
+      component: () => (
         <InArticlePuff
           label="INTERACTIVE"
           headline="Tracking coronavirus in the UK: where latest cases have spread"
@@ -31,14 +29,12 @@ const showcase = {
           linkText="Read more"
         />
       ),
-      name: "In Article Puff - No Image",
-      type: "story"
+      name: 'In Article Puff - No Image',
+      type: 'story'
     }
   ],
-  name: "Typescript Component/In Article Puff"
+  name: 'Typescript Component/In Article Puff'
 };
 
 // @ts-ignore
 showcaseConverter(module, showcase);
-
-

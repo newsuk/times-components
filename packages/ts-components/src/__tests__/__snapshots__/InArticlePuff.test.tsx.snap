@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InArticlePuff With an Image matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa jueDtf"
+  >
+    <a
+      class="sc-bwzfXH ijwBvr"
+      href="https://www.thetimes.co.uk/"
+    >
+      <img
+        class="sc-dnqmqq dIDdMH"
+        src="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg"
+      />
+    </a>
+    <div
+      class="sc-bZQynM hfBCyR"
+    >
+      <div
+        class="sc-gzVnrw ERVQt"
+      >
+        <span
+          class="sc-htpNat lixwTf"
+        >
+          INTERACTIVE
+        </span>
+        <a
+          class="sc-bxivhb bHZCrd"
+          href="https://www.thetimes.co.uk/"
+        >
+          Where can I get a Covid vaccine in England?
+        </a>
+        <span
+          class="sc-ifAKCX gOoiHU"
+        >
+          Enter your postcode in our tool to find your nearest vacination centre
+        </span>
+      </div>
+      <a
+        class="sc-htoDjs evwjQn"
+        href="https://www.thetimes.co.uk/"
+      >
+        <span
+          class="sc-EHOje wYTls"
+        >
+          Read more
+        </span>
+        <artsurfaceview>
+          <artgroup
+            opacity="1"
+            transform="0.13333333333333333,0,0,0.13333333333333333,-5.6,-1.6"
+          >
+            <artgroup
+              opacity="1"
+              transform="1,0,0,1,0,0"
+            >
+              <artshape
+                d="0,45.8,132,2,42,128.2,2,74.8,72,2,42,15.8,2,45.8,12,2,102,72,1"
+                fill="0,0.7490196078431373,0,0,1"
+                opacity="1"
+                stroke-width="1"
+                strokecap="1"
+                strokejoin="1"
+                transform="1,0,0,1,0,0"
+              />
+            </artgroup>
+          </artgroup>
+        </artsurfaceview>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InArticlePuff Without an image matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa jueDtf"
+  >
+    <div
+      class="sc-bZQynM jweHpA"
+    >
+      <div
+        class="sc-gzVnrw ERVQt"
+      >
+        <span
+          class="sc-htpNat dcpUgo"
+        >
+          INTERACTIVE
+        </span>
+        <a
+          class="sc-bxivhb bHZCrd"
+          href="https://www.thetimes.co.uk/"
+        >
+          Where can I get a Covid vaccine in England?
+        </a>
+        <span
+          class="sc-ifAKCX gOoiHU"
+        >
+          Enter your postcode in our tool to find your nearest vacination centre
+        </span>
+      </div>
+      <a
+        class="sc-htoDjs cIDLga"
+        href="https://www.thetimes.co.uk/"
+      >
+        <span
+          class="sc-EHOje wYTls"
+        >
+          Read more
+        </span>
+        <artsurfaceview>
+          <artgroup
+            opacity="1"
+            transform="0.13333333333333333,0,0,0.13333333333333333,-5.6,-1.6"
+          >
+            <artgroup
+              opacity="1"
+              transform="1,0,0,1,0,0"
+            >
+              <artshape
+                d="0,45.8,132,2,42,128.2,2,74.8,72,2,42,15.8,2,45.8,12,2,102,72,1"
+                fill="0,0.7490196078431373,0,0,1"
+                opacity="1"
+                stroke-width="1"
+                strokecap="1"
+                strokejoin="1"
+                transform="1,0,0,1,0,0"
+              />
+            </artgroup>
+          </artgroup>
+        </artsurfaceview>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
