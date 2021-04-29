@@ -6,7 +6,7 @@ import { create } from 'react-test-renderer';
 
 import { delay } from '@times-components/test-utils';
 
-import ViewCountWrapper from '../ViewCountWrapper';
+import ViewCountWrapper from '../ViewCountWrapper/ViewCountWrapper';
 
 describe('<ViewCountWrapper>', () => {
   beforeEach(() => {
@@ -61,7 +61,9 @@ describe('<ViewCountWrapper>', () => {
   });
   describe('intersectionObserverTests', () => {
     type IntersectionObserver = {};
-    let oldIntersectionObserver: IntersectionObserver | typeof window.IntersectionObserver;
+    let oldIntersectionObserver:
+      | IntersectionObserver
+      | typeof window.IntersectionObserver;
     beforeEach(() => {
       oldIntersectionObserver = window.IntersectionObserver;
 

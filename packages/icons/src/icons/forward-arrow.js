@@ -3,7 +3,7 @@ import { colours } from "@times-components/styleguide";
 import Svg, { G, Path } from "@times-components/svgs";
 import propTypes from "./prop-types";
 
-const ForwardArrow = ({ fillColour, height, width }) => (
+const ForwardArrow = ({ fillColour, height = 12, width = 7 }) => (
   <Svg
     aria-label="icon-forward-arrow"
     height={height}
