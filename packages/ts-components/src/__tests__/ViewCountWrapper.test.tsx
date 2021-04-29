@@ -6,7 +6,7 @@ import { create } from 'react-test-renderer';
 
 import { delay } from '@times-components/test-utils';
 
-import ViewCountWrapper from '../ViewCountWrapper/ViewCountWrapper';
+import ViewCountWrapper from '../view-count-wrapper/ViewCountWrapper';
 
 describe('<ViewCountWrapper>', () => {
   beforeEach(() => {
