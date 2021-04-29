@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { showcaseConverter } from '@times-components/storybook';
-import InArticlePuff from './InArticlePuff';
+import InArticlePuff from '.';
 
 const showcase = {
   children: [

@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useRef, useState } from 'react';
-import { getStorageProvider, hasCookieConsent } from './utils';
+import { getStorageProvider, hasCookieConsent } from '../utils';
 
 const STORAGE_KEY = 'view-count';
 
