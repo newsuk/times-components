@@ -10,13 +10,15 @@ import ViewCountWrapper from '../view-count-wrapper/ViewCountWrapper';
 
 describe('<ViewCountWrapper>', () => {
   beforeEach(() => {
-    if (typeof window !== 'undefined')
+    if (typeof window !== 'undefined') {
       window.document.cookie = 'nuk-consent-personalisation=1';
+    }
   });
 
   afterEach(() => {
-    if (typeof window !== 'undefined')
+    if (typeof window !== 'undefined') {
       window.document.cookie = 'nuk-consent-personalisation=;max-age=0';
+    }
   });
   describe('display function', () => {
     it('always renders', () => {
@@ -60,29 +62,30 @@ describe('<ViewCountWrapper>', () => {
     });
   });
   describe('intersectionObserverTests', () => {
-    type IntersectionObserver = {};
+    // interface IntersectionObserver {}
+
     let oldIntersectionObserver:
       | IntersectionObserver
       | typeof window.IntersectionObserver;
     beforeEach(() => {
       oldIntersectionObserver = window.IntersectionObserver;
 
-      type MockCallbackType = (props: { isIntersecting: boolean }[]) => {};
+      type MockCallbackType = (props: Array<{ isIntersecting: boolean }>) => {};
 
       class FakeIntersectionObserver {
         static callback: MockCallbackType;
         static observe = jest.fn();
         static disconnect = jest.fn();
 
-        constructor(callback: MockCallbackType) {
-          FakeIntersectionObserver.callback = callback;
+        static intersect(): void {
+          FakeIntersectionObserver.callback([{ isIntersecting: true }]);
         }
 
         observe = FakeIntersectionObserver.observe;
         disconnect = FakeIntersectionObserver.disconnect;
 
-        static intersect() {
-          FakeIntersectionObserver.callback([{ isIntersecting: true }]);
+        constructor(callback: MockCallbackType) {
+          FakeIntersectionObserver.callback = callback;
         }
       }
       // @ts-ignore

@@ -5,7 +5,6 @@ import { showcaseConverter } from '@times-components/storybook';
 import { action } from '@storybook/addon-actions';
 
 const analyticsStream = (event: any) => {
-  console.log(event);
   action('analytics-event')(event);
 };
 
