@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
 // @ts-ignore
 import styled from 'styled-components';
-
 import {
   breakpoints,
   colours,
@@ -9,24 +7,11 @@ import {
   spacing,
 } from '@times-components/styleguide';
 
-import { IconForwardArrow } from '@times-components/icons';
-
-
-type InArticlePuffProps = {
-  label: string,
-  imageUri?: string,
-
-  headline: string,
-  copy: string,
-  link: string,
-  linkText: string,
-}
-
 type ContainerType = {
   imageUri?: string,
 }
 
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #F9F9F9;
@@ -45,7 +30,7 @@ const Container = styled.div`
   }
 `
 
-const ImageContainer = styled.a`
+export const ImageContainer = styled.a`
   padding-bottom: 13px;
   @media (min-width: ${breakpoints.medium}px) {
   width: 50%;
@@ -54,7 +39,7 @@ const ImageContainer = styled.a`
 }
 `;
 
-const Label = styled.span<ContainerType>`
+export const Label = styled.span<ContainerType>`
   font-family: ${fonts.supporting};
   font-size: 12px;
   color: #13354E;
@@ -65,7 +50,7 @@ const Label = styled.span<ContainerType>`
   }
 `;
 
-const Headline = styled.a`
+export const Headline = styled.a`
   font-family: ${fonts.headline};
   font-size: 24px;
   padding-bottom: 8px;
@@ -79,20 +64,20 @@ const Headline = styled.a`
   }
 `;
 
-const Copy = styled.span`
+export const Copy = styled.span`
   font-family: ${fonts.body};
   color: ${colours.functional.secondary};
   font-size: 16px;
   padding-bottom: 20px;
 `;
 
-const LinkText = styled.span`
+export const LinkText = styled.span`
   font-family: ${fonts.supporting};
   font-size: 16px;
   margin-right: 16px;
 `;
 
-const ContentContainer = styled.div<ContainerType>`
+export const ContentContainer = styled.div<ContainerType>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,13 +86,13 @@ const ContentContainer = styled.div<ContainerType>`
 }
 `;
 
-const MainContentContainer = styled.div`
+export const MainContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 `;
 
-const LinkWrapper = styled.a<ContainerType>`
+export const LinkWrapper = styled.a<ContainerType>`
   display: flex;
   flex-direction: row;
   align-items: top;
@@ -122,43 +107,7 @@ const LinkWrapper = styled.a<ContainerType>`
   }
 `
 
-const Image = styled.img`
+export const Image = styled.img`
   width: 100%;
   object-fit: contain;
 `
-
-
-const InArticlePuff: React.FC<InArticlePuffProps> = ({
-  label,
-  imageUri,
-  headline,
-  copy,
-  link,
-  linkText
-}) => {
-  const [colour, setColour] = useState('#BF0000')
-
-return (
-  <Container>
-    {
-      imageUri ? (
-        <ImageContainer href={link}>
-          <Image src={imageUri} />
-        </ImageContainer>) : null
-    }
-    <ContentContainer imageUri={imageUri}>
-      <MainContentContainer>
-        <Label imageUri={imageUri}>{label}</Label>
-        <Headline href={link}>{headline}</Headline>
-        <Copy>{copy}</Copy>
-      </MainContentContainer>
-      <LinkWrapper href={link} imageUri={imageUri} onMouseOver={() => setColour('#696969')} onMouseLeave={() => setColour('#BF0000')}>
-        <LinkText>{linkText}</LinkText>
-        <IconForwardArrow fillColour={colour} height={18} width={8} />
-      </LinkWrapper>
-    </ContentContainer>
-  </Container>
-);
-  }
-
-export default InArticlePuff;
