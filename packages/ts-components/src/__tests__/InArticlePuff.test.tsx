@@ -1,0 +1,108 @@
+import React from 'react';
+import { render, cleanup } from '@testing-library/react';
+import InArticlePuff from '../in-article-puff';
+import '@testing-library/jest-dom';
+import '@testing-library/jest-dom/extend-expect';
+
+const baseProps = {
+  label: 'INTERACTIVE',
+  headline: 'Where can I get a Covid vaccine in England?',
+  copy:
+    'Enter your postcode in our tool to find your nearest vacination centre',
+  link: 'https://www.thetimes.co.uk/',
+  linkText: 'Read more'
+};
+
+describe('InArticlePuff', () => {
+  afterEach(() => {
+    cleanup();
+  });
+  describe('Without an image', () => {
+    it('renders the component', () => {
+      const { baseElement } = render(<InArticlePuff {...{ ...baseProps }} />);
+      expect(baseElement).toBeTruthy();
+    });
+    it('matches the snapshot', () => {
+      const { asFragment } = render(<InArticlePuff {...{ ...baseProps }} />);
+      expect(asFragment()).toMatchSnapshot();
+    });
+    it('renders the props correctly', () => {
+      const { getByText, getAllByRole, queryByRole } = render(
+        <InArticlePuff {...{ ...baseProps }} />
+      );
+      expect(getByText('INTERACTIVE')).toBeVisible();
+      expect(
+        getByText('Where can I get a Covid vaccine in England?')
+      ).toBeVisible();
+      expect(
+        getByText(
+          'Enter your postcode in our tool to find your nearest vacination centre'
+        )
+      ).toBeVisible();
+      expect(getByText('Read more')).toBeVisible();
+      expect(getAllByRole('link')).toHaveLength(2);
+      const links = getAllByRole('link');
+      for (const link of links) {
+        expect(link).toHaveAttribute('href', 'https://www.thetimes.co.uk/');
+      }
+      expect(queryByRole('img')).toBeFalsy();
+    });
+  });
+  describe('With an Image', () => {
+    it('renders', () => {
+      const { baseElement } = render(
+        <InArticlePuff
+          {...{
+            ...baseProps,
+            imageUri:
+              'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg'
+          }}
+        />
+      );
+      expect(baseElement).toBeTruthy();
+    });
+    it('matches the snapshot', () => {
+      const { asFragment } = render(
+        <InArticlePuff
+          {...{
+            ...baseProps,
+            imageUri:
+              'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg'
+          }}
+        />
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
+    it('renders the props correctly', () => {
+      const { getByText, getAllByRole, getByRole } = render(
+        <InArticlePuff
+          {...{
+            ...baseProps,
+            imageUri:
+              'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg'
+          }}
+        />
+      );
+      expect(getByText('INTERACTIVE')).toBeVisible();
+      expect(
+        getByText('Where can I get a Covid vaccine in England?')
+      ).toBeVisible();
+      expect(
+        getByText(
+          'Enter your postcode in our tool to find your nearest vacination centre'
+        )
+      ).toBeVisible();
+      expect(getByText('Read more')).toBeVisible();
+      expect(getByRole('img')).toBeVisible();
+      expect(getByRole('img')).toHaveAttribute(
+        'src',
+        'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg'
+      );
+      expect(getAllByRole('link')).toHaveLength(3);
+      const links = getAllByRole('link');
+      for (const link of links) {
+        expect(link).toHaveAttribute('href', 'https://www.thetimes.co.uk/');
+      }
+    });
+  });
+});
