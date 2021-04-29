@@ -57,9 +57,9 @@
     "react": "16.9.0"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "5.3.18",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
     "@times-components/storybook": "4.1.60",
-    "@times-components/test-utils": "2.3.8",
     "@types/react-test-renderer": "16.9.0",
     "@types/styled-components": "5.1.9",
     "jest": "24.8.0",
@@ -78,5 +78,10 @@
   },
   "prettier": {
     "singleQuote": true
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ]
   }
 }
