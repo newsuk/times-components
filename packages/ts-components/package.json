@@ -25,6 +25,7 @@
     "fix": "run-s fix:*",
     "fix:prettier": "prettier \"src/**/*.tsx\" \"__tests__/**/*.tsx\" --write",
     "fix:tslint": "tslint --fix --project .",
+    "lint": "tslint --project . && prettier \"src/**/*.ts\" --list-different",
     "test": "jest",
     "test:lint": "tslint --project . && prettier \"src/**/*.ts\" --list-different",
     "test:unit": "jest --coverage",
@@ -48,14 +49,22 @@
     "node": ">=8.9"
   },
   "dependencies": {
+    "@times-components/icons": "2.14.54",
     "@times-components/styleguide": "3.38.15",
+    "@times-components/tracking": "2.7.6",
     "@times-components/utils": "6.4.1",
-    "react": "16.9.0"
+    "react": "16.9.0",
+    "styled-components": "4.3.2"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "5.3.18",
+    "@storybook/react": "5.3.18",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@times-components/storybook": "4.1.59",
+    "@times-components/test-utils": "2.3.8",
+    "@types/jest": "24.9.1",
+    "@types/react-dom": "17.0.3",
     "@types/react-test-renderer": "16.9.0",
     "@types/styled-components": "5.1.9",
     "jest": "24.8.0",
@@ -65,7 +74,7 @@
     "react-test-renderer": "16.9.0",
     "tslint": "5.18.0",
     "tslint-config-prettier": "1.18.0",
-    "typescript": "3.7.2"
+    "typescript": "4.2.4"
   },
   "config": {
     "commitizen": {

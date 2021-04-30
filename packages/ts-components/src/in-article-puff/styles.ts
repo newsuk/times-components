@@ -4,18 +4,18 @@ import {
   breakpoints,
   colours,
   fonts,
-  spacing,
+  spacing
 } from '@times-components/styleguide';
 
 type ContainerType = {
-  imageUri?: string,
-}
+  imageUri?: string;
+};
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #F9F9F9;
-  border-top: 2px #13354E solid;
+  background-color: #f9f9f9;
+  border-top: 2px #13354e solid;
   padding: 20px;
   margin-right: ${spacing(2)};
   margin-bottom: ${spacing(4)};
@@ -26,26 +26,26 @@ export const Container = styled.div`
     margin: 0 auto ${spacing(4)};
   }
   @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%
+    width: 56.2%;
   }
-`
+`;
 
 export const ImageContainer = styled.a`
   padding-bottom: 13px;
   @media (min-width: ${breakpoints.medium}px) {
-  width: 50%;
-  padding-right: 20px;
-  padding-bottom: 0px;
-}
+    width: 50%;
+    padding-right: 20px;
+    padding-bottom: 0px;
+  }
 `;
 
 export const Label = styled.span<ContainerType>`
   font-family: ${fonts.supporting};
   font-size: 12px;
-  color: #13354E;
+  color: #13354e;
   padding-bottom: 8px;
   @media (min-width: ${breakpoints.medium}px) {
-    padding-top: ${( props: ContainerType ) => props.imageUri ? '4px' : 'none'};
+    padding-top: ${(props: ContainerType) => (props.imageUri ? '4px' : 'none')};
     padding-bottom: 12px;
   }
 `;
@@ -82,8 +82,8 @@ export const ContentContainer = styled.div<ContainerType>`
   flex-direction: column;
   justify-content: space-between;
   @media (min-width: ${breakpoints.medium}px) {
-   width: ${( props: ContainerType ) => props.imageUri ? '50%' : '100%'};
-}
+    width: ${(props: ContainerType) => (props.imageUri ? '50%' : '100%')};
+  }
 `;
 
 export const MainContentContainer = styled.div`
@@ -98,16 +98,17 @@ export const LinkWrapper = styled.a<ContainerType>`
   align-items: top;
   width: fit-content;
   text-decoration: none;
-  color: #BF0000;
+  color: #bf0000;
   :hover {
     color: ${colours.functional.secondary};
   }
   @media (min-width: ${breakpoints.medium}px) {
-    padding-bottom: ${( props: ContainerType ) => props.imageUri ? '4px' : 'none'};
+    padding-bottom: ${(props: ContainerType) =>
+      props.imageUri ? '4px' : 'none'};
   }
-`
+`;
 
 export const Image = styled.img`
   width: 100%;
   object-fit: contain;
-`
+`;

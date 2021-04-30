@@ -40,7 +40,7 @@
     "types": ["jest"],
     "typeRoots": ["node_modules/@types", "src/types", "../../node_modules/@types"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "index.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules/**"],
   "compileOnSave": false
 }

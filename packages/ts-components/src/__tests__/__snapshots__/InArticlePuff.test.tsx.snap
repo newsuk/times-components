@@ -3,10 +3,10 @@
 exports[`InArticlePuff With an Image matches the snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa jueDtf"
+    class="sc-bdVaJa kKnmIb"
   >
     <a
-      class="sc-bwzfXH ijwBvr"
+      class="sc-bwzfXH hJnROK"
       href="https://www.thetimes.co.uk/"
     >
       <img
@@ -15,13 +15,13 @@ exports[`InArticlePuff With an Image matches the snapshot 1`] = `
       />
     </a>
     <div
-      class="sc-bZQynM hfBCyR"
+      class="sc-bZQynM rbPju"
     >
       <div
         class="sc-gzVnrw ERVQt"
       >
         <span
-          class="sc-htpNat lixwTf"
+          class="sc-htpNat iMpDKo"
         >
           INTERACTIVE
         </span>
@@ -38,7 +38,7 @@ exports[`InArticlePuff With an Image matches the snapshot 1`] = `
         </span>
       </div>
       <a
-        class="sc-htoDjs evwjQn"
+        class="sc-htoDjs gXasLy"
         href="https://www.thetimes.co.uk/"
       >
         <span
@@ -46,27 +46,20 @@ exports[`InArticlePuff With an Image matches the snapshot 1`] = `
         >
           Read more
         </span>
-        <artsurfaceview>
-          <artgroup
-            opacity="1"
-            transform="0.13333333333333333,0,0,0.13333333333333333,-5.6,-1.6"
+        <svg
+          aria-label="icon-forward-arrow"
+          height="12"
+          viewBox="42 12 60 120"
+          width="7"
+        >
+          <g
+            fill="#BF0000"
           >
-            <artgroup
-              opacity="1"
-              transform="1,0,0,1,0,0"
-            >
-              <artshape
-                d="0,45.8,132,2,42,128.2,2,74.8,72,2,42,15.8,2,45.8,12,2,102,72,1"
-                fill="0,0.7490196078431373,0,0,1"
-                opacity="1"
-                stroke-width="1"
-                strokecap="1"
-                strokejoin="1"
-                transform="1,0,0,1,0,0"
-              />
-            </artgroup>
-          </artgroup>
-        </artsurfaceview>
+            <path
+              d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+            />
+          </g>
+        </svg>
       </a>
     </div>
   </div>
@@ -76,16 +69,16 @@ exports[`InArticlePuff With an Image matches the snapshot 1`] = `
 exports[`InArticlePuff Without an image matches the snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa jueDtf"
+    class="sc-bdVaJa kKnmIb"
   >
     <div
-      class="sc-bZQynM jweHpA"
+      class="sc-bZQynM jVKIde"
     >
       <div
         class="sc-gzVnrw ERVQt"
       >
         <span
-          class="sc-htpNat dcpUgo"
+          class="sc-htpNat fhZNeJ"
         >
           INTERACTIVE
         </span>
@@ -102,7 +95,7 @@ exports[`InArticlePuff Without an image matches the snapshot 1`] = `
         </span>
       </div>
       <a
-        class="sc-htoDjs cIDLga"
+        class="sc-htoDjs fNbHZi"
         href="https://www.thetimes.co.uk/"
       >
         <span
@@ -110,27 +103,20 @@ exports[`InArticlePuff Without an image matches the snapshot 1`] = `
         >
           Read more
         </span>
-        <artsurfaceview>
-          <artgroup
-            opacity="1"
-            transform="0.13333333333333333,0,0,0.13333333333333333,-5.6,-1.6"
+        <svg
+          aria-label="icon-forward-arrow"
+          height="12"
+          viewBox="42 12 60 120"
+          width="7"
+        >
+          <g
+            fill="#BF0000"
           >
-            <artgroup
-              opacity="1"
-              transform="1,0,0,1,0,0"
-            >
-              <artshape
-                d="0,45.8,132,2,42,128.2,2,74.8,72,2,42,15.8,2,45.8,12,2,102,72,1"
-                fill="0,0.7490196078431373,0,0,1"
-                opacity="1"
-                stroke-width="1"
-                strokecap="1"
-                strokejoin="1"
-                transform="1,0,0,1,0,0"
-              />
-            </artgroup>
-          </artgroup>
-        </artsurfaceview>
+            <path
+              d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+            />
+          </g>
+        </svg>
       </a>
     </div>
   </div>
