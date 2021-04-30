@@ -5,7 +5,7 @@ import {
 } from '@times-components/tracking';
 
 import { IconForwardArrow } from '@times-components/icons';
-import withTrackScrolled from '../tracking/trackScrolled';
+import withTrackScrolled from '../tracking/trackScrolledIntoView';
 
 import {
   Container,

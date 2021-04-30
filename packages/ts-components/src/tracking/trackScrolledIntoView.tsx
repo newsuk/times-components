@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { AnalyticsProps } from '@times-components/tracking';
 
-export default function trackScrolled<P>(
+export default function trackScrolledIntoView<P>(
   WrappedComponent: React.FC<P>,
   analyticsEvent: {
     trackingName: string;
