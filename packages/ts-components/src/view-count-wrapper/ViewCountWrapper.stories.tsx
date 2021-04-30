@@ -1,6 +1,5 @@
 import React from 'react';
 
-// @ts-ignore
 import { showcaseConverter } from '@times-components/storybook';
 
 import ViewCountWrapper from './ViewCountWrapper';
@@ -53,7 +52,7 @@ const showcase = {
             {show && (
               <ViewCountWrapper
                 trackingName={trackingName}
-                displayFunction={count => count % 2 === 1}
+                displayFunction={count => (count || 0) % 2 === 1}
               >
                 <div
                   style={{

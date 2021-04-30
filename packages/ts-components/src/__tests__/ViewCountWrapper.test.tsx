@@ -131,7 +131,9 @@ describe('<ViewCountWrapper>', () => {
         create(
           <ViewCountWrapper
             trackingName={trackingName}
-            displayFunction={value => [1, 3].includes(value)}
+            displayFunction={value =>
+              value !== undefined ? [1, 3].includes(value) : false
+            }
           >
             <span>Hello</span>
           </ViewCountWrapper>

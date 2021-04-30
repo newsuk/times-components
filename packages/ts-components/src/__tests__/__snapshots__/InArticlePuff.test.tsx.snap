@@ -3,10 +3,10 @@
 exports[`InArticlePuff With an Image matches the snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa jueDtf"
+    class="sc-bdVaJa dYBIYJ"
   >
     <a
-      class="sc-bwzfXH ijwBvr"
+      class="sc-bwzfXH hJnROK"
       href="https://www.thetimes.co.uk/"
     >
       <img
@@ -15,13 +15,13 @@ exports[`InArticlePuff With an Image matches the snapshot 1`] = `
       />
     </a>
     <div
-      class="sc-bZQynM hfBCyR"
+      class="sc-bZQynM rbPju"
     >
       <div
         class="sc-gzVnrw ERVQt"
       >
         <span
-          class="sc-htpNat lixwTf"
+          class="sc-htpNat iMpDKo"
         >
           INTERACTIVE
         </span>
@@ -38,7 +38,7 @@ exports[`InArticlePuff With an Image matches the snapshot 1`] = `
         </span>
       </div>
       <a
-        class="sc-htoDjs evwjQn"
+        class="sc-htoDjs gXasLy"
         href="https://www.thetimes.co.uk/"
       >
         <span
@@ -76,16 +76,16 @@ exports[`InArticlePuff With an Image matches the snapshot 1`] = `
 exports[`InArticlePuff Without an image matches the snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa jueDtf"
+    class="sc-bdVaJa dYBIYJ"
   >
     <div
-      class="sc-bZQynM jweHpA"
+      class="sc-bZQynM jVKIde"
     >
       <div
         class="sc-gzVnrw ERVQt"
       >
         <span
-          class="sc-htpNat dcpUgo"
+          class="sc-htpNat fhZNeJ"
         >
           INTERACTIVE
         </span>
@@ -102,7 +102,7 @@ exports[`InArticlePuff Without an image matches the snapshot 1`] = `
         </span>
       </div>
       <a
-        class="sc-htoDjs cIDLga"
+        class="sc-htoDjs fNbHZi"
         href="https://www.thetimes.co.uk/"
       >
         <span

@@ -101,10 +101,12 @@ let TrackedComponent = withTrackEvents(
   }
 );
 
-export default withTrackingContext(TrackedComponent, {
+TrackedComponent = withTrackingContext(TrackedComponent, {
   getAttrs: ({ headline }: Props) => ({
     article_parent_name: `${headline}`
   }),
   trackingName: 'InArticlePuff',
   trackingObjectName: 'InArticlePuff'
 });
+
+export default TrackedComponent;

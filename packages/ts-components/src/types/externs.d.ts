@@ -7,9 +7,15 @@ declare module '@times-components/tealium-utils' {
 }
 
 declare module '@times-components/tracking' {
-  export const withTrackingContext: any;
-  export const withTrackEvents: any;
-  export const withTrackScrollDepth: any;
+  import { FC } from 'react';
+  type AnalyticsStreamType = (event: any) => void;
+
+  export interface AnalyticsProps {
+    analyticsStream: AnalyticsStreamType;
+  }
+
+  export function withTrackingContext<T>(component: FC<T>, attr: any): FC<T>;
+  export function withTrackEvents<T>(component: FC<T>, attr: any): FC<T>;
 }
 
 declare module '@times-components/icons' {
@@ -29,15 +35,17 @@ declare module '@times-components/styleguide' {
   type ColourMap = Record<string, string>;
   type Colours = Record<string, ColourMap>;
 
-  type Breakpoints = {
+  interface Breakpoints {
     medium: string;
     wide: string;
-  };
-  type Fonts = {
+  }
+
+  interface Fonts {
     body: string;
     headline: string;
     supporting: string;
-  };
+  }
+
   export const fonts: Fonts;
   export const spacing: (multiple: number) => number;
   export const breakpoints: Breakpoints;

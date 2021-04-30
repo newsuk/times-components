@@ -38,7 +38,7 @@ const incrementViewCount = (trackingName: string) => {
 };
 
 const ViewCountWrapper: FC<{
-  displayFunction?: (count: number) => boolean;
+  displayFunction?: (count?: number) => boolean;
   trackingName: string;
 }> = ({ displayFunction = () => true, trackingName, children }) => {
   const [viewCount, setViewCount] = useState();

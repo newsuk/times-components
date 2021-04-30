@@ -1,10 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
-type AnalyticsStreamType = (event: any) => void;
-
-interface AnalyticsProps {
-  analyticsStream: AnalyticsStreamType;
-}
+import { AnalyticsProps } from '@times-components/tracking';
 
 export default function trackScrolled<P>(
   WrappedComponent: React.FC<P>,
