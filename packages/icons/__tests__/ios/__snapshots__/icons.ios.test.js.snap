@@ -697,7 +697,7 @@ exports[`12. closeicon renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`13. forwardchevron renders 1`] = `
+exports[`13. iconforwardchevron renders 1`] = `
 <ARTSurfaceView
   style={
     Object {

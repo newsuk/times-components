@@ -47,10 +47,10 @@ exports[`InArticlePuff With an Image matches the snapshot 1`] = `
           Read more
         </span>
         <svg
-          aria-label="icon-forward-arrow"
-          height="12"
+          aria-label="icon-forward-chevron"
+          height="18"
           viewBox="42 12 60 120"
-          width="7"
+          width="8"
         >
           <g
             fill="#BF0000"
@@ -104,10 +104,10 @@ exports[`InArticlePuff Without an image matches the snapshot 1`] = `
           Read more
         </span>
         <svg
-          aria-label="icon-forward-arrow"
-          height="12"
+          aria-label="icon-forward-chevron"
+          height="18"
           viewBox="42 12 60 120"
-          width="7"
+          width="8"
         >
           <g
             fill="#BF0000"

@@ -346,7 +346,7 @@ exports[`12. closeicon sets a width when height is set 1`] = `
 />
 `;
 
-exports[`13. forwardchevron sets a width when height is set 1`] = `
+exports[`13. iconforwardchevron sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-forward-chevron"

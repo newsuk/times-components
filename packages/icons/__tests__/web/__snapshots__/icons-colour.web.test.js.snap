@@ -148,7 +148,7 @@ Array [
 ]
 `;
 
-exports[`13. forwardchevron renders with different colours 1`] = `
+exports[`13. iconforwardchevron renders with different colours 1`] = `
 <g
   fill="#facade"
 >

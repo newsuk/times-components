@@ -1514,7 +1514,7 @@ exports[`12. closeicon renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`13. forwardchevron renders 1`] = `
+exports[`13. iconforwardchevron renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   aria-label="icon-forward-chevron"
