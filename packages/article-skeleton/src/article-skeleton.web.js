@@ -47,7 +47,8 @@ const ArticleSkeleton = ({
   paidContentClassName,
   isPreview,
   additionalRelatedArticlesFlag,
-  algoliaSearchKeys
+  algoliaSearchKeys,
+  inArticlePuffFlag
 }) => {
   const {
     commentsEnabled,
@@ -173,6 +174,7 @@ const ArticleSkeleton = ({
                     paidContentClassName={paidContentClassName}
                     template={template}
                     isPreview={isPreview}
+                    inArticlePuffFlag={inArticlePuffFlag}
                   />
                 )}
                 <PaywallPortal

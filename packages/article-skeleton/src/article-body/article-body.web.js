@@ -73,7 +73,8 @@ const renderers = ({
   paidContentClassName,
   template,
   analyticsStream,
-  isPreview
+  isPreview,
+  inArticlePuffFlag
 }) => ({
   ...coreRenderers,
   ad(key) {
@@ -160,7 +161,7 @@ const renderers = ({
           />
         );
       case "in-article-puff":
-        return (
+        return inArticlePuffFlag ? (
           <InArticlePuff
             label={label}
             imageUri={imageUri}
@@ -169,7 +170,7 @@ const renderers = ({
             link={link}
             linkText={linkText}
           />
-        );
+        ) : (null)
       default:
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
@@ -321,11 +322,12 @@ const ArticleBody = ({
   section,
   paidContentClassName,
   template,
-  isPreview
+  isPreview,
+  inArticlePuffFlag
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
-    renderers({ paidContentClassName, template, isPreview })
+    renderers({ paidContentClassName, template, isPreview, inArticlePuffFlag })
   );
 
 ArticleBody.propTypes = {
