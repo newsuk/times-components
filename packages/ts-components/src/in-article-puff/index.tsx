@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { IconForwardArrow } from '@times-components/icons';
+import { IconForwardChevron } from '@times-components/icons';
 
 import {
   Container,
@@ -55,7 +55,7 @@ const InArticlePuff: React.FC<InArticlePuffProps> = ({
           onMouseLeave={() => setColour('#BF0000')}
         >
           <LinkText>{linkText}</LinkText>
-          <IconForwardArrow fillColour={colour} height={18} width={8} />
+          <IconForwardChevron fillColour={colour} height={18} width={8} />
         </LinkWrapper>
       </ContentContainer>
     </Container>

@@ -21,8 +21,6 @@ const NewsletterPuffLink = ({ onPress }) => (
       <InpIconContainer>
         <IconForwardArrow
           fillColour={colours.functional.action}
-          height={12}
-          width={7}
         />
       </InpIconContainer>
     </InpPreferencesView>

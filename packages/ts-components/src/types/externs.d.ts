@@ -4,7 +4,7 @@ declare module '@times-components/storybook' {
 
 declare module '@times-components/icons' {
   import { FC } from 'react';
-  export const IconForwardArrow: FC<{
+  export const IconForwardChevron: FC<{
     fillColour: string;
     height: number;
     width: number;
