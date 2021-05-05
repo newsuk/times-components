@@ -38,7 +38,7 @@ exports[`InArticlePuff With an Image matches the snapshot 1`] = `
         </span>
       </div>
       <a
-        class="sc-htoDjs gXasLy"
+        class="sc-htoDjs djguHq"
         href="https://www.thetimes.co.uk/"
       >
         <span
@@ -95,7 +95,7 @@ exports[`InArticlePuff Without an image matches the snapshot 1`] = `
         </span>
       </div>
       <a
-        class="sc-htoDjs fNbHZi"
+        class="sc-htoDjs bFrbzf"
         href="https://www.thetimes.co.uk/"
       >
         <span
