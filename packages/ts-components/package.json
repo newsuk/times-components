@@ -49,10 +49,10 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@times-components/icons": "2.14.54",
-    "@times-components/styleguide": "3.38.15",
-    "@times-components/tracking": "2.7.6",
-    "@times-components/utils": "6.4.1",
+    "@times-components/icons": "2.14.55",
+    "@times-components/styleguide": "3.38.16",
+    "@times-components/tracking": "2.7.7",
+    "@times-components/utils": "6.5.0",
     "react": "16.9.0",
     "styled-components": "4.3.2"
   },
