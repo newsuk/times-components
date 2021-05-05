@@ -95,7 +95,6 @@ export const MainContentContainer = styled.div`
 export const LinkWrapper = styled.a<ContainerType>`
   display: flex;
   flex-direction: row;
-  align-items: top;
   width: fit-content;
   text-decoration: none;
   color: #bf0000;
