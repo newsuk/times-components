@@ -170,7 +170,7 @@ const renderers = ({
             link={link}
             linkText={linkText}
           />
-        ) : (null)
+        ) : null;
       default:
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
