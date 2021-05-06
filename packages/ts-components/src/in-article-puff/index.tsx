@@ -37,7 +37,10 @@ const InArticlePuff: React.FC<InArticlePuffProps> = ({
   const [colour, setColour] = useState('#BF0000');
 
   return (
-    <Container style={{ borderTop: `2px ${sectionColour} solid`}} data-testid="InArticlePuff - Container">
+    <Container
+      style={{ borderTop: `2px ${sectionColour} solid` }}
+      data-testid="InArticlePuff - Container"
+    >
       {imageUri ? (
         <ImageContainer href={link}>
           <Image src={imageUri} />
@@ -45,7 +48,9 @@ const InArticlePuff: React.FC<InArticlePuffProps> = ({
       ) : null}
       <ContentContainer imageUri={imageUri}>
         <MainContentContainer>
-          <Label imageUri={imageUri} style={{ color: sectionColour }}>{label}</Label>
+          <Label imageUri={imageUri} style={{ color: sectionColour }}>
+            {label}
+          </Label>
           <Headline href={link}>{headline}</Headline>
           <Copy>{copy}</Copy>
         </MainContentContainer>

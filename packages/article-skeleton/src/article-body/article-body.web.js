@@ -162,14 +162,19 @@ const renderers = ({
         );
       case "in-article-puff":
         return inArticlePuffFlag ? (
-          <InArticlePuff
-            label={label}
-            imageUri={imageUri}
-            headline={headline}
-            copy={copy}
-            link={link}
-            linkText={linkText}
-          />
+          <Context.Consumer key={key}>
+            {({ theme: { sectionColour } }) => (
+              <InArticlePuff
+                label={label}
+                imageUri={imageUri}
+                headline={headline}
+                copy={copy}
+                link={link}
+                linkText={linkText}
+                sectionColour={sectionColour || colours.section.default}
+              />
+            )}
+          </Context.Consumer>
         ) : null;
       default:
         return (
