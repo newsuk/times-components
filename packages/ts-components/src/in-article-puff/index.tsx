@@ -18,11 +18,11 @@ import {
 type InArticlePuffProps = {
   label: string;
   imageUri?: string;
-
   headline: string;
   copy: string;
   link: string;
   linkText: string;
+  sectionColour: string;
 };
 
 const InArticlePuff: React.FC<InArticlePuffProps> = ({
@@ -31,12 +31,13 @@ const InArticlePuff: React.FC<InArticlePuffProps> = ({
   headline,
   copy,
   link,
-  linkText
+  linkText,
+  sectionColour
 }) => {
   const [colour, setColour] = useState('#BF0000');
 
   return (
-    <Container>
+    <Container style={{ borderTop: `2px ${sectionColour} solid`}} data-testid="InArticlePuff - Container">
       {imageUri ? (
         <ImageContainer href={link}>
           <Image src={imageUri} />
@@ -44,7 +45,7 @@ const InArticlePuff: React.FC<InArticlePuffProps> = ({
       ) : null}
       <ContentContainer imageUri={imageUri}>
         <MainContentContainer>
-          <Label imageUri={imageUri}>{label}</Label>
+          <Label imageUri={imageUri} style={{ color: sectionColour }}>{label}</Label>
           <Headline href={link}>{headline}</Headline>
           <Copy>{copy}</Copy>
         </MainContentContainer>

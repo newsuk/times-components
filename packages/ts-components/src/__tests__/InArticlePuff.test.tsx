@@ -11,7 +11,8 @@ const baseProps = {
   copy:
     'Enter your postcode in our tool to find your nearest vacination centre',
   link: 'https://www.thetimes.co.uk/',
-  linkText: 'Read more'
+  linkText: 'Read more',
+  sectionColour: "#13354E"
 };
 
 describe('InArticlePuff', () => {
@@ -28,10 +29,12 @@ describe('InArticlePuff', () => {
       expect(asFragment()).toMatchSnapshot();
     });
     it('renders the props correctly', () => {
-      const { getByText, getAllByRole, queryByRole } = render(
+      const { getByText, getAllByRole, queryByRole, getByTestId } = render(
         <InArticlePuff {...{ ...baseProps }} />
       );
+      expect(getByTestId('InArticlePuff - Container')).toHaveStyle(`border-top: 2px ${baseProps.sectionColour} solid`)
       expect(getByText('INTERACTIVE')).toBeVisible();
+      expect(getByText('INTERACTIVE')).toHaveStyle(`color: ${baseProps.sectionColour}`)
       expect(
         getByText('Where can I get a Covid vaccine in England?')
       ).toBeVisible();
@@ -75,7 +78,7 @@ describe('InArticlePuff', () => {
       expect(asFragment()).toMatchSnapshot();
     });
     it('renders the props correctly', () => {
-      const { getByText, getAllByRole, getByRole } = render(
+      const { getByText, getAllByRole, getByRole, getByTestId } = render(
         <InArticlePuff
           {...{
             ...baseProps,
@@ -84,7 +87,9 @@ describe('InArticlePuff', () => {
           }}
         />
       );
+      expect(getByTestId('InArticlePuff - Container')).toHaveStyle(`border-top: 2px ${baseProps.sectionColour} solid`)
       expect(getByText('INTERACTIVE')).toBeVisible();
+      expect(getByText('INTERACTIVE')).toHaveStyle(`color: ${baseProps.sectionColour}`)
       expect(
         getByText('Where can I get a Covid vaccine in England?')
       ).toBeVisible();

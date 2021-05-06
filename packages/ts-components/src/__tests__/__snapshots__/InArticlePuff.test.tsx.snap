@@ -3,7 +3,9 @@
 exports[`InArticlePuff With an Image matches the snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa kKnmIb"
+    class="sc-bdVaJa gMPYKf"
+    data-testid="InArticlePuff - Container"
+    style="border-top: 2px solid #13354E;"
   >
     <a
       class="sc-bwzfXH hJnROK"
@@ -22,6 +24,7 @@ exports[`InArticlePuff With an Image matches the snapshot 1`] = `
       >
         <span
           class="sc-htpNat iMpDKo"
+          style="color: rgb(19, 53, 78);"
         >
           INTERACTIVE
         </span>
@@ -39,6 +42,7 @@ exports[`InArticlePuff With an Image matches the snapshot 1`] = `
       </div>
       <a
         class="sc-htoDjs djguHq"
+        data-testid="InArticlePuff - LinkWrapper"
         href="https://www.thetimes.co.uk/"
       >
         <span
@@ -69,7 +73,9 @@ exports[`InArticlePuff With an Image matches the snapshot 1`] = `
 exports[`InArticlePuff Without an image matches the snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa kKnmIb"
+    class="sc-bdVaJa gMPYKf"
+    data-testid="InArticlePuff - Container"
+    style="border-top: 2px solid #13354E;"
   >
     <div
       class="sc-bZQynM jVKIde"
@@ -79,6 +85,7 @@ exports[`InArticlePuff Without an image matches the snapshot 1`] = `
       >
         <span
           class="sc-htpNat fhZNeJ"
+          style="color: rgb(19, 53, 78);"
         >
           INTERACTIVE
         </span>
@@ -96,6 +103,7 @@ exports[`InArticlePuff Without an image matches the snapshot 1`] = `
       </div>
       <a
         class="sc-htoDjs bFrbzf"
+        data-testid="InArticlePuff - LinkWrapper"
         href="https://www.thetimes.co.uk/"
       >
         <span
