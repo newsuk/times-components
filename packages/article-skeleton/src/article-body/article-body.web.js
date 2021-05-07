@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 import { AdContainer } from "@times-components/ad";
 import LazyLoad from "@times-components/lazy-load";
 import ArticleImage from "@times-components/article-image";
@@ -16,12 +17,14 @@ import Video from "@times-components/video";
 import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
 import { FetchProvider, InArticlePuff } from "@times-components/ts-components";
+
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import InlineNewsletterPuff, {
   PreviewNewsletterPuff
 } from "./inline-newsletter-puff";
 import AutoNewsletterPuff from "./auto-newsletter-puff";
+
 import {
   PrimaryImg,
   SecondaryImg,
@@ -134,14 +137,13 @@ const renderers = ({
     );
   },
   interactive(key, { url, element, display }) {
-    const {
-      attributes: { code, copy, headline, imageUri, label },
-      attributes,
-      value
-    } = element;
+    const { attributes, value } = element;
 
     switch (value) {
       case "newsletter-puff":
+        // eslint-disable-next-line no-case-declarations
+        const { code, copy, headline, imageUri, label } = attributes;
+
         return isPreview ? (
           <PreviewNewsletterPuff
             copy={decodeURIComponent(copy)}
@@ -160,12 +162,18 @@ const renderers = ({
             label={decodeURIComponent(label)}
           />
         );
+
       case "in-article-puff":
         return inArticlePuffFlag ? (
-          <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/8038">
+          <FetchProvider
+            url={`https://gobble.timesdev.tools/deck/api/deck-post-action/${
+              attributes["deck-id"]
+            }`}
+          >
             <InArticlePuff />
           </FetchProvider>
         ) : null;
+
       default:
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>

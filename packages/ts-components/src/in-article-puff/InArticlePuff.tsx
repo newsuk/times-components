@@ -28,6 +28,8 @@ export const InArticlePuff = () => {
     return null;
   }
 
+  console.log('FUCK!!!!', data);
+
   const [colour, setColour] = useState('#BF0000');
 
   const {
@@ -53,7 +55,7 @@ export const InArticlePuff = () => {
         <MainContentContainer>
           <Label hasImage={hasImage}>{label}</Label>
           <Headline href={link}>{headline}</Headline>
-          <Copy>{copy}</Copy>
+          {copy && <Copy>{copy}</Copy>}
         </MainContentContainer>
 
         <LinkWrapper
