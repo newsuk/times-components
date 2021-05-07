@@ -1,4 +1,3 @@
-// @ts-ignore
 import styled from 'styled-components';
 import {
   breakpoints,
@@ -7,24 +6,22 @@ import {
   spacing
 } from '@times-components/styleguide';
 
-type ContainerType = {
-  imageUri?: string;
-};
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #f9f9f9;
-  border-top: 2px #13354e solid;
-  padding: 20px;
   margin-right: ${spacing(2)};
   margin-bottom: ${spacing(4)};
   margin-left: ${spacing(2)};
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-top: 2px #13354e solid;
+
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
     width: 80.8%;
     margin: 0 auto ${spacing(4)};
   }
+
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
   }
@@ -32,6 +29,7 @@ export const Container = styled.div`
 
 export const ImageContainer = styled.a`
   padding-bottom: 13px;
+
   @media (min-width: ${breakpoints.medium}px) {
     width: 50%;
     padding-right: 20px;
@@ -39,13 +37,14 @@ export const ImageContainer = styled.a`
   }
 `;
 
-export const Label = styled.span<ContainerType>`
+export const Label = styled.span<{ hasImage?: boolean }>`
   font-family: ${fonts.supporting};
   font-size: 12px;
   color: #13354e;
   padding-bottom: 8px;
+
   @media (min-width: ${breakpoints.medium}px) {
-    padding-top: ${(props: ContainerType) => (props.imageUri ? '4px' : 'none')};
+    padding-top: ${({ hasImage }) => (hasImage ? '4px' : 'none')};
     padding-bottom: 12px;
   }
 `;
@@ -56,9 +55,11 @@ export const Headline = styled.a`
   padding-bottom: 8px;
   text-decoration: none;
   color: ${colours.functional.brandColour};
+
   :hover {
     color: #069;
   }
+
   @media (min-width: ${breakpoints.wide}px) {
     font-size: 28px;
   }
@@ -77,12 +78,13 @@ export const LinkText = styled.span`
   margin-right: 16px;
 `;
 
-export const ContentContainer = styled.div<ContainerType>`
+export const ContentContainer = styled.div<{ hasImage?: boolean }>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   @media (min-width: ${breakpoints.medium}px) {
-    width: ${(props: ContainerType) => (props.imageUri ? '50%' : '100%')};
+    width: ${({ hasImage }) => (hasImage ? '50%' : '100%')};
   }
 `;
 
@@ -92,18 +94,19 @@ export const MainContentContainer = styled.div`
   justify-content: space-evenly;
 `;
 
-export const LinkWrapper = styled.a<ContainerType>`
+export const LinkWrapper = styled.a<{ hasImage?: boolean }>`
   display: flex;
   flex-direction: row;
   width: fit-content;
   text-decoration: none;
   color: #bf0000;
+
   :hover {
     color: ${colours.functional.secondary};
   }
+
   @media (min-width: ${breakpoints.medium}px) {
-    padding-bottom: ${(props: ContainerType) =>
-      props.imageUri ? '4px' : 'none'};
+    padding-bottom: ${({ hasImage }) => (hasImage ? '4px' : 'none')};
   }
 `;
 

@@ -23,7 +23,7 @@
     "build:module": "tsc -p tsconfig.json",
     "bundle": "NODE_ENV=production webpack -p",
     "fix": "run-s fix:*",
-    "fix:prettier": "prettier \"src/**/*.tsx\" \"__tests__/**/*.tsx\" --write",
+    "fix:prettier": "prettier \"src/**/*.ts\" \"src/**/*.tsx\" \"__tests__/**/*.tsx\" --write",
     "fix:tslint": "tslint --fix --project .",
     "lint": "tslint --project . && prettier \"src/**/*.{ts,tsx}\" --list-different",
     "test": "jest",
@@ -53,6 +53,7 @@
     "@times-components/styleguide": "3.38.16",
     "@times-components/tracking": "2.7.7",
     "@times-components/utils": "6.5.0",
+    "isomorphic-fetch": "^2.1.1",
     "react": "16.9.0",
     "styled-components": "4.3.2"
   },

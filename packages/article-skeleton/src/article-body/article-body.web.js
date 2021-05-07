@@ -15,7 +15,7 @@ import { colours, spacing } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
-import { InArticlePuff } from "@times-components/ts-components";
+import { FetchProvider, InArticlePuff } from "@times-components/ts-components";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import InlineNewsletterPuff, {
@@ -135,7 +135,7 @@ const renderers = ({
   },
   interactive(key, { url, element, display }) {
     const {
-      attributes: { code, copy, headline, imageUri, label, link, linkText },
+      attributes: { code, copy, headline, imageUri, label },
       attributes,
       value
     } = element;
@@ -162,14 +162,9 @@ const renderers = ({
         );
       case "in-article-puff":
         return inArticlePuffFlag ? (
-          <InArticlePuff
-            label={label}
-            imageUri={imageUri}
-            headline={headline}
-            copy={copy}
-            link={link}
-            linkText={linkText}
-          />
+          <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/8038">
+            <InArticlePuff />
+          </FetchProvider>
         ) : null;
       default:
         return (

@@ -1,17 +1,17 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import InArticlePuff from '../in-article-puff';
+import { InArticlePuff } from '../in-article-puff/InArticlePuff';
 import '@testing-library/jest-dom';
 // tslint:disable-next-line:no-submodule-imports
 import '@testing-library/jest-dom/extend-expect';
 
 const baseProps = {
-  label: 'INTERACTIVE',
+  /*label: 'INTERACTIVE',
   headline: 'Where can I get a Covid vaccine in England?',
   copy:
     'Enter your postcode in our tool to find your nearest vacination centre',
   link: 'https://www.thetimes.co.uk/',
-  linkText: 'Read more'
+  linkText: 'Read more'*/
 };
 
 describe('InArticlePuff', () => {
@@ -54,9 +54,8 @@ describe('InArticlePuff', () => {
       const { baseElement } = render(
         <InArticlePuff
           {...{
-            ...baseProps,
-            imageUri:
-              'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg'
+            ...baseProps
+            // imageUri: 'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg'
           }}
         />
       );
@@ -66,9 +65,8 @@ describe('InArticlePuff', () => {
       const { asFragment } = render(
         <InArticlePuff
           {...{
-            ...baseProps,
-            imageUri:
-              'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg'
+            ...baseProps
+            // imageUri: 'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg'
           }}
         />
       );
@@ -78,9 +76,8 @@ describe('InArticlePuff', () => {
       const { getByText, getAllByRole, getByRole } = render(
         <InArticlePuff
           {...{
-            ...baseProps,
-            imageUri:
-              'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg'
+            ...baseProps
+            // imageUri: 'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg'
           }}
         />
       );

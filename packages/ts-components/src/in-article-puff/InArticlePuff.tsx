@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import { IconForwardChevron } from '@times-components/icons';
 
+import { useFetch } from '../fetch/FetchProvider';
+
 import {
   Container,
   ImageContainer,
@@ -15,42 +17,48 @@ import {
   LinkText
 } from './styles';
 
-type InArticlePuffProps = {
-  label: string;
-  imageUri?: string;
+export const InArticlePuff = () => {
+  const { loading, error, data } = useFetch();
 
-  headline: string;
-  copy: string;
-  link: string;
-  linkText: string;
-};
+  if (loading) {
+    return null;
+  }
 
-const InArticlePuff: React.FC<InArticlePuffProps> = ({
-  label,
-  imageUri,
-  headline,
-  copy,
-  link,
-  linkText
-}) => {
+  if (error) {
+    return null;
+  }
+
   const [colour, setColour] = useState('#BF0000');
+
+  const {
+    image,
+    label,
+    headline,
+    copy,
+    link,
+    linkText
+  } = data.body.data[0].data;
+
+  const hasImage = Boolean(image);
 
   return (
     <Container>
-      {imageUri ? (
+      {image && (
         <ImageContainer href={link}>
-          <Image src={imageUri} />
+          <Image src={image} />
         </ImageContainer>
-      ) : null}
-      <ContentContainer imageUri={imageUri}>
+      )}
+
+      <ContentContainer hasImage={hasImage}>
         <MainContentContainer>
-          <Label imageUri={imageUri}>{label}</Label>
+          <Label hasImage={hasImage}>{label}</Label>
           <Headline href={link}>{headline}</Headline>
           <Copy>{copy}</Copy>
         </MainContentContainer>
+
         <LinkWrapper
           href={link}
-          imageUri={imageUri}
+          hasImage={hasImage}
           onMouseOver={() => setColour('#696969')}
           onMouseLeave={() => setColour('#BF0000')}
         >
@@ -61,5 +69,3 @@ const InArticlePuff: React.FC<InArticlePuffProps> = ({
     </Container>
   );
 };
-
-export default InArticlePuff;
