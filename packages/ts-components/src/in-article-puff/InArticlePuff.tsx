@@ -28,8 +28,6 @@ export const InArticlePuff = () => {
     return null;
   }
 
-  console.log('FUCK!!!!', data);
-
   const [colour, setColour] = useState('#BF0000');
 
   const {

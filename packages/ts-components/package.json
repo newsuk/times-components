@@ -23,7 +23,7 @@
     "build:module": "tsc -p tsconfig.json",
     "bundle": "NODE_ENV=production webpack -p",
     "fix": "run-s fix:*",
-    "fix:prettier": "prettier \"src/**/*.tsx\" \"__tests__/**/*.tsx\" --write",
+    "fix:prettier": "prettier \"src/**/*.{ts,tsx}\" \"__tests__/**/*.tsx\" --write",
     "fix:tslint": "tslint --fix --project .",
     "lint": "tslint --project . && prettier \"src/**/*.{ts,tsx}\" --list-different",
     "test": "jest",
