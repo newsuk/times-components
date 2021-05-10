@@ -15,7 +15,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   background-color: #f9f9f9;
-  border-top: 2px #13354e solid;
   padding: 20px;
   margin-right: ${spacing(2)};
   margin-bottom: ${spacing(4)};
@@ -109,5 +108,6 @@ export const LinkWrapper = styled.a<ContainerType>`
 
 export const Image = styled.img`
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 `;

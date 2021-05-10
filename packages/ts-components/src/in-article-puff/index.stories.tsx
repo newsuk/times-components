@@ -14,6 +14,7 @@ const showcase = {
           copy="Enter your postcode in our tool to find your nearest vacination centre"
           link="https://www.thetimes.co.uk/"
           linkText="Read more"
+          sectionColour="#13354E"
         />
       ),
       name: 'In Article Puff',
@@ -27,6 +28,7 @@ const showcase = {
           copy="See how the virus has escalated in areas scross the country as the number of identified cases in Britain continues to grow"
           link="https://www.thetimes.co.uk/"
           linkText="Read more"
+          sectionColour="#184e13"
         />
       ),
       name: 'In Article Puff - No Image',
