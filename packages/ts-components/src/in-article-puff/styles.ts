@@ -108,5 +108,6 @@ export const LinkWrapper = styled.a<ContainerType>`
 
 export const Image = styled.img`
   width: 100%;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 `;
