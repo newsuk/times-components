@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.46.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.45.1...@times-components/article-skeleton@1.46.0) (2021-05-10)
+
+
+### Features
+
+* **TE-76:** re-add auto newsletter puff ([#2696](https://github.com/newsuk/times-components/issues/2696)) ([9da75a1](https://github.com/newsuk/times-components/commit/9da75a1ebb412c8a31579af0185af7076cc086e4))
+
+
+
+
+
 ## [1.45.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.45.0...@times-components/article-skeleton@1.45.1) (2021-05-10)
 
 **Note:** Version bump only for package @times-components/article-skeleton
