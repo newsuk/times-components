@@ -15,7 +15,7 @@ const AutoNewsletterPuff = ({
 }) => (
   <ViewCountWrapper
     trackingName={`auto-puff-${code}`}
-    displayFunction={count => [1, 3, 5, 7].includes(count)}
+    displayFunction={count => [1, 3, 7].includes(count)}
   >
     <div style={{ display: "none" }}>
       <InlineNewsletterPuff
