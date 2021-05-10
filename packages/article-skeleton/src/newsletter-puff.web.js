@@ -52,7 +52,7 @@ const newslettersBySection = [
       code: "TNL-112",
       headline: "Sport",
       copy:
-        "Every Friday morning, Elgan Alderman takes you through the best of sport from the past week and looks ahead to the weekend, featuring exclusive interviews, agenda-setting comment and razor-sharp analysis.",
+        "Every Friday morning, Elgan Alderman looks ahead to the weekend, featuring exclusive interviews, agenda-setting comment and razor-sharp analysis.",
       imageUri:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8920eef8-e084-47db-a1bf-00be3d72080e.jpg?resize=800"
     })

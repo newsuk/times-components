@@ -53,6 +53,7 @@ const article = articleFixture({
   withAds: false,
   content
 });
+
 const mocks = [
   {
     request: {
@@ -73,6 +74,7 @@ const mocks = [
     }
   }
 ];
+
 const renderArticle = (data, isPreview = false) => (
   <MockedProvider mocks={mocks}>
     <Context.Provider
@@ -102,27 +104,27 @@ describe("Article with automatically placed NewsletterPuff", () => {
     window.document.cookie = "nuk-consent-personalisation=;max-age=0";
   });
 
-  xit("should not render a NewsletterPuff without feature flag", () => {
+  it("should not render a NewsletterPuff without feature flag", () => {
     UserState.mockStates = [];
     const output = TestRenderer.create(renderArticle(article));
     const isNewsletterPuffs = output.root.findAllByType("NewsletterPuff");
     expect(isNewsletterPuffs.length).toBe(0);
   });
 
-  xit("should not render a NewsletterPuff without the correct section", () => {
+  it("should not render a NewsletterPuff without the correct section", () => {
     const output = TestRenderer.create(renderArticle(article));
     const isNewsletterPuffs = output.root.findAllByType("NewsletterPuff");
     expect(isNewsletterPuffs.length).toBe(0);
   });
 
-  xit("should not render a NewsletterPuff without some paywall content", () => {
+  it("should not render a NewsletterPuff without some paywall content", () => {
     article.section = "News";
     const output = TestRenderer.create(renderArticle(article));
     const isNewsletterPuffs = output.root.findAllByType("NewsletterPuff");
     expect(isNewsletterPuffs.length).toBe(0);
   });
 
-  xit("shouldnt render a NewsletterPuff without cookie", async () => {
+  it("shouldnt render a NewsletterPuff without cookie", async () => {
     article.section = "News";
     article.content[3] = paywallContent;
     const output = TestRenderer.create(renderArticle(article));
@@ -131,7 +133,7 @@ describe("Article with automatically placed NewsletterPuff", () => {
     ).toEqual("none");
   });
 
-  xit("should render a NewsletterPuff correctly", async () => {
+  it("should render a NewsletterPuff correctly", async () => {
     article.section = "News";
     article.content[3] = paywallContent;
     window.document.cookie = "nuk-consent-personalisation=1";
@@ -141,7 +143,7 @@ describe("Article with automatically placed NewsletterPuff", () => {
     expect(output).toMatchSnapshot();
   });
 
-  xit("should not render another NewsletterPuff when one already exists", () => {
+  it("should not render another NewsletterPuff when one already exists", () => {
     article.section = "News";
     article.content[3] = paywallContentWithNewsletter;
     const output = TestRenderer.create(renderArticle(article));
