@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.45](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.44...@times-components/pagination@3.4.45) (2021-05-10)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
 ## [3.4.44](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.43...@times-components/pagination@3.4.44) (2021-04-28)
 
 **Note:** Version bump only for package @times-components/pagination

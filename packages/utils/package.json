@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "6.5.0",
+  "version": "6.5.1",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "main": "dist",
   "dev": "src",
@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "@times-components/schema": "0.6.24",
-    "@times-components/styleguide": "3.38.16",
+    "@times-components/styleguide": "3.38.17",
     "algoliasearch": "4.9.0",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
