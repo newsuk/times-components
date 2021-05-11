@@ -49,10 +49,10 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@times-components/icons": "2.14.55",
-    "@times-components/styleguide": "3.38.16",
-    "@times-components/tracking": "2.7.7",
-    "@times-components/utils": "6.5.0",
+    "@times-components/icons": "2.14.56",
+    "@times-components/styleguide": "3.38.17",
+    "@times-components/tracking": "2.7.8",
+    "@times-components/utils": "6.5.1",
     "react": "16.9.0",
     "styled-components": "4.3.2"
   },
@@ -61,7 +61,7 @@
     "@storybook/react": "5.3.18",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
-    "@times-components/storybook": "4.1.60",
+    "@times-components/storybook": "4.1.61",
     "@times-components/test-utils": "2.3.8",
     "@types/jest": "24.9.1",
     "@types/react-dom": "17.0.3",
