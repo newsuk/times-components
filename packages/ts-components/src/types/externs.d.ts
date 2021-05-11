@@ -4,6 +4,7 @@ declare module '@times-components/storybook' {
 
 declare module '@times-components/icons' {
   import { FC } from 'react';
+
   export const IconForwardChevron: FC<{
     fillColour: string;
     height: number;
@@ -22,12 +23,15 @@ declare module '@times-components/styleguide' {
   type Breakpoints = {
     medium: string;
     wide: string;
+    huge: string;
   };
+
   type Fonts = {
     body: string;
     headline: string;
     supporting: string;
   };
+
   export const fonts: Fonts;
   export const spacing: (multiple: number) => number;
   export const breakpoints: Breakpoints;

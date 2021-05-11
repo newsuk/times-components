@@ -1,10 +1,17 @@
 import React from 'react';
-
 import { showcaseConverter } from '@times-components/storybook';
-import InArticlePuff from './InArticlePuff';
+
+import { ArticleHarness } from '../fixtures/article-harness/ArticleHarness';
+import { InArticlePuff } from './InArticlePuff';
 
 const showcase = {
   children: [
+    {
+      decorator: (storyFn: () => React.ReactNode) => (
+        <ArticleHarness>{storyFn()}</ArticleHarness>
+      ),
+      type: 'decorator'
+    },
     {
       component: () => (
         <InArticlePuff

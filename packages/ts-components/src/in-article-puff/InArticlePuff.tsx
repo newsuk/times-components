@@ -5,13 +5,11 @@ import { IconForwardChevron } from '@times-components/icons';
 import {
   Container,
   ImageContainer,
-  Image,
   ContentContainer,
-  MainContentContainer,
   Label,
   Headline,
   Copy,
-  LinkWrapper,
+  Link,
   LinkText
 } from './styles';
 
@@ -25,7 +23,7 @@ type InArticlePuffProps = {
   sectionColour: string;
 };
 
-const InArticlePuff: React.FC<InArticlePuffProps> = ({
+export const InArticlePuff: React.FC<InArticlePuffProps> = ({
   label,
   imageUri,
   headline,
@@ -34,38 +32,42 @@ const InArticlePuff: React.FC<InArticlePuffProps> = ({
   linkText,
   sectionColour
 }) => {
-  const [colour, setColour] = useState('#BF0000');
+  const [colour, setColour] = useState('#bf0000');
+
+  const hasImage = Boolean(imageUri);
+
+  console.log('wanky 2 !!!');
 
   return (
-    <Container
-      style={{ borderTop: `2px ${sectionColour} solid` }}
-      data-testid="InArticlePuff - Container"
-    >
+    <Container sectionColour={sectionColour}>
       {imageUri ? (
-        <ImageContainer href={link}>
-          <Image src={imageUri} />
+        <ImageContainer>
+          <a href={link}>
+            <img src={imageUri} />
+          </a>
         </ImageContainer>
       ) : null}
-      <ContentContainer imageUri={imageUri}>
-        <MainContentContainer>
-          <Label imageUri={imageUri} style={{ color: sectionColour }}>
+
+      <ContentContainer hasImage={hasImage}>
+        <div>
+          <Label hasImage={hasImage} sectionColour={sectionColour}>
             {label}
           </Label>
-          <Headline href={link}>{headline}</Headline>
-          <Copy>{copy}</Copy>
-        </MainContentContainer>
-        <LinkWrapper
+          <a href={link}>
+            <Headline hasImage={hasImage}>{headline}</Headline>
+          </a>
+          {copy && <Copy hasImage={hasImage}>{copy}</Copy>}
+        </div>
+
+        <Link
           href={link}
-          imageUri={imageUri}
           onMouseOver={() => setColour('#696969')}
-          onMouseLeave={() => setColour('#BF0000')}
+          onMouseLeave={() => setColour('#bf0000')}
         >
           <LinkText>{linkText}</LinkText>
-          <IconForwardChevron fillColour={colour} height={18} width={8} />
-        </LinkWrapper>
+          <IconForwardChevron fillColour={colour} width={8} height={16} />
+        </Link>
       </ContentContainer>
     </Container>
   );
 };
-
-export default InArticlePuff;

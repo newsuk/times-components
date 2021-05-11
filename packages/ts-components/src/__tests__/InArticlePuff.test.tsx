@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 // tslint:disable-next-line:no-submodule-imports
 import '@testing-library/jest-dom/extend-expect';
 
-import InArticlePuff from '../in-article-puff/InArticlePuff';
+import { InArticlePuff } from '../in-article-puff/InArticlePuff';
 
 const baseProps = {
   label: 'INTERACTIVE',
