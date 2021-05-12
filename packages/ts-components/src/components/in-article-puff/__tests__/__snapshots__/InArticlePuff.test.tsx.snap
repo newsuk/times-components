@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InArticlePuff With an Image matches the snapshot 1`] = `
+exports[`InArticlePuff should render optional fields correctly 1`] = `
 <DocumentFragment>
   <div
     class="sc-bdVaJa gMPYKf"
@@ -9,11 +9,11 @@ exports[`InArticlePuff With an Image matches the snapshot 1`] = `
   >
     <a
       class="sc-bwzfXH hJnROK"
-      href="https://www.thetimes.co.uk/"
+      href="https://www.thetimes.co.uk"
     >
       <img
         class="sc-dnqmqq emoKWP"
-        src="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg"
+        src="https://via.placeholder.com/150"
       />
     </a>
     <div
@@ -26,50 +26,39 @@ exports[`InArticlePuff With an Image matches the snapshot 1`] = `
           class="sc-htpNat iMpDKo"
           style="color: rgb(19, 53, 78);"
         >
-          INTERACTIVE
+          interactive
         </span>
         <a
           class="sc-bxivhb bHZCrd"
-          href="https://www.thetimes.co.uk/"
+          href="https://www.thetimes.co.uk"
         >
           Where can I get a Covid vaccine in England?
         </a>
         <span
           class="sc-ifAKCX gOoiHU"
         >
-          Enter your postcode in our tool to find your nearest vacination centre
+          Enter your postcode to find your nearest centre
         </span>
       </div>
       <a
         class="sc-htoDjs djguHq"
-        href="https://www.thetimes.co.uk/"
+        href="https://www.thetimes.co.uk"
       >
         <span
           class="sc-EHOje wYTls"
         >
-          Read more
+          Read the full article
         </span>
-        <svg
-          aria-label="icon-forward-chevron"
-          height="18"
-          viewBox="42 12 60 120"
-          width="8"
-        >
-          <g
-            fill="#BF0000"
-          >
-            <path
-              d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-            />
-          </g>
-        </svg>
+        <div>
+          IconForwardChevron
+        </div>
       </a>
     </div>
   </div>
 </DocumentFragment>
 `;
 
-exports[`InArticlePuff Without an image matches the snapshot 1`] = `
+exports[`InArticlePuff should render required fields correctly 1`] = `
 <DocumentFragment>
   <div
     class="sc-bdVaJa gMPYKf"
@@ -86,45 +75,40 @@ exports[`InArticlePuff Without an image matches the snapshot 1`] = `
           class="sc-htpNat fhZNeJ"
           style="color: rgb(19, 53, 78);"
         >
-          INTERACTIVE
+          interactive
         </span>
         <a
           class="sc-bxivhb bHZCrd"
-          href="https://www.thetimes.co.uk/"
+          href="https://www.thetimes.co.uk"
         >
           Where can I get a Covid vaccine in England?
         </a>
         <span
           class="sc-ifAKCX gOoiHU"
-        >
-          Enter your postcode in our tool to find your nearest vacination centre
-        </span>
+        />
       </div>
       <a
         class="sc-htoDjs bFrbzf"
-        href="https://www.thetimes.co.uk/"
+        href="https://www.thetimes.co.uk"
       >
         <span
           class="sc-EHOje wYTls"
         >
-          Read more
+          Read the full article
         </span>
-        <svg
-          aria-label="icon-forward-chevron"
-          height="18"
-          viewBox="42 12 60 120"
-          width="8"
-        >
-          <g
-            fill="#BF0000"
-          >
-            <path
-              d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
-            />
-          </g>
-        </svg>
+        <div>
+          IconForwardChevron
+        </div>
       </a>
     </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InArticlePuff should render the initial loading state correctly 1`] = `
+<DocumentFragment>
+  <div>
+    Placeholder
   </div>
 </DocumentFragment>
 `;

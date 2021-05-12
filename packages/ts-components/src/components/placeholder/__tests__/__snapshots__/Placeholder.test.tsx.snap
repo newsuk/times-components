@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Placeholder renders the component 1`] = `
+<DocumentFragment>
+  <div
+    style="height: 100px;"
+  >
+    <div>
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;

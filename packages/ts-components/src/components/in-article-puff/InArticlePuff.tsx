@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { IconForwardChevron } from '@times-components/icons';
 
+import { Placeholder } from '../placeholder/Placeholder';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 
 import {
@@ -25,7 +26,7 @@ export const InArticlePuff: React.FC<{
   const { loading, error, data } = useFetch();
 
   if (loading) {
-    return null;
+    return <Placeholder height={250} />;
   }
 
   if (error) {
@@ -69,7 +70,7 @@ export const InArticlePuff: React.FC<{
           onMouseOver={() => setColour('#696969')}
           onMouseLeave={() => setColour('#BF0000')}
         >
-          <LinkText>{linkText}</LinkText>
+          <LinkText>{linkText ? linkText : 'Read more'}</LinkText>
           <IconForwardChevron fillColour={colour} height={18} width={8} />
         </LinkWrapper>
       </ContentContainer>

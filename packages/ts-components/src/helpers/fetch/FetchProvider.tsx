@@ -1,3 +1,4 @@
+import fetch from 'isomorphic-unfetch';
 import React, { createContext, useState, useEffect, useContext } from 'react';
 
 type FetchProviderProps = {
