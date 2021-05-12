@@ -25,7 +25,7 @@ type InArticlePuffProps = {
   sectionColour: string;
 };
 
-const InArticlePuff: React.FC<InArticlePuffProps> = ({
+export const InArticlePuff: React.FC<InArticlePuffProps> = ({
   label,
   imageUri,
   headline,
@@ -67,5 +67,3 @@ const InArticlePuff: React.FC<InArticlePuffProps> = ({
     </Container>
   );
 };
-
-export default InArticlePuff;

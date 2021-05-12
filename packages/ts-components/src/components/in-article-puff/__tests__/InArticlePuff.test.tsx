@@ -1,9 +1,10 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import InArticlePuff from '../in-article-puff';
 import '@testing-library/jest-dom';
 // tslint:disable-next-line:no-submodule-imports
 import '@testing-library/jest-dom/extend-expect';
+
+import { InArticlePuff } from '../InArticlePuff';
 
 const baseProps = {
   label: 'INTERACTIVE',

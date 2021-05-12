@@ -1,5 +1,7 @@
 import React, { FC, useEffect, useRef, useState } from 'react';
-import { getStorageProvider, hasCookieConsent } from '../utils';
+
+import { hasCookieConsent } from '../../utils/cookie';
+import { getStorageProvider } from '../../utils/session';
 
 const STORAGE_KEY = 'view-count';
 
@@ -37,7 +39,7 @@ const incrementViewCount = (trackingName: string) => {
   setCounter(trackingName, count + 1);
 };
 
-const ViewCountWrapper: FC<{
+export const ViewCountWrapper: FC<{
   displayFunction?: (count?: number) => boolean;
   trackingName: string;
 }> = ({ displayFunction = () => true, trackingName, children }) => {
@@ -89,5 +91,3 @@ const ViewCountWrapper: FC<{
     </>
   );
 };
-
-export default ViewCountWrapper;

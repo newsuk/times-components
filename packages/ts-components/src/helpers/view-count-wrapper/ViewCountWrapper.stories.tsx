@@ -1,8 +1,7 @@
 import React from 'react';
-
 import { showcaseConverter } from '@times-components/storybook';
 
-import ViewCountWrapper from './ViewCountWrapper';
+import { ViewCountWrapper } from './ViewCountWrapper';
 
 const setCookieConsent = (value: boolean) => {
   window.document.cookie = `nuk-consent-personalisation=${
