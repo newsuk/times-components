@@ -8,7 +8,7 @@ import {
 } from '@times-components/styleguide';
 
 type ContainerType = {
-  imageUri?: string;
+  hasImage: boolean;
 };
 
 export const Container = styled.div`
@@ -44,7 +44,7 @@ export const Label = styled.span<ContainerType>`
   color: #13354e;
   padding-bottom: 8px;
   @media (min-width: ${breakpoints.medium}px) {
-    padding-top: ${(props: ContainerType) => (props.imageUri ? '4px' : 'none')};
+    padding-top: ${(props: ContainerType) => (props.hasImage ? '4px' : 'none')};
     padding-bottom: 12px;
   }
 `;
@@ -81,7 +81,7 @@ export const ContentContainer = styled.div<ContainerType>`
   flex-direction: column;
   justify-content: space-between;
   @media (min-width: ${breakpoints.medium}px) {
-    width: ${(props: ContainerType) => (props.imageUri ? '50%' : '100%')};
+    width: ${(props: ContainerType) => (props.hasImage ? '50%' : '100%')};
   }
 `;
 
@@ -102,7 +102,7 @@ export const LinkWrapper = styled.a<ContainerType>`
   }
   @media (min-width: ${breakpoints.medium}px) {
     padding-bottom: ${(props: ContainerType) =>
-      props.imageUri ? '4px' : 'none'};
+      props.hasImage ? '4px' : 'none'};
   }
 `;
 
