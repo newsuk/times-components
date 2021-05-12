@@ -26,7 +26,7 @@ export const InArticlePuff: React.FC<{
   const { loading, error, data } = useFetch();
 
   if (loading) {
-    return <Placeholder height={250} />;
+    return <Placeholder height={200} />;
   }
 
   if (error) {
