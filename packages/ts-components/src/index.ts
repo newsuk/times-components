@@ -1,5 +1,4 @@
+export { InArticlePuff } from './components/in-article-puff/InArticlePuff';
 export {
-  default as ViewCountWrapper
-} from './view-count-wrapper/ViewCountWrapper';
-
-export { default as InArticlePuff } from './in-article-puff';
+  ViewCountWrapper
+} from './components/view-count-wrapper/ViewCountWrapper';

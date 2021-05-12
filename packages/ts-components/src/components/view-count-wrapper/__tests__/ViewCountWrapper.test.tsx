@@ -3,7 +3,7 @@ import { create } from 'react-test-renderer';
 
 import { delay } from '@times-components/test-utils';
 
-import ViewCountWrapper from '../view-count-wrapper/ViewCountWrapper';
+import { ViewCountWrapper } from '../ViewCountWrapper';
 
 describe('<ViewCountWrapper>', () => {
   beforeEach(() => {
