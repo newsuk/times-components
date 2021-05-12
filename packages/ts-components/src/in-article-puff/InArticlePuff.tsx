@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import { IconForwardChevron } from '@times-components/icons';
 
+import { useFetch } from '../fetch/FetchProvider';
+
 import {
   Container,
   ImageContainer,
@@ -13,37 +15,38 @@ import {
   LinkText
 } from './styles';
 
-type InArticlePuffProps = {
-  label: string;
-  imageUri?: string;
-  headline: string;
-  copy: string;
-  link: string;
-  linkText: string;
-  sectionColour: string;
-};
-
-export const InArticlePuff: React.FC<InArticlePuffProps> = ({
-  label,
-  imageUri,
-  headline,
-  copy,
-  link,
-  linkText,
+export const InArticlePuff: React.FC<{ sectionColour: string }> = ({
   sectionColour
 }) => {
   const [colour, setColour] = useState('#bf0000');
 
-  const hasImage = Boolean(imageUri);
+  const { loading, error, data } = useFetch();
 
-  console.log('wanky 2 !!!');
+  if (loading) {
+    return null;
+  }
+
+  if (error) {
+    return null;
+  }
+
+  const {
+    image,
+    label,
+    headline,
+    copy,
+    link,
+    linkText
+  } = data.body.data[0].data;
+
+  const hasImage = Boolean(image);
 
   return (
     <Container sectionColour={sectionColour}>
-      {imageUri ? (
+      {image ? (
         <ImageContainer>
           <a href={link}>
-            <img src={imageUri} />
+            <img src={image} />
           </a>
         </ImageContainer>
       ) : null}

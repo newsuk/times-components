@@ -2,6 +2,7 @@ import React from 'react';
 import { showcaseConverter } from '@times-components/storybook';
 
 import { ArticleHarness } from '../fixtures/article-harness/ArticleHarness';
+import { FetchProvider } from '../fetch/FetchProvider';
 import { InArticlePuff } from './InArticlePuff';
 
 const showcase = {
@@ -14,29 +15,18 @@ const showcase = {
     },
     {
       component: () => (
-        <InArticlePuff
-          label="INTERACTIVE"
-          imageUri="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg"
-          headline="Where can I get a Covid vaccine in England?"
-          copy="Enter your postcode in our tool to find your nearest vacination centre"
-          link="https://www.thetimes.co.uk/"
-          linkText="Read more"
-          sectionColour="#13354E"
-        />
+        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/41548">
+          <InArticlePuff sectionColour="#13354e" />
+        </FetchProvider>
       ),
       name: 'In Article Puff',
       type: 'story'
     },
     {
       component: () => (
-        <InArticlePuff
-          label="INTERACTIVE"
-          headline="Tracking coronavirus in the UK: where latest cases have spread"
-          copy="See how the virus has escalated in areas scross the country as the number of identified cases in Britain continues to grow"
-          link="https://www.thetimes.co.uk/"
-          linkText="Read more"
-          sectionColour="#184e13"
-        />
+        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/41547">
+          <InArticlePuff sectionColour="#184e13" />
+        </FetchProvider>
       ),
       name: 'In Article Puff - No Image',
       type: 'story'
