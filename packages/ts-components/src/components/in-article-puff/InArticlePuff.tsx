@@ -19,9 +19,7 @@ import {
 
 export const InArticlePuff: React.FC<{
   sectionColour: string;
-}> = ({
-  sectionColour
-}) => {
+}> = ({ sectionColour }) => {
   const [colour, setColour] = useState('#bf0000');
 
   const { loading, error, data } = useFetch();
