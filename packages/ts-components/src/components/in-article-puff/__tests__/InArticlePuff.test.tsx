@@ -6,12 +6,12 @@ import { useFetch } from '../../../helpers/fetch/FetchProvider';
 
 import { InArticlePuff } from '../InArticlePuff';
 
-jest.mock('@times-components/icons', () => ({
-  IconForwardChevron: () => <div>IconForwardChevron</div>
+jest.mock('@times-components/image', () => ({
+  Placeholder: () => <div>Placeholder</div>
 }));
 
-jest.mock('../../placeholder/Placeholder', () => ({
-  Placeholder: () => <div>Placeholder</div>
+jest.mock('@times-components/icons', () => ({
+  IconForwardChevron: () => <div>IconForwardChevron</div>
 }));
 
 jest.mock('../../../helpers/fetch/FetchProvider', () => ({

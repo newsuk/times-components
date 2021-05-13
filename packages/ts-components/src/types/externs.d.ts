@@ -29,6 +29,7 @@ declare module '@times-components/styleguide' {
   type Breakpoints = {
     medium: string;
     wide: string;
+    huge: string;
   };
 
   type Fonts = {
