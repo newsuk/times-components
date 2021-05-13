@@ -147,3 +147,11 @@ Array [
   />,
 ]
 `;
+
+exports[`13. iconforwardchevron renders with different colours 1`] = `
+<g
+  fill="#facade"
+>
+  <path />
+</g>
+`;

@@ -43,14 +43,14 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/schema": "0.6.24",
-    "@types/jest": "24.0.2",
+    "@types/jest": "24.9.1",
     "depcheck": "0.6.9",
     "graphql-code-generator": "0.14.5",
     "graphql-codegen-typescript-template": "0.14.5",
     "jest": "24.8.0",
     "prettier": "1.14.3",
     "ts-jest": "23.10.4",
-    "typescript": "3.7.2",
+    "typescript": "4.2.4",
     "typings": "^2.1.1"
   },
   "publishConfig": {

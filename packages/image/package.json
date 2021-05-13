@@ -71,7 +71,7 @@
     "@times-components/styleguide": "3.38.17",
     "@times-components/svgs": "2.7.30",
     "@times-components/utils": "6.5.1",
-    "hoist-non-react-statics": "2.5.5",
+    "hoist-non-react-statics": "3.3.2",
     "prop-types": "15.7.2",
     "react-native-image-zoom-viewer": "2.2.26",
     "styled-components": "4.3.2",

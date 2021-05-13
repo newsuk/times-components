@@ -21,7 +21,8 @@ module.exports = (
     paidContentClassName,
     isPreview,
     additionalRelatedArticlesFlag,
-    algoliaSearchKeys
+    algoliaSearchKeys,
+    inArticlePuffFlag
   },
   userState
 ) => {
@@ -70,7 +71,8 @@ module.exports = (
       paidContentClassName,
       isPreview,
       additionalRelatedArticlesFlag,
-      algoliaSearchKeys
+      algoliaSearchKeys,
+      inArticlePuffFlag
     },
     name: "article"
   };

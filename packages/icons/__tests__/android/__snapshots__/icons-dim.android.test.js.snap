@@ -345,3 +345,25 @@ exports[`12. closeicon sets a width when height is set 1`] = `
   width={28}
 />
 `;
+
+exports[`13. iconforwardchevron sets a width when height is set 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  aria-label="icon-forward-chevron"
+  bbHeight={50}
+  focusable={false}
+  height={50}
+  meetOrSlice={0}
+  minX={42}
+  minY={12}
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "borderWidth": 0,
+      "opacity": 1,
+    }
+  }
+  vbHeight={120}
+  vbWidth={60}
+/>
+`;

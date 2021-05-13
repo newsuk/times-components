@@ -149,6 +149,16 @@ export default [
         name: "interactive"
       },
       {
+        attributes: {
+          element: {
+            attributes: { "deck-id": "41548" },
+            value: "in-article-puff"
+          }
+        },
+        children: [],
+        name: "interactive"
+      },
+      {
         attributes: {},
         children: [
           {

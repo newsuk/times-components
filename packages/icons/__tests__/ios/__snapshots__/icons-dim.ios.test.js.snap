@@ -131,3 +131,14 @@ exports[`12. closeicon sets a width when height is set 1`] = `
   }
 />
 `;
+
+exports[`13. iconforwardchevron sets a width when height is set 1`] = `
+<ARTSurfaceView
+  style={
+    Object {
+      "height": NaN,
+      "width": NaN,
+    }
+  }
+/>
+`;

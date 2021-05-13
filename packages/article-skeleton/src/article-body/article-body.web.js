@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+
 import { AdContainer } from "@times-components/ad";
 import LazyLoad from "@times-components/lazy-load";
 import ArticleImage from "@times-components/article-image";
@@ -15,12 +16,15 @@ import { colours, spacing } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
+import { FetchProvider, InArticlePuff } from "@times-components/ts-components";
+
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import InlineNewsletterPuff, {
   PreviewNewsletterPuff
 } from "./inline-newsletter-puff";
 import AutoNewsletterPuff from "./auto-newsletter-puff";
+
 import {
   PrimaryImg,
   SecondaryImg,
@@ -39,6 +43,8 @@ import {
   Ad,
   InlineAdWrapper
 } from "../styles/article-body/responsive";
+
+const deckApiUrl = "https://gobble.timesdev.tools/deck/api/deck-post-action/";
 
 export const responsiveDisplayWrapper = displayType => {
   switch (displayType) {
@@ -72,7 +78,8 @@ const renderers = ({
   paidContentClassName,
   template,
   analyticsStream,
-  isPreview
+  isPreview,
+  inArticlePuffFlag
 }) => ({
   ...coreRenderers,
   ad(key) {
@@ -132,14 +139,13 @@ const renderers = ({
     );
   },
   interactive(key, { url, element, display }) {
-    const {
-      attributes: { code, copy, headline, imageUri, label },
-      attributes,
-      value
-    } = element;
+    const { attributes, value } = element;
 
     switch (value) {
       case "newsletter-puff":
+        // eslint-disable-next-line no-case-declarations
+        const { code, copy, headline, imageUri, label } = attributes;
+
         return isPreview ? (
           <PreviewNewsletterPuff
             copy={decodeURIComponent(copy)}
@@ -158,6 +164,20 @@ const renderers = ({
             label={decodeURIComponent(label)}
           />
         );
+
+      case "in-article-puff":
+        if (inArticlePuffFlag) {
+          return (
+            <Context.Consumer key={key}>
+              {({ theme }) => (
+                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                  <InArticlePuff sectionColour={theme.sectionColour} />
+                </FetchProvider>
+              )}
+            </Context.Consumer>
+          );
+        }
+
       default:
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
@@ -309,11 +329,12 @@ const ArticleBody = ({
   section,
   paidContentClassName,
   template,
-  isPreview
+  isPreview,
+  inArticlePuffFlag
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
-    renderers({ paidContentClassName, template, isPreview })
+    renderers({ paidContentClassName, template, isPreview, inArticlePuffFlag })
   );
 
 ArticleBody.propTypes = {

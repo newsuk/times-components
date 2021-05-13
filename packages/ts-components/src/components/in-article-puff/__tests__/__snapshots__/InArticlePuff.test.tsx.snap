@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InArticlePuff should render optional fields correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bwzfXH fJttQd"
+    data-testid="InArticlePuff - Container"
+    style="border-top: 2px solid #13354E;"
+  >
+    <div
+      class="sc-htpNat jUgmOU"
+    >
+      <a
+        href="https://www.thetimes.co.uk"
+      >
+        <img
+          src="https://via.placeholder.com/150"
+        />
+      </a>
+    </div>
+    <div
+      class="sc-bxivhb eJagWW"
+    >
+      <div>
+        <div
+          class="sc-ifAKCX fewBDO"
+          style="color: rgb(19, 53, 78);"
+        >
+          interactive
+        </div>
+        <a
+          href="https://www.thetimes.co.uk"
+        >
+          <h4
+            class="sc-EHOje gQKhmz"
+          >
+            Where can I get a Covid vaccine in England?
+          </h4>
+        </a>
+        <div
+          class="sc-bZQynM eGYnrK"
+        >
+          Enter your postcode to find your nearest centre
+        </div>
+      </div>
+      <a
+        class="sc-gzVnrw iizyUl"
+        href="https://www.thetimes.co.uk"
+      >
+        <div
+          class="sc-htoDjs isLgAr"
+        >
+          Read the full article
+        </div>
+        <div>
+          IconForwardChevron
+        </div>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InArticlePuff should render required fields correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bwzfXH fJttQd"
+    data-testid="InArticlePuff - Container"
+    style="border-top: 2px solid #13354E;"
+  >
+    <div
+      class="sc-bxivhb cfsDhB"
+    >
+      <div>
+        <div
+          class="sc-ifAKCX cWvuvC"
+          style="color: rgb(19, 53, 78);"
+        >
+          interactive
+        </div>
+        <a
+          href="https://www.thetimes.co.uk"
+        >
+          <h4
+            class="sc-EHOje fmOCOs"
+          >
+            Where can I get a Covid vaccine in England?
+          </h4>
+        </a>
+      </div>
+      <a
+        class="sc-gzVnrw iizyUl"
+        href="https://www.thetimes.co.uk"
+      >
+        <div
+          class="sc-htoDjs isLgAr"
+        >
+          Read more
+        </div>
+        <div>
+          IconForwardChevron
+        </div>
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InArticlePuff should render the initial loading state correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa dwiMsX"
+  >
+    <div>
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -30,7 +30,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     paidContentClassName,
     isPreview,
     additionalRelatedArticlesFlag,
-    algoliaSearchKeys
+    algoliaSearchKeys,
+    inArticlePuffFlag
   } = data;
 
   return React.createElement(
@@ -87,7 +88,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               paidContentClassName,
               isPreview,
               additionalRelatedArticlesFlag,
-              algoliaSearchKeys
+              algoliaSearchKeys,
+              inArticlePuffFlag
             })
           );
         }

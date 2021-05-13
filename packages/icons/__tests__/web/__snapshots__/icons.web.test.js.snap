@@ -222,3 +222,19 @@ exports[`12. closeicon renders 1`] = `
   />
 </svg>
 `;
+
+exports[`13. iconforwardchevron renders 1`] = `
+<svg
+  aria-label="icon-forward-chevron"
+  viewBox="5c14eb9241a8569e247b0186d9e66a8a"
+  width={20}
+>
+  <g
+    fill="#006699"
+  >
+    <path
+      d="cf23b8f47ac97eeec14ee4c65e472078"
+    />
+  </g>
+</svg>
+`;

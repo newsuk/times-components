@@ -3,13 +3,6 @@ import { MockedProvider } from "@times-components/provider-test-tools";
 import { getNewsletter } from "@times-components/provider-queries";
 
 import AutoNewsletterPuff from "./auto-newsletter-puff";
-import ViewCountWrapper from "./view-count-wrapper";
-
-const setCookieConsent = value => {
-  window.document.cookie = `nuk-consent-personalisation=${
-    value ? 1 : ";max-age=0"
-  }`;
-};
 
 const mocks = [
   {
@@ -55,61 +48,6 @@ export default {
       ),
 
       name: "Auto Newsletter Puff",
-      platform: "web",
-      type: "story"
-    },
-
-    {
-      component: ({ boolean, select }) => {
-        const trackingName = "counter";
-        const show = boolean("show", true);
-        const consent = boolean("Set Constent Cookie", true);
-
-        setCookieConsent(consent);
-
-        const height = select(
-          "Content size above component",
-          {
-            "Half Viewport": "50vh",
-            "Full Viewport": "100vh"
-          },
-          "50vh"
-        );
-        const contentStyle = {
-          background: "linear-gradient(#f4f4f4, #f4f4f4 50%, #eee 50%, #eee)",
-          backgroundSize: "100% 20px",
-          border: "30px solid #f4f4f4",
-          height
-        };
-        return (
-          <>
-            Current Count = {window.sessionStorage.getItem("view-count")}
-            <div style={contentStyle} />
-            {show && (
-              <ViewCountWrapper
-                trackingName={trackingName}
-                displayFunction={count => [1, 3, 5, 7, 9].includes(count)}
-              >
-                <div
-                  style={{
-                    background: "#aaa",
-                    width: 200,
-                    height: 200,
-                    border: "solid 5px #555",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center"
-                  }}
-                >
-                  The Puff
-                </div>
-              </ViewCountWrapper>
-            )}
-            <div style={contentStyle} />
-          </>
-        );
-      },
-      name: "View Count Wrapper in a scroller",
       platform: "web",
       type: "story"
     }

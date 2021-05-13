@@ -106,3 +106,10 @@ exports[`12. closeicon sets a width when height is set 1`] = `
   width={28}
 />
 `;
+
+exports[`13. iconforwardchevron sets a width when height is set 1`] = `
+<svg
+  aria-label="icon-forward-chevron"
+  height={50}
+/>
+`;
