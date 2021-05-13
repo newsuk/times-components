@@ -47,10 +47,8 @@ export const ContentContainer = styled.div<{ hasImage?: boolean }>`
   }
 `;
 
-export const Label = styled.div<{ hasImage?: boolean; sectionColour?: string }>`
+export const Label = styled.div<{ hasImage?: boolean }>`
   padding-bottom: ${({ hasImage }) => (hasImage ? '8px' : '12px')};
-  color: ${({ sectionColour }) =>
-    sectionColour ? sectionColour : colours.functional.brandColour};
   font-family: ${fonts.supporting};
   font-size: 12px;
   text-transform: uppercase;
