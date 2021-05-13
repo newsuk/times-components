@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ts-components",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Reuseable Typescript React Components",
   "main": "dist/index.js",
   "dev": "dist/index.js",
@@ -49,10 +49,10 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@times-components/icons": "2.14.56",
-    "@times-components/image": "6.7.32",
+    "@times-components/icons": "2.15.0",
+    "@times-components/image": "6.8.0",
     "@times-components/styleguide": "3.38.17",
-    "@times-components/tracking": "2.7.8",
+    "@times-components/tracking": "2.8.0",
     "@times-components/utils": "6.5.1",
     "isomorphic-unfetch": "3.1.0",
     "react": "16.9.0",
