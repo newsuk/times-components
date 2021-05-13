@@ -73,8 +73,7 @@ export const Headline = styled.h4<{ hasImage?: boolean }>`
   }
 `;
 
-export const Copy = styled.div<{ hasImage?: boolean }>`
-  padding-bottom: ${({ hasImage }) => (hasImage ? '16px' : '20px')};
+export const Copy = styled.div`
   color: ${colours.functional.secondary};
   font-family: ${fonts.body};
   font-size: 16px;
@@ -84,6 +83,7 @@ export const Copy = styled.div<{ hasImage?: boolean }>`
 export const Link = styled.a`
   display: flex;
   flex-direction: row;
+  margin-top: 16px;
   color: #bf0000;
 
   :hover {

@@ -38,13 +38,13 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
           </h4>
         </a>
         <div
-          class="sc-EHOje eFGeLn"
+          class="sc-EHOje hznyLU"
         >
           Enter your postcode to find your nearest centre
         </div>
       </div>
       <a
-        class="sc-bZQynM hVxGDZ"
+        class="sc-bZQynM cynOBc"
         href="https://www.thetimes.co.uk"
       >
         <div
@@ -89,7 +89,7 @@ exports[`InArticlePuff should render required fields correctly 1`] = `
         </a>
       </div>
       <a
-        class="sc-bZQynM hVxGDZ"
+        class="sc-bZQynM cynOBc"
         href="https://www.thetimes.co.uk"
       >
         <div
@@ -108,8 +108,12 @@ exports[`InArticlePuff should render required fields correctly 1`] = `
 
 exports[`InArticlePuff should render the initial loading state correctly 1`] = `
 <DocumentFragment>
-  <div>
-    Placeholder
+  <div
+    class="sc-bdVaJa lnKSqs"
+  >
+    <div>
+      Placeholder
+    </div>
   </div>
 </DocumentFragment>
 `;

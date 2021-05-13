@@ -9,7 +9,7 @@ jest.mock('@times-components/image', () => ({
 
 describe('Placeholder', () => {
   it('renders the component', () => {
-    const { asFragment } = render(<Placeholder height={100} />);
+    const { asFragment } = render(<Placeholder height={'100px'} />);
     expect(asFragment()).toMatchSnapshot();
   });
 });

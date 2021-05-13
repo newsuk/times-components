@@ -24,7 +24,11 @@ export const InArticlePuff: React.FC<{
   const { loading, error, data } = useFetch();
 
   if (loading) {
-    return <Placeholder height={200} />;
+    return (
+      <Container>
+        <Placeholder height={'200px'} />
+      </Container>
+    );
   }
 
   if (error) {
@@ -63,7 +67,7 @@ export const InArticlePuff: React.FC<{
           <a href={link}>
             <Headline hasImage={hasImage}>{headline}</Headline>
           </a>
-          {copy && <Copy hasImage={hasImage}>{copy}</Copy>}
+          {copy && <Copy>{copy}</Copy>}
         </div>
 
         <Link
