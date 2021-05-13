@@ -4,6 +4,7 @@
     "window": true
   },
   "rules": {
-    "react-hooks/exhaustive-deps": false
+    "react-hooks/exhaustive-deps": false,
+    "no-fallthrough": 1
   }
 }

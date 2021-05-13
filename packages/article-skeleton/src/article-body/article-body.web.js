@@ -166,15 +166,17 @@ const renderers = ({
         );
 
       case "in-article-puff":
-        return inArticlePuffFlag ? (
-          <Context.Consumer key={key}>
-            {({ theme }) => (
-              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                <InArticlePuff sectionColour={theme.sectionColour} />
-              </FetchProvider>
-            )}
-          </Context.Consumer>
-        ) : null;
+        if (inArticlePuffFlag) {
+          return (
+            <Context.Consumer key={key}>
+              {({ theme }) => (
+                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                  <InArticlePuff sectionColour={theme.sectionColour} />
+                </FetchProvider>
+              )}
+            </Context.Consumer>
+          );
+        }
 
       default:
         return (
