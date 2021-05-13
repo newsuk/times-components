@@ -151,16 +151,7 @@ export default [
       {
         attributes: {
           element: {
-            attributes: {
-              label: "INTERACTIVE",
-              imageUri:
-                "https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/b309b4cc1fe7a2d9a940f93e29701615.jpg",
-              copy:
-                "Enter your postcode in our tool to find your nearest vacination centre",
-              headline: "Where can I get a Covid vaccine in England?",
-              link: "https://www.thetimes.co.uk/",
-              linkText: "Read more"
-            },
+            attributes: { "deck-id": "41548" },
             value: "in-article-puff"
           }
         },

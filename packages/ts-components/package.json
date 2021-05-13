@@ -50,9 +50,11 @@
   },
   "dependencies": {
     "@times-components/icons": "2.14.56",
+    "@times-components/image": "6.7.32",
     "@times-components/styleguide": "3.38.17",
     "@times-components/tracking": "2.7.8",
     "@times-components/utils": "6.5.1",
+    "isomorphic-unfetch": "3.1.0",
     "react": "16.9.0",
     "styled-components": "4.3.2"
   },
@@ -64,6 +66,7 @@
     "@times-components/storybook": "4.1.61",
     "@times-components/test-utils": "2.3.8",
     "@types/jest": "24.9.1",
+    "@types/node-fetch": "2.5.10",
     "@types/react-dom": "17.0.3",
     "@types/react-test-renderer": "16.9.0",
     "@types/styled-components": "5.1.9",
