@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
+import { Placeholder } from '@times-components/image';
 import { IconForwardChevron } from '@times-components/icons';
 
-import { Placeholder } from '../placeholder/Placeholder';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 
 import {
+  PlaceholderContainer,
   Container,
   ImageContainer,
   ContentContainer,
@@ -25,9 +26,9 @@ export const InArticlePuff: React.FC<{
 
   if (loading) {
     return (
-      <Container>
-        <Placeholder height={'200px'} />
-      </Container>
+      <PlaceholderContainer>
+        <Placeholder />
+      </PlaceholderContainer>
     );
   }
 
