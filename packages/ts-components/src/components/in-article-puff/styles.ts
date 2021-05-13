@@ -4,8 +4,8 @@ import { breakpoints, colours, fonts } from '@times-components/styleguide';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 20px;
   margin: 0 auto 20px auto;
+  padding: 20px;
   background-color: #f9f9f9;
 
   a {
