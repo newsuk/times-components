@@ -94,7 +94,7 @@ exports[`InArticlePuff should render required fields correctly 1`] = `
         <span
           class="sc-EHOje wYTls"
         >
-          Read the full article
+          Read more
         </span>
         <div>
           IconForwardChevron

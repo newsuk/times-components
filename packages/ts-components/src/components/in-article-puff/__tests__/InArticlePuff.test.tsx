@@ -25,14 +25,14 @@ const deckApiPayloadWrapper = (data: { [name: string]: string }) => ({
 const requiredFields = {
   label: 'interactive',
   headline: 'Where can I get a Covid vaccine in England?',
-  link: 'https://www.thetimes.co.uk',
-  linkText: 'Read the full article'
+  link: 'https://www.thetimes.co.uk'
 };
 
 const optionalFields = {
   ...requiredFields,
   image: 'https://via.placeholder.com/150',
-  copy: 'Enter your postcode to find your nearest centre'
+  copy: 'Enter your postcode to find your nearest centre',
+  linkText: 'Read the full article'
 };
 
 const requiredProps = {
@@ -64,7 +64,7 @@ describe('InArticlePuff', () => {
     expect(queryByRole('img')).toBeFalsy();
     expect(getByText(requiredFields.label));
     expect(getByText(requiredFields.headline));
-    expect(getByText(requiredFields.linkText));
+    expect(getByText('Read more'));
 
     const links = getAllByRole('link');
     expect(links).toHaveLength(2);
@@ -84,6 +84,7 @@ describe('InArticlePuff', () => {
 
     expect(getByRole('img')).toHaveAttribute('src', optionalFields.image);
     expect(getByText(optionalFields.copy));
+    expect(getByText(optionalFields.linkText));
 
     const links = getAllByRole('link');
     expect(links).toHaveLength(3);
