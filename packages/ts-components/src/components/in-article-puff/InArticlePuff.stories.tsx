@@ -1,11 +1,18 @@
 import React from 'react';
 import { showcaseConverter } from '@times-components/storybook';
 
+import { ArticleHarness } from '../../fixtures/article-harness/ArticleHarness';
 import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { InArticlePuff } from './InArticlePuff';
 
 const showcase = {
   children: [
+    {
+      decorator: (storyFn: () => React.ReactNode) => (
+        <ArticleHarness>{storyFn()}</ArticleHarness>
+      ),
+      type: 'decorator'
+    },
     {
       component: () => (
         <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/41548">

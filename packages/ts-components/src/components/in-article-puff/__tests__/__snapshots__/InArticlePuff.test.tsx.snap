@@ -3,52 +3,55 @@
 exports[`InArticlePuff should render optional fields correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa gMPYKf"
+    class="sc-bdVaJa iOjYkI"
     data-testid="InArticlePuff - Container"
     style="border-top: 2px solid #13354E;"
   >
-    <a
-      class="sc-bwzfXH hJnROK"
-      href="https://www.thetimes.co.uk"
-    >
-      <img
-        class="sc-dnqmqq emoKWP"
-        src="https://via.placeholder.com/150"
-      />
-    </a>
     <div
-      class="sc-bZQynM rbPju"
+      class="sc-bwzfXH gnuJTU"
     >
-      <div
-        class="sc-gzVnrw ERVQt"
+      <a
+        href="https://www.thetimes.co.uk"
       >
-        <span
-          class="sc-htpNat iMpDKo"
+        <img
+          src="https://via.placeholder.com/150"
+        />
+      </a>
+    </div>
+    <div
+      class="sc-htpNat iDFTFF"
+    >
+      <div>
+        <div
+          class="sc-bxivhb kgxINO"
           style="color: rgb(19, 53, 78);"
         >
           interactive
-        </span>
+        </div>
         <a
-          class="sc-bxivhb bHZCrd"
           href="https://www.thetimes.co.uk"
         >
-          Where can I get a Covid vaccine in England?
+          <h4
+            class="sc-ifAKCX blkHhG"
+          >
+            Where can I get a Covid vaccine in England?
+          </h4>
         </a>
-        <span
-          class="sc-ifAKCX gOoiHU"
+        <div
+          class="sc-EHOje eFGeLn"
         >
           Enter your postcode to find your nearest centre
-        </span>
+        </div>
       </div>
       <a
-        class="sc-htoDjs djguHq"
+        class="sc-bZQynM hVxGDZ"
         href="https://www.thetimes.co.uk"
       >
-        <span
-          class="sc-EHOje wYTls"
+        <div
+          class="sc-gzVnrw egPvuA"
         >
           Read the full article
-        </span>
+        </div>
         <div>
           IconForwardChevron
         </div>
@@ -61,41 +64,39 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
 exports[`InArticlePuff should render required fields correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa gMPYKf"
+    class="sc-bdVaJa iOjYkI"
     data-testid="InArticlePuff - Container"
     style="border-top: 2px solid #13354E;"
   >
     <div
-      class="sc-bZQynM jVKIde"
+      class="sc-htpNat fZHOiQ"
     >
-      <div
-        class="sc-gzVnrw ERVQt"
-      >
-        <span
-          class="sc-htpNat fhZNeJ"
+      <div>
+        <div
+          class="sc-bxivhb hClSwN"
           style="color: rgb(19, 53, 78);"
         >
           interactive
-        </span>
+        </div>
         <a
-          class="sc-bxivhb bHZCrd"
           href="https://www.thetimes.co.uk"
         >
-          Where can I get a Covid vaccine in England?
+          <h4
+            class="sc-ifAKCX efhiOC"
+          >
+            Where can I get a Covid vaccine in England?
+          </h4>
         </a>
-        <span
-          class="sc-ifAKCX gOoiHU"
-        />
       </div>
       <a
-        class="sc-htoDjs bFrbzf"
+        class="sc-bZQynM hVxGDZ"
         href="https://www.thetimes.co.uk"
       >
-        <span
-          class="sc-EHOje wYTls"
+        <div
+          class="sc-gzVnrw egPvuA"
         >
           Read more
-        </span>
+        </div>
         <div>
           IconForwardChevron
         </div>

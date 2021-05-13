@@ -8,13 +8,11 @@ import { useFetch } from '../../helpers/fetch/FetchProvider';
 import {
   Container,
   ImageContainer,
-  Image,
   ContentContainer,
-  MainContentContainer,
   Label,
   Headline,
   Copy,
-  LinkWrapper,
+  Link,
   LinkText
 } from './styles';
 
@@ -50,29 +48,32 @@ export const InArticlePuff: React.FC<{
       data-testid="InArticlePuff - Container"
     >
       {image ? (
-        <ImageContainer href={link}>
-          <Image src={image} />
+        <ImageContainer>
+          <a href={link}>
+            <img src={image} />
+          </a>
         </ImageContainer>
       ) : null}
 
       <ContentContainer hasImage={hasImage}>
-        <MainContentContainer>
+        <div>
           <Label hasImage={hasImage} style={{ color: sectionColour }}>
             {label}
           </Label>
-          <Headline href={link}>{headline}</Headline>
-          <Copy>{copy}</Copy>
-        </MainContentContainer>
+          <a href={link}>
+            <Headline hasImage={hasImage}>{headline}</Headline>
+          </a>
+          {copy && <Copy hasImage={hasImage}>{copy}</Copy>}
+        </div>
 
-        <LinkWrapper
+        <Link
           href={link}
-          hasImage={hasImage}
           onMouseOver={() => setColour('#696969')}
           onMouseLeave={() => setColour('#BF0000')}
         >
           <LinkText>{linkText ? linkText : 'Read more'}</LinkText>
           <IconForwardChevron fillColour={colour} height={18} width={8} />
-        </LinkWrapper>
+        </Link>
       </ContentContainer>
     </Container>
   );
