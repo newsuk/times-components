@@ -4,12 +4,29 @@ import { showcaseConverter } from '@times-components/storybook';
 import { ArticleHarness } from '../../fixtures/article-harness/ArticleHarness';
 import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { InArticlePuff } from './InArticlePuff';
+import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
+
+import { action } from '@storybook/addon-actions';
+
+const analyticsStream = (event: any) => {
+  // tslint:disable-next-line:no-console
+  console.log('analytics-action', event);
+  action('analytics-action')(event);
+};
 
 const showcase = {
   children: [
     {
       decorator: (storyFn: () => React.ReactNode) => (
-        <ArticleHarness>{storyFn()}</ArticleHarness>
+        <TrackingContextProvider
+          context={{
+            articleHeadline: 'articleHeadline',
+            section: 'section'
+          }}
+          analyticsStream={analyticsStream}
+        >
+          <ArticleHarness>{storyFn()}</ArticleHarness>
+        </TrackingContextProvider>
       ),
       type: 'decorator'
     },

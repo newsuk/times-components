@@ -1,9 +1,13 @@
+/**
+ * @jest-environment jsdom
+ */
 import React from 'react';
 import { create } from 'react-test-renderer';
 
 import { delay } from '@times-components/test-utils';
 
 import { ViewCountWrapper } from '../ViewCountWrapper';
+import FakeIntersectionObserver from '../../test-utils/FakeIntersectionObserver';
 
 describe('<ViewCountWrapper>', () => {
   beforeEach(() => {
@@ -59,36 +63,15 @@ describe('<ViewCountWrapper>', () => {
     });
   });
   describe('intersectionObserverTests', () => {
-    let oldIntersectionObserver:
-      | IntersectionObserver
-      | typeof window.IntersectionObserver;
+    let oldIntersectionObserver: typeof IntersectionObserver;
     beforeEach(() => {
       oldIntersectionObserver = window.IntersectionObserver;
 
-      type MockCallbackType = (props: Array<{ isIntersecting: boolean }>) => {};
-
-      class FakeIntersectionObserver {
-        static callback: MockCallbackType;
-        static observe = jest.fn();
-        static disconnect = jest.fn();
-
-        static intersect(): void {
-          FakeIntersectionObserver.callback([{ isIntersecting: true }]);
-        }
-
-        observe = FakeIntersectionObserver.observe;
-        disconnect = FakeIntersectionObserver.disconnect;
-
-        constructor(callback: MockCallbackType) {
-          FakeIntersectionObserver.callback = callback;
-        }
-      }
       // @ts-ignore
       window.IntersectionObserver = FakeIntersectionObserver;
     });
 
     afterEach(() => {
-      // @ts-ignore
       window.IntersectionObserver = oldIntersectionObserver;
     });
 
@@ -103,14 +86,13 @@ describe('<ViewCountWrapper>', () => {
         JSON.stringify({ hello1: 1 })
       );
 
-      // @ts-ignore
-      window.IntersectionObserver.intersect();
+      FakeIntersectionObserver.intersect();
 
       expect(window.sessionStorage.getItem('view-count')).toEqual(
         JSON.stringify({ hello1: 2 })
       );
       // @ts-ignore
-      expect(window.IntersectionObserver.disconnect).toHaveBeenCalledWith();
+      expect(FakeIntersectionObserver.disconnect).toHaveBeenCalledWith();
     });
   });
   describe('using a display function', () => {

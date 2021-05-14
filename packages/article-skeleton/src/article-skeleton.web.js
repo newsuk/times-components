@@ -6,6 +6,7 @@ import LazyLoad from "@times-components/lazy-load";
 import { spacing } from "@times-components/styleguide";
 import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
+import { TrackingContextProvider } from "@times-components/ts-components";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 import { AlgoliaSearchProvider } from "@times-components/utils";
@@ -58,6 +59,7 @@ const ArticleSkeleton = ({
     section,
     url,
     headline,
+    shortHeadline,
     label,
     topics,
     relatedArticleSlice,
@@ -96,122 +98,132 @@ const ArticleSkeleton = ({
   ]);
   return (
     <StickyProvider>
-      {isPreview && (
-        <div className="Container">
-          <div className="ArticleMetaBanner">
-            <div className="ArticleMetaBanner-field">
-              <label htmlFor="ArticleMetaBanner-uuid">
-                UUID
-                <input
-                  type="text"
-                  placeholder="UUID"
-                  name="UUID"
-                  id="ArticleMetaBanner-uuid"
-                  value={articleId}
-                  readOnly
-                />
-              </label>
-              <button
-                type="button"
-                className="ArticleMetaBanner-button"
-                data-clipboard-target="#ArticleMetaBanner-uuid"
-              >
-                Copy
-              </button>
+      <TrackingContextProvider
+        context={{
+          article_name: headline || shortHeadline || "",
+          section_details: section
+        }}
+        analyticsStream={analyticsStream}
+      >
+        {isPreview && (
+          <div className="Container">
+            <div className="ArticleMetaBanner">
+              <div className="ArticleMetaBanner-field">
+                <label htmlFor="ArticleMetaBanner-uuid">
+                  UUID
+                  <input
+                    type="text"
+                    placeholder="UUID"
+                    name="UUID"
+                    id="ArticleMetaBanner-uuid"
+                    value={articleId}
+                    readOnly
+                  />
+                </label>
+                <button
+                  type="button"
+                  className="ArticleMetaBanner-button"
+                  data-clipboard-target="#ArticleMetaBanner-uuid"
+                >
+                  Copy
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      )}
-      <div id="article-marketing-header" />
-      <article
-        id="article-main"
-        data-article-identifier={article.id}
-        data-article-sectionname={section}
-        data-article-template={template}
-      >
-        <Head
-          article={article}
-          logoUrl={logoUrl}
-          paidContentClassName={paidContentClassName}
-        />
-        <AlgoliaSearchProvider
-          algoliaSearchKeys={algoliaSearchKeys}
-          article={{ id: articleId, label, section, topics }}
+        )}
+        <div id="article-marketing-header" />
+        <article
+          id="article-main"
+          data-article-identifier={article.id}
+          data-article-sectionname={section}
+          data-article-template={template}
         >
-          <Fragment>
-            <HeaderAdContainer key="headerAd">
-              <AdContainer slotName="header" style={styles.adMarginStyle} />
-            </HeaderAdContainer>
-            <MainContainer accessibilityRole="main">
-              <HeaderContainer>
-                <Header />
-                {savingEnabled || sharingEnabled ? (
-                  <UserState state={UserState.loggedInOrShared}>
-                    <MessageContext.Consumer>
-                      {({ showMessage }) => (
-                        <StickySaveAndShareBar
-                          articleId={articleId}
-                          articleHeadline={headline}
-                          articleUrl={url}
-                          onCopyLink={() => showMessage("Article link copied")}
-                          onSaveToMyArticles={() => {}}
-                          onShareOnEmail={() => {}}
-                          savingEnabled={savingEnabled}
-                          sharingEnabled={sharingEnabled}
-                        />
-                      )}
-                    </MessageContext.Consumer>
-                  </UserState>
-                ) : null}
-              </HeaderContainer>
-              <BodyContainer accessibilityRole="article">
-                {newContent && (
-                  <ArticleBody
-                    analyticsStream={analyticsStream}
-                    content={newContent}
-                    contextUrl={url}
-                    section={section}
-                    paidContentClassName={paidContentClassName}
-                    template={template}
-                    isPreview={isPreview}
-                    inArticlePuffFlag={inArticlePuffFlag}
-                  />
-                )}
-                <PaywallPortal
-                  id="paywall-portal-article-footer"
-                  componentName="subscribe-cta"
-                />
-                <LazyLoad rootMargin={spacing(40)} threshold={0}>
-                  {({ observed, registerNode }) => (
-                    <ArticleExtras
+          <Head
+            article={article}
+            logoUrl={logoUrl}
+            paidContentClassName={paidContentClassName}
+          />
+          <AlgoliaSearchProvider
+            algoliaSearchKeys={algoliaSearchKeys}
+            article={{ id: articleId, label, section, topics }}
+          >
+            <Fragment>
+              <HeaderAdContainer key="headerAd">
+                <AdContainer slotName="header" style={styles.adMarginStyle} />
+              </HeaderAdContainer>
+              <MainContainer accessibilityRole="main">
+                <HeaderContainer>
+                  <Header />
+                  {savingEnabled || sharingEnabled ? (
+                    <UserState state={UserState.loggedInOrShared}>
+                      <MessageContext.Consumer>
+                        {({ showMessage }) => (
+                          <StickySaveAndShareBar
+                            articleId={articleId}
+                            articleHeadline={headline}
+                            articleUrl={url}
+                            onCopyLink={() =>
+                              showMessage("Article link copied")
+                            }
+                            onSaveToMyArticles={() => {}}
+                            onShareOnEmail={() => {}}
+                            savingEnabled={savingEnabled}
+                            sharingEnabled={sharingEnabled}
+                          />
+                        )}
+                      </MessageContext.Consumer>
+                    </UserState>
+                  ) : null}
+                </HeaderContainer>
+                <BodyContainer accessibilityRole="article">
+                  {newContent && (
+                    <ArticleBody
                       analyticsStream={analyticsStream}
-                      articleId={articleId}
-                      articleHeadline={headline}
-                      articleUrl={url}
-                      savingEnabled={savingEnabled}
-                      sharingEnabled={sharingEnabled}
-                      commentsEnabled={commentsEnabled}
-                      registerNode={registerNode}
-                      relatedArticleSlice={relatedArticleSlice}
-                      relatedArticlesVisible={
-                        !!observed.get("related-articles")
-                      }
-                      spotAccountId={spotAccountId}
-                      topics={topics}
-                      additionalRelatedArticlesFlag={
-                        additionalRelatedArticlesFlag
-                      }
+                      content={newContent}
+                      contextUrl={url}
+                      section={section}
+                      paidContentClassName={paidContentClassName}
+                      template={template}
+                      isPreview={isPreview}
+                      inArticlePuffFlag={inArticlePuffFlag}
                     />
                   )}
-                </LazyLoad>
-              </BodyContainer>
-            </MainContainer>
-          </Fragment>
-          <AdContainer slotName="pixel" />
-          <AdContainer slotName="pixelteads" />
-          <AdContainer slotName="pixelskin" />
-        </AlgoliaSearchProvider>
-      </article>
+                  <PaywallPortal
+                    id="paywall-portal-article-footer"
+                    componentName="subscribe-cta"
+                  />
+                  <LazyLoad rootMargin={spacing(40)} threshold={0}>
+                    {({ observed, registerNode }) => (
+                      <ArticleExtras
+                        analyticsStream={analyticsStream}
+                        articleId={articleId}
+                        articleHeadline={headline}
+                        articleUrl={url}
+                        savingEnabled={savingEnabled}
+                        sharingEnabled={sharingEnabled}
+                        commentsEnabled={commentsEnabled}
+                        registerNode={registerNode}
+                        relatedArticleSlice={relatedArticleSlice}
+                        relatedArticlesVisible={
+                          !!observed.get("related-articles")
+                        }
+                        spotAccountId={spotAccountId}
+                        topics={topics}
+                        additionalRelatedArticlesFlag={
+                          additionalRelatedArticlesFlag
+                        }
+                      />
+                    )}
+                  </LazyLoad>
+                </BodyContainer>
+              </MainContainer>
+            </Fragment>
+            <AdContainer slotName="pixel" />
+            <AdContainer slotName="pixelteads" />
+            <AdContainer slotName="pixelskin" />
+          </AlgoliaSearchProvider>
+        </article>
+      </TrackingContextProvider>
     </StickyProvider>
   );
 };

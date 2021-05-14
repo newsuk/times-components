@@ -2,6 +2,23 @@ declare module '@times-components/storybook' {
   export const showcaseConverter: (module: any, showcase: any) => any;
 }
 
+declare module '@times-components/tealium-utils' {
+  export const storybookreporter: any;
+}
+
+declare module '@times-components/tracking' {
+  import { FC } from 'react';
+  type AnalyticsStreamType = (event: any) => void;
+
+  export interface AnalyticsProps {
+    analyticsStream: AnalyticsStreamType;
+    section: string;
+  }
+
+  export function withTrackingContext<T>(component: FC<T>, attr: any): FC<T>;
+  export function withTrackEvents<T>(component: FC<T>, attr: any): FC<T>;
+}
+
 declare module '@times-components/icons' {
   import { FC } from 'react';
 
