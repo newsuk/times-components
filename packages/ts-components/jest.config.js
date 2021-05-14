@@ -32,6 +32,7 @@ const buildConfig = dir => {
     collectCoverageFrom: [
       '<rootDir>/packages/ts-components/src/**/*.tsx',
       '!<rootDir>/packages/ts-components/src/**/*.stories.*',
+      '!<rootDir>/packages/ts-components/src/fixtures/*',
       '!<rootDir>/node_modules/'
     ]
   };

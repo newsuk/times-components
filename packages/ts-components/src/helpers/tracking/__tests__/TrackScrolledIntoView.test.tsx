@@ -2,7 +2,7 @@ import React from 'react';
 
 import { cleanup, render } from '@testing-library/react';
 import { TrackScrolledIntoView } from '../TrackScrolledIntoView';
-import FakeIntersectionObserver from '../../test-utils/FakeIntersectionObserver';
+import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 import { TrackingContextProvider } from '../TrackingContextProvider';
 
 describe('trackScrolledIntoView', () => {

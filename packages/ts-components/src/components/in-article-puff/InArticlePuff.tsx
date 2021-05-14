@@ -39,8 +39,6 @@ export const InArticlePuff: React.FC<{
     event: MouseEvent<HTMLAnchorElement>,
     fireAnalyticsEvent: (evt: any) => void
   ) => {
-    // tslint:disable-next-line:no-console
-    console.log('xxx', event);
     const clickTarget = event.currentTarget.textContent;
     const buttonType =
       clickTarget !== '' && clickTarget !== null ? clickTarget : 'image';

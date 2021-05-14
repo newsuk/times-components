@@ -1,10 +1,12 @@
 import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import { render, cleanup, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 import { useFetch } from '../../../helpers/fetch/FetchProvider';
 
 import { InArticlePuff } from '../InArticlePuff';
+import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
+import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 
 jest.mock('@times-components/image', () => ({
   Placeholder: () => <div>Placeholder</div>
@@ -116,5 +118,136 @@ describe('InArticlePuff', () => {
     const { asFragment } = render(<InArticlePuff {...requiredProps} />);
 
     expect(asFragment().firstChild).toBeNull();
+  });
+
+  describe('tracking', () => {
+    let oldIntersectionObserver: typeof IntersectionObserver;
+    beforeEach(() => {
+      oldIntersectionObserver = window.IntersectionObserver;
+
+      // @ts-ignore
+      window.IntersectionObserver = FakeIntersectionObserver;
+    });
+
+    afterEach(() => {
+      window.IntersectionObserver = oldIntersectionObserver;
+    });
+
+    it('fires scroll event when viewed', () => {
+      (useFetch as jest.Mock).mockReturnValue(
+        deckApiPayloadWrapper(optionalFields)
+      );
+      const analyticsStream = jest.fn();
+      render(
+        <TrackingContextProvider
+          context={{
+            articleHeadline: 'articleHeadline',
+            section: 'section'
+          }}
+          analyticsStream={analyticsStream}
+        >
+          <InArticlePuff {...requiredProps} />
+        </TrackingContextProvider>
+      );
+      FakeIntersectionObserver.intersect();
+      expect(analyticsStream).toHaveBeenCalledWith({
+        articleHeadline: 'articleHeadline',
+        component_name: 'Where can I get a Covid vaccine in England?',
+        component_type: 'in-article-component : puff : interactive',
+        event_navigation_action: 'navigation',
+        event_navigation_browsing_method: 'scroll',
+        event_navigation_name: 'in-article-component displayed : puff',
+        section: 'section'
+      });
+    });
+    it('fires click event when Read more clicked', () => {
+      (useFetch as jest.Mock).mockReturnValue(
+        deckApiPayloadWrapper(optionalFields)
+      );
+      const analyticsStream = jest.fn();
+      const { getByText } = render(
+        <TrackingContextProvider
+          context={{
+            articleHeadline: 'articleHeadline',
+            section: 'section'
+          }}
+          analyticsStream={analyticsStream}
+        >
+          <InArticlePuff {...requiredProps} />
+        </TrackingContextProvider>
+      );
+
+      fireEvent.click(getByText('Read the full article'));
+
+      expect(analyticsStream).toHaveBeenCalledWith({
+        articleHeadline: 'articleHeadline',
+        component_name: 'Where can I get a Covid vaccine in England?',
+        component_type: 'in-article-component : puff : interactive',
+        event_navigation_action: 'navigation',
+        event_navigation_browsing_method: 'click',
+        event_navigation_name:
+          'button : Read the full articleIconForwardChevron',
+        section: 'section'
+      });
+    });
+    it('fires click event when headline clicked', () => {
+      (useFetch as jest.Mock).mockReturnValue(
+        deckApiPayloadWrapper(optionalFields)
+      );
+      const analyticsStream = jest.fn();
+      const { getByText } = render(
+        <TrackingContextProvider
+          context={{
+            articleHeadline: 'articleHeadline',
+            section: 'section'
+          }}
+          analyticsStream={analyticsStream}
+        >
+          <InArticlePuff {...requiredProps} />
+        </TrackingContextProvider>
+      );
+
+      fireEvent.click(getByText('Where can I get a Covid vaccine in England?'));
+
+      expect(analyticsStream).toHaveBeenCalledWith({
+        articleHeadline: 'articleHeadline',
+        component_name: 'Where can I get a Covid vaccine in England?',
+        component_type: 'in-article-component : puff : interactive',
+        event_navigation_action: 'navigation',
+        event_navigation_browsing_method: 'click',
+        event_navigation_name:
+          'button : Where can I get a Covid vaccine in England?',
+        section: 'section'
+      });
+    });
+    it('fires click event when image clicked', () => {
+      (useFetch as jest.Mock).mockReturnValue(
+        deckApiPayloadWrapper(optionalFields)
+      );
+      const analyticsStream = jest.fn();
+      const { getByRole } = render(
+        <TrackingContextProvider
+          context={{
+            articleHeadline: 'articleHeadline',
+            section: 'section'
+          }}
+          analyticsStream={analyticsStream}
+        >
+          <InArticlePuff {...requiredProps} />
+        </TrackingContextProvider>
+      );
+
+      fireEvent.click(getByRole('img'));
+
+      expect(analyticsStream).toHaveBeenCalledWith({
+        articleHeadline: 'articleHeadline',
+        component_name: 'Where can I get a Covid vaccine in England?',
+        component_type: 'in-article-component : puff : interactive',
+        event_navigation_action: 'navigation',
+        event_navigation_browsing_method: 'click',
+        event_navigation_name: 'button : image',
+        section: 'section'
+      });
+    });
   });
 });

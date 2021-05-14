@@ -40,27 +40,13 @@ export const TrackingContextProvider = ({
       ? analyticsStream
       : parentTrackingContext.analyticsStream;
 
-  // tslint:disable-next-line:no-console
-  console.log('TrackingContextProvider analyticsStream', analyticsStream);
-  // tslint:disable-next-line:no-console
-  console.log(
-    'TrackingContextProvider parentTrackingContext',
-    parentTrackingContext
-  );
-
   const fireAnalyticsEvent = (event: any) => {
     const aggregatedEvent = {
       ...parentTrackingContext.context,
       ...context,
       ...event
     };
-    // tslint:disable-next-line:no-console
-    console.log('fireAnalyticsEvent analyticsStream', analyticsStream);
-    // tslint:disable-next-line:no-console
-    console.log(
-      'fireAnalyticsEvent parentTrackingContext',
-      parentTrackingContext
-    );
+
     stream
       ? stream(aggregatedEvent)
       : // tslint:disable-next-line:no-console
