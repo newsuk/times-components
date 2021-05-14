@@ -2,7 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = async ({ config }, env, defaultConfig) => {
-  config.devtool = "eval-source-map"
+  config.devtool = "eval-source-map";
   config.resolve = {
     ...config.resolve,
     alias: {
@@ -10,7 +10,7 @@ module.exports = async ({ config }, env, defaultConfig) => {
       "react-native": "react-native-web",
       "@storybook/react-native": "@storybook/react"
     },
-    extensions: [".web.js", ".js", ".mjs"],
+    extensions: [".tsx", ".ts", ".web.js", ".js", ".mjs"],
     mainFields: ["devModule", "dev", "module", "main"]
   };
   config.plugins.push(
@@ -19,15 +19,22 @@ module.exports = async ({ config }, env, defaultConfig) => {
       manifest: path.resolve("./dist/public/vendor-manifest.json")
     })
   );
+  config.module.rules.push({
+    test: /\.(tsx?)$/,
+    loader: "babel-loader",
+    options: {
+      configFile: "./babel.config.js"
+    }
+  });
   config.module.rules.push(
     {
       test: /\.(png|jpe?g|gif)$/,
-      loader: 'react-native-web-image-loader?name=[hash].[ext]',
+      loader: "react-native-web-image-loader?name=[hash].[ext]"
     },
     {
       test: /\.mjs$/,
       include: /node_modules/,
-      type: 'javascript/auto'
+      type: "javascript/auto"
     },
     {
       test: /\.(graphql|gql)$/,
@@ -37,5 +44,5 @@ module.exports = async ({ config }, env, defaultConfig) => {
     }
   );
 
-  return config
+  return config;
 };
