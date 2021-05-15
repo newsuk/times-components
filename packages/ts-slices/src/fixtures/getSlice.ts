@@ -13,10 +13,7 @@ const slices: SliceData[] = [
   },
   {
     name: 'LEAD_1_AND_1',
-    children: [
-      { article: getArticle() },
-      { article: getArticleWithSummary() }
-    ]
+    children: [{ article: getArticle() }, { article: getArticleWithSummary() }]
   },
   {
     name: 'LEAD_1_AND_2',

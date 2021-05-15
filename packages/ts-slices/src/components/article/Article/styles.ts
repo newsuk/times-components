@@ -40,7 +40,7 @@ export const Strapline = styled.p<{ schema?: DisplaySchema }>`
 `;
 
 export const TimeSince = styled.p`
-  margin-top: 8px;
+  margin: 8px 0 0 0;
   color: ${colours.functional.secondary};
   font-size: 12px;
   line-height: 16px;

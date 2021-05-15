@@ -52,8 +52,8 @@ const sportArticles: SliceArticle[] = [
     byline: 'Molly Hudson',
     headline:
       'From a teenage dream to battling the biggest clubs in Europe, the rise of Glasgow City',
-    datePublished: '2020-08-19T16:00:00.000Z',
-    dateUpdated: '2020-08-19T17:25:08.000Z',
+    datePublished: '2021-05-14T16:00:00.000Z',
+    dateUpdated: '2021-05-14T17:25:08.000Z',
     url:
       'https://www.thetimes.co.uk/article/from-a-teenage-dream-to-battling-the-biggest-clubs-in-europe-the-rise-of-glasgow-city-c72gvbhgj'
   },
@@ -249,8 +249,8 @@ const sportCommentArticles: SliceArticle[] = [
     label: 'Cricket',
     byline: 'Mike Atherton',
     headline: 'Welcome, Fawad Alam, to the ministry of silly stances',
-    datePublished: '2020-08-19T16:00:00.000Z',
-    dateUpdated: '2020-08-19T17:25:07.000Z',
+    datePublished: '2021-05-14T16:00:00.000Z',
+    dateUpdated: '2021-05-14T17:25:07.000Z',
     template: 'maincomment',
     url:
       'https://www.thetimes.co.uk/article/welcome-fawad-alam-to-the-ministry-of-silly-stances-50zvt5b92'
