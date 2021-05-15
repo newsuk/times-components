@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Secondary4Odd /> should render a SECONDARY_4_ODD slice correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa sc-htpNat gWBumh"
+  >
+    <div
+      class="sc-bwzfXH sc-bxivhb mcwvb"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH sc-ifAKCX dSaDba"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH sc-bxivhb mcwvb"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH sc-ifAKCX dSaDba"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Secondary4Odd /> should render a SECONDARY_4_ODD_COLUMNIST slice correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa sc-htpNat gWBumh"
+  >
+    <div
+      class="sc-bwzfXH sc-bxivhb mcwvb"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH sc-ifAKCX dSaDba"
+    >
+      <div>
+        ArticleComment
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH sc-bxivhb mcwvb"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH sc-ifAKCX dSaDba"
+    >
+      <div>
+        ArticleComment
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
