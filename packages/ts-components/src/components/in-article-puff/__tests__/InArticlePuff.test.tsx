@@ -153,10 +153,10 @@ describe('InArticlePuff', () => {
       expect(analyticsStream).toHaveBeenCalledWith({
         articleHeadline: 'articleHeadline',
         component_name: 'Where can I get a Covid vaccine in England?',
-        component_type: 'in-article-component : puff : interactive',
+        component_type: 'in-article component : puff : interactive',
         event_navigation_action: 'navigation',
         event_navigation_browsing_method: 'scroll',
-        event_navigation_name: 'in-article-component displayed : puff',
+        event_navigation_name: 'in-article component displayed : puff',
         section: 'section'
       });
     });
@@ -182,11 +182,10 @@ describe('InArticlePuff', () => {
       expect(analyticsStream).toHaveBeenCalledWith({
         articleHeadline: 'articleHeadline',
         component_name: 'Where can I get a Covid vaccine in England?',
-        component_type: 'in-article-component : puff : interactive',
+        component_type: 'in-article component : puff : interactive',
         event_navigation_action: 'navigation',
         event_navigation_browsing_method: 'click',
-        event_navigation_name:
-          'button : Read the full articleIconForwardChevron',
+        event_navigation_name: 'button : Read the full article',
         section: 'section'
       });
     });
@@ -212,11 +211,10 @@ describe('InArticlePuff', () => {
       expect(analyticsStream).toHaveBeenCalledWith({
         articleHeadline: 'articleHeadline',
         component_name: 'Where can I get a Covid vaccine in England?',
-        component_type: 'in-article-component : puff : interactive',
+        component_type: 'in-article component : puff : interactive',
         event_navigation_action: 'navigation',
         event_navigation_browsing_method: 'click',
-        event_navigation_name:
-          'button : Where can I get a Covid vaccine in England?',
+        event_navigation_name: 'button : headline',
         section: 'section'
       });
     });
@@ -242,7 +240,7 @@ describe('InArticlePuff', () => {
       expect(analyticsStream).toHaveBeenCalledWith({
         articleHeadline: 'articleHeadline',
         component_name: 'Where can I get a Covid vaccine in England?',
-        component_type: 'in-article-component : puff : interactive',
+        component_type: 'in-article component : puff : interactive',
         event_navigation_action: 'navigation',
         event_navigation_browsing_method: 'click',
         event_navigation_name: 'button : image',

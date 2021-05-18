@@ -1,4 +1,4 @@
-import React, { MouseEvent, useState } from 'react';
+import React, { useState } from 'react';
 
 import { Placeholder } from '@times-components/image';
 import { IconForwardChevron } from '@times-components/icons';
@@ -21,12 +21,12 @@ import {
 } from './styles';
 
 const scrollEvent = {
-  event_navigation_name: 'in-article-component displayed : puff',
+  event_navigation_name: 'in-article component displayed : puff',
   event_navigation_browsing_method: 'scroll'
 };
 
-const clickEvent = (buttonType: string) => ({
-  event_navigation_name: `button : ${buttonType}`,
+const clickEvent = (buttonLabel: string) => ({
+  event_navigation_name: `button : ${buttonLabel}`,
   event_navigation_browsing_method: 'click'
 });
 
@@ -36,14 +36,12 @@ export const InArticlePuff: React.FC<{
   const [colour, setColour] = useState('#bf0000');
 
   const handleClick = (
-    event: MouseEvent<HTMLAnchorElement>,
-    fireAnalyticsEvent: (evt: any) => void
+    fireAnalyticsEvent: (evt: any) => void,
+    buttonLabel: string
   ) => {
-    const clickTarget = event.currentTarget.textContent;
-    const buttonType =
-      clickTarget !== '' && clickTarget !== null ? clickTarget : 'image';
-    fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(buttonType));
+    fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(buttonLabel));
   };
+
   const { loading, error, data } = useFetch();
 
   if (loading) {
@@ -72,7 +70,7 @@ export const InArticlePuff: React.FC<{
   return (
     <TrackingContextProvider
       context={{
-        component_type: 'in-article-component : puff : interactive',
+        component_type: 'in-article component : puff : interactive',
         event_navigation_action: 'navigation',
         component_name: `${headline}`
       }}
@@ -89,7 +87,7 @@ export const InArticlePuff: React.FC<{
                 <ImageContainer>
                   <a
                     href={link}
-                    onClick={evt => handleClick(evt, fireAnalyticsEvent)}
+                    onClick={() => handleClick(fireAnalyticsEvent, 'image')}
                   >
                     <img src={image} />
                   </a>
@@ -103,7 +101,7 @@ export const InArticlePuff: React.FC<{
                   </Label>
                   <a
                     href={link}
-                    onClick={evt => handleClick(evt, fireAnalyticsEvent)}
+                    onClick={() => handleClick(fireAnalyticsEvent, 'headline')}
                   >
                     <Headline hasImage={hasImage}>{headline}</Headline>
                   </a>
@@ -112,7 +110,12 @@ export const InArticlePuff: React.FC<{
 
                 <Link
                   href={link}
-                  onClick={evt => handleClick(evt, fireAnalyticsEvent)}
+                  onClick={() =>
+                    handleClick(
+                      fireAnalyticsEvent,
+                      linkText ? linkText : 'Read more'
+                    )
+                  }
                   onMouseOver={() => setColour('#696969')}
                   onMouseLeave={() => setColour('#BF0000')}
                 >
