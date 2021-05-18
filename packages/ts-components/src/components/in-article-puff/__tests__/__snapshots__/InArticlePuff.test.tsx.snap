@@ -3,9 +3,7 @@
 exports[`InArticlePuff should render optional fields correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bwzfXH fJttQd"
-    data-testid="InArticlePuff - Container"
-    style="border-top: 2px solid #13354E;"
+    class="sc-bwzfXH fZayOF"
   >
     <div
       class="sc-htpNat jUgmOU"
@@ -23,8 +21,7 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
     >
       <div>
         <div
-          class="sc-ifAKCX fewBDO"
-          style="color: rgb(19, 53, 78);"
+          class="sc-ifAKCX cukKbE"
         >
           interactive
         </div>
@@ -64,17 +61,14 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
 exports[`InArticlePuff should render required fields correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bwzfXH fJttQd"
-    data-testid="InArticlePuff - Container"
-    style="border-top: 2px solid #13354E;"
+    class="sc-bwzfXH fZayOF"
   >
     <div
       class="sc-bxivhb cfsDhB"
     >
       <div>
         <div
-          class="sc-ifAKCX cWvuvC"
-          style="color: rgb(19, 53, 78);"
+          class="sc-ifAKCX cFeZSy"
         >
           interactive
         </div>
