@@ -42,7 +42,7 @@ describe('trackScrolledIntoView', () => {
       >
         <TrackScrolledIntoView analyticsEvent={{ action: 'viewed' }}>
           {({ intersectObserverRef }) => (
-            <div ref={intersectObserverRef}>content </div>
+            <div ref={intersectObserverRef}>content</div>
           )}
         </TrackScrolledIntoView>
       </TrackingContextProvider>

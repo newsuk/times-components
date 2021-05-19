@@ -1,61 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ViewCountWrapper> display function always renders 1`] = `
-Array [
-  <div
-    className="view-count-observer"
-  />,
-  <div
-    className="view-count"
-    style={
-      Object {
-        "display": "block",
-      }
-    }
-  >
-    <span>
-      Hello
-    </span>
-  </div>,
-]
+<div
+  class="view-count"
+  style="display: block;"
+>
+  <span>
+    Hello
+  </span>
+</div>
 `;
 
 exports[`<ViewCountWrapper> display function doesnt render without consent 1`] = `
-Array [
-  <div
-    className="view-count-observer"
-  />,
-  <div
-    className="view-count"
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-  >
-    <span>
-      Hello
-    </span>
-  </div>,
-]
+<div
+  class="view-count"
+  style="display: none;"
+>
+  <span>
+    Hello
+  </span>
+</div>
 `;
 
 exports[`<ViewCountWrapper> display function never renders 1`] = `
-Array [
-  <div
-    className="view-count-observer"
-  />,
-  <div
-    className="view-count"
-    style={
-      Object {
-        "display": "none",
-      }
-    }
-  >
-    <span>
-      Hello
-    </span>
-  </div>,
-]
+<div
+  class="view-count"
+  style="display: none;"
+>
+  <span>
+    Hello
+  </span>
+</div>
 `;

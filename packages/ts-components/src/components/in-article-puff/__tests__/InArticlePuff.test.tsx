@@ -13,7 +13,11 @@ jest.mock('@times-components/image', () => ({
 }));
 
 jest.mock('@times-components/icons', () => ({
-  IconForwardChevron: () => <div>IconForwardChevron</div>
+  IconForwardChevron: (props: any) => (
+    <svg className="iconForwardChevron" {...props}>
+      IconForwardChevron
+    </svg>
+  )
 }));
 
 jest.mock('../../../helpers/fetch/FetchProvider', () => ({
@@ -110,6 +114,28 @@ describe('InArticlePuff', () => {
     expect(getByText(requiredFields.label)).toHaveStyle(
       `color: ${requiredProps.sectionColour}`
     );
+  });
+
+  it('mouse over', () => {
+    (useFetch as jest.Mock).mockReturnValue(
+      deckApiPayloadWrapper(requiredFields)
+    );
+
+    const { baseElement } = render(<InArticlePuff {...requiredProps} />);
+    const icon = baseElement.querySelector('.iconForwardChevron');
+    fireEvent.mouseOver(icon!);
+    expect(icon!.getAttribute('fillColour')).toEqual('#696969');
+  });
+
+  it('mouse leave', () => {
+    (useFetch as jest.Mock).mockReturnValue(
+      deckApiPayloadWrapper(requiredFields)
+    );
+
+    const { baseElement } = render(<InArticlePuff {...requiredProps} />);
+    const icon = baseElement.querySelector('.iconForwardChevron');
+    fireEvent.mouseLeave(icon!);
+    expect(icon!.getAttribute('fillColour')).toEqual('#BF0000');
   });
 
   it('should render the error state correctly', () => {

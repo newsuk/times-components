@@ -5,7 +5,6 @@ import { IconForwardChevron } from '@times-components/icons';
 
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 
-import { TrackScrolledIntoView } from '../../helpers/tracking/TrackScrolledIntoView';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
 import {
@@ -74,62 +73,55 @@ export const InArticlePuff: React.FC<{
         event_navigation_action: 'navigation',
         component_name: `${headline}`
       }}
+      scrolledEvent={scrollEvent}
     >
-      {({ fireAnalyticsEvent }) => (
-        <TrackScrolledIntoView analyticsEvent={scrollEvent}>
-          {({ intersectObserverRef }) => (
-            <Container
-              ref={intersectObserverRef}
-              style={{ borderTop: `2px ${sectionColour} solid` }}
-              data-testid="InArticlePuff - Container"
+      {({ fireAnalyticsEvent, intersectObserverRef }) => (
+        <Container
+          ref={intersectObserverRef}
+          style={{ borderTop: `2px ${sectionColour} solid` }}
+          data-testid="InArticlePuff - Container"
+        >
+          {image ? (
+            <ImageContainer>
+              <a
+                href={link}
+                onClick={() => handleClick(fireAnalyticsEvent, 'image')}
+              >
+                <img src={image} />
+              </a>
+            </ImageContainer>
+          ) : null}
+
+          <ContentContainer hasImage={hasImage}>
+            <div>
+              <Label hasImage={hasImage} style={{ color: sectionColour }}>
+                {label}
+              </Label>
+              <a
+                href={link}
+                onClick={() => handleClick(fireAnalyticsEvent, 'headline')}
+              >
+                <Headline hasImage={hasImage}>{headline}</Headline>
+              </a>
+              {copy && <Copy>{copy}</Copy>}
+            </div>
+
+            <Link
+              href={link}
+              onClick={() =>
+                handleClick(
+                  fireAnalyticsEvent,
+                  linkText ? linkText : 'Read more'
+                )
+              }
+              onMouseOver={() => setColour('#696969')}
+              onMouseLeave={() => setColour('#BF0000')}
             >
-              {image ? (
-                <ImageContainer>
-                  <a
-                    href={link}
-                    onClick={() => handleClick(fireAnalyticsEvent, 'image')}
-                  >
-                    <img src={image} />
-                  </a>
-                </ImageContainer>
-              ) : null}
-
-              <ContentContainer hasImage={hasImage}>
-                <div>
-                  <Label hasImage={hasImage} style={{ color: sectionColour }}>
-                    {label}
-                  </Label>
-                  <a
-                    href={link}
-                    onClick={() => handleClick(fireAnalyticsEvent, 'headline')}
-                  >
-                    <Headline hasImage={hasImage}>{headline}</Headline>
-                  </a>
-                  {copy && <Copy>{copy}</Copy>}
-                </div>
-
-                <Link
-                  href={link}
-                  onClick={() =>
-                    handleClick(
-                      fireAnalyticsEvent,
-                      linkText ? linkText : 'Read more'
-                    )
-                  }
-                  onMouseOver={() => setColour('#696969')}
-                  onMouseLeave={() => setColour('#BF0000')}
-                >
-                  <LinkText>{linkText ? linkText : 'Read more'}</LinkText>
-                  <IconForwardChevron
-                    fillColour={colour}
-                    height={18}
-                    width={8}
-                  />
-                </Link>
-              </ContentContainer>
-            </Container>
-          )}
-        </TrackScrolledIntoView>
+              <LinkText>{linkText ? linkText : 'Read more'}</LinkText>
+              <IconForwardChevron fillColour={colour} height={18} width={8} />
+            </Link>
+          </ContentContainer>
+        </Container>
       )}
     </TrackingContextProvider>
   );

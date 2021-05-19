@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import { useTrackingContext } from './TrackingContextProvider';
+import { useIntersectionObserver } from '../../utils/intersectObserverHook';
 type TrackScrolledIntoViewProps = {
   analyticsEvent: any;
   children: (
@@ -13,34 +14,13 @@ export const TrackScrolledIntoView = ({
 }: TrackScrolledIntoViewProps) => {
   const [ref, setRef] = useState<HTMLDivElement | null>(null);
   const { fireAnalyticsEvent } = useTrackingContext();
-  useEffect(
-    () => {
-      let observer: IntersectionObserver | null;
-      if (ref) {
-        observer =
-          (typeof window !== 'undefined' &&
-            window.IntersectionObserver &&
-            new window.IntersectionObserver(
-              entries => {
-                if (entries[0].isIntersecting) {
-                  observer && observer.disconnect();
 
-                  fireAnalyticsEvent && fireAnalyticsEvent(analyticsEvent);
-                }
-              },
-              {
-                threshold: 0.5
-              }
-            )) ||
-          null;
-        observer && observer.observe(ref);
-      }
-      return () => {
-        observer && observer.disconnect();
-      };
-    },
-    [ref]
+  useIntersectionObserver(
+    ref,
+    () => fireAnalyticsEvent && fireAnalyticsEvent(analyticsEvent),
+    {
+      threshold: 0.5
+    }
   );
-
   return <>{children({ intersectObserverRef: setRef })}</>;
 };
