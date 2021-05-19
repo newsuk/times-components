@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useEffect, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 
 import { hasCookieConsent } from '../../utils/cookie';
 import { getStorageProvider } from '../../utils/session';
@@ -47,9 +47,6 @@ export const ViewCountWrapper: FC<{
   const [viewCount, setViewCount] = useState();
 
   const [ref, setRef] = useState<HTMLDivElement | null>(null);
-  const intersectObserverRef = useCallback(node => {
-    setRef(node);
-  }, []);
 
   useEffect(() => {
     const newViewCount = getViewCount(trackingName);
@@ -67,7 +64,7 @@ export const ViewCountWrapper: FC<{
   const display = hasCookieConsent() && displayFunction(viewCount);
   return (
     <>
-      <div className="view-count-observer" ref={intersectObserverRef} />
+      <div className="view-count-observer" ref={setRef} />
       <div
         className="view-count"
         style={{ display: display ? 'block' : 'none' }}
