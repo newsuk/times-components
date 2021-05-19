@@ -98,24 +98,6 @@ describe('InArticlePuff', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('should render section colour correctly', () => {
-    (useFetch as jest.Mock).mockReturnValue(
-      deckApiPayloadWrapper(requiredFields)
-    );
-
-    const { getByText, getByTestId } = render(
-      <InArticlePuff {...requiredProps} />
-    );
-
-    expect(getByTestId('InArticlePuff - Container')).toHaveStyle(
-      `border-top: 2px ${requiredProps.sectionColour} solid`
-    );
-
-    expect(getByText(requiredFields.label)).toHaveStyle(
-      `color: ${requiredProps.sectionColour}`
-    );
-  });
-
   it('mouse over', () => {
     (useFetch as jest.Mock).mockReturnValue(
       deckApiPayloadWrapper(requiredFields)

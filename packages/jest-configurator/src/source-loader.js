@@ -23,7 +23,7 @@ const pointToSource = filename => {
     return existsSync(`${base}${extension}`) ? `${base}${extension}` : null;
   }, null);
 
-  return existingPath || filename;
+  return existingPath || source;
 };
 
 /* Based upon the babel-jest impl, but only

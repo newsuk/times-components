@@ -76,11 +76,7 @@ export const InArticlePuff: React.FC<{
       scrolledEvent={scrollEvent}
     >
       {({ fireAnalyticsEvent, intersectObserverRef }) => (
-        <Container
-          ref={intersectObserverRef}
-          style={{ borderTop: `2px ${sectionColour} solid` }}
-          data-testid="InArticlePuff - Container"
-        >
+        <Container ref={intersectObserverRef} sectionColour={sectionColour}>
           {image ? (
             <ImageContainer>
               <a
@@ -94,7 +90,7 @@ export const InArticlePuff: React.FC<{
 
           <ContentContainer hasImage={hasImage}>
             <div>
-              <Label hasImage={hasImage} style={{ color: sectionColour }}>
+              <Label hasImage={hasImage} sectionColour={sectionColour}>
                 {label}
               </Label>
               <a
