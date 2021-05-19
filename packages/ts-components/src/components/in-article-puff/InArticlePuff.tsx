@@ -48,10 +48,7 @@ export const InArticlePuff: React.FC<{
   const hasImage = Boolean(image);
 
   return (
-    <Container
-      style={{ borderTop: `2px ${sectionColour} solid` }}
-      data-testid="InArticlePuff - Container"
-    >
+    <Container sectionColour={sectionColour}>
       {image ? (
         <ImageContainer>
           <a href={link}>
@@ -62,7 +59,7 @@ export const InArticlePuff: React.FC<{
 
       <ContentContainer hasImage={hasImage}>
         <div>
-          <Label hasImage={hasImage} style={{ color: sectionColour }}>
+          <Label hasImage={hasImage} sectionColour={sectionColour}>
             {label}
           </Label>
           <a href={link}>
