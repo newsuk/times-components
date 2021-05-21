@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.2.0...@times-components/ts-components@1.3.0) (2021-05-21)
+
+
+### Features
+
+* TE89 - Add Tracking to InArticlePuff ([#2703](https://github.com/newsuk/times-components/issues/2703)) ([a994590](https://github.com/newsuk/times-components/commit/a994590079b15447dac5dd0057490ee1e648fc4e))
+
+
+
+
+
 # [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.1.0...@times-components/ts-components@1.2.0) (2021-05-19)
 
 
