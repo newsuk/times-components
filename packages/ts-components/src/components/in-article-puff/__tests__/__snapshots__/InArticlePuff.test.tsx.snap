@@ -49,9 +49,14 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
         >
           Read the full article
         </div>
-        <div>
+        <svg
+          class="iconForwardChevron"
+          fillcolour="#bf0000"
+          height="18"
+          width="8"
+        >
           IconForwardChevron
-        </div>
+        </svg>
       </a>
     </div>
   </div>
@@ -91,9 +96,14 @@ exports[`InArticlePuff should render required fields correctly 1`] = `
         >
           Read more
         </div>
-        <div>
+        <svg
+          class="iconForwardChevron"
+          fillcolour="#bf0000"
+          height="18"
+          width="8"
+        >
           IconForwardChevron
-        </div>
+        </svg>
       </a>
     </div>
   </div>

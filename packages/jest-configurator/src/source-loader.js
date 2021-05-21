@@ -2,7 +2,9 @@ import * as babelJest from "babel-jest";
 import jestPreset from "babel-preset-jest";
 import { transform as babelTransform } from "@babel/core";
 import babelIstanbulPlugin from "babel-plugin-istanbul";
-import { readFileSync } from "fs";
+
+import { readFileSync, existsSync } from "fs";
+
 import { createHash } from "crypto";
 import path from "path";
 
@@ -10,7 +12,19 @@ const readSource = filename => readFileSync(filename).toString();
 
 const isPackageFile = filename => filename.includes("times-components");
 
-const pointToSource = filename => filename.replace("dist", "src");
+const extensions = [".tsx", "ts", "js"];
+
+const pointToSource = filename => {
+  const source = filename.replace("dist", "src");
+  const { base } = path.parse(source);
+
+  const existingPath = extensions.reduce((result, extension) => {
+    if (result) return result;
+    return existsSync(`${base}${extension}`) ? `${base}${extension}` : null;
+  }, null);
+
+  return existingPath || source;
+};
 
 /* Based upon the babel-jest impl, but only
  * changes if raw source code has been updated.
