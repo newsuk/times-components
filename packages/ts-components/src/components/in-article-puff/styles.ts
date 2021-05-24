@@ -15,12 +15,13 @@ export const PlaceholderContainer = styled.div`
   }
 `;
 
-export const Container = styled.div`
+export const Container = styled.div<{ sectionColour: string }>`
   display: flex;
   flex-direction: column;
   margin: 0 auto 20px auto;
   padding: 20px;
   background-color: #f9f9f9;
+  border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
 
   a {
     text-decoration: none;
@@ -61,8 +62,9 @@ export const ContentContainer = styled.div<{ hasImage?: boolean }>`
   }
 `;
 
-export const Label = styled.div<{ hasImage?: boolean }>`
+export const Label = styled.div<{ hasImage?: boolean; sectionColour: string }>`
   padding-bottom: ${({ hasImage }) => (hasImage ? '8px' : '12px')};
+  color: ${({ sectionColour }) => sectionColour};
   font-family: ${fonts.supporting};
   font-size: 12px;
   text-transform: uppercase;

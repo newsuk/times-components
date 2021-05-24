@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "6.8.0",
+  "version": "6.8.1",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -39,9 +39,9 @@
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.16",
-    "@times-components/jest-configurator": "2.6.11",
-    "@times-components/jest-serializer": "3.2.23",
-    "@times-components/storybook": "4.1.61",
+    "@times-components/jest-configurator": "2.7.0",
+    "@times-components/jest-serializer": "3.2.24",
+    "@times-components/storybook": "4.1.62",
     "@times-components/test-utils": "2.3.8",
     "@times-components/webpack-configurator": "2.0.27",
     "babel-jest": "24.8.0",
@@ -64,13 +64,13 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/gradient": "3.2.55",
-    "@times-components/link": "3.6.39",
-    "@times-components/responsive": "0.6.22",
-    "@times-components/responsive-image": "0.7.0",
-    "@times-components/styleguide": "3.38.17",
-    "@times-components/svgs": "2.7.30",
-    "@times-components/utils": "6.5.1",
+    "@times-components/gradient": "3.2.56",
+    "@times-components/link": "3.6.40",
+    "@times-components/responsive": "0.6.23",
+    "@times-components/responsive-image": "0.7.1",
+    "@times-components/styleguide": "3.38.18",
+    "@times-components/svgs": "2.7.31",
+    "@times-components/utils": "6.5.2",
     "hoist-non-react-statics": "3.3.2",
     "prop-types": "15.7.2",
     "react-native-image-zoom-viewer": "2.2.26",

@@ -1,5 +1,5 @@
 import { Text, View } from 'react-native';
-import { configure, addDecorator } from "@storybook/react";
+import { configure, addDecorator } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { withOptions } from '@storybook/addon-options';
 import { withKnobs } from '@storybook/addon-knobs';
@@ -7,7 +7,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 const req = require.context(
   "../packages",
   true,
-  /^((?!node_modules).)*\.(stories|stories.web)\.js$/
+  /^((?!node_modules).)*\.(stories|stories.web)\.(tsx|js)$/
 );
 
 addDecorator(withInfo({

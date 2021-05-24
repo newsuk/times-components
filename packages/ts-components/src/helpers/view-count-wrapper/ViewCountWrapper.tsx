@@ -1,7 +1,8 @@
-import React, { FC, useEffect, useRef, useState } from 'react';
+import React, { FC, useEffect, useState } from 'react';
 
 import { hasCookieConsent } from '../../utils/cookie';
 import { getStorageProvider } from '../../utils/session';
+import { useIntersectionObserver } from '../../utils/intersectObserverHook';
 
 const STORAGE_KEY = 'view-count';
 
@@ -44,44 +45,26 @@ export const ViewCountWrapper: FC<{
   trackingName: string;
 }> = ({ displayFunction = () => true, trackingName, children }) => {
   const [viewCount, setViewCount] = useState();
-  const ref = useRef<HTMLDivElement | null>(null);
-  let observer: IntersectionObserver | null;
+
+  const [ref, setRef] = useState<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const newViewCount = getViewCount(trackingName);
     setViewCount(newViewCount);
   }, []);
 
-  useEffect(
-    () => {
-      observer =
-        (typeof window !== 'undefined' &&
-          window.IntersectionObserver &&
-          new window.IntersectionObserver(
-            entries => {
-              if (entries[0].isIntersecting) {
-                observer && observer.disconnect();
-                incrementViewCount(trackingName);
-              }
-            },
-            {
-              threshold: 0.5
-            }
-          )) ||
-        null;
-      if (ref.current) {
-        const { current } = ref;
-        observer && observer.observe(current);
-      }
-    },
-    [ref]
+  useIntersectionObserver(
+    ref,
+    () => incrementViewCount && incrementViewCount(trackingName),
+    {
+      threshold: 0.5
+    }
   );
 
   const display = hasCookieConsent() && displayFunction(viewCount);
-
   return (
     <>
-      <div className="view-count-observer" ref={ref} />
+      <div className="view-count-observer" ref={setRef} />
       <div
         className="view-count"
         style={{ display: display ? 'block' : 'none' }}

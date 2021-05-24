@@ -1,9 +1,9 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
 
-import { delay } from '@times-components/test-utils';
+import { cleanup, render } from '@testing-library/react';
 
 import { ViewCountWrapper } from '../ViewCountWrapper';
+import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 
 describe('<ViewCountWrapper>', () => {
   beforeEach(() => {
@@ -16,162 +16,130 @@ describe('<ViewCountWrapper>', () => {
     if (typeof window !== 'undefined') {
       window.document.cookie = 'nuk-consent-personalisation=;max-age=0';
     }
+    cleanup();
   });
+
   describe('display function', () => {
     it('always renders', () => {
-      const component = create(
+      const { baseElement } = render(
         <ViewCountWrapper trackingName="hello1">
           <span>Hello</span>
         </ViewCountWrapper>
       );
-      expect(
-        component.root.findByProps({ className: 'view-count' }).props.style
-          .display
-      ).toEqual('block');
-      expect(component).toMatchSnapshot();
+      const viewCountElement = baseElement.querySelector(
+        '.view-count'
+      ) as HTMLDivElement;
+
+      expect(viewCountElement.style.display).toEqual('block');
+
+      expect(viewCountElement).toMatchSnapshot();
     });
 
     it('doesnt render without consent', () => {
       window.document.cookie = 'nuk-consent-personalisation=;max-age=0';
 
-      const component = create(
+      const { baseElement } = render(
         <ViewCountWrapper trackingName="hello1">
           <span>Hello</span>
         </ViewCountWrapper>
       );
-      expect(
-        component.root.findByProps({ className: 'view-count' }).props.style
-          .display
-      ).toEqual('none');
-      expect(component).toMatchSnapshot();
+      const viewCountElement = baseElement.querySelector(
+        '.view-count'
+      ) as HTMLDivElement;
+      expect(viewCountElement.style.display).toEqual('none');
+
+      expect(viewCountElement).toMatchSnapshot();
     });
+
     it('never renders', () => {
-      const component = create(
+      const { baseElement } = render(
         <ViewCountWrapper trackingName="hello1" displayFunction={() => false}>
           <span>Hello</span>
         </ViewCountWrapper>
       );
-      expect(
-        component.root.findByProps({ className: 'view-count' }).props.style
-          .display
-      ).toEqual('none');
-      expect(component).toMatchSnapshot();
+      const viewCountElement = baseElement.querySelector(
+        '.view-count'
+      ) as HTMLDivElement;
+      expect(viewCountElement.style.display).toEqual('none');
+
+      expect(viewCountElement).toMatchSnapshot();
     });
   });
+
   describe('intersectionObserverTests', () => {
-    let oldIntersectionObserver:
-      | IntersectionObserver
-      | typeof window.IntersectionObserver;
+    let oldIntersectionObserver: typeof IntersectionObserver;
     beforeEach(() => {
       oldIntersectionObserver = window.IntersectionObserver;
 
-      type MockCallbackType = (props: Array<{ isIntersecting: boolean }>) => {};
-
-      class FakeIntersectionObserver {
-        static callback: MockCallbackType;
-        static observe = jest.fn();
-        static disconnect = jest.fn();
-
-        static intersect(): void {
-          FakeIntersectionObserver.callback([{ isIntersecting: true }]);
-        }
-
-        observe = FakeIntersectionObserver.observe;
-        disconnect = FakeIntersectionObserver.disconnect;
-
-        constructor(callback: MockCallbackType) {
-          FakeIntersectionObserver.callback = callback;
-        }
-      }
       // @ts-ignore
       window.IntersectionObserver = FakeIntersectionObserver;
     });
 
     afterEach(() => {
-      // @ts-ignore
       window.IntersectionObserver = oldIntersectionObserver;
     });
 
     it('intersects', async () => {
-      create(
+      render(
         <ViewCountWrapper trackingName="hello1" displayFunction={() => false}>
           <span>Hello</span>
         </ViewCountWrapper>
       );
-      await delay(0);
       expect(window.sessionStorage.getItem('view-count')).toEqual(
         JSON.stringify({ hello1: 1 })
       );
-
-      // @ts-ignore
-      window.IntersectionObserver.intersect();
+      FakeIntersectionObserver.intersect();
 
       expect(window.sessionStorage.getItem('view-count')).toEqual(
         JSON.stringify({ hello1: 2 })
       );
       // @ts-ignore
-      expect(window.IntersectionObserver.disconnect).toHaveBeenCalledWith();
+      expect(FakeIntersectionObserver.disconnect).toHaveBeenCalledWith();
     });
   });
-  describe('using a display function', () => {
-    it('[1,3]', async () => {
-      const trackingName = 'hello1';
-      const setCount = (count: number) =>
-        window.sessionStorage.setItem(
-          'view-count',
-          JSON.stringify({ [trackingName]: count })
-        );
 
-      const render = () =>
-        create(
-          <ViewCountWrapper
-            trackingName={trackingName}
-            displayFunction={value =>
-              value !== undefined ? [1, 3].includes(value) : false
-            }
-          >
-            <span>Hello</span>
-          </ViewCountWrapper>
-        );
+  describe('using a display function [1, 3]', () => {
+    const trackingName = 'hello1';
+
+    const renderComponent = () => {
+      const { baseElement } = render(
+        <ViewCountWrapper
+          trackingName={trackingName}
+          displayFunction={value =>
+            value !== undefined ? [1, 3].includes(value) : false
+          }
+        >
+          <span>Hello</span>
+        </ViewCountWrapper>
+      );
+      return baseElement.querySelector('.view-count') as HTMLDivElement;
+    };
+
+    const setCount = (count: number) => {
+      window.sessionStorage.setItem(
+        'view-count',
+        JSON.stringify({ [trackingName]: count })
+      );
+    };
+
+    it('count = 1', async () => {
       setCount(1);
-      let component = render();
-      await delay(0);
-      expect(
-        component.root.findByProps({ className: 'view-count' }).props.style
-          .display
-      ).toEqual('block');
+      expect(renderComponent().style.display).toEqual('block');
+    });
 
+    it('count = 2', async () => {
       setCount(2);
-      component = render();
-      await delay(0);
-      expect(
-        component.root.findByProps({ className: 'view-count' }).props.style
-          .display
-      ).toEqual('none');
+      expect(renderComponent().style.display).toEqual('none');
+    });
 
+    it('count = 3', async () => {
       setCount(3);
-      component = render();
-      await delay(0);
-      expect(
-        component.root.findByProps({ className: 'view-count' }).props.style
-          .display
-      ).toEqual('block');
+      expect(renderComponent().style.display).toEqual('block');
+    });
 
+    it('count = 4', async () => {
       setCount(4);
-      component = render();
-      await delay(0);
-      expect(
-        component.root.findByProps({ className: 'view-count' }).props.style
-          .display
-      ).toEqual('none');
-
-      setCount(5);
-      component = render();
-      await delay(0);
-      expect(
-        component.root.findByProps({ className: 'view-count' }).props.style
-          .display
-      ).toEqual('none');
+      expect(renderComponent().style.display).toEqual('none');
     });
   });
 });

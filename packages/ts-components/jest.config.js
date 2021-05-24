@@ -30,8 +30,10 @@ const buildConfig = dir => {
     coverageReporters: ['json', 'html', 'lcov', 'text'],
     coverageDirectory: path.join(dir, 'coverage'),
     collectCoverageFrom: [
-      '<rootDir>/packages/ts-components/src/**/*.tsx',
-      '!<rootDir>/packages/ts-components/src/**/*.stories.*',
+      '<rootDir>/packages/ts-components/src/**/*.(tsx|ts)',
+      '!<rootDir>/packages/ts-components/src/**/*.(stories|d).*',
+      '!<rootDir>/packages/ts-components/src/index.*',
+      '!<rootDir>/packages/ts-components/src/fixtures/**',
       '!<rootDir>/node_modules/'
     ]
   };

@@ -33,7 +33,6 @@ const showcase = {
           'Content size above component',
           {
             'Half Viewport': '50vh',
-            // tslint:disable-next-line:object-literal-sort-keys
             'Full Viewport': '100vh'
           },
           '50vh'
