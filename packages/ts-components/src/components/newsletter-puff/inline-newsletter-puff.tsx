@@ -1,11 +1,25 @@
-import React, { useState } from "react";
-import { Linking, Platform } from "react-native";
-import { Mutation } from "react-apollo";
-import PropTypes from "prop-types";
+import React, { useState } from 'react';
+import { Mutation } from 'react-apollo';
 
-import { GetNewsletter } from "@times-components/provider";
-import { subscribeNewsletter as subscribeNewsletterMutation } from "@times-components/provider-queries";
-import Image, { Placeholder } from "@times-components/image";
+import { GetNewsletter } from '@times-components/provider';
+import { subscribeNewsletter as subscribeNewsletterMutation } from '@times-components/provider-queries';
+import Image, { Placeholder } from '@times-components/image';
+
+type PreviewNewsletterPuffProps = {
+  copy: string;
+  headline: string;
+  imageUri: string;
+  label: string;
+};
+
+type InlineNewsletterPuffProps = {
+  analyticsStream: (event: any) => void;
+  code: string;
+  copy: string;
+  headline: string;
+  imageUri: string;
+  label?: string;
+};
 
 import {
   InpContainer,
@@ -18,26 +32,35 @@ import {
   InpSignupLabel,
   InpSubscribedContainer,
   InpSubscribedHeadline
-} from "../styles/inline-newsletter-puff";
-import NewsletterPuffButton, {
-  PreviewNewsletterPuffButton
-} from "./newsletter-puff-button";
-import NewsletterPuffLink from "./newsletter-puff-link";
+} from './styles';
 
-function onManagePreferencesPress() {
-  if (Platform.OS !== "web") {
-    const url = "https://home.thetimes.co.uk/myNews";
-    Linking.canOpenURL(url)
-      .then(supported => {
-        if (!supported) {
-          return console.error("Cant open url", url); // eslint-disable-line no-console
-        }
-        return Linking.openURL(url);
-      })
-      .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
-  }
+import {
+  NewsletterPuffButton,
+  PreviewNewsletterPuffButton
+} from './newsletter-puff-button';
+import { NewsletterPuffLink } from './newsletter-puff-link';
+
+function onManagePreferencesPress(): Promise<any> | void {
+  // if (Platform.OS !== 'web') {
+  //   const url = 'https://home.thetimes.co.uk/myNews';
+  //   Linking.canOpenURL(url)
+  //     .then(supported => {
+  //       if (!supported) {
+  //         // tslint:disable-next-line:no-console
+  //         return console.error('Cant open url', url); // eslint-disable-line no-console
+  //       }
+  //       return Linking.openURL(url);
+  //     })
+  //     // tslint:disable-next-line:no-console
+  //     .catch(err => console.error('An error occurred', err)); // eslint-disable-line no-console
+  // }
 }
-export const PreviewNewsletterPuff = ({ copy, headline, imageUri, label }) => (
+export const PreviewNewsletterPuff = ({
+  copy,
+  headline,
+  imageUri,
+  label
+}: PreviewNewsletterPuffProps) => (
   <InpContainer>
     <InpImageContainer>
       <Image aspectRatio={1.42} uri={imageUri} />
@@ -53,19 +76,19 @@ export const PreviewNewsletterPuff = ({ copy, headline, imageUri, label }) => (
   </InpContainer>
 );
 
-const InlineNewsletterPuff = ({
+export const InlineNewsletterPuff = ({
   analyticsStream,
   code,
   copy,
   headline,
   imageUri,
   label
-}) => {
+}: InlineNewsletterPuffProps) => {
   const [justSubscribed, setJustSubscribed] = useState(false);
 
   return (
     <GetNewsletter code={code} ssr={false} debounceTimeMs={0}>
-      {({ isLoading, error, newsletter }) => {
+      {({ isLoading, error, newsletter }: any) => {
         if (error) {
           return null;
         }
@@ -85,11 +108,14 @@ const InlineNewsletterPuff = ({
         return (
           <Mutation
             mutation={subscribeNewsletterMutation}
-            onCompleted={({ subscribeNewsletter = {} }) => {
+            onCompleted={({ subscribeNewsletter = {} }: any) => {
               setJustSubscribed(subscribeNewsletter.isSubscribed);
             }}
           >
-            {(subscribeNewsletter, { loading: updatingSubscription }) => (
+            {(
+              subscribeNewsletter: any,
+              { loading: updatingSubscription }: any
+            ) => (
               <InpContainer>
                 <InpImageContainer>
                   <Image aspectRatio={1.42} uri={imageUri} />
@@ -101,8 +127,6 @@ const InlineNewsletterPuff = ({
                     </InpSubscribedHeadline>
                     <InpPreferencesContainer>
                       <NewsletterPuffLink
-                        enforceTracking
-                        newsletterPuffName={newsletter.title}
                         analyticsStream={analyticsStream}
                         onPress={() => onManagePreferencesPress()}
                       />
@@ -115,9 +139,6 @@ const InlineNewsletterPuff = ({
                     <InpCopy>{copy}</InpCopy>
                     <InpSignupCTAContainer>
                       <NewsletterPuffButton
-                        enforceTracking
-                        newsletterPuffName={newsletter.title}
-                        analyticsStream={analyticsStream}
                         updatingSubscription={updatingSubscription}
                         onPress={() => {
                           if (!updatingSubscription) {
@@ -135,22 +156,4 @@ const InlineNewsletterPuff = ({
       }}
     </GetNewsletter>
   );
-};
-
-export default InlineNewsletterPuff;
-
-PreviewNewsletterPuff.propTypes = {
-  copy: PropTypes.string.isRequired,
-  headline: PropTypes.string.isRequired,
-  imageUri: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired
-};
-
-InlineNewsletterPuff.propTypes = {
-  analyticsStream: PropTypes.func.isRequired,
-  code: PropTypes.string.isRequired,
-  copy: PropTypes.string.isRequired,
-  headline: PropTypes.string.isRequired,
-  imageUri: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired
 };

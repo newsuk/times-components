@@ -4,9 +4,11 @@ import PropTypes from "prop-types";
 import { AdContainer } from "@times-components/ad";
 import LazyLoad from "@times-components/lazy-load";
 import ArticleImage from "@times-components/article-image";
+
 import ArticleParagraph, {
   DropCapView
 } from "@times-components/article-paragraph";
+
 import Context from "@times-components/context";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
 import KeyFacts from "@times-components/key-facts";
@@ -16,14 +18,16 @@ import { colours, spacing } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
-import { FetchProvider, InArticlePuff } from "@times-components/ts-components";
+import {
+  FetchProvider,
+  InArticlePuff,
+  InlineNewsletterPuff,
+  PreviewNewsletterPuff,
+  AutoNewsletterPuff
+} from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
-import InlineNewsletterPuff, {
-  PreviewNewsletterPuff
-} from "./inline-newsletter-puff";
-import AutoNewsletterPuff from "./auto-newsletter-puff";
 
 import {
   PrimaryImg,

@@ -5,7 +5,7 @@ export type TrackingContext = { [key: string]: string };
 
 export type TrackingContextProps = {
   analyticsStream?: (analyticsEvent: any) => void;
-  context: TrackingContext;
+  context?: TrackingContext;
   scrolledEvent?: TrackingContext;
 };
 
