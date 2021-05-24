@@ -24,7 +24,7 @@ exports[`<Article /> should render an article correctly 1`] = `
         Headline
       </div>
       <p
-        class="sc-ifAKCX iydgdz"
+        class="sc-ifAKCX hVJTTS"
       >
         1 hour ago
       </p>
