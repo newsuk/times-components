@@ -5,21 +5,12 @@ import { GetNewsletter } from '@times-components/provider';
 import { subscribeNewsletter as subscribeNewsletterMutation } from '@times-components/provider-queries';
 import Image, { Placeholder } from '@times-components/image';
 
-type PreviewNewsletterPuffProps = {
-  copy: string;
-  headline: string;
-  imageUri: string;
-  label: string;
-};
+import {
+  NewsletterPuffButton,
+  PreviewNewsletterPuffButton
+} from './NewsletterPuffButton';
 
-type InlineNewsletterPuffProps = {
-  analyticsStream: (event: any) => void;
-  code: string;
-  copy: string;
-  headline: string;
-  imageUri: string;
-  label?: string;
-};
+import { NewsletterPuffLink } from './NewsletterPuffLink';
 
 import {
   InpContainer,
@@ -34,11 +25,17 @@ import {
   InpSubscribedHeadline
 } from './styles';
 
-import {
-  NewsletterPuffButton,
-  PreviewNewsletterPuffButton
-} from './newsletter-puff-button';
-import { NewsletterPuffLink } from './newsletter-puff-link';
+type PreviewNewsletterPuffProps = {
+  copy: string;
+  headline: string;
+  imageUri: string;
+  label?: string;
+};
+
+type InlineNewsletterPuffProps = PreviewNewsletterPuffProps & {
+  analyticsStream: (event: any) => void;
+  code: string;
+};
 
 function onManagePreferencesPress(): Promise<any> | void {
   // if (Platform.OS !== 'web') {

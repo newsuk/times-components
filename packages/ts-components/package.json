@@ -67,6 +67,7 @@
   "devDependencies": {
     "@storybook/addon-actions": "5.3.18",
     "@testing-library/jest-dom": "^5.12.0",
+    "@times-components/provider-test-tools": "1.19.5",
     "@testing-library/react": "^11.2.6",
     "@times-components/storybook": "4.1.62",
     "@types/graphql": "14.0.3",

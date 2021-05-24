@@ -9,11 +9,11 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { scales } from "@times-components/styleguide";
-import Context from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import { MockedProvider } from "@times-components/provider-test-tools";
 import { getNewsletter } from "@times-components/provider-queries";
 
-import { UserState } from "../mocks.web";
+import { UserState } from "../mocks";
 
 import articleFixture, { testFixture } from "../../fixtures/full-article";
 import {
@@ -25,10 +25,10 @@ import {
 import ArticleSkeleton from "../../src/article-skeleton";
 import articleSkeletonProps from "../shared-article-skeleton-props";
 
-jest.mock(
-  "../../src/article-body/inline-newsletter-puff",
-  () => "NewsletterPuff"
-);
+jest.mock("@times-components/ts-components", () => ({
+  ...jest.requireActual("@times-components/ts-components"),
+  InlineNewsletterPuff: "InlineNewsletterPuff"
+}));
 
 const omitProps = new Set([
   "article",
@@ -75,11 +75,18 @@ const mocks = [
   }
 ];
 
+const algoliaSearchKeys = {
+  applicationId: "",
+  apiKey: "",
+  indexName: ""
+};
+
 const renderArticle = (data, isPreview = false) => (
   <MockedProvider mocks={mocks}>
-    <Context.Provider
+    <ContextProviderWithDefaults
       value={{
-        theme: { scale: scales.medium, sectionColour: "#FF0000" }
+        theme: { scale: scales.medium, sectionColour: "#FF0000" },
+        user: { isLoggedIn: true }
       }}
     >
       <ArticleSkeleton
@@ -94,8 +101,9 @@ const renderArticle = (data, isPreview = false) => (
         onVideoPress={() => {}}
         spotAccountId=""
         isPreview={isPreview}
+        algoliaSearchKeys={algoliaSearchKeys}
       />
-    </Context.Provider>
+    </ContextProviderWithDefaults>
   </MockedProvider>
 );
 

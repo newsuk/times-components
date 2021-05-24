@@ -11,14 +11,19 @@ export {
 } from './helpers/tracking/TrackingContextProvider';
 
 export {
-  NewsletterPuffLink
-} from './components/newsletter-puff/newsletter-puff-link';
-
-export {
   AutoNewsletterPuff
-} from './components/newsletter-puff/auto-newsletter-puff';
+} from './components/newsletter-puff/AutoNewsletterPuff';
 
 export {
   InlineNewsletterPuff,
   PreviewNewsletterPuff
-} from './components/newsletter-puff/inline-newsletter-puff';
+} from './components/newsletter-puff/InlineNewsletterPuff';
+
+export {
+  NewsletterPuffButton,
+  PreviewNewsletterPuffButton
+} from './components/newsletter-puff/NewsletterPuffButton';
+
+export {
+  NewsletterPuffLink
+} from './components/newsletter-puff/NewsletterPuffLink';

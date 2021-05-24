@@ -12,18 +12,22 @@ const readSource = filename => readFileSync(filename).toString();
 
 const isPackageFile = filename => filename.includes("times-components");
 
-const extensions = [".tsx", "ts", "js"];
+const extensions = [".tsx", ".ts", ".js"];
 
 const pointToSource = filename => {
   const source = filename.replace("dist", "src");
-  const { base } = path.parse(source);
+  const { ext } = path.parse(source);
+
+  const pathWithoutExtension = source.substr(0, source.length - ext.length);
 
   const existingPath = extensions.reduce((result, extension) => {
     if (result) return result;
-    return existsSync(`${base}${extension}`) ? `${base}${extension}` : null;
+    return existsSync(`${pathWithoutExtension}${extension}`)
+      ? `${pathWithoutExtension}${extension}`
+      : null;
   }, null);
 
-  return existingPath || source;
+  return existingPath || filename;
 };
 
 /* Based upon the babel-jest impl, but only

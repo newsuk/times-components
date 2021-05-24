@@ -9,7 +9,7 @@ import {
   getNewsletter,
   subscribeNewsletter
 } from "@times-components/provider-queries";
-import InlineNewsletterPuff from "../src/article-body/inline-newsletter-puff";
+import { InlineNewsletterPuff } from "@times-components/ts-components";
 
 jest.mock("@times-components/image", () => ({
   __esModule: true,

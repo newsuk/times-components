@@ -135,8 +135,7 @@ declare module '@times-components/provider-queries' {
   export const getNewsletter: DocumentNode;
   export const subscribeNewsletter: DocumentNode;
 }
-//
-// declare module '@times-components/provider-test-tools' {
-//   export const MockedProvider: React.FC<{ mocks: any }>;
 
-// }
+declare module '@times-components/provider-test-tools' {
+  export const MockedProvider: React.FC<{ mocks: any }>;
+}

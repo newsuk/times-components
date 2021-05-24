@@ -2,8 +2,7 @@ import React from "react";
 import { create } from "react-test-renderer";
 import Link from "@times-components/link";
 import mockDate from "mockdate";
-
-import NewsletterPuffLink from "../src/article-body/newsletter-puff-link";
+import { NewsletterPuffLink } from "@times-components/ts-components";
 
 export default () => {
   describe("NewsletterPuffLink", () => {

@@ -2,36 +2,33 @@
 
 exports[`Inline Newsletter Puff renders 'saving' when the button is clicked 1`] = `
 <div
-  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
+  className="styles__View-rq66zl-0 styles__InpContainer-rq66zl-2 Jamkw"
 >
   <div
-    className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv css-view-1dbjc4n"
+    className="styles__View-rq66zl-0 styles__InpImageContainer-rq66zl-3 fNmxob"
   >
     Image rendered with imageUri=https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg
   </div>
   <div
-    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-4 dfzxZt inline-newsletter-puff__InpSignupContainer-sc-13hmjc-4 dfzxZt css-view-1dbjc4n"
+    className="styles__View-rq66zl-0 styles__InpSignupContainer-rq66zl-6 fYKGPl"
   >
     <div
-      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-5 cvZns inline-newsletter-puff__InpSignupLabel-sc-13hmjc-5 cvZns css-text-901oao"
-      dir="auto"
+      className="styles__Text-rq66zl-1 styles__InpSignupLabel-rq66zl-7 daGLMh"
     >
       STRAIGHT IN YOUR INBOX
     </div>
     <div
-      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-6 iKicZl inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-6 iKicZl css-text-901oao"
-      dir="auto"
+      className="styles__Text-rq66zl-1 styles__InpSignupHeadline-rq66zl-8 fKlbOP"
     >
       Politics. Explained.
     </div>
     <div
-      className="inline-newsletter-puff__InpCopy-sc-13hmjc-7 bNTRNy inline-newsletter-puff__InpCopy-sc-13hmjc-7 bNTRNy css-text-901oao"
-      dir="auto"
+      className="styles__Text-rq66zl-1 styles__InpCopy-rq66zl-9 eDMFvk"
     >
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </div>
     <div
-      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-8 ekxAnz inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-8 ekxAnz css-view-1dbjc4n"
+      className="styles__View-rq66zl-0 styles__InpSignupCTAContainer-rq66zl-10 kRPOnY"
     >
       <button
         onClick={[Function]}
@@ -70,10 +67,10 @@ exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `n
 
 exports[`Inline Newsletter Puff renders placeholder when loading 1`] = `
 <div
-  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
+  className="styles__View-rq66zl-0 styles__InpContainer-rq66zl-2 Jamkw"
   style={
     Object {
-      "height": "257px",
+      "height": 257,
     }
   }
 >
@@ -83,36 +80,33 @@ exports[`Inline Newsletter Puff renders placeholder when loading 1`] = `
 
 exports[`Inline Newsletter Puff renders signup state 1`] = `
 <div
-  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
+  className="styles__View-rq66zl-0 styles__InpContainer-rq66zl-2 Jamkw"
 >
   <div
-    className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv css-view-1dbjc4n"
+    className="styles__View-rq66zl-0 styles__InpImageContainer-rq66zl-3 fNmxob"
   >
     Image rendered with imageUri=https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg
   </div>
   <div
-    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-4 dfzxZt inline-newsletter-puff__InpSignupContainer-sc-13hmjc-4 dfzxZt css-view-1dbjc4n"
+    className="styles__View-rq66zl-0 styles__InpSignupContainer-rq66zl-6 fYKGPl"
   >
     <div
-      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-5 cvZns inline-newsletter-puff__InpSignupLabel-sc-13hmjc-5 cvZns css-text-901oao"
-      dir="auto"
+      className="styles__Text-rq66zl-1 styles__InpSignupLabel-rq66zl-7 daGLMh"
     >
       STRAIGHT IN YOUR INBOX
     </div>
     <div
-      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-6 iKicZl inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-6 iKicZl css-text-901oao"
-      dir="auto"
+      className="styles__Text-rq66zl-1 styles__InpSignupHeadline-rq66zl-8 fKlbOP"
     >
       Politics. Explained.
     </div>
     <div
-      className="inline-newsletter-puff__InpCopy-sc-13hmjc-7 bNTRNy inline-newsletter-puff__InpCopy-sc-13hmjc-7 bNTRNy css-text-901oao"
-      dir="auto"
+      className="styles__Text-rq66zl-1 styles__InpCopy-rq66zl-9 eDMFvk"
     >
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </div>
     <div
-      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-8 ekxAnz inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-8 ekxAnz css-view-1dbjc4n"
+      className="styles__View-rq66zl-0 styles__InpSignupCTAContainer-rq66zl-10 kRPOnY"
     >
       <button
         onClick={[Function]}
@@ -149,36 +143,33 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
 
 exports[`Inline Newsletter Puff renders signup view when not already subscribed 1`] = `
 <div
-  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
+  className="styles__View-rq66zl-0 styles__InpContainer-rq66zl-2 Jamkw"
 >
   <div
-    className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv css-view-1dbjc4n"
+    className="styles__View-rq66zl-0 styles__InpImageContainer-rq66zl-3 fNmxob"
   >
     Image rendered with imageUri=https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg
   </div>
   <div
-    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-4 dfzxZt inline-newsletter-puff__InpSignupContainer-sc-13hmjc-4 dfzxZt css-view-1dbjc4n"
+    className="styles__View-rq66zl-0 styles__InpSignupContainer-rq66zl-6 fYKGPl"
   >
     <div
-      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-5 cvZns inline-newsletter-puff__InpSignupLabel-sc-13hmjc-5 cvZns css-text-901oao"
-      dir="auto"
+      className="styles__Text-rq66zl-1 styles__InpSignupLabel-rq66zl-7 daGLMh"
     >
       STRAIGHT IN YOUR INBOX
     </div>
     <div
-      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-6 iKicZl inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-6 iKicZl css-text-901oao"
-      dir="auto"
+      className="styles__Text-rq66zl-1 styles__InpSignupHeadline-rq66zl-8 fKlbOP"
     >
       Politics. Explained.
     </div>
     <div
-      className="inline-newsletter-puff__InpCopy-sc-13hmjc-7 bNTRNy inline-newsletter-puff__InpCopy-sc-13hmjc-7 bNTRNy css-text-901oao"
-      dir="auto"
+      className="styles__Text-rq66zl-1 styles__InpCopy-rq66zl-9 eDMFvk"
     >
       Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
     </div>
     <div
-      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-8 ekxAnz inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-8 ekxAnz css-view-1dbjc4n"
+      className="styles__View-rq66zl-0 styles__InpSignupCTAContainer-rq66zl-10 kRPOnY"
     >
       <button
         onClick={[Function]}
@@ -215,24 +206,23 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
 
 exports[`Inline Newsletter Puff renders the success view after subscribing  1`] = `
 <div
-  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
+  className="styles__View-rq66zl-0 styles__InpContainer-rq66zl-2 Jamkw"
 >
   <div
-    className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv css-view-1dbjc4n"
+    className="styles__View-rq66zl-0 styles__InpImageContainer-rq66zl-3 fNmxob"
   >
     Image rendered with imageUri=https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg
   </div>
   <div
-    className="inline-newsletter-puff__InpSubscribedContainer-sc-13hmjc-2 cJNdAl inline-newsletter-puff__InpSubscribedContainer-sc-13hmjc-2 cJNdAl css-view-1dbjc4n"
+    className="styles__View-rq66zl-0 styles__InpSubscribedContainer-rq66zl-4 fkcWFB"
   >
     <div
-      className="inline-newsletter-puff__InpSubscribedHeadline-sc-13hmjc-3 gFPzTp inline-newsletter-puff__InpSubscribedHeadline-sc-13hmjc-3 gFPzTp css-text-901oao"
-      dir="auto"
+      className="styles__Text-rq66zl-1 styles__InpSubscribedHeadline-rq66zl-5 bjBdIp"
     >
       You’ve successfully signed up to RED BOX
     </div>
     <div
-      className="inline-newsletter-puff__InpPreferencesContainer-sc-13hmjc-9 kfcFGB inline-newsletter-puff__InpPreferencesContainer-sc-13hmjc-9 kfcFGB css-view-1dbjc4n"
+      className="styles__View-rq66zl-0 styles__InpPreferencesContainer-rq66zl-11 fHgfCt"
     >
       <a
         className="linkweb__RespLink-yfb9n-0 cCCShB"
@@ -241,16 +231,15 @@ exports[`Inline Newsletter Puff renders the success view after subscribing  1`] 
         target={null}
       >
         <div
-          className="inline-newsletter-puff__InpPreferencesView-sc-13hmjc-12 eowBYw inline-newsletter-puff__InpPreferencesView-sc-13hmjc-12 eowBYw css-view-1dbjc4n"
+          className="styles__View-rq66zl-0 styles__InpPreferencesView-rq66zl-14 lpoLan"
         >
           <div
-            className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-10 fjWboP inline-newsletter-puff__InpPreferencesText-sc-13hmjc-10 fjWboP css-text-901oao"
-            dir="auto"
+            className="styles__Text-rq66zl-1 styles__InpPreferencesText-rq66zl-12 fjvjTh"
           >
             Manage preferences here
           </div>
           <div
-            className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-11 fjCqVn inline-newsletter-puff__InpIconContainer-sc-13hmjc-11 fjCqVn css-view-1dbjc4n"
+            className="styles__View-rq66zl-0 styles__InpIconContainer-rq66zl-13 mCYKT"
           >
             <svg
               aria-label="icon-forward-arrow"

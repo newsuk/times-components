@@ -33,6 +33,12 @@ const styles = [
   "paddingTop"
 ];
 
+const algoliaSearchKeys = {
+  applicationId: "",
+  apiKey: "",
+  indexName: ""
+};
+
 export default () => {
   addSerializers(
     expect,
@@ -410,6 +416,7 @@ export default () => {
           onVideoPress={() => {}}
           spotAccountId=""
           paidContentClassName="paidContentClassName"
+          algoliaSearchKeys={algoliaSearchKeys}
         />
       </ContextProviderWithDefaults>
     );

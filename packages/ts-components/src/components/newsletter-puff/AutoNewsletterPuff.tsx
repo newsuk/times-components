@@ -1,6 +1,6 @@
 import React from 'react';
 import { ViewCountWrapper } from '../../helpers/view-count-wrapper/ViewCountWrapper';
-import { InlineNewsletterPuff } from './inline-newsletter-puff';
+import { InlineNewsletterPuff } from './InlineNewsletterPuff';
 
 export const AutoNewsletterPuff = ({
   analyticsStream,
@@ -33,5 +33,5 @@ type AutoNewsletterPuffProps = {
   copy: string;
   headline: string;
   imageUri: string;
-  label: string;
+  label?: string;
 };

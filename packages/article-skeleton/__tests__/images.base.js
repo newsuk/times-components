@@ -19,6 +19,12 @@ const emptyArticle = {
   topics: null
 };
 
+const algoliaSearchKeys = {
+  applicationId: "",
+  apiKey: "",
+  indexName: ""
+};
+
 export default () =>
   iterator([
     {
@@ -61,6 +67,7 @@ export default () =>
               onTwitterLinkPress={() => {}}
               onVideoPress={() => {}}
               spotAccountId=""
+              algoliaSearchKeys={algoliaSearchKeys}
             />
           </Context.Provider>
         );
@@ -108,6 +115,7 @@ export default () =>
               onTwitterLinkPress={() => {}}
               onVideoPress={() => {}}
               spotAccountId=""
+              algoliaSearchKeys={algoliaSearchKeys}
             />
           </Context.Provider>
         );
@@ -155,6 +163,7 @@ export default () =>
               onTwitterLinkPress={() => {}}
               onVideoPress={() => {}}
               spotAccountId=""
+              algoliaSearchKeys={algoliaSearchKeys}
             />
           </Context.Provider>
         );
@@ -202,6 +211,7 @@ export default () =>
               onTwitterLinkPress={() => {}}
               onVideoPress={() => {}}
               spotAccountId=""
+              algoliaSearchKeys={algoliaSearchKeys}
             />
           </Context.Provider>
         );

@@ -25,6 +25,12 @@ import {
 
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
 
+const algoliaSearchKeys = {
+  applicationId: "",
+  apiKey: "",
+  indexName: ""
+};
+
 export const renderArticle = (data, header = null) => (
   <ContextProviderWithDefaults
     value={{
@@ -46,6 +52,7 @@ export const renderArticle = (data, header = null) => (
       onTwitterLinkPress={() => {}}
       onVideoPress={() => {}}
       spotAccountId=""
+      algoliaSearchKeys={algoliaSearchKeys}
     />
   </ContextProviderWithDefaults>
 );
