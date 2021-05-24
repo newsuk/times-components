@@ -25,8 +25,8 @@ const sportArticles: SliceArticle[] = [
     byline: 'Alasdair Mackenzie',
     headline:
       'Antonio Conte’s misfits show Premier League what it’s been missing',
-    datePublished: '2020-08-18T23:01:00.000Z',
-    dateUpdated: '2020-08-19T01:50:23.000Z',
+    datePublished: '2021-05-22T23:01:00.000Z',
+    dateUpdated: '2021-05-23T01:50:23.000Z',
     url:
       'https://www.thetimes.co.uk/article/antonio-contes-misfits-show-premier-league-what-its-been-missing-h77bz7n73'
   },
