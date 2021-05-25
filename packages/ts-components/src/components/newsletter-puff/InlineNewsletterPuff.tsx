@@ -5,12 +5,11 @@ import { GetNewsletter } from '@times-components/provider';
 import { subscribeNewsletter as subscribeNewsletterMutation } from '@times-components/provider-queries';
 import Image, { Placeholder } from '@times-components/image';
 
-import {
-  NewsletterPuffButton,
-  PreviewNewsletterPuffButton
-} from './NewsletterPuffButton';
+import { NewsletterPuffButton } from './NewsletterPuffButton';
 
 import { NewsletterPuffLink } from './NewsletterPuffLink';
+
+import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
 import {
   InpContainer,
@@ -25,56 +24,15 @@ import {
   InpSubscribedHeadline
 } from './styles';
 
-type PreviewNewsletterPuffProps = {
+type InlineNewsletterPuffProps = {
   copy: string;
   headline: string;
   imageUri: string;
   label?: string;
-};
-
-type InlineNewsletterPuffProps = PreviewNewsletterPuffProps & {
-  analyticsStream: (event: any) => void;
   code: string;
 };
 
-function onManagePreferencesPress(): Promise<any> | void {
-  // if (Platform.OS !== 'web') {
-  //   const url = 'https://home.thetimes.co.uk/myNews';
-  //   Linking.canOpenURL(url)
-  //     .then(supported => {
-  //       if (!supported) {
-  //         // tslint:disable-next-line:no-console
-  //         return console.error('Cant open url', url); // eslint-disable-line no-console
-  //       }
-  //       return Linking.openURL(url);
-  //     })
-  //     // tslint:disable-next-line:no-console
-  //     .catch(err => console.error('An error occurred', err)); // eslint-disable-line no-console
-  // }
-}
-export const PreviewNewsletterPuff = ({
-  copy,
-  headline,
-  imageUri,
-  label
-}: PreviewNewsletterPuffProps) => (
-  <InpContainer>
-    <InpImageContainer>
-      <Image aspectRatio={1.42} uri={imageUri} />
-    </InpImageContainer>
-    <InpSignupContainer>
-      <InpSignupLabel>{label}</InpSignupLabel>
-      <InpSignupHeadline>{headline}</InpSignupHeadline>
-      <InpCopy>{copy}</InpCopy>
-      <InpSignupCTAContainer>
-        <PreviewNewsletterPuffButton />
-      </InpSignupCTAContainer>
-    </InpSignupContainer>
-  </InpContainer>
-);
-
 export const InlineNewsletterPuff = ({
-  analyticsStream,
   code,
   copy,
   headline,
@@ -113,40 +71,53 @@ export const InlineNewsletterPuff = ({
               subscribeNewsletter: any,
               { loading: updatingSubscription }: any
             ) => (
-              <InpContainer>
-                <InpImageContainer>
-                  <Image aspectRatio={1.42} uri={imageUri} />
-                </InpImageContainer>
-                {justSubscribed ? (
-                  <InpSubscribedContainer>
-                    <InpSubscribedHeadline>
-                      {`You’ve successfully signed up to ${newsletter.title}`}
-                    </InpSubscribedHeadline>
-                    <InpPreferencesContainer>
-                      <NewsletterPuffLink
-                        analyticsStream={analyticsStream}
-                        onPress={() => onManagePreferencesPress()}
-                      />
-                    </InpPreferencesContainer>
-                  </InpSubscribedContainer>
-                ) : (
-                  <InpSignupContainer>
-                    <InpSignupLabel>{label}</InpSignupLabel>
-                    <InpSignupHeadline>{headline}</InpSignupHeadline>
-                    <InpCopy>{copy}</InpCopy>
-                    <InpSignupCTAContainer>
-                      <NewsletterPuffButton
-                        updatingSubscription={updatingSubscription}
-                        onPress={() => {
-                          if (!updatingSubscription) {
-                            subscribeNewsletter({ variables: { code } });
-                          }
-                        }}
-                      />
-                    </InpSignupCTAContainer>
-                  </InpSignupContainer>
+              <TrackingContextProvider
+                context={{
+                  article_parent_name: `${newsletter.title}`
+                }}
+                scrolledEvent={{
+                  event_navigation_name:
+                    'widget : puff : sign up now : displayed',
+                  event_navigation_browsing_method: 'automated',
+                  event_navigation_action: 'navigation'
+                }}
+              >
+                {({ intersectObserverRef }) => (
+                  <InpContainer>
+                    <InpImageContainer>
+                      <Image aspectRatio={1.42} uri={imageUri} />
+                    </InpImageContainer>
+                    {justSubscribed ? (
+                      <InpSubscribedContainer>
+                        <InpSubscribedHeadline>
+                          {`You’ve successfully signed up to ${
+                            newsletter.title
+                          }`}
+                        </InpSubscribedHeadline>
+                        <InpPreferencesContainer>
+                          <NewsletterPuffLink />
+                        </InpPreferencesContainer>
+                      </InpSubscribedContainer>
+                    ) : (
+                      <InpSignupContainer>
+                        <InpSignupLabel>{label}</InpSignupLabel>
+                        <InpSignupHeadline>{headline}</InpSignupHeadline>
+                        <InpCopy>{copy}</InpCopy>
+                        <InpSignupCTAContainer ref={intersectObserverRef}>
+                          <NewsletterPuffButton
+                            updatingSubscription={updatingSubscription}
+                            onPress={() => {
+                              if (!updatingSubscription) {
+                                subscribeNewsletter({ variables: { code } });
+                              }
+                            }}
+                          />
+                        </InpSignupCTAContainer>
+                      </InpSignupContainer>
+                    )}
+                  </InpContainer>
                 )}
-              </InpContainer>
+              </TrackingContextProvider>
             )}
           </Mutation>
         );

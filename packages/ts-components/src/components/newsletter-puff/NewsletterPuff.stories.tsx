@@ -9,10 +9,10 @@ import {
 import { action } from '@storybook/addon-actions';
 
 import { AutoNewsletterPuff } from './AutoNewsletterPuff';
-import {
-  InlineNewsletterPuff,
-  PreviewNewsletterPuff
-} from './InlineNewsletterPuff';
+import { InlineNewsletterPuff } from './InlineNewsletterPuff';
+
+import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
+import { PreviewNewsletterPuff } from './PreviewNewsletterPuff';
 
 const analyticsStream = (event: any) => {
   // tslint:disable-next-line:no-console
@@ -67,7 +67,6 @@ const showcase = {
         <MockedProvider mocks={mocks}>
           Current Count = {window.sessionStorage.getItem('view-count')}
           <AutoNewsletterPuff
-            analyticsStream={analyticsStream}
             code={text('code', 'TNL-101')}
             headline={text('headline', 'Best of Times')}
             copy={text(
@@ -90,19 +89,20 @@ const showcase = {
       // eslint-disable-next-line react/prop-types
       component: ({ text }: any) => (
         <MockedProvider mocks={mocks}>
-          <InlineNewsletterPuff
-            analyticsStream={analyticsStream}
-            code={text('code', 'TNL-101')}
-            headline={text('headline', 'Best of Times')}
-            copy={text(
-              'copy',
-              'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
-            )}
-            imageUri={text(
-              'imageUri',
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800'
-            )}
-          />
+          <TrackingContextProvider analyticsStream={analyticsStream}>
+            <InlineNewsletterPuff
+              code={text('code', 'TNL-101')}
+              headline={text('headline', 'Best of Times')}
+              copy={text(
+                'copy',
+                'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
+              )}
+              imageUri={text(
+                'imageUri',
+                'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800'
+              )}
+            />
+          </TrackingContextProvider>
         </MockedProvider>
       ),
 

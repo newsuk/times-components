@@ -3,7 +3,6 @@ import { ViewCountWrapper } from '../../helpers/view-count-wrapper/ViewCountWrap
 import { InlineNewsletterPuff } from './InlineNewsletterPuff';
 
 export const AutoNewsletterPuff = ({
-  analyticsStream,
   code,
   copy,
   headline,
@@ -12,11 +11,10 @@ export const AutoNewsletterPuff = ({
 }: AutoNewsletterPuffProps) => (
   <ViewCountWrapper
     trackingName={`auto-puff-${code}`}
-    displayFunction={count => count !== undefined && [1, 3, 7].includes(count)}
+    displayFunction={count => count !== undefined && [1, 3, 5].includes(count)}
   >
     <div style={{ display: 'none' }}>
       <InlineNewsletterPuff
-        analyticsStream={analyticsStream}
         code={code}
         copy={copy}
         headline={headline}
@@ -28,7 +26,6 @@ export const AutoNewsletterPuff = ({
 );
 
 type AutoNewsletterPuffProps = {
-  analyticsStream: (data: any) => void;
   code: string;
   copy: string;
   headline: string;

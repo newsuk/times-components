@@ -15,13 +15,15 @@ export {
 } from './components/newsletter-puff/AutoNewsletterPuff';
 
 export {
-  InlineNewsletterPuff,
-  PreviewNewsletterPuff
+  InlineNewsletterPuff
 } from './components/newsletter-puff/InlineNewsletterPuff';
 
 export {
-  NewsletterPuffButton,
-  PreviewNewsletterPuffButton
+  PreviewNewsletterPuff
+} from './components/newsletter-puff/PreviewNewsletterPuff';
+
+export {
+  NewsletterPuffButton
 } from './components/newsletter-puff/NewsletterPuffButton';
 
 export {
