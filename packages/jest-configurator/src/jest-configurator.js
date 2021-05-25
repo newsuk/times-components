@@ -13,7 +13,7 @@ const nativeSpecific = platform => ({
 });
 
 const webSpecific = {
-  moduleFileExtensions: ["graphql", "web.js", "js", "json"],
+  moduleFileExtensions: ["ts", "tsx", "graphql", "web.js", "js", "json"],
   moduleNameMapper: {
     "\\.(png)$": "identity-obj-proxy",
     "^react-native$": "react-native-web"
@@ -22,7 +22,7 @@ const webSpecific = {
 };
 
 const nodeSpecific = {
-  moduleFileExtensions: ["node.js", "web.js", "js", "ts", "json"],
+  moduleFileExtensions: ["ts", "tsx", "node.js", "web.js", "js", "json"],
   moduleNameMapper: {
     "\\.(png)$": "identity-obj-proxy",
     "^react-native$": "react-native-web"
@@ -31,7 +31,7 @@ const nodeSpecific = {
 };
 
 const platformIndependentSpecific = {
-  moduleFileExtensions: ["js", "ts", "json"],
+  moduleFileExtensions: ["ts", "js", "json"],
   moduleNameMapper: {
     "\\.(png)$": "identity-obj-proxy"
   }
