@@ -1,5 +1,4 @@
 import React from 'react';
-// import { create } from "react-test-renderer";
 
 import { delay } from '@times-components/test-utils';
 
@@ -14,16 +13,6 @@ import {
 } from '@times-components/provider-queries';
 import { InlineNewsletterPuff } from '../InlineNewsletterPuff';
 
-// jest.mock('@times-components/image', () => ({
-//   __esModule: true,
-//   default: ({ uri }: any) => (
-//     <div>
-//       rendered with imageUri=
-//       {uri}
-//     </div>
-//   ),
-//   Placeholder: () => <div>Placeholder rendered</div>
-// }));
 const mockAnalyticsStream = jest.fn();
 const renderComponent = (
   mocks = [

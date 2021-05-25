@@ -2,6 +2,7 @@ import React from 'react';
 import { render, cleanup, fireEvent } from '@testing-library/react';
 import mockDate from 'mockdate';
 import { NewsletterPuffLink } from '../NewsletterPuffLink';
+import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 
 describe('NewsletterPuffLink', () => {
   beforeEach(() => {
@@ -19,11 +20,12 @@ describe('NewsletterPuffLink', () => {
     const mockedAnalyticsStream = jest.fn();
 
     const component = render(
-      <NewsletterPuffLink
+      <TrackingContextProvider
+        context={{ context: 'value' }}
         analyticsStream={mockedAnalyticsStream}
-        onPress={mockedOnPress}
-        newsletterPuffName="RED BOX"
-      />
+      >
+        <NewsletterPuffLink onPress={mockedOnPress} />
+      </TrackingContextProvider>
     );
 
     expect(component.baseElement).toMatchSnapshot();
@@ -31,14 +33,15 @@ describe('NewsletterPuffLink', () => {
 
   it('should track link viewed in analytics', () => {
     const mockedAnalyticsStream = jest.fn();
-    const onPress = jest.fn();
+    const mockedOnPress = jest.fn();
 
     render(
-      <NewsletterPuffLink
-        onPress={onPress}
+      <TrackingContextProvider
+        context={{ context: 'value' }}
         analyticsStream={mockedAnalyticsStream}
-        newsletterPuffName="RED BOX"
-      />
+      >
+        <NewsletterPuffLink onPress={mockedOnPress} />
+      </TrackingContextProvider>
     );
 
     expect(mockedAnalyticsStream.mock.calls).toMatchSnapshot();
@@ -46,17 +49,17 @@ describe('NewsletterPuffLink', () => {
 
   it('should track link viewed and clicked in analytics', async () => {
     const mockedAnalyticsStream = jest.fn();
-    const onPress = jest.fn();
+    const mockedOnPress = jest.fn();
 
     const component = render(
-      <NewsletterPuffLink
-        onPress={onPress}
+      <TrackingContextProvider
+        context={{ context: 'value' }}
         analyticsStream={mockedAnalyticsStream}
-        newsletterPuffName="RED BOX"
-      />
+      >
+        <NewsletterPuffLink onPress={mockedOnPress} />
+      </TrackingContextProvider>
     );
     fireEvent.click(await component.queryByRole('link')!);
-
     expect(mockedAnalyticsStream.mock.calls).toMatchSnapshot();
   });
 });

@@ -13,15 +13,20 @@ import {
 
 export const NewsletterPuffLink = ({ onPress }: any) => {
   return (
-    <TrackingContextProvider>
-      {({ fireAnalyticsEvent }) => {
+    <TrackingContextProvider
+      scrolledEvent={{
+        event_navigation_name:
+          'widget : puff : manage preferences here : displayed',
+        event_navigation_browsing_method: 'automated'
+      }}
+    >
+      {({ fireAnalyticsEvent, intersectObserverRef }) => {
         const handlePress = () => {
           onPress && onPress();
           fireAnalyticsEvent &&
             fireAnalyticsEvent({
               event_navigation_name: 'widget : puff : manage preferences here',
-              event_navigation_browsing_method: 'click',
-              event_navigation_action: 'navigation'
+              event_navigation_browsing_method: 'click'
             });
         };
         return (
@@ -29,7 +34,7 @@ export const NewsletterPuffLink = ({ onPress }: any) => {
             url="https://home.thetimes.co.uk/myNews"
             onPress={() => handlePress()}
           >
-            <InpPreferencesView>
+            <InpPreferencesView ref={intersectObserverRef}>
               <InpPreferencesText>Manage preferences here</InpPreferencesText>
               <InpIconContainer>
                 <IconForwardArrow fillColour={colours.functional.action} />

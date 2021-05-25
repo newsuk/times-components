@@ -22,7 +22,7 @@ type TrackingContextChildren = {
     | ((
         props: {
           fireAnalyticsEvent: (evt: any) => void;
-          intersectObserverRef: (ref: HTMLDivElement | null) => void;
+          intersectObserverRef: (ref: HTMLElement | null) => void;
         }
       ) => JSX.Element | JSX.Element[])
     | JSX.Element
@@ -56,7 +56,7 @@ export const TrackingContextProvider = ({
         console.error('no analytics stream to send to', aggregatedEvent);
   };
 
-  const [ref, setRef] = useState<HTMLDivElement | null>(null);
+  const [ref, setRef] = useState<HTMLElement | null>(null);
 
   if (scrolledEvent) {
     useIntersectionObserver(
