@@ -1,6 +1,5 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
-import Link from '@times-components/link';
+import { render, cleanup, fireEvent } from '@testing-library/react';
 import mockDate from 'mockdate';
 import { NewsletterPuffLink } from '../NewsletterPuffLink';
 
@@ -12,17 +11,14 @@ describe('NewsletterPuffLink', () => {
   afterEach(() => {
     jest.clearAllMocks();
     mockDate.reset();
-  });
-
-  afterEach(() => {
-    return;
+    cleanup();
   });
 
   it('renders the link with the text `Manage preferences here`', () => {
     const mockedOnPress = jest.fn();
     const mockedAnalyticsStream = jest.fn();
 
-    const component = create(
+    const component = render(
       <NewsletterPuffLink
         analyticsStream={mockedAnalyticsStream}
         onPress={mockedOnPress}
@@ -30,14 +26,14 @@ describe('NewsletterPuffLink', () => {
       />
     );
 
-    expect(component).toMatchSnapshot();
+    expect(component.baseElement).toMatchSnapshot();
   });
 
   it('should track link viewed in analytics', () => {
     const mockedAnalyticsStream = jest.fn();
     const onPress = jest.fn();
 
-    create(
+    render(
       <NewsletterPuffLink
         onPress={onPress}
         analyticsStream={mockedAnalyticsStream}
@@ -48,19 +44,18 @@ describe('NewsletterPuffLink', () => {
     expect(mockedAnalyticsStream.mock.calls).toMatchSnapshot();
   });
 
-  it('should track link viewed and clicked in analytics', () => {
+  it('should track link viewed and clicked in analytics', async () => {
     const mockedAnalyticsStream = jest.fn();
     const onPress = jest.fn();
 
-    const testInstance = create(
+    const component = render(
       <NewsletterPuffLink
         onPress={onPress}
         analyticsStream={mockedAnalyticsStream}
         newsletterPuffName="RED BOX"
       />
     );
-
-    testInstance.root.findByType(Link).props.onPress();
+    fireEvent.click(await component.queryByRole('link')!);
 
     expect(mockedAnalyticsStream.mock.calls).toMatchSnapshot();
   });

@@ -1,6 +1,5 @@
 import React from 'react';
-import { create } from 'react-test-renderer';
-import Button from '@times-components/button';
+import { render, cleanup, fireEvent } from '@testing-library/react';
 import mockDate from 'mockdate';
 import { NewsletterPuffButton } from '../NewsletterPuffButton';
 
@@ -12,58 +11,55 @@ describe('NewsletterPuffButton', () => {
   afterEach(() => {
     jest.clearAllMocks();
     mockDate.reset();
+    cleanup();
   });
 
-  afterEach(() => {
-    return;
-  });
-
-  it('renders the button with the text `Sign up to newsletter`', () => {
+  it('renders the button with the text `Sign up to newsletter`', async () => {
     const mockedOnPress = jest.fn();
 
-    const component = create(
+    const component = render(
       <NewsletterPuffButton
         updatingSubscription={false}
         onPress={mockedOnPress}
       />
     );
 
-    expect(component).toMatchSnapshot();
-    component.root.findByType(Button).props.onPress();
+    expect(component.baseElement).toMatchSnapshot();
+    fireEvent.click(await component.queryByRole('button')!);
     expect(mockedOnPress).toHaveBeenCalledTimes(1);
   });
 
-  it('renders the button with the text `Saving...`', () => {
+  it('renders the button with the text `Saving...`', async () => {
     const mockedOnPress = jest.fn();
 
-    const component = create(
+    const component = render(
       <NewsletterPuffButton updatingSubscription onPress={mockedOnPress} />
     );
 
-    component.root.findByType(Button).props.onPress();
-    expect(component).toMatchSnapshot();
+    fireEvent.click(await component.queryByRole('button')!);
+    expect(component.baseElement).toMatchSnapshot();
   });
 
   it('should track button viewed in analytics', () => {
     const mockedAnalyticsStream = jest.fn();
     const onPress = jest.fn();
 
-    create(
+    render(
       <NewsletterPuffButton updatingSubscription={false} onPress={onPress} />
     );
 
     expect(mockedAnalyticsStream.mock.calls).toMatchSnapshot();
   });
 
-  it('should track button viewed and clicked in analytics', () => {
+  it('should track button viewed and clicked in analytics', async () => {
     const mockedAnalyticsStream = jest.fn();
     const onPress = jest.fn();
 
-    const testInstance = create(
+    const component = render(
       <NewsletterPuffButton updatingSubscription={false} onPress={onPress} />
     );
 
-    testInstance.root.findByType(Button).props.onPress();
+    fireEvent.click(await component.queryByRole('button')!);
 
     expect(mockedAnalyticsStream.mock.calls).toMatchSnapshot();
   });
