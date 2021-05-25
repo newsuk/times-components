@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArticleComment /> should render a comment article corrctly 1`] = `
+<DocumentFragment>
+  <article
+    class="sc-bdVaJa sc-bxivhb hhFEos"
+  >
+    <div
+      class="sc-bwzfXH iKKeUw"
+    >
+      <div
+        class="sc-ifAKCX isGkwc"
+      >
+        <div>
+          Image
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH iKKeUw"
+    >
+      <p
+        class="sc-htpNat dtQRdf"
+      >
+        Some text label
+      </p>
+      <p
+        class="sc-EHOje hSiEua"
+      >
+        John Smith
+      </p>
+      <div>
+        Headline
+      </div>
+    </div>
+  </article>
+</DocumentFragment>
+`;

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Lead1And2 /> should render an LEAD_1_AND_2 slice correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa sc-htpNat cjntsS"
+  >
+    <div
+      class="sc-bwzfXH sc-bxivhb ksOwrs"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH sc-ifAKCX ffBCTL"
+    >
+      <div
+        class="sc-bwzfXH jJSEvL"
+      >
+        <div>
+          Article
+        </div>
+      </div>
+      <div>
+        Article
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Lead1And2 /> should render an LEAD_1_AND_2_COLUMNIST slice correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa sc-htpNat cjntsS"
+  >
+    <div
+      class="sc-bwzfXH sc-bxivhb ksOwrs"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH sc-ifAKCX ffBCTL"
+    >
+      <div
+        class="sc-bwzfXH jJSEvL"
+      >
+        <div>
+          Article
+        </div>
+      </div>
+      <div>
+        ArticleComment
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

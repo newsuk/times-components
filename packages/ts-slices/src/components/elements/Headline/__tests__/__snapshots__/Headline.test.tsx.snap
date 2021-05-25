@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Headline /> should render headline component correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa elQUxc"
+  >
+    <a
+      href=""
+    >
+      <h3>
+        Some example headline
+      </h3>
+    </a>
+  </div>
+</DocumentFragment>
+`;
