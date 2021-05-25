@@ -9,11 +9,11 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { scales } from "@times-components/styleguide";
-import { ContextProviderWithDefaults } from "@times-components/context";
+import Context from "@times-components/context";
 import { MockedProvider } from "@times-components/provider-test-tools";
 import { getNewsletter } from "@times-components/provider-queries";
 
-import { UserState } from "../mocks";
+import { UserState } from "../mocks.web";
 
 import articleFixture, { testFixture } from "../../fixtures/full-article";
 import {
@@ -26,8 +26,10 @@ import ArticleSkeleton from "../../src/article-skeleton";
 import articleSkeletonProps from "../shared-article-skeleton-props";
 
 jest.mock("@times-components/ts-components", () => ({
+  __esModule: true,
   ...jest.requireActual("@times-components/ts-components"),
-  InlineNewsletterPuff: "InlineNewsletterPuff"
+  InlineNewsletterPuff: "InlineNewsletterPuff",
+  AutoNewsletterPuff: "AutoNewsletterPuff"
 }));
 
 const omitProps = new Set([
@@ -83,10 +85,9 @@ const algoliaSearchKeys = {
 
 const renderArticle = (data, isPreview = false) => (
   <MockedProvider mocks={mocks}>
-    <ContextProviderWithDefaults
+    <Context.Provider
       value={{
-        theme: { scale: scales.medium, sectionColour: "#FF0000" },
-        user: { isLoggedIn: true }
+        theme: { scale: scales.medium, sectionColour: "#FF0000" }
       }}
     >
       <ArticleSkeleton
@@ -103,7 +104,7 @@ const renderArticle = (data, isPreview = false) => (
         isPreview={isPreview}
         algoliaSearchKeys={algoliaSearchKeys}
       />
-    </ContextProviderWithDefaults>
+    </Context.Provider>
   </MockedProvider>
 );
 
@@ -115,30 +116,21 @@ describe("Article with automatically placed NewsletterPuff", () => {
   it("should not render a NewsletterPuff without feature flag", () => {
     UserState.mockStates = [];
     const output = TestRenderer.create(renderArticle(article));
-    const isNewsletterPuffs = output.root.findAllByType("NewsletterPuff");
+    const isNewsletterPuffs = output.root.findAllByType("AutoNewsletterPuff");
     expect(isNewsletterPuffs.length).toBe(0);
   });
 
   it("should not render a NewsletterPuff without the correct section", () => {
     const output = TestRenderer.create(renderArticle(article));
-    const isNewsletterPuffs = output.root.findAllByType("NewsletterPuff");
+    const isNewsletterPuffs = output.root.findAllByType("AutoNewsletterPuff");
     expect(isNewsletterPuffs.length).toBe(0);
   });
 
   it("should not render a NewsletterPuff without some paywall content", () => {
     article.section = "News";
     const output = TestRenderer.create(renderArticle(article));
-    const isNewsletterPuffs = output.root.findAllByType("NewsletterPuff");
+    const isNewsletterPuffs = output.root.findAllByType("AutoNewsletterPuff");
     expect(isNewsletterPuffs.length).toBe(0);
-  });
-
-  it("shouldnt render a NewsletterPuff without cookie", async () => {
-    article.section = "News";
-    article.content[3] = paywallContent;
-    const output = TestRenderer.create(renderArticle(article));
-    expect(
-      output.root.findByProps({ className: "view-count" }).props.style.display
-    ).toEqual("none");
   });
 
   it("should render a NewsletterPuff correctly", async () => {
@@ -146,16 +138,17 @@ describe("Article with automatically placed NewsletterPuff", () => {
     article.content[3] = paywallContent;
     window.document.cookie = "nuk-consent-personalisation=1";
     const output = TestRenderer.create(renderArticle(article));
-    const isNewsletterPuff = output.root.findByType("NewsletterPuff");
-    expect(isNewsletterPuff).toBeTruthy();
     expect(output).toMatchSnapshot();
+    const isNewsletterPuff = output.root.findByType("AutoNewsletterPuff");
+    expect(isNewsletterPuff).toBeTruthy();
   });
 
   it("should not render another NewsletterPuff when one already exists", () => {
     article.section = "News";
     article.content[3] = paywallContentWithNewsletter;
     const output = TestRenderer.create(renderArticle(article));
-    const isNewsletterPuffs = output.root.findAllByType("NewsletterPuff");
+    expect(output).toMatchSnapshot();
+    const isNewsletterPuffs = output.root.findAllByType("InlineNewsletterPuff");
     expect(isNewsletterPuffs.length).toBe(1);
   });
 });

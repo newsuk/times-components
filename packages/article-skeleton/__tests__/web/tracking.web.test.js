@@ -13,8 +13,10 @@ import { getRegistrationType, getSharedStatus } from "../../src/data-helper";
 import shared from "../shared-tracking";
 
 jest.mock("@times-components/ts-components", () => ({
+  __esModule: true,
   ...jest.requireActual("@times-components/ts-components"),
-  InlineNewsletterPuff: "InlineNewsletterPuff"
+  InlineNewsletterPuff: "InlineNewsletterPuff",
+  AutoNewsletterPuff: "AutoNewsletterPuff"
 }));
 
 beforeEach(() => {
@@ -26,6 +28,12 @@ afterEach(() => {
   mockDate.reset();
   global.nuk = {};
 });
+
+const algoliaSearchKeys = {
+  applicationId: "",
+  apiKey: "",
+  indexName: ""
+};
 
 it("analytics when rendering a shared Article page with metered access", () => {
   const userStateMock = {
@@ -43,6 +51,7 @@ it("analytics when rendering a shared Article page with metered access", () => {
     <ArticleSkeleton
       {...articleSkeletonProps}
       analyticsStream={stream}
+      algoliaSearchKeys={algoliaSearchKeys}
       data={articleFixture()}
       Header={() => null}
       onAuthorPress={() => {}}

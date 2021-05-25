@@ -49,6 +49,12 @@ addSerializers(
   )
 );
 
+const algoliaSearchKeys = {
+  applicationId: "",
+  apiKey: "",
+  indexName: ""
+};
+
 iterator([
   {
     name: "a low quality image if not viewed",
@@ -81,6 +87,7 @@ iterator([
         <ArticleSkeleton
           adConfig={adConfig}
           analyticsStream={() => {}}
+          algoliaSearchKeys={algoliaSearchKeys}
           data={article}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
@@ -146,6 +153,7 @@ iterator([
         <ArticleSkeleton
           adConfig={adConfig}
           analyticsStream={() => {}}
+          algoliaSearchKeys={algoliaSearchKeys}
           data={article}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
@@ -190,6 +198,7 @@ iterator([
         <ArticleSkeleton
           adConfig={adConfig}
           analyticsStream={() => {}}
+          algoliaSearchKeys={algoliaSearchKeys}
           data={article}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
