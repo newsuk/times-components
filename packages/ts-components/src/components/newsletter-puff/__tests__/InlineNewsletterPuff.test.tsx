@@ -85,9 +85,7 @@ describe('Inline Newsletter Puff', () => {
 
   it('renders signup state', async () => {
     const component = renderComponent();
-
-    await delay(0);
-
+    await component.findByText('Sign up now');
     expect(component.baseElement).toMatchSnapshot();
   });
 
@@ -127,7 +125,7 @@ describe('Inline Newsletter Puff', () => {
 
   describe('Clicking Subscribe', () => {
     it("renders 'saving' when the button is clicked", async () => {
-      const component = renderComponent();
+      const component = renderComponent(() => true);
 
       const signupButton = await component.findByText('Sign up now');
       fireEvent.click(signupButton);
@@ -156,7 +154,7 @@ describe('Inline Newsletter Puff', () => {
 
   describe('Manage preferences ', () => {
     it('renders the success view after subscribing ', async () => {
-      const component = renderComponent();
+      const component = renderComponent(() => true);
 
       const signupButton = await component.findByText('Sign up now');
       fireEvent.click(signupButton);
@@ -202,9 +200,9 @@ describe('Inline Newsletter Puff', () => {
 
     it('sign up now : displayed', async () => {
       const analyticsStream = jest.fn();
-      renderComponent(analyticsStream);
+      const component = renderComponent(analyticsStream);
 
-      await delay(10);
+      await component.findByText('Sign up now');
 
       FakeIntersectionObserver.intersect();
 
@@ -227,8 +225,6 @@ describe('Inline Newsletter Puff', () => {
       analyticsStream.mockClear();
 
       FakeIntersectionObserver.intersect();
-
-      await delay(10);
 
       expect(analyticsStream).toHaveBeenCalledWith({
         article_parent_name: 'RED BOX',
