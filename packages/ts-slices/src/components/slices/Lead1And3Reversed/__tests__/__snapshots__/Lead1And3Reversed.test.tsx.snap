@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Lead1And3Reversed /> should render an LEAD_1_AND_3_REVERSED slice correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa gMdRRW"
+  >
+    <div
+      class="sc-bwzfXH sc-htpNat kYoIYk"
+    >
+      <div
+        class="sc-bxivhb exdQcl"
+      >
+        <div
+          class="sc-bwzfXH sc-EHOje cJCfOr"
+        >
+          <div>
+            Article
+          </div>
+        </div>
+        <div
+          class="sc-bwzfXH sc-EHOje cJCfOr"
+        >
+          <div>
+            Article
+          </div>
+        </div>
+      </div>
+      <div>
+        Article
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH sc-ifAKCX OEQZS"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

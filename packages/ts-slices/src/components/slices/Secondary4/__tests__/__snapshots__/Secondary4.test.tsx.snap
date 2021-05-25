@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Secondary4 /> should render a SECONDARY_4 slice correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa gMdRRW"
+  >
+    <div
+      class="sc-bwzfXH sc-htpNat dbWNLh"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH sc-htpNat dbWNLh"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH sc-htpNat dbWNLh"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH sc-htpNat dbWNLh"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

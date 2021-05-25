@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Secondary2And3NoPic /> should render an SECONDARY_2_AND_3_NO_PIC slice correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa sc-htpNat gWBumh"
+  >
+    <div
+      class="sc-bwzfXH sc-bxivhb gEodUp"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH sc-bxivhb gEodUp"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH sc-ifAKCX bbGXLH"
+    >
+      <div
+        class="sc-bwzfXH sc-EHOje fSuwbC"
+      >
+        <div>
+          Article
+        </div>
+      </div>
+      <div
+        class="sc-bwzfXH sc-EHOje fSuwbC"
+      >
+        <div>
+          Article
+        </div>
+      </div>
+      <div
+        class="sc-bwzfXH sc-EHOje fSuwbC"
+      >
+        <div>
+          Article
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

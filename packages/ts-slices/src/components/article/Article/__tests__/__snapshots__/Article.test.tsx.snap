@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Article /> should render an article correctly 1`] = `
+<DocumentFragment>
+  <article
+    class="sc-bdVaJa febYmB"
+  >
+    <div
+      class="sc-bwzfXH iKKeUw"
+    >
+      <div>
+        Image
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH iKKeUw"
+    >
+      <p
+        class="sc-htpNat dtQRdf"
+      >
+        Some text label
+      </p>
+      <div>
+        Headline
+      </div>
+      <p
+        class="sc-ifAKCX hVJTTS"
+      >
+        1 hour ago
+      </p>
+    </div>
+  </article>
+</DocumentFragment>
+`;

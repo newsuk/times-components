@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Image /> should render image component correctly 1`] = `
+<div
+  class="sc-bdVaJa foWszs"
+>
+  <a
+    href=""
+  >
+    <div
+      class="sc-bwzfXH cRKciC"
+    >
+      <div>
+        <div>
+          LazyImage
+        </div>
+        <div>
+          https://dummyimage.com/300
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+`;
