@@ -43,9 +43,11 @@ exports[`NewsletterPuffLink should track link viewed and clicked in analytics 1`
 Array [
   Array [
     Object {
-      "context": "value",
-      "event_navigation_browsing_method": "click",
-      "event_navigation_name": "widget : puff : manage preferences here",
+      "attrs": Object {
+        "context": "value",
+        "event_navigation_browsing_method": "click",
+        "event_navigation_name": "widget : puff : manage preferences here",
+      },
     },
   ],
 ]

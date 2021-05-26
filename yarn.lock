@@ -3948,6 +3948,13 @@
   dependencies:
     "@types/lodash" "*"
 
+"@types/lodash.merge@4.6.2":
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/@types/lodash.merge/-/lodash.merge-4.6.2.tgz#0f342234744a899748808412fbd39c150cab2da4"
+  integrity sha1-DzQiNHRKiZdIgIQS+9OcFQyrLaQ=
+  dependencies:
+    "@types/lodash" "*"
+
 "@types/lodash.shuffle@4.2.6":
   version "4.2.6"
   resolved "https://registry.yarnpkg.com/@types/lodash.shuffle/-/lodash.shuffle-4.2.6.tgz#191b0fc66699214558352123811d1657d9ed8930"

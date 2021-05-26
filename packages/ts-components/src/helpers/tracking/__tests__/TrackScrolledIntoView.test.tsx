@@ -20,9 +20,8 @@ describe('trackScrolledIntoView', () => {
   });
 
   it('renders the component', () => {
-    const analyticsStream = jest.fn() as any;
     const { baseElement } = render(
-      <TrackingContextProvider context={{ analyticsStream }}>
+      <TrackingContextProvider context={{ object: 'abc' }}>
         <TrackScrolledIntoView analyticsEvent={{ action: 'viewed' }}>
           {({ intersectObserverRef }) => (
             <div ref={intersectObserverRef}>content </div>

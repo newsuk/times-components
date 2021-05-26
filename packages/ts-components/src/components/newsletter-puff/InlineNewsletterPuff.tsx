@@ -73,14 +73,18 @@ export const InlineNewsletterPuff = ({
             ) => (
               <TrackingContextProvider
                 context={{
-                  article_parent_name: newsletter.title,
-                  event_navigation_action: 'navigation'
+                  attrs: {
+                    article_parent_name: newsletter.title,
+                    event_navigation_action: 'navigation'
+                  }
                 }}
                 scrolledEvent={{
-                  event_navigation_name:
-                    'widget : puff : sign up now : displayed',
-                  event_navigation_browsing_method: 'automated',
-                  event_navigation_action: 'navigation'
+                  attrs: {
+                    event_navigation_name:
+                      'widget : puff : sign up now : displayed',
+                    event_navigation_browsing_method: 'automated',
+                    event_navigation_action: 'navigation'
+                  }
                 }}
               >
                 {({ intersectObserverRef }) => (

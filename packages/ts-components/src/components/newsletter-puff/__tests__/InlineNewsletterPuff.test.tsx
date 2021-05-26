@@ -144,10 +144,12 @@ describe('Inline Newsletter Puff', () => {
       await component.findByText('Saving…');
 
       expect(analyticsStream).toHaveBeenCalledWith({
-        article_parent_name: 'RED BOX',
-        event_navigation_action: 'navigation',
-        event_navigation_browsing_method: 'click',
-        event_navigation_name: 'widget : puff : sign up now'
+        attrs: {
+          article_parent_name: 'RED BOX',
+          event_navigation_action: 'navigation',
+          event_navigation_browsing_method: 'click',
+          event_navigation_name: 'widget : puff : sign up now'
+        }
       });
     });
   });
@@ -178,10 +180,12 @@ describe('Inline Newsletter Puff', () => {
 
       fireEvent.click(link);
       expect(analyticsStream).toHaveBeenCalledWith({
-        article_parent_name: 'RED BOX',
-        event_navigation_action: 'navigation',
-        event_navigation_browsing_method: 'click',
-        event_navigation_name: 'widget : puff : manage preferences here'
+        attrs: {
+          article_parent_name: 'RED BOX',
+          event_navigation_action: 'navigation',
+          event_navigation_browsing_method: 'click',
+          event_navigation_name: 'widget : puff : manage preferences here'
+        }
       });
     });
   });
@@ -207,10 +211,12 @@ describe('Inline Newsletter Puff', () => {
       FakeIntersectionObserver.intersect();
 
       expect(analyticsStream).toHaveBeenCalledWith({
-        article_parent_name: 'RED BOX',
-        event_navigation_action: 'navigation',
-        event_navigation_browsing_method: 'automated',
-        event_navigation_name: 'widget : puff : sign up now : displayed'
+        attrs: {
+          article_parent_name: 'RED BOX',
+          event_navigation_action: 'navigation',
+          event_navigation_browsing_method: 'automated',
+          event_navigation_name: 'widget : puff : sign up now : displayed'
+        }
       });
     });
     it('manage preferences here : displayed', async () => {
@@ -227,11 +233,13 @@ describe('Inline Newsletter Puff', () => {
       FakeIntersectionObserver.intersect();
 
       expect(analyticsStream).toHaveBeenCalledWith({
-        article_parent_name: 'RED BOX',
-        event_navigation_action: 'navigation',
-        event_navigation_browsing_method: 'automated',
-        event_navigation_name:
-          'widget : puff : manage preferences here : displayed'
+        attrs: {
+          article_parent_name: 'RED BOX',
+          event_navigation_action: 'navigation',
+          event_navigation_browsing_method: 'automated',
+          event_navigation_name:
+            'widget : puff : manage preferences here : displayed'
+        }
       });
     });
   });

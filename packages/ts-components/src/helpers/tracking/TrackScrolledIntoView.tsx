@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 
-import { useTrackingContext } from './TrackingContextProvider';
+import {
+  TrackingAttributes,
+  useTrackingContext
+} from './TrackingContextProvider';
 import { useIntersectionObserver } from '../../utils/intersectObserverHook';
 type TrackScrolledIntoViewProps = {
-  analyticsEvent: any;
+  analyticsEvent: TrackingAttributes;
   children: (
     props: { intersectObserverRef: (ref: HTMLDivElement | null) => void }
   ) => JSX.Element;

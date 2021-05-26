@@ -20,9 +20,11 @@ export const NewsletterPuffButton = ({
       onPress && onPress();
       fireAnalyticsEvent &&
         fireAnalyticsEvent({
-          event_navigation_name: 'widget : puff : sign up now',
-          event_navigation_browsing_method: 'click',
-          event_navigation_action: 'navigation'
+          attrs: {
+            event_navigation_name: 'widget : puff : sign up now',
+            event_navigation_browsing_method: 'click',
+            event_navigation_action: 'navigation'
+          }
         });
     }
   };

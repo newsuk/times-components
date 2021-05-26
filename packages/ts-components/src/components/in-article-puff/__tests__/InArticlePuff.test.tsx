@@ -149,8 +149,10 @@ describe('InArticlePuff', () => {
       render(
         <TrackingContextProvider
           context={{
-            articleHeadline: 'articleHeadline',
-            section: 'section'
+            attrs: {
+              articleHeadline: 'articleHeadline',
+              section: 'section'
+            }
           }}
           analyticsStream={analyticsStream}
         >
@@ -159,13 +161,15 @@ describe('InArticlePuff', () => {
       );
       FakeIntersectionObserver.intersect();
       expect(analyticsStream).toHaveBeenCalledWith({
-        articleHeadline: 'articleHeadline',
-        component_name: 'Where can I get a Covid vaccine in England?',
-        component_type: 'in-article component : puff : interactive',
-        event_navigation_action: 'navigation',
-        event_navigation_browsing_method: 'scroll',
-        event_navigation_name: 'in-article component displayed : puff',
-        section: 'section'
+        attrs: {
+          articleHeadline: 'articleHeadline',
+          component_name: 'Where can I get a Covid vaccine in England?',
+          component_type: 'in-article component : puff : interactive',
+          event_navigation_action: 'navigation',
+          event_navigation_browsing_method: 'scroll',
+          event_navigation_name: 'in-article component displayed : puff',
+          section: 'section'
+        }
       });
     });
     it('fires click event when Read more clicked', () => {
@@ -176,8 +180,10 @@ describe('InArticlePuff', () => {
       const { getByText } = render(
         <TrackingContextProvider
           context={{
-            articleHeadline: 'articleHeadline',
-            section: 'section'
+            attrs: {
+              articleHeadline: 'articleHeadline',
+              section: 'section'
+            }
           }}
           analyticsStream={analyticsStream}
         >
@@ -188,13 +194,15 @@ describe('InArticlePuff', () => {
       fireEvent.click(getByText('Read the full article'));
 
       expect(analyticsStream).toHaveBeenCalledWith({
-        articleHeadline: 'articleHeadline',
-        component_name: 'Where can I get a Covid vaccine in England?',
-        component_type: 'in-article component : puff : interactive',
-        event_navigation_action: 'navigation',
-        event_navigation_browsing_method: 'click',
-        event_navigation_name: 'button : Read the full article',
-        section: 'section'
+        attrs: {
+          articleHeadline: 'articleHeadline',
+          component_name: 'Where can I get a Covid vaccine in England?',
+          component_type: 'in-article component : puff : interactive',
+          event_navigation_action: 'navigation',
+          event_navigation_browsing_method: 'click',
+          event_navigation_name: 'button : Read the full article',
+          section: 'section'
+        }
       });
     });
     it('fires click event when headline clicked', () => {
@@ -205,8 +213,10 @@ describe('InArticlePuff', () => {
       const { getByText } = render(
         <TrackingContextProvider
           context={{
-            articleHeadline: 'articleHeadline',
-            section: 'section'
+            attrs: {
+              articleHeadline: 'articleHeadline',
+              section: 'section'
+            }
           }}
           analyticsStream={analyticsStream}
         >
@@ -217,13 +227,15 @@ describe('InArticlePuff', () => {
       fireEvent.click(getByText('Where can I get a Covid vaccine in England?'));
 
       expect(analyticsStream).toHaveBeenCalledWith({
-        articleHeadline: 'articleHeadline',
-        component_name: 'Where can I get a Covid vaccine in England?',
-        component_type: 'in-article component : puff : interactive',
-        event_navigation_action: 'navigation',
-        event_navigation_browsing_method: 'click',
-        event_navigation_name: 'button : headline',
-        section: 'section'
+        attrs: {
+          articleHeadline: 'articleHeadline',
+          component_name: 'Where can I get a Covid vaccine in England?',
+          component_type: 'in-article component : puff : interactive',
+          event_navigation_action: 'navigation',
+          event_navigation_browsing_method: 'click',
+          event_navigation_name: 'button : headline',
+          section: 'section'
+        }
       });
     });
     it('fires click event when image clicked', () => {
@@ -234,8 +246,10 @@ describe('InArticlePuff', () => {
       const { getByRole } = render(
         <TrackingContextProvider
           context={{
-            articleHeadline: 'articleHeadline',
-            section: 'section'
+            attrs: {
+              articleHeadline: 'articleHeadline',
+              section: 'section'
+            }
           }}
           analyticsStream={analyticsStream}
         >
@@ -246,13 +260,15 @@ describe('InArticlePuff', () => {
       fireEvent.click(getByRole('img'));
 
       expect(analyticsStream).toHaveBeenCalledWith({
-        articleHeadline: 'articleHeadline',
-        component_name: 'Where can I get a Covid vaccine in England?',
-        component_type: 'in-article component : puff : interactive',
-        event_navigation_action: 'navigation',
-        event_navigation_browsing_method: 'click',
-        event_navigation_name: 'button : image',
-        section: 'section'
+        attrs: {
+          articleHeadline: 'articleHeadline',
+          component_name: 'Where can I get a Covid vaccine in England?',
+          component_type: 'in-article component : puff : interactive',
+          event_navigation_action: 'navigation',
+          event_navigation_browsing_method: 'click',
+          event_navigation_name: 'button : image',
+          section: 'section'
+        }
       });
     });
   });

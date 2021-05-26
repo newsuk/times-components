@@ -1,7 +1,15 @@
 import React, { useContext, useState } from 'react';
+import merge from 'lodash.merge';
+
 import { useIntersectionObserver } from '../../utils/intersectObserverHook';
 
-export type TrackingContext = { [key: string]: string };
+export type TrackingAttributes = { [key: string]: string };
+export type TrackingContext = {
+  object?: string;
+  component?: string;
+  action?: string;
+  attrs?: TrackingAttributes;
+};
 
 export type TrackingContextProps = {
   analyticsStream?: (analyticsEvent: any) => void;
@@ -21,7 +29,7 @@ type TrackingContextChildren = {
   children:
     | ((
         props: {
-          fireAnalyticsEvent: (evt: any) => void;
+          fireAnalyticsEvent: (evt: TrackingContext) => void;
           intersectObserverRef: (ref: HTMLElement | null) => void;
         }
       ) => JSX.Element | JSX.Element[])
@@ -44,11 +52,11 @@ export const TrackingContextProvider = ({
       : parentTrackingContext.analyticsStream;
 
   const fireAnalyticsEvent = (event: any) => {
-    const aggregatedEvent = {
-      ...parentTrackingContext.context,
-      ...context,
-      ...event
-    };
+    const aggregatedEvent = merge(
+      parentTrackingContext.context,
+      context,
+      event
+    );
 
     stream
       ? stream(aggregatedEvent)

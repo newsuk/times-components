@@ -60,8 +60,10 @@ const showcase = {
             <>
               <TrackingContextProvider
                 context={{
-                  articleHeadline: 'articleHeadline',
-                  section: 'section'
+                  attrs: {
+                    articleHeadline: 'articleHeadline',
+                    section: 'section'
+                  }
                 }}
                 analyticsStream={analyticsStream}
               >
@@ -78,7 +80,7 @@ const showcase = {
                 <StripedContainer className={height} />
                 <TrackingContextProvider
                   context={{
-                    section: 'a different section'
+                    attrs: { section: 'a different section' }
                   }}
                 >
                   <TrackScrolledIntoView

@@ -15,9 +15,11 @@ export const NewsletterPuffLink = ({ onPress }: any) => {
   return (
     <TrackingContextProvider
       scrolledEvent={{
-        event_navigation_name:
-          'widget : puff : manage preferences here : displayed',
-        event_navigation_browsing_method: 'automated'
+        attrs: {
+          event_navigation_name:
+            'widget : puff : manage preferences here : displayed',
+          event_navigation_browsing_method: 'automated'
+        }
       }}
     >
       {({ fireAnalyticsEvent, intersectObserverRef }) => {
@@ -25,8 +27,11 @@ export const NewsletterPuffLink = ({ onPress }: any) => {
           onPress && onPress();
           fireAnalyticsEvent &&
             fireAnalyticsEvent({
-              event_navigation_name: 'widget : puff : manage preferences here',
-              event_navigation_browsing_method: 'click'
+              attrs: {
+                event_navigation_name:
+                  'widget : puff : manage preferences here',
+                event_navigation_browsing_method: 'click'
+              }
             });
         };
         return (
@@ -46,35 +51,3 @@ export const NewsletterPuffLink = ({ onPress }: any) => {
     </TrackingContextProvider>
   );
 };
-// );
-//
-// NewsletterPuffLink.propTypes = {
-//   onPress: PropTypes.func.isRequired
-// };
-//
-// export default withTrackingContext(
-//   withTrackEvents(NewsletterPuffLink, {
-//     analyticsEvents: [
-//       {
-//         actionName: 'onPress',
-//         eventName: 'onPress',
-//         trackingName: 'NewsletterPuffLink',
-//         getAttrs: ({ newsletterPuffName }) => ({
-//           article_parent_name: `${newsletterPuffName}`,
-//           event_navigation_name: 'widget : puff : manage preferences here',
-//           event_navigation_browsing_method: 'click'
-//         })
-//       }
-//     ]
-//   }),
-//   {
-//     getAttrs: ({ newsletterPuffName }) => ({
-//       event_navigation_action: 'navigation',
-//       event_navigation_name:
-//         'widget : puff : manage preferences here : displayed',
-//       article_parent_name: `${newsletterPuffName}`,
-//       event_navigation_browsing_method: 'automated'
-//     }),
-//     trackingName: 'NewsletterPuffLink',
-//     trackingObjectName: 'NewsletterPuffLink'
-//   }

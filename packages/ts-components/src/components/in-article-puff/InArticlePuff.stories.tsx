@@ -20,8 +20,10 @@ const showcase = {
       decorator: (storyFn: () => React.ReactNode) => (
         <TrackingContextProvider
           context={{
-            articleHeadline: 'articleHeadline',
-            section: 'section'
+            attrs: {
+              articleHeadline: 'articleHeadline',
+              section: 'section'
+            }
           }}
           analyticsStream={analyticsStream}
         >

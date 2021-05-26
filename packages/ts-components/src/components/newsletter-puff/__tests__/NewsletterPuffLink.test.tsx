@@ -21,7 +21,7 @@ describe('NewsletterPuffLink', () => {
 
     const component = render(
       <TrackingContextProvider
-        context={{ context: 'value' }}
+        context={{ attrs: { context: 'value' } }}
         analyticsStream={mockedAnalyticsStream}
       >
         <NewsletterPuffLink onPress={mockedOnPress} />
@@ -37,7 +37,7 @@ describe('NewsletterPuffLink', () => {
 
     render(
       <TrackingContextProvider
-        context={{ context: 'value' }}
+        context={{ attrs: { context: 'value' } }}
         analyticsStream={mockedAnalyticsStream}
       >
         <NewsletterPuffLink onPress={mockedOnPress} />
@@ -53,7 +53,7 @@ describe('NewsletterPuffLink', () => {
 
     const component = render(
       <TrackingContextProvider
-        context={{ context: 'value' }}
+        context={{ attrs: { context: 'value' } }}
         analyticsStream={mockedAnalyticsStream}
       >
         <NewsletterPuffLink onPress={mockedOnPress} />
