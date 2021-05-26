@@ -4,8 +4,9 @@ import { Placeholder } from '@times-components/image';
 import { IconForwardChevron } from '@times-components/icons';
 
 import { useFetch } from '../../helpers/fetch/FetchProvider';
-
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
+
+import { AspectRatio } from '../aspect-ratio/AspectRatio';
 
 import {
   PlaceholderContainer,
@@ -31,7 +32,8 @@ const clickEvent = (buttonLabel: string) => ({
 
 export const InArticlePuff: React.FC<{
   sectionColour: string;
-}> = ({ sectionColour }) => {
+  forceImageAspectRatio?: string;
+}> = ({ sectionColour, forceImageAspectRatio }) => {
   const [colour, setColour] = useState('#bf0000');
 
   const handleClick = (
@@ -83,7 +85,9 @@ export const InArticlePuff: React.FC<{
                 href={link}
                 onClick={() => handleClick(fireAnalyticsEvent, 'image')}
               >
-                <img src={image} />
+                <AspectRatio ratio={forceImageAspectRatio}>
+                  <img src={image} />
+                </AspectRatio>
               </a>
             </ImageContainer>
           ) : null}
