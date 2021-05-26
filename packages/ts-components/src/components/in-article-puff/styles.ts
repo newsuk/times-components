@@ -43,6 +43,8 @@ export const ImageContainer = styled.div`
   img {
     display: block;
     width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
   }
 
   @media (min-width: ${breakpoints.medium}px) {
