@@ -30,6 +30,7 @@ const scrollEvent = {
 };
 
 const clickEvent = (buttonLabel: string) => ({
+  action: 'Clicked',
   attrs: {
     event_navigation_name: `button : ${buttonLabel}`,
     event_navigation_browsing_method: 'click'
@@ -76,6 +77,7 @@ export const InArticlePuff: React.FC<{
   return (
     <TrackingContextProvider
       context={{
+        object: 'InArticlePuff',
         attrs: {
           component_type: 'in-article component : puff : interactive',
           event_navigation_action: 'navigation',

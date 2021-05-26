@@ -2,10 +2,12 @@ import React from 'react';
 
 import { delay } from '@times-components/test-utils';
 
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 import { MockedProvider } from '@times-components/provider-test-tools';
+
+import mockDate from 'mockdate';
 
 import {
   getNewsletter,
@@ -60,7 +62,10 @@ const renderComponent = (
 ) =>
   render(
     <MockedProvider mocks={mocks}>
-      <TrackingContextProvider analyticsStream={analyticsStream}>
+      <TrackingContextProvider
+        analyticsStream={analyticsStream}
+        context={{ component: 'ArticleSkeleton' }}
+      >
         <InlineNewsletterPuff
           {...{
             code: 'TNL-119',
@@ -78,6 +83,16 @@ const renderComponent = (
   );
 
 describe('Inline Newsletter Puff', () => {
+  beforeEach(() => {
+    mockDate.set(1620000000000);
+  });
+
+  afterEach(() => {
+    mockDate.reset();
+    jest.clearAllMocks();
+    cleanup();
+  });
+
   it('renders placeholder when loading', () => {
     const component = renderComponent();
     expect(component.baseElement).toMatchSnapshot();
@@ -144,8 +159,12 @@ describe('Inline Newsletter Puff', () => {
       await component.findByText('Saving…');
 
       expect(analyticsStream).toHaveBeenCalledWith({
+        action: 'Clicked',
+        component: 'ArticleSkeleton',
+        object: 'NewsletterPuffButton',
         attrs: {
           article_parent_name: 'RED BOX',
+          eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'widget : puff : sign up now'
@@ -155,6 +174,15 @@ describe('Inline Newsletter Puff', () => {
   });
 
   describe('Manage preferences ', () => {
+    beforeEach(() => {
+      mockDate.set(1620000000000);
+    });
+
+    afterEach(() => {
+      mockDate.reset();
+      jest.clearAllMocks();
+      cleanup();
+    });
     it('renders the success view after subscribing ', async () => {
       const component = renderComponent(() => true);
 
@@ -180,8 +208,12 @@ describe('Inline Newsletter Puff', () => {
 
       fireEvent.click(link);
       expect(analyticsStream).toHaveBeenCalledWith({
+        action: 'Clicked',
+        object: 'NewsletterPuffLink',
+        component: 'ArticleSkeleton',
         attrs: {
           article_parent_name: 'RED BOX',
+          eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'widget : puff : manage preferences here'
@@ -211,8 +243,12 @@ describe('Inline Newsletter Puff', () => {
       FakeIntersectionObserver.intersect();
 
       expect(analyticsStream).toHaveBeenCalledWith({
+        action: 'Scrolled',
+        component: 'ArticleSkeleton',
+        object: 'NewsletterPuffButton',
         attrs: {
           article_parent_name: 'RED BOX',
+          eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'automated',
           event_navigation_name: 'widget : puff : sign up now : displayed'
@@ -233,8 +269,12 @@ describe('Inline Newsletter Puff', () => {
       FakeIntersectionObserver.intersect();
 
       expect(analyticsStream).toHaveBeenCalledWith({
+        action: 'Scrolled',
+        component: 'ArticleSkeleton',
+        object: 'NewsletterPuffLink',
         attrs: {
           article_parent_name: 'RED BOX',
+          eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'automated',
           event_navigation_name:

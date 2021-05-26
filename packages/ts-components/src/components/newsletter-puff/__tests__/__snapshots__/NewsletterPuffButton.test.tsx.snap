@@ -25,7 +25,3 @@ exports[`NewsletterPuffButton renders the button with the text \`Sign up to news
   </div>
 </body>
 `;
-
-exports[`NewsletterPuffButton should track button viewed and clicked in analytics 1`] = `Array []`;
-
-exports[`NewsletterPuffButton should track button viewed in analytics 1`] = `Array []`;

@@ -8,6 +8,8 @@ import { InArticlePuff } from '../InArticlePuff';
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 
+import mockDate from 'mockdate';
+
 jest.mock('@times-components/image', () => ({
   Placeholder: () => <div>Placeholder</div>
 }));
@@ -46,7 +48,13 @@ const requiredProps = {
 };
 
 describe('InArticlePuff', () => {
+  beforeEach(() => {
+    mockDate.set(1620000000000);
+  });
+
   afterEach(() => {
+    mockDate.reset();
+    jest.clearAllMocks();
     cleanup();
   });
 
@@ -149,6 +157,7 @@ describe('InArticlePuff', () => {
       render(
         <TrackingContextProvider
           context={{
+            component: 'ArticleSkeleton',
             attrs: {
               articleHeadline: 'articleHeadline',
               section: 'section'
@@ -159,12 +168,18 @@ describe('InArticlePuff', () => {
           <InArticlePuff {...requiredProps} />
         </TrackingContextProvider>
       );
+
       FakeIntersectionObserver.intersect();
+
       expect(analyticsStream).toHaveBeenCalledWith({
+        action: 'Scrolled',
+        component: 'ArticleSkeleton',
+        object: 'InArticlePuff',
         attrs: {
           articleHeadline: 'articleHeadline',
           component_name: 'Where can I get a Covid vaccine in England?',
           component_type: 'in-article component : puff : interactive',
+          eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'scroll',
           event_navigation_name: 'in-article component displayed : puff',
@@ -180,6 +195,7 @@ describe('InArticlePuff', () => {
       const { getByText } = render(
         <TrackingContextProvider
           context={{
+            component: 'ArticleSkeleton',
             attrs: {
               articleHeadline: 'articleHeadline',
               section: 'section'
@@ -194,10 +210,15 @@ describe('InArticlePuff', () => {
       fireEvent.click(getByText('Read the full article'));
 
       expect(analyticsStream).toHaveBeenCalledWith({
+        action: 'Clicked',
+
+        component: 'ArticleSkeleton',
+        object: 'InArticlePuff',
         attrs: {
           articleHeadline: 'articleHeadline',
           component_name: 'Where can I get a Covid vaccine in England?',
           component_type: 'in-article component : puff : interactive',
+          eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : Read the full article',
@@ -213,6 +234,7 @@ describe('InArticlePuff', () => {
       const { getByText } = render(
         <TrackingContextProvider
           context={{
+            component: 'ArticleSkeleton',
             attrs: {
               articleHeadline: 'articleHeadline',
               section: 'section'
@@ -227,10 +249,15 @@ describe('InArticlePuff', () => {
       fireEvent.click(getByText('Where can I get a Covid vaccine in England?'));
 
       expect(analyticsStream).toHaveBeenCalledWith({
+        action: 'Clicked',
+
+        component: 'ArticleSkeleton',
+        object: 'InArticlePuff',
         attrs: {
           articleHeadline: 'articleHeadline',
           component_name: 'Where can I get a Covid vaccine in England?',
           component_type: 'in-article component : puff : interactive',
+          eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : headline',
@@ -246,6 +273,7 @@ describe('InArticlePuff', () => {
       const { getByRole } = render(
         <TrackingContextProvider
           context={{
+            component: 'ArticleSkeleton',
             attrs: {
               articleHeadline: 'articleHeadline',
               section: 'section'
@@ -260,10 +288,14 @@ describe('InArticlePuff', () => {
       fireEvent.click(getByRole('img'));
 
       expect(analyticsStream).toHaveBeenCalledWith({
+        action: 'Clicked',
+        component: 'ArticleSkeleton',
+        object: 'InArticlePuff',
         attrs: {
           articleHeadline: 'articleHeadline',
           component_name: 'Where can I get a Covid vaccine in England?',
           component_type: 'in-article component : puff : interactive',
+          eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : image',

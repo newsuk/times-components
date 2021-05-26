@@ -20,6 +20,8 @@ export const NewsletterPuffButton = ({
       onPress && onPress();
       fireAnalyticsEvent &&
         fireAnalyticsEvent({
+          action: 'Clicked',
+          object: 'NewsletterPuffButton',
           attrs: {
             event_navigation_name: 'widget : puff : sign up now',
             event_navigation_browsing_method: 'click',

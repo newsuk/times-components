@@ -66,18 +66,23 @@ const showcase = {
       component: ({ text }: any) => (
         <MockedProvider mocks={mocks}>
           Current Count = {window.sessionStorage.getItem('view-count')}
-          <AutoNewsletterPuff
-            code={text('code', 'TNL-101')}
-            headline={text('headline', 'Best of Times')}
-            copy={text(
-              'copy',
-              'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
-            )}
-            imageUri={text(
-              'imageUri',
-              'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800'
-            )}
-          />
+          <TrackingContextProvider
+            analyticsStream={analyticsStream}
+            context={{ component: 'ArticleSkeleton' }}
+          >
+            <AutoNewsletterPuff
+              code={text('code', 'TNL-101')}
+              headline={text('headline', 'Best of Times')}
+              copy={text(
+                'copy',
+                'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
+              )}
+              imageUri={text(
+                'imageUri',
+                'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800'
+              )}
+            />
+          </TrackingContextProvider>
         </MockedProvider>
       ),
 
@@ -89,7 +94,10 @@ const showcase = {
       // eslint-disable-next-line react/prop-types
       component: ({ text }: any) => (
         <MockedProvider mocks={mocks}>
-          <TrackingContextProvider analyticsStream={analyticsStream}>
+          <TrackingContextProvider
+            analyticsStream={analyticsStream}
+            context={{ component: 'ArticleSkeleton' }}
+          >
             <InlineNewsletterPuff
               code={text('code', 'TNL-101')}
               headline={text('headline', 'Best of Times')}

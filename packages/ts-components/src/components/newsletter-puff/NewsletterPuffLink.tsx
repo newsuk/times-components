@@ -15,6 +15,7 @@ export const NewsletterPuffLink = ({ onPress }: any) => {
   return (
     <TrackingContextProvider
       scrolledEvent={{
+        object: 'NewsletterPuffLink',
         attrs: {
           event_navigation_name:
             'widget : puff : manage preferences here : displayed',
@@ -27,6 +28,8 @@ export const NewsletterPuffLink = ({ onPress }: any) => {
           onPress && onPress();
           fireAnalyticsEvent &&
             fireAnalyticsEvent({
+              action: 'Clicked',
+              object: 'NewsletterPuffLink',
               attrs: {
                 event_navigation_name:
                   'widget : puff : manage preferences here',

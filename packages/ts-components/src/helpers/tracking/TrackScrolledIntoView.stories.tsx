@@ -35,11 +35,13 @@ const analyticsStream = (event: any) => {
 };
 
 const scrollEvent = ({ headline }: any) => ({
-  component_name: `${headline}`,
-  component_type: 'interactive',
-  event_navigation_action: 'navigation',
-  event_navigation_name: 'in article puff cta clicked',
-  event_navigation_browsing_method: 'click'
+  attrs: {
+    component_name: `${headline}`,
+    component_type: 'interactive',
+    event_navigation_action: 'navigation',
+    event_navigation_name: 'in article puff cta clicked',
+    event_navigation_browsing_method: 'click'
+  }
 });
 
 const showcase = {

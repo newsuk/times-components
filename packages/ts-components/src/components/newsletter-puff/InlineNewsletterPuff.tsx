@@ -73,12 +73,14 @@ export const InlineNewsletterPuff = ({
             ) => (
               <TrackingContextProvider
                 context={{
+                  object: 'InlineNewsletterPuff',
                   attrs: {
                     article_parent_name: newsletter.title,
                     event_navigation_action: 'navigation'
                   }
                 }}
                 scrolledEvent={{
+                  object: 'NewsletterPuffButton',
                   attrs: {
                     event_navigation_name:
                       'widget : puff : sign up now : displayed',

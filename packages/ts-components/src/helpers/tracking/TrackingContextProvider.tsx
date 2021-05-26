@@ -51,12 +51,14 @@ export const TrackingContextProvider = ({
       ? analyticsStream
       : parentTrackingContext.analyticsStream;
 
-  const fireAnalyticsEvent = (event: any) => {
-    const aggregatedEvent = merge(
-      parentTrackingContext.context,
-      context,
-      event
-    );
+  const aggregatedContext = merge({}, parentTrackingContext.context, context);
+
+  const fireAnalyticsEvent = (event: TrackingContext) => {
+    const aggregatedEvent = merge({}, aggregatedContext, event, {
+      attrs: {
+        eventTime: new Date().toISOString()
+      }
+    });
 
     stream
       ? stream(aggregatedEvent)
@@ -69,7 +71,9 @@ export const TrackingContextProvider = ({
   if (scrolledEvent) {
     useIntersectionObserver(
       ref,
-      () => fireAnalyticsEvent && fireAnalyticsEvent(scrolledEvent),
+      () =>
+        fireAnalyticsEvent &&
+        fireAnalyticsEvent({ action: 'Scrolled', ...scrolledEvent }),
       {
         threshold: 0.5
       }
@@ -78,7 +82,11 @@ export const TrackingContextProvider = ({
 
   return (
     <TrackingContext.Provider
-      value={{ fireAnalyticsEvent, context, analyticsStream: stream }}
+      value={{
+        fireAnalyticsEvent,
+        context: aggregatedContext,
+        analyticsStream: stream
+      }}
     >
       {typeof children === 'function'
         ? children({ fireAnalyticsEvent, intersectObserverRef: setRef })
