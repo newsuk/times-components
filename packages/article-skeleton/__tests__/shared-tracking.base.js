@@ -7,12 +7,6 @@ import articleSkeletonProps from "./shared-article-skeleton-props";
 
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
 
-const algoliaSearchKeys = {
-  applicationId: "",
-  apiKey: "",
-  indexName: ""
-};
-
 export default () => {
   describe("[Article page analytics]", () => {
     let stream = null;
@@ -31,7 +25,6 @@ export default () => {
         <ArticleSkeleton
           {...articleSkeletonProps}
           analyticsStream={stream}
-          algoliaSearchKeys={algoliaSearchKeys}
           data={articleFixture()}
           Header={() => null}
           onAuthorPress={() => {}}
@@ -51,7 +44,6 @@ export default () => {
         <ArticleSkeleton
           {...articleSkeletonProps}
           analyticsStream={stream}
-          algoliaSearchKeys={algoliaSearchKeys}
           data={articleFixture()}
           referralUrl="from-props.com"
           Header={() => null}
@@ -71,7 +63,6 @@ export default () => {
       renderer.create(
         <ArticleSkeleton
           {...articleSkeletonProps}
-          algoliaSearchKeys={algoliaSearchKeys}
           analyticsStream={stream}
           data={articleFixture({ withAds: true, referralUrl: "from-data.com" })}
           Header={() => null}

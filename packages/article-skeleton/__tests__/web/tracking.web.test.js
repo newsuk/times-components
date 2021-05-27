@@ -29,12 +29,6 @@ afterEach(() => {
   global.nuk = {};
 });
 
-const algoliaSearchKeys = {
-  applicationId: "",
-  apiKey: "",
-  indexName: ""
-};
-
 it("analytics when rendering a shared Article page with metered access", () => {
   const userStateMock = {
     isLoggedIn: true,
@@ -51,7 +45,6 @@ it("analytics when rendering a shared Article page with metered access", () => {
     <ArticleSkeleton
       {...articleSkeletonProps}
       analyticsStream={stream}
-      algoliaSearchKeys={algoliaSearchKeys}
       data={articleFixture()}
       Header={() => null}
       onAuthorPress={() => {}}

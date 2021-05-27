@@ -77,12 +77,6 @@ const mocks = [
   }
 ];
 
-const algoliaSearchKeys = {
-  applicationId: "",
-  apiKey: "",
-  indexName: ""
-};
-
 const renderArticle = (data, isPreview = false) => (
   <MockedProvider mocks={mocks}>
     <Context.Provider
@@ -102,7 +96,6 @@ const renderArticle = (data, isPreview = false) => (
         onVideoPress={() => {}}
         spotAccountId=""
         isPreview={isPreview}
-        algoliaSearchKeys={algoliaSearchKeys}
       />
     </Context.Provider>
   </MockedProvider>

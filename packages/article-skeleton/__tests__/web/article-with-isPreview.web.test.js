@@ -293,12 +293,6 @@ const article = articleFixture({
 
 let isPreview = true;
 
-const algoliaSearchKeys = {
-  applicationId: "",
-  apiKey: "",
-  indexName: ""
-};
-
 const renderArticle = () => (
   <Context.Provider
     value={{
@@ -309,7 +303,6 @@ const renderArticle = () => (
       {...articleSkeletonProps}
       adConfig={adConfig}
       analyticsStream={() => {}}
-      algoliaSearchKeys={algoliaSearchKeys}
       data={article}
       onAuthorPress={() => {}}
       onLinkPress={() => {}}

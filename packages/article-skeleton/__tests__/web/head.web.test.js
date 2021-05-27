@@ -83,7 +83,6 @@ describe("Head", () => {
           headline: null,
           shortHeadline: "short headline"
         }}
-        paidContentClassName={paidContentClassName}
       />
     );
 
@@ -100,7 +99,6 @@ describe("Head", () => {
           headline: null,
           shortHeadline: null
         }}
-        paidContentClassName={paidContentClassName}
       />
     );
 
@@ -150,7 +148,6 @@ describe("Head", () => {
             }
           ]
         }}
-        paidContentClassName={paidContentClassName}
       />
     );
 
@@ -178,7 +175,6 @@ describe("Head", () => {
             }
           ]
         }}
-        paidContentClassName={paidContentClassName}
       />
     );
 
@@ -206,7 +202,6 @@ describe("Head", () => {
             }
           ]
         }}
-        paidContentClassName={paidContentClassName}
       />
     );
 
@@ -222,7 +217,6 @@ describe("Head", () => {
           ...article,
           tiles: null
         }}
-        paidContentClassName={paidContentClassName}
       />
     );
 
@@ -253,7 +247,6 @@ describe("Head", () => {
             }
           ]
         }}
-        paidContentClassName={paidContentClassName}
       />
     );
 
@@ -269,7 +262,6 @@ describe("Head", () => {
           ...article,
           publicationName: "SUNDAYTIMES"
         }}
-        paidContentClassName={paidContentClassName}
       />
     );
 
@@ -285,7 +277,6 @@ describe("Head", () => {
           ...article,
           publicationName: "TIMES"
         }}
-        paidContentClassName={paidContentClassName}
       />
     );
 
@@ -301,7 +292,6 @@ describe("Head", () => {
           ...article,
           bylines: null
         }}
-        paidContentClassName={paidContentClassName}
       />
     );
 
@@ -325,7 +315,6 @@ describe("Head", () => {
           ...article,
           descriptionMarkup: null
         }}
-        paidContentClassName={paidContentClassName}
       />
     );
 
@@ -347,7 +336,6 @@ describe("Head", () => {
           ...article,
           descriptionMarkup: []
         }}
-        paidContentClassName={paidContentClassName}
       />
     );
 
@@ -383,7 +371,6 @@ describe("Head", () => {
           ...article,
           leadAsset: null
         }}
-        paidContentClassName={paidContentClassName}
       />
     );
 
@@ -408,10 +395,7 @@ describe("Head", () => {
 
   it("shows image tags if leadAsset is an image, but there is a video elsewhere in the article", () => {
     const testRenderer = TestRenderer.create(
-      <Head
-        article={standardArticleWithInlineVideo}
-        paidContentClassName={paidContentClassName}
-      />
+      <Head article={standardArticleWithInlineVideo} />
     );
 
     expect(
