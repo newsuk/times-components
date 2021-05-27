@@ -98,28 +98,6 @@ describe('InArticlePuff', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('mouse over', () => {
-    (useFetch as jest.Mock).mockReturnValue(
-      deckApiPayloadWrapper(requiredFields)
-    );
-
-    const { baseElement } = render(<InArticlePuff {...requiredProps} />);
-    const icon = baseElement.querySelector('.iconForwardChevron');
-    fireEvent.mouseOver(icon!);
-    expect(icon!.getAttribute('fillColour')).toEqual('#696969');
-  });
-
-  it('mouse leave', () => {
-    (useFetch as jest.Mock).mockReturnValue(
-      deckApiPayloadWrapper(requiredFields)
-    );
-
-    const { baseElement } = render(<InArticlePuff {...requiredProps} />);
-    const icon = baseElement.querySelector('.iconForwardChevron');
-    fireEvent.mouseLeave(icon!);
-    expect(icon!.getAttribute('fillColour')).toEqual('#BF0000');
-  });
-
   it('should render the error state correctly', () => {
     (useFetch as jest.Mock).mockReturnValue({ error: 'Some error occurred' });
 
@@ -128,8 +106,38 @@ describe('InArticlePuff', () => {
     expect(asFragment().firstChild).toBeNull();
   });
 
+  it('should update the icon fillColour when mouse over', () => {
+    (useFetch as jest.Mock).mockReturnValue(
+      deckApiPayloadWrapper(requiredFields)
+    );
+
+    const { baseElement } = render(<InArticlePuff {...requiredProps} />);
+
+    const icon = baseElement.querySelector('.iconForwardChevron');
+
+    fireEvent.mouseOver(icon!);
+
+    expect(icon!.getAttribute('fillColour')).toEqual('#696969');
+  });
+
+  it('should update the icon fillColour when mouse leave', () => {
+    (useFetch as jest.Mock).mockReturnValue(
+      deckApiPayloadWrapper(requiredFields)
+    );
+
+    const { baseElement } = render(<InArticlePuff {...requiredProps} />);
+
+    const icon = baseElement.querySelector('.iconForwardChevron');
+
+    fireEvent.mouseLeave(icon!);
+
+    expect(icon!.getAttribute('fillColour')).toEqual('#BF0000');
+  });
+
   describe('tracking', () => {
     let oldIntersectionObserver: typeof IntersectionObserver;
+    const analyticsStream = jest.fn();
+
     beforeEach(() => {
       oldIntersectionObserver = window.IntersectionObserver;
 
@@ -139,25 +147,27 @@ describe('InArticlePuff', () => {
 
     afterEach(() => {
       window.IntersectionObserver = oldIntersectionObserver;
+
+      jest.resetAllMocks();
     });
 
     it('fires scroll event when viewed', () => {
       (useFetch as jest.Mock).mockReturnValue(
         deckApiPayloadWrapper(optionalFields)
       );
-      const analyticsStream = jest.fn();
+
       render(
         <TrackingContextProvider
-          context={{
-            articleHeadline: 'articleHeadline',
-            section: 'section'
-          }}
+          context={{ articleHeadline: 'articleHeadline', section: 'section' }}
           analyticsStream={analyticsStream}
         >
           <InArticlePuff {...requiredProps} />
         </TrackingContextProvider>
       );
+
       FakeIntersectionObserver.intersect();
+
+      expect(analyticsStream).toHaveBeenCalledTimes(1);
       expect(analyticsStream).toHaveBeenCalledWith({
         articleHeadline: 'articleHeadline',
         component_name: 'Where can I get a Covid vaccine in England?',
@@ -168,17 +178,15 @@ describe('InArticlePuff', () => {
         section: 'section'
       });
     });
+
     it('fires click event when Read more clicked', () => {
       (useFetch as jest.Mock).mockReturnValue(
         deckApiPayloadWrapper(optionalFields)
       );
-      const analyticsStream = jest.fn();
+
       const { getByText } = render(
         <TrackingContextProvider
-          context={{
-            articleHeadline: 'articleHeadline',
-            section: 'section'
-          }}
+          context={{ articleHeadline: 'articleHeadline', section: 'section' }}
           analyticsStream={analyticsStream}
         >
           <InArticlePuff {...requiredProps} />
@@ -187,6 +195,7 @@ describe('InArticlePuff', () => {
 
       fireEvent.click(getByText('Read the full article'));
 
+      expect(analyticsStream).toHaveBeenCalledTimes(1);
       expect(analyticsStream).toHaveBeenCalledWith({
         articleHeadline: 'articleHeadline',
         component_name: 'Where can I get a Covid vaccine in England?',
@@ -197,17 +206,15 @@ describe('InArticlePuff', () => {
         section: 'section'
       });
     });
+
     it('fires click event when headline clicked', () => {
       (useFetch as jest.Mock).mockReturnValue(
         deckApiPayloadWrapper(optionalFields)
       );
-      const analyticsStream = jest.fn();
+
       const { getByText } = render(
         <TrackingContextProvider
-          context={{
-            articleHeadline: 'articleHeadline',
-            section: 'section'
-          }}
+          context={{ articleHeadline: 'articleHeadline', section: 'section' }}
           analyticsStream={analyticsStream}
         >
           <InArticlePuff {...requiredProps} />
@@ -216,6 +223,7 @@ describe('InArticlePuff', () => {
 
       fireEvent.click(getByText('Where can I get a Covid vaccine in England?'));
 
+      expect(analyticsStream).toHaveBeenCalledTimes(1);
       expect(analyticsStream).toHaveBeenCalledWith({
         articleHeadline: 'articleHeadline',
         component_name: 'Where can I get a Covid vaccine in England?',
@@ -226,17 +234,15 @@ describe('InArticlePuff', () => {
         section: 'section'
       });
     });
+
     it('fires click event when image clicked', () => {
       (useFetch as jest.Mock).mockReturnValue(
         deckApiPayloadWrapper(optionalFields)
       );
-      const analyticsStream = jest.fn();
+
       const { getByRole } = render(
         <TrackingContextProvider
-          context={{
-            articleHeadline: 'articleHeadline',
-            section: 'section'
-          }}
+          context={{ articleHeadline: 'articleHeadline', section: 'section' }}
           analyticsStream={analyticsStream}
         >
           <InArticlePuff {...requiredProps} />
@@ -245,6 +251,7 @@ describe('InArticlePuff', () => {
 
       fireEvent.click(getByRole('img'));
 
+      expect(analyticsStream).toHaveBeenCalledTimes(1);
       expect(analyticsStream).toHaveBeenCalledWith({
         articleHeadline: 'articleHeadline',
         component_name: 'Where can I get a Covid vaccine in England?',

@@ -171,7 +171,10 @@ const renderers = ({
             <Context.Consumer key={key}>
               {({ theme }) => (
                 <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                  <InArticlePuff sectionColour={theme.sectionColour} />
+                  <InArticlePuff
+                    sectionColour={theme.sectionColour}
+                    forceImageAspectRatio="3:2"
+                  />
                 </FetchProvider>
               )}
             </Context.Consumer>

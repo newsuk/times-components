@@ -36,7 +36,16 @@ const showcase = {
           <InArticlePuff sectionColour="#13354e" />
         </FetchProvider>
       ),
-      name: 'In Article Puff',
+      name: 'In Article Puff - Image',
+      type: 'story'
+    },
+    {
+      component: () => (
+        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/41548">
+          <InArticlePuff sectionColour="#13354e" forceImageAspectRatio="3:2" />
+        </FetchProvider>
+      ),
+      name: 'In Article Puff - Image 3:2',
       type: 'story'
     },
     {
