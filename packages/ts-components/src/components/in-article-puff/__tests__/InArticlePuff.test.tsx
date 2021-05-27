@@ -147,7 +147,7 @@ describe('InArticlePuff', () => {
 
     afterEach(() => {
       window.IntersectionObserver = oldIntersectionObserver;
-      
+
       jest.resetAllMocks();
     });
 
