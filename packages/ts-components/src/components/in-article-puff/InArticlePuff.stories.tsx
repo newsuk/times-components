@@ -36,7 +36,7 @@ const showcase = {
     {
       component: () => (
         <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/41548">
-          <InArticlePuff sectionColour="#13354e" sanitiseHtml={true} />
+          <InArticlePuff sectionColour="#13354e" sanitiseHtml />
         </FetchProvider>
       ),
       name: 'In Article Puff - Image',
@@ -48,7 +48,7 @@ const showcase = {
           <InArticlePuff
             sectionColour="#13354e"
             forceImageAspectRatio="3:2"
-            sanitiseHtml={true}
+            sanitiseHtml
           />
         </FetchProvider>
       ),
@@ -58,7 +58,7 @@ const showcase = {
     {
       component: () => (
         <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/41547">
-          <InArticlePuff sectionColour="#184e13" sanitiseHtml={true} />
+          <InArticlePuff sectionColour="#184e13" sanitiseHtml />
         </FetchProvider>
       ),
       name: 'In Article Puff - No Image',
