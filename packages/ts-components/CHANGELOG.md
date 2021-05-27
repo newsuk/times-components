@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.3.0...@times-components/ts-components@1.4.0) (2021-05-27)
+
+
+### Features
+
+* POC force aspect ratio ([#2708](https://github.com/newsuk/times-components/issues/2708)) ([0e66244](https://github.com/newsuk/times-components/commit/0e66244e9cdaac4430afdb970081b7ec09d092a9))
+
+
+
+
+
 # [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.2.0...@times-components/ts-components@1.3.0) (2021-05-21)
 
 
