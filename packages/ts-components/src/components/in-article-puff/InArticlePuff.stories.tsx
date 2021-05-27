@@ -20,8 +20,11 @@ const showcase = {
       decorator: (storyFn: () => React.ReactNode) => (
         <TrackingContextProvider
           context={{
-            articleHeadline: 'articleHeadline',
-            section: 'section'
+            component: 'ArticleSkeleton',
+            attrs: {
+              article_name: 'articleHeadline',
+              section_details: 'section'
+            }
           }}
           analyticsStream={analyticsStream}
         >
@@ -33,7 +36,7 @@ const showcase = {
     {
       component: () => (
         <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/41548">
-          <InArticlePuff sectionColour="#13354e" />
+          <InArticlePuff sectionColour="#13354e" sanitiseHtml={true} />
         </FetchProvider>
       ),
       name: 'In Article Puff - Image',
@@ -42,7 +45,7 @@ const showcase = {
     {
       component: () => (
         <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/41548">
-          <InArticlePuff sectionColour="#13354e" forceImageAspectRatio="3:2" />
+          <InArticlePuff sectionColour="#13354e" forceImageAspectRatio="3:2" sanitiseHtml={true} />
         </FetchProvider>
       ),
       name: 'In Article Puff - Image 3:2',
@@ -51,7 +54,7 @@ const showcase = {
     {
       component: () => (
         <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/41547">
-          <InArticlePuff sectionColour="#184e13" />
+          <InArticlePuff sectionColour="#184e13" sanitiseHtml={true} />
         </FetchProvider>
       ),
       name: 'In Article Puff - No Image',
