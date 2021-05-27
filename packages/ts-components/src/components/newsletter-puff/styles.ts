@@ -1,12 +1,41 @@
-import styled from "styled-components";
-import { View, Text } from "react-native";
+import styled from 'styled-components';
+
 import {
   breakpoints,
   colours,
   fonts,
   fontSizes,
   spacing
-} from "@times-components/styleguide";
+} from '@times-components/styleguide';
+
+const View = styled.div`
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-basis: auto;
+  flex-direction: column;
+  flex-shrink: 0;
+  margin: 0;
+  min-height: 0;
+  min-width: 0;
+  padding: 0;
+  position: relative;
+  z-index: 0;
+`;
+
+const Text = styled.div`
+  border: 0 solid black;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 1);
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Ubuntu, 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+`;
 
 export const InpContainer = styled(View)`
   background-color: ${colours.functional.newsletterPuffBackground};
@@ -113,18 +142,18 @@ export const InpPreferencesView = styled(View)`
 `;
 
 export const buttonStyles = {
-  alignItems: "center",
-  backgroundColor: "transparent",
+  alignItems: 'center',
+  backgroundColor: 'transparent',
   borderColor: colours.functional.brandColour,
-  borderStyle: "solid",
+  borderStyle: 'solid',
   borderWidth: 2,
   color: colours.functional.brandColour,
   elevation: 0,
   fontFamily: fonts.supporting,
   height: 45,
-  justifyContent: "center",
+  justifyContent: 'center',
   letterSpacing: 0.2,
-  width: "100%"
+  width: '100%'
 };
 
 export const textStyle = {

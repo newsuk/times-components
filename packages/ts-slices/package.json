@@ -71,7 +71,7 @@
     "@types/styled-components": "5.1.9",
     "jest": "24.8.0",
     "lodash.shuffle": "4.2.0",
-    "mockdate": "2.0.2",
+    "mockdate": "3.0.5",
     "prettier": "1.14.3",
     "react": "16.9.0",
     "tslint": "5.18.0",

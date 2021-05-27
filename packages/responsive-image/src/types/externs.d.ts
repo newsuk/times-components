@@ -8,9 +8,15 @@ declare module '@times-components/styleguide' {
 }
 
 declare module '@times-components/utils' {
-  type appendToImageURL = (url: string, key: string, value: string | number) => string;
+  type appendToImageURL = (
+    url: string,
+    key: string,
+    value: string | number
+  ) => string;
 
   export const appendToImageURL: appendToImageURL;
+
+  export const capitalise: (s: string) => string;
 }
 
 declare module 'react-native-hooks' {

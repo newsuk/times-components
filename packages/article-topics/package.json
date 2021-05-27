@@ -52,7 +52,7 @@
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "jest": "24.8.0",
-    "mockdate": "2.0.2",
+    "mockdate": "3.0.5",
     "prettier": "1.14.3",
     "react": "16.9.0",
     "react-dom": "16.9.0",

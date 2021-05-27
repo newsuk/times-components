@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import TestRenderer from "react-test-renderer";
 import mockDate from "mockdate";
 import Link from "@times-components/link";
+
 import ArticleSkeleton from "../../src/article-skeleton";
 import articleFixture from "../../fixtures/full-article";
 import ArticleLink from "../../src/article-body/article-link";
@@ -11,9 +12,11 @@ import articleSkeletonProps from "../shared-article-skeleton-props";
 import { getRegistrationType, getSharedStatus } from "../../src/data-helper";
 import shared from "../shared-tracking";
 
-jest.mock("../../src/article-body/inline-newsletter-puff", () => ({
+jest.mock("@times-components/ts-components", () => ({
   __esModule: true,
-  default: () => "InlineNewsletterPuff"
+  ...jest.requireActual("@times-components/ts-components"),
+  InlineNewsletterPuff: "InlineNewsletterPuff",
+  AutoNewsletterPuff: "AutoNewsletterPuff"
 }));
 
 beforeEach(() => {

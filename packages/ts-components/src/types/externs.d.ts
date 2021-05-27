@@ -21,22 +21,38 @@ declare module '@times-components/tracking' {
 
 declare module '@times-components/icons' {
   import { FC } from 'react';
-
-  export const IconForwardChevron: FC<{
+  type IconProps = {
     fillColour: string;
-    height: number;
-    width: number;
-  }>;
+    height?: number;
+    width?: number;
+  };
+  export const IconForwardChevron: FC<IconProps>;
+  export const IconForwardArrow: FC<IconProps>;
 }
 
 declare module '@times-components/image' {
   import { FC } from 'react';
 
   export const Placeholder: FC;
+  const Image: FC<{
+    aspectRatio: number;
+    uri: string;
+  }>;
+  export default Image;
 }
 
 declare module '@times-components/test-utils' {
   export const delay: (ms: number) => Promise<never>;
+}
+
+declare module '@times-components/utils' {
+  type appendToImageURL = (
+    url: string,
+    key: string,
+    value: string | number
+  ) => string;
+
+  export const capitalise: (s: string) => string;
 }
 
 declare module '@times-components/styleguide' {
@@ -44,6 +60,7 @@ declare module '@times-components/styleguide' {
   type Colours = Record<string, ColourMap>;
 
   type Breakpoints = {
+    small: string;
     medium: string;
     wide: string;
     huge: string;
@@ -56,7 +73,69 @@ declare module '@times-components/styleguide' {
   };
 
   export const fonts: Fonts;
+  export const fontSizes: {
+    newsletterPuffCopy: number;
+    newsletterPuffHeadline: number;
+    newsletterPuffLabel: number;
+  };
   export const spacing: (multiple: number) => number;
   export const breakpoints: Breakpoints;
   export const colours: Colours;
+
+  const styleguide: () => {
+    colours: any;
+    fontFactory: (v: any) => any;
+  };
+
+  export default styleguide;
+}
+
+declare module '@times-components/button' {
+  import { FC } from 'react';
+
+  type ButtonProps = {
+    fontSize?: number;
+    lineHeight?: number;
+    onPress?: () => void;
+    style?: {};
+    title?: string;
+    textStyle?: {};
+    underlayColor?: string;
+  };
+  const Button: FC<ButtonProps>;
+  export default Button;
+}
+
+type ResponsiveLinkStyles = { [selector: string]: string };
+
+declare module '@times-components/link' {
+  import { FC } from 'react';
+
+  type LinkProps = {
+    url: string;
+    onPress: () => void;
+    target?: string;
+    underlined?: boolean;
+    responsiveLinkStyles?: ResponsiveLinkStyles;
+  };
+  const Link: FC<LinkProps>;
+  export default Link;
+}
+
+declare module '@times-components/provider' {
+  export const GetNewsletter: React.FC<{
+    code: string;
+    ssr: boolean;
+    debounceTimeMs: number;
+  }>;
+}
+
+declare module '@times-components/provider-queries' {
+  import { DocumentNode } from 'graphql';
+  export const getNewsletter: DocumentNode;
+  export const subscribeNewsletter: DocumentNode;
+}
+
+declare module '@times-components/provider-test-tools' {
+  export const MockedProvider: React.FC<{ mocks: any }>;
 }

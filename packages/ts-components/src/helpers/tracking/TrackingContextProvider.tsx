@@ -1,11 +1,19 @@
 import React, { useContext, useState } from 'react';
+import merge from 'lodash.merge';
+
 import { useIntersectionObserver } from '../../utils/intersectObserverHook';
 
-export type TrackingContext = { [key: string]: string };
+export type TrackingAttributes = { [key: string]: string };
+export type TrackingContext = {
+  object?: string;
+  component?: string;
+  action?: string;
+  attrs?: TrackingAttributes;
+};
 
 export type TrackingContextProps = {
   analyticsStream?: (analyticsEvent: any) => void;
-  context: TrackingContext;
+  context?: TrackingContext;
   scrolledEvent?: TrackingContext;
 };
 
@@ -21,8 +29,8 @@ type TrackingContextChildren = {
   children:
     | ((
         props: {
-          fireAnalyticsEvent: (evt: any) => void;
-          intersectObserverRef: (ref: HTMLDivElement | null) => void;
+          fireAnalyticsEvent: (evt: TrackingContext) => void;
+          intersectObserverRef: (ref: HTMLElement | null) => void;
         }
       ) => JSX.Element | JSX.Element[])
     | JSX.Element
@@ -43,12 +51,14 @@ export const TrackingContextProvider = ({
       ? analyticsStream
       : parentTrackingContext.analyticsStream;
 
-  const fireAnalyticsEvent = (event: any) => {
-    const aggregatedEvent = {
-      ...parentTrackingContext.context,
-      ...context,
-      ...event
-    };
+  const aggregatedContext = merge({}, parentTrackingContext.context, context);
+
+  const fireAnalyticsEvent = (event: TrackingContext) => {
+    const aggregatedEvent = merge({}, aggregatedContext, event, {
+      attrs: {
+        eventTime: new Date().toISOString()
+      }
+    });
 
     stream
       ? stream(aggregatedEvent)
@@ -56,12 +66,14 @@ export const TrackingContextProvider = ({
         console.error('no analytics stream to send to', aggregatedEvent);
   };
 
-  const [ref, setRef] = useState<HTMLDivElement | null>(null);
+  const [ref, setRef] = useState<HTMLElement | null>(null);
 
   if (scrolledEvent) {
     useIntersectionObserver(
       ref,
-      () => fireAnalyticsEvent && fireAnalyticsEvent(scrolledEvent),
+      () =>
+        fireAnalyticsEvent &&
+        fireAnalyticsEvent({ action: 'Scrolled', ...scrolledEvent }),
       {
         threshold: 0.5
       }
@@ -70,7 +82,11 @@ export const TrackingContextProvider = ({
 
   return (
     <TrackingContext.Provider
-      value={{ fireAnalyticsEvent, context, analyticsStream: stream }}
+      value={{
+        fireAnalyticsEvent,
+        context: aggregatedContext,
+        analyticsStream: stream
+      }}
     >
       {typeof children === 'function'
         ? children({ fireAnalyticsEvent, intersectObserverRef: setRef })

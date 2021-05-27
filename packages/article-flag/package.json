@@ -64,7 +64,7 @@
   "dependencies": {
     "@times-components/styleguide": "3.38.18",
     "@times-components/utils": "6.5.2",
-    "mockdate": "2.0.2",
+    "mockdate": "3.0.5",
     "prop-types": "15.7.2"
   },
   "resolutions": {

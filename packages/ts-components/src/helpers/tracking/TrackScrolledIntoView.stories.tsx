@@ -35,11 +35,13 @@ const analyticsStream = (event: any) => {
 };
 
 const scrollEvent = ({ headline }: any) => ({
-  component_name: `${headline}`,
-  component_type: 'interactive',
-  event_navigation_action: 'navigation',
-  event_navigation_name: 'in article puff cta clicked',
-  event_navigation_browsing_method: 'click'
+  attrs: {
+    component_name: `${headline}`,
+    component_type: 'interactive',
+    event_navigation_action: 'navigation',
+    event_navigation_name: 'in article puff cta clicked',
+    event_navigation_browsing_method: 'click'
+  }
 });
 
 const showcase = {
@@ -60,8 +62,10 @@ const showcase = {
             <>
               <TrackingContextProvider
                 context={{
-                  articleHeadline: 'articleHeadline',
-                  section: 'section'
+                  attrs: {
+                    articleHeadline: 'articleHeadline',
+                    section: 'section'
+                  }
                 }}
                 analyticsStream={analyticsStream}
               >
@@ -78,7 +82,7 @@ const showcase = {
                 <StripedContainer className={height} />
                 <TrackingContextProvider
                   context={{
-                    section: 'a different section'
+                    attrs: { section: 'a different section' }
                   }}
                 >
                   <TrackScrolledIntoView

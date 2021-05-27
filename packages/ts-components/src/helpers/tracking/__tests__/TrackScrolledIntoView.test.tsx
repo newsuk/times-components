@@ -4,25 +4,22 @@ import { cleanup, render } from '@testing-library/react';
 import { TrackScrolledIntoView } from '../TrackScrolledIntoView';
 import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 import { TrackingContextProvider } from '../TrackingContextProvider';
+import mockDate from 'mockdate';
 
 describe('trackScrolledIntoView', () => {
-  let oldIntersectionObserver: typeof IntersectionObserver;
   beforeEach(() => {
-    oldIntersectionObserver = window.IntersectionObserver;
-
-    // @ts-ignore
-    window.IntersectionObserver = FakeIntersectionObserver;
+    mockDate.set(1620000000000);
   });
 
   afterEach(() => {
-    window.IntersectionObserver = oldIntersectionObserver;
+    mockDate.reset();
+    jest.clearAllMocks();
     cleanup();
   });
 
   it('renders the component', () => {
-    const analyticsStream = jest.fn() as any;
     const { baseElement } = render(
-      <TrackingContextProvider context={{ analyticsStream }}>
+      <TrackingContextProvider context={{ object: 'abc' }}>
         <TrackScrolledIntoView analyticsEvent={{ action: 'viewed' }}>
           {({ intersectObserverRef }) => (
             <div ref={intersectObserverRef}>content </div>
@@ -33,81 +30,102 @@ describe('trackScrolledIntoView', () => {
 
     expect(baseElement).toMatchSnapshot();
   });
-  it('analytics called when viewed', () => {
-    const analyticsStream = jest.fn();
-    render(
-      <TrackingContextProvider
-        analyticsStream={analyticsStream}
-        context={{ component: 'my comp' }}
-      >
-        <TrackScrolledIntoView analyticsEvent={{ action: 'viewed' }}>
-          {({ intersectObserverRef }) => (
-            <div ref={intersectObserverRef}>content</div>
-          )}
-        </TrackScrolledIntoView>
-      </TrackingContextProvider>
-    );
 
-    FakeIntersectionObserver.intersect();
+  describe('intersection observer tests', () => {
+    let oldIntersectionObserver: typeof IntersectionObserver;
+    beforeEach(() => {
+      mockDate.set(1620000000000);
+      oldIntersectionObserver = window.IntersectionObserver;
 
-    expect(FakeIntersectionObserver.disconnect).toHaveBeenCalled();
-    expect(analyticsStream).toHaveBeenCalledWith({
-      action: 'viewed',
-      component: 'my comp'
+      // @ts-ignore
+      window.IntersectionObserver = FakeIntersectionObserver;
     });
-  });
 
-  it('analytics not called if not viewed', () => {
-    const analyticsStream = jest.fn();
-    render(
-      <TrackingContextProvider
-        analyticsStream={analyticsStream}
-        context={{ component: 'my comp' }}
-      >
-        <TrackScrolledIntoView analyticsEvent={{ action: 'viewed' }}>
-          {({ intersectObserverRef }) => (
-            <div ref={intersectObserverRef}>content </div>
-          )}
-        </TrackScrolledIntoView>
-      </TrackingContextProvider>
-    );
-    expect(analyticsStream).not.toHaveBeenCalled();
-  });
+    afterEach(() => {
+      mockDate.reset();
+      window.IntersectionObserver = oldIntersectionObserver;
+      jest.clearAllMocks();
+      cleanup();
+    });
+    it('analytics called when viewed', () => {
+      const analyticsStream = jest.fn();
+      render(
+        <TrackingContextProvider
+          analyticsStream={analyticsStream}
+          context={{ component: 'my comp' }}
+        >
+          <TrackScrolledIntoView analyticsEvent={{ action: 'viewed' }}>
+            {({ intersectObserverRef }) => (
+              <div ref={intersectObserverRef}>content</div>
+            )}
+          </TrackScrolledIntoView>
+        </TrackingContextProvider>
+      );
 
-  it('No window', () => {
-    const analyticsStream = jest.fn();
-    // @ts-ignore
-    window.IntersectionObserver = undefined;
-    render(
-      <TrackingContextProvider
-        analyticsStream={analyticsStream}
-        context={{ component: 'my comp' }}
-      >
-        <TrackScrolledIntoView analyticsEvent={{ action: 'viewed' }}>
-          {({ intersectObserverRef }) => (
-            <div ref={intersectObserverRef}>content </div>
-          )}
-        </TrackScrolledIntoView>
-      </TrackingContextProvider>
-    );
-    expect(analyticsStream).not.toHaveBeenCalled();
-  });
-  it('not intersecting', () => {
-    const analyticsStream = jest.fn();
-    render(
-      <TrackingContextProvider
-        analyticsStream={analyticsStream}
-        context={{ component: 'my comp' }}
-      >
-        <TrackScrolledIntoView analyticsEvent={{ action: 'viewed' }}>
-          {({ intersectObserverRef }) => (
-            <div ref={intersectObserverRef}>content </div>
-          )}
-        </TrackScrolledIntoView>
-      </TrackingContextProvider>
-    );
+      FakeIntersectionObserver.intersect();
 
-    FakeIntersectionObserver.intersect(false);
-    expect(analyticsStream).not.toHaveBeenCalled();
+      expect(FakeIntersectionObserver.disconnect).toHaveBeenCalled();
+      expect(analyticsStream).toHaveBeenCalledWith({
+        action: 'viewed',
+        component: 'my comp',
+        attrs: {
+          eventTime: '2021-05-03T00:00:00.000Z'
+        }
+      });
+    });
+
+    it('analytics not called if not viewed', () => {
+      const analyticsStream = jest.fn();
+      render(
+        <TrackingContextProvider
+          analyticsStream={analyticsStream}
+          context={{ component: 'my comp' }}
+        >
+          <TrackScrolledIntoView analyticsEvent={{ action: 'viewed' }}>
+            {({ intersectObserverRef }) => (
+              <div ref={intersectObserverRef}>content </div>
+            )}
+          </TrackScrolledIntoView>
+        </TrackingContextProvider>
+      );
+      expect(analyticsStream).not.toHaveBeenCalled();
+    });
+
+    it('No window', () => {
+      const analyticsStream = jest.fn();
+      // @ts-ignore
+      window.IntersectionObserver = undefined;
+      render(
+        <TrackingContextProvider
+          analyticsStream={analyticsStream}
+          context={{ component: 'my comp' }}
+        >
+          <TrackScrolledIntoView analyticsEvent={{ action: 'viewed' }}>
+            {({ intersectObserverRef }) => (
+              <div ref={intersectObserverRef}>content </div>
+            )}
+          </TrackScrolledIntoView>
+        </TrackingContextProvider>
+      );
+      expect(analyticsStream).not.toHaveBeenCalled();
+    });
+    it('not intersecting', () => {
+      const analyticsStream = jest.fn();
+      render(
+        <TrackingContextProvider
+          analyticsStream={analyticsStream}
+          context={{ component: 'my comp' }}
+        >
+          <TrackScrolledIntoView analyticsEvent={{ action: 'viewed' }}>
+            {({ intersectObserverRef }) => (
+              <div ref={intersectObserverRef}>content </div>
+            )}
+          </TrackScrolledIntoView>
+        </TrackingContextProvider>
+      );
+
+      FakeIntersectionObserver.intersect(false);
+      expect(analyticsStream).not.toHaveBeenCalled();
+    });
   });
 });

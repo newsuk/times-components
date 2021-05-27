@@ -11,7 +11,7 @@ const buildConfig = dir => {
     preset: 'react-native-web',
     moduleFileExtensions: ['web.js', 'js', 'ts', 'tsx', 'node', 'json'],
     transformIgnorePatterns: [],
-    testEnvironment: 'jsdom',
+    testEnvironment: 'jest-environment-jsdom-sixteen',
     setupFiles: [],
     testMatch: [
       `**/packages/${name}/**/__tests__/*.test.tsx`,

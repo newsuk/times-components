@@ -100,8 +100,11 @@ const ArticleSkeleton = ({
     <StickyProvider>
       <TrackingContextProvider
         context={{
-          article_name: headline || shortHeadline || "",
-          section_details: section
+          component: "ArticleSkeleton",
+          attrs: {
+            article_name: headline || shortHeadline || "",
+            section_details: section
+          }
         }}
         analyticsStream={analyticsStream}
       >

@@ -19,8 +19,10 @@ const showcase = {
         return (
           <TrackingContextProvider
             context={{
-              articleHeadline: 'articleHeadline',
-              section: 'section'
+              attrs: {
+                articleHeadline: 'articleHeadline',
+                section: 'section'
+              }
             }}
             analyticsStream={analyticsStream}
           >
@@ -40,7 +42,7 @@ const showcase = {
                 </div>
                 <TrackingContextProvider
                   context={{
-                    subsection: 'nested'
+                    attrs: { subsection: 'nested' }
                   }}
                   analyticsStream={analyticsStream}
                 >

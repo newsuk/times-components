@@ -27,6 +27,12 @@ jest.mock("@times-components/utils", () => {
   };
 });
 
+const algoliaSearchKeys = {
+  applicationId: "",
+  apiKey: "",
+  indexName: ""
+};
+
 export default () => {
   addSerializers(
     expect,
@@ -50,7 +56,10 @@ export default () => {
       test: () => {
         UserState.mockStates = [UserState.fullArticle, UserState.loggedIn];
         const testInstance = TestRenderer.create(
-          <AlgoliaSearchProvider article={{ id: "dummy-article-id" }}>
+          <AlgoliaSearchProvider
+            article={{ id: "dummy-article-id" }}
+            algoliaSearchKeys={algoliaSearchKeys}
+          >
             <ArticleExtras
               analyticsStream={() => {}}
               articleId="dummy-article-id"
@@ -73,7 +82,10 @@ export default () => {
       test: () => {
         UserState.mockStates = [];
         const testInstance = TestRenderer.create(
-          <AlgoliaSearchProvider article={{ id: "dummy-article-id" }}>
+          <AlgoliaSearchProvider
+            article={{ id: "dummy-article-id" }}
+            algoliaSearchKeys={algoliaSearchKeys}
+          >
             <ArticleExtras
               analyticsStream={() => {}}
               articleId="dummy-article-id"
@@ -95,7 +107,10 @@ export default () => {
       test: () => {
         UserState.mockStates = [UserState.fullArticle, UserState.shared];
         const testInstance = TestRenderer.create(
-          <AlgoliaSearchProvider article={{ id: "dummy-article-id" }}>
+          <AlgoliaSearchProvider
+            article={{ id: "dummy-article-id" }}
+            algoliaSearchKeys={algoliaSearchKeys}
+          >
             <ArticleExtras
               analyticsStream={() => {}}
               articleId="dummy-article-id"
@@ -117,7 +132,10 @@ export default () => {
       test: () => {
         UserState.mockStates = [UserState.fullArticle, UserState.loggedIn];
         const testInstance = TestRenderer.create(
-          <AlgoliaSearchProvider article={{ id: "dummy-article-id" }}>
+          <AlgoliaSearchProvider
+            article={{ id: "dummy-article-id" }}
+            algoliaSearchKeys={algoliaSearchKeys}
+          >
             <ArticleExtras
               analyticsStream={() => {}}
               articleId="dummy-article-id"

@@ -61,6 +61,8 @@ describe("Jest Configurator Tests", () => {
     it("should have the correct module name extensions", () => {
       const config = jestConfigurator("web", dir);
       expect(config.moduleFileExtensions).toEqual([
+        "ts",
+        "tsx",
         "graphql",
         "web.js",
         "js",
@@ -84,12 +86,12 @@ describe("Jest Configurator Tests", () => {
   describe("No platform specific config", () => {
     it("should allow a null platform value", () => {
       const config = jestConfigurator(null, dir);
-      expect(config.moduleFileExtensions).toEqual(["js", "ts", "json"]);
+      expect(config.moduleFileExtensions).toEqual(["ts", "js", "json"]);
     });
 
     it("should allow any other value to be platformless config", () => {
       const config = jestConfigurator(12345, dir);
-      expect(config.moduleFileExtensions).toEqual(["js", "ts", "json"]);
+      expect(config.moduleFileExtensions).toEqual(["ts", "js", "json"]);
     });
   });
 });

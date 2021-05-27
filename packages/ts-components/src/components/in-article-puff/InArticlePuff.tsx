@@ -6,7 +6,10 @@ import { IconForwardChevron } from '@times-components/icons';
 import { AspectRatios } from '../../types/aspectRatio';
 
 import { useFetch } from '../../helpers/fetch/FetchProvider';
-import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
+import {
+  TrackingContext,
+  TrackingContextProvider
+} from '../../helpers/tracking/TrackingContextProvider';
 
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 
@@ -23,13 +26,18 @@ import {
 } from './styles';
 
 const scrollEvent = {
-  event_navigation_name: 'in-article component displayed : puff',
-  event_navigation_browsing_method: 'scroll'
+  attrs: {
+    event_navigation_name: 'in-article component displayed : puff',
+    event_navigation_browsing_method: 'scroll'
+  }
 };
 
 const clickEvent = (buttonLabel: string) => ({
-  event_navigation_name: `button : ${buttonLabel}`,
-  event_navigation_browsing_method: 'click'
+  action: 'Clicked',
+  attrs: {
+    event_navigation_name: `button : ${buttonLabel}`,
+    event_navigation_browsing_method: 'click'
+  }
 });
 
 export const InArticlePuff: React.FC<{
@@ -39,7 +47,7 @@ export const InArticlePuff: React.FC<{
   const [colour, setColour] = useState('#bf0000');
 
   const handleClick = (
-    fireAnalyticsEvent: (evt: any) => void,
+    fireAnalyticsEvent: (evt: TrackingContext) => void,
     buttonLabel: string
   ) => {
     fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(buttonLabel));
@@ -73,9 +81,12 @@ export const InArticlePuff: React.FC<{
   return (
     <TrackingContextProvider
       context={{
-        component_type: 'in-article component : puff : interactive',
-        event_navigation_action: 'navigation',
-        component_name: `${headline}`
+        object: 'InArticlePuff',
+        attrs: {
+          component_type: 'in-article component : puff : interactive',
+          event_navigation_action: 'navigation',
+          component_name: `${headline}`
+        }
       }}
       scrolledEvent={scrollEvent}
     >
