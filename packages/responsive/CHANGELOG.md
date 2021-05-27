@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.24](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.6.23...@times-components/responsive@0.6.24) (2021-05-27)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
 ## [0.6.23](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.6.22...@times-components/responsive@0.6.23) (2021-05-21)
 
 **Note:** Version bump only for package @times-components/responsive
