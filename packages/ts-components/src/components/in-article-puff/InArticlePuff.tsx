@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { Placeholder } from '@times-components/image';
 import { IconForwardChevron } from '@times-components/icons';
 
+import { AspectRatios } from '../../types/aspectRatio';
+
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
@@ -32,7 +34,7 @@ const clickEvent = (buttonLabel: string) => ({
 
 export const InArticlePuff: React.FC<{
   sectionColour: string;
-  forceImageAspectRatio?: string;
+  forceImageAspectRatio?: AspectRatios;
 }> = ({ sectionColour, forceImageAspectRatio }) => {
   const [colour, setColour] = useState('#bf0000');
 

@@ -1,18 +1,12 @@
 import styled, { css } from 'styled-components';
 
-const ratioToPadding = new Map<string, string>([
-  ['2:3', '150%'],
-  ['4:5', '125%'],
-  ['1:1', '100%'],
-  ['4:3', '75%'],
-  ['3:2', '66.66%'],
-  ['16:9', '56.25%']
-]);
+import { AspectRatios } from '../../types/aspectRatio';
+import { ratioToPadding } from '../../utils/aspectRatio';
 
-export const AspectRatioContainer = styled.div<{ ratio?: string }>`
+export const AspectRatioContainer = styled.div<{ ratio?: AspectRatios }>`
   ${({ ratio }) =>
     ratio &&
-    ratioToPadding.has(ratio) &&
+    ratioToPadding[ratio] &&
     css`
       position: relative;
       overflow: hidden;
@@ -20,7 +14,7 @@ export const AspectRatioContainer = styled.div<{ ratio?: string }>`
       &:after {
         content: '';
         display: block;
-        padding-bottom: ${ratioToPadding.get(ratio)};
+        padding-bottom: ${ratioToPadding[ratio]};
       }
 
       > img {
