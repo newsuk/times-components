@@ -63,6 +63,7 @@
     "lodash.merge": "4.6.2",
     "react": "16.9.0",
     "react-apollo": "2.5.5",
+    "sanitize-html": "^2.4.0",
     "styled-components": "4.3.2"
   },
   "devDependencies": {
@@ -77,6 +78,8 @@
     "@types/lodash.merge": "4.6.2",
     "@types/node-fetch": "2.5.10",
     "@types/react-dom": "17.0.3",
+    "@types/react-test-renderer": "16.9.0",
+    "@types/sanitize-html": "^2.3.1",
     "@types/styled-components": "5.1.9",
     "jest": "24.8.0",
     "jest-environment-jsdom-sixteen": "2.0.0",

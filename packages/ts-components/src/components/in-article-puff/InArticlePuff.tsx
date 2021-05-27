@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import sanitizeHtml from 'sanitize-html';
 
 import { Placeholder } from '@times-components/image';
 import { IconForwardChevron } from '@times-components/icons';
@@ -40,10 +41,17 @@ const clickEvent = (buttonLabel: string) => ({
   }
 });
 
+const sanitiseCopy = (copy: string) =>
+  sanitizeHtml(copy, {
+    allowedTags: [],
+    allowedAttributes: {}
+  });
+
 export const InArticlePuff: React.FC<{
   sectionColour: string;
   forceImageAspectRatio?: AspectRatios;
-}> = ({ sectionColour, forceImageAspectRatio }) => {
+  sanitiseHtml?: boolean;
+}> = ({ sectionColour, forceImageAspectRatio, sanitiseHtml }) => {
   const [colour, setColour] = useState('#bf0000');
 
   const handleClick = (
@@ -116,7 +124,7 @@ export const InArticlePuff: React.FC<{
               >
                 <Headline hasImage={hasImage}>{headline}</Headline>
               </a>
-              {copy && <Copy>{copy}</Copy>}
+              {copy && <Copy>{sanitiseHtml ? sanitiseCopy(copy) : copy}</Copy>}
             </div>
 
             <Link
