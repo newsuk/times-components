@@ -44,7 +44,7 @@ const clickEvent = (buttonLabel: string) => ({
 export const InArticlePuff: React.FC<{
   sectionColour: string;
   forceImageAspectRatio?: AspectRatios;
-  sanitiseHtml: boolean;
+  sanitiseHtml?: boolean;
 }> = ({ sectionColour, forceImageAspectRatio, sanitiseHtml }) => {
   const [colour, setColour] = useState('#bf0000');
 
