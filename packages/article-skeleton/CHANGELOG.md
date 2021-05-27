@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.49.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.48.0...@times-components/article-skeleton@1.49.0) (2021-05-27)
+
+
+### Features
+
+* POC force aspect ratio ([#2708](https://github.com/newsuk/times-components/issues/2708)) ([0e66244](https://github.com/newsuk/times-components/commit/0e66244e9cdaac4430afdb970081b7ec09d092a9))
+
+
+
+
+
 # [1.48.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.47.1...@times-components/article-skeleton@1.48.0) (2021-05-21)
 
 
