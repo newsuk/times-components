@@ -41,6 +41,12 @@ const clickEvent = (buttonLabel: string) => ({
   }
 });
 
+const sanitiseCopy = (copy: string) =>
+  sanitizeHtml(copy, {
+    allowedTags: [],
+    allowedAttributes: {}
+  });
+
 export const InArticlePuff: React.FC<{
   sectionColour: string;
   forceImageAspectRatio?: AspectRatios;
@@ -77,11 +83,6 @@ export const InArticlePuff: React.FC<{
     link,
     linkText
   } = data.body.data[0].data;
-
-  const sanitisedCopy = sanitizeHtml(copy, {
-    allowedTags: [],
-    allowedAttributes: {},
-  });
 
   const hasImage = Boolean(image);
 
@@ -123,7 +124,7 @@ export const InArticlePuff: React.FC<{
               >
                 <Headline hasImage={hasImage}>{headline}</Headline>
               </a>
-              {copy && <Copy>{sanitiseHtml ? sanitisedCopy : copy}</Copy>}
+              {copy && <Copy>{sanitiseHtml ? sanitiseCopy(copy) : copy}</Copy>}
             </div>
 
             <Link
