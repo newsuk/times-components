@@ -46,33 +46,73 @@ const formatArticle = article => ({
   }
 });
 
-const formatQuery = article => {
-  let query = "";
-  if (article.label) query = query.concat(" ", article.label);
-  if (article.section) query = query.concat(" ", article.section);
-  if (article.topics)
-    query = article.topics.reduce((acc, t) => acc.concat(" ", t.name), query);
+const formatByLines = bylines =>
+  bylines &&
+  bylines.length === 1 &&
+  bylines[0].byline
+    .map(({ children }) =>
+      children.map(({ attributes }) => attributes.value).join(" ")
+    )
+    .join(" ");
 
-  return query.trim();
+const search = async (
+  index,
+  { id: articleId, bylines, topics, headline, section, label }
+) => {
+  const byline = formatByLines(bylines);
+
+  const bylineSearch = byline ? `"${byline}"` : "";
+
+  const topicSearch = topics
+    ? topics
+        .map(
+          topic =>
+            topic.name.indexOf(" ") >= 0 ? `"${topic.name}"` : topic.name
+        )
+        .join(" ")
+    : "";
+
+  const headlineSearch = `${headline}`
+    .replace(/[.,()"':;{}[]/g, "")
+    .replace(/\s{2,}/g, " ");
+
+  const query = `${headlineSearch} ${topicSearch} ${bylineSearch}`;
+  const optionalWords = query
+    .split(" ")
+    .filter(word => !word.match(/^[A-Z].*/))
+    .filter(Boolean);
+
+  const filterSection = section && section !== "" ? [`section:${section}`] : [];
+  const filterId = articleId ? [`NOT objectID:${articleId}`] : [];
+  const filters = [...filterSection, ...filterId].join(" AND ");
+
+  const searchOptions = {
+    hitsPerPage: 3,
+    ignorePlurals: true,
+    removeStopWords: true,
+    optionalWords: [...optionalWords, bylineSearch, topicSearch],
+    filters,
+    optionalFilters: [`label:${label}`],
+    typoTolerance: false
+  };
+
+  return index.search(query, searchOptions);
 };
-
 const searchRelatedArticles = async (index, article) => {
-  if (index) {
-    const query = formatQuery(article);
-    console.log("AlgoliaSearch query", query); // eslint-disable-line no-console
-    const search = await index.search(query, { hitsPerPage: 5 });
+  try {
+    const searchResults = await search(index, article);
 
-    if (search.hits.length > 0)
+    if (searchResults.hits.length > 0)
       return {
-        query,
+        query: searchResults.query,
         sliceName: "StandardSlice",
-        items: search.hits
-          .filter(({ id }) => id !== article.id)
-          .filter((a, i) => i < 3)
-          .map(formatArticle)
+        items: searchResults.hits.map(formatArticle),
+        count: searchResults.nbHits
       };
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.error(e);
   }
-
   return null;
 };
 

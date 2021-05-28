@@ -3,13 +3,23 @@
 import React from "react";
 import { AlgoliaSearchProvider } from "@times-components/utils";
 
+import { action } from "@storybook/addon-actions";
+import { OptimizelyWeb } from "@times-components/ts-components";
+
 import ArticleExtras from "./src/article-extras";
+
 import { relatedArticleSlice, topics } from "./fixtures/article-extras";
 
 const algoliaSearchKeys = {
   applicationId: "",
   apiKey: "",
   indexName: ""
+};
+
+const analyticsStream = event => {
+  // eslint-disable-next-line no-console
+  console.log("analytics-action", event);
+  action("analytics-action")(event);
 };
 
 export default {
@@ -38,6 +48,65 @@ export default {
         </AlgoliaSearchProvider>
       ),
       name: "Article Extras",
+      type: "story"
+    },
+    {
+      component: ({ text }) => {
+        const article = {
+          bylines: [
+            {
+              byline: [
+                {
+                  attributes: {},
+                  children: [
+                    {
+                      attributes: {
+                        value: text("ByLline", "Alyson Rudd", "User State")
+                      },
+                      children: [],
+                      name: "text"
+                    }
+                  ],
+                  name: "inline"
+                }
+              ]
+            }
+          ],
+          headline: text(
+            "Headline",
+            "If this was goodbye, Harry Kane went with a whimper",
+            "User State"
+          ),
+          label: text("Label", "Premier League", "User State"),
+          section: text("Section", "sport", "User State"),
+          topics: text("Topics (csv)", "Premier League,Football", "User State")
+            .split(",")
+            .map(topic => ({ name: topic.trim() }))
+        };
+
+        return (
+          <>
+            <OptimizelyWeb />
+            <AlgoliaSearchProvider
+              algoliaSearchKeys={algoliaSearchKeys}
+              article={article}
+            >
+              <ArticleExtras
+                analyticsStream={analyticsStream}
+                articleId={article.id}
+                commentsEnabled
+                registerNode={() => {}}
+                relatedArticleSlice={relatedArticleSlice}
+                relatedArticlesVisible={false}
+                spotAccountId="dummy-spot-id"
+                topics={topics}
+                additionalRelatedArticlesFlag
+              />
+            </AlgoliaSearchProvider>
+          </>
+        );
+      },
+      name: "Algolia Rail",
       type: "story"
     }
   ],

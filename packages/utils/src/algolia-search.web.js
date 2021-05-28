@@ -13,6 +13,22 @@ const createAlgoliaIndex = algoliaSearchKeys => {
   return null;
 };
 
+const OPTIMIZELY_TOTAL_SEARCHES = "related-articles_algolia-results-count";
+const OPTIMIZELY_NO_RESULT = "related-articles_algolia-no-result";
+
+const fireOpitmizelyEvent = (eventName, value = 1) => {
+  if (typeof window !== "undefined") {
+    window.optimizely = window.optimizely || [];
+    window.optimizely.push({
+      type: "event",
+      eventName,
+      tags: {
+        value
+      }
+    });
+  }
+};
+
 const AlgoliaSearchContext = createContext();
 
 const AlgoliaSearchProvider = ({ algoliaSearchKeys, article, children }) => {
@@ -21,7 +37,14 @@ const AlgoliaSearchProvider = ({ algoliaSearchKeys, article, children }) => {
   ]);
 
   const getRelatedArticles = useCallback(
-    () => searchRelatedArticles(algoliaIndex, article),
+    async () => {
+      const results = await searchRelatedArticles(algoliaIndex, article);
+      fireOpitmizelyEvent(OPTIMIZELY_TOTAL_SEARCHES);
+      if (results === null) {
+        fireOpitmizelyEvent(OPTIMIZELY_NO_RESULT);
+      }
+      return results;
+    },
     [algoliaIndex, article]
   );
 
@@ -36,7 +59,7 @@ export const useAlgoliaSearch = () => {
   const context = useContext(AlgoliaSearchContext);
 
   if (context === undefined)
-    throw new Error("must be used within a AlgoliaSearchProvider");
+    throw new Error("must be used within an AlgoliaSearchProvider");
 
   return context;
 };

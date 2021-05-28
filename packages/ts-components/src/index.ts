@@ -22,10 +22,4 @@ export {
   PreviewNewsletterPuff
 } from './components/newsletter-puff/PreviewNewsletterPuff';
 
-export {
-  NewsletterPuffButton
-} from './components/newsletter-puff/NewsletterPuffButton';
-
-export {
-  NewsletterPuffLink
-} from './components/newsletter-puff/NewsletterPuffLink';
+export { OptimizelyWeb } from './helpers/optimizely/';
