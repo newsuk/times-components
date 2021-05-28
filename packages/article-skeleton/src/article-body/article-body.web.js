@@ -178,7 +178,6 @@ const renderers = ({
                   <InArticlePuff
                     sectionColour={theme.sectionColour}
                     forceImageAspectRatio="3:2"
-                    sanitiseHtml
                   />
                 </FetchProvider>
               )}
