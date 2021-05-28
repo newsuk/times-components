@@ -8,8 +8,8 @@ import withTrackingContext from "./related-articles-tracking-context";
 
 class RelatedArticles extends Component {
   shouldComponentUpdate(nextProps) {
-    const { isVisible } = this.props;
-    return nextProps.isVisible !== isVisible;
+    const { isVisible, slice } = this.props;
+    return nextProps.isVisible !== isVisible || nextProps.slice !== slice;
   }
 
   render() {
