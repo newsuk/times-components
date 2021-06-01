@@ -2,6 +2,8 @@ import get from "lodash.get";
 
 import { stripTags } from "./strings";
 
+const getDateDaysAgo = days => Date.now() - days * 1000 * 60 * 60 * 24;
+
 const formatSummaryContent = (article, length) => {
   const summary = stripTags(article.content, " ").trim();
   return summary.substring(0, summary.lastIndexOf(" ", length));
@@ -57,7 +59,8 @@ const formatByLines = bylines =>
 
 const search = async (
   index,
-  { id: articleId, bylines, topics, headline, section, label }
+  { id: articleId, bylines, topics, headline, section, label },
+  limitDays
 ) => {
   const byline = formatByLines(bylines);
 
@@ -86,7 +89,13 @@ const search = async (
 
   const filterSection = section && section !== "" ? [`section:${section}`] : [];
   const filterId = articleId ? [`NOT objectID:${articleId}`] : [];
-  const filters = [...filterSection, ...filterId].join(" AND ");
+  const publishedDateFilter = limitDays
+    ? [`algoliaData.publishedTimestamp >= ${getDateDaysAgo(3)}`]
+    : [];
+
+  const filters = [...filterSection, ...filterId, ...publishedDateFilter].join(
+    " AND "
+  );
 
   const searchOptions = {
     hitsPerPage: 3,
@@ -103,7 +112,7 @@ const search = async (
 
 const searchRelatedArticles = async (index, article) => {
   try {
-    let searchResults = await search(index, article);
+    let searchResults = await search(index, article, 7);
 
     // pass 2 - any section
     if (searchResults.hits.length === 0) {
