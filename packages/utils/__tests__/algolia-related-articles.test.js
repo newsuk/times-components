@@ -1,3 +1,4 @@
+import mockDate from "mockdate";
 import searchRelatedArticles from "../src/algolia-related-articles.web";
 
 const article = {
@@ -35,6 +36,15 @@ const resultArticle = {
 };
 
 describe("searchRelatedArticles", () => {
+  //  GMT: Thursday, 14 March 2019 16:22:54
+  beforeEach(() => {
+    mockDate.set(1620000000000, 0);
+  });
+
+  afterEach(() => {
+    mockDate.reset();
+  });
+
   describe("fallbacks", () => {
     it("1 pass", async () => {
       const index = {
@@ -48,7 +58,8 @@ describe("searchRelatedArticles", () => {
       expect(index.search).toBeCalledWith(
         'Headline with some upper case football "premier league" "by lines here"',
         {
-          filters: "section:sports",
+          filters:
+            "section:sports AND algoliaData.publishedTimestamp >= 1619740800000",
           hitsPerPage: 3,
           ignorePlurals: true,
           optionalFilters: undefined,
@@ -91,7 +102,8 @@ describe("searchRelatedArticles", () => {
         [
           'Headline with some upper case football "premier league" "by lines here"',
           {
-            filters: "section:sports",
+            filters:
+              "section:sports AND algoliaData.publishedTimestamp >= 1619740800000",
             hitsPerPage: 3,
             ignorePlurals: true,
             optionalFilters: undefined,
@@ -160,7 +172,8 @@ describe("searchRelatedArticles", () => {
         [
           'Headline with some upper case football "premier league" "by lines here"',
           {
-            filters: "section:sports",
+            filters:
+              "section:sports AND algoliaData.publishedTimestamp >= 1619740800000",
             hitsPerPage: 3,
             ignorePlurals: true,
             optionalFilters: undefined,
