@@ -20,3 +20,5 @@ export {
   default as AlgoliaSearchProvider,
   useAlgoliaSearch
 } from "./algolia-search";
+
+export { default as OptimizelyWeb } from "./optimizely-web";
