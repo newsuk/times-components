@@ -1,10 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import React from "react";
-import { AlgoliaSearchProvider } from "@times-components/utils";
-
-import { action } from "@storybook/addon-actions";
-import { OptimizelyWeb } from "@times-components/ts-components";
+import { AlgoliaSearchProvider, OptimizelyWeb } from "@times-components/utils";
 
 import ArticleExtras from "./src/article-extras";
 
@@ -16,7 +13,7 @@ const algoliaSearchKeys = {
   indexName: ""
 };
 
-const analyticsStream = event => {
+const getAnalyticsStream = action => event => {
   // eslint-disable-next-line no-console
   console.log("analytics-action", event);
   action("analytics-action")(event);
@@ -51,7 +48,7 @@ export default {
       type: "story"
     },
     {
-      component: ({ text }) => {
+      component: ({ text }, { action }) => {
         const article = {
           bylines: [
             {
@@ -83,7 +80,6 @@ export default {
             .split(",")
             .map(topic => ({ name: topic.trim() }))
         };
-
         return (
           <>
             <OptimizelyWeb />
@@ -92,7 +88,7 @@ export default {
               article={article}
             >
               <ArticleExtras
-                analyticsStream={analyticsStream}
+                analyticsStream={getAnalyticsStream(action)}
                 articleId={article.id}
                 commentsEnabled
                 registerNode={() => {}}

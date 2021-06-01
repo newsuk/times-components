@@ -21,5 +21,3 @@ export {
 export {
   PreviewNewsletterPuff
 } from './components/newsletter-puff/PreviewNewsletterPuff';
-
-export { OptimizelyWeb } from './helpers/optimizely/';
