@@ -1,11 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-export const OptimizelyWeb = () => {
-  return (
-    <Helmet>
-      <script data-testid="custom-script">
-        {`
+export const OptimizelyWeb = () => (
+  <Helmet>
+    <script data-testid="custom-script">
+      {`
         (function() {
           function onPageDeactivated(event) {
             if (window && window.utag_data && window.utag_data.experiment_data && window.utag_data.experiment_data.length > 0) {
@@ -32,11 +31,10 @@ export const OptimizelyWeb = () => {
             }
         })();
       `}
-      </script>
-      <script
-        data-testid="optimizely-script"
-        src="https://cdn.optimizely.com/public/15853140465/s/tnl_custom_snippet.js"
-      />
-    </Helmet>
-  );
-};
+    </script>
+    <script
+      data-testid="optimizely-script"
+      src="https://cdn.optimizely.com/public/15853140465/s/tnl_custom_snippet.js"
+    />
+  </Helmet>
+);

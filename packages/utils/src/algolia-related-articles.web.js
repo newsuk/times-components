@@ -61,26 +61,28 @@ const search = async (
 ) => {
   const byline = formatByLines(bylines);
 
-  const bylineSearch = byline ? `"${byline}"` : "";
-
   const topicSearch = topics
     ? topics
         .map(
           topic =>
-            topic.name.indexOf(" ") >= 0 ? `"${topic.name}"` : topic.name
+            topic.name.indexOf(" ") >= 0
+              ? `"${topic.name.toLowerCase()}"`
+              : topic.name.toLowerCase()
         )
         .join(" ")
     : "";
 
-  const headlineSearch = `${headline}`
-    .replace(/[.,()"':;{}[]/g, "")
-    .replace(/\s{2,}/g, " ");
+  const headlineSearch = `${headline}`.replace(/[.,()"':;{}[]/g, "");
 
-  const query = `${headlineSearch} ${topicSearch} ${bylineSearch}`;
+  const query = `${headlineSearch} ${topicSearch} ${
+    byline ? `"${byline.toLowerCase()}"` : ""
+  }`.replace(/\s{2,}/g, " ");
+
   const optionalWords = query
-    .split(" ")
+    .match(/\w+|"[^"]+"/g) // match by single or quoted words
+    .map(word => word.replace(/"/g, "")) // then remove the quotes
     .filter(word => !word.match(/^[A-Z].*/))
-    .filter(Boolean);
+    .filter(word => word && word.length > 0);
 
   const filterSection = section && section !== "" ? [`section:${section}`] : [];
   const filterId = articleId ? [`NOT objectID:${articleId}`] : [];
@@ -90,17 +92,31 @@ const search = async (
     hitsPerPage: 3,
     ignorePlurals: true,
     removeStopWords: true,
-    optionalWords: [...optionalWords, bylineSearch, topicSearch],
+    optionalWords,
     filters,
-    optionalFilters: [`label:${label}`],
+    optionalFilters: label && [`label:${label}`],
     typoTolerance: false
   };
 
   return index.search(query, searchOptions);
 };
+
 const searchRelatedArticles = async (index, article) => {
   try {
-    const searchResults = await search(index, article);
+    let searchResults = await search(index, article);
+
+    // pass 2 - any section
+    if (searchResults.hits.length === 0) {
+      searchResults = await search(index, { ...article, section: undefined });
+    }
+
+    // pass 3 - lowercase headline to make all words optional
+    if (searchResults.hits.length === 0) {
+      searchResults = await search(index, {
+        ...article,
+        headline: article.headline.toLowerCase()
+      });
+    }
 
     if (searchResults.hits.length > 0)
       return {
