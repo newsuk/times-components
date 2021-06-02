@@ -2,11 +2,10 @@ import React from 'react';
 
 import { showcaseConverter } from '@times-components/storybook';
 
-import { action } from '@storybook/addon-actions';
-
 import styled from 'styled-components';
 import { TrackScrolledIntoView } from './TrackScrolledIntoView';
 import { TrackingContextProvider } from './TrackingContextProvider';
+import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
 const Component = styled.div`
   align-items: center;
@@ -27,12 +26,6 @@ const StripedContainer = styled.div`
     height: 100vh;
   }
 `;
-
-const analyticsStream = (event: any) => {
-  // tslint:disable-next-line:no-console
-  console.log('analytics-action', event);
-  action('analytics-action')(event);
-};
 
 const scrollEvent = ({ headline }: any) => ({
   attrs: {
@@ -103,12 +96,12 @@ const showcase = {
           )
         );
       },
-      name: 'Basic',
+      name: 'Track Scrolled into View',
       platform: 'web',
       type: 'story'
     }
   ],
-  name: 'Typescript Component/Track Scrolled into View'
+  name: 'Typescript Component/Helpers'
 };
 
 // @ts-ignore

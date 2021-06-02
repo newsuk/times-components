@@ -347,23 +347,17 @@ exports[`12. closeicon sets a width when height is set 1`] = `
 `;
 
 exports[`13. iconforwardchevron sets a width when height is set 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
+<svg
   aria-label="icon-forward-chevron"
-  bbHeight={50}
-  focusable={false}
   height={50}
-  meetOrSlice={0}
-  minX={42}
-  minY={12}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "opacity": 1,
-    }
-  }
-  vbHeight={120}
-  vbWidth={60}
-/>
+  viewBox="42 12 60 120"
+>
+  <g
+    fill="#006699"
+  >
+    <path
+      d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+    />
+  </g>
+</svg>
 `;

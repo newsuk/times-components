@@ -95,7 +95,6 @@
     "@storybook/addon-options": "5.3.18",
     "@storybook/addons": "5.3.18",
     "@storybook/react": "5.3.18",
-    "@storybook/react-native": "5.3.18",
     "@times-components/depend": "*",
     "babel-eslint": "10.0.2",
     "babel-jest": "24.8.0",

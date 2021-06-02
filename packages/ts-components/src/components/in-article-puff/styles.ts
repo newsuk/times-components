@@ -95,21 +95,3 @@ export const Copy = styled.div`
   font-size: 16px;
   line-height: 24px;
 `;
-
-export const Link = styled.a`
-  display: flex;
-  flex-direction: row;
-  margin-top: 16px;
-  color: #bf0000;
-
-  :hover {
-    color: ${colours.functional.secondary};
-  }
-`;
-
-export const LinkText = styled.div`
-  margin-top: 1px;
-  margin-right: 12px;
-  font-family: ${fonts.supporting};
-  font-size: 16px;
-`;
