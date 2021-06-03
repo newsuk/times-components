@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { boolean, select } from '@storybook/addon-knobs';
 import { colours } from '@times-components/styleguide';
 
-import InArticleRelatedArticles from './InArticleRelatedArticles';
+import { InArticleRelatedArticles } from './InArticleRelatedArticles';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import { ArticleHarness } from '../../fixtures/article-harness/ArticleHarness';

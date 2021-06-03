@@ -4,11 +4,11 @@ import { RelatedArticle, RelatedArticleType } from './RelatedArticle';
 
 type RelatedArticlesProps = {
   sectionColour: string;
-  heading?: string;
+  heading: string;
   relatedArticles: RelatedArticleType[];
   showImages?: boolean;
 };
-export default ({
+export const InArticleRelatedArticles = ({
   heading,
   relatedArticles,
   sectionColour,
@@ -20,6 +20,7 @@ export default ({
       {relatedArticles &&
         relatedArticles.map(({ label, headline, link, image }) => (
           <RelatedArticle
+            key={headline + ' ' + link}
             sectionColour={sectionColour}
             label={label}
             headline={headline}
