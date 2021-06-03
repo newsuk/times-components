@@ -5,7 +5,7 @@ export const Container = styled.div<{ sectionColour: string }>`
   display: flex;
   flex-direction: column;
   margin: 0 auto 20px auto;
-  padding: 0;
+  padding: 16px 0;
   color: ${colours.functional.brandColour};
   background-color: ${colours.functional.backgroundPrimary};
   border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
@@ -16,8 +16,7 @@ export const Container = styled.div<{ sectionColour: string }>`
   .heading {
     font-family: ${fonts.headline};
     font-size: 28px;
-    margin-top: 20px;
-    padding: 16px;
+    padding: 0 16px 20px 16px;
     display: none;
   }
   nav {
@@ -26,6 +25,8 @@ export const Container = styled.div<{ sectionColour: string }>`
   }
 
   @media (min-width: ${breakpoints.medium}px) {
+    padding: 20px 0;
+
     .heading {
       display: block;
     }
@@ -41,44 +42,52 @@ export const Container = styled.div<{ sectionColour: string }>`
 `;
 
 export const RelatedArticleContainer = styled.div`
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
 
-  padding: 0 16px;
-  margin: 16px 0;
+  padding: 0 16px 16px 16px;
+  margin-bottom: 16px;
 
   border-bottom: 1px solid ${colours.functional.keyline};
 
   @media (min-width: ${breakpoints.medium}px) {
     border-right: 1px solid ${colours.functional.keyline};
     border-bottom: none;
+    padding: 0 16px;
+    margin-bottom: 0;
   }
 
   &:last-child {
     border-right: none;
     border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   .headline {
     font-family: ${fonts.headline};
     font-size: 20px;
     line-height: 20px;
-    margin-top: 4px;
   }
-  .label {
-    font-family: ${fonts.supporting};
-    font-size: 12px;
-    line-height: 18px;
-    color: ${colours.functional.action};
 `;
 
 export const RelatedArticlesImageContainer = styled.div`
-  padding-bottom: 12px;
   width: 180px;
+  margin-bottom: 8px;
 
   @media (min-width: ${breakpoints.medium}px) {
     width: 100%;
   }
+`;
+export const SectionLabel = styled.div<{ sectionColour: string }>`
+  color: ${({ sectionColour }) => sectionColour};
+  font-family: ${fonts.supporting};
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 4px;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 `;

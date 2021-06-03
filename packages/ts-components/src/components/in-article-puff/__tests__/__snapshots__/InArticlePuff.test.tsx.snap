@@ -25,7 +25,7 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
     >
       <div>
         <div
-          class="sc-gzVnrw iBFLHO"
+          class="sc-gzVnrw ecbdWW"
         >
           interactive
         </div>
@@ -76,7 +76,7 @@ exports[`InArticlePuff should render required fields correctly 1`] = `
     >
       <div>
         <div
-          class="sc-gzVnrw cJXbTZ"
+          class="sc-gzVnrw jvRfq"
         >
           interactive
         </div>

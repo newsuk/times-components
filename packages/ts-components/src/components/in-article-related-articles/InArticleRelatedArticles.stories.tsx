@@ -1,5 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { boolean, select } from '@storybook/addon-knobs';
+import { colours } from '@times-components/styleguide';
 
 import InArticleRelatedArticles from './InArticleRelatedArticles';
 
@@ -13,7 +15,7 @@ const article1 = {
   link:
     'https://www.thetimes.co.uk/article/china-yunnan-mobilises-as-herd-of-15-marauding-elephants-approaches-capital-qvgttzz2w',
   image:
-    'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/c1b6ab118e9422965b7faa628e26e05b.jpeg'
+    'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe7a2f8f2-c3ec-11eb-8601-6a2ece3e4634.jpg?crop=3888%2C2187%2C0%2C202&resize=480'
 };
 const article2 = {
   label: 'COVID 19',
@@ -30,7 +32,7 @@ const article3 = {
   link:
     'https://www.thetimes.co.uk/article/the-times-view-on-elephants-suction-technique-talented-trunks-h3ck3zx6g',
   image:
-    'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/c1b6ab118e9422965b7faa628e26e05b.jpeg'
+    'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff1a0847a-c3ea-11eb-a26e-4c086490cfe1.jpg?crop=4418%2C2945%2C0%2C0&resize=685'
 };
 storiesOf('Typescript Component/In Article/Related Articles', module)
   .addDecorator((storyFn: () => React.ReactNode) => (
@@ -48,16 +50,21 @@ storiesOf('Typescript Component/In Article/Related Articles', module)
     </TrackingContextProvider>
   ))
 
-  .add('3 Articles', () => (
-    <InArticleRelatedArticles
-      sectionColour="#13354e"
-      heading="Related Articles"
-      relatedArticles={[article1, article2, article3]}
-    />
-  ))
-  .add('2 Articles - no heading', () => (
-    <InArticleRelatedArticles
-      sectionColour="#13354e"
-      relatedArticles={[article1, article2]}
-    />
-  ));
+  .add('Related Articles', () => {
+    const numberOfArticles = select(
+      'Number of Articles',
+      { Three: 3, Two: 2, One: 1 },
+      3
+    );
+    const sectionColor = select('Section', colours.section, '#636C17');
+    return (
+      <InArticleRelatedArticles
+        sectionColour={sectionColor}
+        heading="Related Articles"
+        relatedArticles={[article1, article2, article3].filter(
+          ({}, index) => index < numberOfArticles
+        )}
+        showImages={boolean('Show Images', true)}
+      />
+    );
+  });

@@ -1,7 +1,8 @@
 import React from 'react';
 import {
   RelatedArticleContainer,
-  RelatedArticlesImageContainer
+  RelatedArticlesImageContainer,
+  SectionLabel
 } from './styles';
 import { InArticleLink } from '../in-article-link/InArticleLink';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
@@ -12,22 +13,28 @@ export type RelatedArticleType = {
   link: string;
   image?: string;
 };
+
+type RelatedArticleProps = {
+  sectionColour: string;
+} & RelatedArticleType;
+
 export const RelatedArticle = ({
   label,
   headline,
   link,
-  image
-}: RelatedArticleType) => (
+  image,
+  sectionColour
+}: RelatedArticleProps) => (
   <RelatedArticleContainer>
     <div>
       {image && (
         <RelatedArticlesImageContainer>
-          <AspectRatio ratio="3:2">
+          <AspectRatio ratio="16:9">
             <img src={image} />
           </AspectRatio>
         </RelatedArticlesImageContainer>
       )}
-      <div className="label">{label}</div>
+      <SectionLabel sectionColour={sectionColour}>{label}</SectionLabel>
       <div className="headline">{headline}</div>
     </div>
     <InArticleLink link={link} linkText="Read Full Story" />
