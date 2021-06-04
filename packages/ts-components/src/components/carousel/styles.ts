@@ -28,15 +28,24 @@ export const CarouselButton = styled.button<{ disabled: boolean}>`
     }
 `;
 
+export const Container = styled.div`
+  height: fit-content;
+`;
+
+export const TextContainer = styled.div`
+  height: 100%;
+`;
+
 export const CardContainer = styled.div`
-  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 30%;
+  padding: 12px 20px;
   background-color: #F9F9F9;
 `;
 
 export const Image = styled.img`
-  width: 75%;
+  width: 100%;
 `
 
 export const Label = styled.div`
@@ -51,6 +60,7 @@ export const Headline = styled.div`
   font-family: ${fonts.headline};
   font-size: 32px;
   padding-bottom: 12px;
+  transition: opacity 0.5s;
 `
 
 export const Copy = styled.div`
@@ -59,12 +69,7 @@ export const Copy = styled.div`
   font-size: 16px;
   line-height: 24px;
   padding-bottom: 12px;
-`;
-
-export const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 12px 20px;
+  transition:all 0.3s ease;
 `;
 
 export const CarouselButtonContainer = styled.div`
@@ -88,4 +93,14 @@ export const DotContainer = styled.div`
  flex-direction: row;
  padding-left: 6px;
  padding-right: 6px;
+`;
+
+export const CarouselContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const CardButtonContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
 `;
