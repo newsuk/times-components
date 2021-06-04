@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.16.0](https://github.com/newsuk/times-components/compare/@times-components/icons@2.15.2...@times-components/icons@2.16.0) (2021-06-04)
+
+
+### Features
+
+* TE-11 Add in-content (inline) Related Article links ([#2714](https://github.com/newsuk/times-components/issues/2714)) ([a01a8ee](https://github.com/newsuk/times-components/commit/a01a8ee600f3378d7324f736452d0e55106823b5))
+
+
+
+
+
 ## [2.15.2](https://github.com/newsuk/times-components/compare/@times-components/icons@2.15.1...@times-components/icons@2.15.2) (2021-05-27)
 
 **Note:** Version bump only for package @times-components/icons
