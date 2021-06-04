@@ -63,6 +63,15 @@ const showcase = {
       ),
       name: 'In Article Puff - No Image',
       type: 'story'
+    },
+    {
+      component: () => (
+        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/41547">
+          <InArticlePuff sectionColour="#184e13" sanitiseHtml />
+        </FetchProvider>
+      ),
+      name: 'In Article Puff - Sanitised',
+      type: 'story'
     }
   ],
   name: 'Typescript Component/In Article Puff'
