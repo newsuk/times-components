@@ -12,6 +12,9 @@ export type RelatedArticleType = {
   headline: string;
   link: string;
   image?: string;
+  summary?: string;
+  publishedTime?: string;
+  byline?: string;
 };
 
 type RelatedArticleProps = {
