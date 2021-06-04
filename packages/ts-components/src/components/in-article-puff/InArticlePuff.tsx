@@ -39,11 +39,8 @@ const clickEvent = (buttonLabel: string) => ({
   }
 });
 
-const sanitiseCopy = (copy: string) =>
-  sanitizeHtml(copy, {
-    allowedTags: [],
-    allowedAttributes: {}
-  });
+const sanitiseCopy = (copy: string, allowedTags: string[] = []) =>
+  sanitizeHtml(copy, { allowedTags, allowedAttributes: {} });
 
 export const InArticlePuff: React.FC<{
   sectionColour: string;
@@ -120,17 +117,26 @@ export const InArticlePuff: React.FC<{
               >
                 <Headline hasImage={hasImage}>{headline}</Headline>
               </a>
-              {copy && <Copy>{sanitiseHtml ? sanitiseCopy(copy) : copy}</Copy>}
+              {copy && (
+                <>
+                  {sanitiseHtml ? (
+                    <Copy>{sanitiseCopy(copy)}</Copy>
+                  ) : (
+                    <Copy
+                      dangerouslySetInnerHTML={{
+                        __html: sanitiseCopy(copy, ['b', 'i'])
+                      }}
+                    />
+                  )}
+                </>
+              )}
             </div>
 
             <InArticleLink
               link={link}
-              linkText={linkText ? linkText : 'Read more'}
+              linkText={linkText || 'Read more'}
               onClick={() =>
-                handleClick(
-                  fireAnalyticsEvent,
-                  linkText ? linkText : 'Read more'
-                )
+                handleClick(fireAnalyticsEvent, linkText || 'Read more')
               }
             />
           </ContentContainer>
