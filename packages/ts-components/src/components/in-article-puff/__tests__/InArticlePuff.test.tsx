@@ -114,34 +114,6 @@ describe('InArticlePuff', () => {
     expect(asFragment().firstChild).toBeNull();
   });
 
-  it('should update the icon fillColour when mouse over', () => {
-    (useFetch as jest.Mock).mockReturnValue(
-      deckApiPayloadWrapper(requiredFields)
-    );
-
-    const { baseElement } = render(<InArticlePuff {...requiredProps} />);
-
-    const icon = baseElement.querySelector('.iconForwardChevron');
-
-    fireEvent.mouseOver(icon!);
-
-    expect(icon!.getAttribute('fillColour')).toEqual('#696969');
-  });
-
-  it('should update the icon fillColour when mouse leave', () => {
-    (useFetch as jest.Mock).mockReturnValue(
-      deckApiPayloadWrapper(requiredFields)
-    );
-
-    const { baseElement } = render(<InArticlePuff {...requiredProps} />);
-
-    const icon = baseElement.querySelector('.iconForwardChevron');
-
-    fireEvent.mouseLeave(icon!);
-
-    expect(icon!.getAttribute('fillColour')).toEqual('#BF0000');
-  });
-
   describe('tracking', () => {
     let oldIntersectionObserver: typeof IntersectionObserver;
     const analyticsStream = jest.fn();

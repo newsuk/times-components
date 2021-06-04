@@ -6,7 +6,6 @@ import {
   getNewsletter,
   subscribeNewsletter
 } from '@times-components/provider-queries';
-import { action } from '@storybook/addon-actions';
 
 import { AutoNewsletterPuff } from './AutoNewsletterPuff';
 import { InlineNewsletterPuff } from './InlineNewsletterPuff';
@@ -14,11 +13,7 @@ import { InlineNewsletterPuff } from './InlineNewsletterPuff';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import { PreviewNewsletterPuff } from './PreviewNewsletterPuff';
 
-const analyticsStream = (event: any) => {
-  // tslint:disable-next-line:no-console
-  console.log('analytics-action', event);
-  action('analytics-action')(event);
-};
+import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
 const mocks = [
   {
@@ -139,7 +134,7 @@ const showcase = {
       type: 'story'
     }
   ],
-  name: 'Typescript Component/Newsletter Puffs'
+  name: 'Typescript Component/In Article/Newsletter Puffs'
 };
 
 showcaseConverter(module, showcase);

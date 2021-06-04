@@ -1515,150 +1515,17 @@ exports[`12. closeicon renders 1`] = `
 `;
 
 exports[`13. iconforwardchevron renders 1`] = `
-<RNSVGSvgView
-  align="xMidYMid"
+<svg
   aria-label="icon-forward-chevron"
-  bbWidth={20}
-  focusable={false}
-  meetOrSlice={0}
-  minX={42}
-  minY={12}
-  style={
-    Object {
-      "backgroundColor": "transparent",
-      "borderWidth": 0,
-      "opacity": 1,
-    }
-  }
-  vbHeight={120}
-  vbWidth={60}
+  viewBox="5c14eb9241a8569e247b0186d9e66a8a"
   width={20}
 >
-  <RNSVGGroup
-    fill={
-      Array [
-        0,
-        -16777216,
-      ]
-    }
-    fillOpacity={1}
-    fillRule={1}
-    font={Object {}}
-    matrix={
-      Array [
-        1,
-        0,
-        0,
-        1,
-        0,
-        0,
-      ]
-    }
-    originX={0}
-    originY={0}
-    propList={Array []}
-    rotation={0}
-    scaleX={1}
-    scaleY={1}
-    skewX={0}
-    skewY={0}
-    stroke={null}
-    strokeDasharray={null}
-    strokeDashoffset={null}
-    strokeLinecap={0}
-    strokeLinejoin={0}
-    strokeMiterlimit={4}
-    strokeOpacity={1}
-    strokeWidth={1}
-    vectorEffect={0}
-    x={0}
-    y={0}
+  <g
+    fill="#006699"
   >
-    <RNSVGGroup
-      fill={
-        Array [
-          0,
-          -16750951,
-        ]
-      }
-      fillOpacity={1}
-      fillRule={1}
-      font={Object {}}
-      matrix={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-      originX={0}
-      originY={0}
-      propList={
-        Array [
-          "fill",
-        ]
-      }
-      rotation={0}
-      scaleX={1}
-      scaleY={1}
-      skewX={0}
-      skewY={0}
-      stroke={null}
-      strokeDasharray={null}
-      strokeDashoffset={null}
-      strokeLinecap={0}
-      strokeLinejoin={0}
-      strokeMiterlimit={4}
-      strokeOpacity={1}
-      strokeWidth={1}
-      vectorEffect={0}
-      x={0}
-      y={0}
-    >
-      <RNSVGPath
-        d="cf23b8f47ac97eeec14ee4c65e472078"
-        fill={
-          Array [
-            0,
-            -16777216,
-          ]
-        }
-        fillOpacity={1}
-        fillRule={1}
-        matrix={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-        originX={0}
-        originY={0}
-        propList={Array []}
-        rotation={0}
-        scaleX={1}
-        scaleY={1}
-        skewX={0}
-        skewY={0}
-        stroke={null}
-        strokeDasharray={null}
-        strokeDashoffset={null}
-        strokeLinecap={0}
-        strokeLinejoin={0}
-        strokeMiterlimit={4}
-        strokeOpacity={1}
-        strokeWidth={1}
-        vectorEffect={0}
-        x={0}
-        y={0}
-      />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
+    <path
+      d="cf23b8f47ac97eeec14ee4c65e472078"
+    />
+  </g>
+</svg>
 `;

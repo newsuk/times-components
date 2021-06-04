@@ -279,16 +279,11 @@ exports[`12. closeicon renders with different colours 1`] = `
 `;
 
 exports[`13. iconforwardchevron renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke={null}
-/>
+<svg>
+  <g
+    fill="#facade"
+  >
+    <path />
+  </g>
+</svg>
 `;

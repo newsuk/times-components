@@ -6,13 +6,7 @@ import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { InArticlePuff } from './InArticlePuff';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
-import { action } from '@storybook/addon-actions';
-
-const analyticsStream = (event: any) => {
-  // tslint:disable-next-line:no-console
-  console.log('analytics-action', event);
-  action('analytics-action')(event);
-};
+import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
 const showcase = {
   children: [
@@ -74,7 +68,7 @@ const showcase = {
       type: 'story'
     }
   ],
-  name: 'Typescript Component/In Article Puff'
+  name: 'Typescript Component/In Article/In Article Puff'
 };
 
 // @ts-ignore

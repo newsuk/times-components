@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RelatedArticle> renders 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bwzfXH bVPNCq"
+    >
+      <div>
+        <div
+          class="sc-htpNat EVaYl"
+        >
+          <div
+            class="sc-bZQynM klcTLN"
+          >
+            <img
+              src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe7a2f8f2-c3ec-11eb-8601-6a2ece3e4634.jpg?crop=3888%2C2187%2C0%2C202&resize=480"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-bxivhb kUXZco"
+        >
+          VIDEO
+        </div>
+        <div
+          class="headline"
+        >
+          Who is Juan Guaido, the man who declared president?
+        </div>
+      </div>
+      <a
+        class="sc-ifAKCX jyDaJF"
+        href="https://www.thetimes.co.uk/article/china-yunnan-mobilises-as-herd-of-15-marauding-elephants-approaches-capital-qvgttzz2w"
+      >
+        <div
+          class="sc-EHOje cjnDfc"
+        >
+          Read Full Story
+        </div>
+        <svg
+          aria-label="icon-forward-chevron"
+          height="18"
+          viewBox="42 12 60 120"
+          width="8"
+        >
+          <g>
+            <path
+              d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+            />
+          </g>
+        </svg>
+      </a>
+    </div>
+  </div>
+</body>
+`;
