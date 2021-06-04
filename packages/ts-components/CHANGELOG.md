@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.4.1...@times-components/ts-components@1.5.0) (2021-06-04)
+
+
+### Features
+
+* **TE-119:** InArticlePuff update to sanitiser ([#2712](https://github.com/newsuk/times-components/issues/2712)) ([1816530](https://github.com/newsuk/times-components/commit/18165301385a73f73fac738aa240bcc0533a640f))
+
+
+
+
+
 ## [1.4.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.4.0...@times-components/ts-components@1.4.1) (2021-05-27)
 
 **Note:** Version bump only for package @times-components/ts-components
