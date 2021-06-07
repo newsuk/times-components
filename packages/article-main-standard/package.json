@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-main-standard",
-  "version": "3.33.5",
+  "version": "3.33.6",
   "description": "Main Standard Article Template",
   "main": "dist/article-main-standard",
   "dev": "src/article-main-standard",
@@ -65,8 +65,8 @@
     "@times-components/article-error": "0.2.181",
     "@times-components/article-flag": "2.10.9",
     "@times-components/article-label": "2.7.56",
-    "@times-components/article-lead-asset": "1.6.36",
-    "@times-components/article-skeleton": "1.49.2",
+    "@times-components/article-lead-asset": "1.6.37",
+    "@times-components/article-skeleton": "1.49.3",
     "@times-components/article-topics": "4.2.12",
     "@times-components/caption": "3.0.140",
     "@times-components/context": "1.2.24",
@@ -75,7 +75,7 @@
     "@times-components/styleguide": "3.38.19",
     "@times-components/user-state": "0.1.60",
     "@times-components/utils": "6.5.3",
-    "@times-components/video-label": "2.4.60",
+    "@times-components/video-label": "2.4.61",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
