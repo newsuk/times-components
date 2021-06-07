@@ -4,30 +4,36 @@ exports[`<RelatedArticle> renders 1`] = `
 <body>
   <div>
     <div
-      class="sc-bwzfXH bVPNCq"
+      class="sc-bwzfXH hRApbj"
     >
       <div>
         <div
           class="sc-htpNat EVaYl"
         >
-          <div
-            class="sc-bZQynM klcTLN"
+          <a
+            href="https://www.thetimes.co.uk/article/china-yunnan-mobilises-as-herd-of-15-marauding-elephants-approaches-capital-qvgttzz2w"
           >
-            <img
-              src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe7a2f8f2-c3ec-11eb-8601-6a2ece3e4634.jpg?crop=3888%2C2187%2C0%2C202&resize=480"
-            />
-          </div>
+            <div
+              class="sc-bZQynM klcTLN"
+            >
+              <img
+                src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe7a2f8f2-c3ec-11eb-8601-6a2ece3e4634.jpg?crop=3888%2C2187%2C0%2C202&resize=480"
+              />
+            </div>
+          </a>
         </div>
         <div
           class="sc-bxivhb kUXZco"
         >
           VIDEO
         </div>
-        <div
-          class="headline"
+        <a
+          href="https://www.thetimes.co.uk/article/china-yunnan-mobilises-as-herd-of-15-marauding-elephants-approaches-capital-qvgttzz2w"
         >
-          Who is Juan Guaido, the man who declared president?
-        </div>
+          <h3>
+            Who is Juan Guaido, the man who declared president?
+          </h3>
+        </a>
       </div>
       <a
         class="sc-ifAKCX jyDaJF"

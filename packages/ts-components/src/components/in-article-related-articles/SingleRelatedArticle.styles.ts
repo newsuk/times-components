@@ -23,12 +23,17 @@ export const SingleRelatedArticleContainer = styled.div`
       text-decoration: none;
     }
 
-    .headline {
+    h3 {
       color: ${colours.functional.brandColour};
       font-family: ${fonts.headline};
       font-size: 20px;
+      font-weight: 400;
       line-height: 20px;
       margin: 5px 0;
+
+      :hover {
+        color: ${colours.functional.action};
+      }
     }
     .summary {
       font-family: ${fonts.body};

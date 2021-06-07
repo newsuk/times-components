@@ -23,14 +23,16 @@ export const SingleRelatedArticle = ({
   <SingleRelatedArticleContainer>
     {image && (
       <SingleRelatedArticlesImageContainer>
-        <AspectRatio ratio="16:9">
-          <img src={image} />
-        </AspectRatio>
+        <a href={link}>
+          <AspectRatio ratio="16:9">
+            <img src={image} />
+          </AspectRatio>
+        </a>
       </SingleRelatedArticlesImageContainer>
     )}
     <section>
       <a href={link}>
-        <div className="headline">{headline}</div>
+        <h3>{headline}</h3>
       </a>
       <div className="summary">{summary}</div>
       <div className="publishedTime">
