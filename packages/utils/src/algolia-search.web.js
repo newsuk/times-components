@@ -13,36 +13,25 @@ const createAlgoliaIndex = algoliaSearchKeys => {
   return null;
 };
 
-const OPTIMIZELY_TOTAL_SEARCHES = "related-articles_algolia-results-count";
-const OPTIMIZELY_NO_RESULT = "related-articles_algolia-no-result";
-
-const fireOpitmizelyEvent = (eventName, value = 1) => {
-  if (typeof window !== "undefined") {
-    window.optimizely = window.optimizely || [];
-    window.optimizely.push({
-      type: "event",
-      eventName,
-      tags: {
-        value
-      }
-    });
-  }
-};
-
 const AlgoliaSearchContext = createContext();
 
-const AlgoliaSearchProvider = ({ algoliaSearchKeys, article, children }) => {
+const AlgoliaSearchProvider = ({
+  algoliaSearchKeys,
+  article,
+  analyticsStream,
+  children
+}) => {
   const algoliaIndex = useMemo(() => createAlgoliaIndex(algoliaSearchKeys), [
     algoliaSearchKeys
   ]);
 
   const getRelatedArticles = useCallback(
     async () => {
-      const results = await searchRelatedArticles(algoliaIndex, article);
-      fireOpitmizelyEvent(OPTIMIZELY_TOTAL_SEARCHES);
-      if (results === null) {
-        fireOpitmizelyEvent(OPTIMIZELY_NO_RESULT);
-      }
+      const results = await searchRelatedArticles(
+        algoliaIndex,
+        article,
+        analyticsStream
+      );
       return results;
     },
     [algoliaIndex, article]
@@ -76,7 +65,8 @@ AlgoliaSearchProvider.propTypes = {
     section: PropTypes.string,
     topics: PropTypes.arrayOf(PropTypes.shape({}))
   }).isRequired,
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  analyticsStream: PropTypes.node.isRequired
 };
 
 export default AlgoliaSearchProvider;

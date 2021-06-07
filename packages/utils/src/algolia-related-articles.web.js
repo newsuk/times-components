@@ -60,6 +60,7 @@ const formatByLines = bylines =>
 const search = async (
   index,
   { id: articleId, bylines, topics, headline, section, label },
+  analyticsStream,
   limitDays
 ) => {
   const byline = formatByLines(bylines);
@@ -107,12 +108,19 @@ const search = async (
     typoTolerance: false
   };
 
-  return index.search(query, searchOptions);
+  const results = await index.search(query, searchOptions);
+  analyticsStream({
+    object: "AlgoliaSearchProvider",
+    action: "Search",
+    attr: { query, searchOptions, results }
+  });
+
+  return results;
 };
 
-const searchRelatedArticles = async (index, article) => {
+const searchRelatedArticles = async (index, article, analyticsStream) => {
   try {
-    let searchResults = await search(index, article, 7);
+    let searchResults = await search(index, article, analyticsStream, 7);
 
     // pass 2 - any section
     if (searchResults.hits.length === 0) {

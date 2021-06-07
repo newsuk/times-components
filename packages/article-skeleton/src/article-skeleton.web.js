@@ -149,6 +149,7 @@ const ArticleSkeleton = ({
           <AlgoliaSearchProvider
             algoliaSearchKeys={algoliaSearchKeys}
             article={{ id: articleId, label, section, topics }}
+            analyticsStream={analyticsStream}
           >
             <Fragment>
               <HeaderAdContainer key="headerAd">

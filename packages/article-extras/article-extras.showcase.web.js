@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import React from "react";
-import { AlgoliaSearchProvider, OptimizelyWeb } from "@times-components/utils";
+import { AlgoliaSearchProvider } from "@times-components/utils";
 
 import ArticleExtras from "./src/article-extras";
 
@@ -22,10 +22,11 @@ const getAnalyticsStream = action => event => {
 export default {
   children: [
     {
-      component: ({ boolean }) => (
+      component: ({ boolean }, { action }) => (
         <AlgoliaSearchProvider
           algoliaSearchKeys={algoliaSearchKeys}
           article={{ id: "dummy-article-id" }}
+          analyticsStream={getAnalyticsStream(action)}
         >
           <ArticleExtras
             analyticsStream={() => {}}
@@ -82,10 +83,10 @@ export default {
         };
         return (
           <>
-            <OptimizelyWeb />
             <AlgoliaSearchProvider
               algoliaSearchKeys={algoliaSearchKeys}
               article={article}
+              analyticsStream={getAnalyticsStream(action)}
             >
               <ArticleExtras
                 analyticsStream={getAnalyticsStream(action)}

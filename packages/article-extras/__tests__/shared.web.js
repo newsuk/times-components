@@ -59,6 +59,7 @@ export default () => {
           <AlgoliaSearchProvider
             article={{ id: "dummy-article-id" }}
             algoliaSearchKeys={algoliaSearchKeys}
+            analyticsStream={jest.fn()}
           >
             <ArticleExtras
               analyticsStream={() => {}}
@@ -85,6 +86,7 @@ export default () => {
           <AlgoliaSearchProvider
             article={{ id: "dummy-article-id" }}
             algoliaSearchKeys={algoliaSearchKeys}
+            analyticsStream={jest.fn()}
           >
             <ArticleExtras
               analyticsStream={() => {}}
@@ -110,6 +112,7 @@ export default () => {
           <AlgoliaSearchProvider
             article={{ id: "dummy-article-id" }}
             algoliaSearchKeys={algoliaSearchKeys}
+            analyticsStream={jest.fn()}
           >
             <ArticleExtras
               analyticsStream={() => {}}
@@ -135,6 +138,7 @@ export default () => {
           <AlgoliaSearchProvider
             article={{ id: "dummy-article-id" }}
             algoliaSearchKeys={algoliaSearchKeys}
+            analyticsStream={jest.fn()}
           >
             <ArticleExtras
               analyticsStream={() => {}}

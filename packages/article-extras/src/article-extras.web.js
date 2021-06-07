@@ -40,7 +40,7 @@ const ArticleExtras = ({
     async () => {
       if (additionalRelatedArticlesFlag) {
         const data = await getRelatedArticles();
-        analyticsStream(data);
+        // analyticsStream(data);
         if (data) setAlgoliaRelatedArticleSlice(data);
       }
     },
