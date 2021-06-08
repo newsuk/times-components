@@ -7,10 +7,14 @@ import { renderTreeArrayAsText } from "@times-components/markup-forest";
 import { propTypes as topicHeadPropTypes } from "./topic-head-prop-types";
 
 function Head({ description, name, slug }) {
-  const content =
-    description && description.length
-      ? renderTreeArrayAsText(description).substring(0, 200)
-      : `Discover expert ${name} articles from The Times and The Sunday Times.`;
+
+  let content = `Discover expert ${name} articles from The Times and The Sunday Times.`;
+
+  if (description && typeof description === "object") {
+    content = renderTreeArrayAsText(description).substring(0, 200);
+  } else if (description && typeof description === "string"){
+    content = description;
+  }
 
   return (
     <Context.Consumer>
