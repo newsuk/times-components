@@ -17,6 +17,9 @@ const StyledCarousel = styled(ReactElasticCarousel)<{isLarge: boolean, sectionCo
   @media (min-width: ${breakpoints.wide}px) {
     flex-direction: ${({ isLarge }) => isLarge ? 'column-reverse' : 'row-reverse'};
   }
+  .rec .rec-slider-container {
+    margin: 0px;
+  }
 `;
 
 type DataObj = {

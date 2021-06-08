@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { ArticleHarness } from '../../fixtures/article-harness/ArticleHarness';
 import { showcaseConverter } from '@times-components/storybook';
 import GalleryCarousel from './GalleryCarousel';
 
@@ -14,7 +14,7 @@ const data = [
     },
     carouseldata: {
       image:
-        'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F24f0ce12-c444-11eb-8601-6a2ece3e4634.png?crop=778%2C438%2C84%2C7&resize=1180'
+        'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180'
     }
   },
   {
@@ -40,7 +40,7 @@ const data = [
     },
     carouseldata: {
       image:
-        'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F24f0ce12-c444-11eb-8601-6a2ece3e4634.png?crop=778%2C438%2C84%2C7&resize=1180'
+        'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F941796c6-c855-11eb-b6f5-fed739e7c1ca.jpg?crop=4000%2C2250%2C0%2C208&resize=1180'
     }
   },
   {
@@ -53,7 +53,7 @@ const data = [
     },
     carouseldata: {
       image:
-        'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F24f0ce12-c444-11eb-8601-6a2ece3e4634.png?crop=778%2C438%2C84%2C7&resize=1180'
+        'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F30d309fe-c82a-11eb-b6f5-fed739e7c1ca.jpg?crop=6095%2C3429%2C312%2C526&resize=1180'
     }
   }
 ];
@@ -61,8 +61,14 @@ const data = [
 const showcase = {
   children: [
     {
+      decorator: (storyFn: () => React.ReactNode) => (
+          <ArticleHarness>{storyFn()}</ArticleHarness>
+      ),
+      type: 'decorator'
+    },
+    {
       component: () => (
-        <div style={{ paddingTop: '10px' }}>
+        <div style={{ margin: '20px 0px' }}>
           <GalleryCarousel
             data={data}
             isLarge={false}
@@ -71,6 +77,19 @@ const showcase = {
         </div>
       ),
       name: 'Carousel',
+      type: 'story'
+    },
+    {
+      component: () => (
+        <div style={{ margin: '20px 0px' }}>
+          <GalleryCarousel
+            data={data}
+            isLarge={true}
+            sectionColour="#13354E"
+          />
+        </div>
+      ),
+      name: 'Carousel Large',
       type: 'story'
     }
   ],
