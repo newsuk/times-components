@@ -15,20 +15,20 @@ const clearingStyle = {
 };
 
 const ArticleExtras = ({
-  analyticsStream,
-  articleId,
-  commentsEnabled,
-  registerNode,
-  savingEnabled,
-  sharingEnabled,
-  articleUrl,
-  articleHeadline,
-  relatedArticleSlice,
-  relatedArticlesVisible,
-  spotAccountId,
-  topics,
-  additionalRelatedArticlesFlag
-}) => {
+                         analyticsStream,
+                         articleId,
+                         commentsEnabled,
+                         registerNode,
+                         savingEnabled,
+                         sharingEnabled,
+                         articleUrl,
+                         articleHeadline,
+                         relatedArticleSlice,
+                         relatedArticlesVisible,
+                         spotAccountId,
+                         topics,
+                         additionalRelatedArticlesFlag
+                       }) => {
   const [
     algoliaRelatedArticleSlice,
     setAlgoliaRelatedArticleSlice
@@ -85,15 +85,15 @@ const ArticleExtras = ({
           slice={relatedArticleSlice}
         />
         {additionalRelatedArticlesFlag &&
-          algoliaRelatedArticleSlice && (
-            <RelatedArticles
-              // heading="Additional Featured Articles"
-              heading={`AlgoliaSearch "${algoliaRelatedArticleSlice.query}"`}
-              analyticsStream={analyticsStream}
-              isVisible={relatedArticlesVisible}
-              slice={algoliaRelatedArticleSlice}
-            />
-          )}
+        algoliaRelatedArticleSlice && (
+          <RelatedArticles
+            // heading="Additional Featured Articles"
+            heading={`AlgoliaSearch "${algoliaRelatedArticleSlice.query}"`}
+            analyticsStream={analyticsStream}
+            isVisible={relatedArticlesVisible}
+            slice={algoliaRelatedArticleSlice}
+          />
+        )}
       </div>
       {sponsoredArticles}
 

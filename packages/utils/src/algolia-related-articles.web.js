@@ -67,13 +67,13 @@ const search = async (
 
   const topicSearch = topics
     ? topics
-        .map(
-          topic =>
-            topic.name.indexOf(" ") >= 0
-              ? `"${topic.name.toLowerCase()}"`
-              : topic.name.toLowerCase()
-        )
-        .join(" ")
+      .map(
+        topic =>
+          topic.name.indexOf(" ") >= 0
+            ? `"${topic.name.toLowerCase()}"`
+            : topic.name.toLowerCase()
+      )
+      .join(" ")
     : "";
 
   const headlineSearch = `${headline}`.replace(/[.,()"':;{}[]/g, "");
