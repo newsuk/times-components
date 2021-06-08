@@ -1,19 +1,22 @@
 import React from 'react';
-import { Headline, Label, Copy, TextContainer, CardContainer } from './styles';
+import { Headline, Label, Copy, CardContainer, Credit } from './styles';
 
 export const Card: React.FC<{
   headline: string;
   label: string;
   copy: string;
-}> = ({ headline, label, copy, children }) => {
+  isLarge: boolean;
+  credit: string;
+}> = ({ headline, label, copy, children, isLarge, credit }) => {
   return (
-    <CardContainer>
-      <TextContainer>
-      <Label>{label}</Label>
-      <Headline>{headline}</Headline>
-      <Copy>{copy}</Copy>
-</TextContainer>
-        {children}
-      </CardContainer>
-  )
-}
+    <CardContainer isLarge={isLarge}>
+      <div style={{ height: '100%' }}>
+        <Label>{label}</Label>
+        <Headline>{headline}</Headline>
+        <Copy>{copy}</Copy>
+        {isLarge || window.innerWidth < 1024 ? null : <Credit>{credit}</Credit>}
+      </div>
+      {children}
+    </CardContainer>
+  );
+};
