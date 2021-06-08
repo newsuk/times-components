@@ -6,10 +6,14 @@ import { renderTreeArrayAsText } from "@times-components/markup-forest";
 import { propTypes as authorProfileHeadPropTypes } from "./author-profile-head-prop-types";
 
 function Head({ description, name }) {
-  const content =
-    description && description.length
-      ? renderTreeArrayAsText(description).substring(0, 200)
-      : `Get up to date information and read all the latest articles from ${name}.`;
+  let content = `Get up to date information and read all the latest articles from ${name}.`;
+
+  if (description && typeof description === "object") {
+    content = renderTreeArrayAsText(description).substring(0, 200);
+  } else if (description && typeof description === "string"){
+    content = description;
+  }
+
   return (
     <Helmet>
       <title>{name} | The Times &amp; The Sunday Times</title>
