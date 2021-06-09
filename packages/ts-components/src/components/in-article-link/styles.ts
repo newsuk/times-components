@@ -6,7 +6,6 @@ export const Link = styled.a`
   flex-direction: row;
   margin-top: 16px;
   color: #bf0000;
-
   fill: #bf0000;
 
   :hover {

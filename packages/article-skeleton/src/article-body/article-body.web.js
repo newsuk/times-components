@@ -23,7 +23,8 @@ import {
   InArticlePuff,
   InlineNewsletterPuff,
   PreviewNewsletterPuff,
-  AutoNewsletterPuff
+  AutoNewsletterPuff,
+  OptaFootballStandings
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -169,6 +170,9 @@ const renderers = ({
           />
         );
 
+      case "opta-football-standings-v3":
+        return <OptaFootballStandings season="2020" competition="3" />;
+
       case "in-article-puff":
         if (inArticlePuffFlag) {
           return (
@@ -178,7 +182,6 @@ const renderers = ({
                   <InArticlePuff
                     sectionColour={theme.sectionColour}
                     forceImageAspectRatio="3:2"
-                    sanitiseHtml
                   />
                 </FetchProvider>
               )}

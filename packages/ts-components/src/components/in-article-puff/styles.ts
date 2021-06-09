@@ -67,8 +67,7 @@ export const Label = styled.div<{ hasImage?: boolean; sectionColour: string }>`
   color: ${({ sectionColour }) => sectionColour};
   font-family: ${fonts.supporting};
   font-size: 12px;
-
-  letter-spacing: 0.1em;
+  letter-spacing: 1px;
   text-transform: uppercase;
 `;
 

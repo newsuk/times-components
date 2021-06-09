@@ -5,6 +5,7 @@ import { ArticlePage, ArticleBody, Paragraph } from './styles';
 export const ArticleHarness: React.FC = ({ children }) => {
   return (
     <ArticlePage>
+      <link rel="stylesheet" href="http://widget.cloud.opta.net/v3/css/v3.football.opta-widgets.css" />
       <ArticleBody>
         <Paragraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
