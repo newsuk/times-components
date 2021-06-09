@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import React from "react";
-import { AlgoliaSearchProvider } from "@times-components/utils";
+import { AlgoliaSearchProvider } from "@times-components/ts-components";
 
 import ArticleExtras from "./src/article-extras";
 

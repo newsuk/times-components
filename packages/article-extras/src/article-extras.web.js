@@ -5,7 +5,7 @@ import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import { useAlgoliaSearch } from "@times-components/utils";
+import { useAlgoliaSearch } from "@times-components/ts-components";
 
 import ArticleTopics from "./article-topics";
 import { ShareAndSaveContainer } from "./styles/responsive";
@@ -15,20 +15,20 @@ const clearingStyle = {
 };
 
 const ArticleExtras = ({
-                         analyticsStream,
-                         articleId,
-                         commentsEnabled,
-                         registerNode,
-                         savingEnabled,
-                         sharingEnabled,
-                         articleUrl,
-                         articleHeadline,
-                         relatedArticleSlice,
-                         relatedArticlesVisible,
-                         spotAccountId,
-                         topics,
-                         additionalRelatedArticlesFlag
-                       }) => {
+  analyticsStream,
+  articleId,
+  commentsEnabled,
+  registerNode,
+  savingEnabled,
+  sharingEnabled,
+  articleUrl,
+  articleHeadline,
+  relatedArticleSlice,
+  relatedArticlesVisible,
+  spotAccountId,
+  topics,
+  additionalRelatedArticlesFlag
+}) => {
   const [
     algoliaRelatedArticleSlice,
     setAlgoliaRelatedArticleSlice
@@ -40,11 +40,10 @@ const ArticleExtras = ({
     async () => {
       if (additionalRelatedArticlesFlag) {
         const data = await getRelatedArticles();
-        // analyticsStream(data);
         if (data) setAlgoliaRelatedArticleSlice(data);
       }
     },
-    [additionalRelatedArticlesFlag, getRelatedArticles, analyticsStream]
+    [additionalRelatedArticlesFlag, getRelatedArticles]
   );
 
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
@@ -85,15 +84,15 @@ const ArticleExtras = ({
           slice={relatedArticleSlice}
         />
         {additionalRelatedArticlesFlag &&
-        algoliaRelatedArticleSlice && (
-          <RelatedArticles
-            // heading="Additional Featured Articles"
-            heading={`AlgoliaSearch "${algoliaRelatedArticleSlice.query}"`}
-            analyticsStream={analyticsStream}
-            isVisible={relatedArticlesVisible}
-            slice={algoliaRelatedArticleSlice}
-          />
-        )}
+          algoliaRelatedArticleSlice && (
+            <RelatedArticles
+              // heading="Additional Featured Articles"
+              heading={`AlgoliaSearch "${algoliaRelatedArticleSlice.query}"`}
+              analyticsStream={analyticsStream}
+              isVisible={relatedArticlesVisible}
+              slice={algoliaRelatedArticleSlice}
+            />
+          )}
       </div>
       {sponsoredArticles}
 

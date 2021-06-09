@@ -53,6 +53,7 @@ declare module '@times-components/utils' {
   ) => string;
 
   export const capitalise: (s: string) => string;
+  export const stripTags: (input: string, replaceWith: string) => string;
 }
 
 declare module '@times-components/styleguide' {

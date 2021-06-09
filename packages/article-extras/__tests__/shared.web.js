@@ -8,14 +8,15 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import { AlgoliaSearchProvider } from "@times-components/utils";
+import { AlgoliaSearchProvider } from "@times-components/ts-components";
 
 import { UserState } from "./mocks";
 import ArticleExtras from "../src/article-extras";
 import { relatedArticleSlice, topics } from "../fixtures/article-extras";
 
-jest.mock("@times-components/utils", () => {
-  const actualUtils = jest.requireActual("@times-components/utils");
+jest.mock("@times-components/ts-components", () => {
+  const actualUtils = jest.requireActual("@times-components/ts-components");
+  console.log("actualUtils", actualUtils);
   return {
     ...actualUtils,
     useAlgoliaSearch: () => ({

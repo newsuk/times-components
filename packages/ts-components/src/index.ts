@@ -21,3 +21,8 @@ export {
 export {
   PreviewNewsletterPuff
 } from './components/newsletter-puff/PreviewNewsletterPuff';
+
+export {
+  AlgoliaSearchProvider,
+  useAlgoliaSearch
+} from './helpers/algolia/AlgoliaSearchProvider';
