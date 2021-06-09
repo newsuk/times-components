@@ -41,15 +41,19 @@ export const initScript = () => {
   });
 };
 
-export const initElement = (name: string, args?: any) => {
+export const initElement = (name: string, args?: any, child?: HTMLElement) => {
   const element = document.createElement(name);
 
   if (args) {
     Object.keys(args).map(key => {
-      if (args[key]) {
+      if (args[key] !== undefined) {
         element.setAttribute(key, args[key].toString());
       }
     });
+  }
+
+  if (child) {
+    element.appendChild(child);
   }
 
   return element;

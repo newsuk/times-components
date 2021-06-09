@@ -33,7 +33,7 @@ const showcase = {
           date_to="2021-04-05"
         />
       ),
-      name: 'Fixtures (with results)',
+      name: 'Fixtures (results) ',
       type: 'story'
     }
   ],

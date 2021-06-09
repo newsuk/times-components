@@ -26,20 +26,35 @@ export const OptaFootballFixtures: React.FC<{
     initSettings();
     initScript().then(() => {
       if (ref.current) {
-        ref.current.innerHTML = initElement('opta-widget', {
-          sport: 'football',
-          widget: 'fixtures',
-          season,
-          competition,
-          date_from,
-          date_to,
-          live: true,
-          grouping: 'date',
-          show_grouping: true,
-          show_crests: true,
-          date_format: 'dddd MMMM D YYYY',
-          breakpoints: 520
-        }).outerHTML;
+        ref.current.innerHTML = initElement(
+          'opta-widget',
+          {
+            sport: 'football',
+            widget: 'fixtures',
+            season,
+            competition,
+            date_from,
+            date_to,
+            live: true,
+            grouping: 'date',
+            show_grouping: true,
+            show_crests: true,
+            date_format: 'dddd MMMM D YYYY',
+            breakpoints: 520
+          },
+          initElement('opta-widget', {
+            sport: 'football',
+            widget: 'match_summary',
+            season: '',
+            competition: '',
+            match: '',
+            live: true,
+            show_crests: true,
+            show_goals: true,
+            show_cards: 'red',
+            breakpoints: '520'
+          })
+        ).outerHTML;
 
         initComponent();
         setIsReady(true);

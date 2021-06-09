@@ -32,11 +32,15 @@ export const OptaFootballSummary: React.FC<{
           competition,
           match,
           live: true,
-          show_competition_name: true,
           show_match_header: true,
+          show_date: true,
+          show_competition_name: true,
           show_crests: true,
-          date_format: 'dddd MMMM D YYYY',
-          breakpoints: 520
+          show_goals: true,
+          show_cards: 'red',
+          show_halftime_score: true,
+          date_format: 'DD/MM/YYYY',
+          breakpoints: '520'
         }).outerHTML;
 
         initComponent();

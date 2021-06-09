@@ -53,23 +53,18 @@ export const WidgetContainerBase = styled.div`
         }
       }
 
-      .Opta-js-main {
-        padding: 0;
-        background-color: transparent;
-
-        table {
-          width: 100%;
-          margin: 0;
-          border-collapse: collapse;
-          border-spacing: 0;
-        }
+      table {
+        width: 100%;
+        margin: 0;
+        border-collapse: collapse;
+        border-spacing: 0;
       }
     }
 
     p {
       margin: 20px 0 0 0 !important;
       padding: 0 0 20px 0 !important;
-      color: ${colours.functional.primary};
+      color: ${colours.functional.brandColour};
       font-family: ${fonts.supporting};
       font-size: 14px;
       line-height: 14px;
