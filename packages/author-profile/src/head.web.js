@@ -5,13 +5,13 @@ import { renderTreeArrayAsText } from "@times-components/markup-forest";
 
 import { propTypes as authorProfileHeadPropTypes } from "./author-profile-head-prop-types";
 
-function Head({ description, name }) {
+function Head({ metaDescription, description, name }) {
   let content = `Get up to date information and read all the latest articles from ${name}.`;
 
-  if (description && typeof description === "object") {
+  if (metaDescription){
+    content = metaDescription;
+  }else if (description && typeof description === "object") {
     content = renderTreeArrayAsText(description).substring(0, 200);
-  } else if (description && typeof description === "string"){
-    content = description;
   }
 
   return (
@@ -23,6 +23,7 @@ function Head({ description, name }) {
 }
 
 Head.propTypes = {
+  metaDescription: PropTypes.string,
   description: authorProfileHeadPropTypes.biography.isRequired,
   name: PropTypes.string.isRequired
 };
