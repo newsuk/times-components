@@ -23,6 +23,19 @@ export const initSettings = () => {
   }
 };
 
+const cssUrl =
+  'http://widget.cloud.opta.net/v3/css/v3.football.opta-widgets.css';
+
+export const initStyleSheet = () => {
+  if (!document.head.querySelector(`link[href="${cssUrl}"]`)) {
+    const link = document.createElement('link');
+    link.setAttribute('rel', 'stylesheet');
+    link.setAttribute('href', cssUrl);
+
+    document.getElementsByTagName('head')[0].appendChild(link);
+  }
+};
+
 const scriptUrl = 'https://secure.widget.cloud.opta.net/v3/v3.opta-widgets.js';
 
 export const initScript = () => {

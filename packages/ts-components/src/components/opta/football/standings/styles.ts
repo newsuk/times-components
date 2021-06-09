@@ -179,7 +179,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
         tbody {
           tr {
             height: 40px;
-            border-bottom: 1px solid ${colours.functional.keyline};
+            border-bottom: 1px solid #e4e4e4;
 
             th {
               width: 42px;

@@ -4,6 +4,7 @@ import { Placeholder } from '@times-components/image';
 
 import {
   initSettings,
+  initStyleSheet,
   initScript,
   initElement,
   initComponent
@@ -24,6 +25,8 @@ export const OptaFootballFixtures: React.FC<{
 
   useEffect(() => {
     initSettings();
+    initStyleSheet();
+
     initScript().then(() => {
       if (ref.current) {
         ref.current.innerHTML = initElement(

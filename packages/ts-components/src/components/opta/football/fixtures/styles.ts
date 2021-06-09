@@ -14,7 +14,7 @@ export const WidgetContainerOverride = styled(WidgetContainerBase)`
         tbody {
           td.Opta-title {
             background-color: transparent !important;
-            border-bottom: 1px solid ${colours.functional.backgroundSecondary};
+            border-bottom: 1px solid #e4e4e4;
 
             h3 {
               margin: 20px 0 0 0 !important;
@@ -76,7 +76,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
           tr.Opta-Scoreline {
             height: 40px;
             background-color: transparent !important;
-            border-bottom: 1px solid ${colours.functional.backgroundSecondary};
+            border-bottom: 1px solid #e4e4e4;
 
             @media (min-width: ${breakpoints.medium}px) {
               height: 50px;
@@ -184,6 +184,44 @@ export const WidgetContainer = styled(WidgetContainerBase)`
               @media (min-width: ${breakpoints.medium}px) {
                 font-size: 16px;
                 line-height: 16px;
+              }
+            }
+          }
+
+          tr {
+            td.Opta-Nest {
+              padding: 0;
+
+              .Opta_W {
+                > .Opta-Cf {
+                  background-color: transparent;
+                  border-bottom: 1px solid #e4e4e4;
+
+                  .Opta-Events {
+                    padding: 10px 0 2px 0;
+
+                    li {
+                      padding: 0 0 8px 0;
+
+                      .Opta-Event-Text {
+                        color: ${colours.functional.primary};
+                        font-family: ${fonts.supporting};
+                        font-size: 14px;
+                        line-height: 16px;
+
+                        .Opta-Event-Player,
+                        .Opta-Event-Time {
+                          font-size: inherit;
+                          line-height: inherit;
+                        }
+
+                        .Opta-Event-Time {
+                          color: ${colours.section.sport};
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           }
