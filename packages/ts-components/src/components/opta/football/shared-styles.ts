@@ -38,7 +38,7 @@ export const WidgetContainerBase = styled.div`
         color: ${colours.section.sport};
         font-family: ${fonts.supporting};
         font-size: 12px;
-        line-height: 12px;
+        line-height: 14px;
         font-weight: normal;
         letter-spacing: 1px;
         text-align: center;
@@ -48,7 +48,7 @@ export const WidgetContainerBase = styled.div`
         span {
           height: auto;
           font-size: 12px;
-          line-height: 12px;
+          line-height: 14px;
           font-weight: normal;
         }
       }

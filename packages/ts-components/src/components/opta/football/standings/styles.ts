@@ -47,7 +47,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
           line-height: 40px;
           font-weight: normal;
           text-align: center;
-          background-color: transparent;
+          background-color: white;
           border: 0;
 
           .Opta-Icon {
@@ -57,20 +57,12 @@ export const WidgetContainer = styled(WidgetContainerBase)`
             :after {
               background-position: -180px -19px;
             }
-
-            @media (min-width: ${breakpoints.medium}px) {
-              margin: 0 14px 0 0;
-            }
           }
 
           .Opta-Title {
             height: 38px;
-            padding: 0 0 0 10px;
+            padding: 0 0 0 18px;
             line-height: 40px;
-
-            @media (min-width: ${breakpoints.medium}px) {
-              padding: 0 0 0 14px;
-            }
           }
 
           &.Opta-Open {
@@ -86,7 +78,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
           display: none;
           top: 0;
           list-style-type: none;
-          background-color: ${colours.functional.backgroundSecondary};
+          background-color: ${colours.functional.backgroundPrimary};
           border: 0;
           border-top: 1px solid ${colours.functional.brandColour};
 
@@ -97,7 +89,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
             a {
               height: 28px;
               padding: 0;
-              color: ${colours.functional.secondary};
+              color: ${colours.functional.primary};
               font-family: ${fonts.supporting};
               font-size: 14px;
               line-height: 30px;
@@ -105,7 +97,8 @@ export const WidgetContainer = styled(WidgetContainerBase)`
 
               &:hover {
                 color: ${colours.functional.brandColour};
-                background-color: ${colours.functional.backgroundPrimary};
+                font-weight: bold;
+                background-color: white;
               }
             }
 
