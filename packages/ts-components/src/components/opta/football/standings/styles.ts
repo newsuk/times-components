@@ -50,28 +50,35 @@ export const WidgetContainer = styled(WidgetContainerBase)`
           background-color: transparent;
           border: 0;
 
-          &:after {
-            display: inline-block;
-            content: '\\E001';
-            font-size: 6px;
-            font-family: iconfont;
-            padding: 0 0 0 10px;
-            vertical-align: middle;
-          }
+          .Opta-Icon {
+            height: 38px;
+            margin: 0 10px 0 0;
 
-          &.Opta-Open {
-            &:after {
-              content: '\\E004';
+            :after {
+              background-position: -180px -19px;
+            }
+
+            @media (min-width: ${breakpoints.medium}px) {
+              margin: 0 14px 0 0;
             }
           }
 
-          .Opta-Icon {
-            display: none;
+          .Opta-Title {
+            height: 38px;
+            padding: 0 0 0 10px;
+            line-height: 40px;
+
+            @media (min-width: ${breakpoints.medium}px) {
+              padding: 0 0 0 14px;
+            }
           }
 
-          span {
-            float: none;
-            padding: 0;
+          &.Opta-Open {
+            .Opta-Icon {
+              :after {
+                background-position: -149px -20px;
+              }
+            }
           }
         }
 

@@ -19,7 +19,7 @@ jest.mock("@times-components/ts-components", () => ({
   AutoNewsletterPuff: "AutoNewsletterPuff",
   OptaFootballFixtures: "OptaFootballFixtures",
   OptaFootballStandings: "OptaFootballStandings",
-  OptaFootballSummary: "OptaFootballSummary",
+  OptaFootballSummary: "OptaFootballSummary"
 }));
 
 beforeEach(() => {
