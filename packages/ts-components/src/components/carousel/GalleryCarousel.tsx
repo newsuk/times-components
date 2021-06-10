@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ReactElasticCarousel from 'react-elastic-carousel';
 import styled from 'styled-components';
 import { Card } from './Card';
-import { CarouselButtonContainer, CarouselButton, CarouselIndicatorContainer, CarouselIndicator, CardButtonContainer, ImageContainer, Credit, CreditButtonContainer } from './styles';
+import { CarouselButtonContainer, CarouselButton, CarouselIndicatorContainer, CarouselIndicator, CardButtonContainer, ImageContainer, Credit, CreditButtonContainer, Label, CardContainer, Headline, Copy, MobileCopyCreditContainer, MobileHeadlineLabelContainer } from './styles';
 import { Arrow } from './Arrow';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { breakpoints } from '@times-components/styleguide';
@@ -12,13 +12,14 @@ const StyledCarousel = styled(ReactElasticCarousel)<{isLarge: boolean, sectionCo
   display: flex;
   height: fit-content;
   align-items: initial;
-  border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
-  flex-direction: ${({ isLarge }) => isLarge || window.innerWidth < 1024 ? 'column-reverse' : 'row-reverse'};
-  @media (min-width: ${breakpoints.wide}px) {
-    flex-direction: ${({ isLarge }) => isLarge ? 'column-reverse' : 'row-reverse'};
-  }
+  
+  
   .rec .rec-slider-container {
     margin: 0px;
+  }
+  flex-direction: column;
+  @media (min-width: ${breakpoints.medium}px) {
+    flex-direction: ${({ isLarge }) => isLarge || window.innerWidth < 1024 ? 'column-reverse' : 'row-reverse'};
   }
 `;
 
@@ -72,6 +73,11 @@ const CustomPagination: React.FC<{
   )
 };
 
+const CarouselContainer = styled.div<{ sectionColour: string}>`
+  border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
+  flex-direction: column-reverse;
+`
+
 const GalleryCarousel: React.FC<{
   isLarge: boolean;
   data: DataObj[];
@@ -82,6 +88,13 @@ const GalleryCarousel: React.FC<{
     setCurrent(data.index);
   };
   return (
+    <CarouselContainer sectionColour={sectionColour}>
+      { window.innerWidth < 768 &&
+      <MobileHeadlineLabelContainer isLarge={isLarge} sectionColour={sectionColour}>
+      <Label >{data[current].paneldata.label}</ Label>
+      <Headline>{data[current].paneldata.headline}</Headline>
+      </MobileHeadlineLabelContainer>
+      }
     <StyledCarousel
       sectionColour={sectionColour}
       isLarge={isLarge}
@@ -92,16 +105,35 @@ const GalleryCarousel: React.FC<{
       showArrows={false}
       renderPagination={({ activePage, onClick }) => {
         return (
-          <Card {...data[current].paneldata} isLarge={isLarge}>
-            <CreditButtonContainer>
-              {isLarge || window.innerWidth < 1024 ? (
-                <Credit>{data[current].paneldata.credit}</Credit>
-              ) : null}
-              <CardButtonContainer isLarge={isLarge}>
-                {/* @ts-ignore */}
-                <CustomPagination activePage={activePage} onClick={onClick} current={current} data={data} />
-              </CardButtonContainer>
-            </CreditButtonContainer>
+        <Card isLarge={isLarge}>
+          {window.innerWidth < 768 ? (
+            <>
+          <MobileCopyCreditContainer>
+          <Copy>{data[current].paneldata.copy}</Copy>
+          </MobileCopyCreditContainer>
+                  <CreditButtonContainer>
+                      <Credit>{'Mobile Credit'}</Credit>
+                    <CardButtonContainer isLarge={isLarge}>
+                      {/* @ts-ignore */}
+                      <CustomPagination activePage={activePage} onClick={onClick} current={current} data={data} />
+                    </CardButtonContainer>
+                  </CreditButtonContainer></>) : (
+                    <>
+                    <div style={{height: '100%'}}>
+                    <Label >{data[current].paneldata.label}</ Label>
+                    <Headline>{data[current].paneldata.headline}</Headline>
+                    <Copy>{data[current].paneldata.copy}</Copy>
+                    {
+                      isLarge ? (null) : (<Credit>{'Credit outside of mobile'}</Credit>) 
+                    }
+                    </div>
+                    <CreditButtonContainer>
+                      {isLarge ? (<Credit>{'Credit large outside of mobile'}</Credit>) : (null)}
+                      <CustomPagination activePage={activePage} onClick={onClick} current={current} data={data} />
+                    </CreditButtonContainer>
+                  </>
+                  )
+          }
           </Card>
         );
       }}
@@ -114,6 +146,7 @@ const GalleryCarousel: React.FC<{
         </ImageContainer>
       ))}
     </StyledCarousel>
+    </CarouselContainer>
   );
 };
 

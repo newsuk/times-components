@@ -14,6 +14,21 @@ export const CardContainer = styled.div<{ isLarge: boolean }>`
   background-color: #f9f9f9;
 `;
 
+export const MobileHeadlineLabelContainer = styled.div`
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 20px;
+  background-color: #f9f9f9;
+`;
+
+export const MobileCopyCreditContainer = styled.div`
+display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+`;
+
 export const CardButtonContainer = styled.div<{ isLarge: boolean }>`
   display: flex;
   justify-content: ${({ isLarge }) => (isLarge ? 'flex-end' : 'space-between')};

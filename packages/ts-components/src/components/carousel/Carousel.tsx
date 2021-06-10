@@ -35,15 +35,15 @@ const Carousel: React.FC = ({ children }) => {
   // @ts-ignore
   const carousel = useRef<ReactElasticCarousel | null>(null);
   const prevSlide = () => {
-    // @ts-ignore
     if (carousel && carousel.current) {
+      // @ts-ignore
       carousel.current.slidePrev();
     }
   };
 
   const nextSlide = () => {
-    // @ts-ignore
     if (carousel && carousel.current) {
+      // @ts-ignore
       carousel.current.slideNext();
     }
   };

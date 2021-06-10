@@ -9,14 +9,13 @@ export const Card: React.FC<{
   credit: string;
 }> = ({ headline, label, copy, children, isLarge, credit }) => {
   return (
-    <CardContainer isLarge={isLarge}>
-      <div style={{ height: '100%' }}>
-        <Label>{label}</Label>
-        <Headline>{headline}</Headline>
-        <Copy>{copy}</Copy>
-        {isLarge || window.innerWidth < 1024 ? null : <Credit>{credit}</Credit>}
-      </div>
+    <>
+    {isLarge || window.innerWidth < 1024 ? null : <Credit>{credit}</Credit>}
+    <CardContainer isLarge={isLarge} >
       {children}
     </CardContainer>
+    <div style={{ height: '100%' }}>
+  </div>
+  </>
   );
 };
