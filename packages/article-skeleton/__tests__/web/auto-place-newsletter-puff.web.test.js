@@ -101,7 +101,7 @@ const renderArticle = (data, isPreview = false) => (
   </MockedProvider>
 );
 
-describe("Article with automatically placed NewsletterPuff", () => {
+xdescribe("Article with automatically placed NewsletterPuff", () => {
   beforeEach(() => {
     window.document.cookie = "nuk-consent-personalisation=;max-age=0";
   });

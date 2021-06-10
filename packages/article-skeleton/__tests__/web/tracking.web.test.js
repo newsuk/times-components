@@ -22,6 +22,11 @@ jest.mock("@times-components/ts-components", () => ({
   OptaFootballSummary: "OptaFootballSummary"
 }));
 
+jest.mock("../../src/article-body/inline-newsletter-puff", () => ({
+  __esModule: true,
+  default: () => "InlineNewsletterPuff"
+}));
+
 beforeEach(() => {
   mockDate.set(1514764800000, 0);
   global.nuk = { user: { registrationType: "logged out" } };
