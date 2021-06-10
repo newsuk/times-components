@@ -1,13 +1,13 @@
 import { stripTags } from '@times-components/utils';
 import get from 'lodash.get';
-import { AlgoliaArticle } from './algoliaRelatedArticles';
+import { AlgoliaArticle, IndexedArticle } from './algoliaRelatedArticles';
 
-const formatSummaryContent = (article: AlgoliaArticle, length: number) => {
+const formatSummaryContent = (article: IndexedArticle, length: number) => {
   const summary = stripTags(article.content, ' ').trim();
   return summary.substring(0, summary.lastIndexOf(' ', length));
 };
 
-const formatSummary = (article: AlgoliaArticle, length: number) => [
+const formatSummary = (article: IndexedArticle, length: number) => [
   {
     children: [
       {

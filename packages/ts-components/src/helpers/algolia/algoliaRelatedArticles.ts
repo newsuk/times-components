@@ -6,6 +6,14 @@ export type AlgoliaArticle = {
   id: string;
   label: string;
   section?: string;
+  topics: any[];
+  headline: string;
+  bylines: any[];
+};
+export type IndexedArticle = {
+  id: string;
+  label: string;
+  section?: string;
   content: string;
   topics: any[];
   url: string;
@@ -44,11 +52,15 @@ const search = async (
     byline ? `"${byline.toLowerCase()}"` : ''
   }`.replace(/\s{2,}/g, ' ');
 
-  const optionalWords = query
-    .match(/\w+|"[^"]+"/g)! // match by single or quoted words
-    .map(word => word.replace(/"/g, '')) // then remove the quotes
-    .filter(word => !word.match(/^[A-Z].*/))
-    .filter(word => word && word.length > 0);
+  const matchedAndQuotedWords = query.match(/\w+|"[^"]+"/g);
+
+  const optionalWords =
+    matchedAndQuotedWords !== null
+      ? matchedAndQuotedWords
+          .map(word => word.replace(/"/g, '')) // then remove the quotes
+          .filter(word => !word.match(/^[A-Z].*/))
+          .filter(word => word && word.length > 0)
+      : undefined;
 
   const filterSection = section && section !== '' ? [`section:${section}`] : [];
   const filterId = articleId ? [`NOT objectID:${articleId}`] : [];
@@ -81,25 +93,39 @@ const search = async (
   return results;
 };
 
+export type SearchRelatedArticlesResult = {
+  query: string;
+  sliceName: string;
+  items: any[];
+  count: number;
+};
 export const searchRelatedArticles = async (
   index: SearchIndex,
   article: AlgoliaArticle,
   analyticsStream: (evt: any) => void
-) => {
+): Promise<SearchRelatedArticlesResult | null> => {
   try {
     let searchResults = await search(index, article, analyticsStream, 7);
 
     // pass 2 - any section
     if (searchResults.hits.length === 0) {
-      searchResults = await search(index, { ...article, section: undefined });
+      searchResults = await search(
+        index,
+        { ...article, section: undefined },
+        analyticsStream
+      );
     }
 
     // pass 3 - lowercase headline to make all words optional
     if (searchResults.hits.length === 0) {
-      searchResults = await search(index, {
-        ...article,
-        headline: article.headline.toLowerCase()
-      });
+      searchResults = await search(
+        index,
+        {
+          ...article,
+          headline: article.headline.toLowerCase()
+        },
+        analyticsStream
+      );
     }
 
     if (searchResults.hits.length > 0) {

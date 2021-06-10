@@ -10,7 +10,8 @@ import algoliasearch from 'algoliasearch';
 
 import {
   searchRelatedArticles,
-  AlgoliaArticle
+  AlgoliaArticle,
+  SearchRelatedArticlesResult
 } from './algoliaRelatedArticles';
 
 const createAlgoliaIndex = (algoliaSearchKeys: AlgoliaSearchKeys) => {
@@ -21,8 +22,10 @@ const createAlgoliaIndex = (algoliaSearchKeys: AlgoliaSearchKeys) => {
 
   return null;
 };
-
-const AlgoliaSearchContext = createContext({});
+type AlgoliaSearchContextType = {
+  getRelatedArticles?: () => Promise<SearchRelatedArticlesResult | null>;
+};
+const AlgoliaSearchContext = createContext<AlgoliaSearchContextType>({});
 
 export const AlgoliaSearchProvider: FC<AlgoliaSearchProps> = ({
   algoliaSearchKeys,
@@ -36,7 +39,7 @@ export const AlgoliaSearchProvider: FC<AlgoliaSearchProps> = ({
 
   const getRelatedArticles = useCallback(
     async () => {
-      if (algoliaIndex) {
+      if (algoliaIndex && article) {
         const results = await searchRelatedArticles(
           algoliaIndex,
           article,
@@ -73,6 +76,6 @@ type AlgoliaSearchKeys = {
 
 type AlgoliaSearchProps = {
   algoliaSearchKeys: AlgoliaSearchKeys;
-  article: AlgoliaArticle;
+  article: AlgoliaArticle | null;
   analyticsStream: (event: any) => void;
 };
