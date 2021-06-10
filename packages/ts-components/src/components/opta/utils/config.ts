@@ -24,7 +24,7 @@ export const initSettings = () => {
 };
 
 const cssUrl =
-  'http://widget.cloud.opta.net/v3/css/v3.football.opta-widgets.css';
+  'https://secure.widget.cloud.opta.net/v3/css/v3.football.opta-widgets.css';
 
 export const initStyleSheet = () => {
   if (!document.head.querySelector(`link[href="${cssUrl}"]`)) {
