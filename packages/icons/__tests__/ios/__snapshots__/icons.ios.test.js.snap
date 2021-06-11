@@ -698,66 +698,17 @@ exports[`12. closeicon renders 1`] = `
 `;
 
 exports[`13. iconforwardchevron renders 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": 40,
-      "width": 20,
-    }
-  }
+<svg
+  aria-label="icon-forward-chevron"
+  viewBox="5c14eb9241a8569e247b0186d9e66a8a"
+  width={20}
 >
-  <ARTGroup
-    transform={
-      Array [
-        0.3333333333333333,
-        0,
-        0,
-        0.3333333333333333,
-        -14,
-        -4,
-      ]
-    }
+  <g
+    fill="#006699"
   >
-    <ARTGroup
-      transform={
-        Array [
-          1,
-          0,
-          0,
-          1,
-          0,
-          0,
-        ]
-      }
-    >
-      <ARTShape
-        d="e19ed863bb3beeae8cbbf42938be46be"
-        fill={
-          Array [
-            0,
-            0,
-            0.4,
-            0.6,
-            1,
-          ]
-        }
-        stroke={null}
-        strokeCap={1}
-        strokeDash={null}
-        strokeJoin={1}
-        strokeWidth={1}
-        transform={
-          Array [
-            1,
-            0,
-            0,
-            1,
-            0,
-            0,
-          ]
-        }
-      />
-    </ARTGroup>
-  </ARTGroup>
-</ARTSurfaceView>
+    <path
+      d="cf23b8f47ac97eeec14ee4c65e472078"
+    />
+  </g>
+</svg>
 `;

@@ -22,7 +22,7 @@ declare module '@times-components/tracking' {
 declare module '@times-components/icons' {
   import { FC } from 'react';
   type IconProps = {
-    fillColour: string;
+    fillColour: string | null;
     height?: number;
     width?: number;
   };
@@ -70,6 +70,7 @@ declare module '@times-components/styleguide' {
     body: string;
     headline: string;
     supporting: string;
+    headlineRegular: string;
   };
 
   export const fonts: Fonts;

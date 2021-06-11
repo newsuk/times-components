@@ -29,3 +29,7 @@ export {
 export {
   NewsletterPuffLink
 } from './components/newsletter-puff/NewsletterPuffLink';
+
+export * from './components/opta/football/fixtures/OptaFootballFixtures';
+export * from './components/opta/football/standings/OptaFootballStandings';
+export * from './components/opta/football/summary/OptaFootballSummary';

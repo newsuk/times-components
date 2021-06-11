@@ -76,7 +76,7 @@ const showcase = {
       type: 'story'
     }
   ],
-  name: 'Typescript Component/View Count Wrapper'
+  name: 'Typescript Component/Helpers/View Count Wrapper'
 };
 
 // @ts-ignore

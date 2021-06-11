@@ -388,35 +388,11 @@ exports[`12. closeicon renders with different colours 1`] = `
 `;
 
 exports[`13. iconforwardchevron renders with different colours 1`] = `
-<RNSVGSvgView>
-  <RNSVGGroup
-    fill={
-      Array [
-        0,
-        -16777216,
-      ]
-    }
-    stroke={null}
+<svg>
+  <g
+    fill="#facade"
   >
-    <RNSVGGroup
-      fill={
-        Array [
-          0,
-          -341282,
-        ]
-      }
-      stroke={null}
-    >
-      <RNSVGPath
-        fill={
-          Array [
-            0,
-            -16777216,
-          ]
-        }
-        stroke={null}
-      />
-    </RNSVGGroup>
-  </RNSVGGroup>
-</RNSVGSvgView>
+    <path />
+  </g>
+</svg>
 `;

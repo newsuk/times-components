@@ -67,6 +67,8 @@ export const Label = styled.div<{ hasImage?: boolean; sectionColour: string }>`
   color: ${({ sectionColour }) => sectionColour};
   font-family: ${fonts.supporting};
   font-size: 12px;
+
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 `;
 
@@ -94,22 +96,4 @@ export const Copy = styled.div`
   font-family: ${fonts.body};
   font-size: 16px;
   line-height: 24px;
-`;
-
-export const Link = styled.a`
-  display: flex;
-  flex-direction: row;
-  margin-top: 16px;
-  color: #bf0000;
-
-  :hover {
-    color: ${colours.functional.secondary};
-  }
-`;
-
-export const LinkText = styled.div`
-  margin-top: 1px;
-  margin-right: 12px;
-  font-family: ${fonts.supporting};
-  font-size: 16px;
 `;
