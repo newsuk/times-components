@@ -19,12 +19,32 @@ export const MobileHeadlineLabelContainer = styled.div`
   height: 30%;
   display: flex;
   flex-direction: column;
-  padding: 12px 20px;
+  padding: 20px 20px 16px 20px;
   background-color: #f9f9f9;
+  @media (min-width: ${breakpoints.medium}px) {
+    display: none;
+  }
+`;
+
+export const MobileCardContent = styled.div`
+  display: block;
+  @media (min-width: ${breakpoints.medium}px) {
+    display: none;
+  }
+`;
+
+export const DesktopCardContent = styled.div`
+  display: none;
+  @media (min-width: ${breakpoints.medium}px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
 `;
 
 export const MobileCopyCreditContainer = styled.div`
-display: flex;
+  display: flex;
   flex-direction: column;
   background-color: #f9f9f9;
 `;
@@ -39,8 +59,10 @@ export const Label = styled.div`
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-bottom: 12px;
   color: ${colours.section.news};
+  @media (min-width: ${breakpoints.medium}px) {
+    padding-bottom: 12px;
+  }
 `;
 
 export const Headline = styled.div`
@@ -48,11 +70,11 @@ export const Headline = styled.div`
   line-height: 32px;
   color: ${colours.functional.brandColour};
   font-family: ${fonts.headline};
-  padding-bottom: 12px;
   transition: opacity 0.5s;
   @media (min-width: ${breakpoints.medium}px) {
     font-size: 32px;
     line-height: 32px;
+    padding-bottom: 12px;
   }
 `;
 
@@ -77,10 +99,6 @@ export const Credit = styled.div`
   line-height: 16px;
   font-family: ${fonts.supporting};
   color: ${colours.functional.secondary};
-`;
-
-export const ImageContainer = styled.div`
-  width: 100%;
 `;
 
 export const CarouselButtonContainer = styled.div`

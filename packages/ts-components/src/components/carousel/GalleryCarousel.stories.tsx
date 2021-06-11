@@ -72,6 +72,7 @@ const showcase = {
           <GalleryCarousel
             data={data}
             isLarge={false}
+            isSmall={false}
             sectionColour="#13354E"
           />
         </div>
@@ -85,11 +86,26 @@ const showcase = {
           <GalleryCarousel
             data={data}
             isLarge={true}
+            isSmall={false}
             sectionColour="#13354E"
           />
         </div>
       ),
       name: 'Carousel Large',
+      type: 'story'
+    },
+    {
+      component: () => (
+        <div style={{ margin: '20px 0px' }}>
+          <GalleryCarousel
+            data={data}
+            isLarge={false}
+            isSmall={true}
+            sectionColour="#13354E"
+          />
+        </div>
+      ),
+      name: 'Carousel Small',
       type: 'story'
     }
   ],

@@ -1,21 +1,40 @@
 import React from 'react';
-import { Headline, Label, Copy, CardContainer, Credit } from './styles';
+import { CardContainer, Credit, MobileCardContent, MobileCopyCreditContainer, Copy, CardButtonContainer, DesktopCardContent, Label, Headline, CreditButtonContainer } from './styles';
+import { DataObj } from './GalleryCarousel';
 
 export const Card: React.FC<{
-  headline: string;
-  label: string;
-  copy: string;
   isLarge: boolean;
-  credit: string;
-}> = ({ headline, label, copy, children, isLarge, credit }) => {
+  data: DataObj;
+}> = ({ children, isLarge, data }) => {
   return (
     <>
-    {isLarge || window.innerWidth < 1024 ? null : <Credit>{credit}</Credit>}
     <CardContainer isLarge={isLarge} >
-      {children}
+    <MobileCardContent>
+          <MobileCopyCreditContainer>
+          <Credit>{data.paneldata.credit}</Credit>
+          <Copy>{data.paneldata.copy}</Copy>
+          </MobileCopyCreditContainer>
+                  <div>
+                    <CardButtonContainer isLarge={isLarge} style={{ justifyContent: 'flex-end' }}>
+                      {/* @ts-ignore */}
+                      {children}
+                    </CardButtonContainer>
+                  </div></MobileCardContent>
+                    <DesktopCardContent>
+                    <div>
+                    <Label >{data.paneldata.label}</ Label>
+                    <Headline>{data.paneldata.headline}</Headline>
+                    <Copy>{data.paneldata.copy}</Copy>
+                    {
+                      !isLarge && window.innerWidth >= 1024 ? (<Credit>{data.paneldata.credit}</Credit>) : (null) 
+                    }
+                    </div>
+                    <CreditButtonContainer>
+                      {window.innerWidth < 1024 || isLarge ? (<Credit>{data.paneldata.credit}</Credit>) : (null)}
+                      {children}
+                    </CreditButtonContainer>
+                  </DesktopCardContent>
     </CardContainer>
-    <div style={{ height: '100%' }}>
-  </div>
   </>
   );
 };
