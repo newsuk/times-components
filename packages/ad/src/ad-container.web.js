@@ -23,7 +23,7 @@ const AdContainer = ({ slotName, style }) => {
 
 const propTypes = {
   slotName: PropTypes.string.isRequired,
-  style: ViewPropTypes.style.isRequired
+  style: ViewPropTypes.style
 };
 
 AdContainer.propTypes = propTypes;
