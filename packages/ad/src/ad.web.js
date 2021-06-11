@@ -119,7 +119,7 @@ class Ad extends Component {
         };
 
     const adView = (
-      <View style={[styles.container, style]}>
+      <View nativeID={`ad-slot-wrapper-${data.slotName}`} style={[styles.container, style]}>
         {isLoading ? null : (
           <DOMContext
             baseUrl={baseUrl}

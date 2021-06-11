@@ -15,7 +15,7 @@ const AdContainer = ({ slotName, style }) => {
   };
 
   return (
-    <View id={slotName} style={[styles.container, style]}>
+    <View nativeID={`ad-slot-wrapper-${slotName}`} style={[styles.container, style]}>
       <div id={`${adMap[slotName]}`} />
     </View>
   );
