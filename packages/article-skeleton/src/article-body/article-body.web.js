@@ -200,6 +200,13 @@ const renderers = ({
           />
         );
 
+      case "opta-football-match-stats-v3":
+      case "opta-football-match-lineups-v3":
+      case "opta-football-top-scorers-v3":
+      case "opta-football-match-commentary-v3":
+      case "opta-football-hub":
+        return null;
+
       case "in-article-puff":
         if (inArticlePuffFlag) {
           return (
