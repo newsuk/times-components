@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.50.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.50.1...@times-components/article-skeleton@1.50.2) (2021-06-14)
+
+
+### Bug Fixes
+
+* OPTA football widgets ([#2722](https://github.com/newsuk/times-components/issues/2722)) ([68d3369](https://github.com/newsuk/times-components/commit/68d3369bca95545a3f1380d301d65edb11690b95))
+
+
+
+
+
 ## [1.50.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.50.0...@times-components/article-skeleton@1.50.1) (2021-06-10)
 
 **Note:** Version bump only for package @times-components/article-skeleton
