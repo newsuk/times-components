@@ -1,16 +1,21 @@
 import styled from 'styled-components';
 import { fonts, colours, breakpoints } from '@times-components/styleguide';
 
-export const CardContainer = styled.div<{ isLarge: boolean }>`
+export const CardContainer = styled.div<{ isLarge: boolean; isSmall: boolean }>`
   width: 100%;
   height: 30%;
+  @media (min-width: ${breakpoints.medium}px) {
+    padding: 20px 20px 24px 20px;
+  }
   @media (min-width: ${breakpoints.wide}px) {
     height: ${({ isLarge }) => (isLarge ? '30%' : 'auto')};
-    width: ${({ isLarge }) => (isLarge ? '100%' : '30%')};
+    width: ${({ isLarge, isSmall }) =>
+      (isLarge && '100%') || (isSmall && '36%') || '27%'};
+    padding: ${({ isLarge }) =>
+      isLarge ? '20px 20px 24px 20px' : '20px 20px 12px 20px'};
   }
   display: flex;
   flex-direction: column;
-  padding: 12px 20px;
   background-color: #f9f9f9;
 `;
 
@@ -19,7 +24,7 @@ export const MobileHeadlineLabelContainer = styled.div`
   height: 30%;
   display: flex;
   flex-direction: column;
-  padding: 20px 20px 16px 20px;
+  padding: 20px 20px 12px 20px;
   background-color: #f9f9f9;
   @media (min-width: ${breakpoints.medium}px) {
     display: none;
@@ -28,6 +33,7 @@ export const MobileHeadlineLabelContainer = styled.div`
 
 export const MobileCardContent = styled.div`
   display: block;
+  padding: 8px 20px;
   @media (min-width: ${breakpoints.medium}px) {
     display: none;
   }
@@ -60,17 +66,14 @@ export const Label = styled.div`
   line-height: 18px;
   text-transform: uppercase;
   color: ${colours.section.news};
-  @media (min-width: ${breakpoints.medium}px) {
-    padding-bottom: 12px;
-  }
+  padding-bottom: 12px;
 `;
 
 export const Headline = styled.div`
   font-size: 24px;
-  line-height: 32px;
+  line-height: 24px;
   color: ${colours.functional.brandColour};
   font-family: ${fonts.headline};
-  transition: opacity 0.5s;
   @media (min-width: ${breakpoints.medium}px) {
     font-size: 32px;
     line-height: 32px;
@@ -78,13 +81,19 @@ export const Headline = styled.div`
   }
 `;
 
-export const Copy = styled.div`
+export const Copy = styled.div<{ isLarge: boolean }>`
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80%;
+  }
   color: ${colours.functional.secondary};
   font-family: ${fonts.body};
   font-size: 16px;
   line-height: 24px;
   padding-bottom: 12px;
   transition: all 0.3s ease;
+  @media (min-width: ${breakpoints.wide}px) {
+    width: ${({ isLarge }) => (isLarge ? '60%' : '100%')};
+  }
 `;
 
 export const CreditButtonContainer = styled.div`
@@ -95,10 +104,15 @@ export const CreditButtonContainer = styled.div`
 `;
 
 export const Credit = styled.div`
+  text-transform: uppercase;
   font-size: 12px;
   line-height: 16px;
   font-family: ${fonts.supporting};
   color: ${colours.functional.secondary};
+  padding-bottom: 8px;
+  @media (min-width: ${breakpoints.medium}px) {
+    padding: 0px;
+  }
 `;
 
 export const CarouselButtonContainer = styled.div`
@@ -121,8 +135,8 @@ export const CarouselButton = styled.button<{ disabled: boolean }>`
   pointer-events: ${({ disabled }) => (disabled ? 'none' : 'auto')};
 
   svg {
-    fill: 'ccc';
     path {
+      fill: ${({ disabled }) => (disabled ? '#CCCCCC' : 'black')};
       height: 10px;
       width: 5px;
     }

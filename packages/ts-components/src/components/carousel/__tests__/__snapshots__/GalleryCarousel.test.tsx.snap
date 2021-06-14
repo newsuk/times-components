@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GalleryCarousel should render the component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-jKJlTe eLEmDc"
+  >
+    <div
+      class="sc-dnqmqq fhzYuf"
+    >
+      <div
+        class="sc-jTzLTM ixoWlg"
+      >
+        Label 1
+      </div>
+      <div
+        class="sc-fjdhpX fphUZD"
+      >
+        Headline 1
+      </div>
+    </div>
+    <div
+      class="rec rec-carousel-wrapper sc-ckVGcZ ekAcMB sc-EHOje eOvqeq"
+    >
+      <div
+        class="rec rec-carousel sc-ifAKCX kQtsWC"
+        style="height: 0px;"
+      >
+        <div
+          class="rec rec-slider-container sc-htpNat iDfeOS"
+        >
+          <div
+            class="rec rec-slider sc-bxivhb ktZOgd"
+            style="transition: all 500ms ease; left: 0px;"
+          >
+            <div
+              class="rec rec-swipable"
+              style="display: flex; flex-direction: row;"
+            >
+              <div
+                class="rec rec-carousel-item rec-carousel-item-0 rec-carousel-item-visible"
+              >
+                <div
+                  class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                  id="0"
+                  style="width: 0px; padding: 0px 0px 0px 0px;"
+                >
+                  <div
+                    style="width: 100%;"
+                    tabindex="0"
+                  >
+                    <div
+                      class="sc-dxgOiQ gOANBU"
+                    >
+                      <img
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rec rec-carousel-item rec-carousel-item-1 rec-carousel-item-hidden rec-carousel-item-next"
+              >
+                <div
+                  class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                  id="1"
+                  style="width: 0px; padding: 0px 0px 0px 0px;"
+                >
+                  <div
+                    style="width: 100%;"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="sc-dxgOiQ gOANBU"
+                    >
+                      <img
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F24f0ce12-c444-11eb-8601-6a2ece3e4634.png?crop=778%2C438%2C84%2C7&resize=1180"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-htoDjs fdATqR"
+      >
+        <div
+          class="sc-iwsKbI gZhBcn"
+        >
+          <div
+            class="sc-gqjmRU hzzIkg"
+          >
+            <div
+              class="sc-kAzzGY itsQkp"
+            >
+              Credit 1
+            </div>
+            <div
+              class="sc-jzJRlG fNixYG"
+            >
+              Copy 1
+            </div>
+          </div>
+          <div>
+            <div
+              class="sc-VigVT eMNzRy"
+              style="justify-content: flex-end;"
+            >
+              <div
+                class="sc-chPdSV kUFnHj"
+              >
+                <button
+                  class="sc-kgoBCf fHcEkt"
+                  data-testid="Previous button"
+                  disabled=""
+                >
+                  <svg
+                    height="14px"
+                    width="10px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="sc-kGXeez cAoLFC"
+                >
+                  <div
+                    class="sc-kpOJdX GZHGi"
+                  />
+                  <div
+                    class="sc-kpOJdX bAzwUp"
+                  />
+                </div>
+                <button
+                  class="nextBtn sc-kgoBCf fWmUGg"
+                  data-testid="Next Button"
+                >
+                  <svg
+                    height="14px"
+                    width="10px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-gZMcBi iZZuwX"
+        >
+          <div>
+            <div
+              class="sc-jTzLTM ixoWlg"
+            >
+              Label 1
+            </div>
+            <div
+              class="sc-fjdhpX fphUZD"
+            >
+              Headline 1
+            </div>
+            <div
+              class="sc-jzJRlG fNixYG"
+            >
+              Copy 1
+            </div>
+            <div
+              class="sc-kAzzGY itsQkp"
+            >
+              Credit 1
+            </div>
+          </div>
+          <div
+            class="sc-cSHVUG kocxql"
+          >
+            <div
+              class="sc-chPdSV kUFnHj"
+            >
+              <button
+                class="sc-kgoBCf fHcEkt"
+                data-testid="Previous button"
+                disabled=""
+              >
+                <svg
+                  height="14px"
+                  width="10px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </button>
+              <div
+                class="sc-kGXeez cAoLFC"
+              >
+                <div
+                  class="sc-kpOJdX GZHGi"
+                />
+                <div
+                  class="sc-kpOJdX bAzwUp"
+                />
+              </div>
+              <button
+                class="nextBtn sc-kgoBCf fWmUGg"
+                data-testid="Next Button"
+              >
+                <svg
+                  height="14px"
+                  width="10px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

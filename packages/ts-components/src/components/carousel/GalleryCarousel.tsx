@@ -2,7 +2,15 @@ import React, { useState } from 'react';
 import ReactElasticCarousel from 'react-elastic-carousel';
 import styled from 'styled-components';
 import { Card } from './Card';
-import { CarouselButtonContainer, CarouselButton, CarouselIndicatorContainer, CarouselIndicator, ImageContainer, Label, Headline, MobileHeadlineLabelContainer } from './styles';
+import {
+  CarouselButtonContainer,
+  CarouselButton,
+  CarouselIndicatorContainer,
+  CarouselIndicator,
+  Label,
+  Headline,
+  MobileHeadlineLabelContainer
+} from './styles';
 import { Arrow } from './Arrow';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { breakpoints } from '@times-components/styleguide';
@@ -13,13 +21,16 @@ export type DataObj = {
     credit: string;
     headline: string;
     label: string;
-  },
+  };
   carouseldata: {
     image: string;
-  }
-}
+  };
+};
 
-const StyledCarousel = styled(ReactElasticCarousel)<{isLarge: boolean, sectionColour: string}>`
+const StyledCarousel = styled(ReactElasticCarousel)<{
+  isLarge: boolean;
+  sectionColour: string;
+}>`
   display: flex;
   height: fit-content;
   align-items: initial;
@@ -28,54 +39,62 @@ const StyledCarousel = styled(ReactElasticCarousel)<{isLarge: boolean, sectionCo
     margin: 0px;
   }
   @media (min-width: ${breakpoints.medium}px) {
-    flex-direction: ${({ isLarge }) => isLarge || window.innerWidth < 1024 ? 'column-reverse' : 'row-reverse'};
+    flex-direction: ${({ isLarge }) =>
+      isLarge || window.innerWidth < 1024 ? 'column-reverse' : 'row-reverse'};
   }
 `;
 
-const CarouselContainer = styled.div<{ sectionColour: string, isLarge: boolean, isSmall: boolean}>`
+const CarouselContainer = styled.div<{
+  sectionColour: string;
+  isLarge: boolean;
+  isSmall: boolean;
+}>`
   border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
-  flex-direction: ${({ isLarge }) => isLarge || window.innerWidth < 1024 ? 'column-reverse' : 'row-reverse'};
-  @media (min-width: ${breakpoints.wide}px){
-    width: ${({ isSmall }) => isSmall ? '78.1%' : '100%'};
+  flex-direction: ${({ isLarge }) =>
+    isLarge || window.innerWidth < 1024 ? 'column-reverse' : 'row-reverse'};
+  @media (min-width: ${breakpoints.wide}px) {
+    width: ${({ isSmall }) => (isSmall ? '82.1%' : '100%')};
   }
-`
+`;
 
 const CustomPagination: React.FC<{
   activePage: number;
   current: number;
   onClick: (current: number) => number;
-  data: DataObj[]
+  data: DataObj[];
 }> = ({ activePage, onClick, current, data }) => {
   return (
-      <CarouselButtonContainer>
-        <CarouselButton
-          disabled={activePage === 0}
-          onClick={() => onClick(current - 1)}
-        >
-          <Arrow size={{ width: "10px", height: "14px" }} />
-        </CarouselButton>
-        <CarouselIndicatorContainer>
-          {/* @ts-ignore */}
-          {data.map((child, index) => {
-            const isActivePage = activePage === index;
-            return (
-              <CarouselIndicator
-                key={index}
-                onClick={() => onClick(index)}
-                active={isActivePage}
-              />
-            );
-          })}
-        </CarouselIndicatorContainer>
-        <CarouselButton
-          disabled={activePage === data.length - 1}
-          className="nextBtn"
-          onClick={() => onClick(current + 1)}
-        >
-          <Arrow size={{ width: "10px", height: "14px" }} />
-        </CarouselButton>
-      </CarouselButtonContainer>
-  )
+    <CarouselButtonContainer>
+      <CarouselButton
+        data-testid="Previous button"
+        disabled={activePage === 0}
+        onClick={() => onClick(current - 1)}
+      >
+        <Arrow size={{ width: '10px', height: '14px' }} />
+      </CarouselButton>
+      <CarouselIndicatorContainer>
+        {/* @ts-ignore */}
+        {data.map((child, index) => {
+          const isActivePage = activePage === index;
+          return (
+            <CarouselIndicator
+              key={index}
+              onClick={() => onClick(index)}
+              active={isActivePage}
+            />
+          );
+        })}
+      </CarouselIndicatorContainer>
+      <CarouselButton
+        data-testid="Next Button"
+        disabled={activePage === data.length - 1}
+        className="nextBtn"
+        onClick={() => onClick(current + 1)}
+      >
+        <Arrow size={{ width: '10px', height: '14px' }} />
+      </CarouselButton>
+    </CarouselButtonContainer>
+  );
 };
 
 const GalleryCarousel: React.FC<{
@@ -89,36 +108,45 @@ const GalleryCarousel: React.FC<{
     setCurrent(data.index);
   };
   return (
-    <CarouselContainer sectionColour={sectionColour} isLarge={isLarge} isSmall={isSmall}>
-      <MobileHeadlineLabelContainer>
-      <Label >{data[current].paneldata.label}</ Label>
-      <Headline>{data[current].paneldata.headline}</Headline>
-      </MobileHeadlineLabelContainer>
-    <StyledCarousel
+    <CarouselContainer
       sectionColour={sectionColour}
       isLarge={isLarge}
-      itemsToScroll={1}
-      itemsToShow={1}
-      isRTL={false}
-      onChange={handleChange}
-      showArrows={false}
-      renderPagination={({ activePage, onClick }) => {
-        return (
-        <Card isLarge={isLarge} data={data[current]}>
-          {/* @ts-ignore */}
-          <CustomPagination activePage={activePage} onClick={onClick} current={current} data={data} />
-          </Card>
-        );
-      }}
+      isSmall={isSmall}
     >
-      {data.map((row) => (
-        <div style={{width: '100%'}}>
-          <AspectRatio ratio="16:9">
-            <img src={row.carouseldata.image}></img>
-          </AspectRatio>
-        </div>
-      ))}
-    </StyledCarousel>
+      <MobileHeadlineLabelContainer>
+        <Label>{data[current].paneldata.label}</Label>
+        <Headline>{data[current].paneldata.headline}</Headline>
+      </MobileHeadlineLabelContainer>
+      <StyledCarousel
+        sectionColour={sectionColour}
+        isLarge={isLarge}
+        itemsToScroll={1}
+        itemsToShow={1}
+        isRTL={false}
+        onChange={handleChange}
+        showArrows={false}
+        renderPagination={({ activePage, onClick }) => {
+          return (
+            <Card isLarge={isLarge} data={data[current]} isSmall={isSmall}>
+              <CustomPagination
+                activePage={activePage}
+                /* @ts-ignore */
+                onClick={onClick}
+                current={current}
+                data={data}
+              />
+            </Card>
+          );
+        }}
+      >
+        {data.map(row => (
+          <div style={{ width: '100%' }}>
+            <AspectRatio ratio="3:2">
+              <img src={row.carouseldata.image} />
+            </AspectRatio>
+          </div>
+        ))}
+      </StyledCarousel>
     </CarouselContainer>
   );
 };

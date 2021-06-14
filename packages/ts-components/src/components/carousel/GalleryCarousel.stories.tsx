@@ -9,7 +9,7 @@ const data = [
       label: 'label 1',
       headline: 'Headline 1',
       copy:
-        'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper id maecenas tempor convallis ac cras',
+        'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper ',
       credit: 'Credit 1'
     },
     carouseldata: {
@@ -62,7 +62,7 @@ const showcase = {
   children: [
     {
       decorator: (storyFn: () => React.ReactNode) => (
-          <ArticleHarness>{storyFn()}</ArticleHarness>
+        <ArticleHarness>{storyFn()}</ArticleHarness>
       ),
       type: 'decorator'
     },
