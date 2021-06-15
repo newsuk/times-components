@@ -1,6 +1,5 @@
 import React from 'react';
-import 'regenerator-runtime/runtime';
-import { render, cleanup, fireEvent } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 import GalleryCarousel from '../GalleryCarousel';

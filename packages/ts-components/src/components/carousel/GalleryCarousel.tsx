@@ -114,7 +114,7 @@ const GalleryCarousel: React.FC<{
       isSmall={isSmall}
     >
       <MobileHeadlineLabelContainer>
-        <Label>{data[current].paneldata.label}</Label>
+        <Label sectionColour={sectionColour}>{data[current].paneldata.label}</Label>
         <Headline>{data[current].paneldata.headline}</Headline>
       </MobileHeadlineLabelContainer>
       <StyledCarousel
@@ -127,7 +127,7 @@ const GalleryCarousel: React.FC<{
         showArrows={false}
         renderPagination={({ activePage, onClick }) => {
           return (
-            <Card isLarge={isLarge} data={data[current]} isSmall={isSmall}>
+            <Card isLarge={isLarge} data={data[current]} isSmall={isSmall} sectionColour={sectionColour}>
               <CustomPagination
                 activePage={activePage}
                 /* @ts-ignore */

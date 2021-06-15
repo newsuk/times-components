@@ -6,7 +6,7 @@ import GalleryCarousel from './GalleryCarousel';
 const data = [
   {
     paneldata: {
-      label: 'label 1',
+      label: 'venezuelan politics',
       headline: 'Headline 1',
       copy:
         'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper ',
