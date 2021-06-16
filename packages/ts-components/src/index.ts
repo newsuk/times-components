@@ -33,3 +33,4 @@ export {
 export * from './components/opta/football/fixtures/OptaFootballFixtures';
 export * from './components/opta/football/standings/OptaFootballStandings';
 export * from './components/opta/football/summary/OptaFootballSummary';
+export * from './components/opta/football/match-stats/OptaFootballMatchStats';
