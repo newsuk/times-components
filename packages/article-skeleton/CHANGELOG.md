@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.51.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.50.2...@times-components/article-skeleton@1.51.0) (2021-06-16)
+
+
+### Features
+
+* OPTA Football - Match Stats ([#2724](https://github.com/newsuk/times-components/issues/2724)) ([4120484](https://github.com/newsuk/times-components/commit/4120484ca972545e7ddfe57403ecb8516feec7eb))
+
+
+
+
+
 ## [1.50.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.50.1...@times-components/article-skeleton@1.50.2) (2021-06-14)
 
 
