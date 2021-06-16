@@ -17,8 +17,8 @@ const showcase = {
         <OptaFootballFixtures
           season="2020"
           competition="3"
-          date_from="2021-06-11"
-          date_to="2021-06-12"
+          date_from="2021-06-20"
+          date_to="2021-07-11"
         />
       ),
       name: 'Fixtures',
@@ -28,12 +28,12 @@ const showcase = {
       component: () => (
         <OptaFootballFixtures
           season="2020"
-          competition="8"
-          date_from="2021-04-03"
-          date_to="2021-04-05"
+          competition="3"
+          date_from="2021-06-11"
+          date_to="2021-07-11"
         />
       ),
-      name: 'Fixtures (results) ',
+      name: 'Fixtures (results)',
       type: 'story'
     }
   ],

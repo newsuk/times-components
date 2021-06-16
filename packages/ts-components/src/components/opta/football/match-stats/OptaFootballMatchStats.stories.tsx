@@ -2,7 +2,7 @@ import React from 'react';
 import { showcaseConverter } from '@times-components/storybook';
 
 import { ArticleHarness } from '../../../../fixtures/article-harness/ArticleHarness';
-import { OptaFootballSummary } from './OptaFootballSummary';
+import { OptaFootballMatchStats } from './OptaFootballMatchStats';
 
 const showcase = {
   children: [
@@ -14,20 +14,20 @@ const showcase = {
     },
     {
       component: () => (
-        <OptaFootballSummary season="2020" competition="3" match="2041900" />
+        <OptaFootballMatchStats season="2020" competition="3" match="2041900" />
       ),
-      name: 'Summary',
+      name: 'MatchStats',
       type: 'story'
     },
     {
       component: () => (
-        <OptaFootballSummary season="2020" competition="8" match="2128595" />
+        <OptaFootballMatchStats season="2020" competition="8" match="2128595" />
       ),
-      name: 'Summary (results)',
+      name: 'MatchStats (results)',
       type: 'story'
     }
   ],
-  name: 'Typescript Component/In Article/Football/Summary'
+  name: 'Typescript Component/In Article/Football/MatchStats'
 };
 
 // @ts-ignore

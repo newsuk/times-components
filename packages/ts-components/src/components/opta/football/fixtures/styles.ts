@@ -106,6 +106,8 @@ export const WidgetContainer = styled(WidgetContainerBase)`
                 @media (min-width: ${breakpoints.medium}px) {
                   width: 60px !important;
                   padding: 6px 0 0 20px;
+                  font-size: 14px;
+                  line-height: 14px;
                 }
               }
 
@@ -184,6 +186,28 @@ export const WidgetContainer = styled(WidgetContainerBase)`
               @media (min-width: ${breakpoints.medium}px) {
                 font-size: 16px;
                 line-height: 16px;
+              }
+            }
+          }
+
+          tr.Opta-agg {
+            background-color: transparent !important;
+
+            td {
+              padding: 10px;
+              color: ${colours.functional.primary};
+              font-family: ${fonts.supporting};
+              font-size: 14px;
+              line-height: 16px;
+              background-color: transparent;
+
+              span {
+                font-size: inherit;
+                line-height: inherit;
+              }
+
+              span.Opta-agg-text {
+                text-transform: uppercase;
               }
             }
           }

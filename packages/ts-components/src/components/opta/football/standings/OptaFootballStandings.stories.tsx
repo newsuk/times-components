@@ -24,13 +24,21 @@ const showcase = {
     },
     {
       component: () => (
+        <OptaFootballStandings season="2020" competition="3" navigation />
+      ),
+      name: 'Standings (dropdown)',
+      type: 'story'
+    },
+    {
+      component: () => (
         <OptaFootballStandings
           season="2020"
           competition="3"
-          navigation={true}
+          default_nav="4"
+          navigation
         />
       ),
-      name: 'Standings (dropdown)',
+      name: 'Standings (default)',
       type: 'story'
     }
   ],

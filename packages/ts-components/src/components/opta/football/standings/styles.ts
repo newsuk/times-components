@@ -33,86 +33,88 @@ export const WidgetContainer = styled(WidgetContainerBase)`
       padding: 0;
       background-color: transparent;
 
-      .Opta-Nav {
-        width: 110px;
-        margin: 20px auto;
-        background-color: transparent;
-        border: 1px solid ${colours.functional.brandColour};
+      &.Opta-Dropdown {
+        .Opta-Nav {
+          width: 110px;
+          margin: 20px auto;
+          background-color: transparent;
+          border: 1px solid ${colours.functional.brandColour};
 
-        h3 {
-          height: 38px;
-          color: ${colours.functional.brandColour};
-          font-family: ${fonts.supporting};
-          font-size: 14px;
-          line-height: 40px;
-          font-weight: normal;
-          text-align: center;
-          background-color: white;
-          border: 0;
-
-          .Opta-Icon {
+          h3 {
             height: 38px;
-            margin: 0 10px 0 0;
-
-            :after {
-              background-position: -180px -19px;
-            }
-          }
-
-          .Opta-Title {
-            height: 38px;
-            padding: 0 0 0 18px;
+            color: ${colours.functional.brandColour};
+            font-family: ${fonts.supporting};
+            font-size: 14px;
             line-height: 40px;
-          }
-
-          &.Opta-Open {
-            .Opta-Icon {
-              :after {
-                background-position: -149px -20px;
-              }
-            }
-          }
-        }
-
-        ul {
-          display: none;
-          top: 0;
-          list-style-type: none;
-          background-color: ${colours.functional.backgroundPrimary};
-          border: 0;
-          border-top: 1px solid ${colours.functional.brandColour};
-
-          li {
-            margin: 0;
+            font-weight: normal;
             text-align: center;
+            background-color: white;
+            border: 0;
 
-            a {
-              height: 28px;
-              padding: 0;
-              color: ${colours.functional.primary};
-              font-family: ${fonts.supporting};
-              font-size: 14px;
-              line-height: 30px;
-              background-color: transparent;
+            .Opta-Icon {
+              height: 38px;
+              margin: 0 10px 0 0;
 
-              &:hover {
-                color: ${colours.functional.brandColour};
-                font-weight: bold;
-                background-color: white;
+              :after {
+                background-position: -180px -19px;
               }
             }
 
-            &:first-of-type {
-              a {
-                height: 32px;
-                padding-top: 4px;
-              }
+            .Opta-Title {
+              height: 38px;
+              padding: 0 0 0 18px;
+              line-height: 40px;
             }
 
-            &:last-of-type {
+            &.Opta-Open {
+              .Opta-Icon {
+                :after {
+                  background-position: -149px -20px;
+                }
+              }
+            }
+          }
+
+          ul {
+            display: none;
+            top: 0;
+            list-style-type: none;
+            background-color: ${colours.functional.backgroundPrimary};
+            border: 0;
+            border-top: 1px solid ${colours.functional.brandColour};
+
+            li {
+              margin: 0;
+              text-align: center;
+
               a {
-                height: 32px;
-                padding-bottom: 4px;
+                height: 28px;
+                padding: 0;
+                color: ${colours.functional.primary};
+                font-family: ${fonts.supporting};
+                font-size: 14px;
+                line-height: 30px;
+                background-color: transparent;
+
+                &:hover {
+                  color: ${colours.functional.brandColour};
+                  font-weight: bold;
+                  background-color: white;
+                }
+              }
+
+              &:first-of-type {
+                a {
+                  height: 32px;
+                  padding-top: 4px;
+                }
+              }
+
+              &:last-of-type {
+                a {
+                  height: 32px;
+                  padding-bottom: 4px;
+                }
               }
             }
           }
