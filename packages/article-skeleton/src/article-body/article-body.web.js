@@ -26,7 +26,8 @@ import {
   AutoNewsletterPuff,
   OptaFootballFixtures,
   OptaFootballStandings,
-  OptaFootballSummary
+  OptaFootballSummary,
+  OptaFootballMatchStats
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -187,6 +188,7 @@ const renderers = ({
           <OptaFootballStandings
             season={attributes.season}
             competition={attributes.competition}
+            default_nav={attributes.group}
             navigation
           />
         );
@@ -201,6 +203,14 @@ const renderers = ({
         );
 
       case "opta-football-match-stats-v3":
+        return (
+          <OptaFootballMatchStats
+            season={attributes.season}
+            competition={attributes.competition}
+            match={attributes.match}
+          />
+        );
+
       case "opta-football-match-lineups-v3":
       case "opta-football-top-scorers-v3":
       case "opta-football-match-commentary-v3":
