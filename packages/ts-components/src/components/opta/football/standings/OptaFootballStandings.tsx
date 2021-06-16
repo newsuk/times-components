@@ -16,8 +16,9 @@ import { WidgetContainer } from './styles';
 export const OptaFootballStandings: React.FC<{
   season: string;
   competition: string;
+  default_nav?: string;
   navigation?: boolean;
-}> = ({ season, competition, navigation }) => {
+}> = ({ season, competition, default_nav = 1, navigation }) => {
   const ref = React.createRef<HTMLDivElement>();
 
   const [isReady, setIsReady] = useState<boolean>(false);
@@ -35,7 +36,7 @@ export const OptaFootballStandings: React.FC<{
           competition,
           live: true,
           navigation: navigation ? 'dropdown' : undefined,
-          default_nav: 1,
+          default_nav,
           show_crests: true,
           breakpoints: 520
         }).outerHTML;
