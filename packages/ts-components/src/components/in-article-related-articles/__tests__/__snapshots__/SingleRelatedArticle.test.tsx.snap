@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SingleRelatedArticle> renders 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa cHawYV"
+    >
+      <div
+        class="sc-bwzfXH dFUiIq"
+      >
+        <a
+          href="https://www.thetimes.co.uk/article/scientists-discover-chocolate-frogs-in-new-guinea-bt3z986bj"
+        >
+          <div
+            class="sc-htpNat kbcxtj"
+          >
+            <img
+              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F464a9dfe-c453-11eb-8601-6a2ece3e4634.jpg?crop=3586%2C2017%2C0%2C187&resize=663"
+            />
+          </div>
+        </a>
+      </div>
+      <section>
+        <a
+          href="https://www.thetimes.co.uk/article/scientists-discover-chocolate-frogs-in-new-guinea-bt3z986bj"
+        >
+          <h3>
+            Scientists discover ‘chocolate frogs’ in New Guinea
+          </h3>
+        </a>
+        <div
+          class="summary"
+        >
+          Popularised by the Harry Potter books, the chocolate frog, it has emerged, is far from fictional. A living version of the confectionery shop favourite has been discovered in the jungles of New Guinea.
+        </div>
+        <div
+          class="publishedTime"
+        >
+          <time
+            datetime="2021-06-03T11:00:00.000Z"
+          >
+            June 03 2021, 12.00pm
+            
+          </time>
+        </div>
+        <div
+          class="byline"
+        >
+          Roger Maynard, Sydney
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`<SingleRelatedArticle> renders no image 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa cHawYV"
+    >
+      <section>
+        <a
+          href="https://www.thetimes.co.uk/article/scientists-discover-chocolate-frogs-in-new-guinea-bt3z986bj"
+        >
+          <h3>
+            Scientists discover ‘chocolate frogs’ in New Guinea
+          </h3>
+        </a>
+        <div
+          class="summary"
+        >
+          Popularised by the Harry Potter books, the chocolate frog, it has emerged, is far from fictional. A living version of the confectionery shop favourite has been discovered in the jungles of New Guinea.
+        </div>
+        <div
+          class="publishedTime"
+        >
+          <time
+            datetime="2021-06-03T11:00:00.000Z"
+          >
+            June 03 2021, 12.00pm
+            
+          </time>
+        </div>
+        <div
+          class="byline"
+        >
+          Roger Maynard, Sydney
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+`;
