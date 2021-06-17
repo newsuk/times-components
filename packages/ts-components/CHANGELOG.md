@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.9.0...@times-components/ts-components@1.10.0) (2021-06-17)
+
+
+### Features
+
+* TE-11 Inline related articles with a single article ([#2716](https://github.com/newsuk/times-components/issues/2716)) ([b1c0141](https://github.com/newsuk/times-components/commit/b1c0141701ee3838d1f39eb9c66cd1b7e41c2cee))
+
+
+
+
+
 # [1.9.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.8.0...@times-components/ts-components@1.9.0) (2021-06-16)
 
 
