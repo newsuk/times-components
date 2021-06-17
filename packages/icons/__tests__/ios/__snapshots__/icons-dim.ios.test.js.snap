@@ -133,12 +133,17 @@ exports[`12. closeicon sets a width when height is set 1`] = `
 `;
 
 exports[`13. iconforwardchevron sets a width when height is set 1`] = `
-<ARTSurfaceView
-  style={
-    Object {
-      "height": NaN,
-      "width": NaN,
-    }
-  }
-/>
+<svg
+  aria-label="icon-forward-chevron"
+  height={50}
+  viewBox="42 12 60 120"
+>
+  <g
+    fill="#006699"
+  >
+    <path
+      d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+    />
+  </g>
+</svg>
 `;

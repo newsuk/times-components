@@ -15,7 +15,7 @@ const AdContainer = ({ slotName, style }) => {
   };
 
   return (
-    <View style={[styles.container, style]}>
+    <View id={slotName} style={[styles.container, style]}>
       <div id={`${adMap[slotName]}`} />
     </View>
   );

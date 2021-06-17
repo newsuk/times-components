@@ -16,7 +16,10 @@ jest.mock("@times-components/ts-components", () => ({
   __esModule: true,
   ...jest.requireActual("@times-components/ts-components"),
   InlineNewsletterPuff: "InlineNewsletterPuff",
-  AutoNewsletterPuff: "AutoNewsletterPuff"
+  AutoNewsletterPuff: "AutoNewsletterPuff",
+  OptaFootballFixtures: "OptaFootballFixtures",
+  OptaFootballStandings: "OptaFootballStandings",
+  OptaFootballSummary: "OptaFootballSummary"
 }));
 
 beforeEach(() => {

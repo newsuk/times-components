@@ -2,15 +2,9 @@ import React from 'react';
 
 import { showcaseConverter } from '@times-components/storybook';
 
-import { action } from '@storybook/addon-actions';
-
 import { TrackingContextProvider } from './TrackingContextProvider';
 
-const analyticsStream = (event: any) => {
-  // tslint:disable-next-line:no-console
-  console.log('analytics-action', event);
-  action('analytics-action')(event);
-};
+import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
 const showcase = {
   children: [
@@ -64,13 +58,12 @@ const showcase = {
           </TrackingContextProvider>
         );
       },
-      name: 'Basic',
+      name: 'Tracking Context Provider',
       platform: 'web',
       type: 'story'
     }
   ],
-  name: 'Typescript Component/Tracking Context Provider'
+  name: 'Typescript Component/Helpers'
 };
 
-// @ts-ignore
 showcaseConverter(module, showcase);

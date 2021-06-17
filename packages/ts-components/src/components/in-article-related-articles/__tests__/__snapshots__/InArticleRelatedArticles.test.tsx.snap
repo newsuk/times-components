@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RelatedArticle> default 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa dAsVEa"
+    >
+      <div
+        class="heading"
+      >
+        Heading
+      </div>
+      <nav>
+        <div
+          class="sc-bwzfXH bVPNCq"
+        >
+          <div>
+            <div
+              class="sc-htpNat EVaYl"
+            >
+              <div
+                class="sc-bZQynM klcTLN"
+              >
+                <img
+                  src="https://image1.jpg"
+                />
+              </div>
+            </div>
+            <div
+              class="sc-bxivhb kUXZco"
+            >
+              label1
+            </div>
+            <div
+              class="headline"
+            >
+              headline1
+            </div>
+          </div>
+          <a
+            class="sc-ifAKCX jyDaJF"
+            href="https://link1"
+          >
+            <div
+              class="sc-EHOje cjnDfc"
+            >
+              Read Full Story
+            </div>
+            <svg
+              aria-label="icon-forward-chevron"
+              height="18"
+              viewBox="42 12 60 120"
+              width="8"
+            >
+              <g>
+                <path
+                  d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div
+          class="sc-bwzfXH bVPNCq"
+        >
+          <div>
+            <div
+              class="sc-htpNat EVaYl"
+            >
+              <div
+                class="sc-bZQynM klcTLN"
+              >
+                <img
+                  src="https://image2.jpg"
+                />
+              </div>
+            </div>
+            <div
+              class="sc-bxivhb kUXZco"
+            >
+              label2
+            </div>
+            <div
+              class="headline"
+            >
+              headline2
+            </div>
+          </div>
+          <a
+            class="sc-ifAKCX jyDaJF"
+            href="https://link2"
+          >
+            <div
+              class="sc-EHOje cjnDfc"
+            >
+              Read Full Story
+            </div>
+            <svg
+              aria-label="icon-forward-chevron"
+              height="18"
+              viewBox="42 12 60 120"
+              width="8"
+            >
+              <g>
+                <path
+                  d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div
+          class="sc-bwzfXH bVPNCq"
+        >
+          <div>
+            <div
+              class="sc-htpNat EVaYl"
+            >
+              <div
+                class="sc-bZQynM klcTLN"
+              >
+                <img
+                  src="https://image3.jpg"
+                />
+              </div>
+            </div>
+            <div
+              class="sc-bxivhb kUXZco"
+            >
+              label3
+            </div>
+            <div
+              class="headline"
+            >
+              headline3
+            </div>
+          </div>
+          <a
+            class="sc-ifAKCX jyDaJF"
+            href="https://link3"
+          >
+            <div
+              class="sc-EHOje cjnDfc"
+            >
+              Read Full Story
+            </div>
+            <svg
+              aria-label="icon-forward-chevron"
+              height="18"
+              viewBox="42 12 60 120"
+              width="8"
+            >
+              <g>
+                <path
+                  d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`<RelatedArticle> no images 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa dAsVEa"
+    >
+      <div
+        class="heading"
+      >
+        Heading
+      </div>
+      <nav>
+        <div
+          class="sc-bwzfXH bVPNCq"
+        >
+          <div>
+            <div
+              class="sc-bxivhb kUXZco"
+            >
+              label1
+            </div>
+            <div
+              class="headline"
+            >
+              headline1
+            </div>
+          </div>
+          <a
+            class="sc-ifAKCX jyDaJF"
+            href="https://link1"
+          >
+            <div
+              class="sc-EHOje cjnDfc"
+            >
+              Read Full Story
+            </div>
+            <svg
+              aria-label="icon-forward-chevron"
+              height="18"
+              viewBox="42 12 60 120"
+              width="8"
+            >
+              <g>
+                <path
+                  d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div
+          class="sc-bwzfXH bVPNCq"
+        >
+          <div>
+            <div
+              class="sc-bxivhb kUXZco"
+            >
+              label2
+            </div>
+            <div
+              class="headline"
+            >
+              headline2
+            </div>
+          </div>
+          <a
+            class="sc-ifAKCX jyDaJF"
+            href="https://link2"
+          >
+            <div
+              class="sc-EHOje cjnDfc"
+            >
+              Read Full Story
+            </div>
+            <svg
+              aria-label="icon-forward-chevron"
+              height="18"
+              viewBox="42 12 60 120"
+              width="8"
+            >
+              <g>
+                <path
+                  d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <div
+          class="sc-bwzfXH bVPNCq"
+        >
+          <div>
+            <div
+              class="sc-bxivhb kUXZco"
+            >
+              label3
+            </div>
+            <div
+              class="headline"
+            >
+              headline3
+            </div>
+          </div>
+          <a
+            class="sc-ifAKCX jyDaJF"
+            href="https://link3"
+          >
+            <div
+              class="sc-EHOje cjnDfc"
+            >
+              Read Full Story
+            </div>
+            <svg
+              aria-label="icon-forward-chevron"
+              height="18"
+              viewBox="42 12 60 120"
+              width="8"
+            >
+              <g>
+                <path
+                  d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</body>
+`;

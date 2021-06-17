@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import sanitizeHtml from 'sanitize-html';
 
 import { Placeholder } from '@times-components/image';
-import { IconForwardChevron } from '@times-components/icons';
 
 import { AspectRatios } from '../../types/aspectRatio';
 
@@ -13,6 +12,7 @@ import {
 } from '../../helpers/tracking/TrackingContextProvider';
 
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
+import { InArticleLink } from '../in-article-link/InArticleLink';
 
 import {
   PlaceholderContainer,
@@ -21,9 +21,7 @@ import {
   ContentContainer,
   Label,
   Headline,
-  Copy,
-  Link,
-  LinkText
+  Copy
 } from './styles';
 
 const scrollEvent = {
@@ -41,19 +39,14 @@ const clickEvent = (buttonLabel: string) => ({
   }
 });
 
-const sanitiseCopy = (copy: string) =>
-  sanitizeHtml(copy, {
-    allowedTags: [],
-    allowedAttributes: {}
-  });
+const sanitiseCopy = (copy: string, allowedTags: string[] = []) =>
+  sanitizeHtml(copy, { allowedTags, allowedAttributes: {} });
 
 export const InArticlePuff: React.FC<{
   sectionColour: string;
   forceImageAspectRatio?: AspectRatios;
   sanitiseHtml?: boolean;
 }> = ({ sectionColour, forceImageAspectRatio, sanitiseHtml }) => {
-  const [colour, setColour] = useState('#bf0000');
-
   const handleClick = (
     fireAnalyticsEvent: (evt: TrackingContext) => void,
     buttonLabel: string
@@ -124,23 +117,28 @@ export const InArticlePuff: React.FC<{
               >
                 <Headline hasImage={hasImage}>{headline}</Headline>
               </a>
-              {copy && <Copy>{sanitiseHtml ? sanitiseCopy(copy) : copy}</Copy>}
+              {copy && (
+                <>
+                  {sanitiseHtml ? (
+                    <Copy>{sanitiseCopy(copy)}</Copy>
+                  ) : (
+                    <Copy
+                      dangerouslySetInnerHTML={{
+                        __html: sanitiseCopy(copy, ['b', 'i'])
+                      }}
+                    />
+                  )}
+                </>
+              )}
             </div>
 
-            <Link
-              href={link}
+            <InArticleLink
+              link={link}
+              linkText={linkText || 'Read more'}
               onClick={() =>
-                handleClick(
-                  fireAnalyticsEvent,
-                  linkText ? linkText : 'Read more'
-                )
+                handleClick(fireAnalyticsEvent, linkText || 'Read more')
               }
-              onMouseOver={() => setColour('#696969')}
-              onMouseLeave={() => setColour('#BF0000')}
-            >
-              <LinkText>{linkText ? linkText : 'Read more'}</LinkText>
-              <IconForwardChevron fillColour={colour} height={18} width={8} />
-            </Link>
+            />
           </ContentContainer>
         </Container>
       )}

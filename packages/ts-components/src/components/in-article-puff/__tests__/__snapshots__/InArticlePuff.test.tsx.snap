@@ -3,10 +3,10 @@
 exports[`InArticlePuff should render optional fields correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat eFhDDM"
+    class="sc-ifAKCX fAFQln"
   >
     <div
-      class="sc-bxivhb jTbWOQ"
+      class="sc-EHOje elqBFK"
     >
       <a
         href="https://www.thetimes.co.uk"
@@ -21,11 +21,11 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
       </a>
     </div>
     <div
-      class="sc-ifAKCX hEchaI"
+      class="sc-bZQynM hkSfiX"
     >
       <div>
         <div
-          class="sc-EHOje iMbGrn"
+          class="sc-gzVnrw ecbdWW"
         >
           interactive
         </div>
@@ -33,29 +33,28 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
           href="https://www.thetimes.co.uk"
         >
           <h4
-            class="sc-bZQynM gxutOq"
+            class="sc-htoDjs gezxoU"
           >
             Where can I get a Covid vaccine in England?
           </h4>
         </a>
         <div
-          class="sc-gzVnrw bgyHaj"
+          class="sc-dnqmqq dDGXyB"
         >
           Enter your postcode to find your nearest centre
         </div>
       </div>
       <a
-        class="sc-htoDjs dXEZYR"
+        class="sc-bwzfXH gpLJAb"
         href="https://www.thetimes.co.uk"
       >
         <div
-          class="sc-dnqmqq uBEIo"
+          class="sc-htpNat irNLqr"
         >
           Read the full article
         </div>
         <svg
           class="iconForwardChevron"
-          fillcolour="#bf0000"
           height="18"
           width="8"
         >
@@ -70,14 +69,14 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
 exports[`InArticlePuff should render required fields correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat eFhDDM"
+    class="sc-ifAKCX fAFQln"
   >
     <div
-      class="sc-ifAKCX lcAKjm"
+      class="sc-bZQynM ejQuEv"
     >
       <div>
         <div
-          class="sc-EHOje CxSXN"
+          class="sc-gzVnrw jvRfq"
         >
           interactive
         </div>
@@ -85,24 +84,23 @@ exports[`InArticlePuff should render required fields correctly 1`] = `
           href="https://www.thetimes.co.uk"
         >
           <h4
-            class="sc-bZQynM gmbtaS"
+            class="sc-htoDjs eLDtEi"
           >
             Where can I get a Covid vaccine in England?
           </h4>
         </a>
       </div>
       <a
-        class="sc-htoDjs dXEZYR"
+        class="sc-bwzfXH gpLJAb"
         href="https://www.thetimes.co.uk"
       >
         <div
-          class="sc-dnqmqq uBEIo"
+          class="sc-htpNat irNLqr"
         >
           Read more
         </div>
         <svg
           class="iconForwardChevron"
-          fillcolour="#bf0000"
           height="18"
           width="8"
         >
@@ -117,7 +115,7 @@ exports[`InArticlePuff should render required fields correctly 1`] = `
 exports[`InArticlePuff should render the initial loading state correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bwzfXH dTniwG"
+    class="sc-bxivhb egvpqE"
   >
     <div>
       Placeholder
