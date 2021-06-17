@@ -7,9 +7,9 @@ import ArticleExtras from "./src/article-extras";
 import { relatedArticleSlice, topics } from "./fixtures/article-extras";
 
 const algoliaSearchKeys = {
-  applicationId: "",
-  apiKey: "",
-  indexName: ""
+  applicationId: process.env.STORYBOOK_ALGOLIA_ID || "",
+  apiKey: process.env.STORYBOOK_ALGOLIA_KEY || "",
+  indexName: process.env.STORYBOOK_ALGOLIA_INDEX || ""
 };
 
 export default {

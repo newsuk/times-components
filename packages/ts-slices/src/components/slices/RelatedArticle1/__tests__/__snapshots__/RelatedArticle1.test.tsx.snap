@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Lead1 /> should render an LEAD_1 slice correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa sc-htpNat cjntsS"
+  >
+    <div
+      class="sc-bwzfXH sc-bxivhb jpYeVk"
+    >
+      <div>
+        Article
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
