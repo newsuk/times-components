@@ -12,6 +12,9 @@ export type RelatedArticleType = {
   headline: string;
   link: string;
   image?: string;
+  summary?: string;
+  publishedTime?: string;
+  byline?: string;
 };
 
 type RelatedArticleProps = {
@@ -29,13 +32,17 @@ export const RelatedArticle = ({
     <div>
       {image && (
         <RelatedArticlesImageContainer>
-          <AspectRatio ratio="16:9">
-            <img src={image} />
-          </AspectRatio>
+          <a href={link}>
+            <AspectRatio ratio="16:9">
+              <img src={image} />
+            </AspectRatio>
+          </a>
         </RelatedArticlesImageContainer>
       )}
       <SectionLabel sectionColour={sectionColour}>{label}</SectionLabel>
-      <div className="headline">{headline}</div>
+      <a href={link}>
+        <h3>{headline}</h3>
+      </a>
     </div>
     <InArticleLink link={link} linkText="Read Full Story" />
   </RelatedArticleContainer>

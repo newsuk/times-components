@@ -29,17 +29,22 @@ const App = () => {
     [getRelatedArticles]
   );
 
-  const relatedArticles: RelatedArticleType[]|null = results?.items.map(result => ({
-    label: result.article.label,
-    headline: result.article.headline,
-    link: result.article.url,
-    image: result.article.leadAsset?.crop169?.url
-  })) ?? null;
+  const relatedArticles: RelatedArticleType[] = results
+    ? results.items.map(result => ({
+        label: result.article.label,
+        headline: result.article.headline,
+        link: result.article.url,
+        image:
+          result.article.leadAsset &&
+          result.article.leadAsset.crop169 &&
+          result.article.leadAsset.crop169.url
+      }))
+    : [];
 
   // tslint:disable-next-line:no-console
-  console.log({results});
+  console.log({ results });
   // tslint:disable-next-line:no-console
-  console.log({relatedArticles});
+  console.log({ relatedArticles });
 
   return (
     <div>
