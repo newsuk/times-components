@@ -23,7 +23,11 @@ import {
   InArticlePuff,
   InlineNewsletterPuff,
   PreviewNewsletterPuff,
-  AutoNewsletterPuff
+  AutoNewsletterPuff,
+  OptaFootballFixtures,
+  OptaFootballStandings,
+  OptaFootballSummary,
+  OptaFootballMatchStats
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -169,17 +173,57 @@ const renderers = ({
           />
         );
 
+      case "opta-football-fixtures-v3":
+        return (
+          <OptaFootballFixtures
+            season={attributes.season}
+            competition={attributes.competition}
+            date_from={attributes["date-from"]}
+            date_to={attributes["date-to"]}
+          />
+        );
+
+      case "opta-football-standings-v3":
+        return (
+          <OptaFootballStandings
+            season={attributes.season}
+            competition={attributes.competition}
+            default_nav={attributes.group}
+            navigation
+          />
+        );
+
+      case "opta-football-match-summary-v3":
+        return (
+          <OptaFootballSummary
+            season={attributes.season}
+            competition={attributes.competition}
+            match={attributes.match}
+          />
+        );
+
+      case "opta-football-match-stats-v3":
+        return (
+          <OptaFootballMatchStats
+            season={attributes.season}
+            competition={attributes.competition}
+            match={attributes.match}
+          />
+        );
+
+      case "opta-football-match-lineups-v3":
+      case "opta-football-top-scorers-v3":
+      case "opta-football-match-commentary-v3":
+      case "opta-football-hub":
+        return null;
+
       case "in-article-puff":
         if (inArticlePuffFlag) {
           return (
             <Context.Consumer key={key}>
               {({ theme }) => (
                 <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                  <InArticlePuff
-                    sectionColour={theme.sectionColour}
-                    forceImageAspectRatio="3:2"
-                    sanitiseHtml
-                  />
+                  <InArticlePuff sectionColour={theme.sectionColour} />
                 </FetchProvider>
               )}
             </Context.Consumer>

@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.8.0...@times-components/ts-components@1.9.0) (2021-06-16)
+
+
+### Features
+
+* OPTA Football - Match Stats ([#2724](https://github.com/newsuk/times-components/issues/2724)) ([4120484](https://github.com/newsuk/times-components/commit/4120484ca972545e7ddfe57403ecb8516feec7eb))
+
+
+
+
+
+# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.7.0...@times-components/ts-components@1.8.0) (2021-06-10)
+
+
+### Features
+
+* OPTA football widgets ([#2719](https://github.com/newsuk/times-components/issues/2719)) ([096a660](https://github.com/newsuk/times-components/commit/096a660a495899c216fdb99fad009e223efbd13c))
+
+
+
+
+
+# [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.6.0...@times-components/ts-components@1.7.0) (2021-06-10)
+
+
+### Features
+
+* **TE:** OPTA football widgets ([#2718](https://github.com/newsuk/times-components/issues/2718)) ([c84757e](https://github.com/newsuk/times-components/commit/c84757eb85b5f757fb57f49c1278baad4fa47ccd))
+
+
+
+
+
 # [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.5.0...@times-components/ts-components@1.6.0) (2021-06-04)
 
 
