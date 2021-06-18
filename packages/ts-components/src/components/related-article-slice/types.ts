@@ -11,16 +11,16 @@ type Byline = {
   children: Array<{
     name: string;
     children: any[];
-    attributes: { value: string };
+    attributes: { [attribute: string]: string };
   }>;
-  attributes?: { slug: string };
+  attributes?: { [attribute: string]: string };
 };
 
 type Bylines = Array<{ byline: Byline[]; image?: any }>;
 
 type Summary = {
   name: string;
-  attributes?: { value: string };
+  attributes?: { [attribute: string]: string };
   children: Summary[];
 };
 
@@ -42,17 +42,17 @@ export type RelatedArticle = {
   updatedTime?: string;
   template?: string;
   url: string;
-  hasVideo: boolean;
+  hasVideo?: boolean;
   publicationName: string;
   section: string;
-  shortIdentifier: string;
-  slug: string;
+  shortIdentifier?: string;
+  slug?: string;
 };
 
 export type RelatedArticles = {
   sliceName: string;
   items: Array<{
-    leadAsset: Asset | null;
+    leadAsset?: Asset | null;
     article: RelatedArticle;
   }>;
 };

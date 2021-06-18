@@ -6,6 +6,13 @@ import { RelatedArticleSlice } from './RelatedArticleSlice';
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 import { RelatedArticles } from './types';
 import { select } from '@storybook/addon-knobs';
+import styled from 'styled-components';
+
+const Container = styled.div`
+  .RelatedArticleSlice {
+    display: block !important;
+  }
+`;
 
 storiesOf('Typescript Component', module).add('Related Articles Slice', () => {
   const numberOfArticles = select(
@@ -23,12 +30,14 @@ storiesOf('Typescript Component', module).add('Related Articles Slice', () => {
   // tslint:disable-next-line:no-console
   const handleClick = console.log;
   return (
-    <RelatedArticleSlice
-      slice={slice}
-      heading="Related Articles"
-      clickHandler={handleClick}
-      analyticsStream={analyticsStream}
-    />
+    <Container>
+      <RelatedArticleSlice
+        slice={slice}
+        heading="Related Articles"
+        clickHandler={handleClick}
+        analyticsStream={analyticsStream}
+      />
+    </Container>
   );
 });
 

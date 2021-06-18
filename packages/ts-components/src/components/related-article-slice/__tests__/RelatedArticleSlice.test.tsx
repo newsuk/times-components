@@ -65,6 +65,7 @@ describe('RelatedArticleSlice', () => {
     expect(analyticsStream).toBeCalledWith({
       action: 'Pressed',
       attrs: {
+        articleCount: '3',
         eventTime: '2021-06-18T07:06:40.000Z',
         targetArticleHeadline: 'How Gymshark recruits the best young people',
         targetArticleId: '7f750402-acb6-11eb-bda6-057976012425',

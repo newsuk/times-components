@@ -25,8 +25,18 @@ export const RelatedArticleSlice = ({
   analyticsStream
 }: RelatedArticleSliceProps) => {
   return (
-    <TrackingContextProvider analyticsStream={analyticsStream}>
-      {({ fireAnalyticsEvent }) => {
+    <TrackingContextProvider
+      analyticsStream={analyticsStream}
+      scrolledEvent={{
+        action: 'Scrolled',
+        component: 'RelatedArticles',
+        object: 'RelatedArticles',
+        attrs: {
+          articleCount: `${slice.items.length}`
+        }
+      }}
+    >
+      {({ fireAnalyticsEvent, intersectObserverRef }) => {
         const handleClick = (
           event: MouseEventType,
           article: SliceArticle,
@@ -40,12 +50,13 @@ export const RelatedArticleSlice = ({
             attrs: {
               targetArticleHeadline: article.headline,
               targetArticleId: article.id!,
-              targetArticleUrl: article.url
+              targetArticleUrl: article.url,
+              articleCount: `${slice.items.length}`
             }
           });
         };
         return (
-          <Container>
+          <Container ref={intersectObserverRef} className="RelatedArticleSlice">
             {heading && <div className="heading">{heading}</div>}
             <Slice slice={formatSlice(slice)} clickHandler={handleClick} />;
           </Container>

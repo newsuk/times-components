@@ -72,7 +72,7 @@ const formatArticle = (
     dateUpdated: article.updatedTime,
     images: {
       alt: '',
-      crops: [...leadAssetCrops, ...crops]
+      crops: [...crops, ...leadAssetCrops]
     }
   };
 };

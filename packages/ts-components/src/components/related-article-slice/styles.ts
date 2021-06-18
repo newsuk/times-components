@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { colours, fonts } from '@times-components/styleguide';
 
 export const Container = styled.div`
+  display: none;
   .heading {
     text-align: center;
     font-family: ${fonts.headline};

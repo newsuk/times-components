@@ -3,7 +3,7 @@
 exports[`RelatedArticleSlice renders 1 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa jfNCEq"
+    class="RelatedArticleSlice sc-bdVaJa bfgsAb"
   >
     <div
       class="heading"
@@ -78,7 +78,7 @@ exports[`RelatedArticleSlice renders 1 1`] = `
 exports[`RelatedArticleSlice renders 2 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa jfNCEq"
+    class="RelatedArticleSlice sc-bdVaJa bfgsAb"
   >
     <div
       class="heading"
@@ -216,7 +216,7 @@ exports[`RelatedArticleSlice renders 2 1`] = `
 exports[`RelatedArticleSlice renders 3 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa jfNCEq"
+    class="RelatedArticleSlice sc-bdVaJa bfgsAb"
   >
     <div
       class="heading"
