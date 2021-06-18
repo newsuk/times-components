@@ -32,10 +32,11 @@ exports[`RelatedArticleSlice renders 1 1`] = `
                   class="styles__ImageRatio-sc-8lglkt-1 gbnXjW"
                 >
                   <div
-                    class="styles__LazyContainer-qsbah5-0 iKBUbT"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3744%2C0%2C0&resize=80"
                     />
                   </div>
                 </div>
@@ -70,7 +71,6 @@ exports[`RelatedArticleSlice renders 1 1`] = `
         </article>
       </div>
     </div>
-    ;
   </div>
 </DocumentFragment>
 `;
@@ -107,10 +107,11 @@ exports[`RelatedArticleSlice renders 2 1`] = `
                   class="styles__ImageRatio-sc-8lglkt-1 bMAlMW"
                 >
                   <div
-                    class="styles__LazyContainer-qsbah5-0 iKBUbT"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3744%2C0%2C0&resize=80"
                     />
                   </div>
                 </div>
@@ -118,10 +119,11 @@ exports[`RelatedArticleSlice renders 2 1`] = `
                   class="styles__ImageRatio-sc-8lglkt-1 lhnvcZ"
                 >
                   <div
-                    class="styles__LazyContainer-qsbah5-0 iKBUbT"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3159%2C0%2C293&resize=80"
                     />
                   </div>
                 </div>
@@ -169,10 +171,11 @@ exports[`RelatedArticleSlice renders 2 1`] = `
                   class="styles__ImageRatio-sc-8lglkt-1 bMAlMW"
                 >
                   <div
-                    class="styles__LazyContainer-qsbah5-0 iKBUbT"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcbfae118-aef3-11eb-9dc9-5a05c2885d62.jpg?crop=4126%2C2750%2C14%2C1764&resize=80"
                     />
                   </div>
                 </div>
@@ -180,10 +183,11 @@ exports[`RelatedArticleSlice renders 2 1`] = `
                   class="styles__ImageRatio-sc-8lglkt-1 lhnvcZ"
                 >
                   <div
-                    class="styles__LazyContainer-qsbah5-0 iKBUbT"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcbfae118-aef3-11eb-9dc9-5a05c2885d62.jpg?crop=4105%2C2309%2C42%2C1828&resize=80"
                     />
                   </div>
                 </div>
@@ -208,7 +212,6 @@ exports[`RelatedArticleSlice renders 2 1`] = `
         </article>
       </div>
     </div>
-    ;
   </div>
 </DocumentFragment>
 `;
@@ -245,10 +248,11 @@ exports[`RelatedArticleSlice renders 3 1`] = `
                   class="styles__ImageRatio-sc-8lglkt-1 bMAlMW"
                 >
                   <div
-                    class="styles__LazyContainer-qsbah5-0 iKBUbT"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3744%2C0%2C0&resize=80"
                     />
                   </div>
                 </div>
@@ -256,10 +260,11 @@ exports[`RelatedArticleSlice renders 3 1`] = `
                   class="styles__ImageRatio-sc-8lglkt-1 lhnvcZ"
                 >
                   <div
-                    class="styles__LazyContainer-qsbah5-0 iKBUbT"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3159%2C0%2C293&resize=80"
                     />
                   </div>
                 </div>
@@ -310,10 +315,11 @@ exports[`RelatedArticleSlice renders 3 1`] = `
                     class="styles__ImageRatio-sc-8lglkt-1 gbnXjW"
                   >
                     <div
-                      class="styles__LazyContainer-qsbah5-0 iKBUbT"
+                      class="styles__LazyContainer-qsbah5-0 jRxzJB"
                     >
                       <img
                         alt=""
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcbfae118-aef3-11eb-9dc9-5a05c2885d62.jpg?crop=4126%2C2750%2C14%2C1764&resize=80"
                       />
                     </div>
                   </div>
@@ -353,10 +359,11 @@ exports[`RelatedArticleSlice renders 3 1`] = `
                   class="styles__ImageRatio-sc-8lglkt-1 gbnXjW"
                 >
                   <div
-                    class="styles__LazyContainer-qsbah5-0 iKBUbT"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cb358-cce1-11eb-9bfa-a3bc386e6928.jpg?crop=1175%2C784%2C277%2C106&resize=80"
                     />
                   </div>
                 </div>
@@ -386,7 +393,6 @@ exports[`RelatedArticleSlice renders 3 1`] = `
         </article>
       </div>
     </div>
-    ;
   </div>
 </DocumentFragment>
 `;

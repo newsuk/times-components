@@ -58,7 +58,7 @@ export const RelatedArticleSlice = ({
         return (
           <Container ref={intersectObserverRef} className="RelatedArticleSlice">
             {heading && <div className="heading">{heading}</div>}
-            <Slice slice={formatSlice(slice)} clickHandler={handleClick} />;
+            <Slice slice={formatSlice(slice)} clickHandler={handleClick} />
           </Container>
         );
       }}

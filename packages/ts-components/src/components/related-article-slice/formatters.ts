@@ -1,4 +1,5 @@
 import { SliceArticle } from '@times-components/ts-slices';
+import get from 'lodash.get';
 import { Asset, RelatedArticle, RelatedArticles } from './types';
 
 const decodeEntities = (str: string) =>
@@ -48,16 +49,17 @@ const formatArticle = (
     [];
 
   const leadAsset = {
-    title: article.leadAsset && article.leadAsset.title,
+    title: get(article, 'leadAsset.title'),
     crops: leadAssetCrops
   };
   const summary =
-    (numberOfArticles === 1 &&
-      article.summary225[0].children[0].attributes &&
-      article.summary225[0].children[0].attributes.value) ||
-    undefined;
+    numberOfArticles === 1 &&
+    get(article, 'summary225[0].children[0].attributes.value');
 
-  const byline = article.bylines[0].byline[0].children[0].attributes.value;
+  const byline = get(
+    article,
+    'bylines[0].byline[0].children[0].attributes.value'
+  );
 
   const crops = (article.leadAsset && flattenAssets(article.leadAsset)) || [];
 
