@@ -5,9 +5,10 @@ export const Container = styled.div`
   .heading {
     text-align: center;
     font-family: ${fonts.headline};
-    font-size: 28px;
-    padding: 16px;
-    margin: 16px 0;
+    font-size: 40px;
+    line-height: 40px;
+    padding: 24px;
+    margin: 40px 0;
     border-top: 1px solid ${colours.functional.keyline};
     border-bottom: 1px solid ${colours.functional.keyline};
   }

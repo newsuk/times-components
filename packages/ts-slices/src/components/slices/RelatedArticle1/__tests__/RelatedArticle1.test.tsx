@@ -3,21 +3,23 @@ import { render } from '@testing-library/react';
 
 import { getSlice } from '../../../../fixtures/getSlice';
 
-import Lead1 from '../RelatedArticle1';
+import RelatedArticle1 from '../RelatedArticle1';
 
 jest.mock('../../../article/Article/Article', () => ({
   Article: () => <div>Article</div>
 }));
 
-describe('<Lead1 />', () => {
+describe('<RelatedArticle1 />', () => {
   afterAll(() => {
     jest.clearAllMocks();
   });
 
-  it('should render an LEAD_1 slice correctly', () => {
-    const slice = getSlice('LEAD_1');
+  it('should render an RELATED_ARTICLE_1 slice correctly', () => {
+    const slice = getSlice('RELATED_ARTICLE_1');
 
-    const { asFragment, getAllByText } = render(<Lead1 slice={slice} />);
+    const { asFragment, getAllByText } = render(
+      <RelatedArticle1 slice={slice} />
+    );
 
     const article = getAllByText('Article');
     expect(article.length).toBe(1);
