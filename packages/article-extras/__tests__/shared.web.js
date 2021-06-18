@@ -14,20 +14,6 @@ import { UserState } from "./mocks";
 import ArticleExtras from "../src/article-extras";
 import { relatedArticleSlice, topics } from "../fixtures/article-extras";
 
-jest.mock("@times-components/ts-components", () => {
-  const actualUtils = jest.requireActual("@times-components/ts-components");
-  console.log("actualUtils", actualUtils);
-  return {
-    ...actualUtils,
-    useAlgoliaSearch: () => ({
-      getRelatedArticles: () => ({
-        sliceName: "StandardSlice",
-        items: []
-      })
-    })
-  };
-});
-
 const algoliaSearchKeys = {
   applicationId: "",
   apiKey: "",

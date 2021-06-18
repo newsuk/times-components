@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 
 import React from "react";
+import styled from "styled-components";
 import { AlgoliaSearchProvider } from "@times-components/ts-components";
 
 import ArticleExtras from "./src/article-extras";
-
 import { relatedArticleSlice, topics } from "./fixtures/article-extras";
 
 const algoliaSearchKeys = {
@@ -13,38 +13,53 @@ const algoliaSearchKeys = {
   indexName: process.env.STORYBOOK_ALGOLIA_INDEX || ""
 };
 
+const Container = styled.div`
+  &.slice {
+    #related-articles > div:first-child {
+      display: none !important;
+    }
+    .RelatedArticleSlice {
+      display: block !important;
+    }
+  }
+`;
+
 const getAnalyticsStream = action => event => {
   // eslint-disable-next-line no-console
   console.log("analytics-action", event);
   action("analytics-action")(event);
 };
-
 export default {
   children: [
     {
-      component: ({ boolean }, { action }) => (
-        <AlgoliaSearchProvider
-          algoliaSearchKeys={algoliaSearchKeys}
-          article={{ id: "dummy-article-id" }}
-          analyticsStream={getAnalyticsStream(action)}
-        >
-          <ArticleExtras
-            analyticsStream={() => {}}
-            articleId="dummy-article-id"
-            commentsEnabled
-            registerNode={() => {}}
-            relatedArticleSlice={relatedArticleSlice}
-            relatedArticlesVisible
-            spotAccountId="dummy-spot-id"
-            topics={topics}
-            additionalRelatedArticlesFlag={boolean(
-              "Additional Featured Articles",
-              false,
-              "User State"
-            )}
-          />
-        </AlgoliaSearchProvider>
-      ),
+      component: ({ boolean }, { action }) => {
+        const slice = boolean("Related Article Slice", false, "User State");
+        return (
+          <Container className={slice ? "slice" : undefined}>
+            <AlgoliaSearchProvider
+              algoliaSearchKeys={algoliaSearchKeys}
+              article={{ id: "dummy-article-id" }}
+              analyticsStream={getAnalyticsStream(action)}
+            >
+              <ArticleExtras
+                analyticsStream={() => {}}
+                articleId="dummy-article-id"
+                commentsEnabled
+                registerNode={() => {}}
+                relatedArticleSlice={relatedArticleSlice}
+                relatedArticlesVisible
+                spotAccountId="dummy-spot-id"
+                topics={topics}
+                additionalRelatedArticlesFlag={boolean(
+                  "Additional Featured Articles",
+                  false,
+                  "User State"
+                )}
+              />
+            </AlgoliaSearchProvider>
+          </Container>
+        );
+      },
       name: "Article Extras",
       type: "story"
     },

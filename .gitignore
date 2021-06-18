@@ -57,4 +57,4 @@ packages/*/rnw.js
 
 fragment-matcher.js
 
-/.env.local
+/.env.*

@@ -5,7 +5,10 @@ import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import { useAlgoliaSearch } from "@times-components/ts-components";
+import {
+  RelatedArticleSlice,
+  useAlgoliaSearch
+} from "@times-components/ts-components";
 
 import ArticleTopics from "./article-topics";
 import { ShareAndSaveContainer } from "./styles/responsive";
@@ -81,6 +84,11 @@ const ArticleExtras = ({
         <RelatedArticles
           analyticsStream={analyticsStream}
           isVisible={relatedArticlesVisible}
+          slice={relatedArticleSlice}
+        />
+        <RelatedArticleSlice
+          heading="Related Articles"
+          analyticsStream={analyticsStream}
           slice={relatedArticleSlice}
         />
         {additionalRelatedArticlesFlag &&
