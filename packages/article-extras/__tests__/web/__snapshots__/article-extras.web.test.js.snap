@@ -16,6 +16,9 @@ Array [
     <RelatedArticles
       isVisible={true}
     />
+    <RelatedArticleSlice
+      heading="Related Articles"
+    />
   </div>,
   <div
     id="sponsored-article-container"
@@ -58,6 +61,9 @@ Array [
     <RelatedArticles
       isVisible={true}
     />
+    <RelatedArticleSlice
+      heading="Related Articles"
+    />
   </div>,
   <div
     id="sponsored-article-container"
@@ -90,6 +96,9 @@ Array [
   >
     <RelatedArticles
       isVisible={true}
+    />
+    <RelatedArticleSlice
+      heading="Related Articles"
     />
   </div>,
   <div

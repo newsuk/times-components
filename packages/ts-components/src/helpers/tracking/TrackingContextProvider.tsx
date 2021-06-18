@@ -3,7 +3,7 @@ import merge from 'lodash.merge';
 
 import { useIntersectionObserver } from '../../utils/intersectObserverHook';
 
-export type TrackingAttributes = { [key: string]: string };
+export type TrackingAttributes = { [key: string]: any };
 export type TrackingContext = {
   object?: string;
   component?: string;
