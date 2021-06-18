@@ -66,14 +66,31 @@ describe('RelatedArticleSlice', () => {
       action: 'Pressed',
       attrs: {
         articleCount: '3',
+        articles: [
+          {
+            headline: 'How Gymshark recruits the best young people',
+            id: '7f750402-acb6-11eb-bda6-057976012425',
+            role: 'standard-1'
+          },
+          {
+            headline: 'Susie Ma: My recipe for self-belief',
+            id: '5ddef020-af39-11eb-9dc9-5a05c2885d62',
+            role: 'standard-2'
+          },
+          {
+            headline: 'Why business is eating software',
+            id: '94b6d85e-cce1-11eb-9bfa-a3bc386e6928',
+            role: 'standard-3'
+          }
+        ],
         eventTime: '2021-06-18T07:06:40.000Z',
         targetArticleHeadline: 'How Gymshark recruits the best young people',
         targetArticleId: '7f750402-acb6-11eb-bda6-057976012425',
         targetArticleUrl:
           'https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t'
       },
-      component: 'RelatedArticles',
-      object: 'RelatedArticles'
+      component: 'RelatedArticleItem',
+      object: 'Article'
     });
   });
 });

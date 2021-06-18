@@ -24,6 +24,16 @@ export const RelatedArticleSlice = ({
   clickHandler,
   analyticsStream
 }: RelatedArticleSliceProps) => {
+  const standardRoles = ['standard-1', 'standard-2', 'standard-3'];
+  const articles = slice.items.map(({ article }, index) => {
+    const { headline, id, shortHeadline } = article;
+    return {
+      id,
+      headline: headline || shortHeadline,
+      role: standardRoles[index]
+    };
+  });
+
   return (
     <TrackingContextProvider
       analyticsStream={analyticsStream}
@@ -32,6 +42,7 @@ export const RelatedArticleSlice = ({
         component: 'RelatedArticles',
         object: 'RelatedArticles',
         attrs: {
+          articles,
           articleCount: `${slice.items.length}`
         }
       }}
@@ -45,9 +56,10 @@ export const RelatedArticleSlice = ({
           clickHandler && clickHandler(event, article, position);
           fireAnalyticsEvent({
             action: 'Pressed',
-            component: 'RelatedArticles',
-            object: 'RelatedArticles',
+            component: 'RelatedArticleItem',
+            object: 'Article',
             attrs: {
+              articles,
               targetArticleHeadline: article.headline,
               targetArticleId: article.id!,
               targetArticleUrl: article.url,
