@@ -4,7 +4,7 @@ import { Placeholder } from '@times-components/image';
 
 import {
   initSettings,
-  initStyleSheet,
+  // initStyleSheet,
   initScript,
   initElement,
   initComponent
@@ -24,7 +24,7 @@ export const OptaFootballSummary: React.FC<{
 
   useEffect(() => {
     initSettings();
-    initStyleSheet();
+    // initStyleSheet();
 
     initScript().then(() => {
       if (ref.current) {

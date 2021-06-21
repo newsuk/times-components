@@ -1,9 +1,11 @@
 import styled from 'styled-components';
-import { breakpoints, colours, fonts } from '@times-components/styleguide';
+// import { breakpoints, colours, fonts } from '@times-components/styleguide';
 
 import { WidgetContainerBase } from '../shared-styles';
 
-export const WidgetContainer = styled(WidgetContainerBase)`
+export const WidgetContainer = styled(WidgetContainerBase)``;
+
+/*
   .Opta {
     h2 {
       margin: 20px 0 10px 0 !important;
@@ -152,3 +154,4 @@ export const WidgetContainer = styled(WidgetContainerBase)`
     }
   }
 `;
+*/

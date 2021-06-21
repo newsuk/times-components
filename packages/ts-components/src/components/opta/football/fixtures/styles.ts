@@ -5,6 +5,35 @@ import { WidgetContainerBase } from '../shared-styles';
 
 export const WidgetContainerOverride = styled(WidgetContainerBase)`
   .Opta {
+    .Opta-js-main {
+      padding: 0;
+      background-color: transparent;
+
+      table {
+        tbody {
+          td.Opta-title {
+            h3 {
+              background-color: transparent;
+              border-bottom: 0;
+            }
+          }
+
+          tr.Opta-Scoreline {
+            height: 40px;
+            background-color: transparent !important;
+            border-bottom: 1px solid #e4e4e4;
+
+            @media (min-width: ${breakpoints.medium}px) {
+              height: 50px;
+            }
+        }
+      }
+    }
+  }
+`;
+
+/*
+  .Opta {
     h2 {
       margin: 20px 0 0 0 !important;
     }
@@ -37,13 +66,12 @@ export const WidgetContainerOverride = styled(WidgetContainerBase)`
       }
     }
   }
-`;
+`;*/
 
 export const WidgetContainer = styled(WidgetContainerBase)`
   .Opta {
     .Opta-js-main {
-      padding: 0;
-      background-color: transparent;
+      margin: 20px 0 0 0;
 
       table {
         tbody {
@@ -52,13 +80,133 @@ export const WidgetContainer = styled(WidgetContainerBase)`
             background-color: ${colours.functional.backgroundSecondary};
 
             h3 {
-              height: auto;
               margin: 0 0 0 10px;
               color: ${colours.functional.brandColour};
               font-family: ${fonts.supporting};
               font-size: 14px;
               line-height: 14px;
               font-weight: normal;
+
+              @media (min-width: ${breakpoints.medium}px) {
+                margin: 0 0 0 20px;
+              }
+            }
+          }
+
+          tr.Opta-Scoreline {
+            height: 40px;
+            border-bottom: 1px solid #e4e4e4;
+
+            @media (min-width: ${breakpoints.medium}px) {
+              height: 50px;
+            }
+
+            td {
+              padding: 0;
+              color: ${colours.functional.brandColour};
+              font-family: ${fonts.headline};
+              font-size: 14px;
+              line-height: 14px;
+
+              &.Opta-Time {
+                width: 50px;
+                padding: 0 0 0 10px;
+                color: ${colours.section.sport};
+                font-family: ${fonts.supporting};
+
+                @media (min-width: ${breakpoints.medium}px) {
+                  width: 60px;
+                  padding: 0 0 0 20px;
+                  font-size: 14px;
+                  line-height: 14px;
+                }
+              }
+
+              &.Opta-Team {
+                width: 30%;
+                padding-left: 10px;
+
+                &.Opta-Home {
+                  padding-right: 10px;
+                  padding-left: 0;
+                  text-align: right;
+                }
+
+                @media (min-width: ${breakpoints.medium}px) {
+                  padding-left: 15px;
+
+                  &.Opta-Home {
+                    padding-right: 15px;
+                    padding-left: 0;
+                  }
+                }
+              }
+
+              &.Opta-Score {
+                width: 25px;
+                font-size: 16px;
+                line-height: 16px;
+                text-align: left;
+
+                &.Opta-Home {
+                  text-align: right;
+                }
+
+                @media (min-width: ${breakpoints.medium}px) {
+                  width: 30px;
+                  font-size: 24px;
+                  line-height: 24px;
+                }
+              }
+
+              &.Opta-Crest {
+                width: 20px;
+                margin-top: -3px;
+
+                img {
+                  width: 20px;
+                }
+              }
+
+              &.Opta-Divider {
+                width: 20px;
+                text-align: center;
+              }
+
+              &.Opta-Outer:not(.Opta-Time) {
+                width: 50px;
+                padding: 0 10px 0 0;
+
+                @media (min-width: ${breakpoints.medium}px) {
+                  width: 60px;
+                  padding: 0 20px 0 0;
+                }
+              }
+
+              @media (min-width: ${breakpoints.medium}px) {
+                font-size: 16px;
+                line-height: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+/*
+  .Opta {
+    .Opta-js-main {
+      padding: 0;
+      background-color: transparent;
+
+      table {
+        tbody {
+          td.Opta-title {
+
+            h3 {
+              height: auto;
               background-color: transparent;
               border-bottom: 0;
 
@@ -254,3 +402,4 @@ export const WidgetContainer = styled(WidgetContainerBase)`
     }
   }
 `;
+*/

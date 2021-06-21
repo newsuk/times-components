@@ -26,7 +26,7 @@ export const PlaceholderContainer = styled.div`
   height: 200px;
 `;
 
-export const WidgetContainerBase = styled.div`
+export const OptaStylesheetOverride = styled.div`
   .Opta {
     .Opta_W {
       margin: 0;
@@ -34,7 +34,43 @@ export const WidgetContainerBase = styled.div`
 
       h2 {
         height: auto;
-        margin: 20px 0;
+        background-color: transparent;
+
+        span {
+          height: auto;
+          font-size: inherit;
+          line-height: inherit;
+          font-weight: inherit;
+        }
+      }
+    }
+
+    p {
+      margin: 20px 0 0 0 !important;
+      padding: 0 0 20px 0 !important;
+      background: transparent !important;
+    }
+  }
+`;
+
+/*
+
+      .Opta-Cf {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+
+        table {
+          margin: 0;
+        }
+      }
+*/
+
+export const WidgetContainerBase = styled.div`
+  .Opta {
+    .Opta_W {
+      h2 {
+        margin: 20px 0 0 0;
         color: ${colours.section.sport};
         font-family: ${fonts.supporting};
         font-size: 12px;
@@ -43,33 +79,27 @@ export const WidgetContainerBase = styled.div`
         letter-spacing: 1px;
         text-align: center;
         text-transform: uppercase;
-        background-color: transparent;
-
-        span {
-          height: auto;
-          font-size: 12px;
-          line-height: 14px;
-          font-weight: normal;
-        }
       }
 
       table {
         width: 100%;
-        margin: 0;
         border-collapse: collapse;
         border-spacing: 0;
+
+        abbr {
+          text-decoration: none;
+        }
       }
     }
 
     p {
-      margin: 20px 0 0 0 !important;
-      padding: 0 0 20px 0 !important;
+      margin: 20px 0 0 0;
+      padding: 0 0 20px 0;
       color: ${colours.functional.brandColour};
       font-family: ${fonts.supporting};
       font-size: 14px;
       line-height: 14px;
       text-align: center;
-      background: transparent !important;
     }
   }
 `;

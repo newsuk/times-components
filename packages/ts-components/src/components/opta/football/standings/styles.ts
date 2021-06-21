@@ -1,9 +1,11 @@
 import styled from 'styled-components';
-import { breakpoints, colours, fonts } from '@times-components/styleguide';
+// import { breakpoints, colours, fonts } from '@times-components/styleguide';
 
 import { WidgetContainerBase } from '../shared-styles';
 
-export const WidgetContainer = styled(WidgetContainerBase)`
+export const WidgetContainer = styled(WidgetContainerBase)``;
+
+/*
   .Opta {
     h3.Opta-groupname {
       height: 40px;
@@ -246,3 +248,4 @@ export const WidgetContainer = styled(WidgetContainerBase)`
     }
   }
 `;
+*/
