@@ -1,0 +1,398 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RelatedArticleSlice renders 1 1`] = `
+<DocumentFragment>
+  <div
+    class="RelatedArticleSlice sc-bdVaJa bfgsAb"
+  >
+    <div
+      class="heading"
+    >
+      Related Articles
+    </div>
+    <div
+      class="shared-styles__SliceContainer-ismxwo-0 styles__SliceContainer-b33h2c-0 dDeBKy"
+    >
+      <div
+        class="shared-styles__SlotContainer-ismxwo-1 styles__SlotContainer-b33h2c-1 cKwigu"
+      >
+        <article
+          class="shared-styles__ArticleContainer-sc-1kek94e-0 jgpbxb"
+        >
+          <div
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jOKfAL"
+          >
+            <div
+              class="styles__ImageContainer-sc-8lglkt-0 hmOUZw"
+            >
+              <a
+                href="https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t"
+              >
+                <div
+                  class="styles__ImageRatio-sc-8lglkt-1 gbnXjW"
+                >
+                  <div
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
+                  >
+                    <img
+                      alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3744%2C0%2C0&resize=80"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jOKfAL"
+          >
+            <p
+              class="shared-styles__Label-sc-1kek94e-2 IvuEf"
+            >
+              Comment
+            </p>
+            <div
+              class="styles__HeadlineContainer-k0mgwi-0 jkGvyo"
+            >
+              <a
+                href="https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t"
+              >
+                <h3>
+                  How Gymshark recruits the best young people
+                </h3>
+              </a>
+            </div>
+            <p
+              class="styles__Strapline-p3h2iu-0 iVGLEU"
+            >
+              The average age of my colleagues at Gymshark was 26 when we had 260 staff in 2018. It is now 29, but we have almost tripled in size. Half our management team is younger than 30, including our founder Ben, who set up the
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`RelatedArticleSlice renders 2 1`] = `
+<DocumentFragment>
+  <div
+    class="RelatedArticleSlice sc-bdVaJa bfgsAb"
+  >
+    <div
+      class="heading"
+    >
+      Related Articles
+    </div>
+    <div
+      class="shared-styles__SliceContainer-ismxwo-0 gqQstL"
+    >
+      <div
+        class="shared-styles__SlotContainer-ismxwo-1 styles__SlotContainer-z7ncw3-0 hMxCMR"
+      >
+        <article
+          class="shared-styles__ArticleContainer-sc-1kek94e-0 hYGxtr"
+        >
+          <div
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
+          >
+            <div
+              class="styles__ImageContainer-sc-8lglkt-0 CuqlR"
+            >
+              <a
+                href="https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t"
+              >
+                <div
+                  class="styles__ImageRatio-sc-8lglkt-1 bMAlMW"
+                >
+                  <div
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
+                  >
+                    <img
+                      alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3744%2C0%2C0&resize=80"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="styles__ImageRatio-sc-8lglkt-1 lhnvcZ"
+                >
+                  <div
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
+                  >
+                    <img
+                      alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3159%2C0%2C293&resize=80"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
+          >
+            <p
+              class="shared-styles__Label-sc-1kek94e-2 IvuEf"
+            >
+              Comment
+            </p>
+            <div
+              class="styles__HeadlineContainer-k0mgwi-0 kpCqSZ"
+            >
+              <a
+                href="https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t"
+              >
+                <h3>
+                  How Gymshark recruits the best young people
+                </h3>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div
+        class="shared-styles__SlotContainer-ismxwo-1 styles__SlotContainer-z7ncw3-0 hMxCMR"
+      >
+        <article
+          class="shared-styles__ArticleContainer-sc-1kek94e-0 hYGxtr"
+        >
+          <div
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
+          >
+            <div
+              class="styles__ImageContainer-sc-8lglkt-0 CuqlR"
+            >
+              <a
+                href="https://www.thetimes.co.uk/article/susie-ma-my-recipe-for-self-belief-pstccwdxr"
+              >
+                <div
+                  class="styles__ImageRatio-sc-8lglkt-1 bMAlMW"
+                >
+                  <div
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
+                  >
+                    <img
+                      alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcbfae118-aef3-11eb-9dc9-5a05c2885d62.jpg?crop=4126%2C2750%2C14%2C1764&resize=80"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="styles__ImageRatio-sc-8lglkt-1 lhnvcZ"
+                >
+                  <div
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
+                  >
+                    <img
+                      alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcbfae118-aef3-11eb-9dc9-5a05c2885d62.jpg?crop=4105%2C2309%2C42%2C1828&resize=80"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
+          >
+            <div
+              class="styles__HeadlineContainer-k0mgwi-0 kpCqSZ"
+            >
+              <a
+                href="https://www.thetimes.co.uk/article/susie-ma-my-recipe-for-self-belief-pstccwdxr"
+              >
+                <h3>
+                  Susie Ma: My recipe for self-belief
+                </h3>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`RelatedArticleSlice renders 3 1`] = `
+<DocumentFragment>
+  <div
+    class="RelatedArticleSlice sc-bdVaJa bfgsAb"
+  >
+    <div
+      class="heading"
+    >
+      Related Articles
+    </div>
+    <div
+      class="shared-styles__SliceContainer-ismxwo-0 styles__SliceContainer-fss0bs-0 eEcrrn"
+    >
+      <div
+        class="shared-styles__SlotContainer-ismxwo-1 styles__SlotContainerLead-fss0bs-1 elZmkS"
+      >
+        <article
+          class="shared-styles__ArticleContainer-sc-1kek94e-0 hYGxtr"
+        >
+          <div
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
+          >
+            <div
+              class="styles__ImageContainer-sc-8lglkt-0 CuqlR"
+            >
+              <a
+                href="https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t"
+              >
+                <div
+                  class="styles__ImageRatio-sc-8lglkt-1 bMAlMW"
+                >
+                  <div
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
+                  >
+                    <img
+                      alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3744%2C0%2C0&resize=80"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="styles__ImageRatio-sc-8lglkt-1 lhnvcZ"
+                >
+                  <div
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
+                  >
+                    <img
+                      alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3159%2C0%2C293&resize=80"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
+          >
+            <p
+              class="shared-styles__Label-sc-1kek94e-2 IvuEf"
+            >
+              Comment
+            </p>
+            <div
+              class="styles__HeadlineContainer-k0mgwi-0 jkGvyo"
+            >
+              <a
+                href="https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t"
+              >
+                <h3>
+                  How Gymshark recruits the best young people
+                </h3>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div
+        class="shared-styles__SlotContainer-ismxwo-1 styles__StackedColumn-fss0bs-2 frvBmZ"
+      >
+        <div
+          class="shared-styles__SlotContainer-ismxwo-1 dBqZIh"
+        >
+          <article
+            class="shared-styles__ArticleContainer-sc-1kek94e-0 hYGxtr"
+          >
+            <div
+              class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
+            >
+              <div
+                class="styles__ImageContainer-sc-8lglkt-0 CuqlR"
+              >
+                <a
+                  href="https://www.thetimes.co.uk/article/susie-ma-my-recipe-for-self-belief-pstccwdxr"
+                >
+                  <div
+                    class="styles__ImageRatio-sc-8lglkt-1 gbnXjW"
+                  >
+                    <div
+                      class="styles__LazyContainer-qsbah5-0 jRxzJB"
+                    >
+                      <img
+                        alt=""
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fcbfae118-aef3-11eb-9dc9-5a05c2885d62.jpg?crop=4126%2C2750%2C14%2C1764&resize=80"
+                      />
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
+            >
+              <div
+                class="styles__HeadlineContainer-k0mgwi-0 pfFSN"
+              >
+                <a
+                  href="https://www.thetimes.co.uk/article/susie-ma-my-recipe-for-self-belief-pstccwdxr"
+                >
+                  <h3>
+                    Susie Ma: My recipe for self-belief
+                  </h3>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <article
+          class="shared-styles__ArticleContainer-sc-1kek94e-0 hwrniB"
+        >
+          <div
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 eKXwdB"
+          >
+            <div
+              class="styles__ImageContainer-sc-8lglkt-0 dxqTQU"
+            >
+              <a
+                href="https://www.thetimes.co.uk/article/why-business-is-eating-software-swl6j8jj3"
+              >
+                <div
+                  class="styles__ImageRatio-sc-8lglkt-1 gbnXjW"
+                >
+                  <div
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
+                  >
+                    <img
+                      alt=""
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cb358-cce1-11eb-9bfa-a3bc386e6928.jpg?crop=1175%2C784%2C277%2C106&resize=80"
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 eKXwdB"
+          >
+            <div
+              class="styles__HeadlineContainer-k0mgwi-0 hntcoi"
+            >
+              <a
+                href="https://www.thetimes.co.uk/article/why-business-is-eating-software-swl6j8jj3"
+              >
+                <h3>
+                  Why business is eating software
+                </h3>
+              </a>
+            </div>
+            <p
+              class="styles__TimeSince-p3h2iu-1 lgXIbS"
+            >
+              3 days ago
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

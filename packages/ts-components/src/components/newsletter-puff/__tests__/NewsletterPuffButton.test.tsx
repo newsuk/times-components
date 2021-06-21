@@ -15,7 +15,7 @@ describe('NewsletterPuffButton', () => {
     cleanup();
   });
 
-  it('renders the button with the text `Sign up to newsletter`', async () => {
+  it('renders the button with the text `Sign up to newsletter`', () => {
     const mockedOnPress = jest.fn();
 
     const component = render(
@@ -26,22 +26,23 @@ describe('NewsletterPuffButton', () => {
     );
 
     expect(component.baseElement).toMatchSnapshot();
-    fireEvent.click(await component.queryByRole('button')!);
+
+    fireEvent.click(component.getByText('Sign up now'));
+
     expect(mockedOnPress).toHaveBeenCalledTimes(1);
   });
 
-  it('renders the button with the text `Saving...`', async () => {
+  it('renders the button with the text `Saving...`', () => {
     const mockedOnPress = jest.fn();
 
     const component = render(
       <NewsletterPuffButton updatingSubscription onPress={mockedOnPress} />
     );
 
-    fireEvent.click(await component.queryByRole('button')!);
     expect(component.baseElement).toMatchSnapshot();
   });
 
-  it('should track button viewed and clicked in analytics', async () => {
+  it('should track button viewed and clicked in analytics', () => {
     const mockedAnalyticsStream = jest.fn();
     const onPress = jest.fn();
 
@@ -54,7 +55,7 @@ describe('NewsletterPuffButton', () => {
       </TrackingContextProvider>
     );
 
-    fireEvent.click(await component.findByRole('button'));
+    fireEvent.click(component.getByText('Sign up now'));
 
     expect(onPress).toHaveBeenCalled();
 

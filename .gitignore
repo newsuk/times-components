@@ -56,3 +56,5 @@ packages/*/rnw.js
 .vscode
 
 fragment-matcher.js
+
+/.env.*
