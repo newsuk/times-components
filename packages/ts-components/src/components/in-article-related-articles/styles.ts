@@ -15,9 +15,8 @@ export const Container = styled.div<{ sectionColour: string }>`
   }
   .heading {
     font-family: ${fonts.headline};
-    font-size: 28px;
-    padding: 0 16px 20px 16px;
-    display: none;
+    font-size: 24px;
+    padding: 0 16px 16px 16px;
   }
   nav {
     display: flex;
@@ -28,7 +27,8 @@ export const Container = styled.div<{ sectionColour: string }>`
     padding: 20px 0;
 
     .heading {
-      display: block;
+      font-size: 28px;
+      padding: 0 16px 20px 16px;
     }
     nav {
       flex-direction: row;
@@ -66,10 +66,18 @@ export const RelatedArticleContainer = styled.div`
     padding-bottom: 0;
   }
 
-  .headline {
+  h3 {
     font-family: ${fonts.headline};
     font-size: 20px;
     line-height: 20px;
+
+    margin: 0;
+    color: ${colours.functional.brandColour};
+    font-weight: 400;
+
+    :hover {
+      color: ${colours.functional.action};
+    }
   }
 `;
 

@@ -68,9 +68,10 @@ declare module '@times-components/styleguide' {
 
   type Fonts = {
     body: string;
+    bodyRegular: string;
     headline: string;
-    supporting: string;
     headlineRegular: string;
+    supporting: string;
   };
 
   export const fonts: Fonts;
@@ -139,4 +140,15 @@ declare module '@times-components/provider-queries' {
 
 declare module '@times-components/provider-test-tools' {
   export const MockedProvider: React.FC<{ mocks: any }>;
+}
+
+declare module '@times-components/date-publication' {
+  type DatePublicationProps = {
+    date: string;
+    publication?: 'SUNDAYTIMES' | 'TIMES';
+    showDay: boolean;
+  };
+
+  export const DatePublication: React.FC<DatePublicationProps>;
+  export default DatePublication;
 }

@@ -1,10 +1,5 @@
 import React from 'react';
 
-// Polyfills
-import 'polyfill-array-includes';
-import 'intersection-observer';
-import 'url-polyfill';
-
 import { SliceData } from '../../types/slice';
 import { SliceStyle } from '../../types/styles';
 import { ClickHandlerType } from '../../types/event';

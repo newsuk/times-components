@@ -30,7 +30,7 @@ const relatedArticleSlice = {
           crop32: {
             __typename: "Crop",
             url:
-              "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0"
+              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0547a7be-fb77-11e7-a987-7fcf5e9983dc.jpg?crop=1600%2C1125%2C0%2C104"
           },
           crop169: {
             __typename: "Crop",
@@ -299,7 +299,7 @@ const relatedArticleSlice = {
           crop32: {
             __typename: "Crop",
             url:
-              "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9bc3086dbe80a6be3b1974aac6df2d6e7a16af57.jpg?crop=780%2C520%2C0%2C0"
+              "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F82723c10-fb7f-11e7-a987-7fcf5e9983dc.jpg?crop=4886%2C2748%2C92%2C108"
           },
           crop169: {
             __typename: "Crop",

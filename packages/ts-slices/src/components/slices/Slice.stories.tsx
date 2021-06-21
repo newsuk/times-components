@@ -127,6 +127,13 @@ const showcase = {
       ),
       name: 'SECONDARY_10',
       type: 'story'
+    },
+    {
+      component: () => (
+        <Slice slice={getSlice('RELATED_ARTICLE_1')} clickHandler={onClick} />
+      ),
+      name: 'RELATED_ARTICLE_1',
+      type: 'story'
     }
   ],
   name: 'Typescript Slices/Slices'
