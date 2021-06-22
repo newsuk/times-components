@@ -3,24 +3,24 @@
 exports[`GalleryCarousel should render the component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-jKJlTe eLEmDc"
+    class="sc-jKJlTe eJFbXy"
   >
     <div
-      class="sc-dnqmqq fhzYuf"
+      class="sc-cSHVUG jOSczh"
     >
       <div
-        class="sc-jTzLTM ixoWlg"
+        class="sc-htoDjs gbsuiP"
       >
         Label 1
       </div>
       <div
-        class="sc-fjdhpX fphUZD"
+        class="sc-dnqmqq dEVvjT"
       >
         Headline 1
       </div>
     </div>
     <div
-      class="rec rec-carousel-wrapper sc-ckVGcZ ekAcMB sc-EHOje eOvqeq"
+      class="rec rec-carousel-wrapper sc-ckVGcZ iKKaDw sc-EHOje eOvqeq"
     >
       <div
         class="rec rec-carousel sc-ifAKCX kQtsWC"
@@ -86,111 +86,35 @@ exports[`GalleryCarousel should render the component 1`] = `
         </div>
       </div>
       <div
-        class="sc-htoDjs fdATqR"
+        class="sc-gqjmRU dWTMIU"
       >
         <div
-          class="sc-iwsKbI gZhBcn"
+          class="sc-kAzzGY duBtwW"
         >
           <div
-            class="sc-gqjmRU hzzIkg"
+            class="sc-kgoBCf gOgseH"
           >
             <div
-              class="sc-kAzzGY itsQkp"
+              class="sc-gZMcBi lobbHG"
             >
               Credit 1
             </div>
             <div
-              class="sc-jzJRlG fNixYG"
+              class="sc-iwsKbI dSMhSg"
+              data-testid="Copy"
             >
               Copy 1
-            </div>
-          </div>
-          <div>
-            <div
-              class="sc-VigVT eMNzRy"
-              style="justify-content: flex-end;"
-            >
-              <div
-                class="sc-chPdSV kUFnHj"
-              >
-                <button
-                  class="sc-kgoBCf fHcEkt"
-                  data-testid="Previous button"
-                  disabled=""
-                >
-                  <svg
-                    height="14px"
-                    width="10px"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                </button>
-                <div
-                  class="sc-kGXeez cAoLFC"
-                >
-                  <div
-                    class="sc-kpOJdX GZHGi"
-                  />
-                  <div
-                    class="sc-kpOJdX bAzwUp"
-                  />
-                </div>
-                <button
-                  class="nextBtn sc-kgoBCf fWmUGg"
-                  data-testid="Next Button"
-                >
-                  <svg
-                    height="14px"
-                    width="10px"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                      fill-rule="nonzero"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="sc-gZMcBi iZZuwX"
-        >
-          <div>
-            <div
-              class="sc-jTzLTM ixoWlg"
-            >
-              Label 1
-            </div>
-            <div
-              class="sc-fjdhpX fphUZD"
-            >
-              Headline 1
-            </div>
-            <div
-              class="sc-jzJRlG fNixYG"
-            >
-              Copy 1
-            </div>
-            <div
-              class="sc-kAzzGY itsQkp"
-            >
-              Credit 1
             </div>
           </div>
           <div
-            class="sc-cSHVUG kocxql"
+            class="sc-kGXeez cGmqLZ"
+            style="justify-content: flex-end;"
           >
             <div
-              class="sc-chPdSV kUFnHj"
+              class="sc-VigVT jOpLnX"
             >
               <button
-                class="sc-kgoBCf fHcEkt"
+                class="sc-jTzLTM duLvps"
                 data-testid="Previous button"
                 disabled=""
               >
@@ -206,17 +130,96 @@ exports[`GalleryCarousel should render the component 1`] = `
                 </svg>
               </button>
               <div
-                class="sc-kGXeez cAoLFC"
+                class="sc-fjdhpX bVJoKF"
               >
                 <div
-                  class="sc-kpOJdX GZHGi"
+                  class="sc-jzJRlG eKNOkJ"
+                  data-testid="Page Indicator"
                 />
                 <div
-                  class="sc-kpOJdX bAzwUp"
+                  class="sc-jzJRlG bInnKU"
+                  data-testid="Page Indicator"
                 />
               </div>
               <button
-                class="nextBtn sc-kgoBCf fWmUGg"
+                class="nextBtn sc-jTzLTM hUmNDO"
+                data-testid="Next Button"
+              >
+                <svg
+                  height="14px"
+                  width="10px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-chPdSV fvCaXV"
+        >
+          <div>
+            <div
+              class="sc-htoDjs gbsuiP"
+            >
+              Label 1
+            </div>
+            <div
+              class="sc-dnqmqq dEVvjT"
+            >
+              Headline 1
+            </div>
+            <div
+              class="sc-iwsKbI dSMhSg"
+            >
+              Copy 1
+            </div>
+            <div
+              class="sc-gZMcBi lobbHG"
+            >
+              Credit 1
+            </div>
+          </div>
+          <div
+            class="sc-kpOJdX dyeEky"
+          >
+            <div
+              class="sc-VigVT jOpLnX"
+            >
+              <button
+                class="sc-jTzLTM duLvps"
+                data-testid="Previous button"
+                disabled=""
+              >
+                <svg
+                  height="14px"
+                  width="10px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </button>
+              <div
+                class="sc-fjdhpX bVJoKF"
+              >
+                <div
+                  class="sc-jzJRlG eKNOkJ"
+                  data-testid="Page Indicator"
+                />
+                <div
+                  class="sc-jzJRlG bInnKU"
+                  data-testid="Page Indicator"
+                />
+              </div>
+              <button
+                class="nextBtn sc-jTzLTM hUmNDO"
                 data-testid="Next Button"
               >
                 <svg

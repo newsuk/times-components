@@ -2,6 +2,8 @@ import React from 'react';
 import { ArticleHarness } from '../../fixtures/article-harness/ArticleHarness';
 import { showcaseConverter } from '@times-components/storybook';
 import GalleryCarousel from './GalleryCarousel';
+import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
+import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
 const data = [
   {
@@ -62,7 +64,18 @@ const showcase = {
   children: [
     {
       decorator: (storyFn: () => React.ReactNode) => (
-        <ArticleHarness>{storyFn()}</ArticleHarness>
+        <TrackingContextProvider
+          analyticsStream={analyticsStream}
+          context={{
+            component: 'ArticleSkeleton',
+            attrs: {
+              article_name: 'Headline',
+              section_details: 'Section'
+            }
+          }}
+        >
+          <ArticleHarness>{storyFn()}</ArticleHarness>
+        </TrackingContextProvider>
       ),
       type: 'decorator'
     },
