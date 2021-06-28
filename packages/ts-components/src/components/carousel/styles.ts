@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { fonts, colours, breakpoints } from '@times-components/styleguide';
 
-// General styles 
+// General styles
 
 export const Label = styled.div<{ sectionColour: string }>`
   font-family: ${fonts.supporting};
@@ -37,8 +37,8 @@ export const Copy = styled.div<{ isLarge: boolean }>`
   }
   @media (min-width: ${breakpoints.wide}px) {
     width: ${({ isLarge }) => (isLarge ? '60%' : '100%')};
-    font-size: ${({ isLarge }) => isLarge ? '14px' : '16px'};
-    line-height: ${({ isLarge }) => isLarge ? '20px' : '24px'};
+    font-size: ${({ isLarge }) => (isLarge ? '14px' : '16px')};
+    line-height: ${({ isLarge }) => (isLarge ? '20px' : '24px')};
   }
 `;
 

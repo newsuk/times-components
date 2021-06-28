@@ -25,14 +25,16 @@ export const Card: React.FC<{
         <MobileCardContent>
           <MobileCopyCreditContainer>
             <Credit>{data.paneldata.credit}</Credit>
-            <Copy data-testid="Copy" isLarge={isLarge}>{data.paneldata.copy}</Copy>
+            <Copy data-testid="Copy" isLarge={isLarge}>
+              {data.paneldata.copy}
+            </Copy>
           </MobileCopyCreditContainer>
-            <CardButtonContainer
-              isLarge={isLarge}
-              style={{ justifyContent: 'flex-end' }}
-            >
-              {children}
-            </CardButtonContainer>
+          <CardButtonContainer
+            isLarge={isLarge}
+            style={{ justifyContent: 'flex-end' }}
+          >
+            {children}
+          </CardButtonContainer>
         </MobileCardContent>
         <DesktopCardContent>
           <div>
@@ -42,7 +44,7 @@ export const Card: React.FC<{
             {!isLarge && window.innerWidth >= 1024 ? (
               <Credit>{data.paneldata.credit}</Credit>
             ) : null}
-            </div>
+          </div>
           <CreditButtonContainer>
             {window.innerWidth < 1024 || isLarge ? (
               <Credit>{data.paneldata.credit}</Credit>

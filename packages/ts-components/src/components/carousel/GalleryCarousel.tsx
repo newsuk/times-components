@@ -11,9 +11,11 @@ import {
   Headline,
   MobileHeadlineLabelContainer
 } from './styles';
+
 import { Arrow } from './Arrow';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { breakpoints } from '@times-components/styleguide';
+import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
 export type DataObj = {
   paneldata: {
@@ -36,7 +38,7 @@ const StyledCarousel = styled(ReactElasticCarousel)<{
   align-items: initial;
   flex-direction: column;
   .rec .rec-slider-container {
-    margin: 0px;
+    margin: 0;
   }
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: ${({ isLarge }) =>
@@ -60,7 +62,7 @@ const CarouselContainer = styled.div<{
 const CustomPagination: React.FC<{
   activePage: number;
   current: number;
-  onClick: (current: number) => number;
+  onClick: (current: number, label?: string) => number;
   data: DataObj[];
 }> = ({ activePage, onClick, current, data }) => {
   return (
@@ -68,16 +70,16 @@ const CustomPagination: React.FC<{
       <CarouselButton
         data-testid="Previous button"
         disabled={activePage === 0}
-        onClick={() => onClick(current - 1)}
+        onClick={() => onClick(current - 1, 'left')}
       >
         <Arrow size={{ width: '10px', height: '14px' }} />
       </CarouselButton>
       <CarouselIndicatorContainer>
-        {/* @ts-ignore */}
-        {data.map((child, index) => {
+        {data.map(({}, index) => {
           const isActivePage = activePage === index;
           return (
             <CarouselIndicator
+              data-testid="Page Indicator"
               key={index}
               onClick={() => onClick(index)}
               active={isActivePage}
@@ -89,7 +91,7 @@ const CustomPagination: React.FC<{
         data-testid="Next Button"
         disabled={activePage === data.length - 1}
         className="nextBtn"
-        onClick={() => onClick(current + 1)}
+        onClick={() => onClick(current + 1, 'right')}
       >
         <Arrow size={{ width: '10px', height: '14px' }} />
       </CarouselButton>
@@ -97,57 +99,103 @@ const CustomPagination: React.FC<{
   );
 };
 
-const GalleryCarousel: React.FC<{
+export type GalleryCarouselProps = {
   isLarge: boolean;
   isSmall: boolean;
   data: DataObj[];
   sectionColour: string;
-}> = ({ isLarge, data, sectionColour, isSmall }) => {
-  const [current, setCurrent] = useState(0);
-  const handleChange = (data: any) => {
-    setCurrent(data.index);
+  initialIndex?: number;
+};
+const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
+  isLarge,
+  data,
+  sectionColour,
+  isSmall,
+  initialIndex = 0
+}) => {
+  const [current, setCurrent] = useState(initialIndex);
+  const handleChange = (event: any) => {
+    setCurrent(event.index);
   };
   return (
-    <CarouselContainer
-      sectionColour={sectionColour}
-      isLarge={isLarge}
-      isSmall={isSmall}
+    <TrackingContextProvider
+      context={{
+        object: 'GalleryCarousel',
+        attrs: {
+          component_type: 'in-article component : gallery : interactive',
+          event_navigation_action: 'navigation',
+          component_name: `${data[0].paneldata.headline}`
+        }
+      }}
+      scrolledEvent={{
+        attrs: {
+          event_navigation_name: 'in-article component displayed : gallery',
+          event_navigation_browsing_method: 'scroll'
+        }
+      }}
     >
-      <MobileHeadlineLabelContainer>
-        <Label sectionColour={sectionColour}>{data[current].paneldata.label}</Label>
-        <Headline>{data[current].paneldata.headline}</Headline>
-      </MobileHeadlineLabelContainer>
-      <StyledCarousel
-        sectionColour={sectionColour}
-        isLarge={isLarge}
-        itemsToScroll={1}
-        itemsToShow={1}
-        isRTL={false}
-        onChange={handleChange}
-        showArrows={false}
-        renderPagination={({ activePage, onClick }) => {
-          return (
-            <Card isLarge={isLarge} data={data[current]} isSmall={isSmall} sectionColour={sectionColour}>
-              <CustomPagination
-                activePage={activePage}
-                /* @ts-ignore */
-                onClick={onClick}
-                current={current}
-                data={data}
-              />
-            </Card>
-          );
-        }}
-      >
-        {data.map(row => (
-          <div style={{ width: '100%' }}>
-            <AspectRatio ratio="3:2">
-              <img src={row.carouseldata.image} />
-            </AspectRatio>
-          </div>
-        ))}
-      </StyledCarousel>
-    </CarouselContainer>
+      {({ intersectObserverRef, fireAnalyticsEvent }) => (
+        <CarouselContainer
+          sectionColour={sectionColour}
+          isLarge={isLarge}
+          isSmall={isSmall}
+          ref={intersectObserverRef}
+        >
+          <MobileHeadlineLabelContainer>
+            <Label sectionColour={sectionColour}>
+              {data[current].paneldata.label}
+            </Label>
+            <Headline>{data[current].paneldata.headline}</Headline>
+          </MobileHeadlineLabelContainer>
+          <StyledCarousel
+            sectionColour={sectionColour}
+            isLarge={isLarge}
+            itemsToScroll={1}
+            itemsToShow={1}
+            isRTL={false}
+            onChange={handleChange}
+            showArrows={false}
+            renderPagination={({ activePage, onClick }) => {
+              const handlePaginationClick = (index: string, label?: string) => {
+                if (label) {
+                  fireAnalyticsEvent({
+                    attrs: {
+                      event_navigation_name: `button : ${label}`,
+                      component_name: data[current].paneldata.headline
+                    }
+                  });
+                }
+                onClick && onClick(index);
+              };
+              return (
+                <Card
+                  isLarge={isLarge}
+                  data={data[current]}
+                  isSmall={isSmall}
+                  sectionColour={sectionColour}
+                >
+                  <CustomPagination
+                    activePage={activePage}
+                    /* @ts-ignore */
+                    onClick={handlePaginationClick}
+                    current={current}
+                    data={data}
+                  />
+                </Card>
+              );
+            }}
+          >
+            {data.map(row => (
+              <div style={{ width: '100%' }}>
+                <AspectRatio ratio="3:2">
+                  <img src={row.carouseldata.image} />
+                </AspectRatio>
+              </div>
+            ))}
+          </StyledCarousel>
+        </CarouselContainer>
+      )}
+    </TrackingContextProvider>
   );
 };
 
