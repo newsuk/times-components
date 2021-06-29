@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import ReactElasticCarousel from 'react-elastic-carousel';
-import styled from 'styled-components';
 import { Card } from './Card';
 import {
   CarouselButtonContainer,
@@ -9,12 +7,13 @@ import {
   CarouselIndicator,
   Label,
   Headline,
-  MobileHeadlineLabelContainer
+  MobileHeadlineLabelContainer,
+  CarouselContainer,
+  StyledCarousel
 } from './styles';
 
 import { Arrow } from './Arrow';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
-import { breakpoints } from '@times-components/styleguide';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
 export type DataObj = {
@@ -28,36 +27,6 @@ export type DataObj = {
     image: string;
   };
 };
-
-const StyledCarousel = styled(ReactElasticCarousel)<{
-  isLarge: boolean;
-  sectionColour: string;
-}>`
-  display: flex;
-  height: fit-content;
-  align-items: initial;
-  flex-direction: column;
-  .rec .rec-slider-container {
-    margin: 0;
-  }
-  @media (min-width: ${breakpoints.medium}px) {
-    flex-direction: ${({ isLarge }) =>
-      isLarge || window.innerWidth < 1024 ? 'column-reverse' : 'row-reverse'};
-  }
-`;
-
-const CarouselContainer = styled.div<{
-  sectionColour: string;
-  isLarge: boolean;
-  isSmall: boolean;
-}>`
-  border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
-  flex-direction: ${({ isLarge }) =>
-    isLarge || window.innerWidth < 1024 ? 'column-reverse' : 'row-reverse'};
-  @media (min-width: ${breakpoints.wide}px) {
-    width: ${({ isSmall }) => (isSmall ? '82.1%' : '100%')};
-  }
-`;
 
 const CustomPagination: React.FC<{
   activePage: number;

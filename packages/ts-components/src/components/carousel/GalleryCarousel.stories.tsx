@@ -11,7 +11,7 @@ const data = [
       label: 'venezuelan politics',
       headline: 'Headline 1',
       copy:
-        'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper ',
+        'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper Parturient mi dictumst suspendisse 400',
       credit: 'Credit 1'
     },
     carouseldata: {
@@ -24,7 +24,7 @@ const data = [
       label: 'label 2',
       headline: 'Headline 2',
       copy:
-        'This is some copy. Lots of copy. This is some copy. Lots of copy. This is some copy. Lots of copy. This is some copy. Lots of copy. This is some copy. Lots of copy. This is some copy. Lots of copy. This is some copy.',
+        'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper Part 370',
       credit: 'Credit 2'
     },
     carouseldata: {
@@ -37,7 +37,7 @@ const data = [
       label: 'label 3',
       headline: 'Headline 3',
       copy:
-        'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper id maecenas tempor convallis ac cras',
+        'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper id maecenas tempor convallis ac cras asdfdsasdfdsaasdas 240',
       credit: 'Credit 3'
     },
     carouseldata: {

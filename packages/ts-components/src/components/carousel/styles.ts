@@ -1,7 +1,37 @@
 import styled from 'styled-components';
 import { fonts, colours, breakpoints } from '@times-components/styleguide';
-
+import ReactElasticCarousel from 'react-elastic-carousel';
 // General styles
+
+export const CarouselContainer = styled.div<{
+  sectionColour: string;
+  isLarge: boolean;
+  isSmall: boolean;
+}>`
+  border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
+  flex-direction: ${({ isLarge }) =>
+    isLarge || window.innerWidth < 1024 ? 'column-reverse' : 'row-reverse'};
+  @media (min-width: ${breakpoints.wide}px) {
+    width: ${({ isSmall }) => (isSmall ? '82.1%' : '100%')};
+  }
+`;
+
+export const StyledCarousel = styled(ReactElasticCarousel)<{
+  isLarge: boolean;
+  sectionColour: string;
+}>`
+  display: flex;
+  height: fit-content;
+  align-items: initial;
+  flex-direction: column;
+  .rec .rec-slider-container {
+    margin: 0;
+  }
+  @media (min-width: ${breakpoints.medium}px) {
+    flex-direction: ${({ isLarge }) =>
+      isLarge || window.innerWidth < 1024 ? 'column-reverse' : 'row-reverse'};
+  }
+`;
 
 export const Label = styled.div<{ sectionColour: string }>`
   font-family: ${fonts.supporting};
