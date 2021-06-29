@@ -12,7 +12,7 @@ import formatSlice from './formatters';
 import { Container } from './styles';
 
 type RelatedArticleSliceProps = {
-  slice: RelatedArticles;
+  slice: RelatedArticles | null;
   heading: string;
   clickHandler?: ClickHandlerType;
   analyticsStream?: (evt: any) => void;
@@ -24,6 +24,18 @@ export const RelatedArticleSlice = ({
   clickHandler,
   analyticsStream
 }: RelatedArticleSliceProps) => {
+  if (!slice) {
+    return null;
+  }
+  const { items, sliceName } = slice;
+  if (
+    !sliceName ||
+    (sliceName !== 'StandardSlice' && sliceName !== 'DraftStandardSlice') ||
+    !items
+  ) {
+    return null;
+  }
+
   const standardRoles = ['standard-1', 'standard-2', 'standard-3'];
   const articles = slice.items.map(({ article }, index) => {
     const { headline, id, shortHeadline } = article;
