@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.34.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.33.13...@times-components/article-main-standard@3.34.0) (2021-06-29)
+
+
+### Features
+
+* **TE-120:** Null checks on related article slice ([#2730](https://github.com/newsuk/times-components/issues/2730)) ([6f40918](https://github.com/newsuk/times-components/commit/6f409189a7da396f2d108ff4d5b25cad9080cecd))
+
+
+
+
+
 ## [3.33.13](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.33.12...@times-components/article-main-standard@3.33.13) (2021-06-23)
 
 **Note:** Version bump only for package @times-components/article-main-standard

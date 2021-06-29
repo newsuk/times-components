@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.10.2...@times-components/ts-components@1.11.0) (2021-06-29)
+
+
+### Features
+
+* **TE-120:** Null checks on related article slice ([#2730](https://github.com/newsuk/times-components/issues/2730)) ([6f40918](https://github.com/newsuk/times-components/commit/6f409189a7da396f2d108ff4d5b25cad9080cecd))
+
+
+
+
+
 ## [1.10.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.10.1...@times-components/ts-components@1.10.2) (2021-06-23)
 
 **Note:** Version bump only for package @times-components/ts-components
