@@ -1,84 +1,116 @@
-export const formatLatesetFromSection = (
-  latestFromSection: any[],
+import { RelatedArticleType } from '../../types/related-article-slice';
+type LatestSectionItem = {
+  id: string;
+  headline: string;
+  canonicalID: string;
+  summary: string;
+  publishedTime: string;
+  updatedTime: string;
+  author: string;
+  slug: string;
+  label?: string;
+  shortIdentifier: string;
+  leadAsset: Array<{
+    ratio: string;
+    source: string;
+  }>;
+};
+
+export type LatestSection = {
+  section: string;
+  title: string;
+  items: LatestSectionItem[];
+};
+
+export const getSectionTitle = (
+  latestFromSection: LatestSection[],
   sectionName: string
 ) => {
-  const section = latestFromSection.find((s: any) => s.section === sectionName);
+  const section = latestFromSection.find(
+    (s: LatestSection) => s.section === sectionName
+  );
+  return section && section.title;
+};
+export const formatLatestFromSection = (
+  latestFromSection: LatestSection[],
+  sectionName: string
+): RelatedArticleType[] | undefined => {
+  const section = latestFromSection.find(
+    (s: LatestSection) => s.section === sectionName
+  );
   return (
     section &&
-    section.items.map((article: any) => ({
-      article: {
-        id: article.id,
-        shortIdentifier: article.shortIdentifier,
-        slug: article.slug,
-        label: article.label,
-        headline: article.headline,
-        leadAsset: {
-          crop169: {
-            url:
-              article.leadAsset &&
-              article.leadAsset.find((crop: any) => crop.ratio === '16:9')!
-                .source
-          },
-          crop32: {
-            url:
-              article.leadAsset &&
-              article.leadAsset.find((crop: any) => crop.ratio === '3:2')!
-                .source
-          }
+    section.items.map<RelatedArticleType>((article: LatestSectionItem) => ({
+      id: article.id,
+      shortIdentifier: article.shortIdentifier,
+      slug: article.slug,
+      label: article.label || null,
+      headline: article.headline,
+      section: section.section,
+      leadAsset: {
+        crop169: {
+          url:
+            article.leadAsset &&
+            article.leadAsset.find((crop: any) => crop.ratio === '16:9')!.source
         },
-        summary125: [
-          {
-            name: 'paragraph',
-            children: [
-              {
-                name: 'text',
-                attributes: {
-                  value: article.summary
-                },
-                children: []
-              }
-            ]
-          }
-        ],
-        summary145: [
-          {
-            name: 'paragraph',
-            children: [
-              {
-                name: 'text',
-                attributes: {
-                  value: article.summary
-                },
-                children: []
-              }
-            ]
-          }
-        ],
-        publishedTime: article.publishedTime,
-        updatedTime: article.updatedTime,
-        bylines: [
-          {
-            byline: [
-              {
-                name: 'author',
-                children: [
-                  {
-                    name: 'text',
-                    children: [],
-                    attributes: {
-                      value: article.author
-                    }
+        crop32: {
+          url:
+            article.leadAsset &&
+            article.leadAsset.find((crop: any) => crop.ratio === '3:2')!.source
+        }
+      },
+      summary125: [
+        {
+          name: 'paragraph',
+          children: [
+            {
+              name: 'text',
+              attributes: {
+                value: article.summary
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      summary145: [
+        {
+          name: 'paragraph',
+          children: [
+            {
+              name: 'text',
+              attributes: {
+                value: article.summary
+              },
+              children: []
+            }
+          ]
+        }
+      ],
+      publishedTime: article.publishedTime,
+      updatedTime: article.updatedTime,
+      bylines: [
+        {
+          byline: [
+            {
+              name: 'author',
+              children: [
+                {
+                  name: 'text',
+                  children: [],
+                  attributes: {
+                    value: article.author
                   }
-                ],
-                attributes: {
-                  slug: 'didi-tang'
                 }
+              ],
+              attributes: {
+                slug: 'didi-tang'
               }
-            ],
-            image: null
-          }
-        ]
-      }
+            }
+          ],
+          image: null
+        }
+      ]
     }))
   );
 };

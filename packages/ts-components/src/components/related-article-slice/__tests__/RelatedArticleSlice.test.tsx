@@ -3,7 +3,7 @@ import { render, fireEvent, cleanup } from '@testing-library/react';
 
 import { RelatedArticleSlice } from '../RelatedArticleSlice';
 
-import { RelatedArticles } from '../types';
+import { RelatedArticleSliceType } from '../../../types/related-article-slice';
 import mockDate from 'mockdate';
 
 describe('RelatedArticleSlice', () => {
@@ -112,7 +112,7 @@ describe('RelatedArticleSlice', () => {
   });
 });
 
-export const relatedArticleSlice: RelatedArticles = {
+export const relatedArticleSlice: RelatedArticleSliceType = {
   sliceName: 'StandardSlice',
   items: [
     {

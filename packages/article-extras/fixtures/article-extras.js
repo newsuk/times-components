@@ -634,7 +634,8 @@ const topics = [
 
 const latestFromSection = [
   {
-    section: "News",
+    section: "news",
+    title: "News",
     items: [
       {
         id: "bd9855f8-d91c-11eb-8f14-0bb645f59db0",
@@ -778,7 +779,8 @@ const latestFromSection = [
     ]
   },
   {
-    section: "Comment",
+    section: "comment",
+    title: "Comment",
     items: [
       {
         id: "9da39002-d8ed-11eb-8f14-0bb645f59db0",
@@ -916,7 +918,8 @@ const latestFromSection = [
     ]
   },
   {
-    section: "World",
+    section: "world",
+    title: "World",
     items: [
       {
         id: "a6983aa6-d90a-11eb-8f14-0bb645f59db0",
@@ -1060,7 +1063,8 @@ const latestFromSection = [
     ]
   },
   {
-    section: "Business",
+    section: "business",
+    title: "Business",
     items: [
       {
         id: "37cad600-d915-11eb-b92f-5fe539a30c29",
@@ -1199,7 +1203,8 @@ const latestFromSection = [
     ]
   },
   {
-    section: "Sport",
+    section: "sport",
+    title: "Sport",
     items: [
       {
         id: "a8bfaa82-d917-11eb-b92f-5fe539a30c29",
@@ -1343,7 +1348,8 @@ const latestFromSection = [
     ]
   },
   {
-    section: "Times2",
+    section: "times2",
+    title: "Times2",
     items: [
       {
         id: "915ed916-d8e1-11eb-b92f-5fe539a30c29",
@@ -1488,7 +1494,8 @@ const latestFromSection = [
     ]
   },
   {
-    section: "Register",
+    section: "register",
+    title: "Register",
     items: [
       {
         id: "29f135f8-d909-11eb-b92f-5fe539a30c29",
@@ -1628,7 +1635,8 @@ const latestFromSection = [
     ]
   },
   {
-    section: "Scotland",
+    section: "scotland",
+    title: "Scotland",
     items: [
       {
         id: "0e09c604-d925-11eb-8f14-0bb645f59db0",
@@ -1772,7 +1780,8 @@ const latestFromSection = [
     ]
   },
   {
-    section: "Ireland",
+    section: "ireland",
+    Section: "Ireland",
     items: [
       {
         id: "2c7e4402-d902-11eb-8f14-0bb645f59db0",

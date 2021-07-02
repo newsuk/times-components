@@ -7,12 +7,12 @@ import {
 } from '@times-components/ts-slices';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
-import { RelatedArticles } from './types';
+import { RelatedArticleSliceType } from '../../types/related-article-slice';
 import formatSlice from './formatters';
 import { Container } from './styles';
 
 type RelatedArticleSliceProps = {
-  slice: RelatedArticles | null;
+  slice: RelatedArticleSliceType | null;
   heading: string;
   clickHandler?: ClickHandlerType;
   analyticsStream?: (evt: any) => void;

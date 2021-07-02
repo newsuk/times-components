@@ -1,11 +1,15 @@
 import React, { FC } from 'react';
 import RelatedArticles from '@times-components/related-articles';
 
-import { RelatedArticles as RelatedArticlesType } from '../related-article-slice/types';
-import { formatLatesetFromSection } from './formatters';
+import { RelatedArticleSliceType } from '../../types/related-article-slice';
+import {
+  formatLatestFromSection,
+  getSectionTitle,
+  LatestSection
+} from './formatters';
 
 type Props = {
-  latestFromSection: any[];
+  latestFromSection: LatestSection[];
   section: string;
   analyticsStream: (evt: any) => void;
 };
@@ -14,16 +18,18 @@ export const LatestFromSection: FC<Props> = ({
   analyticsStream,
   latestFromSection
 }) => {
-  const relatedArticles = formatLatesetFromSection(latestFromSection, section);
+  const relatedArticles = formatLatestFromSection(latestFromSection, section);
 
-  const slice: RelatedArticlesType = {
+  const slice: RelatedArticleSliceType = {
     sliceName: 'StandardSlice',
     items: relatedArticles
+      ? relatedArticles.map(article => ({ leadAsset: null, article }))
+      : []
   };
 
   return (
     <RelatedArticles
-      heading={`Latest from ${section}`}
+      heading={`Latest from ${getSectionTitle(latestFromSection, section)}`}
       analyticsStream={analyticsStream}
       isVisible
       slice={slice}
