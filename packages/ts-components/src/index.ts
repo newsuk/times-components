@@ -23,12 +23,9 @@ export {
 } from './components/newsletter-puff/PreviewNewsletterPuff';
 
 export {
-  NewsletterPuffButton
-} from './components/newsletter-puff/NewsletterPuffButton';
-
-export {
-  NewsletterPuffLink
-} from './components/newsletter-puff/NewsletterPuffLink';
+  AlgoliaSearchProvider,
+  useAlgoliaSearch
+} from './helpers/algolia/AlgoliaSearchProvider';
 
 export * from './components/opta/football/fixtures/OptaFootballFixtures';
 export * from './components/opta/football/standings/OptaFootballStandings';
