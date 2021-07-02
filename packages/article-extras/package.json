@@ -5,7 +5,7 @@
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
-    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,react-art,stylelint*,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
@@ -69,7 +69,6 @@
     "@times-components/styleguide": "3.38.19",
     "@times-components/ts-components": "1.11.0",
     "@times-components/user-state": "0.1.60",
-    "@times-components/utils": "6.5.3",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },

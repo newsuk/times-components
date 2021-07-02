@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { RelatedArticleSlice } from './RelatedArticleSlice';
 
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
-import { RelatedArticles } from './types';
+import { RelatedArticleSliceType } from '../../types/related-article-slice';
 import { select } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 
@@ -41,7 +41,7 @@ storiesOf('Typescript Component', module).add('Related Articles Slice', () => {
   );
 });
 
-export const relatedArticleSlice: RelatedArticles = {
+export const relatedArticleSlice: RelatedArticleSliceType = {
   sliceName: 'StandardSlice',
   items: [
     {
