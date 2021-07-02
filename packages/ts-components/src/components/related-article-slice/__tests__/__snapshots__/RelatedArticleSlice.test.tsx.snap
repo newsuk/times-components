@@ -1,9 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`RelatedArticleSlice error checks empty slice 1`] = `<DocumentFragment />`;
+
+exports[`RelatedArticleSlice error checks invalid slicename 1`] = `<DocumentFragment />`;
+
 exports[`RelatedArticleSlice renders 1 1`] = `
 <DocumentFragment>
   <div
-    class="RelatedArticleSlice sc-bdVaJa bfgsAb"
+    class="RelatedArticleSlice sc-bdVaJa OXMAI"
   >
     <div
       class="heading"
@@ -78,7 +82,7 @@ exports[`RelatedArticleSlice renders 1 1`] = `
 exports[`RelatedArticleSlice renders 2 1`] = `
 <DocumentFragment>
   <div
-    class="RelatedArticleSlice sc-bdVaJa bfgsAb"
+    class="RelatedArticleSlice sc-bdVaJa OXMAI"
   >
     <div
       class="heading"
@@ -219,7 +223,7 @@ exports[`RelatedArticleSlice renders 2 1`] = `
 exports[`RelatedArticleSlice renders 3 1`] = `
 <DocumentFragment>
   <div
-    class="RelatedArticleSlice sc-bdVaJa bfgsAb"
+    class="RelatedArticleSlice sc-bdVaJa OXMAI"
   >
     <div
       class="heading"
