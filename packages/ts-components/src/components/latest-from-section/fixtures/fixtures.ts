@@ -2,8 +2,7 @@ import { LatestSection } from '../formatters';
 
 export const latestFromSection: LatestSection[] = [
   {
-    section: 'news',
-    title: 'News',
+    section: 'News',
     items: [
       {
         id: '7221096c-d98f-11eb-8f14-0bb645f59db0',
@@ -146,8 +145,7 @@ export const latestFromSection: LatestSection[] = [
     ]
   },
   {
-    section: 'comment',
-    title: 'Comment',
+    section: 'Comment',
     items: [
       {
         id: '9da39002-d8ed-11eb-8f14-0bb645f59db0',
@@ -285,8 +283,7 @@ export const latestFromSection: LatestSection[] = [
     ]
   },
   {
-    section: 'world',
-    title: 'World',
+    section: 'World',
     items: [
       {
         id: 'a6983aa6-d90a-11eb-8f14-0bb645f59db0',
@@ -429,8 +426,7 @@ export const latestFromSection: LatestSection[] = [
     ]
   },
   {
-    section: 'business',
-    title: 'Business',
+    section: 'Business',
     items: [
       {
         id: '3815f288-d97a-11eb-8f14-0bb645f59db0',
@@ -570,8 +566,7 @@ export const latestFromSection: LatestSection[] = [
     ]
   },
   {
-    section: 'sport',
-    title: 'Sport',
+    section: 'Sport',
     items: [
       {
         id: 'c286c868-d90a-11eb-8f14-0bb645f59db0',
@@ -715,8 +710,7 @@ export const latestFromSection: LatestSection[] = [
     ]
   },
   {
-    section: 'times2',
-    title: 'Times2',
+    section: 'Times2',
     items: [
       {
         id: '915ed916-d8e1-11eb-b92f-5fe539a30c29',
@@ -861,8 +855,7 @@ export const latestFromSection: LatestSection[] = [
     ]
   },
   {
-    section: 'register',
-    title: 'Register',
+    section: 'Register',
     items: [
       {
         id: '29f135f8-d909-11eb-b92f-5fe539a30c29',
@@ -1002,8 +995,7 @@ export const latestFromSection: LatestSection[] = [
     ]
   },
   {
-    section: 'scotland',
-    title: 'Scotland',
+    section: 'Scotland',
     items: [
       {
         id: '0e09c604-d925-11eb-8f14-0bb645f59db0',
@@ -1147,8 +1139,7 @@ export const latestFromSection: LatestSection[] = [
     ]
   },
   {
-    section: 'ireland',
-    title: 'Ireland',
+    section: 'Ireland',
     items: [
       {
         id: '2c7e4402-d902-11eb-8f14-0bb645f59db0',

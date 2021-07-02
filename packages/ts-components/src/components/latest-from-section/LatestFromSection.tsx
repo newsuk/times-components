@@ -9,16 +9,14 @@ import {
 } from './formatters';
 
 type Props = {
-  latestFromSection: LatestSection[];
-  section: string;
+  latestFromSection: LatestSection;
   analyticsStream: (evt: any) => void;
 };
 export const LatestFromSection: FC<Props> = ({
-  section,
   analyticsStream,
   latestFromSection
 }) => {
-  const relatedArticles = formatLatestFromSection(latestFromSection, section);
+  const relatedArticles = formatLatestFromSection(latestFromSection);
 
   const slice: RelatedArticleSliceType = {
     sliceName: 'StandardSlice',
@@ -29,7 +27,7 @@ export const LatestFromSection: FC<Props> = ({
 
   return (
     <RelatedArticles
-      heading={`Latest from ${getSectionTitle(latestFromSection, section)}`}
+      heading={`Latest from ${getSectionTitle(latestFromSection)}`}
       analyticsStream={analyticsStream}
       isVisible
       slice={slice}

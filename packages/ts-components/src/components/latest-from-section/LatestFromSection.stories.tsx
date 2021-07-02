@@ -6,22 +6,23 @@ import { LatestFromSection } from './LatestFromSection';
 
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 import { select } from '@storybook/addon-knobs';
-import { LatestSection } from './formatters';
 import { latestFromSection } from './fixtures/fixtures';
 
 storiesOf('Typescript Component', module).add('Latest from Section', () => {
-  const sectionName = select(
+  const sectionIndex = select(
     'Section',
-    latestFromSection.map((next: LatestSection) => next.section, {}),
-    'news'
+    latestFromSection.reduce(
+      (prev, next, index) => ({ ...prev, [next.section]: index }),
+      {}
+    ),
+    4
   );
 
   return (
     <LatestFromSection
-      key={sectionName}
-      section={sectionName}
+      key={sectionIndex}
       analyticsStream={analyticsStream}
-      latestFromSection={latestFromSection}
+      latestFromSection={latestFromSection[sectionIndex]}
     />
   );
 });

@@ -2,12 +2,10 @@ import { formatLatestFromSection, getSectionTitle } from '../formatters';
 import { latestFromSection } from '../fixtures/fixtures';
 describe('latest from section formatters', () => {
   it('formats', () => {
-    expect(
-      formatLatestFromSection(latestFromSection, 'sport')
-    ).toMatchSnapshot();
+    expect(formatLatestFromSection(latestFromSection[4])).toMatchSnapshot();
   });
 
   it('getSectionTitle', () => {
-    expect(getSectionTitle(latestFromSection, 'sport')).toEqual('Sport');
+    expect(getSectionTitle(latestFromSection[4])).toEqual('Sport');
   });
 });

@@ -18,26 +18,16 @@ type LatestSectionItem = {
 
 export type LatestSection = {
   section: string;
-  title: string;
   items: LatestSectionItem[];
 };
 
-export const getSectionTitle = (
-  latestFromSection: LatestSection[],
-  sectionName: string
-) => {
-  const section = latestFromSection.find(
-    (s: LatestSection) => s.section === sectionName
-  );
-  return section && section.title;
+export const getSectionTitle = (section: LatestSection) => {
+  return section && section.section;
 };
+
 export const formatLatestFromSection = (
-  latestFromSection: LatestSection[],
-  sectionName: string
+  section: LatestSection
 ): RelatedArticleType[] | undefined => {
-  const section = latestFromSection.find(
-    (s: LatestSection) => s.section === sectionName
-  );
   return (
     section &&
     section.items.map<RelatedArticleType>((article: LatestSectionItem) => ({

@@ -6,9 +6,8 @@ describe('<LatestFromSection>', () => {
   it('renders ', () => {
     const { asFragment } = render(
       <LatestFromSection
-        section="sport"
         analyticsStream={jest.fn()}
-        latestFromSection={latestFromSection}
+        latestFromSection={latestFromSection[4]}
       />
     );
     expect(asFragment()).toMatchSnapshot();
@@ -16,19 +15,8 @@ describe('<LatestFromSection>', () => {
   it('no data ', () => {
     const { asFragment } = render(
       <LatestFromSection
-        section="sport"
         analyticsStream={jest.fn()}
-        latestFromSection={[{ section: 'sport', title: 'Sport', items: [] }]}
-      />
-    );
-    expect(asFragment()).toMatchSnapshot();
-  });
-  it('non matching section ', () => {
-    const { asFragment } = render(
-      <LatestFromSection
-        section="nothing"
-        analyticsStream={jest.fn()}
-        latestFromSection={[{ section: 'sport', title: 'Sport', items: [] }]}
+        latestFromSection={{ section: 'Sport', items: [] }}
       />
     );
     expect(asFragment()).toMatchSnapshot();
@@ -36,9 +24,11 @@ describe('<LatestFromSection>', () => {
   it('no data ', () => {
     const { asFragment } = render(
       <LatestFromSection
-        section="sport"
         analyticsStream={jest.fn()}
-        latestFromSection={[{ section: 'sport', title: 'Sport', items: [] }]}
+        latestFromSection={{
+          section: 'Sport',
+          items: []
+        }}
       />
     );
     expect(asFragment()).toMatchSnapshot();

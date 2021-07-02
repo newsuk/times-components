@@ -280,7 +280,9 @@ const renderArticle = ({
             additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
             algoliaSearchKeys={algoliaSearchKeys}
             latestFromSectionFlag={latestFromSectionFlag}
-            latestFromSection={latestFromSection}
+            latestFromSection={latestFromSection.find(
+              s => s.section === section
+            )}
           />
         </ContextProviderWithDefaults>
       );
