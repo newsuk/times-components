@@ -94,6 +94,7 @@ exports[`1. a primary image 1`] = `
           commentsEnabled={true}
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           spotAccountId=""
         />
@@ -206,6 +207,7 @@ exports[`2. a fullwidth image 1`] = `
           commentsEnabled={true}
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           spotAccountId=""
         />
@@ -318,6 +320,7 @@ exports[`3. a secondary image 1`] = `
           commentsEnabled={true}
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           spotAccountId=""
         />
@@ -430,6 +433,7 @@ exports[`4. an inline image 1`] = `
           commentsEnabled={true}
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           spotAccountId=""
         />

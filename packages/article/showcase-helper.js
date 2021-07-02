@@ -15,6 +15,8 @@ import {
 import { sections } from "@times-components/storybook";
 import { scales, themeFactory } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
+
+import { latestFromSection } from "./fixtures/full-article";
 import Article, { templates } from "./src/article";
 
 const preventDefaultedAction = decorateAction =>
@@ -215,6 +217,7 @@ const renderArticle = ({
   isTeaser,
   isMeteredExpired,
   additionalRelatedArticlesFlag,
+  latestFromSectionFlag,
   algoliaSearchKeys
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
@@ -276,6 +279,8 @@ const renderArticle = ({
             refetch={refetch}
             additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
             algoliaSearchKeys={algoliaSearchKeys}
+            latestFromSectionFlag={latestFromSectionFlag}
+            latestFromSection={latestFromSection}
           />
         </ContextProviderWithDefaults>
       );
@@ -338,6 +343,11 @@ const renderArticleConfig = ({
     false,
     "User State"
   );
+  const latestFromSectionFlag = boolean(
+    "Latest from Section",
+    false,
+    "User State"
+  );
   return (
     <Fragment>
       {link}
@@ -370,6 +380,7 @@ const renderArticleConfig = ({
             section,
             template,
             additionalRelatedArticlesFlag,
+            latestFromSectionFlag,
             algoliaSearchKeys
           })}
         </ArticleConfigurator>

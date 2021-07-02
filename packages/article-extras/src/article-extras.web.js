@@ -6,7 +6,11 @@ import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 import { useAlgoliaSearch } from "@times-components/utils";
-import { RelatedArticleSlice } from "@times-components/ts-components";
+
+import {
+  LatestFromSection,
+  RelatedArticleSlice
+} from "@times-components/ts-components";
 
 import ArticleTopics from "./article-topics";
 import { ShareAndSaveContainer } from "./styles/responsive";
@@ -28,7 +32,10 @@ const ArticleExtras = ({
   relatedArticlesVisible,
   spotAccountId,
   topics,
-  additionalRelatedArticlesFlag
+  additionalRelatedArticlesFlag,
+  latestFromSectionFlag,
+  section,
+  latestFromSection
 }) => {
   const [
     algoliaRelatedArticleSlice,
@@ -36,7 +43,6 @@ const ArticleExtras = ({
   ] = useState();
 
   const { getRelatedArticles } = useAlgoliaSearch();
-
   useMemo(
     async () => {
       if (additionalRelatedArticlesFlag) {
@@ -84,6 +90,14 @@ const ArticleExtras = ({
           isVisible={relatedArticlesVisible}
           slice={relatedArticleSlice}
         />
+        {latestFromSectionFlag &&
+          latestFromSection && (
+            <LatestFromSection
+              section={section}
+              latestFromSection={latestFromSection}
+              analyticsStream={analyticsStream}
+            />
+          )}
         <RelatedArticleSlice
           heading="Related Articles"
           analyticsStream={analyticsStream}
@@ -136,13 +150,17 @@ ArticleExtras.propTypes = {
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
-  additionalRelatedArticlesFlag: PropTypes.bool.isRequired
+  additionalRelatedArticlesFlag: PropTypes.bool.isRequired,
+  latestFromSectionFlag: PropTypes.bool.isRequired,
+  section: PropTypes.string.isRequired,
+  latestFromSection: PropTypes.shape({})
 };
 
 ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
   spotAccountId: null,
-  topics: null
+  topics: null,
+  latestFromSection: null
 };
 
 export default ArticleExtras;
