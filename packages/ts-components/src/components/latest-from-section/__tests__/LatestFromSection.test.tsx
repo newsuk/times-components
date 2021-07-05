@@ -3,6 +3,15 @@ import { render } from '@testing-library/react';
 import React from 'react';
 import { LatestFromSection } from '../LatestFromSection';
 describe('<LatestFromSection>', () => {
+  beforeEach(() => {
+    global.Intl = {
+      DateTimeFormat: () => ({
+        // @ts-ignore
+        resolvedOptions: () => ({ timeZone: 'Europe/London' })
+      })
+    };
+  });
+
   it('renders ', () => {
     const { asFragment } = render(
       <LatestFromSection
