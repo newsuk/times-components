@@ -41,7 +41,7 @@ export type RelatedArticleType = {
   publishedTime?: string;
   updatedTime?: string;
   template?: string;
-  url?: string;
+  url: string;
   hasVideo?: boolean;
   publicationName?: string;
   section: string;
