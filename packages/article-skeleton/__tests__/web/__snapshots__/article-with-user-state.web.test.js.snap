@@ -331,7 +331,6 @@ exports[`Article with user state Render full article when user has access to ful
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
-          section="Some Section"
           sharingEnabled={true}
           spotAccountId=""
           topics={
@@ -689,7 +688,6 @@ exports[`Article with user state Render teaser article when user does not have a
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
-          section="Some Section"
           sharingEnabled={true}
           spotAccountId=""
           topics={

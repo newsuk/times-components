@@ -33,7 +33,6 @@ const ArticleExtras = ({
   topics,
   additionalRelatedArticlesFlag,
   latestFromSectionFlag,
-  section,
   latestFromSection
 }) => {
   const [
@@ -93,7 +92,6 @@ const ArticleExtras = ({
         {latestFromSectionFlag &&
           latestFromSection && (
             <LatestFromSection
-              section={section}
               latestFromSection={latestFromSection}
               analyticsStream={analyticsStream}
             />
@@ -152,7 +150,6 @@ ArticleExtras.propTypes = {
   sharingEnabled: PropTypes.bool.isRequired,
   additionalRelatedArticlesFlag: PropTypes.bool.isRequired,
   latestFromSectionFlag: PropTypes.bool.isRequired,
-  section: PropTypes.string.isRequired,
   latestFromSection: PropTypes.shape({})
 };
 

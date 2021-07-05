@@ -220,7 +220,6 @@ const ArticleSkeleton = ({
                         additionalRelatedArticlesFlag={
                           additionalRelatedArticlesFlag
                         }
-                        section={section}
                         latestFromSectionFlag={latestFromSectionFlag}
                         latestFromSection={latestFromSection}
                       />
