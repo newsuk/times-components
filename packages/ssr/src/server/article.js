@@ -22,7 +22,9 @@ module.exports = (
     isPreview,
     additionalRelatedArticlesFlag,
     algoliaSearchKeys,
-    inArticlePuffFlag
+    inArticlePuffFlag,
+    latestFromSectionFlag,
+    latestFromSection
   },
   userState
 ) => {
@@ -72,11 +74,12 @@ module.exports = (
       isPreview,
       additionalRelatedArticlesFlag,
       algoliaSearchKeys,
-      inArticlePuffFlag
+      inArticlePuffFlag,
+      latestFromSectionFlag,
+      latestFromSection
     },
     name: "article"
   };
-
   return runServer(article, options).catch(error => {
     throw new Error(error);
   });
