@@ -37,6 +37,7 @@ export const formatLatestFromSection = (
       label: article.label || null,
       headline: article.headline,
       section: section.section,
+      url: `/article/${article.slug}-${article.shortIdentifier}`,
       leadAsset: {
         crop169: {
           url:
