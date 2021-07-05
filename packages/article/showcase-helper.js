@@ -281,7 +281,7 @@ const renderArticle = ({
             algoliaSearchKeys={algoliaSearchKeys}
             latestFromSectionFlag={latestFromSectionFlag}
             latestFromSection={latestFromSection.find(
-              s => s.section === section
+              ({ section: sectionName }) => sectionName === section
             )}
           />
         </ContextProviderWithDefaults>
