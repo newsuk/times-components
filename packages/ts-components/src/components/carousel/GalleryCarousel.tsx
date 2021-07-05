@@ -5,11 +5,12 @@ import {
   CarouselButton,
   CarouselIndicatorContainer,
   CarouselIndicator,
-  Label,
-  Headline,
-  MobileHeadlineLabelContainer,
   CarouselContainer,
-  StyledCarousel
+  StyledCarousel,
+  Copy,
+  Credit,
+  ImageTitle,
+  MobileOrLarge,
 } from './styles';
 
 import { Arrow } from './Arrow';
@@ -22,6 +23,7 @@ export type DataObj = {
     credit: string;
     headline: string;
     label: string;
+    imageTitle: string;
   };
   carouseldata: {
     image: string;
@@ -75,7 +77,9 @@ export type GalleryCarouselProps = {
   sectionColour: string;
   initialIndex?: number;
 };
-const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
+
+
+export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
   isLarge,
   data,
   sectionColour,
@@ -110,12 +114,6 @@ const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
           isSmall={isSmall}
           ref={intersectObserverRef}
         >
-          <MobileHeadlineLabelContainer>
-            <Label sectionColour={sectionColour}>
-              {data[current].paneldata.label}
-            </Label>
-            <Headline>{data[current].paneldata.headline}</Headline>
-          </MobileHeadlineLabelContainer>
           <StyledCarousel
             sectionColour={sectionColour}
             isLarge={isLarge}
@@ -162,6 +160,13 @@ const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
               </div>
             ))}
           </StyledCarousel>
+          <MobileOrLarge isLarge={isLarge}>
+              <div style={{ paddingLeft: '16px', paddingRight: '16px'}}>
+                <Credit>{data[current].paneldata.credit}</Credit>
+                <ImageTitle>{data[current].paneldata.imageTitle}</ImageTitle>
+                <Copy isLarge={isLarge}>{data[current].paneldata.copy}</Copy>
+              </div>
+          </MobileOrLarge>
         </CarouselContainer>
       )}
     </TrackingContextProvider>

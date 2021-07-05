@@ -2,14 +2,14 @@ import React from 'react';
 import {
   CardContainer,
   Credit,
-  MobileCardContent,
-  MobileCopyCreditContainer,
   Copy,
-  CardButtonContainer,
-  DesktopCardContent,
+  CardContent,
   Label,
   Headline,
-  CreditButtonContainer
+  HeadlineButtonContainer,
+  ImageTitle,
+  MobileOrLarge,
+  NotMobileOrLarge,
 } from './styles';
 import { DataObj } from './GalleryCarousel';
 
@@ -20,39 +20,24 @@ export const Card: React.FC<{
   sectionColour: string;
 }> = ({ children, isLarge, data, isSmall, sectionColour }) => {
   return (
-    <>
-      <CardContainer isLarge={isLarge} isSmall={isSmall}>
-        <MobileCardContent>
-          <MobileCopyCreditContainer>
-            <Credit>{data.paneldata.credit}</Credit>
-            <Copy data-testid="Copy" isLarge={isLarge}>
-              {data.paneldata.copy}
-            </Copy>
-          </MobileCopyCreditContainer>
-          <CardButtonContainer
-            isLarge={isLarge}
-            style={{ justifyContent: 'flex-end' }}
-          >
+    <CardContainer isLarge={isLarge} isSmall={isSmall}>
+      <CardContent>
+        <Label sectionColour={sectionColour}>
+          {data.paneldata.label}
+        </Label>
+        <HeadlineButtonContainer>
+          <Headline>{data.paneldata.headline}</Headline>
+          <MobileOrLarge isLarge={isLarge}>
             {children}
-          </CardButtonContainer>
-        </MobileCardContent>
-        <DesktopCardContent>
-          <div>
-            <Label sectionColour={sectionColour}>{data.paneldata.label}</Label>
-            <Headline>{data.paneldata.headline}</Headline>
+          </MobileOrLarge>
+        </HeadlineButtonContainer>
+          <NotMobileOrLarge isLarge={isLarge}>
+            <ImageTitle>{data.paneldata.imageTitle}</ImageTitle>
             <Copy isLarge={isLarge}>{data.paneldata.copy}</Copy>
-            {!isLarge && window.innerWidth >= 1024 ? (
-              <Credit>{data.paneldata.credit}</Credit>
-            ) : null}
-          </div>
-          <CreditButtonContainer>
-            {window.innerWidth < 1024 || isLarge ? (
-              <Credit>{data.paneldata.credit}</Credit>
-            ) : null}
+            <Credit>{data.paneldata.credit}</Credit>
             {children}
-          </CreditButtonContainer>
-        </DesktopCardContent>
-      </CardContainer>
-    </>
-  );
+          </NotMobileOrLarge>
+      </CardContent>
+    </CardContainer>
+  )
 };

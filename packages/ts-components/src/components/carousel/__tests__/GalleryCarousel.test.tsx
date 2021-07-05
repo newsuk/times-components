@@ -13,7 +13,8 @@ const data = [
       label: 'Label 1',
       headline: 'Headline 1',
       copy: 'Copy 1',
-      credit: 'Credit 1'
+      credit: 'Credit 1',
+      imageTitle: 'Image Title 1',
     },
     carouseldata: {
       image:
@@ -25,7 +26,8 @@ const data = [
       label: 'Label 2',
       headline: 'Headline 2',
       copy: 'Copy 2',
-      credit: 'Credit 2'
+      credit: 'Credit 2',
+      imageTitle: 'Image Title 2',
     },
     carouseldata: {
       image:
