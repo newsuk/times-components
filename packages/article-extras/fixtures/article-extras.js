@@ -632,4 +632,143 @@ const topics = [
   }
 ];
 
-export { relatedArticleSlice, topics };
+const latestFromSection = {
+  section: "Business",
+  items: [
+    {
+      id: "37cad600-d915-11eb-b92f-5fe539a30c29",
+      headline: "Google bows to pressure on scam ads",
+      summary:
+        "Google UK has bowed to pressure from police and regulators to clamp down on scam promotions by announcing that all advertisers selling a financial product",
+      canonicalID: "google-uk-bows-to-pressure-on-scam-adverts-w80sk3g2n",
+      publishedTime: "2021-06-29T23:01:00Z",
+      updatedTime: "2021-06-29T20:48:38Z",
+      author: "Tom Knowles,",
+      slug: "google-uk-bows-to-pressure-on-scam-adverts",
+      shortIdentifier: "w80sk3g2n",
+      leadAsset: [
+        {
+          ratio: "3:2",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg"
+        },
+        {
+          ratio: "16:9",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg"
+        },
+        {
+          ratio: "1:1",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg"
+        },
+        {
+          ratio: "2:3",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg"
+        },
+        {
+          ratio: "4:5",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg"
+        },
+        {
+          ratio: "1.25:1",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/65a1a8de-d905-11eb-b92f-5fe539a30c29.jpg"
+        }
+      ]
+    },
+    {
+      id: "7d04fd9e-d916-11eb-8f14-0bb645f59db0",
+      headline: "Bridgepoint top brass to share £1.6bn",
+      summary:
+        "The 144 partners and senior executives at the private equity group behind itsu sushi and MotoGP racing are set to crystallise personal wealth of about £1.6 bill",
+      canonicalID: "bridgepoint-top-brass-to-share-1-6bn-9g3xpvhp3",
+      publishedTime: "2021-06-29T23:01:00Z",
+      updatedTime: "2021-06-29T21:09:02Z",
+      author: "Patrick Hosking, Financial Editor",
+      slug: "bridgepoint-top-brass-to-share-1-6bn",
+      shortIdentifier: "9g3xpvhp3",
+      leadAsset: [
+        {
+          ratio: "3:2",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/3ec8fa54-d91a-11eb-8f14-0bb645f59db0.jpg"
+        },
+        {
+          ratio: "16:9",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/3ec8fa54-d91a-11eb-8f14-0bb645f59db0.jpg"
+        },
+        {
+          ratio: "1:1",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/3ec8fa54-d91a-11eb-8f14-0bb645f59db0.jpg"
+        },
+        {
+          ratio: "2:3",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/3ec8fa54-d91a-11eb-8f14-0bb645f59db0.jpg"
+        },
+        {
+          ratio: "4:5",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/3ec8fa54-d91a-11eb-8f14-0bb645f59db0.jpg"
+        },
+        {
+          ratio: "1.25:1",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/3ec8fa54-d91a-11eb-8f14-0bb645f59db0.jpg"
+        }
+      ]
+    },
+    {
+      id: "48362340-d8ee-11eb-8f14-0bb645f59db0",
+      headline: "Private equity views bridge into public markets",
+      summary:
+        "“This is about the partners getting rich. It’s not about anything else.” That was the trenchant view of one rival private equity figure yesterday as Bridgepoint",
+      label: "Analysis",
+      canonicalID: "private-equity-views-bridge-into-public-markets-qfd7lxwq6",
+      publishedTime: "2021-06-29T23:01:00Z",
+      updatedTime: "2021-06-30T04:48:14Z",
+      author: "Patrick Hosking, Financial Editor",
+      slug: "private-equity-views-bridge-into-public-markets",
+      shortIdentifier: "qfd7lxwq6",
+      leadAsset: [
+        {
+          ratio: "3:2",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/f84487b2-d8ae-11eb-b92f-5fe539a30c29.jpg"
+        },
+        {
+          ratio: "16:9",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/f84487b2-d8ae-11eb-b92f-5fe539a30c29.jpg"
+        },
+        {
+          ratio: "1:1",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/f84487b2-d8ae-11eb-b92f-5fe539a30c29.jpg"
+        },
+        {
+          ratio: "2:3",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/94670fa6-d8f1-11eb-8f14-0bb645f59db0.jpg"
+        },
+        {
+          ratio: "4:5",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/9bea9040-d8f1-11eb-8f14-0bb645f59db0.jpg"
+        },
+        {
+          ratio: "1.25:1",
+          source:
+            "https://nu-hub-prod.s3.amazonaws.com/methode/times/prod/web/bin/f84487b2-d8ae-11eb-b92f-5fe539a30c29.jpg"
+        }
+      ]
+    }
+  ]
+};
+
+export { relatedArticleSlice, topics, latestFromSection };

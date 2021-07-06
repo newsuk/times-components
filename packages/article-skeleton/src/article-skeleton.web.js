@@ -51,7 +51,9 @@ const ArticleSkeleton = ({
   isPreview,
   additionalRelatedArticlesFlag,
   algoliaSearchKeys,
-  inArticlePuffFlag
+  inArticlePuffFlag,
+  latestFromSectionFlag,
+  latestFromSection
 }) => {
   const {
     commentsEnabled,
@@ -218,6 +220,8 @@ const ArticleSkeleton = ({
                         additionalRelatedArticlesFlag={
                           additionalRelatedArticlesFlag
                         }
+                        latestFromSectionFlag={latestFromSectionFlag}
+                        latestFromSection={latestFromSection}
                       />
                     )}
                   </LazyLoad>

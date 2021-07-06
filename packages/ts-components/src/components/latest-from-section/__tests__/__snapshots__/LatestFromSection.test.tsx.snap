@@ -1,0 +1,523 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LatestFromSection> no data  1`] = `
+<DocumentFragment>
+  <div
+    class="css-view-1dbjc4n"
+  >
+    <div
+      class="css-view-1dbjc4n"
+      style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
+    >
+      <h3
+        aria-level="3"
+        class="css-reset-4rbku5 css-text-901oao"
+        dir="auto"
+        role="heading"
+        style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
+      >
+        Latest from Sport
+      </h3>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<LatestFromSection> no data  2`] = `
+<DocumentFragment>
+  <div
+    class="css-view-1dbjc4n"
+  >
+    <div
+      class="css-view-1dbjc4n"
+      style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
+    >
+      <h3
+        aria-level="3"
+        class="css-reset-4rbku5 css-text-901oao"
+        dir="auto"
+        role="heading"
+        style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
+      >
+        Latest from Sport
+      </h3>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<LatestFromSection> renders  1`] = `
+<DocumentFragment>
+  <div
+    class="css-view-1dbjc4n"
+  >
+    <div
+      class="css-view-1dbjc4n"
+      style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
+    >
+      <h3
+        aria-level="3"
+        class="css-reset-4rbku5 css-text-901oao"
+        dir="auto"
+        role="heading"
+        style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
+      >
+        Latest from Sport
+      </h3>
+    </div>
+    <div
+      class="configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-2 bCJkFj configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-2 bCJkFj css-view-1dbjc4n"
+    >
+      <div
+        class="responsiveweb__SliceContainer-sc-2kg7gs-0 goDieb responsiveweb__SliceContainer-sc-2kg7gs-0 goDieb css-view-1dbjc4n"
+      >
+        <div
+          class="responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-2 responsiveweb__Base-aumpme-4 dOLCXz responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-2 responsiveweb__Base-aumpme-4 dOLCXz css-view-1dbjc4n"
+        >
+          <div
+            class="responsiveweb__ChildContainer-aumpme-0 bwWtkp responsiveweb__ChildContainer-aumpme-0 bwWtkp css-view-1dbjc4n"
+          >
+            <div
+              data-testid="related-article-item"
+            >
+              <a
+                class="linkweb__RespLink-yfb9n-0 cCCShB"
+                href="https://www.thetimes.co.uk/article/the-entire-tour-de-france-bows-to-the-greatness-of-mark-cavendish-2zq0zgfmn"
+              >
+                <div
+                  class="css-view-1dbjc4n"
+                >
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
+                  >
+                    <div
+                      class="imageContainerClass imageContainerClass css-view-1dbjc4n"
+                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                    >
+                      <div
+                        class="css-view-1dbjc4n"
+                      >
+                        <div
+                          style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 56.25%;"
+                        >
+                          <img
+                            class="responsiveweb-sc-142djdt-0 gkCaRe"
+                            src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg?resize=200&quality=3"
+                          />
+                          <div
+                            class="css-view-1dbjc4n"
+                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
+                          >
+                            <svg
+                              height="auto"
+                              style="max-width: 25%; max-height: 50%;"
+                              version="1.1"
+                              viewBox="145 50 108 120"
+                              width="100%"
+                            >
+                              <g
+                                fill="none"
+                                fill-rule="evenodd"
+                                stroke="none"
+                                stroke-width="1"
+                              >
+                                <path
+                                  d="M211.26076,54 L211.231367,54 L147.67512,54 L145,85.7081465 L146.922096,86.4489102 C146.922096,86.4489102 164.867589,68.1355181 168.301115,65.0001546 C171.728017,61.8689133 174.237132,61.0885763 176.436179,60.3527593 C180.998206,59.169681 185.977937,59.2150255 185.977937,59.2150255 L186.109581,59.2150255 L186.109581,156.560932 L169.259886,164.473953 L169.259886,166 L228.735147,166 L228.735147,164.473953 L211.889177,156.560932 L211.889177,59.2150255 L212.01751,59.2150255 C212.01751,59.2150255 216.992272,59.169681 221.558854,60.3527593 C223.757072,61.0885763 226.266601,61.8689133 229.691848,65.0001546 C233.130341,68.1355181 251.071695,86.4489102 251.071695,86.4489102 L253,85.7081465 L250.317842,54 L211.270695,54 L211.242545,54"
+                                  fill="#FFFFFF"
+                                />
+                              </g>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="contentContainerClass contentContainerClass css-view-1dbjc4n"
+                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                    >
+                      <div
+                        class="css-view-1dbjc4n"
+                      >
+                        <div
+                          class="css-view-1dbjc4n"
+                          style="margin-bottom: 0px;"
+                        >
+                          <div
+                            class="css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(0, 131, 71); font-family: GillSansMTStd-Medium; font-size: 12px; font-weight: 400; letter-spacing: 1px; line-height: 12px; margin-bottom: 0px; margin-top: -1px; padding-top: 1px;"
+                          >
+                            CYCLING | DAVID WALSH
+                          </div>
+                        </div>
+                        <h3
+                          aria-level="3"
+                          class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
+                          dir="auto"
+                          role="heading"
+                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
+                        >
+                          The entire Tour bows to the greatness of Cavendish
+                        </h3>
+                        <div
+                          class="css-view-1dbjc4n"
+                        >
+                          <div
+                            class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                          >
+                            <span
+                              class="css-text-901oao css-textHasAncestor-16my406"
+                              dir="auto"
+                            >
+                              The story of Mark Cavendish’s heroic return can be told in many ways. In the brilliance of the sprint, mostly. His team-mates had done an outstanding job but ri...
+                            </span>
+                          </div>
+                          <div
+                            class="summaryHidden summary145Class summaryHidden summary145Class css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                          >
+                            <span
+                              class="css-text-901oao css-textHasAncestor-16my406"
+                              dir="auto"
+                            >
+                              The story of Mark Cavendish’s heroic return can be told in many ways. In the brilliance of the sprint, mostly. His team-mates had done an outstanding job but ri...
+                            </span>
+                          </div>
+                        </div>
+                        <div
+                          class="css-text-901oao"
+                          data-testid="datePublication"
+                          dir="auto"
+                          style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
+                        >
+                          <time
+                            datetime="2021-06-29T23:01:00Z"
+                          >
+                            June 30 2021, 12.01am
+                          </time>
+                        </div>
+                        <div
+                          class="css-text-901oao"
+                          dir="auto"
+                        >
+                          <span
+                            class="css-text-901oao css-textHasAncestor-16my406"
+                            dir="auto"
+                            style="color: rgb(51, 51, 51); flex-direction: row; font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px;"
+                          >
+                            David Walsh
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="responsiveweb-sc-2kg7gs-1 iiVeDy responsiveweb-sc-2kg7gs-1 iiVeDy css-view-1dbjc4n"
+          />
+          <div
+            class="responsiveweb__ChildContainer-aumpme-0 bwWtkp responsiveweb__ChildContainer-aumpme-0 bwWtkp css-view-1dbjc4n"
+          >
+            <div
+              data-testid="related-article-item"
+            >
+              <a
+                class="linkweb__RespLink-yfb9n-0 cCCShB"
+                href="https://www.thetimes.co.uk/article/jordan-pickford-repels-everything-germans-muster-ktkcvc85p"
+              >
+                <div
+                  class="css-view-1dbjc4n"
+                >
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
+                  >
+                    <div
+                      class="imageContainerClass imageContainerClass css-view-1dbjc4n"
+                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                    >
+                      <div
+                        class="css-view-1dbjc4n"
+                      >
+                        <div
+                          style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 56.25%;"
+                        >
+                          <img
+                            class="responsiveweb-sc-142djdt-0 gkCaRe"
+                            src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg?resize=200&quality=3"
+                          />
+                          <div
+                            class="css-view-1dbjc4n"
+                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
+                          >
+                            <svg
+                              height="auto"
+                              style="max-width: 25%; max-height: 50%;"
+                              version="1.1"
+                              viewBox="145 50 108 120"
+                              width="100%"
+                            >
+                              <g
+                                fill="none"
+                                fill-rule="evenodd"
+                                stroke="none"
+                                stroke-width="1"
+                              >
+                                <path
+                                  d="M211.26076,54 L211.231367,54 L147.67512,54 L145,85.7081465 L146.922096,86.4489102 C146.922096,86.4489102 164.867589,68.1355181 168.301115,65.0001546 C171.728017,61.8689133 174.237132,61.0885763 176.436179,60.3527593 C180.998206,59.169681 185.977937,59.2150255 185.977937,59.2150255 L186.109581,59.2150255 L186.109581,156.560932 L169.259886,164.473953 L169.259886,166 L228.735147,166 L228.735147,164.473953 L211.889177,156.560932 L211.889177,59.2150255 L212.01751,59.2150255 C212.01751,59.2150255 216.992272,59.169681 221.558854,60.3527593 C223.757072,61.0885763 226.266601,61.8689133 229.691848,65.0001546 C233.130341,68.1355181 251.071695,86.4489102 251.071695,86.4489102 L253,85.7081465 L250.317842,54 L211.270695,54 L211.242545,54"
+                                  fill="#FFFFFF"
+                                />
+                              </g>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="contentContainerClass contentContainerClass css-view-1dbjc4n"
+                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                    >
+                      <div
+                        class="css-view-1dbjc4n"
+                      >
+                        <div
+                          class="css-view-1dbjc4n"
+                          style="margin-bottom: 0px;"
+                        >
+                          <div
+                            class="css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(0, 131, 71); font-family: GillSansMTStd-Medium; font-size: 12px; font-weight: 400; letter-spacing: 1px; line-height: 12px; margin-bottom: 0px; margin-top: -1px; padding-top: 1px;"
+                          >
+                            EURO 2020 | MATT LAWTON
+                          </div>
+                        </div>
+                        <h3
+                          aria-level="3"
+                          class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
+                          dir="auto"
+                          role="heading"
+                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
+                        >
+                          Flawless Pickford repels everything Germans muster
+                        </h3>
+                        <div
+                          class="css-view-1dbjc4n"
+                        >
+                          <div
+                            class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                          >
+                            <span
+                              class="css-text-901oao css-textHasAncestor-16my406"
+                              dir="auto"
+                            >
+                              Accompanied by a ghost of England’s past in the form of Thomas Müller, Germany set out to inflict yet more misery on their hosts with two spirited young forward...
+                            </span>
+                          </div>
+                          <div
+                            class="summaryHidden summary145Class summaryHidden summary145Class css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                          >
+                            <span
+                              class="css-text-901oao css-textHasAncestor-16my406"
+                              dir="auto"
+                            >
+                              Accompanied by a ghost of England’s past in the form of Thomas Müller, Germany set out to inflict yet more misery on their hosts with two spirited young forward...
+                            </span>
+                          </div>
+                        </div>
+                        <div
+                          class="css-text-901oao"
+                          data-testid="datePublication"
+                          dir="auto"
+                          style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
+                        >
+                          <time
+                            datetime="2021-06-30T11:00:00Z"
+                          >
+                            June 30 2021, 12.00pm
+                          </time>
+                        </div>
+                        <div
+                          class="css-text-901oao"
+                          dir="auto"
+                        >
+                          <span
+                            class="css-text-901oao css-textHasAncestor-16my406"
+                            dir="auto"
+                            style="color: rgb(51, 51, 51); flex-direction: row; font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px;"
+                          >
+                            Matt Lawton
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div
+            class="responsiveweb-sc-2kg7gs-1 iiVeDy responsiveweb-sc-2kg7gs-1 iiVeDy css-view-1dbjc4n"
+          />
+          <div
+            class="responsiveweb__ChildContainer-aumpme-0 bwWtkp responsiveweb__ChildContainer-aumpme-0 bwWtkp css-view-1dbjc4n"
+          >
+            <div
+              data-testid="related-article-item"
+            >
+              <a
+                class="linkweb__RespLink-yfb9n-0 cCCShB"
+                href="https://www.thetimes.co.uk/article/the-tactical-masterstrokes-behind-englands-ruthless-win-s2s5j6k8l"
+              >
+                <div
+                  class="css-view-1dbjc4n"
+                >
+                  <div
+                    class="css-view-1dbjc4n"
+                    style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
+                  >
+                    <div
+                      class="imageContainerClass imageContainerClass css-view-1dbjc4n"
+                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                    >
+                      <div
+                        class="css-view-1dbjc4n"
+                      >
+                        <div
+                          style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 56.25%;"
+                        >
+                          <img
+                            class="responsiveweb-sc-142djdt-0 gkCaRe"
+                            src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F798e1dce-d918-11eb-b92f-5fe539a30c29.jpg?resize=200&quality=3"
+                          />
+                          <div
+                            class="css-view-1dbjc4n"
+                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
+                          >
+                            <svg
+                              height="auto"
+                              style="max-width: 25%; max-height: 50%;"
+                              version="1.1"
+                              viewBox="145 50 108 120"
+                              width="100%"
+                            >
+                              <g
+                                fill="none"
+                                fill-rule="evenodd"
+                                stroke="none"
+                                stroke-width="1"
+                              >
+                                <path
+                                  d="M211.26076,54 L211.231367,54 L147.67512,54 L145,85.7081465 L146.922096,86.4489102 C146.922096,86.4489102 164.867589,68.1355181 168.301115,65.0001546 C171.728017,61.8689133 174.237132,61.0885763 176.436179,60.3527593 C180.998206,59.169681 185.977937,59.2150255 185.977937,59.2150255 L186.109581,59.2150255 L186.109581,156.560932 L169.259886,164.473953 L169.259886,166 L228.735147,166 L228.735147,164.473953 L211.889177,156.560932 L211.889177,59.2150255 L212.01751,59.2150255 C212.01751,59.2150255 216.992272,59.169681 221.558854,60.3527593 C223.757072,61.0885763 226.266601,61.8689133 229.691848,65.0001546 C233.130341,68.1355181 251.071695,86.4489102 251.071695,86.4489102 L253,85.7081465 L250.317842,54 L211.270695,54 L211.242545,54"
+                                  fill="#FFFFFF"
+                                />
+                              </g>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="contentContainerClass contentContainerClass css-view-1dbjc4n"
+                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                    >
+                      <div
+                        class="css-view-1dbjc4n"
+                      >
+                        <div
+                          class="css-view-1dbjc4n"
+                          style="margin-bottom: 0px;"
+                        >
+                          <div
+                            class="css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(0, 131, 71); font-family: GillSansMTStd-Medium; font-size: 12px; font-weight: 400; letter-spacing: 1px; line-height: 12px; margin-bottom: 0px; margin-top: -1px; padding-top: 1px;"
+                          >
+                            EURO 2020 | JONATHAN NORTHCROFT
+                          </div>
+                        </div>
+                        <h3
+                          aria-level="3"
+                          class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
+                          dir="auto"
+                          role="heading"
+                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
+                        >
+                          The tactical masterstrokes behind England’s ruthless win
+                        </h3>
+                        <div
+                          class="css-view-1dbjc4n"
+                        >
+                          <div
+                            class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                          >
+                            <span
+                              class="css-text-901oao css-textHasAncestor-16my406"
+                              dir="auto"
+                            >
+                              Rising value of SterlingRaheem Sterling is often portrayed as the kid from an estate near Wembley, who transitioned from street player to a star on its pitch. A...
+                            </span>
+                          </div>
+                          <div
+                            class="summaryHidden summary145Class summaryHidden summary145Class css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                          >
+                            <span
+                              class="css-text-901oao css-textHasAncestor-16my406"
+                              dir="auto"
+                            >
+                              Rising value of SterlingRaheem Sterling is often portrayed as the kid from an estate near Wembley, who transitioned from street player to a star on its pitch. A...
+                            </span>
+                          </div>
+                        </div>
+                        <div
+                          class="css-text-901oao"
+                          data-testid="datePublication"
+                          dir="auto"
+                          style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
+                        >
+                          <time
+                            datetime="2021-06-29T23:01:00Z"
+                          >
+                            June 30 2021, 12.01am
+                          </time>
+                        </div>
+                        <div
+                          class="css-text-901oao"
+                          dir="auto"
+                        >
+                          <span
+                            class="css-text-901oao css-textHasAncestor-16my406"
+                            dir="auto"
+                            style="color: rgb(51, 51, 51); flex-direction: row; font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px;"
+                          >
+                            Jonathan Northcroft
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
