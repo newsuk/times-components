@@ -52,7 +52,7 @@ export const OptaFootballMatchStats: React.FC<{
         setIsReady(true);
       }
     });
-  }, []);
+  }, [ref]);
 
   return (
     <Container border={isReady}>

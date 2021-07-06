@@ -45,7 +45,7 @@ export const OptaFootballStandings: React.FC<{
         setIsReady(true);
       }
     });
-  }, []);
+  }, [ref]);
 
   return (
     <Container border={isReady}>

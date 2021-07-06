@@ -63,7 +63,7 @@ export const OptaFootballFixtures: React.FC<{
         setIsReady(true);
       }
     });
-  }, []);
+  }, [ref]);
 
   return (
     <Container border={isReady}>

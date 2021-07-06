@@ -50,7 +50,7 @@ export const OptaFootballSummary: React.FC<{
         setIsReady(true);
       }
     });
-  }, []);
+  }, [ref]);
 
   return (
     <Container border={isReady}>
