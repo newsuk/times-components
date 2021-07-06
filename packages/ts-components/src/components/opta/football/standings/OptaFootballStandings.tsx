@@ -18,7 +18,8 @@ export const OptaFootballStandings: React.FC<{
   competition: string;
   default_nav?: string;
   navigation?: boolean;
-}> = ({ season, competition, default_nav = 1, navigation }) => {
+  full_width: boolean;
+}> = ({ season, competition, default_nav = 1, navigation, full_width }) => {
   const ref = React.createRef<HTMLDivElement>();
 
   const [isReady, setIsReady] = useState<boolean>(false);
@@ -48,7 +49,7 @@ export const OptaFootballStandings: React.FC<{
   }, [ref]);
 
   return (
-    <Container border={isReady}>
+    <Container border={isReady} fullWidth={full_width}>
       <WidgetContainer ref={ref} />
 
       {!isReady && (

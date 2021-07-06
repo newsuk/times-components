@@ -180,6 +180,7 @@ const renderers = ({
             competition={attributes.competition}
             date_from={attributes["date-from"]}
             date_to={attributes["date-to"]}
+            full_width={display === "fullwidth"}
           />
         );
 
@@ -190,6 +191,7 @@ const renderers = ({
             competition={attributes.competition}
             default_nav={attributes.group}
             navigation
+            full_width={display === "fullwidth"}
           />
         );
 
@@ -199,6 +201,7 @@ const renderers = ({
             season={attributes.season}
             competition={attributes.competition}
             match={attributes.match}
+            full_width={display === "fullwidth"}
           />
         );
 
@@ -208,6 +211,7 @@ const renderers = ({
             season={attributes.season}
             competition={attributes.competition}
             match={attributes.match}
+            full_width={display === "fullwidth"}
           />
         );
 
