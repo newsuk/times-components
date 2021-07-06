@@ -26,16 +26,24 @@ export const Card: React.FC<{
           {data.paneldata.label}
         </Label>
         <HeadlineButtonContainer>
-          <Headline>{data.paneldata.headline}</Headline>
+          <Headline isLarge={isLarge}>{data.paneldata.headline}</Headline>
           <MobileOrLarge isLarge={isLarge}>
             {children}
           </MobileOrLarge>
         </HeadlineButtonContainer>
           <NotMobileOrLarge isLarge={isLarge}>
-            <ImageTitle>{data.paneldata.imageTitle}</ImageTitle>
-            <Copy isLarge={isLarge}>{data.paneldata.copy}</Copy>
-            <Credit>{data.paneldata.credit}</Credit>
+            <div>
+              {
+                data.paneldata.imageTitle && <ImageTitle isLarge={isLarge}>{data.paneldata.imageTitle}</ImageTitle>
+              }
+              {
+                data.paneldata.copy && <Copy isLarge={isLarge}>{data.paneldata.copy}</Copy>
+              }
+            </div>
+            <div>
+            <Credit isLarge={isLarge}>{data.paneldata.credit}</Credit>
             {children}
+            </div>
           </NotMobileOrLarge>
       </CardContent>
     </CardContainer>

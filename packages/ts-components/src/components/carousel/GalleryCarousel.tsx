@@ -19,11 +19,11 @@ import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextP
 
 export type DataObj = {
   paneldata: {
-    copy: string;
+    copy?: string;
     credit: string;
     headline: string;
     label: string;
-    imageTitle: string;
+    imageTitle?: string;
   };
   carouseldata: {
     image: string;
@@ -162,9 +162,14 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
           </StyledCarousel>
           <MobileOrLarge isLarge={isLarge}>
               <div style={{ paddingLeft: '16px', paddingRight: '16px'}}>
-                <Credit>{data[current].paneldata.credit}</Credit>
-                <ImageTitle>{data[current].paneldata.imageTitle}</ImageTitle>
-                <Copy isLarge={isLarge}>{data[current].paneldata.copy}</Copy>
+                <Credit isLarge={isLarge}>{data[current].paneldata.credit}</Credit>
+                {
+                  data[current].paneldata.imageTitle &&
+                    <ImageTitle isLarge={isLarge}>{data[current].paneldata.imageTitle}</ImageTitle>
+                }
+                {
+                  data[current].paneldata.copy && <Copy isLarge={isLarge}>{data[current].paneldata.copy}</Copy>
+                }
               </div>
           </MobileOrLarge>
         </CarouselContainer>

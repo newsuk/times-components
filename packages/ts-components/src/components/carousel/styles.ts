@@ -13,12 +13,12 @@ export const Label = styled.div<{ sectionColour: string }>`
   @media (min-width: ${breakpoints.medium}px) {
     padding-bottom: 6px;
   }
-  @media (min-width: ${breakpoints.medium}px) {
-    padding-bottom: 8px;
+  @media (min-width: ${breakpoints.wide}px) {
+    padding-bottom: 10px;
   }
 `;
 
-export const Headline = styled.div`
+export const Headline = styled.div<{ isLarge: boolean }>`
   font-size: 24px;
   line-height: 24px;
   color: ${colours.functional.brandColour};
@@ -30,8 +30,11 @@ export const Headline = styled.div`
     line-height: 32px;
     padding-bottom: 0px;
   }
-  @media (min-width: ${breakpoints.medium}px) {
+  @media (min-width: ${breakpoints.wide}px) {
     width: 100%;
+    font-size: ${({ isLarge }) => isLarge ? '32px' : '24px'};
+    line-height: ${({ isLarge }) => isLarge ? '32px' : '24px'};
+    padding-bottom: ${({ isLarge }) => isLarge ? '0px' : '14px'};
   }
 `;
 
@@ -53,12 +56,12 @@ export const Copy = styled.div<{ isLarge: boolean }>`
   padding-bottom: 16px;
   @media (min-width: ${breakpoints.wide}px) {
     width: ${({ isLarge }) => (isLarge ? '60%' : '100%')};
-    font-size: '16px';
-    line-height: '24px';
+    font-size: 16px;
+    line-height: 24px;
   }
 `;
 
-export const ImageTitle = styled.div`
+export const ImageTitle = styled.div<{ isLarge: boolean}>`
   font-size: 16px;
   line-height: 16px;
   font-family: ${fonts.headlineRegular};
@@ -67,9 +70,13 @@ export const ImageTitle = styled.div`
     font-size: 24px;
     line-height: 24px;
   }
+  @media (min-width: ${breakpoints.wide}px) {
+    font-size: ${({ isLarge }) => isLarge ? '24px' : '18px'};
+    line-height: ${({ isLarge }) => isLarge ? '24px' : '18px'};
+  }
 `;
 
-export const Credit = styled.div`
+export const Credit = styled.div<{ isLarge: boolean }>`
   text-transform: uppercase;
   font-size: 12px;
   line-height: 16px;
@@ -79,6 +86,10 @@ export const Credit = styled.div`
   padding-top: 8px;
   @media (min-width: ${breakpoints.medium}px) {
     padding-top: 12px;
+  }
+  @media (min-width: ${breakpoints.wide}px) {
+    padding-top: 12px;
+    padding-bottom: ${({ isLarge }) => isLarge ? '8px' : '14px'}
   }
 `;
 
@@ -92,9 +103,9 @@ export const CardContainer = styled.div<{ isLarge: boolean; isSmall: boolean }>`
   @media (min-width: ${breakpoints.wide}px) {
     height: ${({ isLarge }) => (isLarge ? '30%' : 'auto')};
     width: ${({ isLarge, isSmall }) =>
-      (isLarge && '100%') || (isSmall && '36%') || '27%'};
-    padding: ${({ isLarge }) =>
-      isLarge ? '20px 20px 20px 20px' : '20px 20px 12px 20px'};
+      (isLarge && '100%') || (isSmall && '36%') || '33%'};
+    padding: ${({ isLarge, isSmall }) =>
+      isLarge || isSmall ? '20px' : '16px 12px'};
   }
   display: flex;
   flex-direction: column;
@@ -158,7 +169,6 @@ export const CarouselIndicator = styled.div<{ active?: boolean }>`
 export const CardContent = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 100%;
 `;
 
@@ -172,7 +182,10 @@ export const MobileOrLarge = styled.div<{ isLarge: boolean }>`
 export const NotMobileOrLarge = styled.div<{ isLarge: boolean }>`
   display: none;
   @media (min-width: ${breakpoints.wide}px) {
-    display: ${({ isLarge }) => (isLarge ? 'none' : 'block')};
+    display: ${({ isLarge }) => (isLarge ? 'none' : 'flex')};
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
   }
 `;
 
