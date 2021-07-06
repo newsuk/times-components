@@ -145,8 +145,8 @@ describe('Inline Newsletter Puff', () => {
       const signupButton = await component.findByText('Sign up now');
       fireEvent.click(signupButton);
 
-      expect(await component.findByText('Saving…')).toBeTruthy();
       expect(component.baseElement).toMatchSnapshot();
+      expect(await component.findByText('Saving…')).toBeTruthy();
     });
 
     it('triggers analytics when subscribed', async () => {

@@ -80,7 +80,9 @@ class ArticlePage extends Component {
       isPreview,
       additionalRelatedArticlesFlag,
       algoliaSearchKeys,
-      inArticlePuffFlag
+      inArticlePuffFlag,
+      latestFromSectionFlag,
+      latestFromSection
     } = this.props;
 
     if (error || isLoading) {
@@ -101,6 +103,8 @@ class ArticlePage extends Component {
         additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
         algoliaSearchKeys={algoliaSearchKeys}
         inArticlePuffFlag={inArticlePuffFlag}
+        latestFromSectionFlag={latestFromSectionFlag}
+        latestFromSection={latestFromSection}
       />
     );
   }

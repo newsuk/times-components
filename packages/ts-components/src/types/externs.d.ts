@@ -153,3 +153,15 @@ declare module '@times-components/date-publication' {
   export const DatePublication: React.FC<DatePublicationProps>;
   export default DatePublication;
 }
+
+declare module '@times-components/related-articles' {
+  import { FC } from 'react';
+  type RelatedArticles = {
+    heading?: string;
+    analyticsStream: AnalyticsStreamType;
+    isVisible: boolean;
+    slice: any;
+  };
+  const RelatedArticles: FC<RelatedArticles>;
+  export default RelatedArticles;
+}

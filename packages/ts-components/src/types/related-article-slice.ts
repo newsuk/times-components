@@ -24,35 +24,35 @@ type Summary = {
   children: Summary[];
 };
 
-export type RelatedArticle = {
-  leadAsset: Asset | null;
+export type RelatedArticleType = {
+  leadAsset?: Asset | null;
   id: string;
   label: string | null;
   bylines: Bylines;
   headline: string;
-  shortHeadline: string | null;
+  shortHeadline?: string | null;
   standfirst?: string;
-  summary105: Summary[];
-  summary125: Summary[];
-  summary145: Summary[];
-  summary160: Summary[];
-  summary175: Summary[];
-  summary225: Summary[];
+  summary105?: Summary[];
+  summary125?: Summary[];
+  summary145?: Summary[];
+  summary160?: Summary[];
+  summary175?: Summary[];
+  summary225?: Summary[];
   publishedTime?: string;
   updatedTime?: string;
   template?: string;
   url: string;
   hasVideo?: boolean;
-  publicationName: string;
+  publicationName?: string;
   section: string;
   shortIdentifier?: string;
   slug?: string;
 };
 
-export type RelatedArticles = {
+export type RelatedArticleSliceType = {
   sliceName: string;
   items: Array<{
     leadAsset?: Asset | null;
-    article: RelatedArticle;
+    article: RelatedArticleType;
   }>;
 };

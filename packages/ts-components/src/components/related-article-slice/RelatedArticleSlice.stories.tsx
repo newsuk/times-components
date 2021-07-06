@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import { RelatedArticleSlice } from './RelatedArticleSlice';
 
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
-import { RelatedArticles } from './types';
+import { RelatedArticleSliceType } from '../../types/related-article-slice';
 import { select } from '@storybook/addon-knobs';
 import styled from 'styled-components';
 
@@ -14,34 +14,37 @@ const Container = styled.div`
   }
 `;
 
-storiesOf('Typescript Component', module).add('Related Articles Slice', () => {
-  const numberOfArticles = select(
-    'Number of Articles',
-    { Three: 3, Two: 2, One: 1 },
-    3
-  );
+storiesOf('Typescript Component/Article Extras', module).add(
+  'Related Articles Slice',
+  () => {
+    const numberOfArticles = select(
+      'Number of Articles',
+      { Three: 3, Two: 2, One: 1 },
+      3
+    );
 
-  const slice = {
-    ...relatedArticleSlice,
-    items: relatedArticleSlice.items.filter(
-      ({}, index) => index < numberOfArticles
-    )
-  };
-  // tslint:disable-next-line:no-console
-  const handleClick = console.log;
-  return (
-    <Container>
-      <RelatedArticleSlice
-        slice={slice}
-        heading="Related Articles"
-        clickHandler={handleClick}
-        analyticsStream={analyticsStream}
-      />
-    </Container>
-  );
-});
+    const slice = {
+      ...relatedArticleSlice,
+      items: relatedArticleSlice.items.filter(
+        ({}, index) => index < numberOfArticles
+      )
+    };
+    // tslint:disable-next-line:no-console
+    const handleClick = console.log;
+    return (
+      <Container>
+        <RelatedArticleSlice
+          slice={slice}
+          heading="Related Articles"
+          clickHandler={handleClick}
+          analyticsStream={analyticsStream}
+        />
+      </Container>
+    );
+  }
+);
 
-export const relatedArticleSlice: RelatedArticles = {
+export const relatedArticleSlice: RelatedArticleSliceType = {
   sliceName: 'StandardSlice',
   items: [
     {

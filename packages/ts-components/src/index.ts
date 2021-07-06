@@ -35,3 +35,7 @@ export * from './components/opta/football/match-stats/OptaFootballMatchStats';
 export {
   RelatedArticleSlice
 } from './components/related-article-slice/RelatedArticleSlice';
+
+export {
+  LatestFromSection
+} from './components/latest-from-section/LatestFromSection';
