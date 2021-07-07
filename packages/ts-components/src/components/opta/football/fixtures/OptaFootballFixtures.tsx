@@ -18,7 +18,7 @@ export const OptaFootballFixtures: React.FC<{
   competition: string;
   date_from: string;
   date_to: string;
-  full_width: boolean;
+  full_width?: boolean;
 }> = ({ season, competition, date_from, date_to, full_width }) => {
   const ref = React.createRef<HTMLDivElement>();
 

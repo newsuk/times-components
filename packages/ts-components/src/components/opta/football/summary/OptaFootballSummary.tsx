@@ -17,7 +17,7 @@ export const OptaFootballSummary: React.FC<{
   season: string;
   competition: string;
   match: string;
-  full_width: boolean;
+  full_width?: boolean;
 }> = ({ season, competition, match, full_width }) => {
   const ref = React.createRef<HTMLDivElement>();
 

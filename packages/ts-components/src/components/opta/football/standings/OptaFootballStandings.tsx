@@ -18,7 +18,7 @@ export const OptaFootballStandings: React.FC<{
   competition: string;
   default_nav?: string;
   navigation?: boolean;
-  full_width: boolean;
+  full_width?: boolean;
 }> = ({ season, competition, default_nav = 1, navigation, full_width }) => {
   const ref = React.createRef<HTMLDivElement>();
 
