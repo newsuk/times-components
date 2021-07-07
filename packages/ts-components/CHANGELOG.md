@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.2...@times-components/ts-components@1.11.3) (2021-07-07)
+
+
+### Bug Fixes
+
+* **TE-60:** opta football updates ([#2732](https://github.com/newsuk/times-components/issues/2732)) ([deb333b](https://github.com/newsuk/times-components/commit/deb333b121ef286da9743f9f1566394430d89dfa))
+
+
+
+
+
 ## [1.11.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.1...@times-components/ts-components@1.11.2) (2021-07-05)
 
 **Note:** Version bump only for package @times-components/ts-components
