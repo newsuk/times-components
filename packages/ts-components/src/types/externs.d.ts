@@ -53,6 +53,7 @@ declare module '@times-components/utils' {
   ) => string;
 
   export const capitalise: (s: string) => string;
+  export const stripTags: (input: string, replaceWith: string) => string;
 }
 
 declare module '@times-components/styleguide' {
@@ -151,4 +152,16 @@ declare module '@times-components/date-publication' {
 
   export const DatePublication: React.FC<DatePublicationProps>;
   export default DatePublication;
+}
+
+declare module '@times-components/related-articles' {
+  import { FC } from 'react';
+  type RelatedArticles = {
+    heading?: string;
+    analyticsStream: AnalyticsStreamType;
+    isVisible: boolean;
+    slice: any;
+  };
+  const RelatedArticles: FC<RelatedArticles>;
+  export default RelatedArticles;
 }

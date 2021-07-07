@@ -3,7 +3,7 @@ import { render, fireEvent, cleanup } from '@testing-library/react';
 
 import { RelatedArticleSlice } from '../RelatedArticleSlice';
 
-import { RelatedArticles } from '../types';
+import { RelatedArticleSliceType } from '../../../types/related-article-slice';
 import mockDate from 'mockdate';
 
 describe('RelatedArticleSlice', () => {
@@ -93,9 +93,26 @@ describe('RelatedArticleSlice', () => {
       object: 'Article'
     });
   });
+  describe('error checks', () => {
+    it('empty slice', () => {
+      const { asFragment } = render(
+        <RelatedArticleSlice heading="Related Articles" slice={null} />
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
+    it('invalid slicename', () => {
+      const { asFragment } = render(
+        <RelatedArticleSlice
+          heading="Related Articles"
+          slice={{ sliceName: 'name', items: [] }}
+        />
+      );
+      expect(asFragment()).toMatchSnapshot();
+    });
+  });
 });
 
-export const relatedArticleSlice: RelatedArticles = {
+export const relatedArticleSlice: RelatedArticleSliceType = {
   sliceName: 'StandardSlice',
   items: [
     {

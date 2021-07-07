@@ -1,6 +1,6 @@
 export type SliceArticle = {
   id?: string;
-  url: string;
+  url?: string;
   label?: string;
   byline?: string;
   headline: string;

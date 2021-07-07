@@ -1,6 +1,10 @@
 import { SliceArticle } from '@times-components/ts-slices';
 import get from 'lodash.get';
-import { Asset, RelatedArticle, RelatedArticles } from './types';
+import {
+  Asset,
+  RelatedArticleType,
+  RelatedArticleSliceType
+} from '../../types/related-article-slice';
 
 const decodeEntities = (str: string) =>
   str
@@ -39,7 +43,7 @@ const flattenAssets = (asset: Asset) => {
   return crops;
 };
 const formatArticle = (
-  article: RelatedArticle,
+  article: RelatedArticleType,
   numberOfArticles: number
 ): SliceArticle => {
   const leadAssetCrops =
@@ -65,7 +69,7 @@ const formatArticle = (
 
   return {
     id: article.id,
-    url: article.url,
+    url: article.url!,
     label: formatLabel(leadAsset.title!, { label: article.label!, byline }),
     byline,
     headline: article.headline,
@@ -79,7 +83,7 @@ const formatArticle = (
   };
 };
 
-const getSliceName = (relatedArticleSlice: RelatedArticles) => {
+const getSliceName = (relatedArticleSlice: RelatedArticleSliceType) => {
   if (relatedArticleSlice.items.length === 1) {
     return 'RELATED_ARTICLE_1';
   }
@@ -88,7 +92,7 @@ const getSliceName = (relatedArticleSlice: RelatedArticles) => {
   }
   return 'LEAD_1_AND_2';
 };
-const formatSlice = (relatedArticleSlice: RelatedArticles) => {
+const formatSlice = (relatedArticleSlice: RelatedArticleSliceType) => {
   return {
     name: getSliceName(relatedArticleSlice),
     children: relatedArticleSlice.items.map(relatedArticle => ({

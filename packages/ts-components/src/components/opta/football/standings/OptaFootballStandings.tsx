@@ -18,44 +18,47 @@ export const OptaFootballStandings: React.FC<{
   competition: string;
   default_nav?: string;
   navigation?: boolean;
-}> = ({ season, competition, default_nav = 1, navigation }) => {
-  const ref = React.createRef<HTMLDivElement>();
+  full_width?: boolean;
+}> = React.memo(
+  ({ season, competition, default_nav = 1, navigation, full_width }) => {
+    const ref = React.createRef<HTMLDivElement>();
 
-  const [isReady, setIsReady] = useState<boolean>(false);
+    const [isReady, setIsReady] = useState<boolean>(false);
 
-  useEffect(() => {
-    initSettings();
-    initStyleSheet();
+    useEffect(() => {
+      initSettings();
+      initStyleSheet();
 
-    initScript().then(() => {
-      if (ref.current) {
-        ref.current.innerHTML = initElement('opta-widget', {
-          sport: 'football',
-          widget: 'standings',
-          season,
-          competition,
-          live: true,
-          navigation: navigation ? 'dropdown' : undefined,
-          default_nav,
-          show_crests: true,
-          breakpoints: 520
-        }).outerHTML;
+      initScript().then(() => {
+        if (ref.current) {
+          ref.current.innerHTML = initElement('opta-widget', {
+            sport: 'football',
+            widget: 'standings',
+            season,
+            competition,
+            live: true,
+            navigation: navigation ? 'dropdown' : undefined,
+            default_nav,
+            show_crests: true,
+            breakpoints: 520
+          }).outerHTML;
 
-        initComponent();
-        setIsReady(true);
-      }
-    });
-  }, []);
+          initComponent();
+          setIsReady(true);
+        }
+      });
+    }, []);
 
-  return (
-    <Container border={isReady}>
-      <WidgetContainer ref={ref} />
+    return (
+      <Container border={isReady} fullWidth={full_width}>
+        <WidgetContainer ref={ref} />
 
-      {!isReady && (
-        <PlaceholderContainer>
-          <Placeholder />
-        </PlaceholderContainer>
-      )}
-    </Container>
-  );
-};
+        {!isReady && (
+          <PlaceholderContainer>
+            <Placeholder />
+          </PlaceholderContainer>
+        )}
+      </Container>
+    );
+  }
+);

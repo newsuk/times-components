@@ -1,5 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`RelatedArticleSlice error checks empty slice 1`] = `<DocumentFragment />`;
+
+exports[`RelatedArticleSlice error checks invalid slicename 1`] = `<DocumentFragment />`;
+
 exports[`RelatedArticleSlice renders 1 1`] = `
 <DocumentFragment>
   <div

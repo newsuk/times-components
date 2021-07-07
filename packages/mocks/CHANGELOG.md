@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.23](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.1.22...@times-components/mocks@0.1.23) (2021-07-05)
+
+**Note:** Version bump only for package @times-components/mocks
+
+
+
+
+
 ## [0.1.22](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.1.21...@times-components/mocks@0.1.22) (2021-05-27)
 
 **Note:** Version bump only for package @times-components/mocks

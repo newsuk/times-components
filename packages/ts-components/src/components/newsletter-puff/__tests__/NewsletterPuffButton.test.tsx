@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { render, cleanup, fireEvent } from '@testing-library/react';
 import mockDate from 'mockdate';
 import { NewsletterPuffButton } from '../NewsletterPuffButton';

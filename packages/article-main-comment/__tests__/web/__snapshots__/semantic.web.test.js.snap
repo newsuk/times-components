@@ -372,26 +372,6 @@ exports[`1. a full article 1`] = `
         height={18}
         hoverColor="#1D1D1B"
       />
-      Related Articles
-      <article>
-        <a
-          href="https://ra.io"
-        >
-          <img
-            alt=""
-          />
-        </a>
-        <p>
-          RA Label
-        </p>
-        <a
-          href="https://ra.io"
-        >
-          <h3>
-            RA Headline
-          </h3>
-        </a>
-      </article>
     </article>
   </main>
 </article>
