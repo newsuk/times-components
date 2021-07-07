@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/styleguide';
 
-export const Container = styled.div<{ border: boolean; fullWidth: boolean }>`
+export const Container = styled.div<{ border: boolean; fullWidth?: boolean }>`
   margin: 0 auto 20px auto;
   background-color: ${colours.functional.backgroundPrimary};
   border-top: ${({ border }) =>
