@@ -3,24 +3,10 @@
 exports[`GalleryCarousel should render the component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-jKJlTe eJFbXy"
+    class="sc-kpOJdX eRcxCM"
   >
     <div
-      class="sc-cSHVUG jOSczh"
-    >
-      <div
-        class="sc-htoDjs gbsuiP"
-      >
-        Label 1
-      </div>
-      <div
-        class="sc-dnqmqq dEVvjT"
-      >
-        Headline 1
-      </div>
-    </div>
-    <div
-      class="rec rec-carousel-wrapper sc-ckVGcZ iKKaDw sc-EHOje eOvqeq"
+      class="rec rec-carousel-wrapper sc-dxgOiQ hHLjXH sc-EHOje eOvqeq"
     >
       <div
         class="rec rec-carousel sc-ifAKCX kQtsWC"
@@ -50,7 +36,7 @@ exports[`GalleryCarousel should render the component 1`] = `
                     tabindex="0"
                   >
                     <div
-                      class="sc-dxgOiQ gOANBU"
+                      class="sc-ckVGcZ jnhKYI"
                     >
                       <img
                         src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180"
@@ -72,10 +58,10 @@ exports[`GalleryCarousel should render the component 1`] = `
                     tabindex="-1"
                   >
                     <div
-                      class="sc-dxgOiQ gOANBU"
+                      class="sc-ckVGcZ jnhKYI"
                     >
                       <img
-                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F24f0ce12-c444-11eb-8601-6a2ece3e4634.png?crop=778%2C438%2C84%2C7&resize=1180"
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180"
                       />
                     </div>
                   </div>
@@ -86,155 +72,169 @@ exports[`GalleryCarousel should render the component 1`] = `
         </div>
       </div>
       <div
-        class="sc-gqjmRU dWTMIU"
+        class="sc-jTzLTM kQMejW"
       >
         <div
-          class="sc-kAzzGY duBtwW"
+          class="sc-chPdSV cxUg"
         >
           <div
-            class="sc-kgoBCf gOgseH"
+            class="sc-htoDjs dHJGdr"
           >
-            <div
-              class="sc-gZMcBi lobbHG"
-            >
-              Credit 1
-            </div>
-            <div
-              class="sc-iwsKbI dSMhSg"
-              data-testid="Copy"
-            >
-              Copy 1
-            </div>
+            Label 1
           </div>
           <div
-            class="sc-kGXeez cGmqLZ"
-            style="justify-content: flex-end;"
+            class="sc-iwsKbI kVIITb"
           >
             <div
-              class="sc-VigVT jOpLnX"
-            >
-              <button
-                class="sc-jTzLTM duLvps"
-                data-testid="Previous button"
-                disabled=""
-              >
-                <svg
-                  height="14px"
-                  width="10px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                    fill-rule="nonzero"
-                  />
-                </svg>
-              </button>
-              <div
-                class="sc-fjdhpX bVJoKF"
-              >
-                <div
-                  class="sc-jzJRlG eKNOkJ"
-                  data-testid="Page Indicator"
-                />
-                <div
-                  class="sc-jzJRlG bInnKU"
-                  data-testid="Page Indicator"
-                />
-              </div>
-              <button
-                class="nextBtn sc-jTzLTM hUmNDO"
-                data-testid="Next Button"
-              >
-                <svg
-                  height="14px"
-                  width="10px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                    fill-rule="nonzero"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          class="sc-chPdSV fvCaXV"
-        >
-          <div>
-            <div
-              class="sc-htoDjs gbsuiP"
-            >
-              Label 1
-            </div>
-            <div
-              class="sc-dnqmqq dEVvjT"
+              class="sc-dnqmqq fMknFI"
             >
               Headline 1
             </div>
             <div
-              class="sc-iwsKbI dSMhSg"
+              class="sc-kgoBCf cMWJYD"
             >
-              Copy 1
-            </div>
-            <div
-              class="sc-gZMcBi lobbHG"
-            >
-              Credit 1
+              <div
+                class="sc-fjdhpX fFhKKm"
+              >
+                <button
+                  class="sc-jzJRlG kdGwUq"
+                  data-testid="Previous button"
+                  disabled=""
+                >
+                  <svg
+                    height="14px"
+                    width="10px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="sc-cSHVUG dndlVR"
+                >
+                  <div
+                    class="sc-kAzzGY gWtXkI"
+                    data-testid="Page Indicator"
+                  />
+                  <div
+                    class="sc-kAzzGY cENSVG"
+                    data-testid="Page Indicator"
+                  />
+                </div>
+                <button
+                  class="nextBtn sc-jzJRlG imCfbB"
+                  data-testid="Next Button"
+                >
+                  <svg
+                    height="14px"
+                    width="10px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
           <div
-            class="sc-kpOJdX dyeEky"
+            class="sc-kGXeez fQTHbt"
           >
-            <div
-              class="sc-VigVT jOpLnX"
-            >
-              <button
-                class="sc-jTzLTM duLvps"
-                data-testid="Previous button"
-                disabled=""
-              >
-                <svg
-                  height="14px"
-                  width="10px"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                    fill-rule="nonzero"
-                  />
-                </svg>
-              </button>
+            <div>
               <div
-                class="sc-fjdhpX bVJoKF"
+                class="sc-gqjmRU hYjNGh"
               >
-                <div
-                  class="sc-jzJRlG eKNOkJ"
-                  data-testid="Page Indicator"
-                />
-                <div
-                  class="sc-jzJRlG bInnKU"
-                  data-testid="Page Indicator"
-                />
+                Image Title 1
               </div>
-              <button
-                class="nextBtn sc-jTzLTM hUmNDO"
-                data-testid="Next Button"
+              <div
+                class="sc-gZMcBi kWagEM"
               >
-                <svg
-                  height="14px"
-                  width="10px"
-                  xmlns="http://www.w3.org/2000/svg"
+                Copy 1
+              </div>
+            </div>
+            <div>
+              <div
+                class="sc-VigVT kTTXpx"
+              >
+                Credit 1
+              </div>
+              <div
+                class="sc-fjdhpX fFhKKm"
+              >
+                <button
+                  class="sc-jzJRlG kdGwUq"
+                  data-testid="Previous button"
+                  disabled=""
                 >
-                  <path
-                    d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
-                    fill-rule="nonzero"
+                  <svg
+                    height="14px"
+                    width="10px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="sc-cSHVUG dndlVR"
+                >
+                  <div
+                    class="sc-kAzzGY gWtXkI"
+                    data-testid="Page Indicator"
                   />
-                </svg>
-              </button>
+                  <div
+                    class="sc-kAzzGY cENSVG"
+                    data-testid="Page Indicator"
+                  />
+                </div>
+                <button
+                  class="nextBtn sc-jzJRlG imCfbB"
+                  data-testid="Next Button"
+                >
+                  <svg
+                    height="14px"
+                    width="10px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="sc-kgoBCf cMWJYD"
+    >
+      <div
+        style="padding-left: 16px; padding-right: 16px;"
+      >
+        <div
+          class="sc-VigVT kTTXpx"
+        >
+          Credit 1
+        </div>
+        <div
+          class="sc-gqjmRU hYjNGh"
+        >
+          Image Title 1
+        </div>
+        <div
+          class="sc-gZMcBi kWagEM"
+        >
+          Copy 1
         </div>
       </div>
     </div>

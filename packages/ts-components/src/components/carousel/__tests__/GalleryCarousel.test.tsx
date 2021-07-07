@@ -7,34 +7,26 @@ import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserv
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 import mockDate from 'mockdate';
 
-const data = [
-  {
-    paneldata: {
-      label: 'Label 1',
-      headline: 'Headline 1',
+const data = {
+  headline: 'Headline 1',
+  label: 'Label 1',
+  carouseldata: [
+    {
+      imageTitle: 'Image Title 1',
       copy: 'Copy 1',
       credit: 'Credit 1',
-      imageTitle: 'Image Title 1',
-    },
-    carouseldata: {
       image:
-        'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180'
-    }
-  },
-  {
-    paneldata: {
-      label: 'Label 2',
-      headline: 'Headline 2',
+        'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180',
+    },
+    {
+      imageTitle: 'Image Title 2',
       copy: 'Copy 2',
       credit: 'Credit 2',
-      imageTitle: 'Image Title 2',
-    },
-    carouseldata: {
       image:
-        'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F24f0ce12-c444-11eb-8601-6a2ece3e4634.png?crop=778%2C438%2C84%2C7&resize=1180'
+        'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180',
     }
-  }
-];
+  ]
+};
 
 const renderCarousel = (
   additionalProps?: Partial<GalleryCarouselProps>,
@@ -149,7 +141,7 @@ describe('GalleryCarousel', () => {
       expect(analyticsStream).toHaveBeenCalledWith({
         attrs: {
           article_name: 'Headline',
-          component_name: 'Headline 2',
+          component_name: 'Headline 1',
           component_type: 'in-article component : gallery : interactive',
           eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',

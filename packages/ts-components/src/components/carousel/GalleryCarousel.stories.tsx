@@ -6,7 +6,6 @@ import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextP
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 import { dataLarge, dataRegular, dataSmall } from './fixtures/carousel';
 
-
 const showcase = {
   children: [
     {
@@ -67,7 +66,7 @@ const showcase = {
       ),
       name: 'Carousel - Small',
       type: 'story'
-    },
+    }
   ],
   name: 'Typescript Component/Gallery Carousel'
 };

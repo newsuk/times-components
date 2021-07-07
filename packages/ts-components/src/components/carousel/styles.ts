@@ -32,9 +32,9 @@ export const Headline = styled.div<{ isLarge: boolean }>`
   }
   @media (min-width: ${breakpoints.wide}px) {
     width: 100%;
-    font-size: ${({ isLarge }) => isLarge ? '32px' : '24px'};
-    line-height: ${({ isLarge }) => isLarge ? '32px' : '24px'};
-    padding-bottom: ${({ isLarge }) => isLarge ? '0px' : '14px'};
+    font-size: ${({ isLarge }) => (isLarge ? '32px' : '24px')};
+    line-height: ${({ isLarge }) => (isLarge ? '32px' : '24px')};
+    padding-bottom: ${({ isLarge }) => (isLarge ? '0px' : '14px')};
   }
 `;
 
@@ -61,7 +61,7 @@ export const Copy = styled.div<{ isLarge: boolean }>`
   }
 `;
 
-export const ImageTitle = styled.div<{ isLarge: boolean}>`
+export const ImageTitle = styled.div<{ isLarge: boolean }>`
   font-size: 16px;
   line-height: 16px;
   font-family: ${fonts.headlineRegular};
@@ -71,8 +71,8 @@ export const ImageTitle = styled.div<{ isLarge: boolean}>`
     line-height: 24px;
   }
   @media (min-width: ${breakpoints.wide}px) {
-    font-size: ${({ isLarge }) => isLarge ? '24px' : '18px'};
-    line-height: ${({ isLarge }) => isLarge ? '24px' : '18px'};
+    font-size: ${({ isLarge }) => (isLarge ? '24px' : '18px')};
+    line-height: ${({ isLarge }) => (isLarge ? '24px' : '18px')};
   }
 `;
 
@@ -89,7 +89,7 @@ export const Credit = styled.div<{ isLarge: boolean }>`
   }
   @media (min-width: ${breakpoints.wide}px) {
     padding-top: 12px;
-    padding-bottom: ${({ isLarge }) => isLarge ? '8px' : '14px'}
+    padding-bottom: ${({ isLarge }) => (isLarge ? '8px' : '14px')};
   }
 `;
 
@@ -167,9 +167,9 @@ export const CarouselIndicator = styled.div<{ active?: boolean }>`
 `;
 
 export const CardContent = styled.div`
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 `;
 
 export const MobileOrLarge = styled.div<{ isLarge: boolean }>`

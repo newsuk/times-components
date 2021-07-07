@@ -10,7 +10,7 @@ import {
   Copy,
   Credit,
   ImageTitle,
-  MobileOrLarge,
+  MobileOrLarge
 } from './styles';
 
 import { Arrow } from './Arrow';
@@ -21,7 +21,7 @@ export type DataObj = {
   headline: string;
   label: string;
   carouseldata: CarouselDataObj[];
-}
+};
 
 export type CarouselDataObj = {
   imageTitle?: string;
@@ -34,7 +34,7 @@ const CustomPagination: React.FC<{
   activePage: number;
   current: number;
   onClick: (current: number, label?: string) => number;
-  data: DataObj
+  data: DataObj;
 }> = ({ activePage, onClick, current, data }) => {
   return (
     <CarouselButtonContainer>
@@ -77,7 +77,6 @@ export type GalleryCarouselProps = {
   sectionColour: string;
   initialIndex?: number;
 };
-
 
 export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
   isLarge,
@@ -163,16 +162,19 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
             ))}
           </StyledCarousel>
           <MobileOrLarge isLarge={isLarge}>
-              <div style={{ paddingLeft: '16px', paddingRight: '16px'}}>
-                <Credit isLarge={isLarge}>{data.carouseldata[current].credit}</Credit>
-                {
-                  data.carouseldata[current].imageTitle &&
-                    <ImageTitle isLarge={isLarge}>{data.carouseldata[current].imageTitle}</ImageTitle>
-                }
-                {
-                  data.carouseldata[current].copy && <Copy isLarge={isLarge}>{data.carouseldata[current].copy}</Copy>
-                }
-              </div>
+            <div style={{ paddingLeft: '16px', paddingRight: '16px' }}>
+              <Credit isLarge={isLarge}>
+                {data.carouseldata[current].credit}
+              </Credit>
+              {data.carouseldata[current].imageTitle && (
+                <ImageTitle isLarge={isLarge}>
+                  {data.carouseldata[current].imageTitle}
+                </ImageTitle>
+              )}
+              {data.carouseldata[current].copy && (
+                <Copy isLarge={isLarge}>{data.carouseldata[current].copy}</Copy>
+              )}
+            </div>
           </MobileOrLarge>
         </CarouselContainer>
       )}
