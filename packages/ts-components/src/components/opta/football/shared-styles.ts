@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/styleguide';
 
-export const Container = styled.div<{ border: boolean }>`
+export const Container = styled.div<{ border: boolean; fullWidth?: boolean }>`
   margin: 0 auto 20px auto;
   background-color: ${colours.functional.backgroundPrimary};
   border-top: ${({ border }) =>
@@ -13,11 +13,11 @@ export const Container = styled.div<{ border: boolean }>`
 
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
-    width: 80.8%;
+    width: ${({ fullWidth }) => (fullWidth ? '100%' : '80.8%')};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
+    width: ${({ fullWidth }) => (fullWidth ? '100%' : '56.2%')};
   }
 `;
 

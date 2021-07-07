@@ -17,7 +17,8 @@ export const OptaFootballMatchStats: React.FC<{
   season: string;
   competition: string;
   match: string;
-}> = ({ season, competition, match }) => {
+  full_width?: boolean;
+}> = React.memo(({ season, competition, match, full_width }) => {
   const ref = React.createRef<HTMLDivElement>();
 
   const [isReady, setIsReady] = useState<boolean>(false);
@@ -55,7 +56,7 @@ export const OptaFootballMatchStats: React.FC<{
   }, []);
 
   return (
-    <Container border={isReady}>
+    <Container border={isReady} fullWidth={full_width}>
       <WidgetContainer ref={ref} />
 
       {!isReady && (
@@ -65,4 +66,4 @@ export const OptaFootballMatchStats: React.FC<{
       )}
     </Container>
   );
-};
+});
