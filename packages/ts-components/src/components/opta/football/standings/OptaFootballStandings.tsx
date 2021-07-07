@@ -19,13 +19,13 @@ export const OptaFootballStandings: React.FC<{
   default_nav?: string;
   navigation?: boolean;
   full_width?: boolean;
-}> = ({ season, competition, default_nav = 1, navigation, full_width }) => {
-  const ref = React.createRef<HTMLDivElement>();
+}> = React.memo(
+  ({ season, competition, default_nav = 1, navigation, full_width }) => {
+    const ref = React.createRef<HTMLDivElement>();
 
-  const [isReady, setIsReady] = useState<boolean>(false);
+    const [isReady, setIsReady] = useState<boolean>(false);
 
-  useEffect(
-    () => {
+    useEffect(() => {
       initSettings();
       initStyleSheet();
 
@@ -47,19 +47,18 @@ export const OptaFootballStandings: React.FC<{
           setIsReady(true);
         }
       });
-    },
-    [ref]
-  );
+    }, []);
 
-  return (
-    <Container border={isReady} fullWidth={full_width}>
-      <WidgetContainer ref={ref} />
+    return (
+      <Container border={isReady} fullWidth={full_width}>
+        <WidgetContainer ref={ref} />
 
-      {!isReady && (
-        <PlaceholderContainer>
-          <Placeholder />
-        </PlaceholderContainer>
-      )}
-    </Container>
-  );
-};
+        {!isReady && (
+          <PlaceholderContainer>
+            <Placeholder />
+          </PlaceholderContainer>
+        )}
+      </Container>
+    );
+  }
+);

@@ -19,55 +19,52 @@ export const OptaFootballFixtures: React.FC<{
   date_from: string;
   date_to: string;
   full_width?: boolean;
-}> = ({ season, competition, date_from, date_to, full_width }) => {
+}> = React.memo(({ season, competition, date_from, date_to, full_width }) => {
   const ref = React.createRef<HTMLDivElement>();
 
   const [isReady, setIsReady] = useState<boolean>(false);
 
-  useEffect(
-    () => {
-      initSettings();
-      initStyleSheet();
+  useEffect(() => {
+    initSettings();
+    initStyleSheet();
 
-      initScript().then(() => {
-        if (ref.current) {
-          ref.current.innerHTML = initElement(
-            'opta-widget',
-            {
-              sport: 'football',
-              widget: 'fixtures',
-              season,
-              competition,
-              date_from,
-              date_to,
-              live: true,
-              grouping: 'date',
-              show_grouping: true,
-              show_crests: true,
-              date_format: 'dddd MMMM D YYYY',
-              breakpoints: 520
-            },
-            initElement('opta-widget', {
-              sport: 'football',
-              widget: 'match_summary',
-              season: '',
-              competition: '',
-              match: '',
-              live: true,
-              show_crests: true,
-              show_goals: true,
-              show_cards: 'red',
-              breakpoints: '520'
-            })
-          ).outerHTML;
+    initScript().then(() => {
+      if (ref.current) {
+        ref.current.innerHTML = initElement(
+          'opta-widget',
+          {
+            sport: 'football',
+            widget: 'fixtures',
+            season,
+            competition,
+            date_from,
+            date_to,
+            live: true,
+            grouping: 'date',
+            show_grouping: true,
+            show_crests: true,
+            date_format: 'dddd MMMM D YYYY',
+            breakpoints: 520
+          },
+          initElement('opta-widget', {
+            sport: 'football',
+            widget: 'match_summary',
+            season: '',
+            competition: '',
+            match: '',
+            live: true,
+            show_crests: true,
+            show_goals: true,
+            show_cards: 'red',
+            breakpoints: '520'
+          })
+        ).outerHTML;
 
-          initComponent();
-          setIsReady(true);
-        }
-      });
-    },
-    [ref]
-  );
+        initComponent();
+        setIsReady(true);
+      }
+    });
+  }, []);
 
   return (
     <Container border={isReady} fullWidth={full_width}>
@@ -80,4 +77,4 @@ export const OptaFootballFixtures: React.FC<{
       )}
     </Container>
   );
-};
+});
