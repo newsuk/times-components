@@ -23,37 +23,40 @@ export const OptaFootballMatchStats: React.FC<{
 
   const [isReady, setIsReady] = useState<boolean>(false);
 
-  useEffect(() => {
-    initSettings();
-    initStyleSheet();
+  useEffect(
+    () => {
+      initSettings();
+      initStyleSheet();
 
-    initScript().then(() => {
-      if (ref.current) {
-        ref.current.innerHTML = initElement('opta-widget', {
-          sport: 'football',
-          widget: 'matchstats',
-          season,
-          competition,
-          match,
-          template: 'custom',
-          graph_style: 'relative',
-          stats_categories:
-            'Category 1|possession,shots,shots_on_target,passes,passes_accuracy,corners_won,fouls_conceded,cards_yellow,cards_red',
-          live: true,
-          show_match_header: true,
-          show_halftime_score: true,
-          show_competition_name: true,
-          show_date: true,
-          show_crests: true,
-          date_format: 'DD/MM/YYYY',
-          breakpoints: '520'
-        }).outerHTML;
+      initScript().then(() => {
+        if (ref.current) {
+          ref.current.innerHTML = initElement('opta-widget', {
+            sport: 'football',
+            widget: 'matchstats',
+            season,
+            competition,
+            match,
+            template: 'custom',
+            graph_style: 'relative',
+            stats_categories:
+              'Category 1|possession,shots,shots_on_target,passes,passes_accuracy,corners_won,fouls_conceded,cards_yellow,cards_red',
+            live: true,
+            show_match_header: true,
+            show_halftime_score: true,
+            show_competition_name: true,
+            show_date: true,
+            show_crests: true,
+            date_format: 'DD/MM/YYYY',
+            breakpoints: '520'
+          }).outerHTML;
 
-        initComponent();
-        setIsReady(true);
-      }
-    });
-  }, [ref]);
+          initComponent();
+          setIsReady(true);
+        }
+      });
+    },
+    [ref]
+  );
 
   return (
     <Container border={isReady} fullWidth={full_width}>

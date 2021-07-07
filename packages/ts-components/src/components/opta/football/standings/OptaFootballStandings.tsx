@@ -24,29 +24,32 @@ export const OptaFootballStandings: React.FC<{
 
   const [isReady, setIsReady] = useState<boolean>(false);
 
-  useEffect(() => {
-    initSettings();
-    initStyleSheet();
+  useEffect(
+    () => {
+      initSettings();
+      initStyleSheet();
 
-    initScript().then(() => {
-      if (ref.current) {
-        ref.current.innerHTML = initElement('opta-widget', {
-          sport: 'football',
-          widget: 'standings',
-          season,
-          competition,
-          live: true,
-          navigation: navigation ? 'dropdown' : undefined,
-          default_nav,
-          show_crests: true,
-          breakpoints: 520
-        }).outerHTML;
+      initScript().then(() => {
+        if (ref.current) {
+          ref.current.innerHTML = initElement('opta-widget', {
+            sport: 'football',
+            widget: 'standings',
+            season,
+            competition,
+            live: true,
+            navigation: navigation ? 'dropdown' : undefined,
+            default_nav,
+            show_crests: true,
+            breakpoints: 520
+          }).outerHTML;
 
-        initComponent();
-        setIsReady(true);
-      }
-    });
-  }, [ref]);
+          initComponent();
+          setIsReady(true);
+        }
+      });
+    },
+    [ref]
+  );
 
   return (
     <Container border={isReady} fullWidth={full_width}>

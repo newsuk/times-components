@@ -13,11 +13,11 @@ export const Container = styled.div<{ border: boolean; fullWidth?: boolean }>`
 
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
-    width: ${({ fullWidth }) => fullWidth ? '100%' : '80.8%'};
+    width: ${({ fullWidth }) => (fullWidth ? '100%' : '80.8%')};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    width: ${({ fullWidth }) => fullWidth ? '100%' : '56.2%'};
+    width: ${({ fullWidth }) => (fullWidth ? '100%' : '56.2%')};
   }
 `;
 

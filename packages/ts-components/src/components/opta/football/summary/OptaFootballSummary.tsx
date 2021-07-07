@@ -23,35 +23,38 @@ export const OptaFootballSummary: React.FC<{
 
   const [isReady, setIsReady] = useState<boolean>(false);
 
-  useEffect(() => {
-    initSettings();
-    initStyleSheet();
+  useEffect(
+    () => {
+      initSettings();
+      initStyleSheet();
 
-    initScript().then(() => {
-      if (ref.current) {
-        ref.current.innerHTML = initElement('opta-widget', {
-          sport: 'football',
-          widget: 'match_summary',
-          season,
-          competition,
-          match,
-          live: true,
-          show_match_header: true,
-          show_halftime_score: true,
-          show_competition_name: true,
-          show_date: true,
-          show_crests: true,
-          show_goals: true,
-          show_cards: 'red',
-          date_format: 'DD/MM/YYYY',
-          breakpoints: '520'
-        }).outerHTML;
+      initScript().then(() => {
+        if (ref.current) {
+          ref.current.innerHTML = initElement('opta-widget', {
+            sport: 'football',
+            widget: 'match_summary',
+            season,
+            competition,
+            match,
+            live: true,
+            show_match_header: true,
+            show_halftime_score: true,
+            show_competition_name: true,
+            show_date: true,
+            show_crests: true,
+            show_goals: true,
+            show_cards: 'red',
+            date_format: 'DD/MM/YYYY',
+            breakpoints: '520'
+          }).outerHTML;
 
-        initComponent();
-        setIsReady(true);
-      }
-    });
-  }, [ref]);
+          initComponent();
+          setIsReady(true);
+        }
+      });
+    },
+    [ref]
+  );
 
   return (
     <Container border={isReady} fullWidth={full_width}>
