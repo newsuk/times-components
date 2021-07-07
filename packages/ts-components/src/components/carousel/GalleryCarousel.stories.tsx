@@ -4,7 +4,7 @@ import { showcaseConverter } from '@times-components/storybook';
 import { GalleryCarousel } from './GalleryCarousel';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
-import { dataRegular, dataLarge, dataSmall, dataMobile, dataTablet } from './fixtures/carousel';
+import { dataLarge, dataRegular, dataSmall } from './fixtures/carousel';
 
 
 const showcase = {
@@ -66,34 +66,6 @@ const showcase = {
         </div>
       ),
       name: 'Carousel - Small',
-      type: 'story'
-    },
-    {
-      component: () => (
-        <div style={{ margin: '20px 0px' }}>
-          <GalleryCarousel
-            data={dataTablet}
-            isLarge={false}
-            isSmall={false}
-            sectionColour="#13354E"
-          />
-        </div>
-      ),
-      name: 'Carousel - Tablet',
-      type: 'story'
-    },
-    {
-      component: () => (
-        <div style={{ margin: '20px 0px' }}>
-          <GalleryCarousel
-            data={dataMobile}
-            isLarge={false}
-            isSmall={false}
-            sectionColour="#13354E"
-          />
-        </div>
-      ),
-      name: 'Carousel - Mobile',
       type: 'story'
     },
   ],

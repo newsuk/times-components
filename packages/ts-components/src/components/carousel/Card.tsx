@@ -11,22 +11,25 @@ import {
   MobileOrLarge,
   NotMobileOrLarge,
 } from './styles';
-import { DataObj } from './GalleryCarousel';
+import { CarouselDataObj } from './GalleryCarousel';
 
 export const Card: React.FC<{
   isLarge: boolean;
   isSmall: boolean;
-  data: DataObj;
+  data: CarouselDataObj;
+  headline: string;
+  label: string;
   sectionColour: string;
-}> = ({ children, isLarge, data, isSmall, sectionColour }) => {
+}> = ({ children, isLarge, data, headline, label, isSmall, sectionColour }) => {
+  console.log(data, 'DATA')
   return (
     <CardContainer isLarge={isLarge} isSmall={isSmall}>
       <CardContent>
         <Label sectionColour={sectionColour}>
-          {data.paneldata.label}
+          {label}
         </Label>
         <HeadlineButtonContainer>
-          <Headline isLarge={isLarge}>{data.paneldata.headline}</Headline>
+          <Headline isLarge={isLarge}>{headline}</Headline>
           <MobileOrLarge isLarge={isLarge}>
             {children}
           </MobileOrLarge>
@@ -34,14 +37,14 @@ export const Card: React.FC<{
           <NotMobileOrLarge isLarge={isLarge}>
             <div>
               {
-                data.paneldata.imageTitle && <ImageTitle isLarge={isLarge}>{data.paneldata.imageTitle}</ImageTitle>
+                data.imageTitle && <ImageTitle isLarge={isLarge}>{data.imageTitle}</ImageTitle>
               }
               {
-                data.paneldata.copy && <Copy isLarge={isLarge}>{data.paneldata.copy}</Copy>
+                data.copy && <Copy isLarge={isLarge}>{data.copy}</Copy>
               }
             </div>
             <div>
-            <Credit isLarge={isLarge}>{data.paneldata.credit}</Credit>
+            <Credit isLarge={isLarge}>{data.credit}</Credit>
             {children}
             </div>
           </NotMobileOrLarge>
