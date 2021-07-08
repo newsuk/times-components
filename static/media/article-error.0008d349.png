@@ -1,0 +1,7 @@
+var AdaptiveImage = require( "../../../node_modules/react-native-web-image-loader/lib/modules/adaptiveImage.js" );
+
+module.exports = new AdaptiveImage({
+    uri: __webpack_public_path__ + "1dd5e74c1dc328f093dd01e1a67af6e0.png","uri@2x": __webpack_public_path__ + "62f15370f5a94fcaee9a291e51e4d2d0.png","uri@3x": __webpack_public_path__ + "15fccd117bbeb82a2a4ab6adc61f9293.png",
+    width: 246,
+    height: 243
+});
