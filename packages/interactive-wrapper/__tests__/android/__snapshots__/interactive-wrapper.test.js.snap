@@ -13,6 +13,7 @@ exports[`renders correctly 1`] = `
     allowFileAccess={false}
     allowsFullscreenVideo={false}
     androidHardwareAccelerationDisabled={false}
+    androidLayerType="none"
     cacheEnabled={true}
     injectedJavaScript="
       setTimeout(function() {
@@ -20,8 +21,10 @@ exports[`renders correctly 1`] = `
       }, 500);
       true;
     "
+    messagingModuleName="WebViewMessageHandler1"
     overScrollMode="always"
     scrollEnabled={false}
+    setSupportMultipleWindows={true}
     source={
       Object {
         "uri": "https://jotn9sgpg6.execute-api.eu-west-1.amazonaws.com/prod/component/a0534eee-682e-4955-8e1e-84b428ef1e79?dev=false&env=jest&platform=android&version=0.0.0",
