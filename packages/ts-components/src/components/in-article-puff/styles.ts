@@ -70,6 +70,7 @@ export const Label = styled.div<{ hasImage?: boolean; sectionColour: string }>`
 
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  letter-spacing: 1px;
 `;
 
 export const Headline = styled.h4<{ hasImage?: boolean }>`

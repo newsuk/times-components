@@ -68,6 +68,7 @@
     "lodash.merge": "4.6.2",
     "react": "16.9.0",
     "react-apollo": "2.5.5",
+    "react-elastic-carousel": "^0.11.5",
     "sanitize-html": "^2.4.0",
     "styled-components": "4.3.2"
   },
