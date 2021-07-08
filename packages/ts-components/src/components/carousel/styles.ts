@@ -94,6 +94,9 @@ export const Credit = styled.div<{ isLarge: boolean }>`
 `;
 
 export const CardContainer = styled.div<{ isLarge: boolean; isSmall: boolean }>`
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
   width: 100%;
   height: 30%;
   padding: 20px 16px 16px 16px;
@@ -104,12 +107,9 @@ export const CardContainer = styled.div<{ isLarge: boolean; isSmall: boolean }>`
     height: ${({ isLarge }) => (isLarge ? '30%' : 'auto')};
     width: ${({ isLarge, isSmall }) =>
       (isLarge && '100%') || (isSmall && '36%') || '33%'};
-    padding: ${({ isLarge, isSmall }) =>
-      isLarge || isSmall ? '20px' : '16px 12px'};
+    padding: ${({ isLarge }) =>
+      isLarge ? '20px 16px 16px 16px' : '20px 16px'};
   }
-  display: flex;
-  flex-direction: column;
-  background-color: #f9f9f9;
 `;
 
 export const CarouselButtonContainer = styled.div`
