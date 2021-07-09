@@ -123,6 +123,7 @@ fragment articleProps on Article {
   headline
   id
   label
+  longRead
   publicationName
   publishedTime
   updatedTime

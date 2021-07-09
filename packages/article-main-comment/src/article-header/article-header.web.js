@@ -25,6 +25,7 @@ const ArticleHeader = ({
   hasVideo,
   headline,
   label,
+  longRead,
   publicationName,
   publishedTime,
   standfirst
@@ -46,7 +47,7 @@ const ArticleHeader = ({
       {headline}
     </HeadlineContainer>
     <FlagsContainer>
-      <ArticleFlags flags={flags} />
+      <ArticleFlags flags={flags} longRead={longRead} />
     </FlagsContainer>
     <Standfirst standfirst={standfirst} />
     <Meta
