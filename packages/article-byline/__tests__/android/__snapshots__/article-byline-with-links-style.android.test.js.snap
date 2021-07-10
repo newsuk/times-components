@@ -13,6 +13,7 @@ exports[`1. with a single author 1`] = `
         "textDecorationLine": "none",
       }
     }
+    testID="author-profile-link"
   >
     Alexandra Frean
   </Text>
@@ -32,6 +33,7 @@ exports[`2. with a very long byline 1`] = `
         "textDecorationLine": "none",
       }
     }
+    testID="author-profile-link"
   >
     Camilla Long
   </Text>
@@ -59,6 +61,7 @@ exports[`2. with a very long byline 1`] = `
         "textDecorationLine": "none",
       }
     }
+    testID="author-profile-link"
   >
     Camilla Long
   </Text>
@@ -86,6 +89,7 @@ exports[`2. with a very long byline 1`] = `
         "textDecorationLine": "none",
       }
     }
+    testID="author-profile-link"
   >
     Camilla Long
   </Text>

@@ -19,6 +19,7 @@ const AuthorComponent = ({ slug, className, onAuthorPress, children }) => {
       }}
       style={styles.link}
       url={url}
+      testID="author-profile-link"
     >
       {children}
     </TextLink>

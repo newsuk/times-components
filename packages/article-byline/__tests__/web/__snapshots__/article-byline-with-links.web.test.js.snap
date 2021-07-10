@@ -18,6 +18,7 @@ exports[`2. with the author in the begining 1`] = `
 >
   <a
     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    data-testid="author-profile-link"
     href="/profile/camilla-long"
     role="link"
   >
@@ -42,6 +43,7 @@ exports[`3. with the author at the end 1`] = `
   </div>
   <a
     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    data-testid="author-profile-link"
     href="/profile/mike-atherton"
     role="link"
   >
@@ -56,6 +58,7 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
 >
   <a
     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    data-testid="author-profile-link"
     href="/profile/camilla-long"
     role="link"
   >
@@ -68,6 +71,7 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
   </div>
   <a
     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    data-testid="author-profile-link"
     href="/profile/mike-atherton"
     role="link"
   >
@@ -80,6 +84,7 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
   </div>
   <a
     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    data-testid="author-profile-link"
     href="/profile/alexandra-frean"
     role="link"
   >
@@ -94,6 +99,7 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
 >
   <a
     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    data-testid="author-profile-link"
     href="/profile/camilla-long"
     role="link"
   >
@@ -106,6 +112,7 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
   </div>
   <a
     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    data-testid="author-profile-link"
     href="/profile/mike-atherton"
     role="link"
   >
@@ -118,6 +125,7 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
   </div>
   <a
     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    data-testid="author-profile-link"
     href="/profile/alexandra-frean"
     role="link"
   >
@@ -132,6 +140,7 @@ exports[`6. with multiple authors separated by spaces 1`] = `
 >
   <a
     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    data-testid="author-profile-link"
     href="/profile/camilla-long"
     role="link"
   >
@@ -144,6 +153,7 @@ exports[`6. with multiple authors separated by spaces 1`] = `
   </div>
   <a
     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    data-testid="author-profile-link"
     href="/profile/mike-atherton"
     role="link"
   >
@@ -151,6 +161,7 @@ exports[`6. with multiple authors separated by spaces 1`] = `
   </a>
   <a
     className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    data-testid="author-profile-link"
     href="/profile/alexandra-frean"
     role="link"
   >
