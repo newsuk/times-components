@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React, { FC } from 'react';
-import { FontTextCropSettings } from './fonts';
+import { Font, FontTextCropSettings, getFontCropSettings } from './fonts';
 
 type TextCropAdjustments = {
   lineHeight?: number;
@@ -8,26 +8,29 @@ type TextCropAdjustments = {
   bottomAdjustment?: string;
 };
 
-type TextCropProps = { font: FontTextCropSettings } & TextCropAdjustments;
+type TextCropStyleProps = {
+  fontSettings: FontTextCropSettings;
+} & TextCropAdjustments;
+type TextCropProps = { font: Font } & TextCropAdjustments;
 
 const dynamicTopCrop = ({
   lineHeight = 1,
-  font: { topCrop, cropLineHeight, cropFontSize }
-}: TextCropProps) =>
+  fontSettings: { topCrop, cropLineHeight, cropFontSize }
+}: TextCropStyleProps) =>
   Math.max(topCrop + (lineHeight - cropLineHeight) * (cropFontSize / 2), 0) /
   cropFontSize;
 
 const dynamicBottomCrop = ({
   lineHeight = 1,
-  font: { bottomCrop, cropLineHeight, cropFontSize }
-}: TextCropProps) =>
+  fontSettings: { bottomCrop, cropLineHeight, cropFontSize }
+}: TextCropStyleProps) =>
   Math.max(bottomCrop + (lineHeight - cropLineHeight) * (cropFontSize / 2), 0) /
   cropFontSize;
 
-const Wrapper = styled.div<TextCropProps>`
+const Wrapper = styled.div<TextCropStyleProps>`
   background-color: #ffb;
   padding:0;
-  font-family: ${({ font }) => font.font};
+  font-family: ${({ fontSettings }) => fontSettings.font};
   line-height: ${({ lineHeight }) => lineHeight};
   &::before,
   &::after {
@@ -63,7 +66,7 @@ export const TextCrop: FC<TextCropProps> = ({
     lineHeight={lineHeight}
     bottomAdjustment={bottomAdjustment}
     topAdjustment={topAdjustment}
-    font={font}
+    fontSettings={getFontCropSettings(font)}
   >
     {children}
   </Wrapper>
