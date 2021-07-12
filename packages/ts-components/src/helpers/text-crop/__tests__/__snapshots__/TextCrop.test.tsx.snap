@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TextCrop> bottom adjustment 1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: #ffb;
+  padding: 0;
+  font-family: GillSansMTStd-Medium;
+}
+
+.c0::before,
+.c0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+}
+
+.c0::before {
+  margin-bottom: calc(0em + 0px );
+}
+
+.c0::after {
+  margin-top: calc(-0.30625em + 2px );
+}
+
+<div
+    class="c0"
+  >
+    Text
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<TextCrop> default  1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: #ffb;
+  padding: 0;
+  font-family: GillSansMTStd-Medium;
+}
+
+.c0::before,
+.c0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+}
+
+.c0::before {
+  margin-bottom: calc(0em + 0px );
+}
+
+.c0::after {
+  margin-top: calc(-0.30625em + 0px );
+}
+
+<div
+    class="c0"
+  >
+    Text
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<TextCrop> line height  1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: #ffb;
+  padding: 0;
+  font-family: GillSansMTStd-Medium;
+  line-height: 1;
+}
+
+.c0::before,
+.c0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+}
+
+.c0::before {
+  margin-bottom: calc(0em + 0px );
+}
+
+.c0::after {
+  margin-top: calc(-0.30625em + 0px );
+}
+
+<div
+    class="c0"
+  >
+    Text
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<TextCrop> missing font 1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: #ffb;
+  padding: 0;
+}
+
+.c0::before,
+.c0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+}
+
+.c0::before {
+  margin-bottom: calc(NaNem + 0px );
+}
+
+.c0::after {
+  margin-top: calc(NaNem + 0px );
+}
+
+<div
+    class="c0"
+  >
+    Text
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<TextCrop> top adjustment 1`] = `
+<DocumentFragment>
+  .c0 {
+  background-color: #ffb;
+  padding: 0;
+  font-family: GillSansMTStd-Medium;
+}
+
+.c0::before,
+.c0::after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+}
+
+.c0::before {
+  margin-bottom: calc(0em + 1px );
+}
+
+.c0::after {
+  margin-top: calc(-0.30625em + 0px );
+}
+
+<div
+    class="c0"
+  >
+    Text
+  </div>
+</DocumentFragment>
+`;
