@@ -17,7 +17,7 @@ import { Arrow } from './Arrow';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
-export type DataObj = {
+export type GalleryData = {
   headline: string;
   label: string;
   carouseldata: CarouselDataObj[];
@@ -34,7 +34,7 @@ const CustomPagination: React.FC<{
   activePage: number;
   current: number;
   onClick: (current: number, label?: string) => number;
-  data: DataObj;
+  data: GalleryData;
 }> = ({ activePage, onClick, current, data }) => {
   return (
     <CarouselButtonContainer>
@@ -73,7 +73,7 @@ const CustomPagination: React.FC<{
 export type GalleryCarouselProps = {
   isLarge: boolean;
   isSmall: boolean;
-  data: DataObj;
+  data: GalleryData;
   sectionColour: string;
   initialIndex?: number;
 };
