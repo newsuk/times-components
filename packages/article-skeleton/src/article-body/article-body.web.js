@@ -30,7 +30,8 @@ import {
   OptaFootballMatchStats,
   OlympicsMedalTable,
   OlympicsSchedule,
-  InfoCard
+  InfoCard,
+  GalleryCarousel
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -266,6 +267,17 @@ const renderers = ({
             )}
           </Context.Consumer>
         );
+
+      case 'gallery-carousel':
+        return (
+          <Context.Consumer key={key}>
+              {({ theme }) => (
+                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                  <GalleryCarousel sectionColour={theme.sectionColour} />
+                </FetchProvider>
+              )}
+            </Context.Consumer>
+        )
 
       default:
         return (

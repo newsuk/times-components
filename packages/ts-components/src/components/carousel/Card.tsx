@@ -11,7 +11,7 @@ import {
   MobileOrLarge,
   NotMobileOrLarge
 } from './styles';
-import { CarouselDataObj } from './GalleryCarousel';
+import { CarouselDataObj } from './types';
 
 export const Card: React.FC<{
   isLarge: boolean;
@@ -20,26 +20,29 @@ export const Card: React.FC<{
   headline: string;
   label: string;
   sectionColour: string;
-}> = ({ children, isLarge, data, headline, label, isSmall, sectionColour }) => (
-  <CardContainer isLarge={isLarge} isSmall={isSmall}>
-    <CardContent>
-      <Label sectionColour={sectionColour}>{label}</Label>
-      <HeadlineButtonContainer>
-        <Headline isLarge={isLarge}>{headline}</Headline>
-        <MobileOrLarge isLarge={isLarge}>{children}</MobileOrLarge>
-      </HeadlineButtonContainer>
-      <NotMobileOrLarge isLarge={isLarge}>
-        <div>
-          {data.imageTitle && (
-            <ImageTitle isLarge={isLarge}>{data.imageTitle}</ImageTitle>
-          )}
-          {data.copy && <Copy isLarge={isLarge}>{data.copy}</Copy>}
-        </div>
-        <div>
-          <Credit isLarge={isLarge}>{data.credit}</Credit>
-          {children}
-        </div>
-      </NotMobileOrLarge>
-    </CardContent>
-  </CardContainer>
-);
+}> = ({ children, isLarge, data, headline, label, isSmall, sectionColour }) => {
+  const cardData = data.data;
+  return (
+    <CardContainer isLarge={isLarge} isSmall={isSmall}>
+      <CardContent>
+        <Label sectionColour={sectionColour}>{label}</Label>
+        <HeadlineButtonContainer>
+          <Headline isLarge={isLarge}>{headline}</Headline>
+          <MobileOrLarge isLarge={isLarge}>{children}</MobileOrLarge>
+        </HeadlineButtonContainer>
+        <NotMobileOrLarge isLarge={isLarge}>
+          <div>
+            {cardData.imageTitle && (
+              <ImageTitle isLarge={isLarge}>{cardData.imageTitle}</ImageTitle>
+            )}
+            {cardData.copy && <Copy isLarge={isLarge}>{cardData.copy}</Copy>}
+          </div>
+          <div>
+            <Credit isLarge={isLarge}>{cardData.credit}</Credit>
+            {children}
+          </div>
+        </NotMobileOrLarge>
+      </CardContent>
+    </CardContainer>
+  );
+};
