@@ -12,29 +12,17 @@ import {
   ImageTitle,
   MobileOrLarge
 } from './styles';
+import { DataObj, CarouselDataObj } from './types';
 
 import { Arrow } from './Arrow';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
-export type DataObj = {
-  headline: string;
-  label: string;
-  carouseldata: CarouselDataObj[];
-};
-
-export type CarouselDataObj = {
-  imageTitle?: string;
-  copy?: string;
-  credit: string;
-  image: string;
-};
-
 const CustomPagination: React.FC<{
   activePage: number;
   current: number;
   onClick: (current: number, label?: string) => number;
-  data: DataObj;
+  data: CarouselDataObj[];
 }> = ({ activePage, onClick, current, data }) => {
   return (
     <CarouselButtonContainer>
@@ -46,7 +34,7 @@ const CustomPagination: React.FC<{
         <Arrow size={{ width: '10px', height: '14px' }} />
       </CarouselButton>
       <CarouselIndicatorContainer>
-        {data.carouseldata.map(({}, index) => {
+        {data.map(({}, index) => {
           const isActivePage = activePage === index;
           return (
             <CarouselIndicator
@@ -60,7 +48,7 @@ const CustomPagination: React.FC<{
       </CarouselIndicatorContainer>
       <CarouselButton
         data-testid="Next Button"
-        disabled={activePage === data.carouseldata.length - 1}
+        disabled={activePage === data.length - 1}
         className="nextBtn"
         onClick={() => onClick(current + 1, 'right')}
       >
@@ -71,20 +59,33 @@ const CustomPagination: React.FC<{
 };
 
 export type GalleryCarouselProps = {
-  isLarge: boolean;
-  isSmall: boolean;
   data: DataObj;
   sectionColour: string;
   initialIndex?: number;
 };
 
 export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
-  isLarge,
   data,
   sectionColour,
-  isSmall,
   initialIndex = 0
 }) => {
+  const isSmall = (size: string) => {
+    if (size === '4033') {
+      return true;
+    }
+    return false;
+  };
+
+  const isLarge = (size: string) => {
+    if (size === '4035') {
+      return true;
+    }
+    return false;
+  };
+
+  const panelData = data.fields;
+  const carouselData = data.body.data;
+
   const [current, setCurrent] = useState(initialIndex);
   const handleChange = (event: any) => {
     setCurrent(event.index);
@@ -96,7 +97,7 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
         attrs: {
           component_type: 'in-article component : gallery : interactive',
           event_navigation_action: 'navigation',
-          component_name: `${data.headline}`
+          component_name: `${panelData.headline}`
         }
       }}
       scrolledEvent={{
@@ -109,13 +110,13 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
       {({ intersectObserverRef, fireAnalyticsEvent }) => (
         <CarouselContainer
           sectionColour={sectionColour}
-          isLarge={isLarge}
-          isSmall={isSmall}
+          isLarge={isLarge(panelData.size)}
+          isSmall={isSmall(panelData.size)}
           ref={intersectObserverRef}
         >
           <StyledCarousel
             sectionColour={sectionColour}
-            isLarge={isLarge}
+            isLarge={isLarge(panelData.size)}
             itemsToScroll={1}
             itemsToShow={1}
             isRTL={false}
@@ -127,7 +128,7 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
                   fireAnalyticsEvent({
                     attrs: {
                       event_navigation_name: `button : ${label}`,
-                      component_name: data.headline
+                      component_name: panelData.headline
                     }
                   });
                 }
@@ -135,11 +136,11 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
               };
               return (
                 <Card
-                  isLarge={isLarge}
-                  data={data.carouseldata[current]}
-                  headline={data.headline}
-                  label={data.label}
-                  isSmall={isSmall}
+                  isLarge={isLarge(panelData.size)}
+                  data={carouselData[current]}
+                  headline={panelData.headline}
+                  label={panelData.label}
+                  isSmall={isSmall(panelData.size)}
                   sectionColour={sectionColour}
                 >
                   <CustomPagination
@@ -147,32 +148,34 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
                     /* @ts-ignore */
                     onClick={handlePaginationClick}
                     current={current}
-                    data={data}
+                    data={carouselData}
                   />
                 </Card>
               );
             }}
           >
-            {data.carouseldata.map(row => (
+            {carouselData.map(row => (
               <div style={{ width: '100%' }}>
                 <AspectRatio ratio="3:2">
-                  <img src={row.image} />
+                  <img src={row.data.image} />
                 </AspectRatio>
               </div>
             ))}
           </StyledCarousel>
-          <MobileOrLarge isLarge={isLarge}>
+          <MobileOrLarge isLarge={isLarge(panelData.size)}>
             <div style={{ paddingLeft: '16px', paddingRight: '16px' }}>
-              <Credit isLarge={isLarge}>
-                {data.carouseldata[current].credit}
+              <Credit isLarge={isLarge(panelData.size)}>
+                {carouselData[current].data.credit}
               </Credit>
-              {data.carouseldata[current].imageTitle && (
-                <ImageTitle isLarge={isLarge}>
-                  {data.carouseldata[current].imageTitle}
+              {carouselData[current].data.imageTitle && (
+                <ImageTitle isLarge={isLarge(panelData.size)}>
+                  {carouselData[current].data.imageTitle}
                 </ImageTitle>
               )}
-              {data.carouseldata[current].copy && (
-                <Copy isLarge={isLarge}>{data.carouseldata[current].copy}</Copy>
+              {carouselData[current].data.copy && (
+                <Copy isLarge={isLarge(panelData.size)}>
+                  {carouselData[current].data.copy}
+                </Copy>
               )}
             </div>
           </MobileOrLarge>
