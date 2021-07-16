@@ -147,13 +147,15 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
                   isSmall={isSmall(size)}
                   sectionColour={sectionColour}
                 >
-                  <CustomPagination
-                    activePage={activePage}
-                    /* @ts-ignore */
-                    onClick={handlePaginationClick}
-                    current={current}
-                    data={carouselData}
-                  />
+                  {carouselData.length > 1 && (
+                    <CustomPagination
+                      activePage={activePage}
+                      /* @ts-ignore */
+                      onClick={handlePaginationClick}
+                      current={current}
+                      data={carouselData}
+                    />
+                  )}
                 </Card>
               );
             }}
