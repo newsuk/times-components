@@ -70,22 +70,22 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
   sectionColour,
   initialIndex = 0
 }) => {
-  const isSmall = (size: string) => {
-    if (size === '4033') {
-      return true;
-    }
-    return false;
-  };
-
-  const isLarge = (size: string) => {
-    if (size === '4035') {
-      return true;
-    }
-    return false;
-  };
-
-  const { headline, label, size} = data.fields;
+  const { headline, label, size } = data.fields;
   const carouselData = data.body.data;
+
+  const isSmall = (carouselSize: string) => {
+    if (carouselSize === '4033') {
+      return true;
+    }
+    return false;
+  };
+
+  const isLarge = (carouselSize: string) => {
+    if (carouselSize === '4035') {
+      return true;
+    }
+    return false;
+  };
 
   const [current, setCurrent] = useState(initialIndex);
   const handleChange = (event: any) => {
@@ -124,11 +124,14 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
             onChange={handleChange}
             showArrows={false}
             renderPagination={({ activePage, onClick }) => {
-              const handlePaginationClick = (index: string, label?: string) => {
-                if (label) {
+              const handlePaginationClick = (
+                index: string,
+                buttonLabel?: string
+              ) => {
+                if (buttonLabel) {
                   fireAnalyticsEvent({
                     attrs: {
-                      event_navigation_name: `button : ${label}`,
+                      event_navigation_name: `button : ${buttonLabel}`,
                       component_name: headline
                     }
                   });
@@ -174,8 +177,17 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
                 </ImageTitle>
               )}
               {carouselData[current].data.copy && (
-                // @ts-ignore
-                <Copy isLarge={isLarge(size)} dangerouslySetInnerHTML={{ __html: sanitiseCopy(carouselData[current].data.copy, ['br', 'b', 'i'])}}/>
+                <Copy
+                  isLarge={isLarge(size)}
+                  dangerouslySetInnerHTML={{
+                    // @ts-ignore
+                    __html: sanitiseCopy(carouselData[current].data.copy, [
+                      'br',
+                      'b',
+                      'i'
+                    ])
+                  }}
+                />
               )}
             </div>
           </MobileOrLarge>
@@ -186,5 +198,3 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
 };
 
 export default GalleryCarousel;
-
-

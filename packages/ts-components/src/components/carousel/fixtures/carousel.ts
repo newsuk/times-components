@@ -72,7 +72,8 @@ export const dataSmall = {
       }
     ]
   },
-  html: "<!DOCTYPE html> <html> <head> <title>The Times - Image Gallery</title></head> <body> </body> </html>"
+  html:
+    '<!DOCTYPE html> <html> <head> <title>The Times - Image Gallery</title></head> <body> </body> </html>'
 };
 
 export const dataLarge = {
@@ -127,7 +128,8 @@ export const dataLarge = {
       }
     ]
   },
-  html: "<!DOCTYPE html> <html> <head> <title>The Times - Image Gallery</title></head> <body> </body> </html>"
+  html:
+    '<!DOCTYPE html> <html> <head> <title>The Times - Image Gallery</title></head> <body> </body> </html>'
 };
 
 export const dataRegular = {
@@ -182,5 +184,6 @@ export const dataRegular = {
       }
     ]
   },
-  html: "<!DOCTYPE html> <html> <head> <title>The Times - Image Gallery</title></head> <body> </body> </html>"
+  html:
+    '<!DOCTYPE html> <html> <head> <title>The Times - Image Gallery</title></head> <body> </body> </html>'
 };
