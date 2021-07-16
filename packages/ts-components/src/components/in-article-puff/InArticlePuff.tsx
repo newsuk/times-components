@@ -114,11 +114,11 @@ export const InArticlePuff: React.FC<{
                 <Headline hasImage={hasImage}>{headline}</Headline>
               </a>
               {copy && (
-                    <Copy
-                      dangerouslySetInnerHTML={{
-                        __html: sanitiseCopy(copy, ['b', 'i'])
-                      }}
-                    />
+                <Copy
+                  dangerouslySetInnerHTML={{
+                    __html: sanitiseCopy(copy, ['b', 'i'])
+                  }}
+                />
               )}
             </div>
 

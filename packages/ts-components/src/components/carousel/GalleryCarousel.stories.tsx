@@ -24,25 +24,16 @@ storiesOf('Typescript Component/Gallery Carousel', module)
 
   .add('Large', () => (
     <div style={{ margin: '20px 0px' }}>
-      <GalleryCarousel
-        data={dataLarge}
-        sectionColour="#13354E"
-      />
+      <GalleryCarousel data={dataLarge} sectionColour="#13354E" />
     </div>
   ))
   .add('Regular', () => (
     <div style={{ margin: '20px 0px' }}>
-      <GalleryCarousel
-        data={dataRegular}
-        sectionColour="#13354E"
-      />
+      <GalleryCarousel data={dataRegular} sectionColour="#13354E" />
     </div>
   ))
   .add('Small', () => (
     <div style={{ margin: '20px 0px' }}>
-      <GalleryCarousel
-        data={dataSmall}
-        sectionColour="#13354E"
-      />
+      <GalleryCarousel data={dataSmall} sectionColour="#13354E" />
     </div>
   ));

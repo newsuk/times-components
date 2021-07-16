@@ -46,7 +46,8 @@ const testData = {
       }
     ]
   },
-  html: "<!DOCTYPE html> <html> <head> <title>The Times - Image Gallery</title></head> <body> </body> </html>"
+  html:
+    '<!DOCTYPE html> <html> <head> <title>The Times - Image Gallery</title></head> <body> </body> </html>'
 };
 
 const renderCarousel = (

@@ -36,7 +36,14 @@ export const Card: React.FC<{
             {cardData.imageTitle && (
               <ImageTitle isLarge={isLarge}>{cardData.imageTitle}</ImageTitle>
             )}
-            {cardData.copy && <Copy isLarge={isLarge} dangerouslySetInnerHTML={{ __html: sanitiseCopy(cardData.copy, ['br', 'b', 'i'])}}/> }
+            {cardData.copy && (
+              <Copy
+                isLarge={isLarge}
+                dangerouslySetInnerHTML={{
+                  __html: sanitiseCopy(cardData.copy, ['br', 'b', 'i'])
+                }}
+              />
+            )}
           </div>
           <div>
             <Credit isLarge={isLarge}>{cardData.credit}</Credit>
