@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 
 import { useFetch } from '../../../helpers/fetch/FetchProvider';
 
-import GalleryCarousel, { GalleryCarouselProps } from '../GalleryCarousel';
+import { GalleryCarousel, GalleryCarouselProps } from '../GalleryCarousel';
 import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 import mockDate from 'mockdate';
