@@ -40,6 +40,7 @@ export {
   LatestFromSection
 } from './components/latest-from-section/LatestFromSection';
 
+<<<<<<< HEAD
 export {
   OlympicsMedalTable
 } from './components/olympics/medal-table/OlympicsMedalTable';
@@ -49,3 +50,6 @@ export {
 } from './components/olympics/schedule/OlympicsSchedule';
 
 export { InfoCard } from './components/in-article-info-card/InfoCard';
+=======
+export { GalleryCarousel } from './components/carousel/GalleryCarousel';
+>>>>>>> Export GalleryCarousel

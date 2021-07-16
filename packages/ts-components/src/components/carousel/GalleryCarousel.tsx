@@ -214,5 +214,3 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
     </TrackingContextProvider>
   );
 };
-
-export default GalleryCarousel;

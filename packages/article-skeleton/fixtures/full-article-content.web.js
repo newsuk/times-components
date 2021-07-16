@@ -161,8 +161,13 @@ export default [
       {
         attributes: {
           element: {
+<<<<<<< HEAD
             attributes: { "deck-id": "43614" },
             value: "in-article-info-card"
+=======
+            attributes: { "deck-id": "43434" },
+            value: "gallery-carousel"
+>>>>>>> Export GalleryCarousel
           }
         },
         children: [],
