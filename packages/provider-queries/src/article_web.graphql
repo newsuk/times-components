@@ -129,6 +129,7 @@ fragment articleProps on Article {
   section
   shortIdentifier
   shortHeadline
+  seoDescription
   slug
   url
 }

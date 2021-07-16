@@ -102,7 +102,7 @@ function Head({ article, logoUrl, paidContentClassName }) {
 
   const publication = PUBLICATION_NAMES[publicationName];
   const authorName = getAuthorAsText(article);
-  const desc =
+  const desc = article.seoDescription ? article.seoDescription : 
     Array.isArray(descriptionMarkup) && descriptionMarkup.length
       ? renderTreeAsText({ children: descriptionMarkup })
       : null;
