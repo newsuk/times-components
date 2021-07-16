@@ -2,6 +2,20 @@ import styled from 'styled-components';
 import { fonts, colours, breakpoints } from '@times-components/styleguide';
 import ReactElasticCarousel from 'react-elastic-carousel';
 
+export const PlaceholderContainer = styled.div`
+  position: relative;
+  height: 200px;
+  margin: 0 auto 20px auto;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+  }
+`;
+
 export const Label = styled.div<{ sectionColour: string }>`
   font-family: ${fonts.supporting};
   font-size: 12px;
