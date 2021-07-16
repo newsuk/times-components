@@ -10,10 +10,13 @@ import {
   Copy,
   Credit,
   ImageTitle,
-  MobileOrLarge
+  MobileOrLarge,
+  PlaceholderContainer
 } from './styles';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
-import { DataObj, CarouselDataObj } from './types';
+import { CarouselDataObj } from './types';
+import { useFetch } from '../../helpers/fetch/FetchProvider';
+import { Placeholder } from '@times-components/image';
 
 import { Arrow } from './Arrow';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
@@ -60,16 +63,28 @@ const CustomPagination: React.FC<{
 };
 
 export type GalleryCarouselProps = {
-  data: DataObj;
   sectionColour: string;
   initialIndex?: number;
 };
 
 export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
-  data,
   sectionColour,
   initialIndex = 0
 }) => {
+  const { loading, error, data } = useFetch();
+
+  if (loading) {
+    return (
+      <PlaceholderContainer>
+        <Placeholder />
+      </PlaceholderContainer>
+    );
+  }
+
+  if (error) {
+    return null;
+  }
+
   const { headline, label, size } = data.fields;
   const carouselData = data.body.data;
 
@@ -160,6 +175,7 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
               );
             }}
           >
+            {/* @ts-ignore */}
             {carouselData.map(row => (
               <div style={{ width: '100%' }}>
                 <AspectRatio ratio="3:2">

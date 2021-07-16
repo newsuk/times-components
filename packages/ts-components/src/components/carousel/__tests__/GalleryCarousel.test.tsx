@@ -2,10 +2,24 @@ import React from 'react';
 import { render, cleanup, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
+import { useFetch } from '../../../helpers/fetch/FetchProvider';
+
 import GalleryCarousel, { GalleryCarouselProps } from '../GalleryCarousel';
 import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 import mockDate from 'mockdate';
+
+jest.mock('@times-components/image', () => ({
+  Placeholder: () => <div>Placeholder</div>
+}));
+
+jest.mock('../../../helpers/fetch/FetchProvider', () => ({
+  useFetch: jest.fn()
+}));
+
+const deckApiPayloadWrapper = () => ({
+  data: testData
+});
 
 const testData = {
   deck_id: 43434,
@@ -65,11 +79,7 @@ const renderCarousel = (
       }}
       analyticsStream={analyticsStream}
     >
-      <GalleryCarousel
-        data={testData}
-        sectionColour={'#000'}
-        {...additionalProps}
-      />
+      <GalleryCarousel sectionColour={'#000'} {...additionalProps} />
     </TrackingContextProvider>
   );
 describe('GalleryCarousel', () => {
@@ -84,6 +94,7 @@ describe('GalleryCarousel', () => {
   });
 
   it('should render the component', () => {
+    (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
     const { asFragment } = renderCarousel();
     expect(asFragment()).toMatchSnapshot();
   });
@@ -98,6 +109,7 @@ describe('GalleryCarousel', () => {
     );
   });
   describe('tracking', () => {
+    (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
     let oldIntersectionObserver: typeof IntersectionObserver;
 
     beforeEach(() => {
@@ -114,6 +126,7 @@ describe('GalleryCarousel', () => {
     });
 
     it('fires scroll event when viewed', () => {
+      (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
       const analyticsStream = jest.fn();
       renderCarousel({}, analyticsStream);
 
@@ -138,6 +151,7 @@ describe('GalleryCarousel', () => {
     });
 
     it('click previous button', async () => {
+      (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
       const analyticsStream = jest.fn();
 
       const { getAllByTestId } = renderCarousel(
@@ -176,6 +190,7 @@ describe('GalleryCarousel', () => {
       expect(nextButton).not.toHaveAttribute('disabled');
     });
     it('click next button', async () => {
+      (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
       const analyticsStream = jest.fn();
 
       const { getAllByTestId } = renderCarousel({}, analyticsStream);
@@ -207,6 +222,7 @@ describe('GalleryCarousel', () => {
     });
 
     it('page indicator button', async () => {
+      (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
       const analyticsStream = jest.fn();
 
       const { getAllByTestId } = renderCarousel({}, analyticsStream);
