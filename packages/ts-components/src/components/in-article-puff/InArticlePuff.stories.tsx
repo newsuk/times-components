@@ -26,7 +26,7 @@ storiesOf('Typescript Component/In Article/In Article Puff', module)
 
   .add('Image', () => (
     <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/41548">
-      <InArticlePuff sectionColour="#13354e" sanitiseHtml />
+      <InArticlePuff sectionColour="#13354e" />
     </FetchProvider>
   ))
   .add('Image 3:2', () => (
@@ -34,17 +34,16 @@ storiesOf('Typescript Component/In Article/In Article Puff', module)
       <InArticlePuff
         sectionColour="#13354e"
         forceImageAspectRatio="3:2"
-        sanitiseHtml
       />
     </FetchProvider>
   ))
   .add('No Image', () => (
     <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/41547">
-      <InArticlePuff sectionColour="#184e13" sanitiseHtml />
+      <InArticlePuff sectionColour="#184e13" />
     </FetchProvider>
   ))
   .add('Sanitised', () => (
     <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/41547">
-      <InArticlePuff sectionColour="#184e13" sanitiseHtml />
+      <InArticlePuff sectionColour="#184e13" />
     </FetchProvider>
   ));

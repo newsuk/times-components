@@ -12,6 +12,7 @@ import {
   ImageTitle,
   MobileOrLarge
 } from './styles';
+import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import { DataObj, CarouselDataObj } from './types';
 
 import { Arrow } from './Arrow';
@@ -83,7 +84,7 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
     return false;
   };
 
-  const panelData = data.fields;
+  const { headline, label, size} = data.fields;
   const carouselData = data.body.data;
 
   const [current, setCurrent] = useState(initialIndex);
@@ -97,7 +98,7 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
         attrs: {
           component_type: 'in-article component : gallery : interactive',
           event_navigation_action: 'navigation',
-          component_name: `${panelData.headline}`
+          component_name: `${headline}`
         }
       }}
       scrolledEvent={{
@@ -110,13 +111,13 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
       {({ intersectObserverRef, fireAnalyticsEvent }) => (
         <CarouselContainer
           sectionColour={sectionColour}
-          isLarge={isLarge(panelData.size)}
-          isSmall={isSmall(panelData.size)}
+          isLarge={isLarge(size)}
+          isSmall={isSmall(size)}
           ref={intersectObserverRef}
         >
           <StyledCarousel
             sectionColour={sectionColour}
-            isLarge={isLarge(panelData.size)}
+            isLarge={isLarge(size)}
             itemsToScroll={1}
             itemsToShow={1}
             isRTL={false}
@@ -128,7 +129,7 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
                   fireAnalyticsEvent({
                     attrs: {
                       event_navigation_name: `button : ${label}`,
-                      component_name: panelData.headline
+                      component_name: headline
                     }
                   });
                 }
@@ -136,11 +137,11 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
               };
               return (
                 <Card
-                  isLarge={isLarge(panelData.size)}
+                  isLarge={isLarge(size)}
                   data={carouselData[current]}
-                  headline={panelData.headline}
-                  label={panelData.label}
-                  isSmall={isSmall(panelData.size)}
+                  headline={headline}
+                  label={label}
+                  isSmall={isSmall(size)}
                   sectionColour={sectionColour}
                 >
                   <CustomPagination
@@ -162,20 +163,19 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
               </div>
             ))}
           </StyledCarousel>
-          <MobileOrLarge isLarge={isLarge(panelData.size)}>
+          <MobileOrLarge isLarge={isLarge(size)}>
             <div style={{ paddingLeft: '16px', paddingRight: '16px' }}>
-              <Credit isLarge={isLarge(panelData.size)}>
+              <Credit isLarge={isLarge(size)}>
                 {carouselData[current].data.credit}
               </Credit>
               {carouselData[current].data.imageTitle && (
-                <ImageTitle isLarge={isLarge(panelData.size)}>
+                <ImageTitle isLarge={isLarge(size)}>
                   {carouselData[current].data.imageTitle}
                 </ImageTitle>
               )}
               {carouselData[current].data.copy && (
-                <Copy isLarge={isLarge(panelData.size)}>
-                  {carouselData[current].data.copy}
-                </Copy>
+                // @ts-ignore
+                <Copy isLarge={isLarge(size)} dangerouslySetInnerHTML={{ __html: sanitiseCopy(carouselData[current].data.copy, ['br', 'b', 'i'])}}/>
               )}
             </div>
           </MobileOrLarge>
@@ -186,3 +186,5 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
 };
 
 export default GalleryCarousel;
+
+

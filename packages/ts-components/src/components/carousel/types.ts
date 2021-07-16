@@ -12,6 +12,7 @@ export type DataObj = {
   body: {
     data: CarouselDataObj[];
   };
+  html: string;
 };
 
 export type FieldsObj = {
