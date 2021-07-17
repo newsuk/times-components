@@ -39,3 +39,7 @@ export {
 export {
   LatestFromSection
 } from './components/latest-from-section/LatestFromSection';
+
+export { 
+  GalleryCarousel
+} from './components/carousel/GalleryCarousel';
