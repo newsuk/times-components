@@ -14,7 +14,4 @@ storiesOf('Typescript Component/Olympics', module)
 
   .add('Medal Table', () => {
     return <OlympicsMedalTable />;
-  })
-  .add('Table', () => {
-    return <div>Boo</div>;
   });
