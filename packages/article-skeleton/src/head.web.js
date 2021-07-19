@@ -102,10 +102,8 @@ function Head({ article, logoUrl, paidContentClassName }) {
 
   const publication = PUBLICATION_NAMES[publicationName];
   const authorName = getAuthorAsText(article);
-  const desc = article.seoDescription ? article.seoDescription : 
-    Array.isArray(descriptionMarkup) && descriptionMarkup.length
-      ? renderTreeAsText({ children: descriptionMarkup })
-      : null;
+  const desc = article.seoDescription || (Array.isArray(descriptionMarkup) && descriptionMarkup.length
+  ? renderTreeAsText({ children: descriptionMarkup }) : null);
   const sectionname = getSectionName(article);
   const leadassetUrl = appendToImageURL(
     getArticleLeadAssetUrl(article),
