@@ -86,8 +86,7 @@ const renderers = ({
   paidContentClassName,
   template,
   analyticsStream,
-  isPreview,
-  inArticlePuffFlag
+  isPreview
 }) => ({
   ...coreRenderers,
   ad(key) {
@@ -218,17 +217,18 @@ const renderers = ({
         return null;
 
       case "in-article-puff":
-        if (inArticlePuffFlag) {
-          return (
-            <Context.Consumer key={key}>
-              {({ theme }) => (
-                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                  <InArticlePuff sectionColour={theme.sectionColour} />
-                </FetchProvider>
-              )}
-            </Context.Consumer>
-          );
-        }
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <InArticlePuff
+                  sectionColour={theme.sectionColour}
+                  forceImageAspectRatio="3:2"
+                />
+              </FetchProvider>
+            )}
+          </Context.Consumer>
+        );
 
       default:
         return (

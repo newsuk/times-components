@@ -51,7 +51,6 @@ const ArticleSkeleton = ({
   isPreview,
   additionalRelatedArticlesFlag,
   algoliaSearchKeys,
-  inArticlePuffFlag,
   latestFromSectionFlag,
   latestFromSection
 }) => {
@@ -193,7 +192,6 @@ const ArticleSkeleton = ({
                       paidContentClassName={paidContentClassName}
                       template={template}
                       isPreview={isPreview}
-                      inArticlePuffFlag={inArticlePuffFlag}
                     />
                   )}
                   <PaywallPortal
