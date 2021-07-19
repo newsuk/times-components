@@ -22,7 +22,6 @@ module.exports = (
     isPreview,
     additionalRelatedArticlesFlag,
     algoliaSearchKeys,
-    inArticlePuffFlag,
     latestFromSectionFlag,
     latestFromSection
   },
@@ -74,7 +73,6 @@ module.exports = (
       isPreview,
       additionalRelatedArticlesFlag,
       algoliaSearchKeys,
-      inArticlePuffFlag,
       latestFromSectionFlag,
       latestFromSection
     },
