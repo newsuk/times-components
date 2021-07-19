@@ -85,7 +85,6 @@ class ArticlePage extends Component {
       isPreview,
       additionalRelatedArticlesFlag,
       algoliaSearchKeys,
-      inArticlePuffFlag,
       latestFromSectionFlag,
       latestFromSection
     } = this.props;
@@ -107,7 +106,6 @@ class ArticlePage extends Component {
           isPreview={isPreview}
           additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
           algoliaSearchKeys={algoliaSearchKeys}
-          inArticlePuffFlag={inArticlePuffFlag}
           latestFromSectionFlag={latestFromSectionFlag}
           latestFromSection={latestFromSection}
         />

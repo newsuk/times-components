@@ -104,7 +104,6 @@ const renderArticleSkeleton = ({
   const topics = boolean("Topics?", true);
   const header = boolean("Header?", false);
   const isPreview = boolean("Preview?", false);
-  const inArticlePuffFlag = boolean("In article puff?", false);
 
   const config = {
     commentsEnabled: commentsEnabled ? undefined : false,
@@ -124,7 +123,6 @@ const renderArticleSkeleton = ({
           data={data}
           Header={showHeader}
           isPreview={isPreview}
-          inArticlePuffFlag={inArticlePuffFlag}
           onAuthorPress={preventDefaultedAction(decorateAction)(
             "onAuthorPress"
           )}
