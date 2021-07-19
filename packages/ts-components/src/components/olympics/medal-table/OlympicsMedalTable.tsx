@@ -13,7 +13,7 @@ export const OlympicsMedalTable = () => (
     <div
       className="pa-medaltable"
       data-auth-token="6i3DuEwbVhr2Fht6"
-      data-games-code="OWG2018"
+      data-games-code="OG2020"
       data-font-size="1.25rem"
     />
   </>
