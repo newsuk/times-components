@@ -62,7 +62,7 @@
     "@times-components/image": "6.8.4",
     "@times-components/utils": "6.5.5",
     "prop-types": "15.7.2",
-    "react-native-webview": "7.0.5"
+    "react-native-webview": "11.0.0"
   },
   "resolutions": {
     "react": "16.9.0",
