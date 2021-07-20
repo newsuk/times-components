@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { Helmet } from 'react-helmet-async';
-export const OlympicsMedalTable = () => (
+
+type Props = { authToken: string; gamesCode: string };
+export const OlympicsMedalTable: FC<Props> = ({ authToken, gamesCode }) => (
   <>
     <Helmet>
       <script
@@ -12,8 +14,8 @@ export const OlympicsMedalTable = () => (
     </Helmet>
     <div
       className="pa-medaltable"
-      data-auth-token="6i3DuEwbVhr2Fht6"
-      data-games-code="OG2020"
+      data-auth-token={authToken}
+      data-games-code={gamesCode}
       data-font-size="1.25rem"
     />
   </>
