@@ -15,7 +15,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     isPreview,
     additionalRelatedArticlesFlag,
     algoliaSearchKeys,
-    inArticlePuffFlag,
     latestFromSectionFlag,
     latestFromSection
   } = window.nuk.article;
@@ -34,7 +33,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     isPreview,
     additionalRelatedArticlesFlag,
     algoliaSearchKeys,
-    inArticlePuffFlag,
     latestFromSectionFlag,
     latestFromSection
   };
