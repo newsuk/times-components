@@ -71,7 +71,17 @@ describe("Head", () => {
         paidContentClassName={paidContentClassName}
       />
     );
+    expect(testRenderer).toMatchSnapshot();
+  });
 
+  it("outputs correct metadata for seoDescription", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{ ...article, seoDescription: "sample seoDescription" }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
     expect(testRenderer).toMatchSnapshot();
   });
 
