@@ -31,7 +31,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     isPreview,
     additionalRelatedArticlesFlag,
     algoliaSearchKeys,
-    inArticlePuffFlag,
     latestFromSectionFlag,
     latestFromSection
   } = data;
@@ -91,7 +90,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               isPreview,
               additionalRelatedArticlesFlag,
               algoliaSearchKeys,
-              inArticlePuffFlag,
               latestFromSectionFlag,
               latestFromSection
             })
