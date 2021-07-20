@@ -1,16 +1,15 @@
 import React, { FC } from 'react';
 import { Helmet } from 'react-helmet-async';
 
-type Props = { authToken: string; gamesCode: string };
-export const OlympicsMedalTable: FC<Props> = ({ authToken, gamesCode }) => (
+type Props = { authToken: string; gamesCode: string; endpoint: string };
+export const OlympicsMedalTable: FC<Props> = ({
+  endpoint,
+  authToken,
+  gamesCode
+}) => (
   <>
     <Helmet>
-      <script
-        async
-        src="https://olympics-embed.pamedia.io/static/medal-table.js"
-        charSet="UTF-8"
-        defer
-      />
+      <script async src={endpoint} charSet="UTF-8" defer />
     </Helmet>
     <div
       className="pa-medaltable"
