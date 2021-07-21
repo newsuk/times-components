@@ -72,11 +72,11 @@ function getAuthorsAndInlines(
   return values;
 }
 
-function removePipeandComma(value) {
+function removeSpecialCharactersFromStartAndEnd(value) {
   if (!value) return "";
   return value
-    .replace(/,/g, "")
-    .replace(/\|/g, "")
+    .replace(/^\W+/, "")
+    .replace(/\W+$/, "")
     .trim();
 }
 
@@ -91,23 +91,32 @@ function getAuthorSchema(article) {
 
   authors = authors.map(author => ({
     ...author,
-    value: removePipeandComma(author.value)
+    value: removeSpecialCharactersFromStartAndEnd(author.value)
   }));
   inlines = inlines.map(inline => ({
     ...inline,
-    value: removePipeandComma(inline.value)
+    value: removeSpecialCharactersFromStartAndEnd(inline.value)
   }));
-  return authors
-    .map(({ value, slug: { slug: slugValue } }, index) => ({
-      name: value,
-      jobTitle: inlines.length > index ? inlines[index].value : "",
-      slug: slugValue
-    }))
-    .map(({ name, jobTitle }) => ({
+  if (authors && authors.length)
+    return authors
+      .map(({ value, slug: { slug: slugValue } }, index) => ({
+        name: value,
+        jobTitle: inlines.length > index ? inlines[index].value : "",
+        slug: slugValue
+      }))
+      .map(({ name, jobTitle }) => ({
+        "@type": "Person",
+        name,
+        jobTitle
+      }));
+
+  if (inlines && inlines.length)
+    return {
       "@type": "Person",
-      name,
-      jobTitle
-    }));
+      name: inlines[0].value
+    };
+
+  return [];
 }
 
 const PUBLICATION_NAMES = {
@@ -213,7 +222,15 @@ function Head({ article, logoUrl, paidContentClassName }) {
     dateModified
   };
 
-  Object.assign(jsonLD, authors && authors.length ? { author: authors } : {});
+  if (authors) {
+    if (Array.isArray(authors) && authors.length)
+      Object.assign(jsonLD, { author: authors });
+
+    if (authors.name) {
+      Object.assign(jsonLD, { author: authors });
+    }
+  }
+
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
