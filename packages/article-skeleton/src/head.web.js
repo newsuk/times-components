@@ -35,12 +35,15 @@ function getSectionName(article) {
 
 function getAuthorAsText(article) {
   const { bylines } = article;
-
   if (!bylines) {
     return null;
   }
+  const children = getReducedBylines(bylines);
+  return renderTreeAsText({ children });
+}
 
-  const children = bylines.reduce((acc, byline) => {
+function getReducedBylines(bylines) {
+  return bylines.reduce((acc, byline) => {
     if (Array.isArray(byline.byline)) {
       acc.push(...byline.byline);
     } else {
@@ -48,8 +51,63 @@ function getAuthorAsText(article) {
     }
     return acc;
   }, []);
+}
 
-  return renderTreeAsText({ children });
+function getAuthorsAndInlines(
+  { children, name, attributes },
+  type,
+  values = { authors: [], inlines: [] }
+) {
+  if (children && children.length > 0) {
+    const subschildren = [...children];
+    if (name === "author") {
+      subschildren[0].attributes.slug = attributes;
+    }
+
+    subschildren.map(child => getAuthorsAndInlines(child, name, values));
+  } else {
+    if (type === "inline") values.inlines.push(attributes);
+    if (type === "author") values.authors.push(attributes);
+  }
+  return values;
+}
+
+function removePipeandComma(value) {
+  if (!value) return "";
+  return value
+    .replace(/,/g, "")
+    .replace(/\|/g, "")
+    .trim();
+}
+
+function getAuthorSchema(article) {
+  const { bylines } = article;
+  if (!bylines) {
+    return null;
+  }
+
+  const children = getReducedBylines(bylines);
+  let { authors, inlines } = getAuthorsAndInlines({ children });
+
+  authors = authors.map(author => ({
+    ...author,
+    value: removePipeandComma(author.value)
+  }));
+  inlines = inlines.map(inline => ({
+    ...inline,
+    value: removePipeandComma(inline.value)
+  }));
+  return authors
+    .map(({ value, slug: { slug: slugValue } }, index) => ({
+      name: value,
+      jobTitle: inlines.length > index ? inlines[index].value : "",
+      slug: slugValue
+    }))
+    .map(({ name, jobTitle }) => ({
+      "@type": "Person",
+      name,
+      jobTitle
+    }));
 }
 
 const PUBLICATION_NAMES = {
@@ -114,6 +172,7 @@ function Head({ article, logoUrl, paidContentClassName }) {
     "resize",
     685
   );
+  const authors = getAuthorSchema(article);
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline || "";
   const datePublished = new Date(publishedTime).toISOString();
@@ -145,10 +204,6 @@ function Head({ article, logoUrl, paidContentClassName }) {
       isAccessibleForFree: false,
       cssSelector: `.${paidContentClassName}`
     },
-    author: {
-      "@type": "Person",
-      name: authorName || ""
-    },
     image: {
       "@type": "ImageObject",
       url: leadassetUrl,
@@ -158,6 +213,7 @@ function Head({ article, logoUrl, paidContentClassName }) {
     dateModified
   };
 
+  Object.assign(jsonLD, authors && authors.length ? { author: authors } : {});
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {

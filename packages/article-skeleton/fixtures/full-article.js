@@ -1768,11 +1768,30 @@ export const testFixture = {
     {
       byline: [
         {
+          attributes: {
+            slug: "camilla-long"
+          },
+          children: [
+            {
+              attributes: {
+                value: "Camilla Long"
+              },
+              children: [],
+              name: "text"
+            }
+          ],
+          name: "author"
+        }
+      ]
+    },
+    {
+      byline: [
+        {
           attributes: {},
           children: [
             {
               attributes: {
-                value: "Some byline"
+                value: ", Environment Editor"
               },
               children: [],
               name: "text"
@@ -1781,7 +1800,7 @@ export const testFixture = {
           name: "inline"
         }
       ]
-    }
+    },
   ],
   commentCount: 65,
   commentsEnabled: true,

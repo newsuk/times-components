@@ -74,6 +74,125 @@ describe("Head", () => {
     expect(testRenderer).toMatchSnapshot();
   });
 
+  it("outputs array of author in context schema", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          bylines: [
+            {
+              __typename: "AuthorByline",
+              byline: [
+                {
+                  name: "author",
+                  children: [
+                    {
+                      name: "text",
+                      children: [],
+                      attributes: {
+                        value: "Oliver Wright"
+                      }
+                    }
+                  ],
+                  attributes: {
+                    slug: "oliver-wright"
+                  }
+                }
+              ],
+              image: null
+            },
+            {
+              __typename: "TextByline",
+              byline: [
+                {
+                  name: "inline",
+                  children: [
+                    {
+                      name: "text",
+                      children: [],
+                      attributes: {
+                        value: ", Policy Editor | "
+                      }
+                    }
+                  ]
+                }
+              ],
+              image: null
+            },
+            {
+              __typename: "AuthorByline",
+              byline: [
+                {
+                  name: "author",
+                  children: [
+                    {
+                      name: "text",
+                      children: [],
+                      attributes: {
+                        value: "Tom Knowles"
+                      }
+                    }
+                  ],
+                  attributes: {
+                    slug: "tom-knowles"
+                  }
+                }
+              ],
+              image: null
+            },
+            {
+              __typename: "TextByline",
+              byline: [
+                {
+                  name: "inline",
+                  children: [
+                    {
+                      name: "text",
+                      children: [],
+                      attributes: {
+                        value: ", Technology Correspondent"
+                      }
+                    }
+                  ]
+                }
+              ],
+              image: null
+            }
+          ]
+        }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("removes author from context schema if there is empty array of bylines or null bylines", () => {
+    let testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          bylines: []
+        }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+
+    testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          bylines: null
+        }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
+
   it("outputs correct metadata for seoDescription", () => {
     const testRenderer = TestRenderer.create(
       <Head
