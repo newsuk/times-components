@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OlympicsSchedule> renders 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa cIBejd"
+  >
+    <helmet>
+      <script
+        charset="UTF-8"
+        defer=""
+        src="https://endpoint/static/schedule.js"
+      />
+    </helmet>
+    <div
+      class="pa-schedule"
+      data-auth-token="token"
+      data-games-code="OG1896"
+    />
+  </div>
+</DocumentFragment>
+`;
