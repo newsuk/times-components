@@ -1,6 +1,6 @@
 {
   "name": "@times-components/depend",
-  "version": "2.1.26",
+  "version": "2.1.27",
   "description": "dependency analyzer and fixer",
   "main": "dist/depend",
   "scripts": {
