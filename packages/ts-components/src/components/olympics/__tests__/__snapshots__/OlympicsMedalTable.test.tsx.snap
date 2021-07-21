@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OlympicsMedalTable> click show all 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa gHVngb"
+  >
+    <helmet>
+      <script
+        charset="UTF-8"
+        defer=""
+        src="https://endpoint/static/medal-table.js"
+      />
+    </helmet>
+    <div
+      class="pa-medaltable"
+      data-auth-token="token"
+      data-games-code="OG1896"
+      data-medal-icon-type="round"
+    />
+    <div
+      class="buttonContainer"
+    >
+      <button
+        class="sc-bwzfXH fXauhE"
+      >
+        Collapse
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<OlympicsMedalTable> renders 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa buomFv"
+  >
+    <helmet>
+      <script
+        charset="UTF-8"
+        defer=""
+        src="https://endpoint/static/medal-table.js"
+      />
+    </helmet>
+    <div
+      class="pa-medaltable"
+      data-auth-token="token"
+      data-games-code="OG1896"
+      data-medal-icon-type="round"
+    />
+    <div
+      class="buttonContainer"
+    >
+      <button
+        class="sc-bwzfXH fXauhE"
+      >
+        Show All
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

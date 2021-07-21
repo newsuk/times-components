@@ -71,6 +71,7 @@ declare module '@times-components/styleguide' {
     body: string;
     bodyRegular: string;
     headline: string;
+    brandColour: string;
     headlineRegular: string;
     supporting: string;
   };
