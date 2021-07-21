@@ -2145,9 +2145,8 @@ export const testFixture = {
           name: "inline"
         }
       ]
-    },
-  ]
-  ,
+    }
+  ],
   commentCount: 65,
   commentsEnabled: true,
   content: [

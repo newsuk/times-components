@@ -33,15 +33,6 @@ function getSectionName(article) {
   return nonNews.length ? nonNews[0] : "News";
 }
 
-function getAuthorAsText(article) {
-  const { bylines } = article;
-  if (!bylines) {
-    return null;
-  }
-  const children = getReducedBylines(bylines);
-  return renderTreeAsText({ children });
-}
-
 function getReducedBylines(bylines) {
   return bylines.reduce((acc, byline) => {
     if (Array.isArray(byline.byline)) {
@@ -51,6 +42,15 @@ function getReducedBylines(bylines) {
     }
     return acc;
   }, []);
+}
+
+function getAuthorAsText(article) {
+  const { bylines } = article;
+  if (!bylines) {
+    return null;
+  }
+  const children = getReducedBylines(bylines);
+  return renderTreeAsText({ children });
 }
 
 function getAuthorsAndInlines(
