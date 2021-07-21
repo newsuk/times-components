@@ -21,7 +21,9 @@ export const Container = styled.div<{
       font-size: 16px;
       color: ${fonts.brandColour};
       font-family: ${fonts.headline};
-      margin-bottom: 60px;
+      background-color: ${colours.functional.backgroundPrimary};
+      padding-bottom: 60px;
+
       .pa_MedalTableView_header-bg {
         height: 48px;
         background: ${colours.functional.backgroundSecondary};
@@ -42,15 +44,25 @@ export const Container = styled.div<{
       tbody {
         tr {
           background-color: ${colours.functional.backgroundPrimary};
-          border: 1px solid ${colours.functional.keyline};
+          border-bottom: 1px solid ${colours.functional.keyline};
+
+          td {
+            padding: 8px 0 3px;
+          }
 
           td:first-child {
             font-family: ${fonts.supporting};
             color: ${({ sectionColour }) => sectionColour};
           }
-        }
-        tr:nth-child(n + 8) {
-          display: ${({ showAll }) => (showAll ? 'table-row' : 'none')};
+
+          &:nth-child(n + 8) {
+            display: ${({ showAll }) => (showAll ? 'table-row' : 'none')};
+          }
+
+          &.pa_MedalTableView_highlight {
+            display: table-row;
+            background-color: ${colours.functional.greyLabel};
+          }
         }
       }
     }

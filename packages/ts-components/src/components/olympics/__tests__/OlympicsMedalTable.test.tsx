@@ -23,7 +23,7 @@ describe('<OlympicsMedalTable>', () => {
   });
   it('click show all', async () => {
     const { asFragment, getByText, findByText } = render(
-      <OlympicsMedalTable keys={keys} />
+      <OlympicsMedalTable keys={keys} highlighted="AND" />
     );
     fireEvent.click(getByText('Show All'));
     await findByText('Collapse');

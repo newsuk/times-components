@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<OlympicsSchedule> renders 1`] = `
+exports[`<OlympicsSchedule> click show all 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa cIBejd"
+    class="sc-bdVaJa fUNVny"
   >
     <helmet>
       <script
@@ -17,6 +17,45 @@ exports[`<OlympicsSchedule> renders 1`] = `
       data-auth-token="token"
       data-games-code="OG1896"
     />
+    <div
+      class="buttonContainer"
+    >
+      <button
+        class="sc-htpNat kZLygJ"
+      >
+        Collapse
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<OlympicsSchedule> renders 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa kNZdPP"
+  >
+    <helmet>
+      <script
+        charset="UTF-8"
+        defer=""
+        src="https://endpoint/static/schedule.js"
+      />
+    </helmet>
+    <div
+      class="pa-schedule"
+      data-auth-token="token"
+      data-games-code="OG1896"
+    />
+    <div
+      class="buttonContainer"
+    >
+      <button
+        class="sc-htpNat kZLygJ"
+      >
+        Show All
+      </button>
+    </div>
   </div>
 </DocumentFragment>
 `;

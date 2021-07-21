@@ -3,7 +3,7 @@
 exports[`<OlympicsMedalTable> click show all 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa gHVngb"
+    class="sc-bdVaJa eEWNid"
   >
     <helmet>
       <script
@@ -17,6 +17,7 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
       data-auth-token="token"
       data-games-code="OG1896"
       data-medal-icon-type="round"
+      data-org-code="AND"
     />
     <div
       class="buttonContainer"
@@ -34,7 +35,7 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 exports[`<OlympicsMedalTable> renders 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa buomFv"
+    class="sc-bdVaJa htfVaS"
   >
     <helmet>
       <script
@@ -48,6 +49,7 @@ exports[`<OlympicsMedalTable> renders 1`] = `
       data-auth-token="token"
       data-games-code="OG1896"
       data-medal-icon-type="round"
+      data-org-code="GBR"
     />
     <div
       class="buttonContainer"
