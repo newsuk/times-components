@@ -24,6 +24,12 @@ storiesOf('Typescript Component/Olympics', module)
     );
     const authToken = text('Auth Token', '6i3DuEwbVhr2Fht6');
     const gamesCode = text('Games Code', 'OG2020-TR2');
+    const highlighted = text('Highlighted Country', 'GBR');
 
-    return <OlympicsMedalTable keys={{ endpoint, authToken, gamesCode }} />;
+    return (
+      <OlympicsMedalTable
+        keys={{ endpoint, authToken, gamesCode }}
+        highlighted={highlighted}
+      />
+    );
   });

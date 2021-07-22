@@ -1,6 +1,8 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import 'regenerator-runtime';
+import 'jest-styled-components';
 
 import { OlympicsSchedule } from '../schedule/OlympicsSchedule';
 import { OlympicsKeys } from '../types';
@@ -18,6 +20,15 @@ const keys: OlympicsKeys = {
 describe('<OlympicsSchedule>', () => {
   it('renders', () => {
     const { asFragment } = render(<OlympicsSchedule keys={keys} />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+  it('click show all', async () => {
+    const { asFragment, getByText, findByText } = render(
+      <OlympicsSchedule keys={keys} sectionColor="sectionColor" />
+    );
+    fireEvent.click(getByText('Show All'));
+    await findByText('Collapse');
+
     expect(asFragment()).toMatchSnapshot();
   });
 });

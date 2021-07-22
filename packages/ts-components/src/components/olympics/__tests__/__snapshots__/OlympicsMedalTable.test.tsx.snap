@@ -2,8 +2,111 @@
 
 exports[`<OlympicsMedalTable> click show all 1`] = `
 <DocumentFragment>
-  <div
-    class="sc-bdVaJa gHVngb"
+  .c0 {
+  position: relative;
+  margin: 0 auto 20px auto;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable {
+  font-size: 16px;
+  font-family: TimesModern-Bold;
+  background-color: #F9F9F9;
+  padding-bottom: 60px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable .pa_MedalTableView_header-bg {
+  height: 48px;
+  background: #EDEDED;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table {
+  margin-top: -48px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table thead {
+  color: #1D1D1B;
+  line-height: 48px;
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th {
+  width: 40px;
+  max-width: 40px;
+  min-width: 40px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(2) {
+  width: auto;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(1),
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(6) {
+  width: 60px;
+  max-width: 60px;
+  min-width: 60px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr {
+  background-color: #F9F9F9;
+  border-bottom: 1px solid #DBDBDB;
+  color: #1D1D1B;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr td {
+  padding: 8px 0 3px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr td:first-child {
+  font-family: GillSansMTStd-Medium;
+  color: sectionColor;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr:nth-child(n + 8) {
+  display: table-row;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr.pa_MedalTableView_highlight {
+  display: table-row;
+  background-color: #e4e4e4;
+}
+
+.c0 .pa-medaltable .pa_OdfFooter_ctr {
+  position: relative;
+  top: 60px;
+  font-family: GillSansMTStd-Medium;
+  color: #1D1D1B;
+}
+
+.c0 .buttonContainer {
+  text-align: center;
+  height: 0;
+}
+
+.c1 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+<div
+    class="c0"
   >
     <helmet>
       <script
@@ -17,12 +120,13 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
       data-auth-token="token"
       data-games-code="OG1896"
       data-medal-icon-type="round"
+      data-org-code="AND"
     />
     <div
       class="buttonContainer"
     >
       <button
-        class="sc-bwzfXH fXauhE"
+        class="c1"
       >
         Collapse
       </button>
@@ -33,8 +137,111 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 
 exports[`<OlympicsMedalTable> renders 1`] = `
 <DocumentFragment>
-  <div
-    class="sc-bdVaJa buomFv"
+  .c0 {
+  position: relative;
+  margin: 0 auto 20px auto;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable {
+  font-size: 16px;
+  font-family: TimesModern-Bold;
+  background-color: #F9F9F9;
+  padding-bottom: 60px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable .pa_MedalTableView_header-bg {
+  height: 48px;
+  background: #EDEDED;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table {
+  margin-top: -48px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table thead {
+  color: #1D1D1B;
+  line-height: 48px;
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th {
+  width: 40px;
+  max-width: 40px;
+  min-width: 40px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(2) {
+  width: auto;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(1),
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(6) {
+  width: 60px;
+  max-width: 60px;
+  min-width: 60px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr {
+  background-color: #F9F9F9;
+  border-bottom: 1px solid #DBDBDB;
+  color: #1D1D1B;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr td {
+  padding: 8px 0 3px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr td:first-child {
+  font-family: GillSansMTStd-Medium;
+  color: #008347;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr:nth-child(n + 8) {
+  display: none;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr.pa_MedalTableView_highlight {
+  display: table-row;
+  background-color: #e4e4e4;
+}
+
+.c0 .pa-medaltable .pa_OdfFooter_ctr {
+  position: relative;
+  top: 60px;
+  font-family: GillSansMTStd-Medium;
+  color: #1D1D1B;
+}
+
+.c0 .buttonContainer {
+  text-align: center;
+  height: 0;
+}
+
+.c1 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+<div
+    class="c0"
   >
     <helmet>
       <script
@@ -48,12 +255,13 @@ exports[`<OlympicsMedalTable> renders 1`] = `
       data-auth-token="token"
       data-games-code="OG1896"
       data-medal-icon-type="round"
+      data-org-code="GBR"
     />
     <div
       class="buttonContainer"
     >
       <button
-        class="sc-bwzfXH fXauhE"
+        class="c1"
       >
         Show All
       </button>

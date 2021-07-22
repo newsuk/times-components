@@ -2,6 +2,7 @@ import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'regenerator-runtime';
+import 'jest-styled-components';
 import { OlympicsMedalTable } from '../medal-table/OlympicsMedalTable';
 import { OlympicsKeys } from '../types';
 
@@ -23,7 +24,11 @@ describe('<OlympicsMedalTable>', () => {
   });
   it('click show all', async () => {
     const { asFragment, getByText, findByText } = render(
-      <OlympicsMedalTable keys={keys} />
+      <OlympicsMedalTable
+        keys={keys}
+        highlighted="AND"
+        sectionColor="sectionColor"
+      />
     );
     fireEvent.click(getByText('Show All'));
     await findByText('Collapse');

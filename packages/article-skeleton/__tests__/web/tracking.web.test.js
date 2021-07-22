@@ -20,6 +20,8 @@ jest.mock("@times-components/ts-components", () => ({
   OptaFootballFixtures: "OptaFootballFixtures",
   OptaFootballStandings: "OptaFootballStandings",
   OptaFootballSummary: "OptaFootballSummary",
+  OlympicsMedalTable: "OlympicsMedalTable",
+  OlympicsSchedule: "OlympicsSchedule",
   InArticlePuff: "InArticlePuff"
 }));
 
