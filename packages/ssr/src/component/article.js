@@ -32,7 +32,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     additionalRelatedArticlesFlag,
     algoliaSearchKeys,
     latestFromSectionFlag,
-    latestFromSection
+    latestFromSection,
+    olympicsKeys
   } = data;
 
   return React.createElement(
@@ -91,7 +92,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               additionalRelatedArticlesFlag,
               algoliaSearchKeys,
               latestFromSectionFlag,
-              latestFromSection
+              latestFromSection,
+              olympicsKeys
             })
           );
         }
