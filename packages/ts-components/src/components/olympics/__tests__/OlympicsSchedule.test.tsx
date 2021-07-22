@@ -2,6 +2,7 @@ import React from 'react';
 import { fireEvent, render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'regenerator-runtime';
+import 'jest-styled-components';
 
 import { OlympicsSchedule } from '../schedule/OlympicsSchedule';
 import { OlympicsKeys } from '../types';
@@ -23,7 +24,7 @@ describe('<OlympicsSchedule>', () => {
   });
   it('click show all', async () => {
     const { asFragment, getByText, findByText } = render(
-      <OlympicsSchedule keys={keys} />
+      <OlympicsSchedule keys={keys} sectionColor="sectionColor" />
     );
     fireEvent.click(getByText('Show All'));
     await findByText('Collapse');

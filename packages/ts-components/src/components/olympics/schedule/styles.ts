@@ -23,16 +23,19 @@ export const Container = styled.div<{
       font-size: 18px;
       background: ${colours.functional.backgroundSecondary};
     }
+
     .pa_ScheduleHeader_filterbar {
       color: ${colours.functional.brandColour};
       font-family: ${fonts.supporting};
       background: ${colours.functional.backgroundSecondary};
       font-size: 16px;
     }
+
     .pa_LoadingOverlayContainer_ctr {
       .pa_UnitListView_ctr {
         font-family: ${fonts.supporting};
         font-size: 16px;
+
         ul.pa_UnitListView_list li {
           background-color: ${colours.functional.backgroundPrimary};
 
@@ -40,13 +43,16 @@ export const Container = styled.div<{
             display: ${({ showAll }) => (showAll ? 'block' : 'none')};
           }
         }
+
         .pa_UnitListView_unit-time {
           color: ${({ sectionColour }) => sectionColour};
         }
+
         .pa_UnitListView_unit-text {
           font-family: ${fonts.supporting};
           font-size: 14px;
         }
+
         .pa_UnitListView_discipline {
           font-family: ${fonts.headline};
           text-transform: capitalize;
@@ -54,6 +60,7 @@ export const Container = styled.div<{
         }
       }
     }
+
     .pa_OdfFooter_ctr {
       font-family: ${fonts.supporting};
       top: 60px;
@@ -65,12 +72,15 @@ export const Container = styled.div<{
       min-height: 70px;
       background-color: ${colours.functional.backgroundPrimary};
     }
+
     .pa_Schedule_ctr {
       padding-bottom: 60px;
       background: ${colours.functional.backgroundSecondary};
     }
+
     .pa_ErrorMessage_ctr {
       background: #ededed;
+    }
   }
   .buttonContainer {
     text-align: center;

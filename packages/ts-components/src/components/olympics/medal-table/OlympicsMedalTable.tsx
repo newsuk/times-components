@@ -7,13 +7,18 @@ import { OlympicsKeys } from '../types';
 export const OlympicsMedalTable: FC<{
   highlighted?: string;
   keys: OlympicsKeys;
-}> = ({ keys: { endpoint, authToken, gamesCode }, highlighted = 'GBR' }) => {
+  sectionColor?: string;
+}> = ({
+  keys: { endpoint, authToken, gamesCode },
+  highlighted = 'GBR',
+  sectionColor = colours.section.sport
+}) => {
   const [showAll, setShowAll] = useState(false);
   const handleShowAll = () => {
     setShowAll(!showAll);
   };
   return (
-    <Container sectionColour={colours.section.sport} showAll={showAll}>
+    <Container sectionColour={sectionColor} showAll={showAll}>
       <Helmet>
         <script
           src={`${endpoint}/static/medal-table.js`}
