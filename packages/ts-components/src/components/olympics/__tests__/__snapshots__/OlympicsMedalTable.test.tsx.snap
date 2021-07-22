@@ -24,15 +24,33 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 }
 
 .c0 .pa-medaltable .pa_MedalTableView_medaltable table thead {
-  color: inherit;
+  color: #1D1D1B;
   line-height: 48px;
   font-family: GillSansMTStd-Medium;
   font-size: 14px;
 }
 
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th {
+  width: 40px;
+  max-width: 40px;
+  min-width: 40px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(2) {
+  width: auto;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(1),
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(6) {
+  width: 60px;
+  max-width: 60px;
+  min-width: 60px;
+}
+
 .c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr {
   background-color: #F9F9F9;
   border-bottom: 1px solid #DBDBDB;
+  color: #1D1D1B;
 }
 
 .c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr td {
@@ -50,13 +68,14 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 
 .c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr.pa_MedalTableView_highlight {
   display: table-row;
-  background-color: #CCC;
+  background-color: #e4e4e4;
 }
 
 .c0 .pa-medaltable .pa_OdfFooter_ctr {
   position: relative;
   top: 60px;
   font-family: GillSansMTStd-Medium;
+  color: #1D1D1B;
 }
 
 .c0 .buttonContainer {
@@ -140,15 +159,33 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 }
 
 .c0 .pa-medaltable .pa_MedalTableView_medaltable table thead {
-  color: inherit;
+  color: #1D1D1B;
   line-height: 48px;
   font-family: GillSansMTStd-Medium;
   font-size: 14px;
 }
 
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th {
+  width: 40px;
+  max-width: 40px;
+  min-width: 40px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(2) {
+  width: auto;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(1),
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(6) {
+  width: 60px;
+  max-width: 60px;
+  min-width: 60px;
+}
+
 .c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr {
   background-color: #F9F9F9;
   border-bottom: 1px solid #DBDBDB;
+  color: #1D1D1B;
 }
 
 .c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr td {
@@ -166,13 +203,14 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 
 .c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr.pa_MedalTableView_highlight {
   display: table-row;
-  background-color: #CCC;
+  background-color: #e4e4e4;
 }
 
 .c0 .pa-medaltable .pa_OdfFooter_ctr {
   position: relative;
   top: 60px;
   font-family: GillSansMTStd-Medium;
+  color: #1D1D1B;
 }
 
 .c0 .buttonContainer {

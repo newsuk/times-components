@@ -38,6 +38,7 @@ export const Container = styled.div<{
 
         ul.pa_UnitListView_list li {
           background-color: ${colours.functional.backgroundPrimary};
+          color: ${colours.functional.brandColour};
 
           &:nth-child(n + 8) {
             display: ${({ showAll }) => (showAll ? 'block' : 'none')};
@@ -46,6 +47,7 @@ export const Container = styled.div<{
 
         .pa_UnitListView_unit-time {
           color: ${({ sectionColour }) => sectionColour};
+          line-height: 30px;
         }
 
         .pa_UnitListView_unit-text {
@@ -85,5 +87,9 @@ export const Container = styled.div<{
   .buttonContainer {
     text-align: center;
     height: 0;
+
+    button {
+      background-color: ${colours.functional.backgroundPrimary};
+    }
   }
 `;

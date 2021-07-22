@@ -150,7 +150,6 @@ const renderers = ({
   },
   interactive(key, { url, element, display }) {
     const { attributes, value } = element;
-    console.log("article interactive", value);
     switch (value) {
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations

@@ -33,11 +33,24 @@ export const Container = styled.div<{
         margin-top: -48px;
 
         thead {
-          color: inherit;
+          color: ${colours.functional.brandColour};
           line-height: 48px;
-          color: ${fonts.brandColour};
           font-family: ${fonts.supporting};
           font-size: 14px;
+        }
+        th {
+          width: 40px;
+          max-width: 40px;
+          min-width: 40px;
+          :nth-child(2) {
+            width: auto;
+          }
+          :nth-child(1),
+          :nth-child(6) {
+            width: 60px;
+            max-width: 60px;
+            min-width: 60px;
+          }
         }
       }
 
@@ -45,6 +58,7 @@ export const Container = styled.div<{
         tr {
           background-color: ${colours.functional.backgroundPrimary};
           border-bottom: 1px solid ${colours.functional.keyline};
+          color: ${colours.functional.brandColour};
 
           td {
             padding: 8px 0 3px;
@@ -61,7 +75,7 @@ export const Container = styled.div<{
 
           &.pa_MedalTableView_highlight {
             display: table-row;
-            background-color: ${colours.functional.greyLabel};
+            background-color: #e4e4e4;
           }
         }
       }
@@ -70,6 +84,7 @@ export const Container = styled.div<{
       position: relative;
       top: 60px;
       font-family: ${fonts.supporting};
+      color: ${colours.functional.brandColour};
     }
   }
   .buttonContainer {

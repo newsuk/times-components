@@ -28,6 +28,7 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
   background-color: #F9F9F9;
+  color: #1D1D1B;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li:nth-child(n + 8) {
@@ -36,6 +37,7 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
   color: sectionColor;
+  line-height: 30px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
@@ -73,6 +75,10 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 .c0 .buttonContainer {
   text-align: center;
   height: 0;
+}
+
+.c0 .buttonContainer button {
+  background-color: #F9F9F9;
 }
 
 .c1 {
@@ -153,6 +159,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
   background-color: #F9F9F9;
+  color: #1D1D1B;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li:nth-child(n + 8) {
@@ -161,6 +168,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
   color: #008347;
+  line-height: 30px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
@@ -198,6 +206,10 @@ exports[`<OlympicsSchedule> renders 1`] = `
 .c0 .buttonContainer {
   text-align: center;
   height: 0;
+}
+
+.c0 .buttonContainer button {
+  background-color: #F9F9F9;
 }
 
 .c1 {
