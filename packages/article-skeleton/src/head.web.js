@@ -104,11 +104,17 @@ function getAuthorSchema(article) {
         jobTitle: inlines.length > index ? inlines[index].value : "",
         slug: slugValue
       }))
-      .map(({ name, jobTitle }) => ({
-        "@type": "Person",
-        name,
-        jobTitle
-      }));
+      .map(({ name, jobTitle, slug }) => {
+        const person = {
+          "@type": "Person",
+          name,
+          jobTitle
+        };
+        const url = slug ? `https://thetimes.co.uk/profile/${slug}` : null;
+        if (url) Object.assign(person, { url });
+
+        return person;
+      });
 
   if (inlines && inlines.length)
     return {

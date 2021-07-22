@@ -167,6 +167,58 @@ describe("Head", () => {
     expect(testRenderer).toMatchSnapshot();
   });
 
+  it("removes url from author schema if there is no slug", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          bylines: [
+            {
+              __typename: "AuthorByline",
+              byline: [
+                {
+                  name: "author",
+                  children: [
+                    {
+                      name: "text",
+                      children: [],
+                      attributes: {
+                        value: "Oliver Wright"
+                      }
+                    }
+                  ],
+                  attributes: {}
+                }
+              ],
+              image: null
+            },
+            {
+              __typename: "TextByline",
+              byline: [
+                {
+                  name: "inline",
+                  children: [
+                    {
+                      name: "text",
+                      children: [],
+                      attributes: {
+                        value: ", Policy Editor | "
+                      }
+                    }
+                  ]
+                }
+              ],
+              image: null
+            }
+          ]
+        }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
+
   it("removes author from context schema if there is empty array of bylines or null bylines", () => {
     let testRenderer = TestRenderer.create(
       <Head
