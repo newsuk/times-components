@@ -9,14 +9,14 @@ storiesOf('Typescript Component/In Article/Info Card', module)
     <ArticleHarness>{storyFn()}</ArticleHarness>
 ))
 
-.add('Standard with Copy', () => (
-  <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43603">
+.add('Standard with Copy & Subtitle', () => (
+  <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43606">
      <InfoCard sectionColour="#636C17" />
   </FetchProvider> 
 ))
 
-.add('Standard with Copy and Subtitle', () => (
-  <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43606">
+.add('Wide with Copy', () => (
+  <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43603">
      <InfoCard sectionColour="#636C17" />
   </FetchProvider> 
 ))
