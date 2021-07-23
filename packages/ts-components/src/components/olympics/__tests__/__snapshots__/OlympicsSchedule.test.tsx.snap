@@ -24,6 +24,7 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
   font-family: GillSansMTStd-Medium;
   font-size: 16px;
+  height: 400px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
@@ -148,6 +149,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
   font-family: GillSansMTStd-Medium;
   font-size: 16px;
+  height: 400px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
@@ -272,6 +274,7 @@ exports[`<OlympicsSchedule> renders with wrapHelmetProvider 1`] = `
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
   font-family: GillSansMTStd-Medium;
   font-size: 16px;
+  height: 400px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {

@@ -35,6 +35,7 @@ export const Container = styled.div<{
       .pa_UnitListView_ctr {
         font-family: ${fonts.supporting};
         font-size: 16px;
+        height: 400px;
 
         ul.pa_UnitListView_list li {
           background-color: ${colours.functional.backgroundPrimary};
