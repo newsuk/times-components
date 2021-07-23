@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { Helmet } from 'react-helmet-async';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { Container } from './styles';
 import { colours } from '@times-components/styleguide';
 
@@ -9,19 +9,33 @@ import { Button } from '../medal-table/styles';
 export const OlympicsSchedule: FC<{
   keys: OlympicsKeys;
   sectionColor?: string;
+  wrapHelmetProvider?: boolean;
 }> = ({
   keys: { endpoint, authToken, gamesCode },
-  sectionColor = colours.section.sport
+  sectionColor = colours.section.sport,
+  wrapHelmetProvider = false
 }) => {
   const [showAll, setShowAll] = useState(false);
   const handleShowAll = () => {
     setShowAll(!showAll);
   };
+  const HelmetProviderWrapper: FC<{ wrap: boolean }> = ({ wrap, children }) =>
+    wrap ? (
+      <HelmetProvider context={{}}>{children}</HelmetProvider>
+    ) : (
+      <>{children}</>
+    );
   return (
     <Container sectionColour={sectionColor} showAll={showAll}>
-      <Helmet>
-        <script src={`${endpoint}/static/schedule.js`} charSet="UTF-8" defer />
-      </Helmet>
+      <HelmetProviderWrapper wrap={wrapHelmetProvider}>
+        <Helmet>
+          <script
+            src={`${endpoint}/static/schedule.js`}
+            charSet="UTF-8"
+            defer
+          />
+        </Helmet>
+      </HelmetProviderWrapper>
       <div
         className="pa-schedule"
         data-auth-token={authToken}

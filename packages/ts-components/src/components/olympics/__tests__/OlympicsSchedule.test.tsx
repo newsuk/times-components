@@ -8,7 +8,8 @@ import { OlympicsSchedule } from '../schedule/OlympicsSchedule';
 import { OlympicsKeys } from '../types';
 
 jest.mock('react-helmet-async', () => ({
-  Helmet: 'Helmet'
+  Helmet: 'Helmet',
+  HelmetProvider: 'HelmetProvider'
 }));
 
 const keys: OlympicsKeys = {
@@ -20,6 +21,12 @@ const keys: OlympicsKeys = {
 describe('<OlympicsSchedule>', () => {
   it('renders', () => {
     const { asFragment } = render(<OlympicsSchedule keys={keys} />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+  it('renders with wrapHelmetProvider', () => {
+    const { asFragment } = render(
+      <OlympicsSchedule keys={keys} wrapHelmetProvider />
+    );
     expect(asFragment()).toMatchSnapshot();
   });
   it('click show all', async () => {

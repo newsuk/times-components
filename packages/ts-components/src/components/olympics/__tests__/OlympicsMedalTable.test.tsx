@@ -7,7 +7,8 @@ import { OlympicsMedalTable } from '../medal-table/OlympicsMedalTable';
 import { OlympicsKeys } from '../types';
 
 jest.mock('react-helmet-async', () => ({
-  Helmet: 'Helmet'
+  Helmet: 'Helmet',
+  HelmetProvider: 'HelmetProvider'
 }));
 
 const keys: OlympicsKeys = {
@@ -22,6 +23,15 @@ describe('<OlympicsMedalTable>', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it('renders with wrapHelmetProvider', () => {
+    const { asFragment } = render(
+      <OlympicsMedalTable keys={keys} wrapHelmetProvider />
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it('click show all', async () => {
     const { asFragment, getByText, findByText } = render(
       <OlympicsMedalTable
