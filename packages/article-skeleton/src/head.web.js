@@ -33,8 +33,12 @@ function getSectionName(article) {
   return nonNews.length ? nonNews[0] : "News";
 }
 
-function getReducedBylines(bylines) {
-  return bylines.reduce((acc, byline) => {
+function getAuthorAsText(article) {
+  const { bylines } = article;
+  if (!bylines) {
+    return null;
+  }
+  const children = bylines.reduce((acc, byline) => {
     if (Array.isArray(byline.byline)) {
       acc.push(...byline.byline);
     } else {
@@ -42,87 +46,24 @@ function getReducedBylines(bylines) {
     }
     return acc;
   }, []);
-}
-
-function getAuthorAsText(article) {
-  const { bylines } = article;
-  if (!bylines) {
-    return null;
-  }
-  const children = getReducedBylines(bylines);
   return renderTreeAsText({ children });
 }
 
-function getAuthorsAndInlines(
-  { children, name, attributes },
-  type,
-  values = { authors: [], inlines: [] }
-) {
-  if (children && children.length > 0) {
-    const subschildren = [...children];
-    if (name === "author") {
-      subschildren[0].attributes.slug = attributes;
-    }
-
-    subschildren.map(child => getAuthorsAndInlines(child, name, values));
-  } else {
-    if (type === "inline") values.inlines.push(attributes);
-    if (type === "author") values.authors.push(attributes);
-  }
-  return values;
-}
-
-function removeSpecialCharactersFromStartAndEnd(value) {
-  if (!value) return "";
-  return value
-    .replace(/^\W+/, "")
-    .replace(/\W+$/, "")
-    .trim();
+function getAuthors({ bylines }) {
+  return bylines.map(byline => byline.author).filter(author => author);
 }
 
 function getAuthorSchema(article) {
   const { bylines } = article;
-  if (!bylines) {
-    return null;
-  }
-
-  const children = getReducedBylines(bylines);
-  let { authors, inlines } = getAuthorsAndInlines({ children });
-
-  authors = authors.map(author => ({
-    ...author,
-    value: removeSpecialCharactersFromStartAndEnd(author.value)
-  }));
-  inlines = inlines.map(inline => ({
-    ...inline,
-    value: removeSpecialCharactersFromStartAndEnd(inline.value)
-  }));
-  if (authors && authors.length)
-    return authors
-      .map(({ value, slug: { slug: slugValue } }, index) => ({
-        name: value,
-        jobTitle: inlines.length > index ? inlines[index].value : "",
-        slug: slugValue
+  return bylines
+    ? getAuthors(article).map(({ name, jobTitle, twitter, slug }) => ({
+        "@type": "Person",
+        name,
+        jobTitle,
+        url: `https://thetimes.co.uk/profile/${slug}`,
+        sameAs: `https://twitter.com/${twitter}`
       }))
-      .map(({ name, jobTitle, slug }) => {
-        const person = {
-          "@type": "Person",
-          name,
-          jobTitle
-        };
-        const url = slug ? `https://thetimes.co.uk/profile/${slug}` : null;
-        if (url) Object.assign(person, { url });
-
-        return person;
-      });
-
-  if (inlines && inlines.length)
-    return {
-      "@type": "Person",
-      name: inlines[0].value
-    };
-
-  return [];
+    : [];
 }
 
 const PUBLICATION_NAMES = {
@@ -228,13 +169,8 @@ function Head({ article, logoUrl, paidContentClassName }) {
     dateModified
   };
 
-  if (authors) {
-    if (Array.isArray(authors) && authors.length)
-      Object.assign(jsonLD, { author: authors });
-
-    if (authors.name) {
-      Object.assign(jsonLD, { author: authors });
-    }
+  if (authors && authors.length) {
+    Object.assign(jsonLD, { author: authors });
   }
 
   return (

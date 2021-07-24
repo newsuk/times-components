@@ -82,6 +82,14 @@ describe("Head", () => {
           bylines: [
             {
               __typename: "AuthorByline",
+              author: {
+                image:
+                  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+                jobTitle: "Asia Editor",
+                twitter: "dicklp",
+                slug: "richard-lloyd-parry",
+                name: "Richard Lloyd Parry"
+              },
               byline: [
                 {
                   name: "author",
@@ -121,6 +129,14 @@ describe("Head", () => {
             },
             {
               __typename: "AuthorByline",
+              author: {
+                image:
+                  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+                jobTitle: "Asia Editor",
+                twitter: "dicklp",
+                slug: "richard-lloyd-parry",
+                name: "Richard Lloyd Parry"
+              },
               byline: [
                 {
                   name: "author",
@@ -151,58 +167,6 @@ describe("Head", () => {
                       children: [],
                       attributes: {
                         value: ", Technology Correspondent"
-                      }
-                    }
-                  ]
-                }
-              ],
-              image: null
-            }
-          ]
-        }}
-        logoUrl={logoUrl}
-        paidContentClassName={paidContentClassName}
-      />
-    );
-    expect(testRenderer).toMatchSnapshot();
-  });
-
-  it("removes url from author schema if there is no slug", () => {
-    const testRenderer = TestRenderer.create(
-      <Head
-        article={{
-          ...article,
-          bylines: [
-            {
-              __typename: "AuthorByline",
-              byline: [
-                {
-                  name: "author",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Oliver Wright"
-                      }
-                    }
-                  ],
-                  attributes: {}
-                }
-              ],
-              image: null
-            },
-            {
-              __typename: "TextByline",
-              byline: [
-                {
-                  name: "inline",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: ", Policy Editor | "
                       }
                     }
                   ]
