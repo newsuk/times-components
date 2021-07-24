@@ -20,7 +20,8 @@ import { Arrow } from '../carousel/Arrow';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 
-const sanitiseCopy = (copy: string, allowedTags: string[] = []) => sanitizeHtml(copy, { allowedTags, allowedAttributes: {} });
+const sanitiseCopy = (copy: string, allowedTags: string[] = []) =>
+  sanitizeHtml(copy, { allowedTags, allowedAttributes: {} });
 
 export type InfoCardDataObj = {
   type: string;
@@ -52,12 +53,12 @@ const CustomPagination: React.FC<{
       <CarouselButton
         data-testid="Previous button"
         disabled={activePage === 0}
-        onClick={() => onClick((current / showDisplayItem) - 1, 'left')}
+        onClick={() => onClick(current / showDisplayItem - 1, 'left')}
       >
         <Arrow size={{ width: '10px', height: '14px' }} />
       </CarouselButton>
       <CarouselIndicatorContainer>
-        {data.map(({ }, index) => {
+        {data.map(({}, index) => {
           if (index < showDotItem) {
             const isActivePage = activePage === index;
             return (
@@ -75,9 +76,9 @@ const CustomPagination: React.FC<{
       </CarouselIndicatorContainer>
       <CarouselButton
         data-testid="Next Button"
-        disabled={activePage === (data.length / showDisplayItem) - 1}
+        disabled={activePage === data.length / showDisplayItem - 1}
         className="nextBtn"
-        onClick={() => onClick((current / showDisplayItem) + 1, 'right')}
+        onClick={() => onClick(current / showDisplayItem + 1, 'right')}
       >
         <Arrow size={{ width: '10px', height: '14px' }} />
       </CarouselButton>
@@ -89,7 +90,6 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
   sectionColour,
   initialIndex = 0
 }) => {
-
   const { loading, error, data } = useFetch();
 
   if (loading) {
@@ -126,7 +126,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
   const updateWidth = () => setWidth(window.innerWidth);
 
   useEffect(() => {
-    window.addEventListener("resize", updateWidth);
+    window.addEventListener('resize', updateWidth);
   }, []);
 
   const defaultCard = [{ width: small, itemsToShow: 1, itemsToScroll: 1 }];
@@ -184,7 +184,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
               label={label}
               sectionColour={sectionColour}
             >
-              {infoCardData.length > ((isWide(size) && isWideScreen) ? 3 : 2) && (
+              {infoCardData.length > (isWide(size) && isWideScreen ? 3 : 2) && (
                 <CustomPagination
                   activePage={activePage}
                   /* @ts-ignore */
@@ -205,14 +205,13 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                 <CardImg src={row.data.image} />
               </AspectRatio>
             )}
-            {
-              row.data.subtitle && (
-                <SubHeading>
-                  {row.data.subtitle}
-                </SubHeading>
-              )}
+            {row.data.subtitle && <SubHeading>{row.data.subtitle}</SubHeading>}
             {row.data.copy && (
-              <BodyCopy dangerouslySetInnerHTML={{ __html: sanitiseCopy(row.data.copy, ['br', 'b', 'i']) }}></BodyCopy>
+              <BodyCopy
+                dangerouslySetInnerHTML={{
+                  __html: sanitiseCopy(row.data.copy, ['br', 'b', 'i'])
+                }}
+              />
             )}
           </InfoCardContainer>
         ))}

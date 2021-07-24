@@ -60,7 +60,7 @@ export const SubHeading = styled.div`
   }
 `;
 
-export const BodyCopy  = styled.div`
+export const BodyCopy = styled.div`
   color: #696969;
   font-family: ${fonts.body};
   font-size: 16px;
@@ -131,7 +131,7 @@ export const CarouselIndicator = styled.div<{ active?: boolean }>`
   cursor: pointer;
 `;
 
-export const StyledCarousel = styled(ReactElasticCarousel) <{
+export const StyledCarousel = styled(ReactElasticCarousel)<{
   sectionColour: string;
 }>`
   display: flex;
@@ -149,23 +149,25 @@ export const CarouselContainer = styled.div<{
   isStandard?: boolean;
 }>`
   background-color: #f9f9f9;
-  padding-bottom:20px;
+  padding-bottom: 20px;
   margin: 0 auto 20px auto;
-  border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`}; 
-  width: ${({ isWide, isStandard }) =>  (isWide && '100%') || (isStandard && 'auto') || 'auto'};
+  border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
+  width: ${({ isWide, isStandard }) =>
+    (isWide && '100%') || (isStandard && 'auto') || 'auto'};
 
   @media (min-width: ${breakpoints.medium}px) {
-    width: ${({ isWide, isStandard }) =>  (isWide && '100%') || (isStandard && '80.8%') || '80.8%'};
+    width: ${({ isWide, isStandard }) =>
+      (isWide && '100%') || (isStandard && '80.8%') || '80.8%'};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    width: ${({ isWide, isStandard }) =>  (isWide && '100%') || (isStandard && '56.2%') || '56.2%'};
+    width: ${({ isWide, isStandard }) =>
+      (isWide && '100%') || (isStandard && '56.2%') || '56.2%'};
   }
 
   & div.rec-carousel-item.rec-carousel-item-visible {
     border-right: 1px solid #cccccc;
-  } 
-
+  }
 `;
 
 export const CardContainer = styled.div`
@@ -174,7 +176,7 @@ export const CardContainer = styled.div`
   background-color: #f9f9f9;
   width: 100%;
   height: 30%;
-  padding: 20px 16px 14px 16px; 
+  padding: 20px 16px 14px 16px;
 `;
 
 export const CardContent = styled.div`
@@ -185,7 +187,7 @@ export const CardContent = styled.div`
 
 export const InfoCardContainer = styled.div`
   padding: 0 16px;
-  float: left;  
+  float: left;
   width: 100%;
 `;
 
