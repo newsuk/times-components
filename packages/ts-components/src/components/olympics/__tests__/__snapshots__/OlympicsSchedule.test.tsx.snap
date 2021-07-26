@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OlympicsSchedule> renders 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  margin: 0 auto 20px auto;
+}
+
+.c0 .pa-schedule .pa_ScheduleHeader_header {
+  color: #1D1D1B;
+  font-family: GillSansMTStd-Medium;
+  font-size: 18px;
+  background: #EDEDED;
+}
+
+.c0 .pa-schedule .pa_ScheduleHeader_filterbar {
+  color: #1D1D1B;
+  font-family: GillSansMTStd-Medium;
+  background: #EDEDED;
+  font-size: 16px;
+}
+
+.c0 .pa-schedule .pa_UnitListView_ctr {
+  height: 400px;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
+  font-family: GillSansMTStd-Medium;
+  font-size: 16px;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
+  background-color: #F9F9F9;
+  color: #1D1D1B;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
+  color: #008347;
+  line-height: 30px;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_discipline {
+  font-family: TimesModern-Bold;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.c0 .pa-schedule .pa_OdfFooter_ctr {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+}
+
+.c0 .pa-schedule .pa_UnitListView_message {
+  min-height: 70px;
+  background-color: #F9F9F9;
+}
+
+.c0 .pa-schedule .pa_Schedule_ctr {
+  background: #EDEDED;
+}
+
+.c0 .pa-schedule .pa_ErrorMessage_ctr {
+  background: #ededed;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="pa-schedule"
+      data-auth-token="token"
+      data-games-code="OG1896"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<OlympicsSchedule> renders outside of article 1`] = `
+<DocumentFragment>
+  .c0 {
+  position: relative;
+  margin: 0 auto 20px auto;
+}
+
+.c0 .pa-schedule .pa_ScheduleHeader_header {
+  color: #1D1D1B;
+  font-family: GillSansMTStd-Medium;
+  font-size: 18px;
+  background: #EDEDED;
+}
+
+.c0 .pa-schedule .pa_ScheduleHeader_filterbar {
+  color: #1D1D1B;
+  font-family: GillSansMTStd-Medium;
+  background: #EDEDED;
+  font-size: 16px;
+}
+
+.c0 .pa-schedule .pa_UnitListView_ctr {
+  height: 400px;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
+  font-family: GillSansMTStd-Medium;
+  font-size: 16px;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
+  background-color: #F9F9F9;
+  color: #1D1D1B;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
+  color: #008347;
+  line-height: 30px;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_discipline {
+  font-family: TimesModern-Bold;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.c0 .pa-schedule .pa_OdfFooter_ctr {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+}
+
+.c0 .pa-schedule .pa_UnitListView_message {
+  min-height: 70px;
+  background-color: #F9F9F9;
+}
+
+.c0 .pa-schedule .pa_Schedule_ctr {
+  background: #EDEDED;
+}
+
+.c0 .pa-schedule .pa_ErrorMessage_ctr {
+  background: #ededed;
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="pa-schedule"
+      data-auth-token="token"
+      data-games-code="OG1896"
+    />
+  </div>
+</DocumentFragment>
+`;

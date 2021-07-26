@@ -66,7 +66,8 @@ class ArticlePage extends Component {
       additionalRelatedArticlesFlag,
       algoliaSearchKeys,
       latestFromSectionFlag,
-      latestFromSection
+      latestFromSection,
+      olympicsKeys
     } = this.props;
 
     if (error || isLoading) {
@@ -88,6 +89,7 @@ class ArticlePage extends Component {
         algoliaSearchKeys={algoliaSearchKeys}
         latestFromSectionFlag={latestFromSectionFlag}
         latestFromSection={latestFromSection}
+        olympicsKeys={olympicsKeys}
       />
     );
   }
