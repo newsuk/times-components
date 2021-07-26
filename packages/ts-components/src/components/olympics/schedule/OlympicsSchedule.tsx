@@ -16,6 +16,20 @@ export const OlympicsSchedule: FC<{
 }) => {
   useEffect(() => {
     injectScript(`${endpoint}/static/schedule.js`);
+    window.addEventListener(
+      'wheel',
+      event => {
+        if (
+          event
+            .composedPath()
+            // @ts-ignore
+            .includes(document.querySelector('.pa_UnitListView_ctr'))
+        ) {
+          event.stopImmediatePropagation();
+        }
+      },
+      true
+    )
   }, []);
 
   return (
