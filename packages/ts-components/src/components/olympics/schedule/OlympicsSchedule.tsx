@@ -16,6 +16,9 @@ export const OlympicsSchedule: FC<{
 }) => {
   useEffect(() => {
     injectScript(`${endpoint}/static/schedule.js`);
+  }, []);
+
+  useEffect(() => {
     window.addEventListener(
       'wheel',
       event => {
@@ -29,7 +32,7 @@ export const OlympicsSchedule: FC<{
         }
       },
       true
-    )
+    );
   }, []);
 
   useEffect(() => {
