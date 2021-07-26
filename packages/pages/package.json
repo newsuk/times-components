@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pages",
-  "version": "2.3.35",
+  "version": "2.3.36",
   "main": "dist/pages",
   "dev": "src/pages",
   "scripts": {
@@ -53,14 +53,14 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/article": "7.7.33",
-    "@times-components/author-profile": "6.3.36",
+    "@times-components/article": "7.7.34",
+    "@times-components/author-profile": "6.3.37",
     "@times-components/context": "1.2.25",
-    "@times-components/provider": "1.25.5",
+    "@times-components/provider": "1.25.6",
     "@times-components/schema": "0.6.24",
     "@times-components/section": "1.6.85",
     "@times-components/styleguide": "3.38.21",
-    "@times-components/topic": "5.3.36",
+    "@times-components/topic": "5.3.37",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link": "1.2.4",
