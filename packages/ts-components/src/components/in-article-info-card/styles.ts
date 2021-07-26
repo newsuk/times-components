@@ -61,7 +61,7 @@ export const SubHeading = styled.div`
 `;
 
 export const BodyCopy = styled.div`
-  color: #696969;
+  color: ${colours.functional.secondary};
   font-family: ${fonts.body};
   font-size: 16px;
   line-height: 24px;
@@ -89,16 +89,15 @@ export const CarouselButton = styled.button<{ disabled: boolean }>`
   align-items: center;
   width: 32px;
   height: 32px;
-  padding-left: 6px;
   background-color: transparent;
-  border: solid 1px ${({ disabled }) => (disabled ? '#e4e4e4' : '#000000')};
+  border: solid 1px ${({ disabled }) => (disabled ? colours.functional.keyline : colours.functional.primary)};
   border-radius: 50%;
   cursor: pointer;
   pointer-events: ${({ disabled }) => (disabled ? 'none' : 'auto')};
 
   svg {
     path {
-      fill: ${({ disabled }) => (disabled ? '#CCCCCC' : 'black')};
+      fill: ${({ disabled }) => (disabled ? colours.functional.keyline : colours.functional.primary)};
       height: 10px;
       width: 5px;
     }
@@ -109,7 +108,7 @@ export const CarouselButton = styled.button<{ disabled: boolean }>`
   }
 
   &:hover {
-    border: solid 1px ${({ disabled }) => (disabled ? '#CCCCCC' : '#0a68c1')};
+    border: solid 1px ${({ disabled }) => (disabled ? colours.functional.keyline : colours.functional.action)};
   }
 `;
 
@@ -121,8 +120,7 @@ export const CarouselIndicatorContainer = styled.div`
 `;
 
 export const CarouselIndicator = styled.div<{ active?: boolean }>`
-  background-color: #cccccc;
-  background-color: ${({ active }) => (active ? '#1573A2' : '#CCCCCC')};
+  background-color: ${({ active }) => (active ? colours.functional.action : colours.functional.keyline)};
   height: 5px;
   width: 5px;
   border-radius: 50%;
@@ -148,7 +146,7 @@ export const CarouselContainer = styled.div<{
   isWide?: boolean;
   isStandard?: boolean;
 }>`
-  background-color: #f9f9f9;
+  background-color: ${colours.functional.backgroundPrimary};
   padding-bottom: 20px;
   margin: 0 auto 20px auto;
   border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
@@ -166,14 +164,14 @@ export const CarouselContainer = styled.div<{
   }
 
   & div.rec-carousel-item.rec-carousel-item-visible {
-    border-right: 1px solid #cccccc;
+    border-right: 1px solid ${colours.functional.keyline};
   }
 `;
 
 export const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: #f9f9f9;
+  background-color: ${colours.functional.backgroundPrimary};
   width: 100%;
   height: 30%;
   padding: 20px 16px 14px 16px;
