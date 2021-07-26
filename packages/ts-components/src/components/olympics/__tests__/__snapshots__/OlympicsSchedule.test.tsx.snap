@@ -146,19 +146,18 @@ exports[`<OlympicsSchedule> renders 1`] = `
   font-size: 16px;
 }
 
+.c0 .pa-schedule .pa_UnitListView_ctr {
+  height: 400px;
+}
+
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
   font-family: GillSansMTStd-Medium;
   font-size: 16px;
-  height: 400px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
   background-color: #F9F9F9;
   color: #1D1D1B;
-}
-
-.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li:nth-child(n + 8) {
-  display: none;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
@@ -179,8 +178,6 @@ exports[`<OlympicsSchedule> renders 1`] = `
 
 .c0 .pa-schedule .pa_OdfFooter_ctr {
   font-family: GillSansMTStd-Medium;
-  top: 60px;
-  position: relative;
   font-size: 12px;
 }
 
@@ -190,31 +187,11 @@ exports[`<OlympicsSchedule> renders 1`] = `
 }
 
 .c0 .pa-schedule .pa_Schedule_ctr {
-  padding-bottom: 60px;
   background: #EDEDED;
 }
 
 .c0 .pa-schedule .pa_ErrorMessage_ctr {
   background: #ededed;
-}
-
-.c0 .buttonContainer {
-  text-align: center;
-  height: 0;
-}
-
-.c0 .buttonContainer button {
-  background-color: #F9F9F9;
-}
-
-.c1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid #DBDBDB;
-  top: -80px;
-  position: relative;
 }
 
 @media (min-width:768px) {
@@ -237,15 +214,6 @@ exports[`<OlympicsSchedule> renders 1`] = `
       data-auth-token="token"
       data-games-code="OG1896"
     />
-    <div
-      class="buttonContainer"
-    >
-      <button
-        class="c1"
-      >
-        Show All
-      </button>
-    </div>
   </div>
 </DocumentFragment>
 `;
@@ -271,19 +239,18 @@ exports[`<OlympicsSchedule> renders with wrapHelmetProvider 1`] = `
   font-size: 16px;
 }
 
+.c0 .pa-schedule .pa_UnitListView_ctr {
+  height: 400px;
+}
+
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
   font-family: GillSansMTStd-Medium;
   font-size: 16px;
-  height: 400px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
   background-color: #F9F9F9;
   color: #1D1D1B;
-}
-
-.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li:nth-child(n + 8) {
-  display: none;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
@@ -304,8 +271,6 @@ exports[`<OlympicsSchedule> renders with wrapHelmetProvider 1`] = `
 
 .c0 .pa-schedule .pa_OdfFooter_ctr {
   font-family: GillSansMTStd-Medium;
-  top: 60px;
-  position: relative;
   font-size: 12px;
 }
 
@@ -315,31 +280,11 @@ exports[`<OlympicsSchedule> renders with wrapHelmetProvider 1`] = `
 }
 
 .c0 .pa-schedule .pa_Schedule_ctr {
-  padding-bottom: 60px;
   background: #EDEDED;
 }
 
 .c0 .pa-schedule .pa_ErrorMessage_ctr {
   background: #ededed;
-}
-
-.c0 .buttonContainer {
-  text-align: center;
-  height: 0;
-}
-
-.c0 .buttonContainer button {
-  background-color: #F9F9F9;
-}
-
-.c1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid #DBDBDB;
-  top: -80px;
-  position: relative;
 }
 
 @media (min-width:768px) {
@@ -362,15 +307,6 @@ exports[`<OlympicsSchedule> renders with wrapHelmetProvider 1`] = `
       data-auth-token="token"
       data-games-code="OG1896"
     />
-    <div
-      class="buttonContainer"
-    >
-      <button
-        class="c1"
-      >
-        Show All
-      </button>
-    </div>
   </div>
 </DocumentFragment>
 `;
