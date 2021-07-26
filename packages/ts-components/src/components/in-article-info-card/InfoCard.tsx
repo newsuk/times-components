@@ -39,8 +39,12 @@ export type GalleryCarouselProps = {
 
 let showDisplayItem: number;
 let showDotItem: number;
+let windowWidth: string;
+let isWideLayout: boolean;
+let isSmallLayout: number;
 let breakPointsCard = new Array();
 
+const { small, medium, wide } = breakpoints;
 const CustomPagination: React.FC<{
   activePage: number;
   current: number;
@@ -59,6 +63,18 @@ const CustomPagination: React.FC<{
       </CarouselButton>
       <CarouselIndicatorContainer>
         {data.map(({}, index) => {
+          if (windowWidth >= wide) {
+            showDisplayItem = isWideLayout
+              ? breakPointsCard[2].itemsToShow
+              : (showDisplayItem = breakPointsCard[1].itemsToShow);
+            isSmallLayout = 0;
+          } else if (windowWidth >= medium && windowWidth <= wide) {
+            showDisplayItem = breakPointsCard[1].itemsToShow;
+            isSmallLayout = 0;
+          } else {
+            showDisplayItem = breakPointsCard[0].itemsToShow;
+            isSmallLayout = 1;
+          }
           if (index < showDotItem) {
             const isActivePage = activePage === index;
             return (
@@ -76,7 +92,10 @@ const CustomPagination: React.FC<{
       </CarouselIndicatorContainer>
       <CarouselButton
         data-testid="Next Button"
-        disabled={activePage === data.length / showDisplayItem - 1}
+        disabled={
+          activePage ===
+          Math.trunc(data.length / showDisplayItem - isSmallLayout)
+        }
         className="nextBtn"
         onClick={() => onClick(current / showDisplayItem + 1, 'right')}
       >
@@ -122,7 +141,6 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
   };
 
   const [winWidth, setWidth] = useState(window.innerWidth);
-  const { small, medium, wide } = breakpoints;
   const updateWidth = () => setWidth(window.innerWidth);
 
   useEffect(() => {
@@ -146,12 +164,13 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
   }
 
   const width = winWidth.toString();
-  let isWideScreen: boolean;
+  windowWidth = width;
+  isWideLayout = isWide(size) ? true : false;
+
   if (width < medium) {
     showDisplayItem = breakPointsCard[0].itemsToScroll;
   } else if (width >= wide && isWide(size)) {
     showDisplayItem = breakPointsCard[2].itemsToScroll;
-    isWideScreen = true;
   } else {
     showDisplayItem = breakPointsCard[1].itemsToScroll;
   }
@@ -184,7 +203,8 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
               label={label}
               sectionColour={sectionColour}
             >
-              {infoCardData.length > (isWide(size) && isWideScreen ? 3 : 2) && (
+              {infoCardData.length >
+                (isWide(size) && (width >= wide && isWide(size)) ? 3 : 2) && (
                 <CustomPagination
                   activePage={activePage}
                   /* @ts-ignore */

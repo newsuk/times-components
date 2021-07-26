@@ -193,4 +193,7 @@ export const InfoCardContainer = styled.div`
 
 export const CardImg = styled.img`
   padding: 4px 0 12px;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}  
 `;
