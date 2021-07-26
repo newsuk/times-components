@@ -2,15 +2,12 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { OlympicsSchedule } from './OlympicsSchedule';
-import { HelmetProvider } from 'react-helmet-async';
 import { ArticleHarness } from '../../../fixtures/article-harness/ArticleHarness';
 import { text, select } from '@storybook/addon-knobs';
 
 storiesOf('Typescript Component/Olympics', module)
   .addDecorator((storyFn: () => React.ReactNode) => (
-    <HelmetProvider context={{}}>
-      <ArticleHarness>{storyFn()}</ArticleHarness>
-    </HelmetProvider>
+    <ArticleHarness>{storyFn()}</ArticleHarness>
   ))
 
   .add('Schedule', () => {

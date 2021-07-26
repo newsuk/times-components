@@ -108,13 +108,6 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 <div
     class="c0"
   >
-    <helmet>
-      <script
-        charset="UTF-8"
-        defer=""
-        src="https://endpoint/static/medal-table.js"
-      />
-    </helmet>
     <div
       class="pa-medaltable"
       data-auth-token="token"
@@ -243,13 +236,6 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 <div
     class="c0"
   >
-    <helmet>
-      <script
-        charset="UTF-8"
-        defer=""
-        src="https://endpoint/static/medal-table.js"
-      />
-    </helmet>
     <div
       class="pa-medaltable"
       data-auth-token="token"
@@ -378,17 +364,6 @@ exports[`<OlympicsMedalTable> renders with wrapHelmetProvider 1`] = `
 <div
     class="c0"
   >
-    <helmetprovider
-      context="[object Object]"
-    >
-      <helmet>
-        <script
-          charset="UTF-8"
-          defer=""
-          src="https://endpoint/static/medal-table.js"
-        />
-      </helmet>
-    </helmetprovider>
     <div
       class="pa-medaltable"
       data-auth-token="token"

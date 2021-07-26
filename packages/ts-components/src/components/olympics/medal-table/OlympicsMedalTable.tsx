@@ -1,8 +1,8 @@
-import React, { FC, useState } from 'react';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import React, { FC, useEffect, useState } from 'react';
 import { colours } from '@times-components/styleguide';
 import { Container, Button } from './styles';
 import { OlympicsKeys } from '../types';
+import { injectScript } from '../../../helpers/widgets/inject-script';
 
 export const OlympicsMedalTable: FC<{
   highlighted?: string;
@@ -12,30 +12,18 @@ export const OlympicsMedalTable: FC<{
 }> = ({
   keys: { endpoint, authToken, gamesCode },
   highlighted = 'GBR',
-  sectionColor = colours.section.sport,
-  wrapHelmetProvider = false
+  sectionColor = colours.section.sport
 }) => {
   const [showAll, setShowAll] = useState(false);
   const handleShowAll = () => {
     setShowAll(!showAll);
   };
-  const HelmetProviderWrapper: FC<{ wrap: boolean }> = ({ wrap, children }) =>
-    wrap ? (
-      <HelmetProvider context={{}}>{children}</HelmetProvider>
-    ) : (
-      <>{children}</>
-    );
+  useEffect(() => {
+    injectScript(`${endpoint}/static/medal-table.js`);
+  }, []);
+
   return (
     <Container sectionColour={sectionColor} showAll={showAll}>
-      <HelmetProviderWrapper wrap={wrapHelmetProvider}>
-        <Helmet>
-          <script
-            src={`${endpoint}/static/medal-table.js`}
-            charSet="UTF-8"
-            defer
-          />
-        </Helmet>
-      </HelmetProviderWrapper>
       <div
         className="pa-medaltable"
         data-auth-token={authToken}
