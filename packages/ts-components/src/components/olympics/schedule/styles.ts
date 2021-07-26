@@ -3,7 +3,6 @@ import { breakpoints, colours, fonts } from '@times-components/styleguide';
 
 export const Container = styled.div<{
   sectionColour: string;
-  showAll: boolean;
 }>`
   position: relative;
   margin: 0 auto 20px auto;
@@ -30,20 +29,20 @@ export const Container = styled.div<{
       background: ${colours.functional.backgroundSecondary};
       font-size: 16px;
     }
+    
+    .pa_UnitListView_ctr {
+      height: 400px;
+    }
 
     .pa_LoadingOverlayContainer_ctr {
       .pa_UnitListView_ctr {
         font-family: ${fonts.supporting};
         font-size: 16px;
-        height: 400px;
 
         ul.pa_UnitListView_list li {
           background-color: ${colours.functional.backgroundPrimary};
           color: ${colours.functional.brandColour};
 
-          &:nth-child(n + 8) {
-            display: ${({ showAll }) => (showAll ? 'block' : 'none')};
-          }
         }
 
         .pa_UnitListView_unit-time {
@@ -83,14 +82,6 @@ export const Container = styled.div<{
 
     .pa_ErrorMessage_ctr {
       background: #ededed;
-    }
-  }
-  .buttonContainer {
-    text-align: center;
-    height: 0;
-
-    button {
-      background-color: ${colours.functional.backgroundPrimary};
     }
   }
 `;
