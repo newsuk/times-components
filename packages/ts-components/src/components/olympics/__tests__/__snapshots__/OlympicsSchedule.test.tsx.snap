@@ -22,7 +22,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
 }
 
 .c0 .pa-schedule .pa_UnitListView_ctr {
-  max-height: 400px;
+  height: 400px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
@@ -116,7 +116,7 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 }
 
 .c0 .pa-schedule .pa_UnitListView_ctr {
-  max-height: 400px;
+  height: 400px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
