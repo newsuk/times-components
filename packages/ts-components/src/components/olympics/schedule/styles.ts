@@ -5,6 +5,7 @@ export const Container = styled.div<{
   sectionColour: string;
   inArticle: boolean;
 }>`
+  border-top: 2px solid ${({ sectionColour }) => sectionColour};
   position: relative;
   margin: 0 auto 20px auto;
 

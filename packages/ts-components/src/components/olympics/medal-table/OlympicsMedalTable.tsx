@@ -1,6 +1,7 @@
 import React, { FC, useEffect, useState } from 'react';
 import { colours } from '@times-components/styleguide';
 import { Container, Button } from './styles';
+import { Heading, Span } from '../shared-styles';
 import { OlympicsKeys } from '../types';
 import { injectScript } from '../../../helpers/widgets/inject-script';
 
@@ -29,6 +30,7 @@ export const OlympicsMedalTable: FC<{
       showAll={showAll}
       inArticle={inArticle}
     >
+      <Heading><Span sectionColour={sectionColor}>Olympics Tokyo 2020 - Medal Table</Span></Heading>
       <div
         className="pa-medaltable"
         data-auth-token={authToken}

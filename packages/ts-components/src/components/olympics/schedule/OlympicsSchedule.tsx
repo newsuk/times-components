@@ -1,5 +1,6 @@
 import React, { FC, useEffect } from 'react';
 import { Container } from './styles';
+import { Heading, Span } from '../shared-styles';
 import { colours } from '@times-components/styleguide';
 
 import { OlympicsKeys } from '../types';
@@ -54,11 +55,13 @@ export const OlympicsSchedule: FC<{
 
   return (
     <Container sectionColour={sectionColor} inArticle={inArticle}>
+      <Heading><Span sectionColour={sectionColor}>Olympics Tokyo 2020 - Event Schedule</Span></Heading>
       <div
         className="pa-schedule"
         data-auth-token={authToken}
         data-games-code={gamesCode}
-      />
+      >
+        </div>
     </Container>
   );
 };

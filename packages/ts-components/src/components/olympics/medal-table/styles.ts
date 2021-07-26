@@ -7,6 +7,7 @@ export const Container = styled.div<{
   showAll: boolean;
   inArticle: boolean;
 }>`
+  border-top: 2px solid ${({ sectionColour }) => sectionColour};
   position: relative;
   margin: 0 auto 20px auto;
 
