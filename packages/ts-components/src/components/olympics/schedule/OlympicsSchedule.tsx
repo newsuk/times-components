@@ -1,10 +1,10 @@
-import React, { FC, useState } from 'react';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import React, { FC, useEffect, useState } from 'react';
 import { Container } from './styles';
 import { colours } from '@times-components/styleguide';
 
 import { OlympicsKeys } from '../types';
 import { Button } from '../medal-table/styles';
+import { injectScript } from '../../../helpers/widgets/inject-script';
 
 export const OlympicsSchedule: FC<{
   keys: OlympicsKeys;
@@ -12,30 +12,19 @@ export const OlympicsSchedule: FC<{
   wrapHelmetProvider?: boolean;
 }> = ({
   keys: { endpoint, authToken, gamesCode },
-  sectionColor = colours.section.sport,
-  wrapHelmetProvider = false
+  sectionColor = colours.section.sport
 }) => {
   const [showAll, setShowAll] = useState(false);
   const handleShowAll = () => {
     setShowAll(!showAll);
   };
-  const HelmetProviderWrapper: FC<{ wrap: boolean }> = ({ wrap, children }) =>
-    wrap ? (
-      <HelmetProvider context={{}}>{children}</HelmetProvider>
-    ) : (
-      <>{children}</>
-    );
+
+  useEffect(() => {
+    injectScript(`${endpoint}/static/schedule.js`);
+  }, []);
+
   return (
     <Container sectionColour={sectionColor} showAll={showAll}>
-      <HelmetProviderWrapper wrap={wrapHelmetProvider}>
-        <Helmet>
-          <script
-            src={`${endpoint}/static/schedule.js`}
-            charSet="UTF-8"
-            defer
-          />
-        </Helmet>
-      </HelmetProviderWrapper>
       <div
         className="pa-schedule"
         data-auth-token={authToken}

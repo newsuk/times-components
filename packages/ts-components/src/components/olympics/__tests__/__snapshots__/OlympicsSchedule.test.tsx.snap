@@ -106,13 +106,6 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 <div
     class="c0"
   >
-    <helmet>
-      <script
-        charset="UTF-8"
-        defer=""
-        src="https://endpoint/static/schedule.js"
-      />
-    </helmet>
     <div
       class="pa-schedule"
       data-auth-token="token"
@@ -237,13 +230,6 @@ exports[`<OlympicsSchedule> renders 1`] = `
 <div
     class="c0"
   >
-    <helmet>
-      <script
-        charset="UTF-8"
-        defer=""
-        src="https://endpoint/static/schedule.js"
-      />
-    </helmet>
     <div
       class="pa-schedule"
       data-auth-token="token"
@@ -368,17 +354,6 @@ exports[`<OlympicsSchedule> renders with wrapHelmetProvider 1`] = `
 <div
     class="c0"
   >
-    <helmetprovider
-      context="[object Object]"
-    >
-      <helmet>
-        <script
-          charset="UTF-8"
-          defer=""
-          src="https://endpoint/static/schedule.js"
-        />
-      </helmet>
-    </helmetprovider>
     <div
       class="pa-schedule"
       data-auth-token="token"
