@@ -8,16 +8,11 @@ jest.mock('../../../helpers/fetch/FetchProvider', () => ({
   useFetch: jest.fn()
 }));
 
-
 const requiredProps = {
   sectionColour: '#636C17'
 };
 
-const renderInfocard = () =>
-  render(
-    <InfoCard {...requiredProps} />
-  );
-
+const renderInfocard = () => render(<InfoCard {...requiredProps} />);
 
 describe('<InfoCard>', () => {
   const realIntl = Intl;
@@ -111,17 +106,11 @@ describe('<InfoCard>', () => {
     });
 
     it('renders', () => {
-      const { baseElement } = render(
-        <InfoCard {...requiredProps} />
-      );
+      const { baseElement } = render(<InfoCard {...requiredProps} />);
       expect(baseElement).toMatchSnapshot();
     });
     it('renders no image', () => {
-      const { baseElement } = render(
-        <InfoCard
-          sectionColour="#636C17"
-        />
-      );
+      const { baseElement } = render(<InfoCard sectionColour="#636C17" />);
       expect(baseElement).toMatchSnapshot();
     });
   });
