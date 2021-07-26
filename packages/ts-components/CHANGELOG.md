@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.14](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.13...@times-components/ts-components@1.11.14) (2021-07-26)
+
+
+### Bug Fixes
+
+* **te-000:** update olympic schedule scroll ([#2749](https://github.com/newsuk/times-components/issues/2749)) ([d89533b](https://github.com/newsuk/times-components/commit/d89533b7e6dda119b6318f380c33b90c796b0964))
+
+
+
+
+
 ## [1.11.13](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.12...@times-components/ts-components@1.11.13) (2021-07-26)
 
 **Note:** Version bump only for package @times-components/ts-components
