@@ -1,5 +1,8 @@
 import React, { FC, useEffect } from 'react';
+<<<<<<< HEAD
 
+=======
+>>>>>>> Remove show all buttons
 import { Container } from './styles';
 import { colours } from '@times-components/styleguide';
 
@@ -15,6 +18,10 @@ export const OlympicsSchedule: FC<{
   sectionColor = colours.section.sport,
   inArticle = true
 }) => {
+<<<<<<< HEAD
+=======
+
+>>>>>>> Remove show all buttons
   useEffect(() => {
     injectScript(`${endpoint}/static/schedule.js`);
   }, []);
@@ -37,7 +44,11 @@ export const OlympicsSchedule: FC<{
   }, []);
 
   return (
+<<<<<<< HEAD
     <Container sectionColour={sectionColor} inArticle={inArticle}>
+=======
+    <Container sectionColour={sectionColor}>
+>>>>>>> Remove show all buttons
       <div
         className="pa-schedule"
         data-auth-token={authToken}
