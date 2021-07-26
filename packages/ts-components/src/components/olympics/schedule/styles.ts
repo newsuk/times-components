@@ -65,8 +65,6 @@ export const Container = styled.div<{
 
     .pa_OdfFooter_ctr {
       font-family: ${fonts.supporting};
-      top: 60px;
-      position: relative;
       font-size: 12px;
     }
 
@@ -76,7 +74,6 @@ export const Container = styled.div<{
     }
 
     .pa_Schedule_ctr {
-      padding-bottom: 60px;
       background: ${colours.functional.backgroundSecondary};
     }
 
