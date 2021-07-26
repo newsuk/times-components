@@ -89,15 +89,19 @@ export const CarouselButton = styled.button<{ disabled: boolean }>`
   align-items: center;
   width: 32px;
   height: 32px;
+  padding-left: 1px;
   background-color: transparent;
-  border: solid 1px ${({ disabled }) => (disabled ? colours.functional.keyline : colours.functional.primary)};
+  border: solid 1px
+    ${({ disabled }) =>
+      disabled ? colours.functional.keyline : colours.functional.primary};
   border-radius: 50%;
   cursor: pointer;
   pointer-events: ${({ disabled }) => (disabled ? 'none' : 'auto')};
 
   svg {
     path {
-      fill: ${({ disabled }) => (disabled ? colours.functional.keyline : colours.functional.primary)};
+      fill: ${({ disabled }) =>
+        disabled ? colours.functional.keyline : colours.functional.primary};
       height: 10px;
       width: 5px;
     }
@@ -105,10 +109,13 @@ export const CarouselButton = styled.button<{ disabled: boolean }>`
 
   &.nextBtn {
     transform: scaleX(-1);
+    padding-left: 2px;
   }
 
   &:hover {
-    border: solid 1px ${({ disabled }) => (disabled ? colours.functional.keyline : colours.functional.action)};
+    border: solid 1px
+      ${({ disabled }) =>
+        disabled ? colours.functional.keyline : colours.functional.action};
   }
 `;
 
@@ -120,7 +127,8 @@ export const CarouselIndicatorContainer = styled.div`
 `;
 
 export const CarouselIndicator = styled.div<{ active?: boolean }>`
-  background-color: ${({ active }) => (active ? colours.functional.action : colours.functional.keyline)};
+  background-color: ${({ active }) =>
+    active ? colours.functional.action : colours.functional.keyline};
   height: 5px;
   width: 5px;
   border-radius: 50%;
