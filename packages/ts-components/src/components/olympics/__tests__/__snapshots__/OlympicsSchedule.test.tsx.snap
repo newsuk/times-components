@@ -1,5 +1,4 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
-
 exports[`<OlympicsSchedule> renders 1`] = `
 <DocumentFragment>
   .c0 {
@@ -25,106 +24,6 @@ exports[`<OlympicsSchedule> renders 1`] = `
   height: 400px;
 }
 
-<<<<<<< HEAD
-=======
-.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
-  background-color: #F9F9F9;
-  color: #1D1D1B;
-}
-
-.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li:nth-child(n + 8) {
-  display: block;
-}
-
-.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
-  color: sectionColor;
-  line-height: 30px;
-}
-
-.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
-  font-family: GillSansMTStd-Medium;
-  font-size: 14px;
-}
-
-.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_discipline {
-  font-family: TimesModern-Bold;
-  text-transform: capitalize;
-  font-weight: 400;
-}
-
-.c0 .pa-schedule .pa_OdfFooter_ctr {
-  font-family: GillSansMTStd-Medium;
-  top: 60px;
-  position: relative;
-  font-size: 12px;
-}
-
-.c0 .pa-schedule .pa_UnitListView_message {
-  min-height: 70px;
-  background-color: #F9F9F9;
-}
-
-.c0 .pa-schedule .pa_Schedule_ctr {
-  padding-bottom: 60px;
-  background: #EDEDED;
-}
-
-.c0 .pa-schedule .pa_ErrorMessage_ctr {
-  background: #ededed;
-}
-
-.c0 .buttonContainer {
-  text-align: center;
-  height: 0;
-}
-
-.c0 .buttonContainer button {
-  background-color: #F9F9F9;
-}
-
-.c1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid #DBDBDB;
-  top: -80px;
-  position: relative;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
-}
-
-<div
-    class="c0"
-  >
-    <div
-      class="pa-schedule"
-      data-auth-token="token"
-      data-games-code="OG1896"
-    />
-    <div
-      class="buttonContainer"
-    >
-      <button
-        class="c1"
-      >
-        Collapse
-      </button>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
 exports[`<OlympicsSchedule> renders 1`] = `
 <DocumentFragment>
   .c0 {
@@ -147,7 +46,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
 }
 
 .c0 .pa-schedule .pa_UnitListView_ctr {
-  height: 400px;
+  max-height: 400px;
 }
 
 >>>>>>> Fix linting and tests
@@ -245,7 +144,7 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 }
 
 .c0 .pa-schedule .pa_UnitListView_ctr {
-  height: 400px;
+  max-height: 400px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
@@ -256,10 +155,7 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
   background-color: #F9F9F9;
   color: #1D1D1B;
-<<<<<<< HEAD
   border-bottom: 1px solid #DBDBDB;
-=======
->>>>>>> Fix linting and tests
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
@@ -296,21 +192,6 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
   background: #ededed;
 }
 
-<<<<<<< HEAD
-=======
-@media (min-width:768px) {
-  .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
-}
-
->>>>>>> Fix linting and tests
 <div
     class="c0"
   >

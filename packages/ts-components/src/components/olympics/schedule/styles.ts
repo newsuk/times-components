@@ -32,7 +32,7 @@ export const Container = styled.div<{
     }
 
     .pa_UnitListView_ctr {
-      height: 400px;
+      max-height: 400px;
     }
 
     .pa_UnitListView_ctr {
