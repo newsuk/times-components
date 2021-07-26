@@ -32,7 +32,7 @@ export const Container = styled.div<{
     }
 
     .pa_UnitListView_ctr {
-      max-height: 400px;
+      height: 400px;
     }
 
     .pa_LoadingOverlayContainer_ctr {
