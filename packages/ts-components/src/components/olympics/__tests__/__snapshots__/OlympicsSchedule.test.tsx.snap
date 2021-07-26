@@ -33,6 +33,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
   background-color: #F9F9F9;
   color: #1D1D1B;
+  border-bottom: 1px solid #DBDBDB;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
@@ -93,7 +94,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
 </DocumentFragment>
 `;
 
-exports[`<OlympicsSchedule> renders with wrapHelmetProvider 1`] = `
+exports[`<OlympicsSchedule> renders outside of article 1`] = `
 <DocumentFragment>
   .c0 {
   position: relative;
@@ -126,6 +127,7 @@ exports[`<OlympicsSchedule> renders with wrapHelmetProvider 1`] = `
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
   background-color: #F9F9F9;
   color: #1D1D1B;
+  border-bottom: 1px solid #DBDBDB;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
@@ -160,18 +162,6 @@ exports[`<OlympicsSchedule> renders with wrapHelmetProvider 1`] = `
 
 .c0 .pa-schedule .pa_ErrorMessage_ctr {
   background: #ededed;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
 }
 
 <div

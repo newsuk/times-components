@@ -3,16 +3,17 @@ import { breakpoints, colours, fonts } from '@times-components/styleguide';
 
 export const Container = styled.div<{
   sectionColour: string;
+  inArticle: boolean;
 }>`
   position: relative;
   margin: 0 auto 20px auto;
 
   @media (min-width: ${breakpoints.medium}px) {
-    width: 80.8%;
+    width: ${({ inArticle }) => (inArticle ? `80.8%` : undefined)};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
+    width: ${({ inArticle }) => (inArticle ? `56.2%` : undefined)};
   }
 
   .pa-schedule {
@@ -42,6 +43,7 @@ export const Container = styled.div<{
         ul.pa_UnitListView_list li {
           background-color: ${colours.functional.backgroundPrimary};
           color: ${colours.functional.brandColour};
+          border-bottom: 1px solid ${colours.functional.keyline};
         }
 
         .pa_UnitListView_unit-time {

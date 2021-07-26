@@ -9,10 +9,11 @@ import { injectScript } from '../../../helpers/widgets/inject-script';
 export const OlympicsSchedule: FC<{
   keys: OlympicsKeys;
   sectionColor?: string;
-  wrapHelmetProvider?: boolean;
+  inArticle?: boolean;
 }> = ({
   keys: { endpoint, authToken, gamesCode },
-  sectionColor = colours.section.sport
+  sectionColor = colours.section.sport,
+  inArticle = true
 }) => {
   useEffect(() => {
     injectScript(`${endpoint}/static/schedule.js`);
@@ -36,7 +37,7 @@ export const OlympicsSchedule: FC<{
   }, []);
 
   return (
-    <Container sectionColour={sectionColor}>
+    <Container sectionColour={sectionColor} inArticle={inArticle}>
       <div
         className="pa-schedule"
         data-auth-token={authToken}

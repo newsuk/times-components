@@ -23,9 +23,9 @@ describe('<OlympicsSchedule>', () => {
     const { asFragment } = render(<OlympicsSchedule keys={keys} />);
     expect(asFragment()).toMatchSnapshot();
   });
-  it('renders with wrapHelmetProvider', () => {
+  it('renders outside of article', () => {
     const { asFragment } = render(
-      <OlympicsSchedule keys={keys} wrapHelmetProvider />
+      <OlympicsSchedule keys={keys} inArticle={false} />
     );
     expect(asFragment()).toMatchSnapshot();
   });
