@@ -14,7 +14,6 @@ export const OlympicsSchedule: FC<{
   keys: { endpoint, authToken, gamesCode },
   sectionColor = colours.section.sport
 }) => {
-
   useEffect(() => {
     injectScript(`${endpoint}/static/schedule.js`);
   }, []);
