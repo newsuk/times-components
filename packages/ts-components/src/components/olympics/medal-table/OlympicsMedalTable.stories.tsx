@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import { OlympicsMedalTable } from './OlympicsMedalTable';
 import { ArticleHarness } from '../../../fixtures/article-harness/ArticleHarness';
-import { text, select } from '@storybook/addon-knobs';
+import { text, select, boolean } from '@storybook/addon-knobs';
 
 storiesOf('Typescript Component/Olympics', module)
   .addDecorator((storyFn: () => React.ReactNode) => (
@@ -22,11 +22,13 @@ storiesOf('Typescript Component/Olympics', module)
     const authToken = text('Auth Token', '6i3DuEwbVhr2Fht6');
     const gamesCode = text('Games Code', 'OG2020-TR2');
     const highlighted = text('Highlighted Country', 'GBR');
+    const inArticle = boolean('Is In Article', true);
 
     return (
       <OlympicsMedalTable
         keys={{ endpoint, authToken, gamesCode }}
         highlighted={highlighted}
+        inArticle={inArticle}
       />
     );
   });

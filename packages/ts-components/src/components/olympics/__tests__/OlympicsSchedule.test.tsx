@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import 'regenerator-runtime';
 import 'jest-styled-components';
@@ -23,19 +23,10 @@ describe('<OlympicsSchedule>', () => {
     const { asFragment } = render(<OlympicsSchedule keys={keys} />);
     expect(asFragment()).toMatchSnapshot();
   });
-  it('renders with wrapHelmetProvider', () => {
+  it('renders outside of article', () => {
     const { asFragment } = render(
-      <OlympicsSchedule keys={keys} wrapHelmetProvider />
+      <OlympicsSchedule keys={keys} inArticle={false} />
     );
-    expect(asFragment()).toMatchSnapshot();
-  });
-  it('click show all', async () => {
-    const { asFragment, getByText, findByText } = render(
-      <OlympicsSchedule keys={keys} sectionColor="sectionColor" />
-    );
-    fireEvent.click(getByText('Show All'));
-    await findByText('Collapse');
-
     expect(asFragment()).toMatchSnapshot();
   });
 });

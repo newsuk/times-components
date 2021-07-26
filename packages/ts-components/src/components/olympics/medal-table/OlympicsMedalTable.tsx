@@ -8,11 +8,12 @@ export const OlympicsMedalTable: FC<{
   highlighted?: string;
   keys: OlympicsKeys;
   sectionColor?: string;
-  wrapHelmetProvider?: boolean;
+  inArticle?: boolean;
 }> = ({
   keys: { endpoint, authToken, gamesCode },
   highlighted = 'GBR',
-  sectionColor = colours.section.sport
+  sectionColor = colours.section.sport,
+  inArticle = true
 }) => {
   const [showAll, setShowAll] = useState(false);
   const handleShowAll = () => {
@@ -23,7 +24,11 @@ export const OlympicsMedalTable: FC<{
   }, []);
 
   return (
-    <Container sectionColour={sectionColor} showAll={showAll}>
+    <Container
+      sectionColour={sectionColor}
+      showAll={showAll}
+      inArticle={inArticle}
+    >
       <div
         className="pa-medaltable"
         data-auth-token={authToken}

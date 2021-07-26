@@ -3,17 +3,17 @@ import { breakpoints, colours, fonts } from '@times-components/styleguide';
 
 export const Container = styled.div<{
   sectionColour: string;
-  showAll: boolean;
+  inArticle: boolean;
 }>`
   position: relative;
   margin: 0 auto 20px auto;
 
   @media (min-width: ${breakpoints.medium}px) {
-    width: 80.8%;
+    width: ${({ inArticle }) => (inArticle ? `80.8%` : undefined)};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
+    width: ${({ inArticle }) => (inArticle ? `56.2%` : undefined)};
   }
 
   .pa-schedule {
@@ -31,6 +31,10 @@ export const Container = styled.div<{
       font-size: 16px;
     }
 
+    .pa_UnitListView_ctr {
+      height: 400px;
+    }
+
     .pa_LoadingOverlayContainer_ctr {
       .pa_UnitListView_ctr {
         font-family: ${fonts.supporting};
@@ -39,10 +43,7 @@ export const Container = styled.div<{
         ul.pa_UnitListView_list li {
           background-color: ${colours.functional.backgroundPrimary};
           color: ${colours.functional.brandColour};
-
-          &:nth-child(n + 8) {
-            display: ${({ showAll }) => (showAll ? 'block' : 'none')};
-          }
+          border-bottom: 1px solid ${colours.functional.keyline};
         }
 
         .pa_UnitListView_unit-time {
@@ -65,8 +66,6 @@ export const Container = styled.div<{
 
     .pa_OdfFooter_ctr {
       font-family: ${fonts.supporting};
-      top: 60px;
-      position: relative;
       font-size: 12px;
     }
 
@@ -76,20 +75,11 @@ export const Container = styled.div<{
     }
 
     .pa_Schedule_ctr {
-      padding-bottom: 60px;
       background: ${colours.functional.backgroundSecondary};
     }
 
     .pa_ErrorMessage_ctr {
       background: #ededed;
-    }
-  }
-  .buttonContainer {
-    text-align: center;
-    height: 0;
-
-    button {
-      background-color: ${colours.functional.backgroundPrimary};
     }
   }
 `;

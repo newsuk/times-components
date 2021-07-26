@@ -24,9 +24,9 @@ describe('<OlympicsMedalTable>', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('renders with wrapHelmetProvider', () => {
+  it('renders outside of article', () => {
     const { asFragment } = render(
-      <OlympicsMedalTable keys={keys} wrapHelmetProvider />
+      <OlympicsMedalTable keys={keys} inArticle={false} />
     );
 
     expect(asFragment()).toMatchSnapshot();

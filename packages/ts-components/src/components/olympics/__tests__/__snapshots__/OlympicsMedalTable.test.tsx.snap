@@ -91,6 +91,11 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
   border: 1px solid #DBDBDB;
   top: -80px;
   position: relative;
+  cursor: pointer;
+}
+
+.c1:hover {
+  background-color: #e4e4e4;
 }
 
 @media (min-width:768px) {
@@ -219,6 +224,11 @@ exports[`<OlympicsMedalTable> renders 1`] = `
   border: 1px solid #DBDBDB;
   top: -80px;
   position: relative;
+  cursor: pointer;
+}
+
+.c1:hover {
+  background-color: #e4e4e4;
 }
 
 @media (min-width:768px) {
@@ -256,7 +266,7 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 </DocumentFragment>
 `;
 
-exports[`<OlympicsMedalTable> renders with wrapHelmetProvider 1`] = `
+exports[`<OlympicsMedalTable> renders outside of article 1`] = `
 <DocumentFragment>
   .c0 {
   position: relative;
@@ -347,18 +357,11 @@ exports[`<OlympicsMedalTable> renders with wrapHelmetProvider 1`] = `
   border: 1px solid #DBDBDB;
   top: -80px;
   position: relative;
+  cursor: pointer;
 }
 
-@media (min-width:768px) {
-  .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
+.c1:hover {
+  background-color: #e4e4e4;
 }
 
 <div
