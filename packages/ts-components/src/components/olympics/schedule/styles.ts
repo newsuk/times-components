@@ -30,7 +30,7 @@ export const Container = styled.div<{
       background: ${colours.functional.backgroundSecondary};
       font-size: 16px;
     }
-    
+
     .pa_UnitListView_ctr {
       height: 400px;
     }
