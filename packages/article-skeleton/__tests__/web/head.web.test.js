@@ -550,4 +550,15 @@ describe("Head", () => {
       testRenderer.root.findAllByProps({ name: "twitter:image" })
     ).toHaveLength(1);
   });
+
+  it("outputs video schema for a video article", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={videoArticle}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
 });
