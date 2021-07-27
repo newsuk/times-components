@@ -48,6 +48,10 @@ export const Container = styled.div<{
           border-bottom: 1px solid ${colours.functional.keyline};
         }
 
+        .pa_UnitListView_unit {
+          align-items: center;
+        }
+
         .pa_UnitListView_unit-time {
           color: ${({ sectionColour }) => sectionColour};
           line-height: 30px;
@@ -64,7 +68,7 @@ export const Container = styled.div<{
           font-family: ${fonts.headline};
           text-transform: capitalize;
           font-weight: 400;
-          padding-bottom: 4px;
+          margin-top: 4px;
         }
 
         .pa_UnitListView_medal {

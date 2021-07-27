@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from 'react';
 
 import { Container } from './styles';
-import { HeadingContainer, Heading, Button } from '../shared-styles';
+import { HeadingContainer, Label, Button, Heading } from '../shared-styles';
 import { colours } from '@times-components/styleguide';
 
 import { OlympicsKeys } from '../types';
@@ -49,8 +49,9 @@ export const OlympicsSchedule: FC<{
       showAll={showAll}
     >
       <HeadingContainer>
-        <Heading sectionColour={sectionColor}>
-          Event Schedule - Olympics Tokyo 2020
+        <Label sectionColour={sectionColor}>Olympics Tokyo 2020</Label>
+        <Heading>
+          Event Schedule
         </Heading>
       </HeadingContainer>
       <div
