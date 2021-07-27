@@ -102,3 +102,5 @@ exports[`<InfoCard> <InfoCard> should render the initial loading state correctly
   </div>
 </DocumentFragment>
 `;
+
+exports[`InfoCard should render the component 1`] = `[Function]`;

@@ -1,40 +1,139 @@
 import React from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import { render, cleanup, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { InfoCard } from '../InfoCard';
 import { useFetch } from '../../../helpers/fetch/FetchProvider';
+import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
+import mockDate from 'mockdate';
+
+jest.mock('@times-components/image', () => ({
+  Placeholder: () => <div>Placeholder</div>
+}));
 
 jest.mock('../../../helpers/fetch/FetchProvider', () => ({
   useFetch: jest.fn()
 }));
 
-const requiredProps = {
-  sectionColour: '#636C17'
+const deckApiPayloadWrapper = () => ({
+  data: testData
+});
+
+const testData = {
+  deck_id: 43606,
+  deck_name: 'Test Info card carousel standard - Copy and Subtitles',
+  deck_type: 'Info Card Carousel',
+  version: 1,
+  updated_at: {
+    date: '2021-07-22 08:28:05.000000',
+    timezone_type: 3,
+    timezone: 'UTC'
+  },
+  fields: {
+    label: 'Best places to stay',
+    headline: 'The Sunday Times best British hotels',
+    size: '4043',
+    subtitles: 'True'
+  },
+  body: {
+    data: [
+      {
+        type: 'card',
+        data: {
+          image:
+            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180',
+          subtitle: 'Birch',
+          copy:
+            'Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently'
+        }
+      },
+
+      {
+        type: 'card',
+        data: {
+          image: '',
+          subtitle: 'Mitre',
+          copy:
+            'Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history'
+        }
+      }
+    ]
+  },
+  html:
+    '<!DOCTYPE html> <html> <head> <title>The Times - Image Gallery</title></head> <body> </body> </html>'
 };
 
-const renderInfocard = () => render(<InfoCard {...requiredProps} />);
+const renderInfoCard = () => render(<InfoCard sectionColour={'#636C17'} />);
 
-describe('<InfoCard>', () => {
-  const realIntl = Intl;
-
+describe('InfoCard', () => {
   beforeEach(() => {
-    global.Intl = {
-      DateTimeFormat: () => ({
-        // @ts-ignore
-        resolvedOptions: () => ({ timeZone: 'Europe/London' })
-      })
-    };
+    mockDate.set(1620000000000);
   });
 
   afterEach(() => {
-    global.Intl = realIntl;
+    mockDate.reset();
+    jest.clearAllMocks();
+    cleanup();
+  });
+  it('should render the component', () => {
+    (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
+    const { asFragment } = renderInfoCard();
+    expect(asFragment).toMatchSnapshot();
   });
 
-  describe('<InfoCard>', () => {
-    it('click previous button', async () => {
-      const analyticsStream = jest.fn();
+  it('should render the first slide on load', () => {
+    const { queryAllByText, getAllByRole } = renderInfoCard();
+    expect(queryAllByText('The Sunday Times best British hotels')).toBeTruthy();
+    expect(
+      queryAllByText(
+        'Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently'
+      )
+    ).toBeTruthy();
+    expect(getAllByRole('img')[0]).toHaveAttribute(
+      'src',
+      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180'
+    );
+  });
 
-      const { getAllByTestId } = renderInfocard();
+  describe('tracking', () => {
+    (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
+    let oldIntersectionObserver: typeof IntersectionObserver;
+
+    beforeEach(() => {
+      oldIntersectionObserver = window.IntersectionObserver;
+
+      // @ts-ignore
+      window.IntersectionObserver = FakeIntersectionObserver;
+    });
+
+    afterEach(() => {
+      window.IntersectionObserver = oldIntersectionObserver;
+
+      jest.resetAllMocks();
+    });
+
+    // it('fires scroll event when viewed', () => {
+    //   (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
+    //   const analyticsStream = jest.fn();
+    //   renderInfoCard();
+    //   expect(analyticsStream).toHaveBeenCalledWith({
+    //     action: 'Scrolled',
+    //     component: 'ArticleSkeleton',
+    //     object: 'InfoCard',
+    //     attrs: {
+    //       article_name: 'Headline',
+    //       component_name: 'Gallery Headline',
+    //       component_type: 'in-article component : gallery : interactive',
+    //       eventTime: '2021-05-03T00:00:00.000Z',
+    //       event_navigation_action: 'navigation',
+    //       event_navigation_browsing_method: 'scroll',
+    //       event_navigation_name: 'in-article component displayed : gallery',
+    //       section_details: 'Section'
+    //     }
+    //   });
+    // });
+
+    it('click previous button', async () => {
+      const { getAllByTestId } = renderInfoCard();
 
       const previousButton = getAllByTestId('Previous button')[0];
       const nextButton = getAllByTestId('Next Button')[0];
@@ -44,32 +143,14 @@ describe('<InfoCard>', () => {
       expect(previousButton).not.toHaveAttribute('disabled');
       expect(nextButton).toHaveAttribute('disabled');
 
-      analyticsStream.mockClear();
-
-      fireEvent.click(previousButton);
-
-      expect(analyticsStream).toHaveBeenCalledTimes(1);
-      expect(analyticsStream).toHaveBeenCalledWith({
-        attrs: {
-          article_name: 'Headline',
-          component_name: 'Headline 1',
-          component_type: 'in-article component : gallery : interactive',
-          eventTime: '2021-05-03T00:00:00.000Z',
-          event_navigation_action: 'navigation',
-          event_navigation_name: 'button : left',
-          section_details: 'Section'
-        },
-        component: 'ArticleSkeleton',
-        object: 'GalleryCarousel'
-      });
-
-      expect(previousButton).toHaveAttribute('disabled');
-      expect(nextButton).not.toHaveAttribute('disabled');
+      // expect(previousButton).toHaveAttribute('disabled');
+      // expect(nextButton).not.toHaveAttribute('disabled');
     });
     it('click next button', async () => {
+      (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
       const analyticsStream = jest.fn();
 
-      const { getAllByTestId } = renderInfocard();
+      const { getAllByTestId } = renderInfoCard();
 
       const previousButton = getAllByTestId('Previous button')[0];
       const nextButton = getAllByTestId('Next Button')[0];
@@ -83,7 +164,7 @@ describe('<InfoCard>', () => {
       expect(analyticsStream).toHaveBeenCalledWith({
         attrs: {
           article_name: 'Headline',
-          component_name: 'Headline 1',
+          component_name: 'Gallery Headline',
           component_type: 'in-article component : gallery : interactive',
           eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
@@ -97,21 +178,21 @@ describe('<InfoCard>', () => {
       expect(nextButton).toHaveAttribute('disabled');
     });
 
-    it('should render the initial loading state correctly', () => {
-      (useFetch as jest.Mock).mockReturnValue({ loading: true });
+    it('page indicator button', async () => {
+      (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
+      const analyticsStream = jest.fn();
 
-      const { asFragment } = render(<InfoCard {...requiredProps} />);
+      const { getAllByTestId } = renderInfoCard();
+      const previousButton = getAllByTestId('Previous button')[0];
+      const nextButton = getAllByTestId('Next Button')[0];
+      expect(previousButton).toHaveAttribute('disabled');
+      expect(nextButton).not.toHaveAttribute('disabled');
 
-      expect(asFragment()).toMatchSnapshot();
-    });
+      fireEvent.click(getAllByTestId('Page Indicator')[1]);
 
-    it('renders', () => {
-      const { baseElement } = render(<InfoCard {...requiredProps} />);
-      expect(baseElement).toMatchSnapshot();
-    });
-    it('renders no image', () => {
-      const { baseElement } = render(<InfoCard sectionColour="#636C17" />);
-      expect(baseElement).toMatchSnapshot();
+      expect(analyticsStream).toHaveBeenCalledTimes(0);
+      expect(previousButton).not.toHaveAttribute('disabled');
+      expect(nextButton).toHaveAttribute('disabled');
     });
   });
 });

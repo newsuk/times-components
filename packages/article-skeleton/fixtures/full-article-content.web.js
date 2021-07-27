@@ -161,6 +161,16 @@ export default [
       {
         attributes: {
           element: {
+            attributes: { "deck-id": "43614" },
+            value: "in-article-info-card"
+          }
+        },
+        children: [],
+        name: "interactive"
+      },
+      {
+        attributes: {
+          element: {
             attributes: {
               season: "2020",
               competition: "8",

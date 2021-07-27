@@ -163,7 +163,7 @@ export const CarouselContainer = styled.div<{
   isStandard?: boolean;
 }>`
   background-color: ${colours.functional.backgroundPrimary};
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   margin: 0 auto 20px auto;
   border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
   width: ${({ isWide, isStandard }) =>
