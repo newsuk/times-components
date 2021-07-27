@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<OlympicsSchedule> renders 1`] = `
+exports[`<OlympicsSchedule> click show all 1`] = `
 <DocumentFragment>
   .c0 {
+  border-top: 2px solid sectionColor;
   position: relative;
   margin: 0 auto 20px auto;
 }
@@ -21,10 +22,6 @@ exports[`<OlympicsSchedule> renders 1`] = `
   font-size: 16px;
 }
 
-.c0 .pa-schedule .pa_UnitListView_ctr {
-  height: 400px;
-}
-
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
   font-family: GillSansMTStd-Medium;
   font-size: 16px;
@@ -33,28 +30,46 @@ exports[`<OlympicsSchedule> renders 1`] = `
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
   background-color: #F9F9F9;
   color: #1D1D1B;
+  padding: 10px 6px 8px 10px;
   border-bottom: 1px solid #DBDBDB;
 }
 
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li:nth-child(n + 8) {
+  display: block;
+}
+
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
-  color: #008347;
+  color: sectionColor;
   line-height: 30px;
+  position: absolute;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
   font-family: GillSansMTStd-Medium;
-  font-size: 14px;
+  font-size: 16px;
+  margin-right: 50px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_discipline {
   font-family: TimesModern-Bold;
   text-transform: capitalize;
   font-weight: 400;
+  padding-bottom: 4px;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
+  position: relative;
+  left: calc(100% - 65px);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .c0 .pa-schedule .pa_OdfFooter_ctr {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
+  top: 60px;
+  position: relative;
 }
 
 .c0 .pa-schedule .pa_UnitListView_message {
@@ -64,10 +79,59 @@ exports[`<OlympicsSchedule> renders 1`] = `
 
 .c0 .pa-schedule .pa_Schedule_ctr {
   background: #EDEDED;
+  padding-bottom: 60px;
 }
 
 .c0 .pa-schedule .pa_ErrorMessage_ctr {
   background: #ededed;
+}
+
+.c0 .buttonContainer {
+  text-align: center;
+  height: 0;
+}
+
+.c0 .buttonContainer button {
+  background-color: #F9F9F9;
+}
+
+.c0 .buttonContainer button:hover {
+  background-color: #EDEDED;
+}
+
+.c1 {
+  background: #F9F9F9;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0px;
+}
+
+.c2 {
+  font-size: 12px;
+  line-height: 14px;
+  color: sectionColor;
+  font-family: GillSansMTStd-Medium;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.c3 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c3:hover {
+  background-color: #e4e4e4;
 }
 
 @media (min-width:768px) {
@@ -82,21 +146,46 @@ exports[`<OlympicsSchedule> renders 1`] = `
   }
 }
 
+@media only screen and (min-width:321px) {
+  .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
+    left: calc(100% - 75px);
+  }
+}
+
 <div
     class="c0"
   >
+    <h2
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        Event Schedule - Olympics Tokyo 2020
+      </div>
+    </h2>
     <div
       class="pa-schedule"
       data-auth-token="token"
       data-games-code="OG1896"
     />
+    <div
+      class="buttonContainer"
+    >
+      <button
+        class="c3"
+      >
+        Collapse
+      </button>
+    </div>
   </div>
 </DocumentFragment>
 `;
 
-exports[`<OlympicsSchedule> renders outside of article 1`] = `
+exports[`<OlympicsSchedule> renders 1`] = `
 <DocumentFragment>
   .c0 {
+  border-top: 2px solid #008347;
   position: relative;
   margin: 0 auto 20px auto;
 }
@@ -115,8 +204,186 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
   font-size: 16px;
 }
 
-.c0 .pa-schedule .pa_UnitListView_ctr {
-  height: 400px;
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
+  font-family: GillSansMTStd-Medium;
+  font-size: 16px;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
+  background-color: #F9F9F9;
+  color: #1D1D1B;
+  padding: 10px 6px 8px 10px;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li:nth-child(n + 8) {
+  display: none;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
+  color: #008347;
+  line-height: 30px;
+  position: absolute;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
+  font-family: GillSansMTStd-Medium;
+  font-size: 16px;
+  margin-right: 50px;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_discipline {
+  font-family: TimesModern-Bold;
+  text-transform: capitalize;
+  font-weight: 400;
+  padding-bottom: 4px;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
+  position: relative;
+  left: calc(100% - 65px);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.c0 .pa-schedule .pa_OdfFooter_ctr {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  top: 60px;
+  position: relative;
+}
+
+.c0 .pa-schedule .pa_UnitListView_message {
+  min-height: 70px;
+  background-color: #F9F9F9;
+}
+
+.c0 .pa-schedule .pa_Schedule_ctr {
+  background: #EDEDED;
+  padding-bottom: 60px;
+}
+
+.c0 .pa-schedule .pa_ErrorMessage_ctr {
+  background: #ededed;
+}
+
+.c0 .buttonContainer {
+  text-align: center;
+  height: 0;
+}
+
+.c0 .buttonContainer button {
+  background-color: #F9F9F9;
+}
+
+.c0 .buttonContainer button:hover {
+  background-color: #EDEDED;
+}
+
+.c1 {
+  background: #F9F9F9;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0px;
+}
+
+.c2 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #008347;
+  font-family: GillSansMTStd-Medium;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.c3 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c3:hover {
+  background-color: #e4e4e4;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+@media only screen and (min-width:321px) {
+  .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
+    left: calc(100% - 75px);
+  }
+}
+
+<div
+    class="c0"
+  >
+    <h2
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        Event Schedule - Olympics Tokyo 2020
+      </div>
+    </h2>
+    <div
+      class="pa-schedule"
+      data-auth-token="token"
+      data-games-code="OG1896"
+    />
+    <div
+      class="buttonContainer"
+    >
+      <button
+        class="c3"
+      >
+        Show All
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<OlympicsSchedule> renders outside of article 1`] = `
+<DocumentFragment>
+  .c0 {
+  border-top: 2px solid #008347;
+  position: relative;
+  margin: 0 auto 20px auto;
+}
+
+.c0 .pa-schedule .pa_ScheduleHeader_header {
+  color: #1D1D1B;
+  font-family: GillSansMTStd-Medium;
+  font-size: 18px;
+  background: #EDEDED;
+}
+
+.c0 .pa-schedule .pa_ScheduleHeader_filterbar {
+  color: #1D1D1B;
+  font-family: GillSansMTStd-Medium;
+  background: #EDEDED;
+  font-size: 16px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr {
@@ -127,28 +394,46 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li {
   background-color: #F9F9F9;
   color: #1D1D1B;
+  padding: 10px 6px 8px 10px;
   border-bottom: 1px solid #DBDBDB;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr ul.pa_UnitListView_list li:nth-child(n + 8) {
+  display: none;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
   color: #008347;
   line-height: 30px;
+  position: absolute;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
   font-family: GillSansMTStd-Medium;
-  font-size: 14px;
+  font-size: 16px;
+  margin-right: 50px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_discipline {
   font-family: TimesModern-Bold;
   text-transform: capitalize;
   font-weight: 400;
+  padding-bottom: 4px;
+}
+
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
+  position: relative;
+  left: calc(100% - 65px);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .c0 .pa-schedule .pa_OdfFooter_ctr {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
+  top: 60px;
+  position: relative;
 }
 
 .c0 .pa-schedule .pa_UnitListView_message {
@@ -158,20 +443,93 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 
 .c0 .pa-schedule .pa_Schedule_ctr {
   background: #EDEDED;
+  padding-bottom: 60px;
 }
 
 .c0 .pa-schedule .pa_ErrorMessage_ctr {
   background: #ededed;
 }
 
+.c0 .buttonContainer {
+  text-align: center;
+  height: 0;
+}
+
+.c0 .buttonContainer button {
+  background-color: #F9F9F9;
+}
+
+.c0 .buttonContainer button:hover {
+  background-color: #EDEDED;
+}
+
+.c1 {
+  background: #F9F9F9;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0px;
+}
+
+.c2 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #008347;
+  font-family: GillSansMTStd-Medium;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.c3 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c3:hover {
+  background-color: #e4e4e4;
+}
+
+@media only screen and (min-width:321px) {
+  .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
+    left: calc(100% - 75px);
+  }
+}
+
 <div
     class="c0"
   >
+    <h2
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        Event Schedule - Olympics Tokyo 2020
+      </div>
+    </h2>
     <div
       class="pa-schedule"
       data-auth-token="token"
       data-games-code="OG1896"
     />
+    <div
+      class="buttonContainer"
+    >
+      <button
+        class="c3"
+      >
+        Show All
+      </button>
+    </div>
   </div>
 </DocumentFragment>
 `;

@@ -7,6 +7,7 @@ export const Container = styled.div<{
   showAll: boolean;
   inArticle: boolean;
 }>`
+  border-top: 2px solid ${({ sectionColour }) => sectionColour};
   position: relative;
   margin: 0 auto 20px auto;
 
@@ -92,22 +93,5 @@ export const Container = styled.div<{
   .buttonContainer {
     text-align: center;
     height: 0;
-  }
-`;
-
-export const Button = styled.button`
-  font-family: ${fonts.supporting};
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid ${colours.functional.keyline};
-
-  top: -80px;
-  position: relative;
-
-  cursor: pointer;
-
-  &:hover {
-    background-color: ${highlightColour};
   }
 `;
