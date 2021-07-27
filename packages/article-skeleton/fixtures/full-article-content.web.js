@@ -281,6 +281,26 @@ export default [
         name: "video"
       },
       {
+        attributes: {
+          element: {
+            attributes: {},
+            value: "olympics-medal-table"
+          }
+        },
+        children: [],
+        name: "interactive"
+      },
+      {
+        attributes: {
+          element: {
+            attributes: {},
+            value: "olympics-schedule"
+          }
+        },
+        children: [],
+        name: "interactive"
+      },
+      {
         attributes: {},
         children: [
           {

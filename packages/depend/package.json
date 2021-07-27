@@ -1,6 +1,6 @@
 {
   "name": "@times-components/depend",
-  "version": "2.1.26",
+  "version": "2.1.27",
   "description": "dependency analyzer and fixer",
   "main": "dist/depend",
   "scripts": {
@@ -68,7 +68,7 @@
     "glob": "7.1.2",
     "lodash.flatten": "4.4.0",
     "minimatch": "3.0.4",
-    "regenerator-runtime": "0.13.2",
+    "regenerator-runtime": "0.13.7",
     "semver": "5.5.0"
   },
   "publishConfig": {

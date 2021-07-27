@@ -23,7 +23,7 @@
     "deps:list": "lerna run cli -- -- --list -s majorityProgressive",
     "fetch-fonts": "node ./lib/fetch-fonts",
     "prestorybook": "yarn storybook:build-vendor",
-    "storybook": "start-storybook -p 9001 -c .storybook -s ./dist/public",
+    "storybook": "start-storybook -p 9001 -c .storybook -s ./dist/public,./.storybook/public",
     "storybook:build-vendor": "webpack --config ./.storybook/vendor.webpack.config.js",
     "storybook:build": "yarn storybook:build-vendor && build-storybook -c .storybook -s ./dist/public",
     "prestorybook:test-build": "yarn storybook:build-vendor",

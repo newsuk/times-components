@@ -27,7 +27,9 @@ import {
   OptaFootballFixtures,
   OptaFootballStandings,
   OptaFootballSummary,
-  OptaFootballMatchStats
+  OptaFootballMatchStats,
+  OlympicsMedalTable,
+  OlympicsSchedule
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -86,7 +88,8 @@ const renderers = ({
   paidContentClassName,
   template,
   analyticsStream,
-  isPreview
+  isPreview,
+  olympicsKeys
 }) => ({
   ...coreRenderers,
   ad(key) {
@@ -147,7 +150,6 @@ const renderers = ({
   },
   interactive(key, { url, element, display }) {
     const { attributes, value } = element;
-
     switch (value) {
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations
@@ -226,6 +228,30 @@ const renderers = ({
                   forceImageAspectRatio="3:2"
                 />
               </FetchProvider>
+            )}
+          </Context.Consumer>
+        );
+
+      case "olympics-medal-table":
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <OlympicsMedalTable
+                keys={olympicsKeys}
+                sectionColor={theme.sectionColour}
+              />
+            )}
+          </Context.Consumer>
+        );
+
+      case "olympics-schedule":
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <OlympicsSchedule
+                keys={olympicsKeys}
+                sectionColor={theme.sectionColour}
+              />
             )}
           </Context.Consumer>
         );
@@ -382,11 +408,18 @@ const ArticleBody = ({
   paidContentClassName,
   template,
   isPreview,
-  inArticlePuffFlag
+  inArticlePuffFlag,
+  olympicsKeys
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
-    renderers({ paidContentClassName, template, isPreview, inArticlePuffFlag })
+    renderers({
+      paidContentClassName,
+      template,
+      isPreview,
+      inArticlePuffFlag,
+      olympicsKeys
+    })
   );
 
 ArticleBody.propTypes = {

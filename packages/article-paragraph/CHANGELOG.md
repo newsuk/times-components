@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.187](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.4.186...@times-components/article-paragraph@1.4.187) (2021-07-26)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
+## [1.4.186](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.4.185...@times-components/article-paragraph@1.4.186) (2021-07-26)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
+## [1.4.185](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.4.184...@times-components/article-paragraph@1.4.185) (2021-07-26)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
+## [1.4.184](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.4.183...@times-components/article-paragraph@1.4.184) (2021-07-23)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
+## [1.4.183](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.4.182...@times-components/article-paragraph@1.4.183) (2021-07-22)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
+## [1.4.182](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.4.181...@times-components/article-paragraph@1.4.182) (2021-07-21)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
+## [1.4.181](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.4.180...@times-components/article-paragraph@1.4.181) (2021-07-20)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
+## [1.4.180](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.4.179...@times-components/article-paragraph@1.4.180) (2021-07-20)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
 ## [1.4.179](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.4.178...@times-components/article-paragraph@1.4.179) (2021-07-20)
 
 **Note:** Version bump only for package @times-components/article-paragraph

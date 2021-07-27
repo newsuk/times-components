@@ -1,20 +1,46 @@
-import React from 'react';
-import { Helmet } from 'react-helmet-async';
-export const OlympicsMedalTable = () => (
-  <>
-    <Helmet>
-      <script
-        async
-        src="https://olympics-embed.pamedia.io/static/medal-table.js"
-        charSet="UTF-8"
-        defer
+import React, { FC, useEffect, useState } from 'react';
+import { colours } from '@times-components/styleguide';
+import { Container, Button } from './styles';
+import { OlympicsKeys } from '../types';
+import { injectScript } from '../../../helpers/widgets/inject-script';
+
+export const OlympicsMedalTable: FC<{
+  highlighted?: string;
+  keys: OlympicsKeys;
+  sectionColor?: string;
+  inArticle?: boolean;
+}> = ({
+  keys: { endpoint, authToken, gamesCode },
+  highlighted = 'GBR',
+  sectionColor = colours.section.sport,
+  inArticle = true
+}) => {
+  const [showAll, setShowAll] = useState(false);
+  const handleShowAll = () => {
+    setShowAll(!showAll);
+  };
+  useEffect(() => {
+    injectScript(`${endpoint}/static/medal-table.js`);
+  }, []);
+
+  return (
+    <Container
+      sectionColour={sectionColor}
+      showAll={showAll}
+      inArticle={inArticle}
+    >
+      <div
+        className="pa-medaltable"
+        data-auth-token={authToken}
+        data-games-code={gamesCode}
+        data-org-code={highlighted}
+        data-medal-icon-type="round"
       />
-    </Helmet>
-    <div
-      className="pa-medaltable"
-      data-auth-token="6i3DuEwbVhr2Fht6"
-      data-games-code="OG2020"
-      data-font-size="1.25rem"
-    />
-  </>
-);
+      <div className="buttonContainer">
+        <Button onClick={handleShowAll}>
+          {showAll ? 'Collapse' : 'Show All'}
+        </Button>
+      </div>
+    </Container>
+  );
+};
