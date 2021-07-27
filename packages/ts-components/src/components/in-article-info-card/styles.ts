@@ -110,10 +110,20 @@ export const CarouselButton = styled.button<{ disabled: boolean }>`
     transform: scaleX(-1);
   }
 
-  &:hover {
-    border: solid 1px
-      ${({ disabled }) =>
-        disabled ? colours.functional.keyline : colours.functional.action};
+  @media (hover: hover) {
+    &:hover {
+      border: solid 1px
+        ${({ disabled }) =>
+          disabled ? colours.functional.keyline : colours.functional.action};
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      border: solid 1px
+        ${({ disabled }) =>
+          disabled ? colours.functional.keyline : colours.functional.action};
+    }
   }
 `;
 
@@ -171,6 +181,10 @@ export const CarouselContainer = styled.div<{
 
   & div.rec-carousel-item.rec-carousel-item-visible {
     border-right: 1px solid ${colours.functional.keyline};
+  }
+
+  & div.rec-carousel-item:last-child {
+    border-right: none;
   }
 `;
 

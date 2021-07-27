@@ -23,7 +23,7 @@ import { useFetch } from '../../helpers/fetch/FetchProvider';
 const sanitiseCopy = (copy: string, allowedTags: string[] = []) =>
   sanitizeHtml(copy, { allowedTags, allowedAttributes: {} });
 
-export type InfoCardDataObj = {
+export type InfoCardData = {
   type: string;
   data: {
     image?: string;
@@ -38,8 +38,8 @@ export type GalleryCarouselProps = {
 };
 
 export enum Layout {
-  Standard = "4043",
-  Wide = "4042",
+  Standard = '4043',
+  Wide = '4042'
 }
 
 let showDisplayItem: number;
@@ -55,7 +55,7 @@ const CustomPagination: React.FC<{
   current: number;
   sanitiseHtml?: boolean;
   onClick: (current: number, label?: string, sanitiseHtml?: boolean) => number;
-  data: InfoCardDataObj[];
+  data: InfoCardData[];
 }> = ({ activePage, onClick, current, data }) => {
   return (
     <CarouselButtonContainer>
@@ -164,7 +164,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
 
   const width = winWidth.toString();
   windowWidth = width;
-  isWideLayout = isWide(size) ? true : false;
+  isWideLayout = isWide(size);
 
   if (width < medium) {
     showDisplayItem = breakPointsCard[0].itemsToScroll;
@@ -217,7 +217,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
           );
         }}
       >
-        {infoCardData.map((row: InfoCardDataObj, index: number) => (
+        {infoCardData.map((row: InfoCardData, index: number) => (
           <InfoCardContainer key={index}>
             {row.data.image && (
               <AspectRatio ratio="16:9">
