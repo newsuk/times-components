@@ -6,10 +6,10 @@ import {
   Headline,
   HeadlineButtonContainer
 } from './styles';
-import { InfoCardDataObj } from './InfoCard';
+import { InfoCardData } from './InfoCard';
 
 export const Card: React.FC<{
-  data: InfoCardDataObj;
+  data: InfoCardData;
   headline: string;
   label: string;
   sectionColour: string;

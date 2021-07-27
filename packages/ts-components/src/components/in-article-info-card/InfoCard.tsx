@@ -192,8 +192,8 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
         onChange={handleChange}
         showArrows={false}
         renderPagination={({ activePage, onClick }) => {
-          const handlePaginationClick = (index: string) => {
-            onClick && onClick(index);
+          const handlePaginationClick = (indicatorId: string) => {
+            onClick && onClick(indicatorId);
           };
           return (
             <Card
