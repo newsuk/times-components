@@ -183,6 +183,94 @@ describe("Head", () => {
     expect(testRenderer).toMatchSnapshot();
   });
 
+  it("outputs array of sameAs if there are multiple urls", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          bylines: [
+            {
+              __typename: "AuthorByline",
+              author: {
+                image:
+                  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+                jobTitle: "Asia Editor",
+                twitter: "twitterusername",
+                slug: "richard-lloyd-parry",
+                name: "Richard Lloyd Parry"
+              },
+              byline: [
+                {
+                  name: "author",
+                  children: [
+                    {
+                      name: "text",
+                      children: [],
+                      attributes: {
+                        value: "Oliver Wright"
+                      }
+                    }
+                  ],
+                  attributes: {
+                    slug: "oliver-wright"
+                  }
+                }
+              ],
+              image: null
+            }
+          ]
+        }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("outputs profile url in sameAs if there is no twitter", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          bylines: [
+            {
+              __typename: "AuthorByline",
+              author: {
+                image:
+                  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+                jobTitle: "Asia Editor",
+                twitter: "",
+                slug: "richard-lloyd-parry",
+                name: "Richard Lloyd Parry"
+              },
+              byline: [
+                {
+                  name: "author",
+                  children: [
+                    {
+                      name: "text",
+                      children: [],
+                      attributes: {
+                        value: "Oliver Wright"
+                      }
+                    }
+                  ],
+                  attributes: {
+                    slug: "oliver-wright"
+                  }
+                }
+              ],
+              image: null
+            }
+          ]
+        }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
+
   it("removes author from context schema if there is empty array of bylines or null bylines", () => {
     let testRenderer = TestRenderer.create(
       <Head
