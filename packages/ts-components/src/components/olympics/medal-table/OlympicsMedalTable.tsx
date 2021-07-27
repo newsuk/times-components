@@ -32,9 +32,7 @@ export const OlympicsMedalTable: FC<{
     >
       <HeadingContainer>
         <Label sectionColour={sectionColor}>Olympics Tokyo 2020</Label>
-        <Heading>
-          Medal Table
-        </Heading>
+        <Heading>Medal Table</Heading>
       </HeadingContainer>
       <div
         className="pa-medaltable"

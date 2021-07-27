@@ -50,9 +50,7 @@ export const OlympicsSchedule: FC<{
     >
       <HeadingContainer>
         <Label sectionColour={sectionColor}>Olympics Tokyo 2020</Label>
-        <Heading>
-          Event Schedule
-        </Heading>
+        <Heading>Event Schedule</Heading>
       </HeadingContainer>
       <div
         className="pa-schedule"

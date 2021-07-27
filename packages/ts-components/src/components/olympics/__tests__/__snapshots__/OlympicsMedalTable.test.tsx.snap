@@ -91,6 +91,21 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
   margin: 0px;
 }
 
+.c4 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c4:hover {
+  background-color: #e4e4e4;
+}
+
 .c2 {
   font-size: 12px;
   line-height: 14px;
@@ -105,18 +120,10 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 }
 
 .c3 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid #DBDBDB;
-  top: -80px;
-  position: relative;
-  cursor: pointer;
-}
-
-.c3:hover {
-  background-color: #e4e4e4;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: TimesModern-Regular;
+  margin: 6px 0 0 0;
 }
 
 @media (min-width:768px) {
@@ -134,15 +141,20 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 <div
     class="c0"
   >
-    <h2
+    <div
       class="c1"
     >
-      <div
+      <span
         class="c2"
       >
-        Medal Table - Olympics Tokyo 2020
-      </div>
-    </h2>
+        Olympics Tokyo 2020
+      </span>
+      <h2
+        class="c3"
+      >
+        Medal Table
+      </h2>
+    </div>
     <div
       class="pa-medaltable"
       data-auth-token="token"
@@ -154,7 +166,7 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
       class="buttonContainer"
     >
       <button
-        class="c3"
+        class="c4"
       >
         Collapse
       </button>
@@ -254,6 +266,21 @@ exports[`<OlympicsMedalTable> renders 1`] = `
   margin: 0px;
 }
 
+.c4 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c4:hover {
+  background-color: #e4e4e4;
+}
+
 .c2 {
   font-size: 12px;
   line-height: 14px;
@@ -268,18 +295,10 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 }
 
 .c3 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid #DBDBDB;
-  top: -80px;
-  position: relative;
-  cursor: pointer;
-}
-
-.c3:hover {
-  background-color: #e4e4e4;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: TimesModern-Regular;
+  margin: 6px 0 0 0;
 }
 
 @media (min-width:768px) {
@@ -297,15 +316,20 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 <div
     class="c0"
   >
-    <h2
+    <div
       class="c1"
     >
-      <div
+      <span
         class="c2"
       >
-        Medal Table - Olympics Tokyo 2020
-      </div>
-    </h2>
+        Olympics Tokyo 2020
+      </span>
+      <h2
+        class="c3"
+      >
+        Medal Table
+      </h2>
+    </div>
     <div
       class="pa-medaltable"
       data-auth-token="token"
@@ -317,7 +341,7 @@ exports[`<OlympicsMedalTable> renders 1`] = `
       class="buttonContainer"
     >
       <button
-        class="c3"
+        class="c4"
       >
         Show All
       </button>
@@ -417,6 +441,21 @@ exports[`<OlympicsMedalTable> renders outside of article 1`] = `
   margin: 0px;
 }
 
+.c4 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c4:hover {
+  background-color: #e4e4e4;
+}
+
 .c2 {
   font-size: 12px;
   line-height: 14px;
@@ -431,32 +470,29 @@ exports[`<OlympicsMedalTable> renders outside of article 1`] = `
 }
 
 .c3 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid #DBDBDB;
-  top: -80px;
-  position: relative;
-  cursor: pointer;
-}
-
-.c3:hover {
-  background-color: #e4e4e4;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: TimesModern-Regular;
+  margin: 6px 0 0 0;
 }
 
 <div
     class="c0"
   >
-    <h2
+    <div
       class="c1"
     >
-      <div
+      <span
         class="c2"
       >
-        Medal Table - Olympics Tokyo 2020
-      </div>
-    </h2>
+        Olympics Tokyo 2020
+      </span>
+      <h2
+        class="c3"
+      >
+        Medal Table
+      </h2>
+    </div>
     <div
       class="pa-medaltable"
       data-auth-token="token"
@@ -468,7 +504,7 @@ exports[`<OlympicsMedalTable> renders outside of article 1`] = `
       class="buttonContainer"
     >
       <button
-        class="c3"
+        class="c4"
       >
         Show All
       </button>
