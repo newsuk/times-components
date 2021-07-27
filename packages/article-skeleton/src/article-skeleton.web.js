@@ -152,7 +152,7 @@ const ArticleSkeleton = ({
           />
           <AlgoliaSearchProvider
             algoliaSearchKeys={algoliaSearchKeys}
-            article={{ id: articleId, label, section, topics }}
+            article={{ id: articleId, label, section, topics, headline }}
             analyticsStream={analyticsStream}
           >
             <Fragment>

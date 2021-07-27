@@ -58,7 +58,7 @@ const ArticleExtras = ({
       <div id="sponsored-article" />
     </div>
   );
-
+  console.log("xxx articleHeadline", articleHeadline);
   return (
     <UserState state={UserState.fullArticle} fallback={sponsoredArticles}>
       <div style={clearingStyle} />

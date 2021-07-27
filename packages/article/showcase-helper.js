@@ -38,6 +38,11 @@ const STANDFIRST = 128;
 const VIDEO = 256;
 const TEASED_CONTENT = 512;
 
+const algoliaSearchKeys = {
+  applicationId: process.env.STORYBOOK_ALGOLIA_ID || "",
+  apiKey: process.env.STORYBOOK_ALGOLIA_KEY || "",
+  indexName: process.env.STORYBOOK_ALGOLIA_INDEX || ""
+};
 export const makeArticleConfiguration = ({
   withFlags,
   withHeadline,
@@ -217,8 +222,7 @@ const renderArticle = ({
   isTeaser,
   isMeteredExpired,
   additionalRelatedArticlesFlag,
-  latestFromSectionFlag,
-  algoliaSearchKeys
+  latestFromSectionFlag
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, error, refetch }) => {
