@@ -3,7 +3,7 @@
 exports[`<OlympicsSchedule> click show all 1`] = `
 <DocumentFragment>
   .c0 {
-  border-top: 2px solid sectionColor;
+  border-top: 2px solid #402f7a;
   position: relative;
   margin: 0 auto 20px auto;
 }
@@ -46,7 +46,7 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
-  color: sectionColor;
+  color: #402f7a;
   line-height: 30px;
   position: absolute;
 }
@@ -131,7 +131,7 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 .c2 {
   font-size: 12px;
   line-height: 14px;
-  color: sectionColor;
+  color: #402f7a;
   font-family: GillSansMTStd-Medium;
   font-weight: normal;
   text-transform: uppercase;
@@ -142,10 +142,11 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 }
 
 .c3 {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 18px;
-  font-family: TimesModern-Regular;
-  margin: 6px 0 0 0;
+  font-family: TimesModern-Bold;
+  margin: 14px 0 10px 0;
+  font-weight: normal;
 }
 
 @media (min-width:768px) {
@@ -166,6 +167,12 @@ exports[`<OlympicsSchedule> click show all 1`] = `
   }
 }
 
+@media only screen and (min-width:768px) {
+  .c3 {
+    font-size: 32px;
+  }
+}
+
 <div
     class="c0"
   >
@@ -175,7 +182,7 @@ exports[`<OlympicsSchedule> click show all 1`] = `
       <span
         class="c2"
       >
-        Olympics Tokyo 2020
+        Tokyo 2020
       </span>
       <h2
         class="c3"
@@ -204,7 +211,7 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 exports[`<OlympicsSchedule> renders 1`] = `
 <DocumentFragment>
   .c0 {
-  border-top: 2px solid #008347;
+  border-top: 2px solid #402f7a;
   position: relative;
   margin: 0 auto 20px auto;
 }
@@ -247,7 +254,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
-  color: #008347;
+  color: #402f7a;
   line-height: 30px;
   position: absolute;
 }
@@ -332,7 +339,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
 .c2 {
   font-size: 12px;
   line-height: 14px;
-  color: #008347;
+  color: #402f7a;
   font-family: GillSansMTStd-Medium;
   font-weight: normal;
   text-transform: uppercase;
@@ -343,10 +350,11 @@ exports[`<OlympicsSchedule> renders 1`] = `
 }
 
 .c3 {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 18px;
-  font-family: TimesModern-Regular;
-  margin: 6px 0 0 0;
+  font-family: TimesModern-Bold;
+  margin: 14px 0 10px 0;
+  font-weight: normal;
 }
 
 @media (min-width:768px) {
@@ -367,6 +375,12 @@ exports[`<OlympicsSchedule> renders 1`] = `
   }
 }
 
+@media only screen and (min-width:768px) {
+  .c3 {
+    font-size: 32px;
+  }
+}
+
 <div
     class="c0"
   >
@@ -376,7 +390,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
       <span
         class="c2"
       >
-        Olympics Tokyo 2020
+        Tokyo 2020
       </span>
       <h2
         class="c3"
@@ -405,7 +419,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
 exports[`<OlympicsSchedule> renders outside of article 1`] = `
 <DocumentFragment>
   .c0 {
-  border-top: 2px solid #008347;
+  border-top: 2px solid #402f7a;
   position: relative;
   margin: 0 auto 20px auto;
 }
@@ -448,7 +462,7 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
-  color: #008347;
+  color: #402f7a;
   line-height: 30px;
   position: absolute;
 }
@@ -533,7 +547,7 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 .c2 {
   font-size: 12px;
   line-height: 14px;
-  color: #008347;
+  color: #402f7a;
   font-family: GillSansMTStd-Medium;
   font-weight: normal;
   text-transform: uppercase;
@@ -544,15 +558,22 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 }
 
 .c3 {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 18px;
-  font-family: TimesModern-Regular;
-  margin: 6px 0 0 0;
+  font-family: TimesModern-Bold;
+  margin: 14px 0 10px 0;
+  font-weight: normal;
 }
 
 @media only screen and (min-width:321px) {
   .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
     left: calc(100% - 75px);
+  }
+}
+
+@media only screen and (min-width:768px) {
+  .c3 {
+    font-size: 32px;
   }
 }
 
@@ -565,7 +586,7 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
       <span
         class="c2"
       >
-        Olympics Tokyo 2020
+        Tokyo 2020
       </span>
       <h2
         class="c3"

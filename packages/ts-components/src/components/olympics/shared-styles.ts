@@ -26,10 +26,10 @@ export const Button = styled.button`
   }
 `;
 
-export const Label = styled.span<{ sectionColour: string }>`
+export const Label = styled.span`
   font-size: 12px;
   line-height: 14px;
-  color: ${({ sectionColour }) => sectionColour};
+  color: #402f7a;
   font-family: ${fonts.supporting};
   font-weight: normal;
   text-transform: uppercase;
@@ -37,8 +37,12 @@ export const Label = styled.span<{ sectionColour: string }>`
 `;
 
 export const Heading = styled.h2`
-  font-size: 18px;
+  font-size: 24px;
   line-height: 18px;
-  font-family: ${fonts.headlineRegular};
-  margin: 6px 0 0 0;
+  font-family: ${fonts.headline};
+  margin: 14px 0 10px 0;
+  font-weight: normal;
+  @media only screen and (min-width: 768px) {
+    font-size: 32px;
+  }
 `;
