@@ -89,7 +89,6 @@ export const CarouselButton = styled.button<{ disabled: boolean }>`
   align-items: center;
   width: 32px;
   height: 32px;
-  padding-left: 1px;
   background-color: transparent;
   border: solid 1px
     ${({ disabled }) =>
@@ -109,7 +108,6 @@ export const CarouselButton = styled.button<{ disabled: boolean }>`
 
   &.nextBtn {
     transform: scaleX(-1);
-    padding-left: 2px;
   }
 
   &:hover {

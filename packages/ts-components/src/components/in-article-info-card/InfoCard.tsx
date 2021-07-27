@@ -27,8 +27,8 @@ export type InfoCardDataObj = {
   type: string;
   data: {
     image?: string;
-    subHeading?: string;
-    bodyCopy: string;
+    subtitle?: string;
+    copy?: string;
   };
 };
 
@@ -36,6 +36,11 @@ export type GalleryCarouselProps = {
   sectionColour: string;
   initialIndex?: number;
 };
+
+export enum Layout {
+  Standard = "4043",
+  Wide = "4042",
+}
 
 let showDisplayItem: number;
 let showDotItem: number;
@@ -126,18 +131,12 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
   const { headline, label, size } = data.fields;
   const infoCardData = data.body.data;
 
-  const isStandard = (infoCardSize: string) => {
-    if (infoCardSize === '4043') {
-      return true;
-    }
-    return false;
+  const isStandard = (infoCardSize: Layout) => {
+    return infoCardSize === Layout.Standard;
   };
 
-  const isWide = (infoCardSize: string) => {
-    if (infoCardSize === '4042') {
-      return true;
-    }
-    return false;
+  const isWide = (infoCardSize: Layout) => {
+    return infoCardSize === Layout.Wide;
   };
 
   const [winWidth, setWidth] = useState(window.innerWidth);
@@ -218,7 +217,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
           );
         }}
       >
-        {infoCardData.map((row: any, index: any) => (
+        {infoCardData.map((row: InfoCardDataObj, index: number) => (
           <InfoCardContainer key={index}>
             {row.data.image && (
               <AspectRatio ratio="16:9">
