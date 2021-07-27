@@ -111,27 +111,6 @@ describe('InfoCard', () => {
       jest.resetAllMocks();
     });
 
-    // it('fires scroll event when viewed', () => {
-    //   (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
-    //   const analyticsStream = jest.fn();
-    //   renderInfoCard();
-    //   expect(analyticsStream).toHaveBeenCalledWith({
-    //     action: 'Scrolled',
-    //     component: 'ArticleSkeleton',
-    //     object: 'InfoCard',
-    //     attrs: {
-    //       article_name: 'Headline',
-    //       component_name: 'Gallery Headline',
-    //       component_type: 'in-article component : gallery : interactive',
-    //       eventTime: '2021-05-03T00:00:00.000Z',
-    //       event_navigation_action: 'navigation',
-    //       event_navigation_browsing_method: 'scroll',
-    //       event_navigation_name: 'in-article component displayed : gallery',
-    //       section_details: 'Section'
-    //     }
-    //   });
-    // });
-
     it('click previous button', async () => {
       const { getAllByTestId } = renderInfoCard();
 
@@ -142,9 +121,6 @@ describe('InfoCard', () => {
 
       expect(previousButton).not.toHaveAttribute('disabled');
       expect(nextButton).toHaveAttribute('disabled');
-
-      // expect(previousButton).toHaveAttribute('disabled');
-      // expect(nextButton).not.toHaveAttribute('disabled');
     });
     it('click next button', async () => {
       (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
