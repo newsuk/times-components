@@ -3,6 +3,7 @@
 exports[`<OlympicsMedalTable> click show all 1`] = `
 <DocumentFragment>
   .c0 {
+  border-top: 2px solid sectionColor;
   position: relative;
   margin: 0 auto 20px auto;
 }
@@ -84,6 +85,26 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 }
 
 .c1 {
+  background: #F9F9F9;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0px;
+}
+
+.c2 {
+  font-size: 12px;
+  line-height: 14px;
+  color: sectionColor;
+  font-family: GillSansMTStd-Medium;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.c3 {
   font-family: GillSansMTStd-Medium;
   font-size: 14px;
   line-height: 20px;
@@ -94,7 +115,7 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
   cursor: pointer;
 }
 
-.c1:hover {
+.c3:hover {
   background-color: #e4e4e4;
 }
 
@@ -113,6 +134,15 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 <div
     class="c0"
   >
+    <h2
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        Medal Table - Olympics Tokyo 2020
+      </div>
+    </h2>
     <div
       class="pa-medaltable"
       data-auth-token="token"
@@ -124,7 +154,7 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
       class="buttonContainer"
     >
       <button
-        class="c1"
+        class="c3"
       >
         Collapse
       </button>
@@ -136,6 +166,7 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 exports[`<OlympicsMedalTable> renders 1`] = `
 <DocumentFragment>
   .c0 {
+  border-top: 2px solid #008347;
   position: relative;
   margin: 0 auto 20px auto;
 }
@@ -217,6 +248,26 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 }
 
 .c1 {
+  background: #F9F9F9;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0px;
+}
+
+.c2 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #008347;
+  font-family: GillSansMTStd-Medium;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.c3 {
   font-family: GillSansMTStd-Medium;
   font-size: 14px;
   line-height: 20px;
@@ -227,7 +278,7 @@ exports[`<OlympicsMedalTable> renders 1`] = `
   cursor: pointer;
 }
 
-.c1:hover {
+.c3:hover {
   background-color: #e4e4e4;
 }
 
@@ -246,6 +297,15 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 <div
     class="c0"
   >
+    <h2
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        Medal Table - Olympics Tokyo 2020
+      </div>
+    </h2>
     <div
       class="pa-medaltable"
       data-auth-token="token"
@@ -257,7 +317,7 @@ exports[`<OlympicsMedalTable> renders 1`] = `
       class="buttonContainer"
     >
       <button
-        class="c1"
+        class="c3"
       >
         Show All
       </button>
@@ -269,6 +329,7 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 exports[`<OlympicsMedalTable> renders outside of article 1`] = `
 <DocumentFragment>
   .c0 {
+  border-top: 2px solid #008347;
   position: relative;
   margin: 0 auto 20px auto;
 }
@@ -350,6 +411,26 @@ exports[`<OlympicsMedalTable> renders outside of article 1`] = `
 }
 
 .c1 {
+  background: #F9F9F9;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0px;
+}
+
+.c2 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #008347;
+  font-family: GillSansMTStd-Medium;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.c3 {
   font-family: GillSansMTStd-Medium;
   font-size: 14px;
   line-height: 20px;
@@ -360,13 +441,22 @@ exports[`<OlympicsMedalTable> renders outside of article 1`] = `
   cursor: pointer;
 }
 
-.c1:hover {
+.c3:hover {
   background-color: #e4e4e4;
 }
 
 <div
     class="c0"
   >
+    <h2
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        Medal Table - Olympics Tokyo 2020
+      </div>
+    </h2>
     <div
       class="pa-medaltable"
       data-auth-token="token"
@@ -378,7 +468,7 @@ exports[`<OlympicsMedalTable> renders outside of article 1`] = `
       class="buttonContainer"
     >
       <button
-        class="c1"
+        class="c3"
       >
         Show All
       </button>

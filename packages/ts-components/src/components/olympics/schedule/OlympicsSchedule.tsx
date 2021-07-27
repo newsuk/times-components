@@ -1,6 +1,7 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC, useEffect, useState } from 'react';
+
 import { Container } from './styles';
-import { Heading, Span } from '../shared-styles';
+import { HeadingContainer, Heading, Button } from '../shared-styles';
 import { colours } from '@times-components/styleguide';
 
 import { OlympicsKeys } from '../types';
@@ -36,32 +37,32 @@ export const OlympicsSchedule: FC<{
     );
   }, []);
 
-  useEffect(() => {
-    window.addEventListener(
-      'wheel',
-      event => {
-        if (
-          event
-            .composedPath()
-            // @ts-ignore
-            .includes(document.querySelector('.pa_UnitListView_ctr'))
-        ) {
-          event.stopImmediatePropagation();
-        }
-      },
-      true
-    );
-  }, []);
+  const [showAll, setShowAll] = useState(false);
+  const handleShowAll = () => {
+    setShowAll(!showAll);
+  };
 
   return (
-    <Container sectionColour={sectionColor} inArticle={inArticle}>
-      <Heading><Span sectionColour={sectionColor}>Olympics Tokyo 2020 - Event Schedule</Span></Heading>
+    <Container
+      sectionColour={sectionColor}
+      inArticle={inArticle}
+      showAll={showAll}
+    >
+      <HeadingContainer>
+        <Heading sectionColour={sectionColor}>
+          Event Schedule - Olympics Tokyo 2020
+        </Heading>
+      </HeadingContainer>
       <div
         className="pa-schedule"
         data-auth-token={authToken}
         data-games-code={gamesCode}
-      >
-        </div>
+      />
+      <div className="buttonContainer">
+        <Button onClick={handleShowAll}>
+          {showAll ? 'Collapse' : 'Show All'}
+        </Button>
+      </div>
     </Container>
   );
 };

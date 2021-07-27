@@ -95,20 +95,3 @@ export const Container = styled.div<{
     height: 0;
   }
 `;
-
-export const Button = styled.button`
-  font-family: ${fonts.supporting};
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid ${colours.functional.keyline};
-
-  top: -80px;
-  position: relative;
-
-  cursor: pointer;
-
-  &:hover {
-    background-color: ${highlightColour};
-  }
-`;
