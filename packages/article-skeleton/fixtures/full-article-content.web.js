@@ -158,7 +158,7 @@ export default [
         children: [],
         name: "interactive"
       },
-     {
+      {
         attributes: {
           element: {
             attributes: { "deck-id": "43614" },
