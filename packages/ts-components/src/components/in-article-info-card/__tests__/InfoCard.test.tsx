@@ -139,7 +139,6 @@ describe('InfoCard', () => {
 
     afterEach(() => {
       window.IntersectionObserver = oldIntersectionObserver;
-
       jest.resetAllMocks();
     });
 

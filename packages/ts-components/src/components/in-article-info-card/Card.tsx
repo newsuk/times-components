@@ -9,10 +9,10 @@ import {
 import { InfoCardData } from './InfoCard';
 
 export const Card: React.FC<{
-  data: InfoCardData;
   headline: string;
   label: string;
   sectionColour: string;
+  data: InfoCardData;
 }> = ({ sectionColour, label, headline, children }) => (
   <CardContainer>
     <CardContent>
