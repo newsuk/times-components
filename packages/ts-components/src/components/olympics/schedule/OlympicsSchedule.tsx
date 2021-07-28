@@ -1,21 +1,15 @@
 import React, { FC, useEffect, useState } from 'react';
 
 import { Container } from './styles';
-import { HeadingContainer, Heading, Button } from '../shared-styles';
-import { colours } from '@times-components/styleguide';
+import { HeadingContainer, Label, Button, Heading } from '../shared-styles';
 
 import { OlympicsKeys } from '../types';
 import { injectScript } from '../../../helpers/widgets/inject-script';
 
 export const OlympicsSchedule: FC<{
   keys: OlympicsKeys;
-  sectionColor?: string;
   inArticle?: boolean;
-}> = ({
-  keys: { endpoint, authToken, gamesCode },
-  sectionColor = colours.section.sport,
-  inArticle = true
-}) => {
+}> = ({ keys: { endpoint, authToken, gamesCode }, inArticle = true }) => {
   useEffect(() => {
     injectScript(`${endpoint}/static/schedule.js`);
   }, []);
@@ -43,15 +37,10 @@ export const OlympicsSchedule: FC<{
   };
 
   return (
-    <Container
-      sectionColour={sectionColor}
-      inArticle={inArticle}
-      showAll={showAll}
-    >
+    <Container inArticle={inArticle} showAll={showAll}>
       <HeadingContainer>
-        <Heading sectionColour={sectionColor}>
-          Event Schedule - Olympics Tokyo 2020
-        </Heading>
+        <Label>Tokyo 2020</Label>
+        <Heading>Event Schedule</Heading>
       </HeadingContainer>
       <div
         className="pa-schedule"

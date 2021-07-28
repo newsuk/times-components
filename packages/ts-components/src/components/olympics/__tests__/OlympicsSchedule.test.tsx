@@ -31,7 +31,7 @@ describe('<OlympicsSchedule>', () => {
   });
   it('click show all', async () => {
     const { asFragment, getByText, findByText } = render(
-      <OlympicsSchedule keys={keys} sectionColor="sectionColor" />
+      <OlympicsSchedule keys={keys} />
     );
     fireEvent.click(getByText('Show All'));
     await findByText('Collapse');

@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/styleguide';
+import { olympicColour } from '../shared-styles';
 
 export const Container = styled.div<{
-  sectionColour: string;
   showAll: boolean;
   inArticle: boolean;
 }>`
-  border-top: 2px solid ${({ sectionColour }) => sectionColour};
+  border-top: 2px solid ${olympicColour};
   position: relative;
   margin: 0 auto 20px auto;
 
@@ -48,8 +48,12 @@ export const Container = styled.div<{
           border-bottom: 1px solid ${colours.functional.keyline};
         }
 
+        .pa_UnitListView_unit {
+          align-items: center;
+        }
+
         .pa_UnitListView_unit-time {
-          color: ${({ sectionColour }) => sectionColour};
+          color: ${olympicColour};
           line-height: 30px;
           position: absolute;
         }
@@ -64,7 +68,7 @@ export const Container = styled.div<{
           font-family: ${fonts.headline};
           text-transform: capitalize;
           font-weight: 400;
-          padding-bottom: 4px;
+          margin-top: 4px;
         }
 
         .pa_UnitListView_medal {

@@ -2,8 +2,50 @@
 
 exports[`<OlympicsSchedule> click show all 1`] = `
 <DocumentFragment>
-  .c0 {
-  border-top: 2px solid sectionColor;
+  .c1 {
+  background: #F9F9F9;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0px;
+}
+
+.c4 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c4:hover {
+  background-color: #e4e4e4;
+}
+
+.c2 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #402f7a;
+  font-family: GillSansMTStd-Medium;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.c3 {
+  font-size: 24px;
+  line-height: 18px;
+  font-family: TimesModern-Bold;
+  margin: 14px 0 10px 0;
+}
+
+.c0 {
+  border-top: 2px solid #402f7a;
   position: relative;
   margin: 0 auto 20px auto;
 }
@@ -38,8 +80,15 @@ exports[`<OlympicsSchedule> click show all 1`] = `
   display: block;
 }
 
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
-  color: sectionColor;
+  color: #402f7a;
   line-height: 30px;
   position: absolute;
 }
@@ -54,7 +103,7 @@ exports[`<OlympicsSchedule> click show all 1`] = `
   font-family: TimesModern-Bold;
   text-transform: capitalize;
   font-weight: 400;
-  padding-bottom: 4px;
+  margin-top: 4px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
@@ -99,39 +148,10 @@ exports[`<OlympicsSchedule> click show all 1`] = `
   background-color: #EDEDED;
 }
 
-.c1 {
-  background: #F9F9F9;
-  padding: 20px 0;
-  text-align: center;
-  margin: 0px;
-}
-
-.c2 {
-  font-size: 12px;
-  line-height: 14px;
-  color: sectionColor;
-  font-family: GillSansMTStd-Medium;
-  font-weight: normal;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-}
-
-.c3 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid #DBDBDB;
-  top: -80px;
-  position: relative;
-  cursor: pointer;
-}
-
-.c3:hover {
-  background-color: #e4e4e4;
+@media only screen and (min-width:768px) {
+  .c3 {
+    font-size: 32px;
+  }
 }
 
 @media (min-width:768px) {
@@ -155,15 +175,20 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 <div
     class="c0"
   >
-    <h2
+    <div
       class="c1"
     >
-      <div
+      <span
         class="c2"
       >
-        Event Schedule - Olympics Tokyo 2020
+        Tokyo 2020
+      </span>
+      <div
+        class="c3"
+      >
+        Event Schedule
       </div>
-    </h2>
+    </div>
     <div
       class="pa-schedule"
       data-auth-token="token"
@@ -173,7 +198,7 @@ exports[`<OlympicsSchedule> click show all 1`] = `
       class="buttonContainer"
     >
       <button
-        class="c3"
+        class="c4"
       >
         Collapse
       </button>
@@ -184,8 +209,50 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 
 exports[`<OlympicsSchedule> renders 1`] = `
 <DocumentFragment>
-  .c0 {
-  border-top: 2px solid #008347;
+  .c1 {
+  background: #F9F9F9;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0px;
+}
+
+.c4 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c4:hover {
+  background-color: #e4e4e4;
+}
+
+.c2 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #402f7a;
+  font-family: GillSansMTStd-Medium;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.c3 {
+  font-size: 24px;
+  line-height: 18px;
+  font-family: TimesModern-Bold;
+  margin: 14px 0 10px 0;
+}
+
+.c0 {
+  border-top: 2px solid #402f7a;
   position: relative;
   margin: 0 auto 20px auto;
 }
@@ -220,8 +287,15 @@ exports[`<OlympicsSchedule> renders 1`] = `
   display: none;
 }
 
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
-  color: #008347;
+  color: #402f7a;
   line-height: 30px;
   position: absolute;
 }
@@ -236,7 +310,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
   font-family: TimesModern-Bold;
   text-transform: capitalize;
   font-weight: 400;
-  padding-bottom: 4px;
+  margin-top: 4px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
@@ -281,39 +355,10 @@ exports[`<OlympicsSchedule> renders 1`] = `
   background-color: #EDEDED;
 }
 
-.c1 {
-  background: #F9F9F9;
-  padding: 20px 0;
-  text-align: center;
-  margin: 0px;
-}
-
-.c2 {
-  font-size: 12px;
-  line-height: 14px;
-  color: #008347;
-  font-family: GillSansMTStd-Medium;
-  font-weight: normal;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-}
-
-.c3 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid #DBDBDB;
-  top: -80px;
-  position: relative;
-  cursor: pointer;
-}
-
-.c3:hover {
-  background-color: #e4e4e4;
+@media only screen and (min-width:768px) {
+  .c3 {
+    font-size: 32px;
+  }
 }
 
 @media (min-width:768px) {
@@ -337,15 +382,20 @@ exports[`<OlympicsSchedule> renders 1`] = `
 <div
     class="c0"
   >
-    <h2
+    <div
       class="c1"
     >
-      <div
+      <span
         class="c2"
       >
-        Event Schedule - Olympics Tokyo 2020
+        Tokyo 2020
+      </span>
+      <div
+        class="c3"
+      >
+        Event Schedule
       </div>
-    </h2>
+    </div>
     <div
       class="pa-schedule"
       data-auth-token="token"
@@ -355,7 +405,7 @@ exports[`<OlympicsSchedule> renders 1`] = `
       class="buttonContainer"
     >
       <button
-        class="c3"
+        class="c4"
       >
         Show All
       </button>
@@ -366,8 +416,50 @@ exports[`<OlympicsSchedule> renders 1`] = `
 
 exports[`<OlympicsSchedule> renders outside of article 1`] = `
 <DocumentFragment>
-  .c0 {
-  border-top: 2px solid #008347;
+  .c1 {
+  background: #F9F9F9;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0px;
+}
+
+.c4 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c4:hover {
+  background-color: #e4e4e4;
+}
+
+.c2 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #402f7a;
+  font-family: GillSansMTStd-Medium;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.c3 {
+  font-size: 24px;
+  line-height: 18px;
+  font-family: TimesModern-Bold;
+  margin: 14px 0 10px 0;
+}
+
+.c0 {
+  border-top: 2px solid #402f7a;
   position: relative;
   margin: 0 auto 20px auto;
 }
@@ -402,8 +494,15 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
   display: none;
 }
 
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
-  color: #008347;
+  color: #402f7a;
   line-height: 30px;
   position: absolute;
 }
@@ -418,7 +517,7 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
   font-family: TimesModern-Bold;
   text-transform: capitalize;
   font-weight: 400;
-  padding-bottom: 4px;
+  margin-top: 4px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
@@ -463,39 +562,10 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
   background-color: #EDEDED;
 }
 
-.c1 {
-  background: #F9F9F9;
-  padding: 20px 0;
-  text-align: center;
-  margin: 0px;
-}
-
-.c2 {
-  font-size: 12px;
-  line-height: 14px;
-  color: #008347;
-  font-family: GillSansMTStd-Medium;
-  font-weight: normal;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-}
-
-.c3 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid #DBDBDB;
-  top: -80px;
-  position: relative;
-  cursor: pointer;
-}
-
-.c3:hover {
-  background-color: #e4e4e4;
+@media only screen and (min-width:768px) {
+  .c3 {
+    font-size: 32px;
+  }
 }
 
 @media only screen and (min-width:321px) {
@@ -507,15 +577,20 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 <div
     class="c0"
   >
-    <h2
+    <div
       class="c1"
     >
-      <div
+      <span
         class="c2"
       >
-        Event Schedule - Olympics Tokyo 2020
+        Tokyo 2020
+      </span>
+      <div
+        class="c3"
+      >
+        Event Schedule
       </div>
-    </h2>
+    </div>
     <div
       class="pa-schedule"
       data-auth-token="token"
@@ -525,7 +600,7 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
       class="buttonContainer"
     >
       <button
-        class="c3"
+        class="c4"
       >
         Show All
       </button>
