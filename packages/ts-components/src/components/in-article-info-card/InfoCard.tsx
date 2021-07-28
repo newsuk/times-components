@@ -53,10 +53,6 @@ const CustomPagination: React.FC<{
   showDisplayItem: number;
   windowWidth: string;
   showDotItem: number;
-  isWide: boolean;
-  isSmall: number;
-  setDisplayItem: (displayitem: number) => void;
-  setSmallLayoutValue: (layoutvalue: number) => void;
 }> = ({
   activePage,
   onClick,
@@ -64,11 +60,7 @@ const CustomPagination: React.FC<{
   data,
   showDisplayItem,
   windowWidth,
-  showDotItem,
-  isWide,
-  isSmall,
-  setDisplayItem,
-  setSmallLayoutValue
+  showDotItem
 }) => {
   return (
     <CarouselButtonContainer>
@@ -81,20 +73,6 @@ const CustomPagination: React.FC<{
       </CarouselButton>
       <CarouselIndicatorContainer>
         {data.map(({}, index) => {
-          if (windowWidth >= wide) {
-            setDisplayItem(
-              isWide
-                ? breakPointsCard[2].itemsToShow
-                : breakPointsCard[1].itemsToShow
-            );
-            setSmallLayoutValue(0);
-          } else if (windowWidth >= medium && windowWidth <= wide) {
-            setDisplayItem(breakPointsCard[1].itemsToShow);
-            setSmallLayoutValue(0);
-          } else {
-            setDisplayItem(breakPointsCard[0].itemsToShow);
-            setSmallLayoutValue(1);
-          }
           if (index < showDotItem) {
             const isActivePage = activePage === index;
             return (
@@ -113,7 +91,10 @@ const CustomPagination: React.FC<{
       <CarouselButton
         data-testid="Next Button"
         disabled={
-          activePage === Math.trunc(data.length / showDisplayItem - isSmall)
+          activePage ===
+          Math.trunc(
+            data.length / showDisplayItem - (medium > windowWidth ? 1 : 0)
+          )
         }
         className="nextBtn"
         onClick={() => onClick(current / showDisplayItem + 1, 'right')}
@@ -155,7 +136,6 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
 
   const [winWidth, setWidth] = useState(window.innerWidth);
   const [showDisplayItem, setDisplayItem] = useState(1);
-  const [isSmall, setSmallLayoutValue] = useState(0);
   const windowWidth = winWidth.toString();
   const updateWidth = () => setWidth(window.innerWidth);
 
@@ -231,13 +211,9 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                   onClick={handlePaginationClick}
                   current={current}
                   data={infoCardData}
-                  isWide={isWide(size)}
                   showDisplayItem={showDisplayItem}
-                  setDisplayItem={setDisplayItem}
                   windowWidth={winWidth.toString()}
                   showDotItem={showDotItem}
-                  isSmall={isSmall}
-                  setSmallLayoutValue={setSmallLayoutValue}
                 />
               )}
             </Card>
