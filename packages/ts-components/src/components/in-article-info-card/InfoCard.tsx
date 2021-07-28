@@ -141,13 +141,15 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
 
   const [winWidth, setWidth] = useState(window.innerWidth);
   const updateWidth = () => setWidth(window.innerWidth);
+  windowWidth = winWidth.toString();
+  isWideLayout = isWide(size);
 
   useEffect(() => {
     window.addEventListener('resize', updateWidth);
   }, []);
 
   const defaultCard = [{ width: small, itemsToShow: 1, itemsToScroll: 1 }];
-  if (isWide(size)) {
+  if (isWideLayout) {
     breakPointsCard = [
       ...defaultCard,
       { width: medium, itemsToShow: 2, itemsToScroll: 2 },
@@ -162,13 +164,9 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
     ];
   }
 
-  const width = winWidth.toString();
-  windowWidth = width;
-  isWideLayout = isWide(size);
-
-  if (width < medium) {
+  if (windowWidth < medium) {
     showDisplayItem = breakPointsCard[0].itemsToScroll;
-  } else if (width >= wide && isWide(size)) {
+  } else if (windowWidth >= wide && isWideLayout) {
     showDisplayItem = breakPointsCard[2].itemsToScroll;
   } else {
     showDisplayItem = breakPointsCard[1].itemsToScroll;
@@ -182,7 +180,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
   return (
     <CarouselContainer
       sectionColour={sectionColour}
-      isWide={isWide(size)}
+      isWide={isWideLayout}
       isStandard={isStandard(size)}
     >
       <StyledCarousel
@@ -203,14 +201,16 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
               sectionColour={sectionColour}
             >
               {infoCardData.length >
-                (isWide(size) && (width >= wide && isWide(size)) ? 3 : 2) && (
+                (isWideLayout && (windowWidth >= wide && isWideLayout)
+                  ? 3
+                  : 2) && (
                 <CustomPagination
                   activePage={activePage}
                   /* @ts-ignore */
                   onClick={handlePaginationClick}
                   current={current}
                   data={infoCardData}
-                  isWide={isWide(size)}
+                  isWide={isWideLayout}
                 />
               )}
             </Card>
