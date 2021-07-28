@@ -151,6 +151,7 @@ const renderers = ({
   },
   interactive(key, { url, element, display }) {
     const { attributes, value } = element;
+    
     switch (value) {
       case "in-article-info-card":
         return (

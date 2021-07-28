@@ -19,7 +19,7 @@ const deckApiPayloadWrapper = () => ({
 });
 
 const testData = {
-  deck_id: 43606,
+  deck_id: 43614,
   deck_name: 'Test Info card carousel standard - Copy and Subtitles',
   deck_type: 'Info Card Carousel',
   version: 1,
