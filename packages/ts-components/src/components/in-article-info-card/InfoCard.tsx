@@ -28,7 +28,7 @@ export type InfoCardData = {
   data: {
     image?: string;
     subtitle?: string;
-    copy?: string;
+    copy: string;
   };
 };
 
@@ -47,8 +47,7 @@ const { small, medium, wide } = breakpoints;
 const CustomPagination: React.FC<{
   activePage: number;
   current: number;
-  sanitiseHtml?: boolean;
-  onClick: (current: number, label?: string, sanitiseHtml?: boolean) => number;
+  onClick: (current: number, label?: string) => number;
   data: InfoCardData[];
   showDisplayItem: number;
   windowWidth: string;
