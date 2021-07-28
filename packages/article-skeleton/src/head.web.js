@@ -35,11 +35,9 @@ function getSectionName(article) {
 
 function getAuthorAsText(article) {
   const { bylines } = article;
-
   if (!bylines) {
     return null;
   }
-
   const children = bylines.reduce((acc, byline) => {
     if (Array.isArray(byline.byline)) {
       acc.push(...byline.byline);
@@ -48,8 +46,24 @@ function getAuthorAsText(article) {
     }
     return acc;
   }, []);
-
   return renderTreeAsText({ children });
+}
+
+function getAuthors({ bylines }) {
+  return bylines.map(byline => byline.author).filter(author => author);
+}
+
+function getAuthorSchema(article) {
+  const { bylines } = article;
+  return bylines
+    ? getAuthors(article).map(({ name, jobTitle, twitter, slug }) => ({
+        "@type": "Person",
+        name,
+        jobTitle,
+        url: `https://thetimes.co.uk/profile/${slug}`,
+        sameAs: `https://twitter.com/${twitter}`
+      }))
+    : [];
 }
 
 const PUBLICATION_NAMES = {
@@ -97,21 +111,24 @@ function Head({ article, logoUrl, paidContentClassName }) {
     shortHeadline,
     publishedTime,
     updatedTime,
-    hasVideo
+    hasVideo,
+    seoDescription
   } = article;
 
   const publication = PUBLICATION_NAMES[publicationName];
   const authorName = getAuthorAsText(article);
   const desc =
-    Array.isArray(descriptionMarkup) && descriptionMarkup.length
+    seoDescription ||
+    (Array.isArray(descriptionMarkup) && descriptionMarkup.length
       ? renderTreeAsText({ children: descriptionMarkup })
-      : null;
+      : null);
   const sectionname = getSectionName(article);
   const leadassetUrl = appendToImageURL(
     getArticleLeadAssetUrl(article),
     "resize",
     685
   );
+  const authors = getAuthorSchema(article);
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline || "";
   const datePublished = new Date(publishedTime).toISOString();
@@ -143,10 +160,6 @@ function Head({ article, logoUrl, paidContentClassName }) {
       isAccessibleForFree: false,
       cssSelector: `.${paidContentClassName}`
     },
-    author: {
-      "@type": "Person",
-      name: authorName || ""
-    },
     image: {
       "@type": "ImageObject",
       url: leadassetUrl,
@@ -155,6 +168,10 @@ function Head({ article, logoUrl, paidContentClassName }) {
     thumbnailUrl,
     dateModified
   };
+
+  if (authors && authors.length) {
+    Object.assign(jsonLD, { author: authors });
+  }
 
   return (
     <Context.Consumer>

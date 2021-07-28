@@ -6,10 +6,12 @@ import LazyLoad from "@times-components/lazy-load";
 import { spacing } from "@times-components/styleguide";
 import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import { TrackingContextProvider } from "@times-components/ts-components";
+import {
+  TrackingContextProvider,
+  AlgoliaSearchProvider
+} from "@times-components/ts-components";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
-import { AlgoliaSearchProvider } from "@times-components/utils";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
@@ -49,7 +51,9 @@ const ArticleSkeleton = ({
   isPreview,
   additionalRelatedArticlesFlag,
   algoliaSearchKeys,
-  inArticlePuffFlag
+  latestFromSectionFlag,
+  latestFromSection,
+  olympicsKeys
 }) => {
   const {
     commentsEnabled,
@@ -149,6 +153,7 @@ const ArticleSkeleton = ({
           <AlgoliaSearchProvider
             algoliaSearchKeys={algoliaSearchKeys}
             article={{ id: articleId, label, section, topics }}
+            analyticsStream={analyticsStream}
           >
             <Fragment>
               <HeaderAdContainer key="headerAd">
@@ -188,7 +193,7 @@ const ArticleSkeleton = ({
                       paidContentClassName={paidContentClassName}
                       template={template}
                       isPreview={isPreview}
-                      inArticlePuffFlag={inArticlePuffFlag}
+                      olympicsKeys={olympicsKeys}
                     />
                   )}
                   <PaywallPortal
@@ -215,6 +220,8 @@ const ArticleSkeleton = ({
                         additionalRelatedArticlesFlag={
                           additionalRelatedArticlesFlag
                         }
+                        latestFromSectionFlag={latestFromSectionFlag}
+                        latestFromSection={latestFromSection}
                       />
                     )}
                   </LazyLoad>

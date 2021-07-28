@@ -31,7 +31,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     isPreview,
     additionalRelatedArticlesFlag,
     algoliaSearchKeys,
-    inArticlePuffFlag
+    latestFromSectionFlag,
+    latestFromSection,
+    olympicsKeys
   } = data;
 
   return React.createElement(
@@ -89,7 +91,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               isPreview,
               additionalRelatedArticlesFlag,
               algoliaSearchKeys,
-              inArticlePuffFlag
+              latestFromSectionFlag,
+              latestFromSection,
+              olympicsKeys
             })
           );
         }

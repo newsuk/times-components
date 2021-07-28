@@ -23,9 +23,27 @@ export {
 } from './components/newsletter-puff/PreviewNewsletterPuff';
 
 export {
-  NewsletterPuffButton
-} from './components/newsletter-puff/NewsletterPuffButton';
+  AlgoliaSearchProvider,
+  useAlgoliaSearch
+} from './helpers/algolia/AlgoliaSearchProvider';
+
+export * from './components/opta/football/fixtures/OptaFootballFixtures';
+export * from './components/opta/football/standings/OptaFootballStandings';
+export * from './components/opta/football/summary/OptaFootballSummary';
+export * from './components/opta/football/match-stats/OptaFootballMatchStats';
 
 export {
-  NewsletterPuffLink
-} from './components/newsletter-puff/NewsletterPuffLink';
+  RelatedArticleSlice
+} from './components/related-article-slice/RelatedArticleSlice';
+
+export {
+  LatestFromSection
+} from './components/latest-from-section/LatestFromSection';
+
+export {
+  OlympicsMedalTable
+} from './components/olympics/medal-table/OlympicsMedalTable';
+
+export {
+  OlympicsSchedule
+} from './components/olympics/schedule/OlympicsSchedule';

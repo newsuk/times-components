@@ -3,6 +3,227 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.18](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.17...@times-components/ts-components@1.11.18) (2021-07-28)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.17](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.16...@times-components/ts-components@1.11.17) (2021-07-28)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.16](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.15...@times-components/ts-components@1.11.16) (2021-07-27)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.15](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.14...@times-components/ts-components@1.11.15) (2021-07-26)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.14](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.13...@times-components/ts-components@1.11.14) (2021-07-26)
+
+
+### Bug Fixes
+
+* **te-000:** update olympic schedule scroll ([#2749](https://github.com/newsuk/times-components/issues/2749)) ([d89533b](https://github.com/newsuk/times-components/commit/d89533b7e6dda119b6318f380c33b90c796b0964))
+
+
+
+
+
+## [1.11.13](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.12...@times-components/ts-components@1.11.13) (2021-07-26)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.12](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.11...@times-components/ts-components@1.11.12) (2021-07-23)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.11](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.10...@times-components/ts-components@1.11.11) (2021-07-22)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.10](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.9...@times-components/ts-components@1.11.10) (2021-07-21)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.9](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.8...@times-components/ts-components@1.11.9) (2021-07-20)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.8](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.7...@times-components/ts-components@1.11.8) (2021-07-20)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.7](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.6...@times-components/ts-components@1.11.7) (2021-07-20)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.6](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.5...@times-components/ts-components@1.11.6) (2021-07-19)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.5](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.4...@times-components/ts-components@1.11.5) (2021-07-19)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.3...@times-components/ts-components@1.11.4) (2021-07-08)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.2...@times-components/ts-components@1.11.3) (2021-07-07)
+
+
+### Bug Fixes
+
+* **TE-60:** opta football updates ([#2732](https://github.com/newsuk/times-components/issues/2732)) ([deb333b](https://github.com/newsuk/times-components/commit/deb333b121ef286da9743f9f1566394430d89dfa))
+
+
+
+
+
+## [1.11.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.1...@times-components/ts-components@1.11.2) (2021-07-05)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.0...@times-components/ts-components@1.11.1) (2021-07-02)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.11.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.10.2...@times-components/ts-components@1.11.0) (2021-06-29)
+
+
+### Features
+
+* **TE-120:** Null checks on related article slice ([#2730](https://github.com/newsuk/times-components/issues/2730)) ([6f40918](https://github.com/newsuk/times-components/commit/6f409189a7da396f2d108ff4d5b25cad9080cecd))
+
+
+
+
+
+## [1.10.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.10.1...@times-components/ts-components@1.10.2) (2021-06-23)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.10.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.10.0...@times-components/ts-components@1.10.1) (2021-06-18)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.10.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.9.0...@times-components/ts-components@1.10.0) (2021-06-17)
+
+
+### Features
+
+* TE-11 Inline related articles with a single article ([#2716](https://github.com/newsuk/times-components/issues/2716)) ([b1c0141](https://github.com/newsuk/times-components/commit/b1c0141701ee3838d1f39eb9c66cd1b7e41c2cee))
+
+
+
+
+
+# [1.9.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.8.0...@times-components/ts-components@1.9.0) (2021-06-16)
+
+
+### Features
+
+* OPTA Football - Match Stats ([#2724](https://github.com/newsuk/times-components/issues/2724)) ([4120484](https://github.com/newsuk/times-components/commit/4120484ca972545e7ddfe57403ecb8516feec7eb))
+
+
+
+
+
+# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.7.0...@times-components/ts-components@1.8.0) (2021-06-10)
+
+
+### Features
+
+* OPTA football widgets ([#2719](https://github.com/newsuk/times-components/issues/2719)) ([096a660](https://github.com/newsuk/times-components/commit/096a660a495899c216fdb99fad009e223efbd13c))
+
+
+
+
+
+# [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.6.0...@times-components/ts-components@1.7.0) (2021-06-10)
+
+
+### Features
+
+* **TE:** OPTA football widgets ([#2718](https://github.com/newsuk/times-components/issues/2718)) ([c84757e](https://github.com/newsuk/times-components/commit/c84757eb85b5f757fb57f49c1278baad4fa47ccd))
+
+
+
+
+
 # [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.5.0...@times-components/ts-components@1.6.0) (2021-06-04)
 
 

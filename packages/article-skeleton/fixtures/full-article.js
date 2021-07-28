@@ -2,21 +2,51 @@ import defaultContent from "./full-article-content";
 
 export const bylineWithLink = () => [
   {
-    byline: [
+    bylines: [
       {
-        attributes: {
-          slug: "kaya-burgess"
+        author: {
+          image:
+            "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+          jobTitle: "Asia Editor",
+          twitter: "dicklp",
+          slug: "richard-lloyd-parry",
+          name: "Richard Lloyd Parry"
         },
-        children: [
+        byline: [
           {
+            name: "author",
+            children: [
+              {
+                name: "text",
+                children: [],
+                attributes: {
+                  value: "Richard Lloyd Parry"
+                }
+              }
+            ],
             attributes: {
-              value: "Kaya Burgess"
-            },
-            children: [],
-            name: "text"
+              slug: "richard-lloyd-parry"
+            }
           }
         ],
-        name: "author"
+        image: null
+      },
+      {
+        byline: [
+          {
+            name: "inline",
+            children: [
+              {
+                name: "text",
+                children: [],
+                attributes: {
+                  value: ", Tokyo"
+                }
+              }
+            ]
+          }
+        ],
+        image: null
       }
     ]
   },
@@ -731,6 +761,14 @@ export const videoLeadAsset = ({
 
 const defaultBylines = [
   {
+    author: {
+      image:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+      jobTitle: "Asia Editor",
+      twitter: "dicklp",
+      slug: "richard-lloyd-parry",
+      name: "Richard Lloyd Parry"
+    },
     byline: [
       {
         attributes: {
@@ -767,6 +805,14 @@ const defaultBylines = [
     ]
   },
   {
+    author: {
+      image:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+      jobTitle: "Asia Editor",
+      twitter: "dicklp",
+      slug: "richard-lloyd-parry",
+      name: "Richard Lloyd Parry"
+    },
     byline: [
       {
         attributes: {
@@ -1764,23 +1810,52 @@ export default ({ withAds = true, ...config } = {}) => {
 };
 export const testFixture = {
   __typename: "Article",
+
   bylines: [
+    {
+      author: {
+        image:
+          "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+        jobTitle: "Asia Editor",
+        twitter: "dicklp",
+        slug: "richard-lloyd-parry",
+        name: "Richard Lloyd Parry"
+      },
+      byline: [
+        {
+          name: "author",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value: "Richard Lloyd Parry"
+              }
+            }
+          ],
+          attributes: {
+            slug: "richard-lloyd-parry"
+          }
+        }
+      ],
+      image: null
+    },
     {
       byline: [
         {
-          attributes: {},
+          name: "inline",
           children: [
             {
-              attributes: {
-                value: "Some byline"
-              },
+              name: "text",
               children: [],
-              name: "text"
+              attributes: {
+                value: ", Tokyo"
+              }
             }
-          ],
-          name: "inline"
+          ]
         }
-      ]
+      ],
+      image: null
     }
   ],
   commentCount: 65,

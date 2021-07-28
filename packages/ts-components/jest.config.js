@@ -35,7 +35,15 @@ const buildConfig = dir => {
       '!<rootDir>/packages/ts-components/src/index.*',
       '!<rootDir>/packages/ts-components/src/fixtures/**',
       '!<rootDir>/node_modules/'
-    ]
+    ],
+    coverageThreshold: {
+      global: {
+        statements: 70,
+        branches: 70,
+        functions: 80,
+        lines: 70
+      }
+    }
   };
 };
 

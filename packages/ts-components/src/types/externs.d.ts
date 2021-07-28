@@ -53,6 +53,7 @@ declare module '@times-components/utils' {
   ) => string;
 
   export const capitalise: (s: string) => string;
+  export const stripTags: (input: string, replaceWith: string) => string;
 }
 
 declare module '@times-components/styleguide' {
@@ -68,9 +69,11 @@ declare module '@times-components/styleguide' {
 
   type Fonts = {
     body: string;
+    bodyRegular: string;
     headline: string;
-    supporting: string;
+    brandColour: string;
     headlineRegular: string;
+    supporting: string;
   };
 
   export const fonts: Fonts;
@@ -139,4 +142,27 @@ declare module '@times-components/provider-queries' {
 
 declare module '@times-components/provider-test-tools' {
   export const MockedProvider: React.FC<{ mocks: any }>;
+}
+
+declare module '@times-components/date-publication' {
+  type DatePublicationProps = {
+    date: string;
+    publication?: 'SUNDAYTIMES' | 'TIMES';
+    showDay: boolean;
+  };
+
+  export const DatePublication: React.FC<DatePublicationProps>;
+  export default DatePublication;
+}
+
+declare module '@times-components/related-articles' {
+  import { FC } from 'react';
+  type RelatedArticles = {
+    heading?: string;
+    analyticsStream: AnalyticsStreamType;
+    isVisible: boolean;
+    slice: any;
+  };
+  const RelatedArticles: FC<RelatedArticles>;
+  export default RelatedArticles;
 }

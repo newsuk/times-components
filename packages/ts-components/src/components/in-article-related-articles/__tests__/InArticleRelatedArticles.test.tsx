@@ -24,6 +24,12 @@ const relatedArticles = [
   }
 ];
 
+jest.mock('../RelatedArticle', () => ({ RelatedArticle: 'RelatedArticle' }));
+
+jest.mock('../SingleRelatedArticle', () => ({
+  SingleRelatedArticle: 'SingleRelatedArticle'
+}));
+
 describe('<RelatedArticle>', () => {
   it('default', () => {
     const { baseElement } = render(
@@ -34,7 +40,6 @@ describe('<RelatedArticle>', () => {
       />
     );
     expect(baseElement).toMatchSnapshot();
-    expect(baseElement.getElementsByTagName('img').length).toEqual(3);
   });
   it('no images', () => {
     const { baseElement } = render(
@@ -46,6 +51,26 @@ describe('<RelatedArticle>', () => {
       />
     );
     expect(baseElement).toMatchSnapshot();
-    expect(baseElement.getElementsByTagName('img').length).toEqual(0);
+  });
+  it('single article', () => {
+    const { baseElement } = render(
+      <InArticleRelatedArticles
+        sectionColour="red"
+        relatedArticles={[relatedArticles[0]]}
+        heading="Heading"
+      />
+    );
+    expect(baseElement).toMatchSnapshot();
+  });
+  it('single article no image', () => {
+    const { baseElement } = render(
+      <InArticleRelatedArticles
+        sectionColour="red"
+        relatedArticles={[relatedArticles[0]]}
+        heading="Heading"
+        showImages={false}
+      />
+    );
+    expect(baseElement).toMatchSnapshot();
   });
 });

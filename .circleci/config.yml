@@ -76,6 +76,9 @@ jobs:
                   command: |
                       npx yarn@1.16.0 test
                   working_directory: ~/project/
+            - store_artifacts:
+                path: ./storybook-static
+                destination: Storybook
 
     run_noplatform_tests:
         executor: node

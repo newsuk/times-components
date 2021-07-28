@@ -5,7 +5,11 @@ import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import { useAlgoliaSearch } from "@times-components/utils";
+import {
+  RelatedArticleSlice,
+  LatestFromSection,
+  useAlgoliaSearch
+} from "@times-components/ts-components";
 
 import ArticleTopics from "./article-topics";
 import { ShareAndSaveContainer } from "./styles/responsive";
@@ -27,7 +31,9 @@ const ArticleExtras = ({
   relatedArticlesVisible,
   spotAccountId,
   topics,
-  additionalRelatedArticlesFlag
+  additionalRelatedArticlesFlag,
+  latestFromSectionFlag,
+  latestFromSection
 }) => {
   const [
     algoliaRelatedArticleSlice,
@@ -83,6 +89,18 @@ const ArticleExtras = ({
           isVisible={relatedArticlesVisible}
           slice={relatedArticleSlice}
         />
+        {latestFromSectionFlag &&
+          latestFromSection && (
+            <LatestFromSection
+              latestFromSection={latestFromSection}
+              analyticsStream={analyticsStream}
+            />
+          )}
+        <RelatedArticleSlice
+          heading="Related Articles"
+          analyticsStream={analyticsStream}
+          slice={relatedArticleSlice}
+        />
         {additionalRelatedArticlesFlag &&
           algoliaRelatedArticleSlice && (
             <RelatedArticles
@@ -130,13 +148,16 @@ ArticleExtras.propTypes = {
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
-  additionalRelatedArticlesFlag: PropTypes.bool.isRequired
+  additionalRelatedArticlesFlag: PropTypes.bool.isRequired,
+  latestFromSectionFlag: PropTypes.bool.isRequired,
+  latestFromSection: PropTypes.shape({})
 };
 
 ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
   spotAccountId: null,
-  topics: null
+  topics: null,
+  latestFromSection: null
 };
 
 export default ArticleExtras;

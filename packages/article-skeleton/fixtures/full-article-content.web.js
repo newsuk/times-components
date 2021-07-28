@@ -159,6 +159,48 @@ export default [
         name: "interactive"
       },
       {
+        attributes: {
+          element: {
+            attributes: {
+              season: "2020",
+              competition: "8",
+              "date-from": "2021-04-05",
+              "date-to": "2021-04-05"
+            },
+            value: "opta-football-fixtures-v3"
+          }
+        },
+        children: [],
+        name: "interactive"
+      },
+      {
+        attributes: {
+          element: {
+            attributes: {
+              season: "2020",
+              competition: "3"
+            },
+            value: "opta-football-standings-v3"
+          }
+        },
+        children: [],
+        name: "interactive"
+      },
+      {
+        attributes: {
+          element: {
+            attributes: {
+              season: "2020",
+              competition: "8",
+              match: "2128595"
+            },
+            value: "opta-football-match-summary-v3"
+          }
+        },
+        children: [],
+        name: "interactive"
+      },
+      {
         attributes: {},
         children: [
           {
@@ -237,6 +279,26 @@ export default [
         },
         children: [],
         name: "video"
+      },
+      {
+        attributes: {
+          element: {
+            attributes: {},
+            value: "olympics-medal-table"
+          }
+        },
+        children: [],
+        name: "interactive"
+      },
+      {
+        attributes: {
+          element: {
+            attributes: {},
+            value: "olympics-schedule"
+          }
+        },
+        children: [],
+        name: "interactive"
       },
       {
         attributes: {},

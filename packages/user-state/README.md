@@ -22,13 +22,15 @@ You can use it as follows.
 import UserState from "@times-components/user-state";
 
 <UserState
-    state={UserState.subscriber}
-    fallback={<div>Will only render for non-subscribers</div>}
-    serverRender={/* Control whether you want this to render on the server at all */}
+  state={UserState.subscriber}
+  fallback={<div>Will only render for non-subscribers</div>}
+  serverRender={
+    /* Control whether you want this to render on the server at all */
+  }
 >
-    // Anything you only want to render for subscribers
-    <div>Will only render for subscribers</div>
-</UserState>
+  // Anything you only want to render for subscribers
+  <div>Will only render for subscribers</div>
+</UserState>;
 ```
 
 The `state` property is simply a matcher function that gets passed the current user
@@ -63,9 +65,7 @@ UserState.mockStates = [
 // Use UseState as usual in your production code
 import UserState from "@times-components/user-state";
 
-<UserState state={/*...*/}>
-  // ...
-</UserState>
+<UserState state={/*...*/}>// ...</UserState>;
 ```
 
 ## Storybook
