@@ -2,7 +2,49 @@
 
 exports[`<OlympicsSchedule> click show all 1`] = `
 <DocumentFragment>
-  .c0 {
+  .c1 {
+  background: #F9F9F9;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0px;
+}
+
+.c4 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c4:hover {
+  background-color: #e4e4e4;
+}
+
+.c2 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #402f7a;
+  font-family: GillSansMTStd-Medium;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.c3 {
+  font-size: 24px;
+  line-height: 18px;
+  font-family: TimesModern-Bold;
+  margin: 14px 0 10px 0;
+}
+
+.c0 {
   border-top: 2px solid #402f7a;
   position: relative;
   margin: 0 auto 20px auto;
@@ -106,47 +148,10 @@ exports[`<OlympicsSchedule> click show all 1`] = `
   background-color: #EDEDED;
 }
 
-.c1 {
-  background: #F9F9F9;
-  padding: 20px 0;
-  text-align: center;
-  margin: 0px;
-}
-
-.c4 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid #DBDBDB;
-  top: -80px;
-  position: relative;
-  cursor: pointer;
-}
-
-.c4:hover {
-  background-color: #e4e4e4;
-}
-
-.c2 {
-  font-size: 12px;
-  line-height: 14px;
-  color: #402f7a;
-  font-family: GillSansMTStd-Medium;
-  font-weight: normal;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-}
-
-.c3 {
-  font-size: 24px;
-  line-height: 18px;
-  font-family: TimesModern-Bold;
-  margin: 14px 0 10px 0;
-  font-weight: normal;
+@media only screen and (min-width:768px) {
+  .c3 {
+    font-size: 32px;
+  }
 }
 
 @media (min-width:768px) {
@@ -167,12 +172,6 @@ exports[`<OlympicsSchedule> click show all 1`] = `
   }
 }
 
-@media only screen and (min-width:768px) {
-  .c3 {
-    font-size: 32px;
-  }
-}
-
 <div
     class="c0"
   >
@@ -184,11 +183,11 @@ exports[`<OlympicsSchedule> click show all 1`] = `
       >
         Tokyo 2020
       </span>
-      <h2
+      <div
         class="c3"
       >
         Event Schedule
-      </h2>
+      </div>
     </div>
     <div
       class="pa-schedule"
@@ -210,7 +209,49 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 
 exports[`<OlympicsSchedule> renders 1`] = `
 <DocumentFragment>
-  .c0 {
+  .c1 {
+  background: #F9F9F9;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0px;
+}
+
+.c4 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c4:hover {
+  background-color: #e4e4e4;
+}
+
+.c2 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #402f7a;
+  font-family: GillSansMTStd-Medium;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.c3 {
+  font-size: 24px;
+  line-height: 18px;
+  font-family: TimesModern-Bold;
+  margin: 14px 0 10px 0;
+}
+
+.c0 {
   border-top: 2px solid #402f7a;
   position: relative;
   margin: 0 auto 20px auto;
@@ -314,47 +355,10 @@ exports[`<OlympicsSchedule> renders 1`] = `
   background-color: #EDEDED;
 }
 
-.c1 {
-  background: #F9F9F9;
-  padding: 20px 0;
-  text-align: center;
-  margin: 0px;
-}
-
-.c4 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid #DBDBDB;
-  top: -80px;
-  position: relative;
-  cursor: pointer;
-}
-
-.c4:hover {
-  background-color: #e4e4e4;
-}
-
-.c2 {
-  font-size: 12px;
-  line-height: 14px;
-  color: #402f7a;
-  font-family: GillSansMTStd-Medium;
-  font-weight: normal;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-}
-
-.c3 {
-  font-size: 24px;
-  line-height: 18px;
-  font-family: TimesModern-Bold;
-  margin: 14px 0 10px 0;
-  font-weight: normal;
+@media only screen and (min-width:768px) {
+  .c3 {
+    font-size: 32px;
+  }
 }
 
 @media (min-width:768px) {
@@ -375,12 +379,6 @@ exports[`<OlympicsSchedule> renders 1`] = `
   }
 }
 
-@media only screen and (min-width:768px) {
-  .c3 {
-    font-size: 32px;
-  }
-}
-
 <div
     class="c0"
   >
@@ -392,11 +390,11 @@ exports[`<OlympicsSchedule> renders 1`] = `
       >
         Tokyo 2020
       </span>
-      <h2
+      <div
         class="c3"
       >
         Event Schedule
-      </h2>
+      </div>
     </div>
     <div
       class="pa-schedule"
@@ -418,7 +416,49 @@ exports[`<OlympicsSchedule> renders 1`] = `
 
 exports[`<OlympicsSchedule> renders outside of article 1`] = `
 <DocumentFragment>
-  .c0 {
+  .c1 {
+  background: #F9F9F9;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0px;
+}
+
+.c4 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c4:hover {
+  background-color: #e4e4e4;
+}
+
+.c2 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #402f7a;
+  font-family: GillSansMTStd-Medium;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.c3 {
+  font-size: 24px;
+  line-height: 18px;
+  font-family: TimesModern-Bold;
+  margin: 14px 0 10px 0;
+}
+
+.c0 {
   border-top: 2px solid #402f7a;
   position: relative;
   margin: 0 auto 20px auto;
@@ -522,58 +562,15 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
   background-color: #EDEDED;
 }
 
-.c1 {
-  background: #F9F9F9;
-  padding: 20px 0;
-  text-align: center;
-  margin: 0px;
-}
-
-.c4 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid #DBDBDB;
-  top: -80px;
-  position: relative;
-  cursor: pointer;
-}
-
-.c4:hover {
-  background-color: #e4e4e4;
-}
-
-.c2 {
-  font-size: 12px;
-  line-height: 14px;
-  color: #402f7a;
-  font-family: GillSansMTStd-Medium;
-  font-weight: normal;
-  text-transform: uppercase;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
-}
-
-.c3 {
-  font-size: 24px;
-  line-height: 18px;
-  font-family: TimesModern-Bold;
-  margin: 14px 0 10px 0;
-  font-weight: normal;
+@media only screen and (min-width:768px) {
+  .c3 {
+    font-size: 32px;
+  }
 }
 
 @media only screen and (min-width:321px) {
   .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
     left: calc(100% - 75px);
-  }
-}
-
-@media only screen and (min-width:768px) {
-  .c3 {
-    font-size: 32px;
   }
 }
 
@@ -588,11 +585,11 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
       >
         Tokyo 2020
       </span>
-      <h2
+      <div
         class="c3"
       >
         Event Schedule
-      </h2>
+      </div>
     </div>
     <div
       class="pa-schedule"

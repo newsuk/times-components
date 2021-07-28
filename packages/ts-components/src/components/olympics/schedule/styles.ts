@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/styleguide';
+import { olympicColour } from '../shared-styles';
 
 export const Container = styled.div<{
   showAll: boolean;
   inArticle: boolean;
 }>`
-  border-top: 2px solid #402f7a;
+  border-top: 2px solid ${olympicColour};
   position: relative;
   margin: 0 auto 20px auto;
 
@@ -52,7 +53,7 @@ export const Container = styled.div<{
         }
 
         .pa_UnitListView_unit-time {
-          color: #402f7a;
+          color: ${olympicColour};
           line-height: 30px;
           position: absolute;
         }

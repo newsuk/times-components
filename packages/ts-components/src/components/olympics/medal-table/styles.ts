@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/styleguide';
+import { olympicColour } from '../shared-styles';
 
 const highlightColour = '#e4e4e4';
 export const Container = styled.div<{
   showAll: boolean;
   inArticle: boolean;
 }>`
-  border-top: 2px solid #402f7a;
+  border-top: 2px solid ${olympicColour};
   position: relative;
   margin: 0 auto 20px auto;
 
@@ -68,7 +69,7 @@ export const Container = styled.div<{
 
           td:first-child {
             font-family: ${fonts.supporting};
-            color: #402f7a;
+            color: ${olympicColour};
           }
 
           &:nth-child(n + 8) {
