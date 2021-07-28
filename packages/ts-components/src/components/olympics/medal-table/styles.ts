@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/styleguide';
+import { olympicColour } from '../shared-styles';
 
 const highlightColour = '#e4e4e4';
 export const Container = styled.div<{
-  sectionColour: string;
   showAll: boolean;
   inArticle: boolean;
 }>`
+  border-top: 2px solid ${olympicColour};
   position: relative;
   margin: 0 auto 20px auto;
 
@@ -68,7 +69,7 @@ export const Container = styled.div<{
 
           td:first-child {
             font-family: ${fonts.supporting};
-            color: ${({ sectionColour }) => sectionColour};
+            color: ${olympicColour};
           }
 
           &:nth-child(n + 8) {
@@ -92,22 +93,5 @@ export const Container = styled.div<{
   .buttonContainer {
     text-align: center;
     height: 0;
-  }
-`;
-
-export const Button = styled.button`
-  font-family: ${fonts.supporting};
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid ${colours.functional.keyline};
-
-  top: -80px;
-  position: relative;
-
-  cursor: pointer;
-
-  &:hover {
-    background-color: ${highlightColour};
   }
 `;

@@ -1,18 +1,16 @@
 import React, { FC, useEffect, useState } from 'react';
-import { colours } from '@times-components/styleguide';
-import { Container, Button } from './styles';
+import { Container } from './styles';
+import { HeadingContainer, Heading, Button, Label } from '../shared-styles';
 import { OlympicsKeys } from '../types';
 import { injectScript } from '../../../helpers/widgets/inject-script';
 
 export const OlympicsMedalTable: FC<{
   highlighted?: string;
   keys: OlympicsKeys;
-  sectionColor?: string;
   inArticle?: boolean;
 }> = ({
   keys: { endpoint, authToken, gamesCode },
   highlighted = 'GBR',
-  sectionColor = colours.section.sport,
   inArticle = true
 }) => {
   const [showAll, setShowAll] = useState(false);
@@ -24,11 +22,11 @@ export const OlympicsMedalTable: FC<{
   }, []);
 
   return (
-    <Container
-      sectionColour={sectionColor}
-      showAll={showAll}
-      inArticle={inArticle}
-    >
+    <Container showAll={showAll} inArticle={inArticle}>
+      <HeadingContainer>
+        <Label>Tokyo 2020</Label>
+        <Heading>Olympic Medal Count</Heading>
+      </HeadingContainer>
       <div
         className="pa-medaltable"
         data-auth-token={authToken}

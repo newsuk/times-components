@@ -13,15 +13,13 @@ export const AutoNewsletterPuff = ({
     trackingName={`auto-puff-${code}`}
     displayFunction={count => count !== undefined && [1, 3, 5].includes(count)}
   >
-    <div style={{ display: 'none' }}>
-      <InlineNewsletterPuff
-        code={code}
-        copy={copy}
-        headline={headline}
-        imageUri={imageUri}
-        label={label}
-      />
-    </div>
+    <InlineNewsletterPuff
+      code={code}
+      copy={copy}
+      headline={headline}
+      imageUri={imageUri}
+      label={label}
+    />
   </ViewCountWrapper>
 );
 
