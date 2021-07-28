@@ -151,7 +151,7 @@ const renderers = ({
   },
   interactive(key, { url, element, display }) {
     const { attributes, value } = element;
-    
+
     switch (value) {
       case "in-article-info-card":
         return (
@@ -163,6 +163,7 @@ const renderers = ({
             )}
           </Context.Consumer>
         );
+        
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations
         const { code, copy, headline, imageUri, label } = attributes;
