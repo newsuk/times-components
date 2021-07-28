@@ -362,6 +362,187 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 </DocumentFragment>
 `;
 
+exports[`<OlympicsMedalTable> renders default keys 1`] = `
+<DocumentFragment>
+  .c1 {
+  background: #F9F9F9;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0px;
+}
+
+.c4 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 14px 16px;
+  border: 1px solid #DBDBDB;
+  top: -80px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c4:hover {
+  background-color: #e4e4e4;
+}
+
+.c2 {
+  font-size: 12px;
+  line-height: 14px;
+  color: #402f7a;
+  font-family: GillSansMTStd-Medium;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+}
+
+.c3 {
+  font-size: 24px;
+  line-height: 18px;
+  font-family: TimesModern-Bold;
+  margin: 14px 0 10px 0;
+}
+
+.c0 {
+  border-top: 2px solid #402f7a;
+  position: relative;
+  margin: 0 auto 20px auto;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable {
+  font-size: 16px;
+  font-family: TimesModern-Bold;
+  background-color: #F9F9F9;
+  padding-bottom: 60px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable .pa_MedalTableView_header-bg {
+  height: 48px;
+  background: #EDEDED;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table {
+  margin-top: -48px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table thead {
+  color: #1D1D1B;
+  line-height: 48px;
+  font-family: GillSansMTStd-Medium;
+  font-size: 14px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th {
+  width: 40px;
+  max-width: 40px;
+  min-width: 40px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(2) {
+  width: auto;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(1),
+.c0 .pa-medaltable .pa_MedalTableView_medaltable table th:nth-child(6) {
+  width: 60px;
+  max-width: 60px;
+  min-width: 60px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr {
+  background-color: #F9F9F9;
+  border-bottom: 1px solid #DBDBDB;
+  color: #1D1D1B;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr td {
+  padding: 8px 0 3px;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr td:first-child {
+  font-family: GillSansMTStd-Medium;
+  color: #402f7a;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr:nth-child(n + 8) {
+  display: none;
+}
+
+.c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr.pa_MedalTableView_highlight {
+  display: table-row;
+  background-color: #e4e4e4;
+}
+
+.c0 .pa-medaltable .pa_OdfFooter_ctr {
+  position: relative;
+  top: 60px;
+  font-family: GillSansMTStd-Medium;
+  color: #1D1D1B;
+}
+
+.c0 .buttonContainer {
+  text-align: center;
+  height: 0;
+}
+
+@media only screen and (min-width:768px) {
+  .c3 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <span
+        class="c2"
+      >
+        Tokyo 2020
+      </span>
+      <div
+        class="c3"
+      >
+        Olympic Medal Count
+      </div>
+    </div>
+    <div
+      class="pa-medaltable"
+      data-auth-token="token"
+      data-games-code="OG1896"
+      data-medal-icon-type="round"
+      data-org-code="GBR"
+    />
+    <div
+      class="buttonContainer"
+    >
+      <button
+        class="c4"
+      >
+        Show All
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`<OlympicsMedalTable> renders outside of article 1`] = `
 <DocumentFragment>
   .c1 {

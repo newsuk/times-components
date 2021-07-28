@@ -3,13 +3,16 @@ import React, { FC, useEffect, useState } from 'react';
 import { Container } from './styles';
 import { HeadingContainer, Label, Button, Heading } from '../shared-styles';
 
-import { OlympicsKeys } from '../types';
 import { injectScript } from '../../../helpers/widgets/inject-script';
+import { OlympicsKeys, config } from '../OlympicsKeys';
 
 export const OlympicsSchedule: FC<{
-  keys: OlympicsKeys;
+  keys?: OlympicsKeys;
   inArticle?: boolean;
-}> = ({ keys: { endpoint, authToken, gamesCode }, inArticle = true }) => {
+}> = ({
+  keys: { endpoint, authToken, gamesCode } = config.prod,
+  inArticle = true
+}) => {
   useEffect(() => {
     injectScript(`${endpoint}/static/schedule.js`);
   }, []);
