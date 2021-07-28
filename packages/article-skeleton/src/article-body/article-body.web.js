@@ -152,12 +152,12 @@ const renderers = ({
   interactive(key, { url, element, display }) {
     const { attributes, value } = element;
     switch (value) {
-      case "gallery-carousel":
+      case "in-article-info-card":
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
               <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                <GalleryCarousel sectionColour={theme.sectionColour} />
+                <InfoCard sectionColour={theme.sectionColour} />
               </FetchProvider>
             )}
           </Context.Consumer>

@@ -158,11 +158,11 @@ export default [
         children: [],
         name: "interactive"
       },
-      {
+     {
         attributes: {
           element: {
-            attributes: { "deck-id": "43434" },
-            value: "gallery-carousel"
+            attributes: { "deck-id": "43614" },
+            value: "in-article-info-card"
           }
         },
         children: [],
