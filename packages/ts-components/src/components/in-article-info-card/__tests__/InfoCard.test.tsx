@@ -55,11 +55,43 @@ const testData = {
           copy:
             'Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history'
         }
+      },
+      {
+        type: 'card',
+        data: {
+          image: '',
+          subtitle: 'Subtitle 1',
+          copy: 'Copy text 1'
+        }
+      },
+      {
+        type: 'card',
+        data: {
+          image: '',
+          subtitle: 'Subtitle 2',
+          copy: 'Copy text 2'
+        }
+      },
+      {
+        type: 'card',
+        data: {
+          image: '',
+          subtitle: 'Subtitle 3',
+          copy: 'Copy text 3'
+        }
+      },
+      {
+        type: 'card',
+        data: {
+          image: '',
+          subtitle: 'Subtitle 4',
+          copy: 'Copy text 4'
+        }
       }
     ]
   },
   html:
-    '<!DOCTYPE html> <html> <head> <title>The Times - Image Gallery</title></head> <body> </body> </html>'
+    '<!DOCTYPE html> <html> <head> <title>The Times - Info Card</title></head> <body> </body> </html>'
 };
 
 const renderInfoCard = () => render(<InfoCard sectionColour={'#636C17'} />);
@@ -113,18 +145,13 @@ describe('InfoCard', () => {
 
     it('click previous button', async () => {
       const { getAllByTestId } = renderInfoCard();
-
       const previousButton = getAllByTestId('Previous button')[0];
       const nextButton = getAllByTestId('Next Button')[0];
-
-      fireEvent.click(nextButton);
-
-      expect(previousButton).not.toHaveAttribute('disabled');
-      expect(nextButton).toHaveAttribute('disabled');
+      expect(previousButton).toHaveAttribute('disabled');
+      expect(nextButton).not.toHaveAttribute('disabled');
     });
     it('click next button', async () => {
       (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
-      const analyticsStream = jest.fn();
 
       const { getAllByTestId } = renderInfoCard();
 
@@ -135,40 +162,21 @@ describe('InfoCard', () => {
       expect(nextButton).not.toHaveAttribute('disabled');
 
       fireEvent.click(nextButton);
-
-      expect(analyticsStream).toHaveBeenCalledTimes(1);
-      expect(analyticsStream).toHaveBeenCalledWith({
-        attrs: {
-          article_name: 'Headline',
-          component_name: 'Gallery Headline',
-          component_type: 'in-article component : gallery : interactive',
-          eventTime: '2021-05-03T00:00:00.000Z',
-          event_navigation_action: 'navigation',
-          event_navigation_name: 'button : right',
-          section_details: 'Section'
-        },
-        component: 'ArticleSkeleton',
-        object: 'GalleryCarousel'
-      });
       expect(previousButton).not.toHaveAttribute('disabled');
-      expect(nextButton).toHaveAttribute('disabled');
+      expect(nextButton).not.toHaveAttribute('disabled');
     });
 
     it('page indicator button', async () => {
       (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
-      const analyticsStream = jest.fn();
-
       const { getAllByTestId } = renderInfoCard();
       const previousButton = getAllByTestId('Previous button')[0];
       const nextButton = getAllByTestId('Next Button')[0];
       expect(previousButton).toHaveAttribute('disabled');
       expect(nextButton).not.toHaveAttribute('disabled');
-
-      fireEvent.click(getAllByTestId('Page Indicator')[1]);
-
-      expect(analyticsStream).toHaveBeenCalledTimes(0);
+      const pageIndicatorButton = getAllByTestId('Page Indicator')[1];
+      fireEvent.click(pageIndicatorButton);
       expect(previousButton).not.toHaveAttribute('disabled');
-      expect(nextButton).toHaveAttribute('disabled');
+      expect(nextButton).not.toHaveAttribute('disabled');
     });
   });
 });
