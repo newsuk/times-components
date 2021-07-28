@@ -57,24 +57,13 @@ function getAuthorSchema(article) {
   const { bylines } = article;
   return bylines
     ? getAuthors(article).map(({ name, jobTitle, twitter, slug }) => {
-        const person = {
+        const url = `https://thetimes.co.uk/profile/${slug}`;
+        return {
           "@type": "Person",
           name,
-          jobTitle
+          jobTitle,
+          sameAs: twitter ? [url, `https://twitter.com/${twitter}`] : url
         };
-        const url = `https://thetimes.co.uk/profile/${slug}`;
-        const twitterUrl = `https://twitter.com/${twitter}`;
-        Object.assign(
-          person,
-          !twitter
-            ? {
-                sameAs: url
-              }
-            : {
-                sameAs: [url, twitterUrl]
-              }
-        );
-        return person;
       })
     : [];
 }
