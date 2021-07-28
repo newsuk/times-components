@@ -174,21 +174,20 @@ function Head({ article, logoUrl, paidContentClassName }) {
     Object.assign(jsonLD, { author: authors });
   }
 
-  let videoJsonLD = null;
-  if (hasVideo) {
-    videoJsonLD = {
-      "@context": "https://schema.org/",
-      "@type": "VideoObject",
-      name: leadAsset.title || title,
-      uploadDate: dateModified,
-      thumbnailUrl,
-      description:
-        Array.isArray(descriptionMarkup) && descriptionMarkup.length
-          ? renderTreeAsText({ children: descriptionMarkup })
-          : null,
-      contentUrl: url
-    };
-  }
+  const videoJsonLD = hasVideo
+    ? {
+        "@context": "https://schema.org/",
+        "@type": "VideoObject",
+        name: leadAsset.title || title,
+        uploadDate: dateModified,
+        thumbnailUrl,
+        description:
+          Array.isArray(descriptionMarkup) && descriptionMarkup.length
+            ? renderTreeAsText({ children: descriptionMarkup })
+            : null,
+        contentUrl: url
+      }
+    : null;
 
   return (
     <Context.Consumer>
