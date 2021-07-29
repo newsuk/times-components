@@ -90,13 +90,11 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
   color: #402f7a;
   line-height: 30px;
-  position: absolute;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
   font-family: GillSansMTStd-Medium;
   font-size: 16px;
-  margin-right: 50px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_discipline {
@@ -106,9 +104,8 @@ exports[`<OlympicsSchedule> click show all 1`] = `
   margin-top: 4px;
 }
 
-.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
-  position: relative;
-  left: calc(100% - 65px);
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_status-live {
+  padding: 8px 20px 4px;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -163,12 +160,6 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 @media (min-width:1024px) {
   .c0 {
     width: 56.2%;
-  }
-}
-
-@media only screen and (min-width:321px) {
-  .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
-    left: calc(100% - 75px);
   }
 }
 
@@ -297,13 +288,11 @@ exports[`<OlympicsSchedule> render default keys 1`] = `
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
   color: #402f7a;
   line-height: 30px;
-  position: absolute;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
   font-family: GillSansMTStd-Medium;
   font-size: 16px;
-  margin-right: 50px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_discipline {
@@ -313,9 +302,8 @@ exports[`<OlympicsSchedule> render default keys 1`] = `
   margin-top: 4px;
 }
 
-.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
-  position: relative;
-  left: calc(100% - 65px);
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_status-live {
+  padding: 8px 20px 4px;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -370,12 +358,6 @@ exports[`<OlympicsSchedule> render default keys 1`] = `
 @media (min-width:1024px) {
   .c0 {
     width: 56.2%;
-  }
-}
-
-@media only screen and (min-width:321px) {
-  .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
-    left: calc(100% - 75px);
   }
 }
 
@@ -504,13 +486,11 @@ exports[`<OlympicsSchedule> renders 1`] = `
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
   color: #402f7a;
   line-height: 30px;
-  position: absolute;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
   font-family: GillSansMTStd-Medium;
   font-size: 16px;
-  margin-right: 50px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_discipline {
@@ -520,9 +500,8 @@ exports[`<OlympicsSchedule> renders 1`] = `
   margin-top: 4px;
 }
 
-.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
-  position: relative;
-  left: calc(100% - 65px);
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_status-live {
+  padding: 8px 20px 4px;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -577,12 +556,6 @@ exports[`<OlympicsSchedule> renders 1`] = `
 @media (min-width:1024px) {
   .c0 {
     width: 56.2%;
-  }
-}
-
-@media only screen and (min-width:321px) {
-  .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
-    left: calc(100% - 75px);
   }
 }
 
@@ -711,13 +684,11 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-time {
   color: #402f7a;
   line-height: 30px;
-  position: absolute;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_unit-text {
   font-family: GillSansMTStd-Medium;
   font-size: 16px;
-  margin-right: 50px;
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_discipline {
@@ -727,9 +698,8 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
   margin-top: 4px;
 }
 
-.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
-  position: relative;
-  left: calc(100% - 65px);
+.c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_status-live {
+  padding: 8px 20px 4px;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
@@ -772,12 +742,6 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 @media only screen and (min-width:768px) {
   .c3 {
     font-size: 32px;
-  }
-}
-
-@media only screen and (min-width:321px) {
-  .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_ctr .pa_UnitListView_medal {
-    left: calc(100% - 75px);
   }
 }
 
