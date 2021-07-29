@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.20](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.19...@times-components/ts-components@1.11.20) (2021-07-29)
+
+
+### Bug Fixes
+
+* **te-000:** Revert medal position change  ([#2757](https://github.com/newsuk/times-components/issues/2757)) ([6845783](https://github.com/newsuk/times-components/commit/6845783685d1f1feb304e7e81af1ecea32c7f81f))
+
+
+
+
+
 ## [1.11.19](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.18...@times-components/ts-components@1.11.19) (2021-07-28)
 
 **Note:** Version bump only for package @times-components/ts-components

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ts-components",
-  "version": "1.11.19",
+  "version": "1.11.20",
   "description": "Reuseable Typescript React Components",
   "main": "dist/index.js",
   "dev": "dist/index.js",
