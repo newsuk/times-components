@@ -4,7 +4,7 @@ import '@testing-library/jest-dom';
 import 'regenerator-runtime';
 import 'jest-styled-components';
 import { OlympicsMedalTable } from '../medal-table/OlympicsMedalTable';
-import { OlympicsKeys } from '../types';
+import { OlympicsKeys } from '../OlympicsKeys';
 
 jest.mock('react-helmet-async', () => ({
   Helmet: 'Helmet',
@@ -21,6 +21,10 @@ describe('<OlympicsMedalTable>', () => {
   it('renders', () => {
     const { asFragment } = render(<OlympicsMedalTable keys={keys} />);
 
+    expect(asFragment()).toMatchSnapshot();
+  });
+  it('renders default keys', () => {
+    const { asFragment } = render(<OlympicsMedalTable keys={keys} />);
     expect(asFragment()).toMatchSnapshot();
   });
 
