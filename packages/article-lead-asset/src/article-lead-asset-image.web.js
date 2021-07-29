@@ -13,7 +13,7 @@ const LeadAssetImage = ({ aspectRatio, alt, uri }) => {
       <img
         alt={alt}
         style={styles.img}
-        src={appendToImageURL(url, "resize", 1180)}
+        src={appendToImageURL(url, "resize", 1200)}
         srcSet={`${appendToImageURL(
           url,
           "resize",
@@ -22,7 +22,7 @@ const LeadAssetImage = ({ aspectRatio, alt, uri }) => {
           url,
           "resize",
           685
-        )} 685w, ${appendToImageURL(url, "resize", 1180)} 1180w`}
+        )} 685w, ${appendToImageURL(url, "resize", 1200)} 1200w`}
       />
     </div>
   );
