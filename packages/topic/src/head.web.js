@@ -7,7 +7,6 @@ import { renderTreeArrayAsText } from "@times-components/markup-forest";
 import { propTypes as topicHeadPropTypes } from "./topic-head-prop-types";
 
 function Head({ metaDescription, description, name, slug }) {
-
   let content = `Discover expert ${name} articles from The Times and The Sunday Times.`;
 
   if (metaDescription) {
@@ -34,6 +33,10 @@ Head.propTypes = {
   description: topicHeadPropTypes.description.isRequired,
   name: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired
+};
+
+Head.defaultProps = {
+  metaDescription: null
 };
 
 export default Head;

@@ -111,7 +111,11 @@ const AuthorProfile = ({
 
         return (
           <Responsive>
-            <Head metaDescription={metaDescription} description={biography} name={name} />
+            <Head
+              metaDescription={metaDescription}
+              description={biography}
+              name={name}
+            />
             <ArticleList
               articleListHeader={articleListHeader}
               articles={get(data, "articles.list", [])}

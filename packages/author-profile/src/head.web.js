@@ -8,9 +8,9 @@ import { propTypes as authorProfileHeadPropTypes } from "./author-profile-head-p
 function Head({ metaDescription, description, name }) {
   let content = `Get up to date information and read all the latest articles from ${name}.`;
 
-  if (metaDescription){
+  if (metaDescription) {
     content = metaDescription;
-  }else if (description && typeof description === "object") {
+  } else if (description && typeof description === "object") {
     content = renderTreeArrayAsText(description).substring(0, 200);
   }
 
@@ -26,6 +26,10 @@ Head.propTypes = {
   metaDescription: PropTypes.string,
   description: authorProfileHeadPropTypes.biography.isRequired,
   name: PropTypes.string.isRequired
+};
+
+Head.defaultProps = {
+  metaDescription: null
 };
 
 export default Head;
