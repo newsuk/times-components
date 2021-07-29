@@ -8,6 +8,7 @@ exports[`2. a loading state 1`] = `
     articleListHeader={
       <TopicHead
         isLoading={true}
+        metaDescription=""
         name=""
       />
     }
@@ -80,6 +81,7 @@ exports[`3. an article list 1`] = `
           ]
         }
         isLoading={false}
+        metaDescription=""
         name="Test Name"
       />
     }
@@ -152,6 +154,7 @@ exports[`4. fetches more articles 1`] = `
           ]
         }
         isLoading={false}
+        metaDescription=""
         name="Test Name"
       />
     }
@@ -229,6 +232,7 @@ exports[`5. fetches more articles and falls back to previous data if no more 1`]
           ]
         }
         isLoading={false}
+        metaDescription=""
         name="Test Name"
       />
     }
