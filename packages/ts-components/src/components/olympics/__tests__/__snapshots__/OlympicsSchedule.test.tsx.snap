@@ -105,7 +105,10 @@ exports[`<OlympicsSchedule> click show all 1`] = `
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_status-live {
-  padding: 9px 20px 5px 20px;
+  padding: 8px 20px 4px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .c0 .pa-schedule .pa_OdfFooter_ctr {
@@ -300,7 +303,10 @@ exports[`<OlympicsSchedule> render default keys 1`] = `
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_status-live {
-  padding: 9px 20px 5px 20px;
+  padding: 8px 20px 4px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .c0 .pa-schedule .pa_OdfFooter_ctr {
@@ -495,7 +501,10 @@ exports[`<OlympicsSchedule> renders 1`] = `
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_status-live {
-  padding: 9px 20px 5px 20px;
+  padding: 8px 20px 4px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .c0 .pa-schedule .pa_OdfFooter_ctr {
@@ -690,7 +699,10 @@ exports[`<OlympicsSchedule> renders outside of article 1`] = `
 }
 
 .c0 .pa-schedule .pa_LoadingOverlayContainer_ctr .pa_UnitListView_status-live {
-  padding: 9px 20px 5px 20px;
+  padding: 8px 20px 4px;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
 }
 
 .c0 .pa-schedule .pa_OdfFooter_ctr {

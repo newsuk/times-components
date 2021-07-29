@@ -70,7 +70,8 @@ export const Container = styled.div<{
         }
       }
       .pa_UnitListView_status-live {
-        padding: 9px 20px 5px 20px;
+        padding: 8px 20px 4px;
+        align-self: center;
       }
     }
 
