@@ -19,6 +19,7 @@ exports[`2. a loading state 1`] = `
       <AuthorProfileHead
         isLoading={true}
         jobTitle=""
+        metaDescription=""
         name=""
         twitter=""
         uri=""
@@ -71,6 +72,7 @@ exports[`3. an article list with images 1`] = `
         }
         isLoading={false}
         jobTitle="Job Title"
+        metaDescription=""
         name="Name"
         twitter="twitter"
         uri="https://image.io"
@@ -123,6 +125,7 @@ exports[`4. an article list without images 1`] = `
         }
         isLoading={false}
         jobTitle="Job Title"
+        metaDescription=""
         name="Name"
         twitter="twitter"
         uri=""
@@ -175,6 +178,7 @@ exports[`5. fetches more articles 1`] = `
         }
         isLoading={false}
         jobTitle="Job Title"
+        metaDescription=""
         name="Name"
         twitter="twitter"
         uri="https://image.io"
@@ -232,6 +236,7 @@ exports[`6. fetches more articles and falls back to previous data if no more 1`]
         }
         isLoading={false}
         jobTitle="Job Title"
+        metaDescription=""
         name="Name"
         twitter="twitter"
         uri="https://image.io"
