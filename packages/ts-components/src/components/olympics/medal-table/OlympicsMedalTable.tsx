@@ -1,15 +1,15 @@
 import React, { FC, useEffect, useState } from 'react';
 import { Container } from './styles';
 import { HeadingContainer, Heading, Button, Label } from '../shared-styles';
-import { OlympicsKeys } from '../types';
+import { config, OlympicsKeys } from '../OlympicsKeys';
 import { injectScript } from '../../../helpers/widgets/inject-script';
 
 export const OlympicsMedalTable: FC<{
   highlighted?: string;
-  keys: OlympicsKeys;
+  keys?: OlympicsKeys;
   inArticle?: boolean;
 }> = ({
-  keys: { endpoint, authToken, gamesCode },
+  keys: { endpoint, authToken, gamesCode } = config.prod,
   highlighted = 'GBR',
   inArticle = true
 }) => {

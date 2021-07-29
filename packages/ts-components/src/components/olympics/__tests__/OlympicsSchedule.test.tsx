@@ -5,7 +5,7 @@ import 'regenerator-runtime';
 import 'jest-styled-components';
 
 import { OlympicsSchedule } from '../schedule/OlympicsSchedule';
-import { OlympicsKeys } from '../types';
+import { OlympicsKeys } from '../OlympicsKeys';
 
 jest.mock('react-helmet-async', () => ({
   Helmet: 'Helmet',
@@ -21,6 +21,10 @@ const keys: OlympicsKeys = {
 describe('<OlympicsSchedule>', () => {
   it('renders', () => {
     const { asFragment } = render(<OlympicsSchedule keys={keys} />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+  it('render default keys', () => {
+    const { asFragment } = render(<OlympicsSchedule />);
     expect(asFragment()).toMatchSnapshot();
   });
   it('renders outside of article', () => {
