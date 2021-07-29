@@ -56,13 +56,15 @@ function getAuthors({ bylines }) {
 function getAuthorSchema(article) {
   const { bylines } = article;
   return bylines
-    ? getAuthors(article).map(({ name, jobTitle, twitter, slug }) => ({
-        "@type": "Person",
-        name,
-        jobTitle,
-        url: `https://thetimes.co.uk/profile/${slug}`,
-        sameAs: `https://twitter.com/${twitter}`
-      }))
+    ? getAuthors(article).map(({ name, jobTitle, twitter, slug }) => {
+        const url = `https://thetimes.co.uk/profile/${slug}`;
+        return {
+          "@type": "Person",
+          name,
+          jobTitle,
+          sameAs: twitter ? [url, `https://twitter.com/${twitter}`] : url
+        };
+      })
     : [];
 }
 
