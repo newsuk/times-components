@@ -55,13 +55,11 @@ export const Container = styled.div<{
         .pa_UnitListView_unit-time {
           color: ${olympicColour};
           line-height: 30px;
-          position: absolute;
         }
 
         .pa_UnitListView_unit-text {
           font-family: ${fonts.supporting};
           font-size: 16px;
-          margin-right: 50px;
         }
 
         .pa_UnitListView_discipline {
@@ -70,15 +68,10 @@ export const Container = styled.div<{
           font-weight: 400;
           margin-top: 4px;
         }
-
-        .pa_UnitListView_medal {
-          position: relative;
-          left: calc(100% - 65px);
-          align-self: center;
-          @media only screen and (min-width: 321px) {
-            left: calc(100% - 75px);
-          }
-        }
+      }
+      .pa_UnitListView_status-live {
+        padding: 8px 20px 4px;
+        align-self: center;
       }
     }
 
