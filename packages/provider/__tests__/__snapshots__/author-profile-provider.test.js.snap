@@ -39,6 +39,7 @@ Object {
   "hasLeadAssets": true,
   "image": "//www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg",
   "jobTitle": "Defence Editor",
+  "metaDescription": "Hello World",
   "name": "Deborah Haynes",
   "twitter": "jdoe",
 }
