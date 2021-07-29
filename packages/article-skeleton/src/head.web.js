@@ -112,7 +112,8 @@ function Head({ article, logoUrl, paidContentClassName }) {
     publishedTime,
     updatedTime,
     hasVideo,
-    seoDescription
+    seoDescription,
+    url
   } = article;
 
   const publication = PUBLICATION_NAMES[publicationName];
@@ -173,6 +174,21 @@ function Head({ article, logoUrl, paidContentClassName }) {
     Object.assign(jsonLD, { author: authors });
   }
 
+  const videoJsonLD = hasVideo
+    ? {
+        "@context": "https://schema.org/",
+        "@type": "VideoObject",
+        name: leadAsset.title || title,
+        uploadDate: dateModified,
+        thumbnailUrl,
+        description:
+          Array.isArray(descriptionMarkup) && descriptionMarkup.length
+            ? renderTreeAsText({ children: descriptionMarkup })
+            : null,
+        contentUrl: url
+      }
+    : null;
+
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
@@ -204,6 +220,11 @@ function Head({ article, logoUrl, paidContentClassName }) {
               <meta content={leadassetUrl} name="twitter:image" />
             )}
             <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
+            {videoJsonLD && (
+              <script type="application/ld+json">
+                {JSON.stringify(videoJsonLD)}
+              </script>
+            )}
           </Helmet>
         );
       }}
