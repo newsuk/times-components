@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.44](https://github.com/newsuk/times-components/compare/@times-components/pages@2.3.43...@times-components/pages@2.3.44) (2021-07-29)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.3.43](https://github.com/newsuk/times-components/compare/@times-components/pages@2.3.42...@times-components/pages@2.3.43) (2021-07-29)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.3.42](https://github.com/newsuk/times-components/compare/@times-components/pages@2.3.41...@times-components/pages@2.3.42) (2021-07-29)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.3.41](https://github.com/newsuk/times-components/compare/@times-components/pages@2.3.40...@times-components/pages@2.3.41) (2021-07-29)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.3.40](https://github.com/newsuk/times-components/compare/@times-components/pages@2.3.39...@times-components/pages@2.3.40) (2021-07-28)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.3.39](https://github.com/newsuk/times-components/compare/@times-components/pages@2.3.38...@times-components/pages@2.3.39) (2021-07-28)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.3.38](https://github.com/newsuk/times-components/compare/@times-components/pages@2.3.37...@times-components/pages@2.3.38) (2021-07-28)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.3.37](https://github.com/newsuk/times-components/compare/@times-components/pages@2.3.36...@times-components/pages@2.3.37) (2021-07-27)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
 ## [2.3.36](https://github.com/newsuk/times-components/compare/@times-components/pages@2.3.35...@times-components/pages@2.3.36) (2021-07-26)
 
 **Note:** Version bump only for package @times-components/pages

@@ -56,13 +56,15 @@ function getAuthors({ bylines }) {
 function getAuthorSchema(article) {
   const { bylines } = article;
   return bylines
-    ? getAuthors(article).map(({ name, jobTitle, twitter, slug }) => ({
-        "@type": "Person",
-        name,
-        jobTitle,
-        url: `https://thetimes.co.uk/profile/${slug}`,
-        sameAs: `https://twitter.com/${twitter}`
-      }))
+    ? getAuthors(article).map(({ name, jobTitle, twitter, slug }) => {
+        const url = `https://thetimes.co.uk/profile/${slug}`;
+        return {
+          "@type": "Person",
+          name,
+          jobTitle,
+          sameAs: twitter ? [url, `https://twitter.com/${twitter}`] : url
+        };
+      })
     : [];
 }
 
@@ -112,7 +114,8 @@ function Head({ article, logoUrl, paidContentClassName }) {
     publishedTime,
     updatedTime,
     hasVideo,
-    seoDescription
+    seoDescription,
+    url
   } = article;
 
   const publication = PUBLICATION_NAMES[publicationName];
@@ -173,6 +176,21 @@ function Head({ article, logoUrl, paidContentClassName }) {
     Object.assign(jsonLD, { author: authors });
   }
 
+  const videoJsonLD = hasVideo
+    ? {
+        "@context": "https://schema.org/",
+        "@type": "VideoObject",
+        name: leadAsset.title || title,
+        uploadDate: dateModified,
+        thumbnailUrl,
+        description:
+          Array.isArray(descriptionMarkup) && descriptionMarkup.length
+            ? renderTreeAsText({ children: descriptionMarkup })
+            : null,
+        contentUrl: url
+      }
+    : null;
+
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
@@ -204,6 +222,11 @@ function Head({ article, logoUrl, paidContentClassName }) {
               <meta content={leadassetUrl} name="twitter:image" />
             )}
             <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
+            {videoJsonLD && (
+              <script type="application/ld+json">
+                {JSON.stringify(videoJsonLD)}
+              </script>
+            )}
           </Helmet>
         );
       }}
