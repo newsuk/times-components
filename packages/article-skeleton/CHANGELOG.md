@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.51.26](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.51.25...@times-components/article-skeleton@1.51.26) (2021-07-29)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.51.25](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.51.24...@times-components/article-skeleton@1.51.25) (2021-07-28)
 
 **Note:** Version bump only for package @times-components/article-skeleton
