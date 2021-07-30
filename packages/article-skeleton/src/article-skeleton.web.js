@@ -21,6 +21,7 @@ import {
 import articleTrackingContext from "./tracking/article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
 import insertNativeAd from "./native-ad.web";
+import insertInlineAd from "./inline-ad.web";
 import insertNewsletterPuff from "./newsletter-puff.web";
 import tagLastParagraph from "./tracking/article-tracking-last-paragraph";
 
@@ -82,6 +83,7 @@ const ArticleSkeleton = ({
     insertDropcapIntoASTCurry,
     insertNewsletterPuffCurry,
     insertNativeAd,
+    insertInlineAd,
     tagLastParagraph
   ];
 

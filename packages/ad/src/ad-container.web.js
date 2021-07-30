@@ -16,7 +16,7 @@ const AdContainer = ({ slotName, style }) => {
     inlineAd2: "ad-article-inline-2",
     inlineAd3: "ad-article-inline-3"
   };
-
+  
   return (
     <View id={slotName} style={[styles.container, style]}>
       <div id={`${adMap[slotName]}`} />
