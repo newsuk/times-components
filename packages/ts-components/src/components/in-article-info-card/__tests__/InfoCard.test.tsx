@@ -105,10 +105,21 @@ describe('InfoCard', () => {
     jest.clearAllMocks();
     cleanup();
   });
+
   it('should render the component', () => {
     (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
     const { asFragment } = renderInfoCard();
     expect(asFragment).toMatchSnapshot();
+  });
+
+  it('renders', () => {
+    const { baseElement } = render(<InfoCard sectionColour={'#636C17'} />);
+    expect(baseElement).toMatchSnapshot();
+  });
+
+  it('renders no image', () => {
+    const { baseElement } = render(<InfoCard sectionColour="#636C17" />);
+    expect(baseElement).toMatchSnapshot();
   });
 
   it('should render the first slide on load', () => {
