@@ -11,19 +11,20 @@ const insertInlineAd = children => {
   const paywallParagraphs = paywallChildren
     .map((item, index) => ({ ...item, index }))
     .filter(item => item.name === "paragraph");
-
 	const paraPostition = [13, 20, 27];
 
 	paraPostition.map((item, i) => {
-		paywallParagraphs[item - paragraph.length] ? (
+		const inlineAdPos = paywallParagraphs[item - paragraph.length] ? (
 			paywallChildren.splice(paywallParagraphs[item - paragraph.length]?.index, 0, {
-				name: "inlineAd" + (i + 1),
+				name: `inlineAd${i + 1}`,
 				children: []
 			}) 
 		)
 		: null;
-	})
 
+		return inlineAdPos;
+	})
+	
   return clonedChildren;
 };
 
