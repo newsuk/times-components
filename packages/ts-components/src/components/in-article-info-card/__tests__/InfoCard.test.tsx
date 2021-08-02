@@ -186,9 +186,19 @@ describe('InfoCard', () => {
     cleanup();
   });
 
-  useFetch();
+  it('should render the initial loading state correctly', () => {
+    (useFetch as jest.Mock).mockReturnValue({ loading: true });
+    const { asFragment } = render(<InfoCard sectionColour={'#636C17'} />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it('should render the component', () => {
     (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
+    const { asFragment } = renderInfoCard();
+    expect(asFragment).toMatchSnapshot();
+  });
+
+  it('should render the component', () => {
     (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapperStandard());
     const { asFragment } = renderInfoCard();
     expect(asFragment).toMatchSnapshot();
