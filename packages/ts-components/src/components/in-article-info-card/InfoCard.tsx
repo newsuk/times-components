@@ -108,7 +108,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
   sectionColour,
   initialIndex = 0
 }) => {
-  const { loading, error, data } = useFetch();
+  const { loading, data } = useFetch();
 
   if (loading) {
     return (
@@ -116,10 +116,6 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
         <Placeholder />
       </PlaceholderContainer>
     );
-  }
-
-  if (error) {
-    return null;
   }
 
   const { headline, label, size } = data.fields;
