@@ -232,10 +232,8 @@ describe('InfoCard', () => {
   describe('tracking', () => {
     (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
     let oldIntersectionObserver: typeof IntersectionObserver;
-
     beforeEach(() => {
       oldIntersectionObserver = window.IntersectionObserver;
-
       // @ts-ignore
       window.IntersectionObserver = FakeIntersectionObserver;
     });
@@ -249,20 +247,18 @@ describe('InfoCard', () => {
       const { getAllByTestId } = renderInfoCard();
       const previousButton = getAllByTestId('Previous button')[0];
       const nextButton = getAllByTestId('Next Button')[0];
+      fireEvent.click(nextButton);
+      fireEvent.click(previousButton);
       expect(previousButton).toHaveAttribute('disabled');
       expect(nextButton).not.toHaveAttribute('disabled');
     });
     it('click next button', async () => {
       (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
-
       const { getAllByTestId } = renderInfoCard();
-
       const previousButton = getAllByTestId('Previous button')[0];
       const nextButton = getAllByTestId('Next Button')[0];
-
       expect(previousButton).toHaveAttribute('disabled');
       expect(nextButton).not.toHaveAttribute('disabled');
-
       fireEvent.click(nextButton);
       expect(previousButton).not.toHaveAttribute('disabled');
       expect(nextButton).not.toHaveAttribute('disabled');
