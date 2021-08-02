@@ -1,6 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-
 exports[`InfoCard renders 1`] = `
 <body>
   <div>
@@ -542,3 +541,17 @@ exports[`InfoCard renders no image 1`] = `
 `;
 
 exports[`InfoCard should render the component 1`] = `[Function]`;
+
+exports[`InfoCard should render the component 2`] = `[Function]`;
+
+exports[`InfoCard should render the initial loading state correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-htoDjs sfJmJ"
+  >
+    <div>
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
