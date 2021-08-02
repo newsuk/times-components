@@ -174,7 +174,7 @@ const testDataStandard = {
     '<!DOCTYPE html> <html> <head> <title>The Times - Info Card</title></head> <body> </body> </html>'
 };
 
-const renderInfoCard = () => render(<InfoCard sectionColour={'#636C17'} />);
+const renderInfoCard = () => render(<InfoCard sectionColour="#636C17" />);
 
 describe('InfoCard', () => {
   beforeEach(() => {
@@ -189,24 +189,24 @@ describe('InfoCard', () => {
 
   it('should render the initial loading state correctly', () => {
     (useFetch as jest.Mock).mockReturnValue({ loading: true });
-    const { asFragment } = render(<InfoCard sectionColour={'#636C17'} />);
+    const { asFragment } = render(<InfoCard sectionColour="#636C17" />);
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('should render the component', () => {
+  it('should render the wide component', () => {
     (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
     const { asFragment } = renderInfoCard();
-    expect(asFragment).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
-  it('should render the component', () => {
+  it('should render the standard component', () => {
     (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapperStandard());
     const { asFragment } = renderInfoCard();
-    expect(asFragment).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it('renders', () => {
-    const { baseElement } = render(<InfoCard sectionColour={'#636C17'} />);
+    const { baseElement } = render(<InfoCard sectionColour="#636C17" />);
     expect(baseElement).toMatchSnapshot();
   });
 
