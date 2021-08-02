@@ -13,9 +13,9 @@ type FetchContext<T> = {
   data?: T;
 };
 
-const FetchProviderContext = createContext<FetchContext<unknown>>({
-  loading: true
-});
+const FetchProviderContext = createContext<FetchContext<unknown> | undefined>(
+  undefined
+);
 
 export const FetchProvider: React.FC<FetchProviderProps> = ({
   url,

@@ -3,7 +3,7 @@
 exports[`<FetchProvider> Unprovided 1`] = `
 <DocumentFragment>
   <div>
-    Loading
+    Error
   </div>
 </DocumentFragment>
 `;
