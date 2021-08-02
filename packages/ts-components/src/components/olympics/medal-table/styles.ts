@@ -1,19 +1,22 @@
 import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/styleguide';
+import { olympicColour } from '../shared-styles';
 
+const highlightColour = '#e4e4e4';
 export const Container = styled.div<{
-  sectionColour: string;
   showAll: boolean;
+  inArticle: boolean;
 }>`
+  border-top: 2px solid ${olympicColour};
   position: relative;
   margin: 0 auto 20px auto;
 
   @media (min-width: ${breakpoints.medium}px) {
-    width: 80.8%;
+    width: ${({ inArticle }) => (inArticle ? `80.8%` : undefined)};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
+    width: ${({ inArticle }) => (inArticle ? `56.2%` : undefined)};
   }
 
   .pa-medaltable {
@@ -66,7 +69,7 @@ export const Container = styled.div<{
 
           td:first-child {
             font-family: ${fonts.supporting};
-            color: ${({ sectionColour }) => sectionColour};
+            color: ${olympicColour};
           }
 
           &:nth-child(n + 8) {
@@ -75,7 +78,7 @@ export const Container = styled.div<{
 
           &.pa_MedalTableView_highlight {
             display: table-row;
-            background-color: #e4e4e4;
+            background-color: ${highlightColour};
           }
         }
       }
@@ -91,15 +94,4 @@ export const Container = styled.div<{
     text-align: center;
     height: 0;
   }
-`;
-
-export const Button = styled.button`
-  font-family: ${fonts.supporting};
-  font-size: 14px;
-  line-height: 20px;
-  padding: 14px 16px;
-  border: 1px solid ${colours.functional.keyline};
-
-  top: -80px;
-  position: relative;
 `;

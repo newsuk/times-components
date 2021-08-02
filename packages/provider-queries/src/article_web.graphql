@@ -106,6 +106,16 @@ fragment imageProps on Image {
 fragment articleProps on Article {
   bylines {
     ... on Byline {
+      ... on AuthorByline {
+        author {
+          image
+          jobTitle
+          twitter
+          slug
+          name
+        }
+        byline
+      }
       byline
       image {
         id
