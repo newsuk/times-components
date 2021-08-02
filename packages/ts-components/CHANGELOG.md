@@ -3,6 +3,84 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.20](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.19...@times-components/ts-components@1.11.20) (2021-07-29)
+
+
+### Bug Fixes
+
+* **te-000:** Revert medal position change  ([#2757](https://github.com/newsuk/times-components/issues/2757)) ([6845783](https://github.com/newsuk/times-components/commit/6845783685d1f1feb304e7e81af1ecea32c7f81f))
+
+
+
+
+
+## [1.11.19](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.18...@times-components/ts-components@1.11.19) (2021-07-28)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.18](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.17...@times-components/ts-components@1.11.18) (2021-07-28)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.17](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.16...@times-components/ts-components@1.11.17) (2021-07-28)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.16](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.15...@times-components/ts-components@1.11.16) (2021-07-27)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.15](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.14...@times-components/ts-components@1.11.15) (2021-07-26)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.14](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.13...@times-components/ts-components@1.11.14) (2021-07-26)
+
+
+### Bug Fixes
+
+* **te-000:** update olympic schedule scroll ([#2749](https://github.com/newsuk/times-components/issues/2749)) ([d89533b](https://github.com/newsuk/times-components/commit/d89533b7e6dda119b6318f380c33b90c796b0964))
+
+
+
+
+
+## [1.11.13](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.12...@times-components/ts-components@1.11.13) (2021-07-26)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.12](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.11...@times-components/ts-components@1.11.12) (2021-07-23)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
 ## [1.11.11](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.10...@times-components/ts-components@1.11.11) (2021-07-22)
 
 **Note:** Version bump only for package @times-components/ts-components

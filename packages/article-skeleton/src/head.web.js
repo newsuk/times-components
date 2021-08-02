@@ -35,11 +35,9 @@ function getSectionName(article) {
 
 function getAuthorAsText(article) {
   const { bylines } = article;
-
   if (!bylines) {
     return null;
   }
-
   const children = bylines.reduce((acc, byline) => {
     if (Array.isArray(byline.byline)) {
       acc.push(...byline.byline);
@@ -48,8 +46,26 @@ function getAuthorAsText(article) {
     }
     return acc;
   }, []);
-
   return renderTreeAsText({ children });
+}
+
+function getAuthors({ bylines }) {
+  return bylines.map(byline => byline.author).filter(author => author);
+}
+
+function getAuthorSchema(article) {
+  const { bylines } = article;
+  return bylines
+    ? getAuthors(article).map(({ name, jobTitle, twitter, slug }) => {
+        const url = `https://thetimes.co.uk/profile/${slug}`;
+        return {
+          "@type": "Person",
+          name,
+          jobTitle,
+          sameAs: twitter ? [url, `https://twitter.com/${twitter}`] : url
+        };
+      })
+    : [];
 }
 
 const PUBLICATION_NAMES = {
@@ -98,7 +114,8 @@ function Head({ article, logoUrl, paidContentClassName }) {
     publishedTime,
     updatedTime,
     hasVideo,
-    seoDescription
+    seoDescription,
+    url
   } = article;
 
   const publication = PUBLICATION_NAMES[publicationName];
@@ -114,6 +131,7 @@ function Head({ article, logoUrl, paidContentClassName }) {
     "resize",
     685
   );
+  const authors = getAuthorSchema(article);
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline || "";
   const datePublished = new Date(publishedTime).toISOString();
@@ -145,10 +163,6 @@ function Head({ article, logoUrl, paidContentClassName }) {
       isAccessibleForFree: false,
       cssSelector: `.${paidContentClassName}`
     },
-    author: {
-      "@type": "Person",
-      name: authorName || ""
-    },
     image: {
       "@type": "ImageObject",
       url: leadassetUrl,
@@ -157,6 +171,25 @@ function Head({ article, logoUrl, paidContentClassName }) {
     thumbnailUrl,
     dateModified
   };
+
+  if (authors && authors.length) {
+    Object.assign(jsonLD, { author: authors });
+  }
+
+  const videoJsonLD = hasVideo
+    ? {
+        "@context": "https://schema.org/",
+        "@type": "VideoObject",
+        name: leadAsset.title || title,
+        uploadDate: dateModified,
+        thumbnailUrl,
+        description:
+          Array.isArray(descriptionMarkup) && descriptionMarkup.length
+            ? renderTreeAsText({ children: descriptionMarkup })
+            : null,
+        contentUrl: url
+      }
+    : null;
 
   return (
     <Context.Consumer>
@@ -189,6 +222,11 @@ function Head({ article, logoUrl, paidContentClassName }) {
               <meta content={leadassetUrl} name="twitter:image" />
             )}
             <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
+            {videoJsonLD && (
+              <script type="application/ld+json">
+                {JSON.stringify(videoJsonLD)}
+              </script>
+            )}
           </Helmet>
         );
       }}

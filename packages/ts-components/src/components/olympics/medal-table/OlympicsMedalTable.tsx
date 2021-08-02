@@ -1,31 +1,32 @@
-import React, { FC, useState } from 'react';
-import { Helmet } from 'react-helmet-async';
-import { colours } from '@times-components/styleguide';
-import { Container, Button } from './styles';
-import { OlympicsKeys } from '../types';
+import React, { FC, useEffect, useState } from 'react';
+import { Container } from './styles';
+import { HeadingContainer, Heading, Button, Label } from '../shared-styles';
+import { config, OlympicsKeys } from '../OlympicsKeys';
+import { injectScript } from '../../../helpers/widgets/inject-script';
 
 export const OlympicsMedalTable: FC<{
   highlighted?: string;
-  keys: OlympicsKeys;
-  sectionColor?: string;
+  keys?: OlympicsKeys;
+  inArticle?: boolean;
 }> = ({
-  keys: { endpoint, authToken, gamesCode },
+  keys: { endpoint, authToken, gamesCode } = config.prod,
   highlighted = 'GBR',
-  sectionColor = colours.section.sport
+  inArticle = true
 }) => {
   const [showAll, setShowAll] = useState(false);
   const handleShowAll = () => {
     setShowAll(!showAll);
   };
+  useEffect(() => {
+    injectScript(`${endpoint}/static/medal-table.js`);
+  }, []);
+
   return (
-    <Container sectionColour={sectionColor} showAll={showAll}>
-      <Helmet>
-        <script
-          src={`${endpoint}/static/medal-table.js`}
-          charSet="UTF-8"
-          defer
-        />
-      </Helmet>
+    <Container showAll={showAll} inArticle={inArticle}>
+      <HeadingContainer>
+        <Label>Tokyo 2020</Label>
+        <Heading>Olympic Medal Count</Heading>
+      </HeadingContainer>
       <div
         className="pa-medaltable"
         data-auth-token={authToken}
