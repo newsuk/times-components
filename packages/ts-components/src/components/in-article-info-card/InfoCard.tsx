@@ -186,14 +186,20 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
       context={{
         object: 'InfoCard',
         attrs: {
-          component_type: 'in-article component : text-image info cards : ' + (showDotItem > 1 ? 'interactive' : 'static'),
+          component_type:
+            'in-article component : text-image info cards : interactive',
           event_navigation_action: 'navigation',
+          event_navigation_browsing_method: 'click',
           component_name: `${headline}`
         }
       }}
       scrolledEvent={{
         attrs: {
-          event_navigation_name: 'in-article component displayed : text-image info cards',
+          component_type:
+            'in-article component : text-image info cards : ' +
+            (showDotItem > 1 ? 'interactive' : 'static'),
+          event_navigation_name:
+            'in-article component displayed : text-image info cards',
           event_navigation_browsing_method: 'scroll'
         }
       }}
