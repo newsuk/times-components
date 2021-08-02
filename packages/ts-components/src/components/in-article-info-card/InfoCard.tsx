@@ -19,6 +19,7 @@ import {
 import { Arrow } from '../carousel/Arrow';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
+import { DeckData } from '../../helpers/fetch/types';
 
 const sanitiseCopy = (copy: string, allowedTags: string[] = []) =>
   sanitizeHtml(copy, { allowedTags, allowedAttributes: {} });
@@ -31,6 +32,9 @@ export type InfoCardData = {
     copy: string;
   };
 };
+type InfoCardFields = { headline: string; label: string; size: Layout };
+
+type InfoCardDeckData = DeckData<InfoCardFields, InfoCardData>;
 
 export type GalleryCarouselProps = {
   sectionColour: string;
@@ -108,13 +112,13 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
   sectionColour,
   initialIndex = 0
 }) => {
-  const { loading, error, data } = useFetch();
+  const { loading, error, data } = useFetch<InfoCardDeckData>();
 
   if (error) {
     return null;
   }
 
-  if (loading) {
+  if (loading || data === undefined) {
     return (
       <PlaceholderContainer>
         <Placeholder />
