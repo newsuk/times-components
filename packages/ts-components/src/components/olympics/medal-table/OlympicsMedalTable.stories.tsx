@@ -2,19 +2,24 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import { OlympicsMedalTable } from './OlympicsMedalTable';
-import { HelmetProvider } from 'react-helmet-async';
 import { ArticleHarness } from '../../../fixtures/article-harness/ArticleHarness';
+import { boolean, text } from '@storybook/addon-knobs';
+import { config } from '../OlympicsKeys';
 
 storiesOf('Typescript Component/Olympics', module)
   .addDecorator((storyFn: () => React.ReactNode) => (
-    <HelmetProvider context={{}}>
-      <ArticleHarness>{storyFn()}</ArticleHarness>
-    </HelmetProvider>
+    <ArticleHarness>{storyFn()}</ArticleHarness>
   ))
 
   .add('Medal Table', () => {
-    return <OlympicsMedalTable />;
-  })
-  .add('Table', () => {
-    return <div>Boo</div>;
+    const inArticle = boolean('Is In Article', true);
+    const highlighted = text('Highlighted Country', 'GBR');
+
+    return (
+      <OlympicsMedalTable
+        keys={config.prod}
+        highlighted={highlighted}
+        inArticle={inArticle}
+      />
+    );
   });

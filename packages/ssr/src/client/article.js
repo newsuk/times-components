@@ -15,9 +15,9 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     isPreview,
     additionalRelatedArticlesFlag,
     algoliaSearchKeys,
-    inArticlePuffFlag,
     latestFromSectionFlag,
-    latestFromSection
+    latestFromSection,
+    olympicsKeys
   } = window.nuk.article;
   const { getCookieValue } = window.nuk;
 
@@ -34,9 +34,9 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     isPreview,
     additionalRelatedArticlesFlag,
     algoliaSearchKeys,
-    inArticlePuffFlag,
     latestFromSectionFlag,
-    latestFromSection
+    latestFromSection,
+    olympicsKeys
   };
 
   const clientOptions = {

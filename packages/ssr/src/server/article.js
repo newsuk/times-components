@@ -22,9 +22,9 @@ module.exports = (
     isPreview,
     additionalRelatedArticlesFlag,
     algoliaSearchKeys,
-    inArticlePuffFlag,
     latestFromSectionFlag,
-    latestFromSection
+    latestFromSection,
+    olympicsKeys
   },
   userState
 ) => {
@@ -74,9 +74,9 @@ module.exports = (
       isPreview,
       additionalRelatedArticlesFlag,
       algoliaSearchKeys,
-      inArticlePuffFlag,
       latestFromSectionFlag,
-      latestFromSection
+      latestFromSection,
+      olympicsKeys
     },
     name: "article"
   };

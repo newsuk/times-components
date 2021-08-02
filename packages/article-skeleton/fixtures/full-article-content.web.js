@@ -161,6 +161,16 @@ export default [
       {
         attributes: {
           element: {
+            attributes: { "deck-id": "43614" },
+            value: "in-article-info-card"
+          }
+        },
+        children: [],
+        name: "interactive"
+      },
+      {
+        attributes: {
+          element: {
             attributes: {
               season: "2020",
               competition: "8",
@@ -279,6 +289,26 @@ export default [
         },
         children: [],
         name: "video"
+      },
+      {
+        attributes: {
+          element: {
+            attributes: {},
+            value: "olympics-medal-table"
+          }
+        },
+        children: [],
+        name: "interactive"
+      },
+      {
+        attributes: {
+          element: {
+            attributes: {},
+            value: "olympics-schedule"
+          }
+        },
+        children: [],
+        name: "interactive"
       },
       {
         attributes: {},

@@ -1,3 +1,5 @@
+import { injectScript } from '../../../helpers/widgets/inject-script';
+
 declare global {
   interface Window {
     opta_settings: {
@@ -38,21 +40,7 @@ export const initStyleSheet = () => {
 
 const scriptUrl = 'https://secure.widget.cloud.opta.net/v3/v3.opta-widgets.js';
 
-export const initScript = () => {
-  if (document.body.querySelector(`script[src="${scriptUrl}"]`)) {
-    return Promise.resolve();
-  }
-
-  return new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.setAttribute('async', 'async');
-    script.setAttribute('src', scriptUrl);
-    script.onload = resolve;
-    script.onerror = reject;
-
-    document.body.appendChild(script);
-  });
-};
+export const initScript = () => injectScript(scriptUrl);
 
 export const initElement = (name: string, args?: any, child?: HTMLElement) => {
   const element = document.createElement(name);

@@ -52,9 +52,9 @@ const ArticleSkeleton = ({
   isPreview,
   additionalRelatedArticlesFlag,
   algoliaSearchKeys,
-  inArticlePuffFlag,
   latestFromSectionFlag,
-  latestFromSection
+  latestFromSection,
+  olympicsKeys
 }) => {
   const {
     commentsEnabled,
@@ -195,7 +195,7 @@ const ArticleSkeleton = ({
                       paidContentClassName={paidContentClassName}
                       template={template}
                       isPreview={isPreview}
-                      inArticlePuffFlag={inArticlePuffFlag}
+                      olympicsKeys={olympicsKeys}
                     />
                   )}
                   <PaywallPortal

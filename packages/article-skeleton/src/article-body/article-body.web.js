@@ -27,7 +27,10 @@ import {
   OptaFootballFixtures,
   OptaFootballStandings,
   OptaFootballSummary,
-  OptaFootballMatchStats
+  OptaFootballMatchStats,
+  OlympicsMedalTable,
+  OlympicsSchedule,
+  InfoCard
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -87,7 +90,7 @@ const renderers = ({
   template,
   analyticsStream,
   isPreview,
-  inArticlePuffFlag
+  olympicsKeys
 }) => ({
   ...coreRenderers,
   ad(key) {
@@ -169,8 +172,17 @@ const renderers = ({
   },
   interactive(key, { url, element, display }) {
     const { attributes, value } = element;
-
     switch (value) {
+      case "in-article-info-card":
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <InfoCard sectionColour={theme.sectionColour} />
+              </FetchProvider>
+            )}
+          </Context.Consumer>
+        );
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations
         const { code, copy, headline, imageUri, label } = attributes;
@@ -239,17 +251,42 @@ const renderers = ({
         return null;
 
       case "in-article-puff":
-        if (inArticlePuffFlag) {
-          return (
-            <Context.Consumer key={key}>
-              {({ theme }) => (
-                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                  <InArticlePuff sectionColour={theme.sectionColour} />
-                </FetchProvider>
-              )}
-            </Context.Consumer>
-          );
-        }
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <InArticlePuff
+                  sectionColour={theme.sectionColour}
+                  forceImageAspectRatio="3:2"
+                />
+              </FetchProvider>
+            )}
+          </Context.Consumer>
+        );
+
+      case "olympics-medal-table":
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <OlympicsMedalTable
+                keys={olympicsKeys}
+                sectionColor={theme.sectionColour}
+              />
+            )}
+          </Context.Consumer>
+        );
+
+      case "olympics-schedule":
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <OlympicsSchedule
+                keys={olympicsKeys}
+                sectionColor={theme.sectionColour}
+              />
+            )}
+          </Context.Consumer>
+        );
 
       default:
         return (
@@ -403,11 +440,18 @@ const ArticleBody = ({
   paidContentClassName,
   template,
   isPreview,
-  inArticlePuffFlag
+  inArticlePuffFlag,
+  olympicsKeys
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
-    renderers({ paidContentClassName, template, isPreview, inArticlePuffFlag })
+    renderers({
+      paidContentClassName,
+      template,
+      isPreview,
+      inArticlePuffFlag,
+      olympicsKeys
+    })
   );
 
 ArticleBody.propTypes = {

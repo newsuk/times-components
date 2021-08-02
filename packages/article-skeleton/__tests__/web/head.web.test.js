@@ -71,7 +71,240 @@ describe("Head", () => {
         paidContentClassName={paidContentClassName}
       />
     );
+    expect(testRenderer).toMatchSnapshot();
+  });
 
+  it("outputs array of author in context schema", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          bylines: [
+            {
+              __typename: "AuthorByline",
+              author: {
+                image:
+                  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+                jobTitle: "Asia Editor",
+                twitter: "dicklp",
+                slug: "richard-lloyd-parry",
+                name: "Richard Lloyd Parry"
+              },
+              byline: [
+                {
+                  name: "author",
+                  children: [
+                    {
+                      name: "text",
+                      children: [],
+                      attributes: {
+                        value: "Oliver Wright"
+                      }
+                    }
+                  ],
+                  attributes: {
+                    slug: "oliver-wright"
+                  }
+                }
+              ],
+              image: null
+            },
+            {
+              __typename: "TextByline",
+              byline: [
+                {
+                  name: "inline",
+                  children: [
+                    {
+                      name: "text",
+                      children: [],
+                      attributes: {
+                        value: ", Policy Editor | "
+                      }
+                    }
+                  ]
+                }
+              ],
+              image: null
+            },
+            {
+              __typename: "AuthorByline",
+              author: {
+                image:
+                  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+                jobTitle: "Asia Editor",
+                twitter: "dicklp",
+                slug: "richard-lloyd-parry",
+                name: "Richard Lloyd Parry"
+              },
+              byline: [
+                {
+                  name: "author",
+                  children: [
+                    {
+                      name: "text",
+                      children: [],
+                      attributes: {
+                        value: "Tom Knowles"
+                      }
+                    }
+                  ],
+                  attributes: {
+                    slug: "tom-knowles"
+                  }
+                }
+              ],
+              image: null
+            },
+            {
+              __typename: "TextByline",
+              byline: [
+                {
+                  name: "inline",
+                  children: [
+                    {
+                      name: "text",
+                      children: [],
+                      attributes: {
+                        value: ", Technology Correspondent"
+                      }
+                    }
+                  ]
+                }
+              ],
+              image: null
+            }
+          ]
+        }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("outputs array of sameAs if there are multiple urls", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          bylines: [
+            {
+              __typename: "AuthorByline",
+              author: {
+                image:
+                  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+                jobTitle: "Asia Editor",
+                twitter: "twitterusername",
+                slug: "richard-lloyd-parry",
+                name: "Richard Lloyd Parry"
+              },
+              byline: [
+                {
+                  name: "author",
+                  children: [
+                    {
+                      name: "text",
+                      children: [],
+                      attributes: {
+                        value: "Oliver Wright"
+                      }
+                    }
+                  ],
+                  attributes: {
+                    slug: "oliver-wright"
+                  }
+                }
+              ],
+              image: null
+            }
+          ]
+        }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("outputs profile url in sameAs if there is no twitter", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          bylines: [
+            {
+              __typename: "AuthorByline",
+              author: {
+                image:
+                  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
+                jobTitle: "Asia Editor",
+                twitter: "",
+                slug: "richard-lloyd-parry",
+                name: "Richard Lloyd Parry"
+              },
+              byline: [
+                {
+                  name: "author",
+                  children: [
+                    {
+                      name: "text",
+                      children: [],
+                      attributes: {
+                        value: "Oliver Wright"
+                      }
+                    }
+                  ],
+                  attributes: {
+                    slug: "oliver-wright"
+                  }
+                }
+              ],
+              image: null
+            }
+          ]
+        }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("removes author from context schema if there is empty array of bylines or null bylines", () => {
+    let testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          bylines: []
+        }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+
+    testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          bylines: null
+        }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("outputs correct metadata for seoDescription", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{ ...article, seoDescription: "sample seoDescription" }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
     expect(testRenderer).toMatchSnapshot();
   });
 
@@ -404,5 +637,16 @@ describe("Head", () => {
     expect(
       testRenderer.root.findAllByProps({ name: "twitter:image" })
     ).toHaveLength(1);
+  });
+
+  it("outputs video schema for a video article", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={videoArticle}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
   });
 });
