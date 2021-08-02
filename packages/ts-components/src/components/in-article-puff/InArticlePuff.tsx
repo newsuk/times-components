@@ -23,6 +23,20 @@ import {
   Headline,
   Copy
 } from './styles';
+import { DeckData } from '../../helpers/fetch/types';
+
+type InArticlePuffData = {
+  data: {
+    image: string;
+    label: string;
+    headline: string;
+    copy: string;
+    link: string;
+    linkText: string;
+  };
+};
+
+type InArticlePuffDeckData = DeckData<never, InArticlePuffData>;
 
 const scrollEvent = {
   attrs: {
@@ -54,7 +68,7 @@ export const InArticlePuff: React.FC<{
     fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(buttonLabel));
   };
 
-  const { loading, error, data } = useFetch();
+  const { loading, error, data } = useFetch<InArticlePuffDeckData>();
 
   if (loading) {
     return (
@@ -64,7 +78,7 @@ export const InArticlePuff: React.FC<{
     );
   }
 
-  if (error) {
+  if (error || data === undefined) {
     return null;
   }
 
