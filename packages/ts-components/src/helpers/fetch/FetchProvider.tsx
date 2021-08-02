@@ -8,7 +8,7 @@ type FetchProviderProps = {
 };
 
 type FetchContext<T> = {
-  loading?: boolean;
+  loading: boolean;
   error?: string;
   data?: T;
 };
