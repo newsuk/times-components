@@ -38,7 +38,7 @@ const contentWithOutAd = [
         name: "paragraph",
         children: []
       },
-			{
+      {
         name: "paragraph",
         children: []
       },
@@ -54,7 +54,7 @@ const contentWithOutAd = [
         name: "paragraph",
         children: []
       },
-			{
+      {
         name: "image",
         attributes: {
           display: "secondary",
@@ -86,19 +86,20 @@ const contentWithOutAd = [
         name: "paragraph",
         children: []
       },
-      {// 13th para
+      {
+        // 13th para
         name: "paragraph",
         children: []
       },
-			{
+      {
         name: "paragraph",
         children: []
       },
-			{
+      {
         name: "paragraph",
         children: []
       },
-			{
+      {
         name: "paragraph",
         children: []
       }
@@ -146,7 +147,7 @@ const contentWithAd = [
         name: "paragraph",
         children: []
       },
-			{
+      {
         name: "paragraph",
         children: []
       },
@@ -162,7 +163,7 @@ const contentWithAd = [
         name: "paragraph",
         children: []
       },
-			{
+      {
         name: "image",
         attributes: {
           display: "secondary",
@@ -190,27 +191,28 @@ const contentWithAd = [
         name: "paragraph",
         children: []
       },
-			{
+      {
         name: "paragraph",
         children: []
       },
-			{// 13th para
+      {
+        // 13th para
         name: "paragraph",
         children: []
       },
-			{
+      {
         name: "inlineAd1",
         children: []
       },
-			{
+      {
         name: "paragraph",
         children: []
       },
-			{
+      {
         name: "paragraph",
         children: []
       },
-			{
+      {
         name: "paragraph",
         children: []
       }
@@ -258,7 +260,7 @@ const contentWithLessParagraphs = [
         name: "paragraph",
         children: []
       },
-			{
+      {
         name: "paragraph",
         children: []
       },
@@ -281,5 +283,5 @@ const contentWithLessParagraphs = [
 export default {
   contentWithOutAd,
   contentWithAd,
-	contentWithLessParagraphs
+  contentWithLessParagraphs
 };

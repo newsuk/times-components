@@ -4,7 +4,7 @@ import inlineAdFixture from "../../fixtures/inline-ad";
 const {
   contentWithOutAd,
   contentWithAd,
-	contentWithLessParagraphs
+  contentWithLessParagraphs
 } = inlineAdFixture;
 
 describe("inline-ad", () => {
