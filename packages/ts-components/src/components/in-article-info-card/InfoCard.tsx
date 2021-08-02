@@ -140,7 +140,9 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
 
   useEffect(() => {
     window.addEventListener('resize', updateWidth);
-    return () => window.removeEventListener('resize', updateWidth);
+    return () => {
+      window.removeEventListener('resize', updateWidth);
+    };
   }, []);
 
   useEffect(() => {
