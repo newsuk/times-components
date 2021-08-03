@@ -171,6 +171,16 @@ export default [
       {
         attributes: {
           element: {
+            attributes: { "deck-id": "43434" },
+            value: "gallery-carousel"
+          }
+        },
+        children: [],
+        name: "interactive"
+      },
+      {
+        attributes: {
+          element: {
             attributes: {
               season: "2020",
               competition: "8",

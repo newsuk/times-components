@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import sanitizeHtml from 'sanitize-html';
 import { Placeholder } from '@times-components/image';
 import { breakpoints } from '@times-components/styleguide';
 import { Card } from './Card';
@@ -18,12 +17,10 @@ import {
 } from './styles';
 import { Arrow } from '../carousel/Arrow';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
+import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import { DeckData } from '../../helpers/fetch/types';
-
-const sanitiseCopy = (copy: string, allowedTags: string[] = []) =>
-  sanitizeHtml(copy, { allowedTags, allowedAttributes: {} });
 
 export type InfoCardData = {
   type: string;

@@ -1,5 +1,4 @@
 import React from 'react';
-import sanitizeHtml from 'sanitize-html';
 
 import { Placeholder } from '@times-components/image';
 
@@ -10,6 +9,7 @@ import {
   TrackingContext,
   TrackingContextProvider
 } from '../../helpers/tracking/TrackingContextProvider';
+import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { InArticleLink } from '../in-article-link/InArticleLink';
@@ -53,14 +53,10 @@ const clickEvent = (buttonLabel: string) => ({
   }
 });
 
-const sanitiseCopy = (copy: string, allowedTags: string[] = []) =>
-  sanitizeHtml(copy, { allowedTags, allowedAttributes: {} });
-
 export const InArticlePuff: React.FC<{
   sectionColour: string;
   forceImageAspectRatio?: AspectRatios;
-  sanitiseHtml?: boolean;
-}> = ({ sectionColour, forceImageAspectRatio, sanitiseHtml }) => {
+}> = ({ sectionColour, forceImageAspectRatio }) => {
   const handleClick = (
     fireAnalyticsEvent: (evt: TrackingContext) => void,
     buttonLabel: string
@@ -132,17 +128,11 @@ export const InArticlePuff: React.FC<{
                 <Headline hasImage={hasImage}>{headline}</Headline>
               </a>
               {copy && (
-                <>
-                  {sanitiseHtml ? (
-                    <Copy>{sanitiseCopy(copy)}</Copy>
-                  ) : (
-                    <Copy
-                      dangerouslySetInnerHTML={{
-                        __html: sanitiseCopy(copy, ['b', 'i'])
-                      }}
-                    />
-                  )}
-                </>
+                <Copy
+                  dangerouslySetInnerHTML={{
+                    __html: sanitiseCopy(copy, ['b', 'i'])
+                  }}
+                />
               )}
             </div>
 

@@ -2,30 +2,66 @@ import React from 'react';
 import { render, cleanup, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
-import GalleryCarousel, { GalleryCarouselProps } from '../GalleryCarousel';
+import { useFetch } from '../../../helpers/fetch/FetchProvider';
+
+import { GalleryCarousel, GalleryCarouselProps } from '../GalleryCarousel';
 import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 import mockDate from 'mockdate';
 
-const data = {
-  headline: 'Headline 1',
-  label: 'Label 1',
-  carouseldata: [
-    {
-      imageTitle: 'Image Title 1',
-      copy: 'Copy 1',
-      credit: 'Credit 1',
-      image:
-        'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180'
-    },
-    {
-      imageTitle: 'Image Title 2',
-      copy: 'Copy 2',
-      credit: 'Credit 2',
-      image:
-        'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180'
-    }
-  ]
+jest.mock('@times-components/image', () => ({
+  Placeholder: () => <div>Placeholder</div>
+}));
+
+jest.mock('../../../helpers/fetch/FetchProvider', () => ({
+  useFetch: jest.fn()
+}));
+
+const deckApiPayloadWrapper = () => ({
+  data: testData
+});
+
+const testData = {
+  deck_id: 43434,
+  deck_name: 'Best British hotels',
+  deck_type: 'Image Gallery',
+  version: 18,
+  updated_at: {
+    date: '2021-07-15 11:29:34.000000',
+    timezone_type: 3,
+    timezone: 'UTC'
+  },
+  fields: {
+    label: 'Label 1',
+    headline: 'Gallery Headline',
+    size: '4033'
+  },
+  body: {
+    data: [
+      {
+        type: 'image',
+        data: {
+          image:
+            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180',
+          credit: 'Michael Clarke',
+          copy: 'Copy 1',
+          imageTitle: 'Birch'
+        }
+      },
+      {
+        type: 'image',
+        data: {
+          image:
+            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0f831cea-0317-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500',
+          credit: 'John Doe',
+          copy: 'Copy 2',
+          imageTitle: 'Crockers at Henley'
+        }
+      }
+    ]
+  },
+  html:
+    '<!DOCTYPE html> <html> <head> <title>The Times - Image Gallery</title></head> <body> </body> </html>'
 };
 
 const renderCarousel = (
@@ -43,13 +79,7 @@ const renderCarousel = (
       }}
       analyticsStream={analyticsStream}
     >
-      <GalleryCarousel
-        data={data}
-        isLarge={false}
-        isSmall={false}
-        sectionColour={'#000'}
-        {...additionalProps}
-      />
+      <GalleryCarousel sectionColour={'#000'} {...additionalProps} />
     </TrackingContextProvider>
   );
 describe('GalleryCarousel', () => {
@@ -64,13 +94,14 @@ describe('GalleryCarousel', () => {
   });
 
   it('should render the component', () => {
+    (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
     const { asFragment } = renderCarousel();
     expect(asFragment()).toMatchSnapshot();
   });
   it('should render the first slide on load', () => {
     const { queryAllByText, getAllByRole } = renderCarousel();
-    expect(queryAllByText('Label 1')).toBeTruthy();
-    expect(queryAllByText('Headline 1')).toBeTruthy();
+    expect(queryAllByText('Label')).toBeTruthy();
+    expect(queryAllByText('Gallery Headline')).toBeTruthy();
     expect(queryAllByText('Copy 1')).toBeTruthy();
     expect(getAllByRole('img')[0]).toHaveAttribute(
       'src',
@@ -78,6 +109,7 @@ describe('GalleryCarousel', () => {
     );
   });
   describe('tracking', () => {
+    (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
     let oldIntersectionObserver: typeof IntersectionObserver;
 
     beforeEach(() => {
@@ -94,6 +126,7 @@ describe('GalleryCarousel', () => {
     });
 
     it('fires scroll event when viewed', () => {
+      (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
       const analyticsStream = jest.fn();
       renderCarousel({}, analyticsStream);
 
@@ -106,7 +139,7 @@ describe('GalleryCarousel', () => {
         object: 'GalleryCarousel',
         attrs: {
           article_name: 'Headline',
-          component_name: 'Headline 1',
+          component_name: 'Gallery Headline',
           component_type: 'in-article component : gallery : interactive',
           eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
@@ -118,6 +151,7 @@ describe('GalleryCarousel', () => {
     });
 
     it('click previous button', async () => {
+      (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
       const analyticsStream = jest.fn();
 
       const { getAllByTestId } = renderCarousel(
@@ -141,7 +175,7 @@ describe('GalleryCarousel', () => {
       expect(analyticsStream).toHaveBeenCalledWith({
         attrs: {
           article_name: 'Headline',
-          component_name: 'Headline 1',
+          component_name: 'Gallery Headline',
           component_type: 'in-article component : gallery : interactive',
           eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
@@ -156,6 +190,7 @@ describe('GalleryCarousel', () => {
       expect(nextButton).not.toHaveAttribute('disabled');
     });
     it('click next button', async () => {
+      (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
       const analyticsStream = jest.fn();
 
       const { getAllByTestId } = renderCarousel({}, analyticsStream);
@@ -172,7 +207,7 @@ describe('GalleryCarousel', () => {
       expect(analyticsStream).toHaveBeenCalledWith({
         attrs: {
           article_name: 'Headline',
-          component_name: 'Headline 1',
+          component_name: 'Gallery Headline',
           component_type: 'in-article component : gallery : interactive',
           eventTime: '2021-05-03T00:00:00.000Z',
           event_navigation_action: 'navigation',
@@ -187,6 +222,7 @@ describe('GalleryCarousel', () => {
     });
 
     it('page indicator button', async () => {
+      (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
       const analyticsStream = jest.fn();
 
       const { getAllByTestId } = renderCarousel({}, analyticsStream);
