@@ -16,6 +16,7 @@ import {
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import { CarouselDataObj } from './types';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
+import { DeckData } from '../../helpers/fetch/types';
 import { Placeholder } from '@times-components/image';
 
 import { Arrow } from './Arrow';
@@ -67,13 +68,17 @@ export type GalleryCarouselProps = {
   initialIndex?: number;
 };
 
+type GalleryCarouselFields = { headline: string; label: string; size: string };
+
+type GalleryCarouselDeckData = DeckData<GalleryCarouselFields, CarouselDataObj>;
+
 export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
   sectionColour,
   initialIndex = 0
 }) => {
-  const { loading, error, data } = useFetch();
+  const { loading, error, data } = useFetch<GalleryCarouselDeckData>();
 
-  if (loading) {
+  if (loading || data === undefined) {
     return (
       <PlaceholderContainer>
         <Placeholder />
