@@ -59,7 +59,7 @@
     "apollo-link-persisted-queries": "0.2.2",
     "lodash.omitby": "4.6.0",
     "prop-types": "15.7.2",
-    "react-native": "0.61.5",
+    "react-native": "0.62.3",
     "styled-components": "4.3.2",
     "unfetch": "^3.0.0"
   },
