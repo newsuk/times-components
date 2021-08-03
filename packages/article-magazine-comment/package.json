@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-magazine-comment",
-  "version": "3.29.28",
+  "version": "3.29.29",
   "description": "Magazine Comment Article Template",
   "main": "dist/article-magazine-comment",
   "dev": "src/article-magazine-comment",
@@ -67,7 +67,7 @@
     "@times-components/article-flag": "2.10.11",
     "@times-components/article-label": "2.7.58",
     "@times-components/article-lead-asset": "1.6.40",
-    "@times-components/article-skeleton": "1.51.31",
+    "@times-components/article-skeleton": "1.51.32",
     "@times-components/caption": "3.0.142",
     "@times-components/context": "1.2.25",
     "@times-components/date-publication": "0.21.60",
