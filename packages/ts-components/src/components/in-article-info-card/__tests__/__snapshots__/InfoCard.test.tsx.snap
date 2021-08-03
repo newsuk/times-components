@@ -1,0 +1,1075 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoCard renders 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-chPdSV erPDic"
+    >
+      <div
+        class="rec rec-carousel-wrapper sc-kAzzGY cgeFtl sc-EHOje eOvqeq"
+      >
+        <div
+          class="rec rec-carousel sc-ifAKCX kQtsWC"
+          style="height: 0px;"
+        >
+          <div
+            class="rec rec-slider-container sc-htpNat iDfeOS"
+          >
+            <div
+              class="rec rec-slider sc-bxivhb ktZOgd"
+              style="transition: all 500ms ease; left: 0px;"
+            >
+              <div
+                class="rec rec-swipable"
+                style="display: flex; flex-direction: row;"
+              >
+                <div
+                  class="rec rec-carousel-item rec-carousel-item-0 rec-carousel-item-visible"
+                >
+                  <div
+                    class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                    id="0"
+                    style="width: 0px; padding: 0px 0px 0px 0px;"
+                  >
+                    <div
+                      class="sc-kpOJdX dacJJY"
+                      tabindex="0"
+                    >
+                      <div
+                        class="sc-ckVGcZ kInrAI"
+                      >
+                        <img
+                          class="sc-dxgOiQ eRLSPr"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180"
+                        />
+                      </div>
+                      <div
+                        class="sc-gZMcBi grGRzQ"
+                      >
+                        Birch
+                      </div>
+                      <div
+                        class="sc-gqjmRU iAgaSh"
+                      >
+                        Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rec rec-carousel-item rec-carousel-item-1 rec-carousel-item-hidden rec-carousel-item-next"
+                >
+                  <div
+                    class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                    id="1"
+                    style="width: 0px; padding: 0px 0px 0px 0px;"
+                  >
+                    <div
+                      class="sc-kpOJdX dacJJY"
+                      tabindex="-1"
+                    >
+                      
+                      <div
+                        class="sc-gZMcBi grGRzQ"
+                      >
+                        Mitre
+                      </div>
+                      <div
+                        class="sc-gqjmRU iAgaSh"
+                      >
+                        Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rec rec-carousel-item rec-carousel-item-2 rec-carousel-item-hidden"
+                >
+                  <div
+                    class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                    id="2"
+                    style="width: 0px; padding: 0px 0px 0px 0px;"
+                  >
+                    <div
+                      class="sc-kpOJdX dacJJY"
+                      tabindex="-1"
+                    >
+                      
+                      <div
+                        class="sc-gZMcBi grGRzQ"
+                      >
+                        Subtitle 1
+                      </div>
+                      <div
+                        class="sc-gqjmRU iAgaSh"
+                      >
+                        Copy text 1
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rec rec-carousel-item rec-carousel-item-3 rec-carousel-item-hidden"
+                >
+                  <div
+                    class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                    id="3"
+                    style="width: 0px; padding: 0px 0px 0px 0px;"
+                  >
+                    <div
+                      class="sc-kpOJdX dacJJY"
+                      tabindex="-1"
+                    >
+                      
+                      <div
+                        class="sc-gZMcBi grGRzQ"
+                      >
+                        Subtitle 2
+                      </div>
+                      <div
+                        class="sc-gqjmRU iAgaSh"
+                      >
+                        Copy text 2
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rec rec-carousel-item rec-carousel-item-4 rec-carousel-item-hidden"
+                >
+                  <div
+                    class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                    id="4"
+                    style="width: 0px; padding: 0px 0px 0px 0px;"
+                  >
+                    <div
+                      class="sc-kpOJdX dacJJY"
+                      tabindex="-1"
+                    >
+                      
+                      <div
+                        class="sc-gZMcBi grGRzQ"
+                      >
+                        Subtitle 3
+                      </div>
+                      <div
+                        class="sc-gqjmRU iAgaSh"
+                      >
+                        Copy text 3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rec rec-carousel-item rec-carousel-item-5 rec-carousel-item-hidden"
+                >
+                  <div
+                    class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                    id="5"
+                    style="width: 0px; padding: 0px 0px 0px 0px;"
+                  >
+                    <div
+                      class="sc-kpOJdX dacJJY"
+                      tabindex="-1"
+                    >
+                      
+                      <div
+                        class="sc-gZMcBi grGRzQ"
+                      >
+                        Subtitle 4
+                      </div>
+                      <div
+                        class="sc-gqjmRU iAgaSh"
+                      >
+                        Copy text 4
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-kgoBCf vljVW"
+        >
+          <div
+            class="sc-kGXeez bCsASU"
+          >
+            <div
+              class="sc-dnqmqq diBCcz"
+            >
+              Best places to stay
+            </div>
+            <div
+              class="sc-VigVT hUfyZG"
+            >
+              <div
+                class="sc-iwsKbI qxPIE"
+              >
+                The Sunday Times best British hotels
+              </div>
+              <div
+                class="sc-jTzLTM izCUzN"
+              >
+                <button
+                  class="sc-fjdhpX igeQtI"
+                  data-testid="Previous button"
+                  disabled=""
+                >
+                  <svg
+                    height="14px"
+                    width="10px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="sc-jzJRlG fFIdwf"
+                >
+                  <div
+                    class="sc-cSHVUG hJnzps"
+                    data-testid="Page Indicator"
+                  />
+                  <div
+                    class="sc-cSHVUG gIgDvO"
+                    data-testid="Page Indicator"
+                  />
+                  <div
+                    class="sc-cSHVUG gIgDvO"
+                    data-testid="Page Indicator"
+                  />
+                </div>
+                <button
+                  class="nextBtn sc-fjdhpX brPuiN"
+                  data-testid="Next Button"
+                >
+                  <svg
+                    height="14px"
+                    width="10px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`InfoCard renders no image 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-chPdSV erPDic"
+    >
+      <div
+        class="rec rec-carousel-wrapper sc-kAzzGY cgeFtl sc-EHOje eOvqeq"
+      >
+        <div
+          class="rec rec-carousel sc-ifAKCX kQtsWC"
+          style="height: 0px;"
+        >
+          <div
+            class="rec rec-slider-container sc-htpNat iDfeOS"
+          >
+            <div
+              class="rec rec-slider sc-bxivhb ktZOgd"
+              style="transition: all 500ms ease; left: 0px;"
+            >
+              <div
+                class="rec rec-swipable"
+                style="display: flex; flex-direction: row;"
+              >
+                <div
+                  class="rec rec-carousel-item rec-carousel-item-0 rec-carousel-item-visible"
+                >
+                  <div
+                    class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                    id="0"
+                    style="width: 0px; padding: 0px 0px 0px 0px;"
+                  >
+                    <div
+                      class="sc-kpOJdX dacJJY"
+                      tabindex="0"
+                    >
+                      <div
+                        class="sc-ckVGcZ kInrAI"
+                      >
+                        <img
+                          class="sc-dxgOiQ eRLSPr"
+                          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180"
+                        />
+                      </div>
+                      <div
+                        class="sc-gZMcBi grGRzQ"
+                      >
+                        Birch
+                      </div>
+                      <div
+                        class="sc-gqjmRU iAgaSh"
+                      >
+                        Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rec rec-carousel-item rec-carousel-item-1 rec-carousel-item-hidden rec-carousel-item-next"
+                >
+                  <div
+                    class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                    id="1"
+                    style="width: 0px; padding: 0px 0px 0px 0px;"
+                  >
+                    <div
+                      class="sc-kpOJdX dacJJY"
+                      tabindex="-1"
+                    >
+                      
+                      <div
+                        class="sc-gZMcBi grGRzQ"
+                      >
+                        Mitre
+                      </div>
+                      <div
+                        class="sc-gqjmRU iAgaSh"
+                      >
+                        Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rec rec-carousel-item rec-carousel-item-2 rec-carousel-item-hidden"
+                >
+                  <div
+                    class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                    id="2"
+                    style="width: 0px; padding: 0px 0px 0px 0px;"
+                  >
+                    <div
+                      class="sc-kpOJdX dacJJY"
+                      tabindex="-1"
+                    >
+                      
+                      <div
+                        class="sc-gZMcBi grGRzQ"
+                      >
+                        Subtitle 1
+                      </div>
+                      <div
+                        class="sc-gqjmRU iAgaSh"
+                      >
+                        Copy text 1
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rec rec-carousel-item rec-carousel-item-3 rec-carousel-item-hidden"
+                >
+                  <div
+                    class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                    id="3"
+                    style="width: 0px; padding: 0px 0px 0px 0px;"
+                  >
+                    <div
+                      class="sc-kpOJdX dacJJY"
+                      tabindex="-1"
+                    >
+                      
+                      <div
+                        class="sc-gZMcBi grGRzQ"
+                      >
+                        Subtitle 2
+                      </div>
+                      <div
+                        class="sc-gqjmRU iAgaSh"
+                      >
+                        Copy text 2
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rec rec-carousel-item rec-carousel-item-4 rec-carousel-item-hidden"
+                >
+                  <div
+                    class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                    id="4"
+                    style="width: 0px; padding: 0px 0px 0px 0px;"
+                  >
+                    <div
+                      class="sc-kpOJdX dacJJY"
+                      tabindex="-1"
+                    >
+                      
+                      <div
+                        class="sc-gZMcBi grGRzQ"
+                      >
+                        Subtitle 3
+                      </div>
+                      <div
+                        class="sc-gqjmRU iAgaSh"
+                      >
+                        Copy text 3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="rec rec-carousel-item rec-carousel-item-5 rec-carousel-item-hidden"
+                >
+                  <div
+                    class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                    id="5"
+                    style="width: 0px; padding: 0px 0px 0px 0px;"
+                  >
+                    <div
+                      class="sc-kpOJdX dacJJY"
+                      tabindex="-1"
+                    >
+                      
+                      <div
+                        class="sc-gZMcBi grGRzQ"
+                      >
+                        Subtitle 4
+                      </div>
+                      <div
+                        class="sc-gqjmRU iAgaSh"
+                      >
+                        Copy text 4
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-kgoBCf vljVW"
+        >
+          <div
+            class="sc-kGXeez bCsASU"
+          >
+            <div
+              class="sc-dnqmqq diBCcz"
+            >
+              Best places to stay
+            </div>
+            <div
+              class="sc-VigVT hUfyZG"
+            >
+              <div
+                class="sc-iwsKbI qxPIE"
+              >
+                The Sunday Times best British hotels
+              </div>
+              <div
+                class="sc-jTzLTM izCUzN"
+              >
+                <button
+                  class="sc-fjdhpX igeQtI"
+                  data-testid="Previous button"
+                  disabled=""
+                >
+                  <svg
+                    height="14px"
+                    width="10px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="sc-jzJRlG fFIdwf"
+                >
+                  <div
+                    class="sc-cSHVUG hJnzps"
+                    data-testid="Page Indicator"
+                  />
+                  <div
+                    class="sc-cSHVUG gIgDvO"
+                    data-testid="Page Indicator"
+                  />
+                  <div
+                    class="sc-cSHVUG gIgDvO"
+                    data-testid="Page Indicator"
+                  />
+                </div>
+                <button
+                  class="nextBtn sc-fjdhpX brPuiN"
+                  data-testid="Next Button"
+                >
+                  <svg
+                    height="14px"
+                    width="10px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                      fill-rule="nonzero"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`InfoCard should render the initial loading state correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-htoDjs sfJmJ"
+  >
+    <div>
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InfoCard should render the standard component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-chPdSV erPDic"
+  >
+    <div
+      class="rec rec-carousel-wrapper sc-kAzzGY cgeFtl sc-EHOje eOvqeq"
+    >
+      <div
+        class="rec rec-carousel sc-ifAKCX kQtsWC"
+        style="height: 0px;"
+      >
+        <div
+          class="rec rec-slider-container sc-htpNat iDfeOS"
+        >
+          <div
+            class="rec rec-slider sc-bxivhb ktZOgd"
+            style="transition: all 500ms ease; left: 0px;"
+          >
+            <div
+              class="rec rec-swipable"
+              style="display: flex; flex-direction: row;"
+            >
+              <div
+                class="rec rec-carousel-item rec-carousel-item-0 rec-carousel-item-visible"
+              >
+                <div
+                  class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                  id="0"
+                  style="width: 0px; padding: 0px 0px 0px 0px;"
+                >
+                  <div
+                    class="sc-kpOJdX dacJJY"
+                    tabindex="0"
+                  >
+                    <div
+                      class="sc-ckVGcZ kInrAI"
+                    >
+                      <img
+                        class="sc-dxgOiQ eRLSPr"
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180"
+                      />
+                    </div>
+                    <div
+                      class="sc-gZMcBi grGRzQ"
+                    >
+                      Birch
+                    </div>
+                    <div
+                      class="sc-gqjmRU iAgaSh"
+                    >
+                      Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rec rec-carousel-item rec-carousel-item-1 rec-carousel-item-hidden rec-carousel-item-next"
+              >
+                <div
+                  class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                  id="1"
+                  style="width: 0px; padding: 0px 0px 0px 0px;"
+                >
+                  <div
+                    class="sc-kpOJdX dacJJY"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="sc-gZMcBi grGRzQ"
+                    >
+                      Mitre
+                    </div>
+                    <div
+                      class="sc-gqjmRU iAgaSh"
+                    >
+                      Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rec rec-carousel-item rec-carousel-item-2 rec-carousel-item-hidden"
+              >
+                <div
+                  class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                  id="2"
+                  style="width: 0px; padding: 0px 0px 0px 0px;"
+                >
+                  <div
+                    class="sc-kpOJdX dacJJY"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="sc-gZMcBi grGRzQ"
+                    >
+                      Subtitle 1
+                    </div>
+                    <div
+                      class="sc-gqjmRU iAgaSh"
+                    >
+                      Copy text 1
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rec rec-carousel-item rec-carousel-item-3 rec-carousel-item-hidden"
+              >
+                <div
+                  class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                  id="3"
+                  style="width: 0px; padding: 0px 0px 0px 0px;"
+                >
+                  <div
+                    class="sc-kpOJdX dacJJY"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="sc-gZMcBi grGRzQ"
+                    >
+                      Subtitle 2
+                    </div>
+                    <div
+                      class="sc-gqjmRU iAgaSh"
+                    >
+                      Copy text 2
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rec rec-carousel-item rec-carousel-item-4 rec-carousel-item-hidden"
+              >
+                <div
+                  class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                  id="4"
+                  style="width: 0px; padding: 0px 0px 0px 0px;"
+                >
+                  <div
+                    class="sc-kpOJdX dacJJY"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="sc-gZMcBi grGRzQ"
+                    >
+                      Subtitle 3
+                    </div>
+                    <div
+                      class="sc-gqjmRU iAgaSh"
+                    >
+                      Copy text 3
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rec rec-carousel-item rec-carousel-item-5 rec-carousel-item-hidden"
+              >
+                <div
+                  class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                  id="5"
+                  style="width: 0px; padding: 0px 0px 0px 0px;"
+                >
+                  <div
+                    class="sc-kpOJdX dacJJY"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="sc-gZMcBi grGRzQ"
+                    >
+                      Subtitle 4
+                    </div>
+                    <div
+                      class="sc-gqjmRU iAgaSh"
+                    >
+                      Copy text 4
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-kgoBCf vljVW"
+      >
+        <div
+          class="sc-kGXeez bCsASU"
+        >
+          <div
+            class="sc-dnqmqq diBCcz"
+          >
+            Best places to stay
+          </div>
+          <div
+            class="sc-VigVT hUfyZG"
+          >
+            <div
+              class="sc-iwsKbI qxPIE"
+            >
+              The Sunday Times best British hotels
+            </div>
+            <div
+              class="sc-jTzLTM izCUzN"
+            >
+              <button
+                class="sc-fjdhpX igeQtI"
+                data-testid="Previous button"
+                disabled=""
+              >
+                <svg
+                  height="14px"
+                  width="10px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </button>
+              <div
+                class="sc-jzJRlG fFIdwf"
+              >
+                <div
+                  class="sc-cSHVUG hJnzps"
+                  data-testid="Page Indicator"
+                />
+                <div
+                  class="sc-cSHVUG gIgDvO"
+                  data-testid="Page Indicator"
+                />
+                <div
+                  class="sc-cSHVUG gIgDvO"
+                  data-testid="Page Indicator"
+                />
+              </div>
+              <button
+                class="nextBtn sc-fjdhpX brPuiN"
+                data-testid="Next Button"
+              >
+                <svg
+                  height="14px"
+                  width="10px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InfoCard should render the wide component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-chPdSV gOIZDa"
+  >
+    <div
+      class="rec rec-carousel-wrapper sc-kAzzGY cgeFtl sc-EHOje eOvqeq"
+    >
+      <div
+        class="rec rec-carousel sc-ifAKCX kQtsWC"
+        style="height: 0px;"
+      >
+        <div
+          class="rec rec-slider-container sc-htpNat iDfeOS"
+        >
+          <div
+            class="rec rec-slider sc-bxivhb ktZOgd"
+            style="transition: all 500ms ease; left: 0px;"
+          >
+            <div
+              class="rec rec-swipable"
+              style="display: flex; flex-direction: row;"
+            >
+              <div
+                class="rec rec-carousel-item rec-carousel-item-0 rec-carousel-item-visible"
+              >
+                <div
+                  class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                  id="0"
+                  style="width: 0px; padding: 0px 0px 0px 0px;"
+                >
+                  <div
+                    class="sc-kpOJdX dacJJY"
+                    tabindex="0"
+                  >
+                    <div
+                      class="sc-ckVGcZ kInrAI"
+                    >
+                      <img
+                        class="sc-dxgOiQ eRLSPr"
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180"
+                      />
+                    </div>
+                    <div
+                      class="sc-gZMcBi grGRzQ"
+                    >
+                      Birch
+                    </div>
+                    <div
+                      class="sc-gqjmRU iAgaSh"
+                    >
+                      Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rec rec-carousel-item rec-carousel-item-1 rec-carousel-item-hidden rec-carousel-item-next"
+              >
+                <div
+                  class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                  id="1"
+                  style="width: 0px; padding: 0px 0px 0px 0px;"
+                >
+                  <div
+                    class="sc-kpOJdX dacJJY"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="sc-gZMcBi grGRzQ"
+                    >
+                      Mitre
+                    </div>
+                    <div
+                      class="sc-gqjmRU iAgaSh"
+                    >
+                      Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rec rec-carousel-item rec-carousel-item-2 rec-carousel-item-hidden"
+              >
+                <div
+                  class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                  id="2"
+                  style="width: 0px; padding: 0px 0px 0px 0px;"
+                >
+                  <div
+                    class="sc-kpOJdX dacJJY"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="sc-gZMcBi grGRzQ"
+                    >
+                      Subtitle 1
+                    </div>
+                    <div
+                      class="sc-gqjmRU iAgaSh"
+                    >
+                      Copy text 1
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rec rec-carousel-item rec-carousel-item-3 rec-carousel-item-hidden"
+              >
+                <div
+                  class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                  id="3"
+                  style="width: 0px; padding: 0px 0px 0px 0px;"
+                >
+                  <div
+                    class="sc-kpOJdX dacJJY"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="sc-gZMcBi grGRzQ"
+                    >
+                      Subtitle 2
+                    </div>
+                    <div
+                      class="sc-gqjmRU iAgaSh"
+                    >
+                      Copy text 2
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rec rec-carousel-item rec-carousel-item-4 rec-carousel-item-hidden"
+              >
+                <div
+                  class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                  id="4"
+                  style="width: 0px; padding: 0px 0px 0px 0px;"
+                >
+                  <div
+                    class="sc-kpOJdX dacJJY"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="sc-gZMcBi grGRzQ"
+                    >
+                      Subtitle 3
+                    </div>
+                    <div
+                      class="sc-gqjmRU iAgaSh"
+                    >
+                      Copy text 3
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="rec rec-carousel-item rec-carousel-item-5 rec-carousel-item-hidden"
+              >
+                <div
+                  class="sc-bwzfXH rec rec-item-wrapper dYWSjd"
+                  id="5"
+                  style="width: 0px; padding: 0px 0px 0px 0px;"
+                >
+                  <div
+                    class="sc-kpOJdX dacJJY"
+                    tabindex="-1"
+                  >
+                    <div
+                      class="sc-gZMcBi grGRzQ"
+                    >
+                      Subtitle 4
+                    </div>
+                    <div
+                      class="sc-gqjmRU iAgaSh"
+                    >
+                      Copy text 4
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-kgoBCf vljVW"
+      >
+        <div
+          class="sc-kGXeez bCsASU"
+        >
+          <div
+            class="sc-dnqmqq diBCcz"
+          >
+            Best places to stay
+          </div>
+          <div
+            class="sc-VigVT hUfyZG"
+          >
+            <div
+              class="sc-iwsKbI qxPIE"
+            >
+              The Sunday Times best British hotels
+            </div>
+            <div
+              class="sc-jTzLTM izCUzN"
+            >
+              <button
+                class="sc-fjdhpX igeQtI"
+                data-testid="Previous button"
+                disabled=""
+              >
+                <svg
+                  height="14px"
+                  width="10px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </button>
+              <div
+                class="sc-jzJRlG fFIdwf"
+              >
+                <div
+                  class="sc-cSHVUG hJnzps"
+                  data-testid="Page Indicator"
+                />
+                <div
+                  class="sc-cSHVUG gIgDvO"
+                  data-testid="Page Indicator"
+                />
+              </div>
+              <button
+                class="nextBtn sc-fjdhpX brPuiN"
+                data-testid="Next Button"
+              >
+                <svg
+                  height="14px"
+                  width="10px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.29 12.956L3.903 7.049 7.289.97h-.96L.697 7.013l5.632 5.943z"
+                    fill-rule="nonzero"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
