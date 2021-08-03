@@ -3,6 +3,7 @@ import { render, cleanup, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { InfoCard } from '../InfoCard';
 import { useFetch } from '../../../helpers/fetch/FetchProvider';
+import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 import mockDate from 'mockdate';
 
 jest.mock('@times-components/image', () => ({
@@ -192,6 +193,12 @@ describe('InfoCard', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  it('should render the initial error state correctly', () => {
+    (useFetch as jest.Mock).mockReturnValue({ error: true });
+    const { asFragment } = render(<InfoCard sectionColour="#636C17" />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it('should render the wide component', () => {
     (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
     const { asFragment } = renderInfoCard();
@@ -228,41 +235,52 @@ describe('InfoCard', () => {
     );
   });
 
-  it('click previous button', async () => {
-    const { getAllByTestId } = renderInfoCard();
-    const previousButton = getAllByTestId('Previous button')[0];
-    const nextButton = getAllByTestId('Next Button')[0];
-    fireEvent.click(nextButton);
-    fireEvent.click(previousButton);
-    expect(previousButton).toHaveAttribute('disabled');
-    expect(nextButton).not.toHaveAttribute('disabled');
-  });
-  it('click next button', async () => {
+  describe('tracking', () => {
     (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
+    let oldIntersectionObserver: typeof IntersectionObserver;
+    beforeEach(() => {
+      oldIntersectionObserver = window.IntersectionObserver;
+      // @ts-ignore
+      window.IntersectionObserver = FakeIntersectionObserver;
+    });
 
-    const { getAllByTestId } = renderInfoCard();
+    afterEach(() => {
+      window.IntersectionObserver = oldIntersectionObserver;
+      jest.resetAllMocks();
+    });
 
-    const previousButton = getAllByTestId('Previous button')[0];
-    const nextButton = getAllByTestId('Next Button')[0];
+    it('click previous button', async () => {
+      const { getAllByTestId } = renderInfoCard();
+      const previousButton = getAllByTestId('Previous button')[0];
+      const nextButton = getAllByTestId('Next Button')[0];
+      fireEvent.click(nextButton);
+      fireEvent.click(previousButton);
+      expect(previousButton).toHaveAttribute('disabled');
+      expect(nextButton).not.toHaveAttribute('disabled');
+    });
+    it('click next button', async () => {
+      (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
+      const { getAllByTestId } = renderInfoCard();
+      const previousButton = getAllByTestId('Previous button')[0];
+      const nextButton = getAllByTestId('Next Button')[0];
+      expect(previousButton).toHaveAttribute('disabled');
+      expect(nextButton).not.toHaveAttribute('disabled');
+      fireEvent.click(nextButton);
+      expect(previousButton).not.toHaveAttribute('disabled');
+      expect(nextButton).not.toHaveAttribute('disabled');
+    });
 
-    expect(previousButton).toHaveAttribute('disabled');
-    expect(nextButton).not.toHaveAttribute('disabled');
-
-    fireEvent.click(nextButton);
-    expect(previousButton).not.toHaveAttribute('disabled');
-    expect(nextButton).not.toHaveAttribute('disabled');
-  });
-
-  it('page indicator button', async () => {
-    (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
-    const { getAllByTestId } = renderInfoCard();
-    const previousButton = getAllByTestId('Previous button')[0];
-    const nextButton = getAllByTestId('Next Button')[0];
-    expect(previousButton).toHaveAttribute('disabled');
-    expect(nextButton).not.toHaveAttribute('disabled');
-    const pageIndicatorButton = getAllByTestId('Page Indicator')[1];
-    fireEvent.click(pageIndicatorButton);
-    expect(previousButton).not.toHaveAttribute('disabled');
-    expect(nextButton).not.toHaveAttribute('disabled');
+    it('page indicator button', async () => {
+      (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
+      const { getAllByTestId } = renderInfoCard();
+      const previousButton = getAllByTestId('Previous button')[0];
+      const nextButton = getAllByTestId('Next Button')[0];
+      expect(previousButton).toHaveAttribute('disabled');
+      expect(nextButton).not.toHaveAttribute('disabled');
+      const pageIndicatorButton = getAllByTestId('Page Indicator')[1];
+      fireEvent.click(pageIndicatorButton);
+      expect(previousButton).not.toHaveAttribute('disabled');
+      expect(nextButton).not.toHaveAttribute('disabled');
+    });
   });
 });

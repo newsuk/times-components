@@ -19,6 +19,7 @@ import {
 import { Arrow } from '../carousel/Arrow';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
+import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import { DeckData } from '../../helpers/fetch/types';
 
 const sanitiseCopy = (copy: string, allowedTags: string[] = []) =>
@@ -185,66 +186,107 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
     setCurrent(event.index);
   };
   return (
-    <CarouselContainer
-      sectionColour={sectionColour}
-      isWide={isWide(size)}
-      isStandard={isStandard(size)}
+    <TrackingContextProvider
+      context={{
+        object: 'InfoCard',
+        attrs: {
+          component_type:
+            'in-article component : text-image info cards : interactive',
+          event_navigation_action: 'navigation',
+          event_navigation_browsing_method: 'click',
+          component_name: `${headline}`
+        }
+      }}
+      scrolledEvent={{
+        attrs: {
+          component_type:
+            'in-article component : text-image info cards : ' +
+            (showDotItem > 1 ? 'interactive' : 'static'),
+          event_navigation_name:
+            'in-article component displayed : text-image info cards',
+          event_navigation_browsing_method: 'scroll'
+        }
+      }}
     >
-      <StyledCarousel
-        sectionColour={sectionColour}
-        breakPoints={breakPointsCard}
-        isRTL={false}
-        onChange={handleChange}
-        showArrows={false}
-        renderPagination={({ activePage, onClick }) => {
-          const handlePaginationClick = (indicatorId: string) => {
-            onClick && onClick(indicatorId);
-          };
-          return (
-            <Card
-              data={infoCardData[current]}
-              headline={headline}
-              label={label}
-              sectionColour={sectionColour}
-            >
-              {infoCardData.length >
-                (isWide(size) && (windowWidth >= wide && isWide(size))
-                  ? 3
-                  : 2) && (
-                <CustomPagination
-                  activePage={activePage}
-                  /* @ts-ignore */
-                  onClick={handlePaginationClick}
-                  current={current}
-                  data={infoCardData}
-                  showDisplayItem={showDisplayItem}
-                  windowWidth={winWidth.toString()}
-                  showDotItem={showDotItem}
-                />
-              )}
-            </Card>
-          );
-        }}
-      >
-        {infoCardData.map((row: InfoCardData, index: number) => (
-          <InfoCardContainer key={index}>
-            {row.data.image && (
-              <AspectRatio ratio="16:9">
-                <CardImg src={row.data.image} />
-              </AspectRatio>
-            )}
-            {row.data.subtitle && <SubHeading>{row.data.subtitle}</SubHeading>}
-            {row.data.copy && (
-              <BodyCopy
-                dangerouslySetInnerHTML={{
-                  __html: sanitiseCopy(row.data.copy, ['br', 'b', 'i'])
-                }}
-              />
-            )}
-          </InfoCardContainer>
-        ))}
-      </StyledCarousel>
-    </CarouselContainer>
+      {({ intersectObserverRef, fireAnalyticsEvent }) => (
+        <CarouselContainer
+          sectionColour={sectionColour}
+          isWide={isWide(size)}
+          isStandard={isStandard(size)}
+          ref={intersectObserverRef}
+        >
+          <StyledCarousel
+            sectionColour={sectionColour}
+            breakPoints={breakPointsCard}
+            isRTL={false}
+            onChange={handleChange}
+            showArrows={false}
+            renderPagination={({ activePage, onClick }) => {
+              const handlePaginationClick = (
+                indicatorId: string,
+                buttonLabel?: string
+              ) => {
+                if (buttonLabel) {
+                  fireAnalyticsEvent({
+                    attrs: {
+                      event_navigation_name: `button : ${buttonLabel}`,
+                      component_name: headline
+                    }
+                  });
+                }
+                onClick && onClick(indicatorId);
+              };
+              return (
+                <Card
+                  data={infoCardData[current]}
+                  headline={headline}
+                  label={label}
+                  sectionColour={sectionColour}
+                >
+                  {infoCardData.length >
+                    (isWide(size) && (windowWidth >= wide && isWide(size))
+                      ? 3
+                      : windowWidth < medium
+                        ? 1
+                        : 2) && (
+                    <CustomPagination
+                      activePage={activePage}
+                      /* @ts-ignore */
+                      onClick={handlePaginationClick}
+                      current={current}
+                      data={infoCardData}
+                      showDisplayItem={showDisplayItem}
+                      windowWidth={winWidth.toString()}
+                      showDotItem={showDotItem}
+                    />
+                  )}
+                </Card>
+              );
+            }}
+          >
+            {infoCardData.map((row: InfoCardData, index: number) => (
+              <InfoCardContainer key={index}>
+                {row.data.image && (
+                  <AspectRatio ratio="16:9">
+                    <CardImg src={row.data.image} />
+                  </AspectRatio>
+                )}
+                {row.data.subtitle && (
+                  <SubHeading>{row.data.subtitle}</SubHeading>
+                )}
+                {row.data.copy && (
+                  <BodyCopy
+                    dangerouslySetInnerHTML={{
+                      __html: sanitiseCopy(row.data.copy, ['br', 'b', 'i'])
+                    }}
+                  />
+                )}
+              </InfoCardContainer>
+            ))}
+          </StyledCarousel>
+        </CarouselContainer>
+      )}
+    </TrackingContextProvider>
   );
 };
 
