@@ -193,6 +193,12 @@ describe('InfoCard', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
+  it('should render the initial error state correctly', () => {
+    (useFetch as jest.Mock).mockReturnValue({ error: true });
+    const { asFragment } = render(<InfoCard sectionColour="#636C17" />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it('should render the wide component', () => {
     (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
     const { asFragment } = renderInfoCard();
