@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FetchProvider> Unprovided 1`] = `
+<DocumentFragment>
+  <div>
+    Error
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<FetchProvider> error 1`] = `
+<DocumentFragment>
+  <div>
+    Error
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<FetchProvider> fetch 1`] = `
+<DocumentFragment>
+  <div>
+    boo
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<FetchProvider> loading 1`] = `
+<DocumentFragment>
+  <div>
+    boo
+  </div>
+</DocumentFragment>
+`;
