@@ -242,7 +242,9 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                   {infoCardData.length >
                     (isWide(size) && (windowWidth >= wide && isWide(size))
                       ? 3
-                      : 2) && (
+                      : windowWidth < medium
+                        ? 1
+                        : 2) && (
                     <CustomPagination
                       activePage={activePage}
                       /* @ts-ignore */

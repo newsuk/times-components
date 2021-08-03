@@ -28,6 +28,12 @@ storiesOf('Typescript Component/In Article/Info Card', module)
     </FetchProvider>
   ))
 
+  .add('Standard with Image', () => (
+    <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43961">
+      <InfoCard sectionColour="#636C17" />
+    </FetchProvider>
+  ))
+
   .add('Wide with Copy', () => (
     <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43603">
       <InfoCard sectionColour="#636C17" />
