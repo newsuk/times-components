@@ -68,7 +68,12 @@ export type GalleryCarouselProps = {
   initialIndex?: number;
 };
 
-type GalleryCarouselFields = { headline: string; label: string; size: string };
+export enum Layout {
+  Small = '4033',
+  Wide = '4035'
+}
+
+type GalleryCarouselFields = { headline: string; label: string; size: Layout };
 
 type GalleryCarouselDeckData = DeckData<GalleryCarouselFields, CarouselDataObj>;
 
@@ -93,18 +98,12 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
   const { headline, label, size } = data.fields;
   const carouselData = data.body.data;
 
-  const isSmall = (carouselSize: string) => {
-    if (carouselSize === '4033') {
-      return true;
-    }
-    return false;
+  const isSmall = (infoCardSize: Layout) => {
+    return infoCardSize === Layout.Small;
   };
 
-  const isLarge = (carouselSize: string) => {
-    if (carouselSize === '4035') {
-      return true;
-    }
-    return false;
+  const isWide = (infoCardSize: Layout) => {
+    return infoCardSize === Layout.Wide;
   };
 
   const [current, setCurrent] = useState(initialIndex);
@@ -131,13 +130,13 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
       {({ intersectObserverRef, fireAnalyticsEvent }) => (
         <CarouselContainer
           sectionColour={sectionColour}
-          isLarge={isLarge(size)}
+          isWide={isWide(size)}
           isSmall={isSmall(size)}
           ref={intersectObserverRef}
         >
           <StyledCarousel
             sectionColour={sectionColour}
-            isLarge={isLarge(size)}
+            isWide={isWide(size)}
             itemsToScroll={1}
             itemsToShow={1}
             isRTL={false}
@@ -160,7 +159,7 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
               };
               return (
                 <Card
-                  isLarge={isLarge(size)}
+                  isWide={isWide(size)}
                   data={carouselData[current]}
                   headline={headline}
                   label={label}
@@ -189,19 +188,19 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
               </div>
             ))}
           </StyledCarousel>
-          <MobileOrLarge isLarge={isLarge(size)}>
+          <MobileOrLarge isWide={isWide(size)}>
             <div style={{ paddingLeft: '16px', paddingRight: '16px' }}>
-              <Credit isLarge={isLarge(size)}>
+              <Credit isWide={isWide(size)}>
                 {carouselData[current].data.credit}
               </Credit>
               {carouselData[current].data.imageTitle && (
-                <ImageTitle isLarge={isLarge(size)}>
+                <ImageTitle isWide={isWide(size)}>
                   {carouselData[current].data.imageTitle}
                 </ImageTitle>
               )}
               {carouselData[current].data.copy && (
                 <Copy
-                  isLarge={isLarge(size)}
+                  isWide={isWide(size)}
                   dangerouslySetInnerHTML={{
                     // @ts-ignore
                     __html: sanitiseCopy(carouselData[current].data.copy, [

@@ -22,7 +22,7 @@ storiesOf('Typescript Component/Gallery Carousel', module)
     </TrackingContextProvider>
   ))
 
-  .add('Large', () => (
+  .add('Wide', () => (
     <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43486">
       <div style={{ margin: '20px 0px' }}>
         <GalleryCarousel sectionColour="#13354E" />

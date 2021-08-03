@@ -15,30 +15,30 @@ import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import { CarouselDataObj } from './types';
 
 export const Card: React.FC<{
-  isLarge: boolean;
+  isWide: boolean;
   isSmall: boolean;
   data: CarouselDataObj;
   headline: string;
   label: string;
   sectionColour: string;
-}> = ({ children, isLarge, data, headline, label, isSmall, sectionColour }) => {
+}> = ({ children, isWide, data, headline, label, isSmall, sectionColour }) => {
   const cardData = data.data;
   return (
-    <CardContainer isLarge={isLarge} isSmall={isSmall}>
+    <CardContainer isWide={isWide} isSmall={isSmall}>
       <CardContent>
         <Label sectionColour={sectionColour}>{label}</Label>
         <HeadlineButtonContainer>
-          <Headline isLarge={isLarge}>{headline}</Headline>
-          <MobileOrLarge isLarge={isLarge}>{children}</MobileOrLarge>
+          <Headline isWide={isWide}>{headline}</Headline>
+          <MobileOrLarge isWide={isWide}>{children}</MobileOrLarge>
         </HeadlineButtonContainer>
-        <NotMobileOrLarge isLarge={isLarge}>
+        <NotMobileOrLarge isWide={isWide}>
           <div>
             {cardData.imageTitle && (
-              <ImageTitle isLarge={isLarge}>{cardData.imageTitle}</ImageTitle>
+              <ImageTitle isWide={isWide}>{cardData.imageTitle}</ImageTitle>
             )}
             {cardData.copy && (
               <Copy
-                isLarge={isLarge}
+                isWide={isWide}
                 dangerouslySetInnerHTML={{
                   __html: sanitiseCopy(cardData.copy, ['br', 'b', 'i'])
                 }}
@@ -46,7 +46,7 @@ export const Card: React.FC<{
             )}
           </div>
           <div>
-            <Credit isLarge={isLarge}>{cardData.credit}</Credit>
+            <Credit isWide={isWide}>{cardData.credit}</Credit>
             {children}
           </div>
         </NotMobileOrLarge>
