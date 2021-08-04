@@ -3,10 +3,10 @@
 exports[`GalleryCarousel should render the component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-kpOJdX eRcxCM"
+    class="sc-dxgOiQ fwzHRb"
   >
     <div
-      class="rec rec-carousel-wrapper sc-dxgOiQ hHLjXH sc-EHOje eOvqeq"
+      class="rec rec-carousel-wrapper sc-ckVGcZ jiXkpL sc-EHOje eOvqeq"
     >
       <div
         class="rec rec-carousel sc-ifAKCX kQtsWC"
@@ -36,7 +36,7 @@ exports[`GalleryCarousel should render the component 1`] = `
                     tabindex="0"
                   >
                     <div
-                      class="sc-ckVGcZ jnhKYI"
+                      class="sc-jKJlTe gmCzTu"
                     >
                       <img
                         src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180"
@@ -58,10 +58,10 @@ exports[`GalleryCarousel should render the component 1`] = `
                     tabindex="-1"
                   >
                     <div
-                      class="sc-ckVGcZ jnhKYI"
+                      class="sc-jKJlTe gmCzTu"
                     >
                       <img
-                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180"
+                        src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0f831cea-0317-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500"
                       />
                     </div>
                   </div>
@@ -72,32 +72,32 @@ exports[`GalleryCarousel should render the component 1`] = `
         </div>
       </div>
       <div
-        class="sc-jTzLTM eQMADH"
+        class="sc-fjdhpX fbCsgq"
       >
         <div
-          class="sc-chPdSV cxUg"
+          class="sc-kgoBCf civTPe"
         >
           <div
-            class="sc-htoDjs dHJGdr"
+            class="sc-dnqmqq hYZEeO"
           >
             Label 1
           </div>
           <div
-            class="sc-iwsKbI kVIITb"
+            class="sc-gZMcBi ehctmQ"
           >
             <div
-              class="sc-dnqmqq fMknFI"
+              class="sc-iwsKbI izuWkn"
             >
-              Headline 1
+              Gallery Headline
             </div>
             <div
-              class="sc-kgoBCf cMWJYD"
+              class="sc-kGXeez kZjiDa"
             >
               <div
-                class="sc-fjdhpX fFhKKm"
+                class="sc-jzJRlG yhXZi"
               >
                 <button
-                  class="sc-jzJRlG kdGwUq"
+                  class="sc-cSHVUG cqpfkR"
                   data-testid="Previous button"
                   disabled=""
                 >
@@ -113,19 +113,19 @@ exports[`GalleryCarousel should render the component 1`] = `
                   </svg>
                 </button>
                 <div
-                  class="sc-cSHVUG dndlVR"
+                  class="sc-kAzzGY KKbdl"
                 >
                   <div
-                    class="sc-kAzzGY gWtXkI"
+                    class="sc-chPdSV bNEloB"
                     data-testid="Page Indicator"
                   />
                   <div
-                    class="sc-kAzzGY cENSVG"
+                    class="sc-chPdSV dZtpKz"
                     data-testid="Page Indicator"
                   />
                 </div>
                 <button
-                  class="nextBtn sc-jzJRlG imCfbB"
+                  class="nextBtn sc-cSHVUG eimJYp"
                   data-testid="Next Button"
                 >
                   <svg
@@ -143,31 +143,31 @@ exports[`GalleryCarousel should render the component 1`] = `
             </div>
           </div>
           <div
-            class="sc-kGXeez fQTHbt"
+            class="sc-kpOJdX jtYKNo"
           >
             <div>
               <div
-                class="sc-gqjmRU hYjNGh"
+                class="sc-VigVT bjMGZa"
               >
-                Image Title 1
+                Birch
               </div>
               <div
-                class="sc-gZMcBi kWagEM"
+                class="sc-gqjmRU bTeHXT"
               >
                 Copy 1
               </div>
             </div>
             <div>
               <div
-                class="sc-VigVT kTTXpx"
+                class="sc-jTzLTM MqaOT"
               >
-                Credit 1
+                Michael Clarke
               </div>
               <div
-                class="sc-fjdhpX fFhKKm"
+                class="sc-jzJRlG yhXZi"
               >
                 <button
-                  class="sc-jzJRlG kdGwUq"
+                  class="sc-cSHVUG cqpfkR"
                   data-testid="Previous button"
                   disabled=""
                 >
@@ -183,19 +183,19 @@ exports[`GalleryCarousel should render the component 1`] = `
                   </svg>
                 </button>
                 <div
-                  class="sc-cSHVUG dndlVR"
+                  class="sc-kAzzGY KKbdl"
                 >
                   <div
-                    class="sc-kAzzGY gWtXkI"
+                    class="sc-chPdSV bNEloB"
                     data-testid="Page Indicator"
                   />
                   <div
-                    class="sc-kAzzGY cENSVG"
+                    class="sc-chPdSV dZtpKz"
                     data-testid="Page Indicator"
                   />
                 </div>
                 <button
-                  class="nextBtn sc-jzJRlG imCfbB"
+                  class="nextBtn sc-cSHVUG eimJYp"
                   data-testid="Next Button"
                 >
                   <svg
@@ -216,23 +216,23 @@ exports[`GalleryCarousel should render the component 1`] = `
       </div>
     </div>
     <div
-      class="sc-kgoBCf cMWJYD"
+      class="sc-kGXeez kZjiDa"
     >
       <div
         style="padding-left: 16px; padding-right: 16px;"
       >
         <div
-          class="sc-VigVT kTTXpx"
+          class="sc-jTzLTM MqaOT"
         >
-          Credit 1
+          Michael Clarke
         </div>
         <div
-          class="sc-gqjmRU hYjNGh"
+          class="sc-VigVT bjMGZa"
         >
-          Image Title 1
+          Birch
         </div>
         <div
-          class="sc-gZMcBi kWagEM"
+          class="sc-gqjmRU bTeHXT"
         >
           Copy 1
         </div>

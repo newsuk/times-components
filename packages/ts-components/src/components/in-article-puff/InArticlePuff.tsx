@@ -1,5 +1,4 @@
 import React from 'react';
-import sanitizeHtml from 'sanitize-html';
 
 import { Placeholder } from '@times-components/image';
 
@@ -10,6 +9,7 @@ import {
   TrackingContext,
   TrackingContextProvider
 } from '../../helpers/tracking/TrackingContextProvider';
+import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { InArticleLink } from '../in-article-link/InArticleLink';
@@ -23,6 +23,20 @@ import {
   Headline,
   Copy
 } from './styles';
+import { DeckData } from '../../helpers/fetch/types';
+
+type InArticlePuffData = {
+  data: {
+    image: string;
+    label: string;
+    headline: string;
+    copy: string;
+    link: string;
+    linkText: string;
+  };
+};
+
+type InArticlePuffDeckData = DeckData<never, InArticlePuffData>;
 
 const scrollEvent = {
   attrs: {
@@ -39,14 +53,10 @@ const clickEvent = (buttonLabel: string) => ({
   }
 });
 
-const sanitiseCopy = (copy: string, allowedTags: string[] = []) =>
-  sanitizeHtml(copy, { allowedTags, allowedAttributes: {} });
-
 export const InArticlePuff: React.FC<{
   sectionColour: string;
   forceImageAspectRatio?: AspectRatios;
-  sanitiseHtml?: boolean;
-}> = ({ sectionColour, forceImageAspectRatio, sanitiseHtml }) => {
+}> = ({ sectionColour, forceImageAspectRatio }) => {
   const handleClick = (
     fireAnalyticsEvent: (evt: TrackingContext) => void,
     buttonLabel: string
@@ -54,7 +64,7 @@ export const InArticlePuff: React.FC<{
     fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(buttonLabel));
   };
 
-  const { loading, error, data } = useFetch();
+  const { loading, error, data } = useFetch<InArticlePuffDeckData>();
 
   if (loading) {
     return (
@@ -64,7 +74,7 @@ export const InArticlePuff: React.FC<{
     );
   }
 
-  if (error) {
+  if (error || data === undefined) {
     return null;
   }
 
@@ -118,17 +128,11 @@ export const InArticlePuff: React.FC<{
                 <Headline hasImage={hasImage}>{headline}</Headline>
               </a>
               {copy && (
-                <>
-                  {sanitiseHtml ? (
-                    <Copy>{sanitiseCopy(copy)}</Copy>
-                  ) : (
-                    <Copy
-                      dangerouslySetInnerHTML={{
-                        __html: sanitiseCopy(copy, ['b', 'i'])
-                      }}
-                    />
-                  )}
-                </>
+                <Copy
+                  dangerouslySetInnerHTML={{
+                    __html: sanitiseCopy(copy, ['b', 'i'])
+                  }}
+                />
               )}
             </div>
 

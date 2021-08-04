@@ -22,7 +22,9 @@ jest.mock("@times-components/ts-components", () => ({
   OptaFootballSummary: "OptaFootballSummary",
   OlympicsMedalTable: "OlympicsMedalTable",
   OlympicsSchedule: "OlympicsSchedule",
-  InArticlePuff: "InArticlePuff"
+  InArticlePuff: "InArticlePuff",
+  InfoCard: "InfoCard",
+  GalleryCarousel: "GalleryCarousel"
 }));
 
 beforeEach(() => {

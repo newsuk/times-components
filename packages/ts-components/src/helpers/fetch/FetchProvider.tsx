@@ -7,13 +7,15 @@ type FetchProviderProps = {
   children: React.ReactNode;
 };
 
-type FetchContext = {
+type FetchContext<T> = {
   loading: boolean;
   error?: string;
-  data?: any;
+  data?: T;
 };
 
-const FetchProviderContext = createContext<FetchContext>({ loading: true });
+const FetchProviderContext = createContext<FetchContext<unknown> | undefined>(
+  undefined
+);
 
 export const FetchProvider: React.FC<FetchProviderProps> = ({
   url,
@@ -48,8 +50,10 @@ export const FetchProvider: React.FC<FetchProviderProps> = ({
   );
 };
 
-export const useFetch = () => {
-  const context = useContext(FetchProviderContext);
+export const useFetch = <T extends any>(): FetchContext<T> => {
+  const context: FetchContext<T> = useContext(
+    FetchProviderContext
+  ) as FetchContext<T>;
 
   if (context === undefined) {
     throw new Error('must be used within a FetchProvider');
