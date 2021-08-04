@@ -1,8 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`should return a bounding box 1`] = `
-Object {
-  "height": 67.5,
-  "width": 61.9189453125,
-}
-`;
