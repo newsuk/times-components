@@ -10,7 +10,6 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && stylelint . && yarn prettier:diff && yarn depcheck",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "test:all": "yarn test:web --coverage",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",

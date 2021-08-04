@@ -29,8 +29,6 @@ yarn lint
 Testing can be done on each platform individually
 
 ```
-yarn test:android
-yarn test:ios
 yarn test:web
 ```
 

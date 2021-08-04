@@ -91,30 +91,6 @@ jobs:
                   command: |
                       npx lerna run test --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
-    run_android_tests:
-        executor: node
-        steps:
-            - checkout
-            - attach_workspace:
-                  at: ./
-            - run:
-                  name: Run Android Tests
-                  command: |
-                      npx lerna run test:android --stream --since -- -- --ci --bail --coverage
-                  working_directory: ~/project/
-
-    run_ios_tests:
-        executor: node
-        steps:
-            - checkout
-            - attach_workspace:
-                  at: ./
-            - run:
-                  name: Run iOS Tests
-                  command: |
-                      npx lerna run test:ios --stream --since -- -- --ci --bail --coverage
-                  working_directory: ~/project/
-
     run_web_tests:
         executor: node
         steps:
@@ -214,14 +190,8 @@ workflows:
                   requires:
                       - setup
             - run_web_tests:
-                  requires:
-                      - setup
-            - run_android_tests:
-                  requires:
-                      - setup
-            - run_ios_tests:
-                  requires:
-                      - setup
+                requires:
+                  - setup
             - run_unit_tests:
                   requires:
                       - setup
