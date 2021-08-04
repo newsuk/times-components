@@ -104,6 +104,60 @@ const getThumbnailUrlFromImage = article => {
   return get(article.leadAsset, "crop169.url", null);
 };
 
+const getThumbnailUrl = article => {
+  const { hasVideo, leadAsset } = article;
+  const thumbnailUrl = hasVideo
+    ? getVideoLeadAssetUrl(article)
+    : getThumbnailUrlFromImage(article);
+
+  if (!leadAsset) return null;
+
+  if (!thumbnailUrl) {
+    const {
+      crop32,
+      crop1024683,
+      crop13073,
+      crop1023575,
+      crop380253,
+      crop780439,
+      crop380213,
+      crop97129,
+      crop6793,
+      crop1010683,
+      crop1024501,
+      crop1024575,
+      crop341192,
+      crop9553,
+      crop875492,
+      crop290193,
+      crop1024757,
+      crop620413
+    } = leadAsset && leadAsset.posterImage ? leadAsset.posterImage : leadAsset;
+    const crop =
+      crop32 ||
+      crop290193 ||
+      crop1024683 ||
+      crop380213 ||
+      crop1024757 ||
+      crop13073 ||
+      crop1023575 ||
+      crop380253 ||
+      crop6793 ||
+      crop780439 ||
+      crop1010683 ||
+      crop1024501 ||
+      crop1024575 ||
+      crop341192 ||
+      crop97129 ||
+      crop9553 ||
+      crop875492 ||
+      crop620413;
+
+    return crop ? crop.url : null;
+  }
+  return thumbnailUrl;
+};
+
 function Head({ article, logoUrl, paidContentClassName }) {
   const {
     descriptionMarkup,
@@ -126,19 +180,15 @@ function Head({ article, logoUrl, paidContentClassName }) {
       ? renderTreeAsText({ children: descriptionMarkup })
       : null);
   const sectionname = getSectionName(article);
-  const leadassetUrl = appendToImageURL(
-    getArticleLeadAssetUrl(article),
-    "resize",
-    685
-  );
+  const leadassetUrl =
+    appendToImageURL(getArticleLeadAssetUrl(article), "resize", 685) ||
+    getThumbnailUrl(article);
   const authors = getAuthorSchema(article);
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline || "";
   const datePublished = new Date(publishedTime).toISOString();
   const dateModified = updatedTime || datePublished;
-  const thumbnailUrl = hasVideo
-    ? getVideoLeadAssetUrl(article)
-    : getThumbnailUrlFromImage(article);
+  const thumbnailUrl = getThumbnailUrl(article);
 
   const jsonLD = {
     "@context": "http://schema.org",

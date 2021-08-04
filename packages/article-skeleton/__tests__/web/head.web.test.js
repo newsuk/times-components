@@ -649,4 +649,54 @@ describe("Head", () => {
     );
     expect(testRenderer).toMatchSnapshot();
   });
+
+  const crops = [
+    "crop32",
+    "crop1024683",
+    "crop13073",
+    "crop1023575",
+    "crop380253",
+    "crop780439",
+    "crop380213",
+    "crop97129",
+    "crop6793",
+    "crop1010683",
+    "crop1024501",
+    "crop1024575",
+    "crop341192",
+    "crop9553",
+    "crop875492",
+    "crop290193",
+    "crop1024757",
+    "crop620413"
+  ];
+
+  const parameters = crops.map(crop => ({
+    description: `outputs thumbnailUrl for a article it has ${crop}`,
+    size: crop,
+    url: `https://thumbnail-${crop}.io`
+  }));
+
+  parameters.forEach(({ description, size, url }) =>
+    it(description, () => {
+      const testRenderer = TestRenderer.create(
+        <Head
+          article={{
+            ...article,
+            leadAsset: {
+              __typename: "Image",
+              [size]: {
+                __typename: "Crop",
+                url
+              },
+              title: "RA Title"
+            }
+          }}
+          logoUrl={logoUrl}
+          paidContentClassName={paidContentClassName}
+        />
+      );
+      expect(testRenderer).toMatchSnapshot();
+    })
+  );
 });
