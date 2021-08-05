@@ -649,5 +649,4 @@ describe("Head", () => {
     );
     expect(testRenderer).toMatchSnapshot();
   });
-
 });
