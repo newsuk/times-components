@@ -141,3 +141,5 @@ exports[`InfoCardBulletPoints should render the initial loading state correctly 
   </div>
 </DocumentFragment>
 `;
+
+exports[`InfoCardBulletPoints should render the initial read more state correctly 1`] = `<DocumentFragment />`;

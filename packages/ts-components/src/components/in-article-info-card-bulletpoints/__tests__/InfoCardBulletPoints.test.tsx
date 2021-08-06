@@ -71,7 +71,8 @@ const testData = {
       }
     ]
   },
-  html: 'html'
+  html:
+    '<!DOCTYPE html><html><head><title>The Times - Info Card Bullet Points</title></head><body></body></html>'
 };
 
 const renderInfoCardBullet = () =>
@@ -90,6 +91,15 @@ describe('InfoCardBulletPoints', () => {
 
   it('should render the initial loading state correctly', () => {
     (useFetch as jest.Mock).mockReturnValue({ loading: true });
+    const { asFragment } = render(
+      <InfoCardBulletPoints sectionColour="#636C17" />
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('should render the initial read more state correctly', () => {
+    (useFetch as jest.Mock).mockReturnValue({ showAll: true });
+    (useFetch as jest.Mock).mockReturnValue({ readMore: true });
     const { asFragment } = render(
       <InfoCardBulletPoints sectionColour="#636C17" />
     );
