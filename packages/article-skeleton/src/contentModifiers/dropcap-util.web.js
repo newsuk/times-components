@@ -1,6 +1,6 @@
 import insertDropcapIntoAST from "./dropcap-util-common";
 
-export default (children, template, isDropcapDisabled) => {
+export default (template, isDropcapDisabled) => children => {
   const newContent = insertDropcapIntoAST(
     children,
     template,

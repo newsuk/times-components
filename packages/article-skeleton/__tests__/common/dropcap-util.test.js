@@ -1,4 +1,4 @@
-import insertDropcapIntoAST from "../../src/dropcap-util";
+import insertDropcapIntoAST from "../../src/contentModifiers/dropcap-util";
 
 const child = {
   attributes: {},

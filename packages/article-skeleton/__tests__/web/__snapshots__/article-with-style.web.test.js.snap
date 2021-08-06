@@ -1,6 +1,138 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
+.c18 {
+  position: relative;
+  overflow: hidden;
+}
+
+.c18:after {
+  content: '';
+  display: block;
+  padding-bottom: 56.25%;
+}
+
+.c18 > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.c15 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto 20px auto;
+  padding: 16px 0;
+  color: #1D1D1B;
+  background-color: #F9F9F9;
+  border-top: 2px solid undefined;
+}
+
+.c15 a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c15 .heading {
+  font-family: TimesModern-Bold;
+  font-size: 24px;
+  padding: 0 16px 16px 16px;
+}
+
+.c15 nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: #1D1D1B;
+}
+
+.c16 section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  min-width: 100%;
+  padding: 0 16px;
+}
+
+.c16 section a {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c16 section h3 {
+  color: #1D1D1B;
+  font-family: TimesModern-Bold;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 5px 0;
+}
+
+.c16 section h3:hover {
+  color: #006699;
+}
+
+.c16 section .summary {
+  font-family: TimesDigitalW04;
+  color: #696969;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.c16 section .publishedTime {
+  font-family: GillSansMTStd-Medium;
+  color: #696969;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.c16 section .byline {
+  font-family: GillSansMTStd-Medium;
+  color: #333333;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.c17 {
+  -webkit-flex: 1 1 0;
+  -ms-flex: 1 1 0;
+  flex: 1 1 0;
+  min-width: auto;
+  padding: 0 16px;
+  margin-bottom: 8px;
+}
+
 .c8 {
   color: #333333;
   display: block;
@@ -29,7 +161,7 @@ exports[`full article with style 1`] = `
   font-family: "TimesModern-Regular";
 }
 
-.c17 {
+.c21 {
   padding-left: 10px;
 }
 
@@ -78,17 +210,17 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c16 {
+.c20 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.c15 {
+.c19 {
   display: block;
 }
 
-.c18 {
+.c22 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -99,7 +231,7 @@ exports[`full article with style 1`] = `
   line-height: 25px;
 }
 
-.c19 {
+.c23 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -110,7 +242,7 @@ exports[`full article with style 1`] = `
   line-height: 22px;
 }
 
-.c20 {
+.c24 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -121,7 +253,7 @@ exports[`full article with style 1`] = `
   line-height: 19px;
 }
 
-.c21 {
+.c25 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -132,7 +264,7 @@ exports[`full article with style 1`] = `
   line-height: 17px;
 }
 
-.c22 {
+.c26 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -224,6 +356,37 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
+  .c15 {
+    padding: 20px 0;
+    width: 80.8%;
+  }
+
+  .c15 .heading {
+    font-size: 28px;
+    padding: 0 16px 20px 16px;
+  }
+
+  .c15 nav {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:1024px) {
+  .c15 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 section {
+    min-width: 300px;
+    padding: 0 16px 0 0;
+  }
+}
+
+@media (min-width:768px) {
   .c8 {
     font-size: 18px;
     line-height: 30px;
@@ -240,7 +403,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c21 {
     padding-left: 0px;
   }
 }
@@ -304,7 +467,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c20 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -316,7 +479,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c15 {
+  .c19 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -325,13 +488,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c15 {
+  .c19 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c18 {
+  .c22 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -339,20 +502,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c18 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c18 {
+  .c22 {
     font-size: 28px;
     line-height: 28px;
   }
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c23 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -360,20 +523,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c19 {
+  .c23 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c23 {
     font-size: 24px;
     line-height: 24px;
   }
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c24 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -381,20 +544,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c20 {
+  .c24 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c24 {
     font-size: 20px;
     line-height: 20px;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c25 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -402,20 +565,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c25 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c25 {
     font-size: 19px;
     line-height: 19px;
   }
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c26 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -423,13 +586,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c22 {
+  .c26 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c26 {
     font-size: 19px;
     line-height: 19px;
   }
@@ -601,16 +764,60 @@ exports[`full article with style 1`] = `
         <span
           className="paidContentClassName"
         >
+          <div
+            className="c15"
+          >
+            <div
+              className="heading"
+            >
+              Related Articles
+            </div>
+            <nav>
+              <div
+                className="c16"
+              >
+                <div
+                  className="c17"
+                >
+                  <a>
+                    <div
+                      className="c18"
+                    >
+                      <img />
+                    </div>
+                  </a>
+                </div>
+                <section>
+                  <a>
+                    <h3>
+                      Headline
+                    </h3>
+                  </a>
+                  <div
+                    className="summary"
+                  />
+                  <div
+                    className="publishedTime"
+                  >
+                    <DatePublication />
+                  </div>
+                  <div
+                    className="byline"
+                  />
+                </section>
+              </div>
+            </nav>
+          </div>
           <p
             className="c8"
           >
             Some content
           </p>
           <div
-            className="c15 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c15 css-view-1dbjc4n"
+            className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c19 css-view-1dbjc4n"
           >
             <div
-              className="c16 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c16 css-view-1dbjc4n"
+              className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c20 css-view-1dbjc4n"
             >
               <PullQuote>
                 The pull quote content
@@ -644,7 +851,7 @@ exports[`full article with style 1`] = `
               </div>
               <figcaption>
                 <div
-                  className="c17 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c17 css-view-1dbjc4n"
+                  className="c21 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c21 css-view-1dbjc4n"
                 >
                   <Caption />
                 </div>
@@ -654,27 +861,27 @@ exports[`full article with style 1`] = `
           <KeyFacts />
         </span>
         <h2
-          className="c18"
+          className="c22"
         >
           This is heading 2
         </h2>
         <h3
-          className="c19"
+          className="c23"
         >
           This is heading 3
         </h3>
         <h4
-          className="c20"
+          className="c24"
         >
           This is heading 4
         </h4>
         <h5
-          className="c21"
+          className="c25"
         >
           This is heading 5
         </h5>
         <h6
-          className="c22"
+          className="c26"
         >
           This is heading 6
         </h6>
