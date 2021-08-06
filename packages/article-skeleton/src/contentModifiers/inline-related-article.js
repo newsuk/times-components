@@ -11,59 +11,93 @@ const getInlineRelatedArticles = (attributes = {}) => ({
   children: []
 });
 
-const insertInlineRelatedArticles = relatedArticleSlice => articleContent => {
+const insertInlineRelatedArticles = (
+  relatedArticleSlice,
+  insertIndex = 7,
+  paragraphPadding = 2
+) => articleContent => {
   const paywall = articleContent.find(item => item.name === "paywall");
+
   if (!paywall) return articleContent;
 
-  const insertIndex = 7;
-
-  const outsidePaywallParagraphs = articleContent.filter(
-    item => item.name === "paragraph"
-  );
-  const insidePaywallParagraphs = paywall.children.filter(
-    item => item.name === "paragraph"
+  const allArticleContent = [...articleContent, ...paywall.children].filter(
+    item => item.name !== "paywall"
   );
 
-  console.log("xxx outsidePaywallParagraphs", outsidePaywallParagraphs);
-  console.log("xxx insidePaywallParagraphs", insidePaywallParagraphs);
+  console.log(
+    "xxx allArticleContent",
+    allArticleContent.map(item => item.name)
+  );
 
-  if (outsidePaywallParagraphs.length >= insertIndex) {
-    const afterParagraph = outsidePaywallParagraphs[insertIndex - 1];
-    const outsidePaywallIndex = articleContent.indexOf(afterParagraph);
+  const nthParagraph = allArticleContent.filter(
+    item => item.name === "paragraph"
+  )[insertIndex - 1];
 
-    return [
-      ...articleContent.slice(0, outsidePaywallIndex + 1),
-      getInlineRelatedArticles({
-        backgroundColor: "#ffbbbb",
-        info: "Outside Paywall",
-        paywallParagraphs: outsidePaywallParagraphs.length,
-        relatedArticles: formatRelatedArticles(relatedArticleSlice)
-      }),
-      ...articleContent.slice(outsidePaywallIndex + 1)
-    ];
+  const allArticleContentIndex = allArticleContent.indexOf(nthParagraph);
+
+  const enoughParagraphPadding =
+    allArticleContent
+      .slice(
+        allArticleContentIndex - paragraphPadding + 1,
+        allArticleContentIndex + paragraphPadding + 1
+      )
+      .filter(item => item.name === "paragraph").length ===
+    2 * paragraphPadding;
+
+  console.log("xxx enoughParagraphPadding", enoughParagraphPadding);
+
+  if (enoughParagraphPadding) {
+    if (articleContent.includes(nthParagraph)) {
+      const outsidePaywallIndex = articleContent.indexOf(nthParagraph);
+
+      return [
+        ...articleContent.slice(0, outsidePaywallIndex + 1),
+        getInlineRelatedArticles({
+          relatedArticles: formatRelatedArticles(relatedArticleSlice)
+        }),
+        ...articleContent.slice(outsidePaywallIndex + 1)
+      ];
+    }
+    const insidePaywallIndex = paywall.children.indexOf(nthParagraph);
+
+    return articleContent.map(
+      item =>
+        item !== paywall
+          ? item
+          : {
+              ...paywall,
+              children: [
+                ...paywall.children.slice(0, insidePaywallIndex + 1),
+                getInlineRelatedArticles({
+                  relatedArticles: formatRelatedArticles(relatedArticleSlice)
+                }),
+                ...paywall.children.slice(insidePaywallIndex + 1)
+              ]
+            }
+    );
   }
-  const afterParagraph =
-    insidePaywallParagraphs[insertIndex - outsidePaywallParagraphs.length - 1];
-  const insidePaywallIndex = paywall.children.indexOf(afterParagraph);
-
-  return articleContent.map(
-    item =>
-      item !== paywall
-        ? item
-        : {
-            ...paywall,
-            children: [
-              ...paywall.children.slice(0, insidePaywallIndex + 1),
-              getInlineRelatedArticles({
-                backgroundColor: "#ffee99",
-                info: "Inside Paywall",
-                paywallParagraphs: outsidePaywallParagraphs.length,
-                relatedArticles: formatRelatedArticles(relatedArticleSlice)
-              }),
-              ...paywall.children.slice(insidePaywallIndex + 1)
-            ]
-          }
-  );
+  if (paywall) {
+    return articleContent.map(
+      item =>
+        item !== paywall
+          ? item
+          : {
+              ...paywall,
+              children: [
+                ...paywall.children,
+                getInlineRelatedArticles({
+                  relatedArticles: formatRelatedArticles(relatedArticleSlice)
+                })
+              ]
+            }
+    );
+  }
+  return [
+    ...articleContent,
+    getInlineRelatedArticles({
+      relatedArticles: formatRelatedArticles(relatedArticleSlice)
+    })
+  ];
 };
 
 export default insertInlineRelatedArticles;

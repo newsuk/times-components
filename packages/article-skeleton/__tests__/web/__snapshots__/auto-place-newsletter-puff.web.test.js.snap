@@ -169,6 +169,21 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
           Some paragraph 3
         </p>
         <span>
+          <p>
+            Some paragraph 4
+          </p>
+          <InlineNewsletterPuff
+            code="TNL-101"
+            copy="We’ll send you our top stories, across all sections, straight to your inbox. Simple as that."
+            headline="Best of Times"
+            imageUri="https://www.thetimes.co.uk/imageserver/image/methode/times/prod/web/bin/728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800"
+            label="In your inbox"
+          />
+          <p
+            id="last-paragraph"
+          >
+            Some paragraph 5
+          </p>
           <div>
             <div>
               Related Articles
@@ -206,21 +221,6 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
               </div>
             </nav>
           </div>
-          <p>
-            Some paragraph 4
-          </p>
-          <InlineNewsletterPuff
-            code="TNL-101"
-            copy="We’ll send you our top stories, across all sections, straight to your inbox. Simple as that."
-            headline="Best of Times"
-            imageUri="https://www.thetimes.co.uk/imageserver/image/methode/times/prod/web/bin/728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800"
-            label="In your inbox"
-          />
-          <p
-            id="last-paragraph"
-          >
-            Some paragraph 5
-          </p>
         </span>
         <div
           id="paywall-portal-article-footer"
@@ -477,6 +477,14 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
           label="In your inbox"
         />
         <span>
+          <p>
+            Some paragraph 4
+          </p>
+          <p
+            id="last-paragraph"
+          >
+            Some paragraph 5
+          </p>
           <div>
             <div>
               Related Articles
@@ -514,14 +522,6 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
               </div>
             </nav>
           </div>
-          <p>
-            Some paragraph 4
-          </p>
-          <p
-            id="last-paragraph"
-          >
-            Some paragraph 5
-          </p>
         </span>
         <div
           id="paywall-portal-article-footer"

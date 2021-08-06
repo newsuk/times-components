@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-.c18 {
+.c21 {
   position: relative;
   overflow: hidden;
 }
 
-.c18:after {
+.c21:after {
   content: '';
   display: block;
   padding-bottom: 56.25%;
 }
 
-.c18 > img {
+.c21 > img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.c15 {
+.c18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -34,18 +34,18 @@ exports[`full article with style 1`] = `
   border-top: 2px solid undefined;
 }
 
-.c15 a {
+.c18 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c15 .heading {
+.c18 .heading {
   font-family: TimesModern-Bold;
   font-size: 24px;
   padding: 0 16px 16px 16px;
 }
 
-.c15 nav {
+.c18 nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -55,7 +55,7 @@ exports[`full article with style 1`] = `
   flex-direction: column;
 }
 
-.c16 {
+.c19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -69,7 +69,7 @@ exports[`full article with style 1`] = `
   color: #1D1D1B;
 }
 
-.c16 section {
+.c19 section {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -84,12 +84,12 @@ exports[`full article with style 1`] = `
   padding: 0 16px;
 }
 
-.c16 section a {
+.c19 section a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c16 section h3 {
+.c19 section h3 {
   color: #1D1D1B;
   font-family: TimesModern-Bold;
   font-size: 20px;
@@ -98,11 +98,11 @@ exports[`full article with style 1`] = `
   margin: 5px 0;
 }
 
-.c16 section h3:hover {
+.c19 section h3:hover {
   color: #006699;
 }
 
-.c16 section .summary {
+.c19 section .summary {
   font-family: TimesDigitalW04;
   color: #696969;
   font-size: 14px;
@@ -110,21 +110,21 @@ exports[`full article with style 1`] = `
   margin-bottom: 10px;
 }
 
-.c16 section .publishedTime {
+.c19 section .publishedTime {
   font-family: GillSansMTStd-Medium;
   color: #696969;
   font-size: 13px;
   margin-bottom: 5px;
 }
 
-.c16 section .byline {
+.c19 section .byline {
   font-family: GillSansMTStd-Medium;
   color: #333333;
   font-size: 13px;
   margin-bottom: 5px;
 }
 
-.c17 {
+.c20 {
   -webkit-flex: 1 1 0;
   -ms-flex: 1 1 0;
   flex: 1 1 0;
@@ -161,7 +161,7 @@ exports[`full article with style 1`] = `
   font-family: "TimesModern-Regular";
 }
 
-.c21 {
+.c17 {
   padding-left: 10px;
 }
 
@@ -210,13 +210,13 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c20 {
+.c16 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.c19 {
+.c15 {
   display: block;
 }
 
@@ -356,17 +356,17 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c15 {
+  .c18 {
     padding: 20px 0;
     width: 80.8%;
   }
 
-  .c15 .heading {
+  .c18 .heading {
     font-size: 28px;
     padding: 0 16px 20px 16px;
   }
 
-  .c15 nav {
+  .c18 nav {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -374,13 +374,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c15 {
+  .c18 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c16 section {
+  .c19 section {
     min-width: 300px;
     padding: 0 16px 0 0;
   }
@@ -403,7 +403,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c17 {
     padding-left: 0px;
   }
 }
@@ -467,7 +467,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c16 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -479,7 +479,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c15 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -488,7 +488,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c19 {
+  .c15 {
     width: 56.2%;
   }
 }
@@ -764,60 +764,16 @@ exports[`full article with style 1`] = `
         <span
           className="paidContentClassName"
         >
-          <div
-            className="c15"
-          >
-            <div
-              className="heading"
-            >
-              Related Articles
-            </div>
-            <nav>
-              <div
-                className="c16"
-              >
-                <div
-                  className="c17"
-                >
-                  <a>
-                    <div
-                      className="c18"
-                    >
-                      <img />
-                    </div>
-                  </a>
-                </div>
-                <section>
-                  <a>
-                    <h3>
-                      Headline
-                    </h3>
-                  </a>
-                  <div
-                    className="summary"
-                  />
-                  <div
-                    className="publishedTime"
-                  >
-                    <DatePublication />
-                  </div>
-                  <div
-                    className="byline"
-                  />
-                </section>
-              </div>
-            </nav>
-          </div>
           <p
             className="c8"
           >
             Some content
           </p>
           <div
-            className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c19 css-view-1dbjc4n"
+            className="c15 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c15 css-view-1dbjc4n"
           >
             <div
-              className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c20 css-view-1dbjc4n"
+              className="c16 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c16 css-view-1dbjc4n"
             >
               <PullQuote>
                 The pull quote content
@@ -851,7 +807,7 @@ exports[`full article with style 1`] = `
               </div>
               <figcaption>
                 <div
-                  className="c21 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c21 css-view-1dbjc4n"
+                  className="c17 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c17 css-view-1dbjc4n"
                 >
                   <Caption />
                 </div>
@@ -859,6 +815,50 @@ exports[`full article with style 1`] = `
             </figure>
           </div>
           <KeyFacts />
+          <div
+            className="c18"
+          >
+            <div
+              className="heading"
+            >
+              Related Articles
+            </div>
+            <nav>
+              <div
+                className="c19"
+              >
+                <div
+                  className="c20"
+                >
+                  <a>
+                    <div
+                      className="c21"
+                    >
+                      <img />
+                    </div>
+                  </a>
+                </div>
+                <section>
+                  <a>
+                    <h3>
+                      Headline
+                    </h3>
+                  </a>
+                  <div
+                    className="summary"
+                  />
+                  <div
+                    className="publishedTime"
+                  >
+                    <DatePublication />
+                  </div>
+                  <div
+                    className="byline"
+                  />
+                </section>
+              </div>
+            </nav>
+          </div>
         </span>
         <h2
           className="c22"

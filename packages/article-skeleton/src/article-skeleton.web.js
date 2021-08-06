@@ -77,8 +77,8 @@ const ArticleSkeleton = ({
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview),
-    insertInlineRelatedArticles(relatedArticleSlice),
     insertNativeAd,
+    insertInlineRelatedArticles(relatedArticleSlice),
     tagLastParagraph
   ];
   const newContent = reduceArticleContent(content, articleContentReducers);
