@@ -72,7 +72,7 @@ export const InfoCardBulletPoints: React.FC<{
           readMore={readMore}
         >
           <List>
-            {infoCardData.map((row: any, index: number) => (
+            {infoCardData.map((row: InfoCardData, index: number) => (
               <ListItem
                 key={index}
                 dangerouslySetInnerHTML={{
@@ -85,7 +85,7 @@ export const InfoCardBulletPoints: React.FC<{
       </ContentContainer>
       <ReadMoreContainer readMore={readMore} showAll={showAll}>
         <ReadMoreButton onClick={handleReadMore}>
-          {showAll ? 'Collapse' : ' Read more'}
+          {showAll ? 'Collapse' : 'Read more'}
         </ReadMoreButton>
       </ReadMoreContainer>
     </Container>
