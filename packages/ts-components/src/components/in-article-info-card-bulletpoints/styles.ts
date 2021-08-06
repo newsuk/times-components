@@ -131,7 +131,7 @@ export const List = styled.ul`
   column-count: 1;
   column-gap: 55px;
   column-rule: 1px solid ${colours.functional.keyline};
-  margin-left: 15px;
+  margin-left: 12px;
   padding: 0;
   @media (min-width: ${breakpoints.medium}px) {
     column-count: 2;
@@ -148,7 +148,18 @@ export const ListItem = styled.li`
   page-break-inside: avoid;
   break-inside: avoid;
   margin: 0 5px 13px 5px;
+  list-style: none;
   & :last-child {
     margin-bottom: 0;
+  }
+  & ::before {
+    content: '•';
+    color: ${colours.functional.primary};
+    display: inline-block;
+    width: 15px;
+    margin-left: -15px;
+    font-size: 22px;
+    position: relative;
+    top: 3px;
   }
 `;
