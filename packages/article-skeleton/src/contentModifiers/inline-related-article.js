@@ -13,8 +13,7 @@ const getInlineRelatedArticles = (attributes = {}) => ({
 
 const insertInlineRelatedArticles = (
   relatedArticleSlice,
-  insertIndex = 7,
-  paragraphPadding = 2
+  { afterParagraph = 7, paragraphPadding = 2 } = {}
 ) => articleContent => {
   const paywall = articleContent.find(item => item.name === "paywall");
 
@@ -24,14 +23,9 @@ const insertInlineRelatedArticles = (
     item => item.name !== "paywall"
   );
 
-  console.log(
-    "xxx allArticleContent",
-    allArticleContent.map(item => item.name)
-  );
-
   const nthParagraph = allArticleContent.filter(
     item => item.name === "paragraph"
-  )[insertIndex - 1];
+  )[afterParagraph - 1];
 
   const allArticleContentIndex = allArticleContent.indexOf(nthParagraph);
 
@@ -43,8 +37,6 @@ const insertInlineRelatedArticles = (
       )
       .filter(item => item.name === "paragraph").length ===
     2 * paragraphPadding;
-
-  console.log("xxx enoughParagraphPadding", enoughParagraphPadding);
 
   if (enoughParagraphPadding) {
     if (articleContent.includes(nthParagraph)) {

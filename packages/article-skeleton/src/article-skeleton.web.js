@@ -55,7 +55,8 @@ const ArticleSkeleton = ({
   algoliaSearchKeys,
   latestFromSectionFlag,
   latestFromSection,
-  olympicsKeys
+  olympicsKeys,
+  inlineRelatedArticleInsert
 }) => {
   const {
     commentsEnabled,
@@ -78,7 +79,10 @@ const ArticleSkeleton = ({
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview),
     insertNativeAd,
-    insertInlineRelatedArticles(relatedArticleSlice),
+    insertInlineRelatedArticles(
+      relatedArticleSlice,
+      inlineRelatedArticleInsert
+    ),
     tagLastParagraph
   ];
   const newContent = reduceArticleContent(content, articleContentReducers);
