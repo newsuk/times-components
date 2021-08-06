@@ -129,7 +129,7 @@ function Head({ article, logoUrl, paidContentClassName }) {
   const leadassetUrl = appendToImageURL(
     getArticleLeadAssetUrl(article),
     "resize",
-    685
+    1200
   );
   const authors = getAuthorSchema(article);
   const caption = get(leadAsset, "caption", null);
