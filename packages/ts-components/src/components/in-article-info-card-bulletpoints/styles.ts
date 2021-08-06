@@ -149,17 +149,20 @@ export const ListItem = styled.li`
   break-inside: avoid;
   margin: 0 5px 13px 5px;
   list-style: none;
+  position: relative;
   & :last-child {
     margin-bottom: 0;
   }
   & ::before {
-    content: '•';
-    color: ${colours.functional.primary};
-    display: inline-block;
-    width: 15px;
-    margin-left: -15px;
-    font-size: 22px;
-    position: relative;
-    top: 3px;
+    content: '';
+    position: absolute;
+    left: -13px;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    background-color: ${colours.functional.primary};
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
   }
 `;
