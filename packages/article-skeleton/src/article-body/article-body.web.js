@@ -164,7 +164,6 @@ const renderers = ({
             )}
           </Context.Consumer>
         );
-
         case "in-article-info-card-bulletpoints":
         return (
           <Context.Consumer key={key}>
