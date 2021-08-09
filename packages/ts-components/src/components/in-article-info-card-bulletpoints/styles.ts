@@ -129,7 +129,7 @@ export const ListContainer = styled.div<{
 
 export const List = styled.ul`
   column-count: 1;
-  column-gap: 55px;
+  column-gap: 25px;
   column-rule: 1px solid ${colours.functional.keyline};
   margin-left: 0;
   padding: 0;
@@ -148,7 +148,7 @@ export const ListItem = styled.li`
   page-break-inside: avoid;
   break-inside: avoid;
   margin: 0 5px 13px 0;
-  padding-left: 20px;
+  padding-left: 15px;
   list-style: none;
   position: relative;
   & :last-child {
@@ -157,7 +157,7 @@ export const ListItem = styled.li`
   & ::before {
     content: '';
     position: absolute;
-    left: 7px;
+    left: 3px;
     top: 7px;
     width: 6px;
     height: 6px;
