@@ -1,6 +1,6 @@
 {
   "name": "@times-components/star-button",
-  "version": "0.3.44",
+  "version": "0.3.45",
   "description": "Star button",
   "main": "dist/star-button",
   "dev": "src/star-button",
@@ -35,12 +35,12 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@times-components/eslint-config-thetimes": "0.8.16",
-    "@times-components/jest-configurator": "2.7.1",
-    "@times-components/jest-serializer": "3.2.25",
-    "@times-components/storybook": "4.1.65",
-    "@times-components/test-utils": "2.3.8",
-    "@times-components/webpack-configurator": "2.0.27",
+    "@times-components/eslint-config-thetimes": "0.8.17",
+    "@times-components/jest-configurator": "2.7.2",
+    "@times-components/jest-serializer": "3.2.26",
+    "@times-components/storybook": "4.1.66",
+    "@times-components/test-utils": "2.3.9",
+    "@times-components/webpack-configurator": "2.0.28",
     "babel-jest": "24.8.0",
     "eslint": "5.9.0",
     "jest": "24.8.0",
@@ -53,8 +53,8 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/icons": "2.16.2",
-    "@times-components/link": "3.6.43",
+    "@times-components/icons": "2.16.3",
+    "@times-components/link": "3.6.44",
     "prop-types": "15.7.2"
   },
   "resolutions": {

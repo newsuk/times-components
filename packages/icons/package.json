@@ -1,6 +1,6 @@
 {
   "name": "@times-components/icons",
-  "version": "2.16.2",
+  "version": "2.16.3",
   "description": "Times SVG Icons",
   "main": "dist/icons",
   "dev": "src/icons",
@@ -35,12 +35,12 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@times-components/eslint-config-thetimes": "0.8.16",
-    "@times-components/jest-configurator": "2.7.1",
-    "@times-components/jest-serializer": "3.2.25",
-    "@times-components/storybook": "4.1.65",
-    "@times-components/test-utils": "2.3.8",
-    "@times-components/webpack-configurator": "2.0.27",
+    "@times-components/eslint-config-thetimes": "0.8.17",
+    "@times-components/jest-configurator": "2.7.2",
+    "@times-components/jest-serializer": "3.2.26",
+    "@times-components/storybook": "4.1.66",
+    "@times-components/test-utils": "2.3.9",
+    "@times-components/webpack-configurator": "2.0.28",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -60,9 +60,9 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.38.21",
-    "@times-components/svgs": "2.7.32",
-    "@times-components/utils": "6.5.5",
+    "@times-components/styleguide": "3.38.22",
+    "@times-components/svgs": "2.7.33",
+    "@times-components/utils": "6.5.6",
     "prop-types": "15.7.2"
   },
   "resolutions": {
