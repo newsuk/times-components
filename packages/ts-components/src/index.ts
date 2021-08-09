@@ -50,3 +50,6 @@ export {
 
 export { InfoCard } from './components/in-article-info-card/InfoCard';
 export { GalleryCarousel } from './components/carousel/GalleryCarousel';
+export {
+  InfoCardBulletPoints
+} from './components/in-article-info-card-bulletpoints/InfoCardBulletPoints';
