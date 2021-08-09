@@ -7,6 +7,7 @@ import {
 import { InArticleLink } from '../in-article-link/InArticleLink';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
+import { handleClick } from './tracking-helpers';
 
 export type RelatedArticleType = {
   label: string;
@@ -16,7 +17,6 @@ export type RelatedArticleType = {
   summary?: string;
   publishedTime?: string;
   byline?: string;
-  handleClick: any;
 };
 
 type RelatedArticleProps = {
@@ -28,8 +28,7 @@ export const RelatedArticle = ({
   headline,
   link,
   image,
-  sectionColour,
-  handleClick
+  sectionColour
 }: RelatedArticleProps) => {
   return (
     <TrackingContextProvider>
