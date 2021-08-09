@@ -114,7 +114,7 @@ const checkParagraphs = (children, paywall) => {
   return paragraphs + paywallParagraphs >= 5;
 };
 
-const insertNewsletterPuff = (section, children, isPreview) => {
+const insertNewsletterPuff = (section, isPreview) => children => {
   if (isPreview) return children;
 
   const newsletterPuff = getNewsletterPuff(section);

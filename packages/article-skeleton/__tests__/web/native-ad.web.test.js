@@ -1,4 +1,4 @@
-import insertNativeAd from "../../src/native-ad.web";
+import insertNativeAd from "../../src/contentModifiers/native-ad";
 import nativeAdFixture from "../../fixtures/native-ad";
 
 const {

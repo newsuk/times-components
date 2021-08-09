@@ -49,4 +49,12 @@ export {
 } from './components/olympics/schedule/OlympicsSchedule';
 
 export { InfoCard } from './components/in-article-info-card/InfoCard';
+
 export { GalleryCarousel } from './components/carousel/GalleryCarousel';
+
+export {
+  InArticleRelatedArticles
+} from './components/in-article-related-articles/InArticleRelatedArticles';
+export {
+  formatRelatedArticles
+} from './components/in-article-related-articles/formatters';

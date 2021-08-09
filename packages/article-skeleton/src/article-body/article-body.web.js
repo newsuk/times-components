@@ -31,7 +31,8 @@ import {
   OlympicsMedalTable,
   OlympicsSchedule,
   InfoCard,
-  GalleryCarousel
+  GalleryCarousel,
+  InArticleRelatedArticles
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -308,6 +309,19 @@ const renderers = ({
         imageUri={imageUri}
         label={label}
       />
+    );
+  },
+  autoInlineRelatedArticles(key, { element }) {
+    return (
+      <Context.Consumer key={key}>
+        {({ theme }) => (
+          <InArticleRelatedArticles
+            heading="Related Articles"
+            relatedArticles={element.attributes.relatedArticles}
+            sectionColour={theme.sectionColour}
+          />
+        )}
+      </Context.Consumer>
     );
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {

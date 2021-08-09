@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`formatRelatedArticles formats 1`] = `
+Array [
+  Object {
+    "byline": "Rebecca Myers",
+    "headline": "Tokyo Olympics: Super-fast rivals force Jason and Laura Kenny to settle for silver",
+    "image": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb11686ce-f43d-11eb-8f01-2c678acbb979.jpg?crop=4529%2C2548%2C2%2C450",
+    "label": "Olympics",
+    "link": "https://www.thetimes.co.uk/article/tokyo-olympics-jason-kenny-and-laura-kenny-have-to-settle-for-silver-as-records-tumble-lfjbwnpw2",
+    "publishedTime": "2021-08-03T16:00:00.000Z",
+    "summary": "It was a night of silver linings for Jason and Laura Kenny after the power couple of British Cycling were stunned by super-fast rivals during the defences of their Olympic titles. They took second place in the sprint and team",
+  },
+  Object {
+    "byline": "Ed Gorman, George Sandeman",
+    "headline": "Keely Hodgkinson wins 800m silver, breaking Kelly Holmes’s record",
+    "image": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc2046bdc-f46e-11eb-9beb-a8c8694a90e3.jpg?crop=1278%2C719%2C0%2C0",
+    "label": "Olympics",
+    "link": "https://www.thetimes.co.uk/article/tokyo-olympics-britain-steal-gold-from-new-zealand-in-49er-class-race-before-giles-scott-triumphs-in-finn-class-vxc7d03f8",
+    "publishedTime": "2021-08-03T13:50:00.000Z",
+    "summary": "Great Britain celebrated double Olympic gold in sailing this morning, while Keely Hodgkinson broke Dame Kelly Holmes’s national record to clinch silver in the 800m, making the 11th day of the Games one of the nation’s most",
+  },
+  Object {
+    "byline": "Jane Edwardes and Fiona Mountford",
+    "headline": "Theatre, also showing",
+    "image": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1493%2C840%2C4%2C152",
+    "label": "CHRISTMAS THEATRE",
+    "link": "https://www.thetimes.co.uk/article/theatre-also-showing-pldxw3prv",
+    "publishedTime": "2019-12-22T00:01:00.000Z",
+    "summary": "Guys and Dolls",
+  },
+]
+`;

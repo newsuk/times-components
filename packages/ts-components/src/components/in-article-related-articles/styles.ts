@@ -9,6 +9,7 @@ export const Container = styled.div<{ sectionColour: string }>`
   color: ${colours.functional.brandColour};
   background-color: ${colours.functional.backgroundPrimary};
   border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
+  clear: both;
 
   a {
     text-decoration: none;
