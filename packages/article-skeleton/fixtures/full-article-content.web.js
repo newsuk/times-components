@@ -171,16 +171,6 @@ export default [
       {
         attributes: {
           element: {
-            attributes: { "deck-id": "43978" },
-            value: "in-article-info-card-bulletpoints"
-          }
-        },
-        children: [],
-        name: "interactive"
-      },
-      {
-        attributes: {
-          element: {
             attributes: { "deck-id": "43434" },
             value: "gallery-carousel"
           }
