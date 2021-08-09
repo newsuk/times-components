@@ -20,7 +20,7 @@ const article1 = {
   summary:
     'Popularised by the Harry Potter books, the chocolate frog, it has emerged, is far from fictional. A living version of the confectionery shop favourite has been discovered in the jungles of New Guinea.',
   publishedTime: '2021-06-03T11:00:00.000Z',
-  byline: 'Roger Maynard, Sydney',
+  byline: 'Roger Maynard, Sydney'
 };
 
 const article2 = {
@@ -29,7 +29,7 @@ const article2 = {
   link:
     'https://www.thetimes.co.uk/article/chinas-villages-trampled-in-elephant-herds-long-march-kvl8m8spx',
   image:
-    'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/c1b6ab118e9422965b7faa628e26e05b.jpeg',
+    'https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/c1b6ab118e9422965b7faa628e26e05b.jpeg'
 };
 
 const article3 = {
@@ -38,7 +38,7 @@ const article3 = {
   link:
     'https://www.thetimes.co.uk/article/the-times-view-on-elephants-suction-technique-talented-trunks-h3ck3zx6g',
   image:
-    'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff1a0847a-c3ea-11eb-a26e-4c086490cfe1.jpg?crop=4418%2C2945%2C0%2C0&resize=685',
+    'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff1a0847a-c3ea-11eb-a26e-4c086490cfe1.jpg?crop=4418%2C2945%2C0%2C0&resize=685'
 };
 
 storiesOf('Typescript Component/In Article/Related Articles', module)
