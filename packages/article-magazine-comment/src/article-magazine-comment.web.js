@@ -79,6 +79,7 @@ class ArticlePage extends Component {
       paidContentClassName,
       isPreview,
       additionalRelatedArticlesFlag,
+      inlineRelatedArticlesFlag,
       algoliaSearchKeys,
       latestFromSectionFlag,
       latestFromSection,
@@ -101,6 +102,7 @@ class ArticlePage extends Component {
         paidContentClassName={paidContentClassName}
         isPreview={isPreview}
         additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
+        inlineRelatedArticlesFlag={inlineRelatedArticlesFlag}
         algoliaSearchKeys={algoliaSearchKeys}
         latestFromSectionFlag={latestFromSectionFlag}
         latestFromSection={latestFromSection}

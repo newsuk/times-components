@@ -52,11 +52,12 @@ const ArticleSkeleton = ({
   paidContentClassName,
   isPreview,
   additionalRelatedArticlesFlag,
+  inlineRelatedArticlesFlag,
+  inlineRelatedArticleOptions,
   algoliaSearchKeys,
   latestFromSectionFlag,
   latestFromSection,
-  olympicsKeys,
-  inlineRelatedArticleInsert
+  olympicsKeys
 }) => {
   const {
     commentsEnabled,
@@ -81,7 +82,8 @@ const ArticleSkeleton = ({
     insertNativeAd,
     insertInlineRelatedArticles(
       relatedArticleSlice,
-      inlineRelatedArticleInsert
+      inlineRelatedArticlesFlag,
+      inlineRelatedArticleOptions
     ),
     tagLastParagraph
   ];

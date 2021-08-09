@@ -137,6 +137,7 @@ export default () => {
               spotAccountId="dummy-spot-id"
               topics={topics}
               additionalRelatedArticlesFlag
+              inlineRelatedArticlesFlag
             />
           </AlgoliaSearchProvider>
         );

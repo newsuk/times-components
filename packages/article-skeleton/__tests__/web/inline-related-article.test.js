@@ -16,7 +16,7 @@ const articleRendered = content => {
 };
 describe("insertInlineRelatedArticles", () => {
   const slice = { items: [] };
-  const contentReducer = insertInlineRelatedArticles(slice);
+  const contentReducer = insertInlineRelatedArticles(slice, true);
 
   describe("default", () => {
     describe("inside paywall ", () => {
@@ -154,15 +154,13 @@ describe("insertInlineRelatedArticles", () => {
     });
 
     it("outside paywall", () => {
-      const fourParagraphContenet = [
+      const content = [
         fakeContent(),
         fakeContent(),
         fakeContent(),
         fakeContent()
       ];
-      expect(contentReducer(fourParagraphContenet)).toEqual(
-        fourParagraphContenet
-      );
+      expect(contentReducer(content)).toEqual(content);
     });
   });
 });

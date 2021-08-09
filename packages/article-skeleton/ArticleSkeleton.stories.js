@@ -99,7 +99,7 @@ storiesOf("Composed/Article Skeleton", module)
       },
       "User State"
     );
-    const inlineRelatedArticleInsert = { afterParagraph, paragraphPadding };
+    const inlineRelatedArticleOptions = { afterParagraph, paragraphPadding };
 
     return (
       <MockBookmarksProvider otherMocks={[]} delay={1000} articleId={data.id}>
@@ -135,7 +135,7 @@ storiesOf("Composed/Article Skeleton", module)
             )}
             onViewableItemsChanged={() => null}
             olympicsKeys={endpoint}
-            inlineRelatedArticleInsert={inlineRelatedArticleInsert}
+            inlineRelatedArticleOptions={inlineRelatedArticleOptions}
           />
         </ContextProviderWithDefaults>
       </MockBookmarksProvider>
