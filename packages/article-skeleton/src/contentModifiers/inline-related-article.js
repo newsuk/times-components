@@ -51,7 +51,6 @@ const insertInlineRelatedArticles = (
       ];
     }
     const insidePaywallIndex = paywall.children.indexOf(nthParagraph);
-
     return articleContent.map(
       item =>
         item !== paywall
@@ -68,28 +67,20 @@ const insertInlineRelatedArticles = (
             }
     );
   }
-  if (paywall) {
-    return articleContent.map(
-      item =>
-        item !== paywall
-          ? item
-          : {
-              ...paywall,
-              children: [
-                ...paywall.children,
-                getInlineRelatedArticles({
-                  relatedArticles: formatRelatedArticles(relatedArticleSlice)
-                })
-              ]
-            }
-    );
-  }
-  return [
-    ...articleContent,
-    getInlineRelatedArticles({
-      relatedArticles: formatRelatedArticles(relatedArticleSlice)
-    })
-  ];
+  return articleContent.map(
+    item =>
+      item !== paywall
+        ? item
+        : {
+            ...paywall,
+            children: [
+              ...paywall.children,
+              getInlineRelatedArticles({
+                relatedArticles: formatRelatedArticles(relatedArticleSlice)
+              })
+            ]
+          }
+  );
 };
 
 export default insertInlineRelatedArticles;
