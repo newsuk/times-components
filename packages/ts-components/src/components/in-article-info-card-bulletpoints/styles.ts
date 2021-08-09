@@ -132,7 +132,7 @@ export const List = styled.ul`
   column-gap: 55px;
   column-rule: 1px solid ${colours.functional.keyline};
   margin-left: 12px;
-  padding: 0;
+  padding: 0 0 0 20px;
   @media (min-width: ${breakpoints.medium}px) {
     column-count: 2;
     margin-bottom: 20px;
