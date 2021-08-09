@@ -7,6 +7,7 @@ import {
 } from './SingleRelatedArticle.styles';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { RelatedArticleType } from './RelatedArticle';
+import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
 type RelatedArticleProps = {
   sectionColour: string;
@@ -18,27 +19,40 @@ export const SingleRelatedArticle = ({
   image,
   summary,
   publishedTime,
-  byline
+  byline,
+  handleClick
 }: RelatedArticleProps) => (
-  <SingleRelatedArticleContainer>
-    {image && (
-      <SingleRelatedArticlesImageContainer>
-        <a href={link}>
-          <AspectRatio ratio="16:9">
-            <img src={image} />
-          </AspectRatio>
-        </a>
-      </SingleRelatedArticlesImageContainer>
+  <TrackingContextProvider>
+    {({ fireAnalyticsEvent, intersectObserverRef }) => (
+      <SingleRelatedArticleContainer ref={intersectObserverRef}>
+        {image && (
+          <SingleRelatedArticlesImageContainer>
+            <a
+              href={link}
+              onClick={() => handleClick(fireAnalyticsEvent, 'image', headline)}
+            >
+              <AspectRatio ratio="16:9">
+                <img src={image} />
+              </AspectRatio>
+            </a>
+          </SingleRelatedArticlesImageContainer>
+        )}
+        <section>
+          <a
+            href={link}
+            onClick={() =>
+              handleClick(fireAnalyticsEvent, 'headline', headline)
+            }
+          >
+            <h3>{headline}</h3>
+          </a>
+          <div className="summary">{summary}</div>
+          <div className="publishedTime">
+            <DatePublication date={publishedTime!} showDay={false} />
+          </div>
+          <div className="byline">{byline}</div>
+        </section>
+      </SingleRelatedArticleContainer>
     )}
-    <section>
-      <a href={link}>
-        <h3>{headline}</h3>
-      </a>
-      <div className="summary">{summary}</div>
-      <div className="publishedTime">
-        <DatePublication date={publishedTime!} showDay={false} />
-      </div>
-      <div className="byline">{byline}</div>
-    </section>
-  </SingleRelatedArticleContainer>
+  </TrackingContextProvider>
 );
