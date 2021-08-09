@@ -1,5 +1,3 @@
-import { TrackingContext } from '../../helpers/tracking/TrackingContextProvider';
-
 const clickEvent = (buttonLabel: string, headline: string) => ({
   action: 'Clicked',
   object: 'InArticleRelatedArticles',
@@ -15,7 +13,7 @@ const clickEvent = (buttonLabel: string, headline: string) => ({
 });
 
 export const handleClick = (
-  fireAnalyticsEvent: (evt: TrackingContext) => void,
+  fireAnalyticsEvent: ((analyticsEvent: any) => void) | undefined,
   buttonLabel: string,
   headline: string
 ) => {
