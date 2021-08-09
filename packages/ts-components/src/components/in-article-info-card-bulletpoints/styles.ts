@@ -131,8 +131,8 @@ export const List = styled.ul`
   column-count: 1;
   column-gap: 55px;
   column-rule: 1px solid ${colours.functional.keyline};
-  margin-left: 12px;
-  padding: 0 0 0 20px;
+  margin-left: 0;
+  padding: 0;
   @media (min-width: ${breakpoints.medium}px) {
     column-count: 2;
     margin-bottom: 20px;
@@ -147,7 +147,8 @@ export const ListItem = styled.li`
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid;
-  margin: 0 5px 13px 5px;
+  margin: 0 5px 13px 0;
+  padding-left: 20px;
   list-style: none;
   position: relative;
   & :last-child {
@@ -156,7 +157,7 @@ export const ListItem = styled.li`
   & ::before {
     content: '';
     position: absolute;
-    left: -13px;
+    left: 7px;
     top: 7px;
     width: 6px;
     height: 6px;
