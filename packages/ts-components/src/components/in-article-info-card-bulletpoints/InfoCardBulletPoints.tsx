@@ -45,18 +45,18 @@ export const InfoCardBulletPoints: React.FC<{
 
   const { headline, label } = data.fields;
   const infoCardData = data.body.data;
-  const [showAll, setReadMore] = useState(false);
+  const [readMore, setReadMore] = useState(false);
   const handleReadMore = () => {
-    setReadMore(!showAll);
+    setReadMore(!readMore);
   };
 
-  const readMoreRef = useRef<HTMLDivElement>();
-  const [readMore, showReadMore] = useState(false);
+  const readMoreRef = useRef<HTMLDivElement>(null);
+  const [showReadMore, setShowReadMore] = useState(false);
   const maxHeight = 350;
   useEffect(() => {
     const listContainer = readMoreRef.current;
     if (listContainer) {
-      showReadMore(listContainer.clientHeight > maxHeight);
+      setShowReadMore(listContainer.clientHeight > maxHeight);
     }
   }, []);
 
@@ -67,9 +67,9 @@ export const InfoCardBulletPoints: React.FC<{
         <Headline>{headline}</Headline>
         <ListContainer
           ref={readMoreRef}
-          showAll={showAll}
-          maxHeight={maxHeight}
           readMore={readMore}
+          maxHeight={maxHeight}
+          showReadMore={showReadMore}
         >
           <List>
             {infoCardData.map((row: InfoCardData, index: number) => (
@@ -83,9 +83,9 @@ export const InfoCardBulletPoints: React.FC<{
           </List>
         </ListContainer>
       </ContentContainer>
-      <ReadMoreContainer readMore={readMore} showAll={showAll}>
+      <ReadMoreContainer readMore={readMore} showReadMore={showReadMore}>
         <ReadMoreButton onClick={handleReadMore}>
-          {showAll ? 'Collapse' : 'Read more'}
+          {readMore ? 'Collapse' : 'Read more'}
         </ReadMoreButton>
       </ReadMoreContainer>
     </Container>

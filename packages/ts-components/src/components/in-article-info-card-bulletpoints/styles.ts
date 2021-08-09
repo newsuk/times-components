@@ -71,14 +71,14 @@ export const Headline = styled.div`
 
 export const ReadMoreContainer = styled.div<{
   readMore: boolean;
-  showAll: boolean;
+  showReadMore: boolean;
 }>`
   display: flex;
   border-top: 1px solid ${colours.functional.keyline};
-  margin-top: ${({ showAll }) => (showAll ? '0' : '15px')};
+  margin-top: ${({ readMore }) => (readMore ? '0' : '15px')};
   padding: 5px;
   justify-content: center;
-  display: ${({ readMore }) => (readMore ? 'flex' : 'none')};
+  display: ${({ showReadMore }) => (showReadMore ? 'flex' : 'none')};
   @media (min-width: ${breakpoints.medium}px) {
     display: none;
   }
@@ -111,17 +111,16 @@ export const ReadMoreButton = styled.button`
 `;
 
 export const ListContainer = styled.div<{
-  showAll: boolean;
-  ref: any;
-  maxHeight: number;
   readMore: boolean;
+  maxHeight: number;
+  showReadMore: boolean;
 }>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  max-height: ${({ showAll, maxHeight, readMore }) =>
-    !showAll && readMore ? maxHeight + 'px' : 'none'};
+  max-height: ${({ readMore, maxHeight, showReadMore }) =>
+    !readMore && showReadMore ? maxHeight + 'px' : 'none'};
   @media (min-width: ${breakpoints.medium}px) {
     max-height: none;
   }
