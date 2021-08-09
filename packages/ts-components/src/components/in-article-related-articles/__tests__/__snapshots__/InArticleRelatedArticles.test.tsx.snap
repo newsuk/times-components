@@ -4,7 +4,7 @@ exports[`<RelatedArticle> default 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa hnQxFR"
+      class="sc-bdVaJa YuEc"
     >
       <div
         class="heading"
@@ -43,7 +43,7 @@ exports[`<RelatedArticle> no images 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa hnQxFR"
+      class="sc-bdVaJa YuEc"
     >
       <div
         class="heading"
@@ -79,7 +79,7 @@ exports[`<RelatedArticle> single article 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa hnQxFR"
+      class="sc-bdVaJa YuEc"
     >
       <div
         class="heading"
@@ -104,7 +104,7 @@ exports[`<RelatedArticle> single article no image 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa hnQxFR"
+      class="sc-bdVaJa YuEc"
     >
       <div
         class="heading"

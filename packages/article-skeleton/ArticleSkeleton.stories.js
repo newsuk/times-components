@@ -72,7 +72,7 @@ storiesOf("Composed/Article Skeleton", module)
     );
 
     const endpoint = {
-      endpoint: ".",
+      endpoint: "https://olympics-embed-staging.pamedia.io",
       authToken: "6i3DuEwbVhr2Fht6",
       gamesCode: "OG2020-TR2"
     };
@@ -111,6 +111,7 @@ storiesOf("Composed/Article Skeleton", module)
             analyticsStream={storybookReporter}
             data={data}
             isPreview={false}
+            inlineRelatedArticlesFlag
             onAuthorPress={preventDefaultedAction(decorateAction)(
               "onAuthorPress"
             )}
