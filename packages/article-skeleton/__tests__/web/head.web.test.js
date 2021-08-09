@@ -10,7 +10,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 
-import Head from "../../src/head.web";
+import Head from "../../src/head";
 import articleFixture, {
   testFixture,
   videoLeadAsset
