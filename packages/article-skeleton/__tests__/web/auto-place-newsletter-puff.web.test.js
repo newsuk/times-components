@@ -96,6 +96,7 @@ const renderArticle = (data, isPreview = false) => (
         onVideoPress={() => {}}
         spotAccountId=""
         isPreview={isPreview}
+        inlineRelatedArticlesFlag
       />
     </Context.Provider>
   </MockedProvider>

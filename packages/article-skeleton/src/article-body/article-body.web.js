@@ -32,6 +32,7 @@ import {
   OlympicsSchedule,
   InfoCard,
   GalleryCarousel,
+  InArticleRelatedArticles,
   InfoCardBulletPoints
 } from "@times-components/ts-components";
 
@@ -320,6 +321,19 @@ const renderers = ({
         imageUri={imageUri}
         label={label}
       />
+    );
+  },
+  autoInlineRelatedArticles(key, { element }) {
+    return (
+      <Context.Consumer key={key}>
+        {({ theme }) => (
+          <InArticleRelatedArticles
+            heading="Related Articles"
+            relatedArticles={element.attributes.relatedArticles}
+            sectionColour={theme.sectionColour}
+          />
+        )}
+      </Context.Consumer>
     );
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {

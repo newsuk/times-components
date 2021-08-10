@@ -28,10 +28,13 @@ This package uses [yarn](https://yarnpkg.com) (latest) to run unit tests on each
 platform with [jest](https://facebook.github.io/jest/).
 
 ```
-yarn test:all
-yarn test:android
-yarn test:ios
 yarn test:web
+```
+
+Exception: for typescript packages just use yarn test.
+
+```
+yarn test
 ```
 
 Visit the official
