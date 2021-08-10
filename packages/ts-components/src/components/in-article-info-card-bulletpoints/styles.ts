@@ -94,19 +94,9 @@ export const ReadMoreButton = styled.button`
   margin: 15px 0;
   padding: 10px 12px 5px;
   cursor: pointer;
-
-  @media (hover: hover) {
-    &:hover {
-      border: 1px solid ${colours.functional.action};
-      color: ${colours.functional.action};
-    }
-  }
-
-  @media (hover: none) {
-    &:active {
-      border: 1px solid ${colours.functional.action};
-      color: ${colours.functional.action};
-    }
+  &:active {
+    border: 1px solid ${colours.functional.action};
+    color: ${colours.functional.action};
   }
 `;
 

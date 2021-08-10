@@ -98,7 +98,6 @@ describe('InfoCardBulletPoints', () => {
   });
 
   it('should render the initial read more state correctly', () => {
-    (useFetch as jest.Mock).mockReturnValue({ showAll: true });
     (useFetch as jest.Mock).mockReturnValue({ readMore: true });
     const { asFragment } = render(
       <InfoCardBulletPoints sectionColour="#636C17" />
