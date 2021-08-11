@@ -32,7 +32,8 @@ import {
   OlympicsSchedule,
   InfoCard,
   GalleryCarousel,
-  InArticleRelatedArticles
+  InArticleRelatedArticles,
+  InfoCardBulletPoints
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -160,6 +161,17 @@ const renderers = ({
             {({ theme }) => (
               <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
                 <InfoCard sectionColour={theme.sectionColour} />
+              </FetchProvider>
+            )}
+          </Context.Consumer>
+        );
+
+      case "in-article-info-card-bulletpoints":
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <InfoCardBulletPoints sectionColour={theme.sectionColour} />
               </FetchProvider>
             )}
           </Context.Consumer>
