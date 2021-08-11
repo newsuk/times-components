@@ -57,14 +57,14 @@ function getAuthorSchema(article) {
   const { bylines } = article;
   return bylines
     ? getAuthors(article).map(({ name, jobTitle, twitter, slug }) => {
-      const url = `https://thetimes.co.uk/profile/${slug}`;
-      return {
-        "@type": "Person",
-        name,
-        jobTitle,
-        sameAs: twitter ? [url, `https://twitter.com/${twitter}`] : url
-      };
-    })
+        const url = `https://thetimes.co.uk/profile/${slug}`;
+        return {
+          "@type": "Person",
+          name,
+          jobTitle,
+          sameAs: twitter ? [url, `https://twitter.com/${twitter}`] : url
+        };
+      })
     : [];
 }
 
@@ -117,8 +117,7 @@ const getThumbnailUrl = article => {
   const { crop32, crop1251, crop11, crop45, crop23, crop2251 } =
     leadAsset && leadAsset.posterImage ? leadAsset.posterImage : leadAsset;
   const crop = crop32 || crop1251 || crop11 || crop45 || crop23 || crop2251;
-  return crop ? crop.url : ''
-
+  return crop ? crop.url : "";
 };
 
 function Head({ article, logoUrl, paidContentClassName }) {
@@ -191,17 +190,17 @@ function Head({ article, logoUrl, paidContentClassName }) {
 
   const videoJsonLD = hasVideo
     ? {
-      "@context": "https://schema.org/",
-      "@type": "VideoObject",
-      name: leadAsset.title || title,
-      uploadDate: dateModified,
-      thumbnailUrl,
-      description:
-        Array.isArray(descriptionMarkup) && descriptionMarkup.length
-          ? renderTreeAsText({ children: descriptionMarkup })
-          : null,
-      contentUrl: url
-    }
+        "@context": "https://schema.org/",
+        "@type": "VideoObject",
+        name: leadAsset.title || title,
+        uploadDate: dateModified,
+        thumbnailUrl,
+        description:
+          Array.isArray(descriptionMarkup) && descriptionMarkup.length
+            ? renderTreeAsText({ children: descriptionMarkup })
+            : null,
+        contentUrl: url
+      }
     : null;
 
   return (
