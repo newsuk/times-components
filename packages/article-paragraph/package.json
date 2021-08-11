@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-paragraph",
-  "version": "1.4.202",
+  "version": "1.4.203",
   "description": "Article Paragraph",
   "main": "dist/",
   "dev": "src/",
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/article-skeleton": "1.51.36",
+    "@times-components/article-skeleton": "1.51.37",
     "@times-components/context": "1.2.26",
     "@times-components/markup-forest": "1.7.34",
     "@times-components/responsive": "0.6.27",
