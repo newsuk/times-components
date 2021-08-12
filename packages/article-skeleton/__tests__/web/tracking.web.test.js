@@ -24,7 +24,8 @@ jest.mock("@times-components/ts-components", () => ({
   OlympicsSchedule: "OlympicsSchedule",
   InArticlePuff: "InArticlePuff",
   InfoCard: "InfoCard",
-  GalleryCarousel: "GalleryCarousel"
+  GalleryCarousel: "GalleryCarousel",
+  InfoCardBulletPoints: "InfoCardBulletPoints"
 }));
 
 beforeEach(() => {
