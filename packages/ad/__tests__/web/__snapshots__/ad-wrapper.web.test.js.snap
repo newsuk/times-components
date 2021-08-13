@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ad-wrapper ad-article-inline-2 ad snapshot renders 1`] = `
+<div>
+  <div>
+    <div
+      id="ad-article-inline-2"
+    />
+  </div>
+</div>
+`;

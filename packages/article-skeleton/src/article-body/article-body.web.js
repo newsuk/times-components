@@ -55,6 +55,8 @@ import {
   InlineAdWrapper
 } from "../styles/article-body/responsive";
 
+import AdWrapper from '../../../ad/src/ad-wrapper';
+
 const deckApiUrl = "https://gobble.timesdev.tools/deck/api/deck-post-action/";
 
 export const responsiveDisplayWrapper = displayType => {
@@ -95,30 +97,22 @@ const renderers = ({
   ...coreRenderers,
   ad(key) {
     return (
-      <InlineAdWrapper>
-        <AdContainer key={key} slotName="inline-ad" />
-      </InlineAdWrapper>
+      <AdWrapper key={key} slotName="inline-ad" />
     );
   },
   inlineAd1(key) {
     return (
-      <InlineAdWrapper>
-        <AdContainer key={key} slotName="inlineAd1" />
-      </InlineAdWrapper>
+      <AdWrapper key={key} slotName="ad-article-inline-1" />
     );
   },
   inlineAd2(key) {
     return (
-      <InlineAdWrapper>
-        <AdContainer key={key} slotName="inlineAd2" />
-      </InlineAdWrapper>
+      <AdWrapper key={key} slotName="ad-article-inline-2" />
     );
   },
   inlineAd3(key) {
     return (
-      <InlineAdWrapper>
-        <AdContainer key={key} slotName="inlineAd3" />
-      </InlineAdWrapper>
+      <AdWrapper key={key} slotName="ad-article-inline-3" />
     );
   },
   dropCap(key, attrs, children) {

@@ -12,14 +12,14 @@ const AdContainer = ({ slotName, style }) => {
     pixel: "ad-pixel",
     pixelteads: "ad-pixelteads",
     pixelskin: "ad-pixelskin",
-    inlineAd1: "ad-article-inline-1",
-    inlineAd2: "ad-article-inline-2",
-    inlineAd3: "ad-article-inline-3"
+    "ad-article-inline-1": "ad-article-inline-1",
+    "ad-article-inline-2": "ad-article-inline-2",
+    "ad-article-inline-3": "ad-article-inline-3"
   };
 
   return (
     <View id={slotName} style={[styles.container, style]}>
-      <div id={`${adMap[slotName]}`} />
+      <div id={`${adMap[slotName]}`}/>
     </View>
   );
 };
