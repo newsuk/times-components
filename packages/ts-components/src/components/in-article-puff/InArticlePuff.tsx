@@ -2,14 +2,15 @@ import React from 'react';
 
 import { Placeholder } from '@times-components/image';
 
+import { DeckData } from '../../helpers/fetch/types';
 import { AspectRatios } from '../../types/aspectRatio';
 
 import { useFetch } from '../../helpers/fetch/FetchProvider';
+import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import {
   TrackingContext,
   TrackingContextProvider
 } from '../../helpers/tracking/TrackingContextProvider';
-import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { InArticleLink } from '../in-article-link/InArticleLink';
@@ -23,7 +24,6 @@ import {
   Headline,
   Copy
 } from './styles';
-import { DeckData } from '../../helpers/fetch/types';
 
 type InArticlePuffData = {
   data: {

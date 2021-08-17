@@ -86,4 +86,15 @@ describe('<FetchProvider>', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it('preview', () => {
+    const { asFragment, findByText } = render(
+      <FetchProvider previewData={{ body: '{ "value" : "boo" }' }}>
+        <TestComponent />
+      </FetchProvider>
+    );
+    findByText('boo');
+
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
