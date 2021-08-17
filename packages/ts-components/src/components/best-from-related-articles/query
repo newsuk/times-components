@@ -1,0 +1,74 @@
+{
+  recommendations(publisher: TIMES, recomArgs:{
+    userId: "-", section: "Sport",
+  }){
+    feedbackId
+    items: articles{
+      id
+      url
+      label
+      headline
+      flags
+      slug
+  		template
+      publishedTime: publishedDateTime
+      bylines{
+        ... on AuthorByline {
+          type
+          slug
+          name
+        }
+        ... on TextByline {
+          type
+          value
+        }
+      }
+      categories {
+        id
+        type
+        title
+        slug
+        parentId
+      }
+      summary {
+        children {
+          __typename
+          ... on ArticleText {
+            text
+          }
+          ... on ArticleHyperlink {
+            url
+            text
+          }
+        }
+      }
+      media{
+        __typename
+        ... on Image {
+          crop {
+            aspectRatio
+            url
+            alt
+          }
+    }
+        ... on Video {
+          videoId
+          posterImage {
+            crop {
+              url
+              aspectRatio
+              alt
+            }
+            crops {
+              url
+              aspectRatio
+              alt
+            }
+          }
+          
+        }
+      }
+    
+    }
+  }
+}
