@@ -187,3 +187,8 @@ export const CardImg = styled.img`
   pointer-events: none;
 }  
 `;
+
+export const QuoteContainer = styled.div<{ disabled: boolean }>`
+  display:  ${({ disabled }) => disabled ? 'none': 'flex'};
+  padding-bottom: 13px;
+`;

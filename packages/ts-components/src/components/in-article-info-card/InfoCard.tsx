@@ -12,7 +12,8 @@ import {
   CarouselIndicator,
   CarouselContainer,
   StyledCarousel,
-  CardImg
+  CardImg,
+  QuoteContainer
 } from './styles';
 import { PlaceholderContainer } from '../common-styles';
 import { Arrow } from '../carousel/Arrow';
@@ -21,6 +22,7 @@ import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import { DeckData } from '../../helpers/fetch/types';
+import { Quote } from './Quote';
 
 export type InfoCardData = {
   type: string;
@@ -37,6 +39,7 @@ type InfoCardDeckData = DeckData<InfoCardFields, InfoCardData>;
 export type GalleryCarouselProps = {
   sectionColour: string;
   initialIndex?: number;
+  activeQuotes?:boolean
 };
 
 export enum Layout {
@@ -108,7 +111,8 @@ const CustomPagination: React.FC<{
 
 export const InfoCard: React.FC<GalleryCarouselProps> = ({
   sectionColour,
-  initialIndex = 0
+  initialIndex = 0,
+  activeQuotes = false,
 }) => {
   const { loading, error, data } = useFetch<InfoCardDeckData>();
 
@@ -267,11 +271,15 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                 {row.data.image && (
                   <AspectRatio ratio="16:9">
                     <CardImg src={row.data.image} />
-                  </AspectRatio>
+                  </AspectRatio> 
                 )}
                 {row.data.subtitle && (
                   <SubHeading>{row.data.subtitle}</SubHeading>
                 )}
+                <QuoteContainer disabled={!activeQuotes}>
+                <Quote/>
+                </QuoteContainer>
+               
                 {row.data.copy && (
                   <BodyCopy
                     dangerouslySetInnerHTML={{
