@@ -2,6 +2,20 @@ import styled from 'styled-components';
 import { fonts, colours, breakpoints } from '@times-components/styleguide';
 import ReactElasticCarousel from 'react-elastic-carousel';
 
+export const PlaceholderContainer = styled.div`
+  position: relative;
+  height: 200px;
+  margin: 0 auto 20px auto;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+  }
+`;
+
 export const Label = styled.div<{ sectionColour: string }>`
   font-family: ${fonts.supporting};
   font-size: 12px;
@@ -18,7 +32,7 @@ export const Label = styled.div<{ sectionColour: string }>`
   }
 `;
 
-export const Headline = styled.div<{ isLarge: boolean }>`
+export const Headline = styled.div<{ isWide: boolean }>`
   font-size: 24px;
   line-height: 24px;
   color: ${colours.functional.brandColour};
@@ -32,9 +46,9 @@ export const Headline = styled.div<{ isLarge: boolean }>`
   }
   @media (min-width: ${breakpoints.wide}px) {
     width: 100%;
-    font-size: ${({ isLarge }) => (isLarge ? '32px' : '24px')};
-    line-height: ${({ isLarge }) => (isLarge ? '32px' : '24px')};
-    padding-bottom: ${({ isLarge }) => (isLarge ? '0px' : '14px')};
+    font-size: ${({ isWide }) => (isWide ? '32px' : '24px')};
+    line-height: ${({ isWide }) => (isWide ? '32px' : '24px')};
+    padding-bottom: ${({ isWide }) => (isWide ? '0px' : '14px')};
   }
 `;
 
@@ -48,20 +62,20 @@ export const HeadlineButtonContainer = styled.div`
   }
 `;
 
-export const Copy = styled.div<{ isLarge: boolean }>`
+export const Copy = styled.div<{ isWide: boolean }>`
   color: #555555;
   font-family: ${fonts.body};
   font-size: 14px;
   line-height: 20px;
   padding-bottom: 16px;
   @media (min-width: ${breakpoints.wide}px) {
-    width: ${({ isLarge }) => (isLarge ? '60%' : '100%')};
+    width: ${({ isWide }) => (isWide ? '60%' : '100%')};
     font-size: 16px;
     line-height: 24px;
   }
 `;
 
-export const ImageTitle = styled.div<{ isLarge: boolean }>`
+export const ImageTitle = styled.div<{ isWide: boolean }>`
   font-size: 16px;
   line-height: 16px;
   font-family: ${fonts.headlineRegular};
@@ -71,12 +85,12 @@ export const ImageTitle = styled.div<{ isLarge: boolean }>`
     line-height: 24px;
   }
   @media (min-width: ${breakpoints.wide}px) {
-    font-size: ${({ isLarge }) => (isLarge ? '24px' : '18px')};
-    line-height: ${({ isLarge }) => (isLarge ? '24px' : '18px')};
+    font-size: ${({ isWide }) => (isWide ? '24px' : '18px')};
+    line-height: ${({ isWide }) => (isWide ? '24px' : '18px')};
   }
 `;
 
-export const Credit = styled.div<{ isLarge: boolean }>`
+export const Credit = styled.div<{ isWide: boolean }>`
   text-transform: uppercase;
   font-size: 12px;
   line-height: 16px;
@@ -89,11 +103,11 @@ export const Credit = styled.div<{ isLarge: boolean }>`
   }
   @media (min-width: ${breakpoints.wide}px) {
     padding-top: 12px;
-    padding-bottom: ${({ isLarge }) => (isLarge ? '8px' : '14px')};
+    padding-bottom: ${({ isWide }) => (isWide ? '8px' : '14px')};
   }
 `;
 
-export const CardContainer = styled.div<{ isLarge: boolean; isSmall: boolean }>`
+export const CardContainer = styled.div<{ isWide: boolean; isSmall: boolean }>`
   display: flex;
   flex-direction: column;
   background-color: #f9f9f9;
@@ -104,11 +118,10 @@ export const CardContainer = styled.div<{ isLarge: boolean; isSmall: boolean }>`
     padding: 20px 20px 12px 20px;
   }
   @media (min-width: ${breakpoints.wide}px) {
-    height: ${({ isLarge }) => (isLarge ? '30%' : 'auto')};
-    width: ${({ isLarge, isSmall }) =>
-      (isLarge && '100%') || (isSmall && '36%') || '33%'};
-    padding: ${({ isLarge }) =>
-      isLarge ? '20px 16px 16px 16px' : '20px 16px'};
+    height: ${({ isWide }) => (isWide ? '30%' : 'auto')};
+    width: ${({ isWide, isSmall }) =>
+      (isWide && '100%') || (isSmall && '36%') || '33%'};
+    padding: ${({ isWide }) => (isWide ? '20px 16px 16px 16px' : '20px 16px')};
   }
 `;
 
@@ -172,17 +185,17 @@ export const CardContent = styled.div`
   height: 100%;
 `;
 
-export const MobileOrLarge = styled.div<{ isLarge: boolean }>`
+export const MobileOrLarge = styled.div<{ isWide: boolean }>`
   display: block;
   @media (min-width: ${breakpoints.wide}px) {
-    display: ${({ isLarge }) => (isLarge ? 'block' : 'none')};
+    display: ${({ isWide }) => (isWide ? 'block' : 'none')};
   }
 `;
 
-export const NotMobileOrLarge = styled.div<{ isLarge: boolean }>`
+export const NotMobileOrLarge = styled.div<{ isWide: boolean }>`
   display: none;
   @media (min-width: ${breakpoints.wide}px) {
-    display: ${({ isLarge }) => (isLarge ? 'none' : 'flex')};
+    display: ${({ isWide }) => (isWide ? 'none' : 'flex')};
     justify-content: space-between;
     height: 100%;
     flex-direction: column;
@@ -191,20 +204,20 @@ export const NotMobileOrLarge = styled.div<{ isLarge: boolean }>`
 
 export const CarouselContainer = styled.div<{
   sectionColour: string;
-  isLarge: boolean;
+  isWide: boolean;
   isSmall: boolean;
 }>`
   background-color: #f9f9f9;
   border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
-  flex-direction: ${({ isLarge }) =>
-    isLarge || window.innerWidth < 1024 ? 'column-reverse' : 'row-reverse'};
+  flex-direction: ${({ isWide }) =>
+    isWide || window.innerWidth < 1024 ? 'column-reverse' : 'row-reverse'};
   @media (min-width: ${breakpoints.wide}px) {
     width: ${({ isSmall }) => (isSmall ? '82.1%' : '100%')};
   }
 `;
 
 export const StyledCarousel = styled(ReactElasticCarousel)<{
-  isLarge: boolean;
+  isWide: boolean;
   sectionColour: string;
 }>`
   display: flex;
@@ -215,7 +228,7 @@ export const StyledCarousel = styled(ReactElasticCarousel)<{
     margin: 0;
   }
   @media (min-width: ${breakpoints.medium}px) {
-    flex-direction: ${({ isLarge }) =>
-      isLarge || window.innerWidth < 1024 ? 'column-reverse' : 'row-reverse'};
+    flex-direction: ${({ isWide }) =>
+      isWide || window.innerWidth < 1024 ? 'column-reverse' : 'row-reverse'};
   }
 `;

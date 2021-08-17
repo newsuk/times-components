@@ -30,7 +30,11 @@ import {
   OptaFootballMatchStats,
   OlympicsMedalTable,
   OlympicsSchedule,
-  InfoCard
+  InfoCard,
+  GalleryCarousel,
+  InArticleRelatedArticles,
+  InfoCardBulletPoints,
+  InlineAd
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -54,8 +58,6 @@ import {
   Ad,
   InlineAdWrapper
 } from "../styles/article-body/responsive";
-
-import AdWrapper from '../../../ad/src/ad-wrapper';
 
 const deckApiUrl = "https://gobble.timesdev.tools/deck/api/deck-post-action/";
 
@@ -97,22 +99,30 @@ const renderers = ({
   ...coreRenderers,
   ad(key) {
     return (
-      <AdWrapper key={key} slotName="inline-ad" />
+      <InlineAdWrapper className="hidden">
+        <AdContainer key={key} slotName="inline-ad" />
+      </InlineAdWrapper>
     );
   },
   inlineAd1(key) {
     return (
-      <AdWrapper key={key} slotName="ad-article-inline-1" />
+      <InlineAdWrapper className="hidden">
+        <AdContainer key={key} slotName="inlineAd1" />
+      </InlineAdWrapper>
     );
   },
   inlineAd2(key) {
     return (
-      <AdWrapper key={key} slotName="ad-article-inline-2" />
+      <InlineAdWrapper className="hidden">
+        <AdContainer key={key} slotName="inlineAd2" />
+      </InlineAdWrapper>
     );
   },
   inlineAd3(key) {
     return (
-      <AdWrapper key={key} slotName="ad-article-inline-3" />
+      <InlineAdWrapper className="hidden">
+        <AdContainer key={key} slotName="inlineAd3" />
+      </InlineAdWrapper>
     );
   },
   dropCap(key, attrs, children) {
@@ -177,6 +187,29 @@ const renderers = ({
             )}
           </Context.Consumer>
         );
+
+      case "in-article-info-card-bulletpoints":
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <InfoCardBulletPoints sectionColour={theme.sectionColour} />
+              </FetchProvider>
+            )}
+          </Context.Consumer>
+        );
+
+      case "gallery-carousel":
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <GalleryCarousel sectionColour={theme.sectionColour} />
+              </FetchProvider>
+            )}
+          </Context.Consumer>
+        );
+
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations
         const { code, copy, headline, imageUri, label } = attributes;
@@ -310,6 +343,19 @@ const renderers = ({
         imageUri={imageUri}
         label={label}
       />
+    );
+  },
+  autoInlineRelatedArticles(key, { element }) {
+    return (
+      <Context.Consumer key={key}>
+        {({ theme }) => (
+          <InArticleRelatedArticles
+            heading="Related Articles"
+            relatedArticles={element.attributes.relatedArticles}
+            sectionColour={theme.sectionColour}
+          />
+        )}
+      </Context.Consumer>
     );
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {

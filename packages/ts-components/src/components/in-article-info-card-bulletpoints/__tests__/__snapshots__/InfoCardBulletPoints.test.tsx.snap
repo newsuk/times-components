@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InfoCardBulletPoints click read more 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bwzfXH cvPBgI"
+  >
+    <div
+      class="sc-htpNat jxVqyQ"
+    >
+      <div
+        class="sc-bxivhb fILIeK"
+      >
+        Venezuelan Politics
+      </div>
+      <div
+        class="sc-ifAKCX jOQGqJ"
+      >
+        With a new president officially in place, what will happen?
+      </div>
+      <div
+        class="sc-gzVnrw evwQnu"
+      >
+        <ul
+          class="sc-htoDjs lcLiUk"
+        >
+          <li
+            class="sc-dnqmqq bPVcil"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum
+          </li>
+          <li
+            class="sc-dnqmqq bPVcil"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient al
+          </li>
+          <li
+            class="sc-dnqmqq bPVcil"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient alParturient mi dictumst suspendisse torquent primis potenti donec in parturient altorquent primis potenti donec in parturient al
+          </li>
+          <li
+            class="sc-dnqmqq bPVcil"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.
+          </li>
+          <li
+            class="sc-dnqmqq bPVcil"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper idParturient mi dictumst suspendisse torquent priParturient mi dictumst suspendisse torquent primi
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="sc-EHOje bfAsGW"
+    >
+      <button
+        class="sc-bZQynM kcsaTh"
+      >
+        Collapse
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InfoCardBulletPoints should render the component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bwzfXH cvPBgI"
+  >
+    <div
+      class="sc-htpNat jxVqyQ"
+    >
+      <div
+        class="sc-bxivhb fILIeK"
+      >
+        Venezuelan Politics
+      </div>
+      <div
+        class="sc-ifAKCX jOQGqJ"
+      >
+        With a new president officially in place, what will happen?
+      </div>
+      <div
+        class="sc-gzVnrw evwQnu"
+      >
+        <ul
+          class="sc-htoDjs lcLiUk"
+        >
+          <li
+            class="sc-dnqmqq bPVcil"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum
+          </li>
+          <li
+            class="sc-dnqmqq bPVcil"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient al
+          </li>
+          <li
+            class="sc-dnqmqq bPVcil"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient alParturient mi dictumst suspendisse torquent primis potenti donec in parturient altorquent primis potenti donec in parturient al
+          </li>
+          <li
+            class="sc-dnqmqq bPVcil"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.
+          </li>
+          <li
+            class="sc-dnqmqq bPVcil"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper idParturient mi dictumst suspendisse torquent priParturient mi dictumst suspendisse torquent primi
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="sc-EHOje cxnKIY"
+    >
+      <button
+        class="sc-bZQynM kcsaTh"
+      >
+        Read more
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InfoCardBulletPoints should render the initial loading state correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa dwiMsX"
+  >
+    <div>
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`InfoCardBulletPoints should render the initial read more state correctly 1`] = `<DocumentFragment />`;

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "1.25.6",
+  "version": "1.25.7",
   "main": "dist/provider",
   "dev": "src/provider",
   "scripts": {
@@ -35,13 +35,13 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@times-components/eslint-config-thetimes": "0.8.16",
-    "@times-components/jest-configurator": "2.7.1",
-    "@times-components/jest-serializer": "3.2.25",
-    "@times-components/provider-test-tools": "1.19.7",
-    "@times-components/storybook": "4.1.65",
-    "@times-components/test-utils": "2.3.8",
-    "@times-components/webpack-configurator": "2.0.27",
+    "@times-components/eslint-config-thetimes": "0.8.17",
+    "@times-components/jest-configurator": "2.7.2",
+    "@times-components/jest-serializer": "3.2.26",
+    "@times-components/provider-test-tools": "1.19.8",
+    "@times-components/storybook": "4.1.66",
+    "@times-components/test-utils": "2.3.9",
+    "@times-components/webpack-configurator": "2.0.28",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -62,7 +62,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/provider-queries": "2.14.4",
+    "@times-components/provider-queries": "2.14.5",
     "graphql-tag": "2.10.3",
     "hoist-non-react-statics": "3.3.2",
     "lodash.isequal": "4.4.0",

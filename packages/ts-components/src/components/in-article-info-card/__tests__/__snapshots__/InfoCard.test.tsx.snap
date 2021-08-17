@@ -540,6 +540,8 @@ exports[`InfoCard renders no image 1`] = `
 </body>
 `;
 
+exports[`InfoCard should render the initial error state correctly 1`] = `<DocumentFragment />`;
+
 exports[`InfoCard should render the initial loading state correctly 1`] = `
 <DocumentFragment>
   <div

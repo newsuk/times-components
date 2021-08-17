@@ -309,6 +309,7 @@ const renderArticle = () => (
       onTwitterLinkPress={() => {}}
       onVideoPress={() => {}}
       spotAccountId=""
+      inlineRelatedArticlesFlag
     />
   </Context.Provider>
 );

@@ -19,10 +19,6 @@ import {
   articleSkeletonPropTypes
 } from "./article-skeleton-prop-types";
 import articleTrackingContext from "./tracking/article-tracking-context";
-import insertDropcapIntoAST from "./dropcap-util";
-import insertNativeAd from "./native-ad.web";
-import insertInlineAd from "./inline-ad.web";
-import insertNewsletterPuff from "./newsletter-puff.web";
 import tagLastParagraph from "./tracking/article-tracking-last-paragraph";
 
 import {
@@ -35,8 +31,13 @@ import styles from "./styles/article-body/index.web";
 import Head from "./head";
 import PaywallPortal from "./paywall-portal";
 import StickySaveAndShareBar from "./sticky-save-and-share-bar";
+import insertDropcapIntoAST from "./contentModifiers/dropcap-util";
+import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
+import insertInlineRelatedArticles from "./contentModifiers/inline-related-article";
+import insertNativeAd from "./contentModifiers/native-ad";
+import insertInlineAd from "./contentModifiers/inline-ad";
 
-const reduceContent = (content, reducers) =>
+export const reduceArticleContent = (content, reducers) =>
   content &&
   content.length > 0 &&
   reducers.reduce((result, next) => next(result), content);
@@ -51,6 +52,8 @@ const ArticleSkeleton = ({
   paidContentClassName,
   isPreview,
   additionalRelatedArticlesFlag,
+  inlineRelatedArticlesFlag,
+  inlineRelatedArticleOptions,
   algoliaSearchKeys,
   latestFromSectionFlag,
   latestFromSection,
@@ -73,21 +76,19 @@ const ArticleSkeleton = ({
     sharingEnabled
   } = article;
 
-  const insertNewsletterPuffCurry = newContent =>
-    insertNewsletterPuff(section, newContent, isPreview);
-
-  const insertDropcapIntoASTCurry = newContent =>
-    insertDropcapIntoAST(newContent, template, dropcapsDisabled);
-
-  const contentReducers = [
-    insertDropcapIntoASTCurry,
-    insertNewsletterPuffCurry,
+  const articleContentReducers = [
+    insertDropcapIntoAST(template, dropcapsDisabled),
+    insertNewsletterPuff(section, isPreview),
     insertNativeAd,
     insertInlineAd,
+    insertInlineRelatedArticles(
+      relatedArticleSlice,
+      inlineRelatedArticlesFlag,
+      inlineRelatedArticleOptions
+    ),
     tagLastParagraph
   ];
-
-  const newContent = reduceContent(content, contentReducers);
+  const newContent = reduceArticleContent(content, articleContentReducers);
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
