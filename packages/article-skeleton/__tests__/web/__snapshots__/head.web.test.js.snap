@@ -9,6 +9,80 @@ Array [
 ]
 `;
 
+exports[`Head outputs AuthorByLine as author 1`] = `
+<Helmet
+  encodeSpecialCharacters={false}
+>
+  <title>
+    Some Headline
+     | 
+    Comment | 
+    The Times
+  </title>
+  <meta
+    content="Some Headline"
+    name="article:title"
+  />
+  <meta
+    content="The Times"
+    name="article:publication"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="description"
+  />
+  <meta
+    content="Oliver Wright"
+    name="author"
+  />
+  <meta
+    content="Some Headline"
+    property="og:title"
+  />
+  <meta
+    content="article"
+    property="og:type"
+  />
+  <meta
+    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    property="og:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    property="og:description"
+  />
+  <meta
+    content="https://crop169.io?resize=685"
+    property="og:image"
+  />
+  <meta
+    content="Some Headline"
+    name="twitter:title"
+  />
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    name="twitter:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="twitter:description"
+  />
+  <meta
+    content="https://crop169.io?resize=685"
+    name="twitter:image"
+  />
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":["https://thetimes.co.uk/profile/richard-lloyd-parry","https://twitter.com/twitterusername"]}]}
+  </script>
+</Helmet>
+`;
+
 exports[`Head outputs array of author in context schema 1`] = `
 <Helmet
   encodeSpecialCharacters={false}
@@ -384,6 +458,147 @@ exports[`Head outputs correct metadata for seoDescription 1`] = `
 </Helmet>
 `;
 
+exports[`Head outputs default author if there is empty array of bylines or null bylines 1`] = `
+<Helmet
+  encodeSpecialCharacters={false}
+>
+  <title>
+    Some Headline
+     | 
+    Comment | 
+    The Times
+  </title>
+  <meta
+    content="Some Headline"
+    name="article:title"
+  />
+  <meta
+    content="The Times"
+    name="article:publication"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="description"
+  />
+  
+  <meta
+    content="Some Headline"
+    property="og:title"
+  />
+  <meta
+    content="article"
+    property="og:type"
+  />
+  <meta
+    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    property="og:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    property="og:description"
+  />
+  <meta
+    content="https://crop169.io?resize=685"
+    property="og:image"
+  />
+  <meta
+    content="Some Headline"
+    name="twitter:title"
+  />
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    name="twitter:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="twitter:description"
+  />
+  <meta
+    content="https://crop169.io?resize=685"
+    name="twitter:image"
+  />
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Organization","name":"The Times"}}
+  </script>
+</Helmet>
+`;
+
+exports[`Head outputs default author if there is empty array of bylines or null bylines 2`] = `
+<Helmet
+  encodeSpecialCharacters={false}
+>
+  <title>
+    Some Headline
+     | 
+    Comment | 
+    The Times
+  </title>
+  <meta
+    content="Some Headline"
+    name="article:title"
+  />
+  <meta
+    content="The Times"
+    name="article:publication"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="description"
+  />
+  <meta
+    content="Some Headline"
+    property="og:title"
+  />
+  <meta
+    content="article"
+    property="og:type"
+  />
+  <meta
+    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    property="og:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    property="og:description"
+  />
+  <meta
+    content="https://crop169.io?resize=685"
+    property="og:image"
+  />
+  <meta
+    content="Some Headline"
+    name="twitter:title"
+  />
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    name="twitter:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="twitter:description"
+  />
+  <meta
+    content="https://crop169.io?resize=685"
+    name="twitter:image"
+  />
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Organization","name":"The Times"}}
+  </script>
+</Helmet>
+`;
+
 exports[`Head outputs profile url in sameAs if there is no twitter 1`] = `
 <Helmet
   encodeSpecialCharacters={false}
@@ -454,6 +669,80 @@ exports[`Head outputs profile url in sameAs if there is no twitter 1`] = `
     type="application/ld+json"
   >
     {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":[{"@type":"Person","name":"Richard Lloyd Parry","jobTitle":"Asia Editor","sameAs":"https://thetimes.co.uk/profile/richard-lloyd-parry"}]}
+  </script>
+</Helmet>
+`;
+
+exports[`Head outputs textByLine as author if there is no authorByline 1`] = `
+<Helmet
+  encodeSpecialCharacters={false}
+>
+  <title>
+    Some Headline
+     | 
+    Comment | 
+    The Times
+  </title>
+  <meta
+    content="Some Headline"
+    name="article:title"
+  />
+  <meta
+    content="The Times"
+    name="article:publication"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="description"
+  />
+  <meta
+    content="Oliver Wright"
+    name="author"
+  />
+  <meta
+    content="Some Headline"
+    property="og:title"
+  />
+  <meta
+    content="article"
+    property="og:type"
+  />
+  <meta
+    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    property="og:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    property="og:description"
+  />
+  <meta
+    content="https://crop169.io?resize=685"
+    property="og:image"
+  />
+  <meta
+    content="Some Headline"
+    name="twitter:title"
+  />
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    name="twitter:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="twitter:description"
+  />
+  <meta
+    content="https://crop169.io?resize=685"
+    name="twitter:image"
+  />
+  <script
+    type="application/ld+json"
+  >
+    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Oliver Wright"}}
   </script>
 </Helmet>
 `;
@@ -533,147 +822,6 @@ exports[`Head outputs video schema for a video article 1`] = `
     type="application/ld+json"
   >
     {"@context":"https://schema.org/","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://url.io"}
-  </script>
-</Helmet>
-`;
-
-exports[`Head removes author from context schema if there is empty array of bylines or null bylines 1`] = `
-<Helmet
-  encodeSpecialCharacters={false}
->
-  <title>
-    Some Headline
-     | 
-    Comment | 
-    The Times
-  </title>
-  <meta
-    content="Some Headline"
-    name="article:title"
-  />
-  <meta
-    content="The Times"
-    name="article:publication"
-  />
-  <meta
-    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
-    name="description"
-  />
-  
-  <meta
-    content="Some Headline"
-    property="og:title"
-  />
-  <meta
-    content="article"
-    property="og:type"
-  />
-  <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-    property="og:url"
-  />
-  <meta
-    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
-    property="og:description"
-  />
-  <meta
-    content="https://crop169.io?resize=685"
-    property="og:image"
-  />
-  <meta
-    content="Some Headline"
-    name="twitter:title"
-  />
-  <meta
-    content="summary_large_image"
-    name="twitter:card"
-  />
-  <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-    name="twitter:url"
-  />
-  <meta
-    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
-    name="twitter:description"
-  />
-  <meta
-    content="https://crop169.io?resize=685"
-    name="twitter:image"
-  />
-  <script
-    type="application/ld+json"
-  >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z"}
-  </script>
-</Helmet>
-`;
-
-exports[`Head removes author from context schema if there is empty array of bylines or null bylines 2`] = `
-<Helmet
-  encodeSpecialCharacters={false}
->
-  <title>
-    Some Headline
-     | 
-    Comment | 
-    The Times
-  </title>
-  <meta
-    content="Some Headline"
-    name="article:title"
-  />
-  <meta
-    content="The Times"
-    name="article:publication"
-  />
-  <meta
-    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
-    name="description"
-  />
-  <meta
-    content="Some Headline"
-    property="og:title"
-  />
-  <meta
-    content="article"
-    property="og:type"
-  />
-  <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-    property="og:url"
-  />
-  <meta
-    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
-    property="og:description"
-  />
-  <meta
-    content="https://crop169.io?resize=685"
-    property="og:image"
-  />
-  <meta
-    content="Some Headline"
-    name="twitter:title"
-  />
-  <meta
-    content="summary_large_image"
-    name="twitter:card"
-  />
-  <meta
-    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-    name="twitter:url"
-  />
-  <meta
-    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
-    name="twitter:description"
-  />
-  <meta
-    content="https://crop169.io?resize=685"
-    name="twitter:image"
-  />
-  <script
-    type="application/ld+json"
-  >
-    {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject","url":"https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".class-name"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z"}
   </script>
 </Helmet>
 `;

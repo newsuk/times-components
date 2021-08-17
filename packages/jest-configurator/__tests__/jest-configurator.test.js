@@ -71,18 +71,6 @@ describe("Jest Configurator Tests", () => {
     });
   });
 
-  describe("Native specific configuration", () => {
-    it("should have a default platform that matches the param in the haste", () => {
-      const config = jestConfigurator("ios", dir);
-      expect(config.haste.defaultPlatform).toEqual("ios");
-    });
-
-    it("should only define the param as the platform used", () => {
-      const config = jestConfigurator("ios", dir);
-      expect(config.haste.platforms).toEqual(["ios"]);
-    });
-  });
-
   describe("No platform specific config", () => {
     it("should allow a null platform value", () => {
       const config = jestConfigurator(null, dir);

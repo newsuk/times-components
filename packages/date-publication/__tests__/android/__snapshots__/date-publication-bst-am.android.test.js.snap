@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`1. date and times publication 1`] = `"Saturday July 01 2017, 5.32am, The Times"`;
-
-exports[`2. date and sundaytimes publication 1`] = `"Saturday July 01 2017, 5.32am, The Sunday Times"`;
-
-exports[`3. date and no given publication 1`] = `"Saturday July 01 2017, 5.32am"`;
-
-exports[`4. date and no day 1`] = `"July 01 2017, 5.32am"`;

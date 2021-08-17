@@ -178,6 +178,9 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
   };
 
   const showDotItem = infoCardData.length / showDisplayItem;
+  const enableCarousel =
+    infoCardData.length >
+    (windowWidth >= wide && isWide(size) ? 3 : windowWidth < medium ? 1 : 2);
   const [current, setCurrent] = useState(initialIndex);
   const handleChange = (event: any) => {
     setCurrent(event.index);
@@ -218,6 +221,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
             isRTL={false}
             onChange={handleChange}
             showArrows={false}
+            enableSwipe={enableCarousel}
             renderPagination={({ activePage, onClick }) => {
               const handlePaginationClick = (
                 indicatorId: string,
@@ -240,12 +244,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                   label={label}
                   sectionColour={sectionColour}
                 >
-                  {infoCardData.length >
-                    (isWide(size) && (windowWidth >= wide && isWide(size))
-                      ? 3
-                      : windowWidth < medium
-                        ? 1
-                        : 2) && (
+                  {enableCarousel && (
                     <CustomPagination
                       activePage={activePage}
                       /* @ts-ignore */

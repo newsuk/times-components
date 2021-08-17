@@ -40,6 +40,7 @@ const article3 = {
   image:
     'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff1a0847a-c3ea-11eb-a26e-4c086490cfe1.jpg?crop=4418%2C2945%2C0%2C0&resize=685'
 };
+
 storiesOf('Typescript Component/In Article/Related Articles', module)
   .addDecorator((storyFn: () => React.ReactNode) => (
     <TrackingContextProvider

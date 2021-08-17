@@ -86,6 +86,11 @@ declare module '@times-components/styleguide' {
   export const breakpoints: Breakpoints;
   export const colours: Colours;
 
+  export const scales: {
+    large: string;
+    medium: string;
+    xlarge: string;
+  };
   const styleguide: () => {
     colours: any;
     fontFactory: (v: any) => any;

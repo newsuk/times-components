@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.29.34](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.29.33...@times-components/article-main-comment@2.29.34) (2021-08-11)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.29.33](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.29.32...@times-components/article-main-comment@2.29.33) (2021-08-11)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.29.32](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.29.31...@times-components/article-main-comment@2.29.32) (2021-08-10)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.29.31](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.29.30...@times-components/article-main-comment@2.29.31) (2021-08-09)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.29.30](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.29.29...@times-components/article-main-comment@2.29.30) (2021-08-09)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
 ## [2.29.29](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.29.28...@times-components/article-main-comment@2.29.29) (2021-08-03)
 
 **Note:** Version bump only for package @times-components/article-main-comment

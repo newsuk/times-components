@@ -1,7 +1,9 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { SingleRelatedArticle } from '../SingleRelatedArticle';
+import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
+import mockDate from 'mockdate';
 
 const article1 = {
   label: 'Environment',
@@ -47,5 +49,85 @@ describe('<SingleRelatedArticle>', () => {
       />
     );
     expect(baseElement).toMatchSnapshot();
+  });
+});
+
+describe('tracking', () => {
+  beforeEach(() => {
+    mockDate.set(1620000000000);
+  });
+
+  afterEach(() => {
+    mockDate.reset();
+  });
+  it('fires click event when the image is clicked', () => {
+    const analyticsStream = jest.fn();
+    const { getByRole } = render(
+      <TrackingContextProvider
+        context={{
+          component: 'ArticleSkeleton',
+          attrs: {
+            articleHeadline: 'articleHeadline',
+            section: 'section'
+          }
+        }}
+        analyticsStream={analyticsStream}
+      >
+        <SingleRelatedArticle sectionColour="red" {...article1} />
+      </TrackingContextProvider>
+    );
+    fireEvent.click(getByRole('img'));
+    expect(analyticsStream).toHaveBeenCalledTimes(1);
+    expect(analyticsStream).toHaveBeenCalledWith({
+      action: 'Clicked',
+      component: 'ArticleSkeleton',
+      object: 'InArticleRelatedArticles',
+      attrs: {
+        articleHeadline: 'articleHeadline',
+        component_name:
+          'related article : Scientists discover ‘chocolate frogs’ in New Guinea',
+        eventTime: '2021-05-03T00:00:00.000Z',
+        event_navigation_browsing_method: 'click',
+        event_navigation_name:
+          'button : image : Scientists discover ‘chocolate frogs’ in New Guinea',
+        section: 'section'
+      }
+    });
+  });
+  it('fires click event when the headline is clicked', () => {
+    const analyticsStream = jest.fn();
+    const { getByText } = render(
+      <TrackingContextProvider
+        context={{
+          component: 'ArticleSkeleton',
+          attrs: {
+            articleHeadline: 'articleHeadline',
+            section: 'section'
+          }
+        }}
+        analyticsStream={analyticsStream}
+      >
+        <SingleRelatedArticle sectionColour="red" {...article1} />
+      </TrackingContextProvider>
+    );
+    fireEvent.click(
+      getByText('Scientists discover ‘chocolate frogs’ in New Guinea')
+    );
+    expect(analyticsStream).toHaveBeenCalledTimes(1);
+    expect(analyticsStream).toHaveBeenCalledWith({
+      action: 'Clicked',
+      component: 'ArticleSkeleton',
+      object: 'InArticleRelatedArticles',
+      attrs: {
+        articleHeadline: 'articleHeadline',
+        component_name:
+          'related article : Scientists discover ‘chocolate frogs’ in New Guinea',
+        eventTime: '2021-05-03T00:00:00.000Z',
+        event_navigation_browsing_method: 'click',
+        event_navigation_name:
+          'button : headline : Scientists discover ‘chocolate frogs’ in New Guinea',
+        section: 'section'
+      }
+    });
   });
 });
