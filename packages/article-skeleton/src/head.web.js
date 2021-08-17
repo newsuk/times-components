@@ -104,6 +104,8 @@ const getThumbnailUrlFromImage = article => {
   return get(article.leadAsset, "crop169.url", null);
 };
 
+const host = "https://www.thetimes.co.uk";
+const fallbackThumbnailUrl = `${host}/d/img/fallback-thumbnail-169.png`;
 const getThumbnailUrl = article => {
   const { hasVideo, leadAsset } = article;
   const thumbnailUrl = hasVideo
@@ -117,7 +119,7 @@ const getThumbnailUrl = article => {
   const { crop32, crop1251, crop11, crop45, crop23, crop2251 } =
     leadAsset && leadAsset.posterImage ? leadAsset.posterImage : leadAsset;
   const crop = crop32 || crop1251 || crop11 || crop45 || crop23 || crop2251;
-  return crop ? crop.url : "";
+  return crop ? crop.url : fallbackThumbnailUrl;
 };
 
 function Head({ article, logoUrl, paidContentClassName }) {
