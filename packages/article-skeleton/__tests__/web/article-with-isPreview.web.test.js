@@ -312,6 +312,7 @@ const renderArticle = () => (
       onVideoPress={() => {}}
       spotAccountId=""
       isPreview={isPreview}
+      inlineRelatedArticlesFlag
     />
   </Context.Provider>
 );

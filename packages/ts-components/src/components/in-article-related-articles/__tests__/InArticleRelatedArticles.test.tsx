@@ -2,6 +2,10 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import { InArticleRelatedArticles } from '../InArticleRelatedArticles';
+import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
+import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
+
+import mockDate from 'mockdate';
 
 const relatedArticles = [
   {
@@ -72,5 +76,65 @@ describe('<RelatedArticle>', () => {
       />
     );
     expect(baseElement).toMatchSnapshot();
+  });
+});
+
+describe('tracking', () => {
+  let oldIntersectionObserver: typeof IntersectionObserver;
+  const analyticsStream = jest.fn();
+
+  beforeEach(() => {
+    oldIntersectionObserver = window.IntersectionObserver;
+
+    // @ts-ignore
+    window.IntersectionObserver = FakeIntersectionObserver;
+    mockDate.set(1620000000000);
+  });
+
+  afterEach(() => {
+    window.IntersectionObserver = oldIntersectionObserver;
+    mockDate.reset();
+    jest.resetAllMocks();
+  });
+
+  it('fires scroll event when viewed', () => {
+    render(
+      <TrackingContextProvider
+        context={{
+          component: 'ArticleSkeleton',
+          attrs: {
+            articleHeadline: 'articleHeadline',
+            section: 'section'
+          }
+        }}
+        analyticsStream={analyticsStream}
+      >
+        <InArticleRelatedArticles
+          sectionColour="red"
+          relatedArticles={relatedArticles}
+          heading="Heading"
+        />
+      </TrackingContextProvider>
+    );
+
+    FakeIntersectionObserver.intersect();
+
+    expect(analyticsStream).toHaveBeenCalledTimes(1);
+    expect(analyticsStream).toHaveBeenCalledWith({
+      action: 'Scrolled',
+      component: 'ArticleSkeleton',
+      object: 'InArticleRelatedArticles',
+      attrs: {
+        articleHeadline: 'articleHeadline',
+        component_name: 'in-article component : related article : in view',
+        component_type: 'in-article component : related articles : interactive',
+        eventTime: '2021-05-03T00:00:00.000Z',
+        event_navigation_action: 'navigation',
+        event_navigation_browsing_method: 'scroll',
+        event_navigation_name:
+          'in-article component displayed : related article',
+        section: 'section'
+      }
+    });
   });
 });

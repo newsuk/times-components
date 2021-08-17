@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.30](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.29...@times-components/ts-components@1.11.30) (2021-08-11)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.29](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.28...@times-components/ts-components@1.11.29) (2021-08-11)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.28](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.27...@times-components/ts-components@1.11.28) (2021-08-10)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.27](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.26...@times-components/ts-components@1.11.27) (2021-08-09)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.11.26](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.25...@times-components/ts-components@1.11.26) (2021-08-09)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
 ## [1.11.25](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.24...@times-components/ts-components@1.11.25) (2021-08-03)
 
 **Note:** Version bump only for package @times-components/ts-components

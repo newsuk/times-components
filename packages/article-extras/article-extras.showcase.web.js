@@ -59,6 +59,11 @@ export default {
                   false,
                   "User State"
                 )}
+                inlineRelatedArticlesFlag={boolean(
+                  "Inline Related Articles",
+                  false,
+                  "User State"
+                )}
                 latestFromSectionFlag={boolean(
                   "Latest from Section",
                   false,
@@ -124,6 +129,7 @@ export default {
                 spotAccountId="dummy-spot-id"
                 topics={topics}
                 additionalRelatedArticlesFlag
+                inlineRelatedArticlesFlag
               />
             </AlgoliaSearchProvider>
           </>

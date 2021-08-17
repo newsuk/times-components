@@ -140,6 +140,16 @@ function Head({ article, logoUrl, paidContentClassName }) {
     ? getVideoLeadAssetUrl(article)
     : getThumbnailUrlFromImage(article);
 
+  const defaultAuthorSchema = {
+    "@type": "Organization",
+    name: "The Times"
+  };
+  const textByLineAuthorSchema = authorName
+    ? { "@type": "Person", name: authorName }
+    : null;
+  const authorSchema =
+    (authors && authors.length ? authors : textByLineAuthorSchema) ||
+    defaultAuthorSchema;
   const jsonLD = {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
@@ -169,12 +179,9 @@ function Head({ article, logoUrl, paidContentClassName }) {
       caption
     },
     thumbnailUrl,
-    dateModified
+    dateModified,
+    author: authorSchema
   };
-
-  if (authors && authors.length) {
-    Object.assign(jsonLD, { author: authors });
-  }
 
   const videoJsonLD = hasVideo
     ? {
