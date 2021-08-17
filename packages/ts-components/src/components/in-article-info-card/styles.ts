@@ -192,3 +192,11 @@ export const QuoteContainer = styled.div<{ disabled: boolean }>`
   display:  ${({ disabled }) => disabled ? 'none': 'flex'};
   padding-bottom: 13px;
 `;
+
+export const AuthorCopy = styled.div`
+  color: ${colours.functional.secondary};
+  font-family: ${fonts.body};
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+`;

@@ -13,7 +13,8 @@ import {
   CarouselContainer,
   StyledCarousel,
   CardImg,
-  QuoteContainer
+  QuoteContainer,
+  AuthorCopy
 } from './styles';
 import { PlaceholderContainer } from '../common-styles';
 import { Arrow } from '../carousel/Arrow';
@@ -30,6 +31,7 @@ export type InfoCardData = {
     image?: string;
     subtitle?: string;
     copy: string;
+    author: string;
   };
 };
 type InfoCardFields = { headline: string; label: string; size: Layout };
@@ -291,11 +293,13 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                     }}
                   />
                 )}
-                 {/* <BodyCopy
+                 {row.data.author && (
+                  <AuthorCopy
                     dangerouslySetInnerHTML={{
-                      __html: sanitiseCopy('JOHN ORMANDY', ['br', 'b', 'i'])
+                      __html: sanitiseCopy(row.data.author, ['br', 'b', 'i'])
                     }}
-                  /> */}
+                  />
+                )}
               </InfoCardContainer>
             ))}
           </StyledCarousel>
