@@ -291,6 +291,11 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                     }}
                   />
                 )}
+                 {/* <BodyCopy
+                    dangerouslySetInnerHTML={{
+                      __html: sanitiseCopy('JOHN ORMANDY', ['br', 'b', 'i'])
+                    }}
+                  /> */}
               </InfoCardContainer>
             ))}
           </StyledCarousel>
