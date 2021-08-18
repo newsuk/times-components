@@ -34,6 +34,8 @@ exports[`<FetchProvider> loading 1`] = `
 
 exports[`<FetchProvider> preview 1`] = `
 <DocumentFragment>
-  <div />
+  <div>
+    boo
+  </div>
 </DocumentFragment>
 `;
