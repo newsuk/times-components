@@ -41,7 +41,7 @@ type InfoCardDeckData = DeckData<InfoCardFields, InfoCardData>;
 export type GalleryCarouselProps = {
   sectionColour: string;
   initialIndex?: number;
-  activeQuotes?:boolean
+  activeQuotes?: boolean
 };
 
 export enum Layout {
@@ -68,48 +68,48 @@ const CustomPagination: React.FC<{
   windowWidth,
   showDotItem
 }) => {
-  return (
-    <CarouselButtonContainer>
-      <CarouselButton
-        data-testid="Previous button"
-        disabled={activePage === 0}
-        onClick={() => onClick(current / showDisplayItem - 1, 'left')}
-      >
-        <Arrow size={{ width: '10px', height: '14px' }} />
-      </CarouselButton>
-      <CarouselIndicatorContainer>
-        {data.map(({}, index) => {
-          if (index < showDotItem) {
-            const isActivePage = activePage === index;
-            return (
-              <CarouselIndicator
-                data-testid="Page Indicator"
-                key={index}
-                onClick={() => onClick(index)}
-                active={isActivePage}
-              />
-            );
-          } else {
-            return;
+    return (
+      <CarouselButtonContainer>
+        <CarouselButton
+          data-testid="Previous button"
+          disabled={activePage === 0}
+          onClick={() => onClick(current / showDisplayItem - 1, 'left')}
+        >
+          <Arrow size={{ width: '10px', height: '14px' }} />
+        </CarouselButton>
+        <CarouselIndicatorContainer>
+          {data.map(({ }, index) => {
+            if (index < showDotItem) {
+              const isActivePage = activePage === index;
+              return (
+                <CarouselIndicator
+                  data-testid="Page Indicator"
+                  key={index}
+                  onClick={() => onClick(index)}
+                  active={isActivePage}
+                />
+              );
+            } else {
+              return;
+            }
+          })}
+        </CarouselIndicatorContainer>
+        <CarouselButton
+          data-testid="Next Button"
+          disabled={
+            activePage ===
+            Math.trunc(
+              data.length / showDisplayItem - (medium > windowWidth ? 1 : 0)
+            )
           }
-        })}
-      </CarouselIndicatorContainer>
-      <CarouselButton
-        data-testid="Next Button"
-        disabled={
-          activePage ===
-          Math.trunc(
-            data.length / showDisplayItem - (medium > windowWidth ? 1 : 0)
-          )
-        }
-        className="nextBtn"
-        onClick={() => onClick(current / showDisplayItem + 1, 'right')}
-      >
-        <Arrow size={{ width: '10px', height: '14px' }} />
-      </CarouselButton>
-    </CarouselButtonContainer>
-  );
-};
+          className="nextBtn"
+          onClick={() => onClick(current / showDisplayItem + 1, 'right')}
+        >
+          <Arrow size={{ width: '10px', height: '14px' }} />
+        </CarouselButton>
+      </CarouselButtonContainer>
+    );
+  };
 
 export const InfoCard: React.FC<GalleryCarouselProps> = ({
   sectionColour,
@@ -273,15 +273,14 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                 {row.data.image && (
                   <AspectRatio ratio="16:9">
                     <CardImg src={row.data.image} />
-                  </AspectRatio> 
+                  </AspectRatio>
                 )}
                 {row.data.subtitle && (
                   <SubHeading>{row.data.subtitle}</SubHeading>
                 )}
                 <QuoteContainer disabled={!activeQuotes}>
-                <Quote/>
+                  <Quote />
                 </QuoteContainer>
-               
                 {row.data.copy && (
                   <BodyCopy
                     dangerouslySetInnerHTML={{
@@ -293,7 +292,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                     }}
                   />
                 )}
-                 {row.data.author && (
+                {row.data.author && (
                   <AuthorCopy
                     dangerouslySetInnerHTML={{
                       __html: sanitiseCopy(row.data.author, ['br', 'b', 'i'])

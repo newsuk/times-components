@@ -37,7 +37,7 @@ exports[`InfoCard renders 1`] = `
                       tabindex="0"
                     >
                       <div
-                        class="sc-jKJlTe daGHwh"
+                        class="sc-eNQAEJ gpFafL"
                       >
                         <img
                           class="sc-kGXeez iiZPJL"
@@ -409,7 +409,7 @@ exports[`InfoCard renders no image 1`] = `
                       tabindex="0"
                     >
                       <div
-                        class="sc-jKJlTe daGHwh"
+                        class="sc-eNQAEJ gpFafL"
                       >
                         <img
                           class="sc-kGXeez iiZPJL"
@@ -794,7 +794,7 @@ exports[`InfoCard should render the standard component 1`] = `
                     tabindex="0"
                   >
                     <div
-                      class="sc-jKJlTe daGHwh"
+                      class="sc-eNQAEJ gpFafL"
                     >
                       <img
                         class="sc-kGXeez iiZPJL"
@@ -1159,7 +1159,7 @@ exports[`InfoCard should render the wide component 1`] = `
                     tabindex="0"
                   >
                     <div
-                      class="sc-jKJlTe daGHwh"
+                      class="sc-eNQAEJ gpFafL"
                     >
                       <img
                         class="sc-kGXeez iiZPJL"
