@@ -89,7 +89,7 @@ describe('<FetchProvider>', () => {
 
   it('preview', () => {
     const { asFragment, getByText } = render(
-      <FetchProvider previewData={{ value: "boo" }}>
+      <FetchProvider previewData={{ value: 'boo' }}>
         <TestComponent />
       </FetchProvider>
     );
