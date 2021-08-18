@@ -1,4 +1,4 @@
-import insertInlineAd from "../../src/inline-ad.web";
+import insertInlineAd from "../../src/contentModifiers/inline-ad";
 import inlineAdFixture from "../../fixtures/inline-ad";
 
 const {

@@ -33,8 +33,7 @@ import {
   InfoCard,
   GalleryCarousel,
   InArticleRelatedArticles,
-  InfoCardBulletPoints,
-  InlineAd
+  InfoCardBulletPoints
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
