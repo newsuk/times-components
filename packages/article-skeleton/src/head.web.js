@@ -104,8 +104,6 @@ const getThumbnailUrlFromImage = article => {
   return get(article.leadAsset, "crop169.url", null);
 };
 
-const host = "https://www.thetimes.co.uk";
-const fallbackThumbnailUrl = `${host}/d/img/fallback-thumbnail-169.png`;
 const getThumbnailUrl = article => {
   const { hasVideo, leadAsset } = article;
   const thumbnailUrl = hasVideo
@@ -119,10 +117,15 @@ const getThumbnailUrl = article => {
   const { crop32, crop1251, crop11, crop45, crop23, crop2251 } =
     leadAsset && leadAsset.posterImage ? leadAsset.posterImage : leadAsset;
   const crop = crop32 || crop1251 || crop11 || crop45 || crop23 || crop2251;
-  return crop ? crop.url : fallbackThumbnailUrl;
+  return crop ? crop.url : "";
 };
 
-function Head({ article, logoUrl, paidContentClassName }) {
+function Head({
+  article,
+  logoUrl,
+  paidContentClassName,
+  getFallbackThumbnailUrl169
+}) {
   const {
     descriptionMarkup,
     headline,
@@ -152,7 +155,9 @@ function Head({ article, logoUrl, paidContentClassName }) {
   const title = headline || shortHeadline || "";
   const datePublished = new Date(publishedTime).toISOString();
   const dateModified = updatedTime || datePublished;
-  const thumbnailUrl = getThumbnailUrl(article);
+  const thumbnailUrl =
+    getThumbnailUrl(article) ||
+    (getFallbackThumbnailUrl169 ? getFallbackThumbnailUrl169() : null);
 
   const jsonLD = {
     "@context": "http://schema.org",
@@ -261,7 +266,8 @@ Head.propTypes = {
     tiles: PropTypes.array
   }).isRequired,
   logoUrl: PropTypes.string.isRequired,
-  paidContentClassName: PropTypes.string.isRequired
+  paidContentClassName: PropTypes.string.isRequired,
+  getFallbackThumbnailUrl169: PropTypes.func.isRequired
 };
 
 export default Head;
