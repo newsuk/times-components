@@ -50,6 +50,8 @@ export {
 
 export { InfoCard } from './components/in-article-info-card/InfoCard';
 
+export { InlineAd } from './components/ads/InlineAd';
+
 export { GalleryCarousel } from './components/carousel/GalleryCarousel';
 export {
   InArticleRelatedArticles
