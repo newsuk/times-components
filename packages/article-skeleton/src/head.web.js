@@ -104,7 +104,28 @@ const getThumbnailUrlFromImage = article => {
   return get(article.leadAsset, "crop169.url", null);
 };
 
-function Head({ article, logoUrl, paidContentClassName }) {
+const getThumbnailUrl = article => {
+  const { hasVideo, leadAsset } = article;
+  const thumbnailUrl = hasVideo
+    ? getVideoLeadAssetUrl(article)
+    : getThumbnailUrlFromImage(article);
+
+  if (thumbnailUrl) return thumbnailUrl;
+
+  if (!leadAsset) return null;
+
+  const { crop32, crop1251, crop11, crop45, crop23, crop2251 } =
+    leadAsset && leadAsset.posterImage ? leadAsset.posterImage : leadAsset;
+  const crop = crop32 || crop1251 || crop11 || crop45 || crop23 || crop2251;
+  return crop ? crop.url : "";
+};
+
+function Head({
+  article,
+  logoUrl,
+  paidContentClassName,
+  getFallbackThumbnailUrl169
+}) {
   const {
     descriptionMarkup,
     headline,
@@ -126,19 +147,17 @@ function Head({ article, logoUrl, paidContentClassName }) {
       ? renderTreeAsText({ children: descriptionMarkup })
       : null);
   const sectionname = getSectionName(article);
-  const leadassetUrl = appendToImageURL(
-    getArticleLeadAssetUrl(article),
-    "resize",
-    685
-  );
+  const leadassetUrl =
+    appendToImageURL(getArticleLeadAssetUrl(article), "resize", 685) ||
+    getThumbnailUrl(article);
   const authors = getAuthorSchema(article);
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline || "";
   const datePublished = new Date(publishedTime).toISOString();
   const dateModified = updatedTime || datePublished;
-  const thumbnailUrl = hasVideo
-    ? getVideoLeadAssetUrl(article)
-    : getThumbnailUrlFromImage(article);
+  const thumbnailUrl =
+    getThumbnailUrl(article) ||
+    (getFallbackThumbnailUrl169 ? getFallbackThumbnailUrl169() : null);
 
   const defaultAuthorSchema = {
     "@type": "Organization",
@@ -254,7 +273,8 @@ Head.propTypes = {
     tiles: PropTypes.array
   }).isRequired,
   logoUrl: PropTypes.string.isRequired,
-  paidContentClassName: PropTypes.string.isRequired
+  paidContentClassName: PropTypes.string.isRequired,
+  getFallbackThumbnailUrl169: PropTypes.func.isRequired
 };
 
 export default Head;
