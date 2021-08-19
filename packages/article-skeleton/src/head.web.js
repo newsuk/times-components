@@ -147,17 +147,18 @@ function Head({
       ? renderTreeAsText({ children: descriptionMarkup })
       : null);
   const sectionname = getSectionName(article);
+  const thumbnailUrl =
+    getThumbnailUrl(article) ||
+    (getFallbackThumbnailUrl169 ? getFallbackThumbnailUrl169() : null);
+
   const leadassetUrl =
-    appendToImageURL(getArticleLeadAssetUrl(article), "resize", 685) ||
-    getThumbnailUrl(article);
+    appendToImageURL(getArticleLeadAssetUrl(article), "resize", 1200) ||
+    thumbnailUrl;
   const authors = getAuthorSchema(article);
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline || "";
   const datePublished = new Date(publishedTime).toISOString();
   const dateModified = updatedTime || datePublished;
-  const thumbnailUrl =
-    getThumbnailUrl(article) ||
-    (getFallbackThumbnailUrl169 ? getFallbackThumbnailUrl169() : null);
 
   const defaultAuthorSchema = {
     "@type": "Organization",
