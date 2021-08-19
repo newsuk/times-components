@@ -34,7 +34,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     algoliaSearchKeys,
     latestFromSectionFlag,
     latestFromSection,
-    olympicsKeys
+    olympicsKeys,
+    getFallbackThumbnailUrl169
   } = data;
 
   return React.createElement(
@@ -95,7 +96,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               algoliaSearchKeys,
               latestFromSectionFlag,
               latestFromSection,
-              olympicsKeys
+              olympicsKeys,
+              getFallbackThumbnailUrl169
             })
           );
         }

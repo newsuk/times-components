@@ -10,7 +10,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 
-import Head from "../../src/head";
+import Head from "../../src/head.web";
 import articleFixture, {
   testFixture,
   videoLeadAsset
@@ -271,7 +271,7 @@ describe("Head", () => {
     expect(testRenderer).toMatchSnapshot();
   });
 
-  it("outputs default author if there is empty array of bylines or null bylines", () => {
+  it("removes author from context schema if there is empty array of bylines or null bylines", () => {
     let testRenderer = TestRenderer.create(
       <Head
         article={{
@@ -650,35 +650,10 @@ describe("Head", () => {
     expect(testRenderer).toMatchSnapshot();
   });
 
-  it("outputs textByLine as author if there is no authorByline", () => {
+  it("outputs video schema for a video article", () => {
     const testRenderer = TestRenderer.create(
       <Head
-        article={{
-          ...article,
-          bylines: [
-            {
-              __typename: "TextByline",
-              byline: [
-                {
-                  name: "author",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Oliver Wright"
-                      }
-                    }
-                  ],
-                  attributes: {
-                    slug: "oliver-wright"
-                  }
-                }
-              ],
-              image: null
-            }
-          ]
-        }}
+        article={videoArticle}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
       />
@@ -686,47 +661,38 @@ describe("Head", () => {
     expect(testRenderer).toMatchSnapshot();
   });
 
-  it("outputs AuthorByLine as author", () => {
-    const testRenderer = TestRenderer.create(
-      <Head
-        article={{
-          ...article,
-          bylines: [
-            {
-              __typename: "AuthorByline",
-              author: {
-                image:
-                  "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprodp%2Fweb%2Fbin%2Fc341435d-5352-4952-afa5-a232f17c79c2.jpg?crop=600%2C600%2C0%2C0&resize=200",
-                jobTitle: "Asia Editor",
-                twitter: "twitterusername",
-                slug: "richard-lloyd-parry",
-                name: "Richard Lloyd Parry"
-              },
-              byline: [
-                {
-                  name: "author",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Oliver Wright"
-                      }
-                    }
-                  ],
-                  attributes: {
-                    slug: "oliver-wright"
-                  }
-                }
-              ],
-              image: null
-            }
-          ]
-        }}
-        logoUrl={logoUrl}
-        paidContentClassName={paidContentClassName}
-      />
-    );
-    expect(testRenderer).toMatchSnapshot();
+  const ratios = [
+    { ratio: "1:1", crop: "crop11" },
+    { ratio: "2:3", crop: "crop23" },
+    { ratio: "3:2", crop: "crop32" },
+    { ratio: "16:9", crop: "crop169" },
+    { ratio: "4:5", crop: "crop45" },
+    { ratio: "1.25:1", crop: "crop1251" }
+  ];
+
+  ratios.forEach(({ crop, ratio }) => {
+    const leadAsset = {
+      __typename: "Video",
+      caption: "Some Caption",
+      credits: "Some Credits",
+      [crop]: {
+        __typename: "Crop",
+        ratio,
+        url: `https://${crop}.io`
+      },
+      id: "id-123",
+      title: "Some Title"
+    };
+
+    it(`outputs thumbnail urls for a article for ${ratio} ratio`, () => {
+      const testRenderer = TestRenderer.create(
+        <Head
+          article={{ ...videoArticle, leadAsset }}
+          logoUrl={logoUrl}
+          paidContentClassName={paidContentClassName}
+        />
+      );
+      expect(testRenderer).toMatchSnapshot();
+    });
   });
 });
