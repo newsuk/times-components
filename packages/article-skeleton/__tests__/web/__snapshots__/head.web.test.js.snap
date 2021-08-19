@@ -20,6 +20,10 @@ exports[`Head outputs AuthorByLine as author 1`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -93,6 +97,10 @@ exports[`Head outputs array of author in context schema 1`] = `
     Comment | 
     The Times
   </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
   <meta
     content="Some Headline"
     name="article:title"
@@ -168,6 +176,10 @@ exports[`Head outputs array of sameAs if there are multiple urls 1`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -242,6 +254,10 @@ exports[`Head outputs correct metadata 1`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -315,6 +331,10 @@ exports[`Head outputs correct metadata for a video article 1`] = `
     Comment | 
     The Times
   </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
   <meta
     content="Some Headline"
     name="article:title"
@@ -395,6 +415,10 @@ exports[`Head outputs correct metadata for seoDescription 1`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -469,6 +493,10 @@ exports[`Head outputs default author if there is empty array of bylines or null 
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -540,6 +568,10 @@ exports[`Head outputs default author if there is empty array of bylines or null 
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -609,6 +641,10 @@ exports[`Head outputs profile url in sameAs if there is no twitter 1`] = `
     Comment | 
     The Times
   </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
   <meta
     content="Some Headline"
     name="article:title"
@@ -684,6 +720,10 @@ exports[`Head outputs textByLine as author if there is no authorByline 1`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -757,6 +797,10 @@ exports[`Head outputs video schema for a video article 1`] = `
     Comment | 
     The Times
   </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
   <meta
     content="Some Headline"
     name="article:title"

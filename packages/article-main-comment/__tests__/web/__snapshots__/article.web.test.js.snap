@@ -24,6 +24,10 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         The Times
       </title>
       <meta
+        content="max-image-preview:large"
+        name="robots"
+      />
+      <meta
         content="Some Short Headline"
         name="article:title"
       />
@@ -282,6 +286,10 @@ exports[`4. an article with ads 1`] = `
         
         The Times
       </title>
+      <meta
+        content="max-image-preview:large"
+        name="robots"
+      />
       <meta
         content="Some Headline"
         name="article:title"
