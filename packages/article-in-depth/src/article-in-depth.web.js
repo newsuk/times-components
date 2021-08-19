@@ -76,6 +76,7 @@ class ArticlePage extends Component {
       spotAccountId,
       isPreview,
       additionalRelatedArticlesFlag,
+      inlineRelatedArticlesFlag,
       algoliaSearchKeys,
       latestFromSectionFlag,
       latestFromSection,
@@ -97,6 +98,7 @@ class ArticlePage extends Component {
         spotAccountId={spotAccountId}
         isPreview={isPreview}
         additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
+        inlineRelatedArticlesFlag={inlineRelatedArticlesFlag}
         algoliaSearchKeys={algoliaSearchKeys}
         latestFromSectionFlag={latestFromSectionFlag}
         latestFromSection={latestFromSection}
