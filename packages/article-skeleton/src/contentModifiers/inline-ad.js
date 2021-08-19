@@ -11,7 +11,7 @@ const insertInlineAd = children => {
   const paywallParagraphs = paywallChildren
     .map((item, index) => ({ ...item, index }))
     .filter(item => item.name === "paragraph");
-  const paraPostition = [7, 9, 10];
+  const paraPostition = [13, 20, 27];
 
   paraPostition.map((item, i) => {
     // checks if nativeAd only renders once
