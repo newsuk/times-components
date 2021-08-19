@@ -98,24 +98,32 @@ const renderers = ({
   ...coreRenderers,
   ad(key) {
     return (
-      <InlineAd slotName="ad-article-inline" />
+      <InlineAdWrapper className="hidden">
+        <AdContainer key={key} slotName="inline-ad" />
+      </InlineAdWrapper>
     );
   },
   inlineAd1(key) {
     return (
-      <InlineAd slotName="ad-article-inline-1" />
+      <InlineAdWrapper className="hidden">
+        <AdContainer key={key} slotName="inlineAd1" />
+      </InlineAdWrapper>
     );
   },
   inlineAd2(key) {
     return (
-      <InlineAd key={key} slotName="ad-article-inline-2" />
+      <InlineAdWrapper className="hidden">
+        <AdContainer key={key} slotName="inlineAd2" />
+      </InlineAdWrapper>
     );
   },
-  // inlineAd3(key) {
-  //   return (
-  //     <InlineAd key={key} slotName="ad-article-inline-3" />
-  //   );
-  // },
+  inlineAd3(key) {
+    return (
+      <InlineAdWrapper className="hidden">
+        <AdContainer key={key} slotName="inlineAd3" />
+      </InlineAdWrapper>
+    );
+  },
   dropCap(key, attrs, children) {
     return (
       <Context.Consumer key={key}>
