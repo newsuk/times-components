@@ -30,10 +30,12 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     paidContentClassName,
     isPreview,
     additionalRelatedArticlesFlag,
+    inlineRelatedArticlesFlag,
     algoliaSearchKeys,
     latestFromSectionFlag,
     latestFromSection,
-    olympicsKeys
+    olympicsKeys,
+    getFallbackThumbnailUrl169
   } = data;
 
   return React.createElement(
@@ -90,10 +92,12 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               paidContentClassName,
               isPreview,
               additionalRelatedArticlesFlag,
+              inlineRelatedArticlesFlag,
               algoliaSearchKeys,
               latestFromSectionFlag,
               latestFromSection,
-              olympicsKeys
+              olympicsKeys,
+              getFallbackThumbnailUrl169
             })
           );
         }

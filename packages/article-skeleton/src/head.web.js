@@ -104,7 +104,28 @@ const getThumbnailUrlFromImage = article => {
   return get(article.leadAsset, "crop169.url", null);
 };
 
-function Head({ article, logoUrl, paidContentClassName }) {
+const getThumbnailUrl = article => {
+  const { hasVideo, leadAsset } = article;
+  const thumbnailUrl = hasVideo
+    ? getVideoLeadAssetUrl(article)
+    : getThumbnailUrlFromImage(article);
+
+  if (thumbnailUrl) return thumbnailUrl;
+
+  if (!leadAsset) return null;
+
+  const { crop32, crop1251, crop11, crop45, crop23, crop2251 } =
+    leadAsset && leadAsset.posterImage ? leadAsset.posterImage : leadAsset;
+  const crop = crop32 || crop1251 || crop11 || crop45 || crop23 || crop2251;
+  return crop ? crop.url : "";
+};
+
+function Head({
+  article,
+  logoUrl,
+  paidContentClassName,
+  getFallbackThumbnailUrl169
+}) {
   const {
     descriptionMarkup,
     headline,
@@ -126,20 +147,28 @@ function Head({ article, logoUrl, paidContentClassName }) {
       ? renderTreeAsText({ children: descriptionMarkup })
       : null);
   const sectionname = getSectionName(article);
-  const leadassetUrl = appendToImageURL(
-    getArticleLeadAssetUrl(article),
-    "resize",
-    685
-  );
+  const leadassetUrl =
+    appendToImageURL(getArticleLeadAssetUrl(article), "resize", 685) ||
+    getThumbnailUrl(article);
   const authors = getAuthorSchema(article);
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline || "";
   const datePublished = new Date(publishedTime).toISOString();
   const dateModified = updatedTime || datePublished;
-  const thumbnailUrl = hasVideo
-    ? getVideoLeadAssetUrl(article)
-    : getThumbnailUrlFromImage(article);
+  const thumbnailUrl =
+    getThumbnailUrl(article) ||
+    (getFallbackThumbnailUrl169 ? getFallbackThumbnailUrl169() : null);
 
+  const defaultAuthorSchema = {
+    "@type": "Organization",
+    name: "The Times"
+  };
+  const textByLineAuthorSchema = authorName
+    ? { "@type": "Person", name: authorName }
+    : null;
+  const authorSchema =
+    (authors && authors.length ? authors : textByLineAuthorSchema) ||
+    defaultAuthorSchema;
   const jsonLD = {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
@@ -169,12 +198,9 @@ function Head({ article, logoUrl, paidContentClassName }) {
       caption
     },
     thumbnailUrl,
-    dateModified
+    dateModified,
+    author: authorSchema
   };
-
-  if (authors && authors.length) {
-    Object.assign(jsonLD, { author: authors });
-  }
 
   const videoJsonLD = hasVideo
     ? {
@@ -247,7 +273,8 @@ Head.propTypes = {
     tiles: PropTypes.array
   }).isRequired,
   logoUrl: PropTypes.string.isRequired,
-  paidContentClassName: PropTypes.string.isRequired
+  paidContentClassName: PropTypes.string.isRequired,
+  getFallbackThumbnailUrl169: PropTypes.func.isRequired
 };
 
 export default Head;

@@ -104,6 +104,11 @@ const renderArticleSkeleton = ({
   const topics = boolean("Topics?", true);
   const header = boolean("Header?", false);
   const isPreview = boolean("Preview?", false);
+  const inlineRelatedArticlesFlag = boolean(
+    "Inline Related Articles",
+    false,
+    "User State"
+  );
 
   const config = {
     commentsEnabled: commentsEnabled ? undefined : false,
@@ -137,6 +142,8 @@ const renderArticleSkeleton = ({
           data={data}
           Header={showHeader}
           isPreview={isPreview}
+          olympicsKeys={endpoint}
+          inlineRelatedArticlesFlag={inlineRelatedArticlesFlag}
           onAuthorPress={preventDefaultedAction(decorateAction)(
             "onAuthorPress"
           )}
@@ -156,7 +163,6 @@ const renderArticleSkeleton = ({
           )}
           onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
           onViewableItemsChanged={() => null}
-          olympicsKeys={endpoint}
         />
       </ContextProviderWithDefaults>
     </MockBookmarksProvider>

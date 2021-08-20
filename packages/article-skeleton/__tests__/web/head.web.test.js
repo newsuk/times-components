@@ -649,4 +649,50 @@ describe("Head", () => {
     );
     expect(testRenderer).toMatchSnapshot();
   });
+
+  it("outputs video schema for a video article", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={videoArticle}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  const ratios = [
+    { ratio: "1:1", crop: "crop11" },
+    { ratio: "2:3", crop: "crop23" },
+    { ratio: "3:2", crop: "crop32" },
+    { ratio: "16:9", crop: "crop169" },
+    { ratio: "4:5", crop: "crop45" },
+    { ratio: "1.25:1", crop: "crop1251" }
+  ];
+
+  ratios.forEach(({ crop, ratio }) => {
+    const leadAsset = {
+      __typename: "Video",
+      caption: "Some Caption",
+      credits: "Some Credits",
+      [crop]: {
+        __typename: "Crop",
+        ratio,
+        url: `https://${crop}.io`
+      },
+      id: "id-123",
+      title: "Some Title"
+    };
+
+    it(`outputs thumbnail urls for a article for ${ratio} ratio`, () => {
+      const testRenderer = TestRenderer.create(
+        <Head
+          article={{ ...videoArticle, leadAsset }}
+          logoUrl={logoUrl}
+          paidContentClassName={paidContentClassName}
+        />
+      );
+      expect(testRenderer).toMatchSnapshot();
+    });
+  });
 });

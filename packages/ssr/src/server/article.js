@@ -21,10 +21,12 @@ module.exports = (
     paidContentClassName,
     isPreview,
     additionalRelatedArticlesFlag,
+    inlineRelatedArticlesFlag,
     algoliaSearchKeys,
     latestFromSectionFlag,
     latestFromSection,
-    olympicsKeys
+    olympicsKeys,
+    getFallbackThumbnailUrl169
   },
   userState
 ) => {
@@ -67,12 +69,14 @@ module.exports = (
       logoUrl,
       makeArticleUrl,
       makeTopicUrl,
+      getFallbackThumbnailUrl169,
       navigationMode,
       spotAccountId,
       userState,
       paidContentClassName,
       isPreview,
       additionalRelatedArticlesFlag,
+      inlineRelatedArticlesFlag,
       algoliaSearchKeys,
       latestFromSectionFlag,
       latestFromSection,

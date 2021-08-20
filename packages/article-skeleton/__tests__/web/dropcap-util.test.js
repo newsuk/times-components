@@ -1,5 +1,5 @@
-import insertDropcapIntoAST from "../../src/dropcap-util";
-import { isQuote } from "../../src/dropcap-util-common";
+import insertDropcapIntoAST from "../../src/contentModifiers/dropcap-util";
+import { isQuote } from "../../src/contentModifiers/dropcap-util-common";
 
 const child = {
   attributes: [],
@@ -466,53 +466,53 @@ const childWithKeyFactsAndInteractiveDropCapped = [
 describe("insertDropcapIntoAST", () => {
   it("should insert dropcap if it belongs to the right template", () => {
     const template = "indepth";
-    expect(insertDropcapIntoAST([child], template)).toEqual(childWithDropCap);
+    expect(insertDropcapIntoAST(template)([child])).toEqual(childWithDropCap);
   });
 
   it("should insert dropcap if it belongs to the right template with markup", () => {
     const template = "indepth";
-    expect(insertDropcapIntoAST([childWithMarkup], template)).toEqual(
+    expect(insertDropcapIntoAST(template)([childWithMarkup])).toEqual(
       childWithDropCapAndMarkup
     );
   });
 
   it("should NOT insert dropcap if it belongs to the wrong template", () => {
     const template = "mainstandard";
-    expect(insertDropcapIntoAST([child], template)).toEqual([child]);
+    expect(insertDropcapIntoAST(template)([child])).toEqual([child]);
   });
 
   it("should NOT insert dropcap if it belongs to the right template but disableDropcap is true", () => {
     const template = "indepth";
     const isDropcapDisabled = true;
-    expect(insertDropcapIntoAST([child], template, isDropcapDisabled)).toEqual([
+    expect(insertDropcapIntoAST(template, isDropcapDisabled)([child])).toEqual([
       child
     ]);
   });
 
   it("should insert dropcap with quotation mark and first letter", () => {
     const template = "maincomment";
-    expect(insertDropcapIntoAST([childWithQuote], template)).toEqual([
+    expect(insertDropcapIntoAST(template)([childWithQuote])).toEqual([
       childWithQuoteDropCap
     ]);
   });
 
   it("should insert dropcap with quotation mark and first letter with markup", () => {
     const template = "maincomment";
-    expect(insertDropcapIntoAST([childWithMarkupAndQuote], template)).toEqual([
+    expect(insertDropcapIntoAST(template)([childWithMarkupAndQuote])).toEqual([
       childWithDropCapAndMarkupAndQuote
     ]);
   });
 
   it("should insert dropcap to the first paragraph when the article start with keyfacts", () => {
     const template = "indepth";
-    expect(insertDropcapIntoAST(childWithKeyFacts, template)).toEqual(
+    expect(insertDropcapIntoAST(template)(childWithKeyFacts)).toEqual(
       childWithKeyFactsDropCapped
     );
   });
   it("should insert dropcap to the first paragraph when the article start with has keyfacts and interactive", () => {
     const template = "indepth";
     expect(
-      insertDropcapIntoAST(childWithKeyFactsAndInteractive, template)
+      insertDropcapIntoAST(template)(childWithKeyFactsAndInteractive)
     ).toEqual(childWithKeyFactsAndInteractiveDropCapped);
   });
 });
