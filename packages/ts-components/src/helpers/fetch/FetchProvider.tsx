@@ -2,8 +2,9 @@ import fetch from 'isomorphic-unfetch';
 import React, { createContext, useState, useEffect, useContext } from 'react';
 
 type FetchProviderProps = {
-  url: string;
+  url?: string;
   options?: { [key: string]: any };
+  previewData?: any;
   children: React.ReactNode;
 };
 
@@ -20,27 +21,34 @@ const FetchProviderContext = createContext<FetchContext<unknown> | undefined>(
 export const FetchProvider: React.FC<FetchProviderProps> = ({
   url,
   options,
+  previewData,
   children
 }) => {
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(!previewData);
   const [error, setError] = useState<string | undefined>();
-  const [data, setData] = useState<any | undefined>();
+  const [data, setData] = useState<any | undefined>(previewData);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(url, options);
-        const json = await response.json();
+        if (url) {
+          const response = await fetch(url, options);
+          const json = await response.json();
 
-        setData(json);
-        setLoading(false);
+          setData(json);
+          setLoading(false);
+        } else {
+          throw new Error('must provide a Fetch url');
+        }
       } catch (error) {
         setError(error);
         setLoading(false);
       }
     };
 
-    fetchData();
+    if (!previewData) {
+      fetchData();
+    }
   }, []);
 
   return (

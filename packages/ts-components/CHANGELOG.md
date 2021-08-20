@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.30...@times-components/ts-components@1.12.0) (2021-08-20)
+
+
+### Features
+
+* **TE-000:** add previewData to FetchProvider ([#2772](https://github.com/newsuk/times-components/issues/2772)) ([8723f74](https://github.com/newsuk/times-components/commit/8723f7402856b14e49da9660e7d80071a4955a3c))
+
+
+
+
+
 ## [1.11.30](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.29...@times-components/ts-components@1.11.30) (2021-08-11)
 
 **Note:** Version bump only for package @times-components/ts-components
