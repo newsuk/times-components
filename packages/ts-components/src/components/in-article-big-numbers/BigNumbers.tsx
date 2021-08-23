@@ -51,16 +51,16 @@ export const BigNumbers: React.FC<{
     return null;
   }
 
-  const isStandard = (infoCardSize: Layout) => {
-    return infoCardSize === Layout.Standard;
+  const isStandard = (bigNumbersSize: Layout) => {
+    return bigNumbersSize === Layout.Standard;
   };
 
-  const isWide = (infoCardSize: Layout) => {
-    return infoCardSize === Layout.Wide;
+  const isWide = (bigNumbersSize: Layout) => {
+    return bigNumbersSize === Layout.Wide;
   };
 
   const { headline, label, size } = data.fields;
-  const infoCardData = data.body.data;
+  const bigNumbersData = data.body.data;
   const [showAll, setShowAll] = useState(false);
   const handleShowAll = () => {
     setShowAll(!showAll);
@@ -92,7 +92,7 @@ export const BigNumbers: React.FC<{
           showShowAll={showShowAll}
         >
           <List>
-            {infoCardData.map((row: BigNumbersData, index: number) => (
+            {bigNumbersData.map((row: BigNumbersData, index: number) => (
               <ListItem key={index} isStandard={isStandard(size)}>
                 <NumberContainer sectionColour={sectionColour}>
                   {row.data.number}

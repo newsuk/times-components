@@ -8,7 +8,6 @@ storiesOf('Typescript Component/In Article/Big Numbers', module)
   .addDecorator((storyFn: () => React.ReactNode) => (
     <ArticleHarness>{storyFn()}</ArticleHarness>
   ))
-
   .add('Standard without a headline', () => (
     <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44335">
       <BigNumbers sectionColour="#636C17" />
