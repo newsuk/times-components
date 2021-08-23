@@ -185,9 +185,9 @@ const renderers = ({
               <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
                 <BigNumbers sectionColour={theme.sectionColour} />
               </FetchProvider>
-          )}
-        </Context.Consumer>
-      );
+            )}
+          </Context.Consumer>
+        );
 
       case "gallery-carousel":
         return (
