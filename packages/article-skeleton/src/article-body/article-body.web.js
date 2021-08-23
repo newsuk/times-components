@@ -178,16 +178,16 @@ const renderers = ({
           </Context.Consumer>
         );
 
-        case "in-article-big-numbers":
-          return (
-            <Context.Consumer key={key}>
-              {({ theme }) => (
-                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                  <BigNumbers sectionColour={theme.sectionColour} />
-                </FetchProvider>
-              )}
-            </Context.Consumer>
-        );
+      case "in-article-big-numbers":
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <BigNumbers sectionColour={theme.sectionColour} />
+              </FetchProvider>
+          )}
+        </Context.Consumer>
+      );
 
       case "gallery-carousel":
         return (
