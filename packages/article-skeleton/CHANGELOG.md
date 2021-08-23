@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.51.41](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.51.40...@times-components/article-skeleton@1.51.41) (2021-08-23)
+
+
+### Bug Fixes
+
+* **TSEO-27:** updated video schema description ([#2770](https://github.com/newsuk/times-components/issues/2770)) ([64c5706](https://github.com/newsuk/times-components/commit/64c5706aa48e17a7a787400e0d4a075bcbbb7d83))
+
+
+
+
+
 ## [1.51.40](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.51.39...@times-components/article-skeleton@1.51.40) (2021-08-20)
 
 **Note:** Version bump only for package @times-components/article-skeleton
