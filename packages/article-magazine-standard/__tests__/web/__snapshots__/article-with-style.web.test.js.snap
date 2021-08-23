@@ -123,6 +123,13 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
+.c25.hidden {
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -622,8 +629,9 @@ exports[`full article with style 1`] = `
       <meta />
       <meta />
       <meta />
+      <meta />
       <script>
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Camilla Long, Environment Editor"}}
+        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Camilla Long, Environment Editor"}}
       </script>
     </Helmet>
     <div
@@ -787,7 +795,7 @@ exports[`full article with style 1`] = `
           </figure>
         </div>
         <div
-          className="c25"
+          className="hidden c25"
         >
           <AdContainer />
         </div>
@@ -937,6 +945,13 @@ exports[`full article with style in the culture magazine 1`] = `
   padding: 10px 0;
   border-top: 1px solid rgb(219,219,219);
   border-bottom: 1px solid rgb(219,219,219);
+}
+
+.c25.hidden {
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
 }
 
 .c2 {
@@ -1442,8 +1457,9 @@ exports[`full article with style in the culture magazine 1`] = `
       <meta />
       <meta />
       <meta />
+      <meta />
       <script>
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Camilla Long, Environment Editor"}}
+        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Camilla Long, Environment Editor"}}
       </script>
     </Helmet>
     <div
@@ -1607,7 +1623,7 @@ exports[`full article with style in the culture magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c25"
+          className="hidden c25"
         >
           <AdContainer />
         </div>
@@ -1757,6 +1773,13 @@ exports[`full article with style in the style magazine 1`] = `
   padding: 10px 0;
   border-top: 1px solid rgb(219,219,219);
   border-bottom: 1px solid rgb(219,219,219);
+}
+
+.c25.hidden {
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
 }
 
 .c2 {
@@ -2263,8 +2286,9 @@ exports[`full article with style in the style magazine 1`] = `
       <meta />
       <meta />
       <meta />
+      <meta />
       <script>
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Camilla Long, Environment Editor"}}
+        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Camilla Long, Environment Editor"}}
       </script>
     </Helmet>
     <div
@@ -2428,7 +2452,7 @@ exports[`full article with style in the style magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c25"
+          className="hidden c25"
         >
           <AdContainer />
         </div>
@@ -2578,6 +2602,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding: 10px 0;
   border-top: 1px solid rgb(219,219,219);
   border-bottom: 1px solid rgb(219,219,219);
+}
+
+.c25.hidden {
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
 }
 
 .c2 {
@@ -3083,8 +3114,9 @@ exports[`full article with style in the sunday times magazine 1`] = `
       <meta />
       <meta />
       <meta />
+      <meta />
       <script>
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Camilla Long, Environment Editor"}}
+        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Camilla Long, Environment Editor"}}
       </script>
     </Helmet>
     <div
@@ -3248,7 +3280,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c25"
+          className="hidden c25"
         >
           <AdContainer />
         </div>

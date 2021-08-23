@@ -88,7 +88,8 @@ class ArticlePage extends Component {
       algoliaSearchKeys,
       latestFromSectionFlag,
       latestFromSection,
-      olympicsKeys
+      olympicsKeys,
+      getFallbackThumbnailUrl169
     } = this.props;
 
     if (error || isLoading) {
@@ -101,6 +102,7 @@ class ArticlePage extends Component {
           data={article}
           Header={this.renderHeader}
           logoUrl={logoUrl}
+          getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
           receiveChildList={receiveChildList}
           navigationMode={navigationMode}
           spotAccountId={spotAccountId}

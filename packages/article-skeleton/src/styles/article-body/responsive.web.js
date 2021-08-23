@@ -301,6 +301,12 @@ export const InlineAdWrapper = styled.div`
   padding: 10px 0;
   border-top: 1px solid rgb(219, 219, 219);
   border-bottom: 1px solid rgb(219, 219, 219);
+  &.hidden {
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+  }
   @media (min-width: 768px) {
     min-height: 90px;
   }
