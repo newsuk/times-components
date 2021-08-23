@@ -22,32 +22,16 @@ import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
-import { DeckData } from '../../helpers/fetch/types';
-import { Quote } from './Quote';
-
-export type InfoCardData = {
-  type: string;
-  data: {
-    image?: string;
-    subtitle?: string;
-    copy: string;
-    author: string;
-  };
-};
-type InfoCardFields = { headline: string; label: string; size: Layout };
-
-type InfoCardDeckData = DeckData<InfoCardFields, InfoCardData>;
+import { QuoteIcon } from './Quote';
+import { InfoCardData } from './types';
+import { Layout } from './types';
+import { InfoCardDeckData } from './types';
 
 export type GalleryCarouselProps = {
   sectionColour: string;
   initialIndex?: number;
-  activeQuotes?: boolean
+  enableQuotes?: boolean
 };
-
-export enum Layout {
-  Standard = '4043',
-  Wide = '4042'
-}
 
 let breakPointsCard = new Array();
 const { small, medium, wide } = breakpoints;
@@ -114,7 +98,7 @@ const CustomPagination: React.FC<{
 export const InfoCard: React.FC<GalleryCarouselProps> = ({
   sectionColour,
   initialIndex = 0,
-  activeQuotes = false,
+  enableQuotes: activeQuotes = false,
 }) => {
   const { loading, error, data } = useFetch<InfoCardDeckData>();
 
@@ -279,7 +263,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                   <SubHeading>{row.data.subtitle}</SubHeading>
                 )}
                 <QuoteContainer disabled={!activeQuotes}>
-                  <Quote />
+                  <QuoteIcon />
                 </QuoteContainer>
                 {row.data.copy && (
                   <BodyCopy
