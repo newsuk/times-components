@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.30.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.29.39...@times-components/article-main-comment@2.30.0) (2021-08-23)
+
+
+### Features
+
+* **SCB-1193:** add aditional in article ad slots to article page logged in users ([#2758](https://github.com/newsuk/times-components/issues/2758)) ([481ff7f](https://github.com/newsuk/times-components/commit/481ff7f325b2bf0a216da583bf0d1c5871ef85f5))
+
+
+
+
+
 ## [2.29.39](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.29.38...@times-components/article-main-comment@2.29.39) (2021-08-23)
 
 
