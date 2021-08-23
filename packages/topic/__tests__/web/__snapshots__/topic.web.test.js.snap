@@ -6,11 +6,10 @@ exports[`2. a loading state 1`] = `
 <topicArticlesProvider>
   <Helmet>
     <title>
-      
        | The Times & The Sunday Times
     </title>
     <meta
-      content="Discover expert  articles from The Times and The Sunday Times."
+      content="Discover expert  articles from The Times and The Sunday Times. Page 1 of 1"
       name="description"
     />
     <link
@@ -48,15 +47,14 @@ exports[`3. an article list 1`] = `
 <topicArticlesProvider>
   <Helmet>
     <title>
-      Test Name
-       | The Times & The Sunday Times
+      Test Name | The Times & The Sunday Times | Page 2
     </title>
     <meta
-      content="Test italic bold text."
+      content="Test italic bold text. Page 2 of 1"
       name="description"
     />
     <link
-      href="/topic/some-slug"
+      href="/topic/some-slug?page=2"
       rel="canonical"
     />
   </Helmet>
@@ -134,15 +132,14 @@ exports[`4. fetches more articles 1`] = `
 <topicArticlesProvider>
   <Helmet>
     <title>
-      Test Name
-       | The Times & The Sunday Times
+      Test Name | The Times & The Sunday Times | Page 2
     </title>
     <meta
-      content="Test italic bold text."
+      content="Test italic bold text. Page 2 of 1"
       name="description"
     />
     <link
-      href="/topic/some-slug"
+      href="/topic/some-slug?page=2"
       rel="canonical"
     />
   </Helmet>
@@ -225,15 +222,14 @@ exports[`5. fetches more articles and falls back to previous data if no more 1`]
 <topicArticlesProvider>
   <Helmet>
     <title>
-      Test Name
-       | The Times & The Sunday Times
+      Test Name | The Times & The Sunday Times | Page 2
     </title>
     <meta
-      content="Test italic bold text."
+      content="Test italic bold text. Page 2 of 1"
       name="description"
     />
     <link
-      href="/topic/some-slug"
+      href="/topic/some-slug?page=2"
       rel="canonical"
     />
   </Helmet>
