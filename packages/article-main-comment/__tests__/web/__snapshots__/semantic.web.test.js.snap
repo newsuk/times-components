@@ -16,6 +16,10 @@ exports[`1. a full article 1`] = `
       The Times
     </title>
     <meta
+      content="max-image-preview:large"
+      name="robots"
+    />
+    <meta
       content="Some Headline"
       name="article:title"
     />

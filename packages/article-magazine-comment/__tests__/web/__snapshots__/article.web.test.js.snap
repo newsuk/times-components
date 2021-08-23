@@ -24,6 +24,10 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         The Times
       </title>
       <meta
+        content="max-image-preview:large"
+        name="robots"
+      />
+      <meta
         content="Some Short Headline"
         name="article:title"
       />
@@ -144,7 +148,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                   <img
                     alt="Some Caption"
                     src="https://crop169.io?resize=1200"
-                    srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=685 685w, https://crop169.io?resize=1200 1200w"
+                    srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=1200 685w, https://crop169.io?resize=1200 1200w"
                   />
                 </div>
               </div>
@@ -297,6 +301,10 @@ exports[`4. an article with ads 1`] = `
         The Times
       </title>
       <meta
+        content="max-image-preview:large"
+        name="robots"
+      />
+      <meta
         content="Some Headline"
         name="article:title"
       />
@@ -417,7 +425,7 @@ exports[`4. an article with ads 1`] = `
                   <img
                     alt="Some Caption"
                     src="https://crop169.io?resize=1200"
-                    srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=685 685w, https://crop169.io?resize=1200 1200w"
+                    srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=1200 685w, https://crop169.io?resize=1200 1200w"
                   />
                 </div>
               </div>
@@ -572,6 +580,10 @@ exports[`7. an article with no author 1`] = `
         The Times
       </title>
       <meta
+        content="max-image-preview:large"
+        name="robots"
+      />
+      <meta
         content="Some Headline"
         name="article:title"
       />
@@ -713,7 +725,7 @@ exports[`7. an article with no author 1`] = `
                   <img
                     alt="Some Caption"
                     src="https://crop169.io?resize=1200"
-                    srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=685 685w, https://crop169.io?resize=1200 1200w"
+                    srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=1200 685w, https://crop169.io?resize=1200 1200w"
                   />
                 </div>
               </div>

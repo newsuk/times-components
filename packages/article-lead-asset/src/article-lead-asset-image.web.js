@@ -21,7 +21,7 @@ const LeadAssetImage = ({ aspectRatio, alt, uri }) => {
         )} 320w, ${appendToImageURL(
           url,
           "resize",
-          685
+          1200
         )} 685w, ${appendToImageURL(url, "resize", 1200)} 1200w`}
       />
     </div>
