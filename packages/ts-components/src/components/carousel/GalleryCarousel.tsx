@@ -10,9 +10,9 @@ import {
   Copy,
   Credit,
   ImageTitle,
-  MobileOrLarge,
-  PlaceholderContainer
+  MobileOrLarge
 } from './styles';
+import { PlaceholderContainer } from '../common-styles';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import { CarouselDataObj } from './types';
 import { useFetch } from '../../helpers/fetch/FetchProvider';

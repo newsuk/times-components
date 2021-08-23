@@ -12,9 +12,9 @@ import {
   CarouselIndicator,
   CarouselContainer,
   StyledCarousel,
-  CardImg,
-  PlaceholderContainer
+  CardImg
 } from './styles';
+import { PlaceholderContainer } from '../common-styles';
 import { Arrow } from '../carousel/Arrow';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';

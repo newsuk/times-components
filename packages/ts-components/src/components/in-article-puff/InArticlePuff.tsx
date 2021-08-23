@@ -15,7 +15,6 @@ import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { InArticleLink } from '../in-article-link/InArticleLink';
 
 import {
-  PlaceholderContainer,
   Container,
   ImageContainer,
   ContentContainer,
@@ -23,6 +22,7 @@ import {
   Headline,
   Copy
 } from './styles';
+import { PlaceholderContainer } from '../common-styles';
 import { DeckData } from '../../helpers/fetch/types';
 
 type InArticlePuffData = {
