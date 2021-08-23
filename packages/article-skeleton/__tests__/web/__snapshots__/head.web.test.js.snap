@@ -20,6 +20,10 @@ exports[`Head outputs array of author in context schema 1`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -93,6 +97,10 @@ exports[`Head outputs array of sameAs if there are multiple urls 1`] = `
     Comment | 
     The Times
   </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
   <meta
     content="Some Headline"
     name="article:title"
@@ -168,6 +176,10 @@ exports[`Head outputs correct metadata 1`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -241,6 +253,10 @@ exports[`Head outputs correct metadata for a video article 1`] = `
     Comment | 
     The Times
   </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
   <meta
     content="Some Headline"
     name="article:title"
@@ -321,6 +337,10 @@ exports[`Head outputs correct metadata for seoDescription 1`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -395,6 +415,10 @@ exports[`Head outputs profile url in sameAs if there is no twitter 1`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -468,6 +492,10 @@ exports[`Head outputs seoDescription as video description for a video article wh
     Comment | 
     The Times
   </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
   <meta
     content="Some Headline"
     name="article:title"
@@ -548,6 +576,10 @@ exports[`Head outputs thumbnail urls for a article for 1.25:1 ratio 1`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -626,6 +658,10 @@ exports[`Head outputs thumbnail urls for a article for 1:1 ratio 1`] = `
     Comment | 
     The Times
   </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
   <meta
     content="Some Headline"
     name="article:title"
@@ -706,6 +742,10 @@ exports[`Head outputs thumbnail urls for a article for 2:3 ratio 1`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -784,6 +824,10 @@ exports[`Head outputs thumbnail urls for a article for 3:2 ratio 1`] = `
     Comment | 
     The Times
   </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
   <meta
     content="Some Headline"
     name="article:title"
@@ -864,6 +908,10 @@ exports[`Head outputs thumbnail urls for a article for 4:5 ratio 1`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -942,6 +990,10 @@ exports[`Head outputs thumbnail urls for a article for 16:9 ratio 1`] = `
     Comment | 
     The Times
   </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
   <meta
     content="Some Headline"
     name="article:title"
@@ -1022,6 +1074,10 @@ exports[`Head outputs title as video description for a video article when there 
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -1088,6 +1144,10 @@ exports[`Head outputs video schema for a video article 1`] = `
     Comment | 
     The Times
   </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
   <meta
     content="Some Headline"
     name="article:title"
@@ -1168,6 +1228,10 @@ exports[`Head outputs video schema for a video article 2`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -1247,6 +1311,10 @@ exports[`Head removes author from context schema if there is empty array of byli
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -1317,6 +1385,10 @@ exports[`Head removes author from context schema if there is empty array of byli
     Comment | 
     The Times
   </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
   <meta
     content="Some Headline"
     name="article:title"

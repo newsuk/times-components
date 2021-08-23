@@ -228,6 +228,7 @@ function Head({
               {title} | {sectionname ? `${sectionname} | ` : ""}
               {publication}
             </title>
+            <meta name="robots" content="max-image-preview:large" />
             <meta content={title} name="article:title" />
             <meta content={publication} name="article:publication" />
             {desc && <meta content={desc} name="description" />}
