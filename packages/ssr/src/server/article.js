@@ -25,7 +25,8 @@ module.exports = (
     algoliaSearchKeys,
     latestFromSectionFlag,
     latestFromSection,
-    olympicsKeys
+    olympicsKeys,
+    getFallbackThumbnailUrl169
   },
   userState
 ) => {
@@ -68,6 +69,7 @@ module.exports = (
       logoUrl,
       makeArticleUrl,
       makeTopicUrl,
+      getFallbackThumbnailUrl169,
       navigationMode,
       spotAccountId,
       userState,
