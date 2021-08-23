@@ -213,7 +213,7 @@ function Head({
         description:
           Array.isArray(descriptionMarkup) && descriptionMarkup.length
             ? renderTreeAsText({ children: descriptionMarkup })
-            : null,
+            : seoDescription || leadAsset.title || title,
         contentUrl: url
       }
     : null;
