@@ -695,4 +695,30 @@ describe("Head", () => {
       expect(testRenderer).toMatchSnapshot();
     });
   });
+
+  it("outputs title as video description for a video article when there is no summary and seoDescription", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{ ...videoArticle, descriptionMarkup: null }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("outputs seoDescription as video description for a video article when there is no summary", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...videoArticle,
+          descriptionMarkup: null,
+          seoDescription: "some seoDescription"
+        }}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
 });
