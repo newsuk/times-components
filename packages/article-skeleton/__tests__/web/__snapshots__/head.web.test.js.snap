@@ -337,6 +337,10 @@ exports[`Head outputs correct metadata for seoDescription 1`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -411,6 +415,10 @@ exports[`Head outputs profile url in sameAs if there is no twitter 1`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -484,6 +492,10 @@ exports[`Head outputs seoDescription as video description for a video article wh
     Comment | 
     The Times
   </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
   <meta
     content="Some Headline"
     name="article:title"
@@ -1062,6 +1074,10 @@ exports[`Head outputs title as video description for a video article when there 
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -1212,6 +1228,10 @@ exports[`Head outputs video schema for a video article 2`] = `
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -1291,6 +1311,10 @@ exports[`Head removes author from context schema if there is empty array of byli
     The Times
   </title>
   <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="article:title"
   />
@@ -1361,6 +1385,10 @@ exports[`Head removes author from context schema if there is empty array of byli
     Comment | 
     The Times
   </title>
+  <meta
+    content="max-image-preview:large"
+    name="robots"
+  />
   <meta
     content="Some Headline"
     name="article:title"
