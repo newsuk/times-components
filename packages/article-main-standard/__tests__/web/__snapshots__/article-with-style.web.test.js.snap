@@ -123,6 +123,13 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
+.c27.hidden {
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
 .c10 {
   border: solid #DBDBDB;
   border-width: 1px 0;
@@ -883,7 +890,7 @@ exports[`full article with style 1`] = `
             </figure>
           </div>
           <div
-            className="c27"
+            className="hidden c27"
           >
             <AdContainer />
           </div>

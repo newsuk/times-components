@@ -123,6 +123,13 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
+.c26.hidden {
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
 .c9 {
   border: solid #DBDBDB;
   border-width: 1px 0;
@@ -857,7 +864,7 @@ exports[`full article with style 1`] = `
           </figure>
         </div>
         <div
-          className="c26"
+          className="hidden c26"
         >
           <AdContainer />
         </div>
@@ -1007,6 +1014,13 @@ exports[`full article with style in the culture magazine 1`] = `
   padding: 10px 0;
   border-top: 1px solid rgb(219,219,219);
   border-bottom: 1px solid rgb(219,219,219);
+}
+
+.c26.hidden {
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
 }
 
 .c9 {
@@ -1744,7 +1758,7 @@ exports[`full article with style in the culture magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c26"
+          className="hidden c26"
         >
           <AdContainer />
         </div>
@@ -1894,6 +1908,13 @@ exports[`full article with style in the style magazine 1`] = `
   padding: 10px 0;
   border-top: 1px solid rgb(219,219,219);
   border-bottom: 1px solid rgb(219,219,219);
+}
+
+.c26.hidden {
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
 }
 
 .c9 {
@@ -2632,7 +2653,7 @@ exports[`full article with style in the style magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c26"
+          className="hidden c26"
         >
           <AdContainer />
         </div>
@@ -2782,6 +2803,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding: 10px 0;
   border-top: 1px solid rgb(219,219,219);
   border-bottom: 1px solid rgb(219,219,219);
+}
+
+.c26.hidden {
+  min-height: auto;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
 }
 
 .c9 {
@@ -3519,7 +3547,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c26"
+          className="hidden c26"
         >
           <AdContainer />
         </div>
