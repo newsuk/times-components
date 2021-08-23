@@ -13,8 +13,8 @@ import {
   ListItem,
   NumberContainer,
   Copy,
-  ReadMoreContainer,
-  ReadMoreButton
+  ShowAllContainer,
+  ShowAllButton
 } from './styles';
 
 import { DeckData } from '../../helpers/fetch/types';
@@ -61,18 +61,18 @@ export const BigNumbers: React.FC<{
 
   const { headline, label, size } = data.fields;
   const infoCardData = data.body.data;
-  const [readMore, setReadMore] = useState(false);
-  const handleReadMore = () => {
-    setReadMore(!readMore);
+  const [showAll, setShowAll] = useState(false);
+  const handleShowAll = () => {
+    setShowAll(!showAll);
   };
 
-  const readMoreRef = useRef<HTMLDivElement>(null);
-  const [showReadMore, setShowReadMore] = useState(false);
-  const maxHeight = 200;
+  const showAllRef = useRef<HTMLDivElement>(null);
+  const [showShowAll, setShowShowAll] = useState(false);
+  const maxHeight = isWide(size) ? 250 : 350;
   useEffect(() => {
-    const listContainer = readMoreRef.current;
+    const listContainer = showAllRef.current;
     if (listContainer) {
-      setShowReadMore(listContainer.clientHeight > maxHeight);
+      setShowShowAll(listContainer.clientHeight > maxHeight);
     }
   }, []);
 
@@ -84,12 +84,12 @@ export const BigNumbers: React.FC<{
     >
       <ContentContainer>
         <Label sectionColour={sectionColour}>{label}</Label>
-        <Headline>{headline}</Headline>
+        {headline && <Headline>{headline}</Headline>}
         <ListContainer
-          ref={readMoreRef}
-          readMore={readMore}
+          ref={showAllRef}
+          showAll={showAll}
           maxHeight={maxHeight}
-          showReadMore={showReadMore}
+          showShowAll={showShowAll}
         >
           <List>
             {infoCardData.map((row: BigNumbersData, index: number) => (
@@ -107,11 +107,11 @@ export const BigNumbers: React.FC<{
           </List>
         </ListContainer>
       </ContentContainer>
-      <ReadMoreContainer readMore={readMore} showReadMore={showReadMore}>
-        <ReadMoreButton onClick={handleReadMore}>
-          {readMore ? 'Collapse' : 'Show all'}
-        </ReadMoreButton>
-      </ReadMoreContainer>
+      <ShowAllContainer showAll={showAll} showShowAll={showShowAll}>
+        <ShowAllButton onClick={handleShowAll}>
+          {showAll ? 'Collapse' : 'Show all'}
+        </ShowAllButton>
+      </ShowAllContainer>
     </Container>
   );
 };

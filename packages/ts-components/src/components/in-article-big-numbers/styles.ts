@@ -56,14 +56,8 @@ export const Label = styled.div<{ sectionColour: string }>`
   line-height: 16px;
   text-transform: uppercase;
   color: ${({ sectionColour }) => `${sectionColour}`};
-  padding-bottom: 10px;
+  padding-bottom: 2px;
   letter-spacing: 1px;
-  @media (min-width: ${breakpoints.medium}px) {
-    padding-bottom: 6px;
-  }
-  @media (min-width: ${breakpoints.wide}px) {
-    padding-bottom: 10px;
-  }
 `;
 
 export const Headline = styled.div`
@@ -71,26 +65,25 @@ export const Headline = styled.div`
   font-size: 24px;
   line-height: 24px;
   color: ${colours.functional.brandColour};
-  margin-bottom: 5px;
+  margin: 3px 0;
   @media (min-width: ${breakpoints.medium}px) {
     font-size: 32px;
     line-height: 32px;
   }
 `;
 
-export const ReadMoreContainer = styled.div<{
-  readMore: boolean;
-  showReadMore: boolean;
+export const ShowAllContainer = styled.div<{
+  showAll: boolean;
+  showShowAll: boolean;
 }>`
   display: flex;
   border-top: 1px solid ${colours.functional.keyline};
-  margin-top: ${({ readMore }) => (readMore ? '0' : '15px')};
   padding: 5px;
   justify-content: center;
-  display: ${({ showReadMore }) => (showReadMore ? 'flex' : 'none')};
+  display: ${({ showShowAll }) => (showShowAll ? 'flex' : 'none')};
 `;
 
-export const ReadMoreButton = styled.button`
+export const ShowAllButton = styled.button`
   font-size: 12px;
   font-family: ${fonts.supporting};
   font-weight: 500;
@@ -107,16 +100,16 @@ export const ReadMoreButton = styled.button`
 `;
 
 export const ListContainer = styled.div<{
-  readMore: boolean;
+  showAll: boolean;
   maxHeight: number;
-  showReadMore: boolean;
+  showShowAll: boolean;
 }>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  max-height: ${({ readMore, maxHeight, showReadMore }) =>
-    !readMore && showReadMore ? maxHeight + 'px' : 'none'};
+  max-height: ${({ showAll, maxHeight, showShowAll }) =>
+    !showAll && showShowAll ? maxHeight + 'px' : 'none'};
 `;
 
 export const List = styled.ul`
@@ -132,15 +125,13 @@ export const List = styled.ul`
 export const ListItem = styled.li<{
   isStandard?: boolean;
 }>`
-  flex: 1 0 ${({ isStandard }) => (isStandard ? '50%' : '33%')};
+  flex: 1 0 50%;
   padding: 16px 16px 16px 0;
   border-width: 0 1px 1px 0;
   border-style: solid;
   border-color: ${colours.functional.keyline};
   padding-left: 16px;
-  /* &:nth-child(even){
-    padding-left: 16px;
-  } */
+
   &:empty {
     height: 0;
     border: none;
@@ -149,12 +140,17 @@ export const ListItem = styled.li<{
   :after {
     box-sizing: border-box;
   }
+
+  @media (min-width: ${breakpoints.medium}px) {
+    flex: 1 0 ${({ isStandard }) => (isStandard ? '50%' : '33%')};
+  }
 `;
 
 export const NumberContainer = styled.div<{ sectionColour: string }>`
   font-family: ${fonts.headline};
   font-size: 32px;
   line-height: 32px;
+  margin-bottom: 4px;
   color: ${({ sectionColour }) => `${sectionColour}`};
   @media (min-width: ${breakpoints.medium}px) {
     font-size: 50px;
