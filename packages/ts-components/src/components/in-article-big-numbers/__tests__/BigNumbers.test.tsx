@@ -91,17 +91,13 @@ describe('InfoCardBulletPoints', () => {
 
   it('should render the initial loading state correctly', () => {
     (useFetch as jest.Mock).mockReturnValue({ loading: true });
-    const { asFragment } = render(
-      <BigNumbers sectionColour="#636C17" />
-    );
+    const { asFragment } = render(<BigNumbers sectionColour="#636C17" />);
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('should render the initial read more state correctly', () => {
     (useFetch as jest.Mock).mockReturnValue({ readMore: true });
-    const { asFragment } = render(
-      <BigNumbers sectionColour="#636C17" />
-    );
+    const { asFragment } = render(<BigNumbers sectionColour="#636C17" />);
     expect(asFragment()).toMatchSnapshot();
   });
 

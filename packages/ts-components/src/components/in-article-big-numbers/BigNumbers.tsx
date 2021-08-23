@@ -11,7 +11,7 @@ import {
   ListContainer,
   List,
   ListItem,
-  Value,
+  NumberContainer,
   Copy,
   ReadMoreContainer,
   ReadMoreButton
@@ -22,9 +22,15 @@ import { DeckData } from '../../helpers/fetch/types';
 type BigNumbersData = {
   type: string;
   data: {
+    number: number;
     copy: string;
   };
 };
+
+export enum Layout {
+  Standard = '4043',
+  Wide = '4042'
+}
 
 type BigNumbersDeckData = DeckData<never, BigNumbersData>;
 
@@ -45,7 +51,15 @@ export const BigNumbers: React.FC<{
     return null;
   }
 
-  const { headline, label } = data.fields;
+  const isStandard = (infoCardSize: Layout) => {
+    return infoCardSize === Layout.Standard;
+  };
+
+  const isWide = (infoCardSize: Layout) => {
+    return infoCardSize === Layout.Wide;
+  };
+
+  const { headline, label, size } = data.fields;
   const infoCardData = data.body.data;
   const [readMore, setReadMore] = useState(false);
   const handleReadMore = () => {
@@ -54,7 +68,7 @@ export const BigNumbers: React.FC<{
 
   const readMoreRef = useRef<HTMLDivElement>(null);
   const [showReadMore, setShowReadMore] = useState(false);
-  const maxHeight = 350;
+  const maxHeight = 200;
   useEffect(() => {
     const listContainer = readMoreRef.current;
     if (listContainer) {
@@ -63,7 +77,11 @@ export const BigNumbers: React.FC<{
   }, []);
 
   return (
-    <Container sectionColour={sectionColour}>
+    <Container
+      sectionColour={sectionColour}
+      isWide={isWide(size)}
+      isStandard={isStandard(size)}
+    >
       <ContentContainer>
         <Label sectionColour={sectionColour}>{label}</Label>
         <Headline>{headline}</Headline>
@@ -75,15 +93,15 @@ export const BigNumbers: React.FC<{
         >
           <List>
             {infoCardData.map((row: BigNumbersData, index: number) => (
-              /* <ListItem
-                key={index}
-                dangerouslySetInnerHTML={{
-                  __html: sanitiseCopy(row.data.copy, ['b', 'i'])
-                }}
-              > */
-              <ListItem>
-                  <Value sectionColour={sectionColour}>$497.8m</Value>
-                  <Copy>The number of people who turned in to the final president debate</Copy>
+              <ListItem key={index} isStandard={isStandard(size)}>
+                <NumberContainer sectionColour={sectionColour}>
+                  {row.data.number}
+                </NumberContainer>
+                <Copy
+                  dangerouslySetInnerHTML={{
+                    __html: sanitiseCopy(row.data.copy, ['b', 'i'])
+                  }}
+                />
               </ListItem>
             ))}
           </List>
@@ -91,7 +109,7 @@ export const BigNumbers: React.FC<{
       </ContentContainer>
       <ReadMoreContainer readMore={readMore} showReadMore={showReadMore}>
         <ReadMoreButton onClick={handleReadMore}>
-          {readMore ? 'Collapse' : 'Read more'}
+          {readMore ? 'Collapse' : 'Show all'}
         </ReadMoreButton>
       </ReadMoreContainer>
     </Container>

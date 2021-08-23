@@ -9,8 +9,18 @@ storiesOf('Typescript Component/In Article/Big Numbers', module)
     <ArticleHarness>{storyFn()}</ArticleHarness>
   ))
 
-  .add('Big Numbers', () => (
-    <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43978">
+  .add('Standard without a headline', () => (
+    <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44335">
+      <BigNumbers sectionColour="#636C17" />
+    </FetchProvider>
+  ))
+  .add('Standard Single Item', () => (
+    <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44336">
+      <BigNumbers sectionColour="#636C17" />
+    </FetchProvider>
+  ))
+  .add('Wide with a headline', () => (
+    <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44334">
       <BigNumbers sectionColour="#636C17" />
     </FetchProvider>
   ));
