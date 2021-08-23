@@ -187,7 +187,7 @@ const renderers = ({
                 </FetchProvider>
               )}
             </Context.Consumer>
-          );
+        );
 
       case "gallery-carousel":
         return (
