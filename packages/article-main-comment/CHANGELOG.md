@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.29.39](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.29.38...@times-components/article-main-comment@2.29.39) (2021-08-23)
+
+
+### Bug Fixes
+
+* **TSEO-31:** Updated image size on mobile to 1200px ([#2771](https://github.com/newsuk/times-components/issues/2771)) ([9a756ac](https://github.com/newsuk/times-components/commit/9a756acacf45c120de889b81823c591d890b4f38))
+
+
+
+
+
 ## [2.29.38](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.29.37...@times-components/article-main-comment@2.29.38) (2021-08-23)
 
 **Note:** Version bump only for package @times-components/article-main-comment
