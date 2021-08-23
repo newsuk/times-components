@@ -60,3 +60,4 @@ export {
 export {
   InfoCardBulletPoints
 } from './components/in-article-info-card-bulletpoints/InfoCardBulletPoints';
+export { BigNumbers } from './components/in-article-big-numbers/BigNumbers';
