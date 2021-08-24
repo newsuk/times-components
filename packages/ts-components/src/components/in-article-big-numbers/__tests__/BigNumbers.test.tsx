@@ -24,7 +24,7 @@ const deckApiPayloadWrapperStandard = () => ({
 
 const testDataStandard = {
   deck_id: 4043,
-  deck_name: 'TEST] Big Numbers Card - Standard - 16/08/2021 12:48:51',
+  deck_name: '[TEST] Big Numbers Card - Standard - 16/08/2021 12:48:51',
   deck_type: 'Big Numbers Card',
   version: 2,
   updated_at: {

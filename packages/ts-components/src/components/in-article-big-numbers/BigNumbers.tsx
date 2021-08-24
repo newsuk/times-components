@@ -22,7 +22,7 @@ import { DeckData } from '../../helpers/fetch/types';
 type BigNumbersData = {
   type: string;
   data: {
-    number: number;
+    number: string;
     copy: string;
   };
 };
