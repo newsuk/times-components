@@ -14,12 +14,6 @@ const insertInlineAd = children => {
   const paraPostition = [13, 20, 27];
 
   paraPostition.map((item, i) => {
-    // checks if nativeAd only renders once
-    const inlineAd = paywallChildren.find(ad => ad.name === `inlineAd${i + 1}`);
-    if (inlineAd) {
-      return clonedChildren;
-    }
-
     const inlineAdPos = paywallParagraphs[item - paragraph.length]
       ? paywallChildren.splice(
           paywallParagraphs[item - paragraph.length]?.index,
