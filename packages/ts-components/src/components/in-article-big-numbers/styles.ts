@@ -21,7 +21,7 @@ export const Container = styled.div<{
   isStandard?: boolean;
 }>`
   margin: 0 auto 20px auto;
-  padding: 20px 0 0;
+  padding: 23px 0 0;
   background-color: ${colours.functional.backgroundPrimary};
   border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
 
@@ -47,7 +47,7 @@ export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 16px;
 `;
 
 export const Label = styled.div<{ sectionColour: string }>`
@@ -56,7 +56,7 @@ export const Label = styled.div<{ sectionColour: string }>`
   line-height: 16px;
   text-transform: uppercase;
   color: ${({ sectionColour }) => `${sectionColour}`};
-  padding-bottom: 2px;
+  padding-bottom: 4px;
   letter-spacing: 1px;
 `;
 
@@ -65,7 +65,7 @@ export const Headline = styled.div`
   font-size: 24px;
   line-height: 24px;
   color: ${colours.functional.brandColour};
-  margin: 3px 0;
+  margin: 0 0 6px;
   @media (min-width: ${breakpoints.medium}px) {
     font-size: 32px;
     line-height: 32px;
@@ -126,7 +126,7 @@ export const ListItem = styled.li<{
   isStandard?: boolean;
 }>`
   flex: 1 0 50%;
-  padding: 16px 16px 16px 0;
+  padding: 12px 16px 13px 0;
   border-width: 0 1px 1px 0;
   border-style: solid;
   border-color: ${colours.functional.keyline};
