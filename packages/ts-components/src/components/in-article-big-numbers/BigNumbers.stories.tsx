@@ -13,7 +13,7 @@ storiesOf('Typescript Component/In Article/Big Numbers', module)
       <BigNumbers sectionColour="#636C17" />
     </FetchProvider>
   ))
-  .add('Standard with Single Item', () => (
+  .add('Standard with One Card', () => (
     <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44336">
       <BigNumbers sectionColour="#636C17" />
     </FetchProvider>

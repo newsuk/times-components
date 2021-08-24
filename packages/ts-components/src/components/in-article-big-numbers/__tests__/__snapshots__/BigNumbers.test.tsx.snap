@@ -3,18 +3,18 @@
 exports[`BigNumbers click show all 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bwzfXH gQPgVJ"
+    class="sc-bwzfXH hxWceX"
   >
     <div
-      class="sc-htpNat jxVqyQ"
+      class="sc-htpNat dXSmCm"
     >
       <div
-        class="sc-bxivhb jEFqfZ"
+        class="sc-bxivhb fZukZr"
       >
         President Race
       </div>
       <div
-        class="sc-ifAKCX qtDdg"
+        class="sc-ifAKCX fNhjkJ"
       >
         The stats behind the two candidates
       </div>
@@ -25,7 +25,7 @@ exports[`BigNumbers click show all 1`] = `
           class="sc-htoDjs kHZGsI"
         >
           <li
-            class="sc-dnqmqq bNSkvj"
+            class="sc-dnqmqq hlwGDF"
           >
             <div
               class="sc-iwsKbI iAzaWz"
@@ -39,7 +39,7 @@ exports[`BigNumbers click show all 1`] = `
             </div>
           </li>
           <li
-            class="sc-dnqmqq bNSkvj"
+            class="sc-dnqmqq hlwGDF"
           >
             <div
               class="sc-iwsKbI iAzaWz"
@@ -53,7 +53,7 @@ exports[`BigNumbers click show all 1`] = `
             </div>
           </li>
           <li
-            class="sc-dnqmqq bNSkvj"
+            class="sc-dnqmqq hlwGDF"
           >
             <div
               class="sc-iwsKbI iAzaWz"
@@ -67,7 +67,7 @@ exports[`BigNumbers click show all 1`] = `
             </div>
           </li>
           <li
-            class="sc-dnqmqq bNSkvj"
+            class="sc-dnqmqq hlwGDF"
           >
             <div
               class="sc-iwsKbI iAzaWz"
@@ -81,7 +81,7 @@ exports[`BigNumbers click show all 1`] = `
             </div>
           </li>
           <li
-            class="sc-dnqmqq bNSkvj"
+            class="sc-dnqmqq hlwGDF"
           >
             <div
               class="sc-iwsKbI iAzaWz"
@@ -113,18 +113,18 @@ exports[`BigNumbers click show all 1`] = `
 exports[`BigNumbers should render the component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bwzfXH ejklOq"
+    class="sc-bwzfXH hhiknq"
   >
     <div
-      class="sc-htpNat jxVqyQ"
+      class="sc-htpNat dXSmCm"
     >
       <div
-        class="sc-bxivhb jEFqfZ"
+        class="sc-bxivhb fZukZr"
       >
         President Race
       </div>
       <div
-        class="sc-ifAKCX qtDdg"
+        class="sc-ifAKCX fNhjkJ"
       >
         The stats behind the two candidates
       </div>
@@ -135,7 +135,7 @@ exports[`BigNumbers should render the component 1`] = `
           class="sc-htoDjs kHZGsI"
         >
           <li
-            class="sc-dnqmqq bsWhui"
+            class="sc-dnqmqq cYMlrf"
           >
             <div
               class="sc-iwsKbI iAzaWz"
@@ -149,7 +149,7 @@ exports[`BigNumbers should render the component 1`] = `
             </div>
           </li>
           <li
-            class="sc-dnqmqq bsWhui"
+            class="sc-dnqmqq cYMlrf"
           >
             <div
               class="sc-iwsKbI iAzaWz"
@@ -163,7 +163,7 @@ exports[`BigNumbers should render the component 1`] = `
             </div>
           </li>
           <li
-            class="sc-dnqmqq bsWhui"
+            class="sc-dnqmqq cYMlrf"
           >
             <div
               class="sc-iwsKbI iAzaWz"
@@ -177,7 +177,7 @@ exports[`BigNumbers should render the component 1`] = `
             </div>
           </li>
           <li
-            class="sc-dnqmqq bsWhui"
+            class="sc-dnqmqq cYMlrf"
           >
             <div
               class="sc-iwsKbI iAzaWz"
@@ -191,7 +191,7 @@ exports[`BigNumbers should render the component 1`] = `
             </div>
           </li>
           <li
-            class="sc-dnqmqq bsWhui"
+            class="sc-dnqmqq cYMlrf"
           >
             <div
               class="sc-iwsKbI iAzaWz"
@@ -237,18 +237,18 @@ exports[`BigNumbers should render the initial show all state correctly 1`] = `<D
 exports[`BigNumbers should render the standard component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bwzfXH gQPgVJ"
+    class="sc-bwzfXH hxWceX"
   >
     <div
-      class="sc-htpNat jxVqyQ"
+      class="sc-htpNat dXSmCm"
     >
       <div
-        class="sc-bxivhb jEFqfZ"
+        class="sc-bxivhb fZukZr"
       >
         President Race
       </div>
       <div
-        class="sc-ifAKCX qtDdg"
+        class="sc-ifAKCX fNhjkJ"
       >
         The stats behind the two candidates
       </div>
@@ -259,7 +259,7 @@ exports[`BigNumbers should render the standard component 1`] = `
           class="sc-htoDjs kHZGsI"
         >
           <li
-            class="sc-dnqmqq bNSkvj"
+            class="sc-dnqmqq hlwGDF"
           >
             <div
               class="sc-iwsKbI iAzaWz"
@@ -273,7 +273,7 @@ exports[`BigNumbers should render the standard component 1`] = `
             </div>
           </li>
           <li
-            class="sc-dnqmqq bNSkvj"
+            class="sc-dnqmqq hlwGDF"
           >
             <div
               class="sc-iwsKbI iAzaWz"
@@ -287,7 +287,7 @@ exports[`BigNumbers should render the standard component 1`] = `
             </div>
           </li>
           <li
-            class="sc-dnqmqq bNSkvj"
+            class="sc-dnqmqq hlwGDF"
           >
             <div
               class="sc-iwsKbI iAzaWz"
@@ -301,7 +301,7 @@ exports[`BigNumbers should render the standard component 1`] = `
             </div>
           </li>
           <li
-            class="sc-dnqmqq bNSkvj"
+            class="sc-dnqmqq hlwGDF"
           >
             <div
               class="sc-iwsKbI iAzaWz"
@@ -315,7 +315,7 @@ exports[`BigNumbers should render the standard component 1`] = `
             </div>
           </li>
           <li
-            class="sc-dnqmqq bNSkvj"
+            class="sc-dnqmqq hlwGDF"
           >
             <div
               class="sc-iwsKbI iAzaWz"
