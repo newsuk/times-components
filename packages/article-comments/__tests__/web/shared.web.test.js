@@ -19,7 +19,7 @@ it("Render comments label, when comments are loaded", () => {
       isEnabled
       onCommentGuidelinesPress={() => {}}
       onCommentsPress={() => {}}
-      spotAccountId="test-id"
+      commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
       url="dummy-article-url"
     />,
     {

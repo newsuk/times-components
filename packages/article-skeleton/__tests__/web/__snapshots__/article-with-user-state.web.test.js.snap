@@ -322,6 +322,13 @@ exports[`Article with user state Render full article when user has access to ful
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
+          commentingConfig={
+            Object {
+              "account": Object {
+                "current": "dummiy-spotim-id",
+              },
+            }
+          }
           commentsEnabled={true}
           relatedArticleSlice={
             Object {
@@ -369,7 +376,6 @@ exports[`Article with user state Render full article when user has access to ful
           relatedArticlesVisible={false}
           savingEnabled={true}
           sharingEnabled={true}
-          spotAccountId=""
           topics={
             Array [
               Object {
@@ -716,6 +722,13 @@ exports[`Article with user state Render teaser article when user does not have a
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
+          commentingConfig={
+            Object {
+              "account": Object {
+                "current": "dummiy-spotim-id",
+              },
+            }
+          }
           commentsEnabled={true}
           relatedArticleSlice={
             Object {
@@ -763,7 +776,6 @@ exports[`Article with user state Render teaser article when user does not have a
           relatedArticlesVisible={false}
           savingEnabled={true}
           sharingEnabled={true}
-          spotAccountId=""
           topics={
             Array [
               Object {

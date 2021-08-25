@@ -17,6 +17,14 @@ const algoliaSearchKeys = {
   indexName: process.env.STORYBOOK_ALGOLIA_INDEX || ""
 };
 
+const commentingConfig = {
+  account: {
+    current: process.env.STORYBOOK_COMMENTING_CURRENT_ID || "CurrentSpotID",
+    readonly: process.env.STORYBOOK_COMMENTING_READONLY_ID || "ReadOnlySpotID"
+  },
+  switchOver: process.env.STORYBOOK_COMMENTING_SWITCHOVER || "20210816"
+};
+
 const Container = styled.div`
   &.slice {
     #related-articles > div:first-child {
@@ -52,7 +60,7 @@ export default {
                 registerNode={() => {}}
                 relatedArticleSlice={relatedArticleSlice}
                 relatedArticlesVisible
-                spotAccountId="dummy-spot-id"
+                commentingConfig={commentingConfig}
                 topics={topics}
                 additionalRelatedArticlesFlag={boolean(
                   "Additional Featured Articles",
@@ -126,7 +134,7 @@ export default {
                 registerNode={() => {}}
                 relatedArticleSlice={relatedArticleSlice}
                 relatedArticlesVisible={false}
-                spotAccountId="dummy-spot-id"
+                commentingConfig={commentingConfig}
                 topics={topics}
                 additionalRelatedArticlesFlag
                 inlineRelatedArticlesFlag

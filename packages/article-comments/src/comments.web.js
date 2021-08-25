@@ -24,7 +24,7 @@ class Comments extends Component {
     const {
       articleId,
       isReadOnly,
-      spotAccountId,
+      commentingConfig,
       onCommentStart,
       onCommentPost,
       onCommentNotification,
@@ -42,7 +42,7 @@ class Comments extends Component {
       onCommentSettingsClicked
     } = this.props;
 
-    if (!this.container || !articleId || !spotAccountId) {
+    if (!this.container || !articleId || !commentingConfig) {
       return;
     }
 
@@ -78,7 +78,7 @@ class Comments extends Component {
     launcherScript.setAttribute("async", "async");
     launcherScript.setAttribute(
       "src",
-      `https://launcher.spot.im/spot/${spotAccountId}`
+      `https://launcher.spot.im/spot/${commentingConfig.account.current}`
     );
     launcherScript.setAttribute("data-spotim-module", "spotim-launcher");
     launcherScript.setAttribute("data-post-id", articleId);
@@ -197,7 +197,7 @@ class Comments extends Component {
 Comments.propTypes = {
   articleId: PropTypes.string.isRequired,
   isReadOnly: PropTypes.bool.isRequired,
-  spotAccountId: PropTypes.string.isRequired,
+  commentingConfig: PropTypes.string.isRequired,
   onCommentStart: PropTypes.func,
   onCommentPost: PropTypes.func,
   onCommentNotification: PropTypes.func,

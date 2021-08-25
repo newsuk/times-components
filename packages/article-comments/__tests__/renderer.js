@@ -2,7 +2,6 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import ArticleComments from "../src/article-comments";
 
-// eslint-disable-next-line react/prop-types
 export default ({ count, enabled }) =>
   TestRenderer.create(
     <ArticleComments
@@ -12,7 +11,7 @@ export default ({ count, enabled }) =>
       isEnabled={enabled}
       onCommentGuidelinesPress={() => {}}
       onCommentsPress={() => {}}
-      spotAccountId=""
+      commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
       url="dummy-article-url"
     />
   );

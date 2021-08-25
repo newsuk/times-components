@@ -1,6 +1,14 @@
 import React from "react";
 import ArticleComments from "./src/article-comments";
 
+const commentingConfig = {
+  account: {
+    current: process.env.STORYBOOK_COMMENTING_CURRENT_ID || "CurrentSpotID",
+    readonly: process.env.STORYBOOK_COMMENTING_READONLY_ID || "ReadOnlySpotID"
+  },
+  switchOver: process.env.STORYBOOK_COMMENTING_SWITCHOVER || "20210816"
+};
+
 export default {
   children: [
     {
@@ -13,6 +21,7 @@ export default {
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           url="dummy-article-url"
+          commentingConfig={commentingConfig}
         />
       ),
       name: "Enabled",
@@ -28,6 +37,7 @@ export default {
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}
           url="dummy-article-url"
+          commentingConfig={commentingConfig}
         />
       ),
       name: "Disabled",

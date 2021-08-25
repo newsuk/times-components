@@ -48,7 +48,7 @@ const ArticleSkeleton = ({
   Header,
   logoUrl,
   receiveChildList,
-  spotAccountId,
+  commentingConfig,
   paidContentClassName,
   isPreview,
   additionalRelatedArticlesFlag,
@@ -220,7 +220,7 @@ const ArticleSkeleton = ({
                         relatedArticlesVisible={
                           !!observed.get("related-articles")
                         }
-                        spotAccountId={spotAccountId}
+                        commentingConfig={commentingConfig}
                         topics={topics}
                         additionalRelatedArticlesFlag={
                           additionalRelatedArticlesFlag

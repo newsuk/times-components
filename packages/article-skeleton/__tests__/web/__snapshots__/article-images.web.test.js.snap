@@ -91,11 +91,17 @@ exports[`1. a primary image 1`] = `
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
+          commentingConfig={
+            Object {
+              "account": Object {
+                "current": "dummiy-spotim-id",
+              },
+            }
+          }
           commentsEnabled={true}
           relatedArticlesVisible={false}
           savingEnabled={true}
           sharingEnabled={true}
-          spotAccountId=""
         />
       </article>
     </main>
@@ -203,11 +209,17 @@ exports[`2. a fullwidth image 1`] = `
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
+          commentingConfig={
+            Object {
+              "account": Object {
+                "current": "dummiy-spotim-id",
+              },
+            }
+          }
           commentsEnabled={true}
           relatedArticlesVisible={false}
           savingEnabled={true}
           sharingEnabled={true}
-          spotAccountId=""
         />
       </article>
     </main>
@@ -315,11 +327,17 @@ exports[`3. a secondary image 1`] = `
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
+          commentingConfig={
+            Object {
+              "account": Object {
+                "current": "dummiy-spotim-id",
+              },
+            }
+          }
           commentsEnabled={true}
           relatedArticlesVisible={false}
           savingEnabled={true}
           sharingEnabled={true}
-          spotAccountId=""
         />
       </article>
     </main>
@@ -427,11 +445,17 @@ exports[`4. an inline image 1`] = `
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
+          commentingConfig={
+            Object {
+              "account": Object {
+                "current": "dummiy-spotim-id",
+              },
+            }
+          }
           commentsEnabled={true}
           relatedArticlesVisible={false}
           savingEnabled={true}
           sharingEnabled={true}
-          spotAccountId=""
         />
       </article>
     </main>
