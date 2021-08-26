@@ -355,6 +355,7 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
             }
           }
           commentsEnabled={true}
+          publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
               "items": Array [
@@ -755,6 +756,7 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
             }
           }
           commentsEnabled={true}
+          publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
               "items": Array [

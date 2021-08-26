@@ -158,6 +158,7 @@ function Head({
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline || "";
   const datePublished = publishedTime && new Date(publishedTime).toISOString();
+
   const dateModified = updatedTime || datePublished;
 
   const defaultAuthorSchema = {

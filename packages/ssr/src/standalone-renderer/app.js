@@ -81,7 +81,7 @@ server.get("/article/:id", (request, response) => {
       current: process.env.SPOT_ID,
       readonly: process.env.SPOT_ID
     },
-    switchOver: "20210816"
+    switchOver: "2020-08-10T16:00:00.000Z"
   };
 
   const headers = process.env.GRAPHQL_TOKEN

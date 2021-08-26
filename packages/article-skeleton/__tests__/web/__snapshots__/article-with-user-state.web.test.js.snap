@@ -330,6 +330,7 @@ exports[`Article with user state Render full article when user has access to ful
             }
           }
           commentsEnabled={true}
+          publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
               "items": Array [
@@ -730,6 +731,7 @@ exports[`Article with user state Render teaser article when user does not have a
             }
           }
           commentsEnabled={true}
+          publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
               "items": Array [

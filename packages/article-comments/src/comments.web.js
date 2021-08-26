@@ -24,6 +24,7 @@ class Comments extends Component {
     const {
       articleId,
       isReadOnly,
+      publishedTime,
       commentingConfig,
       onCommentStart,
       onCommentPost,
@@ -73,12 +74,19 @@ class Comments extends Component {
           return null;
       }
     };
+    let spotAccountId = commentingConfig.account.readonly;
+    if (commentingConfig && commentingConfig.switchOver) {
+      const switchOverDate = commentingConfig.switchOver;
+      if (publishedTime > switchOverDate) {
+        spotAccountId = commentingConfig.account.current;
+      }
+    }
 
     const launcherScript = document.createElement("script");
     launcherScript.setAttribute("async", "async");
     launcherScript.setAttribute(
       "src",
-      `https://launcher.spot.im/spot/${commentingConfig.account.current}`
+      `https://launcher.spot.im/spot/${spotAccountId}`
     );
     launcherScript.setAttribute("data-spotim-module", "spotim-launcher");
     launcherScript.setAttribute("data-post-id", articleId);
@@ -197,7 +205,14 @@ class Comments extends Component {
 Comments.propTypes = {
   articleId: PropTypes.string.isRequired,
   isReadOnly: PropTypes.bool.isRequired,
-  commentingConfig: PropTypes.string.isRequired,
+  commentingConfig: PropTypes.shape({
+    accounts: PropTypes.shape({
+      current: PropTypes.string.isRequired,
+      readOnly: PropTypes.string.isRequired
+    }),
+    switchOver: PropTypes.string.isRequired
+  }).isRequired,
+  publishedTime: PropTypes.string.isRequired,
   onCommentStart: PropTypes.func,
   onCommentPost: PropTypes.func,
   onCommentNotification: PropTypes.func,

@@ -74,7 +74,8 @@ const ArticleSkeleton = ({
     relatedArticleSlice,
     template,
     savingEnabled,
-    sharingEnabled
+    sharingEnabled,
+    publishedTime
   } = article;
 
   const articleContentReducers = [
@@ -212,6 +213,7 @@ const ArticleSkeleton = ({
                         articleId={articleId}
                         articleHeadline={headline}
                         articleUrl={url}
+                        publishedTime={publishedTime}
                         savingEnabled={savingEnabled}
                         sharingEnabled={sharingEnabled}
                         commentsEnabled={commentsEnabled}

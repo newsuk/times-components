@@ -25,7 +25,7 @@ const commentingConfig = {
     current: "CurrentSpotID",
     readonly: "ReadOnlySpotID"
   },
-  switchOver: "20210816"
+  switchOver: "2020-08-10T16:00:00.000Z"
 };
 
 export default () => {
