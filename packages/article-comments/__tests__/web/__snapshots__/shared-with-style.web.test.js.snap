@@ -1,7 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`disabled comments 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   margin-left: auto;
   margin-right: auto;
 }
@@ -39,32 +40,35 @@ exports[`disabled comments 1`] = `
 }
 
 <div
-  className="c0"
->
-  <p
-    className="c1"
+    class="c0"
   >
-    Comments for this article have been turned off
-  </p>
-  <p
-    className="c2"
-  >
-    Comments are subject to our community guidelines, which can be viewed
-     
-    <a
-      className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-textDecorationLine-1ddef8g"
-      href="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-      role="link"
+    <p
+      class="c1"
     >
-      here
-    </a>
-    .
-  </p>
-</div>
+      Comments for this article have been turned off
+    </p>
+    <p
+      class="c2"
+    >
+      Comments are subject to our community guidelines, which can be viewed 
+      <a
+        class="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-textDecorationLine-1ddef8g"
+        data-focusable="true"
+        dir="auto"
+        href="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+        role="link"
+      >
+        here
+      </a>
+      .
+    </p>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`enabled comments 1`] = `
-.c0 {
+<DocumentFragment>
+  .c0 {
   margin-left: auto;
   margin-right: auto;
 }
@@ -82,9 +86,58 @@ exports[`enabled comments 1`] = `
 }
 
 <div
-  className="c0"
-  id="comments-container"
->
-  <div />
-</div>
+    class="c0"
+    id="comments-container"
+  >
+    <div>
+      <script
+        async="async"
+        data-livefyre-url="dummy-article-id"
+        data-post-id="dummy-article-id"
+        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
+        data-seo-enabled="true"
+        data-spotim-module="spotim-launcher"
+        src="https://launcher.spot.im/spot/CurrentSpotID"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`pre-switchover comments 1`] = `
+<DocumentFragment>
+  .c0 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+<div
+    class="c0"
+    id="comments-container"
+  >
+    <div>
+      <script
+        async="async"
+        data-livefyre-url="dummy-article-id"
+        data-post-id="dummy-article-id"
+        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
+        data-seo-enabled="true"
+        data-spotim-module="spotim-launcher"
+        src="https://launcher.spot.im/spot/ReadOnlySpotID"
+      />
+    </div>
+  </div>
+</DocumentFragment>
 `;
