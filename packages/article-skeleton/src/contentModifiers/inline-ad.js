@@ -14,18 +14,26 @@ const insertInlineAd = children => {
   const paraPostition = [13, 20, 27];
 
   paraPostition.map((item, i) => {
-    const inlineAdPos = paywallParagraphs[item - paragraph.length]
-      ? paywallChildren.splice(
-          paywallParagraphs[item - paragraph.length]?.index + i,
-          0,
-          {
-            name: `inlineAd${i + 1}`,
-            children: []
-          }
-        )
-      : null;
 
-    return inlineAdPos;
+    const indexPos = paywallParagraphs[item - paragraph.length]
+    ? paywallParagraphs[item - paragraph.length].index
+    : null;
+
+    // checks that inlineAd only renders once
+    const inlineAd = paywallChildren.find(ad => ad.name === `inlineAd${i + 1}`);
+
+    if (inlineAd) {
+      return clonedChildren;
+    }
+    
+    if(indexPos && indexPos !== null) {
+      paywallChildren.splice(indexPos + i, 0, {
+        name: `inlineAd${i + 1}`,
+        children: []
+      })
+    }
+
+    return true;
   });
 
   return clonedChildren;
