@@ -10,7 +10,7 @@ function Head({ metaDescription, description, name }) {
 
   if (metaDescription) {
     content = metaDescription;
-  } else if (description && typeof description === "object") {
+  } else if (description && description.length) {
     content = renderTreeArrayAsText(description).substring(0, 200);
   }
 

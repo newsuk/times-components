@@ -8,7 +8,7 @@ exports[`1. an article list loading 1`] = `
        | The Times & The Sunday Times
     </title>
     <meta
-      content=""
+      content="Discover expert  articles from The Times and The Sunday Times."
       name="description"
     />
     <link
