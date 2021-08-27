@@ -22,7 +22,8 @@ const Topic = ({
   onPrev,
   refetch,
   slug,
-  topic
+  topic,
+  metaDescription
 }) => {
   const emptyStateMessage =
     "Unfortunately, there are no articles relating to this topic";
@@ -87,7 +88,7 @@ const Topic = ({
 
         return (
           <Responsive>
-            <Head {...{ description, name, slug }} />
+            <Head {...{ metaDescription, description, name, slug }} />
             <ArticleList
               articleListHeader={articleListHeader}
               articles={get(data, "articles.list", [])}

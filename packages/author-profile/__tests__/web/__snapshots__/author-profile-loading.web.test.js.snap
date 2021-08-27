@@ -17,6 +17,7 @@ exports[`1. an article list loading with images 1`] = `
       <AuthorProfileHead
         isLoading={true}
         jobTitle=""
+        metaDescription=""
         name=""
         twitter=""
         uri=""
@@ -49,6 +50,7 @@ exports[`2. an article list loading without images 1`] = `
       <AuthorProfileHead
         isLoading={true}
         jobTitle=""
+        metaDescription=""
         name=""
         twitter=""
         uri=""
