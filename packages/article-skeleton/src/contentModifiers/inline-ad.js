@@ -16,7 +16,7 @@ const insertInlineAd = children => {
   paraPostition.map((item, i) => {
     const inlineAdPos = paywallParagraphs[item - paragraph.length]
       ? paywallChildren.splice(
-          paywallParagraphs[item - paragraph.length]?.index,
+          paywallParagraphs[item - paragraph.length]?.index + i,
           0,
           {
             name: `inlineAd${i + 1}`,
