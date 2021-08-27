@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.0...@times-components/ts-components@1.12.1) (2021-08-27)
+
+
+### Bug Fixes
+
+* conditionally check the window obj ([#2782](https://github.com/newsuk/times-components/issues/2782)) ([5fa4cb9](https://github.com/newsuk/times-components/commit/5fa4cb975631da911650140a7c48a4b50b97ab2c))
+
+
+
+
+
 # [1.12.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.30...@times-components/ts-components@1.12.0) (2021-08-20)
 
 
