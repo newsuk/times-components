@@ -1,5 +1,16 @@
 import React, { useState } from 'react';
+import { Placeholder } from '@times-components/image';
+
+import { DeckData } from '../../helpers/fetch/types';
+import { CarouselDataObj } from './types';
+import { useFetch } from '../../helpers/fetch/FetchProvider';
+import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
+
 import { Card } from './Card';
+import { Arrow } from './Arrow';
+import { AspectRatio } from '../aspect-ratio/AspectRatio';
+import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
+
 import {
   CarouselButtonContainer,
   CarouselButton,
@@ -13,15 +24,6 @@ import {
   MobileOrLarge,
   PlaceholderContainer
 } from './styles';
-import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
-import { CarouselDataObj } from './types';
-import { useFetch } from '../../helpers/fetch/FetchProvider';
-import { DeckData } from '../../helpers/fetch/types';
-import { Placeholder } from '@times-components/image';
-
-import { Arrow } from './Arrow';
-import { AspectRatio } from '../aspect-ratio/AspectRatio';
-import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
 const CustomPagination: React.FC<{
   activePage: number;
@@ -83,7 +85,7 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
 }) => {
   const { loading, error, data } = useFetch<GalleryCarouselDeckData>();
 
-  if (loading || data === undefined) {
+  if (loading) {
     return (
       <PlaceholderContainer>
         <Placeholder />
@@ -91,7 +93,7 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
     );
   }
 
-  if (error) {
+  if (error || data === undefined || data.body.data.length === 0) {
     return null;
   }
 

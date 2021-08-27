@@ -1,18 +1,17 @@
 import React from 'react';
-
 import { Placeholder } from '@times-components/image';
 
+import { DeckData } from '../../helpers/fetch/types';
 import { AspectRatios } from '../../types/aspectRatio';
-
 import { useFetch } from '../../helpers/fetch/FetchProvider';
-import {
-  TrackingContext,
-  TrackingContextProvider
-} from '../../helpers/tracking/TrackingContextProvider';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { InArticleLink } from '../in-article-link/InArticleLink';
+import {
+  TrackingContext,
+  TrackingContextProvider
+} from '../../helpers/tracking/TrackingContextProvider';
 
 import {
   PlaceholderContainer,
@@ -23,7 +22,6 @@ import {
   Headline,
   Copy
 } from './styles';
-import { DeckData } from '../../helpers/fetch/types';
 
 type InArticlePuffData = {
   data: {
@@ -74,7 +72,7 @@ export const InArticlePuff: React.FC<{
     );
   }
 
-  if (error || data === undefined) {
+  if (error || data === undefined || data.body.data.length === 0) {
     return null;
   }
 
