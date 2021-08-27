@@ -4,13 +4,13 @@ import {
   Credit,
   Copy,
   CardContent,
-  Label,
   Headline,
   HeadlineButtonContainer,
   ImageTitle,
   MobileOrLarge,
   NotMobileOrLarge
 } from './styles';
+import { Label } from '../common-styles';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import { CarouselDataObj } from './types';
 
