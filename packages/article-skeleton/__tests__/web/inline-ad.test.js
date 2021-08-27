@@ -17,4 +17,9 @@ describe("inline-ad", () => {
       contentWithLessParagraphs
     );
   });
+
+  it("does not insert the ad if already exists", () => {
+    expect(insertInlineAd(contentWithOutAd)).toStrictEqual(contentWithAd);
+    expect(insertInlineAd(contentWithOutAd)).toStrictEqual(contentWithAd);
+  });
 });
