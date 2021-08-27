@@ -1,20 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/styleguide';
 
-export const PlaceholderContainer = styled.div`
-  position: relative;
-  height: 200px;
-  margin: 0 auto 20px auto;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    width: 80.8%;
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
-  }
-`;
-
 export const Container = styled.div<{ sectionColour: string }>`
   margin: 0 auto 20px auto;
   padding: 20px 0 0;
@@ -40,22 +26,6 @@ export const ContentContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 0 20px;
-`;
-
-export const Label = styled.div<{ sectionColour: string }>`
-  font-family: ${fonts.supporting};
-  font-size: 12px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: ${({ sectionColour }) => `${sectionColour}`};
-  padding-bottom: 10px;
-  letter-spacing: 1px;
-  @media (min-width: ${breakpoints.medium}px) {
-    padding-bottom: 6px;
-  }
-  @media (min-width: ${breakpoints.wide}px) {
-    padding-bottom: 10px;
-  }
 `;
 
 export const Headline = styled.div`

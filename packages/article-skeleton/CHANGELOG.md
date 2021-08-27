@@ -3,6 +3,85 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.54.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.54.1...@times-components/article-skeleton@1.54.2) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.54.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.54.0...@times-components/article-skeleton@1.54.1) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.54.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.53.0...@times-components/article-skeleton@1.54.0) (2021-08-25)
+
+
+### Features
+
+* **scb-1193:** add aditional in article ad slots, increment the index value ([#2779](https://github.com/newsuk/times-components/issues/2779)) ([6f112ac](https://github.com/newsuk/times-components/commit/6f112acb16d9ba20b9587d57408afbb8a28f68f2))
+
+
+
+
+
+# [1.53.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.52.0...@times-components/article-skeleton@1.53.0) (2021-08-24)
+
+
+### Features
+
+* **scb-1193:** add aditional in article ad slots, remove unecessary condition ([#2777](https://github.com/newsuk/times-components/issues/2777)) ([0e50aab](https://github.com/newsuk/times-components/commit/0e50aabc5dbff4fa60bda79d6150f1c2370d43b1))
+
+
+
+
+
+# [1.52.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.51.43...@times-components/article-skeleton@1.52.0) (2021-08-23)
+
+
+### Features
+
+* **SCB-1193:** add aditional in article ad slots to article page logged in users ([#2758](https://github.com/newsuk/times-components/issues/2758)) ([481ff7f](https://github.com/newsuk/times-components/commit/481ff7f325b2bf0a216da583bf0d1c5871ef85f5))
+
+
+
+
+
+## [1.51.43](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.51.42...@times-components/article-skeleton@1.51.43) (2021-08-23)
+
+
+### Bug Fixes
+
+* **TSEO-31:** Updated image size on mobile to 1200px ([#2771](https://github.com/newsuk/times-components/issues/2771)) ([9a756ac](https://github.com/newsuk/times-components/commit/9a756acacf45c120de889b81823c591d890b4f38))
+
+
+
+
+
+## [1.51.42](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.51.41...@times-components/article-skeleton@1.51.42) (2021-08-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.51.41](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.51.40...@times-components/article-skeleton@1.51.41) (2021-08-23)
+
+
+### Bug Fixes
+
+* **TSEO-27:** updated video schema description ([#2770](https://github.com/newsuk/times-components/issues/2770)) ([64c5706](https://github.com/newsuk/times-components/commit/64c5706aa48e17a7a787400e0d4a075bcbbb7d83))
+
+
+
+
+
 ## [1.51.40](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.51.39...@times-components/article-skeleton@1.51.40) (2021-08-20)
 
 **Note:** Version bump only for package @times-components/article-skeleton
