@@ -17,9 +17,9 @@ const insertInlineAd = children => {
     const inlineAd = paywallChildren.find(ad => ad.name === `inlineAd${i + 1}`);
     if (!inlineAd) {
       const indexPos = paywallParagraphs[item - paragraph.length]
-      ? paywallParagraphs[item - paragraph.length].index
-      : null;
-      
+        ? paywallParagraphs[item - paragraph.length].index
+        : null;
+
       if (indexPos && indexPos !== null) {
         paywallChildren.splice(indexPos + i, 0, {
           name: `inlineAd${i + 1}`,
