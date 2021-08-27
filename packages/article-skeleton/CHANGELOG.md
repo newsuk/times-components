@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.54.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.53.0...@times-components/article-skeleton@1.54.0) (2021-08-25)
+
+
+### Features
+
+* **scb-1193:** add aditional in article ad slots, increment the index value ([#2779](https://github.com/newsuk/times-components/issues/2779)) ([6f112ac](https://github.com/newsuk/times-components/commit/6f112acb16d9ba20b9587d57408afbb8a28f68f2))
+
+
+
+
+
 # [1.53.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.52.0...@times-components/article-skeleton@1.53.0) (2021-08-24)
 
 
