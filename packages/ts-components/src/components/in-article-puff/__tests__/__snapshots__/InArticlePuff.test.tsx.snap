@@ -3,10 +3,10 @@
 exports[`InArticlePuff should render optional fields correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb cRoLPq"
+    class="sc-EHOje hxyorB"
   >
     <div
-      class="sc-ifAKCX KkDWT"
+      class="sc-bZQynM bcIvmR"
     >
       <a
         href="https://www.thetimes.co.uk"
@@ -21,11 +21,11 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
       </a>
     </div>
     <div
-      class="sc-EHOje IpVdQ"
+      class="sc-gzVnrw kKiGJk"
     >
       <div>
         <div
-          class="sc-bZQynM jqKGjg"
+          class="sc-htoDjs wogdI"
         >
           interactive
         </div>
@@ -33,13 +33,13 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
           href="https://www.thetimes.co.uk"
         >
           <h4
-            class="sc-gzVnrw ddnAwC"
+            class="sc-dnqmqq idHiiA"
           >
             Where can I get a Covid vaccine in England?
           </h4>
         </a>
         <div
-          class="sc-htoDjs kcidiQ"
+          class="sc-iwsKbI bMDHmH"
         >
           Enter your postcode to find your nearest centre
         </div>
@@ -69,14 +69,14 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
 exports[`InArticlePuff should render required fields correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb cRoLPq"
+    class="sc-EHOje hxyorB"
   >
     <div
-      class="sc-EHOje dPMypA"
+      class="sc-gzVnrw gzDDYI"
     >
       <div>
         <div
-          class="sc-bZQynM hqjcdE"
+          class="sc-htoDjs eVcZJA"
         >
           interactive
         </div>
@@ -84,7 +84,7 @@ exports[`InArticlePuff should render required fields correctly 1`] = `
           href="https://www.thetimes.co.uk"
         >
           <h4
-            class="sc-gzVnrw foWuIq"
+            class="sc-dnqmqq dPtcG"
           >
             Where can I get a Covid vaccine in England?
           </h4>
@@ -115,7 +115,7 @@ exports[`InArticlePuff should render required fields correctly 1`] = `
 exports[`InArticlePuff should render the initial loading state correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-dnqmqq jYleKb"
+    class="sc-bxivhb egvpqE"
   >
     <div>
       Placeholder
