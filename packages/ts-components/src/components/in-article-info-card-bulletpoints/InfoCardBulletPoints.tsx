@@ -3,10 +3,8 @@ import { Placeholder } from '@times-components/image';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import {
-  PlaceholderContainer,
   Container,
   ContentContainer,
-  Label,
   Headline,
   ListContainer,
   List,
@@ -14,6 +12,7 @@ import {
   ReadMoreContainer,
   ReadMoreButton
 } from './styles';
+import { PlaceholderContainer, Label } from '../common-styles';
 
 import { DeckData } from '../../helpers/fetch/types';
 

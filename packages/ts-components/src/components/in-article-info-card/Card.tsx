@@ -2,10 +2,10 @@ import React from 'react';
 import {
   CardContainer,
   CardContent,
-  Label,
   Headline,
   HeadlineButtonContainer
 } from './styles';
+import { Label } from '../common-styles';
 import { InfoCardData } from './InfoCard';
 
 export const Card: React.FC<{
