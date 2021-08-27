@@ -13,8 +13,8 @@ import {
   TrackingContextProvider
 } from '../../helpers/tracking/TrackingContextProvider';
 
+import { PlaceholderContainer } from '../common-styles';
 import {
-  PlaceholderContainer,
   Container,
   ImageContainer,
   ContentContainer,

@@ -11,6 +11,7 @@ import { Arrow } from './Arrow';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
+import { PlaceholderContainer } from '../common-styles';
 import {
   CarouselButtonContainer,
   CarouselButton,
@@ -21,8 +22,7 @@ import {
   Copy,
   Credit,
   ImageTitle,
-  MobileOrLarge,
-  PlaceholderContainer
+  MobileOrLarge
 } from './styles';
 
 const CustomPagination: React.FC<{

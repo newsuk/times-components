@@ -3,10 +3,10 @@
 exports[`GalleryCarousel should render the component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-dxgOiQ fwzHRb"
+    class="sc-kGXeez hseeWq"
   >
     <div
-      class="rec rec-carousel-wrapper sc-ckVGcZ jiXkpL sc-EHOje eOvqeq"
+      class="rec rec-carousel-wrapper sc-kpOJdX lbeyrd sc-EHOje eOvqeq"
     >
       <div
         class="rec rec-carousel sc-ifAKCX kQtsWC"
@@ -72,32 +72,32 @@ exports[`GalleryCarousel should render the component 1`] = `
         </div>
       </div>
       <div
-        class="sc-fjdhpX fbCsgq"
+        class="sc-VigVT kVxRhZ"
       >
         <div
-          class="sc-kgoBCf civTPe"
+          class="sc-kAzzGY eTzlhe"
         >
           <div
-            class="sc-dnqmqq hYZEeO"
+            class="sc-ckVGcZ gkcrOD"
           >
             Label 1
           </div>
           <div
-            class="sc-gZMcBi ehctmQ"
+            class="sc-dnqmqq kBYZCQ"
           >
             <div
-              class="sc-iwsKbI izuWkn"
+              class="sc-htoDjs gfvyHb"
             >
               Gallery Headline
             </div>
             <div
-              class="sc-kGXeez kZjiDa"
+              class="sc-chPdSV fzttrJ"
             >
               <div
-                class="sc-jzJRlG yhXZi"
+                class="sc-jTzLTM izCUzN"
               >
                 <button
-                  class="sc-cSHVUG cqpfkR"
+                  class="sc-fjdhpX dAzKpU"
                   data-testid="Previous button"
                   disabled=""
                 >
@@ -113,19 +113,19 @@ exports[`GalleryCarousel should render the component 1`] = `
                   </svg>
                 </button>
                 <div
-                  class="sc-kAzzGY KKbdl"
+                  class="sc-jzJRlG fFIdwf"
                 >
                   <div
-                    class="sc-chPdSV bNEloB"
+                    class="sc-cSHVUG bihZWC"
                     data-testid="Page Indicator"
                   />
                   <div
-                    class="sc-chPdSV dZtpKz"
+                    class="sc-cSHVUG hGTRKx"
                     data-testid="Page Indicator"
                   />
                 </div>
                 <button
-                  class="nextBtn sc-cSHVUG eimJYp"
+                  class="nextBtn sc-fjdhpX iFJyYg"
                   data-testid="Next Button"
                 >
                   <svg
@@ -143,31 +143,31 @@ exports[`GalleryCarousel should render the component 1`] = `
             </div>
           </div>
           <div
-            class="sc-kpOJdX jtYKNo"
+            class="sc-kgoBCf kZzErs"
           >
             <div>
               <div
-                class="sc-VigVT bjMGZa"
+                class="sc-gZMcBi utXjZ"
               >
                 Birch
               </div>
               <div
-                class="sc-gqjmRU bTeHXT"
+                class="sc-iwsKbI WYfrN"
               >
                 Copy 1
               </div>
             </div>
             <div>
               <div
-                class="sc-jTzLTM MqaOT"
+                class="sc-gqjmRU cwbOMy"
               >
                 Michael Clarke
               </div>
               <div
-                class="sc-jzJRlG yhXZi"
+                class="sc-jTzLTM izCUzN"
               >
                 <button
-                  class="sc-cSHVUG cqpfkR"
+                  class="sc-fjdhpX dAzKpU"
                   data-testid="Previous button"
                   disabled=""
                 >
@@ -183,19 +183,19 @@ exports[`GalleryCarousel should render the component 1`] = `
                   </svg>
                 </button>
                 <div
-                  class="sc-kAzzGY KKbdl"
+                  class="sc-jzJRlG fFIdwf"
                 >
                   <div
-                    class="sc-chPdSV bNEloB"
+                    class="sc-cSHVUG bihZWC"
                     data-testid="Page Indicator"
                   />
                   <div
-                    class="sc-chPdSV dZtpKz"
+                    class="sc-cSHVUG hGTRKx"
                     data-testid="Page Indicator"
                   />
                 </div>
                 <button
-                  class="nextBtn sc-cSHVUG eimJYp"
+                  class="nextBtn sc-fjdhpX iFJyYg"
                   data-testid="Next Button"
                 >
                   <svg
@@ -216,23 +216,23 @@ exports[`GalleryCarousel should render the component 1`] = `
       </div>
     </div>
     <div
-      class="sc-kGXeez kZjiDa"
+      class="sc-chPdSV fzttrJ"
     >
       <div
         style="padding-left: 16px; padding-right: 16px;"
       >
         <div
-          class="sc-jTzLTM MqaOT"
+          class="sc-gqjmRU cwbOMy"
         >
           Michael Clarke
         </div>
         <div
-          class="sc-VigVT bjMGZa"
+          class="sc-gZMcBi utXjZ"
         >
           Birch
         </div>
         <div
-          class="sc-gqjmRU bTeHXT"
+          class="sc-iwsKbI WYfrN"
         >
           Copy 1
         </div>
