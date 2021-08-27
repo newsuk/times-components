@@ -1,7 +1,12 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Placeholder } from '@times-components/image';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
+import {
+  TrackingContext,
+  TrackingContextProvider
+} from '../../helpers/tracking/TrackingContextProvider';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
+import { breakpoints } from '@times-components/styleguide';
 import {
   PlaceholderContainer,
   Container,
@@ -26,6 +31,24 @@ type InfoCardData = {
 
 type InfoCardDeckData = DeckData<never, InfoCardData>;
 
+const scrollEvent = {
+  attrs: {
+    event_navigation_name:
+      'in-article component displayed : bullet point component',
+    event_navigation_browsing_method: 'automated'
+  }
+};
+
+const clickEvent = (buttonLabel: string) => ({
+  action: 'Clicked',
+  attrs: {
+    event_navigation_name: `button : ${buttonLabel}`,
+    event_navigation_browsing_method: 'click'
+  }
+});
+
+const { medium } = breakpoints;
+
 export const InfoCardBulletPoints: React.FC<{
   sectionColour: string;
 }> = ({ sectionColour }) => {
@@ -46,12 +69,18 @@ export const InfoCardBulletPoints: React.FC<{
   const { headline, label } = data.fields;
   const infoCardData = data.body.data;
   const [readMore, setReadMore] = useState(false);
-  const handleReadMore = () => {
+
+  const handleClick = (
+    fireAnalyticsEvent: (evt: TrackingContext) => void,
+    buttonLabel: string
+  ) => {
+    fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(buttonLabel));
     setReadMore(!readMore);
   };
 
   const readMoreRef = useRef<HTMLDivElement>(null);
   const [showReadMore, setShowReadMore] = useState(false);
+  const windowWidth = window.innerWidth.toString();
   const maxHeight = 350;
   useEffect(() => {
     const listContainer = readMoreRef.current;
@@ -61,33 +90,56 @@ export const InfoCardBulletPoints: React.FC<{
   }, []);
 
   return (
-    <Container sectionColour={sectionColour}>
-      <ContentContainer>
-        <Label sectionColour={sectionColour}>{label}</Label>
-        <Headline>{headline}</Headline>
-        <ListContainer
-          ref={readMoreRef}
-          readMore={readMore}
-          maxHeight={maxHeight}
-          showReadMore={showReadMore}
-        >
-          <List>
-            {infoCardData.map((row: InfoCardData, index: number) => (
-              <ListItem
-                key={index}
-                dangerouslySetInnerHTML={{
-                  __html: sanitiseCopy(row.data.copy, ['b', 'i'])
-                }}
-              />
-            ))}
-          </List>
-        </ListContainer>
-      </ContentContainer>
-      <ReadMoreContainer readMore={readMore} showReadMore={showReadMore}>
-        <ReadMoreButton onClick={handleReadMore}>
-          {readMore ? 'Collapse' : 'Read more'}
-        </ReadMoreButton>
-      </ReadMoreContainer>
-    </Container>
+    <TrackingContextProvider
+      context={{
+        object: 'InArticleBulletPoint',
+        attrs: {
+          component_type:
+            'in-article component : bullet point component: ' +
+            (showReadMore && windowWidth < medium ? 'interactive' : 'static'),
+          event_navigation_action: 'navigation',
+          component_name: `${headline}`
+        }
+      }}
+      scrolledEvent={scrollEvent}
+    >
+      {({ fireAnalyticsEvent, intersectObserverRef }) => (
+        <Container ref={intersectObserverRef} sectionColour={sectionColour}>
+          <ContentContainer>
+            <Label sectionColour={sectionColour}>{label}</Label>
+            <Headline>{headline}</Headline>
+            <ListContainer
+              ref={readMoreRef}
+              readMore={readMore}
+              maxHeight={maxHeight}
+              showReadMore={showReadMore}
+            >
+              <List>
+                {infoCardData.map((row: InfoCardData, index: number) => (
+                  <ListItem
+                    key={index}
+                    dangerouslySetInnerHTML={{
+                      __html: sanitiseCopy(row.data.copy, ['b', 'i'])
+                    }}
+                  />
+                ))}
+              </List>
+            </ListContainer>
+          </ContentContainer>
+          <ReadMoreContainer readMore={readMore} showReadMore={showReadMore}>
+            <ReadMoreButton
+              onClick={() =>
+                handleClick(
+                  fireAnalyticsEvent,
+                  readMore ? 'Collapse' : 'Read more'
+                )
+              }
+            >
+              {readMore ? 'Collapse' : 'Read more'}
+            </ReadMoreButton>
+          </ReadMoreContainer>
+        </Container>
+      )}
+    </TrackingContextProvider>
   );
 };
