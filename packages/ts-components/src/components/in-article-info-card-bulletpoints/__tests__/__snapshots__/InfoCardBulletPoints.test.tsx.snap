@@ -53,7 +53,7 @@ exports[`InfoCardBulletPoints should render the component 1`] = `
       </div>
     </div>
     <div
-      class="sc-EHOje cxnKIY"
+      class="sc-bxivhb hAzEyl"
     >
       <button
         class="sc-ifAKCX kpjxlo"
@@ -68,7 +68,7 @@ exports[`InfoCardBulletPoints should render the component 1`] = `
 exports[`InfoCardBulletPoints should render the initial loading state correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa dwiMsX"
+    class="sc-htoDjs dGjtNu"
   >
     <div>
       Placeholder
@@ -132,10 +132,10 @@ exports[`InfoCardBulletPoints tracking click read more 1`] = `
       </div>
     </div>
     <div
-      class="sc-EHOje bfAsGW"
+      class="sc-bxivhb hpabOq"
     >
       <button
-        class="sc-bZQynM kcsaTh"
+        class="sc-ifAKCX kpjxlo"
       >
         Collapse
       </button>
