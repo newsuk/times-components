@@ -32,6 +32,7 @@ Object {
       "name": "text",
     },
   ],
+  "metaDescription": "Hello World",
   "name": "Chelsea",
 }
 `;

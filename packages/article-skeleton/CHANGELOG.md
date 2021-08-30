@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.55.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.55.0...@times-components/article-skeleton@1.55.1) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.55.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.54.3...@times-components/article-skeleton@1.55.0) (2021-08-27)
+
+
+### Features
+
+* **scb-1193:** add aditional in article ad slots, restructure code to stop rendering twice ([#2781](https://github.com/newsuk/times-components/issues/2781)) ([229e0de](https://github.com/newsuk/times-components/commit/229e0de720e02a53ebd9cc33203cc48e9c42ed0b))
+
+
+
+
+
+## [1.54.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.54.2...@times-components/article-skeleton@1.54.3) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.54.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.54.1...@times-components/article-skeleton@1.54.2) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.54.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.54.0...@times-components/article-skeleton@1.54.1) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 # [1.54.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.53.0...@times-components/article-skeleton@1.54.0) (2021-08-25)
 
 

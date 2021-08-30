@@ -6,11 +6,14 @@ import { renderTreeArrayAsText } from "@times-components/markup-forest";
 
 import { propTypes as topicHeadPropTypes } from "./topic-head-prop-types";
 
-function Head({ description, name, slug }) {
-  const content =
-    description && description.length
-      ? renderTreeArrayAsText(description).substring(0, 200)
-      : `Discover expert ${name} articles from The Times and The Sunday Times.`;
+function Head({ metaDescription, description, name, slug }) {
+  let content = `Discover expert ${name} articles from The Times and The Sunday Times.`;
+
+  if (metaDescription) {
+    content = metaDescription;
+  } else if (description && description.length) {
+    content = renderTreeArrayAsText(description).substring(0, 200);
+  }
 
   return (
     <Context.Consumer>
@@ -26,9 +29,14 @@ function Head({ description, name, slug }) {
 }
 
 Head.propTypes = {
+  metaDescription: PropTypes.string,
   description: topicHeadPropTypes.description.isRequired,
   name: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired
+};
+
+Head.defaultProps = {
+  metaDescription: null
 };
 
 export default Head;

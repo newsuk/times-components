@@ -12,9 +12,9 @@ import {
   CarouselIndicator,
   CarouselContainer,
   StyledCarousel,
-  CardImg,
-  PlaceholderContainer
+  CardImg
 } from './styles';
+import { PlaceholderContainer } from '../common-styles';
 import { Arrow } from '../carousel/Arrow';
 import { AspectRatio } from '../aspect-ratio/AspectRatio';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
@@ -135,7 +135,9 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
     return infoCardSize === Layout.Wide;
   };
 
-  const [winWidth, setWidth] = useState(window.innerWidth);
+  const [winWidth, setWidth] = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 0
+  );
   const [showDisplayItem, setDisplayItem] = useState(1);
   const windowWidth = winWidth.toString();
   const updateWidth = () => setWidth(window.innerWidth);

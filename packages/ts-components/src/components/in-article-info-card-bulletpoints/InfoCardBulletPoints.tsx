@@ -8,10 +8,8 @@ import {
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import { breakpoints } from '@times-components/styleguide';
 import {
-  PlaceholderContainer,
   Container,
   ContentContainer,
-  Label,
   Headline,
   ListContainer,
   List,
@@ -19,6 +17,7 @@ import {
   ReadMoreContainer,
   ReadMoreButton
 } from './styles';
+import { PlaceholderContainer, Label } from '../common-styles';
 
 import { DeckData } from '../../helpers/fetch/types';
 

@@ -2,5 +2,6 @@ query TopicQuery($slug: Slug!) {
   topic(slug: $slug) {
     name
     description
+    metaDescription
   }
 }
