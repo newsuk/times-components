@@ -146,7 +146,7 @@ const tests = [
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}
             onVideoPress={() => {}}
-            spotAccountId=""
+            commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
           />
         </ContextProviderWithDefaults>
       );

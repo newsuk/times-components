@@ -1,4 +1,4 @@
-import { addIndexesToInlineImages } from "../src/utils";
+import { addIndexesToInlineImages } from "../../src/utils";
 
 const content = [
   {

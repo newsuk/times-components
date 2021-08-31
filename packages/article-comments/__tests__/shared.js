@@ -33,12 +33,12 @@ export default () => {
   shared();
 
   it("zero comments", () => {
-    const testInstance = renderComments({ count: 0, enabled: true });
-    expect(testInstance).toMatchSnapshot();
+    const { asFragment } = renderComments({ count: 0, enabled: true });
+    expect(asFragment()).toMatchSnapshot();
   });
 
   it("single comment", () => {
-    const testInstance = renderComments({ count: 1, enabled: true });
-    expect(testInstance).toMatchSnapshot();
+    const { asFragment } = renderComments({ count: 1, enabled: true });
+    expect(asFragment()).toMatchSnapshot();
   });
 };

@@ -19,7 +19,7 @@ class WithTrackingContext extends Component {
       <Comments
         articleId="test-article-id"
         isReadOnly={false}
-        spotAccountId="test-spotAccountId"
+        commentingConfig="test-commentingConfig"
       />
     );
   }

@@ -45,7 +45,7 @@ export const renderArticle = (data, header = null) => (
       onTopicPress={() => {}}
       onTwitterLinkPress={() => {}}
       onVideoPress={() => {}}
-      spotAccountId=""
+      commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
     />
   </ContextProviderWithDefaults>
 );

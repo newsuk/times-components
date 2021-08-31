@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.6.27...@times-components/responsive@0.7.0) (2021-08-31)
+
+
+### Features
+
+* **TE-178:**  real name commenting ([#2780](https://github.com/newsuk/times-components/issues/2780)) ([4a51ffe](https://github.com/newsuk/times-components/commit/4a51ffefb0b37720f9328f0baaa940e1083c87ec))
+
+
+
+
+
 ## [0.6.27](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.6.26...@times-components/responsive@0.6.27) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/responsive
