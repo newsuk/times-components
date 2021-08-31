@@ -408,7 +408,7 @@ export default () => {
           onTopicPress={() => {}}
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
-          spotAccountId=""
+          commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
           paidContentClassName="paidContentClassName"
         />
       </ContextProviderWithDefaults>

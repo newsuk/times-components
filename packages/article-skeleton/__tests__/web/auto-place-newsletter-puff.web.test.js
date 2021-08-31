@@ -94,7 +94,7 @@ const renderArticle = (data, isPreview = false) => (
         onTopicPress={() => {}}
         onTwitterLinkPress={() => {}}
         onVideoPress={() => {}}
-        spotAccountId=""
+        commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
         isPreview={isPreview}
         inlineRelatedArticlesFlag
       />

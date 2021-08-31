@@ -1,5 +1,7 @@
 import React from "react";
-import TestRenderer from "react-test-renderer";
+import { render } from "@testing-library/react";
+import "@testing-library/jest-dom";
+
 import shared from "../shared";
 import ArticleComments from "../../src/article-comments";
 
@@ -11,7 +13,7 @@ it("Render comments label, when comments are loaded", () => {
     startSSO: () => {}
   };
 
-  const comments = TestRenderer.create(
+  const { asFragment } = render(
     <ArticleComments
       articleId="dummy-article-id"
       commentCount={0}
@@ -19,20 +21,16 @@ it("Render comments label, when comments are loaded", () => {
       isEnabled
       onCommentGuidelinesPress={() => {}}
       onCommentsPress={() => {}}
-      spotAccountId="test-id"
+      commentingConfig={{
+        account: {
+          current: "CurrentSpotID",
+          readonly: "ReadOnlySpotID"
+        },
+        switchOver: "2020-08-10T16:00:00.000Z"
+      }}
       url="dummy-article-url"
-    />,
-    {
-      createNodeMock: element => {
-        if (element.type === "div") {
-          return {
-            appendChild: () => {}
-          };
-        }
-        return null;
-      }
-    }
+    />
   );
 
-  expect(comments).toMatchSnapshot();
+  expect(asFragment()).toMatchSnapshot();
 });

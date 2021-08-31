@@ -65,7 +65,7 @@ class ArticlePage extends Component {
       logoUrl,
       navigationMode,
       receiveChildList,
-      spotAccountId,
+      commentingConfig,
       paidContentClassName,
       isPreview,
       additionalRelatedArticlesFlag,
@@ -88,7 +88,7 @@ class ArticlePage extends Component {
         logoUrl={logoUrl}
         receiveChildList={receiveChildList}
         navigationMode={navigationMode}
-        spotAccountId={spotAccountId}
+        commentingConfig={commentingConfig}
         paidContentClassName={paidContentClassName}
         isPreview={isPreview}
         additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}

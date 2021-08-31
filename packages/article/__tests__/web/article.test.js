@@ -4,9 +4,10 @@ import ArticleMainStandard from "@times-components/article-main-standard";
 import ArticleMainComment from "@times-components/article-main-comment";
 import ArticleMagazineStandard from "@times-components/article-magazine-standard";
 import ArticleMagazineComment from "@times-components/article-magazine-comment";
-import Article from "../src/article";
+import Article from "../../src/article";
 
 jest.mock("@times-components/image", () => "TimesImage");
+jest.mock("react-helmet-async", () => ({ Helmet: "Helmet" }));
 
 const requiredProps = {
   adConfig: {},
@@ -47,7 +48,13 @@ describe("Article", () => {
 
   it("renders with ArticleMainStandard if an unknown template is chosen", () => {
     const testRenderer = TestRenderer.create(
-      <Article article={{ template: "undefined" }} {...requiredProps} />
+      <Article
+        article={{
+          publishedTime: "2015-03-23T19:39:39.000Z",
+          template: "undefined"
+        }}
+        {...requiredProps}
+      />
     );
     const testInstance = testRenderer.root;
 

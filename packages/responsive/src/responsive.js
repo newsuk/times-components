@@ -42,7 +42,6 @@ class Responsive extends Component {
   onDimensionChange({ window: { fontScale, width } }) {
     const { fontScale: oldScale, width: oldWidth } = this.state;
     if (fontScale !== oldScale || (oldWidth && width !== oldWidth)) {
-      console.log("UPDATE", fontScale, oldScale, width, oldWidth);
       this.setState(calculateState(width, fontScale));
     }
   }

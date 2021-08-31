@@ -29,8 +29,16 @@ Array [
   </div>,
   <ArticleComments
     articleId="dummy-article-id"
+    commentingConfig={
+      Object {
+        "account": Object {
+          "current": "CurrentSpotID",
+          "readonly": "ReadOnlySpotID",
+        },
+        "switchOver": "2020-08-10T16:00:00.000Z",
+      }
+    }
     isEnabled={true}
-    spotAccountId="dummy-spot-id"
   />,
 ]
 `;
@@ -74,9 +82,17 @@ Array [
   </div>,
   <ArticleComments
     articleId="dummy-article-id"
+    commentingConfig={
+      Object {
+        "account": Object {
+          "current": "CurrentSpotID",
+          "readonly": "ReadOnlySpotID",
+        },
+        "switchOver": "2020-08-10T16:00:00.000Z",
+      }
+    }
     isEnabled={true}
     isReadOnly={true}
-    spotAccountId="dummy-spot-id"
   />,
 ]
 `;
@@ -110,8 +126,16 @@ Array [
   </div>,
   <ArticleComments
     articleId="dummy-article-id"
+    commentingConfig={
+      Object {
+        "account": Object {
+          "current": "CurrentSpotID",
+          "readonly": "ReadOnlySpotID",
+        },
+        "switchOver": "2020-08-10T16:00:00.000Z",
+      }
+    }
     isEnabled={true}
-    spotAccountId="dummy-spot-id"
   />,
 ]
 `;

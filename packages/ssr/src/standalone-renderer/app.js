@@ -76,7 +76,14 @@ server.get("/article/:id", (request, response) => {
     query: { pq }
   } = request;
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
-  const spotAccountId = process.env.SPOT_ID;
+  const commentingConfig = {
+    account: {
+      current: process.env.SPOT_ID,
+      readonly: process.env.SPOT_ID
+    },
+    switchOver: "2020-08-10T16:00:00.000Z"
+  };
+
   const headers = process.env.GRAPHQL_TOKEN
     ? {
         "nuk-tpatoken": process.env.GRAPHQL_TOKEN
@@ -96,7 +103,7 @@ server.get("/article/:id", (request, response) => {
         graphqlApiUrl,
         usePersistedQueries: !!pq,
         logger,
-        spotAccountId
+        commentingConfig
       },
       userState
     )

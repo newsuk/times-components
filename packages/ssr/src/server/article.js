@@ -17,7 +17,7 @@ module.exports = (
     makeArticleUrl,
     makeTopicUrl,
     navigationMode,
-    spotAccountId,
+    commentingConfig,
     paidContentClassName,
     isPreview,
     additionalRelatedArticlesFlag,
@@ -49,9 +49,9 @@ module.exports = (
       `Make topic url function is required. Received ${makeTopicUrl}`
     );
   }
-  if (typeof spotAccountId !== "string") {
+  if (typeof commentingConfig !== "object") {
     throw new Error(
-      `SpotIM account ID should be a string. Received ${spotAccountId}`
+      `SpotIM account ID should be an object. Received ${commentingConfig}`
     );
   }
 
@@ -71,7 +71,7 @@ module.exports = (
       makeTopicUrl,
       getFallbackThumbnailUrl169,
       navigationMode,
-      spotAccountId,
+      commentingConfig,
       userState,
       paidContentClassName,
       isPreview,
