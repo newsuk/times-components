@@ -9,5 +9,6 @@ query AuthorQuery($slug: Slug!) {
     jobTitle
     name
     twitter
+    metaDescription
   }
 }

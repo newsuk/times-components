@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.26.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.25.7...@times-components/provider@1.26.0) (2021-08-27)
+
+
+### Features
+
+* **TD-49:** added meta description to author and topic pages ([#2717](https://github.com/newsuk/times-components/issues/2717)) ([5b36a3c](https://github.com/newsuk/times-components/commit/5b36a3c1a22b7da30c7e5de1a1a118a4dffd48f8))
+
+
+
+
+
 ## [1.25.7](https://github.com/newsuk/times-components/compare/@times-components/provider@1.25.6...@times-components/provider@1.25.7) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/provider

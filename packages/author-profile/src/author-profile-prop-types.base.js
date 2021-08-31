@@ -7,7 +7,8 @@ export const propTypes = {
     image: authorProfileHeadPropTypes.uri,
     jobTitle: authorProfileHeadPropTypes.jobTitle,
     name: authorProfileHeadPropTypes.name,
-    twitter: authorProfileHeadPropTypes.twitter
+    twitter: authorProfileHeadPropTypes.twitter,
+    metaDescription: PropTypes.string
   }),
   error: PropTypes.object,
   isLoading: authorProfileHeadPropTypes.isLoading,

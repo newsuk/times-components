@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.3.39...@times-components/author-profile@6.4.0) (2021-08-27)
+
+
+### Features
+
+* **TD-49:** added meta description to author and topic pages ([#2717](https://github.com/newsuk/times-components/issues/2717)) ([5b36a3c](https://github.com/newsuk/times-components/commit/5b36a3c1a22b7da30c7e5de1a1a118a4dffd48f8))
+
+
+
+
+
 ## [6.3.39](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.3.38...@times-components/author-profile@6.3.39) (2021-08-23)
 
 **Note:** Version bump only for package @times-components/author-profile

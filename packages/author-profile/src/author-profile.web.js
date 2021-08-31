@@ -26,7 +26,8 @@ const AuthorProfile = ({
   page,
   pageSize: initPageSize,
   refetch,
-  slug
+  slug,
+  metaDescription
 }) => {
   const emptyStateMessage =
     "Unfortunately, there are no articles relating to this author";
@@ -110,7 +111,11 @@ const AuthorProfile = ({
 
         return (
           <Responsive>
-            <Head description={biography} name={name} />
+            <Head
+              metaDescription={metaDescription}
+              description={biography}
+              name={name}
+            />
             <ArticleList
               articleListHeader={articleListHeader}
               articles={get(data, "articles.list", [])}
