@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.56.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.55.1...@times-components/article-skeleton@1.56.0) (2021-08-31)
+
+
+### Features
+
+* **TE-178:**  real name commenting ([#2780](https://github.com/newsuk/times-components/issues/2780)) ([4a51ffe](https://github.com/newsuk/times-components/commit/4a51ffefb0b37720f9328f0baaa940e1083c87ec))
+
+
+
+
+
 ## [1.55.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.55.0...@times-components/article-skeleton@1.55.1) (2021-08-27)
 
 **Note:** Version bump only for package @times-components/article-skeleton
