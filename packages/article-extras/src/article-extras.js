@@ -33,7 +33,8 @@ const ArticleExtras = ({
   topics,
   additionalRelatedArticlesFlag,
   latestFromSectionFlag,
-  latestFromSection
+  latestFromSection,
+  publishedTime
 }) => {
   const [
     algoliaRelatedArticleSlice,
@@ -128,6 +129,7 @@ const ArticleExtras = ({
         <ArticleComments
           articleId={articleId}
           isEnabled={commentsEnabled}
+          publishedTime={publishedTime}
           commentingConfig={commentingConfig}
         />
       </UserState>
@@ -138,6 +140,7 @@ const ArticleExtras = ({
 ArticleExtras.propTypes = {
   analyticsStream: PropTypes.func.isRequired,
   articleId: PropTypes.string.isRequired,
+  publishedTime: PropTypes.string.isRequired,
   articleUrl: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
   commentsEnabled: PropTypes.bool.isRequired,

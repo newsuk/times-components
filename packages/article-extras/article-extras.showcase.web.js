@@ -20,7 +20,7 @@ const algoliaSearchKeys = {
 const commentingConfig = {
   account: {
     current: process.env.STORYBOOK_COMMENTING_CURRENT_ID || "CurrentSpotID",
-    readonly: process.env.STORYBOOK_COMMENTING_READONLY_ID || "ReadOnlySpotID"
+    readOnly: process.env.STORYBOOK_COMMENTING_READONLY_ID || "ReadOnlySpotID"
   },
   switchOver:
     process.env.STORYBOOK_COMMENTING_SWITCHOVER || "2020-08-10T16:00:00.000Z"
