@@ -80,7 +80,7 @@ class ArticlePage extends Component {
       logoUrl,
       navigationMode,
       receiveChildList,
-      spotAccountId,
+      commentingConfig,
       paidContentClassName,
       isPreview,
       additionalRelatedArticlesFlag,
@@ -105,7 +105,7 @@ class ArticlePage extends Component {
           getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
           receiveChildList={receiveChildList}
           navigationMode={navigationMode}
-          spotAccountId={spotAccountId}
+          commentingConfig={commentingConfig}
           paidContentClassName={paidContentClassName}
           isPreview={isPreview}
           additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}

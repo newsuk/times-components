@@ -20,6 +20,14 @@ const algoliaSearchKeys = {
   indexName: ""
 };
 
+const commentingConfig = {
+  account: {
+    current: "CurrentSpotID",
+    readonly: "ReadOnlySpotID"
+  },
+  switchOver: "2020-08-10T16:00:00.000Z"
+};
+
 export default () => {
   addSerializers(
     expect,
@@ -55,7 +63,7 @@ export default () => {
               registerNode={() => {}}
               relatedArticleSlice={relatedArticleSlice}
               relatedArticlesVisible
-              spotAccountId="dummy-spot-id"
+              commentingConfig={commentingConfig}
               topics={topics}
             />
           </AlgoliaSearchProvider>
@@ -82,7 +90,7 @@ export default () => {
               registerNode={() => {}}
               relatedArticleSlice={relatedArticleSlice}
               relatedArticlesVisible
-              spotAccountId="dummy-spot-id"
+              commentingConfig={commentingConfig}
               topics={topics}
             />
           </AlgoliaSearchProvider>
@@ -108,7 +116,7 @@ export default () => {
               registerNode={() => {}}
               relatedArticleSlice={relatedArticleSlice}
               relatedArticlesVisible
-              spotAccountId="dummy-spot-id"
+              commentingConfig={commentingConfig}
               topics={topics}
             />
           </AlgoliaSearchProvider>
@@ -134,7 +142,7 @@ export default () => {
               registerNode={() => {}}
               relatedArticleSlice={relatedArticleSlice}
               relatedArticlesVisible
-              spotAccountId="dummy-spot-id"
+              commentingConfig={commentingConfig}
               topics={topics}
               additionalRelatedArticlesFlag
               inlineRelatedArticlesFlag

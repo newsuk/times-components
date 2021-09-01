@@ -1,53 +1,135 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render comments label, when comments are loaded 1`] = `
-<div
-  id="comments-container"
->
-  <div />
-</div>
+<DocumentFragment>
+  <div
+    class="responsiveweb__CommentContainer-sc-1aeih1c-0 iBPokG"
+    id="comments-container"
+  >
+    <div>
+      <script
+        async="async"
+        data-livefyre-url="dummy-article-id"
+        data-post-id="dummy-article-id"
+        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
+        data-seo-enabled="true"
+        data-spotim-module="spotim-launcher"
+        src="https://launcher.spot.im/spot/ReadOnlySpotID"
+      />
+    </div>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`disabled comments 1`] = `
-<div>
-  <p>
-    Comments for this article have been turned off
-  </p>
-  <p>
-    Comments are subject to our community guidelines, which can be viewed
-     
-    <a
-      data-focusable={true}
-      dir="auto"
-      role="link"
+<DocumentFragment>
+  <div
+    class="responsiveweb__CommentContainer-sc-1aeih1c-0 iBPokG"
+  >
+    <p
+      class="responsiveweb__CommentDisabledHeadline-sc-1aeih1c-3 epDUTI"
     >
-      here
-    </a>
-    .
-  </p>
-</div>
+      Comments for this article have been turned off
+    </p>
+    <p
+      class="responsiveweb__CommentDisabledGuidelines-sc-1aeih1c-2 gDjJRs"
+    >
+      Comments are subject to our community guidelines, which can be viewed 
+      <a
+        class="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-textDecorationLine-1ddef8g"
+        data-focusable="true"
+        dir="auto"
+        href="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+        role="link"
+      >
+        here
+      </a>
+      .
+    </p>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`enabled comments 1`] = `
-<div
-  id="comments-container"
->
-  <div />
-</div>
+<DocumentFragment>
+  <div
+    class="responsiveweb__CommentContainer-sc-1aeih1c-0 iBPokG"
+    id="comments-container"
+  >
+    <div>
+      <script
+        async="async"
+        data-livefyre-url="dummy-article-id"
+        data-post-id="dummy-article-id"
+        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
+        data-seo-enabled="true"
+        data-spotim-module="spotim-launcher"
+        src="https://launcher.spot.im/spot/CurrentSpotID"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`pre-switchover comments 1`] = `
+<DocumentFragment>
+  <div
+    class="responsiveweb__CommentContainer-sc-1aeih1c-0 iBPokG"
+    id="comments-container"
+  >
+    <div>
+      <script
+        async="async"
+        data-livefyre-url="dummy-article-id"
+        data-post-id="dummy-article-id"
+        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
+        data-seo-enabled="true"
+        data-spotim-module="spotim-launcher"
+        src="https://launcher.spot.im/spot/ReadOnlySpotID"
+      />
+    </div>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`single comment 1`] = `
-<div
-  id="comments-container"
->
-  <div />
-</div>
+<DocumentFragment>
+  <div
+    class="responsiveweb__CommentContainer-sc-1aeih1c-0 iBPokG"
+    id="comments-container"
+  >
+    <div>
+      <script
+        async="async"
+        data-livefyre-url="dummy-article-id"
+        data-post-id="dummy-article-id"
+        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
+        data-seo-enabled="true"
+        data-spotim-module="spotim-launcher"
+        src="https://launcher.spot.im/spot/CurrentSpotID"
+      />
+    </div>
+  </div>
+</DocumentFragment>
 `;
 
 exports[`zero comments 1`] = `
-<div
-  id="comments-container"
->
-  <div />
-</div>
+<DocumentFragment>
+  <div
+    class="responsiveweb__CommentContainer-sc-1aeih1c-0 iBPokG"
+    id="comments-container"
+  >
+    <div>
+      <script
+        async="async"
+        data-livefyre-url="dummy-article-id"
+        data-post-id="dummy-article-id"
+        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
+        data-seo-enabled="true"
+        data-spotim-module="spotim-launcher"
+        src="https://launcher.spot.im/spot/CurrentSpotID"
+      />
+    </div>
+  </div>
+</DocumentFragment>
 `;

@@ -347,7 +347,15 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
+          commentingConfig={
+            Object {
+              "account": Object {
+                "current": "dummiy-spotim-id",
+              },
+            }
+          }
           commentsEnabled={true}
+          publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
               "items": Array [
@@ -394,7 +402,6 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
           relatedArticlesVisible={false}
           savingEnabled={true}
           sharingEnabled={true}
-          spotAccountId=""
           topics={
             Array [
               Object {
@@ -741,7 +748,15 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
+          commentingConfig={
+            Object {
+              "account": Object {
+                "current": "dummiy-spotim-id",
+              },
+            }
+          }
           commentsEnabled={true}
+          publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
               "items": Array [
@@ -788,7 +803,6 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
           relatedArticlesVisible={false}
           savingEnabled={true}
           sharingEnabled={true}
-          spotAccountId=""
           topics={
             Array [
               Object {

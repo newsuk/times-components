@@ -1,4 +1,4 @@
-import { getMediaList } from "../src/utils";
+import { getMediaList } from "../../src/utils";
 
 const content = [
   {

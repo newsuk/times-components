@@ -48,7 +48,7 @@ const ArticleSkeleton = ({
   Header,
   logoUrl,
   receiveChildList,
-  spotAccountId,
+  commentingConfig,
   paidContentClassName,
   isPreview,
   additionalRelatedArticlesFlag,
@@ -74,7 +74,8 @@ const ArticleSkeleton = ({
     relatedArticleSlice,
     template,
     savingEnabled,
-    sharingEnabled
+    sharingEnabled,
+    publishedTime
   } = article;
 
   const articleContentReducers = [
@@ -212,6 +213,7 @@ const ArticleSkeleton = ({
                         articleId={articleId}
                         articleHeadline={headline}
                         articleUrl={url}
+                        publishedTime={publishedTime}
                         savingEnabled={savingEnabled}
                         sharingEnabled={sharingEnabled}
                         commentsEnabled={commentsEnabled}
@@ -220,7 +222,7 @@ const ArticleSkeleton = ({
                         relatedArticlesVisible={
                           !!observed.get("related-articles")
                         }
-                        spotAccountId={spotAccountId}
+                        commentingConfig={commentingConfig}
                         topics={topics}
                         additionalRelatedArticlesFlag={
                           additionalRelatedArticlesFlag

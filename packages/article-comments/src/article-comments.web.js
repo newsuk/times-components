@@ -3,12 +3,19 @@ import PropTypes from "prop-types";
 import Comments from "./comments";
 import DisabledComments from "./disabled-comments";
 
-const ArticleComments = ({ articleId, isEnabled, isReadOnly, spotAccountId }) =>
+const ArticleComments = ({
+  articleId,
+  publishedTime,
+  isEnabled,
+  isReadOnly,
+  commentingConfig
+}) =>
   isEnabled ? (
     <Comments
       articleId={articleId}
+      publishedTime={publishedTime}
       isReadOnly={isReadOnly}
-      spotAccountId={spotAccountId}
+      commentingConfig={commentingConfig}
     />
   ) : (
     <DisabledComments />
@@ -16,9 +23,16 @@ const ArticleComments = ({ articleId, isEnabled, isReadOnly, spotAccountId }) =>
 
 ArticleComments.propTypes = {
   articleId: PropTypes.string.isRequired,
+  publishedTime: PropTypes.string.isRequired,
   isEnabled: PropTypes.bool.isRequired,
   isReadOnly: PropTypes.bool,
-  spotAccountId: PropTypes.string.isRequired
+  commentingConfig: PropTypes.shape({
+    accounts: PropTypes.shape({
+      current: PropTypes.string.isRequired,
+      readOnly: PropTypes.string.isRequired
+    }),
+    switchOver: PropTypes.string.isRequired
+  }).isRequired
 };
 
 ArticleComments.defaultProps = {

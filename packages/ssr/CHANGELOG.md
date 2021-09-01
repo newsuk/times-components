@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.26.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.25.62...@times-components/ssr@2.26.0) (2021-08-31)
+
+
+### Features
+
+* **TE-178:**  real name commenting ([#2780](https://github.com/newsuk/times-components/issues/2780)) ([4a51ffe](https://github.com/newsuk/times-components/commit/4a51ffefb0b37720f9328f0baaa940e1083c87ec))
+
+
+
+
+
 ## [2.25.62](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.25.61...@times-components/ssr@2.25.62) (2021-08-27)
 
 **Note:** Version bump only for package @times-components/ssr

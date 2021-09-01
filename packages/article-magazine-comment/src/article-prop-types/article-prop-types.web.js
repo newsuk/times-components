@@ -6,7 +6,7 @@ import {
 
 const articlePropTypes = {
   ...articlePagePropTypes,
-  spotAccountId: PropTypes.string.isRequired,
+  commentingConfig: PropTypes.string.isRequired,
   navigationMode: PropTypes.shape({}).isRequired
 };
 

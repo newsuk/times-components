@@ -29,7 +29,7 @@ const ArticleExtras = ({
   articleHeadline,
   relatedArticleSlice,
   relatedArticlesVisible,
-  spotAccountId,
+  commentingConfig,
   topics,
   additionalRelatedArticlesFlag,
   latestFromSectionFlag,
@@ -120,7 +120,7 @@ const ArticleExtras = ({
           <ArticleComments
             articleId={articleId}
             isEnabled={commentsEnabled}
-            spotAccountId={spotAccountId}
+            commentingConfig={commentingConfig}
             isReadOnly
           />
         }
@@ -128,7 +128,7 @@ const ArticleExtras = ({
         <ArticleComments
           articleId={articleId}
           isEnabled={commentsEnabled}
-          spotAccountId={spotAccountId}
+          commentingConfig={commentingConfig}
         />
       </UserState>
     </UserState>
@@ -144,7 +144,7 @@ ArticleExtras.propTypes = {
   registerNode: PropTypes.func.isRequired,
   relatedArticleSlice: PropTypes.shape({}),
   relatedArticlesVisible: PropTypes.bool.isRequired,
-  spotAccountId: PropTypes.string,
+  commentingConfig: PropTypes.string,
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
@@ -155,7 +155,7 @@ ArticleExtras.propTypes = {
 
 ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
-  spotAccountId: null,
+  commentingConfig: null,
   topics: null,
   latestFromSection: null
 };
