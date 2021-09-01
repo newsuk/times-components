@@ -1,70 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InfoCardBulletPoints click read more 1`] = `
-<DocumentFragment>
-  <div
-    class="sc-bdVaJa isYHgJ"
-  >
-    <div
-      class="sc-bwzfXH blmhpN"
-    >
-      <div
-        class="sc-dnqmqq cqnspX"
-      >
-        Venezuelan Politics
-      </div>
-      <div
-        class="sc-htpNat fOtYJJ"
-      >
-        With a new president officially in place, what will happen?
-      </div>
-      <div
-        class="sc-EHOje imuKZg"
-      >
-        <ul
-          class="sc-bZQynM bROYtx"
-        >
-          <li
-            class="sc-gzVnrw fWCCLc"
-          >
-            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum
-          </li>
-          <li
-            class="sc-gzVnrw fWCCLc"
-          >
-            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient al
-          </li>
-          <li
-            class="sc-gzVnrw fWCCLc"
-          >
-            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient alParturient mi dictumst suspendisse torquent primis potenti donec in parturient altorquent primis potenti donec in parturient al
-          </li>
-          <li
-            class="sc-gzVnrw fWCCLc"
-          >
-            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.
-          </li>
-          <li
-            class="sc-gzVnrw fWCCLc"
-          >
-            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper idParturient mi dictumst suspendisse torquent priParturient mi dictumst suspendisse torquent primi
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div
-      class="sc-bxivhb hpabOq"
-    >
-      <button
-        class="sc-ifAKCX kpjxlo"
-      >
-        Collapse
-      </button>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
 exports[`InfoCardBulletPoints should render the component 1`] = `
 <DocumentFragment>
   <div
@@ -143,3 +78,68 @@ exports[`InfoCardBulletPoints should render the initial loading state correctly 
 `;
 
 exports[`InfoCardBulletPoints should render the initial read more state correctly 1`] = `<DocumentFragment />`;
+
+exports[`InfoCardBulletPoints tracking click read more 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa isYHgJ"
+  >
+    <div
+      class="sc-bwzfXH blmhpN"
+    >
+      <div
+        class="sc-dnqmqq cqnspX"
+      >
+        Venezuelan Politics
+      </div>
+      <div
+        class="sc-htpNat fOtYJJ"
+      >
+        With a new president officially in place, what will happen?
+      </div>
+      <div
+        class="sc-EHOje imuKZg"
+      >
+        <ul
+          class="sc-bZQynM bROYtx"
+        >
+          <li
+            class="sc-gzVnrw fWCCLc"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum
+          </li>
+          <li
+            class="sc-gzVnrw fWCCLc"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient al
+          </li>
+          <li
+            class="sc-gzVnrw fWCCLc"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient alParturient mi dictumst suspendisse torquent primis potenti donec in parturient altorquent primis potenti donec in parturient al
+          </li>
+          <li
+            class="sc-gzVnrw fWCCLc"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.
+          </li>
+          <li
+            class="sc-gzVnrw fWCCLc"
+          >
+            Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper idParturient mi dictumst suspendisse torquent priParturient mi dictumst suspendisse torquent primi
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="sc-bxivhb hpabOq"
+    >
+      <button
+        class="sc-ifAKCX kpjxlo"
+      >
+        Collapse
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
