@@ -74,7 +74,7 @@ class Comments extends Component {
           return null;
       }
     };
-    let spotAccountId = commentingConfig.account.readonly;
+    let spotAccountId = commentingConfig.account.readOnly;
     if (commentingConfig && commentingConfig.switchOver) {
       const switchOverDate = commentingConfig.switchOver;
       if (publishedTime > switchOverDate) {

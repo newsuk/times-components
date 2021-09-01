@@ -3,7 +3,7 @@
 exports[`Render comments label, when comments are loaded 1`] = `
 <DocumentFragment>
   <div
-    class="responsiveweb__CommentContainer-sc-1aeih1c-0 iBPokG"
+    class="responsive__CommentContainer-sc-2j1dkf-0 boWpIp"
     id="comments-container"
   >
     <div>
@@ -24,15 +24,15 @@ exports[`Render comments label, when comments are loaded 1`] = `
 exports[`disabled comments 1`] = `
 <DocumentFragment>
   <div
-    class="responsiveweb__CommentContainer-sc-1aeih1c-0 iBPokG"
+    class="responsive__CommentContainer-sc-2j1dkf-0 boWpIp"
   >
     <p
-      class="responsiveweb__CommentDisabledHeadline-sc-1aeih1c-3 epDUTI"
+      class="responsive__CommentDisabledHeadline-sc-2j1dkf-3 bwIUkS"
     >
       Comments for this article have been turned off
     </p>
     <p
-      class="responsiveweb__CommentDisabledGuidelines-sc-1aeih1c-2 gDjJRs"
+      class="responsive__CommentDisabledGuidelines-sc-2j1dkf-2 gGyJZd"
     >
       Comments are subject to our community guidelines, which can be viewed 
       <a
@@ -53,7 +53,7 @@ exports[`disabled comments 1`] = `
 exports[`enabled comments 1`] = `
 <DocumentFragment>
   <div
-    class="responsiveweb__CommentContainer-sc-1aeih1c-0 iBPokG"
+    class="responsive__CommentContainer-sc-2j1dkf-0 boWpIp"
     id="comments-container"
   >
     <div>
@@ -74,7 +74,7 @@ exports[`enabled comments 1`] = `
 exports[`pre-switchover comments 1`] = `
 <DocumentFragment>
   <div
-    class="responsiveweb__CommentContainer-sc-1aeih1c-0 iBPokG"
+    class="responsive__CommentContainer-sc-2j1dkf-0 boWpIp"
     id="comments-container"
   >
     <div>
@@ -95,7 +95,7 @@ exports[`pre-switchover comments 1`] = `
 exports[`single comment 1`] = `
 <DocumentFragment>
   <div
-    class="responsiveweb__CommentContainer-sc-1aeih1c-0 iBPokG"
+    class="responsive__CommentContainer-sc-2j1dkf-0 boWpIp"
     id="comments-container"
   >
     <div>
@@ -116,7 +116,7 @@ exports[`single comment 1`] = `
 exports[`zero comments 1`] = `
 <DocumentFragment>
   <div
-    class="responsiveweb__CommentContainer-sc-1aeih1c-0 iBPokG"
+    class="responsive__CommentContainer-sc-2j1dkf-0 boWpIp"
     id="comments-container"
   >
     <div>

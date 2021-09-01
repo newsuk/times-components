@@ -2,8 +2,8 @@
   "name": "@times-components/article-skeleton",
   "version": "1.56.2",
   "description": "The article skeleton",
-  "main": "dist/article-skeleton.web",
-  "dev": "src/article-skeleton.web",
+  "main": "dist/article-skeleton",
+  "dev": "src/article-skeleton",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
