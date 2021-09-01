@@ -23,7 +23,7 @@ const algoliaSearchKeys = {
 const commentingConfig = {
   account: {
     current: "CurrentSpotID",
-    readonly: "ReadOnlySpotID"
+    readOnly: "ReadOnlySpotID"
   },
   switchOver: "2020-08-10T16:00:00.000Z"
 };
@@ -65,6 +65,7 @@ export default () => {
               relatedArticlesVisible
               commentingConfig={commentingConfig}
               topics={topics}
+              publishedTime="2020-07-10T16:00:00.000Z"
             />
           </AlgoliaSearchProvider>
         );
@@ -92,6 +93,7 @@ export default () => {
               relatedArticlesVisible
               commentingConfig={commentingConfig}
               topics={topics}
+              publishedTime="2020-07-10T16:00:00.000Z"
             />
           </AlgoliaSearchProvider>
         );
@@ -118,6 +120,7 @@ export default () => {
               relatedArticlesVisible
               commentingConfig={commentingConfig}
               topics={topics}
+              publishedTime="2020-07-10T16:00:00.000Z"
             />
           </AlgoliaSearchProvider>
         );
@@ -146,6 +149,7 @@ export default () => {
               topics={topics}
               additionalRelatedArticlesFlag
               inlineRelatedArticlesFlag
+              publishedTime="2020-07-10T16:00:00.000Z"
             />
           </AlgoliaSearchProvider>
         );

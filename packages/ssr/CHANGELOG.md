@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.27.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.26.2...@times-components/ssr@2.27.0) (2021-09-01)
+
+
+### Features
+
+* **TE-178:** Real Name Commenting - didn't pass the publishedTime up from article-extra to article-comment. Also changed a typo to change `readonly` to `readOnly` ([#2785](https://github.com/newsuk/times-components/issues/2785)) ([9c13a06](https://github.com/newsuk/times-components/commit/9c13a069525f9f3607daed6a3182a689f0697991))
+
+
+
+
+
 ## [2.26.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.26.1...@times-components/ssr@2.26.2) (2021-09-01)
 
 **Note:** Version bump only for package @times-components/ssr

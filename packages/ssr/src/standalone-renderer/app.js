@@ -79,7 +79,7 @@ server.get("/article/:id", (request, response) => {
   const commentingConfig = {
     account: {
       current: process.env.SPOT_ID,
-      readonly: process.env.SPOT_ID
+      readOnly: process.env.SPOT_ID
     },
     switchOver: "2020-08-10T16:00:00.000Z"
   };
