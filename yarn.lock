@@ -3705,34 +3705,6 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
-"@times-components/ts-components@1.12.7":
-  version "1.12.7"
-  resolved "https://registry.yarnpkg.com/@times-components/ts-components/-/ts-components-1.12.7.tgz#ebf844d2c4ae1bc2498c62e60a205e3529492437"
-  integrity sha512-XmV3XhVXScW3HzU9CmIy8uIm7SWiCAJ/I2fMBLAEXZHNqmit8d+Aa+myKSnXqwQCO4PI881oZ2PqEH97pfSkRg==
-  dependencies:
-    "@times-components/button" "2.4.64"
-    "@times-components/date-publication" "0.21.61"
-    "@times-components/icons" "2.16.3"
-    "@times-components/image" "6.8.6"
-    "@times-components/link" "3.6.44"
-    "@times-components/provider" "1.26.0"
-    "@times-components/provider-queries" "2.15.0"
-    "@times-components/related-articles" "6.6.12"
-    "@times-components/styleguide" "3.38.22"
-    "@times-components/ts-slices" "1.1.5"
-    "@times-components/utils" "6.5.6"
-    algoliasearch "4.9.0"
-    graphql "14.2.1"
-    isomorphic-unfetch "3.1.0"
-    lodash.get "4.4.2"
-    lodash.keyby "4.6.0"
-    lodash.merge "4.6.2"
-    react "16.9.0"
-    react-apollo "2.5.5"
-    react-elastic-carousel "^0.11.5"
-    regenerator-runtime "0.13.7"
-    styled-components "4.3.2"
-
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
