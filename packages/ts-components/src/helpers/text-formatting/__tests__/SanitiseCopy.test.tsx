@@ -1,6 +1,6 @@
 import { sanitiseCopy } from '../SanitiseCopy';
 
-describe('<SanitiseCopy>', () => {
+describe('SanitiseCopy', () => {
   it('sanitise html entities', async () => {
     const copy = sanitiseCopy('Spotify&#8217;s most popular songs');
     expect(copy).toBe('Spotify’s most popular songs');
