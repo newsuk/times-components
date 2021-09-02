@@ -8,12 +8,19 @@ import {
 import { Label } from '../common-styles';
 import { InfoCardData } from './InfoCard';
 
-export const Card: React.FC<{
+export type CardProps = {
   headline: string;
   label: string;
   sectionColour: string;
   data: InfoCardData;
-}> = ({ sectionColour, label, headline, children }) => (
+};
+
+export const Card: React.FC<CardProps> = ({
+  sectionColour,
+  label,
+  headline,
+  children
+}) => (
   <CardContainer>
     <CardContent>
       <Label sectionColour={sectionColour}>{label}</Label>
