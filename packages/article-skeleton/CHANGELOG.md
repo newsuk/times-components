@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.58.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.57.0...@times-components/article-skeleton@1.58.0) (2021-09-02)
+
+
+### Features
+
+* **scb-1193:** add aditional in article ad slots, add title to wrapper ([#2786](https://github.com/newsuk/times-components/issues/2786)) ([020cd5b](https://github.com/newsuk/times-components/commit/020cd5baf6e272726eea01d70553eba08c5ccd4f))
+
+
+
+
+
+# [1.57.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.56.2...@times-components/article-skeleton@1.57.0) (2021-09-01)
+
+
+### Features
+
+* **TE-178:** Real Name Commenting - didn't pass the publishedTime up from article-extra to article-comment. Also changed a typo to change `readonly` to `readOnly` ([#2785](https://github.com/newsuk/times-components/issues/2785)) ([9c13a06](https://github.com/newsuk/times-components/commit/9c13a069525f9f3607daed6a3182a689f0697991))
+
+
+
+
+
+## [1.56.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.56.1...@times-components/article-skeleton@1.56.2) (2021-09-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.56.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.56.0...@times-components/article-skeleton@1.56.1) (2021-09-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.56.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.55.1...@times-components/article-skeleton@1.56.0) (2021-08-31)
+
+
+### Features
+
+* **TE-178:**  real name commenting ([#2780](https://github.com/newsuk/times-components/issues/2780)) ([4a51ffe](https://github.com/newsuk/times-components/commit/4a51ffefb0b37720f9328f0baaa940e1083c87ec))
+
+
+
+
+
 ## [1.55.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.55.0...@times-components/article-skeleton@1.55.1) (2021-08-27)
 
 **Note:** Version bump only for package @times-components/article-skeleton

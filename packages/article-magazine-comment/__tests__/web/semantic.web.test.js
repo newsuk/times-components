@@ -147,7 +147,7 @@ const tests = [
             onTopicPress={() => {}}
             onVideoPress={() => {}}
             receiveChildList={() => {}}
-            spotAccountId=""
+            commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
           />
         </ContextProviderWithDefaults>
       );

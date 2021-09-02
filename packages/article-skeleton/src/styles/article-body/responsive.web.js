@@ -292,14 +292,10 @@ export const Ad = styled.div`
 `;
 
 export const InlineAdWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 250px;
   margin: 30px 0;
   box-sizing: content-box;
-  padding: 10px 0;
-  border-top: 1px solid rgb(219, 219, 219);
+  padding: 0 0 10px;
   border-bottom: 1px solid rgb(219, 219, 219);
   &.hidden {
     min-height: auto;
@@ -313,5 +309,20 @@ export const InlineAdWrapper = styled.div`
 
   @media (min-width: 970px) {
     min-height: 250px;
+  }
+`;
+
+export const InlineAdTitle = styled.h2`
+  border-bottom: 1px solid rgb(219, 219, 219);
+  color: #696969;
+  flex: 1 1 100%;
+  font: normal ${fontSizes.teaser}px / 17px ${fonts.bodyRegular};
+  letter-spacing: 0.6px;
+  margin: 0 0 10px;
+  padding: 0 0 5px;
+  text-align: center;
+  text-transform: uppercase;
+  .hidden & {
+    display: none;
   }
 `;

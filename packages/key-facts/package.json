@@ -1,6 +1,6 @@
 {
   "name": "@times-components/key-facts",
-  "version": "2.1.47",
+  "version": "2.1.48",
   "description": "Bulleted list of text data",
   "main": "dist/key-facts",
   "dev": "src/key-facts",
@@ -67,7 +67,7 @@
     "@times-components/link": "3.6.44",
     "@times-components/markup": "3.4.60",
     "@times-components/markup-forest": "1.7.34",
-    "@times-components/responsive": "0.6.27",
+    "@times-components/responsive": "0.7.0",
     "@times-components/styleguide": "3.38.22",
     "lodash.pick": "4.4.0",
     "prop-types": "15.7.2",

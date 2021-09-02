@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.32.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.31.3...@times-components/article-main-comment@2.32.0) (2021-09-02)
+
+
+### Features
+
+* **scb-1193:** add aditional in article ad slots, add title to wrapper ([#2786](https://github.com/newsuk/times-components/issues/2786)) ([020cd5b](https://github.com/newsuk/times-components/commit/020cd5baf6e272726eea01d70553eba08c5ccd4f))
+
+
+
+
+
+## [2.31.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.31.2...@times-components/article-main-comment@2.31.3) (2021-09-01)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.31.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.31.1...@times-components/article-main-comment@2.31.2) (2021-09-01)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.31.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.31.0...@times-components/article-main-comment@2.31.1) (2021-09-01)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.31.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.30.7...@times-components/article-main-comment@2.31.0) (2021-08-31)
+
+
+### Features
+
+* **TE-178:**  real name commenting ([#2780](https://github.com/newsuk/times-components/issues/2780)) ([4a51ffe](https://github.com/newsuk/times-components/commit/4a51ffefb0b37720f9328f0baaa940e1083c87ec))
+
+
+
+
+
 ## [2.30.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.30.6...@times-components/article-main-comment@2.30.7) (2021-08-27)
 
 **Note:** Version bump only for package @times-components/article-main-comment

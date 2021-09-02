@@ -5,35 +5,38 @@ import DisabledComments from "./disabled-comments";
 
 const ArticleComments = ({
   articleId,
-  commentCount,
-  commentsEnabled,
-  onCommentGuidelinesPress,
-  onCommentsPress,
-  url
+  publishedTime,
+  isEnabled,
+  isReadOnly,
+  commentingConfig
 }) =>
-  commentsEnabled ? (
+  isEnabled ? (
     <Comments
       articleId={articleId}
-      commentCount={commentCount}
-      onCommentsPress={onCommentsPress}
-      url={url}
+      publishedTime={publishedTime}
+      isReadOnly={isReadOnly}
+      commentingConfig={commentingConfig}
     />
   ) : (
-    <DisabledComments onCommentGuidelinesPress={onCommentGuidelinesPress} />
+    <DisabledComments />
   );
 
 ArticleComments.propTypes = {
   articleId: PropTypes.string.isRequired,
-  commentCount: PropTypes.number,
-  commentsEnabled: PropTypes.bool,
-  onCommentGuidelinesPress: PropTypes.func.isRequired,
-  onCommentsPress: PropTypes.func.isRequired,
-  url: PropTypes.string.isRequired
+  publishedTime: PropTypes.string.isRequired,
+  isEnabled: PropTypes.bool.isRequired,
+  isReadOnly: PropTypes.bool,
+  commentingConfig: PropTypes.shape({
+    accounts: PropTypes.shape({
+      current: PropTypes.string.isRequired,
+      readOnly: PropTypes.string.isRequired
+    }),
+    switchOver: PropTypes.string.isRequired
+  }).isRequired
 };
 
 ArticleComments.defaultProps = {
-  commentCount: 0,
-  commentsEnabled: false
+  isReadOnly: false
 };
 
 export default ArticleComments;
