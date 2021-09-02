@@ -103,22 +103,10 @@ exports[`full article with style 1`] = `
 }
 
 .c26 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   min-height: 250px;
   margin: 30px 0;
   box-sizing: content-box;
-  padding: 10px 0;
+  padding: 0 0 10px;
   border-bottom: 1px solid rgb(219,219,219);
 }
 
@@ -144,6 +132,10 @@ exports[`full article with style 1`] = `
   padding: 0 0 5px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.hidden .c27 {
+  display: none;
 }
 
 .c9 {
@@ -1017,22 +1009,10 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c26 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   min-height: 250px;
   margin: 30px 0;
   box-sizing: content-box;
-  padding: 10px 0;
+  padding: 0 0 10px;
   border-bottom: 1px solid rgb(219,219,219);
 }
 
@@ -1058,6 +1038,10 @@ exports[`full article with style in the culture magazine 1`] = `
   padding: 0 0 5px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.hidden .c27 {
+  display: none;
 }
 
 .c9 {
@@ -1932,22 +1916,10 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c26 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   min-height: 250px;
   margin: 30px 0;
   box-sizing: content-box;
-  padding: 10px 0;
+  padding: 0 0 10px;
   border-bottom: 1px solid rgb(219,219,219);
 }
 
@@ -1973,6 +1945,10 @@ exports[`full article with style in the style magazine 1`] = `
   padding: 0 0 5px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.hidden .c27 {
+  display: none;
 }
 
 .c9 {
@@ -2848,22 +2824,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c26 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   min-height: 250px;
   margin: 30px 0;
   box-sizing: content-box;
-  padding: 10px 0;
+  padding: 0 0 10px;
   border-bottom: 1px solid rgb(219,219,219);
 }
 
@@ -2889,6 +2853,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding: 0 0 5px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.hidden .c27 {
+  display: none;
 }
 
 .c9 {
