@@ -1,5 +1,4 @@
-// import sanitizeHtml from 'sanitize-html';
+import sanitizeHtml from 'sanitize-html';
 
-export const sanitiseCopy = (copy: string, __: string[] = []) => copy;
-
-// sanitizeHtml(copy, { allowedTags, allowedAttributes: {} });
+export const sanitiseCopy = (copy: string, allowedTags: string[] = []) =>
+  sanitizeHtml(copy, { allowedTags, allowedAttributes: {} });
