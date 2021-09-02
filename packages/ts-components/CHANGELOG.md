@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.8](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.7...@times-components/ts-components@1.12.8) (2021-09-02)
+
+
+### Reverts
+
+* remove sanitize html ([#2789](https://github.com/newsuk/times-components/issues/2789)) ([3b313f2](https://github.com/newsuk/times-components/commit/3b313f27d60ae80ee757a4943c3ed0fee7156c9f))
+
+
+
+
+
 ## [1.12.7](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.6...@times-components/ts-components@1.12.7) (2021-09-02)
 
 **Note:** Version bump only for package @times-components/ts-components
