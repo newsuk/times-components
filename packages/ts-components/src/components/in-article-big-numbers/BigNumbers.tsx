@@ -3,10 +3,8 @@ import { Placeholder } from '@times-components/image';
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import {
-  PlaceholderContainer,
   Container,
   ContentContainer,
-  Label,
   Headline,
   ListContainer,
   List,
@@ -16,7 +14,8 @@ import {
   ShowAllContainer,
   ShowAllButton
 } from './styles';
-
+import { PlaceholderContainer, Label } from '../common-styles';
+import { isStandard, isWide } from '../../helpers/layout-size/layoutSize';
 import { DeckData } from '../../helpers/fetch/types';
 
 type BigNumbersData = {
@@ -26,11 +25,6 @@ type BigNumbersData = {
     copy: string;
   };
 };
-
-export enum Layout {
-  Standard = '4043',
-  Wide = '4042'
-}
 
 type BigNumbersDeckData = DeckData<never, BigNumbersData>;
 
@@ -51,14 +45,6 @@ export const BigNumbers: React.FC<{
     return null;
   }
 
-  const isStandard = (bigNumbersSize: Layout) => {
-    return bigNumbersSize === Layout.Standard;
-  };
-
-  const isWide = (bigNumbersSize: Layout) => {
-    return bigNumbersSize === Layout.Wide;
-  };
-
   const { headline, label, size } = data.fields;
   const bigNumbersData = data.body.data;
   const [showAll, setShowAll] = useState(false);
@@ -67,7 +53,7 @@ export const BigNumbers: React.FC<{
   };
 
   const showAllRef = useRef<HTMLDivElement>(null);
-  const [showShowAll, setShowShowAll] = useState(false);
+  const [displayShowAll, setShowShowAll] = useState(false);
   const maxHeight = isWide(size) ? 250 : 350;
   useEffect(() => {
     const listContainer = showAllRef.current;
@@ -89,7 +75,7 @@ export const BigNumbers: React.FC<{
           ref={showAllRef}
           showAll={showAll}
           maxHeight={maxHeight}
-          showShowAll={showShowAll}
+          displayShowAll={displayShowAll}
         >
           <List>
             {bigNumbersData.map((row: BigNumbersData, index: number) => (
@@ -99,7 +85,7 @@ export const BigNumbers: React.FC<{
                 </NumberContainer>
                 <Copy
                   dangerouslySetInnerHTML={{
-                    __html: sanitiseCopy(row.data.copy, ['b', 'i'])
+                    __html: sanitiseCopy(row.data.copy, ['br', 'b', 'i'])
                   }}
                 />
               </ListItem>
@@ -107,7 +93,7 @@ export const BigNumbers: React.FC<{
           </List>
         </ListContainer>
       </ContentContainer>
-      <ShowAllContainer showAll={showAll} showShowAll={showShowAll}>
+      <ShowAllContainer showAll={showAll} displayShowAll={displayShowAll}>
         <ShowAllButton onClick={handleShowAll}>
           {showAll ? 'Collapse' : 'Show all'}
         </ShowAllButton>

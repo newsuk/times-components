@@ -1,20 +1,6 @@
 import styled from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/styleguide';
 
-export const PlaceholderContainer = styled.div`
-  position: relative;
-  height: 200px;
-  margin: 0 auto 20px auto;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    width: 80.8%;
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
-  }
-`;
-
 export const Container = styled.div<{
   sectionColour: string;
   isWide?: boolean;
@@ -50,16 +36,6 @@ export const ContentContainer = styled.div`
   padding: 0 16px;
 `;
 
-export const Label = styled.div<{ sectionColour: string }>`
-  font-family: ${fonts.supporting};
-  font-size: 12px;
-  line-height: 16px;
-  text-transform: uppercase;
-  color: ${({ sectionColour }) => `${sectionColour}`};
-  padding-bottom: 4px;
-  letter-spacing: 1px;
-`;
-
 export const Headline = styled.div`
   font-family: ${fonts.headline};
   font-size: 24px;
@@ -74,13 +50,14 @@ export const Headline = styled.div`
 
 export const ShowAllContainer = styled.div<{
   showAll: boolean;
-  showShowAll: boolean;
+  displayShowAll: boolean;
 }>`
   display: flex;
   border-top: 1px solid ${colours.functional.keyline};
   padding: 5px;
   justify-content: center;
-  display: ${({ showShowAll }) => (showShowAll ? 'flex' : 'none')};
+  display: ${({ displayShowAll: displayShowAll }) =>
+    displayShowAll ? 'flex' : 'none'};
 `;
 
 export const ShowAllButton = styled.button`
@@ -102,14 +79,14 @@ export const ShowAllButton = styled.button`
 export const ListContainer = styled.div<{
   showAll: boolean;
   maxHeight: number;
-  showShowAll: boolean;
+  displayShowAll: boolean;
 }>`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
-  max-height: ${({ showAll, maxHeight, showShowAll }) =>
-    !showAll && showShowAll ? maxHeight + 'px' : 'none'};
+  max-height: ${({ showAll, maxHeight, displayShowAll }) =>
+    !showAll && displayShowAll ? maxHeight + 'px' : 'none'};
 `;
 
 export const List = styled.ul`

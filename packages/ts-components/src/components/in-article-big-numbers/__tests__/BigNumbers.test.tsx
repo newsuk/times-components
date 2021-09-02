@@ -157,19 +157,16 @@ describe('BigNumbers', () => {
     cleanup();
   });
 
-  it('should render the initial loading state correctly', () => {
+  it('should render the initial loading state correctly', async () => {
     (useFetch as jest.Mock).mockReturnValue({ loading: true });
-    const { asFragment } = render(<BigNumbers sectionColour="#636C17" />);
+    const { asFragment, findByText } = render(
+      <BigNumbers sectionColour="#636C17" />
+    );
+    await findByText('Placeholder');
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('should render the initial show all state correctly', () => {
-    (useFetch as jest.Mock).mockReturnValue({ showAll: true });
-    const { asFragment } = render(<BigNumbers sectionColour="#636C17" />);
-    expect(asFragment()).toMatchSnapshot();
-  });
-
-  it('should render the component', () => {
+  it('should render the wide component', () => {
     (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
     const { asFragment } = renderBigNumbers();
     expect(asFragment()).toMatchSnapshot();

@@ -3,93 +3,93 @@
 exports[`BigNumbers click show all 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bwzfXH hxWceX"
+    class="sc-bdVaJa lZvxX"
   >
     <div
-      class="sc-htpNat dXSmCm"
+      class="sc-bwzfXH gozLqp"
     >
       <div
-        class="sc-bxivhb fZukZr"
+        class="sc-gZMcBi hyVIiP"
       >
         President Race
       </div>
       <div
-        class="sc-ifAKCX fNhjkJ"
+        class="sc-htpNat hDEogf"
       >
         The stats behind the two candidates
       </div>
       <div
-        class="sc-gzVnrw dntaSN"
+        class="sc-EHOje kSjPZf"
       >
         <ul
-          class="sc-htoDjs kHZGsI"
+          class="sc-bZQynM bPxSyH"
         >
           <li
-            class="sc-dnqmqq hlwGDF"
+            class="sc-gzVnrw dAAiph"
           >
             <div
-              class="sc-iwsKbI iAzaWz"
+              class="sc-htoDjs bxDFJf"
             >
               $497.8m
             </div>
             <div
-              class="sc-gZMcBi gBQBMy"
+              class="sc-dnqmqq dDGXyB"
             >
               Money raised by Hillary Clinton
             </div>
           </li>
           <li
-            class="sc-dnqmqq hlwGDF"
+            class="sc-gzVnrw dAAiph"
           >
             <div
-              class="sc-iwsKbI iAzaWz"
+              class="sc-htoDjs bxDFJf"
             >
               $247.8m
             </div>
             <div
-              class="sc-gZMcBi gBQBMy"
+              class="sc-dnqmqq dDGXyB"
             >
               Money raised by Donald Trump
             </div>
           </li>
           <li
-            class="sc-dnqmqq hlwGDF"
+            class="sc-gzVnrw dAAiph"
           >
             <div
-              class="sc-iwsKbI iAzaWz"
+              class="sc-htoDjs bxDFJf"
             >
               71.6m
             </div>
             <div
-              class="sc-gZMcBi gBQBMy"
+              class="sc-dnqmqq dDGXyB"
             >
               The number of people who turned in to the final president debate
             </div>
           </li>
           <li
-            class="sc-dnqmqq hlwGDF"
+            class="sc-gzVnrw dAAiph"
           >
             <div
-              class="sc-iwsKbI iAzaWz"
+              class="sc-htoDjs bxDFJf"
             >
               2-7
             </div>
             <div
-              class="sc-gZMcBi gBQBMy"
+              class="sc-dnqmqq dDGXyB"
             >
               Clinton’s odds of winning the US election (provided by Paddy Power)
             </div>
           </li>
           <li
-            class="sc-dnqmqq hlwGDF"
+            class="sc-gzVnrw dAAiph"
           >
             <div
-              class="sc-iwsKbI iAzaWz"
+              class="sc-htoDjs bxDFJf"
             >
               3-1
             </div>
             <div
-              class="sc-gZMcBi gBQBMy"
+              class="sc-dnqmqq dDGXyB"
             >
               Trump’s odds of winning the US election (provided by Paddy Power)
             </div>
@@ -98,122 +98,12 @@ exports[`BigNumbers click show all 1`] = `
       </div>
     </div>
     <div
-      class="sc-EHOje jdNlmj"
+      class="sc-bxivhb dqNwGy"
     >
       <button
-        class="sc-bZQynM kcsaTh"
+        class="sc-ifAKCX kpjxlo"
       >
         Collapse
-      </button>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`BigNumbers should render the component 1`] = `
-<DocumentFragment>
-  <div
-    class="sc-bwzfXH hhiknq"
-  >
-    <div
-      class="sc-htpNat dXSmCm"
-    >
-      <div
-        class="sc-bxivhb fZukZr"
-      >
-        President Race
-      </div>
-      <div
-        class="sc-ifAKCX fNhjkJ"
-      >
-        The stats behind the two candidates
-      </div>
-      <div
-        class="sc-gzVnrw dntaSN"
-      >
-        <ul
-          class="sc-htoDjs kHZGsI"
-        >
-          <li
-            class="sc-dnqmqq cYMlrf"
-          >
-            <div
-              class="sc-iwsKbI iAzaWz"
-            >
-              $497.8m
-            </div>
-            <div
-              class="sc-gZMcBi gBQBMy"
-            >
-              Money raised by Hillary Clinton
-            </div>
-          </li>
-          <li
-            class="sc-dnqmqq cYMlrf"
-          >
-            <div
-              class="sc-iwsKbI iAzaWz"
-            >
-              $247.8m
-            </div>
-            <div
-              class="sc-gZMcBi gBQBMy"
-            >
-              Money raised by Donald Trump
-            </div>
-          </li>
-          <li
-            class="sc-dnqmqq cYMlrf"
-          >
-            <div
-              class="sc-iwsKbI iAzaWz"
-            >
-              71.6m
-            </div>
-            <div
-              class="sc-gZMcBi gBQBMy"
-            >
-              The number of people who turned in to the final president debate
-            </div>
-          </li>
-          <li
-            class="sc-dnqmqq cYMlrf"
-          >
-            <div
-              class="sc-iwsKbI iAzaWz"
-            >
-              2-7
-            </div>
-            <div
-              class="sc-gZMcBi gBQBMy"
-            >
-              Clinton’s odds of winning the US election (provided by Paddy Power)
-            </div>
-          </li>
-          <li
-            class="sc-dnqmqq cYMlrf"
-          >
-            <div
-              class="sc-iwsKbI iAzaWz"
-            >
-              3-1
-            </div>
-            <div
-              class="sc-gZMcBi gBQBMy"
-            >
-              Trump’s odds of winning the US election (provided by Paddy Power)
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div
-      class="sc-EHOje jdNlmj"
-    >
-      <button
-        class="sc-bZQynM kcsaTh"
-      >
-        Show all
       </button>
     </div>
   </div>
@@ -223,7 +113,7 @@ exports[`BigNumbers should render the component 1`] = `
 exports[`BigNumbers should render the initial loading state correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa dwiMsX"
+    class="sc-iwsKbI PRvgD"
   >
     <div>
       Placeholder
@@ -232,98 +122,96 @@ exports[`BigNumbers should render the initial loading state correctly 1`] = `
 </DocumentFragment>
 `;
 
-exports[`BigNumbers should render the initial show all state correctly 1`] = `<DocumentFragment />`;
-
 exports[`BigNumbers should render the standard component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bwzfXH hxWceX"
+    class="sc-bdVaJa lZvxX"
   >
     <div
-      class="sc-htpNat dXSmCm"
+      class="sc-bwzfXH gozLqp"
     >
       <div
-        class="sc-bxivhb fZukZr"
+        class="sc-gZMcBi hyVIiP"
       >
         President Race
       </div>
       <div
-        class="sc-ifAKCX fNhjkJ"
+        class="sc-htpNat hDEogf"
       >
         The stats behind the two candidates
       </div>
       <div
-        class="sc-gzVnrw dntaSN"
+        class="sc-EHOje kSjPZf"
       >
         <ul
-          class="sc-htoDjs kHZGsI"
+          class="sc-bZQynM bPxSyH"
         >
           <li
-            class="sc-dnqmqq hlwGDF"
+            class="sc-gzVnrw dAAiph"
           >
             <div
-              class="sc-iwsKbI iAzaWz"
+              class="sc-htoDjs bxDFJf"
             >
               $497.8m
             </div>
             <div
-              class="sc-gZMcBi gBQBMy"
+              class="sc-dnqmqq dDGXyB"
             >
               Money raised by Hillary Clinton
             </div>
           </li>
           <li
-            class="sc-dnqmqq hlwGDF"
+            class="sc-gzVnrw dAAiph"
           >
             <div
-              class="sc-iwsKbI iAzaWz"
+              class="sc-htoDjs bxDFJf"
             >
               $247.8m
             </div>
             <div
-              class="sc-gZMcBi gBQBMy"
+              class="sc-dnqmqq dDGXyB"
             >
               Money raised by Donald Trump
             </div>
           </li>
           <li
-            class="sc-dnqmqq hlwGDF"
+            class="sc-gzVnrw dAAiph"
           >
             <div
-              class="sc-iwsKbI iAzaWz"
+              class="sc-htoDjs bxDFJf"
             >
               71.6m
             </div>
             <div
-              class="sc-gZMcBi gBQBMy"
+              class="sc-dnqmqq dDGXyB"
             >
               The number of people who turned in to the final president debate
             </div>
           </li>
           <li
-            class="sc-dnqmqq hlwGDF"
+            class="sc-gzVnrw dAAiph"
           >
             <div
-              class="sc-iwsKbI iAzaWz"
+              class="sc-htoDjs bxDFJf"
             >
               2-7
             </div>
             <div
-              class="sc-gZMcBi gBQBMy"
+              class="sc-dnqmqq dDGXyB"
             >
               Clinton’s odds of winning the US election (provided by Paddy Power)
             </div>
           </li>
           <li
-            class="sc-dnqmqq hlwGDF"
+            class="sc-gzVnrw dAAiph"
           >
             <div
-              class="sc-iwsKbI iAzaWz"
+              class="sc-htoDjs bxDFJf"
             >
               3-1
             </div>
             <div
-              class="sc-gZMcBi gBQBMy"
+              class="sc-dnqmqq dDGXyB"
             >
               Trump’s odds of winning the US election (provided by Paddy Power)
             </div>
@@ -332,10 +220,120 @@ exports[`BigNumbers should render the standard component 1`] = `
       </div>
     </div>
     <div
-      class="sc-EHOje jdNlmj"
+      class="sc-bxivhb dqNwGy"
     >
       <button
-        class="sc-bZQynM kcsaTh"
+        class="sc-ifAKCX kpjxlo"
+      >
+        Show all
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BigNumbers should render the wide component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa dXoWps"
+  >
+    <div
+      class="sc-bwzfXH gozLqp"
+    >
+      <div
+        class="sc-gZMcBi hyVIiP"
+      >
+        President Race
+      </div>
+      <div
+        class="sc-htpNat hDEogf"
+      >
+        The stats behind the two candidates
+      </div>
+      <div
+        class="sc-EHOje kSjPZf"
+      >
+        <ul
+          class="sc-bZQynM bPxSyH"
+        >
+          <li
+            class="sc-gzVnrw gTHlzh"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              $497.8m
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Money raised by Hillary Clinton
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw gTHlzh"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              $247.8m
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Money raised by Donald Trump
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw gTHlzh"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              71.6m
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              The number of people who turned in to the final president debate
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw gTHlzh"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              2-7
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Clinton’s odds of winning the US election (provided by Paddy Power)
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw gTHlzh"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              3-1
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Trump’s odds of winning the US election (provided by Paddy Power)
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="sc-bxivhb dqNwGy"
+    >
+      <button
+        class="sc-ifAKCX kpjxlo"
       >
         Show all
       </button>
