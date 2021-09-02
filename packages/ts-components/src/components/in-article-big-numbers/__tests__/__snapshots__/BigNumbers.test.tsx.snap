@@ -14,7 +14,7 @@ exports[`BigNumbers click show all 1`] = `
         President Race
       </div>
       <div
-        class="sc-htpNat hDEogf"
+        class="sc-htpNat ljnJGi"
       >
         The stats behind the two candidates
       </div>
@@ -136,7 +136,7 @@ exports[`BigNumbers should render the standard component 1`] = `
         President Race
       </div>
       <div
-        class="sc-htpNat hDEogf"
+        class="sc-htpNat ljnJGi"
       >
         The stats behind the two candidates
       </div>
@@ -246,7 +246,7 @@ exports[`BigNumbers should render the wide component 1`] = `
         President Race
       </div>
       <div
-        class="sc-htpNat hDEogf"
+        class="sc-htpNat ljnJGi"
       >
         The stats behind the two candidates
       </div>
