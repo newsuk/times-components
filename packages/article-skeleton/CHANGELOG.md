@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.58.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.57.0...@times-components/article-skeleton@1.58.0) (2021-09-02)
+
+
+### Features
+
+* **scb-1193:** add aditional in article ad slots, add title to wrapper ([#2786](https://github.com/newsuk/times-components/issues/2786)) ([020cd5b](https://github.com/newsuk/times-components/commit/020cd5baf6e272726eea01d70553eba08c5ccd4f))
+
+
+
+
+
 # [1.57.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.56.2...@times-components/article-skeleton@1.57.0) (2021-09-01)
 
 
