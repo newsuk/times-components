@@ -1,0 +1,343 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BigNumbers click show all 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa juVWHz"
+  >
+    <div
+      class="sc-bwzfXH gozLqp"
+    >
+      <div
+        class="sc-gZMcBi hyVIiP"
+      >
+        President Race
+      </div>
+      <div
+        class="sc-htpNat ljnJGi"
+      >
+        The stats behind the two candidates
+      </div>
+      <div
+        class="sc-EHOje kSjPZf"
+      >
+        <ul
+          class="sc-bZQynM bPxSyH"
+        >
+          <li
+            class="sc-gzVnrw dAAiph"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              $497.8m
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Money raised by Hillary Clinton
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw dAAiph"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              $247.8m
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Money raised by Donald Trump
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw dAAiph"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              71.6m
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              The number of people who turned in to the final president debate
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw dAAiph"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              2-7
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Clinton’s odds of winning the US election (provided by Paddy Power)
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw dAAiph"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              3-1
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Trump’s odds of winning the US election (provided by Paddy Power)
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="sc-bxivhb dqNwGy"
+    >
+      <button
+        class="sc-ifAKCX kpjxlo"
+      >
+        Collapse
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BigNumbers should render the initial loading state correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-iwsKbI PRvgD"
+  >
+    <div>
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BigNumbers should render the standard component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa juVWHz"
+  >
+    <div
+      class="sc-bwzfXH gozLqp"
+    >
+      <div
+        class="sc-gZMcBi hyVIiP"
+      >
+        President Race
+      </div>
+      <div
+        class="sc-htpNat ljnJGi"
+      >
+        The stats behind the two candidates
+      </div>
+      <div
+        class="sc-EHOje kSjPZf"
+      >
+        <ul
+          class="sc-bZQynM bPxSyH"
+        >
+          <li
+            class="sc-gzVnrw dAAiph"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              $497.8m
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Money raised by Hillary Clinton
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw dAAiph"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              $247.8m
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Money raised by Donald Trump
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw dAAiph"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              71.6m
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              The number of people who turned in to the final president debate
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw dAAiph"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              2-7
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Clinton’s odds of winning the US election (provided by Paddy Power)
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw dAAiph"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              3-1
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Trump’s odds of winning the US election (provided by Paddy Power)
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="sc-bxivhb dqNwGy"
+    >
+      <button
+        class="sc-ifAKCX kpjxlo"
+      >
+        Show all
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`BigNumbers should render the wide component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa rtVDO"
+  >
+    <div
+      class="sc-bwzfXH gozLqp"
+    >
+      <div
+        class="sc-gZMcBi hyVIiP"
+      >
+        President Race
+      </div>
+      <div
+        class="sc-htpNat ljnJGi"
+      >
+        The stats behind the two candidates
+      </div>
+      <div
+        class="sc-EHOje kSjPZf"
+      >
+        <ul
+          class="sc-bZQynM bPxSyH"
+        >
+          <li
+            class="sc-gzVnrw gTHlzh"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              $497.8m
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Money raised by Hillary Clinton
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw gTHlzh"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              $247.8m
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Money raised by Donald Trump
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw gTHlzh"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              71.6m
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              The number of people who turned in to the final president debate
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw gTHlzh"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              2-7
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Clinton’s odds of winning the US election (provided by Paddy Power)
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw gTHlzh"
+          >
+            <div
+              class="sc-htoDjs bxDFJf"
+            >
+              3-1
+            </div>
+            <div
+              class="sc-dnqmqq dDGXyB"
+            >
+              Trump’s odds of winning the US election (provided by Paddy Power)
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="sc-bxivhb dqNwGy"
+    >
+      <button
+        class="sc-ifAKCX kpjxlo"
+      >
+        Show all
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

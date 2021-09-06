@@ -33,7 +33,8 @@ import {
   InfoCard,
   GalleryCarousel,
   InArticleRelatedArticles,
-  InfoCardBulletPoints
+  InfoCardBulletPoints,
+  BigNumbers
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -198,6 +199,17 @@ const renderers = ({
             {({ theme }) => (
               <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
                 <InfoCardBulletPoints sectionColour={theme.sectionColour} />
+              </FetchProvider>
+            )}
+          </Context.Consumer>
+        );
+
+      case "in-article-big-numbers":
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <BigNumbers sectionColour={theme.sectionColour} />
               </FetchProvider>
             )}
           </Context.Consumer>
