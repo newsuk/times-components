@@ -9,14 +9,14 @@ export const Container = styled.div<{
   padding: 23px 0 0;
   background-color: ${colours.functional.backgroundPrimary};
   border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
-  width: ${({ isWide }) => isWide ? '100%' : 'auto' };
+  width: ${({ isWide }) => (isWide ? '100%' : 'auto')};
 
   @media (min-width: ${breakpoints.medium}px) {
-    width: ${({ isWide }) => isWide ? '100%' : '80.8%' };
+    width: ${({ isWide }) => (isWide ? '100%' : '80.8%')};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    width: ${({ isWide }) => isWide ? '100%' : '56.2%' };
+    width: ${({ isWide }) => (isWide ? '100%' : '56.2%')};
   }
 
   a {

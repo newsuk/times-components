@@ -63,10 +63,7 @@ export const BigNumbers: React.FC<{
   }, []);
 
   return (
-    <Container
-      sectionColour={sectionColour}
-      isWide={isWide(size)}
-    >
+    <Container sectionColour={sectionColour} isWide={isWide(size)}>
       <ContentContainer>
         <Label sectionColour={sectionColour}>{label}</Label>
         {headline && <Headline>{headline}</Headline>}
