@@ -66,7 +66,6 @@ export const BigNumbers: React.FC<{
     <Container
       sectionColour={sectionColour}
       isWide={isWide(size)}
-      isStandard={isStandard(size)}
     >
       <ContentContainer>
         <Label sectionColour={sectionColour}>{label}</Label>

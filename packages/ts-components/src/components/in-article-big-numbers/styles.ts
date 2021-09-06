@@ -4,24 +4,19 @@ import { breakpoints, colours, fonts } from '@times-components/styleguide';
 export const Container = styled.div<{
   sectionColour: string;
   isWide?: boolean;
-  isStandard?: boolean;
 }>`
   margin: 0 auto 20px auto;
   padding: 23px 0 0;
   background-color: ${colours.functional.backgroundPrimary};
   border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
-
-  width: ${({ isWide, isStandard }) =>
-    (isWide && '100%') || (isStandard && 'auto') || 'auto'};
+  width: ${({ isWide }) => isWide ? '100%' : 'auto' };
 
   @media (min-width: ${breakpoints.medium}px) {
-    width: ${({ isWide, isStandard }) =>
-      (isWide && '100%') || (isStandard && '80.8%') || '80.8%'};
+    width: ${({ isWide }) => isWide ? '100%' : '80.8%' };
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    width: ${({ isWide, isStandard }) =>
-      (isWide && '100%') || (isStandard && '56.2%') || '56.2%'};
+    width: ${({ isWide }) => isWide ? '100%' : '56.2%' };
   }
 
   a {
