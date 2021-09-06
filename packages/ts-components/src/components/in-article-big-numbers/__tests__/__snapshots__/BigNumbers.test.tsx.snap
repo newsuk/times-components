@@ -3,7 +3,7 @@
 exports[`BigNumbers click show all 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa lZvxX"
+    class="sc-bdVaJa juVWHz"
   >
     <div
       class="sc-bwzfXH gozLqp"
@@ -125,7 +125,7 @@ exports[`BigNumbers should render the initial loading state correctly 1`] = `
 exports[`BigNumbers should render the standard component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa lZvxX"
+    class="sc-bdVaJa juVWHz"
   >
     <div
       class="sc-bwzfXH gozLqp"
@@ -235,7 +235,7 @@ exports[`BigNumbers should render the standard component 1`] = `
 exports[`BigNumbers should render the wide component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa dXoWps"
+    class="sc-bdVaJa rtVDO"
   >
     <div
       class="sc-bwzfXH gozLqp"
