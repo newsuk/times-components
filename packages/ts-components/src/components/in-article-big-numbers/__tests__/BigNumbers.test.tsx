@@ -3,6 +3,7 @@ import mockDate from 'mockdate';
 import { cleanup, fireEvent, render } from '@testing-library/react';
 import { BigNumbers } from '../BigNumbers';
 import { useFetch } from '../../../helpers/fetch/FetchProvider';
+import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 import '@testing-library/jest-dom';
 import 'regenerator-runtime';
 
@@ -178,12 +179,27 @@ describe('BigNumbers', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('click show all', async () => {
-    const { asFragment, getByText, findByText } = render(
-      <BigNumbers sectionColour="#636C17" />
-    );
-    fireEvent.click(getByText('Show all'));
-    await findByText('Collapse');
-    expect(asFragment()).toMatchSnapshot();
+  describe('tracking', () => {
+    (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
+    let oldIntersectionObserver: typeof IntersectionObserver;
+    beforeEach(() => {
+      oldIntersectionObserver = window.IntersectionObserver;
+      // @ts-ignore
+      window.IntersectionObserver = FakeIntersectionObserver;
+    });
+
+    afterEach(() => {
+      window.IntersectionObserver = oldIntersectionObserver;
+      jest.resetAllMocks();
+    });
+
+    it('click show all', async () => {
+      const { asFragment, getByText, findByText } = render(
+        <BigNumbers sectionColour="#636C17" />
+      );
+      fireEvent.click(getByText('Show all'));
+      await findByText('Collapse');
+      expect(asFragment()).toMatchSnapshot();
+    });
   });
 });
