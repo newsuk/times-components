@@ -34,8 +34,7 @@ type BigNumbersDeckData = DeckData<never, BigNumbersData>;
 
 const scrollEvent = {
   attrs: {
-    event_navigation_name:
-      'in-article component displayed : big numbers',
+    event_navigation_name: 'in-article component displayed : big numbers',
     event_navigation_browsing_method: 'scroll'
   }
 };
