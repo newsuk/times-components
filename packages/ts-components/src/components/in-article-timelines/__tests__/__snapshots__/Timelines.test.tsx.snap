@@ -25,10 +25,10 @@ exports[`Timelines click show all 1`] = `
           class="sc-bZQynM bPxSyH"
         >
           <li
-            class="sc-gzVnrw cPPmCE"
+            class="sc-gzVnrw dFGNMF"
           >
             <div
-              class="sc-htoDjs cdBFdG"
+              class="sc-htoDjs eAVAJm"
             />
             <div
               class="sc-dnqmqq lasalH"
@@ -41,7 +41,7 @@ exports[`Timelines click show all 1`] = `
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1Bullet point title
+                Bullet point title 1
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -51,10 +51,10 @@ exports[`Timelines click show all 1`] = `
             </div>
           </li>
           <li
-            class="sc-gzVnrw cPPmCE"
+            class="sc-gzVnrw dFGNMF"
           >
             <div
-              class="sc-htoDjs cdBFdG"
+              class="sc-htoDjs eAVAJm"
             />
             <div
               class="sc-dnqmqq lasalH"
@@ -67,7 +67,7 @@ exports[`Timelines click show all 1`] = `
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1Bullet point title
+                Bullet point title 1
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -77,10 +77,10 @@ exports[`Timelines click show all 1`] = `
             </div>
           </li>
           <li
-            class="sc-gzVnrw cPPmCE"
+            class="sc-gzVnrw dFGNMF"
           >
             <div
-              class="sc-htoDjs cdBFdG"
+              class="sc-htoDjs eAVAJm"
             />
             <div
               class="sc-dnqmqq lasalH"
@@ -93,7 +93,7 @@ exports[`Timelines click show all 1`] = `
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1Bullet point title
+                Bullet point title 1
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -143,10 +143,10 @@ exports[`Timelines should render the bullet points component 1`] = `
           class="sc-bZQynM bPxSyH"
         >
           <li
-            class="sc-gzVnrw cPPmCE"
+            class="sc-gzVnrw dFGNMF"
           >
             <div
-              class="sc-htoDjs cdBFdG"
+              class="sc-htoDjs eAVAJm"
             />
             <div
               class="sc-dnqmqq lasalH"
@@ -159,7 +159,7 @@ exports[`Timelines should render the bullet points component 1`] = `
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1Bullet point title
+                Bullet point title 1
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -169,10 +169,10 @@ exports[`Timelines should render the bullet points component 1`] = `
             </div>
           </li>
           <li
-            class="sc-gzVnrw cPPmCE"
+            class="sc-gzVnrw dFGNMF"
           >
             <div
-              class="sc-htoDjs cdBFdG"
+              class="sc-htoDjs eAVAJm"
             />
             <div
               class="sc-dnqmqq lasalH"
@@ -185,7 +185,7 @@ exports[`Timelines should render the bullet points component 1`] = `
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1Bullet point title
+                Bullet point title 1
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -195,10 +195,10 @@ exports[`Timelines should render the bullet points component 1`] = `
             </div>
           </li>
           <li
-            class="sc-gzVnrw cPPmCE"
+            class="sc-gzVnrw dFGNMF"
           >
             <div
-              class="sc-htoDjs cdBFdG"
+              class="sc-htoDjs eAVAJm"
             />
             <div
               class="sc-dnqmqq lasalH"
@@ -211,7 +211,7 @@ exports[`Timelines should render the bullet points component 1`] = `
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1Bullet point title
+                Bullet point title 1
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -261,10 +261,10 @@ exports[`Timelines should render the circle images component 1`] = `
           class="sc-bZQynM bPxSyH"
         >
           <li
-            class="sc-gzVnrw cPPmCE"
+            class="sc-gzVnrw dFGNMF"
           >
             <div
-              class="sc-htoDjs cdBFdG"
+              class="sc-htoDjs eAVAJm"
             />
             <div
               class="sc-dnqmqq lasalH"
@@ -277,7 +277,7 @@ exports[`Timelines should render the circle images component 1`] = `
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1Bullet point title
+                Bullet point title 1
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -287,10 +287,10 @@ exports[`Timelines should render the circle images component 1`] = `
             </div>
           </li>
           <li
-            class="sc-gzVnrw cPPmCE"
+            class="sc-gzVnrw dFGNMF"
           >
             <div
-              class="sc-htoDjs cdBFdG"
+              class="sc-htoDjs eAVAJm"
             />
             <div
               class="sc-dnqmqq lasalH"
@@ -303,7 +303,7 @@ exports[`Timelines should render the circle images component 1`] = `
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1Bullet point title
+                Bullet point title 1
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -313,10 +313,10 @@ exports[`Timelines should render the circle images component 1`] = `
             </div>
           </li>
           <li
-            class="sc-gzVnrw cPPmCE"
+            class="sc-gzVnrw dFGNMF"
           >
             <div
-              class="sc-htoDjs cdBFdG"
+              class="sc-htoDjs eAVAJm"
             />
             <div
               class="sc-dnqmqq lasalH"
@@ -329,7 +329,7 @@ exports[`Timelines should render the circle images component 1`] = `
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1Bullet point title
+                Bullet point title 1
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"

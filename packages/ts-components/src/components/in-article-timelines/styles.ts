@@ -95,7 +95,7 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   padding: 12px 0 13px;
-  width: 100%;  
+  width: 100%;
   position: relative;
 `;
 
@@ -110,7 +110,7 @@ export const LeftPanel = styled.div<{
   padding-right: ${({ circularImage }) => (circularImage ? '16px' : '24px')};
   height: 100%;
 
-  & img{
+  & img {
     border-radius: 100%;
     height: 50px;
     width: 50px;
@@ -119,9 +119,9 @@ export const LeftPanel = styled.div<{
     z-index: 2;
   }
 
-  & :before{
+  & :before {
     content: '';
-    background: ${({ sectionColour }) => `${sectionColour}`};   
+    background: ${({ sectionColour }) => `${sectionColour}`};
     position: relative;
     top: 0px;
     left: 15px;
@@ -129,10 +129,10 @@ export const LeftPanel = styled.div<{
     height: 8px;
     border-radius: 100%;
     z-index: 1;
-    display: ${({ circularImage }) => (circularImage ? 'none' : 'block')}
-  } 
+    display: ${({ circularImage }) => (circularImage ? 'none' : 'block')};
+  }
 
-  & :after{
+  & :after {
     content: '';
     border-right: 1px solid #ccc;
     height: 100%;
@@ -141,19 +141,19 @@ export const LeftPanel = styled.div<{
     top: ${({ circularImage }) => (circularImage ? '60px' : '20px')};
     left: ${({ circularImage }) => (circularImage ? '42px' : '19px')};
     z-index: 1;
-  } 
+  }
 
   @media (min-width: ${breakpoints.medium}px) {
     width: ${({ circularImage }) => (circularImage ? '100px' : '40px')};
     padding-right: ${({ circularImage }) => (circularImage ? '17px' : '24px')};
-    & img{
+    & img {
       height: 76px;
       width: 76px;
     }
-    & :after{
+    & :after {
       top: ${({ circularImage }) => (circularImage ? '74px' : '20px')};
       left: ${({ circularImage }) => (circularImage ? '52px' : '19px')};
-    } 
+    }
   }
 `;
 

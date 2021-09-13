@@ -24,7 +24,7 @@ const deckApiPayloadWrapperStandard = () => ({
 
 const testDataStandard = {
   deck_id: 44572,
-  deck_name: '[TEST] Timeline with Bullet Points - 25\/08\/2021 11:04:10',
+  deck_name: '[TEST] Timeline with Bullet Points - 25/08/2021 11:04:10',
   deck_type: 'Timeline with Bullet Points',
   version: 2,
   updated_at: {
@@ -43,7 +43,8 @@ const testDataStandard = {
         data: {
           date: '9 June 2018',
           eventHeading: 'Bullet point title 1',
-          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+          copy:
+            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
       },
       {
@@ -51,7 +52,8 @@ const testDataStandard = {
         data: {
           date: '9 June 2018',
           eventHeading: 'Bullet point title 1',
-          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+          copy:
+            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
       },
       {
@@ -59,7 +61,8 @@ const testDataStandard = {
         data: {
           date: '9 June 2018',
           eventHeading: 'Bullet point title 1',
-          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+          copy:
+            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
       }
     ]
@@ -70,7 +73,7 @@ const testDataStandard = {
 
 const testDataWide = {
   deck_id: 44574,
-  deck_name: '[TEST] Timeline with Images - 25\/08\/2021 11:11:38',
+  deck_name: '[TEST] Timeline with Images - 25/08/2021 11:11:38',
   deck_type: 'Timeline with Circle Images',
   version: 2,
   updated_at: {
@@ -89,7 +92,8 @@ const testDataWide = {
         data: {
           date: '9 June 2018',
           eventHeading: 'Bullet point title 1',
-          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+          copy:
+            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
       },
       {
@@ -97,7 +101,8 @@ const testDataWide = {
         data: {
           date: '9 June 2018',
           eventHeading: 'Bullet point title 1',
-          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+          copy:
+            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
       },
       {
@@ -105,7 +110,8 @@ const testDataWide = {
         data: {
           date: '9 June 2018',
           eventHeading: 'Bullet point title 1',
-          copy: 'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1',
+          copy:
+            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
       }
     ]

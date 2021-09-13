@@ -49,7 +49,7 @@ export const Timelines: React.FC<{
     return null;
   }
 
-  const { headline, label} = data.fields;
+  const { headline, label } = data.fields;
   const timelinesData = data.body.data;
   const [showAll, setShowAll] = useState(false);
   const handleShowAll = () => {
@@ -78,23 +78,26 @@ export const Timelines: React.FC<{
           displayShowAll={displayShowAll}
         >
           <List>
-             {timelinesData.map((row: TimelinesData, index: number) => (
+            {timelinesData.map((row: TimelinesData, index: number) => (
               <ListItem key={index}>
-                  <LeftPanel sectionColour={sectionColour} circularImage={row.data.image}>
-                    {row.data.image && <img src={row.data.image} />}
-                  </LeftPanel>
-                  <RightPanel>
-                    <Date sectionColour={sectionColour}>{row.data.date}</Date>
-                    <SubHeading>{row.data.eventHeading}</SubHeading>
-                    <Copy
-                      dangerouslySetInnerHTML={{
-                        __html: sanitiseCopy(row.data.copy, ['br', 'b', 'i'])
-                      }}
-                    />
-                  </RightPanel>
-                </ListItem>
-              ))}
-            </List>
+                <LeftPanel
+                  sectionColour={sectionColour}
+                  circularImage={row.data.image}
+                >
+                  {row.data.image && <img src={row.data.image} />}
+                </LeftPanel>
+                <RightPanel>
+                  <Date sectionColour={sectionColour}>{row.data.date}</Date>
+                  <SubHeading>{row.data.eventHeading}</SubHeading>
+                  <Copy
+                    dangerouslySetInnerHTML={{
+                      __html: sanitiseCopy(row.data.copy, ['br', 'b', 'i'])
+                    }}
+                  />
+                </RightPanel>
+              </ListItem>
+            ))}
+          </List>
         </ListContainer>
       </ContentContainer>
       <ShowAllContainer showAll={showAll} displayShowAll={displayShowAll}>
