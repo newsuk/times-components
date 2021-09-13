@@ -58,7 +58,7 @@ export const Timelines: React.FC<{
 
   const showAllRef = useRef<HTMLDivElement>(null);
   const [displayShowAll, setShowShowAll] = useState(false);
-  const maxHeight = 350;
+  const maxHeight = 375;
   useEffect(() => {
     const listContainer = showAllRef.current;
     if (listContainer) {
@@ -88,7 +88,7 @@ export const Timelines: React.FC<{
                 </LeftPanel>
                 <RightPanel>
                   <Date sectionColour={sectionColour}>{row.data.date}</Date>
-                  <SubHeading>{row.data.eventHeading}</SubHeading>
+                  <SubHeading>{row.data.eventHeading}Bullet point title</SubHeading>
                   <Copy
                     dangerouslySetInnerHTML={{
                       __html: sanitiseCopy(row.data.copy, ['br', 'b', 'i'])
