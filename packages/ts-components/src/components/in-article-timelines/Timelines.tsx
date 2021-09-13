@@ -88,10 +88,7 @@ export const Timelines: React.FC<{
                 </LeftPanel>
                 <RightPanel>
                   <Date sectionColour={sectionColour}>{row.data.date}</Date>
-                  <SubHeading>
-                    {row.data.eventHeading}
-                    Bullet point title
-                  </SubHeading>
+                  <SubHeading>{row.data.eventHeading}</SubHeading>
                   <Copy
                     dangerouslySetInnerHTML={{
                       __html: sanitiseCopy(row.data.copy, ['br', 'b', 'i'])
