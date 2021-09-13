@@ -41,7 +41,7 @@ exports[`Timelines click show all 1`] = `
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 1
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -62,12 +62,12 @@ exports[`Timelines click show all 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                10 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 2
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -88,12 +88,12 @@ exports[`Timelines click show all 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                11 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 3
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -114,12 +114,12 @@ exports[`Timelines click show all 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                12 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 4
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -140,12 +140,12 @@ exports[`Timelines click show all 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                13 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 5
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -166,12 +166,12 @@ exports[`Timelines click show all 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                14 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 6
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -192,12 +192,12 @@ exports[`Timelines click show all 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                15 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 7
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -263,7 +263,7 @@ exports[`Timelines should render the bullet points component 1`] = `
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 1
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -284,12 +284,12 @@ exports[`Timelines should render the bullet points component 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                10 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 2
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -310,12 +310,12 @@ exports[`Timelines should render the bullet points component 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                11 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 3
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -336,12 +336,12 @@ exports[`Timelines should render the bullet points component 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                12 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 4
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -362,12 +362,12 @@ exports[`Timelines should render the bullet points component 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                13 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 5
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -388,12 +388,12 @@ exports[`Timelines should render the bullet points component 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                14 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 6
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -414,12 +414,12 @@ exports[`Timelines should render the bullet points component 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                15 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 7
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -485,7 +485,7 @@ exports[`Timelines should render the circle images component 1`] = `
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 1
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -506,12 +506,12 @@ exports[`Timelines should render the circle images component 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                10 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 2
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -532,12 +532,12 @@ exports[`Timelines should render the circle images component 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                11 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 3
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -558,12 +558,12 @@ exports[`Timelines should render the circle images component 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                12 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 4
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -584,12 +584,12 @@ exports[`Timelines should render the circle images component 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                13 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 5
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -610,12 +610,12 @@ exports[`Timelines should render the circle images component 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                14 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 6
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"
@@ -636,12 +636,12 @@ exports[`Timelines should render the circle images component 1`] = `
               <div
                 class="sc-iwsKbI gdjtgh"
               >
-                9 June 2018
+                15 June 2018
               </div>
               <div
                 class="sc-gZMcBi dxheQB"
               >
-                Bullet point title 1
+                Event Heading 7
               </div>
               <div
                 class="sc-gqjmRU iAgaSh"

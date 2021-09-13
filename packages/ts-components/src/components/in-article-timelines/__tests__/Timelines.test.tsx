@@ -23,7 +23,7 @@ const deckApiPayloadWrapperCircle = () => ({
 });
 
 const testDataBullet = {
-  deck_id: 44572,
+  deck_id: 45060,
   deck_name: '[TEST] Timeline with Bullet Points - 25/08/2021 11:04:10',
   deck_type: 'Timeline with Bullet Points',
   version: 2,
@@ -42,7 +42,7 @@ const testDataBullet = {
         type: 'event',
         data: {
           date: '9 June 2018',
-          eventHeading: 'Bullet point title 1',
+          eventHeading: 'Event Heading 1',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -50,8 +50,8 @@ const testDataBullet = {
       {
         type: 'event',
         data: {
-          date: '9 June 2018',
-          eventHeading: 'Bullet point title 1',
+          date: '10 June 2018',
+          eventHeading: 'Event Heading 2',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -59,8 +59,8 @@ const testDataBullet = {
       {
         type: 'event',
         data: {
-          date: '9 June 2018',
-          eventHeading: 'Bullet point title 1',
+          date: '11 June 2018',
+          eventHeading: 'Event Heading 3',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -68,8 +68,8 @@ const testDataBullet = {
       {
         type: 'event',
         data: {
-          date: '9 June 2018',
-          eventHeading: 'Bullet point title 1',
+          date: '12 June 2018',
+          eventHeading: 'Event Heading 4',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -77,8 +77,8 @@ const testDataBullet = {
       {
         type: 'event',
         data: {
-          date: '9 June 2018',
-          eventHeading: 'Bullet point title 1',
+          date: '13 June 2018',
+          eventHeading: 'Event Heading 5',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -86,8 +86,8 @@ const testDataBullet = {
       {
         type: 'event',
         data: {
-          date: '9 June 2018',
-          eventHeading: 'Bullet point title 1',
+          date: '14 June 2018',
+          eventHeading: 'Event Heading 6',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -95,8 +95,8 @@ const testDataBullet = {
       {
         type: 'event',
         data: {
-          date: '9 June 2018',
-          eventHeading: 'Bullet point title 1',
+          date: '15 June 2018',
+          eventHeading: 'Event Heading 7',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -108,7 +108,7 @@ const testDataBullet = {
 };
 
 const testDataCircle = {
-  deck_id: 44574,
+  deck_id: 45061,
   deck_name: '[TEST] Timeline with Images - 25/08/2021 11:11:38',
   deck_type: 'Timeline with Circle Images',
   version: 2,
@@ -127,7 +127,7 @@ const testDataCircle = {
         type: 'event',
         data: {
           date: '9 June 2018',
-          eventHeading: 'Bullet point title 1',
+          eventHeading: 'Event Heading 1',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -135,8 +135,8 @@ const testDataCircle = {
       {
         type: 'event',
         data: {
-          date: '9 June 2018',
-          eventHeading: 'Bullet point title 1',
+          date: '10 June 2018',
+          eventHeading: 'Event Heading 2',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -144,8 +144,8 @@ const testDataCircle = {
       {
         type: 'event',
         data: {
-          date: '9 June 2018',
-          eventHeading: 'Bullet point title 1',
+          date: '11 June 2018',
+          eventHeading: 'Event Heading 3',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -153,8 +153,8 @@ const testDataCircle = {
       {
         type: 'event',
         data: {
-          date: '9 June 2018',
-          eventHeading: 'Bullet point title 1',
+          date: '12 June 2018',
+          eventHeading: 'Event Heading 4',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -162,8 +162,8 @@ const testDataCircle = {
       {
         type: 'event',
         data: {
-          date: '9 June 2018',
-          eventHeading: 'Bullet point title 1',
+          date: '13 June 2018',
+          eventHeading: 'Event Heading 5',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -171,8 +171,8 @@ const testDataCircle = {
       {
         type: 'event',
         data: {
-          date: '9 June 2018',
-          eventHeading: 'Bullet point title 1',
+          date: '14 June 2018',
+          eventHeading: 'Event Heading 6',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -180,8 +180,8 @@ const testDataCircle = {
       {
         type: 'event',
         data: {
-          date: '9 June 2018',
-          eventHeading: 'Bullet point title 1',
+          date: '15 June 2018',
+          eventHeading: 'Event Heading 7',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
