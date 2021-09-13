@@ -15,14 +15,14 @@ jest.mock('../../../helpers/fetch/FetchProvider', () => ({
 }));
 
 const deckApiPayloadWrapper = () => ({
-  data: testDataWide
+  data: testDataBullet
 });
 
-const deckApiPayloadWrapperStandard = () => ({
-  data: testDataStandard
+const deckApiPayloadWrapperCircle = () => ({
+  data: testDataCircle
 });
 
-const testDataStandard = {
+const testDataBullet = {
   deck_id: 44572,
   deck_name: '[TEST] Timeline with Bullet Points - 25/08/2021 11:04:10',
   deck_type: 'Timeline with Bullet Points',
@@ -64,6 +64,42 @@ const testDataStandard = {
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
+      },
+      {
+        type: 'event',
+        data: {
+          date: '9 June 2018',
+          eventHeading: 'Bullet point title 1',
+          copy:
+            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
+        }
+      },
+      {
+        type: 'event',
+        data: {
+          date: '9 June 2018',
+          eventHeading: 'Bullet point title 1',
+          copy:
+            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
+        }
+      },
+      {
+        type: 'event',
+        data: {
+          date: '9 June 2018',
+          eventHeading: 'Bullet point title 1',
+          copy:
+            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
+        }
+      },
+      {
+        type: 'event',
+        data: {
+          date: '9 June 2018',
+          eventHeading: 'Bullet point title 1',
+          copy:
+            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
+        }
       }
     ]
   },
@@ -71,7 +107,7 @@ const testDataStandard = {
     '<!DOCTYPE html><html><head><title>The Times - In Article Timeline with Bullet Points</title></head><body></body></html>'
 };
 
-const testDataWide = {
+const testDataCircle = {
   deck_id: 44574,
   deck_name: '[TEST] Timeline with Images - 25/08/2021 11:11:38',
   deck_type: 'Timeline with Circle Images',
@@ -87,6 +123,42 @@ const testDataWide = {
   },
   body: {
     data: [
+      {
+        type: 'event',
+        data: {
+          date: '9 June 2018',
+          eventHeading: 'Bullet point title 1',
+          copy:
+            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
+        }
+      },
+      {
+        type: 'event',
+        data: {
+          date: '9 June 2018',
+          eventHeading: 'Bullet point title 1',
+          copy:
+            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
+        }
+      },
+      {
+        type: 'event',
+        data: {
+          date: '9 June 2018',
+          eventHeading: 'Bullet point title 1',
+          copy:
+            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
+        }
+      },
+      {
+        type: 'event',
+        data: {
+          date: '9 June 2018',
+          eventHeading: 'Bullet point title 1',
+          copy:
+            'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
+        }
+      },
       {
         type: 'event',
         data: {
@@ -149,7 +221,7 @@ describe('Timelines', () => {
   });
 
   it('should render the circle images component', () => {
-    (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapperStandard());
+    (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapperCircle());
     const { asFragment } = renderTimelines();
     expect(asFragment()).toMatchSnapshot();
   });
