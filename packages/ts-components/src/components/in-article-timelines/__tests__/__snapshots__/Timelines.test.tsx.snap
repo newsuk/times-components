@@ -1,0 +1,679 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timelines click show all 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa fPVWVn"
+  >
+    <div
+      class="sc-bwzfXH gozLqp"
+    >
+      <div
+        class="sc-jTzLTM fFLmvH"
+      >
+        Venezuelan Politics
+      </div>
+      <div
+        class="sc-htpNat OKAVT"
+      >
+        A history of injury troubles
+      </div>
+      <div
+        class="sc-EHOje kSjPZf"
+      >
+        <ul
+          class="sc-bZQynM bPxSyH"
+        >
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                9 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 1
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                10 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 2
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                11 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 3
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                12 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 4
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                13 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 5
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                14 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 6
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                15 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 7
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="sc-bxivhb dqNwGy"
+    >
+      <button
+        class="sc-ifAKCX envUeJ"
+      >
+        Collapse
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Timelines should render the bullet points component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa fPVWVn"
+  >
+    <div
+      class="sc-bwzfXH gozLqp"
+    >
+      <div
+        class="sc-jTzLTM fFLmvH"
+      >
+        Venezuelan Politics
+      </div>
+      <div
+        class="sc-htpNat OKAVT"
+      >
+        A history of injury troubles
+      </div>
+      <div
+        class="sc-EHOje kSjPZf"
+      >
+        <ul
+          class="sc-bZQynM bPxSyH"
+        >
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                9 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 1
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                10 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 2
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                11 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 3
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                12 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 4
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                13 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 5
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                14 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 6
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                15 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 7
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="sc-bxivhb dqNwGy"
+    >
+      <button
+        class="sc-ifAKCX envUeJ"
+      >
+        Show all
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Timelines should render the circle images component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa fPVWVn"
+  >
+    <div
+      class="sc-bwzfXH gozLqp"
+    >
+      <div
+        class="sc-jTzLTM fFLmvH"
+      >
+        Venezuelan Politics
+      </div>
+      <div
+        class="sc-htpNat OKAVT"
+      >
+        A history of injury troubles
+      </div>
+      <div
+        class="sc-EHOje kSjPZf"
+      >
+        <ul
+          class="sc-bZQynM bPxSyH"
+        >
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                9 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 1
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                10 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 2
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                11 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 3
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                12 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 4
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                13 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 5
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                14 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 6
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gzVnrw fOghtq"
+          >
+            <div
+              class="sc-htoDjs eAVAJm"
+            />
+            <div
+              class="sc-dnqmqq lasalH"
+            >
+              <div
+                class="sc-iwsKbI cTESbF"
+              >
+                15 June 2018
+              </div>
+              <div
+                class="sc-gZMcBi cgGxIl"
+              >
+                Event Heading 7
+              </div>
+              <div
+                class="sc-gqjmRU iAgaSh"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="sc-bxivhb dqNwGy"
+    >
+      <button
+        class="sc-ifAKCX envUeJ"
+      >
+        Show all
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Timelines should render the initial loading state correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-VigVT diAtmo"
+  >
+    <div>
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;
