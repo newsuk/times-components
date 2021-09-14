@@ -5,7 +5,7 @@ export const Container = styled.div<{
   sectionColour: string;
 }>`
   margin: 0 auto 20px auto;
-  padding: 23px 0 0;
+  padding: 20px 0 0;
   background-color: ${colours.functional.backgroundPrimary};
   border-top: ${({ sectionColour }) => `2px solid ${sectionColour}`};
   width: 100%;
