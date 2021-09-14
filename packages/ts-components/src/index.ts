@@ -19,6 +19,7 @@ export {
   SponsoredArticleFlag,
   LongReadArticleFlag
 } from './components/article-flag/ArticleFlag';
+export { Timelines } from './components/in-article-timelines/Timelines';
 
 // Newsletter Components
 export {
