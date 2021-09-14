@@ -3,6 +3,8 @@ import mockDate from 'mockdate';
 import { cleanup, fireEvent, render } from '@testing-library/react';
 import { BigNumbers } from '../BigNumbers';
 import { useFetch } from '../../../helpers/fetch/FetchProvider';
+import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
+import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 import '@testing-library/jest-dom';
 import 'regenerator-runtime';
 
@@ -185,5 +187,60 @@ describe('BigNumbers', () => {
     fireEvent.click(getByText('Show all'));
     await findByText('Collapse');
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  describe('tracking', () => {
+    (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
+    let oldIntersectionObserver: typeof IntersectionObserver;
+    const analyticsStream = jest.fn();
+
+    beforeEach(() => {
+      oldIntersectionObserver = window.IntersectionObserver;
+      // @ts-ignore
+      window.IntersectionObserver = FakeIntersectionObserver;
+    });
+
+    afterEach(() => {
+      window.IntersectionObserver = oldIntersectionObserver;
+      jest.resetAllMocks();
+    });
+
+    it('fires scroll event when viewed', () => {
+      (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
+
+      render(
+        <TrackingContextProvider
+          context={{
+            component: 'ArticleSkeleton',
+            attrs: {
+              articleHeadline: 'articleHeadline',
+              section: 'section'
+            }
+          }}
+          analyticsStream={analyticsStream}
+        >
+          <BigNumbers sectionColour="#636C17" />
+        </TrackingContextProvider>
+      );
+
+      FakeIntersectionObserver.intersect();
+
+      expect(analyticsStream).toHaveBeenCalledTimes(1);
+      expect(analyticsStream).toHaveBeenCalledWith({
+        action: 'Scrolled',
+        component: 'ArticleSkeleton',
+        object: 'InArticleBigNumbers',
+        attrs: {
+          articleHeadline: 'articleHeadline',
+          component_name: 'The stats behind the two candidates',
+          component_type: 'in-article component : big numbers: static',
+          eventTime: '2021-05-03T00:00:00.000Z',
+          event_navigation_action: 'navigation',
+          event_navigation_browsing_method: 'scroll',
+          event_navigation_name: 'in-article component displayed : big numbers',
+          section: 'section'
+        }
+      });
+    });
   });
 });
