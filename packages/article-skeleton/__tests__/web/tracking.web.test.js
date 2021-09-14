@@ -26,7 +26,8 @@ jest.mock("@times-components/ts-components", () => ({
   InfoCard: "InfoCard",
   GalleryCarousel: "GalleryCarousel",
   InfoCardBulletPoints: "InfoCardBulletPoints",
-  BigNumbers: "BigNumbers"
+  BigNumbers: "BigNumbers",
+  Timelines: "Timelines"
 }));
 
 beforeEach(() => {
