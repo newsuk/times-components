@@ -3,7 +3,7 @@
 exports[`Timelines click show all 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa fPVWVn"
+    class="sc-bdVaJa ezECsE"
   >
     <div
       class="sc-bwzfXH gozLqp"
@@ -225,7 +225,7 @@ exports[`Timelines click show all 1`] = `
 exports[`Timelines should render the bullet points component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa fPVWVn"
+    class="sc-bdVaJa ezECsE"
   >
     <div
       class="sc-bwzfXH gozLqp"
@@ -447,7 +447,7 @@ exports[`Timelines should render the bullet points component 1`] = `
 exports[`Timelines should render the circle images component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa fPVWVn"
+    class="sc-bdVaJa ezECsE"
   >
     <div
       class="sc-bwzfXH gozLqp"
