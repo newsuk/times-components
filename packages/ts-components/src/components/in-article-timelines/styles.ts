@@ -35,7 +35,7 @@ export const Headline = styled.div`
   font-size: 24px;
   line-height: 24px;
   color: ${colours.functional.brandColour};
-  margin: 0 0 6px;
+  margin: 0 0 12px;
   @media (min-width: ${breakpoints.medium}px) {
     font-size: 32px;
     line-height: 32px;
@@ -55,7 +55,7 @@ export const ShowAllContainer = styled.div<{
 `;
 
 export const ShowAllButton = styled.button`
-  font-size: 12px;
+  font-size: 14px;
   font-family: ${fonts.supporting};
   font-weight: 500;
   line-height: 20px;
@@ -94,7 +94,7 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  padding: 12px 0 13px;
+  padding: 12px 0 24px;
   width: 100%;
   position: relative;
 `;
@@ -145,7 +145,7 @@ export const LeftPanel = styled.div<{
 
   @media (min-width: ${breakpoints.medium}px) {
     width: ${({ circularImage }) => (circularImage ? '100px' : '40px')};
-    padding-right: ${({ circularImage }) => (circularImage ? '17px' : '24px')};
+    padding-right: ${({ circularImage }) => (circularImage ? '16px' : '24px')};
     & img {
       height: 76px;
       width: 76px;
@@ -166,7 +166,7 @@ export const Date = styled.div<{ sectionColour: string }>`
   text-transform: uppercase;
   font-size: 12px;
   line-height: 16px;
-  margin-bottom: 6px;
+  margin-bottom: 16px;
   color: ${({ sectionColour }) => `${sectionColour}`};
 `;
 
@@ -175,7 +175,7 @@ export const SubHeading = styled.div`
   line-height: 20px;
   color: ${colours.functional.brandColour};
   font-family: ${fonts.headlineRegular};
-  margin-bottom: 6px;
+  margin-bottom: 16px;
   @media (min-width: ${breakpoints.medium}px) {
     font-size: 24px;
     line-height: 24px;
