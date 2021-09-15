@@ -21,14 +21,6 @@ export const Label = styled.div<{ sectionColour: string }>`
   line-height: 16px;
   text-transform: uppercase;
   color: ${({ sectionColour }) => `${sectionColour}`};
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   letter-spacing: 1px;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    padding-bottom: 6px;
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    padding-bottom: 10px;
-  }
 `;
