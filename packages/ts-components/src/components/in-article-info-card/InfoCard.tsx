@@ -262,9 +262,9 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                 {row.data.subtitle && (
                   <SubHeading>{row.data.subtitle}</SubHeading>
                 )}
-                <QuoteContainer disabled={!activeQuotes}>
-                  <QuoteIcon />
-                </QuoteContainer>
+                 <QuoteContainer disabled={!activeQuotes}>
+                    <QuoteIcon />
+                 </QuoteContainer>
                 {row.data.copy && (
                   <BodyCopy
                     dangerouslySetInnerHTML={{
