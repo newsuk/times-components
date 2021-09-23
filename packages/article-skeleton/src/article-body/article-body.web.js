@@ -100,7 +100,7 @@ const renderers = ({
   ...coreRenderers,
   ad(key) {
     return (
-      <InlineAdWrapper className="hidden">
+      <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inline-ad" />
       </InlineAdWrapper>
@@ -108,7 +108,7 @@ const renderers = ({
   },
   inlineAd1(key) {
     return (
-      <InlineAdWrapper className="hidden">
+      <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd1" />
       </InlineAdWrapper>
@@ -116,7 +116,7 @@ const renderers = ({
   },
   inlineAd2(key) {
     return (
-      <InlineAdWrapper className="hidden">
+      <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd2" />
       </InlineAdWrapper>
@@ -124,7 +124,7 @@ const renderers = ({
   },
   inlineAd3(key) {
     return (
-      <InlineAdWrapper className="hidden">
+      <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd3" />
       </InlineAdWrapper>
