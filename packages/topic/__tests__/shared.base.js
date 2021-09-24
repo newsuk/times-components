@@ -39,6 +39,61 @@ export default props => {
       }
     },
     {
+      name: "uses general description when there is no description",
+      test() {
+        const testInstance = TestRenderer.create(
+          <Topic
+            {...{ ...props, topic: { name: "London", description: null } }}
+            isLoading={false}
+            page={1}
+          />
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "render description when there is description",
+      test() {
+        const testInstance = TestRenderer.create(
+          <Topic
+            {...{
+              ...props,
+              topic: {
+                name: "London",
+                description: [
+                  {
+                    attributes: {
+                      value: "Sample "
+                    },
+                    children: [],
+                    name: "text"
+                  },
+                  {
+                    attributes: {},
+                    children: [
+                      {
+                        attributes: {
+                          value: "Description."
+                        },
+                        children: [],
+                        name: "text"
+                      }
+                    ],
+                    name: "italic"
+                  }
+                ]
+              }
+            }}
+            isLoading={false}
+            page={1}
+          />
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
       name: "an article list",
       test() {
         const testInstance = TestRenderer.create(

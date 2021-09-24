@@ -15,9 +15,9 @@ function Head({ description, name, slug, page, articleCount, pageSize }) {
   let content =
     description && description.length
       ? renderTreeArrayAsText(description).substring(0, 200)
-      : `Discover expert ${
-          name ? `${name} ` : ""
-        }articles from The Times and The Sunday Times.`;
+      : `Discover expert articles ${
+          name ? `about ${name} ` : ""
+        }from The Times and The Sunday Times.`;
 
   if (totalPages && totalPages >= page) {
     content = content.concat(` Page ${page} of ${totalPages}`);
