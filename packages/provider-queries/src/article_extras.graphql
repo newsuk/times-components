@@ -3,7 +3,6 @@
 query ArticleExtrasQuery($id: ID!) {
   article(id: $id) {
     id
-    commentCount
     commentsEnabled
     relatedArticleSlice {
       sliceName: __typename

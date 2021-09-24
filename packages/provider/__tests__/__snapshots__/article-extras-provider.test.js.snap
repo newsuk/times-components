@@ -3,7 +3,6 @@
 exports[`ArticleExtrasProvider returns query result 1`] = `
 Object {
   "__typename": "Article",
-  "commentCount": 100,
   "commentsEnabled": true,
   "id": "113e9875-b7bf-4dd7-ac99-dee231bf6e74",
   "relatedArticleSlice": Object {

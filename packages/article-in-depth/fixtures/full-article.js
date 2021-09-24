@@ -830,7 +830,6 @@ const defaultBylines = [
     ]
   }
 ];
-const defaultCommentCount = 65;
 const defaultCommentsEnabled = true;
 const defaultContent = [
   {
@@ -2065,7 +2064,6 @@ const makeDefaultConfig = ({
   backgroundColour = defaultBackgroundColour,
   bylines = defaultBylines,
   commentsEnabled = defaultCommentsEnabled,
-  commentCount = defaultCommentCount,
   content = defaultContent,
   expirableFlags = defaultExpirableFlags,
   hasVideo = defaultHasVideo,
@@ -2088,7 +2086,6 @@ const makeDefaultConfig = ({
 } = {}) => ({
   backgroundColour,
   bylines,
-  commentCount,
   commentsEnabled,
   content,
   expirableFlags,
@@ -2156,7 +2153,6 @@ export const testFixture = {
       ]
     }
   ],
-  commentCount: 65,
   commentsEnabled: true,
   content: [
     {

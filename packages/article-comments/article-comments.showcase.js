@@ -31,7 +31,6 @@ export default {
           <ArticleComments
             key={publishedTime + config.switchOver}
             articleId="dummy-article-id"
-            commentCount={123}
             commentsEnabled
             isEnabled
             onCommentGuidelinesPress={() => {}}
@@ -49,7 +48,6 @@ export default {
       component: () => (
         <ArticleComments
           articleId="dummy-article-id"
-          commentCount={123}
           commentsEnabled={false}
           isEnabled={false}
           onCommentGuidelinesPress={() => {}}
