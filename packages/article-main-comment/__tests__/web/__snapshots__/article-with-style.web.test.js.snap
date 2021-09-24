@@ -103,18 +103,11 @@ exports[`full article with style 1`] = `
 }
 
 .c25 {
-  min-height: 250px;
+  min-height: 283px;
   margin: 30px 0;
   box-sizing: content-box;
   padding: 0 0 10px;
   border-bottom: 1px solid rgb(219,219,219);
-}
-
-.c25.hidden {
-  min-height: auto;
-  margin: 0;
-  padding: 0;
-  visibility: hidden;
 }
 
 .c26 {
@@ -132,10 +125,6 @@ exports[`full article with style 1`] = `
   padding: 0 0 5px;
   text-align: center;
   text-transform: uppercase;
-}
-
-.hidden .c26 {
-  display: none;
 }
 
 .c2 {
@@ -391,13 +380,13 @@ exports[`full article with style 1`] = `
 
 @media (min-width:768px) {
   .c25 {
-    min-height: 90px;
+    min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
   .c25 {
-    min-height: 250px;
+    min-height: 283px;
   }
 }
 
@@ -799,7 +788,7 @@ exports[`full article with style 1`] = `
           </figure>
         </div>
         <div
-          className="hidden c25"
+          className="c25"
         >
           <h2
             className="c26"
