@@ -19,7 +19,7 @@ function Head({ description, name, slug, page, articleCount, pageSize }) {
           name ? `${name} ` : ""
         }articles from The Times and The Sunday Times.`;
 
-  if (totalPages) {
+  if (totalPages && totalPages >= page) {
     content = content.concat(` Page ${page} of ${totalPages}`);
   }
 

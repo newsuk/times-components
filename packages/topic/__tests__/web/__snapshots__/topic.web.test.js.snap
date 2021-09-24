@@ -50,7 +50,7 @@ exports[`3. an article list 1`] = `
       Test Name | The Times & The Sunday Times | Page 2
     </title>
     <meta
-      content="Test italic bold text. Page 2 of 1"
+      content="Test italic bold text."
       name="description"
     />
     <link
@@ -135,7 +135,7 @@ exports[`4. fetches more articles 1`] = `
       Test Name | The Times & The Sunday Times | Page 2
     </title>
     <meta
-      content="Test italic bold text. Page 2 of 1"
+      content="Test italic bold text."
       name="description"
     />
     <link
@@ -225,7 +225,7 @@ exports[`5. fetches more articles and falls back to previous data if no more 1`]
       Test Name | The Times & The Sunday Times | Page 2
     </title>
     <meta
-      content="Test italic bold text. Page 2 of 1"
+      content="Test italic bold text."
       name="description"
     />
     <link
