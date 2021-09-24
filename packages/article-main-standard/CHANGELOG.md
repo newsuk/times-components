@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.38.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.37.4...@times-components/article-main-standard@3.38.0) (2021-09-24)
+
+
+### Features
+
+* **scb-1193:** add aditional in article ad slots ([#2794](https://github.com/newsuk/times-components/issues/2794)) ([d1a3d96](https://github.com/newsuk/times-components/commit/d1a3d961f6970c6df74561ba913bf60636b0822d))
+
+
+
+
+
 ## [3.37.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.37.3...@times-components/article-main-standard@3.37.4) (2021-09-14)
 
 **Note:** Version bump only for package @times-components/article-main-standard
