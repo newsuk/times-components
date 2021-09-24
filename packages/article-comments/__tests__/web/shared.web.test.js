@@ -16,7 +16,6 @@ it("Render comments label, when comments are loaded", () => {
   const { asFragment } = render(
     <ArticleComments
       articleId="dummy-article-id"
-      commentCount={0}
       commentsEnabled
       isEnabled
       onCommentGuidelinesPress={() => {}}

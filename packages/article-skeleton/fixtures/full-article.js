@@ -921,7 +921,6 @@ const defaultBylines = [
     ]
   }
 ];
-const defaultCommentCount = 65;
 const defaultCommentsEnabled = true;
 const defaultDescriptionMarkup = [
   {
@@ -1735,7 +1734,6 @@ const addProp = (obj, key, value) => {
 const makeDefaultConfig = ({
   bylines = defaultBylines,
   commentsEnabled = defaultCommentsEnabled,
-  commentCount = defaultCommentCount,
   content = defaultContent,
   descriptionMarkup = defaultDescriptionMarkup,
   dropcapsDisabled,
@@ -1760,7 +1758,6 @@ const makeDefaultConfig = ({
   url = defaultUrl
 } = {}) => ({
   bylines,
-  commentCount,
   commentsEnabled,
   content,
   descriptionMarkup,
@@ -1858,7 +1855,6 @@ export const testFixture = {
       image: null
     }
   ],
-  commentCount: 65,
   commentsEnabled: true,
   content: [
     {

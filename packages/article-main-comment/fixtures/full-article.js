@@ -678,7 +678,6 @@ const defaultAuthor = {
     "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=400"
 };
 
-const defaultCommentCount = 65;
 const defaultCommentsEnabled = true;
 const defaultContent = [
   {
@@ -1933,7 +1932,6 @@ const makeDefaultConfig = ({
   author = defaultAuthor,
   bylines = defaultBylines,
   commentsEnabled = defaultCommentsEnabled,
-  commentCount = defaultCommentCount,
   content = defaultContent,
   expirableFlags = defaultExpirableFlags,
   hasVideo = defaultHasVideo,
@@ -1955,7 +1953,6 @@ const makeDefaultConfig = ({
 } = {}) => ({
   author,
   bylines,
-  commentCount,
   commentsEnabled,
   content,
   expirableFlags,
@@ -2028,7 +2025,6 @@ export const testFixture = {
       }
     }
   ],
-  commentCount: 65,
   commentsEnabled: true,
   content: [
     {

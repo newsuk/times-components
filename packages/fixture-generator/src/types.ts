@@ -1288,8 +1288,6 @@ export interface Article extends ArticleInterface {
   commentsEnabled?: boolean | null;
   /** The commenting system moderation policy for this article */
   commentsPreModerated?: boolean | null;
-  /** The number of comments an article has */
-  commentCount?: number | null;
   /** A rarely populated field that is a list of free text such as ["luxury", "ferrari"] */
   commercialTags?: (string | null)[] | null;
   /** A field for take-over pages to use instead of content */

@@ -46,7 +46,6 @@ class MockArticle {
         .get(),
       url: "/article/123" as Url,
       slug: `british-trio-stopped-on-the-way-to-join-isis`,
-      commentCount: 0,
       template: TemplateType.Mainstandard,
       bylines: new MockMarkup().addBylines().get(),
       expirableFlags: [

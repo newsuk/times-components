@@ -23,7 +23,6 @@ const getMediaUrl = (obj, ratio) => {
 };
 
 export default ({
-  commentCount = 100,
   commentsEnabled = true,
   chooseMedia = () => ({ __typename: "Image" }),
   error = () => {},
@@ -43,7 +42,6 @@ export default ({
             if (!parent) {
               return makeArticle({
                 ...article,
-                commentCount,
                 commentsEnabled,
                 id
               });

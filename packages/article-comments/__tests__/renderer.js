@@ -13,7 +13,6 @@ export default ({
     <ArticleComments
       articleId="dummy-article-id"
       publishedTime={publishedTime}
-      commentCount={count}
       commentsEnabled={enabled}
       isEnabled={enabled}
       onCommentGuidelinesPress={() => {}}
