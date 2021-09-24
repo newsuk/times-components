@@ -17,11 +17,7 @@ const ArticleExtrasContent = ({
   onRelatedArticlePress,
   onTopicPress
 }) => {
-  const {
-    commentsEnabled,
-    relatedArticleSlice,
-    topics
-  } = article;
+  const { commentsEnabled, relatedArticleSlice, topics } = article;
 
   return (
     <Fragment>
