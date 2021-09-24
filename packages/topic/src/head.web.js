@@ -12,10 +12,16 @@ import { defaultProps } from "./topic-prop-types";
 function Head({ description, name, slug, page, articleCount, pageSize }) {
   const totalPages =
     articleCount && pageSize ? Math.ceil(articleCount / pageSize) : 0;
-  const content = (description && description.length
-    ? renderTreeArrayAsText(description).substring(0, 200)
-    : `Discover expert ${name} articles from The Times and The Sunday Times.`
-  ).concat(` Page ${page} of ${totalPages}`);
+  let content =
+    description && description.length
+      ? renderTreeArrayAsText(description).substring(0, 200)
+      : `Discover expert ${
+          name ? `${name} ` : ""
+        }articles from The Times and The Sunday Times.`;
+
+  if (totalPages) {
+    content = content.concat(` Page ${page} of ${totalPages}`);
+  }
 
   let title = `${name} | The Times & The Sunday Times`;
   title += page && page > 1 ? ` | Page ${page}` : "";
