@@ -1,6 +1,6 @@
 {
   "name": "@times-components/section",
-  "version": "1.6.87",
+  "version": "1.6.88",
   "description": "Section Page",
   "main": "dist/section",
   "dev": "src/section",
@@ -35,7 +35,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
     "@times-components/context": "1.2.26",
-    "@times-components/edition-slices": "0.104.21",
+    "@times-components/edition-slices": "0.104.22",
     "@times-components/icons": "2.16.3",
     "@times-components/image": "6.8.6",
     "@times-components/link": "3.6.44",
@@ -50,7 +50,7 @@
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.17",
-    "@times-components/fixture-generator": "0.29.1",
+    "@times-components/fixture-generator": "0.29.2",
     "@times-components/jest-configurator": "2.7.2",
     "@times-components/jest-serializer": "3.2.26",
     "@times-components/star-button": "0.3.45",
