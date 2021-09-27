@@ -74,6 +74,7 @@ class Comments extends Component {
           return null;
       }
     };
+
     let spotAccountId = commentingConfig.account.readOnly;
     if (commentingConfig && commentingConfig.switchOver) {
       const switchOverDate = commentingConfig.switchOver;
@@ -81,22 +82,6 @@ class Comments extends Component {
         spotAccountId = commentingConfig.account.current;
       }
     }
-
-    const launcherScript = document.createElement("script");
-    launcherScript.setAttribute("async", "async");
-    launcherScript.setAttribute(
-      "src",
-      `https://launcher.spot.im/spot/${spotAccountId}`
-    );
-    launcherScript.setAttribute("data-spotim-module", "spotim-launcher");
-    launcherScript.setAttribute("data-post-id", articleId);
-    launcherScript.setAttribute(
-      "data-post-url",
-      `https://www.thetimes.co.uk/article/${articleId}`
-    );
-    launcherScript.setAttribute("data-seo-enabled", true);
-    launcherScript.setAttribute("data-livefyre-url", articleId);
-    this.container.appendChild(launcherScript);
 
     document.addEventListener(
       "spot-im-current-user-typing-start",
@@ -144,8 +129,28 @@ class Comments extends Component {
         document.addEventListener("spot-im-api-ready", () =>
           executeSSOtransaction(() => {})
         );
+        document.addEventListener("spot-im-login-start", () =>
+          executeSSOtransaction(() => {})
+        );
       }
     }
+
+    const launcherScript = document.createElement("script");
+    launcherScript.setAttribute("async", "async");
+    launcherScript.setAttribute(
+      "src",
+      `https://launcher.spot.im/spot/${spotAccountId}`
+    );
+    launcherScript.setAttribute("data-spotim-module", "spotim-launcher");
+    launcherScript.setAttribute("data-post-id", articleId);
+    launcherScript.setAttribute(
+      "data-post-url",
+      `https://www.thetimes.co.uk/article/${articleId}`
+    );
+    launcherScript.setAttribute("data-seo-enabled", true);
+    launcherScript.setAttribute("data-livefyre-url", articleId);
+
+    this.container.appendChild(launcherScript);
   }
 
   disposeComments() {
