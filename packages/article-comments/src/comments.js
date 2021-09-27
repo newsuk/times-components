@@ -122,6 +122,19 @@ class Comments extends Component {
       getShareEvent(event)
     );
 
+    if (!isReadOnly) {
+      if (window.SPOTIM && window.SPOTIM.startSSO) {
+        executeSSOtransaction(() => {});
+      } else {
+        document.addEventListener("spot-im-api-ready", () =>
+          executeSSOtransaction(() => {})
+        );
+        document.addEventListener("spot-im-login-start", () =>
+          executeSSOtransaction(() => {})
+        );
+      }
+    }
+
     const launcherScript = document.createElement("script");
     launcherScript.setAttribute("async", "async");
     launcherScript.setAttribute(
@@ -136,20 +149,8 @@ class Comments extends Component {
     );
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
-    this.container.appendChild(launcherScript);
 
-    if (!isReadOnly) {
-      if (window.SPOTIM && window.SPOTIM.startSSO) {
-        executeSSOtransaction(() => {});
-      } else {
-        document.addEventListener("spot-im-api-ready", () =>
-          executeSSOtransaction(() => {})
-        );
-        document.addEventListener("spot-im-login-start", () =>
-          executeSSOtransaction(() => {})
-        );
-      }
-    }
+    this.container.appendChild(launcherScript);
   }
 
   disposeComments() {
