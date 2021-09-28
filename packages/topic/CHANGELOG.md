@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.4.3](https://github.com/newsuk/times-components/compare/@times-components/topic@5.4.2...@times-components/topic@5.4.3) (2021-09-28)
+
+
+### Bug Fixes
+
+* **TSEO-32:** Added page number in meta data ([#2774](https://github.com/newsuk/times-components/issues/2774)) ([4e70161](https://github.com/newsuk/times-components/commit/4e70161b2803f8401c6208d373e7f44886bd4fbc))
+
+
+
+
+
 ## [5.4.2](https://github.com/newsuk/times-components/compare/@times-components/topic@5.4.1...@times-components/topic@5.4.2) (2021-09-24)
 
 **Note:** Version bump only for package @times-components/topic
