@@ -9,15 +9,25 @@ import { propTypes as topicHeadPropTypes } from "./topic-head-prop-types";
 
 import { defaultProps } from "./topic-prop-types";
 
-function Head({ description, name, slug, page, articleCount, pageSize }) {
+function Head({
+  metaDescription,
+  description,
+  name,
+  slug,
+  page,
+  articleCount,
+  pageSize
+}) {
   const totalPages =
     articleCount && pageSize ? Math.ceil(articleCount / pageSize) : 0;
+
   let content =
-    description && description.length
+    metaDescription ||
+    (description && description.length
       ? renderTreeArrayAsText(description).substring(0, 200)
       : `Discover expert articles ${
           name ? `about ${name} ` : ""
-        }from The Times and The Sunday Times.`;
+        }from The Times and The Sunday Times.`);
 
   if (totalPages && totalPages >= page) {
     content = content.concat(` Page ${page} of ${totalPages}`);

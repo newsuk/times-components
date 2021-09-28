@@ -90,6 +90,7 @@ const Topic = ({
           <Responsive>
             <Head
               {...{
+                metaDescription,
                 description,
                 name,
                 slug,
