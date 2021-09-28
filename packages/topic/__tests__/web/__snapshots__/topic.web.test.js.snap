@@ -6,11 +6,10 @@ exports[`2. a loading state 1`] = `
 <topicArticlesProvider>
   <Helmet>
     <title>
-      
        | The Times & The Sunday Times
     </title>
     <meta
-      content="Discover expert  articles from The Times and The Sunday Times."
+      content="Discover expert articles from The Times and The Sunday Times. Page 1 of 1"
       name="description"
     />
     <link
@@ -45,19 +44,127 @@ exports[`2. a loading state 1`] = `
 </topicArticlesProvider>
 `;
 
-exports[`3. an article list 1`] = `
+exports[`3. uses general description when there is no description 1`] = `
 <topicArticlesProvider>
   <Helmet>
     <title>
-      Test Name
-       | The Times & The Sunday Times
+      London | The Times & The Sunday Times
+    </title>
+    <meta
+      content="Discover expert articles about London from The Times and The Sunday Times. Page 1 of 1"
+      name="description"
+    />
+    <link
+      href="/topic/some-slug"
+      rel="canonical"
+    />
+  </Helmet>
+  <ArticleList
+    articleListHeader={
+      <TopicHead
+        description={null}
+        isLoading={false}
+        metaDescription=""
+        name="London"
+      />
+    }
+    articles={
+      Array [
+        Object {
+          "headline": "Headline 1",
+          "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+          "url": "https://article1.io",
+        },
+      ]
+    }
+    count={7}
+    emptyStateMessage="e68a9e92b17f4f4171c55353e2bab553"
+    imageRatio={1.25}
+    page={1}
+    pageSize={10}
+    showImages={true}
+  />
+</topicArticlesProvider>
+`;
+
+exports[`4. render description when there is description 1`] = `
+<topicArticlesProvider>
+  <Helmet>
+    <title>
+      London | The Times & The Sunday Times
+    </title>
+    <meta
+      content="Sample Description. Page 1 of 1"
+      name="description"
+    />
+    <link
+      href="/topic/some-slug"
+      rel="canonical"
+    />
+  </Helmet>
+  <ArticleList
+    articleListHeader={
+      <TopicHead
+        description={
+          Array [
+            Object {
+              "attributes": Object {
+                "value": "Sample ",
+              },
+              "children": Array [],
+              "name": "text",
+            },
+            Object {
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "Description.",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "italic",
+            },
+          ]
+        }
+        isLoading={false}
+        metaDescription=""
+        name="London"
+      />
+    }
+    articles={
+      Array [
+        Object {
+          "headline": "Headline 1",
+          "id": "d98c257c-cb16-11e7-b529-95e3fc05f40f",
+          "url": "https://article1.io",
+        },
+      ]
+    }
+    count={7}
+    emptyStateMessage="e68a9e92b17f4f4171c55353e2bab553"
+    imageRatio={1.25}
+    page={1}
+    pageSize={10}
+    showImages={true}
+  />
+</topicArticlesProvider>
+`;
+
+exports[`5. an article list 1`] = `
+<topicArticlesProvider>
+  <Helmet>
+    <title>
+      Test Name | The Times & The Sunday Times | Page 2
     </title>
     <meta
       content="Test italic bold text."
       name="description"
     />
     <link
-      href="/topic/some-slug"
+      href="/topic/some-slug?page=2"
       rel="canonical"
     />
   </Helmet>
@@ -132,19 +239,18 @@ exports[`3. an article list 1`] = `
 </topicArticlesProvider>
 `;
 
-exports[`4. fetches more articles 1`] = `
+exports[`6. fetches more articles 1`] = `
 <topicArticlesProvider>
   <Helmet>
     <title>
-      Test Name
-       | The Times & The Sunday Times
+      Test Name | The Times & The Sunday Times | Page 2
     </title>
     <meta
       content="Test italic bold text."
       name="description"
     />
     <link
-      href="/topic/some-slug"
+      href="/topic/some-slug?page=2"
       rel="canonical"
     />
   </Helmet>
@@ -224,19 +330,18 @@ exports[`4. fetches more articles 1`] = `
 </topicArticlesProvider>
 `;
 
-exports[`5. fetches more articles and falls back to previous data if no more 1`] = `
+exports[`7. fetches more articles and falls back to previous data if no more 1`] = `
 <topicArticlesProvider>
   <Helmet>
     <title>
-      Test Name
-       | The Times & The Sunday Times
+      Test Name | The Times & The Sunday Times | Page 2
     </title>
     <meta
       content="Test italic bold text."
       name="description"
     />
     <link
-      href="/topic/some-slug"
+      href="/topic/some-slug?page=2"
       rel="canonical"
     />
   </Helmet>
@@ -311,7 +416,7 @@ exports[`5. fetches more articles and falls back to previous data if no more 1`]
 </topicArticlesProvider>
 `;
 
-exports[`6. an article list header 1`] = `
+exports[`8. an article list header 1`] = `
 <div>
   <div>
     <h1>
@@ -332,7 +437,7 @@ exports[`6. an article list header 1`] = `
 </div>
 `;
 
-exports[`7. a topic header with no description 1`] = `
+exports[`9. a topic header with no description 1`] = `
 <div>
   <div>
     <h1>
@@ -342,4 +447,4 @@ exports[`7. a topic header with no description 1`] = `
 </div>
 `;
 
-exports[`8. an article list header loading 1`] = `<div />`;
+exports[`10. an article list header loading 1`] = `<div />`;

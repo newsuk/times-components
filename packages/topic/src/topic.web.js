@@ -88,7 +88,17 @@ const Topic = ({
 
         return (
           <Responsive>
-            <Head {...{ metaDescription, description, name, slug }} />
+            <Head
+              {...{
+                metaDescription,
+                description,
+                name,
+                slug,
+                page,
+                articleCount: get(data, "articles.count", 0),
+                pageSize
+              }}
+            />
             <ArticleList
               articleListHeader={articleListHeader}
               articles={get(data, "articles.list", [])}
