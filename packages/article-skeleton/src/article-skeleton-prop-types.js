@@ -7,7 +7,13 @@ const articleSkeletonPropTypes = {
   Header: PropTypes.func.isRequired,
   navigationMode: PropTypes.shape({}),
   receiveChildList: PropTypes.func,
-  spotAccountId: PropTypes.string
+  commentingConfig: PropTypes.shape({
+    accounts: PropTypes.shape({
+      current: PropTypes.string.isRequired,
+      readOnly: PropTypes.string.isRequired
+    }),
+    switchOver: PropTypes.string.isRequired
+  }).isRequired
 };
 
 const articleSkeletonDefaultProps = {

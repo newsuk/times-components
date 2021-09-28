@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.13.1...@times-components/article-comments@0.14.0) (2021-09-27)
+
+
+### Features
+
+* commenting update ([#2796](https://github.com/newsuk/times-components/issues/2796)) ([ae4d5a1](https://github.com/newsuk/times-components/commit/ae4d5a1591d8746d5dd5e403f9ea45ea26d1948f))
+
+
+
+
+
+## [0.13.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.13.0...@times-components/article-comments@0.13.1) (2021-09-24)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.12.0...@times-components/article-comments@0.13.0) (2021-09-01)
+
+
+### Features
+
+* **TE-178:** Real Name Commenting - didn't pass the publishedTime up from article-extra to article-comment. Also changed a typo to change `readonly` to `readOnly` ([#2785](https://github.com/newsuk/times-components/issues/2785)) ([9c13a06](https://github.com/newsuk/times-components/commit/9c13a069525f9f3607daed6a3182a689f0697991))
+
+
+
+
+
+# [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.11.16...@times-components/article-comments@0.12.0) (2021-08-31)
+
+
+### Features
+
+* **TE-178:**  real name commenting ([#2780](https://github.com/newsuk/times-components/issues/2780)) ([4a51ffe](https://github.com/newsuk/times-components/commit/4a51ffefb0b37720f9328f0baaa940e1083c87ec))
+
+
+
+
+
 ## [0.11.16](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.11.15...@times-components/article-comments@0.11.16) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/article-comments

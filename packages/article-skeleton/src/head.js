@@ -157,7 +157,8 @@ function Head({
   const authors = getAuthorSchema(article);
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline || "";
-  const datePublished = new Date(publishedTime).toISOString();
+  const datePublished = publishedTime && new Date(publishedTime).toISOString();
+
   const dateModified = updatedTime || datePublished;
 
   const defaultAuthorSchema = {

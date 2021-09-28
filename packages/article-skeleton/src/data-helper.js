@@ -18,7 +18,6 @@ const prepareDataForListView = articleData => {
     : null;
   const commentsData = {
     articleId: articleData.id,
-    commentCount: articleData.commentCount,
     commentsEnabled: articleData.commentsEnabled,
     url: articleData.url
   };

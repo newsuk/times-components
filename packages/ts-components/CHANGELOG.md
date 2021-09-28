@@ -3,6 +3,100 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.11](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.10...@times-components/ts-components@1.12.11) (2021-09-24)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.12.10](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.9...@times-components/ts-components@1.12.10) (2021-09-14)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.12.9](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.8...@times-components/ts-components@1.12.9) (2021-09-06)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.12.8](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.7...@times-components/ts-components@1.12.8) (2021-09-02)
+
+
+### Reverts
+
+* remove sanitize html ([#2789](https://github.com/newsuk/times-components/issues/2789)) ([3b313f2](https://github.com/newsuk/times-components/commit/3b313f27d60ae80ee757a4943c3ed0fee7156c9f))
+
+
+
+
+
+## [1.12.7](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.6...@times-components/ts-components@1.12.7) (2021-09-02)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.12.6](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.5...@times-components/ts-components@1.12.6) (2021-09-01)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.12.5](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.4...@times-components/ts-components@1.12.5) (2021-08-31)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.12.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.3...@times-components/ts-components@1.12.4) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.12.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.2...@times-components/ts-components@1.12.3) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.12.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.1...@times-components/ts-components@1.12.2) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.12.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.0...@times-components/ts-components@1.12.1) (2021-08-27)
+
+
+### Bug Fixes
+
+* conditionally check the window obj ([#2782](https://github.com/newsuk/times-components/issues/2782)) ([5fa4cb9](https://github.com/newsuk/times-components/commit/5fa4cb975631da911650140a7c48a4b50b97ab2c))
+
+
+
+
+
 # [1.12.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.11.30...@times-components/ts-components@1.12.0) (2021-08-20)
 
 

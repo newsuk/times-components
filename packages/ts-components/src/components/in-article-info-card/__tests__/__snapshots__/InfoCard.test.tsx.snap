@@ -4,10 +4,10 @@ exports[`InfoCard renders 1`] = `
 <body>
   <div>
     <div
-      class="sc-chPdSV erPDic"
+      class="sc-cSHVUG fZYACh"
     >
       <div
-        class="rec rec-carousel-wrapper sc-kAzzGY cgeFtl sc-EHOje eOvqeq"
+        class="rec rec-carousel-wrapper sc-jzJRlG eIqZvH sc-EHOje eOvqeq"
       >
         <div
           class="rec rec-carousel sc-ifAKCX kQtsWC"
@@ -33,24 +33,24 @@ exports[`InfoCard renders 1`] = `
                     style="width: 0px; padding: 0px 0px 0px 0px;"
                   >
                     <div
-                      class="sc-kpOJdX dacJJY"
+                      class="sc-kgoBCf hmwhTM"
                       tabindex="0"
                     >
                       <div
                         class="sc-ckVGcZ kInrAI"
                       >
                         <img
-                          class="sc-dxgOiQ eRLSPr"
+                          class="sc-kGXeez iiZPJL"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180"
                         />
                       </div>
                       <div
-                        class="sc-gZMcBi grGRzQ"
+                        class="sc-dnqmqq laQCFw"
                       >
                         Birch
                       </div>
                       <div
-                        class="sc-gqjmRU iAgaSh"
+                        class="sc-iwsKbI bMDHmH"
                       >
                         Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently
                       </div>
@@ -66,17 +66,17 @@ exports[`InfoCard renders 1`] = `
                     style="width: 0px; padding: 0px 0px 0px 0px;"
                   >
                     <div
-                      class="sc-kpOJdX dacJJY"
+                      class="sc-kgoBCf hmwhTM"
                       tabindex="-1"
                     >
                       
                       <div
-                        class="sc-gZMcBi grGRzQ"
+                        class="sc-dnqmqq laQCFw"
                       >
                         Mitre
                       </div>
                       <div
-                        class="sc-gqjmRU iAgaSh"
+                        class="sc-iwsKbI bMDHmH"
                       >
                         Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history
                       </div>
@@ -92,17 +92,17 @@ exports[`InfoCard renders 1`] = `
                     style="width: 0px; padding: 0px 0px 0px 0px;"
                   >
                     <div
-                      class="sc-kpOJdX dacJJY"
+                      class="sc-kgoBCf hmwhTM"
                       tabindex="-1"
                     >
                       
                       <div
-                        class="sc-gZMcBi grGRzQ"
+                        class="sc-dnqmqq laQCFw"
                       >
                         Subtitle 1
                       </div>
                       <div
-                        class="sc-gqjmRU iAgaSh"
+                        class="sc-iwsKbI bMDHmH"
                       >
                         Copy text 1
                       </div>
@@ -118,17 +118,17 @@ exports[`InfoCard renders 1`] = `
                     style="width: 0px; padding: 0px 0px 0px 0px;"
                   >
                     <div
-                      class="sc-kpOJdX dacJJY"
+                      class="sc-kgoBCf hmwhTM"
                       tabindex="-1"
                     >
                       
                       <div
-                        class="sc-gZMcBi grGRzQ"
+                        class="sc-dnqmqq laQCFw"
                       >
                         Subtitle 2
                       </div>
                       <div
-                        class="sc-gqjmRU iAgaSh"
+                        class="sc-iwsKbI bMDHmH"
                       >
                         Copy text 2
                       </div>
@@ -144,17 +144,17 @@ exports[`InfoCard renders 1`] = `
                     style="width: 0px; padding: 0px 0px 0px 0px;"
                   >
                     <div
-                      class="sc-kpOJdX dacJJY"
+                      class="sc-kgoBCf hmwhTM"
                       tabindex="-1"
                     >
                       
                       <div
-                        class="sc-gZMcBi grGRzQ"
+                        class="sc-dnqmqq laQCFw"
                       >
                         Subtitle 3
                       </div>
                       <div
-                        class="sc-gqjmRU iAgaSh"
+                        class="sc-iwsKbI bMDHmH"
                       >
                         Copy text 3
                       </div>
@@ -170,17 +170,17 @@ exports[`InfoCard renders 1`] = `
                     style="width: 0px; padding: 0px 0px 0px 0px;"
                   >
                     <div
-                      class="sc-kpOJdX dacJJY"
+                      class="sc-kgoBCf hmwhTM"
                       tabindex="-1"
                     >
                       
                       <div
-                        class="sc-gZMcBi grGRzQ"
+                        class="sc-dnqmqq laQCFw"
                       >
                         Subtitle 4
                       </div>
                       <div
-                        class="sc-gqjmRU iAgaSh"
+                        class="sc-iwsKbI bMDHmH"
                       >
                         Copy text 4
                       </div>
@@ -192,29 +192,29 @@ exports[`InfoCard renders 1`] = `
           </div>
         </div>
         <div
-          class="sc-kgoBCf vljVW"
+          class="sc-kAzzGY fCpRvT"
         >
           <div
-            class="sc-kGXeez bCsASU"
+            class="sc-chPdSV cxUg"
           >
             <div
-              class="sc-dnqmqq diBCcz"
+              class="sc-dxgOiQ kyeaEO"
             >
               Best places to stay
             </div>
             <div
-              class="sc-VigVT hUfyZG"
+              class="sc-gZMcBi ehctmQ"
             >
               <div
-                class="sc-iwsKbI qxPIE"
+                class="sc-htoDjs bGCkXx"
               >
                 The Sunday Times best British hotels
               </div>
               <div
-                class="sc-jTzLTM izCUzN"
+                class="sc-gqjmRU dRclRz"
               >
                 <button
-                  class="sc-fjdhpX igeQtI"
+                  class="sc-VigVT cxIdcK"
                   data-testid="Previous button"
                   disabled=""
                 >
@@ -230,23 +230,23 @@ exports[`InfoCard renders 1`] = `
                   </svg>
                 </button>
                 <div
-                  class="sc-jzJRlG fFIdwf"
+                  class="sc-jTzLTM fwzogc"
                 >
                   <div
-                    class="sc-cSHVUG hJnzps"
+                    class="sc-fjdhpX ieeIfc"
                     data-testid="Page Indicator"
                   />
                   <div
-                    class="sc-cSHVUG gIgDvO"
+                    class="sc-fjdhpX jcRAQq"
                     data-testid="Page Indicator"
                   />
                   <div
-                    class="sc-cSHVUG gIgDvO"
+                    class="sc-fjdhpX jcRAQq"
                     data-testid="Page Indicator"
                   />
                 </div>
                 <button
-                  class="nextBtn sc-fjdhpX brPuiN"
+                  class="nextBtn sc-VigVT ksrZCo"
                   data-testid="Next Button"
                 >
                   <svg
@@ -274,10 +274,10 @@ exports[`InfoCard renders no image 1`] = `
 <body>
   <div>
     <div
-      class="sc-chPdSV erPDic"
+      class="sc-cSHVUG fZYACh"
     >
       <div
-        class="rec rec-carousel-wrapper sc-kAzzGY cgeFtl sc-EHOje eOvqeq"
+        class="rec rec-carousel-wrapper sc-jzJRlG eIqZvH sc-EHOje eOvqeq"
       >
         <div
           class="rec rec-carousel sc-ifAKCX kQtsWC"
@@ -303,24 +303,24 @@ exports[`InfoCard renders no image 1`] = `
                     style="width: 0px; padding: 0px 0px 0px 0px;"
                   >
                     <div
-                      class="sc-kpOJdX dacJJY"
+                      class="sc-kgoBCf hmwhTM"
                       tabindex="0"
                     >
                       <div
                         class="sc-ckVGcZ kInrAI"
                       >
                         <img
-                          class="sc-dxgOiQ eRLSPr"
+                          class="sc-kGXeez iiZPJL"
                           src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180"
                         />
                       </div>
                       <div
-                        class="sc-gZMcBi grGRzQ"
+                        class="sc-dnqmqq laQCFw"
                       >
                         Birch
                       </div>
                       <div
-                        class="sc-gqjmRU iAgaSh"
+                        class="sc-iwsKbI bMDHmH"
                       >
                         Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently
                       </div>
@@ -336,17 +336,17 @@ exports[`InfoCard renders no image 1`] = `
                     style="width: 0px; padding: 0px 0px 0px 0px;"
                   >
                     <div
-                      class="sc-kpOJdX dacJJY"
+                      class="sc-kgoBCf hmwhTM"
                       tabindex="-1"
                     >
                       
                       <div
-                        class="sc-gZMcBi grGRzQ"
+                        class="sc-dnqmqq laQCFw"
                       >
                         Mitre
                       </div>
                       <div
-                        class="sc-gqjmRU iAgaSh"
+                        class="sc-iwsKbI bMDHmH"
                       >
                         Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history
                       </div>
@@ -362,17 +362,17 @@ exports[`InfoCard renders no image 1`] = `
                     style="width: 0px; padding: 0px 0px 0px 0px;"
                   >
                     <div
-                      class="sc-kpOJdX dacJJY"
+                      class="sc-kgoBCf hmwhTM"
                       tabindex="-1"
                     >
                       
                       <div
-                        class="sc-gZMcBi grGRzQ"
+                        class="sc-dnqmqq laQCFw"
                       >
                         Subtitle 1
                       </div>
                       <div
-                        class="sc-gqjmRU iAgaSh"
+                        class="sc-iwsKbI bMDHmH"
                       >
                         Copy text 1
                       </div>
@@ -388,17 +388,17 @@ exports[`InfoCard renders no image 1`] = `
                     style="width: 0px; padding: 0px 0px 0px 0px;"
                   >
                     <div
-                      class="sc-kpOJdX dacJJY"
+                      class="sc-kgoBCf hmwhTM"
                       tabindex="-1"
                     >
                       
                       <div
-                        class="sc-gZMcBi grGRzQ"
+                        class="sc-dnqmqq laQCFw"
                       >
                         Subtitle 2
                       </div>
                       <div
-                        class="sc-gqjmRU iAgaSh"
+                        class="sc-iwsKbI bMDHmH"
                       >
                         Copy text 2
                       </div>
@@ -414,17 +414,17 @@ exports[`InfoCard renders no image 1`] = `
                     style="width: 0px; padding: 0px 0px 0px 0px;"
                   >
                     <div
-                      class="sc-kpOJdX dacJJY"
+                      class="sc-kgoBCf hmwhTM"
                       tabindex="-1"
                     >
                       
                       <div
-                        class="sc-gZMcBi grGRzQ"
+                        class="sc-dnqmqq laQCFw"
                       >
                         Subtitle 3
                       </div>
                       <div
-                        class="sc-gqjmRU iAgaSh"
+                        class="sc-iwsKbI bMDHmH"
                       >
                         Copy text 3
                       </div>
@@ -440,17 +440,17 @@ exports[`InfoCard renders no image 1`] = `
                     style="width: 0px; padding: 0px 0px 0px 0px;"
                   >
                     <div
-                      class="sc-kpOJdX dacJJY"
+                      class="sc-kgoBCf hmwhTM"
                       tabindex="-1"
                     >
                       
                       <div
-                        class="sc-gZMcBi grGRzQ"
+                        class="sc-dnqmqq laQCFw"
                       >
                         Subtitle 4
                       </div>
                       <div
-                        class="sc-gqjmRU iAgaSh"
+                        class="sc-iwsKbI bMDHmH"
                       >
                         Copy text 4
                       </div>
@@ -462,29 +462,29 @@ exports[`InfoCard renders no image 1`] = `
           </div>
         </div>
         <div
-          class="sc-kgoBCf vljVW"
+          class="sc-kAzzGY fCpRvT"
         >
           <div
-            class="sc-kGXeez bCsASU"
+            class="sc-chPdSV cxUg"
           >
             <div
-              class="sc-dnqmqq diBCcz"
+              class="sc-dxgOiQ kyeaEO"
             >
               Best places to stay
             </div>
             <div
-              class="sc-VigVT hUfyZG"
+              class="sc-gZMcBi ehctmQ"
             >
               <div
-                class="sc-iwsKbI qxPIE"
+                class="sc-htoDjs bGCkXx"
               >
                 The Sunday Times best British hotels
               </div>
               <div
-                class="sc-jTzLTM izCUzN"
+                class="sc-gqjmRU dRclRz"
               >
                 <button
-                  class="sc-fjdhpX igeQtI"
+                  class="sc-VigVT cxIdcK"
                   data-testid="Previous button"
                   disabled=""
                 >
@@ -500,23 +500,23 @@ exports[`InfoCard renders no image 1`] = `
                   </svg>
                 </button>
                 <div
-                  class="sc-jzJRlG fFIdwf"
+                  class="sc-jTzLTM fwzogc"
                 >
                   <div
-                    class="sc-cSHVUG hJnzps"
+                    class="sc-fjdhpX ieeIfc"
                     data-testid="Page Indicator"
                   />
                   <div
-                    class="sc-cSHVUG gIgDvO"
+                    class="sc-fjdhpX jcRAQq"
                     data-testid="Page Indicator"
                   />
                   <div
-                    class="sc-cSHVUG gIgDvO"
+                    class="sc-fjdhpX jcRAQq"
                     data-testid="Page Indicator"
                   />
                 </div>
                 <button
-                  class="nextBtn sc-fjdhpX brPuiN"
+                  class="nextBtn sc-VigVT ksrZCo"
                   data-testid="Next Button"
                 >
                   <svg
@@ -545,7 +545,7 @@ exports[`InfoCard should render the initial error state correctly 1`] = `<Docume
 exports[`InfoCard should render the initial loading state correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htoDjs sfJmJ"
+    class="sc-kpOJdX dgGJxc"
   >
     <div>
       Placeholder
@@ -557,10 +557,10 @@ exports[`InfoCard should render the initial loading state correctly 1`] = `
 exports[`InfoCard should render the standard component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-chPdSV erPDic"
+    class="sc-cSHVUG fZYACh"
   >
     <div
-      class="rec rec-carousel-wrapper sc-kAzzGY cgeFtl sc-EHOje eOvqeq"
+      class="rec rec-carousel-wrapper sc-jzJRlG eIqZvH sc-EHOje eOvqeq"
     >
       <div
         class="rec rec-carousel sc-ifAKCX kQtsWC"
@@ -586,24 +586,24 @@ exports[`InfoCard should render the standard component 1`] = `
                   style="width: 0px; padding: 0px 0px 0px 0px;"
                 >
                   <div
-                    class="sc-kpOJdX dacJJY"
+                    class="sc-kgoBCf hmwhTM"
                     tabindex="0"
                   >
                     <div
                       class="sc-ckVGcZ kInrAI"
                     >
                       <img
-                        class="sc-dxgOiQ eRLSPr"
+                        class="sc-kGXeez iiZPJL"
                         src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180"
                       />
                     </div>
                     <div
-                      class="sc-gZMcBi grGRzQ"
+                      class="sc-dnqmqq laQCFw"
                     >
                       Birch
                     </div>
                     <div
-                      class="sc-gqjmRU iAgaSh"
+                      class="sc-iwsKbI bMDHmH"
                     >
                       Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently
                     </div>
@@ -619,16 +619,16 @@ exports[`InfoCard should render the standard component 1`] = `
                   style="width: 0px; padding: 0px 0px 0px 0px;"
                 >
                   <div
-                    class="sc-kpOJdX dacJJY"
+                    class="sc-kgoBCf hmwhTM"
                     tabindex="-1"
                   >
                     <div
-                      class="sc-gZMcBi grGRzQ"
+                      class="sc-dnqmqq laQCFw"
                     >
                       Mitre
                     </div>
                     <div
-                      class="sc-gqjmRU iAgaSh"
+                      class="sc-iwsKbI bMDHmH"
                     >
                       Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history
                     </div>
@@ -644,16 +644,16 @@ exports[`InfoCard should render the standard component 1`] = `
                   style="width: 0px; padding: 0px 0px 0px 0px;"
                 >
                   <div
-                    class="sc-kpOJdX dacJJY"
+                    class="sc-kgoBCf hmwhTM"
                     tabindex="-1"
                   >
                     <div
-                      class="sc-gZMcBi grGRzQ"
+                      class="sc-dnqmqq laQCFw"
                     >
                       Subtitle 1
                     </div>
                     <div
-                      class="sc-gqjmRU iAgaSh"
+                      class="sc-iwsKbI bMDHmH"
                     >
                       Copy text 1
                     </div>
@@ -669,16 +669,16 @@ exports[`InfoCard should render the standard component 1`] = `
                   style="width: 0px; padding: 0px 0px 0px 0px;"
                 >
                   <div
-                    class="sc-kpOJdX dacJJY"
+                    class="sc-kgoBCf hmwhTM"
                     tabindex="-1"
                   >
                     <div
-                      class="sc-gZMcBi grGRzQ"
+                      class="sc-dnqmqq laQCFw"
                     >
                       Subtitle 2
                     </div>
                     <div
-                      class="sc-gqjmRU iAgaSh"
+                      class="sc-iwsKbI bMDHmH"
                     >
                       Copy text 2
                     </div>
@@ -694,16 +694,16 @@ exports[`InfoCard should render the standard component 1`] = `
                   style="width: 0px; padding: 0px 0px 0px 0px;"
                 >
                   <div
-                    class="sc-kpOJdX dacJJY"
+                    class="sc-kgoBCf hmwhTM"
                     tabindex="-1"
                   >
                     <div
-                      class="sc-gZMcBi grGRzQ"
+                      class="sc-dnqmqq laQCFw"
                     >
                       Subtitle 3
                     </div>
                     <div
-                      class="sc-gqjmRU iAgaSh"
+                      class="sc-iwsKbI bMDHmH"
                     >
                       Copy text 3
                     </div>
@@ -719,16 +719,16 @@ exports[`InfoCard should render the standard component 1`] = `
                   style="width: 0px; padding: 0px 0px 0px 0px;"
                 >
                   <div
-                    class="sc-kpOJdX dacJJY"
+                    class="sc-kgoBCf hmwhTM"
                     tabindex="-1"
                   >
                     <div
-                      class="sc-gZMcBi grGRzQ"
+                      class="sc-dnqmqq laQCFw"
                     >
                       Subtitle 4
                     </div>
                     <div
-                      class="sc-gqjmRU iAgaSh"
+                      class="sc-iwsKbI bMDHmH"
                     >
                       Copy text 4
                     </div>
@@ -740,29 +740,29 @@ exports[`InfoCard should render the standard component 1`] = `
         </div>
       </div>
       <div
-        class="sc-kgoBCf vljVW"
+        class="sc-kAzzGY fCpRvT"
       >
         <div
-          class="sc-kGXeez bCsASU"
+          class="sc-chPdSV cxUg"
         >
           <div
-            class="sc-dnqmqq diBCcz"
+            class="sc-dxgOiQ kyeaEO"
           >
             Best places to stay
           </div>
           <div
-            class="sc-VigVT hUfyZG"
+            class="sc-gZMcBi ehctmQ"
           >
             <div
-              class="sc-iwsKbI qxPIE"
+              class="sc-htoDjs bGCkXx"
             >
               The Sunday Times best British hotels
             </div>
             <div
-              class="sc-jTzLTM izCUzN"
+              class="sc-gqjmRU dRclRz"
             >
               <button
-                class="sc-fjdhpX igeQtI"
+                class="sc-VigVT cxIdcK"
                 data-testid="Previous button"
                 disabled=""
               >
@@ -778,23 +778,23 @@ exports[`InfoCard should render the standard component 1`] = `
                 </svg>
               </button>
               <div
-                class="sc-jzJRlG fFIdwf"
+                class="sc-jTzLTM fwzogc"
               >
                 <div
-                  class="sc-cSHVUG hJnzps"
+                  class="sc-fjdhpX ieeIfc"
                   data-testid="Page Indicator"
                 />
                 <div
-                  class="sc-cSHVUG gIgDvO"
+                  class="sc-fjdhpX jcRAQq"
                   data-testid="Page Indicator"
                 />
                 <div
-                  class="sc-cSHVUG gIgDvO"
+                  class="sc-fjdhpX jcRAQq"
                   data-testid="Page Indicator"
                 />
               </div>
               <button
-                class="nextBtn sc-fjdhpX brPuiN"
+                class="nextBtn sc-VigVT ksrZCo"
                 data-testid="Next Button"
               >
                 <svg
@@ -820,10 +820,10 @@ exports[`InfoCard should render the standard component 1`] = `
 exports[`InfoCard should render the wide component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-chPdSV gOIZDa"
+    class="sc-cSHVUG QZnnk"
   >
     <div
-      class="rec rec-carousel-wrapper sc-kAzzGY cgeFtl sc-EHOje eOvqeq"
+      class="rec rec-carousel-wrapper sc-jzJRlG eIqZvH sc-EHOje eOvqeq"
     >
       <div
         class="rec rec-carousel sc-ifAKCX kQtsWC"
@@ -849,24 +849,24 @@ exports[`InfoCard should render the wide component 1`] = `
                   style="width: 0px; padding: 0px 0px 0px 0px;"
                 >
                   <div
-                    class="sc-kpOJdX dacJJY"
+                    class="sc-kgoBCf hmwhTM"
                     tabindex="0"
                   >
                     <div
                       class="sc-ckVGcZ kInrAI"
                     >
                       <img
-                        class="sc-dxgOiQ eRLSPr"
+                        class="sc-kGXeez iiZPJL"
                         src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180"
                       />
                     </div>
                     <div
-                      class="sc-gZMcBi grGRzQ"
+                      class="sc-dnqmqq laQCFw"
                     >
                       Birch
                     </div>
                     <div
-                      class="sc-gqjmRU iAgaSh"
+                      class="sc-iwsKbI bMDHmH"
                     >
                       Hotel of the year. Offering everything from pottery workshops to sourdough masterclasses, this trendy newcomer is doing things differently
                     </div>
@@ -882,16 +882,16 @@ exports[`InfoCard should render the wide component 1`] = `
                   style="width: 0px; padding: 0px 0px 0px 0px;"
                 >
                   <div
-                    class="sc-kpOJdX dacJJY"
+                    class="sc-kgoBCf hmwhTM"
                     tabindex="-1"
                   >
                     <div
-                      class="sc-gZMcBi grGRzQ"
+                      class="sc-dnqmqq laQCFw"
                     >
                       Mitre
                     </div>
                     <div
-                      class="sc-gqjmRU iAgaSh"
+                      class="sc-iwsKbI bMDHmH"
                     >
                       Regional winner: London. Right on the Thames, this swish new inn delivers sweeping river views and royal history
                     </div>
@@ -907,16 +907,16 @@ exports[`InfoCard should render the wide component 1`] = `
                   style="width: 0px; padding: 0px 0px 0px 0px;"
                 >
                   <div
-                    class="sc-kpOJdX dacJJY"
+                    class="sc-kgoBCf hmwhTM"
                     tabindex="-1"
                   >
                     <div
-                      class="sc-gZMcBi grGRzQ"
+                      class="sc-dnqmqq laQCFw"
                     >
                       Subtitle 1
                     </div>
                     <div
-                      class="sc-gqjmRU iAgaSh"
+                      class="sc-iwsKbI bMDHmH"
                     >
                       Copy text 1
                     </div>
@@ -932,16 +932,16 @@ exports[`InfoCard should render the wide component 1`] = `
                   style="width: 0px; padding: 0px 0px 0px 0px;"
                 >
                   <div
-                    class="sc-kpOJdX dacJJY"
+                    class="sc-kgoBCf hmwhTM"
                     tabindex="-1"
                   >
                     <div
-                      class="sc-gZMcBi grGRzQ"
+                      class="sc-dnqmqq laQCFw"
                     >
                       Subtitle 2
                     </div>
                     <div
-                      class="sc-gqjmRU iAgaSh"
+                      class="sc-iwsKbI bMDHmH"
                     >
                       Copy text 2
                     </div>
@@ -957,16 +957,16 @@ exports[`InfoCard should render the wide component 1`] = `
                   style="width: 0px; padding: 0px 0px 0px 0px;"
                 >
                   <div
-                    class="sc-kpOJdX dacJJY"
+                    class="sc-kgoBCf hmwhTM"
                     tabindex="-1"
                   >
                     <div
-                      class="sc-gZMcBi grGRzQ"
+                      class="sc-dnqmqq laQCFw"
                     >
                       Subtitle 3
                     </div>
                     <div
-                      class="sc-gqjmRU iAgaSh"
+                      class="sc-iwsKbI bMDHmH"
                     >
                       Copy text 3
                     </div>
@@ -982,16 +982,16 @@ exports[`InfoCard should render the wide component 1`] = `
                   style="width: 0px; padding: 0px 0px 0px 0px;"
                 >
                   <div
-                    class="sc-kpOJdX dacJJY"
+                    class="sc-kgoBCf hmwhTM"
                     tabindex="-1"
                   >
                     <div
-                      class="sc-gZMcBi grGRzQ"
+                      class="sc-dnqmqq laQCFw"
                     >
                       Subtitle 4
                     </div>
                     <div
-                      class="sc-gqjmRU iAgaSh"
+                      class="sc-iwsKbI bMDHmH"
                     >
                       Copy text 4
                     </div>
@@ -1003,29 +1003,29 @@ exports[`InfoCard should render the wide component 1`] = `
         </div>
       </div>
       <div
-        class="sc-kgoBCf vljVW"
+        class="sc-kAzzGY fCpRvT"
       >
         <div
-          class="sc-kGXeez bCsASU"
+          class="sc-chPdSV cxUg"
         >
           <div
-            class="sc-dnqmqq diBCcz"
+            class="sc-dxgOiQ kyeaEO"
           >
             Best places to stay
           </div>
           <div
-            class="sc-VigVT hUfyZG"
+            class="sc-gZMcBi ehctmQ"
           >
             <div
-              class="sc-iwsKbI qxPIE"
+              class="sc-htoDjs bGCkXx"
             >
               The Sunday Times best British hotels
             </div>
             <div
-              class="sc-jTzLTM izCUzN"
+              class="sc-gqjmRU dRclRz"
             >
               <button
-                class="sc-fjdhpX igeQtI"
+                class="sc-VigVT cxIdcK"
                 data-testid="Previous button"
                 disabled=""
               >
@@ -1041,19 +1041,19 @@ exports[`InfoCard should render the wide component 1`] = `
                 </svg>
               </button>
               <div
-                class="sc-jzJRlG fFIdwf"
+                class="sc-jTzLTM fwzogc"
               >
                 <div
-                  class="sc-cSHVUG hJnzps"
+                  class="sc-fjdhpX ieeIfc"
                   data-testid="Page Indicator"
                 />
                 <div
-                  class="sc-cSHVUG gIgDvO"
+                  class="sc-fjdhpX jcRAQq"
                   data-testid="Page Indicator"
                 />
               </div>
               <button
-                class="nextBtn sc-fjdhpX brPuiN"
+                class="nextBtn sc-VigVT ksrZCo"
                 data-testid="Next Button"
               >
                 <svg

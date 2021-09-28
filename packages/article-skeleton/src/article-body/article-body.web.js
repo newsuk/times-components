@@ -33,7 +33,8 @@ import {
   InfoCard,
   GalleryCarousel,
   InArticleRelatedArticles,
-  InfoCardBulletPoints
+  InfoCardBulletPoints,
+  BigNumbers
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -55,7 +56,8 @@ import {
   NativeAd,
   NativeAdTitle,
   Ad,
-  InlineAdWrapper
+  InlineAdWrapper,
+  InlineAdTitle
 } from "../styles/article-body/responsive";
 
 const deckApiUrl = "https://gobble.timesdev.tools/deck/api/deck-post-action/";
@@ -99,7 +101,32 @@ const renderers = ({
   ad(key) {
     return (
       <InlineAdWrapper>
+        <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inline-ad" />
+      </InlineAdWrapper>
+    );
+  },
+  inlineAd1(key) {
+    return (
+      <InlineAdWrapper>
+        <InlineAdTitle>Advertisement</InlineAdTitle>
+        <AdContainer key={key} slotName="inlineAd1" />
+      </InlineAdWrapper>
+    );
+  },
+  inlineAd2(key) {
+    return (
+      <InlineAdWrapper>
+        <InlineAdTitle>Advertisement</InlineAdTitle>
+        <AdContainer key={key} slotName="inlineAd2" />
+      </InlineAdWrapper>
+    );
+  },
+  inlineAd3(key) {
+    return (
+      <InlineAdWrapper>
+        <InlineAdTitle>Advertisement</InlineAdTitle>
+        <AdContainer key={key} slotName="inlineAd3" />
       </InlineAdWrapper>
     );
   },
@@ -172,6 +199,17 @@ const renderers = ({
             {({ theme }) => (
               <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
                 <InfoCardBulletPoints sectionColour={theme.sectionColour} />
+              </FetchProvider>
+            )}
+          </Context.Consumer>
+        );
+
+      case "in-article-big-numbers":
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <BigNumbers sectionColour={theme.sectionColour} />
               </FetchProvider>
             )}
           </Context.Consumer>

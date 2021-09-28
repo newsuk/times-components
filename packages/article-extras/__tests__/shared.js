@@ -20,6 +20,14 @@ const algoliaSearchKeys = {
   indexName: ""
 };
 
+const commentingConfig = {
+  account: {
+    current: "CurrentSpotID",
+    readOnly: "ReadOnlySpotID"
+  },
+  switchOver: "2020-08-10T16:00:00.000Z"
+};
+
 export default () => {
   addSerializers(
     expect,
@@ -55,8 +63,9 @@ export default () => {
               registerNode={() => {}}
               relatedArticleSlice={relatedArticleSlice}
               relatedArticlesVisible
-              spotAccountId="dummy-spot-id"
+              commentingConfig={commentingConfig}
               topics={topics}
+              publishedTime="2020-07-10T16:00:00.000Z"
             />
           </AlgoliaSearchProvider>
         );
@@ -82,8 +91,9 @@ export default () => {
               registerNode={() => {}}
               relatedArticleSlice={relatedArticleSlice}
               relatedArticlesVisible
-              spotAccountId="dummy-spot-id"
+              commentingConfig={commentingConfig}
               topics={topics}
+              publishedTime="2020-07-10T16:00:00.000Z"
             />
           </AlgoliaSearchProvider>
         );
@@ -108,8 +118,9 @@ export default () => {
               registerNode={() => {}}
               relatedArticleSlice={relatedArticleSlice}
               relatedArticlesVisible
-              spotAccountId="dummy-spot-id"
+              commentingConfig={commentingConfig}
               topics={topics}
+              publishedTime="2020-07-10T16:00:00.000Z"
             />
           </AlgoliaSearchProvider>
         );
@@ -134,10 +145,11 @@ export default () => {
               registerNode={() => {}}
               relatedArticleSlice={relatedArticleSlice}
               relatedArticlesVisible
-              spotAccountId="dummy-spot-id"
+              commentingConfig={commentingConfig}
               topics={topics}
               additionalRelatedArticlesFlag
               inlineRelatedArticlesFlag
+              publishedTime="2020-07-10T16:00:00.000Z"
             />
           </AlgoliaSearchProvider>
         );

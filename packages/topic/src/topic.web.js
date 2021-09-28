@@ -22,7 +22,8 @@ const Topic = ({
   onPrev,
   refetch,
   slug,
-  topic
+  topic,
+  metaDescription
 }) => {
   const emptyStateMessage =
     "Unfortunately, there are no articles relating to this topic";

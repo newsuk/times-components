@@ -3,6 +3,189 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.38.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.38.1...@times-components/article-main-standard@3.38.2) (2021-09-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.38.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.38.0...@times-components/article-main-standard@3.38.1) (2021-09-24)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.38.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.37.4...@times-components/article-main-standard@3.38.0) (2021-09-24)
+
+
+### Features
+
+* **scb-1193:** add aditional in article ad slots ([#2794](https://github.com/newsuk/times-components/issues/2794)) ([d1a3d96](https://github.com/newsuk/times-components/commit/d1a3d961f6970c6df74561ba913bf60636b0822d))
+
+
+
+
+
+## [3.37.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.37.3...@times-components/article-main-standard@3.37.4) (2021-09-14)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.37.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.37.2...@times-components/article-main-standard@3.37.3) (2021-09-06)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.37.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.37.1...@times-components/article-main-standard@3.37.2) (2021-09-02)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.37.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.37.0...@times-components/article-main-standard@3.37.1) (2021-09-02)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.37.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.36.3...@times-components/article-main-standard@3.37.0) (2021-09-02)
+
+
+### Features
+
+* **scb-1193:** add aditional in article ad slots, add title to wrapper ([#2786](https://github.com/newsuk/times-components/issues/2786)) ([020cd5b](https://github.com/newsuk/times-components/commit/020cd5baf6e272726eea01d70553eba08c5ccd4f))
+
+
+
+
+
+## [3.36.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.36.2...@times-components/article-main-standard@3.36.3) (2021-09-01)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.36.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.36.1...@times-components/article-main-standard@3.36.2) (2021-09-01)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.36.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.36.0...@times-components/article-main-standard@3.36.1) (2021-09-01)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.36.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.35.7...@times-components/article-main-standard@3.36.0) (2021-08-31)
+
+
+### Features
+
+* **TE-178:**  real name commenting ([#2780](https://github.com/newsuk/times-components/issues/2780)) ([4a51ffe](https://github.com/newsuk/times-components/commit/4a51ffefb0b37720f9328f0baaa940e1083c87ec))
+
+
+
+
+
+## [3.35.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.35.6...@times-components/article-main-standard@3.35.7) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.35.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.35.5...@times-components/article-main-standard@3.35.6) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.35.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.35.4...@times-components/article-main-standard@3.35.5) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.35.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.35.3...@times-components/article-main-standard@3.35.4) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.35.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.35.2...@times-components/article-main-standard@3.35.3) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.35.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.35.1...@times-components/article-main-standard@3.35.2) (2021-08-25)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.35.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.35.0...@times-components/article-main-standard@3.35.1) (2021-08-24)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.35.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.34.40...@times-components/article-main-standard@3.35.0) (2021-08-23)
+
+
+### Features
+
+* **SCB-1193:** add aditional in article ad slots to article page logged in users ([#2758](https://github.com/newsuk/times-components/issues/2758)) ([481ff7f](https://github.com/newsuk/times-components/commit/481ff7f325b2bf0a216da583bf0d1c5871ef85f5))
+
+
+
+
+
+## [3.34.40](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.34.39...@times-components/article-main-standard@3.34.40) (2021-08-23)
+
+
+### Bug Fixes
+
+* **TSEO-31:** Updated image size on mobile to 1200px ([#2771](https://github.com/newsuk/times-components/issues/2771)) ([9a756ac](https://github.com/newsuk/times-components/commit/9a756acacf45c120de889b81823c591d890b4f38))
+
+
+
+
+
 ## [3.34.39](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.34.38...@times-components/article-main-standard@3.34.39) (2021-08-23)
 
 **Note:** Version bump only for package @times-components/article-main-standard

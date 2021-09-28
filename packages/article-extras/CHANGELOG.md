@@ -3,6 +3,116 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.6](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.9.5...@times-components/article-extras@0.9.6) (2021-09-27)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.9.5](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.9.4...@times-components/article-extras@0.9.5) (2021-09-24)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.9.4](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.9.3...@times-components/article-extras@0.9.4) (2021-09-14)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.9.3](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.9.2...@times-components/article-extras@0.9.3) (2021-09-06)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.9.2](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.9.1...@times-components/article-extras@0.9.2) (2021-09-02)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.9.1](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.9.0...@times-components/article-extras@0.9.1) (2021-09-02)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.8.1...@times-components/article-extras@0.9.0) (2021-09-01)
+
+
+### Features
+
+* **TE-178:** Real Name Commenting - didn't pass the publishedTime up from article-extra to article-comment. Also changed a typo to change `readonly` to `readOnly` ([#2785](https://github.com/newsuk/times-components/issues/2785)) ([9c13a06](https://github.com/newsuk/times-components/commit/9c13a069525f9f3607daed6a3182a689f0697991))
+
+
+
+
+
+## [0.8.1](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.8.0...@times-components/article-extras@0.8.1) (2021-09-01)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.7.43...@times-components/article-extras@0.8.0) (2021-08-31)
+
+
+### Features
+
+* **TE-178:**  real name commenting ([#2780](https://github.com/newsuk/times-components/issues/2780)) ([4a51ffe](https://github.com/newsuk/times-components/commit/4a51ffefb0b37720f9328f0baaa940e1083c87ec))
+
+
+
+
+
+## [0.7.43](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.7.42...@times-components/article-extras@0.7.43) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.7.42](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.7.41...@times-components/article-extras@0.7.42) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.7.41](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.7.40...@times-components/article-extras@0.7.41) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.7.40](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.7.39...@times-components/article-extras@0.7.40) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
 ## [0.7.39](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.7.38...@times-components/article-extras@0.7.39) (2021-08-20)
 
 **Note:** Version bump only for package @times-components/article-extras

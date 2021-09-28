@@ -3,10 +3,23 @@ import { storiesOf } from '@storybook/react';
 import { ArticleHarness } from '../../fixtures/article-harness/ArticleHarness';
 import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { InfoCardBulletPoints } from './InfoCardBulletPoints';
+import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
+import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
 storiesOf('Typescript Component/In Article/Info Card', module)
   .addDecorator((storyFn: () => React.ReactNode) => (
-    <ArticleHarness>{storyFn()}</ArticleHarness>
+    <TrackingContextProvider
+      context={{
+        component: 'ArticleSkeleton',
+        attrs: {
+          article_name: 'articleHeadline',
+          section_details: 'section'
+        }
+      }}
+      analyticsStream={analyticsStream}
+    >
+      <ArticleHarness>{storyFn()}</ArticleHarness>
+    </TrackingContextProvider>
   ))
 
   .add('Bullet Points', () => (

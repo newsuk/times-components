@@ -308,7 +308,7 @@ const renderArticle = () => (
       onTopicPress={() => {}}
       onTwitterLinkPress={() => {}}
       onVideoPress={() => {}}
-      spotAccountId=""
+      commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
       inlineRelatedArticlesFlag
     />
   </Context.Provider>

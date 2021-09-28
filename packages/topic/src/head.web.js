@@ -47,6 +47,7 @@ function Head({ description, name, slug, page, articleCount, pageSize }) {
 }
 
 Head.propTypes = {
+  metaDescription: PropTypes.string,
   description: topicHeadPropTypes.description.isRequired,
   name: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
@@ -58,6 +59,10 @@ Head.propTypes = {
 Head.defaultProps = {
   ...defaultProps,
   articleCount: defaultProps.page * defaultProps.pageSize
+};
+
+Head.defaultProps = {
+  metaDescription: null
 };
 
 export default Head;

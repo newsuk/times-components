@@ -3,6 +3,189 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.33.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.33.1...@times-components/article-main-comment@2.33.2) (2021-09-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.33.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.33.0...@times-components/article-main-comment@2.33.1) (2021-09-24)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.33.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.32.4...@times-components/article-main-comment@2.33.0) (2021-09-24)
+
+
+### Features
+
+* **scb-1193:** add aditional in article ad slots ([#2794](https://github.com/newsuk/times-components/issues/2794)) ([d1a3d96](https://github.com/newsuk/times-components/commit/d1a3d961f6970c6df74561ba913bf60636b0822d))
+
+
+
+
+
+## [2.32.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.32.3...@times-components/article-main-comment@2.32.4) (2021-09-14)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.32.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.32.2...@times-components/article-main-comment@2.32.3) (2021-09-06)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.32.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.32.1...@times-components/article-main-comment@2.32.2) (2021-09-02)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.32.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.32.0...@times-components/article-main-comment@2.32.1) (2021-09-02)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.32.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.31.3...@times-components/article-main-comment@2.32.0) (2021-09-02)
+
+
+### Features
+
+* **scb-1193:** add aditional in article ad slots, add title to wrapper ([#2786](https://github.com/newsuk/times-components/issues/2786)) ([020cd5b](https://github.com/newsuk/times-components/commit/020cd5baf6e272726eea01d70553eba08c5ccd4f))
+
+
+
+
+
+## [2.31.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.31.2...@times-components/article-main-comment@2.31.3) (2021-09-01)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.31.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.31.1...@times-components/article-main-comment@2.31.2) (2021-09-01)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.31.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.31.0...@times-components/article-main-comment@2.31.1) (2021-09-01)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.31.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.30.7...@times-components/article-main-comment@2.31.0) (2021-08-31)
+
+
+### Features
+
+* **TE-178:**  real name commenting ([#2780](https://github.com/newsuk/times-components/issues/2780)) ([4a51ffe](https://github.com/newsuk/times-components/commit/4a51ffefb0b37720f9328f0baaa940e1083c87ec))
+
+
+
+
+
+## [2.30.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.30.6...@times-components/article-main-comment@2.30.7) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.30.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.30.5...@times-components/article-main-comment@2.30.6) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.30.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.30.4...@times-components/article-main-comment@2.30.5) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.30.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.30.3...@times-components/article-main-comment@2.30.4) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.30.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.30.2...@times-components/article-main-comment@2.30.3) (2021-08-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.30.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.30.1...@times-components/article-main-comment@2.30.2) (2021-08-25)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.30.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.30.0...@times-components/article-main-comment@2.30.1) (2021-08-24)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.30.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.29.39...@times-components/article-main-comment@2.30.0) (2021-08-23)
+
+
+### Features
+
+* **SCB-1193:** add aditional in article ad slots to article page logged in users ([#2758](https://github.com/newsuk/times-components/issues/2758)) ([481ff7f](https://github.com/newsuk/times-components/commit/481ff7f325b2bf0a216da583bf0d1c5871ef85f5))
+
+
+
+
+
+## [2.29.39](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.29.38...@times-components/article-main-comment@2.29.39) (2021-08-23)
+
+
+### Bug Fixes
+
+* **TSEO-31:** Updated image size on mobile to 1200px ([#2771](https://github.com/newsuk/times-components/issues/2771)) ([9a756ac](https://github.com/newsuk/times-components/commit/9a756acacf45c120de889b81823c591d890b4f38))
+
+
+
+
+
 ## [2.29.38](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.29.37...@times-components/article-main-comment@2.29.38) (2021-08-23)
 
 **Note:** Version bump only for package @times-components/article-main-comment
