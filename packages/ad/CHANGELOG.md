@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.15.1](https://github.com/newsuk/times-components/compare/@times-components/ad@2.15.0...@times-components/ad@2.15.1) (2021-09-30)
+
+
+### Reverts
+
+* additional ad slots ([#2797](https://github.com/newsuk/times-components/issues/2797)) ([f66f3e5](https://github.com/newsuk/times-components/commit/f66f3e5f5016549304abc81dbd08e82222e71eee))
+
+
+
+
+
 # [2.15.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.14.4...@times-components/ad@2.15.0) (2021-08-23)
 
 
