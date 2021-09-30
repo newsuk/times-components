@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.33.3](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.33.2...@times-components/article-in-depth@3.33.3) (2021-09-30)
+
+
+### Reverts
+
+* additional ad slots ([#2797](https://github.com/newsuk/times-components/issues/2797)) ([f66f3e5](https://github.com/newsuk/times-components/commit/f66f3e5f5016549304abc81dbd08e82222e71eee))
+
+
+
+
+
 ## [3.33.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.33.1...@times-components/article-in-depth@3.33.2) (2021-09-27)
 
 **Note:** Version bump only for package @times-components/article-in-depth
