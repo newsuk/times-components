@@ -35,7 +35,6 @@ import insertDropcapIntoAST from "./contentModifiers/dropcap-util";
 import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineRelatedArticles from "./contentModifiers/inline-related-article";
 import insertNativeAd from "./contentModifiers/native-ad";
-import insertInlineAd from "./contentModifiers/inline-ad";
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -82,7 +81,6 @@ const ArticleSkeleton = ({
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview),
     insertNativeAd,
-    insertInlineAd,
     insertInlineRelatedArticles(
       relatedArticleSlice,
       inlineRelatedArticlesFlag,
