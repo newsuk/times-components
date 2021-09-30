@@ -56,8 +56,7 @@ import {
   NativeAd,
   NativeAdTitle,
   Ad,
-  InlineAdWrapper,
-  InlineAdTitle
+  InlineAdWrapper
 } from "../styles/article-body/responsive";
 
 const deckApiUrl = "https://gobble.timesdev.tools/deck/api/deck-post-action/";
@@ -101,7 +100,6 @@ const renderers = ({
   ad(key) {
     return (
       <InlineAdWrapper>
-        <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inline-ad" />
       </InlineAdWrapper>
     );

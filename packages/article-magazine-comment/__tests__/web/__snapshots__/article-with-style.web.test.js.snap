@@ -30,7 +30,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c28 {
+.c27 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -43,7 +43,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c29 {
+.c28 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -119,24 +119,8 @@ exports[`full article with style 1`] = `
   margin: 30px 0;
   box-sizing: content-box;
   padding: 10px 0;
+  border-top: 1px solid rgb(219,219,219);
   border-bottom: 1px solid rgb(219,219,219);
-}
-
-.c27 {
-  border-bottom: 1px solid rgb(219,219,219);
-  color: #696969;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
-  -webkit-letter-spacing: 0.6px;
-  -moz-letter-spacing: 0.6px;
-  -ms-letter-spacing: 0.6px;
-  letter-spacing: 0.6px;
-  margin: 0 0 10px;
-  padding: 0 0 5px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .c2 {
@@ -312,7 +296,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c27 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -321,13 +305,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c28 {
+  .c27 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c29 {
+  .c28 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -336,7 +320,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c29 {
+  .c28 {
     width: 56.2%;
   }
 }
@@ -884,23 +868,18 @@ exports[`full article with style 1`] = `
         <div
           className="c26"
         >
-          <h2
-            className="c27"
-          >
-            Advertisement
-          </h2>
           <AdContainer />
         </div>
         <div>
           <div
-            className="c28 responsiveweb__SecondaryImg-sc-16nqyj8-7 c28 css-view-1dbjc4n"
+            className="c27 responsiveweb__SecondaryImg-sc-16nqyj8-7 c27 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c29 responsiveweb__InlineImg-sc-16nqyj8-8 c29 css-view-1dbjc4n"
+            className="c28 responsiveweb__InlineImg-sc-16nqyj8-8 c28 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -946,7 +925,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-bottom: 25px;
 }
 
-.c28 {
+.c27 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -959,7 +938,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-bottom: 25px;
 }
 
-.c29 {
+.c28 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -1035,24 +1014,8 @@ exports[`full article with style in the culture magazine 1`] = `
   margin: 30px 0;
   box-sizing: content-box;
   padding: 10px 0;
+  border-top: 1px solid rgb(219,219,219);
   border-bottom: 1px solid rgb(219,219,219);
-}
-
-.c27 {
-  border-bottom: 1px solid rgb(219,219,219);
-  color: #696969;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
-  -webkit-letter-spacing: 0.6px;
-  -moz-letter-spacing: 0.6px;
-  -ms-letter-spacing: 0.6px;
-  letter-spacing: 0.6px;
-  margin: 0 0 10px;
-  padding: 0 0 5px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .c2 {
@@ -1228,7 +1191,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c27 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -1237,13 +1200,13 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c28 {
+  .c27 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c29 {
+  .c28 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -1252,7 +1215,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c29 {
+  .c28 {
     width: 56.2%;
   }
 }
@@ -1804,23 +1767,18 @@ exports[`full article with style in the culture magazine 1`] = `
         <div
           className="c26"
         >
-          <h2
-            className="c27"
-          >
-            Advertisement
-          </h2>
           <AdContainer />
         </div>
         <div>
           <div
-            className="c28 responsiveweb__SecondaryImg-sc-16nqyj8-7 c28 css-view-1dbjc4n"
+            className="c27 responsiveweb__SecondaryImg-sc-16nqyj8-7 c27 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c29 responsiveweb__InlineImg-sc-16nqyj8-8 c29 css-view-1dbjc4n"
+            className="c28 responsiveweb__InlineImg-sc-16nqyj8-8 c28 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -1866,7 +1824,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-bottom: 25px;
 }
 
-.c28 {
+.c27 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -1879,7 +1837,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-bottom: 25px;
 }
 
-.c29 {
+.c28 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -1955,24 +1913,8 @@ exports[`full article with style in the style magazine 1`] = `
   margin: 30px 0;
   box-sizing: content-box;
   padding: 10px 0;
+  border-top: 1px solid rgb(219,219,219);
   border-bottom: 1px solid rgb(219,219,219);
-}
-
-.c27 {
-  border-bottom: 1px solid rgb(219,219,219);
-  color: #696969;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
-  -webkit-letter-spacing: 0.6px;
-  -moz-letter-spacing: 0.6px;
-  -ms-letter-spacing: 0.6px;
-  letter-spacing: 0.6px;
-  margin: 0 0 10px;
-  padding: 0 0 5px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .c2 {
@@ -2148,7 +2090,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c27 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -2157,13 +2099,13 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c28 {
+  .c27 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c29 {
+  .c28 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -2172,7 +2114,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c29 {
+  .c28 {
     width: 56.2%;
   }
 }
@@ -2725,23 +2667,18 @@ exports[`full article with style in the style magazine 1`] = `
         <div
           className="c26"
         >
-          <h2
-            className="c27"
-          >
-            Advertisement
-          </h2>
           <AdContainer />
         </div>
         <div>
           <div
-            className="c28 responsiveweb__SecondaryImg-sc-16nqyj8-7 c28 css-view-1dbjc4n"
+            className="c27 responsiveweb__SecondaryImg-sc-16nqyj8-7 c27 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c29 responsiveweb__InlineImg-sc-16nqyj8-8 c29 css-view-1dbjc4n"
+            className="c28 responsiveweb__InlineImg-sc-16nqyj8-8 c28 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -2787,7 +2724,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-bottom: 25px;
 }
 
-.c28 {
+.c27 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -2800,7 +2737,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-bottom: 25px;
 }
 
-.c29 {
+.c28 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -2876,24 +2813,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
   margin: 30px 0;
   box-sizing: content-box;
   padding: 10px 0;
+  border-top: 1px solid rgb(219,219,219);
   border-bottom: 1px solid rgb(219,219,219);
-}
-
-.c27 {
-  border-bottom: 1px solid rgb(219,219,219);
-  color: #696969;
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
-  -webkit-letter-spacing: 0.6px;
-  -moz-letter-spacing: 0.6px;
-  -ms-letter-spacing: 0.6px;
-  letter-spacing: 0.6px;
-  margin: 0 0 10px;
-  padding: 0 0 5px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .c2 {
@@ -3069,7 +2990,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c27 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -3078,13 +2999,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c28 {
+  .c27 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c29 {
+  .c28 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -3093,7 +3014,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c29 {
+  .c28 {
     width: 56.2%;
   }
 }
@@ -3645,23 +3566,18 @@ exports[`full article with style in the sunday times magazine 1`] = `
         <div
           className="c26"
         >
-          <h2
-            className="c27"
-          >
-            Advertisement
-          </h2>
           <AdContainer />
         </div>
         <div>
           <div
-            className="c28 responsiveweb__SecondaryImg-sc-16nqyj8-7 c28 css-view-1dbjc4n"
+            className="c27 responsiveweb__SecondaryImg-sc-16nqyj8-7 c27 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c29 responsiveweb__InlineImg-sc-16nqyj8-8 c29 css-view-1dbjc4n"
+            className="c28 responsiveweb__InlineImg-sc-16nqyj8-8 c28 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
