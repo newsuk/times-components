@@ -106,30 +106,6 @@ const renderers = ({
       </InlineAdWrapper>
     );
   },
-  inlineAd1(key) {
-    return (
-      <InlineAdWrapper>
-        <InlineAdTitle>Advertisement</InlineAdTitle>
-        <AdContainer key={key} slotName="inlineAd1" />
-      </InlineAdWrapper>
-    );
-  },
-  inlineAd2(key) {
-    return (
-      <InlineAdWrapper>
-        <InlineAdTitle>Advertisement</InlineAdTitle>
-        <AdContainer key={key} slotName="inlineAd2" />
-      </InlineAdWrapper>
-    );
-  },
-  inlineAd3(key) {
-    return (
-      <InlineAdWrapper>
-        <InlineAdTitle>Advertisement</InlineAdTitle>
-        <AdContainer key={key} slotName="inlineAd3" />
-      </InlineAdWrapper>
-    );
-  },
   dropCap(key, attrs, children) {
     return (
       <Context.Consumer key={key}>
