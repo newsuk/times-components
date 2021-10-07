@@ -75,10 +75,13 @@ class Comments extends Component {
       }
     };
 
+    let isSpotAccountReadOnly = true;
     let spotAccountId = commentingConfig.account.readOnly;
+
     if (commentingConfig && commentingConfig.switchOver) {
       const switchOverDate = commentingConfig.switchOver;
       if (publishedTime > switchOverDate) {
+        isSpotAccountReadOnly = false;
         spotAccountId = commentingConfig.account.current;
       }
     }
@@ -86,9 +89,7 @@ class Comments extends Component {
     document.addEventListener(
       "spot-im-current-user-typing-start",
       onCommentStart,
-      {
-        once: true
-      }
+      { once: true }
     );
     document.addEventListener(
       "spot-im-current-user-sent-message",
@@ -124,13 +125,10 @@ class Comments extends Component {
 
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
-        executeSSOtransaction(() => {});
+        executeSSOtransaction(isSpotAccountReadOnly, () => {});
       } else {
         document.addEventListener("spot-im-api-ready", () =>
-          executeSSOtransaction(() => {})
-        );
-        document.addEventListener("spot-im-login-start", () =>
-          executeSSOtransaction(() => {})
+          executeSSOtransaction(isSpotAccountReadOnly, () => {})
         );
       }
     }
