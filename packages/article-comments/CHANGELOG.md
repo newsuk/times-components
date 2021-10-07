@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.14.0...@times-components/article-comments@0.15.0) (2021-10-07)
+
+
+### Features
+
+* **TDP-75:** Update commenting login scope ([#2799](https://github.com/newsuk/times-components/issues/2799)) ([800c6f2](https://github.com/newsuk/times-components/commit/800c6f2f91c66d272ea9798b2e557ce05e4131ac))
+
+
+
+
+
 # [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.13.1...@times-components/article-comments@0.14.0) (2021-09-27)
 
 
