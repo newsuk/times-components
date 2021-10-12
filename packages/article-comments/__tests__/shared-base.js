@@ -9,6 +9,8 @@ export default () => {
     expect(baseElement.getElementsByTagName("script")[0].src).toEqual(
       "https://launcher.spot.im/spot/CurrentSpotID"
     );
+    expect(baseElement.getElementsByClassName("info").length).toEqual(1);
+
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -21,11 +23,17 @@ export default () => {
     expect(baseElement.getElementsByTagName("script")[0].src).toEqual(
       "https://launcher.spot.im/spot/ReadOnlySpotID"
     );
+    expect(baseElement.getElementsByClassName("info").length).toEqual(0);
+
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("disabled comments", () => {
-    const { asFragment } = renderComments({ count: 123, enabled: false });
+    const { asFragment, baseElement } = renderComments({
+      count: 123,
+      enabled: false
+    });
+    expect(baseElement.getElementsByClassName("info").length).toEqual(0);
     expect(asFragment()).toMatchSnapshot();
   });
 };

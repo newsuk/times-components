@@ -36,6 +36,7 @@
   "dependencies": {
     "@times-components/link": "3.6.44",
     "@times-components/styleguide": "3.38.22",
+    "@times-components/ts-components": "1.12.11",
     "@times-components/tracking": "2.8.5",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"

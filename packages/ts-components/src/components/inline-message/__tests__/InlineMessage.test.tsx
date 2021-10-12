@@ -10,7 +10,7 @@ describe('<InlineMessage>', () => {
       <InlineMessage title="Title" type="info" />
     );
     expect(getByText('Title')).toBeTruthy();
-    expect(baseElement.getElementsByClassName('info')).toBeTruthy();
+    expect(baseElement.getElementsByClassName('info').length).toEqual(1);
     expect(baseElement).toMatchSnapshot();
   });
 });
