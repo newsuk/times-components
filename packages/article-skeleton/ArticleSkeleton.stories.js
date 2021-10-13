@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { select, number } from "@storybook/addon-knobs";
+import { select, number, boolean } from "@storybook/addon-knobs";
 import { decorateAction } from "@storybook/addon-actions";
 import { sections } from "@times-components/storybook";
 import { HelmetProvider } from "react-helmet-async";
@@ -36,10 +36,10 @@ const articleHeadlines = articles.reduce(
   {}
 );
 
-const commentingConfig = {
+let commentingConfig = {
   account: {
-    current: process.env.STORYBOOK_COMMENTING_CURRENT_ID || "CurrentSpotID",
-    readOnly: process.env.STORYBOOK_COMMENTING_READONLY_ID || "ReadOnlySpotID"
+    current: process.env.STORYBOOK_COMMENTING_CURRENT_ID || "sp_rLv5PqMc",
+    readOnly: process.env.STORYBOOK_COMMENTING_READONLY_ID || "sp_pCQgrRiN"
   },
   switchOver:
     process.env.STORYBOOK_COMMENTING_SWITCHOVER || "2020-08-10T16:00:00.000Z"
@@ -84,6 +84,19 @@ storiesOf("Composed/Article Skeleton", module)
       endpoint: "https://olympics-embed-staging.pamedia.io",
       authToken: "6i3DuEwbVhr2Fht6",
       gamesCode: "OG2020-TR2"
+    };
+
+    const commentSwitchover = boolean(
+      "Comment Switchover?",
+      false,
+      "User State"
+    );
+
+    commentingConfig = {
+      ...commentingConfig,
+      switchOver: commentSwitchover
+        ? "2020-08-10T16:00:00.000Z"
+        : "2022-08-10T16:00:00.000Z"
     };
 
     const article = select("Article", articleHeadlines, 0, "User State");

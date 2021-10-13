@@ -65,3 +65,5 @@ export {
   AlgoliaSearchProvider,
   useAlgoliaSearch
 } from './helpers/algolia/AlgoliaSearchProvider';
+
+export { InlineMessage } from './components/inline-message/InlineMessage';
