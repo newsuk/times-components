@@ -3,11 +3,11 @@ import ArticleComments from "./src/article-comments";
 
 const commentingConfig = {
   account: {
-    current: process.env.STORYBOOK_COMMENTING_CURRENT_ID || "CurrentSpotID",
-    readOnly: process.env.STORYBOOK_COMMENTING_READONLY_ID || "ReadOnlySpotID"
+    current: process.env.STORYBOOK_COMMENTING_CURRENT_ID || "sp_rLv5PqMc",
+    readOnly: process.env.STORYBOOK_COMMENTING_READONLY_ID || "sp_pCQgrRiN"
   },
   switchOver:
-    process.env.STORYBOOK_COMMENTING_SWITCHOVER || "2020-08-10T16:00:00.000Z"
+    process.env.STORYBOOK_COMMENTING_SWITCHOVER || "2021-10-10T16:00:00.000Z"
 };
 
 export default {
