@@ -242,6 +242,7 @@ function Head({
             {leadassetUrl && (
               <meta content={leadassetUrl} property="og:image" />
             )}
+            {hasVideo && <meta name="robots" content="max-video-preview:-1" />}
 
             <meta content={title} name="twitter:title" />
             <meta content="summary_large_image" name="twitter:card" />

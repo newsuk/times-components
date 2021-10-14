@@ -294,6 +294,10 @@ exports[`Head outputs correct metadata for a video article 1`] = `
     property="og:image"
   />
   <meta
+    content="max-video-preview:-1"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="twitter:title"
   />
@@ -533,6 +537,10 @@ exports[`Head outputs seoDescription as video description for a video article wh
     property="og:image"
   />
   <meta
+    content="max-video-preview:-1"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="twitter:title"
   />
@@ -614,6 +622,10 @@ exports[`Head outputs thumbnail urls for a article for 1.25:1 ratio 1`] = `
   <meta
     content="https://crop1251.io"
     property="og:image"
+  />
+  <meta
+    content="max-video-preview:-1"
+    name="robots"
   />
   <meta
     content="Some Headline"
@@ -699,6 +711,10 @@ exports[`Head outputs thumbnail urls for a article for 1:1 ratio 1`] = `
     property="og:image"
   />
   <meta
+    content="max-video-preview:-1"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="twitter:title"
   />
@@ -780,6 +796,10 @@ exports[`Head outputs thumbnail urls for a article for 2:3 ratio 1`] = `
   <meta
     content="https://crop23.io"
     property="og:image"
+  />
+  <meta
+    content="max-video-preview:-1"
+    name="robots"
   />
   <meta
     content="Some Headline"
@@ -865,6 +885,10 @@ exports[`Head outputs thumbnail urls for a article for 3:2 ratio 1`] = `
     property="og:image"
   />
   <meta
+    content="max-video-preview:-1"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="twitter:title"
   />
@@ -946,6 +970,10 @@ exports[`Head outputs thumbnail urls for a article for 4:5 ratio 1`] = `
   <meta
     content="https://crop45.io"
     property="og:image"
+  />
+  <meta
+    content="max-video-preview:-1"
+    name="robots"
   />
   <meta
     content="Some Headline"
@@ -1031,6 +1059,10 @@ exports[`Head outputs thumbnail urls for a article for 16:9 ratio 1`] = `
     property="og:image"
   />
   <meta
+    content="max-video-preview:-1"
+    name="robots"
+  />
+  <meta
     content="Some Headline"
     name="twitter:title"
   />
@@ -1104,6 +1136,10 @@ exports[`Head outputs title as video description for a video article when there 
   <meta
     content="https://video169.io?resize=1200"
     property="og:image"
+  />
+  <meta
+    content="max-video-preview:-1"
+    name="robots"
   />
   <meta
     content="Some Headline"
@@ -1183,6 +1219,10 @@ exports[`Head outputs video schema for a video article 1`] = `
   <meta
     content="https://video169.io?resize=1200"
     property="og:image"
+  />
+  <meta
+    content="max-video-preview:-1"
+    name="robots"
   />
   <meta
     content="Some Headline"
@@ -1266,6 +1306,10 @@ exports[`Head outputs video schema for a video article 2`] = `
   <meta
     content="https://video169.io?resize=1200"
     property="og:image"
+  />
+  <meta
+    content="max-video-preview:-1"
+    name="robots"
   />
   <meta
     content="Some Headline"
