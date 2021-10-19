@@ -135,10 +135,10 @@ function Head({
     publishedTime,
     updatedTime,
     hasVideo,
-    seoDescription,
-    url
+    seoDescription
   } = article;
 
+  const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
   const publication = PUBLICATION_NAMES[publicationName];
   const authorName = getAuthorAsText(article);
   const desc =
@@ -215,7 +215,7 @@ function Head({
           Array.isArray(descriptionMarkup) && descriptionMarkup.length
             ? renderTreeAsText({ children: descriptionMarkup })
             : seoDescription || leadAsset.title || title,
-        contentUrl: url
+        embedUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
       }
     : null;
 
