@@ -40,6 +40,10 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         name="author"
       />
       <meta
+        content={null}
+        name="section"
+      />
+      <meta
         content="Some Short Headline"
         property="og:title"
       />
@@ -322,6 +326,10 @@ exports[`4. an article with ads 1`] = `
       <meta
         content="Some byline"
         name="author"
+      />
+      <meta
+        content={null}
+        name="section"
       />
       <meta
         content="Some Headline"
