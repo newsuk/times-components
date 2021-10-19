@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.35.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.34.3...@times-components/article-magazine-standard@3.35.0) (2021-10-19)
+
+
+### Features
+
+* add section name to page metadata ([#2802](https://github.com/newsuk/times-components/issues/2802)) ([0a58a6c](https://github.com/newsuk/times-components/commit/0a58a6c9d7041bb8b31d68d6ae09084decbc911c))
+
+
+
+
+
 ## [3.34.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.34.2...@times-components/article-magazine-standard@3.34.3) (2021-10-14)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard
