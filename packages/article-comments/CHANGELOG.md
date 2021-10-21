@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.15.1...@times-components/article-comments@0.16.0) (2021-10-21)
+
+
+### Features
+
+* commenting login hander ([#2804](https://github.com/newsuk/times-components/issues/2804)) ([749e386](https://github.com/newsuk/times-components/commit/749e38643a51eee1f5747b37ac77152a6b7656da))
+
+
+
+
+
 ## [0.15.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.15.0...@times-components/article-comments@0.15.1) (2021-10-13)
 
 **Note:** Version bump only for package @times-components/article-comments
