@@ -234,6 +234,7 @@ function Head({
             <meta content={publication} name="article:publication" />
             {desc && <meta content={desc} name="description" />}
             {authorName && <meta content={authorName} name="author" />}
+            <meta content={sectionname} name="section" />
 
             <meta content={title} property="og:title" />
             <meta content="article" property="og:type" />
