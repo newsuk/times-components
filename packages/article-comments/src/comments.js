@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { InlineMessage } from "@times-components/ts-components";
 import { CommentContainer } from "./styles/responsive";
 import executeSSOtransaction from "./comment-login";
 import withTrackEvents from "./tracking/with-track-events";
@@ -176,9 +177,15 @@ class Comments extends Component {
       onCommentRecommend,
       onCommentNotificationClicked,
       onCommentUsernameClicked,
-      onCommentSettingsClicked
+      onCommentSettingsClicked,
+      commentingConfig,
+      publishedTime
     } = this.props;
 
+    let isCurrentCommenting;
+    if (commentingConfig && commentingConfig.switchOver) {
+      isCurrentCommenting = publishedTime > commentingConfig.switchOver;
+    }
     return (
       <CommentContainer
         id="comments-container"
@@ -198,6 +205,13 @@ class Comments extends Component {
         onCommentUsernameClicked={onCommentUsernameClicked}
         onCommentSettingsClicked={onCommentSettingsClicked}
       >
+        {isCurrentCommenting && (
+          <InlineMessage title="Real-name commenting" type="info">
+            Digital commenters are now identified by their real name. We believe
+            this is the best way to ensure high-quality reader participation and
+            intelligent debate.
+          </InlineMessage>
+        )}
         <div
           ref={el => {
             this.container = el;

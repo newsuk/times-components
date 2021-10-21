@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.61.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.60.3...@times-components/article-skeleton@1.61.0) (2021-10-19)
+
+
+### Features
+
+* add section name to page metadata ([#2802](https://github.com/newsuk/times-components/issues/2802)) ([0a58a6c](https://github.com/newsuk/times-components/commit/0a58a6c9d7041bb8b31d68d6ae09084decbc911c))
+
+
+
+
+
+## [1.60.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.60.2...@times-components/article-skeleton@1.60.3) (2021-10-14)
+
+
+### Bug Fixes
+
+* **TDP-399:** Added max-video-preview meta tag ([#2800](https://github.com/newsuk/times-components/issues/2800)) ([27ba347](https://github.com/newsuk/times-components/commit/27ba347f1b0d2cf49c11e5d6a65009ca86d47395))
+
+
+
+
+
+## [1.60.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.60.1...@times-components/article-skeleton@1.60.2) (2021-10-13)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.60.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.60.0...@times-components/article-skeleton@1.60.1) (2021-10-07)
 
 **Note:** Version bump only for package @times-components/article-skeleton

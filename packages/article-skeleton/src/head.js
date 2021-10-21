@@ -234,6 +234,7 @@ function Head({
             <meta content={publication} name="article:publication" />
             {desc && <meta content={desc} name="description" />}
             {authorName && <meta content={authorName} name="author" />}
+            <meta content={sectionname} name="section" />
 
             <meta content={title} property="og:title" />
             <meta content="article" property="og:type" />
@@ -242,6 +243,7 @@ function Head({
             {leadassetUrl && (
               <meta content={leadassetUrl} property="og:image" />
             )}
+            {hasVideo && <meta name="robots" content="max-video-preview:-1" />}
 
             <meta content={title} name="twitter:title" />
             <meta content="summary_large_image" name="twitter:card" />
