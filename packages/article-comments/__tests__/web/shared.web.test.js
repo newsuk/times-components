@@ -36,7 +36,6 @@ it("enabled comments", () => {
   expect(baseElement.getElementsByTagName("script")[0].src).toEqual(
     "https://launcher.spot.im/spot/CurrentSpotID"
   );
-  expect(baseElement.getElementsByClassName("info").length).toEqual(1);
 
   expect(asFragment()).toMatchSnapshot();
 });

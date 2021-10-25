@@ -106,64 +106,7 @@ exports[`disabled comments 1`] = `
 
 exports[`enabled comments 1`] = `
 <DocumentFragment>
-  .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1.info {
-  background-color: #bedeed;
-  border-left: 4px solid #1573a2;
-}
-
-.c1.info svg {
-  fill: #1573a2;
-}
-
-.c1.warning {
-  background-color: #ffeecc;
-  border-left: 4px solid #ffa300;
-}
-
-.c1.warning svg {
-  fill: #ffa300;
-}
-
-.c1.error {
-  background-color: #ffd6d6;
-  border-left: 4px solid #df0000;
-}
-
-.c1.error svg {
-  fill: #df0000;
-}
-
-.c2 {
-  margin: 12px 0 45px 12px;
-}
-
-.c3 {
-  margin: 12px;
-}
-
-.c4 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  margin-bottom: 6px;
-}
-
-.c5 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.c0 {
+  .c0 {
   margin-left: auto;
   margin-right: auto;
 }
@@ -184,41 +127,6 @@ exports[`enabled comments 1`] = `
     class="c0"
     id="comments-container"
   >
-    <div
-      class="info c1"
-    >
-      <div
-        class="c2"
-      >
-        <svg
-          fill="none"
-          height="20"
-          viewBox="0 0 20 20"
-          width="20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            clip-rule="evenodd"
-            d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
-            fill-rule="evenodd"
-          />
-        </svg>
-      </div>
-      <div
-        class="c3"
-      >
-        <div
-          class="c4"
-        >
-          Real-name commenting
-        </div>
-        <div
-          class="c5"
-        >
-          Digital commenters are now identified by their real name. We believe this is the best way to ensure high-quality reader participation and intelligent debate.
-        </div>
-      </div>
-    </div>
     <div>
       <script
         async="async"
@@ -274,64 +182,7 @@ exports[`pre-switchover comments 1`] = `
 
 exports[`single comment 1`] = `
 <DocumentFragment>
-  .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1.info {
-  background-color: #bedeed;
-  border-left: 4px solid #1573a2;
-}
-
-.c1.info svg {
-  fill: #1573a2;
-}
-
-.c1.warning {
-  background-color: #ffeecc;
-  border-left: 4px solid #ffa300;
-}
-
-.c1.warning svg {
-  fill: #ffa300;
-}
-
-.c1.error {
-  background-color: #ffd6d6;
-  border-left: 4px solid #df0000;
-}
-
-.c1.error svg {
-  fill: #df0000;
-}
-
-.c2 {
-  margin: 12px 0 45px 12px;
-}
-
-.c3 {
-  margin: 12px;
-}
-
-.c4 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  margin-bottom: 6px;
-}
-
-.c5 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.c0 {
+  .c0 {
   margin-left: auto;
   margin-right: auto;
 }
@@ -352,41 +203,6 @@ exports[`single comment 1`] = `
     class="c0"
     id="comments-container"
   >
-    <div
-      class="info c1"
-    >
-      <div
-        class="c2"
-      >
-        <svg
-          fill="none"
-          height="20"
-          viewBox="0 0 20 20"
-          width="20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            clip-rule="evenodd"
-            d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
-            fill-rule="evenodd"
-          />
-        </svg>
-      </div>
-      <div
-        class="c3"
-      >
-        <div
-          class="c4"
-        >
-          Real-name commenting
-        </div>
-        <div
-          class="c5"
-        >
-          Digital commenters are now identified by their real name. We believe this is the best way to ensure high-quality reader participation and intelligent debate.
-        </div>
-      </div>
-    </div>
     <div>
       <script
         async="async"
@@ -404,64 +220,7 @@ exports[`single comment 1`] = `
 
 exports[`zero comments 1`] = `
 <DocumentFragment>
-  .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c1.info {
-  background-color: #bedeed;
-  border-left: 4px solid #1573a2;
-}
-
-.c1.info svg {
-  fill: #1573a2;
-}
-
-.c1.warning {
-  background-color: #ffeecc;
-  border-left: 4px solid #ffa300;
-}
-
-.c1.warning svg {
-  fill: #ffa300;
-}
-
-.c1.error {
-  background-color: #ffd6d6;
-  border-left: 4px solid #df0000;
-}
-
-.c1.error svg {
-  fill: #df0000;
-}
-
-.c2 {
-  margin: 12px 0 45px 12px;
-}
-
-.c3 {
-  margin: 12px;
-}
-
-.c4 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  margin-bottom: 6px;
-}
-
-.c5 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.c0 {
+  .c0 {
   margin-left: auto;
   margin-right: auto;
 }
@@ -482,41 +241,6 @@ exports[`zero comments 1`] = `
     class="c0"
     id="comments-container"
   >
-    <div
-      class="info c1"
-    >
-      <div
-        class="c2"
-      >
-        <svg
-          fill="none"
-          height="20"
-          viewBox="0 0 20 20"
-          width="20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            clip-rule="evenodd"
-            d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
-            fill-rule="evenodd"
-          />
-        </svg>
-      </div>
-      <div
-        class="c3"
-      >
-        <div
-          class="c4"
-        >
-          Real-name commenting
-        </div>
-        <div
-          class="c5"
-        >
-          Digital commenters are now identified by their real name. We believe this is the best way to ensure high-quality reader participation and intelligent debate.
-        </div>
-      </div>
-    </div>
     <div>
       <script
         async="async"
