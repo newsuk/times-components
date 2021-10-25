@@ -37,10 +37,6 @@ exports[`1. an article 1`] = `
           name="author"
         />
         <meta
-          content={null}
-          name="section"
-        />
-        <meta
           content="Some Headline"
           property="og:title"
         />
@@ -370,10 +366,6 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
           name="article:publication"
         />
         <meta
-          content={null}
-          name="section"
-        />
-        <meta
           content="Some Short Headline"
           property="og:title"
         />
@@ -547,10 +539,6 @@ exports[`5. an article with ads 1`] = `
         <meta
           content="The Times"
           name="article:publication"
-        />
-        <meta
-          content={null}
-          name="section"
         />
         <meta
           content="Some Headline"
@@ -735,10 +723,6 @@ exports[`6. should show topics when logged in or shared 1`] = `
         <meta
           content="Some byline"
           name="author"
-        />
-        <meta
-          content={null}
-          name="section"
         />
         <meta
           content="Some Headline"
@@ -1100,10 +1084,6 @@ exports[`7. an article with no byline 1`] = `
           name="article:publication"
         />
         <meta
-          content={null}
-          name="section"
-        />
-        <meta
           content="Some Headline"
           property="og:title"
         />
@@ -1387,10 +1367,6 @@ exports[`8. an article with no label 1`] = `
         <meta
           content="Some byline"
           name="author"
-        />
-        <meta
-          content={null}
-          name="section"
         />
         <meta
           content="Some Headline"
