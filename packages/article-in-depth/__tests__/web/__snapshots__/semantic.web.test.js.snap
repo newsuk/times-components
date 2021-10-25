@@ -32,10 +32,6 @@ exports[`1. a full article 1`] = `
       name="author"
     />
     <meta
-      content={null}
-      name="section"
-    />
-    <meta
       content="Some Headline"
       property="og:title"
     />
