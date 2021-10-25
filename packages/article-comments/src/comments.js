@@ -183,7 +183,7 @@ class Comments extends Component {
     if (commentingConfig && commentingConfig.switchOver) {
       isCurrentCommenting = publishedTime > commentingConfig.switchOver;
     }
-    
+
     return (
       <CommentContainer
         id="comments-container"
