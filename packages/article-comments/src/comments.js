@@ -173,15 +173,9 @@ class Comments extends Component {
       onCommentRecommend,
       onCommentNotificationClicked,
       onCommentUsernameClicked,
-      onCommentSettingsClicked,
-      commentingConfig,
-      publishedTime
+      onCommentSettingsClicked
     } = this.props;
 
-    let isCurrentCommenting;
-    if (commentingConfig && commentingConfig.switchOver) {
-      isCurrentCommenting = publishedTime > commentingConfig.switchOver;
-    }
     return (
       <CommentContainer
         id="comments-container"
