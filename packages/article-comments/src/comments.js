@@ -131,6 +131,9 @@ class Comments extends Component {
         document.addEventListener("spot-im-api-ready", () =>
           executeSSOtransaction(isSpotAccountReadOnly, () => {})
         );
+        document.addEventListener("spot-im-login-start", () =>
+          executeSSOtransaction(isSpotAccountReadOnly, () => {})
+        );
       }
     }
 
