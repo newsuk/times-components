@@ -103,6 +103,7 @@ exports[`full article with style 1`] = `
 }
 
 .c26 {
+  clear: both;
   min-height: 283px;
   margin: 30px 0;
   box-sizing: content-box;
@@ -1007,6 +1008,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c26 {
+  clear: both;
   min-height: 283px;
   margin: 30px 0;
   box-sizing: content-box;
@@ -1915,6 +1917,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c26 {
+  clear: both;
   min-height: 283px;
   margin: 30px 0;
   box-sizing: content-box;
@@ -2824,6 +2827,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c26 {
+  clear: both;
   min-height: 283px;
   margin: 30px 0;
   box-sizing: content-box;
