@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.61.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.61.2...@times-components/article-skeleton@1.61.3) (2021-10-26)
+
+
+### Bug Fixes
+
+* **SCB-1480:** Ad Slot content overlap ([#2807](https://github.com/newsuk/times-components/issues/2807)) ([0f93fb9](https://github.com/newsuk/times-components/commit/0f93fb96a63c7e7ae14558fd58cccdfae03b4b29))
+
+
+
+
+
 ## [1.61.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.61.1...@times-components/article-skeleton@1.61.2) (2021-10-25)
 
 **Note:** Version bump only for package @times-components/article-skeleton
