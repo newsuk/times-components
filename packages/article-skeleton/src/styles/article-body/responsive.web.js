@@ -292,6 +292,7 @@ export const Ad = styled.div`
 `;
 
 export const InlineAdWrapper = styled.div`
+  clear: both;
   min-height: 283px;
   margin: 30px 0;
   box-sizing: content-box;
