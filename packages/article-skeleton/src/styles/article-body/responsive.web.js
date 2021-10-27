@@ -252,6 +252,7 @@ export const Heading6 = styled.h6`
 `;
 
 export const NativeAd = styled.div`
+  clear: both;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto 30px;
