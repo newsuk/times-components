@@ -68,6 +68,7 @@ exports[`full article with style 1`] = `
 }
 
 .c19 {
+  clear: both;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -964,6 +965,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c19 {
+  clear: both;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1861,6 +1863,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c19 {
+  clear: both;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2759,6 +2762,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c19 {
+  clear: both;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
