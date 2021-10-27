@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.61.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.61.3...@times-components/article-skeleton@1.61.4) (2021-10-27)
+
+
+### Bug Fixes
+
+* **SCB-1480:** Add more ad clearfix ([#2808](https://github.com/newsuk/times-components/issues/2808)) ([6a22ca9](https://github.com/newsuk/times-components/commit/6a22ca9725d47733638c2acff5ef95decbb30772))
+
+
+
+
+
 ## [1.61.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.61.2...@times-components/article-skeleton@1.61.3) (2021-10-26)
 
 
