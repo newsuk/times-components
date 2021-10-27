@@ -10,6 +10,7 @@ exports[`1. a primary image 1`] = `
 }
 
 .c9 {
+  clear: both;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -288,6 +289,7 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 .c9 {
+  clear: both;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -562,6 +564,7 @@ exports[`3. a secondary image 1`] = `
 }
 
 .c9 {
+  clear: both;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -852,6 +855,7 @@ exports[`4. an inline image 1`] = `
 }
 
 .c9 {
+  clear: both;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
