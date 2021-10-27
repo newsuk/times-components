@@ -68,6 +68,7 @@ exports[`full article with style 1`] = `
 }
 
 .c20 {
+  clear: both;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
