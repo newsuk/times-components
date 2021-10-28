@@ -20,6 +20,10 @@ export default Component =>
         article_topic_tags: data.topics
           ? data.topics.map(topic => topic.name)
           : [],
+        // eslint-disable-next-line
+        isLocked: window.__TIMES_ACCESS_AND_IDENTITY__?.hasAccess
+          ? "unlocked"
+          : "locked",
         bylines: get(
           data,
           "bylines[0].byline[0].children[0].attributes.value",
