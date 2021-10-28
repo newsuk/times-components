@@ -5,6 +5,7 @@ Array [
   Array [
     Object {
       "action": "Viewed",
+      "article_locked_status": "locked",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
         "article_topic_tags": Array [
@@ -18,6 +19,7 @@ Array [
         "edition_type": "",
         "eventTime": "2018-01-01T00:00:00.000Z",
         "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
+        "isLocked": "locked",
         "label": "HURRICANE IRMA",
         "pageName": "france-defies-may-over-russia-37b27qd2s",
         "parent_site": "TIMES",
@@ -40,6 +42,7 @@ Array [
   Array [
     Object {
       "action": "Viewed",
+      "article_locked_status": "locked",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
         "article_topic_tags": Array [
@@ -53,6 +56,7 @@ Array [
         "edition_type": "",
         "eventTime": "2018-01-01T00:00:00.000Z",
         "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
+        "isLocked": "locked",
         "label": "HURRICANE IRMA",
         "pageName": "france-defies-may-over-russia-37b27qd2s",
         "parent_site": "TIMES",
@@ -75,6 +79,7 @@ Array [
   Array [
     Object {
       "action": "Viewed",
+      "article_locked_status": "locked",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
         "article_topic_tags": Array [
@@ -88,6 +93,7 @@ Array [
         "edition_type": "",
         "eventTime": "2018-01-01T00:00:00.000Z",
         "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
+        "isLocked": "locked",
         "label": "HURRICANE IRMA",
         "pageName": "france-defies-may-over-russia-37b27qd2s",
         "parent_site": "TIMES",
@@ -110,6 +116,7 @@ Array [
   Array [
     Object {
       "action": "Viewed",
+      "article_locked_status": "locked",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
         "article_topic_tags": Array [
@@ -123,6 +130,7 @@ Array [
         "edition_type": "",
         "eventTime": "2018-01-01T00:00:00.000Z",
         "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
+        "isLocked": "locked",
         "label": "HURRICANE IRMA",
         "pageName": "france-defies-may-over-russia-37b27qd2s",
         "parent_site": "TIMES",
