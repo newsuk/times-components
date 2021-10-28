@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.8.5...@times-components/tracking@2.9.0) (2021-10-28)
+
+
+### Features
+
+* **GEA-246:** add article_locked_status value to article tracking ([#2809](https://github.com/newsuk/times-components/issues/2809)) ([55e3f7a](https://github.com/newsuk/times-components/commit/55e3f7a2089a7d308ec8976eb558a7d20ed1ddbb))
+
+
+
+
+
 ## [2.8.5](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.8.4...@times-components/tracking@2.8.5) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/tracking

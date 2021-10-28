@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.62.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.61.4...@times-components/article-skeleton@1.62.0) (2021-10-28)
+
+
+### Features
+
+* **GEA-246:** add article_locked_status value to article tracking ([#2809](https://github.com/newsuk/times-components/issues/2809)) ([55e3f7a](https://github.com/newsuk/times-components/commit/55e3f7a2089a7d308ec8976eb558a7d20ed1ddbb))
+
+
+
+
+
 ## [1.61.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.61.3...@times-components/article-skeleton@1.61.4) (2021-10-27)
 
 
