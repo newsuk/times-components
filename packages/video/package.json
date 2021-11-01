@@ -1,8 +1,8 @@
 {
   "name": "@times-components/video",
   "version": "4.11.12",
-  "main": "dist/video",
-  "dev": "src/video",
+  "main": "dist/video.web",
+  "dev": "src/video.web",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -75,7 +75,6 @@
     "@times-components/icons": "2.16.3",
     "@times-components/image": "6.8.6",
     "@times-components/styleguide": "3.38.22",
-    "@times-components/svgs": "2.7.33",
     "@times-components/utils": "6.5.6",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
