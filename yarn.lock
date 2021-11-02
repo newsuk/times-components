@@ -3105,11 +3105,6 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@skele/components@1.0.0-alpha.40":
-  version "1.0.0-alpha.40"
-  resolved "https://registry.yarnpkg.com/@skele/components/-/components-1.0.0-alpha.40.tgz#1548f77ec5bdc6c6ea2ad8ffcb47809581e64289"
-  integrity sha512-8mhYslxz71l+8maHegrNqQrl+a6oRFSl+OmAC4Gny1vQ8znCyGG8gR+SWFeDnNALpOi/EZvPC65qTylkoq6xZg==
-
 "@storybook/addon-actions@5.3.18":
   version "5.3.18"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-5.3.18.tgz#e3e3b1475cebc9bdd2d563822fba9ac662b2601a"
@@ -19804,18 +19799,6 @@ react-native-hooks@0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/react-native-hooks/-/react-native-hooks-0.9.0.tgz#589fc2390296d9afe03327298dabcf0a1f350910"
   integrity sha512-yqSAH0zxqjYHYPo6mPut3dEROoB5qMvsAbN3EK0MDQrWA5zdqmzgTEpS9/qwXaIyllk6hQbHxYnRTWq2uq4tJQ==
-
-react-native-image-pan-zoom@^2.1.9:
-  version "2.1.12"
-  resolved "https://registry.yarnpkg.com/react-native-image-pan-zoom/-/react-native-image-pan-zoom-2.1.12.tgz#eb98bf56fb5610379bdbfdb63219cc1baca98fd2"
-  integrity sha512-BF66XeP6dzuANsPmmFsJshM2Jyh/Mo1t8FsGc1L9Q9/sVP8MJULDabB1hms+eAoqgtyhMr5BuXV3E1hJ5U5H6Q==
-
-react-native-image-zoom-viewer@2.2.26:
-  version "2.2.26"
-  resolved "https://registry.yarnpkg.com/react-native-image-zoom-viewer/-/react-native-image-zoom-viewer-2.2.26.tgz#c6f070abb094cfbe1b3b7d8a38ad979a5facbdc5"
-  integrity sha512-Mh4+CJQCDcAumLFXLlDk8nQ5iMxNnupc9HwktsZ3I/v4HULcFPmTLDQ0HGAxjLa5foZRPnKDN06iKGsEb9raoA==
-  dependencies:
-    react-native-image-pan-zoom "^2.1.9"
 
 react-native-showcase-loader@1.1.0:
   version "1.1.0"

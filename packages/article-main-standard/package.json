@@ -2,8 +2,8 @@
   "name": "@times-components/article-main-standard",
   "version": "3.40.5",
   "description": "Main Standard Article Template",
-  "main": "dist/article-main-standard",
-  "dev": "src/article-main-standard",
+  "main": "dist/article-main-standard.web",
+  "dev": "src/article-main-standard.web",
   "scripts": {
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
@@ -58,7 +58,6 @@
   "dependencies": {
     "@times-components/ad": "2.16.0",
     "@times-components/article-byline": "3.5.38",
-    "@times-components/article-error": "0.2.184",
     "@times-components/article-flag": "2.10.12",
     "@times-components/article-label": "2.7.59",
     "@times-components/article-lead-asset": "1.6.43",

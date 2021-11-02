@@ -2,8 +2,8 @@
   "name": "@times-components/pull-quote",
   "version": "3.6.46",
   "description": "Pull Quote for Times Components Articles",
-  "main": "dist/pull-quote",
-  "dev": "src/pull-quote",
+  "main": "dist/pull-quote.web",
+  "dev": "src/pull-quote.web",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

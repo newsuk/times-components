@@ -2,8 +2,8 @@
   "name": "@times-components/provider-queries",
   "version": "2.15.1",
   "description": "GraphQL queries for sharing",
-  "main": "dist/provider-queries",
-  "dev": "src/provider-queries",
+  "main": "dist/provider-queries.web",
+  "dev": "src/provider-queries.web",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

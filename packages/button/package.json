@@ -2,8 +2,8 @@
   "name": "@times-components/button",
   "version": "2.4.64",
   "description": "Button component",
-  "main": "dist/button",
-  "dev": "src/button",
+  "main": "dist/button.web",
+  "dev": "src/button.web",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

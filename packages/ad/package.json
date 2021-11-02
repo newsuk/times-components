@@ -2,8 +2,8 @@
   "name": "@times-components/ad",
   "version": "2.16.0",
   "description": "Ad component",
-  "main": "dist/ad",
-  "dev": "src/ad",
+  "main": "dist/ad.web",
+  "dev": "src/ad.web",
   "scripts": {
     "prepublishOnly": "yarn transpile && yarn bundle",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
@@ -56,14 +56,10 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@react-native-community/netinfo": "5.3.3",
-    "@skele/components": "1.0.0-alpha.40",
     "@times-components/styleguide": "3.38.22",
     "@times-components/utils": "6.5.6",
     "prop-types": "15.7.2",
-    "react-broadcast": "0.5.2",
-    "react-native-device-info": "5.3.1",
-    "react-native-webview": "11.0.0"
+    "react-broadcast": "0.5.2"
   },
   "resolutions": {
     "react": "16.9.0",
