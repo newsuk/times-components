@@ -74,18 +74,6 @@ exports[`1. page error 1`] = `
 
 <style>
 .S1 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  background-color: rgba(237,237,237,1.00);
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.S2 {
   -ms-flex-item-align: center;
   -webkit-align-self: center;
   align-self: center;
@@ -97,7 +85,7 @@ exports[`1. page error 1`] = `
   text-align: center;
 }
 
-.S3 {
+.S2 {
   color: rgba(105,105,105,1.00);
   font-family: TimesDigitalW04-Regular;
   font-size: 18px;
@@ -110,6 +98,24 @@ exports[`1. page error 1`] = `
 }
 
 .IS2 {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(237,237,237,1.00);
+  bottom: 0px;
+  -webkit-justify-content: center;
+  justify-content: center;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 0;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+}
+
+.IS3 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -118,7 +124,7 @@ exports[`1. page error 1`] = `
   padding-bottom: 110%;
 }
 
-.IS3 {
+.IS4 {
   align-self: center;
   margin-bottom: 10px;
   margin-top: 40px;
@@ -135,13 +141,13 @@ exports[`1. page error 1`] = `
       className="css-view-1dbjc4n"
     >
       <div
-        className="IS2"
+        className="IS3"
       >
         <img
           className="c2"
         />
         <div
-          className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-15282we r-justifyContent-1777fci S1"
+          className="css-view-1dbjc4n IS2"
         >
           <svg
             className="IS1"
@@ -158,17 +164,17 @@ exports[`1. page error 1`] = `
     className="c3 responsiveweb__PageErrorContentContainer-sc-143eup1-7 c3 css-view-1dbjc4n"
   >
     <div
-      className="css-text-901oao r-alignSelf-1kihuf0 r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-yy2aun r-lineHeight-eaezby r-marginBottom-15d164r r-marginTop-1x0uki6 r-textAlign-q4m81j S2"
+      className="css-text-901oao r-alignSelf-1kihuf0 r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-yy2aun r-lineHeight-eaezby r-marginBottom-15d164r r-marginTop-1x0uki6 r-textAlign-q4m81j S1"
     >
       Something's gone wrong
     </div>
     <div
-      className="css-text-901oao r-color-1khp51w r-fontFamily-lmhck6 r-fontSize-1i10wst r-lineHeight-1kt6imw r-textAlign-q4m81j S3"
+      className="css-text-901oao r-color-1khp51w r-fontFamily-lmhck6 r-fontSize-1i10wst r-lineHeight-1kt6imw r-textAlign-q4m81j S2"
     >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </div>
     <Button
-      className="IS3"
+      className="IS4"
     />
   </div>
 </div>

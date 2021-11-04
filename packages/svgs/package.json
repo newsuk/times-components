@@ -68,7 +68,6 @@
   },
   "dependencies": {
     "prop-types": "15.7.2",
-    "react-native-svg": "9.11.1",
     "svgs": "3.2.1"
   },
   "resolutions": {

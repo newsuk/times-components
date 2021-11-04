@@ -1,4 +1,4 @@
-import { getSectionFromTiles } from "../src";
+import { getSectionFromTiles } from "../src/index.web";
 
 describe("getSectionFromTiles should", () => {
   it("return the correct section name", () => {

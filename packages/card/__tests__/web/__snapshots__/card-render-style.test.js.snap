@@ -23,17 +23,6 @@ exports[`card with default layout 1`] = `
 
 <style>
 .S1 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.S2 {
   -ms-flex-negative: 1;
   -ms-flex-positive: 1;
   -ms-flex-preferred-size: 0%;
@@ -48,7 +37,7 @@ exports[`card with default layout 1`] = `
   min-width: 100%;
 }
 
-.S3 {
+.S2 {
   -ms-flex-negative: 1;
   -ms-flex-positive: 1;
   -ms-flex-preferred-size: 0%;
@@ -63,7 +52,7 @@ exports[`card with default layout 1`] = `
   min-width: 100%;
 }
 
-.S4 {
+.S3 {
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   -webkit-box-align: start;
@@ -95,6 +84,24 @@ exports[`card with default layout 1`] = `
 }
 
 .IS3 {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(237,237,237,1.00);
+  bottom: 0px;
+  -webkit-justify-content: center;
+  justify-content: center;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 0;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+}
+
+.IS4 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -105,10 +112,10 @@ exports[`card with default layout 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-17s6mgv S4"
+  className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-17s6mgv S3"
 >
   <div
-    className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minWidth-3e7lpq S2"
+    className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minWidth-3e7lpq S1"
   >
     <TimesImage
       aspectRatio={0.6666666666666666}
@@ -122,7 +129,7 @@ exports[`card with default layout 1`] = `
     />
   </div>
   <div
-    className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minWidth-3e7lpq S3"
+    className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minWidth-3e7lpq S2"
   >
     <div
       className="css-text-901oao"

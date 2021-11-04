@@ -3,6 +3,7 @@ export articleBookmarked from "./article-bookmarked";
 export articleExtras from "./article-extras";
 export author from "./author";
 export draftArticle from "./draft-article";
+export edition from "./edition";
 export getBookmarks from "./get-bookmarks";
 export getNewsletter from "./get-newsletter";
 export getTokenisedArticleUrl from "./get-tokenised-article-url";
