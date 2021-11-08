@@ -9,7 +9,7 @@ const buildConfig = dir => {
   return {
     rootDir: path.join(dir, '../..'),
     preset: 'react-native-web',
-    moduleFileExtensions: ['web.js', 'js', 'ts', 'tsx', 'node', 'json'],
+    moduleFileExtensions: ['js', 'ts', 'tsx', 'node', 'json'],
     transformIgnorePatterns: [],
     testEnvironment: 'jest-environment-jsdom-sixteen',
     setupFiles: [],

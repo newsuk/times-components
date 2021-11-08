@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import TestRenderer from "react-test-renderer";
 import PropTypes from "prop-types";
+import MockedProvider from "../../provider-test-tools/src/mocked-provider";
+
 import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import "./mocks";
 import BarItem from "../src/bar-item";
@@ -57,19 +59,21 @@ export default () => {
     beforeEach(() => {
       stream = jest.fn();
       testInstance = TestRenderer.create(
-        <WithTrackingContext
-          analyticsStream={stream}
-          articleUrl={articleUrl}
-          articleId={articleId}
-          articleHeadline={articleHeadline}
-          onCopyLink={onCopyLink}
-          onShareOnFB={onShareOnFB}
-          onShareOnTwitter={onShareOnTwitter}
-          getTokenisedShareUrl={getTokenisedShareUrl}
-          onShareEmail={onShareEmail}
-          sharingEnabled
-          savingEnabled
-        />
+        <MockedProvider>
+          <WithTrackingContext
+            analyticsStream={stream}
+            articleUrl={articleUrl}
+            articleId={articleId}
+            articleHeadline={articleHeadline}
+            onCopyLink={onCopyLink}
+            onShareOnFB={onShareOnFB}
+            onShareOnTwitter={onShareOnTwitter}
+            getTokenisedShareUrl={getTokenisedShareUrl}
+            onShareEmail={onShareEmail}
+            sharingEnabled
+            savingEnabled
+          />
+        </MockedProvider>
       );
       realLocation = global.window.location;
       delete global.window.location;

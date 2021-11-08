@@ -46,14 +46,14 @@ Array [
   <div
     className="css-view-1dbjc4n"
   >
-    <responsiveweb__InsetCaptionStyle>
+    <responsive__InsetCaptionStyle>
       <StyledComponent
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+              "componentId": "responsive__InsetCaptionStyle-sc-1io40fc-2",
               "isStatic": true,
               "lastClassName": "c1",
               "rules": Array [
@@ -64,10 +64,10 @@ Array [
                 "px){padding-left:0px;}",
               ],
             },
-            "displayName": "responsiveweb__InsetCaptionStyle",
+            "displayName": "responsive__InsetCaptionStyle",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+            "styledComponentId": "responsive__InsetCaptionStyle-sc-1io40fc-2",
             "target": [Function],
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -77,7 +77,7 @@ Array [
         forwardedRef={null}
       >
         <div
-          className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
+          className="c1 responsive__InsetCaptionStyle-sc-1io40fc-2 c1 css-view-1dbjc4n"
         >
           <div
             className="css-view-1dbjc4n"
@@ -99,7 +99,7 @@ Array [
           </div>
         </div>
       </StyledComponent>
-    </responsiveweb__InsetCaptionStyle>
+    </responsive__InsetCaptionStyle>
   </div>,
 ]
 `;
@@ -150,14 +150,14 @@ Array [
   <div
     className="css-view-1dbjc4n"
   >
-    <responsiveweb__InsetCaptionStyle>
+    <responsive__InsetCaptionStyle>
       <StyledComponent
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+              "componentId": "responsive__InsetCaptionStyle-sc-1io40fc-2",
               "isStatic": true,
               "lastClassName": "c1",
               "rules": Array [
@@ -168,10 +168,10 @@ Array [
                 "px){padding-left:0px;}",
               ],
             },
-            "displayName": "responsiveweb__InsetCaptionStyle",
+            "displayName": "responsive__InsetCaptionStyle",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+            "styledComponentId": "responsive__InsetCaptionStyle-sc-1io40fc-2",
             "target": [Function],
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -181,7 +181,7 @@ Array [
         forwardedRef={null}
       >
         <div
-          className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
+          className="c1 responsive__InsetCaptionStyle-sc-1io40fc-2 c1 css-view-1dbjc4n"
         >
           <div
             className="css-view-1dbjc4n"
@@ -203,7 +203,7 @@ Array [
           </div>
         </div>
       </StyledComponent>
-    </responsiveweb__InsetCaptionStyle>
+    </responsive__InsetCaptionStyle>
   </div>,
 ]
 `;
@@ -266,14 +266,14 @@ Array [
     credits="Some credits"
     text="Some caption"
   >
-    <responsiveweb__FullWidthCaptionContainer>
+    <responsive__FullWidthCaptionContainer>
       <StyledComponent
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "responsiveweb__FullWidthCaptionContainer-sc-1gt1h9z-3",
+              "componentId": "responsive__FullWidthCaptionContainer-sc-1io40fc-3",
               "isStatic": true,
               "lastClassName": "c1",
               "rules": Array [
@@ -288,10 +288,10 @@ Array [
                 "px){width:56.2%;}",
               ],
             },
-            "displayName": "responsiveweb__FullWidthCaptionContainer",
+            "displayName": "responsive__FullWidthCaptionContainer",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "responsiveweb__FullWidthCaptionContainer-sc-1gt1h9z-3",
+            "styledComponentId": "responsive__FullWidthCaptionContainer-sc-1io40fc-3",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -323,7 +323,7 @@ Array [
           </div>
         </div>
       </StyledComponent>
-    </responsiveweb__FullWidthCaptionContainer>
+    </responsive__FullWidthCaptionContainer>
   </FullWidthCaptionWeb>,
 ]
 `;
@@ -386,14 +386,14 @@ Array [
     credits="Some credits"
     text="Some caption"
   >
-    <responsiveweb__FullWidthCaptionContainer>
+    <responsive__FullWidthCaptionContainer>
       <StyledComponent
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
             "attrs": Array [],
             "componentStyle": ComponentStyle {
-              "componentId": "responsiveweb__FullWidthCaptionContainer-sc-1gt1h9z-3",
+              "componentId": "responsive__FullWidthCaptionContainer-sc-1io40fc-3",
               "isStatic": true,
               "lastClassName": "c1",
               "rules": Array [
@@ -408,10 +408,10 @@ Array [
                 "px){width:56.2%;}",
               ],
             },
-            "displayName": "responsiveweb__FullWidthCaptionContainer",
+            "displayName": "responsive__FullWidthCaptionContainer",
             "foldedComponentIds": Array [],
             "render": [Function],
-            "styledComponentId": "responsiveweb__FullWidthCaptionContainer-sc-1gt1h9z-3",
+            "styledComponentId": "responsive__FullWidthCaptionContainer-sc-1io40fc-3",
             "target": "div",
             "toString": [Function],
             "warnTooManyClasses": [Function],
@@ -443,7 +443,7 @@ Array [
           </div>
         </div>
       </StyledComponent>
-    </responsiveweb__FullWidthCaptionContainer>
+    </responsive__FullWidthCaptionContainer>
   </FullWidthCaptionWeb>,
 ]
 `;

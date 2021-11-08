@@ -218,17 +218,17 @@ exports[`1. a primary image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
       >
         <div
           className="c3 c4 c5"
@@ -248,11 +248,11 @@ exports[`1. a primary image 1`] = `
         </div>
       </div>
       <article
-        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+        className="c7 responsive__BodyContainer-sc-15gvuj2-3 c7 css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c8 responsiveweb__PrimaryImg-sc-16nqyj8-5 c8 css-view-1dbjc4n"
+            className="c8 responsive__PrimaryImg-sc-4v1r4q-5 c8 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -484,17 +484,17 @@ exports[`2. a fullwidth image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
       >
         <div
           className="c3 c4 c5"
@@ -514,11 +514,11 @@ exports[`2. a fullwidth image 1`] = `
         </div>
       </div>
       <article
-        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+        className="c7 responsive__BodyContainer-sc-15gvuj2-3 c7 css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c8 responsiveweb__FullWidthImg-sc-16nqyj8-6 c8 css-view-1dbjc4n"
+            className="c8 responsive__FullWidthImg-sc-4v1r4q-6 c8 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -774,17 +774,17 @@ exports[`3. a secondary image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
       >
         <div
           className="c3 c4 c5"
@@ -804,11 +804,11 @@ exports[`3. a secondary image 1`] = `
         </div>
       </div>
       <article
-        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+        className="c7 responsive__BodyContainer-sc-15gvuj2-3 c7 css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c8 responsiveweb__SecondaryImg-sc-16nqyj8-7 c8 css-view-1dbjc4n"
+            className="c8 responsive__SecondaryImg-sc-4v1r4q-7 c8 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -1065,17 +1065,17 @@ exports[`4. an inline image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
       >
         <div
           className="c3 c4 c5"
@@ -1095,11 +1095,11 @@ exports[`4. an inline image 1`] = `
         </div>
       </div>
       <article
-        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+        className="c7 responsive__BodyContainer-sc-15gvuj2-3 c7 css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c8 responsiveweb__InlineImg-sc-16nqyj8-8 c8 css-view-1dbjc4n"
+            className="c8 responsive__InlineImg-sc-4v1r4q-8 c8 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>

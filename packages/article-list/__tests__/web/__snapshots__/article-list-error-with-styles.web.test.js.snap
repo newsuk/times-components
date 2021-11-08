@@ -132,10 +132,10 @@ exports[`1. page error 1`] = `
 </style>
 
 <div
-  className="c0 responsiveweb__PageErrorContainer-sc-143eup1-5 c0 css-view-1dbjc4n"
+  className="c0 responsive__PageErrorContainer-sc-1c8x8xk-5 c0 css-view-1dbjc4n"
 >
   <div
-    className="c1 responsiveweb__PageErrorImageContainer-sc-143eup1-6 c1 css-view-1dbjc4n"
+    className="c1 responsive__PageErrorImageContainer-sc-1c8x8xk-6 c1 css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n"
@@ -161,7 +161,7 @@ exports[`1. page error 1`] = `
     </div>
   </div>
   <div
-    className="c3 responsiveweb__PageErrorContentContainer-sc-143eup1-7 c3 css-view-1dbjc4n"
+    className="c3 responsive__PageErrorContentContainer-sc-1c8x8xk-7 c3 css-view-1dbjc4n"
   >
     <div
       className="css-text-901oao r-alignSelf-1kihuf0 r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-yy2aun r-lineHeight-eaezby r-marginBottom-15d164r r-marginTop-1x0uki6 r-textAlign-q4m81j S1"
@@ -353,7 +353,7 @@ exports[`2. article list 1`] = `
     className="css-view-1dbjc4n"
   >
     <div
-      className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
+      className="c0 responsive__ListContentContainer-sc-1c8x8xk-0 c0 css-view-1dbjc4n"
     >
       <div
         className="css-view-1dbjc4n r-alignItems-1oszu61 r-flexDirection-18u37iz r-justifyContent-1777fci S3"
@@ -362,10 +362,10 @@ exports[`2. article list 1`] = `
           className="css-view-1dbjc4n r-flex-13awgt0 r-maxWidth-jjmaes S2"
         >
           <div
-            className="c1 pagination-containerweb__ContainerWithResults-sc-1kff8us-0 c1 css-view-1dbjc4n"
+            className="c1 pagination-container__ContainerWithResults-csg9hq-0 c1 css-view-1dbjc4n"
           >
             <div
-              className="c2 resultsweb__MessageContainer-sc-1eowhty-0 c2 css-view-1dbjc4n"
+              className="c2 results__MessageContainer-sc-1f306gs-0 c2 css-view-1dbjc4n"
             >
               <div
                 className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-a023e6 r-lineHeight-fxxt2n r-paddingTop-1h8ys4a S1"
@@ -374,13 +374,13 @@ exports[`2. article list 1`] = `
               </div>
             </div>
             <div
-              className="c3 pagination-borderweb__BorderWithResults-sc-1tad75g-0 c3 css-view-1dbjc4n"
+              className="c3 pagination-border__BorderWithResults-zd8d3i-0 c3 css-view-1dbjc4n"
             >
               <div
-                className="c4 responsiveweb__LinkContainer-sc-10qy9xl-0 c4 css-view-1dbjc4n"
+                className="c4 responsive__LinkContainer-ac98ik-0 c4 css-view-1dbjc4n"
               />
               <div
-                className="c4 responsiveweb__LinkContainer-sc-10qy9xl-0 c4 css-view-1dbjc4n"
+                className="c4 responsive__LinkContainer-ac98ik-0 c4 css-view-1dbjc4n"
               />
             </div>
           </div>
@@ -389,7 +389,7 @@ exports[`2. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
+        className="c0 responsive__ListContentContainer-sc-1c8x8xk-0 c0 css-view-1dbjc4n"
       >
         ArticleListItem
       </div>
@@ -402,16 +402,16 @@ exports[`2. article list 1`] = `
         className="css-view-1dbjc4n r-flex-13awgt0 r-maxWidth-jjmaes S2"
       >
         <div
-          className="c5 pagination-containerweb__ContainerWithoutResults-sc-1kff8us-1 c5 css-view-1dbjc4n"
+          className="c5 pagination-container__ContainerWithoutResults-csg9hq-1 c5 css-view-1dbjc4n"
         >
           <div
-            className="c6 pagination-borderweb__BorderWithoutResults-sc-1tad75g-1 c6 css-view-1dbjc4n"
+            className="c6 pagination-border__BorderWithoutResults-zd8d3i-1 c6 css-view-1dbjc4n"
           >
             <div
-              className="c4 responsiveweb__LinkContainer-sc-10qy9xl-0 c4 css-view-1dbjc4n"
+              className="c4 responsive__LinkContainer-ac98ik-0 c4 css-view-1dbjc4n"
             />
             <div
-              className="c4 responsiveweb__LinkContainer-sc-10qy9xl-0 c4 css-view-1dbjc4n"
+              className="c4 responsive__LinkContainer-ac98ik-0 c4 css-view-1dbjc4n"
             />
           </div>
         </div>

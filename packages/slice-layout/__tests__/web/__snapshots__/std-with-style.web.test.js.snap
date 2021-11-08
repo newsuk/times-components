@@ -135,21 +135,21 @@ exports[`2. a single child element 1`] = `
   }
 }
 
-<configweb__Base>
+<config__Base>
   <div
-    className="c0 configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-1 configweb__Base-sc-1adgnqc-2 c0 css-view-1dbjc4n"
+    className="c0 config__Base-bs1997-0 config__Base-bs1997-1 config__Base-bs1997-2 c0 css-view-1dbjc4n"
   >
-    <responsiveweb__SliceContainer>
+    <responsive__SliceContainer>
       <div
-        className="c1 responsiveweb__SliceContainer-sc-2kg7gs-0 c1 css-view-1dbjc4n"
+        className="c1 responsive__SliceContainer-sc-1kirgpc-0 c1 css-view-1dbjc4n"
       >
-        <responsiveweb__Base>
+        <responsive__Base>
           <div
-            className="c2 responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-3 responsiveweb__Base-aumpme-4 c2 css-view-1dbjc4n"
+            className="c2 responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-3 responsive__Base-sc-1lqbq6a-4 c2 css-view-1dbjc4n"
           >
-            <responsiveweb__ChildContainer>
+            <responsive__ChildContainer>
               <div
-                className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
+                className="c3 responsive__ChildContainer-sc-1lqbq6a-0 c3 css-view-1dbjc4n"
               >
                 <div
                   className="css-text-901oao"
@@ -157,13 +157,13 @@ exports[`2. a single child element 1`] = `
                   standard-1
                 </div>
               </div>
-            </responsiveweb__ChildContainer>
+            </responsive__ChildContainer>
           </div>
-        </responsiveweb__Base>
+        </responsive__Base>
       </div>
-    </responsiveweb__SliceContainer>
+    </responsive__SliceContainer>
   </div>
-</configweb__Base>
+</config__Base>
 `;
 
 exports[`3. two child elements 1`] = `
@@ -302,21 +302,21 @@ exports[`3. two child elements 1`] = `
   }
 }
 
-<configweb__Base>
+<config__Base>
   <div
-    className="c0 configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-2 c0 css-view-1dbjc4n"
+    className="c0 config__Base-bs1997-0 config__Base-bs1997-2 c0 css-view-1dbjc4n"
   >
-    <responsiveweb__SliceContainer>
+    <responsive__SliceContainer>
       <div
-        className="c1 responsiveweb__SliceContainer-sc-2kg7gs-0 c1 css-view-1dbjc4n"
+        className="c1 responsive__SliceContainer-sc-1kirgpc-0 c1 css-view-1dbjc4n"
       >
-        <responsiveweb__Base>
+        <responsive__Base>
           <div
-            className="c2 responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-3 responsiveweb__Base-aumpme-4 c2 css-view-1dbjc4n"
+            className="c2 responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-3 responsive__Base-sc-1lqbq6a-4 c2 css-view-1dbjc4n"
           >
-            <responsiveweb__ChildContainer>
+            <responsive__ChildContainer>
               <div
-                className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
+                className="c3 responsive__ChildContainer-sc-1lqbq6a-0 c3 css-view-1dbjc4n"
               >
                 <div
                   className="css-text-901oao"
@@ -324,15 +324,15 @@ exports[`3. two child elements 1`] = `
                   standard-1
                 </div>
               </div>
-            </responsiveweb__ChildContainer>
-            <responsiveweb>
+            </responsive__ChildContainer>
+            <responsive>
               <div
-                className="c4 responsiveweb-sc-2kg7gs-1 c4 css-view-1dbjc4n"
+                className="c4 responsive-sc-1kirgpc-1 c4 css-view-1dbjc4n"
               />
-            </responsiveweb>
-            <responsiveweb__ChildContainer>
+            </responsive>
+            <responsive__ChildContainer>
               <div
-                className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
+                className="c3 responsive__ChildContainer-sc-1lqbq6a-0 c3 css-view-1dbjc4n"
               >
                 <div
                   className="css-text-901oao"
@@ -340,13 +340,13 @@ exports[`3. two child elements 1`] = `
                   standard-2
                 </div>
               </div>
-            </responsiveweb__ChildContainer>
+            </responsive__ChildContainer>
           </div>
-        </responsiveweb__Base>
+        </responsive__Base>
       </div>
-    </responsiveweb__SliceContainer>
+    </responsive__SliceContainer>
   </div>
-</configweb__Base>
+</config__Base>
 `;
 
 exports[`4. three child elements 1`] = `
@@ -487,21 +487,21 @@ exports[`4. three child elements 1`] = `
   }
 }
 
-<configweb__Base>
+<config__Base>
   <div
-    className="c0 configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-2 c0 css-view-1dbjc4n"
+    className="c0 config__Base-bs1997-0 config__Base-bs1997-2 c0 css-view-1dbjc4n"
   >
-    <responsiveweb__SliceContainer>
+    <responsive__SliceContainer>
       <div
-        className="c1 responsiveweb__SliceContainer-sc-2kg7gs-0 c1 css-view-1dbjc4n"
+        className="c1 responsive__SliceContainer-sc-1kirgpc-0 c1 css-view-1dbjc4n"
       >
-        <responsiveweb__Base>
+        <responsive__Base>
           <div
-            className="c2 responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-2 responsiveweb__Base-aumpme-4 c2 css-view-1dbjc4n"
+            className="c2 responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-2 responsive__Base-sc-1lqbq6a-4 c2 css-view-1dbjc4n"
           >
-            <responsiveweb__ChildContainer>
+            <responsive__ChildContainer>
               <div
-                className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
+                className="c3 responsive__ChildContainer-sc-1lqbq6a-0 c3 css-view-1dbjc4n"
               >
                 <div
                   className="css-text-901oao"
@@ -509,15 +509,15 @@ exports[`4. three child elements 1`] = `
                   standard-1
                 </div>
               </div>
-            </responsiveweb__ChildContainer>
-            <responsiveweb>
+            </responsive__ChildContainer>
+            <responsive>
               <div
-                className="c4 responsiveweb-sc-2kg7gs-1 c4 css-view-1dbjc4n"
+                className="c4 responsive-sc-1kirgpc-1 c4 css-view-1dbjc4n"
               />
-            </responsiveweb>
-            <responsiveweb__ChildContainer>
+            </responsive>
+            <responsive__ChildContainer>
               <div
-                className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
+                className="c3 responsive__ChildContainer-sc-1lqbq6a-0 c3 css-view-1dbjc4n"
               >
                 <div
                   className="css-text-901oao"
@@ -525,15 +525,15 @@ exports[`4. three child elements 1`] = `
                   standard-2
                 </div>
               </div>
-            </responsiveweb__ChildContainer>
-            <responsiveweb>
+            </responsive__ChildContainer>
+            <responsive>
               <div
-                className="c4 responsiveweb-sc-2kg7gs-1 c4 css-view-1dbjc4n"
+                className="c4 responsive-sc-1kirgpc-1 c4 css-view-1dbjc4n"
               />
-            </responsiveweb>
-            <responsiveweb__ChildContainer>
+            </responsive>
+            <responsive__ChildContainer>
               <div
-                className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
+                className="c3 responsive__ChildContainer-sc-1lqbq6a-0 c3 css-view-1dbjc4n"
               >
                 <div
                   className="css-text-901oao"
@@ -541,11 +541,11 @@ exports[`4. three child elements 1`] = `
                   standard-3
                 </div>
               </div>
-            </responsiveweb__ChildContainer>
+            </responsive__ChildContainer>
           </div>
-        </responsiveweb__Base>
+        </responsive__Base>
       </div>
-    </responsiveweb__SliceContainer>
+    </responsive__SliceContainer>
   </div>
-</configweb__Base>
+</config__Base>
 `;
