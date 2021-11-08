@@ -30,12 +30,8 @@ export default ({ exists, readFile }, resolve) => {
     }
 
     const main = path.resolve(dir, packageJson[entry]);
-
     try {
-      const generic = resolve(main);
-
-      const web = generic.replace(".js", ".web.js");
-      return (await exists(web)) ? web : generic;
+      return resolve(main);
     } catch (_) {
       throw new Error(
         `could not resolve "${main}". Make sure "${entry}" in "${pathToPackage}" points to the right file`
@@ -83,7 +79,7 @@ export default ({ exists, readFile }, resolve) => {
       path: dir
     },
     resolve: {
-      extensions: [".web.js", ".js"],
+      extensions: [".js"],
       mainFields: ["dev", "module", "main"]
     },
     target: "node"

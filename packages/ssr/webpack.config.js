@@ -2,7 +2,7 @@ const path = require("path");
 const outputFolder = require("./src/lib/resolve-dist");
 
 const alias = { "react-native$": "react-native-web" };
-const extensions = [".web.js", ".js"];
+const extensions = [".js", ".js"];
 
 const productionOptions = {
   devtool: "source-map",

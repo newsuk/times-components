@@ -7,7 +7,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 const req = require.context(
   "../packages",
   true,
-  /^((?!node_modules).)*\.(stories|stories.web)\.(tsx|js)$/
+  /^((?!node_modules).)*\.(stories)\.(tsx|js)$/
 );
 
 addDecorator(withInfo({

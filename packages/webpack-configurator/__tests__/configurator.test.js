@@ -86,7 +86,7 @@ describe("webpack-configurator", () => {
     );
 
     const entry = await getEntry("/root", "devEntry");
-    expect(entry).toEqual("/root/foo/index.web.js");
+    expect(entry).toEqual("/root/foo/index.js");
   });
 
   it("should throw if package.json not found", async () => {
@@ -116,7 +116,7 @@ describe("webpack-configurator", () => {
   });
 
   it("should get the generic entry if web entry not available", async () => {
-    const exists = jest.fn(path => !path.match(/index\.web\.js$/));
+    const exists = jest.fn(path => !path.match(/index\\.js$/));
     const readFile = jest.fn(
       () => `{
       "devEntry": "foo/index"

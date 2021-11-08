@@ -8,7 +8,7 @@ import { mount } from "enzyme";
 import { delay } from "@times-components/test-utils";
 import InteractiveWrapper, {
   polyfillWCIfNecessary
-} from "../../src/interactive-wrapper.web";
+} from "../../src/interactive-wrapper";
 
 jest.mock("@times-components/image", () => ({
   __esModule: true,

@@ -5,7 +5,7 @@ import React from "react";
 import { renderToString } from "react-dom/server";
 import { ServerStyleSheet } from "styled-components";
 
-import "../mocks.web";
+import "../mocks";
 
 import { PROGRESS_ATTR_NAME } from "@times-components/sticky";
 import StickySaveAndShareBar from "../../src/sticky-save-and-share-bar";

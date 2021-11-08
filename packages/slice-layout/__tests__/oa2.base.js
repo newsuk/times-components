@@ -8,7 +8,7 @@ import {
   getOpinionContainer,
   getSeparator,
   getContainer
-} from "../src/templates/opiniononeandtwo/responsive.web";
+} from "../src/templates/opiniononeandtwo/responsive";
 
 export default renderComponent => {
   const tests = [

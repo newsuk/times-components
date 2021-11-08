@@ -1,4 +1,4 @@
-import "../mocks.web";
+import "../mocks";
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import TestRenderer from "react-test-renderer";

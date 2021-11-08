@@ -1,3 +1,3 @@
-import shared from "../shared-dim.web";
+import shared from "../shared-dim";
 
 shared();

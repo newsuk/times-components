@@ -1,4 +1,4 @@
-import lineHeightMapping from "./mapping.web";
+import lineHeightMapping from "./mapping";
 
 export default scale => ({ font, fontSize }) => {
   const mapping = lineHeightMapping({ scale });
