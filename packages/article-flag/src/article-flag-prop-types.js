@@ -27,7 +27,8 @@ const articleFlagsPropTypes = {
 };
 
 const articleFlagDefaultProps = {
-  color: colours.functional.primary
+  color: colours.functional.primary,
+  backgroundColor: colours.functional.primary
 };
 
 export { articleFlagPropTypes, articleFlagsPropTypes, articleFlagDefaultProps };

@@ -36,10 +36,14 @@ ArticleFlag.propTypes = {
 
 ArticleFlag.defaultProps = articleFlagDefaultProps;
 
-const LiveArticleFlag = props => 
-  (<div style={styles.colorBackground}>
-    <ArticleFlag {...props} title="live" />
-  </div>);
+
+const LiveArticleFlag = props => {
+  return(
+    <div style={props.colorBackground}>
+      <ArticleFlag {...props} title="live" />
+   </div>
+   )
+  };
 
 const NewArticleFlag = props => <ArticleFlag {...props} title="new" />;
 const UpdatedArticleFlag = props => <ArticleFlag {...props} title="updated" />;
@@ -55,7 +59,8 @@ const LongReadArticleFlag = props => (
 
 LiveArticleFlag.propTypes = articleFlagPropTypes;
 LiveArticleFlag.defaultProps = {
-  color: colours.functional.white
+  color: colours.functional.black,
+  backgroundColor: colours.functional.live
 };
 
 NewArticleFlag.propTypes = articleFlagPropTypes;
