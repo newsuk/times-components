@@ -7,6 +7,12 @@ const styles = {
     height: 5,
     width: 5
   },
+  colorBackground: {
+    paddingBottom: spacing(1),
+    paddingTop: spacing(1),
+    paddingRight: spacing(1),
+    paddingLeft: spacing(2)
+  },
   flagPadding: {
     marginRight: spacing(3)
   },

@@ -17,6 +17,7 @@ const functionalColours = {
   greyStickyBarBorderBottom: "#ffffffdb",
   gutter: "#f0f0f0",
   keyline: "#DBDBDB",
+  live: "#9F0000",
   modalBackground: "#000000",
   newsletterPuffBackground: "#F9F8F3",
   overlayGradientEnd: "#00000000",

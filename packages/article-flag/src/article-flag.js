@@ -36,6 +36,11 @@ ArticleFlag.propTypes = {
 
 ArticleFlag.defaultProps = articleFlagDefaultProps;
 
+const LiveArticleFlag = props => 
+  (<div style={styles.colorBackground}>
+    <ArticleFlag {...props} title="live" />
+  </div>);
+
 const NewArticleFlag = props => <ArticleFlag {...props} title="new" />;
 const UpdatedArticleFlag = props => <ArticleFlag {...props} title="updated" />;
 const ExclusiveArticleFlag = props => (
@@ -47,6 +52,11 @@ const SponsoredArticleFlag = props => (
 const LongReadArticleFlag = props => (
   <ArticleFlag {...props} title="long read" />
 );
+
+LiveArticleFlag.propTypes = articleFlagPropTypes;
+LiveArticleFlag.defaultProps = {
+  color: colours.functional.white
+};
 
 NewArticleFlag.propTypes = articleFlagPropTypes;
 NewArticleFlag.defaultProps = {
@@ -118,6 +128,7 @@ export default ArticleFlag;
 export {
   getActiveFlags,
   ArticleFlags,
+  LiveArticleFlag,
   NewArticleFlag,
   UpdatedArticleFlag,
   ExclusiveArticleFlag,

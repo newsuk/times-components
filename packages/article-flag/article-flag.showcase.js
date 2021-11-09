@@ -1,6 +1,7 @@
 import React from "react";
 import {
   ArticleFlags,
+  LiveArticleFlag,
   NewArticleFlag,
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
@@ -10,6 +11,11 @@ import {
 
 export default {
   children: [
+    {
+      component: () => <LiveArticleFlag />,
+      name: "Article Flag (Live)",
+      type: "story"
+    },
     {
       component: () => <NewArticleFlag />,
       name: "Article Flag (New)",
