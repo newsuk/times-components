@@ -18,5 +18,6 @@ export const Title = styled.div`
     font-family: ${fonts.supporting};
     font-weight: 500;
     font-size: 12px;
+    letter-spacing: 0.1em;
     line-height: 16px;
 `;
