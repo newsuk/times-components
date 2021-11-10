@@ -7,7 +7,7 @@ export const Container = styled.div`
 `;
 
 export const BulletContainer = styled.div`
-    margin: 3px 0 6px 8px;
+    margin: 2px 0 6px 8px;
 `;
 
 export const ContentContainer = styled.div`
@@ -15,7 +15,7 @@ export const ContentContainer = styled.div`
 `;
 
 export const Title = styled.div`
-    font-family: 'Gill Sans MT Std';
+    font-family: ${fonts.supporting};
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
