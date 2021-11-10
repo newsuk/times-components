@@ -11,7 +11,7 @@ import {
   articleFlagDefaultProps
 } from "./article-flag-prop-types";
 
-const ArticleFlag = ({ title, color }) => (
+const ArticleFlag = ({ title, color, font }) => (
   <View style={styles.view}>
     <View
       style={[
@@ -21,7 +21,7 @@ const ArticleFlag = ({ title, color }) => (
     />
     <Text
       accessibilityLabel={`${title} Flag`}
-      style={[styles.title, { color: gqlRgbaToStyle(color) || color }]}
+      style={[styles.title, { color: gqlRgbaToStyle(color) || color }, {fontFamily: font}]}
       testID={`flag-${title}`}
     >
       {title.toLowerCase()}
@@ -39,7 +39,7 @@ ArticleFlag.defaultProps = articleFlagDefaultProps;
 
 const LiveArticleFlag = ({backgroundColor, ...props}) => (
   <View style={[styles.colorBackground, {backgroundColor: backgroundColor}]}>
-    <ArticleFlag {...props} title="live" />
+    <ArticleFlag title={titleColorBackground} color={colours.functional.white} font={gillSansFont} title="live" />
   </View>
 );
 

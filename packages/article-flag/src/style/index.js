@@ -12,8 +12,23 @@ const styles = {
     marginBottom: spacing(1),
     marginTop: 0
   },
-  title: {
-    ...sharedStyles.title,
+  titleClearBackground: {
+    ...sharedStyles.titleNoBackground,
+    ...fontFactory({
+      font: "body",
+      fontSize: "cardMetaMobile"
+    }),
+    fontWeight: "bold",
+    lineHeight: 10,
+    textTransform: "uppercase",
+    fontSize: 10,
+    letterSpacing: 0,
+    includeFontPadding: false,
+    paddingBottom: spacing(0),
+    marginBottom: spacing(0)
+  },
+  titleColorBackground: {
+    ...sharedStyles.gillSansFont,
     ...fontFactory({
       font: "body",
       fontSize: "cardMetaMobile"

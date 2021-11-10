@@ -25,11 +25,18 @@ const styles = {
     flexWrap: "wrap",
     marginBottom: spacing(2)
   },
-  title: {
+  titleNoBackground: {
     ...fontFactory({
       font: "bodyRegularSmallCaps",
       fontSize: "cardMetaMobile"
     }),
+    fontWeight: "400",
+    letterSpacing: 0.6,
+    marginLeft: spacing(1)
+  },
+  gillSansFont: {
+    fontFamily: "Gill Sans MT Std",
+    fontSize: 12,
     fontWeight: "400",
     letterSpacing: 0.6,
     marginLeft: spacing(1)
