@@ -105,6 +105,13 @@ const articleTemplateTest = (template, options = {}) => {
 
       cy.get("script[data-spotim-module]").should("not.exist");
     });
+    it("should match snapshots", () => {
+      cy.task("startMockServerWith", {
+        Article: sundayTimesArticleWithThreeRelatedArticles,
+        User: userWithBookmarks
+      }).visit(pageUrl);
+      cy.matchImageSnapshot();
+    });
 
     it("should pass basic a11y test", () => {
       cy.task("startMockServerWith", {

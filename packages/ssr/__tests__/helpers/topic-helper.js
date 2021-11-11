@@ -49,6 +49,10 @@ export default (options = {}) => {
       cy.goToPreviousArticle();
       cy.url().should("include", "?page=1");
     });
+    it("should match snapshots", () => {
+      cy.visit(pageUrl);
+      cy.matchImageSnapshot();
+    });
 
     it("should pass basic a11y test", () => {
       cy.injectAxe();

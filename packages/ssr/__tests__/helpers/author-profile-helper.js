@@ -63,5 +63,8 @@ export default (options = {}) => {
       });
       cy.checkA11y();
     });
+    it("should match snapshots", () => {
+      cy.matchImageSnapshot();
+    });
   });
 };
