@@ -1,7 +1,101 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. default layout 1`] = `
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.c2 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
 .c0 {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -16,32 +110,129 @@ exports[`1. default layout 1`] = `
     <img
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1000"
     />
-    <div>
-      <Svg
+    <div
+      height="100%"
+      width="100%"
+    >
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
 `;
 
 exports[`2. default layout without uri 1`] = `
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.c2 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
 .c0 {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -56,32 +247,129 @@ exports[`2. default layout without uri 1`] = `
     <img
       src={null}
     />
-    <div>
-      <Svg
+    <div
+      height="100%"
+      width="100%"
+    >
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
 `;
 
 exports[`3. default layout without aspect ratio 1`] = `
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.c2 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
 .c0 {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -96,32 +384,129 @@ exports[`3. default layout without aspect ratio 1`] = `
     <img
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
     />
-    <div>
-      <Svg
+    <div
+      height="100%"
+      width="100%"
+    >
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
 `;
 
 exports[`4. rounded image 1`] = `
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.c2 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
 .c0 {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -136,32 +521,129 @@ exports[`4. rounded image 1`] = `
     <img
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800"
     />
-    <div>
-      <Svg
+    <div
+      height="100%"
+      width="100%"
+    >
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
 `;
 
 exports[`5. with existing url params 1`] = `
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.c2 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
 .c0 {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -176,25 +658,28 @@ exports[`5. with existing url params 1`] = `
     <img
       src="https://image.io?resize=1400"
     />
-    <div>
-      <Svg
+    <div
+      height="100%"
+      width="100%"
+    >
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
@@ -202,6 +687,48 @@ exports[`5. with existing url params 1`] = `
 
 exports[`6. with disabled placeholder 1`] = `
 .c0 {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -221,7 +748,49 @@ exports[`6. with disabled placeholder 1`] = `
 `;
 
 exports[`7. remove the low res image after the high res image has transitioned in 1`] = `
-.c1 {
+.c0 {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.c2 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -231,7 +800,7 @@ exports[`7. remove the low res image after the high res image has transitioned i
   z-index: 1;
 }
 
-.c0 {
+.c1 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -255,6 +824,48 @@ exports[`7. remove the low res image after the high res image has transitioned i
 
 exports[`7. remove the low res image after the high res image has transitioned in 2`] = `
 .c0 {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -274,7 +885,101 @@ exports[`7. remove the low res image after the high res image has transitioned i
 `;
 
 exports[`8. only a low res image 1`] = `
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.c2 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
 .c0 {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -289,32 +994,129 @@ exports[`8. only a low res image 1`] = `
     <img
       src="https://image.io?resize=200"
     />
-    <div>
-      <Svg
+    <div
+      height="100%"
+      width="100%"
+    >
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
 `;
 
 exports[`9. fade in the low res image 1`] = `
+.c2 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.c2 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
 .c0 {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -329,25 +1131,28 @@ exports[`9. fade in the low res image 1`] = `
     <img
       src="https://image.io?resize=200"
     />
-    <div>
-      <Svg
+    <div
+      height="100%"
+      width="100%"
+    >
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
@@ -355,6 +1160,48 @@ exports[`9. fade in the low res image 1`] = `
 
 exports[`9. fade in the low res image 2`] = `
 .c0 {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -374,7 +1221,101 @@ exports[`9. fade in the low res image 2`] = `
 `;
 
 exports[`10. both high and low res sizes 1`] = `
+.c3 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.c3 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
 .c0 {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.c0 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border: 0 solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  min-height: 0;
+  min-width: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -384,7 +1325,7 @@ exports[`10. both high and low res sizes 1`] = `
   z-index: 2;
 }
 
-.c1 {
+.c2 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -402,25 +1343,28 @@ exports[`10. both high and low res sizes 1`] = `
     <img
       src="https://image.io?resize=200"
     />
-    <div>
-      <Svg
+    <div
+      height="100%"
+      width="100%"
+    >
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>

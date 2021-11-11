@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
-import { Image } from "react-native";
 
 export const propTypes = {
-  ...Image.PropTypes,
   accessibilityLabel: PropTypes.string,
   aspectRatio: PropTypes.number,
   borderRadius: PropTypes.number,
@@ -17,7 +15,6 @@ export const propTypes = {
 };
 
 export const defaultProps = {
-  ...Image.defaultImagePropTypes,
   aspectRatio: undefined,
   disablePlaceholder: false,
   fadeImageIn: false,
