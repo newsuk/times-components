@@ -1,4 +1,5 @@
 import React from "react";
+import { LiveArticleFlag } from "@times-components/ts-components";
 import {
   ArticleFlags,
   NewArticleFlag,
@@ -13,6 +14,11 @@ export default {
     {
       component: () => <NewArticleFlag />,
       name: "Article Flag (New)",
+      type: "story"
+    },
+    {
+      component: () => <LiveArticleFlag />,
+      name: "Article Flag (Live)",
       type: "story"
     },
     {
@@ -44,6 +50,7 @@ export default {
       component: () => (
         <ArticleFlags
           flags={[
+            { expiryTime: "2030-03-13T12:00:00.000Z", type: "LIVE" },
             { expiryTime: "2030-03-13T12:00:00.000Z", type: "UPDATED" },
             { expiryTime: "2030-03-14T12:00:00.000Z", type: "EXCLUSIVE" },
             { expiryTime: "2030-03-14T12:00:00.000Z", type: "NEW" },
@@ -59,6 +66,7 @@ export default {
       component: () => (
         <ArticleFlags
           flags={[
+            { expiryTime: "2030-03-13T12:00:00.000Z", type: "LIVE" },
             { expiryTime: "2030-03-13T12:00:00.000Z", type: "UPDATED" },
             { expiryTime: "2030-03-14T12:00:00.000Z", type: "EXCLUSIVE" },
             { expiryTime: "2030-03-14T12:00:00.000Z", type: "NEW" },
