@@ -3,6 +3,7 @@ import { View, Text } from "react-native";
 import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";
+import { LiveArticleFlag } from "@times-components/ts-components";
 import styles from "./style";
 import getActiveFlags from "./get-active-flags";
 import {
@@ -76,6 +77,7 @@ LongReadArticleFlag.defaultProps = {
 const flagsMapping = color =>
   new Map([
     ["NEW", <NewArticleFlag color={color} />],
+    ["LIVE", <LiveArticleFlag color={'white'} />],
     ["UPDATED", <UpdatedArticleFlag color={color} />],
     ["EXCLUSIVE", <ExclusiveArticleFlag color={color} />],
     ["SPONSORED", <SponsoredArticleFlag color={color} />],
