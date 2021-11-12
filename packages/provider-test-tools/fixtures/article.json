@@ -1140,6 +1140,10 @@
     {
       "type": "SPONSORED",
       "expiryTime": "2022-03-13T13:00:00.000Z"
+    },
+    {
+      "type": "LIVE",
+      "expiryTime": "2022-03-13T13:00:00.000Z"
     }
   ],
   "hasVideo": true,
