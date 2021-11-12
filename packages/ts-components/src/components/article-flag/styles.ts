@@ -3,16 +3,17 @@ import { fonts } from '@times-components/styleguide';
 
 export const Container = styled.div`
     display: flex;
+    padding: 2px;
     background-color: #9f0000;
 `;
 
 export const BulletContainer = styled.div`
-    margin: 2px 0 6px 8px;
+    margin-left: 4px;
     color: #ffffff;
 `;
 
 export const ContentContainer = styled.div`
-    margin: 6px 8px 6px 5px;
+    margin: 5px 6px 0px 4px;
     color: #ffffff;
 `;
 
