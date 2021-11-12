@@ -19,7 +19,8 @@ jest.mock("@times-components/article-flag", () => ({
   ExclusiveArticleFlag: "ExclusiveArticleFlag",
   NewArticleFlag: "NewArticleFlag",
   SponsoredArticleFlag: "SponsoredArticleFlag",
-  UpdatedArticleFlag: "UpdatedArticleFlag"
+  UpdatedArticleFlag: "UpdatedArticleFlag",
+  LiveArticleFlag: "LiveArticleFlag",
 }));
 jest.mock("@times-components/article-image", () => "ArticleImage");
 jest.mock("@times-components/article-topics", () => "ArticleTopics");

@@ -167,6 +167,10 @@ function mockLeadOneAndOneSlice(): LeadOneAndOneSliceWithName {
     {
       type: Flag.Updated,
       expiryTime: "2030-03-14T12:00:00.000Z"
+    },
+    {
+      type: Flag.Live,
+      expiryTime: "2030-03-14T12:00:00.000Z"
     }
   ];
   const leadTile = {

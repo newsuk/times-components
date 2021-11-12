@@ -18,7 +18,7 @@ requires [Xcode](https://developer.apple.com/xcode),
 [JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html) and
 [pip](https://pip.pypa.io/en/stable/installing/).
 
-You can try without these requirements, but you'd be on your own
+You can try without these requirements, but you'd be on your own.
 
 ## Viewing Our Components
 
