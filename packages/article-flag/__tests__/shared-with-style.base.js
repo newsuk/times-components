@@ -24,7 +24,8 @@ export default () => {
               { expiryTime: "2030-03-13T12:00:00.000Z", type: "UPDATED" },
               { expiryTime: "2030-03-14T12:00:00.000Z", type: "EXCLUSIVE" },
               { expiryTime: "2030-03-14T12:00:00.000Z", type: "NEW" },
-              { expiryTime: "2030-03-14T12:00:00.000Z", type: "SPONSORED" }
+              { expiryTime: "2030-03-14T12:00:00.000Z", type: "SPONSORED" },
+              { expiryTime: "2030-03-14T12:00:00.000Z", type: "LIVE" },
             ]}
             longRead
           />
