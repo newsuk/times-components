@@ -77,10 +77,10 @@ LongReadArticleFlag.defaultProps = {
 const flagsMapping = color =>
   new Map([
     ["NEW", <NewArticleFlag color={color} />],
-    ["LIVE", <LiveArticleFlag color={'white'} />],
+    ["LIVE", <LiveArticleFlag color="white" />],
     ["UPDATED", <UpdatedArticleFlag color={color} />],
     ["EXCLUSIVE", <ExclusiveArticleFlag color={color} />],
-    ["SPONSORED", <LiveArticleFlag color={'white'} />],
+    ["SPONSORED", <LiveArticleFlag color="white" />],
     ["LONGREAD", <LongReadArticleFlag color={color} />]
   ]);
 
