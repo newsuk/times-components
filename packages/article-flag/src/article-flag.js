@@ -124,5 +124,6 @@ export {
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
   SponsoredArticleFlag,
-  LongReadArticleFlag
+  LongReadArticleFlag,
+  LiveArticleFlag
 };

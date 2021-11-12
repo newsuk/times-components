@@ -1,12 +1,12 @@
 import React from "react";
-import { LiveArticleFlag } from "@times-components/ts-components";
 import {
   ArticleFlags,
   NewArticleFlag,
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
   SponsoredArticleFlag,
-  LongReadArticleFlag
+  LongReadArticleFlag,
+  LiveArticleFlag
 } from "./src/article-flag";
 
 export default {
