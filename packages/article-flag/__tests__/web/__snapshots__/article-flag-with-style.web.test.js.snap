@@ -267,24 +267,7 @@ exports[`2. multiple article flags 1`] = `
   <div
     className="css-view-1dbjc4n IS13"
   >
-    <div
-      className="styles__Container-sc-1clee8j-0 kOndfR"
-    >
-      <div
-        className="styles__BulletContainer-sc-1clee8j-1 jyKDxh"
-      >
-        ◆
-      </div>
-      <div
-        className="styles__ContentContainer-sc-1clee8j-2 dNWaJQ"
-      >
-        <div
-          className="styles__Title-sc-1clee8j-3 bhqmhq"
-        >
-          LIVE
-        </div>
-      </div>
-    </div>
+    <LiveArticleFlag />
   </div>
   <div
     className="css-view-1dbjc4n IS17"
