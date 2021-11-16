@@ -1127,11 +1127,19 @@
   "expirableFlags": [
     {
       "type": "NEW",
-      "expiryTime": "2020-03-13T15:00:00.000Z"
+      "expiryTime": "2022-03-13T15:00:00.000Z"
     },
     {
       "type": "UPDATED",
-      "expiryTime": "2019-03-13T13:00:00.000Z"
+      "expiryTime": "2022-03-13T15:00:00.000Z"
+    },
+    {
+      "type": "EXCLUSIVE",
+      "expiryTime": "2022-03-13T15:00:00.000Z"
+    },
+    {
+      "type": "SPONSORED",
+      "expiryTime": "2022-03-13T13:00:00.000Z"
     }
   ],
   "hasVideo": true,

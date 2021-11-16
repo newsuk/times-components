@@ -160,42 +160,10 @@ exports[`2. multiple article flags 1`] = `
 }
 
 .IS13 {
-  background-color: rgba(77,77,77,1.00);
-  border-top-left-radius: 2.5px;
-  border-top-right-radius: 2.5px;
-  border-bottom-right-radius: 2.5px;
-  border-bottom-left-radius: 2.5px;
-  height: 5px;
-  width: 5px;
-}
-
-.IS14 {
-  color: rgba(77,77,77,1.00);
-  font-family: TimesDigitalW04-RegularSC;
-  font-size: 12px;
-  font-weight: 400;
-  letter-spacing: 0.6px;
-  line-height: 12px;
-  margin-left: 5px;
-}
-
-.IS15 {
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS16 {
   margin-right: 15px;
 }
 
-.IS17 {
+.IS14 {
   background-color: rgba(105,105,105,1.00);
   border-top-left-radius: 2.5px;
   border-top-right-radius: 2.5px;
@@ -205,7 +173,7 @@ exports[`2. multiple article flags 1`] = `
   width: 5px;
 }
 
-.IS18 {
+.IS15 {
   color: rgba(105,105,105,1.00);
   font-family: TimesDigitalW04-RegularSC;
   font-size: 12px;
@@ -215,7 +183,7 @@ exports[`2. multiple article flags 1`] = `
   margin-left: 5px;
 }
 
-.IS19 {
+.IS16 {
   -webkit-align-items: center;
   align-items: center;
   -webkit-flex-direction: row;
@@ -227,11 +195,11 @@ exports[`2. multiple article flags 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS20 {
+.IS17 {
   margin-right: 15px;
 }
 
-.IS21 {
+.IS18 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -246,7 +214,7 @@ exports[`2. multiple article flags 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS21"
+  className="css-view-1dbjc4n IS18"
 >
   <div
     className="css-view-1dbjc4n IS4"
@@ -297,32 +265,21 @@ exports[`2. multiple article flags 1`] = `
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n IS16"
+    className="css-view-1dbjc4n IS13"
   >
-    <div
-      className="css-view-1dbjc4n IS15"
-    >
-      <div
-        className="css-view-1dbjc4n IS13"
-      />
-      <div
-        className="css-text-901oao IS14"
-      >
-        sponsored
-      </div>
-    </div>
+    <LiveArticleFlag />
   </div>
   <div
-    className="css-view-1dbjc4n IS20"
+    className="css-view-1dbjc4n IS17"
   >
     <div
-      className="css-view-1dbjc4n IS19"
+      className="css-view-1dbjc4n IS16"
     >
       <div
-        className="css-view-1dbjc4n IS17"
+        className="css-view-1dbjc4n IS14"
       />
       <div
-        className="css-text-901oao IS18"
+        className="css-text-901oao IS15"
       >
         long read
       </div>

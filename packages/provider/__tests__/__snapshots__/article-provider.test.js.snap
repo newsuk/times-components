@@ -62,13 +62,23 @@ Object {
   "expirableFlags": Array [
     Object {
       "__typename": "ExpirableFlag",
-      "expiryTime": "2020-03-13T15:00:00.000Z",
+      "expiryTime": "2022-03-13T15:00:00.000Z",
       "type": "NEW",
     },
     Object {
       "__typename": "ExpirableFlag",
-      "expiryTime": "2019-03-13T13:00:00.000Z",
+      "expiryTime": "2022-03-13T15:00:00.000Z",
       "type": "UPDATED",
+    },
+    Object {
+      "__typename": "ExpirableFlag",
+      "expiryTime": "2022-03-13T15:00:00.000Z",
+      "type": "EXCLUSIVE",
+    },
+    Object {
+      "__typename": "ExpirableFlag",
+      "expiryTime": "2022-03-13T13:00:00.000Z",
+      "type": "SPONSORED",
     },
   ],
   "hasVideo": true,
