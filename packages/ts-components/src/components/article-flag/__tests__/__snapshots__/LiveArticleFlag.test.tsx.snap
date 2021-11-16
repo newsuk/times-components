@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LiveArticleFlag> should render the component 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa lovBF"
+    >
+      <div
+        class="sc-bwzfXH bLCovl"
+      >
+        ◆
+      </div>
+      <div
+        class="sc-htpNat elUbmc"
+      >
+        <div
+          class="sc-bxivhb jPdzqi"
+        >
+          LIVE
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
