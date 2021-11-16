@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.10.12...@times-components/article-flag@2.11.0) (2021-11-16)
+
+
+### Features
+
+* **TDP-478:** Article LIVE flag ([#2814](https://github.com/newsuk/times-components/issues/2814)) ([9bb430a](https://github.com/newsuk/times-components/commit/9bb430a9082843e553540d4e3795ae90a0d59089)), closes [#2813](https://github.com/newsuk/times-components/issues/2813)
+
+
+
+
+
 ## [2.10.12](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.10.11...@times-components/article-flag@2.10.12) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/article-flag

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "3.16.59",
+  "version": "3.16.60",
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {
@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "@times-components/article-byline": "3.5.38",
-    "@times-components/article-flag": "2.10.12",
+    "@times-components/article-flag": "2.11.0",
     "@times-components/article-label": "2.7.59",
     "@times-components/date-publication": "0.21.61",
     "@times-components/markup": "3.4.60",
