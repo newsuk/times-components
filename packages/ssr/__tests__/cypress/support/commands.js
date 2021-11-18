@@ -1,4 +1,10 @@
-/* eslint-disable no-unused-expressions */
+import { addMatchImageSnapshotCommand } from "cypress-image-snapshot/command";
+
+addMatchImageSnapshotCommand({
+  failureThreshold: 0.05,
+  failureThresholdType: "percent"
+});
+
 Cypress.Commands.add("goToNextArticle", () => {
   cy.get('div[data-testid="pagination-button-next"]')
     .first()
