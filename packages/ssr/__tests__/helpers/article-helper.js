@@ -110,6 +110,7 @@ const articleTemplateTest = (template, options = {}) => {
         Article: sundayTimesArticleWithThreeRelatedArticles,
         User: userWithBookmarks
       }).visit(pageUrl);
+      cy.wait(1000);
       cy.matchImageSnapshot();
     });
 

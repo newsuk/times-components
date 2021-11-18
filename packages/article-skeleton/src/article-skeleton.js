@@ -11,7 +11,7 @@ import {
   AlgoliaSearchProvider
 } from "@times-components/ts-components";
 import UserState from "@times-components/user-state";
-import { MessageContext } from "@times-components/message-bar";
+import { MessageContext, MessageManager } from "@times-components/message-bar";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
@@ -117,6 +117,8 @@ const ArticleSkeleton = ({
         }}
         analyticsStream={analyticsStream}
       >
+        <h1>{article.template}</h1>
+
         {isPreview && (
           <div className="Container">
             <div className="ArticleMetaBanner">
