@@ -133,6 +133,7 @@ function Head({
     publicationName,
     shortHeadline,
     publishedTime,
+    swgProductID,
     updatedTime,
     hasVideo,
     seoDescription,
@@ -171,6 +172,7 @@ function Head({
   const authorSchema =
     (authors && authors.length ? authors : textByLineAuthorSchema) ||
     defaultAuthorSchema;
+
   const jsonLD = {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
@@ -193,6 +195,11 @@ function Head({
       "@type": "WebPageElement",
       isAccessibleForFree: false,
       cssSelector: `.${paidContentClassName}`
+    },
+    isPartOf: {
+      "@type": ["CreativeWork", "Product"],
+      "name": "The Times & The Sunday Times",
+      "productID": swgProductID
     },
     image: {
       "@type": "ImageObject",
