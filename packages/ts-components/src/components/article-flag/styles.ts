@@ -12,7 +12,7 @@ export const BulletContainer = styled.div`
   color: #ffffff;
   align-self: center;
   line-height: 16px;
-`;
+  `;
 
 export const ContentContainer = styled.div`
   margin-top: 5px;
