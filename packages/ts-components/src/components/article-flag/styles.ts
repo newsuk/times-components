@@ -6,7 +6,6 @@ export const Container = styled.div`
   padding: 2px 6px;
   background-color: #9f0000;
   align-items: baseline;
-
 `;
 
 export const BulletContainer = styled.div`
