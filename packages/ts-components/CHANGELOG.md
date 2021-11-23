@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.14.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.13.0...@times-components/ts-components@1.14.0) (2021-11-23)
+
+
+### Features
+
+* **TDP-478:** Centre bullet in LIVE article flag ([#2816](https://github.com/newsuk/times-components/issues/2816)) ([ef8a7e3](https://github.com/newsuk/times-components/commit/ef8a7e379d65eaee3424c0981f22c491a3159b99))
+
+
+
+
+
 # [1.13.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.13...@times-components/ts-components@1.13.0) (2021-11-16)
 
 
