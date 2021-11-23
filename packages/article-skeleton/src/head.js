@@ -124,7 +124,8 @@ function Head({
   article,
   logoUrl,
   paidContentClassName,
-  getFallbackThumbnailUrl169
+  getFallbackThumbnailUrl169,
+  swgProductId
 }) {
   const {
     descriptionMarkup,
@@ -133,7 +134,6 @@ function Head({
     publicationName,
     shortHeadline,
     publishedTime,
-    swgProductID,
     updatedTime,
     hasVideo,
     seoDescription,
@@ -173,6 +173,14 @@ function Head({
     (authors && authors.length ? authors : textByLineAuthorSchema) ||
     defaultAuthorSchema;
 
+  const isPartOf = swgProductId
+    ? {
+        "@type": ["CreativeWork", "Product"],
+        name: "The Times & The Sunday Times",
+        productID: swgProductId
+      }
+    : null;
+
   const jsonLD = {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
@@ -196,11 +204,7 @@ function Head({
       isAccessibleForFree: false,
       cssSelector: `.${paidContentClassName}`
     },
-    isPartOf: {
-      "@type": ["CreativeWork", "Product"],
-      "name": "The Times & The Sunday Times",
-      "productID": swgProductID
-    },
+    ...isPartOf,
     image: {
       "@type": "ImageObject",
       url: leadassetUrl,
@@ -285,7 +289,12 @@ Head.propTypes = {
   }).isRequired,
   logoUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string.isRequired,
-  getFallbackThumbnailUrl169: PropTypes.func.isRequired
+  getFallbackThumbnailUrl169: PropTypes.func.isRequired,
+  swgProductId: PropTypes.string
+};
+
+Head.defaultProps = {
+  swgProductId: null
 };
 
 export default Head;

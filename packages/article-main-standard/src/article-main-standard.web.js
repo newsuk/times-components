@@ -83,7 +83,7 @@ class ArticlePage extends Component {
       commentingConfig,
       paidContentClassName,
       isPreview,
-      swgProductID,
+      swgProductId,
       additionalRelatedArticlesFlag,
       inlineRelatedArticlesFlag,
       algoliaSearchKeys,
@@ -109,7 +109,7 @@ class ArticlePage extends Component {
           commentingConfig={commentingConfig}
           paidContentClassName={paidContentClassName}
           isPreview={isPreview}
-          swgProductID={swgProductID}
+          swgProductId={swgProductId}
           additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
           inlineRelatedArticlesFlag={inlineRelatedArticlesFlag}
           algoliaSearchKeys={algoliaSearchKeys}

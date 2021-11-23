@@ -95,7 +95,6 @@ const renderers = ({
   template,
   analyticsStream,
   isPreview,
-  swgProductID,
   olympicsKeys
 }) => ({
   ...coreRenderers,
@@ -497,7 +496,7 @@ const ArticleBody = ({
   paidContentClassName,
   template,
   isPreview,
-  swgProductID,
+  swgProductId,
   inArticlePuffFlag,
   olympicsKeys
 }) =>
@@ -507,7 +506,7 @@ const ArticleBody = ({
       paidContentClassName,
       template,
       isPreview,
-      swgProductID,
+      swgProductId,
       inArticlePuffFlag,
       olympicsKeys
     })

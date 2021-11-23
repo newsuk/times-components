@@ -75,7 +75,7 @@ class ArticlePage extends Component {
       receiveChildList,
       commentingConfig,
       isPreview,
-      swgProductID,
+      swgProductId,
       additionalRelatedArticlesFlag,
       inlineRelatedArticlesFlag,
       algoliaSearchKeys,
@@ -98,7 +98,7 @@ class ArticlePage extends Component {
         navigationMode={navigationMode}
         commentingConfig={commentingConfig}
         isPreview={isPreview}
-        swgProductID={swgProductID}
+        swgProductId={swgProductId}
         additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
         inlineRelatedArticlesFlag={inlineRelatedArticlesFlag}
         algoliaSearchKeys={algoliaSearchKeys}
