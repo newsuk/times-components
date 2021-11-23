@@ -4,21 +4,17 @@ exports[`<LiveArticleFlag> should render the component 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa lovBF"
+      class="sc-bdVaJa kEyujV"
     >
       <div
-        class="sc-bwzfXH goUVRk"
+        class="sc-bwzfXH htodcl"
       >
         ◆
       </div>
       <div
-        class="sc-htpNat elUbmc"
+        class="sc-htpNat gQxwaB"
       >
-        <div
-          class="sc-bxivhb jPdzqi"
-        >
-          LIVE
-        </div>
+        LIVE
       </div>
     </div>
   </div>
