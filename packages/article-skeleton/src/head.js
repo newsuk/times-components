@@ -173,14 +173,6 @@ function Head({
     (authors && authors.length ? authors : textByLineAuthorSchema) ||
     defaultAuthorSchema;
 
-  const isPartOf = swgProductId
-    ? {
-        "@type": ["CreativeWork", "Product"],
-        name: "The Times & The Sunday Times",
-        productID: swgProductId
-      }
-    : null;
-
   const jsonLD = {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
@@ -204,7 +196,6 @@ function Head({
       isAccessibleForFree: false,
       cssSelector: `.${paidContentClassName}`
     },
-    ...isPartOf,
     image: {
       "@type": "ImageObject",
       url: leadassetUrl,
@@ -215,6 +206,13 @@ function Head({
     author: authorSchema
   };
 
+  if (swgProductId) {
+    jsonLD.isPartOf = {
+      "@type": ["CreativeWork", "Product"],
+      name: "The Times & The Sunday Times",
+      productID: swgProductId
+    };
+  }
   const videoJsonLD = hasVideo
     ? {
         "@context": "https://schema.org/",
