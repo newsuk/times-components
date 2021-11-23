@@ -36,7 +36,9 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -437,7 +439,9 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"

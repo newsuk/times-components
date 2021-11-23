@@ -11,7 +11,9 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -319,7 +321,9 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"

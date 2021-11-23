@@ -11,7 +11,9 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
     data-article-template="maincomment"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -432,7 +434,9 @@ exports[`2. an article with interactives 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -600,7 +604,9 @@ exports[`3. an article with no content 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -733,7 +739,9 @@ exports[`4. an article with no content if content is set as null 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -866,7 +874,9 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
     data-article-template="maincomment"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -976,7 +986,9 @@ exports[`6. an article with heading tags 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -1128,7 +1140,9 @@ exports[`7. an article with link 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -1283,7 +1297,9 @@ exports[`8. an article with italic link 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -1441,7 +1457,9 @@ exports[`9. an article with bold text followed by bold link 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -1598,7 +1616,9 @@ exports[`10. an article with italic and normal text link 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -1757,7 +1777,9 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -1910,7 +1932,9 @@ exports[`12. an article with text wrapped in inline element 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -2061,7 +2085,9 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -2213,7 +2239,9 @@ exports[`14. an article with inline inside a bold tag 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -2366,7 +2394,9 @@ exports[`15. an article starting with single quote 1`] = `
     data-article-template="maincomment"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -2518,7 +2548,9 @@ exports[`16. an article starting with double quote 1`] = `
     data-article-template="maincomment"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
