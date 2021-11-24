@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "6.4.7",
+  "version": "6.4.8",
   "description": "Author profile information along with a list of articles they have written",
   "main": "dist/author-profile",
   "dev": "src/author-profile",
@@ -69,7 +69,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-list": "9.7.47",
+    "@times-components/article-list": "9.7.48",
     "@times-components/gradient": "3.2.60",
     "@times-components/icons": "2.16.3",
     "@times-components/image": "6.8.6",
