@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.41.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.40.8...@times-components/article-main-standard@3.41.0) (2021-11-24)
+
+
+### Features
+
+* **GEA-255:** Add swgProductId to structured data ([#2817](https://github.com/newsuk/times-components/issues/2817)) ([747323b](https://github.com/newsuk/times-components/commit/747323b115a99afa26022d714026ade45423ce9e))
+
+
+
+
+
 ## [3.40.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.40.7...@times-components/article-main-standard@3.40.8) (2021-11-23)
 
 **Note:** Version bump only for package @times-components/article-main-standard
