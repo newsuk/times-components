@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-lead-asset",
-  "version": "1.6.43",
+  "version": "1.6.44",
   "description": "Generalised Lead Asset component for templates to consume & style",
   "main": "dist/article-lead-asset.web",
   "dev": "src/article-lead-asset.web",
@@ -36,8 +36,8 @@
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.17",
-    "@times-components/jest-configurator": "2.7.2",
-    "@times-components/storybook": "4.1.66",
+    "@times-components/jest-configurator": "2.7.3",
+    "@times-components/storybook": "4.1.67",
     "@times-components/webpack-configurator": "2.0.28",
     "babel-jest": "24.8.0",
     "eslint": "5.9.0",
@@ -51,10 +51,10 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/jest-serializer": "3.2.26",
+    "@times-components/jest-serializer": "3.2.27",
     "@times-components/test-utils": "2.3.9",
-    "@times-components/utils": "6.5.6",
-    "@times-components/video": "4.11.12",
+    "@times-components/utils": "6.5.7",
+    "@times-components/video": "4.11.13",
     "prop-types": "15.7.2"
   },
   "resolutions": {
