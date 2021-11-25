@@ -2,8 +2,8 @@
   "name": "@times-components/responsive",
   "version": "0.7.1",
   "description": "Responsive",
-  "main": "dist/responsive.web",
-  "dev": "src/responsive.web",
+  "main": "dist/responsive",
+  "dev": "src/responsive",
   "scripts": {
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",

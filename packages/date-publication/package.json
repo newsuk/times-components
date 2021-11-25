@@ -2,8 +2,8 @@
   "name": "@times-components/date-publication",
   "version": "0.21.62",
   "description": "Date and Publication properties",
-  "main": "dist/date-publication.web",
-  "dev": "src/date-publication.web",
+  "main": "dist/date-publication",
+  "dev": "src/date-publication",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

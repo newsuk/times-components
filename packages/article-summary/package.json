@@ -1,8 +1,8 @@
 {
   "name": "@times-components/article-summary",
   "version": "3.16.63",
-  "main": "dist/article-summary.web",
-  "dev": "src/article-summary.web",
+  "main": "dist/article-summary",
+  "dev": "src/article-summary",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

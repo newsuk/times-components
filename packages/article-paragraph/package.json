@@ -2,8 +2,8 @@
   "name": "@times-components/article-paragraph",
   "version": "1.4.245",
   "description": "Article Paragraph",
-  "main": "dist/index.web",
-  "dev": "src/index.web",
+  "main": "dist/index",
+  "dev": "src/index",
   "scripts": {
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",

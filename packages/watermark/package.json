@@ -2,8 +2,8 @@
   "name": "@times-components/watermark",
   "version": "2.7.55",
   "description": "Watermark",
-  "main": "dist/watermark.web",
-  "dev": "src/watermark.web",
+  "main": "dist/watermark",
+  "dev": "src/watermark",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

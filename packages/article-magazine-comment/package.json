@@ -2,8 +2,8 @@
   "name": "@times-components/article-magazine-comment",
   "version": "3.36.1",
   "description": "Magazine Comment Article Template",
-  "main": "dist/article-magazine-comment.web",
-  "dev": "src/article-magazine-comment.web",
+  "main": "dist/article-magazine-comment",
+  "dev": "src/article-magazine-comment",
   "scripts": {
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",

@@ -2,8 +2,8 @@
   "name": "@times-components/utils",
   "version": "6.5.7",
   "description": "A set of helpers and/or workarounds to be shared across packages",
-  "main": "dist/index.web",
-  "dev": "src/index.web",
+  "main": "dist/index",
+  "dev": "src/index",
   "scripts": {
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",

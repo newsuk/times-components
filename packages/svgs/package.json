@@ -2,8 +2,8 @@
   "name": "@times-components/svgs",
   "version": "2.7.34",
   "description": "Svgs wrapper",
-  "main": "dist/index.web",
-  "dev": "src/index.web",
+  "main": "dist/index",
+  "dev": "src/index",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

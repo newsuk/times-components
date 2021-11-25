@@ -2,8 +2,8 @@
   "name": "@times-components/interactive-wrapper",
   "version": "0.8.18",
   "description": "Wrapper for legacy Interactive components",
-  "main": "dist/interactive-wrapper.web",
-  "dev": "src/interactive-wrapper.web",
+  "main": "dist/interactive-wrapper",
+  "dev": "src/interactive-wrapper",
   "scripts": {
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,identity-obj-proxy,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",

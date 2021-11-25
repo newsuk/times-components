@@ -2,8 +2,8 @@
   "name": "@times-components/markup",
   "version": "3.4.61",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
-  "main": "dist/markup.web",
-  "dev": "src/markup.web",
+  "main": "dist/markup",
+  "dev": "src/markup",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

@@ -2,8 +2,8 @@
   "name": "@times-components/article-magazine-standard",
   "version": "3.36.1",
   "description": "Magazine Standard Article Template",
-  "main": "dist/article-magazine-standard.web",
-  "dev": "src/article-magazine-standard.web",
+  "main": "dist/article-magazine-standard",
+  "dev": "src/article-magazine-standard",
   "scripts": {
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",

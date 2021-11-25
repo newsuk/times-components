@@ -2,8 +2,8 @@
   "name": "@times-components/author-profile",
   "version": "6.4.9",
   "description": "Author profile information along with a list of articles they have written",
-  "main": "dist/author-profile.web",
-  "dev": "src/author-profile.web",
+  "main": "dist/author-profile",
+  "dev": "src/author-profile",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

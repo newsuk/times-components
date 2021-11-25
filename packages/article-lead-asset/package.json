@@ -2,8 +2,8 @@
   "name": "@times-components/article-lead-asset",
   "version": "1.6.44",
   "description": "Generalised Lead Asset component for templates to consume & style",
-  "main": "dist/article-lead-asset.web",
-  "dev": "src/article-lead-asset.web",
+  "main": "dist/article-lead-asset",
+  "dev": "src/article-lead-asset",
   "scripts": {
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
