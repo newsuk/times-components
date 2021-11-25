@@ -115,21 +115,6 @@ export default {
       component: () => (
         <View
           style={{
-            height: "100%",
-            width: "100%"
-          }}
-        >
-          <Video {...defaultVideoProps} height="100%" width="100%" />
-        </View>
-      ),
-      name: "100% width and height",
-      platform: "native",
-      type: "story"
-    },
-    {
-      component: () => (
-        <View
-          style={{
             height: "100vh",
             overflow: "hidden",
             width: "100vw"

@@ -26,7 +26,7 @@ const getStories = ({ colourMap, name }) => {
     type: "story"
   };
 
-  return [{ ...story, platform: "native" }, { ...story, platform: "web" }];
+  return [{ ...story, platform: "web" }];
 };
 
 const getBuilder = () => {

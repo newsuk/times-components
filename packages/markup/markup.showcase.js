@@ -2,7 +2,6 @@
 /* eslint-env browser */
 import React from "react";
 import { View, Text } from "react-native";
-import { CenteredDecorator } from "@times-components/storybook";
 import { fonts } from "@times-components/styleguide";
 import renderTrees, { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "./src/markup";
@@ -16,11 +15,6 @@ const superscript = require("./fixtures/multiple-superscripts.json");
 
 export default {
   children: [
-    {
-      decorator: CenteredDecorator,
-      platform: "native",
-      type: "decorator"
-    },
     {
       component: () => (
         <View>{renderTrees(multiParagraph, coreRenderers)}</View>
