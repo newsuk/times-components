@@ -11,7 +11,7 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
-import "./mocks.web";
+import "./mocks";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import ArticleMainComment from "../src/article-main-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";

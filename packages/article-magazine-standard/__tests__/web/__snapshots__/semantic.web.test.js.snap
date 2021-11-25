@@ -194,12 +194,23 @@ exports[`1. a full article 1`] = `
         />
       </svg>
     </a>
-    <SaveStarWeb
-      articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-      colour="#696969"
-      height={18}
-      hoverColor="#1D1D1B"
-    />
+    Save
+    <svg
+      height="100%"
+      viewBox="0 0 32 32"
+      width="100%"
+    >
+      <circle
+        cx="16"
+        cy="16"
+        r="14"
+      />
+      <circle
+        cx="16"
+        cy="16"
+        r="14"
+      />
+    </svg>
     <article
       role="article"
     >
@@ -371,12 +382,23 @@ exports[`1. a full article 1`] = `
           />
         </svg>
       </a>
-      <SaveStarWeb
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        colour="#696969"
-        height={18}
-        hoverColor="#1D1D1B"
-      />
+      Save
+      <svg
+        height="100%"
+        viewBox="0 0 32 32"
+        width="100%"
+      >
+        <circle
+          cx="16"
+          cy="16"
+          r="14"
+        />
+        <circle
+          cx="16"
+          cy="16"
+          r="14"
+        />
+      </svg>
     </article>
   </main>
 </article>

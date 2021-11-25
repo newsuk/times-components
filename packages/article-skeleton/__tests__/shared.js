@@ -7,7 +7,7 @@ import {
   minimalWebTransform,
   print
 } from "@times-components/jest-serializer";
-import "./mocks.web";
+import "./mocks";
 import shared from "./shared.base";
 
 const omitProps = new Set([

@@ -13,7 +13,7 @@ import {
   stylePrinter
 } from "@times-components/jest-serializer";
 import { themeFactory } from "@times-components/styleguide";
-import "./mocks.web";
+import "./mocks";
 import ArticleInDepth from "../src/article-in-depth";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";

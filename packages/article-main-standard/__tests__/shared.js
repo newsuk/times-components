@@ -8,7 +8,7 @@ import {
   minimalWebTransform,
   print
 } from "@times-components/jest-serializer";
-import { UserState } from "./mocks.web";
+import { UserState } from "./mocks";
 import shared from "./shared.base";
 import ArticleMainStandard from "../src/article-main-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";

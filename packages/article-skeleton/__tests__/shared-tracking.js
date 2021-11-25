@@ -1,4 +1,4 @@
-import "./mocks.web";
+import "./mocks";
 
 import shared from "./shared-tracking.base";
 

@@ -6,7 +6,7 @@ import {
   minimalWebTransform,
   print
 } from "@times-components/jest-serializer";
-import "./mocks.web";
+import "./mocks";
 import shared from "./images.base";
 
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");

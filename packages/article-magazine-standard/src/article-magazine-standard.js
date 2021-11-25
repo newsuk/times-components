@@ -12,7 +12,7 @@ import {
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
 import styles from "./styles";
-import { LeadAsset } from "./styles/responsive.web";
+import { LeadAsset } from "./styles/responsive";
 
 class ArticlePage extends Component {
   constructor(props) {

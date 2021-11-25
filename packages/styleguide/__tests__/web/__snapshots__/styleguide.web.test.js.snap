@@ -31,7 +31,7 @@ exports[`4. animations should have a fadein animation wrapper component 1`] = `
 }
 
 <div
-  className="c0 indexweb__FadeIn-v0crhg-0 c0 css-view-1dbjc4n"
+  className="c0 animations__FadeIn-sc-2iiu4y-0 c0 css-view-1dbjc4n"
 >
   <div
     className="css-text-901oao"

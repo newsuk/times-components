@@ -1,3 +1,3 @@
-import { Paragraph } from "./styles/responsive.web";
+import { Paragraph } from "./styles/responsive";
 
 export default Paragraph;

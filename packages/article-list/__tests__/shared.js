@@ -11,7 +11,7 @@ import "./mocks";
 import { omitWeb as omitProps } from "./utils";
 import articlesFixture from "../fixtures/articles.json";
 import ArticleList from "../src/article-list";
-import shared from "./shared.base.web";
+import shared from "./shared.base";
 
 export default () => {
   addSerializers(

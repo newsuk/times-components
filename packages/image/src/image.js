@@ -3,7 +3,7 @@ import { View } from "react-native";
 import { addMissingProtocol, appendToImageURL } from "@times-components/utils";
 import Placeholder from "./placeholder";
 import { defaultProps, propTypes } from "./image-prop-types";
-import styles from "./styles/index.web";
+import styles from "./styles/index";
 import StyledImage from "./styles/responsive";
 
 class TimesImage extends Component {

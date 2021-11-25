@@ -8,14 +8,14 @@ import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { normaliseWidthForAssetRequestCache } from "@times-components/utils";
 import LazyLoad from "@times-components/lazy-load";
-import { scrollUpToPaging } from "./utils/index.web";
+import { scrollUpToPaging } from "./utils/index";
 import ArticleListError from "./article-list-error";
 import ArticleListItem from "./article-list-item";
 import ArticleListItemSeparator from "./article-list-item-separator";
 import ArticleListPagination from "./article-list-pagination";
 import { propTypes, defaultProps } from "./article-list-prop-types";
 import ArticleListEmptyState from "./article-list-empty-state";
-import styles, { retryButtonStyles } from "./styles/index.web";
+import styles, { retryButtonStyles } from "./styles/index";
 import { ListContentContainer, InlineAdWrapper } from "./styles/responsive";
 
 class ArticleList extends Component {

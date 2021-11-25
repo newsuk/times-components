@@ -2,7 +2,7 @@ import React from "react";
 import { appendToImageURL, addMissingProtocol } from "@times-components/utils";
 import getRatio from "./get-ratio";
 import { imageLeadAssetPropTypes } from "./article-lead-asset-prop-types";
-import styles from "../styles/index.web";
+import styles from "../styles/index";
 
 const LeadAssetImage = ({ aspectRatio, alt, uri }) => {
   const url = addMissingProtocol(uri);

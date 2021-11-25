@@ -8,11 +8,7 @@ import {
   getSupportContainer,
   getSupportsContainer
 } from "./responsive";
-import {
-  getOpinionConfig,
-  getSupportConfig,
-  getConfigWrapper
-} from "./config.web";
+import { getOpinionConfig, getSupportConfig, getConfigWrapper } from "./config";
 
 const supportConfig = getSupportConfig();
 

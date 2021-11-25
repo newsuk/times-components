@@ -13,7 +13,7 @@ import Context from "@times-components/context";
 import { MockedProvider } from "@times-components/provider-test-tools";
 import { getNewsletter } from "@times-components/provider-queries";
 
-import { UserState } from "../mocks.web";
+import { UserState } from "../mocks";
 
 import articleFixture, { testFixture } from "../../fixtures/full-article";
 import {

@@ -17,7 +17,7 @@ import {
   HeaderTopContainer,
   LeadAsset,
   MetaContainer
-} from "./styles/responsive.web";
+} from "./styles/responsive";
 
 const renderCaption = ({ caption }) => (
   <LeadAssetCaptionContainer>

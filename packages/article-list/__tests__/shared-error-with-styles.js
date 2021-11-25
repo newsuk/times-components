@@ -9,7 +9,7 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
-import shared from "./shared-error.base.web";
+import shared from "./shared-error.base";
 
 const keepProps = new Set(["class", "className", "style"]);
 

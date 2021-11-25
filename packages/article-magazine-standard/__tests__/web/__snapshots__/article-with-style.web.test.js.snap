@@ -634,20 +634,20 @@ exports[`full article with style 1`] = `
       </script>
     </Helmet>
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="c3 responsiveweb__HeaderContainer-sc-1pihheg-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
+          className="c3 responsive__HeaderContainer-iv7rgu-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
         >
           <div
             className="css-view-1dbjc4n r-marginBottom-15d164r S2"
@@ -659,36 +659,36 @@ exports[`full article with style 1`] = `
             </div>
           </div>
           <h1
-            className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1pihheg-3 c4 css-text-901oao r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j S3"
+            className="c4 css-reset-4rbku5 responsive__HeadlineContainer-iv7rgu-3 c4 css-text-901oao r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j S3"
           >
             Some Headline
           </h1>
           <div
-            className="c5 responsiveweb__FlagsContainer-sc-1pihheg-1 c5 css-view-1dbjc4n"
+            className="c5 responsive__FlagsContainer-iv7rgu-1 c5 css-view-1dbjc4n"
           >
             <ArticleFlags />
           </div>
           <h2
-            className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1pihheg-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
+            className="c6 css-reset-4rbku5 responsive__StandfirstContainer-iv7rgu-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
           >
             Some Standfirst
           </h2>
           <div
-            className="c7 responsiveweb__MetaContainer-sc-1pihheg-6 c7 css-view-1dbjc4n"
+            className="c7 responsive__MetaContainer-iv7rgu-6 c7 css-view-1dbjc4n"
           >
             <div
-              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c8 responsive__Meta-iv7rgu-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
             >
               <ArticleBylineWithLinks />
             </div>
             <div
-              className="c9 responsiveweb__Separator-sc-1pihheg-7 c9 css-view-1dbjc4n"
+              className="c9 responsive__Separator-iv7rgu-7 c9 css-view-1dbjc4n"
             />
             <div
-              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c8 responsive__Meta-iv7rgu-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
             >
               <div
-                className="c10 responsiveweb__DatePublicationContainer-sc-1pihheg-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
+                className="c10 responsive__DatePublicationContainer-iv7rgu-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
               >
                 <DatePublication />
               </div>
@@ -716,11 +716,11 @@ exports[`full article with style 1`] = `
         </div>
       </div>
       <article
-        className="c16 responsiveweb__BodyContainer-sc-1exejum-3 c16 css-view-1dbjc4n"
+        className="c16 responsive__BodyContainer-sc-15gvuj2-3 c16 css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+            className="c17 responsive__PrimaryImg-sc-4v1r4q-5 c17 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -749,10 +749,10 @@ exports[`full article with style 1`] = `
           Some content
         </p>
         <div
-          className="c22 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c22 css-view-1dbjc4n"
+          className="c22 responsive__PullQuoteContainer-sc-4v1r4q-10 c22 css-view-1dbjc4n"
         >
           <div
-            className="c23 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c23 css-view-1dbjc4n"
+            className="c23 responsive__PullQuoteResp-sc-4v1r4q-9 c23 css-view-1dbjc4n"
           >
             <PullQuote>
               The pull quote content
@@ -760,7 +760,7 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+          className="c17 responsive__PrimaryImg-sc-4v1r4q-5 c17 css-view-1dbjc4n"
         >
           <figure
             className="IS10"
@@ -786,7 +786,7 @@ exports[`full article with style 1`] = `
             </div>
             <figcaption>
               <div
-                className="c24 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c24 css-view-1dbjc4n"
+                className="c24 inset-caption__InsetCaptionStyle-la2hkf-0 c24 css-view-1dbjc4n"
               >
                 <Caption />
               </div>
@@ -805,14 +805,14 @@ exports[`full article with style 1`] = `
         </div>
         <div>
           <div
-            className="c27 responsiveweb__SecondaryImg-sc-16nqyj8-7 c27 css-view-1dbjc4n"
+            className="c27 responsive__SecondaryImg-sc-4v1r4q-7 c27 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c28 responsiveweb__InlineImg-sc-16nqyj8-8 c28 css-view-1dbjc4n"
+            className="c28 responsive__InlineImg-sc-4v1r4q-8 c28 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -1466,20 +1466,20 @@ exports[`full article with style in the culture magazine 1`] = `
       </script>
     </Helmet>
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="c3 responsiveweb__HeaderContainer-sc-1pihheg-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
+          className="c3 responsive__HeaderContainer-iv7rgu-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
         >
           <div
             className="css-view-1dbjc4n r-marginBottom-15d164r S2"
@@ -1491,36 +1491,36 @@ exports[`full article with style in the culture magazine 1`] = `
             </div>
           </div>
           <h1
-            className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1pihheg-3 c4 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
+            className="c4 css-reset-4rbku5 responsive__HeadlineContainer-iv7rgu-3 c4 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
           >
             Some Headline
           </h1>
           <div
-            className="c5 responsiveweb__FlagsContainer-sc-1pihheg-1 c5 css-view-1dbjc4n"
+            className="c5 responsive__FlagsContainer-iv7rgu-1 c5 css-view-1dbjc4n"
           >
             <ArticleFlags />
           </div>
           <h2
-            className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1pihheg-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
+            className="c6 css-reset-4rbku5 responsive__StandfirstContainer-iv7rgu-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
           >
             Some Standfirst
           </h2>
           <div
-            className="c7 responsiveweb__MetaContainer-sc-1pihheg-6 c7 css-view-1dbjc4n"
+            className="c7 responsive__MetaContainer-iv7rgu-6 c7 css-view-1dbjc4n"
           >
             <div
-              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c8 responsive__Meta-iv7rgu-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
             >
               <ArticleBylineWithLinks />
             </div>
             <div
-              className="c9 responsiveweb__Separator-sc-1pihheg-7 c9 css-view-1dbjc4n"
+              className="c9 responsive__Separator-iv7rgu-7 c9 css-view-1dbjc4n"
             />
             <div
-              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c8 responsive__Meta-iv7rgu-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
             >
               <div
-                className="c10 responsiveweb__DatePublicationContainer-sc-1pihheg-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
+                className="c10 responsive__DatePublicationContainer-iv7rgu-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
               >
                 <DatePublication />
               </div>
@@ -1548,11 +1548,11 @@ exports[`full article with style in the culture magazine 1`] = `
         </div>
       </div>
       <article
-        className="c16 responsiveweb__BodyContainer-sc-1exejum-3 c16 css-view-1dbjc4n"
+        className="c16 responsive__BodyContainer-sc-15gvuj2-3 c16 css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+            className="c17 responsive__PrimaryImg-sc-4v1r4q-5 c17 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -1581,10 +1581,10 @@ exports[`full article with style in the culture magazine 1`] = `
           Some content
         </p>
         <div
-          className="c22 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c22 css-view-1dbjc4n"
+          className="c22 responsive__PullQuoteContainer-sc-4v1r4q-10 c22 css-view-1dbjc4n"
         >
           <div
-            className="c23 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c23 css-view-1dbjc4n"
+            className="c23 responsive__PullQuoteResp-sc-4v1r4q-9 c23 css-view-1dbjc4n"
           >
             <PullQuote>
               The pull quote content
@@ -1592,7 +1592,7 @@ exports[`full article with style in the culture magazine 1`] = `
           </div>
         </div>
         <div
-          className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+          className="c17 responsive__PrimaryImg-sc-4v1r4q-5 c17 css-view-1dbjc4n"
         >
           <figure
             className="IS11"
@@ -1618,7 +1618,7 @@ exports[`full article with style in the culture magazine 1`] = `
             </div>
             <figcaption>
               <div
-                className="c24 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c24 css-view-1dbjc4n"
+                className="c24 inset-caption__InsetCaptionStyle-la2hkf-0 c24 css-view-1dbjc4n"
               >
                 <Caption />
               </div>
@@ -1637,14 +1637,14 @@ exports[`full article with style in the culture magazine 1`] = `
         </div>
         <div>
           <div
-            className="c27 responsiveweb__SecondaryImg-sc-16nqyj8-7 c27 css-view-1dbjc4n"
+            className="c27 responsive__SecondaryImg-sc-4v1r4q-7 c27 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c28 responsiveweb__InlineImg-sc-16nqyj8-8 c28 css-view-1dbjc4n"
+            className="c28 responsive__InlineImg-sc-4v1r4q-8 c28 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -2299,20 +2299,20 @@ exports[`full article with style in the style magazine 1`] = `
       </script>
     </Helmet>
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="c3 responsiveweb__HeaderContainer-sc-1pihheg-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
+          className="c3 responsive__HeaderContainer-iv7rgu-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
         >
           <div
             className="css-view-1dbjc4n r-marginBottom-15d164r S2"
@@ -2324,36 +2324,36 @@ exports[`full article with style in the style magazine 1`] = `
             </div>
           </div>
           <h1
-            className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1pihheg-3 c4 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
+            className="c4 css-reset-4rbku5 responsive__HeadlineContainer-iv7rgu-3 c4 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
           >
             Some Headline
           </h1>
           <div
-            className="c5 responsiveweb__FlagsContainer-sc-1pihheg-1 c5 css-view-1dbjc4n"
+            className="c5 responsive__FlagsContainer-iv7rgu-1 c5 css-view-1dbjc4n"
           >
             <ArticleFlags />
           </div>
           <h2
-            className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1pihheg-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
+            className="c6 css-reset-4rbku5 responsive__StandfirstContainer-iv7rgu-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
           >
             Some Standfirst
           </h2>
           <div
-            className="c7 responsiveweb__MetaContainer-sc-1pihheg-6 c7 css-view-1dbjc4n"
+            className="c7 responsive__MetaContainer-iv7rgu-6 c7 css-view-1dbjc4n"
           >
             <div
-              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c8 responsive__Meta-iv7rgu-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
             >
               <ArticleBylineWithLinks />
             </div>
             <div
-              className="c9 responsiveweb__Separator-sc-1pihheg-7 c9 css-view-1dbjc4n"
+              className="c9 responsive__Separator-iv7rgu-7 c9 css-view-1dbjc4n"
             />
             <div
-              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c8 responsive__Meta-iv7rgu-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
             >
               <div
-                className="c10 responsiveweb__DatePublicationContainer-sc-1pihheg-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
+                className="c10 responsive__DatePublicationContainer-iv7rgu-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
               >
                 <DatePublication />
               </div>
@@ -2381,11 +2381,11 @@ exports[`full article with style in the style magazine 1`] = `
         </div>
       </div>
       <article
-        className="c16 responsiveweb__BodyContainer-sc-1exejum-3 c16 css-view-1dbjc4n"
+        className="c16 responsive__BodyContainer-sc-15gvuj2-3 c16 css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+            className="c17 responsive__PrimaryImg-sc-4v1r4q-5 c17 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -2414,10 +2414,10 @@ exports[`full article with style in the style magazine 1`] = `
           Some content
         </p>
         <div
-          className="c22 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c22 css-view-1dbjc4n"
+          className="c22 responsive__PullQuoteContainer-sc-4v1r4q-10 c22 css-view-1dbjc4n"
         >
           <div
-            className="c23 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c23 css-view-1dbjc4n"
+            className="c23 responsive__PullQuoteResp-sc-4v1r4q-9 c23 css-view-1dbjc4n"
           >
             <PullQuote>
               The pull quote content
@@ -2425,7 +2425,7 @@ exports[`full article with style in the style magazine 1`] = `
           </div>
         </div>
         <div
-          className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+          className="c17 responsive__PrimaryImg-sc-4v1r4q-5 c17 css-view-1dbjc4n"
         >
           <figure
             className="IS11"
@@ -2451,7 +2451,7 @@ exports[`full article with style in the style magazine 1`] = `
             </div>
             <figcaption>
               <div
-                className="c24 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c24 css-view-1dbjc4n"
+                className="c24 inset-caption__InsetCaptionStyle-la2hkf-0 c24 css-view-1dbjc4n"
               >
                 <Caption />
               </div>
@@ -2470,14 +2470,14 @@ exports[`full article with style in the style magazine 1`] = `
         </div>
         <div>
           <div
-            className="c27 responsiveweb__SecondaryImg-sc-16nqyj8-7 c27 css-view-1dbjc4n"
+            className="c27 responsive__SecondaryImg-sc-4v1r4q-7 c27 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c28 responsiveweb__InlineImg-sc-16nqyj8-8 c28 css-view-1dbjc4n"
+            className="c28 responsive__InlineImg-sc-4v1r4q-8 c28 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -3131,20 +3131,20 @@ exports[`full article with style in the sunday times magazine 1`] = `
       </script>
     </Helmet>
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="c3 responsiveweb__HeaderContainer-sc-1pihheg-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
+          className="c3 responsive__HeaderContainer-iv7rgu-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
         >
           <div
             className="css-view-1dbjc4n r-marginBottom-15d164r S2"
@@ -3156,36 +3156,36 @@ exports[`full article with style in the sunday times magazine 1`] = `
             </div>
           </div>
           <h1
-            className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1pihheg-3 c4 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
+            className="c4 css-reset-4rbku5 responsive__HeadlineContainer-iv7rgu-3 c4 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
           >
             Some Headline
           </h1>
           <div
-            className="c5 responsiveweb__FlagsContainer-sc-1pihheg-1 c5 css-view-1dbjc4n"
+            className="c5 responsive__FlagsContainer-iv7rgu-1 c5 css-view-1dbjc4n"
           >
             <ArticleFlags />
           </div>
           <h2
-            className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1pihheg-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
+            className="c6 css-reset-4rbku5 responsive__StandfirstContainer-iv7rgu-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
           >
             Some Standfirst
           </h2>
           <div
-            className="c7 responsiveweb__MetaContainer-sc-1pihheg-6 c7 css-view-1dbjc4n"
+            className="c7 responsive__MetaContainer-iv7rgu-6 c7 css-view-1dbjc4n"
           >
             <div
-              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c8 responsive__Meta-iv7rgu-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
             >
               <ArticleBylineWithLinks />
             </div>
             <div
-              className="c9 responsiveweb__Separator-sc-1pihheg-7 c9 css-view-1dbjc4n"
+              className="c9 responsive__Separator-iv7rgu-7 c9 css-view-1dbjc4n"
             />
             <div
-              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c8 responsive__Meta-iv7rgu-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
             >
               <div
-                className="c10 responsiveweb__DatePublicationContainer-sc-1pihheg-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
+                className="c10 responsive__DatePublicationContainer-iv7rgu-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
               >
                 <DatePublication />
               </div>
@@ -3213,11 +3213,11 @@ exports[`full article with style in the sunday times magazine 1`] = `
         </div>
       </div>
       <article
-        className="c16 responsiveweb__BodyContainer-sc-1exejum-3 c16 css-view-1dbjc4n"
+        className="c16 responsive__BodyContainer-sc-15gvuj2-3 c16 css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+            className="c17 responsive__PrimaryImg-sc-4v1r4q-5 c17 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -3246,10 +3246,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
           Some content
         </p>
         <div
-          className="c22 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c22 css-view-1dbjc4n"
+          className="c22 responsive__PullQuoteContainer-sc-4v1r4q-10 c22 css-view-1dbjc4n"
         >
           <div
-            className="c23 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c23 css-view-1dbjc4n"
+            className="c23 responsive__PullQuoteResp-sc-4v1r4q-9 c23 css-view-1dbjc4n"
           >
             <PullQuote>
               The pull quote content
@@ -3257,7 +3257,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </div>
         </div>
         <div
-          className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+          className="c17 responsive__PrimaryImg-sc-4v1r4q-5 c17 css-view-1dbjc4n"
         >
           <figure
             className="IS11"
@@ -3283,7 +3283,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             </div>
             <figcaption>
               <div
-                className="c24 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c24 css-view-1dbjc4n"
+                className="c24 inset-caption__InsetCaptionStyle-la2hkf-0 c24 css-view-1dbjc4n"
               >
                 <Caption />
               </div>
@@ -3302,14 +3302,14 @@ exports[`full article with style in the sunday times magazine 1`] = `
         </div>
         <div>
           <div
-            className="c27 responsiveweb__SecondaryImg-sc-16nqyj8-7 c27 css-view-1dbjc4n"
+            className="c27 responsive__SecondaryImg-sc-4v1r4q-7 c27 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c28 responsiveweb__InlineImg-sc-16nqyj8-8 c28 css-view-1dbjc4n"
+            className="c28 responsive__InlineImg-sc-4v1r4q-8 c28 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>

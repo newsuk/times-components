@@ -8,7 +8,7 @@ import {
 } from "@times-components/jest-serializer";
 import { hash } from "@times-components/test-utils";
 import { omitWeb as omitProps } from "./utils";
-import shared from "./shared-error.base.web";
+import shared from "./shared-error.base";
 
 export default () => {
   addSerializers(

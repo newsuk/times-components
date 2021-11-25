@@ -27,7 +27,7 @@ import {
   HeaderContainer,
   MainContainer
 } from "./styles/responsive";
-import styles from "./styles/article-body/index.web";
+import styles from "./styles/article-body/index";
 import Head from "./head";
 import PaywallPortal from "./paywall-portal";
 import StickySaveAndShareBar from "./sticky-save-and-share-bar";

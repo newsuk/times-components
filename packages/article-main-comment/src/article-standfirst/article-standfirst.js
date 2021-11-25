@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "../styles";
-import { StandfirstContainer } from "../styles/responsive.web";
+import { StandfirstContainer } from "../styles/responsive";
 
 const HeaderStandfirst = ({ standfirst }) => {
   if (!standfirst) return null;

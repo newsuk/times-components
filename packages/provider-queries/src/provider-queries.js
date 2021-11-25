@@ -1,4 +1,4 @@
-export article from "./article.web";
+export article from "./article";
 export articleBookmarked from "./article-bookmarked";
 export articleExtras from "./article-extras";
 export author from "./author";

@@ -11,7 +11,7 @@ import {
   rnwTransform
 } from "@times-components/jest-serializer";
 
-import "../mocks.web";
+import "../mocks";
 
 import StickySaveAndShareBar from "../../src/sticky-save-and-share-bar";
 

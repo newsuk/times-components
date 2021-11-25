@@ -9,7 +9,7 @@ import { PreviousPageIcon, NextPageIcon } from "./pagination-icons";
 import Results from "./results";
 import PaginationBorder from "./pagination-border";
 import PaginationContainer from "./pagination-container";
-import LinkContainer from "./styles/responsive.web";
+import LinkContainer from "./styles/responsive";
 
 const { colours, fontFactory } = styleguide();
 const styles = StyleSheet.create({

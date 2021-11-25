@@ -11,7 +11,7 @@ import {
 import { scales } from "@times-components/styleguide";
 
 import Context from "@times-components/context";
-import { UserState } from "../mocks.web";
+import { UserState } from "../mocks";
 
 import { adConfig } from "../ad-mock";
 import articleFixture, { testFixture } from "../../fixtures/full-article";

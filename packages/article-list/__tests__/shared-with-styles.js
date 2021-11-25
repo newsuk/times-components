@@ -10,7 +10,7 @@ import {
   stylePrinter
 } from "@times-components/jest-serializer";
 import "./mocks";
-import shared from "./shared.base.web";
+import shared from "./shared.base";
 
 const keepProps = new Set(["class", "className", "style"]);
 

@@ -1,3 +1,3 @@
-import shared from "../shared-accessible.web";
+import shared from "../shared-accessible";
 
 shared();

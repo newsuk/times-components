@@ -1,3 +1,3 @@
-import shared from "../shared-with-style.web";
+import shared from "../shared-with-style";
 
 shared();

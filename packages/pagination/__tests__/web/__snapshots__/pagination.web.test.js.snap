@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. renders results, previous and next 1`] = `
-<pagination-containerweb__ContainerWithResults>
+<pagination-container__ContainerWithResults>
   <div>
-    <resultsweb__MessageContainer>
+    <results__MessageContainer>
       <div>
         <div>
           Showing 13 - 15 of 20 results
         </div>
       </div>
-    </resultsweb__MessageContainer>
-    <pagination-borderweb__BorderWithResults>
+    </results__MessageContainer>
+    <pagination-border__BorderWithResults>
       <div>
-        <responsiveweb__LinkContainer>
+        <responsive__LinkContainer>
           <div>
-            <linkweb__RespLink
+            <link__RespLink
               href="?mock-4"
               responsiveLinkStyles={null}
               target={null}
@@ -41,21 +41,21 @@ exports[`1. renders results, previous and next 1`] = `
                   <div>
                     <span>
                       Previous
-                      <page-labelweb__ResponsiveLabel>
+                      <page-label__ResponsiveLabel>
                         <span>
                            page
                         </span>
-                      </page-labelweb__ResponsiveLabel>
+                      </page-label__ResponsiveLabel>
                     </span>
                   </div>
                 </div>
               </a>
-            </linkweb__RespLink>
+            </link__RespLink>
           </div>
-        </responsiveweb__LinkContainer>
-        <responsiveweb__LinkContainer>
+        </responsive__LinkContainer>
+        <responsive__LinkContainer>
           <div>
-            <linkweb__RespLink
+            <link__RespLink
               href="?mock-6"
               responsiveLinkStyles={null}
               target={null}
@@ -69,11 +69,11 @@ exports[`1. renders results, previous and next 1`] = `
                   <div>
                     <span>
                       Next
-                      <page-labelweb__ResponsiveLabel>
+                      <page-label__ResponsiveLabel>
                         <span>
                            page
                         </span>
-                      </page-labelweb__ResponsiveLabel>
+                      </page-label__ResponsiveLabel>
                     </span>
                   </div>
                   <svg
@@ -92,23 +92,23 @@ exports[`1. renders results, previous and next 1`] = `
                   </svg>
                 </div>
               </a>
-            </linkweb__RespLink>
+            </link__RespLink>
           </div>
-        </responsiveweb__LinkContainer>
+        </responsive__LinkContainer>
       </div>
-    </pagination-borderweb__BorderWithResults>
+    </pagination-border__BorderWithResults>
   </div>
-</pagination-containerweb__ContainerWithResults>
+</pagination-container__ContainerWithResults>
 `;
 
 exports[`2. renders with no results 1`] = `
-<pagination-containerweb__ContainerWithoutResults>
+<pagination-container__ContainerWithoutResults>
   <div>
-    <pagination-borderweb__BorderWithoutResults>
+    <pagination-border__BorderWithoutResults>
       <div>
-        <responsiveweb__LinkContainer>
+        <responsive__LinkContainer>
           <div>
-            <linkweb__RespLink
+            <link__RespLink
               href="?mock-4"
               responsiveLinkStyles={null}
               target={null}
@@ -135,21 +135,21 @@ exports[`2. renders with no results 1`] = `
                   <div>
                     <span>
                       Previous
-                      <page-labelweb__ResponsiveLabel>
+                      <page-label__ResponsiveLabel>
                         <span>
                            page
                         </span>
-                      </page-labelweb__ResponsiveLabel>
+                      </page-label__ResponsiveLabel>
                     </span>
                   </div>
                 </div>
               </a>
-            </linkweb__RespLink>
+            </link__RespLink>
           </div>
-        </responsiveweb__LinkContainer>
-        <responsiveweb__LinkContainer>
+        </responsive__LinkContainer>
+        <responsive__LinkContainer>
           <div>
-            <linkweb__RespLink
+            <link__RespLink
               href="?mock-6"
               responsiveLinkStyles={null}
               target={null}
@@ -163,11 +163,11 @@ exports[`2. renders with no results 1`] = `
                   <div>
                     <span>
                       Next
-                      <page-labelweb__ResponsiveLabel>
+                      <page-label__ResponsiveLabel>
                         <span>
                            page
                         </span>
-                      </page-labelweb__ResponsiveLabel>
+                      </page-label__ResponsiveLabel>
                     </span>
                   </div>
                   <svg
@@ -186,54 +186,54 @@ exports[`2. renders with no results 1`] = `
                   </svg>
                 </div>
               </a>
-            </linkweb__RespLink>
+            </link__RespLink>
           </div>
-        </responsiveweb__LinkContainer>
+        </responsive__LinkContainer>
       </div>
-    </pagination-borderweb__BorderWithoutResults>
+    </pagination-border__BorderWithoutResults>
   </div>
-</pagination-containerweb__ContainerWithoutResults>
+</pagination-container__ContainerWithoutResults>
 `;
 
 exports[`3. does not give a count smaller than a single page 1`] = `
-<pagination-containerweb__ContainerWithResults>
+<pagination-container__ContainerWithResults>
   <div>
-    <resultsweb__MessageContainer>
+    <results__MessageContainer>
       <div>
         <div>
           Showing 1 - 20 of 20 results
         </div>
       </div>
-    </resultsweb__MessageContainer>
-    <pagination-borderweb__BorderWithResults>
+    </results__MessageContainer>
+    <pagination-border__BorderWithResults>
       <div>
-        <responsiveweb__LinkContainer>
+        <responsive__LinkContainer>
           <div />
-        </responsiveweb__LinkContainer>
-        <responsiveweb__LinkContainer>
+        </responsive__LinkContainer>
+        <responsive__LinkContainer>
           <div />
-        </responsiveweb__LinkContainer>
+        </responsive__LinkContainer>
       </div>
-    </pagination-borderweb__BorderWithResults>
+    </pagination-border__BorderWithResults>
   </div>
-</pagination-containerweb__ContainerWithResults>
+</pagination-container__ContainerWithResults>
 `;
 
 exports[`4. limits the starting result to the total count 1`] = `
-<pagination-containerweb__ContainerWithResults>
+<pagination-container__ContainerWithResults>
   <div>
-    <resultsweb__MessageContainer>
+    <results__MessageContainer>
       <div>
         <div>
           Showing 20 - 20 of 20 results
         </div>
       </div>
-    </resultsweb__MessageContainer>
-    <pagination-borderweb__BorderWithResults>
+    </results__MessageContainer>
+    <pagination-border__BorderWithResults>
       <div>
-        <responsiveweb__LinkContainer>
+        <responsive__LinkContainer>
           <div>
-            <linkweb__RespLink
+            <link__RespLink
               href="?mock-3"
               responsiveLinkStyles={null}
               target={null}
@@ -260,35 +260,35 @@ exports[`4. limits the starting result to the total count 1`] = `
                   <div>
                     <span>
                       Previous
-                      <page-labelweb__ResponsiveLabel>
+                      <page-label__ResponsiveLabel>
                         <span>
                            page
                         </span>
-                      </page-labelweb__ResponsiveLabel>
+                      </page-label__ResponsiveLabel>
                     </span>
                   </div>
                 </div>
               </a>
-            </linkweb__RespLink>
+            </link__RespLink>
           </div>
-        </responsiveweb__LinkContainer>
-        <responsiveweb__LinkContainer>
+        </responsive__LinkContainer>
+        <responsive__LinkContainer>
           <div />
-        </responsiveweb__LinkContainer>
+        </responsive__LinkContainer>
       </div>
-    </pagination-borderweb__BorderWithResults>
+    </pagination-border__BorderWithResults>
   </div>
-</pagination-containerweb__ContainerWithResults>
+</pagination-container__ContainerWithResults>
 `;
 
 exports[`5. renders previous and not next 1`] = `
-<pagination-containerweb__ContainerWithoutResults>
+<pagination-container__ContainerWithoutResults>
   <div>
-    <pagination-borderweb__BorderWithoutResults>
+    <pagination-border__BorderWithoutResults>
       <div>
-        <responsiveweb__LinkContainer>
+        <responsive__LinkContainer>
           <div>
-            <linkweb__RespLink
+            <link__RespLink
               href="?mock-4"
               responsiveLinkStyles={null}
               target={null}
@@ -315,38 +315,38 @@ exports[`5. renders previous and not next 1`] = `
                   <div>
                     <span>
                       Previous
-                      <page-labelweb__ResponsiveLabel>
+                      <page-label__ResponsiveLabel>
                         <span>
                            page
                         </span>
-                      </page-labelweb__ResponsiveLabel>
+                      </page-label__ResponsiveLabel>
                     </span>
                   </div>
                 </div>
               </a>
-            </linkweb__RespLink>
+            </link__RespLink>
           </div>
-        </responsiveweb__LinkContainer>
-        <responsiveweb__LinkContainer>
+        </responsive__LinkContainer>
+        <responsive__LinkContainer>
           <div />
-        </responsiveweb__LinkContainer>
+        </responsive__LinkContainer>
       </div>
-    </pagination-borderweb__BorderWithoutResults>
+    </pagination-border__BorderWithoutResults>
   </div>
-</pagination-containerweb__ContainerWithoutResults>
+</pagination-container__ContainerWithoutResults>
 `;
 
 exports[`6. renders next and not previous 1`] = `
-<pagination-containerweb__ContainerWithoutResults>
+<pagination-container__ContainerWithoutResults>
   <div>
-    <pagination-borderweb__BorderWithoutResults>
+    <pagination-border__BorderWithoutResults>
       <div>
-        <responsiveweb__LinkContainer>
+        <responsive__LinkContainer>
           <div />
-        </responsiveweb__LinkContainer>
-        <responsiveweb__LinkContainer>
+        </responsive__LinkContainer>
+        <responsive__LinkContainer>
           <div>
-            <linkweb__RespLink
+            <link__RespLink
               href="?mock-2"
               responsiveLinkStyles={null}
               target={null}
@@ -360,11 +360,11 @@ exports[`6. renders next and not previous 1`] = `
                   <div>
                     <span>
                       Next
-                      <page-labelweb__ResponsiveLabel>
+                      <page-label__ResponsiveLabel>
                         <span>
                            page
                         </span>
-                      </page-labelweb__ResponsiveLabel>
+                      </page-label__ResponsiveLabel>
                     </span>
                   </div>
                   <svg
@@ -383,11 +383,11 @@ exports[`6. renders next and not previous 1`] = `
                   </svg>
                 </div>
               </a>
-            </linkweb__RespLink>
+            </link__RespLink>
           </div>
-        </responsiveweb__LinkContainer>
+        </responsive__LinkContainer>
       </div>
-    </pagination-borderweb__BorderWithoutResults>
+    </pagination-border__BorderWithoutResults>
   </div>
-</pagination-containerweb__ContainerWithoutResults>
+</pagination-container__ContainerWithoutResults>
 `;

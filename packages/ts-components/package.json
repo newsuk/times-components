@@ -27,7 +27,6 @@
     "fix:prettier": "prettier \"src/**/*.{ts,tsx}\" \"__tests__/**/*.tsx\" --write",
     "fix:tslint": "tslint --fix --project .",
     "lint": "tslint --project . && prettier \"src/**/*.{ts,tsx}\" --list-different",
-    "test": "jest",
     "test:lint": "tslint --project . && prettier \"src/**/*.{ts,tsx}\" --list-different",
     "test:unit": "jest --coverage",
     "watch:tests": "run-s clean build:module && run-p \"build:module -- -w\" \"test:unit -- --watch\"",

@@ -7,11 +7,7 @@ import {
   getSupportContainer,
   SupportsContainer
 } from "./responsive";
-import {
-  getLeadConfig,
-  getSupportConfig,
-  getConfigWrapper
-} from "./config.web";
+import { getLeadConfig, getSupportConfig, getConfigWrapper } from "./config";
 
 const supportConfig = getSupportConfig();
 const Separator = getSeparator({ hasLeftRightMargin: false });

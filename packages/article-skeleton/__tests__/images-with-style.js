@@ -9,7 +9,7 @@ import {
   rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
-import "./mocks.web";
+import "./mocks";
 import shared from "./images.base";
 
 const styles = [

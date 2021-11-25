@@ -64,7 +64,6 @@ describe("Jest Configurator Tests", () => {
         "ts",
         "tsx",
         "graphql",
-        "web.js",
         "js",
         "json"
       ]);

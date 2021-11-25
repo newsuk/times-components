@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { DropCap } from "./styles/responsive.web";
+import { DropCap } from "./styles/responsive";
 import { propTypes, defaultProps } from "./drop-cap-prop-types";
 
 function DropCapView({ colour, children, font }) {

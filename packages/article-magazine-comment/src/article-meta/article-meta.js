@@ -11,7 +11,7 @@ import {
   Meta,
   MetaContainer,
   Separator
-} from "../styles/responsive.web";
+} from "../styles/responsive";
 import styles from "../styles";
 
 const ArticleMeta = ({ bylines, publicationName, publishedTime }) => (

@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import styles from "../styles";
-import { StandfirstContainer } from "../styles/responsive.web";
+import { StandfirstContainer } from "../styles/responsive";
 
 const HeaderStandfirst = ({ standfirst, color }) => {
   if (!standfirst) return null;

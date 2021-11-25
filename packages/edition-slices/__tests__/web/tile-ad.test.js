@@ -1,3 +1,3 @@
-import shared from "../tile-ad/shared-tile-ad.web";
+import shared from "../tile-ad/shared-tile-ad";
 
 shared();

@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import { AspectRatioContainer } from "@times-components/utils";
 import Video from "@times-components/video";
-import LeadAssetImage from "./article-lead-asset-image.web";
+import LeadAssetImage from "./article-lead-asset-image";
 import { defaultProps, propTypes } from "./article-lead-asset-prop-types";
 
 const ArticleLeadAsset = ({
