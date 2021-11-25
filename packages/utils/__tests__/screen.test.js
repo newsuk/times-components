@@ -5,7 +5,7 @@ import {
   normaliseWidthForAssetRequestCache,
   screenWidth,
   screenWidthInPixels
-} from "../src";
+} from "../src/index.web";
 
 describe("screen utilities", () => {
   context("normaliseWidthForAssetRequestCache", () => {

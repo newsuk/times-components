@@ -2,8 +2,8 @@
   "name": "@times-components/article-image",
   "version": "7.5.39",
   "description": "Article Image",
-  "main": "dist/article-image",
-  "dev": "src/article-image",
+  "main": "dist/article-image.web",
+  "dev": "src/article-image.web",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -57,7 +57,6 @@
     "react-dom": "16.9.0",
     "react-native": "0.61.5",
     "react-native-web": "0.11.4",
-    "react-test-renderer": "16.9.0",
     "stylelint": "9.4.0",
     "stylelint-config-recommended": "2.1.0",
     "stylelint-config-styled-components": "0.1.1",

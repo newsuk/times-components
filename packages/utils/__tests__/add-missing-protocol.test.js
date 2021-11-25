@@ -1,4 +1,4 @@
-import { addMissingProtocol } from "../src";
+import { addMissingProtocol } from "../src/index.web";
 
 describe("addMissingProtocol should", () => {
   it("add https to the url if it's missing the protocol", () => {

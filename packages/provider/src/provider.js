@@ -1,9 +1,9 @@
 export { QueryProvider } from "./connect";
 export AuthorProfileProvider from "./author-profile";
-export AuthorArticlesNoImagesProvider from "./author-articles-no-images";
+export AuthorArticlesNoImagesProvider from "./author-articles-no-images.web";
 export AuthorArticlesWithImagesProvider from "./author-articles-with-images";
 export ArticleBookmarked from "./article-bookmarked";
-export ArticleProvider from "./article";
+export ArticleProvider from "./article.web";
 export GetNewsletter from "./get-newsletter";
 export ArticleExtrasProvider from "./article-extras";
 export EditionProvider from "./edition";

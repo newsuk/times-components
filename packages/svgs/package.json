@@ -2,8 +2,8 @@
   "name": "@times-components/svgs",
   "version": "2.7.33",
   "description": "Svgs wrapper",
-  "main": "dist/index",
-  "dev": "src/index",
+  "main": "dist/index.web",
+  "dev": "src/index.web",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -68,7 +68,6 @@
   },
   "dependencies": {
     "prop-types": "15.7.2",
-    "react-native-svg": "9.11.1",
     "svgs": "3.2.1"
   },
   "resolutions": {

@@ -2,8 +2,8 @@
   "name": "@times-components/interactive-wrapper",
   "version": "0.8.17",
   "description": "Wrapper for legacy Interactive components",
-  "main": "dist/interactive-wrapper",
-  "dev": "src/interactive-wrapper",
+  "main": "dist/interactive-wrapper.web",
+  "dev": "src/interactive-wrapper.web",
   "scripts": {
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,identity-obj-proxy,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
@@ -45,21 +45,17 @@
     "babel-jest": "24.8.0",
     "enzyme": "3.9.0",
     "eslint": "5.9.0",
-    "fetch-mock": "8.3.1",
     "jest": "24.8.0",
     "prettier": "1.14.3",
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-native": "0.61.5",
-    "react-test-renderer": "16.9.0",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
     "@times-components/image": "6.8.6",
-    "@times-components/utils": "6.5.6",
-    "prop-types": "15.7.2",
-    "react-native-webview": "11.0.0"
+    "prop-types": "15.7.2"
   },
   "resolutions": {
     "react": "16.9.0",

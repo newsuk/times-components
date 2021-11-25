@@ -28,17 +28,6 @@ exports[`1. card loading state 1`] = `
 
 <style>
 .S1 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.S2 {
   -ms-flex-negative: 1;
   -ms-flex-positive: 1;
   -ms-flex-preferred-size: 0%;
@@ -53,24 +42,24 @@ exports[`1. card loading state 1`] = `
   min-width: 100%;
 }
 
-.S3 {
+.S2 {
   height: 24px;
   margin-bottom: 10px;
   max-width: 300px;
 }
 
-.S4 {
+.S3 {
   height: 10px;
   margin-bottom: 10px;
 }
 
-.S5 {
+.S4 {
   height: 10px;
   margin-bottom: 0px;
   max-width: 240px;
 }
 
-.S6 {
+.S5 {
   -ms-flex-negative: 1;
   -ms-flex-positive: 1;
   -ms-flex-preferred-size: 0%;
@@ -85,7 +74,7 @@ exports[`1. card loading state 1`] = `
   min-width: 100%;
 }
 
-.S7 {
+.S6 {
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   -webkit-box-align: start;
@@ -117,6 +106,24 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS3 {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(237,237,237,1.00);
+  bottom: 0px;
+  -webkit-justify-content: center;
+  justify-content: center;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 0;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+}
+
+.IS4 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -125,14 +132,8 @@ exports[`1. card loading state 1`] = `
   padding-bottom: 150%;
 }
 
-.IS4 {
-  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
-}
-
 .IS5 {
-  height: 24;
-  margin-bottom: 10px;
-  max-width: 300;
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS6 {
@@ -142,12 +143,13 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS7 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
 }
 
 .IS8 {
-  height: 10;
-  margin-bottom: 10px;
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS9 {
@@ -156,12 +158,12 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS10 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
 }
 
 .IS11 {
-  height: 10;
-  margin-bottom: 10px;
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS12 {
@@ -170,16 +172,21 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS13 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
 }
 
 .IS14 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+}
+
+.IS15 {
   height: 10;
   margin-bottom: 0;
   max-width: 240;
 }
 
-.IS15 {
+.IS16 {
   height: 10;
   margin-bottom: 0;
   max-width: 240;
@@ -227,10 +234,10 @@ exports[`1. card loading state 1`] = `
       className="c0 indexweb__FadeIn-v0crhg-0 c0 css-view-1dbjc4n"
     >
       <div
-        className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-17s6mgv S7"
+        className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-17s6mgv S6"
       >
         <div
-          className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minWidth-3e7lpq S2"
+          className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minWidth-3e7lpq S1"
         >
           <TimesImage
             aspectRatio={0.6666666666666666}
@@ -244,29 +251,29 @@ exports[`1. card loading state 1`] = `
           />
         </div>
         <div
-          className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minHeight-1lorjx1 r-minWidth-3e7lpq S6"
+          className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minHeight-1lorjx1 r-minWidth-3e7lpq S5"
         >
           <_default>
             <Gradient
-              className="IS6"
+              className="IS7"
               degrees={264}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS9"
+              className="IS10"
               degrees={267}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS12"
+              className="IS13"
               degrees={267}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS15"
+              className="IS16"
               degrees={267}
               endPoint="1"
               startPoint="0"
@@ -339,17 +346,6 @@ exports[`2. card with reversed loading state 1`] = `
 }
 
 .S5 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.S6 {
   -ms-flex-negative: 1;
   -ms-flex-positive: 1;
   -ms-flex-preferred-size: 0%;
@@ -364,7 +360,7 @@ exports[`2. card with reversed loading state 1`] = `
   min-width: 100%;
 }
 
-.S7 {
+.S6 {
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   -webkit-box-align: start;
@@ -457,6 +453,24 @@ exports[`2. card with reversed loading state 1`] = `
 }
 
 .IS15 {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(237,237,237,1.00);
+  bottom: 0px;
+  -webkit-justify-content: center;
+  justify-content: center;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 0;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+}
+
+.IS16 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -507,7 +521,7 @@ exports[`2. card with reversed loading state 1`] = `
       className="c0 indexweb__FadeIn-v0crhg-0 c0 css-view-1dbjc4n"
     >
       <div
-        className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-height-16l9doz r-justifyContent-17s6mgv S7"
+        className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-height-16l9doz r-justifyContent-17s6mgv S6"
       >
         <div
           className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minHeight-1lorjx1 r-minWidth-3e7lpq S4"
@@ -540,7 +554,7 @@ exports[`2. card with reversed loading state 1`] = `
           </_default>
         </div>
         <div
-          className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minWidth-3e7lpq S6"
+          className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minWidth-3e7lpq S5"
         >
           <TimesImage
             aspectRatio={0.6666666666666666}

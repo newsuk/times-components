@@ -2,8 +2,8 @@
   "name": "@times-components/article-list",
   "version": "9.7.48",
   "description": "Paginated list of articles",
-  "main": "dist/article-list",
-  "dev": "src/article-list",
+  "main": "dist/article-list.web",
+  "dev": "src/article-list.web",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
@@ -79,11 +79,9 @@
     "@times-components/lazy-load": "0.6.25",
     "@times-components/link": "3.6.44",
     "@times-components/pagination": "3.4.52",
-    "@times-components/responsive": "0.7.0",
     "@times-components/styleguide": "3.38.22",
     "@times-components/tracking": "2.9.0",
     "@times-components/utils": "6.5.6",
-    "@times-components/watermark": "2.7.54",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"

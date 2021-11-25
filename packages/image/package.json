@@ -60,18 +60,13 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/gradient": "3.2.60",
     "@times-components/link": "3.6.44",
-    "@times-components/responsive": "0.7.0",
-    "@times-components/responsive-image": "0.7.5",
     "@times-components/styleguide": "3.38.22",
     "@times-components/svgs": "2.7.33",
     "@times-components/utils": "6.5.6",
     "hoist-non-react-statics": "3.3.2",
     "prop-types": "15.7.2",
-    "react-native-image-zoom-viewer": "2.2.26",
-    "styled-components": "4.3.2",
-    "url-parse": "1.4.7"
+    "styled-components": "4.3.2"
   },
   "resolutions": {
     "react": "16.9.0",

@@ -12,24 +12,30 @@ exports[`1. default image 1`] = `
 }
 
 <style>
-.S1 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  background-color: rgba(237,237,237,1.00);
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
 .IS1 {
   max-width: 25%;
   max-height: 50%;
 }
 
 .IS2 {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(237,237,237,1.00);
+  bottom: 0px;
+  -webkit-justify-content: center;
+  justify-content: center;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 0;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+}
+
+.IS3 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -43,13 +49,13 @@ exports[`1. default image 1`] = `
   className="css-view-1dbjc4n"
 >
   <div
-    className="IS2"
+    className="IS3"
   >
     <img
       className="c0"
     />
     <div
-      className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-15282we r-justifyContent-1777fci S1"
+      className="css-view-1dbjc4n IS2"
     >
       <Svg
         className="IS1"
@@ -75,24 +81,30 @@ exports[`2. default modal 1`] = `
 }
 
 <style>
-.S1 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  background-color: rgba(237,237,237,1.00);
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
 .IS1 {
   max-width: 25%;
   max-height: 50%;
 }
 
 .IS2 {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(237,237,237,1.00);
+  bottom: 0px;
+  -webkit-justify-content: center;
+  justify-content: center;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 0;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+}
+
+.IS3 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -106,13 +118,13 @@ exports[`2. default modal 1`] = `
   className="css-view-1dbjc4n"
 >
   <div
-    className="IS2"
+    className="IS3"
   >
     <img
       className="c0"
     />
     <div
-      className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-15282we r-justifyContent-1777fci S1"
+      className="css-view-1dbjc4n IS2"
     >
       <Svg
         className="IS1"

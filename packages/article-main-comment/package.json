@@ -2,8 +2,8 @@
   "name": "@times-components/article-main-comment",
   "version": "2.36.0",
   "description": "Main Comment Article Template",
-  "main": "dist/article-main-comment",
-  "dev": "src/article-main-comment",
+  "main": "dist/article-main-comment.web",
+  "dev": "src/article-main-comment.web",
   "scripts": {
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
@@ -38,7 +38,6 @@
     "@times-components/eslint-config-thetimes": "0.8.17",
     "@times-components/jest-configurator": "2.7.2",
     "@times-components/jest-serializer": "3.2.26",
-    "@times-components/mocks": "0.1.24",
     "@times-components/provider": "1.27.0",
     "@times-components/provider-test-tools": "1.20.0",
     "@times-components/storybook": "4.1.66",
@@ -60,7 +59,6 @@
   "dependencies": {
     "@times-components/ad": "2.16.0",
     "@times-components/article-byline": "3.5.38",
-    "@times-components/article-error": "0.2.184",
     "@times-components/article-flag": "2.11.2",
     "@times-components/article-label": "2.7.59",
     "@times-components/article-skeleton": "1.63.0",

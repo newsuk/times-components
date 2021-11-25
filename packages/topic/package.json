@@ -2,8 +2,8 @@
   "name": "@times-components/topic",
   "version": "5.4.9",
   "description": "Topic page component",
-  "main": "dist/topic",
-  "dev": "src/topic",
+  "main": "dist/topic.web",
+  "dev": "src/topic.web",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

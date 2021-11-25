@@ -2,8 +2,8 @@
   "name": "@times-components/responsive",
   "version": "0.7.0",
   "description": "Responsive",
-  "main": "dist/responsive",
-  "dev": "src/responsive",
+  "main": "dist/responsive.web",
+  "dev": "src/responsive.web",
   "scripts": {
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
@@ -40,7 +40,6 @@
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.17",
     "@times-components/jest-configurator": "2.7.2",
-    "@times-components/mocks": "0.1.24",
     "@times-components/webpack-configurator": "2.0.28",
     "babel-jest": "24.8.0",
     "eslint": "5.9.0",
