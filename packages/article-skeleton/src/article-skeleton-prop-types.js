@@ -13,14 +13,16 @@ const articleSkeletonPropTypes = {
       readOnly: PropTypes.string.isRequired
     }),
     switchOver: PropTypes.string.isRequired
-  }).isRequired
+  }).isRequired,
+  swgProductId: PropTypes.string
 };
 
 const articleSkeletonDefaultProps = {
   adConfig: {},
   data: { content: [] },
   Header: () => null,
-  receiveChildList: () => {}
+  receiveChildList: () => {},
+  swgProductId: null
 };
 
 export { articleSkeletonPropTypes, articleSkeletonDefaultProps };

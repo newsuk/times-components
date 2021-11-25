@@ -11,7 +11,9 @@ exports[`1. a primary image 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -130,7 +132,9 @@ exports[`2. a fullwidth image 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -249,7 +253,9 @@ exports[`3. a secondary image 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -368,7 +374,9 @@ exports[`4. an inline image 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"

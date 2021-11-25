@@ -124,7 +124,8 @@ function Head({
   article,
   logoUrl,
   paidContentClassName,
-  getFallbackThumbnailUrl169
+  getFallbackThumbnailUrl169,
+  swgProductId
 }) {
   const {
     descriptionMarkup,
@@ -171,6 +172,7 @@ function Head({
   const authorSchema =
     (authors && authors.length ? authors : textByLineAuthorSchema) ||
     defaultAuthorSchema;
+
   const jsonLD = {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
@@ -204,6 +206,13 @@ function Head({
     author: authorSchema
   };
 
+  if (swgProductId) {
+    jsonLD.isPartOf = {
+      "@type": ["CreativeWork", "Product"],
+      name: "The Times & The Sunday Times",
+      productID: swgProductId
+    };
+  }
   const videoJsonLD = hasVideo
     ? {
         "@context": "https://schema.org/",
@@ -278,7 +287,12 @@ Head.propTypes = {
   }).isRequired,
   logoUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string.isRequired,
-  getFallbackThumbnailUrl169: PropTypes.func.isRequired
+  getFallbackThumbnailUrl169: PropTypes.func.isRequired,
+  swgProductId: PropTypes.string
+};
+
+Head.defaultProps = {
+  swgProductId: null
 };
 
 export default Head;

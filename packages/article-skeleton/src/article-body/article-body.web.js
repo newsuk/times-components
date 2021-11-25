@@ -496,6 +496,7 @@ const ArticleBody = ({
   paidContentClassName,
   template,
   isPreview,
+  swgProductId,
   inArticlePuffFlag,
   olympicsKeys
 }) =>
@@ -505,6 +506,7 @@ const ArticleBody = ({
       paidContentClassName,
       template,
       isPreview,
+      swgProductId,
       inArticlePuffFlag,
       olympicsKeys
     })

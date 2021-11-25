@@ -51,6 +51,7 @@ const ArticleSkeleton = ({
   commentingConfig,
   paidContentClassName,
   isPreview,
+  swgProductId,
   additionalRelatedArticlesFlag,
   inlineRelatedArticlesFlag,
   inlineRelatedArticleOptions,
@@ -155,6 +156,7 @@ const ArticleSkeleton = ({
             logoUrl={logoUrl}
             paidContentClassName={paidContentClassName}
             getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
+            swgProductId={swgProductId}
           />
           <AlgoliaSearchProvider
             algoliaSearchKeys={algoliaSearchKeys}
