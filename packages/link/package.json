@@ -2,8 +2,8 @@
   "name": "@times-components/link",
   "version": "3.6.45",
   "description": "component to handle links and navigation",
-  "main": "dist/link.web",
-  "dev": "src/link.web",
+  "main": "dist/link",
+  "dev": "src/link",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

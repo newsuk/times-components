@@ -1,9 +1,10 @@
-import "../mocks.web";
+import "../mocks";
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import TestRenderer from "react-test-renderer";
 import mockDate from "mockdate";
 import Link from "@times-components/link";
+import MockedProvider from "../../../provider-test-tools/src/mocked-provider";
 
 import ArticleSkeleton from "../../src/article-skeleton";
 import articleFixture from "../../fixtures/full-article";
@@ -52,19 +53,21 @@ it("analytics when rendering a shared Article page with metered access", () => {
   const stream = jest.fn();
 
   TestRenderer.create(
-    <ArticleSkeleton
-      {...articleSkeletonProps}
-      analyticsStream={stream}
-      data={articleFixture()}
-      Header={() => null}
-      onAuthorPress={() => {}}
-      onCommentGuidelinesPress={() => {}}
-      onCommentsPress={() => {}}
-      onLinkPress={() => {}}
-      onRelatedArticlePress={() => {}}
-      onTwitterLinkPress={() => {}}
-      onVideoPress={() => {}}
-    />
+    <MockedProvider>
+      <ArticleSkeleton
+        {...articleSkeletonProps}
+        analyticsStream={stream}
+        data={articleFixture()}
+        Header={() => null}
+        onAuthorPress={() => {}}
+        onCommentGuidelinesPress={() => {}}
+        onCommentsPress={() => {}}
+        onLinkPress={() => {}}
+        onRelatedArticlePress={() => {}}
+        onTwitterLinkPress={() => {}}
+        onVideoPress={() => {}}
+      />
+    </MockedProvider>
   );
   expect(stream.mock.calls).toMatchSnapshot();
 });

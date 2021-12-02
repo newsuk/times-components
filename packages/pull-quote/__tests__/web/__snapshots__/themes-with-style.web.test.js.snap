@@ -73,7 +73,7 @@ exports[`1. pull quote in culture magazine 1`] = `
       “
     </div>
     <div
-      className="c0 responsiveweb__PullQuoteContent-sc-16yokeu-0 c0 css-text-901oao"
+      className="c0 responsive__PullQuoteContent-sc-25h5bn-0 c0 css-text-901oao"
     >
       <cite>
         Some content
@@ -170,7 +170,7 @@ exports[`2. pull quote in style magazine 1`] = `
       “
     </div>
     <div
-      className="c0 responsiveweb__PullQuoteContent-sc-16yokeu-0 c0 css-text-901oao"
+      className="c0 responsive__PullQuoteContent-sc-25h5bn-0 c0 css-text-901oao"
     >
       <cite>
         Some content
@@ -267,7 +267,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
       “
     </div>
     <div
-      className="c0 responsiveweb__PullQuoteContent-sc-16yokeu-0 c0 css-text-901oao"
+      className="c0 responsive__PullQuoteContent-sc-25h5bn-0 c0 css-text-901oao"
     >
       <cite>
         Some content

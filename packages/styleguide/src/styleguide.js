@@ -1,7 +1,7 @@
 import sectionColours, { secondarySectionColours } from "./colours/section";
 import functionalColours from "./colours/functional";
 
-import FadeIn from "./animations/index.web.js";
+import FadeIn from "./animations/index";
 
 import breakpoints, {
   editionBreakpoints,
@@ -9,15 +9,15 @@ import breakpoints, {
   getEditionBreakpoint,
   editionBreakpointWidths,
   sliceContentMaxWidth
-} from "./breakpoints/index.web";
+} from "./breakpoints/index";
 import timesLineHeightsFactory from "./line-heights";
 import timesFonts from "./fonts/fonts";
-import timesFontSizes from "./fonts/font-sizes.web";
+import timesFontSizes from "./fonts/font-sizes";
 import timesFontFactory from "./fonts/font-factory";
 import themeFactory from "./theme/theme-factory";
 
 import scales from "./scales";
-import spacing, { globalSpacingStyles } from "./spacing/index.web";
+import spacing, { globalSpacingStyles } from "./spacing/index";
 
 const colours = {
   functional: functionalColours,

@@ -2,8 +2,8 @@
   "name": "@times-components/article-in-depth",
   "version": "3.36.1",
   "description": "In Depth Article Template",
-  "main": "dist/article-in-depth.web",
-  "dev": "src/article-in-depth.web",
+  "main": "dist/article-in-depth",
+  "dev": "src/article-in-depth",
   "scripts": {
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",

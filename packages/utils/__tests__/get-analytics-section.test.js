@@ -1,4 +1,4 @@
-import { getSectionNameForAnalytics } from "../src/index.web";
+import { getSectionNameForAnalytics } from "../src/index";
 
 describe("getSectionNameForAnalytics", () => {
   it("should return null when no tiles present", () => {

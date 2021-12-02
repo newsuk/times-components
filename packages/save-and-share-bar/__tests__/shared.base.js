@@ -7,6 +7,7 @@ import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 import EmailShare from "../src/email-share";
+import MockedProvider from "../../provider-test-tools/src/mocked-provider";
 
 const mockEvent = {
   preventDefault: () => {}
@@ -48,18 +49,30 @@ export default () => {
 
     it("save and share bar renders correctly when logged in", () => {
       UserState.mockStates = [UserState.subscriber, UserState.loggedIn];
-      const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
+      const testInstance = TestRenderer.create(
+        <MockedProvider>
+          <SaveAndShareBar {...props} />
+        </MockedProvider>
+      );
       expect(testInstance.toJSON()).toMatchSnapshot();
     });
 
     it("save and share bar renders correctly when not logged in", () => {
       UserState.mockStates = [];
-      const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
+      const testInstance = TestRenderer.create(
+        <MockedProvider>
+          <SaveAndShareBar {...props} />
+        </MockedProvider>
+      );
       expect(testInstance.toJSON()).toMatchSnapshot();
     });
 
     it("onPress events triggers correctly", () => {
-      const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
+      const testInstance = TestRenderer.create(
+        <MockedProvider>
+          <SaveAndShareBar {...props} />
+        </MockedProvider>
+      );
       testInstance.root.findAllByType(BarItem)[3].props.onPress(mockEvent);
       expect(Clipboard.setString).toHaveBeenCalledWith(articleUrl);
       expect(onCopyLink).toHaveBeenCalled();

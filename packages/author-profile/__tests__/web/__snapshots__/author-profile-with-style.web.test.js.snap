@@ -121,23 +121,23 @@ exports[`1. an article list header 1`] = `
 </style>
 
 <div
-  className="c0 responsiveweb__AuthorHeadWrapper-rnqjol-0 c0 css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-paddingBottom-1uwte3a r-width-13qz1uu S6"
+  className="c0 responsive__AuthorHeadWrapper-sc-1vsivj7-0 c0 css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-paddingBottom-1uwte3a r-width-13qz1uu S6"
 >
   <div
-    className="c1 indexweb__FadeIn-v0crhg-0 c1 css-view-1dbjc4n r-width-13qz1uu S6"
+    className="c1 animations__FadeIn-sc-2iiu4y-0 c1 css-view-1dbjc4n r-width-13qz1uu S6"
   >
     <div
       className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-1niwhzg r-pointerEvents-12vffkv r-width-13qz1uu S5"
     >
       <div
-        className="c2 responsiveweb__ImageContainer-rnqjol-3 c2 css-view-1dbjc4n"
+        className="c2 responsive__ImageContainer-sc-1vsivj7-3 c2 css-view-1dbjc4n"
       >
         <Image
           className="IS1"
         />
       </div>
       <h1
-        className="c3 css-reset-4rbku5 responsiveweb__AuthorNameWrapper-rnqjol-1 c3 css-text-901oao"
+        className="c3 css-reset-4rbku5 responsive__AuthorNameWrapper-sc-1vsivj7-1 c3 css-text-901oao"
       >
         Name
       </h1>
@@ -162,7 +162,7 @@ exports[`1. an article list header 1`] = `
         </TextLink>
       </div>
       <div
-        className="c4 responsiveweb__BioContainer-rnqjol-2 c4 css-view-1dbjc4n"
+        className="c4 responsive__BioContainer-sc-1vsivj7-2 c4 css-view-1dbjc4n"
       >
         <div
           className="css-text-901oao r-color-1khnkhu r-fontFamily-1feecvn r-fontSize-ubezar r-lineHeight-1kt6imw r-textAlign-q4m81j S4"
@@ -207,7 +207,7 @@ exports[`2. an article list header loading 1`] = `
 </style>
 
 <div
-  className="c0 responsiveweb__AuthorHeadWrapper-rnqjol-0 c0 css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-paddingBottom-1uwte3a r-width-13qz1uu S3"
+  className="c0 responsive__AuthorHeadWrapper-sc-1vsivj7-0 c0 css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-paddingBottom-1uwte3a r-width-13qz1uu S3"
 >
   <div
     className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-minHeight-1lv5adl r-width-13qz1uu S2"

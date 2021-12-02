@@ -7,7 +7,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import AdContainer from "../../src/ad-container.web";
+import AdContainer from "../../src/ad-container";
 
 describe("ad-container", () => {
   addSerializers(

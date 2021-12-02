@@ -2,8 +2,8 @@
   "name": "@times-components/article-list",
   "version": "9.7.49",
   "description": "Paginated list of articles",
-  "main": "dist/article-list.web",
-  "dev": "src/article-list.web",
+  "main": "dist/article-list",
+  "dev": "src/article-list",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

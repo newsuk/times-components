@@ -1,3 +1,3 @@
-import shared from "../shared-std-2articles.web";
+import shared from "../shared-std-2articles";
 
 shared();

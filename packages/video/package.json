@@ -1,8 +1,8 @@
 {
   "name": "@times-components/video",
   "version": "4.11.13",
-  "main": "dist/video.web",
-  "dev": "src/video.web",
+  "main": "dist/video",
+  "dev": "src/video",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

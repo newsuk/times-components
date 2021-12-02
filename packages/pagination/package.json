@@ -1,8 +1,8 @@
 {
   "name": "@times-components/pagination",
   "version": "3.4.53",
-  "main": "dist/pagination.web",
-  "dev": "src/pagination.web",
+  "main": "dist/pagination",
+  "dev": "src/pagination",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

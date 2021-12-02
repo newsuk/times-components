@@ -1,6 +1,6 @@
 import React from "react";
 import { mount } from "enzyme";
-import DOMContext from "../../src/dom-context.web";
+import DOMContext from "../../src/dom-context";
 
 describe("DOMContext Web", () => {
   const props = {

@@ -5,11 +5,7 @@ fixtures
 coverage
 storybook-components
 *.stories.js
-*.stories.native.js
-*.stories.web.js
 *.showcase.js
 
 *.test.js
-android/**/test
-android/**/androidTest
 .*

@@ -2,8 +2,6 @@
 dist
 lib
 __snapshots__
-android/*
-ios/*
 CHANGELOG.md
 .*
 !*.json

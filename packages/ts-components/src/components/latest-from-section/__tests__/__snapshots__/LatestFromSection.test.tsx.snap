@@ -66,22 +66,22 @@ exports[`<LatestFromSection> renders  1`] = `
       </h3>
     </div>
     <div
-      class="configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-2 bCJkFj configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-2 bCJkFj css-view-1dbjc4n"
+      class="config__Base-bs1997-0 config__Base-bs1997-2 ETkHz config__Base-bs1997-0 config__Base-bs1997-2 ETkHz css-view-1dbjc4n"
     >
       <div
-        class="responsiveweb__SliceContainer-sc-2kg7gs-0 goDieb responsiveweb__SliceContainer-sc-2kg7gs-0 goDieb css-view-1dbjc4n"
+        class="responsive__SliceContainer-sc-1kirgpc-0 ioiqOj responsive__SliceContainer-sc-1kirgpc-0 ioiqOj css-view-1dbjc4n"
       >
         <div
-          class="responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-2 responsiveweb__Base-aumpme-4 dOLCXz responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-2 responsiveweb__Base-aumpme-4 dOLCXz css-view-1dbjc4n"
+          class="responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-2 responsive__Base-sc-1lqbq6a-4 gpRihd responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-2 responsive__Base-sc-1lqbq6a-4 gpRihd css-view-1dbjc4n"
         >
           <div
-            class="responsiveweb__ChildContainer-aumpme-0 bwWtkp responsiveweb__ChildContainer-aumpme-0 bwWtkp css-view-1dbjc4n"
+            class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
           >
             <div
               data-testid="related-article-item"
             >
               <a
-                class="linkweb__RespLink-yfb9n-0 cCCShB"
+                class="link__RespLink-sc-1ocvixa-0 dfMuic"
                 href="https://www.thetimes.co.uk/article/the-entire-tour-de-france-bows-to-the-greatness-of-mark-cavendish-2zq0zgfmn"
               >
                 <div
@@ -102,7 +102,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 56.25%;"
                         >
                           <img
-                            class="responsiveweb-sc-142djdt-0 gkCaRe"
+                            class="responsive-sc-1nnon4d-0 fwlcWP"
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg?resize=200&quality=3"
                           />
                           <div
@@ -220,16 +220,16 @@ exports[`<LatestFromSection> renders  1`] = `
             </div>
           </div>
           <div
-            class="responsiveweb-sc-2kg7gs-1 iiVeDy responsiveweb-sc-2kg7gs-1 iiVeDy css-view-1dbjc4n"
+            class="responsive-sc-1kirgpc-1 fAXubH responsive-sc-1kirgpc-1 fAXubH css-view-1dbjc4n"
           />
           <div
-            class="responsiveweb__ChildContainer-aumpme-0 bwWtkp responsiveweb__ChildContainer-aumpme-0 bwWtkp css-view-1dbjc4n"
+            class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
           >
             <div
               data-testid="related-article-item"
             >
               <a
-                class="linkweb__RespLink-yfb9n-0 cCCShB"
+                class="link__RespLink-sc-1ocvixa-0 dfMuic"
                 href="https://www.thetimes.co.uk/article/jordan-pickford-repels-everything-germans-muster-ktkcvc85p"
               >
                 <div
@@ -250,7 +250,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 56.25%;"
                         >
                           <img
-                            class="responsiveweb-sc-142djdt-0 gkCaRe"
+                            class="responsive-sc-1nnon4d-0 fwlcWP"
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg?resize=200&quality=3"
                           />
                           <div
@@ -368,16 +368,16 @@ exports[`<LatestFromSection> renders  1`] = `
             </div>
           </div>
           <div
-            class="responsiveweb-sc-2kg7gs-1 iiVeDy responsiveweb-sc-2kg7gs-1 iiVeDy css-view-1dbjc4n"
+            class="responsive-sc-1kirgpc-1 fAXubH responsive-sc-1kirgpc-1 fAXubH css-view-1dbjc4n"
           />
           <div
-            class="responsiveweb__ChildContainer-aumpme-0 bwWtkp responsiveweb__ChildContainer-aumpme-0 bwWtkp css-view-1dbjc4n"
+            class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
           >
             <div
               data-testid="related-article-item"
             >
               <a
-                class="linkweb__RespLink-yfb9n-0 cCCShB"
+                class="link__RespLink-sc-1ocvixa-0 dfMuic"
                 href="https://www.thetimes.co.uk/article/the-tactical-masterstrokes-behind-englands-ruthless-win-s2s5j6k8l"
               >
                 <div
@@ -398,7 +398,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 56.25%;"
                         >
                           <img
-                            class="responsiveweb-sc-142djdt-0 gkCaRe"
+                            class="responsive-sc-1nnon4d-0 fwlcWP"
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F798e1dce-d918-11eb-b92f-5fe539a30c29.jpg?resize=200&quality=3"
                           />
                           <div

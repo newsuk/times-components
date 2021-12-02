@@ -2,8 +2,8 @@
   "name": "@times-components/article-main-comment",
   "version": "2.36.1",
   "description": "Main Comment Article Template",
-  "main": "dist/article-main-comment.web",
-  "dev": "src/article-main-comment.web",
+  "main": "dist/article-main-comment",
+  "dev": "src/article-main-comment",
   "scripts": {
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",

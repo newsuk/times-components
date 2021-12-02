@@ -8,7 +8,7 @@ Times Components showcases its UI components using
 > interactively develop and test components.
 
 Each package has one or more `my-component.stories.js` file. The
-`.(stories|stories.web).js` file name is the hook that the CLI uses to load
+`.stories.js` file name is the hook that the CLI uses to load
 these stories into storybook.
 
 ## `my-component.stories.js`

@@ -2,8 +2,8 @@
   "name": "@times-components/ad",
   "version": "2.16.1",
   "description": "Ad component",
-  "main": "dist/ad.web",
-  "dev": "src/ad.web",
+  "main": "dist/ad",
+  "dev": "src/ad",
   "scripts": {
     "prepublishOnly": "yarn transpile && yarn bundle",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
