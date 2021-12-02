@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.64.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.63.2...@times-components/article-skeleton@1.64.0) (2021-12-02)
+
+
+### Features
+
+* **TDP-861:** Remove Comment and Sport Newsletters from Automated Newsletters Puff ([#2821](https://github.com/newsuk/times-components/issues/2821)) ([1cbf80e](https://github.com/newsuk/times-components/commit/1cbf80e224e09a73f5728926eb4b1e02c020d381))
+
+
+
+
+
 ## [1.63.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.63.1...@times-components/article-skeleton@1.63.2) (2021-12-02)
 
 **Note:** Version bump only for package @times-components/article-skeleton
