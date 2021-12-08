@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
@@ -98,4 +99,39 @@ it("Render comments label, when comments are loaded", () => {
   );
 
   expect(asFragment()).toMatchSnapshot();
+});
+
+describe("window listeners added", () => {
+  const realAddEventListener = window.document.addEventListener;
+  let listeners = {};
+
+  beforeEach(() => {
+    window.document.addEventListener = jest.fn((event, cb) => {
+      listeners[event] = cb;
+    });
+  });
+  afterEach(() => {
+    window.document.addEventListener = realAddEventListener;
+    listeners = {};
+  });
+  it("all listeners added", () => {
+    render(
+      <ArticleComments
+        articleId="dummy-article-id"
+        commentsEnabled
+        isEnabled
+        onCommentGuidelinesPress={() => {}}
+        onCommentsPress={() => {}}
+        commentingConfig={{
+          account: {
+            current: "CurrentSpotID",
+            readOnly: "ReadOnlySpotID"
+          },
+          switchOver: "2020-08-10T16:00:00.000Z"
+        }}
+        url="dummy-article-url"
+      />
+    );
+    expect(Object.keys(listeners)).toMatchSnapshot();
+  });
 });
