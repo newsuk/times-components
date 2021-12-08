@@ -218,6 +218,21 @@ exports[`single comment 1`] = `
 </DocumentFragment>
 `;
 
+exports[`window listeners added all listeners added 1`] = `
+Array [
+  "spot-im-current-user-typing-start",
+  "spot-im-current-user-sent-message-succeed",
+  "spot-im-notification-drop-down-link",
+  "spot-im-user-up-vote-click",
+  "spot-im-sort-by-select",
+  "spot-im-user-clicked-reply",
+  "spot-im-clicked-settings",
+  "spot-im-user-notifications-click",
+  "spot-im-open-user-profile",
+  "spot-im-share-type",
+]
+`;
+
 exports[`zero comments 1`] = `
 <DocumentFragment>
   .c0 {
