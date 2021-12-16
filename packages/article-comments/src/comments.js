@@ -92,7 +92,7 @@ class Comments extends Component {
       { once: true }
     );
     document.addEventListener(
-      "spot-im-current-user-sent-message-succeed",
+      "spot-im-current-user-sent-message",
       onCommentPost
     );
     document.addEventListener(
