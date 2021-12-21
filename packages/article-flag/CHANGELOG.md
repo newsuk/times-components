@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.12.0](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.11.4...@times-components/article-flag@2.12.0) (2021-12-21)
+
+
+### Features
+
+* **TDP-601:** Make live article flag separate to sponsored flag ([#2826](https://github.com/newsuk/times-components/issues/2826)) ([7c63ced](https://github.com/newsuk/times-components/commit/7c63cedc35660cf90d2dabe3e088260690a0b91c))
+
+
+
+
+
 ## [2.11.4](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.11.3...@times-components/article-flag@2.11.4) (2021-12-02)
 
 **Note:** Version bump only for package @times-components/article-flag
