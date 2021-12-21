@@ -275,7 +275,10 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                 {row.data.copy && (
                   <BodyCopy
                     dangerouslySetInnerHTML={{
-                      __html: sanitiseCopy(row.data.copy, {br: {}, b:{}, i:{}})
+                      __html: sanitiseCopy(
+                        row.data.copy,
+                        {br: {}, b:{}, i:{}}
+                      )
                     }}
                   />
                 )}
