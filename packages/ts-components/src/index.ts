@@ -68,3 +68,5 @@ export {
 } from './helpers/algolia/AlgoliaSearchProvider';
 
 export { InlineMessage } from './components/inline-message/InlineMessage';
+
+export { InlineDialog } from './components/inline-dialog/InlineDialog';

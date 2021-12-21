@@ -1,4 +1,6 @@
 import React from "react";
+import { addUserStateKnobs } from "@times-components/user-state";
+
 import ArticleComments from "./src/article-comments";
 
 const commentingConfig = {
@@ -7,7 +9,7 @@ const commentingConfig = {
     readOnly: process.env.STORYBOOK_COMMENTING_READONLY_ID || "sp_pCQgrRiN"
   },
   switchOver:
-    process.env.STORYBOOK_COMMENTING_SWITCHOVER || "2021-10-10T16:00:00.000Z"
+    process.env.STORYBOOK_COMMENTING_SWITCHOVER || "2023-10-10T16:00:00.000Z"
 };
 
 export default {
@@ -15,8 +17,13 @@ export default {
     {
       // eslint-disable-next-line react/prop-types
       component: ({ date }) => {
+        addUserStateKnobs();
         const switchOver = new Date(
-          date("Switch Over Date", new Date(commentingConfig.switchOver))
+          date(
+            "Switch Over Date",
+            new Date(commentingConfig.switchOver),
+            "User State"
+          )
         );
         const config = {
           ...commentingConfig,
@@ -24,7 +31,7 @@ export default {
         };
 
         const publishedTime = new Date(
-          date("Article Published Date", new Date())
+          date("Article Published Date", new Date(), "User State")
         );
 
         return (
