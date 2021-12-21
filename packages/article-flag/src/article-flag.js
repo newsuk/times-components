@@ -80,7 +80,7 @@ const flagsMapping = color =>
     ["LIVE", <LiveArticleFlag color="white" />],
     ["UPDATED", <UpdatedArticleFlag color={color} />],
     ["EXCLUSIVE", <ExclusiveArticleFlag color={color} />],
-    ["SPONSORED", <LiveArticleFlag color="white" />],
+    ["SPONSORED", <SponsoredArticleFlag color={color} />],
     ["LONGREAD", <LongReadArticleFlag color={color} />]
   ]);
 
