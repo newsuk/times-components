@@ -221,7 +221,7 @@ exports[`single comment 1`] = `
 exports[`window listeners added all listeners added 1`] = `
 Array [
   "spot-im-current-user-typing-start",
-  "spot-im-current-user-sent-message-succeed",
+  "spot-im-current-user-sent-message",
   "spot-im-notification-drop-down-link",
   "spot-im-user-up-vote-click",
   "spot-im-sort-by-select",
