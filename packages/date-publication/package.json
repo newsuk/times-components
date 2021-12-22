@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "@times-components/styleguide": "3.38.24",
-    "date-fns": "^2.27.0",
+    "date-fns": "1.28.5",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
