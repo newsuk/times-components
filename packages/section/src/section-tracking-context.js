@@ -1,5 +1,5 @@
 import get from "lodash.get";
-import differenceInDays from "date-fns/differenceInDays";
+import differenceInDays from "date-fns/difference_in_days";
 import { withTrackingContext } from "@times-components/tracking";
 
 export default Component =>

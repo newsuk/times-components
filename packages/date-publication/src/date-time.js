@@ -1,7 +1,7 @@
 import { Component } from "react";
 import PropTypes from "prop-types";
 import format from "date-fns/format";
-import addMinutes from "date-fns/add_minutes"; // addMinutes
+import addMinutes from "date-fns/add_minutes";
 import { getUTCTime, isBST, isLondonTimezone } from "./date";
 
 class DatePublication extends Component {
@@ -33,9 +33,9 @@ class DatePublication extends Component {
     const isDateBST = isBST(datetimeUTC);
     const offset = isDateBST ? 60 : 0;
     const datetimeLondonTimezone = addMinutes(datetimeUTC, offset);
-    const baseFormatString = "MMMM DD YYYY, h.mma"; // "MMMM dd yyyy, h.mmaaa";
+    const baseFormatString = "MMMM DD YYYY, h.mma";
     const formatString = showDay
-      ? `dddd ${baseFormatString}` // EEEE
+      ? `dddd ${baseFormatString}`
       : baseFormatString;
 
     return children(

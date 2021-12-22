@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "@times-components/styleguide": "3.38.24",
-    "date-fns": "^2.27.0",
+    "date-fns": "1.28.5",
     "intersection-observer": "^0.11.0",
     "lodash.get": "4.4.2",
     "polyfill-array-includes": "^2.0.0",
