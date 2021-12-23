@@ -99,7 +99,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         class="css-view-1dbjc4n"
                       >
                         <div
-                          style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 56.25%;"
+                          style="padding-bottom: 56.25%;"
                         >
                           <img
                             class="responsive-sc-1nnon4d-0 fwlcWP"
@@ -247,7 +247,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         class="css-view-1dbjc4n"
                       >
                         <div
-                          style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 56.25%;"
+                          style="padding-bottom: 56.25%;"
                         >
                           <img
                             class="responsive-sc-1nnon4d-0 fwlcWP"
@@ -395,7 +395,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         class="css-view-1dbjc4n"
                       >
                         <div
-                          style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 56.25%;"
+                          style="padding-bottom: 56.25%;"
                         >
                           <img
                             class="responsive-sc-1nnon4d-0 fwlcWP"

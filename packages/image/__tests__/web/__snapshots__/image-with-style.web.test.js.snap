@@ -36,11 +36,6 @@ exports[`1. default image 1`] = `
 }
 
 .IS3 {
-  display: table;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
   padding-bottom: 66.66666666666667%;
 }
 </style>
@@ -105,11 +100,6 @@ exports[`2. default modal 1`] = `
 }
 
 .IS3 {
-  display: table;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
   padding-bottom: 66.66666666666667%;
 }
 </style>
