@@ -3,7 +3,6 @@ import { View } from "react-native";
 import { addMissingProtocol, appendToImageURL } from "@times-components/utils";
 import Placeholder from "./placeholder";
 import { defaultProps, propTypes } from "./image-prop-types";
-import styles from "./styles/index";
 import StyledImage from "./styles/responsive";
 
 class TimesImage extends Component {
@@ -120,9 +119,7 @@ class TimesImage extends Component {
         onLayout={onLayout}
         style={[style, rounded && { borderRadius: "50%", overflow: "hidden" }]}
       >
-        <div
-          style={{ ...styles.wrapper, paddingBottom: `${100 / aspectRatio}%` }}
-        >
+        <div style={{ paddingBottom: `${100 / aspectRatio}%` }}>
           {this.highResImage({ highResSize, lowResSize, url })}
           {this.lowResImage({ lowResQuality, lowResSize, url })}
           {disablePlaceholder || imageIsLoaded ? null : (
