@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.8.0](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@2.7.4...@times-components/jest-configurator@2.8.0) (2022-01-04)
+
+
+### Features
+
+* **TDP-588:** replaced 2 packages with packages that we already use … ([#2827](https://github.com/newsuk/times-components/issues/2827)) ([6c417f3](https://github.com/newsuk/times-components/commit/6c417f3fc3d92fb60f88125afe21364e5050a123))
+
+
+
+
+
 ## [2.7.4](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@2.7.3...@times-components/jest-configurator@2.7.4) (2021-12-02)
 
 **Note:** Version bump only for package @times-components/jest-configurator
