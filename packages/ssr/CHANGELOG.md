@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.29.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.28.6...@times-components/ssr@2.29.0) (2022-01-04)
+
+
+### Features
+
+* **TDP-527:** removed some unused dependencies ([#2828](https://github.com/newsuk/times-components/issues/2828)) ([36c7852](https://github.com/newsuk/times-components/commit/36c78520fa0970f4216d9a64cc8e95c380f2a294))
+
+
+
+
+
 ## [2.28.6](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.28.5...@times-components/ssr@2.28.6) (2021-12-21)
 
 **Note:** Version bump only for package @times-components/ssr

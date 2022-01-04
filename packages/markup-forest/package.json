@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup-forest",
-  "version": "1.7.36",
+  "version": "1.8.0",
   "description": "Utility functions for traversing The Times' AST",
   "main": "dist/markup-forest",
   "dev": "src/markup-forest",
@@ -51,7 +51,6 @@
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1"
   },
-  "dependencies": {},
   "publishConfig": {
     "access": "public"
   }
