@@ -70,7 +70,7 @@
     "react-apollo": "2.5.5",
     "react-elastic-carousel": "^0.11.5",
     "regenerator-runtime": "0.13.7",
-    "sanitize-html": "^2.4.0",
+    "xss": "^1.0.10",
     "styled-components": "4.3.2"
   },
   "devDependencies": {
@@ -90,7 +90,6 @@
     "@types/node-fetch": "2.5.10",
     "@types/react-dom": "17.0.3",
     "@types/react-test-renderer": "16.9.0",
-    "@types/sanitize-html": "^2.3.1",
     "@types/styled-components": "5.1.9",
     "jest": "24.8.0",
     "jest-environment-jsdom-sixteen": "2.0.0",

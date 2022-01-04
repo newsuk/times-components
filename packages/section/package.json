@@ -43,7 +43,7 @@
     "@times-components/styleguide": "3.38.25",
     "@times-components/tracking": "2.9.3",
     "lodash.get": "4.4.2",
-    "luxon": "1.18.0",
+    "date-fns": "1.28.5",
     "memoize-one": "5.1.1",
     "prop-types": "15.7.2"
   },

@@ -118,7 +118,7 @@ export const InfoCardBulletPoints: React.FC<{
                   <ListItem
                     key={index}
                     dangerouslySetInnerHTML={{
-                      __html: sanitiseCopy(row.data.copy, ['b', 'i'])
+                      __html: sanitiseCopy(row.data.copy, { b: {}, i: {} })
                     }}
                   />
                 ))}

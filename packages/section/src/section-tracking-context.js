@@ -1,5 +1,5 @@
 import get from "lodash.get";
-import { DateTime } from "luxon";
+import differenceInDays from "date-fns/difference_in_days";
 import { withTrackingContext } from "@times-components/tracking";
 
 export default Component =>
@@ -8,13 +8,10 @@ export default Component =>
       const { slices } = section;
       const firstSlice = slices[0];
       const nonName = Object.keys(firstSlice).filter(n => n !== "name")[0];
-      const { article: data } = firstSlice[nonName] || {};
-      const published = DateTime.fromJSDate(
-        new Date(get(data, "publishedTime", ""))
-      );
-      const current = DateTime.local();
-      const diff = current.diff(published, "days");
-      const { days } = diff.values || { days: 0.0 };
+      const { article: data } = firstSlice[nonName][0] || {};
+      const published = new Date(get(data, "publishedTime", ""));
+      const current = new Date();
+      const days = differenceInDays(current, published) || 0;
       const editionType = days > 1.0 ? "past 6 days" : "current edition";
       return {
         sectionName: section && section.title,
