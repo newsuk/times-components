@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.7.36...@times-components/markup-forest@1.8.0) (2022-01-04)
+
+
+### Features
+
+* **TDP-527:** removed some unused dependencies ([#2828](https://github.com/newsuk/times-components/issues/2828)) ([36c7852](https://github.com/newsuk/times-components/commit/36c78520fa0970f4216d9a64cc8e95c380f2a294))
+
+
+
+
+
 ## [1.7.36](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.7.35...@times-components/markup-forest@1.7.36) (2021-12-02)
 
 **Note:** Version bump only for package @times-components/markup-forest

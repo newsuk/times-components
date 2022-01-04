@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-flag",
-  "version": "2.12.0",
+  "version": "2.12.1",
   "description": "The article flag (sponsored, new, updated, etc)",
   "main": "dist/article-flag.js",
   "dev": "src/article-flag.js",
@@ -38,7 +38,7 @@
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator": "2.7.4",
     "@times-components/jest-serializer": "3.2.28",
-    "@times-components/storybook": "4.1.68",
+    "@times-components/storybook": "4.1.69",
     "@times-components/test-utils": "2.3.10",
     "@times-components/webpack-configurator": "2.0.29",
     "babel-jest": "24.8.0",
@@ -59,9 +59,9 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.38.24",
-    "@times-components/ts-components": "1.15.3",
-    "@times-components/utils": "6.5.8",
+    "@times-components/styleguide": "3.38.25",
+    "@times-components/ts-components": "1.15.4",
+    "@times-components/utils": "6.5.9",
     "mockdate": "3.0.5",
     "prop-types": "15.7.2"
   },

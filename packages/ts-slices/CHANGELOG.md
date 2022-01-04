@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.1.7...@times-components/ts-slices@1.2.0) (2022-01-04)
+
+
+### Features
+
+* **TDP-527:** removed some unused dependencies ([#2828](https://github.com/newsuk/times-components/issues/2828)) ([36c7852](https://github.com/newsuk/times-components/commit/36c78520fa0970f4216d9a64cc8e95c380f2a294))
+
+
+
+
+
 ## [1.1.7](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.1.6...@times-components/ts-slices@1.1.7) (2021-12-02)
 
 **Note:** Version bump only for package @times-components/ts-slices

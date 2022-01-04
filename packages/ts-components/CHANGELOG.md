@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.15.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.15.3...@times-components/ts-components@1.15.4) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
 ## [1.15.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.15.2...@times-components/ts-components@1.15.3) (2021-12-21)
 
 **Note:** Version bump only for package @times-components/ts-components
