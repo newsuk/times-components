@@ -13,10 +13,10 @@ import {
 
 const ArticleFlag = ({ title, color }) => (
   <FlagContainer>
-    <FlagIconContainer backgroundColor={color}/>
+    <FlagIconContainer color={color} />
     <FlagTextContainer
       accessibilityLabel={`${title} Flag`}
-      // style={[styles.title, { color: gqlRgbaToStyle(color) || color }]}
+      color={color}
       testID={`flag-${title}`}
     >
       {title.toLowerCase()}

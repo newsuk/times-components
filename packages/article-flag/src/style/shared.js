@@ -5,6 +5,7 @@ import styleguide from "@times-components/styleguide";
 const { fontFactory, spacing } = styleguide();
 
 export const Container = styled.div`
+  display: flex;
   align-items: center;
   flex-direction: row;
 `;
@@ -13,24 +14,21 @@ export const IconContainer = styled.div`
   border-radius: 2.5px;
   height: 5px;
   width: 5px;
-  background-color: ${ backgroundColor => (gqlRgbaToStyle(backgroundColor) || backgroundColor)};
+  background-color: ${({color}) => gqlRgbaToStyle(color) || color};
 `;
 
 export const TextContainer = styled.div`
-...fontFactory({
-        font: "bodyRegularSmallCaps",
-        fontSize: "cardMetaMobile"
-      }),
-      font-weight: 400;
-      letter-spacing: 0.6;
-      margin-left: spacing(1)
+  font-family: TimesDigitalW04-RegularSC;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  line-height: 12px;
+  margin-left: 5px;
+  color: ${({color}) => gqlRgbaToStyle(color) || color};
+  
 `
+// style={[styles.title, { color: gqlRgbaToStyle(color) || color }]}
 // const styles = {
-//   bullet: {
-//     borderRadius: 2.5,
-//     height: 5,
-//     width: 5
-//   },
 //   flagPadding: {
 //     marginRight: spacing(3)
 //   },
@@ -42,15 +40,6 @@ export const TextContainer = styled.div`
 //     flexDirection: "row",
 //     flexWrap: "wrap",
 //     marginBottom: spacing(2)
-//   },
-//   title: {
-//     ...fontFactory({
-//       font: "bodyRegularSmallCaps",
-//       fontSize: "cardMetaMobile"
-//     }),
-//     fontWeight: "400",
-//     letterSpacing: 0.6,
-//     marginLeft: spacing(1)
 //   },
 //   view: {
 //     alignItems: "center",
