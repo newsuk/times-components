@@ -5,15 +5,15 @@ import styleguide from "@times-components/styleguide";
 const { fontFactory, spacing } = styleguide();
 
 export const Container = styled.div`
-  alignItems: center;
-  flexDirection: row;
+  align-items: center;
+  flex-direction: row;
 `;
 
 export const IconContainer = styled.div`
-  borderRadius: 2.5px;
+  border-radius: 2.5px;
   height: 5px;
   width: 5px;
-  backgroundColor: ${ backgroundColor  => (gqlRgbaToStyle(backgroundColor) || backgroundColor)};
+  background-color: ${ backgroundColor => (gqlRgbaToStyle(backgroundColor) || backgroundColor)};
 `;
 
 export const TextContainer = styled.div`
@@ -21,9 +21,9 @@ export const TextContainer = styled.div`
         font: "bodyRegularSmallCaps",
         fontSize: "cardMetaMobile"
       }),
-      fontWeight: 400",
-      letterSpacing: 0.6,
-      marginLeft: spacing(1)
+      font-weight: 400;
+      letter-spacing: 0.6;
+      margin-left: spacing(1)
 `
 // const styles = {
 //   bullet: {
