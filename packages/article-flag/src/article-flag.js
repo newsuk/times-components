@@ -1,10 +1,10 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { Text } from "react-native";
 import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";
 import { LiveArticleFlag } from "@times-components/ts-components";
-import styles from "./style";
+import { FlagContainer, FlagIconContainer } from "./style";
 import getActiveFlags from "./get-active-flags";
 import {
   articleFlagPropTypes,
@@ -13,21 +13,21 @@ import {
 } from "./article-flag-prop-types";
 
 const ArticleFlag = ({ title, color }) => (
-  <View style={styles.view}>
-    <View
-      style={[
-        styles.bullet,
-        { backgroundColor: gqlRgbaToStyle(color) || color }
-      ]}
+  <FlagContainer>
+    <FlagIconContainer backgroundColor={color}
+      // style={[
+      //   styles.bullet,
+      //   { backgroundColor: gqlRgbaToStyle(color) || color }
+      // ]}
     />
     <Text
       accessibilityLabel={`${title} Flag`}
-      style={[styles.title, { color: gqlRgbaToStyle(color) || color }]}
+      // style={[styles.title, { color: gqlRgbaToStyle(color) || color }]}
       testID={`flag-${title}`}
     >
       {title.toLowerCase()}
     </Text>
-  </View>
+  </FlagContainer>
 );
 
 ArticleFlag.propTypes = {
@@ -84,6 +84,8 @@ const flagsMapping = color =>
     ["LONGREAD", <LongReadArticleFlag color={color} />]
   ]);
 
+const style = {};
+
 const ArticleFlags = ({ flags, longRead, color, style, withContainer }) => {
   const activeFlags = getActiveFlags(flags);
   const allFlags = [
@@ -94,18 +96,24 @@ const ArticleFlags = ({ flags, longRead, color, style, withContainer }) => {
   if (!allFlags.length) return null;
 
   const flagsView = (
-    <View style={[styles.flags, style]}>
+    <div 
+    // style={[styles.flags, style]}
+    >
       {allFlags.map(flag => (
-        <View key={flag.type} style={allFlags.length > 1 && styles.flagPadding}>
+        <div key={flag.type} 
+        // style={allFlags.length > 1 && styles.flagPadding}
+        >
           {flagsMapping(color).get(flag.type)}
-        </View>
+        </div>
       ))}
-    </View>
+    </div>
   );
 
   if (!withContainer) return flagsView;
 
-  return <View style={styles.flagsContainer}>{flagsView}</View>;
+  return <div 
+  // style={styles.flagsContainer}
+  >{flagsView}</div>;
 };
 
 ArticleFlags.propTypes = articleFlagsPropTypes;
