@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { gqlRgbaToStyle } from "@times-components/utils";
+import styleguide from "@times-components/styleguide";
+
+const { fontFactory, spacing } = styleguide();
 
 export const Container = styled.div`
   alignItems: center;
@@ -13,7 +16,15 @@ export const IconContainer = styled.div`
   backgroundColor: ${ backgroundColor  => (gqlRgbaToStyle(backgroundColor) || backgroundColor)};
 `;
 
-// const { fontFactory, spacing } = styleguide();
+export const TextContainer = styled.div`
+...fontFactory({
+        font: "bodyRegularSmallCaps",
+        fontSize: "cardMetaMobile"
+      }),
+      fontWeight: 400",
+      letterSpacing: 0.6,
+      marginLeft: spacing(1)
+`
 // const styles = {
 //   bullet: {
 //     borderRadius: 2.5,

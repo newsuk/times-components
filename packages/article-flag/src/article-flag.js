@@ -1,10 +1,9 @@
 import React from "react";
-import { Text } from "react-native";
 import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";
 import { LiveArticleFlag } from "@times-components/ts-components";
-import { FlagContainer, FlagIconContainer } from "./style";
+import { FlagContainer, FlagIconContainer, FlagTextContainer } from "./style";
 import getActiveFlags from "./get-active-flags";
 import {
   articleFlagPropTypes,
@@ -14,19 +13,14 @@ import {
 
 const ArticleFlag = ({ title, color }) => (
   <FlagContainer>
-    <FlagIconContainer backgroundColor={color}
-      // style={[
-      //   styles.bullet,
-      //   { backgroundColor: gqlRgbaToStyle(color) || color }
-      // ]}
-    />
-    <Text
+    <FlagIconContainer backgroundColor={color}/>
+    <FlagTextContainer
       accessibilityLabel={`${title} Flag`}
       // style={[styles.title, { color: gqlRgbaToStyle(color) || color }]}
       testID={`flag-${title}`}
     >
       {title.toLowerCase()}
-    </Text>
+    </FlagTextContainer>
   </FlagContainer>
 );
 
