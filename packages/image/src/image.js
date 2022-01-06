@@ -119,7 +119,7 @@ class TimesImage extends Component {
         onLayout={onLayout}
         style={[style, rounded && { borderRadius: "50%", overflow: "hidden" }]}
       >
-        <div style={{ paddingBottom: `${100 / aspectRatio}%` }}>
+        <div data-testid="Image" style={{ paddingBottom: `${100 / aspectRatio}%` }}>
           {this.highResImage({ highResSize, lowResSize, url })}
           {this.lowResImage({ lowResQuality, lowResSize, url })}
           {disablePlaceholder || imageIsLoaded ? null : (
