@@ -27,9 +27,10 @@ export const TextContainer = styled.div`
   color: ${({color}) => gqlRgbaToStyle(color) || color};
 `
 export const FlagPadding = styled.div`
-  margin-right: ${({allFlags}) => allFlags.length > 1 ? "15px": "0" };
+  margin-right: ${({allFlags}) => allFlags.length > 1 ? "15px" : 0 };
 `
 export const Flags = styled.div`
+  display: flex;    
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 10px;
@@ -38,17 +39,8 @@ export const FlagsContainer = styled.div`
   margin-bottom: 15px;
   margin-top: 5px;
 `
-// style={[styles.title, { color: gqlRgbaToStyle(color) || color }]}
+
 // const styles = {
-//   flagsContainer: {
-//     marginBottom: spacing(3),
-//     marginTop: spacing(1)
-//   },
-//   flags: {
-//     flexDirection: "row",
-//     flexWrap: "wrap",
-//     marginBottom: spacing(2)
-//   },
 //   view: {
 //     alignItems: "center",
 //     flexDirection: "row"
