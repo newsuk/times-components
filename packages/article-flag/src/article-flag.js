@@ -78,7 +78,7 @@ const flagsMapping = color =>
     ["LONGREAD", <LongReadArticleFlag color={color} />]
   ]);
 
-const ArticleFlags = ({ flags, longRead, color, style, withContainer }) => {
+const ArticleFlags = ({ flags, longRead, color, withContainer }) => {
   const activeFlags = getActiveFlags(flags);
   const allFlags = [
     ...activeFlags,
@@ -89,7 +89,7 @@ const ArticleFlags = ({ flags, longRead, color, style, withContainer }) => {
 
   const flagsView = (
     <div 
-    // style={[styles.flags, style]}
+    // style={[styles.flags]}
     >
       {allFlags.map(flag => (
         <FlagPadding key={flag.type} allFlags={allFlags}>
