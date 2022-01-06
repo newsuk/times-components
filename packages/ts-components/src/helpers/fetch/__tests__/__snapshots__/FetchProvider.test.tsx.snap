@@ -27,7 +27,7 @@ exports[`<FetchProvider> fetch 1`] = `
 exports[`<FetchProvider> loading 1`] = `
 <DocumentFragment>
   <div>
-    Loading
+    boo
   </div>
 </DocumentFragment>
 `;
