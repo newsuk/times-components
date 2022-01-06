@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";
 import { LiveArticleFlag } from "@times-components/ts-components";
-import { FlagContainer, FlagIconContainer, FlagTextContainer } from "./style";
+import { FlagContainer, FlagIconContainer, FlagTextContainer, FlagPaddingRight } from "./style";
 import getActiveFlags from "./get-active-flags";
 import {
   articleFlagPropTypes,
@@ -78,8 +78,6 @@ const flagsMapping = color =>
     ["LONGREAD", <LongReadArticleFlag color={color} />]
   ]);
 
-const style = {};
-
 const ArticleFlags = ({ flags, longRead, color, style, withContainer }) => {
   const activeFlags = getActiveFlags(flags);
   const allFlags = [
@@ -94,11 +92,9 @@ const ArticleFlags = ({ flags, longRead, color, style, withContainer }) => {
     // style={[styles.flags, style]}
     >
       {allFlags.map(flag => (
-        <div key={flag.type} 
-        // style={allFlags.length > 1 && styles.flagPadding}
-        >
+        <FlagPaddingRight key={flag.type} allFlags={allFlags}>
           {flagsMapping(color).get(flag.type)}
-        </div>
+        </FlagPaddingRight>
       ))}
     </div>
   );

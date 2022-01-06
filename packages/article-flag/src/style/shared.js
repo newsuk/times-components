@@ -25,8 +25,16 @@ export const TextContainer = styled.div`
   line-height: 12px;
   margin-left: 5px;
   color: ${({color}) => gqlRgbaToStyle(color) || color};
-  
 `
+export const FlagPadding = styled.div`
+  margin-right: ${({allFlags}) => allFlags.length > 1 ? "15px": "0px" };
+`
+export const Flags = styled.div`
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+`
+
 // style={[styles.title, { color: gqlRgbaToStyle(color) || color }]}
 // const styles = {
 //   flagPadding: {
