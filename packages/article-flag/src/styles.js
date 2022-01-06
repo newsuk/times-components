@@ -1,8 +1,5 @@
 import styled from "styled-components";
 import { gqlRgbaToStyle } from "@times-components/utils";
-import styleguide from "@times-components/styleguide";
-
-const { fontFactory, spacing } = styleguide();
 
 export const Container = styled.div`
   display: flex;
@@ -39,12 +36,3 @@ export const FlagsContainer = styled.div`
   margin-bottom: 15px;
   margin-top: 5px;
 `
-
-// const styles = {
-//   view: {
-//     alignItems: "center",
-//     flexDirection: "row"
-//   }
-// };
-
-// export default styles;
