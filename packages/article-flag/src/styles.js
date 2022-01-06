@@ -34,7 +34,7 @@ export const Flags = styled.div`
   flex-wrap: wrap;
   margin-bottom: 10px;
 `
-export const flagsContainer = styled.div`
+export const FlagsContainer = styled.div`
   margin-bottom: 15px;
   margin-top: 5px;
 `

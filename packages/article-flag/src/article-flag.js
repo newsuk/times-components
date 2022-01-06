@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";
 import { LiveArticleFlag } from "@times-components/ts-components";
-import { FlagContainer, FlagIconContainer, FlagTextContainer, FlagPaddingRight } from "./style";
+import { Container, IconContainer, TextContainer, FlagPadding } from "./styles";
 import getActiveFlags from "./get-active-flags";
 import {
   articleFlagPropTypes,
@@ -12,16 +12,16 @@ import {
 } from "./article-flag-prop-types";
 
 const ArticleFlag = ({ title, color }) => (
-  <FlagContainer>
-    <FlagIconContainer color={color} />
-    <FlagTextContainer
+  <Container>
+    <IconContainer color={color} />
+    <TextContainer
       accessibilityLabel={`${title} Flag`}
       color={color}
       testID={`flag-${title}`}
     >
       {title.toLowerCase()}
-    </FlagTextContainer>
-  </FlagContainer>
+    </TextContainer>
+  </Container>
 );
 
 ArticleFlag.propTypes = {
@@ -92,9 +92,9 @@ const ArticleFlags = ({ flags, longRead, color, style, withContainer }) => {
     // style={[styles.flags, style]}
     >
       {allFlags.map(flag => (
-        <FlagPaddingRight key={flag.type} allFlags={allFlags}>
+        <FlagPadding key={flag.type} allFlags={allFlags}>
           {flagsMapping(color).get(flag.type)}
-        </FlagPaddingRight>
+        </FlagPadding>
       ))}
     </div>
   );
