@@ -99,6 +99,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         class="css-view-1dbjc4n"
                       >
                         <div
+                          data-testid="Image"
                           style="padding-bottom: 56.25%;"
                         >
                           <img
@@ -247,6 +248,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         class="css-view-1dbjc4n"
                       >
                         <div
+                          data-testid="Image"
                           style="padding-bottom: 56.25%;"
                         >
                           <img
@@ -395,6 +397,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         class="css-view-1dbjc4n"
                       >
                         <div
+                          data-testid="Image"
                           style="padding-bottom: 56.25%;"
                         >
                           <img

@@ -13,6 +13,7 @@ exports[`Preview Newsletter Puff renders 1`] = `
           class="css-view-1dbjc4n"
         >
           <div
+            data-testid="Image"
             style="padding-bottom: 70.42253521126761%;"
           >
             <img

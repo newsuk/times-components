@@ -13,6 +13,7 @@ exports[`Inline Newsletter Puff Clicking Subscribe renders 'saving' when the but
           class="css-view-1dbjc4n"
         >
           <div
+            data-testid="Image"
             style="padding-bottom: 70.42253521126761%;"
           >
             <img
@@ -93,6 +94,7 @@ exports[`Inline Newsletter Puff Manage preferences  renders the success view aft
           class="css-view-1dbjc4n"
         >
           <div
+            data-testid="Image"
             style="padding-bottom: 70.42253521126761%;"
           >
             <img
@@ -231,6 +233,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
           class="css-view-1dbjc4n"
         >
           <div
+            data-testid="Image"
             style="padding-bottom: 70.42253521126761%;"
           >
             <img
@@ -311,6 +314,7 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
           class="css-view-1dbjc4n"
         >
           <div
+            data-testid="Image"
             style="padding-bottom: 70.42253521126761%;"
           >
             <img
