@@ -4,6 +4,7 @@ import UserState from "@times-components/user-state";
 import { InlineDialog } from "@times-components/ts-components";
 
 import Comments from "./comments";
+import getStoreLink from "./utils";
 
 import DisabledComments from "./disabled-comments";
 
@@ -19,11 +20,11 @@ const ArticleComments = ({
       <UserState state={UserState.metered}>
         <InlineDialog
           title="Join the conversation"
-          buttonText="Subscribe Now"
-          onClick={() => console.log("clicked")}
+          buttonText="Subscribe now"
+          href={getStoreLink()}
         >
-          Commenting is only for subscribers. If you would like to comment,
-          please sign up.
+          Commenting is only for subscribers. Upgrade your subscription to join
+          the conversation.
         </InlineDialog>
       </UserState>
       <UserState state={UserState.subscriber}>

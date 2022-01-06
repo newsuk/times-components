@@ -29,10 +29,14 @@ export const Description = styled.div`
   text-align: center;
   max-width: 660px;
 `;
-export const Button = styled.button`
+export const Button = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
   background-color: #008387;
   color: white;
-  border: none;
   font-family: ${fonts.supporting};
   width: 127px;
   height: 48px;

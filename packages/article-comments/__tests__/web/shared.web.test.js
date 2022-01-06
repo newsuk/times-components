@@ -4,6 +4,8 @@ import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import "jest-styled-components";
 
+import { UserState } from "./mocks";
+
 import ArticleComments from "../../src/article-comments";
 
 const renderComments = ({
@@ -29,16 +31,42 @@ const renderComments = ({
     />
   );
 
-it("enabled comments", () => {
-  const { asFragment, baseElement } = renderComments({
-    count: 123,
-    enabled: true
-  });
-  expect(baseElement.getElementsByTagName("script")[0].src).toEqual(
-    "https://launcher.spot.im/spot/CurrentSpotID"
-  );
+describe("User States", () => {
+  it("enabled comments", () => {
+    UserState.mockStates = [UserState.subscriber];
 
-  expect(asFragment()).toMatchSnapshot();
+    const { asFragment, baseElement } = renderComments({
+      count: 123,
+      enabled: true
+    });
+
+    expect(baseElement.getElementsByTagName("script")[0].src).toEqual(
+      "https://launcher.spot.im/spot/CurrentSpotID"
+    );
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("RA Users", () => {
+    UserState.mockStates = [UserState.metered, UserState.loggedIn];
+
+    const { asFragment, getAllByText } = renderComments({
+      count: 123,
+      enabled: true
+    });
+    expect(getAllByText("Join the conversation").length).toEqual(1);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("No user state", () => {
+    UserState.mockStates = [];
+
+    const { asFragment } = renderComments({
+      count: 123,
+      enabled: true
+    });
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
 
 it("pre-switchover comments", () => {

@@ -14,11 +14,12 @@ exports[`<InlineDialog> should render the component 1`] = `
       <div
         class="sc-htpNat dBfnu"
       />
-      <button
-        class="sc-bxivhb kkAoUP"
+      <a
+        class="sc-bxivhb bTkHyz"
+        href="#"
       >
         Button
-      </button>
+      </a>
     </div>
   </div>
 </body>
