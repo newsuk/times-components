@@ -68,11 +68,7 @@ export default {
                   false,
                   "User State"
                 )}
-                inlineRelatedArticlesFlag={boolean(
-                  "Inline Related Articles",
-                  false,
-                  "User State"
-                )}
+
                 latestFromSectionFlag={boolean(
                   "Latest from Section",
                   false,
@@ -138,7 +134,6 @@ export default {
                 commentingConfig={commentingConfig}
                 topics={topics}
                 additionalRelatedArticlesFlag
-                inlineRelatedArticlesFlag
               />
             </AlgoliaSearchProvider>
           </>

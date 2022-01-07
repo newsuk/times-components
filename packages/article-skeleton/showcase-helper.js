@@ -104,11 +104,6 @@ const renderArticleSkeleton = ({
   const topics = boolean("Topics?", true);
   const header = boolean("Header?", false);
   const isPreview = boolean("Preview?", false);
-  const inlineRelatedArticlesFlag = boolean(
-    "Inline Related Articles",
-    false,
-    "User State"
-  );
 
   const config = {
     commentsEnabled: commentsEnabled ? undefined : false,
@@ -143,7 +138,6 @@ const renderArticleSkeleton = ({
           Header={showHeader}
           isPreview={isPreview}
           olympicsKeys={endpoint}
-          inlineRelatedArticlesFlag={inlineRelatedArticlesFlag}
           onAuthorPress={preventDefaultedAction(decorateAction)(
             "onAuthorPress"
           )}

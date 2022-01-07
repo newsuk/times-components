@@ -365,11 +365,13 @@ const renderers = ({
     return (
       <Context.Consumer key={key}>
         {({ theme }) => (
+          <div style={{display: 'none'}} className="InArticleRelatedArticles">
           <InArticleRelatedArticles
             heading="Related Articles"
             relatedArticles={element.attributes.relatedArticles}
             sectionColour={theme.sectionColour}
           />
+          </div>
         )}
       </Context.Consumer>
     );
