@@ -217,7 +217,6 @@ const renderArticle = ({
   isTeaser,
   isMeteredExpired,
   additionalRelatedArticlesFlag,
-  inlineRelatedArticlesFlag,
   latestFromSectionFlag,
   algoliaSearchKeys
 }) => (
@@ -279,7 +278,6 @@ const renderArticle = ({
             )}
             refetch={refetch}
             additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
-            inlineRelatedArticlesFlag={inlineRelatedArticlesFlag}
             algoliaSearchKeys={algoliaSearchKeys}
             latestFromSectionFlag={latestFromSectionFlag}
             latestFromSection={latestFromSection.find(
@@ -347,11 +345,6 @@ const renderArticleConfig = ({
     false,
     "User State"
   );
-  const inlineRelatedArticlesFlag = boolean(
-    "Inline Related Articles",
-    false,
-    "User State"
-  );
   const latestFromSectionFlag = boolean(
     "Latest from Section",
     false,
@@ -389,7 +382,6 @@ const renderArticleConfig = ({
             section,
             template,
             additionalRelatedArticlesFlag,
-            inlineRelatedArticlesFlag,
             latestFromSectionFlag,
             algoliaSearchKeys
           })}

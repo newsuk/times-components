@@ -148,7 +148,6 @@ export default () => {
               commentingConfig={commentingConfig}
               topics={topics}
               additionalRelatedArticlesFlag
-              inlineRelatedArticlesFlag
               publishedTime="2020-07-10T16:00:00.000Z"
             />
           </AlgoliaSearchProvider>

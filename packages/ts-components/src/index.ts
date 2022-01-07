@@ -66,5 +66,6 @@ export {
   AlgoliaSearchProvider,
   useAlgoliaSearch
 } from './helpers/algolia/AlgoliaSearchProvider';
+export { HiddenDiv } from './components/common-styles';
 
 export { InlineMessage } from './components/inline-message/InlineMessage';
