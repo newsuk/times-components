@@ -8,7 +8,8 @@ const storeURL = {
 };
 
 export default () => {
-  // eslint-disable-next-line no-undef
-  const region = window && window.nuk && window.nuk.region;
+  const region =
+    // eslint-disable-next-line no-undef
+    typeof window !== "undefined" && window.nuk && window.nuk.region;
   return storeURL[region] || storeURL.gb;
 };
