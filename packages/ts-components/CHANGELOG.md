@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.16.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.16.1...@times-components/ts-components@1.16.2) (2022-01-07)
+
+
+### Bug Fixes
+
+* **TPD-997:** Remove inline related articles flag ([#2834](https://github.com/newsuk/times-components/issues/2834)) ([ffc332a](https://github.com/newsuk/times-components/commit/ffc332a0bf096e5436427b990a495bb3caff80ff))
+
+
+
+
+
 ## [1.16.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.16.0...@times-components/ts-components@1.16.1) (2022-01-04)
 
 **Note:** Version bump only for package @times-components/ts-components
