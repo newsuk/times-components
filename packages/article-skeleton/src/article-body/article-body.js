@@ -34,7 +34,8 @@ import {
   GalleryCarousel,
   InArticleRelatedArticles,
   InfoCardBulletPoints,
-  BigNumbers
+  BigNumbers,
+  HiddenDiv
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -365,13 +366,13 @@ const renderers = ({
     return (
       <Context.Consumer key={key}>
         {({ theme }) => (
-          <div style={{ display: "none" }} className="inlineRelatedArticles">
+          <HiddenDiv className="inlineRelatedArticles">
             <InArticleRelatedArticles
               heading="Related Articles"
               relatedArticles={element.attributes.relatedArticles}
               sectionColour={theme.sectionColour}
             />
-          </div>
+          </HiddenDiv>
         )}
       </Context.Consumer>
     );
