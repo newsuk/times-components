@@ -35,4 +35,4 @@ export const Label = styled.div<{ sectionColour: string }>`
 
 export const HiddenDiv = styled.div`
   display: none;
-`
+`;
