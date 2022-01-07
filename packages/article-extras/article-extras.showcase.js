@@ -68,7 +68,6 @@ export default {
                   false,
                   "User State"
                 )}
-
                 latestFromSectionFlag={boolean(
                   "Latest from Section",
                   false,
