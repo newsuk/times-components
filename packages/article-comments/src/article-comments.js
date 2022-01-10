@@ -1,6 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import UserState from "@times-components/user-state";
+import { InlineDialog } from "@times-components/ts-components";
+
 import Comments from "./comments";
+import getStoreLink from "./utils";
+
 import DisabledComments from "./disabled-comments";
 
 const ArticleComments = ({
@@ -11,12 +16,26 @@ const ArticleComments = ({
   commentingConfig
 }) =>
   isEnabled ? (
-    <Comments
-      articleId={articleId}
-      publishedTime={publishedTime}
-      isReadOnly={isReadOnly}
-      commentingConfig={commentingConfig}
-    />
+    <>
+      <UserState state={UserState.metered}>
+        <InlineDialog
+          title="Join the conversation"
+          buttonText="Subscribe now"
+          href={getStoreLink()}
+        >
+          Commenting is only for subscribers. Upgrade your subscription to join
+          the conversation.
+        </InlineDialog>
+      </UserState>
+      <UserState state={UserState.subscriber}>
+        <Comments
+          articleId={articleId}
+          publishedTime={publishedTime}
+          isReadOnly={isReadOnly}
+          commentingConfig={commentingConfig}
+        />
+      </UserState>
+    </>
   ) : (
     <DisabledComments />
   );
