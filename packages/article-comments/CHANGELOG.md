@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.16.8...@times-components/article-comments@0.17.0) (2022-01-10)
+
+
+### Features
+
+* **TDP-805:** No commenting for RA users ([#2833](https://github.com/newsuk/times-components/issues/2833)) ([a08c74f](https://github.com/newsuk/times-components/commit/a08c74f35b3f6d84fb484ca4e6727c1896ea0c96))
+
+
+
+
+
 ## [0.16.8](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.16.7...@times-components/article-comments@0.16.8) (2022-01-04)
 
 **Note:** Version bump only for package @times-components/article-comments
