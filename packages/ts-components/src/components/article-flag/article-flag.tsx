@@ -65,19 +65,8 @@ export type FlagsType = [
   }
 ];
 
-export const flagsView = (allFlags: FlagsType ) => {
-  return (
-  <Flags>
-    {allFlags.map(flag => (
-      <FlagPadding key={flag.type} allFlags={allFlags}>
-        {flagsMapping().get(flag.type)}
-      </FlagPadding>
-    ))}
-  </Flags>
-  )};
- 
 
-const ArticleFlags: React.FC<{ flags: FlagsType, longRead: boolean,  withContainer: boolean }> = ({ flags=[], longRead=false, withContainer=false }) => {
+const ArticleFlags: React.FC<{ flags: FlagsType, longRead: boolean, allFlags: FlagsType, withContainer: boolean }> = ({ flags=[], longRead=false, withContainer=false }) => {
   const activeFlags = getActiveFlags(flags);
   const allFlags = [
     ...activeFlags,
@@ -86,7 +75,19 @@ const ArticleFlags: React.FC<{ flags: FlagsType, longRead: boolean,  withContain
 
   if (!allFlags.length) return null;
 
-  
+const flagsView = (allFlags: FlagsType) => { 
+  return (
+    <Flags>
+      {allFlags.map(flag => (
+        <FlagPadding 
+          key={flag.type} 
+          allFlags={allFlags}
+          >
+          {flagsMapping().get(flag.type)}
+        </FlagPadding>
+      ))}
+    </Flags>
+   )};
 
   if (!withContainer) return flagsView;
 
