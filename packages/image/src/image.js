@@ -118,6 +118,7 @@ class TimesImage extends Component {
       <View
         onLayout={onLayout}
         style={[style, rounded && { borderRadius: "50%", overflow: "hidden" }]}
+        testID="Image"
       >
         <div style={{ paddingBottom: `${100 / aspectRatio}%` }}>
           {this.highResImage({ highResSize, lowResSize, url })}
