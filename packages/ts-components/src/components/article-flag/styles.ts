@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { fonts } from '@times-components/styleguide';
+import { Flags } from './article-flag';
 import { gqlRgbaToStyle } from '@times-components/utils';
 
 export const Container = styled.div`
@@ -24,7 +25,7 @@ export const TextContainer = styled.div`
   margin-left: 5px;
   color: ${({color}) => gqlRgbaToStyle(color) || color};
 `
-export const FlagPadding = styled.div`
+export const FlagPadding = styled.div<{allFlags: Flags}>`
   margin-right: ${({allFlags}) => allFlags.length > 1 ? "15px" : 0 };
 `
 export const Flags = styled.div`

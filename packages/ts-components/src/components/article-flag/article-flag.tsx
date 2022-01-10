@@ -92,6 +92,7 @@ const ArticleFlags: React.FC<{ flags: Flags, longRead: boolean, allFlags: Flags,
 export default ArticleFlag;
 
 export {
+  Flags,
   getActiveFlags,
   ArticleFlags,
   NewArticleFlag,
