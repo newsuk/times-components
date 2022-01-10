@@ -5,7 +5,7 @@ import ArticleComments from "./src/article-comments";
 
 const commentingConfig = {
   account: {
-    current: process.env.STORYBOOK_COMMENTING_CURRENT_ID || "sp_rLv5PqMc",
+    current: process.env.STORYBOOK_COMMENTING_CURRENT_ID || "sp_pCQgrRiN",
     readOnly: process.env.STORYBOOK_COMMENTING_READONLY_ID || "sp_pCQgrRiN"
   },
   switchOver:

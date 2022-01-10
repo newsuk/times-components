@@ -436,7 +436,8 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         />
       </svg>
       Real-name Commenting
-      We've changed our policy and from now on commenters will need to use their real names. If you've been using a pseudonym, please edit your screen name 
+      We've changed our policy and from now on commenters will need to use their real names. If you've been using a pseudonym, please edit your screen name
+       
       <a
         href="https://home.thetimes.co.uk/"
       >

@@ -7,6 +7,7 @@ import Comments from "./comments";
 import getStoreLink from "./utils";
 
 import DisabledComments from "./disabled-comments";
+import { CommentContainer } from "./styles/responsive";
 
 const ArticleComments = ({
   articleId,
@@ -28,12 +29,15 @@ const ArticleComments = ({
         </InlineDialog>
       </UserState>
       <UserState state={UserState.subscriber}>
-        <InlineMessage title="Real-name Commenting" type="info">
-          We&apos;ve changed our policy and from now on commenters will need to
-          use their real names. If you&apos;ve been using a pseudonym, please
-          edit your screen name <a href="https://home.thetimes.co.uk/">here</a>.
-          We believe this will ensure true debate.
-        </InlineMessage>
+        <CommentContainer>
+          <InlineMessage title="Real-name Commenting" type="info">
+            We&apos;ve changed our policy and from now on commenters will need
+            to use their real names. If you&apos;ve been using a pseudonym,
+            please edit your screen name{" "}
+            <a href="https://home.thetimes.co.uk/">here</a>. We believe this
+            will ensure true debate.
+          </InlineMessage>
+        </CommentContainer>
         <Comments
           articleId={articleId}
           publishedTime={publishedTime}
