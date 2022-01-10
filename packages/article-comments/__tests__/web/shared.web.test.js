@@ -78,7 +78,7 @@ it("pre-switchover comments", () => {
   expect(baseElement.getElementsByTagName("script")[0].src).toEqual(
     "https://launcher.spot.im/spot/ReadOnlySpotID"
   );
-  expect(baseElement.getElementsByClassName("info").length).toEqual(0);
+  expect(baseElement.getElementsByClassName("info").length).toEqual(1);
 
   expect(asFragment()).toMatchSnapshot();
 });
