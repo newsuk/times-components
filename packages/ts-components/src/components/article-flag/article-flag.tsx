@@ -58,14 +58,26 @@ const flagsMapping = () =>
   ]);
 
 
-export type Flags = [
+export type FlagsType = [
   {
     expiryTime: string;
     type: string;
   }
 ];
 
-const ArticleFlags: React.FC<{ flags: Flags, longRead: boolean, allFlags: Flags, withContainer: boolean }> = ({ flags=[], longRead=false, withContainer=false }) => {
+export const flagsView = (allFlags: FlagsType ) => {
+  return (
+  <Flags>
+    {allFlags.map(flag => (
+      <FlagPadding key={flag.type} allFlags={allFlags}>
+        {flagsMapping().get(flag.type)}
+      </FlagPadding>
+    ))}
+  </Flags>
+  )};
+ 
+
+const ArticleFlags: React.FC<{ flags: FlagsType, longRead: boolean,  withContainer: boolean }> = ({ flags=[], longRead=false, withContainer=false }) => {
   const activeFlags = getActiveFlags(flags);
   const allFlags = [
     ...activeFlags,
@@ -74,15 +86,7 @@ const ArticleFlags: React.FC<{ flags: Flags, longRead: boolean, allFlags: Flags,
 
   if (!allFlags.length) return null;
 
-  const flagsView = (
-    <Flags>
-      {allFlags.map(flag => (
-        <FlagPadding key={flag.type} allFlags={allFlags}>
-          {flagsMapping().get(flag.type)}
-        </FlagPadding>
-      ))}
-    </Flags>
-  );
+  
 
   if (!withContainer) return flagsView;
 
@@ -92,7 +96,6 @@ const ArticleFlags: React.FC<{ flags: Flags, longRead: boolean, allFlags: Flags,
 export default ArticleFlag;
 
 export {
-  Flags,
   getActiveFlags,
   ArticleFlags,
   NewArticleFlag,
