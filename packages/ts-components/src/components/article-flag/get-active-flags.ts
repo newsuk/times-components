@@ -1,5 +1,7 @@
-const getActiveArticleFlags = flags => {
-  if (!flags || flags.length === 0) return [];
+import { Flags } from './article-flag';
+
+const getActiveArticleFlags: Function = (flags: Flags) => {
+  if (!flags) return [];
   return flags
     .map(
       flag =>
