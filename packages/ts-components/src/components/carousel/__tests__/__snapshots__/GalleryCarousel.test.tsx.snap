@@ -36,7 +36,7 @@ exports[`GalleryCarousel should render the component 1`] = `
                     tabindex="0"
                   >
                     <div
-                      class="sc-jKJlTe gmCzTu"
+                      class="sc-eNQAEJ hpchfZ"
                     >
                       <img
                         src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F46cebe30-c82d-11eb-b6f5-fed739e7c1ca.jpg?crop=6676%2C3755%2C65%2C707&resize=1180"
@@ -58,7 +58,7 @@ exports[`GalleryCarousel should render the component 1`] = `
                     tabindex="-1"
                   >
                     <div
-                      class="sc-jKJlTe gmCzTu"
+                      class="sc-eNQAEJ hpchfZ"
                     >
                       <img
                         src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0f831cea-0317-11eb-910e-49261a8ea333.jpg?crop=2250%2C1500%2C0%2C0&resize=1500"

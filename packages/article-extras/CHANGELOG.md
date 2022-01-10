@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.23](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.9.22...@times-components/article-extras@0.9.23) (2022-01-07)
+
+
+### Bug Fixes
+
+* **TPD-997:** Remove inline related articles flag ([#2834](https://github.com/newsuk/times-components/issues/2834)) ([ffc332a](https://github.com/newsuk/times-components/commit/ffc332a0bf096e5436427b990a495bb3caff80ff))
+
+
+
+
+
 ## [0.9.22](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.9.21...@times-components/article-extras@0.9.22) (2022-01-04)
 
 **Note:** Version bump only for package @times-components/article-extras

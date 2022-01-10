@@ -306,40 +306,42 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
           />
           <div>
             <div>
-              Related Articles
-            </div>
-            <nav>
               <div>
+                Related Articles
+              </div>
+              <nav>
                 <div>
-                  <a
-                    href="https://ra.io"
-                  >
+                  <div>
+                    <a
+                      href="https://ra.io"
+                    >
+                      <div>
+                        <img
+                          src="https://racrop169.io"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <section>
+                    <a
+                      href="https://ra.io"
+                    >
+                      <h3>
+                        Headline
+                      </h3>
+                    </a>
+                    <div />
                     <div>
-                      <img
-                        src="https://racrop169.io"
+                      <DatePublication
+                        date="2015-03-23T19:39:39.000Z"
+                        showDay={false}
                       />
                     </div>
-                  </a>
+                    <div />
+                  </section>
                 </div>
-                <section>
-                  <a
-                    href="https://ra.io"
-                  >
-                    <h3>
-                      Headline
-                    </h3>
-                  </a>
-                  <div />
-                  <div>
-                    <DatePublication
-                      date="2015-03-23T19:39:39.000Z"
-                      showDay={false}
-                    />
-                  </div>
-                  <div />
-                </section>
-              </div>
-            </nav>
+              </nav>
+            </div>
           </div>
         </span>
         <div
@@ -709,40 +711,42 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
           />
           <div>
             <div>
-              Related Articles
-            </div>
-            <nav>
               <div>
+                Related Articles
+              </div>
+              <nav>
                 <div>
-                  <a
-                    href="https://ra.io"
-                  >
+                  <div>
+                    <a
+                      href="https://ra.io"
+                    >
+                      <div>
+                        <img
+                          src="https://racrop169.io"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <section>
+                    <a
+                      href="https://ra.io"
+                    >
+                      <h3>
+                        Headline
+                      </h3>
+                    </a>
+                    <div />
                     <div>
-                      <img
-                        src="https://racrop169.io"
+                      <DatePublication
+                        date="2015-03-23T19:39:39.000Z"
+                        showDay={false}
                       />
                     </div>
-                  </a>
+                    <div />
+                  </section>
                 </div>
-                <section>
-                  <a
-                    href="https://ra.io"
-                  >
-                    <h3>
-                      Headline
-                    </h3>
-                  </a>
-                  <div />
-                  <div>
-                    <DatePublication
-                      date="2015-03-23T19:39:39.000Z"
-                      showDay={false}
-                    />
-                  </div>
-                  <div />
-                </section>
-              </div>
-            </nav>
+              </nav>
+            </div>
           </div>
         </span>
         <div

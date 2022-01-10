@@ -312,7 +312,6 @@ const renderArticle = () => (
       onVideoPress={() => {}}
       commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
       isPreview={isPreview}
-      inlineRelatedArticlesFlag
     />
   </Context.Provider>
 );
