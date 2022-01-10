@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "6.8.11",
+  "version": "6.8.12",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {

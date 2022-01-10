@@ -309,7 +309,6 @@ const renderArticle = () => (
       onTwitterLinkPress={() => {}}
       onVideoPress={() => {}}
       commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
-      inlineRelatedArticlesFlag
     />
   </Context.Provider>
 );
