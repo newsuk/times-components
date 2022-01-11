@@ -1,6 +1,6 @@
-import { Flags } from './article-flag';
+import { FlagsType } from './article-flag';
 
-const getActiveArticleFlags: Function = (flags: Flags) => {
+const getActiveArticleFlags: Function = (flags: FlagsType) => {
   if (!flags) return [];
   return flags
     .map(
