@@ -1,6 +1,5 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import { LiveArticleFlag } from "./LiveArticleFlag";
 import { Container, IconContainer, TextContainer, FlagPadding, Flags, FlagsContainer } from "./styles";
 import getActiveFlags from "./get-active-flags";
 
@@ -16,6 +15,13 @@ const ArticleFlag: React.FC<{color: string; title: string, backgroundColor?: boo
     </TextContainer>
   </Container>
 );
+
+const LiveArticleFlag: React.FC = () =>
+  <ArticleFlag 
+    color="white"
+    title="live"
+    backgroundColor
+  />;
 
 const NewArticleFlag: React.FC = () => 
   <ArticleFlag 

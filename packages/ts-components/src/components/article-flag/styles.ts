@@ -17,12 +17,12 @@ export const Container = styled.div<{backgroundColor?: boolean}>`
 //   flex-direction: row;
 // `;
 
-// export const ContainerWithBackgroundColor = styled.div`
-//   display: flex;
-//   padding: 2px 6px;
-//   background-color: #9f0000;
-//   align-items: baseline;
-// `;
+export const ContainerWithBackgroundColor = styled.div`
+  display: flex;
+  padding: 2px 6px;
+  background-color: #9f0000;
+  align-items: baseline;
+`;
 
 export const IconContainer = styled.div`
   border-radius: 2.5px;
