@@ -24,11 +24,19 @@ export const ContainerWithBackgroundColor = styled.div`
   align-items: baseline;
 `;
 
-export const IconContainer = styled.div`
+export const IconContainer = styled.div<{backgroundColor?: boolean}>`
   border-radius: 2.5px;
   height: 5px;
   width: 5px;
   background-color: ${({color}) => gqlRgbaToStyle(color) || color};
+  margin-right: ${({backgroundColor}) => backgroundColor ? '4px': 0};
+  line-height: ${({backgroundColor}) => backgroundColor ? '16px': 0};
+`;
+
+export const BulletContainer = styled.div`
+  margin-right: 4px;
+  color: #ffffff;
+  line-height: 16px;
 `;
 
 export const TextContainer = styled.div`
@@ -53,12 +61,6 @@ export const FlagsContainer = styled.div`
   margin-bottom: 15px;
   margin-top: 5px;
 `
-export const BulletContainer = styled.div`
-  margin-right: 4px;
-  color: #ffffff;
-  line-height: 16px;
-`;
-
 export const Title = styled.div`
   font-family: ${fonts.supporting};
   color: #ffffff;
