@@ -1,9 +1,9 @@
 import React from 'react';
-import { ContainerWithBackgroundColor, BulletContainer, Title } from './styles';
+import { Container, BulletContainer, Title } from './styles';
 
 export const LiveArticleFlag: React.FC = () => (
-  <ContainerWithBackgroundColor>
+  <Container>
     <BulletContainer>{'\u25c6'}</BulletContainer>
     <Title>LIVE</Title>
-  </ContainerWithBackgroundColor>
+  </Container>
 );

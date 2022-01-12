@@ -1,11 +1,11 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import { LiveArticleFlag } from "@times-components/ts-components";
+import { LiveArticleFlag } from "./LiveArticleFlag";
 import { Container, IconContainer, TextContainer, FlagPadding, Flags, FlagsContainer } from "./styles";
 import getActiveFlags from "./get-active-flags";
 
-const ArticleFlag: React.FC<{color: string; title: string}> = ({ title, color=colours.functional.primary }) => (
-  <Container>
+const ArticleFlag: React.FC<{color: string; title: string, backgroundColor?: boolean}> = ({ color=colours.functional.primary, title, backgroundColor }) => (
+  <Container backgroundColor={backgroundColor}>
     <IconContainer color={color} />
     <TextContainer
       aria-label={`${title} Flag`}
@@ -65,7 +65,6 @@ export type FlagType =
   }
 ;
 
-
 const FlagsView: React.FC<{allFlags: FlagType[]}> = ({allFlags}) => { 
   return (
     <Flags>
@@ -91,7 +90,7 @@ const ArticleFlags: React.FC<{ flags: FlagType[], longRead: boolean, withContain
 
 
 
-  if (!withContainer) return <FlagsView allFlags= {allFlags}/>;
+  if (!withContainer) return <FlagsView allFlags={allFlags}/>;
 
   return <FlagsContainer>{FlagsView}</FlagsContainer>;
 };

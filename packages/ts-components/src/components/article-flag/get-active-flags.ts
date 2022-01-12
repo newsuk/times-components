@@ -1,4 +1,4 @@
-import { FlagType } from './article-flag';
+import { FlagType } from './ArticleFlag';
 
 const getActiveArticleFlags: Function = (flags: FlagType[]) => {
   if (!flags) return [];

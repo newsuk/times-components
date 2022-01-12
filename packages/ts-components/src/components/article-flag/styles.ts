@@ -1,13 +1,28 @@
 import styled from 'styled-components';
 import { fonts } from '@times-components/styleguide';
-import { FlagType } from './article-flag';
+import { FlagType } from './ArticleFlag';
 import { gqlRgbaToStyle } from '@times-components/utils';
 
-export const Container = styled.div`
+export const Container = styled.div<{backgroundColor?: boolean}>`
   display: flex;
-  align-items: center;
+  align-items: ${({backgroundColor}) => backgroundColor ? 'baseline': 'center'};
   flex-direction: row;
+  padding: ${({backgroundColor}) => backgroundColor ? '2px 6px': 0 };
+  background-color: ${({backgroundColor}) => backgroundColor ? '#9f0000': null };
 `;
+
+// export const Container = styled.div`
+//   display: flex;
+//   align-items: center;
+//   flex-direction: row;
+// `;
+
+// export const ContainerWithBackgroundColor = styled.div`
+//   display: flex;
+//   padding: 2px 6px;
+//   background-color: #9f0000;
+//   align-items: baseline;
+// `;
 
 export const IconContainer = styled.div`
   border-radius: 2.5px;
@@ -38,13 +53,6 @@ export const FlagsContainer = styled.div`
   margin-bottom: 15px;
   margin-top: 5px;
 `
-export const ContainerWithBackgroundColor = styled.div`
-  display: flex;
-  padding: 2px 6px;
-  background-color: #9f0000;
-  align-items: baseline;
-`;
-
 export const BulletContainer = styled.div`
   margin-right: 4px;
   color: #ffffff;
