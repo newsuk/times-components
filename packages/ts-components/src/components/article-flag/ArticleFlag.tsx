@@ -3,15 +3,21 @@ import { colours } from "@times-components/styleguide";
 import { Container, IconContainer, TextContainer, FlagPadding, Flags, FlagsContainer } from "./styles";
 import getActiveFlags from "./get-active-flags";
 
-const ArticleFlag: React.FC<{color: string; title: string, backgroundColor?: boolean}> = ({ color=colours.functional.primary, title, backgroundColor }) => (
+const ArticleFlag: React.FC<{color: string; title: string, backgroundColor?: boolean, child?: string}> = ({ color=colours.functional.primary, title, backgroundColor, child}) => (
   <Container backgroundColor={backgroundColor}>
-    <IconContainer color={color} />
+    <IconContainer 
+      color={color} 
+      backgroundColor={backgroundColor}
+    >
+      {child && child}
+    </IconContainer>
     <TextContainer
       aria-label={`${title} Flag`}
       color={color}
       data-testid={`flag-${title}`}
+      backgroundColor={backgroundColor}
     >
-      {title.toLowerCase()}
+      {title}
     </TextContainer>
   </Container>
 );
@@ -19,9 +25,12 @@ const ArticleFlag: React.FC<{color: string; title: string, backgroundColor?: boo
 const LiveArticleFlag: React.FC = () =>
   <ArticleFlag 
     color="white"
-    title="live"
+    title="LIVE"
     backgroundColor
-  />;
+    child={'\u25c6'}
+  >
+   
+  </ArticleFlag>;
 
 const NewArticleFlag: React.FC = () => 
   <ArticleFlag 
@@ -32,7 +41,7 @@ const NewArticleFlag: React.FC = () =>
 const UpdatedArticleFlag: React.FC = () => 
   <ArticleFlag 
     color={colours.functional.articleFlagUpdated}
-    title="updated" 
+    title="updated"
   />;
 
 const ExclusiveArticleFlag: React.FC = () => 
@@ -94,11 +103,9 @@ const ArticleFlags: React.FC<{ flags: FlagType[], longRead: boolean, withContain
 
   if (!allFlags.length) return null;
 
-
-
   if (!withContainer) return <FlagsView allFlags={allFlags}/>;
 
-  return <FlagsContainer>{FlagsView}</FlagsContainer>;
+  return <FlagsContainer><FlagsView allFlags={allFlags} /></FlagsContainer>;
 };
 
 export default ArticleFlag;

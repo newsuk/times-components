@@ -24,14 +24,24 @@ export const ContainerWithBackgroundColor = styled.div`
   align-items: baseline;
 `;
 
-export const IconContainer = styled.div<{backgroundColor?: boolean}>`
-  border-radius: 2.5px;
-  height: 5px;
-  width: 5px;
-  background-color: ${({color}) => gqlRgbaToStyle(color) || color};
+export const IconContainer = styled.div<{backgroundColor?: boolean, child?: string}>`
+  border-radius: ${({backgroundColor}) => !backgroundColor ? '2.5px': null};
+  height: ${({backgroundColor}) => !backgroundColor ? '5px': null};
+  width: ${({backgroundColor}) => !backgroundColor ? '5px': null};
+  background-color: ${({backgroundColor, color}) => !backgroundColor ?gqlRgbaToStyle(color) || color: null }; 
   margin-right: ${({backgroundColor}) => backgroundColor ? '4px': 0};
   line-height: ${({backgroundColor}) => backgroundColor ? '16px': 0};
+  color: ${({backgroundColor}) => backgroundColor ? '#ffffff': null};
 `;
+
+// export const IconContainer = styled.div<{backgroundColor?: boolean, child?: string}>`
+//   border-radius: 2.5px;
+//   height: 5px;
+//   width: 5px;
+//   background-color: ${({color}) => gqlRgbaToStyle(color) || color};
+//   margin-right: ${({backgroundColor}) => backgroundColor ? '4px': 0};
+//   line-height: ${({backgroundColor}) => backgroundColor ? '16px': 0};
+// `;
 
 export const BulletContainer = styled.div`
   margin-right: 4px;
@@ -39,8 +49,8 @@ export const BulletContainer = styled.div`
   line-height: 16px;
 `;
 
-export const TextContainer = styled.div`
-  font-family: TimesDigitalW04-RegularSC;
+export const TextContainer = styled.div<{backgroundColor?: boolean}>`
+  font-family: ${({backgroundColor}) => backgroundColor ? fonts.supporting : 'TimesDigitalW04-RegularSC'};
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.6px;
@@ -48,6 +58,25 @@ export const TextContainer = styled.div`
   margin-left: 5px;
   color: ${({color}) => gqlRgbaToStyle(color) || color};
 `
+
+// export const TextContainer = styled.div`
+//   font-family: TimesDigitalW04-RegularSC;
+//   font-size: 12px;
+//   font-weight: 400;
+//   letter-spacing: 0.6px;
+//   line-height: 12px;
+//   margin-left: 5px;
+//   color: ${({color}) => gqlRgbaToStyle(color) || color};
+// `
+export const Title = styled.div`
+  font-family: ${fonts.supporting};
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: 16px;
+`;
+
 export const FlagPadding = styled.div<{allFlags: FlagType[]}>`
   margin-right: ${({allFlags}) => allFlags.length > 1 ? "15px" : 0 };
 `
@@ -61,11 +90,4 @@ export const FlagsContainer = styled.div`
   margin-bottom: 15px;
   margin-top: 5px;
 `
-export const Title = styled.div`
-  font-family: ${fonts.supporting};
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  line-height: 16px;
-`;
+
