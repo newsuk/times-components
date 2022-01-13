@@ -65,7 +65,6 @@ class ArticlePage extends Component {
       isPreview,
       swgProductId,
       additionalRelatedArticlesFlag,
-      inlineRelatedArticlesFlag,
       algoliaSearchKeys,
       latestFromSectionFlag,
       latestFromSection,
@@ -89,7 +88,6 @@ class ArticlePage extends Component {
         isPreview={isPreview}
         swgProductId={swgProductId}
         additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
-        inlineRelatedArticlesFlag={inlineRelatedArticlesFlag}
         algoliaSearchKeys={algoliaSearchKeys}
         latestFromSectionFlag={latestFromSectionFlag}
         latestFromSection={latestFromSection}

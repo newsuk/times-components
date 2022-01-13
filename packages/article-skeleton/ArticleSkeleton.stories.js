@@ -134,7 +134,6 @@ storiesOf("Composed/Article Skeleton", module)
             analyticsStream={storybookReporter}
             data={data}
             isPreview={false}
-            inlineRelatedArticlesFlag
             onAuthorPress={preventDefaultedAction(decorateAction)(
               "onAuthorPress"
             )}

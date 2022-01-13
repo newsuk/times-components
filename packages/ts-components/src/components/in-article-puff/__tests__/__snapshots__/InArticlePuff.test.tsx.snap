@@ -3,10 +3,10 @@
 exports[`InArticlePuff should render optional fields correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-EHOje hxyorB"
+    class="sc-bZQynM eLgtba"
   >
     <div
-      class="sc-bZQynM bcIvmR"
+      class="sc-gzVnrw giIBiZ"
     >
       <a
         href="https://www.thetimes.co.uk"
@@ -21,11 +21,11 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
       </a>
     </div>
     <div
-      class="sc-gzVnrw kKiGJk"
+      class="sc-htoDjs etvidI"
     >
       <div>
         <div
-          class="sc-htoDjs wogdI"
+          class="sc-dnqmqq frenqu"
         >
           interactive
         </div>
@@ -33,13 +33,13 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
           href="https://www.thetimes.co.uk"
         >
           <h4
-            class="sc-dnqmqq idHiiA"
+            class="sc-iwsKbI imXvZS"
           >
             Where can I get a Covid vaccine in England?
           </h4>
         </a>
         <div
-          class="sc-iwsKbI bMDHmH"
+          class="sc-gZMcBi gBQBMy"
         >
           Enter your postcode to find your nearest centre
         </div>
@@ -69,14 +69,14 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
 exports[`InArticlePuff should render required fields correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-EHOje hxyorB"
+    class="sc-bZQynM eLgtba"
   >
     <div
-      class="sc-gzVnrw gzDDYI"
+      class="sc-htoDjs hXHeXp"
     >
       <div>
         <div
-          class="sc-htoDjs eVcZJA"
+          class="sc-dnqmqq bTDdnU"
         >
           interactive
         </div>
@@ -84,7 +84,7 @@ exports[`InArticlePuff should render required fields correctly 1`] = `
           href="https://www.thetimes.co.uk"
         >
           <h4
-            class="sc-dnqmqq dPtcG"
+            class="sc-iwsKbI kBnSBc"
           >
             Where can I get a Covid vaccine in England?
           </h4>

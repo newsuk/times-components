@@ -32,3 +32,7 @@ export const Label = styled.div<{ sectionColour: string }>`
     padding-bottom: 10px;
   }
 `;
+
+export const HiddenDiv = styled.div`
+  display: none;
+`;

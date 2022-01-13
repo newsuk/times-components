@@ -53,7 +53,6 @@ const ArticleSkeleton = ({
   isPreview,
   swgProductId,
   additionalRelatedArticlesFlag,
-  inlineRelatedArticlesFlag,
   inlineRelatedArticleOptions,
   algoliaSearchKeys,
   latestFromSectionFlag,
@@ -86,7 +85,6 @@ const ArticleSkeleton = ({
     insertInlineAd,
     insertInlineRelatedArticles(
       relatedArticleSlice,
-      inlineRelatedArticlesFlag,
       inlineRelatedArticleOptions
     ),
     tagLastParagraph

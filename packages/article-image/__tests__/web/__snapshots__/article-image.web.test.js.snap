@@ -28,7 +28,9 @@ exports[`4. inline image with no ratio only shows caption and credits 1`] = `
 exports[`5. image with no caption 1`] = `
 Array [
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
         <responsive
           alt={null}
@@ -95,7 +97,9 @@ exports[`7. image with no display only shows given credits 1`] = `
 exports[`8. primary image renders with caption and credits 1`] = `
 Array [
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
         <responsive
           alt="Some caption"
@@ -153,7 +157,9 @@ Array [
 exports[`9. primary image with given resolutions 1`] = `
 Array [
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
         <responsive
           alt="Some caption"
