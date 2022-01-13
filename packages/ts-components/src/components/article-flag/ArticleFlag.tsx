@@ -2,7 +2,7 @@ import React from "react";
 import { colours } from "@times-components/styleguide";
 import { LiveArticleFlag, BreakingArticleFlag } from "./LiveArticleFlag";
 import { ArticleFlagContainer, ArticleFlagBullet, ArticleFlagTextContainer, FlagPadding, Flags, FlagsContainer } from "./styles";
-import getActiveFlags from "./get-active-flags";
+import getActiveFlags from "./getActiveFlags";
 
 const ArticleFlag: React.FC<{color: string; title: string}> = ({ color=colours.functional.primary, title}) => (
   <ArticleFlagContainer>
@@ -14,7 +14,7 @@ const ArticleFlag: React.FC<{color: string; title: string}> = ({ color=colours.f
       color={color}
       data-testid={`flag-${title}`}
     >
-      {title}
+      {title.toLowerCase()}
     </ArticleFlagTextContainer>
   </ArticleFlagContainer>
 );
