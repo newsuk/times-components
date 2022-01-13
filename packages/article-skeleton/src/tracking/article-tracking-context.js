@@ -6,6 +6,11 @@ export default Component =>
   withTrackingContext(Component, {
     getAttrs: ({ data, pageSection, navigationMode, referralUrl = "" }) => {
       let editionType = "";
+      
+      const getFlag = () => {
+        const flag = flag[0];
+        return ['breaking', 'live'].includes(flag[0]) && flag }
+
       if (navigationMode) {
         const { isMyArticles, isPastSixDays } = navigationMode;
         if (isMyArticles) {
@@ -43,7 +48,8 @@ export default Component =>
         section: pageSection || get(data, "section", ""),
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
-        shared: getSharedStatus()
+        shared: getSharedStatus(),
+        other_details: getFlag()
       };
     },
     trackingObjectName: "Article"
