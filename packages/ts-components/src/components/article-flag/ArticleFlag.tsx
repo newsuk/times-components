@@ -1,36 +1,23 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import { Container, IconContainer, TextContainer, FlagPadding, Flags, FlagsContainer } from "./styles";
+import { LiveArticleFlag, BreakingArticleFlag } from "./LiveArticleFlag";
+import { ArticleFlagContainer, ArticleFlagBullet, ArticleFlagTextContainer, FlagPadding, Flags, FlagsContainer } from "./styles";
 import getActiveFlags from "./get-active-flags";
 
-const ArticleFlag: React.FC<{color: string; title: string, backgroundColor?: boolean, child?: string}> = ({ color=colours.functional.primary, title, backgroundColor, child}) => (
-  <Container backgroundColor={backgroundColor}>
-    <IconContainer 
+const ArticleFlag: React.FC<{color: string; title: string}> = ({ color=colours.functional.primary, title}) => (
+  <ArticleFlagContainer>
+    <ArticleFlagBullet 
       color={color} 
-      backgroundColor={backgroundColor}
-    >
-      {child && child}
-    </IconContainer>
-    <TextContainer
+    />
+    <ArticleFlagTextContainer
       aria-label={`${title} Flag`}
       color={color}
       data-testid={`flag-${title}`}
-      backgroundColor={backgroundColor}
     >
       {title}
-    </TextContainer>
-  </Container>
+    </ArticleFlagTextContainer>
+  </ArticleFlagContainer>
 );
-
-const LiveArticleFlag: React.FC = () =>
-  <ArticleFlag 
-    color="white"
-    title="LIVE"
-    backgroundColor
-    child={'\u25c6'}
-  >
-   
-  </ArticleFlag>;
 
 const NewArticleFlag: React.FC = () => 
   <ArticleFlag 
@@ -66,12 +53,12 @@ const flagsMapping = () =>
   new Map([
     ["NEW", <NewArticleFlag/>],
     ["LIVE", <LiveArticleFlag/>],
+    ["BREAKING", <BreakingArticleFlag/>],
     ["UPDATED", <UpdatedArticleFlag/>],
     ["EXCLUSIVE", <ExclusiveArticleFlag/>],
     ["SPONSORED", <SponsoredArticleFlag/>],
     ["LONGREAD", <LongReadArticleFlag/>]
   ]);
-
 
 export type FlagType = 
   {
@@ -117,6 +104,5 @@ export {
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
   SponsoredArticleFlag,
-  LongReadArticleFlag,
-  LiveArticleFlag
+  LongReadArticleFlag
 };

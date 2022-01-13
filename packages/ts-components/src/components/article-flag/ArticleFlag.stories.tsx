@@ -1,6 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { NewArticleFlag, LiveArticleFlag, UpdatedArticleFlag, ExclusiveArticleFlag, SponsoredArticleFlag, LongReadArticleFlag, ArticleFlags } from './ArticleFlag';
+import { NewArticleFlag, UpdatedArticleFlag, ExclusiveArticleFlag, SponsoredArticleFlag, LongReadArticleFlag, ArticleFlags } from './ArticleFlag';
+import { LiveArticleFlag, BreakingArticleFlag } from './LiveArticleFlag';
 
 storiesOf('Typescript Component/Article Flag', module)
     .add('Article Flag (New)', () => (
@@ -9,6 +10,9 @@ storiesOf('Typescript Component/Article Flag', module)
     .add('Article Flag (Live)', () => (
             <LiveArticleFlag/>
     ))
+    .add('Article Flag (Breaking)', () => (
+        <BreakingArticleFlag/>
+))
     .add('Article Flag (Updated)', () => (
         <UpdatedArticleFlag/>
     ))
@@ -25,6 +29,7 @@ storiesOf('Typescript Component/Article Flag', module)
         <ArticleFlags
             flags={[
                 { expiryTime: "2030-03-13T12:00:00.000Z", type: "LIVE" },
+                { expiryTime: "2030-03-13T12:00:00.000Z", type: "BREAKING" },
                 { expiryTime: "2030-03-13T12:00:00.000Z", type: "UPDATED" },
                 { expiryTime: "2030-03-14T12:00:00.000Z", type: "EXCLUSIVE" },
                 { expiryTime: "2030-03-14T12:00:00.000Z", type: "NEW" },
@@ -38,6 +43,7 @@ storiesOf('Typescript Component/Article Flag', module)
         <ArticleFlags
         flags={[
             { expiryTime: "2030-03-13T12:00:00.000Z", type: "LIVE" },
+            { expiryTime: "2030-03-13T12:00:00.000Z", type: "BREAKING" },
             { expiryTime: "2030-03-13T12:00:00.000Z", type: "UPDATED" },
             { expiryTime: "2030-03-14T12:00:00.000Z", type: "EXCLUSIVE" },
             { expiryTime: "2030-03-14T12:00:00.000Z", type: "NEW" },
