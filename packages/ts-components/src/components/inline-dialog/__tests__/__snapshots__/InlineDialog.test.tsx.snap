@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<InlineDialog> should render the component 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa dmvPpj"
+    >
+      <div
+        class="sc-bwzfXH mYYIt"
+      >
+        Title
+      </div>
+      <div
+        class="sc-htpNat dBfnu"
+      />
+      <a
+        class="sc-bxivhb bTkHyz"
+        href="#"
+      >
+        Button
+      </a>
+    </div>
+  </div>
+</body>
+`;

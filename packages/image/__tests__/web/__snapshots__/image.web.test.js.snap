@@ -11,7 +11,9 @@ exports[`1. default layout 1`] = `
   z-index: 2;
 }
 
-<div>
+<div
+  data-testid="Image"
+>
   <div>
     <img
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1000"
@@ -51,7 +53,9 @@ exports[`2. default layout without uri 1`] = `
   z-index: 2;
 }
 
-<div>
+<div
+  data-testid="Image"
+>
   <div>
     <img
       src={null}
@@ -91,7 +95,9 @@ exports[`3. default layout without aspect ratio 1`] = `
   z-index: 2;
 }
 
-<div>
+<div
+  data-testid="Image"
+>
   <div>
     <img
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
@@ -131,7 +137,9 @@ exports[`4. rounded image 1`] = `
   z-index: 2;
 }
 
-<div>
+<div
+  data-testid="Image"
+>
   <div>
     <img
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800"
@@ -171,7 +179,9 @@ exports[`5. with existing url params 1`] = `
   z-index: 2;
 }
 
-<div>
+<div
+  data-testid="Image"
+>
   <div>
     <img
       src="https://image.io?resize=1400"
@@ -211,7 +221,9 @@ exports[`6. with disabled placeholder 1`] = `
   z-index: 2;
 }
 
-<div>
+<div
+  data-testid="Image"
+>
   <div>
     <img
       src="https://image.io?resize=1400"
@@ -241,7 +253,9 @@ exports[`7. remove the low res image after the high res image has transitioned i
   z-index: 2;
 }
 
-<div>
+<div
+  data-testid="Image"
+>
   <div>
     <img
       src="https://image.io?resize=1400"
@@ -264,7 +278,9 @@ exports[`7. remove the low res image after the high res image has transitioned i
   z-index: 2;
 }
 
-<div>
+<div
+  data-testid="Image"
+>
   <div>
     <img
       src="https://image.io?resize=1400"
@@ -284,7 +300,9 @@ exports[`8. only a low res image 1`] = `
   z-index: 1;
 }
 
-<div>
+<div
+  data-testid="Image"
+>
   <div>
     <img
       src="https://image.io?resize=200"
@@ -324,7 +342,9 @@ exports[`9. fade in the low res image 1`] = `
   z-index: 1;
 }
 
-<div>
+<div
+  data-testid="Image"
+>
   <div>
     <img
       src="https://image.io?resize=200"
@@ -364,7 +384,9 @@ exports[`9. fade in the low res image 2`] = `
   z-index: 1;
 }
 
-<div>
+<div
+  data-testid="Image"
+>
   <div>
     <img
       src="https://image.io?resize=200"
@@ -394,7 +416,9 @@ exports[`10. both high and low res sizes 1`] = `
   z-index: 1;
 }
 
-<div>
+<div
+  data-testid="Image"
+>
   <div>
     <img
       src="https://image.io?resize=900"
