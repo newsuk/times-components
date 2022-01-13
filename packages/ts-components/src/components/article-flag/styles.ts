@@ -34,13 +34,11 @@ export const LiveArticleFlagContainer = styled.div`
 //   color: ${({backgroundColor}) => backgroundColor ? '#ffffff': null};
 // `;
 
-export const ArticleFlagBullet = styled.div<{backgroundColor?: boolean, child?: string}>`
+export const ArticleFlagBullet = styled.div`
   border-radius: 2.5px;
   height: 5px;
   width: 5px;
   background-color: ${({color}) => gqlRgbaToStyle(color) || color};
-  margin-right: ${({backgroundColor}) => backgroundColor ? '4px': 0};
-  line-height: ${({backgroundColor}) => backgroundColor ? '16px': 0};
 `;
 
 export const LiveDiamondContainer = styled.div`
