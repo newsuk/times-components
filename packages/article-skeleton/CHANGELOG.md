@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.64.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.10...@times-components/article-skeleton@1.64.11) (2022-01-13)
+
+
+### Bug Fixes
+
+* **TDP-000:** InlineRelatedArticles ([#2837](https://github.com/newsuk/times-components/issues/2837)) ([4fcda6b](https://github.com/newsuk/times-components/commit/4fcda6bd3b6a9362e10f4c30bbd8a7fb56d69d96))
+
+
+
+
+
 ## [1.64.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.9...@times-components/article-skeleton@1.64.10) (2022-01-12)
 
 **Note:** Version bump only for package @times-components/article-skeleton
