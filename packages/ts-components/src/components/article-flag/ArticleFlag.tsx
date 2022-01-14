@@ -60,14 +60,12 @@ const flagsMapping = () =>
     ["LONGREAD", <LongReadArticleFlag/>]
   ]);
 
-export type FlagType = 
-  {
-    expiryTime: string;
+export type FlagType = Array<{
+    expiryTime: string | null;
     type: string;
-  }
-;
+  }>;
 
-const FlagsView: React.FC<{allFlags: FlagType[]}> = ({allFlags}) => { 
+const FlagsView: React.FC<{allFlags: FlagType}> = ({allFlags}) => { 
   return (
     <Flags>
       {allFlags.map(flag => (
@@ -81,16 +79,20 @@ const FlagsView: React.FC<{allFlags: FlagType[]}> = ({allFlags}) => {
     </Flags>
    )};
 
-const ArticleFlags: React.FC<{ flags: FlagType[], longRead: boolean, withContainer: boolean }> = ({ flags=[], longRead=false, withContainer=false, }) => {
+const ArticleFlags: React.FC<{ flags: FlagType, longRead: boolean, withContainer: boolean }> = ({ flags=[], longRead=false, withContainer=false }) => {
   const activeFlags = getActiveFlags(flags);
-  const allFlags: FlagType[] = [
+  const allFlags = [
     ...activeFlags,
-    ...(longRead ? [{ type: "LONGREAD" }] : [])
+    ...(longRead ? [{ expiryTime: null, type: "LONGREAD" }] : [])
   ];
 
-  if (!allFlags.length) return null;
+  if (!allFlags.length) {
+    return null;
+  };
 
-  if (!withContainer) return <FlagsView allFlags={allFlags}/>;
+  if (!withContainer) { 
+    return <FlagsView allFlags={allFlags}/>;
+  };
 
   return <FlagsContainer><FlagsView allFlags={allFlags} /></FlagsContainer>;
 };
@@ -99,6 +101,7 @@ export default ArticleFlag;
 
 export {
   getActiveFlags,
+  ArticleFlag,
   ArticleFlags,
   NewArticleFlag,
   UpdatedArticleFlag,

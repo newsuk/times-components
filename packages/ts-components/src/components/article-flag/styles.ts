@@ -47,7 +47,7 @@ export const LiveArticleFlagTextContainer = styled.div`
   line-height: 16px;
 `;
 
-export const FlagPadding = styled.div<{allFlags: FlagType[]}>`
+export const FlagPadding = styled.div<{allFlags: FlagType}>`
   margin-right: ${({allFlags}) => allFlags.length > 1 ? "15px" : 0 };
 `
 export const Flags = styled.div`
