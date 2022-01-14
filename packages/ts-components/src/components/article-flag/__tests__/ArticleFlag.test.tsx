@@ -49,25 +49,25 @@ describe('ArticleFlag', () => {
 
   it('renders the updated article flag', () => {
     const { baseElement, getByText } = render(<UpdatedArticleFlag />);
-    expect(getByText('UPDATED')).toBeTruthy();
+    expect(getByText('updated')).toBeTruthy();
     expect(baseElement).toMatchSnapshot();
   });
 
   it('renders the exclusive article flag', () => {
     const { baseElement, getByText } = render(<ExclusiveArticleFlag />);
-    expect(getByText('EXCLUSIVE')).toBeTruthy();
+    expect(getByText('exclusive')).toBeTruthy();
     expect(baseElement).toMatchSnapshot();
   });
 
   it('renders the sponsored article flag', () => {
     const { baseElement, getByText } = render(<SponsoredArticleFlag />);
-    expect(getByText('SPONSORED')).toBeTruthy();
+    expect(getByText('sponsored')).toBeTruthy();
     expect(baseElement).toMatchSnapshot();
   });
 
   it('renders the long read article flag', () => {
     const { baseElement, getByText } = render(<LongReadArticleFlag />);
-    expect(getByText('LONGREAD')).toBeTruthy();
+    expect(getByText('long read')).toBeTruthy();
     expect(baseElement).toMatchSnapshot();
   });
 
