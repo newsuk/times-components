@@ -20,7 +20,7 @@ export const ArticleFlagBullet = styled.div`
   border-radius: 2.5px;
   height: 5px;
   width: 5px;
-  background-color: ${({color}) => gqlRgbaToStyle(color) || color};
+  background-color: ${({ color }) => gqlRgbaToStyle(color) || color};
 `;
 
 export const LiveDiamondContainer = styled.div`
@@ -36,8 +36,8 @@ export const ArticleFlagTextContainer = styled.div`
   letter-spacing: 0.6px;
   line-height: 12px;
   margin-left: 5px;
-  color: ${({color}) => gqlRgbaToStyle(color) || color};
-`
+  color: ${({ color }) => gqlRgbaToStyle(color) || color};
+`;
 export const LiveArticleFlagTextContainer = styled.div`
   font-family: ${fonts.supporting};
   color: #ffffff;
@@ -47,17 +47,16 @@ export const LiveArticleFlagTextContainer = styled.div`
   line-height: 16px;
 `;
 
-export const FlagPadding = styled.div<{allFlags: FlagType}>`
-  margin-right: ${({allFlags}) => allFlags.length > 1 ? "15px" : 0 };
-`
+export const FlagPadding = styled.div<{ allFlags: FlagType }>`
+  margin-right: ${({ allFlags }) => (allFlags.length > 1 ? '15px' : 0)};
+`;
 export const Flags = styled.div`
-  display: flex;    
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 10px;
-`
+`;
 export const FlagsContainer = styled.div`
   margin-bottom: 15px;
   margin-top: 5px;
-`
-
+`;
