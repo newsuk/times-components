@@ -1,18 +1,60 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<LiveArticleFlag> should render the component 1`] = `
+exports[`LiveArticleFlag should render the base live article flag 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa kEyujV"
+      class="sc-bwzfXH WFEid"
     >
       <div
-        class="sc-bwzfXH htodcl"
+        class="sc-bxivhb hmIbmT"
       >
         ◆
       </div>
       <div
-        class="sc-htpNat gQxwaB"
+        class="sc-EHOje jboioV"
+      >
+        BASE
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`LiveArticleFlag should render the breaking article flag 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bwzfXH WFEid"
+    >
+      <div
+        class="sc-bxivhb hmIbmT"
+      >
+        ◆
+      </div>
+      <div
+        class="sc-EHOje jboioV"
+      >
+        BREAKING
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`LiveArticleFlag should render the live article flag 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bwzfXH WFEid"
+    >
+      <div
+        class="sc-bxivhb hmIbmT"
+      >
+        ◆
+      </div>
+      <div
+        class="sc-EHOje jboioV"
       >
         LIVE
       </div>
