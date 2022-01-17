@@ -30,6 +30,8 @@ const ArticleHeader = ({
 }) => {
   const backgroundColour = gqlRgbaToStyle(rgbBackgroundColour);
   const textColour = gqlRgbaToStyle(rgbTextColour);
+
+  console.log('**flags in ArticleHeader*', flags);
   return (
     <Context.Consumer>
       {({ theme: { headlineFont, headlineCase } }) => (

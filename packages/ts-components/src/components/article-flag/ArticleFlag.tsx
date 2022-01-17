@@ -67,6 +67,7 @@ export type FlagType = Array<{
 }>;
 
 const FlagsView: React.FC<{ allFlags: FlagType }> = ({ allFlags }) => {
+  console.log('*AllFlags in FlagsView*', allFlags);
   return (
     <Flags>
       {allFlags.map(flag => (
@@ -88,7 +89,8 @@ const ArticleFlags: React.FC<{
     ...activeFlags,
     ...(longRead ? [{ expiryTime: null, type: 'LONGREAD' }] : [])
   ];
-
+  console.log('**AllFlags in ArticleFlags1*', allFlags);
+  console.log('**flags in ArticleFlags1*', flags);
   if (!allFlags.length) {
     return null;
   }
