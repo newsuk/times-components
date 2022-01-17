@@ -6,14 +6,19 @@ export {
   InfoCardBulletPoints
 } from './components/in-article-info-card-bulletpoints/InfoCardBulletPoints';
 export { BigNumbers } from './components/in-article-big-numbers/BigNumbers';
-export { BreakingArticleFlag, LiveArticleFlag } from './components/article-flag/LiveArticleFlag';
-export { ArticleFlag,
+export {
+  BreakingArticleFlag,
+  LiveArticleFlag
+} from './components/article-flag/LiveArticleFlag';
+export {
+  ArticleFlag,
   ArticleFlags,
   NewArticleFlag,
   UpdatedArticleFlag,
   ExclusiveArticleFlag,
   SponsoredArticleFlag,
-  LongReadArticleFlag } from './components/article-flag/ArticleFlag'
+  LongReadArticleFlag
+} from './components/article-flag/ArticleFlag';
 
 // Newsletter Components
 export {
