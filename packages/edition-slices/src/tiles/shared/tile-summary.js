@@ -5,8 +5,8 @@ import ArticleSummary, {
   ArticleSummaryHeadline,
   ArticleSummaryStrapline
 } from "@times-components/article-summary";
-import { ArticleFlags } from "@times-components/article-flag";
-import { colours } from "@times-components/styleguide";
+import { ArticleFlags } from "@times-components/ts-components";
+import { colours } from "@times-components/styleguide"; 
 import { ResponsiveContext } from "@times-components/responsive";
 import PositionedTileStar from "./positioned-tile-star";
 

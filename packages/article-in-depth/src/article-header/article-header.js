@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { ArticleFlags } from "@times-components/article-flag";
+import { ArticleFlags } from "@times-components/ts-components";
 import Context from "@times-components/context";
 import { fonts } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";

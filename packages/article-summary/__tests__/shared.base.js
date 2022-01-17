@@ -24,7 +24,7 @@ jest.mock("@times-components/article-byline", () => ({
   ArticleBylineOpinion: "ArticleBylineOpinion",
   default: "ArticleByline"
 }));
-jest.mock("@times-components/article-flag", () => ({
+jest.mock("@times-components/ts-components", () => ({
   ArticleFlags: "ArticleFlags"
 }));
 jest.mock("@times-components/article-label", () => "ArticleLabel");

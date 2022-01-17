@@ -1,4 +1,4 @@
-jest.mock("@times-components/article-flag", () => ({
+jest.mock("@times-components/ts-components", () => ({
   ArticleFlags: "ArticleFlags"
 }));
 jest.mock("@times-components/image", () => "Image");
