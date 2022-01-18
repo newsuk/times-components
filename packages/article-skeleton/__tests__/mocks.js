@@ -15,6 +15,13 @@ jest.mock("@times-components/article-byline", () => ({
   hasBylineData: () => true
 }));
 jest.mock("@times-components/article-extras", () => "ArticleExtras");
+jest.mock("@times-components/ts-components", () => ({
+  ...jest.requireActual("@times-components/ts-components"),
+  ExclusiveArticleFlag: "ExclusiveArticleFlag",
+  NewArticleFlag: "NewArticleFlag",
+  SponsoredArticleFlag: "SponsoredArticleFlag",
+  UpdatedArticleFlag: "UpdatedArticleFlag"
+}));
 jest.mock("@times-components/article-image", () => "ArticleImage");
 jest.mock("@times-components/article-topics", () => "ArticleTopics");
 jest.mock("@times-components/caption", () => "Caption");

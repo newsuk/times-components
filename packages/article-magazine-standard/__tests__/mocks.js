@@ -15,6 +15,7 @@ jest.mock("@times-components/article-byline", () => ({
 }));
 jest.mock("@times-components/article-extras", () => "ArticleExtras");
 jest.mock("@times-components/ts-components", () => ({
+  ...jest.requireActual("@times-components/ts-components"),
   ArticleFlags: "ArticleFlags"
 }));
 jest.mock("@times-components/article-image", () => "ArticleImage");
