@@ -14,6 +14,8 @@ import { TileLink, TileStar, TileSummary } from "../src/tiles/shared";
 import { ResponsiveSlice } from "../src/slices/shared";
 
 jest.mock("@times-components/ts-components", () => ({
+  __esModule: true,
+  ...jest.requireActual("@times-components/ts-components"),
   ArticleFlags: "ArticleFlags"
 }));
 
