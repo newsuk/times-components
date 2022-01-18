@@ -38,6 +38,15 @@ const STANDFIRST = 128;
 const VIDEO = 256;
 const TEASED_CONTENT = 512;
 
+const commentingConfig = {
+  account: {
+    current: process.env.STORYBOOK_COMMENTING_CURRENT_ID || "sp_pCQgrRiN",
+    readOnly: process.env.STORYBOOK_COMMENTING_READONLY_ID || "sp_pCQgrRiN"
+  },
+  switchOver:
+    process.env.STORYBOOK_COMMENTING_SWITCHOVER || "2023-10-10T16:00:00.000Z"
+};
+
 export const makeArticleConfiguration = ({
   withFlags,
   withHeadline,
@@ -283,6 +292,7 @@ const renderArticle = ({
             latestFromSection={latestFromSection.find(
               ({ section: sectionName }) => sectionName === section
             )}
+            commentingConfig={commentingConfig}
           />
         </ContextProviderWithDefaults>
       );
