@@ -1,4 +1,10 @@
 import { MockArticle, MockUser } from "@times-components/fixture-generator";
+import {
+  interceptImages,
+  checkDropCapChanges,
+  checkShareBarLoaded,
+  waitUntilSelectorExists
+} from '../cypress/support';
 
 const relatedArticleCount = 3;
 
@@ -18,7 +24,11 @@ const articleTemplateTest = (template, options = {}) => {
         .setRelatedArticles(relatedArticleCount)
         .setTemplate(template)
         .get();
-
+      const disableCache = (win) => {
+        const original = win.fetch;
+        win.fetch = (...args) => original(...args, { cache: "no-store" });
+      }
+      cy.on('window:before:load', win => disableCache(win))
       userWithBookmarks = new MockUser().setBookmarksTotal(3);
     });
 
@@ -104,6 +114,49 @@ const articleTemplateTest = (template, options = {}) => {
       }).visit(pageUrl);
 
       cy.get("script[data-spotim-module]").should("not.exist");
+    });
+
+    it.only("should match snapshots", () => {
+      const {
+        stickyElements = [],
+        blackoutElements = [],
+        attachFlags = false,
+        skipDropCapCheck = false,
+      } = options;
+
+      interceptImages();
+
+      let articleProps = attachFlags && {
+        ...sundayTimesArticleWithThreeRelatedArticles,
+        dropcapsDisabled: false,
+        sharingEnabled: true,
+        savingEnabled: true
+      } || sundayTimesArticleWithThreeRelatedArticles;
+
+      cy.task("startMockServerWith", {
+        Article: articleProps,
+        User: userWithBookmarks
+      }).visit(pageUrl).then(() => {
+        cy.wait(['@interceptingImages']);
+        if (attachFlags) {
+          let remainingAttempts = 3;
+          waitUntilSelectorExists(skipDropCapCheck, remainingAttempts);
+          !skipDropCapCheck && checkDropCapChanges('[class^="responsive__DropCap-"]',);
+          checkShareBarLoaded('[data-testid=save-and-share-bar]')
+        }
+
+        // changed the position of navigation bar element to absolute, so we don't see 
+        // duplicate elements floating
+        stickyElements.forEach(selector => {
+          cy.get(selector).then(el => {
+            return el.css('position', 'absolute')
+          });
+        });
+
+        cy.get('body').matchImageSnapshot({
+          blackout: blackoutElements
+        });
+      });
     });
 
     it("should pass basic a11y test", () => {
