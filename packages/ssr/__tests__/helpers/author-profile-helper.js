@@ -64,7 +64,7 @@ export default (options = {}) => {
       cy.checkA11y();
     });
 
-    it.only("should match snapshots", () => {
+    it("should match snapshots", () => {
       const {
         stickyElements = [],
       } = options;

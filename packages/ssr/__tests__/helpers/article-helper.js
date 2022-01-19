@@ -116,7 +116,7 @@ const articleTemplateTest = (template, options = {}) => {
       cy.get("script[data-spotim-module]").should("not.exist");
     });
 
-    it.only("should match snapshots", () => {
+    it("should match snapshots", () => {
       const {
         stickyElements = [],
         blackoutElements = [],
