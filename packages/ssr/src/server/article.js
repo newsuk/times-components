@@ -26,7 +26,8 @@ module.exports = (
     latestFromSectionFlag,
     latestFromSection,
     olympicsKeys,
-    getFallbackThumbnailUrl169
+    getFallbackThumbnailUrl169,
+    commentCount
   },
   userState
 ) => {
@@ -80,7 +81,8 @@ module.exports = (
       algoliaSearchKeys,
       latestFromSectionFlag,
       latestFromSection,
-      olympicsKeys
+      olympicsKeys,
+      commentCount
     },
     name: "article"
   };
