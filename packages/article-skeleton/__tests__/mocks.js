@@ -15,14 +15,26 @@ jest.mock("@times-components/article-byline", () => ({
   hasBylineData: () => true
 }));
 jest.mock("@times-components/article-extras", () => "ArticleExtras");
-// jest.mock("@times-components/ts-components", () => ({
-//   __esModule: true,
-//   ...jest.requireActual("@times-components/ts-components"),
-//   ExclusiveArticleFlag: "ExclusiveArticleFlag",
-//   NewArticleFlag: "NewArticleFlag",
-//   SponsoredArticleFlag: "SponsoredArticleFlag",
-//   UpdatedArticleFlag: "UpdatedArticleFlag"
-// }));
+jest.mock("@times-components/ts-components", () => ({
+  __esModule: true,
+  ...jest.requireActual("@times-components/ts-components"),
+  ExclusiveArticleFlag: "ExclusiveArticleFlag",
+  NewArticleFlag: "NewArticleFlag",
+  SponsoredArticleFlag: "SponsoredArticleFlag",
+  UpdatedArticleFlag: "UpdatedArticleFlag",
+  InlineNewsletterPuff: "InlineNewsletterPuff",
+  AutoNewsletterPuff: "AutoNewsletterPuff",
+  OptaFootballFixtures: "OptaFootballFixtures",
+  OptaFootballStandings: "OptaFootballStandings",
+  OptaFootballSummary: "OptaFootballSummary",
+  OlympicsMedalTable: "OlympicsMedalTable",
+  OlympicsSchedule: "OlympicsSchedule",
+  InArticlePuff: "InArticlePuff",
+  InfoCard: "InfoCard",
+  GalleryCarousel: "GalleryCarousel",
+  InfoCardBulletPoints: "InfoCardBulletPoints",
+  BigNumbers: "BigNumbers"
+}));
 jest.mock("@times-components/article-image", () => "ArticleImage");
 jest.mock("@times-components/article-topics", () => "ArticleTopics");
 jest.mock("@times-components/caption", () => "Caption");
