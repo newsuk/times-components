@@ -1,12 +1,16 @@
 import get from "lodash.get";
 import { withTrackingContext } from "@times-components/tracking";
-import { getRegistrationType, getSharedStatus, getIsLiveOrBreakingFlag } from "../data-helper";
+import {
+  getRegistrationType,
+  getSharedStatus,
+  getIsLiveOrBreakingFlag
+} from "../data-helper";
 
 export default Component =>
   withTrackingContext(Component, {
     getAttrs: ({ data, pageSection, navigationMode, referralUrl = "" }) => {
       let editionType = "";
-      
+
       if (navigationMode) {
         const { isMyArticles, isPastSixDays } = navigationMode;
         if (isMyArticles) {
