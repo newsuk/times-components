@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.65.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.12...@times-components/article-skeleton@1.65.0) (2022-01-20)
+
+
+### Features
+
+* **TDP-741:** live news article page analytics ([#2836](https://github.com/newsuk/times-components/issues/2836)) ([92b9d05](https://github.com/newsuk/times-components/commit/92b9d05abebb3af783c98cd4f1d13da12c88929e))
+
+
+
+
+
 ## [1.64.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.11...@times-components/article-skeleton@1.64.12) (2022-01-14)
 
 **Note:** Version bump only for package @times-components/article-skeleton
