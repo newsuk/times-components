@@ -82,6 +82,6 @@ export const getSharedStatus = () => {
 };
 
 export const getIsLiveOrBreakingFlag = flags =>
-  flags.find(flag => flag === "breaking" || flag === "live");
+  flags && flags.find(flag => flag === "breaking" || flag === "live");
 
 export default prepareDataForListView;

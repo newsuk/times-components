@@ -49,7 +49,7 @@ export default Component =>
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
         shared: getSharedStatus(),
-        other_details: getIsLiveOrBreakingFlag(data.expirableFlags)
+        other_details: getIsLiveOrBreakingFlag(get(data, "flags", "")) || ""
       };
     },
     trackingObjectName: "Article"
