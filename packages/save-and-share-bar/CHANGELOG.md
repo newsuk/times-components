@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.79](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.78...@times-components/save-and-share-bar@0.9.79) (2022-01-21)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
 ## [0.9.78](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.77...@times-components/save-and-share-bar@0.9.78) (2022-01-04)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar

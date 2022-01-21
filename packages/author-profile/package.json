@@ -1,6 +1,6 @@
 {
   "name": "@times-components/author-profile",
-  "version": "6.4.18",
+  "version": "6.4.19",
   "description": "Author profile information along with a list of articles they have written",
   "main": "dist/author-profile",
   "dev": "src/author-profile",
@@ -41,7 +41,7 @@
     "@times-components/jest-serializer": "3.2.29",
     "@times-components/mocks": "0.1.28",
     "@times-components/provider-queries": "2.15.3",
-    "@times-components/provider-test-tools": "1.21.1",
+    "@times-components/provider-test-tools": "1.22.0",
     "@times-components/storybook": "4.1.70",
     "@times-components/tealium-utils": "0.7.75",
     "@times-components/test-utils": "2.3.10",
@@ -69,7 +69,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-list": "9.7.58",
+    "@times-components/article-list": "9.7.59",
     "@times-components/gradient": "3.2.64",
     "@times-components/icons": "2.16.7",
     "@times-components/image": "6.8.12",
@@ -77,7 +77,7 @@
     "@times-components/markup": "3.4.64",
     "@times-components/markup-forest": "1.8.1",
     "@times-components/pagination": "3.4.56",
-    "@times-components/provider": "1.28.2",
+    "@times-components/provider": "1.29.0",
     "@times-components/responsive": "0.7.4",
     "@times-components/styleguide": "3.38.26",
     "@times-components/tracking": "2.9.4",

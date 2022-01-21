@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.37.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.36.17...@times-components/article-in-depth@3.37.0) (2022-01-21)
+
+
+### Features
+
+* **TDP-479:** Add article breaking flag ([#2831](https://github.com/newsuk/times-components/issues/2831)) ([f1f990a](https://github.com/newsuk/times-components/commit/f1f990ae8012fcb8d33fabc40494b1a7115cbab0))
+
+
+
+
+
 ## [3.36.17](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.36.16...@times-components/article-in-depth@3.36.17) (2022-01-21)
 
 **Note:** Version bump only for package @times-components/article-in-depth
