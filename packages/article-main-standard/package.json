@@ -58,7 +58,6 @@
   "dependencies": {
     "@times-components/ad": "2.16.4",
     "@times-components/article-byline": "3.5.42",
-    "@times-components/article-flag": "2.12.7",
     "@times-components/article-label": "2.7.63",
     "@times-components/article-lead-asset": "1.6.49",
     "@times-components/article-skeleton": "1.65.1",
@@ -68,6 +67,7 @@
     "@times-components/date-publication": "0.21.65",
     "@times-components/responsive": "0.7.4",
     "@times-components/styleguide": "3.38.26",
+    "@times-components/ts-components": "1.17.1",
     "@times-components/user-state": "0.1.67",
     "@times-components/utils": "6.5.10",
     "@times-components/video-label": "2.4.68",
