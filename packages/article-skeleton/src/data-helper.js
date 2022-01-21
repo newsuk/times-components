@@ -93,11 +93,10 @@ export const getIsLiveOrBreakingFlag = flags => {
         return liveOrBreaking.includes(flag);
       }
       isObject = true;
-      return liveOrBreaking.includes(flag.type);
+      return flag.type && liveOrBreaking.includes(flag.type);
     });
 
-  return isObject ? findFlag.type : findFlag;
+  return isObject && findFlag ? findFlag.type : findFlag;
 };
-
 
 export default prepareDataForListView;
