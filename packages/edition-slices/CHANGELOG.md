@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.105.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.104.36...@times-components/edition-slices@0.105.0) (2022-01-21)
+
+
+### Features
+
+* **TDP-479:** Add article breaking flag ([#2831](https://github.com/newsuk/times-components/issues/2831)) ([f1f990a](https://github.com/newsuk/times-components/commit/f1f990ae8012fcb8d33fabc40494b1a7115cbab0))
+
+
+
+
+
 ## [0.104.36](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.104.35...@times-components/edition-slices@0.104.36) (2022-01-12)
 
 **Note:** Version bump only for package @times-components/edition-slices

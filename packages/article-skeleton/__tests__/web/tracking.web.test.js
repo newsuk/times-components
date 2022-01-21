@@ -17,23 +17,6 @@ import {
 } from "../../src/data-helper";
 import shared from "../shared-tracking";
 
-jest.mock("@times-components/ts-components", () => ({
-  __esModule: true,
-  ...jest.requireActual("@times-components/ts-components"),
-  InlineNewsletterPuff: "InlineNewsletterPuff",
-  AutoNewsletterPuff: "AutoNewsletterPuff",
-  OptaFootballFixtures: "OptaFootballFixtures",
-  OptaFootballStandings: "OptaFootballStandings",
-  OptaFootballSummary: "OptaFootballSummary",
-  OlympicsMedalTable: "OlympicsMedalTable",
-  OlympicsSchedule: "OlympicsSchedule",
-  InArticlePuff: "InArticlePuff",
-  InfoCard: "InfoCard",
-  GalleryCarousel: "GalleryCarousel",
-  InfoCardBulletPoints: "InfoCardBulletPoints",
-  BigNumbers: "BigNumbers"
-}));
-
 beforeEach(() => {
   mockDate.set(1514764800000, 0);
   global.nuk = { user: { registrationType: "logged out" } };

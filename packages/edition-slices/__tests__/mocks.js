@@ -5,7 +5,9 @@ jest.mock("../src/tiles", () => {
   });
   return tileMocks;
 });
-jest.mock("@times-components/article-flag", () => ({
+jest.mock("@times-components/ts-components", () => ({
+  __esModule: true,
+  ...jest.requireActual("@times-components/ts-components"),
   ArticleFlags: "ArticleFlags"
 }));
 jest.mock("@times-components/icons", () => ({
