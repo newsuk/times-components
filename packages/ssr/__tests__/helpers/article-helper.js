@@ -23,11 +23,6 @@ const articleTemplateTest = (template, options = {}) => {
         .setRelatedArticles(relatedArticleCount)
         .setTemplate(template)
         .get();
-      const disableCache = (win) => {
-        const original = win.fetch;
-        win.fetch = (...args) => original(...args, { cache: "no-store" });
-      }
-      cy.on('window:before:load', win => disableCache(win))
       userWithBookmarks = new MockUser().setBookmarksTotal(3);
     });
 
@@ -123,7 +118,7 @@ const articleTemplateTest = (template, options = {}) => {
         skipDropCapCheck = false,
       } = options;
 
-      let articleProps = attachFlags && {
+      const articleProps = attachFlags && {
         ...sundayTimesArticleWithThreeRelatedArticles,
         dropcapsDisabled: false,
         sharingEnabled: true,
@@ -135,18 +130,15 @@ const articleTemplateTest = (template, options = {}) => {
         User: userWithBookmarks
       }).visit(pageUrl).then(() => {
         if (attachFlags) {
-          let remainingAttempts = 3;
-          waitUntilSelectorExists(skipDropCapCheck, remainingAttempts);
-          !skipDropCapCheck && checkDropCapChanges('[class^="responsive__DropCap-"]',);
+          waitUntilSelectorExists(skipDropCapCheck, 3);
+          if(!skipDropCapCheck) checkDropCapChanges('[class^="responsive__DropCap-"]',);
           checkShareBarLoaded('[data-testid=save-and-share-bar]')
         }
 
         // changed the position of navigation bar element to absolute, so we don't see 
         // duplicate elements floating
         stickyElements.forEach(selector => {
-          cy.get(selector).then(el => {
-            return el.css('position', 'absolute')
-          });
+          cy.get(selector).then(el => el.css('position', 'absolute'));
         });
         cy.get('body').matchImageSnapshot({
           blackout: blackoutElements

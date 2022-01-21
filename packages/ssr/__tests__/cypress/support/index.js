@@ -59,24 +59,21 @@ export const waitUntilSelectorExists = (skipDropCapCheck, remainingAttempts) => 
   if (skipDropCapCheck) {
     selector = '[data-testid="save-and-share-bar"]'
   }
-  let $el = Cypress.$(selector);
+  const $el = Cypress.$(selector);
   if ($el.length) {
     // At least one tag was found.
     // Return a jQuery object.
     return $el;
   }
 
-  if (--remainingAttempts) {
-    cy.log('Selector not found yet. Remaining attempts: ' +
-      remainingAttempts);
+  if (remainingAttempts-1) {
+    cy.log(`Selector not found yet. Remaining attempts: ${remainingAttempts}`);
 
     // Requesting the page to reload (F5)
     cy.reload(true);
 
     // Wait a second for the server to respond and the DOM to be updated.
-    return cy.wait(1000).then(() => {
-      return waitUntilSelectorExists(skipDropCapCheck, remainingAttempts);
-    });
+    return cy.wait(1000).then(waitUntilSelectorExists(skipDropCapCheck, remainingAttempts));
   }
   throw Error('Selector was not found.');
 }
