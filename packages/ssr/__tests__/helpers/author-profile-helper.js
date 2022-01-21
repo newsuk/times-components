@@ -65,16 +65,13 @@ export default (options = {}) => {
     });
 
     it("should match snapshots", () => {
-      const {
-        stickyElements = [],
-      } = options;
-      // changed the position of navigation bar element to absolute, so we don't see 
+      const { stickyElements = [] } = options;
+      // changed the position of navigation bar element to absolute, so we don't see
       // duplicate elements floating
       stickyElements.forEach(selector => {
-        cy.get(selector).then(el => el.css('position', 'absolute'));
+        cy.get(selector).then(el => el.css("position", "absolute"));
       });
       cy.matchImageSnapshot();
     });
-
   });
 };
