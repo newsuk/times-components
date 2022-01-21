@@ -14,7 +14,9 @@ jest.mock("@times-components/article-byline", () => ({
   hasBylineData: () => true
 }));
 jest.mock("@times-components/article-extras", () => "ArticleExtras");
-jest.mock("@times-components/article-flag", () => ({
+jest.mock("@times-components/ts-components", () => ({
+  __esModule: true,
+  ...jest.requireActual("@times-components/ts-components"),
   ArticleFlags: "ArticleFlags"
 }));
 jest.mock("@times-components/article-image", () => "ArticleImage");

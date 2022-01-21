@@ -1126,24 +1126,28 @@
   ],
   "expirableFlags": [
     {
+      "type": "BREAKING",
+      "expiryTime": "2030-03-13T13:00:00.000Z"
+    },
+    {
       "type": "NEW",
-      "expiryTime": "2022-03-13T15:00:00.000Z"
+      "expiryTime": "2030-03-13T15:00:00.000Z"
     },
     {
       "type": "UPDATED",
-      "expiryTime": "2022-03-13T15:00:00.000Z"
+      "expiryTime": "2030-03-13T15:00:00.000Z"
     },
     {
       "type": "EXCLUSIVE",
-      "expiryTime": "2022-03-13T15:00:00.000Z"
+      "expiryTime": "2030-03-13T15:00:00.000Z"
     },
     {
       "type": "SPONSORED",
-      "expiryTime": "2022-03-13T13:00:00.000Z"
+      "expiryTime": "2030-03-13T13:00:00.000Z"
     },
     {
       "type": "LIVE",
-      "expiryTime": "2022-03-13T13:00:00.000Z"
+      "expiryTime": "2030-03-13T13:00:00.000Z"
     }
   ],
   "hasVideo": true,

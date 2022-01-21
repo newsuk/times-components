@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.29.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.28.2...@times-components/provider@1.29.0) (2022-01-21)
+
+
+### Features
+
+* **TDP-479:** Add article breaking flag ([#2831](https://github.com/newsuk/times-components/issues/2831)) ([f1f990a](https://github.com/newsuk/times-components/commit/f1f990ae8012fcb8d33fabc40494b1a7115cbab0))
+
+
+
+
+
 ## [1.28.2](https://github.com/newsuk/times-components/compare/@times-components/provider@1.28.1...@times-components/provider@1.28.2) (2022-01-04)
 
 **Note:** Version bump only for package @times-components/provider

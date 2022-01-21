@@ -99,4 +99,5 @@ export const getIsLiveOrBreakingFlag = flags => {
   return isObject ? findFlag.type : findFlag;
 };
 
+
 export default prepareDataForListView;
