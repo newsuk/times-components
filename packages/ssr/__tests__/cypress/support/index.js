@@ -35,19 +35,6 @@ Cypress.on("uncaught:exception", err => {
   return true;
 });
 
-export const interceptImages = () => {
-  cy.intercept(
-    '**/imageserver/image/methode**',
-    { middleware: true },
-    (req) => {
-      req.on('before:response', (res) => {
-        // force all API responses to not be cached
-        res.headers['cache-control'] = 'no-store'
-      })
-    }
-  ).as('interceptingImages')
-}
-
 export const checkDropCapChanges = (path) => {
   cy.waitUntil(() => cy.get(path).should('be.visible') // yields <nav>
     .should('have.css', 'font-family') // yields 'sans-serif'

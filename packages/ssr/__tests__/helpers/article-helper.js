@@ -1,6 +1,5 @@
 import { MockArticle, MockUser } from "@times-components/fixture-generator";
 import {
-  interceptImages,
   checkDropCapChanges,
   checkShareBarLoaded,
   waitUntilSelectorExists
@@ -124,8 +123,6 @@ const articleTemplateTest = (template, options = {}) => {
         skipDropCapCheck = false,
       } = options;
 
-      interceptImages();
-
       let articleProps = attachFlags && {
         ...sundayTimesArticleWithThreeRelatedArticles,
         dropcapsDisabled: false,
@@ -137,7 +134,6 @@ const articleTemplateTest = (template, options = {}) => {
         Article: articleProps,
         User: userWithBookmarks
       }).visit(pageUrl).then(() => {
-        cy.wait(['@interceptingImages']);
         if (attachFlags) {
           let remainingAttempts = 3;
           waitUntilSelectorExists(skipDropCapCheck, remainingAttempts);
