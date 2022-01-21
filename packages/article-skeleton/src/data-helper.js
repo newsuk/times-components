@@ -81,7 +81,15 @@ export const getSharedStatus = () => {
   return user && user.isShared ? "yes" : "no";
 };
 
-export const getIsLiveOrBreakingFlag = flags =>
-  flags && flags.find(flag => flag === "breaking" || flag === "live");
+export const getIsLiveOrBreakingFlag = flags => {
+  const liveOrBreaking = ["LIVE", "BREAKING"]
+  const isArrayOfStrings = flags[0] instanceof String
+  const findFlag = flags.find(flag => isArrayOfStrings ? liveOrBreaking.includes(flag) : liveOrBreaking.includes(flag.type))
+  
+  return isArrayOfStrings ? findFlag() : findFlag().type
+}
+
+
+
 
 export default prepareDataForListView;
