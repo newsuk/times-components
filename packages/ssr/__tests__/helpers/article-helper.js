@@ -129,7 +129,7 @@ const articleTemplateTest = (template, options = {}) => {
         sharingEnabled: true,
         savingEnabled: true
       } || sundayTimesArticleWithThreeRelatedArticles;
-
+      cy.viewport(1000, 3068);
       cy.task("startMockServerWith", {
         Article: articleProps,
         User: userWithBookmarks
@@ -148,7 +148,6 @@ const articleTemplateTest = (template, options = {}) => {
             return el.css('position', 'absolute')
           });
         });
-
         cy.get('body').matchImageSnapshot({
           blackout: blackoutElements
         });
