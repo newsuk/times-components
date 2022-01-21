@@ -124,7 +124,6 @@ const articleTemplateTest = (template, options = {}) => {
         sharingEnabled: true,
         savingEnabled: true
       } || sundayTimesArticleWithThreeRelatedArticles;
-      cy.viewport(1000, 3068);
       cy.task("startMockServerWith", {
         Article: articleProps,
         User: userWithBookmarks

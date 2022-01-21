@@ -7,11 +7,6 @@ const mockTpa = require("@times-components/mock-tpa-server");
 const failed = require("cypress-failed-log/src/failed");
 
 module.exports = (on, config) => {
-  on('before:browser:launch', (browser = {}, args) => {
-    if (browser.name === 'chrome') {
-      args.push('--window-size=1000,3068');
-    }
-  });
   addMatchImageSnapshotPlugin(on, config);
 
   on("task", {
