@@ -18,6 +18,6 @@ module.exports = (on, config) => {
     },
     failed: failed()
   });
-  
+
   return config;
 };
