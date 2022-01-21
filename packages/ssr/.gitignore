@@ -3,3 +3,4 @@ __tests__/videos
 __tests__/screenshots
 cypress/logs
 **/__diff_output__
+.env
