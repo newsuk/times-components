@@ -4,6 +4,7 @@ articleTests("mainstandard", {
   stickyElements: ["#nav"],
   attachFlags: true,
   skipDropCapCheck: true,
+  skipSnapshotTest: true,
   blackoutElements: [
     "[data-testid=save-and-share-bar]",
     '[data-tc-sticky-container="true"]',

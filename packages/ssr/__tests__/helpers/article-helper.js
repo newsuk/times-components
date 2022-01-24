@@ -115,9 +115,10 @@ const articleTemplateTest = (template, options = {}) => {
         stickyElements = [],
         blackoutElements = [],
         attachFlags = false,
-        skipDropCapCheck = false
+        skipDropCapCheck = false,
+        skipSnapshotTest = false
       } = options;
-
+      if (skipSnapshotTest) return;
       const articleProps =
         (attachFlags && {
           ...sundayTimesArticleWithThreeRelatedArticles,
