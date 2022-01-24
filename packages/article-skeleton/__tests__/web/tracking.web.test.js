@@ -10,7 +10,11 @@ import ArticleSkeleton from "../../src/article-skeleton";
 import articleFixture from "../../fixtures/full-article";
 import ArticleLink from "../../src/article-body/article-link";
 import articleSkeletonProps from "../shared-article-skeleton-props";
-import { getRegistrationType, getSharedStatus } from "../../src/data-helper";
+import {
+  getRegistrationType,
+  getSharedStatus,
+  getIsLiveOrBreakingFlag
+} from "../../src/data-helper";
 import shared from "../shared-tracking";
 
 beforeEach(() => {
@@ -55,12 +59,22 @@ it("analytics when rendering a shared Article page with metered access", () => {
   expect(stream.mock.calls).toMatchSnapshot();
 });
 
-it("getRegistrationType helper function", () => {
-  expect(getRegistrationType()).toEqual("logged out");
-});
+describe("helper functions", () => {
+  it("getRegistrationType helper function", () => {
+    expect(getRegistrationType()).toEqual("logged out");
+  });
 
-it("getSharedStatus helper function", () => {
-  expect(getSharedStatus()).toEqual("no");
+  it("getSharedStatus helper function", () => {
+    expect(getSharedStatus()).toEqual("no");
+  });
+
+  it("getIsLiveOrBreakingFlag helper function", () => {
+    expect(getIsLiveOrBreakingFlag([{ type: "LIVE" }])).toEqual("LIVE");
+  });
+
+  it("getIsLiveOrBreakingFlag helper function", () => {
+    expect(getIsLiveOrBreakingFlag(["LIVE"])).toEqual("LIVE");
+  });
 });
 
 it("should track ArticleLink clicks in analytics", () => {
