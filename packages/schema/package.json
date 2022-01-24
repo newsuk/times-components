@@ -37,7 +37,7 @@
     "apollo-cache-inmemory": "1.5.1",
     "chalk": "2.4.1",
     "graphql": "14.2.1",
-    "node-fetch": "2.6.1"
+    "node-fetch": "2.6.7"
   },
   "publishConfig": {
     "access": "public"
