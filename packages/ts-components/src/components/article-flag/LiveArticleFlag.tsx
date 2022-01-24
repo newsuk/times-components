@@ -1,9 +1,21 @@
 import React from 'react';
-import { Container, BulletContainer, Title } from './styles';
+import {
+  LiveArticleFlagContainer,
+  LiveDiamondContainer,
+  LiveArticleFlagTextContainer
+} from './styles';
+
+export const BaseLiveArticleFlag: React.FC<{ title: string }> = ({ title }) => (
+  <LiveArticleFlagContainer>
+    <LiveDiamondContainer>{'\u25c6'}</LiveDiamondContainer>
+    <LiveArticleFlagTextContainer>{title}</LiveArticleFlagTextContainer>
+  </LiveArticleFlagContainer>
+);
 
 export const LiveArticleFlag: React.FC = () => (
-  <Container>
-    <BulletContainer>{'\u25c6'}</BulletContainer>
-    <Title>LIVE</Title>
-  </Container>
+  <BaseLiveArticleFlag title="LIVE" />
+);
+
+export const BreakingArticleFlag: React.FC = () => (
+  <BaseLiveArticleFlag title="BREAKING" />
 );

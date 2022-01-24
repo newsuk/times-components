@@ -1,0 +1,394 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleFlag does not render article flags if there are none 1`] = `
+<body>
+  <div />
+</body>
+`;
+
+exports[`ArticleFlag renders a red article flag 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa fXEEbM"
+    >
+      <div
+        class="sc-htpNat ZOZQE"
+        color="red"
+      />
+      <div
+        aria-label="Coloured Red Flag"
+        class="sc-ifAKCX dTECV"
+        color="red"
+        data-testid="flag-Coloured Red"
+      >
+        coloured red
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleFlag renders an article flag 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa fXEEbM"
+    >
+      <div
+        class="sc-htpNat qvwfW"
+        color=""
+      />
+      <div
+        aria-label="No Colour Flag"
+        class="sc-ifAKCX juPnZa"
+        color=""
+        data-testid="flag-No Colour"
+      >
+        no colour
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleFlag renders multiple article flags 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-gzVnrw kpMYNz"
+    >
+      <div
+        class="sc-bZQynM fMCtl"
+      >
+        <div
+          class="sc-bdVaJa fXEEbM"
+        >
+          <div
+            class="sc-htpNat fugARQ"
+            color="#3C81BE"
+          />
+          <div
+            aria-label="updated Flag"
+            class="sc-ifAKCX hSeRZN"
+            color="#3C81BE"
+            data-testid="flag-updated"
+          >
+            updated
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-bZQynM fMCtl"
+      >
+        <div
+          class="sc-bdVaJa fXEEbM"
+        >
+          <div
+            class="sc-htpNat dZoUoM"
+            color="#C51D24"
+          />
+          <div
+            aria-label="exclusive Flag"
+            class="sc-ifAKCX fupmhj"
+            color="#C51D24"
+            data-testid="flag-exclusive"
+          >
+            exclusive
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-bZQynM fMCtl"
+      >
+        <div
+          class="sc-bdVaJa fXEEbM"
+        >
+          <div
+            class="sc-htpNat jkDJOE"
+            color="#E34605"
+          />
+          <div
+            aria-label="new Flag"
+            class="sc-ifAKCX iquuBv"
+            color="#E34605"
+            data-testid="flag-new"
+          >
+            new
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-bZQynM fMCtl"
+      >
+        <div
+          class="sc-bdVaJa fXEEbM"
+        >
+          <div
+            class="sc-htpNat gaRHEk"
+            color="#4D4D4D"
+          />
+          <div
+            aria-label="sponsored Flag"
+            class="sc-ifAKCX fzZyiZ"
+            color="#4D4D4D"
+            data-testid="flag-sponsored"
+          >
+            sponsored
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-bZQynM fMCtl"
+      >
+        <div
+          class="sc-bdVaJa fXEEbM"
+        >
+          <div
+            class="sc-htpNat fRxTiY"
+            color="#696969"
+          />
+          <div
+            aria-label="long read Flag"
+            class="sc-ifAKCX cRBzVF"
+            color="#696969"
+            data-testid="flag-long read"
+          >
+            long read
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleFlag renders multiple article flags in a container 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-htoDjs gNxXwX"
+    >
+      <div
+        class="sc-gzVnrw kpMYNz"
+      >
+        <div
+          class="sc-bZQynM fMCtl"
+        >
+          <div
+            class="sc-bdVaJa fXEEbM"
+          >
+            <div
+              class="sc-htpNat fugARQ"
+              color="#3C81BE"
+            />
+            <div
+              aria-label="updated Flag"
+              class="sc-ifAKCX hSeRZN"
+              color="#3C81BE"
+              data-testid="flag-updated"
+            >
+              updated
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-bZQynM fMCtl"
+        >
+          <div
+            class="sc-bdVaJa fXEEbM"
+          >
+            <div
+              class="sc-htpNat dZoUoM"
+              color="#C51D24"
+            />
+            <div
+              aria-label="exclusive Flag"
+              class="sc-ifAKCX fupmhj"
+              color="#C51D24"
+              data-testid="flag-exclusive"
+            >
+              exclusive
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-bZQynM fMCtl"
+        >
+          <div
+            class="sc-bdVaJa fXEEbM"
+          >
+            <div
+              class="sc-htpNat jkDJOE"
+              color="#E34605"
+            />
+            <div
+              aria-label="new Flag"
+              class="sc-ifAKCX iquuBv"
+              color="#E34605"
+              data-testid="flag-new"
+            >
+              new
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-bZQynM fMCtl"
+        >
+          <div
+            class="sc-bdVaJa fXEEbM"
+          >
+            <div
+              class="sc-htpNat gaRHEk"
+              color="#4D4D4D"
+            />
+            <div
+              aria-label="sponsored Flag"
+              class="sc-ifAKCX fzZyiZ"
+              color="#4D4D4D"
+              data-testid="flag-sponsored"
+            >
+              sponsored
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-bZQynM fMCtl"
+        >
+          <div
+            class="sc-bdVaJa fXEEbM"
+          >
+            <div
+              class="sc-htpNat fRxTiY"
+              color="#696969"
+            />
+            <div
+              aria-label="long read Flag"
+              class="sc-ifAKCX cRBzVF"
+              color="#696969"
+              data-testid="flag-long read"
+            >
+              long read
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleFlag renders the exclusive article flag 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa fXEEbM"
+    >
+      <div
+        class="sc-htpNat dZoUoM"
+        color="#C51D24"
+      />
+      <div
+        aria-label="exclusive Flag"
+        class="sc-ifAKCX fupmhj"
+        color="#C51D24"
+        data-testid="flag-exclusive"
+      >
+        exclusive
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleFlag renders the long read article flag 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa fXEEbM"
+    >
+      <div
+        class="sc-htpNat fRxTiY"
+        color="#696969"
+      />
+      <div
+        aria-label="long read Flag"
+        class="sc-ifAKCX cRBzVF"
+        color="#696969"
+        data-testid="flag-long read"
+      >
+        long read
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleFlag renders the new article flag 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa fXEEbM"
+    >
+      <div
+        class="sc-htpNat jkDJOE"
+        color="#E34605"
+      />
+      <div
+        aria-label="new Flag"
+        class="sc-ifAKCX iquuBv"
+        color="#E34605"
+        data-testid="flag-new"
+      >
+        new
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleFlag renders the sponsored article flag 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa fXEEbM"
+    >
+      <div
+        class="sc-htpNat gaRHEk"
+        color="#4D4D4D"
+      />
+      <div
+        aria-label="sponsored Flag"
+        class="sc-ifAKCX fzZyiZ"
+        color="#4D4D4D"
+        data-testid="flag-sponsored"
+      >
+        sponsored
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleFlag renders the updated article flag 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa fXEEbM"
+    >
+      <div
+        class="sc-htpNat fugARQ"
+        color="#3C81BE"
+      />
+      <div
+        aria-label="updated Flag"
+        class="sc-ifAKCX hSeRZN"
+        color="#3C81BE"
+        data-testid="flag-updated"
+      >
+        updated
+      </div>
+    </div>
+  </div>
+</body>
+`;
