@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.8.45](https://github.com/newsuk/times-components/compare/@times-components/article@7.8.44...@times-components/article@7.8.45) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
 ## [7.8.44](https://github.com/newsuk/times-components/compare/@times-components/article@7.8.43...@times-components/article@7.8.44) (2022-01-21)
 
 **Note:** Version bump only for package @times-components/article

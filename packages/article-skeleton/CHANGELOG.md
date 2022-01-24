@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.67.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.66.0...@times-components/article-skeleton@1.67.0) (2022-01-24)
+
+
+### Features
+
+* **TDP-741:** live news fixing helper function & updating code owners ([#2844](https://github.com/newsuk/times-components/issues/2844)) ([b9ed88c](https://github.com/newsuk/times-components/commit/b9ed88c5d1a0f86a560f6322c2bbf90255e0b20d))
+
+
+
+
+
 # [1.66.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.65.1...@times-components/article-skeleton@1.66.0) (2022-01-21)
 
 
