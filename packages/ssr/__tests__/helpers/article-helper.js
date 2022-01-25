@@ -119,7 +119,7 @@ const articleTemplateTest = (template, options = {}) => {
         skipSnapshotTest = false
       } = options;
       if (skipSnapshotTest) return; // we need to add docker to execute the snapshot testing as viewport is
-      // is mismatching while running the test cases on local server. Here is the link to the ticket 
+      // is mismatching while running the test cases on local server. Here is the link to the ticket
       // in which docker server will be used.: https://nidigitalsolutions.jira.com/browse/TDP-1249
       const articleProps =
         (attachFlags && {
