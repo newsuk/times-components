@@ -135,6 +135,8 @@ jobs:
                   working_directory: ~/project/
             - store_artifacts:
                 path: packages/ssr/__tests__/screenshots
+            - store_artifacts:
+                path: packages/ssr/__tests__/snapshots
 
     publish_coverage:
         executor: node
