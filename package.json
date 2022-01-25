@@ -121,7 +121,7 @@
     "metro-react-native-babel-preset": "0.53.1",
     "mkdirp": "0.5.1",
     "mockdate": "3.0.5",
-    "node-fetch": "2.6.1",
+    "node-fetch": "2.6.7",
     "opentype.js": "1.1.0",
     "prettier": "1.14.3",
     "prop-types": "15.7.2",
