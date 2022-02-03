@@ -1,6 +1,6 @@
 import React from "react";
 import Context from "@times-components/context";
-import { ArticleFlags } from "@times-components/article-flag";
+import { ArticleFlags } from "@times-components/ts-components";
 import { fonts } from "@times-components/styleguide";
 
 import Label from "../article-label/article-label";

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/jest-configurator",
-  "version": "2.7.4",
+  "version": "2.8.0",
   "description": "Cross platform Jest Config",
   "main": "lib/jest-configurator.js",
   "dev": "src/jest-configurator.js",

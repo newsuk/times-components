@@ -22,12 +22,12 @@ module.exports = (
     isPreview,
     swgProductId,
     additionalRelatedArticlesFlag,
-    inlineRelatedArticlesFlag,
     algoliaSearchKeys,
     latestFromSectionFlag,
     latestFromSection,
     olympicsKeys,
-    getFallbackThumbnailUrl169
+    getFallbackThumbnailUrl169,
+    commentCount
   },
   userState
 ) => {
@@ -78,11 +78,11 @@ module.exports = (
       isPreview,
       swgProductId,
       additionalRelatedArticlesFlag,
-      inlineRelatedArticlesFlag,
       algoliaSearchKeys,
       latestFromSectionFlag,
       latestFromSection,
-      olympicsKeys
+      olympicsKeys,
+      commentCount
     },
     name: "article"
   };

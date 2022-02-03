@@ -1,11 +1,17 @@
 import get from "lodash.get";
 import { withTrackingContext } from "@times-components/tracking";
-import { getRegistrationType, getSharedStatus } from "../data-helper";
+import {
+  getRegistrationType,
+  getSharedStatus,
+  getIsLiveOrBreakingFlag
+} from "../data-helper";
 
 export default Component =>
   withTrackingContext(Component, {
     getAttrs: ({ data, pageSection, navigationMode, referralUrl = "" }) => {
       let editionType = "";
+      const flags = data.expirableFlags || data.flags;
+
       if (navigationMode) {
         const { isMyArticles, isPastSixDays } = navigationMode;
         if (isMyArticles) {
@@ -43,7 +49,8 @@ export default Component =>
         section: pageSection || get(data, "section", ""),
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
-        shared: getSharedStatus()
+        shared: getSharedStatus(),
+        other_details: getIsLiveOrBreakingFlag(flags) || ""
       };
     },
     trackingObjectName: "Article"

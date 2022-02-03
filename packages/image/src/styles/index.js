@@ -11,13 +11,6 @@ const styles = {
     right: 0,
     top: 0,
     zIndex: 0
-  },
-  wrapper: {
-    display: "table",
-    height: 0,
-    overflow: "hidden",
-    position: "relative",
-    width: "100%"
   }
 };
 

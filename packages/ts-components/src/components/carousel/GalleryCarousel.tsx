@@ -205,11 +205,11 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
                   isWide={isWide(size)}
                   dangerouslySetInnerHTML={{
                     // @ts-ignore
-                    __html: sanitiseCopy(carouselData[current].data.copy, [
-                      'br',
-                      'b',
-                      'i'
-                    ])
+                    __html: sanitiseCopy(carouselData[current].data.copy, {
+                      br: {},
+                      b: {},
+                      i: {}
+                    })
                   }}
                 />
               )}

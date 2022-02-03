@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.22.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.22.0...@times-components/provider-test-tools@1.22.1) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+# [1.22.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.21.1...@times-components/provider-test-tools@1.22.0) (2022-01-21)
+
+
+### Features
+
+* **TDP-479:** Add article breaking flag ([#2831](https://github.com/newsuk/times-components/issues/2831)) ([f1f990a](https://github.com/newsuk/times-components/commit/f1f990ae8012fcb8d33fabc40494b1a7115cbab0))
+
+
+
+
+
+## [1.21.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.21.0...@times-components/provider-test-tools@1.21.1) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/provider-test-tools
+
+
+
+
+
+# [1.21.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.20.2...@times-components/provider-test-tools@1.21.0) (2021-12-21)
+
+
+### Features
+
+* **TDP-601:** Make live article flag separate to sponsored flag ([#2826](https://github.com/newsuk/times-components/issues/2826)) ([7c63ced](https://github.com/newsuk/times-components/commit/7c63cedc35660cf90d2dabe3e088260690a0b91c))
+
+
+
+
+
 ## [1.20.2](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.20.1...@times-components/provider-test-tools@1.20.2) (2021-12-02)
 
 **Note:** Version bump only for package @times-components/provider-test-tools

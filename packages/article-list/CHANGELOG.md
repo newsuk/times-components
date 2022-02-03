@@ -3,6 +3,86 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.7.60](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.59...@times-components/article-list@9.7.60) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.7.59](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.58...@times-components/article-list@9.7.59) (2022-01-21)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.7.58](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.57...@times-components/article-list@9.7.58) (2022-01-12)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.7.57](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.56...@times-components/article-list@9.7.57) (2022-01-10)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.7.56](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.55...@times-components/article-list@9.7.56) (2022-01-10)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.7.55](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.54...@times-components/article-list@9.7.55) (2022-01-07)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.7.54](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.53...@times-components/article-list@9.7.54) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.7.53](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.52...@times-components/article-list@9.7.53) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.7.52](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.51...@times-components/article-list@9.7.52) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.7.51](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.50...@times-components/article-list@9.7.51) (2021-12-21)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
 ## [9.7.50](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.7.49...@times-components/article-list@9.7.50) (2021-12-02)
 
 **Note:** Version bump only for package @times-components/article-list

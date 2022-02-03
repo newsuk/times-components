@@ -128,7 +128,7 @@ export const InArticlePuff: React.FC<{
               {copy && (
                 <Copy
                   dangerouslySetInnerHTML={{
-                    __html: sanitiseCopy(copy, ['b', 'i'])
+                    __html: sanitiseCopy(copy, { b: {}, i: {} })
                   }}
                 />
               )}

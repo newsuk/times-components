@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.31.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.31.0...@times-components/fixture-generator@0.31.1) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/fixture-generator
+
+
+
+
+
+# [0.31.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.30.2...@times-components/fixture-generator@0.31.0) (2022-01-21)
+
+
+### Features
+
+* **TDP-479:** Add article breaking flag ([#2831](https://github.com/newsuk/times-components/issues/2831)) ([f1f990a](https://github.com/newsuk/times-components/commit/f1f990ae8012fcb8d33fabc40494b1a7115cbab0))
+
+
+
+
+
+## [0.30.2](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.30.1...@times-components/fixture-generator@0.30.2) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/fixture-generator
+
+
+
+
+
 ## [0.30.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.30.0...@times-components/fixture-generator@0.30.1) (2021-12-02)
 
 **Note:** Version bump only for package @times-components/fixture-generator

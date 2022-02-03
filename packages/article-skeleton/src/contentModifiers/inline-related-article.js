@@ -13,12 +13,11 @@ const getInlineRelatedArticles = (attributes = {}) => ({
 
 const insertInlineRelatedArticles = (
   relatedArticleSlice,
-  inlineRelatedArticlesFlag,
   { afterParagraph = 7, paragraphPadding = 2 } = {}
 ) => articleContent => {
-  if (!inlineRelatedArticlesFlag) return articleContent;
-  const paywall = articleContent.find(item => item.name === "paywall");
+  if (!relatedArticleSlice || !relatedArticleSlice.items) return articleContent;
 
+  const paywall = articleContent.find(item => item.name === "paywall");
   if (!paywall) return articleContent;
 
   const allArticleContent = [...articleContent, ...paywall.children].filter(

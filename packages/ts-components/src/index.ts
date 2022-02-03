@@ -6,7 +6,19 @@ export {
   InfoCardBulletPoints
 } from './components/in-article-info-card-bulletpoints/InfoCardBulletPoints';
 export { BigNumbers } from './components/in-article-big-numbers/BigNumbers';
-export { LiveArticleFlag } from './components/article-flag/LiveArticleFlag';
+export {
+  BreakingArticleFlag,
+  LiveArticleFlag
+} from './components/article-flag/LiveArticleFlag';
+export {
+  ArticleFlag,
+  ArticleFlags,
+  NewArticleFlag,
+  UpdatedArticleFlag,
+  ExclusiveArticleFlag,
+  SponsoredArticleFlag,
+  LongReadArticleFlag
+} from './components/article-flag/ArticleFlag';
 
 // Newsletter Components
 export {
@@ -66,5 +78,8 @@ export {
   AlgoliaSearchProvider,
   useAlgoliaSearch
 } from './helpers/algolia/AlgoliaSearchProvider';
+export { HiddenDiv } from './components/common-styles';
 
 export { InlineMessage } from './components/inline-message/InlineMessage';
+
+export { InlineDialog } from './components/inline-dialog/InlineDialog';

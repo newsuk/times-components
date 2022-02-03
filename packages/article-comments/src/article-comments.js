@@ -1,7 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import UserState from "@times-components/user-state";
+import {
+  InlineDialog,
+  InlineMessage,
+  HiddenDiv
+} from "@times-components/ts-components";
+
 import Comments from "./comments";
+import getStoreLink from "./utils";
+
 import DisabledComments from "./disabled-comments";
+import { CommentContainer } from "./styles/responsive";
 
 const ArticleComments = ({
   articleId,
@@ -11,12 +21,37 @@ const ArticleComments = ({
   commentingConfig
 }) =>
   isEnabled ? (
-    <Comments
-      articleId={articleId}
-      publishedTime={publishedTime}
-      isReadOnly={isReadOnly}
-      commentingConfig={commentingConfig}
-    />
+    <>
+      <UserState state={UserState.metered}>
+        <InlineDialog
+          title="Join the conversation"
+          buttonText="Subscribe now"
+          href={getStoreLink()}
+        >
+          Commenting is only for subscribers. Upgrade your subscription to join
+          the conversation.
+        </InlineDialog>
+      </UserState>
+      <UserState state={UserState.subscriber}>
+        <CommentContainer>
+          <HiddenDiv className="comment-banner">
+            <InlineMessage title="Real-name Commenting" type="info">
+              We&apos;ve changed our policy and from now on commenters will need
+              to use their real names. If you&apos;ve been using a pseudonym,
+              please edit your screen name{" "}
+              <a href="https://home.thetimes.co.uk/">here</a>. We believe this
+              will ensure true debate.
+            </InlineMessage>
+          </HiddenDiv>
+        </CommentContainer>
+        <Comments
+          articleId={articleId}
+          publishedTime={publishedTime}
+          isReadOnly={isReadOnly}
+          commentingConfig={commentingConfig}
+        />
+      </UserState>
+    </>
   ) : (
     <DisabledComments />
   );

@@ -15,8 +15,8 @@ describe('SanitiseCopy', () => {
 
   it('sanitise with allowed tags', async () => {
     const copy = sanitiseCopy(
-      '<b>Spotify’s</b> most <i>popular</i> songs<br/><br>',
-      ['br', 'b', 'i']
+      '<p><b>Spotify’s</b> most <i>popular</i> songs<br/><br/></p>',
+      { br: {}, b: {}, i: {} }
     );
     expect(copy).toBe('<b>Spotify’s</b> most <i>popular</i> songs<br /><br />');
   });

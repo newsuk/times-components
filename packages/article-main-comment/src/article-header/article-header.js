@@ -1,5 +1,5 @@
 import React from "react";
-import { ArticleFlags } from "@times-components/article-flag";
+import { ArticleFlags } from "@times-components/ts-components";
 import Image from "@times-components/image";
 
 import Label from "../article-label/article-label";

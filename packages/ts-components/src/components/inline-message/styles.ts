@@ -8,7 +8,7 @@ const MessageConfig = {
 };
 export const Container = styled.div`
   display: flex;
-
+  margin-top: 50px;
   &.info {
     background-color: ${MessageConfig.info.background};
     border-left: 4px solid ${MessageConfig.info.foreground};

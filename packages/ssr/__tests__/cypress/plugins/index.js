@@ -1,7 +1,13 @@
-/* eslint-disable global-require */
+const {
+  addMatchImageSnapshotPlugin
+} = require("cypress-image-snapshot/plugin");
+
 const mockTpa = require("@times-components/mock-tpa-server");
 
-module.exports = on => {
+const failed = require("cypress-failed-log/src/failed");
+
+module.exports = (on, config) => {
+  addMatchImageSnapshotPlugin(on, config);
   on("task", {
     startMockServerWith(mockData) {
       return mockTpa.startWithMockData(mockData);
@@ -9,6 +15,8 @@ module.exports = on => {
     stopMockServer() {
       return mockTpa.stop();
     },
-    failed: require("cypress-failed-log/src/failed")()
+    failed: failed()
   });
+
+  return config;
 };

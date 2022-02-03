@@ -122,7 +122,11 @@ export const BigNumbers: React.FC<{
                     </NumberContainer>
                     <Copy
                       dangerouslySetInnerHTML={{
-                        __html: sanitiseCopy(row.data.copy, ['br', 'b', 'i'])
+                        __html: sanitiseCopy(row.data.copy, {
+                          br: {},
+                          b: {},
+                          i: {}
+                        })
                       }}
                     />
                   </ListItem>
