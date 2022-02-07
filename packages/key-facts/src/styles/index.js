@@ -1,14 +1,14 @@
 import { StyleSheet } from "react-native";
 import styleguide from "@times-components/styleguide";
 
-const { colours, fontFactory, fonts, fontSizes, spacing } = styleguide();
+const { colours, fonts, fontSizes, spacing } = styleguide();
 
 export default StyleSheet.create({
   bullet: {
-    borderRadius: 2.5,
-    height: 5,
+    height: 6,
     top: 2,
-    width: 5
+    width: 6,
+    backgroundColor: "#9F0000"
   },
   bulletContainer: {
     flexDirection: "row",
@@ -17,39 +17,30 @@ export default StyleSheet.create({
     width: "100%"
   },
   container: {
-    marginHorizontal: spacing(2),
-    marginVertical: spacing(1)
-  },
-  containerTablet: {
-    alignSelf: "center",
-    flexDirection: "row",
-    marginHorizontal: 0,
-    marginVertical: spacing(2),
-    width: "80.8%"
+    paddingHorizontal: "20px",
+    paddingVertical: "16px",
+    backgroundColor: colours.functional.backgroundPrimary,
+    borderTopWidth: "2px",
+    borderTopColor: "#9F0000",
   },
   link: {
     color: colours.functional.action
   },
   text: {
     color: colours.functional.primary,
-    ...fontFactory({
-      font: "body",
-      fontSize: "secondary"
-    }),
+    fontFamily: fonts.bodyRegular,
+    fontSize: fontSizes.infoSubText,
     marginTop: -8,
     paddingLeft: spacing(3),
     width: "95%"
   },
   title: {
-    fontFamily: fonts.supporting,
+    fontFamily: fonts.headlineRegular,
     fontSize: fontSizes.keyFactsTitle,
     fontWeight: "400",
     letterSpacing: 1.2,
-    marginBottom: spacing(4)
-  },
-  titleTablet: {
-    paddingRight: spacing(4),
-    width: "20%"
+    marginBottom: spacing(4),
+    color: colours.functional.brandColour,
   },
   wrapper: {
     flex: 1
