@@ -1,13 +1,7 @@
 import React from "react";
-import { View } from "react-native";
-import Context from "@times-components/context";
-import styleguide, { colours } from "@times-components/styleguide";
-import KeyFactsContainer from "./key-facts-container";
 import KeyFactsText from "./key-facts-text";
-import KeyFactsTitle from "./key-facts-title";
-import KeyFactsWrapper from "./key-facts-wrapper";
 import { defaultProps, propTypes } from "./key-facts-prop-types";
-import styles from "./styles";
+import { KeyFactTextLink, BulletContainer, Bullet, KeyFactsTitle, KeyFactsContainer } from './styles';
 
 const KeyFacts = ({ ast, onLinkPress }) => {
   const {
@@ -16,55 +10,46 @@ const KeyFacts = ({ ast, onLinkPress }) => {
   } = ast;
   const { children: keyFactsItems } = children[0];
 
-  const renderTitle = (color, fontStyle) => {
-    if (!title) return null;
-
-    return <KeyFactsTitle color={color} fontStyle={fontStyle} title={title} />;
+  const renderKeyFact = (item, listIndex, itemCount) => {
+    if(itemCount >= 3) {
+      return (
+        <KeyFactTextLink>
+          <BulletContainer key={`key-facts-${listIndex}`} data-testid="hi bibi">
+            <Bullet />
+            <KeyFactsText
+              item={item}
+              listIndex={listIndex}
+              onLinkPress={onLinkPress}
+            />
+          </BulletContainer>
+        </KeyFactTextLink>
+      )
+    }
+    return (
+      <BulletContainer key={`key-facts-${listIndex}`} data-testid="hi bibi">
+            <Bullet />
+            <KeyFactsText
+              item={item}
+              listIndex={listIndex}
+              onLinkPress={onLinkPress}
+            />
+      </BulletContainer>
+    )
   };
-
-  const renderKeyFact = (item, listIndex) => (
-    <View key={`key-facts-${listIndex}`} style={styles.bulletContainer}>
-      <View style={[styles.bullet]} />
-      <KeyFactsText
-        item={item}
-        listIndex={listIndex}
-        onLinkPress={onLinkPress}
-      />
-    </View>
-  );
-
-  return (
-    <Context.Consumer>
-      {({ theme: { scale, sectionColour } }) => {
-        const themedStyles = styleguide({ scale });
+const itemCount = keyFactsItems.length;
 
         return (
           <KeyFactsContainer>
-            {renderTitle(
-              sectionColour || colours.functional.brandColour,
-              themedStyles.fontFactory({
-                font: "supporting",
-                fontSize: "keyFactsTitle"
-              })
-            )}
-            <KeyFactsWrapper>
+            {title && <KeyFactsTitle>{title}</KeyFactsTitle>}
               {keyFactsItems.map((item, index) =>
                 renderKeyFact(
                   item,
                   index,
-                  themedStyles.fontFactory({
-                    font: "body",
-                    fontSize: "secondary"
-                  }),
-                  sectionColour || colours.functional.bullet
+                  itemCount
                 )
               )}
-            </KeyFactsWrapper>
           </KeyFactsContainer>
         );
-      }}
-    </Context.Consumer>
-  );
 };
 
 KeyFacts.propTypes = propTypes;
