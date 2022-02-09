@@ -52,7 +52,7 @@ export const Text = styled.span`
 `;
 
 export const KeyFactsContainer = styled.div`
-  padding: 20px 16px;
+  padding: 16px 20px;
   background-color: ${colours.functional.backgroundPrimary};
   border-top: 2px solid #9f0000;
   @media (min-width: ${breakpoints.medium}px) {
