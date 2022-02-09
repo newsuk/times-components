@@ -8,8 +8,8 @@ import {
 } from "@times-components/styleguide";
 
 export const KeyFactTextLink = styled.a`
-    cursor: pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 `;
 
 export const BulletContainer = styled.div`
@@ -31,7 +31,7 @@ export const Bullet = styled.div`
 `;
 
 export const KeyFactsTitle = styled.h2`
-  font-family: ${fonts.headlineRegular};
+  font-family: ${fonts.headline};
   font-size: ${fontSizes.keyFactsTitle}px;
   font-weight: 700;
   letter-spacing: 1.2px;
