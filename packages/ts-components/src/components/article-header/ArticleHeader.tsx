@@ -1,9 +1,13 @@
 import React from 'react';
-import { Container } from './styles';
+import { Container, ContentContainer } from './styles';
 
 export const ArticleHeader: React.FC = () => {
     return (
-        <Container/>
+        <Container>
+            <ContentContainer>
+                I am content
+            </ContentContainer>
+        </Container>
     
         )
 }

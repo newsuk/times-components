@@ -16,4 +16,10 @@ export const Container = styled.div`
     @media (min-width: ${breakpoints.wide}px) {
         width: 56.2%;
     }
-`
+`;
+
+export const ContentContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+`;
