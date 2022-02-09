@@ -1,7 +1,12 @@
 import React from "react";
 import KeyFactsText from "./key-facts-text";
 import { defaultProps, propTypes } from "./key-facts-prop-types";
-import { KeyFactTextLink, BulletContainer, Bullet, KeyFactsTitle, KeyFactsContainer } from './styles';
+import {
+  BulletContainer,
+  Bullet,
+  KeyFactsTitle,
+  KeyFactsContainer
+} from "./styles";
 
 const KeyFacts = ({ ast, onLinkPress }) => {
   const {
@@ -10,46 +15,23 @@ const KeyFacts = ({ ast, onLinkPress }) => {
   } = ast;
   const { children: keyFactsItems } = children[0];
 
-  const renderKeyFact = (item, listIndex, itemCount) => {
-    if(itemCount >= 3) {
-      return (
-        <KeyFactTextLink>
-          <BulletContainer key={`key-facts-${listIndex}`} data-testid="hi bibi">
-            <Bullet />
-            <KeyFactsText
-              item={item}
-              listIndex={listIndex}
-              onLinkPress={onLinkPress}
-            />
-          </BulletContainer>
-        </KeyFactTextLink>
-      )
-    }
-    return (
-      <BulletContainer key={`key-facts-${listIndex}`} data-testid="hi bibi">
-            <Bullet />
-            <KeyFactsText
-              item={item}
-              listIndex={listIndex}
-              onLinkPress={onLinkPress}
-            />
-      </BulletContainer>
-    )
-  };
-const itemCount = keyFactsItems.length;
+  const renderKeyFact = (item, listIndex) => (
+    <BulletContainer key={`key-facts-${listIndex}`}>
+      <Bullet />
+      <KeyFactsText
+        item={item}
+        listIndex={listIndex}
+        onLinkPress={onLinkPress}
+      />
+    </BulletContainer>
+  );
 
-        return (
-          <KeyFactsContainer>
-            {title && <KeyFactsTitle>{title}</KeyFactsTitle>}
-              {keyFactsItems.map((item, index) =>
-                renderKeyFact(
-                  item,
-                  index,
-                  itemCount
-                )
-              )}
-          </KeyFactsContainer>
-        );
+  return (
+    <KeyFactsContainer>
+      {title && <KeyFactsTitle>{title}</KeyFactsTitle>}
+      {keyFactsItems.map((item, index) => renderKeyFact(item, index))}
+    </KeyFactsContainer>
+  );
 };
 
 KeyFacts.propTypes = propTypes;

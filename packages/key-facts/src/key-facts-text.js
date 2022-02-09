@@ -2,9 +2,9 @@ import React from "react";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import { defaultProps, propTypes } from "./key-facts-text-prop-types";
-import { Text } from './styles';
+import { Text, KeyFactTextLink } from "./styles";
 
-const KeyFactsText = ({ item, listIndex, onLinkPress}) => (
+const KeyFactsText = ({ item, listIndex, onLinkPress }) => (
   <Text>
     {item.children.map((data, listItemIndex) =>
       renderTree(
@@ -14,7 +14,8 @@ const KeyFactsText = ({ item, listIndex, onLinkPress}) => (
           link(key, attributes, renderedChildren) {
             const { canonicalId, href: url, type } = attributes;
             return (
-              <a
+              <KeyFactTextLink
+                data-testid="KeyFactTextLink"
                 key={key}
                 onPress={e =>
                   onLinkPress(e, {
@@ -23,11 +24,10 @@ const KeyFactsText = ({ item, listIndex, onLinkPress}) => (
                     url
                   })
                 }
-
                 url={url}
               >
                 {renderedChildren}
-              </a>
+              </KeyFactTextLink>
             );
           }
         },
