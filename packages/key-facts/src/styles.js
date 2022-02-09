@@ -8,14 +8,8 @@ import {
 } from "@times-components/styleguide";
 
 export const KeyFactTextLink = styled.a`
-  &:hover {
     cursor: pointer;
     text-decoration: underline;
-  }
-  &:active {
-    cursor: pointer;
-    text-decoration: underline;
-  }
 `;
 
 export const BulletContainer = styled.div`
