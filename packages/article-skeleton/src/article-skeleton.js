@@ -75,7 +75,8 @@ const ArticleSkeleton = ({
     template,
     savingEnabled,
     sharingEnabled,
-    publishedTime
+    publishedTime,
+    expirableFlags
   } = article;
 
   const articleContentReducers = [
@@ -90,6 +91,7 @@ const ArticleSkeleton = ({
     tagLastParagraph
   ];
   const newContent = reduceArticleContent(content, articleContentReducers);
+  console.log(newContent, 'NEW CONRTENT')
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
@@ -200,6 +202,7 @@ const ArticleSkeleton = ({
                       template={template}
                       isPreview={isPreview}
                       olympicsKeys={olympicsKeys}
+                      expirableFlags={expirableFlags}
                     />
                   )}
                   <PaywallPortal

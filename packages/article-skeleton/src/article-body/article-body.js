@@ -37,6 +37,7 @@ import {
   BigNumbers,
   HiddenDiv
 } from "@times-components/ts-components";
+import { getIsLiveOrBreakingFlag } from '../data-helper';
 
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
@@ -96,12 +97,15 @@ const renderers = ({
   template,
   analyticsStream,
   isPreview,
-  olympicsKeys
-}) => ({
+  olympicsKeys,
+  expirableFlags
+}) => {
+  const liveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+  return ({
   ...coreRenderers,
   ad(key) {
     return (
-      <InlineAdWrapper>
+      <InlineAdWrapper liveOrBreaking={liveOrBreaking}>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inline-ad" />
       </InlineAdWrapper>
@@ -109,7 +113,7 @@ const renderers = ({
   },
   inlineAd1(key) {
     return (
-      <InlineAdWrapper>
+      <InlineAdWrapper liveOrBreaking={liveOrBreaking}>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd1" />
       </InlineAdWrapper>
@@ -117,7 +121,7 @@ const renderers = ({
   },
   inlineAd2(key) {
     return (
-      <InlineAdWrapper>
+      <InlineAdWrapper liveOrBreaking={liveOrBreaking}>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd2" />
       </InlineAdWrapper>
@@ -125,7 +129,7 @@ const renderers = ({
   },
   inlineAd3(key) {
     return (
-      <InlineAdWrapper>
+      <InlineAdWrapper liveOrBreaking={liveOrBreaking}>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd3" />
       </InlineAdWrapper>
@@ -146,7 +150,7 @@ const renderers = ({
   },
   nativeAd(key) {
     return (
-      <NativeAd className="group-3 hidden" key={key}>
+      <NativeAd className="group-3 hidden" key={key} liveOrBreaking={liveOrBreaking}>
         <NativeAdTitle>Sponsored</NativeAdTitle>
         <Ad id="advert-inarticle-native-1" data-parent="group-3" />
         <Ad id="advert-inarticle-native-2" data-parent="group-3" />
@@ -485,7 +489,7 @@ const renderers = ({
       </MediaWrapper>
     );
   }
-});
+})};
 
 const decorateAd = ({ contextUrl, section }) => element =>
   element.name === "ad"
@@ -501,7 +505,8 @@ const ArticleBody = ({
   isPreview,
   swgProductId,
   inArticlePuffFlag,
-  olympicsKeys
+  olympicsKeys,
+  expirableFlags
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -511,7 +516,8 @@ const ArticleBody = ({
       isPreview,
       swgProductId,
       inArticlePuffFlag,
-      olympicsKeys
+      olympicsKeys,
+      expirableFlags
     })
   );
 
