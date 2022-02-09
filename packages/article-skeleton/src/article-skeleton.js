@@ -36,6 +36,7 @@ import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineRelatedArticles from "./contentModifiers/inline-related-article";
 import insertNativeAd from "./contentModifiers/native-ad";
 import insertInlineAd from "./contentModifiers/inline-ad";
+import { getIsLiveOrBreakingFlag } from "../data-helper";
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -91,7 +92,6 @@ const ArticleSkeleton = ({
     tagLastParagraph
   ];
   const newContent = reduceArticleContent(content, articleContentReducers);
-  console.log(newContent, 'NEW CONRTENT')
 
   const HeaderAdContainer = getHeaderAdStyles(template);
 
@@ -106,6 +106,9 @@ const ArticleSkeleton = ({
       name: "related articles"
     }
   ]);
+
+  const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+
   return (
     <StickyProvider>
       <TrackingContextProvider
@@ -202,7 +205,7 @@ const ArticleSkeleton = ({
                       template={template}
                       isPreview={isPreview}
                       olympicsKeys={olympicsKeys}
-                      expirableFlags={expirableFlags}
+                      isLiveOrBreaking={isLiveOrBreaking}
                     />
                   )}
                   <PaywallPortal
@@ -232,6 +235,7 @@ const ArticleSkeleton = ({
                         }
                         latestFromSectionFlag={latestFromSectionFlag}
                         latestFromSection={latestFromSection}
+                        isLiveOrBreaking={isLiveOrBreaking}
                       />
                     )}
                   </LazyLoad>

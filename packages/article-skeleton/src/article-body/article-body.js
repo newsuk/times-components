@@ -37,7 +37,6 @@ import {
   BigNumbers,
   HiddenDiv
 } from "@times-components/ts-components";
-import { getIsLiveOrBreakingFlag } from '../data-helper';
 
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
@@ -98,14 +97,13 @@ const renderers = ({
   analyticsStream,
   isPreview,
   olympicsKeys,
-  expirableFlags
+  isLiveOrBreaking
 }) => {
-  const liveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
   return ({
   ...coreRenderers,
   ad(key) {
     return (
-      <InlineAdWrapper liveOrBreaking={liveOrBreaking}>
+      <InlineAdWrapper isLiveOrBreaking={isLiveOrBreaking}>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inline-ad" />
       </InlineAdWrapper>
@@ -113,7 +111,7 @@ const renderers = ({
   },
   inlineAd1(key) {
     return (
-      <InlineAdWrapper liveOrBreaking={liveOrBreaking}>
+      <InlineAdWrapper isLiveOrBreaking={isLiveOrBreaking}>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd1" />
       </InlineAdWrapper>
@@ -121,7 +119,7 @@ const renderers = ({
   },
   inlineAd2(key) {
     return (
-      <InlineAdWrapper liveOrBreaking={liveOrBreaking}>
+      <InlineAdWrapper isLiveOrBreaking={isLiveOrBreaking}>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd2" />
       </InlineAdWrapper>
@@ -129,7 +127,7 @@ const renderers = ({
   },
   inlineAd3(key) {
     return (
-      <InlineAdWrapper liveOrBreaking={liveOrBreaking}>
+      <InlineAdWrapper isLiveOrBreaking={isLiveOrBreaking}>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd3" />
       </InlineAdWrapper>
@@ -150,7 +148,7 @@ const renderers = ({
   },
   nativeAd(key) {
     return (
-      <NativeAd className="group-3 hidden" key={key} liveOrBreaking={liveOrBreaking}>
+      <NativeAd className="group-3 hidden" key={key} isLiveOrBreaking={isLiveOrBreaking}>
         <NativeAdTitle>Sponsored</NativeAdTitle>
         <Ad id="advert-inarticle-native-1" data-parent="group-3" />
         <Ad id="advert-inarticle-native-2" data-parent="group-3" />
@@ -506,7 +504,7 @@ const ArticleBody = ({
   swgProductId,
   inArticlePuffFlag,
   olympicsKeys,
-  expirableFlags
+  isLiveOrBreaking
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -517,7 +515,7 @@ const ArticleBody = ({
       swgProductId,
       inArticlePuffFlag,
       olympicsKeys,
-      expirableFlags
+      isLiveOrBreaking
     })
   );
 
