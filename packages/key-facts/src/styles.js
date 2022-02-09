@@ -24,12 +24,15 @@ export const BulletContainer = styled.div`
   margin-bottom: ${spacing(4)};
   padding-left: ${spacing(1)};
   width: 100%;
+  :last-of-type {
+    margin-bottom: 0px;
+  }
 `;
 
 export const Bullet = styled.div`
   height: 6px;
   width: 6px;
-  top: 2px;
+  margin-top: 2px;
   background-color: #9f0000;
 `;
 
@@ -52,6 +55,7 @@ export const Text = styled.span`
 `;
 
 export const KeyFactsContainer = styled.div`
+  margin: 0 auto 20px auto;
   padding: 16px 20px;
   background-color: ${colours.functional.backgroundPrimary};
   border-top: 2px solid #9f0000;
