@@ -33,8 +33,7 @@ export const Bullet = styled.div`
 export const KeyFactsTitle = styled.h2`
   font-family: ${fonts.headline};
   font-size: ${fontSizes.keyFactsTitle}px;
-  font-weight: 700;
-  letter-spacing: 1.2px;
+  font-weight: 400;
   margin: 0px 0px 20px 0px;
   color: ${colours.functional.brandColour};
 `;
@@ -46,6 +45,7 @@ export const Text = styled.span`
   margin-top: -8px;
   padding-left: ${spacing(3)};
   width: 95%;
+  line-height: 28px;
 `;
 
 export const KeyFactsContainer = styled.div`
