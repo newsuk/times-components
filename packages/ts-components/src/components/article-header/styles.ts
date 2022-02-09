@@ -30,7 +30,7 @@ export const TimeSincePublishing = styled.div`
     font-family: ${fonts.supporting};
     font-size: 14px;
     line-height: 18px;
-    padding: 0 12px 0 4px;
+    padding: 0 12px 0 8px;
 `;
 const updatedStyle = css`
     color: ${colours.functional.secondary};
