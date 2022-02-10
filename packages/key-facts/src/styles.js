@@ -11,10 +11,10 @@ export const KeyFactTextLink = styled.a`
   cursor: pointer;
   text-decoration: underline;
   &:hover {
-    color: ${colours.functional.brandColour}
+    color: ${colours.functional.brandColour};
   }
   &:active {
-    color: ${colours.functional.brandColour}
+    color: ${colours.functional.brandColour};
   }
 `;
 
