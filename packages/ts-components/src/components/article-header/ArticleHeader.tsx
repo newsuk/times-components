@@ -1,11 +1,10 @@
 import React from 'react';
+import { format } from 'date-fns';
 
-import { BreakingArticleFlag } from '../../'
+import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
 import { Container, Divider, Headline, TimeSincePublishing, UpdatedDate, UpdatedTime, UpdatedTimeItems, UpdatesContainer } from './styles';
 
-export const ArticleHeader: React.FC = () => {
-
-    const breaking = true;
+export const ArticleHeader: React.FC<{ updated: string; breaking: boolean, headline: string}> = ( { updated, breaking, headline }) => {
 
     return (
         <Container>
@@ -13,13 +12,13 @@ export const ArticleHeader: React.FC = () => {
                 <UpdatedTimeItems>
                     {breaking ? <BreakingArticleFlag/>: null}
                     <TimeSincePublishing>
-                        10 minutes ago
+                        Time
                     </TimeSincePublishing>
                     <Divider>
                         |
                     </Divider>
                     <UpdatedTime>
-                        11.25am
+                        {format(updated, 'h.mma')}
                     </UpdatedTime>
                 </UpdatedTimeItems>
                     <UpdatedDate>
@@ -27,7 +26,7 @@ export const ArticleHeader: React.FC = () => {
                     </UpdatedDate>
             </UpdatesContainer>
             <Headline>
-                    This is a headline that resizes at a breakpoint of 768px
+                    {decodeURI(headline)}
             </Headline>
         </Container>
     

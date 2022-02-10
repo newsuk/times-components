@@ -19,6 +19,7 @@ import Video from "@times-components/video";
 import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
 import {
+  ArticleHeader,
   FetchProvider,
   InArticlePuff,
   InlineNewsletterPuff,
@@ -308,6 +309,17 @@ const renderers = ({
           </Context.Consumer>
         );
 
+      case "article-header":
+        // const { updated, breaking, headline } = attributes;
+        
+        return (
+          <ArticleHeader
+            updated={attributes.updated}
+            breaking={attributes.breaking}
+            headline={attributes.headline}
+          />
+        );
+      
       case "olympics-medal-table":
         return (
           <Context.Consumer key={key}>

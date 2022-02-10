@@ -9,5 +9,8 @@ storiesOf('Typescript Component/Article Header', module)
         <ArticleHarness>{storyFn()}</ArticleHarness>
     ))
     .add('Basic Article Header', () => (
-        <ArticleHeader/>
+        <ArticleHeader 
+            updated='2021-12-31T11:30:00Z'
+            breaking={true}
+            headline='This%20is%20the%20headline'/>
     ))
