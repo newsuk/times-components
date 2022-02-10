@@ -10,6 +10,12 @@ import {
 export const KeyFactTextLink = styled.a`
   cursor: pointer;
   text-decoration: underline;
+  &:hover {
+    color: ${colours.functional.brandColour};
+  }
+  &:active {
+    color: ${colours.functional.brandColour};
+  }
 `;
 
 export const BulletContainer = styled.div`
