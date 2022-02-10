@@ -17,8 +17,7 @@ export default () => {
         onLinkPress={mockLinkPress}
       />
     );
-
-    wrapper.find("TextLink").simulate("press");
+    wrapper.find({ "data-testid": "KeyFactTextLink" }).simulate("press");
 
     expect(mockLinkPress).toHaveBeenCalled();
   });
