@@ -98,8 +98,7 @@ const renderers = ({
   isPreview,
   olympicsKeys,
   isLiveOrBreaking
-}) => {
-  return ({
+}) => ({
   ...coreRenderers,
   ad(key) {
     return (
@@ -148,7 +147,11 @@ const renderers = ({
   },
   nativeAd(key) {
     return (
-      <NativeAd className="group-3 hidden" key={key} isLiveOrBreaking={isLiveOrBreaking}>
+      <NativeAd
+        className="group-3 hidden"
+        key={key}
+        isLiveOrBreaking={isLiveOrBreaking}
+      >
         <NativeAdTitle>Sponsored</NativeAdTitle>
         <Ad id="advert-inarticle-native-1" data-parent="group-3" />
         <Ad id="advert-inarticle-native-2" data-parent="group-3" />
@@ -487,7 +490,7 @@ const renderers = ({
       </MediaWrapper>
     );
   }
-})};
+});
 
 const decorateAd = ({ contextUrl, section }) => element =>
   element.name === "ad"
