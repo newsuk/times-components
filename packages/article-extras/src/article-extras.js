@@ -35,7 +35,6 @@ const ArticleExtras = ({
   latestFromSectionFlag,
   latestFromSection,
   publishedTime,
-  isLiveOrBreaking
 }) => {
   const [
     algoliaRelatedArticleSlice,
@@ -62,7 +61,7 @@ const ArticleExtras = ({
   );
 
   return (
-    <UserState state={UserState.fullArticle} fallback={!isLiveOrBreaking && sponsoredArticles}>
+    <UserState state={UserState.fullArticle} fallback={sponsoredArticles}>
       <div style={clearingStyle} />
       <ArticleTopics topics={topics} />
       {(savingEnabled || sharingEnabled) && (
@@ -114,9 +113,7 @@ const ArticleExtras = ({
             />
           )}
       </div>
-      {
-        !isLiveOrBreaking && sponsoredArticles
-      }
+      {sponsoredArticles}
       <UserState
         state={UserState.loggedIn}
         fallback={

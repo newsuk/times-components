@@ -235,7 +235,6 @@ const ArticleSkeleton = ({
                         }
                         latestFromSectionFlag={latestFromSectionFlag}
                         latestFromSection={latestFromSection}
-                        isLiveOrBreaking={isLiveOrBreaking}
                       />
                     )}
                   </LazyLoad>
