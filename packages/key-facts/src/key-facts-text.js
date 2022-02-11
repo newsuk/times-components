@@ -1,13 +1,11 @@
 import React from "react";
-import { Text } from "react-native";
-import { TextLink } from "@times-components/link";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import { defaultProps, propTypes } from "./key-facts-text-prop-types";
-import styles from "./styles";
+import { Text, KeyFactTextLink } from "./styles";
 
-const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle }) => (
-  <Text style={[styles.text, fontStyle]}>
+const KeyFactsText = ({ item, listIndex, onLinkPress }) => (
+  <Text>
     {item.children.map((data, listItemIndex) =>
       renderTree(
         data,
@@ -16,7 +14,8 @@ const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle }) => (
           link(key, attributes, renderedChildren) {
             const { canonicalId, href: url, type } = attributes;
             return (
-              <TextLink
+              <KeyFactTextLink
+                data-testid="KeyFactTextLink"
                 key={key}
                 onPress={e =>
                   onLinkPress(e, {
@@ -25,11 +24,10 @@ const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle }) => (
                     url
                   })
                 }
-                style={styles.link}
                 url={url}
               >
                 {renderedChildren}
-              </TextLink>
+              </KeyFactTextLink>
             );
           }
         },
