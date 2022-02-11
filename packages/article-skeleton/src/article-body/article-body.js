@@ -311,7 +311,7 @@ const renderers = ({
 
       case "article-header":
         // const { updated, breaking, headline } = attributes;
-        
+
         return (
           <ArticleHeader
             updated={attributes.updated}
@@ -319,7 +319,7 @@ const renderers = ({
             headline={attributes.headline}
           />
         );
-      
+
       case "olympics-medal-table":
         return (
           <Context.Consumer key={key}>
