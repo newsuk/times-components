@@ -27,12 +27,17 @@ export const UpdatesContainer = styled.div`
     justify-content: space-between;
 `;
 
+export const TimeSincePublishingContainer = styled.div`
+    display: flex;
+    flex-direction: row;
+`;
+
 export const TimeSincePublishing = styled.div<{ isBreaking?: boolean }>`
     color: ${colours.functional.brandColour};
     font-family: ${fonts.supporting};
     font-size: 14px;
     line-height: 18px;
-    padding: ${({ isBreaking }) => (isBreaking ? '0 12px 0 8px' : '0 12px 0 0')} ;
+    padding: ${({ isBreaking }) => (isBreaking ? '0 12px 0 8px' : '0 12px 0 0')};
 `;
 const updatedStyle = css`
     color: ${colours.functional.secondary};
@@ -47,9 +52,9 @@ export const UpdatedTimeItems = styled.div`
     align-items: baseline;
 `;
 
-export const UpdatedTime = styled.div`
+export const UpdatedTime = styled.div<{ isLessThan13Hours?: boolean }>`
     ${updatedStyle}
-    padding: 0 0 0 8px;
+    padding: ${({ isLessThan13Hours }) => (isLessThan13Hours ? '0 0 0 8px' : 0)};
 `;
 
 export const UpdatedDate = styled.div`
@@ -62,7 +67,6 @@ export const Divider = styled.div`
     color: ${colours.functional.greyLabel};
     font-size: 14px;
     line-height: 18px;
-    
 `;
 
 export const Headline = styled.h2`
