@@ -2,6 +2,7 @@ import React from 'react';
 import {
   format,
   differenceInSeconds,
+  differenceInMinutes,
   differenceInHours,
   distanceInWordsStrict,
   isYesterday
@@ -34,12 +35,15 @@ export const ArticleHeader: React.FC<{
   const hoursDifference = differenceInHours(currentDateTime, updated);
   const isBreaking = Boolean(breaking);
   const isLessThan13Hours = secondsDifference > 59 && hoursDifference < 13;
+  const minutesDifference = differenceInMinutes(currentDateTime, updated);
+
+  console.log('**minutesDifference', minutesDifference);
 
   return (
     <Container>
       <UpdatesContainer>
         <UpdatedTimeItems>
-          {breaking ? <BreakingArticleFlag /> : null}
+          {breaking && minutesDifference < 61 ? <BreakingArticleFlag /> : null}
           {isLessThan13Hours ? (
             <TimeSincePublishingContainer>
               <TimeSincePublishing isBreaking={isBreaking}>
