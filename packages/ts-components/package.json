@@ -61,6 +61,7 @@
     "@times-components/ts-slices": "1.2.2",
     "@times-components/utils": "6.5.11",
     "algoliasearch": "4.9.0",
+    "date-fns": "1.28.5",
     "graphql": "14.2.1",
     "isomorphic-unfetch": "3.1.0",
     "lodash.get": "4.4.2",
