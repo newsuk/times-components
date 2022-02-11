@@ -33,13 +33,10 @@ function getSectionName(article) {
   return nonNews.length ? nonNews[0] : "News";
 }
   function getIsLiveBlog(articleFlags){
-    let isLiveBlog = false;
-    articleFlags.find(flag => {
-        if(flag.type === 'LIVE' && (Date.now() < new Date(flag.expiryTime))){
-            isLiveBlog = true;  
-        }
-    });
-    return isLiveBlog;
+    const articleLiveFlag = articleFlags.find(flag => 
+      (flag.type === 'LIVE' && (Date.now() < new Date(flag.expiryTime)))
+    );
+    return (articleLiveFlag !== undefined);
 }
 function getAuthorAsText(article) {
   const { bylines } = article;
