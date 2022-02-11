@@ -4,18 +4,20 @@ import  { breakpoints, colours, fonts } from '@times-components/styleguide';
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    margin: 48px auto 20px auto;
+    justify-content: center;
+    margin: 48px 20px 0 20px;
+    width: 90%;
     padding-top: 8px;
     border-top: 2px solid #9F0000;
 
     @media (min-width: ${breakpoints.medium}px) {
-        flex-direction: row;
         width: 80.8%;
-        margin-top: 64px;
+        margin: 64px 0 0 10%;
     }
 
     @media (min-width: ${breakpoints.wide}px) {
         width: 56.2%;
+        margin: 64px 0 0 22%;
     }
 `;
 

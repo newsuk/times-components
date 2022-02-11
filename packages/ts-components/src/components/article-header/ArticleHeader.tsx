@@ -34,7 +34,7 @@ export const ArticleHeader: React.FC<{ updated: string; breaking: boolean, headl
                     </UpdatedDate>
             </UpdatesContainer>
             <Headline>
-                    {decodeURI(headline)}
+                {decodeURI(headline)}
             </Headline>
         </Container>
     
