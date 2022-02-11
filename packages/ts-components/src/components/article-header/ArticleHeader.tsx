@@ -28,7 +28,7 @@ export const ArticleHeader: React.FC<{ updated: string; breaking: boolean, headl
                     </UpdatedTime>
                 </UpdatedTimeItems>
                     <UpdatedDate>
-                        {`February 9 2022`}
+                        {format(updated, 'MMMM D YYYY')}
                     </UpdatedDate>
             </UpdatesContainer>
             <Headline>
