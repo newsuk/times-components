@@ -12,12 +12,14 @@ export const ArticleHeader: React.FC<{ updated: string; breaking: boolean, headl
 
     console.log('**hoursDifference', hoursDifference);
 
+    const isBreaking = Boolean(breaking);
+    
     return (
         <Container>
             <UpdatesContainer>
                 <UpdatedTimeItems>
                     {breaking ? <BreakingArticleFlag/>: null}
-                    <TimeSincePublishing>
+                    <TimeSincePublishing isBreaking={isBreaking}>
                         {secondsDifference > 59 && hoursDifference < 13
                         ? timeSincePublishing : null}
                     </TimeSincePublishing>

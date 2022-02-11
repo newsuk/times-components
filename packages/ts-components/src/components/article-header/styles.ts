@@ -27,12 +27,12 @@ export const UpdatesContainer = styled.div`
     justify-content: space-between;
 `;
 
-export const TimeSincePublishing = styled.div`
+export const TimeSincePublishing = styled.div<{ isBreaking?: boolean }>`
     color: ${colours.functional.brandColour};
     font-family: ${fonts.supporting};
     font-size: 14px;
     line-height: 18px;
-    padding: 0 12px 0 8px;
+    padding: ${({ isBreaking }) => (isBreaking ? '0 12px 0 8px' : '0 12px 0 0')} ;
 `;
 const updatedStyle = css`
     color: ${colours.functional.secondary};
