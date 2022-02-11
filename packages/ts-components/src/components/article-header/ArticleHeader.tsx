@@ -1,5 +1,5 @@
 import React from 'react';
-import { format, differenceInSeconds, differenceInHours, distanceInWordsStrict  } from 'date-fns';
+import { format, differenceInSeconds, differenceInHours, distanceInWordsStrict, isYesterday } from 'date-fns';
 
 import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
 import { Container, Divider, Headline, TimeSincePublishing, UpdatedDate, UpdatedTime, UpdatedTimeItems, UpdatesContainer } from './styles';
@@ -9,6 +9,8 @@ export const ArticleHeader: React.FC<{ updated: string; breaking: boolean, headl
     const timeSincePublishing = distanceInWordsStrict(updated, currentDateTime, {partialMethod: 'floor'}) + ' ago';
     const secondsDifference = differenceInSeconds(currentDateTime, updated);
     const hoursDifference = differenceInHours(currentDateTime,updated);
+
+    console.log('**hoursDifference', hoursDifference);
 
     return (
         <Container>
@@ -28,7 +30,7 @@ export const ArticleHeader: React.FC<{ updated: string; breaking: boolean, headl
                     </UpdatedTime>
                 </UpdatedTimeItems>
                     <UpdatedDate>
-                        {format(updated, 'MMMM D YYYY')}
+                        {isYesterday(updated) ? format(updated, 'MMMM D YYYY') : null}
                     </UpdatedDate>
             </UpdatesContainer>
             <Headline>
