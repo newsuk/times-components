@@ -266,6 +266,18 @@ function Head({
       }
     },
     author: authorSchema
+    // when the liveBlogUpdate has some real data, then you can use this structure to populate the updates
+    /** * /
+    ,
+    "liveBlogUpdate":[
+      {
+        "type":"BlogPosting",
+        "headline":"This is a headline. The apocalypse is here",
+        "datePublished":"1999-12-31T23:59:59Z",
+        "url": "https://schema.org/LiveBlogPosting"
+      }
+    ]
+    /** */
   };
 
   return (
