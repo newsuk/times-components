@@ -1,5 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { date } from '@storybook/addon-knobs';
 
 import { ArticleHarness } from '../../fixtures/article-harness/ArticleHarness';
 import { ArticleHeader } from './ArticleHeader';
@@ -8,10 +9,17 @@ storiesOf('Typescript Component/Article Header', module)
   .addDecorator((storyFn: () => React.ReactNode) => (
     <ArticleHarness>{storyFn()}</ArticleHarness>
   ))
-  .add('Basic Article Header', () => (
+  .add('Basic Article Header', () => {
+    const label = 'Updated Date/Time';
+    const defaultValue = new Date();
+    const groupId = 'GROUP-ID1';
+    const value = date(label, defaultValue, groupId);
+    
+    const updated = new Date(value).toISOString()
+    return (
     <ArticleHeader
-      updated="2022-02-11T18:26:00Z"
+      updated={updated}
       breaking={true}
       headline="This%20is%20the%20headline"
     />
-  ));
+  )});
