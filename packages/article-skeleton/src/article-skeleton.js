@@ -69,6 +69,8 @@ const ArticleSkeleton = ({
     url,
     headline,
     shortHeadline,
+    flags,
+    expirableFlags,
     label,
     topics,
     relatedArticleSlice,
@@ -80,7 +82,7 @@ const ArticleSkeleton = ({
 
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
-    insertNewsletterPuff(section, isPreview),
+    insertNewsletterPuff(section, isPreview, flags || expirableFlags),
     insertNativeAd,
     insertInlineAd,
     insertInlineRelatedArticles(

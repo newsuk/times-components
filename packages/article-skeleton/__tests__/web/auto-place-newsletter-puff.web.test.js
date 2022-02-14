@@ -113,6 +113,13 @@ describe("Article with automatically placed NewsletterPuff", () => {
     expect(isNewsletterPuffs.length).toBe(0);
   });
 
+  it("should not render a NewsletterPuff when the article is either a live or breaking", () => {
+    article.flags = ['live'];
+    const output = TestRenderer.create(renderArticle(article));
+    const isNewsletterPuffs = output.root.findAllByType("AutoNewsletterPuff");
+    expect(isNewsletterPuffs.length).toBe(0);
+  });
+
   it("should not render a NewsletterPuff without the correct section", () => {
     const output = TestRenderer.create(renderArticle(article));
     const isNewsletterPuffs = output.root.findAllByType("AutoNewsletterPuff");
