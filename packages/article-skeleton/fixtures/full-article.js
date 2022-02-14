@@ -993,11 +993,12 @@ const defaultDescriptionMarkup = [
 ];
 const defaultFlags = [
   {
-    "type": "NEW",
-    "expiryTime": "2027-02-11T13:00:00.000Z"
-  }, {
-    "type": "EXCLUSIVE",
-    "expiryTime": "2029-09-11T13:00:00.000Z"
+    type: "NEW",
+    expiryTime: "2027-02-11T13:00:00.000Z"
+  },
+  {
+    type: "EXCLUSIVE",
+    expiryTime: "2029-09-11T13:00:00.000Z"
   }
 ];
 const defaultHasVideo = false;
@@ -1882,8 +1883,8 @@ export const testFixture = {
   descriptionMarkup: defaultDescriptionMarkup,
   expirableFlags: [
     {
-      "type": "NEW",
-      "expiryTime": "2022-02-11T13:00:00.000Z"
+      type: "NEW",
+      expiryTime: "2022-02-11T13:00:00.000Z"
     }
   ],
   hasVideo: false,
