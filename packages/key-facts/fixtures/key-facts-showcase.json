@@ -1,7 +1,7 @@
 {
   "name": "keyFacts",
   "attributes": {
-    "title": "This week's programmes"
+    "title": "Key moments"
   },
   "children": [
     {
@@ -10,13 +10,6 @@
         {
           "name": "listElement",
           "children": [
-            {
-              "name": "text",
-              "attributes": {
-                "value": "Another ministerial aide, "
-              },
-              "children": []
-            },
             {
               "name": "link",
               "attributes": {
@@ -28,18 +21,11 @@
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "Robert Courts"
+                    "value": "Another ministerial aide, Robert Courts, resigned saying that he could not look himself in the mirror if he backed the Chequers proposals."
                   },
                   "children": []
                 }
               ]
-            },
-            {
-              "name": "text",
-              "attributes": {
-                "value": ", resigned saying that he could not look himself in the mirror if he backed the Chequers proposals."
-              },
-              "children": []
             }
           ]
         },
