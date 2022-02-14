@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.9.31...@times-components/article-extras@0.10.0) (2022-02-14)
+
+
+### Features
+
+* **TDP-1282:** remove inline ads for live and breaking ([#2848](https://github.com/newsuk/times-components/issues/2848)) ([ce82214](https://github.com/newsuk/times-components/commit/ce82214b283503c4d883f1077cf18dd4f74e5cd6))
+
+
+
+
+
 ## [0.9.31](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.9.30...@times-components/article-extras@0.9.31) (2022-02-10)
 
 **Note:** Version bump only for package @times-components/article-extras

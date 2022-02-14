@@ -36,6 +36,7 @@ import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineRelatedArticles from "./contentModifiers/inline-related-article";
 import insertNativeAd from "./contentModifiers/native-ad";
 import insertInlineAd from "./contentModifiers/inline-ad";
+import { getIsLiveOrBreakingFlag } from "./data-helper";
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -75,7 +76,8 @@ const ArticleSkeleton = ({
     template,
     savingEnabled,
     sharingEnabled,
-    publishedTime
+    publishedTime,
+    expirableFlags
   } = article;
 
   const articleContentReducers = [
@@ -104,6 +106,9 @@ const ArticleSkeleton = ({
       name: "related articles"
     }
   ]);
+
+  const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+
   return (
     <StickyProvider>
       <TrackingContextProvider
@@ -200,6 +205,7 @@ const ArticleSkeleton = ({
                       template={template}
                       isPreview={isPreview}
                       olympicsKeys={olympicsKeys}
+                      isLiveOrBreaking={isLiveOrBreaking}
                     />
                   )}
                   <PaywallPortal

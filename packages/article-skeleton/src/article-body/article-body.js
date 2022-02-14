@@ -96,11 +96,12 @@ const renderers = ({
   template,
   analyticsStream,
   isPreview,
-  olympicsKeys
+  olympicsKeys,
+  isLiveOrBreaking
 }) => ({
   ...coreRenderers,
   ad(key) {
-    return (
+    return isLiveOrBreaking ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inline-ad" />
@@ -108,7 +109,7 @@ const renderers = ({
     );
   },
   inlineAd1(key) {
-    return (
+    return isLiveOrBreaking ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd1" />
@@ -116,7 +117,7 @@ const renderers = ({
     );
   },
   inlineAd2(key) {
-    return (
+    return isLiveOrBreaking ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd2" />
@@ -124,7 +125,7 @@ const renderers = ({
     );
   },
   inlineAd3(key) {
-    return (
+    return isLiveOrBreaking ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd3" />
@@ -145,7 +146,7 @@ const renderers = ({
     );
   },
   nativeAd(key) {
-    return (
+    return isLiveOrBreaking ? null : (
       <NativeAd className="group-3 hidden" key={key}>
         <NativeAdTitle>Sponsored</NativeAdTitle>
         <Ad id="advert-inarticle-native-1" data-parent="group-3" />
@@ -501,7 +502,8 @@ const ArticleBody = ({
   isPreview,
   swgProductId,
   inArticlePuffFlag,
-  olympicsKeys
+  olympicsKeys,
+  isLiveOrBreaking
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -511,7 +513,8 @@ const ArticleBody = ({
       isPreview,
       swgProductId,
       inArticlePuffFlag,
-      olympicsKeys
+      olympicsKeys,
+      isLiveOrBreaking
     })
   );
 
