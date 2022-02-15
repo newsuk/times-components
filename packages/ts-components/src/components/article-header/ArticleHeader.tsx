@@ -8,7 +8,6 @@ import {
   isYesterday
 } from 'date-fns';
 
-import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
 import {
   Container,
   Divider,
@@ -18,8 +17,10 @@ import {
   UpdatedDate,
   UpdatedTime,
   UpdatedTimeItems,
-  UpdatesContainer
+  UpdatesContainer,
+  FlagContainer
 } from './styles';
+import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
 
 export const ArticleHeader: React.FC<{
   updated: string;
@@ -37,28 +38,29 @@ export const ArticleHeader: React.FC<{
   const isLessThan13Hours = secondsDifference > 59 && hoursDifference < 13;
   const minutesDifference = differenceInMinutes(currentDateTime, updated);
 
-  console.log('**minutesDifference', minutesDifference);
-
   return (
     <Container>
       <UpdatesContainer>
         <UpdatedTimeItems>
-          {breaking && minutesDifference < 61 ? <BreakingArticleFlag /> : null}
+          {breaking && minutesDifference < 61 ? <FlagContainer><BreakingArticleFlag /></FlagContainer> : null}
           {isLessThan13Hours ? (
             <TimeSincePublishingContainer>
-              <TimeSincePublishing isBreaking={isBreaking}>
+              <TimeSincePublishing isBreaking={isBreaking} data-testId="TimeSincePublishing">
                 {timeSincePublishing}
               </TimeSincePublishing>
-              <Divider>{'|'}</Divider>
+              <Divider />
             </TimeSincePublishingContainer>
           ) : null}
-          <UpdatedTime isLessThan13Hours={isLessThan13Hours}>
+          <UpdatedTime isLessThan13Hours={isLessThan13Hours} data-testId="UpdatedTime">
             {format(updated, 'h.mma')}
           </UpdatedTime>
         </UpdatedTimeItems>
-        <UpdatedDate>
-          {isYesterday(updated) ? format(updated, 'MMMM D YYYY') : null}
-        </UpdatedDate>
+        {isYesterday(updated) ? (
+ <UpdatedDate data-testid="UpdatedDate">
+ {format(updated, 'MMMM D YYYY')}
+</UpdatedDate>
+        ) : null}
+       
       </UpdatesContainer>
       <Headline>{decodeURI(headline)}</Headline>
     </Container>

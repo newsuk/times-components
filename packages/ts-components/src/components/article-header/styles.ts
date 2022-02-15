@@ -37,7 +37,6 @@ export const TimeSincePublishing = styled.div<{ isBreaking?: boolean }>`
   font-family: ${fonts.supporting};
   font-size: 14px;
   line-height: 18px;
-  padding: ${({ isBreaking }) => (isBreaking ? '0 12px 0 8px' : '0 12px 0 0')};
 `;
 const updatedStyle = css`
   color: ${colours.functional.secondary};
@@ -54,8 +53,6 @@ export const UpdatedTimeItems = styled.div`
 
 export const UpdatedTime = styled.div<{ isLessThan13Hours?: boolean }>`
     ${updatedStyle}
-    padding: ${({ isLessThan13Hours }) =>
-      isLessThan13Hours ? '0 0 0 8px' : 0};
 `;
 
 export const UpdatedDate = styled.div`
@@ -64,9 +61,9 @@ export const UpdatedDate = styled.div`
 `;
 
 export const Divider = styled.div`
-  color: ${colours.functional.greyLabel};
-  font-size: 14px;
-  line-height: 18px;
+  background-color: ${colours.functional.greyLabel};
+  width: 1px;
+  margin: 2px 8px 6px 12px;
 `;
 
 export const Headline = styled.h2`
@@ -79,4 +76,8 @@ export const Headline = styled.h2`
     font-size: 36px;
     line-height: 36px;
   }
+`;
+
+export const FlagContainer = styled.div`
+  margin-right: 8px;
 `;
