@@ -97,14 +97,6 @@ const checkParagraphs = (children, paywall) => {
 const insertNewsletterPuff = (section, isPreview, flags) => children => {
   if (isPreview || getIsLiveOrBreakingFlag(flags)) return children;
 
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', getIsLiveOrBreakingFlag(flags))
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-
  if (getIsLiveOrBreakingFlag(flags)) return children;
 
   const newsletterPuff = getNewsletterPuff(section);

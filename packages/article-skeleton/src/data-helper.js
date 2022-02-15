@@ -82,7 +82,7 @@ export const getSharedStatus = () => {
 };
 
 export const getIsLiveOrBreakingFlag = flags => {
-  const liveOrBreaking = ["LIVE", "BREAKING", "NEW"];
+  const liveOrBreaking = ["LIVE", "BREAKING"];
   let isObject;
 
   const findFlag =
