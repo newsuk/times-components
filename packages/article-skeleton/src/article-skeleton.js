@@ -79,7 +79,6 @@ const ArticleSkeleton = ({
     savingEnabled,
     sharingEnabled,
     publishedTime,
-    expirableFlags
   } = article;
 
   const articleContentReducers = [
