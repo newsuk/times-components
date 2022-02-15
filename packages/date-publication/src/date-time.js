@@ -27,14 +27,15 @@ class DatePublication extends Component {
   }
 
   render() {
-    const { children, date = new Date(), showDay } = this.props;
+    const { children, showDay } = this.props;
+    let { date = new Date() } = this.props;
     const { timezone } = this.state;
     const datetimeUTC = getUTCTime(date);
     const isDateBST = isBST(datetimeUTC);
     const offset = isDateBST ? 60 : 0;
     const datetimeLondonTimezone = addMinutes(datetimeUTC, offset);
 
-    if(date === undefined){
+    if (date === undefined) {
       date = new Date();
     }
     const baseFormatString = "MMMM dd yyyy, h.mmaaa";
@@ -42,7 +43,10 @@ class DatePublication extends Component {
       ? `EEEE ${baseFormatString}`
       : baseFormatString;
 
-    const formattedString = `${format(datetimeLondonTimezone, formatString)}${timezone}`;
+    const formattedString = `${format(
+      datetimeLondonTimezone,
+      formatString
+    )}${timezone}`;
     return children(formattedString);
   }
 }
