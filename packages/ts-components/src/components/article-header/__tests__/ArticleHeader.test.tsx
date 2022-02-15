@@ -3,13 +3,12 @@ import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 import { ArticleHeader } from '../ArticleHeader';
-import MockDate from 'mockdate'
-
+import MockDate from 'mockdate';
 
 describe('ArticleHeader', () => {
-  afterEach(() => MockDate.reset())
+  afterEach(() => MockDate.reset());
   it('Breaking', () => {
-    MockDate.set("2021-12-31T23:30:00Z")
+    MockDate.set('2021-12-31T23:30:00Z');
     const { baseElement, getByText, queryByTestId } = render(
       <ArticleHeader
         updated="2021-12-31T23:30:00Z"
@@ -22,8 +21,7 @@ describe('ArticleHeader', () => {
     expect(queryByTestId('UpdatedDate')).toBeFalsy();
   });
   it('Within an hour of updating', () => {
-    MockDate.set("2021-12-31T23:30:00Z")
-    console.log(new Date())
+    MockDate.set('2021-12-31T23:30:00Z');
     const { baseElement, getByText, queryByTestId } = render(
       <ArticleHeader
         updated="2021-12-31T23:20:00Z"
@@ -37,8 +35,7 @@ describe('ArticleHeader', () => {
     expect(queryByTestId('UpdatedDate')).toBeFalsy();
   });
   it('Between 1 and 12 hours ago', () => {
-    MockDate.set("2021-12-31T23:30:00Z")
-    console.log(new Date())
+    MockDate.set('2021-12-31T23:30:00Z');
     const { baseElement, getByText, queryByText, queryByTestId } = render(
       <ArticleHeader
         updated="2021-12-31T22:20:00Z"
@@ -53,8 +50,7 @@ describe('ArticleHeader', () => {
     expect(queryByTestId('UpdatedDate')).toBeFalsy();
   });
   it('After 12 hours but on the same calendar day', () => {
-    MockDate.set("2021-12-31T22:30:00Z")
-    console.log(new Date())
+    MockDate.set('2021-12-31T22:30:00Z');
     const { baseElement, getByText, queryByText, queryByTestId } = render(
       <ArticleHeader
         updated="2021-12-31T06:20:00Z"
@@ -68,9 +64,14 @@ describe('ArticleHeader', () => {
     expect(queryByTestId('UpdatedDate')).toBeFalsy();
   });
   it('After 12 hours but on a different calendar day', () => {
-    MockDate.set("2022-01-01T06:30:00Z")
-    console.log(new Date())
-    const { baseElement, getByTestId, queryByText, queryByTestId, getByText } = render(
+    MockDate.set('2022-01-01T06:30:00Z');
+    const {
+      baseElement,
+      getByTestId,
+      queryByText,
+      queryByTestId,
+      getByText
+    } = render(
       <ArticleHeader
         updated="2021-12-31T06:20:00Z"
         breaking={true}

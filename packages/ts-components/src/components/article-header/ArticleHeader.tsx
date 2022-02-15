@@ -42,25 +42,34 @@ export const ArticleHeader: React.FC<{
     <Container>
       <UpdatesContainer>
         <UpdatedTimeItems>
-          {breaking && minutesDifference < 61 ? <FlagContainer><BreakingArticleFlag /></FlagContainer> : null}
+          {breaking && minutesDifference < 61 ? (
+            <FlagContainer>
+              <BreakingArticleFlag />
+            </FlagContainer>
+          ) : null}
           {isLessThan13Hours ? (
             <TimeSincePublishingContainer>
-              <TimeSincePublishing isBreaking={isBreaking} data-testId="TimeSincePublishing">
+              <TimeSincePublishing
+                isBreaking={isBreaking}
+                data-testId="TimeSincePublishing"
+              >
                 {timeSincePublishing}
               </TimeSincePublishing>
               <Divider />
             </TimeSincePublishingContainer>
           ) : null}
-          <UpdatedTime isLessThan13Hours={isLessThan13Hours} data-testId="UpdatedTime">
+          <UpdatedTime
+            isLessThan13Hours={isLessThan13Hours}
+            data-testId="UpdatedTime"
+          >
             {format(updated, 'h.mma')}
           </UpdatedTime>
         </UpdatedTimeItems>
         {isYesterday(updated) ? (
- <UpdatedDate data-testid="UpdatedDate">
- {format(updated, 'MMMM D YYYY')}
-</UpdatedDate>
+          <UpdatedDate data-testid="UpdatedDate">
+            {format(updated, 'MMMM D YYYY')}
+          </UpdatedDate>
         ) : null}
-       
       </UpdatesContainer>
       <Headline>{decodeURI(headline)}</Headline>
     </Container>

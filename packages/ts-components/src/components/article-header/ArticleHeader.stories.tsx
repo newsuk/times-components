@@ -14,12 +14,13 @@ storiesOf('Typescript Component/Article Header', module)
     const defaultValue = new Date();
     const groupId = 'Options';
     const value = date(label, defaultValue, groupId);
-    
-    const updated = new Date(value).toISOString()
+
+    const updated = new Date(value).toISOString();
     return (
-    <ArticleHeader
-      updated={updated}
-      breaking={boolean('Breaking', false, groupId)}
-      headline="This%20is%20the%20headline"
-    />
-  )})
+      <ArticleHeader
+        updated={updated}
+        breaking={boolean('Breaking', false, groupId)}
+        headline="This%20is%20the%20headline"
+      />
+    );
+  });

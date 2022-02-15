@@ -52,7 +52,7 @@ export const UpdatedTimeItems = styled.div`
 `;
 
 export const UpdatedTime = styled.div<{ isLessThan13Hours?: boolean }>`
-    ${updatedStyle}
+  ${updatedStyle};
 `;
 
 export const UpdatedDate = styled.div`
