@@ -8,6 +8,7 @@ import {
 } from "@times-components/styleguide";
 
 export const KeyFactTextLink = styled.a`
+  color: inherit;
   cursor: pointer;
   text-decoration: underline;
   &:hover {

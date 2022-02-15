@@ -24,7 +24,7 @@ const KeyFactsText = ({ item, listIndex, onLinkPress }) => (
                     url
                   })
                 }
-                url={url}
+                href={url}
               >
                 {renderedChildren}
               </KeyFactTextLink>
