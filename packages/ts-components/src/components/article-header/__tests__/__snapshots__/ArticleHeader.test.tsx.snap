@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleHeader After 12 hours but on a different calendar day 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa frrTdE"
+    >
+      <div
+        class="sc-bwzfXH htoLMg"
+      >
+        <div
+          class="sc-ifAKCX iDsMnF"
+        >
+          <div
+            class="sc-EHOje dWiCiY"
+            data-testid="UpdatedTime"
+          >
+            6.20am
+          </div>
+        </div>
+        <div
+          class="sc-bZQynM dIGJJD"
+          data-testid="UpdatedDate"
+        >
+          December 31 2021
+        </div>
+      </div>
+      <h2
+        class="sc-htoDjs dHklbN"
+      >
+        This is the headline
+      </h2>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleHeader After 12 hours but on the same calendar day 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa frrTdE"
+    >
+      <div
+        class="sc-bwzfXH htoLMg"
+      >
+        <div
+          class="sc-ifAKCX iDsMnF"
+        >
+          <div
+            class="sc-EHOje dWiCiY"
+            data-testid="UpdatedTime"
+          >
+            6.20am
+          </div>
+        </div>
+      </div>
+      <h2
+        class="sc-htoDjs dHklbN"
+      >
+        This is the headline
+      </h2>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleHeader Between 1 and 12 hours ago 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa frrTdE"
+    >
+      <div
+        class="sc-bwzfXH htoLMg"
+      >
+        <div
+          class="sc-ifAKCX iDsMnF"
+        >
+          <div
+            class="sc-htpNat kquAIx"
+          >
+            <div
+              class="sc-bxivhb eKAsym"
+              data-testid="TimeSincePublishing"
+            >
+              1 hour ago
+            </div>
+            <div
+              class="sc-gzVnrw bpdpWc"
+            />
+          </div>
+          <div
+            class="sc-EHOje dWiCiY"
+            data-testid="UpdatedTime"
+          >
+            10.20pm
+          </div>
+        </div>
+      </div>
+      <h2
+        class="sc-htoDjs dHklbN"
+      >
+        This is the headline
+      </h2>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleHeader Breaking 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa frrTdE"
+    >
+      <div
+        class="sc-bwzfXH htoLMg"
+      >
+        <div
+          class="sc-ifAKCX iDsMnF"
+        >
+          <div
+            class="sc-dnqmqq bGasAc"
+          >
+            <div
+              class="sc-gZMcBi bcfOTp"
+            >
+              <div
+                class="sc-VigVT jaFwsE"
+              >
+                ◆
+              </div>
+              <div
+                class="sc-fjdhpX cvtGYv"
+              >
+                BREAKING
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-EHOje dWiCiY"
+            data-testid="UpdatedTime"
+          >
+            11.30pm
+          </div>
+        </div>
+      </div>
+      <h2
+        class="sc-htoDjs dHklbN"
+      >
+        This is the headline
+      </h2>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleHeader Within an hour of updating 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa frrTdE"
+    >
+      <div
+        class="sc-bwzfXH htoLMg"
+      >
+        <div
+          class="sc-ifAKCX iDsMnF"
+        >
+          <div
+            class="sc-dnqmqq bGasAc"
+          >
+            <div
+              class="sc-gZMcBi bcfOTp"
+            >
+              <div
+                class="sc-VigVT jaFwsE"
+              >
+                ◆
+              </div>
+              <div
+                class="sc-fjdhpX cvtGYv"
+              >
+                BREAKING
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-htpNat kquAIx"
+          >
+            <div
+              class="sc-bxivhb eKAsym"
+              data-testid="TimeSincePublishing"
+            >
+              10 minutes ago
+            </div>
+            <div
+              class="sc-gzVnrw bpdpWc"
+            />
+          </div>
+          <div
+            class="sc-EHOje dWiCiY"
+            data-testid="UpdatedTime"
+          >
+            11.20pm
+          </div>
+        </div>
+      </div>
+      <h2
+        class="sc-htoDjs dHklbN"
+      >
+        This is the headline
+      </h2>
+    </div>
+  </div>
+</body>
+`;
