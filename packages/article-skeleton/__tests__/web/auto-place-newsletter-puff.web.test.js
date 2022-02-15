@@ -139,7 +139,7 @@ describe("Article with automatically placed NewsletterPuff", () => {
   it("should not render another NewsletterPuff when one already exists", () => {
     article.section = "News";
     article.content[3] = paywallContentWithNewsletter;
-    article.flags = ['new'];
+    article.flags = ["new"];
     const output = TestRenderer.create(renderArticle(article));
     expect(output).toMatchSnapshot();
     const isNewsletterPuffs = output.root.findAllByType("InlineNewsletterPuff");
@@ -147,7 +147,7 @@ describe("Article with automatically placed NewsletterPuff", () => {
   });
 
   it("should not render a NewsletterPuff when the article is either a live or breaking", () => {
-    article.flags = ['live']; 
+    article.flags = ["live"];
     const output = TestRenderer.create(renderArticle(article));
     const isNewsletterPuffs = output.root.findAllByType("AutoNewsletterPuff");
     expect(isNewsletterPuffs.length).toBe(0);

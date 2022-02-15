@@ -78,7 +78,7 @@ const ArticleSkeleton = ({
     template,
     savingEnabled,
     sharingEnabled,
-    publishedTime,
+    publishedTime
   } = article;
 
   const articleContentReducers = [
