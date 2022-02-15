@@ -97,8 +97,6 @@ const checkParagraphs = (children, paywall) => {
 const insertNewsletterPuff = (section, isPreview, flags) => children => {
   if (isPreview || getIsLiveOrBreakingFlag(flags)) return children;
 
- if (getIsLiveOrBreakingFlag(flags)) return children;
-
   const newsletterPuff = getNewsletterPuff(section);
   if (!newsletterPuff) return children;
 
