@@ -13,7 +13,7 @@ exports[`ArticleHeader After 12 hours but on a different calendar day 1`] = `
           class="sc-ifAKCX iDsMnF"
         >
           <div
-            class="sc-EHOje dWiCiY"
+            class="sc-EHOje cDoFHw"
             data-testid="UpdatedTime"
           >
             6.20am
@@ -49,7 +49,7 @@ exports[`ArticleHeader After 12 hours but on the same calendar day 1`] = `
           class="sc-ifAKCX iDsMnF"
         >
           <div
-            class="sc-EHOje dWiCiY"
+            class="sc-EHOje cDoFHw"
             data-testid="UpdatedTime"
           >
             6.20am
@@ -92,7 +92,7 @@ exports[`ArticleHeader Between 1 and 12 hours ago 1`] = `
             />
           </div>
           <div
-            class="sc-EHOje dWiCiY"
+            class="sc-EHOje cDoFHw"
             data-testid="UpdatedTime"
           >
             10.20pm
@@ -130,7 +130,7 @@ exports[`ArticleHeader Breaking 1`] = `
               <div
                 class="sc-VigVT jaFwsE"
               >
-                ◆
+                ■
               </div>
               <div
                 class="sc-fjdhpX cvtGYv"
@@ -140,7 +140,7 @@ exports[`ArticleHeader Breaking 1`] = `
             </div>
           </div>
           <div
-            class="sc-EHOje dWiCiY"
+            class="sc-EHOje cDoFHw"
             data-testid="UpdatedTime"
           >
             11.30pm
@@ -178,7 +178,7 @@ exports[`ArticleHeader Within an hour of updating 1`] = `
               <div
                 class="sc-VigVT jaFwsE"
               >
-                ◆
+                ■
               </div>
               <div
                 class="sc-fjdhpX cvtGYv"
@@ -201,7 +201,7 @@ exports[`ArticleHeader Within an hour of updating 1`] = `
             />
           </div>
           <div
-            class="sc-EHOje dWiCiY"
+            class="sc-EHOje cDoFHw"
             data-testid="UpdatedTime"
           >
             11.20pm
