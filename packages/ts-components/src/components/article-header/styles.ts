@@ -73,6 +73,7 @@ export const Headline = styled.h2`
   font-size: 28px;
   line-height: 28px;
   margin-top: 14px;
+  font-weight: 400;
 
   @media (min-width: ${breakpoints.medium}px) {
     font-size: 36px;

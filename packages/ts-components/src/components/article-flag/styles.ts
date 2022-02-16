@@ -26,7 +26,7 @@ export const ArticleFlagBullet = styled.div`
 export const LiveDiamondContainer = styled.div`
   margin-right: 4px;
   color: #ffffff;
-  line-height: 16px;
+  align-self: self-start;
 `;
 
 export const ArticleFlagTextContainer = styled.div`
@@ -38,7 +38,8 @@ export const ArticleFlagTextContainer = styled.div`
   margin-left: 5px;
   color: ${({ color }) => gqlRgbaToStyle(color) || color};
 `;
-export const LiveArticleFlagTextContainer = styled.div`
+
+export const LiveArticleFlagText = styled.span`
   font-family: ${fonts.supporting};
   color: #ffffff;
   font-weight: 500;
