@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.69.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.68.0...@times-components/article-skeleton@1.69.0) (2022-02-16)
+
+
+### Features
+
+* **TDP-1304:** disable newsletter for live news ([#2853](https://github.com/newsuk/times-components/issues/2853)) ([1ab8e29](https://github.com/newsuk/times-components/commit/1ab8e29ecc9b80dde32ddae9c9d71775abe3f270))
+
+
+
+
+
 # [1.68.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.67.4...@times-components/article-skeleton@1.68.0) (2022-02-14)
 
 
