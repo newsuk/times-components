@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.70.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.69.0...@times-components/article-skeleton@1.70.0) (2022-02-16)
+
+
+### Features
+
+* **TDP-758:** added liveBlog as an alternative schema for live articles ([#2847](https://github.com/newsuk/times-components/issues/2847)) ([9e15f4e](https://github.com/newsuk/times-components/commit/9e15f4e85dd398fd4bc46b8a91cb61b942ba4181))
+
+
+
+
+
 # [1.69.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.68.0...@times-components/article-skeleton@1.69.0) (2022-02-16)
 
 
