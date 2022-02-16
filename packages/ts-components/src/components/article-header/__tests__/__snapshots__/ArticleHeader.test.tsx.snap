@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleHeader Breaking - Within the first minute of update 1`] = `
+exports[`ArticleHeader In one calendar day Within the first minute of update - Breaking 1`] = `
 <body>
   <div>
     <div
@@ -36,7 +36,7 @@ exports[`ArticleHeader Breaking - Within the first minute of update 1`] = `
             class="sc-EHOje cDoFHw"
             data-testid="UpdatedTime"
           >
-            11.30pm
+            6.30am
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ exports[`ArticleHeader Breaking - Within the first minute of update 1`] = `
 </body>
 `;
 
-exports[`ArticleHeader Not breaking - Within the first minute of update 1`] = `
+exports[`ArticleHeader In one calendar day Within the first minute of update - Not Breaking 1`] = `
 <body>
   <div>
     <div
@@ -66,7 +66,7 @@ exports[`ArticleHeader Not breaking - Within the first minute of update 1`] = `
             class="sc-EHOje cDoFHw"
             data-testid="UpdatedTime"
           >
-            11.30pm
+            6.30am
           </div>
         </div>
       </div>

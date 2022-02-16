@@ -311,8 +311,6 @@ const renderers = ({
         );
 
       case "article-header":
-        // const { updated, breaking, headline } = attributes;
-
         return (
           <ArticleHeader
             updated={attributes.updated}

@@ -5,7 +5,7 @@ import {
   differenceInMinutes,
   differenceInHours,
   distanceInWordsStrict,
-  isYesterday
+  differenceInCalendarDays
 } from 'date-fns';
 
 import {
@@ -38,6 +38,7 @@ export const ArticleHeader: React.FC<{
 
   const isBreaking = Boolean(breaking);
   const isLessThan13Hours = secondsDifference > 59 && hoursDifference < 13;
+  const isDaysAgo = differenceInCalendarDays(currentDateTime, updated) >= 1;
 
   return (
     <Container isBreaking={isBreaking && minutesDifference < 61}>
@@ -66,7 +67,7 @@ export const ArticleHeader: React.FC<{
             {format(updated, 'h.mma')}
           </UpdatedTime>
         </UpdatedTimeItems>
-        {isYesterday(updated) ? (
+        {isDaysAgo ? (
           <UpdatedDate data-testid="UpdatedDate">
             {format(updated, 'MMMM D YYYY')}
           </UpdatedDate>
