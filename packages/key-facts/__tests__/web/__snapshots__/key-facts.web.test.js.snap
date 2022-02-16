@@ -17,6 +17,7 @@ exports[`1. key facts with title 1`] = `
       An example 
       <a
         data-testid="KeyFactTextLink"
+        href="https://example.io"
       >
         link
       </a>
@@ -57,6 +58,7 @@ exports[`2. key facts without title 1`] = `
       An example 
       <a
         data-testid="KeyFactTextLink"
+        href="https://example.io"
       >
         link
       </a>
