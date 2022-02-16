@@ -25,7 +25,7 @@ describe('ArticleHeader', () => {
   });
   it('Not breaking - Within the first minute of update', () => {
     MockDate.set('2021-12-31T23:30:00Z');
-    const { baseElement, getByText, queryByTestId } = render(
+    const { baseElement, getByText, queryByTestId, queryByText } = render(
       <ArticleHeader
         updated="2021-12-31T23:30:00Z"
         breaking={false}
@@ -33,7 +33,7 @@ describe('ArticleHeader', () => {
       />
     );
     expect(baseElement).toMatchSnapshot();
-    expect(getByText('BREAKING')).toBeVisible();
+    expect(queryByText('BREAKING')).toBeFalsy();
     expect(queryByTestId('UpdatedTime')).toBeTruthy();
     expect(getByText('11.30pm')).toBeVisible();
     expect(queryByTestId('TimeSincePublishing')).toBeFalsy();

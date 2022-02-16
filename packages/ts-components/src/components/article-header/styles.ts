@@ -38,6 +38,7 @@ export const TimeSincePublishing = styled.div<{ isBreaking?: boolean }>`
   font-size: 14px;
   line-height: 18px;
 `;
+
 const updatedStyle = css`
   color: ${colours.functional.secondary};
   font-family: ${fonts.supporting};
@@ -71,10 +72,12 @@ export const Headline = styled.h2`
   font-family: ${fonts.headline};
   font-size: 28px;
   line-height: 28px;
+  margin-top: 14px;
 
   @media (min-width: ${breakpoints.medium}px) {
     font-size: 36px;
     line-height: 36px;
+    margin-top: 20px;
   }
 `;
 
