@@ -9,9 +9,7 @@ export const BaseLiveArticleFlag: React.FC<{ title: string }> = ({ title }) => (
   <LiveArticleFlagContainer>
     <LiveDiamondContainer>{'\u25a0'}</LiveDiamondContainer>
     <div>
-      <LiveArticleFlagText>
-      {title}
-      </LiveArticleFlagText>
+      <LiveArticleFlagText>{title}</LiveArticleFlagText>
     </div>
   </LiveArticleFlagContainer>
 );

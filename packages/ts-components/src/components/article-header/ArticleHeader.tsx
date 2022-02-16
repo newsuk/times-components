@@ -33,13 +33,14 @@ export const ArticleHeader: React.FC<{
       partialMethod: 'floor'
     }) + ' ago';
   const secondsDifference = differenceInSeconds(currentDateTime, updated);
+  const minutesDifference = differenceInMinutes(currentDateTime, updated);
   const hoursDifference = differenceInHours(currentDateTime, updated);
+
   const isBreaking = Boolean(breaking);
   const isLessThan13Hours = secondsDifference > 59 && hoursDifference < 13;
-  const minutesDifference = differenceInMinutes(currentDateTime, updated);
 
   return (
-    <Container>
+    <Container isBreaking={isBreaking && minutesDifference < 61}>
       <UpdatesContainer>
         <UpdatedTimeItems>
           {breaking && minutesDifference < 61 ? (

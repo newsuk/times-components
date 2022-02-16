@@ -1,13 +1,13 @@
 import styled, { css } from 'styled-components';
 import { breakpoints, colours, fonts } from '@times-components/styleguide';
 
-export const Container = styled.div`
+export const Container = styled.div<{ isBreaking: boolean }>`
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 48px 20px 0 20px;
   width: 90%;
-  padding-top: 8px;
+  padding-top: ${({ isBreaking }) => (isBreaking ? '8px' : '5px')};
   border-top: 2px solid #9f0000;
 
   @media (min-width: ${breakpoints.medium}px) {

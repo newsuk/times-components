@@ -19,14 +19,16 @@ exports[`ArticleHeader Breaking - Within the first minute of update 1`] = `
               class="sc-gZMcBi bcfOTp"
             >
               <div
-                class="sc-VigVT jaFwsE"
+                class="sc-VigVT eQelNa"
               >
                 ■
               </div>
-              <div
-                class="sc-fjdhpX cvtGYv"
-              >
-                BREAKING
+              <div>
+                <span
+                  class="sc-fjdhpX cvtGYv"
+                >
+                  BREAKING
+                </span>
               </div>
             </div>
           </div>
@@ -39,7 +41,7 @@ exports[`ArticleHeader Breaking - Within the first minute of update 1`] = `
         </div>
       </div>
       <h2
-        class="sc-htoDjs cSadCi"
+        class="sc-htoDjs FEBRW"
       >
         This is the headline
       </h2>
@@ -52,7 +54,7 @@ exports[`ArticleHeader Not breaking - Within the first minute of update 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa frrTdE"
+      class="sc-bdVaJa eFkHlI"
     >
       <div
         class="sc-bwzfXH htoLMg"
@@ -69,7 +71,7 @@ exports[`ArticleHeader Not breaking - Within the first minute of update 1`] = `
         </div>
       </div>
       <h2
-        class="sc-htoDjs cSadCi"
+        class="sc-htoDjs FEBRW"
       >
         This is the headline
       </h2>
