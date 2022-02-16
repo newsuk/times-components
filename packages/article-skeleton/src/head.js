@@ -32,11 +32,14 @@ function getSectionName(article) {
 
   return nonNews.length ? nonNews[0] : "News";
 }
-function getIsLiveBlog(articleFlags) {
-  const articleLiveFlag = articleFlags.find(
-    flag => flag.type === "LIVE" && Date.now() < new Date(flag.expiryTime)
-  );
-  return articleLiveFlag !== undefined;
+function getIsLiveBlog(articleFlags = []) {
+  if (articleFlags !== undefined) {
+    const articleLiveFlag = articleFlags.find(
+      flag => flag.type === "LIVE" && Date.now() < new Date(flag.expiryTime)
+    );
+    return articleLiveFlag !== undefined;
+  }
+  return false;
 }
 function getAuthorAsText(article) {
   const { bylines } = article;
