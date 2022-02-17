@@ -1,4 +1,3 @@
-import "regenerator-runtime/runtime";
 import minimatch from "minimatch";
 
 const { keys, values, entries } = Object;
