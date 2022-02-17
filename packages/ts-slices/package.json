@@ -51,13 +51,13 @@
   },
   "dependencies": {
     "@times-components/styleguide": "3.38.29",
-    "date-fns": "1.28.5",
+    "date-fns": "2.28.0",
     "lodash.get": "4.4.2",
     "react": "16.9.0",
     "styled-components": "4.3.2"
   },
   "devDependencies": {
-    "@testing-library/react": "^11.2.6",
+    "@testing-library/react": "^12.1.2",
     "@times-components/storybook": "4.1.73",
     "@types/jest": "24.9.1",
     "@types/lodash.get": "4.4.6",

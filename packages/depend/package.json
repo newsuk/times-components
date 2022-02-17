@@ -63,12 +63,10 @@
   "dependencies": {
     "chalk": "2.4.1",
     "commander": "2.17.1",
-    "core-js": "^2.6.5",
     "fs-extra": "7.0.0",
     "glob": "7.1.2",
     "lodash.flatten": "4.4.0",
     "minimatch": "3.0.4",
-    "regenerator-runtime": "0.13.7",
     "semver": "5.5.0"
   },
   "publishConfig": {
