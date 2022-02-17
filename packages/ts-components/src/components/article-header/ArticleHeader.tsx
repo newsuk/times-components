@@ -4,9 +4,9 @@ import {
   differenceInSeconds,
   differenceInMinutes,
   differenceInHours,
-  distanceInWordsStrict,
   differenceInCalendarDays
 } from 'date-fns';
+import formatDistanceStrict from "date-fns/formatDistanceStrict"
 
 import {
   Container,
@@ -27,18 +27,19 @@ const ArticleHeader: React.FC<{
   breaking: boolean;
   headline: string;
 }> = ({ updated, breaking, headline }) => {
+  const updatedDate = new Date(updated);
   const currentDateTime = new Date();
   const timeSincePublishing =
-    distanceInWordsStrict(updated, currentDateTime, {
-      partialMethod: 'floor'
+    formatDistanceStrict(updatedDate, currentDateTime, {
+      roundingMethod: 'floor'
     }) + ' ago';
-  const secondsDifference = differenceInSeconds(currentDateTime, updated);
-  const minutesDifference = differenceInMinutes(currentDateTime, updated);
-  const hoursDifference = differenceInHours(currentDateTime, updated);
+  const secondsDifference = differenceInSeconds(currentDateTime, updatedDate);
+  const minutesDifference = differenceInMinutes(currentDateTime, updatedDate);
+  const hoursDifference = differenceInHours(currentDateTime, updatedDate);
 
   const isBreaking = Boolean(breaking);
   const isLessThan13Hours = secondsDifference > 59 && hoursDifference < 13;
-  const isDaysAgo = differenceInCalendarDays(currentDateTime, updated) >= 1;
+  const isDaysAgo = differenceInCalendarDays(currentDateTime, updatedDate) >= 1;
 
   return (
     <Container isBreaking={isBreaking && minutesDifference < 61}>
@@ -64,12 +65,12 @@ const ArticleHeader: React.FC<{
             isLessThan13Hours={isLessThan13Hours}
             data-testId="UpdatedTime"
           >
-            {format(updated, 'h.mma')}
+            {format(updatedDate, 'h.mmaaa')}
           </UpdatedTime>
         </UpdatedTimeItems>
         {isDaysAgo ? (
           <UpdatedDate data-testid="UpdatedDate">
-            {format(updated, 'MMMM D YYYY')}
+            {format(updatedDate, 'MMMM d yyyy')}
           </UpdatedDate>
         ) : null}
       </UpdatesContainer>
