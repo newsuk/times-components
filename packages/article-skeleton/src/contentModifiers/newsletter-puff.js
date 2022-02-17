@@ -1,3 +1,5 @@
+import { getIsLiveOrBreakingFlag } from "../data-helper";
+
 const setNewsletterPayload = attributes => ({
   name: "autoNewsletterPuff",
   attributes: {
@@ -92,8 +94,8 @@ const checkParagraphs = (children, paywall) => {
   return paragraphs + paywallParagraphs >= 5;
 };
 
-const insertNewsletterPuff = (section, isPreview) => children => {
-  if (isPreview) return children;
+const insertNewsletterPuff = (section, isPreview, flags) => children => {
+  if (isPreview || getIsLiveOrBreakingFlag(flags)) return children;
 
   const newsletterPuff = getNewsletterPuff(section);
   if (!newsletterPuff) return children;

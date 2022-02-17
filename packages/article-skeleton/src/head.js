@@ -32,7 +32,15 @@ function getSectionName(article) {
 
   return nonNews.length ? nonNews[0] : "News";
 }
-
+function getIsLiveBlog(articleFlags = []) {
+  if (articleFlags !== undefined) {
+    const articleLiveFlag = articleFlags.find(
+      flag => flag.type === "LIVE" && Date.now() < new Date(flag.expiryTime)
+    );
+    return articleLiveFlag !== undefined;
+  }
+  return false;
+}
 function getAuthorAsText(article) {
   const { bylines } = article;
   if (!bylines) {
@@ -137,9 +145,11 @@ function Head({
     updatedTime,
     hasVideo,
     seoDescription,
+    keywords,
     url
   } = article;
 
+  const isLiveBlogArticle = getIsLiveBlog(article.expirableFlags);
   const publication = PUBLICATION_NAMES[publicationName];
   const authorName = getAuthorAsText(article);
   const desc =
@@ -174,7 +184,7 @@ function Head({
     defaultAuthorSchema;
 
   const jsonLD = {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "NewsArticle",
     headline: title,
     publisher: {
@@ -215,7 +225,7 @@ function Head({
   }
   const videoJsonLD = hasVideo
     ? {
-        "@context": "https://schema.org/",
+        "@context": "https://schema.org",
         "@type": "VideoObject",
         name: leadAsset.title || title,
         uploadDate: dateModified,
@@ -228,6 +238,47 @@ function Head({
       }
     : null;
 
+  const liveBlogJsonLD = {
+    "@context": "https://schema.org",
+    "@type": "LiveBlogPosting",
+    headline,
+    description: seoDescription,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url
+    },
+    datePublished: publishedTime,
+    dateModified: updatedTime,
+    coverageStartTime: publishedTime,
+    url,
+    keywords,
+    image: {
+      "@type": "ImageObject",
+      url: leadassetUrl,
+      caption
+    },
+    publisher: {
+      "@type": "Organization",
+      name: publication,
+      logo: {
+        "@type": "ImageObject",
+        url: logoUrl
+      }
+    },
+    author: authorSchema
+    // when the liveBlogUpdate has some real data, then you can use this structure to populate the updates
+    /** * /
+    ,
+    "liveBlogUpdate":[
+      {
+        "type":"BlogPosting",
+        "headline":"This is a headline. The apocalypse is here",
+        "datePublished":"1999-12-31T23:59:59Z",
+        "url": "https://schema.org/LiveBlogPosting"
+      }
+    ]
+    /** */
+  };
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
@@ -260,7 +311,17 @@ function Head({
             {leadassetUrl && (
               <meta content={leadassetUrl} name="twitter:image" />
             )}
-            <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
+
+            {isLiveBlogArticle ? (
+              <script type="application/ld+json">
+                {JSON.stringify(liveBlogJsonLD)}
+              </script>
+            ) : (
+              <script type="application/ld+json">
+                {JSON.stringify(jsonLD)}
+              </script>
+            )}
+
             {videoJsonLD && (
               <script type="application/ld+json">
                 {JSON.stringify(videoJsonLD)}
