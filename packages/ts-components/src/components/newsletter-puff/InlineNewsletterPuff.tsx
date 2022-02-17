@@ -4,6 +4,7 @@ import { Mutation } from 'react-apollo';
 import { GetNewsletter } from '@times-components/provider';
 import { subscribeNewsletter as subscribeNewsletterMutation } from '@times-components/provider-queries';
 import Image, { Placeholder } from '@times-components/image';
+import { getIsLiveOrBreakingFlag } from '@times-components/article-skeleton';
 
 import { NewsletterPuffButton } from './NewsletterPuffButton';
 

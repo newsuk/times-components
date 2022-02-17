@@ -43,8 +43,11 @@ const optionalFields = {
   linkText: 'Read the full article'
 };
 
+let mockIsLiveOrBreakingFlag;
+
 const requiredProps = {
-  sectionColour: '#13354E'
+  sectionColour: '#13354E',
+  isLiveOrBreakingFlag: mockIsLiveOrBreakingFlag
 };
 
 describe('InArticlePuff', () => {
@@ -172,6 +175,7 @@ describe('InArticlePuff', () => {
     });
 
     it('fires click event when Read more clicked', () => {
+      mockIsLiveOrBreakingFlag = 'live';
       (useFetch as jest.Mock).mockReturnValue(
         deckApiPayloadWrapper(optionalFields)
       );
@@ -207,12 +211,14 @@ describe('InArticlePuff', () => {
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : Read the full article',
-          section: 'section'
+          section: 'section',
+          other_details: 'live'
         }
       });
     });
 
     it('fires click event when headline clicked', () => {
+      mockIsLiveOrBreakingFlag = 'breaking';
       (useFetch as jest.Mock).mockReturnValue(
         deckApiPayloadWrapper(optionalFields)
       );
@@ -248,7 +254,8 @@ describe('InArticlePuff', () => {
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : headline',
-          section: 'section'
+          section: 'section',
+          other_details: 'breaking'
         }
       });
     });
