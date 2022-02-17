@@ -20,5 +20,7 @@ export const getTimeSince = (article: SliceArticle) => {
     return null;
   }
 
-  return `${formatDistanceToNowStrict(mostRecent)} ago`;
+  return `${formatDistanceToNowStrict(mostRecent, {
+    roundingMethod: 'floor'
+  })} ago`;
 };
