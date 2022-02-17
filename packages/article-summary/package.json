@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "3.17.3",
+  "version": "3.17.4",
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {
@@ -37,7 +37,7 @@
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator": "2.8.0",
     "@times-components/jest-serializer": "3.2.29",
-    "@times-components/storybook": "4.1.72",
+    "@times-components/storybook": "4.1.73",
     "@times-components/test-utils": "2.3.10",
     "@times-components/webpack-configurator": "2.0.29",
     "babel-jest": "24.8.0",
@@ -57,14 +57,14 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-byline": "3.5.45",
-    "@times-components/article-label": "2.7.65",
-    "@times-components/date-publication": "0.21.67",
-    "@times-components/markup": "3.4.66",
+    "@times-components/article-byline": "3.5.46",
+    "@times-components/article-label": "2.7.66",
+    "@times-components/date-publication": "0.21.68",
+    "@times-components/markup": "3.4.67",
     "@times-components/markup-forest": "1.8.1",
-    "@times-components/styleguide": "3.38.28",
-    "@times-components/ts-components": "1.18.3",
-    "@times-components/video-label": "2.4.70",
+    "@times-components/styleguide": "3.38.29",
+    "@times-components/ts-components": "1.18.4",
+    "@times-components/video-label": "2.4.71",
     "prop-types": "15.7.2",
     "react-native-web": "0.11.4"
   },

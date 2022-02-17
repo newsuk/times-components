@@ -6,14 +6,16 @@ import {
   isNonMeteredExpiredUser,
   isSubscriber,
   shouldShowFullArticle,
-  isLoggedInOrShared
+  isLoggedInOrShared,
+  hasAccess
 } from "../src/matchers";
 
 const defaultUserState = {
   isLoggedIn: false,
   isMetered: false,
   isMeteredExpired: false,
-  isShared: false
+  isShared: false,
+  hasAccess: false
 };
 
 describe("user state should", () => {
@@ -135,6 +137,18 @@ describe("user state should", () => {
     });
   });
 
+  describe("hasAccess", () => {
+    it("return true if userState hasAccess is true", () => {
+      const userState = { ...defaultUserState, hasAccess: true };
+      expect(hasAccess(userState)).toBe(true);
+    });
+
+    it("return false if userState hasAccess is false", () => {
+      const userState = { ...defaultUserState, hasAccess: false };
+      expect(hasAccess(userState)).toBe(false);
+    });
+  });
+
   describe("isLoggedInOrShared", () => {
     it("returns true when user is subscriber", () => {
       const userState = { ...defaultUserState, isLoggedIn: true };
@@ -188,6 +202,11 @@ describe("user state should", () => {
 
     it("returns true when user is on share token", () => {
       const userState = { ...defaultUserState, isShared: true };
+      expect(shouldShowFullArticle(userState)).toBe(true);
+    });
+
+    it("returns true when user hasAccess", () => {
+      const userState = { ...defaultUserState, hasAccess: true };
       expect(shouldShowFullArticle(userState)).toBe(true);
     });
 
