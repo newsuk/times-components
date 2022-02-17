@@ -5,8 +5,7 @@ export const Container = styled.div<{ isBreaking: boolean }>`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 48px 20px 0 20px;
-  width: 90%;
+  margin: 48px 10px 0 10px;
   padding-top: ${({ isBreaking }) => (isBreaking ? '8px' : '5px')};
   border-top: 2px solid #9f0000;
 
@@ -72,7 +71,7 @@ export const Headline = styled.h2`
   font-family: ${fonts.headline};
   font-size: 28px;
   line-height: 28px;
-  margin-top: 14px;
+  margin-top: 22px;
   font-weight: 400;
 
   @media (min-width: ${breakpoints.medium}px) {

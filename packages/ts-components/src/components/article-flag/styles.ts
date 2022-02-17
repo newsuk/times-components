@@ -23,8 +23,8 @@ export const ArticleFlagBullet = styled.div`
   background-color: ${({ color }) => gqlRgbaToStyle(color) || color};
 `;
 
-export const LiveDiamondContainer = styled.div`
-  margin-right: 4px;
+export const LiveIconContainer = styled.div`
+  margin-right: 8px;
   color: #ffffff;
   align-self: self-start;
 `;
