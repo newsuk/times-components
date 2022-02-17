@@ -83,3 +83,7 @@ export { HiddenDiv } from './components/common-styles';
 export { InlineMessage } from './components/inline-message/InlineMessage';
 
 export { InlineDialog } from './components/inline-dialog/InlineDialog';
+
+export {
+  default as ArticleHeader
+} from './components/article-header/ArticleHeader';

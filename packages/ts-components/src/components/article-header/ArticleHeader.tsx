@@ -22,7 +22,7 @@ import {
 } from './styles';
 import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
 
-export const ArticleHeader: React.FC<{
+const ArticleHeader: React.FC<{
   updated: string;
   breaking: boolean;
   headline: string;
@@ -77,3 +77,5 @@ export const ArticleHeader: React.FC<{
     </Container>
   );
 };
+
+export default ArticleHeader;

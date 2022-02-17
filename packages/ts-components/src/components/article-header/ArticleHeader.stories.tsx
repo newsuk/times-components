@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { date, boolean } from '@storybook/addon-knobs';
 
 import { ArticleHarness } from '../../fixtures/article-harness/ArticleHarness';
-import { ArticleHeader } from './ArticleHeader';
+import ArticleHeader from './ArticleHeader';
 
 storiesOf('Typescript Component/Article Header', module)
   .addDecorator((storyFn: () => React.ReactNode) => (

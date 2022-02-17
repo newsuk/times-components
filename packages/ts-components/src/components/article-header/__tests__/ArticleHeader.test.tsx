@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
-import { ArticleHeader } from '../ArticleHeader';
+import ArticleHeader from '../ArticleHeader';
 import MockDate from 'mockdate';
 
 describe('ArticleHeader', () => {
