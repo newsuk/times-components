@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.69...@times-components/user-state@0.2.0) (2022-02-16)
+
+
+### Features
+
+* **TDP-1329:** Unlock related articles to users with access to full articles  ([#2855](https://github.com/newsuk/times-components/issues/2855)) ([741b04d](https://github.com/newsuk/times-components/commit/741b04d055350897bad80c97535f189d9ea6eb14))
+
+
+
+
+
 ## [0.1.69](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.68...@times-components/user-state@0.1.69) (2022-02-10)
 
 **Note:** Version bump only for package @times-components/user-state
