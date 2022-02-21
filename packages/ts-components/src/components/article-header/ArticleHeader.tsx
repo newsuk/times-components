@@ -24,8 +24,8 @@ import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
 
 const ArticleHeader: React.FC<{
   updated: string;
-  breaking: boolean;
-  headline: string;
+  breaking?: string;
+  headline?: string;
 }> = ({ updated, breaking, headline }) => {
   const currentDateTime = new Date();
   const updatedDate = new Date(updated);
@@ -37,7 +37,9 @@ const ArticleHeader: React.FC<{
   const minutesDifference = differenceInMinutes(currentDateTime, updatedDate);
   const hoursDifference = differenceInHours(currentDateTime, updatedDate);
 
-  const isBreaking = Boolean(breaking);
+  const isBreaking = breaking?.toLowerCase() === 'true';
+  console.log(isBreaking, 'IS BREAKING');
+  console.log(breaking, 'BREAKING')
   const isLessThan13Hours = secondsDifference > 59 && hoursDifference < 13;
   const isDaysAgo = differenceInCalendarDays(currentDateTime, updatedDate) >= 1;
 
@@ -45,7 +47,7 @@ const ArticleHeader: React.FC<{
     <Container isBreaking={isBreaking && minutesDifference < 61}>
       <UpdatesContainer>
         <UpdatedTimeItems>
-          {breaking && minutesDifference < 61 ? (
+          {isBreaking && minutesDifference < 61 ? (
             <FlagContainer>
               <BreakingArticleFlag />
             </FlagContainer>
@@ -74,7 +76,9 @@ const ArticleHeader: React.FC<{
           </UpdatedDate>
         ) : null}
       </UpdatesContainer>
-      <Headline>{decodeURI(headline)}</Headline>
+      {
+        headline && <Headline>{decodeURI(headline)}</Headline>
+      }
     </Container>
   );
 };
