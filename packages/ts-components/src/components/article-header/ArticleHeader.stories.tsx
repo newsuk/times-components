@@ -15,9 +15,9 @@ storiesOf('Typescript Component/Article Header', module)
     const groupId = 'Options';
     const value = date(label, defaultValue, groupId);
     const breakingOptions = {
-      True: "true",
-      False: undefined,
-  };
+      True: 'true',
+      False: undefined
+    };
 
     const updated = new Date(value).toISOString();
     return (

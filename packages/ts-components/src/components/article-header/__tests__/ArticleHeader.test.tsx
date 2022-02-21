@@ -43,13 +43,10 @@ describe('ArticleHeader', () => {
       expect(queryByTestId('UpdatedDate')).toBeFalsy();
       expect(getByText('This is the headline')).toBeVisible();
     });
-    it('Within the first minute of update - No title not breaking', () => {
+    it('Within the first minute of update - No headline not breaking', () => {
       MockDate.set('2021-12-31T06:30:00Z');
       const { baseElement, getByText, queryByTestId, queryByText } = render(
-        <ArticleHeader
-          updated={updated}
-          headline="This%20is%20the%20headline"
-        />
+        <ArticleHeader updated={updated} />
       );
       expect(baseElement).toMatchSnapshot();
       expect(queryByText('This is the headline')).toBeFalsy();

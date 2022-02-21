@@ -37,9 +37,10 @@ const ArticleHeader: React.FC<{
   const minutesDifference = differenceInMinutes(currentDateTime, updatedDate);
   const hoursDifference = differenceInHours(currentDateTime, updatedDate);
 
-  const isBreaking = breaking?.toLowerCase() === 'true';
-  console.log(isBreaking, 'IS BREAKING');
-  console.log(breaking, 'BREAKING')
+  const isBreaking = breaking
+    ? Boolean(breaking.toLowerCase() === 'true')
+    : false;
+
   const isLessThan13Hours = secondsDifference > 59 && hoursDifference < 13;
   const isDaysAgo = differenceInCalendarDays(currentDateTime, updatedDate) >= 1;
 
@@ -76,9 +77,7 @@ const ArticleHeader: React.FC<{
           </UpdatedDate>
         ) : null}
       </UpdatesContainer>
-      {
-        headline && <Headline>{decodeURI(headline)}</Headline>
-      }
+      {headline && <Headline>{decodeURI(headline)}</Headline>}
     </Container>
   );
 };

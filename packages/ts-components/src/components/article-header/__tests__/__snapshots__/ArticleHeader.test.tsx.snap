@@ -50,7 +50,7 @@ exports[`ArticleHeader In one calendar day Within the first minute of update - B
 </body>
 `;
 
-exports[`ArticleHeader In one calendar day Within the first minute of update - No title not breaking 1`] = `
+exports[`ArticleHeader In one calendar day Within the first minute of update - No headline not breaking 1`] = `
 <body>
   <div>
     <div
@@ -70,11 +70,6 @@ exports[`ArticleHeader In one calendar day Within the first minute of update - N
           </div>
         </div>
       </div>
-      <h2
-        class="sc-htoDjs dBHFtk"
-      >
-        This is the headline
-      </h2>
     </div>
   </div>
 </body>
