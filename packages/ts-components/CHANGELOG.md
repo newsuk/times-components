@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.19.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.19.1...@times-components/ts-components@1.19.2) (2022-02-22)
+
+
+### Bug Fixes
+
+* **TDP-760:** Fix article heading divider spacing ([#2859](https://github.com/newsuk/times-components/issues/2859)) ([1916667](https://github.com/newsuk/times-components/commit/19166676f45aa80c103c8ba9d7c62730070c8cc5))
+
+
+
+
+
 ## [1.19.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.19.0...@times-components/ts-components@1.19.1) (2022-02-22)
 
 **Note:** Version bump only for package @times-components/ts-components
