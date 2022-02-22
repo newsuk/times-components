@@ -111,7 +111,7 @@ describe('ArticleHeader', () => {
     const updated = '2021-12-31T23:30:00Z';
     afterEach(() => MockDate.reset());
     it('within an hour of updating but on a different calendar day', () => {
-      MockDate.set('2022-01-01T00:30:00Z');
+      MockDate.set('2022-01-01T00:29:00Z');
       const { getByTestId, queryByTestId, getByText } = render(
         <ArticleHeader
           updated={updated}

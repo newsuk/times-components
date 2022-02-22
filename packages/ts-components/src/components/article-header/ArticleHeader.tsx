@@ -2,8 +2,6 @@ import React from 'react';
 import {
   format,
   differenceInSeconds,
-  differenceInMinutes,
-  differenceInHours,
   differenceInCalendarDays,
   formatDistanceStrict
 } from 'date-fns';
@@ -33,27 +31,27 @@ const ArticleHeader: React.FC<{
     formatDistanceStrict(updatedDate, currentDateTime, {
       roundingMethod: 'floor'
     }) + ' ago';
-  const secondsDifference = differenceInSeconds(currentDateTime, updatedDate);
-  const minutesDifference = differenceInMinutes(currentDateTime, updatedDate);
-  const hoursDifference = differenceInHours(currentDateTime, updatedDate);
+  const diffInSeconds = differenceInSeconds(currentDateTime, updatedDate);
+
+  const isLessThan1Minute = diffInSeconds < 60;
+  const isLessThan1Hour = diffInSeconds < 60 * 60;
+  const isLessThan13Hours = diffInSeconds < 60 * 60 * 13;
+  const isDaysAgo = differenceInCalendarDays(currentDateTime, updatedDate) >= 1;
 
   const isBreaking = breaking
     ? Boolean(breaking.toLowerCase() === 'true')
     : false;
 
-  const isLessThan13Hours = secondsDifference > 59 && hoursDifference < 13;
-  const isDaysAgo = differenceInCalendarDays(currentDateTime, updatedDate) >= 1;
-
   return (
-    <Container isBreaking={isBreaking && minutesDifference < 61}>
+    <Container isBreaking={isBreaking && isLessThan1Hour}>
       <UpdatesContainer>
         <UpdatedTimeItems>
-          {isBreaking && minutesDifference < 61 ? (
+          {isBreaking && isLessThan1Hour ? (
             <FlagContainer>
               <BreakingArticleFlag />
             </FlagContainer>
           ) : null}
-          {isLessThan13Hours ? (
+          {!isLessThan1Minute && isLessThan13Hours ? (
             <TimeSincePublishingContainer>
               <TimeSincePublishing
                 isBreaking={isBreaking}
@@ -65,7 +63,7 @@ const ArticleHeader: React.FC<{
             </TimeSincePublishingContainer>
           ) : null}
           <UpdatedTime
-            isLessThan13Hours={isLessThan13Hours}
+            isLessThan13Hours={!isLessThan1Minute && isLessThan13Hours}
             data-testId="UpdatedTime"
           >
             {format(updatedDate, 'h.mmaaa')}
