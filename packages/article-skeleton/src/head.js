@@ -35,7 +35,9 @@ function getSectionName(article) {
 function getIsLiveBlog(articleFlags = []) {
   if (articleFlags !== undefined) {
     const articleLiveFlag = articleFlags.find(
-      flag => flag.type === "LIVE" && Date.now() < new Date(flag.expiryTime)
+      flag =>
+        flag.type === "LIVE" &&
+        (Date.now() < new Date(flag.expiryTime) || flag.expiryTime === null)
     );
     return articleLiveFlag !== undefined;
   }
