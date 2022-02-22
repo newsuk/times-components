@@ -1,7 +1,6 @@
 import React from "react";
 import { TrackingContextProvider } from  "@times-components/ts-components";
 import KeyFactsText from "./key-facts-text";
-import { withTrackingContext, withTrackScrollDepth  } from "@times-components/tracking";
 import { defaultProps, propTypes } from "./key-facts-prop-types";
 import {
   BulletContainer,
@@ -30,8 +29,6 @@ const KeyFacts = ({ ast, analyticsStream}) => {
     attributes: { title }
   } = ast;
   const { children: keyFactsItems } = children[0];
-
-a = analyticsStream;
 
   const clickEvent = () => ({
     action: 'Clicked',
@@ -74,7 +71,7 @@ a = analyticsStream;
       event_navigation_browsing_method: 'scroll',
     }}}
   >
-  {({ fireAnalyticsEvent,  intersectObserverRef }) => (
+  {({ fireAnalyticsEvent, intersectObserverRef }) => (
     <KeyFactsContainer>
       {title && <KeyFactsTitle>{title}</KeyFactsTitle>}
       {keyFactsItems.map((item, index) => renderKeyFact(item, index, fireAnalyticsEvent, intersectObserverRef))}
@@ -87,14 +84,6 @@ a = analyticsStream;
 KeyFacts.propTypes = propTypes;
 KeyFacts.defaultProps = defaultProps;
 
-export default withTrackScrollDepth(KeyFacts, {
-  getAttrs: () => {
+export default KeyFacts
 
-    return {
-      ...analyticsData.other,
-    };
-  },
-  trackingObjectName: "Article",
-  ...analyticsData.events,
-});
 
