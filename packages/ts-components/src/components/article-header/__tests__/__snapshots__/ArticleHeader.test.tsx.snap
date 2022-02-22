@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleHeader In one calendar day Within the first minute of update - Breaking 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa loTniz"
+    >
+      <div
+        class="sc-bwzfXH htoLMg"
+      >
+        <div
+          class="sc-ifAKCX iDsMnF"
+        >
+          <div
+            class="sc-dnqmqq bGasAc"
+          >
+            <div
+              class="sc-gZMcBi bcfOTp"
+            >
+              <div
+                class="sc-VigVT bvOrBW"
+              >
+                ■
+              </div>
+              <div>
+                <span
+                  class="sc-fjdhpX cvtGYv"
+                >
+                  BREAKING
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-EHOje cDoFHw"
+            data-testid="UpdatedTime"
+          >
+            6.30am
+          </div>
+        </div>
+      </div>
+      <h2
+        class="sc-htoDjs dBHFtk"
+      >
+        This is the headline
+      </h2>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleHeader In one calendar day Within the first minute of update - No headline not breaking 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa keGbcB"
+    >
+      <div
+        class="sc-bwzfXH htoLMg"
+      >
+        <div
+          class="sc-ifAKCX iDsMnF"
+        >
+          <div
+            class="sc-EHOje cDoFHw"
+            data-testid="UpdatedTime"
+          >
+            6.30am
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleHeader In one calendar day Within the first minute of update - Not Breaking 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa keGbcB"
+    >
+      <div
+        class="sc-bwzfXH htoLMg"
+      >
+        <div
+          class="sc-ifAKCX iDsMnF"
+        >
+          <div
+            class="sc-EHOje cDoFHw"
+            data-testid="UpdatedTime"
+          >
+            6.30am
+          </div>
+        </div>
+      </div>
+      <h2
+        class="sc-htoDjs dBHFtk"
+      >
+        This is the headline
+      </h2>
+    </div>
+  </div>
+</body>
+`;

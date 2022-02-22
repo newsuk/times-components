@@ -23,10 +23,10 @@ export const ArticleFlagBullet = styled.div`
   background-color: ${({ color }) => gqlRgbaToStyle(color) || color};
 `;
 
-export const LiveDiamondContainer = styled.div`
-  margin-right: 4px;
+export const LiveIconContainer = styled.div`
+  margin-right: 8px;
   color: #ffffff;
-  line-height: 16px;
+  align-self: self-start;
 `;
 
 export const ArticleFlagTextContainer = styled.div`
@@ -38,7 +38,8 @@ export const ArticleFlagTextContainer = styled.div`
   margin-left: 5px;
   color: ${({ color }) => gqlRgbaToStyle(color) || color};
 `;
-export const LiveArticleFlagTextContainer = styled.div`
+
+export const LiveArticleFlagText = styled.span`
   font-family: ${fonts.supporting};
   color: #ffffff;
   font-weight: 500;
