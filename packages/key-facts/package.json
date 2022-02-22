@@ -39,6 +39,7 @@
     "@times-components/storybook": "4.1.73",
     "@times-components/test-utils": "2.3.10",
     "@times-components/webpack-configurator": "2.0.29",
+    "@times-components/tealium-utils": "0.7.75",
     "babel-jest": "24.8.0",
     "depcheck": "0.6.9",
     "enzyme": "3.9.0",
@@ -61,6 +62,8 @@
     "@times-components/markup-forest": "1.8.1",
     "@times-components/responsive": "0.7.7",
     "@times-components/styleguide": "3.38.29",
+    "@times-components/tracking": "2.9.7",
+    "@times-components/ts-components": "1.18.4",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },

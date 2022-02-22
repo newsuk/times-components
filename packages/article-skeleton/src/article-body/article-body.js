@@ -380,7 +380,7 @@ const renderers = ({
     );
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {
-    return <KeyFacts ast={node} key={key} />;
+    return <KeyFacts ast={node} key={key} analyticsStream={analyticsStream} />;
   },
   heading2(key, attributes, children) {
     return <Heading2>{children}</Heading2>;

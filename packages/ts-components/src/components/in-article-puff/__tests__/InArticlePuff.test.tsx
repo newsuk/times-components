@@ -186,7 +186,8 @@ describe('InArticlePuff', () => {
             component: 'ArticleSkeleton',
             attrs: {
               articleHeadline: 'articleHeadline',
-              section: 'section'
+              section: 'section',
+              other_details: 'live'
             }
           }}
           analyticsStream={analyticsStream}
@@ -229,7 +230,8 @@ describe('InArticlePuff', () => {
             component: 'ArticleSkeleton',
             attrs: {
               articleHeadline: 'articleHeadline',
-              section: 'section'
+              section: 'section',
+              other_details: 'breaking'
             }
           }}
           analyticsStream={analyticsStream}

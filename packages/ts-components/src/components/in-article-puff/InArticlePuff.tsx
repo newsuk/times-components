@@ -45,7 +45,7 @@ const scrollEvent = {
   }
 };
 
-const clickEvent = (buttonLabel: string, isLiveOrBreakingFlag: string) => ({
+const clickEvent = (buttonLabel: string, isLiveOrBreakingFlag?: string) => ({
   action: 'Clicked',
   attrs: {
     event_navigation_name: `button : ${buttonLabel}`,

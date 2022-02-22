@@ -17,13 +17,7 @@ const KeyFactsText = ({ item, listIndex, onLinkPress }) => (
               <KeyFactTextLink
                 data-testid="KeyFactTextLink"
                 key={key}
-                onPress={e =>
-                  onLinkPress(e, {
-                    canonicalId,
-                    type,
-                    url
-                  })
-                }
+                onPress={onLinkPress}
                 href={url}
               >
                 {renderedChildren}
