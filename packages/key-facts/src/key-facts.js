@@ -30,17 +30,20 @@ const KeyFacts = ({ ast, analyticsStream}) => {
   } = ast;
   const { children: keyFactsItems } = children[0];
 
-  const clickEvent = () => ({
+  const clickEvent = () => {
+    console.log(2)
+    return({
     action: 'Clicked',
     attrs: {
       ...analyticsData.other,
       ...analyticsData.events,
       event_navigation_browsing_method: 'click',
-  }});
+  }})}
 
   const handleClick = (
     fireAnalyticsEvent
   ) => {
+    console.log(1)
     fireAnalyticsEvent && fireAnalyticsEvent(clickEvent());
   };
 
@@ -51,8 +54,7 @@ const KeyFacts = ({ ast, analyticsStream}) => {
       <KeyFactsText
         item={item}
         listIndex={listIndex}
-        onLinkPress={() => {}}
-        onLinkPress={() => handleClick(fireAnalyticsEvent)}
+        onLinkPress={ () => handleClick(fireAnalyticsEvent)}
       />
     </BulletContainer>
   )}
