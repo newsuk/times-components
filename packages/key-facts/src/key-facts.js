@@ -4,26 +4,27 @@ import KeyFactsText from "./key-facts-text";
 import { defaultProps, propTypes } from "./key-facts-prop-types";
 import { KeyFactsTitle, KeyFactsContainer } from "./styles";
 
-const analyticsData = {
-  event: {
-    event_navigation_name: "In-article component displayed: key moments",
-    event_navigation_action: "navigation"
-  },
-  other: {
-    componentType: "In-article component: key moments: static",
-    articleName: "",
-    componentName: "title",
-    sectionDetails: "article section",
-    articleParentName: "article headline"
-  }
-};
 
-const KeyFacts = ({ ast, analyticsStream }) => {
+
+const KeyFacts = ({ ast, analyticsStream, section, headline }) => {
   const {
     children,
     attributes: { title }
   } = ast;
   const { children: keyFactsItems } = children[0];
+
+  const analyticsData = {
+    event: {
+      event_navigation_name: "In-article component displayed: key moments",
+      event_navigation_action: "navigation"
+    },
+    other: {
+      component_type: "In-article component: key moments: static",
+      component_name: title,
+      section_details: section,
+      article_parent_name: headline
+    }
+  };
 
   return (
     <TrackingContextProvider
