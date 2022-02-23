@@ -4,7 +4,7 @@ import { colours, fonts } from '@times-components/styleguide';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  border: red 1px;
+  border: red 1px solid;
   padding: 10px;
 `;
 

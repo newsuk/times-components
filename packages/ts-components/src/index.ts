@@ -87,3 +87,5 @@ export { InlineDialog } from './components/inline-dialog/InlineDialog';
 export {
   default as ArticleHeader
 } from './components/article-header/ArticleHeader';
+
+export { UpdatedTimestamp } from './components/updated-timestamp/UpdatedTimestamp';

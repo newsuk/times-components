@@ -10,16 +10,16 @@ storiesOf('Typescript Component/Updated Timestamp', module)
     const defaultValue = new Date();
     const groupId = 'Options';
     const value = date(label, defaultValue, groupId);
-    const breakingOptions = {
-        True: 'true',
-        False: undefined
-    };
+    // const breakingOptions = {
+    //     True: 'true',
+    //     False: undefined
+    // };
     const updated = new Date(value).toISOString();
 
    return (
    <UpdatedTimestamp 
      updated={updated}
-     breaking={select('Breaking', breakingOptions, undefined, groupId)}
+    //  breaking={select('Breaking', breakingOptions, undefined, groupId)}
    />
    )
 });
