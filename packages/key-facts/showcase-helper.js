@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import Responsive from "@times-components/responsive";
-import KeyFacts from "./src/key-facts";
 import storybookReporter from "@times-components/tealium-utils";
+import KeyFacts from "./src/key-facts";
 
 const renderKeyFacts = ({ ast }) => (
   <Responsive>
