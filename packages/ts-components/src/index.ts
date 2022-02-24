@@ -89,5 +89,5 @@ export {
 } from './components/article-header/ArticleHeader';
 
 export {
-  default as safeDecodeURIComponent
+  safeDecodeURIComponent
 } from './utils/safeDecodeURIComponent';
