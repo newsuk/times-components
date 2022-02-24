@@ -42,14 +42,13 @@ const ArticleHeader: React.FC<{
     ? Boolean(breaking.toLowerCase() === 'true')
     : false;
 
-  const decodeHeadline = (headline: string) => {
-    try{
-      return decodeURI(headline)
+  const decodeHeadline = (uri: string) => {
+    try {
+      return decodeURI(uri);
+    } catch {
+      return uri;
     }
-    catch {
-      return headline
-    }
-  }
+  };
 
   return (
     <Container isBreaking={isBreaking && isLessThan1Hour}>
