@@ -88,6 +88,4 @@ export {
   default as ArticleHeader
 } from './components/article-header/ArticleHeader';
 
-export {
-  safeDecodeURIComponent
-} from './utils/safeDecodeURIComponent';
+export { safeDecodeURIComponent } from './utils/safeDecodeURIComponent';
