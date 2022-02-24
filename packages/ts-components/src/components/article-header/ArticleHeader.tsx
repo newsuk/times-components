@@ -42,6 +42,15 @@ const ArticleHeader: React.FC<{
     ? Boolean(breaking.toLowerCase() === 'true')
     : false;
 
+  const decodeHeadline = (headline: string) => {
+    try{
+      return decodeURI(headline)
+    }
+    catch {
+      return headline
+    }
+  }
+
   return (
     <Container isBreaking={isBreaking && isLessThan1Hour}>
       <UpdatesContainer>
@@ -75,7 +84,7 @@ const ArticleHeader: React.FC<{
           </UpdatedDate>
         ) : null}
       </UpdatesContainer>
-      {headline && <Headline>{decodeURI(headline)}</Headline>}
+      {headline && <Headline>{decodeHeadline(headline)}</Headline>}
     </Container>
   );
 };
