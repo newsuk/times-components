@@ -1,6 +1,6 @@
 import React from "react";
 import Context from "@times-components/context";
-import { ArticleFlags } from "@times-components/ts-components";
+import { ArticleFlags, UpdatedTimestamp } from "@times-components/ts-components";
 import { fonts } from "@times-components/styleguide";
 
 import Label from "../article-label/article-label";
@@ -26,7 +26,8 @@ const ArticleHeader = ({
   label,
   publicationName,
   publishedTime,
-  standfirst
+  standfirst,
+  updatedTime
 }) => (
   <Context.Consumer>
     {({ theme: { headlineFont, headlineCase } }) => (
@@ -45,6 +46,7 @@ const ArticleHeader = ({
         </HeadlineContainer>
         <FlagsContainer>
           <ArticleFlags flags={flags} />
+          <UpdatedTimestamp updatedTime={updatedTime}/>
         </FlagsContainer>
         <Standfirst standfirst={standfirst} />
         <Meta

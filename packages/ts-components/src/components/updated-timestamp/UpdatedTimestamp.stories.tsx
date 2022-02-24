@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { date, select } from '@storybook/addon-knobs';
+import { date } from '@storybook/addon-knobs';
 
 import { UpdatedTimestamp } from './UpdatedTimestamp';
 
@@ -18,7 +18,7 @@ storiesOf('Typescript Component/Updated Timestamp', module)
 
    return (
    <UpdatedTimestamp 
-     updated={updated}
+     updatedTime={updated}
     //  breaking={select('Breaking', breakingOptions, undefined, groupId)}
    />
    )

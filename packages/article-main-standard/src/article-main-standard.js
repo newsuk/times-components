@@ -43,7 +43,8 @@ class ArticlePage extends Component {
       publishedTime,
       shortHeadline,
       standfirst,
-      topics
+      topics,
+      updatedTime
     } = article;
 
     const metaProps = { bylines, publicationName, publishedTime };
@@ -58,6 +59,7 @@ class ArticlePage extends Component {
               headline={getHeadline(headline, shortHeadline)}
               label={label}
               standfirst={standfirst}
+              updatedTime={updatedTime}
             />
           </HeaderContainer>
           <MetaContainer>

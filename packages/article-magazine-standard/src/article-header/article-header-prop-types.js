@@ -14,7 +14,8 @@ const articleHeaderPropTypes = {
   longRead: PropTypes.bool,
   publicationName: PropTypes.string.isRequired,
   publishedTime: PropTypes.string.isRequired,
-  standfirst: PropTypes.string
+  standfirst: PropTypes.string,
+  updatedTime: PropTypes.string
 };
 
 const articleHeaderDefaultProps = {

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, ViewPropTypes } from "react-native";
-import { ArticleFlags } from "@times-components/ts-components";
+import { ArticleFlags, UpdatedTimestamp } from "@times-components/ts-components";
 
 import HeaderLabel from "../article-header-label/article-header-label";
 import HeaderStandfirst from "./article-header-standfirst";
@@ -17,7 +17,8 @@ const ArticleHeader = ({
   headline,
   label,
   standfirst,
-  style
+  style,
+  updatedTime
 }) => (
   <View style={style}>
     <HeaderLabel isVideo={hasVideo} label={label} />
@@ -31,6 +32,7 @@ const ArticleHeader = ({
     <HeaderStandfirst standfirst={standfirst} />
     <View style={styles.flags}>
       <ArticleFlags flags={flags} />
+      <UpdatedTimestamp updatedTime={updatedTime}/>
     </View>
   </View>
 );
@@ -46,7 +48,8 @@ ArticleHeader.propTypes = {
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
   standfirst: PropTypes.string,
-  style: ViewStylePropTypes
+  style: ViewStylePropTypes,
+  updatedTime: PropTypes.string
 };
 
 ArticleHeader.defaultProps = {

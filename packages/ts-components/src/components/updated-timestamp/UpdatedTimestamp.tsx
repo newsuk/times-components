@@ -7,11 +7,13 @@ import {
 import { Container, TimeSinceUpdate } from './styles';
 
 export const UpdatedTimestamp: React.FC<{
-    updated: string;
-    // breaking?: string;
-}> = ({ updated }) => {
+    updatedTime: string;
+    breaking?: string;
+}> = (
+    { updatedTime }
+    ) => {
     const currentDateTime = new Date();
-    const updatedDate = new Date(updated);
+    const updatedDate = new Date(updatedTime);
     const timeSincePublishing =
     formatDistanceStrict(updatedDate, currentDateTime, {
       roundingMethod: 'floor'

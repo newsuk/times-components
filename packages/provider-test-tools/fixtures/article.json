@@ -1142,26 +1142,6 @@
     {
       "type": "BREAKING",
       "expiryTime": "2030-03-13T13:00:00.000Z"
-    },
-    {
-      "type": "NEW",
-      "expiryTime": "2030-03-13T15:00:00.000Z"
-    },
-    {
-      "type": "UPDATED",
-      "expiryTime": "2030-03-13T15:00:00.000Z"
-    },
-    {
-      "type": "EXCLUSIVE",
-      "expiryTime": "2030-03-13T15:00:00.000Z"
-    },
-    {
-      "type": "SPONSORED",
-      "expiryTime": "2030-03-13T13:00:00.000Z"
-    },
-    {
-      "type": "LIVE",
-      "expiryTime": "2030-03-13T13:00:00.000Z"
     }
   ],
   "hasVideo": true,
@@ -1281,6 +1261,7 @@
   "longRead": false,
   "publicationName": "TIMES",
   "publishedTime": "2015-03-13T18:54:58.000Z",
+  "updatedTime": "2022-02-24T09:00:00.000Z",
   "relatedArticleSlice": {
     "__typename": "StandardSlice",
     "items": [
