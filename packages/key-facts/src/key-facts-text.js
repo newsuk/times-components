@@ -5,7 +5,7 @@ import { defaultProps, propTypes } from "./key-facts-text-prop-types";
 import { Text, KeyFactTextLink, BulletContainer, Bullet } from "./styles";
 
 const KeyFactsText = (
-  item,
+  keyFactItem,
   listIndex,
   fireAnalyticsEvent,
   intersectObserverRef,
@@ -14,17 +14,16 @@ const KeyFactsText = (
   <BulletContainer key={`key-facts-${listIndex}`} ref={intersectObserverRef}>
     <Bullet />
     <Text>
-      {item.children.map((data, listItemIndex) =>
+      {keyFactItem.children.map((data, listItemIndex) =>
         renderTree(
           data,
           {
             ...coreRenderers,
             link(key, attributes, renderedChildren) {
               const { href: url } = attributes;
-
               return (
                 <KeyFactTextLink
-                  data-testid="KeyFactTextLink"
+                  className="KeyFactTextLink"
                   key={key}
                   onClick={() =>
                     fireAnalyticsEvent &&

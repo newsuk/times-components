@@ -44,6 +44,7 @@
     "depcheck": "0.6.9",
     "enzyme": "3.9.0",
     "eslint": "5.9.0",
+    "mockdate": "3.0.5",
     "jest": "24.8.0",
     "prettier": "1.14.3",
     "react": "16.9.0",

@@ -83,3 +83,9 @@ export { HiddenDiv } from './components/common-styles';
 export { InlineMessage } from './components/inline-message/InlineMessage';
 
 export { InlineDialog } from './components/inline-dialog/InlineDialog';
+
+
+//test utils
+import FakeIntersectionObserver from './test-utils/FakeIntersectionObserver';
+const MockIntersectionObserver = FakeIntersectionObserver;
+export { MockIntersectionObserver }
