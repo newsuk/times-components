@@ -1,14 +1,16 @@
 import React from 'react';
 import {
   LiveArticleFlagContainer,
-  LiveDiamondContainer,
-  LiveArticleFlagTextContainer
+  LiveIconContainer,
+  LiveArticleFlagText
 } from './styles';
 
 export const BaseLiveArticleFlag: React.FC<{ title: string }> = ({ title }) => (
   <LiveArticleFlagContainer>
-    <LiveDiamondContainer>{'\u25c6'}</LiveDiamondContainer>
-    <LiveArticleFlagTextContainer>{title}</LiveArticleFlagTextContainer>
+    <LiveIconContainer>{'\u25a0'}</LiveIconContainer>
+    <div>
+      <LiveArticleFlagText>{title}</LiveArticleFlagText>
+    </div>
   </LiveArticleFlagContainer>
 );
 

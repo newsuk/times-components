@@ -84,8 +84,12 @@ export { InlineMessage } from './components/inline-message/InlineMessage';
 
 export { InlineDialog } from './components/inline-dialog/InlineDialog';
 
+export {
+  default as ArticleHeader
+} from './components/article-header/ArticleHeader';
 
 //test utils
 import FakeIntersectionObserver from './test-utils/FakeIntersectionObserver';
 const MockIntersectionObserver = FakeIntersectionObserver;
 export { MockIntersectionObserver }
+

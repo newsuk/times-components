@@ -151,6 +151,20 @@ export default [
       {
         attributes: {
           element: {
+            value: "article-header",
+            attributes: {
+              updated: "2021-12-31T23:30:00Z",
+              breaking: "true",
+              headline: "This%20is%20the%20headline"
+            }
+          }
+        },
+        name: "interactive",
+        children: []
+      },
+      {
+        attributes: {
+          element: {
             attributes: { "deck-id": "41548" },
             value: "in-article-puff"
           }

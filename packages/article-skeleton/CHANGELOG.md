@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.71.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.71.2...@times-components/article-skeleton@1.71.3) (2022-02-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.71.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.71.1...@times-components/article-skeleton@1.71.2) (2022-02-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.71.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.71.0...@times-components/article-skeleton@1.71.1) (2022-02-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.71.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.70.1...@times-components/article-skeleton@1.71.0) (2022-02-22)
+
+
+### Features
+
+* **TDP-758:** updated validation of expiry time to include null for open ended validity ([#2857](https://github.com/newsuk/times-components/issues/2857)) ([d013af2](https://github.com/newsuk/times-components/commit/d013af256bbac351e2291379256675d8d3746369))
+
+
+
+
+
 ## [1.70.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.70.0...@times-components/article-skeleton@1.70.1) (2022-02-16)
 
 **Note:** Version bump only for package @times-components/article-skeleton
