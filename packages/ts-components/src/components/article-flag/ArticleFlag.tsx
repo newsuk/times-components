@@ -10,6 +10,7 @@ import {
   FlagsContainer
 } from './styles';
 import getActiveFlags from './getActiveFlags';
+import { UpdatedTimeProvider, useUpdatedTime } from '../../helpers/time/UpdatedTimeProvider';
 
 const ArticleFlag: React.FC<{ color: string; title: string }> = ({
   color = colours.functional.primary,
@@ -26,6 +27,8 @@ const ArticleFlag: React.FC<{ color: string; title: string }> = ({
     </ArticleFlagTextContainer>
   </ArticleFlagContainer>
 );
+
+const updatedTime = useUpdatedTime();
 
 const NewArticleFlag: React.FC = () => (
   <ArticleFlag color={colours.functional.articleFlagNew} title="new" />
@@ -94,12 +97,19 @@ const ArticleFlags: React.FC<{
   }
 
   if (!withContainer) {
-    return <FlagsView allFlags={allFlags} />;
+    return (
+      <UpdatedTimeProvider updatedTime={updatedTime}>
+        <FlagsView allFlags={allFlags} />
+    </UpdatedTimeProvider>
+    
+    );
   }
 
   return (
     <FlagsContainer>
-      <FlagsView allFlags={allFlags} />
+      <UpdatedTimeProvider updatedTime={updatedTime}>
+        <FlagsView allFlags={allFlags} />
+      </UpdatedTimeProvider>
     </FlagsContainer>
   );
 };
