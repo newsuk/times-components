@@ -36,8 +36,6 @@ type InArticlePuffData = {
 
 type InArticlePuffDeckData = DeckData<never, InArticlePuffData>;
 
-
-
 const scrollEvent = {
   attrs: {
     event_navigation_name: 'in-article component displayed : puff',
@@ -50,7 +48,7 @@ const clickEvent = (buttonLabel: string, isLiveOrBreakingFlag?: string) => ({
   attrs: {
     event_navigation_name: `button : ${buttonLabel}`,
     event_navigation_browsing_method: 'click',
-    other_details:  isLiveOrBreakingFlag
+    other_details: isLiveOrBreakingFlag
   }
 });
 
@@ -59,12 +57,12 @@ export const InArticlePuff: React.FC<{
   forceImageAspectRatio?: AspectRatios;
   isLiveOrBreakingFlag?: string;
 }> = ({ sectionColour, forceImageAspectRatio, isLiveOrBreakingFlag }) => {
-
   const handleClick = (
     fireAnalyticsEvent: (evt: TrackingContext) => void,
-    buttonLabel: string,
+    buttonLabel: string
   ) => {
-    fireAnalyticsEvent && fireAnalyticsEvent(clickEvent(buttonLabel, isLiveOrBreakingFlag));
+    fireAnalyticsEvent &&
+      fireAnalyticsEvent(clickEvent(buttonLabel, isLiveOrBreakingFlag));
   };
 
   const { loading, error, data } = useFetch<InArticlePuffDeckData>();
