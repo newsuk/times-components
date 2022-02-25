@@ -22,7 +22,7 @@ const props = {
   headline: "some headline",
   section: "news",
   ast: data,
-  isLiveOrBreaking: 'breaking',
+  isLiveOrBreaking: "breaking",
   analyticsStream
 };
 
@@ -108,7 +108,7 @@ describe("Key moments", () => {
         event_navigation_browsing_method: "scroll",
         eventTime: "2021-05-03T00:00:00.000Z",
         section_details: "news",
-        other_details: 'breaking'
+        other_details: "breaking"
       }
     });
 
@@ -123,7 +123,7 @@ describe("Key moments", () => {
         event_navigation_browsing_method: "click",
         eventTime: "2021-05-03T00:00:00.000Z",
         section_details: "news",
-        other_details: 'breaking'
+        other_details: "breaking"
       }
     });
   });

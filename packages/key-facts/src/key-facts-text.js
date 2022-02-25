@@ -1,7 +1,7 @@
 import React from "react";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
-import { defaultProps, propTypes } from "./key-facts-text-prop-types";
+import props from "./key-facts-text-prop-types";
 import { Text, KeyFactTextLink, BulletContainer, Bullet } from "./styles";
 
 const KeyFactsText = ({
@@ -23,7 +23,6 @@ const KeyFactsText = ({
               const { href: url } = attributes;
               return (
                 <KeyFactTextLink
-                  className="KeyFactTextLink"
                   key={key}
                   onClick={() =>
                     fireAnalyticsEvent &&
@@ -50,7 +49,6 @@ const KeyFactsText = ({
   </BulletContainer>
 );
 
-KeyFactsText.propTypes = propTypes;
-KeyFactsText.defaultProps = defaultProps;
+KeyFactsText.propTypes = props;
 
 export default KeyFactsText;

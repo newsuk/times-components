@@ -1,7 +1,7 @@
 import React from "react";
 import { TrackingContextProvider } from "@times-components/ts-components";
 import KeyFactsText from "./key-facts-text";
-import { defaultProps, propTypes } from "./key-facts-prop-types";
+import props from "./key-facts-prop-types";
 import { KeyFactsTitle, KeyFactsContainer } from "./styles";
 
 const KeyFacts = ({
@@ -63,7 +63,6 @@ const KeyFacts = ({
   );
 };
 
-KeyFacts.propTypes = propTypes;
-KeyFacts.defaultProps = defaultProps;
+KeyFacts.propTypes = props;
 
 export default KeyFacts;
