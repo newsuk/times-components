@@ -4,7 +4,13 @@ import KeyFactsText from "./key-facts-text";
 import { defaultProps, propTypes } from "./key-facts-prop-types";
 import { KeyFactsTitle, KeyFactsContainer } from "./styles";
 
-const KeyFacts = ({ ast, analyticsStream, section, headline }) => {
+const KeyFacts = ({
+  ast,
+  analyticsStream,
+  section,
+  headline,
+  isLiveOrBreaking
+}) => {
   const {
     children,
     attributes: { title }
@@ -19,7 +25,8 @@ const KeyFacts = ({ ast, analyticsStream, section, headline }) => {
       component_type: "In-article component: key moments: static",
       component_name: title,
       section_details: section,
-      article_parent_name: headline
+      article_parent_name: headline,
+      other_details: isLiveOrBreaking
     }
   };
   return (
