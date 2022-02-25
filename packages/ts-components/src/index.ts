@@ -89,7 +89,4 @@ export {
 } from './components/article-header/ArticleHeader';
 
 //test utils
-import FakeIntersectionObserver from './test-utils/FakeIntersectionObserver';
-const MockIntersectionObserver = FakeIntersectionObserver;
-export { MockIntersectionObserver }
-
+export {default as  FakeIntersectionObserver } from './test-utils/FakeIntersectionObserver';
