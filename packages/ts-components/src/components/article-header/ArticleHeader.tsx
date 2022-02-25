@@ -19,7 +19,7 @@ import {
   FlagContainer
 } from './styles';
 import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
-import { safeDecodeURIComponent } from '../..';
+import safeDecodeURIComponent from '../../utils/safeDecodeURIComponent';
 
 const ArticleHeader: React.FC<{
   updated: string;

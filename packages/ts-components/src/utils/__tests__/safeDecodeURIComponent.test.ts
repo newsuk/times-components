@@ -1,4 +1,4 @@
-import { safeDecodeURIComponent } from '../safeDecodeURIComponent';
+import safeDecodeURIComponent from '../safeDecodeURIComponent';
 
 describe('safeDecodeURIComponent', () => {
   it('will return the decoded URI if it is correctly encoded', () => {
