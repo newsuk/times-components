@@ -9,11 +9,8 @@ const KeyFactsText = ({
   listIndex,
   fireAnalyticsEvent,
   intersectObserverRef,
-  analyticsData}
-) => {
-  console.log(  keyFactItem,
-    listIndex,)
-  return(
+  analyticsData
+}) => (
   <BulletContainer key={`key-facts-${listIndex}`} ref={intersectObserverRef}>
     <Bullet />
     <Text>
@@ -51,7 +48,7 @@ const KeyFactsText = ({
       )}
     </Text>
   </BulletContainer>
-)};
+);
 
 KeyFactsText.propTypes = propTypes;
 KeyFactsText.defaultProps = defaultProps;

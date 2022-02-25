@@ -11,7 +11,7 @@ import {
 } from "@times-components/ts-components";
 import mockDate from "mockdate";
 import KeyFacts from "../../src/key-facts";
-import KeyFactsText from "../../src/key-facts-text";
+import { KeyFactTextLink } from "../../src/styles";
 import data from "../../fixtures/key-facts-test.json";
 import dataNoTitle from "../../fixtures/key-facts-no-title-test.json";
 
@@ -41,7 +41,6 @@ describe("Key moments", () => {
 
     jest.resetAllMocks();
   });
-
 
   it("should render with title", () => {
     const wrapper = shallow(
@@ -75,69 +74,7 @@ describe("Key moments", () => {
     expect(wrapper.find("Example title"));
   });
 
-  it("should fire analytics when component comes into view", () => {
-   mount(
-      <TrackingContextProvider
-        context={{
-          component: "ArticleSkeleton",
-          attrs: {}
-        }}
-        analyticsStream={analyticsStream}
-      >
-        <KeyFacts {...props} />
-      </TrackingContextProvider>
-    );
-
-    MockIntersectionObserver.intersect();
-
-    expect(analyticsStream).toHaveBeenCalledTimes(1);
-    expect(analyticsStream).toHaveBeenCalledWith({
-      action: "Scrolled",
-      component: "ArticleSkeleton",
-      object: "Key moments",
-      attrs: {
-        article_parent_name: "some headline",
-        component_name: "Example title",
-        component_type: "In-article component: key moments: static",
-        event_navigation_browsing_method: "scroll",
-        eventTime: "2021-05-03T00:00:00.000Z",
-        section_details: "news"
-      }
-    });
-  });
-
-  it('should fire analytics when a link is clicked', () => {
-    const textData = {
-      "name": "listElement",
-      "children": [
-        {
-          "name": "text",
-          "attributes": {
-            "value": "An example "
-          },
-          "children": []
-        },
-        {
-          "name": "link",
-          "attributes": {
-            "href": "https://example.io",
-            "target": "_blank",
-            "type": "topic"
-          },
-          "children": [
-            {
-              "name": "text",
-              "attributes": {
-                "value": "link"
-              },
-              "children": []
-            }
-          ]
-        }
-      ]
-    }
-    
-    
+  it("should fire analytics when the component comes into view and a link is clicked", () => {
     const wrapper = mount(
       <TrackingContextProvider
         context={{
@@ -152,16 +89,39 @@ describe("Key moments", () => {
 
     MockIntersectionObserver.intersect();
 
-  // simulate click
-   // console.log(wrapper.debug())
-    console.log(wrapper.contains('link'))
-    console.log(wrapper.find(KeyFacts).first())
+    wrapper
+      .find(KeyFactTextLink)
+      .first()
+      .simulate("click");
 
+    expect(analyticsStream).toHaveBeenCalledTimes(2);
 
-   // expect(KeyFactsText).toHaveBeenCalled()
-  
+    expect(analyticsStream.mock.calls[0][0]).toEqual({
+      action: "Scrolled",
+      component: "ArticleSkeleton",
+      object: "Key moments",
+      attrs: {
+        article_parent_name: "some headline",
+        component_name: "Example title",
+        component_type: "In-article component: key moments: static",
+        event_navigation_browsing_method: "scroll",
+        eventTime: "2021-05-03T00:00:00.000Z",
+        section_details: "news"
+      }
+    });
 
-  })
-
-  
+    expect(analyticsStream.mock.calls[1][0]).toEqual({
+      action: "Clicked",
+      component: "ArticleSkeleton",
+      object: "Key moments",
+      attrs: {
+        article_parent_name: "some headline",
+        component_name: "Example title",
+        component_type: "In-article component: key moments: static",
+        event_navigation_browsing_method: "click",
+        eventTime: "2021-05-03T00:00:00.000Z",
+        section_details: "news"
+      }
+    });
+  });
 });

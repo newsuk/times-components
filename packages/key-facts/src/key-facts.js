@@ -9,9 +9,7 @@ const KeyFacts = ({ ast, analyticsStream, section, headline }) => {
     children,
     attributes: { title }
   } = ast;
-console.log(1)
   const { children: keyFactsItems } = children[0];
-  console.log(2)
   const analyticsData = {
     event: {
       event_navigation_name: "In-article component displayed: key moments",
@@ -43,15 +41,15 @@ console.log(1)
       {({ fireAnalyticsEvent, intersectObserverRef }) => (
         <KeyFactsContainer>
           {title && <KeyFactsTitle>{title}</KeyFactsTitle>}
-          {keyFactsItems.map((keyFactItem, index) => {
-           index === 0 && console.log(3)
-            return <KeyFactsText keyFactItem={keyFactItem}
-            listIndex={index}
-            fireAnalyticsEvent={fireAnalyticsEvent}
-            intersectObserverRef={intersectObserverRef}
-            analyticsData={analyticsData}/>
-          }
-          )}
+          {keyFactsItems.map((keyFactItem, index) => (
+            <KeyFactsText
+              keyFactItem={keyFactItem}
+              listIndex={index}
+              fireAnalyticsEvent={fireAnalyticsEvent}
+              intersectObserverRef={intersectObserverRef}
+              analyticsData={analyticsData}
+            />
+          ))}
         </KeyFactsContainer>
       )}
     </TrackingContextProvider>
