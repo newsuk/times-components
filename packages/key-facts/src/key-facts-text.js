@@ -4,13 +4,16 @@ import coreRenderers from "@times-components/markup";
 import { defaultProps, propTypes } from "./key-facts-text-prop-types";
 import { Text, KeyFactTextLink, BulletContainer, Bullet } from "./styles";
 
-const KeyFactsText = (
+const KeyFactsText = ({
   keyFactItem,
   listIndex,
   fireAnalyticsEvent,
   intersectObserverRef,
-  analyticsData
-) => (
+  analyticsData}
+) => {
+  console.log(  keyFactItem,
+    listIndex,)
+  return(
   <BulletContainer key={`key-facts-${listIndex}`} ref={intersectObserverRef}>
     <Bullet />
     <Text>
@@ -48,7 +51,7 @@ const KeyFactsText = (
       )}
     </Text>
   </BulletContainer>
-);
+)};
 
 KeyFactsText.propTypes = propTypes;
 KeyFactsText.defaultProps = defaultProps;

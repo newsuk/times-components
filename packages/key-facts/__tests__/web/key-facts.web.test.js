@@ -1,6 +1,6 @@
 /* eslint-env browser */
 import React from "react";
-import { mount, shallow } from "enzyme";
+import { shallow, mount } from "enzyme";
 import {
   addSerializers,
   enzymeTreeSerializer
@@ -44,7 +44,7 @@ describe("Key moments", () => {
 
 
   it("should render with title", () => {
-    const wrapper = mount(
+    const wrapper = shallow(
       <TrackingContextProvider
         context={{
           component: "ArticleSkeleton",
@@ -60,7 +60,7 @@ describe("Key moments", () => {
   });
 
   it("should render without title", () => {
-    const wrapper = mount(
+    const wrapper = shallow(
       <TrackingContextProvider
         context={{
           component: "ArticleSkeleton",
@@ -76,7 +76,7 @@ describe("Key moments", () => {
   });
 
   it("should fire analytics when component comes into view", () => {
-    mount(
+   mount(
       <TrackingContextProvider
         context={{
           component: "ArticleSkeleton",
@@ -107,6 +107,37 @@ describe("Key moments", () => {
   });
 
   it('should fire analytics when a link is clicked', () => {
+    const textData = {
+      "name": "listElement",
+      "children": [
+        {
+          "name": "text",
+          "attributes": {
+            "value": "An example "
+          },
+          "children": []
+        },
+        {
+          "name": "link",
+          "attributes": {
+            "href": "https://example.io",
+            "target": "_blank",
+            "type": "topic"
+          },
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "link"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+    
+    
     const wrapper = mount(
       <TrackingContextProvider
         context={{
@@ -120,12 +151,11 @@ describe("Key moments", () => {
     );
 
     MockIntersectionObserver.intersect();
-    
-  //simulate click
-    //console.log(wrapper.debug())
-    console.log(wrapper.contains('link'))
-    console.log(wrapper.find(KeyFacts))
 
+  // simulate click
+   // console.log(wrapper.debug())
+    console.log(wrapper.contains('link'))
+    console.log(wrapper.find(KeyFacts).first())
 
 
    // expect(KeyFactsText).toHaveBeenCalled()
