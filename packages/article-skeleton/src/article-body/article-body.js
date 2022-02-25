@@ -36,7 +36,8 @@ import {
   InArticleRelatedArticles,
   InfoCardBulletPoints,
   BigNumbers,
-  HiddenDiv
+  HiddenDiv,
+  safeDecodeURIComponent
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -235,20 +236,20 @@ const renderers = ({
 
         return isPreview ? (
           <PreviewNewsletterPuff
-            copy={decodeURIComponent(copy)}
-            headline={decodeURIComponent(headline)}
-            imageUri={decodeURIComponent(imageUri)}
-            label={decodeURIComponent(label)}
+            copy={safeDecodeURIComponent(copy)}
+            headline={safeDecodeURIComponent(headline)}
+            imageUri={safeDecodeURIComponent(imageUri)}
+            label={safeDecodeURIComponent(label)}
           />
         ) : (
           <InlineNewsletterPuff
             analyticsStream={analyticsStream}
             key={key}
             code={code}
-            copy={decodeURIComponent(copy)}
-            headline={decodeURIComponent(headline)}
-            imageUri={decodeURIComponent(imageUri)}
-            label={decodeURIComponent(label)}
+            copy={safeDecodeURIComponent(copy)}
+            headline={safeDecodeURIComponent(headline)}
+            imageUri={safeDecodeURIComponent(imageUri)}
+            label={safeDecodeURIComponent(label)}
           />
         );
 
