@@ -7,7 +7,7 @@ import {
 } from "@times-components/jest-serializer";
 import {
   TrackingContextProvider,
-  MockIntersectionObserver
+  FakeIntersectionObserver
 } from "@times-components/ts-components";
 import mockDate from "mockdate";
 import KeyFacts from "../../src/key-facts";
@@ -33,7 +33,7 @@ describe("Key moments", () => {
     mockDate.set(1620000000000);
     oldIntersectionObserver = window.IntersectionObserver;
 
-    window.IntersectionObserver = MockIntersectionObserver;
+    window.IntersectionObserver = FakeIntersectionObserver;
   });
 
   afterEach(() => {
@@ -88,7 +88,7 @@ describe("Key moments", () => {
       </TrackingContextProvider>
     );
 
-    MockIntersectionObserver.intersect();
+    FakeIntersectionObserver.intersect();
 
     wrapper
       .find(KeyFactTextLink)
