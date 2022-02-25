@@ -1140,7 +1140,7 @@
   ],
   "expirableFlags": [
     {
-      "type": "BREAKING",
+      "type": "LIVE",
       "expiryTime": "2030-03-13T13:00:00.000Z"
     }
   ],

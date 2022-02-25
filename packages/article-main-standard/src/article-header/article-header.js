@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, ViewPropTypes } from "react-native";
-import { ArticleFlags, UpdatedTimestamp } from "@times-components/ts-components";
+import { ArticleFlags, UpdatedTimeProvider } from "@times-components/ts-components";
 
 import HeaderLabel from "../article-header-label/article-header-label";
 import HeaderStandfirst from "./article-header-standfirst";
@@ -31,8 +31,9 @@ const ArticleHeader = ({
     </HeadlineContainer>
     <HeaderStandfirst standfirst={standfirst} />
     <View style={styles.flags}>
-      <ArticleFlags flags={flags} />
-      <UpdatedTimestamp updatedTime={updatedTime}/>
+      <UpdatedTimeProvider updatedTime={updatedTime}>
+        <ArticleFlags flags={flags} />
+      </UpdatedTimeProvider>
     </View>
   </View>
 );

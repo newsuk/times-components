@@ -1,6 +1,7 @@
 import React from 'react';
 import {
     differenceInSeconds,
+    format,
     formatDistanceStrict
 } from 'date-fns';
 
@@ -8,10 +9,7 @@ import { Container, TimeSinceUpdate } from './styles';
 
 export const UpdatedTimestamp: React.FC<{
     updatedTime: string;
-    breaking?: string;
-}> = (
-    { updatedTime }
-    ) => {
+}> = ({ updatedTime }) => {
     const currentDateTime = new Date();
     const updatedDate = new Date(updatedTime);
     const timeSincePublishing =
@@ -23,17 +21,19 @@ export const UpdatedTimestamp: React.FC<{
    const isLessThan1Minute = diffInSeconds < 60;
    const isLessThan13Hours = diffInSeconds < 60 * 60 * 13;
 
-//    const isBreaking = Boolean(breaking?.toLowerCase() === 'true');
-
     return (
-        // isBreaking ? (
             <Container>
-            {!isLessThan1Minute && isLessThan13Hours ? (
+            {
+              !isLessThan1Minute && isLessThan13Hours ? (
                 <TimeSinceUpdate>
-                {`Updated `}{timeSincePublishing}
+                    {`Updated `}{timeSincePublishing}
                 </TimeSinceUpdate>
-            ): null}
+              ) : !isLessThan13Hours ? (
+                <TimeSinceUpdate>
+                    {`Updated `}{format(updatedDate, 'MMMM d, ')}{format(updatedDate, 'h.mmaaa')}
+                </TimeSinceUpdate>
+              ) : null
+            }
         </Container>
-    //     ) : null
     )
 }
