@@ -25,6 +25,7 @@ const props = {
 
 class FakeIntersectionObserver {
   static observe = jest.fn();
+
   static disconnect = jest.fn();
 
   static intersect(isIntersecting = true) {
@@ -32,6 +33,7 @@ class FakeIntersectionObserver {
   }
 
   observe = FakeIntersectionObserver.observe;
+
   disconnect = FakeIntersectionObserver.disconnect;
 
   constructor(callback) {

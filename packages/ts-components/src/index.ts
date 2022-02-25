@@ -87,3 +87,8 @@ export { InlineDialog } from './components/inline-dialog/InlineDialog';
 export {
   default as ArticleHeader
 } from './components/article-header/ArticleHeader';
+
+export {
+  default as safeDecodeURIComponent
+} from './utils/safeDecodeURIComponent';
+
