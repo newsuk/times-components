@@ -17,11 +17,5 @@ export const UpdatedTimeProvider: React.FC<{
 };
 
 export const useUpdatedTime = () => {
-  const context = useContext(UpdatedTimeProviderContext);
-
-  if (context === undefined) {
-    throw new Error('must be used within a UpdatedTimeProvider');
-  }
-
-  return context;
+    return useContext(UpdatedTimeProviderContext);
 };

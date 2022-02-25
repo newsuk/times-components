@@ -9,6 +9,12 @@ export const ArticleFlagContainer = styled.div`
   flex-direction: row;
 `;
 
+export const LiveFlagAndTimestampContainer = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+`;
+
 export const LiveArticleFlagContainer = styled.div`
   display: flex;
   padding: 2px 6px;

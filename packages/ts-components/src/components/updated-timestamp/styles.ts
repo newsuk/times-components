@@ -4,8 +4,7 @@ import { colours, fonts } from '@times-components/styleguide';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  border: red 1px solid;
-  padding: 10px;
+  padding: 3px 0 0 8px;
 `;
 
 export const TimeSinceUpdate = styled.div`

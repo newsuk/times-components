@@ -8,8 +8,11 @@ import {
 import { Container, TimeSinceUpdate } from './styles';
 
 export const UpdatedTimestamp: React.FC<{
-    updatedTime: string;
+    updatedTime?: string;
 }> = ({ updatedTime }) => {
+    if (!updatedTime) {
+        return null;
+    }
     const currentDateTime = new Date();
     const updatedDate = new Date(updatedTime);
     const timeSincePublishing =
