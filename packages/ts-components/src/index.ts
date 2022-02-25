@@ -87,6 +87,3 @@ export { InlineDialog } from './components/inline-dialog/InlineDialog';
 export {
   default as ArticleHeader
 } from './components/article-header/ArticleHeader';
-
-//test utils
-export {default as  FakeIntersectionObserver } from './test-utils/FakeIntersectionObserver';
