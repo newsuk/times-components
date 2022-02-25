@@ -5,10 +5,7 @@ import {
   addSerializers,
   enzymeTreeSerializer
 } from "@times-components/jest-serializer";
-import {
-  TrackingContextProvider,
-  FakeIntersectionObserver
-} from "@times-components/ts-components";
+import { TrackingContextProvider } from "@times-components/ts-components";
 import mockDate from "mockdate";
 import KeyFacts from "../../src/key-facts";
 import { KeyFactTextLink } from "../../src/styles";
@@ -25,6 +22,24 @@ const props = {
   isLiveOrBreaking: "breaking",
   analyticsStream
 };
+
+class FakeIntersectionObserver {
+  static observe = jest.fn();
+
+  static disconnect = jest.fn();
+
+  static intersect(isIntersecting = true) {
+    FakeIntersectionObserver.callback([{ isIntersecting }]);
+  }
+
+  observe = FakeIntersectionObserver.observe;
+
+  disconnect = FakeIntersectionObserver.disconnect;
+
+  constructor(callback) {
+    FakeIntersectionObserver.callback = callback;
+  }
+}
 
 describe("Key moments", () => {
   let oldIntersectionObserver;
