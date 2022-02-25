@@ -9,10 +9,11 @@ import {
   ArticleFlags
 } from './ArticleFlag';
 import { LiveArticleFlag, BreakingArticleFlag } from './LiveArticleFlag';
+import { UpdatedTimeProvider } from '../../helpers/time/UpdatedTimeProvider';
 
 storiesOf('Typescript Component/Article Flag', module)
   .add('Article Flag (New)', () => <NewArticleFlag />)
-  .add('Article Flag (Live)', () => <LiveArticleFlag />)
+  .add('Article Flag (Live)', () => <UpdatedTimeProvider updatedTime='2022-02-25T12:00:00.000Z'><LiveArticleFlag /></UpdatedTimeProvider>)
   .add('Article Flag (Breaking)', () => <BreakingArticleFlag />)
   .add('Article Flag (Updated)', () => <UpdatedArticleFlag />)
   .add('Article Flag (Exclusive)', () => <ExclusiveArticleFlag />)

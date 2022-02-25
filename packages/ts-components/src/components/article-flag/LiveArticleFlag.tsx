@@ -5,26 +5,27 @@ import {
   LiveArticleFlagText
 } from './styles';
 import { UpdatedTimestamp } from '../..';
-import { UpdatedTimeProvider, useUpdatedTime } from '../../helpers/time/UpdatedTimeProvider';
+import { useUpdatedTime } from '../../helpers/time/UpdatedTimeProvider';
 
-export const BaseLiveArticleFlag: React.FC<{ title: string }> = ({ title }) => (
-  <LiveArticleFlagContainer>
-    <LiveIconContainer>{'\u25a0'}</LiveIconContainer>
-    <div>
-      <LiveArticleFlagText>{title}</LiveArticleFlagText>
-    </div>
-  </LiveArticleFlagContainer>
-);
-
-export const LiveArticleFlag: React.FC = () => {
+export const BaseLiveArticleFlag: React.FC<{ title: string }> = ({ title }) => {
   const updatedTime = useUpdatedTime();
 
-  return (  
-    <UpdatedTimeProvider updatedTime={updatedTime}>
-      <BaseLiveArticleFlag title="LIVE" />
+  return (
+    <div>
+      <LiveArticleFlagContainer>
+      <LiveIconContainer>{'\u25a0'}</LiveIconContainer>
+        <div>
+          <LiveArticleFlagText>{title}</LiveArticleFlagText>
+        </div>
+      </LiveArticleFlagContainer>
       <UpdatedTimestamp updatedTime={updatedTime} />
-    </UpdatedTimeProvider>
-)};
+    </div>
+  )
+};
+
+export const LiveArticleFlag: React.FC = () => (
+  <BaseLiveArticleFlag title="LIVE" />  
+);
 
 export const BreakingArticleFlag: React.FC = () => (
   <BaseLiveArticleFlag title="BREAKING" />
