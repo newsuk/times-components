@@ -278,6 +278,8 @@ exports[`Article with user state Render full article when user has access to ful
                 "name": "keyFacts",
               }
             }
+            headline="Some Headline"
+            section="Some Section"
           />
           <div>
             <div>
@@ -683,6 +685,8 @@ exports[`Article with user state Render teaser article when user does not have a
                 "name": "keyFacts",
               }
             }
+            headline="Some Headline"
+            section="Some Section"
           />
           <div>
             <div>
