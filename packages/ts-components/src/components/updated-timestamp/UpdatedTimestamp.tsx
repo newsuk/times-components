@@ -28,11 +28,15 @@ export const UpdatedTimestamp: React.FC<{
             <Container>
             {
               !isLessThan1Minute && isLessThan13Hours ? (
-                <TimeSinceUpdate>
+                <TimeSinceUpdate
+                  data-testId="TimeSinceUpdate"
+                >
                     {`Updated `}{timeSincePublishing}
                 </TimeSinceUpdate>
               ) : !isLessThan13Hours ? (
-                <TimeSinceUpdate>
+                <TimeSinceUpdate
+                  data-testId="TimeSinceUpdate"
+                >
                     {`Updated `}{format(updatedDate, 'MMMM d, ')}{format(updatedDate, 'h.mmaaa')}
                 </TimeSinceUpdate>
               ) : null

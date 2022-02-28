@@ -95,18 +95,13 @@ const ArticleFlags: React.FC<{
 
   if (!withContainer) {
     return (
-      
         <FlagsView allFlags={allFlags} />
-  
-    
     );
   }
 
   return (
     <FlagsContainer>
-      
         <FlagsView allFlags={allFlags} />
-      
     </FlagsContainer>
   );
 };
