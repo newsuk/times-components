@@ -1,7 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, ViewPropTypes } from "react-native";
-import { ArticleFlags, UpdatedTimeProvider } from "@times-components/ts-components";
+import {
+  ArticleFlags,
+  UpdatedTimeProvider
+} from "@times-components/ts-components";
 
 import HeaderLabel from "../article-header-label/article-header-label";
 import HeaderStandfirst from "./article-header-standfirst";
@@ -58,7 +61,8 @@ ArticleHeader.defaultProps = {
   hasVideo: false,
   label: null,
   standfirst: null,
-  style: {}
+  style: {},
+  updatedTime: null
 };
 
 export default ArticleHeader;
