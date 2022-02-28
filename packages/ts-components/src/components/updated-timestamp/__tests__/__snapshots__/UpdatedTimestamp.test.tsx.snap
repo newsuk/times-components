@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UpdatedTimestamp does not show the timestamp within the first minute after the last update 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa cSmEjS"
+    />
+  </div>
+</body>
+`;

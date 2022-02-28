@@ -12,21 +12,20 @@ export const BaseLiveArticleFlag: React.FC<{ title: string }> = ({ title }) => {
   const updatedTime = useUpdatedTime();
 
   return (
-  <LiveFlagAndTimestampContainer>
+    <LiveFlagAndTimestampContainer>
       <LiveArticleFlagContainer>
-      <LiveIconContainer>{'\u25a0'}</LiveIconContainer>
+        <LiveIconContainer>{'\u25a0'}</LiveIconContainer>
         <div>
           <LiveArticleFlagText>{title}</LiveArticleFlagText>
         </div>
       </LiveArticleFlagContainer>
       <UpdatedTimestamp updatedTime={updatedTime} />
-  
     </LiveFlagAndTimestampContainer>
-  )
+  );
 };
 
 export const LiveArticleFlag: React.FC = () => (
-  <BaseLiveArticleFlag title="LIVE" />  
+  <BaseLiveArticleFlag title="LIVE" />
 );
 
 export const BreakingArticleFlag: React.FC = () => (

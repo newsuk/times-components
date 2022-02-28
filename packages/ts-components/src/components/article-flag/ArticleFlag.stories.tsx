@@ -20,12 +20,12 @@ storiesOf('Typescript Component/Article Flag', module)
     const groupId = 'Options';
     const value = date(label, defaultValue, groupId);
     const updated = new Date(value).toISOString();
-    
+
     return (
       <UpdatedTimeProvider updatedTime={updated}>
         <LiveArticleFlag />
       </UpdatedTimeProvider>
-      )
+    );
   })
   .add('Article Flag (Breaking)', () => {
     const label = 'Updated Date/Time';
@@ -33,11 +33,12 @@ storiesOf('Typescript Component/Article Flag', module)
     const groupId = 'Options';
     const value = date(label, defaultValue, groupId);
     const updated = new Date(value).toISOString();
-  
+
     return (
       <UpdatedTimeProvider updatedTime={updated}>
         <BreakingArticleFlag />
-      </UpdatedTimeProvider>)
+      </UpdatedTimeProvider>
+    );
   })
   .add('Article Flag (Updated)', () => <UpdatedArticleFlag />)
   .add('Article Flag (Exclusive)', () => <ExclusiveArticleFlag />)
