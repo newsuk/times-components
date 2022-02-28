@@ -1,5 +1,8 @@
 import React from "react";
-import { ArticleFlags } from "@times-components/ts-components";
+import {
+  ArticleFlags,
+  UpdatedTimeProvider
+} from "@times-components/ts-components";
 import Image from "@times-components/image";
 
 import Label from "../article-label/article-label";
@@ -27,7 +30,8 @@ const ArticleHeader = ({
   label,
   publicationName,
   publishedTime,
-  standfirst
+  standfirst,
+  updatedTime
 }) => (
   <HeaderContainer style={[styles.header, styles.container]}>
     <AuthorImageContainer style={styles.authorImage}>
@@ -46,7 +50,9 @@ const ArticleHeader = ({
       {headline}
     </HeadlineContainer>
     <FlagsContainer>
-      <ArticleFlags flags={flags} />
+      <UpdatedTimeProvider updatedTime={updatedTime}>
+        <ArticleFlags flags={flags} />
+      </UpdatedTimeProvider>
     </FlagsContainer>
     <Standfirst standfirst={standfirst} />
     <Meta
