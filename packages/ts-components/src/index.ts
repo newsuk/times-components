@@ -93,3 +93,7 @@ export {
 } from './components/updated-timestamp/UpdatedTimestamp';
 
 export { UpdatedTimeProvider } from './helpers/time/UpdatedTimeProvider';
+
+export {
+  default as safeDecodeURIComponent
+} from './utils/safeDecodeURIComponent';

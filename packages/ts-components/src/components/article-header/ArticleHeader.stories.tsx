@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { date, select } from '@storybook/addon-knobs';
+import { date, select, text } from '@storybook/addon-knobs';
 
 import { ArticleHarness } from '../../fixtures/article-harness/ArticleHarness';
 import ArticleHeader from './ArticleHeader';
@@ -9,7 +9,7 @@ storiesOf('Typescript Component/Article Header', module)
   .addDecorator((storyFn: () => React.ReactNode) => (
     <ArticleHarness>{storyFn()}</ArticleHarness>
   ))
-  .add('Basic Article Header', () => {
+  .add('Article Header with headline', () => {
     const label = 'Updated Date/Time';
     const defaultValue = new Date();
     const groupId = 'Options';
@@ -18,13 +18,33 @@ storiesOf('Typescript Component/Article Header', module)
       True: 'true',
       False: undefined
     };
-
     const updated = new Date(value).toISOString();
+
+    const headline = text('Headline', 'This is the headline', groupId);
+
     return (
       <ArticleHeader
         updated={updated}
         breaking={select('Breaking', breakingOptions, undefined, groupId)}
-        headline="This%20is%20the%20headline"
+        headline={encodeURIComponent(headline)}
+      />
+    );
+  })
+  .add('Article Header without headline', () => {
+    const label = 'Updated Date/Time';
+    const defaultValue = new Date();
+    const groupId = 'Options';
+    const value = date(label, defaultValue, groupId);
+    const breakingOptions = {
+      True: 'true',
+      False: undefined
+    };
+    const updated = new Date(value).toISOString();
+
+    return (
+      <ArticleHeader
+        updated={updated}
+        breaking={select('Breaking', breakingOptions, undefined, groupId)}
       />
     );
   });
