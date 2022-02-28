@@ -1,43 +1,54 @@
 import React from "react";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
-import { defaultProps, propTypes } from "./key-facts-text-prop-types";
-import { Text, KeyFactTextLink } from "./styles";
+import props from "./key-facts-text-prop-types";
+import { Text, KeyFactTextLink, BulletContainer, Bullet } from "./styles";
 
-const KeyFactsText = ({ item, listIndex, onLinkPress }) => (
-  <Text>
-    {item.children.map((data, listItemIndex) =>
-      renderTree(
-        data,
-        {
-          ...coreRenderers,
-          link(key, attributes, renderedChildren) {
-            const { canonicalId, href: url, type } = attributes;
-            return (
-              <KeyFactTextLink
-                data-testid="KeyFactTextLink"
-                key={key}
-                onPress={e =>
-                  onLinkPress(e, {
-                    canonicalId,
-                    type,
-                    url
-                  })
-                }
-                href={url}
-              >
-                {renderedChildren}
-              </KeyFactTextLink>
-            );
-          }
-        },
-        `key-facts-${listIndex}-${listItemIndex}`
-      )
-    )}
-  </Text>
+const KeyFactsText = ({
+  keyFactItem,
+  listIndex,
+  fireAnalyticsEvent,
+  intersectObserverRef,
+  analyticsData
+}) => (
+  <BulletContainer key={`key-facts-${listIndex}`} ref={intersectObserverRef}>
+    <Bullet />
+    <Text>
+      {keyFactItem.children.map((data, listItemIndex) =>
+        renderTree(
+          data,
+          {
+            ...coreRenderers,
+            link(key, attributes, renderedChildren) {
+              const { href: url } = attributes;
+              return (
+                <KeyFactTextLink
+                  key={key}
+                  onClick={() =>
+                    fireAnalyticsEvent &&
+                    fireAnalyticsEvent({
+                      action: "Clicked",
+                      attrs: {
+                        ...analyticsData.other,
+                        ...analyticsData.events,
+                        event_navigation_browsing_method: "click"
+                      }
+                    })
+                  }
+                  href={url}
+                >
+                  {renderedChildren}
+                </KeyFactTextLink>
+              );
+            }
+          },
+          `key-facts-${listIndex}-${listItemIndex}`
+        )
+      )}
+    </Text>
+  </BulletContainer>
 );
 
-KeyFactsText.propTypes = propTypes;
-KeyFactsText.defaultProps = defaultProps;
+KeyFactsText.propTypes = props;
 
 export default KeyFactsText;

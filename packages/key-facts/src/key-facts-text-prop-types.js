@@ -1,11 +1,9 @@
 import PropTypes from "prop-types";
 
-export const propTypes = {
-  item: PropTypes.object.isRequired,
+export default {
+  keyFactItem: PropTypes.object.isRequired,
   listIndex: PropTypes.number.isRequired,
-  onLinkPress: PropTypes.func
-};
-
-export const defaultProps = {
-  onLinkPress: () => {}
+  fireAnalyticsEvent: PropTypes.func.isRequired,
+  intersectObserverRef: PropTypes.func.isRequired,
+  analyticsData: PropTypes.object
 };

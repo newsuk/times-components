@@ -19,6 +19,7 @@ import {
   FlagContainer
 } from './styles';
 import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
+import safeDecodeURIComponent from '../../utils/safeDecodeURIComponent';
 
 const ArticleHeader: React.FC<{
   updated: string;
@@ -75,7 +76,7 @@ const ArticleHeader: React.FC<{
           </UpdatedDate>
         ) : null}
       </UpdatesContainer>
-      {headline && <Headline>{decodeURI(headline)}</Headline>}
+      {headline && <Headline>{safeDecodeURIComponent(headline)}</Headline>}
     </Container>
   );
 };

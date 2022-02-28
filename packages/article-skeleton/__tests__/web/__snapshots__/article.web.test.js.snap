@@ -321,6 +321,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               "name": "keyFacts",
             }
           }
+          headline="Some Headline"
+          section="Some Section"
         />
         <h2>
           This is heading 2
