@@ -99,7 +99,9 @@ const renderers = ({
   analyticsStream,
   isPreview,
   olympicsKeys,
-  isLiveOrBreaking
+  isLiveOrBreaking,
+  section,
+  articleHeadline
 }) => ({
   ...coreRenderers,
   ad(key) {
@@ -305,6 +307,7 @@ const renderers = ({
                 <InArticlePuff
                   sectionColour={theme.sectionColour}
                   forceImageAspectRatio="3:2"
+                  isLiveOrBreaking
                 />
               </FetchProvider>
             )}
@@ -390,7 +393,16 @@ const renderers = ({
     );
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {
-    return <KeyFacts ast={node} key={key} />;
+    return (
+      <KeyFacts
+        ast={node}
+        key={key}
+        analyticsStream={analyticsStream}
+        section={section}
+        headline={articleHeadline}
+        isLiveOrBreaking={isLiveOrBreaking}
+      />
+    );
   },
   heading2(key, attributes, children) {
     return <Heading2>{children}</Heading2>;
@@ -514,7 +526,8 @@ const ArticleBody = ({
   swgProductId,
   inArticlePuffFlag,
   olympicsKeys,
-  isLiveOrBreaking
+  isLiveOrBreaking,
+  articleHeadline
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -525,7 +538,9 @@ const ArticleBody = ({
       swgProductId,
       inArticlePuffFlag,
       olympicsKeys,
-      isLiveOrBreaking
+      isLiveOrBreaking,
+      section,
+      articleHeadline
     })
   );
 

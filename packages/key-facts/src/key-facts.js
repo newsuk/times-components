@@ -1,40 +1,68 @@
 import React from "react";
+import { TrackingContextProvider } from "@times-components/ts-components";
 import KeyFactsText from "./key-facts-text";
-import { defaultProps, propTypes } from "./key-facts-prop-types";
-import {
-  BulletContainer,
-  Bullet,
-  KeyFactsTitle,
-  KeyFactsContainer
-} from "./styles";
+import props from "./key-facts-prop-types";
+import { KeyFactsTitle, KeyFactsContainer } from "./styles";
 
-const KeyFacts = ({ ast, onLinkPress }) => {
+const KeyFacts = ({
+  ast,
+  analyticsStream,
+  section,
+  headline,
+  isLiveOrBreaking
+}) => {
   const {
     children,
     attributes: { title }
   } = ast;
   const { children: keyFactsItems } = children[0];
-
-  const renderKeyFact = (item, listIndex) => (
-    <BulletContainer key={`key-facts-${listIndex}`}>
-      <Bullet />
-      <KeyFactsText
-        item={item}
-        listIndex={listIndex}
-        onLinkPress={onLinkPress}
-      />
-    </BulletContainer>
-  );
-
+  const analyticsData = {
+    event: {
+      event_navigation_name: "In-article component displayed: key moments",
+      event_navigation_action: "navigation"
+    },
+    other: {
+      component_type: "In-article component: key moments: static",
+      component_name: title,
+      section_details: section,
+      article_parent_name: headline,
+      other_details: isLiveOrBreaking
+    }
+  };
   return (
-    <KeyFactsContainer>
-      {title && <KeyFactsTitle>{title}</KeyFactsTitle>}
-      {keyFactsItems.map((item, index) => renderKeyFact(item, index))}
-    </KeyFactsContainer>
+    <TrackingContextProvider
+      analyticsStream={analyticsStream}
+      context={{
+        object: "Key moments",
+        attrs: {
+          ...analyticsData.other
+        }
+      }}
+      scrolledEvent={{
+        attrs: {
+          ...analyticsData.events,
+          event_navigation_browsing_method: "scroll"
+        }
+      }}
+    >
+      {({ fireAnalyticsEvent, intersectObserverRef }) => (
+        <KeyFactsContainer>
+          {title && <KeyFactsTitle>{title}</KeyFactsTitle>}
+          {keyFactsItems.map((keyFactItem, index) => (
+            <KeyFactsText
+              keyFactItem={keyFactItem}
+              listIndex={index}
+              fireAnalyticsEvent={fireAnalyticsEvent}
+              intersectObserverRef={intersectObserverRef}
+              analyticsData={analyticsData}
+            />
+          ))}
+        </KeyFactsContainer>
+      )}
+    </TrackingContextProvider>
   );
 };
 
-KeyFacts.propTypes = propTypes;
-KeyFacts.defaultProps = defaultProps;
+KeyFacts.propTypes = props;
 
 export default KeyFacts;
