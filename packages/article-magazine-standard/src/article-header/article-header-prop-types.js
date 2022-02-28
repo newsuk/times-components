@@ -23,7 +23,8 @@ const articleHeaderDefaultProps = {
   hasVideo: false,
   label: null,
   longRead: false,
-  standfirst: null
+  standfirst: null,
+  updatedTime: null
 };
 
 export { articleHeaderPropTypes, articleHeaderDefaultProps };

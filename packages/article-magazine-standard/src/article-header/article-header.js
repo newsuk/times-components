@@ -2,7 +2,7 @@ import React from "react";
 import Context from "@times-components/context";
 import {
   ArticleFlags,
-  UpdatedTimestamp
+  UpdatedTimeProvider
 } from "@times-components/ts-components";
 import { fonts } from "@times-components/styleguide";
 
@@ -48,8 +48,9 @@ const ArticleHeader = ({
           {headline}
         </HeadlineContainer>
         <FlagsContainer>
-          <ArticleFlags flags={flags} />
-          <UpdatedTimestamp updatedTime={updatedTime} />
+          <UpdatedTimeProvider updatedTime={updatedTime}>
+            <ArticleFlags flags={flags} />
+          </UpdatedTimeProvider>
         </FlagsContainer>
         <Standfirst standfirst={standfirst} />
         <Meta
