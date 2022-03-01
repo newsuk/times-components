@@ -278,6 +278,117 @@ exports[`ArticleFlag renders multiple article flags in a container 1`] = `
 </body>
 `;
 
+exports[`ArticleFlag renders multiple article flags with override colours 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-gzVnrw kpMYNz"
+    >
+      <div
+        class="sc-bZQynM fMCtl"
+      >
+        <div
+          class="sc-bdVaJa fXEEbM"
+        >
+          <div
+            class="sc-htpNat cCStZm"
+            color="#FFFFFF"
+          />
+          <div
+            aria-label="updated Flag"
+            class="sc-ifAKCX gNUzAJ"
+            color="#FFFFFF"
+            data-testid="flag-updated"
+          >
+            updated
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-bZQynM fMCtl"
+      >
+        <div
+          class="sc-bdVaJa fXEEbM"
+        >
+          <div
+            class="sc-htpNat cCStZm"
+            color="#FFFFFF"
+          />
+          <div
+            aria-label="exclusive Flag"
+            class="sc-ifAKCX gNUzAJ"
+            color="#FFFFFF"
+            data-testid="flag-exclusive"
+          >
+            exclusive
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-bZQynM fMCtl"
+      >
+        <div
+          class="sc-bdVaJa fXEEbM"
+        >
+          <div
+            class="sc-htpNat cCStZm"
+            color="#FFFFFF"
+          />
+          <div
+            aria-label="new Flag"
+            class="sc-ifAKCX gNUzAJ"
+            color="#FFFFFF"
+            data-testid="flag-new"
+          >
+            new
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-bZQynM fMCtl"
+      >
+        <div
+          class="sc-bdVaJa fXEEbM"
+        >
+          <div
+            class="sc-htpNat cCStZm"
+            color="#FFFFFF"
+          />
+          <div
+            aria-label="sponsored Flag"
+            class="sc-ifAKCX gNUzAJ"
+            color="#FFFFFF"
+            data-testid="flag-sponsored"
+          >
+            sponsored
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-bZQynM fMCtl"
+      >
+        <div
+          class="sc-bdVaJa fXEEbM"
+        >
+          <div
+            class="sc-htpNat cCStZm"
+            color="#FFFFFF"
+          />
+          <div
+            aria-label="long read Flag"
+            class="sc-ifAKCX gNUzAJ"
+            color="#FFFFFF"
+            data-testid="flag-long read"
+          >
+            long read
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
 exports[`ArticleFlag renders the exclusive article flag 1`] = `
 <body>
   <div>
@@ -292,6 +403,29 @@ exports[`ArticleFlag renders the exclusive article flag 1`] = `
         aria-label="exclusive Flag"
         class="sc-ifAKCX fupmhj"
         color="#C51D24"
+        data-testid="flag-exclusive"
+      >
+        exclusive
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleFlag renders the exclusive article flag with an override colour 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa fXEEbM"
+    >
+      <div
+        class="sc-htpNat cCStZm"
+        color="#FFFFFF"
+      />
+      <div
+        aria-label="exclusive Flag"
+        class="sc-ifAKCX gNUzAJ"
+        color="#FFFFFF"
         data-testid="flag-exclusive"
       >
         exclusive
@@ -324,6 +458,29 @@ exports[`ArticleFlag renders the long read article flag 1`] = `
 </body>
 `;
 
+exports[`ArticleFlag renders the long read article flag with an override colour 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa fXEEbM"
+    >
+      <div
+        class="sc-htpNat cCStZm"
+        color="#FFFFFF"
+      />
+      <div
+        aria-label="long read Flag"
+        class="sc-ifAKCX gNUzAJ"
+        color="#FFFFFF"
+        data-testid="flag-long read"
+      >
+        long read
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
 exports[`ArticleFlag renders the new article flag 1`] = `
 <body>
   <div>
@@ -338,6 +495,29 @@ exports[`ArticleFlag renders the new article flag 1`] = `
         aria-label="new Flag"
         class="sc-ifAKCX iquuBv"
         color="#E34605"
+        data-testid="flag-new"
+      >
+        new
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleFlag renders the new article flag with an override colour 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa fXEEbM"
+    >
+      <div
+        class="sc-htpNat cCStZm"
+        color="#FFFFFF"
+      />
+      <div
+        aria-label="new Flag"
+        class="sc-ifAKCX gNUzAJ"
+        color="#FFFFFF"
         data-testid="flag-new"
       >
         new
@@ -370,6 +550,29 @@ exports[`ArticleFlag renders the sponsored article flag 1`] = `
 </body>
 `;
 
+exports[`ArticleFlag renders the sponsored article flag with an override colour 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa fXEEbM"
+    >
+      <div
+        class="sc-htpNat cCStZm"
+        color="#FFFFFF"
+      />
+      <div
+        aria-label="sponsored Flag"
+        class="sc-ifAKCX gNUzAJ"
+        color="#FFFFFF"
+        data-testid="flag-sponsored"
+      >
+        sponsored
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
 exports[`ArticleFlag renders the updated article flag 1`] = `
 <body>
   <div>
@@ -384,6 +587,29 @@ exports[`ArticleFlag renders the updated article flag 1`] = `
         aria-label="updated Flag"
         class="sc-ifAKCX hSeRZN"
         color="#3C81BE"
+        data-testid="flag-updated"
+      >
+        updated
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleFlag renders the updated article flag with an override colour 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa fXEEbM"
+    >
+      <div
+        class="sc-htpNat cCStZm"
+        color="#FFFFFF"
+      />
+      <div
+        aria-label="updated Flag"
+        class="sc-ifAKCX gNUzAJ"
+        color="#FFFFFF"
         data-testid="flag-updated"
       >
         updated
