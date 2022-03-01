@@ -70,15 +70,15 @@ export type FlagType = Array<{
   type: string;
 }>;
 
-const FlagsView: React.FC<{ allFlags: FlagType; overridecolor?: string }> = ({
+const FlagsView: React.FC<{ allFlags: FlagType; overrideColor?: string }> = ({
   allFlags,
-  overridecolor = ''
+  overrideColor = ''
 }) => {
   return (
     <Flags>
       {allFlags.map(flag => (
         <FlagPadding key={flag.type} allFlags={allFlags}>
-          {flagsMapping(overridecolor).get(flag.type)}
+          {flagsMapping(overrideColor).get(flag.type)}
         </FlagPadding>
       ))}
     </Flags>
@@ -102,12 +102,12 @@ const ArticleFlags: React.FC<{
   }
 
   if (!withContainer) {
-    return <FlagsView allFlags={allFlags} overridecolor={color} />;
+    return <FlagsView allFlags={allFlags} overrideColor={color} />;
   }
 
   return (
     <FlagsContainer>
-      <FlagsView allFlags={allFlags} overridecolor={color} />
+      <FlagsView allFlags={allFlags} overrideColor={color} />
     </FlagsContainer>
   );
 };
