@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
-import { UpdatedTimestamp } from '../UpdatedTimestamp';
+import UpdatedTimestamp from '../UpdatedTimestamp';
 import MockDate from 'mockdate';
 
 describe('UpdatedTimestamp', () => {

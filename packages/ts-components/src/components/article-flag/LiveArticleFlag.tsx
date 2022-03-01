@@ -5,7 +5,7 @@ import {
   LiveArticleFlagText,
   LiveFlagAndTimestampContainer
 } from './styles';
-import { UpdatedTimestamp } from '../..';
+import UpdatedTimestamp from '../updated-timestamp/UpdatedTimestamp';
 import { useUpdatedTime } from '../../helpers/time/UpdatedTimeProvider';
 
 export const BaseLiveArticleFlag: React.FC<{ title: string }> = ({ title }) => {

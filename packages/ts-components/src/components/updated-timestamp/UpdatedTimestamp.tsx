@@ -3,7 +3,7 @@ import { differenceInSeconds, format, formatDistanceStrict } from 'date-fns';
 
 import { Container, TimeSinceUpdate } from './styles';
 
-export const UpdatedTimestamp: React.FC<{
+const UpdatedTimestamp: React.FC<{
   updatedTime?: string;
 }> = ({ updatedTime }) => {
   if (!updatedTime) {
@@ -36,3 +36,5 @@ export const UpdatedTimestamp: React.FC<{
     </Container>
   );
 };
+
+export default UpdatedTimestamp;
