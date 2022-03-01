@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.21.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.20.0...@times-components/ts-components@1.21.0) (2022-03-01)
+
+
+### Features
+
+* **TDP-1465:** updated flags to allow for override colours in articl… ([#2865](https://github.com/newsuk/times-components/issues/2865)) ([12ce03c](https://github.com/newsuk/times-components/commit/12ce03ca3c9dab71df37ebb507c4a2bc0cdab515))
+
+
+
+
+
 # [1.20.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.19.4...@times-components/ts-components@1.20.0) (2022-02-28)
 
 
