@@ -89,7 +89,7 @@ export {
 } from './components/article-header/ArticleHeader';
 
 export {
-  default as UpdatedTimestamp
+  UpdatedTimestamp
 } from './components/updated-timestamp/UpdatedTimestamp';
 
 export { UpdatedTimeProvider } from './helpers/time/UpdatedTimeProvider';

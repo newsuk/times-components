@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { date } from '@storybook/addon-knobs';
 
-import UpdatedTimestamp from './UpdatedTimestamp';
+import { UpdatedTimestamp } from './UpdatedTimestamp';
 
 storiesOf('Typescript Component/Updated Timestamp', module).add(
   'Updated Timestamp',
