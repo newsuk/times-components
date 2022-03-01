@@ -79,7 +79,6 @@ const ArticleSkeleton = ({
     sharingEnabled,
     publishedTime
   } = article;
-
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
@@ -201,6 +200,7 @@ const ArticleSkeleton = ({
                       content={newContent}
                       contextUrl={url}
                       section={section}
+                      articleHeadline={headline}
                       paidContentClassName={paidContentClassName}
                       template={template}
                       isPreview={isPreview}

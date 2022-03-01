@@ -36,7 +36,8 @@ import {
   InArticleRelatedArticles,
   InfoCardBulletPoints,
   BigNumbers,
-  HiddenDiv
+  HiddenDiv,
+  safeDecodeURIComponent
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -98,7 +99,9 @@ const renderers = ({
   analyticsStream,
   isPreview,
   olympicsKeys,
-  isLiveOrBreaking
+  isLiveOrBreaking,
+  section,
+  articleHeadline
 }) => ({
   ...coreRenderers,
   ad(key) {
@@ -235,20 +238,20 @@ const renderers = ({
 
         return isPreview ? (
           <PreviewNewsletterPuff
-            copy={decodeURIComponent(copy)}
-            headline={decodeURIComponent(headline)}
-            imageUri={decodeURIComponent(imageUri)}
-            label={decodeURIComponent(label)}
+            copy={safeDecodeURIComponent(copy)}
+            headline={safeDecodeURIComponent(headline)}
+            imageUri={safeDecodeURIComponent(imageUri)}
+            label={safeDecodeURIComponent(label)}
           />
         ) : (
           <InlineNewsletterPuff
             analyticsStream={analyticsStream}
             key={key}
             code={code}
-            copy={decodeURIComponent(copy)}
-            headline={decodeURIComponent(headline)}
-            imageUri={decodeURIComponent(imageUri)}
-            label={decodeURIComponent(label)}
+            copy={safeDecodeURIComponent(copy)}
+            headline={safeDecodeURIComponent(headline)}
+            imageUri={safeDecodeURIComponent(imageUri)}
+            label={safeDecodeURIComponent(label)}
           />
         );
 
@@ -304,6 +307,7 @@ const renderers = ({
                 <InArticlePuff
                   sectionColour={theme.sectionColour}
                   forceImageAspectRatio="3:2"
+                  isLiveOrBreaking
                 />
               </FetchProvider>
             )}
@@ -389,7 +393,16 @@ const renderers = ({
     );
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {
-    return <KeyFacts ast={node} key={key} />;
+    return (
+      <KeyFacts
+        ast={node}
+        key={key}
+        analyticsStream={analyticsStream}
+        section={section}
+        headline={articleHeadline}
+        isLiveOrBreaking={isLiveOrBreaking}
+      />
+    );
   },
   heading2(key, attributes, children) {
     return <Heading2>{children}</Heading2>;
@@ -513,7 +526,8 @@ const ArticleBody = ({
   swgProductId,
   inArticlePuffFlag,
   olympicsKeys,
-  isLiveOrBreaking
+  isLiveOrBreaking,
+  articleHeadline
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -524,7 +538,9 @@ const ArticleBody = ({
       swgProductId,
       inArticlePuffFlag,
       olympicsKeys,
-      isLiveOrBreaking
+      isLiveOrBreaking,
+      section,
+      articleHeadline
     })
   );
 

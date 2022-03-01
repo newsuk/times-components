@@ -12,7 +12,10 @@ import PullQuote from "@times-components/pull-quote";
 import Video from "@times-components/video";
 import ArticleParagraphWrapper from "@times-components/article-paragraph";
 import Context from "@times-components/context";
-import { InlineNewsletterPuff } from "@times-components/ts-components";
+import {
+  InlineNewsletterPuff,
+  safeDecodeURIComponent
+} from "@times-components/ts-components";
 
 import ArticleParagraph from "./article-body-paragraph";
 import InsetCaption from "./inset-caption";
@@ -251,10 +254,10 @@ export default ({
             analyticsStream={analyticsStream}
             key={key}
             code={code}
-            copy={decodeURIComponent(copy)}
-            headline={decodeURIComponent(headline)}
-            imageUri={decodeURIComponent(imageUri)}
-            label={decodeURIComponent(label)}
+            copy={safeDecodeURIComponent(copy)}
+            headline={safeDecodeURIComponent(headline)}
+            imageUri={safeDecodeURIComponent(imageUri)}
+            label={safeDecodeURIComponent(label)}
           />
         );
       }

@@ -303,6 +303,8 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
                 "name": "keyFacts",
               }
             }
+            headline="Some Headline"
+            section="Some Section"
           />
           <div>
             <div>
@@ -708,6 +710,8 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
                 "name": "keyFacts",
               }
             }
+            headline="Some Headline"
+            section="Some Section"
           />
           <div>
             <div>

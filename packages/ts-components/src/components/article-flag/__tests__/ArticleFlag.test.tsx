@@ -72,41 +72,31 @@ describe('ArticleFlag', () => {
   });
 
   it('renders the new article flag with an override colour', () => {
-    const { baseElement, getByText } = render(
-      <NewArticleFlag color="#FFFFFF" />
-    );
+    const { baseElement, getByText } = render(<NewArticleFlag color='#FFFFFF' />);
     expect(getByText('new')).toBeTruthy();
     expect(baseElement).toMatchSnapshot();
   });
 
   it('renders the updated article flag with an override colour', () => {
-    const { baseElement, getByText } = render(
-      <UpdatedArticleFlag color="#FFFFFF" />
-    );
+    const { baseElement, getByText } = render(<UpdatedArticleFlag color='#FFFFFF' />);
     expect(getByText('updated')).toBeTruthy();
     expect(baseElement).toMatchSnapshot();
   });
 
   it('renders the exclusive article flag with an override colour', () => {
-    const { baseElement, getByText } = render(
-      <ExclusiveArticleFlag color="#FFFFFF" />
-    );
+    const { baseElement, getByText } = render(<ExclusiveArticleFlag color='#FFFFFF' />);
     expect(getByText('exclusive')).toBeTruthy();
     expect(baseElement).toMatchSnapshot();
   });
 
   it('renders the sponsored article flag with an override colour', () => {
-    const { baseElement, getByText } = render(
-      <SponsoredArticleFlag color="#FFFFFF" />
-    );
+    const { baseElement, getByText } = render(<SponsoredArticleFlag color='#FFFFFF' />);
     expect(getByText('sponsored')).toBeTruthy();
     expect(baseElement).toMatchSnapshot();
   });
 
   it('renders the long read article flag with an override colour', () => {
-    const { baseElement, getByText } = render(
-      <LongReadArticleFlag color="#FFFFFF" />
-    );
+    const { baseElement, getByText } = render(<LongReadArticleFlag color='#FFFFFF' />);
     expect(getByText('long read')).toBeTruthy();
     expect(baseElement).toMatchSnapshot();
   });
@@ -131,13 +121,13 @@ describe('ArticleFlag', () => {
       <ArticleFlags
         flags={[
           { expiryTime: '2030-03-13T12:00:00.000Z', type: 'UPDATED' },
-          { expiryTime: '2030-03-14T12:00:00.000Z', type: 'EXCLUSIVE' },
-          { expiryTime: '2030-03-14T12:00:00.000Z', type: 'NEW' },
-          { expiryTime: '2030-03-14T12:00:00.000Z', type: 'SPONSORED' }
+          { expiryTime: '2030-03-14T12:00:00.000Z', type: 'EXCLUSIVE'},
+          { expiryTime: '2030-03-14T12:00:00.000Z', type: 'NEW'},
+          { expiryTime: '2030-03-14T12:00:00.000Z', type: 'SPONSORED'}
         ]}
         longRead
         withContainer={false}
-        color="#FFFFFF"
+        color='#FFFFFF'
       />
     );
     expect(baseElement).toMatchSnapshot();

@@ -19,6 +19,7 @@ import {
   FlagContainer
 } from './styles';
 import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
+import safeDecodeURIComponent from '../../utils/safeDecodeURIComponent';
 
 const ArticleHeader: React.FC<{
   updated: string;
@@ -41,14 +42,6 @@ const ArticleHeader: React.FC<{
   const isBreaking = breaking
     ? Boolean(breaking.toLowerCase() === 'true')
     : false;
-
-  const decodeHeadline = (uri: string) => {
-    try {
-      return decodeURI(uri);
-    } catch {
-      return uri;
-    }
-  };
 
   return (
     <Container isBreaking={isBreaking && isLessThan1Hour}>
@@ -83,7 +76,7 @@ const ArticleHeader: React.FC<{
           </UpdatedDate>
         ) : null}
       </UpdatesContainer>
-      {headline && <Headline>{decodeHeadline(headline)}</Headline>}
+      {headline && <Headline>{safeDecodeURIComponent(headline)}</Headline>}
     </Container>
   );
 };
