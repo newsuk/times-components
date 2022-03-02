@@ -246,6 +246,7 @@ exports[`full article with style 1`] = `
   width: 20.8333%;
   z-index: 1;
   top: 100%;
+  display: none;
 }
 
 .c4 {
@@ -494,9 +495,9 @@ exports[`full article with style 1`] = `
   }
 }
 
-@media (max-width:1024px) {
+@media (min-width:1024px) {
   .c8 {
-    display: none;
+    display: block;
   }
 }
 
