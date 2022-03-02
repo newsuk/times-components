@@ -31,7 +31,8 @@ class ArticlePage extends Component {
       publicationName,
       publishedTime,
       shortHeadline,
-      standfirst
+      standfirst,
+      updatedTime
     } = article;
 
     const authorImage =
@@ -55,6 +56,7 @@ class ArticlePage extends Component {
           publicationName={publicationName}
           publishedTime={publishedTime}
           standfirst={standfirst}
+          updatedTime={updatedTime}
         />
         <LeadAsset
           {...getLeadAsset(article)}

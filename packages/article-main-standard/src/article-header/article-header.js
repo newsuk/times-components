@@ -1,7 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, ViewPropTypes } from "react-native";
-import { ArticleFlags } from "@times-components/ts-components";
+import {
+  ArticleFlags,
+  UpdatedTimeProvider
+} from "@times-components/ts-components";
 
 import HeaderLabel from "../article-header-label/article-header-label";
 import HeaderStandfirst from "./article-header-standfirst";
@@ -17,7 +20,8 @@ const ArticleHeader = ({
   headline,
   label,
   standfirst,
-  style
+  style,
+  updatedTime
 }) => (
   <View style={style}>
     <HeaderLabel isVideo={hasVideo} label={label} />
@@ -30,7 +34,9 @@ const ArticleHeader = ({
     </HeadlineContainer>
     <HeaderStandfirst standfirst={standfirst} />
     <View style={styles.flags}>
-      <ArticleFlags flags={flags} />
+      <UpdatedTimeProvider updatedTime={updatedTime}>
+        <ArticleFlags flags={flags} />
+      </UpdatedTimeProvider>
     </View>
   </View>
 );
@@ -46,7 +52,8 @@ ArticleHeader.propTypes = {
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
   standfirst: PropTypes.string,
-  style: ViewStylePropTypes
+  style: ViewStylePropTypes,
+  updatedTime: PropTypes.string
 };
 
 ArticleHeader.defaultProps = {
@@ -54,7 +61,8 @@ ArticleHeader.defaultProps = {
   hasVideo: false,
   label: null,
   standfirst: null,
-  style: {}
+  style: {},
+  updatedTime: null
 };
 
 export default ArticleHeader;

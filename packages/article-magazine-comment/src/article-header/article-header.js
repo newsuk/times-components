@@ -3,7 +3,10 @@ import Context from "@times-components/context";
 import Image from "@times-components/image";
 import { fonts } from "@times-components/styleguide";
 
-import { ArticleFlags } from "@times-components/ts-components";
+import {
+  ArticleFlags,
+  UpdatedTimeProvider
+} from "@times-components/ts-components";
 import Label from "../article-label/article-label";
 import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
@@ -29,7 +32,8 @@ const ArticleHeader = ({
   label,
   publicationName,
   publishedTime,
-  standfirst
+  standfirst,
+  updatedTime
 }) => (
   <Context.Consumer>
     {({ theme: { headlineFont, headlineCase } }) => (
@@ -54,7 +58,9 @@ const ArticleHeader = ({
           {headline}
         </HeadlineContainer>
         <FlagsContainer>
-          <ArticleFlags flags={flags} />
+          <UpdatedTimeProvider updatedTime={updatedTime}>
+            <ArticleFlags flags={flags} />
+          </UpdatedTimeProvider>
         </FlagsContainer>
         <Standfirst standfirst={standfirst} />
         <Meta

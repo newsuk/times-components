@@ -89,5 +89,11 @@ export {
 } from './components/article-header/ArticleHeader';
 
 export {
+  UpdatedTimestamp
+} from './components/updated-timestamp/UpdatedTimestamp';
+
+export { UpdatedTimeProvider } from './helpers/time/UpdatedTimeProvider';
+
+export {
   default as safeDecodeURIComponent
 } from './utils/safeDecodeURIComponent';

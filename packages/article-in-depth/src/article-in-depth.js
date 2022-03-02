@@ -32,7 +32,8 @@ class ArticlePage extends Component {
       publishedTime,
       shortHeadline,
       standfirst,
-      textColour
+      textColour,
+      updatedTime
     } = article;
 
     return (
@@ -45,6 +46,7 @@ class ArticlePage extends Component {
           label={label}
           standfirst={standfirst}
           textColour={textColour}
+          updatedTime={updatedTime}
         />
         <LeadAsset
           {...getLeadAsset(article)}

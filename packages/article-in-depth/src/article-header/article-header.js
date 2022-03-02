@@ -1,6 +1,9 @@
 import React from "react";
 import { View } from "react-native";
-import { ArticleFlags } from "@times-components/ts-components";
+import {
+  ArticleFlags,
+  UpdatedTimeProvider
+} from "@times-components/ts-components";
 import Context from "@times-components/context";
 import { fonts } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";
@@ -26,7 +29,8 @@ const ArticleHeader = ({
   headline,
   label,
   standfirst,
-  textColour: rgbTextColour
+  textColour: rgbTextColour,
+  updatedTime
 }) => {
   const backgroundColour = gqlRgbaToStyle(rgbBackgroundColour);
   const textColour = gqlRgbaToStyle(rgbTextColour);
@@ -52,7 +56,9 @@ const ArticleHeader = ({
               {headline}
             </HeadlineContainer>
             <FlagsContainer>
-              <ArticleFlags color={textColour} flags={flags} />
+              <UpdatedTimeProvider updatedTime={updatedTime}>
+                <ArticleFlags color={textColour} flags={flags} />
+              </UpdatedTimeProvider>
             </FlagsContainer>
             <Standfirst color={textColour} standfirst={standfirst} />
           </HeaderContainer>
