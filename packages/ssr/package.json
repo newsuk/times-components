@@ -1,7 +1,7 @@
 {
   "name": "@times-components/ssr",
   "main": "src",
-  "version": "2.29.29",
+  "version": "2.29.30",
   "scripts": {
     "bundle:dev": "yarn cleanup-dist && webpack --config=webpack.config.js",
     "bundle:prod": "yarn cleanup-dist && NODE_ENV=production webpack --config=webpack.config.js -p",
@@ -39,7 +39,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/fixture-generator": "0.31.1",
-    "@times-components/mock-tpa-server": "0.2.71",
+    "@times-components/mock-tpa-server": "0.2.72",
     "axe-core": "3.3.1",
     "cypress": "^9.2.0",
     "cypress-axe": "0.13.0",
@@ -56,14 +56,14 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article": "7.8.60",
-    "@times-components/author-profile": "6.4.30",
+    "@times-components/article": "7.8.61",
+    "@times-components/author-profile": "6.4.31",
     "@times-components/context": "1.2.33",
-    "@times-components/provider": "1.29.4",
+    "@times-components/provider": "1.30.0",
     "@times-components/schema": "0.7.1",
     "@times-components/styleguide": "3.38.29",
     "@times-components/tealium": "1.14.6",
-    "@times-components/topic": "5.4.31",
+    "@times-components/topic": "5.4.32",
     "@times-components/utils": "6.5.13",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",

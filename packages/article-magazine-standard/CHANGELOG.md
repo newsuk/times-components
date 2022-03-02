@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.39.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.38.8...@times-components/article-magazine-standard@3.39.0) (2022-03-02)
+
+
+### Features
+
+* **TDP-1247:** Last updated timestamp ([#2864](https://github.com/newsuk/times-components/issues/2864)) ([57355b6](https://github.com/newsuk/times-components/commit/57355b6a2a067ca098e63802f018e69e78ac186e))
+
+
+
+
+
 ## [3.38.8](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.38.7...@times-components/article-magazine-standard@3.38.8) (2022-03-01)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard

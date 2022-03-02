@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.23.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.22.3...@times-components/provider-test-tools@1.23.0) (2022-03-02)
+
+
+### Features
+
+* **TDP-1247:** Last updated timestamp ([#2864](https://github.com/newsuk/times-components/issues/2864)) ([57355b6](https://github.com/newsuk/times-components/commit/57355b6a2a067ca098e63802f018e69e78ac186e))
+
+
+
+
+
 ## [1.22.3](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.22.2...@times-components/provider-test-tools@1.22.3) (2022-02-22)
 
 **Note:** Version bump only for package @times-components/provider-test-tools
