@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.45.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.44.0...@times-components/article-main-standard@3.45.0) (2022-03-02)
+
+
+### Features
+
+* **TDP-1351:** fix article keylines responsive bug ([#2867](https://github.com/newsuk/times-components/issues/2867)) ([6a8d9d0](https://github.com/newsuk/times-components/commit/6a8d9d0fdfacd7b3cfefd89e3211006e8ca6d492))
+
+
+
+
+
 # [3.44.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.43.8...@times-components/article-main-standard@3.44.0) (2022-03-02)
 
 
