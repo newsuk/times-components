@@ -57,7 +57,7 @@ export const MetaContainer = styled(View)`
   z-index: 1;
   top: 100%;
 
-  @media (max-width: ${breakpoints.wide}px) {
+  @media (max-width: ${breakpoints.wide - 1}px) {
     display: none;
   }
 `;
