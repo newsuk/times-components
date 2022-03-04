@@ -7,6 +7,8 @@ import KeyFacts from "./src/key-facts";
 const renderKeyFacts = ({ ast }) => (
   <Responsive>
     <KeyFacts ast={ast} analyticsStream={storybookReporter} />
+    <KeyFacts ast={ast} analyticsStream={storybookReporter} />
+    <KeyFacts ast={ast} analyticsStream={storybookReporter} />
   </Responsive>
 );
 

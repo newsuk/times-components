@@ -7,9 +7,9 @@ import { Text, KeyFactTextLink, BulletContainer, Bullet } from "./styles";
 const KeyFactsText = ({
   keyFactItem,
   listIndex,
-  fireAnalyticsEvent,
   intersectObserverRef,
-  analyticsData
+  analyticsData,
+  fireAnalyticsEvent
 }) => (
   <BulletContainer key={`key-facts-${listIndex}`} ref={intersectObserverRef}>
     <Bullet />
@@ -28,10 +28,10 @@ const KeyFactsText = ({
                     fireAnalyticsEvent &&
                     fireAnalyticsEvent({
                       action: "Clicked",
+                      ...analyticsData.events,
+                      event_navigation_browsing_method: "click",
                       attrs: {
-                        ...analyticsData.other,
-                        ...analyticsData.events,
-                        event_navigation_browsing_method: "click"
+                        ...analyticsData.attrs
                       }
                     })
                   }
