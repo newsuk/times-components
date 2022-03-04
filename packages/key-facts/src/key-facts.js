@@ -17,11 +17,11 @@ const KeyFacts = ({
   } = ast;
   const { children: keyFactsItems } = children[0];
   const analyticsData = {
-    event: {
+    events: {
       event_navigation_name: "In-article component displayed: key moments",
       event_navigation_action: "navigation"
     },
-    other: {
+    attrs: {
       component_type: "In-article component: key moments: static",
       component_name: title,
       section_details: section,
@@ -29,19 +29,17 @@ const KeyFacts = ({
       other_details: isLiveOrBreaking
     }
   };
+
   return (
     <TrackingContextProvider
       analyticsStream={analyticsStream}
-      context={{
-        object: "Key moments",
-        attrs: {
-          ...analyticsData.other
-        }
-      }}
+      context={{}}
       scrolledEvent={{
+        object: "KeyMoments",
+        ...analyticsData.events,
+        event_navigation_browsing_method: "scroll",
         attrs: {
-          ...analyticsData.events,
-          event_navigation_browsing_method: "scroll"
+          ...analyticsData.attrs
         }
       }}
     >
@@ -52,8 +50,8 @@ const KeyFacts = ({
             <KeyFactsText
               keyFactItem={keyFactItem}
               listIndex={index}
-              fireAnalyticsEvent={fireAnalyticsEvent}
               intersectObserverRef={intersectObserverRef}
+              fireAnalyticsEvent={fireAnalyticsEvent}
               analyticsData={analyticsData}
             />
           ))}

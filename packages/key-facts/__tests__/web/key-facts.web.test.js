@@ -113,33 +113,36 @@ describe("Key moments", () => {
     expect(analyticsStream).toHaveBeenCalledTimes(2);
 
     expect(analyticsStream.mock.calls[0][0]).toEqual({
-      action: "Scrolled",
       component: "ArticleSkeleton",
-      object: "Key moments",
       attrs: {
-        article_parent_name: "some headline",
-        component_name: "Example title",
         component_type: "In-article component: key moments: static",
-        event_navigation_browsing_method: "scroll",
-        eventTime: "2021-05-03T00:00:00.000Z",
+        component_name: "Example title",
         section_details: "news",
-        other_details: "breaking"
-      }
+        article_parent_name: "some headline",
+        other_details: "breaking",
+        eventTime: "2021-05-03T00:00:00.000Z"
+      },
+      action: "Scrolled",
+      object: "KeyMoments",
+      event_navigation_name: "In-article component displayed: key moments",
+      event_navigation_action: "navigation",
+      event_navigation_browsing_method: "scroll"
     });
 
     expect(analyticsStream.mock.calls[1][0]).toEqual({
-      action: "Clicked",
       component: "ArticleSkeleton",
-      object: "Key moments",
       attrs: {
-        article_parent_name: "some headline",
-        component_name: "Example title",
         component_type: "In-article component: key moments: static",
-        event_navigation_browsing_method: "click",
-        eventTime: "2021-05-03T00:00:00.000Z",
+        component_name: "Example title",
         section_details: "news",
-        other_details: "breaking"
-      }
+        article_parent_name: "some headline",
+        other_details: "breaking",
+        eventTime: "2021-05-03T00:00:00.000Z"
+      },
+      action: "Clicked",
+      event_navigation_name: "In-article component displayed: key moments",
+      event_navigation_action: "navigation",
+      event_navigation_browsing_method: "click"
     });
   });
 });
