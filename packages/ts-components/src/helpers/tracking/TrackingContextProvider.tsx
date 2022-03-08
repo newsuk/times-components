@@ -27,12 +27,12 @@ const TrackingContext = React.createContext<TrackingContextType>({
 
 type TrackingContextChildren = {
   children:
-    | ((props: {
-        fireAnalyticsEvent: (evt: TrackingContext) => void;
-        intersectObserverRef: (ref: HTMLElement | null) => void;
-      }) => JSX.Element | JSX.Element[])
-    | JSX.Element
-    | JSX.Element[];
+    | ((
+        props: {
+          fireAnalyticsEvent: (evt: TrackingContext) => void;
+          intersectObserverRef: (ref: HTMLElement | null) => void;
+        }
+      ) => JSX.Element | JSX.Element[])
 };
 
 export const useTrackingContext = () => useContext(TrackingContext);
