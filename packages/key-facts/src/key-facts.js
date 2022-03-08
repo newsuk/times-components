@@ -13,7 +13,7 @@ const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
   } = ast;
 
   const { children: keyFactsItems } = children[0];
-
+  
   return (
     <TrackingContextProvider
       context={{
