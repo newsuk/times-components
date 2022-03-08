@@ -50,7 +50,7 @@
     "@times-components/utils": "6.5.13",
     "react": "16.9.0",
     "react-native": "0.61.5",
-    "url-parse": "1.4.7"
+    "url-parse": "1.5.9"
   },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "1.0.0",
