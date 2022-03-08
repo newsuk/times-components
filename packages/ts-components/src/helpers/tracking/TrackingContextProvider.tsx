@@ -27,12 +27,10 @@ const TrackingContext = React.createContext<TrackingContextType>({
 
 type TrackingContextChildren = {
   children:
-    | ((
-        props: {
-          fireAnalyticsEvent: (evt: TrackingContext) => void;
-          intersectObserverRef: (ref: HTMLElement | null) => void;
-        }
-      ) => JSX.Element | JSX.Element[])
+    | ((props: {
+        fireAnalyticsEvent: (evt: TrackingContext) => void;
+        intersectObserverRef: (ref: HTMLElement | null) => void;
+      }) => JSX.Element | JSX.Element[])
     | JSX.Element
     | JSX.Element[];
 };
@@ -54,11 +52,21 @@ export const TrackingContextProvider = ({
   const aggregatedContext = merge({}, parentTrackingContext.context, context);
 
   const fireAnalyticsEvent = (event: TrackingContext) => {
+    // tslint:disable-next-line:no-console
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
+    // tslint:disable-next-line:no-console
+    console.log('fire analytics event TCP', event);
+
     const aggregatedEvent = merge({}, aggregatedContext, event, {
       attrs: {
         eventTime: new Date().toISOString()
       }
     });
+
+    // tslint:disable-next-line:no-console
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
+    // tslint:disable-next-line:no-console
+    console.log('aggregatedEvent', stream, aggregatedEvent);
 
     stream
       ? stream(aggregatedEvent)
