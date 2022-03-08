@@ -50,7 +50,7 @@ exports[`InfoCard renders 1`] = `
                         Birch
                       </div>
                       <div
-                        class="sc-kpOJdX icwFPb"
+                        class="sc-kpOJdX hWBXgS"
                         disabled=""
                       >
                         <svg
@@ -93,7 +93,7 @@ exports[`InfoCard renders 1`] = `
                         Mitre
                       </div>
                       <div
-                        class="sc-kpOJdX icwFPb"
+                        class="sc-kpOJdX hWBXgS"
                         disabled=""
                       >
                         <svg
@@ -136,7 +136,7 @@ exports[`InfoCard renders 1`] = `
                         Subtitle 1
                       </div>
                       <div
-                        class="sc-kpOJdX icwFPb"
+                        class="sc-kpOJdX hWBXgS"
                         disabled=""
                       >
                         <svg
@@ -179,7 +179,7 @@ exports[`InfoCard renders 1`] = `
                         Subtitle 2
                       </div>
                       <div
-                        class="sc-kpOJdX icwFPb"
+                        class="sc-kpOJdX hWBXgS"
                         disabled=""
                       >
                         <svg
@@ -222,7 +222,7 @@ exports[`InfoCard renders 1`] = `
                         Subtitle 3
                       </div>
                       <div
-                        class="sc-kpOJdX icwFPb"
+                        class="sc-kpOJdX hWBXgS"
                         disabled=""
                       >
                         <svg
@@ -265,7 +265,7 @@ exports[`InfoCard renders 1`] = `
                         Subtitle 4
                       </div>
                       <div
-                        class="sc-kpOJdX icwFPb"
+                        class="sc-kpOJdX hWBXgS"
                         disabled=""
                       >
                         <svg
@@ -422,7 +422,7 @@ exports[`InfoCard renders no image 1`] = `
                         Birch
                       </div>
                       <div
-                        class="sc-kpOJdX icwFPb"
+                        class="sc-kpOJdX hWBXgS"
                         disabled=""
                       >
                         <svg
@@ -465,7 +465,7 @@ exports[`InfoCard renders no image 1`] = `
                         Mitre
                       </div>
                       <div
-                        class="sc-kpOJdX icwFPb"
+                        class="sc-kpOJdX hWBXgS"
                         disabled=""
                       >
                         <svg
@@ -508,7 +508,7 @@ exports[`InfoCard renders no image 1`] = `
                         Subtitle 1
                       </div>
                       <div
-                        class="sc-kpOJdX icwFPb"
+                        class="sc-kpOJdX hWBXgS"
                         disabled=""
                       >
                         <svg
@@ -551,7 +551,7 @@ exports[`InfoCard renders no image 1`] = `
                         Subtitle 2
                       </div>
                       <div
-                        class="sc-kpOJdX icwFPb"
+                        class="sc-kpOJdX hWBXgS"
                         disabled=""
                       >
                         <svg
@@ -594,7 +594,7 @@ exports[`InfoCard renders no image 1`] = `
                         Subtitle 3
                       </div>
                       <div
-                        class="sc-kpOJdX icwFPb"
+                        class="sc-kpOJdX hWBXgS"
                         disabled=""
                       >
                         <svg
@@ -637,7 +637,7 @@ exports[`InfoCard renders no image 1`] = `
                         Subtitle 4
                       </div>
                       <div
-                        class="sc-kpOJdX icwFPb"
+                        class="sc-kpOJdX hWBXgS"
                         disabled=""
                       >
                         <svg
@@ -807,7 +807,7 @@ exports[`InfoCard should render the standard component 1`] = `
                       Birch
                     </div>
                     <div
-                      class="sc-kpOJdX icwFPb"
+                      class="sc-kpOJdX hWBXgS"
                       disabled=""
                     >
                       <svg
@@ -849,7 +849,7 @@ exports[`InfoCard should render the standard component 1`] = `
                       Mitre
                     </div>
                     <div
-                      class="sc-kpOJdX icwFPb"
+                      class="sc-kpOJdX hWBXgS"
                       disabled=""
                     >
                       <svg
@@ -891,7 +891,7 @@ exports[`InfoCard should render the standard component 1`] = `
                       Subtitle 1
                     </div>
                     <div
-                      class="sc-kpOJdX icwFPb"
+                      class="sc-kpOJdX hWBXgS"
                       disabled=""
                     >
                       <svg
@@ -933,7 +933,7 @@ exports[`InfoCard should render the standard component 1`] = `
                       Subtitle 2
                     </div>
                     <div
-                      class="sc-kpOJdX icwFPb"
+                      class="sc-kpOJdX hWBXgS"
                       disabled=""
                     >
                       <svg
@@ -975,7 +975,7 @@ exports[`InfoCard should render the standard component 1`] = `
                       Subtitle 3
                     </div>
                     <div
-                      class="sc-kpOJdX icwFPb"
+                      class="sc-kpOJdX hWBXgS"
                       disabled=""
                     >
                       <svg
@@ -1017,7 +1017,7 @@ exports[`InfoCard should render the standard component 1`] = `
                       Subtitle 4
                     </div>
                     <div
-                      class="sc-kpOJdX icwFPb"
+                      class="sc-kpOJdX hWBXgS"
                       disabled=""
                     >
                       <svg
@@ -1172,7 +1172,7 @@ exports[`InfoCard should render the wide component 1`] = `
                       Birch
                     </div>
                     <div
-                      class="sc-kpOJdX icwFPb"
+                      class="sc-kpOJdX hWBXgS"
                       disabled=""
                     >
                       <svg
@@ -1214,7 +1214,7 @@ exports[`InfoCard should render the wide component 1`] = `
                       Mitre
                     </div>
                     <div
-                      class="sc-kpOJdX icwFPb"
+                      class="sc-kpOJdX hWBXgS"
                       disabled=""
                     >
                       <svg
@@ -1256,7 +1256,7 @@ exports[`InfoCard should render the wide component 1`] = `
                       Subtitle 1
                     </div>
                     <div
-                      class="sc-kpOJdX icwFPb"
+                      class="sc-kpOJdX hWBXgS"
                       disabled=""
                     >
                       <svg
@@ -1298,7 +1298,7 @@ exports[`InfoCard should render the wide component 1`] = `
                       Subtitle 2
                     </div>
                     <div
-                      class="sc-kpOJdX icwFPb"
+                      class="sc-kpOJdX hWBXgS"
                       disabled=""
                     >
                       <svg
@@ -1340,7 +1340,7 @@ exports[`InfoCard should render the wide component 1`] = `
                       Subtitle 3
                     </div>
                     <div
-                      class="sc-kpOJdX icwFPb"
+                      class="sc-kpOJdX hWBXgS"
                       disabled=""
                     >
                       <svg
@@ -1382,7 +1382,7 @@ exports[`InfoCard should render the wide component 1`] = `
                       Subtitle 4
                     </div>
                     <div
-                      class="sc-kpOJdX icwFPb"
+                      class="sc-kpOJdX hWBXgS"
                       disabled=""
                     >
                       <svg
