@@ -20,7 +20,6 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
                   key={key}
                   onClick={() => {
                     if (fireAnalyticsEvent) {
-                      console.log("fireAnalyticsEvent");
                       fireAnalyticsEvent({
                         action: "Clicked",
                         attrs: {
@@ -28,8 +27,6 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
                           event_navigation_browsing_method: "click"
                         }
                       });
-                    } else {
-                      console.log("no fireAnalyticsEvent");
                     }
                   }}
                   href={url}

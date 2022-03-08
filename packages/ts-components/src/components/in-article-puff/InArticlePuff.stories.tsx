@@ -34,12 +34,12 @@ storiesOf('Typescript Component/In Article/In Article Puff', module)
       <InArticlePuff
         sectionColour="#13354e"
         forceImageAspectRatio="3:2"
-        isLiveOrBreakingFlag="breaking"
+        isLiveOrBreaking="breaking"
       />
     </FetchProvider>
   ))
   .add('No Image', () => (
     <FetchProvider previewData={previewData[41547]}>
-      <InArticlePuff sectionColour="#184e13" isLiveOrBreakingFlag="live" />
+      <InArticlePuff sectionColour="#184e13" isLiveOrBreaking="live" />
     </FetchProvider>
   ));

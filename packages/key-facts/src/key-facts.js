@@ -14,11 +14,6 @@ const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
 
   const { children: keyFactsItems } = children[0];
 
-  console.log("=================");
-  console.log("KeyMoments");
-  console.log("isLiveOrBreaking", isLiveOrBreaking);
-  console.log("section", section);
-
   return (
     <TrackingContextProvider
       context={{
