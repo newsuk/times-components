@@ -32,6 +32,7 @@ export const ArticleFlagBullet = styled.div`
 export const LiveIconContainer = styled.div`
   margin-right: 8px;
   color: #ffffff;
+  font-size: 18px;
   align-self: self-start;
 `;
 
