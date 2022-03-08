@@ -33,6 +33,8 @@ type TrackingContextChildren = {
           intersectObserverRef: (ref: HTMLElement | null) => void;
         }
       ) => JSX.Element | JSX.Element[])
+    | JSX.Element
+    | JSX.Element[];
 };
 
 export const useTrackingContext = () => useContext(TrackingContext);
