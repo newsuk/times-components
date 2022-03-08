@@ -5,6 +5,10 @@ export function useIntersectionObserver<T extends Element | null>(
   onIntersect: () => void,
   options: IntersectionObserverInit
 ): void {
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('intersect obs', ref, onIntersect, options)
   return useEffect(
     () => {
       let observer: IntersectionObserver | undefined;
@@ -13,6 +17,10 @@ export function useIntersectionObserver<T extends Element | null>(
           (typeof window !== 'undefined' &&
             window.IntersectionObserver &&
             new window.IntersectionObserver(entries => {
+              console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+              console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+              console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+              console.log('intersect obs entries', entries, entries[0], entries[0].isIntersecting)
               if (entries[0].isIntersecting) {
                 observer && observer.disconnect();
 

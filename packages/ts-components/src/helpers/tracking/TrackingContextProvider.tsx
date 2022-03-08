@@ -54,11 +54,20 @@ export const TrackingContextProvider = ({
   const aggregatedContext = merge({}, parentTrackingContext.context, context);
 
   const fireAnalyticsEvent = (event: TrackingContext) => {
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    console.log('fire analytics event TCP', event)
+
     const aggregatedEvent = merge({}, aggregatedContext, event, {
       attrs: {
         eventTime: new Date().toISOString()
       }
     });
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    console.log('aggregatedEvent', stream, aggregatedEvent)
 
     stream
       ? stream(aggregatedEvent)

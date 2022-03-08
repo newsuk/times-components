@@ -400,6 +400,7 @@ const renderers = ({
         analyticsStream={analyticsStream}
         section={section}
         headline={articleHeadline}
+        type={'article-body'}
         isLiveOrBreaking={isLiveOrBreaking}
       />
     );
@@ -527,7 +528,8 @@ const ArticleBody = ({
   inArticlePuffFlag,
   olympicsKeys,
   isLiveOrBreaking,
-  articleHeadline
+  articleHeadline,
+  analyticsStream
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -540,7 +542,8 @@ const ArticleBody = ({
       olympicsKeys,
       isLiveOrBreaking,
       section,
-      articleHeadline
+      articleHeadline,
+      analyticsStream
     })
   );
 

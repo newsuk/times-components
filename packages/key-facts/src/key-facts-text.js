@@ -10,8 +10,15 @@ const KeyFactsText = ({
   intersectObserverRef,
   analyticsData,
   fireAnalyticsEvent
-}) => (
-  <BulletContainer key={`key-facts-${listIndex}`} ref={intersectObserverRef}>
+}) => {
+
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('key facts text', fireAnalyticsEvent, intersectObserverRef )
+  
+  return(
+  <BulletContainer key={`key-facts-${listIndex}`} >
     <Bullet />
     <Text>
       {keyFactItem.children.map((data, listItemIndex) =>
@@ -47,7 +54,7 @@ const KeyFactsText = ({
       )}
     </Text>
   </BulletContainer>
-);
+)};
 
 KeyFactsText.propTypes = props;
 

@@ -9,7 +9,7 @@ const KeyFacts = ({
   analyticsStream,
   section,
   headline,
-  isLiveOrBreaking
+  isLiveOrBreaking, data, type
 }) => {
   const {
     children,
@@ -30,6 +30,13 @@ const KeyFacts = ({
     }
   };
 
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('type', type)
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('data', data)
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('key facts analytics stream',  analyticsStream)
+
   return (
     <TrackingContextProvider
       analyticsStream={analyticsStream}
@@ -44,13 +51,12 @@ const KeyFacts = ({
       }}
     >
       {({ fireAnalyticsEvent, intersectObserverRef }) => (
-        <KeyFactsContainer>
+        <KeyFactsContainer ref={intersectObserverRef}>
           {title && <KeyFactsTitle>{title}</KeyFactsTitle>}
           {keyFactsItems.map((keyFactItem, index) => (
             <KeyFactsText
               keyFactItem={keyFactItem}
               listIndex={index}
-              intersectObserverRef={intersectObserverRef}
               fireAnalyticsEvent={fireAnalyticsEvent}
               analyticsData={analyticsData}
             />

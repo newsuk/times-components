@@ -284,8 +284,15 @@ export default ({
     keyFacts(key, attributes, children, index, tree) {
       return (
         <View style={isTablet && styles.containerTablet}>
-          <KeyFacts ast={tree} key={key} onLinkPress={onLinkPress} />
-        </View>
+          <KeyFacts         ast={node}
+          key={key}
+          analyticsStream={analyticsStream}
+          section={section}
+          headline={articleHeadline}
+          data={data}
+          type={'article-body-row'}
+          isLiveOrBreaking={isLiveOrBreaking} />
+        </View> 
       );
     },
     pullQuote(
