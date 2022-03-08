@@ -6,7 +6,6 @@ import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { InfoCard } from './InfoCard';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
-import previewData from '../../fixtures/preview-data/in-article-info-card';
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
 storiesOf('Typescript Component/In Article/Info Card', module)
