@@ -1,6 +1,6 @@
 {
   "name": "@times-components/key-facts",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "Bulleted list of text data",
   "main": "dist/key-facts",
   "dev": "src/key-facts",
