@@ -9,7 +9,7 @@ exports[`BigNumbers click show all 1`] = `
       class="sc-bwzfXH gozLqp"
     >
       <div
-        class="sc-gZMcBi hyVIiP"
+        class="sc-gZMcBi fiBxWx"
       >
         President Race
       </div>
@@ -131,7 +131,7 @@ exports[`BigNumbers should render the standard component 1`] = `
       class="sc-bwzfXH gozLqp"
     >
       <div
-        class="sc-gZMcBi hyVIiP"
+        class="sc-gZMcBi fiBxWx"
       >
         President Race
       </div>
@@ -241,7 +241,7 @@ exports[`BigNumbers should render the wide component 1`] = `
       class="sc-bwzfXH gozLqp"
     >
       <div
-        class="sc-gZMcBi hyVIiP"
+        class="sc-gZMcBi fiBxWx"
       >
         President Race
       </div>

@@ -3,6 +3,8 @@ import mockDate from 'mockdate';
 import { cleanup, fireEvent, render } from '@testing-library/react';
 import { Timelines } from '../Timelines';
 import { useFetch } from '../../../helpers/fetch/FetchProvider';
+import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
+import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
 import '@testing-library/jest-dom';
 import 'regenerator-runtime';
 
@@ -128,6 +130,8 @@ const testDataCircle = {
         data: {
           date: '9 June 2018',
           eventHeading: 'Event Heading 1',
+          image:
+            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -137,6 +141,8 @@ const testDataCircle = {
         data: {
           date: '10 June 2018',
           eventHeading: 'Event Heading 2',
+          image:
+            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -146,6 +152,8 @@ const testDataCircle = {
         data: {
           date: '11 June 2018',
           eventHeading: 'Event Heading 3',
+          image:
+            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -155,6 +163,8 @@ const testDataCircle = {
         data: {
           date: '12 June 2018',
           eventHeading: 'Event Heading 4',
+          image:
+            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -164,6 +174,8 @@ const testDataCircle = {
         data: {
           date: '13 June 2018',
           eventHeading: 'Event Heading 5',
+          image:
+            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -182,6 +194,8 @@ const testDataCircle = {
         data: {
           date: '15 June 2018',
           eventHeading: 'Event Heading 7',
+          image:
+            'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200',
           copy:
             'Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1'
         }
@@ -222,7 +236,11 @@ describe('Timelines', () => {
 
   it('should render the circle images component', () => {
     (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapperCircle());
-    const { asFragment } = renderTimelines();
+    const { asFragment, getAllByRole } = renderTimelines();
+    expect(getAllByRole('img')[0]).toHaveAttribute(
+      'src',
+      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200'
+    );
     expect(asFragment()).toMatchSnapshot();
   });
 
@@ -233,5 +251,59 @@ describe('Timelines', () => {
     fireEvent.click(getByText('Show all'));
     await findByText('Collapse');
     expect(asFragment()).toMatchSnapshot();
+  });
+  describe('tracking', () => {
+    (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
+    let oldIntersectionObserver: typeof IntersectionObserver;
+    const analyticsStream = jest.fn();
+
+    beforeEach(() => {
+      oldIntersectionObserver = window.IntersectionObserver;
+      // @ts-ignore
+      window.IntersectionObserver = FakeIntersectionObserver;
+    });
+
+    afterEach(() => {
+      window.IntersectionObserver = oldIntersectionObserver;
+      jest.resetAllMocks();
+    });
+
+    it('fires scroll event when viewed', () => {
+      (useFetch as jest.Mock).mockReturnValue(deckApiPayloadWrapper());
+
+      render(
+        <TrackingContextProvider
+          context={{
+            component: 'ArticleSkeleton',
+            attrs: {
+              articleHeadline: 'articleHeadline',
+              section: 'section'
+            }
+          }}
+          analyticsStream={analyticsStream}
+        >
+          <Timelines sectionColour="#636C17" />
+        </TrackingContextProvider>
+      );
+
+      FakeIntersectionObserver.intersect();
+
+      expect(analyticsStream).toHaveBeenCalledTimes(1);
+      expect(analyticsStream).toHaveBeenCalledWith({
+        action: 'Scrolled',
+        component: 'ArticleSkeleton',
+        object: 'InArticleTimelines',
+        attrs: {
+          articleHeadline: 'articleHeadline',
+          component_name: 'A history of injury troubles',
+          component_type: 'in-article component : timelines: static',
+          eventTime: '2021-05-03T00:00:00.000Z',
+          event_navigation_action: 'navigation',
+          event_navigation_browsing_method: 'scroll',
+          event_navigation_name: 'in-article component displayed : timelines',
+          section: 'section'
+        }
+      });
+    });
   });
 });
