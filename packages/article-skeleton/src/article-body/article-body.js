@@ -307,7 +307,7 @@ const renderers = ({
                 <InArticlePuff
                   sectionColour={theme.sectionColour}
                   forceImageAspectRatio="3:2"
-                  isLiveOrBreaking
+                  isLiveOrBreaking={isLiveOrBreaking}
                 />
               </FetchProvider>
             )}
@@ -395,9 +395,8 @@ const renderers = ({
   keyFacts(key, attributes, renderedChildren, indx, node) {
     return (
       <KeyFacts
-        ast={node}
         key={key}
-        analyticsStream={analyticsStream}
+        ast={node}
         section={section}
         headline={articleHeadline}
         isLiveOrBreaking={isLiveOrBreaking}
