@@ -25,22 +25,22 @@ storiesOf('Typescript Component/In Article/Info Card', module)
   ))
   .add('Standard with Copy & Subtitle', () => (
     <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43606">
-      <InfoCard sectionColour="#636C17" enableQuotes={false}/>
+      <InfoCard sectionColour="#636C17" enableQuotes={false} />
     </FetchProvider>
   ))
   .add('Standard with Image', () => (
     <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43961">
-      <InfoCard sectionColour="#636C17" enableQuotes={false}/>
+      <InfoCard sectionColour="#636C17" enableQuotes={false} />
     </FetchProvider>
   ))
   .add('Wide with Copy', () => (
     <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43603">
-      <InfoCard sectionColour="#636C17" enableQuotes={false}/>
+      <InfoCard sectionColour="#636C17" enableQuotes={false} />
     </FetchProvider>
   ))
   .add('Wide with Image', () => (
     <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43614">
-      <InfoCard sectionColour="#636C17" enableQuotes={false}/>
+      <InfoCard sectionColour="#636C17" enableQuotes={false} />
     </FetchProvider>
   ))
 
@@ -52,7 +52,7 @@ storiesOf('Typescript Component/In Article/Info Card', module)
 
   .add('Quotes Standard', () => (
     <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43993">
-      <InfoCard sectionColour="#636C17" enableQuotes={true}/>
+      <InfoCard sectionColour="#636C17" enableQuotes={true} />
     </FetchProvider>
   ))
 

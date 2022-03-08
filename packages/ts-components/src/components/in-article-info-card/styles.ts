@@ -189,7 +189,7 @@ export const CardImg = styled.img`
 `;
 
 export const QuoteContainer = styled.div<{ disabled: boolean }>`
-  display:  ${({ disabled }) => disabled ? 'none': 'flex'};
+  display: ${({ disabled }) => (disabled ? 'none' : 'flex')};
   padding-bottom: 13px;
 `;
 
