@@ -18,20 +18,16 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
               return (
                 <KeyFactTextLink
                   key={key}
-                  onClick={() => {
-                    if (fireAnalyticsEvent) {
-                      console.log("fireAnalyticsEvent");
-                      fireAnalyticsEvent({
-                        action: "Clicked",
-                        attrs: {
-                          event_navigation_name: `button : key moments`,
-                          event_navigation_browsing_method: "click"
-                        }
-                      });
-                    } else {
-                      console.log("no fireAnalyticsEvent");
-                    }
-                  }}
+                  onClick={() =>
+                    fireAnalyticsEvent &&
+                    fireAnalyticsEvent({
+                      action: "Clicked",
+                      attrs: {
+                        event_navigation_name: `button : key moments`,
+                        event_navigation_browsing_method: "click"
+                      }
+                    })
+                  }
                   href={url}
                 >
                   {renderedChildren}

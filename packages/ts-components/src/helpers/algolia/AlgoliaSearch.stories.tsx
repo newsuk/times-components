@@ -18,16 +18,13 @@ const App = () => {
 
   const [results, setResults] = useState<SearchRelatedArticlesResult | null>();
 
-  useEffect(
-    () => {
-      // tslint:disable-next-line:no-console
-      console.log('article.,getRelatedArticles', getRelatedArticles);
-      if (getRelatedArticles) {
-        getRelatedArticles().then(searchResults => setResults(searchResults));
-      }
-    },
-    [getRelatedArticles]
-  );
+  useEffect(() => {
+    // tslint:disable-next-line:no-console
+    console.log('article.,getRelatedArticles', getRelatedArticles);
+    if (getRelatedArticles) {
+      getRelatedArticles().then(searchResults => setResults(searchResults));
+    }
+  }, [getRelatedArticles]);
 
   const relatedArticles: RelatedArticleType[] = results
     ? results.items.map(result => ({

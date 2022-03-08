@@ -37,20 +37,17 @@ export const AlgoliaSearchProvider: FC<AlgoliaSearchProps> = ({
     algoliaSearchKeys
   ]);
 
-  const getRelatedArticles = useCallback(
-    async () => {
-      if (algoliaIndex && article) {
-        const results = await searchRelatedArticles(
-          algoliaIndex,
-          article,
-          analyticsStream
-        );
-        return results;
-      }
-      return null;
-    },
-    [algoliaIndex, article]
-  );
+  const getRelatedArticles = useCallback(async () => {
+    if (algoliaIndex && article) {
+      const results = await searchRelatedArticles(
+        algoliaIndex,
+        article,
+        analyticsStream
+      );
+      return results;
+    }
+    return null;
+  }, [algoliaIndex, article]);
 
   return (
     <AlgoliaSearchContext.Provider value={{ getRelatedArticles }}>
