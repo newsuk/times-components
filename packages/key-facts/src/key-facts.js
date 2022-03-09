@@ -28,6 +28,7 @@ const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
         }
       }}
       scrolledEvent={{
+        action: "Scrolled",
         attrs: {
           event_navigation_name: "in-article component displayed : key moments",
           event_navigation_browsing_method: "scroll"
