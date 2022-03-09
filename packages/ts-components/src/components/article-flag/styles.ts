@@ -17,7 +17,7 @@ export const LiveFlagAndTimestampContainer = styled.div`
 
 export const LiveArticleFlagContainer = styled.div`
   display: flex;
-  padding: 2px 8px 1.5px 10px;
+  padding: 2px 7px 1px 9px;
   background-color: #9f0000;
   align-items: center;
 `;
@@ -30,7 +30,7 @@ export const ArticleFlagBullet = styled.div`
 `;
 
 export const LiveIconContainer = styled.div`
-  margin-right: 8px;
+  margin-right: 7px;
   color: #ffffff;
   font-size: 18px;
   align-self: self-start;
