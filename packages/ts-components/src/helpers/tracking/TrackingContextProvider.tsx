@@ -51,7 +51,7 @@ export const TrackingContextProvider = ({
   const parentTrackingContext = useContext(TrackingContext);
   // tslint:disable-next-line:no-console
   console.log('TC log: TCP: parent=', parentTrackingContext.context);
-  
+
   const stream =
     analyticsStream !== undefined
       ? analyticsStream
