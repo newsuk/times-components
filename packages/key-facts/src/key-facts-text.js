@@ -25,8 +25,7 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
                         attrs: {
                           event_navigation_name:
                             "in-article component clicked : key moments",
-                          event_navigation_browsing_method: "click",
-                          article_name: renderedChildren
+                          event_navigation_browsing_method: "click"
                         }
                       });
                     }
