@@ -46,7 +46,7 @@ export const TrackingContextProvider = ({
   scrolledEvent
 }: TrackingContextProps & TrackingContextChildren) => {
   // tslint:disable-next-line:no-console
-  console.log('TC log: TCP: ==========', );
+  console.log('TC log: TCP: ==========');
 
   const parentTrackingContext = useContext(TrackingContext);
   // tslint:disable-next-line:no-console
