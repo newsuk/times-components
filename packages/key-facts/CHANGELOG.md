@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.7](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.6...@times-components/key-facts@2.2.7) (2022-03-09)
+
+
+### Bug Fixes
+
+* **TDP-000:** key moments analytics clean up ([#2875](https://github.com/newsuk/times-components/issues/2875)) ([4405463](https://github.com/newsuk/times-components/commit/4405463104fc04b3dabe40fd0b220f7c6910f7fd))
+
+
+
+
+
+## [2.2.6](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.5...@times-components/key-facts@2.2.6) (2022-03-09)
+
+
+### Bug Fixes
+
+* **TDP-000:** key moments analytics ([#2874](https://github.com/newsuk/times-components/issues/2874)) ([aa9af8e](https://github.com/newsuk/times-components/commit/aa9af8e3041da5984c9ecf7a9f1c21fbf3e8ac51))
+
+
+
+
+
+## [2.2.5](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.4...@times-components/key-facts@2.2.5) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.2.4](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.3...@times-components/key-facts@2.2.4) (2022-03-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
 ## [2.2.3](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.2...@times-components/key-facts@2.2.3) (2022-03-04)
 
 **Note:** Version bump only for package @times-components/key-facts
