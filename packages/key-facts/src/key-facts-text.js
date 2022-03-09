@@ -4,14 +4,8 @@ import coreRenderers from "@times-components/markup";
 import props from "./key-facts-text-prop-types";
 import { Text, KeyFactTextLink, BulletContainer, Bullet } from "./styles";
 
-const KeyFactsText = ({
-  keyFactItem,
-  listIndex,
-  intersectObserverRef,
-  analyticsData,
-  fireAnalyticsEvent
-}) => (
-  <BulletContainer key={`key-facts-${listIndex}`} ref={intersectObserverRef}>
+const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
+  <BulletContainer key={`key-facts-${listIndex}`}>
     <Bullet />
     <Text>
       {keyFactItem.children.map((data, listItemIndex) =>
@@ -24,17 +18,18 @@ const KeyFactsText = ({
               return (
                 <KeyFactTextLink
                   key={key}
-                  onClick={() =>
-                    fireAnalyticsEvent &&
-                    fireAnalyticsEvent({
-                      action: "Clicked",
-                      ...analyticsData.events,
-                      event_navigation_browsing_method: "click",
-                      attrs: {
-                        ...analyticsData.attrs
-                      }
-                    })
-                  }
+                  onClick={() => {
+                    if (fireAnalyticsEvent) {
+                      fireAnalyticsEvent({
+                        action: "Clicked",
+                        attrs: {
+                          event_navigation_name:
+                            "in-article component clicked : key moments",
+                          event_navigation_browsing_method: "click"
+                        }
+                      });
+                    }
+                  }}
                   href={url}
                 >
                   {renderedChildren}

@@ -43,26 +43,26 @@ const scrollEvent = {
   }
 };
 
-const clickEvent = (buttonLabel: string, isLiveOrBreakingFlag?: string) => ({
+const clickEvent = (buttonLabel: string, isLiveOrBreaking?: string) => ({
   action: 'Clicked',
   attrs: {
     event_navigation_name: `button : ${buttonLabel}`,
     event_navigation_browsing_method: 'click',
-    other_details: isLiveOrBreakingFlag
+    other_details: isLiveOrBreaking
   }
 });
 
 export const InArticlePuff: React.FC<{
   sectionColour: string;
   forceImageAspectRatio?: AspectRatios;
-  isLiveOrBreakingFlag?: string;
-}> = ({ sectionColour, forceImageAspectRatio, isLiveOrBreakingFlag }) => {
+  isLiveOrBreaking?: string;
+}> = ({ sectionColour, forceImageAspectRatio, isLiveOrBreaking }) => {
   const handleClick = (
     fireAnalyticsEvent: (evt: TrackingContext) => void,
     buttonLabel: string
   ) => {
     fireAnalyticsEvent &&
-      fireAnalyticsEvent(clickEvent(buttonLabel, isLiveOrBreakingFlag));
+      fireAnalyticsEvent(clickEvent(buttonLabel, isLiveOrBreaking));
   };
 
   const { loading, error, data } = useFetch<InArticlePuffDeckData>();
@@ -98,7 +98,7 @@ export const InArticlePuff: React.FC<{
           component_type: 'in-article component : puff : interactive',
           event_navigation_action: 'navigation',
           component_name: `${headline}`,
-          other_details: isLiveOrBreakingFlag
+          other_details: isLiveOrBreaking
         }
       }}
       scrolledEvent={scrollEvent}
