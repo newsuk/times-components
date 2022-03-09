@@ -19,11 +19,12 @@ const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
       context={{
         object: "KeyMoments",
         attrs: {
-          component_type: "in-article component: key moments: static",
+          component_type: "in-article component: key moments: interactive",
           event_navigation_action: "navigation",
-          section_details: `${section}`,
-          component_name: `${headline}`,
-          other_details: `${isLiveOrBreaking}`
+          component_name: title,
+          section_details: `section : ${section}`,
+          article_parent_name: headline,
+          other_details: isLiveOrBreaking
         }
       }}
       scrolledEvent={{
