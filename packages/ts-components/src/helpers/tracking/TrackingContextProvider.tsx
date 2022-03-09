@@ -45,34 +45,20 @@ export const TrackingContextProvider = ({
   context,
   scrolledEvent
 }: TrackingContextProps & TrackingContextChildren) => {
-  // tslint:disable-next-line:no-console
-  console.log('TC log: TCP: ==========');
-
   const parentTrackingContext = useContext(TrackingContext);
-  // tslint:disable-next-line:no-console
-  console.log('TC log: TCP: parent=', parentTrackingContext.context);
-
   const stream =
     analyticsStream !== undefined
       ? analyticsStream
       : parentTrackingContext.analyticsStream;
 
   const aggregatedContext = merge({}, parentTrackingContext.context, context);
-  // tslint:disable-next-line:no-console
-  console.log('TC log: TCP: aggregated=', aggregatedContext);
 
   const fireAnalyticsEvent = (event: TrackingContext) => {
-    // tslint:disable-next-line:no-console
-    console.log('TC log: TCP: fireEvent=', event);
-
     const aggregatedEvent = merge({}, aggregatedContext, event, {
       attrs: {
         eventTime: new Date().toISOString()
       }
     });
-
-    // tslint:disable-next-line:no-console
-    console.log('TC log: TCP: fireAggregated=', aggregatedEvent);
 
     stream
       ? stream(aggregatedEvent)

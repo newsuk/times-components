@@ -90,7 +90,7 @@ describe("Key moments", () => {
     expect(wrapper.find("Example title"));
   });
 
-  xit("should fire analytics when the component comes into view and a link is clicked", () => {
+  it("should fire analytics when the component comes into view and a link is clicked", () => {
     const wrapper = mount(
       <TrackingContextProvider
         context={{
@@ -115,34 +115,35 @@ describe("Key moments", () => {
     expect(analyticsStream.mock.calls[0][0]).toEqual({
       component: "ArticleSkeleton",
       attrs: {
-        component_type: "In-article component: key moments: static",
+        component_type: "in-article component: key moments: interactive",
         component_name: "Example title",
-        section_details: "news",
+        section_details: "section : news",
+        event_navigation_name: "in-article component displayed : key moments",
+        event_navigation_action: "navigation",
+        event_navigation_browsing_method: "scroll",
         article_parent_name: "some headline",
         other_details: "breaking",
         eventTime: "2021-05-03T00:00:00.000Z"
       },
       action: "Scrolled",
-      object: "KeyMoments",
-      event_navigation_name: "In-article component displayed: key moments",
-      event_navigation_action: "navigation",
-      event_navigation_browsing_method: "scroll"
+      object: "KeyMoments"
     });
 
     expect(analyticsStream.mock.calls[1][0]).toEqual({
       component: "ArticleSkeleton",
       attrs: {
-        component_type: "In-article component: key moments: static",
+        component_type: "in-article component: key moments: interactive",
         component_name: "Example title",
-        section_details: "news",
+        section_details: "section : news",
+        event_navigation_name: "in-article component clicked : key moments",
+        event_navigation_action: "navigation",
+        event_navigation_browsing_method: "click",
         article_parent_name: "some headline",
         other_details: "breaking",
         eventTime: "2021-05-03T00:00:00.000Z"
       },
       action: "Clicked",
-      event_navigation_name: "In-article component displayed: key moments",
-      event_navigation_action: "navigation",
-      event_navigation_browsing_method: "click"
+      object: "KeyMoments"
     });
   });
 });
