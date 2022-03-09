@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.22.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.22.1...@times-components/ts-components@1.22.2) (2022-03-09)
+
+
+### Bug Fixes
+
+* **TDP-000:** key moments analytics ([#2874](https://github.com/newsuk/times-components/issues/2874)) ([aa9af8e](https://github.com/newsuk/times-components/commit/aa9af8e3041da5984c9ecf7a9f1c21fbf3e8ac51))
+
+
+
+
+
 ## [1.22.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.22.0...@times-components/ts-components@1.22.1) (2022-03-09)
 
 **Note:** Version bump only for package @times-components/ts-components
