@@ -15,12 +15,11 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
             ...coreRenderers,
             link(key, attributes, renderedChildren) {
               const { href: url } = attributes;
-              const title = data.children[0].attributes.value
+              const title = data.children[0].attributes.value;
               return (
                 <KeyFactTextLink
                   key={key}
                   onClick={() => {
-            
                     if (fireAnalyticsEvent) {
                       fireAnalyticsEvent({
                         action: "Clicked",
@@ -45,7 +44,7 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
       )}
     </Text>
   </BulletContainer>
-)
+);
 
 KeyFactsText.propTypes = props;
 
