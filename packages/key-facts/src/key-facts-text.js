@@ -15,17 +15,20 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
             ...coreRenderers,
             link(key, attributes, renderedChildren) {
               const { href: url } = attributes;
+              const title = data.children[0].attributes.value
               return (
                 <KeyFactTextLink
                   key={key}
                   onClick={() => {
+            
                     if (fireAnalyticsEvent) {
                       fireAnalyticsEvent({
                         action: "Clicked",
                         attrs: {
                           event_navigation_name:
                             "in-article component clicked : key moments",
-                          event_navigation_browsing_method: "click"
+                          event_navigation_browsing_method: "click",
+                          article_name: title
                         }
                       });
                     }
@@ -42,7 +45,7 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
       )}
     </Text>
   </BulletContainer>
-);
+)
 
 KeyFactsText.propTypes = props;
 
