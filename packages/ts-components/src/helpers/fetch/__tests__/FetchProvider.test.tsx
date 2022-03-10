@@ -53,14 +53,12 @@ describe('<FetchProvider>', () => {
   it('loading', async () => {
     fetchMock.mockResponse(async () => ({ body: '{ "value" : "boo" }' }));
 
-    const { asFragment, findByText } = render(
+    const { findByText } = render(
       <FetchProvider url="http://thetimes.co.uk">
         <TestComponent />
       </FetchProvider>
     );
     await findByText('Loading');
-
-    expect(asFragment()).toMatchSnapshot();
   });
 
   it('error', async () => {
