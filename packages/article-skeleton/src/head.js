@@ -132,55 +132,59 @@ const getThumbnailUrl = article => {
 
 const getLiveBlogUpdates = (article, publisher, author) => {
   const updates = [];
-  let update;
+  if (article === null) {
+    return updates;
+  }
+  const { content } = article;
 
-  for (let i = 0; i < article.content.length; i += 1) {
-    if (article.content[i].name === "interactive") {
-      if (article.content[i].attributes.element.value === "article-header") {
+  if (content !== undefined) {
+    let update;
+    for (let i = 0; i < content.length; i += 1) {
+      if (content[i].name === "interactive") {
+        if (content[i].attributes.element.value === "article-header") {
+          if (update !== undefined) {
+            updates.push(update);
+          }
+          const { attributes } = content[i].attributes.element;
+          update = {
+            "@type": "BlogPosting",
+            headline: attributes.headline,
+            datePublished: attributes.updated,
+            publisher,
+            url: `${article.url}#u_${window.btoa(attributes.updated)}`,
+            author
+          };
+        }
+      } else if (content[i].name === "paragraph") {
         if (update !== undefined) {
-          updates.push(update);
+          const updateText = `${content[i].children[0].attributes.value} `;
+          if (update.articleBody) {
+            update.articleBody += updateText;
+          } else {
+            update.articleBody = updateText;
+          }
         }
-        const { attributes } = article.content[i].attributes.element;
-        update = {
-          "@type": "BlogPosting",
-          headline: attributes.headline,
-          datePublished: attributes.updated,
-          publisher,
-          url: `${article.url}#u_${window.btoa(attributes.updated)}`,
-          author
-        };
-      }
-    } else if (article.content[i].name === "paragraph") {
-      if (update !== undefined) {
-        const updateText = `${
-          article.content[i].children[0].attributes.value
-        } `;
-        if (update.articleBody) {
-          update.articleBody += updateText;
-        } else {
-          update.articleBody = updateText;
+      } else if (content[i].name === "image") {
+        if (update !== undefined) {
+          update.image = {
+            "@type": "ImageObject",
+            url: content[i].attributes.url,
+            caption: content[i].attributes.caption
+          };
         }
-      }
-    } else if (article.content[i].name === "image") {
-      if (update !== undefined) {
-        update.image = {
-          "@type": "ImageObject",
-          url: article.content[i].attributes.url,
-          caption: article.content[i].attributes.caption
-        };
-      }
-    } else if (article.content[i].name === "video") {
-      if (update !== undefined) {
-        update.video = {
-          "@type": "VideoObject",
-          thumbnail: article.content[i].attributes.posterImageUrl
-        };
+      } else if (content[i].name === "video") {
+        if (update !== undefined) {
+          update.video = {
+            "@type": "VideoObject",
+            thumbnail: content[i].attributes.posterImageUrl
+          };
+        }
       }
     }
-  }
 
-  if (update !== undefined) {
-    updates.push(update);
+    if (update !== undefined) {
+      updates.push(update);
+    }
   }
 
   return updates;
@@ -248,6 +252,11 @@ function Head({
       url: logoUrl
     }
   };
+  const liveBlogUpdateSchema = getLiveBlogUpdates(
+    article,
+    publisherSchema,
+    authorSchema
+  );
 
   const jsonLD = {
     "@context": "https://schema.org",
@@ -325,7 +334,7 @@ function Head({
     },
     publisher: publisherSchema,
     author: authorSchema,
-    liveBlogUpdate: getLiveBlogUpdates(article, publisherSchema, authorSchema)
+    liveBlogUpdate: liveBlogUpdateSchema
   };
   return (
     <Context.Consumer>
