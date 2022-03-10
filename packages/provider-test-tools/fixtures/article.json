@@ -554,6 +554,21 @@
   ],
   "content": [
     {
+      "attributes": {
+        "id": "1234567890-1234567890",
+        "element": {
+          "value": "article-header",
+          "attributes": {
+            "updated": "2022-03-03T03:33:00Z",
+            "breaking": "true",
+            "headline": "Main headline update for live blog"
+          }
+        }
+      },
+      "name": "interactive",
+      "children": []
+    },
+    {
       "name": "interactive",
       "attributes": {
         "id": "e7c8c3ca-eaa7-433f-9668-417cb91a8a28",
@@ -638,21 +653,6 @@
       ]
     },
     {
-      "name": "image",
-      "attributes": {
-        "display": "secondary",
-        "caption": "Iron man: Thomas at home",
-        "credits": "GARETH PHILLIPS",
-        "ratio": "1200:1500",
-        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fea2622be-a79f-11e8-b7c2-058fb57c563b.jpg?crop=1300%2C1625%2C0%2C0",
-        "relativeHeight": 0.4,
-        "relativeHorizontalOffset": 0.16666666666666666,
-        "relativeVerticalOffset": 0.2,
-        "relativeWidth": 0.5
-      },
-      "children": []
-    },
-    {
       "name": "paragraph",
       "attributes": {},
       "children": [
@@ -689,6 +689,21 @@
         }
       },
       "name": "interactive",
+      "children": []
+    },
+    {
+      "name": "image",
+      "attributes": {
+        "display": "secondary",
+        "caption": "Iron man: Thomas at home",
+        "credits": "GARETH PHILLIPS",
+        "ratio": "1200:1500",
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fea2622be-a79f-11e8-b7c2-058fb57c563b.jpg?crop=1300%2C1625%2C0%2C0",
+        "relativeHeight": 0.4,
+        "relativeHorizontalOffset": 0.16666666666666666,
+        "relativeVerticalOffset": 0.2,
+        "relativeWidth": 0.5
+      },
       "children": []
     },
     {
@@ -734,6 +749,21 @@
           "children": []
         }
       ]
+    },
+    {
+      "attributes": {
+        "id": "1234567890-1234567890",
+        "element": {
+          "value": "article-header",
+          "attributes": {
+            "updated": "2022-01-01T05:30:00Z",
+            "breaking": "true",
+            "headline": "This%20is%20another%20headline%20for%20liveBlog"
+          }
+        }
+      },
+      "name": "interactive",
+      "children": []
     },
     {
       "name": "paragraph",

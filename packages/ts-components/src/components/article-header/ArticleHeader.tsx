@@ -38,13 +38,13 @@ const ArticleHeader: React.FC<{
   const isLessThan1Hour = diffInSeconds < 60 * 60;
   const isLessThan13Hours = diffInSeconds < 60 * 60 * 13;
   const isDaysAgo = differenceInCalendarDays(currentDateTime, updatedDate) >= 1;
-
+  const anchorPoint = `u_${window.btoa(updated)}`;
   const isBreaking = breaking
     ? Boolean(breaking.toLowerCase() === 'true')
     : false;
 
   return (
-    <Container isBreaking={isBreaking && isLessThan1Hour}>
+    <Container isBreaking={isBreaking && isLessThan1Hour} id={anchorPoint}>
       <UpdatesContainer>
         <UpdatedTimeItems>
           {isBreaking && isLessThan1Hour ? (
