@@ -4,6 +4,14 @@ import coreRenderers from "@times-components/markup";
 import props from "./key-facts-text-prop-types";
 import { Text, KeyFactTextLink, BulletContainer, Bullet } from "./styles";
 
+const getTitle = data => {
+  if (data.children.length === 1) return data.children[0].attributes.value;
+
+  const linkText = data.children.map(child => child.attributes.value);
+  const title = linkText.join(" ");
+  return title.lenghth > 0 ? title : " ";
+};
+
 const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
   <BulletContainer key={`key-facts-${listIndex}`}>
     <Bullet />
@@ -15,7 +23,8 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
             ...coreRenderers,
             link(key, attributes, renderedChildren) {
               const { href: url } = attributes;
-              const title = data.children[0].attributes.value || " ";
+              const title = getTitle(data);
+
               return (
                 <KeyFactTextLink
                   key={key}
