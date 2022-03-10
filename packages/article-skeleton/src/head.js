@@ -130,6 +130,62 @@ const getThumbnailUrl = article => {
   return crop ? crop.url : "";
 };
 
+const getLiveBlogUpdates = (article, publisher, author) => {
+  const updates = [];
+  let update;
+
+  for (let i = 0; i < article.content.length; i += 1) {
+    if (article.content[i].name === "interactive") {
+      if (article.content[i].attributes.element.value === "article-header") {
+        if (update !== undefined) {
+          updates.push(update);
+        }
+        const { attributes } = article.content[i].attributes.element;
+        update = {
+          "@type": "BlogPosting",
+          headline: attributes.headline,
+          datePublished: attributes.updated,
+          publisher,
+          url: `${article.url}#u_${window.btoa(attributes.updated)}`,
+          author
+        };
+      }
+    } else if (article.content[i].name === "paragraph") {
+      if (update !== undefined) {
+        const updateText = `${
+          article.content[i].children[0].attributes.value
+        } `;
+        if (update.articleBody) {
+          update.articleBody += updateText;
+        } else {
+          update.articleBody = updateText;
+        }
+      }
+    } else if (article.content[i].name === "image") {
+      if (update !== undefined) {
+        update.image = {
+          "@type": "ImageObject",
+          url: article.content[i].attributes.url,
+          caption: article.content[i].attributes.caption
+        };
+      }
+    } else if (article.content[i].name === "video") {
+      if (update !== undefined) {
+        update.video = {
+          "@type": "VideoObject",
+          thumbnail: article.content[i].attributes.posterImageUrl
+        };
+      }
+    }
+  }
+
+  if (update !== undefined) {
+    updates.push(update);
+  }
+
+  return updates;
+};
+
 function Head({
   article,
   logoUrl,
@@ -184,6 +240,14 @@ function Head({
   const authorSchema =
     (authors && authors.length ? authors : textByLineAuthorSchema) ||
     defaultAuthorSchema;
+  const publisherSchema = {
+    "@type": "Organization",
+    name: publication,
+    logo: {
+      "@type": "ImageObject",
+      url: logoUrl
+    }
+  };
 
   const jsonLD = {
     "@context": "https://schema.org",
@@ -259,27 +323,9 @@ function Head({
       url: leadassetUrl,
       caption
     },
-    publisher: {
-      "@type": "Organization",
-      name: publication,
-      logo: {
-        "@type": "ImageObject",
-        url: logoUrl
-      }
-    },
-    author: authorSchema
-    // when the liveBlogUpdate has some real data, then you can use this structure to populate the updates
-    /** * /
-    ,
-    "liveBlogUpdate":[
-      {
-        "type":"BlogPosting",
-        "headline":"This is a headline. The apocalypse is here",
-        "datePublished":"1999-12-31T23:59:59Z",
-        "url": "https://schema.org/LiveBlogPosting"
-      }
-    ]
-    /** */
+    publisher: publisherSchema,
+    author: authorSchema,
+    liveBlogUpdate: getLiveBlogUpdates(article, publisherSchema, authorSchema)
   };
   return (
     <Context.Consumer>
