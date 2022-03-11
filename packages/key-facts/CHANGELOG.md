@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.7...@times-components/key-facts@2.3.0) (2022-03-11)
+
+
+### Features
+
+* **TDP-1139:** fixing article name value ([#2877](https://github.com/newsuk/times-components/issues/2877)) ([7f021a6](https://github.com/newsuk/times-components/commit/7f021a6b355a0f440a2861f751e34f105c05f5b7))
+
+
+
+
+
 ## [2.2.7](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.2.6...@times-components/key-facts@2.2.7) (2022-03-09)
 
 
