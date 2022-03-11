@@ -8,6 +8,7 @@ import {
 import { TrackingContextProvider } from "@times-components/ts-components";
 import mockDate from "mockdate";
 import KeyFacts from "../../src/key-facts";
+import { getTitle } from "../../src/key-facts-text";
 import { KeyFactTextLink } from "../../src/styles";
 import data from "../../fixtures/key-facts-test.json";
 import dataNoTitle from "../../fixtures/key-facts-no-title-test.json";
@@ -147,4 +148,27 @@ describe("Key moments", () => {
       object: "KeyMoments"
     });
   });
+
+  describe("getTitle()", () => {
+    const linkDataChildren = {
+      name: "text",
+      attributes: {
+        value: "a link title"
+      },
+      children: []
+    };
+
+    it("should return a concatenated string when there is more than 1 child element", () => {
+      expect(
+        getTitle({ children: [linkDataChildren, linkDataChildren] })
+      ).toEqual("a link title a link title");
+    });
+
+    it("should return immediately when there is only 1 child element", () => {
+      expect(getTitle({ children: [linkDataChildren] })).toEqual(
+        "a link title"
+      );
+    });
+  });
 });
+

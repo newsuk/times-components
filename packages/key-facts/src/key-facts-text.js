@@ -9,7 +9,7 @@ const getTitle = data => {
 
   const linkText = data.children.map(child => child.attributes.value);
   const title = linkText.join(" ");
-  return title.lenghth > 0 ? title : " ";
+  return title.length > 0 ? title : " ";
 };
 
 const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
@@ -58,3 +58,4 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
 KeyFactsText.propTypes = props;
 
 export default KeyFactsText;
+export { getTitle };
