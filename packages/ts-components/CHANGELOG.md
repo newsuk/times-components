@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.23.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.22.3...@times-components/ts-components@1.23.0) (2022-03-14)
+
+
+### Features
+
+* **TDP-1472:** Small changes to Live/Breaking flag UI  ([#2876](https://github.com/newsuk/times-components/issues/2876)) ([e3871da](https://github.com/newsuk/times-components/commit/e3871da50cd3d8f52911e894418dff1245849234))
+
+
+
+
+
 ## [1.22.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.22.2...@times-components/ts-components@1.22.3) (2022-03-09)
 
 
