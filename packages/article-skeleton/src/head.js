@@ -36,11 +36,7 @@ function getIsLiveBlogExpiryTime(articleFlags = []) {
   let time = "";
   if (articleFlags !== undefined) {
     for (let i = 0; i < articleFlags.length; i += 1) {
-      if (
-        articleFlags[i].type === "LIVE" &&
-        (Date.now() < new Date(articleFlags[i].expiryTime) ||
-          articleFlags[i].expiryTime === null)
-      ) {
+      if (articleFlags[i].type === "LIVE") {
         time = articleFlags[i].expiryTime;
       }
     }
