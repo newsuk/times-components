@@ -32,6 +32,21 @@ function getSectionName(article) {
 
   return nonNews.length ? nonNews[0] : "News";
 }
+function getIsLiveBlogExpiryTime(articleFlags = []) {
+  let time = "";
+  if (articleFlags !== undefined) {
+    for (let i = 0; i < articleFlags.length; i += 1) {
+      if (
+        articleFlags[i].type === "LIVE" &&
+        (Date.now() < new Date(articleFlags[i].expiryTime) ||
+          articleFlags[i].expiryTime === null)
+      ) {
+        time = articleFlags[i].expiryTime;
+      }
+    }
+  }
+  return time;
+}
 function getIsLiveBlog(articleFlags = []) {
   if (articleFlags !== undefined) {
     const articleLiveFlag = articleFlags.find(
@@ -136,51 +151,71 @@ const getLiveBlogUpdates = (article, publisher, author) => {
     return updates;
   }
   const { content } = article;
+  const anchorString = (updateTxt = "", headlineTxt = "") => {
+    const onlyNumbersReg = /\D+/g;
+    const onlyNumbers = updateTxt.replace(onlyNumbersReg, "");
+    const acronymReg = /\b(\w)/g;
+    const acronymMatch = headlineTxt.match(acronymReg);
+    const acronym = acronymMatch === null ? "" : acronymMatch.join("");
+    return `u_${onlyNumbers}${acronym}`;
+  };
 
   if (content !== undefined) {
     let update;
-    for (let i = 0; i < content.length; i += 1) {
-      if (content[i].name === "interactive") {
-        if (content[i].attributes.element.value === "article-header") {
+    const loopContent = contentObj => {
+      for (let i = 0; i < contentObj.length; i += 1) {
+        if (contentObj[i].name === "interactive") {
+          if (contentObj[i].attributes.element.value === "article-header") {
+            if (update !== undefined) {
+              updates.push(update);
+            }
+            const { attributes } = contentObj[i].attributes.element;
+            update = {
+              "@type": "BlogPosting",
+              headline: attributes.headline,
+              datePublished: attributes.updated,
+              publisher,
+              url: `${article.url}#${anchorString(
+                attributes.updated,
+                attributes.headline
+              )}`,
+              author
+            };
+          }
+        } else if (contentObj[i].name === "paragraph") {
           if (update !== undefined) {
-            updates.push(update);
+            const updateText = `${contentObj[i].children[0].attributes.value} `;
+            if (update.articleBody) {
+              update.articleBody += updateText;
+            } else {
+              update.articleBody = updateText;
+            }
           }
-          const { attributes } = content[i].attributes.element;
-          update = {
-            "@type": "BlogPosting",
-            headline: attributes.headline,
-            datePublished: attributes.updated,
-            publisher,
-            url: `${article.url}#u_${window.btoa(attributes.updated)}`,
-            author
-          };
-        }
-      } else if (content[i].name === "paragraph") {
-        if (update !== undefined) {
-          const updateText = `${content[i].children[0].attributes.value} `;
-          if (update.articleBody) {
-            update.articleBody += updateText;
-          } else {
-            update.articleBody = updateText;
+        } else if (contentObj[i].name === "image") {
+          if (update !== undefined) {
+            update.image = {
+              "@type": "ImageObject",
+              url: contentObj[i].attributes.url,
+              caption: contentObj[i].attributes.caption
+            };
           }
-        }
-      } else if (content[i].name === "image") {
-        if (update !== undefined) {
-          update.image = {
-            "@type": "ImageObject",
-            url: content[i].attributes.url,
-            caption: content[i].attributes.caption
-          };
-        }
-      } else if (content[i].name === "video") {
-        if (update !== undefined) {
-          update.video = {
-            "@type": "VideoObject",
-            thumbnail: content[i].attributes.posterImageUrl
-          };
+        } else if (contentObj[i].name === "video") {
+          if (update !== undefined) {
+            update.video = {
+              "@type": "VideoObject",
+              thumbnail: contentObj[i].attributes.posterImageUrl
+            };
+          }
+        } else if (contentObj[i].name === "paywall") {
+          if (contentObj[i].children) {
+            if (contentObj[i].children.length > 0) {
+              loopContent(contentObj[i].children);
+            }
+          }
         }
       }
-    }
+    };
+    loopContent(content);
 
     if (update !== undefined) {
       updates.push(update);
@@ -211,6 +246,7 @@ function Head({
     url
   } = article;
 
+  const liveBlogArticleExpiry = getIsLiveBlogExpiryTime(article.expirableFlags);
   const isLiveBlogArticle = getIsLiveBlog(article.expirableFlags);
   const publication = PUBLICATION_NAMES[publicationName];
   const authorName = getAuthorAsText(article);
@@ -325,6 +361,7 @@ function Head({
     datePublished: publishedTime,
     dateModified: updatedTime,
     coverageStartTime: publishedTime,
+    coverageEndTime: liveBlogArticleExpiry,
     url,
     keywords,
     image: {
