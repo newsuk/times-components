@@ -24,14 +24,6 @@ exports[`<FetchProvider> fetch 1`] = `
 </DocumentFragment>
 `;
 
-exports[`<FetchProvider> loading 1`] = `
-<DocumentFragment>
-  <div>
-    boo
-  </div>
-</DocumentFragment>
-`;
-
 exports[`<FetchProvider> preview 1`] = `
 <DocumentFragment>
   <div>

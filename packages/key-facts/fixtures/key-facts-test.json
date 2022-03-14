@@ -40,7 +40,7 @@
                 {
                   "name": "text",
                   "attributes": {
-                    "value": "link"
+                    "value": "a link title"
                   },
                   "children": []
                 }
