@@ -1,7 +1,21 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { fonts } from '@times-components/styleguide';
 import { FlagType } from './ArticleFlag';
 import { gqlRgbaToStyle } from '@times-components/utils';
+
+const flashing = keyframes`
+
+0% {
+  color: #ffffff;
+  }
+
+  50% {
+    color: #9f0000;
+  }
+
+  100% {
+    color: #ffffff;
+  }`;
 
 export const ArticleFlagContainer = styled.div`
   display: flex;
@@ -28,6 +42,7 @@ export const ArticleFlagBullet = styled.div`
   height: 5px;
   width: 5px;
   background-color: ${({ color }) => gqlRgbaToStyle(color) || color};
+}
 `;
 
 export const LiveIconContainer = styled.div`
@@ -35,6 +50,7 @@ export const LiveIconContainer = styled.div`
   color: #ffffff;
   font-size: 18px;
   align-self: self-end;
+  animation: ${flashing} 2000ms infinite;
 `;
 
 export const ArticleFlagTextContainer = styled.div`
