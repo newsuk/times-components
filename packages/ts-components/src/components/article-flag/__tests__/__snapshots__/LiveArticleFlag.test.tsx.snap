@@ -10,7 +10,7 @@ exports[`LiveArticleFlag should render the base live article flag 1`] = `
         class="sc-htpNat kmRZue"
       >
         <div
-          class="sc-ifAKCX bNYMCq"
+          class="sc-ifAKCX eodDQv"
         >
           ■
         </div>
@@ -37,7 +37,7 @@ exports[`LiveArticleFlag should render the breaking article flag 1`] = `
         class="sc-htpNat kmRZue"
       >
         <div
-          class="sc-ifAKCX bNYMCq"
+          class="sc-ifAKCX eodDQv"
         >
           ■
         </div>
@@ -64,7 +64,7 @@ exports[`LiveArticleFlag should render the live article flag 1`] = `
         class="sc-htpNat kmRZue"
       >
         <div
-          class="sc-ifAKCX bNYMCq"
+          class="sc-ifAKCX eodDQv"
         >
           ■
         </div>
