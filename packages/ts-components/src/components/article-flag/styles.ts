@@ -4,9 +4,8 @@ import { FlagType } from './ArticleFlag';
 import { gqlRgbaToStyle } from '@times-components/utils';
 
 const flashing = keyframes`
-
-0% {
-  color: #ffffff;
+  0% {
+    color: #ffffff;
   }
 
   50% {
