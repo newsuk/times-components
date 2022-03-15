@@ -3,18 +3,48 @@ import { fonts } from '@times-components/styleguide';
 import { FlagType } from './ArticleFlag';
 import { gqlRgbaToStyle } from '@times-components/utils';
 
+export const LiveArticleFlagContainer = styled.div`
+  background-color: #9f0000;
+  height: 24px;
+  padding: 7px 7px 7px 9px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+`;
+
+export const LiveArticleFlagText = styled.span`
+  font-family: ${fonts.supporting};
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+`;
+
 const flashing = keyframes`
   0% {
-    color: #ffffff;
+    background-color: #ffffff;
   }
 
   50% {
-    color: #9f0000;
+   background-color: #9f0000;
   }
 
   100% {
-    color: #ffffff;
+    background-color: #ffffff;
   }`;
+
+export const LiveArticleFlagIconContainer = styled.div`
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+`;
+
+export const LiveArticleFlagIcon = styled.div`
+  height: 6px;
+  width: 6px;
+  animation: ${flashing} 2000ms infinite;
+`;
 
 export const ArticleFlagContainer = styled.div`
   display: flex;
@@ -28,27 +58,11 @@ export const LiveFlagAndTimestampContainer = styled.div`
   flex-direction: row;
 `;
 
-export const LiveArticleFlagContainer = styled.div`
-  display: flex;
-  height: 24px;
-  padding: 2px 7px 1px 9px;
-  background-color: #9f0000;
-  align-items: center;
-`;
-
 export const ArticleFlagBullet = styled.div`
   border-radius: 2.5px;
   height: 5px;
   width: 5px;
   background-color: ${({ color }) => gqlRgbaToStyle(color) || color};
-`;
-
-export const LiveIconContainer = styled.div`
-  margin-right: 7px;
-  color: #ffffff;
-  font-size: 18px;
-  align-self: self-end;
-  animation: ${flashing} 2000ms infinite;
 `;
 
 export const ArticleFlagTextContainer = styled.div`
@@ -59,15 +73,6 @@ export const ArticleFlagTextContainer = styled.div`
   line-height: 12px;
   margin-left: 5px;
   color: ${({ color }) => gqlRgbaToStyle(color) || color};
-`;
-
-export const LiveArticleFlagText = styled.span`
-  font-family: ${fonts.supporting};
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  line-height: 16px;
 `;
 
 export const FlagPadding = styled.div<{ allFlags: FlagType }>`
