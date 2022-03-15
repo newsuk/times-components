@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.24.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.23.0...@times-components/ts-components@1.24.0) (2022-03-15)
+
+
+### Features
+
+* **TDP-756:** live flag animation ([#2879](https://github.com/newsuk/times-components/issues/2879)) ([110ff58](https://github.com/newsuk/times-components/commit/110ff58ff303ebb5ba7786ed73fa779bfabcc2a3))
+
+
+
+
+
 # [1.23.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.22.3...@times-components/ts-components@1.23.0) (2022-03-14)
 
 
