@@ -42,7 +42,6 @@ export const ArticleFlagBullet = styled.div`
   height: 5px;
   width: 5px;
   background-color: ${({ color }) => gqlRgbaToStyle(color) || color};
-}
 `;
 
 export const LiveIconContainer = styled.div`
