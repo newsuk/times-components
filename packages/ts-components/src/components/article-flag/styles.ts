@@ -1,7 +1,20 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { fonts } from '@times-components/styleguide';
 import { FlagType } from './ArticleFlag';
 import { gqlRgbaToStyle } from '@times-components/utils';
+
+const flashing = keyframes`
+  0% {
+    color: #ffffff;
+  }
+
+  50% {
+    color: #9f0000;
+  }
+
+  100% {
+    color: #ffffff;
+  }`;
 
 export const ArticleFlagContainer = styled.div`
   display: flex;
@@ -17,9 +30,10 @@ export const LiveFlagAndTimestampContainer = styled.div`
 
 export const LiveArticleFlagContainer = styled.div`
   display: flex;
-  padding: 2px 6px;
+  height: 24px;
+  padding: 2px 7px 1px 9px;
   background-color: #9f0000;
-  align-items: baseline;
+  align-items: center;
 `;
 
 export const ArticleFlagBullet = styled.div`
@@ -30,9 +44,11 @@ export const ArticleFlagBullet = styled.div`
 `;
 
 export const LiveIconContainer = styled.div`
-  margin-right: 8px;
+  margin-right: 7px;
   color: #ffffff;
-  align-self: self-start;
+  font-size: 18px;
+  align-self: self-end;
+  animation: ${flashing} 2000ms infinite;
 `;
 
 export const ArticleFlagTextContainer = styled.div`

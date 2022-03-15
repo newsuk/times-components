@@ -8,6 +8,7 @@ import {
 import { TrackingContextProvider } from "@times-components/ts-components";
 import mockDate from "mockdate";
 import KeyFacts from "../../src/key-facts";
+import { getTitle } from "../../src/key-facts-text";
 import { KeyFactTextLink } from "../../src/styles";
 import data from "../../fixtures/key-facts-test.json";
 import dataNoTitle from "../../fixtures/key-facts-no-title-test.json";
@@ -115,34 +116,58 @@ describe("Key moments", () => {
     expect(analyticsStream.mock.calls[0][0]).toEqual({
       component: "ArticleSkeleton",
       attrs: {
-        component_type: "In-article component: key moments: static",
+        component_type: "in-article component: key moments: interactive",
         component_name: "Example title",
-        section_details: "news",
+        section_details: "section : news",
+        event_navigation_name: "in-article component displayed : key moments",
+        event_navigation_action: "navigation",
+        event_navigation_browsing_method: "scroll",
         article_parent_name: "some headline",
         other_details: "breaking",
         eventTime: "2021-05-03T00:00:00.000Z"
       },
       action: "Scrolled",
-      object: "KeyMoments",
-      event_navigation_name: "In-article component displayed: key moments",
-      event_navigation_action: "navigation",
-      event_navigation_browsing_method: "scroll"
+      object: "KeyMoments"
     });
 
     expect(analyticsStream.mock.calls[1][0]).toEqual({
       component: "ArticleSkeleton",
       attrs: {
-        component_type: "In-article component: key moments: static",
+        component_type: "in-article component: key moments: interactive",
         component_name: "Example title",
-        section_details: "news",
+        section_details: "section : news",
+        event_navigation_name: "in-article component clicked : key moments",
+        event_navigation_action: "navigation",
+        event_navigation_browsing_method: "click",
+        article_name: "a link title",
         article_parent_name: "some headline",
         other_details: "breaking",
         eventTime: "2021-05-03T00:00:00.000Z"
       },
       action: "Clicked",
-      event_navigation_name: "In-article component displayed: key moments",
-      event_navigation_action: "navigation",
-      event_navigation_browsing_method: "click"
+      object: "KeyMoments"
+    });
+  });
+
+  describe("getTitle()", () => {
+    const linkDataChildren = {
+      name: "text",
+      attributes: {
+        value: "a link title"
+      },
+      children: []
+    };
+
+    it("should return a concatenated string when there is more than 1 child element", () => {
+      expect(
+        getTitle({ children: [linkDataChildren, linkDataChildren] })
+      ).toEqual("a link title a link title");
+    });
+
+    it("should return immediately when there is only 1 child element", () => {
+      expect(getTitle({ children: [linkDataChildren] })).toEqual(
+        "a link title"
+      );
     });
   });
 });

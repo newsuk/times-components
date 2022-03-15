@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.105.17](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.105.16...@times-components/edition-slices@0.105.17) (2022-03-15)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.105.16](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.105.15...@times-components/edition-slices@0.105.16) (2022-03-14)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.105.15](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.105.14...@times-components/edition-slices@0.105.15) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.105.14](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.105.13...@times-components/edition-slices@0.105.14) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.105.13](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.105.12...@times-components/edition-slices@0.105.13) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
 ## [0.105.12](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.105.11...@times-components/edition-slices@0.105.12) (2022-03-02)
 
 **Note:** Version bump only for package @times-components/edition-slices

@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.24.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.23.0...@times-components/ts-components@1.24.0) (2022-03-15)
+
+
+### Features
+
+* **TDP-756:** live flag animation ([#2879](https://github.com/newsuk/times-components/issues/2879)) ([110ff58](https://github.com/newsuk/times-components/commit/110ff58ff303ebb5ba7786ed73fa779bfabcc2a3))
+
+
+
+
+
+# [1.23.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.22.3...@times-components/ts-components@1.23.0) (2022-03-14)
+
+
+### Features
+
+* **TDP-1472:** Small changes to Live/Breaking flag UI  ([#2876](https://github.com/newsuk/times-components/issues/2876)) ([e3871da](https://github.com/newsuk/times-components/commit/e3871da50cd3d8f52911e894418dff1245849234))
+
+
+
+
+
+## [1.22.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.22.2...@times-components/ts-components@1.22.3) (2022-03-09)
+
+
+### Bug Fixes
+
+* **TDP-000:** key moments analytics clean up ([#2875](https://github.com/newsuk/times-components/issues/2875)) ([4405463](https://github.com/newsuk/times-components/commit/4405463104fc04b3dabe40fd0b220f7c6910f7fd))
+
+
+
+
+
+## [1.22.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.22.1...@times-components/ts-components@1.22.2) (2022-03-09)
+
+
+### Bug Fixes
+
+* **TDP-000:** key moments analytics ([#2874](https://github.com/newsuk/times-components/issues/2874)) ([aa9af8e](https://github.com/newsuk/times-components/commit/aa9af8e3041da5984c9ecf7a9f1c21fbf3e8ac51))
+
+
+
+
+
+## [1.22.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.22.0...@times-components/ts-components@1.22.1) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
 # [1.22.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.21.0...@times-components/ts-components@1.22.0) (2022-03-02)
 
 
