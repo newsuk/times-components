@@ -18,7 +18,7 @@ export const BaseLiveArticleFlag: React.FC<{ title: string }> = ({ title }) => {
         <LiveArticleFlagIconContainer>
           <LiveArticleFlagIcon />
         </LiveArticleFlagIconContainer>
-          <LiveArticleFlagText>{title}</LiveArticleFlagText>
+        <LiveArticleFlagText>{title}</LiveArticleFlagText>
       </LiveArticleFlagContainer>
       <UpdatedTimestamp updatedTime={updatedTime} />
     </LiveFlagAndTimestampContainer>

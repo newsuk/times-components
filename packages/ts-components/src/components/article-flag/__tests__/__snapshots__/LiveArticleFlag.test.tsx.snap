@@ -4,23 +4,23 @@ exports[`LiveArticleFlag should render the base live article flag 1`] = `
 <body>
   <div>
     <div
-      class="sc-bwzfXH lfBIaS"
+      class="sc-EHOje cfBXHC"
     >
       <div
-        class="sc-htpNat kmRZue"
+        class="sc-bdVaJa bkSKmo"
       >
         <div
-          class="sc-ifAKCX eodDQv"
+          class="sc-htpNat jcRSar"
         >
-          ■
+          <div
+            class="sc-bxivhb hTEbzV"
+          />
         </div>
-        <div>
-          <span
-            class="sc-bZQynM fRMWFX"
-          >
-            BASE
-          </span>
-        </div>
+        <span
+          class="sc-bwzfXH hBgZUv"
+        >
+          BASE
+        </span>
       </div>
     </div>
   </div>
@@ -31,23 +31,23 @@ exports[`LiveArticleFlag should render the breaking article flag 1`] = `
 <body>
   <div>
     <div
-      class="sc-bwzfXH lfBIaS"
+      class="sc-EHOje cfBXHC"
     >
       <div
-        class="sc-htpNat kmRZue"
+        class="sc-bdVaJa bkSKmo"
       >
         <div
-          class="sc-ifAKCX eodDQv"
+          class="sc-htpNat jcRSar"
         >
-          ■
+          <div
+            class="sc-bxivhb hTEbzV"
+          />
         </div>
-        <div>
-          <span
-            class="sc-bZQynM fRMWFX"
-          >
-            BREAKING
-          </span>
-        </div>
+        <span
+          class="sc-bwzfXH hBgZUv"
+        >
+          BREAKING
+        </span>
       </div>
     </div>
   </div>
@@ -58,23 +58,23 @@ exports[`LiveArticleFlag should render the live article flag 1`] = `
 <body>
   <div>
     <div
-      class="sc-bwzfXH lfBIaS"
+      class="sc-EHOje cfBXHC"
     >
       <div
-        class="sc-htpNat kmRZue"
+        class="sc-bdVaJa bkSKmo"
       >
         <div
-          class="sc-ifAKCX eodDQv"
+          class="sc-htpNat jcRSar"
         >
-          ■
+          <div
+            class="sc-bxivhb hTEbzV"
+          />
         </div>
-        <div>
-          <span
-            class="sc-bZQynM fRMWFX"
-          >
-            LIVE
-          </span>
-        </div>
+        <span
+          class="sc-bwzfXH hBgZUv"
+        >
+          LIVE
+        </span>
       </div>
     </div>
   </div>
