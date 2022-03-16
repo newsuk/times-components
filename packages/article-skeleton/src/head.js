@@ -32,6 +32,17 @@ function getSectionName(article) {
 
   return nonNews.length ? nonNews[0] : "News";
 }
+function getIsLiveBlogExpiryTime(articleFlags = []) {
+  let time = "";
+  if (articleFlags !== undefined) {
+    for (let i = 0; i < articleFlags.length; i += 1) {
+      if (articleFlags[i].type === "LIVE") {
+        time = articleFlags[i].expiryTime;
+      }
+    }
+  }
+  return time;
+}
 function getIsLiveBlog(articleFlags = []) {
   if (articleFlags !== undefined) {
     const articleLiveFlag = articleFlags.find(
@@ -130,6 +141,86 @@ const getThumbnailUrl = article => {
   return crop ? crop.url : "";
 };
 
+const getLiveBlogUpdates = (article, publisher, author) => {
+  const updates = [];
+  if (article === null) {
+    return updates;
+  }
+  const { content } = article;
+  const anchorString = (updateTxt = "", headlineTxt = "") => {
+    const onlyNumbersReg = /\D+/g;
+    const onlyNumbers = updateTxt.replace(onlyNumbersReg, "");
+    const acronymReg = /\b(\w)/g;
+    const acronymMatch = headlineTxt.match(acronymReg);
+    const acronym = acronymMatch === null ? "" : acronymMatch.join("");
+    return `u_${onlyNumbers}${acronym}`;
+  };
+
+  if (content !== undefined) {
+    let update;
+    const loopContent = contentObj => {
+      for (let i = 0; i < contentObj.length; i += 1) {
+        if (contentObj[i].name === "interactive") {
+          if (contentObj[i].attributes.element.value === "article-header") {
+            if (update !== undefined) {
+              updates.push(update);
+            }
+            const { attributes } = contentObj[i].attributes.element;
+            update = {
+              "@type": "BlogPosting",
+              headline: attributes.headline,
+              datePublished: attributes.updated,
+              publisher,
+              url: `${article.url}#${anchorString(
+                attributes.updated,
+                attributes.headline
+              )}`,
+              author
+            };
+          }
+        } else if (contentObj[i].name === "paragraph") {
+          if (update !== undefined) {
+            const updateText = `${contentObj[i].children[0].attributes.value} `;
+            if (update.articleBody) {
+              update.articleBody += updateText;
+            } else {
+              update.articleBody = updateText;
+            }
+          }
+        } else if (contentObj[i].name === "image") {
+          if (update !== undefined) {
+            update.image = {
+              "@type": "ImageObject",
+              url: contentObj[i].attributes.url,
+              caption: contentObj[i].attributes.caption
+            };
+          }
+        } else if (contentObj[i].name === "video") {
+          if (update !== undefined) {
+            update.video = {
+              "@type": "VideoObject",
+              thumbnail: contentObj[i].attributes.posterImageUrl
+            };
+          }
+        } else if (contentObj[i].name === "paywall") {
+          if (contentObj[i].children) {
+            if (contentObj[i].children.length > 0) {
+              loopContent(contentObj[i].children);
+            }
+          }
+        }
+      }
+    };
+    loopContent(content);
+
+    if (update !== undefined) {
+      updates.push(update);
+    }
+  }
+
+  return updates;
+};
+
 function Head({
   article,
   logoUrl,
@@ -151,6 +242,7 @@ function Head({
     url
   } = article;
 
+  const liveBlogArticleExpiry = getIsLiveBlogExpiryTime(article.expirableFlags);
   const isLiveBlogArticle = getIsLiveBlog(article.expirableFlags);
   const publication = PUBLICATION_NAMES[publicationName];
   const authorName = getAuthorAsText(article);
@@ -184,6 +276,19 @@ function Head({
   const authorSchema =
     (authors && authors.length ? authors : textByLineAuthorSchema) ||
     defaultAuthorSchema;
+  const publisherSchema = {
+    "@type": "Organization",
+    name: publication,
+    logo: {
+      "@type": "ImageObject",
+      url: logoUrl
+    }
+  };
+  const liveBlogUpdateSchema = getLiveBlogUpdates(
+    article,
+    publisherSchema,
+    authorSchema
+  );
 
   const jsonLD = {
     "@context": "https://schema.org",
@@ -252,6 +357,7 @@ function Head({
     datePublished: publishedTime,
     dateModified: updatedTime,
     coverageStartTime: publishedTime,
+    coverageEndTime: liveBlogArticleExpiry,
     url,
     keywords,
     image: {
@@ -259,27 +365,9 @@ function Head({
       url: leadassetUrl,
       caption
     },
-    publisher: {
-      "@type": "Organization",
-      name: publication,
-      logo: {
-        "@type": "ImageObject",
-        url: logoUrl
-      }
-    },
-    author: authorSchema
-    // when the liveBlogUpdate has some real data, then you can use this structure to populate the updates
-    /** * /
-    ,
-    "liveBlogUpdate":[
-      {
-        "type":"BlogPosting",
-        "headline":"This is a headline. The apocalypse is here",
-        "datePublished":"1999-12-31T23:59:59Z",
-        "url": "https://schema.org/LiveBlogPosting"
-      }
-    ]
-    /** */
+    publisher: publisherSchema,
+    author: authorSchema,
+    liveBlogUpdate: liveBlogUpdateSchema
   };
   return (
     <Context.Consumer>
