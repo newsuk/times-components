@@ -37,7 +37,7 @@ exports[`InfoCard renders 1`] = `
                       tabindex="0"
                     >
                       <div
-                        class="sc-jKJlTe daGHwh"
+                        class="sc-hSdWYo dVKMAw"
                       >
                         <img
                           class="sc-kGXeez iiZPJL"
@@ -198,7 +198,7 @@ exports[`InfoCard renders 1`] = `
             class="sc-chPdSV cxUg"
           >
             <div
-              class="sc-dxgOiQ kyeaEO"
+              class="sc-dxgOiQ gNDmzV"
             >
               Best places to stay
             </div>
@@ -307,7 +307,7 @@ exports[`InfoCard renders no image 1`] = `
                       tabindex="0"
                     >
                       <div
-                        class="sc-jKJlTe daGHwh"
+                        class="sc-hSdWYo dVKMAw"
                       >
                         <img
                           class="sc-kGXeez iiZPJL"
@@ -468,7 +468,7 @@ exports[`InfoCard renders no image 1`] = `
             class="sc-chPdSV cxUg"
           >
             <div
-              class="sc-dxgOiQ kyeaEO"
+              class="sc-dxgOiQ gNDmzV"
             >
               Best places to stay
             </div>
@@ -590,7 +590,7 @@ exports[`InfoCard should render the standard component 1`] = `
                     tabindex="0"
                   >
                     <div
-                      class="sc-jKJlTe daGHwh"
+                      class="sc-hSdWYo dVKMAw"
                     >
                       <img
                         class="sc-kGXeez iiZPJL"
@@ -746,7 +746,7 @@ exports[`InfoCard should render the standard component 1`] = `
           class="sc-chPdSV cxUg"
         >
           <div
-            class="sc-dxgOiQ kyeaEO"
+            class="sc-dxgOiQ gNDmzV"
           >
             Best places to stay
           </div>
@@ -853,7 +853,7 @@ exports[`InfoCard should render the wide component 1`] = `
                     tabindex="0"
                   >
                     <div
-                      class="sc-jKJlTe daGHwh"
+                      class="sc-hSdWYo dVKMAw"
                     >
                       <img
                         class="sc-kGXeez iiZPJL"
@@ -1009,7 +1009,7 @@ exports[`InfoCard should render the wide component 1`] = `
           class="sc-chPdSV cxUg"
         >
           <div
-            class="sc-dxgOiQ kyeaEO"
+            class="sc-dxgOiQ gNDmzV"
           >
             Best places to stay
           </div>

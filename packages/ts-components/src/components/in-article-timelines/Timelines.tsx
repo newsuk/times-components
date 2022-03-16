@@ -10,7 +10,10 @@ import {
   Container,
   ContentContainer,
   ListItem,
-  NumberContainer,
+  LeftPanel,
+  RightPanel,
+  Date,
+  SubHeading,
   StyledShowAllButton
 } from './styles';
 import {
@@ -22,22 +25,23 @@ import {
   Copy,
   ShowAllContainer
 } from '../common-styles';
-import { isStandard, isWide } from '../../helpers/layout-size/layoutSize';
 import { DeckData } from '../../helpers/fetch/types';
 
-type BigNumbersData = {
+type TimelinesData = {
   type: string;
   data: {
-    number: string;
+    date: string;
+    eventHeading: string;
+    image: string;
     copy: string;
   };
 };
 
-type BigNumbersDeckData = DeckData<never, BigNumbersData>;
+type TimelinesDeckData = DeckData<never, TimelinesData>;
 
 const scrollEvent = {
   attrs: {
-    event_navigation_name: 'in-article component displayed : big numbers',
+    event_navigation_name: 'in-article component displayed : timelines',
     event_navigation_browsing_method: 'scroll'
   }
 };
@@ -50,10 +54,10 @@ const clickEvent = (buttonLabel: string) => ({
   }
 });
 
-export const BigNumbers: React.FC<{
+export const Timelines: React.FC<{
   sectionColour: string;
 }> = ({ sectionColour }) => {
-  const { loading, error, data } = useFetch<BigNumbersDeckData>();
+  const { loading, error, data } = useFetch<TimelinesDeckData>();
 
   if (loading) {
     return (
@@ -67,9 +71,10 @@ export const BigNumbers: React.FC<{
     return null;
   }
 
-  const { headline, label, size } = data.fields;
-  const bigNumbersData = data.body.data;
+  const { headline, label } = data.fields;
+  const timelinesData = data.body.data;
   const [showAll, setShowAll] = useState(false);
+
   const handleShowAll = (
     fireAnalyticsEvent: (evt: TrackingContext) => void,
     buttonLabel: string
@@ -79,22 +84,22 @@ export const BigNumbers: React.FC<{
   };
 
   const showAllRef = useRef<HTMLDivElement>(null);
-  const [displayShowAll, setDisplayShowAll] = useState(false);
-  const maxHeight = isWide(size) ? 250 : 350;
+  const [displayShowAll, setShowShowAll] = useState(false);
+  const maxHeight = 375;
   useEffect(() => {
     const listContainer = showAllRef.current;
     if (listContainer) {
-      setDisplayShowAll(listContainer.clientHeight > maxHeight);
+      setShowShowAll(listContainer.clientHeight > maxHeight);
     }
   }, []);
 
   return (
     <TrackingContextProvider
       context={{
-        object: 'InArticleBigNumbers',
+        object: 'InArticleTimelines',
         attrs: {
           component_type:
-            'in-article component : big numbers: ' +
+            'in-article component : timelines: ' +
             (displayShowAll ? 'interactive' : 'static'),
           event_navigation_action: 'navigation',
           component_name: `${headline}`
@@ -103,11 +108,7 @@ export const BigNumbers: React.FC<{
       scrolledEvent={scrollEvent}
     >
       {({ fireAnalyticsEvent, intersectObserverRef }) => (
-        <Container
-          ref={intersectObserverRef}
-          sectionColour={sectionColour}
-          isWide={isWide(size)}
-        >
+        <Container ref={intersectObserverRef} sectionColour={sectionColour}>
           <ContentContainer>
             <Label sectionColour={sectionColour}>{label}</Label>
             {headline && <Headline>{headline}</Headline>}
@@ -118,20 +119,23 @@ export const BigNumbers: React.FC<{
               displayShowAll={displayShowAll}
             >
               <List>
-                {bigNumbersData.map((row: BigNumbersData, index: number) => (
-                  <ListItem key={index} isStandard={isStandard(size)}>
-                    <NumberContainer sectionColour={sectionColour}>
-                      {row.data.number}
-                    </NumberContainer>
-                    <Copy
-                      dangerouslySetInnerHTML={{
-                        __html: sanitiseCopy(row.data.copy, {
-                          br: {},
-                          b: {},
-                          i: {}
-                        })
-                      }}
-                    />
+                {timelinesData.map((row: TimelinesData, index: number) => (
+                  <ListItem key={index}>
+                    <LeftPanel
+                      sectionColour={sectionColour}
+                      circularImage={row.data.image}
+                    >
+                      {row.data.image && <img src={row.data.image} />}
+                    </LeftPanel>
+                    <RightPanel>
+                      <Date sectionColour={sectionColour}>{row.data.date}</Date>
+                      <SubHeading>{row.data.eventHeading}</SubHeading>
+                      <Copy
+                        dangerouslySetInnerHTML={{
+                          __html: sanitiseCopy(row.data.copy, ['br', 'b', 'i'])
+                        }}
+                      />
+                    </RightPanel>
                   </ListItem>
                 ))}
               </List>
