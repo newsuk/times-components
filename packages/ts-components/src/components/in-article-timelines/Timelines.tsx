@@ -9,19 +9,22 @@ import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
 import {
   Container,
   ContentContainer,
-  Headline,
-  ListContainer,
-  List,
   ListItem,
   LeftPanel,
   RightPanel,
   Date,
   SubHeading,
-  Copy,
-  ShowAllContainer,
-  ShowAllButton
+  StyledShowAllButton
 } from './styles';
-import { PlaceholderContainer, Label } from '../common-styles';
+import {
+  PlaceholderContainer,
+  Label,
+  Headline,
+  ListContainer,
+  List,
+  Copy,
+  ShowAllContainer
+} from '../common-styles';
 import { DeckData } from '../../helpers/fetch/types';
 
 type TimelinesData = {
@@ -139,7 +142,7 @@ export const Timelines: React.FC<{
             </ListContainer>
           </ContentContainer>
           <ShowAllContainer showAll={showAll} displayShowAll={displayShowAll}>
-            <ShowAllButton
+            <StyledShowAllButton
               onClick={() =>
                 handleShowAll(
                   fireAnalyticsEvent,
@@ -148,7 +151,7 @@ export const Timelines: React.FC<{
               }
             >
               {showAll ? 'Collapse' : 'Show all'}
-            </ShowAllButton>
+            </StyledShowAllButton>
           </ShowAllContainer>
         </Container>
       )}
