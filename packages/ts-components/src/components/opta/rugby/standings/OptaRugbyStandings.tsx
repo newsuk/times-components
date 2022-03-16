@@ -13,7 +13,7 @@ import {
 import { Container, PlaceholderContainer } from '../shared-styles';
 import { WidgetContainer } from './styles';
 
-export const OptaFootballStandings: React.FC<{
+export const OptaRugbyStandings: React.FC<{
   season: string;
   competition: string;
   default_nav?: string;
@@ -26,7 +26,7 @@ export const OptaFootballStandings: React.FC<{
     const [isReady, setIsReady] = useState<boolean>(false);
 
     useEffect(() => {
-      const sport = 'football';
+      const sport = 'rugby';
 
       initSettings();
       initStyleSheet(sport);

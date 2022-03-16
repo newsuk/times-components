@@ -13,7 +13,7 @@ import {
 import { Container, PlaceholderContainer } from '../shared-styles';
 import { WidgetContainer } from './styles';
 
-export const OptaFootballFixtures: React.FC<{
+export const OptaRugbyFixtures: React.FC<{
   season: string;
   competition: string;
   date_from: string;
@@ -25,7 +25,7 @@ export const OptaFootballFixtures: React.FC<{
   const [isReady, setIsReady] = useState<boolean>(false);
 
   useEffect(() => {
-    const sport = 'football';
+    const sport = 'rugby';
 
     initSettings();
     initStyleSheet(sport);
@@ -44,6 +44,7 @@ export const OptaFootballFixtures: React.FC<{
             live: true,
             grouping: 'date',
             show_grouping: true,
+            show_subgrouping: false,
             show_crests: true,
             date_format: 'dddd MMMM D YYYY',
             breakpoints: 520
@@ -56,8 +57,11 @@ export const OptaFootballFixtures: React.FC<{
             match: '',
             live: true,
             show_crests: true,
-            show_goals: true,
-            show_cards: 'red',
+            show_tries: true,
+            show_conversions: true,
+            show_penalties: true,
+            show_drop_goals: 'scored',
+            show_cards: 'all',
             breakpoints: '520'
           })
         ).outerHTML;
