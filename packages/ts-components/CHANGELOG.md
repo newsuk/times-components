@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.25.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.24.0...@times-components/ts-components@1.25.0) (2022-03-16)
+
+
+### Bug Fixes
+
+* **TDP-000:** fix live flag styling ([#2881](https://github.com/newsuk/times-components/issues/2881)) ([b304127](https://github.com/newsuk/times-components/commit/b304127759ec7cf4850e7a8f95bfca118bb4b022))
+
+
+### Features
+
+* **TDP-1452:** updated live blog schema to have live blog updates ([#2878](https://github.com/newsuk/times-components/issues/2878)) ([290fdb7](https://github.com/newsuk/times-components/commit/290fdb7ab28c1ffce8ca7c09c59c0e541fa83448))
+
+
+
+
+
 # [1.24.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.23.0...@times-components/ts-components@1.24.0) (2022-03-15)
 
 
