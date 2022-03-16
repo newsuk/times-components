@@ -122,7 +122,7 @@ describe("Key moments", () => {
         event_navigation_name: "in-article component displayed : key moments",
         event_navigation_action: "navigation",
         event_navigation_browsing_method: "scroll",
-        article_parent_name: "some headline",
+        article_name: "some headline",
         other_details: "breaking",
         eventTime: "2021-05-03T00:00:00.000Z"
       },
@@ -139,8 +139,8 @@ describe("Key moments", () => {
         event_navigation_name: "in-article component clicked : key moments",
         event_navigation_action: "navigation",
         event_navigation_browsing_method: "click",
-        article_name: "a link title",
-        article_parent_name: "some headline",
+        article_parent_name: "a link title",
+        article_name: "some headline",
         other_details: "breaking",
         eventTime: "2021-05-03T00:00:00.000Z"
       },

@@ -36,7 +36,7 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
                           event_navigation_name:
                             "in-article component clicked : key moments",
                           event_navigation_browsing_method: "click",
-                          article_name: title
+                          article_parent_name: title
                         }
                       });
                     }
