@@ -1,9 +1,10 @@
 import React from 'react';
 import {
   LiveArticleFlagContainer,
-  LiveIconContainer,
   LiveArticleFlagText,
-  LiveFlagAndTimestampContainer
+  LiveFlagAndTimestampContainer,
+  LiveArticleFlagIconContainer,
+  LiveArticleFlagIcon
 } from './styles';
 import { UpdatedTimestamp } from '../updated-timestamp/UpdatedTimestamp';
 import { useUpdatedTime } from '../../helpers/time/UpdatedTimeProvider';
@@ -14,10 +15,10 @@ export const BaseLiveArticleFlag: React.FC<{ title: string }> = ({ title }) => {
   return (
     <LiveFlagAndTimestampContainer>
       <LiveArticleFlagContainer>
-        <LiveIconContainer>{'\u25a0'}</LiveIconContainer>
-        <div>
-          <LiveArticleFlagText>{title}</LiveArticleFlagText>
-        </div>
+        <LiveArticleFlagIconContainer>
+          <LiveArticleFlagIcon />
+        </LiveArticleFlagIconContainer>
+        <LiveArticleFlagText>{title}</LiveArticleFlagText>
       </LiveArticleFlagContainer>
       <UpdatedTimestamp updatedTime={updatedTime} />
     </LiveFlagAndTimestampContainer>
