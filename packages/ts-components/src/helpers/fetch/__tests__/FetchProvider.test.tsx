@@ -52,8 +52,10 @@ describe('<FetchProvider>', () => {
   });
 
   it('error', async () => {
+    fetchMock.mock(endpoint, { status: 500 });
+
     const { asFragment, findByText } = render(
-      <FetchProvider url="http://thetimes.co.uk">
+      <FetchProvider url={endpoint}>
         <TestComponent>Children</TestComponent>
       </FetchProvider>
     );
