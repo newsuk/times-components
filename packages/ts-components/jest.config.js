@@ -38,10 +38,10 @@ const buildConfig = dir => {
     ],
     coverageThreshold: {
       global: {
-        statements: 84,
-        branches: 78,
-        functions: 88,
-        lines: 85
+        statements: 94,
+        branches: 81,
+        lines: 94,
+        functions: 94
       }
     }
   };
