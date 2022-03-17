@@ -9,7 +9,7 @@ exports[`InfoCardBulletPoints should render the component 1`] = `
       class="sc-bwzfXH blmhpN"
     >
       <div
-        class="sc-dnqmqq cqnspX"
+        class="sc-dnqmqq cjsHty"
       >
         Venezuelan Politics
       </div>
@@ -88,7 +88,7 @@ exports[`InfoCardBulletPoints tracking click read more 1`] = `
       class="sc-bwzfXH blmhpN"
     >
       <div
-        class="sc-dnqmqq cqnspX"
+        class="sc-dnqmqq cjsHty"
       >
         Venezuelan Politics
       </div>
