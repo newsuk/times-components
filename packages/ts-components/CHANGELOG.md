@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.26.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.25.1...@times-components/ts-components@1.26.0) (2022-03-17)
+
+
+### Features
+
+* add Opta rugby widget ([#2882](https://github.com/newsuk/times-components/issues/2882)) ([5b3b767](https://github.com/newsuk/times-components/commit/5b3b76702817a704b0418125bff6ca9737745528))
+
+
+
+
+
 ## [1.25.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.25.0...@times-components/ts-components@1.25.1) (2022-03-16)
 
 **Note:** Version bump only for package @times-components/ts-components
