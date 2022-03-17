@@ -93,6 +93,7 @@
     "@types/react-dom": "17.0.3",
     "@types/react-test-renderer": "16.9.0",
     "@types/styled-components": "5.1.9",
+    "fetch-mock": "9.11.0",
     "jest": "24.8.0",
     "jest-environment-jsdom-sixteen": "2.0.0",
     "jest-fetch-mock": "3.0.3",

@@ -13,7 +13,7 @@ import {
 import { Container, PlaceholderContainer } from '../shared-styles';
 import { WidgetContainer } from './styles';
 
-export const OptaFootballSummary: React.FC<{
+export const OptaRugbyMatchStats: React.FC<{
   season: string;
   competition: string;
   match: string;
@@ -24,7 +24,7 @@ export const OptaFootballSummary: React.FC<{
   const [isReady, setIsReady] = useState<boolean>(false);
 
   useEffect(() => {
-    const sport = 'football';
+    const sport = 'rugby';
 
     initSettings();
     initStyleSheet(sport);
@@ -33,18 +33,20 @@ export const OptaFootballSummary: React.FC<{
       if (ref.current) {
         ref.current.innerHTML = initElement('opta-widget', {
           sport,
-          widget: 'match_summary',
+          widget: 'matchstats',
           season,
           competition,
           match,
+          template: 'custom',
+          graph_style: 'relative',
+          stats_categories:
+            'Category 1|tries,passes,tackles,carries,metres,lineouts_won_percent,scrums_won_percent,turnovers_conceded,yellow_cards,red_cards',
           live: true,
           show_match_header: true,
           show_halftime_score: true,
           show_competition_name: true,
           show_date: true,
           show_crests: true,
-          show_goals: true,
-          show_cards: 'red',
           date_format: 'DD/MM/YYYY',
           breakpoints: '520'
         }).outerHTML;

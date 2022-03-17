@@ -2,12 +2,11 @@ import React, { FC } from 'react';
 import { render } from '@testing-library/react';
 
 import 'regenerator-runtime';
-import '@testing-library/jest-dom';
+
+import _fetchMock from 'isomorphic-unfetch';
+const fetchMock = _fetchMock as any;
 
 import { FetchProvider, useFetch } from '../FetchProvider';
-import { enableFetchMocks } from 'jest-fetch-mock';
-
-enableFetchMocks();
 
 const TestComponent: FC<{}> = () => {
   try {
@@ -28,71 +27,62 @@ const TestComponent: FC<{}> = () => {
 };
 
 describe('<FetchProvider>', () => {
-  beforeEach(() => {
-    // if you have an existing `beforeEach` just add the following line to it
-    fetchMock.doMock();
+  afterEach(() => {
+    fetchMock.restore();
+    fetchMock.reset();
   });
 
-  afterEach(() => {
-    fetchMock.resetMocks();
-  });
+  const endpoint = 'http://localhost:123';
 
   it('fetch', async () => {
-    fetchMock.mockResponse(async () => ({ body: '{ "value" : "boo" }' }));
+    const value = 'Fetched';
+    fetchMock.mock(endpoint, { status: 200, body: { value } });
 
     const { asFragment, findByText } = render(
-      <FetchProvider url="http://localhost:123">
+      <FetchProvider url={endpoint}>
         <TestComponent />
       </FetchProvider>
     );
-    await findByText('boo');
 
+    findByText('loading');
+    expect(asFragment()).toMatchSnapshot();
+
+    await findByText(value);
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('loading', async () => {
-    fetchMock.mockResponse(async () => ({ body: '{ "value" : "boo" }' }));
-
-    const { findByText } = render(
-      <FetchProvider url="http://thetimes.co.uk">
-        <TestComponent />
-      </FetchProvider>
-    );
-    await findByText('Loading');
-  });
-
   it('error', async () => {
-    fetchMock.mockResponse(() => Promise.reject('error'));
+    fetchMock.mock(endpoint, { status: 500 });
 
     const { asFragment, findByText } = render(
-      <FetchProvider url="http://thetimes.co.uk">
+      <FetchProvider url={endpoint}>
         <TestComponent>Children</TestComponent>
       </FetchProvider>
     );
-    await findByText('Error');
 
+    await findByText('Error');
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('Unprovided', async () => {
-    fetchMock.mockResponse(async () => ({ body: '{ "value" : "boo" }' }));
-
     const { asFragment, findByText } = render(
       <TestComponent>Children</TestComponent>
     );
-    await findByText('Error');
 
+    await findByText('Error');
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('preview', () => {
+    const value = 'Preloaded';
+
     const { asFragment, getByText } = render(
-      <FetchProvider previewData={{ value: 'boo' }}>
+      <FetchProvider previewData={{ value }}>
         <TestComponent />
       </FetchProvider>
     );
 
-    expect(getByText('boo'));
+    expect(getByText(value));
     expect(asFragment()).toMatchSnapshot();
   });
 });
