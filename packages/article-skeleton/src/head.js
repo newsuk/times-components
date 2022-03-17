@@ -170,6 +170,7 @@ const getLiveBlogUpdates = (article, publisher, author) => {
               "@type": "BlogPosting",
               headline: attributes.headline,
               datePublished: attributes.updated,
+              dateModified: attributes.updated,
               publisher,
               url: `${article.url}#${anchorString(
                 attributes.updated,
