@@ -30,7 +30,7 @@ import { OptaFootballStandings } from '../OptaFootballStandings';
 
 const requiredProps = {
   season: '2020',
-  competition: '3',
+  competition: '3'
 };
 
 describe('OptaFootballStandings', () => {
