@@ -309,7 +309,7 @@ const renderers = ({
           />
         );
 
-      case "opta-rugby-fixtures-v2":
+      case "opta-rugby-union-fixtures-v2":
       case "opta-rugby-fixtures-v3":
         return (
           <OptaRugbyFixtures
@@ -320,7 +320,7 @@ const renderers = ({
           />
         );
 
-      case "opta-rugby-standings-v2":
+      case "opta-rugby-union-standings-v2":
       case "opta-rugby-standings-v3":
         return (
           <OptaRugbyStandings
@@ -331,7 +331,7 @@ const renderers = ({
           />
         );
 
-      case "opta-rugby-match-summary-v2":
+      case "opta-rugby-union-match-summary-v2":
       case "opta-rugby-match-summary-v3":
         return (
           <OptaRugbySummary
@@ -341,7 +341,7 @@ const renderers = ({
           />
         );
 
-      case "opta-rugby-match-stats-v2":
+      case "opta-rugby-union-match-stats-v2":
       case "opta-rugby-match-stats-v3":
         return (
           <OptaRugbyMatchStats
