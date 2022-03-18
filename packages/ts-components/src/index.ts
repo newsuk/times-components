@@ -45,6 +45,20 @@ export {
 export {
   OptaFootballMatchStats
 } from './components/opta/football/match-stats/OptaFootballMatchStats';
+
+export {
+  OptaRugbyFixtures
+} from './components/opta/rugby/fixtures/OptaRugbyFixtures';
+export {
+  OptaRugbyStandings
+} from './components/opta/rugby/standings/OptaRugbyStandings';
+export {
+  OptaRugbySummary
+} from './components/opta/rugby/summary/OptaRugbySummary';
+export {
+  OptaRugbyMatchStats
+} from './components/opta/rugby/match-stats/OptaRugbyMatchStats';
+
 export {
   OlympicsMedalTable
 } from './components/olympics/medal-table/OlympicsMedalTable';
