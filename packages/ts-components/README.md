@@ -2,7 +2,9 @@
 
 This package contains components written in a *Typescript*. This will allow for
 easy migration when we need to move these to a more modern repository.
+
 # Article Flag
+
 Article flags are attached to an article like a label to indicate the article's
 status. Common statuses are exported as components from this package, although both the original and "live news" flags have a `title` prop to enable a bespoke status.
 
@@ -10,6 +12,7 @@ The original article flags are styled with a circular bullet in front of the tit
 
 The flags are currently added to an article by an editor using the CMS. These
 flags "expire" server side.
+
 ## Build
 
 All the build steps have been updated to handle all the build steps:
