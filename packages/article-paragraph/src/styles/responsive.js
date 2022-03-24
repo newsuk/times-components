@@ -7,7 +7,7 @@ import {
   spacing
 } from "@times-components/styleguide";
 
-import { TargettedElement } from './target';
+import TargettedElement from "./target";
 
 const dropCapFontSizes = {
   cultureMagazine: 104,
@@ -82,9 +82,6 @@ export const Paragraph = styled(TargettedElement).attrs({ as: "p" })`
     }
   }
 `;
-
-
-
 
 export const DropCap = styled.span`
   float: left;

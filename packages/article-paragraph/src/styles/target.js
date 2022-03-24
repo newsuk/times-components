@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { breakpoints } from "@times-components/styleguide";
 
-export const TargettedElement = styled.div`
+const TargettedElement = styled.div`
   :target:before {
     content: "";
     display: block;
@@ -9,7 +9,7 @@ export const TargettedElement = styled.div`
     margin: -110px 0 0;
   }
 
-  @media (min-width: ${breakpoints.wide}px) {    
+  @media (min-width: ${breakpoints.wide}px) {
     :target:before {
       content: "";
       display: block;
@@ -27,3 +27,5 @@ export const TargettedElement = styled.div`
     }
   }
 `;
+
+export default TargettedElement;
