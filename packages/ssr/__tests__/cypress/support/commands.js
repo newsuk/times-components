@@ -9,7 +9,7 @@ addMatchImageSnapshotCommand({
 Cypress.Commands.add("goToNextArticle", () => {
   cy.get('div[data-testid="pagination-button-next"]')
     .first()
-    .click();
+    .click({force: true});
 });
 
 Cypress.Commands.add("goToPreviousArticle", () => {
