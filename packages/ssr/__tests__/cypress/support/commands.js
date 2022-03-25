@@ -15,5 +15,5 @@ Cypress.Commands.add("goToNextArticle", () => {
 Cypress.Commands.add("goToPreviousArticle", () => {
   cy.get('div[data-testid="pagination-button-previous"]')
     .first()
-    .click();
+    .click({ force: true });
 });
