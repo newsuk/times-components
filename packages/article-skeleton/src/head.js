@@ -181,7 +181,10 @@ const getLiveBlogUpdates = (article, publisher, author) => {
           }
         } else if (contentObj[i].name === "paragraph") {
           if (update !== undefined) {
-            const updateText = `${get(contentObj[i], "children[0].attributes.value")} `;
+            const updateText = `${get(
+              contentObj[i],
+              "children[0].attributes.value"
+            )} `;
             if (update.articleBody) {
               update.articleBody += updateText;
             } else {
