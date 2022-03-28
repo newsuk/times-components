@@ -47,13 +47,6 @@ export const Paragraph = styled(TargettedElement).attrs({ as: "p" })`
     display: table;
   }
 
-  :target:before {
-    content: "";
-    display: block;
-    height: 110px;
-    margin: -110px 0 0;
-  }
-
   @media (min-width: ${breakpoints.medium}px){ 
       font-size: ${fontSizes.body}px;
       line-height: 30px;
@@ -64,22 +57,6 @@ export const Paragraph = styled(TargettedElement).attrs({ as: "p" })`
 
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
-    
-    :target:before {
-      content: "";
-      display: block;
-      height: 100px;
-      margin: -100px 0 0;
-    }
-  }
-
-  @media (min-width: ${breakpoints.huge}px) {
-  :target:before {
-      content: "";
-      display: block;
-      height: 50px;
-      margin: -50px 0 0;
-    }
   }
 `;
 
