@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.47.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.46.0...@times-components/article-main-standard@3.47.0) (2022-03-28)
+
+
+### Features
+
+* **TDP-000:** Anchor link update ([#2889](https://github.com/newsuk/times-components/issues/2889)) ([b215455](https://github.com/newsuk/times-components/commit/b215455caae45fd403e04302017588083bdb398f))
+
+
+
+
+
 # [3.46.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.45.15...@times-components/article-main-standard@3.46.0) (2022-03-28)
 
 
