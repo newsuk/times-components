@@ -554,6 +554,61 @@
   ],
   "content": [
     {
+      "name": "keyFacts",
+      "attributes": {
+        "title": "Key moments"
+      },
+      "children": [
+        {
+          "name": "unorderedList",
+          "children": [
+            {
+              "name": "listElement",
+              "children": [
+                {
+                  "name": "link",
+                  "attributes": {
+                    "href": "#123456789101112131415",
+                    "type": "article"
+                  },
+                  "children": [
+                    {
+                      "name": "text",
+                      "attributes": {
+                        "value": "This link goes to the first headline of the live blog"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "listElement",
+              "children": [
+                {
+                  "name": "link",
+                  "attributes": {
+                    "href": "#234567891011121314151",
+                    "type": "article"
+                  },
+                  "children": [
+                    {
+                      "name": "text",
+                      "attributes": {
+                        "value": "This link goes to the second headline of the live blog"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "attributes": {
         "id": "1234567890-1234567890",
         "element": {
@@ -561,7 +616,7 @@
           "attributes": {
             "updated": "2022-03-03T03:33:00Z",
             "breaking": "true",
-            "headline": "Main headline update for live blog"
+            "headline": "First headline update for live blog"
           }
         }
       },
@@ -601,7 +656,9 @@
     },
     {
       "name": "paragraph",
-      "attributes": {},
+      "attributes": {
+        "id": "123456789101112131415"
+      },
       "children": [
         {
           "name": "text",
@@ -758,7 +815,7 @@
           "attributes": {
             "updated": "2022-01-01T05:30:00Z",
             "breaking": "true",
-            "headline": "This%20is%20another%20headline%20for%20liveBlog"
+            "headline": "This%20is%20the%20second%20headline%20for%20liveBlog"
           }
         }
       },
@@ -767,7 +824,9 @@
     },
     {
       "name": "paragraph",
-      "attributes": {},
+      "attributes": {
+        "id": "234567891011121314151"
+      },
       "children": [
         {
           "name": "text",

@@ -7,6 +7,8 @@ import {
   spacing
 } from "@times-components/styleguide";
 
+import TargettedElement from "./target";
+
 const dropCapFontSizes = {
   cultureMagazine: 104,
   dropCap: 110,
@@ -28,7 +30,7 @@ const dropCapMargins = {
   styleMagazine: -0.01
 };
 
-export const Paragraph = styled.p`
+export const Paragraph = styled(TargettedElement).attrs({ as: "p" })`
   color: ${colours.functional.primary};
   display: block;
   font-family: "${fonts.bodyRegular}";
@@ -45,16 +47,39 @@ export const Paragraph = styled.p`
     display: table;
   }
 
-  @media (min-width: ${breakpoints.medium}px) {
-    font-size: ${fontSizes.body}px;
-    line-height: 30px;
-    padding-left: 0;
-    padding-right: 0;
-    width: 80.8%;
+  :target:before {
+    content: "";
+    display: block;
+    height: 110px;
+    margin: -110px 0 0;
   }
+
+  @media (min-width: ${breakpoints.medium}px){ 
+      font-size: ${fontSizes.body}px;
+      line-height: 30px;
+      padding-left: 0;
+      padding-right: 0;
+      width: 80.8%; 
+}
 
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
+    
+    :target:before {
+      content: "";
+      display: block;
+      height: 100px;
+      margin: -100px 0 0;
+    }
+  }
+
+  @media (min-width: ${breakpoints.huge}px) {
+  :target:before {
+      content: "";
+      display: block;
+      height: 50px;
+      margin: -50px 0 0;
+    }
   }
 `;
 

@@ -12,10 +12,24 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
+.c21:target:before {
+  content: "";
+  display: block;
+  height: 110px;
+  margin: -110px 0 0;
+}
+
 .c21:first-of-type:after {
   content: "";
   clear: both;
   display: table;
+}
+
+.c21:target:before {
+  content: "";
+  display: block;
+  height: 110px;
+  margin: -110px 0 0;
 }
 
 .c24 {
@@ -260,6 +274,24 @@ exports[`full article with style 1`] = `
   padding-bottom: 10px;
 }
 
+@media (min-width:1024px) {
+  .c21:target:before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: -100px 0 0;
+  }
+}
+
+@media (min-width:1320px) {
+  .c21:target:before {
+    content: "";
+    display: block;
+    height: 50px;
+    margin: -50px 0 0;
+  }
+}
+
 @media (min-width:768px) {
   .c21 {
     font-size: 18px;
@@ -273,6 +305,22 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c21 {
     width: 56.2%;
+  }
+
+  .c21:target:before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: -100px 0 0;
+  }
+}
+
+@media (min-width:1320px) {
+  .c21:target:before {
+    content: "";
+    display: block;
+    height: 50px;
+    margin: -50px 0 0;
   }
 }
 

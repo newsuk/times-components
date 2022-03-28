@@ -1,4 +1,4 @@
 import topicPageTests from "../helpers/author-profile-helper";
 
 // default
-topicPageTests({ stickyElements: ["#nav"] });
+topicPageTests({ stickyElements: ["#nav"], skipSnapshotTest: true });

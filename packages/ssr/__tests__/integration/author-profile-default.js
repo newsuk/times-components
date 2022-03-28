@@ -1,4 +1,4 @@
 import authorProfileTests from "../helpers/author-profile-helper";
 
 // default
-authorProfileTests({ stickyElements: ["#nav"] });
+authorProfileTests({ stickyElements: ["#nav"], skipSnapshotTest: true });
