@@ -25,13 +25,6 @@ exports[`full article with style 1`] = `
   display: table;
 }
 
-.c23:target:before {
-  content: "";
-  display: block;
-  height: 110px;
-  margin: -110px 0 0;
-}
-
 .c26 {
   padding-left: 10px;
 }
@@ -326,22 +319,6 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c23 {
     width: 56.2%;
-  }
-
-  .c23:target:before {
-    content: "";
-    display: block;
-    height: 100px;
-    margin: -100px 0 0;
-  }
-}
-
-@media (min-width:1320px) {
-  .c23:target:before {
-    content: "";
-    display: block;
-    height: 50px;
-    margin: -50px 0 0;
   }
 }
 
