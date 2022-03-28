@@ -181,10 +181,14 @@ const getLiveBlogUpdates = (article, publisher, author) => {
           }
         } else if (contentObj[i].name === "paragraph") {
           if (update !== undefined) {
+<<<<<<< HEAD
             const updateText = `${get(
               contentObj[i],
               "children[0].attributes.value"
             )} `;
+=======
+            const updateText = `${get(contentObj[i], "children[0].attributes.value")} `;
+>>>>>>> 1f49535c06f53a9407a9c63a1172a67d91094101
             if (update.articleBody) {
               update.articleBody += updateText;
             } else {
