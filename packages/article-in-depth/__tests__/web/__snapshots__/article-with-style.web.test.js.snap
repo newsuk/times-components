@@ -25,13 +25,6 @@ exports[`full article with style 1`] = `
   display: table;
 }
 
-.c22:target:before {
-  content: "";
-  display: block;
-  height: 110px;
-  margin: -110px 0 0;
-}
-
 .c25 {
   padding-left: 10px;
 }
@@ -311,22 +304,6 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c22 {
     width: 56.2%;
-  }
-
-  .c22:target:before {
-    content: "";
-    display: block;
-    height: 100px;
-    margin: -100px 0 0;
-  }
-}
-
-@media (min-width:1320px) {
-  .c22:target:before {
-    content: "";
-    display: block;
-    height: 50px;
-    margin: -50px 0 0;
   }
 }
 
@@ -970,13 +947,6 @@ exports[`full article with style in the culture magazine 1`] = `
   display: table;
 }
 
-.c22:target:before {
-  content: "";
-  display: block;
-  height: 110px;
-  margin: -110px 0 0;
-}
-
 .c25 {
   padding-left: 10px;
 }
@@ -1256,22 +1226,6 @@ exports[`full article with style in the culture magazine 1`] = `
 @media (min-width:1024px) {
   .c22 {
     width: 56.2%;
-  }
-
-  .c22:target:before {
-    content: "";
-    display: block;
-    height: 100px;
-    margin: -100px 0 0;
-  }
-}
-
-@media (min-width:1320px) {
-  .c22:target:before {
-    content: "";
-    display: block;
-    height: 50px;
-    margin: -50px 0 0;
   }
 }
 
@@ -1916,13 +1870,6 @@ exports[`full article with style in the style magazine 1`] = `
   display: table;
 }
 
-.c22:target:before {
-  content: "";
-  display: block;
-  height: 110px;
-  margin: -110px 0 0;
-}
-
 .c25 {
   padding-left: 10px;
 }
@@ -2202,22 +2149,6 @@ exports[`full article with style in the style magazine 1`] = `
 @media (min-width:1024px) {
   .c22 {
     width: 56.2%;
-  }
-
-  .c22:target:before {
-    content: "";
-    display: block;
-    height: 100px;
-    margin: -100px 0 0;
-  }
-}
-
-@media (min-width:1320px) {
-  .c22:target:before {
-    content: "";
-    display: block;
-    height: 50px;
-    margin: -50px 0 0;
   }
 }
 
@@ -2863,13 +2794,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
   display: table;
 }
 
-.c22:target:before {
-  content: "";
-  display: block;
-  height: 110px;
-  margin: -110px 0 0;
-}
-
 .c25 {
   padding-left: 10px;
 }
@@ -3149,22 +3073,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
 @media (min-width:1024px) {
   .c22 {
     width: 56.2%;
-  }
-
-  .c22:target:before {
-    content: "";
-    display: block;
-    height: 100px;
-    margin: -100px 0 0;
-  }
-}
-
-@media (min-width:1320px) {
-  .c22:target:before {
-    content: "";
-    display: block;
-    height: 50px;
-    margin: -50px 0 0;
   }
 }
 
