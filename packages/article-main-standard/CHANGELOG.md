@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.46.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.45.15...@times-components/article-main-standard@3.46.0) (2022-03-28)
+
+
+### Features
+
+* **TDP-1577:** Add offset to Live News anchor links ([#2887](https://github.com/newsuk/times-components/issues/2887)) ([8699328](https://github.com/newsuk/times-components/commit/86993289c07d1ce81faed25e1dc8c456c9af767a))
+
+
+
+
+
 ## [3.45.15](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.45.14...@times-components/article-main-standard@3.45.15) (2022-03-18)
 
 **Note:** Version bump only for package @times-components/article-main-standard
