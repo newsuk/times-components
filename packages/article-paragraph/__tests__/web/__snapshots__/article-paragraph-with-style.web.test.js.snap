@@ -25,13 +25,6 @@ exports[`1. mpu config 1`] = `
   display: table;
 }
 
-.c0:target:before {
-  content: "";
-  display: block;
-  height: 110px;
-  margin: -110px 0 0;
-}
-
 @media (min-width:1024px) {
   .c0:target:before {
     content: "";
@@ -63,22 +56,6 @@ exports[`1. mpu config 1`] = `
 @media (min-width:1024px) {
   .c0 {
     width: 56.2%;
-  }
-
-  .c0:target:before {
-    content: "";
-    display: block;
-    height: 100px;
-    margin: -100px 0 0;
-  }
-}
-
-@media (min-width:1320px) {
-  .c0:target:before {
-    content: "";
-    display: block;
-    height: 50px;
-    margin: -50px 0 0;
   }
 }
 
