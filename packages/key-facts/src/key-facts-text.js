@@ -24,6 +24,7 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
             link(key, attributes, renderedChildren) {
               const { href: url } = attributes;
               const title = getTitle(data);
+              const newURL = `${window.location.href}/${url}`;
 
               return (
                 <KeyFactTextLink
@@ -41,7 +42,7 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
                       });
                     }
                   }}
-                  href={url}
+                  href={newURL}
                 >
                   {renderedChildren}
                 </KeyFactTextLink>
