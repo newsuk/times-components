@@ -65,6 +65,7 @@
   },
   "dependencies": {
     "@times-components/styleguide": "3.38.29",
+    "@times-components/utils": "6.5.13",
     "prop-types": "15.7.2",
     "react": "16.9.0",
     "react-dom": "16.9.0",

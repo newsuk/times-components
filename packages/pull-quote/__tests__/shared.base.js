@@ -74,6 +74,8 @@ export default renderComponent => {
           </PullQuotes>
         );
 
+        console.log(output);
+
         expect(output).toMatchSnapshot();
       }
     },
@@ -89,7 +91,7 @@ export default renderComponent => {
           />
         );
 
-        wrapper.find("TextLink").simulate("press", {});
+        wrapper.find(".pullQuoteTwitterLink").simulate("press", {});
 
         expect(onTwitterLinkPressMock).toHaveBeenCalled();
       }

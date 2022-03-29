@@ -125,12 +125,12 @@ exports[`5. with a twitter handle 1`] = `
           height={10}
           width={11}
         />
-        <TextLink
+        <TimesTextLink
           target="_blank"
           url="https://twitter.com/@twitter"
         >
           @twitter
-        </TextLink>
+        </TimesTextLink>
       </div>
     </div>
   </div>

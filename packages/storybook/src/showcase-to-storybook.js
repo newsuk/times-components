@@ -1,7 +1,6 @@
 import React, { StrictMode } from "react";
 import { HelmetProvider } from "react-helmet-async";
 import PropTypes from "prop-types";
-import { Platform } from "react-native";
 import { addUserStateKnobs } from "@times-components/user-state";
 
 React.Fragment = ({ children }) => children;
@@ -32,9 +31,7 @@ const addStories = (
     const args = [knobs, actions];
 
     builder.add(child.name, () => {
-      if (Platform.OS === "web") {
-        addUserStateKnobs(child.defaultUserState);
-      }
+      addUserStateKnobs(child.defaultUserState);
 
       return strictMode ? (
         <StrictWrapper>{child.component(...args)}</StrictWrapper>
@@ -51,10 +48,7 @@ const addStories = (
   addStories(builder, knobs, actions, children);
 };
 
-export const isCorrectPlatform = ({ platform }) =>
-  !platform ||
-  platform === Platform.OS ||
-  (platform === "native" && Platform.OS !== "web");
+export const isCorrectPlatform = ({ platform }) => !platform || platform;
 
 const converter = (storiesOf, knobs, actions) => (
   module,

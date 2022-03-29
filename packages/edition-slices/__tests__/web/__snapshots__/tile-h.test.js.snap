@@ -25,13 +25,6 @@ exports[`tile h without breakpoint 1`] = `
   margin-bottom: 10px;
 }
 
-.S4 {
-  color: rgba(51,51,51,1.00);
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
-  line-height: 15px;
-}
-
 .IS1 {
   line-height: 22px;
   margin-bottom: 10px;
@@ -102,16 +95,16 @@ exports[`tile h without breakpoint 1`] = `
     <div
       className="css-text-901oao"
     >
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
+      <div
+        className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
       >
         Richard Lloyd Parry
-      </span>
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
+      </div>
+      <div
+        className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 gJRFWs"
       >
         , Hanoi
-      </span>
+      </div>
     </div>
   </div>
   <Image

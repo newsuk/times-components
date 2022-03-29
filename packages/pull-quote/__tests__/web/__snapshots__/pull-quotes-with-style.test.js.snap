@@ -125,13 +125,13 @@ exports[`different colours 1`] = `
           height={10}
           width={11}
         />
-        <TextLink
-          className="IS2"
+        <TimesTextLink
+          className="pullQuoteTwitterLink IS2"
           target="_blank"
           url="https://twitter.com/@twitter"
         >
           @twitter
-        </TextLink>
+        </TimesTextLink>
       </div>
     </div>
   </div>

@@ -186,26 +186,8 @@ describe("The showcase converter should", () => {
         },
         {
           component: () => <div>iOS!</div>,
-          name: "iOS only",
-          platform: "ios",
-          type: "story"
-        },
-        {
-          component: () => <div>Android!</div>,
-          name: "Android only",
-          platform: "android",
-          type: "story"
-        },
-        {
-          component: () => <div>Web!</div>,
           name: "Web only",
           platform: "web",
-          type: "story"
-        },
-        {
-          component: () => <div>Native!</div>,
-          name: "Native only",
-          platform: "native",
           type: "story"
         }
       ],

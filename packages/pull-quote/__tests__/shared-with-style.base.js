@@ -7,6 +7,9 @@ const twitter = "@twitter";
 
 export default renderComponent => {
   it("different colours", () => {
+
+    console.log('ADAM: before render component');
+
     const output = renderComponent(
       <PullQuotes
         caption={caption}
@@ -17,6 +20,8 @@ export default renderComponent => {
         {content}
       </PullQuotes>
     );
+
+    console.log('ADAM: output', output);
 
     expect(output).toMatchSnapshot();
   });
