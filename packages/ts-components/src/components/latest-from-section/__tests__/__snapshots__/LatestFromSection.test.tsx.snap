@@ -205,13 +205,11 @@ exports[`<LatestFromSection> renders  1`] = `
                           class="css-text-901oao"
                           dir="auto"
                         >
-                          <span
-                            class="css-text-901oao css-textHasAncestor-16my406"
-                            dir="auto"
-                            style="color: rgb(51, 51, 51); flex-direction: row; font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px;"
+                          <div
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
                           >
                             David Walsh
-                          </span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -354,13 +352,11 @@ exports[`<LatestFromSection> renders  1`] = `
                           class="css-text-901oao"
                           dir="auto"
                         >
-                          <span
-                            class="css-text-901oao css-textHasAncestor-16my406"
-                            dir="auto"
-                            style="color: rgb(51, 51, 51); flex-direction: row; font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px;"
+                          <div
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
                           >
                             Matt Lawton
-                          </span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -503,13 +499,11 @@ exports[`<LatestFromSection> renders  1`] = `
                           class="css-text-901oao"
                           dir="auto"
                         >
-                          <span
-                            class="css-text-901oao css-textHasAncestor-16my406"
-                            dir="auto"
-                            style="color: rgb(51, 51, 51); flex-direction: row; font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px;"
+                          <div
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
                           >
                             Jonathan Northcroft
-                          </span>
+                          </div>
                         </div>
                       </div>
                     </div>
