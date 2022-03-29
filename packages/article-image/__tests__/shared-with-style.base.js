@@ -3,7 +3,6 @@ import { iterator } from "@times-components/test-utils";
 import ArticleImage from "../src/article-image";
 import primaryImageFixture from "../fixtures/primary-image";
 import secondaryImageFixture from "../fixtures/secondary-image";
-import fullwidthImageFixture from "../fixtures/fullwidth-image";
 
 const testImageUrl = "https://img/someImage";
 const primaryImage = primaryImageFixture(

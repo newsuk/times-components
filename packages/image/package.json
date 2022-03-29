@@ -64,7 +64,6 @@
     "@times-components/styleguide": "3.38.29",
     "@times-components/svgs": "2.7.36",
     "@times-components/utils": "6.5.13",
-    "hoist-non-react-statics": "3.3.2",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
