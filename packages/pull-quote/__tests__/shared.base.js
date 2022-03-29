@@ -74,8 +74,6 @@ export default renderComponent => {
           </PullQuotes>
         );
 
-        console.log(output);
-
         expect(output).toMatchSnapshot();
       }
     },
