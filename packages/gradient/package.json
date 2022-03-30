@@ -1,6 +1,6 @@
 {
   "name": "@times-components/gradient",
-  "version": "3.2.67",
+  "version": "3.2.68",
   "description": "Renders a gradient background",
   "main": "dist/gradient",
   "dev": "src/gradient",
@@ -49,7 +49,7 @@
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator": "2.8.0",
     "@times-components/jest-serializer": "3.2.29",
-    "@times-components/storybook": "4.1.73",
+    "@times-components/storybook": "4.2.0",
     "@times-components/test-utils": "2.3.10",
     "@times-components/webpack-configurator": "2.0.29",
     "babel-jest": "24.8.0",
@@ -69,7 +69,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.38.29",
+    "@times-components/styleguide": "3.38.30",
     "prop-types": "15.7.2"
   },
   "resolutions": {

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.1.73...@times-components/storybook@4.2.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
 ## [4.1.73](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.1.72...@times-components/storybook@4.1.73) (2022-02-16)
 
 **Note:** Version bump only for package @times-components/storybook
