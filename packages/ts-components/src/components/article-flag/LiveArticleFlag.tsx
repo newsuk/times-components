@@ -10,15 +10,9 @@ import { useUpdatedTime } from '../../helpers/time/UpdatedTimeProvider';
 
 export const BaseLiveArticleFlag: React.FC<{
   title: string;
-  timeStampColor?: string;
-}> = ({ title, timeStampColor }) => {
+  timeStampTextColor?: string;
+}> = ({ title, color }) => {
   const updatedTime = useUpdatedTime();
-
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', timeStampColor, 'live article flag')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
 
   return (
     <LiveFlagAndTimestampContainer>
@@ -28,15 +22,15 @@ console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
           <LiveArticleFlagText>{title}</LiveArticleFlagText>
         </div>
       </LiveArticleFlagContainer>
-      <UpdatedTimestamp updatedTime={updatedTime} timeStampColor={timeStampColor} />
+      <UpdatedTimestamp updatedTime={updatedTime} timeStampTextColor={timeStampTextColor} />
     </LiveFlagAndTimestampContainer>
   );
 };
 
-export const LiveArticleFlag: React.FC<{ timeStampColor?: string }> = ({ timeStampColor }) => (
-  <BaseLiveArticleFlag timeStampColor={timeStampColor} title="LIVE" />
+export const LiveArticleFlag: React.FC<{ color?: string }> = ({ color }) => (
+  <BaseLiveArticleFlag timeStampTextColor={color} title="LIVE" />
 );
 
-export const BreakingArticleFlag: React.FC<{ timeStampColor?: string }> = ({
-  timeStampColor
-}) => <BaseLiveArticleFlag timeStampColor={timeStampColor} title="BREAKING" />;
+export const BreakingArticleFlag: React.FC<{ color?: string }> = ({
+  color
+}) => <BaseLiveArticleFlag timeStampTextColor={color} title="BREAKING" />;
