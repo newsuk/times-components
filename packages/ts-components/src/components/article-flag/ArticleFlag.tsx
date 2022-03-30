@@ -54,10 +54,16 @@ const flagsMapping = (override = '') => {
       color: override
     };
   }
+
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', override, 'article flag')
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
   return new Map([
     ['NEW', <NewArticleFlag {...colourProp} />],
-    ['LIVE', <LiveArticleFlag {...colourProp} />],
-    ['BREAKING', <BreakingArticleFlag {...colourProp} />],
+    ['LIVE', <LiveArticleFlag timeStampColor={override}/>],
+    ['BREAKING', <BreakingArticleFlag timeStampColor={override} />],
     ['UPDATED', <UpdatedArticleFlag {...colourProp} />],
     ['EXCLUSIVE', <ExclusiveArticleFlag {...colourProp} />],
     ['SPONSORED', <SponsoredArticleFlag {...colourProp} />],

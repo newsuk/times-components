@@ -5,8 +5,8 @@ import { Container, TimeSinceUpdate } from './styles';
 
 export const UpdatedTimestamp: React.FC<{
   updatedTime?: string;
-  color?: string;
-}> = ({ updatedTime, color }) => {
+  timeStampColor?: string;
+}> = ({ updatedTime, timeStampColor }) => {
   if (!updatedTime) {
     return null;
   }
@@ -20,15 +20,20 @@ export const UpdatedTimestamp: React.FC<{
 
   const isLessThan1Minute = diffInSeconds < 60;
   const isLessThan13Hours = diffInSeconds < 60 * 60 * 13;
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', timeStampColor, 'updated time stamp')
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
 
   return (
     <Container>
       {!isLessThan1Minute && isLessThan13Hours ? (
-        <TimeSinceUpdate color={color } data-testId="MinutesHoursSinceUpdate">
+        <TimeSinceUpdate color={timeStampColor} data-testId="MinutesHoursSinceUpdate">
           {`Updated ${timeSincePublishing}`}
         </TimeSinceUpdate>
       ) : !isLessThan13Hours ? (
-        <TimeSinceUpdate color={color } data-testId="DateTimeUpdated">
+        <TimeSinceUpdate color={timeStampColor} data-testId="DateTimeUpdated">
           {`Updated `}
           {format(updatedDate, 'MMMM d, ')}
           {format(updatedDate, 'h.mmaaa')}
