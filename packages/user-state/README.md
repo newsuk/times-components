@@ -48,9 +48,6 @@ the fallback.
 - `subscriber`: Is the user a subscriber
 - `loggedInOrShared`: Is the user logged in or on a share token (subscriber, RA, RA Expired, share token)
 
-There is a companion tool inside the `@times-components/mocks` for mocking
-the `UserState` package and rendering with a specific user state.
-
 ```js
 // In the test file
 import { mockUserState } from "@times-components/user-state";

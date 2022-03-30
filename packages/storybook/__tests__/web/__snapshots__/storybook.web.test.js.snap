@@ -198,7 +198,7 @@ Array [
   Object {
     "component": <StrictWrapper>
       <div>
-        Web!
+        iOS!
       </div>
     </StrictWrapper>,
     "name": "Web only",

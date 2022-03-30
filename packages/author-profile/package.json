@@ -39,7 +39,6 @@
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator": "2.8.0",
     "@times-components/jest-serializer": "3.2.29",
-    "@times-components/mocks": "0.1.31",
     "@times-components/provider-queries": "2.15.3",
     "@times-components/provider-test-tools": "1.25.0",
     "@times-components/storybook": "4.1.73",
