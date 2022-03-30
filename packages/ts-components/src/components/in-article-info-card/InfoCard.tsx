@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, FC } from 'react';
 import { Placeholder } from '@times-components/image';
 import { breakpoints } from '@times-components/styleguide';
-import { Card } from './Card';
+import { CardProps } from './Card';
 import {
   InfoCardContainer,
   BodyCopy,
@@ -34,9 +34,10 @@ type InfoCardFields = { headline: string; label: string; size: Layout };
 
 type InfoCardDeckData = DeckData<InfoCardFields, InfoCardData>;
 
-export type GalleryCarouselProps = {
+export type GalleryCarouselProps<T extends CardProps> = {
   sectionColour: string;
   initialIndex?: number;
+  CardComponent: FC<T>;
 };
 
 export enum Layout {
@@ -106,9 +107,10 @@ const CustomPagination: React.FC<{
   );
 };
 
-export const InfoCard: React.FC<GalleryCarouselProps> = ({
+export const InfoCard: React.FC<GalleryCarouselProps<CardProps>> = ({
   sectionColour,
-  initialIndex = 0
+  initialIndex = 0,
+  CardComponent
 }) => {
   const { loading, error, data } = useFetch<InfoCardDeckData>();
 
@@ -240,7 +242,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                 onClick && onClick(indicatorId);
               };
               return (
-                <Card
+                <CardComponent
                   data={infoCardData[current]}
                   headline={headline}
                   label={label}
@@ -258,7 +260,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                       showDotItem={showDotItem}
                     />
                   )}
-                </Card>
+                </CardComponent>
               );
             }}
           >
