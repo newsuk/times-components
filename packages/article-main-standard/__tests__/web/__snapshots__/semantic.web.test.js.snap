@@ -87,9 +87,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       Some Standfirst
     </h2>
     <span>
-      <span>
-        Some byline
-      </span>
+      Some byline
     </span>
     <span>
       <time
@@ -122,9 +120,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       </figcaption>
     </figure>
     <span>
-      <span>
-        Some byline
-      </span>
+      Some byline
     </span>
     <span>
       <time
@@ -293,8 +289,6 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         </svg>
         <a
           href="https://twitter.com/@AName"
-          rel=" noopener noreferrer"
-          role="link"
           target="_blank"
         >
           @AName

@@ -2,11 +2,13 @@
 
 exports[`1. with a single author 1`] = `
 <style>
-.S1 {
-  color: rgba(0,102,153,1.00);
+.IS1 {
+  text-decoration: underline;
   font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-size: 13;
   line-height: 15px;
+  color: #006699;
+  text-decoration-line: none;
 }
 </style>
 
@@ -14,9 +16,8 @@ exports[`1. with a single author 1`] = `
   className="css-view-1dbjc4n"
 >
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu S1"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 times-text-link__LinkTextObj-sc-12nxzjy-0 boYsan IS1"
     href="/profile/alexandra-frean"
-    role="link"
   >
     Alexandra Frean
   </a>
@@ -25,23 +26,31 @@ exports[`1. with a single author 1`] = `
 
 exports[`2. with a very long byline 1`] = `
 <style>
-.S1 {
-  color: rgba(0,102,153,1.00);
+.IS1 {
+  text-decoration: underline;
   font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-size: 13;
   line-height: 15px;
+  color: #006699;
+  text-decoration-line: none;
 }
 
-.S2 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-direction: row;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  flex-direction: row;
+.IS2 {
+  text-decoration: underline;
   font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-size: 13;
   line-height: 15px;
+  color: #006699;
+  text-decoration-line: none;
+}
+
+.IS3 {
+  text-decoration: underline;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13;
+  line-height: 15px;
+  color: #006699;
+  text-decoration-line: none;
 }
 </style>
 
@@ -49,38 +58,35 @@ exports[`2. with a very long byline 1`] = `
   className="css-view-1dbjc4n"
 >
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu S1"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 times-text-link__LinkTextObj-sc-12nxzjy-0 boYsan IS1"
     href="/profile/camilla-long"
-    role="link"
   >
     Camilla Long
   </a>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S2"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
   >
     , Environment Editor | 
   </div>
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu S1"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 times-text-link__LinkTextObj-sc-12nxzjy-0 boYsan IS2"
     href="/profile/camilla-long"
-    role="link"
   >
     Camilla Long
   </a>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S2"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
   >
     , Environment Editor | 
   </div>
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu S1"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 times-text-link__LinkTextObj-sc-12nxzjy-0 boYsan IS3"
     href="/profile/camilla-long"
-    role="link"
   >
     Camilla Long
   </a>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S2"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
   >
     , Environment Editor
   </div>

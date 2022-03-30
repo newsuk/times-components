@@ -1,12 +1,3 @@
-// eslint-disable-next-line import/prefer-default-export
-export { setIsTablet, setDimension } from "@times-components/mocks/dimensions";
-
-jest.mock("NativeAnimatedHelper", () => "NativeAnimatedHelper", {
-  virtual: true
-});
-
-jest.mock("../src/safeAreaView", () => "SafeAreaView");
-
 jest.mock("@times-components/gradient", () => ({
   OverlayGradient: "OverlayGradient"
 }));

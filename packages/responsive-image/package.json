@@ -1,6 +1,6 @@
 {
   "name": "@times-components/responsive-image",
-  "version": "0.8.5",
+  "version": "0.8.6",
   "description": "A responsive-image for react native",
   "main": "src/index.tsx",
   "typings": "build/index.d.ts",
@@ -46,8 +46,8 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.38.29",
-    "@times-components/utils": "6.5.13",
+    "@times-components/styleguide": "3.38.30",
+    "@times-components/utils": "6.6.0",
     "react": "16.9.0",
     "react-native": "0.61.5",
     "url-parse": "1.5.9"
