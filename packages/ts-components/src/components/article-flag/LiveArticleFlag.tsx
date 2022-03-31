@@ -11,7 +11,7 @@ import { useUpdatedTime } from '../../helpers/time/UpdatedTimeProvider';
 export const BaseLiveArticleFlag: React.FC<{
   title: string;
   timeStampTextColor?: string;
-}> = ({ title, color }) => {
+}> = ({ title, timeStampTextColor }) => {
   const updatedTime = useUpdatedTime();
 
   return (
