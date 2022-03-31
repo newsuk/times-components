@@ -50,8 +50,8 @@ describe('UpdatedTimestamp', () => {
 
   it('shows timestamp with an overided color', () => {
     MockDate.set('2022-02-28T23:30:00Z');
-    const {baseElement} = render(
-      <UpdatedTimestamp updatedTime={updated} timeStampTextColor={'yellow'}/>
+    const { baseElement } = render(
+      <UpdatedTimestamp updatedTime={updated} timeStampTextColor={'yellow'} />
     );
     expect(baseElement).toMatchSnapshot();
   });

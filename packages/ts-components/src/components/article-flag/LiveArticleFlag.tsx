@@ -23,7 +23,10 @@ export const BaseLiveArticleFlag: React.FC<{
         </LiveArticleFlagIconContainer>
         <LiveArticleFlagText>{title}</LiveArticleFlagText>
       </LiveArticleFlagContainer>
-      <UpdatedTimestamp updatedTime={updatedTime} timeStampTextColor={timeStampTextColor} />
+      <UpdatedTimestamp
+        updatedTime={updatedTime}
+        timeStampTextColor={timeStampTextColor}
+      />
     </LiveFlagAndTimestampContainer>
   );
 };
