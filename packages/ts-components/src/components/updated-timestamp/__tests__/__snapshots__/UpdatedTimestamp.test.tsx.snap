@@ -10,7 +10,7 @@ exports[`UpdatedTimestamp does not show the timestamp within the first minute af
 </body>
 `;
 
-exports[`UpdatedTimestamp shows timestamp with an overided color 1`] = `
+exports[`UpdatedTimestamp shows timestamp with an overrided color 1`] = `
 <body>
   <div>
     <div
