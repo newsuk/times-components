@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.28.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.27.0...@times-components/ts-components@1.28.0) (2022-03-31)
+
+
+### Features
+
+* **TDP-1599:** live news updatedTimeStamp background contrast fix ([#2893](https://github.com/newsuk/times-components/issues/2893)) ([1f0a01e](https://github.com/newsuk/times-components/commit/1f0a01e24e96fa0c4d008d80596105e0262ad8d3))
+
+
+
+
+
 # [1.27.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.26.2...@times-components/ts-components@1.27.0) (2022-03-30)
 
 
