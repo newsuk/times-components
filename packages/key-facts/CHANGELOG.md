@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.3.9...@times-components/key-facts@2.4.0) (2022-03-31)
+
+
+### Features
+
+* **TDP-000:** add article URL to anchor tag href ([#2892](https://github.com/newsuk/times-components/issues/2892)) ([3a65356](https://github.com/newsuk/times-components/commit/3a653566ce7907a387ef957af09c76fe69e8492a))
+
+
+
+
+
 ## [2.3.9](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.3.8...@times-components/key-facts@2.3.9) (2022-03-30)
 
 **Note:** Version bump only for package @times-components/key-facts
