@@ -24,6 +24,7 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
             link(key, attributes, renderedChildren) {
               const { href: url } = attributes;
               const title = getTitle(data);
+              const newURL = `${window.location.href}/${url}`;
 
               return (
                 <KeyFactTextLink
@@ -36,12 +37,12 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
                           event_navigation_name:
                             "in-article component clicked : key moments",
                           event_navigation_browsing_method: "click",
-                          article_name: title
+                          article_parent_name: title
                         }
                       });
                     }
                   }}
-                  href={url}
+                  href={newURL}
                 >
                   {renderedChildren}
                 </KeyFactTextLink>

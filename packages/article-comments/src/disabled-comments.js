@@ -1,5 +1,5 @@
 import React from "react";
-import { TextLink } from "@times-components/link";
+import { TimesTextLink } from "@times-components/link";
 import {
   CommentContainer,
   CommentDisabledHeadline,
@@ -14,12 +14,12 @@ const DisabledComments = () => (
     </CommentDisabledHeadline>
     <CommentDisabledGuidelines>
       Comments are subject to our community guidelines, which can be viewed{" "}
-      <TextLink
+      <TimesTextLink
         style={styles.link}
         url="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
       >
         here
-      </TextLink>
+      </TimesTextLink>
       .
     </CommentDisabledGuidelines>
   </CommentContainer>

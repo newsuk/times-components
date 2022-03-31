@@ -40,8 +40,8 @@ export const FetchProvider: React.FC<FetchProviderProps> = ({
         } else {
           throw new Error('must provide a Fetch url');
         }
-      } catch (error) {
-        setError(error);
+      } catch (err) {
+        setError(err.message);
         setLoading(false);
       }
     };

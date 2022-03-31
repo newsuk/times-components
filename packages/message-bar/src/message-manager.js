@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unused-state */
 import React, { Component } from "react";
-import { View, Platform } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import { ResponsiveContext } from "@times-components/responsive";
 import styleFactory from "./styles";
@@ -51,7 +51,7 @@ class MessageManager extends Component {
     const styles = styleFactory(scale);
     const offsetStyle = offsetTop
       ? {
-          position: Platform.OS === "web" ? "fixed" : "absolute",
+          position: "fixed",
           top: offsetTop,
           height: message ? 50 : 0
         }

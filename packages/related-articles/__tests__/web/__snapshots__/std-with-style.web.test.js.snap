@@ -26,6 +26,44 @@ exports[`default styles 1`] = `
   padding-right: 10px;
 }
 
+.c5 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+  color: #333333;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.c4 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+  color: #333333;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 .c0 .imageContainerClass {
   display: block;
 }
@@ -200,13 +238,6 @@ exports[`default styles 1`] = `
   margin-bottom: 5px;
 }
 
-.S8 {
-  color: rgba(51,51,51,1.00);
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
-  line-height: 15px;
-}
-
 .IS1 {
   color: rgba(219,19,59,1.00);
 }
@@ -285,16 +316,16 @@ exports[`default styles 1`] = `
                     <div
                       className="css-text-901oao"
                     >
-                      <span
-                        className="css-text-901oao css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S8"
+                      <div
+                        className="c4"
                       >
                         Camilla Long
-                      </span>
-                      <span
-                        className="css-text-901oao css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S8"
+                      </div>
+                      <div
+                        className="c5"
                       >
                         , Environment Editor
-                      </span>
+                      </div>
                     </div>
                   </div>
                 </Card>

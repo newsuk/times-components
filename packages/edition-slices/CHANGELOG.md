@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.106.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.105.22...@times-components/edition-slices@0.106.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [0.105.22](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.105.21...@times-components/edition-slices@0.105.22) (2022-03-28)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.105.21](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.105.20...@times-components/edition-slices@0.105.21) (2022-03-18)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.105.20](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.105.19...@times-components/edition-slices@0.105.20) (2022-03-17)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.105.19](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.105.18...@times-components/edition-slices@0.105.19) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.105.18](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.105.17...@times-components/edition-slices@0.105.18) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
 ## [0.105.17](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.105.16...@times-components/edition-slices@0.105.17) (2022-03-15)
 
 **Note:** Version bump only for package @times-components/edition-slices

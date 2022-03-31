@@ -1,20 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. with a single author 1`] = `
-<style>
-.S1 {
-  color: rgba(133,0,41,1.00);
-  font-family: TimesModern-Bold;
-  font-size: 22px;
-  line-height: 27px;
-}
-</style>
-
 <div
   className="css-view-1dbjc4n"
 >
   <div
-    className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S1"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
   >
     Alexandra Frean
   </div>
@@ -22,45 +13,36 @@ exports[`1. with a single author 1`] = `
 `;
 
 exports[`2. with a very long byline 1`] = `
-<style>
-.S1 {
-  color: rgba(133,0,41,1.00);
-  font-family: TimesModern-Bold;
-  font-size: 22px;
-  line-height: 27px;
-}
-</style>
-
 <div
   className="css-view-1dbjc4n"
 >
   <div
-    className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S1"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
   >
     Camilla Long
   </div>
   <div
-    className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S1"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 PgEZc"
   >
     , Environment Editor | 
   </div>
   <div
-    className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S1"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
   >
     Camilla Long
   </div>
   <div
-    className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S1"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 PgEZc"
   >
     , Environment Editor | 
   </div>
   <div
-    className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S1"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
   >
     Camilla Long
   </div>
   <div
-    className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S1"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 PgEZc"
   >
     , Environment Editor
   </div>

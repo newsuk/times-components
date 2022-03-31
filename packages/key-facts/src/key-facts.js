@@ -23,7 +23,7 @@ const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
           event_navigation_action: "navigation",
           component_name: title,
           section_details: `section : ${section}`,
-          article_parent_name: headline,
+          article_name: headline,
           other_details: isLiveOrBreaking
         }
       }}

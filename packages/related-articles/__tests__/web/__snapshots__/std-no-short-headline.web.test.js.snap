@@ -71,12 +71,12 @@ exports[`1. no short headline 1`] = `
                       </time>
                     </div>
                     <div>
-                      <span>
+                      <div>
                         Camilla Long
-                      </span>
-                      <span>
+                      </div>
+                      <div>
                         , Environment Editor
-                      </span>
+                      </div>
                     </div>
                   </div>
                 </Card>

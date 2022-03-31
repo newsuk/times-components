@@ -1,6 +1,6 @@
 /* eslint-disable prefer-destructuring */
 import React from "react";
-import { View, Text, Dimensions, Platform } from "react-native";
+import { View, Text, Dimensions } from "react-native";
 import styleguide, { colours, tabletWidth } from "@times-components/styleguide";
 import { AttributedString } from "@times-components/typeset";
 import { screenWidth } from "@times-components/utils";
@@ -229,22 +229,6 @@ export default ({
       );
     },
     interactive(key, { id, display, element }) {
-      if (
-        Platform.OS === "ios" &&
-        element &&
-        element.value === "responsive-graphics"
-      ) {
-        const {
-          attributes: { "deck-id": deckId }
-        } = element;
-
-        return (
-          <InteractiveWrapper.ResponsiveImageInteractive
-            deckId={deckId}
-            key={key}
-          />
-        );
-      }
       if (element && element.value === "newsletter-puff") {
         const {
           attributes: { code, copy, headline, imageUri, label }

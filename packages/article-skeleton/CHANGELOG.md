@@ -3,6 +3,114 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.76.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.76.0...@times-components/article-skeleton@1.76.1) (2022-03-31)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.76.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.75.1...@times-components/article-skeleton@1.76.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [1.75.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.75.0...@times-components/article-skeleton@1.75.1) (2022-03-28)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.75.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.74.0...@times-components/article-skeleton@1.75.0) (2022-03-28)
+
+
+### Features
+
+* **TDP-000:** Anchor link update ([#2889](https://github.com/newsuk/times-components/issues/2889)) ([b215455](https://github.com/newsuk/times-components/commit/b215455caae45fd403e04302017588083bdb398f))
+
+
+
+
+
+# [1.74.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.73.5...@times-components/article-skeleton@1.74.0) (2022-03-28)
+
+
+### Features
+
+* **TDP-1577:** Add offset to Live News anchor links ([#2887](https://github.com/newsuk/times-components/issues/2887)) ([8699328](https://github.com/newsuk/times-components/commit/86993289c07d1ce81faed25e1dc8c456c9af767a))
+
+
+
+
+
+## [1.73.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.73.4...@times-components/article-skeleton@1.73.5) (2022-03-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.73.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.73.3...@times-components/article-skeleton@1.73.4) (2022-03-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.73.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.73.2...@times-components/article-skeleton@1.73.3) (2022-03-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.73.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.73.1...@times-components/article-skeleton@1.73.2) (2022-03-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.73.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.73.0...@times-components/article-skeleton@1.73.1) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.73.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.11...@times-components/article-skeleton@1.73.0) (2022-03-16)
+
+
+### Features
+
+* **TDP-1452:** updated live blog schema to have live blog updates ([#2878](https://github.com/newsuk/times-components/issues/2878)) ([290fdb7](https://github.com/newsuk/times-components/commit/290fdb7ab28c1ffce8ca7c09c59c0e541fa83448))
+
+
+
+
+
+## [1.72.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.10...@times-components/article-skeleton@1.72.11) (2022-03-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.72.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.9...@times-components/article-skeleton@1.72.10) (2022-03-15)
 
 **Note:** Version bump only for package @times-components/article-skeleton

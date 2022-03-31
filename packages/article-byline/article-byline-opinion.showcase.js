@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { ArticleBylineOpinion } from "./src/article-byline";
 
 const authorsAST = require("./fixtures/authors.json");
@@ -14,7 +14,7 @@ const preventDefaultedAction = decorateAction =>
   ]);
 
 const ComponentWrapper = ({ children }) => (
-  <View style={{ flexDirection: "row", flexWrap: "wrap" }}>{children}</View>
+  <TcView style={{ flexDirection: "row", flexWrap: "wrap" }}>{children}</TcView>
 );
 
 const getProps = decorateAction => ({

@@ -1,14 +1,19 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { Text } from "react-native";
+import { TcText, checkStylesForUnits } from "@times-components/utils";
+import styled from "styled-components";
 import renderByline from "./render-byline";
 import { propTypes, defaultProps } from "./article-byline-prop-types";
 import styles from "./styles";
 
+const OpinionText = styled(TcText)`
+  ${checkStylesForUnits(styles.opinion)};
+`;
+
 const AuthorComponent = ({ children, key, className }) => (
-  <Text className={className} key={key} style={styles.opinion}>
+  <OpinionText className={className} key={key}>
     {children}
-  </Text>
+  </OpinionText>
 );
 
 const ArticleBylineOpinion = ({ ast, ...props }) =>

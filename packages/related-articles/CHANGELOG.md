@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.49...@times-components/related-articles@6.7.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [6.6.49](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.48...@times-components/related-articles@6.6.49) (2022-03-28)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.48](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.47...@times-components/related-articles@6.6.48) (2022-03-18)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.47](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.46...@times-components/related-articles@6.6.47) (2022-03-17)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.46](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.45...@times-components/related-articles@6.6.46) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.45](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.44...@times-components/related-articles@6.6.45) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
 ## [6.6.44](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.43...@times-components/related-articles@6.6.44) (2022-03-15)
 
 **Note:** Version bump only for package @times-components/related-articles

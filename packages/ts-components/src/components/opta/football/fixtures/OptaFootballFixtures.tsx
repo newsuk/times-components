@@ -25,15 +25,17 @@ export const OptaFootballFixtures: React.FC<{
   const [isReady, setIsReady] = useState<boolean>(false);
 
   useEffect(() => {
+    const sport = 'football';
+
     initSettings();
-    initStyleSheet();
+    initStyleSheet(sport);
 
     initScript().then(() => {
       if (ref.current) {
         ref.current.innerHTML = initElement(
           'opta-widget',
           {
-            sport: 'football',
+            sport,
             widget: 'fixtures',
             season,
             competition,
@@ -47,7 +49,7 @@ export const OptaFootballFixtures: React.FC<{
             breakpoints: 520
           },
           initElement('opta-widget', {
-            sport: 'football',
+            sport,
             widget: 'match_summary',
             season: '',
             competition: '',

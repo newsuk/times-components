@@ -2,6 +2,10 @@ import React from "react";
 import { StyleSheet, Text } from "react-native";
 import { defaultProps, propTypes } from "./text-link-prop-types";
 
+/*
+* TODO: ADAM: This is to be deprecated when replaced with times-text-link.js <TimesTextLink/> instead of <TextLink/>
+*/
+
 const styles = StyleSheet.create({
   textLink: {
     textDecorationLine: "underline"

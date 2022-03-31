@@ -33,18 +33,26 @@ const ArticleHeader: React.FC<{
       roundingMethod: 'floor'
     }) + ' ago';
   const diffInSeconds = differenceInSeconds(currentDateTime, updatedDate);
+  const anchorString = (updateTxt = '', headlineTxt = '') => {
+    const onlyNumbersReg = /\D+/g;
+    const onlyNumbers = updateTxt.replace(onlyNumbersReg, '');
+    const acronymReg = /\b(\w)/g;
+    const acronymMatch = headlineTxt.match(acronymReg);
+    const acronym = acronymMatch === null ? '' : acronymMatch.join('');
+    return `u_${onlyNumbers}${acronym}`;
+  };
 
   const isLessThan1Minute = diffInSeconds < 60;
   const isLessThan1Hour = diffInSeconds < 60 * 60;
   const isLessThan13Hours = diffInSeconds < 60 * 60 * 13;
   const isDaysAgo = differenceInCalendarDays(currentDateTime, updatedDate) >= 1;
-
+  const anchorPoint = anchorString(updated, headline);
   const isBreaking = breaking
     ? Boolean(breaking.toLowerCase() === 'true')
     : false;
 
   return (
-    <Container isBreaking={isBreaking && isLessThan1Hour}>
+    <Container isBreaking={isBreaking && isLessThan1Hour} id={anchorPoint}>
       <UpdatesContainer>
         <UpdatedTimeItems>
           {isBreaking && isLessThan1Hour ? (

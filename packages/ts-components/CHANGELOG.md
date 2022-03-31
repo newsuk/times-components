@@ -3,6 +3,68 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.27.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.26.2...@times-components/ts-components@1.27.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [1.26.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.26.1...@times-components/ts-components@1.26.2) (2022-03-28)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.26.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.26.0...@times-components/ts-components@1.26.1) (2022-03-18)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.26.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.25.1...@times-components/ts-components@1.26.0) (2022-03-17)
+
+
+### Features
+
+* add Opta rugby widget ([#2882](https://github.com/newsuk/times-components/issues/2882)) ([5b3b767](https://github.com/newsuk/times-components/commit/5b3b76702817a704b0418125bff6ca9737745528))
+
+
+
+
+
+## [1.25.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.25.0...@times-components/ts-components@1.25.1) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.25.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.24.0...@times-components/ts-components@1.25.0) (2022-03-16)
+
+
+### Bug Fixes
+
+* **TDP-000:** fix live flag styling ([#2881](https://github.com/newsuk/times-components/issues/2881)) ([b304127](https://github.com/newsuk/times-components/commit/b304127759ec7cf4850e7a8f95bfca118bb4b022))
+
+
+### Features
+
+* **TDP-1452:** updated live blog schema to have live blog updates ([#2878](https://github.com/newsuk/times-components/issues/2878)) ([290fdb7](https://github.com/newsuk/times-components/commit/290fdb7ab28c1ffce8ca7c09c59c0e541fa83448))
+
+
+
+
+
 # [1.24.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.23.0...@times-components/ts-components@1.24.0) (2022-03-15)
 
 

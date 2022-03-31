@@ -14,6 +14,9 @@ import tests from "./themes-with-style.base";
 jest.mock("@times-components/link", () => ({
   TextLink: "TextLink"
 }));
+jest.mock("@times-components/link", () => ({
+  TimesTextLink: "TimesTextLink"
+}));
 jest.mock("@times-components/icons", () => ({
   IconTwitter: "IconTwitter"
 }));

@@ -29,6 +29,10 @@ import {
   OptaFootballStandings,
   OptaFootballSummary,
   OptaFootballMatchStats,
+  OptaRugbyFixtures,
+  OptaRugbyStandings,
+  OptaRugbySummary,
+  OptaRugbyMatchStats,
   OlympicsMedalTable,
   OlympicsSchedule,
   InfoCard,
@@ -37,7 +41,8 @@ import {
   InfoCardBulletPoints,
   BigNumbers,
   HiddenDiv,
-  safeDecodeURIComponent
+  safeDecodeURIComponent,
+  Timelines
 } from "@times-components/ts-components";
 
 import ArticleLink from "./article-link";
@@ -221,6 +226,17 @@ const renderers = ({
           </Context.Consumer>
         );
 
+      case "in-article-timelines":
+        return (
+          <Context.Consumer key={key}>
+            {({ theme }) => (
+              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                <Timelines sectionColour={theme.sectionColour} />
+              </FetchProvider>
+            )}
+          </Context.Consumer>
+        );
+
       case "gallery-carousel":
         return (
           <Context.Consumer key={key}>
@@ -287,6 +303,48 @@ const renderers = ({
       case "opta-football-match-stats-v3":
         return (
           <OptaFootballMatchStats
+            season={attributes.season}
+            competition={attributes.competition}
+            match={attributes.match}
+          />
+        );
+
+      case "opta-rugby-union-fixtures-v2":
+      case "opta-rugby-fixtures-v3":
+        return (
+          <OptaRugbyFixtures
+            season={attributes.season}
+            competition={attributes.competition}
+            date_from={attributes["date-from"]}
+            date_to={attributes["date-to"]}
+          />
+        );
+
+      case "opta-rugby-union-standings-v2":
+      case "opta-rugby-standings-v3":
+        return (
+          <OptaRugbyStandings
+            season={attributes.season}
+            competition={attributes.competition}
+            default_nav={attributes.group}
+            navigation
+          />
+        );
+
+      case "opta-rugby-union-match-summary-v2":
+      case "opta-rugby-match-summary-v3":
+        return (
+          <OptaRugbySummary
+            season={attributes.season}
+            competition={attributes.competition}
+            match={attributes.match}
+          />
+        );
+
+      case "opta-rugby-union-match-stats-v2":
+      case "opta-rugby-match-stats-v3":
+        return (
+          <OptaRugbyMatchStats
             season={attributes.season}
             competition={attributes.competition}
             match={attributes.match}
