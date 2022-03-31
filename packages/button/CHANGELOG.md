@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/newsuk/times-components/compare/@times-components/button@2.4.72...@times-components/button@2.5.0) (2022-03-31)
+
+
+### Features
+
+* **TDP-1417:** remove react-native prop types from button ([#2896](https://github.com/newsuk/times-components/issues/2896)) ([2acf481](https://github.com/newsuk/times-components/commit/2acf481d106a9b69fbcea7dd5bfc9bd6a8b6c96a))
+
+
+
+
+
 ## [2.4.72](https://github.com/newsuk/times-components/compare/@times-components/button@2.4.71...@times-components/button@2.4.72) (2022-03-30)
 
 **Note:** Version bump only for package @times-components/button
