@@ -54,10 +54,11 @@ const flagsMapping = (override = '') => {
       color: override
     };
   }
+
   return new Map([
     ['NEW', <NewArticleFlag {...colourProp} />],
-    ['LIVE', <LiveArticleFlag />],
-    ['BREAKING', <BreakingArticleFlag />],
+    ['LIVE', <LiveArticleFlag {...colourProp} />],
+    ['BREAKING', <BreakingArticleFlag {...colourProp} />],
     ['UPDATED', <UpdatedArticleFlag {...colourProp} />],
     ['EXCLUSIVE', <ExclusiveArticleFlag {...colourProp} />],
     ['SPONSORED', <SponsoredArticleFlag {...colourProp} />],

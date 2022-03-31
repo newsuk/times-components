@@ -9,7 +9,10 @@ import {
 import { UpdatedTimestamp } from '../updated-timestamp/UpdatedTimestamp';
 import { useUpdatedTime } from '../../helpers/time/UpdatedTimeProvider';
 
-export const BaseLiveArticleFlag: React.FC<{ title: string }> = ({ title }) => {
+export const BaseLiveArticleFlag: React.FC<{
+  title: string;
+  timeStampTextColor?: string;
+}> = ({ title, timeStampTextColor }) => {
   const updatedTime = useUpdatedTime();
 
   return (
@@ -20,15 +23,15 @@ export const BaseLiveArticleFlag: React.FC<{ title: string }> = ({ title }) => {
         </LiveArticleFlagIconContainer>
         <LiveArticleFlagText>{title}</LiveArticleFlagText>
       </LiveArticleFlagContainer>
-      <UpdatedTimestamp updatedTime={updatedTime} />
+      <UpdatedTimestamp updatedTime={updatedTime} color={timeStampTextColor} />
     </LiveFlagAndTimestampContainer>
   );
 };
 
-export const LiveArticleFlag: React.FC = () => (
-  <BaseLiveArticleFlag title="LIVE" />
+export const LiveArticleFlag: React.FC<{ color?: string }> = ({ color }) => (
+  <BaseLiveArticleFlag timeStampTextColor={color} title="LIVE" />
 );
 
-export const BreakingArticleFlag: React.FC = () => (
-  <BaseLiveArticleFlag title="BREAKING" />
-);
+export const BreakingArticleFlag: React.FC<{ color?: string }> = ({
+  color
+}) => <BaseLiveArticleFlag timeStampTextColor={color} title="BREAKING" />;

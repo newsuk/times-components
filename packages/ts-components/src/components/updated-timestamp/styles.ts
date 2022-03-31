@@ -7,8 +7,8 @@ export const Container = styled.div`
   padding: 3px 0 0 8px;
 `;
 
-export const TimeSinceUpdate = styled.div`
-  color: ${colours.functional.primary};
+export const TimeSinceUpdate = styled.div<{ color?: string }>`
+  color: ${({ color }) => color || colours.functional.primary};
   font-family: ${fonts.supporting};
   font-size: 12px;
   line-height: 16px;

@@ -47,4 +47,12 @@ describe('UpdatedTimestamp', () => {
       'Updated February 28, 9.00am'
     );
   });
+
+  it('shows timestamp with an overrided color', () => {
+    MockDate.set('2022-02-28T23:30:00Z');
+    const { baseElement } = render(
+      <UpdatedTimestamp updatedTime={updated} color={'yellow'} />
+    );
+    expect(baseElement).toMatchSnapshot();
+  });
 });
