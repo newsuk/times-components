@@ -1,5 +1,7 @@
 /* eslint-disable no-useless-escape */
 
+const smoothscroll = require('smoothscroll-polyfill');
+
 const article = require("../component/article");
 const runClient = require("../lib/run-client");
 
@@ -50,6 +52,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
       "x-new-topic-data-source": true
     }
   };
+
+  smoothscroll.polyfill();
 
   runClient(article, clientOptions, data);
 }
