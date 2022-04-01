@@ -15,8 +15,8 @@ const getTitle = data => {
 const handleClickEventScrollTo = (event, url) => {
   if (url.charAt(0) === "#") {
     event.preventDefault();
-    
-    const element = document.getElementById(url.substring(1))
+
+    const element = document.getElementById(url.substring(1));
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
