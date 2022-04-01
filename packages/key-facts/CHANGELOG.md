@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.4](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.4.3...@times-components/key-facts@2.4.4) (2022-04-01)
+
+
+### Bug Fixes
+
+* **TDP-1577:** key moments - handle scroll in javascript ([#2897](https://github.com/newsuk/times-components/issues/2897)) ([69e48df](https://github.com/newsuk/times-components/commit/69e48df9b48c9d3e21582cdd15ec3c12febcb254))
+
+
+
+
+
 ## [2.4.3](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.4.2...@times-components/key-facts@2.4.3) (2022-03-31)
 
 **Note:** Version bump only for package @times-components/key-facts
