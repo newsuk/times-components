@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";
 import {
   InlineDialog,
-  InlineMessage,
+  // InlineMessage,
   HiddenDiv
 } from "@times-components/ts-components";
 
@@ -35,13 +35,13 @@ const ArticleComments = ({
       <UserState state={UserState.subscriber}>
         <CommentContainer>
           <HiddenDiv className="comment-banner">
-            <InlineMessage title="Real-name Commenting" type="info">
+            {/* <InlineMessage title="Real-name Commenting" type="info">
               We&apos;ve changed our policy and from now on commenters will need
               to use their real names. If you&apos;ve been using a pseudonym,
               please edit your screen name{" "}
               <a href="https://home.thetimes.co.uk/">here</a>. We believe this
               will ensure true debate.
-            </InlineMessage>
+            </InlineMessage> */}
           </HiddenDiv>
         </CommentContainer>
         <Comments

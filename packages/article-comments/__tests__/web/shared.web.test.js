@@ -69,7 +69,7 @@ describe("User States", () => {
   });
 });
 
-it("pre-switchover comments", () => {
+xit("pre-switchover comments", () => {
   const { asFragment, baseElement } = renderComments({
     count: 123,
     enabled: true,
