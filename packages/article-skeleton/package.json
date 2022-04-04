@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-skeleton",
-  "version": "1.76.5",
+  "version": "1.76.6",
   "description": "The article skeleton",
   "main": "dist/article-skeleton",
   "dev": "src/article-skeleton",
@@ -73,9 +73,9 @@
   },
   "dependencies": {
     "@times-components/ad": "2.17.0",
-    "@times-components/article-extras": "0.10.22",
+    "@times-components/article-extras": "0.10.23",
     "@times-components/article-image": "7.6.0",
-    "@times-components/article-paragraph": "1.6.7",
+    "@times-components/article-paragraph": "1.6.8",
     "@times-components/article-topics": "4.3.0",
     "@times-components/caption": "3.0.151",
     "@times-components/context": "1.2.34",

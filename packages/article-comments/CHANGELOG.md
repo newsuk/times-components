@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.19.2...@times-components/article-comments@0.20.0) (2022-04-04)
+
+
+### Features
+
+* **TDP-1747:**  commented out message so an override cant display it… ([#2898](https://github.com/newsuk/times-components/issues/2898)) ([156620f](https://github.com/newsuk/times-components/commit/156620f94dfd3b5ee26eda88b925d8cb5e2f772a))
+
+
+
+
+
 ## [0.19.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.19.1...@times-components/article-comments@0.19.2) (2022-03-31)
 
 **Note:** Version bump only for package @times-components/article-comments
