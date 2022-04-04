@@ -396,27 +396,6 @@ exports[`1. a full article 1`] = `
           r="14"
         />
       </svg>
-      <svg
-        height="20"
-        viewBox="0 0 20 20"
-        width="20"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          clip-rule="evenodd"
-          d="a4e230906ee0051a9ddc27f81fc43cb2"
-          fill-rule="evenodd"
-        />
-      </svg>
-      Real-name Commenting
-      We've changed our policy and from now on commenters will need to use their real names. If you've been using a pseudonym, please edit your screen name
-       
-      <a
-        href="https://home.thetimes.co.uk/"
-      >
-        here
-      </a>
-      . We believe this will ensure true debate.
     </article>
   </main>
 </article>
