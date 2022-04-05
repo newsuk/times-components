@@ -60,8 +60,7 @@ export const InArticlePuff: React.FC<{
   const articleFlag = isLiveOrBreaking || 'no flag';
   const handleClick = (
     fireAnalyticsEvent: (evt: TrackingContext) => void,
-    buttonLabel: string,
-    articleFlag: string
+    buttonLabel: string
   ) => {
     fireAnalyticsEvent &&
       fireAnalyticsEvent(clickEvent(buttonLabel, articleFlag));
@@ -111,9 +110,7 @@ export const InArticlePuff: React.FC<{
             <ImageContainer>
               <a
                 href={link}
-                onClick={() =>
-                  handleClick(fireAnalyticsEvent, 'image', articleFlag)
-                }
+                onClick={() => handleClick(fireAnalyticsEvent, 'image')}
               >
                 <AspectRatio ratio={forceImageAspectRatio}>
                   <img src={image} />
@@ -129,9 +126,7 @@ export const InArticlePuff: React.FC<{
               </Label>
               <a
                 href={link}
-                onClick={() =>
-                  handleClick(fireAnalyticsEvent, 'headline', articleFlag)
-                }
+                onClick={() => handleClick(fireAnalyticsEvent, 'headline')}
               >
                 <Headline hasImage={hasImage}>{headline}</Headline>
               </a>
@@ -148,11 +143,7 @@ export const InArticlePuff: React.FC<{
               link={link}
               linkText={linkText || 'Read more'}
               onClick={() =>
-                handleClick(
-                  fireAnalyticsEvent,
-                  linkText || 'Read more',
-                  articleFlag
-                )
+                handleClick(fireAnalyticsEvent, linkText || 'Read more')
               }
             />
           </ContentContainer>
