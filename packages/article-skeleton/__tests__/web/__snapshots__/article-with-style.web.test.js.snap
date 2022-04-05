@@ -149,13 +149,6 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c8:target:before {
-  content: "";
-  display: block;
-  height: 110px;
-  margin: -110px 0 0;
-}
-
 .c8:first-of-type:after {
   content: "";
   clear: both;
@@ -395,24 +388,6 @@ exports[`full article with style 1`] = `
   .c20 section {
     min-width: 300px;
     padding: 0 16px 0 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c8:target:before {
-    content: "";
-    display: block;
-    height: 100px;
-    margin: -100px 0 0;
-  }
-}
-
-@media (min-width:1320px) {
-  .c8:target:before {
-    content: "";
-    display: block;
-    height: 50px;
-    margin: -50px 0 0;
   }
 }
 
