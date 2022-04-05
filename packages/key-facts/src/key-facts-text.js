@@ -13,6 +13,9 @@ const getTitle = data => {
 };
 
 const handleClickEventScrollTo = (event, url) => {
+  console.log("KEY MOMENTS handleClickEventScrollTo");
+  console.log("KEY MOMENTS url", url);
+
   if (url.charAt(0) === "#") {
     event.preventDefault();
 
@@ -21,7 +24,9 @@ const handleClickEventScrollTo = (event, url) => {
       const article = target.parentElement.parentElement;
       const container = article.parentElement;
 
-      console.log(container.offsetTop + article.offsetTop + target.offsetTop);
+      console.log("KEY MOMENTS container", container, container.offsetTop);
+      console.log("KEY MOMENTS article", article, article.offsetTop);
+      console.log("KEY MOMENTS target", target.offsetTop);
 
       window.scroll({
         top: container.offsetTop + article.offsetTop + target.offsetTop,
@@ -64,7 +69,7 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
                     handleClickEventAnalytics(fireAnalyticsEvent, title);
                     handleClickEventScrollTo(event, url);
                   }}
-                  href={url}
+                  href={url.charAt(0) === "#" ? null : url}
                 >
                   {renderedChildren}
                 </KeyFactTextLink>
