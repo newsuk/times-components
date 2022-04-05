@@ -13,12 +13,25 @@ const getTitle = data => {
 };
 
 const handleClickEventScrollTo = (event, url) => {
+  console.log("KEY MOMENTS handleClickEventScrollTo");
+  console.log("KEY MOMENTS url", url);
+
   if (url.charAt(0) === "#") {
     event.preventDefault();
 
-    const element = document.getElementById(url.substring(1));
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    const target = document.getElementById(url.substring(1));
+    if (target) {
+      const article = target.parentElement.parentElement;
+      const container = article.parentElement;
+
+      console.log("KEY MOMENTS container", container, container.offsetTop);
+      console.log("KEY MOMENTS article", article, article.offsetTop);
+      console.log("KEY MOMENTS target", target.offsetTop);
+
+      window.scroll({
+        top: container.offsetTop + article.offsetTop + target.offsetTop,
+        behavior: "smooth"
+      });
     }
   }
 };
@@ -56,7 +69,7 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
                     handleClickEventAnalytics(fireAnalyticsEvent, title);
                     handleClickEventScrollTo(event, url);
                   }}
-                  href={url}
+                  href={url.charAt(0) === "#" ? null : url}
                 >
                   {renderedChildren}
                 </KeyFactTextLink>
