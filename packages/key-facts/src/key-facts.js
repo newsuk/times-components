@@ -24,7 +24,7 @@ const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
           component_name: title,
           section_details: `section : ${section}`,
           article_name: headline,
-          article_flag: isLiveOrBreaking || 'no flag'
+          article_flag: isLiveOrBreaking || "no flag"
         }
       }}
       scrolledEvent={{
