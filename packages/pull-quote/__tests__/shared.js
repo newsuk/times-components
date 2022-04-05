@@ -14,7 +14,7 @@ jest.mock("@times-components/link", () => ({
   TextLink: "TextLink"
 }));
 jest.mock("@times-components/link", () => ({
-  TimesTextLink: "TimesTextLink"
+  TextLink: "TextLink"
 }));
 jest.mock("@times-components/icons", () => ({
   IconTwitter: "IconTwitter"
