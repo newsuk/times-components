@@ -20,13 +20,16 @@ const handleClickEventScrollTo = (event, url) => {
     const article = target.parentElement;
 
     if (target && article) {
-      console.log('KEY MOMENTS : target', target);
-      console.log('KEY MOMENTS : offsetTop', target.offsetTop);
+      console.log("KEY MOMENTS : target", target);
+      console.log("KEY MOMENTS : offsetTop", target.offsetTop);
 
-      console.log('KEY MOMENTS : article', article);
-      console.log('KEY MOMENTS : offsetTop', article.offsetTop);
+      console.log("KEY MOMENTS : article", article);
+      console.log("KEY MOMENTS : offsetTop", article.offsetTop);
 
-      window.scroll({ top: article.offsetTop + target.offsetTop, behavior: "smooth" });
+      window.scroll({
+        top: article.offsetTop + target.offsetTop,
+        behavior: "smooth"
+      });
     }
   }
 };
