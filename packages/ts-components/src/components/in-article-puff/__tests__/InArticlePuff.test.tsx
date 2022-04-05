@@ -187,7 +187,7 @@ describe('InArticlePuff', () => {
             attrs: {
               articleHeadline: 'articleHeadline',
               section: 'section',
-              other_details: 'live'
+              article_flag: 'live'
             }
           }}
           analyticsStream={analyticsStream}
@@ -213,7 +213,7 @@ describe('InArticlePuff', () => {
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : Read the full article',
           section: 'section',
-          other_details: 'live'
+          article_flag: 'live'
         }
       });
     });
@@ -231,7 +231,7 @@ describe('InArticlePuff', () => {
             attrs: {
               articleHeadline: 'articleHeadline',
               section: 'section',
-              other_details: 'breaking'
+              article_flag: 'breaking'
             }
           }}
           analyticsStream={analyticsStream}
@@ -257,7 +257,7 @@ describe('InArticlePuff', () => {
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : headline',
           section: 'section',
-          other_details: 'breaking'
+          article_flag: 'breaking'
         }
       });
     });

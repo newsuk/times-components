@@ -48,7 +48,7 @@ const clickEvent = (buttonLabel: string, isLiveOrBreaking?: string) => ({
   attrs: {
     event_navigation_name: `button : ${buttonLabel}`,
     event_navigation_browsing_method: 'click',
-    other_details: isLiveOrBreaking
+    article_flag: isLiveOrBreaking || 'no flag'
   }
 });
 
@@ -98,7 +98,7 @@ export const InArticlePuff: React.FC<{
           component_type: 'in-article component : puff : interactive',
           event_navigation_action: 'navigation',
           component_name: `${headline}`,
-          other_details: isLiveOrBreaking
+          article_flag: isLiveOrBreaking || 'no flag'
         }
       }}
       scrolledEvent={scrollEvent}
