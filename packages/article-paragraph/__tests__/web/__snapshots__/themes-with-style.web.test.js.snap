@@ -12,35 +12,10 @@ exports[`1. paragraph with a drop cap in culture magazine 1`] = `
   padding-left: 10px;
 }
 
-.c0:target:before {
-  content: "";
-  display: block;
-  height: 110px;
-  margin: -110px 0 0;
-}
-
 .c0:first-of-type:after {
   content: "";
   clear: both;
   display: table;
-}
-
-@media (min-width:1024px) {
-  .c0:target:before {
-    content: "";
-    display: block;
-    height: 100px;
-    margin: -100px 0 0;
-  }
-}
-
-@media (min-width:1320px) {
-  .c0:target:before {
-    content: "";
-    display: block;
-    height: 50px;
-    margin: -50px 0 0;
-  }
 }
 
 @media (min-width:768px) {
@@ -78,35 +53,10 @@ exports[`2. paragraph with a drop cap in style magazine 1`] = `
   padding-left: 10px;
 }
 
-.c0:target:before {
-  content: "";
-  display: block;
-  height: 110px;
-  margin: -110px 0 0;
-}
-
 .c0:first-of-type:after {
   content: "";
   clear: both;
   display: table;
-}
-
-@media (min-width:1024px) {
-  .c0:target:before {
-    content: "";
-    display: block;
-    height: 100px;
-    margin: -100px 0 0;
-  }
-}
-
-@media (min-width:1320px) {
-  .c0:target:before {
-    content: "";
-    display: block;
-    height: 50px;
-    margin: -50px 0 0;
-  }
 }
 
 @media (min-width:768px) {
@@ -144,35 +94,10 @@ exports[`3. paragraph with a drop cap in the sunday times magazine 1`] = `
   padding-left: 10px;
 }
 
-.c0:target:before {
-  content: "";
-  display: block;
-  height: 110px;
-  margin: -110px 0 0;
-}
-
 .c0:first-of-type:after {
   content: "";
   clear: both;
   display: table;
-}
-
-@media (min-width:1024px) {
-  .c0:target:before {
-    content: "";
-    display: block;
-    height: 100px;
-    margin: -100px 0 0;
-  }
-}
-
-@media (min-width:1320px) {
-  .c0:target:before {
-    content: "";
-    display: block;
-    height: 50px;
-    margin: -50px 0 0;
-  }
 }
 
 @media (min-width:768px) {
