@@ -30,7 +30,7 @@ const TextLink = ({ children, onPress, style, target, url, ...props }) => {
   );
 };
 
-TextLink.propTypes = propTypes.object;
+TextLink.propTypes = propTypes;
 TextLink.defaultProps = defaultProps;
 
 export default TextLink;

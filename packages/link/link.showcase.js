@@ -28,7 +28,7 @@ export default {
           />
         </Link>
       ),
-      name: "NEW: Link with big content",
+      name: "Link with big content",
       type: "story"
     },
     {
@@ -58,7 +58,7 @@ export default {
           </Link>
         );
       },
-      name: "NEW: Responsive Link",
+      name: "Responsive Link",
       type: "story",
       platform: "web"
     },
@@ -74,19 +74,16 @@ export default {
           <BigSquare />
         </Link>
       ),
-      name: "NEW: Link can prevent browser navigation",
+      name: "Link can prevent browser navigation",
       type: "story"
     },
     {
       component: (_, { action }) => (
-        <TextLink
-          onPress={action("onPress")}
-          url="https://thetimes.co.uk/"
-        >
+        <TextLink onPress={action("onPress")} url="https://thetimes.co.uk/">
           The Times
         </TextLink>
       ),
-      name: "NEW: TextLink",
+      name: "TextLink",
       type: "story"
     },
     {
@@ -99,7 +96,7 @@ export default {
           The Times
         </TextLink>
       ),
-      name: "NEW: TextLink with styles",
+      name: "TextLink with styles",
       type: "story"
     }
   ],

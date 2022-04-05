@@ -74,24 +74,68 @@ exports[`4. renders link with target 1`] = `
 `;
 
 exports[`5. renders text link 1`] = `
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <a
-  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-cursor-1loqt21 r-textDecorationLine-1ddef8g"
+  className="c0"
   href="http://thetimes.co.uk"
-  role="link"
+  style={
+    Object {
+      "text-decoration": "underline",
+    }
+  }
 >
   The Times
 </a>
 `;
 
 exports[`6. text link with multiple styles 1`] = `
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0 0 {
+  background-color: blue;
+}
+
+.c0 1 {
+  color: red;
+}
+
 <a
-  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-cursor-1loqt21 r-textDecorationLine-1ddef8g"
+  className="c0"
   href="http://thetimes.co.uk"
-  role="link"
   style={
     Object {
-      "backgroundColor": "rgba(0,0,255,1.00)",
-      "color": "rgba(255,0,0,1.00)",
+      "0": Object {
+        "backgroundColor": "blue",
+      },
+      "1": Object {
+        "color": "red",
+      },
+      "text-decoration": "underline",
     }
   }
 >
@@ -100,10 +144,28 @@ exports[`6. text link with multiple styles 1`] = `
 `;
 
 exports[`7. text link with children 1`] = `
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <a
-  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-cursor-1loqt21 r-textDecorationLine-1ddef8g"
+  className="c0"
   href="http://thetimes.co.uk"
-  role="link"
+  style={
+    Object {
+      "text-decoration": "underline",
+    }
+  }
 >
   <p>
     The Times
@@ -112,11 +174,28 @@ exports[`7. text link with children 1`] = `
 `;
 
 exports[`8. text link with target 1`] = `
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
 <a
-  className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-cursor-1loqt21 r-textDecorationLine-1ddef8g"
+  className="c0"
   href="http://thetimes.co.uk"
-  rel=" noopener noreferrer"
-  role="link"
+  style={
+    Object {
+      "text-decoration": "underline",
+    }
+  }
   target="_blank"
 >
   <p>
