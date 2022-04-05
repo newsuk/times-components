@@ -7,8 +7,6 @@ import {
   spacing
 } from "@times-components/styleguide";
 
-import TargettedElement from "./target";
-
 const dropCapFontSizes = {
   cultureMagazine: 104,
   dropCap: 110,
@@ -30,7 +28,7 @@ const dropCapMargins = {
   styleMagazine: -0.01
 };
 
-export const Paragraph = styled(TargettedElement).attrs({ as: "p" })`
+export const Paragraph = styled.p`
   color: ${colours.functional.primary};
   display: block;
   font-family: "${fonts.bodyRegular}";

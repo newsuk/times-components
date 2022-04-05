@@ -13,9 +13,6 @@ const getTitle = data => {
 };
 
 const handleClickEventScrollTo = (event, url) => {
-  console.log("KEY MOMENTS handleClickEventScrollTo");
-  console.log("KEY MOMENTS url", url);
-
   if (url.charAt(0) === "#") {
     event.preventDefault();
 
@@ -24,12 +21,20 @@ const handleClickEventScrollTo = (event, url) => {
       const article = target.parentElement.parentElement;
       const container = article.parentElement;
 
-      console.log("KEY MOMENTS container", container, container.offsetTop);
-      console.log("KEY MOMENTS article", article, article.offsetTop);
-      console.log("KEY MOMENTS target", target.offsetTop);
+      let menuOffset = 50;
+      if (window.innerWidth < 1320) {
+        menuOffset = 100;
+      }
+      if (window.innerWidth < 1024) {
+        menuOffset = 110;
+      }
 
       window.scroll({
-        top: container.offsetTop + article.offsetTop + target.offsetTop,
+        top:
+          container.offsetTop +
+          article.offsetTop +
+          target.offsetTop -
+          menuOffset,
         behavior: "smooth"
       });
     }
