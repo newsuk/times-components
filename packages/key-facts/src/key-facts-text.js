@@ -16,9 +16,20 @@ const handleClickEventScrollTo = (event, url) => {
   if (url.charAt(0) === "#") {
     event.preventDefault();
 
-    const element = document.getElementById(url.substring(1));
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+    const target = document.getElementById(url.substring(1));
+    const article = target.parentElement;
+
+    if (target && article) {
+      console.log("KEY MOMENTS : target", target);
+      console.log("KEY MOMENTS : offsetTop", target.offsetTop);
+
+      console.log("KEY MOMENTS : article", article);
+      console.log("KEY MOMENTS : offsetTop", article.offsetTop);
+
+      window.scroll({
+        top: article.offsetTop + target.offsetTop,
+        behavior: "smooth"
+      });
     }
   }
 };
