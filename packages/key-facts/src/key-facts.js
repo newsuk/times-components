@@ -14,6 +14,8 @@ const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
 
   const { children: keyFactsItems } = children[0];
 
+  const articleFlag = isLiveOrBreaking || "no flag";
+
   return (
     <TrackingContextProvider
       context={{
@@ -24,7 +26,7 @@ const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
           component_name: title,
           section_details: `section : ${section}`,
           article_name: headline,
-          other_details: isLiveOrBreaking
+          article_flag: articleFlag
         }
       }}
       scrolledEvent={{
@@ -43,6 +45,7 @@ const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
               listIndex={index}
               keyFactItem={keyFactItem}
               fireAnalyticsEvent={fireAnalyticsEvent}
+              articleFlag={articleFlag}
             />
           ))}
         </KeyFactsContainer>
