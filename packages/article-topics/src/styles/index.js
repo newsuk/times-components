@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   text: {
     ...sharedStyles.text,
     // Gill Sans hack
-    top: 3.5
+    top: 2
   }
 });
 

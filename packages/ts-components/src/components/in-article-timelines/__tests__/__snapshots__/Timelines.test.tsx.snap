@@ -1,0 +1,727 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Timelines click show all 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dnqmqq bLfBFo"
+  >
+    <div
+      class="sc-iwsKbI fMDvHO"
+    >
+      <div
+        class="sc-bwzfXH gzPkze"
+      >
+        Venezuelan Politics
+      </div>
+      <div
+        class="sc-gzVnrw cqivXS"
+      >
+        A history of injury troubles
+      </div>
+      <div
+        class="sc-EHOje kSjPZf"
+      >
+        <ul
+          class="sc-ifAKCX LUyZI"
+        >
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT gjDwOt"
+            >
+              <img
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200"
+              />
+            </div>
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                9 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 1
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT gjDwOt"
+            >
+              <img
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200"
+              />
+            </div>
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                10 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 2
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT gjDwOt"
+            >
+              <img
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200"
+              />
+            </div>
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                11 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 3
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT gjDwOt"
+            >
+              <img
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200"
+              />
+            </div>
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                12 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 4
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT gjDwOt"
+            >
+              <img
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200"
+              />
+            </div>
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                13 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 5
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT ifPtOk"
+            />
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                14 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 6
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT gjDwOt"
+            >
+              <img
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200"
+              />
+            </div>
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                15 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 7
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="sc-bZQynM iNwlGF"
+    >
+      <button
+        class="sc-htoDjs sc-gZMcBi cztRUZ"
+      >
+        Collapse
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Timelines should render the bullet points component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dnqmqq bLfBFo"
+  >
+    <div
+      class="sc-iwsKbI fMDvHO"
+    >
+      <div
+        class="sc-bwzfXH gzPkze"
+      >
+        Venezuelan Politics
+      </div>
+      <div
+        class="sc-gzVnrw cqivXS"
+      >
+        A history of injury troubles
+      </div>
+      <div
+        class="sc-EHOje kSjPZf"
+      >
+        <ul
+          class="sc-ifAKCX LUyZI"
+        >
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT ifPtOk"
+            />
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                9 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 1
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT ifPtOk"
+            />
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                10 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 2
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT ifPtOk"
+            />
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                11 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 3
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT ifPtOk"
+            />
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                12 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 4
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT ifPtOk"
+            />
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                13 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 5
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT ifPtOk"
+            />
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                14 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 6
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT ifPtOk"
+            />
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                15 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 7
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="sc-bZQynM iNwlGF"
+    >
+      <button
+        class="sc-htoDjs sc-gZMcBi cztRUZ"
+      >
+        Show all
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Timelines should render the circle images component 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-dnqmqq bLfBFo"
+  >
+    <div
+      class="sc-iwsKbI fMDvHO"
+    >
+      <div
+        class="sc-bwzfXH gzPkze"
+      >
+        Venezuelan Politics
+      </div>
+      <div
+        class="sc-gzVnrw cqivXS"
+      >
+        A history of injury troubles
+      </div>
+      <div
+        class="sc-EHOje kSjPZf"
+      >
+        <ul
+          class="sc-ifAKCX LUyZI"
+        >
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT gjDwOt"
+            >
+              <img
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200"
+              />
+            </div>
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                9 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 1
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT gjDwOt"
+            >
+              <img
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200"
+              />
+            </div>
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                10 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 2
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT gjDwOt"
+            >
+              <img
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200"
+              />
+            </div>
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                11 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 3
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT gjDwOt"
+            >
+              <img
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200"
+              />
+            </div>
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                12 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 4
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT gjDwOt"
+            >
+              <img
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200"
+              />
+            </div>
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                13 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 5
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT ifPtOk"
+            />
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                14 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 6
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+          <li
+            class="sc-gqjmRU epAmcB"
+          >
+            <div
+              class="sc-VigVT gjDwOt"
+            >
+              <img
+                src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffee23bf0-04d7-11ec-89b3-29a9a04e8645.jpg?crop=1500%2C844%2C0%2C78&resize=1200"
+              />
+            </div>
+            <div
+              class="sc-jTzLTM ctjnzC"
+            >
+              <div
+                class="sc-fjdhpX hMbKXG"
+              >
+                15 June 2018
+              </div>
+              <div
+                class="sc-jzJRlG jzilC"
+              >
+                Event Heading 7
+              </div>
+              <div
+                class="sc-bxivhb bPVvqJ"
+              >
+                Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a. Scelerisque a ullamcorper id maecenas tempor convallis ac cras. 1
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      class="sc-bZQynM iNwlGF"
+    >
+      <button
+        class="sc-htoDjs sc-gZMcBi cztRUZ"
+      >
+        Show all
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Timelines should render the initial loading state correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa dwiMsX"
+  >
+    <div>
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;

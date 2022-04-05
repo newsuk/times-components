@@ -3,21 +3,28 @@ import { spacing } from "@times-components/styleguide";
 import sharedStylesFactory from "./shared";
 import globalStyle from "../shared";
 
-const nativeStyles = scale => {
-  const sharedStyles = sharedStylesFactory(scale);
-  return {
-    ...sharedStyles,
-    articleTextElement: {
-      ...sharedStyles.articleTextElement,
-      marginBottom: spacing(4)
-    }
-  };
+const sharedStyles = sharedStylesFactory();
+
+const webStyles = {
+  ...sharedStyles,
+  ad: {
+    ...sharedStyles.ad,
+    marginBottom: spacing(6),
+    marginTop: spacing(6),
+    width: "100%"
+  },
+  articleTextElement: {
+    ...sharedStyles.articleTextElement,
+    marginTop: 0
+  },
+  adMarginStyle: {
+    marginBottom: 0
+  }
 };
 
-const styles = scale =>
-  StyleSheet.create({
-    ...globalStyle,
-    ...nativeStyles(scale)
-  });
+const styles = StyleSheet.create({
+  ...globalStyle,
+  ...webStyles
+});
 
 export default styles;

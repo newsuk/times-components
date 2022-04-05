@@ -3,6 +3,391 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.28.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.28.0...@times-components/ts-components@1.28.1) (2022-03-31)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.28.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.27.0...@times-components/ts-components@1.28.0) (2022-03-31)
+
+
+### Features
+
+* **TDP-1599:** live news updatedTimeStamp background contrast fix ([#2893](https://github.com/newsuk/times-components/issues/2893)) ([1f0a01e](https://github.com/newsuk/times-components/commit/1f0a01e24e96fa0c4d008d80596105e0262ad8d3))
+
+
+
+
+
+# [1.27.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.26.2...@times-components/ts-components@1.27.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [1.26.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.26.1...@times-components/ts-components@1.26.2) (2022-03-28)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.26.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.26.0...@times-components/ts-components@1.26.1) (2022-03-18)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.26.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.25.1...@times-components/ts-components@1.26.0) (2022-03-17)
+
+
+### Features
+
+* add Opta rugby widget ([#2882](https://github.com/newsuk/times-components/issues/2882)) ([5b3b767](https://github.com/newsuk/times-components/commit/5b3b76702817a704b0418125bff6ca9737745528))
+
+
+
+
+
+## [1.25.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.25.0...@times-components/ts-components@1.25.1) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.25.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.24.0...@times-components/ts-components@1.25.0) (2022-03-16)
+
+
+### Bug Fixes
+
+* **TDP-000:** fix live flag styling ([#2881](https://github.com/newsuk/times-components/issues/2881)) ([b304127](https://github.com/newsuk/times-components/commit/b304127759ec7cf4850e7a8f95bfca118bb4b022))
+
+
+### Features
+
+* **TDP-1452:** updated live blog schema to have live blog updates ([#2878](https://github.com/newsuk/times-components/issues/2878)) ([290fdb7](https://github.com/newsuk/times-components/commit/290fdb7ab28c1ffce8ca7c09c59c0e541fa83448))
+
+
+
+
+
+# [1.24.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.23.0...@times-components/ts-components@1.24.0) (2022-03-15)
+
+
+### Features
+
+* **TDP-756:** live flag animation ([#2879](https://github.com/newsuk/times-components/issues/2879)) ([110ff58](https://github.com/newsuk/times-components/commit/110ff58ff303ebb5ba7786ed73fa779bfabcc2a3))
+
+
+
+
+
+# [1.23.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.22.3...@times-components/ts-components@1.23.0) (2022-03-14)
+
+
+### Features
+
+* **TDP-1472:** Small changes to Live/Breaking flag UI  ([#2876](https://github.com/newsuk/times-components/issues/2876)) ([e3871da](https://github.com/newsuk/times-components/commit/e3871da50cd3d8f52911e894418dff1245849234))
+
+
+
+
+
+## [1.22.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.22.2...@times-components/ts-components@1.22.3) (2022-03-09)
+
+
+### Bug Fixes
+
+* **TDP-000:** key moments analytics clean up ([#2875](https://github.com/newsuk/times-components/issues/2875)) ([4405463](https://github.com/newsuk/times-components/commit/4405463104fc04b3dabe40fd0b220f7c6910f7fd))
+
+
+
+
+
+## [1.22.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.22.1...@times-components/ts-components@1.22.2) (2022-03-09)
+
+
+### Bug Fixes
+
+* **TDP-000:** key moments analytics ([#2874](https://github.com/newsuk/times-components/issues/2874)) ([aa9af8e](https://github.com/newsuk/times-components/commit/aa9af8e3041da5984c9ecf7a9f1c21fbf3e8ac51))
+
+
+
+
+
+## [1.22.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.22.0...@times-components/ts-components@1.22.1) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.22.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.21.0...@times-components/ts-components@1.22.0) (2022-03-02)
+
+
+### Features
+
+* **TDP-1247:** Last updated timestamp ([#2864](https://github.com/newsuk/times-components/issues/2864)) ([57355b6](https://github.com/newsuk/times-components/commit/57355b6a2a067ca098e63802f018e69e78ac186e))
+
+
+
+
+
+# [1.21.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.20.0...@times-components/ts-components@1.21.0) (2022-03-01)
+
+
+### Features
+
+* **TDP-1465:** updated flags to allow for override colours in articl… ([#2865](https://github.com/newsuk/times-components/issues/2865)) ([12ce03c](https://github.com/newsuk/times-components/commit/12ce03ca3c9dab71df37ebb507c4a2bc0cdab515))
+
+
+
+
+
+# [1.20.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.19.4...@times-components/ts-components@1.20.0) (2022-02-28)
+
+
+### Features
+
+* **TDP-1139:** live news analytics for in article components ([#2862](https://github.com/newsuk/times-components/issues/2862)) ([89f912b](https://github.com/newsuk/times-components/commit/89f912be1ac9e16a439d28ef93f905e59971303f))
+
+
+
+
+
+## [1.19.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.19.3...@times-components/ts-components@1.19.4) (2022-02-25)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.19.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.19.2...@times-components/ts-components@1.19.3) (2022-02-24)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.19.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.19.1...@times-components/ts-components@1.19.2) (2022-02-22)
+
+
+### Bug Fixes
+
+* **TDP-760:** Fix article heading divider spacing ([#2859](https://github.com/newsuk/times-components/issues/2859)) ([1916667](https://github.com/newsuk/times-components/commit/19166676f45aa80c103c8ba9d7c62730070c8cc5))
+
+
+
+
+
+## [1.19.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.19.0...@times-components/ts-components@1.19.1) (2022-02-22)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.19.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.18.4...@times-components/ts-components@1.19.0) (2022-02-22)
+
+
+### Features
+
+* **TDP-563:** updated date-fns to use a single current version rathe… ([#2854](https://github.com/newsuk/times-components/issues/2854)) ([aca0dea](https://github.com/newsuk/times-components/commit/aca0deaa75f182f2b759ddfb262277d249aeff77))
+
+
+
+
+
+## [1.18.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.18.3...@times-components/ts-components@1.18.4) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.18.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.18.2...@times-components/ts-components@1.18.3) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.18.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.18.1...@times-components/ts-components@1.18.2) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.18.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.18.0...@times-components/ts-components@1.18.1) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.18.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.17.1...@times-components/ts-components@1.18.0) (2022-01-21)
+
+
+### Features
+
+* **TDP-479:** Add article breaking flag ([#2831](https://github.com/newsuk/times-components/issues/2831)) ([f1f990a](https://github.com/newsuk/times-components/commit/f1f990ae8012fcb8d33fabc40494b1a7115cbab0))
+
+
+
+
+
+## [1.17.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.17.0...@times-components/ts-components@1.17.1) (2022-01-12)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.17.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.16.3...@times-components/ts-components@1.17.0) (2022-01-10)
+
+
+### Features
+
+* **TDP-805:** No commenting for RA users ([#2833](https://github.com/newsuk/times-components/issues/2833)) ([a08c74f](https://github.com/newsuk/times-components/commit/a08c74f35b3f6d84fb484ca4e6727c1896ea0c96))
+
+
+
+
+
+## [1.16.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.16.2...@times-components/ts-components@1.16.3) (2022-01-10)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.16.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.16.1...@times-components/ts-components@1.16.2) (2022-01-07)
+
+
+### Bug Fixes
+
+* **TPD-997:** Remove inline related articles flag ([#2834](https://github.com/newsuk/times-components/issues/2834)) ([ffc332a](https://github.com/newsuk/times-components/commit/ffc332a0bf096e5436427b990a495bb3caff80ff))
+
+
+
+
+
+## [1.16.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.16.0...@times-components/ts-components@1.16.1) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.16.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.15.4...@times-components/ts-components@1.16.0) (2022-01-04)
+
+
+### Features
+
+* **TDP-588:** replaced 2 packages with packages that we already use … ([#2827](https://github.com/newsuk/times-components/issues/2827)) ([6c417f3](https://github.com/newsuk/times-components/commit/6c417f3fc3d92fb60f88125afe21364e5050a123))
+
+
+
+
+
+## [1.15.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.15.3...@times-components/ts-components@1.15.4) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.15.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.15.2...@times-components/ts-components@1.15.3) (2021-12-21)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.15.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.15.1...@times-components/ts-components@1.15.2) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.15.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.15.0...@times-components/ts-components@1.15.1) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.15.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.14.0...@times-components/ts-components@1.15.0) (2021-11-23)
+
+
+### Features
+
+* **TDP-478:** Fix LIVE flag alignment ([#2819](https://github.com/newsuk/times-components/issues/2819)) ([c0a4bca](https://github.com/newsuk/times-components/commit/c0a4bca1e418aa45c5e7c25e625ed9590de29dfb))
+
+
+
+
+
+# [1.14.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.13.0...@times-components/ts-components@1.14.0) (2021-11-23)
+
+
+### Features
+
+* **TDP-478:** Centre bullet in LIVE article flag ([#2816](https://github.com/newsuk/times-components/issues/2816)) ([ef8a7e3](https://github.com/newsuk/times-components/commit/ef8a7e379d65eaee3424c0981f22c491a3159b99))
+
+
+
+
+
+# [1.13.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.13...@times-components/ts-components@1.13.0) (2021-11-16)
+
+
+### Features
+
+* **TDP-478:** Article LIVE flag ([#2814](https://github.com/newsuk/times-components/issues/2814)) ([9bb430a](https://github.com/newsuk/times-components/commit/9bb430a9082843e553540d4e3795ae90a0d59089)), closes [#2813](https://github.com/newsuk/times-components/issues/2813)
+
+
+
+
+
+## [1.12.13](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.12...@times-components/ts-components@1.12.13) (2021-10-28)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
 ## [1.12.12](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.12.11...@times-components/ts-components@1.12.12) (2021-10-13)
 
 **Note:** Version bump only for package @times-components/ts-components

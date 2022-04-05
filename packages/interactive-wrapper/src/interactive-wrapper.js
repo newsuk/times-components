@@ -1,117 +1,136 @@
+/* eslint-env browser */
+/* eslint-disable react/forbid-prop-types */
 import React, { Component } from "react";
-import { Linking, Platform } from "react-native";
-import { WebView } from "react-native-webview";
 import PropTypes from "prop-types";
-import webviewEventCallbackSetup from "./webview-event-callback-setup";
-import ResponsiveImageInteractive from "./responsive-image";
+import { Placeholder } from "@times-components/image";
 
-const editorialLambdaProtocol = "https://";
-const editorialLambdaOrigin = "jotn9sgpg6.execute-api.eu-west-1.amazonaws.com";
-const editorialLambdaSlug = "prod/component";
+function ensureElement(selector, createElement) {
+  if (document.body.querySelector(selector)) {
+    return Promise.resolve(null);
+  }
 
-class InteractiveWrapper extends Component {
-  static openURLInBrowser(url) {
-    return Linking.canOpenURL(url)
-      .then(supported => {
-        if (!supported) {
-          return console.error("Cant open url", url); // eslint-disable-line no-console
-        }
-        return Linking.openURL(url);
+  return new Promise((resolve, reject) => {
+    const element = createElement();
+
+    element.onload = resolve;
+    element.onerror = reject;
+
+    document.body.appendChild(element);
+  });
+}
+
+function ensureScript(src) {
+  return ensureElement(`script[src="${src}"]`, () => {
+    const script = document.createElement("script");
+    script.setAttribute("async", "async");
+    script.setAttribute("src", src);
+
+    return script;
+  });
+}
+
+function ensureImport(src) {
+  return ensureElement(`link[href="${src}"]`, () => {
+    const link = document.createElement("link");
+    link.setAttribute("href", src);
+    link.setAttribute("rel", "import");
+
+    return link;
+  });
+}
+
+export function polyfillWCIfNecessary() {
+  const htmlImportsSupported = "import" in document.createElement("link");
+  const registerElementSupported = !!document.registerElement;
+
+  if (!htmlImportsSupported || !registerElementSupported) {
+    return Promise.all([
+      ensureScript(
+        "https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/webcomponents-lite.min.js"
+      ),
+      new Promise(resolve => {
+        window.addEventListener("WebComponentsReady", resolve);
       })
-      .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
+    ]);
   }
 
-  constructor() {
-    super();
-    this.state = {
-      height: Platform.OS === "ios" ? 0 : 50
-    };
-    this.onMessage = this.onMessage.bind(this);
-    this.handleNavigationStateChange = this.handleNavigationStateChange.bind(
-      this
+  return Promise.resolve();
+}
+
+export default class InteractiveWrapper extends Component {
+  constructor(props) {
+    super(props);
+
+    this.placeholder = React.createRef(null);
+    this.component = React.createRef(null);
+  }
+
+  componentDidMount() {
+    const { fetchPolyfill } = this.props;
+
+    fetchPolyfill().then(() => {
+      this.insertComponent();
+    });
+  }
+
+  componentDidUpdate() {
+    this.insertComponent();
+  }
+
+  async insertComponent() {
+    const { attributes, element, source } = this.props;
+    const placeholder = this.placeholder.current;
+    const component = this.component.current;
+
+    component.innerHTML = "";
+    placeholder.style.cssText += "display: block !important";
+
+    // It is possible for insertComponent to have been called again whilst the
+    // import link tag was loading. and therefore it is possible for multiple
+    // interactives to be inserted – therefore, we ensure that the interactive
+    // container is empty before inserting
+    component.innerHTML = "";
+
+    const newElement = document.createElement(element);
+
+    Object.keys(attributes).forEach(key =>
+      newElement.setAttribute(key, attributes[key])
     );
-    this.onLoadEnd = this.onLoadEnd.bind(this);
-  }
 
-  onMessage(e) {
-    if (
-      (e && e.nativeEvent && e.nativeEvent.data) ||
-      e.nativeEvent.data === "0"
-    ) {
-      const { height } = this.state;
-      const newHeight = parseInt(e.nativeEvent.data, 10);
+    component.appendChild(newElement);
+    // Do not remove this. This seems to notify polymer to correctly
+    // render the web component in more circumstances, specifically,
+    // its required to correctly re-render after a react re-render
+    newElement.outerHTML += "";
 
-      if (newHeight && newHeight > height) {
-        const updateState =
-          newHeight < 30 ? { height: newHeight + 30 } : { height: newHeight };
-        this.setState(updateState);
-      }
-    } else {
-      console.error(`Invalid height received ${e.nativeEvent.data}`); // eslint-disable-line no-console
-    }
-  }
+    placeholder.style.cssText += "display: none !important";
 
-  onLoadEnd() {
-    if (this.webview) {
-      this.webview.postMessage("thetimes.co.uk", "*");
-    }
-  }
-
-  handleNavigationStateChange(data) {
-    if (
-      !data.url.includes("data:text/html") &&
-      data.url.includes("http") &&
-      !data.url.includes(editorialLambdaOrigin)
-    ) {
-      // Need to handle native routing when something is clicked.
-      InteractiveWrapper.openURLInBrowser(data.url);
-      this.webview.reload();
-    }
+    await ensureImport(source);
   }
 
   render() {
-    const {
-      config: { dev, environment, platform, version },
-      id
-    } = this.props;
-    const { height } = this.state;
-    const uri = `${editorialLambdaProtocol}${editorialLambdaOrigin}/${editorialLambdaSlug}/${id}?dev=${dev}&env=${environment}&platform=${platform}&version=${version}`;
-    const scriptToInjectIOS = `window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};(${webviewEventCallbackSetup})({window});`;
-    const scriptToInjectAndroid = `
-      setTimeout(function() {
-        window.ReactNativeWebView.postMessage(document.documentElement.scrollHeight);
-      }, 500);
-      true;
-    `;
-    const scriptToInject =
-      Platform.OS === "ios" ? scriptToInjectIOS : scriptToInjectAndroid;
-
     return (
-      <WebView
-        injectedJavaScript={scriptToInject}
-        onLoadEnd={this.onLoadEnd}
-        onMessage={this.onMessage}
-        onNavigationStateChange={this.handleNavigationStateChange}
-        ref={ref => {
-          this.webview = ref;
-        }}
-        scrollEnabled={false}
-        source={{ uri }}
-        style={{ height }}
-      />
+      <>
+        <div
+          ref={this.placeholder}
+          style={{ height: 150, position: "relative" }}
+        >
+          <Placeholder />
+        </div>
+        <div ref={this.component} />
+      </>
     );
   }
 }
 
 InteractiveWrapper.propTypes = {
-  config: PropTypes.shape({}),
-  id: PropTypes.string.isRequired
+  attributes: PropTypes.object,
+  element: PropTypes.string.isRequired,
+  source: PropTypes.string.isRequired,
+  fetchPolyfill: PropTypes.func
 };
 
 InteractiveWrapper.defaultProps = {
-  config: {}
+  attributes: {},
+  fetchPolyfill: polyfillWCIfNecessary
 };
-
-InteractiveWrapper.ResponsiveImageInteractive = ResponsiveImageInteractive;
-
-export default InteractiveWrapper;

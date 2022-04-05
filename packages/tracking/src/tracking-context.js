@@ -76,6 +76,10 @@ const withTrackingContext = (
         decoratedEvent.attrs.eventTime = new Date().toISOString();
       }
 
+      if (attrs?.isLocked) {
+        decoratedEvent.article_locked_status = attrs.isLocked;
+      }
+
       this.analyticsStream(decoratedEvent);
     };
 

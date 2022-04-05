@@ -1,31 +1,53 @@
-import React from "react";
-import { View } from "react-native";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
-import styles from "../styles";
-import config from "./config";
+import { getSeparator, SliceContainer } from "../styles/responsive";
+import { getChildrenContainer, ChildContainer } from "./responsive";
+import { getConfig, getConfigWrapper } from "./config";
 
-const StandardSlice = ({ itemCount, renderItems }) => {
-  if (itemCount === 0) {
-    return null;
+const Separator = getSeparator({ hasLeftRightMargin: true });
+
+class StandardSlice extends Component {
+  constructor(props) {
+    super(props);
+
+    const { itemCount } = this.props;
+    this.ConfigWrapper = getConfigWrapper({ itemCount });
+    this.config = getConfig({ itemCount });
+    this.ChildrenContainer = getChildrenContainer({
+      childCount: itemCount
+    });
   }
 
-  return (
-    <View style={styles.container}>
-      {renderItems(config({ itemCount })).map((item, index) => (
-        <View
-          key={item.props.id}
-          style={
-            index === itemCount - 1
-              ? styles.itemContainerWithoutBorders
-              : styles.itemContainer
-          }
-        >
-          <View style={styles.item}>{item}</View>
-        </View>
-      ))}
-    </View>
-  );
-};
+  render() {
+    const { renderItems } = this.props;
+
+    const items = renderItems(this.config);
+
+    if (items.length === 0) {
+      return null;
+    }
+
+    const { ChildrenContainer, ConfigWrapper } = this;
+
+    return (
+      <ConfigWrapper>
+        <SliceContainer>
+          <ChildrenContainer>
+            {items
+              .map(item => (
+                <ChildContainer key={item.props.id}>{item}</ChildContainer>
+              ))
+              .reduce((previous, current) => [
+                ...(previous.length > 0 ? previous : [previous]),
+                <Separator key={`separator-${current.key}`} />,
+                current
+              ])}
+          </ChildrenContainer>
+        </SliceContainer>
+      </ConfigWrapper>
+    );
+  }
+}
 
 StandardSlice.propTypes = {
   itemCount: PropTypes.number.isRequired,

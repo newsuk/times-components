@@ -1,25 +1,17 @@
 import React from "react";
-import { View } from "react-native";
-import PropTypes from "prop-types";
 import ArticleTopics from "@times-components/article-topics";
-import { ResponsiveContext } from "@times-components/responsive";
+import PropTypes from "prop-types";
 import styles from "../styles/article-topics";
+import TopicsContainer from "../styles/article-topics/responsive";
 
-const ShowTopics = ({ topics, onPress }) => {
+const ShowTopics = ({ topics }) => {
   if (topics && topics.length > 0) {
     return (
-      <ResponsiveContext.Consumer>
-        {({ isTablet }) => (
-          <View
-            style={[
-              styles.topicsContainer,
-              isTablet && styles.topicsContainerTablet
-            ]}
-          >
-            <ArticleTopics onPress={onPress} topics={topics} />
-          </View>
-        )}
-      </ResponsiveContext.Consumer>
+      <TopicsContainer>
+        <nav>
+          <ArticleTopics style={styles.topicsContainer} topics={topics} />
+        </nav>
+      </TopicsContainer>
     );
   }
 
@@ -27,7 +19,6 @@ const ShowTopics = ({ topics, onPress }) => {
 };
 
 ShowTopics.propTypes = {
-  onPress: PropTypes.func.isRequired,
   topics: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,

@@ -13,7 +13,6 @@ import TopicHead from "./topic-head";
 import Head from "./head";
 
 const Topic = ({
-  adConfig,
   error,
   isLoading: isHeaderLoading,
   page,
@@ -23,7 +22,8 @@ const Topic = ({
   onPrev,
   refetch,
   slug,
-  topic
+  topic,
+  metaDescription
 }) => {
   const emptyStateMessage =
     "Unfortunately, there are no articles relating to this topic";
@@ -88,9 +88,18 @@ const Topic = ({
 
         return (
           <Responsive>
-            <Head {...{ description, name, slug }} />
+            <Head
+              {...{
+                metaDescription,
+                description,
+                name,
+                slug,
+                page,
+                articleCount: get(data, "articles.count", 0),
+                pageSize
+              }}
+            />
             <ArticleList
-              adConfig={adConfig}
               articleListHeader={articleListHeader}
               articles={get(data, "articles.list", [])}
               articlesLoading={articlesLoading}

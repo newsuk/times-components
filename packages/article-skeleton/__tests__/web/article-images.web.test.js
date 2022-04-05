@@ -1,3 +1,3 @@
-import shared from "../images.web";
+import shared from "../images";
 
 shared();

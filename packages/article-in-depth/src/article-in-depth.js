@@ -1,34 +1,26 @@
-/* eslint-disable consistent-return */
-
 import React, { Component, Fragment } from "react";
-import { View } from "react-native";
-import ArticleError from "@times-components/article-error";
-import ArticleSkeleton from "@times-components/article-skeleton";
-import ArticleLeadAsset from "@times-components/article-lead-asset";
+import ArticleSkeleton, {
+  ArticleKeylineItem
+} from "@times-components/article-skeleton";
+import { getHeadline, getLeadAsset } from "@times-components/utils";
 import { CentredCaption } from "@times-components/caption";
-import { ResponsiveContext } from "@times-components/responsive";
-import {
-  getHeadline,
-  getLeadAsset,
-  getStandardTemplateCrop
-} from "@times-components/utils";
-import Context from "@times-components/context";
+import Meta from "./article-meta/article-meta";
 import ArticleHeader from "./article-header/article-header";
 import {
-  articlePropTypes,
-  articleDefaultProps
+  articleDefaultProps,
+  articlePropTypes
 } from "./article-prop-types/article-prop-types";
-import Meta from "./article-meta/article-meta";
 import styles from "./styles";
+import { LeadAsset } from "./styles/responsive";
 
-class ArticleInDepth extends Component {
+class ArticlePage extends Component {
   constructor(props) {
     super(props);
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader({ width }) {
-    const { article, onAuthorPress, onImagePress, onVideoPress } = this.props;
+  renderHeader() {
+    const { article } = this.props;
     const {
       backgroundColour,
       bylines,
@@ -36,127 +28,89 @@ class ArticleInDepth extends Component {
       hasVideo,
       headline,
       label,
-      longRead,
       publicationName,
       publishedTime,
       shortHeadline,
       standfirst,
-      textColour
+      textColour,
+      updatedTime
     } = article;
+
     return (
-      <ResponsiveContext.Consumer>
-        {({ isTablet }) => (
-          <Fragment>
-            <ArticleHeader
-              backgroundColour={backgroundColour}
-              flags={expirableFlags}
-              hasVideo={hasVideo}
-              headline={getHeadline(headline, shortHeadline)}
-              isTablet={isTablet}
-              label={label}
-              longRead={longRead}
-              standfirst={standfirst}
-              textColour={textColour}
-            />
-            <ArticleLeadAsset
-              {...getLeadAsset(article)}
-              getImageCrop={getStandardTemplateCrop}
-              onImagePress={onImagePress}
-              onVideoPress={onVideoPress}
-              renderCaption={({ caption }) =>
-                caption && caption.text && <CentredCaption {...caption} />
-              }
-              style={[styles.leadAsset, isTablet && styles.leadAssetTablet]}
-              width={width}
-            />
-            <View
-              style={[
-                styles.metaContainer,
-                isTablet && styles.metaContainerTablet
-              ]}
-            >
-              <Meta
-                backgroundColour={backgroundColour}
-                bylines={bylines}
-                isTablet={isTablet}
-                onAuthorPress={onAuthorPress}
-                publicationName={publicationName}
-                publishedTime={publishedTime}
-                textColour={textColour}
-              />
-            </View>
-          </Fragment>
-        )}
-      </ResponsiveContext.Consumer>
+      <Fragment>
+        <ArticleHeader
+          backgroundColour={backgroundColour}
+          flags={expirableFlags}
+          hasVideo={hasVideo}
+          headline={getHeadline(headline, shortHeadline)}
+          label={label}
+          standfirst={standfirst}
+          textColour={textColour}
+          updatedTime={updatedTime}
+        />
+        <LeadAsset
+          {...getLeadAsset(article)}
+          renderCaption={({ caption }) => <CentredCaption {...caption} />}
+          style={styles.leadAsset}
+        />
+        <ArticleKeylineItem>
+          <Meta
+            backgroundColour={backgroundColour}
+            bylines={bylines}
+            publicationName={publicationName}
+            publishedTime={publishedTime}
+            textColour={textColour}
+          />
+        </ArticleKeylineItem>
+      </Fragment>
     );
   }
 
   render() {
-    const { error, refetch, isLoading } = this.props;
+    const {
+      article,
+      analyticsStream,
+      error,
+      isLoading,
+      logoUrl,
+      navigationMode,
+      receiveChildList,
+      commentingConfig,
+      isPreview,
+      swgProductId,
+      additionalRelatedArticlesFlag,
+      algoliaSearchKeys,
+      latestFromSectionFlag,
+      latestFromSection,
+      olympicsKeys
+    } = this.props;
 
-    if (error) {
-      return <ArticleError refetch={refetch} />;
-    }
-
-    if (isLoading) {
+    if (error || isLoading) {
       return null;
     }
 
-    const {
-      adConfig,
-      analyticsStream,
-      article,
-      interactiveConfig,
-      onAuthorPress,
-      onCommentGuidelinesPress,
-      onCommentsPress,
-      onImagePress,
-      onLinkPress,
-      onRelatedArticlePress,
-      onTopicPress,
-      onTwitterLinkPress,
-      onVideoPress,
-      onViewed,
-      receiveChildList
-    } = this.props;
-
     return (
-      <ResponsiveContext.Consumer>
-        {({ isTablet }) => (
-          <Context.Consumer>
-            {({ theme: { scale, dropCapFont } }) => (
-              <ArticleSkeleton
-                adConfig={adConfig}
-                analyticsStream={analyticsStream}
-                data={article}
-                dropCapFont={dropCapFont}
-                Header={this.renderHeader}
-                interactiveConfig={interactiveConfig}
-                isTablet={isTablet}
-                onAuthorPress={onAuthorPress}
-                onCommentGuidelinesPress={onCommentGuidelinesPress}
-                onCommentsPress={onCommentsPress}
-                onImagePress={onImagePress}
-                onLinkPress={onLinkPress}
-                onRelatedArticlePress={onRelatedArticlePress}
-                onTopicPress={onTopicPress}
-                onTwitterLinkPress={onTwitterLinkPress}
-                onVideoPress={onVideoPress}
-                onViewableItemsChanged={
-                  onViewed ? this.onViewableItemsChanged : null
-                }
-                receiveChildList={receiveChildList}
-                scale={scale}
-              />
-            )}
-          </Context.Consumer>
-        )}
-      </ResponsiveContext.Consumer>
+      <ArticleSkeleton
+        analyticsStream={analyticsStream}
+        data={article}
+        Header={this.renderHeader}
+        logoUrl={logoUrl}
+        receiveChildList={receiveChildList}
+        navigationMode={navigationMode}
+        commentingConfig={commentingConfig}
+        isPreview={isPreview}
+        swgProductId={swgProductId}
+        additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
+        algoliaSearchKeys={algoliaSearchKeys}
+        latestFromSectionFlag={latestFromSectionFlag}
+        latestFromSection={latestFromSection}
+        olympicsKeys={olympicsKeys}
+      />
     );
   }
 }
 
-ArticleInDepth.propTypes = articlePropTypes;
-ArticleInDepth.defaultProps = articleDefaultProps;
+ArticlePage.propTypes = articlePropTypes;
+ArticlePage.defaultProps = articleDefaultProps;
 
-export default ArticleInDepth;
+export default ArticlePage;

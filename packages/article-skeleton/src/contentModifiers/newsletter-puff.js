@@ -1,3 +1,5 @@
+import { getIsLiveOrBreakingFlag } from "../data-helper";
+
 const setNewsletterPayload = attributes => ({
   name: "autoNewsletterPuff",
   attributes: {
@@ -25,17 +27,6 @@ const newslettersBySection = [
     })
   },
   {
-    section: "comment",
-    payload: setNewsletterPayload({
-      code: "TNL-104",
-      headline: "Comment and Opinion",
-      copy:
-        "Wit and wisdom from our award-winning stable of columnists and guest writers, including Caitlin Moran, Matthew Parris, Rod Liddle and Dominic Lawson.",
-      imageUri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb49851bd-b182-43fc-bd5d-1816bcda19fe.jpg?resize=800"
-    })
-  },
-  {
     section: "business",
     payload: setNewsletterPayload({
       code: "TNL-103",
@@ -44,17 +35,6 @@ const newslettersBySection = [
         "In-depth analysis and comment on the latest financial and economic news from our award-winning Business teams.",
       imageUri:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F306637af-2b6f-48fc-b264-d661b2067818.jpg?resize=800"
-    })
-  },
-  {
-    section: "sport",
-    payload: setNewsletterPayload({
-      code: "TNL-112",
-      headline: "Sport",
-      copy:
-        "Every Friday morning, Elgan Alderman looks ahead to the weekend, featuring exclusive interviews, agenda-setting comment and razor-sharp analysis.",
-      imageUri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8920eef8-e084-47db-a1bf-00be3d72080e.jpg?resize=800"
     })
   },
   {
@@ -114,8 +94,8 @@ const checkParagraphs = (children, paywall) => {
   return paragraphs + paywallParagraphs >= 5;
 };
 
-const insertNewsletterPuff = (section, isPreview) => children => {
-  if (isPreview) return children;
+const insertNewsletterPuff = (section, isPreview, flags) => children => {
+  if (isPreview || getIsLiveOrBreakingFlag(flags)) return children;
 
   const newsletterPuff = getNewsletterPuff(section);
   if (!newsletterPuff) return children;

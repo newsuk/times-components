@@ -1,3 +1,3 @@
-import shared from "../shared-states.web";
+import shared from "../shared-states";
 
 shared();

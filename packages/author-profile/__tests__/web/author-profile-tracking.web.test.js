@@ -1,3 +1,3 @@
-import shared from "../shared-tracking.web";
+import shared from "../shared-tracking";
 
 shared();

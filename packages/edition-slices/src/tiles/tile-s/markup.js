@@ -1,16 +1,12 @@
 import React from "react";
-import { Text } from "react-native";
-import { editionBreakpoints } from "@times-components/styleguide";
-import stylefactory from "./styles";
-
-const styles = stylefactory(editionBreakpoints.small);
+import styles from "./styles";
 
 export default {
   bold(key, attributes, renderedChildren) {
     return (
-      <Text key={key} style={styles.bold}>
+      <b key={key} style={styles.bold}>
         {renderedChildren}
-      </Text>
+      </b>
     );
   }
 };

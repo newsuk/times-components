@@ -3,6 +3,81 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.9.8](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.7...@times-components/tracking@2.9.8) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.7](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.6...@times-components/tracking@2.9.7) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.6](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.5...@times-components/tracking@2.9.6) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.5](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.4...@times-components/tracking@2.9.5) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.4](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.3...@times-components/tracking@2.9.4) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.2...@times-components/tracking@2.9.3) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.1...@times-components/tracking@2.9.2) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.9.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.9.0...@times-components/tracking@2.9.1) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+# [2.9.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.8.5...@times-components/tracking@2.9.0) (2021-10-28)
+
+
+### Features
+
+* **GEA-246:** add article_locked_status value to article tracking ([#2809](https://github.com/newsuk/times-components/issues/2809)) ([55e3f7a](https://github.com/newsuk/times-components/commit/55e3f7a2089a7d308ec8976eb558a7d20ed1ddbb))
+
+
+
+
+
 ## [2.8.5](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.8.4...@times-components/tracking@2.8.5) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/tracking

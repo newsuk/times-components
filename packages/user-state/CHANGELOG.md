@@ -3,6 +3,76 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.2.0...@times-components/user-state@0.3.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.69...@times-components/user-state@0.2.0) (2022-02-16)
+
+
+### Features
+
+* **TDP-1329:** Unlock related articles to users with access to full articles  ([#2855](https://github.com/newsuk/times-components/issues/2855)) ([741b04d](https://github.com/newsuk/times-components/commit/741b04d055350897bad80c97535f189d9ea6eb14))
+
+
+
+
+
+## [0.1.69](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.68...@times-components/user-state@0.1.69) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
+## [0.1.68](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.67...@times-components/user-state@0.1.68) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
+## [0.1.67](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.66...@times-components/user-state@0.1.67) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
+## [0.1.66](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.65...@times-components/user-state@0.1.66) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
+## [0.1.65](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.64...@times-components/user-state@0.1.65) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
+## [0.1.64](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.63...@times-components/user-state@0.1.64) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
 ## [0.1.63](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.62...@times-components/user-state@0.1.63) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/user-state

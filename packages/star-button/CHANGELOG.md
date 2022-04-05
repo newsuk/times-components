@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.53](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.3.52...@times-components/star-button@0.3.53) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.3.52](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.3.51...@times-components/star-button@0.3.52) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.3.51](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.3.50...@times-components/star-button@0.3.51) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.3.50](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.3.49...@times-components/star-button@0.3.50) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.3.49](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.3.48...@times-components/star-button@0.3.49) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.3.48](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.3.47...@times-components/star-button@0.3.48) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.3.47](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.3.46...@times-components/star-button@0.3.47) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.3.46](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.3.45...@times-components/star-button@0.3.46) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
 ## [0.3.45](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.3.44...@times-components/star-button@0.3.45) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/star-button

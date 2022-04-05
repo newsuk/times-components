@@ -1,20 +1,20 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text } from "react-native";
 import styles from "../styles";
+import { StandfirstContainer } from "../styles/responsive";
 
 const HeaderStandfirst = ({ standfirst }) => {
   if (!standfirst) return null;
 
   return (
-    <Text
+    <StandfirstContainer
       accessibilityRole="header"
       aria-level="2"
       style={styles.standFirst}
       testID="standfirst"
     >
       {standfirst}
-    </Text>
+    </StandfirstContainer>
   );
 };
 

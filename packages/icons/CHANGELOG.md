@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.16.11](https://github.com/newsuk/times-components/compare/@times-components/icons@2.16.10...@times-components/icons@2.16.11) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.16.10](https://github.com/newsuk/times-components/compare/@times-components/icons@2.16.9...@times-components/icons@2.16.10) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.16.9](https://github.com/newsuk/times-components/compare/@times-components/icons@2.16.8...@times-components/icons@2.16.9) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.16.8](https://github.com/newsuk/times-components/compare/@times-components/icons@2.16.7...@times-components/icons@2.16.8) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.16.7](https://github.com/newsuk/times-components/compare/@times-components/icons@2.16.6...@times-components/icons@2.16.7) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.16.6](https://github.com/newsuk/times-components/compare/@times-components/icons@2.16.5...@times-components/icons@2.16.6) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.16.5](https://github.com/newsuk/times-components/compare/@times-components/icons@2.16.4...@times-components/icons@2.16.5) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.16.4](https://github.com/newsuk/times-components/compare/@times-components/icons@2.16.3...@times-components/icons@2.16.4) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
 ## [2.16.3](https://github.com/newsuk/times-components/compare/@times-components/icons@2.16.2...@times-components/icons@2.16.3) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/icons

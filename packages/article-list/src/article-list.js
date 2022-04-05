@@ -1,114 +1,41 @@
-import React, { Component } from "react";
-import { ActivityIndicator, FlatList, View } from "react-native";
+/* eslint-env browser */
+import React, { Component, Fragment } from "react";
+import { View } from "react-native";
+import { AdContainer } from "@times-components/ad";
 import Button from "@times-components/button";
-import { colours, tabletWidth } from "@times-components/styleguide";
+import ErrorView from "@times-components/error-view";
+import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import {
-  normaliseWidthForAssetRequestCache,
-  screenWidthInPixels
-} from "@times-components/utils";
+import { normaliseWidthForAssetRequestCache } from "@times-components/utils";
+import LazyLoad from "@times-components/lazy-load";
+import { scrollUpToPaging } from "./utils/index";
 import ArticleListError from "./article-list-error";
-import ArticleListItemWithError from "./article-list-item-with-error";
+import ArticleListItem from "./article-list-item";
 import ArticleListItemSeparator from "./article-list-item-separator";
+import ArticleListPagination from "./article-list-pagination";
 import { propTypes, defaultProps } from "./article-list-prop-types";
 import ArticleListEmptyState from "./article-list-empty-state";
-import styles from "./styles";
-
-const viewabilityConfig = {
-  viewAreaCoveragePercentThreshold: 100,
-  waitForInteraction: false
-};
+import styles, { retryButtonStyles } from "./styles/index";
+import { ListContentContainer, InlineAdWrapper } from "./styles/responsive";
 
 class ArticleList extends Component {
-  constructor(props) {
-    super(props);
-    this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
-    this.fetchMoreOnEndReached = this.fetchMoreOnEndReached.bind(this);
-    this.renderItem = this.renderItem.bind(this);
-    this.state = {
-      loadingMore: false,
-      loadMoreError: null,
-      width: normaliseWidthForAssetRequestCache(screenWidthInPixels())
-    };
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
-    const { articles, articleListHeader } = this.props;
-    const {
-      articles: nextArticles,
-      articleListHeader: nextArticleListHeader
-    } = nextProps;
-    return (
-      !articles ||
-      !nextArticles ||
-      articles !== nextArticles ||
-      articles.length !== nextArticles.length ||
-      articleListHeader !== nextArticleListHeader ||
-      this.state !== nextState
-    );
-  }
-
-  componentWillUnmount() {
-    global.cancelAnimationFrame(this.scrollAnimationFrame);
-  }
-
-  onViewableItemsChanged(info) {
-    const { articles, onViewed } = this.props;
-    if (!info.changed.length) return [];
-
-    return info.changed
-      .filter(viewableItem => viewableItem.isViewable)
-      .map(viewableItem => onViewed(viewableItem.item, articles));
-  }
-
-  fetchMoreOnEndReached(data) {
-    const { fetchMore } = this.props;
-    const { loadingMore, loadMoreError } = this.state;
-    if (loadMoreError || loadingMore) {
+  static getImageSize(node) {
+    if (typeof window === "undefined") {
       return null;
     }
 
-    this.setState({ loadingMore: true });
-
-    return new Promise((res, rej) =>
-      fetchMore(data.length)
-        .then(() => this.setState({ loadingMore: false }, res))
-        .catch(error =>
-          this.setState(
-            {
-              loadingMore: false,
-              loadMoreError: error
-            },
-            rej
-          )
-        )
-    );
+    return node ? normaliseWidthForAssetRequestCache(node.clientWidth) : null;
   }
 
-  renderItem({ item, index }) {
-    const {
-      articles,
-      articlesLoading,
-      imageRatio,
-      onArticlePress,
-      pageSize,
-      showImages
-    } = this.props;
-    const { width } = this.state;
+  constructor(props) {
+    super(props);
 
-    return (
-      <ArticleListItemWithError
-        article={item.isLoading ? null : item}
-        highResSize={width}
-        imageRatio={imageRatio}
-        index={index}
-        isLoading={item.isLoading === true}
-        length={articlesLoading ? pageSize : articles.length}
-        onPress={onArticlePress}
-        showImage={showImages}
-        testID={`articleList-${index}`}
-      />
-    );
+    this.advertPosition = 4;
+  }
+
+  shouldComponentUpdate(nextProps) {
+    const { page } = this.props;
+    return page === nextProps.page;
   }
 
   render() {
@@ -116,27 +43,57 @@ class ArticleList extends Component {
       articleListHeader,
       articles,
       articlesLoading,
-      count,
+      count = 0,
       emptyStateMessage,
       error,
-      onViewed,
+      imageRatio,
+      onNext,
+      onPrev,
+      scrollToTop = true,
+      page = 0,
       pageSize,
       receiveChildList,
-      refetch
+      refetch,
+      showImages
     } = this.props;
-    const { loadMoreError } = this.state;
 
-    if (error) {
-      return (
-        <View style={styles.listErrorContainer}>
-          {articleListHeader}
-          <View>
-            <ArticleListError />
-          </View>
-          <Button onPress={refetch} title="Retry" />
+    const paginationComponent = ({
+      hideResults = false,
+      autoScroll = false
+    } = {}) => (
+      <ArticleListPagination
+        count={count}
+        hideResults={hideResults}
+        onNext={(...args) => {
+          onNext(...args);
+          if (autoScroll && typeof window !== "undefined")
+            scrollUpToPaging(window);
+        }}
+        onPrev={(...args) => {
+          onPrev(...args);
+          if (autoScroll && typeof window !== "undefined")
+            scrollUpToPaging(window);
+        }}
+        page={page}
+        pageSize={pageSize}
+      />
+    );
+
+    const ErrorComponent = (
+      <ListContentContainer>
+        {paginationComponent()}
+        <View style={styles.listContentErrorContainer}>
+          <ArticleListError />
+          <Button onPress={refetch} style={retryButtonStyles} title="Retry" />
         </View>
-      );
-    }
+      </ListContentContainer>
+    );
+
+    const renderAdComponent = () => (
+      <InlineAdWrapper>
+        <AdContainer isLoading={articlesLoading} slotName="articleListAd" />
+      </InlineAdWrapper>
+    );
 
     const data = articlesLoading
       ? Array(pageSize)
@@ -151,82 +108,91 @@ class ArticleList extends Component {
           elementId: `${article.id}.${index}`
         }));
 
+    const Contents = ({ clientHasRendered, observed, registerNode }) =>
+      data.length === 0 ? (
+        <ArticleListEmptyState message={emptyStateMessage} />
+      ) : (
+        <View>
+          <ListContentContainer>
+            {paginationComponent({ autoScroll: false, hideResults: false })}
+          </ListContentContainer>
+          {data &&
+            data.map((item, index) => {
+              const { elementId } = item;
+
+              const renderAd = () => {
+                if (index === this.advertPosition) {
+                  return renderAdComponent({ key: `advert${index}` });
+                }
+
+                return null;
+              };
+
+              const renderSeparator = () => {
+                if (index === 0) {
+                  return null;
+                }
+
+                return <ArticleListItemSeparator />;
+              };
+
+              return (
+                <Fragment key={elementId}>
+                  <div
+                    accessibility-label={elementId}
+                    data-testid={`article-list-item-${index}`}
+                    id={elementId}
+                    ref={node => registerNode(node)}
+                  >
+                    <ErrorView>
+                      {({ hasError }) =>
+                        hasError ? null : (
+                          <ListContentContainer>
+                            {renderSeparator()}
+                            <ArticleListItem
+                              article={item.isLoading ? null : item}
+                              fadeImageIn={clientHasRendered}
+                              highResSize={ArticleList.getImageSize(
+                                observed.get(elementId)
+                              )}
+                              imageRatio={imageRatio}
+                              index={index}
+                              isLoading={item.isLoading === true}
+                              length={data.length}
+                              lowResQuality={3}
+                              lowResSize={200}
+                              showImage={showImages}
+                            />
+                          </ListContentContainer>
+                        )
+                      }
+                    </ErrorView>
+                  </div>
+                  {renderAd()}
+                </Fragment>
+              );
+            })}
+          {paginationComponent({ autoScroll: scrollToTop, hideResults: true })}
+        </View>
+      );
+
     if (!articlesLoading) receiveChildList(data);
 
-    const articleListFooter = () => {
-      if (data.length >= count) {
-        return null;
-      }
-      if (loadMoreError) {
-        return (
-          <View>
-            <ArticleListItemSeparator />
-            <View style={styles.showMoreRetryContainer}>
-              <Button
-                onPress={() =>
-                  new Promise((res, rej) => {
-                    this.setState({ loadMoreError: null }, () =>
-                      this.fetchMoreOnEndReached(data)
-                        .then(res)
-                        .catch(rej)
-                    );
-                  })
-                }
-                title="Retry"
-              />
-            </View>
-          </View>
-        );
-      }
-
-      return (
-        <View style={{ flexDirection: "row", justifyContent: "center" }}>
-          <View style={{ flex: 1, maxWidth: tabletWidth }}>
-            <ArticleListItemSeparator />
-            <ActivityIndicator
-              color={colours.functional.keyline}
-              size="large"
-              style={styles.loadingContainer}
-            />
-          </View>
-        </View>
-      );
-    };
-
-    if (!articlesLoading && !error && data.length === 0) {
-      return (
-        <View style={styles.listEmptyStateContainer}>
-          {articleListHeader}
-          <ArticleListEmptyState message={emptyStateMessage} />
-        </View>
-      );
-    }
-
     return (
-      <FlatList
-        removeClippedSubviews
-        accessibilityID="scroll-view"
-        data={data}
-        ItemSeparatorComponent={() => (
-          <View style={styles.listItemSeparatorContainer}>
-            <ArticleListItemSeparator />
+      <LazyLoad rootMargin={spacing(40)} threshold={0}>
+        {({ clientHasRendered, observed, registerNode }) => (
+          <View accessibilityRole="main">
+            {articleListHeader}
+            {error
+              ? ErrorComponent
+              : Contents({
+                  clientHasRendered,
+                  observed,
+                  registerNode
+                })}
           </View>
         )}
-        keyExtractor={item => item.elementId}
-        ListFooterComponent={articleListFooter}
-        ListHeaderComponent={articleListHeader}
-        nestedScrollEnabled
-        onEndReached={() =>
-          // Workaround for iOS Flatlist bug (https://github.com/facebook/react-native/issues/16067)
-          data.length > 0 ? this.fetchMoreOnEndReached(data) : null
-        }
-        onEndReachedThreshold={2}
-        onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
-        renderItem={this.renderItem}
-        testID="scroll-view"
-        viewabilityConfig={viewabilityConfig}
-        windowSize={5}
-      />
+      </LazyLoad>
     );
   }
 }

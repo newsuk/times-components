@@ -1,9 +1,10 @@
 import React from "react";
-import { Text, View } from "react-native";
-import PropTypes from "prop-types";
-import { ArticleFlags } from "@times-components/article-flag";
-import { ModalImage } from "@times-components/image";
-import { ResponsiveContext } from "@times-components/responsive";
+import {
+  ArticleFlags,
+  UpdatedTimeProvider
+} from "@times-components/ts-components";
+import Image from "@times-components/image";
+
 import Label from "../article-label/article-label";
 import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
@@ -13,6 +14,13 @@ import {
 } from "./article-header-prop-types";
 import styles from "../styles";
 
+import {
+  AuthorImageContainer,
+  FlagsContainer,
+  HeaderContainer,
+  HeadlineContainer
+} from "../styles/responsive";
+
 const ArticleHeader = ({
   authorImage,
   bylines,
@@ -20,54 +28,42 @@ const ArticleHeader = ({
   hasVideo,
   headline,
   label,
-  longRead,
-  onAuthorPress,
-  onImagePress,
   publicationName,
   publishedTime,
-  standfirst
+  standfirst,
+  updatedTime
 }) => (
-  <ResponsiveContext.Consumer>
-    {({ isTablet }) => (
-      <View style={[styles.header, isTablet && styles.headerTablet]}>
-        <View style={[styles.container, isTablet && styles.containerTablet]}>
-          <ModalImage
-            aspectRatio={1}
-            style={styles.authorImage}
-            uri={authorImage}
-            onImagePress={onImagePress ? () => onImagePress(0) : undefined}
-            rounded
-          />
-          <Label isVideo={hasVideo} label={label} />
-          <Text
-            style={[
-              styles.articleHeadline,
-              isTablet && styles.articleHeadlineTablet
-            ]}
-          >
-            {headline}
-          </Text>
-          <ArticleFlags flags={flags} longRead={longRead} withContainer />
-          <Standfirst standfirst={standfirst} />
-          <Meta
-            bylines={bylines}
-            hasStandfirst={standfirst}
-            isTablet={isTablet}
-            onAuthorPress={onAuthorPress}
-            publicationName={publicationName}
-            publishedTime={publishedTime}
-          />
-        </View>
-      </View>
-    )}
-  </ResponsiveContext.Consumer>
+  <HeaderContainer style={[styles.header, styles.container]}>
+    <AuthorImageContainer style={styles.authorImage}>
+      <Image
+        aspectRatio={1}
+        uri={authorImage}
+        accessibilityLabel="author-image"
+      />
+    </AuthorImageContainer>
+    <Label isVideo={hasVideo} label={label} />
+    <HeadlineContainer
+      accessibilityRole="header"
+      aria-level="1"
+      style={styles.articleHeadline}
+    >
+      {headline}
+    </HeadlineContainer>
+    <FlagsContainer>
+      <UpdatedTimeProvider updatedTime={updatedTime}>
+        <ArticleFlags flags={flags} />
+      </UpdatedTimeProvider>
+    </FlagsContainer>
+    <Standfirst standfirst={standfirst} />
+    <Meta
+      bylines={bylines}
+      publicationName={publicationName}
+      publishedTime={publishedTime}
+    />
+  </HeaderContainer>
 );
 
-ArticleHeader.propTypes = {
-  ...articleHeaderPropTypes,
-  onAuthorPress: PropTypes.func.isRequired
-};
-
+ArticleHeader.propTypes = articleHeaderPropTypes;
 ArticleHeader.defaultProps = articleHeaderDefaultProps;
 
 export default ArticleHeader;

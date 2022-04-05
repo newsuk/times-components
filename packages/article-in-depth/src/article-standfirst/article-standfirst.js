@@ -1,21 +1,21 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text } from "react-native";
 import { colours } from "@times-components/styleguide";
 import styles from "../styles";
+import { StandfirstContainer } from "../styles/responsive";
 
 const HeaderStandfirst = ({ standfirst, color }) => {
   if (!standfirst) return null;
 
   return (
-    <Text
+    <StandfirstContainer
       accessibilityRole="header"
       aria-level="2"
       style={[styles.standFirst, { color }]}
       testID="standfirst"
     >
       {standfirst}
-    </Text>
+    </StandfirstContainer>
   );
 };
 

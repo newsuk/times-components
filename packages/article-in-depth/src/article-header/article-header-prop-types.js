@@ -27,7 +27,8 @@ const articleHeaderPropTypes = {
       green: PropTypes.number,
       red: PropTypes.number
     })
-  })
+  }),
+  updatedTime: PropTypes.string
 };
 
 const articleHeaderDefaultProps = {
@@ -51,7 +52,8 @@ const articleHeaderDefaultProps = {
       green: 0,
       red: 0
     }
-  }
+  },
+  updatedTime: null
 };
 
 export { articleHeaderPropTypes, articleHeaderDefaultProps };

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-byline",
-  "version": "3.5.37",
+  "version": "3.6.0",
   "description": "Article byline information",
   "main": "dist/article-byline",
   "dev": "src/article-byline",
@@ -21,10 +21,7 @@
     "url": "git+https://github.com/newsuk/times-components.git"
   },
   "keywords": [
-    "react-native-web",
     "react",
-    "native",
-    "web",
     "article-byline",
     "component"
   ],
@@ -35,12 +32,12 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@times-components/eslint-config-thetimes": "0.8.17",
-    "@times-components/jest-configurator": "2.7.2",
-    "@times-components/jest-serializer": "3.2.26",
-    "@times-components/storybook": "4.1.66",
-    "@times-components/test-utils": "2.3.9",
-    "@times-components/webpack-configurator": "2.0.28",
+    "@times-components/eslint-config-thetimes": "0.8.18",
+    "@times-components/jest-configurator": "2.8.0",
+    "@times-components/jest-serializer": "3.2.29",
+    "@times-components/storybook": "4.2.0",
+    "@times-components/test-utils": "2.3.10",
+    "@times-components/webpack-configurator": "2.0.29",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -60,12 +57,14 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/link": "3.6.44",
-    "@times-components/markup": "3.4.60",
-    "@times-components/markup-forest": "1.7.34",
-    "@times-components/styleguide": "3.38.22",
-    "@times-components/tracking": "2.8.5",
-    "prop-types": "15.7.2"
+    "@times-components/link": "3.7.0",
+    "@times-components/markup": "3.4.68",
+    "@times-components/markup-forest": "1.8.1",
+    "@times-components/styleguide": "3.38.30",
+    "@times-components/tracking": "2.9.8",
+    "@times-components/utils": "6.6.0",
+    "prop-types": "15.7.2",
+    "styled-components": "4.3.2"
   },
   "resolutions": {
     "react": "16.9.0",
@@ -73,9 +72,7 @@
   },
   "peerDependencies": {
     "react": ">=16.9",
-    "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-dom": ">=16.9"
   },
   "publishConfig": {
     "access": "public"

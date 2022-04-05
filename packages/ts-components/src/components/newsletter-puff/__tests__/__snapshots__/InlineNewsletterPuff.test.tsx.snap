@@ -11,12 +11,13 @@ exports[`Inline Newsletter Puff Clicking Subscribe renders 'saving' when the but
       >
         <div
           class="css-view-1dbjc4n"
+          data-testid="Image"
         >
           <div
-            style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 70.42253521126761%;"
+            style="padding-bottom: 70.42253521126761%;"
           >
             <img
-              class="responsiveweb-sc-142djdt-0 jYhpic"
+              class="responsive-sc-1nnon4d-0 iJeVQt"
               src="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
             />
             <div
@@ -91,12 +92,13 @@ exports[`Inline Newsletter Puff Manage preferences  renders the success view aft
       >
         <div
           class="css-view-1dbjc4n"
+          data-testid="Image"
         >
           <div
-            style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 70.42253521126761%;"
+            style="padding-bottom: 70.42253521126761%;"
           >
             <img
-              class="responsiveweb-sc-142djdt-0 jYhpic"
+              class="responsive-sc-1nnon4d-0 iJeVQt"
               src="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
             />
             <div
@@ -138,7 +140,7 @@ exports[`Inline Newsletter Puff Manage preferences  renders the success view aft
           class="sc-bdVaJa sc-gZMcBi hBIkUX"
         >
           <a
-            class="linkweb__RespLink-yfb9n-0 cCCShB"
+            class="link__RespLink-sc-1ocvixa-0 dfMuic"
             href="https://home.thetimes.co.uk/myNews"
           >
             <div
@@ -229,12 +231,13 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
       >
         <div
           class="css-view-1dbjc4n"
+          data-testid="Image"
         >
           <div
-            style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 70.42253521126761%;"
+            style="padding-bottom: 70.42253521126761%;"
           >
             <img
-              class="responsiveweb-sc-142djdt-0 jYhpic"
+              class="responsive-sc-1nnon4d-0 iJeVQt"
               src="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
             />
             <div
@@ -309,12 +312,13 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
       >
         <div
           class="css-view-1dbjc4n"
+          data-testid="Image"
         >
           <div
-            style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 70.42253521126761%;"
+            style="padding-bottom: 70.42253521126761%;"
           >
             <img
-              class="responsiveweb-sc-142djdt-0 jYhpic"
+              class="responsive-sc-1nnon4d-0 iJeVQt"
               src="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
             />
             <div

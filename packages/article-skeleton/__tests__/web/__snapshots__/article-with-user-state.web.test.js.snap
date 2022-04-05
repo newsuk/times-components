@@ -11,7 +11,9 @@ exports[`Article with user state Render full article when user has access to ful
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -276,43 +278,47 @@ exports[`Article with user state Render full article when user has access to ful
                 "name": "keyFacts",
               }
             }
+            headline="Some Headline"
+            section="Some Section"
           />
           <div>
             <div>
-              Related Articles
-            </div>
-            <nav>
               <div>
+                Related Articles
+              </div>
+              <nav>
                 <div>
-                  <a
-                    href="https://ra.io"
-                  >
+                  <div>
+                    <a
+                      href="https://ra.io"
+                    >
+                      <div>
+                        <img
+                          src="https://racrop169.io"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <section>
+                    <a
+                      href="https://ra.io"
+                    >
+                      <h3>
+                        Headline
+                      </h3>
+                    </a>
+                    <div />
                     <div>
-                      <img
-                        src="https://racrop169.io"
+                      <DatePublication
+                        date="2015-03-23T19:39:39.000Z"
+                        showDay={false}
                       />
                     </div>
-                  </a>
+                    <div />
+                  </section>
                 </div>
-                <section>
-                  <a
-                    href="https://ra.io"
-                  >
-                    <h3>
-                      Headline
-                    </h3>
-                  </a>
-                  <div />
-                  <div>
-                    <DatePublication
-                      date="2015-03-23T19:39:39.000Z"
-                      showDay={false}
-                    />
-                  </div>
-                  <div />
-                </section>
-              </div>
-            </nav>
+              </nav>
+            </div>
           </div>
         </span>
         <div
@@ -412,7 +418,9 @@ exports[`Article with user state Render teaser article when user does not have a
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
@@ -677,43 +685,47 @@ exports[`Article with user state Render teaser article when user does not have a
                 "name": "keyFacts",
               }
             }
+            headline="Some Headline"
+            section="Some Section"
           />
           <div>
             <div>
-              Related Articles
-            </div>
-            <nav>
               <div>
+                Related Articles
+              </div>
+              <nav>
                 <div>
-                  <a
-                    href="https://ra.io"
-                  >
+                  <div>
+                    <a
+                      href="https://ra.io"
+                    >
+                      <div>
+                        <img
+                          src="https://racrop169.io"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <section>
+                    <a
+                      href="https://ra.io"
+                    >
+                      <h3>
+                        Headline
+                      </h3>
+                    </a>
+                    <div />
                     <div>
-                      <img
-                        src="https://racrop169.io"
+                      <DatePublication
+                        date="2015-03-23T19:39:39.000Z"
+                        showDay={false}
                       />
                     </div>
-                  </a>
+                    <div />
+                  </section>
                 </div>
-                <section>
-                  <a
-                    href="https://ra.io"
-                  >
-                    <h3>
-                      Headline
-                    </h3>
-                  </a>
-                  <div />
-                  <div>
-                    <DatePublication
-                      date="2015-03-23T19:39:39.000Z"
-                      showDay={false}
-                    />
-                  </div>
-                  <div />
-                </section>
-              </div>
-            </nav>
+              </nav>
+            </div>
           </div>
         </span>
         <div

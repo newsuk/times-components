@@ -1,12 +1,7 @@
 import PropTypes from "prop-types";
 
-export const propTypes = {
-  fontStyle: PropTypes.object.isRequired,
-  item: PropTypes.object.isRequired,
+export default {
   listIndex: PropTypes.number.isRequired,
-  onLinkPress: PropTypes.func
-};
-
-export const defaultProps = {
-  onLinkPress: () => {}
+  keyFactItem: PropTypes.object.isRequired,
+  fireAnalyticsEvent: PropTypes.func.isRequired
 };

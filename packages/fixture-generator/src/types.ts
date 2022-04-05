@@ -928,7 +928,9 @@ export enum Flag {
   New = "NEW",
   Exclusive = "EXCLUSIVE",
   Updated = "UPDATED",
-  Sponsored = "SPONSORED"
+  Sponsored = "SPONSORED",
+  Live = "LIVE",
+  Breaking = "BREAKING"
 }
 
 export enum SectionName {

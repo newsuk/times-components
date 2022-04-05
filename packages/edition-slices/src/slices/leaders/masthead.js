@@ -1,21 +1,22 @@
 import React from "react";
-import { Image } from "react-native";
+import Image from "@times-components/image";
 import styleFactory from "./styles";
 import propTypes from "./proptypes";
 
 const MastHead = ({ publicationName, breakpoint }) => {
+  let uri = "https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png";
+  let aspectRatio = 1435 / 250;
   let style = "mastheadStyleTimes";
-  // eslint-disable-next-line global-require
-  let source = require("../../../assets/times-leading-header.png");
   const styles = styleFactory(breakpoint);
 
   if (publicationName !== "TIMES") {
     style = "mastheadStyleST";
-    // eslint-disable-next-line global-require
-    source = require("../../../assets/st-masthead.png");
+    aspectRatio = 243 / 45;
+    uri =
+      "https://www.thetimes.co.uk/d/img/logos/sundaytimes-with-crest-black-53d6e31fb8.png";
   }
 
-  return <Image resizeMode="contain" source={source} style={styles[style]} />;
+  return <Image aspectRatio={aspectRatio} style={styles[style]} uri={uri} />;
 };
 
 MastHead.propTypes = propTypes;

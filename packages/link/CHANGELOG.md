@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.7.0](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.51...@times-components/link@3.7.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [3.6.51](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.50...@times-components/link@3.6.51) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.50](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.49...@times-components/link@3.6.50) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.49](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.48...@times-components/link@3.6.49) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.48](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.47...@times-components/link@3.6.48) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.47](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.46...@times-components/link@3.6.47) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.46](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.45...@times-components/link@3.6.46) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.45](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.44...@times-components/link@3.6.45) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
 ## [3.6.44](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.43...@times-components/link@3.6.44) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/link

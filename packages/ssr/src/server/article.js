@@ -20,13 +20,14 @@ module.exports = (
     commentingConfig,
     paidContentClassName,
     isPreview,
+    swgProductId,
     additionalRelatedArticlesFlag,
-    inlineRelatedArticlesFlag,
     algoliaSearchKeys,
     latestFromSectionFlag,
     latestFromSection,
     olympicsKeys,
-    getFallbackThumbnailUrl169
+    getFallbackThumbnailUrl169,
+    commentCount
   },
   userState
 ) => {
@@ -75,12 +76,13 @@ module.exports = (
       userState,
       paidContentClassName,
       isPreview,
+      swgProductId,
       additionalRelatedArticlesFlag,
-      inlineRelatedArticlesFlag,
       algoliaSearchKeys,
       latestFromSectionFlag,
       latestFromSection,
-      olympicsKeys
+      olympicsKeys,
+      commentCount
     },
     name: "article"
   };

@@ -1,80 +1,90 @@
 /* eslint-disable react/prop-types */
-import React from "react";
-import { ContextProviderWithDefaults } from "@times-components/context";
+import React, { Fragment } from "react";
 import coreRenderers from "@times-components/markup";
 import { renderTree } from "@times-components/markup-forest";
-import { sections } from "@times-components/storybook";
-import { scales, themeFactory } from "@times-components/styleguide";
+import { colours, themeFactory } from "@times-components/styleguide";
+import { ArticleLink } from "@times-components/article-skeleton";
 import paragraphData from "./fixtures/paragraph-showcase.json";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
 import dropCapShortTextData from "./fixtures/drop-cap-short-text-showcase.json";
+import dropCapAsLink from "./fixtures/drop-cap-as-link-showcase.json";
+import dropCapAsQuote from "./fixtures/drop-cap-as-quote-showcase.json";
 import ArticleParagraph from "./src";
 import DropCapView from "./src/drop-cap";
 
-const renderParagraphWithScale = ({ select, boolean }, ast) => {
-  const scale = select("Scale", scales, scales.medium);
-  const section = select("Section", sections, "The Times Magazine");
-  const theme = themeFactory(section, "magazinestandard");
-  const enableDropcap = boolean && boolean("Enable DropCap", true);
+const dropCapTypes = { dropCap: dropCapData, dropCapAsLink, dropCapAsQuote };
 
-  return (
-    <ContextProviderWithDefaults value={{ theme: { scale } }}>
-      {renderTree(ast, {
-        ...coreRenderers,
-        dropCap(key, { value }) {
-          return (
-            enableDropcap && (
-              <DropCapView
-                {...{
-                  colour: theme.sectionColour,
-                  font: theme.dropCapFont,
-                  key,
-                  dropCap: value,
-                  scale
-                }}
-              />
-            )
-          );
-        },
-        paragraph(key, attributes, children, indx, node) {
-          return (
-            <ArticleParagraph
-              ast={node}
-              dropCapColour={theme.sectionColour}
-              dropCapFont={theme.dropCapFont}
-              key={indx}
-              uid={indx}
-            >
-              {children}
-            </ArticleParagraph>
-          );
-        }
-      })}
-    </ContextProviderWithDefaults>
-  );
+const renderParagraph = ({ select, boolean }, ast) => {
+  const sections = Object.keys(colours.section).sort();
+  const sectionIdx = sections.indexOf(select("Section", sections, sections[0]));
+  const enableDropcap = boolean && boolean("Enable DropCap", true);
+  const section = sections[sectionIdx] || sections[0];
+  const theme = themeFactory(section, "magazinecomment");
+  const colour = theme.sectionColour;
+  const font = theme.dropCapFont;
+  const dropCapAst = !ast && select("DropCap Type", dropCapTypes, dropCapData);
+
+  return renderTree(ast || dropCapAst, {
+    ...coreRenderers,
+    dropCap(key, { value }) {
+      return (
+        enableDropcap && (
+          <DropCapView {...{ colour, font, key }}>
+            {unescape(value)}
+          </DropCapView>
+        )
+      );
+    },
+    paragraph(key, attributes, children, indx, node) {
+      return (
+        <ArticleParagraph ast={node} key={indx} uid={indx}>
+          {children}
+        </ArticleParagraph>
+      );
+    },
+    link(key, attributes, children) {
+      const { href, target, dropCap } = attributes;
+
+      return (
+        <ArticleLink dropCap={dropCap} key={key} target={target} url={href}>
+          {children}
+        </ArticleLink>
+      );
+    }
+  });
 };
 
 export default {
   children: [
     {
-      component: ({ select }) =>
-        renderParagraphWithScale({ select }, paragraphData),
+      component: ({ select }) => renderParagraph({ select }, paragraphData),
       name: "Paragraph",
-      platform: "native",
+      platform: "web",
       type: "story"
     },
     {
       component: ({ select, boolean }) =>
-        renderParagraphWithScale({ select, boolean }, dropCapData),
+        renderParagraph({ select, boolean }, dropCapData),
       name: "Paragraph with dropcap",
-      platform: "native",
+      platform: "web",
       type: "story"
     },
     {
-      component: ({ select, boolean }) =>
-        renderParagraphWithScale({ select, boolean }, dropCapShortTextData),
+      component: ({ select, boolean }) => (
+        <Fragment>
+          {renderParagraph({ select, boolean }, dropCapShortTextData)}
+          {renderParagraph({ select, boolean }, paragraphData)}
+          {renderParagraph({ select, boolean }, paragraphData)}
+        </Fragment>
+      ),
       name: "DropCap paragraph with short text",
-      platform: "native",
+      platform: "web",
+      type: "story"
+    },
+    {
+      component: ({ select, boolean }) => renderParagraph({ select, boolean }),
+      name: "Drop Cap",
+      platform: "web",
       type: "story"
     }
   ],

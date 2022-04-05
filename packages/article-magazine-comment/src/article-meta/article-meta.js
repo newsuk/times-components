@@ -1,6 +1,4 @@
-import React from "react";
-import { Text, View } from "react-native";
-import PropTypes from "prop-types";
+import React, { Fragment } from "react";
 import {
   ArticleBylineWithLinks,
   hasBylineData
@@ -8,47 +6,32 @@ import {
 import DatePublication from "@times-components/date-publication";
 
 import metaPropTypes from "./article-meta-prop-types";
+import {
+  DatePublicationContainer,
+  Meta,
+  MetaContainer,
+  Separator
+} from "../styles/responsive";
 import styles from "../styles";
 
-const Separator = () => <View style={styles.separator} />;
-
-const ArticleMeta = ({
-  bylines,
-  isTablet,
-  hasElementsAbove,
-  onAuthorPress,
-  publicationName,
-  publishedTime
-}) => (
-  <View
-    style={[
-      styles.metaContainer,
-      !hasElementsAbove && styles.metaSpacer,
-      isTablet && styles.metaContainerTablet
-    ]}
-  >
+const ArticleMeta = ({ bylines, publicationName, publishedTime }) => (
+  <MetaContainer>
     {hasBylineData(bylines) && (
-      <View style={[styles.meta, isTablet && styles.metaTablet]}>
-        <ArticleBylineWithLinks ast={bylines} onAuthorPress={onAuthorPress} />
-      </View>
+      <Fragment>
+        <Meta style={styles.meta}>
+          <ArticleBylineWithLinks ast={bylines} />
+        </Meta>
+        <Separator />
+      </Fragment>
     )}
-    {isTablet ? <Separator /> : null}
-    <View style={[styles.meta, isTablet && styles.metaTablet]}>
-      <Text
-        style={[
-          styles.datePublication,
-          isTablet && styles.datePublicationTablet
-        ]}
-      >
+    <Meta style={styles.meta}>
+      <DatePublicationContainer style={styles.datePublication}>
         <DatePublication date={publishedTime} publication={publicationName} />
-      </Text>
-    </View>
-  </View>
+      </DatePublicationContainer>
+    </Meta>
+  </MetaContainer>
 );
 
-ArticleMeta.propTypes = {
-  ...metaPropTypes,
-  onAuthorPress: PropTypes.func.isRequired
-};
+ArticleMeta.propTypes = metaPropTypes;
 
 export default ArticleMeta;

@@ -40,7 +40,7 @@ export const Card: React.FC<{
               <Copy
                 isWide={isWide}
                 dangerouslySetInnerHTML={{
-                  __html: sanitiseCopy(cardData.copy, ['br', 'b', 'i'])
+                  __html: sanitiseCopy(cardData.copy, { br: {}, b: {}, i: {} })
                 }}
               />
             )}

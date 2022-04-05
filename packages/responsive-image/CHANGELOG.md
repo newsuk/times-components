@@ -3,6 +3,81 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.6](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.8.5...@times-components/responsive-image@0.8.6) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/responsive-image
+
+
+
+
+
+## [0.8.5](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.8.4...@times-components/responsive-image@0.8.5) (2022-03-08)
+
+**Note:** Version bump only for package @times-components/responsive-image
+
+
+
+
+
+## [0.8.4](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.8.3...@times-components/responsive-image@0.8.4) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/responsive-image
+
+
+
+
+
+## [0.8.3](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.8.2...@times-components/responsive-image@0.8.3) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/responsive-image
+
+
+
+
+
+## [0.8.2](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.8.1...@times-components/responsive-image@0.8.2) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/responsive-image
+
+
+
+
+
+## [0.8.1](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.8.0...@times-components/responsive-image@0.8.1) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/responsive-image
+
+
+
+
+
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.7.7...@times-components/responsive-image@0.8.0) (2022-01-04)
+
+
+### Features
+
+* **TDP-527:** removed some unused dependencies ([#2828](https://github.com/newsuk/times-components/issues/2828)) ([36c7852](https://github.com/newsuk/times-components/commit/36c78520fa0970f4216d9a64cc8e95c380f2a294))
+
+
+
+
+
+## [0.7.7](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.7.6...@times-components/responsive-image@0.7.7) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/responsive-image
+
+
+
+
+
+## [0.7.6](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.7.5...@times-components/responsive-image@0.7.6) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/responsive-image
+
+
+
+
+
 ## [0.7.5](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.7.4...@times-components/responsive-image@0.7.5) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/responsive-image

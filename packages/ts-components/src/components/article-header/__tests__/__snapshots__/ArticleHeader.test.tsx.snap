@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleHeader In one calendar day Within the first minute of update - Breaking 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa cQBRMp"
+      id="u_20211231063000T222"
+    >
+      <div
+        class="sc-bwzfXH htoLMg"
+      >
+        <div
+          class="sc-ifAKCX iDsMnF"
+        >
+          <div
+            class="sc-dnqmqq bGasAc"
+          >
+            <div
+              class="sc-fjdhpX Vdnui"
+            >
+              <div
+                class="sc-iwsKbI fqYeBv"
+              >
+                <div
+                  class="sc-gqjmRU cTMoEm"
+                >
+                  <div
+                    class="sc-VigVT rGeCL"
+                  />
+                </div>
+                <span
+                  class="sc-gZMcBi iBeFrd"
+                >
+                  BREAKING
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-EHOje cDoFHw"
+            data-testid="UpdatedTime"
+          >
+            6.30am
+          </div>
+        </div>
+      </div>
+      <h2
+        class="sc-htoDjs ccbbfo"
+      >
+        This is the headline
+      </h2>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleHeader In one calendar day Within the first minute of update - No headline not breaking 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa fLcQHz"
+      id="u_20211231063000"
+    >
+      <div
+        class="sc-bwzfXH htoLMg"
+      >
+        <div
+          class="sc-ifAKCX iDsMnF"
+        >
+          <div
+            class="sc-EHOje cDoFHw"
+            data-testid="UpdatedTime"
+          >
+            6.30am
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ArticleHeader In one calendar day Within the first minute of update - Not Breaking 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa fLcQHz"
+      id="u_20211231063000T222"
+    >
+      <div
+        class="sc-bwzfXH htoLMg"
+      >
+        <div
+          class="sc-ifAKCX iDsMnF"
+        >
+          <div
+            class="sc-EHOje cDoFHw"
+            data-testid="UpdatedTime"
+          >
+            6.30am
+          </div>
+        </div>
+      </div>
+      <h2
+        class="sc-htoDjs ccbbfo"
+      >
+        This is the headline
+      </h2>
+    </div>
+  </div>
+</body>
+`;

@@ -89,7 +89,7 @@ export default renderComponent => {
           />
         );
 
-        wrapper.find("TextLink").simulate("press", {});
+        wrapper.find(".pullQuoteTwitterLink").simulate("press", {});
 
         expect(onTwitterLinkPressMock).toHaveBeenCalled();
       }

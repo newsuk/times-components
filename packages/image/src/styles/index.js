@@ -1,9 +1,17 @@
-import { StyleSheet } from "react-native";
-import sharedStyles, { captionStyles, tabletCaptionStyles } from "./shared";
+import { colours } from "@times-components/styleguide";
 
-const styles = StyleSheet.create({
-  ...sharedStyles
-});
+const styles = {
+  placeholder: {
+    alignItems: "center",
+    backgroundColor: colours.functional.backgroundSecondary,
+    bottom: 0,
+    justifyContent: "center",
+    left: 0,
+    position: "absolute",
+    right: 0,
+    top: 0,
+    zIndex: 0
+  }
+};
 
-export { captionStyles, tabletCaptionStyles };
 export default styles;

@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.3.0](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.2.24...@times-components/article-topics@4.3.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [4.2.24](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.2.23...@times-components/article-topics@4.2.24) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.2.23](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.2.22...@times-components/article-topics@4.2.23) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.2.22](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.2.21...@times-components/article-topics@4.2.22) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.2.21](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.2.20...@times-components/article-topics@4.2.21) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.2.20](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.2.19...@times-components/article-topics@4.2.20) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.2.19](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.2.18...@times-components/article-topics@4.2.19) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.2.18](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.2.17...@times-components/article-topics@4.2.18) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.2.17](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.2.16...@times-components/article-topics@4.2.17) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.2.16](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.2.15...@times-components/article-topics@4.2.16) (2021-10-28)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
 ## [4.2.15](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.2.14...@times-components/article-topics@4.2.15) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/article-topics

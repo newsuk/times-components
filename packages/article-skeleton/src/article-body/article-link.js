@@ -1,44 +1,32 @@
 import React from "react";
+import Link from "@times-components/link";
 import PropTypes from "prop-types";
-import Context from "@times-components/context";
-import { TextLink } from "@times-components/link";
-import styleFactory from "../styles/article-body";
-import articleLinkTrackingEvents from "./article-link-tracking-events";
+import {
+  linkStyles,
+  dropCapLinkStyles
+} from "../styles/article-body/article-link";
+import withTrackEvents from "./article-link-tracking-events";
 
-const ArticleLink = props => (
-  <Context.Consumer>
-    {({ theme: { scale } }) => {
-      const styles = styleFactory(scale);
-      return (
-        <TextLink
-          allowFontScaling={false}
-          onPress={props.onPress}
-          style={
-            props.style
-              ? {
-                  ...styles.articleLink,
-                  ...props.style
-                }
-              : styles.articleLink
-          }
-          url={props.url}
-        >
-          {props.children}
-        </TextLink>
-      );
-    }}
-  </Context.Consumer>
+const ArticleLink = ({ children, target, url, onPress, dropCap }) => (
+  <Link
+    underlined={!(dropCap && children[0].length === 1)}
+    responsiveLinkStyles={dropCap ? dropCapLinkStyles : linkStyles}
+    target={target}
+    url={url}
+    onPress={onPress}
+  >
+    {children}
+  </Link>
 );
 
-ArticleLink.displayName = "ArticleLink";
-
 ArticleLink.defaultProps = {
-  ...TextLink.defaultProps,
-  linkType: ""
+  ...Link.defaultProps,
+  onPress: () => {},
+  dropCap: false
 };
 
 ArticleLink.propTypes = {
-  ...TextLink.propTypes,
-  linkType: PropTypes.string
+  ...Link.propTypes,
+  dropCap: PropTypes.bool
 };
-export default articleLinkTrackingEvents(ArticleLink);
+export default withTrackEvents(ArticleLink);

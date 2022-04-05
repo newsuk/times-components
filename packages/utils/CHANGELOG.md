@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.6.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.13...@times-components/utils@6.6.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [6.5.13](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.12...@times-components/utils@6.5.13) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.5.12](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.11...@times-components/utils@6.5.12) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.5.11](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.10...@times-components/utils@6.5.11) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.5.10](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.9...@times-components/utils@6.5.10) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.5.9](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.8...@times-components/utils@6.5.9) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.5.8](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.7...@times-components/utils@6.5.8) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.5.7](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.6...@times-components/utils@6.5.7) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
 ## [6.5.6](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.5...@times-components/utils@6.5.6) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/utils

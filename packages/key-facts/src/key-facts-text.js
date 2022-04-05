@@ -1,45 +1,76 @@
 import React from "react";
-import { Text } from "react-native";
-import { TextLink } from "@times-components/link";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
-import { defaultProps, propTypes } from "./key-facts-text-prop-types";
-import styles from "./styles";
+import props from "./key-facts-text-prop-types";
+import { Text, KeyFactTextLink, BulletContainer, Bullet } from "./styles";
 
-const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle }) => (
-  <Text style={[styles.text, fontStyle]}>
-    {item.children.map((data, listItemIndex) =>
-      renderTree(
-        data,
-        {
-          ...coreRenderers,
-          link(key, attributes, renderedChildren) {
-            const { canonicalId, href: url, type } = attributes;
-            return (
-              <TextLink
-                key={key}
-                onPress={e =>
-                  onLinkPress(e, {
-                    canonicalId,
-                    type,
-                    url
-                  })
-                }
-                style={styles.link}
-                url={url}
-              >
-                {renderedChildren}
-              </TextLink>
-            );
-          }
-        },
-        `key-facts-${listIndex}-${listItemIndex}`
-      )
-    )}
-  </Text>
+const getTitle = data => {
+  if (data.children.length === 1) return data.children[0].attributes.value;
+
+  const linkText = data.children.map(child => child.attributes.value);
+  const title = linkText.join(" ");
+  return title.length > 0 ? title : " ";
+};
+
+const handleClickEventScrollTo = (event, url) => {
+  if (url.charAt(0) === "#") {
+    event.preventDefault();
+
+    const element = document.getElementById(url.substring(1));
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+};
+
+const handleClickEventAnalytics = (fireAnalyticsEvent, title) => {
+  if (fireAnalyticsEvent) {
+    fireAnalyticsEvent({
+      action: "Clicked",
+      attrs: {
+        event_navigation_name: "in-article component clicked : key moments",
+        event_navigation_browsing_method: "click",
+        article_parent_name: title
+      }
+    });
+  }
+};
+
+const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
+  <BulletContainer key={`key-facts-${listIndex}`}>
+    <Bullet />
+    <Text>
+      {keyFactItem.children.map((data, listItemIndex) =>
+        renderTree(
+          data,
+          {
+            ...coreRenderers,
+            link(key, attributes, renderedChildren) {
+              const { href: url } = attributes;
+              const title = getTitle(data);
+
+              return (
+                <KeyFactTextLink
+                  key={key}
+                  onClick={event => {
+                    handleClickEventAnalytics(fireAnalyticsEvent, title);
+                    handleClickEventScrollTo(event, url);
+                  }}
+                  href={url}
+                >
+                  {renderedChildren}
+                </KeyFactTextLink>
+              );
+            }
+          },
+          `key-facts-${listIndex}-${listItemIndex}`
+        )
+      )}
+    </Text>
+  </BulletContainer>
 );
 
-KeyFactsText.propTypes = propTypes;
-KeyFactsText.defaultProps = defaultProps;
+KeyFactsText.propTypes = props;
 
 export default KeyFactsText;
+export { getTitle };

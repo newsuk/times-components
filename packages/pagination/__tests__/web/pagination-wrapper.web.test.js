@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import { Text } from "react-native";
 import TestRenderer from "react-test-renderer";
-import shared from "../shared.web";
+import shared from "../shared";
 import withPageState from "../../src/pagination-wrapper";
 
 shared(withPageState);

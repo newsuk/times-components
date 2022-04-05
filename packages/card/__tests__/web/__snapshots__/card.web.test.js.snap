@@ -109,16 +109,16 @@ exports[`6. card with reversed layout and no image 1`] = `
 `;
 
 exports[`7. card with a loading state 1`] = `
-<indexweb__FadeIn>
+<animations__FadeIn>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "indexweb__FadeIn-v0crhg-0",
+          "componentId": "animations__FadeIn-sc-2iiu4y-0",
           "isStatic": true,
-          "lastClassName": "grpdxt",
+          "lastClassName": "iZkZiB",
           "rules": Array [
             "animation:",
             Keyframes {
@@ -134,10 +134,10 @@ exports[`7. card with a loading state 1`] = `
             " 0.3s ease-in-out;",
           ],
         },
-        "displayName": "indexweb__FadeIn",
+        "displayName": "animations__FadeIn",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "indexweb__FadeIn-v0crhg-0",
+        "styledComponentId": "animations__FadeIn-sc-2iiu4y-0",
         "target": [Function],
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -187,20 +187,20 @@ exports[`7. card with a loading state 1`] = `
       </div>
     </div>
   </StyledComponent>
-</indexweb__FadeIn>
+</animations__FadeIn>
 `;
 
 exports[`8. card with a loading state and no image 1`] = `
-<indexweb__FadeIn>
+<animations__FadeIn>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "indexweb__FadeIn-v0crhg-0",
+          "componentId": "animations__FadeIn-sc-2iiu4y-0",
           "isStatic": true,
-          "lastClassName": "grpdxt",
+          "lastClassName": "iZkZiB",
           "rules": Array [
             "animation:",
             Keyframes {
@@ -216,10 +216,10 @@ exports[`8. card with a loading state and no image 1`] = `
             " 0.3s ease-in-out;",
           ],
         },
-        "displayName": "indexweb__FadeIn",
+        "displayName": "animations__FadeIn",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "indexweb__FadeIn-v0crhg-0",
+        "styledComponentId": "animations__FadeIn-sc-2iiu4y-0",
         "target": [Function],
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -257,20 +257,20 @@ exports[`8. card with a loading state and no image 1`] = `
       </div>
     </div>
   </StyledComponent>
-</indexweb__FadeIn>
+</animations__FadeIn>
 `;
 
 exports[`9. card with reversed loading state 1`] = `
-<indexweb__FadeIn>
+<animations__FadeIn>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "indexweb__FadeIn-v0crhg-0",
+          "componentId": "animations__FadeIn-sc-2iiu4y-0",
           "isStatic": true,
-          "lastClassName": "grpdxt",
+          "lastClassName": "iZkZiB",
           "rules": Array [
             "animation:",
             Keyframes {
@@ -286,10 +286,10 @@ exports[`9. card with reversed loading state 1`] = `
             " 0.3s ease-in-out;",
           ],
         },
-        "displayName": "indexweb__FadeIn",
+        "displayName": "animations__FadeIn",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "indexweb__FadeIn-v0crhg-0",
+        "styledComponentId": "animations__FadeIn-sc-2iiu4y-0",
         "target": [Function],
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -339,20 +339,20 @@ exports[`9. card with reversed loading state 1`] = `
       </div>
     </div>
   </StyledComponent>
-</indexweb__FadeIn>
+</animations__FadeIn>
 `;
 
 exports[`10. card with reversed loading state with no image 1`] = `
-<indexweb__FadeIn>
+<animations__FadeIn>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "indexweb__FadeIn-v0crhg-0",
+          "componentId": "animations__FadeIn-sc-2iiu4y-0",
           "isStatic": true,
-          "lastClassName": "grpdxt",
+          "lastClassName": "iZkZiB",
           "rules": Array [
             "animation:",
             Keyframes {
@@ -368,10 +368,10 @@ exports[`10. card with reversed loading state with no image 1`] = `
             " 0.3s ease-in-out;",
           ],
         },
-        "displayName": "indexweb__FadeIn",
+        "displayName": "animations__FadeIn",
         "foldedComponentIds": Array [],
         "render": [Function],
-        "styledComponentId": "indexweb__FadeIn-v0crhg-0",
+        "styledComponentId": "animations__FadeIn-sc-2iiu4y-0",
         "target": [Function],
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -409,13 +409,15 @@ exports[`10. card with reversed loading state with no image 1`] = `
       </div>
     </div>
   </StyledComponent>
-</indexweb__FadeIn>
+</animations__FadeIn>
 `;
 
 exports[`11. card should not re-render when imageratio prop is changed 1`] = `
 <div>
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
         <img
           src="https://img.io/img?resize=360"
@@ -457,7 +459,9 @@ exports[`11. card should not re-render when imageratio prop is changed 1`] = `
 exports[`11. card should not re-render when imageratio prop is changed 2`] = `
 <div>
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
         <img
           src="https://img.io/img?resize=360"
@@ -499,7 +503,9 @@ exports[`11. card should not re-render when imageratio prop is changed 2`] = `
 exports[`12. card should re-render when image uri changes 1`] = `
 <div>
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
         <img
           src="https://img.io/img?resize=360"
@@ -541,7 +547,9 @@ exports[`12. card should re-render when image uri changes 1`] = `
 exports[`12. card should re-render when image uri changes 2`] = `
 <div>
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
         <img
           src="http://foo?resize=360"
@@ -583,7 +591,9 @@ exports[`12. card should re-render when image uri changes 2`] = `
 exports[`13. card should re-render when low res size changes 1`] = `
 <div>
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
         <img
           src="https://img.io/img?resize=360"
@@ -625,7 +635,9 @@ exports[`13. card should re-render when low res size changes 1`] = `
 exports[`13. card should re-render when low res size changes 2`] = `
 <div>
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
         <img
           src="https://img.io/img?resize=360"
@@ -664,7 +676,9 @@ exports[`13. card should re-render when low res size changes 2`] = `
 exports[`14. card should re-render when high res size changes 1`] = `
 <div>
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
         <img
           src="https://img.io/img?resize=360"
@@ -706,7 +720,9 @@ exports[`14. card should re-render when high res size changes 1`] = `
 exports[`14. card should re-render when high res size changes 2`] = `
 <div>
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
         <img
           src="https://img.io/img?resize=50"
@@ -746,7 +762,9 @@ exports[`15. card should re-render when loading state changes 1`] = `
 <div>
   <div>
     <div>
-      <div>
+      <div
+        data-testid="Image"
+      >
         <div>
           <img
             src="https://img.io/img?resize=360"
@@ -790,7 +808,9 @@ exports[`15. card should re-render when loading state changes 1`] = `
 exports[`15. card should re-render when loading state changes 2`] = `
 <div>
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
         <img
           src="https://img.io/img?resize=360"

@@ -52,7 +52,6 @@ const ArticleExtras = ({
     },
     [additionalRelatedArticlesFlag, getRelatedArticles]
   );
-
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticles = (
     <div id="sponsored-article-container">
@@ -114,7 +113,6 @@ const ArticleExtras = ({
           )}
       </div>
       {sponsoredArticles}
-
       <UserState
         state={UserState.loggedIn}
         fallback={

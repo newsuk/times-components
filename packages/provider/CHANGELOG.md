@@ -3,6 +3,138 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.3](https://github.com/newsuk/times-components/compare/@times-components/provider@1.30.2...@times-components/provider@1.30.3) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.30.2](https://github.com/newsuk/times-components/compare/@times-components/provider@1.30.1...@times-components/provider@1.30.2) (2022-03-28)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.30.1](https://github.com/newsuk/times-components/compare/@times-components/provider@1.30.0...@times-components/provider@1.30.1) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+# [1.30.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.29.4...@times-components/provider@1.30.0) (2022-03-02)
+
+
+### Features
+
+* **TDP-1247:** Last updated timestamp ([#2864](https://github.com/newsuk/times-components/issues/2864)) ([57355b6](https://github.com/newsuk/times-components/commit/57355b6a2a067ca098e63802f018e69e78ac186e))
+
+
+
+
+
+## [1.29.4](https://github.com/newsuk/times-components/compare/@times-components/provider@1.29.3...@times-components/provider@1.29.4) (2022-02-22)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.29.3](https://github.com/newsuk/times-components/compare/@times-components/provider@1.29.2...@times-components/provider@1.29.3) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.29.2](https://github.com/newsuk/times-components/compare/@times-components/provider@1.29.1...@times-components/provider@1.29.2) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.29.1](https://github.com/newsuk/times-components/compare/@times-components/provider@1.29.0...@times-components/provider@1.29.1) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+# [1.29.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.28.2...@times-components/provider@1.29.0) (2022-01-21)
+
+
+### Features
+
+* **TDP-479:** Add article breaking flag ([#2831](https://github.com/newsuk/times-components/issues/2831)) ([f1f990a](https://github.com/newsuk/times-components/commit/f1f990ae8012fcb8d33fabc40494b1a7115cbab0))
+
+
+
+
+
+## [1.28.2](https://github.com/newsuk/times-components/compare/@times-components/provider@1.28.1...@times-components/provider@1.28.2) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.28.1](https://github.com/newsuk/times-components/compare/@times-components/provider@1.28.0...@times-components/provider@1.28.1) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+# [1.28.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.27.2...@times-components/provider@1.28.0) (2021-12-21)
+
+
+### Features
+
+* **TDP-601:** Make live article flag separate to sponsored flag ([#2826](https://github.com/newsuk/times-components/issues/2826)) ([7c63ced](https://github.com/newsuk/times-components/commit/7c63cedc35660cf90d2dabe3e088260690a0b91c))
+
+
+
+
+
+## [1.27.2](https://github.com/newsuk/times-components/compare/@times-components/provider@1.27.1...@times-components/provider@1.27.2) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.27.1](https://github.com/newsuk/times-components/compare/@times-components/provider@1.27.0...@times-components/provider@1.27.1) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+# [1.27.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.26.1...@times-components/provider@1.27.0) (2021-11-16)
+
+
+### Features
+
+* **TDP-478:** Article LIVE flag ([#2814](https://github.com/newsuk/times-components/issues/2814)) ([9bb430a](https://github.com/newsuk/times-components/commit/9bb430a9082843e553540d4e3795ae90a0d59089)), closes [#2813](https://github.com/newsuk/times-components/issues/2813)
+
+
+
+
+
 ## [1.26.1](https://github.com/newsuk/times-components/compare/@times-components/provider@1.26.0...@times-components/provider@1.26.1) (2021-09-24)
 
 **Note:** Version bump only for package @times-components/provider

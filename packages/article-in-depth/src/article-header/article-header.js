@@ -1,8 +1,11 @@
 import React from "react";
-import { Text, View } from "react-native";
-import { ArticleFlags } from "@times-components/article-flag";
+import { View } from "react-native";
+import {
+  ArticleFlags,
+  UpdatedTimeProvider
+} from "@times-components/ts-components";
 import Context from "@times-components/context";
-import { fontFactory } from "@times-components/styleguide";
+import { fonts } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";
 
 import Label from "../article-label/article-label";
@@ -13,16 +16,21 @@ import {
 } from "./article-header-prop-types";
 import styles from "../styles";
 
+import {
+  FlagsContainer,
+  HeaderContainer,
+  HeadlineContainer
+} from "../styles/responsive";
+
 const ArticleHeader = ({
   backgroundColour: rgbBackgroundColour,
   flags,
   hasVideo,
   headline,
-  isTablet,
   label,
-  longRead,
   standfirst,
-  textColour: rgbTextColour
+  textColour: rgbTextColour,
+  updatedTime
 }) => {
   const backgroundColour = gqlRgbaToStyle(rgbBackgroundColour);
   const textColour = gqlRgbaToStyle(rgbTextColour);
@@ -31,49 +39,36 @@ const ArticleHeader = ({
     <Context.Consumer>
       {({ theme: { headlineFont, headlineCase } }) => (
         <View
-          style={[
-            styles.container,
-            { backgroundColor: backgroundColour, width: "100%" },
-            isTablet && styles.containerTablet
-          ]}
+          style={{ backgroundColor: backgroundColour, order: 2, width: "100%" }}
         >
-          <View
-            style={[styles.headerText, isTablet && styles.headerTextTablet]}
-          >
+          <HeaderContainer style={styles.container}>
             <Label color={textColour} isVideo={hasVideo} label={label} />
-            <Text
+            <HeadlineContainer
+              accessibilityRole="header"
+              aria-level="1"
               style={[
                 styles.articleHeadline,
-                {
-                  color: textColour,
-                  ...fontFactory({
-                    font: headlineFont || "headline",
-                    fontSize: isTablet ? "pageHeadline" : "headline"
-                  })
-                },
+                { color: textColour },
+                headlineFont ? { fontFamily: fonts[headlineFont] } : null,
                 headlineCase ? { textTransform: headlineCase } : null
               ]}
             >
               {headline}
-            </Text>
-            <ArticleFlags
-              color={textColour}
-              flags={flags}
-              longRead={longRead}
-              withContainer
-            />
+            </HeadlineContainer>
+            <FlagsContainer>
+              <UpdatedTimeProvider updatedTime={updatedTime}>
+                <ArticleFlags color={textColour} flags={flags} />
+              </UpdatedTimeProvider>
+            </FlagsContainer>
             <Standfirst color={textColour} standfirst={standfirst} />
-          </View>
+          </HeaderContainer>
         </View>
       )}
     </Context.Consumer>
   );
 };
 
-ArticleHeader.propTypes = {
-  ...articleHeaderPropTypes
-};
-
+ArticleHeader.propTypes = articleHeaderPropTypes;
 ArticleHeader.defaultProps = articleHeaderDefaultProps;
 
 export default ArticleHeader;

@@ -10,8 +10,8 @@ import {
   print
 } from "@times-components/jest-serializer";
 
-import "../mocks.web";
-import ArticleLink from "../../src/article-body/article-link.web";
+import "../mocks";
+import ArticleLink from "../../src/article-body/article-link";
 
 const omitProps = new Set([
   "article",

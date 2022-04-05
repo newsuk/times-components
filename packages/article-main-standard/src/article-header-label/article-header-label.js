@@ -1,10 +1,7 @@
 import React from "react";
-import { View } from "react-native";
 import BaseLabel from "./article-header-label.base";
-import styles from "../styles/article-header";
+import { LabelContainer } from "../styles/article-header/responsive";
 
 export default BaseLabel((props, label) => (
-  <View {...props} style={styles.articleLabelWrapper}>
-    {label}
-  </View>
+  <LabelContainer {...props}>{label}</LabelContainer>
 ));

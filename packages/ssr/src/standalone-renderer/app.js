@@ -18,6 +18,11 @@ const makeHtml = (
 ) => `
         <!DOCTYPE html>
         <html>
+          <style>
+            html {
+              scroll-behavior: smooth;
+            }
+          </style>
           <head>
             <meta name="viewport" content="width=device-width, initial-scale=1">
             ${headMarkup}

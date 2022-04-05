@@ -54,6 +54,7 @@ declare module '@times-components/utils' {
 
   export const capitalise: (s: string) => string;
   export const stripTags: (input: string, replaceWith: string) => string;
+  export const gqlRgbaToStyle: (colour: string | undefined) => string | null;
 }
 
 declare module '@times-components/styleguide' {

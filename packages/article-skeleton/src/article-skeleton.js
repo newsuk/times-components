@@ -27,7 +27,7 @@ import {
   HeaderContainer,
   MainContainer
 } from "./styles/responsive";
-import styles from "./styles/article-body/index.web";
+import styles from "./styles/article-body/index";
 import Head from "./head";
 import PaywallPortal from "./paywall-portal";
 import StickySaveAndShareBar from "./sticky-save-and-share-bar";
@@ -36,6 +36,7 @@ import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineRelatedArticles from "./contentModifiers/inline-related-article";
 import insertNativeAd from "./contentModifiers/native-ad";
 import insertInlineAd from "./contentModifiers/inline-ad";
+import { getIsLiveOrBreakingFlag } from "./data-helper";
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -51,8 +52,8 @@ const ArticleSkeleton = ({
   commentingConfig,
   paidContentClassName,
   isPreview,
+  swgProductId,
   additionalRelatedArticlesFlag,
-  inlineRelatedArticlesFlag,
   inlineRelatedArticleOptions,
   algoliaSearchKeys,
   latestFromSectionFlag,
@@ -69,6 +70,7 @@ const ArticleSkeleton = ({
     url,
     headline,
     shortHeadline,
+    expirableFlags,
     label,
     topics,
     relatedArticleSlice,
@@ -80,12 +82,11 @@ const ArticleSkeleton = ({
 
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
-    insertNewsletterPuff(section, isPreview),
+    insertNewsletterPuff(section, isPreview, expirableFlags),
     insertNativeAd,
     insertInlineAd,
     insertInlineRelatedArticles(
       relatedArticleSlice,
-      inlineRelatedArticlesFlag,
       inlineRelatedArticleOptions
     ),
     tagLastParagraph
@@ -105,6 +106,9 @@ const ArticleSkeleton = ({
       name: "related articles"
     }
   ]);
+
+  const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+
   return (
     <StickyProvider>
       <TrackingContextProvider
@@ -155,6 +159,7 @@ const ArticleSkeleton = ({
             logoUrl={logoUrl}
             paidContentClassName={paidContentClassName}
             getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
+            swgProductId={swgProductId}
           />
           <AlgoliaSearchProvider
             algoliaSearchKeys={algoliaSearchKeys}
@@ -196,10 +201,12 @@ const ArticleSkeleton = ({
                       content={newContent}
                       contextUrl={url}
                       section={section}
+                      articleHeadline={headline}
                       paidContentClassName={paidContentClassName}
                       template={template}
                       isPreview={isPreview}
                       olympicsKeys={olympicsKeys}
+                      isLiveOrBreaking={isLiveOrBreaking}
                     />
                   )}
                   <PaywallPortal

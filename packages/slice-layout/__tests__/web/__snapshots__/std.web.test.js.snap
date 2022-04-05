@@ -3,97 +3,97 @@
 exports[`1. no child elements 1`] = `""`;
 
 exports[`2. a single child element 1`] = `
-<configweb__Base>
+<config__Base>
   <div>
-    <responsiveweb__SliceContainer>
+    <responsive__SliceContainer>
       <div>
-        <responsiveweb__Base>
+        <responsive__Base>
           <div>
-            <responsiveweb__ChildContainer>
+            <responsive__ChildContainer>
               <div>
                 <div>
                   standard-1
                 </div>
               </div>
-            </responsiveweb__ChildContainer>
+            </responsive__ChildContainer>
           </div>
-        </responsiveweb__Base>
+        </responsive__Base>
       </div>
-    </responsiveweb__SliceContainer>
+    </responsive__SliceContainer>
   </div>
-</configweb__Base>
+</config__Base>
 `;
 
 exports[`3. two child elements 1`] = `
-<configweb__Base>
+<config__Base>
   <div>
-    <responsiveweb__SliceContainer>
+    <responsive__SliceContainer>
       <div>
-        <responsiveweb__Base>
+        <responsive__Base>
           <div>
-            <responsiveweb__ChildContainer>
+            <responsive__ChildContainer>
               <div>
                 <div>
                   standard-1
                 </div>
               </div>
-            </responsiveweb__ChildContainer>
-            <responsiveweb>
+            </responsive__ChildContainer>
+            <responsive>
               <div />
-            </responsiveweb>
-            <responsiveweb__ChildContainer>
+            </responsive>
+            <responsive__ChildContainer>
               <div>
                 <div>
                   standard-2
                 </div>
               </div>
-            </responsiveweb__ChildContainer>
+            </responsive__ChildContainer>
           </div>
-        </responsiveweb__Base>
+        </responsive__Base>
       </div>
-    </responsiveweb__SliceContainer>
+    </responsive__SliceContainer>
   </div>
-</configweb__Base>
+</config__Base>
 `;
 
 exports[`4. three child elements 1`] = `
-<configweb__Base>
+<config__Base>
   <div>
-    <responsiveweb__SliceContainer>
+    <responsive__SliceContainer>
       <div>
-        <responsiveweb__Base>
+        <responsive__Base>
           <div>
-            <responsiveweb__ChildContainer>
+            <responsive__ChildContainer>
               <div>
                 <div>
                   standard-1
                 </div>
               </div>
-            </responsiveweb__ChildContainer>
-            <responsiveweb>
+            </responsive__ChildContainer>
+            <responsive>
               <div />
-            </responsiveweb>
-            <responsiveweb__ChildContainer>
+            </responsive>
+            <responsive__ChildContainer>
               <div>
                 <div>
                   standard-2
                 </div>
               </div>
-            </responsiveweb__ChildContainer>
-            <responsiveweb>
+            </responsive__ChildContainer>
+            <responsive>
               <div />
-            </responsiveweb>
-            <responsiveweb__ChildContainer>
+            </responsive>
+            <responsive__ChildContainer>
               <div>
                 <div>
                   standard-3
                 </div>
               </div>
-            </responsiveweb__ChildContainer>
+            </responsive__ChildContainer>
           </div>
-        </responsiveweb__Base>
+        </responsive__Base>
       </div>
-    </responsiveweb__SliceContainer>
+    </responsive__SliceContainer>
   </div>
-</configweb__Base>
+</config__Base>
 `;

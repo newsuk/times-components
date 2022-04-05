@@ -3,9 +3,13 @@ import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
+  credits: {
+    ...sharedStyles.credits,
+    lineHeight: 17
+  },
   text: {
     ...sharedStyles.text,
-    lineHeight: 16
+    lineHeight: 17
   }
 });
 

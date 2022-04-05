@@ -1,33 +1,21 @@
-import "../mocks.web";
+import "../mocks";
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import TestRenderer from "react-test-renderer";
 import mockDate from "mockdate";
 import Link from "@times-components/link";
+import MockedProvider from "../../../provider-test-tools/src/mocked-provider";
 
 import ArticleSkeleton from "../../src/article-skeleton";
 import articleFixture from "../../fixtures/full-article";
 import ArticleLink from "../../src/article-body/article-link";
 import articleSkeletonProps from "../shared-article-skeleton-props";
-import { getRegistrationType, getSharedStatus } from "../../src/data-helper";
+import {
+  getRegistrationType,
+  getSharedStatus,
+  getIsLiveOrBreakingFlag
+} from "../../src/data-helper";
 import shared from "../shared-tracking";
-
-jest.mock("@times-components/ts-components", () => ({
-  __esModule: true,
-  ...jest.requireActual("@times-components/ts-components"),
-  InlineNewsletterPuff: "InlineNewsletterPuff",
-  AutoNewsletterPuff: "AutoNewsletterPuff",
-  OptaFootballFixtures: "OptaFootballFixtures",
-  OptaFootballStandings: "OptaFootballStandings",
-  OptaFootballSummary: "OptaFootballSummary",
-  OlympicsMedalTable: "OlympicsMedalTable",
-  OlympicsSchedule: "OlympicsSchedule",
-  InArticlePuff: "InArticlePuff",
-  InfoCard: "InfoCard",
-  GalleryCarousel: "GalleryCarousel",
-  InfoCardBulletPoints: "InfoCardBulletPoints",
-  BigNumbers: "BigNumbers"
-}));
 
 beforeEach(() => {
   mockDate.set(1514764800000, 0);
@@ -52,29 +40,41 @@ it("analytics when rendering a shared Article page with metered access", () => {
   const stream = jest.fn();
 
   TestRenderer.create(
-    <ArticleSkeleton
-      {...articleSkeletonProps}
-      analyticsStream={stream}
-      data={articleFixture()}
-      Header={() => null}
-      onAuthorPress={() => {}}
-      onCommentGuidelinesPress={() => {}}
-      onCommentsPress={() => {}}
-      onLinkPress={() => {}}
-      onRelatedArticlePress={() => {}}
-      onTwitterLinkPress={() => {}}
-      onVideoPress={() => {}}
-    />
+    <MockedProvider>
+      <ArticleSkeleton
+        {...articleSkeletonProps}
+        analyticsStream={stream}
+        data={articleFixture()}
+        Header={() => null}
+        onAuthorPress={() => {}}
+        onCommentGuidelinesPress={() => {}}
+        onCommentsPress={() => {}}
+        onLinkPress={() => {}}
+        onRelatedArticlePress={() => {}}
+        onTwitterLinkPress={() => {}}
+        onVideoPress={() => {}}
+      />
+    </MockedProvider>
   );
   expect(stream.mock.calls).toMatchSnapshot();
 });
 
-it("getRegistrationType helper function", () => {
-  expect(getRegistrationType()).toEqual("logged out");
-});
+describe("helper functions", () => {
+  it("getRegistrationType helper function", () => {
+    expect(getRegistrationType()).toEqual("logged out");
+  });
 
-it("getSharedStatus helper function", () => {
-  expect(getSharedStatus()).toEqual("no");
+  it("getSharedStatus helper function", () => {
+    expect(getSharedStatus()).toEqual("no");
+  });
+
+  it("getIsLiveOrBreakingFlag helper function", () => {
+    expect(getIsLiveOrBreakingFlag([{ type: "LIVE" }])).toEqual("LIVE");
+  });
+
+  it("getIsLiveOrBreakingFlag helper function", () => {
+    expect(getIsLiveOrBreakingFlag(["LIVE"])).toEqual("LIVE");
+  });
 });
 
 it("should track ArticleLink clicks in analytics", () => {

@@ -1,5 +1,9 @@
-import { NativeModules } from "react-native";
+const getTimezone = () => {
+  try {
+    return Intl.DateTimeFormat().resolvedOptions().timeZone;
+  } catch (err) {
+    return "";
+  }
+};
 
-const { ReactConfig: { timezone = "" } = { timezone: "" } } = NativeModules;
-
-export default () => timezone;
+export default getTimezone;

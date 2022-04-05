@@ -1,20 +1,24 @@
 import { StyleSheet } from "react-native";
-import { spacing, tabletWidth } from "@times-components/styleguide";
+import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
-  biography: {
-    ...sharedStyles.biography,
-    maxWidth: tabletWidth
+  jobTitle: {
+    ...sharedStyles.jobTitle,
+    WebkitFontSmoothing: "antialiased"
   },
   twitter: {
     ...sharedStyles.twitter,
-    marginTop: spacing(1)
+    alignItems: "flex-end",
+    paddingBottom: spacing(2),
+    paddingTop: spacing(3)
   },
   twitterIcon: {
-    ...sharedStyles.twitterIcon,
-    marginTop: spacing(0.25)
+    alignSelf: "center"
+  },
+  twitterLink: {
+    ...sharedStyles.twitterLink
   }
 });
 

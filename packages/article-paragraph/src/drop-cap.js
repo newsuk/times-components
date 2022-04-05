@@ -1,53 +1,21 @@
-import React, { cloneElement } from "react";
-import { Text } from "react-native";
+import React from "react";
 import PropTypes from "prop-types";
-import { ResponsiveContext } from "@times-components/responsive";
-import styleFactory from "./styles";
+import { DropCap } from "./styles/responsive";
 import { propTypes, defaultProps } from "./drop-cap-prop-types";
 
-const DropCap = props => {
-  const { colour, dropCap, font, scale } = props;
-  if (!dropCap) {
-    return null;
-  }
-  const stylesThemedAndScaled = styleFactory(font, scale);
-  const { color, ...withoutColor } = stylesThemedAndScaled.dropCapTextElement;
-  const value =
-    typeof dropCap === "string"
-      ? dropCap
-      : cloneElement(dropCap, {
-          style: {
-            ...withoutColor,
-            lineHeight: stylesThemedAndScaled.fontSize,
-            textDecorationLine: "none"
-          }
-        });
-
+function DropCapView({ colour, children, font }) {
   return (
-    <Text
-      selectable
-      style={[
-        stylesThemedAndScaled.dropCapTextElement,
-        {
-          color: colour
-        }
-      ]}
-    >
-      {value}
-    </Text>
+    <DropCap font={font} style={{ color: colour }}>
+      {children}
+    </DropCap>
   );
-};
+}
 
-DropCap.propTypes = {
+DropCapView.propTypes = {
   ...propTypes,
-  dropCap: PropTypes.string.isRequired,
-  scale: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired
 };
 
-DropCap.defaultProps = defaultProps;
+DropCapView.defaultProps = defaultProps;
 
-export default props => (
-  <ResponsiveContext.Consumer>
-    {({ isTablet }) => <DropCap {...props} isTablet={isTablet} />}
-  </ResponsiveContext.Consumer>
-);
+export default DropCapView;

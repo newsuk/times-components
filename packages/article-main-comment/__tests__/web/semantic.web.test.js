@@ -13,6 +13,8 @@ import {
 } from "@times-components/jest-serializer";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales } from "@times-components/styleguide";
+import MockedProvider from "@times-components/provider-test-tools/src/mocked-provider";
+
 import Article from "../../src/article-main-comment";
 import articleFixture, { testFixture } from "../../fixtures/full-article";
 import { adConfig } from "../ad-mock";
@@ -135,20 +137,22 @@ const tests = [
             user: { isLoggedIn: true }
           }}
         >
-          <Article
-            adConfig={adConfig}
-            analyticsStream={() => {}}
-            article={article}
-            onAuthorPress={() => {}}
-            onCommentGuidelinesPress={() => {}}
-            onCommentsPress={() => {}}
-            onLinkPress={() => {}}
-            onRelatedArticlePress={() => {}}
-            onTopicPress={() => {}}
-            onVideoPress={() => {}}
-            receiveChildList={() => {}}
-            commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
-          />
+          <MockedProvider>
+            <Article
+              adConfig={adConfig}
+              analyticsStream={() => {}}
+              article={article}
+              onAuthorPress={() => {}}
+              onCommentGuidelinesPress={() => {}}
+              onCommentsPress={() => {}}
+              onLinkPress={() => {}}
+              onRelatedArticlePress={() => {}}
+              onTopicPress={() => {}}
+              onVideoPress={() => {}}
+              receiveChildList={() => {}}
+              commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
+            />
+          </MockedProvider>
         </ContextProviderWithDefaults>
       );
 

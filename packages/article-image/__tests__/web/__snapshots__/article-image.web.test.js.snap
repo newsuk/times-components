@@ -7,7 +7,7 @@ exports[`2. does not render a primary image if ratio is not received 1`] = `""`;
 exports[`3. does not render an inline image with no ratio and no caption or credits 1`] = `""`;
 
 exports[`4. inline image with no ratio only shows caption and credits 1`] = `
-<responsiveweb__InsetCaptionContainerStyle>
+<responsive__InsetCaptionContainerStyle>
   <div>
     <figcaption>
       <div>
@@ -22,15 +22,17 @@ exports[`4. inline image with no ratio only shows caption and credits 1`] = `
       </div>
     </figcaption>
   </div>
-</responsiveweb__InsetCaptionContainerStyle>
+</responsive__InsetCaptionContainerStyle>
 `;
 
 exports[`5. image with no caption 1`] = `
 Array [
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
-        <responsiveweb
+        <responsive
           alt={null}
           isLoaded={false}
           src="https://img/someImage"
@@ -40,7 +42,7 @@ Array [
             alt={null}
             src="https://img/someImage"
           />
-        </responsiveweb>
+        </responsive>
         <div>
           <svg
             height="auto"
@@ -95,9 +97,11 @@ exports[`7. image with no display only shows given credits 1`] = `
 exports[`8. primary image renders with caption and credits 1`] = `
 Array [
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
-        <responsiveweb
+        <responsive
           alt="Some caption"
           isLoaded={false}
           src="https://img/someImage"
@@ -107,7 +111,7 @@ Array [
             alt="Some caption"
             src="https://img/someImage"
           />
-        </responsiveweb>
+        </responsive>
         <div>
           <svg
             height="auto"
@@ -132,7 +136,7 @@ Array [
     </div>
   </div>,
   <div>
-    <responsiveweb__InsetCaptionStyle>
+    <responsive__InsetCaptionStyle>
       <div>
         <div>
           <div>
@@ -145,7 +149,7 @@ Array [
           </div>
         </div>
       </div>
-    </responsiveweb__InsetCaptionStyle>
+    </responsive__InsetCaptionStyle>
   </div>,
 ]
 `;
@@ -153,9 +157,11 @@ Array [
 exports[`9. primary image with given resolutions 1`] = `
 Array [
   <div>
-    <div>
+    <div
+      data-testid="Image"
+    >
       <div>
-        <responsiveweb
+        <responsive
           alt="Some caption"
           isLoaded={false}
           src="https://img/someImage?resize=900"
@@ -165,8 +171,8 @@ Array [
             alt="Some caption"
             src="https://img/someImage?resize=900"
           />
-        </responsiveweb>
-        <responsiveweb
+        </responsive>
+        <responsive
           alt="Some caption"
           isLoaded={true}
           src="https://img/someImage?resize=50"
@@ -176,7 +182,7 @@ Array [
             alt="Some caption"
             src="https://img/someImage?resize=50"
           />
-        </responsiveweb>
+        </responsive>
         <div>
           <svg
             height="auto"
@@ -201,7 +207,7 @@ Array [
     </div>
   </div>,
   <div>
-    <responsiveweb__InsetCaptionStyle>
+    <responsive__InsetCaptionStyle>
       <div>
         <div>
           <div>
@@ -214,7 +220,7 @@ Array [
           </div>
         </div>
       </div>
-    </responsiveweb__InsetCaptionStyle>
+    </responsive__InsetCaptionStyle>
   </div>,
 ]
 `;

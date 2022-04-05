@@ -1,3 +1,3 @@
-import shared from "../shared-supporting-components.web";
+import shared from "../shared-supporting-components";
 
 shared();

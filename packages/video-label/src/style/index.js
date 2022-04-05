@@ -3,21 +3,18 @@ import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
+  container: {
+    ...sharedStyles.container,
+    marginBottom: 1
+  },
   iconContainer: {
     ...sharedStyles.iconContainer,
-    marginBottom: 0,
-    paddingBottom: 0
+    alignSelf: "center",
+    paddingBottom: 2
   },
   title: {
     ...sharedStyles.title,
-    lineHeight: 12,
-    paddingTop: 0,
-    marginTop: 0
-  },
-  container: {
-    ...sharedStyles.container,
-    marginTop: 0,
-    marginBottom: -3
+    lineHeight: 12
   }
 });
 

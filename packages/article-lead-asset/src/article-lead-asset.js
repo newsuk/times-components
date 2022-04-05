@@ -1,93 +1,63 @@
 import React from "react";
 import { View } from "react-native";
-import Caption from "@times-components/caption";
-import { ModalImage } from "@times-components/image";
-import ArticleLeadAssetVideo from "./article-lead-asset-video";
-import {
-  nativePropTypes,
-  nativeDefaultProps
-} from "./article-lead-asset-prop-types";
-import getRatio from "./get-ratio";
-
-const ArticleLeadAssetModalImage = ({
-  aspectRatio,
-  caption,
-  crop,
-  onImagePress,
-  uri,
-  width,
-  relativeWidth,
-  relativeHeight,
-  relativeHorizontalOffset,
-  relativeVerticalOffset
-}) => (
-  <ModalImage
-    highResSize={width}
-    {...{
-      aspectRatio,
-      caption,
-      crop,
-      onImagePress,
-      uri,
-      relativeWidth,
-      relativeHeight,
-      relativeHorizontalOffset,
-      relativeVerticalOffset
-    }}
-    index={0}
-  />
-);
+import { AspectRatioContainer } from "@times-components/utils";
+import Video from "@times-components/video";
+import LeadAssetImage from "./article-lead-asset-image";
+import { defaultProps, propTypes } from "./article-lead-asset-prop-types";
 
 const ArticleLeadAsset = ({
-  getImageCrop,
+  aspectRatio,
+  className,
   renderCaption,
+  displayImage,
   isVideo,
   leadAsset,
-  onImagePress,
-  onVideoPress,
-  width,
   style
 }) => {
-  if (!leadAsset) {
+  if (!leadAsset || !displayImage) {
     return null;
   }
 
-  const imageContainer = isVideo ? leadAsset.posterImage : leadAsset;
-  const crop = getImageCrop(imageContainer);
-
-  if (!crop) {
-    return null;
-  }
-  const LeadAsset = isVideo
-    ? ArticleLeadAssetVideo
-    : ArticleLeadAssetModalImage;
-
+  const captionContainer = isVideo ? leadAsset.posterImage : leadAsset;
   const caption = {
-    credits: imageContainer.credits,
-    text: imageContainer.caption
+    credits: captionContainer.credits,
+    text: captionContainer.caption
   };
 
+  const leadAssetView = isVideo ? (
+    <Video
+      accountId={leadAsset.brightcoveAccountId}
+      height="100%"
+      id={leadAsset.id}
+      is360={leadAsset.is360}
+      playerId={leadAsset.brightcovePlayerId}
+      policyKey={leadAsset.brightcovePolicyKey}
+      position="absolute"
+      poster={{ uri: displayImage.url }}
+      videoId={leadAsset.brightcoveVideoId}
+      width="100%"
+    />
+  ) : (
+    <LeadAssetImage
+      aspectRatio={aspectRatio}
+      alt={caption.text}
+      uri={displayImage.url}
+    />
+  );
+
   return (
-    <View style={style}>
-      <LeadAsset
-        aspectRatio={getRatio(crop.ratio)}
-        caption={<Caption {...caption} />}
-        leadAsset={leadAsset}
-        relativeWidth={crop.relativeWidth}
-        relativeHeight={crop.relativeHeight}
-        relativeHorizontalOffset={crop.relativeHorizontalOffset}
-        relativeVerticalOffset={crop.relativeVerticalOffset}
-        onImagePress={onImagePress}
-        onVideoPress={onVideoPress}
-        uri={crop.url}
-        width={width}
-      />
-      {renderCaption({ caption })}
+    <View className={className} style={style}>
+      <figure style={{ margin: 0 }}>
+        <AspectRatioContainer aspectRatio={aspectRatio}>
+          {leadAssetView}
+        </AspectRatioContainer>
+        {renderCaption && <figcaption>{renderCaption({ caption })}</figcaption>}
+      </figure>
     </View>
   );
 };
 
-ArticleLeadAsset.propTypes = nativePropTypes;
-ArticleLeadAsset.defaultProps = nativeDefaultProps;
+ArticleLeadAsset.propTypes = propTypes;
+ArticleLeadAsset.defaultProps = defaultProps;
 
 export default ArticleLeadAsset;

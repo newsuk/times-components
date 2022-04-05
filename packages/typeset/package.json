@@ -1,6 +1,6 @@
 {
   "name": "@times-components/typeset",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A package for markup layout with arbitrary shapes",
   "main": "src/index.ts",
   "typings": "build/main/index.d.ts",
@@ -55,7 +55,7 @@
     "@bitjson/npm-scripts-info": "1.0.0",
     "@istanbuljs/nyc-config-typescript": "0.1.3",
     "@simple-dom/interface": "1.4.0",
-    "@times-components/test-utils": "2.3.9",
+    "@times-components/test-utils": "2.3.10",
     "@types/node": "12.7.12",
     "@types/point-in-polygon": "1.0.0",
     "@types/react-test-renderer": "16.9.0",

@@ -7,7 +7,6 @@ export edition from "./edition";
 export getBookmarks from "./get-bookmarks";
 export getNewsletter from "./get-newsletter";
 export getTokenisedArticleUrl from "./get-tokenised-article-url";
-export nativeEdition from "./native-edition";
 export saveBookmarks from "./save-bookmark";
 export subscribeNewsletter from "./subscribe-newsletter";
 export topic from "./topic";

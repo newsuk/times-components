@@ -1,4 +1,4 @@
 import { addTypenameToDocument } from "apollo-utilities";
-import articleFragment from "./article.graphql";
+import articleWebQuery from "./article_web.graphql";
 
-export default addTypenameToDocument(articleFragment);
+export default addTypenameToDocument(articleWebQuery);

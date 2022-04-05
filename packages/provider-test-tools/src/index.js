@@ -12,7 +12,6 @@ import generateQueries from "./generate-queries";
 import mm from "./make-mocks";
 import MockedProvider from "./mocked-provider";
 import MockFixture, { schemaToMocks } from "./mock-fixture";
-import nativeEdition from "./native-edition";
 import providerTester from "./provider-tester";
 import topic from "./topic";
 import inlineVideo from "./fixtures/inline-video.json";
@@ -50,7 +49,6 @@ export {
   makeMocks,
   MockedProvider,
   MockFixture,
-  nativeEdition,
   providerTester,
   schemaToMocks,
   topic,

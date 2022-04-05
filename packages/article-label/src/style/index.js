@@ -1,4 +1,4 @@
-import { StyleSheet, Platform } from "react-native";
+import { StyleSheet } from "react-native";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
@@ -6,11 +6,7 @@ const styles = StyleSheet.create({
   title: {
     ...sharedStyles.title,
     lineHeight: 12,
-    paddingTop: 0,
-    marginTop: 0,
-    letterSpacing: 1,
-    includeFontPadding: false,
-    marginBottom: Platform.OS === "ios" ? -3 : 1
+    letterSpacing: 1
   }
 });
 

@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.151](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.150...@times-components/caption@3.0.151) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.150](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.149...@times-components/caption@3.0.150) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.149](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.148...@times-components/caption@3.0.149) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.148](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.147...@times-components/caption@3.0.148) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.147](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.146...@times-components/caption@3.0.147) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.146](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.145...@times-components/caption@3.0.146) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.145](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.144...@times-components/caption@3.0.145) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.144](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.143...@times-components/caption@3.0.144) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
 ## [3.0.143](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.142...@times-components/caption@3.0.143) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/caption

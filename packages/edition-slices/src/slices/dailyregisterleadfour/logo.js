@@ -1,23 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Image } from "react-native";
-import leaves from "../../../assets/leaves.png";
-import cake from "../../../assets/cake.png";
-import registerLogo from "../../../assets/daily-universal-register.png";
+import Image from "@times-components/image";
 
-const images = {
-  birthdays: cake,
-  logo: registerLogo,
-  "nature notes": leaves
-};
-
-const Logo = ({ type, style }) => (
-  <Image resizeMode="contain" source={images[type]} style={style} />
+const Logo = ({ imageUri, style, ratio }) => (
+  <Image aspectRatio={ratio} style={style} uri={imageUri} />
 );
 
 Logo.propTypes = {
-  style: PropTypes.shape({}).isRequired,
-  type: PropTypes.string.isRequired
+  imageUri: PropTypes.string.isRequired,
+  ratio: PropTypes.number.isRequired,
+  style: PropTypes.shape({}).isRequired
 };
 
 export default Logo;

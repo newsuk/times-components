@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.33](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.32...@times-components/lazy-load@0.6.33) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.32](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.31...@times-components/lazy-load@0.6.32) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.31](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.30...@times-components/lazy-load@0.6.31) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.30](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.29...@times-components/lazy-load@0.6.30) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.29](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.28...@times-components/lazy-load@0.6.29) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.28](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.27...@times-components/lazy-load@0.6.28) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.27](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.26...@times-components/lazy-load@0.6.27) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.6.26](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.25...@times-components/lazy-load@0.6.26) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
 ## [0.6.25](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.6.24...@times-components/lazy-load@0.6.25) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/lazy-load

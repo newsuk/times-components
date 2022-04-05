@@ -1,6 +1,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { hash, iterator } from "@times-components/test-utils";
+
 import {
   addSerializers,
   compose,
@@ -13,6 +14,8 @@ import {
 } from "@times-components/jest-serializer";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales } from "@times-components/styleguide";
+import MockedProvider from "@times-components/provider-test-tools/src/mocked-provider";
+
 import Article from "../../src/article-in-depth";
 import articleFixture, { testFixture } from "../../fixtures/full-article";
 import { adConfig } from "../ad-mock";
@@ -140,20 +143,22 @@ const tests = [
             user: { isLoggedIn: true }
           }}
         >
-          <Article
-            adConfig={adConfig}
-            analyticsStream={() => {}}
-            article={article}
-            onAuthorPress={() => {}}
-            onCommentGuidelinesPress={() => {}}
-            onCommentsPress={() => {}}
-            onLinkPress={() => {}}
-            onRelatedArticlePress={() => {}}
-            onTopicPress={() => {}}
-            onVideoPress={() => {}}
-            navigationMode={navigationMode}
-            receiveChildList={() => {}}
-          />
+          <MockedProvider>
+            <Article
+              adConfig={adConfig}
+              analyticsStream={() => {}}
+              article={article}
+              onAuthorPress={() => {}}
+              onCommentGuidelinesPress={() => {}}
+              onCommentsPress={() => {}}
+              onLinkPress={() => {}}
+              onRelatedArticlePress={() => {}}
+              onTopicPress={() => {}}
+              onVideoPress={() => {}}
+              navigationMode={navigationMode}
+              receiveChildList={() => {}}
+            />
+          </MockedProvider>
         </ContextProviderWithDefaults>
       );
 

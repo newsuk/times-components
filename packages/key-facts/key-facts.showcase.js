@@ -1,6 +1,3 @@
-/* eslint-disable react/prop-types */
-import React from "react";
-import { ScrollView } from "react-native";
 import { LateralSpacingDecorator } from "@times-components/storybook";
 import data from "./fixtures/key-facts-showcase.json";
 import dataNoTitle from "./fixtures/key-facts-no-title-showcase.json";
@@ -13,23 +10,17 @@ export default {
       type: "decorator"
     },
     {
-      component: ({ select }) => (
-        <ScrollView style={{ width: "100%" }}>
-          {renderKeyFacts({ ast: data, hasScaling: true, select })}
-        </ScrollView>
-      ),
+      component: ({ select }) =>
+        renderKeyFacts({ ast: data, hasScaling: false, select }),
       name: "with title",
-      platform: "native",
+      platform: "web",
       type: "story"
     },
     {
-      component: ({ select }) => (
-        <ScrollView style={{ width: "100%" }}>
-          {renderKeyFacts({ ast: dataNoTitle, hasScaling: true, select })}
-        </ScrollView>
-      ),
+      component: ({ select }) =>
+        renderKeyFacts({ ast: dataNoTitle, hasScaling: false, select }),
       name: "without title",
-      platform: "native",
+      platform: "web",
       type: "story"
     }
   ],

@@ -1,8 +1,6 @@
 **/node_modules/*
 dist
 __snapshots__
-android/*
-ios/*
 CHANGELOG.md
 .*
 !*.json

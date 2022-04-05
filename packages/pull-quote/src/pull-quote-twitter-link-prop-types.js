@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 export const propTypes = {
-  onTwitterLinkPress: PropTypes.func.isRequired,
+  onTwitterLinkPress: PropTypes.func,
   twitter: PropTypes.string
 };
 

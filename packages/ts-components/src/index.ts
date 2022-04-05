@@ -6,6 +6,20 @@ export {
   InfoCardBulletPoints
 } from './components/in-article-info-card-bulletpoints/InfoCardBulletPoints';
 export { BigNumbers } from './components/in-article-big-numbers/BigNumbers';
+export {
+  BreakingArticleFlag,
+  LiveArticleFlag
+} from './components/article-flag/LiveArticleFlag';
+export {
+  ArticleFlag,
+  ArticleFlags,
+  NewArticleFlag,
+  UpdatedArticleFlag,
+  ExclusiveArticleFlag,
+  SponsoredArticleFlag,
+  LongReadArticleFlag
+} from './components/article-flag/ArticleFlag';
+export { Timelines } from './components/in-article-timelines/Timelines';
 
 // Newsletter Components
 export {
@@ -31,6 +45,20 @@ export {
 export {
   OptaFootballMatchStats
 } from './components/opta/football/match-stats/OptaFootballMatchStats';
+
+export {
+  OptaRugbyFixtures
+} from './components/opta/rugby/fixtures/OptaRugbyFixtures';
+export {
+  OptaRugbyStandings
+} from './components/opta/rugby/standings/OptaRugbyStandings';
+export {
+  OptaRugbySummary
+} from './components/opta/rugby/summary/OptaRugbySummary';
+export {
+  OptaRugbyMatchStats
+} from './components/opta/rugby/match-stats/OptaRugbyMatchStats';
+
 export {
   OlympicsMedalTable
 } from './components/olympics/medal-table/OlympicsMedalTable';
@@ -65,5 +93,22 @@ export {
   AlgoliaSearchProvider,
   useAlgoliaSearch
 } from './helpers/algolia/AlgoliaSearchProvider';
+export { HiddenDiv } from './components/common-styles';
 
 export { InlineMessage } from './components/inline-message/InlineMessage';
+
+export { InlineDialog } from './components/inline-dialog/InlineDialog';
+
+export {
+  default as ArticleHeader
+} from './components/article-header/ArticleHeader';
+
+export {
+  UpdatedTimestamp
+} from './components/updated-timestamp/UpdatedTimestamp';
+
+export { UpdatedTimeProvider } from './helpers/time/UpdatedTimeProvider';
+
+export {
+  default as safeDecodeURIComponent
+} from './utils/safeDecodeURIComponent';

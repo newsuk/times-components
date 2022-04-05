@@ -1,8 +1,4 @@
-import Svg_ from "./svg";
+import { Svg, G, Path, Rect, Polygon } from "svgs";
 
-export { default as G } from "./g";
-export { default as Path } from "./path";
-export { default as Polygon } from "./polygon";
-export { default as Rect } from "./rect";
-export const Svg = Svg_;
 export default Svg;
+export { Svg, G, Path, Rect, Polygon };

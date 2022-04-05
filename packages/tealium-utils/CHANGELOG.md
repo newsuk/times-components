@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.75](https://github.com/newsuk/times-components/compare/@times-components/tealium-utils@0.7.74...@times-components/tealium-utils@0.7.75) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/tealium-utils
+
+
+
+
+
+## [0.7.74](https://github.com/newsuk/times-components/compare/@times-components/tealium-utils@0.7.73...@times-components/tealium-utils@0.7.74) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/tealium-utils
+
+
+
+
+
+## [0.7.73](https://github.com/newsuk/times-components/compare/@times-components/tealium-utils@0.7.72...@times-components/tealium-utils@0.7.73) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/tealium-utils
+
+
+
+
+
 ## [0.7.72](https://github.com/newsuk/times-components/compare/@times-components/tealium-utils@0.7.71...@times-components/tealium-utils@0.7.72) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/tealium-utils
