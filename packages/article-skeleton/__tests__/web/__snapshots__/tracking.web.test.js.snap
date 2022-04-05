@@ -8,6 +8,7 @@ Array [
       "article_locked_status": "locked",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
+        "article_flag": "no flag",
         "article_topic_tags": Array [
           "Football",
           "Manchester United FC",
@@ -21,7 +22,6 @@ Array [
         "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
         "isLocked": "locked",
         "label": "HURRICANE IRMA",
-        "other_details": "",
         "pageName": "france-defies-may-over-russia-37b27qd2s",
         "parent_site": "TIMES",
         "publishedTime": "2015-03-13T18:54:58.000Z",
@@ -46,6 +46,7 @@ Array [
       "article_locked_status": "locked",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
+        "article_flag": "no flag",
         "article_topic_tags": Array [
           "Football",
           "Manchester United FC",
@@ -59,7 +60,6 @@ Array [
         "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
         "isLocked": "locked",
         "label": "HURRICANE IRMA",
-        "other_details": "",
         "pageName": "france-defies-may-over-russia-37b27qd2s",
         "parent_site": "TIMES",
         "publishedTime": "2015-03-13T18:54:58.000Z",
@@ -84,6 +84,7 @@ Array [
       "article_locked_status": "locked",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
+        "article_flag": "no flag",
         "article_topic_tags": Array [
           "Football",
           "Manchester United FC",
@@ -97,7 +98,6 @@ Array [
         "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
         "isLocked": "locked",
         "label": "HURRICANE IRMA",
-        "other_details": "",
         "pageName": "france-defies-may-over-russia-37b27qd2s",
         "parent_site": "TIMES",
         "publishedTime": "2015-03-13T18:54:58.000Z",
@@ -122,6 +122,7 @@ Array [
       "article_locked_status": "locked",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
+        "article_flag": "no flag",
         "article_topic_tags": Array [
           "Football",
           "Manchester United FC",
@@ -135,7 +136,6 @@ Array [
         "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
         "isLocked": "locked",
         "label": "HURRICANE IRMA",
-        "other_details": "",
         "pageName": "france-defies-may-over-russia-37b27qd2s",
         "parent_site": "TIMES",
         "publishedTime": "2015-03-13T18:54:58.000Z",

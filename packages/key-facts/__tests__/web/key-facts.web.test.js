@@ -123,7 +123,7 @@ describe("Key moments", () => {
         event_navigation_action: "navigation",
         event_navigation_browsing_method: "scroll",
         article_name: "some headline",
-        other_details: "breaking",
+        article_flag: "breaking",
         eventTime: "2021-05-03T00:00:00.000Z"
       },
       action: "Scrolled",
@@ -141,7 +141,7 @@ describe("Key moments", () => {
         event_navigation_browsing_method: "click",
         article_parent_name: "a link title",
         article_name: "some headline",
-        other_details: "breaking",
+        article_flag: "breaking",
         eventTime: "2021-05-03T00:00:00.000Z"
       },
       action: "Clicked",

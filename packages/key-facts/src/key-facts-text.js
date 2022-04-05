@@ -36,20 +36,26 @@ const handleClickEventScrollTo = (event, url) => {
   }
 };
 
-const handleClickEventAnalytics = (fireAnalyticsEvent, title) => {
+const handleClickEventAnalytics = (fireAnalyticsEvent, title, articleFlag) => {
   if (fireAnalyticsEvent) {
     fireAnalyticsEvent({
       action: "Clicked",
       attrs: {
         event_navigation_name: "in-article component clicked : key moments",
         event_navigation_browsing_method: "click",
-        article_parent_name: title
+        article_parent_name: title,
+        article_flag: articleFlag
       }
     });
   }
 };
 
-const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
+const KeyFactsText = ({
+  listIndex,
+  keyFactItem,
+  fireAnalyticsEvent,
+  articleFlag
+}) => (
   <BulletContainer key={`key-facts-${listIndex}`}>
     <Bullet />
     <Text>
@@ -66,7 +72,11 @@ const KeyFactsText = ({ listIndex, keyFactItem, fireAnalyticsEvent }) => (
                 <KeyFactTextLink
                   key={key}
                   onClick={event => {
-                    handleClickEventAnalytics(fireAnalyticsEvent, title);
+                    handleClickEventAnalytics(
+                      fireAnalyticsEvent,
+                      title,
+                      articleFlag
+                    );
                     handleClickEventScrollTo(event, url);
                   }}
                   href={url.charAt(0) === "#" ? null : url}
