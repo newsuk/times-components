@@ -107,7 +107,7 @@ const ArticleSkeleton = ({
     }
   ]);
 
-  const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+  const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags) || 'no flag'
 
   return (
     <StickyProvider>
