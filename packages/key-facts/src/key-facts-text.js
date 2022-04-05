@@ -17,17 +17,14 @@ const handleClickEventScrollTo = (event, url) => {
     event.preventDefault();
 
     const target = document.getElementById(url.substring(1));
-    const article = target.parentElement;
+    if (target) {
+      const article = target.parentElement.parentElement;
+      const container = article.parentElement;
 
-    if (target && article) {
-      console.log("KEY MOMENTS : target", target);
-      console.log("KEY MOMENTS : offsetTop", target.offsetTop);
-
-      console.log("KEY MOMENTS : article", article);
-      console.log("KEY MOMENTS : offsetTop", article.offsetTop);
+      console.log(container.offsetTop + article.offsetTop + target.offsetTop);
 
       window.scroll({
-        top: article.offsetTop + target.offsetTop,
+        top: container.offsetTop + article.offsetTop + target.offsetTop,
         behavior: "smooth"
       });
     }
