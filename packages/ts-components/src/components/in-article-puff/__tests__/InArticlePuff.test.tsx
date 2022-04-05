@@ -169,13 +169,13 @@ describe('InArticlePuff', () => {
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'scroll',
           event_navigation_name: 'in-article component displayed : puff',
-          section: 'section'
+          section: 'section',
+          article_flag: 'no flag'
         }
       });
     });
 
     it('fires click event when Read more clicked', () => {
-      mockIsLiveOrBreakingFlag = 'live';
       (useFetch as jest.Mock).mockReturnValue(
         deckApiPayloadWrapper(optionalFields)
       );
@@ -192,7 +192,7 @@ describe('InArticlePuff', () => {
           }}
           analyticsStream={analyticsStream}
         >
-          <InArticlePuff {...requiredProps} />
+          <InArticlePuff sectionColour="yellow" isLiveOrBreaking={'live'} />
         </TrackingContextProvider>
       );
 
@@ -219,7 +219,6 @@ describe('InArticlePuff', () => {
     });
 
     it('fires click event when headline clicked', () => {
-      mockIsLiveOrBreakingFlag = 'breaking';
       (useFetch as jest.Mock).mockReturnValue(
         deckApiPayloadWrapper(optionalFields)
       );
@@ -236,7 +235,7 @@ describe('InArticlePuff', () => {
           }}
           analyticsStream={analyticsStream}
         >
-          <InArticlePuff {...requiredProps} />
+          <InArticlePuff sectionColour="yellow" isLiveOrBreaking={'breaking'} />
         </TrackingContextProvider>
       );
 
@@ -297,7 +296,8 @@ describe('InArticlePuff', () => {
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : image',
-          section: 'section'
+          section: 'section',
+          article_flag: 'no flag'
         }
       });
     });
