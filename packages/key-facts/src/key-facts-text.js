@@ -18,7 +18,7 @@ const handleClickEventScrollTo = (event, url) => {
 
     const element = document.getElementById(url.substring(1));
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      window.scroll({ top: element.offsetTop - 60, behavior: "smooth" });
     }
   }
 };
