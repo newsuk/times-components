@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.44.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.43.4...@times-components/article-in-depth@3.44.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1577:** key moments anchor links ([#2904](https://github.com/newsuk/times-components/issues/2904)) ([761a1c5](https://github.com/newsuk/times-components/commit/761a1c590d597e9cb1a4a78dbbf2b747d81749c9))
+
+
+
+
+
 ## [3.43.4](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.43.3...@times-components/article-in-depth@3.43.4) (2022-04-05)
 
 **Note:** Version bump only for package @times-components/article-in-depth

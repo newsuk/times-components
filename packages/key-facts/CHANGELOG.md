@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.8.0...@times-components/key-facts@2.9.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1577:** key moments anchor links ([#2904](https://github.com/newsuk/times-components/issues/2904)) ([761a1c5](https://github.com/newsuk/times-components/commit/761a1c590d597e9cb1a4a78dbbf2b747d81749c9))
+
+
+
+
+
 # [2.8.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.7.0...@times-components/key-facts@2.8.0) (2022-04-05)
 
 
