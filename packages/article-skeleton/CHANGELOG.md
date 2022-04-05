@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.77.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.76.9...@times-components/article-skeleton@1.77.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1639:** live flag analytics param renaming ([#2900](https://github.com/newsuk/times-components/issues/2900)) ([39099ab](https://github.com/newsuk/times-components/commit/39099ab577734ff2123c18aace8afc706faf3634))
+
+
+
+
+
 ## [1.76.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.76.8...@times-components/article-skeleton@1.76.9) (2022-04-05)
 
 **Note:** Version bump only for package @times-components/article-skeleton

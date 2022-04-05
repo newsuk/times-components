@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.29.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.28.1...@times-components/ts-components@1.29.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1639:** live flag analytics param renaming ([#2900](https://github.com/newsuk/times-components/issues/2900)) ([39099ab](https://github.com/newsuk/times-components/commit/39099ab577734ff2123c18aace8afc706faf3634))
+
+
+
+
+
 ## [1.28.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.28.0...@times-components/ts-components@1.28.1) (2022-03-31)
 
 **Note:** Version bump only for package @times-components/ts-components

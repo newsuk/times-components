@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "3.18.2",
+  "version": "3.18.3",
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {
@@ -63,7 +63,7 @@
     "@times-components/markup": "3.4.68",
     "@times-components/markup-forest": "1.8.1",
     "@times-components/styleguide": "3.38.30",
-    "@times-components/ts-components": "1.28.1",
+    "@times-components/ts-components": "1.29.0",
     "@times-components/video-label": "2.4.72",
     "prop-types": "15.7.2",
     "react-native-web": "0.11.4"
