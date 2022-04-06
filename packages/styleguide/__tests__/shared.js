@@ -1,4 +1,4 @@
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils"; 
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
@@ -41,7 +41,7 @@ const tests = [
     test: () => {
       const testInstance = TestRenderer.create(
         <Animations.FadeIn>
-          <Text>Hello World</Text>
+          <TcText>Hello World</TcText>
         </Animations.FadeIn>
       );
 
