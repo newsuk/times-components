@@ -10,8 +10,7 @@ exports[`Inline Newsletter Puff Clicking Subscribe renders 'saving' when the but
         class="sc-bdVaJa sc-bxivhb fstdFq"
       >
         <div
-          class="css-view-1dbjc4n"
-          data-testid="Image"
+          class="tc-view__TcView-nuazoi-0 fPjBcr"
         >
           <div
             style="padding-bottom: 70.42253521126761%;"
@@ -91,8 +90,7 @@ exports[`Inline Newsletter Puff Manage preferences  renders the success view aft
         class="sc-bdVaJa sc-bxivhb fstdFq"
       >
         <div
-          class="css-view-1dbjc4n"
-          data-testid="Image"
+          class="tc-view__TcView-nuazoi-0 fPjBcr"
         >
           <div
             style="padding-bottom: 70.42253521126761%;"
@@ -230,8 +228,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
         class="sc-bdVaJa sc-bxivhb fstdFq"
       >
         <div
-          class="css-view-1dbjc4n"
-          data-testid="Image"
+          class="tc-view__TcView-nuazoi-0 fPjBcr"
         >
           <div
             style="padding-bottom: 70.42253521126761%;"
@@ -311,8 +308,7 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
         class="sc-bdVaJa sc-bxivhb fstdFq"
       >
         <div
-          class="css-view-1dbjc4n"
-          data-testid="Image"
+          class="tc-view__TcView-nuazoi-0 fPjBcr"
         >
           <div
             style="padding-bottom: 70.42253521126761%;"

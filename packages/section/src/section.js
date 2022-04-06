@@ -6,7 +6,6 @@ import { withTrackScrollDepth } from "@times-components/tracking";
 import SectionItemSeparator from "./section-item-separator";
 import withTrackingContext from "./section-tracking-context";
 import PuzzleBar from "./puzzle-bar";
-import MagazineCover from "./magazine-cover";
 import Slice from "./slice";
 import styleFactory from "./styles";
 import { prepareSlicesForRender, createPuzzleData } from "./utils";
@@ -33,18 +32,10 @@ class Section extends Component {
       .map(viewableItem => onViewed(viewableItem.item, slices));
   }
 
-  getHeaderComponent(isPuzzle, isMagazine) {
+  getHeaderComponent(isPuzzle) {
     const { onPuzzleBarPress } = this.props;
     if (isPuzzle) {
       return <PuzzleBar onPress={onPuzzleBarPress} />;
-    }
-
-    if (isMagazine) {
-      const {
-        section: { cover }
-      } = this.props;
-
-      return <MagazineCover cover={cover} />;
     }
 
     return null;
@@ -94,7 +85,6 @@ class Section extends Component {
     } = this.props;
 
     const isPuzzle = name === "PuzzleSection";
-    const isMagazine = name === "MagazineSection";
 
     return (
       <Responsive>
@@ -119,8 +109,7 @@ class Section extends Component {
                 }
                 keyExtractor={item => item.elementId}
                 ListHeaderComponent={this.getHeaderComponent(
-                  isPuzzle,
-                  isMagazine
+                  isPuzzle
                 )}
                 nestedScrollEnabled
                 onViewableItemsChanged={

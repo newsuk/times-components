@@ -7,6 +7,24 @@ exports[`1. card loading state 1`] = `
 }
 
 .c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c2 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -16,7 +34,7 @@ exports[`1. card loading state 1`] = `
   z-index: 2;
 }
 
-.c2 {
+.c3 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -128,42 +146,39 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS5 {
-  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  style: [object Object];
 }
 
 .IS6 {
-  height: 24;
-  margin-bottom: 10px;
-  max-width: 300;
+  style: [object Object];
 }
 
 .IS7 {
+  style: [object Object];
+}
+
+.IS8 {
+  background: orange;
+}
+
+.IS9 {
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+}
+
+.IS10 {
   height: 24;
   margin-bottom: 10px;
   max-width: 300;
 }
 
-.IS8 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-}
-
-.IS9 {
-  height: 10;
-  margin-bottom: 10px;
-}
-
-.IS10 {
-  height: 10;
-  margin-bottom: 10px;
-}
-
 .IS11 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
 }
 
 .IS12 {
-  height: 10;
-  margin-bottom: 10px;
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS13 {
@@ -172,16 +187,35 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS14 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
 }
 
 .IS15 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+}
+
+.IS16 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS17 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS18 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+}
+
+.IS19 {
   height: 10;
   margin-bottom: 0;
   max-width: 240;
 }
 
-.IS16 {
+.IS20 {
   height: 10;
   margin-bottom: 0;
   max-width: 240;
@@ -236,6 +270,7 @@ exports[`1. card loading state 1`] = `
         >
           <TimesImage
             aspectRatio={0.6666666666666666}
+            className="IS8"
             disablePlaceholder={false}
             fadeImageIn={false}
             highResSize={800}
@@ -250,25 +285,25 @@ exports[`1. card loading state 1`] = `
         >
           <_default>
             <Gradient
-              className="IS7"
+              className="IS11"
               degrees={264}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS10"
+              className="IS14"
               degrees={267}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS13"
+              className="IS17"
               degrees={267}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS16"
+              className="IS20"
               degrees={267}
               endPoint="1"
               startPoint="0"
@@ -288,6 +323,24 @@ exports[`2. card with reversed loading state 1`] = `
 }
 
 .c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c2 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -297,7 +350,7 @@ exports[`2. card with reversed loading state 1`] = `
   z-index: 2;
 }
 
-.c2 {
+.c3 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -468,6 +521,22 @@ exports[`2. card with reversed loading state 1`] = `
 .IS16 {
   padding-bottom: 150%;
 }
+
+.IS17 {
+  style: [object Object];
+}
+
+.IS18 {
+  style: [object Object];
+}
+
+.IS19 {
+  style: [object Object];
+}
+
+.IS20 {
+  background: orange;
+}
 </style>
 
 <animations__FadeIn>
@@ -548,6 +617,7 @@ exports[`2. card with reversed loading state 1`] = `
         >
           <TimesImage
             aspectRatio={0.6666666666666666}
+            className="IS20"
             disablePlaceholder={false}
             fadeImageIn={false}
             highResSize={800}

@@ -415,9 +415,7 @@ exports[`10. card with reversed loading state with no image 1`] = `
 exports[`11. card should not re-render when imageratio prop is changed 1`] = `
 <div>
   <div>
-    <div
-      data-testid="Image"
-    >
+    <div>
       <div>
         <img
           src="https://img.io/img?resize=360"
@@ -459,9 +457,7 @@ exports[`11. card should not re-render when imageratio prop is changed 1`] = `
 exports[`11. card should not re-render when imageratio prop is changed 2`] = `
 <div>
   <div>
-    <div
-      data-testid="Image"
-    >
+    <div>
       <div>
         <img
           src="https://img.io/img?resize=360"
@@ -503,9 +499,7 @@ exports[`11. card should not re-render when imageratio prop is changed 2`] = `
 exports[`12. card should re-render when image uri changes 1`] = `
 <div>
   <div>
-    <div
-      data-testid="Image"
-    >
+    <div>
       <div>
         <img
           src="https://img.io/img?resize=360"
@@ -547,9 +541,7 @@ exports[`12. card should re-render when image uri changes 1`] = `
 exports[`12. card should re-render when image uri changes 2`] = `
 <div>
   <div>
-    <div
-      data-testid="Image"
-    >
+    <div>
       <div>
         <img
           src="http://foo?resize=360"
@@ -591,9 +583,7 @@ exports[`12. card should re-render when image uri changes 2`] = `
 exports[`13. card should re-render when low res size changes 1`] = `
 <div>
   <div>
-    <div
-      data-testid="Image"
-    >
+    <div>
       <div>
         <img
           src="https://img.io/img?resize=360"
@@ -635,9 +625,7 @@ exports[`13. card should re-render when low res size changes 1`] = `
 exports[`13. card should re-render when low res size changes 2`] = `
 <div>
   <div>
-    <div
-      data-testid="Image"
-    >
+    <div>
       <div>
         <img
           src="https://img.io/img?resize=360"
@@ -676,9 +664,7 @@ exports[`13. card should re-render when low res size changes 2`] = `
 exports[`14. card should re-render when high res size changes 1`] = `
 <div>
   <div>
-    <div
-      data-testid="Image"
-    >
+    <div>
       <div>
         <img
           src="https://img.io/img?resize=360"
@@ -720,9 +706,7 @@ exports[`14. card should re-render when high res size changes 1`] = `
 exports[`14. card should re-render when high res size changes 2`] = `
 <div>
   <div>
-    <div
-      data-testid="Image"
-    >
+    <div>
       <div>
         <img
           src="https://img.io/img?resize=50"
@@ -762,9 +746,7 @@ exports[`15. card should re-render when loading state changes 1`] = `
 <div>
   <div>
     <div>
-      <div
-        data-testid="Image"
-      >
+      <div>
         <div>
           <img
             src="https://img.io/img?resize=360"
@@ -808,9 +790,7 @@ exports[`15. card should re-render when loading state changes 1`] = `
 exports[`15. card should re-render when loading state changes 2`] = `
 <div>
   <div>
-    <div
-      data-testid="Image"
-    >
+    <div>
       <div>
         <img
           src="https://img.io/img?resize=360"

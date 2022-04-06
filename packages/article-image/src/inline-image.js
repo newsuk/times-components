@@ -45,7 +45,7 @@ const InlineImage = ({ imageOptions, captionOptions }) => {
     <figure style={{ margin: 0 }}>
       <InsetImageStyle key="img">
         <Image
-          alt={caption}
+          accessibilityLabel={caption}
           aspectRatio={aspectRatio}
           highResSize={highResSize}
           lowResSize={lowResSize}

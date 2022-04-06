@@ -96,8 +96,7 @@ exports[`<LatestFromSection> renders  1`] = `
                       style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
                     >
                       <div
-                        class="css-view-1dbjc4n"
-                        data-testid="Image"
+                        class="tc-view__TcView-nuazoi-0 fPjBcr"
                       >
                         <div
                           style="padding-bottom: 56.25%;"
@@ -243,8 +242,7 @@ exports[`<LatestFromSection> renders  1`] = `
                       style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
                     >
                       <div
-                        class="css-view-1dbjc4n"
-                        data-testid="Image"
+                        class="tc-view__TcView-nuazoi-0 fPjBcr"
                       >
                         <div
                           style="padding-bottom: 56.25%;"
@@ -390,8 +388,7 @@ exports[`<LatestFromSection> renders  1`] = `
                       style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
                     >
                       <div
-                        class="css-view-1dbjc4n"
-                        data-testid="Image"
+                        class="tc-view__TcView-nuazoi-0 fPjBcr"
                       >
                         <div
                           style="padding-bottom: 56.25%;"

@@ -2,6 +2,24 @@
 
 exports[`1. page error 1`] = `
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c3 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -64,7 +82,7 @@ exports[`1. page error 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c4 {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
@@ -120,6 +138,10 @@ exports[`1. page error 1`] = `
 }
 
 .IS4 {
+  style: [object Object];
+}
+
+.IS5 {
   align-self: center;
   margin-bottom: 10px;
   margin-top: 40px;
@@ -133,13 +155,13 @@ exports[`1. page error 1`] = `
     className="c1 responsive__PageErrorImageContainer-sc-1c8x8xk-6 c1 css-view-1dbjc4n"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="c2 IS4"
     >
       <div
         className="IS3"
       >
         <img
-          className="c2"
+          className="c3"
         />
         <div
           className="css-view-1dbjc4n IS2"
@@ -156,7 +178,7 @@ exports[`1. page error 1`] = `
     </div>
   </div>
   <div
-    className="c3 responsive__PageErrorContentContainer-sc-1c8x8xk-7 c3 css-view-1dbjc4n"
+    className="c4 responsive__PageErrorContentContainer-sc-1c8x8xk-7 c4 css-view-1dbjc4n"
   >
     <div
       className="css-text-901oao r-alignSelf-1kihuf0 r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-yy2aun r-lineHeight-eaezby r-marginBottom-15d164r r-marginTop-1x0uki6 r-textAlign-q4m81j S1"
@@ -169,7 +191,7 @@ exports[`1. page error 1`] = `
       We can't load the page you have requested. Please check your network connection and retry to continue
     </div>
     <Button
-      className="IS4"
+      className="IS5"
     />
   </div>
 </div>

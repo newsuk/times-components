@@ -2,6 +2,24 @@
 
 exports[`card with reversed layout 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -11,7 +29,7 @@ exports[`card with reversed layout 1`] = `
   z-index: 2;
 }
 
-.c1 {
+.c2 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -105,6 +123,22 @@ exports[`card with reversed layout 1`] = `
 .IS4 {
   padding-bottom: 150%;
 }
+
+.IS5 {
+  style: [object Object];
+}
+
+.IS6 {
+  style: [object Object];
+}
+
+.IS7 {
+  style: [object Object];
+}
+
+.IS8 {
+  background: orange;
+}
 </style>
 
 <div
@@ -124,6 +158,7 @@ exports[`card with reversed layout 1`] = `
   >
     <TimesImage
       aspectRatio={0.6666666666666666}
+      className="IS8"
       disablePlaceholder={false}
       fadeImageIn={false}
       highResSize={600}
