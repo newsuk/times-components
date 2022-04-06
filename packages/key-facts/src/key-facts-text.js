@@ -12,6 +12,14 @@ const getTitle = data => {
   return title.length > 0 ? title : " ";
 };
 
+const getNavigationOffset = () => {
+  const sectionBar = document.querySelector(".OrientationBar");
+
+  if (window.innerWidth < 1024) return 100;
+  if (window.innerWidth <= 1320) return 90 + parseInt(sectionBar.offHeight);
+  return 40 + parseInt(sectionBar.offHeight);
+};
+
 const handleClickEventScrollTo = (event, url) => {
   if (url.charAt(0) === "#") {
     event.preventDefault();
@@ -21,20 +29,12 @@ const handleClickEventScrollTo = (event, url) => {
       const article = target.parentElement.parentElement;
       const container = article.parentElement;
 
-      let menuOffset = 50;
-      if (window.innerWidth < 1320) {
-        menuOffset = 100;
-      }
-      if (window.innerWidth < 1024) {
-        menuOffset = 110;
-      }
-
       window.scroll({
         top:
           container.offsetTop +
           article.offsetTop +
           target.offsetTop -
-          menuOffset,
+          getNavigationOffset(),
         behavior: "smooth"
       });
     }
