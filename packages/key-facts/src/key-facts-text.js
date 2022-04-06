@@ -12,7 +12,7 @@ const getTitle = data => {
   return title.length > 0 ? title : " ";
 };
 
-const getNavigationOffset = () => {
+const getNavOffset = () => {
   const sectionBar = document.querySelector(".OrientationBar");
 
   if (window.innerWidth < 1024) return 100;
@@ -34,7 +34,7 @@ const handleClickEventScrollTo = (event, url) => {
           container.offsetTop +
           article.offsetTop +
           target.offsetTop -
-          getNavigationOffset(),
+          getNavOffset(),
         behavior: "smooth"
       });
     }
