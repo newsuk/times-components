@@ -108,9 +108,7 @@ class Section extends Component {
                   this.renderItemSeperator(leadingItem, editionBreakpoint)
                 }
                 keyExtractor={item => item.elementId}
-                ListHeaderComponent={this.getHeaderComponent(
-                  isPuzzle
-                )}
+                ListHeaderComponent={this.getHeaderComponent(isPuzzle)}
                 nestedScrollEnabled
                 onViewableItemsChanged={
                   onViewed ? this.onViewableItemsChanged : null
