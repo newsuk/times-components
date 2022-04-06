@@ -22,6 +22,7 @@ exports[`1. with responsive styles 1`] = `
 <a
   className="c0"
   href="http://thetimes.co.uk"
+  onClick={[Function]}
   target={null}
 >
   The Times
@@ -37,6 +38,7 @@ exports[`2. with a target 1`] = `
 <a
   className="c0"
   href="http://thetimes.co.uk"
+  onClick={[Function]}
   target="_blank"
 >
   The Times
@@ -52,6 +54,7 @@ exports[`3. renders link 1`] = `
 <a
   className="c0"
   href="http://thetimes.co.uk"
+  onClick={[Function]}
   target={null}
 >
   The Times
@@ -67,6 +70,7 @@ exports[`4. renders link with target 1`] = `
 <a
   className="c0"
   href="http://thetimes.co.uk"
+  onClick={[Function]}
   target="_blank"
 >
   The Times
@@ -91,6 +95,7 @@ exports[`5. renders text link 1`] = `
 <a
   className="c0"
   href="http://thetimes.co.uk"
+  onPress={[Function]}
   style={
     Object {
       "text-decoration": "underline",
@@ -127,6 +132,7 @@ exports[`6. text link with multiple styles 1`] = `
 <a
   className="c0"
   href="http://thetimes.co.uk"
+  onPress={[Function]}
   style={
     Object {
       "0": Object {
@@ -161,6 +167,7 @@ exports[`7. text link with children 1`] = `
 <a
   className="c0"
   href="http://thetimes.co.uk"
+  onPress={[Function]}
   style={
     Object {
       "text-decoration": "underline",
@@ -191,6 +198,7 @@ exports[`8. text link with target 1`] = `
 <a
   className="c0"
   href="http://thetimes.co.uk"
+  onPress={[Function]}
   style={
     Object {
       "text-decoration": "underline",
