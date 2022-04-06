@@ -3,6 +3,61 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.8.0...@times-components/key-facts@2.9.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1577:** key moments anchor links ([#2904](https://github.com/newsuk/times-components/issues/2904)) ([761a1c5](https://github.com/newsuk/times-components/commit/761a1c590d597e9cb1a4a78dbbf2b747d81749c9))
+
+
+
+
+
+# [2.8.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.7.0...@times-components/key-facts@2.8.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1639:** live flag analytics param renaming ([#2900](https://github.com/newsuk/times-components/issues/2900)) ([39099ab](https://github.com/newsuk/times-components/commit/39099ab577734ff2123c18aace8afc706faf3634))
+
+
+
+
+
+# [2.7.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.6.0...@times-components/key-facts@2.7.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1577:** key moments anchor points ([#2902](https://github.com/newsuk/times-components/issues/2902)) ([fa8c45c](https://github.com/newsuk/times-components/commit/fa8c45c09cb0e2e1ae2cd7b927b9cd4ad5975600))
+
+
+
+
+
+# [2.6.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.5.0...@times-components/key-facts@2.6.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1577:** key moments anchor points ([#2901](https://github.com/newsuk/times-components/issues/2901)) ([6c487a9](https://github.com/newsuk/times-components/commit/6c487a9a47cd141101405d0cbd48fc31fc70bdee))
+
+
+
+
+
+# [2.5.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.4.4...@times-components/key-facts@2.5.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1577:** key moments anchor points ([#2899](https://github.com/newsuk/times-components/issues/2899)) ([0534c22](https://github.com/newsuk/times-components/commit/0534c222ffb3691afaf79ea456976575a994a103))
+
+
+
+
+
 ## [2.4.4](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.4.3...@times-components/key-facts@2.4.4) (2022-04-01)
 
 
