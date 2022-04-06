@@ -13,9 +13,7 @@ import shared from "./shared.base";
 jest.mock("@times-components/link", () => ({
   TextLink: "TextLink"
 }));
-jest.mock("@times-components/link", () => ({
-  TimesTextLink: "TimesTextLink"
-}));
+
 jest.mock("@times-components/icons", () => ({
   IconTwitter: "IconTwitter"
 }));

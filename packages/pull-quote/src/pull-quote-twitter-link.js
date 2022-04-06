@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { TimesTextLink } from "@times-components/link";
+import { TextLink } from "@times-components/link";
 import { IconTwitter } from "@times-components/icons";
 import { propTypes, defaultProps } from "./pull-quote-twitter-link-prop-types";
 import makeTwitterUrl from "./utils";
@@ -17,7 +17,7 @@ const PullQuoteTwitterLink = ({ onTwitterLinkPress, twitter }) => {
   return (
     <View style={styles.twitterContainer}>
       <IconTwitter height={10} width={11} />
-      <TimesTextLink
+      <TextLink
         className="pullQuoteTwitterLink"
         key={url}
         onPress={e => onTwitterLinkPress(e, { twitter, url })}
@@ -26,7 +26,7 @@ const PullQuoteTwitterLink = ({ onTwitterLinkPress, twitter }) => {
         url={url}
       >
         {twitter}
-      </TimesTextLink>
+      </TextLink>
     </View>
   );
 };

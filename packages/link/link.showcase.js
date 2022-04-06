@@ -1,7 +1,7 @@
 import { TcView } from "@times-components/utils";
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import Link, { TextLink, TimesTextLink } from "./src/link";
+import Link, { TextLink } from "./src/link";
 
 const BigSquare = props => (
   <TcView
@@ -162,25 +162,25 @@ export default {
     },
     {
       component: (_, { action }) => (
-        <TimesTextLink
+        <TextLink
           onPress={action("onPress")}
           url="https://thetimes.co.uk/"
         >
           The Times
-        </TimesTextLink>
+        </TextLink>
       ),
       name: "NEW: TextLink",
       type: "story"
     },
     {
       component: (_, { action }) => (
-        <TimesTextLink
+        <TextLink
           onPress={action("onPress")}
           style={{ color: colours.functional.action }}
           url="https://thetimes.co.uk/"
         >
           The Times
-        </TimesTextLink>
+        </TextLink>
       ),
       name: "NEW: TextLink with styles",
       type: "story"
