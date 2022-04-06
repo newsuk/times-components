@@ -22,7 +22,7 @@ import Link, { TextLink } from "@times-components/link";
 </TextLink>
 ```
 
-The web version of link also accepts a `responsiveLinkStyles` prop that allows
+The link accepts a `responsiveLinkStyles` prop that allows
 the resulting `<a>` tag to be styled responsively.
 
 Typically, apps will need to use the `onPress` callback to bubble up navigation

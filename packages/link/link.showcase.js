@@ -162,10 +162,7 @@ export default {
     },
     {
       component: (_, { action }) => (
-        <TextLink
-          onPress={action("onPress")}
-          url="https://thetimes.co.uk/"
-        >
+        <TextLink onPress={action("onPress")} url="https://thetimes.co.uk/">
           The Times
         </TextLink>
       ),
