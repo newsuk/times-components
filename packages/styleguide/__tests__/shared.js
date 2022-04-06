@@ -1,4 +1,4 @@
-import { TcText } from "@times-components/utils"; 
+import { TcText } from "@times-components/utils";
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";

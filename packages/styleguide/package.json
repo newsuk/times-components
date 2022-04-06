@@ -39,7 +39,6 @@
     "@times-components/jest-serializer": "3.2.29",
     "@times-components/storybook": "4.2.0",
     "@times-components/test-utils": "2.3.10",
-    "@times-components/utils": "6.6.0",
     "@times-components/webpack-configurator": "2.0.29",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -63,7 +62,8 @@
   },
   "dependencies": {
     "prop-types": "15.7.2",
-    "styled-components": "4.3.2"
+    "styled-components": "4.3.2",
+    "@times-components/utils": "6.6.0"
   },
   "resolutions": {
     "react": "16.9.0",
