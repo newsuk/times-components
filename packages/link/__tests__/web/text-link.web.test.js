@@ -53,7 +53,7 @@ describe("Test Link", () => {
       </TextLink>
     );
     expect(baseElement).toMatchSnapshot();
-    expect(getByText('Children')).toBeVisible();
+    expect(getByText("Children")).toBeVisible();
     expect(getByRole("link")).toHaveAttribute("href", "http://thetimes.co.uk");
   });
 });
