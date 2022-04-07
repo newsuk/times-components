@@ -124,66 +124,80 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS3 {
-  -webkit-align-items: center;
   align-items: center;
-  background-color: rgba(237,237,237,1.00);
-  bottom: 0px;
-  -webkit-justify-content: center;
+  background-color: #EDEDED;
+  bottom: 0;
   justify-content: center;
-  left: 0px;
+  left: 0;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   z-index: 0;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
+  border-radius: 0;
 }
 
 .IS4 {
-  padding-bottom: 150%;
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
 }
 
 .IS5 {
-  style: [object Object];
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
 }
 
 .IS6 {
-  style: [object Object];
+  padding-bottom: 150%;
 }
 
 .IS7 {
-  style: [object Object];
-}
-
-.IS8 {
-  background: orange;
-}
-
-.IS9 {
   background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
+.IS8 {
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
+}
+
+.IS9 {
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
+}
+
 .IS10 {
-  height: 24;
-  margin-bottom: 10px;
-  max-width: 300;
-}
-
-.IS11 {
-  height: 24;
-  margin-bottom: 10px;
-  max-width: 300;
-}
-
-.IS12 {
   background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
-.IS13 {
+.IS11 {
   height: 10;
   margin-bottom: 10px;
+}
+
+.IS12 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS13 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS14 {
@@ -192,30 +206,21 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS15 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
 }
 
 .IS16 {
-  height: 10;
-  margin-bottom: 10px;
-}
-
-.IS17 {
-  height: 10;
-  margin-bottom: 10px;
-}
-
-.IS18 {
   background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
-.IS19 {
+.IS17 {
   height: 10;
   margin-bottom: 0;
   max-width: 240;
 }
 
-.IS20 {
+.IS18 {
   height: 10;
   margin-bottom: 0;
   max-width: 240;
@@ -270,7 +275,6 @@ exports[`1. card loading state 1`] = `
         >
           <TimesImage
             aspectRatio={0.6666666666666666}
-            className="IS8"
             disablePlaceholder={false}
             fadeImageIn={false}
             highResSize={800}
@@ -285,25 +289,25 @@ exports[`1. card loading state 1`] = `
         >
           <_default>
             <Gradient
-              className="IS11"
+              className="IS9"
               degrees={264}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS14"
+              className="IS12"
               degrees={267}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS17"
+              className="IS15"
               degrees={267}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS20"
+              className="IS18"
               degrees={267}
               endPoint="1"
               startPoint="0"
@@ -501,41 +505,46 @@ exports[`2. card with reversed loading state 1`] = `
 }
 
 .IS15 {
-  -webkit-align-items: center;
   align-items: center;
-  background-color: rgba(237,237,237,1.00);
-  bottom: 0px;
-  -webkit-justify-content: center;
+  background-color: #EDEDED;
+  bottom: 0;
   justify-content: center;
-  left: 0px;
+  left: 0;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   z-index: 0;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
+  border-radius: 0;
 }
 
 .IS16 {
-  padding-bottom: 150%;
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
 }
 
 .IS17 {
-  style: [object Object];
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
 }
 
 .IS18 {
-  style: [object Object];
-}
-
-.IS19 {
-  style: [object Object];
-}
-
-.IS20 {
-  background: orange;
+  padding-bottom: 150%;
 }
 </style>
 
@@ -617,7 +626,6 @@ exports[`2. card with reversed loading state 1`] = `
         >
           <TimesImage
             aspectRatio={0.6666666666666666}
-            className="IS20"
             disablePlaceholder={false}
             fadeImageIn={false}
             highResSize={800}

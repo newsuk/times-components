@@ -103,41 +103,46 @@ exports[`card with reversed layout 1`] = `
 }
 
 .IS3 {
-  -webkit-align-items: center;
   align-items: center;
-  background-color: rgba(237,237,237,1.00);
-  bottom: 0px;
-  -webkit-justify-content: center;
+  background-color: #EDEDED;
+  bottom: 0;
   justify-content: center;
-  left: 0px;
+  left: 0;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   z-index: 0;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
+  border-radius: 0;
 }
 
 .IS4 {
-  padding-bottom: 150%;
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
 }
 
 .IS5 {
-  style: [object Object];
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
 }
 
 .IS6 {
-  style: [object Object];
-}
-
-.IS7 {
-  style: [object Object];
-}
-
-.IS8 {
-  background: orange;
+  padding-bottom: 150%;
 }
 </style>
 
@@ -158,7 +163,6 @@ exports[`card with reversed layout 1`] = `
   >
     <TimesImage
       aspectRatio={0.6666666666666666}
-      className="IS8"
       disablePlaceholder={false}
       fadeImageIn={false}
       highResSize={600}

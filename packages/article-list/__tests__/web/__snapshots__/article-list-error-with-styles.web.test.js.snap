@@ -116,21 +116,16 @@ exports[`1. page error 1`] = `
 }
 
 .IS2 {
-  -webkit-align-items: center;
   align-items: center;
-  background-color: rgba(237,237,237,1.00);
-  bottom: 0px;
-  -webkit-justify-content: center;
+  background-color: #EDEDED;
+  bottom: 0;
   justify-content: center;
-  left: 0px;
+  left: 0;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   z-index: 0;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
+  border-radius: 0;
 }
 
 .IS3 {
@@ -138,10 +133,6 @@ exports[`1. page error 1`] = `
 }
 
 .IS4 {
-  style: [object Object];
-}
-
-.IS5 {
   align-self: center;
   margin-bottom: 10px;
   margin-top: 40px;
@@ -155,7 +146,7 @@ exports[`1. page error 1`] = `
     className="c1 responsive__PageErrorImageContainer-sc-1c8x8xk-6 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 IS4"
+      className="c2"
     >
       <div
         className="IS3"
@@ -164,7 +155,7 @@ exports[`1. page error 1`] = `
           className="c3"
         />
         <div
-          className="css-view-1dbjc4n IS2"
+          className="c2 IS2"
         >
           <svg
             className="IS1"
@@ -191,7 +182,7 @@ exports[`1. page error 1`] = `
       We can't load the page you have requested. Please check your network connection and retry to continue
     </div>
     <Button
-      className="IS5"
+      className="IS4"
     />
   </div>
 </div>

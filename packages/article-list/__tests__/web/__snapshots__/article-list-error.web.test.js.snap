@@ -8,7 +8,10 @@ exports[`1. page error 1`] = `
         <img
           src="2d7dffcd8e7f3cde3e959c364dc3d432"
         />
-        <div>
+        <div
+          height="100%"
+          width="100%"
+        >
           <svg
             height="auto"
             version="1.1"
