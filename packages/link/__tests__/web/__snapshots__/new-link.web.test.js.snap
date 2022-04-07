@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link renders the link 1`] = `
+<body>
+  <div>
+    <a
+      class="link__RespLink-sc-1ocvixa-0 dfMuic"
+      href="http://thetimes.co.uk"
+    >
+      The Times
+    </a>
+  </div>
+</body>
+`;
+
+exports[`Link renders the link with a target 1`] = `
+<body>
+  <div>
+    <a
+      class="link__RespLink-sc-1ocvixa-0 dfMuic"
+      href="http://thetimes.co.uk"
+      target="_blank"
+    >
+      The Times
+    </a>
+  </div>
+</body>
+`;

@@ -17,7 +17,7 @@ const TextLink = ({ children, onPress, style, target, url, ...props }) => {
     ...props,
     accessibilityRole: "link",
     href: url,
-    onPress,
+    onClick: onPress,
     style: linkStyles
   };
 
