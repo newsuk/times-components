@@ -1,6 +1,5 @@
 import React from "react";
-import { View } from "react-native";
-import { TcText } from "@times-components/utils";
+import { TcText, TcView } from "@times-components/utils";
 import { IconVideo } from "@times-components/icons";
 import PropTypes from "prop-types";
 import styled from "styled-components";
@@ -11,6 +10,14 @@ const VideoLabelText = styled(TcText)`
   ${checkStylesForUnits(styles.title)};
 `;
 
+const Container = styled(TcView)`
+  ${checkStylesForUnits(styles.container)};
+`;
+
+const IconContainer = styled(TcView)`
+  ${checkStylesForUnits(styles.iconContainer)};
+`;
+
 const VideoLabel = ({ color, title }) => { 
   const textStyles = {
     ...styles.title
@@ -19,14 +26,14 @@ const VideoLabel = ({ color, title }) => {
   Object.assign(textStyles, { color });
 
   return (
-  <View style={styles.container}>
-    <View style={styles.iconContainer}>
+  <Container>
+    <IconContainer>
       <IconVideo fillColour={color} height={9} />
-    </View>
+    </IconContainer>
     <VideoLabelText style={textStyles}>
       {title ? title.toUpperCase() : "VIDEO"}
     </VideoLabelText>
-  </View>
+  </Container>
 )};
 
 VideoLabel.propTypes = {
