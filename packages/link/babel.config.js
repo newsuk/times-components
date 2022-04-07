@@ -5,6 +5,6 @@ module.exports = api => {
       "babel-plugin-styled-components",
       "@babel/plugin-transform-react-display-name"
     ],
-    presets: ["@babel/preset-react"]
+    presets: ["module:metro-react-native-babel-preset"]
   };
 };
