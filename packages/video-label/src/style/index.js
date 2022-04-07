@@ -1,21 +1,31 @@
-import { StyleSheet } from "react-native";
-import sharedStyles from "./shared";
+import styleguideFactory, { spacing } from "@times-components/styleguide";
 
-const styles = StyleSheet.create({
-  ...sharedStyles,
-  container: {
-    ...sharedStyles.container,
-    marginBottom: 1
-  },
-  iconContainer: {
-    ...sharedStyles.iconContainer,
-    alignSelf: "center",
-    paddingBottom: 2
-  },
-  title: {
-    ...sharedStyles.title,
-    lineHeight: 12
-  }
-});
+const { fontFactory } = styleguideFactory();
 
-export default styles;
+const styles = {
+    container: {
+      alignItems: "flex-start",
+      flexDirection: "row",
+      marginTop: -1,
+      marginBottom: 1
+    },
+    iconContainer: {
+      paddingBottom: spacing(1),
+      alignSelf: "center",
+      paddingBottom: 2
+    },
+    title: {
+      ...fontFactory({
+        font: "supporting",
+        fontSize: "cardMetaMobile"
+      }),
+      flex: -1,
+      fontWeight: "400",
+      letterSpacing: 1.2,
+      lineHeight: 12,
+      marginLeft: spacing(1),
+      paddingTop: 1
+    }
+  };
+  
+  export default styles;
