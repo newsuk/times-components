@@ -1,7 +1,6 @@
 # Link
 
-The link component wraps its children and makes them clickable (web) or
-touchable (native) elements. There are two exported components:
+The link component wraps its children and makes them clickable elements. There are two exported components:
 
 - `Link` - wraps any element, effectively making it clickable
 - `TextLink` - makes any inline text a link
@@ -24,11 +23,6 @@ import Link, { TextLink } from "@times-components/link";
 
 The link accepts a `responsiveLinkStyles` prop that allows
 the resulting `<a>` tag to be styled responsively.
-
-Typically, apps will need to use the `onPress` callback to bubble up navigation
-so that the parent native Activity or UIViewContoller can handle the navigation,
-rather than multiple Activities or UIViewContollers mistakingly navigating
-multiple times in native land.
 
 ## Contributing
 
