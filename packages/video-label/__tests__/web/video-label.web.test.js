@@ -3,39 +3,41 @@ import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import VideoLabel from "../../src/video-label";
 
-const tests = [
-  {
-    name: "video label with a title",
-    test: () => {
-      const wrapper = mount(<VideoLabel color="#008347" title="swimming" />);
+describe("Video Label", () => {
+  it("shows the default text of VIDEO when no title is passed to the component", () => {
+    const { baseElement, getByText } = render(
+      <VideoLabel />
+    );
+    expect(baseElement).toMatchSnapshot();
+    expect(getByText("VIDEO")).toBeVisible();
+  })
 
-      expect(wrapper).toMatchSnapshot();
-    }
-  },
-  {
-    name: "video label without a title shows VIDEO",
-    test: () => {
-      const wrapper = mount(<VideoLabel color="#008347" />);
+  it("renders the title that is passed to the component", () => {
+    const { baseElement, getByText } = render(
+      <VideoLabel title="swimming"/>
+    )
+    expect(baseElement).toMatchSnapshot();
+    expect(getByText("SWIMMING")).toBeVisible();
+  })
 
-      expect(wrapper).toMatchSnapshot();
-    }
-  },
-  {
-    name: "video label with null title shows VIDEO",
-    test: () => {
-      const wrapper = mount(<VideoLabel color="#008347" title={null} />);
+  it("renders the component in the color passed to it", () => {
+    const { baseElement } = render(
+      <VideoLabel color="blue" />   
+      )
+      expect(baseElement).toMatchSnapshot();
+  })
+})
 
-      expect(wrapper).toMatchSnapshot();
-    }
-  },
-  {
-    name: "video label with the black default colour",
-    test: () => {
-      const wrapper = mount(<VideoLabel />);
+// const tests = [
+//   
+//   
+//   
+//   {
+//     name: "video label with the black default colour",
+//     test: () => {
+//       const wrapper = mount(<VideoLabel />);
 
-      expect(wrapper).toMatchSnapshot();
-    }
-  }
-];
-
-iterator(tests);
+//       expect(wrapper).toMatchSnapshot();
+//     }
+//   }
+// ];
