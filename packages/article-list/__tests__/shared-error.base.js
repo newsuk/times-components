@@ -28,10 +28,12 @@ export default () => {
     {
       name: "page error",
       test() {
+        const refetchMock = jest.fn();
         const testInstance = TestRenderer.create(
-          <ArticleListPageError refetch={() => {}} />
+          <ArticleListPageError refetch={refetchMock} />
         );
-
+        testInstance.root.findByType("Button").props.onPress();
+        expect(refetchMock).toHaveBeenCalled();
         expect(testInstance).toMatchSnapshot();
       }
     },

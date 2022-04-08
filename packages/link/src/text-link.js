@@ -1,32 +1,32 @@
 import React from "react";
-import { StyleSheet, Text } from "react-native";
+import { TcTextLink, checkStylesForUnits } from "@times-components/utils";
+import styled from "styled-components";
 import { defaultProps, propTypes } from "./text-link-prop-types";
 
-/*
-* TODO: ADAM: This is to be deprecated when replaced with times-text-link.js <TimesTextLink/> instead of <TextLink/>
-*/
-
-const styles = StyleSheet.create({
+const styles = {
   textLink: {
-    textDecorationLine: "underline"
+    "text-decoration": "underline"
   }
-});
-
+};
+const LinkTextObj = styled(TcTextLink)`
+  ${props => (props.style ? checkStylesForUnits(props.style) : "")};
+`;
 const TextLink = ({ children, onPress, style, target, url, ...props }) => {
+  const linkStyles = { ...styles.textLink, ...style };
   const textProps = {
     ...props,
     accessibilityRole: "link",
     href: url,
-    onPress,
-    style: [styles.textLink].concat(style)
+    onClick: onPress,
+    style: linkStyles
   };
 
   return target ? (
-    <Text {...textProps} target={target}>
+    <LinkTextObj {...textProps} target={target}>
       {children}
-    </Text>
+    </LinkTextObj>
   ) : (
-    <Text {...textProps}>{children}</Text>
+    <LinkTextObj {...textProps}>{children}</LinkTextObj>
   );
 };
 
