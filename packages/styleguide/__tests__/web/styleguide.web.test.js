@@ -7,7 +7,7 @@ import styleguide, {
   spacing
 } from "../../src/styleguide";
 
-const tests = [
+const tests = [ 
   {
     name: "Font sizes at default scale",
     test: () => {
