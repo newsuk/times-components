@@ -1,17 +1,15 @@
-import 'jest-styled-components'
-import { TcText} from "@times-components/utils";
-import { mount } from "enzyme";
 import React from "react";
+import "jest-styled-components";
+import { TcText } from "@times-components/utils";
+import { mount } from "enzyme";
 import { iterator } from "@times-components/test-utils";
 import styleguide, { Animations, scales } from "../src/styleguide";
 import themeFactory from "../src/theme/theme-factory";
 
-
 jest.mock("@times-components/utils", () => ({
-    TcText: jest.fn(({ children }) => <p data-testid="text"> {children}</p>),
-    TcView: jest.fn(({ children }) => <div data-testid="view"> {children}</div>)
+  TcText: jest.fn(({ children }) => <p data-testid="text"> {children}</p>),
+  TcView: jest.fn(({ children }) => <div data-testid="view"> {children}</div>)
 }));
-
 
 const tests = [
   {
@@ -53,8 +51,8 @@ const tests = [
         </Animations.FadeIn>
       );
 
- expect(testInstance.find('animations__FadeIn-sc-2iiu4y-0 iZkZiB'))
- expect(testInstance.find('Hello World'))
+      expect(testInstance.find("FadeIn")).toBeDefined();
+      expect(testInstance.find("Hello World"));
     }
   },
   // Non snapshot tests

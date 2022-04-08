@@ -10,7 +10,8 @@ exports[`Inline Newsletter Puff Clicking Subscribe renders 'saving' when the but
         class="sc-bdVaJa sc-bxivhb fstdFq"
       >
         <div
-          class="tc-view__TcView-nuazoi-0 fPjBcr"
+          class="css-view-1dbjc4n"
+          data-testid="Image"
         >
           <div
             style="padding-bottom: 70.42253521126761%;"
@@ -20,10 +21,8 @@ exports[`Inline Newsletter Puff Clicking Subscribe renders 'saving' when the but
               src="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
             />
             <div
-              class="tc-view__TcView-nuazoi-0 fPjBcr"
-              height="100%"
-              style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
-              width="100%"
+              class="css-view-1dbjc4n"
+              style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
             >
               <svg
                 height="auto"
@@ -92,7 +91,8 @@ exports[`Inline Newsletter Puff Manage preferences  renders the success view aft
         class="sc-bdVaJa sc-bxivhb fstdFq"
       >
         <div
-          class="tc-view__TcView-nuazoi-0 fPjBcr"
+          class="css-view-1dbjc4n"
+          data-testid="Image"
         >
           <div
             style="padding-bottom: 70.42253521126761%;"
@@ -102,10 +102,8 @@ exports[`Inline Newsletter Puff Manage preferences  renders the success view aft
               src="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
             />
             <div
-              class="tc-view__TcView-nuazoi-0 fPjBcr"
-              height="100%"
-              style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
-              width="100%"
+              class="css-view-1dbjc4n"
+              style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
             >
               <svg
                 height="auto"
@@ -194,10 +192,8 @@ exports[`Inline Newsletter Puff renders placeholder when loading 1`] = `
       style="height: 257px;"
     >
       <div
-        class="tc-view__TcView-nuazoi-0 fPjBcr"
-        height="100%"
-        style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
-        width="100%"
+        class="css-view-1dbjc4n"
+        style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
       >
         <svg
           height="auto"
@@ -234,7 +230,8 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
         class="sc-bdVaJa sc-bxivhb fstdFq"
       >
         <div
-          class="tc-view__TcView-nuazoi-0 fPjBcr"
+          class="css-view-1dbjc4n"
+          data-testid="Image"
         >
           <div
             style="padding-bottom: 70.42253521126761%;"
@@ -244,10 +241,8 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
               src="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
             />
             <div
-              class="tc-view__TcView-nuazoi-0 fPjBcr"
-              height="100%"
-              style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
-              width="100%"
+              class="css-view-1dbjc4n"
+              style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
             >
               <svg
                 height="auto"
@@ -316,7 +311,8 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
         class="sc-bdVaJa sc-bxivhb fstdFq"
       >
         <div
-          class="tc-view__TcView-nuazoi-0 fPjBcr"
+          class="css-view-1dbjc4n"
+          data-testid="Image"
         >
           <div
             style="padding-bottom: 70.42253521126761%;"
@@ -326,10 +322,8 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
               src="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
             />
             <div
-              class="tc-view__TcView-nuazoi-0 fPjBcr"
-              height="100%"
-              style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
-              width="100%"
+              class="css-view-1dbjc4n"
+              style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
             >
               <svg
                 height="auto"

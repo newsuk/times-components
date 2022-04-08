@@ -14,5 +14,6 @@ const fadingAnimation = keyframes`
 const FadeIn = styled(TcView)`
   animation: ${fadingAnimation} 0.3s ease-in-out;
 `;
+FadeIn.displayName = "FadeIn";
 
 export default FadeIn;

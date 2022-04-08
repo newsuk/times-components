@@ -73,7 +73,8 @@ exports[`<LatestFromSection> renders  1`] = `
                       style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
                     >
                       <div
-                        class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        class="css-view-1dbjc4n"
+                        data-testid="Image"
                       >
                         <div
                           style="padding-bottom: 56.25%;"
@@ -83,10 +84,8 @@ exports[`<LatestFromSection> renders  1`] = `
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg?resize=200&quality=3"
                           />
                           <div
-                            class="tc-view__TcView-nuazoi-0 fPjBcr"
-                            height="100%"
-                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
-                            width="100%"
+                            class="css-view-1dbjc4n"
+                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
                           >
                             <svg
                               height="auto"
@@ -184,7 +183,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           dir="auto"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 fLszmr"
                           >
                             David Walsh
                           </div>
@@ -221,7 +220,8 @@ exports[`<LatestFromSection> renders  1`] = `
                       style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
                     >
                       <div
-                        class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        class="css-view-1dbjc4n"
+                        data-testid="Image"
                       >
                         <div
                           style="padding-bottom: 56.25%;"
@@ -231,10 +231,8 @@ exports[`<LatestFromSection> renders  1`] = `
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg?resize=200&quality=3"
                           />
                           <div
-                            class="tc-view__TcView-nuazoi-0 fPjBcr"
-                            height="100%"
-                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
-                            width="100%"
+                            class="css-view-1dbjc4n"
+                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
                           >
                             <svg
                               height="auto"
@@ -332,7 +330,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           dir="auto"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 fLszmr"
                           >
                             Matt Lawton
                           </div>
@@ -369,7 +367,8 @@ exports[`<LatestFromSection> renders  1`] = `
                       style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
                     >
                       <div
-                        class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        class="css-view-1dbjc4n"
+                        data-testid="Image"
                       >
                         <div
                           style="padding-bottom: 56.25%;"
@@ -379,10 +378,8 @@ exports[`<LatestFromSection> renders  1`] = `
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F798e1dce-d918-11eb-b92f-5fe539a30c29.jpg?resize=200&quality=3"
                           />
                           <div
-                            class="tc-view__TcView-nuazoi-0 fPjBcr"
-                            height="100%"
-                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
-                            width="100%"
+                            class="css-view-1dbjc4n"
+                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
                           >
                             <svg
                               height="auto"
@@ -480,7 +477,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           dir="auto"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 fLszmr"
                           >
                             Jonathan Northcroft
                           </div>
