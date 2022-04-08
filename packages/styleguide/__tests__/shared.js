@@ -8,7 +8,7 @@ import themeFactory from "../src/theme/theme-factory";
 
 
 jest.mock("@times-components/utils", () => ({
-    TcText: jest.fn(({ children }) => <div data-testid="text"> {children}</div>),
+    TcText: jest.fn(({ children }) => <p data-testid="text"> {children}</p>),
     TcView: jest.fn(({ children }) => <div data-testid="view"> {children}</div>)
 }));
 
