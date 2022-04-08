@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-import { View } from "react-native";
-import { addMissingProtocol, appendToImageURL } from "@times-components/utils";
+import {
+  addMissingProtocol,
+  appendToImageURL,
+  TcView
+} from "@times-components/utils";
 import Placeholder from "./placeholder";
 import { defaultProps, propTypes } from "./image-prop-types";
 import StyledImage from "./styles/responsive";
@@ -113,13 +116,15 @@ class TimesImage extends Component {
     } = this.props;
     const { imageIsLoaded } = this.state;
     const url = addMissingProtocol(uri);
+    const styles = {
+      ...style
+    };
+    if (rounded) {
+      Object.assign(styles, { borderRadius: "50%", overflow: "hidden" });
+    }
 
     return (
-      <View
-        onLayout={onLayout}
-        style={[style, rounded && { borderRadius: "50%", overflow: "hidden" }]}
-        testID="Image"
-      >
+      <TcView onLayout={onLayout} style={styles} testID="Image">
         <div style={{ paddingBottom: `${100 / aspectRatio}%` }}>
           {this.highResImage({ highResSize, lowResSize, url })}
           {this.lowResImage({ lowResQuality, lowResSize, url })}
@@ -127,7 +132,7 @@ class TimesImage extends Component {
             <Placeholder borderRadius={rounded ? "50%" : 0} />
           )}
         </div>
-      </View>
+      </TcView>
     );
   }
 }

@@ -7,6 +7,24 @@ exports[`1. card loading state 1`] = `
 }
 
 .c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c2 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -16,7 +34,7 @@ exports[`1. card loading state 1`] = `
   z-index: 2;
 }
 
-.c2 {
+.c3 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -106,59 +124,71 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS3 {
-  -webkit-align-items: center;
   align-items: center;
-  background-color: rgba(237,237,237,1.00);
-  bottom: 0px;
-  -webkit-justify-content: center;
+  background-color: #EDEDED;
+  bottom: 0;
   justify-content: center;
-  left: 0px;
+  left: 0;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   z-index: 0;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
+  border-radius: 0;
 }
 
 .IS4 {
-  padding-bottom: 150%;
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
 }
 
 .IS5 {
-  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
 }
 
 .IS6 {
-  height: 24;
-  margin-bottom: 10px;
-  max-width: 300;
+  padding-bottom: 150%;
 }
 
 .IS7 {
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+}
+
+.IS8 {
   height: 24;
   margin-bottom: 10px;
   max-width: 300;
 }
 
-.IS8 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-}
-
 .IS9 {
-  height: 10;
+  height: 24;
   margin-bottom: 10px;
+  max-width: 300;
 }
 
 .IS10 {
-  height: 10;
-  margin-bottom: 10px;
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS11 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
 }
 
 .IS12 {
@@ -167,21 +197,30 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS13 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+}
+
+.IS14 {
   height: 10;
   margin-bottom: 10px;
 }
 
-.IS14 {
+.IS15 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS16 {
   background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
-.IS15 {
+.IS17 {
   height: 10;
   margin-bottom: 0;
   max-width: 240;
 }
 
-.IS16 {
+.IS18 {
   height: 10;
   margin-bottom: 0;
   max-width: 240;
@@ -250,25 +289,25 @@ exports[`1. card loading state 1`] = `
         >
           <_default>
             <Gradient
-              className="IS7"
+              className="IS9"
               degrees={264}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS10"
+              className="IS12"
               degrees={267}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS13"
+              className="IS15"
               degrees={267}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS16"
+              className="IS18"
               degrees={267}
               endPoint="1"
               startPoint="0"
@@ -288,6 +327,24 @@ exports[`2. card with reversed loading state 1`] = `
 }
 
 .c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c2 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -297,7 +354,7 @@ exports[`2. card with reversed loading state 1`] = `
   z-index: 2;
 }
 
-.c2 {
+.c3 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -448,24 +505,45 @@ exports[`2. card with reversed loading state 1`] = `
 }
 
 .IS15 {
-  -webkit-align-items: center;
   align-items: center;
-  background-color: rgba(237,237,237,1.00);
-  bottom: 0px;
-  -webkit-justify-content: center;
+  background-color: #EDEDED;
+  bottom: 0;
   justify-content: center;
-  left: 0px;
+  left: 0;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   z-index: 0;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
+  border-radius: 0;
 }
 
 .IS16 {
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
+}
+
+.IS17 {
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
+}
+
+.IS18 {
   padding-bottom: 150%;
 }
 </style>

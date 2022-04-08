@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types, no-sequences, no-unused-expressions */
 import React from "react";
-import { TimesTextLink } from "@times-components/link";
+import { TextLink } from "@times-components/link";
 import { checkStylesForUnits } from "@times-components/utils";
 import renderByline from "./render-byline";
 import { propTypes, defaultProps } from "./article-byline-prop-types";
@@ -12,16 +12,16 @@ const AuthorComponent = ({ slug, className, onAuthorPress, children }) => {
   const name = children[0];
 
   return (
-    <TimesTextLink
+    <TextLink
       className={className}
-      onPress={e => {
+      onClick={e => {
         onAuthorPress(e, { name, slug });
       }}
       style={checkStylesForUnits(styles.link)}
       url={url}
     >
       {children}
-    </TimesTextLink>
+    </TextLink>
   );
 };
 

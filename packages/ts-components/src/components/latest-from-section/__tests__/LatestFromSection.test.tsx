@@ -30,16 +30,4 @@ describe('<LatestFromSection>', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
-  it('no data ', () => {
-    const { asFragment } = render(
-      <LatestFromSection
-        analyticsStream={jest.fn()}
-        latestFromSection={{
-          section: 'Sport',
-          items: []
-        }}
-      />
-    );
-    expect(asFragment()).toMatchSnapshot();
-  });
 });

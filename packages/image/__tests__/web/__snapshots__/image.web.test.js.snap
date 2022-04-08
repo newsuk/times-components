@@ -2,6 +2,24 @@
 
 exports[`1. default layout 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -11,14 +29,15 @@ exports[`1. default layout 1`] = `
   z-index: 2;
 }
 
-<div
-  data-testid="Image"
->
+<div>
   <div>
     <img
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1000"
     />
-    <div>
+    <div
+      height="100%"
+      width="100%"
+    >
       <Svg
         height="auto"
         version="1.1"
@@ -44,6 +63,24 @@ exports[`1. default layout 1`] = `
 
 exports[`2. default layout without uri 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -53,14 +90,15 @@ exports[`2. default layout without uri 1`] = `
   z-index: 2;
 }
 
-<div
-  data-testid="Image"
->
+<div>
   <div>
     <img
       src={null}
     />
-    <div>
+    <div
+      height="100%"
+      width="100%"
+    >
       <Svg
         height="auto"
         version="1.1"
@@ -86,6 +124,24 @@ exports[`2. default layout without uri 1`] = `
 
 exports[`3. default layout without aspect ratio 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -95,14 +151,15 @@ exports[`3. default layout without aspect ratio 1`] = `
   z-index: 2;
 }
 
-<div
-  data-testid="Image"
->
+<div>
   <div>
     <img
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
     />
-    <div>
+    <div
+      height="100%"
+      width="100%"
+    >
       <Svg
         height="auto"
         version="1.1"
@@ -128,6 +185,24 @@ exports[`3. default layout without aspect ratio 1`] = `
 
 exports[`4. rounded image 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -137,14 +212,15 @@ exports[`4. rounded image 1`] = `
   z-index: 2;
 }
 
-<div
-  data-testid="Image"
->
+<div>
   <div>
     <img
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800"
     />
-    <div>
+    <div
+      height="100%"
+      width="100%"
+    >
       <Svg
         height="auto"
         version="1.1"
@@ -170,6 +246,24 @@ exports[`4. rounded image 1`] = `
 
 exports[`5. with existing url params 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -179,14 +273,15 @@ exports[`5. with existing url params 1`] = `
   z-index: 2;
 }
 
-<div
-  data-testid="Image"
->
+<div>
   <div>
     <img
       src="https://image.io?resize=1400"
     />
-    <div>
+    <div
+      height="100%"
+      width="100%"
+    >
       <Svg
         height="auto"
         version="1.1"
@@ -212,6 +307,24 @@ exports[`5. with existing url params 1`] = `
 
 exports[`6. with disabled placeholder 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -221,9 +334,7 @@ exports[`6. with disabled placeholder 1`] = `
   z-index: 2;
 }
 
-<div
-  data-testid="Image"
->
+<div>
   <div>
     <img
       src="https://image.io?resize=1400"
@@ -233,7 +344,25 @@ exports[`6. with disabled placeholder 1`] = `
 `;
 
 exports[`7. remove the low res image after the high res image has transitioned in 1`] = `
-.c1 {
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c2 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -243,7 +372,7 @@ exports[`7. remove the low res image after the high res image has transitioned i
   z-index: 1;
 }
 
-.c0 {
+.c1 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -253,9 +382,7 @@ exports[`7. remove the low res image after the high res image has transitioned i
   z-index: 2;
 }
 
-<div
-  data-testid="Image"
->
+<div>
   <div>
     <img
       src="https://image.io?resize=1400"
@@ -269,6 +396,24 @@ exports[`7. remove the low res image after the high res image has transitioned i
 
 exports[`7. remove the low res image after the high res image has transitioned in 2`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -278,9 +423,7 @@ exports[`7. remove the low res image after the high res image has transitioned i
   z-index: 2;
 }
 
-<div
-  data-testid="Image"
->
+<div>
   <div>
     <img
       src="https://image.io?resize=1400"
@@ -291,6 +434,24 @@ exports[`7. remove the low res image after the high res image has transitioned i
 
 exports[`8. only a low res image 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -300,14 +461,15 @@ exports[`8. only a low res image 1`] = `
   z-index: 1;
 }
 
-<div
-  data-testid="Image"
->
+<div>
   <div>
     <img
       src="https://image.io?resize=200"
     />
-    <div>
+    <div
+      height="100%"
+      width="100%"
+    >
       <Svg
         height="auto"
         version="1.1"
@@ -333,6 +495,24 @@ exports[`8. only a low res image 1`] = `
 
 exports[`9. fade in the low res image 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -342,14 +522,15 @@ exports[`9. fade in the low res image 1`] = `
   z-index: 1;
 }
 
-<div
-  data-testid="Image"
->
+<div>
   <div>
     <img
       src="https://image.io?resize=200"
     />
-    <div>
+    <div
+      height="100%"
+      width="100%"
+    >
       <Svg
         height="auto"
         version="1.1"
@@ -375,35 +556,21 @@ exports[`9. fade in the low res image 1`] = `
 
 exports[`9. fade in the low res image 2`] = `
 .c0 {
-  display: block;
-  opacity: 1;
-  position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-  width: 100%;
-  z-index: 1;
-}
-
-<div
-  data-testid="Image"
->
-  <div>
-    <img
-      src="https://image.io?resize=200"
-    />
-  </div>
-</div>
-`;
-
-exports[`10. both high and low res sizes 1`] = `
-.c0 {
-  display: block;
-  opacity: 0;
-  position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-  width: 100%;
-  z-index: 2;
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
 }
 
 .c1 {
@@ -416,9 +583,55 @@ exports[`10. both high and low res sizes 1`] = `
   z-index: 1;
 }
 
-<div
-  data-testid="Image"
->
+<div>
+  <div>
+    <img
+      src="https://image.io?resize=200"
+    />
+  </div>
+</div>
+`;
+
+exports[`10. both high and low res sizes 1`] = `
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.c2 {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 1;
+}
+
+<div>
   <div>
     <img
       src="https://image.io?resize=900"
@@ -426,7 +639,10 @@ exports[`10. both high and low res sizes 1`] = `
     <img
       src="https://image.io?resize=200"
     />
-    <div>
+    <div
+      height="100%"
+      width="100%"
+    >
       <Svg
         height="auto"
         version="1.1"

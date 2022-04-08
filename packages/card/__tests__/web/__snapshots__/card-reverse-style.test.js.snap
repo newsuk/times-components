@@ -2,6 +2,24 @@
 
 exports[`card with reversed layout 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -11,7 +29,7 @@ exports[`card with reversed layout 1`] = `
   z-index: 2;
 }
 
-.c1 {
+.c2 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -85,24 +103,45 @@ exports[`card with reversed layout 1`] = `
 }
 
 .IS3 {
-  -webkit-align-items: center;
   align-items: center;
-  background-color: rgba(237,237,237,1.00);
-  bottom: 0px;
-  -webkit-justify-content: center;
+  background-color: #EDEDED;
+  bottom: 0;
   justify-content: center;
-  left: 0px;
+  left: 0;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 0;
+  top: 0;
   z-index: 0;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
+  border-radius: 0;
 }
 
 .IS4 {
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
+}
+
+.IS5 {
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
+}
+
+.IS6 {
   padding-bottom: 150%;
 }
 </style>
