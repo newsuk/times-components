@@ -5,13 +5,14 @@ import Link from "../../src/link";
 
 describe("Link", () => {
   it("renders the link", () => {
-    const { baseElement, getByText } = render(
+    const { baseElement, getByText, getByRole } = render(
       <Link onPress={() => {}} url="http://thetimes.co.uk">
         The Times
       </Link>
     );
     expect(baseElement).toMatchSnapshot();
     expect(getByText('The Times')).toBeVisible();
+    expect(getByRole("link")).not.toHaveAttribute("target", "_blank");
   });
   it("renders the link with a target", () => {
     const { baseElement, getByRole } = render(

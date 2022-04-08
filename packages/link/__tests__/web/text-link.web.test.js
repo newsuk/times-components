@@ -56,4 +56,15 @@ describe("Test Link", () => {
     expect(getByText("Children")).toBeVisible();
     expect(getByRole("link")).toHaveAttribute("href", "http://thetimes.co.uk");
   });
+  it("renders the text link with target passed to it", () => {
+    const { baseElement, getByText, getByRole } = render(
+      <TextLink onPress={() => {}} url="http://thetimes.co.uk" target="_blank">
+        <p>Children</p>
+      </TextLink>
+    );
+    expect(baseElement).toMatchSnapshot();
+    expect(getByText("Children")).toBeVisible();
+    expect(getByRole("link")).toHaveAttribute("href", "http://thetimes.co.uk");
+    expect(getByRole("link")).toHaveAttribute("target", "_blank");
+  });
 });
