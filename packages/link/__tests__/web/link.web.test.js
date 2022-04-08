@@ -1,6 +1,5 @@
 import React from "react";
 import { fireEvent, render } from "@testing-library/react";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
 import "@testing-library/jest-dom";
 import Link from "../../src/link";
 
@@ -12,7 +11,7 @@ describe("Link", () => {
       </Link>
     );
     expect(baseElement).toMatchSnapshot();
-    expect(getByText('The Times')).toBeVisible();
+    expect(getByText("The Times")).toBeVisible();
     expect(getByRole("link")).not.toHaveAttribute("target", "_blank");
   });
   it("renders the link with a target", () => {
