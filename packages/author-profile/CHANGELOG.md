@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.6.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.5.3...@times-components/author-profile@6.6.0) (2022-04-08)
+
+
+### Features
+
+* **TDP-1703:** removed react-native use of its own <Image/> component ([#2906](https://github.com/newsuk/times-components/issues/2906)) ([2717c6f](https://github.com/newsuk/times-components/commit/2717c6f5005b195f9805ff63002bfa8b1ef026c3))
+
+
+
+
+
 ## [6.5.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.5.2...@times-components/author-profile@6.5.3) (2022-04-05)
 
 **Note:** Version bump only for package @times-components/author-profile
