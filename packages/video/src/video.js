@@ -7,6 +7,7 @@ import IsPaidSubscriber from "./is-paid-subscriber";
 import VideoError from "./video-error";
 import { propTypes, defaultProps } from "./video-prop-types";
 import styles from "./styles";
+import { NoSubscriptionWrapper } from './new-styles';
 
 const Video = props => {
   const { height, poster, width } = props;
@@ -19,7 +20,7 @@ const Video = props => {
           <IsPaidSubscriber.Consumer>
             {isPaidSubscriber =>
               !isPaidSubscriber ? (
-                <View
+                <div
                   style={{
                     height,
                     width
@@ -32,7 +33,7 @@ const Video = props => {
                       video
                     </Text>
                   </View>
-                </View>
+                </div>
               ) : (
                 <InlineVideoPlayer {...props} />
               )
