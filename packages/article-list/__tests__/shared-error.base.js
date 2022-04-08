@@ -32,7 +32,7 @@ export default () => {
         const testInstance = TestRenderer.create(
           <ArticleListPageError refetch={refetchMock} />
         );
-        testInstance.root.findByType('button').props.onClick();
+        testInstance.root.findByType("button").props.onClick();
         refetchMock.toBeCalledOnce();
         expect(testInstance).toMatchSnapshot();
       }
