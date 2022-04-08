@@ -18,7 +18,7 @@ const IconContainer = styled(TcView)`
   ${checkStylesForUnits(styles.iconContainer)};
 `;
 
-const VideoLabel = ({ color, title }) => { 
+const VideoLabel = ({ color, title }) => {
   const textStyles = {
     ...styles.title
   };
@@ -26,15 +26,16 @@ const VideoLabel = ({ color, title }) => {
   Object.assign(textStyles, { color });
 
   return (
-  <Container>
-    <IconContainer>
-      <IconVideo fillColour={color} height={9} />
-    </IconContainer>
-    <VideoLabelText style={textStyles}>
-      {title ? title.toUpperCase() : "VIDEO"}
-    </VideoLabelText>
-  </Container>
-)};
+    <Container>
+      <IconContainer>
+        <IconVideo fillColour={color} height={9} />
+      </IconContainer>
+      <VideoLabelText style={textStyles}>
+        {title ? title.toUpperCase() : "VIDEO"}
+      </VideoLabelText>
+    </Container>
+  );
+};
 
 VideoLabel.propTypes = {
   color: PropTypes.string,
