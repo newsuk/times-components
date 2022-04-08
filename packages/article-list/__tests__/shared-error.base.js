@@ -32,8 +32,8 @@ export default () => {
         const testInstance = TestRenderer.create(
           <ArticleListPageError refetch={refetchMock} />
         );
-        testInstance.root.findByType("button").props.onClick();
-        refetchMock.toBeCalledOnce();
+        testInstance.root.findByType("Button").props.onPress();
+        expect(refetchMock).toHaveBeenCalled();
         expect(testInstance).toMatchSnapshot();
       }
     },
