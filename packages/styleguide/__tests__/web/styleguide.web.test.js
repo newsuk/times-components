@@ -1,4 +1,6 @@
+import React from "react";
 import { iterator } from "@times-components/test-utils";
+// import { TcView, TcText } from "@times-components/utils";
 import shared from "../shared";
 import styleguide, {
   colours,
@@ -7,7 +9,15 @@ import styleguide, {
   spacing
 } from "../../src/styleguide";
 
-const tests = [
+
+// jest.mock("@times-components/utils", () => {
+//   return {
+//     TcText: jest.fn(({ children }) => children),
+//     TcView: jest.fn(({ children }) =>  children),
+//   };
+// });
+
+const tests = [ 
   {
     name: "Font sizes at default scale",
     test: () => {

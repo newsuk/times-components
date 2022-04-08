@@ -1,9 +1,18 @@
-import { TcText } from "@times-components/utils";
+import 'jest-styled-components'
+import { TcText, TcView } from "@times-components/utils";
+import { shallow, mount } from "enzyme";
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import styleguide, { Animations, scales } from "../src/styleguide";
 import themeFactory from "../src/theme/theme-factory";
+
+
+jest.mock("@times-components/utils", () => ({
+    TcText: jest.fn(({ children }) => <div data-testid="text"> {children}</div>),
+    TcView: jest.fn(({ children }) => <div data-testid="view"> {children}</div>)
+}));
+
 
 const tests = [
   {
@@ -39,13 +48,14 @@ const tests = [
   {
     name: "Animations should have a FadeIn animation wrapper component",
     test: () => {
-      const testInstance = TestRenderer.create(
+      const testInstance = mount(
         <Animations.FadeIn>
           <TcText>Hello World</TcText>
         </Animations.FadeIn>
       );
 
-      expect(testInstance.toJSON()).toMatchSnapshot();
+ expect(testInstance.find('animations__FadeIn-sc-2iiu4y-0 iZkZiB'))
+ expect(testInstance.find('Hello World'))
     }
   },
   // Non snapshot tests
