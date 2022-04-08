@@ -32,9 +32,11 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
     "@times-components/icons": "2.16.11",
+    "@times-components/utils": "6.6.0",
     "@times-components/styleguide": "3.38.30",
     "lodash.pick": "4.4.0",
-    "prop-types": "15.7.2"
+    "prop-types": "15.7.2",
+    "styled-components": "4.3.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",

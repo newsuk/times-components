@@ -10,7 +10,6 @@ const styles = {
       marginBottom: 1
     },
     iconContainer: {
-      paddingBottom: spacing(1),
       alignSelf: "center",
       paddingBottom: 2
     },
