@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Link calls onPress when clicked 1`] = `
+<body>
+  <div>
+    <a
+      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 iBCxFV"
+      href="http://thetimes.co.uk"
+      style="text-decoration: underline; color: rgb(0, 102, 153); background-color: rgb(0, 102, 153);"
+    >
+      The Times
+    </a>
+  </div>
+</body>
+`;
+
+exports[`Test Link renders the link 1`] = `
+<body>
+  <div>
+    <a
+      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 iPyfCs"
+      href="http://thetimes.co.uk"
+      style="text-decoration: underline;"
+    >
+      The Times
+    </a>
+  </div>
+</body>
+`;
+
+exports[`Test Link renders the link with children 1`] = `
+<body>
+  <div>
+    <a
+      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 iPyfCs"
+      href="http://thetimes.co.uk"
+      style="text-decoration: underline;"
+    >
+      <p>
+        Children
+      </p>
+    </a>
+  </div>
+</body>
+`;
+
+exports[`Test Link renders the link with the styles passed down 1`] = `
+<body>
+  <div>
+    <a
+      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 iBCxFV"
+      href="http://thetimes.co.uk"
+      style="text-decoration: underline; color: rgb(0, 102, 153); background-color: rgb(0, 102, 153);"
+    >
+      The Times
+    </a>
+  </div>
+</body>
+`;
+
+exports[`Test Link renders the text link with target passed to it 1`] = `
+<body>
+  <div>
+    <a
+      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 iPyfCs"
+      href="http://thetimes.co.uk"
+      style="text-decoration: underline;"
+      target="_blank"
+    >
+      <p>
+        Children
+      </p>
+    </a>
+  </div>
+</body>
+`;
