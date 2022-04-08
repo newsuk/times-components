@@ -1,35 +1,7 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
-import { mount } from "enzyme";
-import {
-  addSerializers,
-  compose,
-  enzymeTreeSerializer,
-  meltNative,
-  minimaliseTransform,
-  minimalWebTransform,
-  print,
-  propsNoChildren,
-  replaceTransform,
-  rnwTransform
-} from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
+import { render } from "@testing-library/react";
+import "@testing-library/jest-dom";
 import VideoLabel from "../../src/video-label";
-
-addSerializers(
-  expect,
-  enzymeTreeSerializer(),
-  compose(
-    print,
-    minimalWebTransform,
-    minimaliseTransform((value, key) => key === "style" || key === "className"),
-    replaceTransform({
-      IconVideo: propsNoChildren,
-      ...meltNative
-    }),
-    rnwTransform(AppRegistry)
-  )
-);
 
 const tests = [
   {
