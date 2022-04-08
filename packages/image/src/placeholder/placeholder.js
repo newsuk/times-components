@@ -1,19 +1,19 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styles from "../styles/index";
 import T from "../logo/t";
 
 function Placeholder({ borderRadius = 0 }) {
+  const viewStyles = {
+    ...styles.placeholder,
+    borderRadius
+  };
   return (
-    <View
-      height="100%"
-      style={[styles.placeholder, borderRadius && { borderRadius }]}
-      width="100%"
-    >
+    <TcView height="100%" style={viewStyles} width="100%">
       <T />
-    </View>
+    </TcView>
   );
 }
 

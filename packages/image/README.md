@@ -12,17 +12,9 @@ elements. There is no concept of a modal for web.
 
 ## On native
 
-For native a modal can be displayed, which ships with a close button, some
-gesture handling, and it also handles given `caption` / `credits` props by
-wrapping the image in the caption package component.
-
-The native image manages any malformed `uri` props by adding missing protocols
-and managing the width of the image (according to the device width) in the final
-query string.
-
 ## Android only
 
-Supports offline image support for android only. Creates two image views on top of each other, one for the offline low-res image and another one for the network request with a higher res image.
+Code for iOs and Android displaying a modal-image has been removed, and now modal-image just renders the web image.
 
 ## Contributing
 
