@@ -1,213 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. with responsive styles 1`] = `
-.c0 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  color: #006699;
-  font-family: "TimesDigitalW04-Regular";
-  font-size: 17px;
-  line-height: 26px;
-  margin-bottom: 25px;
-  margin-top: 0;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
-<a
-  className="c0"
-  href="http://thetimes.co.uk"
-  onClick={[Function]}
-  target={null}
->
-  The Times
-</a>
+exports[`Link renders the link 1`] = `
+<body>
+  <div>
+    <a
+      class="link__RespLink-sc-1ocvixa-0 dfMuic"
+      href="http://thetimes.co.uk"
+    >
+      The Times
+    </a>
+  </div>
+</body>
 `;
 
-exports[`2. with a target 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-<a
-  className="c0"
-  href="http://thetimes.co.uk"
-  onClick={[Function]}
-  target="_blank"
->
-  The Times
-</a>
-`;
-
-exports[`3. renders link 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-<a
-  className="c0"
-  href="http://thetimes.co.uk"
-  onClick={[Function]}
-  target={null}
->
-  The Times
-</a>
-`;
-
-exports[`4. renders link with target 1`] = `
-.c0 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-<a
-  className="c0"
-  href="http://thetimes.co.uk"
-  onClick={[Function]}
-  target="_blank"
->
-  The Times
-</a>
-`;
-
-exports[`5. renders text link 1`] = `
-.c0 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-<a
-  className="c0"
-  href="http://thetimes.co.uk"
-  onClick={[Function]}
-  style={
-    Object {
-      "text-decoration": "underline",
-    }
-  }
->
-  The Times
-</a>
-`;
-
-exports[`6. text link with multiple styles 1`] = `
-.c0 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0 0 {
-  background-color: blue;
-}
-
-.c0 1 {
-  color: red;
-}
-
-<a
-  className="c0"
-  href="http://thetimes.co.uk"
-  onClick={[Function]}
-  style={
-    Object {
-      "0": Object {
-        "backgroundColor": "blue",
-      },
-      "1": Object {
-        "color": "red",
-      },
-      "text-decoration": "underline",
-    }
-  }
->
-  The Times
-</a>
-`;
-
-exports[`7. text link with children 1`] = `
-.c0 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-<a
-  className="c0"
-  href="http://thetimes.co.uk"
-  onClick={[Function]}
-  style={
-    Object {
-      "text-decoration": "underline",
-    }
-  }
->
-  <p>
-    The Times
-  </p>
-</a>
-`;
-
-exports[`8. text link with target 1`] = `
-.c0 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-<a
-  className="c0"
-  href="http://thetimes.co.uk"
-  onClick={[Function]}
-  style={
-    Object {
-      "text-decoration": "underline",
-    }
-  }
-  target="_blank"
->
-  <p>
-    The Times
-  </p>
-</a>
+exports[`Link renders the link with a target 1`] = `
+<body>
+  <div>
+    <a
+      class="link__RespLink-sc-1ocvixa-0 dfMuic"
+      href="http://thetimes.co.uk"
+      target="_blank"
+    >
+      The Times
+    </a>
+  </div>
+</body>
 `;
