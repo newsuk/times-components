@@ -59,7 +59,7 @@ const fontDisplayer = (fontFamily, phrase, fontSizes) =>
   Object.keys(fontSizes).map(fontSize => (
     <Fragment key={fontSize}>
       <TcText style={styles.subHeadline} >{fontSize}</TcText> 
-      <TcText style={{...styles.showoffFonts, fontFamily: fontFamily, fontSize: fontSizes[fontSize]}}
+      <TcText style={{...styles.showoffFonts, fontFamily, fontSize: fontSizes[fontSize]}}
       >  
         {phrase}
       </TcText>
@@ -72,12 +72,10 @@ const fontFixture = select => {
   const phrase = "The Quick Brown Fox Jumps Over the Lazy Dog";
   return (
     <TcScrollView>
-      <TcView > {/** style={styles.showoffFontsContainer}  */}
+      <TcView style={styles.showoffFontsContainer} >
         <TcText style={styles.headline}  >Body</TcText> 
         {fontDisplayer(fonts.body, phrase, styleguide.fontSizes)}
       </TcView>
-
-      {/**
       <TcView style={styles.showoffFontsContainer}>
         <TcText style={styles.headline}>Body Regular</TcText>
         <TcText>
@@ -151,7 +149,6 @@ const fontFixture = select => {
         </TcText>
         {fontDisplayer(fonts.stMagazine, phrase, styleguide.fontSizes)}
       </TcView>
-       */}
     </TcScrollView>
   );
 };

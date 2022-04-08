@@ -1,8 +1,5 @@
-import React from "react";
-import styled,  { Interpolation } from "styled-components";
+import styled from "styled-components";
 // not sure how else to put the default styles, this the default style for a React Native <Text/> component
-
-
 
 const TcText = styled.div`
   border: 0px solid black;
@@ -24,7 +21,5 @@ const TcText = styled.div`
 `;
 
 export default TcText;
-// ${({ style }) => style.color ? style.color : 'rgb(0, 0, 0)'};
-//${props => props.style.color || 'rgb(0, 0, 0)'};`
 
 

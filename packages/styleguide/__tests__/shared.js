@@ -1,8 +1,7 @@
 import 'jest-styled-components'
-import { TcText, TcView } from "@times-components/utils";
-import { shallow, mount } from "enzyme";
+import { TcText} from "@times-components/utils";
+import { mount } from "enzyme";
 import React from "react";
-import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import styleguide, { Animations, scales } from "../src/styleguide";
 import themeFactory from "../src/theme/theme-factory";
