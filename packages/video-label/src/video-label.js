@@ -1,9 +1,8 @@
 import React from "react";
-import { TcText, TcView } from "@times-components/utils";
+import { checkStylesForUnits, TcText, TcView } from "@times-components/utils";
 import { IconVideo } from "@times-components/icons";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import { checkStylesForUnits } from "@times-components/utils/dist/strings";
 import styles from "./style";
 
 const VideoLabelText = styled(TcText)`
