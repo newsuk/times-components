@@ -14,7 +14,7 @@ const TcView = styled.div`
   border-bottom-width: ${props =>
     props.style && props.style.borderBottomWidth
       ? props.style.borderBottomWidth
-      : "black"};
+      : "0px"};
   min-height: 0px;
   min-width: 0px;
   padding: 0px;
