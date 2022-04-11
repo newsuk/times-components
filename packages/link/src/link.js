@@ -53,4 +53,3 @@ Link.propTypes = {
 
 export default Link;
 export { default as TextLink } from "./text-link";
-export { default as TimesTextLink } from "./times-text-link";

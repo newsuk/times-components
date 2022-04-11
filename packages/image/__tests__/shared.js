@@ -148,7 +148,7 @@ export default () => {
       }
     },
     {
-      name: "low res image should hide placeholder after loading",
+      name: "low res image should hide placeholder after loading ",
       test: () => {
         const testRenderer = TestRenderer.create(
           <Image aspectRatio={2} lowResSize={200} uri="https://image.io" />

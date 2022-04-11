@@ -1,4 +1,4 @@
-import { mockMagazineSection, mockPuzzleSection, mockStandardSection } from "../mock-section";
+import { mockPuzzleSection, mockStandardSection } from "../mock-section";
 import { Puzzle } from "../types";
 
 interface PuzzleWithName extends Puzzle {
@@ -13,18 +13,6 @@ describe("The Mock Standard Section", () => {
     expect(standardSection).toHaveProperty("slug");
     expect(standardSection.title).toBe(title);
     expect(standardSection.slices.length).toBeGreaterThan(0);
-  });
-});
-
-describe("The Mock Magazine Section", () => {
-  it("returns the minimum section requirements", () => {
-    const title = "Culture";
-    const magazineSection = mockMagazineSection(title);
-    expect(magazineSection).toHaveProperty("id");
-    expect(magazineSection).toHaveProperty("slug");
-    expect(magazineSection).toHaveProperty("cover");
-    expect(magazineSection.title).toBe(title);
-    expect(magazineSection.slices.length).toBeGreaterThan(0);
   });
 });
 

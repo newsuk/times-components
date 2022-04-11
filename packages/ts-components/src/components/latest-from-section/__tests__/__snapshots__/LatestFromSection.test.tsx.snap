@@ -23,29 +23,6 @@ exports[`<LatestFromSection> no data  1`] = `
 </DocumentFragment>
 `;
 
-exports[`<LatestFromSection> no data  2`] = `
-<DocumentFragment>
-  <div
-    class="css-view-1dbjc4n"
-  >
-    <div
-      class="css-view-1dbjc4n"
-      style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
-    >
-      <h3
-        aria-level="3"
-        class="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
-        role="heading"
-        style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
-      >
-        Latest from Sport
-      </h3>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
 exports[`<LatestFromSection> renders  1`] = `
 <DocumentFragment>
   <div
@@ -96,8 +73,7 @@ exports[`<LatestFromSection> renders  1`] = `
                       style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
                     >
                       <div
-                        class="css-view-1dbjc4n"
-                        data-testid="Image"
+                        class="tc-view__TcView-nuazoi-0 fPjBcr"
                       >
                         <div
                           style="padding-bottom: 56.25%;"
@@ -107,8 +83,10 @@ exports[`<LatestFromSection> renders  1`] = `
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg?resize=200&quality=3"
                           />
                           <div
-                            class="css-view-1dbjc4n"
-                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
+                            class="tc-view__TcView-nuazoi-0 fPjBcr"
+                            height="100%"
+                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
+                            width="100%"
                           >
                             <svg
                               height="auto"
@@ -243,8 +221,7 @@ exports[`<LatestFromSection> renders  1`] = `
                       style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
                     >
                       <div
-                        class="css-view-1dbjc4n"
-                        data-testid="Image"
+                        class="tc-view__TcView-nuazoi-0 fPjBcr"
                       >
                         <div
                           style="padding-bottom: 56.25%;"
@@ -254,8 +231,10 @@ exports[`<LatestFromSection> renders  1`] = `
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg?resize=200&quality=3"
                           />
                           <div
-                            class="css-view-1dbjc4n"
-                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
+                            class="tc-view__TcView-nuazoi-0 fPjBcr"
+                            height="100%"
+                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
+                            width="100%"
                           >
                             <svg
                               height="auto"
@@ -390,8 +369,7 @@ exports[`<LatestFromSection> renders  1`] = `
                       style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
                     >
                       <div
-                        class="css-view-1dbjc4n"
-                        data-testid="Image"
+                        class="tc-view__TcView-nuazoi-0 fPjBcr"
                       >
                         <div
                           style="padding-bottom: 56.25%;"
@@ -401,8 +379,10 @@ exports[`<LatestFromSection> renders  1`] = `
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F798e1dce-d918-11eb-b92f-5fe539a30c29.jpg?resize=200&quality=3"
                           />
                           <div
-                            class="css-view-1dbjc4n"
-                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
+                            class="tc-view__TcView-nuazoi-0 fPjBcr"
+                            height="100%"
+                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
+                            width="100%"
                           >
                             <svg
                               height="auto"
