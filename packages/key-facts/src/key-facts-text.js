@@ -1,6 +1,11 @@
 import React from "react";
 import { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
+import {
+  handleOnClickScrollTo,
+  handleHrefScrollTo
+} from "@times-components/utils";
+
 import props from "./key-facts-text-prop-types";
 import { Text, KeyFactTextLink, BulletContainer, Bullet } from "./styles";
 
@@ -10,35 +15,6 @@ const getTitle = data => {
   const linkText = data.children.map(child => child.attributes.value);
   const title = linkText.join(" ");
   return title.length > 0 ? title : " ";
-};
-
-const handleClickEventScrollTo = (event, url) => {
-  if (url.charAt(0) === "#") {
-    event.preventDefault();
-
-    const target = document.getElementById(url.substring(1));
-    if (target) {
-      const article = target.parentElement.parentElement;
-      const container = article.parentElement;
-
-      let menuOffset = 50;
-      if (window.innerWidth < 1320) {
-        menuOffset = 100;
-      }
-      if (window.innerWidth < 1024) {
-        menuOffset = 110;
-      }
-
-      window.scroll({
-        top:
-          container.offsetTop +
-          article.offsetTop +
-          target.offsetTop -
-          menuOffset,
-        behavior: "smooth"
-      });
-    }
-  }
 };
 
 const handleClickEventAnalytics = (fireAnalyticsEvent, title, articleFlag) => {
@@ -77,14 +53,14 @@ const KeyFactsText = ({
                 <KeyFactTextLink
                   key={key}
                   onClick={event => {
+                    handleOnClickScrollTo(event, url);
                     handleClickEventAnalytics(
                       fireAnalyticsEvent,
                       title,
                       articleFlag
                     );
-                    handleClickEventScrollTo(event, url);
                   }}
-                  href={url.charAt(0) === "#" ? null : url}
+                  href={handleHrefScrollTo(url)}
                 >
                   {renderedChildren}
                 </KeyFactTextLink>
