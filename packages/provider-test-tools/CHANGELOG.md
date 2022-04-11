@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.26.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.25.1...@times-components/provider-test-tools@1.26.0) (2022-04-11)
+
+
+### Features
+
+* **TDP-1577:** key moments links ([#2911](https://github.com/newsuk/times-components/issues/2911)) ([82774c5](https://github.com/newsuk/times-components/commit/82774c5a66384185f57d73568964e75418599eba))
+
+
+
+
+
 ## [1.25.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.25.0...@times-components/provider-test-tools@1.25.1) (2022-04-08)
 
 **Note:** Version bump only for package @times-components/provider-test-tools
