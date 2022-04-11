@@ -5,7 +5,7 @@ import InlineVideoPlayer from "./inline-video-player";
 import IsPaidSubscriber from "./is-paid-subscriber";
 import VideoError from "./video-error";
 import { propTypes, defaultProps } from "./video-prop-types";
-import { NoSubscriptionWrapper, NoSubscriptionMessage } from './styles';
+import { NoSubscriptionWrapper, NoSubscriptionMessage } from "./styles";
 
 const Video = props => {
   const { height, poster, width } = props;

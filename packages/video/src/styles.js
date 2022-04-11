@@ -55,14 +55,14 @@ export const NoSubscriptionWrapper = styled.div`
 `;
 
 export const NoSubscriptionMessage = styled.span`
-    background-color: rgba(0, 0, 0, 0.7);
-    color: ${colours.functional.contrast};
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-    padding: ${spacing(2)};
-    text-align: center;
-    width: 300px;
-    font-family: ${fonts.body};
-    font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: ${colours.functional.contrast};
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+  padding: ${spacing(2)};
+  text-align: center;
+  width: 300px;
+  font-family: ${fonts.body};
+  font-size: 14px;
 `;

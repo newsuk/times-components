@@ -6,7 +6,7 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  print,
+  print
 } from "@times-components/jest-serializer";
 import VideoError from "../../src/video-error";
 
@@ -16,7 +16,7 @@ addSerializers(
   compose(
     print,
     minimalWebTransform,
-    minimaliseTransform((value, key) => key === "style" || key === "className"),
+    minimaliseTransform((value, key) => key === "style" || key === "className")
   )
 );
 

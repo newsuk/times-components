@@ -12,7 +12,6 @@ import { hash, iterator } from "@times-components/test-utils";
 import Video from "../../src/video";
 import InlineVideoPlayer from "../../src/inline-video-player";
 import defaultVideoProps from "../default-video-props";
-import "@testing-library/jest-dom";
 
 jest.mock("@times-components/image", () => "Image");
 jest.mock("@times-components/icons", () => ({
@@ -31,7 +30,7 @@ addSerializers(
     minimalWebTransform,
     replacePropTransform(
       (value, key) => (key === "src" || key === "poster" ? hash(value) : value)
-    ),
+    )
   )
 );
 

@@ -1,15 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { VideoErrorContainer, VideoErrorHeading, VideoErrorBody } from './styles';
+import {
+  VideoErrorContainer,
+  VideoErrorHeading,
+  VideoErrorBody
+} from "./styles";
 
 const VideoError = ({ height, width }) => (
   <VideoErrorContainer
-    style={
-      {
-        height,
-        width
-      }
-    }
+    style={{
+      height,
+      width
+    }}
   >
     <VideoErrorHeading>Video unable to play</VideoErrorHeading>
     <VideoErrorBody>

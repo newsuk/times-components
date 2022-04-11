@@ -28,7 +28,7 @@ addSerializers(
     minimalWebTransform,
     replacePropTransform(
       (value, key) => (key === "uri" || key === "poster" ? hash(value) : value)
-    ),
+    )
   )
 );
 

@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import { View, Text } from "react-native";
 import React from "react";
 import Video from "./src/video";
 
@@ -17,7 +16,8 @@ const defaultVideoProps = {
   id,
   is360: false,
   onVideoPress: () => {
-    console.log("onVideoPress called")
+    // eslint-disable-next-line no-console
+    console.log("onVideoPress called");
   },
   policyKey,
   poster: {
@@ -101,7 +101,7 @@ export default {
       component: () => (
         <div>
           <Video {...defaultVideoProps} />
-          <View style={{ height: 20 }} />
+          <div style={{ height: 20 }} />
           <Video {...defaultVideoProps} videoId="5612887446001" id={mockId} />
         </div>
       ),
