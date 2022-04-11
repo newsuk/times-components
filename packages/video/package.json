@@ -1,6 +1,6 @@
 {
   "name": "@times-components/video",
-  "version": "4.11.24",
+  "version": "4.11.25",
   "main": "dist/video",
   "dev": "src/video",
   "scripts": {
@@ -50,7 +50,7 @@
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator": "2.8.0",
     "@times-components/jest-serializer": "3.2.29",
-    "@times-components/storybook": "4.2.1",
+    "@times-components/storybook": "4.2.2",
     "@times-components/test-utils": "2.3.10",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
@@ -71,10 +71,10 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/error-view": "2.3.69",
-    "@times-components/icons": "2.16.12",
-    "@times-components/image": "6.10.1",
-    "@times-components/styleguide": "3.38.31",
+    "@times-components/error-view": "2.3.70",
+    "@times-components/icons": "2.16.13",
+    "@times-components/image": "6.10.2",
+    "@times-components/styleguide": "3.38.32",
     "@times-components/utils": "6.7.0",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
