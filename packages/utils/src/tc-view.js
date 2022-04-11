@@ -15,6 +15,12 @@ const TcView = styled.div`
     props.style && props.style.borderBottomWidth
       ? props.style.borderBottomWidth
       : "0px"};
+  border-radius: ${props =>
+    props.style && props.style.borderRadius && props.style.borderRadius};
+  overflow: ${props =>
+    props.style && props.style.overflow && props.style.overflow};
+  height: ${props => props.style && props.style.height && props.style.height};
+  width: ${props => props.style && props.style.width && props.style.width};
   min-height: 0px;
   min-width: 0px;
   padding: 0px;

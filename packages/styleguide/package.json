@@ -60,7 +60,7 @@
   "dependencies": {
     "prop-types": "15.7.2",
     "styled-components": "4.3.2",
-    "@times-components/utils": "6.6.0"
+    "@times-components/utils": "6.7.0"
   },
   "resolutions": {
     "react": "16.9.0",
