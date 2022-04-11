@@ -7,8 +7,6 @@ const TcText = styled.div`
   color: ${props =>
     props.style && props.style.color ? props.style.color : "rgb(0, 0, 0)"};
   display: inline;
-  font: 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Ubuntu, "Helvetica Neue", sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
