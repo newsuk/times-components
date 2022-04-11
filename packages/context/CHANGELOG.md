@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.2.34...@times-components/context@1.3.0) (2022-04-11)
+
+
+### Features
+
+* **TDP-1423:** Remove React Native from Video Label ([#2910](https://github.com/newsuk/times-components/issues/2910)) ([125e2e3](https://github.com/newsuk/times-components/commit/125e2e3e227fa596aef4ce57f76bbdca489745c5))
+
+
+
+
+
 ## [1.2.34](https://github.com/newsuk/times-components/compare/@times-components/context@1.2.33...@times-components/context@1.2.34) (2022-03-30)
 
 **Note:** Version bump only for package @times-components/context
