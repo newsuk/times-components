@@ -5,9 +5,16 @@ const TcView = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin: ${props => props.style && props.style.margin ? props.style.margin : '0px'};
-  border-bottom-color: ${props => props.style && props.style.borderBottomColor ? props.style.borderBottomColor : 'black'};
-  border-bottom-width: ${props => props.style && props.style.borderBottomWidth ? props.style.borderBottomWidth : 'black'};
+  margin: ${props =>
+    props.style && props.style.margin ? props.style.margin : "0px"};
+  border-bottom-color: ${props =>
+    props.style && props.style.borderBottomColor
+      ? props.style.borderBottomColor
+      : "black"};
+  border-bottom-width: ${props =>
+    props.style && props.style.borderBottomWidth
+      ? props.style.borderBottomWidth
+      : "black"};
   min-height: 0px;
   min-width: 0px;
   padding: 0px;
