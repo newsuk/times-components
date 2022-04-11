@@ -1,6 +1,7 @@
 export * from "./screen";
 export * from "./strings";
 export * from "./dimensions-util";
+export * from "./scroll-to-element-id";
 
 export { default as clean } from "./props";
 export { default as addMissingProtocol } from "./add-missing-protocol";
