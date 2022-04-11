@@ -2,6 +2,11 @@
 import React from "react";
 import styled from "styled-components";
 import { breakpoints } from "@times-components/styleguide";
+import {
+  handleOnClickScrollTo,
+  handleHrefScrollTo
+} from "@times-components/utils";
+
 import PropTypes from "prop-types";
 
 const respStylesSelector = selector => ({ responsiveLinkStyles }) =>
@@ -33,7 +38,14 @@ const Link = ({
   };
 
   return (
-    <RespLink href={url} onClick={onPress} {...props}>
+    <RespLink
+      onClick={event => {
+        handleOnClickScrollTo(event, url);
+        onPress(event);
+      }}
+      href={handleHrefScrollTo(url)}
+      {...props}
+    >
       {children}
     </RespLink>
   );

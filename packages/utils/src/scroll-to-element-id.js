@@ -1,6 +1,6 @@
 const getMenuOffset = () => {
   const sectionBar = document.querySelector(".OrientationBar");
-  const sectionBarHeight = sectionBar ? sectionBar.offHeight : 0;
+  const sectionBarHeight = sectionBar ? sectionBar.offsetHeight : 0;
 
   if (window.innerWidth < 1024) {
     return 110;
@@ -13,7 +13,7 @@ const getMenuOffset = () => {
 };
 
 export const handleOnClickScrollTo = (event, url) => {
-  if (url.charAt(0) === "#") {
+  if (url && url.charAt(0) === "#") {
     event.preventDefault();
 
     const element = document.getElementById(url.substring(1));
@@ -26,4 +26,5 @@ export const handleOnClickScrollTo = (event, url) => {
   }
 };
 
-export const handleHrefScrollTo = url => (url.charAt(0) === "#" ? null : url);
+export const handleHrefScrollTo = url =>
+  url && url.charAt(0) === "#" ? null : url;
