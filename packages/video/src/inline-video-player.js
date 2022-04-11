@@ -116,7 +116,7 @@ class InlineVideoPlayer extends Component {
     this.setState({ error: true });
   };
 
-  handlePlay = () => {
+handlePlay = () => {
     this.setState({ hasVideoPlayed: true });
 
     InlineVideoPlayer.activePlayers.forEach(video => {

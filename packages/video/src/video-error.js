@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { VideoErrorContainer, VideoErrorHeading, VideoErrorBody } from './new-styles';
+import { VideoErrorContainer, VideoErrorHeading, VideoErrorBody } from './styles';
 
 const VideoError = ({ height, width }) => (
   <VideoErrorContainer

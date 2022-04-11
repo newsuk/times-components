@@ -1,5 +1,4 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import { mount } from "enzyme";
 import {
   addSerializers,
@@ -8,7 +7,6 @@ import {
   minimaliseTransform,
   minimalWebTransform,
   print,
-  rnwTransform
 } from "@times-components/jest-serializer";
 import VideoError from "../../src/video-error";
 
@@ -19,7 +17,6 @@ addSerializers(
     print,
     minimalWebTransform,
     minimaliseTransform((value, key) => key === "style" || key === "className"),
-    rnwTransform(AppRegistry)
   )
 );
 
