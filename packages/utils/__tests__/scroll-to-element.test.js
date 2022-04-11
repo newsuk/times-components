@@ -19,12 +19,14 @@ describe("handleOnClickScrollTo", () => {
     jest.resetAllMocks();
   });
 
-  it("should return undefined - when no url is supplied", () => {
-    expect(handleOnClickScrollTo(event)).toBeUndefined();
+  it("should not call scrollTo - when no url is supplied", () => {
+    handleOnClickScrollTo(event);
+    expect(scrollTo).toHaveBeenCalledTimes(0);
   });
 
-  it("should return undefined - when url does not starts with a hash", () => {
-    expect(handleOnClickScrollTo(event, link)).toBeUndefined();
+  it("should not call scrollTo - when url does not starts with a hash", () => {
+    handleOnClickScrollTo(event);
+    expect(scrollTo).toHaveBeenCalledTimes(0);
   });
 
   describe("small breakpoint", () => {
