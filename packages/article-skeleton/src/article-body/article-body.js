@@ -163,43 +163,47 @@ const renderers = ({
       </NativeAd>
     );
   },
-  image(key, { display, ratio, url, caption, credits }) {
+  image(key, { id, display, ratio, url, caption, credits }) {
     const MediaWrapper = responsiveDisplayWrapper(display);
     return (
       <LazyLoad key={key} rootMargin={spacing(40)} threshold={0}>
         {({ observed, registerNode }) => (
           <div id={key} ref={node => registerNode(node)}>
-            <MediaWrapper>
-              <ArticleImage
-                captionOptions={{
-                  caption,
-                  credits
-                }}
-                imageOptions={{
-                  display,
-                  highResSize: highResSizeCalc(observed, key, template),
-                  lowResQuality: 3,
-                  lowResSize: 400,
-                  ratio,
-                  uri: url
-                }}
-              />
-            </MediaWrapper>
+            <div id={id}>
+              <MediaWrapper>
+                <ArticleImage
+                  captionOptions={{
+                    caption,
+                    credits
+                  }}
+                  imageOptions={{
+                    display,
+                    highResSize: highResSizeCalc(observed, key, template),
+                    lowResQuality: 3,
+                    lowResSize: 400,
+                    ratio,
+                    uri: url
+                  }}
+                />
+              </MediaWrapper>
+            </div>
           </div>
         )}
       </LazyLoad>
     );
   },
-  interactive(key, { url, element, display }) {
+  interactive(key, { id, url, element, display }) {
     const { attributes, value } = element;
     switch (value) {
       case "in-article-info-card":
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
-              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                <InfoCard sectionColour={theme.sectionColour} />
-              </FetchProvider>
+              <div id={id}>
+                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                  <InfoCard sectionColour={theme.sectionColour} />
+                </FetchProvider>
+              </div>
             )}
           </Context.Consumer>
         );
@@ -208,9 +212,11 @@ const renderers = ({
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
-              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                <InfoCardBulletPoints sectionColour={theme.sectionColour} />
-              </FetchProvider>
+              <div id={id}>
+                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                  <InfoCardBulletPoints sectionColour={theme.sectionColour} />
+                </FetchProvider>
+              </div>
             )}
           </Context.Consumer>
         );
@@ -219,9 +225,11 @@ const renderers = ({
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
-              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                <BigNumbers sectionColour={theme.sectionColour} />
-              </FetchProvider>
+              <div id={id}>
+                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                  <BigNumbers sectionColour={theme.sectionColour} />
+                </FetchProvider>
+              </div>
             )}
           </Context.Consumer>
         );
@@ -230,9 +238,11 @@ const renderers = ({
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
-              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                <Timelines sectionColour={theme.sectionColour} />
-              </FetchProvider>
+              <div id={id}>
+                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                  <Timelines sectionColour={theme.sectionColour} />
+                </FetchProvider>
+              </div>
             )}
           </Context.Consumer>
         );
@@ -241,9 +251,11 @@ const renderers = ({
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
-              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                <GalleryCarousel sectionColour={theme.sectionColour} />
-              </FetchProvider>
+              <div id={id}>
+                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                  <GalleryCarousel sectionColour={theme.sectionColour} />
+                </FetchProvider>
+              </div>
             )}
           </Context.Consumer>
         );
@@ -253,102 +265,122 @@ const renderers = ({
         const { code, copy, headline, imageUri, label } = attributes;
 
         return isPreview ? (
-          <PreviewNewsletterPuff
-            copy={safeDecodeURIComponent(copy)}
-            headline={safeDecodeURIComponent(headline)}
-            imageUri={safeDecodeURIComponent(imageUri)}
-            label={safeDecodeURIComponent(label)}
-          />
+          <div id={id}>
+            <PreviewNewsletterPuff
+              copy={safeDecodeURIComponent(copy)}
+              headline={safeDecodeURIComponent(headline)}
+              imageUri={safeDecodeURIComponent(imageUri)}
+              label={safeDecodeURIComponent(label)}
+            />
+          </div>
         ) : (
-          <InlineNewsletterPuff
-            analyticsStream={analyticsStream}
-            key={key}
-            code={code}
-            copy={safeDecodeURIComponent(copy)}
-            headline={safeDecodeURIComponent(headline)}
-            imageUri={safeDecodeURIComponent(imageUri)}
-            label={safeDecodeURIComponent(label)}
-          />
+          <div id={id}>
+            <InlineNewsletterPuff
+              analyticsStream={analyticsStream}
+              key={key}
+              code={code}
+              copy={safeDecodeURIComponent(copy)}
+              headline={safeDecodeURIComponent(headline)}
+              imageUri={safeDecodeURIComponent(imageUri)}
+              label={safeDecodeURIComponent(label)}
+            />
+          </div>
         );
 
       case "opta-football-fixtures-v3":
         return (
-          <OptaFootballFixtures
-            season={attributes.season}
-            competition={attributes.competition}
-            date_from={attributes["date-from"]}
-            date_to={attributes["date-to"]}
-          />
+          <div id={id}>
+            <OptaFootballFixtures
+              season={attributes.season}
+              competition={attributes.competition}
+              date_from={attributes["date-from"]}
+              date_to={attributes["date-to"]}
+            />
+          </div>
         );
 
       case "opta-football-standings-v3":
         return (
-          <OptaFootballStandings
-            season={attributes.season}
-            competition={attributes.competition}
-            default_nav={attributes.group}
-            navigation
-          />
+          <div id={id}>
+            <OptaFootballStandings
+              season={attributes.season}
+              competition={attributes.competition}
+              default_nav={attributes.group}
+              navigation
+            />
+          </div>
         );
 
       case "opta-football-match-summary-v3":
         return (
-          <OptaFootballSummary
-            season={attributes.season}
-            competition={attributes.competition}
-            match={attributes.match}
-          />
+          <div id={id}>
+            <OptaFootballSummary
+              season={attributes.season}
+              competition={attributes.competition}
+              match={attributes.match}
+            />
+          </div>
         );
 
       case "opta-football-match-stats-v3":
         return (
-          <OptaFootballMatchStats
-            season={attributes.season}
-            competition={attributes.competition}
-            match={attributes.match}
-          />
+          <div id={id}>
+            <OptaFootballMatchStats
+              season={attributes.season}
+              competition={attributes.competition}
+              match={attributes.match}
+            />
+          </div>
         );
 
       case "opta-rugby-union-fixtures-v2":
       case "opta-rugby-fixtures-v3":
         return (
-          <OptaRugbyFixtures
-            season={attributes.season}
-            competition={attributes.competition}
-            date_from={attributes["date-from"]}
-            date_to={attributes["date-to"]}
-          />
+          <div id={id}>
+            <OptaRugbyFixtures
+              season={attributes.season}
+              competition={attributes.competition}
+              date_from={attributes["date-from"]}
+              date_to={attributes["date-to"]}
+            />
+          </div>
         );
 
       case "opta-rugby-union-standings-v2":
       case "opta-rugby-standings-v3":
         return (
-          <OptaRugbyStandings
-            season={attributes.season}
-            competition={attributes.competition}
-            default_nav={attributes.group}
-            navigation
-          />
+          <div id={id}>
+            <OptaRugbyStandings
+              season={attributes.season}
+              competition={attributes.competition}
+              default_nav={attributes.group}
+              navigation
+            />
+          </div>
         );
 
       case "opta-rugby-union-match-summary-v2":
       case "opta-rugby-match-summary-v3":
         return (
-          <OptaRugbySummary
-            season={attributes.season}
-            competition={attributes.competition}
-            match={attributes.match}
-          />
+          <div id={id}>
+            <OptaRugbySummary
+              season={attributes.season}
+              competition={attributes.competition}
+              match={attributes.match}
+            />
+          </div>
         );
 
       case "opta-rugby-union-match-stats-v2":
       case "opta-rugby-match-stats-v3":
         return (
-          <OptaRugbyMatchStats
-            season={attributes.season}
-            competition={attributes.competition}
-            match={attributes.match}
-          />
+          <div id={id}>
+            <OptaRugbyMatchStats
+              season={attributes.season}
+              competition={attributes.competition}
+              match={attributes.match}
+            />
+          </div>
         );
 
       case "opta-football-match-lineups-v3":
@@ -361,34 +393,40 @@ const renderers = ({
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
-              <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
-                <InArticlePuff
-                  sectionColour={theme.sectionColour}
-                  forceImageAspectRatio="3:2"
-                  isLiveOrBreaking={isLiveOrBreaking}
-                />
-              </FetchProvider>
+              <div id={id}>
+                <FetchProvider url={deckApiUrl + attributes["deck-id"]}>
+                  <InArticlePuff
+                    sectionColour={theme.sectionColour}
+                    forceImageAspectRatio="3:2"
+                    isLiveOrBreaking={isLiveOrBreaking}
+                  />
+                </FetchProvider>
+              </div>
             )}
           </Context.Consumer>
         );
 
       case "article-header":
         return (
-          <ArticleHeader
-            updated={attributes.updated}
-            breaking={attributes.breaking}
-            headline={attributes.headline}
-          />
+          <div id={id}>
+            <ArticleHeader
+              updated={attributes.updated}
+              breaking={attributes.breaking}
+              headline={attributes.headline}
+            />
+          </div>
         );
 
       case "olympics-medal-table":
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
-              <OlympicsMedalTable
-                keys={olympicsKeys}
-                sectionColor={theme.sectionColour}
-              />
+              <div id={id}>
+                <OlympicsMedalTable
+                  keys={olympicsKeys}
+                  sectionColor={theme.sectionColour}
+                />
+              </div>
             )}
           </Context.Consumer>
         );
@@ -397,10 +435,12 @@ const renderers = ({
         return (
           <Context.Consumer key={key}>
             {({ theme }) => (
-              <OlympicsSchedule
-                keys={olympicsKeys}
-                sectionColor={theme.sectionColour}
-              />
+              <div id={id}>
+                <OlympicsSchedule
+                  keys={olympicsKeys}
+                  sectionColor={theme.sectionColour}
+                />
+              </div>
             )}
           </Context.Consumer>
         );
@@ -408,12 +448,14 @@ const renderers = ({
       default:
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-            <InteractiveWrapper
-              attributes={attributes}
-              element={value}
-              key={key}
-              source={url}
-            />
+            <div id={id}>
+              <InteractiveWrapper
+                attributes={attributes}
+                element={value}
+                key={key}
+                source={url}
+              />
+            </div>
           </InteractiveContainer>
         );
     }
