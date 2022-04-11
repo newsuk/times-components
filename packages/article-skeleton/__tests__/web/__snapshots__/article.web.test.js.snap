@@ -56,15 +56,19 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           his being Black History Month, last week
         </p>
         <div>
-          <InteractiveWrapper
-            attributes={
-              Object {
-                "chart-id": "csmgb",
+          <div
+            id="d2f83305-d558-4f78-f582-32115c659355"
+          >
+            <InteractiveWrapper
+              attributes={
+                Object {
+                  "chart-id": "csmgb",
+                }
               }
-            }
-            element="times-datawrapper"
-            source="https://interactive.io"
-          />
+              element="times-datawrapper"
+              source="https://interactive.io"
+            />
+          </div>
         </div>
         <div>
           <h2>
@@ -83,72 +87,78 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           id="3"
         >
           <div>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "An image caption",
-                  "credits": "The image credits",
+            <div>
+              <ArticleImage
+                captionOptions={
+                  Object {
+                    "caption": "An image caption",
+                    "credits": "The image credits",
+                  }
                 }
-              }
-              imageOptions={
-                Object {
-                  "display": "primary",
-                  "highResSize": null,
-                  "lowResQuality": 3,
-                  "lowResSize": 400,
-                  "ratio": "1500:1000",
-                  "uri": "https://image.io",
+                imageOptions={
+                  Object {
+                    "display": "primary",
+                    "highResSize": null,
+                    "lowResQuality": 3,
+                    "lowResSize": 400,
+                    "ratio": "1500:1000",
+                    "uri": "https://image.io",
+                  }
                 }
-              }
-            />
+              />
+            </div>
           </div>
         </div>
         <div
           id="4"
         >
           <div>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "A secondary image caption",
-                  "credits": "The secondary image credits",
+            <div>
+              <ArticleImage
+                captionOptions={
+                  Object {
+                    "caption": "A secondary image caption",
+                    "credits": "The secondary image credits",
+                  }
                 }
-              }
-              imageOptions={
-                Object {
-                  "display": "secondary",
-                  "highResSize": null,
-                  "lowResQuality": 3,
-                  "lowResSize": 400,
-                  "ratio": "1500:1000",
-                  "uri": "https://image.io/secondary",
+                imageOptions={
+                  Object {
+                    "display": "secondary",
+                    "highResSize": null,
+                    "lowResQuality": 3,
+                    "lowResSize": 400,
+                    "ratio": "1500:1000",
+                    "uri": "https://image.io/secondary",
+                  }
                 }
-              }
-            />
+              />
+            </div>
           </div>
         </div>
         <div
           id="5"
         >
           <div>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "An inline image caption",
-                  "credits": "The inline image credits",
+            <div>
+              <ArticleImage
+                captionOptions={
+                  Object {
+                    "caption": "An inline image caption",
+                    "credits": "The inline image credits",
+                  }
                 }
-              }
-              imageOptions={
-                Object {
-                  "display": "inline",
-                  "highResSize": null,
-                  "lowResQuality": 3,
-                  "lowResSize": 400,
-                  "ratio": "1500:1000",
-                  "uri": "https://image.io/inline",
+                imageOptions={
+                  Object {
+                    "display": "inline",
+                    "highResSize": null,
+                    "lowResQuality": 3,
+                    "lowResSize": 400,
+                    "ratio": "1500:1000",
+                    "uri": "https://image.io/inline",
+                  }
                 }
-              }
-            />
+              />
+            </div>
           </div>
         </div>
         <p>
@@ -475,26 +485,34 @@ exports[`2. an article with interactives 1`] = `
         role="article"
       >
         <div>
-          <InteractiveWrapper
-            attributes={
-              Object {
-                "chart-id": "csmgb",
+          <div
+            id="d2f83305-d558-4f78-f582-32115c659355"
+          >
+            <InteractiveWrapper
+              attributes={
+                Object {
+                  "chart-id": "csmgb",
+                }
               }
-            }
-            element="times-datawrapper"
-            source="https://interactive.io"
-          />
+              element="times-datawrapper"
+              source="https://interactive.io"
+            />
+          </div>
         </div>
         <div>
-          <InteractiveWrapper
-            attributes={
-              Object {
-                "chart-id": "csmgb",
+          <div
+            id="abc"
+          >
+            <InteractiveWrapper
+              attributes={
+                Object {
+                  "chart-id": "csmgb",
+                }
               }
-            }
-            element="times-datawrapper"
-            source="https://interactive.io"
-          />
+              element="times-datawrapper"
+              source="https://interactive.io"
+            />
+          </div>
         </div>
         <div>
           <h2>

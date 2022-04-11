@@ -776,10 +776,12 @@ exports[`full article with style 1`] = `
         className="c17 responsive__BodyContainer-sc-15gvuj2-3 c17 css-view-1dbjc4n"
       >
         <div>
-          <div
-            className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <Link>
@@ -873,17 +875,21 @@ exports[`full article with style 1`] = `
           <AdContainer />
         </div>
         <div>
-          <div
-            className="c28 responsive__SecondaryImg-sc-4v1r4q-7 c28 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c28 responsive__SecondaryImg-sc-4v1r4q-7 c28 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div>
-          <div
-            className="c29 responsive__InlineImg-sc-4v1r4q-8 c29 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c29 responsive__InlineImg-sc-4v1r4q-8 c29 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div />
@@ -1674,10 +1680,12 @@ exports[`full article with style in the culture magazine 1`] = `
         className="c17 responsive__BodyContainer-sc-15gvuj2-3 c17 css-view-1dbjc4n"
       >
         <div>
-          <div
-            className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <Link>
@@ -1771,17 +1779,21 @@ exports[`full article with style in the culture magazine 1`] = `
           <AdContainer />
         </div>
         <div>
-          <div
-            className="c28 responsive__SecondaryImg-sc-4v1r4q-7 c28 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c28 responsive__SecondaryImg-sc-4v1r4q-7 c28 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div>
-          <div
-            className="c29 responsive__InlineImg-sc-4v1r4q-8 c29 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c29 responsive__InlineImg-sc-4v1r4q-8 c29 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div />
@@ -2573,10 +2585,12 @@ exports[`full article with style in the style magazine 1`] = `
         className="c17 responsive__BodyContainer-sc-15gvuj2-3 c17 css-view-1dbjc4n"
       >
         <div>
-          <div
-            className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <Link>
@@ -2670,17 +2684,21 @@ exports[`full article with style in the style magazine 1`] = `
           <AdContainer />
         </div>
         <div>
-          <div
-            className="c28 responsive__SecondaryImg-sc-4v1r4q-7 c28 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c28 responsive__SecondaryImg-sc-4v1r4q-7 c28 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div>
-          <div
-            className="c29 responsive__InlineImg-sc-4v1r4q-8 c29 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c29 responsive__InlineImg-sc-4v1r4q-8 c29 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div />
@@ -3471,10 +3489,12 @@ exports[`full article with style in the sunday times magazine 1`] = `
         className="c17 responsive__BodyContainer-sc-15gvuj2-3 c17 css-view-1dbjc4n"
       >
         <div>
-          <div
-            className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <Link>
@@ -3568,17 +3588,21 @@ exports[`full article with style in the sunday times magazine 1`] = `
           <AdContainer />
         </div>
         <div>
-          <div
-            className="c28 responsive__SecondaryImg-sc-4v1r4q-7 c28 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c28 responsive__SecondaryImg-sc-4v1r4q-7 c28 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div>
-          <div
-            className="c29 responsive__InlineImg-sc-4v1r4q-8 c29 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c29 responsive__InlineImg-sc-4v1r4q-8 c29 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div />
