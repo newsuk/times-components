@@ -251,10 +251,12 @@ exports[`1. a primary image 1`] = `
         className="c7 responsive__BodyContainer-sc-15gvuj2-3 c7 css-view-1dbjc4n"
       >
         <div>
-          <div
-            className="c8 responsive__PrimaryImg-sc-4v1r4q-5 c8 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c8 responsive__PrimaryImg-sc-4v1r4q-5 c8 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div
@@ -517,10 +519,12 @@ exports[`2. a fullwidth image 1`] = `
         className="c7 responsive__BodyContainer-sc-15gvuj2-3 c7 css-view-1dbjc4n"
       >
         <div>
-          <div
-            className="c8 responsive__FullWidthImg-sc-4v1r4q-6 c8 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c8 responsive__FullWidthImg-sc-4v1r4q-6 c8 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div
@@ -807,10 +811,12 @@ exports[`3. a secondary image 1`] = `
         className="c7 responsive__BodyContainer-sc-15gvuj2-3 c7 css-view-1dbjc4n"
       >
         <div>
-          <div
-            className="c8 responsive__SecondaryImg-sc-4v1r4q-7 c8 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c8 responsive__SecondaryImg-sc-4v1r4q-7 c8 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div
@@ -1098,10 +1104,12 @@ exports[`4. an inline image 1`] = `
         className="c7 responsive__BodyContainer-sc-15gvuj2-3 c7 css-view-1dbjc4n"
       >
         <div>
-          <div
-            className="c8 responsive__InlineImg-sc-4v1r4q-8 c8 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c8 responsive__InlineImg-sc-4v1r4q-8 c8 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div
