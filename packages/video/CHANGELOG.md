@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.11.28](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.27...@times-components/video@4.11.28) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
 ## [4.11.27](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.26...@times-components/video@4.11.27) (2022-04-12)
 
 **Note:** Version bump only for package @times-components/video

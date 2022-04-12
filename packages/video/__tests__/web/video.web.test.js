@@ -1,5 +1,4 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -7,7 +6,6 @@ import {
   minimaliseTransform,
   minimalWebTransform,
   replacePropTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import { hash, iterator } from "@times-components/test-utils";
@@ -32,8 +30,7 @@ addSerializers(
     minimalWebTransform,
     replacePropTransform(
       (value, key) => (key === "src" || key === "poster" ? hash(value) : value)
-    ),
-    rnwTransform(AppRegistry)
+    )
   )
 );
 
@@ -44,7 +41,6 @@ const tests = [
       const testInstance = TestRenderer.create(
         <Video {...defaultVideoProps} is360 />
       );
-
       expect(testInstance.toJSON()).toMatchSnapshot();
     }
   },
@@ -57,7 +53,6 @@ const tests = [
 
       const VideoComponent = testInstance.root.findAllByType(InlineVideoPlayer);
       VideoComponent[0].instance.handlePlay();
-
       expect(testInstance).toMatchSnapshot();
     }
   }
