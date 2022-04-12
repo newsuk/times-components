@@ -118,8 +118,9 @@ exports[`7. card with a loading state 1`] = `
         "componentStyle": ComponentStyle {
           "componentId": "animations__FadeIn-sc-2iiu4y-0",
           "isStatic": true,
-          "lastClassName": "iZkZiB",
+          "lastClassName": "eWJWUm",
           "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             "animation:",
             Keyframes {
               "id": "sc-keyframes-eMLfYp",
@@ -135,10 +136,12 @@ exports[`7. card with a loading state 1`] = `
           ],
         },
         "displayName": "animations__FadeIn",
-        "foldedComponentIds": Array [],
+        "foldedComponentIds": Array [
+          "tc-view__TcView-nuazoi-0",
+        ],
         "render": [Function],
         "styledComponentId": "animations__FadeIn-sc-2iiu4y-0",
-        "target": [Function],
+        "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
@@ -200,8 +203,9 @@ exports[`8. card with a loading state and no image 1`] = `
         "componentStyle": ComponentStyle {
           "componentId": "animations__FadeIn-sc-2iiu4y-0",
           "isStatic": true,
-          "lastClassName": "iZkZiB",
+          "lastClassName": "eWJWUm",
           "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             "animation:",
             Keyframes {
               "id": "sc-keyframes-eMLfYp",
@@ -217,10 +221,12 @@ exports[`8. card with a loading state and no image 1`] = `
           ],
         },
         "displayName": "animations__FadeIn",
-        "foldedComponentIds": Array [],
+        "foldedComponentIds": Array [
+          "tc-view__TcView-nuazoi-0",
+        ],
         "render": [Function],
         "styledComponentId": "animations__FadeIn-sc-2iiu4y-0",
-        "target": [Function],
+        "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
@@ -270,8 +276,9 @@ exports[`9. card with reversed loading state 1`] = `
         "componentStyle": ComponentStyle {
           "componentId": "animations__FadeIn-sc-2iiu4y-0",
           "isStatic": true,
-          "lastClassName": "iZkZiB",
+          "lastClassName": "eWJWUm",
           "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             "animation:",
             Keyframes {
               "id": "sc-keyframes-eMLfYp",
@@ -287,10 +294,12 @@ exports[`9. card with reversed loading state 1`] = `
           ],
         },
         "displayName": "animations__FadeIn",
-        "foldedComponentIds": Array [],
+        "foldedComponentIds": Array [
+          "tc-view__TcView-nuazoi-0",
+        ],
         "render": [Function],
         "styledComponentId": "animations__FadeIn-sc-2iiu4y-0",
-        "target": [Function],
+        "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
@@ -352,8 +361,9 @@ exports[`10. card with reversed loading state with no image 1`] = `
         "componentStyle": ComponentStyle {
           "componentId": "animations__FadeIn-sc-2iiu4y-0",
           "isStatic": true,
-          "lastClassName": "iZkZiB",
+          "lastClassName": "eWJWUm",
           "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             "animation:",
             Keyframes {
               "id": "sc-keyframes-eMLfYp",
@@ -369,10 +379,12 @@ exports[`10. card with reversed loading state with no image 1`] = `
           ],
         },
         "displayName": "animations__FadeIn",
-        "foldedComponentIds": Array [],
+        "foldedComponentIds": Array [
+          "tc-view__TcView-nuazoi-0",
+        ],
         "render": [Function],
         "styledComponentId": "animations__FadeIn-sc-2iiu4y-0",
-        "target": [Function],
+        "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
