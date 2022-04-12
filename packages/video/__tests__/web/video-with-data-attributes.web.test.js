@@ -1,5 +1,4 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -7,7 +6,6 @@ import {
   minimaliseTransform,
   minimalWebTransform,
   replacePropTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import { hash, iterator } from "@times-components/test-utils";
@@ -30,8 +28,7 @@ addSerializers(
     minimalWebTransform,
     replacePropTransform(
       (value, key) => (key === "uri" || key === "poster" ? hash(value) : value)
-    ),
-    rnwTransform(AppRegistry)
+    )
   )
 );
 

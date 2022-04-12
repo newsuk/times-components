@@ -16,13 +16,9 @@
     "bundle": "NODE_ENV=production webpack -p"
   },
   "jest": {
-    "preset": "react-native",
     "rootDir": "../..",
     "coverageDirectory": "<rootDir>/packages/video/coverage/",
     "testEnvironment": "jsdom",
-    "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|@times-components)/)"
-    ],
     "testMatch": [
       "<rootDir>/packages/video/__tests__/*.test.js"
     ]
@@ -32,10 +28,7 @@
     "url": "git+https://github.com/newsuk/times-components.git"
   },
   "keywords": [
-    "react-native-web",
     "react",
-    "native",
-    "web",
     "video",
     "brightcove",
     "component"
@@ -64,8 +57,6 @@
     "react": "16.9.0",
     "react-art": "16.6.3",
     "react-dom": "16.9.0",
-    "react-native": "0.61.5",
-    "react-native-web": "0.11.4",
     "react-test-renderer": "16.9.0",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1"
@@ -85,9 +76,7 @@
   },
   "peerDependencies": {
     "react": ">=16.9",
-    "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-dom": ">=16.9"
   },
   "_timesComponentsCliVariables": {
     "component": "Video",
