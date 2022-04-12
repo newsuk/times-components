@@ -5,7 +5,7 @@ exports[`1. with a single author 1`] = `
   className="css-view-1dbjc4n"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 fRmcJe"
   >
     Alexandra Frean
   </div>
@@ -17,32 +17,32 @@ exports[`2. with a very long byline 1`] = `
   className="css-view-1dbjc4n"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 fRmcJe"
   >
     Camilla Long
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 gJRFWs"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 fcjjas"
   >
     , Environment Editor | 
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 fRmcJe"
   >
     Camilla Long
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 gJRFWs"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 fcjjas"
   >
     , Environment Editor | 
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+    className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 fRmcJe"
   >
     Camilla Long
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 gJRFWs"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 fcjjas"
   >
     , Environment Editor
   </div>

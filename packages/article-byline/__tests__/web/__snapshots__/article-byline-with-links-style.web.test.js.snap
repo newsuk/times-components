@@ -64,7 +64,7 @@ exports[`2. with a very long byline 1`] = `
     Camilla Long
   </a>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 gftri"
   >
     , Environment Editor | 
   </div>
@@ -75,7 +75,7 @@ exports[`2. with a very long byline 1`] = `
     Camilla Long
   </a>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 gftri"
   >
     , Environment Editor | 
   </div>
@@ -86,7 +86,7 @@ exports[`2. with a very long byline 1`] = `
     Camilla Long
   </a>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 gftri"
   >
     , Environment Editor
   </div>
