@@ -13,6 +13,21 @@ import {
 import Button from "../src/button";
 import shared from "./shared.base";
 
+jest.mock("@times-components/styleguide", () => () => ({
+  ...jest.requireActual("@times-components/utils"),
+
+  fontFactory: jest.fn(() => ({
+    fontFamily: "GillSansMTStd-Medium",
+    fontSize: 16
+  })),
+  colours: {
+    functional: {
+      action: "#006699",
+      white: "#FFFFFF"
+    }
+  },
+}));
+
 const styles = [
   "alignItems",
   "backgroundColor",
