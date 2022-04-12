@@ -25,7 +25,7 @@ jest.mock("@times-components/styleguide", () => () => ({
       action: "#006699",
       white: "#FFFFFF"
     }
-  },
+  }
 }));
 
 const styles = [

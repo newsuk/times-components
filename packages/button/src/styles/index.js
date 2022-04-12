@@ -3,7 +3,7 @@ import styleguide from "@times-components/styleguide";
 const { colours, fontFactory } = styleguide();
 
 const styles = {
-    button: {
+  button: {
     ...fontFactory({
       font: "supporting",
       fontSize: "button"
