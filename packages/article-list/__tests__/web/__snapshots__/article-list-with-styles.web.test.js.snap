@@ -2,6 +2,21 @@
 
 exports[`1. article list 1`] = `
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
 }
@@ -172,7 +187,7 @@ exports[`1. article list 1`] = `
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 animations__FadeIn-sc-2iiu4y-0 c2 css-view-1dbjc4n"
+                className="c2"
               >
                 <ArticleSummary />
               </div>
@@ -201,7 +216,7 @@ exports[`1. article list 1`] = `
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 animations__FadeIn-sc-2iiu4y-0 c2 css-view-1dbjc4n"
+                className="c2"
               >
                 <ArticleSummary />
               </div>
@@ -230,7 +245,7 @@ exports[`1. article list 1`] = `
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 animations__FadeIn-sc-2iiu4y-0 c2 css-view-1dbjc4n"
+                className="c2"
               >
                 <ArticleSummary />
               </div>
@@ -259,7 +274,7 @@ exports[`1. article list 1`] = `
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 animations__FadeIn-sc-2iiu4y-0 c2 css-view-1dbjc4n"
+                className="c2"
               >
                 <ArticleSummary />
               </div>
@@ -288,7 +303,7 @@ exports[`1. article list 1`] = `
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 animations__FadeIn-sc-2iiu4y-0 c2 css-view-1dbjc4n"
+                className="c2"
               >
                 <ArticleSummary />
               </div>

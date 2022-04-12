@@ -12,6 +12,29 @@ exports[`1. page error 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c4 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  border-radius: 0;
   min-height: 0px;
   min-width: 0px;
   padding: 0px;
@@ -82,7 +105,7 @@ exports[`1. page error 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c5 {
     -webkit-align-self: center;
     -ms-flex-item-align: center;
     align-self: center;
@@ -155,7 +178,7 @@ exports[`1. page error 1`] = `
           className="c3"
         />
         <div
-          className="c2 IS2"
+          className="c4 IS2"
         >
           <svg
             className="IS1"
@@ -169,7 +192,7 @@ exports[`1. page error 1`] = `
     </div>
   </div>
   <div
-    className="c4 responsive__PageErrorContentContainer-sc-1c8x8xk-7 c4 css-view-1dbjc4n"
+    className="c5 responsive__PageErrorContentContainer-sc-1c8x8xk-7 c5 css-view-1dbjc4n"
   >
     <div
       className="css-text-901oao r-alignSelf-1kihuf0 r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-yy2aun r-lineHeight-eaezby r-marginBottom-15d164r r-marginTop-1x0uki6 r-textAlign-q4m81j S1"
