@@ -3707,6 +3707,40 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
+"@times-components/styleguide@3.38.31":
+  version "3.38.31"
+  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.38.31.tgz#31b8908e40774f569924e4b40b09420b7ac57c82"
+  integrity sha512-Y8v8UwD+S+CaVrlCQ9jKaIzUEv0zpMAS67WqUtbTMRwWe0R99Ykn/d9AJ2F27vQ9PiFlwg458e7RLa00oWYhLg==
+  dependencies:
+    prop-types "15.7.2"
+    styled-components "4.3.2"
+
+"@times-components/styleguide@3.38.32":
+  version "3.38.32"
+  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.38.32.tgz#d5cefb9a0c3e218585a0b155d8adc02592679913"
+  integrity sha512-EXH/YfXzrZDUyZfUs+CoZHqEAhyUdaTbJbsfHECSaenkpksHEHL2gEjNjI7fO0s7jomQ3qHRn7EfQEVVStwg7w==
+  dependencies:
+    prop-types "15.7.2"
+    styled-components "4.3.2"
+
+"@times-components/utils@6.7.0":
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-6.7.0.tgz#9555d23b56134b9942316b768c0ab442f9450135"
+  integrity sha512-7p7Xw0zwcmQ0W0uvYgdxnNf1GvMGyUpqiMS1OSJ5rS8BtvRBlymE+OCgXzWtEMQxdP7Pcjfcxo9n8J5/uVwfnA==
+  dependencies:
+    "@times-components/schema" "0.7.1"
+    "@times-components/styleguide" "3.38.31"
+    apollo-cache-inmemory "1.5.1"
+    apollo-client "2.5.1"
+    apollo-link "1.2.4"
+    apollo-link-http "1.5.14"
+    apollo-link-persisted-queries "0.2.2"
+    lodash.omitby "4.6.0"
+    prop-types "15.7.2"
+    react-native "0.61.5"
+    styled-components "4.3.2"
+    unfetch "^3.0.0"
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"

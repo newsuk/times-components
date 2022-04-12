@@ -14,7 +14,7 @@ import Button from "../src/button";
 import shared from "./shared.base";
 
 jest.mock("@times-components/styleguide", () => () => ({
-  ...jest.requireActual("@times-components/utils"),
+  ...jest.requireActual("@times-components/styleguide"),
 
   fontFactory: jest.fn(() => ({
     fontFamily: "GillSansMTStd-Medium",

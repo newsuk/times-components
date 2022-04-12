@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../src/button";
 
 jest.mock("@times-components/styleguide", () => () => ({
-  ...jest.requireActual("@times-components/utils"),
+  ...jest.requireActual("@times-components/styleguide"),
   fontFactory: jest.fn(() => ({
     fontFamily: "GillSansMTStd-Medium",
     fontSize: 16

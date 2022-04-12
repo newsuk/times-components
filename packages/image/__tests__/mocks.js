@@ -11,6 +11,16 @@ jest.mock("@times-components/utils", () => {
 
   return {
     ...actualUtils,
-    convertToPixels: points => points - 1
+    convertToPixels: points => points - 1,
   };
 });
+
+jest.mock("@times-components/styleguide", () => ({
+    colours: {
+      functional: {
+        action: "#006699",
+        white: "#FFFFFF",
+        backgroundSecondary: '#EDEDED'
+      }
+    }
+}));
