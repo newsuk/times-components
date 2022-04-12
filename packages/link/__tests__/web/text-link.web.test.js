@@ -3,6 +3,8 @@ import { render, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import TextLink from "../../src/text-link";
 
+jest.mock("@times-components/styleguide");
+
 describe("Test Link", () => {
   it("renders the link", () => {
     const { baseElement, getByText, getByRole } = render(
