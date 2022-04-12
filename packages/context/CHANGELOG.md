@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.3.0...@times-components/context@1.4.0) (2022-04-12)
+
+
+### Features
+
+* **TDP-1742:** Add article-template-name to article tracking ([#2914](https://github.com/newsuk/times-components/issues/2914)) ([b52a4c6](https://github.com/newsuk/times-components/commit/b52a4c6c0b08d3cba196b65a8856c2f40a5cea92))
+
+
+
+
+
 # [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.2.34...@times-components/context@1.3.0) (2022-04-11)
 
 
