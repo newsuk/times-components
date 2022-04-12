@@ -735,32 +735,42 @@ exports[`full article with style 1`] = `
         <div
           className="c10"
         >
-          <InteractiveWrapper />
+          <div>
+            <InteractiveWrapper />
+          </div>
         </div>
         <div
           className="c11"
         >
-          <InteractiveWrapper />
-        </div>
-        <div>
-          <div
-            className="c12 responsive__PrimaryImg-sc-4v1r4q-5 c12 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <InteractiveWrapper />
           </div>
         </div>
         <div>
-          <div
-            className="c13 responsive__SecondaryImg-sc-4v1r4q-7 c13 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c12 responsive__PrimaryImg-sc-4v1r4q-5 c12 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div>
-          <div
-            className="c14 responsive__InlineImg-sc-4v1r4q-8 c14 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c13 responsive__SecondaryImg-sc-4v1r4q-7 c13 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <div
+              className="c14 responsive__InlineImg-sc-4v1r4q-8 c14 css-view-1dbjc4n"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <Link>
