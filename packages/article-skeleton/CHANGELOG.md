@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.79.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.78.5...@times-components/article-skeleton@1.79.0) (2022-04-12)
+
+
+### Features
+
+* **TDP-1742:** Add article-template-name to article tracking ([#2914](https://github.com/newsuk/times-components/issues/2914)) ([b52a4c6](https://github.com/newsuk/times-components/commit/b52a4c6c0b08d3cba196b65a8856c2f40a5cea92))
+
+
+
+
+
 ## [1.78.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.78.4...@times-components/article-skeleton@1.78.5) (2022-04-11)
 
 **Note:** Version bump only for package @times-components/article-skeleton
