@@ -14,9 +14,8 @@ jest.mock("@times-components/styleguide", () => () => ({
   ...jest.requireActual("@times-components/styleguide"),
   fontFactory: jest.fn(() => ({})),
   colours: {
-    functional: {
-    }
-  }, 
+    functional: {}
+  },
   spacing: jest.fn(() => ({}))
 }));
 

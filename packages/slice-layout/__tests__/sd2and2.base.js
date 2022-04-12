@@ -5,6 +5,8 @@ import createItem from "./utils";
 import { SecondaryTwoAndTwoSlice } from "../src/slice-layout";
 import styles from "../src/templates/secondarytwoandtwo/styles";
 
+jest.mock("@times-components/styleguide");
+
 export default renderComponent => {
   const tests = [
     {

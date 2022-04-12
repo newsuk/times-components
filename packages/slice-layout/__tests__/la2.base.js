@@ -3,6 +3,8 @@ import { iterator } from "@times-components/test-utils";
 import createItem from "./utils";
 import { LeadOneAndTwoSlice } from "../src/slice-layout";
 
+jest.mock("@times-components/styleguide");
+
 export default renderComponent => {
   const tests = [
     {

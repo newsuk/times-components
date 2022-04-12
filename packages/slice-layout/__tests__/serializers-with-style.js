@@ -9,6 +9,8 @@ import {
   stylePrinter
 } from "@times-components/jest-serializer";
 
+jest.mock("@times-components/styleguide");
+
 const styles = [
   "borderBottomColor",
   "borderBottomWidth",

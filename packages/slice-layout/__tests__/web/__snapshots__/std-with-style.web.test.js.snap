@@ -24,8 +24,6 @@ exports[`2. a single child element 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .c0 .imageContainerClass {
@@ -50,8 +48,6 @@ exports[`2. a single child element 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-bottom: 10px;
-  padding-top: 10px;
   width: 100%;
 }
 
@@ -79,7 +75,6 @@ exports[`2. a single child element 1`] = `
   .c0 .headlineClass {
     font-size: 25px;
     line-height: 28px;
-    margin-top: 5px;
   }
 }
 
@@ -90,7 +85,6 @@ exports[`2. a single child element 1`] = `
     flex: 1;
     margin-bottom: 0;
     min-width: auto;
-    padding-right: 10px;
   }
 
   .c0 .contentContainerClass {
@@ -188,8 +182,6 @@ exports[`3. two child elements 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .c4 {
@@ -199,8 +191,6 @@ exports[`3. two child elements 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  margin-bottom: 10px;
-  margin-top: 10px;
   min-width: auto;
 }
 
@@ -226,8 +216,6 @@ exports[`3. two child elements 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-bottom: 10px;
-  padding-top: 10px;
   width: 100%;
 }
 
@@ -256,7 +244,7 @@ exports[`3. two child elements 1`] = `
     -webkit-flex: 0 !important;
     -ms-flex: 0 !important;
     flex: 0 !important;
-    margin: 0 10px;
+    margin: 0 undefined;
   }
 }
 
@@ -268,7 +256,6 @@ exports[`3. two child elements 1`] = `
   .c0 .headlineClass {
     font-size: 25px;
     line-height: 28px;
-    margin-top: 5px;
   }
 }
 
@@ -371,8 +358,6 @@ exports[`4. three child elements 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .c4 {
@@ -382,8 +367,6 @@ exports[`4. three child elements 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  margin-bottom: 10px;
-  margin-top: 10px;
   min-width: auto;
 }
 
@@ -409,8 +392,6 @@ exports[`4. three child elements 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-bottom: 10px;
-  padding-top: 10px;
   width: 100%;
 }
 
@@ -439,7 +420,7 @@ exports[`4. three child elements 1`] = `
     -webkit-flex: 0 !important;
     -ms-flex: 0 !important;
     flex: 0 !important;
-    margin: 0 10px;
+    margin: 0 undefined;
   }
 }
 
@@ -451,7 +432,6 @@ exports[`4. three child elements 1`] = `
   .c0 .headlineClass {
     font-size: 25px;
     line-height: 28px;
-    margin-top: 5px;
   }
 }
 
@@ -475,8 +455,6 @@ exports[`4. three child elements 1`] = `
 
 @media (min-width:768px) {
   .c2 {
-    padding-left: 20px;
-    padding-right: 20px;
     width: 100%;
   }
 }

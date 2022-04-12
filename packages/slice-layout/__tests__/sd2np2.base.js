@@ -4,6 +4,8 @@ import { editionBreakpoints } from "@times-components/styleguide";
 import createItem from "./utils";
 import { SecondaryTwoNoPicAndTwoSlice } from "../src/slice-layout";
 
+jest.mock("@times-components/styleguide");
+
 export default renderComponent => {
   const tests = [
     {

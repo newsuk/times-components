@@ -20,6 +20,13 @@ import adInit from "../../src/utils/ad-init";
 import adConfig from "../../fixtures/article-ad-config.json";
 import Ad, { AdComposer } from "../../src/ad";
 
+jest.mock("@times-components/styleguide", () => () => ({
+  ...jest.requireActual("@times-components/styleguide"),
+  colours: {
+    functional: {}
+  }
+}));
+
 jest.mock("@times-components/utils", () => {
   const utils = jest.requireActual("@times-components/utils");
 

@@ -10,6 +10,8 @@ import {
   getContainer
 } from "../src/templates/opiniononeandtwo/responsive";
 
+jest.mock("@times-components/styleguide");
+
 export default renderComponent => {
   const tests = [
     {

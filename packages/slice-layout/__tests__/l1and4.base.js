@@ -4,6 +4,8 @@ import { editionBreakpoints } from "@times-components/styleguide";
 import createItem from "./utils";
 import { LeadOneAndFourSlice } from "../src/slice-layout";
 
+jest.mock("@times-components/styleguide");
+
 export default renderComponent => {
   const tests = [
     {
