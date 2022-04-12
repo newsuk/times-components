@@ -21,9 +21,6 @@ export default Component =>
         }
       }
 
-      const template = getIsLiveOrBreakingFlag(flags)
-        ? "live template"
-        : "standard template";
       return {
         articleId: get(data, "id", ""),
         article_topic_tags: data.topics
@@ -54,7 +51,9 @@ export default Component =>
         registrationType: getRegistrationType(),
         shared: getSharedStatus(),
         article_flag: getIsLiveOrBreakingFlag(flags) || "no flag",
-        article_template_name: template
+        article_template_name: getIsLiveOrBreakingFlag(flags)
+          ? "live template"
+          : "standard template"
       };
     },
     trackingObjectName: "Article"
