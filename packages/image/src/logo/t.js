@@ -1,6 +1,9 @@
 import React from "react";
-import { colours } from "@times-components/styleguide";
 import { Svg, G, Path } from "@times-components/svgs";
+import styleguide from "@times-components/styleguide";
+
+const { colours } = styleguide();
+
 
 function T() {
   return (

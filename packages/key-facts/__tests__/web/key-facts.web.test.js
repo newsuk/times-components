@@ -13,6 +13,13 @@ import { KeyFactTextLink } from "../../src/styles";
 import data from "../../fixtures/key-facts-test.json";
 import dataNoTitle from "../../fixtures/key-facts-no-title-test.json";
 
+jest.mock("@times-components/styleguide", () => () => ({
+   ...jest.requireActual("@times-components/styleguide"),
+   colours:{
+     functional: {}
+  }
+}));
+
 addSerializers(expect, enzymeTreeSerializer());
 const analyticsStream = jest.fn();
 

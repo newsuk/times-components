@@ -2,47 +2,6 @@
 
 exports[`1. default image 1`] = `
 .c0 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  border-bottom-color: black;
-  border-bottom-width: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-}
-
-.c2 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  border-bottom-color: black;
-  border-bottom-width: 0px;
-  border-radius: 0;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-}
-
-.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -59,35 +18,20 @@ exports[`1. default image 1`] = `
 }
 
 .IS2 {
-  align-items: center;
-  background-color: #EDEDED;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  border-radius: 0;
-}
-
-.IS3 {
   padding-bottom: 66.66666666666667%;
 }
 </style>
 
-<div
-  className="c0"
->
+<div>
+   
   <div
-    className="IS3"
+    className="IS2"
   >
     <img
-      className="c1"
+      className="c0"
     />
-    <div
-      className="c2 IS2"
-    >
+    <div>
+       
       <Svg
         className="IS1"
       >
@@ -102,47 +46,6 @@ exports[`1. default image 1`] = `
 
 exports[`2. default modal 1`] = `
 .c0 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  border-bottom-color: black;
-  border-bottom-width: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-}
-
-.c2 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  border-bottom-color: black;
-  border-bottom-width: 0px;
-  border-radius: 0;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-}
-
-.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -159,35 +62,20 @@ exports[`2. default modal 1`] = `
 }
 
 .IS2 {
-  align-items: center;
-  background-color: #EDEDED;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  border-radius: 0;
-}
-
-.IS3 {
   padding-bottom: 66.66666666666667%;
 }
 </style>
 
-<div
-  className="c0"
->
+<div>
+   
   <div
-    className="IS3"
+    className="IS2"
   >
     <img
-      className="c1"
+      className="c0"
     />
-    <div
-      className="c2 IS2"
-    >
+    <div>
+       
       <Svg
         className="IS1"
       >
