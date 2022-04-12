@@ -7,14 +7,14 @@ jest.mock("@times-components/styleguide", () => () => ({
   fontFactory: jest.fn(() => ({
     fontFamily: "GillSansMTStd-Medium",
     fontSize: 16
-  })),
+  }))
 }));
 
 module.exports = () => {
   it("renders ArticleLabel", () => {
     const testInstance = TestRenderer.create(
       <ArticleLabel color="#008347" title="swimming" />
-    ); 
+    );
 
     expect(testInstance.toJSON()).toMatchSnapshot();
   });

@@ -1,5 +1,7 @@
 import { clean } from "..";
 
+jest.mock("@times-components/styleguide");
+
 describe("clean", () => {
   it("should remove undefined props", () => {
     const props = {
