@@ -3,7 +3,7 @@ import { withTrackingContext } from "@times-components/tracking";
 import {
   getRegistrationType,
   getSharedStatus,
-  getIsLiveOrBreakingFlag,
+  getIsLiveOrBreakingFlag
 } from "../data-helper";
 
 export default Component =>
@@ -21,7 +21,9 @@ export default Component =>
         }
       }
 
-      const template = getIsLiveOrBreakingFlag(flags) ? 'live template' : 'standard template'
+      const template = getIsLiveOrBreakingFlag(flags)
+        ? "live template"
+        : "standard template";
       return {
         articleId: get(data, "id", ""),
         article_topic_tags: data.topics
