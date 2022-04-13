@@ -19,27 +19,6 @@ const props = {
   uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
 };
 
-const styles = [
-  "alignItems",
-  "backgroundColor",
-  "bottom",
-  "display",
-  "flex",
-  "flexDirection",
-  "flexGrow",
-  "height",
-  "justifyContent",
-  "left",
-  "opacity",
-  "overflow",
-  "paddingBottom",
-  "position",
-  "right",
-  "top",
-  "width",
-  "zIndex"
-];
-
 export default () => {
   addSerializers(
     expect,
