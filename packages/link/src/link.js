@@ -13,7 +13,7 @@ const respStylesSelector = selector => ({ responsiveLinkStyles }) =>
   (responsiveLinkStyles && responsiveLinkStyles[selector]) || "";
 
 const RespLink = styled.a`
-  text-decoration: ${props =>
+  textDecoration: ${props =>
     props.underlined && props.responsiveLinkStyles ? "underline" : "none"};
 
   ${respStylesSelector("base")};
