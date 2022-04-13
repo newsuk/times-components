@@ -37,6 +37,7 @@ exports[`1. default layout 1`] = `
         >
           <Path
             d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
           />
         </G>
       </Svg>
@@ -82,6 +83,7 @@ exports[`2. default layout without uri 1`] = `
         >
           <Path
             d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
           />
         </G>
       </Svg>
@@ -127,6 +129,7 @@ exports[`3. default layout without aspect ratio 1`] = `
         >
           <Path
             d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
           />
         </G>
       </Svg>
@@ -172,6 +175,7 @@ exports[`4. rounded image 1`] = `
         >
           <Path
             d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
           />
         </G>
       </Svg>
@@ -217,6 +221,7 @@ exports[`5. with existing url params 1`] = `
         >
           <Path
             d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
           />
         </G>
       </Svg>
@@ -344,6 +349,7 @@ exports[`8. only a low res image 1`] = `
         >
           <Path
             d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
           />
         </G>
       </Svg>
@@ -389,6 +395,7 @@ exports[`9. fade in the low res image 1`] = `
         >
           <Path
             d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
           />
         </G>
       </Svg>
@@ -470,6 +477,7 @@ exports[`10. both high and low res sizes 1`] = `
         >
           <Path
             d="6a6c07166e9c40e4f62e57af2b507822"
+            fill="#FFFFFF"
           />
         </G>
       </Svg>

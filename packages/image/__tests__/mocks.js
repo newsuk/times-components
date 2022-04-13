@@ -21,15 +21,17 @@ jest.mock("@times-components/utils", () => {
   };
 });
 
-jest.mock("@times-components/styleguide", () => () => {
-  return {
-  ...jest.requireActual("@times-components/styleguide"),
-  colours: {
-    functional: {
-      action: "#006699",
-      white: "#FFFFFF",
-      backgroundSecondary: "#EDEDED"
-    }
-  }
-}
-});
+jest.mock("@times-components/styleguide"
+// ,  () => {
+//   return {
+//   ...jest.requireActual("@times-components/styleguide"),
+//   colours: {
+//     functional: {
+//       action: "#006699",
+//       white: "#FFFFFF",
+//       backgroundSecondary: "#EDEDED"
+//     }
+//   }
+// }
+// }
+);

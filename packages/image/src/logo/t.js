@@ -1,8 +1,13 @@
 import React from "react";
 import { Svg, G, Path } from "@times-components/svgs";
-import styleguide from "@times-components/styleguide";
+import {
 
-const { colours } = styleguide();
+  colours,
+
+} from "@times-components/styleguide";
+// import styleguide from "@times-components/styleguide";
+
+// const { colours } = styleguide();
 
 
 function T() {

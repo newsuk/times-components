@@ -1,6 +1,12 @@
-import styleguide from "@times-components/styleguide";
+// import styleguide from "@times-components/styleguide";
 
-const { colours } = styleguide();
+// const { colours } = styleguide();
+
+import {
+
+  colours,
+
+} from "@times-components/styleguide";
 
 const styles = {
   placeholder: {

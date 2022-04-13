@@ -5,6 +5,24 @@ import mockDate from 'mockdate';
 import { NewsletterPuffButton } from '../NewsletterPuffButton';
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 
+jest.mock("@times-components/button")
+jest.mock("@times-components/styleguide"
+,() => () => ({
+  ...jest.requireActual("@times-components/styleguide"),
+  colours: {
+    functional: {
+      action: "#006699",
+      white: "#FFFFFF",
+      backgroundSecondary: "#EDEDED"
+    }
+  },
+  breakpoints: jest.fn(),
+  fonts: jest.fn(),
+  fontSizes: jest.fn(),
+  spacing: jest.fn(),
+  fontFactory: jest.fn(),
+})
+);
 describe('NewsletterPuffButton', () => {
   beforeEach(() => {
     mockDate.set(1620000000000);
