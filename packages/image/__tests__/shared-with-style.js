@@ -1,5 +1,4 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -8,7 +7,6 @@ import {
   hoistStyleTransform,
   minimaliseTransform,
   minimalWebTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
@@ -52,7 +50,6 @@ export default () => {
         (value, key) => key !== "style" && key !== "className"
       ),
       flattenStyleTransform,
-      rnwTransform(AppRegistry, styles),
       hoistStyleTransform
     )
   );
