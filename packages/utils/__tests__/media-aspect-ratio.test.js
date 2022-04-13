@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -25,7 +25,7 @@ describe("AspectRatioContainer should", () => {
   it("provide an appropriate container with childen based on a given aspect ratio", () => {
     const testInstance = TestRenderer.create(
       <AspectRatioContainer aspectRatio="16:9">
-        <Text>Here are some children</Text>
+        <TcText>Here are some children</TcText>
       </AspectRatioContainer>
     );
     expect(testInstance).toMatchSnapshot();

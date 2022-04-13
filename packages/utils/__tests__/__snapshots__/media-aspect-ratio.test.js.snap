@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AspectRatioContainer should provide an appropriate container with childen based on a given aspect ratio 1`] = `
-<View
+<div
   style={
     Object {
       "paddingBottom": "56.25%",
@@ -9,7 +9,7 @@ exports[`AspectRatioContainer should provide an appropriate container with child
     }
   }
 >
-  <View
+  <div
     style={
       Object {
         "height": "100%",
@@ -18,9 +18,9 @@ exports[`AspectRatioContainer should provide an appropriate container with child
       }
     }
   >
-    <Text>
+    <div>
       Here are some children
-    </Text>
-  </View>
-</View>
+    </div>
+  </div>
+</div>
 `;
