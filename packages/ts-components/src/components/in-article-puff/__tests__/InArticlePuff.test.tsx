@@ -10,6 +10,25 @@ import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserv
 
 import mockDate from 'mockdate';
 
+jest.mock('../../common-styles', () => ({
+  PlaceholderContainer: (props: any) => (
+    <div> PlaceholderContainer {props.children}</div>
+  )
+}));
+
+jest.mock('../../in-article-link/InArticleLink', () => ({
+  InArticleLink: (props: any) => (
+    <a
+      href={props.link}
+      onClick={() => props.onClick && props.onClick(props.linkText)}
+    >
+      {props.linkText}
+    </a>
+  )
+}));
+
+jest.mock('@times-components/styleguide');
+
 jest.mock('@times-components/image', () => ({
   Placeholder: () => <div>Placeholder</div>
 }));

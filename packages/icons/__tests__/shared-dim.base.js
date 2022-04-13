@@ -2,6 +2,8 @@ import React from "react";
 import { iterator } from "@times-components/test-utils";
 import * as Icons from "../src/icons";
 
+jest.mock("@times-components/styleguide");
+
 export default renderMethod => {
   const tests = [];
 

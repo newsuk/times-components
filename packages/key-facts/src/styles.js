@@ -7,6 +7,16 @@ import {
   fontSizes
 } from "@times-components/styleguide";
 
+//  import styleguide from "@times-components/styleguide";
+
+// const {
+//   breakpoints,
+//   spacing,
+//   fonts,
+//   colours,
+//   fontSizes,
+// } = styleguide()
+
 export const KeyFactTextLink = styled.a`
   color: inherit;
   cursor: pointer;

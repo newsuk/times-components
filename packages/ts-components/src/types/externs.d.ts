@@ -95,6 +95,8 @@ declare module '@times-components/styleguide' {
   const styleguide: () => {
     colours: any;
     fontFactory: (v: any) => any;
+    fonts: any;
+    breakpoints: breakpoints;
   };
 
   export default styleguide;

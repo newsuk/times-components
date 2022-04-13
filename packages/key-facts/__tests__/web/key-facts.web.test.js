@@ -5,6 +5,9 @@ import {
   addSerializers,
   enzymeTreeSerializer
 } from "@times-components/jest-serializer";
+// import { render, cleanup, fireEvent } from '@testing-library/react';
+// import '@testing-library/jest-dom';
+
 import { TrackingContextProvider } from "@times-components/ts-components";
 import mockDate from "mockdate";
 import KeyFacts from "../../src/key-facts";
@@ -13,12 +16,34 @@ import { KeyFactTextLink } from "../../src/styles";
 import data from "../../fixtures/key-facts-test.json";
 import dataNoTitle from "../../fixtures/key-facts-no-title-test.json";
 
-jest.mock("@times-components/styleguide", () => () => ({
-   ...jest.requireActual("@times-components/styleguide"),
-   colours:{
-     functional: {}
-  }
+ jest.mock("@times-components/image");
+
+jest.mock("@times-components/ts-components", () => ({
+  __esModule: true,
+  ...jest.requireActual("@times-components/ts-components"),
+  InArticlePuff: "InArticlePuff"
 }));
+
+jest.mock("@times-components/utils", () => ({
+  ...jest.requireActual("@times-components/utils"),
+  TcText: jest.fn(({ children }) => <p data-testid="TcText"> {children}</p>),
+  TcTextLink: jest.fn(({ children }) => <p data-testid="TcTextLink"> {children}</p>),
+  TcView: jest.fn(({ children }) => <div data-testid="TcView"> {children}</div>),
+  TcScrollView: jest.fn(({ children }) => <div data-testid="TcScrollView"> {children}</div>)
+}));
+
+jest.mock("@times-components/styleguide"
+
+// , () => ({
+//   ...jest.requireActual("@times-components/styleguide"),
+//   fontFactory: jest.fn(() => ({})),
+//   colours: {
+//     functional: {}
+//   },
+//   spacing: jest.fn(() => ({}))
+//})
+
+);
 
 addSerializers(expect, enzymeTreeSerializer());
 const analyticsStream = jest.fn();
