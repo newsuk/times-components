@@ -1,29 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-.c22 {
+.c17 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c23 {
   position: relative;
   overflow: hidden;
 }
 
-.c22:after {
+.c23:after {
   content: '';
   display: block;
   padding-bottom: 56.25%;
 }
 
-.c22 > img {
+.c23 > img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.c18 {
+.c19 {
   display: none;
 }
 
-.c19 {
+.c20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -39,18 +57,18 @@ exports[`full article with style 1`] = `
   clear: both;
 }
 
-.c19 a {
+.c20 a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c19 .heading {
+.c20 .heading {
   font-family: TimesModern-Bold;
   font-size: 24px;
   padding: 0 16px 16px 16px;
 }
 
-.c19 nav {
+.c20 nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -60,7 +78,7 @@ exports[`full article with style 1`] = `
   flex-direction: column;
 }
 
-.c20 {
+.c21 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -74,7 +92,7 @@ exports[`full article with style 1`] = `
   color: #1D1D1B;
 }
 
-.c20 section {
+.c21 section {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -89,12 +107,12 @@ exports[`full article with style 1`] = `
   padding: 0 16px;
 }
 
-.c20 section a {
+.c21 section a {
   -webkit-text-decoration: none;
   text-decoration: none;
 }
 
-.c20 section h3 {
+.c21 section h3 {
   color: #1D1D1B;
   font-family: TimesModern-Bold;
   font-size: 20px;
@@ -103,11 +121,11 @@ exports[`full article with style 1`] = `
   margin: 5px 0;
 }
 
-.c20 section h3:hover {
+.c21 section h3:hover {
   color: #006699;
 }
 
-.c20 section .summary {
+.c21 section .summary {
   font-family: TimesDigitalW04;
   color: #696969;
   font-size: 14px;
@@ -115,21 +133,21 @@ exports[`full article with style 1`] = `
   margin-bottom: 10px;
 }
 
-.c20 section .publishedTime {
+.c21 section .publishedTime {
   font-family: GillSansMTStd-Medium;
   color: #696969;
   font-size: 13px;
   margin-bottom: 5px;
 }
 
-.c20 section .byline {
+.c21 section .byline {
   font-family: GillSansMTStd-Medium;
   color: #333333;
   font-size: 13px;
   margin-bottom: 5px;
 }
 
-.c21 {
+.c22 {
   -webkit-flex: 1 1 0;
   -ms-flex: 1 1 0;
   flex: 1 1 0;
@@ -166,7 +184,7 @@ exports[`full article with style 1`] = `
   font-family: "TimesModern-Regular";
 }
 
-.c17 {
+.c18 {
   padding-left: 10px;
 }
 
@@ -225,7 +243,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c23 {
+.c24 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -236,7 +254,7 @@ exports[`full article with style 1`] = `
   line-height: 25px;
 }
 
-.c24 {
+.c25 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -247,7 +265,7 @@ exports[`full article with style 1`] = `
   line-height: 22px;
 }
 
-.c25 {
+.c26 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -258,7 +276,7 @@ exports[`full article with style 1`] = `
   line-height: 19px;
 }
 
-.c26 {
+.c27 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -269,7 +287,7 @@ exports[`full article with style 1`] = `
   line-height: 17px;
 }
 
-.c27 {
+.c28 {
   color: #333333;
   font-family: "TimesModern-Bold";
   font-weight: 400;
@@ -361,17 +379,17 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c20 {
     padding: 20px 0;
     width: 80.8%;
   }
 
-  .c19 .heading {
+  .c20 .heading {
     font-size: 28px;
     padding: 0 16px 20px 16px;
   }
 
-  .c19 nav {
+  .c20 nav {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -379,13 +397,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c19 {
+  .c20 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c20 section {
+  .c21 section {
     min-width: 300px;
     padding: 0 16px 0 0;
   }
@@ -408,7 +426,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     padding-left: 0px;
   }
 }
@@ -499,7 +517,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c23 {
+  .c24 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -507,20 +525,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c23 {
+  .c24 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c23 {
+  .c24 {
     font-size: 28px;
     line-height: 28px;
   }
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c25 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -528,20 +546,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c24 {
+  .c25 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c25 {
     font-size: 24px;
     line-height: 24px;
   }
 }
 
 @media (min-width:768px) {
-  .c25 {
+  .c26 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -549,20 +567,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c25 {
+  .c26 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c25 {
+  .c26 {
     font-size: 20px;
     line-height: 20px;
   }
 }
 
 @media (min-width:768px) {
-  .c26 {
+  .c27 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -570,20 +588,20 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c26 {
+  .c27 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c26 {
+  .c27 {
     font-size: 19px;
     line-height: 19px;
   }
 }
 
 @media (min-width:768px) {
-  .c27 {
+  .c28 {
     padding-left: 0;
     padding-right: 0;
     width: 80.8%;
@@ -591,13 +609,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c27 {
+  .c28 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c27 {
+  .c28 {
     font-size: 19px;
     line-height: 19px;
   }
@@ -802,10 +820,10 @@ exports[`full article with style 1`] = `
               className="IS9"
             >
               <div
-                className="css-view-1dbjc4n IS8"
+                className="c17 IS8"
               >
                 <div
-                  className="css-view-1dbjc4n IS7"
+                  className="c17 IS7"
                 >
                   <div
                     className="IS6"
@@ -822,7 +840,7 @@ exports[`full article with style 1`] = `
               </div>
               <figcaption>
                 <div
-                  className="c17 inset-caption__InsetCaptionStyle-la2hkf-0 c17 css-view-1dbjc4n"
+                  className="c18 inset-caption__InsetCaptionStyle-la2hkf-0 c18 css-view-1dbjc4n"
                 >
                   <Caption />
                 </div>
@@ -831,10 +849,10 @@ exports[`full article with style 1`] = `
           </div>
           <KeyFacts />
           <div
-            className="inlineRelatedArticles c18"
+            className="inlineRelatedArticles c19"
           >
             <div
-              className="c19"
+              className="c20"
             >
               <div
                 className="heading"
@@ -843,14 +861,14 @@ exports[`full article with style 1`] = `
               </div>
               <nav>
                 <div
-                  className="c20"
+                  className="c21"
                 >
                   <div
-                    className="c21"
+                    className="c22"
                   >
                     <a>
                       <div
-                        className="c22"
+                        className="c23"
                       >
                         <img />
                       </div>
@@ -880,27 +898,27 @@ exports[`full article with style 1`] = `
           </div>
         </span>
         <h2
-          className="c23"
+          className="c24"
         >
           This is heading 2
         </h2>
         <h3
-          className="c24"
+          className="c25"
         >
           This is heading 3
         </h3>
         <h4
-          className="c25"
+          className="c26"
         >
           This is heading 4
         </h4>
         <h5
-          className="c26"
+          className="c27"
         >
           This is heading 5
         </h5>
         <h6
-          className="c27"
+          className="c28"
         >
           This is heading 6
         </h6>

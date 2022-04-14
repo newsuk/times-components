@@ -1,147 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. renders 1`] = `
-.c4 {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
-.c5 {
-  display: none;
-}
-
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 50px;
-}
-
-.c2 {
-  border-style: solid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 50px;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-top-color: #DBDBDB;
-  border-top-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-@media (min-width:768px) {
-  .c5 {
-    display: inline;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    left: 0;
-    right: 0;
-    position: absolute;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    border-top-width: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    margin-top: 30px;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-<style>
-.S1 {
-  color: rgba(105,105,105,1.00);
-  font-family: GillSansMTStd-Medium;
-  font-size: 15px;
-  padding-top: 4px;
-}
-
-.S2 {
-  color: rgba(0,102,153,1.00);
-  font-family: GillSansMTStd-Medium;
-  font-size: 15px;
-  height: 15px;
-  text-align: left;
-}
-
-.S3 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  -ms-flex-direction: row;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  padding-top: 10px;
-}
-
-.S4 {
-  color: rgba(0,102,153,1.00);
-  font-family: GillSansMTStd-Medium;
-  font-size: 15px;
-  height: 15px;
-  margin-right: 10px;
-  text-align: right;
-}
-</style>
-
 <pagination-container__ContainerWithResults>
   <div
-    className="c0 pagination-container__ContainerWithResults-csg9hq-0 c0 css-view-1dbjc4n"
+    className="pagination-container__ContainerWithResults-csg9hq-0 htyzlT pagination-container__ContainerWithResults-csg9hq-0 htyzlT css-view-1dbjc4n"
   >
     <results__MessageContainer>
       <div
-        className="c1 results__MessageContainer-sc-1f306gs-0 c1 css-view-1dbjc4n"
+        className="results__MessageContainer-sc-1f306gs-0 eSPXEj results__MessageContainer-sc-1f306gs-0 eSPXEj css-view-1dbjc4n"
       >
         <div
-          className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-a023e6 r-lineHeight-fxxt2n r-paddingTop-1h8ys4a S1"
+          className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-a023e6 r-lineHeight-fxxt2n r-paddingTop-1h8ys4a"
           data-testid="results-message"
         >
           Showing 4 - 6 of 21 results
@@ -150,11 +19,11 @@ exports[`1. renders 1`] = `
     </results__MessageContainer>
     <pagination-border__BorderWithResults>
       <div
-        className="c2 pagination-border__BorderWithResults-zd8d3i-0 c2 css-view-1dbjc4n"
+        className="pagination-border__BorderWithResults-zd8d3i-0 bpXAGP pagination-border__BorderWithResults-zd8d3i-0 bpXAGP css-view-1dbjc4n"
       >
         <responsive__LinkContainer>
           <div
-            className="c3 responsive__LinkContainer-ac98ik-0 c3 css-view-1dbjc4n"
+            className="responsive__LinkContainer-ac98ik-0 dVQIWv responsive__LinkContainer-ac98ik-0 dVQIWv css-view-1dbjc4n"
           >
             <link__RespLink
               href="?mock-1"
@@ -163,16 +32,16 @@ exports[`1. renders 1`] = `
               underlined={true}
             >
               <a
-                className="c4"
+                className="link__RespLink-sc-1ocvixa-0 eeJpYz"
                 href="?mock-1"
                 target={null}
               >
                 <div
-                  className="css-view-1dbjc4n r-alignItems-1awozwy r-flexDirection-18u37iz r-paddingBottom-xd6kpl r-paddingTop-m611by S3"
+                  className="css-view-1dbjc4n r-alignItems-1awozwy r-flexDirection-18u37iz r-paddingBottom-xd6kpl r-paddingTop-m611by"
                   data-testid="pagination-button-previous"
                 >
                   <div
-                    className="css-text-901oao r-color-j7kcqb r-fontFamily-j2s0nr r-fontSize-a023e6 r-height-14g73ha r-lineHeight-fxxt2n r-marginLeft-1n0xq6e r-textAlign-fdjqy7 S2"
+                    className="css-text-901oao r-color-j7kcqb r-fontFamily-j2s0nr r-fontSize-a023e6 r-height-14g73ha r-lineHeight-fxxt2n r-marginLeft-1n0xq6e r-textAlign-fdjqy7"
                   >
                     <span
                       className="css-text-901oao css-textHasAncestor-16my406"
@@ -180,7 +49,7 @@ exports[`1. renders 1`] = `
                       Previous
                       <page-label__ResponsiveLabel>
                         <span
-                          className="c5 page-label__ResponsiveLabel-sc-1m9jh18-0 c5 css-text-901oao css-textHasAncestor-16my406"
+                          className="page-label__ResponsiveLabel-sc-1m9jh18-0 jmuOnu page-label__ResponsiveLabel-sc-1m9jh18-0 jmuOnu css-text-901oao css-textHasAncestor-16my406"
                         >
                            page
                         </span>
@@ -194,7 +63,7 @@ exports[`1. renders 1`] = `
         </responsive__LinkContainer>
         <responsive__LinkContainer>
           <div
-            className="c3 responsive__LinkContainer-ac98ik-0 c3 css-view-1dbjc4n"
+            className="responsive__LinkContainer-ac98ik-0 dVQIWv responsive__LinkContainer-ac98ik-0 dVQIWv css-view-1dbjc4n"
           >
             <link__RespLink
               href="?mock-3"
@@ -203,16 +72,16 @@ exports[`1. renders 1`] = `
               underlined={true}
             >
               <a
-                className="c4"
+                className="link__RespLink-sc-1ocvixa-0 eeJpYz"
                 href="?mock-3"
                 target={null}
               >
                 <div
-                  className="css-view-1dbjc4n r-alignItems-1awozwy r-flexDirection-18u37iz r-paddingBottom-xd6kpl r-paddingTop-m611by S3"
+                  className="css-view-1dbjc4n r-alignItems-1awozwy r-flexDirection-18u37iz r-paddingBottom-xd6kpl r-paddingTop-m611by"
                   data-testid="pagination-button-next"
                 >
                   <div
-                    className="css-text-901oao r-color-j7kcqb r-fontFamily-j2s0nr r-fontSize-a023e6 r-height-14g73ha r-lineHeight-fxxt2n r-marginRight-zso239 r-textAlign-1ff274t S4"
+                    className="css-text-901oao r-color-j7kcqb r-fontFamily-j2s0nr r-fontSize-a023e6 r-height-14g73ha r-lineHeight-fxxt2n r-marginRight-zso239 r-textAlign-1ff274t"
                   >
                     <span
                       className="css-text-901oao css-textHasAncestor-16my406"
@@ -220,7 +89,7 @@ exports[`1. renders 1`] = `
                       Next
                       <page-label__ResponsiveLabel>
                         <span
-                          className="c5 page-label__ResponsiveLabel-sc-1m9jh18-0 c5 css-text-901oao css-textHasAncestor-16my406"
+                          className="page-label__ResponsiveLabel-sc-1m9jh18-0 jmuOnu page-label__ResponsiveLabel-sc-1m9jh18-0 jmuOnu css-text-901oao css-textHasAncestor-16my406"
                         >
                            page
                         </span>
@@ -239,64 +108,22 @@ exports[`1. renders 1`] = `
 `;
 
 exports[`2. renders with no results 1`] = `
-.c1 {
-  border-style: solid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 50px;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-top-color: #DBDBDB;
-  border-top-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c2 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 <pagination-container__ContainerWithoutResults>
   <div
-    className="c0 pagination-container__ContainerWithoutResults-csg9hq-1 c0 css-view-1dbjc4n"
+    className="pagination-container__ContainerWithoutResults-csg9hq-1 cAVZPi pagination-container__ContainerWithoutResults-csg9hq-1 cAVZPi css-view-1dbjc4n"
   >
     <pagination-border__BorderWithoutResults>
       <div
-        className="c1 pagination-border__BorderWithoutResults-zd8d3i-1 c1 css-view-1dbjc4n"
+        className="pagination-border__BorderWithoutResults-zd8d3i-1 gskKll pagination-border__BorderWithoutResults-zd8d3i-1 gskKll css-view-1dbjc4n"
       >
         <responsive__LinkContainer>
           <div
-            className="c2 responsive__LinkContainer-ac98ik-0 c2 css-view-1dbjc4n"
+            className="responsive__LinkContainer-ac98ik-0 dVQIWv responsive__LinkContainer-ac98ik-0 dVQIWv css-view-1dbjc4n"
           />
         </responsive__LinkContainer>
         <responsive__LinkContainer>
           <div
-            className="c2 responsive__LinkContainer-ac98ik-0 c2 css-view-1dbjc4n"
+            className="responsive__LinkContainer-ac98ik-0 dVQIWv responsive__LinkContainer-ac98ik-0 dVQIWv css-view-1dbjc4n"
           />
         </responsive__LinkContainer>
       </div>

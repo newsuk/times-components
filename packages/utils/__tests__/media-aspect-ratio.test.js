@@ -1,5 +1,4 @@
 import React from "react";
-import { TcText } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -9,6 +8,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
+import TcText from "../src/tc-text";
 import AspectRatioContainer from "../src/media-aspect-ratio";
 
 addSerializers(

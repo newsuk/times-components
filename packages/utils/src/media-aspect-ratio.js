@@ -1,6 +1,6 @@
 import React from "react";
-import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
+import TcView from "./tc-view";
 
 const AspectRatioContainer = ({ aspectRatio, children }) => {
   const [ratioWidth, ratioHeight] = aspectRatio.split(":");
