@@ -6,17 +6,14 @@ import props from "./key-facts-prop-types";
 
 import { KeyFactsTitle, KeyFactsContainer } from "./styles";
 
-const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
+const KeyFacts = ({ ast, section, headline, articleFlag }) => {
   const {
     children,
     attributes: { title }
   } = ast;
 
   const { children: keyFactsItems } = children[0];
-
-  const articleFlag = isLiveOrBreaking
-    ? isLiveOrBreaking.toLowerCase()
-    : "no flag";
+  console.log(articleFlag, "BIBI ARTICLE FLAG");
 
   return (
     <TrackingContextProvider

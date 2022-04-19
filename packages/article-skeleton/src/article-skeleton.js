@@ -13,6 +13,7 @@ import {
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 
+import { getActiveArticleFlags } from "@times-components/utils";
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
   articleSkeletonDefaultProps,
@@ -36,7 +37,6 @@ import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineRelatedArticles from "./contentModifiers/inline-related-article";
 import insertNativeAd from "./contentModifiers/native-ad";
 import insertInlineAd from "./contentModifiers/inline-ad";
-import { getIsLiveOrBreakingFlag } from "./data-helper";
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -107,7 +107,7 @@ const ArticleSkeleton = ({
     }
   ]);
 
-  const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+  const activeFlags = getActiveArticleFlags(expirableFlags);
 
   return (
     <StickyProvider>
@@ -206,7 +206,7 @@ const ArticleSkeleton = ({
                       template={template}
                       isPreview={isPreview}
                       olympicsKeys={olympicsKeys}
-                      isLiveOrBreaking={isLiveOrBreaking}
+                      activeFlags={activeFlags}
                     />
                   )}
                   <PaywallPortal

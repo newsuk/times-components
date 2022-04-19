@@ -1,10 +1,10 @@
 import get from "lodash.get";
 import { withTrackingContext } from "@times-components/tracking";
 import {
-  getRegistrationType,
-  getSharedStatus,
-  getIsLiveOrBreakingFlag
-} from "../data-helper";
+  getIsLiveOrBreakingFlag,
+  getActiveArticleFlags
+} from "@times-components/utils";
+import { getRegistrationType, getSharedStatus } from "../data-helper";
 
 export default Component =>
   withTrackingContext(Component, {
@@ -20,6 +20,7 @@ export default Component =>
           editionType = isPastSixDays ? "past 6 days" : "current edition";
         }
       }
+      const activeFlags = getActiveArticleFlags(flags);
 
       return {
         articleId: get(data, "id", ""),
@@ -50,8 +51,8 @@ export default Component =>
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
         shared: getSharedStatus(),
-        article_flag: getIsLiveOrBreakingFlag(flags)
-          ? getIsLiveOrBreakingFlag(flags).toLowerCase()
+        article_flag: getIsLiveOrBreakingFlag(activeFlags)
+          ? getIsLiveOrBreakingFlag(activeFlags).toLowerCase()
           : "no flag",
         article_template_name: getIsLiveOrBreakingFlag(flags)
           ? "live template"

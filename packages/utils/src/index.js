@@ -1,6 +1,7 @@
 export * from "./screen";
 export * from "./strings";
 export * from "./scroll-to-element-id";
+export * from "./flag-tracking-helpers";
 
 export { default as clean } from "./props";
 export { default as addMissingProtocol } from "./add-missing-protocol";

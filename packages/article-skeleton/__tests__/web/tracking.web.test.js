@@ -4,17 +4,14 @@ import PropTypes from "prop-types";
 import TestRenderer from "react-test-renderer";
 import mockDate from "mockdate";
 import Link from "@times-components/link";
+import { getIsLiveOrBreakingFlag } from "@times-components/utils";
 import MockedProvider from "../../../provider-test-tools/src/mocked-provider";
 
 import ArticleSkeleton from "../../src/article-skeleton";
 import articleFixture from "../../fixtures/full-article";
 import ArticleLink from "../../src/article-body/article-link";
 import articleSkeletonProps from "../shared-article-skeleton-props";
-import {
-  getRegistrationType,
-  getSharedStatus,
-  getIsLiveOrBreakingFlag
-} from "../../src/data-helper";
+import { getRegistrationType, getSharedStatus } from "../../src/data-helper";
 import shared from "../shared-tracking";
 
 beforeEach(() => {
