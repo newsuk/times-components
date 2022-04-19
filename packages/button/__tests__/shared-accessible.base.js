@@ -13,7 +13,7 @@ jest.mock("@times-components/styleguide", () => () => ({
       white: "#FFFFFF"
     }
   }
-})); 
+}));
 
 export default renderMethod => {
   it("accessible button", () => {

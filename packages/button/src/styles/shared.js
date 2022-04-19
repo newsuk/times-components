@@ -2,12 +2,7 @@
 
 // const { colours, fontFactory } = styleguide();
 
-import {
-
-  fontFactory,
-  colours,
-
-} from "@times-components/styleguide";
+import { fontFactory, colours } from "@times-components/styleguide";
 
 const styles = {
   button: {
