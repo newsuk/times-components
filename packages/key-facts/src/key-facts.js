@@ -14,7 +14,9 @@ const KeyFacts = ({ ast, section, headline, isLiveOrBreaking }) => {
 
   const { children: keyFactsItems } = children[0];
 
-  const articleFlag = isLiveOrBreaking || "no flag";
+  const articleFlag = isLiveOrBreaking
+    ? isLiveOrBreaking.toLowerCase()
+    : "no flag";
 
   return (
     <TrackingContextProvider
