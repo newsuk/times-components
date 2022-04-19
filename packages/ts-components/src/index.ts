@@ -1,3 +1,5 @@
+//mport Styleguide from './components/styleguide/Styleguide';
+
 // General Components
 export { InArticlePuff } from './components/in-article-puff/InArticlePuff';
 export { InfoCard } from './components/in-article-info-card/InfoCard';
@@ -109,6 +111,29 @@ export {
 
 export { UpdatedTimeProvider } from './helpers/time/UpdatedTimeProvider';
 
+//export styleguide from './components/styleguide/Styleguide';
+
+export { styleguide, Animations,
+
+   colours,
+   editionBreakpoints,
+   editionBreakpointWidths,
+   editionMaxWidth,
+   sliceContentMaxWidth,
+   fonts,
+   fontFactory,
+   fontSizes,
+   getEditionBreakpoint,
+   lineHeight,
+   scales,
+   spacing,
+   globalSpacingStyles,
+    tabletRowPadding,
+   themeFactory } from './components/styleguide/Styleguide';
+
+
+
 export {
   default as safeDecodeURIComponent
 } from './utils/safeDecodeURIComponent';
+

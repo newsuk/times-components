@@ -52,6 +52,8 @@ declare module '@times-components/utils' {
     value: string | number
   ) => string;
 
+
+  export const TcView: React.FC<>;
   export const capitalise: (s: string) => string;
   export const stripTags: (input: string, replaceWith: string) => string;
   export const gqlRgbaToStyle: (colour: string | undefined) => string | null;
@@ -97,7 +99,7 @@ declare module '@times-components/styleguide' {
     fontFactory: (v: any) => any;
   };
 
-  export default styleguide;
+  export { styleguide };
 }
 
 declare module '@times-components/button' {

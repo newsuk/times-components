@@ -58,6 +58,7 @@
   "dependencies": {
     "@times-components/styleguide": "3.38.35",
     "@times-components/utils": "6.7.2",
+    "@times-components/ts-components": "1.30.6",
     "prop-types": "15.7.2",
     "react-broadcast": "0.5.2"
   },
