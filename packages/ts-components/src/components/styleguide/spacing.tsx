@@ -2,9 +2,9 @@ const spacingBase = 5;
 
 const spacing = function(multiple: any) {
   return spacingBase * multiple;
-}
+};
 
- const globalSpacingStyles = {
+const globalSpacingStyles = {
   tabletHeadline: {
     marginBottom: spacingBase * 1
   },

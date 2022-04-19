@@ -52,7 +52,6 @@ declare module '@times-components/utils' {
     value: string | number
   ) => string;
 
-
   export const TcView: React.FC<>;
   export const capitalise: (s: string) => string;
   export const stripTags: (input: string, replaceWith: string) => string;

@@ -1,5 +1,5 @@
 export default Object.freeze({
-  large: "large",
-  medium: "medium",
-  xlarge: "xlarge"
+  large: 'large',
+  medium: 'medium',
+  xlarge: 'xlarge'
 });

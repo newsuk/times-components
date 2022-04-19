@@ -1,5 +1,5 @@
-import { TcView } from "@times-components/utils";
-import styled, { keyframes } from "styled-components";
+import { TcView } from '@times-components/utils';
+import styled, { keyframes } from 'styled-components';
 
 const fadingAnimation = keyframes`
   from {

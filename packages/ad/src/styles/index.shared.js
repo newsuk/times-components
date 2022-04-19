@@ -1,5 +1,13 @@
 import { colours, fontFactory, spacing  } from "@times-components/ts-components";
 
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+console.log(colours.functional)
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+
 export const calculateViewBox = ({ height, width }) => {
   if (height >= 90 && width >= 728) {
     return {

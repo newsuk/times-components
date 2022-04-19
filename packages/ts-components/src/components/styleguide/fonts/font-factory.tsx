@@ -1,6 +1,12 @@
-import { styleguide as timesStyleguide} from "../Styleguide";
+import { styleguide as timesStyleguide } from '../Styleguide';
 
-export default (scale: any) => ({ font, fontSize }: {font: any, fontSize:any}) => {
+export default (scale: any) => ({
+  font,
+  fontSize
+}: {
+  font: any;
+  fontSize: any;
+}) => {
   const styleguide = timesStyleguide({ scale });
   return {
     // @ts-ignore

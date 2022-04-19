@@ -1,7 +1,7 @@
-import {sectionColours, secondarySectionColours } from "./colours/section";
-import { functionalColours } from "./colours/functional";
+import { sectionColours, secondarySectionColours } from './colours/section';
+import { functionalColours } from './colours/functional';
 
-import FadeIn from "./Animations";
+import FadeIn from './Animations';
 
 import {
   editionBreakpoints,
@@ -9,15 +9,15 @@ import {
   getEditionBreakpoint,
   editionBreakpointWidths,
   sliceContentMaxWidth
-} from "./breakpoints";
-import timesLineHeightsFactory from "./lineHeight";
-import timesFonts from "./fonts/fonts";
-import timesFontSizes from "./fonts/font-sizes";
-import timesFontFactory from "./fonts/font-factory";
-import themeFactory from "./themeFactory";
+} from './breakpoints';
+import timesLineHeightsFactory from './lineHeight';
+import timesFonts from './fonts/fonts';
+import timesFontSizes from './fonts/font-sizes';
+import timesFontFactory from './fonts/font-factory';
+import themeFactory from './themeFactory';
 
-import scales from "./scales";
-import spacing, { globalSpacingStyles } from "./spacing";
+import scales from './scales';
+import spacing, { globalSpacingStyles } from './spacing';
 
 const colours = {
   functional: functionalColours,
@@ -51,7 +51,7 @@ const styleguide = ({ scale = scales.medium } = {}) => ({
 
 export {
   Animations,
- // breakpoints,
+  // breakpoints,
   colours,
   editionBreakpoints,
   editionBreakpointWidths,
@@ -65,10 +65,9 @@ export {
   scales,
   spacing,
   globalSpacingStyles,
-   tabletRowPadding,
+  tabletRowPadding,
   // tabletWidth,
   // tabletWidthMax,
   themeFactory,
   styleguide
 };
-

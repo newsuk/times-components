@@ -60,9 +60,9 @@ const mapping = {
   }
 };
 // @ts-ignore
-const lineHeightMapping= (scale: any) => mapping[scale];
+const lineHeightMapping = (scale: any) => mapping[scale];
 
-export default (scale: string| undefined) => ({ font, fontSize }: any) => {
+export default (scale: string | undefined) => ({ font, fontSize }: any) => {
   const mapping = lineHeightMapping({ scale });
   return mapping[font][fontSize];
 };

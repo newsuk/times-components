@@ -6,10 +6,10 @@
 //   wide: 1024}
 
 const editionBreakpoints = {
-  huge: "huge",
-  medium: "medium",
-  small: "small",
-  wide: "wide"
+  huge: 'huge',
+  medium: 'medium',
+  small: 'small',
+  wide: 'wide'
 };
 
 const editionBreakpointWidths = {
@@ -41,4 +41,4 @@ export {
   getEditionBreakpoint
 };
 
-//export default widths;
+// export default widths;
