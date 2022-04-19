@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.1](https://github.com/newsuk/times-components/compare/@times-components/context@1.4.0...@times-components/context@1.4.1) (2022-04-19)
+
+
+### Bug Fixes
+
+* **TDP-1777:** Make analytics article_flag data lower case ([#2916](https://github.com/newsuk/times-components/issues/2916)) ([5c4f49a](https://github.com/newsuk/times-components/commit/5c4f49a0ee07224815ed84b707c940e0dc8de39d))
+
+
+
+
+
 # [1.4.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.3.0...@times-components/context@1.4.0) (2022-04-12)
 
 

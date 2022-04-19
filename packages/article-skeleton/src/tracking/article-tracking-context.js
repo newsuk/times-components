@@ -50,7 +50,9 @@ export default Component =>
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
         shared: getSharedStatus(),
-        article_flag: getIsLiveOrBreakingFlag(flags) || "no flag",
+        article_flag: getIsLiveOrBreakingFlag(flags)
+          ? getIsLiveOrBreakingFlag(flags).toLowerCase()
+          : "no flag",
         article_template_name: getIsLiveOrBreakingFlag(flags)
           ? "live template"
           : "standard template"
