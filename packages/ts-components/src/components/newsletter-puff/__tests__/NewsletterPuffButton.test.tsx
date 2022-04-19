@@ -17,6 +17,7 @@ jest.mock("@times-components/button", () => ({
     </button>
   )
 }))
+
 jest.mock("@times-components/styleguide"
 // ,() => () => ({
 //   ...jest.requireActual("@times-components/styleguide"),

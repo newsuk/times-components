@@ -14,6 +14,7 @@ export const NewsletterPuffButton = ({
   updatingSubscription = false,
   onPress
 }: NewsletterPuffProps) => {
+  console.log(1)
   const { fireAnalyticsEvent } = useTrackingContext();
   const handlePress = () => {
     if (!updatingSubscription) {
