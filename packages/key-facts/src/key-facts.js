@@ -13,7 +13,6 @@ const KeyFacts = ({ ast, section, headline, articleFlag }) => {
   } = ast;
 
   const { children: keyFactsItems } = children[0];
-  console.log(articleFlag, "BIBI ARTICLE FLAG");
 
   return (
     <TrackingContextProvider
