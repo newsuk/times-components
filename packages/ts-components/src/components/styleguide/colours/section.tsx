@@ -74,7 +74,7 @@ const secondaryColours = {
   "The Sunday Times Magazine": secondaryColoursBase.thesundaytimesmagazine
 };
 
-export default { ...primaryColoursBase, ...primaryColours };
+export const sectionColours = { ...primaryColoursBase, ...primaryColours };
 export const secondarySectionColours = {
   ...secondaryColoursBase,
   ...secondaryColours

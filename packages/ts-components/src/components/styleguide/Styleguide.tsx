@@ -1,5 +1,5 @@
-import sectionColours, { secondarySectionColours } from "./colours/section";
-import functionalColours from "./colours/functional";
+import {sectionColours, secondarySectionColours } from "./colours/section";
+import { functionalColours } from "./colours/functional";
 
 import FadeIn from "./Animations";
 

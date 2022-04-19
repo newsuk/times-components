@@ -1,4 +1,4 @@
-const functionalColours = {
+export const functionalColours = {
   action: "#006699",
   actionPressed: "#0077B3",
   articleFlagExclusive: "#C51D24",
@@ -31,4 +31,3 @@ const functionalColours = {
   whiteGrey: "#F5F5F5"
 };
 
-export default functionalColours;

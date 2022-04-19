@@ -1,7 +1,5 @@
-
 /* tslint:disable */ 
-
-import sectionColours, { secondarySectionColours } from "./colours/section";
+import { sectionColours, secondarySectionColours } from "./colours/section";
 
 // interface Template {
 //   name: string;
