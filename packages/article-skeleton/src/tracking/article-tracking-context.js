@@ -50,13 +50,9 @@ export default Component =>
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
         shared: getSharedStatus(),
-<<<<<<< HEAD
         article_flag: getIsLiveOrBreakingFlag(flags)
           ? getIsLiveOrBreakingFlag(flags).toLowerCase()
           : "no flag",
-=======
-        article_flag: getIsLiveOrBreakingFlag(flags) ? getIsLiveOrBreakingFlag(flags).toLowerCase() : "no flag",
->>>>>>> Make analytics article_flag data lower case
         article_template_name: getIsLiveOrBreakingFlag(flags)
           ? "live template"
           : "standard template"
