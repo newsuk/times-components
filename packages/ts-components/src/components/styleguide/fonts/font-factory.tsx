@@ -1,4 +1,4 @@
-import styleguide from '../styleguide';
+import styleguide from '../Styleguide';
 import { timesFontSizes } from './fonts';
 import lineHeight from '../lineHeight';
 

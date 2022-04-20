@@ -128,7 +128,7 @@ export {
   globalSpacingStyles,
   tabletRowPadding,
   themeFactory
-} from './components/styleguide/styleguide';
+} from './components/styleguide/Styleguide';
 
 export {
   default as safeDecodeURIComponent

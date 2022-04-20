@@ -10,8 +10,6 @@ import {
 import adConfig from "../fixtures/article-ad-config.json";
 import Ad, { AdComposer } from "../src/ad";
 
-//jest.mock('@times-components/ts-components')
-
 const props = {
   contextUrl: "https://www.thetimes.co.uk",
   section: "news",
