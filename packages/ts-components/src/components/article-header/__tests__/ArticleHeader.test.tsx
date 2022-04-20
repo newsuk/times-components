@@ -1,183 +1,151 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-
-import ArticleHeader from '../ArticleHeader';
 import MockDate from 'mockdate';
 
+import ArticleHeader from '../ArticleHeader';
+
 describe('ArticleHeader', () => {
-  describe('In one calendar day', () => {
-    const updated = '2021-12-31T06:30:00Z';
+  describe('Same calendar day during GMT', () => {
     afterEach(() => MockDate.reset());
-    it('Within the first minute of update - Breaking', () => {
-      MockDate.set('2021-12-31T06:30:00Z');
-      const { baseElement, getByText, queryByTestId } = render(
-        <ArticleHeader
-          updated={updated}
-          breaking="true"
-          headline="This%20is%20the%20headline"
-        />
-      );
-      expect(baseElement).toMatchSnapshot();
-      expect(getByText('BREAKING')).toBeVisible();
-      expect(queryByTestId('UpdatedTime')).toBeTruthy();
-      expect(getByText('6.30am')).toBeVisible();
-      expect(queryByTestId('TimeSincePublishing')).toBeFalsy();
-      expect(queryByTestId('UpdatedDate')).toBeFalsy();
-      expect(getByText('This is the headline')).toBeVisible();
-    });
-    it('Within the first minute of update - Not Breaking', () => {
-      MockDate.set('2021-12-31T06:30:00Z');
-      const { baseElement, getByText, queryByTestId, queryByText } = render(
-        <ArticleHeader
-          updated={updated}
-          breaking="false"
-          headline="This%20is%20the%20headline"
-        />
-      );
-      expect(baseElement).toMatchSnapshot();
-      expect(queryByText('BREAKING')).toBeFalsy();
-      expect(queryByTestId('UpdatedTime')).toBeTruthy();
-      expect(getByText('6.30am')).toBeVisible();
-      expect(queryByTestId('TimeSincePublishing')).toBeFalsy();
-      expect(queryByTestId('UpdatedDate')).toBeFalsy();
-      expect(getByText('This is the headline')).toBeVisible();
-    });
-    it('Within the first minute of update - No headline not breaking', () => {
-      MockDate.set('2021-12-31T06:30:00Z');
-      const { baseElement, getByText, queryByTestId, queryByText } = render(
-        <ArticleHeader updated={updated} />
-      );
-      expect(baseElement).toMatchSnapshot();
-      expect(queryByText('This is the headline')).toBeFalsy();
-      expect(queryByText('BREAKING')).toBeFalsy();
-      expect(queryByTestId('UpdatedTime')).toBeTruthy();
-      expect(getByText('6.30am')).toBeVisible();
-      expect(queryByTestId('TimeSincePublishing')).toBeFalsy();
-      expect(queryByTestId('UpdatedDate')).toBeFalsy();
-    });
-    it('within an hour of updating', () => {
-      MockDate.set('2021-12-31T07:00:00Z');
+
+    const date = '31/12/2021';
+    const time = '06:30';
+
+    it('Within a minute of updating', () => {
+      MockDate.set('2021-12-31T06:30:10Z');
+
       const { getByText, queryByTestId } = render(
-        <ArticleHeader
-          updated={updated}
-          breaking="true"
-          headline="This%20is%20the%20headline"
-        />
+        <ArticleHeader date={date} time={time} />
       );
-      expect(getByText('BREAKING')).toBeVisible();
-      expect(queryByTestId('UpdatedTime')).toBeTruthy();
-      expect(getByText('6.30am')).toBeVisible();
-      expect(queryByTestId('TimeSincePublishing')).toBeTruthy();
-      expect(getByText('30 minutes ago')).toBeVisible();
-      expect(queryByTestId('UpdatedDate')).toBeFalsy();
-      expect(getByText('This is the headline')).toBeVisible();
-    });
-    it('between 1 and 12 hours after update time', () => {
-      MockDate.set('2021-12-31T08:30:00Z');
-      const { getByText, queryByTestId, queryByText } = render(
-        <ArticleHeader
-          updated={updated}
-          breaking="true"
-          headline="This%20is%20the%20headline"
-        />
-      );
-      expect(queryByText('BREAKING')).toBeFalsy();
-      expect(queryByTestId('UpdatedTime')).toBeTruthy();
-      expect(getByText('6.30am')).toBeVisible();
-      expect(queryByTestId('TimeSincePublishing')).toBeTruthy();
-      expect(getByText('2 hours ago')).toBeVisible();
-      expect(queryByTestId('UpdatedDate')).toBeFalsy();
-      expect(getByText('This is the headline')).toBeVisible();
-    });
-    it('after 12 hours but on the same calendar day', () => {
-      MockDate.set('2021-12-31T19:30:00Z');
-      const { getByText, queryByTestId, queryByText } = render(
-        <ArticleHeader
-          updated={updated}
-          breaking="true"
-          headline="This%20is%20the%20headline"
-        />
-      );
-      expect(queryByText('BREAKING')).toBeFalsy();
-      expect(queryByTestId('UpdatedTime')).toBeTruthy();
+
       expect(getByText('6.30am')).toBeVisible();
       expect(queryByTestId('TimeSincePublishing')).toBeFalsy();
-      expect(queryByTestId('UpdatedDate')).toBeFalsy();
+    });
+
+    it('Within an hour of updating', () => {
+      MockDate.set('2021-12-31T07:00:00Z');
+
+      const { getByText } = render(<ArticleHeader date={date} time={time} />);
+
+      expect(getByText('6.30am')).toBeVisible();
+      expect(getByText('30 minutes ago')).toBeVisible();
+    });
+
+    it('Between 1 and 12 hours after updating', () => {
+      MockDate.set('2021-12-31T08:30:00Z');
+
+      const { getByText } = render(<ArticleHeader date={date} time={time} />);
+
+      expect(getByText('6.30am')).toBeVisible();
+      expect(getByText('2 hours ago')).toBeVisible();
+    });
+
+    it('After 12 hours but same calendar day', () => {
+      MockDate.set('2021-12-20T20:30:00Z');
+
+      const { getByText, queryByTestId } = render(
+        <ArticleHeader date={date} time={time} />
+      );
+
+      expect(getByText('6.30am')).toBeVisible();
+      expect(queryByTestId('TimeSincePublishing')).toBeFalsy();
+    });
+
+    it('With breaking flag and headline', () => {
+      MockDate.set('2021-12-31T07:00:00Z');
+
+      const { baseElement, getByText } = render(
+        <ArticleHeader
+          date={date}
+          time={time}
+          breaking="true"
+          headline="This%20is%20the%20headline"
+        />
+      );
+
+      expect(getByText('6.30am')).toBeVisible();
+      expect(getByText('30 minutes ago')).toBeVisible();
+      expect(getByText('BREAKING')).toBeVisible();
       expect(getByText('This is the headline')).toBeVisible();
+
+      expect(baseElement).toMatchSnapshot();
+    });
+
+    it('With breaking flag expired', () => {
+      MockDate.set('2021-12-31T08:30:00Z');
+
+      const { getByText, queryByText } = render(
+        <ArticleHeader date={date} time={time} breaking="true" />
+      );
+
+      expect(getByText('6.30am')).toBeVisible();
+      expect(getByText('2 hours ago')).toBeVisible();
+      expect(queryByText('BREAKING')).toBeFalsy();
     });
   });
-  describe('Across calendar days', () => {
-    const updated = '2021-12-31T23:30:00Z';
+
+  describe('Same calendar day during BST', () => {
     afterEach(() => MockDate.reset());
-    it('within an hour of updating but on a different calendar day', () => {
-      MockDate.set('2022-01-01T00:29:00Z');
-      const { getByTestId, queryByTestId, getByText } = render(
-        <ArticleHeader
-          updated={updated}
-          breaking="true"
-          headline="This%20is%20the%20headline"
-        />
+
+    const date = '20/04/2022';
+    const time = '06:30';
+
+    it('Within a minute of updating', () => {
+      MockDate.set('2022-04-20T06:30:10+01:00');
+
+      const { getByText, queryByTestId } = render(
+        <ArticleHeader date={date} time={time} />
       );
-      expect(getByText('BREAKING')).toBeVisible();
-      expect(queryByTestId('UpdatedTime')).toBeTruthy();
-      expect(getByText('11.30pm')).toBeVisible();
-      expect(getByTestId('TimeSincePublishing')).toBeTruthy();
-      expect(getByTestId('UpdatedDate')).toBeVisible();
-      expect(getByText('December 31 2021')).toBeVisible();
-      expect(getByText('This is the headline')).toBeVisible();
+
+      expect(getByText('6.30am')).toBeVisible();
+      expect(queryByTestId('TimeSincePublishing')).toBeFalsy();
     });
-    it('between 1-12 hours of updating but on a different calendar day', () => {
-      MockDate.set('2022-01-01T02:00:00Z');
-      const { getByTestId, queryByText, queryByTestId, getByText } = render(
-        <ArticleHeader
-          updated={updated}
-          breaking="true"
-          headline="This%20is%20the%20headline"
-        />
-      );
-      expect(queryByText('BREAKING')).toBeFalsy();
-      expect(queryByTestId('UpdatedTime')).toBeTruthy();
-      expect(getByText('11.30pm')).toBeVisible();
-      expect(getByTestId('TimeSincePublishing')).toBeTruthy();
+
+    it('Within an hour of updating', () => {
+      MockDate.set('2022-04-20T07:00:00+01:00');
+
+      const { getByText } = render(<ArticleHeader date={date} time={time} />);
+
+      expect(getByText('6.30am')).toBeVisible();
+      expect(getByText('30 minutes ago')).toBeVisible();
+    });
+
+    it('Between 1 and 12 hours after updating', () => {
+      MockDate.set('2022-04-20T08:30:00+01:00');
+
+      const { getByText } = render(<ArticleHeader date={date} time={time} />);
+
+      expect(getByText('6.30am')).toBeVisible();
       expect(getByText('2 hours ago')).toBeVisible();
-      expect(getByTestId('UpdatedDate')).toBeVisible();
-      expect(getByText('December 31 2021')).toBeVisible();
-      expect(getByText('This is the headline')).toBeVisible();
     });
-    it('after 12 hours but on a different calendar day', () => {
-      MockDate.set('2022-01-01T14:30:00Z');
-      const { getByTestId, queryByText, queryByTestId, getByText } = render(
-        <ArticleHeader
-          updated={updated}
-          breaking="true"
-          headline="This%20is%20the%20headline"
-        />
+
+    it('After 12 hours but same calendar day', () => {
+      MockDate.set('2022-04-20T20:30:00+01:00');
+
+      const { getByText, queryByTestId } = render(
+        <ArticleHeader date={date} time={time} />
       );
-      expect(queryByText('BREAKING')).toBeFalsy();
-      expect(queryByTestId('UpdatedTime')).toBeTruthy();
-      expect(getByText('11.30pm')).toBeVisible();
+
+      expect(getByText('6.30am')).toBeVisible();
       expect(queryByTestId('TimeSincePublishing')).toBeFalsy();
-      expect(getByTestId('UpdatedDate')).toBeVisible();
-      expect(getByText('December 31 2021')).toBeVisible();
-      expect(getByText('This is the headline')).toBeVisible();
     });
-    it('after multiple calendar days', () => {
-      MockDate.set('2022-01-03T14:30:00Z');
-      const { getByTestId, queryByText, queryByTestId, getByText } = render(
-        <ArticleHeader
-          updated={updated}
-          breaking="true"
-          headline="This%20is%20the%20headline"
-        />
-      );
-      expect(queryByText('BREAKING')).toBeFalsy();
-      expect(queryByTestId('UpdatedTime')).toBeTruthy();
-      expect(getByText('11.30pm')).toBeVisible();
-      expect(queryByTestId('TimeSincePublishing')).toBeFalsy();
-      expect(getByTestId('UpdatedDate')).toBeVisible();
+  });
+
+  describe('Different calendar days', () => {
+    afterEach(() => MockDate.reset());
+
+    const date = '31/12/2021';
+    const time = '22:30';
+
+    it('Between 1 and 12 hours after updating', () => {
+      MockDate.set('2022-01-01T02:30:00Z');
+
+      const { getByText } = render(<ArticleHeader date={date} time={time} />);
+
+      expect(getByText('10.30pm')).toBeVisible();
+      expect(getByText('4 hours ago')).toBeVisible();
       expect(getByText('December 31 2021')).toBeVisible();
-      expect(getByText('This is the headline')).toBeVisible();
     });
   });
 });

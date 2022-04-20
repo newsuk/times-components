@@ -31,7 +31,7 @@ export const TimeSincePublishingContainer = styled.div`
   flex-direction: row;
 `;
 
-export const TimeSincePublishing = styled.div<{ isBreaking?: boolean }>`
+export const TimeSincePublishing = styled.div`
   color: ${colours.functional.brandColour};
   font-family: ${fonts.supporting};
   font-size: 14px;
@@ -56,7 +56,8 @@ export const UpdatedTime = styled.div<{ isLessThan13Hours?: boolean }>`
 `;
 
 export const UpdatedDate = styled.div`
-  ${updatedStyle} justify-content: end;
+  ${updatedStyle};
+  justify-content: end;
   padding: 0 4px 0 0;
 `;
 
