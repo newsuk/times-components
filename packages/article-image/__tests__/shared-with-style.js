@@ -1,4 +1,3 @@
-import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -9,8 +8,7 @@ import {
   minimalWebTransform,
   print,
   propsNoChildren,
-  replaceTransform,
-  rnwTransform
+  replaceTransform
 } from "@times-components/jest-serializer";
 import { mount } from "enzyme";
 import shared from "./shared-with-style.base";
@@ -32,8 +30,7 @@ export default () => {
         ...meltNative
       }),
       minimalWebTransform,
-      minimaliseTransform((value, key) => key === "style"),
-      rnwTransform(AppRegistry)
+      minimaliseTransform((value, key) => key === "style")
     )
   );
 

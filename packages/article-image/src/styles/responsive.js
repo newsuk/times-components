@@ -1,8 +1,8 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import { breakpoints, spacing } from "@times-components/styleguide";
 
-export const InsetCaptionContainerStyle = styled(View)`
+export const InsetCaptionContainerStyle = styled(TcView)`
   display: inline-block;
   margin-top: ${spacing(-2)};
   padding-bottom: ${spacing(4)};
@@ -29,7 +29,7 @@ export const InsetCaptionContainerStyle = styled(View)`
   }
 `;
 
-export const InsetImageStyle = styled(View)`
+export const InsetImageStyle = styled(TcView)`
   display: inline-block;
   padding-bottom: ${spacing(4)};
   vertical-align: top;
@@ -50,7 +50,7 @@ export const InsetImageStyle = styled(View)`
   }
 `;
 
-export const InsetCaptionStyle = styled(View)`
+export const InsetCaptionStyle = styled(TcView)`
   padding-left: ${spacing(2)};
 
   @media (min-width: ${breakpoints.medium}px) {
