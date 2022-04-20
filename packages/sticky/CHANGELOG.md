@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.19](https://github.com/newsuk/times-components/compare/@times-components/sticky@0.3.18...@times-components/sticky@0.3.19) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/sticky
+
+
+
+
+
 ## [0.3.18](https://github.com/newsuk/times-components/compare/@times-components/sticky@0.3.17...@times-components/sticky@0.3.18) (2022-04-12)
 
 **Note:** Version bump only for package @times-components/sticky
