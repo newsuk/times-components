@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "@times-components/schema": "0.7.1",
-    "@times-components/styleguide": "3.38.37",
+    "@times-components/styleguide": "3.38.38",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link": "1.2.4",
