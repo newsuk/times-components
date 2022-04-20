@@ -1,6 +1,6 @@
 {
   "name": "@times-components/user-state",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "Selectively render react components based on current user state",
   "main": "dist/user-state",
   "dev": "src/user-state",
@@ -35,7 +35,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
     "@storybook/addon-knobs": "5.3.18",
-    "@times-components/context": "1.4.1",
+    "@times-components/context": "1.5.0",
     "@times-components/utils": "6.8.0",
     "prop-types": "15.7.2"
   },
