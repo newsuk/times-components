@@ -128,7 +128,7 @@ export {
   globalSpacingStyles,
   tabletRowPadding,
   themeFactory,
- styleguido
+  styleguido
 } from './components/styleguide/styleguide';
 
 export {

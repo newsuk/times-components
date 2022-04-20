@@ -60,10 +60,8 @@ const mapping = {
   }
 };
 
-
-
 export default ({ font, fontSize }: any) => {
- // console.log(font, fontSize)
+  // console.log(font, fontSize)
   // @ts-ignore
   return mapping[font][fontSize];
 };

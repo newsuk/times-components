@@ -44,5 +44,3 @@ export default {
   heading4: 20,
   heading5: 19
 };
-
- 

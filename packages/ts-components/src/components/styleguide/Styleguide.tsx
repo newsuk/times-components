@@ -11,12 +11,12 @@ import {
   sliceContentMaxWidth
 } from './breakpoints';
 import lineHeight from './lineHeight';
-import { timesFontFactory, timesFontSizes, fontStyles} from './fonts/fonts';
+import { timesFontFactory, timesFontSizes, fontStyles } from './fonts/fonts';
 import themeFactory from './themeFactory';
 
 import scales from './scales';
 import spacing, { globalSpacingStyles } from './spacing';
-import styleguido from './styleguido'
+import styleguido from './styleguido';
 
 // const {
 //   nativeTablet: tabletWidth,
@@ -50,7 +50,7 @@ export const tabletRowPadding = 20;
 //   spacing
 // });
 // console.log(styleguide)
- //console.log(lineHeight)
+// console.log(lineHeight)
 // console.log(styleguido)
 
 export {
@@ -75,4 +75,4 @@ export {
   styleguido
 };
 
-export default styleguido 
+export default styleguido;
