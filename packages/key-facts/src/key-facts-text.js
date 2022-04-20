@@ -17,7 +17,7 @@ const getTitle = data => {
   return title.length > 0 ? title : " ";
 };
 
-const handleClickEventAnalytics = (fireAnalyticsEvent, title, articleFlag) => {
+const handleClickEventAnalytics = (fireAnalyticsEvent, title, activeFlag) => {
   if (fireAnalyticsEvent) {
     fireAnalyticsEvent({
       action: "Clicked",
@@ -25,7 +25,7 @@ const handleClickEventAnalytics = (fireAnalyticsEvent, title, articleFlag) => {
         event_navigation_name: "in-article component clicked : key moments",
         event_navigation_browsing_method: "click",
         article_parent_name: title,
-        article_flag: articleFlag
+        article_flag: activeFlag
       }
     });
   }
@@ -35,7 +35,7 @@ const KeyFactsText = ({
   listIndex,
   keyFactItem,
   fireAnalyticsEvent,
-  articleFlag
+  activeFlag
 }) => (
   <BulletContainer key={`key-facts-${listIndex}`}>
     <Bullet />
@@ -57,7 +57,7 @@ const KeyFactsText = ({
                     handleClickEventAnalytics(
                       fireAnalyticsEvent,
                       title,
-                      articleFlag
+                      activeFlag
                     );
                   }}
                   href={handleHrefScrollTo(url)}

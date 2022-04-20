@@ -6,7 +6,7 @@ import props from "./key-facts-prop-types";
 
 import { KeyFactsTitle, KeyFactsContainer } from "./styles";
 
-const KeyFacts = ({ ast, section, headline, articleFlag }) => {
+const KeyFacts = ({ ast, section, headline, activeFlag }) => {
   const {
     children,
     attributes: { title }
@@ -24,7 +24,7 @@ const KeyFacts = ({ ast, section, headline, articleFlag }) => {
           component_name: title,
           section_details: `section : ${section}`,
           article_name: headline,
-          article_flag: articleFlag
+          article_flag: activeFlag
         }
       }}
       scrolledEvent={{
@@ -43,7 +43,7 @@ const KeyFacts = ({ ast, section, headline, articleFlag }) => {
               listIndex={index}
               keyFactItem={keyFactItem}
               fireAnalyticsEvent={fireAnalyticsEvent}
-              articleFlag={articleFlag}
+              activeFlag={activeFlag}
             />
           ))}
         </KeyFactsContainer>

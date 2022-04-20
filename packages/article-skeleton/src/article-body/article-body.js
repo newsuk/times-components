@@ -17,10 +17,7 @@ import PullQuote from "@times-components/pull-quote";
 import { colours, spacing } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import renderTrees from "@times-components/markup-forest";
-import {
-  AspectRatioContainer,
-  getIsLiveOrBreakingFlag
-} from "@times-components/utils";
+import { AspectRatioContainer } from "@times-components/utils";
 import {
   ArticleHeader,
   FetchProvider,
@@ -110,7 +107,7 @@ const renderers = ({
   isLiveOrBreaking,
   section,
   articleHeadline,
-  activeFlags
+  activeFlag
 }) => ({
   ...coreRenderers,
   ad(key) {
@@ -497,16 +494,14 @@ const renderers = ({
     );
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {
-    const articleFlag = getIsLiveOrBreakingFlag(activeFlags)
-      ? getIsLiveOrBreakingFlag(activeFlags).toLowerCase()
-      : "no flag";
+    console.log(activeFlag, "ACTIVE FLAG FROM ARTICLE BODY");
     return (
       <KeyFacts
         key={key}
         ast={node}
         section={section}
         headline={articleHeadline}
-        articleFlag={articleFlag}
+        activeFlag={activeFlag}
       />
     );
   },
@@ -634,7 +629,7 @@ const ArticleBody = ({
   olympicsKeys,
   isLiveOrBreaking,
   articleHeadline,
-  activeFlags
+  activeFlag
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -648,7 +643,7 @@ const ArticleBody = ({
       isLiveOrBreaking,
       section,
       articleHeadline,
-      activeFlags
+      activeFlag
     })
   );
 

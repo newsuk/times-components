@@ -16,13 +16,22 @@ export const getIsLiveOrBreakingFlag = flags => {
   return isObject && findFlag ? findFlag.type : findFlag;
 };
 
-export const getActiveArticleFlags = flags => {
-  if (!flags) {
-    return [];
-  }
-  return flags.filter(
+export const getActiveArticleFlag = flags => {
+  const activeFlags = flags.filter(
     flag =>
       flag.expiryTime === null ||
       new Date().getTime() < new Date(flag.expiryTime).getTime()
   );
+  let isObject;
+  const findFlag =
+    activeFlags &&
+    activeFlags.find(flag => {
+      if (typeof flag === "string") {
+        isObject = false;
+        return flag.toLowerCase();
+      }
+      isObject = true;
+      return flag.type.toLowerCase();
+    });
+  return isObject && findFlag ? findFlag.type : findFlag;
 };

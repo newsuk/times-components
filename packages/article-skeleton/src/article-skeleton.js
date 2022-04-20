@@ -13,7 +13,7 @@ import {
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 
-import { getActiveArticleFlags } from "@times-components/utils";
+import { getActiveArticleFlag } from "@times-components/utils";
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
   articleSkeletonDefaultProps,
@@ -107,7 +107,7 @@ const ArticleSkeleton = ({
     }
   ]);
 
-  const activeFlags = getActiveArticleFlags(expirableFlags);
+  const activeFlag = getActiveArticleFlag(expirableFlags) || "no flag";
 
   return (
     <StickyProvider>
@@ -206,7 +206,7 @@ const ArticleSkeleton = ({
                       template={template}
                       isPreview={isPreview}
                       olympicsKeys={olympicsKeys}
-                      activeFlags={activeFlags}
+                      activeFlag={activeFlag}
                     />
                   )}
                   <PaywallPortal
