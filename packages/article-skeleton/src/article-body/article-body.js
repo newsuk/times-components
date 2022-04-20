@@ -494,7 +494,6 @@ const renderers = ({
     );
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {
-    console.log(activeFlag, "ACTIVE FLAG FROM ARTICLE BODY");
     return (
       <KeyFacts
         key={key}
