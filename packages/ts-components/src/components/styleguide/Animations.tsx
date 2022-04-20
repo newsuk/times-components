@@ -15,4 +15,8 @@ const FadeIn = styled(TcView)`
   animation: ${fadingAnimation} 0.3s ease-in-out;
 `;
 
-export default FadeIn;
+const Animations = {
+  FadeIn
+};
+
+export default Animations;

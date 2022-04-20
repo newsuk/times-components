@@ -1,7 +1,7 @@
-import { sectionColours, secondarySectionColours } from './colours/section';
-import { functionalColours } from './colours/functional';
+import 'react';
 
-import FadeIn from './Animations';
+import colours from  "./colours/colours";
+import Animations from './Animations';
 
 import {
   editionBreakpoints,
@@ -11,24 +11,15 @@ import {
   sliceContentMaxWidth
 } from './breakpoints';
 import timesLineHeightsFactory from './lineHeight';
-import timesFonts from './fonts/fonts';
+import fonts  from './fonts/fonts';
 import timesFontSizes from './fonts/font-sizes';
-import timesFontFactory from './fonts/font-factory';
+import { timesFontFactory } from './fonts/font-factory';
 import themeFactory from './themeFactory';
 
 import scales from './scales';
-import spacing, { globalSpacingStyles } from './spacing';
+import spacing, { globalSpacingStyles } 
+from './spacing';
 
-const colours = {
-  functional: functionalColours,
-  secondarySectionColours,
-  section: sectionColours
-};
-
-const Animations = {
-  FadeIn
-};
-const fonts = timesFonts;
 const fontFactory = timesFontFactory;
 const fontSizes = timesFontSizes;
 const lineHeight = timesLineHeightsFactory;
@@ -48,6 +39,8 @@ const styleguide = ({ scale = scales.medium } = {}) => ({
   lineHeight: timesLineHeightsFactory(scale),
   spacing
 });
+
+export default styleguide;
 
 export {
   Animations,
@@ -69,5 +62,6 @@ export {
   // tabletWidth,
   // tabletWidthMax,
   themeFactory,
-  styleguide
 };
+
+

@@ -1,5 +1,3 @@
-// mport Styleguide from './components/styleguide/Styleguide';
-
 // General Components
 export { InArticlePuff } from './components/in-article-puff/InArticlePuff';
 export { InfoCard } from './components/in-article-info-card/InfoCard';
@@ -111,10 +109,9 @@ export {
 
 export { UpdatedTimeProvider } from './helpers/time/UpdatedTimeProvider';
 
-// export styleguide from './components/styleguide/Styleguide';
-
+//styleguide
 export {
-  styleguide,
+  default as styleguide,
   Animations,
   colours,
   editionBreakpoints,
@@ -131,7 +128,7 @@ export {
   globalSpacingStyles,
   tabletRowPadding,
   themeFactory
-} from './components/styleguide/Styleguide';
+} from './components/styleguide/styleguide';
 
 export {
   default as safeDecodeURIComponent

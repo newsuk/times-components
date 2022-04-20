@@ -1,17 +1,29 @@
-import { styleguide as timesStyleguide } from '../Styleguide';
+import * as styleguide from '../styleguide';
+//import  fonts  from './fonts'
 
-export default (scale: any) => ({
+console.log('ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ');
+console.log('ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ');
+console.log('ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ');
+console.log(styleguide);
+//console.log(Animations);
+console.log('ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ');
+console.log('ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ');
+console.log('ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ');
+
+export const timesFontFactory = (scale: any) => ({
   font,
   fontSize
 }: {
   font: any;
   fontSize: any;
 }) => {
-  const styleguide = timesStyleguide({ scale });
+  //const styles = styleguide({ scale });
+console.log(scale,   font,
+  fontSize)
   return {
     // @ts-ignore
-    fontFamily: styleguide.fonts[font],
-    fontSize: styleguide.fontSizes[fontSize],
-    lineHeight: styleguide.lineHeight({ font, fontSize })
+    // fontFamily: styles.fonts[font],
+    // fontSize: styles.fontSizes[fontSize],
+    // lineHeight: styles.lineHeight({ font, fontSize })
   };
 };

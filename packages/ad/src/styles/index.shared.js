@@ -1,12 +1,18 @@
-import { colours, fontFactory, spacing  } from "@times-components/ts-components";
+import { styleguide, Animations, ArticleFlag } from "@times-components/ts-components";
 
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log(colours.functional)
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+
+const {colours, fontFactory, spacing} = styleguide()
+
+// console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+// console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+// console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+// console.log(colours)
+// console.log(fontFactory)
+// console.log(spacing)
+// console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+// console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+// console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+
 
 export const calculateViewBox = ({ height, width }) => {
   if (height >= 90 && width >= 728) {
