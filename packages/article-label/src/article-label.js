@@ -1,16 +1,19 @@
 import React from "react";
-import { checkStylesForUnits, gqlRgbaToHex, TcText } from "@times-components/utils";
+import {
+  checkStylesForUnits,
+  gqlRgbaToHex,
+  TcText
+} from "@times-components/utils";
 import PropTypes from "prop-types";
 import styles from "./style";
 
-const articleStyle = (color) => {
-  return {...checkStylesForUnits(styles.title), color: gqlRgbaToHex(color) || color};
-};
+const articleStyle = color => ({
+  ...checkStylesForUnits(styles.title),
+  color: gqlRgbaToHex(color) || color
+});
 
 const ArticleLabel = ({ color, title }) => (
-  <TcText style={articleStyle(color)}>
-    {title.toUpperCase()}
-  </TcText>
+  <TcText style={articleStyle(color)}>{title.toUpperCase()}</TcText>
 );
 
 ArticleLabel.propTypes = {
