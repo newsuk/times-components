@@ -87,6 +87,7 @@ declare module '@times-components/styleguide' {
   export const spacing: (multiple: number) => number;
   export const breakpoints: Breakpoints;
   export const colours: Colours;
+  export const tabletRowPadding: number;
 
   export const scales: {
     large: string;
@@ -99,6 +100,7 @@ declare module '@times-components/styleguide' {
   };
 
   export { styleguide };
+  export default styleguide;
 }
 
 declare module '@times-components/button' {

@@ -1,18 +1,7 @@
-import { styleguido, Animations, ArticleFlag } from "@times-components/ts-components";
+import { styleguide } from "@times-components/ts-components";
 
 
-const {colours, fontFactory, spacing} = styleguido()
-
-// console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-// console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-// console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-// console.log(colours)
-// console.log(fontFactory)
-// console.log(spacing)
-// console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-// console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-// console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-
+const {colours, fontFactory, spacing} = styleguide()
 
 export const calculateViewBox = ({ height, width }) => {
   if (height >= 90 && width >= 728) {
