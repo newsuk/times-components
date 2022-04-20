@@ -64,7 +64,7 @@ export const UpdatedDate = styled.div`
 export const Divider = styled.div`
   background-color: ${colours.functional.greyLabel};
   width: 1px;
-  margin: 2px 8px 6px 12px;
+  margin: 2px 8px 6px 8px;
 `;
 
 export const Headline = styled.h2`
