@@ -1,18 +1,18 @@
 import React from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
+import TcView from "./tc-view";
 
 const AspectRatioContainer = ({ aspectRatio, children }) => {
   const [ratioWidth, ratioHeight] = aspectRatio.split(":");
   const aspectRatioPercent = (ratioHeight / ratioWidth) * 100;
   return (
-    <View
+    <TcView
       style={{ paddingBottom: `${aspectRatioPercent}%`, position: "relative" }}
     >
-      <View style={{ height: "100%", position: "absolute", width: "100%" }}>
+      <TcView style={{ height: "100%", position: "absolute", width: "100%" }}>
         {children}
-      </View>
-    </View>
+      </TcView>
+    </TcView>
   );
 };
 
