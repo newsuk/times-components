@@ -1,7 +1,7 @@
-import { styleguide, Animations, ArticleFlag } from "@times-components/ts-components";
+import { styleguido, Animations, ArticleFlag } from "@times-components/ts-components";
 
 
-const {colours, fontFactory, spacing} = styleguide()
+const {colours, fontFactory, spacing} = styleguido()
 
 // console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
 // console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')

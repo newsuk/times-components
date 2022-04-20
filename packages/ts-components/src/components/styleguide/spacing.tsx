@@ -1,6 +1,6 @@
 const spacingBase = 5;
 
-const spacing = function(multiple: any) {
+const spacing = (multiple: any) => {
   return spacingBase * multiple;
 };
 
@@ -13,7 +13,7 @@ const globalSpacingStyles = {
   }
 };
 
-export default function(multiple: any) {
+export default (multiple: any) => {
   return `${spacing(multiple)}px`;
-}
+};
 export { globalSpacingStyles };

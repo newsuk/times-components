@@ -109,7 +109,7 @@ export {
 
 export { UpdatedTimeProvider } from './helpers/time/UpdatedTimeProvider';
 
-//styleguide
+// styleguide
 export {
   default as styleguide,
   Animations,
@@ -127,7 +127,8 @@ export {
   spacing,
   globalSpacingStyles,
   tabletRowPadding,
-  themeFactory
+  themeFactory,
+ styleguido
 } from './components/styleguide/styleguide';
 
 export {

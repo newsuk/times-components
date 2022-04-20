@@ -1,4 +1,4 @@
-const fontSizes = {
+export default {
   articleHeadline: 45,
   articleMeta: 15,
   body: 18,
@@ -45,4 +45,4 @@ const fontSizes = {
   heading5: 19
 };
 
-export default fontSizes;
+ 

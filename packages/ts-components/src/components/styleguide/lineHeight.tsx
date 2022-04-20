@@ -59,10 +59,11 @@ const mapping = {
     tertiary: 17
   }
 };
-// @ts-ignore
-const lineHeightMapping = (scale: any) => mapping[scale];
 
-export default (scale: string | undefined) => ({ font, fontSize }: any) => {
-  const mapping = lineHeightMapping({ scale });
+
+
+export default ({ font, fontSize }: any) => {
+ // console.log(font, fontSize)
+  // @ts-ignore
   return mapping[font][fontSize];
 };

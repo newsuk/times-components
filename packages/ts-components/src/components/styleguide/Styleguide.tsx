@@ -1,6 +1,6 @@
 import 'react';
 
-import colours from  "./colours/colours";
+import colours from './colours/colours';
 import Animations from './Animations';
 
 import {
@@ -10,37 +10,48 @@ import {
   editionBreakpointWidths,
   sliceContentMaxWidth
 } from './breakpoints';
-import timesLineHeightsFactory from './lineHeight';
-import fonts  from './fonts/fonts';
-import timesFontSizes from './fonts/font-sizes';
-import { timesFontFactory } from './fonts/font-factory';
+import lineHeight from './lineHeight';
+import { timesFontFactory, timesFontSizes, fontStyles} from './fonts/fonts';
 import themeFactory from './themeFactory';
 
 import scales from './scales';
-import spacing, { globalSpacingStyles } 
-from './spacing';
+import spacing, { globalSpacingStyles } from './spacing';
+import styleguido from './styleguido'
 
-const fontFactory = timesFontFactory;
-const fontSizes = timesFontSizes;
-const lineHeight = timesLineHeightsFactory;
 // const {
 //   nativeTablet: tabletWidth,
 //   nativeTabletWide: tabletWidthMax
 // } = breakpoints;
-const tabletRowPadding = 20;
+export const tabletRowPadding = 20;
+// ({ scale = scales.medium } = {}) => ({
+// export default ({scale = scales.medium} = {}) => {
+//   // @ts-ignore
+//   return {
+//   Animations,
+//   colours,
+//   fontFactory: timesFontFactory(scale),
+//   fonts: fontStyles,
+//   // @ts-ignore
+//   fontSizes: timesFontSizes[scale],
+//   lineHeight: timesLineHeightsFactory(scale),
+//   spacing
+// }
 
-const styleguide = ({ scale = scales.medium } = {}) => ({
-  Animations,
-  colours,
-  fontFactory: timesFontFactory(scale),
-  fonts,
-  // @ts-ignore
-  fontSizes: timesFontSizes[scale],
-  lineHeight: timesLineHeightsFactory(scale),
-  spacing
-});
+// };
 
-export default styleguide;
+// const styleguide = () => ({
+//   Animations,
+//   colours,
+//   fontFactory: timesFontFactory(scales.medium),
+//   fonts: fontStyles,
+//   // @ts-ignore
+//   fontSizes: timesFontSizes[scale],
+//   lineHeight: timesLineHeightsFactory(scales.medium),
+//   spacing
+// });
+// console.log(styleguide)
+ //console.log(lineHeight)
+// console.log(styleguido)
 
 export {
   Animations,
@@ -50,18 +61,18 @@ export {
   editionBreakpointWidths,
   editionMaxWidth,
   sliceContentMaxWidth,
-  fonts,
-  fontFactory,
-  fontSizes,
+  fontStyles as fonts,
+  timesFontFactory as fontFactory,
+  timesFontSizes as fontSizes,
   getEditionBreakpoint,
   lineHeight,
   scales,
   spacing,
   globalSpacingStyles,
-  tabletRowPadding,
   // tabletWidth,
   // tabletWidthMax,
   themeFactory,
+  styleguido
 };
 
-
+export default styleguido 

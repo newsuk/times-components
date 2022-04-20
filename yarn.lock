@@ -3863,6 +3863,15 @@
     lodash.get "4.4.2"
     prop-types "15.7.2"
 
+"@times-components/responsive@0.7.11":
+  version "0.7.11"
+  resolved "https://registry.yarnpkg.com/@times-components/responsive/-/responsive-0.7.11.tgz#1fd4ed07da8068e379ff84ffdb95b8245cc98551"
+  integrity sha512-slni65bmM61tsf3EoqgrjUJI/8MmHm41PdJ3w7siI8dgv+evMpUUR4KwgFnN/KOZj2LRbC8ryGyb/3kWV4mOxg==
+  dependencies:
+    "@times-components/styleguide" "3.38.35"
+    "@times-components/utils" "6.7.2"
+    prop-types "15.7.2"
+
 "@times-components/slice-layout@0.47.29":
   version "0.47.29"
   resolved "https://registry.yarnpkg.com/@times-components/slice-layout/-/slice-layout-0.47.29.tgz#1af09150c7331fd9b4856a046a63c5bff1c3018d"
@@ -3884,6 +3893,14 @@
   version "3.38.35"
   resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.38.35.tgz#59d0de4f4bfa3e9945d5d8441e3edcc770010455"
   integrity sha512-MLaHAAn63pQR4U41o/ObpuvnzNHy+fMxiDqPk93FW1Rq3ZYRE77oSVoa0bkPTipr3DUVqhnSM5bHKvQAraDDcA==
+  dependencies:
+    prop-types "15.7.2"
+    styled-components "4.3.2"
+
+"@times-components/styleguide@3.38.37":
+  version "3.38.37"
+  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.38.37.tgz#54765643d34fd8e319f565a4863d53d906cada09"
+  integrity sha512-cquHQjO2cspK/1WRRrpEqqZasViSNdsW80heYmB7LX3ujMs3cxrqe8uL7Dizg5BVJfhbRaCtBL5dpgQahQDj0w==
   dependencies:
     prop-types "15.7.2"
     styled-components "4.3.2"
@@ -3938,6 +3955,24 @@
     lodash.get "4.4.2"
     react "16.9.0"
     styled-components "4.3.2"
+
+"@times-components/utils@6.7.2":
+  version "6.7.2"
+  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-6.7.2.tgz#1e85d425ecdff096ec17a1c0c5c3c58708ef982a"
+  integrity sha512-YSzWmt8LZycRBXbqW+URp1njeu58G+9L9CzcVjmehMi7nwrZRK2wVwujafz7SQbl9qeEliJieMLJhirT0g9sBQ==
+  dependencies:
+    "@times-components/schema" "0.7.1"
+    "@times-components/styleguide" "3.38.35"
+    apollo-cache-inmemory "1.5.1"
+    apollo-client "2.5.1"
+    apollo-link "1.2.4"
+    apollo-link-http "1.5.14"
+    apollo-link-persisted-queries "0.2.2"
+    lodash.omitby "4.6.0"
+    prop-types "15.7.2"
+    react-native "0.61.5"
+    styled-components "4.3.2"
+    unfetch "^3.0.0"
 
 "@times-components/video-label@2.5.3":
   version "2.5.3"
