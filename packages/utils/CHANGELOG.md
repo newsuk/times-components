@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.8.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.7.2...@times-components/utils@6.8.0) (2022-04-20)
+
+
+### Features
+
+* **TDP-1716:** remove react native from utils ([#2915](https://github.com/newsuk/times-components/issues/2915)) ([647388c](https://github.com/newsuk/times-components/commit/647388c28f6e869be5cb0eb9d85685bec192c723))
+
+
+
+
+
 ## [6.7.2](https://github.com/newsuk/times-components/compare/@times-components/utils@6.7.1...@times-components/utils@6.7.2) (2022-04-12)
 
 **Note:** Version bump only for package @times-components/utils
