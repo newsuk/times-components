@@ -30,6 +30,21 @@ exports[`1. mobile primary image with caption and credits 1`] = `
 }
 
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-left: 10px;
 }
 
@@ -40,85 +55,144 @@ exports[`1. mobile primary image with caption and credits 1`] = `
 }
 
 Array [
-  <div
-    className="css-view-1dbjc4n"
-  >
-    <TimesImage
-      accessibilityLabel="Some caption"
-      aspectRatio={1.25}
-      caption={
-        <Caption
-          credits="Some credits"
-          text="Some caption"
-        />
-      }
-      disablePlaceholder={false}
-      fadeImageIn={false}
-      highResSize={null}
-      lowResSize={null}
-      onImagePress={null}
-      rounded={false}
-      uri="https://img/someImage"
-    />
-  </div>,
-  <div
-    className="css-view-1dbjc4n"
-  >
-    <responsive__InsetCaptionStyle>
-      <StyledComponent
-        forwardedComponent={
-          Object {
-            "$$typeof": Symbol(react.forward_ref),
-            "attrs": Array [],
-            "componentStyle": ComponentStyle {
-              "componentId": "responsive__InsetCaptionStyle-sc-1io40fc-2",
-              "isStatic": true,
-              "lastClassName": "c2",
-              "rules": Array [
-                "padding-left:",
-                "10px",
-                ";@media (min-width:",
-                "768",
-                "px){padding-left:0px;}",
-              ],
-            },
-            "displayName": "responsive__InsetCaptionStyle",
-            "foldedComponentIds": Array [],
-            "render": [Function],
-            "styledComponentId": "responsive__InsetCaptionStyle-sc-1io40fc-2",
-            "target": [Function],
-            "toString": [Function],
-            "warnTooManyClasses": [Function],
-            "withComponent": [Function],
-          }
+  <tc-view__TcView>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "tc-view__TcView-nuazoi-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+            ],
+          },
+          "displayName": "tc-view__TcView",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "tc-view__TcView-nuazoi-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
         }
-        forwardedRef={null}
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
       >
-        <div
-          className="c2 responsive__InsetCaptionStyle-sc-1io40fc-2 c2 css-view-1dbjc4n"
-        >
-          <div
-            className="css-view-1dbjc4n"
+        <TimesImage
+          accessibilityLabel="Some caption"
+          aspectRatio={1.25}
+          caption={
+            <Caption
+              credits="Some credits"
+              text="Some caption"
+            />
+          }
+          disablePlaceholder={false}
+          fadeImageIn={false}
+          highResSize={null}
+          lowResSize={null}
+          onImagePress={null}
+          rounded={false}
+          uri="https://img/someImage"
+        />
+      </div>
+    </StyledComponent>
+  </tc-view__TcView>,
+  <tc-view__TcView>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "tc-view__TcView-nuazoi-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+            ],
+          },
+          "displayName": "tc-view__TcView",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "tc-view__TcView-nuazoi-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
+      >
+        <responsive__InsetCaptionStyle>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "responsive__InsetCaptionStyle-sc-1io40fc-2",
+                  "isStatic": true,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                    "padding-left:",
+                    "10px",
+                    ";@media (min-width:",
+                    "768",
+                    "px){padding-left:0px;}",
+                  ],
+                },
+                "displayName": "responsive__InsetCaptionStyle",
+                "foldedComponentIds": Array [
+                  "tc-view__TcView-nuazoi-0",
+                ],
+                "render": [Function],
+                "styledComponentId": "responsive__InsetCaptionStyle-sc-1io40fc-2",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
           >
             <div
-              className="css-view-1dbjc4n r-paddingTop-m611by"
+              className="c2"
             >
               <div
-                className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                className="css-view-1dbjc4n"
               >
-                Some caption
-              </div>
-              <div
-                className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-              >
-                SOME CREDITS
+                <div
+                  className="css-view-1dbjc4n r-paddingTop-m611by"
+                >
+                  <div
+                    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                  >
+                    Some caption
+                  </div>
+                  <div
+                    className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+                  >
+                    SOME CREDITS
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </StyledComponent>
-    </responsive__InsetCaptionStyle>
-  </div>,
+          </StyledComponent>
+        </responsive__InsetCaptionStyle>
+      </div>
+    </StyledComponent>
+  </tc-view__TcView>,
 ]
 `;
 
@@ -152,48 +226,104 @@ exports[`2. secondary image with caption and credits 1`] = `
 }
 
 Array [
-  <div
-    className="css-view-1dbjc4n r-width-1f720gc"
-  >
-    <TimesImage
-      accessibilityLabel="Another caption"
-      aspectRatio={1.5}
-      caption={
-        <Caption
-          credits="Other credits"
-          text="Another caption"
-        />
+  <tc-view__TcView>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "tc-view__TcView-nuazoi-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+            ],
+          },
+          "displayName": "tc-view__TcView",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "tc-view__TcView-nuazoi-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
       }
-      disablePlaceholder={false}
-      fadeImageIn={false}
-      highResSize={null}
-      lowResSize={null}
-      onImagePress={null}
-      rounded={false}
-      uri="https://img/someImage"
-    />
-  </div>,
-  <div
-    className="css-view-1dbjc4n r-paddingLeft-1hfyk0a r-paddingTop-wk8lta r-width-1f720gc"
-  >
-    <div
-      className="css-view-1dbjc4n"
+      forwardedRef={null}
     >
       <div
-        className="css-view-1dbjc4n r-paddingTop-wk8lta"
+        className="c0"
+      >
+        <TimesImage
+          accessibilityLabel="Another caption"
+          aspectRatio={1.5}
+          caption={
+            <Caption
+              credits="Other credits"
+              text="Another caption"
+            />
+          }
+          disablePlaceholder={false}
+          fadeImageIn={false}
+          highResSize={null}
+          lowResSize={null}
+          onImagePress={null}
+          rounded={false}
+          uri="https://img/someImage"
+        />
+      </div>
+    </StyledComponent>
+  </tc-view__TcView>,
+  <tc-view__TcView>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "tc-view__TcView-nuazoi-0",
+            "isStatic": true,
+            "lastClassName": "c0",
+            "rules": Array [
+              "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+            ],
+          },
+          "displayName": "tc-view__TcView",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "tc-view__TcView-nuazoi-0",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="c0"
       >
         <div
-          className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+          className="css-view-1dbjc4n"
         >
-          Another caption
-        </div>
-        <div
-          className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-        >
-          OTHER CREDITS
+          <div
+            className="css-view-1dbjc4n"
+          >
+            <div
+              className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+            >
+              Another caption
+            </div>
+            <div
+              className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+            >
+              OTHER CREDITS
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>,
+    </StyledComponent>
+  </tc-view__TcView>,
 ]
 `;

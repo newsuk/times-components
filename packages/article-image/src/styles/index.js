@@ -1,4 +1,3 @@
-import { StyleSheet } from "react-native";
 import {
   spacing,
   tabletRowPadding,
@@ -11,7 +10,7 @@ const containerShared = {
   width: tabletWidth - tabletRowPadding
 };
 
-const styles = StyleSheet.create({
+const styles = {
   container: {
     paddingTop: 0
   },
@@ -77,6 +76,6 @@ const styles = StyleSheet.create({
   secondaryImage: {
     width: "50%"
   }
-});
+};
 
 export default styles;

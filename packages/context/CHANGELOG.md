@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.4.1...@times-components/context@1.5.0) (2022-04-20)
+
+
+### Features
+
+* **TDP-1689:** removed react-native ([#2920](https://github.com/newsuk/times-components/issues/2920)) ([5bb1a7d](https://github.com/newsuk/times-components/commit/5bb1a7dc94b6ec766c931ca54d3bebcadbc3c31d))
+
+
+
+
+
 ## [1.4.1](https://github.com/newsuk/times-components/compare/@times-components/context@1.4.0...@times-components/context@1.4.1) (2022-04-19)
 
 
