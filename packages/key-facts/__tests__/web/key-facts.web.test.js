@@ -20,7 +20,7 @@ const props = {
   headline: "some headline",
   section: "news",
   ast: data,
-  isLiveOrBreaking: "breaking",
+  activeFlag: "breaking",
   analyticsStream
 };
 

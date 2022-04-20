@@ -28,10 +28,10 @@ export const getActiveArticleFlag = flags => {
     activeFlags.find(flag => {
       if (typeof flag === "string") {
         isObject = false;
-        return flag.toLowerCase();
+        return flag
       }
       isObject = true;
-      return flag.type.toLowerCase();
+      return flag.type
     });
   return isObject && findFlag ? findFlag.type : findFlag;
 };

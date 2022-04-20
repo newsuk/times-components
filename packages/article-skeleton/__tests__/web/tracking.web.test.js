@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import TestRenderer from "react-test-renderer";
 import mockDate from "mockdate";
 import Link from "@times-components/link";
-import { getIsLiveOrBreakingFlag } from "@times-components/utils";
 import MockedProvider from "../../../provider-test-tools/src/mocked-provider";
 
 import ArticleSkeleton from "../../src/article-skeleton";
@@ -63,14 +62,6 @@ describe("helper functions", () => {
 
   it("getSharedStatus helper function", () => {
     expect(getSharedStatus()).toEqual("no");
-  });
-
-  it("getIsLiveOrBreakingFlag helper function", () => {
-    expect(getIsLiveOrBreakingFlag([{ type: "LIVE" }])).toEqual("LIVE");
-  });
-
-  it("getIsLiveOrBreakingFlag helper function", () => {
-    expect(getIsLiveOrBreakingFlag(["LIVE"])).toEqual("LIVE");
   });
 });
 

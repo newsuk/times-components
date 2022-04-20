@@ -107,7 +107,7 @@ const ArticleSkeleton = ({
     }
   ]);
 
-  const activeFlag = getActiveArticleFlag(expirableFlags) || "no flag";
+  const activeFlag = getActiveArticleFlag(expirableFlags) ?  getActiveArticleFlag(expirableFlags).toLowerCase() : "no flag";
 
   return (
     <StickyProvider>
