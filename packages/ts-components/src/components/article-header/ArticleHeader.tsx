@@ -1,15 +1,12 @@
 import React from 'react';
 import {
-  // parse,
+  parse,
   format,
   differenceInSeconds,
   differenceInCalendarDays,
   formatDistanceStrict
 } from 'date-fns';
-import {
-  // zonedTimeToUtc,
-  utcToZonedTime
-} from 'date-fns-tz';
+import { zonedTimeToUtc } from 'date-fns-tz';
 
 import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
 import safeDecodeURIComponent from '../../utils/safeDecodeURIComponent';
@@ -37,20 +34,16 @@ const anchorString = (updateTxt = '', headlineTxt = '') => {
 };
 
 const ArticleHeader: React.FC<{
-  updated: string;
-  // date: string;
-  // time: string;
+  date: string;
+  time: string;
   breaking?: string;
   headline?: string;
-}> = ({ updated, breaking, headline }) => {
+}> = ({ date, time, breaking, headline }) => {
   const currentDateTime = new Date();
 
-  // const updated = `${date} ${time}`;
-  // const parsedDate = parse(updated, 'dd/MM/yyyy HH:mm', new Date());
-  // const updatedDate = zonedTimeToUtc(parsedDate, 'Europe/London');
-
-  const updatedDate = new Date(updated);
-  const parsedDate = utcToZonedTime(updatedDate, 'Europe/London');
+  const updated = `${date} ${time}`;
+  const parsedDate = parse(updated, 'dd/MM/yyyy HH:mm', new Date());
+  const updatedDate = zonedTimeToUtc(parsedDate, 'Europe/London');
 
   const timeSincePublishing =
     formatDistanceStrict(updatedDate, currentDateTime, {
