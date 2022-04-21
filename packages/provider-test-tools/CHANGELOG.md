@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.26.2](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.26.1...@times-components/provider-test-tools@1.26.2) (2022-04-21)
+
+
+### Bug Fixes
+
+* **TDP-000:** ArticleHeader date and time update ([#2922](https://github.com/newsuk/times-components/issues/2922)) ([ca8259f](https://github.com/newsuk/times-components/commit/ca8259fd2b978f4821c8b14dedd6452dc4d8c1e2))
+
+
+
+
+
 ## [1.26.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.26.0...@times-components/provider-test-tools@1.26.1) (2022-04-11)
 
 **Note:** Version bump only for package @times-components/provider-test-tools

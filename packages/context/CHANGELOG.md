@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.1](https://github.com/newsuk/times-components/compare/@times-components/context@1.5.0...@times-components/context@1.5.1) (2022-04-21)
+
+
+### Bug Fixes
+
+* **TDP-000:** ArticleHeader date and time update ([#2922](https://github.com/newsuk/times-components/issues/2922)) ([ca8259f](https://github.com/newsuk/times-components/commit/ca8259fd2b978f4821c8b14dedd6452dc4d8c1e2))
+
+
+
+
+
 # [1.5.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.4.1...@times-components/context@1.5.0) (2022-04-20)
 
 
