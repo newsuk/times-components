@@ -153,6 +153,7 @@ export default [
           element: {
             value: "article-header",
             attributes: {
+              updated: "2022-04-20T20:30:00+01:00",
               date: "20/04/2022",
               time: "20:30",
               breaking: "true",
