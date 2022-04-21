@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.46.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.45.1...@times-components/article-in-depth@3.46.0) (2022-04-21)
+
+
+### Features
+
+* **TDP-1691:** remove react native from article label ([#2921](https://github.com/newsuk/times-components/issues/2921)) ([a2f1d2f](https://github.com/newsuk/times-components/commit/a2f1d2fd3923378b8a8f1a91cc87e6bc97aef9eb))
+
+
+
+
+
 ## [3.45.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.45.0...@times-components/article-in-depth@3.45.1) (2022-04-20)
 
 **Note:** Version bump only for package @times-components/article-in-depth
