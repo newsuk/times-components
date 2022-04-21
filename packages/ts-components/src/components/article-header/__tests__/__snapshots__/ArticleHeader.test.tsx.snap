@@ -1,36 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ArticleHeader In one calendar day Within the first minute of update - Breaking 1`] = `
+exports[`ArticleHeader Same calendar day during GMT With breaking flag and headline 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa cQBRMp"
-      id="u_20211231063000T222"
+      class="sc-VigVT esKZlx"
+      id="u_311220210630T222"
     >
       <div
-        class="sc-bwzfXH htoLMg"
+        class="sc-jTzLTM hsNKrf"
       >
         <div
-          class="sc-ifAKCX iDsMnF"
+          class="sc-cSHVUG jdArUK"
         >
           <div
-            class="sc-dnqmqq bGasAc"
+            class="sc-kpOJdX pPyiu"
           >
             <div
-              class="sc-fjdhpX Vdnui"
+              class="sc-EHOje cfBXHC"
             >
               <div
-                class="sc-iwsKbI fqYeBv"
+                class="sc-bdVaJa bkSKmo"
               >
                 <div
-                  class="sc-gqjmRU cTMoEm"
+                  class="sc-htpNat jcRSar"
                 >
                   <div
-                    class="sc-VigVT rGeCL"
+                    class="sc-bxivhb hTEbzV"
                   />
                 </div>
                 <span
-                  class="sc-gZMcBi iBeFrd"
+                  class="sc-bwzfXH hBgZUv"
                 >
                   BREAKING
                 </span>
@@ -38,72 +38,27 @@ exports[`ArticleHeader In one calendar day Within the first minute of update - B
             </div>
           </div>
           <div
-            class="sc-EHOje cDoFHw"
-            data-testid="UpdatedTime"
+            class="sc-fjdhpX eXIoUS"
+          >
+            <div
+              class="sc-jzJRlG ektXhQ"
+              data-testid="TimeSincePublishing"
+            >
+              30 minutes ago
+            </div>
+            <div
+              class="sc-kgoBCf gsnOug"
+            />
+          </div>
+          <div
+            class="sc-kAzzGY cABvZX"
           >
             6.30am
           </div>
         </div>
       </div>
       <h2
-        class="sc-htoDjs ccbbfo"
-      >
-        This is the headline
-      </h2>
-    </div>
-  </div>
-</body>
-`;
-
-exports[`ArticleHeader In one calendar day Within the first minute of update - No headline not breaking 1`] = `
-<body>
-  <div>
-    <div
-      class="sc-bdVaJa fLcQHz"
-      id="u_20211231063000"
-    >
-      <div
-        class="sc-bwzfXH htoLMg"
-      >
-        <div
-          class="sc-ifAKCX iDsMnF"
-        >
-          <div
-            class="sc-EHOje cDoFHw"
-            data-testid="UpdatedTime"
-          >
-            6.30am
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-`;
-
-exports[`ArticleHeader In one calendar day Within the first minute of update - Not Breaking 1`] = `
-<body>
-  <div>
-    <div
-      class="sc-bdVaJa fLcQHz"
-      id="u_20211231063000T222"
-    >
-      <div
-        class="sc-bwzfXH htoLMg"
-      >
-        <div
-          class="sc-ifAKCX iDsMnF"
-        >
-          <div
-            class="sc-EHOje cDoFHw"
-            data-testid="UpdatedTime"
-          >
-            6.30am
-          </div>
-        </div>
-      </div>
-      <h2
-        class="sc-htoDjs ccbbfo"
+        class="sc-kGXeez crUIWF"
       >
         This is the headline
       </h2>

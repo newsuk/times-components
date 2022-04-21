@@ -410,7 +410,8 @@ const renderers = ({
         return (
           <div id={id}>
             <ArticleHeader
-              updated={attributes.updated}
+              date={attributes.date}
+              time={attributes.time}
               breaking={attributes.breaking}
               headline={attributes.headline}
             />

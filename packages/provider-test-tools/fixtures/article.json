@@ -668,7 +668,8 @@
         "element": {
           "value": "article-header",
           "attributes": {
-            "updated": "2022-03-03T03:33:00Z",
+            "date": "20/04/2022",
+            "time": "20:30",
             "breaking": "true",
             "headline": "First headline update for live blog"
           }
@@ -793,7 +794,8 @@
         "element": {
           "value": "article-header",
           "attributes": {
-            "updated": "2021-12-31T23:30:00Z",
+            "date": "20/04/2022",
+            "time": "20:30",
             "breaking": "true",
             "headline": "This%20is%20the%20headline"
           }
@@ -949,7 +951,8 @@
         "element": {
           "value": "article-header",
           "attributes": {
-            "updated": "2022-01-01T05:30:00Z",
+            "date": "20/04/2022",
+            "time": "20:30",
             "breaking": "true",
             "headline": "This%20is%20the%20second%20headline%20for%20liveBlog"
           }

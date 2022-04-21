@@ -153,7 +153,8 @@ export default [
           element: {
             value: "article-header",
             attributes: {
-              updated: "2021-12-31T23:30:00Z",
+              date: "20/04/2022",
+              time: "20:30",
               breaking: "true",
               headline: "This%20is%20the%20headline"
             }
