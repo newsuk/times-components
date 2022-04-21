@@ -36,7 +36,7 @@ exports[`1. renders correctly with an image lead asset 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <figure
     className="IS5"
@@ -61,12 +61,12 @@ exports[`1. renders correctly with an image lead asset 1`] = `
     </div>
     <figcaption>
       <div
-        className="css-text-901oao"
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       >
         Chris Reynolds Gordon at one of his party venues in London
       </div>
       <div
-        className="css-text-901oao"
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       >
         The credits
       </div>
@@ -94,7 +94,7 @@ exports[`2. renders correctly with a video lead asset 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <figure
     className="IS3"
@@ -125,12 +125,12 @@ exports[`2. renders correctly with a video lead asset 1`] = `
     </div>
     <figcaption>
       <div
-        className="css-text-901oao"
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       >
         Chris Reynolds Gordon at one of his party venues in London
       </div>
       <div
-        className="css-text-901oao"
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       >
         The credits
       </div>
@@ -179,7 +179,7 @@ exports[`5. it renders correctly with a classname 1`] = `
 </style>
 
 <div
-  className="test-class-name test-class-name css-view-1dbjc4n"
+  className="test-class-name tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <figure
     className="IS5"
@@ -204,12 +204,12 @@ exports[`5. it renders correctly with a classname 1`] = `
     </div>
     <figcaption>
       <div
-        className="css-text-901oao"
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       >
         Chris Reynolds Gordon at one of his party venues in London
       </div>
       <div
-        className="css-text-901oao"
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       >
         The credits
       </div>
