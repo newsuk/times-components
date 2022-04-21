@@ -6,6 +6,7 @@ import {
   differenceInCalendarDays,
   formatDistanceStrict
 } from 'date-fns';
+import { zonedTimeToUtc } from 'date-fns-tz';
 
 import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
 import safeDecodeURIComponent from '../../utils/safeDecodeURIComponent';
@@ -41,7 +42,8 @@ const ArticleHeader: React.FC<{
   const currentDateTime = new Date();
 
   const updated = `${date} ${time}`;
-  const updatedDate = parse(updated, 'dd/MM/yyyy HH:mm', new Date());
+  const parsedDate = parse(updated, 'dd/MM/yyyy HH:mm', new Date());
+  const updatedDate = zonedTimeToUtc(parsedDate, 'Europe/London');
 
   const timeSincePublishing =
     formatDistanceStrict(updatedDate, currentDateTime, {
@@ -52,7 +54,8 @@ const ArticleHeader: React.FC<{
   const isLessThan1Minute = diffInSeconds < 60;
   const isLessThan1Hour = diffInSeconds < 60 * 60;
   const isLessThan13Hours = diffInSeconds < 60 * 60 * 13;
-  const isDaysAgo = differenceInCalendarDays(currentDateTime, updatedDate) >= 1;
+
+  const isDaysAgo = differenceInCalendarDays(currentDateTime, parsedDate) >= 1;
 
   const isBreaking = breaking
     ? Boolean(breaking.toLowerCase() === 'true')
@@ -82,12 +85,12 @@ const ArticleHeader: React.FC<{
           <UpdatedTime
             isLessThan13Hours={!isLessThan1Minute && isLessThan13Hours}
           >
-            {format(updatedDate, 'h.mmaaa')}
+            {format(parsedDate, 'h.mmaaa')}
           </UpdatedTime>
         </UpdatedTimeItems>
 
         {isDaysAgo ? (
-          <UpdatedDate>{format(updatedDate, 'MMMM d yyyy')}</UpdatedDate>
+          <UpdatedDate>{format(parsedDate, 'MMMM d yyyy')}</UpdatedDate>
         ) : null}
       </UpdatesContainer>
 
