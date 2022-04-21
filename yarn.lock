@@ -3707,14 +3707,6 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
-"@times-components/styleguide@3.38.36":
-  version "3.38.36"
-  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.38.36.tgz#73136b53f544a462fac31ebe54973a326e0bcd9a"
-  integrity sha512-//xsWfl7xty8QRvB5SAMIf/mJRoobAgq5kOXP82tKm3b1+wxy+EGdFB0U59bLD6MBMmReVlelK0yUg0XkIs7bg==
-  dependencies:
-    prop-types "15.7.2"
-    styled-components "4.3.2"
-
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
