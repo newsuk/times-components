@@ -56,8 +56,7 @@ export const UpdatedTime = styled.div<{ isLessThan13Hours?: boolean }>`
 `;
 
 export const UpdatedDate = styled.div`
-  ${updatedStyle};
-  justify-content: end;
+  ${updatedStyle} justify-content: end;
   padding: 0 4px 0 0;
 `;
 
