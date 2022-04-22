@@ -84,6 +84,7 @@ declare module '@times-components/styleguide' {
     newsletterPuffHeadline: number;
     newsletterPuffLabel: number;
   };
+  export const timesFontFactory: fontSizes;
   export const spacing: (multiple: number) => number;
   export const breakpoints: Breakpoints;
   export const colours: Colours;

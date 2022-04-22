@@ -2,12 +2,7 @@
 
 import { sectionColours, secondarySectionColours } from './colours/section';
 
-// interface Template {
-//   name: string;
-//   index: number;
-// }
-
-const sectionColourPicker = (section: any, template: any) => {
+const sectionColourPicker = (section: string, template: string) => {
   const config = {
     indepth: {},
     magazinecomment: {

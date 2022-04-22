@@ -20,14 +20,12 @@ import spacing, { globalSpacingStyles } from './spacing';
 export const tabletRowPadding = 20;
 
 export default ({ scale = scales.medium } = {}) => {
-  // @ts-ignore
   return {
     Animations,
     colours,
     fontFactory: timesFontFactory(scale),
     fonts: fontStyles,
-    // @ts-ignore
-    fontSizes: timesFontSizes[scale],
+    fontSizes: timesFontSizes,
     lineHeight,
     spacing
   };
