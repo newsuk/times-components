@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-.c26 {
+.c27 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -19,7 +19,19 @@ exports[`full article with style 1`] = `
   z-index: 0;
 }
 
-.c23 {
+.c7 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.c24 {
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -30,34 +42,21 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c23:first-of-type:after {
+.c24:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c27 {
+.c28 {
   padding-left: 10px;
 }
 
-.c19 {
+.c20 {
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c30 {
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -71,21 +70,34 @@ exports[`full article with style 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c32 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c25 {
+.c26 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.c24 {
+.c25 {
   display: block;
 }
 
-.c20 {
+.c21 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -99,11 +111,11 @@ exports[`full article with style 1`] = `
   min-height: 210px;
 }
 
-.c20.hidden {
+.c21.hidden {
   visibility: hidden;
 }
 
-.c21 {
+.c22 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -115,13 +127,13 @@ exports[`full article with style 1`] = `
   text-transform: uppercase;
 }
 
-.c22 {
+.c23 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
 }
 
-.c28 {
+.c29 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -130,7 +142,7 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c29 {
+.c30 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -147,27 +159,27 @@ exports[`full article with style 1`] = `
   text-transform: uppercase;
 }
 
-.c10 {
+.c11 {
   border: solid #DBDBDB;
   border-width: 1px 0;
 }
 
-.c10 + .c9 {
+.c11 + .c10 {
   margin-top: -1px !important;
 }
 
-.c14 {
+.c15 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c14 + .c13 {
+.c15 + .c14 {
   margin-top: -1px !important;
 }
 
-.c14:last-child {
+.c15:last-child {
   margin-bottom: 30px;
 }
 
@@ -178,62 +190,62 @@ exports[`full article with style 1`] = `
   display: flex;
 }
 
-.c3 > .c13 {
+.c3 > .c14 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c18 {
+.c19 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c17 {
+.c18 {
   background-color: #FFFFFF;
   height: 60px;
 }
 
-.c17 [data-tc-sticky-sizer] {
+.c18 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c17.tc-sticky {
+.c18.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c17[MOCK-PROGRESS-SELECTOR] {
+.c18[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 #c9c7c7ed;
 }
 
-.c17[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c18[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: #ffffffdb;
 }
 
-.c16 {
+.c17 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c16 + .c15 {
+.c17 + .c16 {
   margin-top: -1px !important;
 }
 
-.c16:last-child {
+.c17:last-child {
   margin-bottom: 30px;
 }
 
-.c16.contains-tc-sticky {
+.c17.contains-tc-sticky {
   border-bottom-color: transparent;
 }
 
-.c7 {
+.c8 {
   font-size: 30px;
   color: #1D1D1B;
   margin-bottom: 8px;
@@ -242,11 +254,11 @@ exports[`full article with style 1`] = `
   line-height: 30px;
 }
 
-.c11 {
+.c12 {
   padding-top: 10px;
 }
 
-.c11:last-child {
+.c12:last-child {
   padding-bottom: 10px;
 }
 
@@ -255,7 +267,7 @@ exports[`full article with style 1`] = `
   padding-right: 10px;
 }
 
-.c8 {
+.c9 {
   margin-bottom: 20px;
   padding-right: 20px;
   padding-left: 20px;
@@ -274,7 +286,7 @@ exports[`full article with style 1`] = `
   order: 2;
 }
 
-.c12 {
+.c13 {
   margin-bottom: 20px;
   -webkit-order: 1;
   -ms-flex-order: 1;
@@ -300,7 +312,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c23 {
+  .c24 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -310,41 +322,26 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c23 {
+  .c24 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c27 {
+  .c28 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c20 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c19 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c30 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c30 {
+  .c20 {
     width: 56.2%;
   }
 }
@@ -365,7 +362,22 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c25 {
+  .c32 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c32 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c26 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -377,7 +389,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c25 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -386,65 +398,65 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c24 {
+  .c25 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c21 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c20 {
+  .c21 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c22 {
+  .c23 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c22:first-of-type {
+  .c23:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c22:last-child {
+  .c23:last-child {
     margin-left: 1.5%;
   }
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c29 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c28 {
+  .c29 {
     min-height: 283px;
   }
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c15 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c15 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c14 {
+  .c15 {
     width: 56.2%;
   }
 }
@@ -457,25 +469,25 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c17 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c17 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c16 {
+  .c17 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c8 {
     font-size: 45px;
     line-height: 45px;
   }
@@ -488,7 +500,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c11 {
+  .c12 {
     line-height: 18px;
     padding-bottom: 10px;
   }
@@ -514,7 +526,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c8 {
+  .c9 {
     display: block;
   }
 }
@@ -534,13 +546,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c13 {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width:1024px) {
-  .c12 {
+  .c13 {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -564,41 +576,33 @@ exports[`full article with style 1`] = `
 
 <style>
 .S1 {
-  font-weight: 400;
-  line-height: 12px;
-  margin-bottom: 0px;
-  margin-top: -1px;
-  padding-top: 1px;
-}
-
-.S2 {
   padding-bottom: 5px;
   padding-top: 5px;
 }
 
-.S3 {
+.S2 {
   line-height: 33px;
   margin-bottom: 7px;
 }
 
-.S4 {
+.S3 {
   line-height: 26px;
   padding-bottom: 10px;
 }
 
-.S5 {
+.S4 {
   margin-bottom: 10px;
 }
 
-.S6 {
+.S5 {
   line-height: 15px;
 }
 
-.S7 {
+.S6 {
   line-height: 17px;
 }
 
-.S8 {
+.S7 {
   padding-top: 10px;
 }
 
@@ -607,7 +611,15 @@ exports[`full article with style 1`] = `
 }
 
 .IS2 {
-  color: rgba(29,29,27,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 12;
+  line-height: 12px;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-top: -1;
+  padding-top: 1;
+  letter-spacing: 1;
+  color: #1D1D1B;
 }
 
 .IS3 {
@@ -702,45 +714,45 @@ exports[`full article with style 1`] = `
                 className="css-view-1dbjc4n"
               >
                 <div
-                  className="c6 responsive__LabelContainer-sc-15mjcnq-1 c6 css-view-1dbjc4n r-paddingBottom-1inuy60 r-paddingTop-glunga S2"
+                  className="c6 responsive__LabelContainer-sc-15mjcnq-1 c6 css-view-1dbjc4n r-paddingBottom-1inuy60 r-paddingTop-glunga S1"
                 >
                   <div
-                    className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
+                    className="c7 IS2"
                   >
                     SOME LABEL
                   </div>
                 </div>
                 <h1
-                  className="c7 css-reset-4rbku5 responsive__HeadlineContainer-sc-15mjcnq-0 c7 css-text-901oao r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-11mo1y0 S3"
+                  className="c8 css-reset-4rbku5 responsive__HeadlineContainer-sc-15mjcnq-0 c8 css-text-901oao r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-11mo1y0 S2"
                 >
                   Some Headline
                 </h1>
                 <h2
-                  className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-paddingBottom-1mi0q7o S4"
+                  className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-paddingBottom-1mi0q7o S3"
                 >
                   Some Standfirst
                 </h2>
                 <div
-                  className="css-view-1dbjc4n r-marginBottom-15d164r S5"
+                  className="css-view-1dbjc4n r-marginBottom-15d164r S4"
                 >
                   <ArticleFlags />
                 </div>
               </div>
             </div>
             <div
-              className="c8 responsive__MetaContainer-cbxka9-3 c8 css-view-1dbjc4n"
+              className="c9 responsive__MetaContainer-cbxka9-3 c9 css-view-1dbjc4n"
             >
               <div
-                className="c9 c10"
+                className="c10 c11"
               >
                 <div
                   className="css-view-1dbjc4n"
                 >
                   <div
-                    className="c11 article-meta__MetaTextElement-sc-1iqkrjg-0 c11 css-text-901oao"
+                    className="c12 article-meta__MetaTextElement-sc-1iqkrjg-0 c12 css-text-901oao"
                   >
                     <span
-                      className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"
+                      className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S5"
                     >
                       <ArticleBylineWithLinks />
                     </span>
@@ -748,16 +760,16 @@ exports[`full article with style 1`] = `
                 </div>
               </div>
               <div
-                className="c9 c10"
+                className="c10 c11"
               >
                 <div
                   className="css-view-1dbjc4n"
                 >
                   <div
-                    className="c11 article-meta__MetaTextElement-sc-1iqkrjg-0 c11 css-text-901oao"
+                    className="c12 article-meta__MetaTextElement-sc-1iqkrjg-0 c12 css-text-901oao"
                   >
                     <span
-                      className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"
+                      className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S5"
                     >
                       <DatePublication />
                     </span>
@@ -772,28 +784,28 @@ exports[`full article with style 1`] = `
             </div>
           </div>
           <ArticleLeadAsset
-            className="c12"
+            className="c13"
           />
           <div
-            className="c9 inline-meta c13 c14"
+            className="c10 inline-meta c14 c15"
           >
             <div
               className="css-view-1dbjc4n"
             >
               <div
-                className="c11 article-meta__MetaTextElement-sc-1iqkrjg-0 c11 css-text-901oao"
+                className="c12 article-meta__MetaTextElement-sc-1iqkrjg-0 c12 css-text-901oao"
               >
                 <span
-                  className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"
+                  className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S5"
                 >
                   <ArticleBylineWithLinks />
                 </span>
               </div>
               <div
-                className="c11 article-meta__MetaTextElement-sc-1iqkrjg-0 c11 css-text-901oao"
+                className="c12 article-meta__MetaTextElement-sc-1iqkrjg-0 c12 css-text-901oao"
               >
                 <span
-                  className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"
+                  className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S5"
                 >
                   <DatePublication />
                 </span>
@@ -801,14 +813,14 @@ exports[`full article with style 1`] = `
             </div>
           </div>
           <div
-            className="c9 c13 c15 c16"
+            className="c10 c14 c16 c17"
           >
             <div
               className="IS4"
             />
             <div>
               <div
-                className="c17"
+                className="c18"
               >
                 <div>
                   <SaveAndShareBar />
@@ -818,12 +830,12 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <article
-          className="c18 responsive__BodyContainer-sc-15gvuj2-3 c18 css-view-1dbjc4n"
+          className="c19 responsive__BodyContainer-sc-15gvuj2-3 c19 css-view-1dbjc4n"
         >
           <div>
             <div>
               <div
-                className="c19 responsive__PrimaryImg-sc-4v1r4q-5 c19 css-view-1dbjc4n"
+                className="c20 responsive__PrimaryImg-sc-4v1r4q-5 c20 css-view-1dbjc4n"
               >
                 <ArticleImage />
               </div>
@@ -833,30 +845,30 @@ exports[`full article with style 1`] = `
             Some Link
           </Link>
           <div
-            className="group-3 hidden c20"
+            className="group-3 hidden c21"
           >
             <h2
-              className="c21"
+              className="c22"
             >
               Sponsored
             </h2>
             <div
-              className="c22"
+              className="c23"
             />
             <div
-              className="c22"
+              className="c23"
             />
           </div>
           <p
-            className="c23"
+            className="c24"
           >
             Some content
           </p>
           <div
-            className="c24 responsive__PullQuoteContainer-sc-4v1r4q-10 c24 css-view-1dbjc4n"
+            className="c25 responsive__PullQuoteContainer-sc-4v1r4q-10 c25 css-view-1dbjc4n"
           >
             <div
-              className="c25 responsive__PullQuoteResp-sc-4v1r4q-9 c25 css-view-1dbjc4n"
+              className="c26 responsive__PullQuoteResp-sc-4v1r4q-9 c26 css-view-1dbjc4n"
             >
               <PullQuote>
                 The pull quote content
@@ -864,16 +876,16 @@ exports[`full article with style 1`] = `
             </div>
           </div>
           <div
-            className="c19 responsive__PrimaryImg-sc-4v1r4q-5 c19 css-view-1dbjc4n"
+            className="c20 responsive__PrimaryImg-sc-4v1r4q-5 c20 css-view-1dbjc4n"
           >
             <figure
               className="IS10"
             >
               <div
-                className="c26 IS9"
+                className="c27 IS9"
               >
                 <div
-                  className="c26 IS8"
+                  className="c27 IS8"
                 >
                   <div
                     className="IS7"
@@ -890,16 +902,16 @@ exports[`full article with style 1`] = `
               </div>
               <figcaption>
                 <div
-                  className="c27 inset-caption__InsetCaptionStyle-la2hkf-0 c27 css-view-1dbjc4n"
+                  className="c28 inset-caption__InsetCaptionStyle-la2hkf-0 c28 css-view-1dbjc4n"
                 >
                   <div
                     className="css-view-1dbjc4n"
                   >
                     <div
-                      className="css-view-1dbjc4n r-paddingTop-m611by S8"
+                      className="css-view-1dbjc4n r-paddingTop-m611by S7"
                     >
                       <div
-                        className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S7"
+                        className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S6"
                       >
                         This is video caption
                       </div>
@@ -910,10 +922,10 @@ exports[`full article with style 1`] = `
             </figure>
           </div>
           <div
-            className="c28"
+            className="c29"
           >
             <h2
-              className="c29"
+              className="c30"
             >
               Advertisement
             </h2>
@@ -922,7 +934,7 @@ exports[`full article with style 1`] = `
           <div>
             <div>
               <div
-                className="c30 responsive__SecondaryImg-sc-4v1r4q-7 c30 css-view-1dbjc4n"
+                className="c31 responsive__SecondaryImg-sc-4v1r4q-7 c31 css-view-1dbjc4n"
               >
                 <ArticleImage />
               </div>
@@ -931,7 +943,7 @@ exports[`full article with style 1`] = `
           <div>
             <div>
               <div
-                className="c31 responsive__InlineImg-sc-4v1r4q-8 c31 css-view-1dbjc4n"
+                className="c32 responsive__InlineImg-sc-4v1r4q-8 c32 css-view-1dbjc4n"
               >
                 <ArticleImage />
               </div>

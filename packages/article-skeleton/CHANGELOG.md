@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.80.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.4...@times-components/article-skeleton@1.80.5) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.3...@times-components/article-skeleton@1.80.4) (2022-04-21)
+
+
+### Bug Fixes
+
+* **TDP-000:** ArticleHeader date and time update ([#2924](https://github.com/newsuk/times-components/issues/2924)) ([7453ab2](https://github.com/newsuk/times-components/commit/7453ab2498cc12a6e6ea8ba1df9ee71bb4798628))
+
+
+
+
+
+## [1.80.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.2...@times-components/article-skeleton@1.80.3) (2022-04-21)
+
+
+### Bug Fixes
+
+* **TDP-000:** ArticleHeader date and time update ([#2922](https://github.com/newsuk/times-components/issues/2922)) ([ca8259f](https://github.com/newsuk/times-components/commit/ca8259fd2b978f4821c8b14dedd6452dc4d8c1e2))
+
+
+
+
+
+## [1.80.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.1...@times-components/article-skeleton@1.80.2) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.80.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.0...@times-components/article-skeleton@1.80.1) (2022-04-20)
 
 **Note:** Version bump only for package @times-components/article-skeleton
