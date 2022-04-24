@@ -52,7 +52,9 @@ declare module '@times-components/utils' {
     value: string | number
   ) => string;
 
-  export const TcView: React.FC<>;
+  export const TcView: React.FC<{style?: any}>;
+  export const TcText: React.FC<{style?: any}>;
+  export const TcScrollView: React.FC<{style?: any}>;
   export const capitalise: (s: string) => string;
   export const stripTags: (input: string, replaceWith: string) => string;
   export const gqlRgbaToStyle: (colour: string | undefined) => string | null;

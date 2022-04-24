@@ -3,7 +3,7 @@ import 'react';
 import colours from './colours/colours';
 import Animations from './Animations';
 
-import {
+import breakpoints, {
   editionBreakpoints,
   editionMaxWidth,
   getEditionBreakpoint,
@@ -31,9 +31,10 @@ export default ({ scale = scales.medium } = {}) => {
   };
 };
 
+
 export {
   Animations,
-  // breakpoints,
+  breakpoints,
   colours,
   editionBreakpoints,
   editionBreakpointWidths,

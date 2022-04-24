@@ -1,9 +1,9 @@
-// const widths = {  huge: 1320,
-//   medium: 768,
-//   nativeTablet: 660,
-//   nativeTabletWide: 1194,
-//   small: 520,
-//   wide: 1024}
+const widths = {  huge: 1320,
+  medium: 768,
+  nativeTablet: 660,
+  nativeTabletWide: 1194,
+  small: 520,
+  wide: 1024}
 
 const editionBreakpoints = {
   huge: 'huge',
@@ -41,4 +41,8 @@ export {
   getEditionBreakpoint
 };
 
-// export default widths;
+ export default  {  editionBreakpoints,
+  editionMaxWidth,
+  editionBreakpointWidths,
+  sliceContentMaxWidth,
+  ...widths}
