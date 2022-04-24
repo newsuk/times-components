@@ -31,7 +31,7 @@ export const TimeSincePublishingContainer = styled.div`
   flex-direction: row;
 `;
 
-export const TimeSincePublishing = styled.div<{ isBreaking?: boolean }>`
+export const TimeSincePublishing = styled.div`
   color: ${colours.functional.brandColour};
   font-family: ${fonts.supporting};
   font-size: 14px;
@@ -63,7 +63,7 @@ export const UpdatedDate = styled.div`
 export const Divider = styled.div`
   background-color: ${colours.functional.greyLabel};
   width: 1px;
-  margin: 2px 8px 6px 12px;
+  margin: 2px 8px 6px 8px;
 `;
 
 export const Headline = styled.h2`

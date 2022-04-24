@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.40](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.39...@times-components/interactive-wrapper@0.8.40) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.39](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.38...@times-components/interactive-wrapper@0.8.39) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.38](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.37...@times-components/interactive-wrapper@0.8.38) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.8.37](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.36...@times-components/interactive-wrapper@0.8.37) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
 ## [0.8.36](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.8.35...@times-components/interactive-wrapper@0.8.36) (2022-04-20)
 
 **Note:** Version bump only for package @times-components/interactive-wrapper
