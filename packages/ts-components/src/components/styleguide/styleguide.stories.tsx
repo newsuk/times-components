@@ -1,3 +1,4 @@
+
 import React, {Fragment} from 'react';
 import { storiesOf } from '@storybook/react';
 // import { date } from '@storybook/addon-knobs';
@@ -17,7 +18,7 @@ import {
 
  import timesStyleguide
  , {
-//   Animations,
+   Animations,
    colours,
    fonts,
 //   scales
@@ -77,7 +78,7 @@ const getStories = ({ colourMap, name }: {colourMap:any; name: string}) => {
       </TcText>
     </Fragment>
   ));
-
+/* tslint:disable-next-line */
 const fontFixture = (
     //select: any
     ) => {
@@ -176,47 +177,50 @@ colourStoriesBuilder
   })
   .add({ colourMap: colours.section, name: "Section Colours" });
 
-// export {
-//   children: [
-//     ...colourStoriesBuilder.stories,
-//     {
-//       component: () => (
-//         <Animations.FadeIn>
-//           <TcView style={styles.animationBox}>
-//             <TcText style={styles.text}>Fade In</TcText>
-//           </TcView>
-//         </Animations.FadeIn>
-//       ),
-//       name: "Animations",
-//       type: "story"
-//     },
-//     {
-//       component({ select }) {
-//         return fontFixture(select);
-//       },
-//       name: "Fonts",
-//       type: "story"
-//     }
-//   ],
-//   name: "Helpers/Styleguide"
-// };
 
+  const children = [
+    ...colourStoriesBuilder.stories,
+    {
+      component: () => (
+        <Animations.FadeIn>
+          <TcView style={styles.animationBox}>
+            <TcText style={styles.text}>Fade In</TcText>
+          </TcView>
+        </Animations.FadeIn>
+      ),
+      name: "Animations",
+      type: "story"
+    },
+    {
+        // component({ select }: any) {
+        //     return fontFixture(select);
+      component() {
+        return fontFixture();
+      },
+      name: "Fonts",
+      type: "story"
+    }
+  ]
+  //,
+  //name: "Helpers/Styleguide"
+
+console.log(children)
 
 /**  EXAMPLE */
 storiesOf('Typescript Component/styleguide', module)
-  .add('', () => {
-    const label = 'Updated Date/Time';
-    const defaultValue = new Date();
-    const groupId = 'Options';
-    // const value = date(label, defaultValue, groupId);
-    // const updated = new Date(value).toISOString();
+//   .add('', () => {
+//     const label = 'Updated Date/Time';
+//     const defaultValue = new Date();
+//     const groupId = 'Options';
+//     // const value = date(label, defaultValue, groupId);
+//     // const updated = new Date(value).toISOString();
 
-    return (
-        <div/>
-    //   <UpdatedTimeProvider updatedTime={updated}>
-    //     <LiveArticleFlag />
-    //   </UpdatedTimeProvider>
-    );
-  })
+//     return (
+//         <div/>
+//     //   <UpdatedTimeProvider updatedTime={updated}>
+//     //     <LiveArticleFlag />
+//     //   </UpdatedTimeProvider>
+//     );
+//   })
   
 
