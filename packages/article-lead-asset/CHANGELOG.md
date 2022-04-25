@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.7.5...@times-components/article-lead-asset@1.8.0) (2022-04-25)
+
+
+### Features
+
+* **TDP-1692:** removed react native from article-lead-asset ([#2923](https://github.com/newsuk/times-components/issues/2923)) ([8daa928](https://github.com/newsuk/times-components/commit/8daa928e226b72125188f97b7711c96fec3bca1f))
+
+
+
+
+
 ## [1.7.5](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.7.4...@times-components/article-lead-asset@1.7.5) (2022-04-22)
 
 **Note:** Version bump only for package @times-components/article-lead-asset
