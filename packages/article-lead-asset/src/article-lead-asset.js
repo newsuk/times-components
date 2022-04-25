@@ -1,6 +1,5 @@
 import React from "react";
-import { View } from "react-native";
-import { AspectRatioContainer } from "@times-components/utils";
+import { TcView, AspectRatioContainer } from "@times-components/utils";
 import Video from "@times-components/video";
 import LeadAssetImage from "./article-lead-asset-image";
 import { defaultProps, propTypes } from "./article-lead-asset-prop-types";
@@ -46,14 +45,14 @@ const ArticleLeadAsset = ({
   );
 
   return (
-    <View className={className} style={style}>
+    <TcView className={className} style={style}>
       <figure style={{ margin: 0 }}>
         <AspectRatioContainer aspectRatio={aspectRatio}>
           {leadAssetView}
         </AspectRatioContainer>
         {renderCaption && <figcaption>{renderCaption({ caption })}</figcaption>}
       </figure>
-    </View>
+    </TcView>
   );
 };
 
