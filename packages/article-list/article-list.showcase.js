@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { TcView, TcText } from "@times-components/utils";
 import storybookReporter from "@times-components/tealium-utils";
 import { withTrackingContext } from "@times-components/tracking";
 import {
@@ -223,7 +223,7 @@ export default {
     {
       component: (_, { decorateAction }) => {
         const articleListHeader = (
-          <View
+          <TcView
             style={{
               alignItems: "center",
               backgroundColor: "#999",
@@ -232,8 +232,8 @@ export default {
               width: "100%"
             }}
           >
-            <Text style={{ color: "#FFF" }}>Article List Header</Text>
-          </View>
+            <TcText style={{ color: "#FFF" }}>Article List Header</TcText>
+          </TcView>
         );
 
         return (

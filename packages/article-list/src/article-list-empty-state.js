@@ -1,12 +1,14 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { TcView, TcText, checkStylesForUnits } from "@times-components/utils";
 import styles from "./styles";
 import propTypes from "./article-list-empty-state-prop-types";
 
 const ArticleListEmptyState = ({ message }) => (
-  <View style={styles.listEmptyStateContainer}>
-    <Text style={styles.listEmptyMessage}>{message}</Text>
-  </View>
+  <TcView style={styles.listEmptyStateContainer}>
+    <TcText style={checkStylesForUnits(styles.listEmptyMessage)}>
+      {message}
+    </TcText>
+  </TcView>
 );
 
 ArticleListEmptyState.propTypes = propTypes;
