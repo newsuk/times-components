@@ -9,7 +9,7 @@ import {
 } from "@times-components/styleguide";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
 
-export const DatePublicationContainer = styled(Text)`
+export const DatePublicationContainer = styled(TcText)`
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: ${spacing(1)};
