@@ -60,7 +60,7 @@
   "dependencies": {
     "@times-components/context": "1.5.2",
     "@times-components/link": "3.9.6",
-    "@times-components/styleguide": "3.38.43",
+    "@times-components/styleguide": "3.38.44",
     "@times-components/tracking": "2.9.21",
     "prop-types": "15.7.2"
   },

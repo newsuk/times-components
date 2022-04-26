@@ -37,7 +37,7 @@
     "@times-components/article-skeleton": "1.80.6",
     "@times-components/context": "1.5.2",
     "@times-components/markup-forest": "1.8.1",
-    "@times-components/styleguide": "3.38.43",
+    "@times-components/styleguide": "3.38.44",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
