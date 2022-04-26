@@ -11,8 +11,8 @@ import {
   articlePropTypes,
   articleDefaultProps
 } from "./article-prop-types/article-prop-types";
-import styles from "./styles";
-import { LeadAsset } from "./styles/responsive";
+import newStyles from "./newStyles";
+import { LeadAsset } from "./newStyles/responsive";
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -62,7 +62,7 @@ class ArticlePage extends Component {
           {...getLeadAsset(article)}
           getImageCrop={getStandardTemplateCrop}
           renderCaption={({ caption }) => <CentredCaption {...caption} />}
-          style={styles.leadAssetContainer}
+          style={newStyles.leadAssetContainer}
         />
       </Fragment>
     );

@@ -599,10 +599,6 @@ exports[`full article with style 1`] = `
   padding-top: 35px;
 }
 
-.S7 {
-  margin-bottom: 20px;
-}
-
 .IS1 {
   margin-bottom: 0;
 }
@@ -652,37 +648,41 @@ exports[`full article with style 1`] = `
 }
 
 .IS8 {
-  display: none;
+  margin-bottom: 20px;
 }
 
 .IS9 {
-  height: 100%;
-  width: 100%;
+  display: none;
 }
 
 .IS10 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS11 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS12 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS13 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS13 {
+.IS14 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS14 {
+.IS15 {
   margin: 0;
 }
 </style>
@@ -781,7 +781,7 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c13 responsive__LeadAsset-sc-15qf29k-10 c13 css-view-1dbjc4n r-marginBottom-117bsoe S7"
+          className="c13 c14 IS8"
         >
           <figure
             className="IS7"
@@ -810,7 +810,7 @@ exports[`full article with style 1`] = `
           className="c15 c16 c17"
         >
           <div
-            className="IS8"
+            className="IS9"
           />
           <div>
             <div
@@ -873,22 +873,22 @@ exports[`full article with style 1`] = `
           className="c20 responsive__PrimaryImg-sc-4v1r4q-5 c20 css-view-1dbjc4n"
         >
           <figure
-            className="IS14"
+            className="IS15"
           >
             <div
-              className="c14 IS13"
+              className="c14 IS14"
             >
               <div
-                className="c14 IS12"
+                className="c14 IS13"
               >
                 <div
-                  className="IS11"
+                  className="IS12"
                 >
                   <div
-                    className="IS10"
+                    className="IS11"
                   >
                     <video
-                      className="video-js IS9"
+                      className="video-js IS10"
                     />
                   </div>
                 </div>
@@ -1541,10 +1541,6 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-top: 35px;
 }
 
-.S7 {
-  margin-bottom: 20px;
-}
-
 .IS1 {
   margin-bottom: 0;
 }
@@ -1598,37 +1594,41 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .IS9 {
-  display: none;
+  margin-bottom: 20px;
 }
 
 .IS10 {
-  height: 100%;
-  width: 100%;
+  display: none;
 }
 
 .IS11 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS12 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS13 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS14 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS14 {
+.IS15 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS15 {
+.IS16 {
   margin: 0;
 }
 </style>
@@ -1727,7 +1727,7 @@ exports[`full article with style in the culture magazine 1`] = `
           </div>
         </div>
         <div
-          className="c13 responsive__LeadAsset-sc-15qf29k-10 c13 css-view-1dbjc4n r-marginBottom-117bsoe S7"
+          className="c13 c14 IS9"
         >
           <figure
             className="IS8"
@@ -1756,7 +1756,7 @@ exports[`full article with style in the culture magazine 1`] = `
           className="c15 c16 c17"
         >
           <div
-            className="IS9"
+            className="IS10"
           />
           <div>
             <div
@@ -1819,22 +1819,22 @@ exports[`full article with style in the culture magazine 1`] = `
           className="c20 responsive__PrimaryImg-sc-4v1r4q-5 c20 css-view-1dbjc4n"
         >
           <figure
-            className="IS15"
+            className="IS16"
           >
             <div
-              className="c14 IS14"
+              className="c14 IS15"
             >
               <div
-                className="c14 IS13"
+                className="c14 IS14"
               >
                 <div
-                  className="IS12"
+                  className="IS13"
                 >
                   <div
-                    className="IS11"
+                    className="IS12"
                   >
                     <video
-                      className="video-js IS10"
+                      className="video-js IS11"
                     />
                   </div>
                 </div>
@@ -2487,10 +2487,6 @@ exports[`full article with style in the style magazine 1`] = `
   padding-top: 35px;
 }
 
-.S7 {
-  margin-bottom: 20px;
-}
-
 .IS1 {
   margin-bottom: 0;
 }
@@ -2545,37 +2541,41 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .IS9 {
-  display: none;
+  margin-bottom: 20px;
 }
 
 .IS10 {
-  height: 100%;
-  width: 100%;
+  display: none;
 }
 
 .IS11 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS12 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS13 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS14 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS14 {
+.IS15 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS15 {
+.IS16 {
   margin: 0;
 }
 </style>
@@ -2674,7 +2674,7 @@ exports[`full article with style in the style magazine 1`] = `
           </div>
         </div>
         <div
-          className="c13 responsive__LeadAsset-sc-15qf29k-10 c13 css-view-1dbjc4n r-marginBottom-117bsoe S7"
+          className="c13 c14 IS9"
         >
           <figure
             className="IS8"
@@ -2703,7 +2703,7 @@ exports[`full article with style in the style magazine 1`] = `
           className="c15 c16 c17"
         >
           <div
-            className="IS9"
+            className="IS10"
           />
           <div>
             <div
@@ -2766,22 +2766,22 @@ exports[`full article with style in the style magazine 1`] = `
           className="c20 responsive__PrimaryImg-sc-4v1r4q-5 c20 css-view-1dbjc4n"
         >
           <figure
-            className="IS15"
+            className="IS16"
           >
             <div
-              className="c14 IS14"
+              className="c14 IS15"
             >
               <div
-                className="c14 IS13"
+                className="c14 IS14"
               >
                 <div
-                  className="IS12"
+                  className="IS13"
                 >
                   <div
-                    className="IS11"
+                    className="IS12"
                   >
                     <video
-                      className="video-js IS10"
+                      className="video-js IS11"
                     />
                   </div>
                 </div>
@@ -3434,10 +3434,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-top: 35px;
 }
 
-.S7 {
-  margin-bottom: 20px;
-}
-
 .IS1 {
   margin-bottom: 0;
 }
@@ -3491,37 +3487,41 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .IS9 {
-  display: none;
+  margin-bottom: 20px;
 }
 
 .IS10 {
-  height: 100%;
-  width: 100%;
+  display: none;
 }
 
 .IS11 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS12 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS13 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS14 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS14 {
+.IS15 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS15 {
+.IS16 {
   margin: 0;
 }
 </style>
@@ -3620,7 +3620,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </div>
         </div>
         <div
-          className="c13 responsive__LeadAsset-sc-15qf29k-10 c13 css-view-1dbjc4n r-marginBottom-117bsoe S7"
+          className="c13 c14 IS9"
         >
           <figure
             className="IS8"
@@ -3649,7 +3649,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           className="c15 c16 c17"
         >
           <div
-            className="IS9"
+            className="IS10"
           />
           <div>
             <div
@@ -3712,22 +3712,22 @@ exports[`full article with style in the sunday times magazine 1`] = `
           className="c20 responsive__PrimaryImg-sc-4v1r4q-5 c20 css-view-1dbjc4n"
         >
           <figure
-            className="IS15"
+            className="IS16"
           >
             <div
-              className="c14 IS14"
+              className="c14 IS15"
             >
               <div
-                className="c14 IS13"
+                className="c14 IS14"
               >
                 <div
-                  className="IS12"
+                  className="IS13"
                 >
                   <div
-                    className="IS11"
+                    className="IS12"
                   >
                     <video
-                      className="video-js IS10"
+                      className="video-js IS11"
                     />
                   </div>
                 </div>
