@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-expressions */
 import { MockAuthor, MockArticle } from "@times-components/fixture-generator";
+import { terminalLog } from "../cypress/support";
 
 export default (options = {}) => {
   const qs = options.qs || "";
@@ -46,7 +47,7 @@ export default (options = {}) => {
       cy.url().should("include", "?page=1");
     });
 
-    it("should pass basic a11y test", () => {
+    it.only("should pass basic a11y test", () => {
       cy.injectAxe();
       cy.wait(1000);
       cy.configureAxe({
@@ -61,7 +62,7 @@ export default (options = {}) => {
           }
         ]
       });
-      cy.checkA11y();
+      cy.checkA11y(null, null, terminalLog, null);
     });
 
     it("should match snapshots", () => {
