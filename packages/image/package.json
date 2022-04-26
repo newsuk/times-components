@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "6.11.6",
+  "version": "6.11.7",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -34,7 +34,7 @@
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator": "2.8.0",
     "@times-components/jest-serializer": "3.2.29",
-    "@times-components/storybook": "4.2.13",
+    "@times-components/storybook": "4.2.14",
     "@times-components/test-utils": "2.3.10",
     "@times-components/webpack-configurator": "2.0.29",
     "babel-jest": "24.8.0",

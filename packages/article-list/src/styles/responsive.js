@@ -1,8 +1,8 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import { breakpoints, spacing } from "@times-components/styleguide";
 
-export const ListContentContainer = styled(View)`
+export const ListContentContainer = styled(TcView)`
   margin: 0 auto;
   max-width: 680px;
   width: 100%;
@@ -17,7 +17,7 @@ export const ListContentContainer = styled(View)`
   }
 `;
 
-export const ListItemWrapper = styled(View)`
+export const ListItemWrapper = styled(TcView)`
   padding-bottom: ${spacing(2)};
   padding-top: ${spacing(2)};
   padding-left: ${spacing(2)};
@@ -42,7 +42,7 @@ export const ListItemWrapper = styled(View)`
   }
 `;
 
-export const ListItemSeparator = styled(View)`
+export const ListItemSeparator = styled(TcView)`
   margin-left: ${spacing(2)};
   margin-right: ${spacing(2)};
 
@@ -52,7 +52,7 @@ export const ListItemSeparator = styled(View)`
   }
 `;
 
-export const ListItemLongText = styled(View)`
+export const ListItemLongText = styled(TcView)`
   display: none;
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -61,7 +61,7 @@ export const ListItemLongText = styled(View)`
   }
 `;
 
-export const ListItemShortText = styled(View)`
+export const ListItemShortText = styled(TcView)`
   display: block;
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -69,7 +69,7 @@ export const ListItemShortText = styled(View)`
   }
 `;
 
-export const PageErrorContainer = styled(View)`
+export const PageErrorContainer = styled(TcView)`
   flex: 1;
   flex-direction: column;
   justify-content: space-between;
@@ -87,7 +87,7 @@ export const PageErrorContainer = styled(View)`
   }
 `;
 
-export const PageErrorImageContainer = styled(View)`
+export const PageErrorImageContainer = styled(TcView)`
   align-self: center;
   max-width: 300px;
   width: 100%;
@@ -102,7 +102,7 @@ export const PageErrorImageContainer = styled(View)`
   }
 `;
 
-export const PageErrorContentContainer = styled(View)`
+export const PageErrorContentContainer = styled(TcView)`
   @media (min-width: ${breakpoints.wide}px) {
     align-self: center;
     max-width: 428px;

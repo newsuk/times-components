@@ -1,12 +1,14 @@
 /* eslint-env browser */
 import React, { Component, Fragment } from "react";
-import { View } from "react-native";
 import { AdContainer } from "@times-components/ad";
 import Button from "@times-components/button";
 import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import { normaliseWidthForAssetRequestCache } from "@times-components/utils";
+import {
+  TcView,
+  normaliseWidthForAssetRequestCache
+} from "@times-components/utils";
 import LazyLoad from "@times-components/lazy-load";
 import { scrollUpToPaging } from "./utils/index";
 import ArticleListError from "./article-list-error";
@@ -82,10 +84,10 @@ class ArticleList extends Component {
     const ErrorComponent = (
       <ListContentContainer>
         {paginationComponent()}
-        <View style={styles.listContentErrorContainer}>
+        <TcView style={styles.listContentErrorContainer}>
           <ArticleListError />
           <Button onPress={refetch} style={retryButtonStyles} title="Retry" />
-        </View>
+        </TcView>
       </ListContentContainer>
     );
 
@@ -112,7 +114,7 @@ class ArticleList extends Component {
       data.length === 0 ? (
         <ArticleListEmptyState message={emptyStateMessage} />
       ) : (
-        <View>
+        <TcView>
           <ListContentContainer>
             {paginationComponent({ autoScroll: false, hideResults: false })}
           </ListContentContainer>
@@ -173,7 +175,7 @@ class ArticleList extends Component {
               );
             })}
           {paginationComponent({ autoScroll: scrollToTop, hideResults: true })}
-        </View>
+        </TcView>
       );
 
     if (!articlesLoading) receiveChildList(data);
@@ -181,7 +183,7 @@ class ArticleList extends Component {
     return (
       <LazyLoad rootMargin={spacing(40)} threshold={0}>
         {({ clientHasRendered, observed, registerNode }) => (
-          <View accessibilityRole="main">
+          <TcView role="main">
             {articleListHeader}
             {error
               ? ErrorComponent
@@ -190,7 +192,7 @@ class ArticleList extends Component {
                   observed,
                   registerNode
                 })}
-          </View>
+          </TcView>
         )}
       </LazyLoad>
     );

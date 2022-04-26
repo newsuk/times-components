@@ -1,14 +1,16 @@
 import React, { Fragment } from "react";
-import { Text } from "react-native";
+import { TcText, checkStylesForUnits } from "@times-components/utils";
 import styles from "./styles";
 
 const ArticleListError = () => (
   <Fragment>
-    <Text style={styles.listErrorHeading}>Something&apos;s gone wrong</Text>
-    <Text style={styles.listErrorMessage}>
+    <TcText style={checkStylesForUnits(styles.listErrorHeading)}>
+      Something&apos;s gone wrong
+    </TcText>
+    <TcText style={checkStylesForUnits(styles.listErrorMessage)}>
       We can&apos;t load the page you have requested. Please check your network
       connection and retry to continue
-    </Text>
+    </TcText>
   </Fragment>
 );
 
