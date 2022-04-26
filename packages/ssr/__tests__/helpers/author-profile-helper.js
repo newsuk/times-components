@@ -47,7 +47,7 @@ export default (options = {}) => {
       cy.url().should("include", "?page=1");
     });
 
-    it.only("should pass basic a11y test", () => {
+    it("should pass basic a11y test", () => {
       cy.injectAxe();
       cy.wait(1000);
       cy.configureAxe({

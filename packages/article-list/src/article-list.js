@@ -183,7 +183,7 @@ class ArticleList extends Component {
     return (
       <LazyLoad rootMargin={spacing(40)} threshold={0}>
         {({ clientHasRendered, observed, registerNode }) => (
-          <TcView accessibilityRole="main">
+          <TcView role="main">
             {articleListHeader}
             {error
               ? ErrorComponent
