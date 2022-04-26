@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.5.2...@times-components/context@1.6.0) (2022-04-26)
+
+
+### Features
+
+* **TDP-1693:** removed react native from article list ([#2929](https://github.com/newsuk/times-components/issues/2929)) ([ff1d9e9](https://github.com/newsuk/times-components/commit/ff1d9e9888d5f7933f1bcf6dfabfc73aa0bd4da2))
+
+
+
+
+
 ## [1.5.2](https://github.com/newsuk/times-components/compare/@times-components/context@1.5.1...@times-components/context@1.5.2) (2022-04-22)
 
 **Note:** Version bump only for package @times-components/context
