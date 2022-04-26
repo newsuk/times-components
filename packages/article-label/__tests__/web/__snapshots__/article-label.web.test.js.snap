@@ -2,7 +2,7 @@
 
 exports[`Article Label test on web renders ArticleLabel 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 ffdJsd"
   style={
     Object {
       "color": "#008347",
@@ -23,7 +23,7 @@ exports[`Article Label test on web renders ArticleLabel 1`] = `
 
 exports[`Article Label test on web renders ArticleLabel with GraphQL Colour type 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 ffdJsd"
   style={
     Object {
       "color": "#008347",
