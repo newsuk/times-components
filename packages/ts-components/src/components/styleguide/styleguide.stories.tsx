@@ -1,68 +1,48 @@
-
-import React, {Fragment} from 'react';
+import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
-// import { date } from '@storybook/addon-knobs';
-// import {
-//   NewArticleFlag,
-//   UpdatedArticleFlag,
-//   ExclusiveArticleFlag,
-//   SponsoredArticleFlag,
-//   LongReadArticleFlag,
-//   ArticleFlags
-// } from './ArticleFlag';
-// import { LiveArticleFlag, BreakingArticleFlag } from './LiveArticleFlag';
-// import { UpdatedTimeProvider } from '../../helpers/time/UpdatedTimeProvider';
-import { 
-    TcScrollView, 
-    TcText, TcView } from "@times-components/utils";
+import { TcScrollView, TcText, TcView } from '@times-components/utils';
 
- import timesStyleguide
- , {
-   Animations,
-   colours,
-   fonts,
-//   scales
- } 
-from 
-"./Styleguide";
+import timesStyleguide, { Animations, colours, fonts } from './Styleguide';
 
-import styles from "./helpers/styleguide.styles";
+import styles from './helpers/styleguide.styles';
 
-const getStories = ({ colourMap, name }: {colourMap:any; name: string}) => {
-    const story = {
-      component: () => {
-        const colourBoxes = Object.keys(colourMap).map(colourName => (
-            <TcView style={styles.container}>
-            <TcView style={{ ...styles.box, backgroundColor:colourMap[colourName]}} />
-            <TcText style={styles.text}>
-              {colourName} - {colourMap[colourName]}
-            </TcText>
-          </TcView>
-        ));
-  
-        return <TcView style={styles.display}>{colourBoxes}</TcView>;
-      },
-      name,
-      type: "story"
-    };
-  
-    return [{ ...story, platform: "web" }];
-  };
-  
-  const getBuilder = () => {
-    const bulder = {
-      add: ({ colourMap, name }: any) => {
-            // @ts-ignore
-        bulder.stories.push(...getStories({ colourMap, name }));
-        return bulder;
-      },
-      stories: []
-    };
-  
-    return bulder;
+const getStories = ({ colourMap, name }: { colourMap: any; name: string }) => {
+  const story = {
+    component: () => {
+      const colourBoxes = Object.keys(colourMap).map(colourName => (
+        <TcView style={styles.container}>
+          <TcView
+            style={{ ...styles.box, backgroundColor: colourMap[colourName] }}
+          />
+          <TcText style={styles.text}>
+            {colourName} - {colourMap[colourName]}
+          </TcText>
+        </TcView>
+      ));
+
+      return <TcView style={styles.display}>{colourBoxes}</TcView>;
+    },
+    name,
+    type: 'story'
   };
 
-  const fontDisplayer = (fontFamily: string, phrase: any, fontSizes: {}) =>
+  return [{ ...story, platform: 'web' }];
+};
+
+const getBuilder = () => {
+  const bulder = {
+    add: ({ colourMap, name }: any) => {
+      // @ts-ignore
+      bulder.stories.push(...getStories({ colourMap, name }));
+      return bulder;
+    },
+    stories: []
+  };
+
+  return bulder;
+};
+
+const fontDisplayer = (fontFamily: string, phrase: any, fontSizes: {}) =>
   Object.keys(fontSizes).map(fontSize => (
     <Fragment key={fontSize}>
       <TcText style={styles.subHeadline}>{fontSize}</TcText>
@@ -70,7 +50,7 @@ const getStories = ({ colourMap, name }: {colourMap:any; name: string}) => {
         style={{
           ...styles.showoffFonts,
           fontFamily,
-                   // @ts-ignore
+          // @ts-ignore
           fontSize: fontSizes[fontSize]
         }}
       >
@@ -79,12 +59,9 @@ const getStories = ({ colourMap, name }: {colourMap:any; name: string}) => {
     </Fragment>
   ));
 /* tslint:disable-next-line */
-const fontFixture = (
-    //select: any
-    ) => {
-  //const scale = select("Scale", scales, scales.large);
+const fontFixture = () => {
   const styleguide = timesStyleguide();
-  const phrase = "The Quick Brown Fox Jumps Over the Lazy Dog";
+  const phrase = 'The Quick Brown Fox Jumps Over the Lazy Dog';
   return (
     <TcScrollView>
       <TcView style={styles.showoffFontsContainer}>
@@ -170,57 +147,53 @@ const fontFixture = (
 
 const colourStoriesBuilder = getBuilder();
 colourStoriesBuilder
-  .add({ colourMap: colours.functional, name: "Functional Colours" })
+  .add({ colourMap: colours.functional, name: 'Functional Colours' })
   .add({
     colourMap: colours.secondarySectionColours,
-    name: "Secondary Section Colours"
+    name: 'Secondary Section Colours'
   })
-  .add({ colourMap: colours.section, name: "Section Colours" });
+  .add({ colourMap: colours.section, name: 'Section Colours' });
 
+const children = [...colourStoriesBuilder.stories];
+// ,
+// name: "Helpers/Styleguide"
 
-  const children = [
-    ...colourStoriesBuilder.stories,
-    {
-      component: () => (
-        <Animations.FadeIn>
-          <TcView style={styles.animationBox}>
-            <TcText style={styles.text}>Fade In</TcText>
-          </TcView>
-        </Animations.FadeIn>
-      ),
-      name: "Animations",
-      type: "story"
-    },
-    {
-        // component({ select }: any) {
-        //     return fontFixture(select);
-      component() {
-        return fontFixture();
-      },
-      name: "Fonts",
-      type: "story"
-    }
-  ]
-  //,
-  //name: "Helpers/Styleguide"
-
-console.log(children)
+console.log(children);
 
 /**  EXAMPLE */
 storiesOf('Typescript Component/styleguide', module)
-//   .add('', () => {
-//     const label = 'Updated Date/Time';
-//     const defaultValue = new Date();
-//     const groupId = 'Options';
-//     // const value = date(label, defaultValue, groupId);
-//     // const updated = new Date(value).toISOString();
+  .add('Fonts', () => {
+    return fontFixture();
+  })
+  .add('Animations', () => {
+    return (
+      <Animations.FadeIn>
+        <TcView style={styles.animationBox}>
+          <TcText style={styles.text}>Fade In</TcText>
+        </TcView>
+      </Animations.FadeIn>
+    );
+  });
 
-//     return (
-//         <div/>
-//     //   <UpdatedTimeProvider updatedTime={updated}>
-//     //     <LiveArticleFlag />
-//     //   </UpdatedTimeProvider>
-//     );
-//   })
+/** 
+const getStories = ({ colourMap, name }: {colourMap:any; name: string}) => {
+    const story = {
+      component: () => {
+        const colourBoxes = Object.keys(colourMap).map(colourName => (
+            <TcView style={styles.container}>
+            <TcView style={{ ...styles.box, backgroundColor:colourMap[colourName]}} />
+            <TcText style={styles.text}>
+              {colourName} - {colourMap[colourName]}
+            </TcText>
+          </TcView>
+        ));
   
-
+        return <TcView style={styles.display}>{colourBoxes}</TcView>;
+      },
+      name,
+      type: "story"
+    };
+  
+    return [{ ...story, platform: "web" }];
+  };
+  */

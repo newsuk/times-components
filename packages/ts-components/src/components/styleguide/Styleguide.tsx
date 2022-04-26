@@ -31,7 +31,6 @@ export default ({ scale = scales.medium } = {}) => {
   };
 };
 
-
 export {
   Animations,
   breakpoints,

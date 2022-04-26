@@ -1,9 +1,9 @@
-import { fonts } from "../Styleguide";
-import {timesFontSizes as fontSizes} from "../fonts/fonts";
+import { fonts } from '../Styleguide';
+import { timesFontSizes as fontSizes } from '../fonts/fonts';
 
 const styles = {
   animationBox: {
-    backgroundColor: "#CCCCCC",
+    backgroundColor: '#CCCCCC',
     margin: 50,
     padding: 100
   },
@@ -12,19 +12,19 @@ const styles = {
     marginBottom: 10
   },
   container: {
-    borderColor: "#DBDBDB",
+    borderColor: '#DBDBDB',
     borderWidth: 1,
     margin: 20,
     paddingBottom: 10,
     width: 250
   },
   display: {
-    flexDirection: "row",
-    flexWrap: "wrap"
+    flexDirection: 'row',
+    flexWrap: 'wrap'
   },
   headline: {
     fontSize: fontSizes.body,
-    fontWeight: "bold",
+    fontWeight: 'bold',
     marginBottom: 10
   },
   showoffFonts: {
@@ -34,21 +34,21 @@ const styles = {
     marginTop: 10
   },
   showoffFontsContainer: {
-    borderBottomColor: "#CCCCCC",
+    borderBottomColor: '#CCCCCC',
     borderBottomWidth: 1,
     margin: 20
   },
   subHeadline: {
     fontSize: fontSizes.meta,
-    fontWeight: "bold",
+    fontWeight: 'bold',
     marginLeft: 10,
     marginTop: 10
   },
   text: {
-    color: "#333333",
+    color: '#333333',
     fontFamily: fonts.body,
     fontSize: fontSizes.caption,
-    textAlign: "center"
+    textAlign: 'center'
   }
 };
 
