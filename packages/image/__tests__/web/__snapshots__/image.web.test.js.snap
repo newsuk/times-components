@@ -12,6 +12,31 @@ exports[`1. default layout 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  border-radius: 0;
+  margin: 0px;
   min-height: 0px;
   min-width: 0px;
   padding: 0px;
@@ -72,6 +97,31 @@ exports[`2. default layout without uri 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  border-radius: 0;
   margin: 0px;
   min-height: 0px;
   min-width: 0px;
@@ -134,6 +184,31 @@ exports[`3. default layout without aspect ratio 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  border-radius: 0;
+  margin: 0px;
   min-height: 0px;
   min-width: 0px;
   padding: 0px;
@@ -194,6 +269,33 @@ exports[`4. rounded image 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  border-radius: 50%;
   margin: 0px;
   min-height: 0px;
   min-width: 0px;
@@ -256,6 +358,31 @@ exports[`5. with existing url params 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  border-radius: 0;
+  margin: 0px;
   min-height: 0px;
   min-width: 0px;
   padding: 0px;
@@ -317,6 +444,9 @@ exports[`6. with disabled placeholder 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
   min-height: 0px;
   min-width: 0px;
   padding: 0px;
@@ -354,6 +484,9 @@ exports[`7. remove the low res image after the high res image has transitioned i
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
   margin: 0px;
   min-height: 0px;
   min-width: 0px;
@@ -406,6 +539,9 @@ exports[`7. remove the low res image after the high res image has transitioned i
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
   min-height: 0px;
   min-width: 0px;
   padding: 0px;
@@ -443,6 +579,31 @@ exports[`8. only a low res image 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  border-radius: 0;
   margin: 0px;
   min-height: 0px;
   min-width: 0px;
@@ -505,6 +666,31 @@ exports[`9. fade in the low res image 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  border-radius: 0;
+  margin: 0px;
   min-height: 0px;
   min-width: 0px;
   padding: 0px;
@@ -566,6 +752,9 @@ exports[`9. fade in the low res image 2`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
   min-height: 0px;
   min-width: 0px;
   padding: 0px;
@@ -603,6 +792,31 @@ exports[`10. both high and low res sizes 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  border-radius: 0;
   margin: 0px;
   min-height: 0px;
   min-width: 0px;
