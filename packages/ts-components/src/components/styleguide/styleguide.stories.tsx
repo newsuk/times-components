@@ -58,7 +58,7 @@ const fontDisplayer = (fontFamily: string, phrase: any, fontSizes: {}) =>
       </TcText>
     </Fragment>
   ));
-/* tslint:disable-next-line */
+
 const fontFixture = () => {
   const styleguide = timesStyleguide();
   const phrase = 'The Quick Brown Fox Jumps Over the Lazy Dog';
