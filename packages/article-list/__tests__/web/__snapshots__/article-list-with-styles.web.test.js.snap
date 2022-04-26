@@ -1,30 +1,93 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. article list 1`] = `
-.c2 {
+.c3 {
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
 }
 
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   margin: 0 auto;
   max-width: 680px;
   width: 100%;
 }
 
-.c1 {
+.c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-bottom: 10px;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c3 {
+.c4 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c4 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -45,25 +108,25 @@ exports[`1. article list 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 {
+  .c1 {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 @media (min-width:1320px) {
-  .c0 {
+  .c1 {
     max-width: 760px;
   }
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c2 {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .c1 .articleListImage {
+  .c2 .articleListImage {
     -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2;
@@ -73,7 +136,7 @@ exports[`1. article list 1`] = `
     padding-right: 15px;
   }
 
-  .c1 .articleListContent {
+  .c2 .articleListContent {
     -webkit-flex: 2.7;
     -ms-flex: 2.7;
     flex: 2.7;
@@ -85,75 +148,82 @@ exports[`1. article list 1`] = `
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c4 {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     min-height: 90px;
   }
 }
 
 @media (min-width:970px) {
-  .c4 {
+  .c5 {
     min-height: 250px;
   }
 }
 
 <style>
-.S1 {
-  -ms-flex-negative: 1;
-  -ms-flex-positive: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-flex: 1;
-  -webkit-flex-basis: 0%;
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-basis: 0%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  max-width: 760px;
+.IS1 {
+  max-width: 760;
+  flex: 1;
 }
 
-.S2 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
+.IS2 {
   align-items: stretch;
-  -ms-flex-direction: row;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
   flex-direction: row;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
 }
 
-.S3 {
-  background-color: rgba(219,219,219,1.00);
-  height: 1px;
+.IS3 {
+  background-color: #DBDBDB;
+  height: 1;
+}
+
+.IS4 {
+  background-color: #DBDBDB;
+  height: 1;
+}
+
+.IS5 {
+  background-color: #DBDBDB;
+  height: 1;
+}
+
+.IS6 {
+  background-color: #DBDBDB;
+  height: 1;
+}
+
+.IS7 {
+  max-width: 760;
+  flex: 1;
+}
+
+.IS8 {
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: center;
 }
 </style>
 
-<main
-  className="css-view-1dbjc4n"
+<div
+  className="c0"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="c0"
   >
     <div
-      className="c0 responsive__ListContentContainer-sc-1c8x8xk-0 c0 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="css-view-1dbjc4n r-alignItems-1oszu61 r-flexDirection-18u37iz r-justifyContent-1777fci S2"
+        className="c0 IS2"
       >
         <div
-          className="css-view-1dbjc4n r-flex-13awgt0 r-maxWidth-jjmaes S1"
+          className="c0 IS1"
         >
           <Pagination />
         </div>
@@ -161,18 +231,18 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 responsive__ListContentContainer-sc-1c8x8xk-0 c0 css-view-1dbjc4n"
+        className="c1"
       >
         <Link>
           <div
-            className="c1 responsive__ListItemWrapper-sc-1c8x8xk-1 c1 css-view-1dbjc4n"
+            className="c2"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 animations__FadeIn-sc-2iiu4y-0 c2 css-view-1dbjc4n"
+                className="c3 animations__FadeIn-sc-2iiu4y-0 c3 css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>
@@ -183,25 +253,25 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 responsive__ListContentContainer-sc-1c8x8xk-0 c0 css-view-1dbjc4n"
+        className="c1"
       >
         <div
-          className="c3 responsive__ListItemSeparator-sc-1c8x8xk-2 c3 css-view-1dbjc4n"
+          className="c4"
         >
           <div
-            className="css-view-1dbjc4n r-backgroundColor-oyv1ms r-height-109y4c4 S3"
+            className="c0 IS3"
           />
         </div>
         <Link>
           <div
-            className="c1 responsive__ListItemWrapper-sc-1c8x8xk-1 c1 css-view-1dbjc4n"
+            className="c2"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 animations__FadeIn-sc-2iiu4y-0 c2 css-view-1dbjc4n"
+                className="c3 animations__FadeIn-sc-2iiu4y-0 c3 css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>
@@ -212,25 +282,25 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 responsive__ListContentContainer-sc-1c8x8xk-0 c0 css-view-1dbjc4n"
+        className="c1"
       >
         <div
-          className="c3 responsive__ListItemSeparator-sc-1c8x8xk-2 c3 css-view-1dbjc4n"
+          className="c4"
         >
           <div
-            className="css-view-1dbjc4n r-backgroundColor-oyv1ms r-height-109y4c4 S3"
+            className="c0 IS4"
           />
         </div>
         <Link>
           <div
-            className="c1 responsive__ListItemWrapper-sc-1c8x8xk-1 c1 css-view-1dbjc4n"
+            className="c2"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 animations__FadeIn-sc-2iiu4y-0 c2 css-view-1dbjc4n"
+                className="c3 animations__FadeIn-sc-2iiu4y-0 c3 css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>
@@ -241,25 +311,25 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 responsive__ListContentContainer-sc-1c8x8xk-0 c0 css-view-1dbjc4n"
+        className="c1"
       >
         <div
-          className="c3 responsive__ListItemSeparator-sc-1c8x8xk-2 c3 css-view-1dbjc4n"
+          className="c4"
         >
           <div
-            className="css-view-1dbjc4n r-backgroundColor-oyv1ms r-height-109y4c4 S3"
+            className="c0 IS5"
           />
         </div>
         <Link>
           <div
-            className="c1 responsive__ListItemWrapper-sc-1c8x8xk-1 c1 css-view-1dbjc4n"
+            className="c2"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 animations__FadeIn-sc-2iiu4y-0 c2 css-view-1dbjc4n"
+                className="c3 animations__FadeIn-sc-2iiu4y-0 c3 css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>
@@ -270,25 +340,25 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 responsive__ListContentContainer-sc-1c8x8xk-0 c0 css-view-1dbjc4n"
+        className="c1"
       >
         <div
-          className="c3 responsive__ListItemSeparator-sc-1c8x8xk-2 c3 css-view-1dbjc4n"
+          className="c4"
         >
           <div
-            className="css-view-1dbjc4n r-backgroundColor-oyv1ms r-height-109y4c4 S3"
+            className="c0 IS6"
           />
         </div>
         <Link>
           <div
-            className="c1 responsive__ListItemWrapper-sc-1c8x8xk-1 c1 css-view-1dbjc4n"
+            className="c2"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 animations__FadeIn-sc-2iiu4y-0 c2 css-view-1dbjc4n"
+                className="c3 animations__FadeIn-sc-2iiu4y-0 c3 css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>
@@ -298,19 +368,19 @@ exports[`1. article list 1`] = `
       </div>
     </div>
     <div
-      className="c4"
+      className="c5"
     >
       <AdContainer />
     </div>
     <div
-      className="css-view-1dbjc4n r-alignItems-1oszu61 r-flexDirection-18u37iz r-justifyContent-1777fci S2"
+      className="c0 IS8"
     >
       <div
-        className="css-view-1dbjc4n r-flex-13awgt0 r-maxWidth-jjmaes S1"
+        className="c0 IS7"
       >
         <Pagination />
       </div>
     </div>
   </div>
-</main>
+</div>
 `;

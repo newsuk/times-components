@@ -19,6 +19,18 @@ exports[`1. page error 1`] = `
   z-index: 0;
 }
 
+.c5 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
 .c3 {
   display: block;
   opacity: 0;
@@ -30,6 +42,21 @@ exports[`1. page error 1`] = `
 }
 
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -46,11 +73,44 @@ exports[`1. page error 1`] = `
 }
 
 .c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
   max-width: 300px;
   width: 100%;
+}
+
+.c4 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
 }
 
 @media (min-width:768px) {
@@ -91,25 +151,6 @@ exports[`1. page error 1`] = `
 }
 
 <style>
-.S1 {
-  -ms-flex-item-align: center;
-  -webkit-align-self: center;
-  align-self: center;
-  color: rgba(29,29,27,1.00);
-  font-family: TimesModern-Bold;
-  font-size: 26px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.S2 {
-  color: rgba(105,105,105,1.00);
-  font-family: TimesDigitalW04-Regular;
-  font-size: 18px;
-  text-align: center;
-}
-
 .IS1 {
   max-width: 25%;
   max-height: 50%;
@@ -134,16 +175,35 @@ exports[`1. page error 1`] = `
 
 .IS4 {
   align-self: center;
+  color: #1D1D1B;
+  font-family: TimesModern-Bold;
+  font-size: 26;
+  line-height: 26px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.IS5 {
+  color: #696969;
+  font-family: TimesDigitalW04-Regular;
+  font-size: 18;
+  line-height: 27px;
+  text-align: center;
+}
+
+.IS6 {
+  align-self: center;
   margin-bottom: 10px;
   margin-top: 40px;
 }
 </style>
 
 <div
-  className="c0 responsive__PageErrorContainer-sc-1c8x8xk-5 c0 css-view-1dbjc4n"
+  className="c0"
 >
   <div
-    className="c1 responsive__PageErrorImageContainer-sc-1c8x8xk-6 c1 css-view-1dbjc4n"
+    className="c1"
   >
     <div
       className="c2"
@@ -169,20 +229,20 @@ exports[`1. page error 1`] = `
     </div>
   </div>
   <div
-    className="c4 responsive__PageErrorContentContainer-sc-1c8x8xk-7 c4 css-view-1dbjc4n"
+    className="c4"
   >
     <div
-      className="css-text-901oao r-alignSelf-1kihuf0 r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-yy2aun r-lineHeight-eaezby r-marginBottom-15d164r r-marginTop-1x0uki6 r-textAlign-q4m81j S1"
+      className="c5 IS4"
     >
       Something's gone wrong
     </div>
     <div
-      className="css-text-901oao r-color-1khp51w r-fontFamily-lmhck6 r-fontSize-1i10wst r-lineHeight-1kt6imw r-textAlign-q4m81j S2"
+      className="c5 IS5"
     >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </div>
     <Button
-      className="IS4"
+      className="IS6"
     />
   </div>
 </div>
@@ -190,12 +250,45 @@ exports[`1. page error 1`] = `
 
 exports[`2. article list 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   margin: 0 auto;
   max-width: 680px;
   width: 100%;
 }
 
-.c2 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -210,7 +303,7 @@ exports[`2. article list 1`] = `
   height: 50px;
 }
 
-.c3 {
+.c4 {
   border-style: solid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -228,29 +321,39 @@ exports[`2. article list 1`] = `
   border-bottom-width: 1px;
   border-top-color: #DBDBDB;
   border-top-width: 1px;
+}
+
+.c7 {
+  border-style: solid;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-top-color: #DBDBDB;
+  border-top-width: 1px;
+}
+
+.c2 {
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .c6 {
-  border-style: solid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 50px;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-top-color: #DBDBDB;
-  border-top-width: 1px;
-}
-
-.c1 {
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -261,35 +364,25 @@ exports[`2. article list 1`] = `
 }
 
 .c5 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c4 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
 @media (min-width:768px) {
-  .c0 {
+  .c1 {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 @media (min-width:1320px) {
-  .c0 {
+  .c1 {
     max-width: 760px;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c3 {
     left: 0;
     right: 0;
     position: absolute;
@@ -297,98 +390,83 @@ exports[`2. article list 1`] = `
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c4 {
     border-top-width: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c2 {
     margin-top: 30px;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 <style>
-.S1 {
-  color: rgba(105,105,105,1.00);
-  font-family: GillSansMTStd-Medium;
-  font-size: 15px;
-  padding-top: 4px;
+.IS1 {
+  max-width: 760;
+  flex: 1;
 }
 
-.S2 {
-  -ms-flex-negative: 1;
-  -ms-flex-positive: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-flex: 1;
-  -webkit-flex-basis: 0%;
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-basis: 0%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  max-width: 760px;
-}
-
-.S3 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
+.IS2 {
   align-items: stretch;
-  -ms-flex-direction: row;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
   flex-direction: row;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.IS3 {
+  max-width: 760;
+  flex: 1;
+}
+
+.IS4 {
+  align-items: stretch;
+  flex-direction: row;
   justify-content: center;
 }
 </style>
 
-<main
-  className="css-view-1dbjc4n"
+<div
+  className="c0"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="c0"
   >
     <div
-      className="c0 responsive__ListContentContainer-sc-1c8x8xk-0 c0 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="css-view-1dbjc4n r-alignItems-1oszu61 r-flexDirection-18u37iz r-justifyContent-1777fci S3"
+        className="c0 IS2"
       >
         <div
-          className="css-view-1dbjc4n r-flex-13awgt0 r-maxWidth-jjmaes S2"
+          className="c0 IS1"
         >
           <div
-            className="c1 pagination-container__ContainerWithResults-csg9hq-0 c1 css-view-1dbjc4n"
+            className="c2 pagination-container__ContainerWithResults-csg9hq-0 c2 css-view-1dbjc4n"
           >
             <div
-              className="c2 results__MessageContainer-sc-1f306gs-0 c2 css-view-1dbjc4n"
+              className="c3 results__MessageContainer-sc-1f306gs-0 c3 css-view-1dbjc4n"
             >
               <div
-                className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-a023e6 r-lineHeight-fxxt2n r-paddingTop-1h8ys4a S1"
+                className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-a023e6 r-lineHeight-fxxt2n r-paddingTop-1h8ys4a"
               >
                 Showing 0 - 0 of 0 results
               </div>
             </div>
             <div
-              className="c3 pagination-border__BorderWithResults-zd8d3i-0 c3 css-view-1dbjc4n"
+              className="c4 pagination-border__BorderWithResults-zd8d3i-0 c4 css-view-1dbjc4n"
             >
               <div
-                className="c4 responsive__LinkContainer-ac98ik-0 c4 css-view-1dbjc4n"
+                className="c5 responsive__LinkContainer-ac98ik-0 c5 css-view-1dbjc4n"
               />
               <div
-                className="c4 responsive__LinkContainer-ac98ik-0 c4 css-view-1dbjc4n"
+                className="c5 responsive__LinkContainer-ac98ik-0 c5 css-view-1dbjc4n"
               />
             </div>
           </div>
@@ -397,34 +475,34 @@ exports[`2. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 responsive__ListContentContainer-sc-1c8x8xk-0 c0 css-view-1dbjc4n"
+        className="c1"
       >
         ArticleListItem
       </div>
     </div>
     <div />
     <div
-      className="css-view-1dbjc4n r-alignItems-1oszu61 r-flexDirection-18u37iz r-justifyContent-1777fci S3"
+      className="c0 IS4"
     >
       <div
-        className="css-view-1dbjc4n r-flex-13awgt0 r-maxWidth-jjmaes S2"
+        className="c0 IS3"
       >
         <div
-          className="c5 pagination-container__ContainerWithoutResults-csg9hq-1 c5 css-view-1dbjc4n"
+          className="c6 pagination-container__ContainerWithoutResults-csg9hq-1 c6 css-view-1dbjc4n"
         >
           <div
-            className="c6 pagination-border__BorderWithoutResults-zd8d3i-1 c6 css-view-1dbjc4n"
+            className="c7 pagination-border__BorderWithoutResults-zd8d3i-1 c7 css-view-1dbjc4n"
           >
             <div
-              className="c4 responsive__LinkContainer-ac98ik-0 c4 css-view-1dbjc4n"
+              className="c5 responsive__LinkContainer-ac98ik-0 c5 css-view-1dbjc4n"
             />
             <div
-              className="c4 responsive__LinkContainer-ac98ik-0 c4 css-view-1dbjc4n"
+              className="c5 responsive__LinkContainer-ac98ik-0 c5 css-view-1dbjc4n"
             />
           </div>
         </div>
       </div>
     </div>
   </div>
-</main>
+</div>
 `;
