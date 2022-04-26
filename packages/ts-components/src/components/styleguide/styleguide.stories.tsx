@@ -6,41 +6,22 @@ import timesStyleguide, { Animations, colours, fonts } from './Styleguide';
 
 import styles from './helpers/styleguide.styles';
 
-const getStories = ({ colourMap, name }: { colourMap: any; name: string }) => {
-  const story = {
-    component: () => {
+
+const getStories = (
+  colourMap: {}
+  ) => {
       const colourBoxes = Object.keys(colourMap).map(colourName => (
         <TcView style={styles.container}>
           <TcView
-            style={{ ...styles.box, backgroundColor: colourMap[colourName] }}
-          />
-          <TcText style={styles.text}>
-            {colourName} - {colourMap[colourName]}
-          </TcText>
+             // @ts-ignore
+            style={{ ...styles.box, backgroundColor: colourMap[colourName] }}/><TcText style={styles.text}>{colourName} - {colourMap[colourName]}</TcText>
         </TcView>
       ));
 
       return <TcView style={styles.display}>{colourBoxes}</TcView>;
-    },
-    name,
-    type: 'story'
-  };
 
-  return [{ ...story, platform: 'web' }];
 };
 
-const getBuilder = () => {
-  const bulder = {
-    add: ({ colourMap, name }: any) => {
-      // @ts-ignore
-      bulder.stories.push(...getStories({ colourMap, name }));
-      return bulder;
-    },
-    stories: []
-  };
-
-  return bulder;
-};
 
 const fontDisplayer = (fontFamily: string, phrase: any, fontSizes: {}) =>
   Object.keys(fontSizes).map(fontSize => (
@@ -145,22 +126,6 @@ const fontFixture = () => {
   );
 };
 
-const colourStoriesBuilder = getBuilder();
-colourStoriesBuilder
-  .add({ colourMap: colours.functional, name: 'Functional Colours' })
-  .add({
-    colourMap: colours.secondarySectionColours,
-    name: 'Secondary Section Colours'
-  })
-  .add({ colourMap: colours.section, name: 'Section Colours' });
-
-const children = [...colourStoriesBuilder.stories];
-// ,
-// name: "Helpers/Styleguide"
-
-console.log(children);
-
-/**  EXAMPLE */
 storiesOf('Typescript Component/styleguide', module)
   .add('Fonts', () => {
     return fontFixture();
@@ -173,27 +138,24 @@ storiesOf('Typescript Component/styleguide', module)
         </TcView>
       </Animations.FadeIn>
     );
-  });
+  })
+  .add('Section Colours', () => {
+    console.log(colours.functional)
+    return (
+      getStories(colours.section)
+    )
+  })
+  .add('Functional colours', () => {
+    console.log(colours.functional)
+    return (
+      getStories(colours.functional)
+    )
+  })
+  .add('Secondary Section Colours', () => {
+    console.log(colours.functional)
+    return (
+      getStories(colours.secondarySectionColours)
+    )
+  })
 
-/** 
-const getStories = ({ colourMap, name }: {colourMap:any; name: string}) => {
-    const story = {
-      component: () => {
-        const colourBoxes = Object.keys(colourMap).map(colourName => (
-            <TcView style={styles.container}>
-            <TcView style={{ ...styles.box, backgroundColor:colourMap[colourName]}} />
-            <TcText style={styles.text}>
-              {colourName} - {colourMap[colourName]}
-            </TcText>
-          </TcView>
-        ));
-  
-        return <TcView style={styles.display}>{colourBoxes}</TcView>;
-      },
-      name,
-      type: "story"
-    };
-  
-    return [{ ...story, platform: "web" }];
-  };
-  */
+
