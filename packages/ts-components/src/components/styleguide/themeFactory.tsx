@@ -1,61 +1,74 @@
-/* tslint:disable */
-
 import { sectionColours, secondarySectionColours } from './colours/section';
 
-const sectionColourPicker = (section: string, template: string) => {
-  const config = {
-    indepth: {},
-    magazinecomment: {
-      ...sectionColours,
-      ...secondarySectionColours
-    },
-    magazinestandard: {
-      ...sectionColours,
-      ...secondarySectionColours
-    },
-    maincomment: {
-      ...sectionColours
-    },
-    mainstandard: {
-      ...sectionColours
-    },
-    takeoverpage: {}
-  };
-  // @ts-ignore
-  return config[template][section];
+const sectionColourPickerConfig: Record<string, Record<string, string>> = {
+  indepth: {},
+  magazinecomment: {
+    ...sectionColours,
+    ...secondarySectionColours
+  },
+  magazinestandard: {
+    ...sectionColours,
+    ...secondarySectionColours
+  },
+  maincomment: {
+    ...sectionColours
+  },
+  mainstandard: {
+    ...sectionColours
+  },
+  takeoverpage: {}
 };
 
-const magazineFontPicker = (defaultFont: any, section: any, template: any) => {
-  const magazineSections = {
-    culture: 'cultureMagazine',
-    Culture: 'cultureMagazine',
-    style: 'styleMagazine',
-    Style: 'styleMagazine',
-    'The Sunday Times Magazine': 'stMagazine',
-    thesundaytimesmagazine: 'stMagazine',
-    'the sunday times magazine': 'stMagazine'
-  };
-
-  const config = {
-    indepth: magazineSections,
-    magazinecomment: magazineSections,
-    magazinestandard: magazineSections,
-    maincomment: {},
-    mainstandard: {},
-    takeoverpage: {}
-  };
-  // @ts-ignore
-  return config[template][section] || defaultFont;
+const magazineSections: Record<string, string> = {
+  culture: 'cultureMagazine',
+  Culture: 'cultureMagazine',
+  style: 'styleMagazine',
+  Style: 'styleMagazine',
+  'The Sunday Times Magazine': 'stMagazine',
+  thesundaytimesmagazine: 'stMagazine',
+  'the sunday times magazine': 'stMagazine'
 };
 
-const headlineCasePicker = (section: any, template: any) =>
+const magazineSectionsConfig: Record<string, Record<string, string>> = {
+  indepth: magazineSections,
+  magazinecomment: magazineSections,
+  magazinestandard: magazineSections,
+  maincomment: {},
+  mainstandard: {},
+  takeoverpage: {}
+};
+
+type ValueOf<T> = T[keyof T];
+
+const sectionColourPicker = (
+  section: keyof ValueOf<typeof sectionColourPickerConfig>,
+  template: keyof typeof sectionColourPickerConfig
+) => {
+  return sectionColourPickerConfig[template][section];
+};
+
+const magazineFontPicker = (
+  defaultFont: string,
+  section: keyof ValueOf<typeof sectionColourPickerConfig>,
+  template: keyof typeof magazineSectionsConfig
+) => {
+  return magazineSectionsConfig[template][section] || defaultFont;
+};
+
+const headlineCasePicker = (
+  section: keyof typeof magazineSectionsConfig,
+  template: keyof typeof magazineSectionsConfig
+) =>
   section &&
   section.toLowerCase() === 'style' &&
   ['indepth', 'magazinestandard', 'magazinecomment'].includes(template)
     ? 'uppercase'
     : null;
 
-export default (sectionParam: any, templateParam: any) => {
+export default (
+  sectionParam: keyof typeof magazineSectionsConfig,
+  templateParam: keyof typeof magazineSectionsConfig
+) => {
   const section = sectionParam || 'default';
   const template = templateParam || 'mainstandard';
 

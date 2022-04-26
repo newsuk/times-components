@@ -1,4 +1,4 @@
-const mapping = {
+const mapping: Record<string, Record<string, {}>> = {
   body: {
     bodyMobile: 30,
     puffLink: 15,
@@ -60,8 +60,14 @@ const mapping = {
   }
 };
 
-export default ({ font, fontSize }: any) => {
-  // console.log(font, fontSize)
-  // @ts-ignore
+type ValueOf<T> = T[keyof T];
+
+export default ({
+  font,
+  fontSize
+}: {
+  font: keyof typeof mapping;
+  fontSize: keyof ValueOf<typeof mapping>;
+}) => {
   return mapping[font][fontSize];
 };

@@ -3,27 +3,28 @@ import { storiesOf } from '@storybook/react';
 import { TcScrollView, TcText, TcView } from '@times-components/utils';
 
 import timesStyleguide, { Animations, colours, fonts } from './Styleguide';
-
 import styles from './helpers/styleguide.styles';
 
+const getStories = (colourMap: Record<string, string>) => {
+  const colourBoxes = Object.keys(colourMap).map(colourName => (
+    <TcView style={styles.container}>
+      <TcView
+        style={{ ...styles.box, backgroundColor: colourMap[colourName] }}
+      />
+      <TcText style={styles.text}>
+        {colourName} - {colourMap[colourName]}
+      </TcText>
+    </TcView>
+  ));
 
-const getStories = (
-  colourMap: {}
-  ) => {
-      const colourBoxes = Object.keys(colourMap).map(colourName => (
-        <TcView style={styles.container}>
-          <TcView
-             // @ts-ignore
-            style={{ ...styles.box, backgroundColor: colourMap[colourName] }}/><TcText style={styles.text}>{colourName} - {colourMap[colourName]}</TcText>
-        </TcView>
-      ));
-
-      return <TcView style={styles.display}>{colourBoxes}</TcView>;
-
+  return <TcView style={styles.display}>{colourBoxes}</TcView>;
 };
 
-
-const fontDisplayer = (fontFamily: string, phrase: any, fontSizes: {}) =>
+const fontDisplayer = (
+  fontFamily: string,
+  phrase: any,
+  fontSizes: Record<string, number>
+) =>
   Object.keys(fontSizes).map(fontSize => (
     <Fragment key={fontSize}>
       <TcText style={styles.subHeadline}>{fontSize}</TcText>
@@ -31,7 +32,6 @@ const fontDisplayer = (fontFamily: string, phrase: any, fontSizes: {}) =>
         style={{
           ...styles.showoffFonts,
           fontFamily,
-          // @ts-ignore
           fontSize: fontSizes[fontSize]
         }}
       >
@@ -127,35 +127,16 @@ const fontFixture = () => {
 };
 
 storiesOf('Typescript Component/styleguide', module)
-  .add('Fonts', () => {
-    return fontFixture();
-  })
-  .add('Animations', () => {
-    return (
-      <Animations.FadeIn>
-        <TcView style={styles.animationBox}>
-          <TcText style={styles.text}>Fade In</TcText>
-        </TcView>
-      </Animations.FadeIn>
-    );
-  })
-  .add('Section Colours', () => {
-    console.log(colours.functional)
-    return (
-      getStories(colours.section)
-    )
-  })
-  .add('Functional colours', () => {
-    console.log(colours.functional)
-    return (
-      getStories(colours.functional)
-    )
-  })
-  .add('Secondary Section Colours', () => {
-    console.log(colours.functional)
-    return (
-      getStories(colours.secondarySectionColours)
-    )
-  })
-
-
+  .add('Fonts', () => fontFixture())
+  .add('Animations', () => (
+    <Animations.FadeIn>
+      <TcView style={styles.animationBox}>
+        <TcText style={styles.text}>Fade In</TcText>
+      </TcView>
+    </Animations.FadeIn>
+  ))
+  .add('Section Colours', () => getStories(colours.section))
+  .add('Functional colours', () => getStories(colours.functional))
+  .add('Secondary Section Colours', () =>
+    getStories(colours.secondarySectionColours)
+  );
