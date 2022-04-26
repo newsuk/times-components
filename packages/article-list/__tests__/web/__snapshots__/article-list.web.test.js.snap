@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. article list 1`] = `
-<div>
+<div
+  role="main"
+>
   <div>
     <div>
       <div>
@@ -484,7 +486,9 @@ exports[`1. article list 1`] = `
 `;
 
 exports[`2. article list with no images 1`] = `
-<div>
+<div
+  role="main"
+>
   <div>
     <div>
       <div>
@@ -608,7 +612,9 @@ exports[`2. article list with no images 1`] = `
 `;
 
 exports[`3. article list with missing image 1`] = `
-<div>
+<div
+  role="main"
+>
   <div>
     <div>
       <div>
