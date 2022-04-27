@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
-import { TcScrollView, TcText, TcView } from '@times-components/utils';
+import { TcScrollView} from '@times-components/utils';
+import { TcText, TcView } from './components';
 
 import timesStyleguide, { Animations, colours, fonts } from './Styleguide';
 import styles from './helpers/styleguide.styles';

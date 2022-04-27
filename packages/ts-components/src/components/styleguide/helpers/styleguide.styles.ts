@@ -1,7 +1,7 @@
 import { fonts } from '../Styleguide';
 import { timesFontSizes as fontSizes } from '../fonts/fonts';
 
-const styles = {
+const styles: Record< string, Record< string, number | string >> = {
   animationBox: {
     backgroundColor: '#CCCCCC',
     margin: 50,
