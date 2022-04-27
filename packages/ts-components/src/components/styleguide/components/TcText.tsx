@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 // not sure how else to put the default styles, this the default style for a React Native <Text/> component
 import { CSSProperties } from 'react';
-// import styles from '../helpers/styleguide.styles';
-
-// type Style = typeof styles;
 
 type Style = CSSProperties | undefined;
 

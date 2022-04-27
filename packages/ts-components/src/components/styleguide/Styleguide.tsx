@@ -1,5 +1,4 @@
 import 'react';
-
 import colours from './colours/colours';
 import Animations from './Animations';
 
