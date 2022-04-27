@@ -1,6 +1,6 @@
 import 'react';
 import colours from './colours/colours';
-import Animations from './Animations';
+import Animations from './components/Animations';
 
 import breakpoints, {
   editionBreakpoints,

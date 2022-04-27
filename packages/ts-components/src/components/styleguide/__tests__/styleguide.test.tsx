@@ -1,8 +1,16 @@
-import '@testing-library/react';
+import {render} from '@testing-library/react';
 
 import styleguide, { colours, fonts, spacing } from '../Styleguide';
+import {Animations, TcView, TcText} from '../components'
 
 describe('styleguide', () => {
+  describe('components', () => {
+    // it('', () => {})
+
+    it('should render the Animations component', () => {
+      expect()
+    })
+  })
   it('should render the font sizes at the default scale', () => {
     expect(styleguide().fontSizes.bodyMobile).toEqual(17);
   });
