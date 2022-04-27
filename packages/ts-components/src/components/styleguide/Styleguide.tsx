@@ -19,11 +19,11 @@ import spacing, { globalSpacingStyles } from './spacing';
 
 export const tabletRowPadding = 20;
 
-export default ({ scale = scales.medium } = {}) => {
+export default () => {
   return {
     Animations,
     colours,
-    fontFactory: timesFontFactory(scale),
+    fontFactory: timesFontFactory(),
     fonts: fontStyles,
     fontSizes: timesFontSizes,
     lineHeight,

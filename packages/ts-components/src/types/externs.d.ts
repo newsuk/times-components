@@ -54,7 +54,7 @@ declare module '@times-components/utils' {
 
   export const TcView: React.FC<{ style?: React.CSSProperties }>;
   export const TcText: React.FC<{ style?: React.CSSProperties }>;
-  export const TcScrollView: React.FC<{  style?: React.CSSProperties }>;
+  export const TcScrollView: React.FC<{ style?: React.CSSProperties }>;
   export const capitalise: (s: string) => string;
   export const stripTags: (input: string, replaceWith: string) => string;
   export const gqlRgbaToStyle: (colour: string | undefined) => string | null;
@@ -80,11 +80,11 @@ declare module '@times-components/styleguide' {
     supporting: string;
   };
 
-  type FontFactory = () => ({
+  type FontFactory = () => {
     fontFamily: Record<string, string>;
-    fontSize: Record<string, number>
-    lineHeight: ({font: string, fontSize: number}) => number
-  })
+    fontSize: Record<string, number>;
+    lineHeight: ({ font: string, fontSize: number }) => number;
+  };
 
   export const fonts: Fonts;
   export const fontSizes: {

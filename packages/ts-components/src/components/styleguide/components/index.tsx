@@ -1,4 +1,4 @@
-import  TcView  from './TcView'
-import  TcText  from './TcText'
+import TcView from './TcView';
+import TcText from './TcText';
 
-export { TcView, TcText }
+export { TcView, TcText };
