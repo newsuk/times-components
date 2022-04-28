@@ -22,7 +22,7 @@ export default () => {
   return {
     Animations,
     colours,
-    fontFactory: timesFontFactory(),
+    fontFactory: timesFontFactory,
     fonts: fontStyles,
     fontSizes: timesFontSizes,
     lineHeight,

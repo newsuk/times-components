@@ -3,7 +3,7 @@ import { CSSProperties } from 'react';
 
 type Style = CSSProperties | undefined;
 
-export default styled.div<{ style: Style }>`
+export default styled.div<{ style?: Style }>`
   border: 0px solid black;
   box-sizing: border-box;
   display: flex;

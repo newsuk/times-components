@@ -2,7 +2,7 @@ import styleguide from '../Styleguide';
 import { timesFontSizes, fontStyles } from './fonts';
 import lineHeight from '../lineHeight';
 
-export default () => ({
+export default ({
   font,
   fontSize
 }: {
