@@ -16,6 +16,11 @@ import themeFactory from './themeFactory';
 import scales from './scales';
 import spacing, { globalSpacingStyles } from './spacing';
 
+const {
+  nativeTablet,
+  nativeTabletWide
+} = breakpoints;
+
 export const tabletRowPadding = 20;
 
 export default () => {
@@ -46,7 +51,7 @@ export {
   scales,
   spacing,
   globalSpacingStyles,
-  // tabletWidth,
-  // tabletWidthMax,
+  nativeTablet as tabletWidth,
+  nativeTabletWide as tabletWidthMax,
   themeFactory
 };

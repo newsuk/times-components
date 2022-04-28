@@ -59,7 +59,6 @@ export {
   tabletWidthMax,
   themeFactory
 };
-
 export default ({ scale = scales.medium } = {}) => ({
   Animations,
   colours,
