@@ -59,7 +59,7 @@ describe('styleguide', () => {
           <Animations.FadeIn>
             <TcView style={styles.container}>
               <TcText style={styles.text}>Hello World</TcText>
-            </TcView >
+            </TcView>
           </Animations.FadeIn>
         )
       ).toBeTruthy();

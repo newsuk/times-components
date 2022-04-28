@@ -1,17 +1,25 @@
 import '@testing-library/react';
 
 import breakpoints, {
-   editionBreakpointWidths,
-   editionBreakpoints
+  editionBreakpointWidths,
+  editionBreakpoints
 } from '../breakpoints';
 
-import {  getEditionBreakpoint,    sliceContentMaxWidth,
-  editionMaxWidth, globalSpacingStyles, editionBreakpointWidths as styleguideEditionBreakpointWidths, editionBreakpoints as styleguideEditionBreakpoints} from '../Styleguide';
+import {
+  getEditionBreakpoint,
+  sliceContentMaxWidth,
+  editionMaxWidth,
+  globalSpacingStyles,
+  editionBreakpointWidths as styleguideEditionBreakpointWidths,
+  editionBreakpoints as styleguideEditionBreakpoints
+} from '../Styleguide';
 
 describe('breakpoints', () => {
-
   it('should return correct globalSpacingStyles value', () => {
-    expect(globalSpacingStyles).toEqual({"tabletHeadline": {"marginBottom": 5}, "tabletTeaser": {"marginTop": 5}});
+    expect(globalSpacingStyles).toEqual({
+      tabletHeadline: { marginBottom: 5 },
+      tabletTeaser: { marginTop: 5 }
+    });
   });
   it('should return correct sliceContentMaxWidth value', () => {
     expect(sliceContentMaxWidth).toEqual(1180);
@@ -37,7 +45,6 @@ describe('breakpoints', () => {
   it('should retun correct editionBreakpoints value', () => {
     expect(editionBreakpoints.huge).toEqual('huge');
     expect(styleguideEditionBreakpoints.huge).toEqual('huge');
-    
   });
 
   describe('getEditionBreakpoint()', () => {
