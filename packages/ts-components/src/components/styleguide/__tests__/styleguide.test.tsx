@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import styleguide from '../Styleguide';
+import styleguide, { colours, fonts, spacing } from '../Styleguide';
 import { Animations, TcText, TcView } from '../components';
 
 import styles from '../helpers/storybookStyles';
@@ -12,15 +12,15 @@ describe('styleguide', () => {
   });
 
   it('should render the object of section colours', () => {
-    expect(typeof styleguide().colours.section).toBe('object');
+    expect(typeof colours.section).toBe('object');
   });
 
   it('should render the object of functional colours', () => {
-    expect(typeof styleguide().colours.functional).toBe('object');
+    expect(typeof colours.functional).toBe('object');
   });
 
   it('should multiply spacing values and add px property', () => {
-    expect(styleguide().spacing(10)).toEqual('50px');
+    expect(spacing(10)).toEqual('50px');
   });
 
   describe('fonts', () => {
@@ -38,7 +38,7 @@ describe('styleguide', () => {
     });
 
     it('should render the object of font references', () => {
-      expect(typeof styleguide().fonts).toBe('object');
+      expect(typeof fonts).toBe('object');
     });
 
     it('should return object when fontFactory is called', () => {
@@ -59,7 +59,7 @@ describe('styleguide', () => {
           <Animations.FadeIn>
             <TcView style={styles.container}>
               <TcText style={styles.text}>Hello World</TcText>
-            </TcView>
+            </TcView >
           </Animations.FadeIn>
         )
       ).toBeTruthy();
