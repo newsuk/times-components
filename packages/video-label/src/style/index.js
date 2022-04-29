@@ -1,7 +1,7 @@
-import {InArticlePuff, ArticleHeader, safeDecodeURIComponent, styleguide
+import {InArticlePuff, ArticleHeader, safeDecodeURIComponent, styleguide, spacing
 } from "@times-components/ts-components";
 
-console.log(InArticlePuff, ArticleHeader, safeDecodeURIComponent, styleguide)
+console.log(InArticlePuff, ArticleHeader, safeDecodeURIComponent, styleguide, spacing)
 //  const { fontFactory } = styleguide();
 
 const styles = {
