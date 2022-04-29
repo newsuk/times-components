@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.11.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.10.0...@times-components/utils@6.11.0) (2022-04-29)
+
+
+### Features
+
+* **TDP-1830:** convert styleguide to typescript component ([#2918](https://github.com/newsuk/times-components/issues/2918)) ([24620e2](https://github.com/newsuk/times-components/commit/24620e25be9f2827ceedbb2f4cf1fe0ff6ea2ae2))
+
+
+
+
+
 # [6.10.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.9.1...@times-components/utils@6.10.0) (2022-04-25)
 
 
