@@ -3707,6 +3707,14 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
+"@times-components/styleguide@3.38.44":
+  version "3.38.44"
+  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.38.44.tgz#bd2168a1d167c0c1226b8df2bc7c8152011867ca"
+  integrity sha512-D5bfTlL5nj+SuePmIiFolz3aMT8lcaeR/FxCapaFyuSakBG6sWcTucxWtKRwKf/EkV92fJwaAg9ByVd10BWOCA==
+  dependencies:
+    prop-types "15.7.2"
+    styled-components "4.3.2"
+
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
@@ -5591,9 +5599,9 @@ async-retry@^1.2.1:
     retry "0.12.0"
 
 async@^2.4.0, async@^2.6.0, async@^2.6.1, async@^2.6.2:
-  version "2.6.3"
-  resolved "https://registry.yarnpkg.com/async/-/async-2.6.3.tgz#d72625e2344a3656e3a3ad4fa749fa83299d82ff"
-  integrity sha512-zflvls11DCy+dQWzTW2dzuilv8Z5X/pjfmZOWba6TNIVDm+2UDaJmXSOXlasHKfNBs8oo3M0aT50fDEWfKZjXg==
+  version "2.6.4"
+  resolved "https://registry.yarnpkg.com/async/-/async-2.6.4.tgz#706b7ff6084664cd7eae713f6f965433b5504221"
+  integrity sha512-mzo5dfJYwAn29PeiJ0zvwTo04zj8HDJj0Mn8TD7sno7q12prdbnasKJHhkm2c1LgrhlJ0teaea8860oxi51mGA==
   dependencies:
     lodash "^4.17.14"
 
