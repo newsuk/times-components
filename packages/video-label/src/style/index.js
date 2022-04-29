@@ -1,6 +1,8 @@
-import styleguideFactory, { spacing } from "@times-components/styleguide";
+import {InArticlePuff, ArticleHeader, safeDecodeURIComponent, styleguide
+} from "@times-components/ts-components";
 
-const { fontFactory } = styleguideFactory();
+console.log(InArticlePuff, ArticleHeader, safeDecodeURIComponent, styleguide)
+//  const { fontFactory } = styleguide();
 
 const styles = {
   container: {
@@ -14,15 +16,15 @@ const styles = {
     paddingBottom: 2
   },
   title: {
-    ...fontFactory({
-      font: "supporting",
-      fontSize: "cardMetaMobile"
-    }),
+    // ...fontFactory({
+    //   font: "supporting",
+    //   fontSize: "cardMetaMobile"
+    // }),
     flex: -1,
     fontWeight: "400",
     letterSpacing: 1.2,
     lineHeight: 12,
-    marginLeft: spacing(1),
+    // marginLeft: spacing(1),
     paddingTop: 1
   }
 };
