@@ -52,6 +52,9 @@ declare module '@times-components/utils' {
     value: string | number
   ) => string;
 
+  export const TcView: React.FC<{ style?: React.CSSProperties }>;
+  export const TcText: React.FC<{ style?: React.CSSProperties }>;
+  export const TcScrollView: React.FC<{ style?: React.CSSProperties }>;
   export const capitalise: (s: string) => string;
   export const stripTags: (input: string, replaceWith: string) => string;
   export const gqlRgbaToStyle: (colour: string | undefined) => string | null;
@@ -77,15 +80,23 @@ declare module '@times-components/styleguide' {
     supporting: string;
   };
 
+  type FontFactory = () => {
+    fontFamily: Record<string, string>;
+    fontSize: Record<string, number>;
+    lineHeight: ({ font: string, fontSize: number }) => number;
+  };
+
   export const fonts: Fonts;
   export const fontSizes: {
     newsletterPuffCopy: number;
     newsletterPuffHeadline: number;
     newsletterPuffLabel: number;
   };
+  export const timesFontFactory: fontSizes;
   export const spacing: (multiple: number) => number;
   export const breakpoints: Breakpoints;
   export const colours: Colours;
+  export const tabletRowPadding: number;
 
   export const scales: {
     large: string;
@@ -93,10 +104,11 @@ declare module '@times-components/styleguide' {
     xlarge: string;
   };
   const styleguide: () => {
-    colours: any;
-    fontFactory: (v: any) => any;
+    colours: Colours;
+    fontFactory: FontFactory;
   };
 
+  export { styleguide };
   export default styleguide;
 }
 
