@@ -1,7 +1,9 @@
 import React from "react";
 import { IconVideo360Player } from "@times-components/icons";
-import { colours } from "@times-components/styleguide";
+import { styleguide } from "@times-components/ts-components";
 import { Video360Container } from "./styles";
+
+const { colours } = styleguide();
 
 const video360Icon = () => (
   <Video360Container>

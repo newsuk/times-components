@@ -1,6 +1,6 @@
-import styleguideFactory from "@times-components/styleguide";
+import { styleguide } from "@times-components/ts-components";
 
-const { colours, fontFactory, spacing } = styleguideFactory();
+const { colours, fontFactory, spacing } = styleguide();
 const sharedStyles = {
   caption: {
     ...fontFactory({

@@ -1,5 +1,6 @@
-import { colours } from "@times-components/styleguide";
+import { styleguide } from "@times-components/ts-components";
 
+const { colours } = styleguide();
 const styles = {
   item: {
     width: "100%"

@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 import Svg, { G, Path } from "@times-components/svgs";
-import styleguide from "@times-components/styleguide";
+import { styleguide } from "@times-components/ts-components";
 
 import PageLabel from "./page-label";
 

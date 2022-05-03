@@ -1,6 +1,8 @@
 import React from "react";
-import { colours } from "@times-components/styleguide";
+import { styleguide } from "@times-components/ts-components";
 import { ArticleSummaryContent } from "..";
+
+const { colours } = styleguide();
 
 const defaultLabel = "Camilla Long";
 const defaultParagraph =

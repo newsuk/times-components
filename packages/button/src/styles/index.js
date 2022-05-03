@@ -1,4 +1,8 @@
 import styleguide from "@times-components/styleguide";
+// import { styleguide } from "@times-components/ts-components";
+// import { styleguide } from "../../../ts-components";
+
+console.log('ADAM: bob: ', styleguide);
 
 const { colours, fontFactory } = styleguide();
 

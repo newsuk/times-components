@@ -65,7 +65,7 @@
     "@times-components/error-view": "2.3.82",
     "@times-components/icons": "2.16.25",
     "@times-components/image": "6.11.7",
-    "@times-components/styleguide": "3.38.44",
+    "@times-components/ts-components": "1.32.5",
     "@times-components/utils": "6.10.0",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
