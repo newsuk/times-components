@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, colours, fonts } from '@times-components/styleguide';
+import { breakpoints, colours, fonts } from '../styleguide/Styleguide';
 
 export const Container = styled.div<{ sectionColour: string }>`
   display: flex;

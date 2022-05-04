@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, fonts } from '@times-components/styleguide';
+import { breakpoints, fonts } from '../styleguide/Styleguide';
 
 export const Container = styled.div`
   display: flex;
