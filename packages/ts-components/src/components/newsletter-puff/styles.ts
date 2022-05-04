@@ -6,7 +6,7 @@ import {
   fonts,
   fontSizes,
   spacing
-} from '@times-components/styleguide';
+} from '../styleguide/Styleguide';
 
 const View = styled.div`
   align-items: stretch;
