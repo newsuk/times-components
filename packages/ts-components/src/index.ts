@@ -113,6 +113,7 @@ export { UpdatedTimeProvider } from './helpers/time/UpdatedTimeProvider';
 export {
   default as styleguide,
   Animations,
+  breakpoints,
   colours,
   editionBreakpoints,
   editionBreakpointWidths,
