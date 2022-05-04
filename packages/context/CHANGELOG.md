@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.6.0...@times-components/context@1.7.0) (2022-05-04)
+
+
+### Features
+
+* **TDP-1714:** export named breakpoint from ts styleguide  ([75e1583](https://github.com/newsuk/times-components/commit/75e1583bd9ca8ce54edb921b301f36733eeae612))
+
+
+
+
+
 # [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.5.2...@times-components/context@1.6.0) (2022-04-26)
 
 
