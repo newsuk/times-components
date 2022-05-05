@@ -4,7 +4,7 @@ import { TcScrollView } from '@times-components/utils';
 import { TcText, TcView } from './components';
 
 import timesStyleguide, { Animations, colours, fonts } from './Styleguide';
-import styles from './helpers/styleguide.styles';
+import styles from './helpers/storybookStyles';
 
 const getStories = (colourMap: Record<string, string>) => {
   const colourBoxes = Object.keys(colourMap).map(colourName => (

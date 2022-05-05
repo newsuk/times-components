@@ -66,8 +66,8 @@ const headlineCasePicker = (
     : null;
 
 export default (
-  sectionParam: keyof typeof magazineSectionsConfig,
-  templateParam: keyof typeof magazineSectionsConfig
+  sectionParam?: keyof typeof magazineSectionsConfig,
+  templateParam?: keyof typeof magazineSectionsConfig
 ) => {
   const section = sectionParam || 'default';
   const template = templateParam || 'mainstandard';

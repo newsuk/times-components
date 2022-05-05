@@ -1,6 +1,6 @@
 import 'react';
 import colours from './colours/colours';
-import Animations from './Animations';
+import Animations from './components/Animations';
 
 import breakpoints, {
   editionBreakpoints,
@@ -16,13 +16,15 @@ import themeFactory from './themeFactory';
 import scales from './scales';
 import spacing, { globalSpacingStyles } from './spacing';
 
+const { nativeTablet, nativeTabletWide } = breakpoints;
+
 export const tabletRowPadding = 20;
 
 export default () => {
   return {
     Animations,
     colours,
-    fontFactory: timesFontFactory(),
+    fontFactory: timesFontFactory,
     fonts: fontStyles,
     fontSizes: timesFontSizes,
     lineHeight,
@@ -46,7 +48,7 @@ export {
   scales,
   spacing,
   globalSpacingStyles,
-  // tabletWidth,
-  // tabletWidthMax,
+  nativeTablet as tabletWidth,
+  nativeTabletWide as tabletWidthMax,
   themeFactory
 };

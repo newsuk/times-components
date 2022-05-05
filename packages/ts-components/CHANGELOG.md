@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.34.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.33.0...@times-components/ts-components@1.34.0) (2022-05-04)
+
+
+### Features
+
+* **TDP-1714:** export named breakpoint from ts styleguide  ([75e1583](https://github.com/newsuk/times-components/commit/75e1583bd9ca8ce54edb921b301f36733eeae612))
+
+
+
+
+
+# [1.33.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.32.5...@times-components/ts-components@1.33.0) (2022-04-29)
+
+
+### Features
+
+* **TDP-1830:** convert styleguide to typescript component ([#2918](https://github.com/newsuk/times-components/issues/2918)) ([24620e2](https://github.com/newsuk/times-components/commit/24620e25be9f2827ceedbb2f4cf1fe0ff6ea2ae2))
+
+
+
+
+
 ## [1.32.5](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.32.4...@times-components/ts-components@1.32.5) (2022-04-26)
 
 **Note:** Version bump only for package @times-components/ts-components

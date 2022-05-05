@@ -1,4 +1,6 @@
 import TcView from './TcView';
 import TcText from './TcText';
 
-export { TcView, TcText };
+import Animations from './Animations';
+
+export { TcView, TcText, Animations };
