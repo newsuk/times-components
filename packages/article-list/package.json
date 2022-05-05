@@ -76,6 +76,7 @@
     "@times-components/pagination": "3.5.7",
     "@times-components/styleguide": "3.38.44",
     "@times-components/tracking": "2.9.22",
+    "@times-components/ts-components": "1.34.0",
     "@times-components/utils": "6.10.0",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2",

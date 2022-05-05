@@ -5,7 +5,7 @@ import {
   UpdatedTimeProvider
 } from "@times-components/ts-components";
 import Context from "@times-components/context";
-import { fonts } from "@times-components/styleguide";
+import { fonts } from "@times-components/ts-components";
 import { gqlRgbaToStyle } from "@times-components/utils";
 
 import Label from "../article-label/article-label";

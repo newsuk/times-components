@@ -1,4 +1,4 @@
-import { fonts, fontSizes } from "@times-components/styleguide";
+import { fonts, fontSizes } from "@times-components/ts-components";
 import sharedStyles from "./shared";
 
 const styles = {

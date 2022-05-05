@@ -1,5 +1,4 @@
-import { colours } from "@times-components/styleguide";
-
+import { colours } from "@times-components/ts-components";
 const sharedStyles = {
   topicsContainer: {
     borderTopColor: colours.functional.keyline,
