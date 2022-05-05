@@ -3,49 +3,49 @@
 exports[`InfoCardBulletPoints should render the component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa isYHgJ"
+    class="sc-bwzfXH cvPBgI"
   >
     <div
-      class="sc-bwzfXH blmhpN"
+      class="sc-htpNat jxVqyQ"
     >
       <div
-        class="sc-dnqmqq cjsHty"
+        class="sc-iwsKbI bVXLMJ"
       >
         Venezuelan Politics
       </div>
       <div
-        class="sc-htpNat fOtYJJ"
+        class="sc-bxivhb vXGCH"
       >
         With a new president officially in place, what will happen?
       </div>
       <div
-        class="sc-EHOje imuKZg"
+        class="sc-bZQynM fQQTBj"
       >
         <ul
-          class="sc-bZQynM bROYtx"
+          class="sc-gzVnrw cNVtwB"
         >
           <li
-            class="sc-gzVnrw fWCCLc"
+            class="sc-htoDjs jHpZCV"
           >
             Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum
           </li>
           <li
-            class="sc-gzVnrw fWCCLc"
+            class="sc-htoDjs jHpZCV"
           >
             Parturient mi dictumst suspendisse torquent primis potenti donec in parturient al
           </li>
           <li
-            class="sc-gzVnrw fWCCLc"
+            class="sc-htoDjs jHpZCV"
           >
             Parturient mi dictumst suspendisse torquent primis potenti donec in parturient alParturient mi dictumst suspendisse torquent primis potenti donec in parturient altorquent primis potenti donec in parturient al
           </li>
           <li
-            class="sc-gzVnrw fWCCLc"
+            class="sc-htoDjs jHpZCV"
           >
             Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.
           </li>
           <li
-            class="sc-gzVnrw fWCCLc"
+            class="sc-htoDjs jHpZCV"
           >
             Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper idParturient mi dictumst suspendisse torquent priParturient mi dictumst suspendisse torquent primi
           </li>
@@ -53,10 +53,10 @@ exports[`InfoCardBulletPoints should render the component 1`] = `
       </div>
     </div>
     <div
-      class="sc-bxivhb hAzEyl"
+      class="sc-ifAKCX gSNXyi"
     >
       <button
-        class="sc-ifAKCX kpjxlo"
+        class="sc-EHOje gnmngE"
       >
         Read more
       </button>
@@ -68,7 +68,7 @@ exports[`InfoCardBulletPoints should render the component 1`] = `
 exports[`InfoCardBulletPoints should render the initial loading state correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htoDjs dGjtNu"
+    class="sc-dnqmqq jYleKb"
   >
     <div>
       Placeholder
@@ -82,49 +82,49 @@ exports[`InfoCardBulletPoints should render the initial read more state correctl
 exports[`InfoCardBulletPoints tracking click read more 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa isYHgJ"
+    class="sc-bwzfXH cvPBgI"
   >
     <div
-      class="sc-bwzfXH blmhpN"
+      class="sc-htpNat jxVqyQ"
     >
       <div
-        class="sc-dnqmqq cjsHty"
+        class="sc-iwsKbI bVXLMJ"
       >
         Venezuelan Politics
       </div>
       <div
-        class="sc-htpNat fOtYJJ"
+        class="sc-bxivhb vXGCH"
       >
         With a new president officially in place, what will happen?
       </div>
       <div
-        class="sc-EHOje imuKZg"
+        class="sc-bZQynM fQQTBj"
       >
         <ul
-          class="sc-bZQynM bROYtx"
+          class="sc-gzVnrw cNVtwB"
         >
           <li
-            class="sc-gzVnrw fWCCLc"
+            class="sc-htoDjs jHpZCV"
           >
             Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum
           </li>
           <li
-            class="sc-gzVnrw fWCCLc"
+            class="sc-htoDjs jHpZCV"
           >
             Parturient mi dictumst suspendisse torquent primis potenti donec in parturient al
           </li>
           <li
-            class="sc-gzVnrw fWCCLc"
+            class="sc-htoDjs jHpZCV"
           >
             Parturient mi dictumst suspendisse torquent primis potenti donec in parturient alParturient mi dictumst suspendisse torquent primis potenti donec in parturient altorquent primis potenti donec in parturient al
           </li>
           <li
-            class="sc-gzVnrw fWCCLc"
+            class="sc-htoDjs jHpZCV"
           >
             Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.
           </li>
           <li
-            class="sc-gzVnrw fWCCLc"
+            class="sc-htoDjs jHpZCV"
           >
             Parturient mi dictumst suspendisse torquent primis potenti donec in parturient aliquam adipiscing bibendum bibendum magna nisi bibendum dignissim in dis a.Scelerisque a ullamcorper idParturient mi dictumst suspendisse torquent priParturient mi dictumst suspendisse torquent primi
           </li>
@@ -132,10 +132,10 @@ exports[`InfoCardBulletPoints tracking click read more 1`] = `
       </div>
     </div>
     <div
-      class="sc-bxivhb hpabOq"
+      class="sc-ifAKCX icykgT"
     >
       <button
-        class="sc-ifAKCX kpjxlo"
+        class="sc-EHOje gnmngE"
       >
         Collapse
       </button>

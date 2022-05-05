@@ -8,15 +8,15 @@ exports[`NewsletterPuffLink renders the link with the text \`Manage preferences 
       href="https://home.thetimes.co.uk/myNews"
     >
       <div
-        class="sc-bdVaJa sc-jTzLTM kuRCjI"
+        class="sc-bwzfXH sc-fjdhpX hqqPmH"
       >
         <div
-          class="sc-bwzfXH sc-gqjmRU jvmtty"
+          class="sc-htpNat sc-VigVT jAXYkY"
         >
           Manage preferences here
         </div>
         <div
-          class="sc-bdVaJa sc-VigVT fqkICi"
+          class="sc-bwzfXH sc-jTzLTM iwYtNd"
         >
           <svg
             aria-label="icon-forward-arrow"

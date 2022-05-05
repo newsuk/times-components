@@ -3,20 +3,20 @@
 exports[`<Lead1And2 /> should render an LEAD_1_AND_2 slice correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa sc-htpNat cjntsS"
+    class="sc-bwzfXH sc-bxivhb gKudGZ"
   >
     <div
-      class="sc-bwzfXH sc-bxivhb ksOwrs"
+      class="sc-htpNat sc-ifAKCX jOiIlr"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-bwzfXH sc-ifAKCX ffBCTL"
+      class="sc-htpNat sc-EHOje cqhYID"
     >
       <div
-        class="sc-bwzfXH jJSEvL"
+        class="sc-htpNat fSzhgS"
       >
         <div>
           Article
@@ -33,20 +33,20 @@ exports[`<Lead1And2 /> should render an LEAD_1_AND_2 slice correctly 1`] = `
 exports[`<Lead1And2 /> should render an LEAD_1_AND_2_COLUMNIST slice correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa sc-htpNat cjntsS"
+    class="sc-bwzfXH sc-bxivhb gKudGZ"
   >
     <div
-      class="sc-bwzfXH sc-bxivhb ksOwrs"
+      class="sc-htpNat sc-ifAKCX jOiIlr"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-bwzfXH sc-ifAKCX ffBCTL"
+      class="sc-htpNat sc-EHOje cqhYID"
     >
       <div
-        class="sc-bwzfXH jJSEvL"
+        class="sc-htpNat fSzhgS"
       >
         <div>
           Article

@@ -3,10 +3,10 @@
 exports[`<RelatedArticle1 /> should render an RELATED_ARTICLE_1 slice correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa sc-htpNat cjntsS"
+    class="sc-bwzfXH sc-bxivhb gKudGZ"
   >
     <div
-      class="sc-bwzfXH sc-bxivhb jpYeVk"
+      class="sc-htpNat sc-ifAKCX DASJf"
     >
       <div>
         Article

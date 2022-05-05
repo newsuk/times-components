@@ -3,31 +3,31 @@
 exports[`<Secondary4Odd /> should render a SECONDARY_4_ODD slice correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa sc-htpNat gWBumh"
+    class="sc-bwzfXH sc-bxivhb ebYlbT"
   >
     <div
-      class="sc-bwzfXH sc-bxivhb mcwvb"
+      class="sc-htpNat sc-ifAKCX fUITsQ"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-bwzfXH sc-ifAKCX dSaDba"
+      class="sc-htpNat sc-EHOje hKTIDV"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-bwzfXH sc-bxivhb mcwvb"
+      class="sc-htpNat sc-ifAKCX fUITsQ"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-bwzfXH sc-ifAKCX dSaDba"
+      class="sc-htpNat sc-EHOje hKTIDV"
     >
       <div>
         Article
@@ -40,31 +40,31 @@ exports[`<Secondary4Odd /> should render a SECONDARY_4_ODD slice correctly 1`] =
 exports[`<Secondary4Odd /> should render a SECONDARY_4_ODD_COLUMNIST slice correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa sc-htpNat gWBumh"
+    class="sc-bwzfXH sc-bxivhb ebYlbT"
   >
     <div
-      class="sc-bwzfXH sc-bxivhb mcwvb"
+      class="sc-htpNat sc-ifAKCX fUITsQ"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-bwzfXH sc-ifAKCX dSaDba"
+      class="sc-htpNat sc-EHOje hKTIDV"
     >
       <div>
         ArticleComment
       </div>
     </div>
     <div
-      class="sc-bwzfXH sc-bxivhb mcwvb"
+      class="sc-htpNat sc-ifAKCX fUITsQ"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-bwzfXH sc-ifAKCX dSaDba"
+      class="sc-htpNat sc-EHOje hKTIDV"
     >
       <div>
         ArticleComment

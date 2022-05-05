@@ -52,6 +52,7 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 
 .c0 .pa-medaltable .pa_MedalTableView_medaltable {
   font-size: 16px;
+  color: #1D1D1B;
   font-family: TimesModern-Bold;
   background-color: #F9F9F9;
   padding-bottom: 60px;
@@ -233,6 +234,7 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 
 .c0 .pa-medaltable .pa_MedalTableView_medaltable {
   font-size: 16px;
+  color: #1D1D1B;
   font-family: TimesModern-Bold;
   background-color: #F9F9F9;
   padding-bottom: 60px;
@@ -414,6 +416,7 @@ exports[`<OlympicsMedalTable> renders default keys 1`] = `
 
 .c0 .pa-medaltable .pa_MedalTableView_medaltable {
   font-size: 16px;
+  color: #1D1D1B;
   font-family: TimesModern-Bold;
   background-color: #F9F9F9;
   padding-bottom: 60px;
@@ -595,6 +598,7 @@ exports[`<OlympicsMedalTable> renders outside of article 1`] = `
 
 .c0 .pa-medaltable .pa_MedalTableView_medaltable {
   font-size: 16px;
+  color: #1D1D1B;
   font-family: TimesModern-Bold;
   background-color: #F9F9F9;
   padding-bottom: 60px;

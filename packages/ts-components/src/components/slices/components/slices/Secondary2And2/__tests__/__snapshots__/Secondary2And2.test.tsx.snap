@@ -3,34 +3,34 @@
 exports[`<Secondary2And2 /> should render an SECONDARY_2_AND_2 slice correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdVaJa sc-htpNat gWBumh"
+    class="sc-bwzfXH sc-bxivhb ebYlbT"
   >
     <div
-      class="sc-bwzfXH sc-bxivhb gEodUp"
+      class="sc-htpNat sc-ifAKCX bmRmgX"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-bwzfXH sc-bxivhb gEodUp"
+      class="sc-htpNat sc-ifAKCX bmRmgX"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-bwzfXH sc-ifAKCX bbGXLH"
+      class="sc-htpNat sc-EHOje iYcOmv"
     >
       <div
-        class="sc-bwzfXH sc-EHOje ckcfEU"
+        class="sc-htpNat sc-bZQynM kOFYXI"
       >
         <div>
           ArticleComment
         </div>
       </div>
       <div
-        class="sc-bwzfXH sc-EHOje ckcfEU"
+        class="sc-htpNat sc-bZQynM kOFYXI"
       >
         <div>
           Article
