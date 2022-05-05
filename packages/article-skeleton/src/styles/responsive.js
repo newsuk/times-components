@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import styled from "styled-components";
-import { breakpoints, colours, spacing } from "@times-components/styleguide";
+import { breakpoints, colours, spacing } from "@times-components/ts-components";
 import { ArticleKeylineItem } from "../keylines";
 
 export const getHeaderAdStyles = template => {

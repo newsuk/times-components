@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { breakpoints, colours, spacing } from "@times-components/styleguide";
-
+import { breakpoints, colours, spacing } from "@times-components/ts-components";
 export const KeylineItem = styled.div`
   border: solid ${colours.functional.keyline};
   border-width: 1px 0;

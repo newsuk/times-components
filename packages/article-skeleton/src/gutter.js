@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View } from "react-native";
 import { tabletWidthMax } from "@times-components/styleguide";
+// import { tabletWidthMax } from "@times-components/ts-components";
 import styles from "./styles/shared";
 
 export const maxWidth = tabletWidthMax;

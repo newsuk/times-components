@@ -2,7 +2,8 @@
 import React, { useState } from "react";
 import { View, Text } from "react-native";
 import PropTypes from "prop-types";
-import styleguide, { tabletWidth } from "@times-components/styleguide";
+import { tabletWidth } from "@times-components/styleguide";
+import { styleguide } from "@times-components/ts-components";
 import { screenWidth } from "@times-components/utils";
 import {
   TextContainer,
