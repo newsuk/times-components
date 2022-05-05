@@ -60,58 +60,6 @@ declare module '@times-components/utils' {
   export const gqlRgbaToStyle: (colour: string | undefined) => string | null;
 }
 
-declare module '@times-components/styleguide' {
-  type ColourMap = Record<string, string>;
-  type Colours = Record<string, ColourMap>;
-
-  type Breakpoints = {
-    small: string;
-    medium: string;
-    wide: string;
-    huge: string;
-  };
-
-  type Fonts = {
-    body: string;
-    bodyRegular: string;
-    headline: string;
-    brandColour: string;
-    headlineRegular: string;
-    supporting: string;
-  };
-
-  type FontFactory = () => {
-    fontFamily: Record<string, string>;
-    fontSize: Record<string, number>;
-    lineHeight: ({ font: string, fontSize: number }) => number;
-  };
-
-  export const fonts: Fonts;
-  export const fontSizes: {
-    newsletterPuffCopy: number;
-    newsletterPuffHeadline: number;
-    newsletterPuffLabel: number;
-  };
-  export const timesFontFactory: fontSizes;
-  export const spacing: (multiple: number) => number;
-  export const breakpoints: Breakpoints;
-  export const colours: Colours;
-  export const tabletRowPadding: number;
-
-  export const scales: {
-    large: string;
-    medium: string;
-    xlarge: string;
-  };
-  const styleguide: () => {
-    colours: Colours;
-    fontFactory: FontFactory;
-  };
-
-  export { styleguide };
-  export default styleguide;
-}
-
 declare module '@times-components/button' {
   import { FC } from 'react';
 

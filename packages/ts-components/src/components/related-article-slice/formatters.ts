@@ -1,4 +1,4 @@
-import { SliceArticle } from '@times-components/ts-slices';
+import { SliceArticle } from '../slices';
 import get from 'lodash.get';
 import {
   Asset,
