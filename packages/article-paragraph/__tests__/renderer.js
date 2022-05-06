@@ -1,8 +1,6 @@
 import React from "react";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales, themeFactory } from "@times-components/ts-components";
-console.log("ADAM: article-para:  scales, themeFactory: ",  scales, themeFactory);
-
 import coreRenderers from "@times-components/markup";
 import { renderTree } from "@times-components/markup-forest";
 import ArticleParagraph from "../src";

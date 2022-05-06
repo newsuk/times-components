@@ -1,7 +1,7 @@
 import React from "react";
+import { styleguide } from "@times-components/ts-components";
 import Caption from "./caption";
 import { defaultProps, propTypes } from "./caption-prop-types";
-import { styleguide } from "@times-components/ts-components";
 
 const { spacing } = styleguide();
 

@@ -2,7 +2,6 @@
 import React from "react";
 import { View, Text, Dimensions } from "react-native";
 import { tabletWidth } from "@times-components/styleguide";
-import { styleguide, colours } from "@times-components/ts-components";
 import { AttributedString } from "@times-components/typeset";
 import { screenWidth } from "@times-components/utils";
 import Ad from "@times-components/ad";
@@ -14,6 +13,8 @@ import Video from "@times-components/video";
 import ArticleParagraphWrapper from "@times-components/article-paragraph";
 import Context from "@times-components/context";
 import {
+  styleguide,
+  colours,
   InlineNewsletterPuff,
   safeDecodeURIComponent
 } from "@times-components/ts-components";

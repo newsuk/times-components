@@ -1,10 +1,10 @@
 import React from "react";
 import Context from "@times-components/context";
 import {
+  fonts,
   ArticleFlags,
   UpdatedTimeProvider
 } from "@times-components/ts-components";
-import { fonts } from "@times-components/ts-components";
 
 import Label from "../article-label/article-label";
 import Meta from "../article-meta/article-meta";

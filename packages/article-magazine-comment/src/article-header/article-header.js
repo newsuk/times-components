@@ -1,9 +1,8 @@
 import React from "react";
 import Context from "@times-components/context";
 import Image from "@times-components/image";
-import { fonts } from "@times-components/ts-components";
-
 import {
+  fonts,
   ArticleFlags,
   UpdatedTimeProvider
 } from "@times-components/ts-components";

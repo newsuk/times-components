@@ -128,6 +128,8 @@ export {
   spacing,
   globalSpacingStyles,
   tabletRowPadding,
+  tabletWidth,
+  tabletWidthMax,
   themeFactory
 } from './components/styleguide/Styleguide';
 
