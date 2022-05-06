@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { View } from "react-native";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/ts-components";
 import propTypes from "./proptypes";
 import stylesFactory from "./styles";
 import { ResponsiveSlice } from "../shared";

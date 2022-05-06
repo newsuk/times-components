@@ -1,4 +1,4 @@
-import { editionBreakpoints } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/ts-components";
 
 const wideBreakpointHeadlineStyles = {
   fontSize: 20,

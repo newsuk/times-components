@@ -1,7 +1,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import "../mocks-tiles";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/ts-components";
 import Link from "@times-components/link";
 import { testPuzzleTile, puzzle } from "../shared-tile-utils";
 import { TileAK } from "../../src/tiles";
