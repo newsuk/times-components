@@ -27,6 +27,6 @@ describe('<Slice/>', () => {
       />
     );
 
-getByText('a headline')
+    getByText('a headline');
   });
 });
