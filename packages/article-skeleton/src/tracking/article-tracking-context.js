@@ -2,10 +2,9 @@ import get from "lodash.get";
 import { withTrackingContext } from "@times-components/tracking";
 import {
   getRegistrationType,
-  getSharedStatus,
-  getIsLiveOrBreakingFlag,
-  getActiveArticleFlags
+  getSharedStatus
 } from "../data-helper";
+import { getIsLiveOrBreakingFlag, getActiveArticleFlags } from "@times-components/utils";
 
 export default Component =>
   withTrackingContext(Component, {

@@ -1,7 +1,7 @@
 import {
   getActiveArticleFlags,
   getIsLiveOrBreakingFlag
-} from "../../src/data-helper";
+} from "../src/flag-data-helpers";
 
 describe("Data helper", () => {
   const active = "2050-03-13T13:00:00.000Z";

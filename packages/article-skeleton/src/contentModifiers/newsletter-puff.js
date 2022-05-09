@@ -1,4 +1,4 @@
-import { getIsLiveOrBreakingFlag } from "../data-helper";
+import { getIsLiveOrBreakingFlag } from "@times-components/utils";
 
 const setNewsletterPayload = attributes => ({
   name: "autoNewsletterPuff",

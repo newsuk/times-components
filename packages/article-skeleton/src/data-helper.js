@@ -81,24 +81,4 @@ export const getSharedStatus = () => {
   return user && user.isShared ? "yes" : "no";
 };
 
-export const getIsLiveOrBreakingFlag = flags => {
-  const liveOrBreaking = ["LIVE", "BREAKING"];
-
-  const findFlag =
-    flags &&
-    flags.find(flag => liveOrBreaking.includes(flag.type.toUpperCase()));
-
-  return findFlag && findFlag.type;
-};
-
-export const getActiveArticleFlags = flags => {
-  if (!flags) {
-    return [];
-  }
-  const findFlag = flags.find(
-    flag => new Date().getTime() < new Date(flag.expiryTime).getTime()
-  );
-  return findFlag && findFlag.type && findFlag.type.toLowerCase();
-};
-
 export default prepareDataForListView;
