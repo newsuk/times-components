@@ -2160,7 +2160,6 @@ export const testFixture = {
       name: "paragraph"
     }
   ],
-  flags: ["NEW"],
   hasVideo: false,
   headline: "Some Headline",
   label: "Some Label",

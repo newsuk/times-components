@@ -3,14 +3,15 @@ import { withTrackingContext } from "@times-components/tracking";
 import {
   getRegistrationType,
   getSharedStatus,
-  getIsLiveOrBreakingFlag
+  getIsLiveOrBreakingFlag,
+  getActiveArticleFlags
 } from "../data-helper";
 
 export default Component =>
   withTrackingContext(Component, {
     getAttrs: ({ data, pageSection, navigationMode, referralUrl = "" }) => {
       let editionType = "";
-      const flags = data.expirableFlags || data.flags;
+      const flags = data.expirableFlags;
 
       if (navigationMode) {
         const { isMyArticles, isPastSixDays } = navigationMode;
@@ -50,8 +51,8 @@ export default Component =>
         template: get(data, "template", "Default"),
         registrationType: getRegistrationType(),
         shared: getSharedStatus(),
-        article_flag: getIsLiveOrBreakingFlag(flags)
-          ? getIsLiveOrBreakingFlag(flags).toLowerCase()
+        article_flag: getActiveArticleFlags(flags)
+          ? getActiveArticleFlags(flags)
           : "no flag",
         article_template_name: getIsLiveOrBreakingFlag(flags)
           ? "live template"

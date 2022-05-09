@@ -10,11 +10,7 @@ import ArticleSkeleton from "../../src/article-skeleton";
 import articleFixture from "../../fixtures/full-article";
 import ArticleLink from "../../src/article-body/article-link";
 import articleSkeletonProps from "../shared-article-skeleton-props";
-import {
-  getRegistrationType,
-  getSharedStatus,
-  getIsLiveOrBreakingFlag
-} from "../../src/data-helper";
+import { getRegistrationType, getSharedStatus } from "../../src/data-helper";
 import shared from "../shared-tracking";
 
 beforeEach(() => {
@@ -66,14 +62,6 @@ describe("helper functions", () => {
 
   it("getSharedStatus helper function", () => {
     expect(getSharedStatus()).toEqual("no");
-  });
-
-  it("getIsLiveOrBreakingFlag helper function", () => {
-    expect(getIsLiveOrBreakingFlag([{ type: "LIVE" }])).toEqual("LIVE");
-  });
-
-  it("getIsLiveOrBreakingFlag helper function", () => {
-    expect(getIsLiveOrBreakingFlag(["LIVE"])).toEqual("LIVE");
   });
 });
 

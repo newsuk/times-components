@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.1](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.11.0...@times-components/responsive@0.11.1) (2022-05-09)
+
+
+### Bug Fixes
+
+* **tdp-1829:** update flag tracking ([#2935](https://github.com/newsuk/times-components/issues/2935)) ([031a153](https://github.com/newsuk/times-components/commit/031a15356d376cd4b75f0ea4f24e02ff20ebfecc))
+
+
+
+
+
 # [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.10.0...@times-components/responsive@0.11.0) (2022-04-29)
 
 
