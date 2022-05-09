@@ -5,7 +5,7 @@ import { convertChannelSlice } from '../convertChannelSlice';
 
 describe('convertChannelSlice(', () => {
   const mockData = {
-    name: 'LEAD_1',
+    name: 'slice',
     children: [
       {
         article: {
