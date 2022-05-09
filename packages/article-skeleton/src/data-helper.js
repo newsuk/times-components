@@ -90,7 +90,7 @@ export const getIsLiveOrBreakingFlag = flags => {
        liveOrBreaking.includes(flag.type.toUpperCase())
     );
 
-  return findFlag && findFlag.type && findFlag.type;
+  return findFlag && findFlag.type
 };
 
 export const getActiveArticleFlags = flags => {

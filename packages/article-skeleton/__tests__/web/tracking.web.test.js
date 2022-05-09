@@ -68,13 +68,6 @@ describe("helper functions", () => {
     expect(getSharedStatus()).toEqual("no");
   });
 
-  it("getIsLiveOrBreakingFlag helper function", () => {
-    expect(getIsLiveOrBreakingFlag([{ type: "LIVE" }])).toEqual("LIVE");
-  });
-
-  it("getIsLiveOrBreakingFlag helper function", () => {
-    expect(getIsLiveOrBreakingFlag(["LIVE"])).toEqual("LIVE");
-  });
 });
 
 it("should track ArticleLink clicks in analytics", () => {
