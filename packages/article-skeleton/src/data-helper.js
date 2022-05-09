@@ -86,11 +86,9 @@ export const getIsLiveOrBreakingFlag = flags => {
 
   const findFlag =
     flags &&
-    flags.find(flag => 
-       liveOrBreaking.includes(flag.type.toUpperCase())
-    );
+    flags.find(flag => liveOrBreaking.includes(flag.type.toUpperCase()));
 
-  return findFlag && findFlag.type
+  return findFlag && findFlag.type;
 };
 
 export const getActiveArticleFlags = flags => {
@@ -98,8 +96,7 @@ export const getActiveArticleFlags = flags => {
     return [];
   }
   const findFlag = flags.find(
-    flag =>
-      new Date().getTime() < new Date(flag.expiryTime).getTime()
+    flag => new Date().getTime() < new Date(flag.expiryTime).getTime()
   );
   return findFlag && findFlag.type && findFlag.type.toLowerCase();
 };
