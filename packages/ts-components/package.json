@@ -57,15 +57,10 @@
     "@times-components/link": "3.9.10",
     "@times-components/provider": "1.30.21",
     "@times-components/provider-queries": "2.15.3",
-<<<<<<< HEAD
-    "@times-components/related-articles": "6.8.7",
-    "@times-components/utils": "6.11.0",
-=======
     "@times-components/related-articles": "6.8.8",
     "@times-components/styleguide": "3.38.47",
     "@times-components/ts-slices": "1.3.18",
     "@times-components/utils": "6.11.1",
->>>>>>> origin/master
     "algoliasearch": "4.9.0",
     "date-fns": "2.28.0",
     "date-fns-tz": "1.3.3",
