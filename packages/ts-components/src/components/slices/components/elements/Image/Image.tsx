@@ -29,7 +29,6 @@ export const Image: React.FC<{
       <a onClick={onClick} href={article.url}>
         {Object.entries(ratioSchema).map(([ratio, schema], i: number) => {
           const image = getImageByRatio(ratio, article);
-
           return (
             <ImageRatio key={i} ratio={ratio} schema={schema}>
               <LazyImage
