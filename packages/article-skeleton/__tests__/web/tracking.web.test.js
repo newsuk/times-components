@@ -12,8 +12,7 @@ import ArticleLink from "../../src/article-body/article-link";
 import articleSkeletonProps from "../shared-article-skeleton-props";
 import {
   getRegistrationType,
-  getSharedStatus,
-  getIsLiveOrBreakingFlag
+  getSharedStatus
 } from "../../src/data-helper";
 import shared from "../shared-tracking";
 
