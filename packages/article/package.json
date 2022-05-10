@@ -71,7 +71,7 @@
     "@times-components/provider": "1.30.21",
     "@times-components/responsive": "0.11.1",
     "@times-components/styleguide": "3.38.47",
-    "@times-components/ts-components": "1.34.0"
+    "@times-components/ts-components": "1.34.1"
   },
   "resolutions": {
     "react": "16.9.0",
