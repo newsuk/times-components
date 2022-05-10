@@ -2,6 +2,8 @@
 import React from "react";
 import styled from "styled-components";
 import { breakpoints } from "@times-components/styleguide";
+// import { breakpoints } from "@times-components/ts-components";
+
 import {
   handleOnClickScrollTo,
   handleHrefScrollTo
