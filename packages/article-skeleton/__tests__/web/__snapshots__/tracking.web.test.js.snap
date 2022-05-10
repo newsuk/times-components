@@ -8,7 +8,7 @@ Array [
       "article_locked_status": "locked",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
-        "article_flag": "no flag",
+        "article_flag": "new",
         "article_template_name": "standard template",
         "article_topic_tags": Array [
           "Football",
@@ -47,7 +47,7 @@ Array [
       "article_locked_status": "locked",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
-        "article_flag": "no flag",
+        "article_flag": "new",
         "article_template_name": "standard template",
         "article_topic_tags": Array [
           "Football",
@@ -86,7 +86,7 @@ Array [
       "article_locked_status": "locked",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
-        "article_flag": "no flag",
+        "article_flag": "new",
         "article_template_name": "standard template",
         "article_topic_tags": Array [
           "Football",
@@ -125,7 +125,7 @@ Array [
       "article_locked_status": "locked",
       "attrs": Object {
         "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
-        "article_flag": "no flag",
+        "article_flag": "new",
         "article_template_name": "standard template",
         "article_topic_tags": Array [
           "Football",
