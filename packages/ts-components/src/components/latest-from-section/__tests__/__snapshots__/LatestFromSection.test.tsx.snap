@@ -58,7 +58,7 @@ exports[`<LatestFromSection> renders  1`] = `
               data-testid="related-article-item"
             >
               <a
-                class="link__RespLink-sc-1ocvixa-0 eeJpYz"
+                class="link__RespLink-sc-1ocvixa-0 dfMuic"
                 href="https://www.thetimes.co.uk/article/the-entire-tour-de-france-bows-to-the-greatness-of-mark-cavendish-2zq0zgfmn"
               >
                 <div
@@ -205,7 +205,7 @@ exports[`<LatestFromSection> renders  1`] = `
               data-testid="related-article-item"
             >
               <a
-                class="link__RespLink-sc-1ocvixa-0 eeJpYz"
+                class="link__RespLink-sc-1ocvixa-0 dfMuic"
                 href="https://www.thetimes.co.uk/article/jordan-pickford-repels-everything-germans-muster-ktkcvc85p"
               >
                 <div
@@ -352,7 +352,7 @@ exports[`<LatestFromSection> renders  1`] = `
               data-testid="related-article-item"
             >
               <a
-                class="link__RespLink-sc-1ocvixa-0 eeJpYz"
+                class="link__RespLink-sc-1ocvixa-0 dfMuic"
                 href="https://www.thetimes.co.uk/article/the-tactical-masterstrokes-behind-englands-ruthless-win-s2s5j6k8l"
               >
                 <div
