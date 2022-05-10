@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.7.0...@times-components/context@1.8.0) (2022-05-10)
+
+
+### Features
+
+* **TDP-1705:** fixed css issue from recent change ([#2936](https://github.com/newsuk/times-components/issues/2936)) ([888e5d6](https://github.com/newsuk/times-components/commit/888e5d62caf3282daeeaf219ec975aa6d0156ee9))
+
+
+
+
+
 # [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.6.0...@times-components/context@1.7.0) (2022-05-04)
 
 
