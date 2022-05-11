@@ -6,7 +6,7 @@ import {
   TrackingContextProvider
 } from '../../helpers/tracking/TrackingContextProvider';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
-import { breakpoints } from '../styleguide/Styleguide';
+import { breakpoints } from '@times-components/ts-styleguide';
 import {
   Container,
   ContentContainer,
@@ -79,7 +79,7 @@ export const InfoCardBulletPoints: React.FC<{
 
   const readMoreRef = useRef<HTMLDivElement>(null);
   const [showReadMore, setShowReadMore] = useState(false);
-  const windowWidth = window.innerWidth;
+  const windowWidth = window.innerWidth.toString();
   const maxHeight = 350;
   useEffect(() => {
     const listContainer = readMoreRef.current;

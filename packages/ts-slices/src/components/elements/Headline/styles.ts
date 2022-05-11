@@ -1,7 +1,7 @@
 import get from 'lodash.get';
 
 import styled from 'styled-components';
-import { breakpoints, colours, fonts } from '../../../../styleguide/Styleguide';
+import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
 import { DisplaySchema } from '../../../types/styles';
 import { isCentered } from '../../../utils/getArticleStyles';

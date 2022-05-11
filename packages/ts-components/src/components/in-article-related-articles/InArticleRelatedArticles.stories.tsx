@@ -2,7 +2,7 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { boolean, select } from '@storybook/addon-knobs';
-import { colours } from '../styleguide/Styleguide';
+import { colours } from '@times-components/ts-styleguide';
 
 import { InArticleRelatedArticles } from './InArticleRelatedArticles';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { colours } from '../styleguide/Styleguide';
+import { colours } from '@times-components/ts-styleguide'
 import { LiveArticleFlag, BreakingArticleFlag } from './LiveArticleFlag';
 import {
   ArticleFlagContainer,

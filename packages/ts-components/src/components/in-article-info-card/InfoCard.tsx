@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Placeholder } from '@times-components/image';
-import { breakpoints } from '../styleguide/Styleguide';
+import { breakpoints } from '@times-components/ts-styleguide';
 import { Card } from './Card';
 import {
   InfoCardContainer,
@@ -52,7 +52,7 @@ const CustomPagination: React.FC<{
   onClick: (current: number, label?: string) => number;
   data: InfoCardData[];
   showDisplayItem: number;
-  windowWidth: number;
+  windowWidth: string;
   showDotItem: number;
 }> = ({
   activePage,
@@ -139,6 +139,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
     typeof window !== 'undefined' ? window.innerWidth : 0
   );
   const [showDisplayItem, setDisplayItem] = useState(1);
+  const windowWidth = winWidth.toString();
   const updateWidth = () => setWidth(window.innerWidth);
 
   useEffect(() => {
@@ -169,9 +170,9 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
   }
 
   const setDisplayItemCount = () => {
-    if (winWidth < medium) {
+    if (windowWidth < medium) {
       setDisplayItem(breakPointsCard[0].itemsToScroll);
-    } else if (winWidth >= wide && isWide(size)) {
+    } else if (windowWidth >= wide && isWide(size)) {
       setDisplayItem(breakPointsCard[2].itemsToScroll);
     } else {
       setDisplayItem(breakPointsCard[1].itemsToScroll);
@@ -181,7 +182,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
   const showDotItem = infoCardData.length / showDisplayItem;
   const enableCarousel =
     infoCardData.length >
-    (winWidth >= wide && isWide(size) ? 3 : winWidth < medium ? 1 : 2);
+    (windowWidth >= wide && isWide(size) ? 3 : windowWidth < medium ? 1 : 2);
   const [current, setCurrent] = useState(initialIndex);
   const handleChange = (event: any) => {
     setCurrent(event.index);
@@ -253,7 +254,7 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                       current={current}
                       data={infoCardData}
                       showDisplayItem={showDisplayItem}
-                      windowWidth={winWidth}
+                      windowWidth={winWidth.toString()}
                       showDotItem={showDotItem}
                     />
                   )}

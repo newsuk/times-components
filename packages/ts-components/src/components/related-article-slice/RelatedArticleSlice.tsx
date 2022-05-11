@@ -4,7 +4,7 @@ import {
   SliceArticle,
   ClickHandlerType,
   MouseEventType
-} from '../slices';
+} from '@times-components/ts-slices';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import { RelatedArticleSliceType } from '../../types/related-article-slice';

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints, fonts, colours } from './styleguide/Styleguide';
+import { breakpoints, fonts, colours } from '@times-components/ts-styleguide';
 
 export const PlaceholderContainer = styled.div`
   position: relative;
