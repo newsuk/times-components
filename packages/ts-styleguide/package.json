@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ts-styleguide",
-  "version": "1.35.0",
+  "version": "1.35.1",
   "description": "Reuseable Typescript React Components",
   "main": "dist/index.js",
   "dev": "dist/index.js",
@@ -50,15 +50,15 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@times-components/link": "3.10.0",
-    "@times-components/utils": "6.11.1",
+    "@times-components/link": "3.10.1",
+    "@times-components/utils": "6.11.2",
     "react": "16.9.0",
     "styled-components": "4.3.2"
   },
   "devDependencies": {
     "@storybook/react": "5.3.18",
     "@testing-library/react": "^12.1.2",
-    "@times-components/storybook": "4.2.18",
+    "@times-components/storybook": "4.2.19",
     "fetch-mock": "9.11.0",
     "jest": "24.8.0",
     "jest-environment-jsdom-sixteen": "2.0.0",
