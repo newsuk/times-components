@@ -19,6 +19,36 @@ declare module '@times-components/tracking' {
   export function withTrackEvents<T>(component: FC<T>, attr: any): FC<T>;
 }
 
+declare module '@times-components/ts-slices' {
+  export const Slice = React.FC;
+  export type SliceArticle = {
+    id?: string;
+    url?: string;
+    label?: string;
+    byline?: string;
+    headline: string;
+    standfirst?: string;
+    summary?: string;
+    cta?: string;
+    datePublished?: string;
+    dateUpdated?: string;
+    template?: string;
+    images: {
+      alt?: string;
+      crops: Array<{
+        url: string;
+        ratio: string;
+      }>;
+    };
+  };
+  export type ClickHandlerType = (
+    event: MouseEventType,
+    article: SliceArticle,
+    position?: string
+  ) => void;
+  export type MouseEventType = React.MouseEvent<HTMLAnchorElement, MouseEvent>;
+}
+
 declare module '@times-components/ts-styleguide' {
   type ColourMap = Record<string, string>;
   type Colours = Record<string, ColourMap>;

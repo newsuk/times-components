@@ -63,6 +63,7 @@ storiesOf('Typescript Component/In Article/Related Articles', module)
       { Three: 3, Two: 2, One: 1 },
       3
     );
+    //@ts-ignore
     const sectionColor = select('Section', colours.section, '#636C17');
     return (
       <InArticleRelatedArticles
