@@ -4,18 +4,18 @@ exports[`<InlineDialog> should render the component 1`] = `
 <body>
   <div>
     <div
-      class="sc-bwzfXH wHxJj"
+      class="sc-bdVaJa dmvPpj"
     >
       <div
-        class="sc-htpNat ghIhLT"
+        class="sc-bwzfXH mYYIt"
       >
         Title
       </div>
       <div
-        class="sc-bxivhb bDkIoD"
+        class="sc-htpNat dBfnu"
       />
       <a
-        class="sc-ifAKCX kFEYbp"
+        class="sc-bxivhb bTkHyz"
         href="#"
       >
         Button

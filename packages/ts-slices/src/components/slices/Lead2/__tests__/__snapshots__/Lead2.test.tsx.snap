@@ -3,17 +3,17 @@
 exports[`<Lead2 /> should render a LEAD_2 slice correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bwzfXH gmLote"
+    class="sc-bdVaJa gMdRRW"
   >
     <div
-      class="sc-htpNat sc-bxivhb ccFQOx"
+      class="sc-bwzfXH sc-htpNat kaslx"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-htpNat sc-bxivhb ccFQOx"
+      class="sc-bwzfXH sc-htpNat kaslx"
     >
       <div>
         Article

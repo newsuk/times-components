@@ -4,20 +4,20 @@ exports[`LiveArticleFlag should render the base live article flag 1`] = `
 <body>
   <div>
     <div
-      class="sc-bZQynM lnFKgR"
+      class="sc-EHOje cfBXHC"
     >
       <div
-        class="sc-bwzfXH eyelLP"
+        class="sc-bdVaJa bkSKmo"
       >
         <div
-          class="sc-bxivhb fPzEzV"
+          class="sc-htpNat jcRSar"
         >
           <div
-            class="sc-ifAKCX fZvQdz"
+            class="sc-bxivhb hTEbzV"
           />
         </div>
         <span
-          class="sc-htpNat bgqAuA"
+          class="sc-bwzfXH hBgZUv"
         >
           BASE
         </span>
@@ -31,20 +31,20 @@ exports[`LiveArticleFlag should render the breaking article flag 1`] = `
 <body>
   <div>
     <div
-      class="sc-bZQynM lnFKgR"
+      class="sc-EHOje cfBXHC"
     >
       <div
-        class="sc-bwzfXH eyelLP"
+        class="sc-bdVaJa bkSKmo"
       >
         <div
-          class="sc-bxivhb fPzEzV"
+          class="sc-htpNat jcRSar"
         >
           <div
-            class="sc-ifAKCX fZvQdz"
+            class="sc-bxivhb hTEbzV"
           />
         </div>
         <span
-          class="sc-htpNat bgqAuA"
+          class="sc-bwzfXH hBgZUv"
         >
           BREAKING
         </span>
@@ -58,20 +58,20 @@ exports[`LiveArticleFlag should render the live article flag 1`] = `
 <body>
   <div>
     <div
-      class="sc-bZQynM lnFKgR"
+      class="sc-EHOje cfBXHC"
     >
       <div
-        class="sc-bwzfXH eyelLP"
+        class="sc-bdVaJa bkSKmo"
       >
         <div
-          class="sc-bxivhb fPzEzV"
+          class="sc-htpNat jcRSar"
         >
           <div
-            class="sc-ifAKCX fZvQdz"
+            class="sc-bxivhb hTEbzV"
           />
         </div>
         <span
-          class="sc-htpNat bgqAuA"
+          class="sc-bwzfXH hBgZUv"
         >
           LIVE
         </span>

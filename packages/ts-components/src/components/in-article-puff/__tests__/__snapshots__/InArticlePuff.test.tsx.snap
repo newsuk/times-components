@@ -3,10 +3,10 @@
 exports[`InArticlePuff should render optional fields correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-VigVT fFYEOs"
+    class="sc-gqjmRU gHUBfw"
   >
     <div
-      class="sc-jTzLTM eDNgiQ"
+      class="sc-VigVT gIbSHY"
     >
       <a
         href="https://www.thetimes.co.uk"
@@ -21,11 +21,11 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
       </a>
     </div>
     <div
-      class="sc-fjdhpX jYEIAF"
+      class="sc-jTzLTM cAAdkC"
     >
       <div>
         <div
-          class="sc-jzJRlG gHpUER"
+          class="sc-fjdhpX bCDTJX"
         >
           interactive
         </div>
@@ -33,23 +33,23 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
           href="https://www.thetimes.co.uk"
         >
           <h4
-            class="sc-cSHVUG cZuXmi"
+            class="sc-jzJRlG bluMUd"
           >
             Where can I get a Covid vaccine in England?
           </h4>
         </a>
         <div
-          class="sc-kAzzGY empZnZ"
+          class="sc-cSHVUG itcrty"
         >
           Enter your postcode to find your nearest centre
         </div>
       </div>
       <a
-        class="sc-htpNat hcWCts"
+        class="sc-bwzfXH gpLJAb"
         href="https://www.thetimes.co.uk"
       >
         <div
-          class="sc-bxivhb EdIYi"
+          class="sc-htpNat irNLqr"
         >
           Read the full article
         </div>
@@ -69,14 +69,14 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
 exports[`InArticlePuff should render required fields correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-VigVT fFYEOs"
+    class="sc-gqjmRU gHUBfw"
   >
     <div
-      class="sc-fjdhpX hascUQ"
+      class="sc-jTzLTM jFRmZO"
     >
       <div>
         <div
-          class="sc-jzJRlG loswcC"
+          class="sc-fjdhpX gKXrO"
         >
           interactive
         </div>
@@ -84,18 +84,18 @@ exports[`InArticlePuff should render required fields correctly 1`] = `
           href="https://www.thetimes.co.uk"
         >
           <h4
-            class="sc-cSHVUG bimsYo"
+            class="sc-jzJRlG crzPVo"
           >
             Where can I get a Covid vaccine in England?
           </h4>
         </a>
       </div>
       <a
-        class="sc-htpNat hcWCts"
+        class="sc-bwzfXH gpLJAb"
         href="https://www.thetimes.co.uk"
       >
         <div
-          class="sc-bxivhb EdIYi"
+          class="sc-htpNat irNLqr"
         >
           Read more
         </div>
@@ -115,7 +115,7 @@ exports[`InArticlePuff should render required fields correctly 1`] = `
 exports[`InArticlePuff should render the initial loading state correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-ifAKCX klRTpE"
+    class="sc-bxivhb egvpqE"
   >
     <div>
       Placeholder

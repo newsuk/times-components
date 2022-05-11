@@ -3,31 +3,31 @@
 exports[`<Secondary4 /> should render a SECONDARY_4 slice correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bwzfXH gmLote"
+    class="sc-bdVaJa gMdRRW"
   >
     <div
-      class="sc-htpNat sc-bxivhb cjzoqu"
+      class="sc-bwzfXH sc-htpNat dbWNLh"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-htpNat sc-bxivhb cjzoqu"
+      class="sc-bwzfXH sc-htpNat dbWNLh"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-htpNat sc-bxivhb cjzoqu"
+      class="sc-bwzfXH sc-htpNat dbWNLh"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-htpNat sc-bxivhb cjzoqu"
+      class="sc-bwzfXH sc-htpNat dbWNLh"
     >
       <div>
         Article

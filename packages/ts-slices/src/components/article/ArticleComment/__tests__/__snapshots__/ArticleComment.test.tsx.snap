@@ -3,13 +3,13 @@
 exports[`<ArticleComment /> should render a comment article corrctly 1`] = `
 <DocumentFragment>
   <article
-    class="sc-bwzfXH sc-ifAKCX cmjyvz"
+    class="sc-bdVaJa sc-bxivhb hhFEos"
   >
     <div
-      class="sc-htpNat jrBaRH"
+      class="sc-bwzfXH iKKeUw"
     >
       <div
-        class="sc-EHOje jCEvVK"
+        class="sc-ifAKCX isGkwc"
       >
         <div>
           Image
@@ -17,15 +17,15 @@ exports[`<ArticleComment /> should render a comment article corrctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-htpNat jrBaRH"
+      class="sc-bwzfXH iKKeUw"
     >
       <p
-        class="sc-bxivhb hGUXDL"
+        class="sc-htpNat dtQRdf"
       >
         Some text label
       </p>
       <p
-        class="sc-bZQynM bqQVRM"
+        class="sc-EHOje hSiEua"
       >
         John Smith
       </p>

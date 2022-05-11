@@ -4,10 +4,10 @@ exports[`Inline Newsletter Puff Clicking Subscribe renders 'saving' when the but
 <body>
   <div>
     <div
-      class="sc-bwzfXH sc-bxivhb eFfKYo"
+      class="sc-bdVaJa sc-htpNat bSdOkq"
     >
       <div
-        class="sc-bwzfXH sc-ifAKCX iIuQqJ"
+        class="sc-bdVaJa sc-bxivhb fstdFq"
       >
         <div
           class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -49,25 +49,25 @@ exports[`Inline Newsletter Puff Clicking Subscribe renders 'saving' when the but
         </div>
       </div>
       <div
-        class="sc-bwzfXH sc-gzVnrw kPglJV"
+        class="sc-bdVaJa sc-bZQynM dZCUeH"
       >
         <div
-          class="sc-htpNat sc-htoDjs tUdvb"
+          class="sc-bwzfXH sc-gzVnrw fwTOvg"
         >
           STRAIGHT IN YOUR INBOX
         </div>
         <div
-          class="sc-htpNat sc-dnqmqq izktAV"
+          class="sc-bwzfXH sc-htoDjs epVajn"
         >
           Politics. Explained.
         </div>
         <div
-          class="sc-htpNat sc-iwsKbI fjXbeR"
+          class="sc-bwzfXH sc-dnqmqq icKJfC"
         >
           Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
         </div>
         <div
-          class="sc-bwzfXH sc-gZMcBi jzNKBS"
+          class="sc-bdVaJa sc-iwsKbI beJMRD"
         >
           <button
             style="font-family: GillSansMTStd-Medium; font-size: 16px; line-height: 0; align-items: center; background-color: transparent; border-radius: 2px; color: rgb(29, 29, 27); cursor: pointer; height: 45px; justify-content: center; min-width: 100px; padding-top: 4px; width: 100%; border-color: #1d1d1b; border-style: solid; border-width: 2px; elevation: 0; letter-spacing: 0.2px;"
@@ -86,10 +86,10 @@ exports[`Inline Newsletter Puff Manage preferences  renders the success view aft
 <body>
   <div>
     <div
-      class="sc-bwzfXH sc-bxivhb eFfKYo"
+      class="sc-bdVaJa sc-htpNat bSdOkq"
     >
       <div
-        class="sc-bwzfXH sc-ifAKCX iIuQqJ"
+        class="sc-bdVaJa sc-bxivhb fstdFq"
       >
         <div
           class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -131,30 +131,30 @@ exports[`Inline Newsletter Puff Manage preferences  renders the success view aft
         </div>
       </div>
       <div
-        class="sc-bwzfXH sc-EHOje cnpgWH"
+        class="sc-bdVaJa sc-ifAKCX bukoJc"
       >
         <div
-          class="sc-htpNat sc-bZQynM eFfPze"
+          class="sc-bwzfXH sc-EHOje iNBbNz"
         >
           You’ve successfully signed up to RED BOX
         </div>
         <div
-          class="sc-bwzfXH sc-gqjmRU hXnnkR"
+          class="sc-bdVaJa sc-gZMcBi hBIkUX"
         >
           <a
             class="link__RespLink-sc-1ocvixa-0 dfMuic"
             href="https://home.thetimes.co.uk/myNews"
           >
             <div
-              class="sc-bwzfXH sc-fjdhpX hqqPmH"
+              class="sc-bdVaJa sc-jTzLTM kuRCjI"
             >
               <div
-                class="sc-htpNat sc-VigVT jAXYkY"
+                class="sc-bwzfXH sc-gqjmRU jvmtty"
               >
                 Manage preferences here
               </div>
               <div
-                class="sc-bwzfXH sc-jTzLTM iwYtNd"
+                class="sc-bdVaJa sc-VigVT fqkICi"
               >
                 <svg
                   aria-label="icon-forward-arrow"
@@ -190,7 +190,7 @@ exports[`Inline Newsletter Puff renders placeholder when loading 1`] = `
 <body>
   <div>
     <div
-      class="sc-bwzfXH sc-bxivhb eFfKYo"
+      class="sc-bdVaJa sc-htpNat bSdOkq"
       style="height: 257px;"
     >
       <div
@@ -228,10 +228,10 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
 <body>
   <div>
     <div
-      class="sc-bwzfXH sc-bxivhb eFfKYo"
+      class="sc-bdVaJa sc-htpNat bSdOkq"
     >
       <div
-        class="sc-bwzfXH sc-ifAKCX iIuQqJ"
+        class="sc-bdVaJa sc-bxivhb fstdFq"
       >
         <div
           class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -273,25 +273,25 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
         </div>
       </div>
       <div
-        class="sc-bwzfXH sc-gzVnrw kPglJV"
+        class="sc-bdVaJa sc-bZQynM dZCUeH"
       >
         <div
-          class="sc-htpNat sc-htoDjs tUdvb"
+          class="sc-bwzfXH sc-gzVnrw fwTOvg"
         >
           STRAIGHT IN YOUR INBOX
         </div>
         <div
-          class="sc-htpNat sc-dnqmqq izktAV"
+          class="sc-bwzfXH sc-htoDjs epVajn"
         >
           Politics. Explained.
         </div>
         <div
-          class="sc-htpNat sc-iwsKbI fjXbeR"
+          class="sc-bwzfXH sc-dnqmqq icKJfC"
         >
           Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
         </div>
         <div
-          class="sc-bwzfXH sc-gZMcBi jzNKBS"
+          class="sc-bdVaJa sc-iwsKbI beJMRD"
         >
           <button
             style="font-family: GillSansMTStd-Medium; font-size: 16px; line-height: 0; align-items: center; background-color: transparent; border-radius: 2px; color: rgb(29, 29, 27); cursor: pointer; height: 45px; justify-content: center; min-width: 100px; padding-top: 4px; width: 100%; border-color: #1d1d1b; border-style: solid; border-width: 2px; elevation: 0; letter-spacing: 0.2px;"
@@ -310,10 +310,10 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
 <body>
   <div>
     <div
-      class="sc-bwzfXH sc-bxivhb eFfKYo"
+      class="sc-bdVaJa sc-htpNat bSdOkq"
     >
       <div
-        class="sc-bwzfXH sc-ifAKCX iIuQqJ"
+        class="sc-bdVaJa sc-bxivhb fstdFq"
       >
         <div
           class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -355,25 +355,25 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
         </div>
       </div>
       <div
-        class="sc-bwzfXH sc-gzVnrw kPglJV"
+        class="sc-bdVaJa sc-bZQynM dZCUeH"
       >
         <div
-          class="sc-htpNat sc-htoDjs tUdvb"
+          class="sc-bwzfXH sc-gzVnrw fwTOvg"
         >
           STRAIGHT IN YOUR INBOX
         </div>
         <div
-          class="sc-htpNat sc-dnqmqq izktAV"
+          class="sc-bwzfXH sc-htoDjs epVajn"
         >
           Politics. Explained.
         </div>
         <div
-          class="sc-htpNat sc-iwsKbI fjXbeR"
+          class="sc-bwzfXH sc-dnqmqq icKJfC"
         >
           Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
         </div>
         <div
-          class="sc-bwzfXH sc-gZMcBi jzNKBS"
+          class="sc-bdVaJa sc-iwsKbI beJMRD"
         >
           <button
             style="font-family: GillSansMTStd-Medium; font-size: 16px; line-height: 0; align-items: center; background-color: transparent; border-radius: 2px; color: rgb(29, 29, 27); cursor: pointer; height: 45px; justify-content: center; min-width: 100px; padding-top: 4px; width: 100%; border-color: #1d1d1b; border-style: solid; border-width: 2px; elevation: 0; letter-spacing: 0.2px;"

@@ -4,33 +4,33 @@ exports[`ArticleHeader Same calendar day during GMT With breaking flag and headl
 <body>
   <div>
     <div
-      class="sc-jTzLTM gQFucQ"
+      class="sc-VigVT esKZlx"
       id="u_20211231063000T222"
     >
       <div
-        class="sc-fjdhpX fKhFGW"
+        class="sc-jTzLTM hsNKrf"
       >
         <div
-          class="sc-kAzzGY dfWFGd"
+          class="sc-cSHVUG jdArUK"
         >
           <div
-            class="sc-dxgOiQ hXvwCf"
+            class="sc-kpOJdX pPyiu"
           >
             <div
-              class="sc-bZQynM lnFKgR"
+              class="sc-EHOje cfBXHC"
             >
               <div
-                class="sc-bwzfXH eyelLP"
+                class="sc-bdVaJa bkSKmo"
               >
                 <div
-                  class="sc-bxivhb fPzEzV"
+                  class="sc-htpNat jcRSar"
                 >
                   <div
-                    class="sc-ifAKCX fZvQdz"
+                    class="sc-bxivhb hTEbzV"
                   />
                 </div>
                 <span
-                  class="sc-htpNat bgqAuA"
+                  class="sc-bwzfXH hBgZUv"
                 >
                   BREAKING
                 </span>
@@ -38,27 +38,27 @@ exports[`ArticleHeader Same calendar day during GMT With breaking flag and headl
             </div>
           </div>
           <div
-            class="sc-jzJRlG fBJUXc"
+            class="sc-fjdhpX eXIoUS"
           >
             <div
-              class="sc-cSHVUG kVXUZs"
+              class="sc-jzJRlG ektXhQ"
               data-testid="TimeSincePublishing"
             >
               30 minutes ago
             </div>
             <div
-              class="sc-kGXeez gepblZ"
+              class="sc-kgoBCf gsnOug"
             />
           </div>
           <div
-            class="sc-chPdSV gAyiFe"
+            class="sc-kAzzGY cABvZX"
           >
             6.30am
           </div>
         </div>
       </div>
       <h2
-        class="sc-kpOJdX fZeFoD"
+        class="sc-kGXeez crUIWF"
       >
         This is the headline
       </h2>

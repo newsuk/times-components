@@ -3,20 +3,20 @@
 exports[`<Article /> should render an article correctly 1`] = `
 <DocumentFragment>
   <article
-    class="sc-bwzfXH cqdFAv"
+    class="sc-bdVaJa febYmB"
   >
     <div
-      class="sc-htpNat jrBaRH"
+      class="sc-bwzfXH iKKeUw"
     >
       <div>
         Image
       </div>
     </div>
     <div
-      class="sc-htpNat jrBaRH"
+      class="sc-bwzfXH iKKeUw"
     >
       <p
-        class="sc-bxivhb hGUXDL"
+        class="sc-htpNat dtQRdf"
       >
         Some text label
       </p>
@@ -24,7 +24,7 @@ exports[`<Article /> should render an article correctly 1`] = `
         Headline
       </div>
       <p
-        class="sc-EHOje hlzfZd"
+        class="sc-ifAKCX hVJTTS"
       >
         1 hour ago
       </p>

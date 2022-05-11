@@ -4,10 +4,10 @@ exports[`<InlineMessage> should render the component 1`] = `
 <body>
   <div>
     <div
-      class="info sc-bwzfXH bcCzHz"
+      class="info sc-bdVaJa kXVVQy"
     >
       <div
-        class="sc-htpNat eqUlJo"
+        class="sc-bwzfXH bYsvTR"
       >
         <svg
           fill="none"
@@ -24,15 +24,15 @@ exports[`<InlineMessage> should render the component 1`] = `
         </svg>
       </div>
       <div
-        class="sc-bxivhb ePPmkK"
+        class="sc-htpNat fMAJrN"
       >
         <div
-          class="sc-ifAKCX esyZYS"
+          class="sc-bxivhb dnEdgn"
         >
           Title
         </div>
         <div
-          class="sc-EHOje eLzoBj"
+          class="sc-ifAKCX kAievE"
         />
       </div>
     </div>

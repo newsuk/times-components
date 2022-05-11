@@ -3,41 +3,41 @@
 exports[`<Secondary2And3NoPic /> should render an SECONDARY_2_AND_3_NO_PIC slice correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bwzfXH sc-bxivhb ebYlbT"
+    class="sc-bdVaJa sc-htpNat gWBumh"
   >
     <div
-      class="sc-htpNat sc-ifAKCX bmRmgX"
+      class="sc-bwzfXH sc-bxivhb gEodUp"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-htpNat sc-ifAKCX bmRmgX"
+      class="sc-bwzfXH sc-bxivhb gEodUp"
     >
       <div>
         Article
       </div>
     </div>
     <div
-      class="sc-htpNat sc-EHOje iYcOmv"
+      class="sc-bwzfXH sc-ifAKCX bbGXLH"
     >
       <div
-        class="sc-htpNat sc-bZQynM dBipVV"
+        class="sc-bwzfXH sc-EHOje fSuwbC"
       >
         <div>
           Article
         </div>
       </div>
       <div
-        class="sc-htpNat sc-bZQynM dBipVV"
+        class="sc-bwzfXH sc-EHOje fSuwbC"
       >
         <div>
           Article
         </div>
       </div>
       <div
-        class="sc-htpNat sc-bZQynM dBipVV"
+        class="sc-bwzfXH sc-EHOje fSuwbC"
       >
         <div>
           Article

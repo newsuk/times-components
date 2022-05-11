@@ -7,7 +7,7 @@ exports[`RelatedArticleSlice error checks invalid slicename 1`] = `<DocumentFrag
 exports[`RelatedArticleSlice renders 1 1`] = `
 <DocumentFragment>
   <div
-    class="RelatedArticleSlice sc-dVhcbM kTrWhD"
+    class="RelatedArticleSlice sc-bdVaJa OXMAI"
   >
     <div
       class="heading"
@@ -15,28 +15,28 @@ exports[`RelatedArticleSlice renders 1 1`] = `
       Related Articles
     </div>
     <div
-      class="sc-gqjmRU sc-fBuWsC cpkUFc"
+      class="shared-styles__SliceContainer-ismxwo-0 styles__SliceContainer-b33h2c-0 dDeBKy"
     >
       <div
-        class="sc-VigVT sc-fMiknA gRJFLd"
+        class="shared-styles__SlotContainer-ismxwo-1 styles__SlotContainer-b33h2c-1 cKwigu"
       >
         <article
-          class="sc-bZQynM iuNhVy"
+          class="shared-styles__ArticleContainer-sc-1kek94e-0 jgpbxb"
         >
           <div
-            class="sc-gzVnrw hheJxB"
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jOKfAL"
           >
             <div
-              class="sc-bxivhb dRsrVH"
+              class="styles__ImageContainer-sc-8lglkt-0 hmOUZw"
             >
               <a
                 href="https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t"
               >
                 <div
-                  class="sc-ifAKCX bsfsxb"
+                  class="styles__ImageRatio-sc-8lglkt-1 gbnXjW"
                 >
                   <div
-                    class="sc-bdVaJa fdpJDB"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
@@ -48,15 +48,15 @@ exports[`RelatedArticleSlice renders 1 1`] = `
             </div>
           </div>
           <div
-            class="sc-gzVnrw hheJxB"
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jOKfAL"
           >
             <p
-              class="sc-htoDjs dkiinb"
+              class="shared-styles__Label-sc-1kek94e-2 IvuEf"
             >
               Comment
             </p>
             <div
-              class="sc-EHOje kuKfbn"
+              class="styles__HeadlineContainer-k0mgwi-0 jkGvyo"
             >
               <a
                 href="https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t"
@@ -67,7 +67,7 @@ exports[`RelatedArticleSlice renders 1 1`] = `
               </a>
             </div>
             <p
-              class="sc-dnqmqq duPlil"
+              class="styles__Strapline-p3h2iu-0 iVGLEU"
             >
               The average age of my colleagues at Gymshark was 26 when we had 260 staff in 2018. It is now 29, but we have almost tripled in size. Half our management team is younger than 30, including our founder Ben, who set up the
             </p>
@@ -82,7 +82,7 @@ exports[`RelatedArticleSlice renders 1 1`] = `
 exports[`RelatedArticleSlice renders 2 1`] = `
 <DocumentFragment>
   <div
-    class="RelatedArticleSlice sc-dVhcbM kTrWhD"
+    class="RelatedArticleSlice sc-bdVaJa OXMAI"
   >
     <div
       class="heading"
@@ -90,28 +90,28 @@ exports[`RelatedArticleSlice renders 2 1`] = `
       Related Articles
     </div>
     <div
-      class="sc-gqjmRU fHAJuF"
+      class="shared-styles__SliceContainer-ismxwo-0 gqQstL"
     >
       <div
-        class="sc-VigVT sc-kkGfuU ihRFdb"
+        class="shared-styles__SlotContainer-ismxwo-1 styles__SlotContainer-z7ncw3-0 hMxCMR"
       >
         <article
-          class="sc-bZQynM eYJhYp"
+          class="shared-styles__ArticleContainer-sc-1kek94e-0 hYGxtr"
         >
           <div
-            class="sc-gzVnrw SrZuv"
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
           >
             <div
-              class="sc-bxivhb fdEgwX"
+              class="styles__ImageContainer-sc-8lglkt-0 CuqlR"
             >
               <a
                 href="https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t"
               >
                 <div
-                  class="sc-ifAKCX kYdlTY"
+                  class="styles__ImageRatio-sc-8lglkt-1 bMAlMW"
                 >
                   <div
-                    class="sc-bdVaJa fdpJDB"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
@@ -120,10 +120,10 @@ exports[`RelatedArticleSlice renders 2 1`] = `
                   </div>
                 </div>
                 <div
-                  class="sc-ifAKCX jeHWTF"
+                  class="styles__ImageRatio-sc-8lglkt-1 lhnvcZ"
                 >
                   <div
-                    class="sc-bdVaJa fdpJDB"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
@@ -135,15 +135,15 @@ exports[`RelatedArticleSlice renders 2 1`] = `
             </div>
           </div>
           <div
-            class="sc-gzVnrw SrZuv"
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
           >
             <p
-              class="sc-htoDjs dkiinb"
+              class="shared-styles__Label-sc-1kek94e-2 IvuEf"
             >
               Comment
             </p>
             <div
-              class="sc-EHOje cjGuRy"
+              class="styles__HeadlineContainer-k0mgwi-0 kpCqSZ"
             >
               <a
                 href="https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t"
@@ -157,25 +157,25 @@ exports[`RelatedArticleSlice renders 2 1`] = `
         </article>
       </div>
       <div
-        class="sc-VigVT sc-kkGfuU ihRFdb"
+        class="shared-styles__SlotContainer-ismxwo-1 styles__SlotContainer-z7ncw3-0 hMxCMR"
       >
         <article
-          class="sc-bZQynM eYJhYp"
+          class="shared-styles__ArticleContainer-sc-1kek94e-0 hYGxtr"
         >
           <div
-            class="sc-gzVnrw SrZuv"
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
           >
             <div
-              class="sc-bxivhb fdEgwX"
+              class="styles__ImageContainer-sc-8lglkt-0 CuqlR"
             >
               <a
                 href="https://www.thetimes.co.uk/article/susie-ma-my-recipe-for-self-belief-pstccwdxr"
               >
                 <div
-                  class="sc-ifAKCX kYdlTY"
+                  class="styles__ImageRatio-sc-8lglkt-1 bMAlMW"
                 >
                   <div
-                    class="sc-bdVaJa fdpJDB"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
@@ -184,10 +184,10 @@ exports[`RelatedArticleSlice renders 2 1`] = `
                   </div>
                 </div>
                 <div
-                  class="sc-ifAKCX jeHWTF"
+                  class="styles__ImageRatio-sc-8lglkt-1 lhnvcZ"
                 >
                   <div
-                    class="sc-bdVaJa fdpJDB"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
@@ -199,10 +199,10 @@ exports[`RelatedArticleSlice renders 2 1`] = `
             </div>
           </div>
           <div
-            class="sc-gzVnrw SrZuv"
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
           >
             <div
-              class="sc-EHOje cjGuRy"
+              class="styles__HeadlineContainer-k0mgwi-0 kpCqSZ"
             >
               <a
                 href="https://www.thetimes.co.uk/article/susie-ma-my-recipe-for-self-belief-pstccwdxr"
@@ -223,7 +223,7 @@ exports[`RelatedArticleSlice renders 2 1`] = `
 exports[`RelatedArticleSlice renders 3 1`] = `
 <DocumentFragment>
   <div
-    class="RelatedArticleSlice sc-dVhcbM kTrWhD"
+    class="RelatedArticleSlice sc-bdVaJa OXMAI"
   >
     <div
       class="heading"
@@ -231,28 +231,28 @@ exports[`RelatedArticleSlice renders 3 1`] = `
       Related Articles
     </div>
     <div
-      class="sc-gqjmRU sc-kpOJdX dnCycN"
+      class="shared-styles__SliceContainer-ismxwo-0 styles__SliceContainer-fss0bs-0 eEcrrn"
     >
       <div
-        class="sc-VigVT sc-dxgOiQ cMoArW"
+        class="shared-styles__SlotContainer-ismxwo-1 styles__SlotContainerLead-fss0bs-1 elZmkS"
       >
         <article
-          class="sc-bZQynM eYJhYp"
+          class="shared-styles__ArticleContainer-sc-1kek94e-0 hYGxtr"
         >
           <div
-            class="sc-gzVnrw SrZuv"
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
           >
             <div
-              class="sc-bxivhb fdEgwX"
+              class="styles__ImageContainer-sc-8lglkt-0 CuqlR"
             >
               <a
                 href="https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t"
               >
                 <div
-                  class="sc-ifAKCX kYdlTY"
+                  class="styles__ImageRatio-sc-8lglkt-1 bMAlMW"
                 >
                   <div
-                    class="sc-bdVaJa fdpJDB"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
@@ -261,10 +261,10 @@ exports[`RelatedArticleSlice renders 3 1`] = `
                   </div>
                 </div>
                 <div
-                  class="sc-ifAKCX jeHWTF"
+                  class="styles__ImageRatio-sc-8lglkt-1 lhnvcZ"
                 >
                   <div
-                    class="sc-bdVaJa fdpJDB"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
@@ -276,15 +276,15 @@ exports[`RelatedArticleSlice renders 3 1`] = `
             </div>
           </div>
           <div
-            class="sc-gzVnrw SrZuv"
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
           >
             <p
-              class="sc-htoDjs dkiinb"
+              class="shared-styles__Label-sc-1kek94e-2 IvuEf"
             >
               Comment
             </p>
             <div
-              class="sc-EHOje kuKfbn"
+              class="styles__HeadlineContainer-k0mgwi-0 jkGvyo"
             >
               <a
                 href="https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t"
@@ -298,28 +298,28 @@ exports[`RelatedArticleSlice renders 3 1`] = `
         </article>
       </div>
       <div
-        class="sc-VigVT sc-ckVGcZ eqRVg"
+        class="shared-styles__SlotContainer-ismxwo-1 styles__StackedColumn-fss0bs-2 frvBmZ"
       >
         <div
-          class="sc-VigVT hquidN"
+          class="shared-styles__SlotContainer-ismxwo-1 dBqZIh"
         >
           <article
-            class="sc-bZQynM eYJhYp"
+            class="shared-styles__ArticleContainer-sc-1kek94e-0 hYGxtr"
           >
             <div
-              class="sc-gzVnrw SrZuv"
+              class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
             >
               <div
-                class="sc-bxivhb fdEgwX"
+                class="styles__ImageContainer-sc-8lglkt-0 CuqlR"
               >
                 <a
                   href="https://www.thetimes.co.uk/article/susie-ma-my-recipe-for-self-belief-pstccwdxr"
                 >
                   <div
-                    class="sc-ifAKCX bsfsxb"
+                    class="styles__ImageRatio-sc-8lglkt-1 gbnXjW"
                   >
                     <div
-                      class="sc-bdVaJa fdpJDB"
+                      class="styles__LazyContainer-qsbah5-0 jRxzJB"
                     >
                       <img
                         alt=""
@@ -331,10 +331,10 @@ exports[`RelatedArticleSlice renders 3 1`] = `
               </div>
             </div>
             <div
-              class="sc-gzVnrw SrZuv"
+              class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
             >
               <div
-                class="sc-EHOje fcDUnY"
+                class="styles__HeadlineContainer-k0mgwi-0 pfFSN"
               >
                 <a
                   href="https://www.thetimes.co.uk/article/susie-ma-my-recipe-for-self-belief-pstccwdxr"
@@ -348,22 +348,22 @@ exports[`RelatedArticleSlice renders 3 1`] = `
           </article>
         </div>
         <article
-          class="sc-bZQynM echkIr"
+          class="shared-styles__ArticleContainer-sc-1kek94e-0 hwrniB"
         >
           <div
-            class="sc-gzVnrw exwLiI"
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 eKXwdB"
           >
             <div
-              class="sc-bxivhb jiOiDG"
+              class="styles__ImageContainer-sc-8lglkt-0 dxqTQU"
             >
               <a
                 href="https://www.thetimes.co.uk/article/why-business-is-eating-software-swl6j8jj3"
               >
                 <div
-                  class="sc-ifAKCX bsfsxb"
+                  class="styles__ImageRatio-sc-8lglkt-1 gbnXjW"
                 >
                   <div
-                    class="sc-bdVaJa fdpJDB"
+                    class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
@@ -375,10 +375,10 @@ exports[`RelatedArticleSlice renders 3 1`] = `
             </div>
           </div>
           <div
-            class="sc-gzVnrw exwLiI"
+            class="shared-styles__SideBySideColumn-sc-1kek94e-1 eKXwdB"
           >
             <div
-              class="sc-EHOje idzahT"
+              class="styles__HeadlineContainer-k0mgwi-0 hntcoi"
             >
               <a
                 href="https://www.thetimes.co.uk/article/why-business-is-eating-software-swl6j8jj3"
@@ -389,7 +389,7 @@ exports[`RelatedArticleSlice renders 3 1`] = `
               </a>
             </div>
             <p
-              class="sc-iwsKbI bjTJyE"
+              class="styles__TimeSince-p3h2iu-1 lgXIbS"
             >
               3 days ago
             </p>
