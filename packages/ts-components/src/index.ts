@@ -109,28 +109,6 @@ export {
 
 export { UpdatedTimeProvider } from './helpers/time/UpdatedTimeProvider';
 
-// styleguide
-export {
-  default as styleguide,
-  Animations,
-  breakpoints,
-  colours,
-  editionBreakpoints,
-  editionBreakpointWidths,
-  editionMaxWidth,
-  sliceContentMaxWidth,
-  fonts,
-  fontFactory,
-  fontSizes,
-  getEditionBreakpoint,
-  lineHeight,
-  scales,
-  spacing,
-  globalSpacingStyles,
-  tabletRowPadding,
-  themeFactory
-} from './components/styleguide/Styleguide';
-
 export {
   default as safeDecodeURIComponent
 } from './utils/safeDecodeURIComponent';
