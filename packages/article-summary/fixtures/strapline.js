@@ -1,12 +1,11 @@
 import React from "react";
-import { styleguide, ArticleFlags } from "@times-components/ts-components";
+import { ArticleFlags } from "@times-components/ts-components";
+import { colours } from "@times-components/ts-styleguide";
 import {
   ArticleSummaryContent,
   ArticleSummaryHeadline,
   ArticleSummaryStrapline
 } from "..";
-
-const { colours } = styleguide();
 
 const defaultHeadline =
   "Top medal for forces dog who took a bite out of the Taliban";

@@ -1,8 +1,7 @@
 import React from "react";
-import { styleguide } from "@times-components/ts-components";
+import { colours } from "@times-components/ts-styleguide";
 import { ArticleSummaryHeadline, ArticleSummaryContent } from "..";
 
-const { colours } = styleguide();
 const defaultByline = "Camilla Long, Environment Editor";
 const defaultHeadline =
   "OK, so Putin’s not a lady, but he does have the wildest man‑PMT";

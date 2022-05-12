@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { ScrollView, View } from "react-native";
-import { styleguide } from "@times-components/ts-components";
+import { editionBreakpoints } from "@times-components/ts-styleguide";
 
 import {
   VerticalLayout,
@@ -20,8 +20,6 @@ import {
   Leaders,
   ListTwoAndSixNoPic
 } from "./src/slice-layout";
-
-const { editionBreakpoints } = styleguide();
 
 const colours = [
   { backgroundColor: "yellow", id: 1 },

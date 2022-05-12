@@ -1,11 +1,9 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { styleguide } from "@times-components/ts-components";
+import { colours } from "@times-components/ts-styleguide";
 import pick from "lodash.pick";
 import { sections } from "@times-components/storybook";
 import VideoLabel from "./src/video-label";
-
-const { colours } = styleguide();
 
 export default {
   children: [
