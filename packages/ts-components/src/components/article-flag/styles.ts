@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { fonts } from '@times-components/styleguide';
+import { fonts } from '@times-components/ts-styleguide';
 import { FlagType } from './ArticleFlag';
 import { gqlRgbaToStyle } from '@times-components/utils';
 

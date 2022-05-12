@@ -2,7 +2,7 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { boolean, select } from '@storybook/addon-knobs';
-import { colours } from '@times-components/styleguide';
+import { colours } from '@times-components/ts-styleguide';
 
 import { InArticleRelatedArticles } from './InArticleRelatedArticles';
 
@@ -63,6 +63,7 @@ storiesOf('Typescript Component/In Article/Related Articles', module)
       { Three: 3, Two: 2, One: 1 },
       3
     );
+    // @ts-ignore
     const sectionColor = select('Section', colours.section, '#636C17');
     return (
       <InArticleRelatedArticles

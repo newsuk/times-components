@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fonts } from '@times-components/styleguide';
+import { fonts } from '@times-components/ts-styleguide';
 
 const MessageConfig = {
   info: { background: '#bedeed', foreground: '#1573a2' },

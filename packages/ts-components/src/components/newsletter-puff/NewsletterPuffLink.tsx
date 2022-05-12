@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@times-components/link';
 import { IconForwardArrow } from '@times-components/icons';
-import { colours } from '@times-components/styleguide';
+import { colours } from '@times-components/ts-styleguide';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 

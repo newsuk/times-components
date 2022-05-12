@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { breakpoints } from '@times-components/styleguide';
+import { breakpoints } from '@times-components/ts-styleguide';
 
 import {
   SliceContainer as SliceContainerBase,
