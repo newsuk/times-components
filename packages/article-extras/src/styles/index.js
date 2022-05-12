@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
+import { tabletWidth } from "@times-components/styleguide";
 import {
   colours,
   fontFactory,
-  spacing,
-  tabletWidth
-} from "@times-components/styleguide";
+  spacing
+} from "@times-components/ts-styleguide";
 
 const styles = StyleSheet.create({
   extrasErrorBody: {

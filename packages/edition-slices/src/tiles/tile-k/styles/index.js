@@ -3,7 +3,7 @@ import {
   spacing,
   colours,
   editionBreakpoints
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
 const headlineSizeResolver = {
   [editionBreakpoints.huge]: 25,

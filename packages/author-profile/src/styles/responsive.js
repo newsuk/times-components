@@ -6,7 +6,7 @@ import {
   fonts,
   fontSizes,
   spacing
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
 export const AuthorHeadWrapper = styled(View)`
   width: 100%;

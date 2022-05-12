@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { View } from "react-native";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/ts-styleguide";
 import PropTypes from "prop-types";
 import styleFactory from "./styles";
 import { ItemRowSeparator, ItemColSeparator } from "../shared";

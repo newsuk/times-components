@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { StyleSheet, Text } from "react-native";
-import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import { colours, fonts, fontSizes } from "@times-components/ts-styleguide";
 import DatePublication from "./src/date-publication";
 
 const styles = StyleSheet.create({

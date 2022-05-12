@@ -1,9 +1,8 @@
+import { tabletWidth, tabletWidthMax } from "@times-components/styleguide";
 import {
   spacing,
-  tabletRowPadding,
-  tabletWidth,
-  tabletWidthMax
-} from "@times-components/styleguide";
+  tabletRowPadding
+} from "@times-components/ts-styleguide";
 
 const containerShared = {
   alignSelf: "center",

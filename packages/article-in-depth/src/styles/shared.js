@@ -1,9 +1,6 @@
-import styleguide, {
-  tabletWidth,
-  tabletWidthMax
-} from "@times-components/styleguide";
+import { tabletWidth, tabletWidthMax } from "@times-components/styleguide";
+import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 
-const { colours, fontFactory, spacing } = styleguide();
 const sharedStyles = {
   articleHeadline: {
     ...fontFactory({

@@ -1,5 +1,5 @@
 import React from "react";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components/ts-styleguide";
 import propTypes from "./prop-types";
 
 const ForwardChevron = ({ fillColour, height, width }) => (

@@ -38,7 +38,6 @@
     "@times-components/link": "3.10.1",
     "@times-components/provider": "1.30.23",
     "@times-components/provider-queries": "2.15.3",
-    "@times-components/styleguide": "3.38.49",
     "@times-components/tracking": "2.9.27",
     "@times-components/utils": "6.11.2",
     "prop-types": "15.7.2",
