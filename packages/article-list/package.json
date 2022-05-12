@@ -74,7 +74,7 @@
     "@times-components/lazy-load": "0.6.53",
     "@times-components/link": "3.10.2",
     "@times-components/pagination": "3.6.2",
-    "@times-components/styleguide": "3.38.50",
+    "@times-components/styleguide": "3.38.51",
     "@times-components/tracking": "2.9.28",
     "@times-components/utils": "6.11.2",
     "lodash.get": "4.4.2",

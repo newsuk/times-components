@@ -60,7 +60,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.38.50"
+    "@times-components/styleguide": "3.38.51"
   },
   "resolutions": {
     "react": "16.9.0",
