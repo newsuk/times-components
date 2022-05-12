@@ -61,7 +61,6 @@
     "@times-components/context": "1.8.1",
     "@times-components/link": "3.10.2",
     "@times-components/tracking": "2.9.28",
-    "@times-components/ts-components": "1.35.1",.
     "@times-components/ts-components": "1.35.1",
     "prop-types": "15.7.2"
   },

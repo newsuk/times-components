@@ -50,7 +50,7 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@times-components/ts-styleguide": "1.35.2",
+    "@times-components/ts-styleguide": "1.36.0",
     "date-fns": "2.28.0",
     "lodash.get": "4.4.2",
     "react": "16.9.0",

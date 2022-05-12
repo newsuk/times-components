@@ -1,7 +1,8 @@
-import { tabletWidth, tabletWidthMax } from "@times-components/styleguide";
 import {
   spacing,
-  tabletRowPadding
+  tabletRowPadding,
+  tabletWidth,
+  tabletWidthMax
 } from "@times-components/ts-styleguide";
 
 const containerShared = {

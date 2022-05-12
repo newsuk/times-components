@@ -73,7 +73,7 @@
     "@times-components/provider": "1.30.24",
     "@times-components/responsive": "0.11.2",
     "@times-components/tracking": "2.9.28",
-    "@times-components/ts-styleguide": "1.35.2",
+    "@times-components/ts-styleguide": "1.36.0",
     "@times-components/utils": "6.11.2",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2",

@@ -1,5 +1,10 @@
-import { tabletWidth, tabletWidthMax } from "@times-components/styleguide";
-import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
+import {
+  colours,
+  fontFactory,
+  spacing,
+  tabletWidth,
+  tabletWidthMax
+} from "@times-components/ts-styleguide";
 
 const sharedStyles = {
   articleHeadline: {

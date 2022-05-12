@@ -1,9 +1,9 @@
 import { StyleSheet } from "react-native";
-import { tabletWidth } from "@times-components/styleguide";
 import {
   colours,
   fontFactory,
-  spacing
+  spacing,
+  tabletWidth
 } from "@times-components/ts-styleguide";
 
 const styles = StyleSheet.create({

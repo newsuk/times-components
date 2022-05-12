@@ -67,7 +67,7 @@
     "@times-components/gradient": "3.2.88",
     "@times-components/image": "6.11.13",
     "@times-components/responsive": "0.11.2",
-    "@times-components/ts-styleguide": "1.35.2",
+    "@times-components/ts-styleguide": "1.36.0",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },

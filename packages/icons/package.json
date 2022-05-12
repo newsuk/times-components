@@ -60,7 +60,7 @@
   },
   "dependencies": {
     "@times-components/svgs": "2.7.36",
-    "@times-components/ts-styleguide": "1.35.2",
+    "@times-components/ts-styleguide": "1.36.0",
     "@times-components/utils": "6.11.2",
     "prop-types": "15.7.2"
   },
