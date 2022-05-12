@@ -2,7 +2,7 @@ import shuffle from 'lodash.shuffle';
 
 import { SliceArticle } from '../types/slice';
 
-export const sportArticles: SliceArticle[] = [
+const sportArticles: SliceArticle[] = [
   {
     id: '64ef2c48-e191-11ea-9a3a-c45f6db42dc9',
     images: {
