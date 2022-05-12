@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { View, Text } from "react-native";
 import PropTypes from "prop-types";
 import { tabletWidth } from "@times-components/styleguide";
-import { styleguide } from "@times-components/ts-components";
+import { styleguide } from "@times-components/ts-styleguide";
 import { screenWidth } from "@times-components/utils";
 import {
   TextContainer,

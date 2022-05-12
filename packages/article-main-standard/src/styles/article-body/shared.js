@@ -1,4 +1,4 @@
-import { styleguide } from "@times-components/ts-components";
+import { styleguide } from "@times-components/ts-styleguide";
 
 const sharedStyles = scale => {
   const { colours, fontFactory, spacing } = styleguide({ scale });

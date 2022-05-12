@@ -1,9 +1,7 @@
 import React from "react";
-import { styleguide } from "@times-components/ts-components";
+import { spacing } from "@times-components/ts-components";
 import Caption from "./caption";
 import { defaultProps, propTypes } from "./caption-prop-types";
-
-const { spacing } = styleguide();
 
 const CentredCaption = ({ children, credits, style, text }) => (
   <Caption

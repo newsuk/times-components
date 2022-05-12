@@ -1,4 +1,4 @@
-import { colours, editionBreakpoints } from "@times-components/ts-components";
+import { colours, editionBreakpoints } from "@times-components/ts-styleguide";
 
 const mainStyle = {
   container: {

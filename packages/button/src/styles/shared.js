@@ -1,6 +1,5 @@
-import { styleguide } from "@times-components/ts-components";
+import { colours, fontFactory } from "@times-components/ts-styleguide";
 
-const { colours, fontFactory } = styleguide();
 const styles = {
   button: {
     alignItems: "center",

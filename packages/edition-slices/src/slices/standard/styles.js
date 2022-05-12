@@ -1,4 +1,4 @@
-import { spacing } from "@times-components/ts-components";
+import { spacing } from "@times-components/ts-styleguide";
 
 const mediumBreakpointStyles = {
   container: {

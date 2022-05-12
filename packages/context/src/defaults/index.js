@@ -1,4 +1,4 @@
-import { scales } from "@times-components/ts-components";
+import { scales } from "@times-components/ts-styleguide";
 
 export default {
   makeArticleUrl: ({ slug, shortIdentifier }) =>

@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import { styleguide } from "@times-components/ts-components";
-
-const { fonts, spacing, colours } = styleguide();
+import { fonts, spacing, colours } from "@times-components/ts-styleguide";
 
 export const Video360Container = styled.div`
   border-radius: 100%;

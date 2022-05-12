@@ -1,4 +1,4 @@
-import { spacing, editionBreakpoints } from "@times-components/ts-components";
+import { spacing, editionBreakpoints } from "@times-components/ts-styleguide";
 
 const keylinePadding = {
   [editionBreakpoints.medium]: spacing(2),

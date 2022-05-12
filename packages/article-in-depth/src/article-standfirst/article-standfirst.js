@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { colours } from "@times-components/ts-components";
+import { colours } from "@times-components/ts-styleguide";
 import styles from "../styles";
 import { StandfirstContainer } from "../styles/responsive";
 

@@ -1,6 +1,5 @@
-import { styleguide } from "@times-components/ts-components";
+import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 
-const { colours, fontFactory, spacing } = styleguide();
 const styles = {
   button: {
     marginBottom: spacing(0),

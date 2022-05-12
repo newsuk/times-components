@@ -1,7 +1,5 @@
 import PropTypes from "prop-types";
-import { styleguide } from "@times-components/ts-components";
-
-const { colours } = styleguide();
+import { colours } from "@times-components/ts-styleguide";
 
 const articleLabelPropTypes = {
   color: PropTypes.string,

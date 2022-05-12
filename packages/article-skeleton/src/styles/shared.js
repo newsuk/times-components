@@ -1,4 +1,4 @@
-import { spacing, colours } from "@times-components/ts-components";
+import { spacing, colours } from "@times-components/ts-styleguide";
 import { maxWidth } from "../gutter";
 
 const globalStyle = {

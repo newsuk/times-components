@@ -1,5 +1,5 @@
 import React from "react";
-import { colours } from "@times-components/ts-components";
+import { colours } from "@times-components/ts-styleguide";
 import { Svg, G, Path } from "@times-components/svgs";
 
 function T() {

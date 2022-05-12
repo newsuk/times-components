@@ -1,6 +1,5 @@
-import { styleguide } from "@times-components/ts-components";
+import { colours, fontFactory, fontSizes, spacing } from "@times-components/ts-styleguide";
 
-const { colours, fontFactory, fontSizes, spacing } = styleguide();
 const styles = {
   container: {
     paddingTop: spacing(2)

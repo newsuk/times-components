@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Text, StyleSheet } from "react-native";
-import { styleguide } from "@times-components/ts-components";
+import { colours, fontFactory } from "@times-components/ts-styleguide";
 
-const { colours, fontFactory } = styleguide();
 const styles = StyleSheet.create({
   message: {
     color: colours.functional.secondary,

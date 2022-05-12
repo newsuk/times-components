@@ -1,4 +1,4 @@
-import { colours } from "@times-components/ts-components";
+import { colours } from "@times-components/ts-styleguide";
 
 const sharedStyles = {
   topicsContainer: {

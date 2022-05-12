@@ -1,11 +1,9 @@
 import PropTypes from "prop-types";
-import { styleguide } from "@times-components/ts-components";
+import { colours } from "@times-components/ts-styleguide";
 import {
   propTypes as twitterPropTypes,
   defaultProps as twitterDefaultTypes
 } from "./pull-quote-twitter-link-prop-types";
-
-const { colours } = styleguide();
 
 export const propTypes = {
   caption: PropTypes.string,
