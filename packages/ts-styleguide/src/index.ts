@@ -17,7 +17,7 @@ export {
   spacing,
   globalSpacingStyles,
   tabletRowPadding,
-  themeFactory,
   tabletWidth,
-  tabletWidthMax
+  tabletWidthMax,
+  themeFactory
 } from './styleguide/Styleguide';
