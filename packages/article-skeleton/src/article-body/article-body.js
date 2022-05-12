@@ -18,8 +18,6 @@ import Video from "@times-components/video";
 import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
 import {
-  colours,
-  spacing,
   ArticleHeader,
   FetchProvider,
   InArticlePuff,
@@ -45,7 +43,7 @@ import {
   safeDecodeURIComponent,
   Timelines
 } from "@times-components/ts-components";
-
+import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 

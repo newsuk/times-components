@@ -6,10 +6,10 @@ import LazyLoad from "@times-components/lazy-load";
 import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import {
-  spacing,
   TrackingContextProvider,
   AlgoliaSearchProvider
 } from "@times-components/ts-components";
+import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 

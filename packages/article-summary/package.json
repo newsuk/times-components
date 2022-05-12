@@ -63,7 +63,7 @@
     "@times-components/markup": "3.4.88",
     "@times-components/markup-forest": "1.8.1",
     "@times-components/ts-components": "1.35.2",
-    "@times-components/ts-styleguide": "1.35.1",
+    "@times-components/ts-styleguide": "1.35.2",
     "@times-components/video-label": "2.5.18",
     "prop-types": "15.7.2",
     "react-native-web": "0.11.4"
