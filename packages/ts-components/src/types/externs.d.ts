@@ -19,48 +19,37 @@ declare module '@times-components/tracking' {
   export function withTrackEvents<T>(component: FC<T>, attr: any): FC<T>;
 }
 
-declare module '@times-components/icons' {
-  import { FC } from 'react';
-  type IconProps = {
-    fillColour: string | null;
-    height?: number;
-    width?: number;
+declare module '@times-components/ts-slices' {
+  export const Slice = React.FC;
+  export type SliceArticle = {
+    id?: string;
+    url?: string;
+    label?: string;
+    byline?: string;
+    headline: string;
+    standfirst?: string;
+    summary?: string;
+    cta?: string;
+    datePublished?: string;
+    dateUpdated?: string;
+    template?: string;
+    images: {
+      alt?: string;
+      crops: Array<{
+        url: string;
+        ratio: string;
+      }>;
+    };
   };
-  export const IconForwardChevron: FC<IconProps>;
-  export const IconForwardArrow: FC<IconProps>;
+  export type ClickHandlerType = (
+    event: MouseEventType,
+    article: SliceArticle,
+    position?: string
+  ) => void;
+  export type MouseEventType = React.MouseEvent<HTMLAnchorElement, MouseEvent>;
 }
 
-declare module '@times-components/image' {
-  import { FC } from 'react';
-
-  export const Placeholder: FC;
-  const Image: FC<{
-    aspectRatio: number;
-    uri: string;
-  }>;
-  export default Image;
-}
-
-declare module '@times-components/test-utils' {
-  export const delay: (ms: number) => Promise<never>;
-}
-
-declare module '@times-components/utils' {
-  type appendToImageURL = (
-    url: string,
-    key: string,
-    value: string | number
-  ) => string;
-
-  export const TcView: React.FC<{ style?: React.CSSProperties }>;
-  export const TcText: React.FC<{ style?: React.CSSProperties }>;
-  export const TcScrollView: React.FC<{ style?: React.CSSProperties }>;
-  export const capitalise: (s: string) => string;
-  export const stripTags: (input: string, replaceWith: string) => string;
-  export const gqlRgbaToStyle: (colour: string | undefined) => string | null;
-}
-
-declare module '@times-components/styleguide' {
+declare module '@times-components/ts-styleguide' {
   type ColourMap = Record<string, string>;
   type Colours = Record<string, ColourMap>;
 
@@ -110,6 +99,47 @@ declare module '@times-components/styleguide' {
 
   export { styleguide };
   export default styleguide;
+}
+
+declare module '@times-components/icons' {
+  import { FC } from 'react';
+  type IconProps = {
+    fillColour: string | null;
+    height?: number;
+    width?: number;
+  };
+  export const IconForwardChevron: FC<IconProps>;
+  export const IconForwardArrow: FC<IconProps>;
+}
+
+declare module '@times-components/image' {
+  import { FC } from 'react';
+
+  export const Placeholder: FC;
+  const Image: FC<{
+    aspectRatio: number;
+    uri: string;
+  }>;
+  export default Image;
+}
+
+declare module '@times-components/test-utils' {
+  export const delay: (ms: number) => Promise<never>;
+}
+
+declare module '@times-components/utils' {
+  type appendToImageURL = (
+    url: string,
+    key: string,
+    value: string | number
+  ) => string;
+
+  export const TcView: React.FC<{ style?: React.CSSProperties }>;
+  export const TcText: React.FC<{ style?: React.CSSProperties }>;
+  export const TcScrollView: React.FC<{ style?: React.CSSProperties }>;
+  export const capitalise: (s: string) => string;
+  export const stripTags: (input: string, replaceWith: string) => string;
+  export const gqlRgbaToStyle: (colour: string | undefined) => string | null;
 }
 
 declare module '@times-components/button' {

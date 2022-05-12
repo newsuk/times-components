@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { colours, fonts } from '@times-components/styleguide';
+import { colours, fonts } from '@times-components/ts-styleguide';
 
 export const Container = styled.div`
   display: flex;

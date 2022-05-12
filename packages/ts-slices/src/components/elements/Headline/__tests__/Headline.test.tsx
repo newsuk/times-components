@@ -20,12 +20,18 @@ describe('<Headline />', () => {
     jest.clearAllMocks();
   });
 
-  it('should render headline component correctly', () => {
-    const { asFragment, getByText } = render(<Headline article={article} />);
-
-    getByText(article.headline);
+  it('should not render if the headline attribute is empty in the article object', () => {
+    const { asFragment } = render(
+      <Headline article={{ images: { crops: [] }, headline: '', url: '' }} />
+    );
 
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('should render headline component correctly', () => {
+    const { getByText } = render(<Headline article={article} />);
+
+    getByText(article.headline);
   });
 
   it('should fire the correct event when the headline clicked', () => {

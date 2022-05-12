@@ -12,7 +12,7 @@ declare module '@times-components/icons' {
   }>;
 }
 
-declare module '@times-components/styleguide' {
+declare module '@times-components/ts-styleguide' {
   type ColourMap = Record<string, string>;
   type Colours = Record<string, ColourMap>;
 

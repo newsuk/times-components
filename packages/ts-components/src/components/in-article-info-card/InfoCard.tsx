@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Placeholder } from '@times-components/image';
-import { breakpoints } from '@times-components/styleguide';
+import { breakpoints } from '@times-components/ts-styleguide';
 import { Card } from './Card';
 import {
   InfoCardContainer,

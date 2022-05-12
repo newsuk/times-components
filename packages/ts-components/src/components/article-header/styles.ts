@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { breakpoints, colours, fonts } from '@times-components/styleguide';
+import { breakpoints, colours, fonts } from '@times-components/ts-styleguide';
 
 export const Container = styled.div<{ isBreaking: boolean }>`
   display: flex;
