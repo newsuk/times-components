@@ -1,8 +1,7 @@
-import { View } from "react-native";
 import styled from "styled-components";
 import { breakpoints, spacing } from "@times-components/styleguide";
 
-export default styled(View)`
+export default styled.div`
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
 

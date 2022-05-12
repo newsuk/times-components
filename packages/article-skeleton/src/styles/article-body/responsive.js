@@ -81,7 +81,7 @@ export const LeadAsset = styled(View)`
   }
 `;
 
-export const LeadAssetCaptionContainer = styled(View)`
+export const LeadAssetCaptionContainer = styled.div`
   display: none;
 
   @media (min-width: ${breakpoints.wide}px) {
