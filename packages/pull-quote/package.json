@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pull-quote",
-  "version": "3.8.19",
+  "version": "3.8.20",
   "description": "Pull Quote for Times Components Articles",
   "main": "dist/pull-quote",
   "dev": "src/pull-quote",
@@ -38,7 +38,7 @@
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator": "2.8.0",
     "@times-components/jest-serializer": "3.2.29",
-    "@times-components/storybook": "4.2.19",
+    "@times-components/storybook": "4.2.20",
     "@times-components/test-utils": "2.3.10",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
@@ -64,9 +64,9 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/icons": "2.16.30",
-    "@times-components/link": "3.10.1",
-    "@times-components/styleguide": "3.38.49",
+    "@times-components/icons": "2.16.31",
+    "@times-components/link": "3.10.2",
+    "@times-components/styleguide": "3.38.50",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
