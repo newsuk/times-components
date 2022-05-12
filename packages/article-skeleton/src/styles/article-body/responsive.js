@@ -65,33 +65,9 @@ export const InteractiveContainer = styled.div`
         `};
 `;
 
-/* --- Lead Asset Styles --- */
-
-export const LeadAsset = styled(View)`
-  margin-bottom: ${spacing(2)};
-
-  @media (min-width: ${breakpoints.medium}px) {
-    margin-bottom: ${spacing(4)};
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
-`;
-
-export const LeadAssetCaptionContainer = styled.div`
-  display: none;
-
-  @media (min-width: ${breakpoints.wide}px) {
-    display: flex;
-  }
-`;
-
 /* --- Article Images --- */
 
-export const PrimaryImg = styled(View)`
+export const PrimaryImg = styled.div`
   width: 100%;
   flex-direction: column;
   padding-bottom: ${spacing(5)};
@@ -106,11 +82,12 @@ export const PrimaryImg = styled(View)`
   }
 `;
 
-export const FullWidthImg = styled(View)`
+export const FullWidthImg = styled.div`
   padding-bottom: ${spacing(4)};
 `;
 
-export const SecondaryImg = styled(View)`
+export const SecondaryImg = styled.div`
+  display: flex;
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -130,7 +107,7 @@ export const SecondaryImg = styled(View)`
   }
 `;
 
-export const InlineImg = styled(View)`
+export const InlineImg = styled.div`
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;

@@ -1,6 +1,6 @@
 /* eslint-disable prefer-destructuring */
 import React from "react";
-import { View, Text, Dimensions } from "react-native";
+import { Text, Dimensions } from "react-native";
 import styleguide, { colours, tabletWidth } from "@times-components/styleguide";
 import { AttributedString } from "@times-components/typeset";
 import { screenWidth } from "@times-components/utils";
@@ -246,7 +246,7 @@ export default ({
         );
       }
       return (
-        <View
+        <div
           key={key}
           style={[
             styles.interactiveContainer,
@@ -255,7 +255,7 @@ export default ({
           ]}
         >
           <InteractiveWrapper config={interactiveConfig} id={id} key={key} />
-        </View>
+        </div>
       );
     },
     break() {
@@ -267,9 +267,9 @@ export default ({
     },
     keyFacts(key, attributes, children, index, tree) {
       return (
-        <View style={isTablet && styles.containerTablet}>
+        <div style={isTablet && styles.containerTablet}>
           <KeyFacts ast={tree} key={key} onLinkPress={onLinkPress} />
-        </View>
+        </div>
       );
     },
     pullQuote(
@@ -286,7 +286,7 @@ export default ({
           {({
             theme: { pullQuoteFont, sectionColour = colours.section.default }
           }) => (
-            <View style={[isTablet && { width: contentWidth * 0.35 }]}>
+            <div style={[isTablet && { width: contentWidth * 0.35 }]}>
               <PullQuote
                 caption={name}
                 font={pullQuoteFont}
@@ -297,7 +297,7 @@ export default ({
               >
                 {content}
               </PullQuote>
-            </View>
+            </div>
           )}
         </Context.Consumer>
       );
@@ -316,7 +316,7 @@ export default ({
       const screenW = screenWidth(isTablet);
       const height = screenW / aspectRatio;
       return (
-        <View
+        <div
           key={key}
           style={[styles.primaryContainer, isTablet && styles.containerTablet]}
         >
@@ -330,7 +330,7 @@ export default ({
             width={screenW}
           />
           <InsetCaption caption={caption} />
-        </View>
+        </div>
       );
     },
     unknown(key, attributes, children, index, tree) {
