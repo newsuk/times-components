@@ -1,0 +1,33 @@
+query RecommendedArticles(
+  $publisher: Publisher!,
+  $recomArgs: RecommendationsParameters!
+) {
+  recommendations(
+    publisher: $publisher,
+    recomArgs: $recomArgs
+  ) {
+    feedbackId
+    articles
+    bylines {
+      __typename
+    }
+    flags
+    headline
+    id
+    label
+    media {
+      __typename
+    }
+    publishedDateTime
+    publisher
+    slug
+    summary {
+      children {
+        __typename
+      }
+    }
+    template
+    updatedDateTime
+    url
+  }
+}
