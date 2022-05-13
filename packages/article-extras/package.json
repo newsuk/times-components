@@ -61,7 +61,7 @@
     "@times-components/related-articles": "6.8.11",
     "@times-components/responsive": "0.11.2",
     "@times-components/save-and-share-bar": "0.9.110",
-    "@times-components/ts-components": "1.35.1",
+    "@times-components/ts-components": "1.35.2",
     "@times-components/user-state": "0.3.20",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"

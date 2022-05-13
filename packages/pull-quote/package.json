@@ -66,7 +66,7 @@
   "dependencies": {
     "@times-components/icons": "2.16.31",
     "@times-components/link": "3.10.2",
-    "@times-components/ts-components": "1.35.1",
+    "@times-components/ts-components": "1.35.2",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },

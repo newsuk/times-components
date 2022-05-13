@@ -56,7 +56,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/ts-components": "1.35.1",
+    "@times-components/ts-components": "1.35.2",
     "@times-components/utils": "6.11.2",
     "prop-types": "15.7.2",
     "react-broadcast": "0.5.2"

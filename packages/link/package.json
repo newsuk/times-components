@@ -57,7 +57,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/ts-styleguide": "1.36.0",
+    "@times-components/ts-styleguide": "1.36.1",
     "@times-components/utils": "6.11.2",
     "prop-types": "15.7.2",
     "react": "16.9.0",
