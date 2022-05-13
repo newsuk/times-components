@@ -3707,61 +3707,6 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
-"@times-components/link@3.10.4":
-  version "3.10.4"
-  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-3.10.4.tgz#b807798a44e3e2debf52abadfc974dade631a66b"
-  integrity sha512-hLb3zmYIi/w8hyiLDNwoYS5YqOGQdnqUgMbmNtc1w+8gmjgKWphEtN+9HKOwHD8rDBl2KRhPDZJOv8qdAyw6kw==
-  dependencies:
-    "@times-components/styleguide" "3.38.52"
-    "@times-components/utils" "6.12.0"
-    prop-types "15.7.2"
-    react "16.9.0"
-    react-dom "16.9.0"
-    styled-components "4.3.2"
-
-"@times-components/styleguide@3.38.51":
-  version "3.38.51"
-  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.38.51.tgz#b379e2edcf8b363e57f03b30e22ef0b5c92e9cfe"
-  integrity sha512-54je4zIGlSanv9K3zh/V/T8OxcxMjn4zLoNeQGxG1CO126zwBxc/5+B2t4eZL39m1Goo5MoxN3hBYaLgj+Rx5A==
-  dependencies:
-    prop-types "15.7.2"
-    styled-components "4.3.2"
-
-"@times-components/styleguide@3.38.52":
-  version "3.38.52"
-  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.38.52.tgz#e381980bffd9725174b182bcd05623575de2d2da"
-  integrity sha512-oDn/WvUszGWwT9flK8St6QQwpZMI9vUe5RggiicBVJzyzmCreCPN+5j2qZbX/X7IbaEUNQ5ah64/Ye+hDT2pQQ==
-  dependencies:
-    prop-types "15.7.2"
-    styled-components "4.3.2"
-
-"@times-components/ts-styleguide@1.36.1":
-  version "1.36.1"
-  resolved "https://registry.yarnpkg.com/@times-components/ts-styleguide/-/ts-styleguide-1.36.1.tgz#68c89c32b5186282a743f4f3139cacb335358319"
-  integrity sha512-ISTGUc9HQ4sua/tqoqoYHMWrvF3VAjedAAKDcdMdrnQN7wwTgbgGiigNr18EV9a8Tr7jqZJUCgFU0r7TySHkOA==
-  dependencies:
-    "@times-components/link" "3.10.4"
-    "@times-components/utils" "6.12.0"
-    react "16.9.0"
-    styled-components "4.3.2"
-
-"@times-components/utils@6.12.0":
-  version "6.12.0"
-  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-6.12.0.tgz#39bf3630238852759624688acd43fa070c277fb2"
-  integrity sha512-yVL+OtpMgNrIR1fZ66oaG3Ii77C3nvOzggrKmLXnGe9gSzsvmI8FyYeFUItVVpGPZAd7fsD6k5/efQOr0XHQMQ==
-  dependencies:
-    "@times-components/schema" "0.7.1"
-    "@times-components/styleguide" "3.38.51"
-    apollo-cache-inmemory "1.5.1"
-    apollo-client "2.5.1"
-    apollo-link "1.2.4"
-    apollo-link-http "1.5.14"
-    apollo-link-persisted-queries "0.2.2"
-    lodash.omitby "4.6.0"
-    prop-types "15.7.2"
-    styled-components "4.3.2"
-    unfetch "^3.0.0"
-
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
