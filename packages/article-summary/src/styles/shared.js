@@ -1,4 +1,9 @@
-import { colours, fontFactory, fonts, spacing } from "@times-components/ts-styleguide";
+import {
+  colours,
+  fontFactory,
+  fonts,
+  spacing
+} from "@times-components/ts-styleguide";
 
 const sharedStyles = {
   headline: {
