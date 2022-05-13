@@ -1,5 +1,4 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import { mount } from "enzyme";
 import {
   addSerializers,
@@ -8,7 +7,6 @@ import {
   minimaliseTransform,
   minimalWebTransform,
   print,
-  rnwTransform
 } from "@times-components/jest-serializer";
 
 import "../mocks";
@@ -28,7 +26,6 @@ addSerializers(
     print,
     minimalWebTransform,
     minimaliseTransform(),
-    rnwTransform(AppRegistry)
   )
 );
 
