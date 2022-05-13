@@ -1,6 +1,7 @@
 /* eslint-disable prefer-destructuring */
 import React from "react";
-import { Text, Dimensions } from "react-native";
+import { Dimensions } from "react-native";
+import { TcText } from "@times-components/utils";
 import styleguide, { colours, tabletWidth } from "@times-components/styleguide";
 import { AttributedString } from "@times-components/typeset";
 import { screenWidth } from "@times-components/utils";
@@ -84,9 +85,9 @@ export default ({
           ast={tree}
           style={{ marginBottom: 0 }}
         >
-          <Text selectable style={styles[tree.name]}>
+          <TcText selectable style={styles[tree.name]}>
             {childStr.string}
-          </Text>
+          </TcText>
         </ArticleParagraphWrapper>
       );
     },
@@ -246,7 +247,7 @@ export default ({
         );
       }
       return (
-        <div
+        <TcView
           key={key}
           style={[
             styles.interactiveContainer,
@@ -255,7 +256,7 @@ export default ({
           ]}
         >
           <InteractiveWrapper config={interactiveConfig} id={id} key={key} />
-        </div>
+        </TcView>
       );
     },
     break() {
@@ -267,9 +268,9 @@ export default ({
     },
     keyFacts(key, attributes, children, index, tree) {
       return (
-        <div style={isTablet && styles.containerTablet}>
+        <TcView style={isTablet && styles.containerTablet}>
           <KeyFacts ast={tree} key={key} onLinkPress={onLinkPress} />
-        </div>
+        </TcView>
       );
     },
     pullQuote(
@@ -286,7 +287,7 @@ export default ({
           {({
             theme: { pullQuoteFont, sectionColour = colours.section.default }
           }) => (
-            <div style={[isTablet && { width: contentWidth * 0.35 }]}>
+            <TcView style={[isTablet && { width: contentWidth * 0.35 }]}>
               <PullQuote
                 caption={name}
                 font={pullQuoteFont}
@@ -297,7 +298,7 @@ export default ({
               >
                 {content}
               </PullQuote>
-            </div>
+            </TcView>
           )}
         </Context.Consumer>
       );
@@ -316,7 +317,7 @@ export default ({
       const screenW = screenWidth(isTablet);
       const height = screenW / aspectRatio;
       return (
-        <div
+        <TcView
           key={key}
           style={[styles.primaryContainer, isTablet && styles.containerTablet]}
         >
@@ -330,7 +331,7 @@ export default ({
             width={screenW}
           />
           <InsetCaption caption={caption} />
-        </div>
+        </TcView>
       );
     },
     unknown(key, attributes, children, index, tree) {

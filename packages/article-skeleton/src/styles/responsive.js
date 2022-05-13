@@ -1,16 +1,19 @@
 import styled from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/styleguide";
+import { TcView } from "@times-components/utils";
 import { ArticleKeylineItem } from "../keylines";
 
 export const getHeaderAdStyles = template => {
   const hideKeylines = template === "indepth";
 
-  return styled.div`
+  return styled(TcView)`
     box-sizing: content-box;
     justify-content: center;
     min-height: 50px;
     display: flex;
-    border-bottom: ${hideKeylines ? "0" : "1px"} solid ${colours.functional.keyline};
+    border-top-color: ${colours.functional.keyline};
+    border-bottom-color: ${colours.functional.keyline};
+    border-bottom-width: ${hideKeylines ? "0" : "1px"};
     padding-top: ${spacing(2)};
     padding-bottom: ${hideKeylines ? "0" : spacing(2)};
     @media (min-width: 768px) {
@@ -23,16 +26,15 @@ export const getHeaderAdStyles = template => {
   `;
 };
 
-export const MainContainer = styled.div`
+export const MainContainer = styled(TcView)`
   @media (min-width: ${breakpoints.wide}px) {
     padding-top: ${spacing(4)};
     margin: 0 auto;
   }
 `;
 
-export const HeaderContainer = styled.div`
+export const HeaderContainer = styled(TcView)`
   display: flex;
-  flex-direction: column;
 
   /* stylelint-disable */
   > ${ArticleKeylineItem} {
@@ -41,7 +43,7 @@ export const HeaderContainer = styled.div`
   /* stylelint-enable */
 `;
 
-export const BodyContainer = styled.div`
+export const BodyContainer = styled(TcView)`
   display: block;
   order: 4;
 `;

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types,no-shadow */
 import React from "react";
-import { Text, View } from "react-native";
+import { TcView, TcText } from "@times-components/utils";
 import pick from "lodash.pick";
 import { sections } from "@times-components/storybook";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
@@ -65,7 +65,7 @@ const mocks = [
 ];
 
 const TestHeader = () => (
-  <View
+  <TcView
     style={{
       alignItems: "center",
       borderColor: "#66666",
@@ -75,8 +75,8 @@ const TestHeader = () => (
       padding: 20
     }}
   >
-    <Text>THIS IS A TEST ARTICLE HEADER</Text>
-  </View>
+    <TcText>THIS IS A TEST ARTICLE HEADER</TcText>
+  </TcView>
 );
 
 const preventDefaultedAction = decorateAction =>

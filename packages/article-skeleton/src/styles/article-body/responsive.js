@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled, { css } from "styled-components";
 import {
   breakpoints,
@@ -67,7 +67,7 @@ export const InteractiveContainer = styled.div`
 
 /* --- Article Images --- */
 
-export const PrimaryImg = styled.div`
+export const PrimaryImg = styled(TcView)`
   width: 100%;
   flex-direction: column;
   padding-bottom: ${spacing(5)};
@@ -82,12 +82,11 @@ export const PrimaryImg = styled.div`
   }
 `;
 
-export const FullWidthImg = styled.div`
+export const FullWidthImg = styled(TcView)`
   padding-bottom: ${spacing(4)};
 `;
 
-export const SecondaryImg = styled.div`
-  display: flex;
+export const SecondaryImg = styled(TcView)`
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -107,7 +106,7 @@ export const SecondaryImg = styled.div`
   }
 `;
 
-export const InlineImg = styled.div`
+export const InlineImg = styled(TcView)`
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -130,7 +129,7 @@ export const InlineImg = styled.div`
 
 /* --- Pull Quotes --- */
 
-export const PullQuoteResp = styled(View)`
+export const PullQuoteResp = styled(TcView)`
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
   margin-bottom: ${spacing(2)};
@@ -146,7 +145,7 @@ export const PullQuoteResp = styled(View)`
   }
 `;
 
-export const PullQuoteContainer = styled(View)`
+export const PullQuoteContainer = styled(TcView)`
   display: block;
 
   @media (min-width: ${breakpoints.medium}px) {

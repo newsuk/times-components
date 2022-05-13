@@ -1,6 +1,6 @@
 /* eslint-disable react/forbid-prop-types */
 import React, { useState } from "react";
-import { View, Text } from "react-native";
+import { TcView, TcText } from "@times-components/utils";
 import PropTypes from "prop-types";
 import styleguide, { tabletWidth } from "@times-components/styleguide";
 import { screenWidth } from "@times-components/utils";
@@ -53,10 +53,10 @@ const InlineParagraph = ({
 
   return [
     dropCap && (
-      <View style={{ left: gutters - spacing(2) }}>{dropCap.element}</View>
+      <TcView style={{ left: gutters - spacing(2) }}>{dropCap.element}</TcView>
     ),
     inline && (
-      <View
+      <TcView
         style={{
           position: "absolute",
           left: gutters,
@@ -78,7 +78,7 @@ const InlineParagraph = ({
         }}
       >
         {inline}
-      </View>
+      </TcView>
     ),
     <ArticleParagraphWrapper
       ast={tree}
@@ -118,7 +118,7 @@ const InlineParagraph = ({
           );
         }
         return (
-          <Text
+          <TcText
             key={i.toString()}
             allowFontScaling={false}
             selectable
@@ -133,7 +133,7 @@ const InlineParagraph = ({
             ]}
           >
             {p.text.string}
-          </Text>
+          </TcText>
         );
       })}
     </ArticleParagraphWrapper>
