@@ -1,4 +1,9 @@
-import { colours, fontFactory, fontSizes, spacing } from "@times-components/ts-styleguide";
+import {
+  colours,
+  fontFactory,
+  fontSizes,
+  spacing
+} from "@times-components/ts-styleguide";
 
 const styles = {
   container: {

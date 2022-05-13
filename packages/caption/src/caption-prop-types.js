@@ -1,7 +1,6 @@
-import { Text, ViewPropTypes } from "react-native";
+import { ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
 
-const { style: TextPropTypesStyle } = Text.propTypes;
 const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 export const propTypes = {
@@ -9,7 +8,7 @@ export const propTypes = {
   credits: PropTypes.string,
   style: PropTypes.shape({
     container: ViewPropTypesStyle,
-    text: TextPropTypesStyle
+    text: PropTypes.string
   }),
   text: PropTypes.string
 };
