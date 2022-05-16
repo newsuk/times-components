@@ -106,7 +106,9 @@ const fontFixture = () => {
         {fontDisplayer(fonts.styleMagazine, phrase, styleguide.fontSizes)}
       </TsTcView>
       <TsTcView style={styles.showoffFontsContainer}>
-        <TsTcText style={styles.headline}>Culture Magazine (Flama Bold)</TsTcText>
+        <TsTcText style={styles.headline}>
+          Culture Magazine (Flama Bold)
+        </TsTcText>
         <TsTcText>
           Used for theme specific headlines, drop caps and pull-quotes in the
           Culture magazine
