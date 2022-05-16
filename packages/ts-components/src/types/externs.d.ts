@@ -186,6 +186,7 @@ declare module '@times-components/provider-queries' {
   import { DocumentNode } from 'graphql';
   export const getNewsletter: DocumentNode;
   export const subscribeNewsletter: DocumentNode;
+  export const recommendations: DocumentNode;
 }
 
 declare module '@times-components/provider-test-tools' {

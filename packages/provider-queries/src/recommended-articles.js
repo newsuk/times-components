@@ -1,4 +1,4 @@
 import { addTypenameToDocument } from "apollo-utilities";
-import recommendedArticles from "./recommended_articles.graphql";
+import recommendations from "./recommended_articles.graphql";
 
-export default addTypenameToDocument(recommendedArticles);
+export default addTypenameToDocument(recommendations);

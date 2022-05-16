@@ -4,11 +4,13 @@ import React from 'react';
 import { MockedProvider } from '@times-components/provider-test-tools';
 import {
   getNewsletter,
-  subscribeNewsletter
+  subscribeNewsletter,
+  recommendations
 } from '@times-components/provider-queries';
 
 import { AutoNewsletterPuff } from './AutoNewsletterPuff';
 import { InlineNewsletterPuff } from './InlineNewsletterPuff';
+import { RecommendedArticles } from './RecommendedArticles';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import { PreviewNewsletterPuff } from './PreviewNewsletterPuff';
@@ -48,6 +50,23 @@ const mocks = [
           id: 'a2l6E000000CdHzQAK',
           isSubscribed: true,
           __typename: 'Newsletter'
+        }
+      }
+    }
+  },
+  {
+    delay: 1000,
+    request: {
+      query: recommendations,
+      variables: {
+        "userId": "1234",
+        "articleId": '94a01926-719a-11ec-aacf-0736e08b15cd'
+      }
+    },
+    result: {
+      data: {
+        recommendations: {
+          id: 'a2l6E000000CdHzQAK'
         }
       }
     }
@@ -110,6 +129,33 @@ const showcase = {
       ),
 
       name: 'Inline Newsletter Puff',
+      platform: 'web',
+      type: 'story'
+    },
+    {
+      // eslint-disable-next-line react/prop-types
+      component: ({ text }: any) => (
+        <MockedProvider mocks={mocks}>
+          <TrackingContextProvider
+            analyticsStream={analyticsStream}
+            context={{ component: 'ArticleSkeleton' }}
+          >
+            <RecommendedArticles
+              headline={text('headline', 'Best of Times')}
+              copy={text(
+                'copy',
+                'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
+              )}
+              imageUri={text(
+                'imageUri',
+                'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800'
+              )}
+            />
+          </TrackingContextProvider>
+        </MockedProvider>
+      ),
+
+      name: 'Recommended Articles',
       platform: 'web',
       type: 'story'
     },

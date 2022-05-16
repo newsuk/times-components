@@ -1,4 +1,4 @@
-query RecommendedArticles(
+mutation RecommendedArticles(
   $publisher: Publisher!,
   $recomArgs: RecommendationsParameters!
 ) {
