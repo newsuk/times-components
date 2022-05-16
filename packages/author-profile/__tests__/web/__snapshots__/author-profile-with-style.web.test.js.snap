@@ -12,6 +12,10 @@ exports[`1. an article list header 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  width: 100%;
+  margin: 0px;
   min-height: 0px;
   min-width: 0px;
   padding: 0px;

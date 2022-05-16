@@ -1,6 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. card loading state 1`] = `
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
 .c1 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -17,26 +40,6 @@ exports[`1. card loading state 1`] = `
   padding: 0px;
   position: relative;
   z-index: 0;
-}
-
-.c0 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
 }
 
 .c2 {
@@ -249,11 +252,25 @@ exports[`1. card loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-je5757-0",
-          "isStatic": true,
+          "componentId": "Animations__FadeIn-w31u4-0",
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
-            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
+            [Function],
+            ";border-bottom-color:",
+            [Function],
+            ";border-bottom-width:",
+            [Function],
+            ";border-radius:",
+            [Function],
+            ";overflow:",
+            [Function],
+            ";height:",
+            [Function],
+            ";width:",
+            [Function],
+            ";margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             "animation:",
             Keyframes {
               "id": "sc-keyframes-eMLfYp",
@@ -270,10 +287,10 @@ exports[`1. card loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "tc-view__TcView-nuazoi-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-je5757-0",
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -339,6 +356,29 @@ exports[`1. card loading state 1`] = `
 `;
 
 exports[`2. card with reversed loading state 1`] = `
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
+}
+
 .c1 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -355,26 +395,6 @@ exports[`2. card with reversed loading state 1`] = `
   padding: 0px;
   position: relative;
   z-index: 0;
-}
-
-.c0 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
 }
 
 .c2 {
@@ -588,11 +608,25 @@ exports[`2. card with reversed loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-je5757-0",
-          "isStatic": true,
+          "componentId": "Animations__FadeIn-w31u4-0",
+          "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
-            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
+            [Function],
+            ";border-bottom-color:",
+            [Function],
+            ";border-bottom-width:",
+            [Function],
+            ";border-radius:",
+            [Function],
+            ";overflow:",
+            [Function],
+            ";height:",
+            [Function],
+            ";width:",
+            [Function],
+            ";margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             "animation:",
             Keyframes {
               "id": "sc-keyframes-eMLfYp",
@@ -609,10 +643,10 @@ exports[`2. card with reversed loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "tc-view__TcView-nuazoi-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-je5757-0",
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-.c28 {
+.c27 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -31,18 +31,7 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
 }
 
-.c21 {
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  color: #006699;
-  font-family: "TimesDigitalW04-Regular";
-  line-height: 26px;
-  font-size: 17px;
-  margin-bottom: 25pxpx;
-  margin-top: 0;
-}
-
-.c25 {
+.c24 {
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -53,13 +42,13 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c25:first-of-type:after {
+.c24:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c29 {
+.c28 {
   padding-left: 10px;
 }
 
@@ -68,6 +57,19 @@ exports[`full article with style 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding-bottom: 25px;
+}
+
+.c31 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -81,34 +83,21 @@ exports[`full article with style 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 25px;
-}
-
-.c33 {
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c27 {
+.c26 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.c26 {
+.c25 {
   display: block;
 }
 
-.c22 {
+.c21 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -122,11 +111,11 @@ exports[`full article with style 1`] = `
   min-height: 210px;
 }
 
-.c22.hidden {
+.c21.hidden {
   visibility: hidden;
 }
 
-.c23 {
+.c22 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -138,13 +127,13 @@ exports[`full article with style 1`] = `
   text-transform: uppercase;
 }
 
-.c24 {
+.c23 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
 }
 
-.c30 {
+.c29 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -153,7 +142,7 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c31 {
+.c30 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -323,14 +312,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c21 {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
-@media (min-width:768px) {
-  .c25 {
+  .c24 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -340,13 +322,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c25 {
+  .c24 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c29 {
+  .c28 {
     padding-left: 0px;
   }
 }
@@ -365,6 +347,21 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
+  .c31 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c31 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
   .c32 {
     width: 80.8%;
     margin: 0 auto;
@@ -380,22 +377,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c33 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c33 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c27 {
+  .c26 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -407,7 +389,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c26 {
+  .c25 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -416,47 +398,47 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c26 {
+  .c25 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c22 {
+  .c21 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c22 {
+  .c21 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c24 {
+  .c23 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c24:first-of-type {
+  .c23:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c24:last-child {
+  .c23:last-child {
     margin-left: 1.5%;
   }
 }
 
 @media (min-width:768px) {
-  .c30 {
+  .c29 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c30 {
+  .c29 {
     min-height: 283px;
   }
 }
@@ -859,36 +841,34 @@ exports[`full article with style 1`] = `
               </div>
             </div>
           </div>
-          <a
-            className="c21"
-          >
+          <Link>
             Some Link
-          </a>
+          </Link>
           <div
-            className="group-3 hidden c22"
+            className="group-3 hidden c21"
           >
             <h2
-              className="c23"
+              className="c22"
             >
               Sponsored
             </h2>
             <div
-              className="c24"
+              className="c23"
             />
             <div
-              className="c24"
+              className="c23"
             />
           </div>
           <p
-            className="c25"
+            className="c24"
           >
             Some content
           </p>
           <div
-            className="c26 responsive__PullQuoteContainer-sc-4v1r4q-10 c26 css-view-1dbjc4n"
+            className="c25 responsive__PullQuoteContainer-sc-4v1r4q-10 c25 css-view-1dbjc4n"
           >
             <div
-              className="c27 responsive__PullQuoteResp-sc-4v1r4q-9 c27 css-view-1dbjc4n"
+              className="c26 responsive__PullQuoteResp-sc-4v1r4q-9 c26 css-view-1dbjc4n"
             >
               <PullQuote>
                 The pull quote content
@@ -902,10 +882,10 @@ exports[`full article with style 1`] = `
               className="IS10"
             >
               <div
-                className="c28 IS9"
+                className="c27 IS9"
               >
                 <div
-                  className="c28 IS8"
+                  className="c27 IS8"
                 >
                   <div
                     className="IS7"
@@ -922,7 +902,7 @@ exports[`full article with style 1`] = `
               </div>
               <figcaption>
                 <div
-                  className="c29 inset-caption__InsetCaptionStyle-la2hkf-0 c29 css-view-1dbjc4n"
+                  className="c28 inset-caption__InsetCaptionStyle-la2hkf-0 c28 css-view-1dbjc4n"
                 >
                   <div
                     className="css-view-1dbjc4n"
@@ -942,10 +922,10 @@ exports[`full article with style 1`] = `
             </figure>
           </div>
           <div
-            className="c30"
+            className="c29"
           >
             <h2
-              className="c31"
+              className="c30"
             >
               Advertisement
             </h2>
@@ -954,7 +934,7 @@ exports[`full article with style 1`] = `
           <div>
             <div>
               <div
-                className="c32 responsive__SecondaryImg-sc-4v1r4q-7 c32 css-view-1dbjc4n"
+                className="c31 responsive__SecondaryImg-sc-4v1r4q-7 c31 css-view-1dbjc4n"
               >
                 <ArticleImage />
               </div>
@@ -963,7 +943,7 @@ exports[`full article with style 1`] = `
           <div>
             <div>
               <div
-                className="c33 responsive__InlineImg-sc-4v1r4q-8 c33 css-view-1dbjc4n"
+                className="c32 responsive__InlineImg-sc-4v1r4q-8 c32 css-view-1dbjc4n"
               >
                 <ArticleImage />
               </div>
