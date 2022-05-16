@@ -27,27 +27,18 @@ export const RecommendedArticles = ({
   headline,
   imageUri,
   label
-}: recommendationsProps) => {
-
-  return (
-    <Mutation
-      mutation={recommendationsMutation}
-    >
-      {() => (
-        <InpContainer>
-          <InpImageContainer>
-            <Image aspectRatio={1.42} uri={imageUri} />
-          </InpImageContainer>
-          <InpSubscribedContainer>
-            <InpSignupLabel>{label}</InpSignupLabel>
-            <InpSignupHeadline>{headline}</InpSignupHeadline>
-            <InpCopy>{copy}</InpCopy>
-            <InpSignupCTAContainer>
-              <NewsletterPuffButton />
-            </InpSignupCTAContainer>
-          </InpSubscribedContainer>
-        </InpContainer>
-      )}
-    </Mutation>
-  );
-};
+}: recommendationsProps) => (
+  <InpContainer>
+    <InpImageContainer>
+      <Image aspectRatio={1.42} uri={imageUri} />
+    </InpImageContainer>
+    <InpSubscribedContainer>
+      <InpSignupLabel>{label}</InpSignupLabel>
+      <InpSignupHeadline>{headline}</InpSignupHeadline>
+      <InpCopy>{copy}</InpCopy>
+      <InpSignupCTAContainer>
+        <NewsletterPuffButton />
+      </InpSignupCTAContainer>
+    </InpSubscribedContainer>
+  </InpContainer>
+);
