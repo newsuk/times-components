@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import Button from "@times-components/button";
 import Context from "@times-components/context";
-import styleguide from "@times-components/styleguide";
+import { styleguide } from "@times-components/ts-styleguide";
 import styles from "./styles";
 
 const ArticleExtrasError = ({ refetch }) => (

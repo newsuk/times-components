@@ -1,8 +1,6 @@
 import { StyleSheet } from "react-native";
-import styleguide from "@times-components/styleguide";
+import { spacing } from "@times-components/ts-styleguide";
 import sharedStyles from "./shared";
-
-const { spacing } = styleguide();
 
 const styles = StyleSheet.create({
   ...sharedStyles,

@@ -1,5 +1,5 @@
 import React from "react";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/ts-styleguide";
 import { iterator } from "@times-components/test-utils";
 import createItem from "./utils";
 import { CommentLeadAndCartoon } from "../src/slice-layout";

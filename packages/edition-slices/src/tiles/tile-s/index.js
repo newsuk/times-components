@@ -4,7 +4,7 @@ import { View, Text } from "react-native";
 import PropTypes from "prop-types";
 import coreRenderers from "@times-components/markup";
 import renderTrees from "@times-components/markup-forest";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/ts-styleguide";
 import renderer from "./markup";
 import styleFactory from "./styles";
 

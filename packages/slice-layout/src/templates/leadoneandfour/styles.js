@@ -1,4 +1,4 @@
-import { editionBreakpoints, spacing } from "@times-components/styleguide";
+import { editionBreakpoints, spacing } from "@times-components/ts-styleguide";
 
 const defaultBreakpointStyles = {
   container: {

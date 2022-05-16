@@ -1,7 +1,5 @@
-import styleguide from "@times-components/styleguide";
+import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 import sharedStyles from "./shared";
-
-const { colours, fontFactory, spacing } = styleguide();
 
 const styles = {
   ...sharedStyles,

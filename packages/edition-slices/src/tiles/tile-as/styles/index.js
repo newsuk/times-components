@@ -3,7 +3,7 @@ import {
   spacing,
   editionBreakpoints,
   globalSpacingStyles
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
 const headlineFontSize = {
   [editionBreakpoints.medium]: 18,

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components/ts-styleguide";
 import { TileSummary, TileLink, withTileTracking } from "../shared";
 import stylesFactory from "./styles";
 

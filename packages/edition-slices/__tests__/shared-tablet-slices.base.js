@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { editionBreakpointWidths } from "@times-components/styleguide";
+import { editionBreakpointWidths } from "@times-components/ts-styleguide";
 import { iterator } from "@times-components/test-utils";
 import { getDimensions } from "@times-components/utils";
 import {

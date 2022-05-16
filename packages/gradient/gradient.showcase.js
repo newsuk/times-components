@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React, { Fragment } from "react";
 import { Text, Image } from "react-native";
-import { colours, spacing } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/ts-styleguide";
 import Gradient, { OverlayGradient } from "./src/gradient";
 
 const renderExampleText = color => (

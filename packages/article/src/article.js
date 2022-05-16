@@ -5,7 +5,7 @@ import ArticleMagazineStandard from "@times-components/article-magazine-standard
 import ArticleMainStandard from "@times-components/article-main-standard";
 import ArticleMainComment from "@times-components/article-main-comment";
 import Responsive from "@times-components/responsive";
-import { scales } from "@times-components/styleguide";
+import { scales } from "@times-components/ts-styleguide";
 import { MessageManager } from "@times-components/message-bar";
 import { getMediaList, addIndexesToInlineImages } from "./utils";
 

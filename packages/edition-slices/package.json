@@ -45,9 +45,9 @@
     "@times-components/responsive": "0.12.0",
     "@times-components/slice-layout": "0.47.46",
     "@times-components/star-button": "0.3.76",
-    "@times-components/styleguide": "3.38.52",
     "@times-components/tracking": "2.9.30",
     "@times-components/ts-components": "1.35.4",
+    "@times-components/ts-styleguide": "1.36.1",
     "@times-components/utils": "6.12.0",
     "@times-components/video": "4.11.45",
     "prop-types": "15.7.2"

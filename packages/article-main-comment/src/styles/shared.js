@@ -1,6 +1,5 @@
-import styleguide, { tabletWidth } from "@times-components/styleguide";
+import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 
-const { colours, fontFactory, spacing } = styleguide();
 const sharedStyles = {
   articleHeadline: {
     ...fontFactory({
@@ -25,10 +24,6 @@ const sharedStyles = {
     paddingLeft: spacing(2),
     paddingRight: spacing(2)
   },
-  containerTablet: {
-    alignSelf: "center",
-    width: tabletWidth
-  },
   datePublication: {
     ...fontFactory({
       font: "supporting",
@@ -45,10 +40,6 @@ const sharedStyles = {
     marginBottom: spacing(3),
     paddingBottom: spacing(4),
     paddingTop: spacing(7)
-  },
-  headerTablet: {
-    alignSelf: "center",
-    width: tabletWidth
   },
   label: {
     marginBottom: spacing(2)

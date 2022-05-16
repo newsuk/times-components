@@ -8,7 +8,7 @@ import {
   minimalWebTransform,
   print
 } from "@times-components/jest-serializer";
-import { scales } from "@times-components/styleguide";
+import { scales } from "@times-components/ts-styleguide";
 
 import Context from "@times-components/context";
 import { UserState } from "../mocks";

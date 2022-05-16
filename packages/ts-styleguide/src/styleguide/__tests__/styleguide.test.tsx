@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 
 import styleguide, { colours, fonts, spacing } from '../Styleguide';
-import { Animations, TcText, TcView } from '../components';
+import { Animations, TsTcText, TsTcView } from '../components';
 
 import styles from '../helpers/storybookStyles';
 
@@ -57,9 +57,9 @@ describe('styleguide', () => {
       expect(
         render(
           <Animations.FadeIn>
-            <TcView style={styles.container}>
-              <TcText style={styles.text}>Hello World</TcText>
-            </TcView>
+            <TsTcView style={styles.container}>
+              <TsTcText style={styles.text}>Hello World</TsTcText>
+            </TsTcView>
           </Animations.FadeIn>
         )
       ).toBeTruthy();

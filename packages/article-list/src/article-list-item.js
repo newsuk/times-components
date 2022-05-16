@@ -6,7 +6,7 @@ import ArticleSummary, {
 import Card from "@times-components/card";
 import Context from "@times-components/context";
 import Link from "@times-components/link";
-import { Animations, colours } from "@times-components/styleguide";
+import { Animations, colours } from "@times-components/ts-styleguide";
 import articleListItemTrackingEvents from "./article-list-item-tracking-events";
 import { propTypes, defaultProps } from "./article-list-item-prop-types";
 import { getImageUri, getHeadline } from "./utils";

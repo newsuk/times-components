@@ -2,7 +2,7 @@
 import React from "react";
 import { MockEdition } from "@times-components/fixture-generator";
 import { SectionContext } from "@times-components/context";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/ts-styleguide";
 import {
   addSerializers,
   compose,

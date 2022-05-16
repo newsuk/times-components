@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import Context from "@times-components/context";
-import styleguide from "@times-components/styleguide";
+import { styleguide } from "@times-components/ts-styleguide";
 import ArticleTopic from "./article-topic";
 import styles from "./styles";
 import {

@@ -1,7 +1,7 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/ts-styleguide";
 import { TileSummary, TileLink, withTileTracking } from "../shared";
 import stylesFactory from "./styles";
 

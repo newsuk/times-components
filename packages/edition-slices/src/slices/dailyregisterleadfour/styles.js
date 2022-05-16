@@ -3,7 +3,7 @@ import {
   spacing,
   fonts,
   fontSizes
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
 const smallBreakpointStyles = {
   container: {

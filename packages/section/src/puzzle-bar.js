@@ -3,7 +3,7 @@ import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import { SectionContext } from "@times-components/context";
 import { IconForwardArrow } from "@times-components/icons";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components/ts-styleguide";
 import styleFactory from "./styles";
 
 const styles = styleFactory();

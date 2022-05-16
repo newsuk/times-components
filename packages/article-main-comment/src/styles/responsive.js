@@ -6,7 +6,7 @@ import {
   fontSizes,
   lineHeight,
   spacing
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
 export const AuthorImageContainer = styled(View)`
   border-radius: 50%;

@@ -1,7 +1,6 @@
 /* eslint-disable prefer-destructuring */
 import React from "react";
 import { View, Text, Dimensions } from "react-native";
-import styleguide, { colours, tabletWidth } from "@times-components/styleguide";
 import { AttributedString } from "@times-components/typeset";
 import { screenWidth } from "@times-components/utils";
 import Ad from "@times-components/ad";
@@ -16,6 +15,11 @@ import {
   InlineNewsletterPuff,
   safeDecodeURIComponent
 } from "@times-components/ts-components";
+import {
+  tabletWidth,
+  fontFactory,
+  colours
+} from "@times-components/ts-styleguide";
 
 import ArticleParagraph from "./article-body-paragraph";
 import InsetCaption from "./inset-caption";
@@ -38,7 +42,6 @@ export default ({
   analyticsStream
 }) => {
   const styles = styleFactory(scale);
-  const { fontFactory } = styleguide({ scale });
 
   const defaultFont = {
     ...fontFactory({

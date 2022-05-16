@@ -109,17 +109,32 @@ exports[`6. card with reversed layout and no image 1`] = `
 `;
 
 exports[`7. card with a loading state 1`] = `
-<animations__FadeIn>
+<Animations__FadeIn>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "animations__FadeIn-sc-2iiu4y-0",
-          "isStatic": true,
-          "lastClassName": "iZkZiB",
+          "componentId": "Animations__FadeIn-w31u4-0",
+          "isStatic": false,
+          "lastClassName": "ejSuos",
           "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
+            [Function],
+            ";border-bottom-color:",
+            [Function],
+            ";border-bottom-width:",
+            [Function],
+            ";border-radius:",
+            [Function],
+            ";overflow:",
+            [Function],
+            ";height:",
+            [Function],
+            ";width:",
+            [Function],
+            ";margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             "animation:",
             Keyframes {
               "id": "sc-keyframes-eMLfYp",
@@ -134,11 +149,13 @@ exports[`7. card with a loading state 1`] = `
             " 0.3s ease-in-out;",
           ],
         },
-        "displayName": "animations__FadeIn",
-        "foldedComponentIds": Array [],
+        "displayName": "Animations__FadeIn",
+        "foldedComponentIds": Array [
+          "TsTcView-sc-154dp5w-0",
+        ],
         "render": [Function],
-        "styledComponentId": "animations__FadeIn-sc-2iiu4y-0",
-        "target": [Function],
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
+        "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
@@ -187,21 +204,36 @@ exports[`7. card with a loading state 1`] = `
       </div>
     </div>
   </StyledComponent>
-</animations__FadeIn>
+</Animations__FadeIn>
 `;
 
 exports[`8. card with a loading state and no image 1`] = `
-<animations__FadeIn>
+<Animations__FadeIn>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "animations__FadeIn-sc-2iiu4y-0",
-          "isStatic": true,
-          "lastClassName": "iZkZiB",
+          "componentId": "Animations__FadeIn-w31u4-0",
+          "isStatic": false,
+          "lastClassName": "ejSuos",
           "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
+            [Function],
+            ";border-bottom-color:",
+            [Function],
+            ";border-bottom-width:",
+            [Function],
+            ";border-radius:",
+            [Function],
+            ";overflow:",
+            [Function],
+            ";height:",
+            [Function],
+            ";width:",
+            [Function],
+            ";margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             "animation:",
             Keyframes {
               "id": "sc-keyframes-eMLfYp",
@@ -216,11 +248,13 @@ exports[`8. card with a loading state and no image 1`] = `
             " 0.3s ease-in-out;",
           ],
         },
-        "displayName": "animations__FadeIn",
-        "foldedComponentIds": Array [],
+        "displayName": "Animations__FadeIn",
+        "foldedComponentIds": Array [
+          "TsTcView-sc-154dp5w-0",
+        ],
         "render": [Function],
-        "styledComponentId": "animations__FadeIn-sc-2iiu4y-0",
-        "target": [Function],
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
+        "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
@@ -257,21 +291,36 @@ exports[`8. card with a loading state and no image 1`] = `
       </div>
     </div>
   </StyledComponent>
-</animations__FadeIn>
+</Animations__FadeIn>
 `;
 
 exports[`9. card with reversed loading state 1`] = `
-<animations__FadeIn>
+<Animations__FadeIn>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "animations__FadeIn-sc-2iiu4y-0",
-          "isStatic": true,
-          "lastClassName": "iZkZiB",
+          "componentId": "Animations__FadeIn-w31u4-0",
+          "isStatic": false,
+          "lastClassName": "ejSuos",
           "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
+            [Function],
+            ";border-bottom-color:",
+            [Function],
+            ";border-bottom-width:",
+            [Function],
+            ";border-radius:",
+            [Function],
+            ";overflow:",
+            [Function],
+            ";height:",
+            [Function],
+            ";width:",
+            [Function],
+            ";margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             "animation:",
             Keyframes {
               "id": "sc-keyframes-eMLfYp",
@@ -286,11 +335,13 @@ exports[`9. card with reversed loading state 1`] = `
             " 0.3s ease-in-out;",
           ],
         },
-        "displayName": "animations__FadeIn",
-        "foldedComponentIds": Array [],
+        "displayName": "Animations__FadeIn",
+        "foldedComponentIds": Array [
+          "TsTcView-sc-154dp5w-0",
+        ],
         "render": [Function],
-        "styledComponentId": "animations__FadeIn-sc-2iiu4y-0",
-        "target": [Function],
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
+        "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
@@ -339,21 +390,36 @@ exports[`9. card with reversed loading state 1`] = `
       </div>
     </div>
   </StyledComponent>
-</animations__FadeIn>
+</Animations__FadeIn>
 `;
 
 exports[`10. card with reversed loading state with no image 1`] = `
-<animations__FadeIn>
+<Animations__FadeIn>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "animations__FadeIn-sc-2iiu4y-0",
-          "isStatic": true,
-          "lastClassName": "iZkZiB",
+          "componentId": "Animations__FadeIn-w31u4-0",
+          "isStatic": false,
+          "lastClassName": "ejSuos",
           "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
+            [Function],
+            ";border-bottom-color:",
+            [Function],
+            ";border-bottom-width:",
+            [Function],
+            ";border-radius:",
+            [Function],
+            ";overflow:",
+            [Function],
+            ";height:",
+            [Function],
+            ";width:",
+            [Function],
+            ";margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
             "animation:",
             Keyframes {
               "id": "sc-keyframes-eMLfYp",
@@ -368,11 +434,13 @@ exports[`10. card with reversed loading state with no image 1`] = `
             " 0.3s ease-in-out;",
           ],
         },
-        "displayName": "animations__FadeIn",
-        "foldedComponentIds": Array [],
+        "displayName": "Animations__FadeIn",
+        "foldedComponentIds": Array [
+          "TsTcView-sc-154dp5w-0",
+        ],
         "render": [Function],
-        "styledComponentId": "animations__FadeIn-sc-2iiu4y-0",
-        "target": [Function],
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
+        "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
         "withComponent": [Function],
@@ -409,7 +477,7 @@ exports[`10. card with reversed loading state with no image 1`] = `
       </div>
     </div>
   </StyledComponent>
-</animations__FadeIn>
+</Animations__FadeIn>
 `;
 
 exports[`11. card should not re-render when imageratio prop is changed 1`] = `

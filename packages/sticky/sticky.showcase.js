@@ -2,7 +2,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import { createScopedGlobalStyle } from "@times-components/storybook";
-import { breakpoints } from "@times-components/styleguide";
+import { breakpoints } from "@times-components/ts-styleguide";
 import Sticky, {
   STICKY_CLASS_NAME,
   StickyProvider,

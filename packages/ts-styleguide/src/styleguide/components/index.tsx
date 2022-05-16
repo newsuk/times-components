@@ -1,5 +1,5 @@
-import TcView from './TcView';
-import TcText from './TcText';
+import TsTcView from './TsTcView';
+import TsTcText from './TsTcText';
 import Animations from './Animations';
 
-export { TcView, TcText, Animations };
+export { TsTcView, TsTcText, Animations };
