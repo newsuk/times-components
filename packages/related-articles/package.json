@@ -70,8 +70,8 @@
     "@times-components/link": "3.10.4",
     "@times-components/markup-forest": "1.8.1",
     "@times-components/slice-layout": "0.47.46",
-    "@times-components/styleguide": "3.38.52",
     "@times-components/tracking": "2.9.30",
+    "@times-components/ts-styleguide": "1.36.1",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2"
   },

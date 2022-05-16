@@ -12,7 +12,7 @@ const {
   ContextProviderWithDefaults,
   defaults
 } = require("@times-components/context/rnw");
-const { scales, themeFactory } = require("@times-components/styleguide/rnw");
+const { scales, themeFactory } = require("@times-components/ts-styleguide/rnw");
 
 const scale = scales.large;
 

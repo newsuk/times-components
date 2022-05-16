@@ -2,7 +2,7 @@ import {
   fonts,
   spacing,
   globalSpacingStyles
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
 const styles = {
   container: {

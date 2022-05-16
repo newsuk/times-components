@@ -60,8 +60,8 @@
   "dependencies": {
     "@times-components/context": "1.8.2",
     "@times-components/link": "3.10.4",
-    "@times-components/styleguide": "3.38.52",
     "@times-components/tracking": "2.9.30",
+    "@times-components/ts-styleguide": "1.36.1",
     "prop-types": "15.7.2"
   },
   "resolutions": {

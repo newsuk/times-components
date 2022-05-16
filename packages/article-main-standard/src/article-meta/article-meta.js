@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Text, View } from "react-native";
 import styled from "styled-components";
-import { breakpoints, spacing } from "@times-components/styleguide";
+import { breakpoints, spacing } from "@times-components/ts-styleguide";
 import {
   KeylineItem,
   ArticleKeylineItem

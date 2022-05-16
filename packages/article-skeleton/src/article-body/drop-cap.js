@@ -1,5 +1,5 @@
 import React from "react";
-import { fonts } from "@times-components/styleguide";
+import { fonts } from "@times-components/ts-styleguide";
 import { FontStorage, BoxExclusion } from "@times-components/typeset";
 import { Text } from "react-native";
 import { getStringBounds } from "../body-utils";

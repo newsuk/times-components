@@ -1,7 +1,7 @@
 {
   "name": "@times-components/ts-styleguide",
   "version": "1.36.1",
-  "description": "Reuseable Typescript React Components",
+  "description": "Reuseable Typescript React Components styleguide",
   "main": "dist/index.js",
   "dev": "dist/index.js",
   "typings": "dist/index.d.ts",

@@ -8,7 +8,7 @@ import { iterator } from "@times-components/test-utils";
 import { mockEditionSlice } from "@times-components/fixture-generator";
 import StarButton from "@times-components/star-button";
 import { ResponsiveContext } from "@times-components/responsive";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/ts-styleguide";
 import { TileH, TileX } from "../src/tiles";
 import { TileLink, TileStar, TileSummary } from "../src/tiles/shared";
 import { ResponsiveSlice } from "../src/slices/shared";

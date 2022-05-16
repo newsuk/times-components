@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import styled from "styled-components";
-import { breakpoints, colours, spacing } from "@times-components/styleguide";
+import { breakpoints, colours, spacing } from "@times-components/ts-styleguide";
 
 export const getContainer = ({ hasSupports }) => {
   let Base = styled(View)`

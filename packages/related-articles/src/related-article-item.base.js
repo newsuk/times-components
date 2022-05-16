@@ -6,7 +6,7 @@ import ArticleSummary, {
   ArticleSummaryHeadline
 } from "@times-components/article-summary";
 import Card from "@times-components/card";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components/ts-styleguide";
 import {
   relatedArticleItemPropTypes,
   relatedArticleItemDefaultProps

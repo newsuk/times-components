@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { ScrollView, StyleSheet, Text, View } from "react-native";
-import { colours, fonts } from "@times-components/styleguide";
+import { colours, fonts } from "@times-components/ts-styleguide";
 import * as Icons from "./src/icons";
 
 const borderWidth = 1;

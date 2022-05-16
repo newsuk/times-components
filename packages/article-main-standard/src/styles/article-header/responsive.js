@@ -5,7 +5,7 @@ import {
   colours,
   fonts,
   fontSizes
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
 export const HeadlineContainer = styled(Text)`
   font-size: ${fontSizes.headline}px;

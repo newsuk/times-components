@@ -5,7 +5,7 @@ import pick from "lodash.pick";
 import { sections } from "@times-components/storybook";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import { ContextProviderWithDefaults } from "@times-components/context";
-import { colours, scales } from "@times-components/styleguide";
+import { colours, scales } from "@times-components/ts-styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import {

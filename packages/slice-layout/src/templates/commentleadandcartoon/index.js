@@ -1,5 +1,5 @@
 import React from "react";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/ts-styleguide";
 import PropTypes from "prop-types";
 import VerticalLayout from "../verticallayout";
 import HorizontalLayout from "../horizontallayout";

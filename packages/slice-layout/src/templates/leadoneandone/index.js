@@ -1,6 +1,6 @@
 import React from "react";
 import { View } from "react-native";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/ts-styleguide";
 import PropTypes from "prop-types";
 import HorizontalLayout from "../horizontallayout";
 import styleFactory from "./styles";

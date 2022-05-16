@@ -4,7 +4,7 @@ import {
   spacing,
   editionBreakpoints,
   globalSpacingStyles
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
 const defaultStyles = {
   container: {

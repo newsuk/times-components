@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { breakpoints, spacing } from "@times-components/styleguide";
+import { breakpoints, spacing } from "@times-components/ts-styleguide";
 
 const ContainerWithResults = styled(View)`
   align-items: stretch;

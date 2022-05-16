@@ -1,8 +1,9 @@
-import styleguide, {
+import {
+  styleguide,
   scales,
   fonts,
   tabletWidth
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 import { fontSize, margins } from "./drop-cap-sizes";
 
 const sharedStyles = (dropCapFont = "dropCap", scale = scales.medium) => {

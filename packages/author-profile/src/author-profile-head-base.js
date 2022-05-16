@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { Animations } from "@times-components/styleguide";
+import { Animations } from "@times-components/ts-styleguide";
 import AuthorProfileHeadLoading from "./author-profile-head-loading";
 import AuthorProfileHeadJobTitle from "./author-profile-head-jobtitle";
 import AuthorProfileHeadTwitter from "./author-profile-head-twitter";

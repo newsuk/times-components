@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import { breakpoints } from "@times-components/styleguide";
+import { breakpoints } from "@times-components/ts-styleguide";
 import ResultsMessage from "./results-message";
 
 const MessageContainer = styled(View)`

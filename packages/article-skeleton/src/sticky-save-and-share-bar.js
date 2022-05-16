@@ -6,7 +6,7 @@ import Sticky, {
   selectors,
   mediaQuery
 } from "@times-components/sticky";
-import { breakpoints, colours } from "@times-components/styleguide";
+import { breakpoints, colours } from "@times-components/ts-styleguide";
 import { ServerClientRender } from "@times-components/utils";
 import { ArticleKeylineItem } from "./keylines";
 

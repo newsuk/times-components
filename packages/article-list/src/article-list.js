@@ -3,7 +3,7 @@ import React, { Component, Fragment } from "react";
 import { AdContainer } from "@times-components/ad";
 import Button from "@times-components/button";
 import ErrorView from "@times-components/error-view";
-import { spacing } from "@times-components/styleguide";
+import { spacing } from "@times-components/ts-styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import {
   TcView,

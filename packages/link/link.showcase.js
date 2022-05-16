@@ -1,6 +1,6 @@
 import { TcView } from "@times-components/utils";
 import React from "react";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components/ts-styleguide";
 import Link, { TextLink } from "./src/link";
 
 const BigSquare = props => (

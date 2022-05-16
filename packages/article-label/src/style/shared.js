@@ -1,6 +1,5 @@
-import styleguide from "@times-components/styleguide";
+import { fontFactory } from "@times-components/ts-styleguide";
 
-const { fontFactory } = styleguide();
 const styles = {
   title: {
     ...fontFactory({

@@ -13,7 +13,7 @@ import {
   replaceTransform
 } from "@times-components/jest-serializer";
 import { ContextProviderWithDefaults } from "@times-components/context";
-import { scales } from "@times-components/styleguide";
+import { scales } from "@times-components/ts-styleguide";
 import MockedProvider from "@times-components/provider-test-tools/src/mocked-provider";
 
 import Article from "../../src/article-in-depth";

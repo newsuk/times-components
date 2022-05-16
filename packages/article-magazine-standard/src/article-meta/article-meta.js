@@ -5,7 +5,7 @@ import {
 } from "@times-components/article-byline";
 import Context from "@times-components/context";
 import DatePublication from "@times-components/date-publication";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components/ts-styleguide";
 
 import metaPropTypes from "./article-meta-prop-types";
 import {

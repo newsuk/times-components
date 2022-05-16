@@ -1,7 +1,7 @@
 import React from "react";
 import { Text } from "react-native";
 import styled from "styled-components";
-import { breakpoints } from "@times-components/styleguide";
+import { breakpoints } from "@times-components/ts-styleguide";
 import PropTypes from "prop-types";
 
 const ResponsiveLabel = styled(Text)`

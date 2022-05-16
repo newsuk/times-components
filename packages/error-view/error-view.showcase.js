@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
-import { fontSizes } from "@times-components/styleguide";
+import { fontSizes } from "@times-components/ts-styleguide";
 import ErrorView from "./src/error-view";
 
 const { style: ViewPropTypesStyle } = ViewPropTypes;

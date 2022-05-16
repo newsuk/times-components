@@ -6,7 +6,7 @@ import {
   fontSizes,
   lineHeight,
   spacing
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
 
 export const DatePublicationContainer = styled(TcText)`

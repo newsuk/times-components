@@ -1,6 +1,6 @@
 import { View } from "react-native";
 import styled from "styled-components";
-import { breakpoints, spacing } from "@times-components/styleguide";
+import { breakpoints, spacing } from "@times-components/ts-styleguide";
 
 const leadSummaryConfig = {
   1: [125],
