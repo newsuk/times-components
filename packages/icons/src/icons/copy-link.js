@@ -1,5 +1,5 @@
 import React from "react";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components/ts-styleguide";
 import Svg, { Path } from "@times-components/svgs";
 import { clean } from "@times-components/utils";
 import propTypes from "./prop-types";

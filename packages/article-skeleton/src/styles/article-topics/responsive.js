@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { breakpoints, spacing } from "@times-components/styleguide";
-import { TcView } from "@times-components/utils";
+import { breakpoints, spacing } from "@times-components/ts-styleguide";
 
 export default styled(TcView)`
   padding-left: ${spacing(2)};

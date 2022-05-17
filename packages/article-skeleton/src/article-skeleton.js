@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
-import { spacing } from "@times-components/styleguide";
 import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import {
   TrackingContextProvider,
   AlgoliaSearchProvider
 } from "@times-components/ts-components";
+import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 

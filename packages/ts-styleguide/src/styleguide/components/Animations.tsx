@@ -1,4 +1,4 @@
-import { TcView } from '@times-components/utils';
+import TsTcView from './TsTcView';
 import styled, { keyframes } from 'styled-components';
 
 const fadingAnimation = keyframes`
@@ -11,7 +11,7 @@ const fadingAnimation = keyframes`
   }
 `;
 
-const FadeIn = styled(TcView)`
+const FadeIn = styled(TsTcView)`
   animation: ${fadingAnimation} 0.3s ease-in-out;
 `;
 

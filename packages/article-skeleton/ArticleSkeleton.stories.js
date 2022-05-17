@@ -11,8 +11,7 @@ import { ContextProviderWithDefaults } from "@times-components/context";
 import storybookReporter from "@times-components/tealium-utils";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import { TrackingContextProvider } from "@times-components/ts-components/dist/helpers/tracking/TrackingContextProvider";
-import { colours, scales } from "@times-components/styleguide";
-
+import { colours, scales } from "@times-components/ts-styleguide";
 import ArticleSkeleton from "./src/article-skeleton";
 
 import article1 from "./fixtures/samples/article1";

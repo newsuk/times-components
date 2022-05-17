@@ -1,6 +1,6 @@
 import { TcView } from "@times-components/utils";
 import styled from "styled-components";
-import { breakpoints, spacing } from "@times-components/styleguide";
+import { breakpoints, spacing } from "@times-components/ts-styleguide";
 
 export const InsetCaptionContainerStyle = styled(TcView)`
   display: inline-block;

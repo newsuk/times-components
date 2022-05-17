@@ -14,7 +14,6 @@ import InteractiveWrapper from "@times-components/interactive-wrapper";
 import KeyFacts from "@times-components/key-facts";
 import coreRenderers from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
-import { colours, spacing } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
@@ -44,7 +43,7 @@ import {
   safeDecodeURIComponent,
   Timelines
 } from "@times-components/ts-components";
-
+import { colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 

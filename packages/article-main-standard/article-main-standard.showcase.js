@@ -12,7 +12,7 @@ import {
   MockedProvider
 } from "@times-components/provider-test-tools";
 import { sections } from "@times-components/storybook";
-import { scales, themeFactory } from "@times-components/styleguide";
+import { scales, themeFactory } from "@times-components/ts-styleguide";
 import Responsive from "@times-components/responsive";
 import storybookReporter from "@times-components/tealium-utils";
 import Article from "./src/article-main-standard";

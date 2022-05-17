@@ -4,8 +4,8 @@ import {
   ArticleFlags,
   UpdatedTimeProvider
 } from "@times-components/ts-components";
+import { fonts } from "@times-components/ts-styleguide";
 import Context from "@times-components/context";
-import { fonts } from "@times-components/styleguide";
 import { gqlRgbaToStyle } from "@times-components/utils";
 
 import Label from "../article-label/article-label";

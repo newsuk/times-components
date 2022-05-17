@@ -1,24 +1,24 @@
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { TcScrollView } from '@times-components/utils';
-import { TcText, TcView } from './components';
+import { TsTcText, TsTcView } from './components';
 
 import timesStyleguide, { Animations, colours, fonts } from './Styleguide';
 import styles from './helpers/storybookStyles';
 
 const getStories = (colourMap: Record<string, string>) => {
   const colourBoxes = Object.keys(colourMap).map(colourName => (
-    <TcView style={styles.container}>
-      <TcView
+    <TsTcView style={styles.container}>
+      <TsTcView
         style={{ ...styles.box, backgroundColor: colourMap[colourName] }}
       />
-      <TcText style={styles.text}>
+      <TsTcText style={styles.text}>
         {colourName} - {colourMap[colourName]}
-      </TcText>
-    </TcView>
+      </TsTcText>
+    </TsTcView>
   ));
 
-  return <TcView style={styles.display}>{colourBoxes}</TcView>;
+  return <TsTcView style={styles.display}>{colourBoxes}</TsTcView>;
 };
 
 const fontDisplayer = (
@@ -28,8 +28,8 @@ const fontDisplayer = (
 ) =>
   Object.keys(fontSizes).map(fontSize => (
     <Fragment key={fontSize}>
-      <TcText style={styles.subHeadline}>{fontSize}</TcText>
-      <TcText
+      <TsTcText style={styles.subHeadline}>{fontSize}</TsTcText>
+      <TsTcText
         style={{
           ...styles.showoffFonts,
           fontFamily,
@@ -37,7 +37,7 @@ const fontDisplayer = (
         }}
       >
         {phrase}
-      </TcText>
+      </TsTcText>
     </Fragment>
   ));
 
@@ -46,83 +46,85 @@ const fontFixture = () => {
   const phrase = 'The Quick Brown Fox Jumps Over the Lazy Dog';
   return (
     <TcScrollView>
-      <TcView style={styles.showoffFontsContainer}>
-        <TcText style={styles.headline}>Body</TcText>
+      <TsTcView style={styles.showoffFontsContainer}>
+        <TsTcText style={styles.headline}>Body</TsTcText>
         {fontDisplayer(fonts.body, phrase, styleguide.fontSizes)}
-      </TcView>
-      <TcView style={styles.showoffFontsContainer}>
-        <TcText style={styles.headline}>Body Regular</TcText>
-        <TcText>
+      </TsTcView>
+      <TsTcView style={styles.showoffFontsContainer}>
+        <TsTcText style={styles.headline}>Body Regular</TsTcText>
+        <TsTcText>
           Used for the body copy of articles or as the teaser copy on article
           links.
-        </TcText>
+        </TsTcText>
         {fontDisplayer(fonts.bodyRegular, phrase, styleguide.fontSizes)}
-      </TcView>
-      <TcView style={styles.showoffFontsContainer}>
-        <TcText style={styles.headline}>Body Regular Small Caps</TcText>
-        <TcText>
+      </TsTcView>
+      <TsTcView style={styles.showoffFontsContainer}>
+        <TsTcText style={styles.headline}>Body Regular Small Caps</TsTcText>
+        <TsTcText>
           Always used as a lowercase font, it is typically used to support the
           headline font. It’s used in various different places e.g. Journalist
           pages for the Journalist job title, article flags and show more
           buttons on the homepage.
-        </TcText>
+        </TsTcText>
         {fontDisplayer(
           fonts.bodyRegularSmallCaps,
           phrase.toLowerCase(),
           styleguide.fontSizes
         )}
-      </TcView>
-      <TcView style={styles.showoffFontsContainer}>
-        <TcText style={styles.headline}>Headline</TcText>
-        <TcText>
+      </TsTcView>
+      <TsTcView style={styles.showoffFontsContainer}>
+        <TsTcText style={styles.headline}>Headline</TsTcText>
+        <TsTcText>
           Used as the headline for components and articles across the site.
-        </TcText>
+        </TsTcText>
         {fontDisplayer(fonts.headline, phrase, styleguide.fontSizes)}
-      </TcView>
-      <TcView style={styles.showoffFontsContainer}>
-        <TcText style={styles.headline}>Headline Regular</TcText>
-        <TcText>
+      </TsTcView>
+      <TsTcView style={styles.showoffFontsContainer}>
+        <TsTcText style={styles.headline}>Headline Regular</TsTcText>
+        <TsTcText>
           Used primarily to style subheadings for components and stand firsts on
           the homepage and articles.
-        </TcText>
+        </TsTcText>
         {fontDisplayer(fonts.headlineRegular, phrase, styleguide.fontSizes)}
-      </TcView>
-      <TcView style={styles.showoffFontsContainer}>
-        <TcText style={styles.headline}>Supporting</TcText>
-        <TcText>
+      </TsTcView>
+      <TsTcView style={styles.showoffFontsContainer}>
+        <TsTcText style={styles.headline}>Supporting</TsTcText>
+        <TsTcText>
           Used as a supporting typeface in a variety of places including
           messaging banners, buttons, links, homepage labels and tags.
-        </TcText>
+        </TsTcText>
         {fontDisplayer(fonts.supporting, phrase, styleguide.fontSizes)}
-      </TcView>
-      <TcView style={styles.showoffFontsContainer}>
-        <TcText style={styles.headline}>
+      </TsTcView>
+      <TsTcView style={styles.showoffFontsContainer}>
+        <TsTcText style={styles.headline}>
           Style Magazine (Century Gothic Bold)
-        </TcText>
-        <TcText>
+        </TsTcText>
+        <TsTcText>
           Used for theme specific headlines, drop caps and pull-quotes in the
           Style magazine
-        </TcText>
+        </TsTcText>
         {fontDisplayer(fonts.styleMagazine, phrase, styleguide.fontSizes)}
-      </TcView>
-      <TcView style={styles.showoffFontsContainer}>
-        <TcText style={styles.headline}>Culture Magazine (Flama Bold)</TcText>
-        <TcText>
+      </TsTcView>
+      <TsTcView style={styles.showoffFontsContainer}>
+        <TsTcText style={styles.headline}>
+          Culture Magazine (Flama Bold)
+        </TsTcText>
+        <TsTcText>
           Used for theme specific headlines, drop caps and pull-quotes in the
           Culture magazine
-        </TcText>
+        </TsTcText>
         {fontDisplayer(fonts.cultureMagazine, phrase, styleguide.fontSizes)}
-      </TcView>
-      <TcView style={styles.showoffFontsContainer}>
-        <TcText style={styles.headline}>
+      </TsTcView>
+      <TsTcView style={styles.showoffFontsContainer}>
+        <TsTcText style={styles.headline}>
           Sunday Times Magazine (Tiempos Headline Bold)
-        </TcText>
-        <TcText>
+        </TsTcText>
+        <TsTcText>
           Used for theme specific headlines, drop caps and pull-quotes in the
           Sunday Times Magazine
-        </TcText>
+        </TsTcText>
         {fontDisplayer(fonts.stMagazine, phrase, styleguide.fontSizes)}
-      </TcView>
+      </TsTcView>
     </TcScrollView>
   );
 };
@@ -131,9 +133,9 @@ storiesOf('Typescript Component/styleguide', module)
   .add('Fonts', () => fontFixture())
   .add('Animations', () => (
     <Animations.FadeIn>
-      <TcView style={styles.animationBox}>
-        <TcText style={styles.text}>Fade In</TcText>
-      </TcView>
+      <TsTcView style={styles.animationBox}>
+        <TsTcText style={styles.text}>Fade In</TsTcText>
+      </TsTcView>
     </Animations.FadeIn>
   ))
   .add('Section Colours', () => getStories(colours.section))

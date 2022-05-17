@@ -2,6 +2,25 @@
 
 exports[`1. an article list header 1`] = `
 .c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  width: 100%;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
 }
@@ -118,13 +137,17 @@ exports[`1. an article list header 1`] = `
   padding-left: 5px;
   text-decoration-line: none;
 }
+
+.IS3 {
+  width: 100%;
+}
 </style>
 
 <div
   className="c0 responsive__AuthorHeadWrapper-sc-1vsivj7-0 c0 css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-paddingBottom-1uwte3a r-width-13qz1uu S6"
 >
   <div
-    className="c1 animations__FadeIn-sc-2iiu4y-0 c1 css-view-1dbjc4n r-width-13qz1uu S6"
+    className="c1 IS3"
   >
     <div
       className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-1niwhzg r-pointerEvents-12vffkv r-width-13qz1uu S5"

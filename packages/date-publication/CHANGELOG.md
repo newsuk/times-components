@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.24](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.22.23...@times-components/date-publication@0.22.24) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
+## [0.22.23](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.22.22...@times-components/date-publication@0.22.23) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
+## [0.22.22](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.22.21...@times-components/date-publication@0.22.22) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
 ## [0.22.21](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.22.20...@times-components/date-publication@0.22.21) (2022-05-12)
 
 **Note:** Version bump only for package @times-components/date-publication

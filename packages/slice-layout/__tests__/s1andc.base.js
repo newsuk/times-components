@@ -1,6 +1,6 @@
 import React from "react";
 import { iterator } from "@times-components/test-utils";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/ts-styleguide";
 import createItem from "./utils";
 import { SecondaryOneAndColumnistSlice } from "../src/slice-layout";
 

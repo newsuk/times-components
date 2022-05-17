@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { TcView, TcText } from "@times-components/utils";
 import PropTypes from "prop-types";
-import styleguide, { tabletWidth } from "@times-components/styleguide";
+import { tabletWidth, styleguide } from "@times-components/ts-styleguide";
 import { screenWidth } from "@times-components/utils";
 import {
   TextContainer,

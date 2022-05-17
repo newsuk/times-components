@@ -1,5 +1,5 @@
 import "../mocks-tiles";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/ts-styleguide";
 import { testTile } from "../shared-tile-utils";
 import { TileAF } from "../../src/tiles";
 

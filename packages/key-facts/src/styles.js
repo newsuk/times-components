@@ -5,7 +5,7 @@ import {
   fonts,
   colours,
   fontSizes
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
 export const KeyFactTextLink = styled.a`
   color: inherit;

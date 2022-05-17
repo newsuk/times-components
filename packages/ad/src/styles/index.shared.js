@@ -1,6 +1,4 @@
-import styleguide from "@times-components/styleguide";
-
-const { colours, fontFactory, spacing } = styleguide();
+import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 
 export const calculateViewBox = ({ height, width }) => {
   if (height >= 90 && width >= 728) {

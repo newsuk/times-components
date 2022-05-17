@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Svg, { G, Path } from "@times-components/svgs";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components/ts-styleguide";
 
 const Watermark = ({ height, viewBox, width }) => (
   <Svg aria-label="watermark" height={height} viewBox={viewBox} width={width}>

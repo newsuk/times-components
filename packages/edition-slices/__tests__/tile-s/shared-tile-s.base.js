@@ -1,7 +1,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import "../mocks-tiles";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/ts-styleguide";
 import { testTile, dailyRegisterItem } from "../shared-tile-utils";
 import { TileS } from "../../src/tiles";
 

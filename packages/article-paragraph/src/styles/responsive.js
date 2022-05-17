@@ -5,7 +5,7 @@ import {
   fonts,
   fontSizes,
   spacing
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
 const dropCapFontSizes = {
   cultureMagazine: 104,

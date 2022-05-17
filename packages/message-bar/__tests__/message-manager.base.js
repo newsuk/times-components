@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import TestRenderer from "react-test-renderer";
-import { scales } from "@times-components/styleguide";
+import { scales } from "@times-components/ts-styleguide";
 import { delay } from "@times-components/test-utils";
 import MessageManager from "../src/message-manager";
 import MessageBar from "../src/message-bar";

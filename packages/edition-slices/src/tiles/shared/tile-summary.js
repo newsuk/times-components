@@ -6,7 +6,7 @@ import ArticleSummary, {
   ArticleSummaryStrapline
 } from "@times-components/article-summary";
 import { ArticleFlags } from "@times-components/ts-components";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components/ts-styleguide";
 import { ResponsiveContext } from "@times-components/responsive";
 import PositionedTileStar from "./positioned-tile-star";
 

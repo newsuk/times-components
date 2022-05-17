@@ -1,4 +1,4 @@
-import { tabletWidth } from "@times-components/styleguide";
+import { tabletWidth } from "@times-components/ts-styleguide";
 import getDimensions from "./dimensions-util";
 
 export const acceptedWidths = [

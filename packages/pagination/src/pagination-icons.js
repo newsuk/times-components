@@ -1,11 +1,9 @@
 import React from "react";
 import { Text, View, StyleSheet } from "react-native";
 import Svg, { G, Path } from "@times-components/svgs";
-import styleguide from "@times-components/styleguide";
-
+import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 import PageLabel from "./page-label";
 
-const { colours, fontFactory, spacing } = styleguide();
 const textStyle = {
   color: colours.functional.action,
   height: 15,

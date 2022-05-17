@@ -3,7 +3,7 @@
 import React from "react";
 import { View, Text } from "react-native";
 import { CenteredDecorator } from "@times-components/storybook";
-import { fonts } from "@times-components/styleguide";
+import { fonts } from "@times-components/ts-styleguide";
 import renderTrees, { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "./src/markup";
 

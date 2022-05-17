@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 import styled from "styled-components";
-import { breakpoints, colours } from "@times-components/styleguide";
+import { breakpoints, colours } from "@times-components/ts-styleguide";
 
 export const ShareAndSaveContainer = styled.div`
   border-top-color: ${colours.functional.keyline};

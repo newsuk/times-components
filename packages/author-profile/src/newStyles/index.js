@@ -1,4 +1,4 @@
-import { spacing } from "@times-components/styleguide";
+import { spacing } from "@times-components/ts-styleguide";
 import sharedStyles from "../styles/shared";
 
 const styles = {
