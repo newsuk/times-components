@@ -19,11 +19,13 @@ exports[`Article with user state Render full article when user has access to ful
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div />
-      <article
+      <div
+        id="article"
         role="article"
       >
         <p>
@@ -402,8 +404,8 @@ exports[`Article with user state Render full article when user has access to ful
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -436,11 +438,13 @@ exports[`Article with user state Render teaser article when user does not have a
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div />
-      <article
+      <div
+        id="article"
         role="article"
       >
         <p>
@@ -819,8 +823,8 @@ exports[`Article with user state Render teaser article when user does not have a
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />

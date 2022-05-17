@@ -19,7 +19,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -46,7 +47,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <p>
@@ -420,8 +422,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -454,7 +456,8 @@ exports[`2. an article with interactives 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -481,7 +484,8 @@ exports[`2. an article with interactives 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <div>
@@ -598,8 +602,8 @@ exports[`2. an article with interactives 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -632,7 +636,8 @@ exports[`3. an article with no content 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -659,7 +664,8 @@ exports[`3. an article with no content 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <div
@@ -733,8 +739,8 @@ exports[`3. an article with no content 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -767,7 +773,8 @@ exports[`4. an article with no content if content is set as null 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -794,7 +801,8 @@ exports[`4. an article with no content if content is set as null 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <div
@@ -868,8 +876,8 @@ exports[`4. an article with no content if content is set as null 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -902,7 +910,8 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -929,7 +938,8 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <p>
@@ -980,8 +990,8 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
           savingEnabled={true}
           sharingEnabled={true}
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -1014,7 +1024,8 @@ exports[`6. an article with heading tags 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -1041,7 +1052,8 @@ exports[`6. an article with heading tags 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <h2>
@@ -1134,8 +1146,8 @@ exports[`6. an article with heading tags 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -1168,7 +1180,8 @@ exports[`7. an article with link 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -1195,7 +1208,8 @@ exports[`7. an article with link 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <p>
@@ -1291,8 +1305,8 @@ exports[`7. an article with link 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -1325,7 +1339,8 @@ exports[`8. an article with italic link 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -1352,7 +1367,8 @@ exports[`8. an article with italic link 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <p>
@@ -1451,8 +1467,8 @@ exports[`8. an article with italic link 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -1485,7 +1501,8 @@ exports[`9. an article with bold text followed by bold link 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -1512,7 +1529,8 @@ exports[`9. an article with bold text followed by bold link 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <p>
@@ -1610,8 +1628,8 @@ exports[`9. an article with bold text followed by bold link 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -1644,7 +1662,8 @@ exports[`10. an article with italic and normal text link 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -1671,7 +1690,8 @@ exports[`10. an article with italic and normal text link 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <p>
@@ -1771,8 +1791,8 @@ exports[`10. an article with italic and normal text link 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -1805,7 +1825,8 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -1832,7 +1853,8 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <p>
@@ -1926,8 +1948,8 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -1960,7 +1982,8 @@ exports[`12. an article with text wrapped in inline element 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -1987,7 +2010,8 @@ exports[`12. an article with text wrapped in inline element 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <p>
@@ -2079,8 +2103,8 @@ exports[`12. an article with text wrapped in inline element 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -2113,7 +2137,8 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -2140,7 +2165,8 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <p>
@@ -2233,8 +2259,8 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -2267,7 +2293,8 @@ exports[`14. an article with inline inside a bold tag 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -2294,7 +2321,8 @@ exports[`14. an article with inline inside a bold tag 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <p>
@@ -2388,8 +2416,8 @@ exports[`14. an article with inline inside a bold tag 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -2422,7 +2450,8 @@ exports[`15. an article starting with single quote 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -2449,7 +2478,8 @@ exports[`15. an article starting with single quote 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <p>
@@ -2542,8 +2572,8 @@ exports[`15. an article starting with single quote 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
@@ -2576,7 +2606,8 @@ exports[`16. an article starting with double quote 1`] = `
         slotName="header"
       />
     </div>
-    <main
+    <div
+      id="main"
       role="main"
     >
       <div>
@@ -2603,7 +2634,8 @@ exports[`16. an article starting with double quote 1`] = `
           </div>
         </div>
       </div>
-      <article
+      <div
+        id="article"
         role="article"
       >
         <p>
@@ -2696,8 +2728,8 @@ exports[`16. an article starting with double quote 1`] = `
             ]
           }
         />
-      </article>
-    </main>
+      </div>
+    </div>
     <AdContainer
       slotName="pixel"
     />
