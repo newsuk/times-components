@@ -4,8 +4,7 @@ import React from 'react';
 import { MockedProvider } from '@times-components/provider-test-tools';
 import {
   getNewsletter,
-  subscribeNewsletter,
-  recommendations
+  subscribeNewsletter
 } from '@times-components/provider-queries';
 
 import { AutoNewsletterPuff } from './AutoNewsletterPuff';
@@ -53,24 +52,24 @@ const mocks = [
         }
       }
     }
-  },
-  {
-    delay: 1000,
-    request: {
-      query: recommendations,
-      variables: {
-        "userId": "1234",
-        "articleId": '94a01926-719a-11ec-aacf-0736e08b15cd'
-      }
-    },
-    result: {
-      data: {
-        recommendations: {
-          id: 'a2l6E000000CdHzQAK'
-        }
-      }
-    }
   }
+  // {
+  //   delay: 1000,
+  //   request: {
+  //     query: recommendations,
+  //     variables: {
+  //       userId: '1234',
+  //       articleId: '94a01926-719a-11ec-aacf-0736e08b15cd'
+  //     }
+  //   },
+  //   result: {
+  //     data: {
+  //       recommendations: {
+  //         id: 'a2l6E000000CdHzQAK'
+  //       }
+  //     }
+  //   }
+  // }
 ];
 
 const showcase = {

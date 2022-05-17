@@ -1,7 +1,7 @@
 import React from 'react';
 import { Mutation } from 'react-apollo';
 
-import { recommendations as recommendationsMutation } from '@times-components/provider-queries';
+import { recommendations } from '@times-components/provider-queries';
 import Image from '@times-components/image';
 import { NewsletterPuffButton } from './NewsletterPuffButton';
 
@@ -16,29 +16,32 @@ import {
 } from './styles';
 
 type recommendationsProps = {
-  copy: string;
+  feedbackId?: string;
+  summary: string;
   headline: string;
   imageUri: string;
   label?: string;
 };
 
 export const RecommendedArticles = ({
-  copy,
+  summary,
   headline,
   imageUri,
   label
-}: recommendationsProps) => (
-  <InpContainer>
-    <InpImageContainer>
-      <Image aspectRatio={1.42} uri={imageUri} />
-    </InpImageContainer>
-    <InpSubscribedContainer>
-      <InpSignupLabel>{label}</InpSignupLabel>
-      <InpSignupHeadline>{headline}</InpSignupHeadline>
-      <InpCopy>{copy}</InpCopy>
-      <InpSignupCTAContainer>
-        <NewsletterPuffButton />
-      </InpSignupCTAContainer>
-    </InpSubscribedContainer>
-  </InpContainer>
-);
+}: recommendationsProps) => {
+  return (
+    <InpContainer>
+      <InpImageContainer>
+        <Image aspectRatio={1.42} uri={imageUri} />
+      </InpImageContainer>
+      <InpSubscribedContainer>
+        <InpSignupLabel>{label}</InpSignupLabel>
+        <InpSignupHeadline>{headline}</InpSignupHeadline>
+        <InpCopy>{summary}</InpCopy>
+        <InpSignupCTAContainer>
+          <NewsletterPuffButton />
+        </InpSignupCTAContainer>
+      </InpSubscribedContainer>
+    </InpContainer>
+  );
+};
