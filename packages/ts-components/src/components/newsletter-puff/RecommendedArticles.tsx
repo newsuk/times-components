@@ -1,5 +1,8 @@
 import React from 'react';
-import { Mutation } from 'react-apollo';
+
+import { RecommendedArticles as GetRecommendedArticles } from '@times-components/provider';
+
+/*import { Mutation } from 'react-apollo';
 
 import { recommendations } from '@times-components/provider-queries';
 import Image from '@times-components/image';
@@ -13,7 +16,7 @@ import {
   InpSignupHeadline,
   InpSignupLabel,
   InpSubscribedContainer
-} from './styles';
+} from './styles';*/
 
 type recommendationsProps = {
   feedbackId?: string;
@@ -24,24 +27,22 @@ type recommendationsProps = {
 };
 
 export const RecommendedArticles = ({
-  summary,
-  headline,
-  imageUri,
-  label
-}: recommendationsProps) => {
+  recomArgs
+}: {
+  recomArgs: recommendationsProps;
+}) => {
   return (
-    <InpContainer>
-      <InpImageContainer>
-        <Image aspectRatio={1.42} uri={imageUri} />
-      </InpImageContainer>
-      <InpSubscribedContainer>
-        <InpSignupLabel>{label}</InpSignupLabel>
-        <InpSignupHeadline>{headline}</InpSignupHeadline>
-        <InpCopy>{summary}</InpCopy>
-        <InpSignupCTAContainer>
-          <NewsletterPuffButton />
-        </InpSignupCTAContainer>
-      </InpSubscribedContainer>
-    </InpContainer>
+    <GetRecommendedArticles
+      publisher={'TIMES'}
+      recomArgs={recomArgs}
+      ssr={false}
+      debounceTimeMs={0}
+    >
+      {({ isLoading, error, data }: any) => {
+        // tslint:disable-next-line:no-console
+        console.log(isLoading, error, data);
+        return null;
+      }}
+    </GetRecommendedArticles>
   );
 };

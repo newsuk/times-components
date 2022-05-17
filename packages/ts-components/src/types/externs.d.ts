@@ -180,6 +180,12 @@ declare module '@times-components/provider' {
     ssr: boolean;
     debounceTimeMs: number;
   }>;
+  export const RecommendedArticles: React.FC<{
+    publisher: string;
+    recomArgs: any;
+    ssr: boolean;
+    debounceTimeMs: number;
+  }>;
 }
 
 declare module '@times-components/provider-queries' {
