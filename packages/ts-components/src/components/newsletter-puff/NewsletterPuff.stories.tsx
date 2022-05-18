@@ -72,12 +72,12 @@ const mocks = [
           "__typename": "Recommendations",
           "articles": [
             {
-              "__typename": "Articles",
-              "headline": "Whole world is against us, says top Russian strategist",
+              "__typename": "UniversalArticle",
               "id": "a9ffb7cc-d5d1-11ec-bb99-1bcd45646516",
+              "headline": "Whole world is against us, says top Russian strategist",
               "label": "war in ukraine",
               "publishedDateTime": "2022-05-17T12:10:00.000Z",
-              "updatedDateTime": "2022-05-17T23:34:37.000Z",
+              "updatedDateTime": "2022-05-18T14:02:47.000Z",
               "url": "https://www.staging-thetimes.co.uk/article/were-no-match-for-ukrainian-grit-and-firepower-says-retired-russian-colonel-lhnvsfj33"
             }
           ]
