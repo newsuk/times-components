@@ -69,7 +69,6 @@ const mocks = [
       data: {
         recommendations: {
           "__typename": "Recommendations",
-          "feedbackId": "recommendations",
           "articles": [
             {
               "__typename": "UniversalArticle",
