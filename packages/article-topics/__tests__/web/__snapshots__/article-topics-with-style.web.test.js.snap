@@ -2,68 +2,55 @@
 
 exports[`1. group of topics 1`] = `
 <style>
-.S1 {
-  color: rgba(105,105,105,1.00);
+.IS1 {
+  color: #696969;
   font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-size: 13;
+  line-height: 13px;
+  position: relative;
+  top: 2;
+  font-size-style: [object Object];
 }
 
-.S2 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-top-color: rgba(219,219,219,1.00);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-top-width: 1px;
+.IS2 {
+  border-color: #DBDBDB;
+  border-radius: 2;
+  border-width: 1;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
 }
 
-.S3 {
+.IS3 {
   margin-right: 10px;
   margin-top: 10px;
+  max-width: 80%;
 }
 
-.S4 {
-  -ms-flex-direction: row;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
+.IS4 {
   flex-direction: row;
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
   margin-bottom: 10px;
+  style: null;
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci r-marginBottom-15d164r S4"
+  className="tc-view__TcView-nuazoi-0 fPjBcr IS4"
 >
   <div
-    className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks r-maxWidth-q5oqfz S3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
   >
     <a
       className="link__RespLink-sc-1ocvixa-0 dfMuic"
     >
       <div
-        className="css-view-1dbjc4n r-borderColor-1kv57cf r-borderRadius-1jkafct r-borderWidth-rs99b7 r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-m611by S2"
+        className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
       >
         <div
-          className="css-cursor-18t94o4 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-position-bnwqim r-top-o9xkwf S1"
+          className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
         >
           Football
         </div>
@@ -75,68 +62,55 @@ exports[`1. group of topics 1`] = `
 
 exports[`2. group of topics at large scale 1`] = `
 <style>
-.S1 {
-  color: rgba(105,105,105,1.00);
+.IS1 {
+  color: #696969;
   font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-size: 13;
+  line-height: 13px;
+  position: relative;
+  top: 2;
+  font-size-style: [object Object];
 }
 
-.S2 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-top-color: rgba(219,219,219,1.00);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-top-width: 1px;
+.IS2 {
+  border-color: #DBDBDB;
+  border-radius: 2;
+  border-width: 1;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
 }
 
-.S3 {
+.IS3 {
   margin-right: 10px;
   margin-top: 10px;
+  max-width: 80%;
 }
 
-.S4 {
-  -ms-flex-direction: row;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
+.IS4 {
   flex-direction: row;
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
   margin-bottom: 10px;
+  style: null;
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci r-marginBottom-15d164r S4"
+  className="tc-view__TcView-nuazoi-0 fPjBcr IS4"
 >
   <div
-    className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks r-maxWidth-q5oqfz S3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
   >
     <a
       className="link__RespLink-sc-1ocvixa-0 dfMuic"
     >
       <div
-        className="css-view-1dbjc4n r-borderColor-1kv57cf r-borderRadius-1jkafct r-borderWidth-rs99b7 r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-m611by S2"
+        className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
       >
         <div
-          className="css-cursor-18t94o4 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-position-bnwqim r-top-o9xkwf S1"
+          className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
         >
           Football
         </div>
@@ -148,68 +122,55 @@ exports[`2. group of topics at large scale 1`] = `
 
 exports[`3. group of topics at xlarge scale 1`] = `
 <style>
-.S1 {
-  color: rgba(105,105,105,1.00);
+.IS1 {
+  color: #696969;
   font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-size: 13;
+  line-height: 13px;
+  position: relative;
+  top: 2;
+  font-size-style: [object Object];
 }
 
-.S2 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-top-color: rgba(219,219,219,1.00);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-top-width: 1px;
+.IS2 {
+  border-color: #DBDBDB;
+  border-radius: 2;
+  border-width: 1;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
 }
 
-.S3 {
+.IS3 {
   margin-right: 10px;
   margin-top: 10px;
+  max-width: 80%;
 }
 
-.S4 {
-  -ms-flex-direction: row;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
+.IS4 {
   flex-direction: row;
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
   margin-bottom: 10px;
+  style: null;
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci r-marginBottom-15d164r S4"
+  className="tc-view__TcView-nuazoi-0 fPjBcr IS4"
 >
   <div
-    className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks r-maxWidth-q5oqfz S3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
   >
     <a
       className="link__RespLink-sc-1ocvixa-0 dfMuic"
     >
       <div
-        className="css-view-1dbjc4n r-borderColor-1kv57cf r-borderRadius-1jkafct r-borderWidth-rs99b7 r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-m611by S2"
+        className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
       >
         <div
-          className="css-cursor-18t94o4 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-position-bnwqim r-top-o9xkwf S1"
+          className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
         >
           Football
         </div>
@@ -221,52 +182,44 @@ exports[`3. group of topics at xlarge scale 1`] = `
 
 exports[`4. article topic with style 1`] = `
 <style>
-.S1 {
-  color: rgba(105,105,105,1.00);
+.IS1 {
+  color: #696969;
   font-family: GillSansMTStd-Medium;
+  font-size: 13;
+  line-height: 20px;
+  position: relative;
+  top: 2;
+  font-size-style: [object Object];
 }
 
-.S2 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-top-color: rgba(219,219,219,1.00);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-top-width: 1px;
+.IS2 {
+  border-color: #DBDBDB;
+  border-radius: 2;
+  border-width: 1;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
 }
 
-.S3 {
+.IS3 {
   margin-right: 10px;
   margin-top: 10px;
-}
-
-.IS1 {
-  font-size: 17px;
-  line-height: 20px;
+  max-width: 80%;
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks r-maxWidth-q5oqfz S3"
+  className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
 >
   <a
     className="link__RespLink-sc-1ocvixa-0 dfMuic"
   >
     <div
-      className="css-view-1dbjc4n r-borderColor-1kv57cf r-borderRadius-1jkafct r-borderWidth-rs99b7 r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-m611by S2"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <div
-        className="css-cursor-18t94o4 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-position-bnwqim r-top-o9xkwf IS1 S1"
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
       >
         Test
       </div>
@@ -277,48 +230,44 @@ exports[`4. article topic with style 1`] = `
 
 exports[`5. article topic with no additional style 1`] = `
 <style>
-.S1 {
-  color: rgba(105,105,105,1.00);
+.IS1 {
+  color: #696969;
   font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-size: 13;
+  line-height: 13;
+  position: relative;
+  top: 2;
+  font-size-style: null;
 }
 
-.S2 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-top-color: rgba(219,219,219,1.00);
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px;
-  border-bottom-width: 1px;
-  border-left-width: 1px;
-  border-right-width: 1px;
-  border-top-width: 1px;
+.IS2 {
+  border-color: #DBDBDB;
+  border-radius: 2;
+  border-width: 1;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
 }
 
-.S3 {
+.IS3 {
   margin-right: 10px;
   margin-top: 10px;
+  max-width: 80%;
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks r-maxWidth-q5oqfz S3"
+  className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
 >
   <a
     className="link__RespLink-sc-1ocvixa-0 dfMuic"
   >
     <div
-      className="css-view-1dbjc4n r-borderColor-1kv57cf r-borderRadius-1jkafct r-borderWidth-rs99b7 r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-m611by S2"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <div
-        className="css-cursor-18t94o4 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-position-bnwqim r-top-o9xkwf S1"
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
       >
         Test
       </div>

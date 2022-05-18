@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import Context from "@times-components/context";
 import { styleguide } from "@times-components/ts-styleguide";
 import ArticleTopic from "./article-topic";
@@ -25,9 +25,13 @@ const ArticleTopics = ({ onPress, style, topics }) => (
   <Context.Consumer>
     {({ theme: { scale } }) => {
       const themedStyleguide = styleguide({ scale });
+      const viewStyle = {
+        ...styles.topicGroup,
+        style
+      };
 
       return (
-        <View style={[styles.topicGroup, style]}>
+        <TcView style={viewStyle}>
           {renderArticleTopics(
             topics,
             onPress,
@@ -36,7 +40,7 @@ const ArticleTopics = ({ onPress, style, topics }) => (
               fontSize: "link"
             })
           )}
-        </View>
+        </TcView>
       );
     }}
   </Context.Consumer>

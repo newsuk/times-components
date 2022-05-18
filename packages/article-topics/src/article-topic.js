@@ -1,6 +1,6 @@
 import React from "react";
 import Context from "@times-components/context";
-import { Text, View } from "react-native";
+import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
 import styles from "./styles";
@@ -8,27 +8,34 @@ import topicPropTypes from "./article-topic-prop-types";
 
 const ArticleTopic = ({ fontSize, lineHeight, name, onPress, slug }) => {
   const fontSizeStyle = fontSize ? { fontSize } : null;
-  const lineHeightStyle = lineHeight ? { lineHeight } : null;
+  const lineHeightStyle = lineHeight
+    ? { ...checkStylesForUnits({ lineHeight }) }
+    : null;
+  const textStyles = {
+    ...styles.text,
+    fontSizeStyle,
+    ...lineHeightStyle
+  };
   return (
     <Context.Consumer>
       {({ makeTopicUrl }) => (
-        <View style={styles.spacer}>
+        <TcView style={styles.spacer}>
           <Link
             onPress={e => onPress(e, { name, slug })}
             url={makeTopicUrl({ slug })}
           >
-            <View style={styles.container}>
-              <Text
+            <TcView style={styles.container}>
+              <TcText
                 accessibilityComponentType="button"
                 accessibilityRole="button"
                 accessibilityTraits="button"
-                style={[styles.text, fontSizeStyle, lineHeightStyle]}
+                style={textStyles}
               >
                 {name}
-              </Text>
-            </View>
+              </TcText>
+            </TcView>
           </Link>
-        </View>
+        </TcView>
       )}
     </Context.Consumer>
   );
