@@ -6,7 +6,9 @@ query RecommendedArticles(
     publisher: $publisher,
     recomArgs: $recomArgs
   ) {
+    __typename
     articles {
+      __typename
       id
       headline
       label
@@ -15,4 +17,4 @@ query RecommendedArticles(
       url
     }
   }
-} 
+}

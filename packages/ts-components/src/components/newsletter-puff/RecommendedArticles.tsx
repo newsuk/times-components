@@ -3,8 +3,8 @@ import React from 'react';
 import { RecommendedArticles as GetRecommendedArticles } from '@times-components/provider';
 
 export type recommendationsProps = {
-  userId: string;
-  articleId: string;
+  userId: "1234";
+  articleId: "94a01926-719a-11ec-aacf-0736e08b15cd";
 };
 
 export const RecommendedArticles = ({
