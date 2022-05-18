@@ -69,34 +69,39 @@ const mocks = [
     result: {
       data: {
         recommendations: {
-          feedbackId: "59deb53e-f24c-4560-9454-ad7bbade784b",
-          articles: [
+          "feedbackId": "9c04a369-81fe-4ddb-92c3-133285d49f4d",
+          "articles": [
             {
-              bylines: [
+              "bylines": [
                 {
-                  __typename: "TextByline"
+                  "__typename": "TextByline"
                 }
               ],
-              flags: [],
-              headline: "Cross-examining Coleen Rooney: ‘I want to ask you now about Soho Farmhouse...’",
-              id: "2a14b18e-d53b-11ec-8585-951ab3afb4d2",
-              label: "HILARY ROSE",
-              media: {
-                __typename: "Image"
+              "flags": [
+                "NEW"
+              ],
+              "headline": "Whole world is against us, says top Russian strategist",
+              "id": "a9ffb7cc-d5d1-11ec-bb99-1bcd45646516",
+              "label": "war in ukraine",
+              "media": {
+                "__typename": "Image"
               },
-              publishedDateTime: "2022-05-16T23:01:00.000Z",
-              publisher: "TIMES",
-              slug: "no-one-wins-in-vardy-v-rooney-trial",
-              summary: {
-                children: [
+              "publishedDateTime": "2022-05-17T12:10:00.000Z",
+              "publisher": "TIMES",
+              "slug": "were-no-match-for-ukrainian-grit-and-firepower-says-retired-russian-colonel",
+              "summary": {
+                "children": [
                   {
-                    __typename: "ArticleText"
+                    "__typename": "ArticleText"
+                  },
+                  {
+                    "__typename": "ArticleText"
                   }
                 ]
               },
-              template: "indepth",
-              updatedDateTime: "2022-05-17T12:05:08.000Z",
-              url: "https://www.staging-thetimes.co.uk/article/no-one-wins-in-vardy-v-rooney-trial-hqj7bswjx"
+              "template": "mainstandard",
+              "updatedDateTime": "2022-05-18T06:56:41.000Z",
+              "url": "https://www.staging-thetimes.co.uk/article/were-no-match-for-ukrainian-grit-and-firepower-says-retired-russian-colonel-lhnvsfj33"
             }
           ]
         }

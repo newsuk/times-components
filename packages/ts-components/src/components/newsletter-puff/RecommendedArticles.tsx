@@ -35,7 +35,9 @@ export const RecommendedArticles = ({
           );
         }
 
-        return null;
+        return (
+          <div>{data}</div>
+        )
       }}
     </GetRecommendedArticles>
   );

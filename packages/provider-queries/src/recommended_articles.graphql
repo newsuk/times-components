@@ -7,10 +7,11 @@ query RecommendedArticles(
     recomArgs: $recomArgs
   ) {
     feedbackId
-    articles{
+    articles {
+      __typename
       bylines {
-        __typename
-      }
+				__typename
+			}
       flags
       headline
       id
@@ -28,6 +29,7 @@ query RecommendedArticles(
       }
       template
       updatedDateTime
+      url
     }
   }
 } 
