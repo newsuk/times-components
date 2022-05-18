@@ -55,6 +55,7 @@ const mocks = [
     }
   },
   {
+    delay: 1000,
     request: {
       query: recommendations,
       variables: {
