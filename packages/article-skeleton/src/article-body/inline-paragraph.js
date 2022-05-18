@@ -1,9 +1,8 @@
 /* eslint-disable react/forbid-prop-types */
 import React, { useState } from "react";
-import { TcView, TcText } from "@times-components/utils";
+import { TcView, TcText, screenWidth } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { tabletWidth, styleguide } from "@times-components/ts-styleguide";
-import { screenWidth } from "@times-components/utils";
 import {
   TextContainer,
   LayoutManager,

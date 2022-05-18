@@ -6,7 +6,7 @@ import {
   enzymeTreeSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  print,
+  print
 } from "@times-components/jest-serializer";
 
 import "../mocks";
@@ -25,7 +25,7 @@ addSerializers(
   compose(
     print,
     minimalWebTransform,
-    minimaliseTransform(),
+    minimaliseTransform()
   )
 );
 

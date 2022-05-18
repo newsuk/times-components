@@ -1,4 +1,4 @@
-import { spacing, colours } from "@times-components/styleguide";
+import { spacing, colours } from "@times-components/ts-styleguide";
 
 const globalStyle = {
   articleContainer: {
@@ -7,7 +7,7 @@ const globalStyle = {
   articleMainContentRow: {
     paddingLeft: spacing(2),
     paddingRight: spacing(2)
-  },
+  }
 };
 
 export default globalStyle;
