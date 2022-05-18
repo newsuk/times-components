@@ -79,7 +79,8 @@ exports[`1. an article 1`] = `
           slotName="header"
         />
       </div>
-      <main
+      <div
+        id="main"
         role="main"
       >
         <div>
@@ -232,7 +233,8 @@ exports[`1. an article 1`] = `
             </div>
           </div>
         </div>
-        <article
+        <div
+          id="article"
           role="article"
         >
           <p>
@@ -313,8 +315,8 @@ exports[`1. an article 1`] = `
               ]
             }
           />
-        </article>
-      </main>
+        </div>
+      </div>
       <AdContainer
         slotName="pixel"
       />
@@ -400,7 +402,8 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
           slotName="header"
         />
       </div>
-      <main
+      <div
+        id="main"
         role="main"
       >
         <div>
@@ -460,7 +463,8 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
             </div>
           </div>
         </div>
-        <article
+        <div
+          id="article"
           role="article"
         >
           <p>
@@ -492,8 +496,8 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
             savingEnabled={true}
             sharingEnabled={true}
           />
-        </article>
-      </main>
+        </div>
+      </div>
       <AdContainer
         slotName="pixel"
       />
@@ -575,7 +579,8 @@ exports[`5. an article with ads 1`] = `
           slotName="header"
         />
       </div>
-      <main
+      <div
+        id="main"
         role="main"
       >
         <div>
@@ -635,7 +640,8 @@ exports[`5. an article with ads 1`] = `
             </div>
           </div>
         </div>
-        <article
+        <div
+          id="article"
           role="article"
         >
           <div>
@@ -672,8 +678,8 @@ exports[`5. an article with ads 1`] = `
             savingEnabled={true}
             sharingEnabled={true}
           />
-        </article>
-      </main>
+        </div>
+      </div>
       <AdContainer
         slotName="pixel"
       />
@@ -767,7 +773,8 @@ exports[`6. should show topics when logged in or shared 1`] = `
           slotName="header"
         />
       </div>
-      <main
+      <div
+        id="main"
         role="main"
       >
         <div>
@@ -954,7 +961,8 @@ exports[`6. should show topics when logged in or shared 1`] = `
             </div>
           </div>
         </div>
-        <article
+        <div
+          id="article"
           role="article"
         >
           <p>
@@ -1035,8 +1043,8 @@ exports[`6. should show topics when logged in or shared 1`] = `
               ]
             }
           />
-        </article>
-      </main>
+        </div>
+      </div>
       <AdContainer
         slotName="pixel"
       />
@@ -1126,7 +1134,8 @@ exports[`7. an article with no byline 1`] = `
           slotName="header"
         />
       </div>
-      <main
+      <div
+        id="main"
         role="main"
       >
         <div>
@@ -1235,7 +1244,8 @@ exports[`7. an article with no byline 1`] = `
             </div>
           </div>
         </div>
-        <article
+        <div
+          id="article"
           role="article"
         >
           <p>
@@ -1316,8 +1326,8 @@ exports[`7. an article with no byline 1`] = `
               ]
             }
           />
-        </article>
-      </main>
+        </div>
+      </div>
       <AdContainer
         slotName="pixel"
       />
@@ -1411,7 +1421,8 @@ exports[`8. an article with no label 1`] = `
           slotName="header"
         />
       </div>
-      <main
+      <div
+        id="main"
         role="main"
       >
         <div>
@@ -1559,7 +1570,8 @@ exports[`8. an article with no label 1`] = `
             </div>
           </div>
         </div>
-        <article
+        <div
+          id="article"
           role="article"
         >
           <p>
@@ -1640,8 +1652,8 @@ exports[`8. an article with no label 1`] = `
               ]
             }
           />
-        </article>
-      </main>
+        </div>
+      </div>
       <AdContainer
         slotName="pixel"
       />
