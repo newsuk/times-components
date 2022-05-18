@@ -19,10 +19,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
         slotName="header"
       />
     </div>
-    <div
-      id="main"
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -184,10 +181,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
           </div>
         </div>
       </div>
-      <div
-        id="article"
-        role="article"
-      >
+      <article>
         <p>
           Some paragraph 1
         </p>
@@ -326,8 +320,8 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
             ]
           }
         />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer
       slotName="pixel"
     />
@@ -360,10 +354,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
         slotName="header"
       />
     </div>
-    <div
-      id="main"
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -525,10 +516,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
           </div>
         </div>
       </div>
-      <div
-        id="article"
-        role="article"
-      >
+      <article>
         <p>
           Some paragraph 1
         </p>
@@ -665,8 +653,8 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
             ]
           }
         />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer
       slotName="pixel"
     />

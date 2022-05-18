@@ -44,15 +44,9 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
         slotName="header"
       />
     </div>
-    <div
-      id="main"
-      role="main"
-    >
+    <main>
       <div />
-      <div
-        id="article"
-        role="article"
-      >
+      <article>
         <p>
           <span>
             T
@@ -429,8 +423,8 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
             ]
           }
         />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer
       slotName="pixel"
     />
@@ -463,15 +457,9 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
         slotName="header"
       />
     </div>
-    <div
-      id="main"
-      role="main"
-    >
+    <main>
       <div />
-      <div
-        id="article"
-        role="article"
-      >
+      <article>
         <p>
           <span>
             T
@@ -848,8 +836,8 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
             ]
           }
         />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer
       slotName="pixel"
     />

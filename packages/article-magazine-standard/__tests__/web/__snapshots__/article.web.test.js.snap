@@ -82,10 +82,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         slotName="header"
       />
     </div>
-    <div
-      id="main"
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <h1
@@ -198,10 +195,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           </div>
         </div>
       </div>
-      <div
-        id="article"
-        role="article"
-      >
+      <article>
         <p>
           Some content
         </p>
@@ -282,8 +276,8 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             ]
           }
         />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer
       slotName="pixel"
     />
@@ -375,10 +369,7 @@ exports[`4. an article with ads 1`] = `
         slotName="header"
       />
     </div>
-    <div
-      id="main"
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <h1
@@ -491,10 +482,7 @@ exports[`4. an article with ads 1`] = `
           </div>
         </div>
       </div>
-      <div
-        id="article"
-        role="article"
-      >
+      <article>
         <div>
           <h2>
             Advertisement
@@ -580,8 +568,8 @@ exports[`4. an article with ads 1`] = `
             ]
           }
         />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer
       slotName="pixel"
     />

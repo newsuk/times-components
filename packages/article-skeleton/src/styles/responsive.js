@@ -26,7 +26,7 @@ export const getHeaderAdStyles = template => {
   `;
 };
 
-export const MainContainer = styled(TcView)`
+export const MainContainer = styled.main`
   @media (min-width: ${breakpoints.wide}px) {
     padding-top: ${spacing(4)};
     margin: 0 auto;
@@ -43,7 +43,7 @@ export const HeaderContainer = styled(TcView)`
   /* stylelint-enable */
 `;
 
-export const BodyContainer = styled(TcView)`
+export const BodyContainer = styled.article`
   display: block;
   order: 4;
 `;

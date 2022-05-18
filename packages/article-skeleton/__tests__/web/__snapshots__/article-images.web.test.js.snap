@@ -19,10 +19,7 @@ exports[`1. a primary image 1`] = `
         slotName="header"
       />
     </div>
-    <div
-      id="main"
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -47,10 +44,7 @@ exports[`1. a primary image 1`] = `
           </div>
         </div>
       </div>
-      <div
-        id="article"
-        role="article"
-      >
+      <article>
         <div
           id="0"
         >
@@ -110,8 +104,8 @@ exports[`1. a primary image 1`] = `
           savingEnabled={true}
           sharingEnabled={true}
         />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer
       slotName="pixel"
     />
@@ -144,10 +138,7 @@ exports[`2. a fullwidth image 1`] = `
         slotName="header"
       />
     </div>
-    <div
-      id="main"
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -172,10 +163,7 @@ exports[`2. a fullwidth image 1`] = `
           </div>
         </div>
       </div>
-      <div
-        id="article"
-        role="article"
-      >
+      <article>
         <div
           id="0"
         >
@@ -235,8 +223,8 @@ exports[`2. a fullwidth image 1`] = `
           savingEnabled={true}
           sharingEnabled={true}
         />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer
       slotName="pixel"
     />
@@ -269,10 +257,7 @@ exports[`3. a secondary image 1`] = `
         slotName="header"
       />
     </div>
-    <div
-      id="main"
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -297,10 +282,7 @@ exports[`3. a secondary image 1`] = `
           </div>
         </div>
       </div>
-      <div
-        id="article"
-        role="article"
-      >
+      <article>
         <div
           id="0"
         >
@@ -360,8 +342,8 @@ exports[`3. a secondary image 1`] = `
           savingEnabled={true}
           sharingEnabled={true}
         />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer
       slotName="pixel"
     />
@@ -394,10 +376,7 @@ exports[`4. an inline image 1`] = `
         slotName="header"
       />
     </div>
-    <div
-      id="main"
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -422,10 +401,7 @@ exports[`4. an inline image 1`] = `
           </div>
         </div>
       </div>
-      <div
-        id="article"
-        role="article"
-      >
+      <article>
         <div
           id="0"
         >
@@ -485,8 +461,8 @@ exports[`4. an inline image 1`] = `
           savingEnabled={true}
           sharingEnabled={true}
         />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer
       slotName="pixel"
     />

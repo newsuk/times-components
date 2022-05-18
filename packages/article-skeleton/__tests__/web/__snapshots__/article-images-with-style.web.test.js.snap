@@ -60,24 +60,6 @@ exports[`1. a primary image 1`] = `
   flex: 1 1 50%;
 }
 
-.c1 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-}
-
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -107,21 +89,6 @@ exports[`1. a primary image 1`] = `
 }
 
 .c7 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
@@ -302,7 +269,7 @@ exports[`1. a primary image 1`] = `
         className="IS1"
       />
     </div>
-    <div
+    <main
       className="c1"
     >
       <div
@@ -325,7 +292,7 @@ exports[`1. a primary image 1`] = `
           </div>
         </div>
       </div>
-      <div
+      <article
         className="c7"
       >
         <div>
@@ -354,8 +321,8 @@ exports[`1. a primary image 1`] = `
         </div>
         <div />
         <ArticleExtras />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer />
     <AdContainer />
     <AdContainer />
@@ -419,24 +386,6 @@ exports[`2. a fullwidth image 1`] = `
   flex: 1 1 50%;
 }
 
-.c1 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-}
-
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -466,21 +415,6 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 .c7 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
@@ -648,7 +582,7 @@ exports[`2. a fullwidth image 1`] = `
         className="IS1"
       />
     </div>
-    <div
+    <main
       className="c1"
     >
       <div
@@ -671,7 +605,7 @@ exports[`2. a fullwidth image 1`] = `
           </div>
         </div>
       </div>
-      <div
+      <article
         className="c7"
       >
         <div>
@@ -700,8 +634,8 @@ exports[`2. a fullwidth image 1`] = `
         </div>
         <div />
         <ArticleExtras />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer />
     <AdContainer />
     <AdContainer />
@@ -774,24 +708,6 @@ exports[`3. a secondary image 1`] = `
   flex: 1 1 50%;
 }
 
-.c1 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-}
-
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -821,21 +737,6 @@ exports[`3. a secondary image 1`] = `
 }
 
 .c7 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
@@ -1018,7 +919,7 @@ exports[`3. a secondary image 1`] = `
         className="IS1"
       />
     </div>
-    <div
+    <main
       className="c1"
     >
       <div
@@ -1041,7 +942,7 @@ exports[`3. a secondary image 1`] = `
           </div>
         </div>
       </div>
-      <div
+      <article
         className="c7"
       >
         <div>
@@ -1070,8 +971,8 @@ exports[`3. a secondary image 1`] = `
         </div>
         <div />
         <ArticleExtras />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer />
     <AdContainer />
     <AdContainer />
@@ -1145,24 +1046,6 @@ exports[`4. an inline image 1`] = `
   flex: 1 1 50%;
 }
 
-.c1 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-}
-
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -1192,21 +1075,6 @@ exports[`4. an inline image 1`] = `
 }
 
 .c7 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
@@ -1389,7 +1257,7 @@ exports[`4. an inline image 1`] = `
         className="IS1"
       />
     </div>
-    <div
+    <main
       className="c1"
     >
       <div
@@ -1412,7 +1280,7 @@ exports[`4. an inline image 1`] = `
           </div>
         </div>
       </div>
-      <div
+      <article
         className="c7"
       >
         <div>
@@ -1441,8 +1309,8 @@ exports[`4. an inline image 1`] = `
         </div>
         <div />
         <ArticleExtras />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer />
     <AdContainer />
     <AdContainer />

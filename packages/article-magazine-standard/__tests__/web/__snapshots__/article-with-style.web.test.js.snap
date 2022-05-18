@@ -249,24 +249,6 @@ exports[`full article with style 1`] = `
   text-transform: uppercase;
 }
 
-.c1 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-}
-
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -296,21 +278,6 @@ exports[`full article with style 1`] = `
 }
 
 .c17 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
@@ -823,7 +790,7 @@ exports[`full article with style 1`] = `
         className="IS1"
       />
     </div>
-    <div
+    <main
       className="c1"
     >
       <div
@@ -898,7 +865,7 @@ exports[`full article with style 1`] = `
           </div>
         </div>
       </div>
-      <div
+      <article
         className="c17"
       >
         <div>
@@ -1008,8 +975,8 @@ exports[`full article with style 1`] = `
         </div>
         <div />
         <ArticleExtras />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer />
     <AdContainer />
     <AdContainer />
@@ -1266,24 +1233,6 @@ exports[`full article with style in the culture magazine 1`] = `
   text-transform: uppercase;
 }
 
-.c1 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-}
-
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -1313,21 +1262,6 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c17 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
@@ -1844,7 +1778,7 @@ exports[`full article with style in the culture magazine 1`] = `
         className="IS1"
       />
     </div>
-    <div
+    <main
       className="c1"
     >
       <div
@@ -1919,7 +1853,7 @@ exports[`full article with style in the culture magazine 1`] = `
           </div>
         </div>
       </div>
-      <div
+      <article
         className="c17"
       >
         <div>
@@ -2029,8 +1963,8 @@ exports[`full article with style in the culture magazine 1`] = `
         </div>
         <div />
         <ArticleExtras />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer />
     <AdContainer />
     <AdContainer />
@@ -2287,24 +2221,6 @@ exports[`full article with style in the style magazine 1`] = `
   text-transform: uppercase;
 }
 
-.c1 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-}
-
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -2334,21 +2250,6 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c17 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
@@ -2866,7 +2767,7 @@ exports[`full article with style in the style magazine 1`] = `
         className="IS1"
       />
     </div>
-    <div
+    <main
       className="c1"
     >
       <div
@@ -2941,7 +2842,7 @@ exports[`full article with style in the style magazine 1`] = `
           </div>
         </div>
       </div>
-      <div
+      <article
         className="c17"
       >
         <div>
@@ -3051,8 +2952,8 @@ exports[`full article with style in the style magazine 1`] = `
         </div>
         <div />
         <ArticleExtras />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer />
     <AdContainer />
     <AdContainer />
@@ -3309,24 +3210,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
   text-transform: uppercase;
 }
 
-.c1 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-}
-
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -3356,21 +3239,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c17 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
@@ -3887,7 +3755,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         className="IS1"
       />
     </div>
-    <div
+    <main
       className="c1"
     >
       <div
@@ -3962,7 +3830,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </div>
         </div>
       </div>
-      <div
+      <article
         className="c17"
       >
         <div>
@@ -4072,8 +3940,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
         </div>
         <div />
         <ArticleExtras />
-      </div>
-    </div>
+      </article>
+    </main>
     <AdContainer />
     <AdContainer />
     <AdContainer />
