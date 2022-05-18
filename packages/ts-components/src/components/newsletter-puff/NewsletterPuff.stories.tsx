@@ -55,7 +55,6 @@ const mocks = [
     }
   },
   {
-    delay: 1000,
     request: {
       query: recommendations,
       variables: {
@@ -69,8 +68,11 @@ const mocks = [
     result: {
       data: {
         recommendations: {
+          __typename: "recommendations",
+          "feedbackId": "recommendations",
           "articles": [
             {
+              __typename: "article",
               "headline": "Whole world is against us, says top Russian strategist",
               "id": "a9ffb7cc-d5d1-11ec-bb99-1bcd45646516",
               "label": "war in ukraine",

@@ -19,9 +19,9 @@ export const RecommendedArticles = ({
       ssr={false}
       debounceTimeMs={0}
     >
-      {({ isLoading, error, data }: any) => {
+      {({ isLoading, error, recommendations }: any) => {
         // tslint:disable-next-line:no-console
-        console.log(isLoading, error, data);
+        console.log(isLoading, error, recommendations);
 
         if (error) {
           return null;
@@ -35,9 +35,7 @@ export const RecommendedArticles = ({
           );
         }
 
-        return (
-          <div>{data}</div>
-        )
+        return <div>{JSON.stringify(recommendations)}</div>;
       }}
     </GetRecommendedArticles>
   );
