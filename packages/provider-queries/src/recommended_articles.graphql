@@ -6,28 +6,11 @@ query RecommendedArticles(
     publisher: $publisher,
     recomArgs: $recomArgs
   ) {
-    feedbackId
     articles {
-      __typename
-      bylines {
-				__typename
-			}
-      flags
-      headline
       id
+      headline
       label
-      media {
-        __typename
-      }
       publishedDateTime
-      publisher
-      slug
-      summary {
-        children {
-          __typename
-        }
-      }
-      template
       updatedDateTime
       url
     }

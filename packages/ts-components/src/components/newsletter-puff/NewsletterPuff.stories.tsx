@@ -69,38 +69,13 @@ const mocks = [
     result: {
       data: {
         recommendations: {
-          "feedbackId": "9c04a369-81fe-4ddb-92c3-133285d49f4d",
           "articles": [
             {
-              "bylines": [
-                {
-                  "__typename": "TextByline"
-                }
-              ],
-              "flags": [
-                "NEW"
-              ],
               "headline": "Whole world is against us, says top Russian strategist",
               "id": "a9ffb7cc-d5d1-11ec-bb99-1bcd45646516",
               "label": "war in ukraine",
-              "media": {
-                "__typename": "Image"
-              },
               "publishedDateTime": "2022-05-17T12:10:00.000Z",
-              "publisher": "TIMES",
-              "slug": "were-no-match-for-ukrainian-grit-and-firepower-says-retired-russian-colonel",
-              "summary": {
-                "children": [
-                  {
-                    "__typename": "ArticleText"
-                  },
-                  {
-                    "__typename": "ArticleText"
-                  }
-                ]
-              },
-              "template": "mainstandard",
-              "updatedDateTime": "2022-05-18T06:56:41.000Z",
+              "updatedDateTime": "2022-05-17T23:34:37.000Z",
               "url": "https://www.staging-thetimes.co.uk/article/were-no-match-for-ukrainian-grit-and-firepower-says-retired-russian-colonel-lhnvsfj33"
             }
           ]
