@@ -8,10 +8,7 @@ exports[`1. group of topics 1`] = `
       target={null}
     >
       <div>
-        <div
-          role="button"
-          tabIndex="0"
-        >
+        <div>
           Football
         </div>
       </div>
@@ -23,10 +20,7 @@ exports[`1. group of topics 1`] = `
       target={null}
     >
       <div>
-        <div
-          role="button"
-          tabIndex="0"
-        >
+        <div>
           Manchester United FC
         </div>
       </div>
@@ -38,10 +32,7 @@ exports[`1. group of topics 1`] = `
       target={null}
     >
       <div>
-        <div
-          role="button"
-          tabIndex="0"
-        >
+        <div>
           Chelsea FC
         </div>
       </div>
@@ -53,10 +44,7 @@ exports[`1. group of topics 1`] = `
       target={null}
     >
       <div>
-        <div
-          role="button"
-          tabIndex="0"
-        >
+        <div>
           Arsenal
         </div>
       </div>
@@ -68,10 +56,7 @@ exports[`1. group of topics 1`] = `
       target={null}
     >
       <div>
-        <div
-          role="button"
-          tabIndex="0"
-        >
+        <div>
           Rugby Union
         </div>
       </div>
@@ -126,10 +111,7 @@ exports[`4. article topic 1`] = `
     target={null}
   >
     <div>
-      <div
-        role="button"
-        tabIndex="0"
-      >
+      <div>
         Test
       </div>
     </div>
