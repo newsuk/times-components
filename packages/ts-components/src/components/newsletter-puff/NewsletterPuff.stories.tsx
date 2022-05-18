@@ -69,33 +69,34 @@ const mocks = [
     result: {
       data: {
         recommendations: {
-          "articles": [
+          feedbackId: "59deb53e-f24c-4560-9454-ad7bbade784b",
+          articles: [
             {
-              "bylines": [
+              bylines: [
                 {
-                  "__typename": "TextByline"
+                  __typename: "TextByline"
                 }
               ],
-              "flags": [],
-              "headline": "Cross-examining Coleen Rooney: ‘I want to ask you now about Soho Farmhouse...’",
-              "id": "2a14b18e-d53b-11ec-8585-951ab3afb4d2",
-              "label": "HILARY ROSE",
-              "media": {
-                "__typename": "Image"
+              flags: [],
+              headline: "Cross-examining Coleen Rooney: ‘I want to ask you now about Soho Farmhouse...’",
+              id: "2a14b18e-d53b-11ec-8585-951ab3afb4d2",
+              label: "HILARY ROSE",
+              media: {
+                __typename: "Image"
               },
-              "publishedDateTime": "2022-05-16T23:01:00.000Z",
-              "publisher": "TIMES",
-              "slug": "no-one-wins-in-vardy-v-rooney-trial",
-              "summary": {
-                "children": [
+              publishedDateTime: "2022-05-16T23:01:00.000Z",
+              publisher: "TIMES",
+              slug: "no-one-wins-in-vardy-v-rooney-trial",
+              summary: {
+                children: [
                   {
-                    "__typename": "ArticleText"
+                    __typename: "ArticleText"
                   }
                 ]
               },
-              "template": "indepth",
-              "updatedDateTime": "2022-05-17T12:05:08.000Z",
-              "url": "https://www.staging-thetimes.co.uk/article/no-one-wins-in-vardy-v-rooney-trial-hqj7bswjx"
+              template: "indepth",
+              updatedDateTime: "2022-05-17T12:05:08.000Z",
+              url: "https://www.staging-thetimes.co.uk/article/no-one-wins-in-vardy-v-rooney-trial-hqj7bswjx"
             }
           ]
         }
@@ -173,23 +174,9 @@ const showcase = {
           >
             <RecommendedArticles
               recomArgs={{
-                // feedbackId: '',
-                // summary: '',
-                // headline: '',
-                // imageUri: '',
-                // label: ''
-                userId: '',
-                articleId: ''
+                userId: '1234',
+                articleId: '94a01926-719a-11ec-aacf-0736e08b15cd'
               }}
-              /*headline={text('headline', 'Best of Times')}
-              copy={text(
-                'copy',
-                'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
-              )}
-              imageUri={text(
-                'imageUri',
-                'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800'
-              )}*/
             />
           </TrackingContextProvider>
         </MockedProvider>
