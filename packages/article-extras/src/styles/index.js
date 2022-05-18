@@ -1,4 +1,3 @@
-import { StyleSheet } from "react-native";
 import {
   colours,
   fontFactory,
@@ -6,7 +5,7 @@ import {
   tabletWidth
 } from "@times-components/ts-styleguide";
 
-const styles = StyleSheet.create({
+const styles = {
   extrasErrorBody: {
     ...fontFactory({
       font: "supporting",
@@ -45,6 +44,6 @@ const styles = StyleSheet.create({
     maxWidth: tabletWidth,
     width: "100%"
   }
-});
+};
 
 export default styles;

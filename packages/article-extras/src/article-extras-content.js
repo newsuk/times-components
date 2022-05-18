@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { ResponsiveContext } from "@times-components/responsive";
 import ArticleComments from "@times-components/article-comments";
@@ -24,13 +24,13 @@ const ArticleExtrasContent = ({
       {relatedArticleSlice ? (
         <ResponsiveContext.Consumer>
           {({ isTablet }) => (
-            <View style={isTablet && styles.relatedArticlesTablet}>
+            <TcView style={isTablet && styles.relatedArticlesTablet}>
               <RelatedArticles
                 analyticsStream={analyticsStream}
                 onPress={onRelatedArticlePress}
                 slice={relatedArticleSlice}
               />
-            </View>
+            </TcView>
           )}
         </ResponsiveContext.Consumer>
       ) : null}
