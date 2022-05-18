@@ -4,7 +4,8 @@ import React from 'react';
 import { MockedProvider } from '@times-components/provider-test-tools';
 import {
   getNewsletter,
-  subscribeNewsletter
+  subscribeNewsletter,
+  recommendations
 } from '@times-components/provider-queries';
 
 import { AutoNewsletterPuff } from './AutoNewsletterPuff';
@@ -52,24 +53,55 @@ const mocks = [
         }
       }
     }
+  },
+  {
+    delay: 1000,
+    request: {
+      query: recommendations,
+      variables: {
+        "publisher": "TIMES",
+        "recomArgs": {
+          "userId": "1234",
+          "articleId": "94a01926-719a-11ec-aacf-0736e08b15cd"
+        }
+      }
+    },
+    result: {
+      data: {
+        recommendations: {
+          "articles": [
+            {
+              "bylines": [
+                {
+                  "__typename": "TextByline"
+                }
+              ],
+              "flags": [],
+              "headline": "Cross-examining Coleen Rooney: ‘I want to ask you now about Soho Farmhouse...’",
+              "id": "2a14b18e-d53b-11ec-8585-951ab3afb4d2",
+              "label": "HILARY ROSE",
+              "media": {
+                "__typename": "Image"
+              },
+              "publishedDateTime": "2022-05-16T23:01:00.000Z",
+              "publisher": "TIMES",
+              "slug": "no-one-wins-in-vardy-v-rooney-trial",
+              "summary": {
+                "children": [
+                  {
+                    "__typename": "ArticleText"
+                  }
+                ]
+              },
+              "template": "indepth",
+              "updatedDateTime": "2022-05-17T12:05:08.000Z",
+              "url": "https://www.staging-thetimes.co.uk/article/no-one-wins-in-vardy-v-rooney-trial-hqj7bswjx"
+            }
+          ]
+        }
+      }
+    }
   }
-  // {
-  //   delay: 1000,
-  //   request: {
-  //     query: recommendations,
-  //     variables: {
-  //       userId: '1234',
-  //       articleId: '94a01926-719a-11ec-aacf-0736e08b15cd'
-  //     }
-  //   },
-  //   result: {
-  //     data: {
-  //       recommendations: {
-  //         id: 'a2l6E000000CdHzQAK'
-  //       }
-  //     }
-  //   }
-  // }
 ];
 
 const showcase = {
@@ -141,11 +173,13 @@ const showcase = {
           >
             <RecommendedArticles
               recomArgs={{
-                feedbackId: '',
-                summary: '',
-                headline: '',
-                imageUri: '',
-                label: ''
+                // feedbackId: '',
+                // summary: '',
+                // headline: '',
+                // imageUri: '',
+                // label: ''
+                userId: '',
+                articleId: ''
               }}
               /*headline={text('headline', 'Best of Times')}
               copy={text(

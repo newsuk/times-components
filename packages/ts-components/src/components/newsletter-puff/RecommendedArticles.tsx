@@ -19,11 +19,13 @@ import {
 } from './styles';*/
 
 type recommendationsProps = {
-  feedbackId?: string;
-  summary: string;
-  headline: string;
-  imageUri: string;
-  label?: string;
+  // feedbackId?: string;
+  // summary: string;
+  // headline: string;
+  // imageUri: string;
+  // label?: string;
+  userId: string;
+  articleId: string;
 };
 
 export const RecommendedArticles = ({
@@ -39,6 +41,18 @@ export const RecommendedArticles = ({
       debounceTimeMs={0}
     >
       {({ isLoading, error, data }: any) => {
+        if (error) {
+          return null;
+        }
+
+        if (isLoading) {
+          return (
+            <div>
+              <p>Loading...</p>
+            </div>
+          );
+        }
+
         // tslint:disable-next-line:no-console
         console.log(isLoading, error, data);
         return null;
