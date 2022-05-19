@@ -1,12 +1,12 @@
-import { View } from "react-native";
 import styled from "styled-components";
+import { TcView } from "@times-components/utils";
 import { breakpoints, colours, spacing } from "@times-components/ts-styleguide";
 import { ArticleKeylineItem } from "../keylines";
 
 export const getHeaderAdStyles = template => {
   const hideKeylines = template === "indepth";
 
-  return styled(View)`
+  return styled(TcView)`
     box-sizing: content-box;
     justify-content: center;
     min-height: 50px;
@@ -26,14 +26,14 @@ export const getHeaderAdStyles = template => {
   `;
 };
 
-export const MainContainer = styled(View)`
+export const MainContainer = styled.main`
   @media (min-width: ${breakpoints.wide}px) {
     padding-top: ${spacing(4)};
     margin: 0 auto;
   }
 `;
 
-export const HeaderContainer = styled(View)`
+export const HeaderContainer = styled(TcView)`
   display: flex;
 
   /* stylelint-disable */
@@ -43,7 +43,7 @@ export const HeaderContainer = styled(View)`
   /* stylelint-enable */
 `;
 
-export const BodyContainer = styled(View)`
+export const BodyContainer = styled.article`
   display: block;
   order: 4;
 `;

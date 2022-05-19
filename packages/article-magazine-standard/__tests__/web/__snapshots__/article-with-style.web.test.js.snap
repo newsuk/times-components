@@ -49,10 +49,40 @@ exports[`full article with style 1`] = `
 }
 
 .c26 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-left: 10px;
 }
 
 .c18 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -61,6 +91,21 @@ exports[`full article with style 1`] = `
 }
 
 .c29 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -74,6 +119,21 @@ exports[`full article with style 1`] = `
 }
 
 .c30 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -88,12 +148,42 @@ exports[`full article with style 1`] = `
 }
 
 .c24 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
 .c23 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: block;
 }
 
@@ -160,6 +250,21 @@ exports[`full article with style 1`] = `
 }
 
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -272,6 +377,21 @@ exports[`full article with style 1`] = `
 }
 
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   box-sizing: content-box;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -664,17 +784,17 @@ exports[`full article with style 1`] = `
       </script>
     </Helmet>
     <div
-      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
+      className="c0"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
+        className="c2"
       >
         <div
           className="c3 responsive__HeaderContainer-iv7rgu-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S5"
@@ -746,12 +866,12 @@ exports[`full article with style 1`] = `
         </div>
       </div>
       <article
-        className="c17 responsive__BodyContainer-sc-15gvuj2-3 c17 css-view-1dbjc4n"
+        className="c17"
       >
         <div>
           <div>
             <div
-              className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
+              className="c18"
             >
               <ArticleImage />
             </div>
@@ -781,10 +901,10 @@ exports[`full article with style 1`] = `
           Some content
         </p>
         <div
-          className="c23 responsive__PullQuoteContainer-sc-4v1r4q-10 c23 css-view-1dbjc4n"
+          className="c23"
         >
           <div
-            className="c24 responsive__PullQuoteResp-sc-4v1r4q-9 c24 css-view-1dbjc4n"
+            className="c24"
           >
             <PullQuote>
               The pull quote content
@@ -792,7 +912,7 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
+          className="c18"
         >
           <figure
             className="IS10"
@@ -818,7 +938,7 @@ exports[`full article with style 1`] = `
             </div>
             <figcaption>
               <div
-                className="c26 inset-caption__InsetCaptionStyle-la2hkf-0 c26 css-view-1dbjc4n"
+                className="c26"
               >
                 <Caption />
               </div>
@@ -838,7 +958,7 @@ exports[`full article with style 1`] = `
         <div>
           <div>
             <div
-              className="c29 responsive__SecondaryImg-sc-4v1r4q-7 c29 css-view-1dbjc4n"
+              className="c29"
             >
               <ArticleImage />
             </div>
@@ -847,7 +967,7 @@ exports[`full article with style 1`] = `
         <div>
           <div>
             <div
-              className="c30 responsive__InlineImg-sc-4v1r4q-8 c30 css-view-1dbjc4n"
+              className="c30"
             >
               <ArticleImage />
             </div>
@@ -913,10 +1033,40 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c26 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-left: 10px;
 }
 
 .c18 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -925,6 +1075,21 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c29 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -938,6 +1103,21 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c30 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -952,12 +1132,42 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c24 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
 .c23 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: block;
 }
 
@@ -1024,6 +1234,21 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1136,6 +1361,21 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   box-sizing: content-box;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1532,17 +1772,17 @@ exports[`full article with style in the culture magazine 1`] = `
       </script>
     </Helmet>
     <div
-      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
+      className="c0"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
+        className="c2"
       >
         <div
           className="c3 responsive__HeaderContainer-iv7rgu-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S5"
@@ -1614,12 +1854,12 @@ exports[`full article with style in the culture magazine 1`] = `
         </div>
       </div>
       <article
-        className="c17 responsive__BodyContainer-sc-15gvuj2-3 c17 css-view-1dbjc4n"
+        className="c17"
       >
         <div>
           <div>
             <div
-              className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
+              className="c18"
             >
               <ArticleImage />
             </div>
@@ -1649,10 +1889,10 @@ exports[`full article with style in the culture magazine 1`] = `
           Some content
         </p>
         <div
-          className="c23 responsive__PullQuoteContainer-sc-4v1r4q-10 c23 css-view-1dbjc4n"
+          className="c23"
         >
           <div
-            className="c24 responsive__PullQuoteResp-sc-4v1r4q-9 c24 css-view-1dbjc4n"
+            className="c24"
           >
             <PullQuote>
               The pull quote content
@@ -1660,7 +1900,7 @@ exports[`full article with style in the culture magazine 1`] = `
           </div>
         </div>
         <div
-          className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
+          className="c18"
         >
           <figure
             className="IS11"
@@ -1686,7 +1926,7 @@ exports[`full article with style in the culture magazine 1`] = `
             </div>
             <figcaption>
               <div
-                className="c26 inset-caption__InsetCaptionStyle-la2hkf-0 c26 css-view-1dbjc4n"
+                className="c26"
               >
                 <Caption />
               </div>
@@ -1706,7 +1946,7 @@ exports[`full article with style in the culture magazine 1`] = `
         <div>
           <div>
             <div
-              className="c29 responsive__SecondaryImg-sc-4v1r4q-7 c29 css-view-1dbjc4n"
+              className="c29"
             >
               <ArticleImage />
             </div>
@@ -1715,7 +1955,7 @@ exports[`full article with style in the culture magazine 1`] = `
         <div>
           <div>
             <div
-              className="c30 responsive__InlineImg-sc-4v1r4q-8 c30 css-view-1dbjc4n"
+              className="c30"
             >
               <ArticleImage />
             </div>
@@ -1781,10 +2021,40 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c26 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-left: 10px;
 }
 
 .c18 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -1793,6 +2063,21 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c29 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -1806,6 +2091,21 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c30 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -1820,12 +2120,42 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c24 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
 .c23 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: block;
 }
 
@@ -1892,6 +2222,21 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2004,6 +2349,21 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   box-sizing: content-box;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -2401,17 +2761,17 @@ exports[`full article with style in the style magazine 1`] = `
       </script>
     </Helmet>
     <div
-      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
+      className="c0"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
+        className="c2"
       >
         <div
           className="c3 responsive__HeaderContainer-iv7rgu-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S5"
@@ -2483,12 +2843,12 @@ exports[`full article with style in the style magazine 1`] = `
         </div>
       </div>
       <article
-        className="c17 responsive__BodyContainer-sc-15gvuj2-3 c17 css-view-1dbjc4n"
+        className="c17"
       >
         <div>
           <div>
             <div
-              className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
+              className="c18"
             >
               <ArticleImage />
             </div>
@@ -2518,10 +2878,10 @@ exports[`full article with style in the style magazine 1`] = `
           Some content
         </p>
         <div
-          className="c23 responsive__PullQuoteContainer-sc-4v1r4q-10 c23 css-view-1dbjc4n"
+          className="c23"
         >
           <div
-            className="c24 responsive__PullQuoteResp-sc-4v1r4q-9 c24 css-view-1dbjc4n"
+            className="c24"
           >
             <PullQuote>
               The pull quote content
@@ -2529,7 +2889,7 @@ exports[`full article with style in the style magazine 1`] = `
           </div>
         </div>
         <div
-          className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
+          className="c18"
         >
           <figure
             className="IS11"
@@ -2555,7 +2915,7 @@ exports[`full article with style in the style magazine 1`] = `
             </div>
             <figcaption>
               <div
-                className="c26 inset-caption__InsetCaptionStyle-la2hkf-0 c26 css-view-1dbjc4n"
+                className="c26"
               >
                 <Caption />
               </div>
@@ -2575,7 +2935,7 @@ exports[`full article with style in the style magazine 1`] = `
         <div>
           <div>
             <div
-              className="c29 responsive__SecondaryImg-sc-4v1r4q-7 c29 css-view-1dbjc4n"
+              className="c29"
             >
               <ArticleImage />
             </div>
@@ -2584,7 +2944,7 @@ exports[`full article with style in the style magazine 1`] = `
         <div>
           <div>
             <div
-              className="c30 responsive__InlineImg-sc-4v1r4q-8 c30 css-view-1dbjc4n"
+              className="c30"
             >
               <ArticleImage />
             </div>
@@ -2650,10 +3010,40 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c26 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-left: 10px;
 }
 
 .c18 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -2662,6 +3052,21 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c29 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -2675,6 +3080,21 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c30 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -2689,12 +3109,42 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c24 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
 .c23 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: block;
 }
 
@@ -2761,6 +3211,21 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2873,6 +3338,21 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   box-sizing: content-box;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -3269,17 +3749,17 @@ exports[`full article with style in the sunday times magazine 1`] = `
       </script>
     </Helmet>
     <div
-      className="c0 responsive-sc-15gvuj2-0 c0 css-view-1dbjc4n"
+      className="c0"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsive__MainContainer-sc-15gvuj2-1 c1 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="c2 responsive__HeaderContainer-sc-15gvuj2-2 c2 css-view-1dbjc4n"
+        className="c2"
       >
         <div
           className="c3 responsive__HeaderContainer-iv7rgu-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S5"
@@ -3351,12 +3831,12 @@ exports[`full article with style in the sunday times magazine 1`] = `
         </div>
       </div>
       <article
-        className="c17 responsive__BodyContainer-sc-15gvuj2-3 c17 css-view-1dbjc4n"
+        className="c17"
       >
         <div>
           <div>
             <div
-              className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
+              className="c18"
             >
               <ArticleImage />
             </div>
@@ -3386,10 +3866,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
           Some content
         </p>
         <div
-          className="c23 responsive__PullQuoteContainer-sc-4v1r4q-10 c23 css-view-1dbjc4n"
+          className="c23"
         >
           <div
-            className="c24 responsive__PullQuoteResp-sc-4v1r4q-9 c24 css-view-1dbjc4n"
+            className="c24"
           >
             <PullQuote>
               The pull quote content
@@ -3397,7 +3877,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </div>
         </div>
         <div
-          className="c18 responsive__PrimaryImg-sc-4v1r4q-5 c18 css-view-1dbjc4n"
+          className="c18"
         >
           <figure
             className="IS11"
@@ -3423,7 +3903,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             </div>
             <figcaption>
               <div
-                className="c26 inset-caption__InsetCaptionStyle-la2hkf-0 c26 css-view-1dbjc4n"
+                className="c26"
               >
                 <Caption />
               </div>
@@ -3443,7 +3923,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         <div>
           <div>
             <div
-              className="c29 responsive__SecondaryImg-sc-4v1r4q-7 c29 css-view-1dbjc4n"
+              className="c29"
             >
               <ArticleImage />
             </div>
@@ -3452,7 +3932,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         <div>
           <div>
             <div
-              className="c30 responsive__InlineImg-sc-4v1r4q-8 c30 css-view-1dbjc4n"
+              className="c30"
             >
               <ArticleImage />
             </div>

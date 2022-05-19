@@ -170,7 +170,7 @@ const ArticleSkeleton = ({
               <HeaderAdContainer key="headerAd">
                 <AdContainer slotName="header" style={styles.adMarginStyle} />
               </HeaderAdContainer>
-              <MainContainer accessibilityRole="main">
+              <MainContainer>
                 <HeaderContainer>
                   <Header />
                   {savingEnabled || sharingEnabled ? (
@@ -194,7 +194,7 @@ const ArticleSkeleton = ({
                     </UserState>
                   ) : null}
                 </HeaderContainer>
-                <BodyContainer accessibilityRole="article">
+                <BodyContainer>
                   {newContent && (
                     <ArticleBody
                       analyticsStream={analyticsStream}

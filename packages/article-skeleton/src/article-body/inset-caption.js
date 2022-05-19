@@ -1,12 +1,12 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import { breakpoints, spacing } from "@times-components/ts-styleguide";
 
 import Caption from "@times-components/caption";
 
 // SHOULD BE IN STYLES
-const InsetCaptionStyle = styled(View)`
+const InsetCaptionStyle = styled(TcView)`
   padding-left: ${spacing(2)};
 
   @media (min-width: ${breakpoints.medium}px) {

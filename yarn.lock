@@ -3707,10 +3707,10 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
-"@times-components/styleguide@3.38.50":
-  version "3.38.50"
-  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.38.50.tgz#acbb46d5a953bc41bc747b7c1c65fa6419016e27"
-  integrity sha512-BVHDh63f3QHgyHN5msNbfNQLyqIzq9xmIdp0MbWunwDgraH8GG4j5mRSQMeYf7/WQiW9P7nWNxqyicC166z8hg==
+"@times-components/styleguide@3.38.49":
+  version "3.38.49"
+  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.38.49.tgz#9b136e54fa6bb952ed007fab460348fa480d6a09"
+  integrity sha512-khOme2i5gRW9iWT+oz8ppRe8rzApjNXZXS3Ou+OB3Ea+HlPrnhWWO+JD22UoGV43k/SIaVWBObOcGMo07fwRmw==
   dependencies:
     prop-types "15.7.2"
     styled-components "4.3.2"
