@@ -44,13 +44,9 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div />
-      <article
-        role="article"
-      >
+      <article>
         <p>
           <span>
             T
@@ -461,13 +457,9 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div />
-      <article
-        role="article"
-      >
+      <article>
         <p>
           <span>
             T

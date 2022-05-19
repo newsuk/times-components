@@ -1,7 +1,7 @@
 import React from "react";
 import { fonts } from "@times-components/ts-styleguide";
 import { FontStorage, BoxExclusion } from "@times-components/typeset";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import { getStringBounds } from "../body-utils";
 import styles from "../styles/shared";
 
@@ -36,7 +36,7 @@ export default (scale, color, dropCapFont, paragraph) => {
     height
   );
   const element = (
-    <Text
+    <TcText
       allowFontScaling={false}
       style={[
         {
@@ -50,7 +50,7 @@ export default (scale, color, dropCapFont, paragraph) => {
       ]}
     >
       {letter.string}
-    </Text>
+    </TcText>
   );
   return {
     exclusion,

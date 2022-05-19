@@ -19,13 +19,9 @@ exports[`Article with user state Render full article when user has access to ful
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div />
-      <article
-        role="article"
-      >
+      <article>
         <p>
           <span>
             T
@@ -436,13 +432,9 @@ exports[`Article with user state Render teaser article when user does not have a
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div />
-      <article
-        role="article"
-      >
+      <article>
         <p>
           <span>
             T
