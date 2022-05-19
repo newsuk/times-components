@@ -1,8 +1,8 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import { breakpoints, spacing } from "@times-components/ts-styleguide";
 
-export default styled(View)`
+export default styled(TcView)`
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
 

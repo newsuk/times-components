@@ -1,10 +1,8 @@
 # Article Extras
 
-Article extras component to wrap components in the footer of the article page. This includes "Topics", "Related Articles" and "Article Comments". Any other component we want to lazy load on native apps can be added to this package.
+Article extras component to wrap components in the footer of the article page. This includes "Topics", "Related Articles" and "Article Comments".
 
 On web, this component is populated by the props as its data is loaded together in the main article query.
-
-On native, this component uses a provider and an "ArticleExtras" query to lazily load these components on page view.
 
 ## Contributing
 
