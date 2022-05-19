@@ -19,9 +19,9 @@ export const RecommendedArticles = ({
       ssr={false}
       debounceTimeMs={0}
     >
-      {({ isLoading, error, data }: any) => {
+      {({ isLoading, error, recommendations }: any) => {
         // tslint:disable-next-line:no-console
-        console.log(isLoading, error, data);
+        console.log(isLoading, error, recommendations);
 
         if (error) {
           return null;
@@ -35,9 +35,41 @@ export const RecommendedArticles = ({
           );
         }
 
+        // return <div>{JSON.stringify(recommendations)}</div>;
+
         return (
-          <div>{data}</div>
+          <div className='containers'>
+            {recommendations.articles.map(postData => {
+              console.log('PostData: ',postData);
+              return (
+                <div id={postData.id}>
+                  <img src={postData.media.Image} />
+                  <p className="headline">
+                    {postData.headline}
+                  </p>
+                  <p className="summary">
+                    {postData.summary.ArticleParagraph}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
         );
+
+        // return (
+        //   <div className="recArticle">
+        //     {recommendations.articles.map(recs => <div>{recs.headline}</div>)}
+        //   </div>
+        // );
+
+        // Object.entries(recommendations).map(([key, value]) => {
+        //   return (
+        //     <div key={key}>
+        //       <div>Key: {key}</div>
+        //       <div>Value: {value}</div>
+        //     </div>
+        //   );
+        // });
       }}
     </GetRecommendedArticles>
   );

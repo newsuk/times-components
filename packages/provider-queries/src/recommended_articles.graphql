@@ -9,10 +9,26 @@ query RecommendedArticles(
     __typename
     articles {
       __typename
-      id
+			bylines {
+				__typename
+			}
+      flags
       headline
+      id
       label
+      media {
+        __typename
+      }
       publishedDateTime
+      publisher
+      slug
+      summary {
+        __typename
+        children {
+          __typename
+        }
+      }
+      template
       updatedDateTime
       url
     }
