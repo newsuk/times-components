@@ -35,7 +35,7 @@ export const RecommendedArticles = ({
 
         return (
           <div className='containers'>
-            {recommendations.articles.map(recArticle => {
+            {recommendations.articles.map((recArticle: any) => {
               return (
                 <a href={recArticle.url}>
                   <div id={recArticle.id}>
