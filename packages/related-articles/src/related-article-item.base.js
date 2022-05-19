@@ -94,7 +94,7 @@ class RelatedArticleItem extends Component {
         type: summaryType
       }
     } = this.props;
-    const { article } = this.props;
+    const { article, imageAndHeadlineOnly } = this.props;
     const { highResSize } = this.state;
 
     const imageUri = getImageUri(leadAsset, leadAssetOverride, cropSize);
@@ -118,14 +118,14 @@ class RelatedArticleItem extends Component {
             showImage={showImage}
           >
             <ArticleSummary
-              bylineProps={{
+              bylineProps={!imageAndHeadlineOnly && {
                 ast: bylines,
                 bylineClass,
                 color: colours.section[section] || colours.section.default,
                 isOpinionByline
               }}
               content={
-                showSummary && (
+                !imageAndHeadlineOnly && showSummary && (
                   <View style={summaryStyle}>
                     {summaryLengths.map(item => {
                       const summaryClassSuffix = `${item}Class`;
@@ -143,7 +143,7 @@ class RelatedArticleItem extends Component {
                   </View>
                 )
               }
-              datePublicationProps={{ date: publishedTime, showDay: false }}
+              datePublicationProps={!imageAndHeadlineOnly && { date: publishedTime, showDay: false }}
               headline={
                 <ArticleSummaryHeadline
                   className={headlineClass}
@@ -151,7 +151,7 @@ class RelatedArticleItem extends Component {
                   style={styles.headline}
                 />
               }
-              labelProps={{
+              labelProps={!imageAndHeadlineOnly && {
                 color: colours.section[section] || colours.section.default,
                 isVideo: hasVideo,
                 title: label

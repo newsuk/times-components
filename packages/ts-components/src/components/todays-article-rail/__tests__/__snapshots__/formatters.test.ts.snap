@@ -1,0 +1,213 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`latest from section formatters formats 1`] = `
+Array [
+  Object {
+    "bylines": Array [
+      Object {
+        "byline": Array [
+          Object {
+            "attributes": Object {
+              "slug": "didi-tang",
+            },
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "David Walsh",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "author",
+          },
+        ],
+        "image": null,
+      },
+    ],
+    "headline": "The entire Tour bows to the greatness of Cavendish",
+    "id": "c286c868-d90a-11eb-8f14-0bb645f59db0",
+    "label": "cycling | David Walsh",
+    "leadAsset": Object {
+      "crop169": Object {
+        "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg",
+      },
+      "crop32": Object {
+        "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg",
+      },
+    },
+    "publishedTime": "2021-06-29T23:01:00Z",
+    "section": "Sport",
+    "shortIdentifier": "2zq0zgfmn",
+    "slug": "the-entire-tour-de-france-bows-to-the-greatness-of-mark-cavendish",
+    "summary125": Array [
+      Object {
+        "children": Array [
+          Object {
+            "attributes": Object {
+              "value": "The story of Mark Cavendish’s heroic return can be told in many ways. In the brilliance of the sprint, mostly. His team-mates had done an outstanding job but ri",
+            },
+            "children": Array [],
+            "name": "text",
+          },
+        ],
+        "name": "paragraph",
+      },
+    ],
+    "summary145": Array [
+      Object {
+        "children": Array [
+          Object {
+            "attributes": Object {
+              "value": "The story of Mark Cavendish’s heroic return can be told in many ways. In the brilliance of the sprint, mostly. His team-mates had done an outstanding job but ri",
+            },
+            "children": Array [],
+            "name": "text",
+          },
+        ],
+        "name": "paragraph",
+      },
+    ],
+    "updatedTime": "2021-06-29T22:33:53Z",
+    "url": "/article/the-entire-tour-de-france-bows-to-the-greatness-of-mark-cavendish-2zq0zgfmn",
+  },
+  Object {
+    "bylines": Array [
+      Object {
+        "byline": Array [
+          Object {
+            "attributes": Object {
+              "slug": "didi-tang",
+            },
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Matt Lawton",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "author",
+          },
+        ],
+        "image": null,
+      },
+    ],
+    "headline": "Flawless Pickford repels everything Germans muster",
+    "id": "01ee453e-d90c-11eb-8f14-0bb645f59db0",
+    "label": "Euro 2020 | Matt Lawton",
+    "leadAsset": Object {
+      "crop169": Object {
+        "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg",
+      },
+      "crop32": Object {
+        "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg",
+      },
+    },
+    "publishedTime": "2021-06-30T11:00:00Z",
+    "section": "Sport",
+    "shortIdentifier": "ktkcvc85p",
+    "slug": "jordan-pickford-repels-everything-germans-muster",
+    "summary125": Array [
+      Object {
+        "children": Array [
+          Object {
+            "attributes": Object {
+              "value": "Accompanied by a ghost of England’s past in the form of Thomas Müller, Germany set out to inflict yet more misery on their hosts with two spirited young forward",
+            },
+            "children": Array [],
+            "name": "text",
+          },
+        ],
+        "name": "paragraph",
+      },
+    ],
+    "summary145": Array [
+      Object {
+        "children": Array [
+          Object {
+            "attributes": Object {
+              "value": "Accompanied by a ghost of England’s past in the form of Thomas Müller, Germany set out to inflict yet more misery on their hosts with two spirited young forward",
+            },
+            "children": Array [],
+            "name": "text",
+          },
+        ],
+        "name": "paragraph",
+      },
+    ],
+    "updatedTime": "2021-06-30T10:43:13Z",
+    "url": "/article/jordan-pickford-repels-everything-germans-muster-ktkcvc85p",
+  },
+  Object {
+    "bylines": Array [
+      Object {
+        "byline": Array [
+          Object {
+            "attributes": Object {
+              "slug": "didi-tang",
+            },
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Jonathan Northcroft",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "author",
+          },
+        ],
+        "image": null,
+      },
+    ],
+    "headline": "The tactical masterstrokes behind England’s ruthless win",
+    "id": "a8bfaa82-d917-11eb-b92f-5fe539a30c29",
+    "label": "Euro 2020 | Jonathan Northcroft",
+    "leadAsset": Object {
+      "crop169": Object {
+        "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F798e1dce-d918-11eb-b92f-5fe539a30c29.jpg",
+      },
+      "crop32": Object {
+        "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65f0ffc0-d918-11eb-b92f-5fe539a30c29.jpg",
+      },
+    },
+    "publishedTime": "2021-06-29T23:01:00Z",
+    "section": "Sport",
+    "shortIdentifier": "s2s5j6k8l",
+    "slug": "the-tactical-masterstrokes-behind-englands-ruthless-win",
+    "summary125": Array [
+      Object {
+        "children": Array [
+          Object {
+            "attributes": Object {
+              "value": "Rising value of SterlingRaheem Sterling is often portrayed as the kid from an estate near Wembley, who transitioned from street player to a star on its pitch. A",
+            },
+            "children": Array [],
+            "name": "text",
+          },
+        ],
+        "name": "paragraph",
+      },
+    ],
+    "summary145": Array [
+      Object {
+        "children": Array [
+          Object {
+            "attributes": Object {
+              "value": "Rising value of SterlingRaheem Sterling is often portrayed as the kid from an estate near Wembley, who transitioned from street player to a star on its pitch. A",
+            },
+            "children": Array [],
+            "name": "text",
+          },
+        ],
+        "name": "paragraph",
+      },
+    ],
+    "updatedTime": "2021-06-30T11:42:55Z",
+    "url": "/article/the-tactical-masterstrokes-behind-englands-ruthless-win-s2s5j6k8l",
+  },
+]
+`;

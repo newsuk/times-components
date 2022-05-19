@@ -74,9 +74,9 @@ function ArticleSummary(props) {
       {labelProps ? <Label {...labelProps} /> : null}
       {isOpinionByline && byline}
       {headline}
-      {strapline}
+      {strapline && strapline}
       {tabletFlags}
-      {content}
+      {content && content}
       {mobileFlags}
       {saveStar}
       {datePublicationProps ? (

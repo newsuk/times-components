@@ -13,7 +13,7 @@ class RelatedArticles extends Component {
   }
 
   render() {
-    const { isVisible, onPress, slice, heading } = this.props;
+    const { isVisible, onPress, slice, heading, imageAndHeadlineOnly } = this.props;
     if (!slice) return null;
     const { items, sliceName } = slice;
     if (
@@ -53,6 +53,7 @@ class RelatedArticles extends Component {
           showImage={showImage}
           showSummary={showSummary}
           summaryConfig={summaryConfig}
+          imageAndHeadlineOnly={imageAndHeadlineOnly}
         />
       );
     };
