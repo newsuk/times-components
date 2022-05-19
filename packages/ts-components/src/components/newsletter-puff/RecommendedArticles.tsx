@@ -3,8 +3,8 @@ import React from 'react';
 import { RecommendedArticles as GetRecommendedArticles } from '@times-components/provider';
 
 export type recommendationsProps = {
-  userId: "1234";
-  articleId: "94a01926-719a-11ec-aacf-0736e08b15cd";
+  userId: string;
+  articleId: string;
 };
 
 export const RecommendedArticles = ({
@@ -20,56 +20,38 @@ export const RecommendedArticles = ({
       debounceTimeMs={0}
     >
       {({ isLoading, error, recommendations }: any) => {
-        // tslint:disable-next-line:no-console
-        console.log(isLoading, error, recommendations);
-
         if (error) {
           return null;
         }
 
         if (isLoading) {
           return (
+            // This is temporary...
             <div>
               <p>Loading...</p>
             </div>
           );
         }
 
-        // return <div>{JSON.stringify(recommendations)}</div>;
-
         return (
           <div className='containers'>
-            {recommendations.articles.map(postData => {
-              console.log('PostData: ',postData);
+            {recommendations.articles.map(recArticle => {
               return (
-                <div id={postData.id}>
-                  <img src={postData.media.Image} />
-                  <p className="headline">
-                    {postData.headline}
-                  </p>
-                  <p className="summary">
-                    {postData.summary.ArticleParagraph}
-                  </p>
-                </div>
+                <a href={recArticle.url}>
+                  <div id={recArticle.id}>
+                    <img src={recArticle.media.Image} />
+                    <p className="headline">
+                      {recArticle.headline}
+                    </p>
+                    <p className="summary">
+                      {recArticle.summary.ArticleParagraph}
+                    </p>
+                  </div>
+                </a>
               );
             })}
           </div>
         );
-
-        // return (
-        //   <div className="recArticle">
-        //     {recommendations.articles.map(recs => <div>{recs.headline}</div>)}
-        //   </div>
-        // );
-
-        // Object.entries(recommendations).map(([key, value]) => {
-        //   return (
-        //     <div key={key}>
-        //       <div>Key: {key}</div>
-        //       <div>Value: {value}</div>
-        //     </div>
-        //   );
-        // });
       }}
     </GetRecommendedArticles>
   );
