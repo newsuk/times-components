@@ -129,7 +129,7 @@ const recarticles = {
       type: 'story'
     }
   ],
-  name: 'Typescript Component/Recommended Articles/Recommended Articles'
+  name: 'Typescript Component/Recommended Articles'
 };
 
 showcaseConverter(module, recarticles);
