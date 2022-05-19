@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { TcView, TcText } from "@times-components/utils";
 import PropTypes from "prop-types";
 import Button from "@times-components/button";
 import Context from "@times-components/context";
@@ -7,13 +7,13 @@ import { styleguide } from "@times-components/ts-styleguide";
 import styles from "./styles";
 
 const ArticleExtrasError = ({ refetch }) => (
-  <View style={styles.extrasErrorContainer}>
-    <Text style={styles.extrasErrorHeadline}>
+  <TcView style={styles.extrasErrorContainer}>
+    <TcText style={styles.extrasErrorHeadline}>
       It looks like you&apos;re offline
-    </Text>
-    <Text style={styles.extrasErrorBody}>
+    </TcText>
+    <TcText style={styles.extrasErrorBody}>
       Some features, such as related articles and comments, may not be available
-    </Text>
+    </TcText>
     <Context.Consumer>
       {({ theme: { scale } }) => {
         const themedStyleguide = styleguide({ scale });
@@ -32,7 +32,7 @@ const ArticleExtrasError = ({ refetch }) => (
         );
       }}
     </Context.Consumer>
-  </View>
+  </TcView>
 );
 
 ArticleExtrasError.propTypes = {
