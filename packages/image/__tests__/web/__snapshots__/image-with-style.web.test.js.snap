@@ -51,10 +51,14 @@ exports[`1. default image 1`] = `
 .IS3 {
   padding-bottom: 66.66666666666667%;
 }
+
+.IS4 {
+  overflow: hidden;
+}
 </style>
 
 <div
-  className="c0"
+  className="c0 IS4"
 >
   <div
     className="IS3"
@@ -128,10 +132,14 @@ exports[`2. default modal 1`] = `
 .IS3 {
   padding-bottom: 66.66666666666667%;
 }
+
+.IS4 {
+  overflow: hidden;
+}
 </style>
 
 <div
-  className="c0"
+  className="c0 IS4"
 >
   <div
     className="IS3"

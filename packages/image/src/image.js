@@ -124,7 +124,11 @@ class TimesImage extends Component {
     }
 
     return (
-      <TcView onLayout={onLayout} style={{...styles, overflow: 'hidden'}} testID="Image">
+      <TcView
+        onLayout={onLayout}
+        style={{ ...styles, overflow: "hidden" }}
+        testID="Image"
+      >
         <div style={{ paddingBottom: `${100 / aspectRatio}%` }}>
           {this.highResImage({ highResSize, lowResSize, url })}
           {this.lowResImage({ lowResQuality, lowResSize, url })}
