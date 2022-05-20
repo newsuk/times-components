@@ -2,18 +2,18 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 
-import { TodaysArticleRail} from './TodaysArticleRail';
+import { TodaysSectionRail} from './TodaysSectionRail';
 
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 import { select } from '@storybook/addon-knobs';
-import { latestFromSection } from './fixtures/fixtures';
+import { todaysSection } from './fixtures/fixtures';
 
 storiesOf('Typescript Component/Article Extras', module).add(
   'Todays Article Rail',
   () => {
     const sectionIndex = select(
       'Section',
-      latestFromSection.reduce(
+      todaysSection.reduce(
         (prev, next, index) => ({ ...prev, [next.section]: index }),
         {}
       ),
@@ -21,10 +21,10 @@ storiesOf('Typescript Component/Article Extras', module).add(
     );
 
     return (
-      <TodaysArticleRail
+      < TodaysSectionRail
         key={sectionIndex}
         analyticsStream={analyticsStream}
-        latestFromSection={latestFromSection[sectionIndex]}
+        todaysSection={todaysSection[sectionIndex]}
       />
     );
   }

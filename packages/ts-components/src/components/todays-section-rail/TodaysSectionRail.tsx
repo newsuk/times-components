@@ -3,19 +3,20 @@ import RelatedArticles from '@times-components/related-articles';
 
 import { RelatedArticleSliceType } from '../../types/related-article-slice';
 import {
-  formatLatestFromSection,
-  LatestSection
+  formatTodaysSection,
+  TodaysSection,
+  getSectionTitle,
 } from './formatters';
  
 type Props = {
-  latestFromSection: LatestSection;
+  todaysSection: TodaysSection;
   analyticsStream: (evt: any) => void;
 };
-export const TodaysArticleRail: FC<Props> = ({
+export const TodaysSectionRail: FC<Props> = ({
   analyticsStream,
-  latestFromSection
+  todaysSection
 }) => {
-  const relatedArticles = formatLatestFromSection(latestFromSection);
+  const relatedArticles = formatTodaysSection(todaysSection);
 
   const slice: RelatedArticleSliceType = {
     sliceName: 'StandardSlice',
@@ -23,13 +24,16 @@ export const TodaysArticleRail: FC<Props> = ({
       ? relatedArticles.map(article => ({ leadAsset: null, article }))
       : []
   };
-  const url = window.location.href
 
-  const isFeatureFlag = url.includes('TodaysArticleRail')
+  const isFeatureFlag = window.sessionStorage.getItem('showTodaysArticleRail')
+
+  if(!isFeatureFlag) {
+    return null
+  }
 
   return (
     <RelatedArticles
-      heading="Today's News"
+      heading={`Today's ${getSectionTitle(todaysSection)}`}
       analyticsStream={analyticsStream}
       isVisible
       slice={slice}

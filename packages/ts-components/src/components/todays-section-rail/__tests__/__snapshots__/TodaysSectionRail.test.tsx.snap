@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TodaysSectionRail> no data  1`] = `
+<DocumentFragment>
+  <div
+    class="css-view-1dbjc4n"
+  >
+    <div
+      class="css-view-1dbjc4n"
+      style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
+    >
+      <h3
+        aria-level="3"
+        class="css-reset-4rbku5 css-text-901oao"
+        dir="auto"
+        role="heading"
+        style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
+      >
+        Today's Sport
+      </h3>
+    </div>
+  </div>
+</DocumentFragment>
+`;
