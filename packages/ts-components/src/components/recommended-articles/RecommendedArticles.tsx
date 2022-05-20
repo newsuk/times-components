@@ -32,7 +32,8 @@ export const RecommendedArticles = ({
       ssr={false}
       debounceTimeMs={0}
     >
-      {({ isLoading, error, recommendations }: any) => {
+      {({ isLoading, error }: any) => {
+//      {({ isLoading, error, recommendations }: any) => {
         if (error) {
           return null;
         }
@@ -48,7 +49,7 @@ export const RecommendedArticles = ({
         // const slice: RelatedArticleSliceType = {
         //   sliceName: 'StandardSlice',
         //   items: recommendations
-        //     ? recommendations.articles.map((recArticle: any) => ({ articles: recArticle }))
+        //     ? recommendations.articles.map((article: any) => ({ ...article }))
         //     : []
         // };
 
@@ -61,28 +62,7 @@ export const RecommendedArticles = ({
             // slice={slice}
           />
         );
-      }};
+      }}
     </GetRecommendedArticles>
   );
 };
-
-        // return (
-        //   <div className='container'>
-        //     {recommendations.articles.map((recArticle: any) => {
-        //       return (
-        //         <a href={recArticle.url}>
-        //           <div id={recArticle.id}>
-        //             <img src={recArticle.media.Image} />
-        //             <p className="headline">
-        //               {recArticle.headline}
-        //             </p>
-        //             <p className="summary">
-        //               {recArticle.summary.ArticleParagraph}
-        //             </p>
-        //           </div>
-        //         </a>
-        //       );
-        //     })}
-        //   </div>
-        // );
-      // }}
