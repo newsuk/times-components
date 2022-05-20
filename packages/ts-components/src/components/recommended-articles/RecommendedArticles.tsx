@@ -1,8 +1,9 @@
-import React, { FC }  from 'react';
+import React from 'react';
 
 import { RecommendedArticles as GetRecommendedArticles } from '@times-components/provider';
 import RelatedArticles from '@times-components/related-articles';
-import { RelatedArticleSliceType } from '../../types/related-article-slice';
+import { relatedArticleSlice } from '../related-article-slice/RelatedArticleSlice.stories';
+// import { RelatedArticleSliceType } from '../../types/related-article-slice';
 import {
   getSectionTitle,
   LatestSection
@@ -44,19 +45,20 @@ export const RecommendedArticles = ({
           );
         }
 
-        const slice: RelatedArticleSliceType = {
-          sliceName: 'StandardSlice',
-          items: recommendations
-            ? recommendations.articles.map((recArticle: any) => ({ leadAsset: null, recArticle }))
-            : []
-        };
+        // const slice: RelatedArticleSliceType = {
+        //   sliceName: 'StandardSlice',
+        //   items: recommendations
+        //     ? recommendations.articles.map((recArticle: any) => ({ articles: recArticle }))
+        //     : []
+        // };
 
         return (
           <RelatedArticles
             heading={`Today's ${getSectionTitle(latestFromSection)}`}
             analyticsStream={analyticsStream}
             isVisible
-            slice={slice}
+            slice={relatedArticleSlice}
+            // slice={slice}
           />
         );
       }};
