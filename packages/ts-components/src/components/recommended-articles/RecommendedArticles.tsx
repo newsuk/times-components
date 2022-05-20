@@ -2,8 +2,7 @@ import React from 'react';
 
 import { RecommendedArticles as GetRecommendedArticles } from '@times-components/provider';
 import RelatedArticles from '@times-components/related-articles';
-import { relatedArticleSlice } from '../related-article-slice/RelatedArticleSlice.stories';
-// import { RelatedArticleSliceType } from '../../types/related-article-slice';
+import { RelatedArticleSliceType } from '../../types/related-article-slice';
 import {
   getSectionTitle,
   LatestSection
@@ -32,8 +31,7 @@ export const RecommendedArticles = ({
       ssr={false}
       debounceTimeMs={0}
     >
-      {({ isLoading, error }: any) => {
-//      {({ isLoading, error, recommendations }: any) => {
+      {({ isLoading, error, recommendations }: any) => {
         if (error) {
           return null;
         }
@@ -46,20 +44,19 @@ export const RecommendedArticles = ({
           );
         }
 
-        // const slice: RelatedArticleSliceType = {
-        //   sliceName: 'StandardSlice',
-        //   items: recommendations
-        //     ? recommendations.articles.map((article: any) => ({ ...article }))
-        //     : []
-        // };
+        const slice: RelatedArticleSliceType = {
+          sliceName: 'StandardSlice',
+          items: recommendations
+            ? recommendations.articles.map((recArticle: any) => ({ article: recArticle }))
+            : []
+        };
 
         return (
           <RelatedArticles
             heading={`Today's ${getSectionTitle(latestFromSection)}`}
             analyticsStream={analyticsStream}
             isVisible
-            slice={relatedArticleSlice}
-            // slice={slice}
+            slice={slice}
           />
         );
       }}
