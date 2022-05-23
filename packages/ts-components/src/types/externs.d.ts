@@ -210,7 +210,7 @@ declare module '@times-components/related-articles' {
     analyticsStream: AnalyticsStreamType;
     isVisible: boolean;
     slice: any;
-    imageAndHeadlineOnly?: boolean
+    imageAndHeadlineOnly?: boolean;
   };
   const RelatedArticles: FC<RelatedArticles>;
   export default RelatedArticles;

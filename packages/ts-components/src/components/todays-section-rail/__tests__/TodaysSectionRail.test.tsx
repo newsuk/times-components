@@ -2,7 +2,7 @@ import { todaysSection } from '../fixtures/fixtures';
 import { render } from '@testing-library/react';
 import React from 'react';
 import { TodaysSectionRail } from '../TodaysSectionRail';
-
+// ADD SESSION STORAGE TESTS
 describe('<TodaysSectionRail>', () => {
   beforeEach(() => {
     global.Intl = {
@@ -13,27 +13,43 @@ describe('<TodaysSectionRail>', () => {
     };
   });
 
-  it('renders ', () => {
-    const { getByText, getAllByTestId} = render(
+  afterEach(() => {
+    window.sessionStorage.clear();
+  });
+
+  it('should render', () => {
+    window.sessionStorage.setItem('showTodaysArticleRail', 'true');
+
+    const { getByText, getAllByTestId } = render(
       <TodaysSectionRail
         analyticsStream={jest.fn()}
         todaysSection={todaysSection[4]}
       />
     );
 
-    getByText("Today's Sport")
-    expect(getAllByTestId('related-article-item')).toHaveLength(3)
+    getByText("Today's Sport");
+    expect(getAllByTestId('related-article-item')).toHaveLength(3);
   });
 
-  it('no data ', () => {
-    const { asFragment, getByText  } = render(
+  it('should not render when there is not a feature flag', () => {
+    const { queryByText, queryByTestId } = render(
+      <TodaysSectionRail
+        analyticsStream={jest.fn()}
+        todaysSection={todaysSection[4]}
+      />
+    );
+    expect(queryByText("Today's Sport")).not.toBe;
+    expect(queryByTestId('related-article-item')).toEqual(null);
+  });
+
+  it('should not render without data ', () => {
+    const { queryByText, queryByTestId } = render(
       <TodaysSectionRail
         analyticsStream={jest.fn()}
         todaysSection={{ section: 'Sport', items: [] }}
       />
     );
-
-    getByText("Today's Sport")
-    expect(asFragment()).toMatchSnapshot();
+    expect(queryByText("Today's Sport")).not.toBe;
+    expect(queryByTestId('related-article-item')).toEqual(null);
   });
 });

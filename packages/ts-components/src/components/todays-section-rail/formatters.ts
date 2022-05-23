@@ -10,12 +10,12 @@ type TodaysSectionItem = {
   }>;
 };
 
-export type TodaysSection  = {
+export type TodaysSection = {
   section: string;
-  items: TodaysSectionItem [];
+  items: TodaysSectionItem[];
 };
 
-export const getSectionTitle = (section: TodaysSection ) => {
+export const getSectionTitle = (section: TodaysSection) => {
   return section && section.section;
 };
 
@@ -24,7 +24,7 @@ export const formatTodaysSection = (
 ): RelatedArticleType[] | undefined => {
   return (
     section &&
-    section.items.map<RelatedArticleType>((article: TodaysSectionItem ) => ({
+    section.items.map<RelatedArticleType>((article: TodaysSectionItem) => ({
       id: article.id,
       slug: article.slug,
       label: null,
@@ -44,8 +44,7 @@ export const formatTodaysSection = (
             article.leadAsset.find((crop: any) => crop.ratio === '3:2')!.source
         }
       },
-      bylines: [
-      ]
+      bylines: []
     }))
   );
 };

@@ -5,9 +5,9 @@ import { RelatedArticleSliceType } from '../../types/related-article-slice';
 import {
   formatTodaysSection,
   TodaysSection,
-  getSectionTitle,
+  getSectionTitle
 } from './formatters';
- 
+
 type Props = {
   todaysSection: TodaysSection;
   analyticsStream: (evt: any) => void;
@@ -25,10 +25,10 @@ export const TodaysSectionRail: FC<Props> = ({
       : []
   };
 
-  const isFeatureFlag = window.sessionStorage.getItem('showTodaysArticleRail')
+  const isFeatureFlag = window.sessionStorage.getItem('showTodaysArticleRail');
 
-  if(!isFeatureFlag) {
-    return null
+  if (!isFeatureFlag) {
+    return null;
   }
 
   return (

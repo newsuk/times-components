@@ -2,7 +2,7 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 
-import { TodaysSectionRail} from './TodaysSectionRail';
+import { TodaysSectionRail } from './TodaysSectionRail';
 
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 import { select } from '@storybook/addon-knobs';
@@ -21,7 +21,7 @@ storiesOf('Typescript Component/Article Extras', module).add(
     );
 
     return (
-      < TodaysSectionRail
+      <TodaysSectionRail
         key={sectionIndex}
         analyticsStream={analyticsStream}
         todaysSection={todaysSection[sectionIndex]}
