@@ -3,6 +3,11 @@ import { render } from '@testing-library/react';
 import React from 'react';
 import { TodaysSectionRail } from '../TodaysSectionRail';
 // ADD SESSION STORAGE TESTS
+
+const recomArgs={
+  userId: '1234',
+  articleId: '94a01926-719a-11ec-aacf-0736e08b15cd'
+}
 describe('<TodaysSectionRail>', () => {
   beforeEach(() => {
     global.Intl = {
@@ -24,6 +29,7 @@ describe('<TodaysSectionRail>', () => {
       <TodaysSectionRail
         analyticsStream={jest.fn()}
         todaysSection={todaysSection[4]}
+        recomArgs={recomArgs}
       />
     );
 
@@ -36,6 +42,7 @@ describe('<TodaysSectionRail>', () => {
       <TodaysSectionRail
         analyticsStream={jest.fn()}
         todaysSection={todaysSection[4]}
+        recomArgs={recomArgs}
       />
     );
     expect(queryByText("Today's Sport")).not.toBe;
@@ -47,6 +54,7 @@ describe('<TodaysSectionRail>', () => {
       <TodaysSectionRail
         analyticsStream={jest.fn()}
         todaysSection={{ section: 'Sport', items: [] }}
+        recomArgs={recomArgs}
       />
     );
     expect(queryByText("Today's Sport")).not.toBe;

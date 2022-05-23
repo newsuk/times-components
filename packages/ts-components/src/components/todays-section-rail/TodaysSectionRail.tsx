@@ -1,22 +1,57 @@
 import React, { FC } from 'react';
+import { RecommendedArticles as GetRecommendedArticles } from '@times-components/provider';
 import RelatedArticles from '@times-components/related-articles';
-
 import { RelatedArticleSliceType } from '../../types/related-article-slice';
+import { Placeholder } from '@times-components/image';
 import {
   formatTodaysSection,
   TodaysSection,
   getSectionTitle
 } from './formatters';
 
+export type recommendationsProps = {
+  userId: string;
+  articleId: string;
+};
+
 type Props = {
   todaysSection: TodaysSection;
   analyticsStream: (evt: any) => void;
+  recomArgs:  {
+    userId: string;
+    articleId: string;
+  };
 };
+
+
+
 export const TodaysSectionRail: FC<Props> = ({
   analyticsStream,
-  todaysSection
+  todaysSection,
+  recomArgs
 }) => {
-  const relatedArticles = formatTodaysSection(todaysSection);
+  return (
+    <GetRecommendedArticles
+      publisher={'TIMES'}
+      recomArgs={recomArgs}
+      ssr={false}
+      debounceTimeMs={0}
+    >
+      {({ isLoading, error, recommendations }: any) => {
+        if (error) {
+          return null;
+        }
+
+        if (isLoading) {
+          return (
+            <div className="placeholder">
+              <Placeholder />
+            </div>
+          );
+        }
+
+
+  const relatedArticles = formatTodaysSection(recommendations.articles);
 
   const slice: RelatedArticleSliceType = {
     sliceName: 'StandardSlice',
@@ -39,5 +74,8 @@ export const TodaysSectionRail: FC<Props> = ({
       slice={slice}
       imageAndHeadlineOnly
     />
+    );
+  }}
+</GetRecommendedArticles>
   );
 };

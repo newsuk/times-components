@@ -3,11 +3,13 @@ type TodaysSectionItem = {
   id: string;
   headline: string;
   slug: string;
-  shortIdentifier: string;
+  url?: string;
+  shortIdentifier?: string;
   leadAsset: Array<{
     ratio: string;
     source: string;
   }>;
+  media?: {}
 };
 
 export type TodaysSection = {
@@ -22,6 +24,7 @@ export const getSectionTitle = (section: TodaysSection) => {
 export const formatTodaysSection = (
   section: TodaysSection
 ): RelatedArticleType[] | undefined => {
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXX',section)
   return (
     section &&
     section.items.map<RelatedArticleType>((article: TodaysSectionItem) => ({
@@ -31,7 +34,7 @@ export const formatTodaysSection = (
       shortIdentifier: article.shortIdentifier,
       headline: article.headline,
       section: section.section,
-      url: `/article/${article.slug}-${article.shortIdentifier}`,
+      url: article.url ? article.url :`/article/${article.slug}-${article.shortIdentifier}`,
       leadAsset: {
         crop169: {
           url:
