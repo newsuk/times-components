@@ -1,33 +1,27 @@
 import React from 'react';
 
-import { RecommendedArticles as GetRecommendedArticles } from '@times-components/provider';
 import RelatedArticles from '@times-components/related-articles';
+import { GetRecommendedArticles } from '@times-components/provider';
+
 import { RelatedArticleSliceType } from '../../types/related-article-slice';
-import {
-  getSectionTitle,
-  LatestSection
-} from '../latest-from-section/formatters';
 
 import { Placeholder } from '@times-components/image';
 
-export type recommendationsProps = {
-  userId: string;
+type RecommendedArticlesProps = {
   articleId: string;
+  section: string;
+  analyticsStream?: (evt: any) => void;
 };
 
 export const RecommendedArticles = ({
-  analyticsStream,
-  latestFromSection,
-  recomArgs
-}: {
-  latestFromSection: LatestSection;
-  analyticsStream: (evt: any) => void;
-  recomArgs: recommendationsProps;
-}) => {
+  articleId,
+  section,
+  analyticsStream
+}: RecommendedArticlesProps) => {
   return (
     <GetRecommendedArticles
       publisher={'TIMES'}
-      recomArgs={recomArgs}
+      recomArgs={{ userId: '1234', articleId }}
       ssr={false}
       debounceTimeMs={0}
     >
@@ -36,7 +30,7 @@ export const RecommendedArticles = ({
           return null;
         }
 
-        if (isLoading) {
+        if (isLoading || !recommendations) {
           return (
             <div className="placeholder">
               <Placeholder />
@@ -47,16 +41,16 @@ export const RecommendedArticles = ({
         const slice: RelatedArticleSliceType = {
           sliceName: 'StandardSlice',
           items: recommendations
-            ? recommendations.articles.map((recArticle: any) => ({ article: recArticle }))
+            ? recommendations.articles.map((article: any) => ({ article }))
             : []
         };
 
         return (
           <RelatedArticles
-            heading={`Today's ${getSectionTitle(latestFromSection)}`}
-            analyticsStream={analyticsStream}
-            isVisible
+            heading={`Today's ${section}`}
             slice={slice}
+            isVisible
+            analyticsStream={analyticsStream}
           />
         );
       }}

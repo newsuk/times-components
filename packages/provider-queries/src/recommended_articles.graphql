@@ -1,4 +1,4 @@
-query RecommendedArticles(
+query GetRecommendedArticles(
   $publisher: Publisher!,
   $recomArgs: RecommendationsParameters!
 ) {
