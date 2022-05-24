@@ -4,10 +4,10 @@ import React from 'react';
 import { TodaysSectionRail } from '../TodaysSectionRail';
 // ADD SESSION STORAGE TESTS
 
-const recomArgs={
+const recomArgs = {
   userId: '1234',
   articleId: '94a01926-719a-11ec-aacf-0736e08b15cd'
-}
+};
 describe('<TodaysSectionRail>', () => {
   beforeEach(() => {
     global.Intl = {

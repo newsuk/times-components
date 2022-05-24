@@ -3,51 +3,43 @@ type TodaysSectionItem = {
   id: string;
   headline: string;
   slug: string;
-  url?: string;
-  shortIdentifier?: string;
-  leadAsset: Array<{
-    ratio: string;
-    source: string;
-  }>;
-  media?: {}
+  url: string;
+  media?: {
+    crop169: { url: string; alt: string };
+    crop32: { url: string; alt: string };
+  };
+  bylines?: [];
 };
 
 export type TodaysSection = {
-  section: string;
-  items: TodaysSectionItem[];
+  articles: TodaysSectionItem[];
 };
 
-export const getSectionTitle = (section: TodaysSection) => {
-  return section && section.section;
-};
 
 export const formatTodaysSection = (
   section: TodaysSection
 ): RelatedArticleType[] | undefined => {
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXX',section)
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXX', section);
   return (
     section &&
-    section.items.map<RelatedArticleType>((article: TodaysSectionItem) => ({
+    section.articles.map<RelatedArticleType>((article: TodaysSectionItem) => ({
       id: article.id,
       slug: article.slug,
       label: null,
-      shortIdentifier: article.shortIdentifier,
       headline: article.headline,
-      section: section.section,
-      url: article.url ? article.url :`/article/${article.slug}-${article.shortIdentifier}`,
-      leadAsset: {
+      section: '',
+      url: article.url && article.url,
+      bylines: [],
+      leadAsset: article.media && {
         crop169: {
-          url:
-            article.leadAsset &&
-            article.leadAsset.find((crop: any) => crop.ratio === '16:9')!.source
+          alt: article.media && article.media.crop169.alt,
+          url: article.media && article.media.crop169.url
         },
         crop32: {
-          url:
-            article.leadAsset &&
-            article.leadAsset.find((crop: any) => crop.ratio === '3:2')!.source
+          alt: article.media && article.media.crop32.alt,
+          url: article.media && article.media.crop32.url
         }
-      },
-      bylines: []
+      }
     }))
   );
 };

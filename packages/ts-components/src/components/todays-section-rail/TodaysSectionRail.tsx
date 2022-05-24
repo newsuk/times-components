@@ -8,7 +8,7 @@ import {
   TodaysSection,
   getSectionTitle
 } from './formatters';
-
+// getCPN getArticleID
 export type recommendationsProps = {
   userId: string;
   articleId: string;
@@ -17,17 +17,16 @@ export type recommendationsProps = {
 type Props = {
   todaysSection: TodaysSection;
   analyticsStream: (evt: any) => void;
-  recomArgs:  {
+  recomArgs: {
     userId: string;
     articleId: string;
   };
 };
-
-
-
+//add tracking
+//add to article extras
 export const TodaysSectionRail: FC<Props> = ({
   analyticsStream,
-  todaysSection,
+  section,
   recomArgs
 }) => {
   return (
@@ -38,6 +37,7 @@ export const TodaysSectionRail: FC<Props> = ({
       debounceTimeMs={0}
     >
       {({ isLoading, error, recommendations }: any) => {
+        console.log('XXXXXXXXX', recommendations, isLoading, error);
         if (error) {
           return null;
         }
@@ -50,32 +50,33 @@ export const TodaysSectionRail: FC<Props> = ({
           );
         }
 
+        const relatedArticles = formatTodaysSection(recommendations);
 
-  const relatedArticles = formatTodaysSection(recommendations.articles);
+        const slice: RelatedArticleSliceType = {
+          sliceName: 'StandardSlice',
+          items: relatedArticles
+            ? relatedArticles.map(article => ({ leadAsset: null, article }))
+            : []
+        };
 
-  const slice: RelatedArticleSliceType = {
-    sliceName: 'StandardSlice',
-    items: relatedArticles
-      ? relatedArticles.map(article => ({ leadAsset: null, article }))
-      : []
-  };
+        const isFeatureFlag = window.sessionStorage.getItem(
+          'showTodaysArticleRail'
+        );
 
-  const isFeatureFlag = window.sessionStorage.getItem('showTodaysArticleRail');
+        if (!isFeatureFlag) {
+          return null;
+        }
 
-  if (!isFeatureFlag) {
-    return null;
-  }
-
-  return (
-    <RelatedArticles
-      heading={`Today's ${getSectionTitle(todaysSection)}`}
-      analyticsStream={analyticsStream}
-      isVisible
-      slice={slice}
-      imageAndHeadlineOnly
-    />
-    );
-  }}
-</GetRecommendedArticles>
+        return (
+          <RelatedArticles
+            heading={`Today's ${section}`}
+            analyticsStream={analyticsStream}
+            isVisible
+            slice={slice}
+            imageAndHeadlineOnly
+          />
+        );
+      }}
+    </GetRecommendedArticles>
   );
 };
