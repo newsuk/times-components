@@ -180,7 +180,7 @@ declare module '@times-components/provider' {
     ssr: boolean;
     debounceTimeMs: number;
   }>;
-  export const RecommendedArticles: React.FC<{
+  export const GetRecommendedArticles: React.FC<{
     publisher: string;
     recomArgs: any;
     ssr: boolean;

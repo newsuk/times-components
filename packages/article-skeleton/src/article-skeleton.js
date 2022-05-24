@@ -220,6 +220,7 @@ const ArticleSkeleton = ({
                         articleId={articleId}
                         articleHeadline={headline}
                         articleUrl={url}
+                        section={section}
                         publishedTime={publishedTime}
                         savingEnabled={savingEnabled}
                         sharingEnabled={sharingEnabled}
