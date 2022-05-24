@@ -155,6 +155,7 @@ ArticleExtras.propTypes = {
   commentingConfig: PropTypes.string,
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
+  section: PropTypes.string,
   sharingEnabled: PropTypes.bool.isRequired,
   additionalRelatedArticlesFlag: PropTypes.bool.isRequired,
   latestFromSectionFlag: PropTypes.bool.isRequired,
@@ -165,7 +166,8 @@ ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
   commentingConfig: null,
   topics: null,
-  latestFromSection: null
+  latestFromSection: null,
+  section: null
 };
 
 export default ArticleExtras;
