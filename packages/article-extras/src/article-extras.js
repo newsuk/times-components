@@ -163,11 +163,11 @@ ArticleExtras.propTypes = {
 };
 
 ArticleExtras.defaultProps = {
-  relatedArticleSlice: null,
   commentingConfig: null,
-  topics: null,
   latestFromSection: null,
-  section: null
+  relatedArticleSlice: null,
+  section: null,
+  topics: null,
 };
 
 export default ArticleExtras;
