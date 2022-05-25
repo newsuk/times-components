@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.48.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.47.13...@times-components/article-magazine-comment@3.48.0) (2022-05-25)
+
+
+### Features
+
+* **TDP-1942:** Integrate Times Components to NewsKit API ([#2946](https://github.com/newsuk/times-components/issues/2946)) ([53ab6f0](https://github.com/newsuk/times-components/commit/53ab6f00849da0dfd4256dce7d5feae5154cafd9)), closes [#2939](https://github.com/newsuk/times-components/issues/2939) [#2941](https://github.com/newsuk/times-components/issues/2941) [#2943](https://github.com/newsuk/times-components/issues/2943) [#2944](https://github.com/newsuk/times-components/issues/2944)
+
+
+
+
+
 ## [3.47.13](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.47.12...@times-components/article-magazine-comment@3.47.13) (2022-05-19)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

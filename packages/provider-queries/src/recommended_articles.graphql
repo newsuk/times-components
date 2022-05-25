@@ -1,0 +1,18 @@
+query GetRecommendedArticles(
+  $publisher: Publisher!
+  $recomArgs: RecommendationsParameters!
+) {
+  recommendations(publisher: $publisher, recomArgs: $recomArgs) {
+    __typename
+    articles {
+      __typename
+      media {
+        __typename
+      }
+      id
+      headline
+      url
+      slug
+    }
+  }
+}

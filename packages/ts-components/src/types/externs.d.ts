@@ -180,12 +180,19 @@ declare module '@times-components/provider' {
     ssr: boolean;
     debounceTimeMs: number;
   }>;
+  export const GetRecommendedArticles: React.FC<{
+    publisher: string;
+    recomArgs: any;
+    ssr: boolean;
+    debounceTimeMs: number;
+  }>;
 }
 
 declare module '@times-components/provider-queries' {
   import { DocumentNode } from 'graphql';
   export const getNewsletter: DocumentNode;
   export const subscribeNewsletter: DocumentNode;
+  export const recommendations: DocumentNode;
 }
 
 declare module '@times-components/provider-test-tools' {
