@@ -5,8 +5,7 @@ import { RelatedArticleSliceType } from '../../types/related-article-slice';
 import { Placeholder } from '@times-components/image';
 import {
   formatTodaysSection,
-  TodaysSection,
-  getSectionTitle
+ // TodaysSection,
 } from './formatters';
 // getCPN getArticleID
 export type recommendationsProps = {
@@ -15,7 +14,6 @@ export type recommendationsProps = {
 };
 
 type Props = {
-  todaysSection: TodaysSection;
   analyticsStream: (evt: any) => void;
   recomArgs: {
     userId: string;
@@ -26,9 +24,9 @@ type Props = {
 //add to article extras
 export const TodaysSectionRail: FC<Props> = ({
   analyticsStream,
-  section,
   recomArgs
 }) => {
+  const section = 'Sport'
   return (
     <GetRecommendedArticles
       publisher={'TIMES'}

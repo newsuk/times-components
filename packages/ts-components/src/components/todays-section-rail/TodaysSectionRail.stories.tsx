@@ -6,8 +6,7 @@ import { recommendations } from '@times-components/provider-queries';
 import { TodaysSectionRail } from './TodaysSectionRail';
 
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
-import { select } from '@storybook/addon-knobs';
-import { todaysSection } from './fixtures/fixtures';
+//import { todaysSection } from './fixtures/fixtures';
 
 const mocks = [
   {
@@ -113,21 +112,11 @@ const mocks = [
 storiesOf('Typescript Component/Article Extras', module).add(
   'Todays Article Rail',
   () => {
-    const sectionIndex = select(
-      'Section',
-      todaysSection.reduce(
-        (prev, next, index) => ({ ...prev, [next.section]: index }),
-        {}
-      ),
-      4
-    );
 
     return (
       <MockedProvider mocks={mocks}>
         <TodaysSectionRail
-          key={sectionIndex}
           analyticsStream={analyticsStream}
-          todaysSection={todaysSection[sectionIndex]}
           recomArgs={{
             userId: '1234',
             articleId: '94a01926-719a-11ec-aacf-0736e08b15cd'

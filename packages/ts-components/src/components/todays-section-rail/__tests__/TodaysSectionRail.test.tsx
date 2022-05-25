@@ -1,4 +1,4 @@
-import { todaysSection } from '../fixtures/fixtures';
+//import { todaysSection } from '../fixtures/fixtures';
 import { render } from '@testing-library/react';
 import React from 'react';
 import { TodaysSectionRail } from '../TodaysSectionRail';
@@ -28,7 +28,6 @@ describe('<TodaysSectionRail>', () => {
     const { getByText, getAllByTestId } = render(
       <TodaysSectionRail
         analyticsStream={jest.fn()}
-        todaysSection={todaysSection[4]}
         recomArgs={recomArgs}
       />
     );
@@ -41,7 +40,6 @@ describe('<TodaysSectionRail>', () => {
     const { queryByText, queryByTestId } = render(
       <TodaysSectionRail
         analyticsStream={jest.fn()}
-        todaysSection={todaysSection[4]}
         recomArgs={recomArgs}
       />
     );
@@ -53,7 +51,6 @@ describe('<TodaysSectionRail>', () => {
     const { queryByText, queryByTestId } = render(
       <TodaysSectionRail
         analyticsStream={jest.fn()}
-        todaysSection={{ section: 'Sport', items: [] }}
         recomArgs={recomArgs}
       />
     );
