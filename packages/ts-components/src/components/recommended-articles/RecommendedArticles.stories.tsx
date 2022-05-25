@@ -27,29 +27,36 @@ const mocks = [
           leadAsset: 'null',
           articles: [
             {
-              __typename: 'UniversalArticle',
+              url:
+                'https://www.thetimes.co.uk/article/older-people-need-a-champion-to-take-on-the-digital-world-pbwpmrgxw',
+              label: 'Esther Rantzen',
               headline:
-                'Whole world is against us, says top Russian strategist',
-              id: 'a9ffb7cc-d5d1-11ec-bb99-1bcd45646516',
-              media: {
-                __typename: 'Image'
+                'Older people need a champion to take on the digital world',
+              publishedDateTime: '2022-05-24T20:00:00.000Z',
+              bylines: [
+                {
+                  type: 'inline',
+                  value: 'Esther Rantzen'
+                }
+              ],
+              summary: {
+                children: [
+                  {
+                    text:
+                      'The digital revolution is causing millions of older people distress and anxiety. It’s not that we oldies resist change: many of us do our best to learn and to take on each new challenge, whether it’s'
+                  }
+                ]
               },
-              slug:
-                'were-no-match-for-ukrainian-grit-and-firepower-says-retired-russian-colonel',
-              url:
-                'https://www.staging-thetimes.co.uk/article/were-no-match-for-ukrainian-grit-and-firepower-says-retired-russian-colonel-lhnvsfj33'
-            },
-            {
-              __typename: 'UniversalArticle',
-              headline: 'Vardys leave court with swipe at Wayne Rooney',
-              id: 'f3d730a0-d5c2-11ec-8585-951ab3afb4d2',
               media: {
-                __typename: 'Image'
-              },
-              slug:
-                'wayne-rooney-to-give-evidence-in-wagatha-christie-trial-as-jamie-vardy-attends-court-for-first-time',
-              url:
-                'https://www.staging-thetimes.co.uk/article/wayne-rooney-to-give-evidence-in-wagatha-christie-trial-as-jamie-vardy-attends-court-for-first-time-wlzvxklc6'
+                crops: [
+                  {
+                    url:
+                      'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65d8eb4a-db94-11ec-bcbd-e35b52e0266c.jpg?crop=1500%2C844%2C0%2C78',
+                    alt: null,
+                    aspectRatio: '16:9'
+                  }
+                ]
+              }
             }
           ]
         }

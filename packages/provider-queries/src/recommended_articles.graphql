@@ -1,18 +1,49 @@
-query GetRecommendedArticles(
-  $publisher: Publisher!
-  $recomArgs: RecommendationsParameters!
-) {
+query GetRecommendedArticles($publisher: Publisher! $recomArgs: RecommendationsParameters!) {
   recommendations(publisher: $publisher, recomArgs: $recomArgs) {
-    __typename
     articles {
-      __typename
-      media {
-        __typename
-      }
-      id
-      headline
       url
-      slug
+      label
+      headline
+      publishedDateTime
+      bylines {
+        ... on AuthorByline {
+          type
+          name
+        }
+        ... on TextByline {
+          type
+          value
+        }
+      }
+      summary {
+        children {
+          ... on ArticleText {
+            text
+          }
+          ... on ArticleHyperlink {
+            text
+          }
+        }
+      }
+      media {
+        ... on Image {
+          crops(cropsArguments: [{ ratio: SIXTEEN_BY_NINE }]) {
+            url
+            alt
+            aspectRatio
+          }
+        }
+        ... on Video {
+          videoId
+          posterImage {
+            crops(cropsArguments: [{ ratio: SIXTEEN_BY_NINE }]) {
+              url
+              alt
+              aspectRatio
+            }
+          }
+        }
+      }
     }
   }
 }
