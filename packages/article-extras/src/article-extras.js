@@ -147,6 +147,7 @@ ArticleExtras.propTypes = {
   articleId: PropTypes.string.isRequired,
   publishedTime: PropTypes.string.isRequired,
   articleUrl: PropTypes.string.isRequired,
+  section: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
   commentsEnabled: PropTypes.bool.isRequired,
   registerNode: PropTypes.func.isRequired,
@@ -155,7 +156,6 @@ ArticleExtras.propTypes = {
   commentingConfig: PropTypes.string,
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
-  section: PropTypes.string,
   sharingEnabled: PropTypes.bool.isRequired,
   additionalRelatedArticlesFlag: PropTypes.bool.isRequired,
   latestFromSectionFlag: PropTypes.bool.isRequired,
@@ -163,11 +163,10 @@ ArticleExtras.propTypes = {
 };
 
 ArticleExtras.defaultProps = {
-  commentingConfig: null,
-  latestFromSection: null,
   relatedArticleSlice: null,
-  section: null,
-  topics: null
+  commentingConfig: null,
+  topics: null,
+  latestFromSection: null
 };
 
 export default ArticleExtras;

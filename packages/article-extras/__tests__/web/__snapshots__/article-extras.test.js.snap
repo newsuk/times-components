@@ -21,7 +21,6 @@ Array [
     />
     <RecommendedArticles
       articleId="dummy-article-id"
-      section={null}
     />
   </div>,
   <div
@@ -79,7 +78,6 @@ Array [
     />
     <RecommendedArticles
       articleId="dummy-article-id"
-      section={null}
     />
   </div>,
   <div
@@ -127,7 +125,6 @@ Array [
     />
     <RecommendedArticles
       articleId="dummy-article-id"
-      section={null}
     />
   </div>,
   <div
