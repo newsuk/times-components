@@ -167,7 +167,7 @@ ArticleExtras.defaultProps = {
   latestFromSection: null,
   relatedArticleSlice: null,
   section: null,
-  topics: null,
+  topics: null
 };
 
 export default ArticleExtras;

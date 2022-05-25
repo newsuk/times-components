@@ -11,6 +11,7 @@ jest.mock("@times-components/ts-components", () => ({
   __esModule: true,
   ...jest.requireActual("@times-components/ts-components"),
   RelatedArticleSlice: "RelatedArticleSlice",
+  RecommendedArticles: "RecommendedArticles",
   useAlgoliaSearch: () => ({
     getRelatedArticles: () => ({
       sliceName: "StandardSlice",
