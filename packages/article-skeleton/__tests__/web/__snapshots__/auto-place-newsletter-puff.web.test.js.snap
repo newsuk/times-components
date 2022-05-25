@@ -310,6 +310,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="News"
           sharingEnabled={true}
           topics={
             Array [
@@ -643,6 +644,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="News"
           sharingEnabled={true}
           topics={
             Array [

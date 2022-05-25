@@ -413,6 +413,7 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -826,6 +827,7 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
