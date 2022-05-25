@@ -153,7 +153,8 @@ export const GalleryCarousel: React.FC<GalleryCarouselProps> = ({
                   fireAnalyticsEvent({
                     attrs: {
                       event_navigation_name: `button : ${buttonLabel}`,
-                      component_name: headline
+                      component_name: headline,
+                      event_navigation_browsing_method: 'click'
                     }
                   });
                 }
