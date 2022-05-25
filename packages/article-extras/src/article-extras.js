@@ -147,6 +147,7 @@ ArticleExtras.propTypes = {
   articleId: PropTypes.string.isRequired,
   publishedTime: PropTypes.string.isRequired,
   articleUrl: PropTypes.string.isRequired,
+  section: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
   commentsEnabled: PropTypes.bool.isRequired,
   registerNode: PropTypes.func.isRequired,

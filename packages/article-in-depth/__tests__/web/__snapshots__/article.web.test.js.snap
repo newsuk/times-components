@@ -259,6 +259,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -544,6 +545,7 @@ exports[`4. an article with ads 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [

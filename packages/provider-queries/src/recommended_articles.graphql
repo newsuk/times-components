@@ -1,17 +1,18 @@
 query GetRecommendedArticles(
+<<<<<<< fix/tdp-1942_recommended-articles
   $publisher: Publisher!,
+=======
+  $publisher: Publisher!
+>>>>>>> feat/TDP-1942_Integrate-Times-Components-to-NewsKit-API
   $recomArgs: RecommendationsParameters!
 ) {
-  recommendations(
-    publisher: $publisher,
-    recomArgs: $recomArgs
-  ) {
+  recommendations(publisher: $publisher, recomArgs: $recomArgs) {
     __typename
     articles {
       __typename
       media {
-				__typename
-			}
+        __typename
+      }
       id
       headline
       url
