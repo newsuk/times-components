@@ -410,15 +410,6 @@ exports[`full article with style 1`] = `
 }
 
 .c6 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
   font-size: 30px;
   line-height: 33px;
   color: rgba(255,255,255,1);
@@ -958,11 +949,11 @@ exports[`full article with style 1`] = `
                 SOME LABEL
               </div>
             </div>
-            <div
+            <h1
               className="c6"
             >
               Some Headline
-            </div>
+            </h1>
             <div
               className="c7"
             >
@@ -1561,15 +1552,6 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c6 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
   font-family: Flama-Bold;
   font-size: 30px;
   line-height: 33px;
@@ -2110,11 +2092,11 @@ exports[`full article with style in the culture magazine 1`] = `
                 SOME LABEL
               </div>
             </div>
-            <div
+            <h1
               className="c6"
             >
               Some Headline
-            </div>
+            </h1>
             <div
               className="c7"
             >
@@ -2713,15 +2695,6 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c6 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
   font-family: CenturyGothic-Bold;
   font-size: 30px;
   line-height: 33px;
@@ -3263,11 +3236,11 @@ exports[`full article with style in the style magazine 1`] = `
                 SOME LABEL
               </div>
             </div>
-            <div
+            <h1
               className="c6"
             >
               Some Headline
-            </div>
+            </h1>
             <div
               className="c7"
             >
@@ -3866,15 +3839,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c6 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
   font-family: Tiempos-Headline-Bold;
   font-size: 30px;
   line-height: 33px;
@@ -4415,11 +4379,11 @@ exports[`full article with style in the sunday times magazine 1`] = `
                 SOME LABEL
               </div>
             </div>
-            <div
+            <h1
               className="c6"
             >
               Some Headline
-            </div>
+            </h1>
             <div
               className="c7"
             >

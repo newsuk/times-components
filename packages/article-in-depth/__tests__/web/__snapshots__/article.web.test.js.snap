@@ -86,11 +86,12 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       <div>
         <div>
           <div>
-            <div
+            <h1
               aria-level="1"
+              role="heading"
             >
               Some Short Headline
-            </div>
+            </h1>
             <div>
               <ArticleFlags
                 color="rgba(255, 255, 255, 1)"
@@ -366,11 +367,12 @@ exports[`4. an article with ads 1`] = `
       <div>
         <div>
           <div>
-            <div
+            <h1
               aria-level="1"
+              role="heading"
             >
               Some Headline
-            </div>
+            </h1>
             <div>
               <ArticleFlags
                 color="rgba(255, 255, 255, 1)"

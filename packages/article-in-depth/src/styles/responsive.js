@@ -42,7 +42,7 @@ export const HeaderContainer = styled(TcView)`
   }
 `;
 
-export const HeadlineContainer = styled(TcText)`
+export const HeadlineContainer = styled.h1`
   ${props => props.styles && props.styles}
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.articleHeadline}px;
