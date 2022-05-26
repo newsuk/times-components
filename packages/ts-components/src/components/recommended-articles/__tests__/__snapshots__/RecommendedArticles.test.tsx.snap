@@ -1,70 +1,933 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Recommended Articles degrades gracefully 1`] = `
+exports[`<RecommendedArticles> should render 1 article correctly 1`] = `
 <DocumentFragment>
   <div
-    class="placeholder"
+    class="sc-bdVaJa fpcbkF"
   >
     <div
-      class="tc-view__TcView-nuazoi-0 fPjBcr"
-      height="100%"
-      style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
-      width="100%"
+      class="css-view-1dbjc4n"
     >
-      <svg
-        height="auto"
-        style="max-width: 25%; max-height: 50%;"
-        version="1.1"
-        viewBox="145 50 108 120"
-        width="100%"
+      <div
+        class="css-view-1dbjc4n"
+        style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
       >
-        <g
-          fill="none"
-          fill-rule="evenodd"
-          stroke="none"
-          stroke-width="1"
+        <h3
+          aria-level="3"
+          class="css-reset-4rbku5 css-text-901oao"
+          dir="auto"
+          role="heading"
+          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
         >
-          <path
-            d="M211.26076,54 L211.231367,54 L147.67512,54 L145,85.7081465 L146.922096,86.4489102 C146.922096,86.4489102 164.867589,68.1355181 168.301115,65.0001546 C171.728017,61.8689133 174.237132,61.0885763 176.436179,60.3527593 C180.998206,59.169681 185.977937,59.2150255 185.977937,59.2150255 L186.109581,59.2150255 L186.109581,156.560932 L169.259886,164.473953 L169.259886,166 L228.735147,166 L228.735147,164.473953 L211.889177,156.560932 L211.889177,59.2150255 L212.01751,59.2150255 C212.01751,59.2150255 216.992272,59.169681 221.558854,60.3527593 C223.757072,61.0885763 226.266601,61.8689133 229.691848,65.0001546 C233.130341,68.1355181 251.071695,86.4489102 251.071695,86.4489102 L253,85.7081465 L250.317842,54 L211.270695,54 L211.242545,54"
-            fill="#FFFFFF"
-          />
-        </g>
-      </svg>
+          Today's News
+        </h3>
+      </div>
+      <div
+        class="config__Base-bs1997-0 config__Base-bs1997-1 config__Base-bs1997-2 gvTzoi config__Base-bs1997-0 config__Base-bs1997-1 config__Base-bs1997-2 gvTzoi css-view-1dbjc4n"
+      >
+        <div
+          class="responsive__SliceContainer-sc-1kirgpc-0 ioiqOj responsive__SliceContainer-sc-1kirgpc-0 ioiqOj css-view-1dbjc4n"
+        >
+          <div
+            class="responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-3 responsive__Base-sc-1lqbq6a-4 brvzow responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-3 responsive__Base-sc-1lqbq6a-4 brvzow css-view-1dbjc4n"
+          >
+            <div
+              class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
+            >
+              <div
+                data-testid="related-article-item"
+              >
+                <a
+                  class="link__RespLink-sc-1ocvixa-0 dfMuic"
+                  href="https://www.thetimes.co.uk/article/older-people-need-a-champion-to-take-on-the-digital-world-pbwpmrgxw"
+                >
+                  <div
+                    class="css-view-1dbjc4n"
+                  >
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
+                    >
+                      <div
+                        class="imageContainerClass imageContainerClass css-view-1dbjc4n"
+                        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                      >
+                        <div
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        >
+                          <div
+                            style="padding-bottom: 56.25%;"
+                          >
+                            <img
+                              class="responsive-sc-1nnon4d-0 fwlcWP"
+                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65d8eb4a-db94-11ec-bcbd-e35b52e0266c.jpg?crop=1500%2C844%2C0%2C78&resize=200&quality=3"
+                            />
+                            <div
+                              class="tc-view__TcView-nuazoi-0 fPjBcr"
+                              height="100%"
+                              style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
+                              width="100%"
+                            >
+                              <svg
+                                height="auto"
+                                style="max-width: 25%; max-height: 50%;"
+                                version="1.1"
+                                viewBox="145 50 108 120"
+                                width="100%"
+                              >
+                                <g
+                                  fill="none"
+                                  fill-rule="evenodd"
+                                  stroke="none"
+                                  stroke-width="1"
+                                >
+                                  <path
+                                    d="M211.26076,54 L211.231367,54 L147.67512,54 L145,85.7081465 L146.922096,86.4489102 C146.922096,86.4489102 164.867589,68.1355181 168.301115,65.0001546 C171.728017,61.8689133 174.237132,61.0885763 176.436179,60.3527593 C180.998206,59.169681 185.977937,59.2150255 185.977937,59.2150255 L186.109581,59.2150255 L186.109581,156.560932 L169.259886,164.473953 L169.259886,166 L228.735147,166 L228.735147,164.473953 L211.889177,156.560932 L211.889177,59.2150255 L212.01751,59.2150255 C212.01751,59.2150255 216.992272,59.169681 221.558854,60.3527593 C223.757072,61.0885763 226.266601,61.8689133 229.691848,65.0001546 C233.130341,68.1355181 251.071695,86.4489102 251.071695,86.4489102 L253,85.7081465 L250.317842,54 L211.270695,54 L211.242545,54"
+                                    fill="#FFFFFF"
+                                  />
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="contentContainerClass contentContainerClass css-view-1dbjc4n"
+                        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                      >
+                        <div
+                          class="css-view-1dbjc4n"
+                        >
+                          <div
+                            class="css-view-1dbjc4n"
+                            style="margin-bottom: 0px;"
+                          >
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                              style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 1px; color: rgb(29, 29, 27);"
+                            >
+                              ESTHER RANTZEN
+                            </div>
+                          </div>
+                          <h3
+                            aria-level="3"
+                            class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
+                            dir="auto"
+                            role="heading"
+                            style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
+                          >
+                            Older people need a champion to take on the digital world
+                          </h3>
+                          <div
+                            class="css-view-1dbjc4n"
+                          >
+                            <div
+                              class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
+                              dir="auto"
+                              style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                            >
+                              <span
+                                class="css-text-901oao css-textHasAncestor-16my406"
+                                dir="auto"
+                              >
+                                The digital revolution is causing millions of older people distress and anxiety. It’s not that we oldies resist change: many...
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            class="css-text-901oao"
+                            data-testid="datePublication"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
+                          >
+                            <time
+                              datetime="2022-05-24T20:00:00.000Z"
+                            >
+                              May 24 2022, 9.00pm
+                            </time>
+                          </div>
+                          <div
+                            class="css-text-901oao"
+                            dir="auto"
+                          >
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+                            >
+                              Esther Rantzen
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </DocumentFragment>
 `;
 
-exports[`Recommended Articles it renders 1`] = `
+exports[`<RecommendedArticles> should render 2 article correctly 1`] = `
 <DocumentFragment>
   <div
-    class="placeholder"
+    class="sc-bdVaJa fpcbkF"
   >
     <div
-      class="tc-view__TcView-nuazoi-0 fPjBcr"
-      height="100%"
-      style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
-      width="100%"
+      class="css-view-1dbjc4n"
     >
-      <svg
-        height="auto"
-        style="max-width: 25%; max-height: 50%;"
-        version="1.1"
-        viewBox="145 50 108 120"
-        width="100%"
+      <div
+        class="css-view-1dbjc4n"
+        style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
       >
-        <g
-          fill="none"
-          fill-rule="evenodd"
-          stroke="none"
-          stroke-width="1"
+        <h3
+          aria-level="3"
+          class="css-reset-4rbku5 css-text-901oao"
+          dir="auto"
+          role="heading"
+          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
         >
-          <path
-            d="M211.26076,54 L211.231367,54 L147.67512,54 L145,85.7081465 L146.922096,86.4489102 C146.922096,86.4489102 164.867589,68.1355181 168.301115,65.0001546 C171.728017,61.8689133 174.237132,61.0885763 176.436179,60.3527593 C180.998206,59.169681 185.977937,59.2150255 185.977937,59.2150255 L186.109581,59.2150255 L186.109581,156.560932 L169.259886,164.473953 L169.259886,166 L228.735147,166 L228.735147,164.473953 L211.889177,156.560932 L211.889177,59.2150255 L212.01751,59.2150255 C212.01751,59.2150255 216.992272,59.169681 221.558854,60.3527593 C223.757072,61.0885763 226.266601,61.8689133 229.691848,65.0001546 C233.130341,68.1355181 251.071695,86.4489102 251.071695,86.4489102 L253,85.7081465 L250.317842,54 L211.270695,54 L211.242545,54"
-            fill="#FFFFFF"
-          />
-        </g>
-      </svg>
+          Today's Business
+        </h3>
+      </div>
+      <div
+        class="config__Base-bs1997-0 config__Base-bs1997-2 jAMXmL config__Base-bs1997-0 config__Base-bs1997-2 jAMXmL css-view-1dbjc4n"
+      >
+        <div
+          class="responsive__SliceContainer-sc-1kirgpc-0 ioiqOj responsive__SliceContainer-sc-1kirgpc-0 ioiqOj css-view-1dbjc4n"
+        >
+          <div
+            class="responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-3 responsive__Base-sc-1lqbq6a-4 brvzow responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-3 responsive__Base-sc-1lqbq6a-4 brvzow css-view-1dbjc4n"
+          >
+            <div
+              class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
+            >
+              <div
+                data-testid="related-article-item"
+              >
+                <a
+                  class="link__RespLink-sc-1ocvixa-0 dfMuic"
+                  href="https://www.thetimes.co.uk/article/older-people-need-a-champion-to-take-on-the-digital-world-pbwpmrgxw"
+                >
+                  <div
+                    class="css-view-1dbjc4n"
+                  >
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
+                    >
+                      <div
+                        class="imageContainerClass imageContainerClass css-view-1dbjc4n"
+                        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                      >
+                        <div
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        >
+                          <div
+                            style="padding-bottom: 56.25%;"
+                          >
+                            <img
+                              class="responsive-sc-1nnon4d-0 fwlcWP"
+                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65d8eb4a-db94-11ec-bcbd-e35b52e0266c.jpg?crop=1500%2C844%2C0%2C78&resize=200&quality=3"
+                            />
+                            <div
+                              class="tc-view__TcView-nuazoi-0 fPjBcr"
+                              height="100%"
+                              style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
+                              width="100%"
+                            >
+                              <svg
+                                height="auto"
+                                style="max-width: 25%; max-height: 50%;"
+                                version="1.1"
+                                viewBox="145 50 108 120"
+                                width="100%"
+                              >
+                                <g
+                                  fill="none"
+                                  fill-rule="evenodd"
+                                  stroke="none"
+                                  stroke-width="1"
+                                >
+                                  <path
+                                    d="M211.26076,54 L211.231367,54 L147.67512,54 L145,85.7081465 L146.922096,86.4489102 C146.922096,86.4489102 164.867589,68.1355181 168.301115,65.0001546 C171.728017,61.8689133 174.237132,61.0885763 176.436179,60.3527593 C180.998206,59.169681 185.977937,59.2150255 185.977937,59.2150255 L186.109581,59.2150255 L186.109581,156.560932 L169.259886,164.473953 L169.259886,166 L228.735147,166 L228.735147,164.473953 L211.889177,156.560932 L211.889177,59.2150255 L212.01751,59.2150255 C212.01751,59.2150255 216.992272,59.169681 221.558854,60.3527593 C223.757072,61.0885763 226.266601,61.8689133 229.691848,65.0001546 C233.130341,68.1355181 251.071695,86.4489102 251.071695,86.4489102 L253,85.7081465 L250.317842,54 L211.270695,54 L211.242545,54"
+                                    fill="#FFFFFF"
+                                  />
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="contentContainerClass contentContainerClass css-view-1dbjc4n"
+                        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                      >
+                        <div
+                          class="css-view-1dbjc4n"
+                        >
+                          <div
+                            class="css-view-1dbjc4n"
+                            style="margin-bottom: 0px;"
+                          >
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                              style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 1px; color: rgb(29, 29, 27);"
+                            >
+                              ESTHER RANTZEN
+                            </div>
+                          </div>
+                          <h3
+                            aria-level="3"
+                            class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
+                            dir="auto"
+                            role="heading"
+                            style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
+                          >
+                            Older people need a champion to take on the digital world
+                          </h3>
+                          <div
+                            class="css-view-1dbjc4n"
+                          >
+                            <div
+                              class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
+                              dir="auto"
+                              style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                            >
+                              <span
+                                class="css-text-901oao css-textHasAncestor-16my406"
+                                dir="auto"
+                              >
+                                The digital revolution is causing millions of older people distress and anxiety. It’s not that we oldies resist change: many...
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            class="css-text-901oao"
+                            data-testid="datePublication"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
+                          >
+                            <time
+                              datetime="2022-05-24T20:00:00.000Z"
+                            >
+                              May 24 2022, 9.00pm
+                            </time>
+                          </div>
+                          <div
+                            class="css-text-901oao"
+                            dir="auto"
+                          >
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+                            >
+                              Esther Rantzen
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="responsive-sc-1kirgpc-1 fAXubH responsive-sc-1kirgpc-1 fAXubH css-view-1dbjc4n"
+            />
+            <div
+              class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
+            >
+              <div
+                data-testid="related-article-item"
+              >
+                <a
+                  class="link__RespLink-sc-1ocvixa-0 dfMuic"
+                  href="https://www.thetimes.co.uk/article/ricky-gervais-criticised-for-trans-and-aids-jokes-in-supernature-netflix-show-rx85gpjfm"
+                >
+                  <div
+                    class="css-view-1dbjc4n"
+                  >
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
+                    >
+                      <div
+                        class="imageContainerClass imageContainerClass css-view-1dbjc4n"
+                        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                      >
+                        <div
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        >
+                          <div
+                            style="padding-bottom: 56.25%;"
+                          >
+                            <img
+                              class="responsive-sc-1nnon4d-0 fwlcWP"
+                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F224cc8a4-dc18-11ec-bcbd-e35b52e0266c.jpg?crop=1539%2C865%2C303%2C54&resize=200&quality=3"
+                            />
+                            <div
+                              class="tc-view__TcView-nuazoi-0 fPjBcr"
+                              height="100%"
+                              style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
+                              width="100%"
+                            >
+                              <svg
+                                height="auto"
+                                style="max-width: 25%; max-height: 50%;"
+                                version="1.1"
+                                viewBox="145 50 108 120"
+                                width="100%"
+                              >
+                                <g
+                                  fill="none"
+                                  fill-rule="evenodd"
+                                  stroke="none"
+                                  stroke-width="1"
+                                >
+                                  <path
+                                    d="M211.26076,54 L211.231367,54 L147.67512,54 L145,85.7081465 L146.922096,86.4489102 C146.922096,86.4489102 164.867589,68.1355181 168.301115,65.0001546 C171.728017,61.8689133 174.237132,61.0885763 176.436179,60.3527593 C180.998206,59.169681 185.977937,59.2150255 185.977937,59.2150255 L186.109581,59.2150255 L186.109581,156.560932 L169.259886,164.473953 L169.259886,166 L228.735147,166 L228.735147,164.473953 L211.889177,156.560932 L211.889177,59.2150255 L212.01751,59.2150255 C212.01751,59.2150255 216.992272,59.169681 221.558854,60.3527593 C223.757072,61.0885763 226.266601,61.8689133 229.691848,65.0001546 C233.130341,68.1355181 251.071695,86.4489102 251.071695,86.4489102 L253,85.7081465 L250.317842,54 L211.270695,54 L211.242545,54"
+                                    fill="#FFFFFF"
+                                  />
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="contentContainerClass contentContainerClass css-view-1dbjc4n"
+                        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                      >
+                        <div
+                          class="css-view-1dbjc4n"
+                        >
+                          <div
+                            class="css-view-1dbjc4n"
+                            style="margin-bottom: 0px;"
+                          >
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                              style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 1px; color: rgb(29, 29, 27);"
+                            >
+                              UK NEWS
+                            </div>
+                          </div>
+                          <h3
+                            aria-level="3"
+                            class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
+                            dir="auto"
+                            role="heading"
+                            style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
+                          >
+                            Gervais criticised for trans and Aids jokes
+                          </h3>
+                          <div
+                            class="css-view-1dbjc4n"
+                          >
+                            <div
+                              class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
+                              dir="auto"
+                              style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                            >
+                              <span
+                                class="css-text-901oao css-textHasAncestor-16my406"
+                                dir="auto"
+                              >
+                                Ricky Gervais’s new Netflix stand-up comedy special has been criticised for featuring “dangerous” jokes about transgender...
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            class="css-text-901oao"
+                            data-testid="datePublication"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
+                          >
+                            <time
+                              datetime="2022-05-25T11:25:00.000Z"
+                            >
+                              May 25 2022, 12.25pm
+                            </time>
+                          </div>
+                          <div
+                            class="css-text-901oao"
+                            dir="auto"
+                          >
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+                            >
+                              Jake Kanter
+                            </div>
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 gJRFWs"
+                            >
+                              , Media Correspondent
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<RecommendedArticles> should render 3 article correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa fGYvF"
+  >
+    <div
+      class="css-view-1dbjc4n"
+    >
+      <div
+        class="css-view-1dbjc4n"
+        style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
+      >
+        <h3
+          aria-level="3"
+          class="css-reset-4rbku5 css-text-901oao"
+          dir="auto"
+          role="heading"
+          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
+        >
+          Today's Sport
+        </h3>
+      </div>
+      <div
+        class="config__Base-bs1997-0 config__Base-bs1997-2 ETkHz config__Base-bs1997-0 config__Base-bs1997-2 ETkHz css-view-1dbjc4n"
+      >
+        <div
+          class="responsive__SliceContainer-sc-1kirgpc-0 ioiqOj responsive__SliceContainer-sc-1kirgpc-0 ioiqOj css-view-1dbjc4n"
+        >
+          <div
+            class="responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-2 responsive__Base-sc-1lqbq6a-4 gpRihd responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-2 responsive__Base-sc-1lqbq6a-4 gpRihd css-view-1dbjc4n"
+          >
+            <div
+              class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
+            >
+              <div
+                data-testid="related-article-item"
+              >
+                <a
+                  class="link__RespLink-sc-1ocvixa-0 dfMuic"
+                  href="https://www.thetimes.co.uk/article/older-people-need-a-champion-to-take-on-the-digital-world-pbwpmrgxw"
+                >
+                  <div
+                    class="css-view-1dbjc4n"
+                  >
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
+                    >
+                      <div
+                        class="imageContainerClass imageContainerClass css-view-1dbjc4n"
+                        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                      >
+                        <div
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        >
+                          <div
+                            style="padding-bottom: 56.25%;"
+                          >
+                            <img
+                              class="responsive-sc-1nnon4d-0 fwlcWP"
+                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65d8eb4a-db94-11ec-bcbd-e35b52e0266c.jpg?crop=1500%2C844%2C0%2C78&resize=200&quality=3"
+                            />
+                            <div
+                              class="tc-view__TcView-nuazoi-0 fPjBcr"
+                              height="100%"
+                              style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
+                              width="100%"
+                            >
+                              <svg
+                                height="auto"
+                                style="max-width: 25%; max-height: 50%;"
+                                version="1.1"
+                                viewBox="145 50 108 120"
+                                width="100%"
+                              >
+                                <g
+                                  fill="none"
+                                  fill-rule="evenodd"
+                                  stroke="none"
+                                  stroke-width="1"
+                                >
+                                  <path
+                                    d="M211.26076,54 L211.231367,54 L147.67512,54 L145,85.7081465 L146.922096,86.4489102 C146.922096,86.4489102 164.867589,68.1355181 168.301115,65.0001546 C171.728017,61.8689133 174.237132,61.0885763 176.436179,60.3527593 C180.998206,59.169681 185.977937,59.2150255 185.977937,59.2150255 L186.109581,59.2150255 L186.109581,156.560932 L169.259886,164.473953 L169.259886,166 L228.735147,166 L228.735147,164.473953 L211.889177,156.560932 L211.889177,59.2150255 L212.01751,59.2150255 C212.01751,59.2150255 216.992272,59.169681 221.558854,60.3527593 C223.757072,61.0885763 226.266601,61.8689133 229.691848,65.0001546 C233.130341,68.1355181 251.071695,86.4489102 251.071695,86.4489102 L253,85.7081465 L250.317842,54 L211.270695,54 L211.242545,54"
+                                    fill="#FFFFFF"
+                                  />
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="contentContainerClass contentContainerClass css-view-1dbjc4n"
+                        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                      >
+                        <div
+                          class="css-view-1dbjc4n"
+                        >
+                          <div
+                            class="css-view-1dbjc4n"
+                            style="margin-bottom: 0px;"
+                          >
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                              style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 1px; color: rgb(29, 29, 27);"
+                            >
+                              ESTHER RANTZEN
+                            </div>
+                          </div>
+                          <h3
+                            aria-level="3"
+                            class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
+                            dir="auto"
+                            role="heading"
+                            style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
+                          >
+                            Older people need a champion to take on the digital world
+                          </h3>
+                          <div
+                            class="css-view-1dbjc4n"
+                          >
+                            <div
+                              class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
+                              dir="auto"
+                              style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                            >
+                              <span
+                                class="css-text-901oao css-textHasAncestor-16my406"
+                                dir="auto"
+                              >
+                                The digital revolution is causing millions of older people distress and anxiety. It’s not that we oldies resist change: many...
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            class="css-text-901oao"
+                            data-testid="datePublication"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
+                          >
+                            <time
+                              datetime="2022-05-24T20:00:00.000Z"
+                            >
+                              May 24 2022, 9.00pm
+                            </time>
+                          </div>
+                          <div
+                            class="css-text-901oao"
+                            dir="auto"
+                          >
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+                            >
+                              Esther Rantzen
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="responsive-sc-1kirgpc-1 fAXubH responsive-sc-1kirgpc-1 fAXubH css-view-1dbjc4n"
+            />
+            <div
+              class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
+            >
+              <div
+                data-testid="related-article-item"
+              >
+                <a
+                  class="link__RespLink-sc-1ocvixa-0 dfMuic"
+                  href="https://www.thetimes.co.uk/article/ricky-gervais-criticised-for-trans-and-aids-jokes-in-supernature-netflix-show-rx85gpjfm"
+                >
+                  <div
+                    class="css-view-1dbjc4n"
+                  >
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
+                    >
+                      <div
+                        class="imageContainerClass imageContainerClass css-view-1dbjc4n"
+                        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                      >
+                        <div
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        >
+                          <div
+                            style="padding-bottom: 56.25%;"
+                          >
+                            <img
+                              class="responsive-sc-1nnon4d-0 fwlcWP"
+                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F224cc8a4-dc18-11ec-bcbd-e35b52e0266c.jpg?crop=1539%2C865%2C303%2C54&resize=200&quality=3"
+                            />
+                            <div
+                              class="tc-view__TcView-nuazoi-0 fPjBcr"
+                              height="100%"
+                              style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
+                              width="100%"
+                            >
+                              <svg
+                                height="auto"
+                                style="max-width: 25%; max-height: 50%;"
+                                version="1.1"
+                                viewBox="145 50 108 120"
+                                width="100%"
+                              >
+                                <g
+                                  fill="none"
+                                  fill-rule="evenodd"
+                                  stroke="none"
+                                  stroke-width="1"
+                                >
+                                  <path
+                                    d="M211.26076,54 L211.231367,54 L147.67512,54 L145,85.7081465 L146.922096,86.4489102 C146.922096,86.4489102 164.867589,68.1355181 168.301115,65.0001546 C171.728017,61.8689133 174.237132,61.0885763 176.436179,60.3527593 C180.998206,59.169681 185.977937,59.2150255 185.977937,59.2150255 L186.109581,59.2150255 L186.109581,156.560932 L169.259886,164.473953 L169.259886,166 L228.735147,166 L228.735147,164.473953 L211.889177,156.560932 L211.889177,59.2150255 L212.01751,59.2150255 C212.01751,59.2150255 216.992272,59.169681 221.558854,60.3527593 C223.757072,61.0885763 226.266601,61.8689133 229.691848,65.0001546 C233.130341,68.1355181 251.071695,86.4489102 251.071695,86.4489102 L253,85.7081465 L250.317842,54 L211.270695,54 L211.242545,54"
+                                    fill="#FFFFFF"
+                                  />
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="contentContainerClass contentContainerClass css-view-1dbjc4n"
+                        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                      >
+                        <div
+                          class="css-view-1dbjc4n"
+                        >
+                          <div
+                            class="css-view-1dbjc4n"
+                            style="margin-bottom: 0px;"
+                          >
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                              style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 1px; color: rgb(29, 29, 27);"
+                            >
+                              UK NEWS
+                            </div>
+                          </div>
+                          <h3
+                            aria-level="3"
+                            class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
+                            dir="auto"
+                            role="heading"
+                            style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
+                          >
+                            Gervais criticised for trans and Aids jokes
+                          </h3>
+                          <div
+                            class="css-view-1dbjc4n"
+                          >
+                            <div
+                              class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
+                              dir="auto"
+                              style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                            >
+                              <span
+                                class="css-text-901oao css-textHasAncestor-16my406"
+                                dir="auto"
+                              >
+                                Ricky Gervais’s new Netflix stand-up comedy special has been criticised for featuring “dangerous” jokes about transgender...
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            class="css-text-901oao"
+                            data-testid="datePublication"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
+                          >
+                            <time
+                              datetime="2022-05-25T11:25:00.000Z"
+                            >
+                              May 25 2022, 12.25pm
+                            </time>
+                          </div>
+                          <div
+                            class="css-text-901oao"
+                            dir="auto"
+                          >
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+                            >
+                              Jake Kanter
+                            </div>
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 gJRFWs"
+                            >
+                              , Media Correspondent
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="responsive-sc-1kirgpc-1 fAXubH responsive-sc-1kirgpc-1 fAXubH css-view-1dbjc4n"
+            />
+            <div
+              class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
+            >
+              <div
+                data-testid="related-article-item"
+              >
+                <a
+                  class="link__RespLink-sc-1ocvixa-0 dfMuic"
+                  href="https://www.thetimes.co.uk/article/chelsea-takeover-conflict-celebrities-and-eye-watering-bonuses-how-the-saga-unfolded-27gmsjwhm"
+                >
+                  <div
+                    class="css-view-1dbjc4n"
+                  >
+                    <div
+                      class="css-view-1dbjc4n"
+                      style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
+                    >
+                      <div
+                        class="imageContainerClass imageContainerClass css-view-1dbjc4n"
+                        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                      >
+                        <div
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        >
+                          <div
+                            style="padding-bottom: 56.25%;"
+                          >
+                            <img
+                              class="responsive-sc-1nnon4d-0 fwlcWP"
+                              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fed2fc692-db7e-11ec-8de3-573a6521e09e.jpg?crop=1600%2C900%2C0%2C0&resize=200&quality=3"
+                            />
+                            <div
+                              class="tc-view__TcView-nuazoi-0 fPjBcr"
+                              height="100%"
+                              style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
+                              width="100%"
+                            >
+                              <svg
+                                height="auto"
+                                style="max-width: 25%; max-height: 50%;"
+                                version="1.1"
+                                viewBox="145 50 108 120"
+                                width="100%"
+                              >
+                                <g
+                                  fill="none"
+                                  fill-rule="evenodd"
+                                  stroke="none"
+                                  stroke-width="1"
+                                >
+                                  <path
+                                    d="M211.26076,54 L211.231367,54 L147.67512,54 L145,85.7081465 L146.922096,86.4489102 C146.922096,86.4489102 164.867589,68.1355181 168.301115,65.0001546 C171.728017,61.8689133 174.237132,61.0885763 176.436179,60.3527593 C180.998206,59.169681 185.977937,59.2150255 185.977937,59.2150255 L186.109581,59.2150255 L186.109581,156.560932 L169.259886,164.473953 L169.259886,166 L228.735147,166 L228.735147,164.473953 L211.889177,156.560932 L211.889177,59.2150255 L212.01751,59.2150255 C212.01751,59.2150255 216.992272,59.169681 221.558854,60.3527593 C223.757072,61.0885763 226.266601,61.8689133 229.691848,65.0001546 C233.130341,68.1355181 251.071695,86.4489102 251.071695,86.4489102 L253,85.7081465 L250.317842,54 L211.270695,54 L211.242545,54"
+                                    fill="#FFFFFF"
+                                  />
+                                </g>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="contentContainerClass contentContainerClass css-view-1dbjc4n"
+                        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                      >
+                        <div
+                          class="css-view-1dbjc4n"
+                        >
+                          <div
+                            class="css-view-1dbjc4n"
+                            style="margin-bottom: 0px;"
+                          >
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                              style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 1px; color: rgb(29, 29, 27);"
+                            >
+                              FOOTBALL
+                            </div>
+                          </div>
+                          <h3
+                            aria-level="3"
+                            class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
+                            dir="auto"
+                            role="heading"
+                            style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
+                          >
+                            Conflict, celebrities and eye-watering bonuses – how takeover unfolded
+                          </h3>
+                          <div
+                            class="css-view-1dbjc4n"
+                          >
+                            <div
+                              class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
+                              dir="auto"
+                              style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                            >
+                              <span
+                                class="css-text-901oao css-textHasAncestor-16my406"
+                                dir="auto"
+                              >
+                                Roman Abramovich’s arrival at Chelsea in 2003 was sudden and unexpected. As the football world focused on David Beckham’s...
+                              </span>
+                            </div>
+                          </div>
+                          <div
+                            class="css-text-901oao"
+                            data-testid="datePublication"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
+                          >
+                            <time
+                              datetime="2022-05-24T21:30:00.000Z"
+                            >
+                              May 24 2022, 10.30pm
+                            </time>
+                          </div>
+                          <div
+                            class="css-text-901oao"
+                            dir="auto"
+                          >
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 gJRFWs"
+                            >
+                              Matt Lawton
+                            </div>
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 gJRFWs"
+                            >
+                              , Chief Sports Correspondent
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </DocumentFragment>

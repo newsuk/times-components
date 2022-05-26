@@ -24,9 +24,9 @@ export type Article = {
   label: string;
   headline: string;
   publishedDateTime: string;
-  bylines: Byline[];
-  summary: Summary;
-  media: Media;
+  bylines?: Byline[];
+  summary?: Summary;
+  media?: Media;
 };
 
 // HELPERS
@@ -40,11 +40,11 @@ const getByline = (byline: Byline) => ({
   children: [{ name: 'text', attributes: getBylineAttr(byline), children: [] }]
 });
 
-const getBylines = (bylines: Byline[]) => {
+const getBylines = (bylines?: Byline[]) => {
   if (bylines) {
     return bylines.map((byline: Byline) => ({ byline: [getByline(byline)] }));
   }
-  return null;
+  return undefined;
 };
 
 const getSummaryText = (summary: Summary) => {
@@ -58,21 +58,21 @@ const getSummaryParagraph = (summary: Summary) => [
   { name: 'text', attributes: getSummaryText(summary), children: [] }
 ];
 
-const getSummary = (summary: Summary) => {
+const getSummary = (summary?: Summary) => {
   if (summary && summary.children) {
     return [{ name: 'paragraph', children: getSummaryParagraph(summary) }];
   }
   return [];
 };
 
-const getImage = (media: Media) => {
+const getImage = (media?: Media) => {
   if (media && media.crops) {
     const image = media.crops.find(
       (crop: MediaCrop) => crop.aspectRatio === '16:9'
     );
     return image ? { crop169: { url: image.url }, title: image.alt } : null;
   }
-  return null;
+  return {};
 };
 
 // MAIN

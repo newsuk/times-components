@@ -1,45 +1,20 @@
 import React from 'react';
 
-import { showcaseConverter } from '@times-components/storybook';
 import { MockedProvider } from '@times-components/provider-test-tools';
-import { recommendations } from '@times-components/provider-queries';
+import { showcaseConverter } from '@times-components/storybook';
 
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
-import { mockArticles } from './mocks/articles';
-import { Article } from './formatters';
+import { mockArticles } from './fixtures/articles';
+import { mockQueries } from './fixtures/queries';
 
 import { RecommendedArticles } from './RecommendedArticles';
-
-const getMocks = (articles: Article[]) => [
-  {
-    delay: 1000,
-    request: {
-      query: recommendations,
-      variables: {
-        publisher: 'TIMES',
-        recomArgs: {
-          userId: '1234',
-          articleId: '94a01926-719a-11ec-aacf-0736e08b15cd'
-        }
-      }
-    },
-    result: {
-      data: {
-        recommendations: {
-          __typename: 'Recommendations',
-          articles
-        }
-      }
-    }
-  }
-];
 
 const recarticles = {
   children: [
     {
       component: () => (
-        <MockedProvider mocks={getMocks([mockArticles[0]])}>
+        <MockedProvider mocks={mockQueries(mockArticles.slice(0, 1))}>
           <RecommendedArticles
             articleId="94a01926-719a-11ec-aacf-0736e08b15cd"
             section="News"
@@ -54,7 +29,7 @@ const recarticles = {
     },
     {
       component: () => (
-        <MockedProvider mocks={getMocks([mockArticles[0], mockArticles[1]])}>
+        <MockedProvider mocks={mockQueries(mockArticles.slice(0, 2))}>
           <RecommendedArticles
             articleId="94a01926-719a-11ec-aacf-0736e08b15cd"
             section="Business"
@@ -69,7 +44,7 @@ const recarticles = {
     },
     {
       component: () => (
-        <MockedProvider mocks={getMocks(mockArticles)}>
+        <MockedProvider mocks={mockQueries(mockArticles.slice(0, 3))}>
           <RecommendedArticles
             articleId="94a01926-719a-11ec-aacf-0736e08b15cd"
             section="Sport"
