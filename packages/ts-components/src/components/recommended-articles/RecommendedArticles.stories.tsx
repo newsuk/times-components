@@ -19,7 +19,7 @@ const getMocks = (articles: Article[]) => [
       variables: {
         publisher: 'TIMES',
         recomArgs: {
-          userId: '',
+          userId: '1234',
           articleId: '94a01926-719a-11ec-aacf-0736e08b15cd'
         }
       }

@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import RelatedArticles from '@times-components/related-articles';
 import { GetRecommendedArticles } from '@times-components/provider';
 
 import { getRelatedArticlesSlice } from './formatters';
-
-import { Placeholder } from '@times-components/image';
 
 type RecommendedArticlesProps = {
   articleId: string;
@@ -17,34 +15,38 @@ export const RecommendedArticles = ({
   articleId,
   section,
   analyticsStream
-}: RecommendedArticlesProps) => (
-  <GetRecommendedArticles
-    publisher={'TIMES'}
-    recomArgs={{ userId: '', articleId }}
-    ssr={false}
-    debounceTimeMs={0}
-  >
-    {({ isLoading, error, recommendations }: any) => {
-      if (error) {
-        return null;
-      }
+}: RecommendedArticlesProps) => {
+  const [userId, setUserId] = useState<string | undefined>();
 
-      if (isLoading) {
+  useEffect(() => {
+    setUserId('1234');
+  }, []);
+
+  if (!userId) {
+    return null;
+  }
+
+  return (
+    <GetRecommendedArticles
+      publisher={'TIMES'}
+      recomArgs={{ userId, articleId }}
+      ssr={false}
+      debounceTimeMs={0}
+    >
+      {({ isLoading, error, recommendations }: any) => {
+        if (isLoading || error) {
+          return null;
+        }
+
         return (
-          <div className="placeholder">
-            <Placeholder />
-          </div>
+          <RelatedArticles
+            heading={`Today's ${section}`}
+            slice={getRelatedArticlesSlice(recommendations)}
+            isVisible
+            analyticsStream={analyticsStream}
+          />
         );
-      }
-
-      return (
-        <RelatedArticles
-          heading={`Today's ${section}`}
-          slice={getRelatedArticlesSlice(recommendations)}
-          isVisible
-          analyticsStream={analyticsStream}
-        />
-      );
-    }}
-  </GetRecommendedArticles>
-);
+      }}
+    </GetRecommendedArticles>
+  );
+};
