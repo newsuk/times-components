@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import gql from "graphql-tag";
 
 import RelatedArticles from '@times-components/related-articles';
 import { GetRecommendedArticles } from '@times-components/provider';
