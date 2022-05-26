@@ -2,6 +2,7 @@ query GetRecommendedArticles($publisher: Publisher! $recomArgs: RecommendationsP
   recommendations(publisher: $publisher, recomArgs: $recomArgs) {
     articles {
       url
+      slug
       label
       headline
       publishedDateTime

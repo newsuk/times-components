@@ -45,7 +45,9 @@ const articleMock = ({
   },
   media: {
     __typename: 'Image',
-    crops: [{ __typename: 'ImageCrop', url: image, aspectRatio: '16:9' }]
+    crops: [
+      { __typename: 'ImageCrop', alt: '', url: image, aspectRatio: '16:9' }
+    ]
   }
 });
 
