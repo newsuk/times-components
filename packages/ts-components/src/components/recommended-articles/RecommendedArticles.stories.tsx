@@ -66,6 +66,7 @@ const recarticles = {
           <RecommendedArticles
             articleId="94a01926-719a-11ec-aacf-0736e08b15cd"
             section="News"
+            isVisible
             analyticsStream={analyticsStream}
           />
         </MockedProvider>
