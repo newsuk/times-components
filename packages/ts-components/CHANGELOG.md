@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.36.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.36.0...@times-components/ts-components@1.36.1) (2022-05-26)
+
+
+### Bug Fixes
+
+* **TDP-1942:** Recommended articles - client side render only ([#2952](https://github.com/newsuk/times-components/issues/2952)) ([b3bc644](https://github.com/newsuk/times-components/commit/b3bc64425022e062bfbd4bb55d5ffbfb2aadb5cd))
+
+
+
+
+
 # [1.36.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.35.5...@times-components/ts-components@1.36.0) (2022-05-25)
 
 
