@@ -43,6 +43,7 @@ const recarticles = {
           <RecommendedArticles
             articleId="94a01926-719a-11ec-aacf-0736e08b15cd"
             section="News"
+            isVisible
             analyticsStream={analyticsStream}
           />
         </MockedProvider>
@@ -57,6 +58,7 @@ const recarticles = {
           <RecommendedArticles
             articleId="94a01926-719a-11ec-aacf-0736e08b15cd"
             section="Business"
+            isVisible
             analyticsStream={analyticsStream}
           />
         </MockedProvider>
@@ -71,6 +73,7 @@ const recarticles = {
           <RecommendedArticles
             articleId="94a01926-719a-11ec-aacf-0736e08b15cd"
             section="Sport"
+            isVisible
             analyticsStream={analyticsStream}
           />
         </MockedProvider>
