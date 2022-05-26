@@ -412,6 +412,7 @@ exports[`full article with style 1`] = `
 .c6 {
   font-size: 30px;
   line-height: 33px;
+  font-weight: 400;
   color: rgba(255,255,255,1);
   margin-bottom: 10px;
   text-align: center;
@@ -1555,6 +1556,7 @@ exports[`full article with style in the culture magazine 1`] = `
   font-family: Flama-Bold;
   font-size: 30px;
   line-height: 33px;
+  font-weight: 400;
   color: rgba(255,255,255,1);
   margin-bottom: 10px;
   text-align: center;
@@ -2698,6 +2700,7 @@ exports[`full article with style in the style magazine 1`] = `
   font-family: CenturyGothic-Bold;
   font-size: 30px;
   line-height: 33px;
+  font-weight: 400;
   color: rgba(255,255,255,1);
   margin-bottom: 10px;
   text-align: center;
@@ -3842,6 +3845,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   font-family: Tiempos-Headline-Bold;
   font-size: 30px;
   line-height: 33px;
+  font-weight: 400;
   color: rgba(255,255,255,1);
   margin-bottom: 10px;
   text-align: center;
