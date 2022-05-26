@@ -22,12 +22,11 @@ export const RecommendedArticles = ({
 
   useEffect(() => {
     setIsReady(true);
-    
-    // tslint:disable:no-empty
-    return () => {};
-  }, [])
+  }, []);
 
-  if (!isReady) { return null; }
+  if (!isReady) {
+    return null;
+  }
 
   return (
     <GetRecommendedArticles
