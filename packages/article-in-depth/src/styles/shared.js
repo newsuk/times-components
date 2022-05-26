@@ -12,6 +12,7 @@ const sharedStyles = {
       font: "headline",
       fontSize: "headline"
     }),
+    fontWeight: 400,
     color: colours.functional.brandColour,
     marginBottom: spacing(2),
     textAlign: "center"
