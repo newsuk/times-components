@@ -71,15 +71,9 @@ exports[`1. a full article 1`] = `
   </Helmet>
   <main>
     SOME LABEL
-    <h1
-      aria-level="1"
-      role="heading"
-    >
-      Some Headline
-    </h1>
+    Some Headline
     <h2
       aria-level="2"
-      data-testid="standfirst"
       role="heading"
     >
       Some Standfirst
