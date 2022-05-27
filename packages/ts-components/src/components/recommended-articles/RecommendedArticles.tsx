@@ -23,10 +23,16 @@ export const RecommendedArticles = ({
   const [userId, setUserId] = useState<string | undefined>();
 
   useEffect(() => {
+    // TO DO
+    // add feature flag
+    // call NK API not TPA
+    // extract userId
+    // modify storybook and tests to handle userId
+    // improve test coverage by modifying query request
     setUserId('1234');
   }, []);
 
-  if (!userId) {
+  if (!isVisible || !userId) {
     return null;
   }
 
