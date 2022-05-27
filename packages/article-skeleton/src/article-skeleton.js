@@ -80,10 +80,7 @@ const ArticleSkeleton = ({
     sharingEnabled,
     publishedTime,
   } = article;
-
-  console.log("***navigationMode in article skeleton", navigationMode);
-  console.log("***analyticsStream in article skeleton", analyticsStream);
-
+ 
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),

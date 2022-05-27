@@ -292,11 +292,10 @@ function Head({
     publisherSchema,
     authorSchema
   );
-console.log("***navigationMode", navigationMode);
 
-  // const checkIsCurrentEdition = () => {
-  //   navigationMode.isCurrentEdition ? `current edition: ${sectionname}` : `article: ${sectionname}`
-  // };
+  const checkIsCurrentEdition = () => (
+    navigationMode.isCurrentEdition ? `current edition: ${sectionname}` : `article: ${sectionname}`
+    );
 
   const jsonLD = {
     "@context": "https://schema.org",
@@ -329,10 +328,8 @@ console.log("***navigationMode", navigationMode);
     thumbnailUrl,
     dateModified,
     author: authorSchema,
-    articleSection: 'string'
+    articleSection: checkIsCurrentEdition()
   };
-
-  console.log('***jsonLD***', jsonLD);
 
   if (swgProductId) {
     jsonLD.isPartOf = {

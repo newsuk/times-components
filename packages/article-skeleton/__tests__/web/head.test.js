@@ -57,6 +57,7 @@ describe("Head", () => {
         article={article}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+        navigationMode={{isCurrentEdition: true }}
       />
     );
 
