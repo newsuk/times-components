@@ -59,7 +59,8 @@ const ArticleSkeleton = ({
   latestFromSectionFlag,
   latestFromSection,
   olympicsKeys,
-  getFallbackThumbnailUrl169
+  getFallbackThumbnailUrl169,
+  navigationMode
 }) => {
   const {
     commentsEnabled,
@@ -77,8 +78,11 @@ const ArticleSkeleton = ({
     template,
     savingEnabled,
     sharingEnabled,
-    publishedTime
+    publishedTime,
   } = article;
+
+  console.log("***navigationMode in article skeleton", navigationMode);
+  console.log("***analyticsStream in article skeleton", analyticsStream);
 
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
@@ -160,6 +164,7 @@ const ArticleSkeleton = ({
             paidContentClassName={paidContentClassName}
             getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
             swgProductId={swgProductId}
+            navigationMode={navigationMode}
           />
           <AlgoliaSearchProvider
             algoliaSearchKeys={algoliaSearchKeys}

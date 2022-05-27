@@ -228,7 +228,8 @@ function Head({
   logoUrl,
   paidContentClassName,
   getFallbackThumbnailUrl169,
-  swgProductId
+  swgProductId,
+  navigationMode
 }) {
   const {
     descriptionMarkup,
@@ -241,7 +242,7 @@ function Head({
     hasVideo,
     seoDescription,
     keywords,
-    url
+    url,
   } = article;
 
   const liveBlogArticleExpiry = getIsLiveBlogExpiryTime(article.expirableFlags);
@@ -291,6 +292,11 @@ function Head({
     publisherSchema,
     authorSchema
   );
+console.log("***navigationMode", navigationMode);
+
+  // const checkIsCurrentEdition = () => {
+  //   navigationMode.isCurrentEdition ? `current edition: ${sectionname}` : `article: ${sectionname}`
+  // };
 
   const jsonLD = {
     "@context": "https://schema.org",
@@ -322,8 +328,11 @@ function Head({
     },
     thumbnailUrl,
     dateModified,
-    author: authorSchema
+    author: authorSchema,
+    articleSection: 'string'
   };
+
+  console.log('***jsonLD***', jsonLD);
 
   if (swgProductId) {
     jsonLD.isPartOf = {
