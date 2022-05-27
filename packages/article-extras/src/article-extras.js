@@ -104,12 +104,13 @@ const ArticleExtras = ({
           analyticsStream={analyticsStream}
           slice={relatedArticleSlice}
         />
-        {recommendedArticlesFlag &&
+        {recommendedArticlesFlag && (
           <RecommendedArticles
             articleId={articleId}
             section={section}
             analyticsStream={analyticsStream}
-          />}
+          />
+        )}
         {additionalRelatedArticlesFlag &&
           algoliaRelatedArticleSlice && (
             <RelatedArticles
@@ -160,6 +161,7 @@ ArticleExtras.propTypes = {
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
   additionalRelatedArticlesFlag: PropTypes.bool.isRequired,
+  recommendedArticlesFlag: PropTypes.bool.isRequired,
   latestFromSectionFlag: PropTypes.bool.isRequired,
   latestFromSection: PropTypes.shape({})
 };
