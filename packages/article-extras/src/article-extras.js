@@ -35,6 +35,7 @@ const ArticleExtras = ({
   topics,
   additionalRelatedArticlesFlag,
   latestFromSectionFlag,
+  recommendedArticlesFlag,
   latestFromSection,
   publishedTime
 }) => {
@@ -103,11 +104,12 @@ const ArticleExtras = ({
           analyticsStream={analyticsStream}
           slice={relatedArticleSlice}
         />
-        <RecommendedArticles
-          articleId={articleId}
-          section={section}
-          analyticsStream={analyticsStream}
-        />
+        {recommendedArticlesFlag &&
+          <RecommendedArticles
+            articleId={articleId}
+            section={section}
+            analyticsStream={analyticsStream}
+          />}
         {additionalRelatedArticlesFlag &&
           algoliaRelatedArticleSlice && (
             <RelatedArticles
