@@ -410,6 +410,14 @@ exports[`full article with style 1`] = `
 }
 
 .c6 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
   font-size: 30px;
   line-height: 33px;
   font-weight: 400;
@@ -479,6 +487,14 @@ exports[`full article with style 1`] = `
 }
 
 .c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
   font-family: TimesModern-Regular;
   font-size: 20px;
   line-height: 26;
@@ -1553,6 +1569,14 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c6 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
   font-family: Flama-Bold;
   font-size: 30px;
   line-height: 33px;
@@ -1623,6 +1647,14 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
   font-family: TimesModern-Regular;
   font-size: 20px;
   line-height: 26;
@@ -2697,6 +2729,14 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c6 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
   font-family: CenturyGothic-Bold;
   font-size: 30px;
   line-height: 33px;
@@ -2768,6 +2808,14 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
   font-family: TimesModern-Regular;
   font-size: 20px;
   line-height: 26;
@@ -3842,6 +3890,14 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c6 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
   font-family: Tiempos-Headline-Bold;
   font-size: 30px;
   line-height: 33px;
@@ -3912,6 +3968,14 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
   font-family: TimesModern-Regular;
   font-size: 20px;
   line-height: 26;
