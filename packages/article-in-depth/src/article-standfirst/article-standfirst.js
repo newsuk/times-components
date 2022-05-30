@@ -9,9 +9,9 @@ const HeaderStandfirst = ({ standfirst, color }) => {
 
   return (
     <StandfirstContainer
-      accessibilityRole="header"
+      role="heading"
       aria-level="2"
-      style={[styles.standFirst, { color }]}
+      styles={{ ...styles.standFirst, color }}
       testID="standfirst"
     >
       {standfirst}
