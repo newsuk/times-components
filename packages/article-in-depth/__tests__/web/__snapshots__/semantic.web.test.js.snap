@@ -387,18 +387,6 @@ exports[`1. a full article 1`] = `
           r="14"
         />
       </svg>
-      <svg
-        height="auto"
-        version="1.1"
-        viewBox="145 50 108 120"
-        width="100%"
-      >
-        <g>
-          <path
-            d="6a6c07166e9c40e4f62e57af2b507822"
-          />
-        </g>
-      </svg>
     </article>
   </main>
 </article>
