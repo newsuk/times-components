@@ -23,6 +23,7 @@ export const AuthorImageContainer = styled(TcView)`
 `;
 
 export const DatePublicationContainer = styled(TcText)`
+  ${props => props.styles && props.styles};
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: ${spacing(3)};
@@ -42,6 +43,7 @@ export const FlagsContainer = styled(TcView)`
 `;
 
 export const HeaderContainer = styled(TcView)`
+  ${props => props.styles && props.styles}
   order: 2;
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -57,7 +59,16 @@ export const HeaderContainer = styled(TcView)`
   }
 `;
 
-export const HeadlineContainer = styled(TcText)`
+export const HeadlineContainer = styled.h1`
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  ${props => props.styles && props.styles}
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.articleHeadline}px;
     line-height: 50px;
@@ -72,6 +83,7 @@ export const LabelContainer = styled(TcView)`
 `;
 
 export const Meta = styled(TcView)`
+  ${props => props.styles && props.styles}
   max-width: 100%;
   justify-content: center;
 
@@ -102,7 +114,16 @@ export const Separator = styled(TcView)`
   }
 `;
 
-export const StandfirstContainer = styled(TcText)`
+export const StandfirstContainer = styled.h2`
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  ${props => props.styles && props.styles}
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.infoTitle}px;
     line-height: ${lineHeight({

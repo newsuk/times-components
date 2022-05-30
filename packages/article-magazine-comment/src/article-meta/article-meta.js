@@ -11,21 +11,21 @@ import {
   Meta,
   MetaContainer,
   Separator
-} from "../styles/responsive";
-import styles from "../styles";
+} from "../newStyles/responsive";
+import newStyles from "../newStyles";
 
 const ArticleMeta = ({ bylines, publicationName, publishedTime }) => (
   <MetaContainer>
     {hasBylineData(bylines) && (
       <Fragment>
-        <Meta style={styles.meta}>
+        <Meta styles={newStyles.meta}>
           <ArticleBylineWithLinks ast={bylines} />
         </Meta>
         <Separator />
       </Fragment>
     )}
-    <Meta style={styles.meta}>
-      <DatePublicationContainer style={styles.datePublication}>
+    <Meta style={newStyles.meta}>
+      <DatePublicationContainer styles={newStyles.datePublication}>
         <DatePublication date={publishedTime} publication={publicationName} />
       </DatePublicationContainer>
     </Meta>

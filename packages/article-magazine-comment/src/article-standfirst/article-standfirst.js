@@ -1,16 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styles from "../styles";
-import { StandfirstContainer } from "../styles/responsive";
+import newStyles from "../newStyles";
+import { StandfirstContainer } from "../newStyles/responsive";
 
 const HeaderStandfirst = ({ standfirst }) => {
   if (!standfirst) return null;
 
   return (
     <StandfirstContainer
-      accessibilityRole="header"
+      role="header"
       aria-level="2"
-      style={styles.standFirst}
+      styles={newStyles.standFirst}
       testID="standfirst"
     >
       {standfirst}
