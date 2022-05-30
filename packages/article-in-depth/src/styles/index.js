@@ -1,16 +1,16 @@
-import { StyleSheet } from "react-native";
 import { spacing } from "@times-components/ts-styleguide";
 import sharedStyles from "./shared";
 
-const styles = StyleSheet.create({
+const styles = {
   ...sharedStyles,
   leadAsset: {
     marginBottom: spacing(4)
   },
   metaContainer: {
     justifyContent: "center",
-    paddingVertical: spacing(2)
+    paddingTop: spacing(2),
+    paddingBottom: spacing(2)
   }
-});
+};
 
 export default styles;

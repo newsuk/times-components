@@ -10,8 +10,8 @@ import {
   articleDefaultProps,
   articlePropTypes
 } from "./article-prop-types/article-prop-types";
-import newStyles from "./newStyles";
-import { LeadAsset } from "./newStyles/responsive";
+import styles from "./styles";
+import { LeadAsset } from "./styles/responsive";
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -51,7 +51,7 @@ class ArticlePage extends Component {
         <LeadAsset
           {...getLeadAsset(article)}
           renderCaption={({ caption }) => <CentredCaption {...caption} />}
-          style={newStyles.leadAsset}
+          style={styles.leadAsset}
         />
         <ArticleKeylineItem>
           <Meta
