@@ -19,9 +19,6 @@ Array [
     <RelatedArticleSlice
       heading="Related Articles"
     />
-    <RecommendedArticles
-      articleId="dummy-article-id"
-    />
   </div>,
   <div
     id="sponsored-article-container"
@@ -76,9 +73,6 @@ Array [
     <RelatedArticleSlice
       heading="Related Articles"
     />
-    <RecommendedArticles
-      articleId="dummy-article-id"
-    />
   </div>,
   <div
     id="sponsored-article-container"
@@ -122,9 +116,6 @@ Array [
     />
     <RelatedArticleSlice
       heading="Related Articles"
-    />
-    <RecommendedArticles
-      articleId="dummy-article-id"
     />
   </div>,
   <div
