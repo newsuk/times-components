@@ -157,6 +157,7 @@ const renderArticleSkeleton = ({
           )}
           onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
           onViewableItemsChanged={() => null}
+          navigationMode={{isCurrentEdition: false, isPastSixDays: false, isMyArticles: false, isStateless: true }}
         />
       </ContextProviderWithDefaults>
     </MockBookmarksProvider>
