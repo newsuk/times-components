@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+// import gql from "graphql-tag";
 
 import RelatedArticles from '@times-components/related-articles';
 import { GetRecommendedArticles } from '@times-components/provider';
-
 import { RelatedArticleSliceType } from '../../types/related-article-slice';
-
 import { Placeholder } from '@times-components/image';
+import { PlaceholderContainer } from '../common-styles';
 
 type RecommendedArticlesProps = {
   articleId: string;
@@ -13,11 +13,29 @@ type RecommendedArticlesProps = {
   analyticsStream?: (evt: any) => void;
 };
 
+// export const userId = gql`
+//   query GetCpn {
+//     account {
+//       cpn
+//     }
+//   }
+// `;
+
 export const RecommendedArticles = ({
   articleId,
   section,
   analyticsStream
 }: RecommendedArticlesProps) => {
+  const [isReady, setIsReady] = useState<boolean>(false);
+
+  useEffect(() => {
+    setIsReady(true);
+  }, []);
+
+  if (!isReady) {
+    return null;
+  }
+
   return (
     <GetRecommendedArticles
       publisher={'TIMES'}
@@ -32,9 +50,9 @@ export const RecommendedArticles = ({
 
         if (isLoading || !recommendations) {
           return (
-            <div className="placeholder">
+            <PlaceholderContainer>
               <Placeholder />
-            </div>
+            </PlaceholderContainer>
           );
         }
 
