@@ -39,6 +39,7 @@ export const RecommendedArticles = ({
   return (
     <GetRecommendedArticles
       publisher={'TIMES'}
+      // recomArgs={{ userId, articleId }}
       recomArgs={{ userId: '1234', articleId }}
       ssr={false}
       debounceTimeMs={0}
