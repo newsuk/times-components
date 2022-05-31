@@ -43,8 +43,7 @@ export const FlagsContainer = styled(TcView)`
 `;
 
 export const HeaderContainer = styled(TcView)`
-  ${props => props.styles && props.styles}
-  order: 2;
+  ${props => props.styles && props.styles} order: 2;
 
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
@@ -83,8 +82,7 @@ export const LabelContainer = styled(TcView)`
 `;
 
 export const Meta = styled(TcView)`
-  ${props => props.styles && props.styles}
-  max-width: 100%;
+  ${props => props.styles && props.styles} max-width: 100%;
   justify-content: center;
 
   @media (min-width: ${breakpoints.medium}px) {

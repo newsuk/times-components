@@ -26,7 +26,9 @@ const ArticleMeta = ({ bylines, publicationName, publishedTime }) => (
       </Fragment>
     )}
     <Meta style={styles.meta}>
-      <DatePublicationContainer styles={checkStylesForUnits(styles.datePublication)}>
+      <DatePublicationContainer
+        styles={checkStylesForUnits(styles.datePublication)}
+      >
         <DatePublication date={publishedTime} publication={publicationName} />
       </DatePublicationContainer>
     </Meta>
