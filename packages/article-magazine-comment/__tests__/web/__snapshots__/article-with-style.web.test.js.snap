@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-.c14 {
+.c5 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -19,7 +19,7 @@ exports[`full article with style 1`] = `
   z-index: 0;
 }
 
-.c5 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -31,7 +31,7 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
 }
 
-.c24 {
+.c25 {
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -42,13 +42,13 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c24:first-of-type:after {
+.c25:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c27 {
+.c28 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -67,7 +67,7 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c20 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -87,34 +87,6 @@ exports[`full article with style 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c30 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -143,11 +115,39 @@ exports[`full article with style 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c32 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c26 {
+.c27 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -168,7 +168,7 @@ exports[`full article with style 1`] = `
   margin-bottom: 10px;
 }
 
-.c25 {
+.c26 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -187,7 +187,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c21 {
+.c22 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -201,11 +201,11 @@ exports[`full article with style 1`] = `
   min-height: 210px;
 }
 
-.c21.hidden {
+.c22.hidden {
   visibility: hidden;
 }
 
-.c22 {
+.c23 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -217,13 +217,13 @@ exports[`full article with style 1`] = `
   text-transform: uppercase;
 }
 
-.c23 {
+.c24 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
 }
 
-.c28 {
+.c29 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -232,7 +232,7 @@ exports[`full article with style 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c29 {
+.c30 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -271,69 +271,98 @@ exports[`full article with style 1`] = `
   display: flex;
 }
 
-.c2 > .c15 {
+.c2 > .c16 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c19 {
+.c20 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c18 {
+.c19 {
   background-color: #FFFFFF;
   height: 60px;
 }
 
-.c18 [data-tc-sticky-sizer] {
+.c19 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c18.tc-sticky {
+.c19.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR] {
+.c19[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 #c9c7c7ed;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c19[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: #ffffffdb;
 }
 
-.c17 {
+.c18 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c17 + .c16 {
+.c18 + .c17 {
   margin-top: -1px !important;
 }
 
-.c17:last-child {
+.c18:last-child {
   margin-bottom: 30px;
 }
 
-.c17.contains-tc-sticky {
+.c18.contains-tc-sticky {
   border-bottom-color: transparent;
 }
 
 .c4 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   border-radius: 50%;
   height: 100px;
   overflow: hidden;
   width: 100px;
 }
 
-.c12 {
+.c14 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+  color: #696969;
+  margin-top: 15px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -343,18 +372,93 @@ exports[`full article with style 1`] = `
   margin-top: 15px;
 }
 
-.c7 {
+.c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-top: 5px;
   padding-bottom: 15px;
 }
 
 .c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 35px;
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
 }
 
-.c10 {
+.c7 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-size: 30px;
+  line-height: 33px;
+  color: #1D1D1B;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.c11 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -362,7 +466,45 @@ exports[`full article with style 1`] = `
   justify-content: center;
 }
 
-.c9 {
+.c13 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c10 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -373,11 +515,45 @@ exports[`full article with style 1`] = `
   justify-content: center;
 }
 
-.c11 {
+.c12 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: none;
 }
 
-.c13 {
+.c9 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: TimesModern-Regular;
+  font-size: 20px;
+  line-height: 26;
+  color: #333333;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.c15 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -417,7 +593,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c25 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -427,62 +603,62 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c24 {
+  .c25 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c28 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c21 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c31 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c31 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c32 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c32 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c27 {
-    padding-left: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c20 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c20 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c30 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c30 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c31 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c31 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c26 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -494,7 +670,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c25 {
+  .c26 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -503,47 +679,47 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c25 {
+  .c26 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c22 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c23 {
+  .c24 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c23:first-of-type {
+  .c24:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c23:last-child {
+  .c24:last-child {
     margin-left: 1.5%;
   }
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c29 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c28 {
+  .c29 {
     min-height: 283px;
   }
 }
@@ -556,19 +732,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c17 {
+  .c18 {
     width: 56.2%;
   }
 }
@@ -581,13 +757,13 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c14 {
     margin-top: 0;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c8 {
     padding-top: 0;
   }
 }
@@ -609,7 +785,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     font-size: 45px;
     line-height: 50px;
     margin-bottom: 5px;
@@ -617,13 +793,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c11 {
     margin-top: 0;
   }
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c13 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -634,7 +816,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c12 {
     background-color: #DBDBDB;
     display: -webkit-box;
     display: -webkit-flex;
@@ -647,7 +829,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c8 {
+  .c9 {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 25px;
@@ -655,19 +837,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c8 {
+  .c9 {
     margin-bottom: 20px;
   }
 }
 
 @media (min-width:768px) {
-  .c13 {
+  .c15 {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width:1024px) {
-  .c13 {
+  .c15 {
     width: 56.2%;
     margin-left: auto;
     margin-right: auto;
@@ -687,43 +869,15 @@ exports[`full article with style 1`] = `
 }
 
 <style>
-.S1 {
-  margin-bottom: 25px;
-}
-
-.S2 {
-  margin-bottom: 10px;
-}
-
-.S3 {
-  line-height: 33px;
-  margin-bottom: 10px;
-}
-
-.S4 {
-  line-height: 26px;
-  margin-bottom: 15px;
-}
-
-.S5 {
-  line-height: 15px;
-  margin-top: 15px;
-}
-
-.S6 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  margin-bottom: 25px;
-  padding-top: 35px;
-}
-
 .IS1 {
   margin-bottom: 0;
 }
 
 .IS2 {
+  margin-bottom: 25px;
+}
+
+.IS3 {
   font-family: GillSansMTStd-Medium;
   font-size: 12;
   line-height: 12px;
@@ -735,7 +889,16 @@ exports[`full article with style 1`] = `
   color: #1D1D1B;
 }
 
-.IS3 {
+.IS4 {
+  margin-bottom: 10px;
+}
+
+.IS5 {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.IS6 {
   opacity: 1;
   z-index: 2;
   width: 100%;
@@ -743,7 +906,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.IS4 {
+.IS7 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -752,57 +915,57 @@ exports[`full article with style 1`] = `
   padding-bottom: 56.25%;
 }
 
-.IS5 {
+.IS8 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS6 {
+.IS9 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS7 {
+.IS10 {
   margin: 0;
 }
 
-.IS8 {
+.IS11 {
   margin-bottom: 20px;
 }
 
-.IS9 {
-  display: none;
-}
-
-.IS10 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS11 {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
 .IS12 {
-  height: 100%;
-  width: 100%;
+  display: none;
 }
 
 .IS13 {
   height: 100%;
-  position: absolute;
   width: 100%;
 }
 
 .IS14 {
-  padding-bottom: 56.25%;
+  height: 100%;
+  width: 100%;
   position: relative;
 }
 
 .IS15 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS16 {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.IS17 {
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.IS18 {
   margin: 0;
 }
 </style>
@@ -847,53 +1010,53 @@ exports[`full article with style 1`] = `
         className="c2"
       >
         <div
-          className="c3 responsive__HeaderContainer-sc-15qf29k-3 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-marginLeft-1n0xq6e r-marginRight-zso239 r-paddingTop-elmauq S6"
+          className="c3"
         >
           <div
-            className="c4 responsive__AuthorImageContainer-sc-15qf29k-0 c4 css-view-1dbjc4n r-marginBottom-eektet S1"
+            className="c4 IS2"
           >
             <Image />
           </div>
           <div
-            className="css-view-1dbjc4n r-marginBottom-15d164r S2"
+            className="c5 IS4"
           >
             <div
-              className="c5 IS2"
+              className="c6 IS3"
             >
               SOME LABEL
             </div>
           </div>
           <h1
-            className="c6 css-reset-4rbku5 responsive__HeadlineContainer-sc-15qf29k-4 c6 css-text-901oao r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j S3"
+            className="c7"
           >
             Some Headline
           </h1>
           <div
-            className="c7 responsive__FlagsContainer-sc-15qf29k-2 c7 css-view-1dbjc4n"
+            className="c8"
           >
             <ArticleFlags />
           </div>
           <h2
-            className="c8 css-reset-4rbku5 responsive__StandfirstContainer-sc-15qf29k-9 c8 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
+            className="c9"
           >
             Some Standfirst
           </h2>
           <div
-            className="c9 responsive__MetaContainer-sc-15qf29k-7 c9 css-view-1dbjc4n"
+            className="c10"
           >
             <div
-              className="c10 responsive__Meta-sc-15qf29k-6 c10 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c11"
             >
               <ArticleBylineWithLinks />
             </div>
             <div
-              className="c11 responsive__Separator-sc-15qf29k-8 c11 css-view-1dbjc4n"
+              className="c12"
             />
             <div
-              className="c10 responsive__Meta-sc-15qf29k-6 c10 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c13 IS5"
             >
               <div
-                className="c12 responsive__DatePublicationContainer-sc-15qf29k-1 c12 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
+                className="c14"
               >
                 <DatePublication />
               </div>
@@ -901,22 +1064,22 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c13 c14 IS8"
+          className="c15 c5 IS11"
         >
           <figure
-            className="IS7"
+            className="IS10"
           >
             <div
-              className="c14 IS6"
+              className="c5 IS9"
             >
               <div
-                className="c14 IS5"
+                className="c5 IS8"
               >
                 <div
-                  className="IS4"
+                  className="IS7"
                 >
                   <img
-                    className="IS3"
+                    className="IS6"
                   />
                 </div>
               </div>
@@ -927,14 +1090,14 @@ exports[`full article with style 1`] = `
           </figure>
         </div>
         <div
-          className="c15 c16 c17"
+          className="c16 c17 c18"
         >
           <div
-            className="IS9"
+            className="IS12"
           />
           <div>
             <div
-              className="c18"
+              className="c19"
             >
               <div>
                 <SaveAndShareBar />
@@ -944,12 +1107,12 @@ exports[`full article with style 1`] = `
         </div>
       </div>
       <article
-        className="c19"
+        className="c20"
       >
         <div>
           <div>
             <div
-              className="c20"
+              className="c21"
             >
               <ArticleImage />
             </div>
@@ -959,30 +1122,30 @@ exports[`full article with style 1`] = `
           Some Link
         </Link>
         <div
-          className="group-3 hidden c21"
+          className="group-3 hidden c22"
         >
           <h2
-            className="c22"
+            className="c23"
           >
             Sponsored
           </h2>
           <div
-            className="c23"
+            className="c24"
           />
           <div
-            className="c23"
+            className="c24"
           />
         </div>
         <p
-          className="c24"
+          className="c25"
         >
           Some content
         </p>
         <div
-          className="c25"
+          className="c26"
         >
           <div
-            className="c26"
+            className="c27"
           >
             <PullQuote>
               The pull quote content
@@ -990,25 +1153,25 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c20"
+          className="c21"
         >
           <figure
-            className="IS15"
+            className="IS18"
           >
             <div
-              className="c14 IS14"
+              className="c5 IS17"
             >
               <div
-                className="c14 IS13"
+                className="c5 IS16"
               >
                 <div
-                  className="IS12"
+                  className="IS15"
                 >
                   <div
-                    className="IS11"
+                    className="IS14"
                   >
                     <video
-                      className="video-js IS10"
+                      className="video-js IS13"
                     />
                   </div>
                 </div>
@@ -1016,7 +1179,7 @@ exports[`full article with style 1`] = `
             </div>
             <figcaption>
               <div
-                className="c27"
+                className="c28"
               >
                 <Caption />
               </div>
@@ -1024,10 +1187,10 @@ exports[`full article with style 1`] = `
           </figure>
         </div>
         <div
-          className="c28"
+          className="c29"
         >
           <h2
-            className="c29"
+            className="c30"
           >
             Advertisement
           </h2>
@@ -1036,7 +1199,7 @@ exports[`full article with style 1`] = `
         <div>
           <div>
             <div
-              className="c30"
+              className="c31"
             >
               <ArticleImage />
             </div>
@@ -1045,7 +1208,7 @@ exports[`full article with style 1`] = `
         <div>
           <div>
             <div
-              className="c31"
+              className="c32"
             >
               <ArticleImage />
             </div>
@@ -1063,7 +1226,7 @@ exports[`full article with style 1`] = `
 `;
 
 exports[`full article with style in the culture magazine 1`] = `
-.c14 {
+.c5 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1081,7 +1244,7 @@ exports[`full article with style in the culture magazine 1`] = `
   z-index: 0;
 }
 
-.c5 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -1093,7 +1256,7 @@ exports[`full article with style in the culture magazine 1`] = `
   overflow-wrap: break-word;
 }
 
-.c24 {
+.c25 {
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -1104,13 +1267,13 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-left: 10px;
 }
 
-.c24:first-of-type:after {
+.c25:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c27 {
+.c28 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1129,7 +1292,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-left: 10px;
 }
 
-.c20 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1149,34 +1312,6 @@ exports[`full article with style in the culture magazine 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c30 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -1205,11 +1340,39 @@ exports[`full article with style in the culture magazine 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c32 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c26 {
+.c27 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1230,7 +1393,7 @@ exports[`full article with style in the culture magazine 1`] = `
   margin-bottom: 10px;
 }
 
-.c25 {
+.c26 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1249,7 +1412,7 @@ exports[`full article with style in the culture magazine 1`] = `
   display: block;
 }
 
-.c21 {
+.c22 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1263,11 +1426,11 @@ exports[`full article with style in the culture magazine 1`] = `
   min-height: 210px;
 }
 
-.c21.hidden {
+.c22.hidden {
   visibility: hidden;
 }
 
-.c22 {
+.c23 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -1279,13 +1442,13 @@ exports[`full article with style in the culture magazine 1`] = `
   text-transform: uppercase;
 }
 
-.c23 {
+.c24 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
 }
 
-.c28 {
+.c29 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -1294,7 +1457,7 @@ exports[`full article with style in the culture magazine 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c29 {
+.c30 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -1333,69 +1496,98 @@ exports[`full article with style in the culture magazine 1`] = `
   display: flex;
 }
 
-.c2 > .c15 {
+.c2 > .c16 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c19 {
+.c20 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c18 {
+.c19 {
   background-color: #FFFFFF;
   height: 60px;
 }
 
-.c18 [data-tc-sticky-sizer] {
+.c19 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c18.tc-sticky {
+.c19.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR] {
+.c19[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 #c9c7c7ed;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c19[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: #ffffffdb;
 }
 
-.c17 {
+.c18 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c17 + .c16 {
+.c18 + .c17 {
   margin-top: -1px !important;
 }
 
-.c17:last-child {
+.c18:last-child {
   margin-bottom: 30px;
 }
 
-.c17.contains-tc-sticky {
+.c18.contains-tc-sticky {
   border-bottom-color: transparent;
 }
 
 .c4 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   border-radius: 50%;
   height: 100px;
   overflow: hidden;
   width: 100px;
 }
 
-.c12 {
+.c14 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+  color: #696969;
+  margin-top: 15px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -1405,18 +1597,94 @@ exports[`full article with style in the culture magazine 1`] = `
   margin-top: 15px;
 }
 
-.c7 {
+.c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-top: 5px;
   padding-bottom: 15px;
 }
 
 .c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 35px;
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
 }
 
-.c10 {
+.c7 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: Flama-Bold;
+  font-size: 30px;
+  line-height: 33px;
+  color: #1D1D1B;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.c11 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1424,7 +1692,45 @@ exports[`full article with style in the culture magazine 1`] = `
   justify-content: center;
 }
 
-.c9 {
+.c13 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c10 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -1435,11 +1741,45 @@ exports[`full article with style in the culture magazine 1`] = `
   justify-content: center;
 }
 
-.c11 {
+.c12 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: none;
 }
 
-.c13 {
+.c9 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: TimesModern-Regular;
+  font-size: 20px;
+  line-height: 26;
+  color: #333333;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.c15 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -1479,7 +1819,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c25 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -1489,62 +1829,62 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c24 {
+  .c25 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c28 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c21 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c31 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c31 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c32 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c32 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c27 {
-    padding-left: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c20 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c20 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c30 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c30 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c31 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c31 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c26 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -1556,7 +1896,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c25 {
+  .c26 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -1565,47 +1905,47 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c25 {
+  .c26 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c22 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c23 {
+  .c24 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c23:first-of-type {
+  .c24:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c23:last-child {
+  .c24:last-child {
     margin-left: 1.5%;
   }
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c29 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c28 {
+  .c29 {
     min-height: 283px;
   }
 }
@@ -1618,19 +1958,19 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c17 {
+  .c18 {
     width: 56.2%;
   }
 }
@@ -1643,13 +1983,13 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c14 {
     margin-top: 0;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c8 {
     padding-top: 0;
   }
 }
@@ -1671,7 +2011,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     font-size: 45px;
     line-height: 50px;
     margin-bottom: 5px;
@@ -1679,13 +2019,19 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c11 {
     margin-top: 0;
   }
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c13 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -1696,7 +2042,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c12 {
     background-color: #DBDBDB;
     display: -webkit-box;
     display: -webkit-flex;
@@ -1709,7 +2055,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c8 {
+  .c9 {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 25px;
@@ -1717,19 +2063,19 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c8 {
+  .c9 {
     margin-bottom: 20px;
   }
 }
 
 @media (min-width:768px) {
-  .c13 {
+  .c15 {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width:1024px) {
-  .c13 {
+  .c15 {
     width: 56.2%;
     margin-left: auto;
     margin-right: auto;
@@ -1749,43 +2095,15 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 <style>
-.S1 {
-  margin-bottom: 25px;
-}
-
-.S2 {
-  margin-bottom: 10px;
-}
-
-.S3 {
-  line-height: 33px;
-  margin-bottom: 10px;
-}
-
-.S4 {
-  line-height: 26px;
-  margin-bottom: 15px;
-}
-
-.S5 {
-  line-height: 15px;
-  margin-top: 15px;
-}
-
-.S6 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  margin-bottom: 25px;
-  padding-top: 35px;
-}
-
 .IS1 {
   margin-bottom: 0;
 }
 
 .IS2 {
+  margin-bottom: 25px;
+}
+
+.IS3 {
   font-family: GillSansMTStd-Medium;
   font-size: 12;
   line-height: 12px;
@@ -1797,11 +2115,16 @@ exports[`full article with style in the culture magazine 1`] = `
   color: #7B0046;
 }
 
-.IS3 {
-  font-family: Flama-Bold;
+.IS4 {
+  margin-bottom: 10px;
 }
 
-.IS4 {
+.IS5 {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.IS6 {
   opacity: 1;
   z-index: 2;
   width: 100%;
@@ -1809,7 +2132,7 @@ exports[`full article with style in the culture magazine 1`] = `
   display: block;
 }
 
-.IS5 {
+.IS7 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -1818,38 +2141,27 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-bottom: 56.25%;
 }
 
-.IS6 {
+.IS8 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS7 {
+.IS9 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS8 {
+.IS10 {
   margin: 0;
 }
 
-.IS9 {
+.IS11 {
   margin-bottom: 20px;
 }
 
-.IS10 {
-  display: none;
-}
-
-.IS11 {
-  height: 100%;
-  width: 100%;
-}
-
 .IS12 {
-  height: 100%;
-  width: 100%;
-  position: relative;
+  display: none;
 }
 
 .IS13 {
@@ -1859,16 +2171,27 @@ exports[`full article with style in the culture magazine 1`] = `
 
 .IS14 {
   height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.IS15 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS16 {
+  height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS15 {
+.IS17 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS16 {
+.IS18 {
   margin: 0;
 }
 </style>
@@ -1913,53 +2236,53 @@ exports[`full article with style in the culture magazine 1`] = `
         className="c2"
       >
         <div
-          className="c3 responsive__HeaderContainer-sc-15qf29k-3 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-marginLeft-1n0xq6e r-marginRight-zso239 r-paddingTop-elmauq S6"
+          className="c3"
         >
           <div
-            className="c4 responsive__AuthorImageContainer-sc-15qf29k-0 c4 css-view-1dbjc4n r-marginBottom-eektet S1"
+            className="c4 IS2"
           >
             <Image />
           </div>
           <div
-            className="css-view-1dbjc4n r-marginBottom-15d164r S2"
+            className="c5 IS4"
           >
             <div
-              className="c5 IS2"
+              className="c6 IS3"
             >
               SOME LABEL
             </div>
           </div>
           <h1
-            className="c6 css-reset-4rbku5 responsive__HeadlineContainer-sc-15qf29k-4 c6 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
+            className="c7"
           >
             Some Headline
           </h1>
           <div
-            className="c7 responsive__FlagsContainer-sc-15qf29k-2 c7 css-view-1dbjc4n"
+            className="c8"
           >
             <ArticleFlags />
           </div>
           <h2
-            className="c8 css-reset-4rbku5 responsive__StandfirstContainer-sc-15qf29k-9 c8 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
+            className="c9"
           >
             Some Standfirst
           </h2>
           <div
-            className="c9 responsive__MetaContainer-sc-15qf29k-7 c9 css-view-1dbjc4n"
+            className="c10"
           >
             <div
-              className="c10 responsive__Meta-sc-15qf29k-6 c10 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c11"
             >
               <ArticleBylineWithLinks />
             </div>
             <div
-              className="c11 responsive__Separator-sc-15qf29k-8 c11 css-view-1dbjc4n"
+              className="c12"
             />
             <div
-              className="c10 responsive__Meta-sc-15qf29k-6 c10 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c13 IS5"
             >
               <div
-                className="c12 responsive__DatePublicationContainer-sc-15qf29k-1 c12 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
+                className="c14"
               >
                 <DatePublication />
               </div>
@@ -1967,22 +2290,22 @@ exports[`full article with style in the culture magazine 1`] = `
           </div>
         </div>
         <div
-          className="c13 c14 IS9"
+          className="c15 c5 IS11"
         >
           <figure
-            className="IS8"
+            className="IS10"
           >
             <div
-              className="c14 IS7"
+              className="c5 IS9"
             >
               <div
-                className="c14 IS6"
+                className="c5 IS8"
               >
                 <div
-                  className="IS5"
+                  className="IS7"
                 >
                   <img
-                    className="IS4"
+                    className="IS6"
                   />
                 </div>
               </div>
@@ -1993,14 +2316,14 @@ exports[`full article with style in the culture magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c15 c16 c17"
+          className="c16 c17 c18"
         >
           <div
-            className="IS10"
+            className="IS12"
           />
           <div>
             <div
-              className="c18"
+              className="c19"
             >
               <div>
                 <SaveAndShareBar />
@@ -2010,12 +2333,12 @@ exports[`full article with style in the culture magazine 1`] = `
         </div>
       </div>
       <article
-        className="c19"
+        className="c20"
       >
         <div>
           <div>
             <div
-              className="c20"
+              className="c21"
             >
               <ArticleImage />
             </div>
@@ -2025,30 +2348,30 @@ exports[`full article with style in the culture magazine 1`] = `
           Some Link
         </Link>
         <div
-          className="group-3 hidden c21"
+          className="group-3 hidden c22"
         >
           <h2
-            className="c22"
+            className="c23"
           >
             Sponsored
           </h2>
           <div
-            className="c23"
+            className="c24"
           />
           <div
-            className="c23"
+            className="c24"
           />
         </div>
         <p
-          className="c24"
+          className="c25"
         >
           Some content
         </p>
         <div
-          className="c25"
+          className="c26"
         >
           <div
-            className="c26"
+            className="c27"
           >
             <PullQuote>
               The pull quote content
@@ -2056,25 +2379,25 @@ exports[`full article with style in the culture magazine 1`] = `
           </div>
         </div>
         <div
-          className="c20"
+          className="c21"
         >
           <figure
-            className="IS16"
+            className="IS18"
           >
             <div
-              className="c14 IS15"
+              className="c5 IS17"
             >
               <div
-                className="c14 IS14"
+                className="c5 IS16"
               >
                 <div
-                  className="IS13"
+                  className="IS15"
                 >
                   <div
-                    className="IS12"
+                    className="IS14"
                   >
                     <video
-                      className="video-js IS11"
+                      className="video-js IS13"
                     />
                   </div>
                 </div>
@@ -2082,7 +2405,7 @@ exports[`full article with style in the culture magazine 1`] = `
             </div>
             <figcaption>
               <div
-                className="c27"
+                className="c28"
               >
                 <Caption />
               </div>
@@ -2090,10 +2413,10 @@ exports[`full article with style in the culture magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c28"
+          className="c29"
         >
           <h2
-            className="c29"
+            className="c30"
           >
             Advertisement
           </h2>
@@ -2102,7 +2425,7 @@ exports[`full article with style in the culture magazine 1`] = `
         <div>
           <div>
             <div
-              className="c30"
+              className="c31"
             >
               <ArticleImage />
             </div>
@@ -2111,7 +2434,7 @@ exports[`full article with style in the culture magazine 1`] = `
         <div>
           <div>
             <div
-              className="c31"
+              className="c32"
             >
               <ArticleImage />
             </div>
@@ -2129,7 +2452,7 @@ exports[`full article with style in the culture magazine 1`] = `
 `;
 
 exports[`full article with style in the style magazine 1`] = `
-.c14 {
+.c5 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2147,7 +2470,7 @@ exports[`full article with style in the style magazine 1`] = `
   z-index: 0;
 }
 
-.c5 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -2159,7 +2482,7 @@ exports[`full article with style in the style magazine 1`] = `
   overflow-wrap: break-word;
 }
 
-.c24 {
+.c25 {
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -2170,13 +2493,13 @@ exports[`full article with style in the style magazine 1`] = `
   padding-left: 10px;
 }
 
-.c24:first-of-type:after {
+.c25:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c27 {
+.c28 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2195,7 +2518,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-left: 10px;
 }
 
-.c20 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2215,34 +2538,6 @@ exports[`full article with style in the style magazine 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c30 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -2271,11 +2566,39 @@ exports[`full article with style in the style magazine 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c32 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c26 {
+.c27 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2296,7 +2619,7 @@ exports[`full article with style in the style magazine 1`] = `
   margin-bottom: 10px;
 }
 
-.c25 {
+.c26 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -2315,7 +2638,7 @@ exports[`full article with style in the style magazine 1`] = `
   display: block;
 }
 
-.c21 {
+.c22 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2329,11 +2652,11 @@ exports[`full article with style in the style magazine 1`] = `
   min-height: 210px;
 }
 
-.c21.hidden {
+.c22.hidden {
   visibility: hidden;
 }
 
-.c22 {
+.c23 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -2345,13 +2668,13 @@ exports[`full article with style in the style magazine 1`] = `
   text-transform: uppercase;
 }
 
-.c23 {
+.c24 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
 }
 
-.c28 {
+.c29 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -2360,7 +2683,7 @@ exports[`full article with style in the style magazine 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c29 {
+.c30 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -2399,69 +2722,98 @@ exports[`full article with style in the style magazine 1`] = `
   display: flex;
 }
 
-.c2 > .c15 {
+.c2 > .c16 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c19 {
+.c20 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c18 {
+.c19 {
   background-color: #FFFFFF;
   height: 60px;
 }
 
-.c18 [data-tc-sticky-sizer] {
+.c19 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c18.tc-sticky {
+.c19.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR] {
+.c19[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 #c9c7c7ed;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c19[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: #ffffffdb;
 }
 
-.c17 {
+.c18 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c17 + .c16 {
+.c18 + .c17 {
   margin-top: -1px !important;
 }
 
-.c17:last-child {
+.c18:last-child {
   margin-bottom: 30px;
 }
 
-.c17.contains-tc-sticky {
+.c18.contains-tc-sticky {
   border-bottom-color: transparent;
 }
 
 .c4 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   border-radius: 50%;
   height: 100px;
   overflow: hidden;
   width: 100px;
 }
 
-.c12 {
+.c14 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+  color: #696969;
+  margin-top: 15px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2471,18 +2823,95 @@ exports[`full article with style in the style magazine 1`] = `
   margin-top: 15px;
 }
 
-.c7 {
+.c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-top: 5px;
   padding-bottom: 15px;
 }
 
 .c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 35px;
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
 }
 
-.c10 {
+.c7 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: CenturyGothic-Bold;
+  font-size: 30px;
+  line-height: 33px;
+  color: #1D1D1B;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.c11 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -2490,7 +2919,45 @@ exports[`full article with style in the style magazine 1`] = `
   justify-content: center;
 }
 
-.c9 {
+.c13 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c10 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -2501,11 +2968,45 @@ exports[`full article with style in the style magazine 1`] = `
   justify-content: center;
 }
 
-.c11 {
+.c12 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: none;
 }
 
-.c13 {
+.c9 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: TimesModern-Regular;
+  font-size: 20px;
+  line-height: 26;
+  color: #333333;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.c15 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -2545,7 +3046,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c25 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -2555,62 +3056,62 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c24 {
+  .c25 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c28 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c21 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c31 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c31 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c32 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c32 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c27 {
-    padding-left: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c20 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c20 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c30 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c30 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c31 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c31 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c26 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -2622,7 +3123,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c25 {
+  .c26 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -2631,47 +3132,47 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c25 {
+  .c26 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c22 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c23 {
+  .c24 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c23:first-of-type {
+  .c24:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c23:last-child {
+  .c24:last-child {
     margin-left: 1.5%;
   }
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c29 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c28 {
+  .c29 {
     min-height: 283px;
   }
 }
@@ -2684,19 +3185,19 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c17 {
+  .c18 {
     width: 56.2%;
   }
 }
@@ -2709,13 +3210,13 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c14 {
     margin-top: 0;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c8 {
     padding-top: 0;
   }
 }
@@ -2737,7 +3238,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     font-size: 45px;
     line-height: 50px;
     margin-bottom: 5px;
@@ -2745,13 +3246,19 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c11 {
     margin-top: 0;
   }
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c13 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -2762,7 +3269,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c12 {
     background-color: #DBDBDB;
     display: -webkit-box;
     display: -webkit-flex;
@@ -2775,7 +3282,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c8 {
+  .c9 {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 25px;
@@ -2783,19 +3290,19 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c8 {
+  .c9 {
     margin-bottom: 20px;
   }
 }
 
 @media (min-width:768px) {
-  .c13 {
+  .c15 {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width:1024px) {
-  .c13 {
+  .c15 {
     width: 56.2%;
     margin-left: auto;
     margin-right: auto;
@@ -2815,43 +3322,15 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 <style>
-.S1 {
-  margin-bottom: 25px;
-}
-
-.S2 {
-  margin-bottom: 10px;
-}
-
-.S3 {
-  line-height: 33px;
-  margin-bottom: 10px;
-}
-
-.S4 {
-  line-height: 26px;
-  margin-bottom: 15px;
-}
-
-.S5 {
-  line-height: 15px;
-  margin-top: 15px;
-}
-
-.S6 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  margin-bottom: 25px;
-  padding-top: 35px;
-}
-
 .IS1 {
   margin-bottom: 0;
 }
 
 .IS2 {
+  margin-bottom: 25px;
+}
+
+.IS3 {
   font-family: GillSansMTStd-Medium;
   font-size: 12;
   line-height: 12px;
@@ -2863,12 +3342,16 @@ exports[`full article with style in the style magazine 1`] = `
   color: #BC3385;
 }
 
-.IS3 {
-  font-family: CenturyGothic-Bold;
-  text-transform: uppercase;
+.IS4 {
+  margin-bottom: 10px;
 }
 
-.IS4 {
+.IS5 {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.IS6 {
   opacity: 1;
   z-index: 2;
   width: 100%;
@@ -2876,7 +3359,7 @@ exports[`full article with style in the style magazine 1`] = `
   display: block;
 }
 
-.IS5 {
+.IS7 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -2885,38 +3368,27 @@ exports[`full article with style in the style magazine 1`] = `
   padding-bottom: 56.25%;
 }
 
-.IS6 {
+.IS8 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS7 {
+.IS9 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS8 {
+.IS10 {
   margin: 0;
 }
 
-.IS9 {
+.IS11 {
   margin-bottom: 20px;
 }
 
-.IS10 {
-  display: none;
-}
-
-.IS11 {
-  height: 100%;
-  width: 100%;
-}
-
 .IS12 {
-  height: 100%;
-  width: 100%;
-  position: relative;
+  display: none;
 }
 
 .IS13 {
@@ -2926,16 +3398,27 @@ exports[`full article with style in the style magazine 1`] = `
 
 .IS14 {
   height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.IS15 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS16 {
+  height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS15 {
+.IS17 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS16 {
+.IS18 {
   margin: 0;
 }
 </style>
@@ -2980,53 +3463,53 @@ exports[`full article with style in the style magazine 1`] = `
         className="c2"
       >
         <div
-          className="c3 responsive__HeaderContainer-sc-15qf29k-3 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-marginLeft-1n0xq6e r-marginRight-zso239 r-paddingTop-elmauq S6"
+          className="c3"
         >
           <div
-            className="c4 responsive__AuthorImageContainer-sc-15qf29k-0 c4 css-view-1dbjc4n r-marginBottom-eektet S1"
+            className="c4 IS2"
           >
             <Image />
           </div>
           <div
-            className="css-view-1dbjc4n r-marginBottom-15d164r S2"
+            className="c5 IS4"
           >
             <div
-              className="c5 IS2"
+              className="c6 IS3"
             >
               SOME LABEL
             </div>
           </div>
           <h1
-            className="c6 css-reset-4rbku5 responsive__HeadlineContainer-sc-15qf29k-4 c6 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
+            className="c7"
           >
             Some Headline
           </h1>
           <div
-            className="c7 responsive__FlagsContainer-sc-15qf29k-2 c7 css-view-1dbjc4n"
+            className="c8"
           >
             <ArticleFlags />
           </div>
           <h2
-            className="c8 css-reset-4rbku5 responsive__StandfirstContainer-sc-15qf29k-9 c8 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
+            className="c9"
           >
             Some Standfirst
           </h2>
           <div
-            className="c9 responsive__MetaContainer-sc-15qf29k-7 c9 css-view-1dbjc4n"
+            className="c10"
           >
             <div
-              className="c10 responsive__Meta-sc-15qf29k-6 c10 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c11"
             >
               <ArticleBylineWithLinks />
             </div>
             <div
-              className="c11 responsive__Separator-sc-15qf29k-8 c11 css-view-1dbjc4n"
+              className="c12"
             />
             <div
-              className="c10 responsive__Meta-sc-15qf29k-6 c10 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c13 IS5"
             >
               <div
-                className="c12 responsive__DatePublicationContainer-sc-15qf29k-1 c12 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
+                className="c14"
               >
                 <DatePublication />
               </div>
@@ -3034,22 +3517,22 @@ exports[`full article with style in the style magazine 1`] = `
           </div>
         </div>
         <div
-          className="c13 c14 IS9"
+          className="c15 c5 IS11"
         >
           <figure
-            className="IS8"
+            className="IS10"
           >
             <div
-              className="c14 IS7"
+              className="c5 IS9"
             >
               <div
-                className="c14 IS6"
+                className="c5 IS8"
               >
                 <div
-                  className="IS5"
+                  className="IS7"
                 >
                   <img
-                    className="IS4"
+                    className="IS6"
                   />
                 </div>
               </div>
@@ -3060,14 +3543,14 @@ exports[`full article with style in the style magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c15 c16 c17"
+          className="c16 c17 c18"
         >
           <div
-            className="IS10"
+            className="IS12"
           />
           <div>
             <div
-              className="c18"
+              className="c19"
             >
               <div>
                 <SaveAndShareBar />
@@ -3077,12 +3560,12 @@ exports[`full article with style in the style magazine 1`] = `
         </div>
       </div>
       <article
-        className="c19"
+        className="c20"
       >
         <div>
           <div>
             <div
-              className="c20"
+              className="c21"
             >
               <ArticleImage />
             </div>
@@ -3092,30 +3575,30 @@ exports[`full article with style in the style magazine 1`] = `
           Some Link
         </Link>
         <div
-          className="group-3 hidden c21"
+          className="group-3 hidden c22"
         >
           <h2
-            className="c22"
+            className="c23"
           >
             Sponsored
           </h2>
           <div
-            className="c23"
+            className="c24"
           />
           <div
-            className="c23"
+            className="c24"
           />
         </div>
         <p
-          className="c24"
+          className="c25"
         >
           Some content
         </p>
         <div
-          className="c25"
+          className="c26"
         >
           <div
-            className="c26"
+            className="c27"
           >
             <PullQuote>
               The pull quote content
@@ -3123,25 +3606,25 @@ exports[`full article with style in the style magazine 1`] = `
           </div>
         </div>
         <div
-          className="c20"
+          className="c21"
         >
           <figure
-            className="IS16"
+            className="IS18"
           >
             <div
-              className="c14 IS15"
+              className="c5 IS17"
             >
               <div
-                className="c14 IS14"
+                className="c5 IS16"
               >
                 <div
-                  className="IS13"
+                  className="IS15"
                 >
                   <div
-                    className="IS12"
+                    className="IS14"
                   >
                     <video
-                      className="video-js IS11"
+                      className="video-js IS13"
                     />
                   </div>
                 </div>
@@ -3149,7 +3632,7 @@ exports[`full article with style in the style magazine 1`] = `
             </div>
             <figcaption>
               <div
-                className="c27"
+                className="c28"
               >
                 <Caption />
               </div>
@@ -3157,10 +3640,10 @@ exports[`full article with style in the style magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c28"
+          className="c29"
         >
           <h2
-            className="c29"
+            className="c30"
           >
             Advertisement
           </h2>
@@ -3169,7 +3652,7 @@ exports[`full article with style in the style magazine 1`] = `
         <div>
           <div>
             <div
-              className="c30"
+              className="c31"
             >
               <ArticleImage />
             </div>
@@ -3178,7 +3661,7 @@ exports[`full article with style in the style magazine 1`] = `
         <div>
           <div>
             <div
-              className="c31"
+              className="c32"
             >
               <ArticleImage />
             </div>
@@ -3196,7 +3679,7 @@ exports[`full article with style in the style magazine 1`] = `
 `;
 
 exports[`full article with style in the sunday times magazine 1`] = `
-.c14 {
+.c5 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3214,7 +3697,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   z-index: 0;
 }
 
-.c5 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -3226,7 +3709,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   overflow-wrap: break-word;
 }
 
-.c24 {
+.c25 {
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -3237,13 +3720,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-left: 10px;
 }
 
-.c24:first-of-type:after {
+.c25:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c27 {
+.c28 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3262,7 +3745,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-left: 10px;
 }
 
-.c20 {
+.c21 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3282,34 +3765,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c30 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -3338,11 +3793,39 @@ exports[`full article with style in the sunday times magazine 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c32 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c26 {
+.c27 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3363,7 +3846,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   margin-bottom: 10px;
 }
 
-.c25 {
+.c26 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -3382,7 +3865,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   display: block;
 }
 
-.c21 {
+.c22 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -3396,11 +3879,11 @@ exports[`full article with style in the sunday times magazine 1`] = `
   min-height: 210px;
 }
 
-.c21.hidden {
+.c22.hidden {
   visibility: hidden;
 }
 
-.c22 {
+.c23 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -3412,13 +3895,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
   text-transform: uppercase;
 }
 
-.c23 {
+.c24 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
 }
 
-.c28 {
+.c29 {
   clear: both;
   min-height: 283px;
   margin: 30px 0;
@@ -3427,7 +3910,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   border-bottom: 1px solid rgb(219,219,219);
 }
 
-.c29 {
+.c30 {
   border-bottom: 1px solid rgb(219,219,219);
   color: #696969;
   -webkit-flex: 1 1 100%;
@@ -3466,69 +3949,98 @@ exports[`full article with style in the sunday times magazine 1`] = `
   display: flex;
 }
 
-.c2 > .c15 {
+.c2 > .c16 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c19 {
+.c20 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c18 {
+.c19 {
   background-color: #FFFFFF;
   height: 60px;
 }
 
-.c18 [data-tc-sticky-sizer] {
+.c19 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c18.tc-sticky {
+.c19.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR] {
+.c19[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 #c9c7c7ed;
 }
 
-.c18[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c19[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: #ffffffdb;
 }
 
-.c17 {
+.c18 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c17 + .c16 {
+.c18 + .c17 {
   margin-top: -1px !important;
 }
 
-.c17:last-child {
+.c18:last-child {
   margin-bottom: 30px;
 }
 
-.c17.contains-tc-sticky {
+.c18.contains-tc-sticky {
   border-bottom-color: transparent;
 }
 
 .c4 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   border-radius: 50%;
   height: 100px;
   overflow: hidden;
   width: 100px;
 }
 
-.c12 {
+.c14 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+  color: #696969;
+  margin-top: 15px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3538,18 +4050,94 @@ exports[`full article with style in the sunday times magazine 1`] = `
   margin-top: 15px;
 }
 
-.c7 {
+.c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-top: 5px;
   padding-bottom: 15px;
 }
 
 .c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 35px;
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
 }
 
-.c10 {
+.c7 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: Tiempos-Headline-Bold;
+  font-size: 30px;
+  line-height: 33px;
+  color: #1D1D1B;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.c11 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 100%;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -3557,7 +4145,45 @@ exports[`full article with style in the sunday times magazine 1`] = `
   justify-content: center;
 }
 
-.c9 {
+.c13 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c10 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -3568,11 +4194,45 @@ exports[`full article with style in the sunday times magazine 1`] = `
   justify-content: center;
 }
 
-.c11 {
+.c12 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: none;
 }
 
-.c13 {
+.c9 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: TimesModern-Regular;
+  font-size: 20px;
+  line-height: 26;
+  color: #333333;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.c15 {
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
@@ -3612,7 +4272,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c24 {
+  .c25 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -3622,62 +4282,62 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c24 {
+  .c25 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c28 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
+  .c21 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c31 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c31 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c32 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c32 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c27 {
-    padding-left: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c20 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c20 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c30 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c30 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c31 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c31 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c26 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -3689,7 +4349,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c25 {
+  .c26 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -3698,47 +4358,47 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c25 {
+  .c26 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c21 {
+  .c22 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c21 {
+  .c22 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c23 {
+  .c24 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c23:first-of-type {
+  .c24:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c23:last-child {
+  .c24:last-child {
     margin-left: 1.5%;
   }
 }
 
 @media (min-width:768px) {
-  .c28 {
+  .c29 {
     min-height: 123px;
   }
 }
 
 @media (min-width:970px) {
-  .c28 {
+  .c29 {
     min-height: 283px;
   }
 }
@@ -3751,19 +4411,19 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c18 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c17 {
+  .c18 {
     width: 56.2%;
   }
 }
@@ -3776,13 +4436,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c14 {
     margin-top: 0;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c8 {
     padding-top: 0;
   }
 }
@@ -3804,7 +4464,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     font-size: 45px;
     line-height: 50px;
     margin-bottom: 5px;
@@ -3812,13 +4472,19 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c11 {
     margin-top: 0;
   }
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c13 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -3829,7 +4495,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c12 {
     background-color: #DBDBDB;
     display: -webkit-box;
     display: -webkit-flex;
@@ -3842,7 +4508,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c8 {
+  .c9 {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 25px;
@@ -3850,19 +4516,19 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c8 {
+  .c9 {
     margin-bottom: 20px;
   }
 }
 
 @media (min-width:768px) {
-  .c13 {
+  .c15 {
     margin-bottom: 30px;
   }
 }
 
 @media (min-width:1024px) {
-  .c13 {
+  .c15 {
     width: 56.2%;
     margin-left: auto;
     margin-right: auto;
@@ -3882,43 +4548,15 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 <style>
-.S1 {
-  margin-bottom: 25px;
-}
-
-.S2 {
-  margin-bottom: 10px;
-}
-
-.S3 {
-  line-height: 33px;
-  margin-bottom: 10px;
-}
-
-.S4 {
-  line-height: 26px;
-  margin-bottom: 15px;
-}
-
-.S5 {
-  line-height: 15px;
-  margin-top: 15px;
-}
-
-.S6 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  margin-bottom: 25px;
-  padding-top: 35px;
-}
-
 .IS1 {
   margin-bottom: 0;
 }
 
 .IS2 {
+  margin-bottom: 25px;
+}
+
+.IS3 {
   font-family: GillSansMTStd-Medium;
   font-size: 12;
   line-height: 12px;
@@ -3930,11 +4568,16 @@ exports[`full article with style in the sunday times magazine 1`] = `
   color: #F13D00;
 }
 
-.IS3 {
-  font-family: Tiempos-Headline-Bold;
+.IS4 {
+  margin-bottom: 10px;
 }
 
-.IS4 {
+.IS5 {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.IS6 {
   opacity: 1;
   z-index: 2;
   width: 100%;
@@ -3942,7 +4585,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   display: block;
 }
 
-.IS5 {
+.IS7 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -3951,38 +4594,27 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-bottom: 56.25%;
 }
 
-.IS6 {
+.IS8 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS7 {
+.IS9 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS8 {
+.IS10 {
   margin: 0;
 }
 
-.IS9 {
+.IS11 {
   margin-bottom: 20px;
 }
 
-.IS10 {
-  display: none;
-}
-
-.IS11 {
-  height: 100%;
-  width: 100%;
-}
-
 .IS12 {
-  height: 100%;
-  width: 100%;
-  position: relative;
+  display: none;
 }
 
 .IS13 {
@@ -3992,16 +4624,27 @@ exports[`full article with style in the sunday times magazine 1`] = `
 
 .IS14 {
   height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.IS15 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS16 {
+  height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS15 {
+.IS17 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS16 {
+.IS18 {
   margin: 0;
 }
 </style>
@@ -4046,53 +4689,53 @@ exports[`full article with style in the sunday times magazine 1`] = `
         className="c2"
       >
         <div
-          className="c3 responsive__HeaderContainer-sc-15qf29k-3 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-marginLeft-1n0xq6e r-marginRight-zso239 r-paddingTop-elmauq S6"
+          className="c3"
         >
           <div
-            className="c4 responsive__AuthorImageContainer-sc-15qf29k-0 c4 css-view-1dbjc4n r-marginBottom-eektet S1"
+            className="c4 IS2"
           >
             <Image />
           </div>
           <div
-            className="css-view-1dbjc4n r-marginBottom-15d164r S2"
+            className="c5 IS4"
           >
             <div
-              className="c5 IS2"
+              className="c6 IS3"
             >
               SOME LABEL
             </div>
           </div>
           <h1
-            className="c6 css-reset-4rbku5 responsive__HeadlineContainer-sc-15qf29k-4 c6 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
+            className="c7"
           >
             Some Headline
           </h1>
           <div
-            className="c7 responsive__FlagsContainer-sc-15qf29k-2 c7 css-view-1dbjc4n"
+            className="c8"
           >
             <ArticleFlags />
           </div>
           <h2
-            className="c8 css-reset-4rbku5 responsive__StandfirstContainer-sc-15qf29k-9 c8 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
+            className="c9"
           >
             Some Standfirst
           </h2>
           <div
-            className="c9 responsive__MetaContainer-sc-15qf29k-7 c9 css-view-1dbjc4n"
+            className="c10"
           >
             <div
-              className="c10 responsive__Meta-sc-15qf29k-6 c10 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c11"
             >
               <ArticleBylineWithLinks />
             </div>
             <div
-              className="c11 responsive__Separator-sc-15qf29k-8 c11 css-view-1dbjc4n"
+              className="c12"
             />
             <div
-              className="c10 responsive__Meta-sc-15qf29k-6 c10 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+              className="c13 IS5"
             >
               <div
-                className="c12 responsive__DatePublicationContainer-sc-15qf29k-1 c12 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
+                className="c14"
               >
                 <DatePublication />
               </div>
@@ -4100,22 +4743,22 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </div>
         </div>
         <div
-          className="c13 c14 IS9"
+          className="c15 c5 IS11"
         >
           <figure
-            className="IS8"
+            className="IS10"
           >
             <div
-              className="c14 IS7"
+              className="c5 IS9"
             >
               <div
-                className="c14 IS6"
+                className="c5 IS8"
               >
                 <div
-                  className="IS5"
+                  className="IS7"
                 >
                   <img
-                    className="IS4"
+                    className="IS6"
                   />
                 </div>
               </div>
@@ -4126,14 +4769,14 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c15 c16 c17"
+          className="c16 c17 c18"
         >
           <div
-            className="IS10"
+            className="IS12"
           />
           <div>
             <div
-              className="c18"
+              className="c19"
             >
               <div>
                 <SaveAndShareBar />
@@ -4143,12 +4786,12 @@ exports[`full article with style in the sunday times magazine 1`] = `
         </div>
       </div>
       <article
-        className="c19"
+        className="c20"
       >
         <div>
           <div>
             <div
-              className="c20"
+              className="c21"
             >
               <ArticleImage />
             </div>
@@ -4158,30 +4801,30 @@ exports[`full article with style in the sunday times magazine 1`] = `
           Some Link
         </Link>
         <div
-          className="group-3 hidden c21"
+          className="group-3 hidden c22"
         >
           <h2
-            className="c22"
+            className="c23"
           >
             Sponsored
           </h2>
           <div
-            className="c23"
+            className="c24"
           />
           <div
-            className="c23"
+            className="c24"
           />
         </div>
         <p
-          className="c24"
+          className="c25"
         >
           Some content
         </p>
         <div
-          className="c25"
+          className="c26"
         >
           <div
-            className="c26"
+            className="c27"
           >
             <PullQuote>
               The pull quote content
@@ -4189,25 +4832,25 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </div>
         </div>
         <div
-          className="c20"
+          className="c21"
         >
           <figure
-            className="IS16"
+            className="IS18"
           >
             <div
-              className="c14 IS15"
+              className="c5 IS17"
             >
               <div
-                className="c14 IS14"
+                className="c5 IS16"
               >
                 <div
-                  className="IS13"
+                  className="IS15"
                 >
                   <div
-                    className="IS12"
+                    className="IS14"
                   >
                     <video
-                      className="video-js IS11"
+                      className="video-js IS13"
                     />
                   </div>
                 </div>
@@ -4215,7 +4858,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             </div>
             <figcaption>
               <div
-                className="c27"
+                className="c28"
               >
                 <Caption />
               </div>
@@ -4223,10 +4866,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </figure>
         </div>
         <div
-          className="c28"
+          className="c29"
         >
           <h2
-            className="c29"
+            className="c30"
           >
             Advertisement
           </h2>
@@ -4235,7 +4878,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         <div>
           <div>
             <div
-              className="c30"
+              className="c31"
             >
               <ArticleImage />
             </div>
@@ -4244,7 +4887,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         <div>
           <div>
             <div
-              className="c31"
+              className="c32"
             >
               <ArticleImage />
             </div>
