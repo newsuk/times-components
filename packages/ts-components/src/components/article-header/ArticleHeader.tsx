@@ -1,13 +1,14 @@
 import React from 'react';
 import {
   // parse,
-  format,
+  // format,
   differenceInSeconds,
   differenceInCalendarDays,
   formatDistanceStrict
 } from 'date-fns';
 import {
   // zonedTimeToUtc,
+  format,
   utcToZonedTime
 } from 'date-fns-tz';
 
@@ -92,12 +93,12 @@ const ArticleHeader: React.FC<{
           <UpdatedTime
             isLessThan13Hours={!isLessThan1Minute && isLessThan13Hours}
           >
-            {format(parsedDate, 'h.mmaaa')}
+            {format(parsedDate, 'h.mmaaa z')}
           </UpdatedTime>
         </UpdatedTimeItems>
 
         {isDaysAgo ? (
-          <UpdatedDate>{format(parsedDate, 'MMMM d yyyy')}</UpdatedDate>
+          <UpdatedDate>{format(parsedDate, 'MMMM d')}</UpdatedDate>
         ) : null}
       </UpdatesContainer>
 
