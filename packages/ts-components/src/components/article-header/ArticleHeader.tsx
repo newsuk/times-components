@@ -9,6 +9,8 @@ import {
   utcToZonedTime
 } from 'date-fns-tz';
 
+import enGB from 'date-fns/locale/en-GB'
+
 import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
 import safeDecodeURIComponent from '../../utils/safeDecodeURIComponent';
 
@@ -83,7 +85,7 @@ const ArticleHeader: React.FC<{
           <UpdatedTime
             isLessThan13Hours={!isLessThan1Minute && isLessThan13Hours}
           >
-            {format(parsedDate, 'h.mmaaa z')}
+            {format(parsedDate, 'h.mmaaa zzz', { locale: enGB })}
           </UpdatedTime>
         </UpdatedTimeItems>
 
