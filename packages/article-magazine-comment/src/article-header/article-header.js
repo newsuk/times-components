@@ -1,5 +1,6 @@
 import React from "react";
 import Context from "@times-components/context";
+import { checkStylesForUnits } from "@times-components/utils";
 import Image from "@times-components/image";
 import {
   ArticleFlags,
@@ -22,6 +23,13 @@ import {
   HeadlineContainer
 } from "../styles/responsive";
 
+const headlineContainerStyles = (headlineFont, headlineCase) =>
+  checkStylesForUnits({
+    ...styles.articleHeadline,
+    fontFamily: headlineFont ? fonts[headlineFont] : null,
+    textTransform: headlineCase || null
+  });
+
 const ArticleHeader = ({
   authorImage,
   bylines,
@@ -36,7 +44,7 @@ const ArticleHeader = ({
 }) => (
   <Context.Consumer>
     {({ theme: { headlineFont, headlineCase } }) => (
-      <HeaderContainer style={styles.container}>
+      <HeaderContainer styles={styles.container}>
         <AuthorImageContainer style={styles.authorImage}>
           <Image
             aspectRatio={1}
@@ -46,13 +54,9 @@ const ArticleHeader = ({
         </AuthorImageContainer>
         <Label isVideo={hasVideo} label={label} />
         <HeadlineContainer
-          accessibilityRole="header"
+          role="heading"
           aria-level="1"
-          style={[
-            styles.articleHeadline,
-            headlineFont ? { fontFamily: fonts[headlineFont] } : null,
-            headlineCase ? { textTransform: headlineCase } : null
-          ]}
+          styles={headlineContainerStyles(headlineFont, headlineCase)}
         >
           {headline}
         </HeadlineContainer>
