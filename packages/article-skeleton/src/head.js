@@ -293,10 +293,14 @@ function Head({
     authorSchema
   );
 
-  const checkIsCurrentEdition = () =>
-    navigationMode.isCurrentEdition
-      ? `current edition: ${sectionname}`
-      : `article: ${sectionname}`;
+  const checkIsCurrentEdition = () => {
+    if (navigationMode) {
+      if (navigationMode.isCurrentEdition) {
+        return `current edition: ${sectionname}`;
+      }
+    }
+    return `article: ${sectionname}`;
+  };
 
   const jsonLD = {
     "@context": "https://schema.org",
