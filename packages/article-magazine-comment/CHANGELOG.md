@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.49.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.48.2...@times-components/article-magazine-comment@3.49.0) (2022-05-31)
+
+
+### Features
+
+* **TDP-1415:** remove react native from article magazine comments ([#2957](https://github.com/newsuk/times-components/issues/2957)) ([ebb6b8c](https://github.com/newsuk/times-components/commit/ebb6b8c4b97c83f70b743e265274b538612cab10))
+
+
+
+
+
 ## [3.48.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.48.1...@times-components/article-magazine-comment@3.48.2) (2022-05-27)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
