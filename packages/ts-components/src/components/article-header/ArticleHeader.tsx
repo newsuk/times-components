@@ -1,13 +1,10 @@
 import React from 'react';
 import {
-  // parse,
-  // format,
   differenceInSeconds,
   differenceInCalendarDays,
   formatDistanceStrict
 } from 'date-fns';
 import {
-  // zonedTimeToUtc,
   format,
   utcToZonedTime
 } from 'date-fns-tz';
@@ -39,17 +36,10 @@ const anchorString = (updateTxt = '', headlineTxt = '') => {
 
 const ArticleHeader: React.FC<{
   updated: string;
-  // date: string;
-  // time: string;
   breaking?: string;
   headline?: string;
 }> = ({ updated, breaking, headline }) => {
   const currentDateTime = new Date();
-
-  // const updated = `${date} ${time}`;
-  // const parsedDate = parse(updated, 'dd/MM/yyyy HH:mm', new Date());
-  // const updatedDate = zonedTimeToUtc(parsedDate, 'Europe/London');
-
   const updatedDate = new Date(updated);
   const parsedDate = utcToZonedTime(updatedDate, 'Europe/London');
 
