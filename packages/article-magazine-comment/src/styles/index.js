@@ -1,7 +1,7 @@
 import sharedStyles from "./shared";
 
-const newStyles = {
+const styles = {
   ...sharedStyles
 };
 
-export default newStyles;
+export default styles;

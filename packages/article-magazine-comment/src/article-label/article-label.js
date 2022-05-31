@@ -9,7 +9,7 @@ import {
   articleLabelPropTypes,
   articleLabelDefaultProps
 } from "./article-label-prop-types";
-import newStyles from "../newStyles";
+import styles from "../styles";
 
 const HeaderLabel = ({ isVideo, label }) => {
   if (!isVideo && !label) return null;
@@ -19,7 +19,7 @@ const HeaderLabel = ({ isVideo, label }) => {
   return (
     <Context.Consumer>
       {({ theme: { sectionColour } }) => (
-        <TcView style={newStyles.label}>
+        <TcView style={styles.label}>
           <Label
             color={sectionColour || colours.section.default}
             title={label}

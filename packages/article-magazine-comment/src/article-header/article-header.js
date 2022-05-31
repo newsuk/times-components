@@ -14,18 +14,18 @@ import {
   articleHeaderPropTypes,
   articleHeaderDefaultProps
 } from "./article-header-prop-types";
-import newStyles from "../newStyles";
+import styles from "../styles";
 
 import {
   AuthorImageContainer,
   FlagsContainer,
   HeaderContainer,
   HeadlineContainer
-} from "../newStyles/responsive";
+} from "../styles/responsive";
 
 const headlineContainerStyles = (headlineFont, headlineCase) =>
   checkStylesForUnits({
-    ...newStyles.articleHeadline,
+    ...styles.articleHeadline,
     fontFamily: headlineFont ? fonts[headlineFont] : null,
     textTransform: headlineCase || null
   });
@@ -44,8 +44,8 @@ const ArticleHeader = ({
 }) => (
   <Context.Consumer>
     {({ theme: { headlineFont, headlineCase } }) => (
-      <HeaderContainer styles={newStyles.container}>
-        <AuthorImageContainer style={newStyles.authorImage}>
+      <HeaderContainer styles={styles.container}>
+        <AuthorImageContainer style={styles.authorImage}>
           <Image
             aspectRatio={1}
             uri={authorImage}

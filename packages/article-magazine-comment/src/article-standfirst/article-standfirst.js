@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import newStyles from "../newStyles";
-import { StandfirstContainer } from "../newStyles/responsive";
+import styles from "../styles";
+import { StandfirstContainer } from "../styles/responsive";
 
 const HeaderStandfirst = ({ standfirst }) => {
   if (!standfirst) return null;
@@ -10,7 +10,7 @@ const HeaderStandfirst = ({ standfirst }) => {
     <StandfirstContainer
       role="header"
       aria-level="2"
-      styles={newStyles.standFirst}
+      styles={styles.standFirst}
       testID="standfirst"
     >
       {standfirst}
