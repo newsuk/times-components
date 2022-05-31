@@ -78,9 +78,9 @@ const ArticleSkeleton = ({
     template,
     savingEnabled,
     sharingEnabled,
-    publishedTime,
+    publishedTime
   } = article;
- 
+
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),

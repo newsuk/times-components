@@ -46,7 +46,7 @@ const standardArticleWithInlineVideo = articleFixture({
   hasVideo: true
 });
 
-const navigationMode = {isCurrentEdition: true };
+const navigationMode = { isCurrentEdition: true };
 const paidContentClassName = "class-name";
 const logoUrl =
   "https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png";
@@ -567,7 +567,9 @@ describe("Head", () => {
   });
 
   it("shows author tags if bylines available", () => {
-    const testRenderer = TestRenderer.create(<Head article={article} navigationMode={navigationMode} />);
+    const testRenderer = TestRenderer.create(
+      <Head article={article} navigationMode={navigationMode} />
+    );
 
     expect(testRenderer.root.findAllByProps({ name: "author" })).toHaveLength(
       1
@@ -619,7 +621,9 @@ describe("Head", () => {
   });
 
   it("shows description tags if descriptionMarkup available", () => {
-    const testRenderer = TestRenderer.create(<Head article={article} navigationMode={navigationMode}/>);
+    const testRenderer = TestRenderer.create(
+      <Head article={article} navigationMode={navigationMode} />
+    );
 
     expect(
       testRenderer.root.findAllByProps({ name: "description" })
@@ -652,7 +656,9 @@ describe("Head", () => {
   });
 
   it("shows image tags if leadAsset available", () => {
-    const testRenderer = TestRenderer.create(<Head article={article} navigationMode={navigationMode}/>);
+    const testRenderer = TestRenderer.create(
+      <Head article={article} navigationMode={navigationMode} />
+    );
 
     expect(
       testRenderer.root.findAllByProps({ property: "og:image" })
@@ -664,7 +670,10 @@ describe("Head", () => {
 
   it("shows image tags if leadAsset is an image, but there is a video elsewhere in the article", () => {
     const testRenderer = TestRenderer.create(
-      <Head article={standardArticleWithInlineVideo} navigationMode={navigationMode}/>
+      <Head
+        article={standardArticleWithInlineVideo}
+        navigationMode={navigationMode}
+      />
     );
 
     expect(

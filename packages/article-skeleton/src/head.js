@@ -242,7 +242,7 @@ function Head({
     hasVideo,
     seoDescription,
     keywords,
-    url,
+    url
   } = article;
 
   const liveBlogArticleExpiry = getIsLiveBlogExpiryTime(article.expirableFlags);
@@ -293,9 +293,10 @@ function Head({
     authorSchema
   );
 
-  const checkIsCurrentEdition = () => (
-    navigationMode.isCurrentEdition ? `current edition: ${sectionname}` : `article: ${sectionname}`
-    );
+  const checkIsCurrentEdition = () =>
+    navigationMode.isCurrentEdition
+      ? `current edition: ${sectionname}`
+      : `article: ${sectionname}`;
 
   const jsonLD = {
     "@context": "https://schema.org",
@@ -447,7 +448,8 @@ Head.propTypes = {
   logoUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string.isRequired,
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
-  swgProductId: PropTypes.string
+  swgProductId: PropTypes.string,
+  navigationMode: PropTypes.shape({}).isRequired
 };
 
 Head.defaultProps = {
