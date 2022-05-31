@@ -4,10 +4,7 @@ import {
   differenceInCalendarDays,
   formatDistanceStrict
 } from 'date-fns';
-import {
-  format,
-  utcToZonedTime
-} from 'date-fns-tz';
+import { format, utcToZonedTime } from 'date-fns-tz';
 
 import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
 import safeDecodeURIComponent from '../../utils/safeDecodeURIComponent';
