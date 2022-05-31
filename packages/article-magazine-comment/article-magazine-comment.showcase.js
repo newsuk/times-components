@@ -83,7 +83,12 @@ const renderArticle = ({
               "onVideoPress"
             )}
             refetch={refetch}
-            navigationMode={{isCurrentEdition: false, isPastSixDays: false, isMyArticles: false, isStateless: true }}
+            navigationMode={{
+              isCurrentEdition: false,
+              isPastSixDays: false,
+              isMyArticles: false,
+              isStateless: true
+            }}
           />
         </ContextProviderWithDefaults>
       );
