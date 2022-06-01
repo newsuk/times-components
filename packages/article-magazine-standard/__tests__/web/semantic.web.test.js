@@ -127,12 +127,6 @@ const tests = [
           }
         ]
       });
-      const navigationMode = {
-        isCurrentEdition: true,
-        isPastSixDays: false,
-        isMyArticles: false,
-        isStateless: false
-      };
       const scale = scales.large;
       const sectionColour = "#FFFFFF";
       const testRenderer = TestRenderer.create(
@@ -147,7 +141,6 @@ const tests = [
               adConfig={adConfig}
               analyticsStream={() => {}}
               article={article}
-              navigationMode={navigationMode}
               onAuthorPress={() => {}}
               onCommentGuidelinesPress={() => {}}
               onCommentsPress={() => {}}
