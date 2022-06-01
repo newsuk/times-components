@@ -33,7 +33,7 @@ const ArticleHeader = ({
   standfirst,
   updatedTime
 }) => (
-  <HeaderContainer style={[styles.header, styles.container]}>
+  <HeaderContainer style={{ ...styles.header, ...styles.container }}>
     <AuthorImageContainer style={styles.authorImage}>
       <Image
         aspectRatio={1}
@@ -43,9 +43,9 @@ const ArticleHeader = ({
     </AuthorImageContainer>
     <Label isVideo={hasVideo} label={label} />
     <HeadlineContainer
-      accessibilityRole="header"
+      role="heading"
       aria-level="1"
-      style={styles.articleHeadline}
+      styles={styles.articleHeadline}
     >
       {headline}
     </HeadlineContainer>
