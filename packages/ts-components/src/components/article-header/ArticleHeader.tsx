@@ -40,6 +40,13 @@ const ArticleHeader: React.FC<{
   const updatedDate = new Date(updated);
   const parsedDate = utcToZonedTime(updatedDate, 'Europe/London');
 
+  const currentTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  let timezone = 'zzz';
+
+  if (currentTimezone == 'Europe/London') {
+    timezone = '';
+  }
+
   const timeSincePublishing =
     formatDistanceStrict(updatedDate, currentDateTime, {
       roundingMethod: 'floor'
@@ -80,7 +87,7 @@ const ArticleHeader: React.FC<{
           <UpdatedTime
             isLessThan13Hours={!isLessThan1Minute && isLessThan13Hours}
           >
-            {format(parsedDate, 'h.mmaaa')}
+            {format(parsedDate, `h.mmaaa ${timezone}`)}
           </UpdatedTime>
         </UpdatedTimeItems>
 
