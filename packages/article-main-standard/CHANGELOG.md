@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.54.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.53.2...@times-components/article-main-standard@3.54.0) (2022-06-01)
+
+
+### Features
+
+* **TDP-1520:** add articleSection to article JSON LD ([#2956](https://github.com/newsuk/times-components/issues/2956)) ([4c108ed](https://github.com/newsuk/times-components/commit/4c108ed699ac6ebfc41949de29d89eaeb7f3b03f))
+
+
+
+
+
 ## [3.53.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.53.1...@times-components/article-main-standard@3.53.2) (2022-05-27)
 
 **Note:** Version bump only for package @times-components/article-main-standard
