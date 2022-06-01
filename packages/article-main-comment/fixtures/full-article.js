@@ -1979,7 +1979,23 @@ export default ({ withAds = true, ...config } = {}) => {
     __typename: "Article",
     id: "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
     publicationName: "TIMES",
-    publishedTime: "2015-03-13T18:54:58.000Z"
+    publishedTime: "2015-03-13T18:54:58.000Z",
+    tiles: [
+      {
+        __typename: "Tile",
+        slices: [
+          {
+            __typename: "SecondaryFourSlice",
+            sections: [
+              {
+                __typename: "StandardSection",
+                title: "Some Section"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   };
 
   const defaultConfig = makeDefaultConfig(config);

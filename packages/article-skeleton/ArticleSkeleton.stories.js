@@ -158,6 +158,12 @@ storiesOf("Composed/Article Skeleton", module)
             onViewableItemsChanged={() => null}
             olympicsKeys={endpoint}
             inlineRelatedArticleOptions={inlineRelatedArticleOptions}
+            navigationMode={{
+              isCurrentEdition: false,
+              isPastSixDays: false,
+              isMyArticles: false,
+              isStateless: true
+            }}
           />
         </ContextProviderWithDefaults>
       </MockBookmarksProvider>

@@ -943,7 +943,7 @@ exports[`full article with style 1`] = `
       <title>
         Some Headline
          | 
-        
+        Some Section | 
         The Times
       </title>
       <meta />
@@ -959,7 +959,7 @@ exports[`full article with style 1`] = `
       <meta />
       <meta />
       <script>
-        {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"}}
+        {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"},"articleSection":"article: Some Section"}
       </script>
     </Helmet>
     <div
@@ -2135,7 +2135,7 @@ exports[`full article with style in the culture magazine 1`] = `
       <title>
         Some Headline
          | 
-        
+        Some Section | 
         The Times
       </title>
       <meta />
@@ -2151,7 +2151,7 @@ exports[`full article with style in the culture magazine 1`] = `
       <meta />
       <meta />
       <script>
-        {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"}}
+        {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"},"articleSection":"article: Some Section"}
       </script>
     </Helmet>
     <div
@@ -3328,7 +3328,7 @@ exports[`full article with style in the style magazine 1`] = `
       <title>
         Some Headline
          | 
-        
+        Some Section | 
         The Times
       </title>
       <meta />
@@ -3344,7 +3344,7 @@ exports[`full article with style in the style magazine 1`] = `
       <meta />
       <meta />
       <script>
-        {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"}}
+        {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"},"articleSection":"article: Some Section"}
       </script>
     </Helmet>
     <div
@@ -4520,7 +4520,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
       <title>
         Some Headline
          | 
-        
+        Some Section | 
         The Times
       </title>
       <meta />
@@ -4536,7 +4536,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
       <meta />
       <meta />
       <script>
-        {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"}}
+        {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"},"articleSection":"article: Some Section"}
       </script>
     </Helmet>
     <div
