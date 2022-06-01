@@ -5,6 +5,7 @@ import {
   formatDistanceStrict
 } from 'date-fns';
 import { format, utcToZonedTime } from 'date-fns-tz';
+/* tslint:disable-next-line */
 import enGB from 'date-fns/locale/en-GB'
 
 import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
@@ -44,7 +45,7 @@ const ArticleHeader: React.FC<{
   const currentTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   let timezone = 'zzz';
 
-  if (currentTimezone == 'Europe/London') {
+  if (currentTimezone === 'Europe/London') {
     timezone = '';
   }
 
