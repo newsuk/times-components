@@ -43,10 +43,10 @@ const ArticleHeader: React.FC<{
   const parsedDate = utcToZonedTime(updatedDate, 'Europe/London');
 
   const currentTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  let timezone = 'zzz';
+  let timezone = '';
 
   if (currentTimezone === 'Europe/London') {
-    timezone = '';
+    timezone = 'zzz';
   }
 
   const timeSincePublishing =
