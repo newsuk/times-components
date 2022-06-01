@@ -6,7 +6,7 @@ import {
 } from 'date-fns';
 import { format, utcToZonedTime } from 'date-fns-tz';
 /* tslint:disable-next-line */
-import enGB from 'date-fns/locale/en-GB'
+import enGB from 'date-fns/locale/en-GB';
 
 import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
 import safeDecodeURIComponent from '../../utils/safeDecodeURIComponent';
