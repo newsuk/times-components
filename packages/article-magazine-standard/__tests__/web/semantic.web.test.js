@@ -127,6 +127,7 @@ const tests = [
           }
         ]
       });
+
       const scale = scales.large;
       const sectionColour = "#FFFFFF";
       const testRenderer = TestRenderer.create(
