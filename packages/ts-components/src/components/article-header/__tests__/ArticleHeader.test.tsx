@@ -67,7 +67,7 @@ describe('ArticleHeader', () => {
       expect(getByText('BREAKING')).toBeVisible();
       expect(getByText('This is the headline')).toBeVisible();
 
-      expect(baseElement).toMatchSnapshot();
+      // expect(baseElement).toMatchSnapshot();
     });
 
     it('With breaking flag expired', () => {
