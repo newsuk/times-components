@@ -51,11 +51,8 @@ const ArticleHeader: React.FC<{
   });
 
   const currentDateTime = new Date();
-  console.log('current datetime: ', currentDateTime);
   const updatedDate = new Date(updated);
-  console.log('updated date: ', updatedDate);
   const parsedDate = utcToZonedTime(updatedDate, 'Europe/London');
-  console.log('parsed date: ', parsedDate);
 
   const timeSincePublishing =
     formatDistanceStrict(updatedDate, currentDateTime, {
