@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.82.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.0...@times-components/article-skeleton@1.82.1) (2022-06-06)
+
+
+### Bug Fixes
+
+* **TDP-1520:** add articleSection to live articles ([#2965](https://github.com/newsuk/times-components/issues/2965)) ([0cab0a0](https://github.com/newsuk/times-components/commit/0cab0a03cfe2d4103900b7b1b693641119d834c6))
+
+
+
+
+
 # [1.82.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.81.2...@times-components/article-skeleton@1.82.0) (2022-06-01)
 
 
