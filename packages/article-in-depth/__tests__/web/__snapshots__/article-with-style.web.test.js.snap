@@ -351,6 +351,11 @@ exports[`full article with style 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+  color: #696969;
+  margin-top: 5px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -857,57 +862,49 @@ exports[`full article with style 1`] = `
 }
 
 .IS7 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 15;
-  color: #696969;
-  margin-top: 5px;
-}
-
-.IS8 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.IS9 {
+.IS8 {
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.IS10 {
+.IS9 {
   display: none;
+}
+
+.IS10 {
+  height: 100%;
+  width: 100%;
 }
 
 .IS11 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS12 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS13 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS14 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS15 {
+.IS14 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS16 {
+.IS15 {
   margin: 0;
 }
 </style>
@@ -990,7 +987,7 @@ exports[`full article with style 1`] = `
           className="c10 c11"
         >
           <div
-            className="c12 IS9"
+            className="c12 IS8"
           >
             <div
               className="c13 IS6"
@@ -1001,10 +998,10 @@ exports[`full article with style 1`] = `
               className="c14"
             />
             <div
-              className="c13 IS8"
+              className="c13 IS7"
             >
               <div
-                className="c15 IS7"
+                className="c15"
               >
                 <DatePublication />
               </div>
@@ -1015,7 +1012,7 @@ exports[`full article with style 1`] = `
           className="c10 c16 c17"
         >
           <div
-            className="IS10"
+            className="IS9"
           />
           <div>
             <div
@@ -1078,22 +1075,22 @@ exports[`full article with style 1`] = `
           className="c20"
         >
           <figure
-            className="IS16"
+            className="IS15"
           >
             <div
-              className="c3 IS15"
+              className="c3 IS14"
             >
               <div
-                className="c3 IS14"
+                className="c3 IS13"
               >
                 <div
-                  className="IS13"
+                  className="IS12"
                 >
                   <div
-                    className="IS12"
+                    className="IS11"
                   >
                     <video
-                      className="video-js IS11"
+                      className="video-js IS10"
                     />
                   </div>
                 </div>
@@ -1510,6 +1507,11 @@ exports[`full article with style in the culture magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+  color: #696969;
+  margin-top: 5px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2017,57 +2019,49 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .IS7 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 15;
-  color: #696969;
-  margin-top: 5px;
-}
-
-.IS8 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.IS9 {
+.IS8 {
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.IS10 {
+.IS9 {
   display: none;
+}
+
+.IS10 {
+  height: 100%;
+  width: 100%;
 }
 
 .IS11 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS12 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS13 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS14 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS15 {
+.IS14 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS16 {
+.IS15 {
   margin: 0;
 }
 </style>
@@ -2150,7 +2144,7 @@ exports[`full article with style in the culture magazine 1`] = `
           className="c10 c11"
         >
           <div
-            className="c12 IS9"
+            className="c12 IS8"
           >
             <div
               className="c13 IS6"
@@ -2161,10 +2155,10 @@ exports[`full article with style in the culture magazine 1`] = `
               className="c14"
             />
             <div
-              className="c13 IS8"
+              className="c13 IS7"
             >
               <div
-                className="c15 IS7"
+                className="c15"
               >
                 <DatePublication />
               </div>
@@ -2175,7 +2169,7 @@ exports[`full article with style in the culture magazine 1`] = `
           className="c10 c16 c17"
         >
           <div
-            className="IS10"
+            className="IS9"
           />
           <div>
             <div
@@ -2238,22 +2232,22 @@ exports[`full article with style in the culture magazine 1`] = `
           className="c20"
         >
           <figure
-            className="IS16"
+            className="IS15"
           >
             <div
-              className="c3 IS15"
+              className="c3 IS14"
             >
               <div
-                className="c3 IS14"
+                className="c3 IS13"
               >
                 <div
-                  className="IS13"
+                  className="IS12"
                 >
                   <div
-                    className="IS12"
+                    className="IS11"
                   >
                     <video
-                      className="video-js IS11"
+                      className="video-js IS10"
                     />
                   </div>
                 </div>
@@ -2670,6 +2664,11 @@ exports[`full article with style in the style magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+  color: #696969;
+  margin-top: 5px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -3178,57 +3177,49 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .IS7 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 15;
-  color: #696969;
-  margin-top: 5px;
-}
-
-.IS8 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.IS9 {
+.IS8 {
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.IS10 {
+.IS9 {
   display: none;
+}
+
+.IS10 {
+  height: 100%;
+  width: 100%;
 }
 
 .IS11 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS12 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS13 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS14 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS15 {
+.IS14 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS16 {
+.IS15 {
   margin: 0;
 }
 </style>
@@ -3311,7 +3302,7 @@ exports[`full article with style in the style magazine 1`] = `
           className="c10 c11"
         >
           <div
-            className="c12 IS9"
+            className="c12 IS8"
           >
             <div
               className="c13 IS6"
@@ -3322,10 +3313,10 @@ exports[`full article with style in the style magazine 1`] = `
               className="c14"
             />
             <div
-              className="c13 IS8"
+              className="c13 IS7"
             >
               <div
-                className="c15 IS7"
+                className="c15"
               >
                 <DatePublication />
               </div>
@@ -3336,7 +3327,7 @@ exports[`full article with style in the style magazine 1`] = `
           className="c10 c16 c17"
         >
           <div
-            className="IS10"
+            className="IS9"
           />
           <div>
             <div
@@ -3399,22 +3390,22 @@ exports[`full article with style in the style magazine 1`] = `
           className="c20"
         >
           <figure
-            className="IS16"
+            className="IS15"
           >
             <div
-              className="c3 IS15"
+              className="c3 IS14"
             >
               <div
-                className="c3 IS14"
+                className="c3 IS13"
               >
                 <div
-                  className="IS13"
+                  className="IS12"
                 >
                   <div
-                    className="IS12"
+                    className="IS11"
                   >
                     <video
-                      className="video-js IS11"
+                      className="video-js IS10"
                     />
                   </div>
                 </div>
@@ -3831,6 +3822,11 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+  color: #696969;
+  margin-top: 5px;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -4338,57 +4334,49 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .IS7 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 15;
-  color: #696969;
-  margin-top: 5px;
-}
-
-.IS8 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.IS9 {
+.IS8 {
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.IS10 {
+.IS9 {
   display: none;
+}
+
+.IS10 {
+  height: 100%;
+  width: 100%;
 }
 
 .IS11 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS12 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS13 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS14 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS15 {
+.IS14 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS16 {
+.IS15 {
   margin: 0;
 }
 </style>
@@ -4471,7 +4459,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           className="c10 c11"
         >
           <div
-            className="c12 IS9"
+            className="c12 IS8"
           >
             <div
               className="c13 IS6"
@@ -4482,10 +4470,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
               className="c14"
             />
             <div
-              className="c13 IS8"
+              className="c13 IS7"
             >
               <div
-                className="c15 IS7"
+                className="c15"
               >
                 <DatePublication />
               </div>
@@ -4496,7 +4484,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           className="c10 c16 c17"
         >
           <div
-            className="IS10"
+            className="IS9"
           />
           <div>
             <div
@@ -4559,22 +4547,22 @@ exports[`full article with style in the sunday times magazine 1`] = `
           className="c20"
         >
           <figure
-            className="IS16"
+            className="IS15"
           >
             <div
-              className="c3 IS15"
+              className="c3 IS14"
             >
               <div
-                className="c3 IS14"
+                className="c3 IS13"
               >
                 <div
-                  className="IS13"
+                  className="IS12"
                 >
                   <div
-                    className="IS12"
+                    className="IS11"
                   >
                     <video
-                      className="video-js IS11"
+                      className="video-js IS10"
                     />
                   </div>
                 </div>
