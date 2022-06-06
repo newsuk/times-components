@@ -5,6 +5,7 @@ import {
 } from "@times-components/article-byline";
 import Context from "@times-components/context";
 import DatePublication from "@times-components/date-publication";
+import { checkStylesForUnits } from "@times-components/utils";
 import { colours } from "@times-components/ts-styleguide";
 
 import metaPropTypes from "./article-meta-prop-types";
@@ -34,7 +35,9 @@ const ArticleMeta = ({ bylines, publicationName, publishedTime }) => (
       </Fragment>
     )}
     <Meta style={styles.meta}>
-      <DatePublicationContainer style={styles.datePublication}>
+      <DatePublicationContainer
+        styles={checkStylesForUnits(styles.datePublication)}
+      >
         <DatePublication date={publishedTime} publication={publicationName} />
       </DatePublicationContainer>
     </Meta>
