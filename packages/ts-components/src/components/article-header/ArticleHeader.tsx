@@ -36,16 +36,16 @@ const ArticleHeader: React.FC<{
   breaking?: string;
   headline?: string;
 }> = ({ updated, breaking, headline }) => {
-  const  [timezone, setTimezone] = useState<string>('');
+  const [timezone, setTimezone] = useState<string>('');
 
-  useEffect (() => {
+  useEffect(() => {
     const currentTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  
+
     if (currentTimezone !== 'Europe/London') {
       setTimezone(
-        format(
-          utcToZonedTime(parsedDate, 'Europe/London'), 'zzz', { timeZone: 'Europe/London'}
-        )
+        format(utcToZonedTime(parsedDate, 'Europe/London'), 'zzz', {
+          timeZone: 'Europe/London'
+        })
       );
     }
   });
