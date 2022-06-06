@@ -380,7 +380,8 @@ function Head({
     },
     publisher: publisherSchema,
     author: authorSchema,
-    liveBlogUpdate: liveBlogUpdateSchema
+    liveBlogUpdate: liveBlogUpdateSchema,
+    articleSection: checkIsCurrentEdition()
   };
   return (
     <Context.Consumer>
