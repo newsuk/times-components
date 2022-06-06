@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.51.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.50.0...@times-components/article-in-depth@3.51.0) (2022-06-06)
+
+
+### Features
+
+* **TDP-1690:** fixed small UI issue on date publication line ([#2964](https://github.com/newsuk/times-components/issues/2964)) ([7205f6e](https://github.com/newsuk/times-components/commit/7205f6e4f522e565f462333d8df4039791863022))
+
+
+
+
+
 # [3.50.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.49.0...@times-components/article-in-depth@3.50.0) (2022-06-01)
 
 
