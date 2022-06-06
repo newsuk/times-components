@@ -1,12 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   differenceInSeconds,
   differenceInCalendarDays,
   formatDistanceStrict
 } from 'date-fns';
 import { format, utcToZonedTime } from 'date-fns-tz';
-/* tslint:disable-next-line */
-import enGB from 'date-fns/locale/en-GB';
 
 import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
 import safeDecodeURIComponent from '../../utils/safeDecodeURIComponent';
@@ -38,16 +36,26 @@ const ArticleHeader: React.FC<{
   breaking?: string;
   headline?: string;
 }> = ({ updated, breaking, headline }) => {
+  const  [timezone, setTimezone] = useState<string>('');
+
+  useEffect (() => {
+    const currentTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  
+    if (currentTimezone !== 'Europe/London') {
+      setTimezone(
+        format(
+          utcToZonedTime(parsedDate, 'Europe/London'), 'zzz', { timeZone: 'Europe/London'}
+        )
+      );
+    }
+  });
+
   const currentDateTime = new Date();
+  console.log('current datetime: ', currentDateTime);
   const updatedDate = new Date(updated);
+  console.log('updated date: ', updatedDate);
   const parsedDate = utcToZonedTime(updatedDate, 'Europe/London');
-
-  const currentTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  let timezone = 'zzz';
-
-  if (currentTimezone === 'Europe/London') {
-    timezone = '';
-  }
+  console.log('parsed date: ', parsedDate);
 
   const timeSincePublishing =
     formatDistanceStrict(updatedDate, currentDateTime, {
@@ -89,7 +97,7 @@ const ArticleHeader: React.FC<{
           <UpdatedTime
             isLessThan13Hours={!isLessThan1Minute && isLessThan13Hours}
           >
-            {format(parsedDate, `h.mmaaa ${timezone}`, { locale: enGB })}
+            {`${format(parsedDate, 'h.mmaaa')} ${timezone}`}
           </UpdatedTime>
         </UpdatedTimeItems>
 
