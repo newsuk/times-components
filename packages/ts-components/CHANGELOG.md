@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.36.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.36.1...@times-components/ts-components@1.36.2) (2022-06-07)
+
+
+### Bug Fixes
+
+* **TDP-1825:** Live News: Update Timestamp Logic ([#2958](https://github.com/newsuk/times-components/issues/2958)) ([df2b594](https://github.com/newsuk/times-components/commit/df2b59401188d08389719f7aec75b4deebe530d8))
+
+
+
+
+
 ## [1.36.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.36.0...@times-components/ts-components@1.36.1) (2022-05-26)
 
 
