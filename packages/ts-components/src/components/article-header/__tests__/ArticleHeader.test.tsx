@@ -18,7 +18,7 @@ describe('ArticleHeader', () => {
         <ArticleHeader updated={updated} />
       );
 
-      expect(getByText('6.30am GMT')).toBeVisible();
+      expect(getByText(/6.30am/i)).toBeVisible();
       expect(queryByTestId('TimeSincePublishing')).toBeFalsy();
     });
 
@@ -27,7 +27,7 @@ describe('ArticleHeader', () => {
 
       const { getByText } = render(<ArticleHeader updated={updated} />);
 
-      expect(getByText('6.30am GMT')).toBeVisible();
+      expect(getByText(/6.30am/i)).toBeVisible();
       expect(getByText('30 minutes ago')).toBeVisible();
     });
 
@@ -36,7 +36,7 @@ describe('ArticleHeader', () => {
 
       const { getByText } = render(<ArticleHeader updated={updated} />);
 
-      expect(getByText('6.30am GMT')).toBeVisible();
+      expect(getByText(/6.30am/i)).toBeVisible();
       expect(getByText('2 hours ago')).toBeVisible();
     });
 
@@ -47,7 +47,7 @@ describe('ArticleHeader', () => {
         <ArticleHeader updated={updated} />
       );
 
-      expect(getByText('6.30am GMT')).toBeVisible();
+      expect(getByText(/6.30am/i)).toBeVisible();
       expect(queryByTestId('TimeSincePublishing')).toBeFalsy();
     });
 
@@ -62,7 +62,7 @@ describe('ArticleHeader', () => {
         />
       );
 
-      expect(getByText('6.30am GMT')).toBeVisible();
+      expect(getByText(/6.30am/i)).toBeVisible();
       expect(getByText('30 minutes ago')).toBeVisible();
       expect(getByText('BREAKING')).toBeVisible();
       expect(getByText('This is the headline')).toBeVisible();
@@ -77,7 +77,7 @@ describe('ArticleHeader', () => {
         <ArticleHeader updated={updated} breaking="true" />
       );
 
-      expect(getByText('6.30am GMT')).toBeVisible();
+      expect(getByText(/6.30am/i)).toBeVisible();
       expect(getByText('2 hours ago')).toBeVisible();
       expect(queryByText('BREAKING')).toBeFalsy();
     });
@@ -95,7 +95,7 @@ describe('ArticleHeader', () => {
         <ArticleHeader updated={updated} />
       );
 
-      expect(getByText('6.30am GMT+1')).toBeVisible();
+      expect(getByText(/6.30am/i)).toBeVisible();
       expect(queryByTestId('TimeSincePublishing')).toBeFalsy();
     });
 
@@ -104,7 +104,7 @@ describe('ArticleHeader', () => {
 
       const { getByText } = render(<ArticleHeader updated={updated} />);
 
-      expect(getByText('6.30am GMT+1')).toBeVisible();
+      expect(getByText(/6.30am/i)).toBeVisible();
       expect(getByText('30 minutes ago')).toBeVisible();
     });
 
@@ -113,7 +113,7 @@ describe('ArticleHeader', () => {
 
       const { getByText } = render(<ArticleHeader updated={updated} />);
 
-      expect(getByText('6.30am GMT+1')).toBeVisible();
+      expect(getByText(/6.30am/i)).toBeVisible();
       expect(getByText('2 hours ago')).toBeVisible();
     });
 
@@ -124,7 +124,7 @@ describe('ArticleHeader', () => {
         <ArticleHeader updated={updated} />
       );
 
-      expect(getByText('6.30am GMT+1')).toBeVisible();
+      expect(getByText(/6.30am/i)).toBeVisible();
       expect(queryByTestId('TimeSincePublishing')).toBeFalsy();
     });
   });
@@ -139,7 +139,7 @@ describe('ArticleHeader', () => {
 
       const { getByText } = render(<ArticleHeader updated={updated} />);
 
-      expect(getByText('10.30pm GMT')).toBeVisible();
+      expect(getByText(/10.30pm/i)).toBeVisible();
       expect(getByText('4 hours ago')).toBeVisible();
       expect(getByText('December 31')).toBeVisible();
     });
