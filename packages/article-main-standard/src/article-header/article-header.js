@@ -1,6 +1,7 @@
+/* eslint-disable react/forbid-prop-types */
 import React from "react";
 import PropTypes from "prop-types";
-import { View, ViewPropTypes } from "react-native";
+import { TcView } from "@times-components/utils";
 import {
   ArticleFlags,
   UpdatedTimeProvider
@@ -12,8 +13,6 @@ import styles from "../styles/article-header";
 
 import { HeadlineContainer } from "../styles/article-header/responsive";
 
-const { style: ViewStylePropTypes } = ViewPropTypes;
-
 const ArticleHeader = ({
   flags,
   hasVideo,
@@ -23,22 +22,22 @@ const ArticleHeader = ({
   style,
   updatedTime
 }) => (
-  <View style={style}>
+  <TcView style={style}>
     <HeaderLabel isVideo={hasVideo} label={label} />
     <HeadlineContainer
-      accessibilityRole="header"
+      role="heading"
       aria-level="1"
-      style={styles.articleHeadLineText}
+      styles={styles.articleHeadLineText}
     >
       {headline}
     </HeadlineContainer>
     <HeaderStandfirst standfirst={standfirst} />
-    <View style={styles.flags}>
+    <TcView style={styles.flags}>
       <UpdatedTimeProvider updatedTime={updatedTime}>
         <ArticleFlags flags={flags} />
       </UpdatedTimeProvider>
-    </View>
-  </View>
+    </TcView>
+  </TcView>
 );
 
 ArticleHeader.propTypes = {
@@ -52,7 +51,7 @@ ArticleHeader.propTypes = {
   headline: PropTypes.string.isRequired,
   label: PropTypes.string,
   standfirst: PropTypes.string,
-  style: ViewStylePropTypes,
+  style: PropTypes.object,
   updatedTime: PropTypes.string
 };
 

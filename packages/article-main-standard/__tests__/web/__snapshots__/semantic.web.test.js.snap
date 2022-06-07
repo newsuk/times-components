@@ -77,26 +77,16 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     >
       Some Headline
     </h1>
-    <h2
-      aria-level="2"
-      data-testid="standfirst"
-      role="heading"
+    Some Standfirst
+    Some byline
+    <time
+      dateTime="2015-03-13T18:54:58.000Z"
     >
-      Some Standfirst
-    </h2>
+      Friday March 13 2015, 6.54pm
+      , 
+    </time>
     <span>
-      Some byline
-    </span>
-    <span>
-      <time
-        dateTime="2015-03-13T18:54:58.000Z"
-      >
-        Friday March 13 2015, 6.54pm
-        , 
-      </time>
-      <span>
-        The Times
-      </span>
+      The Times
     </span>
     <nav>
       <a
@@ -117,19 +107,15 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         SOME CREDITS
       </figcaption>
     </figure>
+    Some byline
+    <time
+      dateTime="2015-03-13T18:54:58.000Z"
+    >
+      Friday March 13 2015, 6.54pm
+      , 
+    </time>
     <span>
-      Some byline
-    </span>
-    <span>
-      <time
-        dateTime="2015-03-13T18:54:58.000Z"
-      >
-        Friday March 13 2015, 6.54pm
-        , 
-      </time>
-      <span>
-        The Times
-      </span>
+      The Times
     </span>
     Share
     <a

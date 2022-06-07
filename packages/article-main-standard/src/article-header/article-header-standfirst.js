@@ -1,20 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text } from "react-native";
+import { TcText, checkStylesForUnits } from "@times-components/utils";
 import styles from "../styles/article-header";
 
 const HeaderStandfirst = ({ hasFlags, standfirst }) => {
   if (!standfirst) return null;
 
+  const standFirstStyles = {
+    ...styles.standFirst
+  };
+
+  if (!hasFlags && styles?.standFirstWithoutFlags) {
+    Object.assign(standFirstStyles, ...styles.standFirstWithoutFlags);
+  }
+
   return (
-    <Text
-      accessibilityRole="header"
+    <TcText
+      role="heading"
       aria-level="2"
-      style={[styles.standFirst, !hasFlags && styles.standFirstWithoutFlags]}
-      testID="standfirst"
+      style={checkStylesForUnits(standFirstStyles)}
+      data-testid="standfirst"
     >
       {standfirst}
-    </Text>
+    </TcText>
   );
 };
 
