@@ -139,7 +139,7 @@ describe('ArticleHeader', () => {
 
       const { getByText } = render(<ArticleHeader updated={updated} />);
 
-      expect(getByText('10.30pm')).toBeVisible();
+      expect(getByText('10.30pm GMT')).toBeVisible();
       expect(getByText('4 hours ago')).toBeVisible();
       expect(getByText('December 31')).toBeVisible();
     });
