@@ -71,8 +71,8 @@ export {
   RelatedArticleSlice
 } from './components/related-article-slice/RelatedArticleSlice';
 export {
-  RecommendedArticles
-} from './components/recommended-articles/RecommendedArticles';
+  RecommendedFetch
+} from './components/recommended-articles/RecommendedFetch';
 export {
   LatestFromSection
 } from './components/latest-from-section/LatestFromSection';
