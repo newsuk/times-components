@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.36.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.36.2...@times-components/ts-components@1.36.3) (2022-06-07)
+
+
+### Bug Fixes
+
+* **TDP-1825:** timezone tests ([#2968](https://github.com/newsuk/times-components/issues/2968)) ([bb09b71](https://github.com/newsuk/times-components/commit/bb09b713793c254cfc7e3ff9c69592060097baf4))
+
+
+
+
+
 ## [1.36.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.36.1...@times-components/ts-components@1.36.2) (2022-06-07)
 
 
