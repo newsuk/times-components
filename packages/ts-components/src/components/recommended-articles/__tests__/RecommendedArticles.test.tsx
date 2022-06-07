@@ -1,3 +1,4 @@
+/*
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 
@@ -89,3 +90,4 @@ describe('Recommended Articles', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 });
+*/

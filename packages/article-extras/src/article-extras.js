@@ -7,7 +7,7 @@ import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 import {
   RelatedArticleSlice,
-  RecommendedArticles,
+  RecommendedFetch,
   LatestFromSection,
   useAlgoliaSearch
 } from "@times-components/ts-components";
@@ -105,7 +105,7 @@ const ArticleExtras = ({
           slice={relatedArticleSlice}
         />
         {recommendedArticlesFlag && (
-          <RecommendedArticles
+          <RecommendedFetch
             articleId={articleId}
             section={section}
             analyticsStream={analyticsStream}
