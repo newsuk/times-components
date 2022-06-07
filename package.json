@@ -49,6 +49,7 @@
   },
   "jest": {
     "preset": "react-native",
+    "globalSetup": "./global-setup.js",
     "coveragePathIgnorePatterns": [
       "lib/cli/edition-checker/src/main.js"
     ],
