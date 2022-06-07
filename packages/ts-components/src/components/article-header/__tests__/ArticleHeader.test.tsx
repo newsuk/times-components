@@ -56,7 +56,7 @@ describe('ArticleHeader', () => {
     it('With breaking flag and headline', () => {
       MockDate.set('2021-12-31T07:00:00+00:00');
 
-      const { getByText } = render(
+      const { baseElement, getByText } = render(
         <ArticleHeader
           updated={updated}
           breaking="true"
@@ -69,7 +69,7 @@ describe('ArticleHeader', () => {
       expect(getByText('BREAKING')).toBeVisible();
       expect(getByText('This is the headline')).toBeVisible();
 
-      // expect(baseElement).toMatchSnapshot();
+      expect(baseElement).toMatchSnapshot();
     });
 
     it('With breaking flag expired', () => {
@@ -86,6 +86,7 @@ describe('ArticleHeader', () => {
   });
 
   describe('Same calendar day during BST', () => {
+    beforeEach(() => timezone_mock.register('Europe/London'));
     afterEach(() => MockDate.reset());
 
     const updated = '2022-04-20T06:30:00+01:00';
@@ -132,6 +133,7 @@ describe('ArticleHeader', () => {
   });
 
   describe('Different calendar days', () => {
+    beforeEach(() => timezone_mock.register('Europe/London'));
     afterEach(() => MockDate.reset());
 
     const updated = '2021-12-31T22:30:00+00:00';
