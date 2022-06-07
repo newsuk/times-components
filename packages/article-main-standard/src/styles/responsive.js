@@ -1,9 +1,9 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/ts-styleguide";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
 
-export const MainContainer = styled(View)`
+export const MainContainer = styled(TcView)`
   @media (min-width: ${breakpoints.wide}px) {
     padding-top: ${spacing(4)};
     margin: 0 auto;
@@ -12,7 +12,7 @@ export const MainContainer = styled(View)`
 `;
 
 /* --- HeaderAd --- */
-export const HeaderAdContainer = styled(View)`
+export const HeaderAdContainer = styled(TcView)`
   display: none;
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -27,7 +27,7 @@ export const HeaderAdContainer = styled(View)`
 
 /* --- Header --- */
 
-export const HeaderContainer = styled(View)`
+export const HeaderContainer = styled(TcView)`
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
 
@@ -47,7 +47,7 @@ export const HeaderContainer = styled(View)`
 
 /* --- Meta --- */
 
-export const MetaContainer = styled(View)`
+export const MetaContainer = styled(TcView)`
   margin-bottom: ${spacing(4)};
   padding-right: ${spacing(4)};
   padding-left: ${spacing(4)};
@@ -63,7 +63,7 @@ export const MetaContainer = styled(View)`
   }
 `;
 
-export const ArticleMainStandardContainer = styled(View)`
+export const ArticleMainStandardContainer = styled(TcView)`
   @media (min-width: ${breakpoints.wide}px) {
     .inline-meta {
       display: none;
