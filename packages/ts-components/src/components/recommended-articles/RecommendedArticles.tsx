@@ -4,7 +4,9 @@ import { Placeholder } from '@times-components/image';
 import RelatedArticles from '@times-components/related-articles';
 
 import { useFetch } from '../../helpers/fetch/FetchProvider';
-import { RelatedArticleSliceType } from '../../types/related-article-slice';
+import { getRelatedArticlesSlice } from './formatters';
+
+import { PlaceholderContainer } from '../common-styles';
 
 export const RecommendedArticles: React.FC<{
   section: string;
@@ -14,9 +16,9 @@ export const RecommendedArticles: React.FC<{
 
   if (loading) {
     return (
-      <>
+      <PlaceholderContainer>
         <Placeholder />
-      </>
+      </PlaceholderContainer>
     );
   }
 
@@ -24,19 +26,10 @@ export const RecommendedArticles: React.FC<{
     return null;
   }
 
-  const slice: RelatedArticleSliceType = {
-    sliceName: 'StandardSlice',
-    items: data.recommendations
-      ? data.recommendations.articles
-          .slice(0, 3)
-          .map((article: any) => ({ article }))
-      : []
-  };
-
   return (
     <RelatedArticles
       heading={`Today's ${section}`}
-      slice={slice}
+      slice={getRelatedArticlesSlice(data.recommendations)}
       isVisible
       analyticsStream={analyticsStream}
     />
