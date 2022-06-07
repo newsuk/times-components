@@ -95,12 +95,12 @@ exports[`1. an article 1`] = `
                 >
                   Some Headline
                 </h1>
-                <h2
+                <div
                   aria-level="2"
                   role="heading"
                 >
                   Some Standfirst
-                </h2>
+                </div>
                 <div>
                   <ArticleFlags
                     flags={
@@ -119,7 +119,7 @@ exports[`1. an article 1`] = `
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <ArticleBylineWithLinks
                         ast={
                           Array [
@@ -143,19 +143,19 @@ exports[`1. an article 1`] = `
                           ]
                         }
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <DatePublication
                         date="2015-03-13T18:54:58.000Z"
                         publication="TIMES"
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -193,7 +193,7 @@ exports[`1. an article 1`] = `
           <div>
             <div>
               <div>
-                <span>
+                <div>
                   <ArticleBylineWithLinks
                     ast={
                       Array [
@@ -217,15 +217,15 @@ exports[`1. an article 1`] = `
                       ]
                     }
                   />
-                </span>
+                </div>
               </div>
               <div>
-                <span>
+                <div>
                   <DatePublication
                     date="2015-03-13T18:54:58.000Z"
                     publication="TIMES"
                   />
-                </span>
+                </div>
               </div>
             </div>
           </div>
@@ -417,21 +417,21 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <ArticleBylineWithLinks />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <DatePublication
                         date="2015-03-13T18:54:58.000Z"
                         publication="TIMES"
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -440,17 +440,17 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
           <div>
             <div>
               <div>
-                <span>
+                <div>
                   <ArticleBylineWithLinks />
-                </span>
+                </div>
               </div>
               <div>
-                <span>
+                <div>
                   <DatePublication
                     date="2015-03-13T18:54:58.000Z"
                     publication="TIMES"
                   />
-                </span>
+                </div>
               </div>
             </div>
           </div>
@@ -589,21 +589,21 @@ exports[`5. an article with ads 1`] = `
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <ArticleBylineWithLinks />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <DatePublication
                         date="2015-03-13T18:54:58.000Z"
                         publication="TIMES"
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -612,17 +612,17 @@ exports[`5. an article with ads 1`] = `
           <div>
             <div>
               <div>
-                <span>
+                <div>
                   <ArticleBylineWithLinks />
-                </span>
+                </div>
               </div>
               <div>
-                <span>
+                <div>
                   <DatePublication
                     date="2015-03-13T18:54:58.000Z"
                     publication="TIMES"
                   />
-                </span>
+                </div>
               </div>
             </div>
           </div>
@@ -774,12 +774,12 @@ exports[`6. should show topics when logged in or shared 1`] = `
                 >
                   Some Headline
                 </h1>
-                <h2
+                <div
                   aria-level="2"
                   role="heading"
                 >
                   Some Standfirst
-                </h2>
+                </div>
                 <div>
                   <ArticleFlags
                     flags={
@@ -798,7 +798,7 @@ exports[`6. should show topics when logged in or shared 1`] = `
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <ArticleBylineWithLinks
                         ast={
                           Array [
@@ -822,19 +822,19 @@ exports[`6. should show topics when logged in or shared 1`] = `
                           ]
                         }
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <DatePublication
                         date="2015-03-13T18:54:58.000Z"
                         publication="TIMES"
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -884,7 +884,7 @@ exports[`6. should show topics when logged in or shared 1`] = `
           <div>
             <div>
               <div>
-                <span>
+                <div>
                   <ArticleBylineWithLinks
                     ast={
                       Array [
@@ -908,15 +908,15 @@ exports[`6. should show topics when logged in or shared 1`] = `
                       ]
                     }
                   />
-                </span>
+                </div>
               </div>
               <div>
-                <span>
+                <div>
                   <DatePublication
                     date="2015-03-13T18:54:58.000Z"
                     publication="TIMES"
                   />
-                </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1130,12 +1130,12 @@ exports[`7. an article with no byline 1`] = `
                 >
                   Some Headline
                 </h1>
-                <h2
+                <div
                   aria-level="2"
                   role="heading"
                 >
                   Some Standfirst
-                </h2>
+                </div>
                 <div>
                   <ArticleFlags
                     flags={
@@ -1154,21 +1154,21 @@ exports[`7. an article with no byline 1`] = `
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <ArticleBylineWithLinks />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <DatePublication
                         date="2015-03-13T18:54:58.000Z"
                         publication="TIMES"
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1206,17 +1206,17 @@ exports[`7. an article with no byline 1`] = `
           <div>
             <div>
               <div>
-                <span>
+                <div>
                   <ArticleBylineWithLinks />
-                </span>
+                </div>
               </div>
               <div>
-                <span>
+                <div>
                   <DatePublication
                     date="2015-03-13T18:54:58.000Z"
                     publication="TIMES"
                   />
-                </span>
+                </div>
               </div>
             </div>
           </div>
@@ -1407,12 +1407,12 @@ exports[`8. an article with no label 1`] = `
                 >
                   Some Headline
                 </h1>
-                <h2
+                <div
                   aria-level="2"
                   role="heading"
                 >
                   Some Standfirst
-                </h2>
+                </div>
                 <div>
                   <ArticleFlags
                     flags={
@@ -1431,7 +1431,7 @@ exports[`8. an article with no label 1`] = `
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <ArticleBylineWithLinks
                         ast={
                           Array [
@@ -1455,19 +1455,19 @@ exports[`8. an article with no label 1`] = `
                           ]
                         }
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <DatePublication
                         date="2015-03-13T18:54:58.000Z"
                         publication="TIMES"
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1505,7 +1505,7 @@ exports[`8. an article with no label 1`] = `
           <div>
             <div>
               <div>
-                <span>
+                <div>
                   <ArticleBylineWithLinks
                     ast={
                       Array [
@@ -1529,15 +1529,15 @@ exports[`8. an article with no label 1`] = `
                       ]
                     }
                   />
-                </span>
+                </div>
               </div>
               <div>
-                <span>
+                <div>
                   <DatePublication
                     date="2015-03-13T18:54:58.000Z"
                     publication="TIMES"
                   />
-                </span>
+                </div>
               </div>
             </div>
           </div>
