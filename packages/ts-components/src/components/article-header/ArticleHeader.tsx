@@ -1,15 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
-  // parse,
-  format,
   differenceInSeconds,
   differenceInCalendarDays,
   formatDistanceStrict
 } from 'date-fns';
-import {
-  // zonedTimeToUtc,
-  utcToZonedTime
-} from 'date-fns-tz';
+import { format, utcToZonedTime } from 'date-fns-tz';
 
 import { BreakingArticleFlag } from '../article-flag/LiveArticleFlag';
 import safeDecodeURIComponent from '../../utils/safeDecodeURIComponent';
@@ -38,19 +33,24 @@ const anchorString = (updateTxt = '', headlineTxt = '') => {
 
 const ArticleHeader: React.FC<{
   updated: string;
-  // date: string;
-  // time: string;
   breaking?: string;
   headline?: string;
 }> = ({ updated, breaking, headline }) => {
+  const [timezone, setTimezone] = useState<string>('');
+
   const currentDateTime = new Date();
-
-  // const updated = `${date} ${time}`;
-  // const parsedDate = parse(updated, 'dd/MM/yyyy HH:mm', new Date());
-  // const updatedDate = zonedTimeToUtc(parsedDate, 'Europe/London');
-
   const updatedDate = new Date(updated);
-  const parsedDate = utcToZonedTime(updatedDate, 'Europe/London');
+
+  const timeZone = 'Europe/London';
+  const parsedDate = utcToZonedTime(updatedDate, timeZone);
+
+  useEffect(() => {
+    const currentTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+    if (currentTimezone !== timeZone) {
+      setTimezone(format(parsedDate, 'zzz', { timeZone }));
+    }
+  });
 
   const timeSincePublishing =
     formatDistanceStrict(updatedDate, currentDateTime, {
@@ -92,12 +92,12 @@ const ArticleHeader: React.FC<{
           <UpdatedTime
             isLessThan13Hours={!isLessThan1Minute && isLessThan13Hours}
           >
-            {format(parsedDate, 'h.mmaaa')}
+            {`${format(parsedDate, 'h.mmaaa')} ${timezone}`}
           </UpdatedTime>
         </UpdatedTimeItems>
 
         {isDaysAgo ? (
-          <UpdatedDate>{format(parsedDate, 'MMMM d yyyy')}</UpdatedDate>
+          <UpdatedDate>{format(parsedDate, 'MMMM d')}</UpdatedDate>
         ) : null}
       </UpdatesContainer>
 
