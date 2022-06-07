@@ -1,7 +1,7 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
-import { Text, View } from "react-native";
+import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import styled from "styled-components";
 import { breakpoints, spacing } from "@times-components/ts-styleguide";
 import {
@@ -17,7 +17,7 @@ import { defaultProps, propTypes } from "./article-meta-prop-types";
 
 import styles from "../styles/article-meta";
 
-const MetaTextElement = styled(Text)`
+const MetaTextElement = styled(TcText)`
   padding-top: ${spacing(2)};
 
   &:last-child {
@@ -40,17 +40,17 @@ function ArticleMeta({
 }) {
   const bylineRow = hasBylineData(bylines) ? (
     <MetaTextElement>
-      <Text style={styles.byline}>
+      <TcText style={checkStylesForUnits(styles.byline)}>
         <ArticleBylineWithLinks ast={bylines} onAuthorPress={onAuthorPress} />
-      </Text>
+      </TcText>
     </MetaTextElement>
   ) : null;
 
   const publicationRow = (
     <MetaTextElement>
-      <Text style={styles.datePublication}>
+      <TcText style={checkStylesForUnits(styles.datePublication)}>
         <DatePublication date={publishedTime} publication={publicationName} />
-      </Text>
+      </TcText>
     </MetaTextElement>
   );
 
@@ -60,14 +60,14 @@ function ArticleMeta({
     <>
       {inline ? null : (
         <KeylineComponent className={className}>
-          <View>{bylineRow}</View>
+          <TcView>{bylineRow}</TcView>
         </KeylineComponent>
       )}
       <KeylineComponent className={className}>
-        <View>
+        <TcView>
           {inline ? bylineRow : null}
           {publicationRow}
-        </View>
+        </TcView>
       </KeylineComponent>
     </>
   );
