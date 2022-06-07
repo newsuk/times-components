@@ -10,6 +10,7 @@ import {
 import ArticleLeadAsset from "@times-components/article-lead-asset";
 
 export const DatePublicationContainer = styled(TcText)`
+  ${props => props.styles && props.styles};
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: ${spacing(1)};
