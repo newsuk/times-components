@@ -132,10 +132,10 @@ describe('ArticleHeader', () => {
   describe('Different calendar days', () => {
     afterEach(() => MockDate.reset());
 
-    const updated = '2021-12-31T22:30:00Z';
+    const updated = '2021-12-31T22:30:00+00:00';
 
     it('Between 1 and 12 hours after updating', () => {
-      MockDate.set('2022-01-01T02:30:00Z');
+      MockDate.set('2022-01-01T02:30:00+00:00');
 
       const { getByText } = render(<ArticleHeader updated={updated} />);
 
