@@ -38,21 +38,19 @@ const ArticleHeader: React.FC<{
 }> = ({ updated, breaking, headline }) => {
   const [timezone, setTimezone] = useState<string>('');
 
+  const currentDateTime = new Date();
+  const updatedDate = new Date(updated);
+
+  const timeZone = 'Europe/London';
+  const parsedDate = utcToZonedTime(updatedDate, timeZone);
+
   useEffect(() => {
     const currentTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-    if (currentTimezone !== 'Europe/London') {
-      setTimezone(
-        format(utcToZonedTime(parsedDate, 'Europe/London'), 'zzz', {
-          timeZone: 'Europe/London'
-        })
-      );
+    if (currentTimezone !== timeZone) {
+      setTimezone(format(parsedDate, 'zzz', { timeZone }));
     }
   });
-
-  const currentDateTime = new Date();
-  const updatedDate = new Date(updated);
-  const parsedDate = utcToZonedTime(updatedDate, 'Europe/London');
 
   const timeSincePublishing =
     formatDistanceStrict(updatedDate, currentDateTime, {
