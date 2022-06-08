@@ -1,8 +1,7 @@
-import { StyleSheet } from "react-native";
 import { spacing } from "@times-components/ts-styleguide";
 import sharedStyles from "./shared";
 
-const styles = StyleSheet.create({
+const styles = {
   ...sharedStyles,
   jobTitle: {
     ...sharedStyles.jobTitle,
@@ -20,6 +19,6 @@ const styles = StyleSheet.create({
   twitterLink: {
     ...sharedStyles.twitterLink
   }
-});
+};
 
 export default styles;

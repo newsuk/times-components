@@ -1,15 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { IconTwitter } from "@times-components/icons";
 import { TextLink } from "@times-components/link";
 import styles from "./styles";
 
 const AuthorProfileHeadTwitter = ({ onTwitterLinkPress, twitter, url }) => (
-  <View style={styles.twitter}>
-    <View style={styles.twitterIcon}>
+  <TcView style={styles.twitter}>
+    <TcView style={styles.twitterIcon}>
       <IconTwitter height={15} width={15} />
-    </View>
+    </TcView>
     <TextLink
       onPress={e => onTwitterLinkPress(e, { twitter, url })}
       style={styles.twitterLink}
@@ -18,7 +18,7 @@ const AuthorProfileHeadTwitter = ({ onTwitterLinkPress, twitter, url }) => (
     >
       @{twitter}
     </TextLink>
-  </View>
+  </TcView>
 );
 
 AuthorProfileHeadTwitter.propTypes = {
