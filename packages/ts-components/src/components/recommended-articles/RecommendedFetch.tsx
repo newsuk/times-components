@@ -13,7 +13,7 @@ export const RecommendedFetch: React.FC<{
 
   useEffect(() => {
     setIsClientSide(true);
-  });
+  }, []);
 
   return isClientSide ? (
     <FetchProvider url={`/api/recommended-articles/${articleId}`}>

@@ -41,7 +41,7 @@ export const FetchProvider: React.FC<FetchProviderProps> = ({
           throw new Error('must provide a Fetch url');
         }
       } catch (err) {
-        setError(err.message);
+        setError(err instanceof Error ? err.message : 'unknown error');
         setLoading(false);
       }
     };
