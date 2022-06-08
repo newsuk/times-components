@@ -1,77 +1,60 @@
 import React from 'react';
 
 import { showcaseConverter } from '@times-components/storybook';
-import { MockedProvider } from '@times-components/provider-test-tools';
-import { recommendations } from '@times-components/provider-queries';
 
+import { FetchProvider } from '../../helpers/fetch/FetchProvider';
+import previewData from '../../fixtures/preview-data/recommended-articles';
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
+
 import { RecommendedArticles } from './RecommendedArticles';
 
-const mocks = [
-  {
-    delay: 1000,
-    request: {
-      query: recommendations,
-      variables: {
-        publisher: 'TIMES',
-        recomArgs: {
-          userId: '1234',
-          articleId: '94a01926-719a-11ec-aacf-0736e08b15cd'
-        }
-      }
-    },
-    result: {
-      data: {
-        recommendations: {
-          __typename: 'Recommendations',
-          leadAsset: 'null',
-          articles: [
-            {
-              __typename: 'UniversalArticle',
-              headline:
-                'Whole world is against us, says top Russian strategist',
-              id: 'a9ffb7cc-d5d1-11ec-bb99-1bcd45646516',
-              media: {
-                __typename: 'Image'
-              },
-              slug:
-                'were-no-match-for-ukrainian-grit-and-firepower-says-retired-russian-colonel',
-              url:
-                'https://www.staging-thetimes.co.uk/article/were-no-match-for-ukrainian-grit-and-firepower-says-retired-russian-colonel-lhnvsfj33'
-            },
-            {
-              __typename: 'UniversalArticle',
-              headline: 'Vardys leave court with swipe at Wayne Rooney',
-              id: 'f3d730a0-d5c2-11ec-8585-951ab3afb4d2',
-              media: {
-                __typename: 'Image'
-              },
-              slug:
-                'wayne-rooney-to-give-evidence-in-wagatha-christie-trial-as-jamie-vardy-attends-court-for-first-time',
-              url:
-                'https://www.staging-thetimes.co.uk/article/wayne-rooney-to-give-evidence-in-wagatha-christie-trial-as-jamie-vardy-attends-court-for-first-time-wlzvxklc6'
-            }
-          ]
-        }
-      }
-    }
+export const getArticles = (data: any, numOfArticles: number) => ({
+  recommendations: {
+    articles: data.recommendations.articles.slice(0, numOfArticles)
   }
-];
+});
 
-const recarticles = {
+const recommArticles = {
   children: [
     {
       component: () => (
-        <MockedProvider mocks={mocks}>
+        <FetchProvider previewData={getArticles(previewData, 1)}>
           <RecommendedArticles
-            articleId="94a01926-719a-11ec-aacf-0736e08b15cd"
             section="News"
+            isVisible
             analyticsStream={analyticsStream}
           />
-        </MockedProvider>
+        </FetchProvider>
       ),
-
-      name: 'Recommended Articles',
+      name: 'Recommended Articles - 1 Article',
+      platform: 'web',
+      type: 'story'
+    },
+    {
+      component: () => (
+        <FetchProvider previewData={getArticles(previewData, 2)}>
+          <RecommendedArticles
+            section="Business"
+            isVisible
+            analyticsStream={analyticsStream}
+          />
+        </FetchProvider>
+      ),
+      name: 'Recommended Articles - 2 Article',
+      platform: 'web',
+      type: 'story'
+    },
+    {
+      component: () => (
+        <FetchProvider previewData={previewData}>
+          <RecommendedArticles
+            section="Sport"
+            isVisible
+            analyticsStream={analyticsStream}
+          />
+        </FetchProvider>
+      ),
+      name: 'Recommended Articles - 3 Article',
       platform: 'web',
       type: 'story'
     }
@@ -79,4 +62,4 @@ const recarticles = {
   name: 'Typescript Component/Recommended Articles'
 };
 
-showcaseConverter(module, recarticles);
+showcaseConverter(module, recommArticles);

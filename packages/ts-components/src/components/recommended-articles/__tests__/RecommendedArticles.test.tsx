@@ -1,91 +1,61 @@
 import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import { render } from '@testing-library/react';
+
+import { useFetch } from '../../../helpers/fetch/FetchProvider';
+import previewData from '../../../fixtures/preview-data/recommended-articles';
 
 import { RecommendedArticles } from '../RecommendedArticles';
 
-import { MockedProvider } from '@times-components/provider-test-tools';
-import { recommendations } from '@times-components/provider-queries';
+jest.mock('@times-components/image', () => ({
+  Placeholder: () => <div>Placeholder</div>
+}));
 
-const mocks = [
-  {
-    delay: 1000,
-    request: {
-      query: recommendations,
-      variables: {
-        publisher: 'TIMES',
-        recomArgs: {
-          userId: '1234',
-          articleId: '94a01926-719a-11ec-aacf-0736e08b15cd'
-        }
-      }
-    },
-    result: {
-      data: {
-        recommendations: {
-          __typename: 'Recommendations',
-          leadAsset: 'null',
-          articles: [
-            {
-              __typename: 'UniversalArticle',
-              headline:
-                'Whole world is against us, says top Russian strategist',
-              id: 'a9ffb7cc-d5d1-11ec-bb99-1bcd45646516',
-              media: {
-                __typename: 'Image'
-              },
-              slug:
-                'were-no-match-for-ukrainian-grit-and-firepower-says-retired-russian-colonel',
-              url:
-                'https://www.staging-thetimes.co.uk/article/were-no-match-for-ukrainian-grit-and-firepower-says-retired-russian-colonel-lhnvsfj33'
-            },
-            {
-              __typename: 'UniversalArticle',
-              headline: 'Vardys leave court with swipe at Wayne Rooney',
-              id: 'f3d730a0-d5c2-11ec-8585-951ab3afb4d2',
-              media: {
-                __typename: 'Image'
-              },
-              slug:
-                'wayne-rooney-to-give-evidence-in-wagatha-christie-trial-as-jamie-vardy-attends-court-for-first-time',
-              url:
-                'https://www.staging-thetimes.co.uk/article/wayne-rooney-to-give-evidence-in-wagatha-christie-trial-as-jamie-vardy-attends-court-for-first-time-wlzvxklc6'
-            }
-          ]
-        }
-      }
-    }
-  }
-];
+jest.mock('@times-components/related-articles', () => 'RelatedArticles');
 
-describe('Recommended Articles', () => {
-  afterEach(() => {
-    jest.clearAllMocks();
-    cleanup();
-  });
+jest.mock('../../../helpers/fetch/FetchProvider', () => ({
+  useFetch: jest.fn()
+}));
 
-  it('it renders', () => {
-    const { asFragment } = render(
-      <MockedProvider mocks={mocks}>
-        <RecommendedArticles
-          articleId="94a01926-719a-11ec-aacf-0736e08b15cd"
-          section="News"
-          analyticsStream={jest.fn()}
-        />
-      </MockedProvider>
+describe('<RecommendedArticles>', () => {
+  it('should render the initial loading state correctly', () => {
+    (useFetch as jest.Mock).mockReturnValue({ loading: true });
+
+    const { asFragment, getByText } = render(
+      <RecommendedArticles
+        section="News"
+        isVisible
+        analyticsStream={() => ({})}
+      />
     );
+
+    expect(getByText('Placeholder'));
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('degrades gracefully', () => {
+  it('should render the error state correctly', () => {
+    (useFetch as jest.Mock).mockReturnValue({ error: 'Some error occurred' });
+
     const { asFragment } = render(
-      <MockedProvider mocks={mocks}>
-        <RecommendedArticles
-          articleId=""
-          section="News"
-          analyticsStream={jest.fn()}
-        />
-      </MockedProvider>
+      <RecommendedArticles section="News" analyticsStream={() => ({})} />
     );
+
+    expect(asFragment().firstChild).toBeNull();
+  });
+
+  it('should render RelatedArticles correctly', () => {
+    (useFetch as jest.Mock).mockReturnValue({ data: previewData });
+
+    const { container, asFragment } = render(
+      <RecommendedArticles
+        section="News"
+        isVisible
+        analyticsStream={() => ({})}
+      />
+    );
+
+    const related = container.querySelector('relatedarticles') as HTMLElement;
+    expect(related.getAttribute('heading')).toEqual("Today's News");
+
     expect(asFragment()).toMatchSnapshot();
   });
 });

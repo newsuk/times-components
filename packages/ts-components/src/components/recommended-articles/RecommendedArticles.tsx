@@ -1,69 +1,40 @@
-import React, { useEffect, useState } from 'react';
-
-import RelatedArticles from '@times-components/related-articles';
-import { GetRecommendedArticles } from '@times-components/provider';
-
-import { RelatedArticleSliceType } from '../../types/related-article-slice';
+import React from 'react';
 
 import { Placeholder } from '@times-components/image';
+import RelatedArticles from '@times-components/related-articles';
 
-type RecommendedArticlesProps = {
-  articleId: string;
+import { useFetch } from '../../helpers/fetch/FetchProvider';
+import { getRelatedArticlesSlice } from './formatters';
+
+import { PlaceholderContainer } from '../common-styles';
+
+export const RecommendedArticles: React.FC<{
   section: string;
+  isVisible?: boolean;
   analyticsStream?: (evt: any) => void;
-};
+}> = ({ section, isVisible, analyticsStream }) => {
+  const { loading, error, data } = useFetch<any>();
 
-export const RecommendedArticles = ({
-  articleId,
-  section,
-  analyticsStream
-}: RecommendedArticlesProps) => {
-  const [isReady, setIsReady] = useState<boolean>(false);
+  if (loading && isVisible) {
+    return (
+      <PlaceholderContainer>
+        <Placeholder />
+      </PlaceholderContainer>
+    );
+  }
 
-  useEffect(() => {
-    setIsReady(true);
-  }, []);
-
-  if (!isReady) {
+  if (error || data === undefined) {
     return null;
   }
 
   return (
-    <GetRecommendedArticles
-      publisher={'TIMES'}
-      recomArgs={{ userId: '1234', articleId }}
-      ssr={false}
-      debounceTimeMs={0}
-    >
-      {({ isLoading, error, recommendations }: any) => {
-        if (error) {
-          return null;
-        }
-
-        if (isLoading || !recommendations) {
-          return (
-            <div className="placeholder">
-              <Placeholder />
-            </div>
-          );
-        }
-
-        const slice: RelatedArticleSliceType = {
-          sliceName: 'StandardSlice',
-          items: recommendations
-            ? recommendations.articles.map((article: any) => ({ article }))
-            : []
-        };
-
-        return (
-          <RelatedArticles
-            heading={`Today's ${section}`}
-            slice={slice}
-            isVisible
-            analyticsStream={analyticsStream}
-          />
-        );
-      }}
-    </GetRecommendedArticles>
+    <div style={{ display: isVisible ? 'block' : 'none' }}>
+      <RelatedArticles
+        heading={`Today's ${section}`}
+        slice={getRelatedArticlesSlice(data.recommendations)}
+        isVisible
+        analyticsStream={analyticsStream}
+      />
+    </div>
   );
 };
