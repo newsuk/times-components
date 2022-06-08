@@ -21,7 +21,11 @@ describe('<RecommendedArticles>', () => {
     (useFetch as jest.Mock).mockReturnValue({ loading: true });
 
     const { asFragment, getByText } = render(
-      <RecommendedArticles section="News" analyticsStream={() => ({})} />
+      <RecommendedArticles
+        section="News"
+        isVisible
+        analyticsStream={() => ({})}
+      />
     );
 
     expect(getByText('Placeholder'));
@@ -42,7 +46,11 @@ describe('<RecommendedArticles>', () => {
     (useFetch as jest.Mock).mockReturnValue({ data: previewData });
 
     const { container, asFragment } = render(
-      <RecommendedArticles section="News" analyticsStream={() => ({})} />
+      <RecommendedArticles
+        section="News"
+        isVisible
+        analyticsStream={() => ({})}
+      />
     );
 
     const related = container.querySelector('relatedarticles') as HTMLElement;
