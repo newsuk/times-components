@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.13.2...@times-components/article-extras@0.14.0) (2022-06-08)
+
+
+### Features
+
+* **TDP-1935:** Recommended Articles ([#2977](https://github.com/newsuk/times-components/issues/2977)) ([b3be73f](https://github.com/newsuk/times-components/commit/b3be73f01c4c1c9c5949675db7ad2dff5a839509))
+
+
+
+
+
 ## [0.13.2](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.13.1...@times-components/article-extras@0.13.2) (2022-06-08)
 
 **Note:** Version bump only for package @times-components/article-extras
