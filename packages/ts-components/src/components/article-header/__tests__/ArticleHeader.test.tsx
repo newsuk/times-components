@@ -8,10 +8,11 @@ import ArticleHeader from '../ArticleHeader';
 
 describe('ArticleHeader', () => {
   describe('Same calendar day during', () => {
-    beforeEach(() => timezone_mock.register('Europe/London'));
+    // beforeEach(() => timezone_mock.register('Europe/London'));
     afterEach(() => MockDate.reset());
 
     const updated = '2021-12-31T06:30:00+00:00';
+    timezone_mock.register('US/Eastern');
 
     it('Within a minute of updating', () => {
       MockDate.set('2021-12-31T06:30:10+00:00');

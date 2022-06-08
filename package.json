@@ -58,7 +58,8 @@
     "transformIgnorePatterns": [
       "node_modules/(?!react-native|react-native-svg|@times-components)",
       "packages/?!author-profile"
-    ]
+    ],
+    "globalSetup": "./global-setup.js"
   },
   "config": {
     "commitizen": {
