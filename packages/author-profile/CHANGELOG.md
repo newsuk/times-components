@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.6.31...@times-components/author-profile@6.7.0) (2022-06-08)
+
+
+### Features
+
+* **TDP-1702:** removed react native from Author profile ([#2972](https://github.com/newsuk/times-components/issues/2972)) ([3014b9d](https://github.com/newsuk/times-components/commit/3014b9da0a1f4da47c54edf33d82cfa40a5037cd))
+
+
+
+
+
 ## [6.6.31](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.6.30...@times-components/author-profile@6.6.31) (2022-06-08)
 
 **Note:** Version bump only for package @times-components/author-profile
