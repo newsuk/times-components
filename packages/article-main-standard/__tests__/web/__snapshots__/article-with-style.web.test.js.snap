@@ -366,7 +366,7 @@ exports[`full article with style 1`] = `
   line-height: 30px;
   font-family: TimesModern-Bold;
   font-size: 30px;
-  line-height: 33;
+  line-height: 33px;
   color: #1D1D1B;
   margin-bottom: 7px;
 }
