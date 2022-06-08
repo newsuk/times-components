@@ -106,6 +106,7 @@ const ArticleExtras = ({
         <RecommendedFetch
           articleId={articleId}
           section={section}
+          isVisible={additionalRelatedArticlesFlag}
           analyticsStream={analyticsStream}
         />
         {additionalRelatedArticlesFlag &&
