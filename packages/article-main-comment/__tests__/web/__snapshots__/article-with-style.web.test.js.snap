@@ -424,7 +424,7 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
   font-family: TimesModern-Bold;
   font-size: 30px;
-  line-height: 33;
+  line-height: 33px;
   color: #1D1D1B;
   margin-bottom: 10px;
   text-align: center;
@@ -515,7 +515,7 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
   font-family: TimesModern-Regular;
   font-size: 20px;
-  line-height: 26;
+  line-height: 26px;
   color: #333333;
   margin-bottom: 15px;
   padding-left: 10px;

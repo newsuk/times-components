@@ -502,7 +502,7 @@ exports[`full article with style 1`] = `
   overflow-wrap: break-word;
   font-family: TimesModern-Regular;
   font-size: 20px;
-  line-height: 26;
+  line-height: 26px;
   font-weight: 400;
   color: rgba(255,255,255,1);
   margin-bottom: 15px;
@@ -1659,7 +1659,7 @@ exports[`full article with style in the culture magazine 1`] = `
   overflow-wrap: break-word;
   font-family: TimesModern-Regular;
   font-size: 20px;
-  line-height: 26;
+  line-height: 26px;
   font-weight: 400;
   color: rgba(255,255,255,1);
   margin-bottom: 15px;
@@ -2817,7 +2817,7 @@ exports[`full article with style in the style magazine 1`] = `
   overflow-wrap: break-word;
   font-family: TimesModern-Regular;
   font-size: 20px;
-  line-height: 26;
+  line-height: 26px;
   font-weight: 400;
   color: rgba(255,255,255,1);
   margin-bottom: 15px;
@@ -3974,7 +3974,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   overflow-wrap: break-word;
   font-family: TimesModern-Regular;
   font-size: 20px;
-  line-height: 26;
+  line-height: 26px;
   font-weight: 400;
   color: rgba(255,255,255,1);
   margin-bottom: 15px;

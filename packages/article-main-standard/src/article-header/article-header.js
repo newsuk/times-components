@@ -1,7 +1,7 @@
 /* eslint-disable react/forbid-prop-types */
 import React from "react";
 import PropTypes from "prop-types";
-import { TcView } from "@times-components/utils";
+import { TcView, checkStylesForUnits } from "@times-components/utils";
 import {
   ArticleFlags,
   UpdatedTimeProvider
@@ -27,7 +27,7 @@ const ArticleHeader = ({
     <HeadlineContainer
       role="heading"
       aria-level="1"
-      styles={styles.articleHeadLineText}
+      styles={checkStylesForUnits(styles.articleHeadLineText)}
     >
       {headline}
     </HeadlineContainer>
