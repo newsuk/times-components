@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecommendedArticles> should render RelatedArticles correctly 1`] = `
+<DocumentFragment>
+  <relatedarticles
+    heading="Today's News"
+    slice="[object Object]"
+  />
+</DocumentFragment>
+`;
+
+exports[`<RecommendedArticles> should render the initial loading state correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-bdVaJa dwiMsX"
+  >
+    <div>
+      Placeholder
+    </div>
+  </div>
+</DocumentFragment>
+`;

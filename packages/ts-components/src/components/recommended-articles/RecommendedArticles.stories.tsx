@@ -8,19 +8,50 @@ import analyticsStream from '../../fixtures/analytics-actions/analytics-actions'
 
 import { RecommendedArticles } from './RecommendedArticles';
 
+export const getArticles = (data: any, numOfArticles: number) => ({
+  recommendations: {
+    articles: data.recommendations.articles.slice(0, numOfArticles)
+  }
+});
+
 const recommArticles = {
   children: [
     {
       component: () => (
-        <FetchProvider previewData={previewData}>
+        <FetchProvider previewData={getArticles(previewData, 1)}>
           <RecommendedArticles
             section="News"
             analyticsStream={analyticsStream}
           />
         </FetchProvider>
       ),
-
-      name: 'Recommended Articles',
+      name: 'Recommended Articles - 1 Article',
+      platform: 'web',
+      type: 'story'
+    },
+    {
+      component: () => (
+        <FetchProvider previewData={getArticles(previewData, 2)}>
+          <RecommendedArticles
+            section="Business"
+            analyticsStream={analyticsStream}
+          />
+        </FetchProvider>
+      ),
+      name: 'Recommended Articles - 2 Article',
+      platform: 'web',
+      type: 'story'
+    },
+    {
+      component: () => (
+        <FetchProvider previewData={previewData}>
+          <RecommendedArticles
+            section="Sport"
+            analyticsStream={analyticsStream}
+          />
+        </FetchProvider>
+      ),
+      name: 'Recommended Articles - 3 Article',
       platform: 'web',
       type: 'story'
     }
