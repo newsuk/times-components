@@ -3,6 +3,7 @@
 exports[`<RecommendedArticles> should render RelatedArticles correctly 1`] = `
 <DocumentFragment>
   <div
+    id="recommended-articles"
     style="display: block;"
   >
     <relatedarticles
