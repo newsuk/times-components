@@ -28,7 +28,10 @@ export const RecommendedArticles: React.FC<{
   }
 
   return (
-    <div style={{ display: isVisible ? 'block' : 'none' }}>
+    <div
+      id="recommended-articles"
+      style={{ display: isVisible ? 'block' : 'none' }}
+    >
       <RelatedArticles
         heading={`Today's ${section}`}
         slice={getRelatedArticlesSlice(data.recommendations)}
