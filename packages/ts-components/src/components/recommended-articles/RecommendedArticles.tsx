@@ -7,11 +7,13 @@ import { useFetch } from '../../helpers/fetch/FetchProvider';
 import { getRelatedArticlesSlice } from './formatters';
 
 import { PlaceholderContainer } from '../common-styles';
+import { RecommendedArticlesContainer } from './styles';
 
 export const RecommendedArticles: React.FC<{
   section: string;
+  isVisible?: boolean;
   analyticsStream?: (evt: any) => void;
-}> = ({ section, analyticsStream }) => {
+}> = ({ section, isVisible, analyticsStream }) => {
   const { loading, error, data } = useFetch<any>();
 
   if (loading) {
@@ -27,11 +29,13 @@ export const RecommendedArticles: React.FC<{
   }
 
   return (
-    <RelatedArticles
-      heading={`Today's ${section}`}
-      slice={getRelatedArticlesSlice(data.recommendations)}
-      isVisible
-      analyticsStream={analyticsStream}
-    />
+    <RecommendedArticlesContainer isVisible={isVisible}>
+      <RelatedArticles
+        heading={`Today's ${section}`}
+        slice={getRelatedArticlesSlice(data.recommendations)}
+        isVisible
+        analyticsStream={analyticsStream}
+      />
+    </RecommendedArticlesContainer>
   );
 };

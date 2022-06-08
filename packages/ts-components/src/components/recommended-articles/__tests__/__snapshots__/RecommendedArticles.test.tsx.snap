@@ -2,10 +2,14 @@
 
 exports[`<RecommendedArticles> should render RelatedArticles correctly 1`] = `
 <DocumentFragment>
-  <relatedarticles
-    heading="Today's News"
-    slice="[object Object]"
-  />
+  <div
+    class="sc-dnqmqq jRkzfi"
+  >
+    <relatedarticles
+      heading="Today's News"
+      slice="[object Object]"
+    />
+  </div>
 </DocumentFragment>
 `;
 

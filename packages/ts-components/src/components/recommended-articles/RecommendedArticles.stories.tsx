@@ -21,6 +21,7 @@ const recommArticles = {
         <FetchProvider previewData={getArticles(previewData, 1)}>
           <RecommendedArticles
             section="News"
+            isVisible
             analyticsStream={analyticsStream}
           />
         </FetchProvider>
@@ -34,6 +35,7 @@ const recommArticles = {
         <FetchProvider previewData={getArticles(previewData, 2)}>
           <RecommendedArticles
             section="Business"
+            isVisible
             analyticsStream={analyticsStream}
           />
         </FetchProvider>
@@ -47,6 +49,7 @@ const recommArticles = {
         <FetchProvider previewData={previewData}>
           <RecommendedArticles
             section="Sport"
+            isVisible
             analyticsStream={analyticsStream}
           />
         </FetchProvider>
