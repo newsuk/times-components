@@ -86,7 +86,6 @@ describe('ArticleHeader', () => {
   });
 
   describe('Same calendar day during BST', () => {
-    beforeEach(() => timezone_mock.register('Europe/London'));
     afterEach(() => MockDate.reset());
 
     const updated = '2022-04-20T06:30:00+01:00';
@@ -133,7 +132,6 @@ describe('ArticleHeader', () => {
   });
 
   describe('Different calendar days', () => {
-    beforeEach(() => timezone_mock.register('Europe/London'));
     afterEach(() => MockDate.reset());
 
     const updated = '2021-12-31T22:30:00+00:00';
