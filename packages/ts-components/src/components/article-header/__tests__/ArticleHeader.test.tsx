@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import MockDate from 'mockdate';
-import timezone_mock from 'timezone-mock';
+// import timezone_mock from 'timezone-mock';
 
 import ArticleHeader from '../ArticleHeader';
 
@@ -12,7 +12,6 @@ describe('ArticleHeader', () => {
     afterEach(() => MockDate.reset());
 
     const updated = '2021-12-31T06:30:00+00:00';
-    timezone_mock.register('US/Eastern');
 
     it('Within a minute of updating', () => {
       MockDate.set('2021-12-31T06:30:10+00:00');
