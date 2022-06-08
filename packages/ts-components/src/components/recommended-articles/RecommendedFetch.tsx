@@ -6,8 +6,9 @@ import { RecommendedArticles } from './RecommendedArticles';
 export const RecommendedFetch: React.FC<{
   articleId: string;
   section: string;
+  isVisible?: boolean;
   analyticsStream?: (evt: any) => void;
-}> = ({ articleId, section, analyticsStream }) => {
+}> = ({ articleId, section, isVisible, analyticsStream }) => {
   const [isClientSide, setIsClientSide] = useState<boolean>(false);
 
   useEffect(() => {
@@ -18,6 +19,7 @@ export const RecommendedFetch: React.FC<{
     <FetchProvider url={`/api/recommended-articles/${articleId}`}>
       <RecommendedArticles
         section={section}
+        isVisible={isVisible}
         analyticsStream={analyticsStream}
       />
     </FetchProvider>
