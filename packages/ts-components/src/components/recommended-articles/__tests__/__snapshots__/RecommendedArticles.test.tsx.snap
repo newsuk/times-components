@@ -13,15 +13,3 @@ exports[`<RecommendedArticles> should render RelatedArticles correctly 1`] = `
   </div>
 </DocumentFragment>
 `;
-
-exports[`<RecommendedArticles> should render the initial loading state correctly 1`] = `
-<DocumentFragment>
-  <div
-    class="sc-bdVaJa dwiMsX"
-  >
-    <div>
-      Placeholder
-    </div>
-  </div>
-</DocumentFragment>
-`;

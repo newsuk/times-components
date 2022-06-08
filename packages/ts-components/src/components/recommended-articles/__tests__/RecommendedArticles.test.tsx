@@ -6,10 +6,6 @@ import previewData from '../../../fixtures/preview-data/recommended-articles';
 
 import { RecommendedArticles } from '../RecommendedArticles';
 
-jest.mock('@times-components/image', () => ({
-  Placeholder: () => <div>Placeholder</div>
-}));
-
 jest.mock('@times-components/related-articles', () => 'RelatedArticles');
 
 jest.mock('../../../helpers/fetch/FetchProvider', () => ({
@@ -20,16 +16,11 @@ describe('<RecommendedArticles>', () => {
   it('should render the initial loading state correctly', () => {
     (useFetch as jest.Mock).mockReturnValue({ loading: true });
 
-    const { asFragment, getByText } = render(
-      <RecommendedArticles
-        section="News"
-        isVisible
-        analyticsStream={() => ({})}
-      />
+    const { asFragment } = render(
+      <RecommendedArticles section="News" analyticsStream={() => ({})} />
     );
 
-    expect(getByText('Placeholder'));
-    expect(asFragment()).toMatchSnapshot();
+    expect(asFragment().firstChild).toBeNull();
   });
 
   it('should render the error state correctly', () => {
