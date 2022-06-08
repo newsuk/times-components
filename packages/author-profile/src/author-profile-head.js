@@ -41,9 +41,9 @@ const AuthorProfileHead = ({
     if (!name) return null;
     return (
       <AuthorNameWrapper
-        accessibilityRole="header"
+        role="heading"
         aria-level="1"
-        testID="author-name"
+        data-testid="author-name"
       >
         {name}
       </AuthorNameWrapper>

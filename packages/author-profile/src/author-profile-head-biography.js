@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText, checkStylesForUnits } from "@times-components/utils";
 import PropTypes from "prop-types";
 import renderTrees, {
   propTypes as treePropTypes
@@ -8,9 +8,12 @@ import coreRenderers from "@times-components/markup";
 import styles from "./styles";
 
 const AuthorProfileHeadBiography = ({ biography }) => (
-  <Text style={styles.biography} testID="author-bio">
+  <TcText
+    style={checkStylesForUnits(styles.biography)}
+    data-testid="author-bio"
+  >
     {renderTrees(biography, coreRenderers)}
-  </Text>
+  </TcText>
 );
 
 AuthorProfileHeadBiography.propTypes = {
