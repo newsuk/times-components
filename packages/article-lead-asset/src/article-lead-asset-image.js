@@ -8,11 +8,7 @@ const LeadAssetImage = ({ aspectRatio, alt, uri }) => {
   const url = addMissingProtocol(uri);
   const ratio = getRatio(aspectRatio);
 
-<<<<<<< HEAD
   const sizes = [360, 520, 680, 860, 1200, 1500];
-=======
-  const sizes = [520, 680, 860, 1200, 1500];
->>>>>>> 50dadb59b479e45cc59e06bdea530f8eeeadbfe0
   const srcSet = sizes.map(
     size => `${appendToImageURL(url, "resize", size)} ${size}w`
   );
