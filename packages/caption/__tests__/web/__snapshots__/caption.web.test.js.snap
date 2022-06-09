@@ -2,13 +2,26 @@
 
 exports[`1. caption without credits 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-paddingTop-m611by"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    style={
+      Object {
+        "paddingTop": "10px",
+      }
+    }
   >
     <div
-      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": "17px",
+        }
+      }
     >
       Some caption text goes in here
     </div>
@@ -18,18 +31,41 @@ exports[`1. caption without credits 1`] = `
 
 exports[`2. caption with credits 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-paddingTop-m611by"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    style={
+      Object {
+        "paddingTop": "10px",
+      }
+    }
   >
     <div
-      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": "17px",
+        }
+      }
     >
       Some caption text goes in here
     </div>
     <div
-      className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 9,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "lineHeight": "17px",
+        }
+      }
     >
       JUST CREDITS
     </div>
@@ -39,13 +75,28 @@ exports[`2. caption with credits 1`] = `
 
 exports[`3. caption with credits only 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-paddingTop-m611by"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    style={
+      Object {
+        "paddingTop": "10px",
+      }
+    }
   >
     <div
-      className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 9,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "lineHeight": "17px",
+        }
+      }
     >
       JUST CREDITS
     </div>
@@ -55,23 +106,46 @@ exports[`3. caption with credits only 1`] = `
 
 exports[`4. caption with child 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     Hello world!
   </div>
   <div
-    className="css-view-1dbjc4n r-paddingTop-m611by"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    style={
+      Object {
+        "paddingTop": "10px",
+      }
+    }
   >
     <div
-      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": "17px",
+        }
+      }
     >
       Some caption text goes in here
     </div>
     <div
-      className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 9,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "lineHeight": "17px",
+        }
+      }
     >
       JUST CREDITS
     </div>
@@ -81,17 +155,25 @@ exports[`4. caption with child 1`] = `
 
 exports[`5. centred caption without credits 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-paddingTop-m611by"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    style={
+      Object {
+        "paddingTop": "10px",
+      }
+    }
   >
     <div
-      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       style={
         Object {
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": "17px",
+          "paddingHorizontal": "10px",
           "textAlign": "center",
         }
       }
@@ -104,17 +186,25 @@ exports[`5. centred caption without credits 1`] = `
 
 exports[`6. centred caption caption with credits 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-paddingTop-m611by"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    style={
+      Object {
+        "paddingTop": "10px",
+      }
+    }
   >
     <div
-      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       style={
         Object {
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": "17px",
+          "paddingHorizontal": "10px",
           "textAlign": "center",
         }
       }
@@ -122,11 +212,16 @@ exports[`6. centred caption caption with credits 1`] = `
       Some caption text goes in here
     </div>
     <div
-      className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       style={
         Object {
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 9,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "lineHeight": "17px",
+          "paddingHorizontal": "10px",
           "textAlign": "center",
         }
       }
@@ -139,17 +234,27 @@ exports[`6. centred caption caption with credits 1`] = `
 
 exports[`7. centred caption caption with credits only 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-paddingTop-m611by"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    style={
+      Object {
+        "paddingTop": "10px",
+      }
+    }
   >
     <div
-      className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       style={
         Object {
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 9,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "lineHeight": "17px",
+          "paddingHorizontal": "10px",
           "textAlign": "center",
         }
       }
@@ -162,22 +267,30 @@ exports[`7. centred caption caption with credits only 1`] = `
 
 exports[`8. centred caption caption with child 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     Hello world!
   </div>
   <div
-    className="css-view-1dbjc4n r-paddingTop-m611by"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    style={
+      Object {
+        "paddingTop": "10px",
+      }
+    }
   >
     <div
-      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       style={
         Object {
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 13,
+          "lineHeight": "17px",
+          "paddingHorizontal": "10px",
           "textAlign": "center",
         }
       }
@@ -185,11 +298,16 @@ exports[`8. centred caption caption with child 1`] = `
       Some caption text goes in here
     </div>
     <div
-      className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       style={
         Object {
-          "paddingLeft": "10px",
-          "paddingRight": "10px",
+          "color": "#333333",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 9,
+          "fontWeight": "400",
+          "letterSpacing": 1,
+          "lineHeight": "17px",
+          "paddingHorizontal": "10px",
           "textAlign": "center",
         }
       }

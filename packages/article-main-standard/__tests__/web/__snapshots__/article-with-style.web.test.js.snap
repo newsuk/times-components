@@ -879,6 +879,17 @@ exports[`full article with style 1`] = `
 }
 
 .IS17 {
+  color: #696969;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13;
+  line-height: 17px;
+}
+
+.IS18 {
+  padding-top: 10px;
+}
+
+.IS19 {
   margin: 0;
 }
 </style>
@@ -1100,7 +1111,7 @@ exports[`full article with style 1`] = `
             className="c21"
           >
             <figure
-              className="IS17"
+              className="IS19"
             >
               <div
                 className="c6 IS16"
@@ -1126,13 +1137,13 @@ exports[`full article with style 1`] = `
                   className="c28"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="c6"
                   >
                     <div
-                      className="css-view-1dbjc4n r-paddingTop-m611by"
+                      className="c6 IS18"
                     >
                       <div
-                        className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                        className="c8 IS17"
                       >
                         This is video caption
                       </div>
