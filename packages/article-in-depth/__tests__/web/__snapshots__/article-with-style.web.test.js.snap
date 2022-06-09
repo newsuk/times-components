@@ -905,6 +905,17 @@ exports[`full article with style 1`] = `
 }
 
 .IS15 {
+  color: #696969;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13;
+  line-height: 17px;
+}
+
+.IS16 {
+  padding-top: 10px;
+}
+
+.IS17 {
   margin: 0;
 }
 </style>
@@ -1075,7 +1086,7 @@ exports[`full article with style 1`] = `
           className="c20"
         >
           <figure
-            className="IS15"
+            className="IS17"
           >
             <div
               className="c3 IS14"
@@ -1101,13 +1112,13 @@ exports[`full article with style 1`] = `
                 className="c27"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="c3"
                 >
                   <div
-                    className="css-view-1dbjc4n r-paddingTop-m611by"
+                    className="c3 IS16"
                   >
                     <div
-                      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                      className="c5 IS15"
                     >
                       This is video caption
                     </div>
@@ -2062,6 +2073,17 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .IS15 {
+  color: #696969;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13;
+  line-height: 17px;
+}
+
+.IS16 {
+  padding-top: 10px;
+}
+
+.IS17 {
   margin: 0;
 }
 </style>
@@ -2232,7 +2254,7 @@ exports[`full article with style in the culture magazine 1`] = `
           className="c20"
         >
           <figure
-            className="IS15"
+            className="IS17"
           >
             <div
               className="c3 IS14"
@@ -2258,13 +2280,13 @@ exports[`full article with style in the culture magazine 1`] = `
                 className="c27"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="c3"
                 >
                   <div
-                    className="css-view-1dbjc4n r-paddingTop-m611by"
+                    className="c3 IS16"
                   >
                     <div
-                      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                      className="c5 IS15"
                     >
                       This is video caption
                     </div>
@@ -3220,6 +3242,17 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .IS15 {
+  color: #696969;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13;
+  line-height: 17px;
+}
+
+.IS16 {
+  padding-top: 10px;
+}
+
+.IS17 {
   margin: 0;
 }
 </style>
@@ -3390,7 +3423,7 @@ exports[`full article with style in the style magazine 1`] = `
           className="c20"
         >
           <figure
-            className="IS15"
+            className="IS17"
           >
             <div
               className="c3 IS14"
@@ -3416,13 +3449,13 @@ exports[`full article with style in the style magazine 1`] = `
                 className="c27"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="c3"
                 >
                   <div
-                    className="css-view-1dbjc4n r-paddingTop-m611by"
+                    className="c3 IS16"
                   >
                     <div
-                      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                      className="c5 IS15"
                     >
                       This is video caption
                     </div>
@@ -4377,6 +4410,17 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .IS15 {
+  color: #696969;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13;
+  line-height: 17px;
+}
+
+.IS16 {
+  padding-top: 10px;
+}
+
+.IS17 {
   margin: 0;
 }
 </style>
@@ -4547,7 +4591,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           className="c20"
         >
           <figure
-            className="IS15"
+            className="IS17"
           >
             <div
               className="c3 IS14"
@@ -4573,13 +4617,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
                 className="c27"
               >
                 <div
-                  className="css-view-1dbjc4n"
+                  className="c3"
                 >
                   <div
-                    className="css-view-1dbjc4n r-paddingTop-m611by"
+                    className="c3 IS16"
                   >
                     <div
-                      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                      className="c5 IS15"
                     >
                       This is video caption
                     </div>
