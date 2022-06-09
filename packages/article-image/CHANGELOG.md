@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.9.0](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.8.15...@times-components/article-image@7.9.0) (2022-06-09)
+
+
+### Features
+
+* **TDP-1709:** removed react native from caption ([#2979](https://github.com/newsuk/times-components/issues/2979)) ([79de2a5](https://github.com/newsuk/times-components/commit/79de2a50be4fe2246b069a6aae6eca53e8fbb43c))
+
+
+
+
+
 ## [7.8.15](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.8.14...@times-components/article-image@7.8.15) (2022-05-16)
 
 **Note:** Version bump only for package @times-components/article-image
