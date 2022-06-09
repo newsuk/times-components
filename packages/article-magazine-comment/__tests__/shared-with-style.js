@@ -1,5 +1,4 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import {
@@ -9,7 +8,6 @@ import {
   hoistStyleTransform,
   minimaliseTransform,
   minimalWebTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import { themeFactory } from "@times-components/ts-styleguide";
@@ -19,19 +17,6 @@ import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
 
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
-
-const styles = [
-  "alignItems",
-  "flex",
-  "flexBasis",
-  "fontWeight",
-  "justifyContent",
-  "lineHeight",
-  "marginBottom",
-  "marginTop",
-  "paddingBottom",
-  "paddingTop"
-];
 
 const article = articleFixture({
   ...testFixture,
@@ -158,8 +143,7 @@ export default () => {
         (value, key) => key !== "style" && key !== "className"
       ),
       flattenStyleTransform,
-      hoistStyleTransform,
-      rnwTransform(AppRegistry, styles)
+      hoistStyleTransform
     )
   );
 

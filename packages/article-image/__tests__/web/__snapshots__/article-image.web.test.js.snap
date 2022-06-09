@@ -10,16 +10,24 @@ exports[`4. inline image with no ratio only shows caption and credits 1`] = `
 <responsive__InsetCaptionContainerStyle>
   <div>
     <figcaption>
-      <div>
+      <tc-view__TcView>
         <div>
-          <div>
-            Some caption
-          </div>
-          <div>
-            SOME CREDIT
-          </div>
+          <tc-view__TcView>
+            <div>
+              <tc-text__TcText>
+                <div>
+                  Some caption
+                </div>
+              </tc-text__TcText>
+              <tc-text__TcText>
+                <div>
+                  SOME CREDIT
+                </div>
+              </tc-text__TcText>
+            </div>
+          </tc-view__TcView>
         </div>
-      </div>
+      </tc-view__TcView>
     </figcaption>
   </div>
 </responsive__InsetCaptionContainerStyle>
@@ -85,13 +93,19 @@ Array [
 exports[`6. image with no display only shows given caption 1`] = `
 <tc-view__TcView>
   <div>
-    <div>
+    <tc-view__TcView>
       <div>
-        <div>
-          Some caption
-        </div>
+        <tc-view__TcView>
+          <div>
+            <tc-text__TcText>
+              <div>
+                Some caption
+              </div>
+            </tc-text__TcText>
+          </div>
+        </tc-view__TcView>
       </div>
-    </div>
+    </tc-view__TcView>
   </div>
 </tc-view__TcView>
 `;
@@ -99,13 +113,19 @@ exports[`6. image with no display only shows given caption 1`] = `
 exports[`7. image with no display only shows given credits 1`] = `
 <tc-view__TcView>
   <div>
-    <div>
+    <tc-view__TcView>
       <div>
-        <div>
-          SOME CREDIT
-        </div>
+        <tc-view__TcView>
+          <div>
+            <tc-text__TcText>
+              <div>
+                SOME CREDIT
+              </div>
+            </tc-text__TcText>
+          </div>
+        </tc-view__TcView>
       </div>
-    </div>
+    </tc-view__TcView>
   </div>
 </tc-view__TcView>
 `;
@@ -167,16 +187,24 @@ Array [
     <div>
       <responsive__InsetCaptionStyle>
         <div>
-          <div>
+          <tc-view__TcView>
             <div>
-              <div>
-                Some caption
-              </div>
-              <div>
-                SOME CREDIT
-              </div>
+              <tc-view__TcView>
+                <div>
+                  <tc-text__TcText>
+                    <div>
+                      Some caption
+                    </div>
+                  </tc-text__TcText>
+                  <tc-text__TcText>
+                    <div>
+                      SOME CREDIT
+                    </div>
+                  </tc-text__TcText>
+                </div>
+              </tc-view__TcView>
             </div>
-          </div>
+          </tc-view__TcView>
         </div>
       </responsive__InsetCaptionStyle>
     </div>
@@ -252,16 +280,24 @@ Array [
     <div>
       <responsive__InsetCaptionStyle>
         <div>
-          <div>
+          <tc-view__TcView>
             <div>
-              <div>
-                Some caption
-              </div>
-              <div>
-                SOME CREDIT
-              </div>
+              <tc-view__TcView>
+                <div>
+                  <tc-text__TcText>
+                    <div>
+                      Some caption
+                    </div>
+                  </tc-text__TcText>
+                  <tc-text__TcText>
+                    <div>
+                      SOME CREDIT
+                    </div>
+                  </tc-text__TcText>
+                </div>
+              </tc-view__TcView>
             </div>
-          </div>
+          </tc-view__TcView>
         </div>
       </responsive__InsetCaptionStyle>
     </div>

@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.9.18](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.9.17...@times-components/article-list@9.9.18) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.9.17](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.9.16...@times-components/article-list@9.9.17) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.9.16](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.9.15...@times-components/article-list@9.9.16) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.9.15](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.9.14...@times-components/article-list@9.9.15) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.9.14](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.9.13...@times-components/article-list@9.9.14) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.9.13](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.9.12...@times-components/article-list@9.9.13) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.9.12](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.9.11...@times-components/article-list@9.9.12) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
 ## [9.9.11](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.9.10...@times-components/article-list@9.9.11) (2022-05-26)
 
 **Note:** Version bump only for package @times-components/article-list

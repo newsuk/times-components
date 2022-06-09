@@ -3,6 +3,116 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.49.10](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.49.9...@times-components/article-main-comment@2.49.10) (2022-06-09)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.49.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.49.8...@times-components/article-main-comment@2.49.9) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.49.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.49.7...@times-components/article-main-comment@2.49.8) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.49.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.49.6...@times-components/article-main-comment@2.49.7) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.49.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.49.5...@times-components/article-main-comment@2.49.6) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.49.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.49.4...@times-components/article-main-comment@2.49.5) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.49.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.49.3...@times-components/article-main-comment@2.49.4) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.49.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.49.2...@times-components/article-main-comment@2.49.3) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.49.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.49.1...@times-components/article-main-comment@2.49.2) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.49.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.49.0...@times-components/article-main-comment@2.49.1) (2022-06-06)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.49.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.48.0...@times-components/article-main-comment@2.49.0) (2022-06-01)
+
+
+### Features
+
+* **TDP-1520:** add articleSection to article JSON LD ([#2956](https://github.com/newsuk/times-components/issues/2956)) ([4c108ed](https://github.com/newsuk/times-components/commit/4c108ed699ac6ebfc41949de29d89eaeb7f3b03f))
+
+
+
+
+
+# [2.48.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.47.2...@times-components/article-main-comment@2.48.0) (2022-06-01)
+
+
+### Features
+
+* **TDP-1698:** removed react native from article main comment ([#2960](https://github.com/newsuk/times-components/issues/2960)) ([aa72e17](https://github.com/newsuk/times-components/commit/aa72e178706d8a9837fa25aeb340b18f8775e216))
+
+
+
+
+
+## [2.47.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.47.1...@times-components/article-main-comment@2.47.2) (2022-05-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
 ## [2.47.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.47.0...@times-components/article-main-comment@2.47.1) (2022-05-26)
 
 **Note:** Version bump only for package @times-components/article-main-comment

@@ -3,6 +3,127 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.51.10](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.9...@times-components/article-magazine-comment@3.51.10) (2022-06-09)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.51.9](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.8...@times-components/article-magazine-comment@3.51.9) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.51.8](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.7...@times-components/article-magazine-comment@3.51.8) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.51.7](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.6...@times-components/article-magazine-comment@3.51.7) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.51.6](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.5...@times-components/article-magazine-comment@3.51.6) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.51.5](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.4...@times-components/article-magazine-comment@3.51.5) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.51.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.3...@times-components/article-magazine-comment@3.51.4) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.51.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.2...@times-components/article-magazine-comment@3.51.3) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.51.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.1...@times-components/article-magazine-comment@3.51.2) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.51.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.0...@times-components/article-magazine-comment@3.51.1) (2022-06-06)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+# [3.51.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.50.0...@times-components/article-magazine-comment@3.51.0) (2022-06-01)
+
+
+### Features
+
+* **TDP-1520:** add articleSection to article JSON LD ([#2956](https://github.com/newsuk/times-components/issues/2956)) ([4c108ed](https://github.com/newsuk/times-components/commit/4c108ed699ac6ebfc41949de29d89eaeb7f3b03f))
+
+
+
+
+
+# [3.50.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.49.0...@times-components/article-magazine-comment@3.50.0) (2022-06-01)
+
+
+### Features
+
+* **TDP-1698:** removed react native from article main comment ([#2960](https://github.com/newsuk/times-components/issues/2960)) ([aa72e17](https://github.com/newsuk/times-components/commit/aa72e178706d8a9837fa25aeb340b18f8775e216))
+
+
+
+
+
+# [3.49.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.48.2...@times-components/article-magazine-comment@3.49.0) (2022-05-31)
+
+
+### Features
+
+* **TDP-1415:** remove react native from article magazine comments ([#2957](https://github.com/newsuk/times-components/issues/2957)) ([ebb6b8c](https://github.com/newsuk/times-components/commit/ebb6b8c4b97c83f70b743e265274b538612cab10))
+
+
+
+
+
+## [3.48.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.48.1...@times-components/article-magazine-comment@3.48.2) (2022-05-27)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
 ## [3.48.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.48.0...@times-components/article-magazine-comment@3.48.1) (2022-05-26)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

@@ -46,6 +46,7 @@ const standardArticleWithInlineVideo = articleFixture({
   hasVideo: true
 });
 
+const navigationMode = { isCurrentEdition: true };
 const paidContentClassName = "class-name";
 const logoUrl =
   "https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png";
@@ -57,6 +58,7 @@ describe("Head", () => {
         article={article}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+        navigationMode={navigationMode}
       />
     );
 
@@ -70,6 +72,7 @@ describe("Head", () => {
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
         swgProductId="uat-thetimes.co.uk:basic"
+        navigationMode={navigationMode}
       />
     );
 
@@ -82,6 +85,7 @@ describe("Head", () => {
         article={videoArticle}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+        navigationMode={navigationMode}
       />
     );
     expect(testRenderer).toMatchSnapshot();
@@ -191,6 +195,7 @@ describe("Head", () => {
         }}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+        navigationMode={navigationMode}
       />
     );
     expect(testRenderer).toMatchSnapshot();
@@ -235,6 +240,7 @@ describe("Head", () => {
         }}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+        navigationMode={navigationMode}
       />
     );
     expect(testRenderer).toMatchSnapshot();
@@ -279,6 +285,7 @@ describe("Head", () => {
         }}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+        navigationMode={navigationMode}
       />
     );
     expect(testRenderer).toMatchSnapshot();
@@ -293,6 +300,7 @@ describe("Head", () => {
         }}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+        navigationMode={navigationMode}
       />
     );
     expect(testRenderer).toMatchSnapshot();
@@ -305,6 +313,7 @@ describe("Head", () => {
         }}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+        navigationMode={navigationMode}
       />
     );
     expect(testRenderer).toMatchSnapshot();
@@ -316,6 +325,7 @@ describe("Head", () => {
         article={{ ...article, seoDescription: "sample seoDescription" }}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+        navigationMode={navigationMode}
       />
     );
     expect(testRenderer).toMatchSnapshot();
@@ -329,6 +339,7 @@ describe("Head", () => {
           headline: null,
           shortHeadline: "short headline"
         }}
+        navigationMode={navigationMode}
       />
     );
 
@@ -345,6 +356,7 @@ describe("Head", () => {
           headline: null,
           shortHeadline: null
         }}
+        navigationMode={navigationMode}
       />
     );
 
@@ -394,6 +406,7 @@ describe("Head", () => {
             }
           ]
         }}
+        navigationMode={navigationMode}
       />
     );
 
@@ -421,6 +434,7 @@ describe("Head", () => {
             }
           ]
         }}
+        navigationMode={navigationMode}
       />
     );
 
@@ -448,6 +462,7 @@ describe("Head", () => {
             }
           ]
         }}
+        navigationMode={navigationMode}
       />
     );
 
@@ -463,6 +478,7 @@ describe("Head", () => {
           ...article,
           tiles: null
         }}
+        navigationMode={navigationMode}
       />
     );
 
@@ -493,6 +509,7 @@ describe("Head", () => {
             }
           ]
         }}
+        navigationMode={navigationMode}
       />
     );
 
@@ -508,6 +525,7 @@ describe("Head", () => {
           ...article,
           publicationName: "SUNDAYTIMES"
         }}
+        navigationMode={navigationMode}
       />
     );
 
@@ -523,6 +541,7 @@ describe("Head", () => {
           ...article,
           publicationName: "TIMES"
         }}
+        navigationMode={navigationMode}
       />
     );
 
@@ -538,6 +557,7 @@ describe("Head", () => {
           ...article,
           bylines: null
         }}
+        navigationMode={navigationMode}
       />
     );
 
@@ -547,7 +567,9 @@ describe("Head", () => {
   });
 
   it("shows author tags if bylines available", () => {
-    const testRenderer = TestRenderer.create(<Head article={article} />);
+    const testRenderer = TestRenderer.create(
+      <Head article={article} navigationMode={navigationMode} />
+    );
 
     expect(testRenderer.root.findAllByProps({ name: "author" })).toHaveLength(
       1
@@ -561,6 +583,7 @@ describe("Head", () => {
           ...article,
           descriptionMarkup: null
         }}
+        navigationMode={navigationMode}
       />
     );
 
@@ -582,6 +605,7 @@ describe("Head", () => {
           ...article,
           descriptionMarkup: []
         }}
+        navigationMode={navigationMode}
       />
     );
 
@@ -597,7 +621,9 @@ describe("Head", () => {
   });
 
   it("shows description tags if descriptionMarkup available", () => {
-    const testRenderer = TestRenderer.create(<Head article={article} />);
+    const testRenderer = TestRenderer.create(
+      <Head article={article} navigationMode={navigationMode} />
+    );
 
     expect(
       testRenderer.root.findAllByProps({ name: "description" })
@@ -617,6 +643,7 @@ describe("Head", () => {
           ...article,
           leadAsset: null
         }}
+        navigationMode={navigationMode}
       />
     );
 
@@ -629,7 +656,9 @@ describe("Head", () => {
   });
 
   it("shows image tags if leadAsset available", () => {
-    const testRenderer = TestRenderer.create(<Head article={article} />);
+    const testRenderer = TestRenderer.create(
+      <Head article={article} navigationMode={navigationMode} />
+    );
 
     expect(
       testRenderer.root.findAllByProps({ property: "og:image" })
@@ -641,7 +670,10 @@ describe("Head", () => {
 
   it("shows image tags if leadAsset is an image, but there is a video elsewhere in the article", () => {
     const testRenderer = TestRenderer.create(
-      <Head article={standardArticleWithInlineVideo} />
+      <Head
+        article={standardArticleWithInlineVideo}
+        navigationMode={navigationMode}
+      />
     );
 
     expect(
@@ -658,6 +690,7 @@ describe("Head", () => {
         article={videoArticle}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+        navigationMode={navigationMode}
       />
     );
     expect(testRenderer).toMatchSnapshot();
@@ -669,6 +702,7 @@ describe("Head", () => {
         article={videoArticle}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+        navigationMode={navigationMode}
       />
     );
     expect(testRenderer).toMatchSnapshot();
@@ -703,6 +737,7 @@ describe("Head", () => {
           article={{ ...videoArticle, leadAsset }}
           logoUrl={logoUrl}
           paidContentClassName={paidContentClassName}
+          navigationMode={navigationMode}
         />
       );
       expect(testRenderer).toMatchSnapshot();
@@ -715,6 +750,7 @@ describe("Head", () => {
         article={{ ...videoArticle, descriptionMarkup: null }}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+        navigationMode={navigationMode}
       />
     );
     expect(testRenderer).toMatchSnapshot();
@@ -730,6 +766,7 @@ describe("Head", () => {
         }}
         logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
+        navigationMode={navigationMode}
       />
     );
     expect(testRenderer).toMatchSnapshot();

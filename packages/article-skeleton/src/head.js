@@ -228,7 +228,8 @@ function Head({
   logoUrl,
   paidContentClassName,
   getFallbackThumbnailUrl169,
-  swgProductId
+  swgProductId,
+  navigationMode
 }) {
   const {
     descriptionMarkup,
@@ -292,6 +293,15 @@ function Head({
     authorSchema
   );
 
+  const checkIsCurrentEdition = () => {
+    if (navigationMode) {
+      if (navigationMode.isCurrentEdition) {
+        return `current edition: ${sectionname}`;
+      }
+    }
+    return `article: ${sectionname}`;
+  };
+
   const jsonLD = {
     "@context": "https://schema.org",
     "@type": "NewsArticle",
@@ -322,7 +332,8 @@ function Head({
     },
     thumbnailUrl,
     dateModified,
-    author: authorSchema
+    author: authorSchema,
+    articleSection: checkIsCurrentEdition()
   };
 
   if (swgProductId) {
@@ -369,7 +380,8 @@ function Head({
     },
     publisher: publisherSchema,
     author: authorSchema,
-    liveBlogUpdate: liveBlogUpdateSchema
+    liveBlogUpdate: liveBlogUpdateSchema,
+    articleSection: checkIsCurrentEdition()
   };
   return (
     <Context.Consumer>
@@ -441,7 +453,8 @@ Head.propTypes = {
   logoUrl: PropTypes.string.isRequired,
   paidContentClassName: PropTypes.string.isRequired,
   getFallbackThumbnailUrl169: PropTypes.func.isRequired,
-  swgProductId: PropTypes.string
+  swgProductId: PropTypes.string,
+  navigationMode: PropTypes.shape({}).isRequired
 };
 
 Head.defaultProps = {

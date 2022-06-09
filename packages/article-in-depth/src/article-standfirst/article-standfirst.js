@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { checkStylesForUnits } from "@times-components/utils";
 import { colours } from "@times-components/ts-styleguide";
 import styles from "../styles";
 import { StandfirstContainer } from "../styles/responsive";
@@ -9,9 +10,9 @@ const HeaderStandfirst = ({ standfirst, color }) => {
 
   return (
     <StandfirstContainer
-      accessibilityRole="header"
+      role="heading"
       aria-level="2"
-      style={[styles.standFirst, { color }]}
+      styles={{ ...checkStylesForUnits(styles.standFirst), color }}
       testID="standfirst"
     >
       {standfirst}

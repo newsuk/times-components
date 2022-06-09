@@ -1,4 +1,3 @@
-import { StyleSheet } from "react-native";
 import { spacing } from "@times-components/ts-styleguide";
 import sharedStylesFactory from "./shared";
 import globalStyle from "../shared";
@@ -18,9 +17,9 @@ const webStyles = {
   }
 };
 
-const styles = StyleSheet.create({
+const styles = {
   ...globalStyle,
   ...webStyles
-});
+};
 
 export default styles;

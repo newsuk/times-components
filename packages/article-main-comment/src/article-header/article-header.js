@@ -4,6 +4,7 @@ import {
   UpdatedTimeProvider
 } from "@times-components/ts-components";
 import Image from "@times-components/image";
+import { checkStylesForUnits } from "@times-components/utils";
 
 import Label from "../article-label/article-label";
 import Meta from "../article-meta/article-meta";
@@ -33,7 +34,7 @@ const ArticleHeader = ({
   standfirst,
   updatedTime
 }) => (
-  <HeaderContainer style={[styles.header, styles.container]}>
+  <HeaderContainer style={{ ...styles.header, ...styles.container }}>
     <AuthorImageContainer style={styles.authorImage}>
       <Image
         aspectRatio={1}
@@ -43,9 +44,9 @@ const ArticleHeader = ({
     </AuthorImageContainer>
     <Label isVideo={hasVideo} label={label} />
     <HeadlineContainer
-      accessibilityRole="header"
+      role="heading"
       aria-level="1"
-      style={styles.articleHeadline}
+      styles={checkStylesForUnits(styles.articleHeadline)}
     >
       {headline}
     </HeadlineContainer>
