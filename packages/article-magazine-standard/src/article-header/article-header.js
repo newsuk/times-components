@@ -1,5 +1,6 @@
 import React from "react";
 import Context from "@times-components/context";
+import { checkStylesForUnits } from "@times-components/utils";
 import {
   ArticleFlags,
   UpdatedTimeProvider
@@ -20,6 +21,13 @@ import {
   HeadlineContainer
 } from "../styles/responsive";
 
+const headlineContainerStyles = (headlineFont, headlineCase) =>
+  checkStylesForUnits({
+    ...styles.articleHeadline,
+    fontFamily: headlineFont ? fonts[headlineFont] : null,
+    textTransform: headlineCase || null
+  });
+
 const ArticleHeader = ({
   bylines,
   flags,
@@ -36,13 +44,9 @@ const ArticleHeader = ({
       <HeaderContainer style={styles.container}>
         <Label isVideo={hasVideo} label={label} />
         <HeadlineContainer
-          accessibilityRole="header"
+          role="heading"
           aria-level="1"
-          style={[
-            styles.articleHeadline,
-            headlineFont ? { fontFamily: fonts[headlineFont] } : null,
-            headlineCase ? { textTransform: headlineCase } : null
-          ]}
+          styles={headlineContainerStyles(headlineFont, headlineCase)}
         >
           {headline}
         </HeadlineContainer>

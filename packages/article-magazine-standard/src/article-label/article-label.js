@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import ArticleLabel from "@times-components/article-label";
 import VideoLabel from "@times-components/video-label";
 import Context from "@times-components/context";
@@ -19,12 +19,12 @@ const HeaderLabel = ({ isVideo, label }) => {
   return (
     <Context.Consumer>
       {({ theme: { sectionColour } }) => (
-        <View style={styles.label}>
+        <TcView style={styles.label}>
           <Label
             color={sectionColour || colours.section.default}
             title={label}
           />
-        </View>
+        </TcView>
       )}
     </Context.Consumer>
   );
