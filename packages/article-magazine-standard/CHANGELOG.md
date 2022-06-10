@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.50.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.49.9...@times-components/article-magazine-standard@3.50.0) (2022-06-10)
+
+
+### Features
+
+* **TDP-1697:** removed reactNative from articleMagazineStandard ([#2981](https://github.com/newsuk/times-components/issues/2981)) ([8f84845](https://github.com/newsuk/times-components/commit/8f84845033e989103f5f5a6367507f2ebe8b5777))
+
+
+
+
+
 ## [3.49.9](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.49.8...@times-components/article-magazine-standard@3.49.9) (2022-06-09)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard
