@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.82.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.9...@times-components/article-skeleton@1.82.10) (2022-06-10)
+
+
+### Bug Fixes
+
+* **TDP-2101:** remove articleSection "article" and "current edition" prefix ([#2980](https://github.com/newsuk/times-components/issues/2980)) ([681ac9c](https://github.com/newsuk/times-components/commit/681ac9cf15647d4840c3f2f7ae4f509370075ba8))
+
+
+
+
+
 ## [1.82.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.8...@times-components/article-skeleton@1.82.9) (2022-06-09)
 
 **Note:** Version bump only for package @times-components/article-skeleton
