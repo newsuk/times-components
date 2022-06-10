@@ -79,7 +79,6 @@ exports[`1. a full article 1`] = `
     </h1>
     <h2
       aria-level="2"
-      data-testid="standfirst"
       role="heading"
     >
       Some Standfirst
