@@ -59,8 +59,7 @@ const ArticleSkeleton = ({
   latestFromSectionFlag,
   latestFromSection,
   olympicsKeys,
-  getFallbackThumbnailUrl169,
-  navigationMode
+  getFallbackThumbnailUrl169
 }) => {
   const {
     commentsEnabled,
@@ -161,7 +160,6 @@ const ArticleSkeleton = ({
             paidContentClassName={paidContentClassName}
             getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
             swgProductId={swgProductId}
-            navigationMode={navigationMode}
           />
           <AlgoliaSearchProvider
             algoliaSearchKeys={algoliaSearchKeys}
