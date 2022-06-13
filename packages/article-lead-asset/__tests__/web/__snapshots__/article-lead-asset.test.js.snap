@@ -53,8 +53,8 @@ exports[`1. renders correctly with an image lead asset 1`] = `
           <img
             alt="Chris Reynolds Gordon at one of his party venues in London"
             className="IS1"
-            src="https://crop169.io/?resize=1200"
-            srcSet="https://crop169.io/?resize=320 320w, https://crop169.io/?resize=1200 685w, https://crop169.io/?resize=1200 1200w"
+            src="https://crop169.io/?resize=360"
+            srcSet="https://crop169.io/?resize=360 360w,https://crop169.io/?resize=520 520w,https://crop169.io/?resize=680 680w,https://crop169.io/?resize=860 860w,https://crop169.io/?resize=1200 1200w,https://crop169.io/?resize=1500 1500w"
           />
         </div>
       </div>
@@ -196,8 +196,8 @@ exports[`5. it renders correctly with a classname 1`] = `
           <img
             alt="Chris Reynolds Gordon at one of his party venues in London"
             className="IS1"
-            src="https://crop169.io/?resize=1200"
-            srcSet="https://crop169.io/?resize=320 320w, https://crop169.io/?resize=1200 685w, https://crop169.io/?resize=1200 1200w"
+            src="https://crop169.io/?resize=360"
+            srcSet="https://crop169.io/?resize=360 360w,https://crop169.io/?resize=520 520w,https://crop169.io/?resize=680 680w,https://crop169.io/?resize=860 860w,https://crop169.io/?resize=1200 1200w,https://crop169.io/?resize=1500 1500w"
           />
         </div>
       </div>
