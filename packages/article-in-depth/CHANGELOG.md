@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.52.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.52.0...@times-components/article-in-depth@3.52.1) (2022-06-10)
+
+
+### Bug Fixes
+
+* **TDP-2101:** remove articleSection "article" and "current edition" prefix ([#2980](https://github.com/newsuk/times-components/issues/2980)) ([681ac9c](https://github.com/newsuk/times-components/commit/681ac9cf15647d4840c3f2f7ae4f509370075ba8))
+
+
+
+
+
 # [3.52.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.51.9...@times-components/article-in-depth@3.52.0) (2022-06-09)
 
 

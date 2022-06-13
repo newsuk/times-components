@@ -1,4 +1,4 @@
-import { Text, View } from "react-native";
+import { TcText, TcView } from "@times-components/utils";
 import styled from "styled-components";
 import {
   breakpoints,
@@ -9,7 +9,8 @@ import {
 } from "@times-components/ts-styleguide";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
 
-export const DatePublicationContainer = styled(Text)`
+export const DatePublicationContainer = styled(TcText)`
+  ${props => props.styles && props.styles};
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: ${spacing(3)};
@@ -19,7 +20,7 @@ export const DatePublicationContainer = styled(Text)`
   }
 `;
 
-export const FlagsContainer = styled(View)`
+export const FlagsContainer = styled(TcView)`
   padding-top: ${spacing(1)};
   padding-bottom: ${spacing(3)};
 
@@ -28,7 +29,7 @@ export const FlagsContainer = styled(View)`
   }
 `;
 
-export const HeaderContainer = styled(View)`
+export const HeaderContainer = styled(TcView)`
   order: 2;
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -44,7 +45,16 @@ export const HeaderContainer = styled(View)`
   }
 `;
 
-export const HeadlineContainer = styled(Text)`
+export const HeadlineContainer = styled.h1`
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  ${props => props.styles && props.styles}
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.articleHeadline}px;
     line-height: 50px;
@@ -52,13 +62,13 @@ export const HeadlineContainer = styled(Text)`
   }
 `;
 
-export const LabelContainer = styled(View)`
+export const LabelContainer = styled(TcView)`
   @media (min-width: ${breakpoints.wide}px) {
     margin-top: 0px;
   }
 `;
 
-export const Meta = styled(View)`
+export const Meta = styled(TcView)`
   max-width: 100%;
   justify-content: center;
 
@@ -67,7 +77,7 @@ export const Meta = styled(View)`
   }
 `;
 
-export const MetaContainer = styled(View)`
+export const MetaContainer = styled(TcView)`
   align-items: center;
   justify-content: center;
 
@@ -77,7 +87,7 @@ export const MetaContainer = styled(View)`
   }
 `;
 
-export const Separator = styled(View)`
+export const Separator = styled(TcView)`
   display: none;
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -89,7 +99,16 @@ export const Separator = styled(View)`
   }
 `;
 
-export const StandfirstContainer = styled(Text)`
+export const StandfirstContainer = styled.h2`
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  ${props => props.styles && props.styles}
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.infoTitle}px;
     line-height: ${lineHeight({
