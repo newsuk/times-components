@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.11](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.10...@times-components/article-lead-asset@1.8.11) (2022-06-13)
+
+
+### Bug Fixes
+
+* **TDP-2011:** Lead asset src set ([#2959](https://github.com/newsuk/times-components/issues/2959)) ([2f9c166](https://github.com/newsuk/times-components/commit/2f9c166f675e06540c7960d4038311e91ef3a58d))
+
+
+
+
+
 ## [1.8.10](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.9...@times-components/article-lead-asset@1.8.10) (2022-05-16)
 
 **Note:** Version bump only for package @times-components/article-lead-asset

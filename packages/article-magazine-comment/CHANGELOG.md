@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.51.12](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.11...@times-components/article-magazine-comment@3.51.12) (2022-06-13)
+
+
+### Bug Fixes
+
+* **TDP-2011:** Lead asset src set ([#2959](https://github.com/newsuk/times-components/issues/2959)) ([2f9c166](https://github.com/newsuk/times-components/commit/2f9c166f675e06540c7960d4038311e91ef3a58d))
+
+
+
+
+
 ## [3.51.11](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.10...@times-components/article-magazine-comment@3.51.11) (2022-06-10)
 
 
