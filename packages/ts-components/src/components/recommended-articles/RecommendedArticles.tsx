@@ -16,6 +16,16 @@ export const RecommendedArticles: React.FC<{
     return null;
   }
 
+  const slice = getRelatedArticlesSlice(data.recommendations);
+
+  const onClickHandler = (__: MouseEvent, article: { url: string }) => {
+    // tslint:disable-next-line:no-console
+    console.log('RecommendedArticles', article.url);
+
+    // tslint:disable-next-line:no-console
+    console.log('RecommendedArticles', slice);
+  };
+
   return (
     <div
       id="recommended-articles"
@@ -23,8 +33,9 @@ export const RecommendedArticles: React.FC<{
     >
       <RelatedArticles
         heading={`Today's ${section}`}
-        slice={getRelatedArticlesSlice(data.recommendations)}
+        slice={slice}
         isVisible
+        onPress={onClickHandler}
         analyticsStream={analyticsStream}
       />
     </div>
