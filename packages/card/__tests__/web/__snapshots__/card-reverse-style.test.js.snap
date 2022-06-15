@@ -19,7 +19,19 @@ exports[`card with reversed layout 1`] = `
   z-index: 0;
 }
 
-.c1 {
+.c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.c3 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -29,7 +41,7 @@ exports[`card with reversed layout 1`] = `
   z-index: 2;
 }
 
-.c2 {
+.c4 {
   display: block;
   opacity: 1;
   position: absolute;
@@ -39,59 +51,30 @@ exports[`card with reversed layout 1`] = `
   z-index: 1;
 }
 
-<style>
-.S1 {
-  -ms-flex-negative: 1;
-  -ms-flex-positive: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-flex: 1;
-  -webkit-flex-basis: 0%;
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-basis: 0%;
-  flex-grow: 1;
-  flex-shrink: 1;
+.c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin-bottom: 10px;
   min-width: 100%;
 }
 
-.S2 {
-  -ms-flex-negative: 1;
-  -ms-flex-positive: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-flex: 1;
-  -webkit-flex-basis: 0%;
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-basis: 0%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  margin-bottom: 0px;
-  min-width: 100%;
-}
-
-.S3 {
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: start;
-  align-items: flex-start;
-  display: flex;
-  -ms-flex-direction: row;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  height: auto;
-  -ms-flex-pack: end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
-}
-
+<style>
 .IS1 {
   max-width: 25%;
   max-height: 50%;
@@ -144,33 +127,222 @@ exports[`card with reversed layout 1`] = `
 .IS6 {
   padding-bottom: 150%;
 }
+
+.IS7 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: auto;
+}
+
+.IS8 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: auto;
+}
+
+.IS9 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: auto;
+}
 </style>
 
-<div
-  className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-height-16l9doz r-justifyContent-17s6mgv S3"
+<tc-view__TcView
+  className="IS9"
+  data-adam-test="item2"
 >
-  <div
-    className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minWidth-3e7lpq S1"
+  <StyledComponent
+    className="IS8"
+    data-adam-test="item2"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "tc-view__TcView-nuazoi-0",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+          ],
+        },
+        "displayName": "tc-view__TcView",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "tc-view__TcView-nuazoi-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
   >
     <div
-      className="css-text-901oao"
+      className="c0 IS7"
+      data-adam-test="item2"
     >
-      A card in reverse
+      <card-content__TcCardContainer
+        className=""
+        data-adam-test="item3"
+        styles={
+          Object {
+            "flex": 1,
+            "marginBottom": "10px",
+            "minWidth": "100%",
+          }
+        }
+      >
+        <StyledComponent
+          className=""
+          data-adam-test="item3"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                "isStatic": false,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                  [Function],
+                  ";",
+                ],
+              },
+              "displayName": "card-content__TcCardContainer",
+              "foldedComponentIds": Array [
+                "tc-view__TcView-nuazoi-0",
+              ],
+              "render": [Function],
+              "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          styles={
+            Object {
+              "flex": 1,
+              "marginBottom": "10px",
+              "minWidth": "100%",
+            }
+          }
+        >
+          <div
+            className="c1"
+            data-adam-test="item3"
+          >
+            <tc-text__TcText>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "tc-text__TcText-sc-15igzev-0",
+                      "isStatic": true,
+                      "lastClassName": "c2",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                      ],
+                    },
+                    "displayName": "tc-text__TcText",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "tc-text__TcText-sc-15igzev-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div
+                  className="c2"
+                >
+                  A card in reverse
+                </div>
+              </StyledComponent>
+            </tc-text__TcText>
+          </div>
+        </StyledComponent>
+      </card-content__TcCardContainer>
+      <tc-view__TcView
+        className=""
+        data-adam-test="item1"
+        styles={
+          Object {
+            "flex": 1,
+            "marginBottom": 0,
+            "minWidth": "100%",
+          }
+        }
+      >
+        <StyledComponent
+          className=""
+          data-adam-test="item1"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "tc-view__TcView-nuazoi-0",
+                "isStatic": true,
+                "lastClassName": "c0",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                ],
+              },
+              "displayName": "tc-view__TcView",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          styles={
+            Object {
+              "flex": 1,
+              "marginBottom": 0,
+              "minWidth": "100%",
+            }
+          }
+        >
+          <div
+            className="c0"
+            data-adam-test="item1"
+          >
+            <TimesImage
+              aspectRatio={0.6666666666666666}
+              disablePlaceholder={false}
+              fadeImageIn={false}
+              highResSize={600}
+              lowResQuality={null}
+              lowResSize={30}
+              rounded={false}
+              uri="https://img.io/img"
+            />
+          </div>
+        </StyledComponent>
+      </tc-view__TcView>
     </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minWidth-3e7lpq S2"
-  >
-    <TimesImage
-      aspectRatio={0.6666666666666666}
-      disablePlaceholder={false}
-      fadeImageIn={false}
-      highResSize={600}
-      lowResQuality={null}
-      lowResSize={30}
-      rounded={false}
-      uri="https://img.io/img"
-    />
-  </div>
-</div>
+  </StyledComponent>
+</tc-view__TcView>
 `;

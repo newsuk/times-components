@@ -1,111 +1,971 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. card default state 1`] = `
-<div>
-  <div>
-    <TimesImage
-      aspectRatio={0.6666666666666666}
-      disablePlaceholder={false}
-      fadeImageIn={false}
-      highResSize={360}
-      lowResQuality={null}
-      lowResSize={50}
-      rounded={false}
-      uri="https://img.io/img"
-    />
-  </div>
-  <div>
-    <div>
-      A card
+<tc-view__TcView
+  data-adam-test="item2"
+>
+  <StyledComponent
+    data-adam-test="item2"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "tc-view__TcView-nuazoi-0",
+          "isStatic": true,
+          "lastClassName": "fPjBcr",
+          "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+          ],
+        },
+        "displayName": "tc-view__TcView",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "tc-view__TcView-nuazoi-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      data-adam-test="item2"
+    >
+      <tc-view__TcView
+        data-adam-test="item1"
+        styles={
+          Object {
+            "flex": 1,
+            "marginBottom": "10px",
+            "minWidth": "100%",
+          }
+        }
+      >
+        <StyledComponent
+          data-adam-test="item1"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "tc-view__TcView-nuazoi-0",
+                "isStatic": true,
+                "lastClassName": "fPjBcr",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                ],
+              },
+              "displayName": "tc-view__TcView",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          styles={
+            Object {
+              "flex": 1,
+              "marginBottom": "10px",
+              "minWidth": "100%",
+            }
+          }
+        >
+          <div
+            data-adam-test="item1"
+          >
+            <TimesImage
+              aspectRatio={0.6666666666666666}
+              disablePlaceholder={false}
+              fadeImageIn={false}
+              highResSize={360}
+              lowResQuality={null}
+              lowResSize={50}
+              rounded={false}
+              uri="https://img.io/img"
+            />
+          </div>
+        </StyledComponent>
+      </tc-view__TcView>
+      <card-content__TcCardContainer
+        data-adam-test="item3"
+        styles={
+          Object {
+            "flex": 1,
+            "marginBottom": 0,
+            "minWidth": "100%",
+          }
+        }
+      >
+        <StyledComponent
+          data-adam-test="item3"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                "isStatic": false,
+                "lastClassName": "hzpWKJ",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                  [Function],
+                  ";",
+                ],
+              },
+              "displayName": "card-content__TcCardContainer",
+              "foldedComponentIds": Array [
+                "tc-view__TcView-nuazoi-0",
+              ],
+              "render": [Function],
+              "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          styles={
+            Object {
+              "flex": 1,
+              "marginBottom": 0,
+              "minWidth": "100%",
+            }
+          }
+        >
+          <div
+            data-adam-test="item3"
+          >
+            <tc-text__TcText>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "tc-text__TcText-sc-15igzev-0",
+                      "isStatic": true,
+                      "lastClassName": "lhcAkf",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                      ],
+                    },
+                    "displayName": "tc-text__TcText",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "tc-text__TcText-sc-15igzev-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div>
+                  A card
+                </div>
+              </StyledComponent>
+            </tc-text__TcText>
+          </div>
+        </StyledComponent>
+      </card-content__TcCardContainer>
     </div>
-  </div>
-</div>
+  </StyledComponent>
+</tc-view__TcView>
 `;
 
 exports[`2. pass an empty state to the image component 1`] = `
-<div>
-  <div>
-    <TimesImage
-      aspectRatio={0.6666666666666666}
-      disablePlaceholder={false}
-      fadeImageIn={false}
-      highResSize={360}
-      lowResQuality={null}
-      lowResSize={50}
-      rounded={false}
-      uri={null}
-    />
-  </div>
-  <div>
-    <div>
-      A card with an empty image
+<tc-view__TcView
+  data-adam-test="item2"
+>
+  <StyledComponent
+    data-adam-test="item2"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "tc-view__TcView-nuazoi-0",
+          "isStatic": true,
+          "lastClassName": "fPjBcr",
+          "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+          ],
+        },
+        "displayName": "tc-view__TcView",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "tc-view__TcView-nuazoi-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      data-adam-test="item2"
+    >
+      <tc-view__TcView
+        data-adam-test="item1"
+        styles={
+          Object {
+            "flex": 1,
+            "marginBottom": "10px",
+            "minWidth": "100%",
+          }
+        }
+      >
+        <StyledComponent
+          data-adam-test="item1"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "tc-view__TcView-nuazoi-0",
+                "isStatic": true,
+                "lastClassName": "fPjBcr",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                ],
+              },
+              "displayName": "tc-view__TcView",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          styles={
+            Object {
+              "flex": 1,
+              "marginBottom": "10px",
+              "minWidth": "100%",
+            }
+          }
+        >
+          <div
+            data-adam-test="item1"
+          >
+            <TimesImage
+              aspectRatio={0.6666666666666666}
+              disablePlaceholder={false}
+              fadeImageIn={false}
+              highResSize={360}
+              lowResQuality={null}
+              lowResSize={50}
+              rounded={false}
+              uri={null}
+            />
+          </div>
+        </StyledComponent>
+      </tc-view__TcView>
+      <card-content__TcCardContainer
+        data-adam-test="item3"
+        styles={
+          Object {
+            "flex": 1,
+            "marginBottom": 0,
+            "minWidth": "100%",
+          }
+        }
+      >
+        <StyledComponent
+          data-adam-test="item3"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                "isStatic": false,
+                "lastClassName": "hzpWKJ",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                  [Function],
+                  ";",
+                ],
+              },
+              "displayName": "card-content__TcCardContainer",
+              "foldedComponentIds": Array [
+                "tc-view__TcView-nuazoi-0",
+              ],
+              "render": [Function],
+              "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          styles={
+            Object {
+              "flex": 1,
+              "marginBottom": 0,
+              "minWidth": "100%",
+            }
+          }
+        >
+          <div
+            data-adam-test="item3"
+          >
+            <tc-text__TcText>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "tc-text__TcText-sc-15igzev-0",
+                      "isStatic": true,
+                      "lastClassName": "lhcAkf",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                      ],
+                    },
+                    "displayName": "tc-text__TcText",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "tc-text__TcText-sc-15igzev-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div>
+                  A card with an empty image
+                </div>
+              </StyledComponent>
+            </tc-text__TcText>
+          </div>
+        </StyledComponent>
+      </card-content__TcCardContainer>
     </div>
-  </div>
-</div>
+  </StyledComponent>
+</tc-view__TcView>
 `;
 
 exports[`3. card without an image when showimage is false 1`] = `
-<div>
-  <div>
-    <div>
-      No image
+<tc-view__TcView
+  data-adam-test="item2"
+>
+  <StyledComponent
+    data-adam-test="item2"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "tc-view__TcView-nuazoi-0",
+          "isStatic": true,
+          "lastClassName": "fPjBcr",
+          "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+          ],
+        },
+        "displayName": "tc-view__TcView",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "tc-view__TcView-nuazoi-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      data-adam-test="item2"
+    >
+      <card-content__TcCardContainer
+        data-adam-test="item3"
+        styles={
+          Object {
+            "flex": 1,
+            "marginBottom": 0,
+            "minWidth": "100%",
+          }
+        }
+      >
+        <StyledComponent
+          data-adam-test="item3"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                "isStatic": false,
+                "lastClassName": "hzpWKJ",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                  [Function],
+                  ";",
+                ],
+              },
+              "displayName": "card-content__TcCardContainer",
+              "foldedComponentIds": Array [
+                "tc-view__TcView-nuazoi-0",
+              ],
+              "render": [Function],
+              "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          styles={
+            Object {
+              "flex": 1,
+              "marginBottom": 0,
+              "minWidth": "100%",
+            }
+          }
+        >
+          <div
+            data-adam-test="item3"
+          >
+            <tc-text__TcText>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "tc-text__TcText-sc-15igzev-0",
+                      "isStatic": true,
+                      "lastClassName": "lhcAkf",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                      ],
+                    },
+                    "displayName": "tc-text__TcText",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "tc-text__TcText-sc-15igzev-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div>
+                  No image
+                </div>
+              </StyledComponent>
+            </tc-text__TcText>
+          </div>
+        </StyledComponent>
+      </card-content__TcCardContainer>
     </div>
-  </div>
-</div>
+  </StyledComponent>
+</tc-view__TcView>
 `;
 
 exports[`4. pass an empty state to the image component when the uri is null 1`] = `
-<div>
-  <div>
-    <TimesImage
-      aspectRatio={0.6666666666666666}
-      disablePlaceholder={false}
-      fadeImageIn={false}
-      highResSize={360}
-      lowResQuality={null}
-      lowResSize={50}
-      rounded={false}
-      uri={null}
-    />
-  </div>
-  <div>
-    <div>
-      No URI
+<tc-view__TcView
+  data-adam-test="item2"
+>
+  <StyledComponent
+    data-adam-test="item2"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "tc-view__TcView-nuazoi-0",
+          "isStatic": true,
+          "lastClassName": "fPjBcr",
+          "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+          ],
+        },
+        "displayName": "tc-view__TcView",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "tc-view__TcView-nuazoi-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      data-adam-test="item2"
+    >
+      <tc-view__TcView
+        data-adam-test="item1"
+        styles={
+          Object {
+            "flex": 1,
+            "marginBottom": "10px",
+            "minWidth": "100%",
+          }
+        }
+      >
+        <StyledComponent
+          data-adam-test="item1"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "tc-view__TcView-nuazoi-0",
+                "isStatic": true,
+                "lastClassName": "fPjBcr",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                ],
+              },
+              "displayName": "tc-view__TcView",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          styles={
+            Object {
+              "flex": 1,
+              "marginBottom": "10px",
+              "minWidth": "100%",
+            }
+          }
+        >
+          <div
+            data-adam-test="item1"
+          >
+            <TimesImage
+              aspectRatio={0.6666666666666666}
+              disablePlaceholder={false}
+              fadeImageIn={false}
+              highResSize={360}
+              lowResQuality={null}
+              lowResSize={50}
+              rounded={false}
+              uri={null}
+            />
+          </div>
+        </StyledComponent>
+      </tc-view__TcView>
+      <card-content__TcCardContainer
+        data-adam-test="item3"
+        styles={
+          Object {
+            "flex": 1,
+            "marginBottom": 0,
+            "minWidth": "100%",
+          }
+        }
+      >
+        <StyledComponent
+          data-adam-test="item3"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                "isStatic": false,
+                "lastClassName": "hzpWKJ",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                  [Function],
+                  ";",
+                ],
+              },
+              "displayName": "card-content__TcCardContainer",
+              "foldedComponentIds": Array [
+                "tc-view__TcView-nuazoi-0",
+              ],
+              "render": [Function],
+              "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          styles={
+            Object {
+              "flex": 1,
+              "marginBottom": 0,
+              "minWidth": "100%",
+            }
+          }
+        >
+          <div
+            data-adam-test="item3"
+          >
+            <tc-text__TcText>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "tc-text__TcText-sc-15igzev-0",
+                      "isStatic": true,
+                      "lastClassName": "lhcAkf",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                      ],
+                    },
+                    "displayName": "tc-text__TcText",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "tc-text__TcText-sc-15igzev-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div>
+                  No URI
+                </div>
+              </StyledComponent>
+            </tc-text__TcText>
+          </div>
+        </StyledComponent>
+      </card-content__TcCardContainer>
     </div>
-  </div>
-</div>
+  </StyledComponent>
+</tc-view__TcView>
 `;
 
 exports[`5. card with reversed layout 1`] = `
-<div>
-  <div>
-    <div>
-      A card in reverse
+<tc-view__TcView
+  data-adam-test="item2"
+>
+  <StyledComponent
+    data-adam-test="item2"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "tc-view__TcView-nuazoi-0",
+          "isStatic": true,
+          "lastClassName": "fPjBcr",
+          "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+          ],
+        },
+        "displayName": "tc-view__TcView",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "tc-view__TcView-nuazoi-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      data-adam-test="item2"
+    >
+      <card-content__TcCardContainer
+        data-adam-test="item3"
+        styles={
+          Object {
+            "flex": 1,
+            "marginBottom": "10px",
+            "minWidth": "100%",
+          }
+        }
+      >
+        <StyledComponent
+          data-adam-test="item3"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                "isStatic": false,
+                "lastClassName": "bxratz",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                  [Function],
+                  ";",
+                ],
+              },
+              "displayName": "card-content__TcCardContainer",
+              "foldedComponentIds": Array [
+                "tc-view__TcView-nuazoi-0",
+              ],
+              "render": [Function],
+              "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          styles={
+            Object {
+              "flex": 1,
+              "marginBottom": "10px",
+              "minWidth": "100%",
+            }
+          }
+        >
+          <div
+            data-adam-test="item3"
+          >
+            <tc-text__TcText>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "tc-text__TcText-sc-15igzev-0",
+                      "isStatic": true,
+                      "lastClassName": "lhcAkf",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                      ],
+                    },
+                    "displayName": "tc-text__TcText",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "tc-text__TcText-sc-15igzev-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div>
+                  A card in reverse
+                </div>
+              </StyledComponent>
+            </tc-text__TcText>
+          </div>
+        </StyledComponent>
+      </card-content__TcCardContainer>
+      <tc-view__TcView
+        data-adam-test="item1"
+        styles={
+          Object {
+            "flex": 1,
+            "marginBottom": 0,
+            "minWidth": "100%",
+          }
+        }
+      >
+        <StyledComponent
+          data-adam-test="item1"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "tc-view__TcView-nuazoi-0",
+                "isStatic": true,
+                "lastClassName": "fPjBcr",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                ],
+              },
+              "displayName": "tc-view__TcView",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          styles={
+            Object {
+              "flex": 1,
+              "marginBottom": 0,
+              "minWidth": "100%",
+            }
+          }
+        >
+          <div
+            data-adam-test="item1"
+          >
+            <TimesImage
+              aspectRatio={0.6666666666666666}
+              disablePlaceholder={false}
+              fadeImageIn={false}
+              highResSize={360}
+              lowResQuality={null}
+              lowResSize={50}
+              rounded={false}
+              uri="https://img.io/img"
+            />
+          </div>
+        </StyledComponent>
+      </tc-view__TcView>
     </div>
-  </div>
-  <div>
-    <TimesImage
-      aspectRatio={0.6666666666666666}
-      disablePlaceholder={false}
-      fadeImageIn={false}
-      highResSize={360}
-      lowResQuality={null}
-      lowResSize={50}
-      rounded={false}
-      uri="https://img.io/img"
-    />
-  </div>
-</div>
+  </StyledComponent>
+</tc-view__TcView>
 `;
 
 exports[`6. card with reversed layout and no image 1`] = `
-<div>
-  <div>
-    <div>
-      A card in reverse with no image
+<tc-view__TcView
+  data-adam-test="item2"
+>
+  <StyledComponent
+    data-adam-test="item2"
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "tc-view__TcView-nuazoi-0",
+          "isStatic": true,
+          "lastClassName": "fPjBcr",
+          "rules": Array [
+            "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+          ],
+        },
+        "displayName": "tc-view__TcView",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "tc-view__TcView-nuazoi-0",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      data-adam-test="item2"
+    >
+      <card-content__TcCardContainer
+        data-adam-test="item3"
+        styles={
+          Object {
+            "flex": 1,
+            "marginBottom": "10px",
+            "minWidth": "100%",
+          }
+        }
+      >
+        <StyledComponent
+          data-adam-test="item3"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                "isStatic": false,
+                "lastClassName": "bxratz",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                  [Function],
+                  ";",
+                ],
+              },
+              "displayName": "card-content__TcCardContainer",
+              "foldedComponentIds": Array [
+                "tc-view__TcView-nuazoi-0",
+              ],
+              "render": [Function],
+              "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+          styles={
+            Object {
+              "flex": 1,
+              "marginBottom": "10px",
+              "minWidth": "100%",
+            }
+          }
+        >
+          <div
+            data-adam-test="item3"
+          >
+            <tc-text__TcText>
+              <StyledComponent
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "tc-text__TcText-sc-15igzev-0",
+                      "isStatic": true,
+                      "lastClassName": "lhcAkf",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                      ],
+                    },
+                    "displayName": "tc-text__TcText",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "tc-text__TcText-sc-15igzev-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+              >
+                <div>
+                  A card in reverse with no image
+                </div>
+              </StyledComponent>
+            </tc-text__TcText>
+          </div>
+        </StyledComponent>
+      </card-content__TcCardContainer>
     </div>
-  </div>
-</div>
+  </StyledComponent>
+</tc-view__TcView>
 `;
 
 exports[`7. card with a loading state 1`] = `
@@ -164,44 +1024,177 @@ exports[`7. card with a loading state 1`] = `
     forwardedRef={null}
   >
     <div>
-      <div>
-        <div>
-          <TimesImage
-            aspectRatio={0.6666666666666666}
-            disablePlaceholder={false}
-            fadeImageIn={false}
-            highResSize={360}
-            lowResQuality={null}
-            lowResSize={50}
-            rounded={false}
-            uri="https://img.io/img"
-          />
-        </div>
-        <div>
-          <_default>
-            <Gradient
-              degrees={264}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-          </_default>
-        </div>
-      </div>
+      <tc-view__TcView
+        data-adam-test="item2"
+      >
+        <StyledComponent
+          data-adam-test="item2"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "tc-view__TcView-nuazoi-0",
+                "isStatic": true,
+                "lastClassName": "fPjBcr",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                ],
+              },
+              "displayName": "tc-view__TcView",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            data-adam-test="item2"
+          >
+            <tc-view__TcView
+              data-adam-test="item1"
+              styles={
+                Object {
+                  "flex": 1,
+                  "marginBottom": "10px",
+                  "minWidth": "100%",
+                }
+              }
+            >
+              <StyledComponent
+                data-adam-test="item1"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "tc-view__TcView-nuazoi-0",
+                      "isStatic": true,
+                      "lastClassName": "fPjBcr",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                      ],
+                    },
+                    "displayName": "tc-view__TcView",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "tc-view__TcView-nuazoi-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                styles={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": "10px",
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <div
+                  data-adam-test="item1"
+                >
+                  <TimesImage
+                    aspectRatio={0.6666666666666666}
+                    disablePlaceholder={false}
+                    fadeImageIn={false}
+                    highResSize={360}
+                    lowResQuality={null}
+                    lowResSize={50}
+                    rounded={false}
+                    uri="https://img.io/img"
+                  />
+                </div>
+              </StyledComponent>
+            </tc-view__TcView>
+            <card-content__TcCardContainer
+              data-adam-test="item3"
+              styles={
+                Object {
+                  "flex": 1,
+                  "marginBottom": 0,
+                  "minHeight": 84,
+                  "minWidth": "100%",
+                }
+              }
+            >
+              <StyledComponent
+                data-adam-test="item3"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                      "isStatic": false,
+                      "lastClassName": "fGmfWj",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                        [Function],
+                        ";",
+                      ],
+                    },
+                    "displayName": "card-content__TcCardContainer",
+                    "foldedComponentIds": Array [
+                      "tc-view__TcView-nuazoi-0",
+                    ],
+                    "render": [Function],
+                    "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                styles={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minHeight": 84,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <div
+                  data-adam-test="item3"
+                >
+                  <_default>
+                    <Gradient
+                      degrees={264}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                  </_default>
+                </div>
+              </StyledComponent>
+            </card-content__TcCardContainer>
+          </div>
+        </StyledComponent>
+      </tc-view__TcView>
     </div>
   </StyledComponent>
 </Animations__FadeIn>
@@ -263,32 +1256,118 @@ exports[`8. card with a loading state and no image 1`] = `
     forwardedRef={null}
   >
     <div>
-      <div>
-        <div>
-          <_default>
-            <Gradient
-              degrees={264}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-          </_default>
-        </div>
-      </div>
+      <tc-view__TcView
+        data-adam-test="item2"
+      >
+        <StyledComponent
+          data-adam-test="item2"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "tc-view__TcView-nuazoi-0",
+                "isStatic": true,
+                "lastClassName": "fPjBcr",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                ],
+              },
+              "displayName": "tc-view__TcView",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            data-adam-test="item2"
+          >
+            <card-content__TcCardContainer
+              data-adam-test="item3"
+              styles={
+                Object {
+                  "flex": 1,
+                  "marginBottom": 0,
+                  "minHeight": 84,
+                  "minWidth": "100%",
+                }
+              }
+            >
+              <StyledComponent
+                data-adam-test="item3"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                      "isStatic": false,
+                      "lastClassName": "fGmfWj",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                        [Function],
+                        ";",
+                      ],
+                    },
+                    "displayName": "card-content__TcCardContainer",
+                    "foldedComponentIds": Array [
+                      "tc-view__TcView-nuazoi-0",
+                    ],
+                    "render": [Function],
+                    "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                styles={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minHeight": 84,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <div
+                  data-adam-test="item3"
+                >
+                  <_default>
+                    <Gradient
+                      degrees={264}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                  </_default>
+                </div>
+              </StyledComponent>
+            </card-content__TcCardContainer>
+          </div>
+        </StyledComponent>
+      </tc-view__TcView>
     </div>
   </StyledComponent>
 </Animations__FadeIn>
@@ -350,44 +1429,177 @@ exports[`9. card with reversed loading state 1`] = `
     forwardedRef={null}
   >
     <div>
-      <div>
-        <div>
-          <_default>
-            <Gradient
-              degrees={264}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-          </_default>
-        </div>
-        <div>
-          <TimesImage
-            aspectRatio={0.6666666666666666}
-            disablePlaceholder={false}
-            fadeImageIn={false}
-            highResSize={360}
-            lowResQuality={null}
-            lowResSize={50}
-            rounded={false}
-            uri="https://img.io/img"
-          />
-        </div>
-      </div>
+      <tc-view__TcView
+        data-adam-test="item2"
+      >
+        <StyledComponent
+          data-adam-test="item2"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "tc-view__TcView-nuazoi-0",
+                "isStatic": true,
+                "lastClassName": "fPjBcr",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                ],
+              },
+              "displayName": "tc-view__TcView",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            data-adam-test="item2"
+          >
+            <card-content__TcCardContainer
+              data-adam-test="item3"
+              styles={
+                Object {
+                  "flex": 1,
+                  "marginBottom": "10px",
+                  "minHeight": 84,
+                  "minWidth": "100%",
+                }
+              }
+            >
+              <StyledComponent
+                data-adam-test="item3"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                      "isStatic": false,
+                      "lastClassName": "evpgfy",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                        [Function],
+                        ";",
+                      ],
+                    },
+                    "displayName": "card-content__TcCardContainer",
+                    "foldedComponentIds": Array [
+                      "tc-view__TcView-nuazoi-0",
+                    ],
+                    "render": [Function],
+                    "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                styles={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": "10px",
+                    "minHeight": 84,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <div
+                  data-adam-test="item3"
+                >
+                  <_default>
+                    <Gradient
+                      degrees={264}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                  </_default>
+                </div>
+              </StyledComponent>
+            </card-content__TcCardContainer>
+            <tc-view__TcView
+              data-adam-test="item1"
+              styles={
+                Object {
+                  "flex": 1,
+                  "marginBottom": 0,
+                  "minWidth": "100%",
+                }
+              }
+            >
+              <StyledComponent
+                data-adam-test="item1"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "tc-view__TcView-nuazoi-0",
+                      "isStatic": true,
+                      "lastClassName": "fPjBcr",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                      ],
+                    },
+                    "displayName": "tc-view__TcView",
+                    "foldedComponentIds": Array [],
+                    "render": [Function],
+                    "styledComponentId": "tc-view__TcView-nuazoi-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                styles={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": 0,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <div
+                  data-adam-test="item1"
+                >
+                  <TimesImage
+                    aspectRatio={0.6666666666666666}
+                    disablePlaceholder={false}
+                    fadeImageIn={false}
+                    highResSize={360}
+                    lowResQuality={null}
+                    lowResSize={50}
+                    rounded={false}
+                    uri="https://img.io/img"
+                  />
+                </div>
+              </StyledComponent>
+            </tc-view__TcView>
+          </div>
+        </StyledComponent>
+      </tc-view__TcView>
     </div>
   </StyledComponent>
 </Animations__FadeIn>
@@ -449,40 +1661,130 @@ exports[`10. card with reversed loading state with no image 1`] = `
     forwardedRef={null}
   >
     <div>
-      <div>
-        <div>
-          <_default>
-            <Gradient
-              degrees={264}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-          </_default>
-        </div>
-      </div>
+      <tc-view__TcView
+        data-adam-test="item2"
+      >
+        <StyledComponent
+          data-adam-test="item2"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "tc-view__TcView-nuazoi-0",
+                "isStatic": true,
+                "lastClassName": "fPjBcr",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                ],
+              },
+              "displayName": "tc-view__TcView",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          <div
+            data-adam-test="item2"
+          >
+            <card-content__TcCardContainer
+              data-adam-test="item3"
+              styles={
+                Object {
+                  "flex": 1,
+                  "marginBottom": "10px",
+                  "minHeight": 84,
+                  "minWidth": "100%",
+                }
+              }
+            >
+              <StyledComponent
+                data-adam-test="item3"
+                forwardedComponent={
+                  Object {
+                    "$$typeof": Symbol(react.forward_ref),
+                    "attrs": Array [],
+                    "componentStyle": ComponentStyle {
+                      "componentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                      "isStatic": false,
+                      "lastClassName": "evpgfy",
+                      "rules": Array [
+                        "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                        [Function],
+                        ";",
+                      ],
+                    },
+                    "displayName": "card-content__TcCardContainer",
+                    "foldedComponentIds": Array [
+                      "tc-view__TcView-nuazoi-0",
+                    ],
+                    "render": [Function],
+                    "styledComponentId": "card-content__TcCardContainer-sc-1w0wvq8-0",
+                    "target": "div",
+                    "toString": [Function],
+                    "warnTooManyClasses": [Function],
+                    "withComponent": [Function],
+                  }
+                }
+                forwardedRef={null}
+                styles={
+                  Object {
+                    "flex": 1,
+                    "marginBottom": "10px",
+                    "minHeight": 84,
+                    "minWidth": "100%",
+                  }
+                }
+              >
+                <div
+                  data-adam-test="item3"
+                >
+                  <_default>
+                    <Gradient
+                      degrees={264}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      degrees={267}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                  </_default>
+                </div>
+              </StyledComponent>
+            </card-content__TcCardContainer>
+          </div>
+        </StyledComponent>
+      </tc-view__TcView>
     </div>
   </StyledComponent>
 </Animations__FadeIn>
 `;
 
 exports[`11. card should not re-render when imageratio prop is changed 1`] = `
-<div>
-  <div>
+<div
+  data-adam-test="item2"
+>
+  <div
+    data-adam-test="item1"
+  >
     <div>
       <div>
         <img
@@ -517,7 +1819,9 @@ exports[`11. card should not re-render when imageratio prop is changed 1`] = `
       </div>
     </div>
   </div>
-  <div>
+  <div
+    data-adam-test="item3"
+  >
     <div>
       Do not re-render me
     </div>
@@ -526,8 +1830,12 @@ exports[`11. card should not re-render when imageratio prop is changed 1`] = `
 `;
 
 exports[`11. card should not re-render when imageratio prop is changed 2`] = `
-<div>
-  <div>
+<div
+  data-adam-test="item2"
+>
+  <div
+    data-adam-test="item1"
+  >
     <div>
       <div>
         <img
@@ -562,7 +1870,9 @@ exports[`11. card should not re-render when imageratio prop is changed 2`] = `
       </div>
     </div>
   </div>
-  <div>
+  <div
+    data-adam-test="item3"
+  >
     <div>
       Do not re-render me
     </div>
@@ -571,8 +1881,12 @@ exports[`11. card should not re-render when imageratio prop is changed 2`] = `
 `;
 
 exports[`12. card should re-render when image uri changes 1`] = `
-<div>
-  <div>
+<div
+  data-adam-test="item2"
+>
+  <div
+    data-adam-test="item1"
+  >
     <div>
       <div>
         <img
@@ -607,7 +1921,9 @@ exports[`12. card should re-render when image uri changes 1`] = `
       </div>
     </div>
   </div>
-  <div>
+  <div
+    data-adam-test="item3"
+  >
     <div>
       Some text
     </div>
@@ -616,8 +1932,12 @@ exports[`12. card should re-render when image uri changes 1`] = `
 `;
 
 exports[`12. card should re-render when image uri changes 2`] = `
-<div>
-  <div>
+<div
+  data-adam-test="item2"
+>
+  <div
+    data-adam-test="item1"
+  >
     <div>
       <div>
         <img
@@ -652,7 +1972,9 @@ exports[`12. card should re-render when image uri changes 2`] = `
       </div>
     </div>
   </div>
-  <div>
+  <div
+    data-adam-test="item3"
+  >
     <div>
       Some text
     </div>
@@ -661,8 +1983,12 @@ exports[`12. card should re-render when image uri changes 2`] = `
 `;
 
 exports[`13. card should re-render when low res size changes 1`] = `
-<div>
-  <div>
+<div
+  data-adam-test="item2"
+>
+  <div
+    data-adam-test="item1"
+  >
     <div>
       <div>
         <img
@@ -697,7 +2023,9 @@ exports[`13. card should re-render when low res size changes 1`] = `
       </div>
     </div>
   </div>
-  <div>
+  <div
+    data-adam-test="item3"
+  >
     <div>
       Some content
     </div>
@@ -706,8 +2034,12 @@ exports[`13. card should re-render when low res size changes 1`] = `
 `;
 
 exports[`13. card should re-render when low res size changes 2`] = `
-<div>
-  <div>
+<div
+  data-adam-test="item2"
+>
+  <div
+    data-adam-test="item1"
+  >
     <div>
       <div>
         <img
@@ -739,7 +2071,9 @@ exports[`13. card should re-render when low res size changes 2`] = `
       </div>
     </div>
   </div>
-  <div>
+  <div
+    data-adam-test="item3"
+  >
     <div>
       Some content
     </div>
@@ -748,8 +2082,12 @@ exports[`13. card should re-render when low res size changes 2`] = `
 `;
 
 exports[`14. card should re-render when high res size changes 1`] = `
-<div>
-  <div>
+<div
+  data-adam-test="item2"
+>
+  <div
+    data-adam-test="item1"
+  >
     <div>
       <div>
         <img
@@ -784,7 +2122,9 @@ exports[`14. card should re-render when high res size changes 1`] = `
       </div>
     </div>
   </div>
-  <div>
+  <div
+    data-adam-test="item3"
+  >
     <div>
       Some content
     </div>
@@ -793,8 +2133,12 @@ exports[`14. card should re-render when high res size changes 1`] = `
 `;
 
 exports[`14. card should re-render when high res size changes 2`] = `
-<div>
-  <div>
+<div
+  data-adam-test="item2"
+>
+  <div
+    data-adam-test="item1"
+  >
     <div>
       <div>
         <img
@@ -826,7 +2170,9 @@ exports[`14. card should re-render when high res size changes 2`] = `
       </div>
     </div>
   </div>
-  <div>
+  <div
+    data-adam-test="item3"
+  >
     <div>
       Some content
     </div>
@@ -836,8 +2182,12 @@ exports[`14. card should re-render when high res size changes 2`] = `
 
 exports[`15. card should re-render when loading state changes 1`] = `
 <div>
-  <div>
-    <div>
+  <div
+    data-adam-test="item2"
+  >
+    <div
+      data-adam-test="item1"
+    >
       <div>
         <div>
           <img
@@ -872,7 +2222,9 @@ exports[`15. card should re-render when loading state changes 1`] = `
         </div>
       </div>
     </div>
-    <div>
+    <div
+      data-adam-test="item3"
+    >
       <div />
       <div />
       <div />
@@ -883,8 +2235,12 @@ exports[`15. card should re-render when loading state changes 1`] = `
 `;
 
 exports[`15. card should re-render when loading state changes 2`] = `
-<div>
-  <div>
+<div
+  data-adam-test="item2"
+>
+  <div
+    data-adam-test="item1"
+  >
     <div>
       <div>
         <img
@@ -919,7 +2275,9 @@ exports[`15. card should re-render when loading state changes 2`] = `
       </div>
     </div>
   </div>
-  <div>
+  <div
+    data-adam-test="item3"
+  >
     <div>
       Re-render me
     </div>

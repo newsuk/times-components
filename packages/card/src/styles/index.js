@@ -1,7 +1,6 @@
-import { StyleSheet } from "react-native";
 import { spacing } from "@times-components/ts-styleguide";
 
-const styles = StyleSheet.create({
+const styles = {
   cardContainer: {
     alignItems: "flex-start",
     display: "flex",
@@ -58,6 +57,6 @@ const styles = StyleSheet.create({
     height: 10,
     marginBottom: spacing(2)
   }
-});
+};
 
 export default styles;

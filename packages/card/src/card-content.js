@@ -1,51 +1,14 @@
 /* eslint-disable no-undef */
 import React, { Component } from "react";
-import { View } from "react-native";
+import { TcView, checkStylesForUnits } from "@times-components/utils";
+import styled from "styled-components";
 import Image from "@times-components/image";
 import { cardPropTypes, cardDefaultProps } from "./card-prop-types";
 import Loading from "./card-loading";
 import styles from "./styles";
 
-const checkBrowser = () => {
-  if (!navigator) {
-    return false;
-  }
-
-  const { userAgent } = navigator;
-  const matchBrowser =
-    userAgent.match(
-      /(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i
-    ) || [];
-
-  if (/safari/i.test(matchBrowser[1])) {
-    const indexOfVersion = navigator.appVersion.indexOf("Version/") + 8;
-    const version = parseInt(
-      navigator.appVersion.slice(indexOfVersion, indexOfVersion + 1),
-      10
-    );
-
-    return version > 5 && version <= 9;
-  }
-  return false;
-};
-
 class CardContent extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      isOldSafari: false
-    };
-  }
-
-  componentDidMount() {
-    const isOldSafari = checkBrowser();
-    this.setState({
-      isOldSafari
-    });
-  }
-
-  shouldComponentUpdate(nextProps, nextState) {
+  shouldComponentUpdate(nextProps) {
     const {
       imageUri,
       lowResQuality,
@@ -58,8 +21,7 @@ class CardContent extends Component {
       lowResQuality !== nextProps.lowResQuality ||
       lowResSize !== nextProps.lowResSize ||
       highResSize !== nextProps.highResSize ||
-      isLoading !== nextProps.isLoading ||
-      nextState.isOldSafari
+      isLoading !== nextProps.isLoading
     );
   }
 
@@ -78,23 +40,25 @@ class CardContent extends Component {
       isReversed,
       lowResQuality,
       lowResSize,
-      showImage,
-      relatedArticle
+      showImage
     } = this.props;
 
-    const { isOldSafari } = this.state;
+    const TcCardContainer = styled(TcView)`
+      ${props => props.styles && props.styles};
+    `;
 
     const renderImage = () => {
       if (!showImage) return null;
 
       return (
-        <View
+        <TcView
           className={imageContainerClass}
-          style={[
-            styles.imageContainer,
-            imageStyle,
-            isReversed ? styles.reversedImageContainer : ""
-          ]}
+          data-adam-test="item1"
+          styles={checkStylesForUnits({
+            ...styles.imageContainer,
+            ...imageStyle,
+            ...(isReversed ? styles.reversedImageContainer : "")
+          })}
         >
           <Image
             accessibilityLabel={imageAccessibilityLabel}
@@ -105,38 +69,32 @@ class CardContent extends Component {
             lowResSize={lowResSize}
             uri={imageUri}
           />
-        </View>
+        </TcView>
       );
     };
 
-    const cardContainerStyle =
-      relatedArticle && isOldSafari
-        ? {
-            ...styles.cardContainer,
-            display: "block"
-          }
-        : styles.cardContainer;
-
     return (
-      <View
-        style={[
-          cardContainerStyle,
-          isReversed ? styles.reversedCardContainer : ""
-        ]}
+      <TcView
+        data-adam-test="item2"
+        style={checkStylesForUnits({
+          ...styles.cardContainer,
+          ...(isReversed ? styles.reversedCardContainer : "")
+        })}
       >
         {!isReversed ? renderImage() : null}
-        <View
+        <TcCardContainer
           className={contentContainerClass}
-          style={[
-            styles.contentContainer,
-            isReversed ? styles.reversedContentContainer : "",
-            isLoading ? styles.loadingContentContainer : ""
-          ]}
+          data-adam-test="item3"
+          styles={checkStylesForUnits({
+            ...styles.contentContainer,
+            ...(isReversed ? styles.reversedContentContainer : ""),
+            ...(isLoading ? styles.loadingContentContainer : "")
+          })}
         >
           {isLoading ? <Loading /> : children}
-        </View>
+        </TcCardContainer>
         {isReversed ? renderImage() : null}
-      </View>
+      </TcView>
     );
   }
 }

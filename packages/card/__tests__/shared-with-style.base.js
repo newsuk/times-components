@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import { iterator } from "@times-components/test-utils";
 import Card from "../src/card";
 
@@ -20,7 +20,7 @@ export default renderMethod => {
       test: () => {
         const output = renderMethod(
           <Card {...props}>
-            <Text>A card</Text>
+            <TcText>A card</TcText>
           </Card>
         );
 
@@ -34,7 +34,7 @@ export default renderMethod => {
       test: () => {
         const output = renderMethod(
           <Card {...props} isReversed>
-            <Text>A card in reverse</Text>
+            <TcText>A card in reverse</TcText>
           </Card>
         );
 
@@ -48,7 +48,7 @@ export default renderMethod => {
       test: () => {
         const output = renderMethod(
           <Card {...props} isLoading>
-            <Text>Loading state</Text>
+            <TcText>Loading state</TcText>
           </Card>
         );
 
@@ -62,7 +62,7 @@ export default renderMethod => {
       test: () => {
         const output = renderMethod(
           <Card {...props} isLoading isReversed>
-            <Text>Loading in reverse</Text>
+            <TcText>Loading in reverse</TcText>
           </Card>
         );
 
