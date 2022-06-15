@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import { ResponsiveContext } from "@times-components/responsive";
 import { iterator } from "@times-components/test-utils";
 import Card from "../src/card";
@@ -28,7 +28,7 @@ export default renderMethod => {
         const output = renderMethod(
           withTabletContext(
             <Card {...props}>
-              <Text>A card</Text>
+              <TcText>A card</TcText>
             </Card>
           )
         );
