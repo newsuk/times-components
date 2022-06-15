@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import Card from "../src/card";
@@ -22,7 +22,7 @@ export default renderMethod => {
       test: () => {
         const output = renderMethod(
           <Card {...props}>
-            <Text>A card</Text>
+            <TcText>A card</TcText>
           </Card>
         );
 
@@ -34,7 +34,7 @@ export default renderMethod => {
       test: () => {
         const output = renderMethod(
           <Card {...props} imageUri={null}>
-            <Text>A card with an empty image</Text>
+            <TcText>A card with an empty image</TcText>
           </Card>
         );
 
@@ -46,7 +46,7 @@ export default renderMethod => {
       test: () => {
         const output = renderMethod(
           <Card {...props} showImage={false}>
-            <Text>No image</Text>
+            <TcText>No image</TcText>
           </Card>
         );
 
@@ -58,7 +58,7 @@ export default renderMethod => {
       test: () => {
         const output = renderMethod(
           <Card {...props} imageUri={null}>
-            <Text>No URI</Text>
+            <TcText>No URI</TcText>
           </Card>
         );
 
@@ -70,7 +70,7 @@ export default renderMethod => {
       test: () => {
         const output = renderMethod(
           <Card {...props} isReversed>
-            <Text>A card in reverse</Text>
+            <TcText>A card in reverse</TcText>
           </Card>
         );
 
@@ -82,7 +82,7 @@ export default renderMethod => {
       test: () => {
         const output = renderMethod(
           <Card {...props} isReversed showImage={false}>
-            <Text>A card in reverse with no image</Text>
+            <TcText>A card in reverse with no image</TcText>
           </Card>
         );
 
@@ -94,7 +94,7 @@ export default renderMethod => {
       test: () => {
         const output = renderMethod(
           <Card {...props} isLoading>
-            <Text>Loading state</Text>
+            <TcText>Loading state</TcText>
           </Card>
         );
 
@@ -106,7 +106,7 @@ export default renderMethod => {
       test: () => {
         const output = renderMethod(
           <Card {...props} isLoading showImage={false}>
-            <Text>Loading with no image</Text>
+            <TcText>Loading with no image</TcText>
           </Card>
         );
 
@@ -118,7 +118,7 @@ export default renderMethod => {
       test: () => {
         const output = renderMethod(
           <Card {...props} isLoading isReversed>
-            <Text>Loading in reverse</Text>
+            <TcText>Loading in reverse</TcText>
           </Card>
         );
 
@@ -130,7 +130,7 @@ export default renderMethod => {
       test: () => {
         const output = renderMethod(
           <Card {...props} isLoading isReversed showImage={false}>
-            <Text>Loading in reverse with no image</Text>
+            <TcText>Loading in reverse with no image</TcText>
           </Card>
         );
 
@@ -142,7 +142,7 @@ export default renderMethod => {
       test: () => {
         const testInstance = TestRenderer.create(
           <Card {...props}>
-            <Text>Do not re-render me</Text>
+            <TcText>Do not re-render me</TcText>
           </Card>
         );
 
@@ -150,7 +150,7 @@ export default renderMethod => {
 
         testInstance.update(
           <Card {...props} imageRatio={16 / 9}>
-            <Text>Do not re-render me</Text>
+            <TcText>Do not re-render me</TcText>
           </Card>
         );
 
@@ -162,7 +162,7 @@ export default renderMethod => {
       test: () => {
         const testInstance = TestRenderer.create(
           <Card {...props}>
-            <Text>Some text</Text>
+            <TcText>Some text</TcText>
           </Card>
         );
 
@@ -170,7 +170,7 @@ export default renderMethod => {
 
         testInstance.update(
           <Card {...props} imageUri="http://foo">
-            <Text>Some text</Text>
+            <TcText>Some text</TcText>
           </Card>
         );
 
@@ -182,7 +182,7 @@ export default renderMethod => {
       test: () => {
         const testInstance = TestRenderer.create(
           <Card {...props}>
-            <Text>Some content</Text>
+            <TcText>Some content</TcText>
           </Card>
         );
 
@@ -190,7 +190,7 @@ export default renderMethod => {
 
         testInstance.update(
           <Card {...props} lowResSize={null}>
-            <Text>Some content</Text>
+            <TcText>Some content</TcText>
           </Card>
         );
 
@@ -202,7 +202,7 @@ export default renderMethod => {
       test: () => {
         const testInstance = TestRenderer.create(
           <Card {...props}>
-            <Text>Some content</Text>
+            <TcText>Some content</TcText>
           </Card>
         );
 
@@ -210,7 +210,7 @@ export default renderMethod => {
 
         testInstance.update(
           <Card {...props} highResSize={null}>
-            <Text>Some content</Text>
+            <TcText>Some content</TcText>
           </Card>
         );
 
@@ -222,7 +222,7 @@ export default renderMethod => {
       test: () => {
         const testInstance = TestRenderer.create(
           <Card {...props} isLoading>
-            <Text>Re-render me</Text>
+            <TcText>Re-render me</TcText>
           </Card>
         );
 
@@ -230,7 +230,7 @@ export default renderMethod => {
 
         testInstance.update(
           <Card {...props} isLoading={false}>
-            <Text>Re-render me</Text>
+            <TcText>Re-render me</TcText>
           </Card>
         );
 

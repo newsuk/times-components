@@ -1,8 +1,8 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import { breakpoints } from "../styleguide";
 
-export const CardWrapper = styled(View)`
+export const CardWrapper = styled(TcView)`
   @media (min-width: ${breakpoints.medium}px) {
     .exampleCardImage {
       flex-grow: 2 !important;
@@ -17,7 +17,7 @@ export const CardWrapper = styled(View)`
   }
 `;
 
-export const ReversedCardWrapper = styled(View)`
+export const ReversedCardWrapper = styled(TcView)`
   @media (min-width: ${breakpoints.medium}px) {
     .exampleCardImage {
       flex-grow: 2 !important;

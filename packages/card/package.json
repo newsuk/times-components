@@ -20,10 +20,7 @@
     "url": "git+https://github.com/newsuk/times-components.git"
   },
   "keywords": [
-    "react-native-web",
     "react",
-    "native",
-    "web",
     "card",
     "component"
   ],
@@ -53,8 +50,6 @@
     "react": "16.9.0",
     "react-art": "16.6.3",
     "react-dom": "16.9.0",
-    "react-native": "0.61.5",
-    "react-native-web": "0.11.4",
     "react-test-renderer": "16.9.0",
     "stylelint": "9.4.0",
     "stylelint-config-recommended": "2.1.0",
@@ -68,6 +63,7 @@
     "@times-components/image": "6.11.16",
     "@times-components/responsive": "0.12.1",
     "@times-components/ts-styleguide": "1.36.2",
+    "@times-components/utils": "6.12.1",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
@@ -77,9 +73,7 @@
   },
   "peerDependencies": {
     "react": ">=16.9",
-    "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-dom": ">=16.9"
   },
   "publishConfig": {
     "access": "public"
