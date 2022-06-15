@@ -1,69 +1,43 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import RelatedArticles from '@times-components/related-articles';
-import { GetRecommendedArticles } from '@times-components/provider';
 
-import { RelatedArticleSliceType } from '../../types/related-article-slice';
+import { useFetch } from '../../helpers/fetch/FetchProvider';
+import { getRelatedArticlesSlice } from './formatters';
 
-import { Placeholder } from '@times-components/image';
-
-type RecommendedArticlesProps = {
-  articleId: string;
+export const RecommendedArticles: React.FC<{
   section: string;
+  isVisible?: boolean;
   analyticsStream?: (evt: any) => void;
-};
+}> = ({ section, isVisible, analyticsStream }) => {
+  const { loading, error, data } = useFetch<any>();
 
-export const RecommendedArticles = ({
-  articleId,
-  section,
-  analyticsStream
-}: RecommendedArticlesProps) => {
-  const [isReady, setIsReady] = useState<boolean>(false);
-
-  useEffect(() => {
-    setIsReady(true);
-  }, []);
-
-  if (!isReady) {
+  if (loading || error || data === undefined) {
     return null;
   }
 
+  const slice = getRelatedArticlesSlice(data.recommendations);
+
+  const onClickHandler = (__: MouseEvent, article: { url: string }) => {
+    // tslint:disable-next-line:no-console
+    console.log('RecommendedArticles', article.url);
+
+    // tslint:disable-next-line:no-console
+    console.log('RecommendedArticles', slice);
+  };
+
   return (
-    <GetRecommendedArticles
-      publisher={'TIMES'}
-      recomArgs={{ userId: '1234', articleId }}
-      ssr={false}
-      debounceTimeMs={0}
+    <div
+      id="recommended-articles"
+      style={{ display: isVisible ? 'block' : 'none' }}
     >
-      {({ isLoading, error, recommendations }: any) => {
-        if (error) {
-          return null;
-        }
-
-        if (isLoading || !recommendations) {
-          return (
-            <div className="placeholder">
-              <Placeholder />
-            </div>
-          );
-        }
-
-        const slice: RelatedArticleSliceType = {
-          sliceName: 'StandardSlice',
-          items: recommendations
-            ? recommendations.articles.map((article: any) => ({ article }))
-            : []
-        };
-
-        return (
-          <RelatedArticles
-            heading={`Today's ${section}`}
-            slice={slice}
-            isVisible
-            analyticsStream={analyticsStream}
-          />
-        );
-      }}
-    </GetRecommendedArticles>
+      <RelatedArticles
+        heading={`Today's ${section}`}
+        slice={slice}
+        isVisible
+        onPress={onClickHandler}
+        analyticsStream={analyticsStream}
+      />
+    </div>
   );
 };

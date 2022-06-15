@@ -19,6 +19,18 @@ exports[`1. mobile primary image with caption and credits 1`] = `
   z-index: 0;
 }
 
+.c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
 .c1 {
   display: block;
   opacity: 0;
@@ -169,24 +181,136 @@ Array [
             <div
               className="c2"
             >
-              <div
-                className="css-view-1dbjc4n"
-              >
-                <div
-                  className="css-view-1dbjc4n r-paddingTop-m611by"
+              <tc-view__TcView>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "tc-view__TcView-nuazoi-0",
+                        "isStatic": true,
+                        "lastClassName": "c0",
+                        "rules": Array [
+                          "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                        ],
+                      },
+                      "displayName": "tc-view__TcView",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "tc-view__TcView-nuazoi-0",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
                 >
                   <div
-                    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                    className="c0"
                   >
-                    Some caption
+                    <tc-view__TcView>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "tc-view__TcView-nuazoi-0",
+                              "isStatic": true,
+                              "lastClassName": "c0",
+                              "rules": Array [
+                                "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                              ],
+                            },
+                            "displayName": "tc-view__TcView",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "tc-view__TcView-nuazoi-0",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <div
+                          className="c0"
+                        >
+                          <tc-text__TcText>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "tc-text__TcText-sc-15igzev-0",
+                                    "isStatic": true,
+                                    "lastClassName": "c3",
+                                    "rules": Array [
+                                      "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                                    ],
+                                  },
+                                  "displayName": "tc-text__TcText",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "tc-text__TcText-sc-15igzev-0",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <div
+                                className="c3"
+                              >
+                                Some caption
+                              </div>
+                            </StyledComponent>
+                          </tc-text__TcText>
+                          <tc-text__TcText>
+                            <StyledComponent
+                              forwardedComponent={
+                                Object {
+                                  "$$typeof": Symbol(react.forward_ref),
+                                  "attrs": Array [],
+                                  "componentStyle": ComponentStyle {
+                                    "componentId": "tc-text__TcText-sc-15igzev-0",
+                                    "isStatic": true,
+                                    "lastClassName": "c3",
+                                    "rules": Array [
+                                      "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                                    ],
+                                  },
+                                  "displayName": "tc-text__TcText",
+                                  "foldedComponentIds": Array [],
+                                  "render": [Function],
+                                  "styledComponentId": "tc-text__TcText-sc-15igzev-0",
+                                  "target": "div",
+                                  "toString": [Function],
+                                  "warnTooManyClasses": [Function],
+                                  "withComponent": [Function],
+                                }
+                              }
+                              forwardedRef={null}
+                            >
+                              <div
+                                className="c3"
+                              >
+                                SOME CREDITS
+                              </div>
+                            </StyledComponent>
+                          </tc-text__TcText>
+                        </div>
+                      </StyledComponent>
+                    </tc-view__TcView>
                   </div>
-                  <div
-                    className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-                  >
-                    SOME CREDITS
-                  </div>
-                </div>
-              </div>
+                </StyledComponent>
+              </tc-view__TcView>
             </div>
           </StyledComponent>
         </responsive__InsetCaptionStyle>
@@ -213,6 +337,18 @@ exports[`2. secondary image with caption and credits 1`] = `
   padding: 0px;
   position: relative;
   z-index: 0;
+}
+
+.c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
 }
 
 .c1 {
@@ -304,24 +440,136 @@ Array [
       <div
         className="c0"
       >
-        <div
-          className="css-view-1dbjc4n"
-        >
-          <div
-            className="css-view-1dbjc4n"
+        <tc-view__TcView>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "tc-view__TcView-nuazoi-0",
+                  "isStatic": true,
+                  "lastClassName": "c0",
+                  "rules": Array [
+                    "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                  ],
+                },
+                "displayName": "tc-view__TcView",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "tc-view__TcView-nuazoi-0",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
           >
             <div
-              className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+              className="c0"
             >
-              Another caption
+              <tc-view__TcView>
+                <StyledComponent
+                  forwardedComponent={
+                    Object {
+                      "$$typeof": Symbol(react.forward_ref),
+                      "attrs": Array [],
+                      "componentStyle": ComponentStyle {
+                        "componentId": "tc-view__TcView-nuazoi-0",
+                        "isStatic": true,
+                        "lastClassName": "c0",
+                        "rules": Array [
+                          "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                        ],
+                      },
+                      "displayName": "tc-view__TcView",
+                      "foldedComponentIds": Array [],
+                      "render": [Function],
+                      "styledComponentId": "tc-view__TcView-nuazoi-0",
+                      "target": "div",
+                      "toString": [Function],
+                      "warnTooManyClasses": [Function],
+                      "withComponent": [Function],
+                    }
+                  }
+                  forwardedRef={null}
+                >
+                  <div
+                    className="c0"
+                  >
+                    <tc-text__TcText>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "tc-text__TcText-sc-15igzev-0",
+                              "isStatic": true,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                              ],
+                            },
+                            "displayName": "tc-text__TcText",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "tc-text__TcText-sc-15igzev-0",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <div
+                          className="c2"
+                        >
+                          Another caption
+                        </div>
+                      </StyledComponent>
+                    </tc-text__TcText>
+                    <tc-text__TcText>
+                      <StyledComponent
+                        forwardedComponent={
+                          Object {
+                            "$$typeof": Symbol(react.forward_ref),
+                            "attrs": Array [],
+                            "componentStyle": ComponentStyle {
+                              "componentId": "tc-text__TcText-sc-15igzev-0",
+                              "isStatic": true,
+                              "lastClassName": "c2",
+                              "rules": Array [
+                                "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                              ],
+                            },
+                            "displayName": "tc-text__TcText",
+                            "foldedComponentIds": Array [],
+                            "render": [Function],
+                            "styledComponentId": "tc-text__TcText-sc-15igzev-0",
+                            "target": "div",
+                            "toString": [Function],
+                            "warnTooManyClasses": [Function],
+                            "withComponent": [Function],
+                          }
+                        }
+                        forwardedRef={null}
+                      >
+                        <div
+                          className="c2"
+                        >
+                          OTHER CREDITS
+                        </div>
+                      </StyledComponent>
+                    </tc-text__TcText>
+                  </div>
+                </StyledComponent>
+              </tc-view__TcView>
             </div>
-            <div
-              className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-            >
-              OTHER CREDITS
-            </div>
-          </div>
-        </div>
+          </StyledComponent>
+        </tc-view__TcView>
       </div>
     </StyledComponent>
   </tc-view__TcView>,

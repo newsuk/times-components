@@ -3,6 +3,83 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.41.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.40.0...@times-components/ts-components@1.41.0) (2022-06-08)
+
+
+### Features
+
+* **TDP-1935:** Recommended Articles ([#2977](https://github.com/newsuk/times-components/issues/2977)) ([b3be73f](https://github.com/newsuk/times-components/commit/b3be73f01c4c1c9c5949675db7ad2dff5a839509))
+
+
+
+
+
+# [1.40.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.39.0...@times-components/ts-components@1.40.0) (2022-06-08)
+
+
+### Features
+
+* **TDP-1935:** Recommended Articles ([#2975](https://github.com/newsuk/times-components/issues/2975)) ([5873b3c](https://github.com/newsuk/times-components/commit/5873b3c7848d700a4be7f11df3bbb38670e7525f))
+
+
+
+
+
+# [1.39.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.38.0...@times-components/ts-components@1.39.0) (2022-06-08)
+
+
+### Features
+
+* **TDP-1935:** Recommended Articles ([#2974](https://github.com/newsuk/times-components/issues/2974)) ([536fb11](https://github.com/newsuk/times-components/commit/536fb11993301ec9fa5cd20c7505fc795032d447))
+
+
+
+
+
+# [1.38.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.37.0...@times-components/ts-components@1.38.0) (2022-06-08)
+
+
+### Features
+
+* **TDP-1935:** Recommended Articles ([#2971](https://github.com/newsuk/times-components/issues/2971)) ([d3c873e](https://github.com/newsuk/times-components/commit/d3c873e4c13b030159ef4caa78740206fa8f6f98))
+
+
+
+
+
+# [1.37.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.36.3...@times-components/ts-components@1.37.0) (2022-06-08)
+
+
+### Features
+
+* **TDP-1935:** Recommended articles ([#2969](https://github.com/newsuk/times-components/issues/2969)) ([9b6b9b0](https://github.com/newsuk/times-components/commit/9b6b9b09c918433ad5b2945d5fe2fc4c13002c13))
+
+
+
+
+
+## [1.36.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.36.2...@times-components/ts-components@1.36.3) (2022-06-07)
+
+
+### Bug Fixes
+
+* **TDP-1825:** timezone tests ([#2968](https://github.com/newsuk/times-components/issues/2968)) ([bb09b71](https://github.com/newsuk/times-components/commit/bb09b713793c254cfc7e3ff9c69592060097baf4))
+
+
+
+
+
+## [1.36.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.36.1...@times-components/ts-components@1.36.2) (2022-06-07)
+
+
+### Bug Fixes
+
+* **TDP-1825:** Live News: Update Timestamp Logic ([#2958](https://github.com/newsuk/times-components/issues/2958)) ([df2b594](https://github.com/newsuk/times-components/commit/df2b59401188d08389719f7aec75b4deebe530d8))
+
+
+
+
+
 ## [1.36.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.36.0...@times-components/ts-components@1.36.1) (2022-05-26)
 
 

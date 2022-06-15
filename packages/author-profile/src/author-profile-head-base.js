@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { Animations } from "@times-components/ts-styleguide";
 import AuthorProfileHeadLoading from "./author-profile-head-loading";
@@ -42,17 +42,13 @@ const AuthorProfileHeadBase = memo(
 
     return (
       <Animations.FadeIn style={{ width: "100%" }}>
-        <View
-          pointerEvents="box-none"
-          style={styles.authorHeadWrapper}
-          testID="author-head"
-        >
+        <TcView style={styles.authorHeadWrapper} data-testid="author-head">
           {renderImage()}
           {renderName()}
           {renderJobTitle()}
           {renderTwitterLink()}
           {renderBiography()}
-        </View>
+        </TcView>
       </Animations.FadeIn>
     );
   }

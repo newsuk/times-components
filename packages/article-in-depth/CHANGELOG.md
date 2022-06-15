@@ -3,6 +3,111 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.52.3](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.52.2...@times-components/article-in-depth@3.52.3) (2022-06-14)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.52.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.52.1...@times-components/article-in-depth@3.52.2) (2022-06-13)
+
+
+### Bug Fixes
+
+* **TDP-2011:** Lead asset src set ([#2959](https://github.com/newsuk/times-components/issues/2959)) ([2f9c166](https://github.com/newsuk/times-components/commit/2f9c166f675e06540c7960d4038311e91ef3a58d))
+
+
+
+
+
+## [3.52.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.52.0...@times-components/article-in-depth@3.52.1) (2022-06-10)
+
+
+### Bug Fixes
+
+* **TDP-2101:** remove articleSection "article" and "current edition" prefix ([#2980](https://github.com/newsuk/times-components/issues/2980)) ([681ac9c](https://github.com/newsuk/times-components/commit/681ac9cf15647d4840c3f2f7ae4f509370075ba8))
+
+
+
+
+
+# [3.52.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.51.9...@times-components/article-in-depth@3.52.0) (2022-06-09)
+
+
+### Features
+
+* **TDP-1709:** removed react native from caption ([#2979](https://github.com/newsuk/times-components/issues/2979)) ([79de2a5](https://github.com/newsuk/times-components/commit/79de2a50be4fe2246b069a6aae6eca53e8fbb43c))
+
+
+
+
+
+## [3.51.9](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.51.8...@times-components/article-in-depth@3.51.9) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.51.8](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.51.7...@times-components/article-in-depth@3.51.8) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.51.7](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.51.6...@times-components/article-in-depth@3.51.7) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.51.6](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.51.5...@times-components/article-in-depth@3.51.6) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.51.5](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.51.4...@times-components/article-in-depth@3.51.5) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.51.4](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.51.3...@times-components/article-in-depth@3.51.4) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.51.3](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.51.2...@times-components/article-in-depth@3.51.3) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.51.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.51.1...@times-components/article-in-depth@3.51.2) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
 ## [3.51.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.51.0...@times-components/article-in-depth@3.51.1) (2022-06-06)
 
 **Note:** Version bump only for package @times-components/article-in-depth

@@ -3,6 +3,111 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.50.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.50.2...@times-components/article-magazine-standard@3.50.3) (2022-06-14)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.50.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.50.1...@times-components/article-magazine-standard@3.50.2) (2022-06-13)
+
+
+### Bug Fixes
+
+* **TDP-2011:** Lead asset src set ([#2959](https://github.com/newsuk/times-components/issues/2959)) ([2f9c166](https://github.com/newsuk/times-components/commit/2f9c166f675e06540c7960d4038311e91ef3a58d))
+
+
+
+
+
+## [3.50.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.50.0...@times-components/article-magazine-standard@3.50.1) (2022-06-10)
+
+
+### Bug Fixes
+
+* **TDP-2101:** remove articleSection "article" and "current edition" prefix ([#2980](https://github.com/newsuk/times-components/issues/2980)) ([681ac9c](https://github.com/newsuk/times-components/commit/681ac9cf15647d4840c3f2f7ae4f509370075ba8))
+
+
+
+
+
+# [3.50.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.49.9...@times-components/article-magazine-standard@3.50.0) (2022-06-10)
+
+
+### Features
+
+* **TDP-1697:** removed reactNative from articleMagazineStandard ([#2981](https://github.com/newsuk/times-components/issues/2981)) ([8f84845](https://github.com/newsuk/times-components/commit/8f84845033e989103f5f5a6367507f2ebe8b5777))
+
+
+
+
+
+## [3.49.9](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.49.8...@times-components/article-magazine-standard@3.49.9) (2022-06-09)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.49.8](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.49.7...@times-components/article-magazine-standard@3.49.8) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.49.7](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.49.6...@times-components/article-magazine-standard@3.49.7) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.49.6](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.49.5...@times-components/article-magazine-standard@3.49.6) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.49.5](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.49.4...@times-components/article-magazine-standard@3.49.5) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.49.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.49.3...@times-components/article-magazine-standard@3.49.4) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.49.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.49.2...@times-components/article-magazine-standard@3.49.3) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.49.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.49.1...@times-components/article-magazine-standard@3.49.2) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
 ## [3.49.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.49.0...@times-components/article-magazine-standard@3.49.1) (2022-06-06)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard

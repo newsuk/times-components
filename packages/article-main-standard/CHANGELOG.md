@@ -3,6 +3,122 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.56.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.56.2...@times-components/article-main-standard@3.56.3) (2022-06-14)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.56.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.56.1...@times-components/article-main-standard@3.56.2) (2022-06-13)
+
+
+### Bug Fixes
+
+* **TDP-2011:** Lead asset src set ([#2959](https://github.com/newsuk/times-components/issues/2959)) ([2f9c166](https://github.com/newsuk/times-components/commit/2f9c166f675e06540c7960d4038311e91ef3a58d))
+
+
+
+
+
+## [3.56.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.56.0...@times-components/article-main-standard@3.56.1) (2022-06-10)
+
+
+### Bug Fixes
+
+* **TDP-2101:** remove articleSection "article" and "current edition" prefix ([#2980](https://github.com/newsuk/times-components/issues/2980)) ([681ac9c](https://github.com/newsuk/times-components/commit/681ac9cf15647d4840c3f2f7ae4f509370075ba8))
+
+
+
+
+
+# [3.56.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.55.6...@times-components/article-main-standard@3.56.0) (2022-06-09)
+
+
+### Features
+
+* **TDP-1709:** removed react native from caption ([#2979](https://github.com/newsuk/times-components/issues/2979)) ([79de2a5](https://github.com/newsuk/times-components/commit/79de2a50be4fe2246b069a6aae6eca53e8fbb43c))
+
+
+
+
+
+## [3.55.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.55.5...@times-components/article-main-standard@3.55.6) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.55.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.55.4...@times-components/article-main-standard@3.55.5) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.55.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.55.3...@times-components/article-main-standard@3.55.4) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.55.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.55.2...@times-components/article-main-standard@3.55.3) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.55.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.55.1...@times-components/article-main-standard@3.55.2) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.55.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.55.0...@times-components/article-main-standard@3.55.1) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.55.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.54.3...@times-components/article-main-standard@3.55.0) (2022-06-07)
+
+
+### Features
+
+* **TDP-1416:** removed react native from article main standard ([#2966](https://github.com/newsuk/times-components/issues/2966)) ([4a2fba7](https://github.com/newsuk/times-components/commit/4a2fba79a1b3f0a9faa9e7a9477f6deb78aed158))
+
+
+
+
+
+## [3.54.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.54.2...@times-components/article-main-standard@3.54.3) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.54.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.54.1...@times-components/article-main-standard@3.54.2) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
 ## [3.54.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.54.0...@times-components/article-main-standard@3.54.1) (2022-06-06)
 
 **Note:** Version bump only for package @times-components/article-main-standard

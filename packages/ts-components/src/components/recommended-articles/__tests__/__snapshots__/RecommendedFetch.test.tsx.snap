@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RecommendedFetch> should render correctly 1`] = `
+<DocumentFragment>
+  <div>
+    FetchProvider
+    <div>
+      RecommendedArticles
+    </div>
+  </div>
+</DocumentFragment>
+`;

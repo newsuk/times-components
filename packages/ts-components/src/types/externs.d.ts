@@ -180,19 +180,12 @@ declare module '@times-components/provider' {
     ssr: boolean;
     debounceTimeMs: number;
   }>;
-  export const GetRecommendedArticles: React.FC<{
-    publisher: string;
-    recomArgs: any;
-    ssr: boolean;
-    debounceTimeMs: number;
-  }>;
 }
 
 declare module '@times-components/provider-queries' {
   import { DocumentNode } from 'graphql';
   export const getNewsletter: DocumentNode;
   export const subscribeNewsletter: DocumentNode;
-  export const recommendations: DocumentNode;
 }
 
 declare module '@times-components/provider-test-tools' {
@@ -214,9 +207,10 @@ declare module '@times-components/related-articles' {
   import { FC } from 'react';
   type RelatedArticles = {
     heading?: string;
-    analyticsStream: AnalyticsStreamType;
-    isVisible: boolean;
     slice: any;
+    isVisible: boolean;
+    onPress?: any;
+    analyticsStream: AnalyticsStreamType;
   };
   const RelatedArticles: FC<RelatedArticles>;
   export default RelatedArticles;

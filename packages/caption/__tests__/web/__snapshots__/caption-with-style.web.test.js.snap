@@ -2,50 +2,41 @@
 
 exports[`1. caption with container and text styles 1`] = `
 <style>
-.S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
-  line-height: 17px;
-}
-
-.S2 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 9px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: 17px;
-}
-
-.S3 {
-  padding-top: 10px;
-}
-
 .IS1 {
-  color: rgba(0,128,0,1.00);
+  color: green;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13;
+  line-height: 17px;
 }
 
 .IS2 {
-  color: rgba(0,128,0,1.00);
+  color: green;
+  font-family: GillSansMTStd-Medium;
+  font-size: 9;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 1;
 }
 
 .IS3 {
-  background-color: rgba(255,0,0,1.00);
+  padding-top: 10px;
+  background-color: red;
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-paddingTop-m611by IS3 S3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
   >
     <div
-      className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 IS1 S1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
     >
       Some caption text goes in here
     </div>
     <div
-      className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0 IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
     >
       JUST CREDITS
     </div>
@@ -55,50 +46,41 @@ exports[`1. caption with container and text styles 1`] = `
 
 exports[`2. caption with container, caption, and credit styles 1`] = `
 <style>
-.S1 {
-  font-family: GillSansMTStd-Medium;
-  line-height: 17px;
-}
-
-.S2 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: 17px;
-}
-
-.S3 {
-  padding-top: 10px;
-}
-
 .IS1 {
-  color: rgba(0,128,0,1.00);
-  font-size: 10px;
+  color: green;
+  font-family: GillSansMTStd-Medium;
+  font-size: 10;
+  line-height: 17px;
 }
 
 .IS2 {
-  color: rgba(0,128,0,1.00);
-  font-size: 8px;
+  color: green;
+  font-family: GillSansMTStd-Medium;
+  font-size: 8;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 1;
 }
 
 .IS3 {
-  background-color: rgba(255,0,0,1.00);
+  padding-top: 10px;
+  background-color: red;
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-paddingTop-m611by IS3 S3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
   >
     <div
-      className="css-text-901oao r-fontFamily-j2s0nr r-lineHeight-5fcqz0 IS1 S1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
     >
       Some caption text goes in here
     </div>
     <div
-      className="css-text-901oao r-fontFamily-j2s0nr r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0 IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
     >
       JUST CREDITS
     </div>
@@ -108,44 +90,41 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
 
 exports[`3. caption with only container styles 1`] = `
 <style>
-.S1 {
-  color: rgba(105,105,105,1.00);
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
-  line-height: 17px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: GillSansMTStd-Medium;
-  font-size: 9px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: 17px;
-}
-
-.S3 {
-  padding-top: 10px;
-}
-
 .IS1 {
-  background-color: rgba(0,0,255,1.00);
+  color: #696969;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13;
+  line-height: 17px;
+}
+
+.IS2 {
+  color: #333333;
+  font-family: GillSansMTStd-Medium;
+  font-size: 9;
+  line-height: 17px;
+  font-weight: 400;
+  letter-spacing: 1;
+}
+
+.IS3 {
+  padding-top: 10px;
+  background-color: blue;
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-paddingTop-m611by IS1 S3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
   >
     <div
-      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
     >
       Some caption text goes in here
     </div>
     <div
-      className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
     >
       JUST CREDITS
     </div>

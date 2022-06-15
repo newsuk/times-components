@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.18.37](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.18.36...@times-components/article-summary@3.18.37) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.18.36](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.18.35...@times-components/article-summary@3.18.36) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.18.35](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.18.34...@times-components/article-summary@3.18.35) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.18.34](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.18.33...@times-components/article-summary@3.18.34) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.18.33](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.18.32...@times-components/article-summary@3.18.33) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.18.32](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.18.31...@times-components/article-summary@3.18.32) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.18.31](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.18.30...@times-components/article-summary@3.18.31) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
 ## [3.18.30](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.18.29...@times-components/article-summary@3.18.30) (2022-05-26)
 
 **Note:** Version bump only for package @times-components/article-summary

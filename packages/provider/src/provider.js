@@ -10,6 +10,5 @@ export EditionProvider from "./edition";
 export TopicProvider from "./topic";
 export TopicArticlesProvider from "./topic-articles";
 export DraftArticleProvider from "./draft-article";
-export GetRecommendedArticles from "./recommended-articles";
 
 export default from "./connect";
