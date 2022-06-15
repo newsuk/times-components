@@ -65,12 +65,13 @@ exports[`<LatestFromSection> renders  1`] = `
                   class="css-view-1dbjc4n"
                 >
                   <div
-                    class="css-view-1dbjc4n"
+                    class="tc-view__TcView-nuazoi-0 fPjBcr"
+                    data-adam-test="item2"
                     style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
                   >
                     <div
-                      class="imageContainerClass imageContainerClass css-view-1dbjc4n"
-                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                      class="imageContainerClass tc-view__TcView-nuazoi-0 fPjBcr"
+                      data-adam-test="item1"
                     >
                       <div
                         class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -112,8 +113,8 @@ exports[`<LatestFromSection> renders  1`] = `
                       </div>
                     </div>
                     <div
-                      class="contentContainerClass contentContainerClass css-view-1dbjc4n"
-                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                      class="tc-view__TcView-nuazoi-0 contentContainerClass card-content__TcCardContainer-sc-1w0wvq8-0 hzpWKJ"
+                      data-adam-test="item3"
                     >
                       <div
                         class="css-view-1dbjc4n"
@@ -212,12 +213,13 @@ exports[`<LatestFromSection> renders  1`] = `
                   class="css-view-1dbjc4n"
                 >
                   <div
-                    class="css-view-1dbjc4n"
+                    class="tc-view__TcView-nuazoi-0 fPjBcr"
+                    data-adam-test="item2"
                     style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
                   >
                     <div
-                      class="imageContainerClass imageContainerClass css-view-1dbjc4n"
-                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                      class="imageContainerClass tc-view__TcView-nuazoi-0 fPjBcr"
+                      data-adam-test="item1"
                     >
                       <div
                         class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -259,8 +261,8 @@ exports[`<LatestFromSection> renders  1`] = `
                       </div>
                     </div>
                     <div
-                      class="contentContainerClass contentContainerClass css-view-1dbjc4n"
-                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                      class="tc-view__TcView-nuazoi-0 contentContainerClass card-content__TcCardContainer-sc-1w0wvq8-0 hzpWKJ"
+                      data-adam-test="item3"
                     >
                       <div
                         class="css-view-1dbjc4n"
@@ -359,12 +361,13 @@ exports[`<LatestFromSection> renders  1`] = `
                   class="css-view-1dbjc4n"
                 >
                   <div
-                    class="css-view-1dbjc4n"
+                    class="tc-view__TcView-nuazoi-0 fPjBcr"
+                    data-adam-test="item2"
                     style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
                   >
                     <div
-                      class="imageContainerClass imageContainerClass css-view-1dbjc4n"
-                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                      class="imageContainerClass tc-view__TcView-nuazoi-0 fPjBcr"
+                      data-adam-test="item1"
                     >
                       <div
                         class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -406,8 +409,8 @@ exports[`<LatestFromSection> renders  1`] = `
                       </div>
                     </div>
                     <div
-                      class="contentContainerClass contentContainerClass css-view-1dbjc4n"
-                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                      class="tc-view__TcView-nuazoi-0 contentContainerClass card-content__TcCardContainer-sc-1w0wvq8-0 hzpWKJ"
+                      data-adam-test="item3"
                     >
                       <div
                         class="css-view-1dbjc4n"
