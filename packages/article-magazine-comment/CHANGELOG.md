@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.51.14](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.13...@times-components/article-magazine-comment@3.51.14) (2022-06-14)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.51.13](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.12...@times-components/article-magazine-comment@3.51.13) (2022-06-14)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.51.12](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.11...@times-components/article-magazine-comment@3.51.12) (2022-06-13)
+
+
+### Bug Fixes
+
+* **TDP-2011:** Lead asset src set ([#2959](https://github.com/newsuk/times-components/issues/2959)) ([2f9c166](https://github.com/newsuk/times-components/commit/2f9c166f675e06540c7960d4038311e91ef3a58d))
+
+
+
+
+
+## [3.51.11](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.10...@times-components/article-magazine-comment@3.51.11) (2022-06-10)
+
+
+### Bug Fixes
+
+* **TDP-2101:** remove articleSection "article" and "current edition" prefix ([#2980](https://github.com/newsuk/times-components/issues/2980)) ([681ac9c](https://github.com/newsuk/times-components/commit/681ac9cf15647d4840c3f2f7ae4f509370075ba8))
+
+
+
+
+
 ## [3.51.10](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.51.9...@times-components/article-magazine-comment@3.51.10) (2022-06-09)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

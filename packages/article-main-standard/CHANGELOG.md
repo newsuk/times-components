@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.56.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.56.3...@times-components/article-main-standard@3.56.4) (2022-06-14)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.56.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.56.2...@times-components/article-main-standard@3.56.3) (2022-06-14)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.56.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.56.1...@times-components/article-main-standard@3.56.2) (2022-06-13)
+
+
+### Bug Fixes
+
+* **TDP-2011:** Lead asset src set ([#2959](https://github.com/newsuk/times-components/issues/2959)) ([2f9c166](https://github.com/newsuk/times-components/commit/2f9c166f675e06540c7960d4038311e91ef3a58d))
+
+
+
+
+
+## [3.56.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.56.0...@times-components/article-main-standard@3.56.1) (2022-06-10)
+
+
+### Bug Fixes
+
+* **TDP-2101:** remove articleSection "article" and "current edition" prefix ([#2980](https://github.com/newsuk/times-components/issues/2980)) ([681ac9c](https://github.com/newsuk/times-components/commit/681ac9cf15647d4840c3f2f7ae4f509370075ba8))
+
+
+
+
+
 # [3.56.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.55.6...@times-components/article-main-standard@3.56.0) (2022-06-09)
 
 
