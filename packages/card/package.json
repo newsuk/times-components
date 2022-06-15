@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "6.5.23",
+  "version": "6.6.0",
   "main": "dist/card",
   "dev": "src/card",
   "scripts": {

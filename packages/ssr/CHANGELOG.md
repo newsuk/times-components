@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.33.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.32.19...@times-components/ssr@2.33.0) (2022-06-15)
+
+
+### Features
+
+* **TDP-1710:** remove react native from card ([#2987](https://github.com/newsuk/times-components/issues/2987)) ([c15a39c](https://github.com/newsuk/times-components/commit/c15a39cd20952fca8fad4dc92ccf200a9cba604d))
+
+
+
+
+
 ## [2.32.19](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.32.18...@times-components/ssr@2.32.19) (2022-06-14)
 
 **Note:** Version bump only for package @times-components/ssr
