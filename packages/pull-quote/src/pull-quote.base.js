@@ -1,10 +1,15 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import PullQuoteContent from "./pull-quote-content";
 import PullQuoteTwitterLink from "./pull-quote-twitter-link";
 import { propTypes, defaultProps } from "./pull-quote-prop-types";
 import styles from "./styles";
 import quoteStyleFactory from "./styles/quotes";
+
+const quoteStyle = (font, quoteColour) => ({
+  ...quoteStyleFactory(font),
+  color: quoteColour
+});
 
 const PullQuotes = ({
   caption,
@@ -15,20 +20,20 @@ const PullQuotes = ({
   text,
   twitter
 }) => (
-  <View style={styles.container}>
-    <Text style={[quoteStyleFactory(font), { color: quoteColour }]}>
-      &ldquo;
-    </Text>
+  <TcView style={styles.container}>
+    <TcText style={quoteStyle(font, quoteColour)}>&ldquo;</TcText>
     <PullQuoteContent>{children}</PullQuoteContent>
-    <View style={styles.captionContainer}>
-      <Text style={[styles.caption]}>{caption}</Text>
-      <Text style={styles.text}>{caption && text ? `, ${text}` : text}</Text>
+    <TcView style={styles.captionContainer}>
+      <TcText style={checkStylesForUnits(styles.caption)}>{caption}</TcText>
+      <TcText style={checkStylesForUnits(styles.text)}>
+        {caption && text ? `, ${text}` : text}
+      </TcText>
       <PullQuoteTwitterLink
         onTwitterLinkPress={onTwitterLinkPress}
         twitter={twitter}
       />
-    </View>
-  </View>
+    </TcView>
+  </TcView>
 );
 
 PullQuotes.propTypes = propTypes;

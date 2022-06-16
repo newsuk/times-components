@@ -1,4 +1,4 @@
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import styled from "styled-components";
 import {
   breakpoints,
@@ -7,7 +7,7 @@ import {
   fontSizes
 } from "@times-components/ts-styleguide";
 
-const PullQuoteContent = styled(Text)`
+const PullQuoteContent = styled(TcText)`
   color: ${colours.functional.primary};
   font-family: "${fonts.headlineRegular}";
   font-size: ${fontSizes.pageComponentHeadline}px;
