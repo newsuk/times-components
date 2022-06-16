@@ -21,7 +21,8 @@ describe('<RecommendedFetch>', () => {
     const { asFragment, getByText } = render(
       <RecommendedFetch
         articleId="1234"
-        section="News"
+        articleHeadline="Some headline"
+        articleSection="News"
         analyticsStream={() => ({})}
       />
     );

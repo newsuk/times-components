@@ -2,17 +2,12 @@ import React from 'react';
 
 import { showcaseConverter } from '@times-components/storybook';
 
+import { getArticles } from './helpers';
 import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import previewData from '../../fixtures/preview-data/recommended-articles';
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
 import { RecommendedArticles } from './RecommendedArticles';
-
-export const getArticles = (data: any, numOfArticles: number) => ({
-  recommendations: {
-    articles: data.recommendations.articles.slice(0, numOfArticles)
-  }
-});
 
 const recommArticles = {
   children: [
@@ -20,7 +15,7 @@ const recommArticles = {
       component: () => (
         <FetchProvider previewData={getArticles(previewData, 1)}>
           <RecommendedArticles
-            section="News"
+            heading="Today's news"
             isVisible
             analyticsStream={analyticsStream}
           />
@@ -34,7 +29,7 @@ const recommArticles = {
       component: () => (
         <FetchProvider previewData={getArticles(previewData, 2)}>
           <RecommendedArticles
-            section="Business"
+            heading="Today's business"
             isVisible
             analyticsStream={analyticsStream}
           />
@@ -48,7 +43,7 @@ const recommArticles = {
       component: () => (
         <FetchProvider previewData={previewData}>
           <RecommendedArticles
-            section="Sport"
+            heading="Today's sport"
             isVisible
             analyticsStream={analyticsStream}
           />
