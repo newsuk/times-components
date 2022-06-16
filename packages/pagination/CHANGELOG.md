@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.7.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.6.5...@times-components/pagination@3.7.0) (2022-06-16)
+
+
+### Features
+
+* **TDP-1706:** removed react native from pagination ([#2988](https://github.com/newsuk/times-components/issues/2988)) ([af48092](https://github.com/newsuk/times-components/commit/af48092798154b8846aca2fa39b168dcfcc440a8))
+
+
+
+
+
 ## [3.6.5](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.6.4...@times-components/pagination@3.6.5) (2022-05-16)
 
 **Note:** Version bump only for package @times-components/pagination
