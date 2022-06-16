@@ -1,11 +1,9 @@
-import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
   flattenStyleTransform,
   hoistStyleTransform,
   minimalWebTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
@@ -20,32 +18,13 @@ jest.mock("@times-components/icons", () => ({
 }));
 
 export default () => {
-  const styles = [
-    "alignItems",
-    "borderLeftWidth",
-    "borderLeftColor",
-    "color",
-    "display",
-    "flexDirection",
-    "fontFamily",
-    "fontSize",
-    "height",
-    "lineHeight",
-    "marginBottom",
-    "marginLeft",
-    "marginTop",
-    "paddingLeft",
-    "textDecorationLine"
-  ];
-
   addSerializers(
     expect,
     compose(
       stylePrinter,
       minimalWebTransform,
       flattenStyleTransform,
-      hoistStyleTransform,
-      rnwTransform(AppRegistry, styles)
+      hoistStyleTransform
     )
   );
 
