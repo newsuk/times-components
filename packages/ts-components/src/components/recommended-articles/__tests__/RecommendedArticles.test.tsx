@@ -39,12 +39,12 @@ const initialContext = {
   object: 'RecommendedArticles',
   attrs: {
     event_navigation_action: 'navigation',
-    event_navigation_name: `today's section : ${section}`,
+    event_navigation_name: 'widget : relevant article',
     event_navigation_browsing_method: 'click',
     section_details: `section : ${section}`,
     article_name: 'Headline',
     widget_headline: heading.toLowerCase(),
-    widget_section: 'Headline',
+    widget_section: section,
     widget_type: "today's section"
   }
 };
@@ -104,10 +104,7 @@ describe('<RecommendedArticles>', () => {
     });
 
     const { asFragment, getByText } = render(
-      <RecommendedArticles
-        heading={heading}
-        analyticsStream={() => ({})}
-      />
+      <RecommendedArticles heading={heading} analyticsStream={() => ({})} />
     );
 
     expect(getByText(heading));
@@ -156,8 +153,8 @@ describe('<RecommendedArticles>', () => {
 
     expect(analyticsStream).toHaveBeenCalledTimes(1);
     expect(analyticsStream).toHaveBeenCalledWith({
-      action: "Clicked",
-      object: "RecommendedArticles",
+      action: 'Clicked',
+      object: 'RecommendedArticles',
       attrs: {
         ...initialContext.attrs,
         eventTime: '2021-05-03T00:00:00.000Z',
