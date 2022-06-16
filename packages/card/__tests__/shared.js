@@ -1,4 +1,3 @@
-import { AppRegistry } from "react-native-web";
 import { mount } from "enzyme";
 import {
   addSerializers,
@@ -10,8 +9,7 @@ import {
   minimalWebTransform,
   print,
   propsNoChildren,
-  replaceTransform,
-  rnwTransform
+  replaceTransform
 } from "@times-components/jest-serializer";
 import shared from "./shared.base";
 
@@ -32,8 +30,7 @@ export default () => {
         Loading: justChildren,
         TimesImage: propsNoChildren,
         ...meltNative
-      }),
-      rnwTransform(AppRegistry)
+      })
     )
   );
 
