@@ -58,8 +58,7 @@
     "transformIgnorePatterns": [
       "node_modules/(?!react-native|react-native-svg|@times-components)",
       "packages/?!author-profile"
-    ],
-    "globalSetup": "./global-setup.js"
+    ]
   },
   "config": {
     "commitizen": {
@@ -149,7 +148,6 @@
     "react-native-device-info": "5.3.1",
     "react-native-showcase-loader": "1.1.0",
     "react-native-svg": "9.11.1",
-    "react-native-webview": "11.0.0",
-    "timezone-mock": "1.3.2"
+    "react-native-webview": "11.0.0"
   }
 }
