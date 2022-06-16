@@ -1,10 +1,10 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { breakpoints, spacing } from "@times-components/ts-styleguide";
 
-const ContainerWithResults = styled(View)`
+const ContainerWithResults = styled(TcView)`
   align-items: stretch;
   flex-direction: column;
 
@@ -13,7 +13,7 @@ const ContainerWithResults = styled(View)`
   }
 `;
 
-const ContainerWithoutResults = styled(View)`
+const ContainerWithoutResults = styled(TcView)`
   align-items: stretch;
   flex-direction: column;
 `;

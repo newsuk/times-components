@@ -1,11 +1,11 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { breakpoints } from "@times-components/ts-styleguide";
 import ResultsMessage from "./results-message";
 
-const MessageContainer = styled(View)`
+const MessageContainer = styled(TcView)`
   align-items: center;
   flex-direction: row;
   justify-content: center;

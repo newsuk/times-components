@@ -1,5 +1,4 @@
 import React from "react";
-import { StyleSheet } from "react-native";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
 import { withTrackEvents } from "@times-components/tracking";
@@ -11,7 +10,7 @@ import PaginationBorder from "./pagination-border";
 import PaginationContainer from "./pagination-container";
 import LinkContainer from "./styles/responsive";
 
-const styles = StyleSheet.create({
+const styles = {
   arrow: {
     color: colours.functional.action,
     ...fontFactory({
@@ -19,7 +18,7 @@ const styles = StyleSheet.create({
       fontSize: "meta"
     })
   }
-});
+};
 
 const Pagination = ({
   count,

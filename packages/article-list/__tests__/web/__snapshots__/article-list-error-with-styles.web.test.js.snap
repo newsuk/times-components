@@ -267,6 +267,18 @@ exports[`2. article list 1`] = `
   z-index: 0;
 }
 
+.c4 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
 .c1 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -289,6 +301,21 @@ exports[`2. article list 1`] = `
 }
 
 .c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -303,7 +330,22 @@ exports[`2. article list 1`] = `
   height: 50px;
 }
 
-.c4 {
+.c5 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   border-style: solid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -323,7 +365,22 @@ exports[`2. article list 1`] = `
   border-top-width: 1px;
 }
 
-.c7 {
+.c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   border-style: solid;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -344,6 +401,46 @@ exports[`2. article list 1`] = `
 }
 
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
@@ -354,16 +451,21 @@ exports[`2. article list 1`] = `
 }
 
 .c6 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.c5 {
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -390,7 +492,7 @@ exports[`2. article list 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     border-top-width: 0px;
   }
 }
@@ -402,7 +504,7 @@ exports[`2. article list 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     padding-left: 0;
     padding-right: 0;
   }
@@ -410,22 +512,30 @@ exports[`2. article list 1`] = `
 
 <style>
 .IS1 {
+  color: #696969;
+  font-family: GillSansMTStd-Medium;
+  font-size: 15;
+  line-height: 15px;
+  padding-top: 4;
+}
+
+.IS2 {
   max-width: 760;
   flex: 1;
 }
 
-.IS2 {
+.IS3 {
   align-items: stretch;
   flex-direction: row;
   justify-content: center;
 }
 
-.IS3 {
+.IS4 {
   max-width: 760;
   flex: 1;
 }
 
-.IS4 {
+.IS5 {
   align-items: stretch;
   flex-direction: row;
   justify-content: center;
@@ -442,31 +552,31 @@ exports[`2. article list 1`] = `
       className="c1"
     >
       <div
-        className="c0 IS2"
+        className="c0 IS3"
       >
         <div
-          className="c0 IS1"
+          className="c0 IS2"
         >
           <div
-            className="c2 pagination-container__ContainerWithResults-csg9hq-0 c2 css-view-1dbjc4n"
+            className="c2"
           >
             <div
-              className="c3 results__MessageContainer-sc-1f306gs-0 c3 css-view-1dbjc4n"
+              className="c3"
             >
               <div
-                className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-a023e6 r-lineHeight-fxxt2n r-paddingTop-1h8ys4a"
+                className="c4 IS1"
               >
                 Showing 0 - 0 of 0 results
               </div>
             </div>
             <div
-              className="c4 pagination-border__BorderWithResults-zd8d3i-0 c4 css-view-1dbjc4n"
+              className="c5"
             >
               <div
-                className="c5 responsive__LinkContainer-ac98ik-0 c5 css-view-1dbjc4n"
+                className="c6"
               />
               <div
-                className="c5 responsive__LinkContainer-ac98ik-0 c5 css-view-1dbjc4n"
+                className="c6"
               />
             </div>
           </div>
@@ -482,22 +592,22 @@ exports[`2. article list 1`] = `
     </div>
     <div />
     <div
-      className="c0 IS4"
+      className="c0 IS5"
     >
       <div
-        className="c0 IS3"
+        className="c0 IS4"
       >
         <div
-          className="c6 pagination-container__ContainerWithoutResults-csg9hq-1 c6 css-view-1dbjc4n"
+          className="c7"
         >
           <div
-            className="c7 pagination-border__BorderWithoutResults-zd8d3i-1 c7 css-view-1dbjc4n"
+            className="c8"
           >
             <div
-              className="c5 responsive__LinkContainer-ac98ik-0 c5 css-view-1dbjc4n"
+              className="c6"
             />
             <div
-              className="c5 responsive__LinkContainer-ac98ik-0 c5 css-view-1dbjc4n"
+              className="c6"
             />
           </div>
         </div>

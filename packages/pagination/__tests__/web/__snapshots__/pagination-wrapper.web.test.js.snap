@@ -1,18 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. inner component with page 1`] = `
-<div
-  className="css-text-901oao"
->
-  {
+<tc-text__TcText>
+  <div
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  >
+    {
   "page": 1
 }
-</div>
+  </div>
+</tc-text__TcText>
 `;
 
 exports[`does not update the page state when the history changes without a page 1`] = `
 <div
-  className="css-text-901oao"
+  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
 >
   2
 </div>
@@ -20,7 +22,7 @@ exports[`does not update the page state when the history changes without a page 
 
 exports[`updates the page state when the history changes 1`] = `
 <div
-  className="css-text-901oao"
+  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
 >
   4
 </div>

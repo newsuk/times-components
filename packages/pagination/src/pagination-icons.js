@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, StyleSheet } from "react-native";
+import { TcView, TcText, checkStylesForUnits } from "@times-components/utils";
 import Svg, { G, Path } from "@times-components/svgs";
 import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 import PageLabel from "./page-label";
@@ -18,7 +18,7 @@ const container = {
   flexDirection: "row"
 };
 
-const styles = StyleSheet.create({
+const styles = {
   nextContainer: Object.assign(
     {
       paddingBottom: "8px",
@@ -47,13 +47,13 @@ const styles = StyleSheet.create({
     },
     textStyle
   )
-});
+};
 
 export const NextPageIcon = () => (
-  <View style={styles.nextContainer} testID="pagination-button-next">
-    <Text style={styles.nextText}>
+  <TcView style={styles.nextContainer} data-testid="pagination-button-next">
+    <TcText style={checkStylesForUnits(styles.nextText)}>
       <PageLabel direction="Next" />
-    </Text>
+    </TcText>
     <Svg
       aria-label="icon-next-page"
       height={12}
@@ -65,11 +65,14 @@ export const NextPageIcon = () => (
         <Path d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z" />
       </G>
     </Svg>
-  </View>
+  </TcView>
 );
 
 export const PreviousPageIcon = () => (
-  <View style={styles.previousContainer} testID="pagination-button-previous">
+  <TcView
+    style={styles.previousContainer}
+    data-testid="pagination-button-previous"
+  >
     <Svg
       height={12}
       style={{ marginTop: spacing(-0.5) }}
@@ -80,8 +83,8 @@ export const PreviousPageIcon = () => (
         <Path d="M98.2,12l3.8,3.8L69.2,72,102,128.2,98.2,132,42,72Z" />
       </G>
     </Svg>
-    <Text style={styles.previousText}>
+    <TcText style={checkStylesForUnits(styles.previousText)}>
       <PageLabel direction="Previous" />
-    </Text>
-  </View>
+    </TcText>
+  </TcView>
 );
