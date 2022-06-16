@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.83.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.13...@times-components/article-skeleton@1.83.0) (2022-06-16)
+
+
+### Features
+
+* **TDP-1931:** add newsletters to puff ([#2985](https://github.com/newsuk/times-components/issues/2985)) ([e919d43](https://github.com/newsuk/times-components/commit/e919d4302bc01b049021d922846164696d9e8155))
+
+
+
+
+
 ## [1.82.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.12...@times-components/article-skeleton@1.82.13) (2022-06-15)
 
 **Note:** Version bump only for package @times-components/article-skeleton
