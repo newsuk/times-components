@@ -69,7 +69,10 @@ export const NextPageIcon = () => (
 );
 
 export const PreviousPageIcon = () => (
-  <TcView style={styles.previousContainer} data-testid="pagination-button-previous">
+  <TcView
+    style={styles.previousContainer}
+    data-testid="pagination-button-previous"
+  >
     <Svg
       height={12}
       style={{ marginTop: spacing(-0.5) }}
