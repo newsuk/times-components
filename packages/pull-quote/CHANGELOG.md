@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.9.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.23...@times-components/pull-quote@3.9.0) (2022-06-16)
+
+
+### Features
+
+* **TDP-1707:** remove react native from pull quote ([#2989](https://github.com/newsuk/times-components/issues/2989)) ([a0da767](https://github.com/newsuk/times-components/commit/a0da76798cb28f2fbdfc1a5b30e0cda837b03234))
+
+
+
+
+
 ## [3.8.23](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.8.22...@times-components/pull-quote@3.8.23) (2022-05-16)
 
 **Note:** Version bump only for package @times-components/pull-quote
