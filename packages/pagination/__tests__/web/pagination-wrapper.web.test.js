@@ -1,7 +1,7 @@
 /* eslint-env browser */
 
 import React, { Component } from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
 import shared from "../shared";
 import withPageState from "../../src/pagination-wrapper";
@@ -9,7 +9,7 @@ import withPageState from "../../src/pagination-wrapper";
 shared(withPageState);
 
 test("replaces history state when mounted", () => {
-  const TestComponent = () => <Text>Hello world</Text>;
+  const TestComponent = () => <TcText>Hello world</TcText>;
   const PageChanger = withPageState(TestComponent);
 
   const props = {
@@ -65,7 +65,7 @@ test("adds history state when the page changes", () => {
 
 test("updates the page state when the history changes", () => {
   // eslint-disable-next-line
-  const TestComponent = ({ page }) => <Text>{page}</Text>;
+  const TestComponent = ({ page }) => <TcText>{page}</TcText>;
   const PageChanger = withPageState(TestComponent);
 
   const props = {
@@ -88,7 +88,7 @@ test("updates the page state when the history changes", () => {
 
 test("does not update the page state when the history changes without a page", () => {
   // eslint-disable-next-line
-  const TestComponent = ({ page }) => <Text>{page}</Text>;
+  const TestComponent = ({ page }) => <TcText>{page}</TcText>;
   const PageChanger = withPageState(TestComponent);
 
   const props = {
@@ -107,7 +107,7 @@ test("does not update the page state when the history changes without a page", (
 
 test("removes the onpopstate customisation when unmounted", () => {
   // eslint-disable-next-line
-  const TestComponent = ({ page }) => <Text>{page}</Text>;
+  const TestComponent = ({ page }) => <TcText>{page}</TcText>;
   const PageChanger = withPageState(TestComponent);
 
   const props = {

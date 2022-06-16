@@ -5,9 +5,13 @@ exports[`1. renders results, previous and next 1`] = `
   <div>
     <results__MessageContainer>
       <div>
-        <div>
-          Showing 13 - 15 of 20 results
-        </div>
+        <tc-text__TcText
+          testID="results-message"
+        >
+          <div>
+            Showing 13 - 15 of 20 results
+          </div>
+        </tc-text__TcText>
       </div>
     </results__MessageContainer>
     <pagination-border__BorderWithResults>
@@ -24,31 +28,37 @@ exports[`1. renders results, previous and next 1`] = `
                 href="?mock-4"
                 target={null}
               >
-                <div>
-                  <svg
-                    height={12}
-                    viewBox="42 12 60 120"
-                    width={7}
-                  >
-                    <g
-                      fill="#006699"
-                    >
-                      <path
-                        d="8cd5ea7b91eea38d77fd9ad20f3573cb"
-                      />
-                    </g>
-                  </svg>
+                <tc-view__TcView>
                   <div>
-                    <span>
-                      Previous
-                      <page-label__ResponsiveLabel>
-                        <span>
-                           page
-                        </span>
-                      </page-label__ResponsiveLabel>
-                    </span>
+                    <svg
+                      height={12}
+                      viewBox="42 12 60 120"
+                      width={7}
+                    >
+                      <g
+                        fill="#006699"
+                      >
+                        <path
+                          d="8cd5ea7b91eea38d77fd9ad20f3573cb"
+                        />
+                      </g>
+                    </svg>
+                    <tc-text__TcText>
+                      <div>
+                        <tc-text__TcText>
+                          <div>
+                            Previous
+                            <page-label__ResponsiveLabel>
+                              <div>
+                                 page
+                              </div>
+                            </page-label__ResponsiveLabel>
+                          </div>
+                        </tc-text__TcText>
+                      </div>
+                    </tc-text__TcText>
                   </div>
-                </div>
+                </tc-view__TcView>
               </a>
             </link__RespLink>
           </div>
@@ -65,32 +75,38 @@ exports[`1. renders results, previous and next 1`] = `
                 href="?mock-6"
                 target={null}
               >
-                <div>
+                <tc-view__TcView>
                   <div>
-                    <span>
-                      Next
-                      <page-label__ResponsiveLabel>
-                        <span>
-                           page
-                        </span>
-                      </page-label__ResponsiveLabel>
-                    </span>
-                  </div>
-                  <svg
-                    aria-label="icon-next-page"
-                    height={12}
-                    viewBox="42 12 60 120"
-                    width={7}
-                  >
-                    <g
-                      fill="#006699"
+                    <tc-text__TcText>
+                      <div>
+                        <tc-text__TcText>
+                          <div>
+                            Next
+                            <page-label__ResponsiveLabel>
+                              <div>
+                                 page
+                              </div>
+                            </page-label__ResponsiveLabel>
+                          </div>
+                        </tc-text__TcText>
+                      </div>
+                    </tc-text__TcText>
+                    <svg
+                      aria-label="icon-next-page"
+                      height={12}
+                      viewBox="42 12 60 120"
+                      width={7}
                     >
-                      <path
-                        d="9a11f164df72df4cb9ea6a3266824472"
-                      />
-                    </g>
-                  </svg>
-                </div>
+                      <g
+                        fill="#006699"
+                      >
+                        <path
+                          d="9a11f164df72df4cb9ea6a3266824472"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </tc-view__TcView>
               </a>
             </link__RespLink>
           </div>
@@ -118,31 +134,37 @@ exports[`2. renders with no results 1`] = `
                 href="?mock-4"
                 target={null}
               >
-                <div>
-                  <svg
-                    height={12}
-                    viewBox="42 12 60 120"
-                    width={7}
-                  >
-                    <g
-                      fill="#006699"
-                    >
-                      <path
-                        d="8cd5ea7b91eea38d77fd9ad20f3573cb"
-                      />
-                    </g>
-                  </svg>
+                <tc-view__TcView>
                   <div>
-                    <span>
-                      Previous
-                      <page-label__ResponsiveLabel>
-                        <span>
-                           page
-                        </span>
-                      </page-label__ResponsiveLabel>
-                    </span>
+                    <svg
+                      height={12}
+                      viewBox="42 12 60 120"
+                      width={7}
+                    >
+                      <g
+                        fill="#006699"
+                      >
+                        <path
+                          d="8cd5ea7b91eea38d77fd9ad20f3573cb"
+                        />
+                      </g>
+                    </svg>
+                    <tc-text__TcText>
+                      <div>
+                        <tc-text__TcText>
+                          <div>
+                            Previous
+                            <page-label__ResponsiveLabel>
+                              <div>
+                                 page
+                              </div>
+                            </page-label__ResponsiveLabel>
+                          </div>
+                        </tc-text__TcText>
+                      </div>
+                    </tc-text__TcText>
                   </div>
-                </div>
+                </tc-view__TcView>
               </a>
             </link__RespLink>
           </div>
@@ -159,32 +181,38 @@ exports[`2. renders with no results 1`] = `
                 href="?mock-6"
                 target={null}
               >
-                <div>
+                <tc-view__TcView>
                   <div>
-                    <span>
-                      Next
-                      <page-label__ResponsiveLabel>
-                        <span>
-                           page
-                        </span>
-                      </page-label__ResponsiveLabel>
-                    </span>
-                  </div>
-                  <svg
-                    aria-label="icon-next-page"
-                    height={12}
-                    viewBox="42 12 60 120"
-                    width={7}
-                  >
-                    <g
-                      fill="#006699"
+                    <tc-text__TcText>
+                      <div>
+                        <tc-text__TcText>
+                          <div>
+                            Next
+                            <page-label__ResponsiveLabel>
+                              <div>
+                                 page
+                              </div>
+                            </page-label__ResponsiveLabel>
+                          </div>
+                        </tc-text__TcText>
+                      </div>
+                    </tc-text__TcText>
+                    <svg
+                      aria-label="icon-next-page"
+                      height={12}
+                      viewBox="42 12 60 120"
+                      width={7}
                     >
-                      <path
-                        d="9a11f164df72df4cb9ea6a3266824472"
-                      />
-                    </g>
-                  </svg>
-                </div>
+                      <g
+                        fill="#006699"
+                      >
+                        <path
+                          d="9a11f164df72df4cb9ea6a3266824472"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </tc-view__TcView>
               </a>
             </link__RespLink>
           </div>
@@ -200,9 +228,13 @@ exports[`3. does not give a count smaller than a single page 1`] = `
   <div>
     <results__MessageContainer>
       <div>
-        <div>
-          Showing 1 - 20 of 20 results
-        </div>
+        <tc-text__TcText
+          testID="results-message"
+        >
+          <div>
+            Showing 1 - 20 of 20 results
+          </div>
+        </tc-text__TcText>
       </div>
     </results__MessageContainer>
     <pagination-border__BorderWithResults>
@@ -224,9 +256,13 @@ exports[`4. limits the starting result to the total count 1`] = `
   <div>
     <results__MessageContainer>
       <div>
-        <div>
-          Showing 20 - 20 of 20 results
-        </div>
+        <tc-text__TcText
+          testID="results-message"
+        >
+          <div>
+            Showing 20 - 20 of 20 results
+          </div>
+        </tc-text__TcText>
       </div>
     </results__MessageContainer>
     <pagination-border__BorderWithResults>
@@ -243,31 +279,37 @@ exports[`4. limits the starting result to the total count 1`] = `
                 href="?mock-3"
                 target={null}
               >
-                <div>
-                  <svg
-                    height={12}
-                    viewBox="42 12 60 120"
-                    width={7}
-                  >
-                    <g
-                      fill="#006699"
-                    >
-                      <path
-                        d="8cd5ea7b91eea38d77fd9ad20f3573cb"
-                      />
-                    </g>
-                  </svg>
+                <tc-view__TcView>
                   <div>
-                    <span>
-                      Previous
-                      <page-label__ResponsiveLabel>
-                        <span>
-                           page
-                        </span>
-                      </page-label__ResponsiveLabel>
-                    </span>
+                    <svg
+                      height={12}
+                      viewBox="42 12 60 120"
+                      width={7}
+                    >
+                      <g
+                        fill="#006699"
+                      >
+                        <path
+                          d="8cd5ea7b91eea38d77fd9ad20f3573cb"
+                        />
+                      </g>
+                    </svg>
+                    <tc-text__TcText>
+                      <div>
+                        <tc-text__TcText>
+                          <div>
+                            Previous
+                            <page-label__ResponsiveLabel>
+                              <div>
+                                 page
+                              </div>
+                            </page-label__ResponsiveLabel>
+                          </div>
+                        </tc-text__TcText>
+                      </div>
+                    </tc-text__TcText>
                   </div>
-                </div>
+                </tc-view__TcView>
               </a>
             </link__RespLink>
           </div>
@@ -298,31 +340,37 @@ exports[`5. renders previous and not next 1`] = `
                 href="?mock-4"
                 target={null}
               >
-                <div>
-                  <svg
-                    height={12}
-                    viewBox="42 12 60 120"
-                    width={7}
-                  >
-                    <g
-                      fill="#006699"
-                    >
-                      <path
-                        d="8cd5ea7b91eea38d77fd9ad20f3573cb"
-                      />
-                    </g>
-                  </svg>
+                <tc-view__TcView>
                   <div>
-                    <span>
-                      Previous
-                      <page-label__ResponsiveLabel>
-                        <span>
-                           page
-                        </span>
-                      </page-label__ResponsiveLabel>
-                    </span>
+                    <svg
+                      height={12}
+                      viewBox="42 12 60 120"
+                      width={7}
+                    >
+                      <g
+                        fill="#006699"
+                      >
+                        <path
+                          d="8cd5ea7b91eea38d77fd9ad20f3573cb"
+                        />
+                      </g>
+                    </svg>
+                    <tc-text__TcText>
+                      <div>
+                        <tc-text__TcText>
+                          <div>
+                            Previous
+                            <page-label__ResponsiveLabel>
+                              <div>
+                                 page
+                              </div>
+                            </page-label__ResponsiveLabel>
+                          </div>
+                        </tc-text__TcText>
+                      </div>
+                    </tc-text__TcText>
                   </div>
-                </div>
+                </tc-view__TcView>
               </a>
             </link__RespLink>
           </div>
@@ -356,32 +404,38 @@ exports[`6. renders next and not previous 1`] = `
                 href="?mock-2"
                 target={null}
               >
-                <div>
+                <tc-view__TcView>
                   <div>
-                    <span>
-                      Next
-                      <page-label__ResponsiveLabel>
-                        <span>
-                           page
-                        </span>
-                      </page-label__ResponsiveLabel>
-                    </span>
-                  </div>
-                  <svg
-                    aria-label="icon-next-page"
-                    height={12}
-                    viewBox="42 12 60 120"
-                    width={7}
-                  >
-                    <g
-                      fill="#006699"
+                    <tc-text__TcText>
+                      <div>
+                        <tc-text__TcText>
+                          <div>
+                            Next
+                            <page-label__ResponsiveLabel>
+                              <div>
+                                 page
+                              </div>
+                            </page-label__ResponsiveLabel>
+                          </div>
+                        </tc-text__TcText>
+                      </div>
+                    </tc-text__TcText>
+                    <svg
+                      aria-label="icon-next-page"
+                      height={12}
+                      viewBox="42 12 60 120"
+                      width={7}
                     >
-                      <path
-                        d="9a11f164df72df4cb9ea6a3266824472"
-                      />
-                    </g>
-                  </svg>
-                </div>
+                      <g
+                        fill="#006699"
+                      >
+                        <path
+                          d="9a11f164df72df4cb9ea6a3266824472"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                </tc-view__TcView>
               </a>
             </link__RespLink>
           </div>

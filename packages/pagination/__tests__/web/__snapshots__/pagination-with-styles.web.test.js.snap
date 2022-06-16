@@ -1,29 +1,167 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. renders 1`] = `
+<style>
+.IS1 {
+  color: #696969;
+  font-family: GillSansMTStd-Medium;
+  font-size: 15;
+  line-height: 15px;
+  padding-top: 4;
+}
+
+.IS2 {
+  color: #696969;
+  font-family: GillSansMTStd-Medium;
+  font-size: 15;
+  line-height: 15px;
+  padding-top: 4;
+}
+
+.IS3 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS4 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS5 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS6 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS7 {
+  margin-left: 10px;
+  text-align: left;
+  color: #006699;
+  height: 15;
+  font-family: GillSansMTStd-Medium;
+  font-size: 15;
+  line-height: 15px;
+}
+
+.IS8 {
+  margin-left: 10px;
+  text-align: left;
+  color: #006699;
+  height: 15;
+  font-family: GillSansMTStd-Medium;
+  font-size: 15;
+  line-height: 15px;
+}
+
+.IS9 {
+  padding-bottom: 8px;
+  padding-top: 10px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.IS10 {
+  padding-bottom: 8px;
+  padding-top: 10px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.IS11 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS12 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS13 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS14 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS15 {
+  margin-right: 10px;
+  text-align: right;
+  color: #006699;
+  height: 15;
+  font-family: GillSansMTStd-Medium;
+  font-size: 15;
+  line-height: 15px;
+}
+
+.IS16 {
+  margin-right: 10px;
+  text-align: right;
+  color: #006699;
+  height: 15;
+  font-family: GillSansMTStd-Medium;
+  font-size: 15;
+  line-height: 15px;
+}
+
+.IS17 {
+  padding-bottom: 8px;
+  padding-top: 10px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.IS18 {
+  padding-bottom: 8px;
+  padding-top: 10px;
+  align-items: center;
+  flex-direction: row;
+}
+</style>
+
 <pagination-container__ContainerWithResults>
   <div
-    className="pagination-container__ContainerWithResults-csg9hq-0 htyzlT pagination-container__ContainerWithResults-csg9hq-0 htyzlT css-view-1dbjc4n"
+    className="tc-view__TcView-nuazoi-0 pagination-container__ContainerWithResults-csg9hq-0 kNNFsO"
   >
     <results__MessageContainer>
       <div
-        className="results__MessageContainer-sc-1f306gs-0 eSPXEj results__MessageContainer-sc-1f306gs-0 eSPXEj css-view-1dbjc4n"
+        className="tc-view__TcView-nuazoi-0 results__MessageContainer-sc-1f306gs-0 dzqlQE"
       >
-        <div
-          className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-a023e6 r-lineHeight-fxxt2n r-paddingTop-1h8ys4a"
-          data-testid="results-message"
+        <tc-text__TcText
+          className="IS2"
+          testID="results-message"
         >
-          Showing 4 - 6 of 21 results
-        </div>
+          <div
+            className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
+          >
+            Showing 4 - 6 of 21 results
+          </div>
+        </tc-text__TcText>
       </div>
     </results__MessageContainer>
     <pagination-border__BorderWithResults>
       <div
-        className="pagination-border__BorderWithResults-zd8d3i-0 bpXAGP pagination-border__BorderWithResults-zd8d3i-0 bpXAGP css-view-1dbjc4n"
+        className="tc-view__TcView-nuazoi-0 pagination-border__BorderWithResults-zd8d3i-0 eiUfKB"
       >
         <responsive__LinkContainer>
           <div
-            className="responsive__LinkContainer-ac98ik-0 dVQIWv responsive__LinkContainer-ac98ik-0 dVQIWv css-view-1dbjc4n"
+            className="tc-view__TcView-nuazoi-0 responsive__LinkContainer-ac98ik-0 joNgS"
           >
             <link__RespLink
               href="?mock-1"
@@ -36,34 +174,49 @@ exports[`1. renders 1`] = `
                 href="?mock-1"
                 target={null}
               >
-                <div
-                  className="css-view-1dbjc4n r-alignItems-1awozwy r-flexDirection-18u37iz r-paddingBottom-xd6kpl r-paddingTop-m611by"
+                <tc-view__TcView
+                  className="IS10"
                   data-testid="pagination-button-previous"
                 >
                   <div
-                    className="css-text-901oao r-color-j7kcqb r-fontFamily-j2s0nr r-fontSize-a023e6 r-height-14g73ha r-lineHeight-fxxt2n r-marginLeft-1n0xq6e r-textAlign-fdjqy7"
+                    className="tc-view__TcView-nuazoi-0 fPjBcr IS9"
+                    data-testid="pagination-button-previous"
                   >
-                    <span
-                      className="css-text-901oao css-textHasAncestor-16my406"
+                    <tc-text__TcText
+                      className="IS8"
                     >
-                      Previous
-                      <page-label__ResponsiveLabel>
-                        <span
-                          className="page-label__ResponsiveLabel-sc-1m9jh18-0 jmuOnu page-label__ResponsiveLabel-sc-1m9jh18-0 jmuOnu css-text-901oao css-textHasAncestor-16my406"
+                      <div
+                        className="tc-text__TcText-sc-15igzev-0 lhcAkf IS7"
+                      >
+                        <tc-text__TcText
+                          className="IS6"
                         >
-                           page
-                        </span>
-                      </page-label__ResponsiveLabel>
-                    </span>
+                          <div
+                            className="tc-text__TcText-sc-15igzev-0 lhcAkf IS5"
+                          >
+                            Previous
+                            <page-label__ResponsiveLabel
+                              className="IS4"
+                            >
+                              <div
+                                className="tc-text__TcText-sc-15igzev-0 page-label__ResponsiveLabel-sc-1m9jh18-0 fZKlQl IS3"
+                              >
+                                 page
+                              </div>
+                            </page-label__ResponsiveLabel>
+                          </div>
+                        </tc-text__TcText>
+                      </div>
+                    </tc-text__TcText>
                   </div>
-                </div>
+                </tc-view__TcView>
               </a>
             </link__RespLink>
           </div>
         </responsive__LinkContainer>
         <responsive__LinkContainer>
           <div
-            className="responsive__LinkContainer-ac98ik-0 dVQIWv responsive__LinkContainer-ac98ik-0 dVQIWv css-view-1dbjc4n"
+            className="tc-view__TcView-nuazoi-0 responsive__LinkContainer-ac98ik-0 joNgS"
           >
             <link__RespLink
               href="?mock-3"
@@ -76,27 +229,42 @@ exports[`1. renders 1`] = `
                 href="?mock-3"
                 target={null}
               >
-                <div
-                  className="css-view-1dbjc4n r-alignItems-1awozwy r-flexDirection-18u37iz r-paddingBottom-xd6kpl r-paddingTop-m611by"
+                <tc-view__TcView
+                  className="IS18"
                   data-testid="pagination-button-next"
                 >
                   <div
-                    className="css-text-901oao r-color-j7kcqb r-fontFamily-j2s0nr r-fontSize-a023e6 r-height-14g73ha r-lineHeight-fxxt2n r-marginRight-zso239 r-textAlign-1ff274t"
+                    className="tc-view__TcView-nuazoi-0 fPjBcr IS17"
+                    data-testid="pagination-button-next"
                   >
-                    <span
-                      className="css-text-901oao css-textHasAncestor-16my406"
+                    <tc-text__TcText
+                      className="IS16"
                     >
-                      Next
-                      <page-label__ResponsiveLabel>
-                        <span
-                          className="page-label__ResponsiveLabel-sc-1m9jh18-0 jmuOnu page-label__ResponsiveLabel-sc-1m9jh18-0 jmuOnu css-text-901oao css-textHasAncestor-16my406"
+                      <div
+                        className="tc-text__TcText-sc-15igzev-0 lhcAkf IS15"
+                      >
+                        <tc-text__TcText
+                          className="IS14"
                         >
-                           page
-                        </span>
-                      </page-label__ResponsiveLabel>
-                    </span>
+                          <div
+                            className="tc-text__TcText-sc-15igzev-0 lhcAkf IS13"
+                          >
+                            Next
+                            <page-label__ResponsiveLabel
+                              className="IS12"
+                            >
+                              <div
+                                className="tc-text__TcText-sc-15igzev-0 page-label__ResponsiveLabel-sc-1m9jh18-0 fZKlQl IS11"
+                              >
+                                 page
+                              </div>
+                            </page-label__ResponsiveLabel>
+                          </div>
+                        </tc-text__TcText>
+                      </div>
+                    </tc-text__TcText>
                   </div>
-                </div>
+                </tc-view__TcView>
               </a>
             </link__RespLink>
           </div>
@@ -110,20 +278,20 @@ exports[`1. renders 1`] = `
 exports[`2. renders with no results 1`] = `
 <pagination-container__ContainerWithoutResults>
   <div
-    className="pagination-container__ContainerWithoutResults-csg9hq-1 cAVZPi pagination-container__ContainerWithoutResults-csg9hq-1 cAVZPi css-view-1dbjc4n"
+    className="tc-view__TcView-nuazoi-0 pagination-container__ContainerWithoutResults-csg9hq-1 djVJfi"
   >
     <pagination-border__BorderWithoutResults>
       <div
-        className="pagination-border__BorderWithoutResults-zd8d3i-1 gskKll pagination-border__BorderWithoutResults-zd8d3i-1 gskKll css-view-1dbjc4n"
+        className="tc-view__TcView-nuazoi-0 pagination-border__BorderWithoutResults-zd8d3i-1 eVGijm"
       >
         <responsive__LinkContainer>
           <div
-            className="responsive__LinkContainer-ac98ik-0 dVQIWv responsive__LinkContainer-ac98ik-0 dVQIWv css-view-1dbjc4n"
+            className="tc-view__TcView-nuazoi-0 responsive__LinkContainer-ac98ik-0 joNgS"
           />
         </responsive__LinkContainer>
         <responsive__LinkContainer>
           <div
-            className="responsive__LinkContainer-ac98ik-0 dVQIWv responsive__LinkContainer-ac98ik-0 dVQIWv css-view-1dbjc4n"
+            className="tc-view__TcView-nuazoi-0 responsive__LinkContainer-ac98ik-0 joNgS"
           />
         </responsive__LinkContainer>
       </div>

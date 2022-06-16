@@ -1,10 +1,10 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 import { breakpoints, colours } from "@times-components/ts-styleguide";
 
-const BorderWithResults = styled(View)`
+const BorderWithResults = styled(TcView)`
   border-style: solid;
   align-items: center;
   flex-direction: row;
@@ -20,7 +20,7 @@ const BorderWithResults = styled(View)`
   }
 `;
 
-const BorderWithoutResults = styled(View)`
+const BorderWithoutResults = styled(TcView)`
   border-style: solid;
   align-items: center;
   flex-direction: row;
