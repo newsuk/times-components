@@ -47,6 +47,50 @@ const newslettersBySection = [
       imageUri:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5777acf9-363f-4aa3-8176-1ea09cdae7d6.jpg?resize=800"
     })
+  },
+  {
+    section: "money",
+    payload: setNewsletterPayload({
+      code: "TNL-107",
+      headline: "Money newsletter",
+      copy:
+        "We'll send you the latest personal finance and investment news to make your money go further.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffd44b15f-2fb8-4e5d-b409-315648b10646.jpg?resize=800"
+    })
+  },
+  {
+    section: "law",
+    payload: setNewsletterPayload({
+      code: "TNL-121",
+      headline: "The Brief",
+      copy:
+        "A weekly overview of the significant issues in Law, drawing attention to expert analysis and exclusive commentary.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F27a231b4-5658-4852-a603-37c5210a946e.jpg?resize=800"
+    })
+  },
+  {
+    section: "home",
+    payload: setNewsletterPayload({
+      code: "TNL-113",
+      headline: "Property newsletter",
+      copy:
+        "Get expert advice and find out what's really happening in the property market.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F42a688ec-f9ba-4684-90ce-17a9d1c19d8a.jpg?resize=800"
+    })
+  },
+  {
+    section: "bricks & mortar",
+    payload: setNewsletterPayload({
+      code: "TNL-113",
+      headline: "Property newsletter",
+      copy:
+        "Get expert advice and find out what's really happening in the property market.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F42a688ec-f9ba-4684-90ce-17a9d1c19d8a.jpg?resize=800"
+    })
   }
 ];
 
