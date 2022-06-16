@@ -1,15 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<RecommendedArticles> should render RelatedArticles correctly 1`] = `
+exports[`<RecommendedArticles> should render RelatedArticles correctly with 1 article 1`] = `
 <DocumentFragment>
   <div
     id="recommended-articles"
     style="display: block;"
   >
-    <relatedarticles
-      heading="Today's News"
-      slice="[object Object]"
-    />
+    <div>
+      RelatedArticles
+      <div>
+        Today's news
+      </div>
+      <div>
+        Save or splurge: what experts spend their own money on
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<RecommendedArticles> should render RelatedArticles correctly with 2 articles 1`] = `
+<DocumentFragment>
+  <div
+    id="recommended-articles"
+    style="display: none;"
+  >
+    <div>
+      RelatedArticles
+      <div>
+        Today's news
+      </div>
+      <div>
+        Save or splurge: what experts spend their own money on
+      </div>
+      <div>
+        Lieutenant Colonel Ian Crooke
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<RecommendedArticles> should render RelatedArticles correctly with 3 articles 1`] = `
+<DocumentFragment>
+  <div
+    id="recommended-articles"
+    style="display: block;"
+  >
+    <div>
+      RelatedArticles
+      <div>
+        Today's news
+      </div>
+      <div>
+        Save or splurge: what experts spend their own money on
+      </div>
+      <div>
+        Lieutenant Colonel Ian Crooke
+      </div>
+      <div>
+        Is the party over for Johnson?
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;
