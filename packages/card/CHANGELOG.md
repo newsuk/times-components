@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.6.1](https://github.com/newsuk/times-components/compare/@times-components/card@6.6.0...@times-components/card@6.6.1) (2022-06-17)
+
+
+### Bug Fixes
+
+* **TDP-1710:** remove react native from card ([#2990](https://github.com/newsuk/times-components/issues/2990)) ([b85b821](https://github.com/newsuk/times-components/commit/b85b821eab278262e7ee176e7bc467acf412c8c9))
+
+
+
+
+
 # [6.6.0](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.23...@times-components/card@6.6.0) (2022-06-15)
 
 
