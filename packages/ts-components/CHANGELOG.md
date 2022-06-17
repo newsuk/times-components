@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.43.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.42.0...@times-components/ts-components@1.43.0) (2022-06-16)
+
+
+### Features
+
+* **TDP-1967:** recommended articles analytics ([#2983](https://github.com/newsuk/times-components/issues/2983)) ([425ddb1](https://github.com/newsuk/times-components/commit/425ddb11616ea6f0e6a491160cc64a107d6a6323))
+
+
+
+
+
 # [1.42.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.41.1...@times-components/ts-components@1.42.0) (2022-06-15)
 
 
