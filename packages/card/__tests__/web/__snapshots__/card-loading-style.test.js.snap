@@ -141,38 +141,40 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS7 {
+  flex: 1;
+  margin-bottom: 10px;
+  min-width: 100%;
+}
+
+.IS8 {
+  flex: 1;
+  margin-bottom: 10px;
+  min-width: 100%;
+}
+
+.IS9 {
+  flex: 1;
+  margin-bottom: 10px;
+  min-width: 100%;
+}
+
+.IS10 {
   background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
   height: 24px;
   margin-bottom: 10px;
   max-width: 300px;
 }
 
-.IS8 {
-  height: 24;
-  margin-bottom: 10px;
-  max-width: 300;
-}
-
-.IS9 {
-  height: 24;
-  margin-bottom: 10px;
-  max-width: 300;
-}
-
-.IS10 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-  height: 10px;
-  margin-bottom: 10px;
-}
-
 .IS11 {
-  height: 10;
+  height: 24;
   margin-bottom: 10px;
+  max-width: 300;
 }
 
 .IS12 {
-  height: 10;
+  height: 24;
   margin-bottom: 10px;
+  max-width: 300;
 }
 
 .IS13 {
@@ -194,39 +196,55 @@ exports[`1. card loading state 1`] = `
 .IS16 {
   background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
   height: 10px;
-  margin-bottom: 0px;
-  max-width: 240px;
+  margin-bottom: 10px;
 }
 
 .IS17 {
   height: 10;
-  margin-bottom: 0;
-  max-width: 240;
+  margin-bottom: 10px;
 }
 
 .IS18 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS19 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10px;
+  margin-bottom: 0px;
+  max-width: 240px;
+}
+
+.IS20 {
   height: 10;
   margin-bottom: 0;
   max-width: 240;
 }
 
-.IS19 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.IS20 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
 .IS21 {
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS22 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.IS23 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.IS24 {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -293,12 +311,10 @@ exports[`1. card loading state 1`] = `
       className="c0"
     >
       <tc-view__TcView
-        className="IS21"
-        data-adam-test="item2"
+        className="IS24"
       >
         <StyledComponent
-          className="IS20"
-          data-adam-test="item2"
+          className="IS23"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -324,23 +340,13 @@ exports[`1. card loading state 1`] = `
           forwardedRef={null}
         >
           <div
-            className="c1 IS19"
-            data-adam-test="item2"
+            className="c1 IS22"
           >
             <tc-view__TcView
-              className=""
-              data-adam-test="item1"
-              styles={
-                Object {
-                  "flex": 1,
-                  "marginBottom": "10px",
-                  "minWidth": "100%",
-                }
-              }
+              className="IS9"
             >
               <StyledComponent
-                className=""
-                data-adam-test="item1"
+                className="IS8"
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -364,17 +370,9 @@ exports[`1. card loading state 1`] = `
                   }
                 }
                 forwardedRef={null}
-                styles={
-                  Object {
-                    "flex": 1,
-                    "marginBottom": "10px",
-                    "minWidth": "100%",
-                  }
-                }
               >
                 <div
-                  className="c1"
-                  data-adam-test="item1"
+                  className="c1 IS7"
                 >
                   <TimesImage
                     aspectRatio={0.6666666666666666}
@@ -391,7 +389,6 @@ exports[`1. card loading state 1`] = `
             </tc-view__TcView>
             <card-content__TcCardContainer
               className=""
-              data-adam-test="item3"
               styles={
                 Object {
                   "flex": 1,
@@ -403,7 +400,6 @@ exports[`1. card loading state 1`] = `
             >
               <StyledComponent
                 className=""
-                data-adam-test="item3"
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -442,18 +438,11 @@ exports[`1. card loading state 1`] = `
               >
                 <div
                   className="c4"
-                  data-adam-test="item3"
                 >
                   <_default>
                     <Gradient
-                      className="IS9"
-                      degrees={264}
-                      endPoint="1"
-                      startPoint="0"
-                    />
-                    <Gradient
                       className="IS12"
-                      degrees={267}
+                      degrees={264}
                       endPoint="1"
                       startPoint="0"
                     />
@@ -465,6 +454,12 @@ exports[`1. card loading state 1`] = `
                     />
                     <Gradient
                       className="IS18"
+                      degrees={267}
+                      endPoint="1"
+                      startPoint="0"
+                    />
+                    <Gradient
+                      className="IS21"
                       degrees={267}
                       endPoint="1"
                       startPoint="0"
@@ -692,15 +687,24 @@ exports[`2. card with reversed loading state 1`] = `
 }
 
 .IS19 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  height: auto;
+  flex: 1;
+  margin-bottom: 0;
+  min-width: 100%;
 }
 
 .IS20 {
+  flex: 1;
+  margin-bottom: 0;
+  min-width: 100%;
+}
+
+.IS21 {
+  flex: 1;
+  margin-bottom: 0;
+  min-width: 100%;
+}
+
+.IS22 {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -709,7 +713,16 @@ exports[`2. card with reversed loading state 1`] = `
   height: auto;
 }
 
-.IS21 {
+.IS23 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: auto;
+}
+
+.IS24 {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -777,12 +790,10 @@ exports[`2. card with reversed loading state 1`] = `
       className="c0"
     >
       <tc-view__TcView
-        className="IS21"
-        data-adam-test="item2"
+        className="IS24"
       >
         <StyledComponent
-          className="IS20"
-          data-adam-test="item2"
+          className="IS23"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -808,12 +819,10 @@ exports[`2. card with reversed loading state 1`] = `
           forwardedRef={null}
         >
           <div
-            className="c1 IS19"
-            data-adam-test="item2"
+            className="c1 IS22"
           >
             <card-content__TcCardContainer
               className=""
-              data-adam-test="item3"
               styles={
                 Object {
                   "flex": 1,
@@ -825,7 +834,6 @@ exports[`2. card with reversed loading state 1`] = `
             >
               <StyledComponent
                 className=""
-                data-adam-test="item3"
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -864,7 +872,6 @@ exports[`2. card with reversed loading state 1`] = `
               >
                 <div
                   className="c2"
-                  data-adam-test="item3"
                 >
                   <_default>
                     <Gradient
@@ -896,19 +903,10 @@ exports[`2. card with reversed loading state 1`] = `
               </StyledComponent>
             </card-content__TcCardContainer>
             <tc-view__TcView
-              className=""
-              data-adam-test="item1"
-              styles={
-                Object {
-                  "flex": 1,
-                  "marginBottom": 0,
-                  "minWidth": "100%",
-                }
-              }
+              className="IS21"
             >
               <StyledComponent
-                className=""
-                data-adam-test="item1"
+                className="IS20"
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -932,17 +930,9 @@ exports[`2. card with reversed loading state 1`] = `
                   }
                 }
                 forwardedRef={null}
-                styles={
-                  Object {
-                    "flex": 1,
-                    "marginBottom": 0,
-                    "minWidth": "100%",
-                  }
-                }
               >
                 <div
-                  className="c1"
-                  data-adam-test="item1"
+                  className="c1 IS19"
                 >
                   <TimesImage
                     aspectRatio={0.6666666666666666}

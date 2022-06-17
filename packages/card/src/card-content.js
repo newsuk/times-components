@@ -40,6 +40,7 @@ class CardContent extends Component {
       isReversed,
       lowResQuality,
       lowResSize,
+      relatedArticle,
       showImage
     } = this.props;
 
@@ -53,8 +54,7 @@ class CardContent extends Component {
       return (
         <TcView
           className={imageContainerClass}
-          data-adam-test="item1"
-          styles={checkStylesForUnits({
+          style={checkStylesForUnits({
             ...styles.imageContainer,
             ...imageStyle,
             ...(isReversed ? styles.reversedImageContainer : "")
@@ -73,18 +73,20 @@ class CardContent extends Component {
       );
     };
 
+    const cardContainerStyle = relatedArticle
+      ? { ...styles.cardContainer, display: "block" }
+      : styles.cardContainer;
+
     return (
       <TcView
-        data-adam-test="item2"
         style={checkStylesForUnits({
-          ...styles.cardContainer,
+          ...cardContainerStyle,
           ...(isReversed ? styles.reversedCardContainer : "")
         })}
       >
         {!isReversed ? renderImage() : null}
         <TcCardContainer
           className={contentContainerClass}
-          data-adam-test="item3"
           styles={checkStylesForUnits({
             ...styles.contentContainer,
             ...(isReversed ? styles.reversedContentContainer : ""),

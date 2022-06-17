@@ -129,14 +129,24 @@ exports[`card with default layout 1`] = `
 }
 
 .IS7 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  flex: 1;
+  margin-bottom: 10px;
+  min-width: 100%;
 }
 
 .IS8 {
+  flex: 1;
+  margin-bottom: 10px;
+  min-width: 100%;
+}
+
+.IS9 {
+  flex: 1;
+  margin-bottom: 10px;
+  min-width: 100%;
+}
+
+.IS10 {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -144,7 +154,15 @@ exports[`card with default layout 1`] = `
   justify-content: flex-end;
 }
 
-.IS9 {
+.IS11 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.IS12 {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -154,12 +172,10 @@ exports[`card with default layout 1`] = `
 </style>
 
 <tc-view__TcView
-  className="IS9"
-  data-adam-test="item2"
+  className="IS12"
 >
   <StyledComponent
-    className="IS8"
-    data-adam-test="item2"
+    className="IS11"
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
@@ -185,23 +201,13 @@ exports[`card with default layout 1`] = `
     forwardedRef={null}
   >
     <div
-      className="c0 IS7"
-      data-adam-test="item2"
+      className="c0 IS10"
     >
       <tc-view__TcView
-        className=""
-        data-adam-test="item1"
-        styles={
-          Object {
-            "flex": 1,
-            "marginBottom": "10px",
-            "minWidth": "100%",
-          }
-        }
+        className="IS9"
       >
         <StyledComponent
-          className=""
-          data-adam-test="item1"
+          className="IS8"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -225,17 +231,9 @@ exports[`card with default layout 1`] = `
             }
           }
           forwardedRef={null}
-          styles={
-            Object {
-              "flex": 1,
-              "marginBottom": "10px",
-              "minWidth": "100%",
-            }
-          }
         >
           <div
-            className="c0"
-            data-adam-test="item1"
+            className="c0 IS7"
           >
             <TimesImage
               aspectRatio={0.6666666666666666}
@@ -252,7 +250,6 @@ exports[`card with default layout 1`] = `
       </tc-view__TcView>
       <card-content__TcCardContainer
         className=""
-        data-adam-test="item3"
         styles={
           Object {
             "flex": 1,
@@ -263,7 +260,6 @@ exports[`card with default layout 1`] = `
       >
         <StyledComponent
           className=""
-          data-adam-test="item3"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -301,7 +297,6 @@ exports[`card with default layout 1`] = `
         >
           <div
             className="c3"
-            data-adam-test="item3"
           >
             <tc-text__TcText>
               <StyledComponent
