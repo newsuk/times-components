@@ -34,7 +34,6 @@ const styles = {
   },
   imageContainerTablet: {
     flex: 1,
-    marginRight: spacing(4),
     maxWidth: 320
   },
   lastBar: {

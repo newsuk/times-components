@@ -16,6 +16,7 @@ class CardContent extends Component {
       highResSize,
       isLoading
     } = this.props;
+
     return (
       imageUri !== nextProps.imageUri ||
       lowResQuality !== nextProps.lowResQuality ||
@@ -51,11 +52,15 @@ class CardContent extends Component {
     const renderImage = () => {
       if (!showImage) return null;
 
+      const imageContainerStyle = relatedArticle
+        ? styles.imageContainer
+        : styles.imageContainerTablet;
+
       return (
         <TcView
           className={imageContainerClass}
           style={checkStylesForUnits({
-            ...styles.imageContainer,
+            ...imageContainerStyle,
             ...imageStyle,
             ...(isReversed ? styles.reversedImageContainer : "")
           })}
