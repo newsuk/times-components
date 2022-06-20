@@ -142,20 +142,17 @@ exports[`1. card loading state 1`] = `
 
 .IS7 {
   flex: 1;
-  margin-bottom: 10px;
-  min-width: 100%;
+  max-width: 320;
 }
 
 .IS8 {
   flex: 1;
-  margin-bottom: 10px;
-  min-width: 100%;
+  max-width: 320;
 }
 
 .IS9 {
   flex: 1;
-  margin-bottom: 10px;
-  min-width: 100%;
+  max-width: 320;
 }
 
 .IS10 {
@@ -688,20 +685,20 @@ exports[`2. card with reversed loading state 1`] = `
 
 .IS19 {
   flex: 1;
+  max-width: 320;
   margin-bottom: 0;
-  min-width: 100%;
 }
 
 .IS20 {
   flex: 1;
+  max-width: 320;
   margin-bottom: 0;
-  min-width: 100%;
 }
 
 .IS21 {
   flex: 1;
+  max-width: 320;
   margin-bottom: 0;
-  min-width: 100%;
 }
 
 .IS22 {
