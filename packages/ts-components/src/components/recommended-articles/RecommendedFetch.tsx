@@ -26,7 +26,9 @@ export const RecommendedFetch: React.FC<{
   const heading = `Today's ${articleSection}`;
 
   return isClientSide ? (
-    <FetchProvider url={`/api/recommended-articles/${articleId}/todays_section`}>
+    <FetchProvider
+      url={`/api/recommended-articles/${articleId}/todays_section`}
+    >
       <TrackingContextProvider
         context={{
           object: 'RecommendedArticles',
