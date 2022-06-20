@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.44.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.43.2...@times-components/ts-components@1.44.0) (2022-06-20)
+
+
+### Features
+
+* **TDP-1967:** Recommended articles - experiment id ([#2993](https://github.com/newsuk/times-components/issues/2993)) ([7b57d9d](https://github.com/newsuk/times-components/commit/7b57d9db7a897beed41d1b313d3a412f442e0aab))
+
+
+
+
+
 ## [1.43.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.43.1...@times-components/ts-components@1.43.2) (2022-06-20)
 
 **Note:** Version bump only for package @times-components/ts-components
