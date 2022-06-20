@@ -130,20 +130,20 @@ exports[`card with reversed layout 1`] = `
 
 .IS7 {
   flex: 1;
+  max-width: 320;
   margin-bottom: 0;
-  min-width: 100%;
 }
 
 .IS8 {
   flex: 1;
+  max-width: 320;
   margin-bottom: 0;
-  min-width: 100%;
 }
 
 .IS9 {
   flex: 1;
+  max-width: 320;
   margin-bottom: 0;
-  min-width: 100%;
 }
 
 .IS10 {

@@ -130,20 +130,17 @@ exports[`card with default layout 1`] = `
 
 .IS7 {
   flex: 1;
-  margin-bottom: 10px;
-  min-width: 100%;
+  max-width: 320;
 }
 
 .IS8 {
   flex: 1;
-  margin-bottom: 10px;
-  min-width: 100%;
+  max-width: 320;
 }
 
 .IS9 {
   flex: 1;
-  margin-bottom: 10px;
-  min-width: 100%;
+  max-width: 320;
 }
 
 .IS10 {
