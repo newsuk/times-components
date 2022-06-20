@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.6.2](https://github.com/newsuk/times-components/compare/@times-components/card@6.6.1...@times-components/card@6.6.2) (2022-06-20)
+
+
+### Bug Fixes
+
+* **1710:** RNR card images ([#2992](https://github.com/newsuk/times-components/issues/2992)) ([f4a9efc](https://github.com/newsuk/times-components/commit/f4a9efc7baabb263ff7e06502d3dd9b7487040c1))
+
+
+
+
+
 ## [6.6.1](https://github.com/newsuk/times-components/compare/@times-components/card@6.6.0...@times-components/card@6.6.1) (2022-06-17)
 
 
