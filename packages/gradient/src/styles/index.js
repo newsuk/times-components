@@ -1,5 +1,3 @@
-
-
 const styles = {
   container: {
     position: "relative"

@@ -18,7 +18,7 @@ addSerializers(
   compose(
     stylePrinter,
     hoistStyleTransform,
-    minimalWebTransform,
+    minimalWebTransform
   )
 );
 

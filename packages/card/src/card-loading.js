@@ -7,6 +7,9 @@ export default () => (
     <Gradient degrees={264} style={styles.headerContainer} />
     <Gradient degrees={267} style={styles.textContainer} />
     <Gradient degrees={267} style={styles.textContainer} />
-    <Gradient degrees={267} style={{...styles.textContainer, ...styles.lastBar}} />
+    <Gradient
+      degrees={267}
+      style={{ ...styles.textContainer, ...styles.lastBar }}
+    />
   </Fragment>
 );

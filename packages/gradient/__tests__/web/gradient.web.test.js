@@ -19,7 +19,7 @@ addSerializers(
   compose(
     print,
     minimaliseTransform((value, key) => key === "style"),
-    minimalWebTransform,
+    minimalWebTransform
   )
 );
 
