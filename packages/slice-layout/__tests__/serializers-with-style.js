@@ -1,11 +1,9 @@
-import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
   enzymeRenderedSerializer,
   flattenStyleTransform,
   minimalWebTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 
@@ -26,8 +24,7 @@ addSerializers(
   compose(
     stylePrinter,
     minimalWebTransform,
-    flattenStyleTransform,
-    rnwTransform(AppRegistry, styles)
+    flattenStyleTransform
   )
 );
 
