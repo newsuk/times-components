@@ -114,7 +114,7 @@ class Ad extends Component {
         };
 
     const adView = (
-      <TcView style={{...styles.container, ...style}}>
+      <TcView style={{ ...styles.container, ...style }}>
         {isLoading ? null : (
           <DOMContext
             baseUrl={baseUrl}
