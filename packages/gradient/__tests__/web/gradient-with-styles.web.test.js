@@ -1,6 +1,5 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
-import { StyleSheet } from "react-native";
+
 import { mount } from "enzyme";
 import {
   addSerializers,
@@ -8,7 +7,6 @@ import {
   enzymeRenderedSerializer,
   hoistStyleTransform,
   minimalWebTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
@@ -20,8 +18,7 @@ addSerializers(
   compose(
     stylePrinter,
     hoistStyleTransform,
-    minimalWebTransform,
-    rnwTransform(AppRegistry, ["backgroundColor"])
+    minimalWebTransform
   )
 );
 
@@ -29,11 +26,11 @@ const tests = [
   {
     name: "gradient with style",
     test() {
-      const styles = StyleSheet.create({
+      const styles = {
         gradient: {
           backgroundColor: "red"
         }
-      });
+      };
 
       expect(
         mount(<Gradient degrees={30} style={styles.gradient} />)

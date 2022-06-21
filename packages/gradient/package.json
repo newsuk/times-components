@@ -17,11 +17,11 @@
     "bundle": "NODE_ENV=production webpack -p"
   },
   "jest": {
-    "preset": "react-native",
+    "preset": "react",
     "rootDir": "../../",
     "coverageDirectory": "<rootDir>/packages/gradient/coverage/",
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|@times-components)/)"
+      "node_modules/(?!(react|@times-components)/)"
     ],
     "testMatch": [
       "<rootDir>/packages/gradient/__tests__/*.test.js"
@@ -32,10 +32,7 @@
     "url": "git+https://github.com/newsuk/times-components.git"
   },
   "keywords": [
-    "react-native-web",
     "react",
-    "native",
-    "web",
     "gradient",
     "component"
   ],
@@ -63,13 +60,12 @@
     "react": "16.9.0",
     "react-art": "16.6.3",
     "react-dom": "16.9.0",
-    "react-native": "0.61.5",
-    "react-native-web": "0.11.4",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
     "@times-components/ts-styleguide": "1.36.2",
+    "@times-components/utils": "6.12.1",
     "prop-types": "15.7.2"
   },
   "resolutions": {
@@ -78,9 +74,7 @@
   },
   "peerDependencies": {
     "react": ">=16.9",
-    "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-dom": ">=16.9"
   },
   "publishConfig": {
     "access": "public"

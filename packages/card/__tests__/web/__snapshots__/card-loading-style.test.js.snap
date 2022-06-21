@@ -157,46 +157,51 @@ exports[`1. card loading state 1`] = `
 
 .IS10 {
   background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
-  height: 24px;
+  height: 24;
   margin-bottom: 10px;
-  max-width: 300px;
+  max-width: 300;
 }
 
 .IS11 {
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
   height: 24;
   margin-bottom: 10px;
   max-width: 300;
 }
 
 .IS12 {
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
   height: 24;
   margin-bottom: 10px;
   max-width: 300;
 }
 
 .IS13 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-  height: 10px;
+  height: 24;
   margin-bottom: 10px;
+  max-width: 300;
 }
 
 .IS14 {
-  height: 10;
+  height: 24;
   margin-bottom: 10px;
+  max-width: 300;
 }
 
 .IS15 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
   height: 10;
   margin-bottom: 10px;
 }
 
 .IS16 {
   background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-  height: 10px;
+  height: 10;
   margin-bottom: 10px;
 }
 
 .IS17 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
   height: 10;
   margin-bottom: 10px;
 }
@@ -207,25 +212,72 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS19 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-  height: 10px;
-  margin-bottom: 0px;
-  max-width: 240px;
+  height: 10;
+  margin-bottom: 10px;
 }
 
 .IS20 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
   height: 10;
-  margin-bottom: 0;
-  max-width: 240;
+  margin-bottom: 10px;
 }
 
 .IS21 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS22 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS23 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS24 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS25 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
   height: 10;
   margin-bottom: 0;
   max-width: 240;
 }
 
-.IS22 {
+.IS26 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS27 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS28 {
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS29 {
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS30 {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -233,7 +285,7 @@ exports[`1. card loading state 1`] = `
   justify-content: flex-end;
 }
 
-.IS23 {
+.IS31 {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -241,7 +293,7 @@ exports[`1. card loading state 1`] = `
   justify-content: flex-end;
 }
 
-.IS24 {
+.IS32 {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -308,10 +360,10 @@ exports[`1. card loading state 1`] = `
       className="c0"
     >
       <tc-view__TcView
-        className="IS24"
+        className="IS32"
       >
         <StyledComponent
-          className="IS23"
+          className="IS31"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -337,7 +389,7 @@ exports[`1. card loading state 1`] = `
           forwardedRef={null}
         >
           <div
-            className="c1 IS22"
+            className="c1 IS30"
           >
             <tc-view__TcView
               className="IS9"
@@ -438,25 +490,25 @@ exports[`1. card loading state 1`] = `
                 >
                   <_default>
                     <Gradient
-                      className="IS12"
+                      className="IS14"
                       degrees={264}
                       endPoint="1"
                       startPoint="0"
                     />
                     <Gradient
-                      className="IS15"
+                      className="IS19"
                       degrees={267}
                       endPoint="1"
                       startPoint="0"
                     />
                     <Gradient
-                      className="IS18"
+                      className="IS24"
                       degrees={267}
                       endPoint="1"
                       startPoint="0"
                     />
                     <Gradient
-                      className="IS21"
+                      className="IS29"
                       degrees={267}
                       endPoint="1"
                       startPoint="0"
@@ -562,46 +614,51 @@ exports[`2. card with reversed loading state 1`] = `
 <style>
 .IS1 {
   background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
-  height: 24px;
+  height: 24;
   margin-bottom: 10px;
-  max-width: 300px;
+  max-width: 300;
 }
 
 .IS2 {
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
   height: 24;
   margin-bottom: 10px;
   max-width: 300;
 }
 
 .IS3 {
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
   height: 24;
   margin-bottom: 10px;
   max-width: 300;
 }
 
 .IS4 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-  height: 10px;
+  height: 24;
   margin-bottom: 10px;
+  max-width: 300;
 }
 
 .IS5 {
-  height: 10;
+  height: 24;
   margin-bottom: 10px;
+  max-width: 300;
 }
 
 .IS6 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
   height: 10;
   margin-bottom: 10px;
 }
 
 .IS7 {
   background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-  height: 10px;
+  height: 10;
   margin-bottom: 10px;
 }
 
 .IS8 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
   height: 10;
   margin-bottom: 10px;
 }
@@ -612,96 +669,143 @@ exports[`2. card with reversed loading state 1`] = `
 }
 
 .IS10 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
-  height: 10px;
-  margin-bottom: 0px;
-  max-width: 240px;
+  height: 10;
+  margin-bottom: 10px;
 }
 
 .IS11 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
   height: 10;
-  margin-bottom: 0;
-  max-width: 240;
+  margin-bottom: 10px;
 }
 
 .IS12 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS13 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS14 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS15 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS16 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
   height: 10;
   margin-bottom: 0;
   max-width: 240;
 }
 
-.IS13 {
-  max-width: 25%;
-  max-height: 50%;
-}
-
-.IS14 {
-  max-width: 25%;
-  max-height: 50%;
-}
-
-.IS15 {
-  align-items: center;
-  background-color: #EDEDED;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  border-radius: 0;
-}
-
-.IS16 {
-  align-items: center;
-  background-color: #EDEDED;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  border-radius: 0;
-}
-
 .IS17 {
-  align-items: center;
-  background-color: #EDEDED;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  border-radius: 0;
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
 }
 
 .IS18 {
-  padding-bottom: 150%;
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
 }
 
 .IS19 {
-  flex: 1;
-  max-width: 320;
+  height: 10;
   margin-bottom: 0;
+  max-width: 240;
 }
 
 .IS20 {
-  flex: 1;
-  max-width: 320;
+  height: 10;
   margin-bottom: 0;
+  max-width: 240;
 }
 
 .IS21 {
+  max-width: 25%;
+  max-height: 50%;
+}
+
+.IS22 {
+  max-width: 25%;
+  max-height: 50%;
+}
+
+.IS23 {
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
+}
+
+.IS24 {
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
+}
+
+.IS25 {
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
+}
+
+.IS26 {
+  padding-bottom: 150%;
+}
+
+.IS27 {
   flex: 1;
   max-width: 320;
   margin-bottom: 0;
 }
 
-.IS22 {
+.IS28 {
+  flex: 1;
+  max-width: 320;
+  margin-bottom: 0;
+}
+
+.IS29 {
+  flex: 1;
+  max-width: 320;
+  margin-bottom: 0;
+}
+
+.IS30 {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -710,7 +814,7 @@ exports[`2. card with reversed loading state 1`] = `
   height: auto;
 }
 
-.IS23 {
+.IS31 {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -719,7 +823,7 @@ exports[`2. card with reversed loading state 1`] = `
   height: auto;
 }
 
-.IS24 {
+.IS32 {
   align-items: flex-start;
   display: flex;
   flex-direction: row;
@@ -787,10 +891,10 @@ exports[`2. card with reversed loading state 1`] = `
       className="c0"
     >
       <tc-view__TcView
-        className="IS24"
+        className="IS32"
       >
         <StyledComponent
-          className="IS23"
+          className="IS31"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -816,7 +920,7 @@ exports[`2. card with reversed loading state 1`] = `
           forwardedRef={null}
         >
           <div
-            className="c1 IS22"
+            className="c1 IS30"
           >
             <card-content__TcCardContainer
               className=""
@@ -872,25 +976,25 @@ exports[`2. card with reversed loading state 1`] = `
                 >
                   <_default>
                     <Gradient
-                      className="IS3"
+                      className="IS5"
                       degrees={264}
                       endPoint="1"
                       startPoint="0"
                     />
                     <Gradient
-                      className="IS6"
+                      className="IS10"
                       degrees={267}
                       endPoint="1"
                       startPoint="0"
                     />
                     <Gradient
-                      className="IS9"
+                      className="IS15"
                       degrees={267}
                       endPoint="1"
                       startPoint="0"
                     />
                     <Gradient
-                      className="IS12"
+                      className="IS20"
                       degrees={267}
                       endPoint="1"
                       startPoint="0"
@@ -900,10 +1004,10 @@ exports[`2. card with reversed loading state 1`] = `
               </StyledComponent>
             </card-content__TcCardContainer>
             <tc-view__TcView
-              className="IS21"
+              className="IS29"
             >
               <StyledComponent
-                className="IS20"
+                className="IS28"
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -929,7 +1033,7 @@ exports[`2. card with reversed loading state 1`] = `
                 forwardedRef={null}
               >
                 <div
-                  className="c1 IS19"
+                  className="c1 IS27"
                 >
                   <TimesImage
                     aspectRatio={0.6666666666666666}
