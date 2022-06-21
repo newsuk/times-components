@@ -11,9 +11,11 @@ exports[`2. a single child element 1`] = `
           <div>
             <responsive__ChildContainer>
               <div>
-                <div>
-                  standard-1
-                </div>
+                <tc-text__TcText>
+                  <div>
+                    standard-1
+                  </div>
+                </tc-text__TcText>
               </div>
             </responsive__ChildContainer>
           </div>
@@ -33,9 +35,11 @@ exports[`3. two child elements 1`] = `
           <div>
             <responsive__ChildContainer>
               <div>
-                <div>
-                  standard-1
-                </div>
+                <tc-text__TcText>
+                  <div>
+                    standard-1
+                  </div>
+                </tc-text__TcText>
               </div>
             </responsive__ChildContainer>
             <responsive>
@@ -43,9 +47,11 @@ exports[`3. two child elements 1`] = `
             </responsive>
             <responsive__ChildContainer>
               <div>
-                <div>
-                  standard-2
-                </div>
+                <tc-text__TcText>
+                  <div>
+                    standard-2
+                  </div>
+                </tc-text__TcText>
               </div>
             </responsive__ChildContainer>
           </div>
@@ -65,9 +71,11 @@ exports[`4. three child elements 1`] = `
           <div>
             <responsive__ChildContainer>
               <div>
-                <div>
-                  standard-1
-                </div>
+                <tc-text__TcText>
+                  <div>
+                    standard-1
+                  </div>
+                </tc-text__TcText>
               </div>
             </responsive__ChildContainer>
             <responsive>
@@ -75,9 +83,11 @@ exports[`4. three child elements 1`] = `
             </responsive>
             <responsive__ChildContainer>
               <div>
-                <div>
-                  standard-2
-                </div>
+                <tc-text__TcText>
+                  <div>
+                    standard-2
+                  </div>
+                </tc-text__TcText>
               </div>
             </responsive__ChildContainer>
             <responsive>
@@ -85,9 +95,11 @@ exports[`4. three child elements 1`] = `
             </responsive>
             <responsive__ChildContainer>
               <div>
-                <div>
-                  standard-3
-                </div>
+                <tc-text__TcText>
+                  <div>
+                    standard-3
+                  </div>
+                </tc-text__TcText>
               </div>
             </responsive__ChildContainer>
           </div>
