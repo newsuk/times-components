@@ -1,7 +1,4 @@
 import PropTypes from "prop-types";
-import { ViewPropTypes } from "react-native";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 export const propTypes = {
   children: PropTypes.oneOfType([
@@ -13,7 +10,7 @@ export const propTypes = {
   endPoint: PropTypes.string,
   startColour: PropTypes.string,
   startPoint: PropTypes.string,
-  style: ViewPropTypesStyle
+  style: PropTypes.object
 };
 
 export const defaultProps = {

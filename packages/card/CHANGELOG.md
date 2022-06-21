@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0](https://github.com/newsuk/times-components/compare/@times-components/card@6.6.2...@times-components/card@6.7.0) (2022-06-21)
+
+
+### Features
+
+* **TDP-1418:** remove react native from gradient  ([a609ec9](https://github.com/newsuk/times-components/commit/a609ec901d650f003d0551d78000851c4fbd33c9))
+
+
+
+
+
 ## [6.6.2](https://github.com/newsuk/times-components/compare/@times-components/card@6.6.1...@times-components/card@6.6.2) (2022-06-20)
 
 

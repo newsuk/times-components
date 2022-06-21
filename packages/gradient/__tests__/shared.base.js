@@ -1,10 +1,11 @@
 import React from "react";
-import { ART, Text } from "react-native";
+import ReactArt from "react-art";
+import { TcText } from "@times-components/utils";
 import { iterator } from "@times-components/test-utils";
 import Gradient, { OverlayGradient } from "../src/gradient";
 import GradientBase from "../src/gradient.base";
 
-const renderExampleText = () => <Text>Some example text</Text>;
+const renderExampleText = () => <TcText>Some example text</TcText>;
 
 export default renderMethod => {
   const makeMessageEvent = ({ width, height }) => ({
@@ -66,7 +67,7 @@ export default renderMethod => {
             width: 100
           })
         );
-        const surface = testInstance.findByType(ART.Surface);
+        const surface = testInstance.findByType(ReactArt.Surface);
 
         expect(surface.props).toEqual(
           expect.objectContaining({ height: 100, width: 100 })
@@ -85,7 +86,7 @@ export default renderMethod => {
           />
         );
         const testInstance = testRenderer.root;
-        const surface = testInstance.findByType(ART.Surface);
+        const surface = testInstance.findByType(ReactArt.Surface);
 
         expect(surface.props).toEqual(
           expect.objectContaining({ height: 200, width: 300 })
