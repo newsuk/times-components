@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.19.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.16...@times-components/ad@2.19.0) (2022-06-21)
+
+
+### Features
+
+* **TDP-1721:** Remove React-Native from Ad package ([#2996](https://github.com/newsuk/times-components/issues/2996)) ([007ea6b](https://github.com/newsuk/times-components/commit/007ea6b080775f744a28c7d9a7a64a176048964c))
+
+
+
+
+
 ## [2.18.16](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.15...@times-components/ad@2.18.16) (2022-05-16)
 
 **Note:** Version bump only for package @times-components/ad
