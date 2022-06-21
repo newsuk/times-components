@@ -1,7 +1,6 @@
-import { ViewPropTypes } from "react-native";
 import PropTypes from "prop-types";
 
-const { style: ViewPropTypesStyle } = ViewPropTypes;
+const { style: ViewPropTypesStyle } = PropTypes.object;
 
 export const propTypes = {
   baseUrl: PropTypes.string,

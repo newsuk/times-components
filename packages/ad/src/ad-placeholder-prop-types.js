@@ -1,9 +1,8 @@
 import PropTypes from "prop-types";
-import { ViewPropTypes } from "react-native";
 
 export const propTypes = {
   height: PropTypes.number.isRequired,
-  style: ViewPropTypes.style,
+  style: PropTypes.object,
   width: PropTypes.number.isRequired
 };
 
