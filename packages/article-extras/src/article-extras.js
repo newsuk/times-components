@@ -109,7 +109,6 @@ const ArticleExtras = ({
             articleHeadline={articleHeadline}
             articleSection={section}
             isVisible={additionalRelatedArticlesFlag}
-            analyticsStream={analyticsStream}
           />
         )}
         {additionalRelatedArticlesFlag &&

@@ -9,14 +9,7 @@ export const RecommendedFetch: React.FC<{
   articleHeadline: string;
   articleSection: string;
   isVisible?: boolean;
-  analyticsStream?: (evt: any) => void;
-}> = ({
-  articleId,
-  articleHeadline,
-  articleSection,
-  isVisible,
-  analyticsStream
-}) => {
+}> = ({ articleId, articleHeadline, articleSection, isVisible }) => {
   const [isClientSide, setIsClientSide] = useState<boolean>(false);
 
   useEffect(() => {
@@ -44,11 +37,7 @@ export const RecommendedFetch: React.FC<{
           }
         }}
       >
-        <RecommendedArticles
-          heading={heading}
-          isVisible={isVisible}
-          analyticsStream={analyticsStream}
-        />
+        <RecommendedArticles heading={heading} isVisible={isVisible} />
       </TrackingContextProvider>
     </FetchProvider>
   ) : null;

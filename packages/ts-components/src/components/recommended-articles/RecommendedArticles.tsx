@@ -9,8 +9,7 @@ import { getRelatedArticlesSlice } from './formatters';
 export const RecommendedArticles: React.FC<{
   heading: string;
   isVisible?: boolean;
-  analyticsStream?: (evt: any) => void;
-}> = ({ heading, isVisible, analyticsStream }) => {
+}> = ({ heading, isVisible }) => {
   const { loading, error, data } = useFetch<any>();
 
   if (loading || error || data === undefined) {
@@ -29,7 +28,6 @@ export const RecommendedArticles: React.FC<{
     if (fireAnalyticsEvent) {
       fireAnalyticsEvent({
         action: 'Clicked',
-        object: 'RecommendedArticles',
         attrs: { article_parent_name: found ? found.article.headline : '' }
       });
     }
@@ -45,7 +43,8 @@ export const RecommendedArticles: React.FC<{
         slice={slice}
         isVisible
         onPress={onClickHandler}
-        analyticsStream={analyticsStream}
+        // tslint:disable-next-line: no-empty
+        analyticsStream={() => {}}
       />
     </div>
   );
