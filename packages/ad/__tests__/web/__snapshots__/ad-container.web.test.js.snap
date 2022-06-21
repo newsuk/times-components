@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ad-container header ad 1`] = `
-<div>
+<div
+  id="header"
+>
   <div
     id="ad-header"
   />
@@ -9,7 +11,9 @@ exports[`ad-container header ad 1`] = `
 `;
 
 exports[`ad-container inline ad 1`] = `
-<div>
+<div
+  id="inline-ad"
+>
   <div
     id="ad-article-inline"
   />
@@ -17,7 +21,9 @@ exports[`ad-container inline ad 1`] = `
 `;
 
 exports[`ad-container pixel ad 1`] = `
-<div>
+<div
+  id="pixel"
+>
   <div
     id="ad-pixel"
   />
@@ -25,7 +31,9 @@ exports[`ad-container pixel ad 1`] = `
 `;
 
 exports[`ad-container pixelskin ad 1`] = `
-<div>
+<div
+  id="pixelskin"
+>
   <div
     id="ad-pixelskin"
   />
@@ -33,7 +41,9 @@ exports[`ad-container pixelskin ad 1`] = `
 `;
 
 exports[`ad-container pixelteads ad 1`] = `
-<div>
+<div
+  id="pixelteads"
+>
   <div
     id="ad-pixelteads"
   />
