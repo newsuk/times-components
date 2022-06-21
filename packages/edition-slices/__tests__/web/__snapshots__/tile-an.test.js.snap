@@ -2,29 +2,54 @@
 
 exports[`tile an without breakpoint 1`] = `
 <style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.S3 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
 .IS1 {
   overflow: hidden;
 }
 
 .IS2 {
-  margin-bottom: 0px;
+  line-height: 22px;
 }
 
 .IS3 {
-  0: [object Object];
-  1: [object Object];
-  2: [object Object];
-}
-
-.IS4 {
-  0: [object Object];
-  1: null;
-}
-
-.IS5 {
-  flex: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-justify-content: center;
   justify-content: center;
   padding-top: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
 }
 </style>
 
@@ -45,34 +70,36 @@ exports[`tile an without breakpoint 1`] = `
     rounded={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
-  <View
-    className="IS5"
+  <div
+    className="css-view-1dbjc4n IS3"
   >
-    <View
-      className="IS2"
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
       <ArticleLabel
         color="#005B8D"
         isVideo={false}
         title="label"
       />
-    </View>
-    <Text
-      accessibilityRole="header"
+    </div>
+    <h3
       aria-level="3"
-      className="IS3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      role="heading"
     >
       This is tile headline
-    </Text>
-    <Text
-      className="IS4"
+    </h3>
+    <div
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
-      <Text>
+      <span
+        className="css-text-901oao css-textHasAncestor-16my406"
+      >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
         ...
-      </Text>
-    </Text>
+      </span>
+    </div>
     <ArticleFlags
       flags={
         Array [
@@ -84,6 +111,6 @@ exports[`tile an without breakpoint 1`] = `
       }
       longRead={true}
     />
-  </View>
+  </div>
 </Link>
 `;

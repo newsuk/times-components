@@ -1,17 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. single inline element 1`] = `
-<View>
+<div
+  className="css-view-1dbjc4n"
+>
   <div
     className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 gJRFWs"
   >
     Lindsay McIntosh, Scottish Political Editor
   </div>
-</View>
+</div>
 `;
 
 exports[`2. with the author in the begining 1`] = `
-<View>
+<div
+  className="css-view-1dbjc4n"
+>
   <div
     className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
   >
@@ -22,11 +26,13 @@ exports[`2. with the author in the begining 1`] = `
   >
     , Environment Editor
   </div>
-</View>
+</div>
 `;
 
 exports[`3. with the author at the end 1`] = `
-<View>
+<div
+  className="css-view-1dbjc4n"
+>
   <div
     className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 gJRFWs"
   >
@@ -37,11 +43,13 @@ exports[`3. with the author at the end 1`] = `
   >
     Mike Atherton
   </div>
-</View>
+</div>
 `;
 
 exports[`4. with multiple authors separated by a pipe 1`] = `
-<View>
+<div
+  className="css-view-1dbjc4n"
+>
   <div
     className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
   >
@@ -67,11 +75,13 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
   >
     Alexandra Frean
   </div>
-</View>
+</div>
 `;
 
 exports[`5. with multiple authors separated by text with commas 1`] = `
-<View>
+<div
+  className="css-view-1dbjc4n"
+>
   <div
     className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
   >
@@ -97,11 +107,13 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
   >
     Alexandra Frean
   </div>
-</View>
+</div>
 `;
 
 exports[`6. with multiple authors separated by spaces 1`] = `
-<View>
+<div
+  className="css-view-1dbjc4n"
+>
   <div
     className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
   >
@@ -122,7 +134,7 @@ exports[`6. with multiple authors separated by spaces 1`] = `
   >
     Alexandra Frean
   </div>
-</View>
+</div>
 `;
 
 exports[`7. null with an empty ast 1`] = `null`;

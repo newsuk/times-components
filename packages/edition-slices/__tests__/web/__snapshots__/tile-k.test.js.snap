@@ -2,22 +2,28 @@
 
 exports[`tile k huge 1`] = `
 <style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+}
+
 .IS1 {
   padding-right: 10px;
   width: 50%;
 }
 
 .IS2 {
-  margin-bottom: 0px;
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
-  0: [object Object];
-  1: [object Object];
-  2: [object Object];
-}
-
-.IS4 {
   width: 50%;
 }
 </style>
@@ -37,25 +43,25 @@ exports[`tile k huge 1`] = `
     fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
-  <View
-    className="IS4"
+  <div
+    className="css-view-1dbjc4n IS3"
   >
-    <View
-      className="IS2"
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
       <ArticleLabel
         color="#005B8D"
         isVideo={false}
         title="label"
       />
-    </View>
-    <Text
-      accessibilityRole="header"
+    </div>
+    <h3
       aria-level="3"
-      className="IS3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS2 S2"
+      role="heading"
     >
       This is tile headline
-    </Text>
+    </h3>
     <ArticleFlags
       flags={
         Array [
@@ -67,28 +73,34 @@ exports[`tile k huge 1`] = `
       }
       longRead={true}
     />
-  </View>
+  </div>
 </Link>
 `;
 
 exports[`tile k medium 1`] = `
 <style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+}
+
 .IS1 {
   padding-right: 10px;
   width: 50%;
 }
 
 .IS2 {
-  margin-bottom: 0px;
+  line-height: 22px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
-  0: [object Object];
-  1: [object Object];
-  2: [object Object];
-}
-
-.IS4 {
   width: 50%;
 }
 </style>
@@ -108,25 +120,25 @@ exports[`tile k medium 1`] = `
     fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
-  <View
-    className="IS4"
+  <div
+    className="css-view-1dbjc4n IS3"
   >
-    <View
-      className="IS2"
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
       <ArticleLabel
         color="#005B8D"
         isVideo={false}
         title="label"
       />
-    </View>
-    <Text
-      accessibilityRole="header"
+    </div>
+    <h3
       aria-level="3"
-      className="IS3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 IS2 S2"
+      role="heading"
     >
       This is tile headline
-    </Text>
+    </h3>
     <ArticleFlags
       flags={
         Array [
@@ -138,28 +150,34 @@ exports[`tile k medium 1`] = `
       }
       longRead={true}
     />
-  </View>
+  </div>
 </Link>
 `;
 
 exports[`tile k small 1`] = `
 <style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+}
+
 .IS1 {
   padding-right: 10px;
   width: 50%;
 }
 
 .IS2 {
-  margin-bottom: 0px;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
-  0: [object Object];
-  1: [object Object];
-  2: [object Object];
-}
-
-.IS4 {
   width: 50%;
 }
 </style>
@@ -179,25 +197,25 @@ exports[`tile k small 1`] = `
     fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
-  <View
-    className="IS4"
+  <div
+    className="css-view-1dbjc4n IS3"
   >
-    <View
-      className="IS2"
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
       <ArticleLabel
         color="#005B8D"
         isVideo={false}
         title="label"
       />
-    </View>
-    <Text
-      accessibilityRole="header"
+    </div>
+    <h3
       aria-level="3"
-      className="IS3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS2 S2"
+      role="heading"
     >
       This is tile headline
-    </Text>
+    </h3>
     <ArticleFlags
       flags={
         Array [
@@ -209,28 +227,34 @@ exports[`tile k small 1`] = `
       }
       longRead={true}
     />
-  </View>
+  </div>
 </Link>
 `;
 
 exports[`tile k wide 1`] = `
 <style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+}
+
 .IS1 {
   padding-right: 10px;
   width: 50%;
 }
 
 .IS2 {
-  margin-bottom: 0px;
+  line-height: 22px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
-  0: [object Object];
-  1: [object Object];
-  2: [object Object];
-}
-
-.IS4 {
   width: 50%;
 }
 </style>
@@ -250,25 +274,25 @@ exports[`tile k wide 1`] = `
     fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
-  <View
-    className="IS4"
+  <div
+    className="css-view-1dbjc4n IS3"
   >
-    <View
-      className="IS2"
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
       <ArticleLabel
         color="#005B8D"
         isVideo={false}
         title="label"
       />
-    </View>
-    <Text
-      accessibilityRole="header"
+    </div>
+    <h3
       aria-level="3"
-      className="IS3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 IS2 S2"
+      role="heading"
     >
       This is tile headline
-    </Text>
+    </h3>
     <ArticleFlags
       flags={
         Array [
@@ -280,28 +304,34 @@ exports[`tile k wide 1`] = `
       }
       longRead={true}
     />
-  </View>
+  </div>
 </Link>
 `;
 
 exports[`tile k without breakpoint should be like small 1`] = `
 <style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+}
+
 .IS1 {
   padding-right: 10px;
   width: 50%;
 }
 
 .IS2 {
-  margin-bottom: 0px;
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
-  0: [object Object];
-  1: [object Object];
-  2: [object Object];
-}
-
-.IS4 {
   width: 50%;
 }
 </style>
@@ -321,25 +351,25 @@ exports[`tile k without breakpoint should be like small 1`] = `
     fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
-  <View
-    className="IS4"
+  <div
+    className="css-view-1dbjc4n IS3"
   >
-    <View
-      className="IS2"
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
       <ArticleLabel
         color="#005B8D"
         isVideo={false}
         title="label"
       />
-    </View>
-    <Text
-      accessibilityRole="header"
+    </div>
+    <h3
       aria-level="3"
-      className="IS3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS2 S2"
+      role="heading"
     >
       This is tile headline
-    </Text>
+    </h3>
     <ArticleFlags
       flags={
         Array [
@@ -351,6 +381,6 @@ exports[`tile k without breakpoint should be like small 1`] = `
       }
       longRead={true}
     />
-  </View>
+  </div>
 </Link>
 `;

@@ -3,52 +3,62 @@
 exports[`tile s huge 1`] = `
 <style>
 .IS1 {
-  color: #1D1D1B;
+  color: rgba(29,29,27,1.00);
   font-family: TimesModern-Bold;
-  font-size: 20;
-  margin-bottom: 0;
-  line-height: 20;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 0px;
 }
 
 .IS2 {
-  flex-direction: row;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   margin-bottom: 10px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
 .IS3 {
-  color: #696969;
+  color: rgba(105,105,105,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 14;
-  line-height: 20;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .IS4 {
-  color: #696969;
+  color: rgba(105,105,105,1.00);
   font-family: GillSansMTStd-Medium;
-  font-size: 12;
+  font-size: 12px;
   margin-top: 10px;
 }
 
 .IS5 {
-  padding: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
 }
 </style>
 
-<View
-  className="IS5"
+<div
+  className="css-view-1dbjc4n IS5"
 >
-  <View
-    className="IS2"
+  <div
+    className="css-view-1dbjc4n IS2"
   >
-    <Text
-      className="IS1"
+    <div
+      className="css-text-901oao IS1"
     >
       Nature notes
-    </Text>
-  </View>
-  <Text
-    className="IS3"
+    </div>
+  </div>
+  <div
+    className="css-text-901oao IS3"
   >
     <p>
       <b>
@@ -71,66 +81,76 @@ exports[`tile s huge 1`] = `
         Bright Eyes 
       </i>
     </p>
-  </Text>
-  <Text
-    className="IS4"
+  </div>
+  <div
+    className="css-text-901oao IS4"
   >
     <span>
       Libby Purves
     </span>
-  </Text>
-</View>
+  </div>
+</div>
 `;
 
 exports[`tile s medium 1`] = `
 <style>
 .IS1 {
-  color: #1D1D1B;
+  color: rgba(29,29,27,1.00);
   font-family: TimesModern-Bold;
-  font-size: 20;
+  font-size: 20px;
+  line-height: 20px;
   margin-bottom: 5px;
-  line-height: 20;
 }
 
 .IS2 {
-  flex-direction: row;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   margin-bottom: 5px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
 .IS3 {
-  color: #696969;
+  color: rgba(105,105,105,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 14;
-  line-height: 20;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .IS4 {
-  color: #696969;
+  color: rgba(105,105,105,1.00);
   font-family: GillSansMTStd-Medium;
-  font-size: 12;
+  font-size: 12px;
   margin-top: 10px;
 }
 
 .IS5 {
-  padding: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
 }
 </style>
 
-<View
-  className="IS5"
+<div
+  className="css-view-1dbjc4n IS5"
 >
-  <View
-    className="IS2"
+  <div
+    className="css-view-1dbjc4n IS2"
   >
-    <Text
-      className="IS1"
+    <div
+      className="css-text-901oao IS1"
     >
       Nature notes
-    </Text>
-  </View>
-  <Text
-    className="IS3"
+    </div>
+  </div>
+  <div
+    className="css-text-901oao IS3"
   >
     <p>
       <b>
@@ -153,35 +173,38 @@ exports[`tile s medium 1`] = `
         Bright Eyes 
       </i>
     </p>
-  </Text>
-  <Text
-    className="IS4"
+  </div>
+  <div
+    className="css-text-901oao IS4"
   >
     <span>
       Libby Purves
     </span>
-  </Text>
-</View>
+  </div>
+</div>
 `;
 
 exports[`tile s no byline 1`] = `
 <style>
 .IS1 {
-  color: #1D1D1B;
+  color: rgba(29,29,27,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22;
+  font-size: 22px;
   margin-bottom: 5px;
 }
 
 .IS2 {
+  -webkit-align-items: center;
   align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
 }
 
 .IS3 {
-  color: #696969;
+  color: rgba(105,105,105,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 14;
-  line-height: 20;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .IS4 {
@@ -189,20 +212,20 @@ exports[`tile s no byline 1`] = `
 }
 </style>
 
-<View
-  className="IS4"
+<div
+  className="css-view-1dbjc4n IS4"
 >
-  <View
-    className="IS2"
+  <div
+    className="css-view-1dbjc4n IS2"
   >
-    <Text
-      className="IS1"
+    <div
+      className="css-text-901oao IS1"
     >
       Nature notes
-    </Text>
-  </View>
-  <Text
-    className="IS3"
+    </div>
+  </div>
+  <div
+    className="css-text-901oao IS3"
   >
     <p>
       <b>
@@ -225,34 +248,37 @@ exports[`tile s no byline 1`] = `
         Bright Eyes 
       </i>
     </p>
-  </Text>
-</View>
+  </div>
+</div>
 `;
 
 exports[`tile s small 1`] = `
 <style>
 .IS1 {
-  color: #1D1D1B;
+  color: rgba(29,29,27,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22;
+  font-size: 22px;
   margin-bottom: 5px;
 }
 
 .IS2 {
+  -webkit-align-items: center;
   align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
 }
 
 .IS3 {
-  color: #696969;
+  color: rgba(105,105,105,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 14;
-  line-height: 20;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .IS4 {
-  color: #696969;
+  color: rgba(105,105,105,1.00);
   font-family: GillSansMTStd-Medium;
-  font-size: 12;
+  font-size: 12px;
   margin-top: 10px;
 }
 
@@ -261,20 +287,20 @@ exports[`tile s small 1`] = `
 }
 </style>
 
-<View
-  className="IS5"
+<div
+  className="css-view-1dbjc4n IS5"
 >
-  <View
-    className="IS2"
+  <div
+    className="css-view-1dbjc4n IS2"
   >
-    <Text
-      className="IS1"
+    <div
+      className="css-text-901oao IS1"
     >
       Nature notes
-    </Text>
-  </View>
-  <Text
-    className="IS3"
+    </div>
+  </div>
+  <div
+    className="css-text-901oao IS3"
   >
     <p>
       <b>
@@ -297,66 +323,76 @@ exports[`tile s small 1`] = `
         Bright Eyes 
       </i>
     </p>
-  </Text>
-  <Text
-    className="IS4"
+  </div>
+  <div
+    className="css-text-901oao IS4"
   >
     <span>
       Libby Purves
     </span>
-  </Text>
-</View>
+  </div>
+</div>
 `;
 
 exports[`tile s wide 1`] = `
 <style>
 .IS1 {
-  color: #1D1D1B;
+  color: rgba(29,29,27,1.00);
   font-family: TimesModern-Bold;
-  font-size: 20;
-  margin-bottom: 0;
-  line-height: 20;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 0px;
 }
 
 .IS2 {
-  flex-direction: row;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   margin-bottom: 10px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
 .IS3 {
-  color: #696969;
+  color: rgba(105,105,105,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 14;
-  line-height: 20;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .IS4 {
-  color: #696969;
+  color: rgba(105,105,105,1.00);
   font-family: GillSansMTStd-Medium;
-  font-size: 12;
+  font-size: 12px;
   margin-top: 10px;
 }
 
 .IS5 {
-  padding: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
 }
 </style>
 
-<View
-  className="IS5"
+<div
+  className="css-view-1dbjc4n IS5"
 >
-  <View
-    className="IS2"
+  <div
+    className="css-view-1dbjc4n IS2"
   >
-    <Text
-      className="IS1"
+    <div
+      className="css-text-901oao IS1"
     >
       Nature notes
-    </Text>
-  </View>
-  <Text
-    className="IS3"
+    </div>
+  </div>
+  <div
+    className="css-text-901oao IS3"
   >
     <p>
       <b>
@@ -379,67 +415,77 @@ exports[`tile s wide 1`] = `
         Bright Eyes 
       </i>
     </p>
-  </Text>
-  <Text
-    className="IS4"
+  </div>
+  <div
+    className="css-text-901oao IS4"
   >
     <span>
       Libby Purves
     </span>
-  </Text>
-</View>
+  </div>
+</div>
 `;
 
 exports[`tile s with logo for medium breakpoint 1`] = `
 <style>
 .IS1 {
-  color: #1D1D1B;
+  color: rgba(29,29,27,1.00);
   font-family: TimesModern-Bold;
-  font-size: 20;
-  margin-bottom: 0;
-  line-height: 20;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 0px;
 }
 
 .IS2 {
-  flex-direction: row;
+  -webkit-align-items: center;
   align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   margin-bottom: 5px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
 .IS3 {
-  color: #696969;
+  color: rgba(105,105,105,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 14;
-  line-height: 20;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .IS4 {
-  color: #696969;
+  color: rgba(105,105,105,1.00);
   font-family: GillSansMTStd-Medium;
-  font-size: 12;
+  font-size: 12px;
   margin-top: 10px;
 }
 
 .IS5 {
-  padding: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
 }
 </style>
 
-<View
-  className="IS5"
+<div
+  className="css-view-1dbjc4n IS5"
 >
-  <View
-    className="IS2"
+  <div
+    className="css-view-1dbjc4n IS2"
   >
     LOGO
-    <Text
-      className="IS1"
+    <div
+      className="css-text-901oao IS1"
     >
       Nature notes
-    </Text>
-  </View>
-  <Text
-    className="IS3"
+    </div>
+  </div>
+  <div
+    className="css-text-901oao IS3"
   >
     <p>
       <b>
@@ -462,13 +508,13 @@ exports[`tile s with logo for medium breakpoint 1`] = `
         Bright Eyes 
       </i>
     </p>
-  </Text>
-  <Text
-    className="IS4"
+  </div>
+  <div
+    className="css-text-901oao IS4"
   >
     <span>
       Libby Purves
     </span>
-  </Text>
-</View>
+  </div>
+</div>
 `;

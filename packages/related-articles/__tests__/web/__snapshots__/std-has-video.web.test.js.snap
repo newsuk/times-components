@@ -1,19 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. has video 1`] = `
-<View>
-  <View>
-    <Text
-      accessibilityRole="header"
+<div>
+  <div>
+    <h3
       aria-level="3"
+      role="heading"
     >
       Related articles
-    </Text>
-  </View>
-  <View>
-    <View>
-      <View>
-        <View>
+    </h3>
+  </div>
+  <div>
+    <div>
+      <div>
+        <div>
           <div
             data-testid="related-article-item"
           >
@@ -25,7 +25,7 @@ exports[`1. has video 1`] = `
               }
               url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
             >
-              <View>
+              <div>
                 <Card
                   highResSize={null}
                   imageAccessibilityLabel=""
@@ -37,31 +37,31 @@ exports[`1. has video 1`] = `
                   relatedArticle={true}
                   showImage={true}
                 >
-                  <View>
-                    <View>
+                  <div>
+                    <div>
                       <VideoLabel
                         color="#DB133B"
                         isVideo={true}
                         title="BAYEUX TAPESTRY"
                       />
-                    </View>
-                    <Text
-                      accessibilityRole="header"
+                    </div>
+                    <h3
                       aria-level="3"
+                      role="heading"
                     >
                       Test Headline
-                    </Text>
-                    <View>
-                      <Text>
-                        <Text>
+                    </h3>
+                    <div>
+                      <div>
+                        <span>
                           
                           Summary 125
                           ...
-                        </Text>
-                      </Text>
-                    </View>
-                    <Text
-                      testID="datePublication"
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      data-testid="datePublication"
                     >
                       <time
                         dateTime="2015-03-13T18:54:58.000Z"
@@ -69,23 +69,23 @@ exports[`1. has video 1`] = `
                         March 13 2015, 6.54pm
                         
                       </time>
-                    </Text>
-                    <Text>
+                    </div>
+                    <div>
                       <div>
                         Camilla Long
                       </div>
                       <div>
                         , Environment Editor
                       </div>
-                    </Text>
-                  </View>
+                    </div>
+                  </div>
                 </Card>
-              </View>
+              </div>
             </Link>
           </div>
-        </View>
-      </View>
-    </View>
-  </View>
-</View>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 `;
