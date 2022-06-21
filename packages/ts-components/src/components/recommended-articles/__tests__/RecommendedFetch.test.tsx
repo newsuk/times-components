@@ -23,7 +23,6 @@ describe('<RecommendedFetch>', () => {
         articleId="1234"
         articleHeadline="Some headline"
         articleSection="News"
-        analyticsStream={() => ({})}
       />
     );
 
