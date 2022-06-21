@@ -1,13 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. gradient with a child 1`] = `
-<div
-  className="css-view-1dbjc4n"
->
+<tc-view__TcView>
   <div
-    className="css-text-901oao"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
-    Hello world!
+    <tc-text__TcText>
+      <div
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      >
+        Hello world!
+      </div>
+    </tc-text__TcText>
   </div>
-</div>
+</tc-view__TcView>
 `;
