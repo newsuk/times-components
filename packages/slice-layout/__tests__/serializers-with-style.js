@@ -7,17 +7,6 @@ import {
   stylePrinter
 } from "@times-components/jest-serializer";
 
-const styles = [
-  "borderBottomColor",
-  "borderBottomWidth",
-  "borderStyle",
-  "paddingBottom",
-  "paddingLeft",
-  "paddingRight",
-  "paddingTop",
-  "width"
-];
-
 addSerializers(
   expect,
   enzymeRenderedSerializer(),
