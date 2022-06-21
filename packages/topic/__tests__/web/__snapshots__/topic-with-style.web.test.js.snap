@@ -55,51 +55,44 @@ exports[`1. an article list header 1`] = `
 }
 
 <style>
-.S1 {
-  color: rgba(51,51,51,1.00);
+.IS1 {
   font-family: TimesDigitalW04;
-  font-size: 15px;
-  line-height: 26px;
+  font-size: 15;
+  line-height: 26;
+  color: #333333;
   text-align: center;
+  padding-bottom: 15px;
 }
 
-.S2 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
+.IS2 {
   align-items: center;
-  background-color: rgba(249,249,249,1.00);
-  border-bottom-color: rgba(240,240,240,1.00);
-  border-bottom-width: 1px;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
+  background-color: #F9F9F9;
+  border-bottom-color: #F0F0F0;
+  border-bottom-width: 1;
   flex-direction: column;
-  min-height: 90px;
-  padding-left: 10px;
-  padding-right: 10px;
+  min-height: 90;
+  padding-horizontal: 10px;
   padding-top: 40px;
   width: 100%;
 }
 </style>
 
-<div
-  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-minHeight-1aplaab r-paddingHorizontal-utggzx r-paddingTop-1ur9v65 r-width-13qz1uu S2"
+<View
+  className="IS2"
 >
-  <div
-    className="c0 responsive__HeadContainerWithDescription-sc-1qy9k4m-0 c0 css-view-1dbjc4n"
+  <View
+    className="c0"
   >
     <h1
       className="c1"
     >
       Test Name
     </h1>
-    <div
-      className="c2 responsive__ResponsiveDivider-sc-1qy9k4m-3 c2 css-view-1dbjc4n"
+    <View
+      className="c2"
     />
-    <div
-      className="css-text-901oao r-color-1khnkhu r-fontFamily-1feecvn r-fontSize-a023e6 r-lineHeight-eaezby r-paddingBottom-19yat4t r-textAlign-q4m81j S1"
+    <Text
+      className="IS1"
     >
       Test 
       <i>
@@ -109,35 +102,27 @@ exports[`1. an article list header 1`] = `
         bold
       </b>
        text.
-    </div>
-  </div>
-</div>
+    </Text>
+  </View>
+</View>
 `;
 
 exports[`2. an article list header loading 1`] = `
 <style>
-.S1 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
+.IS1 {
   align-items: center;
-  background-color: rgba(249,249,249,1.00);
-  border-bottom-color: rgba(240,240,240,1.00);
-  border-bottom-width: 1px;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
+  background-color: #F9F9F9;
+  border-bottom-color: #F0F0F0;
+  border-bottom-width: 1;
   flex-direction: column;
-  min-height: 90px;
-  padding-left: 10px;
-  padding-right: 10px;
+  min-height: 90;
+  padding-horizontal: 10px;
   padding-top: 40px;
   width: 100%;
 }
 </style>
 
-<div
-  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-minHeight-1aplaab r-paddingHorizontal-utggzx r-paddingTop-1ur9v65 r-width-13qz1uu S1"
+<View
+  className="IS1"
 />
 `;

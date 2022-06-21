@@ -12,16 +12,14 @@ exports[`1. with a single author 1`] = `
 }
 </style>
 
-<div
-  className="css-view-1dbjc4n"
->
+<View>
   <a
     className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx IS1"
     href="/profile/alexandra-frean"
   >
     Alexandra Frean
   </a>
-</div>
+</View>
 `;
 
 exports[`2. with a very long byline 1`] = `
@@ -54,9 +52,7 @@ exports[`2. with a very long byline 1`] = `
 }
 </style>
 
-<div
-  className="css-view-1dbjc4n"
->
+<View>
   <a
     className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx IS1"
     href="/profile/camilla-long"
@@ -90,5 +86,5 @@ exports[`2. with a very long byline 1`] = `
   >
     , Environment Editor
   </div>
-</div>
+</View>
 `;

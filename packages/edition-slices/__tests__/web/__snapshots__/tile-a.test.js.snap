@@ -2,30 +2,21 @@
 
 exports[`tile a without breakpoint 1`] = `
 <style>
-.S1 {
+.IS1 {
   margin-bottom: 0px;
 }
 
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-}
-
-.IS1 {
-  font-size: 35px;
-  line-height: 35px;
-  margin-bottom: 10px;
-}
-
 .IS2 {
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  margin-left: 10px;
+  0: [object Object];
+  1: [object Object];
+  2: [object Object];
 }
 
 .IS3 {
+  margin: 10px;
+}
+
+.IS4 {
   width: 100%;
 }
 </style>
@@ -33,25 +24,25 @@ exports[`tile a without breakpoint 1`] = `
 <Link
   url="/article/123"
 >
-  <div
-    className="css-view-1dbjc4n IS2"
+  <View
+    className="IS3"
   >
-    <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    <View
+      className="IS1"
     >
       <ArticleLabel
         color="#005B8D"
         isVideo={false}
         title="label"
       />
-    </div>
-    <h3
+    </View>
+    <Text
+      accessibilityRole="header"
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
-      role="heading"
+      className="IS2"
     >
       This is tile headline
-    </h3>
+    </Text>
     <ArticleFlags
       flags={
         Array [
@@ -63,10 +54,10 @@ exports[`tile a without breakpoint 1`] = `
       }
       longRead={true}
     />
-  </div>
+  </View>
   <Image
     aspectRatio={1.7777777777777777}
-    className="IS3"
+    className="IS4"
     fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />

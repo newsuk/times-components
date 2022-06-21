@@ -2,36 +2,19 @@
 
 exports[`tile y huge 1`] = `
 <style>
-.S1 {
+.IS1 {
   margin-bottom: 0px;
 }
 
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.IS1 {
-  font-size: 35px;
-  line-height: 35px;
-}
-
 .IS2 {
-  margin-top: 5px;
+  0: [object Object];
+  1: [object Object];
+  2: [object Object];
+}
+
+.IS3 {
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -45,36 +28,32 @@ exports[`tile y huge 1`] = `
   }
   url="/article/123"
 >
-  <div
-    className="css-view-1dbjc4n"
-  >
-    <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+  <View>
+    <View
+      className="IS1"
     >
       <ArticleLabel
         color="#005B8D"
         isVideo={false}
         title="label"
       />
-    </div>
-    <h3
+    </View>
+    <Text
+      accessibilityRole="header"
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
-      role="heading"
+      className="IS2"
     >
       This is tile headline
-    </h3>
-    <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS2 S3"
+    </Text>
+    <Text
+      className="IS3"
     >
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406"
-      >
+      <Text>
         
         ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
         ...
-      </span>
-    </div>
+      </Text>
+    </Text>
     <ArticleFlags
       flags={
         Array [
@@ -86,42 +65,25 @@ exports[`tile y huge 1`] = `
       }
       longRead={true}
     />
-  </div>
+  </View>
 </Link>
 `;
 
 exports[`tile y medium 1`] = `
 <style>
-.S1 {
+.IS1 {
   margin-bottom: 0px;
 }
 
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.IS1 {
-  font-size: 30px;
-  line-height: 30px;
-}
-
 .IS2 {
-  margin-top: 5px;
+  0: [object Object];
+  1: [object Object];
+  2: [object Object];
+}
+
+.IS3 {
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -135,36 +97,32 @@ exports[`tile y medium 1`] = `
   }
   url="/article/123"
 >
-  <div
-    className="css-view-1dbjc4n"
-  >
-    <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+  <View>
+    <View
+      className="IS1"
     >
       <ArticleLabel
         color="#005B8D"
         isVideo={false}
         title="label"
       />
-    </div>
-    <h3
+    </View>
+    <Text
+      accessibilityRole="header"
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
-      role="heading"
+      className="IS2"
     >
       This is tile headline
-    </h3>
-    <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS2 S3"
+    </Text>
+    <Text
+      className="IS3"
     >
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406"
-      >
+      <Text>
         
         ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
         ...
-      </span>
-    </div>
+      </Text>
+    </Text>
     <ArticleFlags
       flags={
         Array [
@@ -176,42 +134,25 @@ exports[`tile y medium 1`] = `
       }
       longRead={true}
     />
-  </div>
+  </View>
 </Link>
 `;
 
 exports[`tile y wide 1`] = `
 <style>
-.S1 {
+.IS1 {
   margin-bottom: 0px;
 }
 
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.IS1 {
-  font-size: 30px;
-  line-height: 30px;
-}
-
 .IS2 {
-  margin-top: 5px;
+  0: [object Object];
+  1: [object Object];
+  2: [object Object];
+}
+
+.IS3 {
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -225,36 +166,32 @@ exports[`tile y wide 1`] = `
   }
   url="/article/123"
 >
-  <div
-    className="css-view-1dbjc4n"
-  >
-    <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+  <View>
+    <View
+      className="IS1"
     >
       <ArticleLabel
         color="#005B8D"
         isVideo={false}
         title="label"
       />
-    </div>
-    <h3
+    </View>
+    <Text
+      accessibilityRole="header"
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
-      role="heading"
+      className="IS2"
     >
       This is tile headline
-    </h3>
-    <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS2 S3"
+    </Text>
+    <Text
+      className="IS3"
     >
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406"
-      >
+      <Text>
         
         ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
         ...
-      </span>
-    </div>
+      </Text>
+    </Text>
     <ArticleFlags
       flags={
         Array [
@@ -266,42 +203,25 @@ exports[`tile y wide 1`] = `
       }
       longRead={true}
     />
-  </div>
+  </View>
 </Link>
 `;
 
 exports[`tile y without breakpoint should be like medium 1`] = `
 <style>
-.S1 {
+.IS1 {
   margin-bottom: 0px;
 }
 
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.IS1 {
-  font-size: 30px;
-  line-height: 30px;
-}
-
 .IS2 {
-  margin-top: 5px;
+  0: [object Object];
+  1: [object Object];
+  2: [object Object];
+}
+
+.IS3 {
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -315,36 +235,32 @@ exports[`tile y without breakpoint should be like medium 1`] = `
   }
   url="/article/123"
 >
-  <div
-    className="css-view-1dbjc4n"
-  >
-    <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+  <View>
+    <View
+      className="IS1"
     >
       <ArticleLabel
         color="#005B8D"
         isVideo={false}
         title="label"
       />
-    </div>
-    <h3
+    </View>
+    <Text
+      accessibilityRole="header"
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
-      role="heading"
+      className="IS2"
     >
       This is tile headline
-    </h3>
-    <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS2 S3"
+    </Text>
+    <Text
+      className="IS3"
     >
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406"
-      >
+      <Text>
         
         ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
         ...
-      </span>
-    </div>
+      </Text>
+    </Text>
     <ArticleFlags
       flags={
         Array [
@@ -356,6 +272,6 @@ exports[`tile y without breakpoint should be like medium 1`] = `
       }
       longRead={true}
     />
-  </div>
+  </View>
 </Link>
 `;

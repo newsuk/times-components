@@ -1,21 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. single inline element 1`] = `
-<div
-  className="css-view-1dbjc4n"
->
+<View>
   <div
     className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
   >
     Lindsay McIntosh, Scottish Political Editor
   </div>
-</div>
+</View>
 `;
 
 exports[`2. with the author in the begining 1`] = `
-<div
-  className="css-view-1dbjc4n"
->
+<View>
   <a
     className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/camilla-long"
@@ -27,13 +23,11 @@ exports[`2. with the author in the begining 1`] = `
   >
     , Environment Editor
   </div>
-</div>
+</View>
 `;
 
 exports[`3. with the author at the end 1`] = `
-<div
-  className="css-view-1dbjc4n"
->
+<View>
   <div
     className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
   >
@@ -45,13 +39,11 @@ exports[`3. with the author at the end 1`] = `
   >
     Mike Atherton
   </a>
-</div>
+</View>
 `;
 
 exports[`4. with multiple authors separated by a pipe 1`] = `
-<div
-  className="css-view-1dbjc4n"
->
+<View>
   <a
     className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/camilla-long"
@@ -80,13 +72,11 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
   >
     Alexandra Frean
   </a>
-</div>
+</View>
 `;
 
 exports[`5. with multiple authors separated by text with commas 1`] = `
-<div
-  className="css-view-1dbjc4n"
->
+<View>
   <a
     className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/camilla-long"
@@ -115,13 +105,11 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
   >
     Alexandra Frean
   </a>
-</div>
+</View>
 `;
 
 exports[`6. with multiple authors separated by spaces 1`] = `
-<div
-  className="css-view-1dbjc4n"
->
+<View>
   <a
     className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/camilla-long"
@@ -145,7 +133,7 @@ exports[`6. with multiple authors separated by spaces 1`] = `
   >
     Alexandra Frean
   </a>
-</div>
+</View>
 `;
 
 exports[`7. null with an empty ast 1`] = `null`;

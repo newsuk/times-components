@@ -2,20 +2,6 @@
 
 exports[`tile p without breakpoint 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-}
-
 .IS1 {
   overflow: hidden;
   width: 30%;
@@ -32,30 +18,24 @@ exports[`tile p without breakpoint 1`] = `
 }
 
 .IS3 {
-  color: rgba(29,29,27,1.00);
-  font-size: 35px;
-  line-height: 35px;
-  padding-right: 10px;
-  padding-left: 10px;
-  text-align: center;
+  margin-bottom: 0px;
 }
 
 .IS4 {
-  font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
-  line-height: 20px;
-  padding-right: 40px;
-  padding-left: 40px;
-  text-align: center;
+  0: [object Object];
+  1: [object Object];
+  2: [object Object];
 }
 
 .IS5 {
-  -webkit-align-items: center;
+  0: [object Object];
+  1: [object Object];
+}
+
+.IS6 {
   align-items: center;
-  padding-bottom: 15px;
   padding-top: 10px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
+  padding-bottom: 15px;
 }
 </style>
 
@@ -87,32 +67,32 @@ exports[`tile p without breakpoint 1`] = `
   >
     , Hanoi
   </div>
-  <div
-    className="css-view-1dbjc4n IS5"
+  <View
+    className="IS6"
   >
-    <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    <View
+      className="IS3"
     >
       <ArticleLabel
         color="#005B8D"
         isVideo={false}
         title="label"
       />
-    </div>
-    <h3
+    </View>
+    <Text
+      accessibilityRole="header"
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S2"
-      role="heading"
+      className="IS4"
     >
       This is tile headline
-    </h3>
-    <h4
+    </Text>
+    <Text
+      accessibilityRole="header"
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-paddingBottom-1mi0q7o IS4 S3"
-      role="heading"
+      className="IS5"
     >
       Three Conservative MPs resign
-    </h4>
+    </Text>
     <ArticleFlags
       flags={
         Array [
@@ -124,6 +104,6 @@ exports[`tile p without breakpoint 1`] = `
       }
       longRead={true}
     />
-  </div>
+  </View>
 </Link>
 `;

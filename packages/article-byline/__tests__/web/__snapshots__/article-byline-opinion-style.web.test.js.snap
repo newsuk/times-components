@@ -1,21 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. with a single author 1`] = `
-<div
-  className="css-view-1dbjc4n"
->
+<View>
   <div
     className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
   >
     Alexandra Frean
   </div>
-</div>
+</View>
 `;
 
 exports[`2. with a very long byline 1`] = `
-<div
-  className="css-view-1dbjc4n"
->
+<View>
   <div
     className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
   >
@@ -46,5 +42,5 @@ exports[`2. with a very long byline 1`] = `
   >
     , Environment Editor
   </div>
-</div>
+</View>
 `;

@@ -2,47 +2,27 @@
 
 exports[`tile n huge 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
 .IS1 {
   flex: 1;
 }
 
 .IS2 {
-  color: rgba(255,255,255,1.00);
-  font-size: 35px;
-  line-height: 35px;
-  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 .IS3 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  padding-left: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  0: [object Object];
+  1: [object Object];
+  2: [object Object];
 }
 
 .IS4 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
+  padding-left: 10px;
+  flex: 1;
+}
+
+.IS5 {
   flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -56,8 +36,8 @@ exports[`tile n huge 1`] = `
   }
   url="/article/123"
 >
-  <div
-    className="css-view-1dbjc4n IS4"
+  <View
+    className="IS5"
   >
     <Image
       aspectRatio={1}
@@ -65,25 +45,25 @@ exports[`tile n huge 1`] = `
       fill={true}
       uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
     />
-    <div
-      className="css-view-1dbjc4n IS3"
+    <View
+      className="IS4"
     >
-      <div
-        className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      <View
+        className="IS2"
       >
         <ArticleLabel
           color="#CCC"
           isVideo={false}
           title="label"
         />
-      </div>
-      <h3
+      </View>
+      <Text
+        accessibilityRole="header"
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
-        role="heading"
+        className="IS3"
       >
         This is tile headline
-      </h3>
+      </Text>
       <ArticleFlags
         color="#CCC"
         flags={
@@ -96,62 +76,39 @@ exports[`tile n huge 1`] = `
         }
         longRead={true}
       />
-    </div>
-  </div>
+    </View>
+  </View>
 </Link>
 `;
 
 exports[`tile n medium 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
 .IS1 {
   flex: 1;
 }
 
 .IS2 {
-  color: rgba(255,255,255,1.00);
-  font-size: 18px;
-  line-height: 18px;
+  margin-bottom: 0px;
 }
 
 .IS3 {
-  color: rgba(204,204,204,1.00);
-  font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
-  line-height: 20px;
-  padding-bottom: 0px;
-  padding-top: 5px;
+  0: [object Object];
+  1: [object Object];
+  2: [object Object];
 }
 
 .IS4 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  padding-left: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  0: [object Object];
+  1: [object Object];
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
+  padding-left: 10px;
+  flex: 1;
+}
+
+.IS6 {
   flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -165,8 +122,8 @@ exports[`tile n medium 1`] = `
   }
   url="/article/123"
 >
-  <div
-    className="css-view-1dbjc4n IS5"
+  <View
+    className="IS6"
   >
     <Image
       aspectRatio={1}
@@ -174,32 +131,32 @@ exports[`tile n medium 1`] = `
       fill={true}
       uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
     />
-    <div
-      className="css-view-1dbjc4n IS4"
+    <View
+      className="IS5"
     >
-      <div
-        className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      <View
+        className="IS2"
       >
         <ArticleLabel
           color="#CCC"
           isVideo={false}
           title="label"
         />
-      </div>
-      <h3
+      </View>
+      <Text
+        accessibilityRole="header"
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
-        role="heading"
+        className="IS3"
       >
         This is tile headline
-      </h3>
-      <h4
+      </Text>
+      <Text
+        accessibilityRole="header"
         aria-level="4"
-        className="css-reset-4rbku5 css-text-901oao IS3"
-        role="heading"
+        className="IS4"
       >
         Three Conservative MPs resign
-      </h4>
+      </Text>
       <ArticleFlags
         color="#CCC"
         flags={
@@ -212,63 +169,39 @@ exports[`tile n medium 1`] = `
         }
         longRead={true}
       />
-    </div>
-  </div>
+    </View>
+  </View>
 </Link>
 `;
 
 exports[`tile n small 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-  font-family: TimesModern-Regular;
-  line-height: 24px;
-}
-
 .IS1 {
   flex: 1;
 }
 
 .IS2 {
-  color: rgba(255,255,255,1.00);
-  font-size: 18px;
-  line-height: 18px;
+  margin-bottom: 0px;
 }
 
 .IS3 {
-  font-size: 14px;
+  0: [object Object];
+  1: [object Object];
+  2: [object Object];
 }
 
 .IS4 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  padding-left: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  0: [object Object];
+  1: [object Object];
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
+  padding-left: 10px;
+  flex: 1;
+}
+
+.IS6 {
   flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -283,8 +216,8 @@ exports[`tile n small 1`] = `
   }
   url="/article/123"
 >
-  <div
-    className="css-view-1dbjc4n IS5"
+  <View
+    className="IS6"
   >
     <Image
       aspectRatio={1}
@@ -292,32 +225,32 @@ exports[`tile n small 1`] = `
       fill={true}
       uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
     />
-    <div
-      className="css-view-1dbjc4n IS4"
+    <View
+      className="IS5"
     >
-      <div
-        className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      <View
+        className="IS2"
       >
         <ArticleLabel
           color="#CCC"
           isVideo={false}
           title="label"
         />
-      </div>
-      <h3
+      </View>
+      <Text
+        accessibilityRole="header"
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
-        role="heading"
+        className="IS3"
       >
         This is tile headline
-      </h3>
-      <h4
+      </Text>
+      <Text
+        accessibilityRole="header"
         aria-level="4"
-        className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-lineHeight-135wba7 r-paddingBottom-1mi0q7o IS3 S3"
-        role="heading"
+        className="IS4"
       >
         Three Conservative MPs resign
-      </h4>
+      </Text>
       <ArticleFlags
         color="#CCC"
         flags={
@@ -330,62 +263,39 @@ exports[`tile n small 1`] = `
         }
         longRead={true}
       />
-    </div>
-  </div>
+    </View>
+  </View>
 </Link>
 `;
 
 exports[`tile n wide 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
 .IS1 {
   flex: 1;
 }
 
 .IS2 {
-  color: rgba(255,255,255,1.00);
-  font-size: 28px;
-  line-height: 28px;
+  margin-bottom: 0px;
 }
 
 .IS3 {
-  color: rgba(204,204,204,1.00);
-  font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
-  line-height: 20px;
-  padding-bottom: 0px;
-  padding-top: 5px;
+  0: [object Object];
+  1: [object Object];
+  2: [object Object];
 }
 
 .IS4 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  padding-left: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  0: [object Object];
+  1: [object Object];
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
+  padding-left: 10px;
+  flex: 1;
+}
+
+.IS6 {
   flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -399,8 +309,8 @@ exports[`tile n wide 1`] = `
   }
   url="/article/123"
 >
-  <div
-    className="css-view-1dbjc4n IS5"
+  <View
+    className="IS6"
   >
     <Image
       aspectRatio={1}
@@ -408,32 +318,32 @@ exports[`tile n wide 1`] = `
       fill={true}
       uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
     />
-    <div
-      className="css-view-1dbjc4n IS4"
+    <View
+      className="IS5"
     >
-      <div
-        className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      <View
+        className="IS2"
       >
         <ArticleLabel
           color="#CCC"
           isVideo={false}
           title="label"
         />
-      </div>
-      <h3
+      </View>
+      <Text
+        accessibilityRole="header"
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
-        role="heading"
+        className="IS3"
       >
         This is tile headline
-      </h3>
-      <h4
+      </Text>
+      <Text
+        accessibilityRole="header"
         aria-level="4"
-        className="css-reset-4rbku5 css-text-901oao IS3"
-        role="heading"
+        className="IS4"
       >
         Three Conservative MPs resign
-      </h4>
+      </Text>
       <ArticleFlags
         color="#CCC"
         flags={
@@ -446,63 +356,39 @@ exports[`tile n wide 1`] = `
         }
         longRead={true}
       />
-    </div>
-  </div>
+    </View>
+  </View>
 </Link>
 `;
 
 exports[`tile n with default star 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-  font-family: TimesModern-Regular;
-  line-height: 24px;
-}
-
 .IS1 {
   flex: 1;
 }
 
 .IS2 {
-  color: rgba(255,255,255,1.00);
-  font-size: 18px;
-  line-height: 18px;
+  margin-bottom: 0px;
 }
 
 .IS3 {
-  font-size: 14px;
+  0: [object Object];
+  1: [object Object];
+  2: [object Object];
 }
 
 .IS4 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  padding-left: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  0: [object Object];
+  1: [object Object];
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
+  padding-left: 10px;
+  flex: 1;
+}
+
+.IS6 {
   flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -517,8 +403,8 @@ exports[`tile n with default star 1`] = `
   }
   url="/article/123"
 >
-  <div
-    className="css-view-1dbjc4n IS5"
+  <View
+    className="IS6"
   >
     <Image
       aspectRatio={1}
@@ -526,32 +412,32 @@ exports[`tile n with default star 1`] = `
       fill={true}
       uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
     />
-    <div
-      className="css-view-1dbjc4n IS4"
+    <View
+      className="IS5"
     >
-      <div
-        className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      <View
+        className="IS2"
       >
         <ArticleLabel
           color="#CCC"
           isVideo={false}
           title="label"
         />
-      </div>
-      <h3
+      </View>
+      <Text
+        accessibilityRole="header"
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
-        role="heading"
+        className="IS3"
       >
         This is tile headline
-      </h3>
-      <h4
+      </Text>
+      <Text
+        accessibilityRole="header"
         aria-level="4"
-        className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-lineHeight-135wba7 r-paddingBottom-1mi0q7o IS3 S3"
-        role="heading"
+        className="IS4"
       >
         Three Conservative MPs resign
-      </h4>
+      </Text>
       <ArticleFlags
         color="#CCC"
         flags={
@@ -564,63 +450,39 @@ exports[`tile n with default star 1`] = `
         }
         longRead={true}
       />
-    </div>
-  </div>
+    </View>
+  </View>
 </Link>
 `;
 
 exports[`tile n without breakpoint should be like small 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-  font-family: TimesModern-Regular;
-  line-height: 24px;
-}
-
 .IS1 {
   flex: 1;
 }
 
 .IS2 {
-  color: rgba(255,255,255,1.00);
-  font-size: 18px;
-  line-height: 18px;
+  margin-bottom: 0px;
 }
 
 .IS3 {
-  font-size: 14px;
+  0: [object Object];
+  1: [object Object];
+  2: [object Object];
 }
 
 .IS4 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  padding-left: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  0: [object Object];
+  1: [object Object];
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
+  padding-left: 10px;
+  flex: 1;
+}
+
+.IS6 {
   flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -635,8 +497,8 @@ exports[`tile n without breakpoint should be like small 1`] = `
   }
   url="/article/123"
 >
-  <div
-    className="css-view-1dbjc4n IS5"
+  <View
+    className="IS6"
   >
     <Image
       aspectRatio={1}
@@ -644,32 +506,32 @@ exports[`tile n without breakpoint should be like small 1`] = `
       fill={true}
       uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
     />
-    <div
-      className="css-view-1dbjc4n IS4"
+    <View
+      className="IS5"
     >
-      <div
-        className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      <View
+        className="IS2"
       >
         <ArticleLabel
           color="#CCC"
           isVideo={false}
           title="label"
         />
-      </div>
-      <h3
+      </View>
+      <Text
+        accessibilityRole="header"
         aria-level="3"
-        className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
-        role="heading"
+        className="IS3"
       >
         This is tile headline
-      </h3>
-      <h4
+      </Text>
+      <Text
+        accessibilityRole="header"
         aria-level="4"
-        className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-lineHeight-135wba7 r-paddingBottom-1mi0q7o IS3 S3"
-        role="heading"
+        className="IS4"
       >
         Three Conservative MPs resign
-      </h4>
+      </Text>
       <ArticleFlags
         color="#CCC"
         flags={
@@ -682,7 +544,7 @@ exports[`tile n without breakpoint should be like small 1`] = `
         }
         longRead={true}
       />
-    </div>
-  </div>
+    </View>
+  </View>
 </Link>
 `;

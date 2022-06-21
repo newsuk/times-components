@@ -25,18 +25,11 @@ Object {
 `;
 
 exports[`4. animations should have a fadein animation wrapper component 1`] = `
-.c0 {
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
-}
-
-<div
-  className="c0 animations__FadeIn-sc-2iiu4y-0 c0 css-view-1dbjc4n"
+<View
+  className="animations__FadeIn-sc-2iiu4y-0 iZkZiB"
 >
-  <div
-    className="css-text-901oao"
-  >
+  <Text>
     Hello World
-  </div>
-</div>
+  </Text>
+</View>
 `;

@@ -5,7 +5,8 @@ const styles = {
     borderColor: colours.functional.keyline,
     borderRightWidth: 1,
     borderStyle: "solid",
-    marginVertical: spacing(2)
+    marginLeft: spacing(2),
+    marginRight: spacing(2)
   },
   itemRowSeparator: {
     borderBottomWidth: 1,
