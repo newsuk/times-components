@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`The flatten style serializer should for web flatten styles 1`] = `
-<View>
+<div
+  className="css-view-1dbjc4n"
+>
   <Placeholder
     style={
       Object {
@@ -10,5 +12,5 @@ exports[`The flatten style serializer should for web flatten styles 1`] = `
       }
     }
   />
-</View>
+</div>
 `;

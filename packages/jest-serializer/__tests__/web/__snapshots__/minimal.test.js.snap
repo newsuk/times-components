@@ -1,40 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`The minimal serializer should for web not remove className 1`] = `
-<Text
-  style={
-    Array [
-      Object {
-        "color": "red",
-      },
-      Object {
-        "padding": 1,
-      },
-    ]
-  }
+<div
+  className="css-text-901oao r-color-howw7u r-padding-ub6tad"
 />
 `;
 
 exports[`The minimal serializer should for web remove empty objects as props 1`] = `
-<View>
-  <Text />
-</View>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-text-901oao"
+  />
+</div>
 `;
 
 exports[`The minimal serializer should for web remove functions as props 1`] = `
-<View>
-  <Text />
-</View>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-text-901oao"
+  />
+</div>
 `;
 
 exports[`The minimal serializer should for web remove undefined props 1`] = `
-<View>
-  <Text
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
     False={false}
     Null={null}
     Zero={0}
+    className="css-text-901oao"
   />
-</View>
+</div>
 `;
 
 exports[`The minimal serializer should for web transform render props 1`] = `
