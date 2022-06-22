@@ -1,7 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`default styles 1`] = `
+.c4 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
 .c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -19,23 +46,26 @@ exports[`default styles 1`] = `
 }
 
 .c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   padding-left: 10px;
   padding-right: 10px;
-}
-
-.c4 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
 }
 
 .c6 {
@@ -76,6 +106,24 @@ exports[`default styles 1`] = `
   flex-direction: row;
 }
 
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
 .c0 .imageContainerClass {
   display: block;
 }
@@ -89,6 +137,21 @@ exports[`default styles 1`] = `
 }
 
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -267,16 +330,16 @@ exports[`default styles 1`] = `
     </h3>
   </div>
   <div
-    className="c0 config__Base-bs1997-0 config__Base-bs1997-1 config__Base-bs1997-2 c0 css-view-1dbjc4n"
+    className="c0"
   >
     <div
-      className="c1 responsive__SliceContainer-sc-1kirgpc-0 c1 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="c2 responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-3 responsive__Base-sc-1lqbq6a-4 c2 css-view-1dbjc4n"
+        className="c2"
       >
         <div
-          className="c3 responsive__ChildContainer-sc-1lqbq6a-0 c3 css-view-1dbjc4n"
+          className="c3"
         >
           <div>
             <Link>

@@ -1,8 +1,8 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/ts-styleguide";
 
-export const SliceContainer = styled(View)`
+export const SliceContainer = styled(TcView)`
   align-items: center;
   border-bottom-color: ${colours.functional.keyline};
   border-bottom-width: 1px;
@@ -15,7 +15,7 @@ export const SliceContainer = styled(View)`
   }
 `;
 
-export const getSeparator = ({ hasLeftRightMargin }) => styled(View)`
+export const getSeparator = ({ hasLeftRightMargin }) => styled(TcView)`
   border-bottom-color: ${colours.functional.keyline};
   border-bottom-style: solid;
   border-bottom-width: 1px;

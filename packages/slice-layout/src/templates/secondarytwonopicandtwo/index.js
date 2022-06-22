@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { editionBreakpoints } from "@times-components/ts-styleguide";
 import PropTypes from "prop-types";
 import styleFactory from "./styles";
@@ -24,7 +24,7 @@ const SecondaryTwoNoPicAndTwoSlice = ({
 
   if (breakpoint === editionBreakpoints.medium) {
     return (
-      <View style={styles.container}>
+      <TcView style={styles.container}>
         <HorizontalLayout
           containerStyle={styles.itemContainer}
           tiles={[
@@ -42,12 +42,12 @@ const SecondaryTwoNoPicAndTwoSlice = ({
           ]}
           colSeparatorStyle={styles.supportColSeparator}
         />
-      </View>
+      </TcView>
     );
   }
 
   return (
-    <View style={styles.rowContainer}>
+    <TcView style={styles.rowContainer}>
       <HorizontalLayout
         containerStyle={styles.secondaryContainer}
         tiles={[
@@ -61,7 +61,7 @@ const SecondaryTwoNoPicAndTwoSlice = ({
         style={styles.supportContainer}
         tiles={[support1, support2]}
       />
-    </View>
+    </TcView>
   );
 };
 

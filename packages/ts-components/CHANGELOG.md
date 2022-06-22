@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.45.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.44.2...@times-components/ts-components@1.45.0) (2022-06-22)
+
+
+### Features
+
+* **TDP-1421:** Remove react native from 'times-components/slice-layout' package ([#2994](https://github.com/newsuk/times-components/issues/2994)) ([dc5dc4d](https://github.com/newsuk/times-components/commit/dc5dc4da032565a727e4e62adfc5b606ad60c298))
+
+
+
+
+
+## [1.44.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.44.1...@times-components/ts-components@1.44.2) (2022-06-21)
+
+
+### Bug Fixes
+
+* **TDP-1967:** recommended articles analytics ([#2995](https://github.com/newsuk/times-components/issues/2995)) ([736fd4f](https://github.com/newsuk/times-components/commit/736fd4f822a3e951c918853fcaf41440f5168a48))
+
+
+
+
+
 ## [1.44.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.44.0...@times-components/ts-components@1.44.1) (2022-06-21)
 
 **Note:** Version bump only for package @times-components/ts-components

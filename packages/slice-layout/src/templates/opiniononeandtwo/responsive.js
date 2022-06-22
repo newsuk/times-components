@@ -1,8 +1,8 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/ts-styleguide";
 
-export const getContainer = ({ supportCount }) => styled(View)`
+export const getContainer = ({ supportCount }) => styled(TcView)`
   flex: 1;
   flex-direction: column;
   flex-wrap: wrap;
@@ -27,7 +27,7 @@ export const getContainer = ({ supportCount }) => styled(View)`
 `;
 
 export const getOpinionContainer = ({ hasSupports, supportCount }) => {
-  let Base = styled(View)`
+  let Base = styled(TcView)`
     flex: 1;
     flex-grow: 1;
     padding-left: ${spacing(2)};
@@ -90,7 +90,7 @@ export const getOpinionContainer = ({ hasSupports, supportCount }) => {
   return Base;
 };
 
-export const getSeparator = ({ itemCount }) => styled(View)`
+export const getSeparator = ({ itemCount }) => styled(TcView)`
   border-bottom-color: ${colours.functional.keyline};
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -115,7 +115,7 @@ export const getSeparator = ({ itemCount }) => styled(View)`
 `;
 
 export const getSupportsContainer = ({ supportCount }) => {
-  let Base = styled(View)`
+  let Base = styled(TcView)`
     flex: 1;
     flex-direction: column;
     height: auto;
@@ -144,7 +144,7 @@ export const getSupportsContainer = ({ supportCount }) => {
 };
 
 export const getSupportContainer = ({ index, supportCount }) => {
-  let Base = styled(View)`
+  let Base = styled(TcView)`
     flex: 1;
     flex-wrap: wrap;
     min-height: auto;

@@ -1,6 +1,6 @@
 /* eslint-disable react/require-default-props */
 import React, { Fragment } from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { editionBreakpoints } from "@times-components/ts-styleguide";
 import PropTypes from "prop-types";
 import styleFactory from "./styles";
@@ -45,7 +45,7 @@ const SecondaryFourSlice = ({
   }
 
   return (
-    <View style={containerStyles}>
+    <TcView style={containerStyles}>
       <HorizontalLayout
         containerStyle={styles.columnsContainer}
         tiles={[
@@ -59,7 +59,7 @@ const SecondaryFourSlice = ({
         style={styles.rowsContainer}
         tiles={[secondary3, secondary4]}
       />
-    </View>
+    </TcView>
   );
 };
 
