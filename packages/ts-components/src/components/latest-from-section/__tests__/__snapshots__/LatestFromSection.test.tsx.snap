@@ -43,16 +43,16 @@ exports[`<LatestFromSection> renders  1`] = `
       </h3>
     </div>
     <div
-      class="config__Base-bs1997-0 config__Base-bs1997-2 ETkHz config__Base-bs1997-0 config__Base-bs1997-2 ETkHz css-view-1dbjc4n"
+      class="tc-view__TcView-nuazoi-0 config__Base-bs1997-0 config__Base-bs1997-2 gpmFGs"
     >
       <div
-        class="responsive__SliceContainer-sc-1kirgpc-0 ioiqOj responsive__SliceContainer-sc-1kirgpc-0 ioiqOj css-view-1dbjc4n"
+        class="tc-view__TcView-nuazoi-0 responsive__SliceContainer-sc-1kirgpc-0 dOGrmV"
       >
         <div
-          class="responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-2 responsive__Base-sc-1lqbq6a-4 gpRihd responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-2 responsive__Base-sc-1lqbq6a-4 gpRihd css-view-1dbjc4n"
+          class="tc-view__TcView-nuazoi-0 responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-2 responsive__Base-sc-1lqbq6a-4 fwcUxi"
         >
           <div
-            class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
+            class="tc-view__TcView-nuazoi-0 responsive__ChildContainer-sc-1lqbq6a-0 wGIJh"
           >
             <div
               data-testid="related-article-item"
@@ -128,14 +128,14 @@ exports[`<LatestFromSection> renders  1`] = `
                             CYCLING | DAVID WALSH
                           </div>
                         </div>
-                        <h3
+                        <div
                           aria-level="3"
-                          class="headlineClass"
+                          class="headlineClass tc-text__TcText-sc-15igzev-0 lhcAkf"
                           role="heading"
                           style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
                         >
                           The entire Tour bows to the greatness of Cavendish
-                        </h3>
+                        </div>
                         <div
                           class="css-view-1dbjc4n"
                         >
@@ -189,10 +189,10 @@ exports[`<LatestFromSection> renders  1`] = `
             </div>
           </div>
           <div
-            class="responsive-sc-1kirgpc-1 fAXubH responsive-sc-1kirgpc-1 fAXubH css-view-1dbjc4n"
+            class="tc-view__TcView-nuazoi-0 responsive-sc-1kirgpc-1 kpLnTa"
           />
           <div
-            class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
+            class="tc-view__TcView-nuazoi-0 responsive__ChildContainer-sc-1lqbq6a-0 wGIJh"
           >
             <div
               data-testid="related-article-item"
@@ -268,14 +268,14 @@ exports[`<LatestFromSection> renders  1`] = `
                             EURO 2020 | MATT LAWTON
                           </div>
                         </div>
-                        <h3
+                        <div
                           aria-level="3"
-                          class="headlineClass"
+                          class="headlineClass tc-text__TcText-sc-15igzev-0 lhcAkf"
                           role="heading"
                           style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
                         >
                           Flawless Pickford repels everything Germans muster
-                        </h3>
+                        </div>
                         <div
                           class="css-view-1dbjc4n"
                         >
@@ -329,10 +329,10 @@ exports[`<LatestFromSection> renders  1`] = `
             </div>
           </div>
           <div
-            class="responsive-sc-1kirgpc-1 fAXubH responsive-sc-1kirgpc-1 fAXubH css-view-1dbjc4n"
+            class="tc-view__TcView-nuazoi-0 responsive-sc-1kirgpc-1 kpLnTa"
           />
           <div
-            class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
+            class="tc-view__TcView-nuazoi-0 responsive__ChildContainer-sc-1lqbq6a-0 wGIJh"
           >
             <div
               data-testid="related-article-item"
@@ -408,14 +408,14 @@ exports[`<LatestFromSection> renders  1`] = `
                             EURO 2020 | JONATHAN NORTHCROFT
                           </div>
                         </div>
-                        <h3
+                        <div
                           aria-level="3"
-                          class="headlineClass"
+                          class="headlineClass tc-text__TcText-sc-15igzev-0 lhcAkf"
                           role="heading"
                           style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
                         >
                           The tactical masterstrokes behind England’s ruthless win
-                        </h3>
+                        </div>
                         <div
                           class="css-view-1dbjc4n"
                         >
