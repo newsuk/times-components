@@ -2,33 +2,33 @@
 
 exports[`1. article summary component with a single paragraph 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <ArticleLabel
       color="#333333"
       title="Test label"
     />
   </div>
-  <h3
+  <div
     aria-level="3"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Headline
-  </h3>
+  </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       
       Test paragraph
       ...
-    </span>
+    </div>
   </div>
   <ArticleFlags
     flags={
@@ -45,7 +45,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     }
   />
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -53,7 +53,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </div>
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <ArticleByline
       ast={
@@ -95,10 +95,10 @@ exports[`1. article summary component with a single paragraph 1`] = `
 
 exports[`2. article summary with opinion byline 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <ArticleLabel
       color="#333333"
@@ -106,7 +106,7 @@ exports[`2. article summary with opinion byline 1`] = `
     />
   </div>
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <ArticleBylineOpinion
       ast={
@@ -133,26 +133,26 @@ exports[`2. article summary with opinion byline 1`] = `
       isOpinionByline={true}
     />
   </div>
-  <h3
+  <div
     aria-level="3"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Headline
-  </h3>
+  </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       
       Test paragraph
       ...
-    </span>
+    </div>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -164,34 +164,34 @@ exports[`2. article summary with opinion byline 1`] = `
 
 exports[`3. article summary component with multiple paragraphs 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
-  <h3
+  <div
     aria-level="3"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Headline
-  </h3>
+  </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       
       Test paragraph 1.
-    </span>
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    </div>
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
        
       Test paragraph 2
       ...
-    </span>
+    </div>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -199,7 +199,7 @@ exports[`3. article summary component with multiple paragraphs 1`] = `
     />
   </div>
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <ArticleByline
       ast={
@@ -230,13 +230,13 @@ exports[`3. article summary component with multiple paragraphs 1`] = `
 
 exports[`4. article summary component with content including line breaks 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       
       <b>
@@ -246,9 +246,9 @@ exports[`4. article summary component with content including line breaks 1`] = `
        ITV
       <br />
       ★★★★☆
-    </span>
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    </div>
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
        
       <b>
@@ -258,61 +258,61 @@ exports[`4. article summary component with content including line breaks 1`] = `
        BBC Two
       <br />
       ★★★☆☆
-    </span>
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    </div>
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
        
       Test paragraph
       ...
-    </span>
+    </div>
   </div>
 </div>
 `;
 
 exports[`5. article summary component containing links 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <ArticleLabel
       color="#333333"
       title="Test label"
     />
   </div>
-  <h3
+  <div
     aria-level="3"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Headline
-  </h3>
-  <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
-  >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
-    >
-      
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406"
-      >
-        Sajid Javid
-      </span>
-       has warned the Home Office to expect an overhaul after the 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406"
-      >
-        Windrush scandal
-      </span>
-       as he ditches the policy of creating a “hostile
-      ...
-    </span>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  >
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    >
+      
+      <div
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      >
+        Sajid Javid
+      </div>
+       has warned the Home Office to expect an overhaul after the 
+      <div
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      >
+        Windrush scandal
+      </div>
+       as he ditches the policy of creating a “hostile
+      ...
+    </div>
+  </div>
+  <div
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -324,25 +324,25 @@ exports[`5. article summary component containing links 1`] = `
 
 exports[`6. article summary component with headline and no content 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <ArticleLabel
       color="#333333"
       title="Test label"
     />
   </div>
-  <h3
+  <div
     aria-level="3"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Headline
-  </h3>
+  </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <DatePublication
       date="2017-07-01T14:32:00.000Z"
@@ -354,47 +354,47 @@ exports[`6. article summary component with headline and no content 1`] = `
 
 exports[`7. article summary component with empty content at the end trimmed 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <ArticleLabel
       color="#333333"
       title="Test label"
     />
   </div>
-  <h3
+  <div
     aria-level="3"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Headline
-  </h3>
+  </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       
       Test paragraph 1.
-    </span>
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    </div>
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
        
       Test paragraph 2
-    </span>
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    </div>
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
        
       ...
-    </span>
+    </div>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <DatePublication
       date="2017-07-01T14:32:00.000Z"
@@ -402,7 +402,7 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
     />
   </div>
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <ArticleByline
       ast={
@@ -433,28 +433,28 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
 
 exports[`8. article summary component with no byline 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
-  <h3
+  <div
     aria-level="3"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Headline
-  </h3>
+  </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       
       Test paragraph
       ...
-    </span>
+    </div>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -466,28 +466,28 @@ exports[`8. article summary component with no byline 1`] = `
 
 exports[`9. article summary component with no label 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
-  <h3
+  <div
     aria-level="3"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Headline
-  </h3>
+  </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       
       Test paragraph
       ...
-    </span>
+    </div>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -495,7 +495,7 @@ exports[`9. article summary component with no label 1`] = `
     />
   </div>
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <ArticleByline
       ast={
@@ -526,10 +526,10 @@ exports[`9. article summary component with no label 1`] = `
 
 exports[`10. article summary component with no headline 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <ArticleLabel
       color="#333333"
@@ -537,18 +537,18 @@ exports[`10. article summary component with no headline 1`] = `
     />
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       
       Test paragraph
       ...
-    </span>
+    </div>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <DatePublication
       date="2017-07-01T14:32:00.000Z"
@@ -560,36 +560,36 @@ exports[`10. article summary component with no headline 1`] = `
 
 exports[`11. article summary component with no date publication 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <ArticleLabel
       color="#333333"
       title="Test label"
     />
   </div>
-  <h3
+  <div
     aria-level="3"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Headline
-  </h3>
+  </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       
       Test paragraph
       ...
-    </span>
+    </div>
   </div>
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <ArticleByline
       ast={
@@ -620,10 +620,10 @@ exports[`11. article summary component with no date publication 1`] = `
 
 exports[`12. article summary component with a video label 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <VideoLabel
       color="#333333"
@@ -631,26 +631,26 @@ exports[`12. article summary component with a video label 1`] = `
       title="Test label"
     />
   </div>
-  <h3
+  <div
     aria-level="3"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Headline
-  </h3>
+  </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       
       Test paragraph
       ...
-    </span>
+    </div>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -658,7 +658,7 @@ exports[`12. article summary component with a video label 1`] = `
     />
   </div>
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <ArticleByline
       ast={
@@ -689,40 +689,40 @@ exports[`12. article summary component with a video label 1`] = `
 
 exports[`13. article summary component with a strapline 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <ArticleLabel
       color="#333333"
       title="Test label"
     />
   </div>
-  <h3
+  <div
     aria-level="3"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Headline
-  </h3>
-  <h4
+  </div>
+  <div
     aria-level="4"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-evnaw r-lineHeight-135wba7 r-paddingBottom-1mi0q7o"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Strapline
-  </h4>
+  </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       
       Test paragraph
       ...
-    </span>
+    </div>
   </div>
   <ArticleFlags
     flags={
@@ -739,7 +739,7 @@ exports[`13. article summary component with a strapline 1`] = `
     }
   />
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -747,7 +747,7 @@ exports[`13. article summary component with a strapline 1`] = `
     />
   </div>
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <ArticleByline
       ast={
@@ -799,21 +799,21 @@ exports[`14. article summary content component without an ast to render null 1`]
 
 exports[`16. article summary component with no headline and no label title 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       
       Test paragraph
       ...
-    </span>
+    </div>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <DatePublication
       date="2017-07-01T14:32:00.000Z"
@@ -825,51 +825,51 @@ exports[`16. article summary component with no headline and no label title 1`] =
 
 exports[`17. article summary content component with white space height 1`] = `
 <div
-  className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
 >
-  <span
-    className="css-text-901oao css-textHasAncestor-16my406"
+  <div
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     
     Test paragraph
     ...
-  </span>
+  </div>
 </div>
 `;
 
 exports[`18. article summary content component without white space height 1`] = `
 <div
-  className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
 >
-  <span
-    className="css-text-901oao css-textHasAncestor-16my406"
+  <div
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     
     Test paragraph
     ...
-  </span>
+  </div>
 </div>
 `;
 
 exports[`19. article summary component with a single paragraph and flag on tablet 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <ArticleLabel
       color="#333333"
       title="Camilla Long"
     />
   </div>
-  <h3
+  <div
     aria-level="3"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Headline
-  </h3>
+  </div>
   <ArticleFlags
     flags={
       Array [
@@ -885,18 +885,18 @@ exports[`19. article summary component with a single paragraph and flag on table
     }
   />
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       
       Test paragraph
       ...
-    </span>
+    </div>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -904,7 +904,7 @@ exports[`19. article summary component with a single paragraph and flag on table
     />
   </div>
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <ArticleByline
       ast={
@@ -946,30 +946,30 @@ exports[`19. article summary component with a single paragraph and flag on table
 
 exports[`20. article summary component with a strapline and flag on tablet 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <ArticleLabel
       color="#333333"
       title="Camilla Long"
     />
   </div>
-  <h3
+  <div
     aria-level="3"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Headline
-  </h3>
-  <h4
+  </div>
+  <div
     aria-level="4"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-evnaw r-lineHeight-135wba7 r-paddingBottom-1mi0q7o"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     role="heading"
   >
     Test Strapline
-  </h4>
+  </div>
   <ArticleFlags
     flags={
       Array [
@@ -985,18 +985,18 @@ exports[`20. article summary component with a strapline and flag on tablet 1`] =
     }
   />
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       
       Test paragraph
       ...
-    </span>
+    </div>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -1004,7 +1004,7 @@ exports[`20. article summary component with a strapline and flag on tablet 1`] =
     />
   </div>
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <ArticleByline
       ast={

@@ -5,7 +5,7 @@ import styles from "./styles";
 
 const ArticleSummaryStrapline = ({ strapline, style }) => (
   <TcText
-    accessibilityRole="header"
+    role="heading"
     aria-level="4"
     style={{...styles.strapline, ...style}}
   >
