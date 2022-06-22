@@ -1,5 +1,4 @@
 import sharedStyles from "./shared";
-import styled from 'styled-components';
 
 const styles = (scale, breakpoint) => ({
     ...sharedStyles(scale, breakpoint),

@@ -1,43 +1,35 @@
 import React, { Component } from "react";
-import { Animated, TouchableOpacity } from "react-native";
+import { TouchableOpacity } from "react-native";
 import { TcView, TcText } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { CloseIcon } from "@times-components/icons";
 import styleFactory from "./styles";
+import styled, { keyframes } from 'styled-components';
 
 class MessageBar extends Component {
-  state = {
-    yValue: new Animated.Value(0)
-  };
-
   constructor(props) {
     super(props);
-    this.animateClosed = this.animateClosed.bind(this);
-    this.animateOpen = this.animateOpen.bind(this);
-    this.close = this.close.bind(this);
+    this.closeMessage = this.closeMessage.bind(this);
+    this.state = {
+      closeActive: false,
+    }
   }
 
   componentDidMount() {
-    const { delay, close } = this.props;
-
-    this.animateOpen(() => {});
+    const { delay } = this.props;
     this.timeout = setTimeout(() => {
-      this.animateClosed(() => {
-        close();
-      });
+        this.closeMessage();
     }, delay);
   }
 
   componentDidUpdate(prevProps) {
     const { message: newMessage } = this.props;
-    const { message, delay, close } = prevProps;
+    const { message, delay } = prevProps;
 
     if (message === newMessage) {
       clearTimeout(this.timeout);
       this.timeout = setTimeout(() => {
-        this.animateClosed(() => {
-          close();
-        });
+          this.closeMessage();
       }, delay);
     }
   }
@@ -48,65 +40,57 @@ class MessageBar extends Component {
     }
   }
 
-  animateOpen(cb) {
-    const { yValue } = this.state;
-    Animated.spring(yValue, {
-      toValue: 1
-    }).start(cb);
-  }
-
-  animateClosed(cb) {
-    const { yValue } = this.state;
-    Animated.spring(yValue, {
-      toValue: 0
-    }).start(cb);
-  }
-
-  close() {
+  closeMessage() {
     const { close } = this.props;
-    clearTimeout(this.timeout);
-    this.timeout = null;
-    this.animateClosed(() => {
+    this.setState({ closeActive: true })
+    this.timeout = setTimeout(() => {
       close();
-    });
+  }, 500);
   }
 
   render() {
-    const { message, scale, animate, breakpoint } = this.props;
-    const { yValue } = this.state;
+    const { message, scale, breakpoint } = this.props;
     const styles = styleFactory(scale, breakpoint);
     return (
-      <Animated.View
-        style={
-          animate && {
-            transform: [
-              {
-                translateY: yValue.interpolate({
-                  inputRange: [0, 1],
-                  outputRange: [-100, 0]
-                })
-              }
-            ]
-          }
-        }
-      >
+      <StyledAnimation className={this.state.closeActive ? ' close' : ''}>
         <TcView data-testid="message-bar" style={styles.messageBarBodyContainer}>
           <TcView style={styles.messageBarBody}>
             <TcText style={styles.messageBarText}>{message}</TcText>
             <TcView style={styles.messageBarCloseButton}>
-              <TouchableOpacity onPress={this.close}>
-                <CloseIcon width="28" height="28" onPress={this.close}/>
+              <TouchableOpacity onPress={this.closeMessage}>
+                <CloseIcon width="28" height="28" onPress={this.closeMessage}/>
               </TouchableOpacity>
             </TcView>
           </TcView>
         </TcView>
-      </Animated.View>
+        </StyledAnimation>
     );
   }
 }
 
+const AnimationIn = keyframes`
+  0% { transform: translateY(-51px)}
+  90% { transform: translateY(5px)}
+  100% { transform: translateY(0px)}
+`;
+
+const AnimationOut = keyframes`
+  0% { transform: translateY(0px)}
+  100% { transform: translateY(-51px)}
+`
+
+const StyledAnimation = styled(TcView)`
+  animation-name: ${AnimationIn};
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  &.close {
+    transform: translateY(-51px);
+    animation-name: ${AnimationOut};
+    animation-duration: 0.5s;
+  }
+`;
+
 MessageBar.propTypes = {
-  animate: PropTypes.bool.isRequired,
   breakpoint: PropTypes.string.isRequired,
   close: PropTypes.func.isRequired,
   delay: PropTypes.number.isRequired,

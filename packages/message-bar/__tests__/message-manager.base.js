@@ -20,7 +20,7 @@ export default animate => [
     name: "renders correctly",
     test: async () => {
       const testInstance = TestRenderer.create(
-        <MessageManager animate={animate} delay={1} scale={scales.medium}>
+        <MessageManager delay={1} scale={scales.medium}>
           <View>
             <Text>test child content</Text>
           </View>
@@ -36,7 +36,7 @@ export default animate => [
     name: "children can show a message",
     test: async () => {
       const testInstance = TestRenderer.create(
-        <MessageManager animate={animate} delay={1} scale={scales.medium}>
+        <MessageManager delay={1} scale={scales.medium}>
           <TestConsumer />
         </MessageManager>
       );
@@ -52,7 +52,7 @@ export default animate => [
     name: "removes the message when the bar says it closed",
     test: async () => {
       const testInstance = TestRenderer.create(
-        <MessageManager animate={animate} delay={100} scale={scales.medium}>
+        <MessageManager delay={100} scale={scales.medium}>
           <TestConsumer />
         </MessageManager>
       );

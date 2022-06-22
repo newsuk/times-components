@@ -12,7 +12,6 @@ export default animate => [
     test: async () => {
       const testInstance = TestRenderer.create(
         <MessageBar
-          animate={animate}
           close={() => {}}
           delay={1}
           message="test message"
@@ -31,7 +30,6 @@ export default animate => [
       const closed = jest.fn();
       const testInstance = shallow(
         <MessageBar
-          animate={animate}
           close={closed}
           delay={1}
           message="test message"
@@ -50,7 +48,6 @@ export default animate => [
     test: async () => {
       const testInstance = shallow(
         <MessageBar
-          animate={animate}
           close={() => {}}
           delay={100}
           message="test message"
@@ -74,7 +71,6 @@ export default animate => [
     test: async () => {
       const testInstance = shallow(
         <MessageBar
-          animate={animate}
           close={() => {}}
           delay={100}
           message="test message"

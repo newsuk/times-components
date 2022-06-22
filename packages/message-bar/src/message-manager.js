@@ -46,7 +46,7 @@ class MessageManager extends Component {
   }
 
   render() {
-    const { scale, children, delay, animate } = this.props;
+    const { scale, children, delay } = this.props;
     const { message, offsetTop } = this.state;
     const styles = styleFactory(scale);
     const offsetStyle = offsetTop
@@ -56,7 +56,6 @@ class MessageManager extends Component {
           height: message ? 50 : 0
         }
       : {};
-
     return (
       <TcView>
         <TcView style={[styles.messageManager, offsetStyle]}>
@@ -64,7 +63,6 @@ class MessageManager extends Component {
             <ResponsiveContext.Consumer>
               {({ editionBreakpoint }) => (
                 <MessageBar
-                  animate={animate}
                   close={this.removeMessage}
                   delay={delay}
                   message={message}
@@ -88,7 +86,6 @@ class MessageManager extends Component {
 {
   const { string, node, number, bool } = PropTypes;
   MessageManager.propTypes = {
-    animate: bool.isRequired,
     children: node.isRequired,
     delay: number.isRequired,
     scale: string.isRequired
