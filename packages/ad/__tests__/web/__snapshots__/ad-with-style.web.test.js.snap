@@ -14,9 +14,8 @@ exports[`1. multiple ad slots 1`] = `
 }
 
 .IS3 {
-  height: auto;
-  overflow: hidden;
-  width: 1;
+  align-items: center;
+  flex: 1;
 }
 
 .IS4 {
@@ -27,10 +26,41 @@ exports[`1. multiple ad slots 1`] = `
 .IS5 {
   height: auto;
   overflow: hidden;
-  width: 970;
+  width: 1;
 }
 
 .IS6 {
+  align-items: center;
+  flex: 1;
+}
+
+.IS7 {
+  align-items: center;
+  flex: 1;
+}
+
+.IS8 {
+  align-items: center;
+  flex: 1;
+}
+
+.IS9 {
+  height: auto;
+  overflow: hidden;
+  width: 970;
+}
+
+.IS10 {
+  align-items: center;
+  flex: 1;
+}
+
+.IS11 {
+  align-items: center;
+  flex: 1;
+}
+
+.IS12 {
   align-items: center;
   flex: 1;
 }
@@ -47,23 +77,50 @@ exports[`1. multiple ad slots 1`] = `
     <MockServerClientRender
       server={null}
     >
-      <View
-        className="IS2"
+      <tc-view__TcView
+        className="IS4"
       >
-        <div
-          className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
+        <StyledComponent
+          className="IS3"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "tc-view__TcView-nuazoi-0",
+                "isStatic": true,
+                "lastClassName": "fPjBcr",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                ],
+              },
+              "displayName": "tc-view__TcView",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
         >
-          <DOMContext
-            baseUrl="https://www.thetimes.co.uk/"
-            height={250}
-            width={970}
+          <div
+            className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
           >
-            <div
-              className="IS1"
-            />
-          </DOMContext>
-        </div>
-      </View>
+            <DOMContext
+              baseUrl="https://www.thetimes.co.uk/"
+              height={250}
+              width={970}
+            >
+              <div
+                className="IS1"
+              />
+            </DOMContext>
+          </div>
+        </StyledComponent>
+      </tc-view__TcView>
     </MockServerClientRender>
   </Ad>
   <Ad
@@ -76,23 +133,50 @@ exports[`1. multiple ad slots 1`] = `
     <MockServerClientRender
       server={null}
     >
-      <View
-        className="IS4"
+      <tc-view__TcView
+        className="IS8"
       >
-        <div
-          className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
+        <StyledComponent
+          className="IS7"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "tc-view__TcView-nuazoi-0",
+                "isStatic": true,
+                "lastClassName": "fPjBcr",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                ],
+              },
+              "displayName": "tc-view__TcView",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
         >
-          <DOMContext
-            baseUrl="https://www.thetimes.co.uk/"
-            height={1}
-            width={1}
+          <div
+            className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
           >
-            <div
-              className="IS3"
-            />
-          </DOMContext>
-        </div>
-      </View>
+            <DOMContext
+              baseUrl="https://www.thetimes.co.uk/"
+              height={1}
+              width={1}
+            >
+              <div
+                className="IS5"
+              />
+            </DOMContext>
+          </div>
+        </StyledComponent>
+      </tc-view__TcView>
     </MockServerClientRender>
   </Ad>
   <Ad
@@ -105,23 +189,50 @@ exports[`1. multiple ad slots 1`] = `
     <MockServerClientRender
       server={null}
     >
-      <View
-        className="IS6"
+      <tc-view__TcView
+        className="IS12"
       >
-        <div
-          className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
+        <StyledComponent
+          className="IS11"
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "tc-view__TcView-nuazoi-0",
+                "isStatic": true,
+                "lastClassName": "fPjBcr",
+                "rules": Array [
+                  "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+                ],
+              },
+              "displayName": "tc-view__TcView",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "tc-view__TcView-nuazoi-0",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
         >
-          <DOMContext
-            baseUrl="https://www.thetimes.co.uk/"
-            height={250}
-            width={970}
+          <div
+            className="tc-view__TcView-nuazoi-0 fPjBcr IS10"
           >
-            <div
-              className="IS5"
-            />
-          </DOMContext>
-        </div>
-      </View>
+            <DOMContext
+              baseUrl="https://www.thetimes.co.uk/"
+              height={250}
+              width={970}
+            >
+              <div
+                className="IS9"
+              />
+            </DOMContext>
+          </div>
+        </StyledComponent>
+      </tc-view__TcView>
     </MockServerClientRender>
   </Ad>
 </AdComposer>
@@ -130,6 +241,16 @@ exports[`1. multiple ad slots 1`] = `
 exports[`2. placeholder when isloading 1`] = `
 <style>
 .IS1 {
+  align-items: center;
+  flex: 1;
+}
+
+.IS2 {
+  align-items: center;
+  flex: 1;
+}
+
+.IS3 {
   align-items: center;
   flex: 1;
 }
@@ -145,13 +266,40 @@ exports[`2. placeholder when isloading 1`] = `
   <MockServerClientRender
     server={null}
   >
-    <View
-      className="IS1"
+    <tc-view__TcView
+      className="IS3"
     >
-      <div
-        className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
-      />
-    </View>
+      <StyledComponent
+        className="IS2"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "tc-view__TcView-nuazoi-0",
+              "isStatic": true,
+              "lastClassName": "fPjBcr",
+              "rules": Array [
+                "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+              ],
+            },
+            "displayName": "tc-view__TcView",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "tc-view__TcView-nuazoi-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
+        />
+      </StyledComponent>
+    </tc-view__TcView>
   </MockServerClientRender>
 </Ad>
 `;
@@ -168,6 +316,16 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
   align-items: center;
   flex: 1;
 }
+
+.IS3 {
+  align-items: center;
+  flex: 1;
+}
+
+.IS4 {
+  align-items: center;
+  flex: 1;
+}
 </style>
 
 <Ad
@@ -180,23 +338,50 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
   <MockServerClientRender
     server={null}
   >
-    <View
-      className="IS2"
+    <tc-view__TcView
+      className="IS4"
     >
-      <div
-        className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
+      <StyledComponent
+        className="IS3"
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "tc-view__TcView-nuazoi-0",
+              "isStatic": true,
+              "lastClassName": "fPjBcr",
+              "rules": Array [
+                "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+              ],
+            },
+            "displayName": "tc-view__TcView",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "tc-view__TcView-nuazoi-0",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
       >
-        <DOMContext
-          baseUrl="https://www.thetimes.co.uk/"
-          height={0}
-          width={0}
+        <div
+          className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
         >
-          <div
-            className="IS1"
-          />
-        </DOMContext>
-      </div>
-    </View>
+          <DOMContext
+            baseUrl="https://www.thetimes.co.uk/"
+            height={0}
+            width={0}
+          >
+            <div
+              className="IS1"
+            />
+          </DOMContext>
+        </div>
+      </StyledComponent>
+    </tc-view__TcView>
   </MockServerClientRender>
 </Ad>
 `;

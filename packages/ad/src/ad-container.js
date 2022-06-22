@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View, ViewPropTypes } from "react-native";
 
+import { TcView } from "@times-components/utils";
 import styles from "./styles";
 
 const AdContainer = ({ slotName, style }) => {
@@ -18,15 +18,15 @@ const AdContainer = ({ slotName, style }) => {
   };
 
   return (
-    <View id={slotName} style={[styles.container, style]}>
+    <TcView id={slotName} style={{ ...styles.container, ...style }}>
       <div id={`${adMap[slotName]}`} />
-    </View>
+    </TcView>
   );
 };
 
 const propTypes = {
   slotName: PropTypes.string.isRequired,
-  style: ViewPropTypes.style.isRequired
+  style: PropTypes.oneOfType([PropTypes.object]).isRequired
 };
 
 AdContainer.propTypes = propTypes;
