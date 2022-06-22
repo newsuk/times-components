@@ -1,8 +1,11 @@
 /* eslint-disable no-undef */
 import React, { Component } from "react";
 import { Subscriber } from "react-broadcast";
-import { View } from "react-native";
-import { screenWidth, ServerClientRender } from "@times-components/utils";
+import {
+  screenWidth,
+  ServerClientRender,
+  TcView
+} from "@times-components/utils";
 import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
 import adInit from "./utils/ad-init";
 import AdContainer from "./ad-container";
@@ -111,7 +114,7 @@ class Ad extends Component {
         };
 
     const adView = (
-      <View style={[styles.container, style]}>
+      <TcView style={{ ...styles.container, ...style }}>
         {isLoading ? null : (
           <DOMContext
             baseUrl={baseUrl}
@@ -122,7 +125,7 @@ class Ad extends Component {
             {...sizeProps}
           />
         )}
-      </View>
+      </TcView>
     );
 
     return <ServerClientRender client={() => adView} server={null} />;
