@@ -238,3 +238,22 @@ exports[`13. iconforwardchevron renders 1`] = `
   </g>
 </svg>
 `;
+
+exports[`14. iconactivityindicator renders 1`] = `
+<activity-indicator__ActivityIndicatorContainer>
+  <div
+    className="activity-indicator__ActivityIndicatorContainer-sc-1bvau9v-1 cVeDx"
+  >
+    <activity-indicator__ActivityIndicatorSpinner
+      data-fillColour="#006699"
+      data-title="IconActivityIndicator"
+    >
+      <div
+        className="activity-indicator__ActivityIndicatorSpinner-sc-1bvau9v-0 kaKzrz"
+        data-fillColour="#006699"
+        data-title="IconActivityIndicator"
+      />
+    </activity-indicator__ActivityIndicatorSpinner>
+  </div>
+</activity-indicator__ActivityIndicatorContainer>
+`;
