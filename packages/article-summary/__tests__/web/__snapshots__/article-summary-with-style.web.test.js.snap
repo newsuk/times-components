@@ -2,68 +2,72 @@
 
 exports[`1. article summary component with a single paragraph 1`] = `
 <style>
-.S1 {
+.IS1 {
   margin-bottom: 0px;
 }
 
-.S2 {
-  color: rgba(51,51,51,1.00);
+.IS2 {
+  color: #333333;
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
-  line-height: 27px;
   margin-bottom: 5px;
+  font-size: 22;
+  line-height: 27px;
 }
 
-.S3 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
+.IS3 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS4 {
+  color: #696969;
   flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
   margin-bottom: 10px;
+  font-family: TimesDigitalW04;
+  font-size: 14;
+  line-height: 20px;
 }
 
-.S4 {
-  color: rgba(105,105,105,1.00);
+.IS5 {
+  color: #696969;
   font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-size: 13;
   line-height: 15px;
   margin-bottom: 5px;
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  style={null}
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
   >
     <ArticleLabel
       color="#333333"
       title="Test label"
     />
   </div>
-  <h3
+  <div
     aria-level="3"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55 S2"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
     role="heading"
   >
     Test Headline
-  </h3>
+  </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
     >
       
       Test paragraph
       ...
-    </span>
+    </div>
   </div>
   <ArticleFlags
     flags={
@@ -80,8 +84,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     }
   />
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55 S4"
-    data-testid="datePublication"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS5"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -89,7 +92,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </div>
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     <ArticleByline
       ast={
@@ -131,92 +134,93 @@ exports[`1. article summary component with a single paragraph 1`] = `
 
 exports[`2. article summary content component with the given style 1`] = `
 <style>
-.S1 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
+.IS1 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS2 {
+  color: #696969;
   flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
   margin-bottom: 10px;
+  font-family: TimesDigitalW04;
+  font-size: 14;
+  line-height: 20px;
 }
 </style>
 
 <div
-  className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S1"
+  className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
 >
-  <span
-    className="css-text-901oao css-textHasAncestor-16my406"
+  <div
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
   >
     
     Test
     ...
-  </span>
+  </div>
 </div>
 `;
 
 exports[`3. article summary content component with white space height and lineheight 1`] = `
 <style>
-.S1 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  margin-bottom: 10px;
+.IS1 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
 }
 
-.IS1 {
-  -webkit-line-clamp: 4;
+.IS2 {
+  color: #696969;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  font-family: TimesDigitalW04;
+  font-size: 14;
   line-height: 30px;
 }
 </style>
 
 <div
-  className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-marginBottom-15d164r IS1 S1"
+  className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
 >
-  <span
-    className="css-text-901oao css-textHasAncestor-16my406"
+  <div
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
   >
     
     Test
     ...
-  </span>
+  </div>
 </div>
 `;
 
 exports[`4. article summary content component without white space height 1`] = `
 <style>
-.S1 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
+.IS1 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
 }
 
-.IS1 {
-  -webkit-line-clamp: 2;
+.IS2 {
+  color: #696969;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  font-family: TimesDigitalW04;
+  font-size: 14;
+  line-height: 20px;
 }
 </style>
 
 <div
-  className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS1 S1"
+  className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
 >
-  <span
-    className="css-text-901oao css-textHasAncestor-16my406"
+  <div
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
   >
     
     Test
     ...
-  </span>
+  </div>
 </div>
 `;

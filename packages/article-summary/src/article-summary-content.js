@@ -21,9 +21,6 @@ const ArticleSummaryContent = ({
   const numberOfLinesProp = whiteSpaceHeight !== undefined && {
     numberOfLines: numberOfLinesToRender
   };
-console.log('XXXXXXXXXXX', styles.text)
-
-console.log('XXXXXXXXXXX', style)
 
   return ast.length > 0 ? (
     <TcText
