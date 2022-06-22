@@ -123,20 +123,20 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       target={null}
     >
       <svg
-        height="100%"
-        viewBox="0 0 32 32"
-        width="100%"
+        aria-label="icon-email"
+        height={16}
+        role="img"
+        viewBox="0 0 22 16"
+        width={22}
       >
-        <circle
-          cx="16"
-          cy="16"
-          r="14"
-        />
-        <circle
-          cx="16"
-          cy="16"
-          r="14"
-        />
+        <title>
+          Share by email
+        </title>
+        <g>
+          <path
+            d="7662b27a9a5411e756afc5097a4eb94d"
+          />
+        </g>
       </svg>
     </a>
     <a
@@ -307,20 +307,20 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         target={null}
       >
         <svg
-          height="100%"
-          viewBox="0 0 32 32"
-          width="100%"
+          aria-label="icon-email"
+          height={16}
+          role="img"
+          viewBox="0 0 22 16"
+          width={22}
         >
-          <circle
-            cx="16"
-            cy="16"
-            r="14"
-          />
-          <circle
-            cx="16"
-            cy="16"
-            r="14"
-          />
+          <title>
+            Share by email
+          </title>
+          <g>
+            <path
+              d="7662b27a9a5411e756afc5097a4eb94d"
+            />
+          </g>
         </svg>
       </a>
       <a

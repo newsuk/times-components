@@ -42,34 +42,25 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                         url=""
                       >
                         <div>
-                          <div
-                            aria-valuemax="1"
-                            aria-valuemin="0"
-                            role="progressbar"
+                          <svg
+                            aria-label="icon-email"
+                            height={16}
+                            role="img"
+                            viewBox="0 0 22 16"
+                            width={22}
                           >
-                            <div>
-                              <svg
-                                height="100%"
-                                viewBox="0 0 32 32"
-                                width="100%"
-                              >
-                                <circle
-                                  cx="16"
-                                  cy="16"
-                                  fill="none"
-                                  r="14"
-                                  strokeWidth="4"
-                                />
-                                <circle
-                                  cx="16"
-                                  cy="16"
-                                  fill="none"
-                                  r="14"
-                                  strokeWidth="4"
-                                />
-                              </svg>
-                            </div>
-                          </div>
+                            <title>
+                              Share by email
+                            </title>
+                            <g
+                              fill="currentColor"
+                              fillRule="nonzero"
+                            >
+                              <path
+                                d="M22,0 L22,16 L0,16 L0,0 L22,0 Z M13.5135,8 L20.2711667,2.23985068 L20.0346667,1.91880541 L11,9.20018665 L2.04233333,2.00093327 L1.80583333,2.32197853 L8.56533333,8.08026132 L1.80766667,13.8404106 L2.04233333,14.1595894 L9.0365,8.47970135 L11,10.1595894 L13.0423333,8.39944004 L20.0346667,14.079328 L20.2711667,13.7582828 L13.5135,8 Z"
+                              />
+                            </g>
+                          </svg>
                         </div>
                       </Link>
                     </div>
@@ -387,34 +378,25 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                         url=""
                       >
                         <div>
-                          <div
-                            aria-valuemax="1"
-                            aria-valuemin="0"
-                            role="progressbar"
+                          <svg
+                            aria-label="icon-email"
+                            height={16}
+                            role="img"
+                            viewBox="0 0 22 16"
+                            width={22}
                           >
-                            <div>
-                              <svg
-                                height="100%"
-                                viewBox="0 0 32 32"
-                                width="100%"
-                              >
-                                <circle
-                                  cx="16"
-                                  cy="16"
-                                  fill="none"
-                                  r="14"
-                                  strokeWidth="4"
-                                />
-                                <circle
-                                  cx="16"
-                                  cy="16"
-                                  fill="none"
-                                  r="14"
-                                  strokeWidth="4"
-                                />
-                              </svg>
-                            </div>
-                          </div>
+                            <title>
+                              Share by email
+                            </title>
+                            <g
+                              fill="currentColor"
+                              fillRule="nonzero"
+                            >
+                              <path
+                                d="M22,0 L22,16 L0,16 L0,0 L22,0 Z M13.5135,8 L20.2711667,2.23985068 L20.0346667,1.91880541 L11,9.20018665 L2.04233333,2.00093327 L1.80583333,2.32197853 L8.56533333,8.08026132 L1.80766667,13.8404106 L2.04233333,14.1595894 L9.0365,8.47970135 L11,10.1595894 L13.0423333,8.39944004 L20.0346667,14.079328 L20.2711667,13.7582828 L13.5135,8 Z"
+                              />
+                            </g>
+                          </svg>
                         </div>
                       </Link>
                     </div>
