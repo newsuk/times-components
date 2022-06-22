@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { editionBreakpoints } from "@times-components/ts-styleguide";
 import { ItemColSeparator } from "../shared";
@@ -20,23 +20,23 @@ const LeadTwoNoPicAndTwoSlice = ({
     breakpoint === editionBreakpoints.huge
   ) {
     return (
-      <View style={styles.container}>
+      <TcView style={styles.container}>
         <VerticalLayout style={styles.column} tiles={[lead1, lead2]} />
         <ItemColSeparator style={styles.colSeparatorStyle} />
-        <View style={styles.middleTile}>{support1}</View>
+        <TcView style={styles.middleTile}>{support1}</TcView>
         <ItemColSeparator style={styles.colSeparatorStyle} />
-        <View style={styles.column}>{support2}</View>
-      </View>
+        <TcView style={styles.column}>{support2}</TcView>
+      </TcView>
     );
   }
 
   if (breakpoint === editionBreakpoints.medium) {
     return (
-      <View style={styles.container}>
+      <TcView style={styles.container}>
         <VerticalLayout style={styles.column} tiles={[lead1, lead2]} />
         <ItemColSeparator style={styles.colSeparatorStyle} />
         <VerticalLayout style={styles.column} tiles={[support1, support2]} />
-      </View>
+      </TcView>
     );
   }
 

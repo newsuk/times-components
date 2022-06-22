@@ -1,9 +1,9 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/ts-styleguide";
 
 export const getContainer = ({ hasSupports }) => {
-  let Base = styled(View)`
+  let Base = styled(TcView)`
     flex: 1;
     flex-direction: column;
     flex-wrap: wrap;
@@ -44,7 +44,7 @@ export const getContainer = ({ hasSupports }) => {
 };
 
 export const getLeadContainer = ({ hasSupports, supportCount }) => {
-  let Base = styled(View)`
+  let Base = styled(TcView)`
     flex: 1;
     flex-grow: 1;
     padding-bottom: 0;
@@ -80,7 +80,7 @@ export const getLeadContainer = ({ hasSupports, supportCount }) => {
   return Base;
 };
 
-export const SupportsContainer = styled(View)`
+export const SupportsContainer = styled(TcView)`
   flex: 1;
   flex-direction: column;
   height: auto;
@@ -92,7 +92,7 @@ export const SupportsContainer = styled(View)`
 
 export const getSupportContainer = ({ index }) => {
   if (index > 0) {
-    return styled(View)`
+    return styled(TcView)`
       padding-left: ${spacing(2)};
       padding-right: ${spacing(2)};
       border-top-color: ${colours.functional.keyline};
@@ -114,7 +114,7 @@ export const getSupportContainer = ({ index }) => {
     `;
   }
 
-  return styled(View)`
+  return styled(TcView)`
     padding-left: ${spacing(2)};
     padding-right: ${spacing(2)};
 

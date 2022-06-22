@@ -1,6 +1,5 @@
 import React, { Fragment } from "react";
 import { TcView } from "@times-components/utils";
-// import { TcView } from "@times-components/ts-components";
 import Caption from "@times-components/caption";
 import Context from "@times-components/context";
 import { ModalImage } from "@times-components/image";

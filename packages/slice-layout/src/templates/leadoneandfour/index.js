@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { editionBreakpoints } from "@times-components/ts-styleguide";
 import { ItemColSeparator } from "../shared";
@@ -27,14 +27,14 @@ const leadOneAndFourSlice = ({
   }
 
   return (
-    <View style={container}>
-      <View style={leadContainer}>{lead}</View>
+    <TcView style={container}>
+      <TcView style={leadContainer}>{lead}</TcView>
       <ItemColSeparator />
       <VerticalLayout
         style={supportContainer}
         tiles={[support1, support2, support3, support4]}
       />
-    </View>
+    </TcView>
   );
 };
 

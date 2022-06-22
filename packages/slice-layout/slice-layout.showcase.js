@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { ScrollView, View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { editionBreakpoints } from "@times-components/ts-styleguide";
 
 import {
@@ -34,7 +34,7 @@ const createItems = noOfItems =>
       const { backgroundColor, id } = colour;
       if (id > noOfItems) return false;
       return (
-        <View
+        <TcView
           id={`item-${id}`}
           style={[{ minHeight: 150 }, { backgroundColor }]}
         />
@@ -43,19 +43,19 @@ const createItems = noOfItems =>
     .filter(item => item !== false);
 
 const Support1 = () => (
-  <View style={[{ minHeight: 150 }, { backgroundColor: "green" }]} />
+  <TcView style={[{ minHeight: 150 }, { backgroundColor: "green" }]} />
 );
 
 const Support2 = () => (
-  <View style={[{ minHeight: 150 }, { backgroundColor: "yellow" }]} />
+  <TcView style={[{ minHeight: 150 }, { backgroundColor: "yellow" }]} />
 );
 
 const Support3 = () => (
-  <View style={[{ minHeight: 150 }, { backgroundColor: "red" }]} />
+  <TcView style={[{ minHeight: 150 }, { backgroundColor: "red" }]} />
 );
 
 const Support4 = () => (
-  <View style={[{ minHeight: 150 }, { backgroundColor: "blue" }]} />
+  <TcView style={[{ minHeight: 150 }, { backgroundColor: "blue" }]} />
 );
 
 const breakpointSelect = select =>
@@ -65,14 +65,14 @@ export default {
   children: [
     {
       component: () => (
-        <ScrollView>
+        <TcView>
           <VerticalLayout
             tiles={[
               <Support1 tileName="support1" />,
               <Support2 tileName="support2" />
             ]}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "Vertical Layout",
       type: "story",
@@ -80,7 +80,7 @@ export default {
     },
     {
       component: ({ select }) => (
-        <ScrollView>
+        <TcView>
           <LeadOneAndFourSlice
             breakpoint={breakpointSelect(select)}
             lead={<Support3 tileName="lead1" />}
@@ -89,7 +89,7 @@ export default {
             support3={<Support3 tileName="support4" />}
             support4={<Support4 tileName="support5" />}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "LeadOneAndFour",
       type: "story",
@@ -97,11 +97,11 @@ export default {
     },
     {
       component: ({ select }) => (
-        <ScrollView>
+        <TcView>
           <LeadOneAndOneSlice
             breakpoint={breakpointSelect(select)}
             lead={
-              <View
+              <TcView
                 id="lead"
                 style={{
                   backgroundColor: "red",
@@ -112,7 +112,7 @@ export default {
             }
             support={<Support1 tileName="support1" />}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "LeadOneAndOne",
       type: "story",
@@ -120,10 +120,10 @@ export default {
     },
     {
       component: () => (
-        <ScrollView>
+        <TcView>
           <LeadOneAndTwoSlice
             renderLead={() => (
-              <View
+              <TcView
                 id="lead"
                 style={{
                   backgroundColor: "red",
@@ -134,7 +134,7 @@ export default {
             renderSupport1={() => null}
             renderSupport2={() => null}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "LeadOneAndTwo",
       type: "story",
@@ -142,10 +142,10 @@ export default {
     },
     {
       component: () => (
-        <ScrollView>
+        <TcView>
           <LeadOneAndTwoSlice
             renderLead={() => (
-              <View
+              <TcView
                 id="lead"
                 style={{
                   backgroundColor: "red",
@@ -156,7 +156,7 @@ export default {
             renderSupport1={() => <Support1 />}
             renderSupport2={() => null}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "LeadOneAndTwo With 1 Support",
       type: "story",
@@ -164,10 +164,10 @@ export default {
     },
     {
       component: () => (
-        <ScrollView>
+        <TcView>
           <LeadOneAndTwoSlice
             renderLead={() => (
-              <View
+              <TcView
                 id="lead"
                 style={{
                   backgroundColor: "red",
@@ -178,7 +178,7 @@ export default {
             renderSupport1={() => <Support1 />}
             renderSupport2={() => <Support2 />}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "LeadOneAndTwo With 2 Supports",
       type: "story",
@@ -186,10 +186,10 @@ export default {
     },
     {
       component: () => (
-        <ScrollView>
+        <TcView>
           <OpinionOneAndTwoSlice
             renderOpinion={() => (
-              <View
+              <TcView
                 id="opinion"
                 style={{
                   backgroundColor: "red",
@@ -200,7 +200,7 @@ export default {
             renderSupport1={() => null}
             renderSupport2={() => null}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "OpinionOneAndTwo",
       type: "story",
@@ -208,10 +208,10 @@ export default {
     },
     {
       component: () => (
-        <ScrollView>
+        <TcView>
           <OpinionOneAndTwoSlice
             renderOpinion={() => (
-              <View
+              <TcView
                 id="opinion"
                 style={{
                   backgroundColor: "red",
@@ -222,7 +222,7 @@ export default {
             renderSupport1={() => <Support1 />}
             renderSupport2={() => null}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "OpinionOneAndTwo With 1 Support",
       type: "story",
@@ -230,10 +230,10 @@ export default {
     },
     {
       component: () => (
-        <ScrollView>
+        <TcView>
           <OpinionOneAndTwoSlice
             renderOpinion={() => (
-              <View
+              <TcView
                 id="opinion"
                 style={{
                   backgroundColor: "red",
@@ -244,7 +244,7 @@ export default {
             renderSupport1={() => <Support1 />}
             renderSupport2={() => <Support2 />}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "OpinionOneAndTwo With 2 Supports",
       type: "story",
@@ -252,7 +252,7 @@ export default {
     },
     {
       component: ({ select }) => (
-        <ScrollView>
+        <TcView>
           <SecondaryFourSlice
             breakpoint={breakpointSelect(select)}
             secondary1={<Support1 tileName="secondary1" />}
@@ -260,7 +260,7 @@ export default {
             secondary3={<Support3 tileName="secondary3" />}
             secondary4={<Support4 tileName="secondary4" />}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "SecondaryFourSlice",
       type: "story",
@@ -268,7 +268,7 @@ export default {
     },
     {
       component: ({ select }) => (
-        <ScrollView>
+        <TcView>
           <SecondaryTwoAndTwoSlice
             breakpoint={breakpointSelect(select)}
             secondary1={<Support1 tileName="secondary1" />}
@@ -278,7 +278,7 @@ export default {
             support3={<Support1 tileName="support3" />}
             support4={<Support2 tileName="support4" />}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "SecondaryTwoAndTwoSlice",
       type: "story",
@@ -286,7 +286,7 @@ export default {
     },
     {
       component: ({ select }) => (
-        <ScrollView>
+        <TcView>
           <SecondaryOneAndFourSlice
             breakpoint={breakpointSelect(select)}
             secondary={<Support1 tileName="secondary1" />}
@@ -295,7 +295,7 @@ export default {
             support3={<Support4 tileName="support3" />}
             support4={<Support1 tileName="support4" />}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "SecondaryOneAndFourSlice",
       type: "story",
@@ -303,7 +303,7 @@ export default {
     },
     {
       component: ({ select }) => (
-        <ScrollView>
+        <TcView>
           <SecondaryTwoNoPicAndTwoSlice
             breakpoint={breakpointSelect(select)}
             secondary1={<Support1 tileName="secondary1" />}
@@ -311,7 +311,7 @@ export default {
             support1={<Support3 tileName="support3" />}
             support2={<Support4 tileName="support4" />}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "SecondaryTwoNoPicAndTwoSlice",
       type: "story",
@@ -319,7 +319,7 @@ export default {
     },
     {
       component: ({ select }) => (
-        <ScrollView>
+        <TcView>
           <LeadTwoNoPicAndTwoSlice
             breakpoint={breakpointSelect(select)}
             lead1={<Support1 tileName="lead1" />}
@@ -327,7 +327,7 @@ export default {
             support1={<Support3 tileName="support1" />}
             support2={<Support4 tileName="support2" />}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "LeadTwoNoPicAndTwoSlice",
       type: "story",
@@ -335,7 +335,7 @@ export default {
     },
     {
       component: ({ select }) => (
-        <ScrollView>
+        <TcView>
           <ListTwoAndSixNoPic
             breakpoint={breakpointSelect(select)}
             lead1={<Support3 tileName="lead1" />}
@@ -347,7 +347,7 @@ export default {
             support5={<Support1 tileName="support5" />}
             support6={<Support2 tileName="support6" />}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "ListTwoAndSixNoPic",
       type: "story",
@@ -355,14 +355,14 @@ export default {
     },
     {
       component: ({ select }) => (
-        <ScrollView>
+        <TcView>
           <Leaders
             breakpoint={breakpointSelect(select)}
             leader1={<Support1 tileName="lead1" />}
             leader2={<Support2 tileName="lead2" />}
             leader3={<Support3 tileName="lead3" />}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "Leaders",
       type: "story",
@@ -370,13 +370,13 @@ export default {
     },
     {
       component: ({ select }) => (
-        <ScrollView>
+        <TcView>
           <CommentLeadAndCartoon
             breakpoint={breakpointSelect(select)}
             cartoon={<Support2 tileName="cartoon" />}
             lead={<Support1 tileName="lead" />}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "CommentLeadAndCartoon",
       type: "story",
@@ -384,13 +384,13 @@ export default {
     },
     {
       component: ({ select }) => (
-        <ScrollView>
+        <TcView>
           <SecondaryOneAndColumnistSlice
             breakpoint={breakpointSelect(select)}
             columnist={<Support1 tileName="support1" />}
             secondary={<Support2 tileName="support2" />}
           />
-        </ScrollView>
+        </TcView>
       ),
       name: "SecondaryOneAndColumnistSlice",
       type: "story",
@@ -406,14 +406,14 @@ export default {
         };
 
         return (
-          <ScrollView>
+          <TcView>
             <StandardSlice
               itemCount={Number(select("Number of items:", itemCount, "3"))}
               renderItems={() =>
                 createItems(select("Number of items:", itemCount, "3"))
               }
             />
-          </ScrollView>
+          </TcView>
         );
       },
       name: "Standard",

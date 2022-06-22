@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import { breakpoints, spacing } from "@times-components/ts-styleguide";
 
@@ -25,7 +25,7 @@ export const getSupportConfig = () => ({
 });
 
 export const getConfigWrapper = ({ supportCount }) => {
-  let Base = styled(View)`
+  let Base = styled(TcView)`
     .supportImageContainerClass {
       display: none;
     }

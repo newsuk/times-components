@@ -11304,6 +11304,14 @@ flat-cache@^2.0.1:
     rimraf "2.6.3"
     write "1.0.3"
 
+flatlist-react@1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/flatlist-react/-/flatlist-react-1.5.0.tgz#96985790a3cf3dd534050bb05c0ed2a1ad39a87a"
+  integrity sha512-Ux0Pnp679sNcq+v0o+mU5pJgPBFdaOWDzxGknftZw1G4uBrwyAFRJN++gyveiEXc5bPvRL0wsE2B6OYSmdUmKg==
+  dependencies:
+    prop-types "^15.7.2"
+    warning "^4.0.3"
+
 flatted@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-2.0.2.tgz#4575b21e2bcee7434aa9be662f4b7b5f9c2b5138"
