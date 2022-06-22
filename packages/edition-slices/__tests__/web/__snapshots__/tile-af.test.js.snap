@@ -2,40 +2,36 @@
 
 exports[`tile af huge 1`] = `
 <style>
-.S1 {
+.IS1 {
   margin-bottom: 0px;
 }
 
-.S2 {
-  color: rgba(51,51,51,1.00);
+.IS2 {
+  color: #333333;
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.IS1 {
+  margin-bottom: 5;
+  font-size: 22;
   line-height: 22px;
 }
 
-.IS2 {
-  -webkit-line-clamp: 2;
-  margin-top: 5px;
+.IS3 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
 }
 
-.IS3 {
+.IS4 {
+  color: #696969;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  font-family: TimesDigitalW04;
+  font-size: 14;
+  line-height: 20px;
+  margin-top: 5;
+}
+
+.IS5 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -60,16 +56,16 @@ exports[`tile af huge 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS5"
   >
     <div
       className="css-view-1dbjc4n"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
       >
         <div
-          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+          className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
         >
           <ArticleLabel
             color="#005B8D"
@@ -77,23 +73,23 @@ exports[`tile af huge 1`] = `
             title="label"
           />
         </div>
-        <h3
+        <div
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+          className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
           role="heading"
         >
           This is tile headline
-        </h3>
+        </div>
         <div
-          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS2 S3"
+          className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
         >
-          <span
-            className="css-text-901oao css-textHasAncestor-16my406"
+          <div
+            className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
           >
             
             Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit
             ...
-          </span>
+          </div>
         </div>
         <ArticleFlags
           flags={
@@ -114,40 +110,36 @@ exports[`tile af huge 1`] = `
 
 exports[`tile af wide 1`] = `
 <style>
-.S1 {
+.IS1 {
   margin-bottom: 0px;
 }
 
-.S2 {
-  color: rgba(51,51,51,1.00);
+.IS2 {
+  color: #333333;
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
+  margin-bottom: 5;
+  font-size: 20;
   line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.IS1 {
-  font-size: 20px;
-  line-height: 20px;
-}
-
-.IS2 {
-  -webkit-line-clamp: 2;
-  margin-top: 5px;
 }
 
 .IS3 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS4 {
+  color: #696969;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  font-family: TimesDigitalW04;
+  font-size: 14;
+  line-height: 20px;
+  margin-top: 5;
+}
+
+.IS5 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -172,16 +164,16 @@ exports[`tile af wide 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS5"
   >
     <div
       className="css-view-1dbjc4n"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
       >
         <div
-          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+          className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
         >
           <ArticleLabel
             color="#005B8D"
@@ -189,23 +181,23 @@ exports[`tile af wide 1`] = `
             title="label"
           />
         </div>
-        <h3
+        <div
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+          className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
           role="heading"
         >
           This is tile headline
-        </h3>
+        </div>
         <div
-          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS2 S3"
+          className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
         >
-          <span
-            className="css-text-901oao css-textHasAncestor-16my406"
+          <div
+            className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
           >
             
             Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit
             ...
-          </span>
+          </div>
         </div>
         <ArticleFlags
           flags={
@@ -226,40 +218,36 @@ exports[`tile af wide 1`] = `
 
 exports[`tile af without breakpoint should be like wide 1`] = `
 <style>
-.S1 {
+.IS1 {
   margin-bottom: 0px;
 }
 
-.S2 {
-  color: rgba(51,51,51,1.00);
+.IS2 {
+  color: #333333;
   font-family: TimesModern-Bold;
   font-weight: 400;
+  margin-bottom: 5;
+  font-size: 20;
   line-height: 20px;
-  margin-bottom: 5px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.IS1 {
-  font-size: 20px;
-}
-
-.IS2 {
-  -webkit-line-clamp: 2;
-  margin-top: 5px;
 }
 
 .IS3 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS4 {
+  color: #696969;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  font-family: TimesDigitalW04;
+  font-size: 14;
+  line-height: 20px;
+  margin-top: 5;
+}
+
+.IS5 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -284,16 +272,16 @@ exports[`tile af without breakpoint should be like wide 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS5"
   >
     <div
       className="css-view-1dbjc4n"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
       >
         <div
-          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+          className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
         >
           <ArticleLabel
             color="#005B8D"
@@ -301,23 +289,23 @@ exports[`tile af without breakpoint should be like wide 1`] = `
             title="label"
           />
         </div>
-        <h3
+        <div
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS1 S2"
+          className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
           role="heading"
         >
           This is tile headline
-        </h3>
+        </div>
         <div
-          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS2 S3"
+          className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
         >
-          <span
-            className="css-text-901oao css-textHasAncestor-16my406"
+          <div
+            className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
           >
             
             Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit
             ...
-          </span>
+          </div>
         </div>
         <ArticleFlags
           flags={

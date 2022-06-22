@@ -80,7 +80,10 @@ function ArticleSummary(props) {
       {mobileFlags}
       {saveStar}
       {datePublicationProps ? (
-        <TcText style={checkStylesForUnits(styles.metaText)} testID="datePublication">
+        <TcText
+          style={checkStylesForUnits(styles.metaText)}
+          testID="datePublication"
+        >
           <DatePublication {...datePublicationProps} />
         </TcText>
       ) : null}

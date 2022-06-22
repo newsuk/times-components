@@ -1,17 +1,20 @@
 import React from "react";
 import coreRenderers from "@times-components/markup";
 import { TcText } from "@times-components/utils";
-import { fontFactory } from "@times-components/ts-styleguide";
 
 const style = {
-  color: 'inherit',
-  font: 'inherit',
-  'white-space': 'inherit'
-}
+  color: "inherit",
+  font: "inherit",
+  "white-space": "inherit"
+};
 export default {
   ...coreRenderers,
   link(key, attributes, renderedChildren) {
-    return <TcText key={key} style={style}>{renderedChildren}</TcText>;
+    return (
+      <TcText key={key} style={style}>
+        {renderedChildren}
+      </TcText>
+    );
   },
   paragraph(key, attributes, renderedChildren, index) {
     const padding = renderedChildren.length && index !== 0 ? " " : "";

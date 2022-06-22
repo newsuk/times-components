@@ -2,29 +2,26 @@
 
 exports[`tile t without breakpoint 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
 .IS1 {
   width: 50%;
 }
 
 .IS2 {
-  line-height: 22px;
+  margin-bottom: 0px;
 }
 
 .IS3 {
-  padding-bottom: 5px;
+  color: #333333;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-size: 22;
+  line-height: 22px;
+}
+
+.IS4 {
   padding-left: 10px;
+  padding-bottom: 5px;
   width: 50%;
 }
 </style>
@@ -45,10 +42,10 @@ exports[`tile t without breakpoint 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS4"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -56,13 +53,13 @@ exports[`tile t without breakpoint 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       role="heading"
     >
       This is tile headline
-    </h3>
+    </div>
     <ArticleFlags
       flags={
         Array [

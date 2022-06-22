@@ -5,19 +5,23 @@ import styles from "./styles";
 
 const ArticleSummaryHeadline = ({ className, headline, style }) => (
   <TcText
-    role='heading'
+    role="heading"
     aria-level="3"
     className={className}
-    style={checkStylesForUnits({...styles.headline, ...styles.headlineWrapper, ...style})}
+    style={checkStylesForUnits({
+      ...styles.headline,
+      ...styles.headlineWrapper,
+      ...style
+    })}
   >
     {headline}
   </TcText>
-)
+);
 
 ArticleSummaryHeadline.propTypes = {
   className: PropTypes.string,
   headline: PropTypes.string.isRequired,
-  style: PropTypes.object
+  style: {}
 };
 
 ArticleSummaryHeadline.defaultProps = {

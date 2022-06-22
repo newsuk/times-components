@@ -7,7 +7,7 @@ const ArticleSummaryStrapline = ({ strapline, style }) => (
   <TcText
     role="heading"
     aria-level="4"
-    style={{...styles.strapline, ...style}}
+    style={{ ...styles.strapline, ...style }}
   >
     {strapline}
   </TcText>
@@ -15,7 +15,7 @@ const ArticleSummaryStrapline = ({ strapline, style }) => (
 
 ArticleSummaryStrapline.propTypes = {
   strapline: PropTypes.string.isRequired,
-  style: PropTypes.object
+  style: {}
 };
 
 ArticleSummaryStrapline.defaultProps = {

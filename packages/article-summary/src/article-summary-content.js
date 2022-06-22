@@ -25,7 +25,7 @@ const ArticleSummaryContent = ({
   return ast.length > 0 ? (
     <TcText
       className={className}
-      style={checkStylesForUnits({...styles.text, ...style})}
+      style={checkStylesForUnits({ ...styles.text, ...style })}
       {...numberOfLinesProp}
     >
       {renderAst(ast)}
@@ -36,7 +36,7 @@ const ArticleSummaryContent = ({
 ArticleSummaryContent.propTypes = {
   ast: PropTypes.arrayOf(treePropType),
   className: PropTypes.string,
-  style: PropTypes.object
+  style: {}
 };
 
 ArticleSummaryContent.defaultProps = {
