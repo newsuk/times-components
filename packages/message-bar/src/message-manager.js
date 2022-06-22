@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unused-state */
 import React, { Component } from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { ResponsiveContext } from "@times-components/responsive";
 import styleFactory from "./styles";
@@ -58,8 +58,8 @@ class MessageManager extends Component {
       : {};
 
     return (
-      <View>
-        <View style={[styles.messageManager, offsetStyle]}>
+      <TcView>
+        <TcView style={[styles.messageManager, offsetStyle]}>
           {message && (
             <ResponsiveContext.Consumer>
               {({ editionBreakpoint }) => (
@@ -74,13 +74,13 @@ class MessageManager extends Component {
               )}
             </ResponsiveContext.Consumer>
           )}
-        </View>
-        <View onLayout={this.onLayout}>
+        </TcView>
+        <TcView onLayout={this.onLayout}>
           <MessageContext.Provider value={this.state}>
             {children}
           </MessageContext.Provider>
-        </View>
-      </View>
+        </TcView>
+      </TcView>
     );
   }
 }

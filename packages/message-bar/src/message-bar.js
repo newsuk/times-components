@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { View, Text, Animated, TouchableOpacity } from "react-native";
+import { Animated, TouchableOpacity } from "react-native";
+import { TcView, TcText } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { CloseIcon } from "@times-components/icons";
 import styleFactory from "./styles";
@@ -74,7 +75,6 @@ class MessageBar extends Component {
     const { message, scale, animate, breakpoint } = this.props;
     const { yValue } = this.state;
     const styles = styleFactory(scale, breakpoint);
-
     return (
       <Animated.View
         style={
@@ -90,16 +90,16 @@ class MessageBar extends Component {
           }
         }
       >
-        <View data-testid="message-bar" style={styles.messageBarBodyContainer}>
-          <View style={styles.messageBarBody}>
-            <Text style={styles.messageBarText}>{message}</Text>
-            <View style={styles.messageBarCloseButton}>
+        <TcView data-testid="message-bar" style={styles.messageBarBodyContainer}>
+          <TcView style={styles.messageBarBody}>
+            <TcText style={styles.messageBarText}>{message}</TcText>
+            <TcView style={styles.messageBarCloseButton}>
               <TouchableOpacity onPress={this.close}>
-                <CloseIcon width="28" height="28" />
+                <CloseIcon width="28" height="28" onPress={this.close}/>
               </TouchableOpacity>
-            </View>
-          </View>
-        </View>
+            </TcView>
+          </TcView>
+        </TcView>
       </Animated.View>
     );
   }

@@ -1,8 +1,7 @@
-import { StyleSheet } from "react-native";
 import sharedStyles from "./shared";
+import styled from 'styled-components';
 
-const styles = (scale, breakpoint) =>
-  StyleSheet.create({
+const styles = (scale, breakpoint) => ({
     ...sharedStyles(scale, breakpoint),
     messageManager: {
       ...sharedStyles(scale, breakpoint).messageManager,
