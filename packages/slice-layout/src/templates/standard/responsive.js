@@ -1,8 +1,8 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import { breakpoints, spacing } from "@times-components/ts-styleguide";
 
-export const ChildContainer = styled(View)`
+export const ChildContainer = styled(TcView)`
   flex: 1;
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
@@ -15,7 +15,7 @@ export const ChildContainer = styled(View)`
 `;
 
 export const getChildrenContainer = ({ childCount }) => {
-  let Base = styled(View)`
+  let Base = styled(TcView)`
     flex: 1;
     flex-direction: column;
     flex-wrap: wrap;

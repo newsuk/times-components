@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { editionBreakpoints } from "@times-components/ts-styleguide";
 import PropTypes from "prop-types";
 import styleFactory from "./styles";
@@ -45,12 +45,12 @@ const ListTwoAndSixNoPic = ({
   }
 
   return (
-    <View style={styles.container}>
-      <View style={styles.rowItemContainer}>{lead1}</View>
+    <TcView style={styles.container}>
+      <TcView style={styles.rowItemContainer}>{lead1}</TcView>
       <ItemColSeparator />
-      <View style={styles.rowItemContainer}>{lead2}</View>
+      <TcView style={styles.rowItemContainer}>{lead2}</TcView>
       <ItemColSeparator />
-      <View style={styles.supportsWrapper}>
+      <TcView style={styles.supportsWrapper}>
         <HorizontalLayout
           containerStyle={styles.supportContainer}
           tiles={[
@@ -74,8 +74,8 @@ const ListTwoAndSixNoPic = ({
             { style: styles.supportItem, tile: support6 }
           ]}
         />
-      </View>
-    </View>
+      </TcView>
+    </TcView>
   );
 };
 

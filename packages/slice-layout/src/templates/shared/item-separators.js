@@ -1,13 +1,13 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import styles from "./styles";
 
 const ItemColSeparator = ({ style }) => (
-  <View style={[styles.itemColSeparator, style]} />
+  <TcView style={{ ...styles.itemColSeparator, ...style }} />
 );
 const ItemRowSeparator = ({ style }) => (
-  <View style={[styles.itemRowSeparator, style]} />
+  <TcView style={{ ...styles.itemRowSeparator, ...style }} />
 );
 
 ItemColSeparator.defaultProps = {

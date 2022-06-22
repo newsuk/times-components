@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { editionBreakpoints } from "@times-components/ts-styleguide";
 import styleFactory from "./styles";
 import VerticalLayout from "../verticallayout";
@@ -20,20 +20,20 @@ const SecondaryOneAndFourSlice = ({
   if (breakpoint === editionBreakpoints.small) {
     const renderFourRows = [support1, support2, support3, support4];
     return (
-      <View style={styles.container}>
-        <View style={styles.itemContainer}>
-          <View>{secondary}</View>
-        </View>
+      <TcView style={styles.container}>
+        <TcView style={styles.itemContainer}>
+          <TcView>{secondary}</TcView>
+        </TcView>
         <VerticalLayout tiles={renderFourRows} />
-      </View>
+      </TcView>
     );
   }
 
   return (
-    <View style={styles.container}>
-      <View style={styles.secondaryItemContainer}>{secondary}</View>
+    <TcView style={styles.container}>
+      <TcView style={styles.secondaryItemContainer}>{secondary}</TcView>
       <ItemColSeparator style={styles.separator} />
-      <View style={styles.supportsWrapper}>
+      <TcView style={styles.supportsWrapper}>
         <HorizontalLayout
           containerStyle={styles.supportContainer}
           tiles={[
@@ -51,8 +51,8 @@ const SecondaryOneAndFourSlice = ({
           ]}
           colSeparatorStyle={styles.separator}
         />
-      </View>
-    </View>
+      </TcView>
+    </TcView>
   );
 };
 

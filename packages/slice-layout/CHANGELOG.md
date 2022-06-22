@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.48.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.47...@times-components/slice-layout@0.48.0) (2022-06-22)
+
+
+### Features
+
+* **TDP-1421:** Remove react native from 'times-components/slice-layout' package ([#2994](https://github.com/newsuk/times-components/issues/2994)) ([dc5dc4d](https://github.com/newsuk/times-components/commit/dc5dc4da032565a727e4e62adfc5b606ad60c298))
+
+
+
+
+
 ## [0.47.47](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.47.46...@times-components/slice-layout@0.47.47) (2022-05-16)
 
 **Note:** Version bump only for package @times-components/slice-layout
