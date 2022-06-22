@@ -21,10 +21,7 @@
     "url": "git+https://github.com/newsuk/times-components.git"
   },
   "keywords": [
-    "react-native-web",
     "react",
-    "native",
-    "web",
     "icons",
     "component"
   ],
@@ -53,8 +50,6 @@
     "react": "16.9.0",
     "react-art": "16.6.3",
     "react-dom": "16.9.0",
-    "react-native": "0.61.5",
-    "react-native-web": "0.11.4",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1"
   },
@@ -62,7 +57,8 @@
     "@times-components/svgs": "2.7.36",
     "@times-components/ts-styleguide": "1.36.2",
     "@times-components/utils": "6.12.1",
-    "prop-types": "15.7.2"
+    "prop-types": "15.7.2",
+    "styled-components": "4.3.2"
   },
   "resolutions": {
     "react": "16.9.0",
@@ -70,9 +66,7 @@
   },
   "peerDependencies": {
     "react": ">=16.9",
-    "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-dom": ">=16.9"
   },
   "publishConfig": {
     "access": "public"
