@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.34.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.33.12...@times-components/ssr@2.34.0) (2022-06-23)
+
+
+### Features
+
+* **TDP-1700:** remove react native from article summary  ([8092557](https://github.com/newsuk/times-components/commit/809255721b146f977b94534edba7935b5ebbf79e))
+
+
+
+
+
 ## [2.33.12](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.33.11...@times-components/ssr@2.33.12) (2022-06-22)
 
 **Note:** Version bump only for package @times-components/ssr

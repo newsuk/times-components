@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.107.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.106.47...@times-components/edition-slices@0.107.0) (2022-06-23)
+
+
+### Features
+
+* **TDP-1700:** remove react native from article summary  ([8092557](https://github.com/newsuk/times-components/commit/809255721b146f977b94534edba7935b5ebbf79e))
+
+
+
+
+
 ## [0.106.47](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.106.46...@times-components/edition-slices@0.106.47) (2022-06-22)
 
 **Note:** Version bump only for package @times-components/edition-slices
