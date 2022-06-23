@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.17.0](https://github.com/newsuk/times-components/compare/@times-components/icons@2.16.34...@times-components/icons@2.17.0) (2022-06-22)
+
+
+### Features
+
+* **TDP-2180:** created an ActivityIndicator Icon ([#2998](https://github.com/newsuk/times-components/issues/2998)) ([74a42d9](https://github.com/newsuk/times-components/commit/74a42d90e5e0370845d406c5282c94d644f53c65))
+
+
+
+
+
 ## [2.16.34](https://github.com/newsuk/times-components/compare/@times-components/icons@2.16.33...@times-components/icons@2.16.34) (2022-05-16)
 
 **Note:** Version bump only for package @times-components/icons
