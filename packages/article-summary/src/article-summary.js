@@ -1,10 +1,10 @@
 import React from "react";
-import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import PropTypes from "prop-types";
 import ArticleByline, {
   ArticleBylineOpinion,
   articleBylinePropTypes
 } from "@times-components/article-byline";
+import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import ArticleLabel from "@times-components/article-label";
 import VideoLabel from "@times-components/video-label";
 import DatePublication from "@times-components/date-publication";
