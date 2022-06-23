@@ -2,51 +2,31 @@
 
 exports[`tile ac huge 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
 .IS1 {
   width: 100%;
 }
 
 .IS2 {
-  color: rgba(29,29,27,1.00);
-  font-size: 35px;
+  margin-bottom: 0px;
+}
+
+.IS3 {
+  color: #1D1D1B;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 35;
   line-height: 35px;
   text-align: center;
 }
 
-.IS3 {
-  -webkit-align-items: center;
+.IS4 {
+  flex: 1;
   align-items: center;
-  background-color: rgba(240,240,240,1.00);
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-justify-content: center;
   justify-content: center;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
+  background-color: #F0F0F0;
+  padding-horizontal: 20px;
+  padding-vertical: 70px;
 }
 </style>
 
@@ -66,10 +46,10 @@ exports[`tile ac huge 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS4"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -77,13 +57,13 @@ exports[`tile ac huge 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       role="heading"
     >
       This is tile headline
-    </h3>
+    </div>
     <ArticleFlags
       flags={
         Array [
@@ -101,51 +81,31 @@ exports[`tile ac huge 1`] = `
 
 exports[`tile ac medium 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
 .IS1 {
   width: 100%;
 }
 
 .IS2 {
-  color: rgba(29,29,27,1.00);
-  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.IS3 {
+  color: #1D1D1B;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 30;
   line-height: 30px;
   text-align: center;
 }
 
-.IS3 {
-  -webkit-align-items: center;
+.IS4 {
+  flex: 1;
   align-items: center;
-  background-color: rgba(240,240,240,1.00);
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-justify-content: center;
   justify-content: center;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
+  background-color: #F0F0F0;
+  padding-horizontal: 20px;
+  padding-vertical: 40px;
 }
 </style>
 
@@ -165,10 +125,10 @@ exports[`tile ac medium 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS4"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -176,13 +136,13 @@ exports[`tile ac medium 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       role="heading"
     >
       This is tile headline
-    </h3>
+    </div>
     <ArticleFlags
       flags={
         Array [
@@ -200,51 +160,31 @@ exports[`tile ac medium 1`] = `
 
 exports[`tile ac wide 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
 .IS1 {
   width: 100%;
 }
 
 .IS2 {
-  color: rgba(29,29,27,1.00);
-  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.IS3 {
+  color: #1D1D1B;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 30;
   line-height: 30px;
   text-align: center;
 }
 
-.IS3 {
-  -webkit-align-items: center;
+.IS4 {
+  flex: 1;
   align-items: center;
-  background-color: rgba(240,240,240,1.00);
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-justify-content: center;
   justify-content: center;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
+  background-color: #F0F0F0;
+  padding-horizontal: 20px;
+  padding-vertical: 30px;
 }
 </style>
 
@@ -264,10 +204,10 @@ exports[`tile ac wide 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS4"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -275,13 +215,13 @@ exports[`tile ac wide 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       role="heading"
     >
       This is tile headline
-    </h3>
+    </div>
     <ArticleFlags
       flags={
         Array [
@@ -299,51 +239,31 @@ exports[`tile ac wide 1`] = `
 
 exports[`tile ac without breakpoint should be like medium 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
 .IS1 {
   width: 100%;
 }
 
 .IS2 {
-  color: rgba(29,29,27,1.00);
-  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+.IS3 {
+  color: #1D1D1B;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 30;
   line-height: 30px;
   text-align: center;
 }
 
-.IS3 {
-  -webkit-align-items: center;
+.IS4 {
+  flex: 1;
   align-items: center;
-  background-color: rgba(240,240,240,1.00);
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-justify-content: center;
   justify-content: center;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
+  background-color: #F0F0F0;
+  padding-horizontal: 20px;
+  padding-vertical: 40px;
 }
 </style>
 
@@ -363,10 +283,10 @@ exports[`tile ac without breakpoint should be like medium 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS4"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -374,13 +294,13 @@ exports[`tile ac without breakpoint should be like medium 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       role="heading"
     >
       This is tile headline
-    </h3>
+    </div>
     <ArticleFlags
       flags={
         Array [

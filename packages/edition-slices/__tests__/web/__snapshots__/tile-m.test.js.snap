@@ -2,28 +2,22 @@
 
 exports[`tile m huge 1`] = `
 <style>
-.S1 {
+.IS1 {
+  color: #1D1D1B;
   font-family: TimesModern-Bold;
   font-weight: 400;
-  line-height: 24px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Regular;
-}
-
-.IS1 {
-  color: rgba(29,29,27,1.00);
-  font-size: 24px;
   margin-bottom: 10px;
+  font-size: 24;
+  line-height: 24px;
   margin-top: 30px;
   text-align: center;
 }
 
 .IS2 {
-  font-size: 16px;
-  line-height: 19px;
+  font-family: TimesModern-Regular;
+  font-size: 16;
+  line-height: 19;
+  color: #333333;
   padding-bottom: 5px;
   text-align: center;
 }
@@ -38,22 +32,22 @@ exports[`tile m huge 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-135wba7 IS1 S1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
       role="heading"
     >
       Driving Off
-    </h3>
-    <h4
+    </div>
+    <div
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
       role="heading"
     >
       Three Conservative MPs resign
-    </h4>
+    </div>
     <ArticleFlags />
   </div>
 </Link>
@@ -61,28 +55,22 @@ exports[`tile m huge 1`] = `
 
 exports[`tile m medium 1`] = `
 <style>
-.S1 {
+.IS1 {
+  color: #1D1D1B;
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Regular;
-}
-
-.IS1 {
-  color: rgba(29,29,27,1.00);
-  font-size: 20px;
+  font-size: 20;
   line-height: 20px;
   margin-top: 30px;
   text-align: center;
 }
 
 .IS2 {
-  font-size: 16px;
-  line-height: 19px;
+  font-family: TimesModern-Regular;
+  font-size: 16;
+  line-height: 19;
+  color: #333333;
   padding-bottom: 5px;
   text-align: center;
 }
@@ -97,22 +85,22 @@ exports[`tile m medium 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
       role="heading"
     >
       Driving Off
-    </h3>
-    <h4
+    </div>
+    <div
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
       role="heading"
     >
       Three Conservative MPs resign
-    </h4>
+    </div>
     <ArticleFlags />
   </div>
 </Link>
@@ -120,19 +108,12 @@ exports[`tile m medium 1`] = `
 
 exports[`tile m small 1`] = `
 <style>
-.S1 {
-  color: rgba(51,51,51,1.00);
+.IS1 {
+  color: #333333;
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
-}
-
-.S2 {
-  color: rgba(105,105,105,1.00);
-}
-
-.IS1 {
-  font-size: 20px;
+  font-size: 20;
   line-height: 20px;
   margin-top: 20px;
   text-align: center;
@@ -140,24 +121,16 @@ exports[`tile m small 1`] = `
 
 .IS2 {
   font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
-  line-height: 20px;
-  padding-right: 40px;
-  padding-left: 40px;
+  font-size: 14;
+  line-height: 20;
+  color: #696969;
+  padding-bottom: 10px;
   text-align: center;
+  padding-horizontal: 40px;
 }
 
 .IS3 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 </style>
 
@@ -171,22 +144,22 @@ exports[`tile m small 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
   >
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
       role="heading"
     >
       Driving Off
-    </h3>
-    <h4
+    </div>
+    <div
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-paddingBottom-1mi0q7o IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
       role="heading"
     >
       Three Conservative MPs resign
-    </h4>
+    </div>
     <ArticleFlags />
   </div>
 </Link>
@@ -194,28 +167,22 @@ exports[`tile m small 1`] = `
 
 exports[`tile m wide 1`] = `
 <style>
-.S1 {
+.IS1 {
+  color: #1D1D1B;
   font-family: TimesModern-Bold;
   font-weight: 400;
-  line-height: 24px;
   margin-bottom: 5px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Regular;
-}
-
-.IS1 {
-  color: rgba(29,29,27,1.00);
-  font-size: 24px;
+  font-size: 24;
+  line-height: 24px;
   margin-top: 30px;
   text-align: center;
 }
 
 .IS2 {
-  font-size: 16px;
-  line-height: 19px;
+  font-family: TimesModern-Regular;
+  font-size: 16;
+  line-height: 19;
+  color: #333333;
   padding-bottom: 5px;
   text-align: center;
 }
@@ -230,22 +197,22 @@ exports[`tile m wide 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-135wba7 r-marginBottom-d0pm55 IS1 S1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
       role="heading"
     >
       Driving Off
-    </h3>
-    <h4
+    </div>
+    <div
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
       role="heading"
     >
       Three Conservative MPs resign
-    </h4>
+    </div>
     <ArticleFlags />
   </div>
 </Link>
@@ -253,19 +220,12 @@ exports[`tile m wide 1`] = `
 
 exports[`tile m without breakpoint should be like small 1`] = `
 <style>
-.S1 {
-  color: rgba(51,51,51,1.00);
+.IS1 {
+  color: #333333;
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
-}
-
-.S2 {
-  color: rgba(105,105,105,1.00);
-}
-
-.IS1 {
-  font-size: 20px;
+  font-size: 20;
   line-height: 20px;
   margin-top: 20px;
   text-align: center;
@@ -273,24 +233,16 @@ exports[`tile m without breakpoint should be like small 1`] = `
 
 .IS2 {
   font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
-  line-height: 20px;
-  padding-right: 40px;
-  padding-left: 40px;
+  font-size: 14;
+  line-height: 20;
+  color: #696969;
+  padding-bottom: 10px;
   text-align: center;
+  padding-horizontal: 40px;
 }
 
 .IS3 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 </style>
 
@@ -304,22 +256,22 @@ exports[`tile m without breakpoint should be like small 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
   >
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
       role="heading"
     >
       Driving Off
-    </h3>
-    <h4
+    </div>
+    <div
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-paddingBottom-1mi0q7o IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
       role="heading"
     >
       Three Conservative MPs resign
-    </h4>
+    </div>
     <ArticleFlags />
   </div>
 </Link>

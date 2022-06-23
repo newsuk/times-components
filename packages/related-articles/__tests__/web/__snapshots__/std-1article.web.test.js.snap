@@ -45,24 +45,22 @@ exports[`1. a single related article 1`] = `
                         title="test label"
                       />
                     </div>
-                    <h3
+                    <div
                       aria-level="3"
                       role="heading"
                     >
                       Test Short Headline
-                    </h3>
+                    </div>
                     <div>
                       <div>
-                        <span>
+                        <div>
                           
                           Summary 125
                           ...
-                        </span>
+                        </div>
                       </div>
                     </div>
-                    <div
-                      data-testid="datePublication"
-                    >
+                    <div>
                       <time
                         dateTime="2015-03-13T18:54:58.000Z"
                       >
