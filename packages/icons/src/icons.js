@@ -11,3 +11,4 @@ export { default as TheSTLogo } from "./icons/thesundaytimes-logo";
 export { default as TheTimesLogo } from "./icons/thetimes-logo";
 export { default as CloseIcon } from "./icons/close";
 export { default as IconForwardChevron } from "./icons/forward-chevron";
+export { default as IconActivityIndicator } from "./icons/activity-indicator";

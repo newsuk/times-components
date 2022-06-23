@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { TcView, TcText } from "@times-components/utils";
 import { colours, fonts } from "@times-components/ts-styleguide";
 import * as Icons from "./src/icons";
 
 const borderWidth = 1;
 const borderColor = colours.functional.keyline;
 
-const styles = StyleSheet.create({
+const styles = {
   icon: {
     alignItems: "center",
     borderBottomColor: borderColor,
@@ -32,14 +32,14 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     margin: 20
   }
-});
+};
 
 const renderIcon = color => args => {
   const name = args[0];
   const Icon = args[1];
 
   return (
-    <View key={name} style={styles.icon}>
+    <TcView key={name} style={styles.icon}>
       <Icon
         fillColour={color(`Icon ${name} fill`, Icon.defaultProps.fillColour)}
         height={50}
@@ -49,8 +49,8 @@ const renderIcon = color => args => {
         )}
         width={50}
       />
-      <Text style={styles.label}>{name}</Text>
-    </View>
+      <TcText style={styles.label}>{name}</TcText>
+    </TcView>
   );
 };
 
@@ -58,11 +58,11 @@ export default {
   children: [
     {
       component: ({ color }) => (
-        <ScrollView>
-          <View style={styles.wrapper}>
+        <TcView>
+          <TcView style={styles.wrapper}>
             {Object.entries(Icons).map(renderIcon(color))}
-          </View>
-        </ScrollView>
+          </TcView>
+        </TcView>
       ),
       name: "Icons",
       type: "story"

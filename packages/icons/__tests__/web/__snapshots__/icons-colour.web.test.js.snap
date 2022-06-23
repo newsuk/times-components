@@ -155,3 +155,13 @@ exports[`13. iconforwardchevron renders with different colours 1`] = `
   <path />
 </g>
 `;
+
+exports[`14. iconactivityindicator renders with different colours 1`] = `
+<activity-indicator__ActivityIndicatorContainer>
+  <div>
+    <activity-indicator__ActivityIndicatorSpinner>
+      <div />
+    </activity-indicator__ActivityIndicatorSpinner>
+  </div>
+</activity-indicator__ActivityIndicatorContainer>
+`;
