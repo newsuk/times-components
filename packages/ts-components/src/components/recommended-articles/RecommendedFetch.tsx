@@ -19,13 +19,18 @@ export const RecommendedFetch: React.FC<{
   const [isClientSide, setIsClientSide] = useState<boolean>(false);
 
   useEffect(() => {
-    const acsCookie = window.nuk.getCookieValue('acs_tnl');
+    try {
+      const acsCookie = window.nuk.getCookieValue('acs_tnl');
 
-    const params = new URLSearchParams(window.location.search);
-    const flag = params.get('recommendedArticles');
+      const params = new URLSearchParams(window.location.search);
+      const flag = params.get('recommendedArticles');
 
-    if (acsCookie && flag) {
-      setIsClientSide(true);
+      if (acsCookie && flag) {
+        setIsClientSide(true);
+      }
+    } catch (e) {
+      // tslint:disable-next-line:no-console
+      console.log(e);
     }
   }, []);
 
