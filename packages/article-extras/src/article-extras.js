@@ -103,14 +103,12 @@ const ArticleExtras = ({
           analyticsStream={analyticsStream}
           slice={relatedArticleSlice}
         />
-        {additionalRelatedArticlesFlag && (
-          <RecommendedFetch
-            articleId={articleId}
-            articleHeadline={articleHeadline}
-            articleSection={section}
-            isVisible={additionalRelatedArticlesFlag}
-          />
-        )}
+        <RecommendedFetch
+          articleId={articleId}
+          articleHeadline={articleHeadline}
+          articleSection={section}
+          isVisible={additionalRelatedArticlesFlag}
+        />
         {additionalRelatedArticlesFlag &&
           algoliaRelatedArticleSlice && (
             <RelatedArticles

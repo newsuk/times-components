@@ -1,3 +1,9 @@
+declare global {
+  interface Window {
+    nuk: any;
+  }
+}
+
 import React, { useEffect, useState } from 'react';
 
 import { FetchProvider } from '../../helpers/fetch/FetchProvider';
@@ -13,10 +19,12 @@ export const RecommendedFetch: React.FC<{
   const [isClientSide, setIsClientSide] = useState<boolean>(false);
 
   useEffect(() => {
+    const acsCookie = window.nuk.getCookieValue('acs_tnl');
+
     const params = new URLSearchParams(window.location.search);
     const flag = params.get('recommendedArticles');
 
-    if (flag) {
+    if (acsCookie && flag) {
       setIsClientSide(true);
     }
   }, []);
