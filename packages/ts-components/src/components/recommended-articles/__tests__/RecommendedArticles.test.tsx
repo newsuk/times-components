@@ -82,7 +82,7 @@ describe('<RecommendedArticles>', () => {
     });
 
     const { asFragment, getByText } = render(
-      <RecommendedArticles heading={heading} isVisible />
+      <RecommendedArticles heading={heading} />
     );
 
     expect(getByText(heading));
@@ -109,7 +109,7 @@ describe('<RecommendedArticles>', () => {
     (useFetch as jest.Mock).mockReturnValue({ data: previewData });
 
     const { asFragment, getByText } = render(
-      <RecommendedArticles heading={heading} isVisible />
+      <RecommendedArticles heading={heading} />
     );
 
     expect(getByText(heading));
@@ -129,7 +129,7 @@ describe('<RecommendedArticles>', () => {
         context={initialContext}
         analyticsStream={analyticsStream}
       >
-        <RecommendedArticles heading={heading} isVisible />
+        <RecommendedArticles heading={heading} />
       </TrackingContextProvider>
     );
 
