@@ -18,6 +18,13 @@ jest.mock('../../../helpers/fetch/FetchProvider', () => ({
 
 describe('<RecommendedFetch>', () => {
   it('should render correctly', () => {
+    // @ts-ignore
+    delete window.location;
+    // @ts-ignore
+    window.location = { search: '?recommendedArticles=1' };
+
+    window.nuk = { getCookieValue: () => true };
+
     const { asFragment, getByText } = render(
       <RecommendedFetch
         articleId="1234"
