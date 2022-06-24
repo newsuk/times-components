@@ -2,20 +2,6 @@
 
 exports[`tile ah huge 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-}
-
 .IS1 {
   overflow: hidden;
   width: 97;
@@ -23,27 +9,33 @@ exports[`tile ah huge 1`] = `
 }
 
 .IS2 {
-  color: rgba(29,29,27,1.00);
-  font-size: 45px;
-  line-height: 45px;
-  padding-top: 5px;
-  text-align: center;
+  margin-bottom: 0px;
 }
 
 .IS3 {
-  font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
-  line-height: 20px;
-  padding-bottom: 0px;
+  color: #1D1D1B;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5;
+  font-size: 45;
+  line-height: 45px;
   text-align: center;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 .IS4 {
-  -webkit-align-items: center;
-  align-items: center;
+  font-family: TimesDigitalW04-Regular;
+  font-size: 14;
+  line-height: 20;
+  color: #696969;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.IS5 {
   padding-top: 5px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
+  align-items: center;
 }
 </style>
 
@@ -68,10 +60,10 @@ exports[`tile ah huge 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -79,20 +71,20 @@ exports[`tile ah huge 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 r-paddingBottom-1mi0q7o IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       role="heading"
     >
       This is tile headline
-    </h3>
-    <h4
+    </div>
+    <div
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w IS3 S3"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
       role="heading"
     >
       Three Conservative MPs resign
-    </h4>
+    </div>
     <ArticleFlags
       flags={
         Array [
@@ -110,20 +102,6 @@ exports[`tile ah huge 1`] = `
 
 exports[`tile ah medium 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-}
-
 .IS1 {
   overflow: hidden;
   width: 97;
@@ -131,28 +109,33 @@ exports[`tile ah medium 1`] = `
 }
 
 .IS2 {
-  color: rgba(29,29,27,1.00);
-  font-size: 30px;
-  line-height: 30px;
-  padding-bottom: 10px;
-  padding-top: 5px;
-  text-align: center;
+  margin-bottom: 0px;
 }
 
 .IS3 {
-  font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
-  line-height: 20px;
-  padding-bottom: 0px;
+  color: #1D1D1B;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5;
+  font-size: 30;
+  line-height: 30px;
   text-align: center;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 .IS4 {
-  -webkit-align-items: center;
-  align-items: center;
+  font-family: TimesDigitalW04-Regular;
+  font-size: 14;
+  line-height: 20;
+  color: #696969;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.IS5 {
   padding-top: 5px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
+  align-items: center;
 }
 </style>
 
@@ -177,10 +160,10 @@ exports[`tile ah medium 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -188,20 +171,20 @@ exports[`tile ah medium 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       role="heading"
     >
       This is tile headline
-    </h3>
-    <h4
+    </div>
+    <div
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w IS3 S3"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
       role="heading"
     >
       Three Conservative MPs resign
-    </h4>
+    </div>
     <ArticleFlags
       flags={
         Array [
@@ -219,20 +202,6 @@ exports[`tile ah medium 1`] = `
 
 exports[`tile ah wide 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-}
-
 .IS1 {
   overflow: hidden;
   width: 97;
@@ -240,27 +209,33 @@ exports[`tile ah wide 1`] = `
 }
 
 .IS2 {
-  color: rgba(29,29,27,1.00);
-  font-size: 40px;
-  line-height: 40px;
-  padding-top: 5px;
-  text-align: center;
+  margin-bottom: 0px;
 }
 
 .IS3 {
-  font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
-  line-height: 20px;
-  padding-bottom: 0px;
+  color: #1D1D1B;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5;
+  font-size: 40;
+  line-height: 40px;
   text-align: center;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 .IS4 {
-  -webkit-align-items: center;
-  align-items: center;
+  font-family: TimesDigitalW04-Regular;
+  font-size: 14;
+  line-height: 20;
+  color: #696969;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.IS5 {
   padding-top: 5px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
+  align-items: center;
 }
 </style>
 
@@ -285,10 +260,10 @@ exports[`tile ah wide 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -296,20 +271,20 @@ exports[`tile ah wide 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 r-paddingBottom-1mi0q7o IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       role="heading"
     >
       This is tile headline
-    </h3>
-    <h4
+    </div>
+    <div
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w IS3 S3"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
       role="heading"
     >
       Three Conservative MPs resign
-    </h4>
+    </div>
     <ArticleFlags
       flags={
         Array [
@@ -327,20 +302,6 @@ exports[`tile ah wide 1`] = `
 
 exports[`tile ah without breakpoint should be like medium 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-}
-
 .IS1 {
   overflow: hidden;
   width: 97;
@@ -348,27 +309,33 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
 }
 
 .IS2 {
-  color: rgba(29,29,27,1.00);
-  font-size: 30px;
-  line-height: 30px;
-  padding-top: 5px;
-  text-align: center;
+  margin-bottom: 0px;
 }
 
 .IS3 {
-  font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
-  line-height: 20px;
-  padding-bottom: 0px;
+  color: #1D1D1B;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5;
+  font-size: 30;
+  line-height: 30px;
   text-align: center;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 .IS4 {
-  -webkit-align-items: center;
-  align-items: center;
+  font-family: TimesDigitalW04-Regular;
+  font-size: 14;
+  line-height: 20;
+  color: #696969;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.IS5 {
   padding-top: 5px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
+  align-items: center;
 }
 </style>
 
@@ -393,10 +360,10 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -404,20 +371,20 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 r-paddingBottom-1mi0q7o IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       role="heading"
     >
       This is tile headline
-    </h3>
-    <h4
+    </div>
+    <div
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w IS3 S3"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
       role="heading"
     >
       Three Conservative MPs resign
-    </h4>
+    </div>
     <ArticleFlags
       flags={
         Array [

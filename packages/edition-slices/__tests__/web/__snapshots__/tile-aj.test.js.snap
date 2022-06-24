@@ -2,15 +2,12 @@
 
 exports[`tile aj without breakpoint 1`] = `
 <style>
-.S1 {
-  color: rgba(51,51,51,1.00);
+.IS1 {
+  color: #333333;
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
-}
-
-.IS1 {
-  font-size: 25px;
+  font-size: 25;
   line-height: 25px;
 }
 
@@ -41,13 +38,13 @@ exports[`tile aj without breakpoint 1`] = `
   <div
     className="css-view-1dbjc4n IS2"
   >
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
       role="heading"
     >
       Times Concise medium No 7881
-    </h3>
+    </div>
   </div>
   <Image
     aspectRatio={1.5}

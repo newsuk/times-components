@@ -2,24 +2,21 @@
 
 exports[`tile r huge 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
 .IS1 {
   width: 100%;
   margin-bottom: 15px;
 }
 
 .IS2 {
-  font-size: 45px;
+  margin-bottom: 0px;
+}
+
+.IS3 {
+  color: #333333;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 45;
   line-height: 45px;
 }
 </style>
@@ -41,10 +38,10 @@ exports[`tile r huge 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -52,13 +49,13 @@ exports[`tile r huge 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       role="heading"
     >
       This is tile headline
-    </h3>
+    </div>
     <ArticleFlags
       flags={
         Array [
@@ -76,24 +73,21 @@ exports[`tile r huge 1`] = `
 
 exports[`tile r medium 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
 .IS1 {
   width: 100%;
   margin-bottom: 10px;
 }
 
 .IS2 {
-  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.IS3 {
+  color: #333333;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 40;
   line-height: 40px;
 }
 </style>
@@ -115,10 +109,10 @@ exports[`tile r medium 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -126,13 +120,13 @@ exports[`tile r medium 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       role="heading"
     >
       This is tile headline
-    </h3>
+    </div>
     <ArticleFlags
       flags={
         Array [
@@ -150,24 +144,21 @@ exports[`tile r medium 1`] = `
 
 exports[`tile r wide 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
 .IS1 {
   width: 100%;
   margin-bottom: 15px;
 }
 
 .IS2 {
-  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.IS3 {
+  color: #333333;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 40;
   line-height: 40px;
 }
 </style>
@@ -189,10 +180,10 @@ exports[`tile r wide 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -200,13 +191,13 @@ exports[`tile r wide 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       role="heading"
     >
       This is tile headline
-    </h3>
+    </div>
     <ArticleFlags
       flags={
         Array [
@@ -224,24 +215,21 @@ exports[`tile r wide 1`] = `
 
 exports[`tile r without breakpoint should be like medium 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 0px;
-}
-
 .IS1 {
   width: 100%;
   margin-bottom: 10px;
 }
 
 .IS2 {
-  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.IS3 {
+  color: #333333;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0;
+  font-size: 40;
   line-height: 40px;
 }
 </style>
@@ -263,10 +251,10 @@ exports[`tile r without breakpoint should be like medium 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -274,13 +262,13 @@ exports[`tile r without breakpoint should be like medium 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       role="heading"
     >
       This is tile headline
-    </h3>
+    </div>
     <ArticleFlags
       flags={
         Array [

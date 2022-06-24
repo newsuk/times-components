@@ -1,25 +1,27 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText, checkStylesForUnits } from "@times-components/utils";
 import PropTypes from "prop-types";
 import styles from "./styles";
 
-const { style: TextStylePropTypes } = Text.propTypes;
-
 const ArticleSummaryHeadline = ({ className, headline, style }) => (
-  <Text
-    accessibilityRole="header"
+  <TcText
+    role="heading"
     aria-level="3"
     className={className}
-    style={[styles.headline, styles.headlineWrapper, style]}
+    style={checkStylesForUnits({
+      ...styles.headline,
+      ...styles.headlineWrapper,
+      ...style
+    })}
   >
     {headline}
-  </Text>
+  </TcText>
 );
 
 ArticleSummaryHeadline.propTypes = {
   className: PropTypes.string,
   headline: PropTypes.string.isRequired,
-  style: TextStylePropTypes
+  style: {}
 };
 
 ArticleSummaryHeadline.defaultProps = {

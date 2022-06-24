@@ -44,31 +44,29 @@ exports[`1. three related articles 1`] = `
                         title="first label"
                       />
                     </div>
-                    <h3
+                    <div
                       aria-level="3"
                       role="heading"
                     >
                       First Short Headline
-                    </h3>
+                    </div>
                     <div>
                       <div>
-                        <span>
+                        <div>
                           
                           Summary 125
                           ...
-                        </span>
+                        </div>
                       </div>
                       <div>
-                        <span>
+                        <div>
                           
                           Summary 145
                           ...
-                        </span>
+                        </div>
                       </div>
                     </div>
-                    <div
-                      data-testid="datePublication"
-                    >
+                    <div>
                       <time
                         dateTime="2015-03-13T18:54:58.000Z"
                       >
@@ -119,31 +117,29 @@ exports[`1. three related articles 1`] = `
                         title="second label"
                       />
                     </div>
-                    <h3
+                    <div
                       aria-level="3"
                       role="heading"
                     >
                       Second Short Headline
-                    </h3>
+                    </div>
                     <div>
                       <div>
-                        <span>
+                        <div>
                           
                           Summary 125
                           ...
-                        </span>
+                        </div>
                       </div>
                       <div>
-                        <span>
+                        <div>
                           
                           Summary 145
                           ...
-                        </span>
+                        </div>
                       </div>
                     </div>
-                    <div
-                      data-testid="datePublication"
-                    >
+                    <div>
                       <time
                         dateTime="2018-01-17T12:00:00.000Z"
                       >
@@ -194,31 +190,29 @@ exports[`1. three related articles 1`] = `
                         title="third label"
                       />
                     </div>
-                    <h3
+                    <div
                       aria-level="3"
                       role="heading"
                     >
                       Third Short Headline
-                    </h3>
+                    </div>
                     <div>
                       <div>
-                        <span>
+                        <div>
                           
                           Summary 125
                           ...
-                        </span>
+                        </div>
                       </div>
                       <div>
-                        <span>
+                        <div>
                           
                           Summary 145
                           ...
-                        </span>
+                        </div>
                       </div>
                     </div>
-                    <div
-                      data-testid="datePublication"
-                    >
+                    <div>
                       <time
                         dateTime="2018-01-17T12:00:00.000Z"
                       >

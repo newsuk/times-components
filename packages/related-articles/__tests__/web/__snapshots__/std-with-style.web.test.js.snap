@@ -4,6 +4,24 @@ exports[`default styles 1`] = `
 .c4 {
   border: 0px solid black;
   box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c5 {
+  border: 0px solid black;
+  box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
   font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
@@ -68,7 +86,7 @@ exports[`default styles 1`] = `
   padding-right: 10px;
 }
 
-.c6 {
+.c7 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -87,7 +105,7 @@ exports[`default styles 1`] = `
   flex-direction: row;
 }
 
-.c5 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -274,36 +292,6 @@ exports[`default styles 1`] = `
   justify-content: center;
 }
 
-.S3 {
-  margin-bottom: 0px;
-}
-
-.S4 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 27px;
-  margin-bottom: 5px;
-  margin-top: 0px;
-}
-
-.S5 {
-  color: rgba(105,105,105,1.00);
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.S6 {
-  color: rgba(105,105,105,1.00);
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
-  line-height: 15px;
-  margin-bottom: 5px;
-}
-
 .IS1 {
   font-family: GillSansMTStd-Medium;
   font-size: 12;
@@ -314,6 +302,42 @@ exports[`default styles 1`] = `
   padding-top: 1;
   letter-spacing: 1;
   color: #DB133B;
+}
+
+.IS2 {
+  margin-bottom: 0px;
+}
+
+.IS3 {
+  color: #333333;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-size: 22;
+  line-height: 27px;
+}
+
+.IS4 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS5 {
+  color: #696969;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  font-family: TimesDigitalW04;
+  font-size: 14;
+  line-height: 20px;
+}
+
+.IS6 {
+  color: #696969;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13;
+  line-height: 15px;
+  margin-bottom: 5px;
 }
 </style>
 
@@ -348,39 +372,40 @@ exports[`default styles 1`] = `
               >
                 <Card>
                   <div
-                    className="css-view-1dbjc4n"
+                    className="c4"
+                    style={null}
                   >
                     <div
-                      className="css-view-1dbjc4n r-marginBottom-p1pxzi S3"
+                      className="c4 IS2"
                     >
                       <div
-                        className="c4 IS1"
+                        className="c5 IS1"
                       >
                         TEST LABEL
                       </div>
                     </div>
-                    <h3
-                      className="headlineClass css-reset-4rbku5 headlineClass css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55 r-marginTop-1mnahxq S4"
+                    <div
+                      className="headlineClass c5 IS3"
                     >
                       Test Short Headline
-                    </h3>
+                    </div>
                     <div
                       className="css-view-1dbjc4n"
                     >
                       <div
-                        className="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S5"
+                        className="summaryHidden summary125Class c5 IS5"
                       >
-                        <span
-                          className="css-text-901oao css-textHasAncestor-16my406"
+                        <div
+                          className="c5 IS4"
                         >
                           
                           Summary 125
                           ...
-                        </span>
+                        </div>
                       </div>
                     </div>
                     <div
-                      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55 S6"
+                      className="c5 IS6"
                     >
                       <time>
                         March 13 2015, 6.54pm
@@ -388,15 +413,15 @@ exports[`default styles 1`] = `
                       </time>
                     </div>
                     <div
-                      className="css-text-901oao"
+                      className="c5"
                     >
                       <div
-                        className="c5"
+                        className="c6"
                       >
                         Camilla Long
                       </div>
                       <div
-                        className="c6"
+                        className="c7"
                       >
                         , Environment Editor
                       </div>

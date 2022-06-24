@@ -2,40 +2,40 @@
 
 exports[`tile h without breakpoint 1`] = `
 <style>
-.S1 {
+.IS1 {
   margin-bottom: 0px;
 }
 
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-size: 22px;
-  font-weight: 400;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.IS1 {
-  line-height: 22px;
-  margin-bottom: 10px;
-}
-
 .IS2 {
+  color: #333333;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 22;
+  line-height: 22px;
+}
+
+.IS3 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS4 {
+  color: #696969;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  font-family: TimesDigitalW04;
+  font-size: 14;
+  line-height: 20px;
+}
+
+.IS5 {
   padding-right: 10px;
   width: 50%;
 }
 
-.IS3 {
+.IS6 {
   flex-direction: column;
   justify-content: flex-end;
   width: 50%;
@@ -52,10 +52,10 @@ exports[`tile h without breakpoint 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
     >
       <ArticleLabel
         color="#005B8D"
@@ -63,23 +63,23 @@ exports[`tile h without breakpoint 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 IS1 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
       role="heading"
     >
       This is tile headline
-    </h3>
+    </div>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
     >
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+      <div
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
         ...
-      </span>
+      </div>
     </div>
     <ArticleFlags
       flags={
@@ -93,7 +93,7 @@ exports[`tile h without breakpoint 1`] = `
       longRead={true}
     />
     <div
-      className="css-text-901oao"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
     >
       <div
         className="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
@@ -109,7 +109,7 @@ exports[`tile h without breakpoint 1`] = `
   </div>
   <Image
     aspectRatio={0.6666666666666666}
-    className="IS3"
+    className="IS6"
     fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
   />

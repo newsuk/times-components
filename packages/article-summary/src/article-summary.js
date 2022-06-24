@@ -1,10 +1,10 @@
 import React from "react";
-import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleByline, {
   ArticleBylineOpinion,
   articleBylinePropTypes
 } from "@times-components/article-byline";
+import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import ArticleLabel from "@times-components/article-label";
 import VideoLabel from "@times-components/video-label";
 import DatePublication from "@times-components/date-publication";
@@ -28,9 +28,9 @@ function Label(props) {
   }
 
   return (
-    <View style={styles.labelWrapper}>
+    <TcView style={styles.labelWrapper}>
       {isVideo ? <VideoLabel {...props} /> : <ArticleLabel {...props} />}
-    </View>
+    </TcView>
   );
 }
 
@@ -44,9 +44,9 @@ function Byline(props) {
     : ArticleByline;
 
   return (
-    <Text>
+    <TcText>
       <BylineComponent {...props} className={bylineClass} />
-    </Text>
+    </TcText>
   );
 }
 
@@ -70,7 +70,7 @@ function ArticleSummary(props) {
   const mobileFlags = !isTablet && flags;
 
   return (
-    <View style={style}>
+    <TcView style={style}>
       {labelProps ? <Label {...labelProps} /> : null}
       {isOpinionByline && byline}
       {headline}
@@ -80,12 +80,15 @@ function ArticleSummary(props) {
       {mobileFlags}
       {saveStar}
       {datePublicationProps ? (
-        <Text style={styles.metaText} testID="datePublication">
+        <TcText
+          style={checkStylesForUnits(styles.metaText)}
+          testID="datePublication"
+        >
           <DatePublication {...datePublicationProps} />
-        </Text>
+        </TcText>
       ) : null}
       {!isOpinionByline && byline}
-    </View>
+    </TcView>
   );
 }
 

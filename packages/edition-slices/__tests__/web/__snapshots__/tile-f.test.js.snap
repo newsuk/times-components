@@ -2,39 +2,40 @@
 
 exports[`tile f without breakpoint 1`] = `
 <style>
-.S1 {
+.IS1 {
   margin-bottom: 0px;
 }
 
-.S2 {
-  color: rgba(51,51,51,1.00);
+.IS2 {
+  color: #333333;
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-  font-family: TimesModern-Regular;
-  font-size: 22px;
-  line-height: 24px;
-}
-
-.S4 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.IS1 {
-  font-size: 35px;
+  font-size: 35;
   line-height: 35px;
+}
+
+.IS3 {
+  font-family: TimesModern-Regular;
+  font-size: 22;
+  line-height: 24;
+  color: #696969;
+  padding-bottom: 10px;
+}
+
+.IS4 {
+  color: inherit;
+  font: inherit;
+  white-space: inherit;
+}
+
+.IS5 {
+  color: #696969;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  font-family: TimesDigitalW04;
+  font-size: 14;
+  line-height: 20px;
 }
 </style>
 
@@ -47,10 +48,10 @@ exports[`tile f without breakpoint 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
     >
       <ArticleLabel
         color="#005B8D"
@@ -58,30 +59,30 @@ exports[`tile f without breakpoint 1`] = `
         title="label"
       />
     </div>
-    <h3
+    <div
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
       role="heading"
     >
       This is tile headline
-    </h3>
-    <h4
+    </div>
+    <div
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-evnaw r-lineHeight-135wba7 r-paddingBottom-1mi0q7o S3"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
       role="heading"
     >
       Three Conservative MPs resign
-    </h4>
+    </div>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS5"
     >
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+      <div
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
       >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
         ...
-      </span>
+      </div>
     </div>
     <ArticleFlags
       flags={
