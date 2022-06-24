@@ -43,16 +43,16 @@ exports[`<LatestFromSection> renders  1`] = `
       </h3>
     </div>
     <div
-      class="tc-view__TcView-nuazoi-0 config__Base-bs1997-0 config__Base-bs1997-2 gpmFGs"
+      class="config__Base-bs1997-0 config__Base-bs1997-2 ETkHz config__Base-bs1997-0 config__Base-bs1997-2 ETkHz css-view-1dbjc4n"
     >
       <div
-        class="tc-view__TcView-nuazoi-0 responsive__SliceContainer-sc-1kirgpc-0 dOGrmV"
+        class="responsive__SliceContainer-sc-1kirgpc-0 ioiqOj responsive__SliceContainer-sc-1kirgpc-0 ioiqOj css-view-1dbjc4n"
       >
         <div
-          class="tc-view__TcView-nuazoi-0 responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-2 responsive__Base-sc-1lqbq6a-4 fwcUxi"
+          class="responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-2 responsive__Base-sc-1lqbq6a-4 gpRihd responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-2 responsive__Base-sc-1lqbq6a-4 gpRihd css-view-1dbjc4n"
         >
           <div
-            class="tc-view__TcView-nuazoi-0 responsive__ChildContainer-sc-1lqbq6a-0 wGIJh"
+            class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
           >
             <div
               data-testid="related-article-item"
@@ -115,10 +115,10 @@ exports[`<LatestFromSection> renders  1`] = `
                       class="tc-view__TcView-nuazoi-0 contentContainerClass card-content__TcCardContainer-sc-1w0wvq8-0 hzpWKJ"
                     >
                       <div
-                        class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        class="css-view-1dbjc4n"
                       >
                         <div
-                          class="tc-view__TcView-nuazoi-0 fPjBcr"
+                          class="css-view-1dbjc4n"
                           style="margin-bottom: 0px;"
                         >
                           <div
@@ -128,42 +128,47 @@ exports[`<LatestFromSection> renders  1`] = `
                             CYCLING | DAVID WALSH
                           </div>
                         </div>
-                        <div
+                        <h3
                           aria-level="3"
-                          class="headlineClass tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
+                          dir="auto"
                           role="heading"
-                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
+                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
                         >
                           The entire Tour bows to the greatness of Cavendish
-                        </div>
+                        </h3>
                         <div
                           class="css-view-1dbjc4n"
                         >
                           <div
-                            class="summaryHidden summary125Class tc-text__TcText-sc-15igzev-0 lhcAkf"
-                            style="color: rgb(105, 105, 105); flex-wrap: wrap; margin-bottom: 10px; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px;"
+                            class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
                           >
-                            <div
-                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                              style="white-space: inherit;"
+                            <span
+                              class="css-text-901oao css-textHasAncestor-16my406"
+                              dir="auto"
                             >
                               The story of Mark Cavendish’s heroic return can be told in many ways. In the brilliance of the sprint, mostly. His team-mates had done an outstanding job but ri...
-                            </div>
+                            </span>
                           </div>
                           <div
-                            class="summaryHidden summary145Class tc-text__TcText-sc-15igzev-0 lhcAkf"
-                            style="color: rgb(105, 105, 105); flex-wrap: wrap; margin-bottom: 10px; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px;"
+                            class="summaryHidden summary145Class summaryHidden summary145Class css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
                           >
-                            <div
-                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                              style="white-space: inherit;"
+                            <span
+                              class="css-text-901oao css-textHasAncestor-16my406"
+                              dir="auto"
                             >
                               The story of Mark Cavendish’s heroic return can be told in many ways. In the brilliance of the sprint, mostly. His team-mates had done an outstanding job but ri...
-                            </div>
+                            </span>
                           </div>
                         </div>
                         <div
-                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="css-text-901oao"
+                          data-testid="datePublication"
+                          dir="auto"
                           style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
                         >
                           <time
@@ -173,7 +178,8 @@ exports[`<LatestFromSection> renders  1`] = `
                           </time>
                         </div>
                         <div
-                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="css-text-901oao"
+                          dir="auto"
                         >
                           <div
                             class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
@@ -189,10 +195,10 @@ exports[`<LatestFromSection> renders  1`] = `
             </div>
           </div>
           <div
-            class="tc-view__TcView-nuazoi-0 responsive-sc-1kirgpc-1 kpLnTa"
+            class="responsive-sc-1kirgpc-1 fAXubH responsive-sc-1kirgpc-1 fAXubH css-view-1dbjc4n"
           />
           <div
-            class="tc-view__TcView-nuazoi-0 responsive__ChildContainer-sc-1lqbq6a-0 wGIJh"
+            class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
           >
             <div
               data-testid="related-article-item"
@@ -255,10 +261,10 @@ exports[`<LatestFromSection> renders  1`] = `
                       class="tc-view__TcView-nuazoi-0 contentContainerClass card-content__TcCardContainer-sc-1w0wvq8-0 hzpWKJ"
                     >
                       <div
-                        class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        class="css-view-1dbjc4n"
                       >
                         <div
-                          class="tc-view__TcView-nuazoi-0 fPjBcr"
+                          class="css-view-1dbjc4n"
                           style="margin-bottom: 0px;"
                         >
                           <div
@@ -268,42 +274,47 @@ exports[`<LatestFromSection> renders  1`] = `
                             EURO 2020 | MATT LAWTON
                           </div>
                         </div>
-                        <div
+                        <h3
                           aria-level="3"
-                          class="headlineClass tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
+                          dir="auto"
                           role="heading"
-                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
+                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
                         >
                           Flawless Pickford repels everything Germans muster
-                        </div>
+                        </h3>
                         <div
                           class="css-view-1dbjc4n"
                         >
                           <div
-                            class="summaryHidden summary125Class tc-text__TcText-sc-15igzev-0 lhcAkf"
-                            style="color: rgb(105, 105, 105); flex-wrap: wrap; margin-bottom: 10px; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px;"
+                            class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
                           >
-                            <div
-                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                              style="white-space: inherit;"
+                            <span
+                              class="css-text-901oao css-textHasAncestor-16my406"
+                              dir="auto"
                             >
                               Accompanied by a ghost of England’s past in the form of Thomas Müller, Germany set out to inflict yet more misery on their hosts with two spirited young forward...
-                            </div>
+                            </span>
                           </div>
                           <div
-                            class="summaryHidden summary145Class tc-text__TcText-sc-15igzev-0 lhcAkf"
-                            style="color: rgb(105, 105, 105); flex-wrap: wrap; margin-bottom: 10px; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px;"
+                            class="summaryHidden summary145Class summaryHidden summary145Class css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
                           >
-                            <div
-                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                              style="white-space: inherit;"
+                            <span
+                              class="css-text-901oao css-textHasAncestor-16my406"
+                              dir="auto"
                             >
                               Accompanied by a ghost of England’s past in the form of Thomas Müller, Germany set out to inflict yet more misery on their hosts with two spirited young forward...
-                            </div>
+                            </span>
                           </div>
                         </div>
                         <div
-                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="css-text-901oao"
+                          data-testid="datePublication"
+                          dir="auto"
                           style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
                         >
                           <time
@@ -313,7 +324,8 @@ exports[`<LatestFromSection> renders  1`] = `
                           </time>
                         </div>
                         <div
-                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="css-text-901oao"
+                          dir="auto"
                         >
                           <div
                             class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
@@ -329,10 +341,10 @@ exports[`<LatestFromSection> renders  1`] = `
             </div>
           </div>
           <div
-            class="tc-view__TcView-nuazoi-0 responsive-sc-1kirgpc-1 kpLnTa"
+            class="responsive-sc-1kirgpc-1 fAXubH responsive-sc-1kirgpc-1 fAXubH css-view-1dbjc4n"
           />
           <div
-            class="tc-view__TcView-nuazoi-0 responsive__ChildContainer-sc-1lqbq6a-0 wGIJh"
+            class="responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx responsive__ChildContainer-sc-1lqbq6a-0 hdJTrx css-view-1dbjc4n"
           >
             <div
               data-testid="related-article-item"
@@ -395,10 +407,10 @@ exports[`<LatestFromSection> renders  1`] = `
                       class="tc-view__TcView-nuazoi-0 contentContainerClass card-content__TcCardContainer-sc-1w0wvq8-0 hzpWKJ"
                     >
                       <div
-                        class="tc-view__TcView-nuazoi-0 fPjBcr"
+                        class="css-view-1dbjc4n"
                       >
                         <div
-                          class="tc-view__TcView-nuazoi-0 fPjBcr"
+                          class="css-view-1dbjc4n"
                           style="margin-bottom: 0px;"
                         >
                           <div
@@ -408,42 +420,47 @@ exports[`<LatestFromSection> renders  1`] = `
                             EURO 2020 | JONATHAN NORTHCROFT
                           </div>
                         </div>
-                        <div
+                        <h3
                           aria-level="3"
-                          class="headlineClass tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
+                          dir="auto"
                           role="heading"
-                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
+                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
                         >
                           The tactical masterstrokes behind England’s ruthless win
-                        </div>
+                        </h3>
                         <div
                           class="css-view-1dbjc4n"
                         >
                           <div
-                            class="summaryHidden summary125Class tc-text__TcText-sc-15igzev-0 lhcAkf"
-                            style="color: rgb(105, 105, 105); flex-wrap: wrap; margin-bottom: 10px; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px;"
+                            class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
                           >
-                            <div
-                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                              style="white-space: inherit;"
+                            <span
+                              class="css-text-901oao css-textHasAncestor-16my406"
+                              dir="auto"
                             >
                               Rising value of SterlingRaheem Sterling is often portrayed as the kid from an estate near Wembley, who transitioned from street player to a star on its pitch. A...
-                            </div>
+                            </span>
                           </div>
                           <div
-                            class="summaryHidden summary145Class tc-text__TcText-sc-15igzev-0 lhcAkf"
-                            style="color: rgb(105, 105, 105); flex-wrap: wrap; margin-bottom: 10px; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px;"
+                            class="summaryHidden summary145Class summaryHidden summary145Class css-text-901oao"
+                            dir="auto"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
                           >
-                            <div
-                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                              style="white-space: inherit;"
+                            <span
+                              class="css-text-901oao css-textHasAncestor-16my406"
+                              dir="auto"
                             >
                               Rising value of SterlingRaheem Sterling is often portrayed as the kid from an estate near Wembley, who transitioned from street player to a star on its pitch. A...
-                            </div>
+                            </span>
                           </div>
                         </div>
                         <div
-                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="css-text-901oao"
+                          data-testid="datePublication"
+                          dir="auto"
                           style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
                         >
                           <time
@@ -453,7 +470,8 @@ exports[`<LatestFromSection> renders  1`] = `
                           </time>
                         </div>
                         <div
-                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="css-text-901oao"
+                          dir="auto"
                         >
                           <div
                             class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
