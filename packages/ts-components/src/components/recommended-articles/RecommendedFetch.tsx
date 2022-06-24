@@ -13,7 +13,12 @@ export const RecommendedFetch: React.FC<{
   const [isClientSide, setIsClientSide] = useState<boolean>(false);
 
   useEffect(() => {
-    setIsClientSide(true);
+    const params = new URLSearchParams(window.location.search);
+    const flag = params.get('recommendedArticles');
+
+    if (flag) {
+      setIsClientSide(true);
+    }
   }, []);
 
   const heading = `Today's ${articleSection}`;
