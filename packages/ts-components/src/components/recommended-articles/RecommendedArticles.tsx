@@ -1,4 +1,5 @@
 import React from 'react';
+import get from 'lodash.get';
 
 import RelatedArticles from '@times-components/related-articles';
 
@@ -11,13 +12,19 @@ export const RecommendedArticles: React.FC<{
 }> = ({ heading }) => {
   const { loading, error, data } = useFetch<any>();
 
-  if (loading || error || data === undefined) {
+  if (loading || error) {
+    return null;
+  }
+
+  const articles = get(data, 'recommendations.articles');
+
+  if (!articles || !articles.length) {
     return null;
   }
 
   const { fireAnalyticsEvent } = useTrackingContext();
 
-  const slice = getRelatedArticlesSlice(data.recommendations);
+  const slice = getRelatedArticlesSlice(articles);
 
   const onClickHandler = (__: MouseEvent, article: { url: string }) => {
     const found = slice.items.find(
@@ -33,7 +40,7 @@ export const RecommendedArticles: React.FC<{
   };
 
   return (
-    <div id="recommended-articles" style={{ display: 'block' }}>
+    <div id="recommended-articles" style={{ display: 'none' }}>
       <RelatedArticles
         heading={heading}
         slice={slice}
