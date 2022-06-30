@@ -7,8 +7,7 @@ import {
   IconTwitter,
   IconCopyLink
 } from "@times-components/icons";
-// import SaveStar from "@times-components/save-star-web";
-import SaveStar from "../../save-star-web";
+import SaveStar from "@times-components/save-star-web";
 import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
