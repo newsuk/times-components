@@ -54,6 +54,7 @@ packages/*/rnw.js
 
 # developer editor preferences
 .vscode
+.idea
 
 fragment-matcher.js
 
