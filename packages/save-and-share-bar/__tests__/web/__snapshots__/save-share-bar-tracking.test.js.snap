@@ -11,12 +11,6 @@ Object {
 }
 `;
 
-exports[`save and share tracking events when press copy to clipboard: onCopyLink 1`] = `
-Array [
-  Array [],
-]
-`;
-
 exports[`save and share tracking events when press share article url by email 1`] = `
 Object {
   "action": "Pressed",
@@ -26,18 +20,6 @@ Object {
   },
   "component": "ArticleShareUrlByEmail",
 }
-`;
-
-exports[`save and share tracking events when press share article url by email: onShareEmail 1`] = `
-Array [
-  Array [
-    Object {
-      "articleHeadline": "test-headline",
-      "articleId": "id-123",
-      "articleUrl": "https://www.thetimes.co.uk/",
-    },
-  ],
-]
 `;
 
 exports[`save and share tracking events when press share on facebook 1`] = `
@@ -51,12 +33,6 @@ Object {
 }
 `;
 
-exports[`save and share tracking events when press share on facebook: onShareOnFB 1`] = `
-Array [
-  Array [],
-]
-`;
-
 exports[`save and share tracking events when press share on twitter 1`] = `
 Object {
   "action": "Pressed",
@@ -66,10 +42,4 @@ Object {
   },
   "component": "ArticleShareOnTwitter",
 }
-`;
-
-exports[`save and share tracking events when press share on twitter: onShareOnTwitter 1`] = `
-Array [
-  Array [],
-]
 `;

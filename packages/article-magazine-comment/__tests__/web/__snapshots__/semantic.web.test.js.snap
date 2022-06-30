@@ -202,22 +202,6 @@ exports[`1. a full article 1`] = `
       </svg>
     </a>
     Save
-    <svg
-      height="100%"
-      viewBox="0 0 32 32"
-      width="100%"
-    >
-      <circle
-        cx="16"
-        cy="16"
-        r="14"
-      />
-      <circle
-        cx="16"
-        cy="16"
-        r="14"
-      />
-    </svg>
     <article>
       <img
         alt="An image caption"
@@ -386,22 +370,6 @@ exports[`1. a full article 1`] = `
         </svg>
       </a>
       Save
-      <svg
-        height="100%"
-        viewBox="0 0 32 32"
-        width="100%"
-      >
-        <circle
-          cx="16"
-          cy="16"
-          r="14"
-        />
-        <circle
-          cx="16"
-          cy="16"
-          r="14"
-        />
-      </svg>
     </article>
   </main>
 </article>
