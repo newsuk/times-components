@@ -28,8 +28,8 @@ const ArticleComments = ({
           buttonText="Subscribe now"
           href={getStoreLink()}
         >
-          Commenting is only for subscribers. Upgrade your subscription to join
-          the conversation.
+          Commenting is only available to unlimited access subscribers. Upgrade
+          your subscription to have your say.
         </InlineDialog>
       </UserState>
       <UserState state={UserState.subscriber}>
