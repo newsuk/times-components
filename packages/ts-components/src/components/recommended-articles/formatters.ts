@@ -78,23 +78,21 @@ const getImage = (media?: Media) => {
 // MAIN
 
 export const getRelatedArticlesSlice = (
-  recommendations: any
+  articles: any
 ): RelatedArticleSliceType => ({
   sliceName: 'StandardSlice',
-  items: recommendations
-    ? recommendations.articles
-        .map((article: Article) => ({
-          article: {
-            slug: article.slug,
-            shortIdentifier: article.url.slice(-9),
-            label: article.label,
-            headline: article.headline,
-            publishedTime: article.publishedDateTime,
-            bylines: getBylines(article.bylines),
-            summary125: getSummary(article.summary),
-            leadAsset: getImage(article.media)
-          }
-        }))
-        .slice(0, 3)
-    : []
+  items: articles
+    .map((article: Article) => ({
+      article: {
+        slug: article.slug,
+        shortIdentifier: article.url.slice(-9),
+        label: article.label,
+        headline: article.headline,
+        publishedTime: article.publishedDateTime,
+        bylines: getBylines(article.bylines),
+        summary125: getSummary(article.summary),
+        leadAsset: getImage(article.media)
+      }
+    }))
+    .slice(0, 3)
 });
