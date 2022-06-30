@@ -277,10 +277,12 @@ exports[`save and share bar component save and share bar renders correctly when 
 
 exports[`save and share bar component save and share bar renders correctly when not logged in 1`] = `
 <div
-  className="css-view-1dbjc4n r-alignItems-1awozwy"
+  className="css-view-1dbjc4n"
   data-testid="save-and-share-bar"
   style={
     Object {
+      "WebkitAlignItems": "center",
+      "WebkitBoxAlign": "center",
       "WebkitBoxDirection": "normal",
       "WebkitBoxFlex": 1,
       "WebkitBoxOrient": "horizontal",
@@ -290,12 +292,14 @@ exports[`save and share bar component save and share bar renders correctly when 
       "WebkitFlexGrow": 1,
       "WebkitFlexShrink": 1,
       "WebkitJustifyContent": "space-between",
+      "alignItems": "center",
       "flexBasis": "0%",
       "flexDirection": "row",
       "flexGrow": 1,
       "flexShrink": 1,
       "height": "100%",
       "justifyContent": "space-between",
+      "msFlexAlign": "center",
       "msFlexDirection": "row",
       "msFlexNegative": 1,
       "msFlexPack": "justify",
@@ -307,14 +311,18 @@ exports[`save and share bar component save and share bar renders correctly when 
   }
 >
   <div
-    className="css-view-1dbjc4n r-alignItems-1awozwy"
+    className="css-view-1dbjc4n"
     style={
       Object {
+        "WebkitAlignItems": "center",
+        "WebkitBoxAlign": "center",
         "WebkitBoxDirection": "normal",
         "WebkitBoxOrient": "horizontal",
         "WebkitFlexDirection": "row",
+        "alignItems": "center",
         "flexDirection": "row",
         "height": "40px",
+        "msFlexAlign": "center",
         "msFlexDirection": "row",
       }
     }
