@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.19.1](https://github.com/newsuk/times-components/compare/@times-components/ad@2.19.0...@times-components/ad@2.19.1) (2022-07-01)
+
+
+### Bug Fixes
+
+* **TDP-2238:** remove id from ad container ([#3009](https://github.com/newsuk/times-components/issues/3009)) ([5d5807f](https://github.com/newsuk/times-components/commit/5d5807f2321a0a1aee8af781b137702c9e2e2047))
+
+
+
+
+
 # [2.19.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.16...@times-components/ad@2.19.0) (2022-06-21)
 
 
