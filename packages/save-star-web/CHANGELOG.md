@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.6.112...@times-components/save-star-web@0.7.0) (2022-07-04)
+
+
+### Features
+
+* **TDP-1695:** updated save star web to remove use new Active Icon a… ([#3007](https://github.com/newsuk/times-components/issues/3007)) ([612a69d](https://github.com/newsuk/times-components/commit/612a69d6e835dc2441c97cf40752070043967de8))
+
+
+
+
+
 ## [0.6.112](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.6.111...@times-components/save-star-web@0.6.112) (2022-06-22)
 
 **Note:** Version bump only for package @times-components/save-star-web

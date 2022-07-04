@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.84.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.17...@times-components/article-skeleton@1.84.0) (2022-07-04)
+
+
+### Features
+
+* **TDP-1695:** updated save star web to remove use new Active Icon a… ([#3007](https://github.com/newsuk/times-components/issues/3007)) ([612a69d](https://github.com/newsuk/times-components/commit/612a69d6e835dc2441c97cf40752070043967de8))
+
+
+
+
+
 ## [1.83.17](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.16...@times-components/article-skeleton@1.83.17) (2022-07-01)
 
 **Note:** Version bump only for package @times-components/article-skeleton

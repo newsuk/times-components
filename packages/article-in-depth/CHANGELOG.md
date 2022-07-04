@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.53.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.52.23...@times-components/article-in-depth@3.53.0) (2022-07-04)
+
+
+### Features
+
+* **TDP-1695:** updated save star web to remove use new Active Icon a… ([#3007](https://github.com/newsuk/times-components/issues/3007)) ([612a69d](https://github.com/newsuk/times-components/commit/612a69d6e835dc2441c97cf40752070043967de8))
+
+
+
+
+
 ## [3.52.23](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.52.22...@times-components/article-in-depth@3.52.23) (2022-07-01)
 
 **Note:** Version bump only for package @times-components/article-in-depth
