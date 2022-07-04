@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { spacing, colours } from "@times-components/ts-styleguide";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 
@@ -21,13 +21,13 @@ export default {
           articleId="5504b5a8-b1c0-11e8-a553-a0ee9be48bc6"
           delay={1000}
         >
-          <View style={styles.star}>
+          <TcView style={styles.star}>
             <SaveStarWeb
               colour={colours.functional.secondary}
               hoverColour={colours.functional.brandColour}
               articleId="5504b5a8-b1c0-11e8-a553-a0ee9be48bc6"
             />
-          </View>
+          </TcView>
         </MockBookmarksProvider>
       ),
       name: "SaveStarWeb",
