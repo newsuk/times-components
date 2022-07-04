@@ -147,10 +147,12 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                       Save
                     </div>
                     <div>
-                      <div
-                        data-fillColour="#006699"
-                        data-title="Activity Indicator"
-                      />
+                      <div>
+                        <div
+                          data-fillColour="#006699"
+                          data-title="Activity Indicator"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -461,10 +463,12 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                       Save
                     </div>
                     <div>
-                      <div
-                        data-fillColour="#006699"
-                        data-title="Activity Indicator"
-                      />
+                      <div>
+                        <div
+                          data-fillColour="#006699"
+                          data-title="Activity Indicator"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
