@@ -4,7 +4,7 @@ exports[`<RecommendedArticles> should render RelatedArticles correctly with 1 ar
 <DocumentFragment>
   <div
     id="recommended-articles"
-    style="display: none;"
+    style="display: block;"
   >
     <div>
       RelatedArticles
@@ -23,7 +23,7 @@ exports[`<RecommendedArticles> should render RelatedArticles correctly with 2 ar
 <DocumentFragment>
   <div
     id="recommended-articles"
-    style="display: none;"
+    style="display: block;"
   >
     <div>
       RelatedArticles
@@ -45,7 +45,7 @@ exports[`<RecommendedArticles> should render RelatedArticles correctly with 3 ar
 <DocumentFragment>
   <div
     id="recommended-articles"
-    style="display: none;"
+    style="display: block;"
   >
     <div>
       RelatedArticles

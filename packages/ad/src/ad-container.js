@@ -18,7 +18,7 @@ const AdContainer = ({ slotName, style }) => {
   };
 
   return (
-    <TcView id={slotName} style={{ ...styles.container, ...style }}>
+    <TcView style={{ ...styles.container, ...style }}>
       <div id={`${adMap[slotName]}`} />
     </TcView>
   );

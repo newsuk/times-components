@@ -40,7 +40,7 @@ export const RecommendedArticles: React.FC<{
   };
 
   return (
-    <div id="recommended-articles" style={{ display: 'none' }}>
+    <div id="recommended-articles" style={{ display: 'block' }}>
       <RelatedArticles
         heading={heading}
         slice={slice}
