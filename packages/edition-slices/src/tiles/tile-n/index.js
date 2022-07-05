@@ -13,7 +13,11 @@ import {
 } from "../shared";
 import styleFactory from "./styles";
 
-const TileN = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
+const TileN = ({
+  onPress,
+  tile,
+  breakpoint = editionBreakpoints.small
+}) => {
   const styles = styleFactory(breakpoint);
   const crop = getTileImage(tile, "crop11");
   const strapline =
