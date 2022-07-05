@@ -48,7 +48,7 @@ export default () => {
       global.window.location = realLocation;
     });
 
-    it.only("save and share bar renders correctly when logged in", () => {
+    it("save and share bar renders correctly when logged in", () => {
       UserState.mockStates = [UserState.subscriber, UserState.loggedIn];
       const testInstance = TestRenderer.create(
         <MockedProvider>
@@ -95,7 +95,7 @@ export default () => {
       ).toEqual(false);
     });
 
-    xit("email icon when tokenising with loading state while network request is fetching data", async () => {
+    it("email icon when tokenising with loading state while network request is fetching data", async () => {
       const apiMock = () =>
         Promise.resolve({
           loading: true
@@ -114,7 +114,7 @@ export default () => {
       expect(testInstance).toMatchSnapshot();
     });
 
-    xit("when tokenising, email icon fetches tokenised article url and change window.location (The Times)", async () => {
+    it("when tokenising, email icon fetches tokenised article url and change window.location (The Times)", async () => {
       const testInstance = TestRenderer.create(
         <EmailShare {...props} shouldTokenise publicationName="TIMES" />
       );
@@ -130,7 +130,7 @@ export default () => {
       expect(window.location.assign).toBeCalledWith(mailtoUrl);
     });
 
-    xit("when tokenising, email icon fetches tokenised article url and change window.location (The Sunday Times)", async () => {
+    it("when tokenising, email icon fetches tokenised article url and change window.location (The Sunday Times)", async () => {
       const testInstance = TestRenderer.create(
         <EmailShare
           {...props}
