@@ -14,17 +14,16 @@ const mockEvent = {
 
 export default () => {
   describe("save and share bar component", () => {
-    const copyTextToClipboard = jest.fn();
     const onCopyLink = jest.fn();
     const onShareEmail = jest.fn();
     const articleId = "96508c84-6611-11e9-adc2-05e1b87efaea";
     const articleUrl = "https://www.thetimes.co.uk/";
     const articleHeadline = "test-headline";
+    const originalClipboard = { ...global.navigator.clipboard };
     const props = {
       articleId,
       articleUrl,
       articleHeadline,
-      copyTextToClipboard,
       onCopyLink,
       onShareEmail,
       getTokenisedShareUrl: mockGetTokenisedArticleUrl,
@@ -41,14 +40,22 @@ export default () => {
         assign: jest.fn(),
         search: ""
       };
+      clipboardData = '';
+      mockClipboard = {
+          writeText: jest.fn(
+              (data) => {clipboardData = data}
+          )
+      };
+      global.navigator.clipboard = mockClipboard;
     });
 
     afterEach(() => {
       delete global.window.location;
       global.window.location = realLocation;
+      global.navigator.clipboard = originalClipboard;
     });
 
-    xit("save and share bar renders correctly when logged in", () => {
+    it("save and share bar renders correctly when logged in", () => {
       UserState.mockStates = [UserState.subscriber, UserState.loggedIn];
       const testInstance = TestRenderer.create(
         <MockedProvider>
@@ -68,14 +75,14 @@ export default () => {
       expect(testInstance.toJSON()).toMatchSnapshot();
     });
 
-    xit("onPress events triggers correctly", () => {
+    it("onPress events triggers correctly", () => {
       const testInstance = TestRenderer.create(
         <MockedProvider>
           <SaveAndShareBar {...props} />
         </MockedProvider>
       );
       testInstance.root.findAllByType(BarItem)[3].props.onPress(mockEvent);
-      expect(copyTextToClipboard).toHaveBeenCalledWith(articleUrl);
+      expect(navigator.clipboard.writeText).toHaveBeenCalledWith(articleUrl);
       expect(onCopyLink).toHaveBeenCalled();
     });
 
