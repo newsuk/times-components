@@ -35,6 +35,10 @@ export {
 
 // Sport Components
 export {
+  OptaCricketScorecard
+} from './components/opta/cricket/scorecard/OptaCricketScorecard';
+
+export {
   OptaFootballFixtures
 } from './components/opta/football/fixtures/OptaFootballFixtures';
 export {
