@@ -1,4 +1,3 @@
-import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -19,16 +18,7 @@ export default () => {
       stylePrinter,
       hoistStyleTransform,
       minimalWebTransform,
-      minimaliseTransform((value, key) => key === "style"),
-      rnwTransform(AppRegistry, [
-        "color",
-        "flexWrap",
-        "fontFamily",
-        "fontSize",
-        "fontWeight",
-        "lineHeight",
-        "marginBottom"
-      ])
+      minimaliseTransform((value, key) => key === "style")
     )
   );
 
