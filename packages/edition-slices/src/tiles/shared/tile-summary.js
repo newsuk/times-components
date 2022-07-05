@@ -90,7 +90,6 @@ class TileSummary extends Component {
       strapline,
       style,
       summary,
-      withStar,
       labelColour
     } = this.props;
     return (

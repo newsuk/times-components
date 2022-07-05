@@ -5,8 +5,7 @@ import {
   minimaliseTransform,
   minimalWebTransform,
   hoistStyleTransform,
-  stylePrinter,
-  rnwTransform
+  stylePrinter
 } from "@times-components/jest-serializer";
 import shared from "./shared-tile-ak.base";
 
