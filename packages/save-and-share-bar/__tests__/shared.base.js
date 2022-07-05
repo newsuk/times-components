@@ -48,7 +48,7 @@ export default () => {
       global.window.location = realLocation;
     });
 
-    it("save and share bar renders correctly when logged in", () => {
+    xit("save and share bar renders correctly when logged in", () => {
       UserState.mockStates = [UserState.subscriber, UserState.loggedIn];
       const testInstance = TestRenderer.create(
         <MockedProvider>

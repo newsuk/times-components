@@ -12,5 +12,3 @@ jest.mock("@times-components/icons", () => ({
   IconSaveBookmark: "IconSaveBookmark",
   IconTwitter: "IconTwitter"
 }));
-
-jest.mock("@times-components/save-star-web", () => "SaveStar");
