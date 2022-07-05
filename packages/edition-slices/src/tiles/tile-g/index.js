@@ -1,6 +1,6 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { editionBreakpoints } from "@times-components/ts-styleguide";
 import {
@@ -11,7 +11,6 @@ import {
   withTileTracking
 } from "../shared";
 import stylesFactory from "./styles";
-import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileG = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const crop = getTileImage(tile, "crop11");
@@ -23,8 +22,8 @@ const TileG = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <View style={styles.outerContainer}>
-        <View style={styles.innerContainer}>
+      <TcView style={styles.outerContainer}>
+        <TcView style={styles.innerContainer}>
           <TileImage
             aspectRatio={1}
             relativeWidth={crop.relativeWidth}
@@ -43,12 +42,8 @@ const TileG = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
             tile={tile}
             withStar={false}
           />
-        </View>
-        <PositionedTileStar
-          customStyles={styles.customStarPosition}
-          articleId={tile.article.id}
-        />
-      </View>
+        </TcView>
+      </TcView>
     </TileLink>
   );
 };

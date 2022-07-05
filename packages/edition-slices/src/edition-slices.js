@@ -1,6 +1,5 @@
 import { getDimensions } from "@times-components/utils";
 import { tabletWidth } from "@times-components/ts-styleguide";
-import { NativeModules } from "react-native";
 import {
   CommentLeadAndCartoonSlice,
   DailyRegisterLeadFourSlice,
@@ -20,7 +19,7 @@ import {
   PuzzleSlice
 } from "./slices";
 
-const config = (NativeModules || {}).ReactConfig;
+const config = {}.ReactConfig;
 
 const { width } = getDimensions();
 const isTablet =

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { ResponsiveContext } from "@times-components/responsive";
 import styleFactory from "./styles";
 
@@ -9,7 +9,7 @@ const Gutter = ({ children }) => (
     {({ isTablet, editionBreakpoint }) => {
       const styles = styleFactory(isTablet, editionBreakpoint);
 
-      return <View style={styles.gutterStyles}>{children}</View>;
+      return <TcView style={styles.gutterStyles}>{children}</TcView>;
     }}
   </ResponsiveContext.Consumer>
 );

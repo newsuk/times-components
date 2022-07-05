@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView } from "react-native";
+import { TcView } from "@times-components/utils";
 import {
   mockDailyRegisterSlice,
   mockLeadOneAndFourSlice,
@@ -59,7 +59,7 @@ const savedArticles = {
 /* eslint-disable react/prop-types */
 const renderSlice = (Component, data) => ({ select }, { decorateAction }) => (
   <Responsive>
-    <ScrollView>
+    <TcView>
       <SectionContext.Provider
         value={{
           onArticleSavePress: select(
@@ -76,7 +76,7 @@ const renderSlice = (Component, data) => ({ select }, { decorateAction }) => (
           slice={data}
         />
       </SectionContext.Provider>
-    </ScrollView>
+    </TcView>
   </Responsive>
 );
 

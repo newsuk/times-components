@@ -1,6 +1,6 @@
 /* eslint-disable react/require-default-props */
 import React, { Component } from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 
 class WithoutWhiteSpace extends Component {
@@ -25,7 +25,7 @@ class WithoutWhiteSpace extends Component {
     const whiteSpaceHeight = containerHeight - contentHeight;
 
     return (
-      <View
+      <TcView
         style={[styles, { flex: 1 }]}
         onLayout={e =>
           !isContainerRendered &&
@@ -35,7 +35,7 @@ class WithoutWhiteSpace extends Component {
           })
         }
       >
-        <View
+        <TcView
           onLayout={e =>
             !isContentRendered &&
             this.setState({
@@ -45,8 +45,8 @@ class WithoutWhiteSpace extends Component {
           }
         >
           {render(whiteSpaceHeight)}
-        </View>
-      </View>
+        </TcView>
+      </TcView>
     );
   }
 }

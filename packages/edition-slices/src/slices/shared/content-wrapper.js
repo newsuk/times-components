@@ -5,13 +5,13 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styleFactory from "./styles";
 
 const styles = styleFactory();
 
 const ContentWrapper = ({ children }) => (
-  <View style={styles.contentWrapperStyles}>{children}</View>
+  <TcView style={styles.contentWrapperStyles}>{children}</TcView>
 );
 
 ContentWrapper.propTypes = {

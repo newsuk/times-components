@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import {
   VerticalLayout,
@@ -36,9 +36,9 @@ class Standard extends Component {
 
   renderMedium(breakpoint) {
     return (
-      <View style={styles.container}>
+      <TcView style={styles.container}>
         <VerticalLayout tiles={this.getTiles(breakpoint)} />
-      </View>
+      </TcView>
     );
   }
 

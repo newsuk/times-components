@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { editionBreakpoints } from "@times-components/ts-styleguide";
 import propTypes from "./proptypes";
 import stylesFactory from "./styles";
@@ -20,9 +20,9 @@ class Puzzle extends Component {
     const { container, tileContainer } = stylesFactory(breakpoint);
 
     return (
-      <View style={container}>
+      <TcView style={container}>
         {puzzles.map(({ id, title, url, image }) => (
-          <View style={tileContainer} key={`puzzleItem-${id}`}>
+          <TcView style={tileContainer} key={`puzzleItem-${id}`}>
             {breakpoint === editionBreakpoints.small ? (
               <TileAJ
                 id={id}
@@ -41,9 +41,9 @@ class Puzzle extends Component {
                 breakpoint={breakpoint}
               />
             )}
-          </View>
+          </TcView>
         ))}
-      </View>
+      </TcView>
     );
   }
 

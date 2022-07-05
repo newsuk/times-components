@@ -10,7 +10,6 @@ import {
 } from "../shared";
 import stylesFactory from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
-import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileB = ({
   onPress,
@@ -40,7 +39,6 @@ const TileB = ({
           />
         )}
       />
-      <PositionedTileStar articleId={tile.article.id} />
     </TileLink>
   );
 };
