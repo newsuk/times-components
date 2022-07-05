@@ -5,10 +5,16 @@ exports[`save and share bar component email icon when tokenising with loading st
   dataTestId="email-share"
   url=""
 >
-  <IconEmail
-    fillColour="currentColor"
-    height={16}
-    title="Share by email"
+  <IconActivityIndicator
+    size="small"
+    style={
+      Object {
+        "borderRadius": 9999,
+        "height": 40,
+        "overflow": "hidden",
+        "width": 40,
+      }
+    }
   />
 </BarItem>
 `;

@@ -10,5 +10,6 @@ jest.mock("@times-components/icons", () => ({
   IconEmail: "IconEmail",
   IconFacebook: "IconFacebook",
   IconSaveBookmark: "IconSaveBookmark",
-  IconTwitter: "IconTwitter"
+  IconTwitter: "IconTwitter",
+  IconActivityIndicator: "IconActivityIndicator"
 }));

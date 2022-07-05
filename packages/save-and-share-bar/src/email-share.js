@@ -27,12 +27,11 @@ class EmailShare extends Component {
     onShareEmail({ articleId, articleUrl, articleHeadline });
 
     if (shouldTokenise) {
-      // this.setState({ isLoading: true });
+      this.setState({ isLoading: true });
 
       getTokenisedShareUrl(articleId)
         .then(res => {
           const { data } = res;
-
           if (data && data.article) {
             this.setState({ isLoading: false });
             this.openMailClient(data.article.tokenisedUrl);
