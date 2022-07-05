@@ -17,7 +17,7 @@ export default () => {
       stylePrinter,
       hoistStyleTransform,
       minimalWebTransform,
-      minimaliseTransform((value, key) => key === "style"),
+      minimaliseTransform((value, key) => key === "style")
     )
   );
 
