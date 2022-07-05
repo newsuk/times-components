@@ -65,13 +65,13 @@ exports[`1. default image 1`] = `
     <div
       className="c0 IS2"
     >
-      <Svg
+      <svg
         className="IS1"
       >
-        <G>
-          <Path />
-        </G>
-      </Svg>
+        <g>
+          <path />
+        </g>
+      </svg>
     </div>
   </div>
 </div>
@@ -142,13 +142,13 @@ exports[`2. default modal 1`] = `
     <div
       className="c0 IS2"
     >
-      <Svg
+      <svg
         className="IS1"
       >
-        <G>
-          <Path />
-        </G>
-      </Svg>
+        <g>
+          <path />
+        </g>
+      </svg>
     </div>
   </div>
 </div>
