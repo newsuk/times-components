@@ -26,7 +26,7 @@ class WithoutWhiteSpace extends Component {
 
     return (
       <TcView
-        style={{ ...styles, flex: 1 }}
+        style={[styles, { flex: 1 }]}
         onLayout={e =>
           !isContainerRendered &&
           this.setState({

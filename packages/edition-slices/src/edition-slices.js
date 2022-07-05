@@ -19,6 +19,8 @@ import {
   PuzzleSlice
 } from "./slices";
 
+const config = {}.ReactConfig;
+
 const { width } = getDimensions();
 const isTablet = width > tabletWidth;
 const SecondaryTwoAndTwoMapper = isTablet

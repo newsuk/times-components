@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { TcView, TcText, checkStylesForUnits } from "@times-components/utils";
+import { TcView, TcText } from "@times-components/utils";
 import { SectionContext } from "@times-components/context";
 import { Leaders } from "@times-components/slice-layout";
 import PropTypes from "prop-types";
@@ -14,12 +14,7 @@ const renderHead = (styles, breakpoint) => (
       <TcView style={styles.mastheadContainer}>
         <MastHead breakpoint={breakpoint} publicationName={publicationName} />
         <TcView style={styles.headingContainer}>
-          <TcText
-            style={checkStylesForUnits({ ...styles.heading, ...styles.text })}
-          >
-            {" "}
-            Leading Articles{" "}
-          </TcText>
+          <TcText style={[styles.heading, styles.text]}> Leading Articles </TcText>
         </TcView>
       </TcView>
     )}
