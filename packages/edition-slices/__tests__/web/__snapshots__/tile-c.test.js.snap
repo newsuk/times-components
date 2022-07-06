@@ -39,7 +39,7 @@ exports[`tile c without breakpoint 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS1"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
   >
     <Image
       aspectRatio={1.7777777777777777}

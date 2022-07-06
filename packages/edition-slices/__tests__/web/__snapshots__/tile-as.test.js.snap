@@ -52,7 +52,7 @@ exports[`tile as huge 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS1"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
   >
     <Image
       aspectRatio={1.5}
@@ -157,7 +157,7 @@ exports[`tile as medium 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS1"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
   >
     <Image
       aspectRatio={1.5}
@@ -262,7 +262,7 @@ exports[`tile as wide 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS1"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
   >
     <Image
       aspectRatio={1.5}

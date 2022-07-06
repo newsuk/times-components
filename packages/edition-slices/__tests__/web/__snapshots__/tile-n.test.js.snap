@@ -26,11 +26,7 @@ exports[`tile n huge 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -45,7 +41,7 @@ exports[`tile n huge 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <Image
       aspectRatio={1}
@@ -123,11 +119,7 @@ exports[`tile n medium 1`] = `
 }
 
 .IS6 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -142,7 +134,7 @@ exports[`tile n medium 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <Image
       aspectRatio={1}
@@ -226,11 +218,7 @@ exports[`tile n small 1`] = `
 }
 
 .IS6 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -246,7 +234,7 @@ exports[`tile n small 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <Image
       aspectRatio={1}
@@ -331,11 +319,7 @@ exports[`tile n wide 1`] = `
 }
 
 .IS6 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -350,7 +334,7 @@ exports[`tile n wide 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <Image
       aspectRatio={1}
@@ -434,11 +418,7 @@ exports[`tile n with default star 1`] = `
 }
 
 .IS6 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -454,7 +434,7 @@ exports[`tile n with default star 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <Image
       aspectRatio={1}
@@ -538,11 +518,7 @@ exports[`tile n without breakpoint should be like small 1`] = `
 }
 
 .IS6 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -558,7 +534,7 @@ exports[`tile n without breakpoint should be like small 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <Image
       aspectRatio={1}

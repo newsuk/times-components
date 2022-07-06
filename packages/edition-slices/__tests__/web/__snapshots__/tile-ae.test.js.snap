@@ -32,16 +32,8 @@ exports[`tile ae huge 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -57,10 +49,10 @@ exports[`tile ae huge 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -141,16 +133,8 @@ exports[`tile ae medium 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -166,10 +150,10 @@ exports[`tile ae medium 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -250,16 +234,8 @@ exports[`tile ae wide 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -275,10 +251,10 @@ exports[`tile ae wide 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -359,16 +335,8 @@ exports[`tile ae without breakpoint should be like medium 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -384,10 +352,10 @@ exports[`tile ae without breakpoint should be like medium 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"
