@@ -1,8 +1,7 @@
 /* eslint-env browser */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { ActivityIndicator } from "react-native";
-import { IconEmail } from "@times-components/icons";
+import { IconEmail, IconActivityIndicator } from "@times-components/icons";
 import styles from "./styles";
 import BarItem from "./bar-item";
 
@@ -67,7 +66,7 @@ class EmailShare extends Component {
     return (
       <BarItem onPress={this.onShare} dataTestId="email-share" url="">
         {isLoading ? (
-          <ActivityIndicator size="small" style={styles.activityLoader} />
+          <IconActivityIndicator size="small" style={styles.activityLoader} />
         ) : (
           <IconEmail
             fillColour="currentColor"

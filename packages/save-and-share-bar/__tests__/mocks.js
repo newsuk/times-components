@@ -10,13 +10,6 @@ jest.mock("@times-components/icons", () => ({
   IconEmail: "IconEmail",
   IconFacebook: "IconFacebook",
   IconSaveBookmark: "IconSaveBookmark",
-  IconTwitter: "IconTwitter"
+  IconTwitter: "IconTwitter",
+  IconActivityIndicator: "IconActivityIndicator"
 }));
-
-jest.mock("react-native", () => {
-  const reactNativeMock = require.requireActual("react-native");
-  reactNativeMock.Clipboard = {
-    setString: jest.fn()
-  };
-  return reactNativeMock;
-});

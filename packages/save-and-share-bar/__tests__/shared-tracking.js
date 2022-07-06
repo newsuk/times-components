@@ -88,7 +88,7 @@ export default () => {
       global.window.location = realLocation;
     });
 
-    xit("when press share on twitter", () => {
+    it("when press share on twitter", () => {
       const shareOnTwitterBarItem = testInstance.root.findAllByType(BarItem)[1];
       shareOnTwitterBarItem.props.onPress();
 
@@ -98,7 +98,7 @@ export default () => {
       expect(onShareOnTwitter.mock.calls).toMatchSnapshot("onShareOnTwitter");
     });
 
-    xit("when press share on facebook", () => {
+    it("when press share on facebook", () => {
       const shareOnFacebookBarItem = testInstance.root.findAllByType(
         BarItem
       )[2];
@@ -122,7 +122,7 @@ export default () => {
       expect(onCopyLink.mock.calls).toMatchSnapshot("onCopyLink");
     });
 
-    xit("when press share article url by email", async () => {
+    it("when press share article url by email", async () => {
       const shareArticleUrlByEmailBarItem = testInstance.root.findAllByType(
         BarItem
       )[0];

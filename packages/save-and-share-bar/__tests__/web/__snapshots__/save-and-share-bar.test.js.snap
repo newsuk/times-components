@@ -5,125 +5,53 @@ exports[`save and share bar component email icon when tokenising with loading st
   dataTestId="email-share"
   url=""
 >
-  <div
-    aria-valuemax="1"
-    aria-valuemin="0"
-    className="css-view-1dbjc4n r-alignItems-1awozwy r-justifyContent-1777fci"
-    role="progressbar"
+  <IconActivityIndicator
+    size="small"
     style={
       Object {
-        "borderBottomLeftRadius": "9999px",
-        "borderBottomRightRadius": "9999px",
-        "borderTopLeftRadius": "9999px",
-        "borderTopRightRadius": "9999px",
-        "height": "40px",
-        "overflowX": "hidden",
-        "overflowY": "hidden",
-        "width": "40px",
+        "borderRadius": 9999,
+        "height": 40,
+        "overflow": "hidden",
+        "width": 40,
       }
     }
-  >
-    <div
-      className="css-view-1dbjc4n r-animationDuration-17bb2tj r-animationIterationCount-1muvv40 r-animationKeyframes-127358a r-animationTimingFunction-1ldzwu0 r-height-z80fyv r-width-19wmn03"
-    >
-      <svg
-        height="100%"
-        viewBox="0 0 32 32"
-        width="100%"
-      >
-        <circle
-          cx="16"
-          cy="16"
-          fill="none"
-          r="14"
-          strokeWidth="4"
-          style={
-            Object {
-              "opacity": 0.2,
-              "stroke": "#1976D2",
-            }
-          }
-        />
-        <circle
-          cx="16"
-          cy="16"
-          fill="none"
-          r="14"
-          strokeWidth="4"
-          style={
-            Object {
-              "stroke": "#1976D2",
-              "strokeDasharray": 80,
-              "strokeDashoffset": 60,
-            }
-          }
-        />
-      </svg>
-    </div>
-  </div>
+  />
 </BarItem>
 `;
 
 exports[`save and share bar component save and share bar renders correctly when logged in 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   data-testid="save-and-share-bar"
   style={
     Object {
-      "WebkitAlignItems": "center",
-      "WebkitBoxAlign": "center",
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxFlex": 1,
-      "WebkitBoxOrient": "horizontal",
-      "WebkitBoxPack": "justify",
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexDirection": "row",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "WebkitJustifyContent": "space-between",
       "alignItems": "center",
-      "flexBasis": "0%",
+      "flex": 1,
       "flexDirection": "row",
-      "flexGrow": 1,
-      "flexShrink": 1,
       "height": "100%",
       "justifyContent": "space-between",
-      "msFlexAlign": "center",
-      "msFlexDirection": "row",
-      "msFlexNegative": 1,
-      "msFlexPack": "justify",
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
       "paddingBottom": "10px",
       "paddingTop": "10px",
     }
   }
 >
   <div
-    className="css-view-1dbjc4n"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
     style={
       Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "horizontal",
-        "WebkitFlexDirection": "row",
         "alignItems": "center",
         "flexDirection": "row",
-        "height": "40px",
-        "msFlexAlign": "center",
-        "msFlexDirection": "row",
+        "height": 40,
       }
     }
   >
     <div
-      className="css-text-901oao"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       style={
         Object {
-          "WebkitTransform": "translateY(9%)",
-          "color": "rgba(105,105,105,1.00)",
+          "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": "14px",
+          "fontSize": 14,
           "lineHeight": "14px",
           "marginRight": "10px",
           "transform": "translateY(9%)",
@@ -178,98 +106,52 @@ exports[`save and share bar component save and share bar renders correctly when 
     </BarItem>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
     data-testid="save-star"
     style={
       Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "horizontal",
-        "WebkitFlexDirection": "row",
         "alignItems": "center",
         "flexDirection": "row",
-        "height": "40px",
+        "height": 40,
         "marginLeft": "auto",
-        "msFlexAlign": "center",
-        "msFlexDirection": "row",
       }
     }
   >
     <div
-      className="css-text-901oao"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       style={
         Object {
-          "WebkitTransform": "translateY(9%)",
-          "color": "rgba(105,105,105,1.00)",
+          "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": "14px",
+          "fontSize": 14,
           "lineHeight": "14px",
           "marginRight": "10px",
           "textAlign": "right",
-          "transform": "translateY(9%)",
+          "transform": Array [
+            Object {
+              "translateY": "9%",
+            },
+          ],
         }
       }
     >
       Save
     </div>
     <div
-      aria-valuemax="1"
-      aria-valuemin="0"
-      className="css-view-1dbjc4n r-alignItems-1awozwy r-justifyContent-1777fci"
-      role="progressbar"
-      style={
-        Object {
-          "backgroundColor": "rgba(245,245,245,1.00)",
-          "borderBottomLeftRadius": "9999px",
-          "borderBottomRightRadius": "9999px",
-          "borderTopLeftRadius": "9999px",
-          "borderTopRightRadius": "9999px",
-          "height": "40px",
-          "marginLeft": "5px",
-          "overflowX": "hidden",
-          "overflowY": "hidden",
-          "width": "40px",
-        }
-      }
+      className="hover-icon__HoverIcon-sc-1ge5rtz-0 save-star-with-tracking__IconContainer-sc-1swm7v2-0 fVwGWc"
     >
-      <div
-        className="css-view-1dbjc4n r-animationDuration-17bb2tj r-animationIterationCount-1muvv40 r-animationKeyframes-127358a r-animationTimingFunction-1ldzwu0 r-height-z80fyv r-width-19wmn03"
-      >
-        <svg
-          height="100%"
-          viewBox="0 0 32 32"
-          width="100%"
-        >
-          <circle
-            cx="16"
-            cy="16"
-            fill="none"
-            r="14"
-            strokeWidth="4"
-            style={
-              Object {
-                "opacity": 0.2,
-                "stroke": "#1976D2",
-              }
-            }
-          />
-          <circle
-            cx="16"
-            cy="16"
-            fill="none"
-            r="14"
-            strokeWidth="4"
-            style={
-              Object {
-                "stroke": "#1976D2",
-                "strokeDasharray": 80,
-                "strokeDashoffset": 60,
-              }
-            }
-          />
-        </svg>
-      </div>
+      <IconActivityIndicator
+        style={
+          Object {
+            "backgroundColor": "#F5F5F5",
+            "borderRadius": 9999,
+            "height": 40,
+            "marginLeft": "5px",
+            "overflow": "hidden",
+            "width": 40,
+          }
+        }
+      />
     </div>
   </div>
 </div>
@@ -277,64 +159,37 @@ exports[`save and share bar component save and share bar renders correctly when 
 
 exports[`save and share bar component save and share bar renders correctly when not logged in 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   data-testid="save-and-share-bar"
   style={
     Object {
-      "WebkitAlignItems": "center",
-      "WebkitBoxAlign": "center",
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxFlex": 1,
-      "WebkitBoxOrient": "horizontal",
-      "WebkitBoxPack": "justify",
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexDirection": "row",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "WebkitJustifyContent": "space-between",
       "alignItems": "center",
-      "flexBasis": "0%",
+      "flex": 1,
       "flexDirection": "row",
-      "flexGrow": 1,
-      "flexShrink": 1,
       "height": "100%",
       "justifyContent": "space-between",
-      "msFlexAlign": "center",
-      "msFlexDirection": "row",
-      "msFlexNegative": 1,
-      "msFlexPack": "justify",
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
       "paddingBottom": "10px",
       "paddingTop": "10px",
     }
   }
 >
   <div
-    className="css-view-1dbjc4n"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
     style={
       Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "horizontal",
-        "WebkitFlexDirection": "row",
         "alignItems": "center",
         "flexDirection": "row",
-        "height": "40px",
-        "msFlexAlign": "center",
-        "msFlexDirection": "row",
+        "height": 40,
       }
     }
   >
     <div
-      className="css-text-901oao"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       style={
         Object {
-          "WebkitTransform": "translateY(9%)",
-          "color": "rgba(105,105,105,1.00)",
+          "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": "14px",
+          "fontSize": 14,
           "lineHeight": "14px",
           "marginRight": "10px",
           "transform": "translateY(9%)",
