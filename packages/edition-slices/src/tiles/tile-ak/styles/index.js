@@ -18,7 +18,8 @@ const containerHeightResolver = {
 
 const styles = breakpoint => ({
   header: {
-    paddingHorizontal: spacing(2),
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2),
     paddingTop: spacing(2),
     height: 80
   },

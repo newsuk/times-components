@@ -4,7 +4,8 @@ const mediumBreakpointStyles = {
   container: {
     flex: 1,
     flexDirection: "row",
-    paddingHorizontal: spacing(10)
+    paddingLeft: spacing(10),
+    paddingRight: spacing(10)
   }
 };
 
