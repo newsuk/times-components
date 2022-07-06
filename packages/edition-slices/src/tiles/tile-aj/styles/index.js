@@ -2,7 +2,8 @@ import { colours, spacing } from "@times-components/ts-styleguide";
 
 const styles = {
   header: {
-    paddingHorizontal: spacing(3),
+    paddingLeft: spacing(3),
+    paddingRight: spacing(3),
     paddingTop: spacing(3),
     width: "85%"
   },
