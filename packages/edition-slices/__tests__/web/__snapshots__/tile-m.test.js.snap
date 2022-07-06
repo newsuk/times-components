@@ -126,7 +126,8 @@ exports[`tile m small 1`] = `
   color: #696969;
   padding-bottom: 10px;
   text-align: center;
-  padding-horizontal: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .IS3 {
@@ -238,7 +239,8 @@ exports[`tile m without breakpoint should be like small 1`] = `
   color: #696969;
   padding-bottom: 10px;
   text-align: center;
-  padding-horizontal: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .IS3 {

@@ -28,7 +28,8 @@ exports[`tile p without breakpoint 1`] = `
   margin-bottom: 5px;
   font-size: 35;
   line-height: 35px;
-  padding-horizontal: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
 }
 
@@ -38,7 +39,8 @@ exports[`tile p without breakpoint 1`] = `
   line-height: 20;
   color: #696969;
   padding-bottom: 10px;
-  padding-horizontal: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
   text-align: center;
 }
 

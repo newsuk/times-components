@@ -25,7 +25,8 @@ exports[`tile i without breakpoint 1`] = `
   align-items: center;
   background-color: #F0F0F0;
   padding-bottom: 15px;
-  padding-horizontal: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-top: 20px;
 }
 </style>
