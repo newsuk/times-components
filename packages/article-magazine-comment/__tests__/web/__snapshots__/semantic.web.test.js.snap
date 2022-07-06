@@ -155,6 +155,9 @@ exports[`1. a full article 1`] = `
         viewBox="-354.2 -279.4 750 600"
         width={20}
       >
+        <title>
+          Share on Twitter
+        </title>
         <path
           d="ebf51b280a2c9ea0e632fdbf86606550"
         />
@@ -172,6 +175,9 @@ exports[`1. a full article 1`] = `
         viewBox="14 10 10.592460632324219 20.397258758544922"
         width={9}
       >
+        <title>
+          Share on Facebook
+        </title>
         <g>
           <path
             d="8f9b8bbdce60b96352628d3dbf6e37a0"
@@ -191,6 +197,9 @@ exports[`1. a full article 1`] = `
         viewBox="0 0 15 15"
         width={15}
       >
+        <title>
+          Copy link to clipboard
+        </title>
         <path
           d="f65af77b7574644b0c2e60934732135f"
         />
@@ -245,6 +254,9 @@ exports[`1. a full article 1`] = `
           viewBox="-354.2 -279.4 750 600"
           width={11}
         >
+          <title>
+            Twitter Icon
+          </title>
           <path
             d="ebf51b280a2c9ea0e632fdbf86606550"
           />
@@ -316,6 +328,9 @@ exports[`1. a full article 1`] = `
           viewBox="-354.2 -279.4 750 600"
           width={20}
         >
+          <title>
+            Share on Twitter
+          </title>
           <path
             d="ebf51b280a2c9ea0e632fdbf86606550"
           />
@@ -333,6 +348,9 @@ exports[`1. a full article 1`] = `
           viewBox="14 10 10.592460632324219 20.397258758544922"
           width={9}
         >
+          <title>
+            Share on Facebook
+          </title>
           <g>
             <path
               d="8f9b8bbdce60b96352628d3dbf6e37a0"
@@ -352,6 +370,9 @@ exports[`1. a full article 1`] = `
           viewBox="0 0 15 15"
           width={15}
         >
+          <title>
+            Copy link to clipboard
+          </title>
           <path
             d="f65af77b7574644b0c2e60934732135f"
           />
