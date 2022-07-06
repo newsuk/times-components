@@ -37,7 +37,8 @@ exports[`tile al huge 1`] = `
 }
 
 .IS6 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -45,10 +46,8 @@ exports[`tile al huge 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
-      "paddingTop": "15px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -149,7 +148,8 @@ exports[`tile al wide 1`] = `
 }
 
 .IS6 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -157,10 +157,8 @@ exports[`tile al wide 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
-      "paddingTop": "15px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"

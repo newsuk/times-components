@@ -32,7 +32,8 @@ exports[`tile ad huge 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -115,7 +116,8 @@ exports[`tile ad medium 1`] = `
 }
 
 .IS3 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -203,7 +205,8 @@ exports[`tile ad wide 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -286,7 +289,8 @@ exports[`tile ad without breakpoint should be like medium 1`] = `
 }
 
 .IS3 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 

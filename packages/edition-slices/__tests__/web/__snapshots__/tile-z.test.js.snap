@@ -32,7 +32,8 @@ exports[`tile z huge 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 
 .IS6 {
@@ -51,10 +52,8 @@ exports[`tile z huge 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
-      "paddingTop": "15px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -154,7 +153,8 @@ exports[`tile z wide 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 
 .IS6 {
@@ -173,10 +173,8 @@ exports[`tile z wide 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
-      "paddingTop": "15px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -276,7 +274,8 @@ exports[`tile z without breakpoint should be like wide 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 
 .IS6 {
@@ -295,10 +294,8 @@ exports[`tile z without breakpoint should be like wide 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
-      "paddingTop": "15px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"

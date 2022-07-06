@@ -32,7 +32,8 @@ exports[`tile aа without breakpoint 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -40,10 +41,8 @@ exports[`tile aа without breakpoint 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
-      "paddingTop": "15px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"

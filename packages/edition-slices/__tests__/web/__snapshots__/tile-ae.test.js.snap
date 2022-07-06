@@ -32,7 +32,8 @@ exports[`tile ae huge 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -40,10 +41,9 @@ exports[`tile ae huge 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
+      "paddingHorizontal": "10px",
       "paddingTop": "15px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -133,7 +133,8 @@ exports[`tile ae medium 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -141,10 +142,9 @@ exports[`tile ae medium 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
+      "paddingHorizontal": "10px",
       "paddingTop": "15px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -234,7 +234,8 @@ exports[`tile ae wide 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -242,10 +243,9 @@ exports[`tile ae wide 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
+      "paddingHorizontal": "10px",
       "paddingTop": "15px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -335,7 +335,8 @@ exports[`tile ae without breakpoint should be like medium 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -343,10 +344,9 @@ exports[`tile ae without breakpoint should be like medium 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
+      "paddingHorizontal": "10px",
       "paddingTop": "15px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"

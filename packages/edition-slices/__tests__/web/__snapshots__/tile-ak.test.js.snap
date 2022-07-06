@@ -12,8 +12,7 @@ exports[`tile ak huge 1`] = `
 }
 
 .IS2 {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-horizontal: 10px;
   padding-top: 10px;
   height: 80;
 }
@@ -31,8 +30,7 @@ exports[`tile ak huge 1`] = `
       "backgroundColor": "#F0F0F0",
       "flex": 1,
       "height": 243,
-      "marginLeft": "10px",
-      "marginRight": "10px",
+      "marginHorizontal": "10px",
       "overflow": "hidden",
     }
   }
@@ -72,8 +70,7 @@ exports[`tile ak medium 1`] = `
 }
 
 .IS2 {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-horizontal: 10px;
   padding-top: 10px;
   height: 80;
 }
@@ -91,8 +88,7 @@ exports[`tile ak medium 1`] = `
       "backgroundColor": "#F0F0F0",
       "flex": 1,
       "height": 143,
-      "marginLeft": "10px",
-      "marginRight": "10px",
+      "marginHorizontal": "10px",
       "overflow": "hidden",
     }
   }
@@ -132,8 +128,7 @@ exports[`tile ak wide 1`] = `
 }
 
 .IS2 {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-horizontal: 10px;
   padding-top: 10px;
   height: 80;
 }
@@ -151,8 +146,7 @@ exports[`tile ak wide 1`] = `
       "backgroundColor": "#F0F0F0",
       "flex": 1,
       "height": 195,
-      "marginLeft": "10px",
-      "marginRight": "10px",
+      "marginHorizontal": "10px",
       "overflow": "hidden",
     }
   }
@@ -192,8 +186,7 @@ exports[`tile ak without breakpoint should be like medium 1`] = `
 }
 
 .IS2 {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-horizontal: 10px;
   padding-top: 10px;
   height: 80;
 }
@@ -211,8 +204,7 @@ exports[`tile ak without breakpoint should be like medium 1`] = `
       "backgroundColor": "#F0F0F0",
       "flex": 1,
       "height": 143,
-      "marginLeft": "10px",
-      "marginRight": "10px",
+      "marginHorizontal": "10px",
       "overflow": "hidden",
     }
   }

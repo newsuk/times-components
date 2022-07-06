@@ -12,8 +12,7 @@ exports[`tile aj without breakpoint 1`] = `
 }
 
 .IS2 {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-horizontal: 15px;
   padding-top: 15px;
   width: 85%;
 }

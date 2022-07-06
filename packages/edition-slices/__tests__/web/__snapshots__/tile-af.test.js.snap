@@ -32,7 +32,8 @@ exports[`tile af huge 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -40,10 +41,8 @@ exports[`tile af huge 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
-      "paddingTop": "15px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -133,7 +132,8 @@ exports[`tile af wide 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -141,10 +141,8 @@ exports[`tile af wide 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
-      "paddingTop": "15px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -234,7 +232,8 @@ exports[`tile af without breakpoint should be like wide 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -242,10 +241,8 @@ exports[`tile af without breakpoint should be like wide 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
-      "paddingTop": "15px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"

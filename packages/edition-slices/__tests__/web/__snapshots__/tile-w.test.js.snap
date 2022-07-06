@@ -32,7 +32,8 @@ exports[`tile w huge 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 
 .IS6 {
@@ -50,12 +51,9 @@ exports[`tile w huge 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "marginLeft": "10px",
-      "marginRight": "10px",
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
-      "paddingTop": "15px",
+      "marginHorizontal": "10px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -155,7 +153,8 @@ exports[`tile w medium 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 
 .IS6 {
@@ -173,12 +172,9 @@ exports[`tile w medium 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "marginLeft": "20px",
-      "marginRight": "20px",
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
-      "paddingTop": "15px",
+      "marginHorizontal": "20px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -278,7 +274,8 @@ exports[`tile w wide 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 
 .IS6 {
@@ -296,12 +293,9 @@ exports[`tile w wide 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "marginLeft": "10px",
-      "marginRight": "10px",
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
-      "paddingTop": "15px",
+      "marginHorizontal": "10px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -401,7 +395,8 @@ exports[`tile w without breakpoint should be like medium 1`] = `
 }
 
 .IS5 {
-  flex: 1;
+  0: [object Object];
+  1: [object Object];
 }
 
 .IS6 {
@@ -419,12 +414,9 @@ exports[`tile w without breakpoint should be like medium 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "marginLeft": "20px",
-      "marginRight": "20px",
-      "paddingBottom": "15px",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
-      "paddingTop": "15px",
+      "marginHorizontal": "20px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
