@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.10.0...@times-components/save-and-share-bar@0.11.0) (2022-07-06)
+
+
+### Features
+
+* **TDP-1694:** removed react native from save and share bar ([#3010](https://github.com/newsuk/times-components/issues/3010)) ([96075ad](https://github.com/newsuk/times-components/commit/96075ad3b947fc2a753f18f5a27a371f36e5f4f4))
+
+
+
+
+
 # [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.116...@times-components/save-and-share-bar@0.10.0) (2022-07-04)
 
 
