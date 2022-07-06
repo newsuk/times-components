@@ -32,6 +32,8 @@ export default () => {
     };
 
     let realLocation;
+    let clipboardData;
+    let mockClipboard;
 
     beforeEach(() => {
       realLocation = global.window.location;
@@ -40,11 +42,12 @@ export default () => {
         assign: jest.fn(),
         search: ""
       };
-      clipboardData = '';
+      clipboardData = "";
       mockClipboard = {
-          writeText: jest.fn(
-              (data) => {clipboardData = data}
-          )
+        writeText: jest.fn(data => {
+          clipboardData = data;
+        }),
+        readText: jest.fn(() => clipboardData)
       };
       global.navigator.clipboard = mockClipboard;
     });
