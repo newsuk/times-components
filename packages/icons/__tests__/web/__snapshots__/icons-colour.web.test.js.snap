@@ -137,10 +137,13 @@ Array [
 `;
 
 exports[`12. closeicon renders with different colours 1`] = `
-<path
-  fill="white"
-  stroke="white"
-/>
+Array [
+  <title />,
+  <path
+    fill="white"
+    stroke="white"
+  />,
+]
 `;
 
 exports[`13. iconforwardchevron renders with different colours 1`] = `

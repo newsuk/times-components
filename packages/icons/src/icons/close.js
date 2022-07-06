@@ -2,7 +2,7 @@ import React from "react";
 import { clean } from "@times-components/utils";
 import PropTypes from "prop-types";
 
-const IconClose = ({ height, width }) => (
+const IconClose = ({ height, width, title }) => (
   <svg
     aria-label="icon-close"
     role="img"
@@ -13,6 +13,7 @@ const IconClose = ({ height, width }) => (
       title: "Close Icon"
     })}
   >
+    <title>{title}</title>
     <path
       {...clean({
         fill: "white",
