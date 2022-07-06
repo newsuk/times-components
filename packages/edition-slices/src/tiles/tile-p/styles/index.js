@@ -25,7 +25,8 @@ const styles = {
     fontFamily: fonts.headline,
     fontSize: fontSizes.tileLeadHeadline,
     lineHeight: 35,
-    paddingHorizontal: spacing(2),
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2),
     textAlign: "center"
   },
   imageContainer: {
@@ -37,7 +38,8 @@ const styles = {
     color: colours.functional.secondary,
     fontSize: fontSizes.meta,
     lineHeight: 20,
-    paddingHorizontal: spacing(8),
+    paddingLeft: spacing(8),
+    paddingRight: spacing(8),
     textAlign: "center"
   },
   summaryContainer: {

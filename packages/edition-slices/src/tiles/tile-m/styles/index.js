@@ -27,7 +27,8 @@ const smallBreakpointStyles = {
     fontSize: 14,
     lineHeight: 20,
     textAlign: "center",
-    paddingHorizontal: spacing(8)
+    paddingLeft: spacing(8),
+    paddingRight: spacing(8)
   }
 };
 
