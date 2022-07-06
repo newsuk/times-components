@@ -21,8 +21,12 @@ export default (isTablet, breakpoint) => ({
   gutterStyles: {
     alignSelf: "center",
     maxWidth: "100%",
-    paddingLeft: isTablet ? tabletPaddingHorizontalResolver[breakpoint] : 0,
-    paddingRight: isTablet ? tabletPaddingHorizontalResolver[breakpoint] : 0,
+    paddingLeft: isTablet
+    ? tabletPaddingHorizontalResolver[breakpoint]
+    : 0,
+    paddingRight: isTablet
+    ? tabletPaddingHorizontalResolver[breakpoint]
+    : 0,
     width: editionMaxWidth
   }
 });
