@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.5.22...@times-components/video-label@2.6.0) (2022-07-06)
+
+
+### Features
+
+* **TDP-1422:** remove react native from svgs ([#3012](https://github.com/newsuk/times-components/issues/3012)) ([97b3320](https://github.com/newsuk/times-components/commit/97b332030427182178f663eeaa0f8e06e19ae255))
+
+
+
+
+
 ## [2.5.22](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.5.21...@times-components/video-label@2.5.22) (2022-06-22)
 
 **Note:** Version bump only for package @times-components/video-label
