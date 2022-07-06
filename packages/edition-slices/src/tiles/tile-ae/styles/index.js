@@ -14,8 +14,9 @@ const headlineFontResolver = {
 export default breakpoint => ({
   container: {
     flex: 1,
-    paddingHorizontal: spacing(2),
-    paddingVertical: spacing(3),
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2),
+    paddingBottom: spacing(3),
     paddingTop: spacing(3)
   },
   headline: {

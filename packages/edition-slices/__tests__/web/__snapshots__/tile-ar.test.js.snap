@@ -46,8 +46,10 @@ exports[`tile ar huge 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingVertical": "15px",
+      "paddingBottom": "15px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
@@ -160,8 +162,10 @@ exports[`tile ar medium 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingVertical": "15px",
+      "paddingBottom": "15px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
@@ -274,8 +278,10 @@ exports[`tile ar wide 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingVertical": "15px",
+      "paddingBottom": "15px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
@@ -388,8 +394,10 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingVertical": "15px",
+      "paddingBottom": "15px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"

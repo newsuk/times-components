@@ -38,7 +38,9 @@ export default breakpoint => ({
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: colours.functional.border,
-    paddingHorizontal: spacing(4),
-    paddingVertical: paddingVerticalResolver[breakpoint]
+    paddingLeft: spacing(4),
+    paddingRight: spacing(4),
+    paddingTop: paddingVerticalResolver[breakpoint],
+    paddingBottom: paddingVerticalResolver[breakpoint]
   }
 });

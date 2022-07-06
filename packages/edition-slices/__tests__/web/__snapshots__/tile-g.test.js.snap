@@ -44,8 +44,10 @@ exports[`tile g huge 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "padding": "10px",
-      "paddingHorizontal": "10px",
-      "paddingVertical": "10px",
+      "paddingBottom": "10px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"
@@ -144,8 +146,10 @@ exports[`tile g medium 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "padding": "10px",
-      "paddingHorizontal": "10px",
-      "paddingVertical": "15px",
+      "paddingBottom": "15px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
@@ -342,8 +346,10 @@ exports[`tile g wide 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "padding": "10px",
-      "paddingHorizontal": "10px",
-      "paddingVertical": "10px",
+      "paddingBottom": "10px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"
@@ -442,8 +448,10 @@ exports[`tile g without breakpoint should be like small 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "padding": "10px",
-      "paddingHorizontal": "10px",
-      "paddingVertical": "10px",
+      "paddingBottom": "10px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"

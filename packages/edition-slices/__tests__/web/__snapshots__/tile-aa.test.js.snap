@@ -41,8 +41,10 @@ exports[`tile aа without breakpoint 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingVertical": "15px",
+      "paddingBottom": "15px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"

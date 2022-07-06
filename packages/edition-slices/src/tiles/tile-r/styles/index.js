@@ -7,8 +7,10 @@ import {
 const mediumBreakpointStyles = {
   container: {
     flex: 1,
-    paddingVertical: spacing(3),
-    paddingHorizontal: spacing(6)
+    paddingLeft: spacing(6),
+    paddingRight: spacing(6),
+    paddingBottom: spacing(3),
+    paddingTop: spacing(3)
   },
   headline: {
     fontFamily: fonts.headline,
@@ -26,8 +28,10 @@ const wideBreakpointStyles = {
   ...mediumBreakpointStyles,
   container: {
     flex: 1,
-    paddingVertical: spacing(3),
-    paddingHorizontal: spacing(4)
+    paddingLeft: spacing(4),
+    paddingRight: spacing(4),
+    paddingBottom: spacing(3),
+    paddingTop: spacing(3)
   },
   imageContainer: {
     width: "100%",

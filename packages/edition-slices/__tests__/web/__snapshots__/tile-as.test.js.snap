@@ -45,8 +45,10 @@ exports[`tile as huge 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingVertical": "10px",
+      "paddingBottom": "10px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"
@@ -150,8 +152,10 @@ exports[`tile as medium 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingVertical": "10px",
+      "paddingBottom": "10px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"
@@ -255,8 +259,10 @@ exports[`tile as wide 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingVertical": "10px",
+      "paddingBottom": "10px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"
