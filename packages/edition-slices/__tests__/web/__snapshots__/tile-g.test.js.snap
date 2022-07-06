@@ -28,39 +28,13 @@ exports[`tile g huge 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
+  flex: 1;
 }
 
 .IS6 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  flex: 1;
 }
 </style>
 
@@ -77,10 +51,10 @@ exports[`tile g huge 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n IS5"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
     >
       <Image
         aspectRatio={1}
@@ -154,39 +128,13 @@ exports[`tile g medium 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
+  flex: 1;
 }
 
 .IS6 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  flex: 1;
 }
 </style>
 
@@ -203,10 +151,10 @@ exports[`tile g medium 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n IS5"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
     >
       <Image
         aspectRatio={1}
@@ -280,39 +228,13 @@ exports[`tile g small 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
+  flex: 1;
 }
 
 .IS6 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  flex: 1;
 }
 </style>
 
@@ -327,10 +249,10 @@ exports[`tile g small 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n IS5"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
     >
       <Image
         aspectRatio={1}
@@ -404,39 +326,13 @@ exports[`tile g wide 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
+  flex: 1;
 }
 
 .IS6 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  flex: 1;
 }
 </style>
 
@@ -453,10 +349,10 @@ exports[`tile g wide 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n IS5"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
     >
       <Image
         aspectRatio={1}
@@ -530,39 +426,13 @@ exports[`tile g without breakpoint should be like small 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
+  flex: 1;
 }
 
 .IS6 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  flex: 1;
 }
 </style>
 
@@ -579,10 +449,10 @@ exports[`tile g without breakpoint should be like small 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n IS5"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
     >
       <Image
         aspectRatio={1}

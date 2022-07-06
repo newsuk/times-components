@@ -37,16 +37,8 @@ exports[`tile al huge 1`] = `
 }
 
 .IS6 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -67,10 +59,10 @@ exports[`tile al huge 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -156,16 +148,8 @@ exports[`tile al wide 1`] = `
 }
 
 .IS6 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
@@ -186,10 +170,10 @@ exports[`tile al wide 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"
