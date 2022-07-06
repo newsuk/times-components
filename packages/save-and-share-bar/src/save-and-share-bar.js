@@ -1,7 +1,7 @@
 /* eslint-env browser */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { View, Clipboard, Text } from "react-native";
+import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import {
   IconFacebook,
   IconTwitter,
@@ -28,7 +28,7 @@ class SaveAndShareBar extends Component {
     const { onCopyLink, articleUrl } = this.props;
     e.preventDefault();
 
-    Clipboard.setString(articleUrl);
+    navigator.clipboard.writeText(articleUrl);
     onCopyLink();
   }
 
@@ -43,10 +43,10 @@ class SaveAndShareBar extends Component {
     } = this.props;
 
     return (
-      <View style={styles.container} data-testid="save-and-share-bar">
+      <TcView style={styles.container} data-testid="save-and-share-bar">
         {sharingEnabled && (
-          <View style={styles.rowItem}>
-            <Text style={styles.label}>Share</Text>
+          <TcView style={styles.rowItem}>
+            <TcText style={checkStylesForUnits(styles.label)}>Share</TcText>
             <SectionContext.Consumer>
               {({ publicationName }) => (
                 <UserState
@@ -104,21 +104,21 @@ class SaveAndShareBar extends Component {
                 title="Copy link to clipboard"
               />
             </BarItem>
-          </View>
+          </TcView>
         )}
         {savingEnabled ? (
           <UserState state={UserState.loggedIn} serverRender={false}>
-            <View style={styles.rowItemRight} data-testid="save-star">
+            <TcView style={styles.rowItemRight} data-testid="save-star">
               <SaveStar
                 colour={styles.svgIcon.save.strokeColour}
                 hoverColor={styles.svgIcon.hoverFillColour}
                 articleId={articleId}
                 height={styles.svgIcon.star.height}
               />
-            </View>
+            </TcView>
           </UserState>
         ) : null}
-      </View>
+      </TcView>
     );
   }
 }
