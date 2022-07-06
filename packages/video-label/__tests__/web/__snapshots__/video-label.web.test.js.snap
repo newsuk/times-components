@@ -17,6 +17,9 @@ exports[`Video Label renders the component in the color passed to it 1`] = `
           viewBox="0 0 68 40"
           width="15.299999999999999"
         >
+          <title>
+            Video Icon
+          </title>
           <rect
             fill="blue"
             height="40"
@@ -58,6 +61,9 @@ exports[`Video Label renders the title that is passed to the component 1`] = `
           viewBox="0 0 68 40"
           width="15.299999999999999"
         >
+          <title>
+            Video Icon
+          </title>
           <rect
             fill="black"
             height="40"
@@ -99,6 +105,9 @@ exports[`Video Label shows the default text of VIDEO when no title is passed to 
           viewBox="0 0 68 40"
           width="15.299999999999999"
         >
+          <title>
+            Video Icon
+          </title>
           <rect
             fill="black"
             height="40"
