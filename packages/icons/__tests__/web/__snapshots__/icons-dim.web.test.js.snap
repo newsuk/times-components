@@ -131,12 +131,12 @@ exports[`14. iconactivityindicator sets a width when height is set 1`] = `
     className="activity-indicator__ActivityIndicatorContainer-sc-1bvau9v-1 cVeDx"
   >
     <activity-indicator__ActivityIndicatorSpinner
-      data-fillColour="#006699"
+      data-fill-colour="#006699"
       data-title="Activity Indicator"
     >
       <div
         className="activity-indicator__ActivityIndicatorSpinner-sc-1bvau9v-0 kaKzrz"
-        data-fillColour="#006699"
+        data-fill-colour="#006699"
         data-title="Activity Indicator"
       />
     </activity-indicator__ActivityIndicatorSpinner>

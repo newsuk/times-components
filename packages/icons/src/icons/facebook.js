@@ -23,6 +23,7 @@ const IconFacebook = ({
       width: width || height * ratio
     })}
   >
+    <title>{title}</title>
     <g
       fillRule="nonzero"
       {...clean({

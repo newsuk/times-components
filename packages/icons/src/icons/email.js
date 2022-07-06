@@ -23,6 +23,7 @@ const IconEmail = ({
       width: width || height * ratio
     })}
   >
+    <title>{title}</title>
     <g
       fillRule="nonzero"
       {...clean({ fill: fillColour, stroke: strokeColour })}

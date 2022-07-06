@@ -50,6 +50,9 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                             viewBox="0 0 22 16"
                             width={22}
                           >
+                            <title>
+                              Share by email
+                            </title>
                             <g
                               fill="currentColor"
                               fillRule="nonzero"
@@ -358,6 +361,9 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                             viewBox="0 0 22 16"
                             width={22}
                           >
+                            <title>
+                              Share by email
+                            </title>
                             <g
                               fill="currentColor"
                               fillRule="nonzero"

@@ -21,6 +21,7 @@ const IconCopyLink = ({
       width: width || height
     })}
   >
+    <title>{title}</title>
     <path
       {...clean({
         fill: fillColour,

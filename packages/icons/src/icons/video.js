@@ -23,6 +23,7 @@ const IconVideo = ({
       width: width || height * ratio
     })}
   >
+    <title>{title}</title>
     <rect
       {...clean({
         fill: fillColour,

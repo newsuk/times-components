@@ -22,6 +22,7 @@ const IconVideo360Player = ({
       width: width || height * ratio
     })}
   >
+    <title>{title}</title>
     <path
       {...clean({
         fill: fillColour,

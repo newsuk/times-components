@@ -22,6 +22,7 @@ const IconTwitter = ({
       width: width || height * ratio
     })}
   >
+    <title>{title}</title>
     <path
       {...clean({
         fill: fillColour,

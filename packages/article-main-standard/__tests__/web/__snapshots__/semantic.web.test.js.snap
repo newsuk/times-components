@@ -130,6 +130,9 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         viewBox="0 0 22 16"
         width={22}
       >
+        <title>
+          Share by email
+        </title>
         <g>
           <path
             d="7662b27a9a5411e756afc5097a4eb94d"
@@ -288,6 +291,9 @@ exports[`1. a full article with an image as the lead asset 1`] = `
           viewBox="0 0 22 16"
           width={22}
         >
+          <title>
+            Share by email
+          </title>
           <g>
             <path
               d="7662b27a9a5411e756afc5097a4eb94d"

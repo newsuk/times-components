@@ -21,6 +21,7 @@ const IconStar = ({
       width: width || height
     })}
   >
+    <title>{title}</title>
     <path
       {...clean({
         fill: fillColour,

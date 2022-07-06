@@ -20,6 +20,7 @@ const TheSTLogo = ({
       width: width || height
     })}
   >
+    <title>{title}</title>
     <path
       {...clean({
         fill: fillColour,
