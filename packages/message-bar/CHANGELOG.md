@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.24...@times-components/message-bar@0.5.0) (2022-07-06)
+
+
+### Features
+
+* **TDP-1422:** remove react native from svgs ([#3012](https://github.com/newsuk/times-components/issues/3012)) ([97b3320](https://github.com/newsuk/times-components/commit/97b332030427182178f663eeaa0f8e06e19ae255))
+
+
+
+
+
 ## [0.4.24](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.23...@times-components/message-bar@0.4.24) (2022-06-22)
 
 **Note:** Version bump only for package @times-components/message-bar

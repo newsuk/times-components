@@ -1,6 +1,5 @@
 import React from "react";
 import { colours } from "@times-components/ts-styleguide";
-import Svg, { Path } from "@times-components/svgs";
 import { clean } from "@times-components/utils";
 import propTypes from "./prop-types";
 
@@ -13,7 +12,7 @@ const IconTwitter = ({
   title = "Twitter Icon",
   width
 }) => (
-  <Svg
+  <svg
     aria-label="icon-twitter"
     role="img"
     viewBox="-354.2 -279.4 750 600"
@@ -23,7 +22,8 @@ const IconTwitter = ({
       width: width || height * ratio
     })}
   >
-    <Path
+    <title>{title}</title>
+    <path
       {...clean({
         fill: fillColour,
         stroke: strokeColour
@@ -35,7 +35,7 @@ const IconTwitter = ({
         	c-50.6,39.8-119.3,65.1-188,65.1c-10.8,0-25.3,0-36.1-3.6c68.7,43.3,148.2,68.7,234.9,68.7C167.2,320.6,319,89.3,319-113.1
         	c0-7.2,0-14.4,0-18.1C344.3-152.9,369.6-181.8,391.3-210.7z"
     />
-  </Svg>
+  </svg>
 );
 
 IconTwitter.propTypes = propTypes;

@@ -13,6 +13,7 @@ exports[`Video Label renders the component in the color passed to it 1`] = `
           aria-label="icon-video"
           height="9"
           role="img"
+          title="Video Icon"
           viewBox="0 0 68 40"
           width="15.299999999999999"
         >
@@ -56,6 +57,7 @@ exports[`Video Label renders the title that is passed to the component 1`] = `
           aria-label="icon-video"
           height="9"
           role="img"
+          title="Video Icon"
           viewBox="0 0 68 40"
           width="15.299999999999999"
         >
@@ -99,6 +101,7 @@ exports[`Video Label shows the default text of VIDEO when no title is passed to 
           aria-label="icon-video"
           height="9"
           role="img"
+          title="Video Icon"
           viewBox="0 0 68 40"
           width="15.299999999999999"
         >
