@@ -32,8 +32,7 @@ exports[`tile b huge 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -131,8 +130,7 @@ exports[`tile b medium 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -229,8 +227,7 @@ exports[`tile b small 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -329,8 +326,7 @@ exports[`tile b wide 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -428,8 +424,7 @@ exports[`tile b with more teaser 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -526,8 +521,7 @@ exports[`tile b without breakpoint should be like small 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 

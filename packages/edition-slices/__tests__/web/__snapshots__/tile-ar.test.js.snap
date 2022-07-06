@@ -37,8 +37,7 @@ exports[`tile ar huge 1`] = `
 }
 
 .IS6 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -153,8 +152,7 @@ exports[`tile ar medium 1`] = `
 }
 
 .IS6 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -269,8 +267,7 @@ exports[`tile ar wide 1`] = `
 }
 
 .IS6 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -385,8 +382,7 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
 }
 
 .IS6 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 

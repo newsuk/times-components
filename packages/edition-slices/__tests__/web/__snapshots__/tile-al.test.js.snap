@@ -37,8 +37,7 @@ exports[`tile al huge 1`] = `
 }
 
 .IS6 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -150,8 +149,7 @@ exports[`tile al wide 1`] = `
 }
 
 .IS6 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
