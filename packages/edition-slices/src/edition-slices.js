@@ -19,12 +19,8 @@ import {
   PuzzleSlice
 } from "./slices";
 
-const config = {}.ReactConfig;
-
 const { width } = getDimensions();
-const isTablet =
-  (config && config.breakpoint && config.breakpoint !== "small") ||
-  width > tabletWidth;
+const isTablet = width > tabletWidth;
 const SecondaryTwoAndTwoMapper = isTablet
   ? SecondaryTwoNoPicAndTwoSlice
   : SecondaryTwoAndTwoSlice;
