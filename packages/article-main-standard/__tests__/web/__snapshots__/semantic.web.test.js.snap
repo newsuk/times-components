@@ -126,6 +126,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         aria-label="icon-email"
         height={16}
         role="img"
+        title="Share by email"
         viewBox="0 0 22 16"
         width={22}
       >
@@ -147,6 +148,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         aria-label="icon-twitter"
         height={16}
         role="img"
+        title="Share on Twitter"
         viewBox="-354.2 -279.4 750 600"
         width={20}
       >
@@ -166,6 +168,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         aria-label="icon-facebook"
         height={18}
         role="img"
+        title="Share on Facebook"
         viewBox="14 10 10.592460632324219 20.397258758544922"
         width={9}
       >
@@ -187,6 +190,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         aria-label="icon-copy-link"
         height={16}
         role="img"
+        title="Copy link to clipboard"
         viewBox="0 0 15 15"
         width={15}
       >
@@ -243,6 +247,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
           aria-label="icon-twitter"
           height={10}
           role="img"
+          title="Twitter Icon"
           viewBox="-354.2 -279.4 750 600"
           width={11}
         >
@@ -294,6 +299,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
           aria-label="icon-email"
           height={16}
           role="img"
+          title="Share by email"
           viewBox="0 0 22 16"
           width={22}
         >
@@ -315,6 +321,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
           aria-label="icon-twitter"
           height={16}
           role="img"
+          title="Share on Twitter"
           viewBox="-354.2 -279.4 750 600"
           width={20}
         >
@@ -334,6 +341,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
           aria-label="icon-facebook"
           height={18}
           role="img"
+          title="Share on Facebook"
           viewBox="14 10 10.592460632324219 20.397258758544922"
           width={9}
         >
@@ -355,6 +363,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
           aria-label="icon-copy-link"
           height={16}
           role="img"
+          title="Copy link to clipboard"
           viewBox="0 0 15 15"
           width={15}
         >

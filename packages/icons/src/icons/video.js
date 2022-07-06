@@ -1,6 +1,5 @@
 import React from "react";
 import { colours } from "@times-components/ts-styleguide";
-import Svg, { Rect, Polygon } from "@times-components/svgs";
 import { clean } from "@times-components/utils";
 import propTypes from "./prop-types";
 
@@ -14,7 +13,7 @@ const IconVideo = ({
   title = "Video Icon",
   width
 }) => (
-  <Svg
+  <svg
     aria-label="icon-video"
     role="img"
     viewBox={viewBox}
@@ -24,7 +23,8 @@ const IconVideo = ({
       width: width || height * ratio
     })}
   >
-    <Rect
+    <title>{title}</title>
+    <rect
       {...clean({
         fill: fillColour,
         stroke: strokeColour
@@ -34,14 +34,14 @@ const IconVideo = ({
       x="0"
       y="0"
     />
-    <Polygon
+    <polygon
       {...clean({
         fill: fillColour,
         stroke: strokeColour
       })}
       points="52 12 68 2 68 38 52 28"
     />
-  </Svg>
+  </svg>
 );
 
 IconVideo.propTypes = propTypes;

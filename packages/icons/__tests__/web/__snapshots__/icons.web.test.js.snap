@@ -4,6 +4,7 @@ exports[`1. iconemail renders 1`] = `
 <svg
   aria-label="icon-email"
   role="img"
+  title="IconEmail"
   viewBox="b4de9ef077a0a2ad684a1d8e6916ebc4"
   width={20}
 >
@@ -25,6 +26,7 @@ exports[`2. iconfacebook renders 1`] = `
 <svg
   aria-label="icon-facebook"
   role="img"
+  title="IconFacebook"
   viewBox="bd9a71c8a3142edf7cab6a62a2277378"
   width={20}
 >
@@ -63,6 +65,7 @@ exports[`4. iconstar renders 1`] = `
 <svg
   aria-label="icon-save-star"
   role="img"
+  title="IconStar"
   viewBox="951cf65ef61fef616e498a37f3f5a9b1"
   width={20}
 >
@@ -81,6 +84,7 @@ exports[`5. iconcopylink renders 1`] = `
   aria-label="icon-copy-link"
   height={15}
   role="img"
+  title="IconCopyLink"
   viewBox="7798bdae936d01418f5704cad29092ad"
   width={20}
 >
@@ -99,6 +103,7 @@ exports[`6. iconsavebookmark renders 1`] = `
   aria-label="icon-save-bookmark"
   height={16}
   role="img"
+  title="IconSaveBookmark"
   viewBox="192c9a888d6def500471679101ad9f5c"
   width={20}
 >
@@ -116,6 +121,7 @@ exports[`7. icontwitter renders 1`] = `
 <svg
   aria-label="icon-twitter"
   role="img"
+  title="IconTwitter"
   viewBox="f0ca3b77f62fa9136cdfd9a3f847d07b"
   width={20}
 >
@@ -133,6 +139,7 @@ exports[`8. iconvideo renders 1`] = `
 <svg
   aria-label="icon-video"
   role="img"
+  title="IconVideo"
   viewBox="32c562c1b3cee8479f67d0cbd8edef4d"
   width={20}
 >
@@ -157,6 +164,7 @@ exports[`9. iconvideo360player renders 1`] = `
 <svg
   aria-label="icon-video-360-player"
   role="img"
+  title="IconVideo360Player"
   viewBox="544726bb051c5bacf72288529e947083"
   width={20}
 >
@@ -174,6 +182,7 @@ exports[`10. thestlogo renders 1`] = `
 <svg
   aria-label="logo-the-sunday-times"
   role="img"
+  title="TheSTLogo"
   viewBox="432b2b997b72ed04860614d58bfe21fa"
   width={20}
 >
@@ -191,6 +200,7 @@ exports[`11. thetimeslogo renders 1`] = `
 <svg
   aria-label="logo-the-times"
   role="img"
+  title="TheTimesLogo"
   viewBox="064d9dc888226a281482b4aa9646de05"
   width={20}
 >
@@ -209,11 +219,12 @@ exports[`12. closeicon renders 1`] = `
   aria-label="icon-close"
   height={28}
   role="img"
+  title="Close Icon"
   viewBox="a20267b134584c37a6dc39235d4a5519"
   width={20}
 >
   <title>
-    Close Icon
+    CloseIcon
   </title>
   <path
     d="e47f4fab4bd751d2d3ea1eb7a66c492a"
@@ -245,12 +256,12 @@ exports[`14. iconactivityindicator renders 1`] = `
     className="activity-indicator__ActivityIndicatorContainer-sc-1bvau9v-1 cVeDx"
   >
     <activity-indicator__ActivityIndicatorSpinner
-      data-fillColour="#006699"
+      data-fill-colour="#006699"
       data-title="IconActivityIndicator"
     >
       <div
         className="activity-indicator__ActivityIndicatorSpinner-sc-1bvau9v-0 kaKzrz"
-        data-fillColour="#006699"
+        data-fill-colour="#006699"
         data-title="IconActivityIndicator"
       />
     </activity-indicator__ActivityIndicatorSpinner>

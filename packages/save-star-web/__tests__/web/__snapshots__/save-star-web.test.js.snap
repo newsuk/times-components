@@ -8,7 +8,7 @@ Array [
   <div>
     <div>
       <div
-        data-fillColour="#006699"
+        data-fill-colour="#006699"
         data-title="Activity Indicator"
       />
     </div>
@@ -30,6 +30,7 @@ Array [
         aria-label="icon-save-star"
         height={18}
         role="img"
+        title="Remove from My Articles"
         viewBox="0 0 18 18"
         width={18}
       >
@@ -61,6 +62,7 @@ Array [
         aria-label="icon-save-star"
         height={18}
         role="img"
+        title="Save to My Articles"
         viewBox="0 0 18 18"
         width={18}
       >
