@@ -36,8 +36,7 @@ exports[`tile e huge 1`] = `
 }
 
 .IS6 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -148,8 +147,7 @@ exports[`tile e medium 1`] = `
 }
 
 .IS6 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -261,8 +259,7 @@ exports[`tile e small 1`] = `
 }
 
 .IS7 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -370,8 +367,7 @@ exports[`tile e wide 1`] = `
 }
 
 .IS6 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -486,8 +482,7 @@ exports[`tile e without breakpoint should be like small 1`] = `
 }
 
 .IS7 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 

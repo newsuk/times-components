@@ -32,8 +32,7 @@ exports[`tile ae huge 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -134,8 +133,7 @@ exports[`tile ae medium 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -236,8 +234,7 @@ exports[`tile ae wide 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -338,8 +335,7 @@ exports[`tile ae without breakpoint should be like medium 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 

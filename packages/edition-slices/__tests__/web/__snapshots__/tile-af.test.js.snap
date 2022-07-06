@@ -32,8 +32,7 @@ exports[`tile af huge 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -134,8 +133,7 @@ exports[`tile af wide 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 
@@ -236,8 +234,7 @@ exports[`tile af without breakpoint should be like wide 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 

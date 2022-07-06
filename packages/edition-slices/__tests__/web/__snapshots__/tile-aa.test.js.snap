@@ -32,8 +32,7 @@ exports[`tile aа without breakpoint 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 </style>
 

@@ -32,8 +32,7 @@ exports[`tile ab huge 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 
 .IS6 {
@@ -154,8 +153,7 @@ exports[`tile ab medium 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 
 .IS6 {
@@ -276,8 +274,7 @@ exports[`tile ab wide 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 
 .IS6 {
@@ -398,8 +395,7 @@ exports[`tile ab without breakpoint should be like medium 1`] = `
 }
 
 .IS5 {
-  0: [object Object];
-  1: [object Object];
+  flex: 1;
 }
 
 .IS6 {
