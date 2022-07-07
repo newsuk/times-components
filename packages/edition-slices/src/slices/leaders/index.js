@@ -14,7 +14,9 @@ const renderHead = (styles, breakpoint) => (
       <TcView style={styles.mastheadContainer}>
         <MastHead breakpoint={breakpoint} publicationName={publicationName} />
         <TcView style={styles.headingContainer}>
-          <TcText style={checkStylesForUnits({ ...styles.heading, ...styles.text })}>
+          <TcText
+            style={checkStylesForUnits({ ...styles.heading, ...styles.text })}
+          >
             {" "}
             Leading Articles{" "}
           </TcText>
