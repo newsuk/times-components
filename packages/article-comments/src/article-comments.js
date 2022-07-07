@@ -25,7 +25,7 @@ const ArticleComments = ({
       <UserState state={UserState.metered}>
         <InlineDialog
           title="Join the conversation"
-          buttonText="Subscribe now"
+          buttonText="View offers"
           href={getStoreLink()}
         >
           Commenting is only available to unlimited access subscribers. Upgrade
