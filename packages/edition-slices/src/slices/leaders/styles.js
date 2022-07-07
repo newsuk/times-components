@@ -76,7 +76,8 @@ const wideBreakpointStyles = {
   ...mediumBreakpointStyles,
   container: {
     ...mediumBreakpointStyles.container,
-    marginHorizontal: spacing(4)
+    marginLeft: spacing(4),
+    marginRight: spacing(4),
   }
 };
 
