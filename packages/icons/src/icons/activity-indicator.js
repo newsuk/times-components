@@ -36,7 +36,10 @@ const IconActivityIndicator = ({
   title = "Activity Indicator"
 }) => (
   <ActivityIndicatorContainer>
-    <ActivityIndicatorSpinner data-fillColour={fillColour} data-title={title} />
+    <ActivityIndicatorSpinner
+      data-fill-colour={fillColour}
+      data-title={title}
+    />
   </ActivityIndicatorContainer>
 );
 

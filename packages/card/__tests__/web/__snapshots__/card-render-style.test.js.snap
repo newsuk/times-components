@@ -81,8 +81,16 @@ exports[`card with default layout 1`] = `
 }
 
 .IS2 {
-  max-width: 25%;
-  max-height: 50%;
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
 }
 
 .IS3 {
@@ -112,20 +120,12 @@ exports[`card with default layout 1`] = `
 }
 
 .IS5 {
-  align-items: center;
-  background-color: #EDEDED;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  border-radius: 0;
+  padding-bottom: 150%;
 }
 
 .IS6 {
-  padding-bottom: 150%;
+  flex: 1;
+  max-width: 320;
 }
 
 .IS7 {
@@ -139,8 +139,11 @@ exports[`card with default layout 1`] = `
 }
 
 .IS9 {
-  flex: 1;
-  max-width: 320;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .IS10 {
@@ -158,21 +161,13 @@ exports[`card with default layout 1`] = `
   flex-wrap: wrap;
   justify-content: flex-end;
 }
-
-.IS12 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
 </style>
 
 <tc-view__TcView
-  className="IS12"
+  className="IS11"
 >
   <StyledComponent
-    className="IS11"
+    className="IS10"
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
@@ -198,13 +193,13 @@ exports[`card with default layout 1`] = `
     forwardedRef={null}
   >
     <div
-      className="c0 IS10"
+      className="c0 IS9"
     >
       <tc-view__TcView
-        className="IS9"
+        className="IS8"
       >
         <StyledComponent
-          className="IS8"
+          className="IS7"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -230,7 +225,7 @@ exports[`card with default layout 1`] = `
           forwardedRef={null}
         >
           <div
-            className="c0 IS7"
+            className="c0 IS6"
           >
             <TimesImage
               aspectRatio={0.6666666666666666}

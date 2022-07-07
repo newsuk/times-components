@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. watermark 1`] = `
-<Svg
+<svg
   aria-label="watermark"
   height={250}
   viewBox="0 0 300 250"
   width={300}
 >
-  <G
+  <g
     fill="none"
     fillRule="evenodd"
     id="watermark"
@@ -15,11 +15,11 @@ exports[`1. watermark 1`] = `
     stroke="none"
     strokeWidth="1"
   >
-    <Path
+    <path
       d="53a8dae08c4e492d934bf2f094a46ab4"
       fill="#1D1D1B"
       id="shape"
     />
-  </G>
-</Svg>
+  </g>
+</svg>
 `;

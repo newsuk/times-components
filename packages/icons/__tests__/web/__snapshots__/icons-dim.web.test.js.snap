@@ -5,6 +5,7 @@ exports[`1. iconemail sets a width when height is set 1`] = `
   aria-label="icon-email"
   height={50}
   role="img"
+  title="Email Icon"
   width={68.75}
 />
 `;
@@ -14,6 +15,7 @@ exports[`2. iconfacebook sets a width when height is set 1`] = `
   aria-label="icon-facebook"
   height={50}
   role="img"
+  title="Facebook Icon"
   width={25}
 />
 `;
@@ -31,6 +33,7 @@ exports[`4. iconstar sets a width when height is set 1`] = `
   aria-label="icon-save-star"
   height={50}
   role="img"
+  title="Save star"
   width={50}
 />
 `;
@@ -40,6 +43,7 @@ exports[`5. iconcopylink sets a width when height is set 1`] = `
   aria-label="icon-copy-link"
   height={50}
   role="img"
+  title="Copy link to clipboard"
   width={15}
 />
 `;
@@ -49,6 +53,7 @@ exports[`6. iconsavebookmark sets a width when height is set 1`] = `
   aria-label="icon-save-bookmark"
   height={50}
   role="img"
+  title="Save to My Articles"
   width={12}
 />
 `;
@@ -58,6 +63,7 @@ exports[`7. icontwitter sets a width when height is set 1`] = `
   aria-label="icon-twitter"
   height={50}
   role="img"
+  title="Twitter Icon"
   width={62.5}
 />
 `;
@@ -67,6 +73,7 @@ exports[`8. iconvideo sets a width when height is set 1`] = `
   aria-label="icon-video"
   height={50}
   role="img"
+  title="Video Icon"
   width={85}
 />
 `;
@@ -76,6 +83,7 @@ exports[`9. iconvideo360player sets a width when height is set 1`] = `
   aria-label="icon-video-360-player"
   height={50}
   role="img"
+  title="Video 360 Player Icon"
   width={54}
 />
 `;
@@ -85,6 +93,7 @@ exports[`10. thestlogo sets a width when height is set 1`] = `
   aria-label="logo-the-sunday-times"
   height={50}
   role="img"
+  title="ST"
   width={50}
 />
 `;
@@ -94,6 +103,7 @@ exports[`11. thetimeslogo sets a width when height is set 1`] = `
   aria-label="logo-the-times"
   height={50}
   role="img"
+  title="The Times"
   width={50}
 />
 `;
@@ -103,6 +113,7 @@ exports[`12. closeicon sets a width when height is set 1`] = `
   aria-label="icon-close"
   height={50}
   role="img"
+  title="Close Icon"
   width={28}
 />
 `;
@@ -120,12 +131,12 @@ exports[`14. iconactivityindicator sets a width when height is set 1`] = `
     className="activity-indicator__ActivityIndicatorContainer-sc-1bvau9v-1 cVeDx"
   >
     <activity-indicator__ActivityIndicatorSpinner
-      data-fillColour="#006699"
+      data-fill-colour="#006699"
       data-title="Activity Indicator"
     >
       <div
         className="activity-indicator__ActivityIndicatorSpinner-sc-1bvau9v-0 kaKzrz"
-        data-fillColour="#006699"
+        data-fill-colour="#006699"
         data-title="Activity Indicator"
       />
     </activity-indicator__ActivityIndicatorSpinner>
