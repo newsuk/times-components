@@ -50,9 +50,8 @@ exports[`tile w huge 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "marginHorizontal": "10px",
-      "marginLeft": "20px",
-      "marginRight": "20px",
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "paddingBottom": "15px",
       "paddingLeft": "10px",
       "paddingRight": "10px",
@@ -297,9 +296,8 @@ exports[`tile w wide 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "marginHorizontal": "10px",
-      "marginLeft": "20px",
-      "marginRight": "20px",
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "paddingBottom": "15px",
       "paddingLeft": "10px",
       "paddingRight": "10px",
