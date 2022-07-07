@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { TcView, TcText } from "@times-components/utils";
+import { TcView, TcText, checkStylesForUnits } from "@times-components/utils";
 import PropTypes from "prop-types";
 import {
   ItemRowSeparator,
@@ -31,7 +31,7 @@ class DailyRegisterLeadFour extends Component {
           style={styles.mastheadLogo}
           type="logo"
         />
-        <TcText style={styles.title}>Daily Universal Register</TcText>
+        <TcText style={checkStylesForUnits(styles.title)}>Daily Universal Register</TcText>
         <TileS tile={briefing} breakpoint={breakpoint} />
         <ItemRowSeparator style={styles.separator} />
         <TileS tile={onThisDay} breakpoint={breakpoint} />
@@ -87,7 +87,7 @@ class DailyRegisterLeadFour extends Component {
           style={styles.mastheadLogo}
           type="logo"
         />
-        <TcText style={styles.title}>Daily Universal Register</TcText>
+        <TcText style={checkStylesForUnits(styles.title)}>Daily Universal Register</TcText>
         <TcView style={styles.itemsContainer}>
           <TcView style={styles.column}>
             <TileS tile={briefing} breakpoint={breakpoint} />

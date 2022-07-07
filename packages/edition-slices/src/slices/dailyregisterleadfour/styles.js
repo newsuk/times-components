@@ -20,7 +20,7 @@ const smallBreakpointStyles = {
     width: 285,
     height: 73,
     marginTop: spacing(2),
-    marginBottom: spacing(2)
+    marginBottom: spacing(2),
   },
   separator: {
     borderBottomColor: colours.functional.keyline,
@@ -58,7 +58,7 @@ const mediumBreakpointStyles = {
   },
   rowSeparator: {
     marginLeft: spacing(3),
-    marginRight: spacing(3)
+    marginRight: spacing(3),
   },
   mastheadLogo: {
     width: 237,
