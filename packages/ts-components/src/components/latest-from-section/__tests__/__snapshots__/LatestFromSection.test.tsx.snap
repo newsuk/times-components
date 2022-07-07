@@ -3,18 +3,16 @@
 exports[`<LatestFromSection> no data  1`] = `
 <DocumentFragment>
   <div
-    class="css-view-1dbjc4n"
+    class="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
-      class="css-view-1dbjc4n"
-      style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
+      class="tc-view__TcView-nuazoi-0 fPjBcr"
+      style="align-items: center; border-bottom-color: #DBDBDB; border-bottom-width: 1px; border-style: solid; border-top-color: #DBDBDB; border-top-width: 1px; display: flex; justify-content: center; padding: 15px;"
     >
       <h3
         aria-level="3"
-        class="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
+        class="related-articles-heading__HeadingForRelatedArticles-sc-1m1bjcq-0 cDImeD"
         role="heading"
-        style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
       >
         Latest from Sport
       </h3>
@@ -26,18 +24,16 @@ exports[`<LatestFromSection> no data  1`] = `
 exports[`<LatestFromSection> renders  1`] = `
 <DocumentFragment>
   <div
-    class="css-view-1dbjc4n"
+    class="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
-      class="css-view-1dbjc4n"
-      style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
+      class="tc-view__TcView-nuazoi-0 fPjBcr"
+      style="align-items: center; border-bottom-color: #DBDBDB; border-bottom-width: 1px; border-style: solid; border-top-color: #DBDBDB; border-top-width: 1px; display: flex; justify-content: center; padding: 15px;"
     >
       <h3
         aria-level="3"
-        class="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
+        class="related-articles-heading__HeadingForRelatedArticles-sc-1m1bjcq-0 cDImeD"
         role="heading"
-        style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
       >
         Latest from Sport
       </h3>
@@ -56,13 +52,14 @@ exports[`<LatestFromSection> renders  1`] = `
           >
             <div
               data-testid="related-article-item"
+              data-title="{\\"article\\":{\\"id\\":\\"c286c868-d90a-11eb-8f14-0bb645f59db0\\",\\"shortIdentifier\\":\\"2zq0zgfmn\\",\\"slug\\":\\"the-entire-tour-de-france-bows-to-the-greatness-of-mark-cavendish\\",\\"label\\":\\"cycling | David Walsh\\",\\"headline\\":\\"The entire Tour bows to the greatness of Cavendish\\",\\"section\\":\\"Sport\\",\\"url\\":\\"/article/the-entire-tour-de-france-bows-to-the-greatness-of-mark-cavendish-2zq0zgfmn\\",\\"leadAsset\\":{\\"crop169\\":{\\"url\\":\\"https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg\\"},\\"crop32\\":{\\"url\\":\\"https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg\\"}},\\"summary125\\":[{\\"name\\":\\"paragraph\\",\\"children\\":[{\\"name\\":\\"text\\",\\"attributes\\":{\\"value\\":\\"The story of Mark Cavendish’s heroic return can be told in many ways. In the brilliance of the sprint, mostly. His team-mates had done an outstanding job but ri\\"},\\"children\\":[]}]}],\\"summary145\\":[{\\"name\\":\\"paragraph\\",\\"children\\":[{\\"name\\":\\"text\\",\\"attributes\\":{\\"value\\":\\"The story of Mark Cavendish’s heroic return can be told in many ways. In the brilliance of the sprint, mostly. His team-mates had done an outstanding job but ri\\"},\\"children\\":[]}]}],\\"publishedTime\\":\\"2021-06-29T23:01:00Z\\",\\"updatedTime\\":\\"2021-06-29T22:33:53Z\\",\\"bylines\\":[{\\"byline\\":[{\\"name\\":\\"author\\",\\"children\\":[{\\"name\\":\\"text\\",\\"children\\":[],\\"attributes\\":{\\"value\\":\\"David Walsh\\"}}],\\"attributes\\":{\\"slug\\":\\"didi-tang\\"}}],\\"image\\":null}]},\\"bylineClass\\":\\"\\",\\"contentContainerClass\\":\\"contentContainerClass\\",\\"headlineClass\\":\\"headlineClass\\",\\"id\\":\\"c286c868-d90a-11eb-8f14-0bb645f59db0\\",\\"imageConfig\\":{\\"showHiRes\\":true},\\"imageContainerClass\\":\\"imageContainerClass\\",\\"isOpinionByline\\":false,\\"isReversed\\":false,\\"leadAssetOverride\\":null,\\"showImage\\":true,\\"showSummary\\":true,\\"summaryConfig\\":{\\"lengths\\":[125,145]}}"
             >
               <a
                 class="link__RespLink-sc-1ocvixa-0 dfMuic"
                 href="https://www.thetimes.co.uk/article/the-entire-tour-de-france-bows-to-the-greatness-of-mark-cavendish-2zq0zgfmn"
               >
                 <div
-                  class="css-view-1dbjc4n"
+                  class="tc-view__TcView-nuazoi-0 fPjBcr"
                 >
                   <div
                     class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -137,7 +134,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           The entire Tour bows to the greatness of Cavendish
                         </div>
                         <div
-                          class="css-view-1dbjc4n"
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
                         >
                           <div
                             class="summaryHidden summary125Class tc-text__TcText-sc-15igzev-0 lhcAkf"
@@ -196,13 +193,14 @@ exports[`<LatestFromSection> renders  1`] = `
           >
             <div
               data-testid="related-article-item"
+              data-title="{\\"article\\":{\\"id\\":\\"01ee453e-d90c-11eb-8f14-0bb645f59db0\\",\\"shortIdentifier\\":\\"ktkcvc85p\\",\\"slug\\":\\"jordan-pickford-repels-everything-germans-muster\\",\\"label\\":\\"Euro 2020 | Matt Lawton\\",\\"headline\\":\\"Flawless Pickford repels everything Germans muster\\",\\"section\\":\\"Sport\\",\\"url\\":\\"/article/jordan-pickford-repels-everything-germans-muster-ktkcvc85p\\",\\"leadAsset\\":{\\"crop169\\":{\\"url\\":\\"https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg\\"},\\"crop32\\":{\\"url\\":\\"https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg\\"}},\\"summary125\\":[{\\"name\\":\\"paragraph\\",\\"children\\":[{\\"name\\":\\"text\\",\\"attributes\\":{\\"value\\":\\"Accompanied by a ghost of England’s past in the form of Thomas Müller, Germany set out to inflict yet more misery on their hosts with two spirited young forward\\"},\\"children\\":[]}]}],\\"summary145\\":[{\\"name\\":\\"paragraph\\",\\"children\\":[{\\"name\\":\\"text\\",\\"attributes\\":{\\"value\\":\\"Accompanied by a ghost of England’s past in the form of Thomas Müller, Germany set out to inflict yet more misery on their hosts with two spirited young forward\\"},\\"children\\":[]}]}],\\"publishedTime\\":\\"2021-06-30T11:00:00Z\\",\\"updatedTime\\":\\"2021-06-30T10:43:13Z\\",\\"bylines\\":[{\\"byline\\":[{\\"name\\":\\"author\\",\\"children\\":[{\\"name\\":\\"text\\",\\"children\\":[],\\"attributes\\":{\\"value\\":\\"Matt Lawton\\"}}],\\"attributes\\":{\\"slug\\":\\"didi-tang\\"}}],\\"image\\":null}]},\\"bylineClass\\":\\"\\",\\"contentContainerClass\\":\\"contentContainerClass\\",\\"headlineClass\\":\\"headlineClass\\",\\"id\\":\\"01ee453e-d90c-11eb-8f14-0bb645f59db0\\",\\"imageConfig\\":{\\"showHiRes\\":true},\\"imageContainerClass\\":\\"imageContainerClass\\",\\"isOpinionByline\\":false,\\"isReversed\\":false,\\"leadAssetOverride\\":null,\\"showImage\\":true,\\"showSummary\\":true,\\"summaryConfig\\":{\\"lengths\\":[125,145]}}"
             >
               <a
                 class="link__RespLink-sc-1ocvixa-0 dfMuic"
                 href="https://www.thetimes.co.uk/article/jordan-pickford-repels-everything-germans-muster-ktkcvc85p"
               >
                 <div
-                  class="css-view-1dbjc4n"
+                  class="tc-view__TcView-nuazoi-0 fPjBcr"
                 >
                   <div
                     class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -277,7 +275,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           Flawless Pickford repels everything Germans muster
                         </div>
                         <div
-                          class="css-view-1dbjc4n"
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
                         >
                           <div
                             class="summaryHidden summary125Class tc-text__TcText-sc-15igzev-0 lhcAkf"
@@ -336,13 +334,14 @@ exports[`<LatestFromSection> renders  1`] = `
           >
             <div
               data-testid="related-article-item"
+              data-title="{\\"article\\":{\\"id\\":\\"a8bfaa82-d917-11eb-b92f-5fe539a30c29\\",\\"shortIdentifier\\":\\"s2s5j6k8l\\",\\"slug\\":\\"the-tactical-masterstrokes-behind-englands-ruthless-win\\",\\"label\\":\\"Euro 2020 | Jonathan Northcroft\\",\\"headline\\":\\"The tactical masterstrokes behind England’s ruthless win\\",\\"section\\":\\"Sport\\",\\"url\\":\\"/article/the-tactical-masterstrokes-behind-englands-ruthless-win-s2s5j6k8l\\",\\"leadAsset\\":{\\"crop169\\":{\\"url\\":\\"https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F798e1dce-d918-11eb-b92f-5fe539a30c29.jpg\\"},\\"crop32\\":{\\"url\\":\\"https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65f0ffc0-d918-11eb-b92f-5fe539a30c29.jpg\\"}},\\"summary125\\":[{\\"name\\":\\"paragraph\\",\\"children\\":[{\\"name\\":\\"text\\",\\"attributes\\":{\\"value\\":\\"Rising value of SterlingRaheem Sterling is often portrayed as the kid from an estate near Wembley, who transitioned from street player to a star on its pitch. A\\"},\\"children\\":[]}]}],\\"summary145\\":[{\\"name\\":\\"paragraph\\",\\"children\\":[{\\"name\\":\\"text\\",\\"attributes\\":{\\"value\\":\\"Rising value of SterlingRaheem Sterling is often portrayed as the kid from an estate near Wembley, who transitioned from street player to a star on its pitch. A\\"},\\"children\\":[]}]}],\\"publishedTime\\":\\"2021-06-29T23:01:00Z\\",\\"updatedTime\\":\\"2021-06-30T11:42:55Z\\",\\"bylines\\":[{\\"byline\\":[{\\"name\\":\\"author\\",\\"children\\":[{\\"name\\":\\"text\\",\\"children\\":[],\\"attributes\\":{\\"value\\":\\"Jonathan Northcroft\\"}}],\\"attributes\\":{\\"slug\\":\\"didi-tang\\"}}],\\"image\\":null}]},\\"bylineClass\\":\\"\\",\\"contentContainerClass\\":\\"contentContainerClass\\",\\"headlineClass\\":\\"headlineClass\\",\\"id\\":\\"a8bfaa82-d917-11eb-b92f-5fe539a30c29\\",\\"imageConfig\\":{\\"showHiRes\\":true},\\"imageContainerClass\\":\\"imageContainerClass\\",\\"isOpinionByline\\":false,\\"isReversed\\":false,\\"leadAssetOverride\\":null,\\"showImage\\":true,\\"showSummary\\":true,\\"summaryConfig\\":{\\"lengths\\":[125,145]}}"
             >
               <a
                 class="link__RespLink-sc-1ocvixa-0 dfMuic"
                 href="https://www.thetimes.co.uk/article/the-tactical-masterstrokes-behind-englands-ruthless-win-s2s5j6k8l"
               >
                 <div
-                  class="css-view-1dbjc4n"
+                  class="tc-view__TcView-nuazoi-0 fPjBcr"
                 >
                   <div
                     class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -417,7 +416,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           The tactical masterstrokes behind England’s ruthless win
                         </div>
                         <div
-                          class="css-view-1dbjc4n"
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
                         >
                           <div
                             class="summaryHidden summary125Class tc-text__TcText-sc-15igzev-0 lhcAkf"
