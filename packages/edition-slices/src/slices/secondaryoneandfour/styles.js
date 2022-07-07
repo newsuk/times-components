@@ -38,7 +38,8 @@ const mediumBreakpointStyles = {
     ...darkBackgroundColour,
     marginTop: spacing(3),
     marginBottom: spacing(3),
-    marginHorizontal: spacing(6)
+    marginLeft: spacing(6),
+    marginRight: spacing(6)
   }
 };
 
@@ -48,7 +49,8 @@ const wideBreakpointStyles = {
     ...darkBackgroundColour,
     marginTop: spacing(3),
     marginBottom: spacing(3),
-    marginHorizontal: spacing(4)
+    marginLeft: spacing(4),
+    marginRight: spacing(4)
   }
 };
 
