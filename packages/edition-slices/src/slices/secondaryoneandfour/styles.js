@@ -31,11 +31,13 @@ const mediumBreakpointStyles = {
   },
   separator: {
     borderBottomColor: colours.functional.tertiary,
-    marginHorizontal: spacing(3)
+    marginLeft: spacing(3),
+    marginRight: spacing(3)
   },
   container: {
     ...darkBackgroundColour,
-    marginVertical: spacing(3),
+    marginTop: spacing(3),
+    marginBottom: spacing(3),
     marginHorizontal: spacing(6)
   }
 };
@@ -44,7 +46,8 @@ const wideBreakpointStyles = {
   ...mediumBreakpointStyles,
   container: {
     ...darkBackgroundColour,
-    marginVertical: spacing(3),
+    marginTop: spacing(3),
+    marginBottom: spacing(3),
     marginHorizontal: spacing(4)
   }
 };

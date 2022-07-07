@@ -42,8 +42,10 @@ const mediumBreakpointStyles = {
   container: {
     backgroundColor: colours.functional.border,
     paddingTop: spacing(6),
-    marginHorizontal: spacing(6),
-    marginVertical: spacing(3)
+    marginLeft: spacing(6),
+    marginRight: spacing(6),
+    marginTop: spacing(3),
+    marginBottom: spacing(3)
   },
   heading: {
     color: colours.section.comment,
