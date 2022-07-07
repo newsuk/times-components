@@ -31,7 +31,8 @@ exports[`tile ak huge 1`] = `
       "backgroundColor": "#F0F0F0",
       "flex": 1,
       "height": 243,
-      "marginHorizontal": "10px",
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "overflow": "hidden",
     }
   }
@@ -90,7 +91,8 @@ exports[`tile ak medium 1`] = `
       "backgroundColor": "#F0F0F0",
       "flex": 1,
       "height": 143,
-      "marginHorizontal": "10px",
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "overflow": "hidden",
     }
   }
@@ -149,7 +151,8 @@ exports[`tile ak wide 1`] = `
       "backgroundColor": "#F0F0F0",
       "flex": 1,
       "height": 195,
-      "marginHorizontal": "10px",
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "overflow": "hidden",
     }
   }
@@ -208,7 +211,8 @@ exports[`tile ak without breakpoint should be like medium 1`] = `
       "backgroundColor": "#F0F0F0",
       "flex": 1,
       "height": 143,
-      "marginHorizontal": "10px",
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "overflow": "hidden",
     }
   }
