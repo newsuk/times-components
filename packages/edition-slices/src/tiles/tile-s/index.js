@@ -30,12 +30,18 @@ const TileS = ({
     <TcView style={styles.container}>
       <TcView style={styles.titleWrapper}>
         {logo}
-        <TcText style={checkStylesForUnits(headLineStyles)}>{tile.title}</TcText>
+        <TcText style={checkStylesForUnits(headLineStyles)}>
+          {tile.title}
+        </TcText>
       </TcView>
-      <TcText style={checkStylesForUnits(styles.paragraph)}>{renderAst(tile.content)}</TcText>
+      <TcText style={checkStylesForUnits(styles.paragraph)}>
+        {renderAst(tile.content)}
+      </TcText>
       {tile.byline &&
         tile.byline.length > 0 && (
-          <TcText style={checkStylesForUnits(styles.byline)}>{renderAst(tile.byline)}</TcText>
+          <TcText style={checkStylesForUnits(styles.byline)}>
+            {renderAst(tile.byline)}
+          </TcText>
         )}
     </TcView>
   );
