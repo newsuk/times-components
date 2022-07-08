@@ -12,7 +12,7 @@ describe("Data helper", () => {
       const flags = [
         {
           type: "LIVE",
-          expiryTime: null,
+          expiryTime: null
         }
       ];
       expect(getActiveArticleFlags(flags)).toEqual("live");
