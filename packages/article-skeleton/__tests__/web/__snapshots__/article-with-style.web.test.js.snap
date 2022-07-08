@@ -778,51 +778,6 @@ exports[`full article with style 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  display: none;
-}
-
-.IS3 {
-  color: #1D1D1B;
-}
-
-.IS4 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS5 {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
-.IS6 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS7 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS8 {
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
-.IS9 {
-  margin: 0;
-}
-</style>
-
 <div>
   <div />
   <article>
@@ -831,7 +786,7 @@ exports[`full article with style 1`] = `
       className="c0"
     >
       <AdContainer
-        className="IS1"
+        marginBottom={0}
       />
     </div>
     <main
@@ -844,7 +799,7 @@ exports[`full article with style 1`] = `
           className="c3 c4 c5"
         >
           <div
-            className="IS2"
+            display="none"
           />
           <div>
             <div
@@ -864,7 +819,8 @@ exports[`full article with style 1`] = `
           className="c8"
         >
           <span
-            className="c9 IS3"
+            className="c9"
+            color="#1D1D1B"
           >
             T
           </span>
@@ -937,22 +893,32 @@ exports[`full article with style 1`] = `
             className="c12"
           >
             <figure
-              className="IS9"
+              margin={0}
             >
               <div
-                className="c17 IS8"
+                className="c17"
+                paddingBottom="56.25%"
+                position="relative"
               >
                 <div
-                  className="c17 IS7"
+                  className="c17"
+                  height="100%"
+                  position="absolute"
+                  width="100%"
                 >
                   <div
-                    className="IS6"
+                    height="100%"
+                    width="100%"
                   >
                     <div
-                      className="IS5"
+                      height="100%"
+                      position="relative"
+                      width="100%"
                     >
                       <video
-                        className="video-js IS4"
+                        className="video-js"
+                        height="100%"
+                        width="100%"
                       />
                     </div>
                   </div>

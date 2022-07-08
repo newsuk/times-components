@@ -839,103 +839,6 @@ exports[`full article with style 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  margin-bottom: 25px;
-}
-
-.IS3 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12;
-  line-height: 12px;
-  font-weight: 400;
-  margin-bottom: 0;
-  margin-top: -1;
-  padding-top: 1;
-  letter-spacing: 1;
-  color: #1D1D1B;
-}
-
-.IS4 {
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  opacity: 1;
-  z-index: 2;
-  width: 100%;
-  position: absolute;
-  display: block;
-}
-
-.IS6 {
-  display: table;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-}
-
-.IS7 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS8 {
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
-.IS9 {
-  margin: 0;
-}
-
-.IS10 {
-  margin-bottom: 20px;
-}
-
-.IS11 {
-  display: none;
-}
-
-.IS12 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS13 {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
-.IS14 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS15 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS16 {
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
-.IS17 {
-  margin: 0;
-}
-</style>
-
 <div>
   <div />
   <article>
@@ -966,7 +869,7 @@ exports[`full article with style 1`] = `
       className="c0"
     >
       <AdContainer
-        className="IS1"
+        marginBottom={0}
       />
     </div>
     <main
@@ -979,15 +882,26 @@ exports[`full article with style 1`] = `
           className="c3"
         >
           <div
-            className="c4 IS2"
+            className="c4"
+            marginBottom="25px"
           >
             <Image />
           </div>
           <div
-            className="c5 IS4"
+            className="c5"
+            marginBottom="10px"
           >
             <div
-              className="c6 IS3"
+              className="c6"
+              color="#1D1D1B"
+              fontFamily="GillSansMTStd-Medium"
+              fontSize={12}
+              fontWeight="400"
+              letterSpacing={1}
+              lineHeight="12px"
+              marginBottom={0}
+              marginTop={-1}
+              paddingTop={1}
             >
               SOME LABEL
             </div>
@@ -1030,22 +944,37 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c14 c5 IS10"
+          className="c14 c5"
+          marginBottom="20px"
         >
           <figure
-            className="IS9"
+            margin={0}
           >
             <div
-              className="c5 IS8"
+              className="c5"
+              paddingBottom="56.25%"
+              position="relative"
             >
               <div
-                className="c5 IS7"
+                className="c5"
+                height="100%"
+                position="absolute"
+                width="100%"
               >
                 <div
-                  className="IS6"
+                  display="table"
+                  height={0}
+                  overflow="hidden"
+                  paddingBottom="56.25%"
+                  position="relative"
+                  width="100%"
                 >
                   <img
-                    className="IS5"
+                    display="block"
+                    opacity={1}
+                    position="absolute"
+                    width="100%"
+                    zIndex={2}
                   />
                 </div>
               </div>
@@ -1059,7 +988,7 @@ exports[`full article with style 1`] = `
           className="c15 c16 c17"
         >
           <div
-            className="IS11"
+            display="none"
           />
           <div>
             <div
@@ -1122,22 +1051,32 @@ exports[`full article with style 1`] = `
           className="c20"
         >
           <figure
-            className="IS17"
+            margin={0}
           >
             <div
-              className="c5 IS16"
+              className="c5"
+              paddingBottom="56.25%"
+              position="relative"
             >
               <div
-                className="c5 IS15"
+                className="c5"
+                height="100%"
+                position="absolute"
+                width="100%"
               >
                 <div
-                  className="IS14"
+                  height="100%"
+                  width="100%"
                 >
                   <div
-                    className="IS13"
+                    height="100%"
+                    position="relative"
+                    width="100%"
                   >
                     <video
-                      className="video-js IS12"
+                      className="video-js"
+                      height="100%"
+                      width="100%"
                     />
                   </div>
                 </div>
@@ -2031,103 +1970,6 @@ exports[`full article with style in the culture magazine 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  margin-bottom: 25px;
-}
-
-.IS3 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12;
-  line-height: 12px;
-  font-weight: 400;
-  margin-bottom: 0;
-  margin-top: -1;
-  padding-top: 1;
-  letter-spacing: 1;
-  color: #7B0046;
-}
-
-.IS4 {
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  opacity: 1;
-  z-index: 2;
-  width: 100%;
-  position: absolute;
-  display: block;
-}
-
-.IS6 {
-  display: table;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-}
-
-.IS7 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS8 {
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
-.IS9 {
-  margin: 0;
-}
-
-.IS10 {
-  margin-bottom: 20px;
-}
-
-.IS11 {
-  display: none;
-}
-
-.IS12 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS13 {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
-.IS14 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS15 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS16 {
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
-.IS17 {
-  margin: 0;
-}
-</style>
-
 <div>
   <div />
   <article>
@@ -2158,7 +2000,7 @@ exports[`full article with style in the culture magazine 1`] = `
       className="c0"
     >
       <AdContainer
-        className="IS1"
+        marginBottom={0}
       />
     </div>
     <main
@@ -2171,15 +2013,26 @@ exports[`full article with style in the culture magazine 1`] = `
           className="c3"
         >
           <div
-            className="c4 IS2"
+            className="c4"
+            marginBottom="25px"
           >
             <Image />
           </div>
           <div
-            className="c5 IS4"
+            className="c5"
+            marginBottom="10px"
           >
             <div
-              className="c6 IS3"
+              className="c6"
+              color="#7B0046"
+              fontFamily="GillSansMTStd-Medium"
+              fontSize={12}
+              fontWeight="400"
+              letterSpacing={1}
+              lineHeight="12px"
+              marginBottom={0}
+              marginTop={-1}
+              paddingTop={1}
             >
               SOME LABEL
             </div>
@@ -2222,22 +2075,37 @@ exports[`full article with style in the culture magazine 1`] = `
           </div>
         </div>
         <div
-          className="c14 c5 IS10"
+          className="c14 c5"
+          marginBottom="20px"
         >
           <figure
-            className="IS9"
+            margin={0}
           >
             <div
-              className="c5 IS8"
+              className="c5"
+              paddingBottom="56.25%"
+              position="relative"
             >
               <div
-                className="c5 IS7"
+                className="c5"
+                height="100%"
+                position="absolute"
+                width="100%"
               >
                 <div
-                  className="IS6"
+                  display="table"
+                  height={0}
+                  overflow="hidden"
+                  paddingBottom="56.25%"
+                  position="relative"
+                  width="100%"
                 >
                   <img
-                    className="IS5"
+                    display="block"
+                    opacity={1}
+                    position="absolute"
+                    width="100%"
+                    zIndex={2}
                   />
                 </div>
               </div>
@@ -2251,7 +2119,7 @@ exports[`full article with style in the culture magazine 1`] = `
           className="c15 c16 c17"
         >
           <div
-            className="IS11"
+            display="none"
           />
           <div>
             <div
@@ -2314,22 +2182,32 @@ exports[`full article with style in the culture magazine 1`] = `
           className="c20"
         >
           <figure
-            className="IS17"
+            margin={0}
           >
             <div
-              className="c5 IS16"
+              className="c5"
+              paddingBottom="56.25%"
+              position="relative"
             >
               <div
-                className="c5 IS15"
+                className="c5"
+                height="100%"
+                position="absolute"
+                width="100%"
               >
                 <div
-                  className="IS14"
+                  height="100%"
+                  width="100%"
                 >
                   <div
-                    className="IS13"
+                    height="100%"
+                    position="relative"
+                    width="100%"
                   >
                     <video
-                      className="video-js IS12"
+                      className="video-js"
+                      height="100%"
+                      width="100%"
                     />
                   </div>
                 </div>
@@ -3224,103 +3102,6 @@ exports[`full article with style in the style magazine 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  margin-bottom: 25px;
-}
-
-.IS3 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12;
-  line-height: 12px;
-  font-weight: 400;
-  margin-bottom: 0;
-  margin-top: -1;
-  padding-top: 1;
-  letter-spacing: 1;
-  color: #BC3385;
-}
-
-.IS4 {
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  opacity: 1;
-  z-index: 2;
-  width: 100%;
-  position: absolute;
-  display: block;
-}
-
-.IS6 {
-  display: table;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-}
-
-.IS7 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS8 {
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
-.IS9 {
-  margin: 0;
-}
-
-.IS10 {
-  margin-bottom: 20px;
-}
-
-.IS11 {
-  display: none;
-}
-
-.IS12 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS13 {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
-.IS14 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS15 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS16 {
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
-.IS17 {
-  margin: 0;
-}
-</style>
-
 <div>
   <div />
   <article>
@@ -3351,7 +3132,7 @@ exports[`full article with style in the style magazine 1`] = `
       className="c0"
     >
       <AdContainer
-        className="IS1"
+        marginBottom={0}
       />
     </div>
     <main
@@ -3364,15 +3145,26 @@ exports[`full article with style in the style magazine 1`] = `
           className="c3"
         >
           <div
-            className="c4 IS2"
+            className="c4"
+            marginBottom="25px"
           >
             <Image />
           </div>
           <div
-            className="c5 IS4"
+            className="c5"
+            marginBottom="10px"
           >
             <div
-              className="c6 IS3"
+              className="c6"
+              color="#BC3385"
+              fontFamily="GillSansMTStd-Medium"
+              fontSize={12}
+              fontWeight="400"
+              letterSpacing={1}
+              lineHeight="12px"
+              marginBottom={0}
+              marginTop={-1}
+              paddingTop={1}
             >
               SOME LABEL
             </div>
@@ -3415,22 +3207,37 @@ exports[`full article with style in the style magazine 1`] = `
           </div>
         </div>
         <div
-          className="c14 c5 IS10"
+          className="c14 c5"
+          marginBottom="20px"
         >
           <figure
-            className="IS9"
+            margin={0}
           >
             <div
-              className="c5 IS8"
+              className="c5"
+              paddingBottom="56.25%"
+              position="relative"
             >
               <div
-                className="c5 IS7"
+                className="c5"
+                height="100%"
+                position="absolute"
+                width="100%"
               >
                 <div
-                  className="IS6"
+                  display="table"
+                  height={0}
+                  overflow="hidden"
+                  paddingBottom="56.25%"
+                  position="relative"
+                  width="100%"
                 >
                   <img
-                    className="IS5"
+                    display="block"
+                    opacity={1}
+                    position="absolute"
+                    width="100%"
+                    zIndex={2}
                   />
                 </div>
               </div>
@@ -3444,7 +3251,7 @@ exports[`full article with style in the style magazine 1`] = `
           className="c15 c16 c17"
         >
           <div
-            className="IS11"
+            display="none"
           />
           <div>
             <div
@@ -3507,22 +3314,32 @@ exports[`full article with style in the style magazine 1`] = `
           className="c20"
         >
           <figure
-            className="IS17"
+            margin={0}
           >
             <div
-              className="c5 IS16"
+              className="c5"
+              paddingBottom="56.25%"
+              position="relative"
             >
               <div
-                className="c5 IS15"
+                className="c5"
+                height="100%"
+                position="absolute"
+                width="100%"
               >
                 <div
-                  className="IS14"
+                  height="100%"
+                  width="100%"
                 >
                   <div
-                    className="IS13"
+                    height="100%"
+                    position="relative"
+                    width="100%"
                   >
                     <video
-                      className="video-js IS12"
+                      className="video-js"
+                      height="100%"
+                      width="100%"
                     />
                   </div>
                 </div>
@@ -4416,103 +4233,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  margin-bottom: 25px;
-}
-
-.IS3 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12;
-  line-height: 12px;
-  font-weight: 400;
-  margin-bottom: 0;
-  margin-top: -1;
-  padding-top: 1;
-  letter-spacing: 1;
-  color: #F13D00;
-}
-
-.IS4 {
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  opacity: 1;
-  z-index: 2;
-  width: 100%;
-  position: absolute;
-  display: block;
-}
-
-.IS6 {
-  display: table;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-}
-
-.IS7 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS8 {
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
-.IS9 {
-  margin: 0;
-}
-
-.IS10 {
-  margin-bottom: 20px;
-}
-
-.IS11 {
-  display: none;
-}
-
-.IS12 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS13 {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
-.IS14 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS15 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS16 {
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
-.IS17 {
-  margin: 0;
-}
-</style>
-
 <div>
   <div />
   <article>
@@ -4543,7 +4263,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
       className="c0"
     >
       <AdContainer
-        className="IS1"
+        marginBottom={0}
       />
     </div>
     <main
@@ -4556,15 +4276,26 @@ exports[`full article with style in the sunday times magazine 1`] = `
           className="c3"
         >
           <div
-            className="c4 IS2"
+            className="c4"
+            marginBottom="25px"
           >
             <Image />
           </div>
           <div
-            className="c5 IS4"
+            className="c5"
+            marginBottom="10px"
           >
             <div
-              className="c6 IS3"
+              className="c6"
+              color="#F13D00"
+              fontFamily="GillSansMTStd-Medium"
+              fontSize={12}
+              fontWeight="400"
+              letterSpacing={1}
+              lineHeight="12px"
+              marginBottom={0}
+              marginTop={-1}
+              paddingTop={1}
             >
               SOME LABEL
             </div>
@@ -4607,22 +4338,37 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </div>
         </div>
         <div
-          className="c14 c5 IS10"
+          className="c14 c5"
+          marginBottom="20px"
         >
           <figure
-            className="IS9"
+            margin={0}
           >
             <div
-              className="c5 IS8"
+              className="c5"
+              paddingBottom="56.25%"
+              position="relative"
             >
               <div
-                className="c5 IS7"
+                className="c5"
+                height="100%"
+                position="absolute"
+                width="100%"
               >
                 <div
-                  className="IS6"
+                  display="table"
+                  height={0}
+                  overflow="hidden"
+                  paddingBottom="56.25%"
+                  position="relative"
+                  width="100%"
                 >
                   <img
-                    className="IS5"
+                    display="block"
+                    opacity={1}
+                    position="absolute"
+                    width="100%"
+                    zIndex={2}
                   />
                 </div>
               </div>
@@ -4636,7 +4382,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           className="c15 c16 c17"
         >
           <div
-            className="IS11"
+            display="none"
           />
           <div>
             <div
@@ -4699,22 +4445,32 @@ exports[`full article with style in the sunday times magazine 1`] = `
           className="c20"
         >
           <figure
-            className="IS17"
+            margin={0}
           >
             <div
-              className="c5 IS16"
+              className="c5"
+              paddingBottom="56.25%"
+              position="relative"
             >
               <div
-                className="c5 IS15"
+                className="c5"
+                height="100%"
+                position="absolute"
+                width="100%"
               >
                 <div
-                  className="IS14"
+                  height="100%"
+                  width="100%"
                 >
                   <div
-                    className="IS13"
+                    height="100%"
+                    position="relative"
+                    width="100%"
                   >
                     <video
-                      className="video-js IS12"
+                      className="video-js"
+                      height="100%"
+                      width="100%"
                     />
                   </div>
                 </div>

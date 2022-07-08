@@ -58,54 +58,22 @@ exports[`1. pull quote in culture magazine 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  margin-left: -3;
-  font-family: Flama-Bold;
-  font-size: 75;
-  margin-bottom: -40px;
-  margin-top: 0;
-  color: #696969;
-}
-
-.IS2 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 13px;
-  color: #696969;
-  margin-bottom: 0;
-}
-
-.IS3 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 13px;
-  color: #696969;
-  margin-bottom: 0;
-}
-
-.IS4 {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  height: 20;
-  margin-top: 10px;
-}
-
-.IS5 {
-  margin-bottom: 15px;
-  margin-top: 0;
-}
-</style>
-
 <blockquote
   url=""
 >
   <div
-    className="c0 IS5"
+    className="c0"
+    marginBottom="15px"
+    marginTop={0}
   >
     <div
-      className="c1 IS1"
+      className="c1"
+      color="#696969"
+      fontFamily="Flama-Bold"
+      fontSize={75}
+      marginBottom="-40px"
+      marginLeft={-3}
+      marginTop={0}
     >
       “
     </div>
@@ -117,15 +85,30 @@ exports[`1. pull quote in culture magazine 1`] = `
       </cite>
     </div>
     <div
-      className="c0 IS4"
+      alignItems="center"
+      className="c0"
+      display="flex"
+      flexDirection="row"
+      height={20}
+      marginTop="10px"
     >
       <div
-        className="c1 IS2"
+        className="c1"
+        color="#696969"
+        fontFamily="GillSansMTStd-Medium"
+        fontSize={13}
+        lineHeight="13px"
+        marginBottom={0}
       >
         A caption
       </div>
       <div
-        className="c1 IS3"
+        className="c1"
+        color="#696969"
+        fontFamily="GillSansMTStd-Medium"
+        fontSize={13}
+        lineHeight="13px"
+        marginBottom={0}
       >
         , Some extra text
       </div>
@@ -192,54 +175,22 @@ exports[`2. pull quote in style magazine 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  margin-left: -5;
-  font-family: CenturyGothic-Bold;
-  font-size: 75;
-  margin-bottom: -40px;
-  margin-top: 0;
-  color: #696969;
-}
-
-.IS2 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 13px;
-  color: #696969;
-  margin-bottom: 0;
-}
-
-.IS3 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 13px;
-  color: #696969;
-  margin-bottom: 0;
-}
-
-.IS4 {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  height: 20;
-  margin-top: 10px;
-}
-
-.IS5 {
-  margin-bottom: 15px;
-  margin-top: 0;
-}
-</style>
-
 <blockquote
   url=""
 >
   <div
-    className="c0 IS5"
+    className="c0"
+    marginBottom="15px"
+    marginTop={0}
   >
     <div
-      className="c1 IS1"
+      className="c1"
+      color="#696969"
+      fontFamily="CenturyGothic-Bold"
+      fontSize={75}
+      marginBottom="-40px"
+      marginLeft={-5}
+      marginTop={0}
     >
       “
     </div>
@@ -251,15 +202,30 @@ exports[`2. pull quote in style magazine 1`] = `
       </cite>
     </div>
     <div
-      className="c0 IS4"
+      alignItems="center"
+      className="c0"
+      display="flex"
+      flexDirection="row"
+      height={20}
+      marginTop="10px"
     >
       <div
-        className="c1 IS2"
+        className="c1"
+        color="#696969"
+        fontFamily="GillSansMTStd-Medium"
+        fontSize={13}
+        lineHeight="13px"
+        marginBottom={0}
       >
         A caption
       </div>
       <div
-        className="c1 IS3"
+        className="c1"
+        color="#696969"
+        fontFamily="GillSansMTStd-Medium"
+        fontSize={13}
+        lineHeight="13px"
+        marginBottom={0}
       >
         , Some extra text
       </div>
@@ -326,54 +292,22 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  margin-left: -2;
-  font-family: Tiempos-Headline-Bold;
-  font-size: 75;
-  margin-bottom: -40px;
-  margin-top: 0;
-  color: #696969;
-}
-
-.IS2 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 13px;
-  color: #696969;
-  margin-bottom: 0;
-}
-
-.IS3 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 13px;
-  color: #696969;
-  margin-bottom: 0;
-}
-
-.IS4 {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  height: 20;
-  margin-top: 10px;
-}
-
-.IS5 {
-  margin-bottom: 15px;
-  margin-top: 0;
-}
-</style>
-
 <blockquote
   url=""
 >
   <div
-    className="c0 IS5"
+    className="c0"
+    marginBottom="15px"
+    marginTop={0}
   >
     <div
-      className="c1 IS1"
+      className="c1"
+      color="#696969"
+      fontFamily="Tiempos-Headline-Bold"
+      fontSize={75}
+      marginBottom="-40px"
+      marginLeft={-2}
+      marginTop={0}
     >
       “
     </div>
@@ -385,15 +319,30 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
       </cite>
     </div>
     <div
-      className="c0 IS4"
+      alignItems="center"
+      className="c0"
+      display="flex"
+      flexDirection="row"
+      height={20}
+      marginTop="10px"
     >
       <div
-        className="c1 IS2"
+        className="c1"
+        color="#696969"
+        fontFamily="GillSansMTStd-Medium"
+        fontSize={13}
+        lineHeight="13px"
+        marginBottom={0}
       >
         A caption
       </div>
       <div
-        className="c1 IS3"
+        className="c1"
+        color="#696969"
+        fontFamily="GillSansMTStd-Medium"
+        fontSize={13}
+        lineHeight="13px"
+        marginBottom={0}
       >
         , Some extra text
       </div>

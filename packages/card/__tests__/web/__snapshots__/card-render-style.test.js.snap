@@ -74,100 +74,18 @@ exports[`card with default layout 1`] = `
   min-width: 100%;
 }
 
-<style>
-.IS1 {
-  max-width: 25%;
-  max-height: 50%;
-}
-
-.IS2 {
-  align-items: center;
-  background-color: #EDEDED;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  border-radius: 0;
-}
-
-.IS3 {
-  align-items: center;
-  background-color: #EDEDED;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  border-radius: 0;
-}
-
-.IS4 {
-  align-items: center;
-  background-color: #EDEDED;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  border-radius: 0;
-}
-
-.IS5 {
-  padding-bottom: 150%;
-}
-
-.IS6 {
-  flex: 1;
-  max-width: 320;
-}
-
-.IS7 {
-  flex: 1;
-  max-width: 320;
-}
-
-.IS8 {
-  flex: 1;
-  max-width: 320;
-}
-
-.IS9 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.IS10 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-
-.IS11 {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-}
-</style>
-
 <tc-view__TcView
-  className="IS11"
+  alignItems="flex-start"
+  display="flex"
+  flexDirection="row"
+  flexWrap="wrap"
+  justifyContent="flex-end"
 >
   <StyledComponent
-    className="IS10"
+    alignItems="flex-start"
+    display="flex"
+    flexDirection="row"
+    flexWrap="wrap"
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
@@ -191,15 +109,24 @@ exports[`card with default layout 1`] = `
       }
     }
     forwardedRef={null}
+    justifyContent="flex-end"
   >
     <div
-      className="c0 IS9"
+      alignItems="flex-start"
+      className="c0"
+      display="flex"
+      flexDirection="row"
+      flexWrap="wrap"
+      justifyContent="flex-end"
     >
       <tc-view__TcView
-        className="IS8"
+        className=""
+        flex={1}
+        maxWidth={320}
       >
         <StyledComponent
-          className="IS7"
+          className=""
+          flex={1}
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -223,9 +150,12 @@ exports[`card with default layout 1`] = `
             }
           }
           forwardedRef={null}
+          maxWidth={320}
         >
           <div
-            className="c0 IS6"
+            className="c0"
+            flex={1}
+            maxWidth={320}
           >
             <TimesImage
               aspectRatio={0.6666666666666666}
