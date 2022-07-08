@@ -115,14 +115,9 @@ exports[`2. default modal 1`] = `
       top={0}
       zIndex={0}
     >
-<<<<<<< HEAD
-      <svg
-        className="IS1"
-=======
       <Svg
         maxHeight="50%"
         maxWidth="25%"
->>>>>>> b1e799a5a (TDP-1704 Resolved linting issue)
       >
         <g>
           <path />
