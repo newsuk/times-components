@@ -9,7 +9,8 @@ import { getRelatedArticlesSlice } from './formatters';
 
 export const RecommendedArticles: React.FC<{
   heading: string;
-}> = ({ heading }) => {
+  isVisible?: boolean;
+}> = ({ heading, isVisible }) => {
   const { loading, error, data } = useFetch<any>();
 
   if (loading || error) {
@@ -40,7 +41,10 @@ export const RecommendedArticles: React.FC<{
   };
 
   return (
-    <div id="recommended-articles" style={{ display: 'block' }}>
+    <div
+      id="recommended-articles"
+      style={{ display: isVisible ? 'block' : 'none' }}
+    >
       <RelatedArticles
         heading={heading}
         slice={slice}

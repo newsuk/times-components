@@ -1,6 +1,7 @@
 declare global {
   interface Window {
     nuk: any;
+    __TIMES_CONFIG__: any;
   }
 }
 
@@ -9,6 +10,9 @@ import React, { useEffect, useState } from 'react';
 import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import { RecommendedArticles } from './RecommendedArticles';
+
+const isValidEnvironment = (name: string) =>
+  ['local-prod', 'pr', 'uat', 'staging', 'prod'].includes(name);
 
 export const RecommendedFetch: React.FC<{
   articleId: string;
@@ -20,11 +24,9 @@ export const RecommendedFetch: React.FC<{
   useEffect(() => {
     try {
       const acsCookie = window.nuk.getCookieValue('acs_tnl');
+      const envName = window.__TIMES_CONFIG__.environmentName;
 
-      const params = new URLSearchParams(window.location.search);
-      const flag = params.get('recommendedArticles');
-
-      if (acsCookie && flag) {
+      if (acsCookie && isValidEnvironment(envName)) {
         setIsClientSide(true);
       }
     } catch (e) {
