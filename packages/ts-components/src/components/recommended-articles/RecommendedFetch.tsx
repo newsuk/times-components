@@ -59,7 +59,7 @@ export const RecommendedFetch: React.FC<{
           }
         }}
       >
-        <RecommendedArticles heading={heading} />
+        <RecommendedArticles heading={heading} isVisible />
       </TrackingContextProvider>
     </FetchProvider>
   ) : null;
