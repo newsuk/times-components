@@ -1,5 +1,6 @@
 import traverse from "./traverse";
 import print from "./printers";
+import flatten from "lodash.flatten";
 
 export const flattenStyleTransform = (accum, node, props, children) => {
   const { style: styles, ...other } = props;
