@@ -58,73 +58,21 @@ exports[`different colours 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  font-family: TimesModern-Regular;
-  font-size: 75;
-  margin-bottom: -40px;
-  margin-top: 0;
-  color: #850029;
-}
-
-.IS2 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 13px;
-  color: #696969;
-  margin-bottom: 0;
-}
-
-.IS3 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 13px;
-  color: #696969;
-  margin-bottom: 0;
-}
-
-.IS4 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 13;
-  color: #006699;
-  margin-left: 4;
-  text-decoration-line: none;
-}
-
-.IS5 {
-  align-items: center;
-  border-left-color: #DBDBDB;
-  border-left-width: 1;
-  display: flex;
-  flex-direction: row;
-  height: 13;
-  margin-left: 7;
-  padding-left: 7;
-}
-
-.IS6 {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  height: 20;
-  margin-top: 10px;
-}
-
-.IS7 {
-  margin-bottom: 15px;
-  margin-top: 0;
-}
-</style>
-
 <blockquote
   url="https://twitter.com/@twitter"
 >
   <div
-    className="c0 IS7"
+    className="c0"
+    marginBottom="15px"
+    marginTop={0}
   >
     <div
-      className="c1 IS1"
+      className="c1"
+      color="#850029"
+      fontFamily="TimesModern-Regular"
+      fontSize={75}
+      marginBottom="-40px"
+      marginTop={0}
     >
       “
     </div>
@@ -136,28 +84,57 @@ exports[`different colours 1`] = `
       </cite>
     </div>
     <div
-      className="c0 IS6"
+      alignItems="center"
+      className="c0"
+      display="flex"
+      flexDirection="row"
+      height={20}
+      marginTop="10px"
     >
       <div
-        className="c1 IS2"
+        className="c1"
+        color="#696969"
+        fontFamily="GillSansMTStd-Medium"
+        fontSize={13}
+        lineHeight="13px"
+        marginBottom={0}
       >
         A caption
       </div>
       <div
-        className="c1 IS3"
+        className="c1"
+        color="#696969"
+        fontFamily="GillSansMTStd-Medium"
+        fontSize={13}
+        lineHeight="13px"
+        marginBottom={0}
       >
         
       </div>
       <div
-        className="c0 IS5"
+        alignItems="center"
+        borderLeftColor="#DBDBDB"
+        borderLeftWidth={1}
+        className="c0"
+        display="flex"
+        flexDirection="row"
+        height={13}
+        marginLeft={7}
+        paddingLeft={7}
       >
         <IconTwitter
           height={10}
           width={11}
         />
         <TextLink
-          className="pullQuoteTwitterLink IS4"
+          className="pullQuoteTwitterLink"
+          color="#006699"
+          fontFamily="GillSansMTStd-Medium"
+          fontSize={13}
+          lineHeight={13}
+          marginLeft={4}
           target="_blank"
+          textDecorationLine="none"
           url="https://twitter.com/@twitter"
         >
           @twitter
