@@ -11,13 +11,8 @@ import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import { RecommendedArticles } from './RecommendedArticles';
 
-const isValidEnvironment = (name: string) => [
-  'local-prod',
-  'pr',
-  'uat',
-  'staging',
-  'prod',
-].includes(name);
+const isValidEnvironment = (name: string) =>
+  ['local-prod', 'pr', 'uat', 'staging', 'prod'].includes(name);
 
 export const RecommendedFetch: React.FC<{
   articleId: string;
