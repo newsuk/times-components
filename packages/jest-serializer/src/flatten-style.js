@@ -4,8 +4,6 @@ import print from "./printers";
 export const flattenStyleTransform = (accum, node, props, children) => {
   const { style: styles, ...other } = props;
   const style = props.style; // eslint-disable-line prefer-destructuring
-  console.log("- This is the style object -");
-  console.log(this.props);
 
   return {
     accum,
