@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.85.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.1...@times-components/article-skeleton@1.85.2) (2022-07-08)
+
+
+### Bug Fixes
+
+* **TDP-2179:** Fix article_flag bug ([#3017](https://github.com/newsuk/times-components/issues/3017)) ([3d28b9f](https://github.com/newsuk/times-components/commit/3d28b9f97dde079a72a21df2acd13cffac0495cf))
+
+
+
+
+
 ## [1.85.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.0...@times-components/article-skeleton@1.85.1) (2022-07-07)
 
 **Note:** Version bump only for package @times-components/article-skeleton
