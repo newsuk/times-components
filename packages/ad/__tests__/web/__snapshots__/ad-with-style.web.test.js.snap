@@ -1,71 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. multiple ad slots 1`] = `
-<style>
-.IS1 {
-  height: auto;
-  overflow: hidden;
-  width: 970;
-}
-
-.IS2 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS3 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS4 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS5 {
-  height: auto;
-  overflow: hidden;
-  width: 1;
-}
-
-.IS6 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS7 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS8 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS9 {
-  height: auto;
-  overflow: hidden;
-  width: 970;
-}
-
-.IS10 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS11 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS12 {
-  align-items: center;
-  flex: 1;
-}
-</style>
-
 <AdComposer>
   <Ad
     baseUrl="https://www.thetimes.co.uk/"
@@ -78,10 +13,12 @@ exports[`1. multiple ad slots 1`] = `
       server={null}
     >
       <tc-view__TcView
-        className="IS4"
+        alignItems="center"
+        flex={1}
       >
         <StyledComponent
-          className="IS3"
+          alignItems="center"
+          flex={1}
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -107,7 +44,9 @@ exports[`1. multiple ad slots 1`] = `
           forwardedRef={null}
         >
           <div
-            className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
+            alignItems="center"
+            className="tc-view__TcView-nuazoi-0 fPjBcr"
+            flex={1}
           >
             <DOMContext
               baseUrl="https://www.thetimes.co.uk/"
@@ -115,7 +54,9 @@ exports[`1. multiple ad slots 1`] = `
               width={970}
             >
               <div
-                className="IS1"
+                height="auto"
+                overflow="hidden"
+                width={970}
               />
             </DOMContext>
           </div>
@@ -134,10 +75,12 @@ exports[`1. multiple ad slots 1`] = `
       server={null}
     >
       <tc-view__TcView
-        className="IS8"
+        alignItems="center"
+        flex={1}
       >
         <StyledComponent
-          className="IS7"
+          alignItems="center"
+          flex={1}
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -163,7 +106,9 @@ exports[`1. multiple ad slots 1`] = `
           forwardedRef={null}
         >
           <div
-            className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
+            alignItems="center"
+            className="tc-view__TcView-nuazoi-0 fPjBcr"
+            flex={1}
           >
             <DOMContext
               baseUrl="https://www.thetimes.co.uk/"
@@ -171,7 +116,9 @@ exports[`1. multiple ad slots 1`] = `
               width={1}
             >
               <div
-                className="IS5"
+                height="auto"
+                overflow="hidden"
+                width={1}
               />
             </DOMContext>
           </div>
@@ -190,10 +137,12 @@ exports[`1. multiple ad slots 1`] = `
       server={null}
     >
       <tc-view__TcView
-        className="IS12"
+        alignItems="center"
+        flex={1}
       >
         <StyledComponent
-          className="IS11"
+          alignItems="center"
+          flex={1}
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -219,7 +168,9 @@ exports[`1. multiple ad slots 1`] = `
           forwardedRef={null}
         >
           <div
-            className="tc-view__TcView-nuazoi-0 fPjBcr IS10"
+            alignItems="center"
+            className="tc-view__TcView-nuazoi-0 fPjBcr"
+            flex={1}
           >
             <DOMContext
               baseUrl="https://www.thetimes.co.uk/"
@@ -227,7 +178,9 @@ exports[`1. multiple ad slots 1`] = `
               width={970}
             >
               <div
-                className="IS9"
+                height="auto"
+                overflow="hidden"
+                width={970}
               />
             </DOMContext>
           </div>
@@ -239,23 +192,6 @@ exports[`1. multiple ad slots 1`] = `
 `;
 
 exports[`2. placeholder when isloading 1`] = `
-<style>
-.IS1 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS2 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS3 {
-  align-items: center;
-  flex: 1;
-}
-</style>
-
 <Ad
   baseUrl="https://www.thetimes.co.uk/"
   contextUrl="https://www.thetimes.co.uk"
@@ -267,10 +203,12 @@ exports[`2. placeholder when isloading 1`] = `
     server={null}
   >
     <tc-view__TcView
-      className="IS3"
+      alignItems="center"
+      flex={1}
     >
       <StyledComponent
-        className="IS2"
+        alignItems="center"
+        flex={1}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -296,7 +234,9 @@ exports[`2. placeholder when isloading 1`] = `
         forwardedRef={null}
       >
         <div
-          className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
+          alignItems="center"
+          className="tc-view__TcView-nuazoi-0 fPjBcr"
+          flex={1}
         />
       </StyledComponent>
     </tc-view__TcView>
@@ -305,29 +245,6 @@ exports[`2. placeholder when isloading 1`] = `
 `;
 
 exports[`3. nothing if there is an error in the loading of scripts 1`] = `
-<style>
-.IS1 {
-  height: auto;
-  overflow: hidden;
-  width: 0;
-}
-
-.IS2 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS3 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS4 {
-  align-items: center;
-  flex: 1;
-}
-</style>
-
 <Ad
   baseUrl="https://www.thetimes.co.uk/"
   contextUrl="https://www.thetimes.co.uk"
@@ -339,10 +256,12 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
     server={null}
   >
     <tc-view__TcView
-      className="IS4"
+      alignItems="center"
+      flex={1}
     >
       <StyledComponent
-        className="IS3"
+        alignItems="center"
+        flex={1}
         forwardedComponent={
           Object {
             "$$typeof": Symbol(react.forward_ref),
@@ -368,7 +287,9 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
         forwardedRef={null}
       >
         <div
-          className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
+          alignItems="center"
+          className="tc-view__TcView-nuazoi-0 fPjBcr"
+          flex={1}
         >
           <DOMContext
             baseUrl="https://www.thetimes.co.uk/"
@@ -376,7 +297,9 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
             width={0}
           >
             <div
-              className="IS1"
+              height="auto"
+              overflow="hidden"
+              width={0}
             />
           </DOMContext>
         </div>
