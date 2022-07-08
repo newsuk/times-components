@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import FlatList, {PlainList} from "flatlist-react";
 // import { FlatList} from "react-native";
-import { TcView } from "@times-components/utils";
+import { TcView, TcFlatList } from "@times-components/utils";
 import PropTypes from "prop-types";
 import Responsive, { ResponsiveContext } from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
@@ -43,14 +43,14 @@ class Section extends Component {
     return null;
   }
 
-  renderItem({ index, item: slice }) {
+  renderItem({ index, data: slice }) {
 console.log('XXXXXXXXXX index item slice', index, slice)
     const {
       onArticlePress,
       onPuzzlePress,
       section: { name, slices }
     } = this.props;
- 
+    console.log('XXXXXXXXXX name', name, slices)
     const isPuzzle = name === "PuzzleSection";
    
     return (
@@ -108,18 +108,18 @@ console.log('XXXXXXXXXX index item slice', index, slice)
             // console.log('XXXXXXXXXXXXXX: ', )
             // console.log('XXXXXXXXXXXXXX: ', )
             // console.log('XXXXXXXXXXXXXX: ', )
-             console.log('XXXXXXXXXXXXXX: ', )
+             console.log('XXXXXXXXXXXXXX: tc flatlist', TcFlatList )
             console.log('XXXXXXXXXXXXXX: data', data)
 
          
 
             return (
-              <FlatList
+              <TcFlatList
                 data={data}
-                // style={
-                //   isTablet && isPuzzle && styles.additionalContainerPadding
-                // }
-                renderItem={this.renderItem}
+                style={
+                  isTablet && isPuzzle && styles.additionalContainerPadding
+                }
+                RenderItem={this.renderItem}
               
                 // keyExtractor={item => item.elementId}
              
