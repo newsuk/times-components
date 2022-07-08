@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.107.6](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.107.5...@times-components/edition-slices@0.107.6) (2022-07-08)
+
+
+### Bug Fixes
+
+* **TDP-1711:** Removed reactNative from Edition-Slices ([#3011](https://github.com/newsuk/times-components/issues/3011)) ([1774c62](https://github.com/newsuk/times-components/commit/1774c62d25b81aa64de76b866abc8c64e8255d2f))
+
+
+
+
+
 ## [0.107.5](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.107.4...@times-components/edition-slices@0.107.5) (2022-07-06)
 
 **Note:** Version bump only for package @times-components/edition-slices
