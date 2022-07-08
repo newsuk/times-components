@@ -26,10 +26,7 @@ export const RecommendedFetch: React.FC<{
       const acsCookie = window.nuk.getCookieValue('acs_tnl');
       const envName = window.__TIMES_CONFIG__.environmentName;
 
-      const params = new URLSearchParams(window.location.search);
-      const flag = params.get('recommendedArticles');
-
-      if (acsCookie && isValidEnvironment(envName) && flag) {
+      if (acsCookie && isValidEnvironment(envName)) {
         setIsClientSide(true);
       }
     } catch (e) {
