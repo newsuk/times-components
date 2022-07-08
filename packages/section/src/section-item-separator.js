@@ -1,13 +1,14 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styleFactory from "./styles";
+
 
 const SectionItemSeparator = ({ breakpoint }) => {
   const styles = styleFactory(breakpoint);
 
-  return <View style={styles.listItemSeparator} />;
+  return <TcView style={styles.listItemSeparator} />;
 };
 
 SectionItemSeparator.propTypes = {
@@ -15,3 +16,4 @@ SectionItemSeparator.propTypes = {
 };
 
 export default SectionItemSeparator;
+ 

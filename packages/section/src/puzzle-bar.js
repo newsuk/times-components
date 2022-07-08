@@ -1,26 +1,27 @@
 import React from "react";
-import { Text, View } from "react-native";
 import PropTypes from "prop-types";
+
 import { SectionContext } from "@times-components/context";
 import { IconForwardArrow } from "@times-components/icons";
 import { colours } from "@times-components/ts-styleguide";
+import { TcText, TcView } from "@times-components/utils";
 import styleFactory from "./styles";
-
+ 
 const styles = styleFactory();
 
 const PuzzleBar = ({ onPress }) => (
   <SectionContext.Consumer>
     {({ recentlyOpenedPuzzleCount: count }) =>
       count ? (
-        <View style={styles.puzzleBarContainer}>
-          <Text onPress={onPress} style={styles.puzzleBarText}>
+        <TcView style={styles.puzzleBarContainer}>
+          <TcText onPress={onPress} style={styles.puzzleBarText}>
             {count} recently opened puzzle
             {count > 1 && "s"}
-          </Text>
-          <View style={styles.puzzleBarArrow}>
+          </TcText>
+          <TcView style={styles.puzzleBarArrow}>
             <IconForwardArrow fillColour={colours.section.puzzle} />
-          </View>
-        </View>
+          </TcView>
+        </TcView>
       ) : null
     }
   </SectionContext.Consumer>

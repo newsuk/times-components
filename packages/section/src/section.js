@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { FlatList, View } from "react-native";
+import FlatList, {PlainList} from "flatlist-react";
+// import { FlatList} from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import Responsive, { ResponsiveContext } from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
@@ -10,7 +12,7 @@ import Slice from "./slice";
 import styleFactory from "./styles";
 import { prepareSlicesForRender, createPuzzleData } from "./utils";
 
-const styles = styleFactory();
+const styles = styleFactory(); 
 
 class Section extends Component {
   constructor(props) {
@@ -42,13 +44,15 @@ class Section extends Component {
   }
 
   renderItem({ index, item: slice }) {
+console.log('XXXXXXXXXX index item slice', index, slice)
     const {
       onArticlePress,
       onPuzzlePress,
       section: { name, slices }
     } = this.props;
+ 
     const isPuzzle = name === "PuzzleSection";
-
+   
     return (
       <Slice
         index={index}
@@ -71,9 +75,9 @@ class Section extends Component {
     }
 
     return (
-      <View style={styles.listItemSeparatorContainer}>
+      <TcView style={styles.listItemSeparatorContainer}>
         <SectionItemSeparator breakpoint={editionBreakpoint} />
-      </View>
+      </TcView>
     );
   }
 
@@ -95,26 +99,43 @@ class Section extends Component {
               : prepareSlicesForRender(slices);
 
             if (slices) receiveChildList(data);
+            // console.log('XXXXXXXXXXXXXX: ', )
+            // console.log('XXXXXXXXXXXXXX: ', )
+            // console.log('XXXXXXXXXXXXXX: ', )
+            // console.log('XXXXXXXXXXXXXX: ', )
+            // console.log('XXXXXXXXXXXXXX: ', )
+            // console.log('XXXXXXXXXXXXXX: ', )
+            // console.log('XXXXXXXXXXXXXX: ', )
+            // console.log('XXXXXXXXXXXXXX: ', )
+            // console.log('XXXXXXXXXXXXXX: ', )
+             console.log('XXXXXXXXXXXXXX: ', )
+            console.log('XXXXXXXXXXXXXX: data', data)
+
+         
 
             return (
               <FlatList
-                contentContainerStyle={
-                  isTablet && isPuzzle && styles.additionalContainerPadding
-                }
-                removeClippedSubviews
                 data={data}
-                initialNumToRender={isTablet ? 5 : 2}
-                ItemSeparatorComponent={leadingItem =>
-                  this.renderItemSeperator(leadingItem, editionBreakpoint)
-                }
-                keyExtractor={item => item.elementId}
-                ListHeaderComponent={this.getHeaderComponent(isPuzzle)}
-                nestedScrollEnabled
-                onViewableItemsChanged={
-                  onViewed ? this.onViewableItemsChanged : null
-                }
+                // style={
+                //   isTablet && isPuzzle && styles.additionalContainerPadding
+                // }
                 renderItem={this.renderItem}
-                windowSize={3}
+              
+                // keyExtractor={item => item.elementId}
+             
+                // initialNumToRender={isTablet ? 5 : 2}
+                // ItemSeparatorComponent={leadingItem =>
+                //   this.renderItemSeperator(leadingItem, editionBreakpoint)
+                // }
+              
+                // removeClippedSubviews
+                // ListHeaderComponent={this.getHeaderComponent(isPuzzle)}
+                // nestedScrollEnabled
+                // onViewableItemsChanged={
+                //   onViewed ? this.onViewableItemsChanged : null
+                // }
+              
+                // windowSize={3}
               />
             );
           }}
