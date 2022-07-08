@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import FlatList, {PlainList} from "flatlist-react";
-// import { FlatList} from "react-native";
 import { TcView, TcFlatList } from "@times-components/utils";
 import PropTypes from "prop-types";
 import Responsive, { ResponsiveContext } from "@times-components/responsive";
@@ -15,47 +13,35 @@ import { prepareSlicesForRender, createPuzzleData } from "./utils";
 const styles = styleFactory(); 
 
 class Section extends Component {
+
+
   constructor(props) {
     super(props);
     this.renderItem = this.renderItem.bind(this);
     this.renderItemSeperator = this.renderItemSeperator.bind(this);
-    this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }
 
-  onViewableItemsChanged(info) {
-    const {
-      onViewed,
-      section: { slices }
-    } = this.props;
-    if (!info.changed.length) return [];
-
-    return info.changed
-      .filter(viewableItem => viewableItem.isViewable)
-      .map(viewableItem => onViewed(viewableItem.item, slices));
-  }
-
-  getHeaderComponent(isPuzzle) {
+  getHeaderComponent() {
     const { onPuzzleBarPress } = this.props;
-    if (isPuzzle) {
-      return <PuzzleBar onPress={onPuzzleBarPress} />;
-    }
 
-    return null;
+    if (!onPuzzleBarPress) return null
+    
+    return <PuzzleBar onPress={onPuzzleBarPress} />;
   }
 
-  renderItem({ index, data: slice }) {
-console.log('XXXXXXXXXX index item slice', index, slice)
+  renderItem({ key, data: slice }) {
     const {
       onArticlePress,
       onPuzzlePress,
       section: { name, slices }
     } = this.props;
-    console.log('XXXXXXXXXX name', name, slices)
+
     const isPuzzle = name === "PuzzleSection";
    
     return (
       <Slice
-        index={index}
+        index={key}
+        key={index}
         length={slices.length}
         onPress={isPuzzle ? onPuzzlePress : onArticlePress}
         slice={slice}
@@ -99,19 +85,7 @@ console.log('XXXXXXXXXX index item slice', index, slice)
               : prepareSlicesForRender(slices);
 
             if (slices) receiveChildList(data);
-            // console.log('XXXXXXXXXXXXXX: ', )
-            // console.log('XXXXXXXXXXXXXX: ', )
-            // console.log('XXXXXXXXXXXXXX: ', )
-            // console.log('XXXXXXXXXXXXXX: ', )
-            // console.log('XXXXXXXXXXXXXX: ', )
-            // console.log('XXXXXXXXXXXXXX: ', )
-            // console.log('XXXXXXXXXXXXXX: ', )
-            // console.log('XXXXXXXXXXXXXX: ', )
-            // console.log('XXXXXXXXXXXXXX: ', )
-             console.log('XXXXXXXXXXXXXX: tc flatlist', TcFlatList )
-            console.log('XXXXXXXXXXXXXX: data', data)
 
-         
 
             return (
               <TcFlatList
@@ -119,23 +93,13 @@ console.log('XXXXXXXXXX index item slice', index, slice)
                 style={
                   isTablet && isPuzzle && styles.additionalContainerPadding
                 }
-                RenderItem={this.renderItem}
-              
-                // keyExtractor={item => item.elementId}
-             
-                // initialNumToRender={isTablet ? 5 : 2}
-                // ItemSeparatorComponent={leadingItem =>
-                //   this.renderItemSeperator(leadingItem, editionBreakpoint)
-                // }
-              
-                // removeClippedSubviews
-                // ListHeaderComponent={this.getHeaderComponent(isPuzzle)}
-                // nestedScrollEnabled
-                // onViewableItemsChanged={
-                //   onViewed ? this.onViewableItemsChanged : null
-                // }
-              
-                // windowSize={3}
+                RenderItem={this.renderItem}         
+                 initialNumToRender={isTablet ? 5 : 2}
+                ItemSeparatorComponent={this.renderItemSeperator}
+                 ListHeaderComponent={isPuzzle && this.getHeaderComponent()}
+                 misc={{editionBreakpoint: editionBreakpoint}}
+        
+
               />
             );
           }}

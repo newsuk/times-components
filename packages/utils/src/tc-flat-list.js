@@ -1,54 +1,41 @@
-import styled from "styled-components";
 import React from 'react'
 // not sure how else to put the default styles, this the default style for a React Native <Text/> component
 
 const TcFlatList = ({
   data,
+  initialNumToRender,
   RenderItem,
   ListHeaderComponent,
-  ListFooterComponent,
-  ListEmptyComponent,
+  ItemSeparatorComponent,
+  misc,
+  style
 }) => {
-  // console.log(Render)
-
-  // console.log(items, "items");
-  console.log('XXXXXXXXXXXX tc flat list', data)
-
+console.log('XXXXXXXXXXXXXXX style',style)
   if (Array.isArray(data)) {
     const render = data.map((v, i) => {
-      return RenderItem({ data: v, key: i });
+      if (i < initialNumToRender) {
+      return (
+      
+      <div role="listitem">
+      
+     { RenderItem({ data: v, key: i })}
+{data.length != data[i + 1] && ItemSeparatorComponent({leadingItem: v},misc.editionBreakpoint ) }
+      </div>
+      )
+      }
     });
-
-    // console.log(render, "render");
 
     if (render.length) {
       return (
-        <React.Fragment>
-          {ListHeaderComponent ? ListHeaderComponent() : null}
-          {render}  {ListFooterComponent ? ListFooterComponent() : null}
-          </React.Fragment>
+        <div role="list" style={style ? style : {}}>
+          {ListHeaderComponent || null}
+          {render}
+          </div>
         );
       }
   
-      return (
-        <React.Fragment>
-          {ListHeaderComponent ? ListHeaderComponent() : null}
-          {ListEmptyComponent ? ListEmptyComponent() : null}
-          {ListFooterComponent ? ListFooterComponent() : null}
-        </React.Fragment>
-      );
     }
-  
-    if (ListHeaderComponent || ListEmptyComponent || ListEmptyComponent) {
-      return (
-        <React.Fragment>
-          {ListHeaderComponent ? ListHeaderComponent() : null}
-  
-          {ListEmptyComponent ? ListEmptyComponent() : null}
-          {ListFooterComponent ? ListFooterComponent() : null}
-        </React.Fragment>
-      );
-    }
+
     return null;
   };
 
