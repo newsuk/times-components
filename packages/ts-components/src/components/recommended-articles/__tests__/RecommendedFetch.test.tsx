@@ -24,6 +24,7 @@ describe('<RecommendedFetch>', () => {
     window.location = { search: '?recommendedArticles=1' };
 
     window.nuk = { getCookieValue: () => true };
+    window.__TIMES_CONFIG__ = { environmentName: 'local-prod' };
 
     const { asFragment, getByText } = render(
       <RecommendedFetch
