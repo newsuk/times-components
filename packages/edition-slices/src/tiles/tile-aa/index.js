@@ -9,7 +9,6 @@ import {
 } from "../shared";
 import styles from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
-import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileAA = ({ onPress, tile }) => (
   <TileLink onPress={onPress} style={styles.container} tile={tile}>
@@ -26,7 +25,6 @@ const TileAA = ({ onPress, tile }) => (
         />
       )}
     />
-    <PositionedTileStar articleId={tile.article.id} />
   </TileLink>
 );
 

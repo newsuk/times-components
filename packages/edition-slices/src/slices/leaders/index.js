@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { TcView, TcText, checkStylesForUnits } from "@times-components/utils";
 import { SectionContext } from "@times-components/context";
 import { Leaders } from "@times-components/slice-layout";
 import PropTypes from "prop-types";
@@ -11,12 +11,17 @@ import MastHead from "./masthead";
 const renderHead = (styles, breakpoint) => (
   <SectionContext.Consumer>
     {({ publicationName }) => (
-      <View style={styles.mastheadContainer}>
+      <TcView style={styles.mastheadContainer}>
         <MastHead breakpoint={breakpoint} publicationName={publicationName} />
-        <View style={styles.headingContainer}>
-          <Text style={[styles.heading, styles.text]}> Leading Articles </Text>
-        </View>
-      </View>
+        <TcView style={styles.headingContainer}>
+          <TcText
+            style={checkStylesForUnits({ ...styles.heading, ...styles.text })}
+          >
+            {" "}
+            Leading Articles{" "}
+          </TcText>
+        </TcView>
+      </TcView>
     )}
   </SectionContext.Consumer>
 );
@@ -35,7 +40,7 @@ class LeadersSlice extends Component {
     const styles = styleFactory(breakpoint);
 
     return (
-      <View style={styles.container}>
+      <TcView style={styles.container}>
         {renderHead(styles, breakpoint)}
         <Leaders
           breakpoint={breakpoint}
@@ -64,7 +69,7 @@ class LeadersSlice extends Component {
             />
           }
         />
-      </View>
+      </TcView>
     );
   }
 

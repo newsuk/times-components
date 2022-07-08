@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
 import Image from "@times-components/image";
 import { SectionContext } from "@times-components/context";
@@ -198,7 +198,7 @@ export default () => {
 
         const output = TestRenderer.create(
           <TileLink onPress={fn} tile={{ article: { url } }}>
-            <Text>Test link</Text>
+            <TcText>Test link</TcText>
           </TileLink>
         );
 

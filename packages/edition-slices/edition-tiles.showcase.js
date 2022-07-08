@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView } from "react-native";
+import { TcView } from "@times-components/utils";
 import {
   mockEditionSlice,
   mockDailyRegisterSlice
@@ -59,12 +59,12 @@ const preventDefaultedAction = decorateAction =>
   ]);
 
 const renderTile = (Tile, mockTile = tile) => (_, { decorateAction }) => (
-  <ScrollView>
+  <TcView>
     <Tile
       onPress={preventDefaultedAction(decorateAction)("onPress")}
       tile={mockTile}
     />
-  </ScrollView>
+  </TcView>
 );
 
 const tileStories = [

@@ -3,62 +3,52 @@
 exports[`tile s huge 1`] = `
 <style>
 .IS1 {
-  color: rgba(29,29,27,1.00);
+  color: #1D1D1B;
   font-family: TimesModern-Bold;
-  font-size: 20px;
+  font-size: 20;
+  margin-bottom: 0;
   line-height: 20px;
-  margin-bottom: 0px;
 }
 
 .IS2 {
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
+  align-items: center;
   margin-bottom: 10px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 
 .IS3 {
-  color: rgba(105,105,105,1.00);
+  color: #696969;
   font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
+  font-size: 14;
   line-height: 20px;
 }
 
 .IS4 {
-  color: rgba(105,105,105,1.00);
+  color: #696969;
   font-family: GillSansMTStd-Medium;
-  font-size: 12px;
+  font-size: 12;
   margin-top: 10px;
 }
 
 .IS5 {
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
+  padding: 15px;
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n IS5"
+  className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
   >
     <div
-      className="css-text-901oao IS1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
     >
       Nature notes
     </div>
   </div>
   <div
-    className="css-text-901oao IS3"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
   >
     <p>
       <b>
@@ -83,7 +73,7 @@ exports[`tile s huge 1`] = `
     </p>
   </div>
   <div
-    className="css-text-901oao IS4"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
   >
     <span>
       Libby Purves
@@ -95,62 +85,52 @@ exports[`tile s huge 1`] = `
 exports[`tile s medium 1`] = `
 <style>
 .IS1 {
-  color: rgba(29,29,27,1.00);
+  color: #1D1D1B;
   font-family: TimesModern-Bold;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 20;
   margin-bottom: 5px;
+  line-height: 20px;
 }
 
 .IS2 {
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
+  align-items: center;
   margin-bottom: 5px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 
 .IS3 {
-  color: rgba(105,105,105,1.00);
+  color: #696969;
   font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
+  font-size: 14;
   line-height: 20px;
 }
 
 .IS4 {
-  color: rgba(105,105,105,1.00);
+  color: #696969;
   font-family: GillSansMTStd-Medium;
-  font-size: 12px;
+  font-size: 12;
   margin-top: 10px;
 }
 
 .IS5 {
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
+  padding: 15px;
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n IS5"
+  className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
   >
     <div
-      className="css-text-901oao IS1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
     >
       Nature notes
     </div>
   </div>
   <div
-    className="css-text-901oao IS3"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
   >
     <p>
       <b>
@@ -175,7 +155,7 @@ exports[`tile s medium 1`] = `
     </p>
   </div>
   <div
-    className="css-text-901oao IS4"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
   >
     <span>
       Libby Purves
@@ -187,23 +167,20 @@ exports[`tile s medium 1`] = `
 exports[`tile s no byline 1`] = `
 <style>
 .IS1 {
-  color: rgba(29,29,27,1.00);
+  color: #1D1D1B;
   font-family: TimesModern-Bold;
-  font-size: 22px;
+  font-size: 22;
   margin-bottom: 5px;
 }
 
 .IS2 {
-  -webkit-align-items: center;
   align-items: center;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
 }
 
 .IS3 {
-  color: rgba(105,105,105,1.00);
+  color: #696969;
   font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
+  font-size: 14;
   line-height: 20px;
 }
 
@@ -213,19 +190,19 @@ exports[`tile s no byline 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS4"
+  className="tc-view__TcView-nuazoi-0 fPjBcr IS4"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
   >
     <div
-      className="css-text-901oao IS1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
     >
       Nature notes
     </div>
   </div>
   <div
-    className="css-text-901oao IS3"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
   >
     <p>
       <b>
@@ -255,30 +232,27 @@ exports[`tile s no byline 1`] = `
 exports[`tile s small 1`] = `
 <style>
 .IS1 {
-  color: rgba(29,29,27,1.00);
+  color: #1D1D1B;
   font-family: TimesModern-Bold;
-  font-size: 22px;
+  font-size: 22;
   margin-bottom: 5px;
 }
 
 .IS2 {
-  -webkit-align-items: center;
   align-items: center;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
 }
 
 .IS3 {
-  color: rgba(105,105,105,1.00);
+  color: #696969;
   font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
+  font-size: 14;
   line-height: 20px;
 }
 
 .IS4 {
-  color: rgba(105,105,105,1.00);
+  color: #696969;
   font-family: GillSansMTStd-Medium;
-  font-size: 12px;
+  font-size: 12;
   margin-top: 10px;
 }
 
@@ -288,19 +262,19 @@ exports[`tile s small 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS5"
+  className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
   >
     <div
-      className="css-text-901oao IS1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
     >
       Nature notes
     </div>
   </div>
   <div
-    className="css-text-901oao IS3"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
   >
     <p>
       <b>
@@ -325,7 +299,7 @@ exports[`tile s small 1`] = `
     </p>
   </div>
   <div
-    className="css-text-901oao IS4"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
   >
     <span>
       Libby Purves
@@ -337,62 +311,52 @@ exports[`tile s small 1`] = `
 exports[`tile s wide 1`] = `
 <style>
 .IS1 {
-  color: rgba(29,29,27,1.00);
+  color: #1D1D1B;
   font-family: TimesModern-Bold;
-  font-size: 20px;
+  font-size: 20;
+  margin-bottom: 0;
   line-height: 20px;
-  margin-bottom: 0px;
 }
 
 .IS2 {
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
+  align-items: center;
   margin-bottom: 10px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 
 .IS3 {
-  color: rgba(105,105,105,1.00);
+  color: #696969;
   font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
+  font-size: 14;
   line-height: 20px;
 }
 
 .IS4 {
-  color: rgba(105,105,105,1.00);
+  color: #696969;
   font-family: GillSansMTStd-Medium;
-  font-size: 12px;
+  font-size: 12;
   margin-top: 10px;
 }
 
 .IS5 {
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
+  padding: 15px;
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n IS5"
+  className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
   >
     <div
-      className="css-text-901oao IS1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
     >
       Nature notes
     </div>
   </div>
   <div
-    className="css-text-901oao IS3"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
   >
     <p>
       <b>
@@ -417,7 +381,7 @@ exports[`tile s wide 1`] = `
     </p>
   </div>
   <div
-    className="css-text-901oao IS4"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
   >
     <span>
       Libby Purves
@@ -429,63 +393,53 @@ exports[`tile s wide 1`] = `
 exports[`tile s with logo for medium breakpoint 1`] = `
 <style>
 .IS1 {
-  color: rgba(29,29,27,1.00);
+  color: #1D1D1B;
   font-family: TimesModern-Bold;
-  font-size: 20px;
+  font-size: 20;
+  margin-bottom: 0;
   line-height: 20px;
-  margin-bottom: 0px;
 }
 
 .IS2 {
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
   flex-direction: row;
+  align-items: center;
   margin-bottom: 5px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 
 .IS3 {
-  color: rgba(105,105,105,1.00);
+  color: #696969;
   font-family: TimesDigitalW04-Regular;
-  font-size: 14px;
+  font-size: 14;
   line-height: 20px;
 }
 
 .IS4 {
-  color: rgba(105,105,105,1.00);
+  color: #696969;
   font-family: GillSansMTStd-Medium;
-  font-size: 12px;
+  font-size: 12;
   margin-top: 10px;
 }
 
 .IS5 {
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
+  padding: 15px;
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n IS5"
+  className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
   >
     LOGO
     <div
-      className="css-text-901oao IS1"
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
     >
       Nature notes
     </div>
   </div>
   <div
-    className="css-text-901oao IS3"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
   >
     <p>
       <b>
@@ -510,7 +464,7 @@ exports[`tile s with logo for medium breakpoint 1`] = `
     </p>
   </div>
   <div
-    className="css-text-901oao IS4"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
   >
     <span>
       Libby Purves

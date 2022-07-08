@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { getTileImage, TileLink, withTileTracking, TileImage } from "../shared";
 import styles from "./styles";
-import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileQ = ({ onPress, tile }) => {
   const crop = getTileImage(tile, "crop32");
@@ -28,7 +27,6 @@ const TileQ = ({ onPress, tile }) => {
         fill
         hasVideo={hasVideo}
       />
-      <PositionedTileStar articleId={tile.article.id} centeredStar />
     </TileLink>
   );
 };

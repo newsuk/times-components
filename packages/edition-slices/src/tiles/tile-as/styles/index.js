@@ -14,8 +14,10 @@ const headlineFontSize = {
 export default breakpoint => ({
   container: {
     flex: 1,
-    paddingVertical: spacing(2),
-    paddingHorizontal: spacing(2)
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2),
+    paddingBottom: spacing(2),
+    paddingTop: spacing(2)
   },
   headline: {
     ...globalSpacingStyles.tabletHeadline,

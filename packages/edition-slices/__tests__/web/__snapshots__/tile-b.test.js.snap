@@ -32,16 +32,7 @@ exports[`tile b huge 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 </style>
 
@@ -55,10 +46,10 @@ exports[`tile b huge 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -139,16 +130,7 @@ exports[`tile b medium 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 </style>
 
@@ -162,10 +144,10 @@ exports[`tile b medium 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -245,16 +227,7 @@ exports[`tile b small 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 </style>
 
@@ -269,10 +242,10 @@ exports[`tile b small 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -353,16 +326,7 @@ exports[`tile b wide 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 </style>
 
@@ -376,10 +340,10 @@ exports[`tile b wide 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -460,16 +424,7 @@ exports[`tile b with more teaser 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 </style>
 
@@ -483,10 +438,10 @@ exports[`tile b with more teaser 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -566,16 +521,7 @@ exports[`tile b without breakpoint should be like small 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 </style>
 
@@ -590,10 +536,10 @@ exports[`tile b without breakpoint should be like small 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"

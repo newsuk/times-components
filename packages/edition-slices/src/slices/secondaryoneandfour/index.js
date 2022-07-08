@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { SectionContext } from "@times-components/context";
 import { TheSTLogo, TheTimesLogo } from "@times-components/icons";
@@ -28,14 +28,14 @@ class SecondaryOneAndFour extends Component {
     return (
       <SectionContext.Consumer>
         {({ publicationName }) => (
-          <View style={styles.container}>
-            <View style={styles.logoContainer}>
+          <TcView style={styles.container}>
+            <TcView style={styles.logoContainer}>
               {publicationName === "TIMES" ? (
                 <TheTimesLogo height={37} width={35} />
               ) : (
                 <TheSTLogo height={40} width={60} />
               )}
-            </View>
+            </TcView>
             <ItemRowSeparator style={styles.separator} />
             <SecondaryOneAndFourSlice
               breakpoint={breakpoint}
@@ -80,7 +80,7 @@ class SecondaryOneAndFour extends Component {
                 />
               }
             />
-          </View>
+          </TcView>
         )}
       </SectionContext.Consumer>
     );

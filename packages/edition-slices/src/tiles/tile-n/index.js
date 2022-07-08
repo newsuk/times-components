@@ -1,6 +1,6 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { colours, editionBreakpoints } from "@times-components/ts-styleguide";
 import {
@@ -12,14 +12,8 @@ import {
   withTileTracking
 } from "../shared";
 import styleFactory from "./styles";
-import PositionedTileStar from "../shared/positioned-tile-star";
 
-const TileN = ({
-  isDarkStar,
-  onPress,
-  tile,
-  breakpoint = editionBreakpoints.small
-}) => {
+const TileN = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const styles = styleFactory(breakpoint);
   const crop = getTileImage(tile, "crop11");
   const strapline =
@@ -35,7 +29,7 @@ const TileN = ({
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <View style={styles.content}>
+      <TcView style={styles.content}>
         <TileImage
           aspectRatio={1}
           relativeWidth={crop.relativeWidth}
@@ -55,28 +49,16 @@ const TileN = ({
           straplineStyle={styles.strapline}
           style={styles.summaryContainer}
           tile={tile}
-          withStar={breakpoint === editionBreakpoints.huge}
         />
-      </View>
-      {breakpoint !== editionBreakpoints.huge ? (
-        <PositionedTileStar
-          articleId={tile.article.id}
-          isDarkStar={isDarkStar}
-        />
-      ) : null}
+      </TcView>
     </TileLink>
   );
 };
 
 TileN.propTypes = {
-  isDarkStar: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
   breakpoint: PropTypes.string,
   tile: PropTypes.shape({}).isRequired
-};
-
-TileN.defaultProps = {
-  isDarkStar: true
 };
 
 export default withTileTracking(TileN);

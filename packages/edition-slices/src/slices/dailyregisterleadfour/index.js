@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { TcView, TcText, checkStylesForUnits } from "@times-components/utils";
 import PropTypes from "prop-types";
 import {
   ItemRowSeparator,
@@ -24,14 +24,16 @@ class DailyRegisterLeadFour extends Component {
     const styles = styleFactory(breakpoint);
 
     return (
-      <View style={styles.container}>
+      <TcView style={styles.container}>
         <Logo
           imageUri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
           ratio={1}
           style={styles.mastheadLogo}
           type="logo"
         />
-        <Text style={styles.title}>Daily Universal Register</Text>
+        <TcText style={checkStylesForUnits(styles.title)}>
+          Daily Universal Register
+        </TcText>
         <TileS tile={briefing} breakpoint={breakpoint} />
         <ItemRowSeparator style={styles.separator} />
         <TileS tile={onThisDay} breakpoint={breakpoint} />
@@ -51,7 +53,7 @@ class DailyRegisterLeadFour extends Component {
           type="birthdays"
         />
         <TileS tile={birthdaysToday} breakpoint={breakpoint} />
-      </View>
+      </TcView>
     );
   }
 
@@ -80,16 +82,18 @@ class DailyRegisterLeadFour extends Component {
     );
 
     return (
-      <View style={styles.container}>
+      <TcView style={styles.container}>
         <Logo
           imageUri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
           ratio={1}
           style={styles.mastheadLogo}
           type="logo"
         />
-        <Text style={styles.title}>Daily Universal Register</Text>
-        <View style={styles.itemsContainer}>
-          <View style={styles.column}>
+        <TcText style={checkStylesForUnits(styles.title)}>
+          Daily Universal Register
+        </TcText>
+        <TcView style={styles.itemsContainer}>
+          <TcView style={styles.column}>
             <TileS tile={briefing} breakpoint={breakpoint} />
             <ItemRowSeparator style={styles.rowSeparator} />
             <TileS
@@ -97,9 +101,9 @@ class DailyRegisterLeadFour extends Component {
               breakpoint={breakpoint}
               logo={natureLogo}
             />
-          </View>
+          </TcView>
           <ItemColSeparator style={styles.colSeparator} />
-          <View style={styles.column}>
+          <TcView style={styles.column}>
             <TileS tile={onThisDay} breakpoint={breakpoint} />
             <ItemRowSeparator style={styles.rowSeparator} />
             <TileS
@@ -107,9 +111,9 @@ class DailyRegisterLeadFour extends Component {
               breakpoint={breakpoint}
               logo={birthdayLogo}
             />
-          </View>
-        </View>
-      </View>
+          </TcView>
+        </TcView>
+      </TcView>
     );
   }
 

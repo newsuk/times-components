@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
 import { ArticleSummaryHeadline } from "@times-components/article-summary";
@@ -23,9 +23,9 @@ const TileAJ = ({ id, image, onPress, title, url }) => {
       url={url}
       withStar={false}
     >
-      <View style={header}>
+      <TcView style={header}>
         <ArticleSummaryHeadline headline={title} style={headline} />
-      </View>
+      </TcView>
       <TileImage
         aspectRatio={3 / 2}
         disablePlaceholder

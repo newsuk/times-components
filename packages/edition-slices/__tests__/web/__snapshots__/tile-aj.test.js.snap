@@ -12,8 +12,8 @@ exports[`tile aj without breakpoint 1`] = `
 }
 
 .IS2 {
-  padding-right: 15px;
   padding-left: 15px;
+  padding-right: 15px;
   padding-top: 15px;
   width: 85%;
 }
@@ -36,7 +36,7 @@ exports[`tile aj without breakpoint 1`] = `
   withStar={false}
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
   >
     <div
       aria-level="3"

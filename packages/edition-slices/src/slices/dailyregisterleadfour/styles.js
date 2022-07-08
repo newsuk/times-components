@@ -19,11 +19,13 @@ const smallBreakpointStyles = {
   mastheadLogo: {
     width: 285,
     height: 73,
-    marginVertical: spacing(2)
+    marginTop: spacing(2),
+    marginBottom: spacing(2)
   },
   separator: {
     borderBottomColor: colours.functional.keyline,
-    marginVertical: spacing(5),
+    marginTop: spacing(5),
+    marginBottom: spacing(5),
     width: "100%"
   },
   title: {
@@ -37,8 +39,10 @@ const smallBreakpointStyles = {
 const mediumBreakpointStyles = {
   container: {
     ...smallBreakpointStyles.container,
-    marginHorizontal: spacing(6),
-    marginVertical: spacing(3),
+    marginLeft: spacing(6),
+    marginRight: spacing(6),
+    marginTop: spacing(3),
+    marginBottom: spacing(3),
     padding: spacing(3)
   },
   column: {
@@ -49,10 +53,12 @@ const mediumBreakpointStyles = {
     flexDirection: "row"
   },
   colSeparator: {
-    marginVertical: spacing(3)
+    marginTop: spacing(3),
+    marginBottom: spacing(3)
   },
   rowSeparator: {
-    marginHorizontal: spacing(3)
+    marginLeft: spacing(3),
+    marginRight: spacing(3)
   },
   mastheadLogo: {
     width: 237,
@@ -77,7 +83,8 @@ const wideBreakpointStyle = {
   ...mediumBreakpointStyles,
   container: {
     ...mediumBreakpointStyles.container,
-    marginHorizontal: spacing(4)
+    marginLeft: spacing(4),
+    marginRight: spacing(4)
   },
   imageWrapper: {
     ...mediumBreakpointStyles.imageWrapper,

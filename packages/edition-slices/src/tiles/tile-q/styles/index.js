@@ -2,7 +2,8 @@ import { spacing } from "@times-components/ts-styleguide";
 
 const styles = {
   container: {
-    paddingVertical: spacing(2)
+    paddingBottom: spacing(2),
+    paddingTop: spacing(2)
   },
   imageContainer: {
     marginBottom: spacing(2),

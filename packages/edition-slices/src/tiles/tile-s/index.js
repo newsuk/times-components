@@ -1,6 +1,6 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
-import { View, Text } from "react-native";
+import { TcView, TcText, checkStylesForUnits } from "@times-components/utils";
 import PropTypes from "prop-types";
 import coreRenderers from "@times-components/markup";
 import renderTrees from "@times-components/markup-forest";
@@ -27,17 +27,23 @@ const TileS = ({
       : styles.title;
 
   return (
-    <View style={styles.container}>
-      <View style={styles.titleWrapper}>
+    <TcView style={styles.container}>
+      <TcView style={styles.titleWrapper}>
         {logo}
-        <Text style={headLineStyles}>{tile.title}</Text>
-      </View>
-      <Text style={styles.paragraph}>{renderAst(tile.content)}</Text>
+        <TcText style={checkStylesForUnits(headLineStyles)}>
+          {tile.title}
+        </TcText>
+      </TcView>
+      <TcText style={checkStylesForUnits(styles.paragraph)}>
+        {renderAst(tile.content)}
+      </TcText>
       {tile.byline &&
         tile.byline.length > 0 && (
-          <Text style={styles.byline}>{renderAst(tile.byline)}</Text>
+          <TcText style={checkStylesForUnits(styles.byline)}>
+            {renderAst(tile.byline)}
+          </TcText>
         )}
-    </View>
+    </TcView>
   );
 };
 

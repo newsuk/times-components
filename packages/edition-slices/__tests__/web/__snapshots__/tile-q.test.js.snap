@@ -11,7 +11,8 @@ exports[`tile q without breakpoint 1`] = `
 <Link
   linkStyle={
     Object {
-      "paddingVertical": "10px",
+      "paddingBottom": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"

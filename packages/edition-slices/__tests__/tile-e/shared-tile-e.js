@@ -1,4 +1,3 @@
-import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -6,8 +5,7 @@ import {
   minimaliseTransform,
   minimalWebTransform,
   hoistStyleTransform,
-  stylePrinter,
-  rnwTransform
+  stylePrinter
 } from "@times-components/jest-serializer";
 import shared from "./shared-tile-e.base";
 
@@ -19,16 +17,7 @@ export default () => {
       stylePrinter,
       hoistStyleTransform,
       minimalWebTransform,
-      minimaliseTransform((value, key) => key === "style"),
-      rnwTransform(AppRegistry, [
-        "color",
-        "flexWrap",
-        "fontFamily",
-        "fontSize",
-        "fontWeight",
-        "lineHeight",
-        "marginBottom"
-      ])
+      minimaliseTransform((value, key) => key === "style")
     )
   );
 

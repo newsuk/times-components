@@ -37,16 +37,7 @@ exports[`tile am without breakpoint 1`] = `
 }
 
 .IS6 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 </style>
 
@@ -66,10 +57,10 @@ exports[`tile am without breakpoint 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"

@@ -34,7 +34,8 @@ const smallBreakpointStyles = breakpoint => ({
   ...sharedStyles,
   container: {
     ...sharedStyles.container,
-    paddingHorizontal: 12,
+    paddingLeft: 12,
+    paddingRight: 12,
     marginRight: spacing(1)
   },
   headlineStyle: {

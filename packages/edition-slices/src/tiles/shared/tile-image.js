@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { PlayIcon } from "@times-components/video";
 import Image from "@times-components/image";
 import { playIconStyles } from "./styles";
@@ -10,12 +10,12 @@ const TileImage = ({ hasVideo, style, ...props }) => {
   }
 
   return (
-    <View style={style}>
+    <TcView style={style}>
       <Image {...props} />
-      <View style={playIconStyles}>
+      <TcView style={playIconStyles}>
         <PlayIcon />
-      </View>
-    </View>
+      </TcView>
+    </TcView>
   );
 };
 

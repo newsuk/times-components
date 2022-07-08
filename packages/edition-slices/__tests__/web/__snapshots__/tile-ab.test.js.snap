@@ -32,30 +32,12 @@ exports[`tile ab huge 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 
 .IS6 {
-  -webkit-flex-grow: 0.74;
-  flex-grow: 0.74;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
+  flex: 0.74;
   padding-right: 20px;
-  -ms-flex-positive: 0.74;
-  -webkit-box-flex: 0.74;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
 }
 
 .IS7 {
@@ -68,20 +50,22 @@ exports[`tile ab huge 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "paddingHorizontal": "10px",
-      "paddingVertical": "15px",
+      "paddingBottom": "15px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n IS5"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
       >
         <div
           className="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -169,30 +153,12 @@ exports[`tile ab medium 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 
 .IS6 {
-  -webkit-flex-grow: 0.56;
-  flex-grow: 0.56;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
+  flex: 0.56;
   padding-right: 20px;
-  -ms-flex-positive: 0.56;
-  -webkit-box-flex: 0.56;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
 }
 
 .IS7 {
@@ -205,20 +171,22 @@ exports[`tile ab medium 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "paddingHorizontal": "10px",
-      "paddingVertical": "15px",
+      "paddingBottom": "15px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n IS5"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
       >
         <div
           className="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -306,30 +274,12 @@ exports[`tile ab wide 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 
 .IS6 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
+  flex: 1;
   padding-right: 20px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
 }
 
 .IS7 {
@@ -342,20 +292,22 @@ exports[`tile ab wide 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "paddingHorizontal": "10px",
-      "paddingVertical": "15px",
+      "paddingBottom": "15px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n IS5"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
       >
         <div
           className="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -443,30 +395,12 @@ exports[`tile ab without breakpoint should be like medium 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 
 .IS6 {
-  -webkit-flex-grow: 0.56;
-  flex-grow: 0.56;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
+  flex: 0.56;
   padding-right: 20px;
-  -ms-flex-positive: 0.56;
-  -webkit-box-flex: 0.56;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
 }
 
 .IS7 {
@@ -479,20 +413,22 @@ exports[`tile ab without breakpoint should be like medium 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "paddingHorizontal": "10px",
-      "paddingVertical": "15px",
+      "paddingBottom": "15px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n IS5"
+      className="tc-view__TcView-nuazoi-0 fPjBcr IS5"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
       >
         <div
           className="tc-view__TcView-nuazoi-0 fPjBcr"

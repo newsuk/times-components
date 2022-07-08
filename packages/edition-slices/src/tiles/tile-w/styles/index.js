@@ -8,9 +8,12 @@ const mediumBreakpointStyles = {
   container: {
     flex: 1,
     flexDirection: "row",
-    marginHorizontal: spacing(4),
-    paddingHorizontal: spacing(2),
-    paddingVertical: spacing(3)
+    marginLeft: spacing(4),
+    marginRight: spacing(4),
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2),
+    paddingBottom: spacing(3),
+    paddingTop: spacing(3)
   },
   headline: {
     ...globalSpacingStyles.tabletHeadline,
@@ -34,7 +37,8 @@ const wideBreakpointStyles = {
   ...mediumBreakpointStyles,
   container: {
     ...mediumBreakpointStyles.container,
-    marginHorizontal: spacing(2)
+    marginLeft: spacing(2),
+    marginRight: spacing(2)
   },
   headline: {
     ...mediumBreakpointStyles.headline,

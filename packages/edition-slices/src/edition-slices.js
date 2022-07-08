@@ -1,6 +1,5 @@
 import { getDimensions } from "@times-components/utils";
 import { tabletWidth } from "@times-components/ts-styleguide";
-import { NativeModules } from "react-native";
 import {
   CommentLeadAndCartoonSlice,
   DailyRegisterLeadFourSlice,
@@ -20,12 +19,8 @@ import {
   PuzzleSlice
 } from "./slices";
 
-const config = (NativeModules || {}).ReactConfig;
-
 const { width } = getDimensions();
-const isTablet =
-  (config && config.breakpoint && config.breakpoint !== "small") ||
-  width > tabletWidth;
+const isTablet = width > tabletWidth;
 const SecondaryTwoAndTwoMapper = isTablet
   ? SecondaryTwoNoPicAndTwoSlice
   : SecondaryTwoAndTwoSlice;

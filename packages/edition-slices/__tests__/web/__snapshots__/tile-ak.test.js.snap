@@ -12,10 +12,10 @@ exports[`tile ak huge 1`] = `
 }
 
 .IS2 {
-  height: 80px;
-  padding-right: 10px;
   padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
+  height: 80;
 }
 
 .IS3 {
@@ -31,7 +31,8 @@ exports[`tile ak huge 1`] = `
       "backgroundColor": "#F0F0F0",
       "flex": 1,
       "height": 243,
-      "marginHorizontal": "10px",
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "overflow": "hidden",
     }
   }
@@ -39,7 +40,7 @@ exports[`tile ak huge 1`] = `
   withStar={false}
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
   >
     <div
       aria-level="3"
@@ -71,10 +72,10 @@ exports[`tile ak medium 1`] = `
 }
 
 .IS2 {
-  height: 80px;
-  padding-right: 10px;
   padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
+  height: 80;
 }
 
 .IS3 {
@@ -90,7 +91,8 @@ exports[`tile ak medium 1`] = `
       "backgroundColor": "#F0F0F0",
       "flex": 1,
       "height": 143,
-      "marginHorizontal": "10px",
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "overflow": "hidden",
     }
   }
@@ -98,7 +100,7 @@ exports[`tile ak medium 1`] = `
   withStar={false}
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
   >
     <div
       aria-level="3"
@@ -130,10 +132,10 @@ exports[`tile ak wide 1`] = `
 }
 
 .IS2 {
-  height: 80px;
-  padding-right: 10px;
   padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
+  height: 80;
 }
 
 .IS3 {
@@ -149,7 +151,8 @@ exports[`tile ak wide 1`] = `
       "backgroundColor": "#F0F0F0",
       "flex": 1,
       "height": 195,
-      "marginHorizontal": "10px",
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "overflow": "hidden",
     }
   }
@@ -157,7 +160,7 @@ exports[`tile ak wide 1`] = `
   withStar={false}
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
   >
     <div
       aria-level="3"
@@ -189,10 +192,10 @@ exports[`tile ak without breakpoint should be like medium 1`] = `
 }
 
 .IS2 {
-  height: 80px;
-  padding-right: 10px;
   padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
+  height: 80;
 }
 
 .IS3 {
@@ -208,7 +211,8 @@ exports[`tile ak without breakpoint should be like medium 1`] = `
       "backgroundColor": "#F0F0F0",
       "flex": 1,
       "height": 143,
-      "marginHorizontal": "10px",
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "overflow": "hidden",
     }
   }
@@ -216,7 +220,7 @@ exports[`tile ak without breakpoint should be like medium 1`] = `
   withStar={false}
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
   >
     <div
       aria-level="3"

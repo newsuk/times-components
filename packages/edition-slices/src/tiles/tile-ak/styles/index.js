@@ -18,7 +18,8 @@ const containerHeightResolver = {
 
 const styles = breakpoint => ({
   header: {
-    paddingHorizontal: spacing(2),
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2),
     paddingTop: spacing(2),
     height: 80
   },
@@ -34,7 +35,8 @@ const styles = breakpoint => ({
   puzzleContainer: {
     backgroundColor: colours.functional.border,
     flex: 1,
-    marginHorizontal: spacing(2),
+    marginLeft: spacing(2),
+    marginRight: spacing(2),
     height: containerHeightResolver[breakpoint],
     overflow: "hidden"
   }

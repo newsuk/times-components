@@ -25,8 +25,10 @@ exports[`tile ac huge 1`] = `
   align-items: center;
   justify-content: center;
   background-color: #F0F0F0;
-  padding-horizontal: 20px;
-  padding-vertical: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 </style>
 
@@ -104,8 +106,10 @@ exports[`tile ac medium 1`] = `
   align-items: center;
   justify-content: center;
   background-color: #F0F0F0;
-  padding-horizontal: 20px;
-  padding-vertical: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 </style>
 
@@ -183,8 +187,10 @@ exports[`tile ac wide 1`] = `
   align-items: center;
   justify-content: center;
   background-color: #F0F0F0;
-  padding-horizontal: 20px;
-  padding-vertical: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 </style>
 
@@ -262,8 +268,10 @@ exports[`tile ac without breakpoint should be like medium 1`] = `
   align-items: center;
   justify-content: center;
   background-color: #F0F0F0;
-  padding-horizontal: 20px;
-  padding-vertical: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 </style>
 

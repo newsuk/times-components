@@ -159,7 +159,8 @@ exports[`tile n small 1`] = `
       "flex": 1,
       "marginRight": "5px",
       "padding": "10px",
-      "paddingHorizontal": 12,
+      "paddingLeft": 12,
+      "paddingRight": 12,
     }
   }
   url="/article/123"
@@ -292,7 +293,8 @@ exports[`tile n with default star 1`] = `
       "flex": 1,
       "marginRight": "5px",
       "padding": "10px",
-      "paddingHorizontal": 12,
+      "paddingLeft": 12,
+      "paddingRight": 12,
     }
   }
   url="/article/123"

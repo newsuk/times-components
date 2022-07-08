@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView } from "react-native";
+import { TcView } from "@times-components/utils";
 import { mockPuzzleSlice } from "@times-components/fixture-generator";
 
 import { TileAJ, TileAK } from "./src/tiles";
@@ -18,7 +18,7 @@ const renderTile = (Tile, { id, image, title, url }) => (
   _,
   { decorateAction }
 ) => (
-  <ScrollView>
+  <TcView>
     <Tile
       id={id}
       image={image}
@@ -26,7 +26,7 @@ const renderTile = (Tile, { id, image, title, url }) => (
       title={title}
       url={url}
     />
-  </ScrollView>
+  </TcView>
 );
 
 const tileStories = [

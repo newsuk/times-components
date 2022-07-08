@@ -1,6 +1,6 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { editionBreakpoints } from "@times-components/ts-styleguide";
 import {
@@ -13,7 +13,6 @@ import {
 } from "../shared";
 import stylesResolver from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
-import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileAR = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
   const crop = getTileImage(tile, "crop169");
@@ -29,7 +28,7 @@ const TileAR = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <View style={styles.imageContainer}>
+      <TcView style={styles.imageContainer}>
         <TileImage
           aspectRatio={16 / 9}
           uri={crop.url}
@@ -40,7 +39,7 @@ const TileAR = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
           relativeVerticalOffset={crop.relativeVerticalOffset}
           hasVideo={hasVideo}
         />
-      </View>
+      </TcView>
       <WithoutWhiteSpace
         render={whiteSpaceHeight => (
           <TileSummary
@@ -53,7 +52,6 @@ const TileAR = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
           />
         )}
       />
-      <PositionedTileStar articleId={tile.article.id} />
     </TileLink>
   );
 };

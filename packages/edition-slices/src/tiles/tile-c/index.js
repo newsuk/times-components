@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import {
   getTileImage,
@@ -23,7 +23,7 @@ const TileC = ({ onPress, tile }) => {
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <View style={styles.imageContainer}>
+      <TcView style={styles.imageContainer}>
         <TileImage
           aspectRatio={16 / 9}
           uri={crop.url}
@@ -34,7 +34,7 @@ const TileC = ({ onPress, tile }) => {
           relativeVerticalOffset={crop.relativeVerticalOffset}
           hasVideo={hasVideo}
         />
-      </View>
+      </TcView>
       <TileSummary
         headlineStyle={styles.headline}
         tile={tile}

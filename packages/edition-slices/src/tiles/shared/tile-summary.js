@@ -8,7 +8,6 @@ import ArticleSummary, {
 import { ArticleFlags } from "@times-components/ts-components";
 import { colours } from "@times-components/ts-styleguide";
 import { ResponsiveContext } from "@times-components/responsive";
-import PositionedTileStar from "./positioned-tile-star";
 
 class TileSummary extends Component {
   constructor(props) {
@@ -56,28 +55,6 @@ class TileSummary extends Component {
     );
   }
 
-  renderSaveStar() {
-    const {
-      tile: {
-        article: { id }
-      },
-      underneathTextStar,
-      centeredStar,
-      isDarkStar,
-      starStyle
-    } = this.props;
-
-    return (
-      <PositionedTileStar
-        articleId={id}
-        isDarkStar={isDarkStar}
-        centeredStar={centeredStar}
-        underneathTextStar={underneathTextStar}
-        style={starStyle}
-      />
-    );
-  }
-
   renderHeadline() {
     const {
       tile: {
@@ -113,7 +90,6 @@ class TileSummary extends Component {
       strapline,
       style,
       summary,
-      withStar,
       labelColour
     } = this.props;
     return (
@@ -133,7 +109,6 @@ class TileSummary extends Component {
               title: label
             }}
             strapline={strapline ? this.renderStrapline() : undefined}
-            saveStar={withStar && this.renderSaveStar()}
             style={style}
             isTablet={isTablet}
           />

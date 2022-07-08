@@ -45,14 +45,16 @@ exports[`tile as huge 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingVertical": "10px",
+      "paddingBottom": "10px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS1"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
   >
     <Image
       aspectRatio={1.5}
@@ -150,14 +152,16 @@ exports[`tile as medium 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingVertical": "10px",
+      "paddingBottom": "10px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS1"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
   >
     <Image
       aspectRatio={1.5}
@@ -255,14 +259,16 @@ exports[`tile as wide 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingVertical": "10px",
+      "paddingBottom": "10px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS1"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
   >
     <Image
       aspectRatio={1.5}

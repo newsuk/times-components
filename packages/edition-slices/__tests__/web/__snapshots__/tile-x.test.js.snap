@@ -41,16 +41,7 @@ exports[`tile x huge 1`] = `
 }
 
 .IS6 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 </style>
 
@@ -65,10 +56,10 @@ exports[`tile x huge 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -165,16 +156,7 @@ exports[`tile x medium 1`] = `
 }
 
 .IS6 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 </style>
 
@@ -189,10 +171,10 @@ exports[`tile x medium 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -289,16 +271,7 @@ exports[`tile x wide 1`] = `
 }
 
 .IS6 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  flex: 1;
 }
 </style>
 
@@ -313,10 +286,10 @@ exports[`tile x wide 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="tc-view__TcView-nuazoi-0 fPjBcr IS6"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
     >
       <div
         className="tc-view__TcView-nuazoi-0 fPjBcr"

@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView } from "react-native";
+import { TcView } from "@times-components/utils";
 import Responsive from "@times-components/responsive";
 import { getPuzzleSlices } from "@times-components/fixture-generator";
 import { PuzzleSlice } from "./src/slices";
@@ -15,12 +15,12 @@ const preventDefaultedAction = decorateAction =>
 /* eslint-disable react/prop-types */
 const renderSlice = (Component, data) => (_, { decorateAction }) => (
   <Responsive>
-    <ScrollView>
+    <TcView>
       <Component
         onPress={preventDefaultedAction(decorateAction)("onPress")}
         slice={data}
       />
-    </ScrollView>
+    </TcView>
   </Responsive>
 );
 
