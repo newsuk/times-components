@@ -51,7 +51,7 @@ exports[`1. default image 1`] = `
       top={0}
       zIndex={0}
     >
-      <Svg
+      <svg
         maxHeight="50%"
         maxWidth="25%"
       >
@@ -115,7 +115,7 @@ exports[`2. default modal 1`] = `
       top={0}
       zIndex={0}
     >
-      <Svg
+      <svg
         maxHeight="50%"
         maxWidth="25%"
       >
