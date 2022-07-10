@@ -86,6 +86,217 @@ exports[`1. card loading state 1`] = `
   min-height: 84px;
 }
 
+<style>
+.IS1 {
+  max-width: 25%;
+  max-height: 50%;
+}
+
+.IS2 {
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
+}
+
+.IS3 {
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
+}
+
+.IS4 {
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
+}
+
+.IS5 {
+  padding-bottom: 150%;
+}
+
+.IS6 {
+  flex: 1;
+  max-width: 320;
+}
+
+.IS7 {
+  flex: 1;
+  max-width: 320;
+}
+
+.IS8 {
+  flex: 1;
+  max-width: 320;
+}
+
+.IS9 {
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
+}
+
+.IS10 {
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
+}
+
+.IS11 {
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
+}
+
+.IS12 {
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
+}
+
+.IS13 {
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
+}
+
+.IS14 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS15 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS16 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS17 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS18 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS19 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS20 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS21 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS22 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS23 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS24 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS25 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS26 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS27 {
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS28 {
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS29 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.IS30 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.IS31 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+</style>
+
 <Animations__FadeIn>
   <StyledComponent
     forwardedComponent={
@@ -93,7 +304,7 @@ exports[`1. card loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-je5757-0",
+          "componentId": "Animations__FadeIn-w31u4-0",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -128,10 +339,10 @@ exports[`1. card loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-o5ytee-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-je5757-0",
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -144,17 +355,10 @@ exports[`1. card loading state 1`] = `
       className="c0"
     >
       <tc-view__TcView
-        alignItems="flex-start"
-        display="flex"
-        flexDirection="row"
-        flexWrap="wrap"
-        justifyContent="flex-end"
+        className="IS31"
       >
         <StyledComponent
-          alignItems="flex-start"
-          display="flex"
-          flexDirection="row"
-          flexWrap="wrap"
+          className="IS30"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -178,24 +382,15 @@ exports[`1. card loading state 1`] = `
             }
           }
           forwardedRef={null}
-          justifyContent="flex-end"
         >
           <div
-            alignItems="flex-start"
-            className="c1"
-            display="flex"
-            flexDirection="row"
-            flexWrap="wrap"
-            justifyContent="flex-end"
+            className="c1 IS29"
           >
             <tc-view__TcView
-              className=""
-              flex={1}
-              maxWidth={320}
+              className="IS8"
             >
               <StyledComponent
-                className=""
-                flex={1}
+                className="IS7"
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -219,12 +414,9 @@ exports[`1. card loading state 1`] = `
                   }
                 }
                 forwardedRef={null}
-                maxWidth={320}
               >
                 <div
-                  className="c1"
-                  flex={1}
-                  maxWidth={320}
+                  className="c1 IS6"
                 >
                   <TimesImage
                     aspectRatio={0.6666666666666666}
@@ -293,33 +485,27 @@ exports[`1. card loading state 1`] = `
                 >
                   <_default>
                     <Gradient
+                      className="IS13"
                       degrees={264}
                       endPoint="1"
-                      height={24}
-                      marginBottom="10px"
-                      maxWidth={300}
                       startPoint="0"
                     />
                     <Gradient
+                      className="IS18"
                       degrees={267}
                       endPoint="1"
-                      height={10}
-                      marginBottom="10px"
                       startPoint="0"
                     />
                     <Gradient
+                      className="IS23"
                       degrees={267}
                       endPoint="1"
-                      height={10}
-                      marginBottom="10px"
                       startPoint="0"
                     />
                     <Gradient
+                      className="IS28"
                       degrees={267}
                       endPoint="1"
-                      height={10}
-                      marginBottom={0}
-                      maxWidth={240}
                       startPoint="0"
                     />
                   </_default>
@@ -420,6 +606,223 @@ exports[`2. card with reversed loading state 1`] = `
   min-height: 84px;
 }
 
+<style>
+.IS1 {
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
+}
+
+.IS2 {
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
+}
+
+.IS3 {
+  background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
+}
+
+.IS4 {
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
+}
+
+.IS5 {
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
+}
+
+.IS6 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS7 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS8 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS9 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS10 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS11 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS12 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS13 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS14 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS15 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS16 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS17 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS18 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS19 {
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS20 {
+  height: 10;
+  margin-bottom: 0;
+  max-width: 240;
+}
+
+.IS21 {
+  max-width: 25%;
+  max-height: 50%;
+}
+
+.IS22 {
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
+}
+
+.IS23 {
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
+}
+
+.IS24 {
+  align-items: center;
+  background-color: #EDEDED;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
+  border-radius: 0;
+}
+
+.IS25 {
+  padding-bottom: 150%;
+}
+
+.IS26 {
+  flex: 1;
+  max-width: 320;
+  margin-bottom: 0;
+}
+
+.IS27 {
+  flex: 1;
+  max-width: 320;
+  margin-bottom: 0;
+}
+
+.IS28 {
+  flex: 1;
+  max-width: 320;
+  margin-bottom: 0;
+}
+
+.IS29 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: auto;
+}
+
+.IS30 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: auto;
+}
+
+.IS31 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: auto;
+}
+</style>
+
 <Animations__FadeIn>
   <StyledComponent
     forwardedComponent={
@@ -427,7 +830,7 @@ exports[`2. card with reversed loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-je5757-0",
+          "componentId": "Animations__FadeIn-w31u4-0",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -462,10 +865,10 @@ exports[`2. card with reversed loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-o5ytee-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-je5757-0",
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -478,18 +881,10 @@ exports[`2. card with reversed loading state 1`] = `
       className="c0"
     >
       <tc-view__TcView
-        alignItems="flex-start"
-        display="flex"
-        flexDirection="row"
-        flexWrap="wrap"
-        height="auto"
-        justifyContent="flex-end"
+        className="IS31"
       >
         <StyledComponent
-          alignItems="flex-start"
-          display="flex"
-          flexDirection="row"
-          flexWrap="wrap"
+          className="IS30"
           forwardedComponent={
             Object {
               "$$typeof": Symbol(react.forward_ref),
@@ -513,17 +908,9 @@ exports[`2. card with reversed loading state 1`] = `
             }
           }
           forwardedRef={null}
-          height="auto"
-          justifyContent="flex-end"
         >
           <div
-            alignItems="flex-start"
-            className="c1"
-            display="flex"
-            flexDirection="row"
-            flexWrap="wrap"
-            height="auto"
-            justifyContent="flex-end"
+            className="c1 IS29"
           >
             <card-content__TcCardContainer
               className=""
@@ -579,33 +966,27 @@ exports[`2. card with reversed loading state 1`] = `
                 >
                   <_default>
                     <Gradient
+                      className="IS5"
                       degrees={264}
                       endPoint="1"
-                      height={24}
-                      marginBottom="10px"
-                      maxWidth={300}
                       startPoint="0"
                     />
                     <Gradient
+                      className="IS10"
                       degrees={267}
                       endPoint="1"
-                      height={10}
-                      marginBottom="10px"
                       startPoint="0"
                     />
                     <Gradient
+                      className="IS15"
                       degrees={267}
                       endPoint="1"
-                      height={10}
-                      marginBottom="10px"
                       startPoint="0"
                     />
                     <Gradient
+                      className="IS20"
                       degrees={267}
                       endPoint="1"
-                      height={10}
-                      marginBottom={0}
-                      maxWidth={240}
                       startPoint="0"
                     />
                   </_default>
@@ -613,14 +994,10 @@ exports[`2. card with reversed loading state 1`] = `
               </StyledComponent>
             </card-content__TcCardContainer>
             <tc-view__TcView
-              className=""
-              flex={1}
-              marginBottom={0}
-              maxWidth={320}
+              className="IS28"
             >
               <StyledComponent
-                className=""
-                flex={1}
+                className="IS27"
                 forwardedComponent={
                   Object {
                     "$$typeof": Symbol(react.forward_ref),
@@ -644,14 +1021,9 @@ exports[`2. card with reversed loading state 1`] = `
                   }
                 }
                 forwardedRef={null}
-                marginBottom={0}
-                maxWidth={320}
               >
                 <div
-                  className="c1"
-                  flex={1}
-                  marginBottom={0}
-                  maxWidth={320}
+                  className="c1 IS26"
                 >
                   <TimesImage
                     aspectRatio={0.6666666666666666}
