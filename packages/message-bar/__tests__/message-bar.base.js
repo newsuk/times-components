@@ -4,7 +4,7 @@ import { scales } from "@times-components/ts-styleguide";
 import { delay } from "@times-components/test-utils";
 import { shallow } from "enzyme";
 import TestRenderer from "react-test-renderer";
-import MessageBar from "../src/message-bar";
+import MessageBar, { CloseButton } from "../src/message-bar";
 
 export default animate => [
   {
@@ -31,16 +31,15 @@ export default animate => [
       const testInstance = shallow(
         <MessageBar
           close={closed}
-          delay={1}
+          delay={10000}
           message="test message"
           scale={scales.medium}
         />
       );
-
-      const button = testInstance.find(TouchableOpacity);
-      button.simulate("press");
-      await delay(10);
-      expect(closed).toBeCalled();
+      const button = testInstance.find(CloseButton);
+      button.simulate("click");
+      await delay(300);
+      expect(closed.mock.calls.length).toEqual(1);
     }
   },
   {
