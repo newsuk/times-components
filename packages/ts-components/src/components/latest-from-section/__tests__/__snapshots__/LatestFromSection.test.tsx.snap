@@ -3,18 +3,16 @@
 exports[`<LatestFromSection> no data  1`] = `
 <DocumentFragment>
   <div
-    class="css-view-1dbjc4n"
+    class="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
-      class="css-view-1dbjc4n"
-      style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
+      class="tc-view__TcView-nuazoi-0 fPjBcr"
+      style="align-items: center; border-bottom-color: #DBDBDB; border-bottom-width: 1px; border-style: solid; border-top-color: #DBDBDB; border-top-width: 1px; display: flex; justify-content: center; padding: 15px;"
     >
       <h3
         aria-level="3"
-        class="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
+        class="related-articles-heading__HeadingForRelatedArticles-sc-1m1bjcq-0 cDImeD"
         role="heading"
-        style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
       >
         Latest from Sport
       </h3>
@@ -26,18 +24,16 @@ exports[`<LatestFromSection> no data  1`] = `
 exports[`<LatestFromSection> renders  1`] = `
 <DocumentFragment>
   <div
-    class="css-view-1dbjc4n"
+    class="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
-      class="css-view-1dbjc4n"
-      style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
+      class="tc-view__TcView-nuazoi-0 fPjBcr"
+      style="align-items: center; border-bottom-color: #DBDBDB; border-bottom-width: 1px; border-style: solid; border-top-color: #DBDBDB; border-top-width: 1px; display: flex; justify-content: center; padding: 15px;"
     >
       <h3
         aria-level="3"
-        class="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
+        class="related-articles-heading__HeadingForRelatedArticles-sc-1m1bjcq-0 cDImeD"
         role="heading"
-        style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
       >
         Latest from Sport
       </h3>
@@ -62,7 +58,7 @@ exports[`<LatestFromSection> renders  1`] = `
                 href="https://www.thetimes.co.uk/article/the-entire-tour-de-france-bows-to-the-greatness-of-mark-cavendish-2zq0zgfmn"
               >
                 <div
-                  class="css-view-1dbjc4n"
+                  class="tc-view__TcView-nuazoi-0 fPjBcr"
                 >
                   <div
                     class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -137,7 +133,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           The entire Tour bows to the greatness of Cavendish
                         </div>
                         <div
-                          class="css-view-1dbjc4n"
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
                         >
                           <div
                             class="summaryHidden summary125Class tc-text__TcText-sc-15igzev-0 lhcAkf"
@@ -202,7 +198,7 @@ exports[`<LatestFromSection> renders  1`] = `
                 href="https://www.thetimes.co.uk/article/jordan-pickford-repels-everything-germans-muster-ktkcvc85p"
               >
                 <div
-                  class="css-view-1dbjc4n"
+                  class="tc-view__TcView-nuazoi-0 fPjBcr"
                 >
                   <div
                     class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -277,7 +273,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           Flawless Pickford repels everything Germans muster
                         </div>
                         <div
-                          class="css-view-1dbjc4n"
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
                         >
                           <div
                             class="summaryHidden summary125Class tc-text__TcText-sc-15igzev-0 lhcAkf"
@@ -342,7 +338,7 @@ exports[`<LatestFromSection> renders  1`] = `
                 href="https://www.thetimes.co.uk/article/the-tactical-masterstrokes-behind-englands-ruthless-win-s2s5j6k8l"
               >
                 <div
-                  class="css-view-1dbjc4n"
+                  class="tc-view__TcView-nuazoi-0 fPjBcr"
                 >
                   <div
                     class="tc-view__TcView-nuazoi-0 fPjBcr"
@@ -417,7 +413,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           The tactical masterstrokes behind England’s ruthless win
                         </div>
                         <div
-                          class="css-view-1dbjc4n"
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
                         >
                           <div
                             class="summaryHidden summary125Class tc-text__TcText-sc-15igzev-0 lhcAkf"

@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView } from "react-native";
+import { TcView } from "@times-components/utils";
 import storybookReporter from "@times-components/tealium-utils";
 import RelatedArticles from "./src/related-articles";
 
@@ -29,9 +29,9 @@ const createRelatedArticles = (decorateAction, fixtureData, extraProps) => {
     ...extraProps
   };
   return (
-    <ScrollView>
+    <TcView>
       <RelatedArticles {...props} />
-    </ScrollView>
+    </TcView>
   );
 };
 
