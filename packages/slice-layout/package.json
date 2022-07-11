@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice-layout",
-  "version": "0.48.1",
+  "version": "0.49.0",
   "description": "Slice layout",
   "main": "dist/slice-layout",
   "scripts": {
@@ -59,8 +59,7 @@
   },
   "dependencies": {
     "@times-components/ts-styleguide": "1.36.4",
-    "@times-components/utils": "6.12.2",
-    "flatlist-react": "1.5.0",
+    "@times-components/utils": "6.13.0",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
