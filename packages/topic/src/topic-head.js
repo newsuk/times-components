@@ -23,7 +23,7 @@ const TopicHead = ({ name, description, isLoading }) => {
         <ResponsiveDivider />
         <TcText
           style={checkStylesForUnits({ ...styles.description })}
-          testID="topic-description"
+          data-testid="topic-description"
         >
           {renderTrees(description, coreRenderers)}
         </TcText>
