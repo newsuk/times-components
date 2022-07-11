@@ -46,13 +46,7 @@ class ListComponent extends Component {
       <TcFlatList
         data={items}
         initialNumToRender={items.length}
-        keyExtractor={({ someKey }) => someKey}
-        onViewableItemsChanged={this.onViewableItemsChanged}
         renderItem={({ item }) => <Text>Item {item.someValue}</Text>}
-        viewabilityConfig={{
-          viewAreaCoveragePercentThreshold: 100,
-          waitForInteraction: false
-        }}
       />
     );
   }
