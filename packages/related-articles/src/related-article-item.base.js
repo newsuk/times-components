@@ -1,5 +1,6 @@
 import React, { createRef, Component } from "react";
-import { findNodeHandle, View } from "react-native";
+import { TcView } from "@times-components/utils";
+
 import get from "lodash.get";
 import ArticleSummary, {
   ArticleSummaryContent,
@@ -56,7 +57,7 @@ class RelatedArticleItem extends Component {
 
   setHighResSize() {
     this.setState({
-      highResSize: findNodeHandle(this.node.current).clientWidth
+      highResSize: this.node.current.clientWidth
     });
   }
 
@@ -102,7 +103,7 @@ class RelatedArticleItem extends Component {
     return children({
       article,
       card: (
-        <View ref={this.node}>
+        <TcView ref={this.node}>
           <Card
             contentContainerClass={contentContainerClass}
             highResSize={highResSize}
@@ -126,7 +127,7 @@ class RelatedArticleItem extends Component {
               }}
               content={
                 showSummary && (
-                  <View style={summaryStyle}>
+                  <TcView style={summaryStyle}>
                     {summaryLengths.map(item => {
                       const summaryClassSuffix = `${item}Class`;
                       const summaryClass = summaryType
@@ -140,7 +141,7 @@ class RelatedArticleItem extends Component {
                         />
                       );
                     })}
-                  </View>
+                  </TcView>
                 )
               }
               datePublicationProps={{ date: publishedTime, showDay: false }}
@@ -158,7 +159,7 @@ class RelatedArticleItem extends Component {
               }}
             />
           </Card>
-        </View>
+        </TcView>
       ),
       onPress
     });
