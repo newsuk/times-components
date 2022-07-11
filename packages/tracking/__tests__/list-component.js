@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Text, FlatList } from "react-native";
+import { Text} from "react-native";
+import { TcFlatList } from "@times-components/utils";
 import PropTypes from "prop-types";
 
 class ListComponent extends Component {
@@ -42,7 +43,7 @@ class ListComponent extends Component {
   render() {
     const { items } = this.props;
     return (
-      <FlatList
+      <TcFlatList
         data={items}
         initialNumToRender={items.length}
         keyExtractor={({ someKey }) => someKey}
