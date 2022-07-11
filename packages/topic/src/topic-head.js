@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { TcText, TcView } from "@times-components/utils";
+import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import renderTrees from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import { propTypes, defaultProps } from "./topic-head-prop-types";
@@ -21,7 +21,10 @@ const TopicHead = ({ name, description, isLoading }) => {
     description && description.length > 0 ? (
       <Fragment>
         <ResponsiveDivider />
-        <TcText style={styles.description} testID="topic-description">
+        <TcText
+          style={checkStylesForUnits({ ...styles.description })}
+          testID="topic-description"
+        >
           {renderTrees(description, coreRenderers)}
         </TcText>
       </Fragment>

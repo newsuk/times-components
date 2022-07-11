@@ -32,6 +32,21 @@ exports[`1. an article list header 1`] = `
 }
 
 .c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
@@ -47,6 +62,21 @@ exports[`1. an article list header 1`] = `
 }
 
 .c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   border-top-color: #DBDBDB;
   border-top-style: solid;
   border-top-width: 1px;
@@ -97,7 +127,7 @@ exports[`1. an article list header 1`] = `
   width="100%"
 >
   <div
-    className="c1 responsive__HeadContainerWithDescription-sc-1qy9k4m-0 c1 css-view-1dbjc4n"
+    className="c1"
   >
     <h1
       className="c2"
@@ -105,14 +135,14 @@ exports[`1. an article list header 1`] = `
       Test Name
     </h1>
     <div
-      className="c3 responsive__ResponsiveDivider-sc-1qy9k4m-3 c3 css-view-1dbjc4n"
+      className="c3"
     />
     <div
       className="c4"
       color="#333333"
       fontFamily="TimesDigitalW04"
       fontSize={15}
-      lineHeight={26}
+      lineHeight="26px"
       paddingBottom="15px"
       textAlign="center"
     >
