@@ -1,5 +1,4 @@
 import React from 'react'
-// not sure how else to put the default styles, this the default style for a React Native <Text/> component
 
 const TcFlatList = ({
   data,
@@ -10,7 +9,7 @@ const TcFlatList = ({
   misc,
   style
 }) => {
-console.log('XXXXXXXXXXXXXXX style',style)
+
   if (Array.isArray(data)) {
     const render = data.map((v, i) => {
       if (i < initialNumToRender) {
