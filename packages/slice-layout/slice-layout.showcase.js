@@ -2,9 +2,7 @@
 import React from "react";
 import { TcView } from "@times-components/utils";
 
-import {
-  StandardSlice,
-} from "./src/slice-layout";
+import { StandardSlice } from "./src/slice-layout";
 
 const colours = [
   { backgroundColor: "yellow", id: 1 },
@@ -19,10 +17,7 @@ const createItems = noOfItems =>
       const { backgroundColor, id } = colour;
       if (id > noOfItems) return false;
       return (
-        <TcView
-          id={`item-${id}`}
-          style={{ minHeight: 150, backgroundColor: backgroundColor }}
-        />
+        <TcView id={`item-${id}`} style={{ minHeight: 150, backgroundColor }} />
       );
     })
     .filter(item => item !== false);
