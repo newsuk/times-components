@@ -150,55 +150,6 @@ exports[`1. page error 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  max-width: 25%;
-  max-height: 50%;
-}
-
-.IS2 {
-  align-items: center;
-  background-color: #EDEDED;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  border-radius: 0;
-}
-
-.IS3 {
-  padding-bottom: 110%;
-}
-
-.IS4 {
-  align-self: center;
-  color: #1D1D1B;
-  font-family: TimesModern-Bold;
-  font-size: 26;
-  line-height: 26px;
-  margin-bottom: 10px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.IS5 {
-  color: #696969;
-  font-family: TimesDigitalW04-Regular;
-  font-size: 18;
-  line-height: 27px;
-  text-align: center;
-}
-
-.IS6 {
-  align-self: center;
-  margin-bottom: 10px;
-  margin-top: 40px;
-}
-</style>
-
 <div
   className="c0"
 >
@@ -209,16 +160,27 @@ exports[`1. page error 1`] = `
       className="c2"
     >
       <div
-        className="IS3"
+        paddingBottom="110%"
       >
         <img
           className="c3"
         />
         <div
-          className="c2 IS2"
+          alignItems="center"
+          backgroundColor="#EDEDED"
+          borderRadius={0}
+          bottom={0}
+          className="c2"
+          justifyContent="center"
+          left={0}
+          position="absolute"
+          right={0}
+          top={0}
+          zIndex={0}
         >
           <svg
-            className="IS1"
+            maxHeight="50%"
+            maxWidth="25%"
           >
             <g>
               <path />
@@ -232,17 +194,32 @@ exports[`1. page error 1`] = `
     className="c4"
   >
     <div
-      className="c5 IS4"
+      alignSelf="center"
+      className="c5"
+      color="#1D1D1B"
+      fontFamily="TimesModern-Bold"
+      fontSize={26}
+      lineHeight="26px"
+      marginBottom="10px"
+      marginTop="20px"
+      textAlign="center"
     >
       Something's gone wrong
     </div>
     <div
-      className="c5 IS5"
+      className="c5"
+      color="#696969"
+      fontFamily="TimesDigitalW04-Regular"
+      fontSize={18}
+      lineHeight="27px"
+      textAlign="center"
     >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </div>
     <Button
-      className="IS6"
+      alignSelf="center"
+      marginBottom="10px"
+      marginTop="40px"
     />
   </div>
 </div>
@@ -510,38 +487,6 @@ exports[`2. article list 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  color: #696969;
-  font-family: GillSansMTStd-Medium;
-  font-size: 15;
-  line-height: 15px;
-  padding-top: 4;
-}
-
-.IS2 {
-  max-width: 760;
-  flex: 1;
-}
-
-.IS3 {
-  align-items: stretch;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.IS4 {
-  max-width: 760;
-  flex: 1;
-}
-
-.IS5 {
-  align-items: stretch;
-  flex-direction: row;
-  justify-content: center;
-}
-</style>
-
 <div
   className="c0"
 >
@@ -552,10 +497,15 @@ exports[`2. article list 1`] = `
       className="c1"
     >
       <div
-        className="c0 IS3"
+        alignItems="stretch"
+        className="c0"
+        flexDirection="row"
+        justifyContent="center"
       >
         <div
-          className="c0 IS2"
+          className="c0"
+          flex={1}
+          maxWidth={760}
         >
           <div
             className="c2"
@@ -564,7 +514,12 @@ exports[`2. article list 1`] = `
               className="c3"
             >
               <div
-                className="c4 IS1"
+                className="c4"
+                color="#696969"
+                fontFamily="GillSansMTStd-Medium"
+                fontSize={15}
+                lineHeight="15px"
+                paddingTop={4}
               >
                 Showing 0 - 0 of 0 results
               </div>
@@ -592,10 +547,15 @@ exports[`2. article list 1`] = `
     </div>
     <div />
     <div
-      className="c0 IS5"
+      alignItems="stretch"
+      className="c0"
+      flexDirection="row"
+      justifyContent="center"
     >
       <div
-        className="c0 IS4"
+        className="c0"
+        flex={1}
+        maxWidth={760}
       >
         <div
           className="c7"

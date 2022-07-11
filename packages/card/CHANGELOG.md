@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.8.1](https://github.com/newsuk/times-components/compare/@times-components/card@6.8.0...@times-components/card@6.8.1) (2022-07-11)
+
+
+### Bug Fixes
+
+* **TDP-1704:** Remove react-native from jest-serializer package ([#3015](https://github.com/newsuk/times-components/issues/3015)) ([5b6da8f](https://github.com/newsuk/times-components/commit/5b6da8f1392c3b42a9c0944d44be3d9ed3e7db2f))
+
+
+
+
+
 # [6.8.0](https://github.com/newsuk/times-components/compare/@times-components/card@6.7.0...@times-components/card@6.8.0) (2022-07-06)
 
 

@@ -781,119 +781,6 @@ exports[`full article with style 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12;
-  line-height: 12px;
-  font-weight: 400;
-  margin-bottom: 0;
-  margin-top: -1;
-  padding-top: 1;
-  letter-spacing: 1;
-  color: #1D1D1B;
-}
-
-.IS3 {
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-
-.IS4 {
-  font-family: TimesModern-Regular;
-  font-size: 20;
-  line-height: 26px;
-  color: #333333;
-  padding-bottom: 10px;
-}
-
-.IS5 {
-  margin-bottom: 10px;
-}
-
-.IS6 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 15px;
-  color: #696969;
-}
-
-.IS7 {
-  color: #696969;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 15px;
-}
-
-.IS8 {
-  justify-content: flex-start;
-}
-
-.IS9 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 15px;
-  color: #696969;
-}
-
-.IS10 {
-  color: #696969;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 15px;
-}
-
-.IS11 {
-  display: none;
-}
-
-.IS12 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS13 {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
-.IS14 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS15 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS16 {
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
-.IS17 {
-  color: #696969;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 17px;
-}
-
-.IS18 {
-  padding-top: 10px;
-}
-
-.IS19 {
-  margin: 0;
-}
-</style>
-
 <div
   className="c0"
 >
@@ -927,7 +814,7 @@ exports[`full article with style 1`] = `
         className="c1"
       >
         <AdContainer
-          className="IS1"
+          marginBottom={0}
         />
       </div>
       <main
@@ -946,10 +833,21 @@ exports[`full article with style 1`] = `
                 className="c6"
               >
                 <div
-                  className="c7 IS3"
+                  className="c7"
+                  paddingBottom="5px"
+                  paddingTop="5px"
                 >
                   <div
-                    className="c8 IS2"
+                    className="c8"
+                    color="#1D1D1B"
+                    fontFamily="GillSansMTStd-Medium"
+                    fontSize={12}
+                    fontWeight="400"
+                    letterSpacing={1}
+                    lineHeight="12px"
+                    marginBottom={0}
+                    marginTop={-1}
+                    paddingTop={1}
                   >
                     SOME LABEL
                   </div>
@@ -960,12 +858,18 @@ exports[`full article with style 1`] = `
                   Some Headline
                 </h1>
                 <div
-                  className="c8 IS4"
+                  className="c8"
+                  color="#333333"
+                  fontFamily="TimesModern-Regular"
+                  fontSize={20}
+                  lineHeight="26px"
+                  paddingBottom="10px"
                 >
                   Some Standfirst
                 </div>
                 <div
-                  className="c6 IS5"
+                  className="c6"
+                  marginBottom="10px"
                 >
                   <ArticleFlags />
                 </div>
@@ -984,7 +888,11 @@ exports[`full article with style 1`] = `
                     className="c13"
                   >
                     <div
-                      className="c8 IS6"
+                      className="c8"
+                      color="#696969"
+                      fontFamily="GillSansMTStd-Medium"
+                      fontSize={13}
+                      lineHeight="15px"
                     >
                       <ArticleBylineWithLinks />
                     </div>
@@ -1001,7 +909,11 @@ exports[`full article with style 1`] = `
                     className="c13"
                   >
                     <div
-                      className="c8 IS7"
+                      className="c8"
+                      color="#696969"
+                      fontFamily="GillSansMTStd-Medium"
+                      fontSize={13}
+                      lineHeight="15px"
                     >
                       <DatePublication />
                     </div>
@@ -1010,7 +922,7 @@ exports[`full article with style 1`] = `
               </div>
               <nav>
                 <ArticleTopics
-                  className="IS8"
+                  justifyContent="flex-start"
                 />
               </nav>
             </div>
@@ -1028,7 +940,11 @@ exports[`full article with style 1`] = `
                 className="c13"
               >
                 <div
-                  className="c8 IS9"
+                  className="c8"
+                  color="#696969"
+                  fontFamily="GillSansMTStd-Medium"
+                  fontSize={13}
+                  lineHeight="15px"
                 >
                   <ArticleBylineWithLinks />
                 </div>
@@ -1037,7 +953,11 @@ exports[`full article with style 1`] = `
                 className="c13"
               >
                 <div
-                  className="c8 IS10"
+                  className="c8"
+                  color="#696969"
+                  fontFamily="GillSansMTStd-Medium"
+                  fontSize={13}
+                  lineHeight="15px"
                 >
                   <DatePublication />
                 </div>
@@ -1048,7 +968,7 @@ exports[`full article with style 1`] = `
             className="c11 c15 c17 c18"
           >
             <div
-              className="IS11"
+              display="none"
             />
             <div>
               <div
@@ -1111,22 +1031,32 @@ exports[`full article with style 1`] = `
             className="c21"
           >
             <figure
-              className="IS19"
+              margin={0}
             >
               <div
-                className="c6 IS16"
+                className="c6"
+                paddingBottom="56.25%"
+                position="relative"
               >
                 <div
-                  className="c6 IS15"
+                  className="c6"
+                  height="100%"
+                  position="absolute"
+                  width="100%"
                 >
                   <div
-                    className="IS14"
+                    height="100%"
+                    width="100%"
                   >
                     <div
-                      className="IS13"
+                      height="100%"
+                      position="relative"
+                      width="100%"
                     >
                       <video
-                        className="video-js IS12"
+                        className="video-js"
+                        height="100%"
+                        width="100%"
                       />
                     </div>
                   </div>
@@ -1140,10 +1070,15 @@ exports[`full article with style 1`] = `
                     className="c6"
                   >
                     <div
-                      className="c6 IS18"
+                      className="c6"
+                      paddingTop="10px"
                     >
                       <div
-                        className="c8 IS17"
+                        className="c8"
+                        color="#696969"
+                        fontFamily="GillSansMTStd-Medium"
+                        fontSize={13}
+                        lineHeight="17px"
                       >
                         This is video caption
                       </div>

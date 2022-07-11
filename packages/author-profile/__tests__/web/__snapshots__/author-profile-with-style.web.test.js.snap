@@ -172,90 +172,37 @@ exports[`1. an article list header 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  border-color: #FFFFFF;
-  border-radius: 50;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  width: 100;
-}
-
-.IS2 {
-  color: #696969;
-  font-family: TimesDigitalW04-RegularSC;
-  font-size: 14;
-  line-height: 14px;
-  margin-top: 5px;
-  -webkit-font-smoothing: antialiased;
-}
-
-.IS3 {
-  align-self: center;
-}
-
-.IS4 {
-  color: #006699;
-  font-family: GillSansMTStd-Medium;
-  font-size: 15;
-  line-height: 17;
-  padding-left: 5px;
-  text-decoration-line: none;
-}
-
-.IS5 {
-  flex-direction: row;
-  padding-vertical: 10px;
-  align-items: flex-end;
-  padding-bottom: 10px;
-  padding-top: 15px;
-}
-
-.IS6 {
-  color: #333333;
-  font-family: TimesDigitalW04;
-  font-size: 16;
-  line-height: 27px;
-  text-align: center;
-}
-
-.IS7 {
-  align-items: center;
-  background-color: transparent;
-  width: 100%;
-}
-
-.IS8 {
-  width: 100%;
-}
-
-.IS9 {
-  align-items: center;
-  background-color: #F9F9F9;
-  border-bottom-color: #F0F0F0;
-  border-bottom-width: 1;
-  flex-direction: column;
-  padding-bottom: 40px;
-  width: 100%;
-}
-</style>
-
 <div
-  className="c0 IS9"
+  alignItems="center"
+  backgroundColor="#F9F9F9"
+  borderBottomColor="#F0F0F0"
+  borderBottomWidth={1}
+  className="c0"
+  flexDirection="column"
+  paddingBottom="40px"
+  width="100%"
 >
   <div
-    className="c1 IS8"
+    className="c1"
+    width="100%"
   >
     <div
-      className="c2 IS7"
+      alignItems="center"
+      backgroundColor="transparent"
+      className="c2"
+      width="100%"
     >
       <div
         className="c3"
       >
         <Image
-          className="IS1"
+          borderColor="#FFFFFF"
+          borderRadius={50}
+          marginBottom="20px"
+          marginLeft="auto"
+          marginRight="auto"
+          overflow="hidden"
+          width={100}
         />
       </div>
       <h1
@@ -264,20 +211,37 @@ exports[`1. an article list header 1`] = `
         Name
       </h1>
       <h2
-        className="c5 IS2"
+        WebkitFontSmoothing="antialiased"
+        className="c5"
+        color="#696969"
+        fontFamily="TimesDigitalW04-RegularSC"
+        fontSize={14}
+        lineHeight="14px"
+        marginTop="5px"
       >
         job title
       </h2>
       <div
-        className="c2 IS5"
+        alignItems="flex-end"
+        className="c2"
+        flexDirection="row"
+        paddingBottom="10px"
+        paddingTop="15px"
+        paddingVertical="10px"
       >
         <div
-          className="c2 IS3"
+          alignSelf="center"
+          className="c2"
         >
           <IconTwitter />
         </div>
         <TextLink
-          className="IS4"
+          color="#006699"
+          fontFamily="GillSansMTStd-Medium"
+          fontSize={15}
+          lineHeight={17}
+          paddingLeft="5px"
+          textDecorationLine="none"
         >
           @
           twitter
@@ -287,7 +251,12 @@ exports[`1. an article list header 1`] = `
         className="c6"
       >
         <div
-          className="c7 IS6"
+          className="c7"
+          color="#333333"
+          fontFamily="TimesDigitalW04"
+          fontSize={16}
+          lineHeight="27px"
+          textAlign="center"
         >
           Camilla Long
         </div>
@@ -342,52 +311,37 @@ exports[`2. an article list header loading 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  flex: 1;
-}
-
-.IS2 {
-  border-color: #FFFFFF;
-  border-radius: 50;
-  height: 100;
-  overflow: hidden;
-  position: absolute;
-  top: 30px;
-  width: 100;
-}
-
-.IS3 {
-  align-items: center;
-  background-color: #F9F9F9;
-  border-bottom-color: #F0F0F0;
-  border-bottom-width: 1;
-  min-height: 264;
-  width: 100%;
-}
-
-.IS4 {
-  align-items: center;
-  background-color: #F9F9F9;
-  border-bottom-color: #F0F0F0;
-  border-bottom-width: 1;
-  flex-direction: column;
-  padding-bottom: 40px;
-  width: 100%;
-}
-</style>
-
 <div
-  className="c0 IS4"
+  alignItems="center"
+  backgroundColor="#F9F9F9"
+  borderBottomColor="#F0F0F0"
+  borderBottomWidth={1}
+  className="c0"
+  flexDirection="column"
+  paddingBottom="40px"
+  width="100%"
 >
   <div
-    className="c1 IS3"
+    alignItems="center"
+    backgroundColor="#F9F9F9"
+    borderBottomColor="#F0F0F0"
+    borderBottomWidth={1}
+    className="c1"
+    minHeight={264}
+    width="100%"
   >
     <div
-      className="c1 IS2"
+      borderColor="#FFFFFF"
+      borderRadius={50}
+      className="c1"
+      height={100}
+      overflow="hidden"
+      position="absolute"
+      top="30px"
+      width={100}
     >
       <Gradient
-        className="IS1"
+        flex={1}
       />
     </div>
   </div>
