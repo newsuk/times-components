@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.14](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.13...@times-components/article-lead-asset@1.8.14) (2022-07-11)
+
+
+### Bug Fixes
+
+* **TDP-1704:** Remove react-native from jest-serializer package ([#3015](https://github.com/newsuk/times-components/issues/3015)) ([5b6da8f](https://github.com/newsuk/times-components/commit/5b6da8f1392c3b42a9c0944d44be3d9ed3e7db2f))
+
+
+
+
+
 ## [1.8.13](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.12...@times-components/article-lead-asset@1.8.13) (2022-07-06)
 
 **Note:** Version bump only for package @times-components/article-lead-asset

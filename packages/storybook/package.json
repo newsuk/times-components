@@ -1,6 +1,6 @@
 {
   "name": "@times-components/storybook",
-  "version": "4.2.23",
+  "version": "4.2.24",
   "description": "React storybook helpers for Times Components",
   "main": "dist/storybook",
   "dev": "src/storybook",
@@ -26,7 +26,7 @@
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@times-components/jest-configurator": "2.8.0",
-    "@times-components/jest-serializer": "3.2.29",
+    "@times-components/jest-serializer": "3.2.30",
     "babel-jest": "24.8.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-styled-components": "1.10.6",
@@ -44,7 +44,7 @@
     "@storybook/addon-knobs": "5.3.18",
     "@storybook/react-native": "5.3.18",
     "@times-components/schema": "0.7.1",
-    "@times-components/user-state": "0.3.23",
+    "@times-components/user-state": "0.3.24",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link-http": "1.5.14",
