@@ -20,7 +20,7 @@ export default () => {
         (value, key) => key !== "style" && key !== "className"
       ),
       flattenStyleTransform,
-      hoistStyleTransform,
+      hoistStyleTransform
     )
   );
 
