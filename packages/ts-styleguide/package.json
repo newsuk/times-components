@@ -58,7 +58,7 @@
   "devDependencies": {
     "@storybook/react": "5.3.18",
     "@testing-library/react": "^12.1.2",
-    "@times-components/storybook": "4.2.24",
+    "@times-components/storybook": "4.2.25",
     "fetch-mock": "9.11.0",
     "jest": "24.8.0",
     "jest-environment-jsdom-sixteen": "2.0.0",
