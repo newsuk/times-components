@@ -2,6 +2,21 @@
 
 exports[`1. a primary image 1`] = `
 .c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -10,6 +25,7 @@ exports[`1. a primary image 1`] = `
 }
 
 .c9 {
+  clear: both;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -45,6 +61,21 @@ exports[`1. a primary image 1`] = `
 }
 
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -107,6 +138,21 @@ exports[`1. a primary image 1`] = `
 }
 
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   box-sizing: content-box;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -202,38 +248,28 @@ exports[`1. a primary image 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  display: none;
-}
-</style>
-
 <div>
   <div />
   <article>
     <Head />
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="c0"
     >
       <AdContainer
-        className="IS1"
+        marginBottom={0}
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="c2"
       >
         <div
           className="c3 c4 c5"
         >
           <div
-            className="IS2"
+            display="none"
           />
           <div>
             <div
@@ -247,13 +283,15 @@ exports[`1. a primary image 1`] = `
         </div>
       </div>
       <article
-        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+        className="c7"
       >
         <div>
-          <div
-            className="c8 responsiveweb__PrimaryImg-sc-16nqyj8-5 c8 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c8"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div
@@ -284,10 +322,26 @@ exports[`1. a primary image 1`] = `
 
 exports[`2. a fullwidth image 1`] = `
 .c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   padding-bottom: 20px;
 }
 
 .c9 {
+  clear: both;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -323,6 +377,21 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -385,6 +454,21 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   box-sizing: content-box;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -467,38 +551,28 @@ exports[`2. a fullwidth image 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  display: none;
-}
-</style>
-
 <div>
   <div />
   <article>
     <Head />
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="c0"
     >
       <AdContainer
-        className="IS1"
+        marginBottom={0}
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="c2"
       >
         <div
           className="c3 c4 c5"
         >
           <div
-            className="IS2"
+            display="none"
           />
           <div>
             <div
@@ -512,13 +586,15 @@ exports[`2. a fullwidth image 1`] = `
         </div>
       </div>
       <article
-        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+        className="c7"
       >
         <div>
-          <div
-            className="c8 responsiveweb__FullWidthImg-sc-16nqyj8-6 c8 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c8"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div
@@ -549,6 +625,21 @@ exports[`2. a fullwidth image 1`] = `
 
 exports[`3. a secondary image 1`] = `
 .c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -562,6 +653,7 @@ exports[`3. a secondary image 1`] = `
 }
 
 .c9 {
+  clear: both;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -597,6 +689,21 @@ exports[`3. a secondary image 1`] = `
 }
 
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -659,6 +766,21 @@ exports[`3. a secondary image 1`] = `
 }
 
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   box-sizing: content-box;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -756,38 +878,28 @@ exports[`3. a secondary image 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  display: none;
-}
-</style>
-
 <div>
   <div />
   <article>
     <Head />
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="c0"
     >
       <AdContainer
-        className="IS1"
+        marginBottom={0}
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="c2"
       >
         <div
           className="c3 c4 c5"
         >
           <div
-            className="IS2"
+            display="none"
           />
           <div>
             <div
@@ -801,13 +913,15 @@ exports[`3. a secondary image 1`] = `
         </div>
       </div>
       <article
-        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+        className="c7"
       >
         <div>
-          <div
-            className="c8 responsiveweb__SecondaryImg-sc-16nqyj8-7 c8 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c8"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div
@@ -838,6 +952,21 @@ exports[`3. a secondary image 1`] = `
 
 exports[`4. an inline image 1`] = `
 .c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -852,6 +981,7 @@ exports[`4. an inline image 1`] = `
 }
 
 .c9 {
+  clear: both;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -887,6 +1017,21 @@ exports[`4. an inline image 1`] = `
 }
 
 .c2 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -949,6 +1094,21 @@ exports[`4. an inline image 1`] = `
 }
 
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   box-sizing: content-box;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1046,38 +1206,28 @@ exports[`4. an inline image 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  margin-bottom: 0;
-}
-
-.IS2 {
-  display: none;
-}
-</style>
-
 <div>
   <div />
   <article>
     <Head />
     <div
-      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
+      className="c0"
     >
       <AdContainer
-        className="IS1"
+        marginBottom={0}
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+      className="c1"
     >
       <div
-        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+        className="c2"
       >
         <div
           className="c3 c4 c5"
         >
           <div
-            className="IS2"
+            display="none"
           />
           <div>
             <div
@@ -1091,13 +1241,15 @@ exports[`4. an inline image 1`] = `
         </div>
       </div>
       <article
-        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+        className="c7"
       >
         <div>
-          <div
-            className="c8 responsiveweb__InlineImg-sc-16nqyj8-8 c8 css-view-1dbjc4n"
-          >
-            <ArticleImage />
+          <div>
+            <div
+              className="c8"
+            >
+              <ArticleImage />
+            </div>
           </div>
         </div>
         <div

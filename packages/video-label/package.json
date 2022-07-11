@@ -1,6 +1,6 @@
 {
   "name": "@times-components/video-label",
-  "version": "2.4.64",
+  "version": "2.6.1",
   "description": "A label for articles with videos",
   "main": "dist/video-label",
   "dev": "src/video-label",
@@ -21,10 +21,7 @@
     "url": "git+https://github.com/newsuk/times-components.git"
   },
   "keywords": [
-    "react-native-web",
     "react",
-    "native",
-    "web",
     "video-label",
     "component"
   ],
@@ -34,31 +31,30 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/icons": "2.16.3",
-    "@times-components/styleguide": "3.38.22",
+    "@times-components/icons": "2.18.1",
+    "@times-components/ts-styleguide": "1.36.3",
+    "@times-components/utils": "6.12.2",
     "lodash.pick": "4.4.0",
-    "prop-types": "15.7.2"
+    "prop-types": "15.7.2",
+    "styled-components": "4.3.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@times-components/eslint-config-thetimes": "0.8.17",
-    "@times-components/jest-configurator": "2.7.2",
-    "@times-components/jest-serializer": "3.2.26",
-    "@times-components/storybook": "4.1.66",
-    "@times-components/test-utils": "2.3.9",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^12.1.2",
+    "@times-components/eslint-config-thetimes": "0.8.18",
+    "@times-components/jest-configurator": "2.8.0",
+    "@times-components/storybook": "4.2.24",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-styled-components": "1.10.6",
     "depcheck": "0.6.9",
-    "enzyme": "3.9.0",
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
     "react": "16.9.0",
     "react-art": "16.6.3",
-    "react-native-web": "0.11.4",
-    "react-test-renderer": "16.9.0",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1"
   },
@@ -68,9 +64,7 @@
   },
   "peerDependencies": {
     "react": ">=16.9",
-    "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-dom": ">=16.9"
   },
   "publishConfig": {
     "access": "public"

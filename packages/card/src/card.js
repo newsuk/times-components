@@ -1,5 +1,5 @@
 import React from "react";
-import { Animations } from "@times-components/styleguide";
+import { Animations } from "@times-components/ts-styleguide";
 import { cardPropTypes, cardDefaultProps } from "./card-prop-types";
 import CardContent from "./card-content";
 

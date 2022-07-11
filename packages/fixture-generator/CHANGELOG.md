@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.32.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.31.1...@times-components/fixture-generator@0.32.0) (2022-04-08)
+
+
+### Features
+
+* **TDP-1703:** removed react-native use of its own <Image/> component ([#2906](https://github.com/newsuk/times-components/issues/2906)) ([2717c6f](https://github.com/newsuk/times-components/commit/2717c6f5005b195f9805ff63002bfa8b1ef026c3))
+
+
+
+
+
+## [0.31.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.31.0...@times-components/fixture-generator@0.31.1) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/fixture-generator
+
+
+
+
+
+# [0.31.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.30.2...@times-components/fixture-generator@0.31.0) (2022-01-21)
+
+
+### Features
+
+* **TDP-479:** Add article breaking flag ([#2831](https://github.com/newsuk/times-components/issues/2831)) ([f1f990a](https://github.com/newsuk/times-components/commit/f1f990ae8012fcb8d33fabc40494b1a7115cbab0))
+
+
+
+
+
+## [0.30.2](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.30.1...@times-components/fixture-generator@0.30.2) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/fixture-generator
+
+
+
+
+
+## [0.30.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.30.0...@times-components/fixture-generator@0.30.1) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/fixture-generator
+
+
+
+
+
+# [0.30.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.29.2...@times-components/fixture-generator@0.30.0) (2021-11-16)
+
+
+### Features
+
+* **TDP-478:** Article LIVE flag ([#2814](https://github.com/newsuk/times-components/issues/2814)) ([9bb430a](https://github.com/newsuk/times-components/commit/9bb430a9082843e553540d4e3795ae90a0d59089)), closes [#2813](https://github.com/newsuk/times-components/issues/2813)
+
+
+
+
+
 ## [0.29.2](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.29.1...@times-components/fixture-generator@0.29.2) (2021-09-24)
 
 **Note:** Version bump only for package @times-components/fixture-generator

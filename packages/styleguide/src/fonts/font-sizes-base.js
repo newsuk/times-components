@@ -15,7 +15,7 @@ const fontSizes = {
   imageOverlayTextSmall: 11,
   infoSubText: 15,
   infoTitle: 22,
-  keyFactsTitle: 15,
+  keyFactsTitle: 24,
   leadHeadline: 26,
   link: 13,
   meta: 14,

@@ -20,7 +20,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       <title>
         Some Short Headline
          | 
-        
+        Some Section | 
         The Times
       </title>
       <meta
@@ -38,10 +38,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       <meta
         content="Camilla Long, Environment Editor"
         name="author"
-      />
-      <meta
-        content={null}
-        name="section"
       />
       <meta
         content="Some Short Headline"
@@ -78,7 +74,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       <script
         type="application/ld+json"
       >
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Short Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Camilla Long, Environment Editor"}}
+        {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Short Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Camilla Long, Environment Editor"},"articleSection":"Some Section"}
       </script>
     </Helmet>
     <div>
@@ -86,9 +82,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <h1
@@ -164,8 +158,8 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                 <div>
                   <img
                     alt="Some Caption"
-                    src="https://crop169.io?resize=1200"
-                    srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=1200 685w, https://crop169.io?resize=1200 1200w"
+                    src="https://crop169.io?resize=360"
+                    srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                   />
                 </div>
               </div>
@@ -201,9 +195,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <p>
           Some content
         </p>
@@ -274,6 +266,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -315,7 +308,7 @@ exports[`4. an article with ads 1`] = `
       <title>
         Some Headline
          | 
-        
+        Some Section | 
         The Times
       </title>
       <meta
@@ -333,10 +326,6 @@ exports[`4. an article with ads 1`] = `
       <meta
         content="Camilla Long, Environment Editor"
         name="author"
-      />
-      <meta
-        content={null}
-        name="section"
       />
       <meta
         content="Some Headline"
@@ -373,7 +362,7 @@ exports[`4. an article with ads 1`] = `
       <script
         type="application/ld+json"
       >
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Camilla Long, Environment Editor"}}
+        {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Camilla Long, Environment Editor"},"articleSection":"Some Section"}
       </script>
     </Helmet>
     <div>
@@ -381,9 +370,7 @@ exports[`4. an article with ads 1`] = `
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <h1
@@ -459,8 +446,8 @@ exports[`4. an article with ads 1`] = `
                 <div>
                   <img
                     alt="Some Caption"
-                    src="https://crop169.io?resize=1200"
-                    srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=1200 685w, https://crop169.io?resize=1200 1200w"
+                    src="https://crop169.io?resize=360"
+                    srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                   />
                 </div>
               </div>
@@ -496,9 +483,7 @@ exports[`4. an article with ads 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <div>
           <h2>
             Advertisement
@@ -574,6 +559,7 @@ exports[`4. an article with ads 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [

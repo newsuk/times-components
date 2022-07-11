@@ -1,6 +1,5 @@
-import styleguideFactory from "@times-components/styleguide";
+import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 
-const { colours, fontFactory, spacing } = styleguideFactory();
 const styles = {
   container: {
     alignItems: "center"

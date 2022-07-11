@@ -6,7 +6,7 @@ import {
   TrackingContextProvider
 } from '../../helpers/tracking/TrackingContextProvider';
 import { sanitiseCopy } from '../../helpers/text-formatting/SanitiseCopy';
-import { breakpoints } from '@times-components/styleguide';
+import { breakpoints } from '@times-components/ts-styleguide';
 import {
   Container,
   ContentContainer,
@@ -118,7 +118,7 @@ export const InfoCardBulletPoints: React.FC<{
                   <ListItem
                     key={index}
                     dangerouslySetInnerHTML={{
-                      __html: sanitiseCopy(row.data.copy, ['b', 'i'])
+                      __html: sanitiseCopy(row.data.copy, { b: {}, i: {} })
                     }}
                   />
                 ))}

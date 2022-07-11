@@ -11,12 +11,6 @@ Object {
 }
 `;
 
-exports[`save and share tracking events when press copy to clipboard: onCopyLink 1`] = `
-Array [
-  Array [],
-]
-`;
-
 exports[`save and share tracking events when press share article url by email 1`] = `
 Object {
   "action": "Pressed",

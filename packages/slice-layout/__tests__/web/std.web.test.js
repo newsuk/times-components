@@ -1,3 +1,3 @@
-import shared from "../std.web";
+import shared from "../std";
 
 shared();

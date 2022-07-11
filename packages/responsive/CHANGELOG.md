@@ -3,6 +3,195 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.2](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.12.1...@times-components/responsive@0.12.2) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.12.1](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.12.0...@times-components/responsive@0.12.1) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+# [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.11.2...@times-components/responsive@0.12.0) (2022-05-12)
+
+
+### Features
+
+* **TDP-1973:** updated ts-styleguide with tabletWidth ([#2940](https://github.com/newsuk/times-components/issues/2940)) ([a3f1713](https://github.com/newsuk/times-components/commit/a3f17136f3a1a265d2deb3d667d7b42d9b209465))
+
+
+
+
+
+## [0.11.2](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.11.1...@times-components/responsive@0.11.2) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.11.1](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.11.0...@times-components/responsive@0.11.1) (2022-05-09)
+
+
+### Bug Fixes
+
+* **tdp-1829:** update flag tracking ([#2935](https://github.com/newsuk/times-components/issues/2935)) ([031a153](https://github.com/newsuk/times-components/commit/031a15356d376cd4b75f0ea4f24e02ff20ebfecc))
+
+
+
+
+
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.10.0...@times-components/responsive@0.11.0) (2022-04-29)
+
+
+### Features
+
+* **TDP-1830:** convert styleguide to typescript component ([#2918](https://github.com/newsuk/times-components/issues/2918)) ([24620e2](https://github.com/newsuk/times-components/commit/24620e25be9f2827ceedbb2f4cf1fe0ff6ea2ae2))
+
+
+
+
+
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.9.1...@times-components/responsive@0.10.0) (2022-04-25)
+
+
+### Features
+
+* **TDP-1692:** removed react native from article-lead-asset ([#2923](https://github.com/newsuk/times-components/issues/2923)) ([8daa928](https://github.com/newsuk/times-components/commit/8daa928e226b72125188f97b7711c96fec3bca1f))
+
+
+
+
+
+## [0.9.1](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.9.0...@times-components/responsive@0.9.1) (2022-04-21)
+
+
+### Bug Fixes
+
+* **TDP-000:** ArticleHeader date and time update ([#2924](https://github.com/newsuk/times-components/issues/2924)) ([7453ab2](https://github.com/newsuk/times-components/commit/7453ab2498cc12a6e6ea8ba1df9ee71bb4798628))
+
+
+
+
+
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.8.0...@times-components/responsive@0.9.0) (2022-04-21)
+
+
+### Features
+
+* **TDP-1691:** remove react native from article label ([#2921](https://github.com/newsuk/times-components/issues/2921)) ([a2f1d2f](https://github.com/newsuk/times-components/commit/a2f1d2fd3923378b8a8f1a91cc87e6bc97aef9eb))
+
+
+
+
+
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.7.11...@times-components/responsive@0.8.0) (2022-04-20)
+
+
+### Features
+
+* **TDP-1716:** remove react native from utils ([#2915](https://github.com/newsuk/times-components/issues/2915)) ([647388c](https://github.com/newsuk/times-components/commit/647388c28f6e869be5cb0eb9d85685bec192c723))
+
+
+
+
+
+## [0.7.11](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.7.10...@times-components/responsive@0.7.11) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.7.10](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.7.9...@times-components/responsive@0.7.10) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.7.9](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.7.8...@times-components/responsive@0.7.9) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.7.8](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.7.7...@times-components/responsive@0.7.8) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.7.7](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.7.6...@times-components/responsive@0.7.7) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.7.6](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.7.5...@times-components/responsive@0.7.6) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.7.5](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.7.4...@times-components/responsive@0.7.5) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.7.4](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.7.3...@times-components/responsive@0.7.4) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.7.3](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.7.2...@times-components/responsive@0.7.3) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.7.2](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.7.1...@times-components/responsive@0.7.2) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
+## [0.7.1](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.7.0...@times-components/responsive@0.7.1) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/responsive
+
+
+
+
+
 # [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.6.27...@times-components/responsive@0.7.0) (2021-08-31)
 
 

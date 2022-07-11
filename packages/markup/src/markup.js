@@ -1,75 +1,35 @@
 import React from "react";
-import { Text, StyleSheet, View } from "react-native";
-
-const styles = StyleSheet.create({
-  bold: {
-    fontWeight: "bold"
-  },
-  italic: {
-    fontStyle: "italic"
-  },
-  subscript: {
-    fontSize: 10
-  },
-  superscript: {
-    fontSize: 10
-  }
-});
 
 export default {
   block(key, attributes, renderedChildren) {
-    return <View key={key}>{renderedChildren}</View>;
+    return <div key={key}>{renderedChildren}</div>;
   },
   bold(key, attributes, renderedChildren) {
-    return (
-      <Text key={key} style={styles.bold}>
-        {renderedChildren}
-      </Text>
-    );
+    return <b key={key}>{renderedChildren}</b>;
   },
   break(key) {
-    return <Text key={key}>{"\n"}</Text>;
+    return <br key={key} />;
   },
   emphasis(key, attributes, renderedChildren) {
-    return (
-      <Text key={key} style={styles.italic}>
-        {renderedChildren}
-      </Text>
-    );
+    return <em key={key}>{renderedChildren}</em>;
   },
   inline(key, attributes, renderedChildren) {
-    return <Text key={key}>{renderedChildren}</Text>;
+    return <span key={key}>{renderedChildren}</span>;
   },
   italic(key, attributes, renderedChildren) {
-    return (
-      <Text key={key} style={styles.italic}>
-        {renderedChildren}
-      </Text>
-    );
+    return <i key={key}>{renderedChildren}</i>;
   },
   paragraph(key, attributes, renderedChildren) {
-    return <Text key={key}>{renderedChildren}</Text>;
+    return <p key={key}>{renderedChildren}</p>;
   },
   strong(key, attributes, renderedChildren) {
-    return (
-      <Text key={key} style={styles.bold}>
-        {renderedChildren}
-      </Text>
-    );
+    return <strong key={key}>{renderedChildren}</strong>;
   },
   subscript(key, attributes, renderedChildren) {
-    return (
-      <Text key={key} style={styles.subscript}>
-        {renderedChildren}
-      </Text>
-    );
+    return <sub key={key}>{renderedChildren}</sub>;
   },
   superscript(key, attributes, renderedChildren) {
-    return (
-      <Text key={key} style={styles.superscript}>
-        {renderedChildren}
-      </Text>
-    );
+    return <sup key={key}>{renderedChildren}</sup>;
   },
   text(key, { value }) {
     return value;

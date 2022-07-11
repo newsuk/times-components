@@ -1,22 +1,36 @@
 import get from "lodash.get";
-import { DateTime } from "luxon";
 import { withTrackingContext } from "@times-components/tracking";
+import {
+  getRegistrationType,
+  getSharedStatus,
+  getIsLiveOrBreakingFlag,
+  getActiveArticleFlags
+} from "../data-helper";
 
 export default Component =>
   withTrackingContext(Component, {
-    getAttrs: ({ data, pageSection, referralUrl = "" }) => {
-      const published = DateTime.fromJSDate(
-        new Date(get(data, "publishedTime", ""))
-      );
-      const current = DateTime.local();
-      const diff = current.diff(published, "days");
-      const { days } = diff.values || { days: 0.0 };
-      const editionType = days > 1.0 ? "past 6 days" : "current edition";
+    getAttrs: ({ data, pageSection, navigationMode, referralUrl = "" }) => {
+      let editionType = "";
+      const flags = data.expirableFlags;
+
+      if (navigationMode) {
+        const { isMyArticles, isPastSixDays } = navigationMode;
+        if (isMyArticles) {
+          editionType = "my articles";
+        } else {
+          editionType = isPastSixDays ? "past 6 days" : "current edition";
+        }
+      }
+
       return {
         articleId: get(data, "id", ""),
         article_topic_tags: data.topics
-          ? data.topics.map(topic => topic.slug)
+          ? data.topics.map(topic => topic.name)
           : [],
+        // eslint-disable-next-line
+        isLocked: window.__TIMES_ACCESS_AND_IDENTITY__?.hasAccess
+          ? "unlocked"
+          : "locked",
         bylines: get(
           data,
           "bylines[0].byline[0].children[0].attributes.value",
@@ -30,13 +44,19 @@ export default Component =>
           ""
         )}`,
         edition_type: editionType,
-        published_time: get(data, "publishedTime", ""),
-        past_edition_date:
-          editionType === "past 6 days" ? get(data, "publishedTime", "") : null,
+        publishedTime: get(data, "publishedTime", ""),
         parent_site: get(data, "publicationName", ""),
-        referral_url: referralUrl || get(data, "referralUrl", ""),
+        referralUrl,
         section: pageSection || get(data, "section", ""),
-        template: get(data, "template", "Default")
+        template: get(data, "template", "Default"),
+        registrationType: getRegistrationType(),
+        shared: getSharedStatus(),
+        article_flag: getActiveArticleFlags(flags)
+          ? getActiveArticleFlags(flags)
+          : "no flag",
+        article_template_name: getIsLiveOrBreakingFlag(flags)
+          ? "live template"
+          : "standard template"
       };
     },
     trackingObjectName: "Article"

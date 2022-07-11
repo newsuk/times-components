@@ -1,5 +1,4 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import { mount } from "enzyme";
 import {
   addSerializers,
@@ -8,24 +7,11 @@ import {
   hoistStyleTransform,
   minimalWebTransform,
   replaceTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import Pagination from "../../src/pagination";
-
-const styles = [
-  "alignItems",
-  "color",
-  "height",
-  "flexDirection",
-  "fontFamily",
-  "fontSize",
-  "marginRight",
-  "paddingTop",
-  "paddingVertical",
-  "textAlign"
-];
+import "jest-styled-components";
 
 addSerializers(
   expect,
@@ -35,14 +21,10 @@ addSerializers(
     replaceTransform({
       svg: null
     }),
-    rnwTransform(AppRegistry, styles),
     minimalWebTransform,
     hoistStyleTransform
   )
 );
-
-// eslint-disable-next-line global-require
-require("jest-styled-components");
 
 const mockGenerateLink = page => `?mock-${page}`;
 

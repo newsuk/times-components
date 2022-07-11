@@ -1,6 +1,6 @@
 {
   "name": "@times-components/link",
-  "version": "3.6.44",
+  "version": "3.10.6",
   "description": "component to handle links and navigation",
   "main": "dist/link",
   "dev": "src/link",
@@ -21,10 +21,7 @@
     "url": "git+https://github.com/newsuk/times-components.git"
   },
   "keywords": [
-    "react-native-web",
     "react",
-    "native",
-    "web",
     "link",
     "component"
   ],
@@ -35,12 +32,12 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@times-components/eslint-config-thetimes": "0.8.17",
-    "@times-components/jest-configurator": "2.7.2",
-    "@times-components/jest-serializer": "3.2.26",
-    "@times-components/storybook": "4.1.66",
-    "@times-components/test-utils": "2.3.9",
-    "@times-components/webpack-configurator": "2.0.28",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^12.1.2",
+    "@times-components/eslint-config-thetimes": "0.8.18",
+    "@times-components/jest-configurator": "2.8.0",
+    "@times-components/storybook": "4.2.24",
+    "@times-components/webpack-configurator": "2.0.29",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -48,14 +45,10 @@
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "jest": "24.8.0",
-    "jest-styled-components": "6.3.1",
     "prettier": "1.14.3",
     "react": "16.9.0",
     "react-art": "16.6.3",
     "react-dom": "16.9.0",
-    "react-native": "0.61.5",
-    "react-native-web": "0.11.4",
-    "react-test-renderer": "16.9.0",
     "stylelint": "9.4.0",
     "stylelint-config-recommended": "2.1.0",
     "stylelint-config-styled-components": "0.1.1",
@@ -64,7 +57,8 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.38.22",
+    "@times-components/ts-styleguide": "1.36.3",
+    "@times-components/utils": "6.12.2",
     "prop-types": "15.7.2",
     "react": "16.9.0",
     "react-dom": "16.9.0",
@@ -72,11 +66,14 @@
   },
   "peerDependencies": {
     "react": ">=16.9",
-    "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-dom": ">=16.9"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ]
   }
 }

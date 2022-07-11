@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { TcView, TcText } from "@times-components/utils";
 import Card from "./src/card";
 import { CardWrapper, ReversedCardWrapper } from "./card-wrapper";
 
@@ -30,7 +30,7 @@ export default {
             imageContainerClass="exampleCardImage"
             showImage
           >
-            <View style={childStyle} />
+            <TcView style={childStyle} />
           </Card>
         </CardWrapper>
       ),
@@ -47,7 +47,7 @@ export default {
             imageContainerClass="exampleCardImage"
             showImage
           >
-            <View style={childStyle} />
+            <TcView style={childStyle} />
           </Card>
         </CardWrapper>
       ),
@@ -63,7 +63,7 @@ export default {
             imageContainerClass="exampleCardImage"
             showImage={false}
           >
-            <View style={childStyle} />
+            <TcView style={childStyle} />
           </Card>
         </CardWrapper>
       ),
@@ -80,7 +80,7 @@ export default {
             isReversed
             showImage
           >
-            <View style={childStyle} />
+            <TcView style={childStyle} />
           </Card>
         </ReversedCardWrapper>
       ),
@@ -98,7 +98,7 @@ export default {
             isReversed
             showImage
           >
-            <View style={childStyle} />
+            <TcView style={childStyle} />
           </Card>
         </ReversedCardWrapper>
       ),
@@ -115,7 +115,7 @@ export default {
             isReversed
             showImage={false}
           >
-            <View style={childStyle} />
+            <TcView style={childStyle} />
           </Card>
         </ReversedCardWrapper>
       ),
@@ -132,7 +132,7 @@ export default {
             isLoading
             showImage
           >
-            <Text>Is loading</Text>
+            <TcText>Is loading</TcText>
           </Card>
         </CardWrapper>
       ),
@@ -149,7 +149,7 @@ export default {
             isLoading
             showImage={false}
           >
-            <Text>Is loading</Text>
+            <TcText>Is loading</TcText>
           </Card>
         </CardWrapper>
       ),
@@ -167,7 +167,7 @@ export default {
             isReversed
             showImage
           >
-            <Text>Is loading</Text>
+            <TcText>Is loading</TcText>
           </Card>
         </ReversedCardWrapper>
       ),
@@ -185,7 +185,7 @@ export default {
             isReversed
             showImage={false}
           >
-            <Text>Is loading</Text>
+            <TcText>Is loading</TcText>
           </Card>
         </ReversedCardWrapper>
       ),

@@ -12,7 +12,7 @@ const {
   ContextProviderWithDefaults,
   defaults
 } = require("@times-components/context/rnw");
-const { scales, themeFactory } = require("@times-components/styleguide/rnw");
+const { scales, themeFactory } = require("@times-components/ts-styleguide/rnw");
 
 const scale = scales.large;
 
@@ -29,8 +29,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     userState,
     paidContentClassName,
     isPreview,
+    swgProductId,
     additionalRelatedArticlesFlag,
-    inlineRelatedArticlesFlag,
     algoliaSearchKeys,
     latestFromSectionFlag,
     latestFromSection,
@@ -91,8 +91,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               commentingConfig,
               paidContentClassName,
               isPreview,
+              swgProductId,
               additionalRelatedArticlesFlag,
-              inlineRelatedArticlesFlag,
               algoliaSearchKeys,
               latestFromSectionFlag,
               latestFromSection,

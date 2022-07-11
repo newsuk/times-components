@@ -3,6 +3,314 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.8.1](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.8.0...@times-components/pagination@3.8.1) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+# [3.8.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.7.0...@times-components/pagination@3.8.0) (2022-07-06)
+
+
+### Features
+
+* **TDP-1422:** remove react native from svgs ([#3012](https://github.com/newsuk/times-components/issues/3012)) ([97b3320](https://github.com/newsuk/times-components/commit/97b332030427182178f663eeaa0f8e06e19ae255))
+
+
+
+
+
+# [3.7.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.6.5...@times-components/pagination@3.7.0) (2022-06-16)
+
+
+### Features
+
+* **TDP-1706:** removed react native from pagination ([#2988](https://github.com/newsuk/times-components/issues/2988)) ([af48092](https://github.com/newsuk/times-components/commit/af48092798154b8846aca2fa39b168dcfcc440a8))
+
+
+
+
+
+## [3.6.5](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.6.4...@times-components/pagination@3.6.5) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.6.4](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.6.3...@times-components/pagination@3.6.4) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.6.3](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.6.2...@times-components/pagination@3.6.3) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.6.2](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.6.1...@times-components/pagination@3.6.2) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.6.1](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.6.0...@times-components/pagination@3.6.1) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+# [3.6.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.5.10...@times-components/pagination@3.6.0) (2022-05-10)
+
+
+### Features
+
+* **TDP-1705:** fixed css issue from recent change ([#2936](https://github.com/newsuk/times-components/issues/2936)) ([888e5d6](https://github.com/newsuk/times-components/commit/888e5d62caf3282daeeaf219ec975aa6d0156ee9))
+
+
+
+
+
+## [3.5.10](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.5.9...@times-components/pagination@3.5.10) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.5.9](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.5.8...@times-components/pagination@3.5.9) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.5.8](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.5.7...@times-components/pagination@3.5.8) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.5.7](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.5.6...@times-components/pagination@3.5.7) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.5.6](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.5.5...@times-components/pagination@3.5.6) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.5.5](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.5.4...@times-components/pagination@3.5.5) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.5.4](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.5.3...@times-components/pagination@3.5.4) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.5.3](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.5.2...@times-components/pagination@3.5.3) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.5.2](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.5.1...@times-components/pagination@3.5.2) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.5.1](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.5.0...@times-components/pagination@3.5.1) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+# [3.5.0](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.68...@times-components/pagination@3.5.0) (2022-04-20)
+
+
+### Features
+
+* **TDP-1716:** remove react native from utils ([#2915](https://github.com/newsuk/times-components/issues/2915)) ([647388c](https://github.com/newsuk/times-components/commit/647388c28f6e869be5cb0eb9d85685bec192c723))
+
+
+
+
+
+## [3.4.68](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.67...@times-components/pagination@3.4.68) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.67](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.66...@times-components/pagination@3.4.67) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.66](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.65...@times-components/pagination@3.4.66) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.65](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.64...@times-components/pagination@3.4.65) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.64](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.63...@times-components/pagination@3.4.64) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.63](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.62...@times-components/pagination@3.4.63) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.62](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.61...@times-components/pagination@3.4.62) (2022-04-08)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.61](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.60...@times-components/pagination@3.4.61) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.60](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.59...@times-components/pagination@3.4.60) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.59](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.58...@times-components/pagination@3.4.59) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.58](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.57...@times-components/pagination@3.4.58) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.57](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.56...@times-components/pagination@3.4.57) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.56](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.55...@times-components/pagination@3.4.56) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.55](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.54...@times-components/pagination@3.4.55) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.54](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.53...@times-components/pagination@3.4.54) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.53](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.52...@times-components/pagination@3.4.53) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.52](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.51...@times-components/pagination@3.4.52) (2021-10-28)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
 ## [3.4.51](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.50...@times-components/pagination@3.4.51) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/pagination

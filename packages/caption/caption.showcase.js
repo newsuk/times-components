@@ -1,5 +1,4 @@
 import React from "react";
-import { Image } from "react-native";
 import Caption, { CentredCaption } from "./src/caption";
 
 const captionText =
@@ -43,16 +42,6 @@ export default {
         <Caption credits={credits} style={style} text={captionText} />
       ),
       name: "With specific styles",
-      type: "story"
-    },
-    {
-      component: () => (
-        <Caption credits={credits} text={captionText}>
-          <Image aspectRatio={16 / 9} uri={exampleImage} />
-        </Caption>
-      ),
-      name: "Image with caption",
-      platform: "native",
       type: "story"
     },
     {

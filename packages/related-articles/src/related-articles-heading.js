@@ -1,16 +1,33 @@
 import React from "react";
-
-import { View, Text } from "react-native";
+import styled from "styled-components";
+import { TcView, checkStylesForUnits } from "@times-components/utils";
 import PropTypes from "prop-types";
 
 import styles from "./styles";
 
+export const HeadingForRelatedArticles = styled.h3`
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  ${props => props.styles && props.styles};
+`;
+
 const RelatedArticlesHeading = ({ heading }) => (
-  <View style={styles.titleContainer}>
-    <Text accessibilityRole="header" aria-level="3" style={styles.title}>
+  <TcView style={styles.titleContainer}>
+    <HeadingForRelatedArticles
+      role="heading"
+      aria-level="3"
+      styles={checkStylesForUnits(styles.title)}
+    >
       {heading}
-    </Text>
-  </View>
+    </HeadingForRelatedArticles>
+  </TcView>
 );
 
 RelatedArticlesHeading.propTypes = {

@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import { shallow } from "enzyme";
-import InlineVideoPlayer from "../../src/inline-video-player.web";
+import InlineVideoPlayer from "../../src/inline-video-player";
 import defaultVideoProps from "../default-video-props";
 
 describe("InlineVideoPlayer", () => {

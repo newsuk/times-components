@@ -1,9 +1,15 @@
 import React from "react";
-import { Text, View } from "react-native";
-import { ArticleFlags } from "@times-components/article-flag";
+import {
+  ArticleFlags,
+  UpdatedTimeProvider
+} from "@times-components/ts-components";
+import { fonts } from "@times-components/ts-styleguide";
 import Context from "@times-components/context";
-import { fontFactory } from "@times-components/styleguide";
-import { gqlRgbaToStyle } from "@times-components/utils";
+import {
+  gqlRgbaToStyle,
+  checkStylesForUnits,
+  TcView
+} from "@times-components/utils";
 
 import Label from "../article-label/article-label";
 import Standfirst from "../article-standfirst/article-standfirst";
@@ -13,67 +19,61 @@ import {
 } from "./article-header-prop-types";
 import styles from "../styles";
 
+import {
+  FlagsContainer,
+  HeaderContainer,
+  HeadlineContainer
+} from "../styles/responsive";
+
 const ArticleHeader = ({
   backgroundColour: rgbBackgroundColour,
   flags,
   hasVideo,
   headline,
-  isTablet,
   label,
-  longRead,
   standfirst,
-  textColour: rgbTextColour
+  textColour: rgbTextColour,
+  updatedTime
 }) => {
   const backgroundColour = gqlRgbaToStyle(rgbBackgroundColour);
   const textColour = gqlRgbaToStyle(rgbTextColour);
+  const headlineContainerStyles = (headlineFont, headlineCase) =>
+    checkStylesForUnits({
+      ...styles.articleHeadline,
+      color: textColour,
+      fontFamily: headlineFont ? fonts[headlineFont] : null,
+      textTransform: headlineCase || null
+    });
 
   return (
     <Context.Consumer>
       {({ theme: { headlineFont, headlineCase } }) => (
-        <View
-          style={[
-            styles.container,
-            { backgroundColor: backgroundColour, width: "100%" },
-            isTablet && styles.containerTablet
-          ]}
+        <TcView
+          style={{ backgroundColor: backgroundColour, order: 2, width: "100%" }}
         >
-          <View
-            style={[styles.headerText, isTablet && styles.headerTextTablet]}
-          >
+          <HeaderContainer styles={styles.container}>
             <Label color={textColour} isVideo={hasVideo} label={label} />
-            <Text
-              style={[
-                styles.articleHeadline,
-                {
-                  color: textColour,
-                  ...fontFactory({
-                    font: headlineFont || "headline",
-                    fontSize: isTablet ? "pageHeadline" : "headline"
-                  })
-                },
-                headlineCase ? { textTransform: headlineCase } : null
-              ]}
+            <HeadlineContainer
+              role="heading"
+              aria-level="1"
+              styles={headlineContainerStyles(headlineFont, headlineCase)}
             >
               {headline}
-            </Text>
-            <ArticleFlags
-              color={textColour}
-              flags={flags}
-              longRead={longRead}
-              withContainer
-            />
+            </HeadlineContainer>
+            <FlagsContainer>
+              <UpdatedTimeProvider updatedTime={updatedTime}>
+                <ArticleFlags color={textColour} flags={flags} />
+              </UpdatedTimeProvider>
+            </FlagsContainer>
             <Standfirst color={textColour} standfirst={standfirst} />
-          </View>
-        </View>
+          </HeaderContainer>
+        </TcView>
       )}
     </Context.Consumer>
   );
 };
 
-ArticleHeader.propTypes = {
-  ...articleHeaderPropTypes
-};
-
+ArticleHeader.propTypes = articleHeaderPropTypes;
 ArticleHeader.defaultProps = articleHeaderDefaultProps;
 
 export default ArticleHeader;

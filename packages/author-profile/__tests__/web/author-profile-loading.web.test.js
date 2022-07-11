@@ -1,3 +1,3 @@
-import shared from "../shared-loading.web";
+import shared from "../shared-loading";
 
 shared();

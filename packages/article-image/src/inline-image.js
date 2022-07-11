@@ -1,9 +1,11 @@
 import React from "react";
-import { View } from "react-native";
 import Caption from "@times-components/caption";
-import { ModalImage } from "@times-components/image";
+import Image from "@times-components/image";
 import { propTypes, defaultPropTypes } from "./article-image-prop-types";
-import styles from "./styles";
+import {
+  InsetCaptionContainerStyle,
+  InsetImageStyle
+} from "./styles/responsive";
 
 const renderCaption = (display, caption, credits) => {
   if (!caption && !credits) {
@@ -11,28 +13,26 @@ const renderCaption = (display, caption, credits) => {
   }
 
   return (
-    <View key="caption" style={styles.inlineCaption}>
-      <Caption credits={credits} style={styles} text={caption} />
-    </View>
+    <InsetCaptionContainerStyle key="caption">
+      <figcaption>
+        <Caption credits={credits} text={caption} />
+      </figcaption>
+    </InsetCaptionContainerStyle>
   );
 };
 
-const InlineImage = ({ imageOptions, captionOptions, onImagePress }) => {
+const InlineImage = ({ imageOptions, captionOptions }) => {
   const {
     display,
     highResSize,
     lowResSize,
-    index,
+    lowResQuality,
     ratio,
-    uri,
-    relativeWidth,
-    relativeHeight,
-    relativeHorizontalOffset,
-    relativeVerticalOffset
+    uri
   } = imageOptions;
   const { caption, credits } = captionOptions;
 
-  const imgCaption = [renderCaption(display, caption, credits)];
+  const imgCaption = renderCaption(display, caption, credits);
 
   if (!display || !ratio) {
     return imgCaption;
@@ -41,24 +41,21 @@ const InlineImage = ({ imageOptions, captionOptions, onImagePress }) => {
   const [ratioWidth, ratioHeight] = ratio.split(":");
   const aspectRatio = ratioWidth / ratioHeight;
 
-  return [
-    <View key="img" style={styles.inlineImage}>
-      <ModalImage
-        aspectRatio={aspectRatio}
-        caption={<Caption credits={credits} text={caption} />}
-        highResSize={highResSize}
-        index={index}
-        lowResSize={lowResSize}
-        onImagePress={onImagePress}
-        uri={uri}
-        relativeWidth={relativeWidth}
-        relativeHeight={relativeHeight}
-        relativeHorizontalOffset={relativeHorizontalOffset}
-        relativeVerticalOffset={relativeVerticalOffset}
-      />
-    </View>,
-    ...imgCaption
-  ];
+  return (
+    <figure style={{ margin: 0 }}>
+      <InsetImageStyle key="img">
+        <Image
+          accessibilityLabel={caption}
+          aspectRatio={aspectRatio}
+          highResSize={highResSize}
+          lowResSize={lowResSize}
+          lowResQuality={lowResQuality}
+          uri={uri}
+        />
+      </InsetImageStyle>
+      {imgCaption}
+    </figure>
+  );
 };
 
 InlineImage.propTypes = propTypes;

@@ -6,24 +6,11 @@ import {
 
 const articlePropTypes = {
   ...articlePagePropTypes,
-  analyticsStream: PropTypes.func.isRequired,
-
-  interactiveConfig: PropTypes.shape({}),
-  onAuthorPress: PropTypes.func.isRequired,
-  onCommentGuidelinesPress: PropTypes.func.isRequired,
-  onCommentsPress: PropTypes.func.isRequired,
-  onLinkPress: PropTypes.func.isRequired,
-  onRelatedArticlePress: PropTypes.func.isRequired,
-  onTopicPress: PropTypes.func.isRequired,
-  onTwitterLinkPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired,
-  onViewed: PropTypes.func.isRequired,
-  refetch: PropTypes.func.isRequired
+  navigationMode: PropTypes.shape({}).isRequired
 };
 
 const articleDefaultProps = {
-  ...articlePageDefaultProps,
-  interactiveConfig: {}
+  ...articlePageDefaultProps
 };
 
 export { articlePropTypes, articleDefaultProps };

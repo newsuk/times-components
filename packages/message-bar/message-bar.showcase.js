@@ -1,5 +1,5 @@
 import React from "react";
-import { scales } from "@times-components/styleguide";
+import { scales } from "@times-components/ts-styleguide";
 import MessageBar from "./src/message-bar";
 
 export default {

@@ -3,6 +3,273 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/newsuk/times-components/compare/@times-components/caption@3.1.0...@times-components/caption@3.1.1) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+# [3.1.0](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.174...@times-components/caption@3.1.0) (2022-06-09)
+
+
+### Features
+
+* **TDP-1709:** removed react native from caption ([#2979](https://github.com/newsuk/times-components/issues/2979)) ([79de2a5](https://github.com/newsuk/times-components/commit/79de2a50be4fe2246b069a6aae6eca53e8fbb43c))
+
+
+
+
+
+## [3.0.174](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.173...@times-components/caption@3.0.174) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.173](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.172...@times-components/caption@3.0.173) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.172](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.171...@times-components/caption@3.0.172) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.171](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.170...@times-components/caption@3.0.171) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.170](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.169...@times-components/caption@3.0.170) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.169](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.168...@times-components/caption@3.0.169) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.168](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.167...@times-components/caption@3.0.168) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.167](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.166...@times-components/caption@3.0.167) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.166](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.165...@times-components/caption@3.0.166) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.165](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.164...@times-components/caption@3.0.165) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.164](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.163...@times-components/caption@3.0.164) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.163](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.162...@times-components/caption@3.0.163) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.162](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.161...@times-components/caption@3.0.162) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.161](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.160...@times-components/caption@3.0.161) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.160](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.159...@times-components/caption@3.0.160) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.159](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.158...@times-components/caption@3.0.159) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.158](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.157...@times-components/caption@3.0.158) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.157](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.156...@times-components/caption@3.0.157) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.156](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.155...@times-components/caption@3.0.156) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.155](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.154...@times-components/caption@3.0.155) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.154](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.153...@times-components/caption@3.0.154) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.153](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.152...@times-components/caption@3.0.153) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.152](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.151...@times-components/caption@3.0.152) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.151](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.150...@times-components/caption@3.0.151) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.150](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.149...@times-components/caption@3.0.150) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.149](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.148...@times-components/caption@3.0.149) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.148](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.147...@times-components/caption@3.0.148) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.147](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.146...@times-components/caption@3.0.147) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.146](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.145...@times-components/caption@3.0.146) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.145](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.144...@times-components/caption@3.0.145) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.144](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.143...@times-components/caption@3.0.144) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
 ## [3.0.143](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.142...@times-components/caption@3.0.143) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/caption

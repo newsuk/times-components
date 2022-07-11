@@ -3,6 +3,1274 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.85.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.5...@times-components/article-skeleton@1.85.6) (2022-07-11)
+
+
+### Bug Fixes
+
+* **TDP-1704:** Remove react-native from jest-serializer package ([#3015](https://github.com/newsuk/times-components/issues/3015)) ([5b6da8f](https://github.com/newsuk/times-components/commit/5b6da8f1392c3b42a9c0944d44be3d9ed3e7db2f))
+
+
+
+
+
+## [1.85.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.4...@times-components/article-skeleton@1.85.5) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.85.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.3...@times-components/article-skeleton@1.85.4) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.85.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.2...@times-components/article-skeleton@1.85.3) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.85.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.1...@times-components/article-skeleton@1.85.2) (2022-07-08)
+
+
+### Bug Fixes
+
+* **TDP-2179:** Fix article_flag bug ([#3017](https://github.com/newsuk/times-components/issues/3017)) ([3d28b9f](https://github.com/newsuk/times-components/commit/3d28b9f97dde079a72a21df2acd13cffac0495cf))
+
+
+
+
+
+## [1.85.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.0...@times-components/article-skeleton@1.85.1) (2022-07-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.85.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.84.1...@times-components/article-skeleton@1.85.0) (2022-07-06)
+
+
+### Features
+
+* **TDP-1422:** remove react native from svgs ([#3012](https://github.com/newsuk/times-components/issues/3012)) ([97b3320](https://github.com/newsuk/times-components/commit/97b332030427182178f663eeaa0f8e06e19ae255))
+
+
+
+
+
+## [1.84.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.84.0...@times-components/article-skeleton@1.84.1) (2022-07-06)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.84.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.17...@times-components/article-skeleton@1.84.0) (2022-07-04)
+
+
+### Features
+
+* **TDP-1695:** updated save star web to remove use new Active Icon a… ([#3007](https://github.com/newsuk/times-components/issues/3007)) ([612a69d](https://github.com/newsuk/times-components/commit/612a69d6e835dc2441c97cf40752070043967de8))
+
+
+
+
+
+## [1.83.17](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.16...@times-components/article-skeleton@1.83.17) (2022-07-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.15...@times-components/article-skeleton@1.83.16) (2022-07-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.14...@times-components/article-skeleton@1.83.15) (2022-06-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.13...@times-components/article-skeleton@1.83.14) (2022-06-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.12...@times-components/article-skeleton@1.83.13) (2022-06-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.11...@times-components/article-skeleton@1.83.12) (2022-06-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.10...@times-components/article-skeleton@1.83.11) (2022-06-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.9...@times-components/article-skeleton@1.83.10) (2022-06-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.8...@times-components/article-skeleton@1.83.9) (2022-06-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.7...@times-components/article-skeleton@1.83.8) (2022-06-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.6...@times-components/article-skeleton@1.83.7) (2022-06-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.5...@times-components/article-skeleton@1.83.6) (2022-06-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.4...@times-components/article-skeleton@1.83.5) (2022-06-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.3...@times-components/article-skeleton@1.83.4) (2022-06-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.2...@times-components/article-skeleton@1.83.3) (2022-06-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.1...@times-components/article-skeleton@1.83.2) (2022-06-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.83.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.83.0...@times-components/article-skeleton@1.83.1) (2022-06-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.83.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.13...@times-components/article-skeleton@1.83.0) (2022-06-16)
+
+
+### Features
+
+* **TDP-1931:** add newsletters to puff ([#2985](https://github.com/newsuk/times-components/issues/2985)) ([e919d43](https://github.com/newsuk/times-components/commit/e919d4302bc01b049021d922846164696d9e8155))
+
+
+
+
+
+## [1.82.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.12...@times-components/article-skeleton@1.82.13) (2022-06-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.82.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.11...@times-components/article-skeleton@1.82.12) (2022-06-14)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.82.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.10...@times-components/article-skeleton@1.82.11) (2022-06-14)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.82.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.9...@times-components/article-skeleton@1.82.10) (2022-06-10)
+
+
+### Bug Fixes
+
+* **TDP-2101:** remove articleSection "article" and "current edition" prefix ([#2980](https://github.com/newsuk/times-components/issues/2980)) ([681ac9c](https://github.com/newsuk/times-components/commit/681ac9cf15647d4840c3f2f7ae4f509370075ba8))
+
+
+
+
+
+## [1.82.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.8...@times-components/article-skeleton@1.82.9) (2022-06-09)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.82.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.7...@times-components/article-skeleton@1.82.8) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.82.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.6...@times-components/article-skeleton@1.82.7) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.82.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.5...@times-components/article-skeleton@1.82.6) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.82.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.4...@times-components/article-skeleton@1.82.5) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.82.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.3...@times-components/article-skeleton@1.82.4) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.82.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.2...@times-components/article-skeleton@1.82.3) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.82.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.1...@times-components/article-skeleton@1.82.2) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.82.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.82.0...@times-components/article-skeleton@1.82.1) (2022-06-06)
+
+
+### Bug Fixes
+
+* **TDP-1520:** add articleSection to live articles ([#2965](https://github.com/newsuk/times-components/issues/2965)) ([0cab0a0](https://github.com/newsuk/times-components/commit/0cab0a03cfe2d4103900b7b1b693641119d834c6))
+
+
+
+
+
+# [1.82.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.81.2...@times-components/article-skeleton@1.82.0) (2022-06-01)
+
+
+### Features
+
+* **TDP-1520:** add articleSection to article JSON LD ([#2956](https://github.com/newsuk/times-components/issues/2956)) ([4c108ed](https://github.com/newsuk/times-components/commit/4c108ed699ac6ebfc41949de29d89eaeb7f3b03f))
+
+
+
+
+
+## [1.81.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.81.1...@times-components/article-skeleton@1.81.2) (2022-05-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.81.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.81.0...@times-components/article-skeleton@1.81.1) (2022-05-26)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.81.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.19...@times-components/article-skeleton@1.81.0) (2022-05-25)
+
+
+### Features
+
+* **TDP-1942:** Integrate Times Components to NewsKit API ([#2946](https://github.com/newsuk/times-components/issues/2946)) ([53ab6f0](https://github.com/newsuk/times-components/commit/53ab6f00849da0dfd4256dce7d5feae5154cafd9)), closes [#2939](https://github.com/newsuk/times-components/issues/2939) [#2941](https://github.com/newsuk/times-components/issues/2941) [#2943](https://github.com/newsuk/times-components/issues/2943) [#2944](https://github.com/newsuk/times-components/issues/2944)
+
+
+
+
+
+## [1.80.19](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.18...@times-components/article-skeleton@1.80.19) (2022-05-19)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.18](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.17...@times-components/article-skeleton@1.80.18) (2022-05-19)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.17](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.16...@times-components/article-skeleton@1.80.17) (2022-05-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.15...@times-components/article-skeleton@1.80.16) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.14...@times-components/article-skeleton@1.80.15) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.13...@times-components/article-skeleton@1.80.14) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.12...@times-components/article-skeleton@1.80.13) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.11...@times-components/article-skeleton@1.80.12) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.10...@times-components/article-skeleton@1.80.11) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.9...@times-components/article-skeleton@1.80.10) (2022-05-09)
+
+
+### Bug Fixes
+
+* **tdp-1829:** update flag tracking ([#2935](https://github.com/newsuk/times-components/issues/2935)) ([031a153](https://github.com/newsuk/times-components/commit/031a15356d376cd4b75f0ea4f24e02ff20ebfecc))
+
+
+
+
+
+## [1.80.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.8...@times-components/article-skeleton@1.80.9) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.7...@times-components/article-skeleton@1.80.8) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.6...@times-components/article-skeleton@1.80.7) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.5...@times-components/article-skeleton@1.80.6) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.4...@times-components/article-skeleton@1.80.5) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.3...@times-components/article-skeleton@1.80.4) (2022-04-21)
+
+
+### Bug Fixes
+
+* **TDP-000:** ArticleHeader date and time update ([#2924](https://github.com/newsuk/times-components/issues/2924)) ([7453ab2](https://github.com/newsuk/times-components/commit/7453ab2498cc12a6e6ea8ba1df9ee71bb4798628))
+
+
+
+
+
+## [1.80.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.2...@times-components/article-skeleton@1.80.3) (2022-04-21)
+
+
+### Bug Fixes
+
+* **TDP-000:** ArticleHeader date and time update ([#2922](https://github.com/newsuk/times-components/issues/2922)) ([ca8259f](https://github.com/newsuk/times-components/commit/ca8259fd2b978f4821c8b14dedd6452dc4d8c1e2))
+
+
+
+
+
+## [1.80.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.1...@times-components/article-skeleton@1.80.2) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.80.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.80.0...@times-components/article-skeleton@1.80.1) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.80.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.79.2...@times-components/article-skeleton@1.80.0) (2022-04-20)
+
+
+### Features
+
+* **TDP-1716:** remove react native from utils ([#2915](https://github.com/newsuk/times-components/issues/2915)) ([647388c](https://github.com/newsuk/times-components/commit/647388c28f6e869be5cb0eb9d85685bec192c723))
+
+
+
+
+
+## [1.79.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.79.1...@times-components/article-skeleton@1.79.2) (2022-04-19)
+
+
+### Bug Fixes
+
+* **TDP-1777:** Make analytics article_flag data lower case ([#2916](https://github.com/newsuk/times-components/issues/2916)) ([5c4f49a](https://github.com/newsuk/times-components/commit/5c4f49a0ee07224815ed84b707c940e0dc8de39d))
+
+
+
+
+
+## [1.79.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.79.0...@times-components/article-skeleton@1.79.1) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.79.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.78.5...@times-components/article-skeleton@1.79.0) (2022-04-12)
+
+
+### Features
+
+* **TDP-1742:** Add article-template-name to article tracking ([#2914](https://github.com/newsuk/times-components/issues/2914)) ([b52a4c6](https://github.com/newsuk/times-components/commit/b52a4c6c0b08d3cba196b65a8856c2f40a5cea92))
+
+
+
+
+
+## [1.78.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.78.4...@times-components/article-skeleton@1.78.5) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.78.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.78.3...@times-components/article-skeleton@1.78.4) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.78.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.78.2...@times-components/article-skeleton@1.78.3) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.78.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.78.1...@times-components/article-skeleton@1.78.2) (2022-04-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.78.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.78.0...@times-components/article-skeleton@1.78.1) (2022-04-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.78.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.77.0...@times-components/article-skeleton@1.78.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1577:** key moments anchor links ([#2904](https://github.com/newsuk/times-components/issues/2904)) ([761a1c5](https://github.com/newsuk/times-components/commit/761a1c590d597e9cb1a4a78dbbf2b747d81749c9))
+
+
+
+
+
+# [1.77.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.76.9...@times-components/article-skeleton@1.77.0) (2022-04-05)
+
+
+### Features
+
+* **TDP-1639:** live flag analytics param renaming ([#2900](https://github.com/newsuk/times-components/issues/2900)) ([39099ab](https://github.com/newsuk/times-components/commit/39099ab577734ff2123c18aace8afc706faf3634))
+
+
+
+
+
+## [1.76.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.76.8...@times-components/article-skeleton@1.76.9) (2022-04-05)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.76.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.76.7...@times-components/article-skeleton@1.76.8) (2022-04-05)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.76.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.76.6...@times-components/article-skeleton@1.76.7) (2022-04-05)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.76.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.76.5...@times-components/article-skeleton@1.76.6) (2022-04-04)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.76.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.76.4...@times-components/article-skeleton@1.76.5) (2022-04-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.76.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.76.3...@times-components/article-skeleton@1.76.4) (2022-03-31)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.76.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.76.2...@times-components/article-skeleton@1.76.3) (2022-03-31)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.76.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.76.1...@times-components/article-skeleton@1.76.2) (2022-03-31)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.76.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.76.0...@times-components/article-skeleton@1.76.1) (2022-03-31)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.76.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.75.1...@times-components/article-skeleton@1.76.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [1.75.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.75.0...@times-components/article-skeleton@1.75.1) (2022-03-28)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.75.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.74.0...@times-components/article-skeleton@1.75.0) (2022-03-28)
+
+
+### Features
+
+* **TDP-000:** Anchor link update ([#2889](https://github.com/newsuk/times-components/issues/2889)) ([b215455](https://github.com/newsuk/times-components/commit/b215455caae45fd403e04302017588083bdb398f))
+
+
+
+
+
+# [1.74.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.73.5...@times-components/article-skeleton@1.74.0) (2022-03-28)
+
+
+### Features
+
+* **TDP-1577:** Add offset to Live News anchor links ([#2887](https://github.com/newsuk/times-components/issues/2887)) ([8699328](https://github.com/newsuk/times-components/commit/86993289c07d1ce81faed25e1dc8c456c9af767a))
+
+
+
+
+
+## [1.73.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.73.4...@times-components/article-skeleton@1.73.5) (2022-03-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.73.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.73.3...@times-components/article-skeleton@1.73.4) (2022-03-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.73.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.73.2...@times-components/article-skeleton@1.73.3) (2022-03-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.73.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.73.1...@times-components/article-skeleton@1.73.2) (2022-03-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.73.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.73.0...@times-components/article-skeleton@1.73.1) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.73.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.11...@times-components/article-skeleton@1.73.0) (2022-03-16)
+
+
+### Features
+
+* **TDP-1452:** updated live blog schema to have live blog updates ([#2878](https://github.com/newsuk/times-components/issues/2878)) ([290fdb7](https://github.com/newsuk/times-components/commit/290fdb7ab28c1ffce8ca7c09c59c0e541fa83448))
+
+
+
+
+
+## [1.72.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.10...@times-components/article-skeleton@1.72.11) (2022-03-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.72.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.9...@times-components/article-skeleton@1.72.10) (2022-03-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.72.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.8...@times-components/article-skeleton@1.72.9) (2022-03-14)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.72.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.7...@times-components/article-skeleton@1.72.8) (2022-03-11)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.72.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.6...@times-components/article-skeleton@1.72.7) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.72.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.5...@times-components/article-skeleton@1.72.6) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.72.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.4...@times-components/article-skeleton@1.72.5) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.72.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.3...@times-components/article-skeleton@1.72.4) (2022-03-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.72.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.2...@times-components/article-skeleton@1.72.3) (2022-03-04)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.72.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.1...@times-components/article-skeleton@1.72.2) (2022-03-02)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.72.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.72.0...@times-components/article-skeleton@1.72.1) (2022-03-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.72.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.71.4...@times-components/article-skeleton@1.72.0) (2022-02-28)
+
+
+### Features
+
+* **TDP-1139:** live news analytics for in article components ([#2862](https://github.com/newsuk/times-components/issues/2862)) ([89f912b](https://github.com/newsuk/times-components/commit/89f912be1ac9e16a439d28ef93f905e59971303f))
+
+
+
+
+
+## [1.71.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.71.3...@times-components/article-skeleton@1.71.4) (2022-02-25)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.71.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.71.2...@times-components/article-skeleton@1.71.3) (2022-02-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.71.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.71.1...@times-components/article-skeleton@1.71.2) (2022-02-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.71.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.71.0...@times-components/article-skeleton@1.71.1) (2022-02-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.71.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.70.1...@times-components/article-skeleton@1.71.0) (2022-02-22)
+
+
+### Features
+
+* **TDP-758:** updated validation of expiry time to include null for open ended validity ([#2857](https://github.com/newsuk/times-components/issues/2857)) ([d013af2](https://github.com/newsuk/times-components/commit/d013af256bbac351e2291379256675d8d3746369))
+
+
+
+
+
+## [1.70.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.70.0...@times-components/article-skeleton@1.70.1) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.70.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.69.0...@times-components/article-skeleton@1.70.0) (2022-02-16)
+
+
+### Features
+
+* **TDP-758:** added liveBlog as an alternative schema for live articles ([#2847](https://github.com/newsuk/times-components/issues/2847)) ([9e15f4e](https://github.com/newsuk/times-components/commit/9e15f4e85dd398fd4bc46b8a91cb61b942ba4181))
+
+
+
+
+
+# [1.69.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.68.0...@times-components/article-skeleton@1.69.0) (2022-02-16)
+
+
+### Features
+
+* **TDP-1304:** disable newsletter for live news ([#2853](https://github.com/newsuk/times-components/issues/2853)) ([1ab8e29](https://github.com/newsuk/times-components/commit/1ab8e29ecc9b80dde32ddae9c9d71775abe3f270))
+
+
+
+
+
+# [1.68.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.67.4...@times-components/article-skeleton@1.68.0) (2022-02-14)
+
+
+### Features
+
+* **TDP-1282:** remove inline ads for live and breaking ([#2848](https://github.com/newsuk/times-components/issues/2848)) ([ce82214](https://github.com/newsuk/times-components/commit/ce82214b283503c4d883f1077cf18dd4f74e5cd6))
+
+
+
+
+
+## [1.67.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.67.3...@times-components/article-skeleton@1.67.4) (2022-02-14)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.67.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.67.2...@times-components/article-skeleton@1.67.3) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.67.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.67.1...@times-components/article-skeleton@1.67.2) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.67.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.67.0...@times-components/article-skeleton@1.67.1) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.67.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.66.0...@times-components/article-skeleton@1.67.0) (2022-01-24)
+
+
+### Features
+
+* **TDP-741:** live news fixing helper function & updating code owners ([#2844](https://github.com/newsuk/times-components/issues/2844)) ([b9ed88c](https://github.com/newsuk/times-components/commit/b9ed88c5d1a0f86a560f6322c2bbf90255e0b20d))
+
+
+
+
+
+# [1.66.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.65.1...@times-components/article-skeleton@1.66.0) (2022-01-21)
+
+
+### Features
+
+* **TDP-479:** Add article breaking flag ([#2831](https://github.com/newsuk/times-components/issues/2831)) ([f1f990a](https://github.com/newsuk/times-components/commit/f1f990ae8012fcb8d33fabc40494b1a7115cbab0))
+
+
+
+
+
+## [1.65.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.65.0...@times-components/article-skeleton@1.65.1) (2022-01-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.65.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.12...@times-components/article-skeleton@1.65.0) (2022-01-20)
+
+
+### Features
+
+* **TDP-741:** live news article page analytics ([#2836](https://github.com/newsuk/times-components/issues/2836)) ([92b9d05](https://github.com/newsuk/times-components/commit/92b9d05abebb3af783c98cd4f1d13da12c88929e))
+
+
+
+
+
+## [1.64.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.11...@times-components/article-skeleton@1.64.12) (2022-01-14)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.64.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.10...@times-components/article-skeleton@1.64.11) (2022-01-13)
+
+
+### Bug Fixes
+
+* **TDP-000:** InlineRelatedArticles ([#2837](https://github.com/newsuk/times-components/issues/2837)) ([4fcda6b](https://github.com/newsuk/times-components/commit/4fcda6bd3b6a9362e10f4c30bbd8a7fb56d69d96))
+
+
+
+
+
+## [1.64.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.9...@times-components/article-skeleton@1.64.10) (2022-01-12)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.64.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.8...@times-components/article-skeleton@1.64.9) (2022-01-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.64.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.7...@times-components/article-skeleton@1.64.8) (2022-01-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.64.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.6...@times-components/article-skeleton@1.64.7) (2022-01-07)
+
+
+### Bug Fixes
+
+* **TPD-997:** Remove inline related articles flag ([#2834](https://github.com/newsuk/times-components/issues/2834)) ([ffc332a](https://github.com/newsuk/times-components/commit/ffc332a0bf096e5436427b990a495bb3caff80ff))
+
+
+
+
+
+## [1.64.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.5...@times-components/article-skeleton@1.64.6) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.64.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.4...@times-components/article-skeleton@1.64.5) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.64.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.3...@times-components/article-skeleton@1.64.4) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.64.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.2...@times-components/article-skeleton@1.64.3) (2021-12-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.64.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.1...@times-components/article-skeleton@1.64.2) (2021-12-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.64.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.64.0...@times-components/article-skeleton@1.64.1) (2021-12-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.64.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.63.2...@times-components/article-skeleton@1.64.0) (2021-12-02)
+
+
+### Features
+
+* **TDP-861:** Remove Comment and Sport Newsletters from Automated Newsletters Puff ([#2821](https://github.com/newsuk/times-components/issues/2821)) ([1cbf80e](https://github.com/newsuk/times-components/commit/1cbf80e224e09a73f5728926eb4b1e02c020d381))
+
+
+
+
+
+## [1.63.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.63.1...@times-components/article-skeleton@1.63.2) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.63.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.63.0...@times-components/article-skeleton@1.63.1) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.63.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.62.3...@times-components/article-skeleton@1.63.0) (2021-11-24)
+
+
+### Features
+
+* **GEA-255:** Add swgProductId to structured data ([#2817](https://github.com/newsuk/times-components/issues/2817)) ([747323b](https://github.com/newsuk/times-components/commit/747323b115a99afa26022d714026ade45423ce9e))
+
+
+
+
+
+## [1.62.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.62.2...@times-components/article-skeleton@1.62.3) (2021-11-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.62.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.62.1...@times-components/article-skeleton@1.62.2) (2021-11-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.62.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.62.0...@times-components/article-skeleton@1.62.1) (2021-11-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.62.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.61.4...@times-components/article-skeleton@1.62.0) (2021-10-28)
+
+
+### Features
+
+* **GEA-246:** add article_locked_status value to article tracking ([#2809](https://github.com/newsuk/times-components/issues/2809)) ([55e3f7a](https://github.com/newsuk/times-components/commit/55e3f7a2089a7d308ec8976eb558a7d20ed1ddbb))
+
+
+
+
+
+## [1.61.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.61.3...@times-components/article-skeleton@1.61.4) (2021-10-27)
+
+
+### Bug Fixes
+
+* **SCB-1480:** Add more ad clearfix ([#2808](https://github.com/newsuk/times-components/issues/2808)) ([6a22ca9](https://github.com/newsuk/times-components/commit/6a22ca9725d47733638c2acff5ef95decbb30772))
+
+
+
+
+
+## [1.61.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.61.2...@times-components/article-skeleton@1.61.3) (2021-10-26)
+
+
+### Bug Fixes
+
+* **SCB-1480:** Ad Slot content overlap ([#2807](https://github.com/newsuk/times-components/issues/2807)) ([0f93fb9](https://github.com/newsuk/times-components/commit/0f93fb96a63c7e7ae14558fd58cccdfae03b4b29))
+
+
+
+
+
+## [1.61.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.61.1...@times-components/article-skeleton@1.61.2) (2021-10-25)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.61.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.61.0...@times-components/article-skeleton@1.61.1) (2021-10-21)
 
 **Note:** Version bump only for package @times-components/article-skeleton

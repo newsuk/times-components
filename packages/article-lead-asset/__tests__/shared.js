@@ -3,36 +3,51 @@ import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
   compose,
-  print,
-  minimalNativeTransform
+  minimalWebTransform,
+  flattenStyleTransform,
+  hoistStyleTransform,
+  stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import shared from "./shared.base";
+import shared, { props } from "./shared.base";
+
 import ArticleLeadAsset from "../src/article-lead-asset";
 
 addSerializers(
   expect,
   compose(
-    print,
-    minimalNativeTransform
+    stylePrinter,
+    minimalWebTransform,
+    flattenStyleTransform,
+    hoistStyleTransform
   )
 );
-
 export default () =>
   iterator([
     ...shared(),
     {
-      name: "renders correctly when there is no available crop",
+      name: "correctly renders when there is no displayImage",
       test() {
-        const testRenderer = TestRenderer.create(
+        const testInstance = TestRenderer.create(
           <ArticleLeadAsset
-            getImageCrop={() => null}
+            {...props}
+            displayImage={null}
             leadAsset={{}}
             width={600}
           />
         );
 
-        expect(testRenderer).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "it renders correctly with a className",
+      test() {
+        const testInstance = TestRenderer.create(
+          <ArticleLeadAsset {...props} className="test-class-name" />
+        );
+
+        expect(testInstance).toMatchSnapshot();
       }
     }
   ]);

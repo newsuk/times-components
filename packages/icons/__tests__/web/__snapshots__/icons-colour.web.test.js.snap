@@ -138,9 +138,7 @@ Array [
 
 exports[`12. closeicon renders with different colours 1`] = `
 Array [
-  <title>
-    Close Icon
-  </title>,
+  <title />,
   <path
     fill="white"
     stroke="white"
@@ -154,4 +152,14 @@ exports[`13. iconforwardchevron renders with different colours 1`] = `
 >
   <path />
 </g>
+`;
+
+exports[`14. iconactivityindicator renders with different colours 1`] = `
+<activity-indicator__ActivityIndicatorContainer>
+  <div>
+    <activity-indicator__ActivityIndicatorSpinner>
+      <div />
+    </activity-indicator__ActivityIndicatorSpinner>
+  </div>
+</activity-indicator__ActivityIndicatorContainer>
 `;

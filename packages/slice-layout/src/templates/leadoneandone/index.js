@@ -1,6 +1,6 @@
 import React from "react";
-import { View } from "react-native";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { TcView } from "@times-components/utils";
+import { editionBreakpoints } from "@times-components/ts-styleguide";
 import PropTypes from "prop-types";
 import HorizontalLayout from "../horizontallayout";
 import styleFactory from "./styles";
@@ -10,11 +10,11 @@ const leadOneAndOneSlice = ({ breakpoint, lead, support }) => {
 
   if (breakpoint === editionBreakpoints.small) {
     return (
-      <View>
+      <TcView>
         {lead}
-        <View style={styles.keyline} />
+        <TcView style={styles.keyline} />
         {support}
-      </View>
+      </TcView>
     );
   }
 

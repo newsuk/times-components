@@ -1,6 +1,6 @@
 {
   "name": "@times-components/depend",
-  "version": "2.1.28",
+  "version": "2.2.0",
   "description": "dependency analyzer and fixer",
   "main": "dist/depend",
   "scripts": {
@@ -53,7 +53,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@times-components/eslint-config-thetimes": "0.8.17",
+    "@times-components/eslint-config-thetimes": "0.8.18",
     "babel-jest": "24.8.0",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
@@ -63,12 +63,10 @@
   "dependencies": {
     "chalk": "2.4.1",
     "commander": "2.17.1",
-    "core-js": "^2.6.5",
     "fs-extra": "7.0.0",
     "glob": "7.1.2",
     "lodash.flatten": "4.4.0",
     "minimatch": "3.0.4",
-    "regenerator-runtime": "0.13.7",
     "semver": "5.5.0"
   },
   "publishConfig": {

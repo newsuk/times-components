@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
-import { spacing } from "@times-components/styleguide";
 import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import {
   TrackingContextProvider,
   AlgoliaSearchProvider
 } from "@times-components/ts-components";
+import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 
@@ -27,7 +27,7 @@ import {
   HeaderContainer,
   MainContainer
 } from "./styles/responsive";
-import styles from "./styles/article-body/index.web";
+import styles from "./styles/article-body/index";
 import Head from "./head";
 import PaywallPortal from "./paywall-portal";
 import StickySaveAndShareBar from "./sticky-save-and-share-bar";
@@ -36,6 +36,7 @@ import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineRelatedArticles from "./contentModifiers/inline-related-article";
 import insertNativeAd from "./contentModifiers/native-ad";
 import insertInlineAd from "./contentModifiers/inline-ad";
+import { getIsLiveOrBreakingFlag } from "./data-helper";
 
 export const reduceArticleContent = (content, reducers) =>
   content &&
@@ -51,8 +52,8 @@ const ArticleSkeleton = ({
   commentingConfig,
   paidContentClassName,
   isPreview,
+  swgProductId,
   additionalRelatedArticlesFlag,
-  inlineRelatedArticlesFlag,
   inlineRelatedArticleOptions,
   algoliaSearchKeys,
   latestFromSectionFlag,
@@ -69,6 +70,7 @@ const ArticleSkeleton = ({
     url,
     headline,
     shortHeadline,
+    expirableFlags,
     label,
     topics,
     relatedArticleSlice,
@@ -80,12 +82,11 @@ const ArticleSkeleton = ({
 
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
-    insertNewsletterPuff(section, isPreview),
+    insertNewsletterPuff(section, isPreview, expirableFlags),
     insertNativeAd,
     insertInlineAd,
     insertInlineRelatedArticles(
       relatedArticleSlice,
-      inlineRelatedArticlesFlag,
       inlineRelatedArticleOptions
     ),
     tagLastParagraph
@@ -105,6 +106,9 @@ const ArticleSkeleton = ({
       name: "related articles"
     }
   ]);
+
+  const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
+
   return (
     <StickyProvider>
       <TrackingContextProvider
@@ -155,6 +159,7 @@ const ArticleSkeleton = ({
             logoUrl={logoUrl}
             paidContentClassName={paidContentClassName}
             getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
+            swgProductId={swgProductId}
           />
           <AlgoliaSearchProvider
             algoliaSearchKeys={algoliaSearchKeys}
@@ -165,7 +170,7 @@ const ArticleSkeleton = ({
               <HeaderAdContainer key="headerAd">
                 <AdContainer slotName="header" style={styles.adMarginStyle} />
               </HeaderAdContainer>
-              <MainContainer accessibilityRole="main">
+              <MainContainer>
                 <HeaderContainer>
                   <Header />
                   {savingEnabled || sharingEnabled ? (
@@ -189,17 +194,19 @@ const ArticleSkeleton = ({
                     </UserState>
                   ) : null}
                 </HeaderContainer>
-                <BodyContainer accessibilityRole="article">
+                <BodyContainer>
                   {newContent && (
                     <ArticleBody
                       analyticsStream={analyticsStream}
                       content={newContent}
                       contextUrl={url}
                       section={section}
+                      articleHeadline={headline}
                       paidContentClassName={paidContentClassName}
                       template={template}
                       isPreview={isPreview}
                       olympicsKeys={olympicsKeys}
+                      isLiveOrBreaking={isLiveOrBreaking}
                     />
                   )}
                   <PaywallPortal
@@ -213,6 +220,7 @@ const ArticleSkeleton = ({
                         articleId={articleId}
                         articleHeadline={headline}
                         articleUrl={url}
+                        section={section}
                         publishedTime={publishedTime}
                         savingEnabled={savingEnabled}
                         sharingEnabled={sharingEnabled}

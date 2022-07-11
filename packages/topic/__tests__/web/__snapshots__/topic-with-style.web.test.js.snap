@@ -88,7 +88,7 @@ exports[`1. an article list header 1`] = `
   className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-minHeight-1aplaab r-paddingHorizontal-utggzx r-paddingTop-1ur9v65 r-width-13qz1uu S2"
 >
   <div
-    className="c0 responsiveweb__HeadContainerWithDescription-sc-1n59g01-0 c0 css-view-1dbjc4n"
+    className="c0 responsive__HeadContainerWithDescription-sc-1qy9k4m-0 c0 css-view-1dbjc4n"
   >
     <h1
       className="c1"
@@ -96,7 +96,7 @@ exports[`1. an article list header 1`] = `
       Test Name
     </h1>
     <div
-      className="c2 responsiveweb__ResponsiveDivider-sc-1n59g01-3 c2 css-view-1dbjc4n"
+      className="c2 responsive__ResponsiveDivider-sc-1qy9k4m-3 c2 css-view-1dbjc4n"
     />
     <div
       className="css-text-901oao r-color-1khnkhu r-fontFamily-1feecvn r-fontSize-a023e6 r-lineHeight-eaezby r-paddingBottom-19yat4t r-textAlign-q4m81j S1"

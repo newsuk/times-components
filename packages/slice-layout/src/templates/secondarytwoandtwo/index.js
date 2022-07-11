@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import { View } from "react-native";
-import { editionBreakpoints } from "@times-components/styleguide";
+import { TcView } from "@times-components/utils";
+import { editionBreakpoints } from "@times-components/ts-styleguide";
 import PropTypes from "prop-types";
 import styleFactory from "./styles";
 import { ItemRowSeparator } from "../shared";
@@ -25,16 +25,16 @@ const SecondaryTwoAndTwoSlice = ({
           ]}
         />
         <ItemRowSeparator />
-        <View>{support1}</View>
+        <TcView>{support1}</TcView>
         <ItemRowSeparator />
-        <View>{support2}</View>
+        <TcView>{support2}</TcView>
       </Fragment>
     );
   }
 
   if (breakpoint === editionBreakpoints.medium) {
     return (
-      <View style={styles.container}>
+      <TcView style={styles.container}>
         <HorizontalLayout
           containerStyle={styles.itemContainer}
           tiles={[
@@ -50,7 +50,7 @@ const SecondaryTwoAndTwoSlice = ({
             { style: styles.item, tile: support2 }
           ]}
         />
-      </View>
+      </TcView>
     );
   }
 

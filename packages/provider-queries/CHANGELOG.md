@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.17.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.16.0...@times-components/provider-queries@2.17.0) (2022-06-08)
+
+
+### Features
+
+* **TDP-1935:** Recommended articles ([#2969](https://github.com/newsuk/times-components/issues/2969)) ([9b6b9b0](https://github.com/newsuk/times-components/commit/9b6b9b09c918433ad5b2945d5fe2fc4c13002c13))
+
+
+
+
+
+# [2.16.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.15.3...@times-components/provider-queries@2.16.0) (2022-05-25)
+
+
+### Features
+
+* **TDP-1942:** Integrate Times Components to NewsKit API ([#2946](https://github.com/newsuk/times-components/issues/2946)) ([53ab6f0](https://github.com/newsuk/times-components/commit/53ab6f00849da0dfd4256dce7d5feae5154cafd9)), closes [#2939](https://github.com/newsuk/times-components/issues/2939) [#2941](https://github.com/newsuk/times-components/issues/2941) [#2943](https://github.com/newsuk/times-components/issues/2943) [#2944](https://github.com/newsuk/times-components/issues/2944)
+
+
+
+
+
+## [2.15.3](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.15.2...@times-components/provider-queries@2.15.3) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/provider-queries
+
+
+
+
+
+## [2.15.2](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.15.1...@times-components/provider-queries@2.15.2) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/provider-queries
+
+
+
+
+
 ## [2.15.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.15.0...@times-components/provider-queries@2.15.1) (2021-09-24)
 
 **Note:** Version bump only for package @times-components/provider-queries

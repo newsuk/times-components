@@ -3,6 +3,347 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.8.1](https://github.com/newsuk/times-components/compare/@times-components/card@6.8.0...@times-components/card@6.8.1) (2022-07-11)
+
+
+### Bug Fixes
+
+* **TDP-1704:** Remove react-native from jest-serializer package ([#3015](https://github.com/newsuk/times-components/issues/3015)) ([5b6da8f](https://github.com/newsuk/times-components/commit/5b6da8f1392c3b42a9c0944d44be3d9ed3e7db2f))
+
+
+
+
+
+# [6.8.0](https://github.com/newsuk/times-components/compare/@times-components/card@6.7.0...@times-components/card@6.8.0) (2022-07-06)
+
+
+### Features
+
+* **TDP-1422:** remove react native from svgs ([#3012](https://github.com/newsuk/times-components/issues/3012)) ([97b3320](https://github.com/newsuk/times-components/commit/97b332030427182178f663eeaa0f8e06e19ae255))
+
+
+
+
+
+# [6.7.0](https://github.com/newsuk/times-components/compare/@times-components/card@6.6.2...@times-components/card@6.7.0) (2022-06-21)
+
+
+### Features
+
+* **TDP-1418:** remove react native from gradient  ([a609ec9](https://github.com/newsuk/times-components/commit/a609ec901d650f003d0551d78000851c4fbd33c9))
+
+
+
+
+
+## [6.6.2](https://github.com/newsuk/times-components/compare/@times-components/card@6.6.1...@times-components/card@6.6.2) (2022-06-20)
+
+
+### Bug Fixes
+
+* **1710:** RNR card images ([#2992](https://github.com/newsuk/times-components/issues/2992)) ([f4a9efc](https://github.com/newsuk/times-components/commit/f4a9efc7baabb263ff7e06502d3dd9b7487040c1))
+
+
+
+
+
+## [6.6.1](https://github.com/newsuk/times-components/compare/@times-components/card@6.6.0...@times-components/card@6.6.1) (2022-06-17)
+
+
+### Bug Fixes
+
+* **TDP-1710:** remove react native from card ([#2990](https://github.com/newsuk/times-components/issues/2990)) ([b85b821](https://github.com/newsuk/times-components/commit/b85b821eab278262e7ee176e7bc467acf412c8c9))
+
+
+
+
+
+# [6.6.0](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.23...@times-components/card@6.6.0) (2022-06-15)
+
+
+### Features
+
+* **TDP-1710:** remove react native from card ([#2987](https://github.com/newsuk/times-components/issues/2987)) ([c15a39c](https://github.com/newsuk/times-components/commit/c15a39cd20952fca8fad4dc92ccf200a9cba604d))
+
+
+
+
+
+## [6.5.23](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.22...@times-components/card@6.5.23) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.22](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.21...@times-components/card@6.5.22) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.21](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.20...@times-components/card@6.5.21) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.20](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.19...@times-components/card@6.5.20) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.19](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.18...@times-components/card@6.5.19) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.18](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.17...@times-components/card@6.5.18) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.17](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.16...@times-components/card@6.5.17) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.16](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.15...@times-components/card@6.5.16) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.15](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.14...@times-components/card@6.5.15) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.14](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.13...@times-components/card@6.5.14) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.13](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.12...@times-components/card@6.5.13) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.12](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.11...@times-components/card@6.5.12) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.11](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.10...@times-components/card@6.5.11) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.10](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.9...@times-components/card@6.5.10) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.9](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.8...@times-components/card@6.5.9) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.8](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.7...@times-components/card@6.5.8) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.7](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.6...@times-components/card@6.5.7) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.6](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.5...@times-components/card@6.5.6) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.5](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.4...@times-components/card@6.5.5) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.4](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.3...@times-components/card@6.5.4) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.3](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.2...@times-components/card@6.5.3) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.2](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.1...@times-components/card@6.5.2) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.5.1](https://github.com/newsuk/times-components/compare/@times-components/card@6.5.0...@times-components/card@6.5.1) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+# [6.5.0](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.49...@times-components/card@6.5.0) (2022-04-08)
+
+
+### Features
+
+* **TDP-1703:** removed react-native use of its own <Image/> component ([#2906](https://github.com/newsuk/times-components/issues/2906)) ([2717c6f](https://github.com/newsuk/times-components/commit/2717c6f5005b195f9805ff63002bfa8b1ef026c3))
+
+
+
+
+
+## [6.4.49](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.48...@times-components/card@6.4.49) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.4.48](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.47...@times-components/card@6.4.48) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.4.47](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.46...@times-components/card@6.4.47) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.4.46](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.45...@times-components/card@6.4.46) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.4.45](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.44...@times-components/card@6.4.45) (2022-01-10)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.4.44](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.43...@times-components/card@6.4.44) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.4.43](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.42...@times-components/card@6.4.43) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.4.42](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.41...@times-components/card@6.4.42) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.4.41](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.40...@times-components/card@6.4.41) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.4.40](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.39...@times-components/card@6.4.40) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
 ## [6.4.39](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.38...@times-components/card@6.4.39) (2021-08-31)
 
 **Note:** Version bump only for package @times-components/card

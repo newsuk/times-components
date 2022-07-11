@@ -3,6 +3,292 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.7.24](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.23...@times-components/article-byline@3.7.24) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.23](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.22...@times-components/article-byline@3.7.23) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.22](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.21...@times-components/article-byline@3.7.22) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.21](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.20...@times-components/article-byline@3.7.21) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.20](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.19...@times-components/article-byline@3.7.20) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.19](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.18...@times-components/article-byline@3.7.19) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.18](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.17...@times-components/article-byline@3.7.18) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.17](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.16...@times-components/article-byline@3.7.17) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.16](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.15...@times-components/article-byline@3.7.16) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.15](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.14...@times-components/article-byline@3.7.15) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.14](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.13...@times-components/article-byline@3.7.14) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.13](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.12...@times-components/article-byline@3.7.13) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.12](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.11...@times-components/article-byline@3.7.12) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.11](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.10...@times-components/article-byline@3.7.11) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.10](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.9...@times-components/article-byline@3.7.10) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.9](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.8...@times-components/article-byline@3.7.9) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.8](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.7...@times-components/article-byline@3.7.8) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.7](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.6...@times-components/article-byline@3.7.7) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.6](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.5...@times-components/article-byline@3.7.6) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.5](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.4...@times-components/article-byline@3.7.5) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.4](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.3...@times-components/article-byline@3.7.4) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.3](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.2...@times-components/article-byline@3.7.3) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.2](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.1...@times-components/article-byline@3.7.2) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.7.1](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.7.0...@times-components/article-byline@3.7.1) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+# [3.7.0](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.6.0...@times-components/article-byline@3.7.0) (2022-04-08)
+
+
+### Features
+
+* **TDP-1705:** remove react native from link ([#2909](https://github.com/newsuk/times-components/issues/2909)) ([6437462](https://github.com/newsuk/times-components/commit/643746243797d1e8516ddf783649254591cf1257))
+
+
+
+
+
+# [3.6.0](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.5.46...@times-components/article-byline@3.6.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [3.5.46](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.5.45...@times-components/article-byline@3.5.46) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.5.45](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.5.44...@times-components/article-byline@3.5.45) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.5.44](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.5.43...@times-components/article-byline@3.5.44) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.5.43](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.5.42...@times-components/article-byline@3.5.43) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.5.42](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.5.41...@times-components/article-byline@3.5.42) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.5.41](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.5.40...@times-components/article-byline@3.5.41) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.5.40](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.5.39...@times-components/article-byline@3.5.40) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.5.39](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.5.38...@times-components/article-byline@3.5.39) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.5.38](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.5.37...@times-components/article-byline@3.5.38) (2021-10-28)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
 ## [3.5.37](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.5.36...@times-components/article-byline@3.5.37) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/article-byline

@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-
+import React from "react";
 import { mockUserState } from "@times-components/user-state";
 
 export const UserState = mockUserState();
@@ -11,6 +11,7 @@ jest.mock("@times-components/ts-components", () => ({
   __esModule: true,
   ...jest.requireActual("@times-components/ts-components"),
   RelatedArticleSlice: "RelatedArticleSlice",
+  RecommendedFetch: () => <div>RecommendedFetch</div>,
   useAlgoliaSearch: () => ({
     getRelatedArticles: () => ({
       sliceName: "StandardSlice",

@@ -1,15 +1,17 @@
 import React from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleTopics from "@times-components/article-topics";
+import UserState from "@times-components/user-state";
 import styles from "../styles/article-topics";
 
-const ShowTopics = ({ onPress, topics }) => {
+const ShowTopics = ({ topics }) => {
   if (topics && topics.length > 0) {
     return (
-      <View style={styles.topicsContainer}>
-        <ArticleTopics onPress={onPress} topics={topics} />
-      </View>
+      <UserState state={UserState.loggedInOrShared}>
+        <nav>
+          <ArticleTopics style={styles.topicsMetaContainer} topics={topics} />
+        </nav>
+      </UserState>
     );
   }
 
@@ -17,7 +19,6 @@ const ShowTopics = ({ onPress, topics }) => {
 };
 
 ShowTopics.propTypes = {
-  onPress: PropTypes.func.isRequired,
   topics: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,

@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import { defaultProps, propTypes } from "./caption-prop-types";
 import styles from "./styles";
 
@@ -8,9 +8,16 @@ const renderCredits = (style, credits) => {
     return null;
   }
   return (
-    <Text style={[styles.text, styles.credits, style.text, style.credits]}>
+    <TcText
+      style={checkStylesForUnits({
+        ...styles.text,
+        ...styles.credits,
+        ...style.text,
+        ...style.credits
+      })}
+    >
       {credits.toUpperCase()}
-    </Text>
+    </TcText>
   );
 };
 
@@ -19,17 +26,27 @@ const renderText = (style, text) => {
     return null;
   }
 
-  return <Text style={[styles.text, style.text, style.caption]}>{text}</Text>;
+  return (
+    <TcText
+      style={checkStylesForUnits({
+        ...styles.text,
+        ...style.text,
+        ...style.caption
+      })}
+    >
+      {text}
+    </TcText>
+  );
 };
 
 const Caption = ({ children, credits, style, text }) => (
-  <View>
+  <TcView>
     {children}
-    <View style={[styles.container, style.container]}>
+    <TcView style={{ ...styles.container, ...style.container }}>
       {renderText(style, text)}
       {renderCredits(style, credits)}
-    </View>
-  </View>
+    </TcView>
+  </TcView>
 );
 
 Caption.propTypes = propTypes;

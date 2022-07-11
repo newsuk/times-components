@@ -3,6 +3,284 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.1](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.5.0...@times-components/message-bar@0.5.1) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.24...@times-components/message-bar@0.5.0) (2022-07-06)
+
+
+### Features
+
+* **TDP-1422:** remove react native from svgs ([#3012](https://github.com/newsuk/times-components/issues/3012)) ([97b3320](https://github.com/newsuk/times-components/commit/97b332030427182178f663eeaa0f8e06e19ae255))
+
+
+
+
+
+## [0.4.24](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.23...@times-components/message-bar@0.4.24) (2022-06-22)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.23](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.22...@times-components/message-bar@0.4.23) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.22](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.21...@times-components/message-bar@0.4.22) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.21](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.20...@times-components/message-bar@0.4.21) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.20](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.19...@times-components/message-bar@0.4.20) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.19](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.18...@times-components/message-bar@0.4.19) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.18](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.17...@times-components/message-bar@0.4.18) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.17](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.16...@times-components/message-bar@0.4.17) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.16](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.15...@times-components/message-bar@0.4.16) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.15](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.14...@times-components/message-bar@0.4.15) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.14](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.13...@times-components/message-bar@0.4.14) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.13](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.12...@times-components/message-bar@0.4.13) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.12](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.11...@times-components/message-bar@0.4.12) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.11](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.10...@times-components/message-bar@0.4.11) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.10](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.9...@times-components/message-bar@0.4.10) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.9](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.8...@times-components/message-bar@0.4.9) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.8](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.7...@times-components/message-bar@0.4.8) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.7](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.6...@times-components/message-bar@0.4.7) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.6](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.5...@times-components/message-bar@0.4.6) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.5](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.4...@times-components/message-bar@0.4.5) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.4](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.3...@times-components/message-bar@0.4.4) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.3](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.2...@times-components/message-bar@0.4.3) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.2](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.1...@times-components/message-bar@0.4.2) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.4.1](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.4.0...@times-components/message-bar@0.4.1) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.3.74...@times-components/message-bar@0.4.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [0.3.74](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.3.73...@times-components/message-bar@0.3.74) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.3.73](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.3.72...@times-components/message-bar@0.3.73) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.3.72](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.3.71...@times-components/message-bar@0.3.72) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.3.71](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.3.70...@times-components/message-bar@0.3.71) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.3.70](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.3.69...@times-components/message-bar@0.3.70) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.3.69](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.3.68...@times-components/message-bar@0.3.69) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.3.68](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.3.67...@times-components/message-bar@0.3.68) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
 ## [0.3.67](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.3.66...@times-components/message-bar@0.3.67) (2021-08-31)
 
 **Note:** Version bump only for package @times-components/message-bar

@@ -7,6 +7,7 @@ import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 import {
   RelatedArticleSlice,
+  RecommendedFetch,
   LatestFromSection,
   useAlgoliaSearch
 } from "@times-components/ts-components";
@@ -26,6 +27,7 @@ const ArticleExtras = ({
   savingEnabled,
   sharingEnabled,
   articleUrl,
+  section,
   articleHeadline,
   relatedArticleSlice,
   relatedArticlesVisible,
@@ -52,7 +54,6 @@ const ArticleExtras = ({
     },
     [additionalRelatedArticlesFlag, getRelatedArticles]
   );
-
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticles = (
     <div id="sponsored-article-container">
@@ -102,6 +103,11 @@ const ArticleExtras = ({
           analyticsStream={analyticsStream}
           slice={relatedArticleSlice}
         />
+        <RecommendedFetch
+          articleId={articleId}
+          articleHeadline={articleHeadline}
+          articleSection={section}
+        />
         {additionalRelatedArticlesFlag &&
           algoliaRelatedArticleSlice && (
             <RelatedArticles
@@ -114,7 +120,6 @@ const ArticleExtras = ({
           )}
       </div>
       {sponsoredArticles}
-
       <UserState
         state={UserState.loggedIn}
         fallback={
@@ -142,6 +147,7 @@ ArticleExtras.propTypes = {
   articleId: PropTypes.string.isRequired,
   publishedTime: PropTypes.string.isRequired,
   articleUrl: PropTypes.string.isRequired,
+  section: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
   commentsEnabled: PropTypes.bool.isRequired,
   registerNode: PropTypes.func.isRequired,

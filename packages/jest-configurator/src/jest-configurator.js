@@ -5,7 +5,7 @@ import mockRNComponent from "./react-native-mock-components";
 export const mockReactNativeComponent = mockRNComponent;
 
 const webSpecific = {
-  moduleFileExtensions: ["ts", "tsx", "graphql", "web.js", "js", "json"],
+  moduleFileExtensions: ["ts", "tsx", "graphql", "js", "json"],
   moduleNameMapper: {
     "\\.(png)$": "identity-obj-proxy",
     "^react-native$": "react-native-web"
@@ -14,7 +14,7 @@ const webSpecific = {
 };
 
 const nodeSpecific = {
-  moduleFileExtensions: ["ts", "tsx", "node.js", "web.js", "js", "json"],
+  moduleFileExtensions: ["ts", "tsx", "node.js", "js", "json"],
   moduleNameMapper: {
     "\\.(png)$": "identity-obj-proxy",
     "^react-native$": "react-native-web"

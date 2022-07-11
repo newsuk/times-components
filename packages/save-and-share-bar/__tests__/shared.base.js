@@ -1,12 +1,12 @@
 /* eslint-env browser */
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { Clipboard } from "react-native";
 import { UserState } from "./mocks";
 import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 import EmailShare from "../src/email-share";
+import MockedProvider from "../../provider-test-tools/src/mocked-provider";
 
 const mockEvent = {
   preventDefault: () => {}
@@ -19,6 +19,7 @@ export default () => {
     const articleId = "96508c84-6611-11e9-adc2-05e1b87efaea";
     const articleUrl = "https://www.thetimes.co.uk/";
     const articleHeadline = "test-headline";
+    const originalClipboard = { ...global.navigator.clipboard };
     const props = {
       articleId,
       articleUrl,
@@ -31,6 +32,8 @@ export default () => {
     };
 
     let realLocation;
+    let clipboardData;
+    let mockClipboard;
 
     beforeEach(() => {
       realLocation = global.window.location;
@@ -39,29 +42,50 @@ export default () => {
         assign: jest.fn(),
         search: ""
       };
+      clipboardData = "";
+      mockClipboard = {
+        writeText: jest.fn(data => {
+          clipboardData = data;
+        }),
+        readText: jest.fn(() => clipboardData)
+      };
+      global.navigator.clipboard = mockClipboard;
     });
 
     afterEach(() => {
       delete global.window.location;
       global.window.location = realLocation;
+      global.navigator.clipboard = originalClipboard;
     });
 
     it("save and share bar renders correctly when logged in", () => {
       UserState.mockStates = [UserState.subscriber, UserState.loggedIn];
-      const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
+      const testInstance = TestRenderer.create(
+        <MockedProvider>
+          <SaveAndShareBar {...props} />
+        </MockedProvider>
+      );
       expect(testInstance.toJSON()).toMatchSnapshot();
     });
 
     it("save and share bar renders correctly when not logged in", () => {
       UserState.mockStates = [];
-      const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
+      const testInstance = TestRenderer.create(
+        <MockedProvider>
+          <SaveAndShareBar {...props} />
+        </MockedProvider>
+      );
       expect(testInstance.toJSON()).toMatchSnapshot();
     });
 
     it("onPress events triggers correctly", () => {
-      const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
+      const testInstance = TestRenderer.create(
+        <MockedProvider>
+          <SaveAndShareBar {...props} />
+        </MockedProvider>
+      );
       testInstance.root.findAllByType(BarItem)[3].props.onPress(mockEvent);
-      expect(Clipboard.setString).toHaveBeenCalledWith(articleUrl);
+      expect(navigator.clipboard.writeText).toHaveBeenCalledWith(articleUrl);
       expect(onCopyLink).toHaveBeenCalled();
     });
 

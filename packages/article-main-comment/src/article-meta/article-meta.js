@@ -1,56 +1,40 @@
 import React, { Fragment } from "react";
-import { Text, View } from "react-native";
-import PropTypes from "prop-types";
 import {
   ArticleBylineWithLinks,
   hasBylineData
 } from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
+import { checkStylesForUnits } from "@times-components/utils";
 
 import metaPropTypes from "./article-meta-prop-types";
+import {
+  DatePublicationContainer,
+  Meta,
+  MetaContainer,
+  Separator
+} from "../styles/responsive";
 import styles from "../styles";
 
-const Separator = () => <View style={styles.separator} />;
-
-const ArticleMeta = ({
-  bylines,
-  hasStandfirst,
-  isTablet,
-  onAuthorPress,
-  publicationName,
-  publishedTime
-}) => (
-  <View
-    style={[
-      styles.metaContainer,
-      !hasStandfirst && styles.metaFlagSpacer,
-      isTablet && styles.metaContainerTablet
-    ]}
-  >
+const ArticleMeta = ({ bylines, publicationName, publishedTime }) => (
+  <MetaContainer>
     {hasBylineData(bylines) && (
       <Fragment>
-        <View style={styles.meta}>
-          <ArticleBylineWithLinks ast={bylines} onAuthorPress={onAuthorPress} />
-        </View>
+        <Meta styles={styles.meta}>
+          <ArticleBylineWithLinks ast={bylines} />
+        </Meta>
+        <Separator />
       </Fragment>
     )}
-    {isTablet ? <Separator /> : null}
-    <View style={styles.meta}>
-      <Text
-        style={[
-          styles.datePublication,
-          isTablet && styles.datePublicationTablet
-        ]}
+    <Meta styles={styles.meta}>
+      <DatePublicationContainer
+        styles={checkStylesForUnits(styles.datePublication)}
       >
         <DatePublication date={publishedTime} publication={publicationName} />
-      </Text>
-    </View>
-  </View>
+      </DatePublicationContainer>
+    </Meta>
+  </MetaContainer>
 );
 
-ArticleMeta.propTypes = {
-  ...metaPropTypes,
-  onAuthorPress: PropTypes.func.isRequired
-};
+ArticleMeta.propTypes = metaPropTypes;
 
 export default ArticleMeta;

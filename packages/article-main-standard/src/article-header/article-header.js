@@ -1,73 +1,67 @@
+/* eslint-disable react/forbid-prop-types */
 import React from "react";
 import PropTypes from "prop-types";
-import { Text, View } from "react-native";
-import { ArticleFlags, getActiveFlags } from "@times-components/article-flag";
+import { TcView, checkStylesForUnits } from "@times-components/utils";
+import {
+  ArticleFlags,
+  UpdatedTimeProvider
+} from "@times-components/ts-components";
 
 import HeaderLabel from "../article-header-label/article-header-label";
 import HeaderStandfirst from "./article-header-standfirst";
 import styles from "../styles/article-header";
 
+import { HeadlineContainer } from "../styles/article-header/responsive";
+
 const ArticleHeader = ({
   flags,
   hasVideo,
   headline,
-  isTablet,
   label,
-  longRead,
-  standfirst
-}) => {
-  const hasActiveFlags = getActiveFlags(flags).length > 0;
-
-  return (
-    <View
-      style={[
-        styles.articleMainContentRow,
-        isTablet && styles.articleMainContentRowTablet,
-        isTablet && styles.headerTablet
-      ]}
+  standfirst,
+  style,
+  updatedTime
+}) => (
+  <TcView style={style}>
+    <HeaderLabel isVideo={hasVideo} label={label} />
+    <HeadlineContainer
+      role="heading"
+      aria-level="1"
+      styles={checkStylesForUnits(styles.articleHeadLineText)}
     >
-      <HeaderLabel isVideo={hasVideo} label={label} />
-      <Text
-        selectable
-        style={[
-          styles.articleHeadLineText,
-          !(hasActiveFlags || longRead || standfirst) &&
-            styles.articleHeadlineSpacer,
-          isTablet && styles.articleHeadLineTextTablet
-        ]}
-      >
-        {headline}
-      </Text>
-      <HeaderStandfirst
-        hasFlags={hasActiveFlags || longRead}
-        standfirst={standfirst}
-      />
-      {(hasActiveFlags || longRead) && (
-        <View style={styles.flags}>
-          <ArticleFlags flags={flags} longRead={longRead} />
-        </View>
-      )}
-    </View>
-  );
-};
+      {headline}
+    </HeadlineContainer>
+    <HeaderStandfirst standfirst={standfirst} />
+    <TcView style={styles.flags}>
+      <UpdatedTimeProvider updatedTime={updatedTime}>
+        <ArticleFlags flags={flags} />
+      </UpdatedTimeProvider>
+    </TcView>
+  </TcView>
+);
 
 ArticleHeader.propTypes = {
-  flags: PropTypes.arrayOf(PropTypes.string),
+  flags: PropTypes.arrayOf(
+    PropTypes.shape({
+      expiryTime: PropTypes.string,
+      type: PropTypes.string
+    })
+  ),
   hasVideo: PropTypes.bool,
   headline: PropTypes.string.isRequired,
-  isTablet: PropTypes.bool,
   label: PropTypes.string,
-  longRead: PropTypes.bool,
-  standfirst: PropTypes.string
+  standfirst: PropTypes.string,
+  style: PropTypes.object,
+  updatedTime: PropTypes.string
 };
 
 ArticleHeader.defaultProps = {
   flags: [],
   hasVideo: false,
-  isTablet: false,
   label: null,
-  longRead: false,
-  standfirst: null
+  standfirst: null,
+  style: {},
+  updatedTime: null
 };
 
 export default ArticleHeader;

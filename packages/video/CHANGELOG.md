@@ -3,6 +3,302 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.11.49](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.48...@times-components/video@4.11.49) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.48](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.47...@times-components/video@4.11.48) (2022-07-06)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.47](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.46...@times-components/video@4.11.47) (2022-06-22)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.46](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.45...@times-components/video@4.11.46) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.45](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.44...@times-components/video@4.11.45) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.44](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.43...@times-components/video@4.11.44) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.43](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.42...@times-components/video@4.11.43) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.42](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.41...@times-components/video@4.11.42) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.41](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.40...@times-components/video@4.11.41) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.40](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.39...@times-components/video@4.11.40) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.39](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.38...@times-components/video@4.11.39) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.38](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.37...@times-components/video@4.11.38) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.37](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.36...@times-components/video@4.11.37) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.36](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.35...@times-components/video@4.11.36) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.35](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.34...@times-components/video@4.11.35) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.34](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.33...@times-components/video@4.11.34) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.33](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.32...@times-components/video@4.11.33) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.32](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.31...@times-components/video@4.11.32) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.31](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.30...@times-components/video@4.11.31) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.30](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.29...@times-components/video@4.11.30) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.29](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.28...@times-components/video@4.11.29) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.28](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.27...@times-components/video@4.11.28) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.27](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.26...@times-components/video@4.11.27) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.26](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.25...@times-components/video@4.11.26) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.25](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.24...@times-components/video@4.11.25) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.24](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.23...@times-components/video@4.11.24) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.23](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.22...@times-components/video@4.11.23) (2022-04-08)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.22](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.21...@times-components/video@4.11.22) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.21](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.20...@times-components/video@4.11.21) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.20](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.19...@times-components/video@4.11.20) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.19](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.18...@times-components/video@4.11.19) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.18](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.17...@times-components/video@4.11.18) (2022-01-10)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.17](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.16...@times-components/video@4.11.17) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.16](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.15...@times-components/video@4.11.16) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.15](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.14...@times-components/video@4.11.15) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.14](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.13...@times-components/video@4.11.14) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.11.13](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.12...@times-components/video@4.11.13) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
 ## [4.11.12](https://github.com/newsuk/times-components/compare/@times-components/video@4.11.11...@times-components/video@4.11.12) (2021-08-31)
 
 **Note:** Version bump only for package @times-components/video

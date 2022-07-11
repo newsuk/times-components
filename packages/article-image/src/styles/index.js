@@ -1,17 +1,16 @@
-import { StyleSheet } from "react-native";
 import {
   spacing,
   tabletRowPadding,
   tabletWidth,
   tabletWidthMax
-} from "@times-components/styleguide";
+} from "@times-components/ts-styleguide";
 
 const containerShared = {
   alignSelf: "center",
   width: tabletWidth - tabletRowPadding
 };
 
-const styles = StyleSheet.create({
+const styles = {
   container: {
     paddingTop: 0
   },
@@ -77,6 +76,6 @@ const styles = StyleSheet.create({
   secondaryImage: {
     width: "50%"
   }
-});
+};
 
 export default styles;

@@ -11,15 +11,15 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
     data-article-template="maincomment"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -44,9 +44,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <p>
           <span>
             T
@@ -54,15 +52,19 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           his being Black History Month, last week
         </p>
         <div>
-          <InteractiveWrapper
-            attributes={
-              Object {
-                "chart-id": "csmgb",
+          <div
+            id="d2f83305-d558-4f78-f582-32115c659355"
+          >
+            <InteractiveWrapper
+              attributes={
+                Object {
+                  "chart-id": "csmgb",
+                }
               }
-            }
-            element="times-datawrapper"
-            source="https://interactive.io"
-          />
+              element="times-datawrapper"
+              source="https://interactive.io"
+            />
+          </div>
         </div>
         <div>
           <h2>
@@ -81,72 +83,78 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           id="3"
         >
           <div>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "An image caption",
-                  "credits": "The image credits",
+            <div>
+              <ArticleImage
+                captionOptions={
+                  Object {
+                    "caption": "An image caption",
+                    "credits": "The image credits",
+                  }
                 }
-              }
-              imageOptions={
-                Object {
-                  "display": "primary",
-                  "highResSize": null,
-                  "lowResQuality": 3,
-                  "lowResSize": 400,
-                  "ratio": "1500:1000",
-                  "uri": "https://image.io",
+                imageOptions={
+                  Object {
+                    "display": "primary",
+                    "highResSize": null,
+                    "lowResQuality": 3,
+                    "lowResSize": 400,
+                    "ratio": "1500:1000",
+                    "uri": "https://image.io",
+                  }
                 }
-              }
-            />
+              />
+            </div>
           </div>
         </div>
         <div
           id="4"
         >
           <div>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "A secondary image caption",
-                  "credits": "The secondary image credits",
+            <div>
+              <ArticleImage
+                captionOptions={
+                  Object {
+                    "caption": "A secondary image caption",
+                    "credits": "The secondary image credits",
+                  }
                 }
-              }
-              imageOptions={
-                Object {
-                  "display": "secondary",
-                  "highResSize": null,
-                  "lowResQuality": 3,
-                  "lowResSize": 400,
-                  "ratio": "1500:1000",
-                  "uri": "https://image.io/secondary",
+                imageOptions={
+                  Object {
+                    "display": "secondary",
+                    "highResSize": null,
+                    "lowResQuality": 3,
+                    "lowResSize": 400,
+                    "ratio": "1500:1000",
+                    "uri": "https://image.io/secondary",
+                  }
                 }
-              }
-            />
+              />
+            </div>
           </div>
         </div>
         <div
           id="5"
         >
           <div>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "An inline image caption",
-                  "credits": "The inline image credits",
+            <div>
+              <ArticleImage
+                captionOptions={
+                  Object {
+                    "caption": "An inline image caption",
+                    "credits": "The inline image credits",
+                  }
                 }
-              }
-              imageOptions={
-                Object {
-                  "display": "inline",
-                  "highResSize": null,
-                  "lowResQuality": 3,
-                  "lowResSize": 400,
-                  "ratio": "1500:1000",
-                  "uri": "https://image.io/inline",
+                imageOptions={
+                  Object {
+                    "display": "inline",
+                    "highResSize": null,
+                    "lowResQuality": 3,
+                    "lowResSize": 400,
+                    "ratio": "1500:1000",
+                    "uri": "https://image.io/inline",
+                  }
                 }
-              }
-            />
+              />
+            </div>
           </div>
         </div>
         <p>
@@ -319,6 +327,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               "name": "keyFacts",
             }
           }
+          headline="Some Headline"
+          section="Some Section"
         />
         <h2>
           This is heading 2
@@ -396,6 +406,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -432,15 +443,15 @@ exports[`2. an article with interactives 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -465,30 +476,36 @@ exports[`2. an article with interactives 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <div>
-          <InteractiveWrapper
-            attributes={
-              Object {
-                "chart-id": "csmgb",
+          <div
+            id="d2f83305-d558-4f78-f582-32115c659355"
+          >
+            <InteractiveWrapper
+              attributes={
+                Object {
+                  "chart-id": "csmgb",
+                }
               }
-            }
-            element="times-datawrapper"
-            source="https://interactive.io"
-          />
+              element="times-datawrapper"
+              source="https://interactive.io"
+            />
+          </div>
         </div>
         <div>
-          <InteractiveWrapper
-            attributes={
-              Object {
-                "chart-id": "csmgb",
+          <div
+            id="abc"
+          >
+            <InteractiveWrapper
+              attributes={
+                Object {
+                  "chart-id": "csmgb",
+                }
               }
-            }
-            element="times-datawrapper"
-            source="https://interactive.io"
-          />
+              element="times-datawrapper"
+              source="https://interactive.io"
+            />
+          </div>
         </div>
         <div>
           <h2>
@@ -564,6 +581,7 @@ exports[`2. an article with interactives 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -600,15 +618,15 @@ exports[`3. an article with no content 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -633,9 +651,7 @@ exports[`3. an article with no content 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <div
           id="paywall-portal-article-footer"
         />
@@ -697,6 +713,7 @@ exports[`3. an article with no content 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -733,15 +750,15 @@ exports[`4. an article with no content if content is set as null 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -766,9 +783,7 @@ exports[`4. an article with no content if content is set as null 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <div
           id="paywall-portal-article-footer"
         />
@@ -830,6 +845,7 @@ exports[`4. an article with no content if content is set as null 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -866,15 +882,15 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
     data-article-template="maincomment"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -899,9 +915,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <p>
           <span>
             <b>
@@ -948,6 +962,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
         />
       </article>
@@ -976,15 +991,15 @@ exports[`6. an article with heading tags 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -1009,9 +1024,7 @@ exports[`6. an article with heading tags 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <h2>
           This is heading 2
         </h2>
@@ -1092,6 +1105,7 @@ exports[`6. an article with heading tags 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -1128,15 +1142,15 @@ exports[`7. an article with link 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -1161,9 +1175,7 @@ exports[`7. an article with link 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <p>
           <Link
             underlined={true}
@@ -1247,6 +1259,7 @@ exports[`7. an article with link 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -1283,15 +1296,15 @@ exports[`8. an article with italic link 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -1316,9 +1329,7 @@ exports[`8. an article with italic link 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <p>
           In his 2015 book on the tournaments, 
           <Link
@@ -1405,6 +1416,7 @@ exports[`8. an article with italic link 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -1441,15 +1453,15 @@ exports[`9. an article with bold text followed by bold link 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -1474,9 +1486,7 @@ exports[`9. an article with bold text followed by bold link 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <p>
           <b>
             2 
@@ -1562,6 +1572,7 @@ exports[`9. an article with bold text followed by bold link 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -1598,15 +1609,15 @@ exports[`10. an article with italic and normal text link 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -1631,9 +1642,7 @@ exports[`10. an article with italic and normal text link 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <p>
           Family Action is one of two charities being supported by 
           <Link
@@ -1721,6 +1730,7 @@ exports[`10. an article with italic and normal text link 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -1757,15 +1767,15 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -1790,9 +1800,7 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <p>
           <b>
             <i>
@@ -1874,6 +1882,7 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -1910,15 +1919,15 @@ exports[`12. an article with text wrapped in inline element 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -1943,9 +1952,7 @@ exports[`12. an article with text wrapped in inline element 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <p>
           <span>
             They may have been improved by the controversy that ensued when Watson appeared on the cover of Vanity Fair to promote it, wearing a top that partially exposed her breasts. She rejected criticism that the pose was at odds with her claim to be a feminist. “Feminism is not a stick with which to beat other women. It’s about liberation. It’s about equality,” she said, adding: “I really don’t know what my tits have to do with it.” 
@@ -2025,6 +2032,7 @@ exports[`12. an article with text wrapped in inline element 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -2061,15 +2069,15 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -2094,9 +2102,7 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <p>
           20. 
           <span>
@@ -2177,6 +2183,7 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -2213,15 +2220,15 @@ exports[`14. an article with inline inside a bold tag 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -2246,9 +2253,7 @@ exports[`14. an article with inline inside a bold tag 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <p>
           <b>
             <span>
@@ -2330,6 +2335,7 @@ exports[`14. an article with inline inside a bold tag 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -2366,15 +2372,15 @@ exports[`15. an article starting with single quote 1`] = `
     data-article-template="maincomment"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -2399,9 +2405,7 @@ exports[`15. an article starting with single quote 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <p>
           <span>
             ‘S
@@ -2482,6 +2486,7 @@ exports[`15. an article starting with single quote 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [
@@ -2518,15 +2523,15 @@ exports[`16. an article starting with double quote 1`] = `
     data-article-template="maincomment"
     id="article-main"
   >
-    <Head />
+    <Head
+      swgProductId={null}
+    />
     <div>
       <AdContainer
         slotName="header"
       />
     </div>
-    <main
-      role="main"
-    >
+    <main>
       <div>
         <div>
           <div
@@ -2551,9 +2556,7 @@ exports[`16. an article starting with double quote 1`] = `
           </div>
         </div>
       </div>
-      <article
-        role="article"
-      >
+      <article>
         <p>
           <span>
             “S
@@ -2634,6 +2637,7 @@ exports[`16. an article starting with double quote 1`] = `
           }
           relatedArticlesVisible={false}
           savingEnabled={true}
+          section="Some Section"
           sharingEnabled={true}
           topics={
             Array [

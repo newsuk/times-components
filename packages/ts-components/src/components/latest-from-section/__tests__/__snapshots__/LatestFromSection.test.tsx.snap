@@ -3,41 +3,16 @@
 exports[`<LatestFromSection> no data  1`] = `
 <DocumentFragment>
   <div
-    class="css-view-1dbjc4n"
+    class="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
-      class="css-view-1dbjc4n"
-      style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
+      class="tc-view__TcView-nuazoi-0 fPjBcr"
+      style="align-items: center; border-bottom-color: #DBDBDB; border-bottom-width: 1px; border-style: solid; border-top-color: #DBDBDB; border-top-width: 1px; display: flex; justify-content: center; padding: 15px;"
     >
       <h3
         aria-level="3"
-        class="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
+        class="related-articles-heading__HeadingForRelatedArticles-sc-1m1bjcq-0 cDImeD"
         role="heading"
-        style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
-      >
-        Latest from Sport
-      </h3>
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`<LatestFromSection> no data  2`] = `
-<DocumentFragment>
-  <div
-    class="css-view-1dbjc4n"
-  >
-    <div
-      class="css-view-1dbjc4n"
-      style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
-    >
-      <h3
-        aria-level="3"
-        class="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
-        role="heading"
-        style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
       >
         Latest from Sport
       </h3>
@@ -49,65 +24,65 @@ exports[`<LatestFromSection> no data  2`] = `
 exports[`<LatestFromSection> renders  1`] = `
 <DocumentFragment>
   <div
-    class="css-view-1dbjc4n"
+    class="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
-      class="css-view-1dbjc4n"
-      style="align-items: center; border-bottom-color: rgba(219,219,219,1.00); border-bottom-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgba(219,219,219,1.00); border-top-width: 1px; display: flex; justify-content: center; padding: 15px 15px 15px 15px;"
+      class="tc-view__TcView-nuazoi-0 fPjBcr"
+      style="align-items: center; border-bottom-color: #DBDBDB; border-bottom-width: 1px; border-style: solid; border-top-color: #DBDBDB; border-top-width: 1px; display: flex; justify-content: center; padding: 15px;"
     >
       <h3
         aria-level="3"
-        class="css-reset-4rbku5 css-text-901oao"
-        dir="auto"
+        class="related-articles-heading__HeadingForRelatedArticles-sc-1m1bjcq-0 cDImeD"
         role="heading"
-        style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 25px; line-height: 27px; padding-top: 5px;"
       >
         Latest from Sport
       </h3>
     </div>
     <div
-      class="configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-2 bCJkFj configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-2 bCJkFj css-view-1dbjc4n"
+      class="tc-view__TcView-nuazoi-0 config__Base-bs1997-0 config__Base-bs1997-2 gpmFGs"
     >
       <div
-        class="responsiveweb__SliceContainer-sc-2kg7gs-0 goDieb responsiveweb__SliceContainer-sc-2kg7gs-0 goDieb css-view-1dbjc4n"
+        class="tc-view__TcView-nuazoi-0 responsive__SliceContainer-sc-1kirgpc-0 dOGrmV"
       >
         <div
-          class="responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-2 responsiveweb__Base-aumpme-4 dOLCXz responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-2 responsiveweb__Base-aumpme-4 dOLCXz css-view-1dbjc4n"
+          class="tc-view__TcView-nuazoi-0 responsive__Base-sc-1lqbq6a-1 responsive__Base-sc-1lqbq6a-2 responsive__Base-sc-1lqbq6a-4 fwcUxi"
         >
           <div
-            class="responsiveweb__ChildContainer-aumpme-0 bwWtkp responsiveweb__ChildContainer-aumpme-0 bwWtkp css-view-1dbjc4n"
+            class="tc-view__TcView-nuazoi-0 responsive__ChildContainer-sc-1lqbq6a-0 wGIJh"
           >
             <div
               data-testid="related-article-item"
             >
               <a
-                class="linkweb__RespLink-yfb9n-0 cCCShB"
+                class="link__RespLink-sc-1ocvixa-0 dfMuic"
                 href="https://www.thetimes.co.uk/article/the-entire-tour-de-france-bows-to-the-greatness-of-mark-cavendish-2zq0zgfmn"
               >
                 <div
-                  class="css-view-1dbjc4n"
+                  class="tc-view__TcView-nuazoi-0 fPjBcr"
                 >
                   <div
-                    class="css-view-1dbjc4n"
-                    style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
+                    class="tc-view__TcView-nuazoi-0 fPjBcr"
+                    style="align-items: flex-start; display: block; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
                   >
                     <div
-                      class="imageContainerClass imageContainerClass css-view-1dbjc4n"
-                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                      class="imageContainerClass tc-view__TcView-nuazoi-0 fPjBcr"
+                      style="flex: 1; margin-bottom: 10px; min-width: 100%;"
                     >
                       <div
-                        class="css-view-1dbjc4n"
+                        class="tc-view__TcView-nuazoi-0 fPjBcr"
                       >
                         <div
-                          style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 56.25%;"
+                          style="padding-bottom: 56.25%;"
                         >
                           <img
-                            class="responsiveweb-sc-142djdt-0 gkCaRe"
+                            class="responsive-sc-1nnon4d-0 fwlcWP"
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb7fca746-d8ec-11eb-8f14-0bb645f59db0.jpg?resize=200&quality=3"
                           />
                           <div
-                            class="css-view-1dbjc4n"
-                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
+                            class="tc-view__TcView-nuazoi-0 fPjBcr"
+                            height="100%"
+                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
+                            width="100%"
                           >
                             <svg
                               height="auto"
@@ -133,65 +108,58 @@ exports[`<LatestFromSection> renders  1`] = `
                       </div>
                     </div>
                     <div
-                      class="contentContainerClass contentContainerClass css-view-1dbjc4n"
-                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                      class="tc-view__TcView-nuazoi-0 contentContainerClass card-content__TcCardContainer-sc-1w0wvq8-0 hzpWKJ"
                     >
                       <div
-                        class="css-view-1dbjc4n"
+                        class="tc-view__TcView-nuazoi-0 fPjBcr"
                       >
                         <div
-                          class="css-view-1dbjc4n"
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
                           style="margin-bottom: 0px;"
                         >
                           <div
-                            class="css-text-901oao"
-                            dir="auto"
-                            style="color: rgb(0, 131, 71); font-family: GillSansMTStd-Medium; font-size: 12px; font-weight: 400; letter-spacing: 1px; line-height: 12px; margin-bottom: 0px; margin-top: -1px; padding-top: 1px;"
+                            class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                            style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 1px; color: rgb(0, 131, 71);"
                           >
                             CYCLING | DAVID WALSH
                           </div>
                         </div>
-                        <h3
+                        <div
                           aria-level="3"
-                          class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
-                          dir="auto"
+                          class="headlineClass tc-text__TcText-sc-15igzev-0 lhcAkf"
                           role="heading"
-                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
+                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
                         >
                           The entire Tour bows to the greatness of Cavendish
-                        </h3>
+                        </div>
                         <div
-                          class="css-view-1dbjc4n"
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
                         >
                           <div
-                            class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
-                            dir="auto"
-                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                            class="summaryHidden summary125Class tc-text__TcText-sc-15igzev-0 lhcAkf"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; margin-bottom: 10px; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px;"
                           >
-                            <span
-                              class="css-text-901oao css-textHasAncestor-16my406"
-                              dir="auto"
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                              style="white-space: inherit;"
                             >
                               The story of Mark Cavendish’s heroic return can be told in many ways. In the brilliance of the sprint, mostly. His team-mates had done an outstanding job but ri...
-                            </span>
+                            </div>
                           </div>
                           <div
-                            class="summaryHidden summary145Class summaryHidden summary145Class css-text-901oao"
-                            dir="auto"
-                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                            class="summaryHidden summary145Class tc-text__TcText-sc-15igzev-0 lhcAkf"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; margin-bottom: 10px; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px;"
                           >
-                            <span
-                              class="css-text-901oao css-textHasAncestor-16my406"
-                              dir="auto"
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                              style="white-space: inherit;"
                             >
                               The story of Mark Cavendish’s heroic return can be told in many ways. In the brilliance of the sprint, mostly. His team-mates had done an outstanding job but ri...
-                            </span>
+                            </div>
                           </div>
                         </div>
                         <div
-                          class="css-text-901oao"
-                          data-testid="datePublication"
-                          dir="auto"
+                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
                           style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
                         >
                           <time
@@ -201,16 +169,13 @@ exports[`<LatestFromSection> renders  1`] = `
                           </time>
                         </div>
                         <div
-                          class="css-text-901oao"
-                          dir="auto"
+                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
                         >
-                          <span
-                            class="css-text-901oao css-textHasAncestor-16my406"
-                            dir="auto"
-                            style="color: rgb(51, 51, 51); flex-direction: row; font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px;"
+                          <div
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
                           >
                             David Walsh
-                          </span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -220,42 +185,44 @@ exports[`<LatestFromSection> renders  1`] = `
             </div>
           </div>
           <div
-            class="responsiveweb-sc-2kg7gs-1 iiVeDy responsiveweb-sc-2kg7gs-1 iiVeDy css-view-1dbjc4n"
+            class="tc-view__TcView-nuazoi-0 responsive-sc-1kirgpc-1 kpLnTa"
           />
           <div
-            class="responsiveweb__ChildContainer-aumpme-0 bwWtkp responsiveweb__ChildContainer-aumpme-0 bwWtkp css-view-1dbjc4n"
+            class="tc-view__TcView-nuazoi-0 responsive__ChildContainer-sc-1lqbq6a-0 wGIJh"
           >
             <div
               data-testid="related-article-item"
             >
               <a
-                class="linkweb__RespLink-yfb9n-0 cCCShB"
+                class="link__RespLink-sc-1ocvixa-0 dfMuic"
                 href="https://www.thetimes.co.uk/article/jordan-pickford-repels-everything-germans-muster-ktkcvc85p"
               >
                 <div
-                  class="css-view-1dbjc4n"
+                  class="tc-view__TcView-nuazoi-0 fPjBcr"
                 >
                   <div
-                    class="css-view-1dbjc4n"
-                    style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
+                    class="tc-view__TcView-nuazoi-0 fPjBcr"
+                    style="align-items: flex-start; display: block; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
                   >
                     <div
-                      class="imageContainerClass imageContainerClass css-view-1dbjc4n"
-                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                      class="imageContainerClass tc-view__TcView-nuazoi-0 fPjBcr"
+                      style="flex: 1; margin-bottom: 10px; min-width: 100%;"
                     >
                       <div
-                        class="css-view-1dbjc4n"
+                        class="tc-view__TcView-nuazoi-0 fPjBcr"
                       >
                         <div
-                          style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 56.25%;"
+                          style="padding-bottom: 56.25%;"
                         >
                           <img
-                            class="responsiveweb-sc-142djdt-0 gkCaRe"
+                            class="responsive-sc-1nnon4d-0 fwlcWP"
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F65e48858-d913-11eb-b92f-5fe539a30c29.jpg?resize=200&quality=3"
                           />
                           <div
-                            class="css-view-1dbjc4n"
-                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
+                            class="tc-view__TcView-nuazoi-0 fPjBcr"
+                            height="100%"
+                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
+                            width="100%"
                           >
                             <svg
                               height="auto"
@@ -281,65 +248,58 @@ exports[`<LatestFromSection> renders  1`] = `
                       </div>
                     </div>
                     <div
-                      class="contentContainerClass contentContainerClass css-view-1dbjc4n"
-                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                      class="tc-view__TcView-nuazoi-0 contentContainerClass card-content__TcCardContainer-sc-1w0wvq8-0 hzpWKJ"
                     >
                       <div
-                        class="css-view-1dbjc4n"
+                        class="tc-view__TcView-nuazoi-0 fPjBcr"
                       >
                         <div
-                          class="css-view-1dbjc4n"
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
                           style="margin-bottom: 0px;"
                         >
                           <div
-                            class="css-text-901oao"
-                            dir="auto"
-                            style="color: rgb(0, 131, 71); font-family: GillSansMTStd-Medium; font-size: 12px; font-weight: 400; letter-spacing: 1px; line-height: 12px; margin-bottom: 0px; margin-top: -1px; padding-top: 1px;"
+                            class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                            style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 1px; color: rgb(0, 131, 71);"
                           >
                             EURO 2020 | MATT LAWTON
                           </div>
                         </div>
-                        <h3
+                        <div
                           aria-level="3"
-                          class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
-                          dir="auto"
+                          class="headlineClass tc-text__TcText-sc-15igzev-0 lhcAkf"
                           role="heading"
-                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
+                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
                         >
                           Flawless Pickford repels everything Germans muster
-                        </h3>
+                        </div>
                         <div
-                          class="css-view-1dbjc4n"
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
                         >
                           <div
-                            class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
-                            dir="auto"
-                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                            class="summaryHidden summary125Class tc-text__TcText-sc-15igzev-0 lhcAkf"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; margin-bottom: 10px; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px;"
                           >
-                            <span
-                              class="css-text-901oao css-textHasAncestor-16my406"
-                              dir="auto"
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                              style="white-space: inherit;"
                             >
                               Accompanied by a ghost of England’s past in the form of Thomas Müller, Germany set out to inflict yet more misery on their hosts with two spirited young forward...
-                            </span>
+                            </div>
                           </div>
                           <div
-                            class="summaryHidden summary145Class summaryHidden summary145Class css-text-901oao"
-                            dir="auto"
-                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                            class="summaryHidden summary145Class tc-text__TcText-sc-15igzev-0 lhcAkf"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; margin-bottom: 10px; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px;"
                           >
-                            <span
-                              class="css-text-901oao css-textHasAncestor-16my406"
-                              dir="auto"
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                              style="white-space: inherit;"
                             >
                               Accompanied by a ghost of England’s past in the form of Thomas Müller, Germany set out to inflict yet more misery on their hosts with two spirited young forward...
-                            </span>
+                            </div>
                           </div>
                         </div>
                         <div
-                          class="css-text-901oao"
-                          data-testid="datePublication"
-                          dir="auto"
+                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
                           style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
                         >
                           <time
@@ -349,16 +309,13 @@ exports[`<LatestFromSection> renders  1`] = `
                           </time>
                         </div>
                         <div
-                          class="css-text-901oao"
-                          dir="auto"
+                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
                         >
-                          <span
-                            class="css-text-901oao css-textHasAncestor-16my406"
-                            dir="auto"
-                            style="color: rgb(51, 51, 51); flex-direction: row; font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px;"
+                          <div
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
                           >
                             Matt Lawton
-                          </span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -368,42 +325,44 @@ exports[`<LatestFromSection> renders  1`] = `
             </div>
           </div>
           <div
-            class="responsiveweb-sc-2kg7gs-1 iiVeDy responsiveweb-sc-2kg7gs-1 iiVeDy css-view-1dbjc4n"
+            class="tc-view__TcView-nuazoi-0 responsive-sc-1kirgpc-1 kpLnTa"
           />
           <div
-            class="responsiveweb__ChildContainer-aumpme-0 bwWtkp responsiveweb__ChildContainer-aumpme-0 bwWtkp css-view-1dbjc4n"
+            class="tc-view__TcView-nuazoi-0 responsive__ChildContainer-sc-1lqbq6a-0 wGIJh"
           >
             <div
               data-testid="related-article-item"
             >
               <a
-                class="linkweb__RespLink-yfb9n-0 cCCShB"
+                class="link__RespLink-sc-1ocvixa-0 dfMuic"
                 href="https://www.thetimes.co.uk/article/the-tactical-masterstrokes-behind-englands-ruthless-win-s2s5j6k8l"
               >
                 <div
-                  class="css-view-1dbjc4n"
+                  class="tc-view__TcView-nuazoi-0 fPjBcr"
                 >
                   <div
-                    class="css-view-1dbjc4n"
-                    style="align-items: flex-start; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
+                    class="tc-view__TcView-nuazoi-0 fPjBcr"
+                    style="align-items: flex-start; display: block; flex-direction: row; flex-wrap: wrap; justify-content: flex-end;"
                   >
                     <div
-                      class="imageContainerClass imageContainerClass css-view-1dbjc4n"
-                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 10px; min-width: 100%;"
+                      class="imageContainerClass tc-view__TcView-nuazoi-0 fPjBcr"
+                      style="flex: 1; margin-bottom: 10px; min-width: 100%;"
                     >
                       <div
-                        class="css-view-1dbjc4n"
+                        class="tc-view__TcView-nuazoi-0 fPjBcr"
                       >
                         <div
-                          style="display: table; height: 0px; overflow: hidden; position: relative; width: 100%; padding-bottom: 56.25%;"
+                          style="padding-bottom: 56.25%;"
                         >
                           <img
-                            class="responsiveweb-sc-142djdt-0 gkCaRe"
+                            class="responsive-sc-1nnon4d-0 fwlcWP"
                             src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F798e1dce-d918-11eb-b92f-5fe539a30c29.jpg?resize=200&quality=3"
                           />
                           <div
-                            class="css-view-1dbjc4n"
-                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0;"
+                            class="tc-view__TcView-nuazoi-0 fPjBcr"
+                            height="100%"
+                            style="align-items: center; background-color: rgb(237, 237, 237); bottom: 0px; justify-content: center; left: 0px; position: absolute; right: 0px; top: 0px; z-index: 0; border-radius: 0;"
+                            width="100%"
                           >
                             <svg
                               height="auto"
@@ -429,65 +388,58 @@ exports[`<LatestFromSection> renders  1`] = `
                       </div>
                     </div>
                     <div
-                      class="contentContainerClass contentContainerClass css-view-1dbjc4n"
-                      style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%; margin-bottom: 0px; min-width: 100%;"
+                      class="tc-view__TcView-nuazoi-0 contentContainerClass card-content__TcCardContainer-sc-1w0wvq8-0 hzpWKJ"
                     >
                       <div
-                        class="css-view-1dbjc4n"
+                        class="tc-view__TcView-nuazoi-0 fPjBcr"
                       >
                         <div
-                          class="css-view-1dbjc4n"
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
                           style="margin-bottom: 0px;"
                         >
                           <div
-                            class="css-text-901oao"
-                            dir="auto"
-                            style="color: rgb(0, 131, 71); font-family: GillSansMTStd-Medium; font-size: 12px; font-weight: 400; letter-spacing: 1px; line-height: 12px; margin-bottom: 0px; margin-top: -1px; padding-top: 1px;"
+                            class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                            style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 1px; color: rgb(0, 131, 71);"
                           >
                             EURO 2020 | JONATHAN NORTHCROFT
                           </div>
                         </div>
-                        <h3
+                        <div
                           aria-level="3"
-                          class="headlineClass css-reset-4rbku5 headlineClass css-text-901oao"
-                          dir="auto"
+                          class="headlineClass tc-text__TcText-sc-15igzev-0 lhcAkf"
                           role="heading"
-                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-size: 22px; font-weight: 400; line-height: 27px; margin-bottom: 5px; margin-top: 0px;"
+                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
                         >
                           The tactical masterstrokes behind England’s ruthless win
-                        </h3>
+                        </div>
                         <div
-                          class="css-view-1dbjc4n"
+                          class="tc-view__TcView-nuazoi-0 fPjBcr"
                         >
                           <div
-                            class="summaryHidden summary125Class summaryHidden summary125Class css-text-901oao"
-                            dir="auto"
-                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                            class="summaryHidden summary125Class tc-text__TcText-sc-15igzev-0 lhcAkf"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; margin-bottom: 10px; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px;"
                           >
-                            <span
-                              class="css-text-901oao css-textHasAncestor-16my406"
-                              dir="auto"
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                              style="white-space: inherit;"
                             >
                               Rising value of SterlingRaheem Sterling is often portrayed as the kid from an estate near Wembley, who transitioned from street player to a star on its pitch. A...
-                            </span>
+                            </div>
                           </div>
                           <div
-                            class="summaryHidden summary145Class summaryHidden summary145Class css-text-901oao"
-                            dir="auto"
-                            style="color: rgb(105, 105, 105); flex-wrap: wrap; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px; margin-bottom: 10px;"
+                            class="summaryHidden summary145Class tc-text__TcText-sc-15igzev-0 lhcAkf"
+                            style="color: rgb(105, 105, 105); flex-wrap: wrap; margin-bottom: 10px; font-family: TimesDigitalW04; font-size: 14px; line-height: 20px;"
                           >
-                            <span
-                              class="css-text-901oao css-textHasAncestor-16my406"
-                              dir="auto"
+                            <div
+                              class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                              style="white-space: inherit;"
                             >
                               Rising value of SterlingRaheem Sterling is often portrayed as the kid from an estate near Wembley, who transitioned from street player to a star on its pitch. A...
-                            </span>
+                            </div>
                           </div>
                         </div>
                         <div
-                          class="css-text-901oao"
-                          data-testid="datePublication"
-                          dir="auto"
+                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
                           style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
                         >
                           <time
@@ -497,16 +449,13 @@ exports[`<LatestFromSection> renders  1`] = `
                           </time>
                         </div>
                         <div
-                          class="css-text-901oao"
-                          dir="auto"
+                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
                         >
-                          <span
-                            class="css-text-901oao css-textHasAncestor-16my406"
-                            dir="auto"
-                            style="color: rgb(51, 51, 51); flex-direction: row; font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px;"
+                          <div
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
                           >
                             Jonathan Northcroft
-                          </span>
+                          </div>
                         </div>
                       </div>
                     </div>

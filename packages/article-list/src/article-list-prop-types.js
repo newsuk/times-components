@@ -1,17 +1,16 @@
 import PropTypes from "prop-types";
 import {
   propTypes as basePropTypes,
-  defaultProps as baseDefaultProps
+  defaultProps
 } from "./article-list-prop-types-base";
 
 export const propTypes = {
   ...basePropTypes,
-  onArticlePress: PropTypes.func.isRequired,
-  onViewed: PropTypes.func,
-  scrollToTop: PropTypes.bool
+  count: PropTypes.number,
+  onNext: PropTypes.func,
+  onPrev: PropTypes.func,
+  page: PropTypes.number,
+  pageSize: PropTypes.number
 };
 
-export const defaultProps = {
-  ...baseDefaultProps,
-  scrollToTop: true
-};
+export { defaultProps };

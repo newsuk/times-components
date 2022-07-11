@@ -1,12 +1,15 @@
-import { StyleSheet } from "react-native";
 import sharedStyles from "./shared";
 
-const styles = StyleSheet.create({
+const styles = {
   ...sharedStyles,
+  credits: {
+    ...sharedStyles.credits,
+    lineHeight: 17
+  },
   text: {
     ...sharedStyles.text,
-    lineHeight: 16
+    lineHeight: 17
   }
-});
+};
 
 export default styles;

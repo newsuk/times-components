@@ -1,3 +1,3 @@
-import shared from "../shared-colour.web";
+import shared from "../shared-colour";
 
 shared();

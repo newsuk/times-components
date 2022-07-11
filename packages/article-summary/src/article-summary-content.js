@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText, checkStylesForUnits } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { propTypes as treePropType } from "@times-components/markup-forest";
 import { renderAst } from "./article-summary";
@@ -23,20 +23,20 @@ const ArticleSummaryContent = ({
   };
 
   return ast.length > 0 ? (
-    <Text
+    <TcText
       className={className}
-      style={[styles.text, style]}
+      style={checkStylesForUnits({ ...styles.text, ...style })}
       {...numberOfLinesProp}
     >
       {renderAst(ast)}
-    </Text>
+    </TcText>
   ) : null;
 };
 
 ArticleSummaryContent.propTypes = {
   ast: PropTypes.arrayOf(treePropType),
   className: PropTypes.string,
-  style: PropTypes.shape({})
+  style: {}
 };
 
 ArticleSummaryContent.defaultProps = {

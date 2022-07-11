@@ -63,6 +63,19 @@ describe("Head", () => {
     expect(testRenderer).toMatchSnapshot();
   });
 
+  it("outputs correct metadata when the swgProductId is passed as prop", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={article}
+        logoUrl={logoUrl}
+        paidContentClassName={paidContentClassName}
+        swgProductId="uat-thetimes.co.uk:basic"
+      />
+    );
+
+    expect(testRenderer).toMatchSnapshot();
+  });
+
   it("outputs correct metadata for a video article", () => {
     const testRenderer = TestRenderer.create(
       <Head

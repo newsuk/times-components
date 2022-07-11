@@ -3,13 +3,24 @@ import { Text, View } from "react-native";
 import renderTrees from "@times-components/markup-forest";
 import coreRenderers from "@times-components/markup";
 import { propTypes, defaultProps } from "./topic-head-prop-types";
+import {
+  HeadContainer,
+  HeadContainerWithDescription,
+  ResponsiveDivider,
+  ResponsiveName
+} from "./styles/responsive";
 import styles from "./styles";
 
 const TopicHead = ({ name, description, isLoading }) => {
+  const Container =
+    description && description.length
+      ? HeadContainerWithDescription
+      : HeadContainer;
+
   const showDescription = () =>
-    description.length > 0 ? (
+    description && description.length > 0 ? (
       <Fragment>
-        <View style={styles.divider} />
+        <ResponsiveDivider />
         <Text style={styles.description} testID="topic-description">
           {renderTrees(description, coreRenderers)}
         </Text>
@@ -20,16 +31,12 @@ const TopicHead = ({ name, description, isLoading }) => {
     <View style={styles.wrapper} />
   ) : (
     <View style={styles.wrapper}>
-      <View style={styles.container}>
-        <Text
-          accessibilityRole="header"
-          style={styles.name}
-          testID="topic-name"
-        >
+      <Container>
+        <ResponsiveName accessibilityRole="header" testID="topic-name">
           {name}
-        </Text>
+        </ResponsiveName>
         {showDescription()}
-      </View>
+      </Container>
     </View>
   );
 };

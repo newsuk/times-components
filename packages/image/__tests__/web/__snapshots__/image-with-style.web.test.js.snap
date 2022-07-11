@@ -2,6 +2,24 @@
 
 exports[`1. default image 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -11,53 +29,36 @@ exports[`1. default image 1`] = `
   z-index: 2;
 }
 
-<style>
-.S1 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  background-color: rgba(237,237,237,1.00);
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.IS1 {
-  max-width: 25%;
-  max-height: 50%;
-}
-
-.IS2 {
-  display: table;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  padding-bottom: 66.66666666666667%;
-}
-</style>
-
 <div
-  className="css-view-1dbjc4n"
+  className="c0"
 >
   <div
-    className="IS2"
+    paddingBottom="66.66666666666667%"
   >
     <img
-      className="c0"
+      className="c1"
     />
     <div
-      className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-15282we r-justifyContent-1777fci S1"
+      alignItems="center"
+      backgroundColor="#EDEDED"
+      borderRadius={0}
+      bottom={0}
+      className="c0"
+      justifyContent="center"
+      left={0}
+      position="absolute"
+      right={0}
+      top={0}
+      zIndex={0}
     >
-      <Svg
-        className="IS1"
+      <svg
+        maxHeight="50%"
+        maxWidth="25%"
       >
-        <G>
-          <Path />
-        </G>
-      </Svg>
+        <g>
+          <path />
+        </g>
+      </svg>
     </div>
   </div>
 </div>
@@ -65,6 +66,24 @@ exports[`1. default image 1`] = `
 
 exports[`2. default modal 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
   display: block;
   opacity: 0;
   position: absolute;
@@ -74,53 +93,36 @@ exports[`2. default modal 1`] = `
   z-index: 2;
 }
 
-<style>
-.S1 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  background-color: rgba(237,237,237,1.00);
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.IS1 {
-  max-width: 25%;
-  max-height: 50%;
-}
-
-.IS2 {
-  display: table;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  padding-bottom: 66.66666666666667%;
-}
-</style>
-
 <div
-  className="css-view-1dbjc4n"
+  className="c0"
 >
   <div
-    className="IS2"
+    paddingBottom="66.66666666666667%"
   >
     <img
-      className="c0"
+      className="c1"
     />
     <div
-      className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-15282we r-justifyContent-1777fci S1"
+      alignItems="center"
+      backgroundColor="#EDEDED"
+      borderRadius={0}
+      bottom={0}
+      className="c0"
+      justifyContent="center"
+      left={0}
+      position="absolute"
+      right={0}
+      top={0}
+      zIndex={0}
     >
-      <Svg
-        className="IS1"
+      <svg
+        maxHeight="50%"
+        maxWidth="25%"
       >
-        <G>
-          <Path />
-        </G>
-      </Svg>
+        <g>
+          <path />
+        </g>
+      </svg>
     </div>
   </div>
 </div>

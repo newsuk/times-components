@@ -1,6 +1,6 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
-import { Text } from "react-native";
+
+import { TcText } from "@times-components/utils";
 import { mount } from "enzyme";
 import {
   addSerializers,
@@ -8,8 +8,7 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  print,
-  rnwTransform
+  print
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import Gradient from "../../src/gradient";
@@ -20,8 +19,7 @@ addSerializers(
   compose(
     print,
     minimaliseTransform((value, key) => key === "style"),
-    minimalWebTransform,
-    rnwTransform(AppRegistry)
+    minimalWebTransform
   )
 );
 
@@ -32,7 +30,7 @@ const tests = [
       expect(
         mount(
           <Gradient>
-            <Text>Hello world!</Text>
+            <TcText>Hello world!</TcText>
           </Gradient>
         )
       ).toMatchSnapshot();

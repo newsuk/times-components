@@ -5,7 +5,7 @@
   "description": "A collection of presentational components for The Times and Sunday Times",
   "main": "index.js",
   "engines": {
-    "node": ">=10.13.0 <13",
+    "node": ">=10.13.0",
     "yarn": ">=1.16.0"
   },
   "bin": {
@@ -121,7 +121,7 @@
     "metro-react-native-babel-preset": "0.53.1",
     "mkdirp": "0.5.1",
     "mockdate": "3.0.5",
-    "node-fetch": "2.6.1",
+    "node-fetch": "2.6.7",
     "opentype.js": "1.1.0",
     "prettier": "1.14.3",
     "prop-types": "15.7.2",
@@ -142,6 +142,7 @@
     "@babel/runtime-corejs2": "7.4.4",
     "@react-native-community/async-storage": "1.11.0",
     "@react-native-community/netinfo": "5.3.3",
+    "@times-components/svgs": "2.7.36",
     "opentype.js": "1.1.0",
     "react-art": "16.6.3",
     "react-native": "0.61.5",

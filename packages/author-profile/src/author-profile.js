@@ -13,9 +13,9 @@ import { ratioTextToFloat } from "@times-components/utils";
 import AuthorProfileHead from "./author-profile-head";
 import { propTypes, defaultProps } from "./author-profile-prop-types";
 import authorProfileTrackingContext from "./author-profile-tracking-context";
+import Head from "./head";
 
 const AuthorProfile = ({
-  adConfig,
   author,
   error,
   isLoading: isHeaderLoading,
@@ -26,7 +26,8 @@ const AuthorProfile = ({
   page,
   pageSize: initPageSize,
   refetch,
-  slug
+  slug,
+  metaDescription
 }) => {
   const emptyStateMessage =
     "Unfortunately, there are no articles relating to this author";
@@ -110,8 +111,12 @@ const AuthorProfile = ({
 
         return (
           <Responsive>
+            <Head
+              metaDescription={metaDescription}
+              description={biography}
+              name={name}
+            />
             <ArticleList
-              adConfig={adConfig}
               articleListHeader={articleListHeader}
               articles={get(data, "articles.list", [])}
               articlesLoading={articlesLoading}

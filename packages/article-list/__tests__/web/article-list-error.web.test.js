@@ -1,3 +1,3 @@
-import shared from "../shared-error.web";
+import shared from "../shared-error";
 
 shared();

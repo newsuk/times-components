@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LiveArticleFlag should render the base live article flag 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-EHOje cfBXHC"
+    >
+      <div
+        class="sc-bdVaJa bkSKmo"
+      >
+        <div
+          class="sc-htpNat jcRSar"
+        >
+          <div
+            class="sc-bxivhb hTEbzV"
+          />
+        </div>
+        <span
+          class="sc-bwzfXH hBgZUv"
+        >
+          BASE
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`LiveArticleFlag should render the breaking article flag 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-EHOje cfBXHC"
+    >
+      <div
+        class="sc-bdVaJa bkSKmo"
+      >
+        <div
+          class="sc-htpNat jcRSar"
+        >
+          <div
+            class="sc-bxivhb hTEbzV"
+          />
+        </div>
+        <span
+          class="sc-bwzfXH hBgZUv"
+        >
+          BREAKING
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`LiveArticleFlag should render the live article flag 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-EHOje cfBXHC"
+    >
+      <div
+        class="sc-bdVaJa bkSKmo"
+      >
+        <div
+          class="sc-htpNat jcRSar"
+        >
+          <div
+            class="sc-bxivhb hTEbzV"
+          />
+        </div>
+        <span
+          class="sc-bwzfXH hBgZUv"
+        >
+          LIVE
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+`;

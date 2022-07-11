@@ -3,6 +3,262 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.38.54](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.53...@times-components/styleguide@3.38.54) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.53](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.52...@times-components/styleguide@3.38.53) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.52](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.51...@times-components/styleguide@3.38.52) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.51](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.50...@times-components/styleguide@3.38.51) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.50](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.49...@times-components/styleguide@3.38.50) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.49](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.48...@times-components/styleguide@3.38.49) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.48](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.47...@times-components/styleguide@3.38.48) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.47](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.46...@times-components/styleguide@3.38.47) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.46](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.45...@times-components/styleguide@3.38.46) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.45](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.44...@times-components/styleguide@3.38.45) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.44](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.43...@times-components/styleguide@3.38.44) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.43](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.42...@times-components/styleguide@3.38.43) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.42](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.41...@times-components/styleguide@3.38.42) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.41](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.40...@times-components/styleguide@3.38.41) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.40](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.39...@times-components/styleguide@3.38.40) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.39](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.38...@times-components/styleguide@3.38.39) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.38](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.37...@times-components/styleguide@3.38.38) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.37](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.36...@times-components/styleguide@3.38.37) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.36](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.35...@times-components/styleguide@3.38.36) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.35](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.34...@times-components/styleguide@3.38.35) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.34](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.33...@times-components/styleguide@3.38.34) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.33](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.32...@times-components/styleguide@3.38.33) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.32](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.31...@times-components/styleguide@3.38.32) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.31](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.30...@times-components/styleguide@3.38.31) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.30](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.29...@times-components/styleguide@3.38.30) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.29](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.28...@times-components/styleguide@3.38.29) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.28](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.27...@times-components/styleguide@3.38.28) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.27](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.26...@times-components/styleguide@3.38.27) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.26](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.25...@times-components/styleguide@3.38.26) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.25](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.24...@times-components/styleguide@3.38.25) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.24](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.23...@times-components/styleguide@3.38.24) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.38.23](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.22...@times-components/styleguide@3.38.23) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
 ## [3.38.22](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.38.21...@times-components/styleguide@3.38.22) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/styleguide

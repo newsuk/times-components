@@ -1,3 +1,3 @@
-import shared from "../shared-std-no-short-headline.web";
+import shared from "../shared-std-no-short-headline";
 
 shared();

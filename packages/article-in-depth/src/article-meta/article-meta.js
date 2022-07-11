@@ -1,58 +1,49 @@
 import React, { Fragment } from "react";
-import { Text, View } from "react-native";
-import PropTypes from "prop-types";
 import {
   ArticleBylineWithLinks,
   hasBylineData
 } from "@times-components/article-byline";
 import Context from "@times-components/context";
 import DatePublication from "@times-components/date-publication";
-import { colours } from "@times-components/styleguide";
+import { checkStylesForUnits } from "@times-components/utils";
+import { colours } from "@times-components/ts-styleguide";
 
 import metaPropTypes from "./article-meta-prop-types";
+import {
+  DatePublicationContainer,
+  Meta,
+  MetaContainer,
+  Separator
+} from "../styles/responsive";
 import styles from "../styles";
 
-const ArticleMeta = ({
-  bylines,
-  isTablet,
-  onAuthorPress,
-  publicationName,
-  publishedTime
-}) => (
-  <View style={isTablet && styles.metaContainerTabletFlow}>
+const ArticleMeta = ({ bylines, publicationName, publishedTime }) => (
+  <MetaContainer style={styles.metaContainer}>
     {hasBylineData(bylines) && (
       <Fragment>
-        <View style={styles.meta}>
+        <Meta style={styles.meta}>
           <Context.Consumer>
             {({ theme: { sectionColour } }) => (
               <ArticleBylineWithLinks
                 ast={bylines}
                 color={sectionColour || colours.section.default}
-                onAuthorPress={onAuthorPress}
-                centered
               />
             )}
           </Context.Consumer>
-        </View>
-        {isTablet && <View style={styles.separator} />}
+        </Meta>
+        <Separator />
       </Fragment>
     )}
-    <View style={styles.meta}>
-      <Text
-        style={[
-          styles.datePublication,
-          isTablet && styles.datePulicationTablet
-        ]}
+    <Meta style={styles.meta}>
+      <DatePublicationContainer
+        styles={checkStylesForUnits(styles.datePublication)}
       >
         <DatePublication date={publishedTime} publication={publicationName} />
-      </Text>
-    </View>
-  </View>
+      </DatePublicationContainer>
+    </Meta>
+  </MetaContainer>
 );
 
-ArticleMeta.propTypes = {
-  ...metaPropTypes,
-  onAuthorPress: PropTypes.func.isRequired
-};
+ArticleMeta.propTypes = metaPropTypes;
 
 export default ArticleMeta;

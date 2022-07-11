@@ -3,6 +3,781 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.11.1](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.11.0...@times-components/related-articles@6.11.1) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+# [6.11.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.10.7...@times-components/related-articles@6.11.0) (2022-07-11)
+
+
+### Features
+
+* **TDP-1708:** removed react native from related articles ([#3016](https://github.com/newsuk/times-components/issues/3016)) ([e67b4dc](https://github.com/newsuk/times-components/commit/e67b4dc299e38dd86430f6c7f5d922437cfa27f2))
+
+
+
+
+
+## [6.10.7](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.10.6...@times-components/related-articles@6.10.7) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.10.6](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.10.5...@times-components/related-articles@6.10.6) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.10.5](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.10.4...@times-components/related-articles@6.10.5) (2022-07-06)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.10.4](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.10.3...@times-components/related-articles@6.10.4) (2022-07-01)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.10.3](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.10.2...@times-components/related-articles@6.10.3) (2022-06-30)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.10.2](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.10.1...@times-components/related-articles@6.10.2) (2022-06-24)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.10.1](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.10.0...@times-components/related-articles@6.10.1) (2022-06-24)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+# [6.10.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.9.1...@times-components/related-articles@6.10.0) (2022-06-23)
+
+
+### Features
+
+* **TDP-1700:** remove react native from article summary  ([8092557](https://github.com/newsuk/times-components/commit/809255721b146f977b94534edba7935b5ebbf79e))
+
+
+
+
+
+## [6.9.1](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.9.0...@times-components/related-articles@6.9.1) (2022-06-22)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+# [6.9.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.31...@times-components/related-articles@6.9.0) (2022-06-22)
+
+
+### Features
+
+* **TDP-1421:** Remove react native from 'times-components/slice-layout' package ([#2994](https://github.com/newsuk/times-components/issues/2994)) ([dc5dc4d](https://github.com/newsuk/times-components/commit/dc5dc4da032565a727e4e62adfc5b606ad60c298))
+
+
+
+
+
+## [6.8.31](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.30...@times-components/related-articles@6.8.31) (2022-06-21)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.30](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.29...@times-components/related-articles@6.8.30) (2022-06-21)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.29](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.28...@times-components/related-articles@6.8.29) (2022-06-20)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.28](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.27...@times-components/related-articles@6.8.28) (2022-06-20)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.27](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.26...@times-components/related-articles@6.8.27) (2022-06-17)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.26](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.25...@times-components/related-articles@6.8.26) (2022-06-16)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.25](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.24...@times-components/related-articles@6.8.25) (2022-06-15)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.24](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.23...@times-components/related-articles@6.8.24) (2022-06-14)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.23](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.22...@times-components/related-articles@6.8.23) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.22](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.21...@times-components/related-articles@6.8.22) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.21](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.20...@times-components/related-articles@6.8.21) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.20](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.19...@times-components/related-articles@6.8.20) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.19](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.18...@times-components/related-articles@6.8.19) (2022-06-08)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.18](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.17...@times-components/related-articles@6.8.18) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.17](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.16...@times-components/related-articles@6.8.17) (2022-06-07)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.16](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.15...@times-components/related-articles@6.8.16) (2022-05-26)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.15](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.14...@times-components/related-articles@6.8.15) (2022-05-25)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.14](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.13...@times-components/related-articles@6.8.14) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.13](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.12...@times-components/related-articles@6.8.13) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.12](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.11...@times-components/related-articles@6.8.12) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.11](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.10...@times-components/related-articles@6.8.11) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.10](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.9...@times-components/related-articles@6.8.10) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.9](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.8...@times-components/related-articles@6.8.9) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.8](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.7...@times-components/related-articles@6.8.8) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.7](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.6...@times-components/related-articles@6.8.7) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.6](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.5...@times-components/related-articles@6.8.6) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.5](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.4...@times-components/related-articles@6.8.5) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.4](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.3...@times-components/related-articles@6.8.4) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.3](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.2...@times-components/related-articles@6.8.3) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.2](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.1...@times-components/related-articles@6.8.2) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.8.1](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.8.0...@times-components/related-articles@6.8.1) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+# [6.8.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.7.13...@times-components/related-articles@6.8.0) (2022-04-21)
+
+
+### Features
+
+* **TDP-1691:** remove react native from article label ([#2921](https://github.com/newsuk/times-components/issues/2921)) ([a2f1d2f](https://github.com/newsuk/times-components/commit/a2f1d2fd3923378b8a8f1a91cc87e6bc97aef9eb))
+
+
+
+
+
+## [6.7.13](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.7.12...@times-components/related-articles@6.7.13) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.7.12](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.7.11...@times-components/related-articles@6.7.12) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.7.11](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.7.10...@times-components/related-articles@6.7.11) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.7.10](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.7.9...@times-components/related-articles@6.7.10) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.7.9](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.7.8...@times-components/related-articles@6.7.9) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.7.8](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.7.7...@times-components/related-articles@6.7.8) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.7.7](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.7.6...@times-components/related-articles@6.7.7) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.7.6](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.7.5...@times-components/related-articles@6.7.6) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.7.5](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.7.4...@times-components/related-articles@6.7.5) (2022-04-08)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.7.4](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.7.3...@times-components/related-articles@6.7.4) (2022-04-08)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.7.3](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.7.2...@times-components/related-articles@6.7.3) (2022-04-05)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.7.2](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.7.1...@times-components/related-articles@6.7.2) (2022-03-31)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.7.1](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.7.0...@times-components/related-articles@6.7.1) (2022-03-31)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+# [6.7.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.49...@times-components/related-articles@6.7.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [6.6.49](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.48...@times-components/related-articles@6.6.49) (2022-03-28)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.48](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.47...@times-components/related-articles@6.6.48) (2022-03-18)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.47](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.46...@times-components/related-articles@6.6.47) (2022-03-17)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.46](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.45...@times-components/related-articles@6.6.46) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.45](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.44...@times-components/related-articles@6.6.45) (2022-03-16)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.44](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.43...@times-components/related-articles@6.6.44) (2022-03-15)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.43](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.42...@times-components/related-articles@6.6.43) (2022-03-14)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.42](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.41...@times-components/related-articles@6.6.42) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.41](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.40...@times-components/related-articles@6.6.41) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.40](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.39...@times-components/related-articles@6.6.40) (2022-03-09)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.39](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.38...@times-components/related-articles@6.6.39) (2022-03-02)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.38](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.37...@times-components/related-articles@6.6.38) (2022-03-01)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.37](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.36...@times-components/related-articles@6.6.37) (2022-02-28)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.36](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.35...@times-components/related-articles@6.6.36) (2022-02-25)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.35](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.34...@times-components/related-articles@6.6.35) (2022-02-24)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.34](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.33...@times-components/related-articles@6.6.34) (2022-02-22)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.33](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.32...@times-components/related-articles@6.6.33) (2022-02-22)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.32](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.31...@times-components/related-articles@6.6.32) (2022-02-22)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.31](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.30...@times-components/related-articles@6.6.31) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.30](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.29...@times-components/related-articles@6.6.30) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.29](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.28...@times-components/related-articles@6.6.29) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.28](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.27...@times-components/related-articles@6.6.28) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.27](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.26...@times-components/related-articles@6.6.27) (2022-01-21)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.26](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.25...@times-components/related-articles@6.6.26) (2022-01-12)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.25](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.24...@times-components/related-articles@6.6.25) (2022-01-10)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.24](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.23...@times-components/related-articles@6.6.24) (2022-01-10)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.23](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.22...@times-components/related-articles@6.6.23) (2022-01-07)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.22](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.21...@times-components/related-articles@6.6.22) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.21](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.20...@times-components/related-articles@6.6.21) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.20](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.19...@times-components/related-articles@6.6.20) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.19](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.18...@times-components/related-articles@6.6.19) (2021-12-21)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.18](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.17...@times-components/related-articles@6.6.18) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.17](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.16...@times-components/related-articles@6.6.17) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.16](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.15...@times-components/related-articles@6.6.16) (2021-11-23)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.15](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.14...@times-components/related-articles@6.6.15) (2021-11-23)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.14](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.13...@times-components/related-articles@6.6.14) (2021-11-16)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.6.13](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.12...@times-components/related-articles@6.6.13) (2021-10-28)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
 ## [6.6.12](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.6.11...@times-components/related-articles@6.6.12) (2021-08-31)
 
 **Note:** Version bump only for package @times-components/related-articles

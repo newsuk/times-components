@@ -1,19 +1,16 @@
-import { StyleSheet } from "react-native";
-import styleguideFactory from "@times-components/styleguide";
+import { spacing } from "@times-components/ts-styleguide";
 import sharedStyles from "./shared";
 
-const { spacing, colours } = styleguideFactory();
-
-const styles = StyleSheet.create({
+const styles = {
   ...sharedStyles,
-  headline: {
-    ...sharedStyles.headline,
-    color: colours.functional.black
-  },
   title: {
     ...sharedStyles.title,
-    paddingVertical: spacing(1)
+    paddingTop: spacing(1)
+  },
+  titleContainer: {
+    ...sharedStyles.titleContainer,
+    padding: spacing(3)
   }
-});
+};
 
 export default styles;

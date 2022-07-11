@@ -3,6 +3,322 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.14](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.13...@times-components/article-lead-asset@1.8.14) (2022-07-11)
+
+
+### Bug Fixes
+
+* **TDP-1704:** Remove react-native from jest-serializer package ([#3015](https://github.com/newsuk/times-components/issues/3015)) ([5b6da8f](https://github.com/newsuk/times-components/commit/5b6da8f1392c3b42a9c0944d44be3d9ed3e7db2f))
+
+
+
+
+
+## [1.8.13](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.12...@times-components/article-lead-asset@1.8.13) (2022-07-06)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.8.12](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.11...@times-components/article-lead-asset@1.8.12) (2022-06-22)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.8.11](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.10...@times-components/article-lead-asset@1.8.11) (2022-06-13)
+
+
+### Bug Fixes
+
+* **TDP-2011:** Lead asset src set ([#2959](https://github.com/newsuk/times-components/issues/2959)) ([2f9c166](https://github.com/newsuk/times-components/commit/2f9c166f675e06540c7960d4038311e91ef3a58d))
+
+
+
+
+
+## [1.8.10](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.9...@times-components/article-lead-asset@1.8.10) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.8.9](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.8...@times-components/article-lead-asset@1.8.9) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.8.8](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.7...@times-components/article-lead-asset@1.8.8) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.8.7](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.6...@times-components/article-lead-asset@1.8.7) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.8.6](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.5...@times-components/article-lead-asset@1.8.6) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.8.5](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.4...@times-components/article-lead-asset@1.8.5) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.8.4](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.3...@times-components/article-lead-asset@1.8.4) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.8.3](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.2...@times-components/article-lead-asset@1.8.3) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.8.2](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.1...@times-components/article-lead-asset@1.8.2) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.8.1](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.0...@times-components/article-lead-asset@1.8.1) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.7.5...@times-components/article-lead-asset@1.8.0) (2022-04-25)
+
+
+### Features
+
+* **TDP-1692:** removed react native from article-lead-asset ([#2923](https://github.com/newsuk/times-components/issues/2923)) ([8daa928](https://github.com/newsuk/times-components/commit/8daa928e226b72125188f97b7711c96fec3bca1f))
+
+
+
+
+
+## [1.7.5](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.7.4...@times-components/article-lead-asset@1.7.5) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.7.4](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.7.3...@times-components/article-lead-asset@1.7.4) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.7.3](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.7.2...@times-components/article-lead-asset@1.7.3) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.7.2](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.7.1...@times-components/article-lead-asset@1.7.2) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.7.1](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.7.0...@times-components/article-lead-asset@1.7.1) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+# [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.60...@times-components/article-lead-asset@1.7.0) (2022-04-20)
+
+
+### Features
+
+* **TDP-1716:** remove react native from utils ([#2915](https://github.com/newsuk/times-components/issues/2915)) ([647388c](https://github.com/newsuk/times-components/commit/647388c28f6e869be5cb0eb9d85685bec192c723))
+
+
+
+
+
+## [1.6.60](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.59...@times-components/article-lead-asset@1.6.60) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.59](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.58...@times-components/article-lead-asset@1.6.59) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.58](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.57...@times-components/article-lead-asset@1.6.58) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.57](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.56...@times-components/article-lead-asset@1.6.57) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.56](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.55...@times-components/article-lead-asset@1.6.56) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.55](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.54...@times-components/article-lead-asset@1.6.55) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.54](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.53...@times-components/article-lead-asset@1.6.54) (2022-04-08)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.53](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.52...@times-components/article-lead-asset@1.6.53) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.52](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.51...@times-components/article-lead-asset@1.6.52) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.51](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.50...@times-components/article-lead-asset@1.6.51) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.50](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.49...@times-components/article-lead-asset@1.6.50) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.49](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.48...@times-components/article-lead-asset@1.6.49) (2022-01-10)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.48](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.47...@times-components/article-lead-asset@1.6.48) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.47](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.46...@times-components/article-lead-asset@1.6.47) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.46](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.45...@times-components/article-lead-asset@1.6.46) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.45](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.44...@times-components/article-lead-asset@1.6.45) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.6.44](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.43...@times-components/article-lead-asset@1.6.44) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
 ## [1.6.43](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.6.42...@times-components/article-lead-asset@1.6.43) (2021-08-31)
 
 **Note:** Version bump only for package @times-components/article-lead-asset

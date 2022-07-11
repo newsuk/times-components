@@ -8,7 +8,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import "../mocks.web";
+import "../mocks";
 import { adConfig } from "../ad-mock";
 import ArticleSkeleton from "../../src/article-skeleton";
 import articleFixture, { testFixture } from "../../fixtures/full-article";

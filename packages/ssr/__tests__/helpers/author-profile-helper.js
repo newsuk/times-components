@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-expressions */
 import { MockAuthor, MockArticle } from "@times-components/fixture-generator";
+import { terminalLog } from "../cypress/support";
 
 export default (options = {}) => {
   const qs = options.qs || "";
@@ -61,7 +62,21 @@ export default (options = {}) => {
           }
         ]
       });
-      cy.checkA11y();
+      cy.checkA11y(null, null, terminalLog, null);
+    });
+
+    it("should match snapshots", () => {
+      const { stickyElements = [], skipSnapshotTest = false } = options;
+      if (skipSnapshotTest) return; // we need to add docker to execute the snapshot testing as viewport is
+      // is mismatching while running the test cases on local server. Here is the link to the ticket
+      // in which docker server will be used.:  https://nidigitalsolutions.jira.com/browse/TDP-1249
+
+      // changed the position of navigation bar element to absolute, so we don't see
+      // duplicate elements floating
+      stickyElements.forEach(selector => {
+        cy.get(selector).then(el => el.css("position", "absolute"));
+      });
+      cy.matchImageSnapshot();
     });
   });
 };

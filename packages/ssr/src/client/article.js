@@ -13,12 +13,13 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     paidContentClassName,
     userState,
     isPreview,
+    swgProductId,
     additionalRelatedArticlesFlag,
-    inlineRelatedArticlesFlag,
     algoliaSearchKeys,
     latestFromSectionFlag,
     latestFromSection,
-    olympicsKeys
+    olympicsKeys,
+    commentCount
   } = window.nuk.article;
   const { getCookieValue } = window.nuk;
 
@@ -33,12 +34,13 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     paidContentClassName,
     userState,
     isPreview,
+    swgProductId,
     additionalRelatedArticlesFlag,
-    inlineRelatedArticlesFlag,
     algoliaSearchKeys,
     latestFromSectionFlag,
     latestFromSection,
-    olympicsKeys
+    olympicsKeys,
+    commentCount
   };
 
   const clientOptions = {

@@ -1,74 +1,50 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { View } from "react-native";
 import Image from "@times-components/image";
-import Touchable from "./touchable";
-import PlayIcon from "./play-icon.native";
+import ErrorView from "@times-components/error-view";
+import InlineVideoPlayer from "./inline-video-player";
+import IsPaidSubscriber from "./is-paid-subscriber";
+import VideoError from "./video-error";
 import { propTypes, defaultProps } from "./video-prop-types";
-import styles from "./styles";
+import { NoSubscriptionWrapper, NoSubscriptionMessage } from "./styles";
 
-const Video = ({
-  accountId,
-  height,
-  onVideoPress,
-  policyKey,
-  poster,
-  videoId,
-  width,
-  relativeWidth,
-  relativeHeight,
-  relativeHorizontalOffset,
-  relativeVerticalOffset
-}) => (
-  <Touchable
-    accessibilityLabel="Video Splash"
-    onPress={e => {
-      onVideoPress(e, {
-        accountId,
-        policyKey,
-        videoId
-      });
-    }}
-    testID="splash-component"
-  >
-    <View style={[styles.videoTabletContainer, { height, width }]}>
-      {poster ? (
-        <Image
-          aspectRatio={width / height}
-          style={{
-            height,
-            width
-          }}
-          uri={poster.uri}
-          relativeWidth={relativeWidth}
-          relativeHeight={relativeHeight}
-          relativeHorizontalOffset={relativeHorizontalOffset}
-          relativeVerticalOffset={relativeVerticalOffset}
-        />
-      ) : (
-        <View
-          style={{
-            backgroundColor: "black",
-            height,
-            width
-          }}
-        />
-      )}
-      <View style={[styles.overlay, { height, width }]}>
-        <PlayIcon />
-      </View>
-    </View>
-  </Touchable>
-);
+const Video = props => {
+  const { height, poster, width } = props;
+  return (
+    <ErrorView>
+      {({ hasError }) =>
+        hasError ? (
+          <VideoError height={height} width={width} />
+        ) : (
+          <IsPaidSubscriber.Consumer>
+            {isPaidSubscriber =>
+              !isPaidSubscriber ? (
+                <div
+                  style={{
+                    height,
+                    width
+                  }}
+                >
+                  <Image aspectRatio={width / height} uri={poster.uri} />
+                  <NoSubscriptionWrapper>
+                    <NoSubscriptionMessage>
+                      We are sorry, you need to be a subscriber to watch this
+                      video
+                    </NoSubscriptionMessage>
+                  </NoSubscriptionWrapper>
+                </div>
+              ) : (
+                <InlineVideoPlayer {...props} />
+              )
+            }
+          </IsPaidSubscriber.Consumer>
+        )
+      }
+    </ErrorView>
+  );
+};
 
-Video.defaultProps = {
-  ...defaultProps,
-  onVideoPress: () => {}
-};
-Video.propTypes = {
-  ...propTypes,
-  onVideoPress: PropTypes.func
-};
+Video.defaultProps = defaultProps;
+Video.propTypes = propTypes;
 
 export default Video;
-export { default as PlayIcon } from "./play-icon.native";
+export const IsPaidSubscriberContext = IsPaidSubscriber.Provider;

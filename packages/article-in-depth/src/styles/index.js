@@ -1,33 +1,16 @@
-import { StyleSheet } from "react-native";
-import { spacing } from "@times-components/styleguide";
+import { spacing } from "@times-components/ts-styleguide";
 import sharedStyles from "./shared";
 
-const nativeStyles = {
+const styles = {
   ...sharedStyles,
-  container: {
-    ...sharedStyles.container,
-    paddingTop: spacing(9)
-  },
-  standFirst: {
-    ...sharedStyles.standFirst,
-    lineHeight: 25,
-    marginBottom: 0
+  leadAsset: {
+    marginBottom: spacing(4)
   },
   metaContainer: {
-    ...sharedStyles.metaContainer,
-    marginTop: spacing(4)
-  },
-  datePublication: {
-    ...sharedStyles.datePublication,
-    marginTop: 0
-  },
-  label: {
-    marginBottom: 0
+    justifyContent: "center",
+    paddingTop: spacing(2),
+    paddingBottom: spacing(2)
   }
 };
-
-const styles = StyleSheet.create({
-  ...nativeStyles
-});
 
 export default styles;

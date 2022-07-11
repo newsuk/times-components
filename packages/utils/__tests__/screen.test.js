@@ -1,11 +1,9 @@
 /* global context */
 import {
   acceptedWidths,
-  convertToPixels,
   normaliseWidthForAssetRequestCache,
-  screenWidth,
-  screenWidthInPixels
-} from "../src";
+  screenWidth
+} from "../src/index";
 
 describe("screen utilities", () => {
   context("normaliseWidthForAssetRequestCache", () => {
@@ -29,18 +27,6 @@ describe("screen utilities", () => {
   context("screenWidth", () => {
     it("should return the device screen width", () => {
       expect(screenWidth()).toMatchSnapshot();
-    });
-  });
-
-  context("screenWidthInPixels", () => {
-    it("should return the correct device screen width in pixels", () => {
-      expect(screenWidthInPixels()).toMatchSnapshot();
-    });
-  });
-
-  context("convertToPixels", () => {
-    it("should convert a number to pixels using pixel density", () => {
-      expect(convertToPixels(50)).toMatchSnapshot();
     });
   });
 });

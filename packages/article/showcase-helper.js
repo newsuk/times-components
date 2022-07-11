@@ -13,7 +13,7 @@ import {
   schemaToMocks
 } from "@times-components/provider-test-tools";
 import { sections } from "@times-components/storybook";
-import { scales, themeFactory } from "@times-components/styleguide";
+import { scales, themeFactory } from "@times-components/ts-styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 
 import { latestFromSection } from "./fixtures/full-article";
@@ -37,6 +37,15 @@ const PULL_QUOTE = 64;
 const STANDFIRST = 128;
 const VIDEO = 256;
 const TEASED_CONTENT = 512;
+
+const commentingConfig = {
+  account: {
+    current: process.env.STORYBOOK_COMMENTING_CURRENT_ID || "sp_pCQgrRiN",
+    readOnly: process.env.STORYBOOK_COMMENTING_READONLY_ID || "sp_pCQgrRiN"
+  },
+  switchOver:
+    process.env.STORYBOOK_COMMENTING_SWITCHOVER || "2023-10-10T16:00:00.000Z"
+};
 
 export const makeArticleConfiguration = ({
   withFlags,
@@ -217,7 +226,6 @@ const renderArticle = ({
   isTeaser,
   isMeteredExpired,
   additionalRelatedArticlesFlag,
-  inlineRelatedArticlesFlag,
   latestFromSectionFlag,
   algoliaSearchKeys
 }) => (
@@ -279,12 +287,12 @@ const renderArticle = ({
             )}
             refetch={refetch}
             additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
-            inlineRelatedArticlesFlag={inlineRelatedArticlesFlag}
             algoliaSearchKeys={algoliaSearchKeys}
             latestFromSectionFlag={latestFromSectionFlag}
             latestFromSection={latestFromSection.find(
               ({ section: sectionName }) => sectionName === section
             )}
+            commentingConfig={commentingConfig}
           />
         </ContextProviderWithDefaults>
       );
@@ -347,11 +355,6 @@ const renderArticleConfig = ({
     false,
     "User State"
   );
-  const inlineRelatedArticlesFlag = boolean(
-    "Inline Related Articles",
-    false,
-    "User State"
-  );
   const latestFromSectionFlag = boolean(
     "Latest from Section",
     false,
@@ -389,7 +392,6 @@ const renderArticleConfig = ({
             section,
             template,
             additionalRelatedArticlesFlag,
-            inlineRelatedArticlesFlag,
             latestFromSectionFlag,
             algoliaSearchKeys
           })}

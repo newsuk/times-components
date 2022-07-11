@@ -1,3 +1,3 @@
-import shared from "../shared-pagination.web";
+import shared from "../shared-pagination";
 
 shared();

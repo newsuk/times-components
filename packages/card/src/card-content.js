@@ -1,6 +1,7 @@
+/* eslint-disable no-undef */
 import React, { Component } from "react";
-import { View } from "react-native";
-import { ResponsiveContext } from "@times-components/responsive";
+import { TcView, checkStylesForUnits } from "@times-components/utils";
+import styled from "styled-components";
 import Image from "@times-components/image";
 import { cardPropTypes, cardDefaultProps } from "./card-prop-types";
 import Loading from "./card-loading";
@@ -15,6 +16,7 @@ class CardContent extends Component {
       highResSize,
       isLoading
     } = this.props;
+
     return (
       imageUri !== nextProps.imageUri ||
       lowResQuality !== nextProps.lowResQuality ||
@@ -39,20 +41,29 @@ class CardContent extends Component {
       isReversed,
       lowResQuality,
       lowResSize,
+      relatedArticle,
       showImage
     } = this.props;
 
-    const renderImage = isTablet => {
+    const TcCardContainer = styled(TcView)`
+      ${props => props.styles && props.styles};
+    `;
+
+    const renderImage = () => {
       if (!showImage) return null;
 
+      const imageContainerStyle = relatedArticle
+        ? styles.imageContainer
+        : styles.imageContainerTablet;
+
       return (
-        <View
+        <TcView
           className={imageContainerClass}
-          style={[
-            isTablet ? styles.imageContainerTablet : styles.imageContainer,
-            imageStyle,
-            isReversed ? styles.reversedImageContainer : ""
-          ]}
+          style={checkStylesForUnits({
+            ...imageContainerStyle,
+            ...imageStyle,
+            ...(isReversed ? styles.reversedImageContainer : "")
+          })}
         >
           <Image
             accessibilityLabel={imageAccessibilityLabel}
@@ -63,36 +74,34 @@ class CardContent extends Component {
             lowResSize={lowResSize}
             uri={imageUri}
           />
-        </View>
+        </TcView>
       );
     };
 
+    const cardContainerStyle = relatedArticle
+      ? { ...styles.cardContainer, display: "block" }
+      : styles.cardContainer;
+
     return (
-      <ResponsiveContext.Consumer>
-        {({ isTablet }) => (
-          <View
-            style={[
-              isTablet ? styles.cardContainerTablet : styles.cardContainer,
-              isReversed ? styles.reversedCardContainer : ""
-            ]}
-          >
-            {!isReversed ? renderImage(isTablet) : null}
-            <View
-              className={contentContainerClass}
-              style={[
-                isTablet
-                  ? styles.contentContainerTablet
-                  : styles.contentContainer,
-                isReversed ? styles.reversedContentContainer : "",
-                isLoading ? styles.loadingContentContainer : ""
-              ]}
-            >
-              {isLoading ? <Loading /> : children}
-            </View>
-            {isReversed ? renderImage(isTablet) : null}
-          </View>
-        )}
-      </ResponsiveContext.Consumer>
+      <TcView
+        style={checkStylesForUnits({
+          ...cardContainerStyle,
+          ...(isReversed ? styles.reversedCardContainer : "")
+        })}
+      >
+        {!isReversed ? renderImage() : null}
+        <TcCardContainer
+          className={contentContainerClass}
+          styles={checkStylesForUnits({
+            ...styles.contentContainer,
+            ...(isReversed ? styles.reversedContentContainer : ""),
+            ...(isLoading ? styles.loadingContentContainer : "")
+          })}
+        >
+          {isLoading ? <Loading /> : children}
+        </TcCardContainer>
+        {isReversed ? renderImage() : null}
+      </TcView>
     );
   }
 }

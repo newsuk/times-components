@@ -1,25 +1,39 @@
 import React from "react";
-import { themeFactory } from "@times-components/styleguide";
+import { ContextProviderWithDefaults } from "@times-components/context";
+import { scales, themeFactory } from "@times-components/ts-styleguide";
+import coreRenderers from "@times-components/markup";
 import { renderTree } from "@times-components/markup-forest";
-import renderers from "@times-components/markup";
 import ArticleParagraph from "../src";
+import DropCapView from "../src/drop-cap";
 
 export default (ast, section = "default") => {
   const theme = themeFactory(section, "magazinestandard");
-  const rendered = renderTree(ast, {
-    ...renderers,
-    paragraph(key, attributes, children, indx, node) {
-      return (
-        <ArticleParagraph
-          ast={node}
-          dropCapFont={theme.dropCapFont}
-          key={indx}
-          uid={indx}
-        >
-          {children}
-        </ArticleParagraph>
-      );
-    }
-  });
-  return rendered;
+  return (
+    <ContextProviderWithDefaults
+      value={{
+        theme: {
+          ...themeFactory(section, "mainstandard"),
+          scale: scales.medium
+        }
+      }}
+    >
+      {renderTree(ast, {
+        ...coreRenderers,
+        dropCap(key, { value }) {
+          return (
+            <DropCapView font={theme.dropCapFont} key={key}>
+              {value}
+            </DropCapView>
+          );
+        },
+        paragraph(key, attributes, children, indx, node) {
+          return (
+            <ArticleParagraph ast={node} key={indx} uid={indx}>
+              {children}
+            </ArticleParagraph>
+          );
+        }
+      })}
+    </ContextProviderWithDefaults>
+  );
 };

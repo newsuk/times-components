@@ -2,7 +2,7 @@
 import React from "react";
 import pick from "lodash.pick";
 import { sections } from "@times-components/storybook";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components/ts-styleguide";
 import ArticleLabel from "./src/article-label";
 
 export default {

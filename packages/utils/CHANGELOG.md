@@ -3,6 +3,204 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.12.2](https://github.com/newsuk/times-components/compare/@times-components/utils@6.12.1...@times-components/utils@6.12.2) (2022-07-11)
+
+
+### Bug Fixes
+
+* **TDP-1704:** Remove react-native from jest-serializer package ([#3015](https://github.com/newsuk/times-components/issues/3015)) ([5b6da8f](https://github.com/newsuk/times-components/commit/5b6da8f1392c3b42a9c0944d44be3d9ed3e7db2f))
+
+
+
+
+
+## [6.12.1](https://github.com/newsuk/times-components/compare/@times-components/utils@6.12.0...@times-components/utils@6.12.1) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+# [6.12.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.11.2...@times-components/utils@6.12.0) (2022-05-12)
+
+
+### Features
+
+* **TDP-1973:** updated ts-styleguide with tabletWidth ([#2940](https://github.com/newsuk/times-components/issues/2940)) ([a3f1713](https://github.com/newsuk/times-components/commit/a3f17136f3a1a265d2deb3d667d7b42d9b209465))
+
+
+
+
+
+## [6.11.2](https://github.com/newsuk/times-components/compare/@times-components/utils@6.11.1...@times-components/utils@6.11.2) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.11.1](https://github.com/newsuk/times-components/compare/@times-components/utils@6.11.0...@times-components/utils@6.11.1) (2022-05-09)
+
+
+### Bug Fixes
+
+* **tdp-1829:** update flag tracking ([#2935](https://github.com/newsuk/times-components/issues/2935)) ([031a153](https://github.com/newsuk/times-components/commit/031a15356d376cd4b75f0ea4f24e02ff20ebfecc))
+
+
+
+
+
+# [6.11.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.10.0...@times-components/utils@6.11.0) (2022-04-29)
+
+
+### Features
+
+* **TDP-1830:** convert styleguide to typescript component ([#2918](https://github.com/newsuk/times-components/issues/2918)) ([24620e2](https://github.com/newsuk/times-components/commit/24620e25be9f2827ceedbb2f4cf1fe0ff6ea2ae2))
+
+
+
+
+
+# [6.10.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.9.1...@times-components/utils@6.10.0) (2022-04-25)
+
+
+### Features
+
+* **TDP-1692:** removed react native from article-lead-asset ([#2923](https://github.com/newsuk/times-components/issues/2923)) ([8daa928](https://github.com/newsuk/times-components/commit/8daa928e226b72125188f97b7711c96fec3bca1f))
+
+
+
+
+
+## [6.9.1](https://github.com/newsuk/times-components/compare/@times-components/utils@6.9.0...@times-components/utils@6.9.1) (2022-04-21)
+
+
+### Bug Fixes
+
+* **TDP-000:** ArticleHeader date and time update ([#2924](https://github.com/newsuk/times-components/issues/2924)) ([7453ab2](https://github.com/newsuk/times-components/commit/7453ab2498cc12a6e6ea8ba1df9ee71bb4798628))
+
+
+
+
+
+# [6.9.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.8.0...@times-components/utils@6.9.0) (2022-04-21)
+
+
+### Features
+
+* **TDP-1691:** remove react native from article label ([#2921](https://github.com/newsuk/times-components/issues/2921)) ([a2f1d2f](https://github.com/newsuk/times-components/commit/a2f1d2fd3923378b8a8f1a91cc87e6bc97aef9eb))
+
+
+
+
+
+# [6.8.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.7.2...@times-components/utils@6.8.0) (2022-04-20)
+
+
+### Features
+
+* **TDP-1716:** remove react native from utils ([#2915](https://github.com/newsuk/times-components/issues/2915)) ([647388c](https://github.com/newsuk/times-components/commit/647388c28f6e869be5cb0eb9d85685bec192c723))
+
+
+
+
+
+## [6.7.2](https://github.com/newsuk/times-components/compare/@times-components/utils@6.7.1...@times-components/utils@6.7.2) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.7.1](https://github.com/newsuk/times-components/compare/@times-components/utils@6.7.0...@times-components/utils@6.7.1) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+# [6.7.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.6.0...@times-components/utils@6.7.0) (2022-04-11)
+
+
+### Features
+
+* **TDP-1577:** key moments links ([#2911](https://github.com/newsuk/times-components/issues/2911)) ([82774c5](https://github.com/newsuk/times-components/commit/82774c5a66384185f57d73568964e75418599eba))
+
+
+
+
+
+# [6.6.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.13...@times-components/utils@6.6.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [6.5.13](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.12...@times-components/utils@6.5.13) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.5.12](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.11...@times-components/utils@6.5.12) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.5.11](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.10...@times-components/utils@6.5.11) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.5.10](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.9...@times-components/utils@6.5.10) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.5.9](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.8...@times-components/utils@6.5.9) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.5.8](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.7...@times-components/utils@6.5.8) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.5.7](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.6...@times-components/utils@6.5.7) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
 ## [6.5.6](https://github.com/newsuk/times-components/compare/@times-components/utils@6.5.5...@times-components/utils@6.5.6) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/utils

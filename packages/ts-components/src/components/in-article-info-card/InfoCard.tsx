@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Placeholder } from '@times-components/image';
-import { breakpoints } from '@times-components/styleguide';
+import { breakpoints } from '@times-components/ts-styleguide';
 import { Card } from './Card';
 import {
   InfoCardContainer,
@@ -275,7 +275,11 @@ export const InfoCard: React.FC<GalleryCarouselProps> = ({
                 {row.data.copy && (
                   <BodyCopy
                     dangerouslySetInnerHTML={{
-                      __html: sanitiseCopy(row.data.copy, ['br', 'b', 'i'])
+                      __html: sanitiseCopy(row.data.copy, {
+                        br: {},
+                        b: {},
+                        i: {}
+                      })
                     }}
                   />
                 )}

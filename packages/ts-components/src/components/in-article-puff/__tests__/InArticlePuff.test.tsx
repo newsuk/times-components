@@ -43,8 +43,11 @@ const optionalFields = {
   linkText: 'Read the full article'
 };
 
+let mockIsLiveOrBreakingFlag;
+
 const requiredProps = {
-  sectionColour: '#13354E'
+  sectionColour: '#13354E',
+  isLiveOrBreakingFlag: mockIsLiveOrBreakingFlag
 };
 
 describe('InArticlePuff', () => {
@@ -166,7 +169,8 @@ describe('InArticlePuff', () => {
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'scroll',
           event_navigation_name: 'in-article component displayed : puff',
-          section: 'section'
+          section: 'section',
+          article_flag: 'no flag'
         }
       });
     });
@@ -182,12 +186,13 @@ describe('InArticlePuff', () => {
             component: 'ArticleSkeleton',
             attrs: {
               articleHeadline: 'articleHeadline',
-              section: 'section'
+              section: 'section',
+              article_flag: 'live'
             }
           }}
           analyticsStream={analyticsStream}
         >
-          <InArticlePuff {...requiredProps} />
+          <InArticlePuff sectionColour="yellow" isLiveOrBreaking={'live'} />
         </TrackingContextProvider>
       );
 
@@ -207,7 +212,8 @@ describe('InArticlePuff', () => {
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : Read the full article',
-          section: 'section'
+          section: 'section',
+          article_flag: 'live'
         }
       });
     });
@@ -223,12 +229,13 @@ describe('InArticlePuff', () => {
             component: 'ArticleSkeleton',
             attrs: {
               articleHeadline: 'articleHeadline',
-              section: 'section'
+              section: 'section',
+              article_flag: 'breaking'
             }
           }}
           analyticsStream={analyticsStream}
         >
-          <InArticlePuff {...requiredProps} />
+          <InArticlePuff sectionColour="yellow" isLiveOrBreaking={'breaking'} />
         </TrackingContextProvider>
       );
 
@@ -248,7 +255,8 @@ describe('InArticlePuff', () => {
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : headline',
-          section: 'section'
+          section: 'section',
+          article_flag: 'breaking'
         }
       });
     });
@@ -288,7 +296,8 @@ describe('InArticlePuff', () => {
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'click',
           event_navigation_name: 'button : image',
-          section: 'section'
+          section: 'section',
+          article_flag: 'no flag'
         }
       });
     });

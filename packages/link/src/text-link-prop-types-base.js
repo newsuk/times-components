@@ -1,7 +1,5 @@
-import { Text } from "react-native";
 import PropTypes from "prop-types";
 
-const { style: StylePropType } = Text.propTypes;
 export const basePropTypes = {
   children: PropTypes.oneOfType([
     PropTypes.string,
@@ -10,7 +8,7 @@ export const basePropTypes = {
     PropTypes.arrayOf(PropTypes.element)
   ]).isRequired,
   onPress: PropTypes.func.isRequired,
-  style: StylePropType,
+  style: PropTypes.object,
   target: PropTypes.string,
   url: PropTypes.string
 };

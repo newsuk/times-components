@@ -8,13 +8,20 @@ exports[`StickySaveAndShareBar renders 1`] = `
     >
       <div>
         <WithStickyContext(Sticky)>
-          <Sticky>
+          <Sticky
+            className=""
+          >
             <div />
             <div>
-              <SaveShareContainerWrapper>
+              <SaveShareContainerWrapper
+                className=""
+              >
                 <ServerClientRender>
-                  <sticky-save-and-share-bar__SaveShareContainer>
+                  <sticky-save-and-share-bar__SaveShareContainer
+                    className=""
+                  >
                     <StyledComponent
+                      className=""
                       forwardedRef={null}
                     >
                       <div>

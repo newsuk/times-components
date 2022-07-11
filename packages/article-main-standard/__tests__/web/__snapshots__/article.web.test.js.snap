@@ -17,7 +17,7 @@ exports[`1. an article 1`] = `
         <title>
           Some Headline
            | 
-          
+          Some Section | 
           The Times
         </title>
         <meta
@@ -35,10 +35,6 @@ exports[`1. an article 1`] = `
         <meta
           content="Some byline"
           name="author"
-        />
-        <meta
-          content={null}
-          name="section"
         />
         <meta
           content="Some Headline"
@@ -75,7 +71,7 @@ exports[`1. an article 1`] = `
         <script
           type="application/ld+json"
         >
-          {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"}}
+          {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"},"articleSection":"Some Section"}
         </script>
       </Helmet>
       <div>
@@ -83,9 +79,7 @@ exports[`1. an article 1`] = `
           slotName="header"
         />
       </div>
-      <main
-        role="main"
-      >
+      <main>
         <div>
           <div>
             <div>
@@ -101,12 +95,12 @@ exports[`1. an article 1`] = `
                 >
                   Some Headline
                 </h1>
-                <h2
+                <div
                   aria-level="2"
                   role="heading"
                 >
                   Some Standfirst
-                </h2>
+                </div>
                 <div>
                   <ArticleFlags
                     flags={
@@ -125,7 +119,7 @@ exports[`1. an article 1`] = `
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <ArticleBylineWithLinks
                         ast={
                           Array [
@@ -149,19 +143,19 @@ exports[`1. an article 1`] = `
                           ]
                         }
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <DatePublication
                         date="2015-03-13T18:54:58.000Z"
                         publication="TIMES"
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -174,8 +168,8 @@ exports[`1. an article 1`] = `
                   <div>
                     <img
                       alt="Some Caption"
-                      src="https://crop169.io?resize=1200"
-                      srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=1200 685w, https://crop169.io?resize=1200 1200w"
+                      src="https://crop169.io?resize=360"
+                      srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                     />
                   </div>
                 </div>
@@ -199,7 +193,7 @@ exports[`1. an article 1`] = `
           <div>
             <div>
               <div>
-                <span>
+                <div>
                   <ArticleBylineWithLinks
                     ast={
                       Array [
@@ -223,22 +217,20 @@ exports[`1. an article 1`] = `
                       ]
                     }
                   />
-                </span>
+                </div>
               </div>
               <div>
-                <span>
+                <div>
                   <DatePublication
                     date="2015-03-13T18:54:58.000Z"
                     publication="TIMES"
                   />
-                </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <article
-          role="article"
-        >
+        <article>
           <p>
             Some content
           </p>
@@ -307,6 +299,7 @@ exports[`1. an article 1`] = `
             }
             relatedArticlesVisible={false}
             savingEnabled={true}
+            section="Some Section"
             sharingEnabled={true}
             topics={
               Array [
@@ -354,7 +347,7 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
         <title>
           Some Short Headline
            | 
-          
+          Some Section | 
           The Times
         </title>
         <meta
@@ -368,10 +361,6 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
         <meta
           content="The Times"
           name="article:publication"
-        />
-        <meta
-          content={null}
-          name="section"
         />
         <meta
           content="Some Short Headline"
@@ -400,7 +389,7 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
         <script
           type="application/ld+json"
         >
-          {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Short Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null,"dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Organization","name":"The Times"}}
+          {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Short Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null,"dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Organization","name":"The Times"},"articleSection":"Some Section"}
         </script>
       </Helmet>
       <div>
@@ -408,9 +397,7 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
           slotName="header"
         />
       </div>
-      <main
-        role="main"
-      >
+      <main>
         <div>
           <div>
             <div>
@@ -430,21 +417,21 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <ArticleBylineWithLinks />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <DatePublication
                         date="2015-03-13T18:54:58.000Z"
                         publication="TIMES"
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -453,24 +440,22 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
           <div>
             <div>
               <div>
-                <span>
+                <div>
                   <ArticleBylineWithLinks />
-                </span>
+                </div>
               </div>
               <div>
-                <span>
+                <div>
                   <DatePublication
                     date="2015-03-13T18:54:58.000Z"
                     publication="TIMES"
                   />
-                </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <article
-          role="article"
-        >
+        <article>
           <p>
             Some content
           </p>
@@ -498,6 +483,7 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
             publishedTime="2015-03-13T18:54:58.000Z"
             relatedArticlesVisible={false}
             savingEnabled={true}
+            section="Some Section"
             sharingEnabled={true}
           />
         </article>
@@ -533,7 +519,7 @@ exports[`5. an article with ads 1`] = `
         <title>
           Some Headline
            | 
-          
+          Some Section | 
           The Times
         </title>
         <meta
@@ -547,10 +533,6 @@ exports[`5. an article with ads 1`] = `
         <meta
           content="The Times"
           name="article:publication"
-        />
-        <meta
-          content={null}
-          name="section"
         />
         <meta
           content="Some Headline"
@@ -579,7 +561,7 @@ exports[`5. an article with ads 1`] = `
         <script
           type="application/ld+json"
         >
-          {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null,"dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Organization","name":"The Times"}}
+          {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null,"dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Organization","name":"The Times"},"articleSection":"Some Section"}
         </script>
       </Helmet>
       <div>
@@ -587,9 +569,7 @@ exports[`5. an article with ads 1`] = `
           slotName="header"
         />
       </div>
-      <main
-        role="main"
-      >
+      <main>
         <div>
           <div>
             <div>
@@ -609,21 +589,21 @@ exports[`5. an article with ads 1`] = `
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <ArticleBylineWithLinks />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <DatePublication
                         date="2015-03-13T18:54:58.000Z"
                         publication="TIMES"
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -632,24 +612,22 @@ exports[`5. an article with ads 1`] = `
           <div>
             <div>
               <div>
-                <span>
+                <div>
                   <ArticleBylineWithLinks />
-                </span>
+                </div>
               </div>
               <div>
-                <span>
+                <div>
                   <DatePublication
                     date="2015-03-13T18:54:58.000Z"
                     publication="TIMES"
                   />
-                </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <article
-          role="article"
-        >
+        <article>
           <div>
             <h2>
               Advertisement
@@ -682,6 +660,7 @@ exports[`5. an article with ads 1`] = `
             publishedTime="2015-03-13T18:54:58.000Z"
             relatedArticlesVisible={false}
             savingEnabled={true}
+            section="Some Section"
             sharingEnabled={true}
           />
         </article>
@@ -717,7 +696,7 @@ exports[`6. should show topics when logged in or shared 1`] = `
         <title>
           Some Headline
            | 
-          
+          Some Section | 
           The Times
         </title>
         <meta
@@ -735,10 +714,6 @@ exports[`6. should show topics when logged in or shared 1`] = `
         <meta
           content="Some byline"
           name="author"
-        />
-        <meta
-          content={null}
-          name="section"
         />
         <meta
           content="Some Headline"
@@ -775,7 +750,7 @@ exports[`6. should show topics when logged in or shared 1`] = `
         <script
           type="application/ld+json"
         >
-          {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"}}
+          {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"},"articleSection":"Some Section"}
         </script>
       </Helmet>
       <div>
@@ -783,9 +758,7 @@ exports[`6. should show topics when logged in or shared 1`] = `
           slotName="header"
         />
       </div>
-      <main
-        role="main"
-      >
+      <main>
         <div>
           <div>
             <div>
@@ -801,12 +774,12 @@ exports[`6. should show topics when logged in or shared 1`] = `
                 >
                   Some Headline
                 </h1>
-                <h2
+                <div
                   aria-level="2"
                   role="heading"
                 >
                   Some Standfirst
-                </h2>
+                </div>
                 <div>
                   <ArticleFlags
                     flags={
@@ -825,7 +798,7 @@ exports[`6. should show topics when logged in or shared 1`] = `
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <ArticleBylineWithLinks
                         ast={
                           Array [
@@ -849,19 +822,19 @@ exports[`6. should show topics when logged in or shared 1`] = `
                           ]
                         }
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <DatePublication
                         date="2015-03-13T18:54:58.000Z"
                         publication="TIMES"
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -886,8 +859,8 @@ exports[`6. should show topics when logged in or shared 1`] = `
                   <div>
                     <img
                       alt="Some Caption"
-                      src="https://crop169.io?resize=1200"
-                      srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=1200 685w, https://crop169.io?resize=1200 1200w"
+                      src="https://crop169.io?resize=360"
+                      srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                     />
                   </div>
                 </div>
@@ -911,7 +884,7 @@ exports[`6. should show topics when logged in or shared 1`] = `
           <div>
             <div>
               <div>
-                <span>
+                <div>
                   <ArticleBylineWithLinks
                     ast={
                       Array [
@@ -935,15 +908,15 @@ exports[`6. should show topics when logged in or shared 1`] = `
                       ]
                     }
                   />
-                </span>
+                </div>
               </div>
               <div>
-                <span>
+                <div>
                   <DatePublication
                     date="2015-03-13T18:54:58.000Z"
                     publication="TIMES"
                   />
-                </span>
+                </div>
               </div>
             </div>
           </div>
@@ -970,9 +943,7 @@ exports[`6. should show topics when logged in or shared 1`] = `
             </div>
           </div>
         </div>
-        <article
-          role="article"
-        >
+        <article>
           <p>
             Some content
           </p>
@@ -1041,6 +1012,7 @@ exports[`6. should show topics when logged in or shared 1`] = `
             }
             relatedArticlesVisible={false}
             savingEnabled={true}
+            section="Some Section"
             sharingEnabled={true}
             topics={
               Array [
@@ -1084,7 +1056,7 @@ exports[`7. an article with no byline 1`] = `
         <title>
           Some Headline
            | 
-          
+          Some Section | 
           The Times
         </title>
         <meta
@@ -1098,10 +1070,6 @@ exports[`7. an article with no byline 1`] = `
         <meta
           content="The Times"
           name="article:publication"
-        />
-        <meta
-          content={null}
-          name="section"
         />
         <meta
           content="Some Headline"
@@ -1138,7 +1106,7 @@ exports[`7. an article with no byline 1`] = `
         <script
           type="application/ld+json"
         >
-          {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Organization","name":"The Times"}}
+          {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Organization","name":"The Times"},"articleSection":"Some Section"}
         </script>
       </Helmet>
       <div>
@@ -1146,9 +1114,7 @@ exports[`7. an article with no byline 1`] = `
           slotName="header"
         />
       </div>
-      <main
-        role="main"
-      >
+      <main>
         <div>
           <div>
             <div>
@@ -1164,12 +1130,12 @@ exports[`7. an article with no byline 1`] = `
                 >
                   Some Headline
                 </h1>
-                <h2
+                <div
                   aria-level="2"
                   role="heading"
                 >
                   Some Standfirst
-                </h2>
+                </div>
                 <div>
                   <ArticleFlags
                     flags={
@@ -1188,21 +1154,21 @@ exports[`7. an article with no byline 1`] = `
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <ArticleBylineWithLinks />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <DatePublication
                         date="2015-03-13T18:54:58.000Z"
                         publication="TIMES"
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1215,8 +1181,8 @@ exports[`7. an article with no byline 1`] = `
                   <div>
                     <img
                       alt="Some Caption"
-                      src="https://crop169.io?resize=1200"
-                      srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=1200 685w, https://crop169.io?resize=1200 1200w"
+                      src="https://crop169.io?resize=360"
+                      srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                     />
                   </div>
                 </div>
@@ -1240,24 +1206,22 @@ exports[`7. an article with no byline 1`] = `
           <div>
             <div>
               <div>
-                <span>
+                <div>
                   <ArticleBylineWithLinks />
-                </span>
+                </div>
               </div>
               <div>
-                <span>
+                <div>
                   <DatePublication
                     date="2015-03-13T18:54:58.000Z"
                     publication="TIMES"
                   />
-                </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <article
-          role="article"
-        >
+        <article>
           <p>
             Some content
           </p>
@@ -1326,6 +1290,7 @@ exports[`7. an article with no byline 1`] = `
             }
             relatedArticlesVisible={false}
             savingEnabled={true}
+            section="Some Section"
             sharingEnabled={true}
             topics={
               Array [
@@ -1369,7 +1334,7 @@ exports[`8. an article with no label 1`] = `
         <title>
           Some Headline
            | 
-          
+          Some Section | 
           The Times
         </title>
         <meta
@@ -1387,10 +1352,6 @@ exports[`8. an article with no label 1`] = `
         <meta
           content="Some byline"
           name="author"
-        />
-        <meta
-          content={null}
-          name="section"
         />
         <meta
           content="Some Headline"
@@ -1427,7 +1388,7 @@ exports[`8. an article with no label 1`] = `
         <script
           type="application/ld+json"
         >
-          {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"}}
+          {"@context":"https://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=1200","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z","author":{"@type":"Person","name":"Some byline"},"articleSection":"Some Section"}
         </script>
       </Helmet>
       <div>
@@ -1435,9 +1396,7 @@ exports[`8. an article with no label 1`] = `
           slotName="header"
         />
       </div>
-      <main
-        role="main"
-      >
+      <main>
         <div>
           <div>
             <div>
@@ -1448,12 +1407,12 @@ exports[`8. an article with no label 1`] = `
                 >
                   Some Headline
                 </h1>
-                <h2
+                <div
                   aria-level="2"
                   role="heading"
                 >
                   Some Standfirst
-                </h2>
+                </div>
                 <div>
                   <ArticleFlags
                     flags={
@@ -1472,7 +1431,7 @@ exports[`8. an article with no label 1`] = `
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <ArticleBylineWithLinks
                         ast={
                           Array [
@@ -1496,19 +1455,19 @@ exports[`8. an article with no label 1`] = `
                           ]
                         }
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div>
                 <div>
                   <div>
-                    <span>
+                    <div>
                       <DatePublication
                         date="2015-03-13T18:54:58.000Z"
                         publication="TIMES"
                       />
-                    </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1521,8 +1480,8 @@ exports[`8. an article with no label 1`] = `
                   <div>
                     <img
                       alt="Some Caption"
-                      src="https://crop169.io?resize=1200"
-                      srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=1200 685w, https://crop169.io?resize=1200 1200w"
+                      src="https://crop169.io?resize=360"
+                      srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                     />
                   </div>
                 </div>
@@ -1546,7 +1505,7 @@ exports[`8. an article with no label 1`] = `
           <div>
             <div>
               <div>
-                <span>
+                <div>
                   <ArticleBylineWithLinks
                     ast={
                       Array [
@@ -1570,22 +1529,20 @@ exports[`8. an article with no label 1`] = `
                       ]
                     }
                   />
-                </span>
+                </div>
               </div>
               <div>
-                <span>
+                <div>
                   <DatePublication
                     date="2015-03-13T18:54:58.000Z"
                     publication="TIMES"
                   />
-                </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <article
-          role="article"
-        >
+        <article>
           <p>
             Some content
           </p>
@@ -1654,6 +1611,7 @@ exports[`8. an article with no label 1`] = `
             }
             relatedArticlesVisible={false}
             savingEnabled={true}
+            section="Some Section"
             sharingEnabled={true}
             topics={
               Array [

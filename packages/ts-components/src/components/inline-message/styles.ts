@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { fonts } from '@times-components/styleguide';
+import { fonts } from '@times-components/ts-styleguide';
 
 const MessageConfig = {
   info: { background: '#bedeed', foreground: '#1573a2' },
@@ -8,7 +8,7 @@ const MessageConfig = {
 };
 export const Container = styled.div`
   display: flex;
-
+  margin-top: 50px;
   &.info {
     background-color: ${MessageConfig.info.background};
     border-left: 4px solid ${MessageConfig.info.foreground};

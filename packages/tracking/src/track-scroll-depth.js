@@ -1,3 +1,4 @@
+/* eslint-env browser */
 import React, { Component } from "react";
 import getDisplayName from "react-display-name";
 import hoistNonReactStatic from "hoist-non-react-statics";
@@ -13,10 +14,53 @@ export default (
   class WithTrackScrollDepth extends Component {
     constructor(props, context) {
       super(props, context);
-      this.viewed = new Set();
-      this.handleChildViewed = this.handleChildViewed.bind(this);
       this.receiveChildList = this.receiveChildList.bind(this);
+      this.updateOnScroll = this.updateOnScroll.bind(this);
+      this.childData = {};
+      this.isOnScroll = false;
+      this.viewed = new Set();
+      if (typeof window !== "undefined" && window.IntersectionObserver) {
+        this.observer = new window.IntersectionObserver(
+          this.onObserved.bind(this),
+          {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.5
+          }
+        );
+      }
       this.childList = [];
+    }
+
+    componentDidMount() {
+      window.addEventListener("scroll", this.updateOnScroll);
+      this.observeChildren();
+    }
+
+    componentDidUpdate() {
+      this.observeChildren();
+    }
+
+    componentWillUnmount() {
+      window.removeEventListener("scroll", this.updateOnScroll);
+      if (this.observer) {
+        this.observer.disconnect();
+      }
+    }
+
+    onObserved(observed = []) {
+      const { tracking } = this.context;
+      if (!tracking) {
+        return;
+      }
+
+      observed.forEach(({ isIntersecting, target }) => {
+        if (this.isOnScroll && isIntersecting && !this.viewed.has(target.id)) {
+          this.viewed.add(target.id);
+
+          this.onChildView(this.childData[target.id]);
+        }
+      });
     }
 
     onChildView(childProps) {
@@ -31,39 +75,45 @@ export default (
             total: childProps.total
           }
         },
-        component: `${trackingName || componentName}Child`
+        component: childProps.eventNavigationName
+          ? childProps.eventNavigationName
+          : `${trackingName || componentName}Child`
       });
+    }
+
+    updateOnScroll() {
+      this.isOnScroll = true;
     }
 
     receiveChildList(childList) {
       this.childList = childList;
     }
 
-    handleChildViewed(childData) {
-      const { elementId } = childData;
+    observeChildren() {
+      if (this.observer && this.childList)
+        this.childList.forEach((props, index) => {
+          if (!this.childData[props.elementId]) {
+            this.observeChild({
+              ...props,
+              index,
+              total: this.childList.length
+            });
+          }
+        });
+    }
 
-      if (this.viewed.has(elementId)) {
-        return;
+    observeChild(props) {
+      const el = document.getElementById(props.elementId);
+      if (el) {
+        this.observer.observe(el);
+        this.childData[props.elementId] = props;
       }
-
-      this.viewed.add(elementId);
-
-      const index = this.childList.findIndex(
-        item => item.elementId === elementId
-      );
-
-      this.onChildView({
-        ...childData,
-        index,
-        total: this.childList.length
-      });
     }
 
     render() {
       return (
         <WrappedComponent
           {...this.props}
-          onViewed={this.handleChildViewed}
           receiveChildList={this.receiveChildList}
         />
       );

@@ -7,7 +7,7 @@ const { TopicProvider } = require("@times-components/provider/rnw");
 const {
   ContextProviderWithDefaults
 } = require("@times-components/context/rnw");
-const { scales } = require("@times-components/styleguide/rnw");
+const { scales } = require("@times-components/ts-styleguide/rnw");
 const Topic = require("@times-components/topic/rnw").default;
 
 const scale = scales.large;

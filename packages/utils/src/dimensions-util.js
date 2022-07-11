@@ -1,15 +1,11 @@
-import { Dimensions } from "react-native";
-
-export const getDimensions = (
-  width = Dimensions.get("window").width,
-  height = Dimensions.get("window").height,
-  fontScale = Dimensions.get("window").fontScale
-) => ({ width, height, fontScale });
-
-export const addDimensionsListener = (type, handler) => {
-  Dimensions.addEventListener(type, handler);
+const getDimensions = () => {
+  let width = 1024;
+  let height = 768;
+  if (typeof window !== "undefined") {
+    width = window.innerWidth;
+    height = window.innerHeight;
+  }
+  return { width, height };
 };
 
-export const removeDimensionsListener = (type, handler) => {
-  Dimensions.removeEventListener(type, handler);
-};
+export default getDimensions;

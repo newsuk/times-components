@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text, StyleSheet } from "react-native";
-import styleguide from "@times-components/styleguide";
+import { TcText, checkStylesForUnits } from "@times-components/utils";
+import { colours, fontFactory } from "@times-components/ts-styleguide";
 
-const { colours, fontFactory } = styleguide();
-const styles = StyleSheet.create({
+const styles = {
   message: {
     color: colours.functional.secondary,
     ...fontFactory({
@@ -13,12 +12,12 @@ const styles = StyleSheet.create({
     }),
     paddingTop: 4
   }
-});
+};
 
 const ResultsMessage = ({ children: message }) => (
-  <Text style={styles.message} testID="results-message">
+  <TcText style={checkStylesForUnits(styles.message)} testID="results-message">
     {message}
-  </Text>
+  </TcText>
 );
 
 ResultsMessage.propTypes = {

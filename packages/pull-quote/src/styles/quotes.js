@@ -1,6 +1,4 @@
-import styleguideFactory from "@times-components/styleguide";
-
-const { fonts, spacing } = styleguideFactory();
+import { fonts, spacing } from "@times-components/ts-styleguide";
 
 const quoteMargins = {
   cultureMagazine: {

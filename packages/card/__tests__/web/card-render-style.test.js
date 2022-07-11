@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import { mount } from "enzyme";
 import serializers from "./serializers";
 import Card from "../../src/card";
@@ -19,7 +19,7 @@ serializers();
 it("card with default layout", () => {
   const wrapper = mount(
     <Card {...props}>
-      <Text>A card</Text>
+      <TcText>A card</TcText>
     </Card>
   );
 

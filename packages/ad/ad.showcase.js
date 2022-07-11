@@ -1,8 +1,8 @@
 /* eslint-env browser */
 /* eslint-disable react/prop-types */
 import React, { Fragment } from "react";
-import { Text } from "react-native";
 import { NewTab } from "@times-components/storybook";
+import { TcText } from "@times-components/utils";
 import Ad, { AdComposer } from "./src/ad";
 import adConfig from "./fixtures/article-ad-config.json";
 
@@ -30,9 +30,9 @@ const articleContextURL =
 const renderAd = slotName => (
   <Fragment>
     {slotName.indexOf("pixel") !== -1 && (
-      <Text style={{ display: "block" }}>
+      <TcText style={{ display: "block" }}>
         The pixel ad is below. It&rsquo;s invisible.
-      </Text>
+      </TcText>
     )}
     <Ad contextUrl={articleContextURL} section="news" slotName={slotName} />
   </Fragment>

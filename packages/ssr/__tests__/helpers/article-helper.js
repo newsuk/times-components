@@ -1,4 +1,9 @@
 import { MockArticle, MockUser } from "@times-components/fixture-generator";
+import {
+  checkDropCapChanges,
+  checkShareBarLoaded,
+  waitUntilSelectorExists
+} from "../cypress/support";
 
 const relatedArticleCount = 3;
 
@@ -18,7 +23,6 @@ const articleTemplateTest = (template, options = {}) => {
         .setRelatedArticles(relatedArticleCount)
         .setTemplate(template)
         .get();
-
       userWithBookmarks = new MockUser().setBookmarksTotal(3);
     });
 
@@ -104,6 +108,49 @@ const articleTemplateTest = (template, options = {}) => {
       }).visit(pageUrl);
 
       cy.get("script[data-spotim-module]").should("not.exist");
+    });
+
+    it("should match snapshots", () => {
+      const {
+        stickyElements = [],
+        blackoutElements = [],
+        attachFlags = false,
+        skipDropCapCheck = false,
+        skipSnapshotTest = false
+      } = options;
+      if (skipSnapshotTest) return; // we need to add docker to execute the snapshot testing as viewport is
+      // is mismatching while running the test cases on local server. Here is the link to the ticket
+      // in which docker server will be used.: https://nidigitalsolutions.jira.com/browse/TDP-1249
+      const articleProps =
+        (attachFlags && {
+          ...sundayTimesArticleWithThreeRelatedArticles,
+          dropcapsDisabled: false,
+          sharingEnabled: true,
+          savingEnabled: true
+        }) ||
+        sundayTimesArticleWithThreeRelatedArticles;
+      cy.task("startMockServerWith", {
+        Article: articleProps,
+        User: userWithBookmarks
+      })
+        .visit(pageUrl)
+        .then(() => {
+          if (attachFlags) {
+            waitUntilSelectorExists(skipDropCapCheck, 3);
+            if (!skipDropCapCheck)
+              checkDropCapChanges('[class^="responsive__DropCap-"]');
+            checkShareBarLoaded("[data-testid=save-and-share-bar]");
+          }
+
+          // changed the position of navigation bar element to absolute, so we don't see
+          // duplicate elements floating
+          stickyElements.forEach(selector => {
+            cy.get(selector).then(el => el.css("position", "absolute"));
+          });
+          cy.get("body").matchImageSnapshot({
+            blackout: blackoutElements
+          });
+        });
     });
 
     it("should pass basic a11y test", () => {

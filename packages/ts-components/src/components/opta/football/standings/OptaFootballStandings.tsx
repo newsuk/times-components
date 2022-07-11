@@ -26,13 +26,15 @@ export const OptaFootballStandings: React.FC<{
     const [isReady, setIsReady] = useState<boolean>(false);
 
     useEffect(() => {
+      const sport = 'football';
+
       initSettings();
-      initStyleSheet();
+      initStyleSheet(sport);
 
       initScript().then(() => {
         if (ref.current) {
           ref.current.innerHTML = initElement('opta-widget', {
-            sport: 'football',
+            sport,
             widget: 'standings',
             season,
             competition,

@@ -2,46 +2,41 @@
 
 exports[`1. article summary headline component 1`] = `
 <style>
-.S1 {
-  font-family: TimesModern-Bold;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 27px;
-  margin-bottom: 5px;
-}
-
 .IS1 {
-  color: rgba(0,0,0,1.00);
+  color: black;
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-size: 22;
+  line-height: 27px;
 }
 </style>
 
-<h3
+<div
   aria-level="3"
-  className="bigOne css-reset-4rbku5 bigOne css-text-901oao r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55 IS1 S1"
+  className="bigOne tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
   role="heading"
 >
   PM hails breakthrough ahead of key Commons vote
-</h3>
+</div>
 `;
 
 exports[`2. article summary strapline component 1`] = `
 <style>
-.S1 {
-  font-family: TimesModern-Regular;
-  font-size: 22px;
-  line-height: 24px;
-}
-
 .IS1 {
-  color: rgba(0,0,0,1.00);
+  font-family: TimesModern-Regular;
+  font-size: 22;
+  line-height: 24;
+  color: black;
+  padding-bottom: 10px;
 }
 </style>
 
-<h4
+<div
   aria-level="4"
-  className="css-reset-4rbku5 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-evnaw r-lineHeight-135wba7 r-paddingBottom-1mi0q7o IS1 S1"
+  className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
   role="heading"
 >
   PM hails breakthrough ahead of key Commons vote
-</h4>
+</div>
 `;

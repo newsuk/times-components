@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types,no-shadow */
 import React from "react";
-import { Text, View } from "react-native";
+import { TcView, TcText } from "@times-components/utils";
 import pick from "lodash.pick";
 import { sections } from "@times-components/storybook";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import { ContextProviderWithDefaults } from "@times-components/context";
-import { colours, scales } from "@times-components/styleguide";
+import { colours, scales } from "@times-components/ts-styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import {
@@ -65,7 +65,7 @@ const mocks = [
 ];
 
 const TestHeader = () => (
-  <View
+  <TcView
     style={{
       alignItems: "center",
       borderColor: "#66666",
@@ -75,8 +75,8 @@ const TestHeader = () => (
       padding: 20
     }}
   >
-    <Text>THIS IS A TEST ARTICLE HEADER</Text>
-  </View>
+    <TcText>THIS IS A TEST ARTICLE HEADER</TcText>
+  </TcView>
 );
 
 const preventDefaultedAction = decorateAction =>
@@ -104,11 +104,6 @@ const renderArticleSkeleton = ({
   const topics = boolean("Topics?", true);
   const header = boolean("Header?", false);
   const isPreview = boolean("Preview?", false);
-  const inlineRelatedArticlesFlag = boolean(
-    "Inline Related Articles",
-    false,
-    "User State"
-  );
 
   const config = {
     commentsEnabled: commentsEnabled ? undefined : false,
@@ -143,7 +138,6 @@ const renderArticleSkeleton = ({
           Header={showHeader}
           isPreview={isPreview}
           olympicsKeys={endpoint}
-          inlineRelatedArticlesFlag={inlineRelatedArticlesFlag}
           onAuthorPress={preventDefaultedAction(decorateAction)(
             "onAuthorPress"
           )}

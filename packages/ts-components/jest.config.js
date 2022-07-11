@@ -9,7 +9,7 @@ const buildConfig = dir => {
   return {
     rootDir: path.join(dir, '../..'),
     preset: 'react-native-web',
-    moduleFileExtensions: ['web.js', 'js', 'ts', 'tsx', 'node', 'json'],
+    moduleFileExtensions: ['js', 'ts', 'tsx', 'node', 'json'],
     transformIgnorePatterns: [],
     testEnvironment: 'jest-environment-jsdom-sixteen',
     setupFiles: [],
@@ -38,10 +38,10 @@ const buildConfig = dir => {
     ],
     coverageThreshold: {
       global: {
-        statements: 80,
-        branches: 75,
-        functions: 85,
-        lines: 80
+        statements: 96,
+        branches: 83,
+        lines: 96,
+        functions: 96
       }
     }
   };

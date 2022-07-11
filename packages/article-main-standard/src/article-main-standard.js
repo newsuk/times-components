@@ -1,26 +1,29 @@
-/* eslint-disable consistent-return */
 import React, { Component, Fragment } from "react";
-import { View } from "react-native";
-import PropTypes from "prop-types";
-import ArticleError from "@times-components/article-error";
 import ArticleSkeleton from "@times-components/article-skeleton";
-import ArticleLeadAsset from "@times-components/article-lead-asset";
-import { ResponsiveContext } from "@times-components/responsive";
-import {
-  getHeadline,
-  getLeadAsset,
-  getStandardTemplateCrop
-} from "@times-components/utils";
-import { tabletWidth } from "@times-components/styleguide";
+import { getHeadline, getLeadAsset } from "@times-components/utils";
 import Caption from "@times-components/caption";
-import Context from "@times-components/context";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
-import stylesFactory from "./styles/article-body";
+import ArticleTopics from "./article-topics";
 import {
-  articlePropTypes,
-  articleDefaultProps
+  articleDefaultProps,
+  articlePropTypes
 } from "./article-prop-types/article-prop-types";
+import { LeadAssetCaptionContainer } from "./styles/article-body/responsive";
+
+import {
+  ArticleMainStandardContainer,
+  HeaderContainer,
+  HeaderTopContainer,
+  LeadAsset,
+  MetaContainer
+} from "./styles/responsive";
+
+const renderCaption = ({ caption }) => (
+  <LeadAssetCaptionContainer>
+    <Caption {...caption} />
+  </LeadAssetCaptionContainer>
+);
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -28,165 +31,98 @@ class ArticlePage extends Component {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader(parentProps) {
-    const { article, onAuthorPress, onImagePress, onVideoPress } = this.props;
+  renderHeader() {
+    const { article } = this.props;
     const {
       bylines,
-      expirableFlags,
       hasVideo,
       headline,
+      expirableFlags,
       label,
-      longRead,
       publicationName,
       publishedTime,
       shortHeadline,
-      standfirst
+      standfirst,
+      topics,
+      updatedTime
     } = article;
-    const styles = stylesFactory();
+
+    const metaProps = { bylines, publicationName, publishedTime };
 
     return (
-      <ResponsiveContext.Consumer>
-        {({ isTablet }) => {
-          const leadAsset = (
-            <View key="leadAsset" testID="leadAsset">
-              <ArticleLeadAsset
-                {...getLeadAsset(article)}
-                getImageCrop={getStandardTemplateCrop}
-                onImagePress={onImagePress}
-                onVideoPress={onVideoPress}
-                renderCaption={({ caption }) => (
-                  <Caption
-                    {...caption}
-                    style={!isTablet && { container: styles.captionContainer }}
-                  />
-                )}
-                style={[styles.leadAsset, isTablet && styles.leadAssetTablet]}
-                width={Math.min(parentProps.width, tabletWidth)}
-              />
-            </View>
-          );
-          const header = (
-            <Fragment key="header">
-              <ArticleHeader
-                flags={expirableFlags}
-                hasVideo={hasVideo}
-                headline={getHeadline(headline, shortHeadline)}
-                isTablet={isTablet}
-                label={label}
-                longRead={longRead}
-                standfirst={standfirst}
-              />
-              <ArticleMeta
-                bylines={bylines}
-                isTablet={isTablet}
-                onAuthorPress={onAuthorPress}
-                publicationName={publicationName}
-                publishedTime={publishedTime}
-              />
-            </Fragment>
-          );
-          return (
-            <View
-              style={
-                isTablet && [
-                  styles.articleMainContentRow,
-                  styles.articleMainContentRowTablet
-                ]
-              }
-            >
-              {isTablet ? [header, leadAsset] : [leadAsset, header]}
-            </View>
-          );
-        }}
-      </ResponsiveContext.Consumer>
+      <Fragment>
+        <HeaderTopContainer>
+          <HeaderContainer>
+            <ArticleHeader
+              flags={expirableFlags}
+              hasVideo={hasVideo}
+              headline={getHeadline(headline, shortHeadline)}
+              label={label}
+              standfirst={standfirst}
+              updatedTime={updatedTime}
+            />
+          </HeaderContainer>
+          <MetaContainer>
+            <ArticleMeta {...metaProps} />
+            <ArticleTopics topics={topics} />
+          </MetaContainer>
+        </HeaderTopContainer>
+        <LeadAsset {...getLeadAsset(article)} renderCaption={renderCaption} />
+        <ArticleMeta {...metaProps} inline className="inline-meta" />
+      </Fragment>
     );
   }
 
   render() {
-    const { error, refetch, isLoading } = this.props;
-
-    if (error) {
-      return <ArticleError refetch={refetch} />;
-    }
-
-    if (isLoading) {
-      return null;
-    }
-
     const {
-      adConfig,
-      analyticsStream,
       article,
-      interactiveConfig,
-      onAuthorPress,
-      onCommentGuidelinesPress,
-      onCommentsPress,
-      onImagePress,
-      onLinkPress,
-      onRelatedArticlePress,
-      onTopicPress,
-      onTwitterLinkPress,
-      onVideoPress,
-      onViewed,
+      analyticsStream,
+      error,
+      isLoading,
+      logoUrl,
+      navigationMode,
       receiveChildList,
-      referralUrl
+      commentingConfig,
+      paidContentClassName,
+      isPreview,
+      swgProductId,
+      additionalRelatedArticlesFlag,
+      algoliaSearchKeys,
+      latestFromSectionFlag,
+      latestFromSection,
+      olympicsKeys,
+      getFallbackThumbnailUrl169
     } = this.props;
 
+    if (error || isLoading) {
+      return null;
+    }
     return (
-      <ResponsiveContext.Consumer>
-        {({ isTablet }) => (
-          <Context.Consumer>
-            {({ theme: { scale, dropCapFont } }) => (
-              <ArticleSkeleton
-                adConfig={adConfig}
-                analyticsStream={analyticsStream}
-                data={article}
-                dropCapFont={dropCapFont}
-                Header={this.renderHeader}
-                interactiveConfig={interactiveConfig}
-                isTablet={isTablet}
-                onAuthorPress={onAuthorPress}
-                onCommentGuidelinesPress={onCommentGuidelinesPress}
-                onCommentsPress={onCommentsPress}
-                onImagePress={onImagePress}
-                onLinkPress={onLinkPress}
-                onRelatedArticlePress={onRelatedArticlePress}
-                onTopicPress={onTopicPress}
-                onTwitterLinkPress={onTwitterLinkPress}
-                onVideoPress={onVideoPress}
-                onViewableItemsChanged={
-                  onViewed ? this.onViewableItemsChanged : null
-                }
-                receiveChildList={receiveChildList}
-                referralUrl={referralUrl}
-                scale={scale}
-              />
-            )}
-          </Context.Consumer>
-        )}
-      </ResponsiveContext.Consumer>
+      <ArticleMainStandardContainer>
+        <ArticleSkeleton
+          analyticsStream={analyticsStream}
+          data={article}
+          Header={this.renderHeader}
+          logoUrl={logoUrl}
+          getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
+          receiveChildList={receiveChildList}
+          navigationMode={navigationMode}
+          commentingConfig={commentingConfig}
+          paidContentClassName={paidContentClassName}
+          isPreview={isPreview}
+          swgProductId={swgProductId}
+          additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
+          algoliaSearchKeys={algoliaSearchKeys}
+          latestFromSectionFlag={latestFromSectionFlag}
+          latestFromSection={latestFromSection}
+          olympicsKeys={olympicsKeys}
+        />
+      </ArticleMainStandardContainer>
     );
   }
 }
 
-ArticlePage.propTypes = {
-  ...articlePropTypes,
-  interactiveConfig: PropTypes.shape({}),
-  onAuthorPress: PropTypes.func.isRequired,
-  onCommentGuidelinesPress: PropTypes.func.isRequired,
-  onCommentsPress: PropTypes.func.isRequired,
-  onImagePress: PropTypes.func,
-  onLinkPress: PropTypes.func.isRequired,
-  onTwitterLinkPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired,
-  referralUrl: PropTypes.string,
-  refetch: PropTypes.func.isRequired
-};
-ArticlePage.defaultProps = {
-  ...articleDefaultProps,
-  interactiveConfig: {},
-  onImagePress: null,
-  referralUrl: null
-};
+ArticlePage.propTypes = articlePropTypes;
+ArticlePage.defaultProps = articleDefaultProps;
 
 export default ArticlePage;

@@ -1,12 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Text } from "react-native";
+import { checkStylesForUnits } from "@times-components/utils";
 import styles from "./styles";
+import { AuthorProfileHeadJobTitleContainer } from "./styles/responsive";
 
 const AuthorProfileHeadJobTitle = ({ jobTitle }) => (
-  <Text accessibilityRole="header" aria-level="2" style={styles.jobTitle}>
+  <AuthorProfileHeadJobTitleContainer
+    role="heading"
+    aria-level="2"
+    style={checkStylesForUnits(styles.jobTitle)}
+  >
     {jobTitle.toLowerCase()}
-  </Text>
+  </AuthorProfileHeadJobTitleContainer>
 );
 
 AuthorProfileHeadJobTitle.propTypes = {

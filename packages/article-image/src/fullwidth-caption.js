@@ -1,16 +1,15 @@
 import React from "react";
-import { View } from "react-native";
-import { CentredCaption } from "@times-components/caption";
+import Caption from "@times-components/caption";
 import { propTypes, defaultProps } from "./fullwidth-caption-prop-types";
-import styles from "./styles";
+import { FullWidthCaptionContainer } from "./styles/responsive";
 
-const FullWidthCaption = props => (
-  <View style={styles.fullwidthCaption}>
-    <CentredCaption {...props} />
-  </View>
+const FullWidthCaptionWeb = props => (
+  <FullWidthCaptionContainer>
+    <Caption {...props} />
+  </FullWidthCaptionContainer>
 );
 
-FullWidthCaption.propTypes = propTypes;
-FullWidthCaption.defaultProps = defaultProps;
+FullWidthCaptionWeb.propTypes = propTypes;
+FullWidthCaptionWeb.defaultProps = defaultProps;
 
-export default FullWidthCaption;
+export default FullWidthCaptionWeb;

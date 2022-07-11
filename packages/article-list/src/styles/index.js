@@ -1,28 +1,51 @@
-import { StyleSheet } from "react-native";
-import { spacing, tabletWidth } from "@times-components/styleguide";
+import { colours, fontFactory, spacing } from "@times-components/ts-styleguide";
 import sharedStyles from "./shared";
 
-const styles = StyleSheet.create({
+const styles = {
   ...sharedStyles,
-  listItemContainerTablet: {
-    paddingVertical: spacing(3)
-  },
-  listItemSeparator: {
-    ...sharedStyles.listItemSeparator,
+  listContentErrorContainer: {
     flex: 1,
-    maxWidth: tabletWidth
+    margin: spacing(3)
   },
-  listItemSeparatorContainer: {
-    ...sharedStyles.listItemSeparatorContainer,
-    flexDirection: "row",
-    justifyContent: "center"
+  listEmptyBackButton: {
+    alignSelf: "center",
+    marginBottom: spacing(2),
+    marginTop: spacing(4)
+  },
+  listEmptyMessage: {
+    color: colours.functional.secondary,
+    ...fontFactory({
+      font: "bodyRegular",
+      fontSize: "infoTitle"
+    }),
+    left: "25%",
+    position: "absolute",
+    textAlign: "center",
+    top: "140px"
+  },
+  listEmptyStateContainer: {
+    height: "100vh",
+    justifyContent: "flex-end"
+  },
+  listErrorHeading: {
+    ...sharedStyles.listErrorHeading,
+    marginTop: spacing(4)
+  },
+  listErrorMessage: {
+    ...sharedStyles.listErrorMessage,
+    lineHeight: 27
+  },
+  paginationSpacing: {
+    ...sharedStyles.paginationSpacing,
+    flex: 1
   }
-});
-
-const watermarkStyles = {
-  height: 250,
-  width: 300
 };
 
-export { watermarkStyles };
+const retryButtonStyles = {
+  alignSelf: "center",
+  marginBottom: spacing(2),
+  marginTop: spacing(8)
+};
+
+export { retryButtonStyles };
 export default styles;

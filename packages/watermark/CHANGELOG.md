@@ -3,6 +3,273 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.8.1](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.8.0...@times-components/watermark@2.8.1) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+# [2.8.0](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.85...@times-components/watermark@2.8.0) (2022-07-06)
+
+
+### Features
+
+* **TDP-1422:** remove react native from svgs ([#3012](https://github.com/newsuk/times-components/issues/3012)) ([97b3320](https://github.com/newsuk/times-components/commit/97b332030427182178f663eeaa0f8e06e19ae255))
+
+
+
+
+
+## [2.7.85](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.84...@times-components/watermark@2.7.85) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.84](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.83...@times-components/watermark@2.7.84) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.83](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.82...@times-components/watermark@2.7.83) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.82](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.81...@times-components/watermark@2.7.82) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.81](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.80...@times-components/watermark@2.7.81) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.80](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.79...@times-components/watermark@2.7.80) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.79](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.78...@times-components/watermark@2.7.79) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.78](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.77...@times-components/watermark@2.7.78) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.77](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.76...@times-components/watermark@2.7.77) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.76](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.75...@times-components/watermark@2.7.76) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.75](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.74...@times-components/watermark@2.7.75) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.74](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.73...@times-components/watermark@2.7.74) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.73](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.72...@times-components/watermark@2.7.73) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.72](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.71...@times-components/watermark@2.7.72) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.71](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.70...@times-components/watermark@2.7.71) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.70](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.69...@times-components/watermark@2.7.70) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.69](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.68...@times-components/watermark@2.7.69) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.68](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.67...@times-components/watermark@2.7.68) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.67](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.66...@times-components/watermark@2.7.67) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.66](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.65...@times-components/watermark@2.7.66) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.65](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.64...@times-components/watermark@2.7.65) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.64](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.63...@times-components/watermark@2.7.64) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.63](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.62...@times-components/watermark@2.7.63) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.62](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.61...@times-components/watermark@2.7.62) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.61](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.60...@times-components/watermark@2.7.61) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.60](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.59...@times-components/watermark@2.7.60) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.59](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.58...@times-components/watermark@2.7.59) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.58](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.57...@times-components/watermark@2.7.58) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.57](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.56...@times-components/watermark@2.7.57) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.56](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.55...@times-components/watermark@2.7.56) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.7.55](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.54...@times-components/watermark@2.7.55) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
 ## [2.7.54](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.53...@times-components/watermark@2.7.54) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/watermark

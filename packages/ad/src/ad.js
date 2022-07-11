@@ -1,9 +1,11 @@
 /* eslint-disable no-undef */
 import React, { Component } from "react";
 import { Subscriber } from "react-broadcast";
-import { Platform, View } from "react-native";
-import { screenWidth } from "@times-components/utils";
-import NetInfo from "@react-native-community/netinfo";
+import {
+  screenWidth,
+  ServerClientRender,
+  TcView
+} from "@times-components/utils";
 import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
 import adInit from "./utils/ad-init";
 import AdContainer from "./ad-container";
@@ -32,35 +34,14 @@ class Ad extends Component {
       config: getSlotConfig(slotName, screenWidth()),
       hasError: false,
       isAdReady: false,
-      offline: false
+      hasAdBlock: false
     };
   }
 
   componentDidMount() {
-    NetInfo.fetch()
-      .then(state => {
-        const { isConnected } = state;
-        this.setState({
-          offline: !isConnected
-        });
-      })
-      .then(() => {
-        this.unsubscribe = NetInfo.addEventListener(state => {
-          const { offline } = this.state;
-          const { isConnected } = state;
-          if (isConnected && offline) {
-            this.setState({
-              offline: false
-            });
-          }
-        });
-      });
-  }
-
-  componentWillUnmount() {
-    if (typeof this.unsubscribe === "function") {
-      this.unsubscribe();
-    }
+    this.setState({
+      hasAdBlock: window.hasAdBlock
+    });
   }
 
   setAdReady = () => {
@@ -84,9 +65,9 @@ class Ad extends Component {
       slotName,
       style
     } = this.props;
-    const { config, hasError, isAdReady, offline } = this.state;
+    const { config, hasError, isAdReady, hasAdBlock } = this.state;
 
-    if (hasError || offline) return null;
+    if (hasAdBlock || hasError) return null;
 
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
@@ -125,19 +106,15 @@ class Ad extends Component {
       slotTargeting: adConfig.slotTargeting
     };
 
-    const sizeProps =
-      !isAdReady || hasError
-        ? { height: 0, width: 0 }
-        : {
-            height: config.maxSizes.height,
-            width:
-              Platform.OS === "ios" || Platform.OS === "android"
-                ? screenWidth()
-                : config.maxSizes.width
-          };
+    const sizeProps = !isAdReady
+      ? { height: 0, width: 0 }
+      : {
+          height: config.maxSizes.height,
+          width: config.maxSizes.width
+        };
 
-    return (
-      <View style={[styles.container, style]}>
+    const adView = (
+      <TcView style={{ ...styles.container, ...style }}>
         {isLoading ? null : (
           <DOMContext
             baseUrl={baseUrl}
@@ -148,8 +125,10 @@ class Ad extends Component {
             {...sizeProps}
           />
         )}
-      </View>
+      </TcView>
     );
+
+    return <ServerClientRender client={() => adView} server={null} />;
   }
 
   render() {

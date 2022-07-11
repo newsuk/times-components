@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import ArticleLabel from "@times-components/article-label";
 import VideoLabel from "@times-components/video-label";
 
@@ -15,9 +15,9 @@ const HeaderLabel = ({ color, isVideo, label }) => {
   const Label = isVideo ? VideoLabel : ArticleLabel;
 
   return (
-    <View style={styles.label}>
+    <TcView style={styles.label}>
       <Label color={color} title={label} />
-    </View>
+    </TcView>
   );
 };
 

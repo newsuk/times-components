@@ -3,6 +3,293 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.19.2](https://github.com/newsuk/times-components/compare/@times-components/ad@2.19.1...@times-components/ad@2.19.2) (2022-07-11)
+
+
+### Bug Fixes
+
+* **TDP-1704:** Remove react-native from jest-serializer package ([#3015](https://github.com/newsuk/times-components/issues/3015)) ([5b6da8f](https://github.com/newsuk/times-components/commit/5b6da8f1392c3b42a9c0944d44be3d9ed3e7db2f))
+
+
+
+
+
+## [2.19.1](https://github.com/newsuk/times-components/compare/@times-components/ad@2.19.0...@times-components/ad@2.19.1) (2022-07-01)
+
+
+### Bug Fixes
+
+* **TDP-2238:** remove id from ad container ([#3009](https://github.com/newsuk/times-components/issues/3009)) ([5d5807f](https://github.com/newsuk/times-components/commit/5d5807f2321a0a1aee8af781b137702c9e2e2047))
+
+
+
+
+
+# [2.19.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.16...@times-components/ad@2.19.0) (2022-06-21)
+
+
+### Features
+
+* **TDP-1721:** Remove React-Native from Ad package ([#2996](https://github.com/newsuk/times-components/issues/2996)) ([007ea6b](https://github.com/newsuk/times-components/commit/007ea6b080775f744a28c7d9a7a64a176048964c))
+
+
+
+
+
+## [2.18.16](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.15...@times-components/ad@2.18.16) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.15](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.14...@times-components/ad@2.18.15) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.14](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.13...@times-components/ad@2.18.14) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.13](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.12...@times-components/ad@2.18.13) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.12](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.11...@times-components/ad@2.18.12) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.11](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.10...@times-components/ad@2.18.11) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.10](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.9...@times-components/ad@2.18.10) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.9](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.8...@times-components/ad@2.18.9) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.8](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.7...@times-components/ad@2.18.8) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.7](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.6...@times-components/ad@2.18.7) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.6](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.5...@times-components/ad@2.18.6) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.5](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.4...@times-components/ad@2.18.5) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.4](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.3...@times-components/ad@2.18.4) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.3](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.2...@times-components/ad@2.18.3) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.2](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.1...@times-components/ad@2.18.2) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.18.1](https://github.com/newsuk/times-components/compare/@times-components/ad@2.18.0...@times-components/ad@2.18.1) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+# [2.18.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.17.6...@times-components/ad@2.18.0) (2022-04-20)
+
+
+### Features
+
+* **TDP-1716:** remove react native from utils ([#2915](https://github.com/newsuk/times-components/issues/2915)) ([647388c](https://github.com/newsuk/times-components/commit/647388c28f6e869be5cb0eb9d85685bec192c723))
+
+
+
+
+
+## [2.17.6](https://github.com/newsuk/times-components/compare/@times-components/ad@2.17.5...@times-components/ad@2.17.6) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.17.5](https://github.com/newsuk/times-components/compare/@times-components/ad@2.17.4...@times-components/ad@2.17.5) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.17.4](https://github.com/newsuk/times-components/compare/@times-components/ad@2.17.3...@times-components/ad@2.17.4) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.17.3](https://github.com/newsuk/times-components/compare/@times-components/ad@2.17.2...@times-components/ad@2.17.3) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.17.2](https://github.com/newsuk/times-components/compare/@times-components/ad@2.17.1...@times-components/ad@2.17.2) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.17.1](https://github.com/newsuk/times-components/compare/@times-components/ad@2.17.0...@times-components/ad@2.17.1) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+# [2.17.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.16.7...@times-components/ad@2.17.0) (2022-03-30)
+
+
+### Features
+
+* **TDP-1413:** removed react native from some components ([#2891](https://github.com/newsuk/times-components/issues/2891)) ([3130586](https://github.com/newsuk/times-components/commit/313058621ff0c6eb5f0ca0bf0d605a8fb1522251))
+
+
+
+
+
+## [2.16.7](https://github.com/newsuk/times-components/compare/@times-components/ad@2.16.6...@times-components/ad@2.16.7) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.16.6](https://github.com/newsuk/times-components/compare/@times-components/ad@2.16.5...@times-components/ad@2.16.6) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.16.5](https://github.com/newsuk/times-components/compare/@times-components/ad@2.16.4...@times-components/ad@2.16.5) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.16.4](https://github.com/newsuk/times-components/compare/@times-components/ad@2.16.3...@times-components/ad@2.16.4) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.16.3](https://github.com/newsuk/times-components/compare/@times-components/ad@2.16.2...@times-components/ad@2.16.3) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.16.2](https://github.com/newsuk/times-components/compare/@times-components/ad@2.16.1...@times-components/ad@2.16.2) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.16.1](https://github.com/newsuk/times-components/compare/@times-components/ad@2.16.0...@times-components/ad@2.16.1) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
 # [2.16.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.15.1...@times-components/ad@2.16.0) (2021-09-30)
 
 

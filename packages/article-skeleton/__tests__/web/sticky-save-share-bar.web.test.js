@@ -1,5 +1,4 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import { mount } from "enzyme";
 import {
   addSerializers,
@@ -7,11 +6,10 @@ import {
   enzymeTreeSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  print,
-  rnwTransform
+  print
 } from "@times-components/jest-serializer";
 
-import "../mocks.web";
+import "../mocks";
 
 import StickySaveAndShareBar from "../../src/sticky-save-and-share-bar";
 
@@ -27,8 +25,7 @@ addSerializers(
   compose(
     print,
     minimalWebTransform,
-    minimaliseTransform(),
-    rnwTransform(AppRegistry)
+    minimaliseTransform()
   )
 );
 

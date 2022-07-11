@@ -1,4 +1,4 @@
-import { spacing, colours, fontFactory } from "@times-components/styleguide";
+import { spacing, colours, fontFactory } from "@times-components/ts-styleguide";
 
 const ICON_SIZE = 40;
 
@@ -7,7 +7,8 @@ const styles = {
     flex: 1,
     flexDirection: "row",
     justifyContent: "space-between",
-    paddingVertical: spacing(2),
+    paddingTop: spacing(2),
+    paddingBottom: spacing(2),
     height: "100%",
     alignItems: "center"
   },

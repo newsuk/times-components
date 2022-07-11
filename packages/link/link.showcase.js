@@ -1,11 +1,10 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import React from "react";
-import { CenteredDecorator } from "@times-components/storybook";
-import { colours } from "@times-components/styleguide";
+import { colours } from "@times-components/ts-styleguide";
 import Link, { TextLink } from "./src/link";
 
 const BigSquare = props => (
-  <View
+  <TcView
     style={{
       backgroundColor: colours.functional.backgroundSecondary,
       height: 100,
@@ -18,14 +17,9 @@ const BigSquare = props => (
 export default {
   children: [
     {
-      decorator: CenteredDecorator,
-      platform: "native",
-      type: "decorator"
-    },
-    {
       component: (_, { action }) => (
         <Link onPress={action("onPress")} url="https://thetimes.co.uk">
-          <View
+          <TcView
             style={{
               backgroundColor: colours.functional.backgroundSecondary,
               height: 100,

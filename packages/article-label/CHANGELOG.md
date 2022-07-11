@@ -3,6 +3,265 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.8.15](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.14...@times-components/article-label@2.8.15) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.8.14](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.13...@times-components/article-label@2.8.14) (2022-05-16)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.8.13](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.12...@times-components/article-label@2.8.13) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.8.12](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.11...@times-components/article-label@2.8.12) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.8.11](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.10...@times-components/article-label@2.8.11) (2022-05-12)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.8.10](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.9...@times-components/article-label@2.8.10) (2022-05-11)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.8.9](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.8...@times-components/article-label@2.8.9) (2022-05-10)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.8.8](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.7...@times-components/article-label@2.8.8) (2022-05-09)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.8.7](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.6...@times-components/article-label@2.8.7) (2022-05-04)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.8.6](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.5...@times-components/article-label@2.8.6) (2022-04-29)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.8.5](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.4...@times-components/article-label@2.8.5) (2022-04-26)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.8.4](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.3...@times-components/article-label@2.8.4) (2022-04-25)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.8.3](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.2...@times-components/article-label@2.8.3) (2022-04-22)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.8.2](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.1...@times-components/article-label@2.8.2) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.8.1](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.8.0...@times-components/article-label@2.8.1) (2022-04-21)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+# [2.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.75...@times-components/article-label@2.8.0) (2022-04-21)
+
+
+### Features
+
+* **TDP-1691:** remove react native from article label ([#2921](https://github.com/newsuk/times-components/issues/2921)) ([a2f1d2f](https://github.com/newsuk/times-components/commit/a2f1d2fd3923378b8a8f1a91cc87e6bc97aef9eb))
+
+
+
+
+
+## [2.7.75](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.74...@times-components/article-label@2.7.75) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.74](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.73...@times-components/article-label@2.7.74) (2022-04-20)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.73](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.72...@times-components/article-label@2.7.73) (2022-04-19)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.72](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.71...@times-components/article-label@2.7.72) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.71](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.70...@times-components/article-label@2.7.71) (2022-04-12)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.70](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.69...@times-components/article-label@2.7.70) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.69](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.68...@times-components/article-label@2.7.69) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.68](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.67...@times-components/article-label@2.7.68) (2022-04-11)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.67](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.66...@times-components/article-label@2.7.67) (2022-03-30)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.66](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.65...@times-components/article-label@2.7.66) (2022-02-16)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.65](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.64...@times-components/article-label@2.7.65) (2022-02-10)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.64](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.63...@times-components/article-label@2.7.64) (2022-01-24)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.63](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.62...@times-components/article-label@2.7.63) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.62](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.61...@times-components/article-label@2.7.62) (2022-01-04)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.61](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.60...@times-components/article-label@2.7.61) (2021-12-02)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.60](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.59...@times-components/article-label@2.7.60) (2021-11-25)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
 ## [2.7.59](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.58...@times-components/article-label@2.7.59) (2021-08-09)
 
 **Note:** Version bump only for package @times-components/article-label

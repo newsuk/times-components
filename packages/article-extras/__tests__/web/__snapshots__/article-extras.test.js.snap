@@ -19,6 +19,9 @@ Array [
     <RelatedArticleSlice
       heading="Related Articles"
     />
+    <div>
+      RecommendedFetch
+    </div>
   </div>,
   <div
     id="sponsored-article-container"
@@ -73,6 +76,9 @@ Array [
     <RelatedArticleSlice
       heading="Related Articles"
     />
+    <div>
+      RecommendedFetch
+    </div>
   </div>,
   <div
     id="sponsored-article-container"
@@ -117,6 +123,9 @@ Array [
     <RelatedArticleSlice
       heading="Related Articles"
     />
+    <div>
+      RecommendedFetch
+    </div>
   </div>,
   <div
     id="sponsored-article-container"

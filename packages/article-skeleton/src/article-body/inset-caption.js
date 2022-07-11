@@ -1,23 +1,31 @@
 import React from "react";
+import { TcView } from "@times-components/utils";
+import styled from "styled-components";
+import { breakpoints, spacing } from "@times-components/ts-styleguide";
+
 import Caption from "@times-components/caption";
-import { spacing } from "@times-components/styleguide";
 
-const captionStyle = {
-  container: {
-    paddingLeft: spacing(2)
+// SHOULD BE IN STYLES
+const InsetCaptionStyle = styled(TcView)`
+  padding-left: ${spacing(2)};
+
+  @media (min-width: ${breakpoints.medium}px) {
+    padding-left: 0px;
   }
-};
+`;
 
-const CaptionComponentPrimaryNative = ({ caption, credits }) => (
-  <Caption credits={credits} style={captionStyle} text={caption} />
+const InsetCaptionWeb = ({ caption, credits }) => (
+  <InsetCaptionStyle>
+    <Caption credits={credits} text={caption} />
+  </InsetCaptionStyle>
 );
 
-CaptionComponentPrimaryNative.propTypes = {
+InsetCaptionWeb.propTypes = {
   ...Caption.propTypes
 };
 
-CaptionComponentPrimaryNative.defaultProps = {
+InsetCaptionWeb.defaultProps = {
   ...Caption.defaultProps
 };
 
-export default CaptionComponentPrimaryNative;
+export default InsetCaptionWeb;

@@ -1,3 +1,5 @@
+import { getIsLiveOrBreakingFlag } from "../data-helper";
+
 const setNewsletterPayload = attributes => ({
   name: "autoNewsletterPuff",
   attributes: {
@@ -25,17 +27,6 @@ const newslettersBySection = [
     })
   },
   {
-    section: "comment",
-    payload: setNewsletterPayload({
-      code: "TNL-104",
-      headline: "Comment and Opinion",
-      copy:
-        "Wit and wisdom from our award-winning stable of columnists and guest writers, including Caitlin Moran, Matthew Parris, Rod Liddle and Dominic Lawson.",
-      imageUri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fb49851bd-b182-43fc-bd5d-1816bcda19fe.jpg?resize=800"
-    })
-  },
-  {
     section: "business",
     payload: setNewsletterPayload({
       code: "TNL-103",
@@ -47,17 +38,6 @@ const newslettersBySection = [
     })
   },
   {
-    section: "sport",
-    payload: setNewsletterPayload({
-      code: "TNL-112",
-      headline: "Sport",
-      copy:
-        "Every Friday morning, Elgan Alderman looks ahead to the weekend, featuring exclusive interviews, agenda-setting comment and razor-sharp analysis.",
-      imageUri:
-        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8920eef8-e084-47db-a1bf-00be3d72080e.jpg?resize=800"
-    })
-  },
-  {
     section: "scotland",
     payload: setNewsletterPayload({
       code: "TNL-134",
@@ -66,6 +46,50 @@ const newslettersBySection = [
         "The biggest stories of the week from The Times and The Sunday Times Scotland, delivered directly to you every Saturday morning.",
       imageUri:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5777acf9-363f-4aa3-8176-1ea09cdae7d6.jpg?resize=800"
+    })
+  },
+  {
+    section: "money",
+    payload: setNewsletterPayload({
+      code: "TNL-107",
+      headline: "Money newsletter",
+      copy:
+        "We'll send you the latest personal finance and investment news to make your money go further.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffd44b15f-2fb8-4e5d-b409-315648b10646.jpg?resize=800"
+    })
+  },
+  {
+    section: "law",
+    payload: setNewsletterPayload({
+      code: "TNL-121",
+      headline: "The Brief",
+      copy:
+        "A weekly overview of the significant issues in Law, drawing attention to expert analysis and exclusive commentary.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F27a231b4-5658-4852-a603-37c5210a946e.jpg?resize=800"
+    })
+  },
+  {
+    section: "home",
+    payload: setNewsletterPayload({
+      code: "TNL-113",
+      headline: "Property newsletter",
+      copy:
+        "Get expert advice and find out what's really happening in the property market.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F42a688ec-f9ba-4684-90ce-17a9d1c19d8a.jpg?resize=800"
+    })
+  },
+  {
+    section: "bricks & mortar",
+    payload: setNewsletterPayload({
+      code: "TNL-113",
+      headline: "Property newsletter",
+      copy:
+        "Get expert advice and find out what's really happening in the property market.",
+      imageUri:
+        "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F42a688ec-f9ba-4684-90ce-17a9d1c19d8a.jpg?resize=800"
     })
   }
 ];
@@ -114,8 +138,8 @@ const checkParagraphs = (children, paywall) => {
   return paragraphs + paywallParagraphs >= 5;
 };
 
-const insertNewsletterPuff = (section, isPreview) => children => {
-  if (isPreview) return children;
+const insertNewsletterPuff = (section, isPreview, flags) => children => {
+  if (isPreview || getIsLiveOrBreakingFlag(flags)) return children;
 
   const newsletterPuff = getNewsletterPuff(section);
   if (!newsletterPuff) return children;
