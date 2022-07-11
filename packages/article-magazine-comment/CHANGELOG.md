@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.53.5](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.53.4...@times-components/article-magazine-comment@3.53.5) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.53.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.53.3...@times-components/article-magazine-comment@3.53.4) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.53.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.53.2...@times-components/article-magazine-comment@3.53.3) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.53.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.53.1...@times-components/article-magazine-comment@3.53.2) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.53.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.53.0...@times-components/article-magazine-comment@3.53.1) (2022-07-07)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+# [3.53.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.52.1...@times-components/article-magazine-comment@3.53.0) (2022-07-06)
+
+
+### Features
+
+* **TDP-1422:** remove react native from svgs ([#3012](https://github.com/newsuk/times-components/issues/3012)) ([97b3320](https://github.com/newsuk/times-components/commit/97b332030427182178f663eeaa0f8e06e19ae255))
+
+
+
+
+
 ## [3.52.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.52.0...@times-components/article-magazine-comment@3.52.1) (2022-07-06)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

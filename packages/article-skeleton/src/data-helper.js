@@ -96,7 +96,9 @@ export const getActiveArticleFlags = flags => {
     return [];
   }
   const findFlag = flags.find(
-    flag => new Date().getTime() < new Date(flag.expiryTime).getTime()
+    flag =>
+      flag.expiryTime === null ||
+      new Date().getTime() < new Date(flag.expiryTime).getTime()
   );
   return findFlag && findFlag.type && findFlag.type.toLowerCase();
 };

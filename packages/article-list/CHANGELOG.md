@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.10.19](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.10.18...@times-components/article-list@9.10.19) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.10.18](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.10.17...@times-components/article-list@9.10.18) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.10.17](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.10.16...@times-components/article-list@9.10.17) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.10.16](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.10.15...@times-components/article-list@9.10.16) (2022-07-06)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
 ## [9.10.15](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.10.14...@times-components/article-list@9.10.15) (2022-07-01)
 
 **Note:** Version bump only for package @times-components/article-list

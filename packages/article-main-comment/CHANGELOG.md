@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.51.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.51.4...@times-components/article-main-comment@2.51.5) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.51.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.51.3...@times-components/article-main-comment@2.51.4) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.51.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.51.2...@times-components/article-main-comment@2.51.3) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.51.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.51.1...@times-components/article-main-comment@2.51.2) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.51.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.51.0...@times-components/article-main-comment@2.51.1) (2022-07-07)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.51.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.50.1...@times-components/article-main-comment@2.51.0) (2022-07-06)
+
+
+### Features
+
+* **TDP-1422:** remove react native from svgs ([#3012](https://github.com/newsuk/times-components/issues/3012)) ([97b3320](https://github.com/newsuk/times-components/commit/97b332030427182178f663eeaa0f8e06e19ae255))
+
+
+
+
+
 ## [2.50.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.50.0...@times-components/article-main-comment@2.50.1) (2022-07-06)
 
 **Note:** Version bump only for package @times-components/article-main-comment

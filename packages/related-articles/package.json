@@ -1,6 +1,6 @@
 {
   "name": "@times-components/related-articles",
-  "version": "6.10.4",
+  "version": "6.11.0",
   "description": "related articles of an article",
   "main": "dist/related-articles",
   "dev": "src/related-articles",
@@ -22,10 +22,7 @@
     "url": "git+https://github.com/newsuk/times-components.git"
   },
   "keywords": [
-    "react-native-web",
     "react",
-    "native",
-    "web",
     "related-articles",
     "component"
   ],
@@ -57,23 +54,23 @@
     "react": "16.9.0",
     "react-art": "16.6.3",
     "react-dom": "16.9.0",
-    "react-native": "0.61.5",
-    "react-native-web": "0.11.4",
     "react-test-renderer": "16.9.0",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-summary": "3.19.4",
-    "@times-components/card": "6.7.0",
+    "@times-components/article-summary": "3.19.8",
+    "@times-components/card": "6.8.0",
     "@times-components/context": "1.8.3",
     "@times-components/link": "3.10.5",
     "@times-components/markup-forest": "1.8.1",
     "@times-components/slice-layout": "0.48.0",
     "@times-components/tracking": "2.9.31",
     "@times-components/ts-styleguide": "1.36.2",
+    "@times-components/utils": "6.12.1",
     "lodash.get": "4.4.2",
-    "prop-types": "15.7.2"
+    "prop-types": "15.7.2",
+    "styled-components": "4.3.2"
   },
   "resolutions": {
     "react": "16.9.0",
@@ -81,9 +78,7 @@
   },
   "peerDependencies": {
     "react": ">=16.9",
-    "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-dom": ">=16.9"
   },
   "publishConfig": {
     "access": "public"

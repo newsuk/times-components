@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.11.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.10.7...@times-components/related-articles@6.11.0) (2022-07-11)
+
+
+### Features
+
+* **TDP-1708:** removed react native from related articles ([#3016](https://github.com/newsuk/times-components/issues/3016)) ([e67b4dc](https://github.com/newsuk/times-components/commit/e67b4dc299e38dd86430f6c7f5d922437cfa27f2))
+
+
+
+
+
+## [6.10.7](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.10.6...@times-components/related-articles@6.10.7) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.10.6](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.10.5...@times-components/related-articles@6.10.6) (2022-07-08)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.10.5](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.10.4...@times-components/related-articles@6.10.5) (2022-07-06)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
 ## [6.10.4](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.10.3...@times-components/related-articles@6.10.4) (2022-07-01)
 
 **Note:** Version bump only for package @times-components/related-articles

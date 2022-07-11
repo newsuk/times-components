@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`default styles 1`] = `
-.c4 {
+.c0 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -19,7 +19,7 @@ exports[`default styles 1`] = `
   z-index: 0;
 }
 
-.c5 {
+.c6 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -31,7 +31,7 @@ exports[`default styles 1`] = `
   overflow-wrap: break-word;
 }
 
-.c1 {
+.c3 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -63,7 +63,7 @@ exports[`default styles 1`] = `
   justify-content: center;
 }
 
-.c3 {
+.c5 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -86,6 +86,41 @@ exports[`default styles 1`] = `
   padding-right: 10px;
 }
 
+.c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  color: #333333;
+  font-family: TimesModern-Bold;
+  font-size: 25px;
+  line-height: 27px;
+  padding-top: 5px;
+}
+
+.c8 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+  color: #333333;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 .c7 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -105,26 +140,7 @@ exports[`default styles 1`] = `
   flex-direction: row;
 }
 
-.c6 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
-  line-height: 15px;
-  color: #333333;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.c0 {
+.c2 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -142,19 +158,19 @@ exports[`default styles 1`] = `
   z-index: 0;
 }
 
-.c0 .imageContainerClass {
+.c2 .imageContainerClass {
   display: block;
 }
 
-.c0 .summaryHidden {
+.c2 .summaryHidden {
   display: none;
 }
 
-.c0 .summary125Class {
+.c2 .summary125Class {
   display: block;
 }
 
-.c2 {
+.c4 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -185,13 +201,13 @@ exports[`default styles 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c3 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c5 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -201,11 +217,11 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 .imageContainerClass {
+  .c2 .imageContainerClass {
     display: block;
   }
 
-  .c0 .headlineClass {
+  .c2 .headlineClass {
     font-size: 25px;
     line-height: 28px;
     margin-top: 5px;
@@ -213,7 +229,7 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 .imageContainerClass {
+  .c2 .imageContainerClass {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -222,7 +238,7 @@ exports[`default styles 1`] = `
     padding-right: 10px;
   }
 
-  .c0 .contentContainerClass {
+  .c2 .contentContainerClass {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -235,17 +251,17 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c0 .summary125Class {
+  .c2 .summary125Class {
     display: block;
   }
 
-  .c0 .summary145Class {
+  .c2 .summary145Class {
     display: none;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c4 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -253,46 +269,31 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c4 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c4 {
     width: 56.2%;
   }
 }
 
 <style>
-.S1 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-size: 25px;
-  line-height: 27px;
-}
-
-.S2 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  border-right-style: solid;
-  border-top-style: solid;
-  border-top-color: rgba(219,219,219,1.00);
-  border-top-width: 1px;
-  display: flex;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
 .IS1 {
+  align-items: center;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1;
+  border-style: solid;
+  border-top-color: #DBDBDB;
+  border-top-width: 1;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.IS2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12;
   line-height: 12px;
@@ -304,26 +305,27 @@ exports[`default styles 1`] = `
   color: #DB133B;
 }
 
-.IS2 {
+.IS3 {
   margin-bottom: 0px;
 }
 
-.IS3 {
+.IS4 {
   color: #333333;
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
   font-size: 22;
   line-height: 27px;
+  margin-top: 0;
 }
 
-.IS4 {
+.IS5 {
   color: inherit;
   font: inherit;
   white-space: inherit;
 }
 
-.IS5 {
+.IS6 {
   color: #696969;
   flex-wrap: wrap;
   margin-bottom: 10px;
@@ -332,7 +334,7 @@ exports[`default styles 1`] = `
   line-height: 20px;
 }
 
-.IS6 {
+.IS7 {
   color: #696969;
   font-family: GillSansMTStd-Medium;
   font-size: 13;
@@ -342,61 +344,61 @@ exports[`default styles 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n"
+  className="c0"
 >
   <div
-    className="css-view-1dbjc4n r-alignItems-1awozwy r-borderBottomColor-91l5k4 r-borderBottomWidth-qklmqi r-borderStyle-1phboty r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-display-6koalj r-justifyContent-1777fci r-padding-1oqcu8e S2"
+    className="c0 IS1"
   >
     <h3
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-h1js2l r-lineHeight-1kt6imw r-paddingTop-glunga S1"
+      className="c1"
     >
       Related articles
     </h3>
   </div>
   <div
-    className="c0"
+    className="c2"
   >
     <div
-      className="c1"
+      className="c3"
     >
       <div
-        className="c2"
+        className="c4"
       >
         <div
-          className="c3"
+          className="c5"
         >
           <div>
             <Link>
               <div
-                className="css-view-1dbjc4n"
+                className="c0"
               >
                 <Card>
                   <div
-                    className="c4"
+                    className="c0"
                     style={null}
                   >
                     <div
-                      className="c4 IS2"
+                      className="c0 IS3"
                     >
                       <div
-                        className="c5 IS1"
+                        className="c6 IS2"
                       >
                         TEST LABEL
                       </div>
                     </div>
                     <div
-                      className="headlineClass c5 IS3"
+                      className="headlineClass c6 IS4"
                     >
                       Test Short Headline
                     </div>
                     <div
-                      className="css-view-1dbjc4n"
+                      className="c0"
                     >
                       <div
-                        className="summaryHidden summary125Class c5 IS5"
+                        className="summaryHidden summary125Class c6 IS6"
                       >
                         <div
-                          className="c5 IS4"
+                          className="c6 IS5"
                         >
                           
                           Summary 125
@@ -405,7 +407,7 @@ exports[`default styles 1`] = `
                       </div>
                     </div>
                     <div
-                      className="c5 IS6"
+                      className="c6 IS7"
                     >
                       <time>
                         March 13 2015, 6.54pm
@@ -413,15 +415,15 @@ exports[`default styles 1`] = `
                       </time>
                     </div>
                     <div
-                      className="c5"
+                      className="c6"
                     >
                       <div
-                        className="c6"
+                        className="c7"
                       >
                         Camilla Long
                       </div>
                       <div
-                        className="c7"
+                        className="c8"
                       >
                         , Environment Editor
                       </div>

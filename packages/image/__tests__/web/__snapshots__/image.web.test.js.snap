@@ -38,24 +38,24 @@ exports[`1. default layout 1`] = `
       height="100%"
       width="100%"
     >
-      <Svg
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
@@ -99,24 +99,24 @@ exports[`2. default layout without uri 1`] = `
       height="100%"
       width="100%"
     >
-      <Svg
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
@@ -160,24 +160,24 @@ exports[`3. default layout without aspect ratio 1`] = `
       height="100%"
       width="100%"
     >
-      <Svg
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
@@ -221,24 +221,24 @@ exports[`4. rounded image 1`] = `
       height="100%"
       width="100%"
     >
-      <Svg
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
@@ -282,24 +282,24 @@ exports[`5. with existing url params 1`] = `
       height="100%"
       width="100%"
     >
-      <Svg
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
@@ -470,24 +470,24 @@ exports[`8. only a low res image 1`] = `
       height="100%"
       width="100%"
     >
-      <Svg
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
@@ -531,24 +531,24 @@ exports[`9. fade in the low res image 1`] = `
       height="100%"
       width="100%"
     >
-      <Svg
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>
@@ -643,24 +643,24 @@ exports[`10. both high and low res sizes 1`] = `
       height="100%"
       width="100%"
     >
-      <Svg
+      <svg
         height="auto"
         version="1.1"
         viewBox="145 50 108 120"
         width="100%"
       >
-        <G
+        <g
           fill="none"
           fillRule="evenodd"
           stroke="none"
           strokeWidth="1"
         >
-          <Path
+          <path
             d="6a6c07166e9c40e4f62e57af2b507822"
             fill="#FFFFFF"
           />
-        </G>
-      </Svg>
+        </g>
+      </svg>
     </div>
   </div>
 </div>

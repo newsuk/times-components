@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.48.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.47.1...@times-components/ts-components@1.48.0) (2022-07-11)
+
+
+### Features
+
+* **TDP-1708:** removed react native from related articles ([#3016](https://github.com/newsuk/times-components/issues/3016)) ([e67b4dc](https://github.com/newsuk/times-components/commit/e67b4dc299e38dd86430f6c7f5d922437cfa27f2))
+
+
+
+
+
+## [1.47.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.47.0...@times-components/ts-components@1.47.1) (2022-07-08)
+
+
+### Reverts
+
+* **TDP-000:** Recommended articles - remove feature flag ([#3019](https://github.com/newsuk/times-components/issues/3019)) ([cfc138e](https://github.com/newsuk/times-components/commit/cfc138e53036727076f33d62796fbf1ecf64fde2))
+
+
+
+
+
+# [1.47.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.46.5...@times-components/ts-components@1.47.0) (2022-07-08)
+
+
+### Features
+
+* **TDP-000:** Recommended articles - remove feature flag ([#3018](https://github.com/newsuk/times-components/issues/3018)) ([394392c](https://github.com/newsuk/times-components/commit/394392c3c02384fece4a3a941485da43ad235fec))
+
+
+
+
+
+## [1.46.5](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.46.4...@times-components/ts-components@1.46.5) (2022-07-06)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
 ## [1.46.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.46.3...@times-components/ts-components@1.46.4) (2022-07-01)
 
 

@@ -46,6 +46,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                             aria-label="icon-email"
                             height={16}
                             role="img"
+                            title="Share by email"
                             viewBox="0 0 22 16"
                             width={22}
                           >
@@ -74,6 +75,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                             aria-label="icon-twitter"
                             height={16}
                             role="img"
+                            title="Share on Twitter"
                             viewBox="-354.2 -279.4 750 600"
                             width={20}
                           >
@@ -98,6 +100,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                             aria-label="icon-facebook"
                             height={18}
                             role="img"
+                            title="Share on Facebook"
                             viewBox="14 10 10.592460632324219 20.397258758544922"
                             width={9}
                           >
@@ -127,6 +130,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                             aria-label="icon-copy-link"
                             height={16}
                             role="img"
+                            title="Copy link to clipboard"
                             viewBox="0 0 15 15"
                             width={15}
                           >
@@ -149,7 +153,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                     <div>
                       <div>
                         <div
-                          data-fillColour="#006699"
+                          data-fill-colour="#006699"
                           data-title="Activity Indicator"
                         />
                       </div>
@@ -362,6 +366,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                             aria-label="icon-email"
                             height={16}
                             role="img"
+                            title="Share by email"
                             viewBox="0 0 22 16"
                             width={22}
                           >
@@ -390,6 +395,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                             aria-label="icon-twitter"
                             height={16}
                             role="img"
+                            title="Share on Twitter"
                             viewBox="-354.2 -279.4 750 600"
                             width={20}
                           >
@@ -414,6 +420,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                             aria-label="icon-facebook"
                             height={18}
                             role="img"
+                            title="Share on Facebook"
                             viewBox="14 10 10.592460632324219 20.397258758544922"
                             width={9}
                           >
@@ -443,6 +450,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                             aria-label="icon-copy-link"
                             height={16}
                             role="img"
+                            title="Copy link to clipboard"
                             viewBox="0 0 15 15"
                             width={15}
                           >
@@ -465,7 +473,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                     <div>
                       <div>
                         <div
-                          data-fillColour="#006699"
+                          data-fill-colour="#006699"
                           data-title="Activity Indicator"
                         />
                       </div>
