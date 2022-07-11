@@ -1,56 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. group of topics 1`] = `
-<style>
-.IS1 {
-  color: #696969;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 13px;
-  position: relative;
-  top: 2;
-  font-size-style: [object Object];
-}
-
-.IS2 {
-  border-color: #DBDBDB;
-  border-radius: 2;
-  border-width: 1;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-}
-
-.IS3 {
-  margin-right: 10px;
-  margin-top: 10px;
-  max-width: 80%;
-}
-
-.IS4 {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 10px;
-  style: null;
-}
-</style>
-
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr IS4"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  flexDirection="row"
+  flexWrap="wrap"
+  justifyContent="center"
+  marginBottom="10px"
+  style={null}
 >
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    marginRight="10px"
+    marginTop="10px"
+    maxWidth="80%"
   >
     <a
       className="link__RespLink-sc-1ocvixa-0 dfMuic"
     >
       <div
-        className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
+        borderColor="#DBDBDB"
+        borderRadius={2}
+        borderWidth={1}
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        paddingBottom="10px"
+        paddingLeft="15px"
+        paddingRight="15px"
+        paddingTop="10px"
       >
         <div
-          className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
+          className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+          color="#696969"
+          fontFamily="GillSansMTStd-Medium"
+          fontSize={13}
+          fontSizeStyle={
+            Object {
+              "fontSize": 13,
+            }
+          }
+          lineHeight="13px"
+          position="relative"
+          top={2}
         >
           Football
         </div>
@@ -61,56 +51,46 @@ exports[`1. group of topics 1`] = `
 `;
 
 exports[`2. group of topics at large scale 1`] = `
-<style>
-.IS1 {
-  color: #696969;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 13px;
-  position: relative;
-  top: 2;
-  font-size-style: [object Object];
-}
-
-.IS2 {
-  border-color: #DBDBDB;
-  border-radius: 2;
-  border-width: 1;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-}
-
-.IS3 {
-  margin-right: 10px;
-  margin-top: 10px;
-  max-width: 80%;
-}
-
-.IS4 {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 10px;
-  style: null;
-}
-</style>
-
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr IS4"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  flexDirection="row"
+  flexWrap="wrap"
+  justifyContent="center"
+  marginBottom="10px"
+  style={null}
 >
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    marginRight="10px"
+    marginTop="10px"
+    maxWidth="80%"
   >
     <a
       className="link__RespLink-sc-1ocvixa-0 dfMuic"
     >
       <div
-        className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
+        borderColor="#DBDBDB"
+        borderRadius={2}
+        borderWidth={1}
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        paddingBottom="10px"
+        paddingLeft="15px"
+        paddingRight="15px"
+        paddingTop="10px"
       >
         <div
-          className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
+          className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+          color="#696969"
+          fontFamily="GillSansMTStd-Medium"
+          fontSize={13}
+          fontSizeStyle={
+            Object {
+              "fontSize": 13,
+            }
+          }
+          lineHeight="13px"
+          position="relative"
+          top={2}
         >
           Football
         </div>
@@ -121,56 +101,46 @@ exports[`2. group of topics at large scale 1`] = `
 `;
 
 exports[`3. group of topics at xlarge scale 1`] = `
-<style>
-.IS1 {
-  color: #696969;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 13px;
-  position: relative;
-  top: 2;
-  font-size-style: [object Object];
-}
-
-.IS2 {
-  border-color: #DBDBDB;
-  border-radius: 2;
-  border-width: 1;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-}
-
-.IS3 {
-  margin-right: 10px;
-  margin-top: 10px;
-  max-width: 80%;
-}
-
-.IS4 {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 10px;
-  style: null;
-}
-</style>
-
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr IS4"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  flexDirection="row"
+  flexWrap="wrap"
+  justifyContent="center"
+  marginBottom="10px"
+  style={null}
 >
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    marginRight="10px"
+    marginTop="10px"
+    maxWidth="80%"
   >
     <a
       className="link__RespLink-sc-1ocvixa-0 dfMuic"
     >
       <div
-        className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
+        borderColor="#DBDBDB"
+        borderRadius={2}
+        borderWidth={1}
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        paddingBottom="10px"
+        paddingLeft="15px"
+        paddingRight="15px"
+        paddingTop="10px"
       >
         <div
-          className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
+          className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+          color="#696969"
+          fontFamily="GillSansMTStd-Medium"
+          fontSize={13}
+          fontSizeStyle={
+            Object {
+              "fontSize": 13,
+            }
+          }
+          lineHeight="13px"
+          position="relative"
+          top={2}
         >
           Football
         </div>
@@ -181,45 +151,38 @@ exports[`3. group of topics at xlarge scale 1`] = `
 `;
 
 exports[`4. article topic with style 1`] = `
-<style>
-.IS1 {
-  color: #696969;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 20px;
-  position: relative;
-  top: 2;
-  font-size-style: [object Object];
-}
-
-.IS2 {
-  border-color: #DBDBDB;
-  border-radius: 2;
-  border-width: 1;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-}
-
-.IS3 {
-  margin-right: 10px;
-  margin-top: 10px;
-  max-width: 80%;
-}
-</style>
-
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  marginRight="10px"
+  marginTop="10px"
+  maxWidth="80%"
 >
   <a
     className="link__RespLink-sc-1ocvixa-0 dfMuic"
   >
     <div
-      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
+      borderColor="#DBDBDB"
+      borderRadius={2}
+      borderWidth={1}
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
+      paddingBottom="10px"
+      paddingLeft="15px"
+      paddingRight="15px"
+      paddingTop="10px"
     >
       <div
-        className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+        color="#696969"
+        fontFamily="GillSansMTStd-Medium"
+        fontSize={13}
+        fontSizeStyle={
+          Object {
+            "fontSize": 17,
+          }
+        }
+        lineHeight="20px"
+        position="relative"
+        top={2}
       >
         Test
       </div>
@@ -229,45 +192,34 @@ exports[`4. article topic with style 1`] = `
 `;
 
 exports[`5. article topic with no additional style 1`] = `
-<style>
-.IS1 {
-  color: #696969;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
-  line-height: 13;
-  position: relative;
-  top: 2;
-  font-size-style: null;
-}
-
-.IS2 {
-  border-color: #DBDBDB;
-  border-radius: 2;
-  border-width: 1;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-}
-
-.IS3 {
-  margin-right: 10px;
-  margin-top: 10px;
-  max-width: 80%;
-}
-</style>
-
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  marginRight="10px"
+  marginTop="10px"
+  maxWidth="80%"
 >
   <a
     className="link__RespLink-sc-1ocvixa-0 dfMuic"
   >
     <div
-      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
+      borderColor="#DBDBDB"
+      borderRadius={2}
+      borderWidth={1}
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
+      paddingBottom="10px"
+      paddingLeft="15px"
+      paddingRight="15px"
+      paddingTop="10px"
     >
       <div
-        className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+        color="#696969"
+        fontFamily="GillSansMTStd-Medium"
+        fontSize={13}
+        fontSizeStyle={null}
+        lineHeight={13}
+        position="relative"
+        top={2}
       >
         Test
       </div>

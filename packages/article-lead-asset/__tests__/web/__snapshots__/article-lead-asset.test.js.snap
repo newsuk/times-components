@@ -1,60 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. renders correctly with an image lead asset 1`] = `
-<style>
-.IS1 {
-  opacity: 1;
-  z-index: 2;
-  width: 100%;
-  position: absolute;
-  display: block;
-}
-
-.IS2 {
-  display: table;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-}
-
-.IS3 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS4 {
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
-.IS5 {
-  margin: 0;
-}
-</style>
-
 <div
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <figure
-    className="IS5"
+    margin={0}
   >
     <div
-      className="tc-view__TcView-nuazoi-0 fPjBcr IS4"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
+      paddingBottom="56.25%"
+      position="relative"
     >
       <div
-        className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        height="100%"
+        position="absolute"
+        width="100%"
       >
         <div
-          className="IS2"
+          display="table"
+          height={0}
+          overflow="hidden"
+          paddingBottom="56.25%"
+          position="relative"
+          width="100%"
         >
           <img
             alt="Chris Reynolds Gordon at one of his party venues in London"
-            className="IS1"
+            display="block"
+            opacity={1}
+            position="absolute"
             src="https://crop169.io/?resize=360"
             srcSet="https://crop169.io/?resize=360 360w,https://crop169.io/?resize=520 520w,https://crop169.io/?resize=680 680w,https://crop169.io/?resize=860 860w,https://crop169.io/?resize=1200 1200w,https://crop169.io/?resize=1500 1500w"
+            width="100%"
+            zIndex={2}
           />
         </div>
       </div>
@@ -76,34 +56,22 @@ exports[`1. renders correctly with an image lead asset 1`] = `
 `;
 
 exports[`2. renders correctly with a video lead asset 1`] = `
-<style>
-.IS1 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS2 {
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
-.IS3 {
-  margin: 0;
-}
-</style>
-
 <div
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <figure
-    className="IS3"
+    margin={0}
   >
     <div
-      className="tc-view__TcView-nuazoi-0 fPjBcr IS2"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
+      paddingBottom="56.25%"
+      position="relative"
     >
       <div
-        className="tc-view__TcView-nuazoi-0 fPjBcr IS1"
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        height="100%"
+        position="absolute"
+        width="100%"
       >
         <Video
           accountId="1234"
@@ -144,60 +112,40 @@ exports[`3. renders correctly when there is no lead asset 1`] = `null`;
 exports[`4. correctly renders when there is no displayimage 1`] = `null`;
 
 exports[`5. it renders correctly with a classname 1`] = `
-<style>
-.IS1 {
-  opacity: 1;
-  z-index: 2;
-  width: 100%;
-  position: absolute;
-  display: block;
-}
-
-.IS2 {
-  display: table;
-  height: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-}
-
-.IS3 {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.IS4 {
-  padding-bottom: 56.25%;
-  position: relative;
-}
-
-.IS5 {
-  margin: 0;
-}
-</style>
-
 <div
   className="test-class-name tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <figure
-    className="IS5"
+    margin={0}
   >
     <div
-      className="tc-view__TcView-nuazoi-0 fPjBcr IS4"
+      className="tc-view__TcView-nuazoi-0 fPjBcr"
+      paddingBottom="56.25%"
+      position="relative"
     >
       <div
-        className="tc-view__TcView-nuazoi-0 fPjBcr IS3"
+        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        height="100%"
+        position="absolute"
+        width="100%"
       >
         <div
-          className="IS2"
+          display="table"
+          height={0}
+          overflow="hidden"
+          paddingBottom="56.25%"
+          position="relative"
+          width="100%"
         >
           <img
             alt="Chris Reynolds Gordon at one of his party venues in London"
-            className="IS1"
+            display="block"
+            opacity={1}
+            position="absolute"
             src="https://crop169.io/?resize=360"
             srcSet="https://crop169.io/?resize=360 360w,https://crop169.io/?resize=520 520w,https://crop169.io/?resize=680 680w,https://crop169.io/?resize=860 860w,https://crop169.io/?resize=1200 1200w,https://crop169.io/?resize=1500 1500w"
+            width="100%"
+            zIndex={2}
           />
         </div>
       </div>

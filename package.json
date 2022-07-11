@@ -142,6 +142,7 @@
     "@babel/runtime-corejs2": "7.4.4",
     "@react-native-community/async-storage": "1.11.0",
     "@react-native-community/netinfo": "5.3.3",
+    "@times-components/svgs": "2.7.36",
     "opentype.js": "1.1.0",
     "react-art": "16.6.3",
     "react-native": "0.61.5",

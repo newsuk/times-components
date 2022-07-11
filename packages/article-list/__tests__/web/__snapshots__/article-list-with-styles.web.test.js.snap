@@ -184,50 +184,6 @@ exports[`1. article list 1`] = `
   }
 }
 
-<style>
-.IS1 {
-  max-width: 760;
-  flex: 1;
-}
-
-.IS2 {
-  align-items: stretch;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.IS3 {
-  background-color: #DBDBDB;
-  height: 1;
-}
-
-.IS4 {
-  background-color: #DBDBDB;
-  height: 1;
-}
-
-.IS5 {
-  background-color: #DBDBDB;
-  height: 1;
-}
-
-.IS6 {
-  background-color: #DBDBDB;
-  height: 1;
-}
-
-.IS7 {
-  max-width: 760;
-  flex: 1;
-}
-
-.IS8 {
-  align-items: stretch;
-  flex-direction: row;
-  justify-content: center;
-}
-</style>
-
 <div
   className="c0"
 >
@@ -238,10 +194,15 @@ exports[`1. article list 1`] = `
       className="c1"
     >
       <div
-        className="c0 IS2"
+        alignItems="stretch"
+        className="c0"
+        flexDirection="row"
+        justifyContent="center"
       >
         <div
-          className="c0 IS1"
+          className="c0"
+          flex={1}
+          maxWidth={760}
         >
           <Pagination />
         </div>
@@ -277,7 +238,9 @@ exports[`1. article list 1`] = `
           className="c4"
         >
           <div
-            className="c0 IS3"
+            backgroundColor="#DBDBDB"
+            className="c0"
+            height={1}
           />
         </div>
         <Link>
@@ -306,7 +269,9 @@ exports[`1. article list 1`] = `
           className="c4"
         >
           <div
-            className="c0 IS4"
+            backgroundColor="#DBDBDB"
+            className="c0"
+            height={1}
           />
         </div>
         <Link>
@@ -335,7 +300,9 @@ exports[`1. article list 1`] = `
           className="c4"
         >
           <div
-            className="c0 IS5"
+            backgroundColor="#DBDBDB"
+            className="c0"
+            height={1}
           />
         </div>
         <Link>
@@ -364,7 +331,9 @@ exports[`1. article list 1`] = `
           className="c4"
         >
           <div
-            className="c0 IS6"
+            backgroundColor="#DBDBDB"
+            className="c0"
+            height={1}
           />
         </div>
         <Link>
@@ -391,10 +360,15 @@ exports[`1. article list 1`] = `
       <AdContainer />
     </div>
     <div
-      className="c0 IS8"
+      alignItems="stretch"
+      className="c0"
+      flexDirection="row"
+      justifyContent="center"
     >
       <div
-        className="c0 IS7"
+        className="c0"
+        flex={1}
+        maxWidth={760}
       >
         <Pagination />
       </div>

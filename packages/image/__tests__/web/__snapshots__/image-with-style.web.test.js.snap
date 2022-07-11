@@ -29,44 +29,31 @@ exports[`1. default image 1`] = `
   z-index: 2;
 }
 
-<style>
-.IS1 {
-  max-width: 25%;
-  max-height: 50%;
-}
-
-.IS2 {
-  align-items: center;
-  background-color: #EDEDED;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  border-radius: 0;
-}
-
-.IS3 {
-  padding-bottom: 66.66666666666667%;
-}
-</style>
-
 <div
   className="c0"
 >
   <div
-    className="IS3"
+    paddingBottom="66.66666666666667%"
   >
     <img
       className="c1"
     />
     <div
-      className="c0 IS2"
+      alignItems="center"
+      backgroundColor="#EDEDED"
+      borderRadius={0}
+      bottom={0}
+      className="c0"
+      justifyContent="center"
+      left={0}
+      position="absolute"
+      right={0}
+      top={0}
+      zIndex={0}
     >
       <svg
-        className="IS1"
+        maxHeight="50%"
+        maxWidth="25%"
       >
         <g>
           <path />
@@ -106,44 +93,31 @@ exports[`2. default modal 1`] = `
   z-index: 2;
 }
 
-<style>
-.IS1 {
-  max-width: 25%;
-  max-height: 50%;
-}
-
-.IS2 {
-  align-items: center;
-  background-color: #EDEDED;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  border-radius: 0;
-}
-
-.IS3 {
-  padding-bottom: 66.66666666666667%;
-}
-</style>
-
 <div
   className="c0"
 >
   <div
-    className="IS3"
+    paddingBottom="66.66666666666667%"
   >
     <img
       className="c1"
     />
     <div
-      className="c0 IS2"
+      alignItems="center"
+      backgroundColor="#EDEDED"
+      borderRadius={0}
+      bottom={0}
+      className="c0"
+      justifyContent="center"
+      left={0}
+      position="absolute"
+      right={0}
+      top={0}
+      zIndex={0}
     >
       <svg
-        className="IS1"
+        maxHeight="50%"
+        maxWidth="25%"
       >
         <g>
           <path />
