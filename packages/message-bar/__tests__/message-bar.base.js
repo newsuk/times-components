@@ -1,18 +1,17 @@
 import React from "react";
-import { TouchableOpacity } from "react-native";
 import { scales } from "@times-components/ts-styleguide";
 import { delay } from "@times-components/test-utils";
 import { shallow } from "enzyme";
 import TestRenderer from "react-test-renderer";
 import MessageBar from "../src/message-bar";
+import { CloseButton } from "../src/styles";
 
-export default animate => [
+export default () => [
   {
     name: "renders correctly",
     test: async () => {
       const testInstance = TestRenderer.create(
         <MessageBar
-          animate={animate}
           close={() => {}}
           delay={1}
           message="test message"
@@ -31,18 +30,16 @@ export default animate => [
       const closed = jest.fn();
       const testInstance = shallow(
         <MessageBar
-          animate={animate}
           close={closed}
-          delay={1}
+          delay={10000}
           message="test message"
           scale={scales.medium}
         />
       );
-
-      const button = testInstance.find(TouchableOpacity);
-      button.simulate("press");
-      await delay(10);
-      expect(closed).toBeCalled();
+      const button = testInstance.find(CloseButton);
+      button.simulate("click");
+      await delay(300);
+      expect(closed.mock.calls.length).toEqual(1);
     }
   },
   {
@@ -50,7 +47,6 @@ export default animate => [
     test: async () => {
       const testInstance = shallow(
         <MessageBar
-          animate={animate}
           close={() => {}}
           delay={100}
           message="test message"
@@ -74,7 +70,6 @@ export default animate => [
     test: async () => {
       const testInstance = shallow(
         <MessageBar
-          animate={animate}
           close={() => {}}
           delay={100}
           message="test message"

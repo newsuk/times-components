@@ -1,4 +1,4 @@
-import { storiesOf } from "@storybook/react-native";
+import { storiesOf } from "@storybook/react";
 import * as actions from "@storybook/addon-actions";
 import * as builtInKnobs from "@storybook/addon-knobs/react";
 import showcaseToStoryBook from "../src/showcase-to-storybook";

@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unused-state */
 import React, { Component } from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { ResponsiveContext } from "@times-components/responsive";
 import styleFactory from "./styles";
@@ -46,7 +46,7 @@ class MessageManager extends Component {
   }
 
   render() {
-    const { scale, children, delay, animate } = this.props;
+    const { scale, children, delay } = this.props;
     const { message, offsetTop } = this.state;
     const styles = styleFactory(scale);
     const offsetStyle = offsetTop
@@ -56,15 +56,13 @@ class MessageManager extends Component {
           height: message ? 50 : 0
         }
       : {};
-
     return (
-      <View>
-        <View style={[styles.messageManager, offsetStyle]}>
+      <TcView>
+        <TcView style={{ ...styles.messageManager, offsetStyle }}>
           {message && (
             <ResponsiveContext.Consumer>
               {({ editionBreakpoint }) => (
                 <MessageBar
-                  animate={animate}
                   close={this.removeMessage}
                   delay={delay}
                   message={message}
@@ -74,21 +72,20 @@ class MessageManager extends Component {
               )}
             </ResponsiveContext.Consumer>
           )}
-        </View>
-        <View onLayout={this.onLayout}>
+        </TcView>
+        <TcView onLayout={this.onLayout}>
           <MessageContext.Provider value={this.state}>
             {children}
           </MessageContext.Provider>
-        </View>
-      </View>
+        </TcView>
+      </TcView>
     );
   }
 }
 
 {
-  const { string, node, number, bool } = PropTypes;
+  const { string, node, number } = PropTypes;
   MessageManager.propTypes = {
-    animate: bool.isRequired,
     children: node.isRequired,
     delay: number.isRequired,
     scale: string.isRequired

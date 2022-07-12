@@ -2,26 +2,16 @@
 
 exports[`Bar Spacing Decorator 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   style={
     Object {
-      "WebkitBoxFlex": 1,
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "flexBasis": "0%",
-      "flexGrow": 1,
-      "flexShrink": 1,
-      "marginTop": "20px",
-      "msFlexNegative": 1,
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
+      "flex": 1,
+      "marginTop": 20,
     }
   }
 >
   <div
-    className="css-text-901oao"
-    dir="auto"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     I am in Storybook!
   </div>
@@ -30,43 +20,23 @@ exports[`Bar Spacing Decorator 1`] = `
 
 exports[`Centered Decorator 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   style={
     Object {
-      "WebkitAlignItems": "center",
-      "WebkitBoxAlign": "center",
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxFlex": 1,
-      "WebkitBoxOrient": "horizontal",
-      "WebkitBoxPack": "center",
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexDirection": "row",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "WebkitJustifyContent": "center",
       "alignItems": "center",
-      "bottom": "0px",
-      "flexBasis": "0%",
+      "bottom": 0,
+      "flex": 1,
       "flexDirection": "row",
-      "flexGrow": 1,
-      "flexShrink": 1,
       "justifyContent": "center",
-      "left": "0px",
-      "msFlexAlign": "center",
-      "msFlexDirection": "row",
-      "msFlexNegative": 1,
-      "msFlexPack": "center",
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
+      "left": 0,
       "position": "absolute",
-      "right": "0px",
-      "top": "0px",
+      "right": 0,
+      "top": 0,
     }
   }
 >
   <div
-    className="css-text-901oao"
-    dir="auto"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     I am in Storybook!
   </div>
@@ -75,27 +45,17 @@ exports[`Centered Decorator 1`] = `
 
 exports[`Lateral Spacing Decorator 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   style={
     Object {
-      "WebkitBoxFlex": 1,
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "flexBasis": "0%",
-      "flexGrow": 1,
-      "flexShrink": 1,
-      "marginLeft": "20px",
-      "marginRight": "20px",
-      "msFlexNegative": 1,
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
+      "flex": 1,
+      "marginLeft": 20,
+      "marginRight": 20,
     }
   }
 >
   <div
-    className="css-text-901oao"
-    dir="auto"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     I am in Storybook!
   </div>
@@ -104,8 +64,7 @@ exports[`Lateral Spacing Decorator 1`] = `
 
 exports[`StrictWrapper to wrap child components in Strict Mode 1`] = `
 <div
-  className="css-text-901oao"
-  dir="auto"
+  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
 >
   I am in Storybook!
 </div>
@@ -262,31 +221,21 @@ Array [
 
 exports[`White Background Decorator 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
   style={
     Object {
-      "WebkitBoxFlex": 1,
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "backgroundColor": "rgba(255,255,255,1.00)",
-      "bottom": "0px",
-      "flexBasis": "0%",
-      "flexGrow": 1,
-      "flexShrink": 1,
-      "left": "0px",
-      "msFlexNegative": 1,
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
+      "backgroundColor": "white",
+      "bottom": 0,
+      "flex": 1,
+      "left": 0,
       "position": "absolute",
-      "right": "0px",
-      "top": "0px",
+      "right": 0,
+      "top": 0,
     }
   }
 >
   <div
-    className="css-text-901oao"
-    dir="auto"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   >
     I am in Storybook!
   </div>
