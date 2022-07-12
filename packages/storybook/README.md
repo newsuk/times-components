@@ -52,7 +52,7 @@ export default {
     {
       type: "story",
       name: "The name of my showcase",
-      platform: "native",
+      platform: "web",
       component: (knobs, decorators) => (
         <MyComponent />
       )

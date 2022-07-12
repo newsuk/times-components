@@ -19,7 +19,7 @@ export default () => {
   });
 
   it("does not perform bidding request for native", () => {
-    const init = adInit({ ...initOptions, platform: "native" });
+    const init = adInit({ ...initOptions, platform: "web" });
     jest.spyOn(init.prebid, "process");
     jest.spyOn(init.prebid, "init");
     jest.spyOn(init.prebid, "bid");
