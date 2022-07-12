@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice-layout",
-  "version": "0.49.0",
+  "version": "0.49.1",
   "description": "Slice layout",
   "main": "dist/slice-layout",
   "scripts": {
@@ -35,7 +35,7 @@
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator": "2.8.0",
     "@times-components/jest-serializer": "3.2.30",
-    "@times-components/storybook": "4.2.25",
+    "@times-components/storybook": "4.2.26",
     "@times-components/test-utils": "2.3.10",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
@@ -58,7 +58,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/ts-styleguide": "1.36.4",
+    "@times-components/ts-styleguide": "1.36.5",
     "@times-components/utils": "6.13.0",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
