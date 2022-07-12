@@ -5,20 +5,18 @@ import { scales } from "@times-components/ts-styleguide";
 import { delay } from "@times-components/test-utils";
 import MessageManager from "../src/message-manager";
 import MessageBar from "../src/message-bar";
-import { CloseButton } from '../src/styles';
+import { CloseButton } from "../src/styles";
 import Context from "../src/message-context";
 
 const Button = () => <button type="button" />;
 
 const TestConsumer = () => (
   <Context.Consumer>
-    {({ showMessage }) => (
-      <Button onClick={() => showMessage("foo")} />
-    )}
+    {({ showMessage }) => <Button onClick={() => showMessage("foo")} />}
   </Context.Consumer>
 );
 
-export default animate => [
+export default () => [
   {
     name: "renders correctly",
     test: async () => {

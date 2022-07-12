@@ -58,7 +58,7 @@ class MessageManager extends Component {
       : {};
     return (
       <TcView>
-        <TcView style={{...styles.messageManager, offsetStyle}}>
+        <TcView style={{ ...styles.messageManager, offsetStyle }}>
           {message && (
             <ResponsiveContext.Consumer>
               {({ editionBreakpoint }) => (
@@ -84,7 +84,7 @@ class MessageManager extends Component {
 }
 
 {
-  const { string, node, number, bool } = PropTypes;
+  const { string, node, number } = PropTypes;
   MessageManager.propTypes = {
     children: node.isRequired,
     delay: number.isRequired,

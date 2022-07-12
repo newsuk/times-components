@@ -39,7 +39,6 @@
     "@times-components/jest-serializer": "3.2.30",
     "@times-components/storybook": "4.2.25",
     "@times-components/test-utils": "2.3.10",
-    "@times-components/utils": "6.12.1",
     "@times-components/webpack-configurator": "2.0.29",
     "enzyme": "3.9.0",
     "eslint": "5.9.0",
@@ -63,7 +62,9 @@
     "@times-components/icons": "2.18.2",
     "@times-components/responsive": "0.12.3",
     "@times-components/ts-styleguide": "1.36.4",
-    "prop-types": "15.7.2"
+    "@times-components/utils": "6.12.1",
+    "prop-types": "15.7.2",
+    "styled-components": "4.3.2"
   },
   "publishConfig": {
     "access": "public"

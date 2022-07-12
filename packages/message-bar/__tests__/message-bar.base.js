@@ -4,9 +4,9 @@ import { delay } from "@times-components/test-utils";
 import { shallow } from "enzyme";
 import TestRenderer from "react-test-renderer";
 import MessageBar from "../src/message-bar";
-import { CloseButton } from '../src/styles';
+import { CloseButton } from "../src/styles";
 
-export default animate => [
+export default () => [
   {
     name: "renders correctly",
     test: async () => {
