@@ -58,7 +58,7 @@ class MessageManager extends Component {
       : {};
     return (
       <TcView>
-        <TcView style={[styles.messageManager, offsetStyle]}>
+        <TcView style={{...styles.messageManager, offsetStyle}}>
           {message && (
             <ResponsiveContext.Consumer>
               {({ editionBreakpoint }) => (

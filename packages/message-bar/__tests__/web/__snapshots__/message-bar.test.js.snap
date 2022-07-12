@@ -10,10 +10,10 @@ exports[`1. renders correctly 1`] = `
       <button>
         <svg
           aria-label="icon-close"
-          height="28"
+          height={28}
           role="img"
           viewBox="0 0 28 28"
-          width="28"
+          width={28}
         >
           <title>
             Close Icon

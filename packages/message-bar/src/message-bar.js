@@ -56,7 +56,7 @@ class MessageBar extends Component {
           <TcView style={styles.messageBarBody}>
             <TcText style={styles.messageBarText}>{message}</TcText>
               <CloseButton style={styles.messageBarCloseButton} className={this.state.closeActive ? ' active' : ''} onClick={this.closeMessage}>
-                <CloseIcon width="28" height="28" onClick={this.closeMessage}/>
+                <CloseIcon width={28} height={28} onClick={this.closeMessage}/>
               </CloseButton>
             </TcView>
         </TcView>
