@@ -3,7 +3,7 @@ import { TcView, TcText } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { CloseIcon } from "@times-components/icons";
 import styleFactory from "./styles";
-import styled, { keyframes } from 'styled-components';
+import { CloseButton, StyledAnimation } from './styles'
 
 class MessageBar extends Component {
   constructor(props) {
@@ -64,39 +64,6 @@ class MessageBar extends Component {
     );
   }
 }
-
-
-const AnimationIn = keyframes`
-  0% { transform: translateY(-51px)}
-  90% { transform: translateY(5px)}
-  100% { transform: translateY(0px)}
-`;
-
-const AnimationOut = keyframes`
-  0% { transform: translateY(0px)}
-  100% { transform: translateY(-51px)}
-`
-
-const StyledAnimation = styled(TcView)`
-  animation-name: ${AnimationIn};
-  animation-duration: 0.25s;
-  animation-timing-function: ease-in-out;
-  &.close {
-    transform: translateY(-51px);
-    animation-name: ${AnimationOut};
-    animation-duration: 0.25s;
-  }
-`;
-
-export const CloseButton = styled.button`
-  cursor: pointer;
-  &.active {
-    opacity: 0.5
-  }
-  :active { 
-    opacity: 0.5
-  }
-`
 
 MessageBar.propTypes = {
   breakpoint: PropTypes.string.isRequired,

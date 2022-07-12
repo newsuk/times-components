@@ -1,10 +1,10 @@
 import React from "react";
-import { TouchableOpacity } from "react-native";
 import { scales } from "@times-components/ts-styleguide";
 import { delay } from "@times-components/test-utils";
 import { shallow } from "enzyme";
 import TestRenderer from "react-test-renderer";
-import MessageBar, { CloseButton } from "../src/message-bar";
+import MessageBar from "../src/message-bar";
+import { CloseButton } from '../src/styles';
 
 export default animate => [
   {
