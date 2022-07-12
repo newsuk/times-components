@@ -3667,6 +3667,18 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
+"@times-components/link@3.10.7":
+  version "3.10.7"
+  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-3.10.7.tgz#fc5f651d42aadb4632fb2006792cb6824ece879e"
+  integrity sha512-SU7zEWa8osLilHL2e4nGV7gNQL8+0D4u14ySFwMaki++crBuZMZL5cY82Cal8kB9wOFkfT2yT2fSGtmxpR3mFQ==
+  dependencies:
+    "@times-components/ts-styleguide" "1.36.4"
+    "@times-components/utils" "6.13.0"
+    prop-types "15.7.2"
+    react "16.9.0"
+    react-dom "16.9.0"
+    styled-components "4.3.2"
+
 "@times-components/svgs@2.7.36":
   version "2.7.36"
   resolved "https://registry.yarnpkg.com/@times-components/svgs/-/svgs-2.7.36.tgz#a7a17502f7806ce59f39b7bf037e13753edfc905"
@@ -3674,6 +3686,16 @@
   dependencies:
     prop-types "15.7.2"
     svgs "3.2.1"
+
+"@times-components/ts-styleguide@1.36.4":
+  version "1.36.4"
+  resolved "https://registry.yarnpkg.com/@times-components/ts-styleguide/-/ts-styleguide-1.36.4.tgz#7754c0f77f536a79d247bfe6bf8f673f14cc44a2"
+  integrity sha512-xEzQY9V5JXZyqBBnrSS4xVniiGrLrYgaIzZcvoqk1M++PjIR1XhlAzYoj6C33pipTr4zDtbWiih4VWeKy+pAzw==
+  dependencies:
+    "@times-components/link" "3.10.7"
+    "@times-components/utils" "6.13.0"
+    react "16.9.0"
+    styled-components "4.3.2"
 
 "@tootallnate/once@1":
   version "1.1.2"
