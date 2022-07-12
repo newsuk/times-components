@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled from "styled-components";
 import {
   breakpoints,
@@ -8,7 +8,7 @@ import {
   spacing
 } from "@times-components/ts-styleguide";
 
-export const HeadContainerWithDescription = styled(View)`
+export const HeadContainerWithDescription = styled(TcView)`
   width: 100%;
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
@@ -29,7 +29,7 @@ export const HeadContainerWithDescription = styled(View)`
   }
 `;
 
-export const HeadContainer = styled(View)`
+export const HeadContainer = styled(TcView)`
   width: 100%;
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
@@ -62,7 +62,7 @@ export const ResponsiveName = styled.h1`
   }
 `;
 
-export const ResponsiveDivider = styled(View)`
+export const ResponsiveDivider = styled(TcView)`
   border-top-color: ${colours.functional.keyline};
   border-top-style: solid;
   border-top-width: 1px;

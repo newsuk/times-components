@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.13.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.12.2...@times-components/utils@6.13.0) (2022-07-11)
+
+
+### Features
+
+* **TDP-1696:** add TcFlatlist component, refactor slice-layout ([#3022](https://github.com/newsuk/times-components/issues/3022)) ([32dc942](https://github.com/newsuk/times-components/commit/32dc942c7e0895453d7c80d2e30b6bcf466c9bdf))
+
+
+
+
+
 ## [6.12.2](https://github.com/newsuk/times-components/compare/@times-components/utils@6.12.1...@times-components/utils@6.12.2) (2022-07-11)
 
 

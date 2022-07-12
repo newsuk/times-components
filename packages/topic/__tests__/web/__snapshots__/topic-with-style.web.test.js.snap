@@ -2,13 +2,58 @@
 
 exports[`1. an article list header 1`] = `
 .c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c4 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 20px;
 }
 
-.c1 {
+.c2 {
   font-family: "TimesModern-Bold";
   font-size: 40px;
   color: #1D1D1B;
@@ -16,7 +61,22 @@ exports[`1. an article list header 1`] = `
   text-align: center;
 }
 
-.c2 {
+.c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
   border-top-color: #DBDBDB;
   border-top-style: solid;
   border-top-width: 1px;
@@ -25,7 +85,7 @@ exports[`1. an article list header 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 {
+  .c1 {
     padding-left: 0;
     padding-right: 0;
     max-width: 80.8%;
@@ -35,7 +95,7 @@ exports[`1. an article list header 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c0 {
+  .c1 {
     max-width: 56.2%;
     padding-top: 15px;
     padding-bottom: 40px;
@@ -43,63 +103,48 @@ exports[`1. an article list header 1`] = `
 }
 
 @media (min-width:768px) {
-  .c1 {
+  .c2 {
     font-size: 50px;
   }
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c3 {
     width: 290px;
   }
 }
 
-<style>
-.S1 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesDigitalW04;
-  font-size: 15px;
-  line-height: 26px;
-  text-align: center;
-}
-
-.S2 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  background-color: rgba(249,249,249,1.00);
-  border-bottom-color: rgba(240,240,240,1.00);
-  border-bottom-width: 1px;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  min-height: 90px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 40px;
-  width: 100%;
-}
-</style>
-
 <div
-  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-minHeight-1aplaab r-paddingHorizontal-utggzx r-paddingTop-1ur9v65 r-width-13qz1uu S2"
+  alignItems="center"
+  backgroundColor="#F9F9F9"
+  borderBottomColor="#F0F0F0"
+  borderBottomWidth={1}
+  className="c0"
+  flexDirection="column"
+  minHeight={90}
+  paddingHorizontal="10px"
+  paddingTop="40px"
+  width="100%"
 >
   <div
-    className="c0 responsive__HeadContainerWithDescription-sc-1qy9k4m-0 c0 css-view-1dbjc4n"
+    className="c1"
   >
     <h1
-      className="c1"
+      className="c2"
     >
       Test Name
     </h1>
     <div
-      className="c2 responsive__ResponsiveDivider-sc-1qy9k4m-3 c2 css-view-1dbjc4n"
+      className="c3"
     />
     <div
-      className="css-text-901oao r-color-1khnkhu r-fontFamily-1feecvn r-fontSize-a023e6 r-lineHeight-eaezby r-paddingBottom-19yat4t r-textAlign-q4m81j S1"
+      className="c4"
+      color="#333333"
+      fontFamily="TimesDigitalW04"
+      fontSize={15}
+      lineHeight="26px"
+      paddingBottom="15px"
+      textAlign="center"
     >
       Test 
       <i>
@@ -115,29 +160,34 @@ exports[`1. an article list header 1`] = `
 `;
 
 exports[`2. an article list header loading 1`] = `
-<style>
-.S1 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  background-color: rgba(249,249,249,1.00);
-  border-bottom-color: rgba(240,240,240,1.00);
-  border-bottom-width: 1px;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 90px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 40px;
-  width: 100%;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
 }
-</style>
 
 <div
-  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-minHeight-1aplaab r-paddingHorizontal-utggzx r-paddingTop-1ur9v65 r-width-13qz1uu S1"
+  alignItems="center"
+  backgroundColor="#F9F9F9"
+  borderBottomColor="#F0F0F0"
+  borderBottomWidth={1}
+  className="c0"
+  flexDirection="column"
+  minHeight={90}
+  paddingHorizontal="10px"
+  paddingTop="40px"
+  width="100%"
 />
 `;
