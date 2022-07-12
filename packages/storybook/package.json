@@ -35,14 +35,13 @@
     "jest": "24.8.0",
     "prettier": "1.14.3",
     "react-art": "16.6.3",
-    "react-native-web": "0.11.4",
     "react-test-renderer": "16.9.0"
   },
   "dependencies": {
     "@babel/core": "7.4.4",
     "@storybook/addon-actions": "5.3.18",
     "@storybook/addon-knobs": "5.3.18",
-    "@storybook/react-native": "5.3.18",
+    "@storybook/react": "5.3.18",
     "@times-components/schema": "0.7.1",
     "@times-components/user-state": "0.3.24",
     "apollo-cache-inmemory": "1.5.1",
@@ -60,9 +59,7 @@
   },
   "peerDependencies": {
     "react": ">=16.9",
-    "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-dom": ">=16.9"
   },
   "publishConfig": {
     "access": "public"
