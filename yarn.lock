@@ -3707,6 +3707,18 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
+"@times-components/link@3.10.5":
+  version "3.10.5"
+  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-3.10.5.tgz#331a0f9709ab550913fdd7ac5270d505ae0edc50"
+  integrity sha512-cvYFILk9lkhYQgNVKJYK5dRknAH6dBlWGiCrEmWHx8KCMtZac0bmEM514OkhRh8xLgg2X6LgpSbrqVt/gOT4ig==
+  dependencies:
+    "@times-components/ts-styleguide" "1.36.2"
+    "@times-components/utils" "6.12.1"
+    prop-types "15.7.2"
+    react "16.9.0"
+    react-dom "16.9.0"
+    styled-components "4.3.2"
+
 "@times-components/svgs@2.7.36":
   version "2.7.36"
   resolved "https://registry.yarnpkg.com/@times-components/svgs/-/svgs-2.7.36.tgz#a7a17502f7806ce59f39b7bf037e13753edfc905"
@@ -3714,6 +3726,33 @@
   dependencies:
     prop-types "15.7.2"
     svgs "3.2.1"
+
+"@times-components/ts-styleguide@1.36.2":
+  version "1.36.2"
+  resolved "https://registry.yarnpkg.com/@times-components/ts-styleguide/-/ts-styleguide-1.36.2.tgz#90da27a8732960d3a6727b3c83979b67eee9a594"
+  integrity sha512-UhmDH5ggca+OzshMoPNUxi8rVZBdI+u61CpDCFf+psF4IOvkzpFvl1BCD1ua+3YnkexV5fXH7hzgx4ltisPP3A==
+  dependencies:
+    "@times-components/link" "3.10.5"
+    "@times-components/utils" "6.12.1"
+    react "16.9.0"
+    styled-components "4.3.2"
+
+"@times-components/utils@6.12.1":
+  version "6.12.1"
+  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-6.12.1.tgz#557a5263af797fd5fca87496643c353a0996845c"
+  integrity sha512-zOvjPhYMhpM4FBAUKh/NP5+ktjkjqEnTM59RUn9gU/eCJNiUJaUGMpRjrqSum9woF4cf/faP3O3eH7DOg9ChwA==
+  dependencies:
+    "@times-components/schema" "0.7.1"
+    "@times-components/ts-styleguide" "1.36.2"
+    apollo-cache-inmemory "1.5.1"
+    apollo-client "2.5.1"
+    apollo-link "1.2.4"
+    apollo-link-http "1.5.14"
+    apollo-link-persisted-queries "0.2.2"
+    lodash.omitby "4.6.0"
+    prop-types "15.7.2"
+    styled-components "4.3.2"
+    unfetch "^3.0.0"
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -11311,14 +11350,6 @@ flat-cache@^2.0.1:
     flatted "^2.0.0"
     rimraf "2.6.3"
     write "1.0.3"
-
-flatlist-react@1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/flatlist-react/-/flatlist-react-1.5.0.tgz#96985790a3cf3dd534050bb05c0ed2a1ad39a87a"
-  integrity sha512-Ux0Pnp679sNcq+v0o+mU5pJgPBFdaOWDzxGknftZw1G4uBrwyAFRJN++gyveiEXc5bPvRL0wsE2B6OYSmdUmKg==
-  dependencies:
-    prop-types "^15.7.2"
-    warning "^4.0.3"
 
 flatted@^2.0.0:
   version "2.0.2"
