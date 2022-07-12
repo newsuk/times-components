@@ -3,6 +3,8 @@
 
 const { ApolloClient } = require("apollo-client");
 const { AppRegistry } = require("react-native");
+const ReactDOMClient = require("react-dom/client");
+const React= require("react");
 const { ApolloLink } = require("apollo-link");
 const { createHttpLink } = require("apollo-link-http");
 const { createPersistedQueryLink } = require("apollo-link-persisted-queries");
@@ -69,6 +71,7 @@ const makeAnalyticsStream = options => {
 };
 
 module.exports = (component, clientOptions, data) => {
+  console.log('XXXXXXXXXXXXXXX component', component)
   const client = makeClient({
     initialState: window.__APOLLO_STATE__,
     uri: window.nuk.graphqlapi.url,
@@ -86,9 +89,12 @@ module.exports = (component, clientOptions, data) => {
 
   const App = component(client, analyticsStream, data, {});
 
-  AppRegistry.registerComponent("App", () => () => App);
+  // AppRegistry.registerComponent("App", () => () => App);
+ React.createFactory(app);
 
-  AppRegistry.runApplication("App", {
-    rootTag: document.getElementById(clientOptions.rootTag)
-  });
+  ReactDOMClient.render(App)
+
+  // AppRegistry.runApplication("App", {
+  //   rootTag: document.getElementById(clientOptions.rootTag)
+  // });
 };

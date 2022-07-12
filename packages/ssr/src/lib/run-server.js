@@ -10,10 +10,12 @@ const { fragmentMatcher } = require("@times-components/schema");
 const { getDataFromTree } = require("react-apollo");
 const { InMemoryCache } = require("apollo-cache-inmemory");
 const ReactDOMServer = require("react-dom/server");
+const React= require("react");
 const { ServerStyleSheet } = require("styled-components");
 const safeStringify = require("./safe-stringify");
 const errorLink = require("./graphql-error-link");
 const LoggingLink = require("./graphql-logging-link");
+const memoizee = require('memoizee');
 
 const makeClient = options => {
   if (!options.uri) {
@@ -50,19 +52,26 @@ const makeClient = options => {
   });
 };
 
-const renderData = (app, helmetContext = {}) =>
+const renderData = (app, initialProps, helmetContext = {}) =>
   getDataFromTree(app).then(() => {
-    AppRegistry.registerComponent("App", () => () => app);
+   // AppRegistry.registerComponent("App", () => () => app);
 
-    const { element, getStyleElement } = AppRegistry.getApplication("App");
+    React.createFactory(app);
+
+   // const { element, getStyleElement } = AppRegistry.getApplication("App");
     const serverStylesheet = new ServerStyleSheet();
 
+    // const markup = ReactDOMServer.renderToString(
+    //   serverStylesheet.collectStyles(element)
+    // );
+
     const markup = ReactDOMServer.renderToString(
-      serverStylesheet.collectStyles(element)
-    );
+      serverStyleSheet.collectStyles(app(initialProps))
+  );
+
 
     const responsiveStyles = serverStylesheet.getStyleTags();
-    const styles = ReactDOMServer.renderToStaticMarkup(getStyleElement());
+    const styles = serverStylesheet.getStyleElement()
 
     const { helmet } = helmetContext;
     const headMarkup = helmet
@@ -88,6 +97,7 @@ module.exports = async (component, options) => {
 
   const { headMarkup, markup, responsiveStyles, styles } = await renderData(
     app,
+    options.name,
     helmetContext
   );
 

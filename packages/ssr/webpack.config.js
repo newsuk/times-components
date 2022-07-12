@@ -1,7 +1,7 @@
 const path = require("path");
 const outputFolder = require("./src/lib/resolve-dist");
 
-const alias = { "react-native$": "react-native-web" };
+const alias = { "react": "react-web" };
 const extensions = [".js"];
 
 const productionOptions = {
@@ -23,9 +23,10 @@ const babelConfig = {
       plugins: [
         "babel-plugin-styled-components",
         "@babel/plugin-proposal-object-rest-spread",
-        "@babel/plugin-transform-react-display-name"
+        "@babel/plugin-transform-react-display-name",
+        "@babel/plugin-transform-flow-strip-types"
       ],
-      presets: ["module:metro-react-native-babel-preset"]
+      presets: ["@babel/preset-react"]
     }
   }
 };

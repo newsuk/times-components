@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ssr",
-  "main": "src",
+  "main": "src/lib/resolve-dist",
   "version": "2.35.2",
   "scripts": {
     "bundle:dev": "yarn cleanup-dist && webpack --config=webpack.config.js",
@@ -37,6 +37,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
+    "@babel/plugin-transform-flow-strip-types": "7.18.6",
+    "@babel/preset-react": "7.18.6",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/fixture-generator": "0.32.0",
     "@times-components/mock-tpa-server": "0.2.81",
