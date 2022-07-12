@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.5.2...@times-components/message-bar@0.6.0) (2022-07-12)
+
+
+### Features
+
+* **TDP-1419:** Remove react-native from message-bar package ([#2997](https://github.com/newsuk/times-components/issues/2997)) ([a9c9081](https://github.com/newsuk/times-components/commit/a9c9081234e2ec8c917f51558fd6d959341e146e))
+
+
+
+
+
 ## [0.5.2](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.5.1...@times-components/message-bar@0.5.2) (2022-07-11)
 
 **Note:** Version bump only for package @times-components/message-bar

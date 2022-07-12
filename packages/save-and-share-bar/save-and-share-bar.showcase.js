@@ -27,7 +27,7 @@ export default {
     {
       component: () => (
         <MockBookmarksProvider delay={1000} articleId={articleId}>
-          <MessageManager animate delay={3000} scale={scales.medium}>
+          <MessageManager delay={3000} scale={scales.medium}>
             <MessageContext.Consumer>
               {({ showMessage }) => (
                 <SaveAndShareBar

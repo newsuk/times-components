@@ -1,42 +1,33 @@
 import React, { Component } from "react";
-import { View, Text, Animated, TouchableOpacity } from "react-native";
+import { TcView, TcText } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { CloseIcon } from "@times-components/icons";
-import styleFactory from "./styles";
+import styleFactory, { CloseButton, StyledAnimation } from "./styles";
 
 class MessageBar extends Component {
-  state = {
-    yValue: new Animated.Value(0)
-  };
-
   constructor(props) {
     super(props);
-    this.animateClosed = this.animateClosed.bind(this);
-    this.animateOpen = this.animateOpen.bind(this);
-    this.close = this.close.bind(this);
+    this.closeMessage = this.closeMessage.bind(this);
+    this.state = {
+      closeActive: false
+    };
   }
 
   componentDidMount() {
-    const { delay, close } = this.props;
-
-    this.animateOpen(() => {});
+    const { delay } = this.props;
     this.timeout = setTimeout(() => {
-      this.animateClosed(() => {
-        close();
-      });
+      this.closeMessage();
     }, delay);
   }
 
   componentDidUpdate(prevProps) {
     const { message: newMessage } = this.props;
-    const { message, delay, close } = prevProps;
+    const { message, delay } = prevProps;
 
     if (message === newMessage) {
       clearTimeout(this.timeout);
       this.timeout = setTimeout(() => {
-        this.animateClosed(() => {
-          close();
-        });
+        this.closeMessage();
       }, delay);
     }
   }
@@ -47,66 +38,44 @@ class MessageBar extends Component {
     }
   }
 
-  animateOpen(cb) {
-    const { yValue } = this.state;
-    Animated.spring(yValue, {
-      toValue: 1
-    }).start(cb);
-  }
-
-  animateClosed(cb) {
-    const { yValue } = this.state;
-    Animated.spring(yValue, {
-      toValue: 0
-    }).start(cb);
-  }
-
-  close() {
+  closeMessage() {
     const { close } = this.props;
-    clearTimeout(this.timeout);
-    this.timeout = null;
-    this.animateClosed(() => {
+    this.setState({ closeActive: true });
+    this.timeout = setTimeout(() => {
       close();
-    });
+    }, 250);
   }
 
   render() {
-    const { message, scale, animate, breakpoint } = this.props;
-    const { yValue } = this.state;
+    const { message, scale, breakpoint } = this.props;
     const styles = styleFactory(scale, breakpoint);
-
+    const { closeActive } = this.state;
     return (
-      <Animated.View
-        style={
-          animate && {
-            transform: [
-              {
-                translateY: yValue.interpolate({
-                  inputRange: [0, 1],
-                  outputRange: [-100, 0]
-                })
-              }
-            ]
-          }
-        }
+      <StyledAnimation
+        data-testid="Styled Animation"
+        className={closeActive ? " close" : ""}
       >
-        <View data-testid="message-bar" style={styles.messageBarBodyContainer}>
-          <View style={styles.messageBarBody}>
-            <Text style={styles.messageBarText}>{message}</Text>
-            <View style={styles.messageBarCloseButton}>
-              <TouchableOpacity onPress={this.close}>
-                <CloseIcon width="28" height="28" />
-              </TouchableOpacity>
-            </View>
-          </View>
-        </View>
-      </Animated.View>
+        <TcView
+          data-testid="message-bar"
+          style={styles.messageBarBodyContainer}
+        >
+          <TcView style={styles.messageBarBody}>
+            <TcText style={styles.messageBarText}>{message}</TcText>
+            <CloseButton
+              style={styles.messageBarCloseButton}
+              className={closeActive ? " active" : ""}
+              onClick={this.closeMessage}
+            >
+              <CloseIcon width={28} height={28} onClick={this.closeMessage} />
+            </CloseButton>
+          </TcView>
+        </TcView>
+      </StyledAnimation>
     );
   }
 }
 
 MessageBar.propTypes = {
-  animate: PropTypes.bool.isRequired,
   breakpoint: PropTypes.string.isRequired,
   close: PropTypes.func.isRequired,
   delay: PropTypes.number.isRequired,

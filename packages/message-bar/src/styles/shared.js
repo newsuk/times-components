@@ -21,7 +21,10 @@ const messageBarCloseButton = {
   justifyContent: "center",
   marginLeft: "auto",
   marginRight: 20,
-  width: 28
+  width: 28,
+  padding: 0,
+  display: "inherit",
+  border: "0px"
 };
 
 const messageBarText = scale => ({
