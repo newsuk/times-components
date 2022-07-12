@@ -686,6 +686,8 @@ describe("Head", () => {
   ratios.forEach(({ crop, ratio }) => {
     const leadAsset = {
       __typename: "Video",
+      brightcoveAccountId: "5436121857001",
+      brightcoveVideoId: "5831024132001",
       caption: "Some Caption",
       credits: "Some Credits",
       [crop]: {
