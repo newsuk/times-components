@@ -8,10 +8,10 @@ exports[`The minimal serializer should for web not remove className 1`] = `
 
 exports[`The minimal serializer should for web remove empty objects as props 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="sc-htpNat VXuSA"
 >
   <div
-    className="css-text-901oao"
+    className="sc-ifAKCX fyLOy"
   />
 </div>
 `;
@@ -28,13 +28,10 @@ exports[`The minimal serializer should for web remove functions as props 1`] = `
 
 exports[`The minimal serializer should for web remove undefined props 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="sc-htpNat VXuSA"
 >
   <div
-    False={false}
-    Null={null}
-    Zero={0}
-    className="css-text-901oao"
+    className="sc-ifAKCX fyLOy"
   />
 </div>
 `;
@@ -42,11 +39,11 @@ exports[`The minimal serializer should for web remove undefined props 1`] = `
 exports[`The minimal serializer should for web transform render props 1`] = `
 <Foo
   prop={
-    <Text
+    <ForwardRef(styled.div)
       href="href"
     >
       Bar
-    </Text>
+    </ForwardRef(styled.div)>
   }
 />
 `;

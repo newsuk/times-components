@@ -1,12 +1,10 @@
 import React from "react";
-import { AppRegistry } from "react-native-web";
-import { StyleSheet, Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import renderer from "react-test-renderer";
 import {
   addSerializers,
   compose,
   minimalWebTransform,
-  rnwTransform,
   stylePrinter
 } from "../../src";
 
@@ -17,21 +15,20 @@ describe("The serializers should", () => {
       compose(
         stylePrinter,
         minimalWebTransform,
-        rnwTransform(AppRegistry, ["color"])
       )
     );
 
-    const styles = StyleSheet.create({
+    const styles = {
       colored: {
         color: "red"
       },
       padded: {
         padding: 1
       }
-    });
+    };
 
     const component = (
-      <Text
+      <TcText
         func={() => {}}
         style={[styles.colored, styles.padded]}
         undef={undefined}

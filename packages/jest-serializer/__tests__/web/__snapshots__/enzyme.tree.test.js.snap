@@ -4,29 +4,104 @@ exports[`On web the Enzyme tree serializer should render the expected snapshot 1
 <SomeComponent
   style={null}
 >
-  <View
+  <styled.div
     style={null}
   >
-    <div
-      className="css-view-1dbjc4n"
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "VXuSA",
+            "rules": Array [
+              "
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      style={null}
     >
-      <Text>
-        <div
-          className="css-text-901oao"
-          dir="auto"
-        >
-          Hello!
-        </div>
-      </Text>
-      <Text>
-        <div
-          className="css-text-901oao"
-          dir="auto"
-        >
-          deeply nested
-        </div>
-      </Text>
-    </div>
-  </View>
+      <div
+        className="sc-htpNat VXuSA"
+        style={null}
+      >
+        <Text>
+          <div
+            className="css-text-901oao"
+            dir="auto"
+          >
+            Hello!
+          </div>
+        </Text>
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-ifAKCX",
+                  "isStatic": true,
+                  "lastClassName": "fyLOy",
+                  "rules": Array [
+                    "
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto,
+    Ubuntu, \\"Helvetica Neue\\", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-ifAKCX",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-ifAKCX fyLOy"
+            >
+              deeply nested
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
 </SomeComponent>
 `;
