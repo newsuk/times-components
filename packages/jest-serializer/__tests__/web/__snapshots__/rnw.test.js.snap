@@ -1,31 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`The React Native Web serializer should effect children 1`] = `
-<style>
-.S1 {
-  font-size: 9px;
-}
-
-.S2 {
-  -ms-flex-negative: 1;
-  -ms-flex-positive: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-flex: 1;
-  -webkit-flex-basis: 0%;
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-basis: 0%;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-</style>
-
 <div
-  className="css-view-1dbjc4n r-flex-13awgt0 S2"
+  className="sc-htpNat VXuSA"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
 >
   <div
-    className="css-text-901oao r-fontSize-qqjak8 S1"
-    dir="auto"
+    className="sc-ifAKCX fyLOy"
+    style={
+      Object {
+        "fontSize": 9,
+      }
+    }
   >
     Hello World!
   </div>
@@ -33,54 +23,45 @@ exports[`The React Native Web serializer should effect children 1`] = `
 `;
 
 exports[`The React Native Web serializer should effect multiple children 1`] = `
-<style>
-.S1 {
-  font-size: 9px;
-}
-
-.S2 {
-  font-size: 10px;
-}
-
-.S3 {
-  font-size: 11px;
-}
-
-.S4 {
-  -ms-flex-negative: 1;
-  -ms-flex-positive: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-flex: 1;
-  -webkit-flex-basis: 0%;
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-basis: 0%;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-</style>
-
 <div
-  className="css-view-1dbjc4n r-backgroundColor-1g6456j r-flex-13awgt0 S4"
+  className="sc-htpNat VXuSA"
+  style={
+    Object {
+      "backgroundColor": "red",
+      "flex": 1,
+    }
+  }
 >
   <div
-    className="css-text-901oao r-fontSize-qqjak8 S1"
-    dir="auto"
+    className="sc-ifAKCX fyLOy"
+    style={
+      Object {
+        "fontSize": 9,
+      }
+    }
   >
     child 1
   </div>
   <div
-    className="css-text-901oao r-fontSize-10x49cs S2"
-    dir="auto"
+    className="sc-ifAKCX fyLOy"
+    style={
+      Object {
+        "fontSize": 10,
+      }
+    }
   >
     child 2
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="sc-htpNat VXuSA"
   >
     <div
-      className="css-text-901oao r-fontSize-1gkfh8e S3"
-      dir="auto"
+      className="sc-ifAKCX fyLOy"
+      style={
+        Object {
+          "fontSize": 11,
+        }
+      }
     >
       child 3
     </div>
@@ -89,95 +70,73 @@ exports[`The React Native Web serializer should effect multiple children 1`] = `
 `;
 
 exports[`The React Native Web serializer should effect render props 1`] = `
-<style>
-.S1 {
-  -ms-flex-negative: 1;
-  -ms-flex-positive: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-flex: 1;
-  -webkit-flex-basis: 0%;
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-basis: 0%;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-</style>
-
 <div
-  className="css-view-1dbjc4n r-flex-13awgt0 S1"
+  className="sc-htpNat VXuSA"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
 >
   <div
-    className="css-view-1dbjc4n"
+    className="sc-htpNat VXuSA"
   />
 </div>
 `;
 
 exports[`The React Native Web serializer should remove rnw-classnames and hoist the styles 1`] = `
-<style>
-.S1 {
-  color: rgba(255,0,0,1.00);
-  -ms-flex-negative: 1;
-  -ms-flex-positive: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-flex: 1;
-  -webkit-flex-basis: 0%;
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-basis: 0%;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-</style>
-
 <div
-  className="css-text-901oao r-color-howw7u r-flex-13awgt0 r-fontSize-1b43r93 S1"
-  dir="auto"
-  testFunc={[Function]}
+  className="sc-ifAKCX fyLOy"
+  style={
+    Object {
+      "color": "red",
+      "flex": 1,
+      "fontSize": 14,
+    }
+  }
 />
 `;
 
 exports[`The React Native Web serializer should squash identical styles 1`] = `
-<style>
-.S1 {
-  font-size: 10px;
-}
-
-.S2 {
-  -ms-flex-negative: 1;
-  -ms-flex-positive: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-flex: 1;
-  -webkit-flex-basis: 0%;
-  -webkit-flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-basis: 0%;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-</style>
-
 <div
-  className="css-view-1dbjc4n r-backgroundColor-1g6456j r-flex-13awgt0 S2"
+  className="sc-htpNat VXuSA"
+  style={
+    Object {
+      "backgroundColor": "red",
+      "flex": 1,
+    }
+  }
 >
   <div
-    className="css-text-901oao r-fontSize-10x49cs S1"
-    dir="auto"
+    className="sc-ifAKCX fyLOy"
+    style={
+      Object {
+        "fontSize": 10,
+      }
+    }
   >
     child 1
   </div>
   <div
-    className="css-text-901oao r-fontSize-10x49cs S1"
-    dir="auto"
+    className="sc-ifAKCX fyLOy"
+    style={
+      Object {
+        "fontSize": 10,
+      }
+    }
   >
     child 2
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="sc-htpNat VXuSA"
   >
     <div
-      className="css-text-901oao r-fontSize-10x49cs S1"
-      dir="auto"
+      className="sc-ifAKCX fyLOy"
+      style={
+        Object {
+          "fontSize": 10,
+        }
+      }
     >
       child 3
     </div>
