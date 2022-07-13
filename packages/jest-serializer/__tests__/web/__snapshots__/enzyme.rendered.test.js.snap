@@ -1,21 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`On web the Enzyme rendered serializer should render the expected snapshot 1`] = `
-<div
-  className="css-view-1dbjc4n"
+<styled.div
+  style={null}
 >
-  <styled.div>
-    <div
-      className="sc-ifAKCX fyLOy"
-    >
-      Hello!
-    </div>
-  </styled.div>
   <div
-    className="css-text-901oao"
-    dir="auto"
+    className="sc-htpNat VXuSA"
+    style={null}
   >
-    deeply nested
+    <styled.div>
+      <div
+        className="sc-ifAKCX fyLOy"
+      >
+        Hello!
+      </div>
+    </styled.div>
+    <styled.div>
+      <div
+        className="sc-ifAKCX fyLOy"
+      >
+        deeply nested
+      </div>
+    </styled.div>
   </div>
-</div>
+</styled.div>
 `;
