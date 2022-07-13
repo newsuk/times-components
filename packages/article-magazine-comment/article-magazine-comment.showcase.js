@@ -142,7 +142,7 @@ export default {
         });
       },
       name: "Magazine Comment - Error",
-      platform: "native",
+      platform: "web",
       type: "story"
     }
   ],

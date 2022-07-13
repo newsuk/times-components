@@ -1,8 +1,8 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 
 export const CenteredDecorator = storyFn => (
-  <View
+  <TcView
     style={{
       alignItems: "center",
       bottom: 0,
@@ -16,22 +16,22 @@ export const CenteredDecorator = storyFn => (
     }}
   >
     {storyFn()}
-  </View>
+  </TcView>
 );
 
 export const BarSpacingDecorator = storyFn => (
-  <View
+  <TcView
     style={{
       flex: 1,
       marginTop: 20
     }}
   >
     {storyFn()}
-  </View>
+  </TcView>
 );
 
 export const LateralSpacingDecorator = storyFn => (
-  <View
+  <TcView
     style={{
       flex: 1,
       marginLeft: 20,
@@ -39,11 +39,11 @@ export const LateralSpacingDecorator = storyFn => (
     }}
   >
     {storyFn()}
-  </View>
+  </TcView>
 );
 
 export const WhiteBgColorDecorator = storyFn => (
-  <View
+  <TcView
     style={{
       backgroundColor: "white",
       bottom: 0,
@@ -55,5 +55,5 @@ export const WhiteBgColorDecorator = storyFn => (
     }}
   >
     {storyFn()}
-  </View>
+  </TcView>
 );

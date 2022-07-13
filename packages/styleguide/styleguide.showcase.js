@@ -1,4 +1,4 @@
-import { ScrollView, Text, View } from "react-native";
+import { TcText, TcView } from "@times-components/utils";
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import timesStyleguide, {
@@ -20,13 +20,13 @@ const getStories = ({ colourMap, name }) => {
         />
       ));
 
-      return <View style={styles.display}>{colourBoxes}</View>;
+      return <TcView style={styles.display}>{colourBoxes}</TcView>;
     },
     name,
     type: "story"
   };
 
-  return [{ ...story, platform: "native" }, { ...story, platform: "web" }];
+  return [{ ...story, platform: "web" }];
 };
 
 const getBuilder = () => {
@@ -42,12 +42,12 @@ const getBuilder = () => {
 };
 
 const ColourBox = ({ name, hex }) => (
-  <View style={styles.container}>
-    <View style={{ ...styles.box, backgroundColor: hex }} />
-    <Text style={styles.text}>
+  <TcView style={styles.container}>
+    <TcView style={{ ...styles.box, backgroundColor: hex }} />
+    <TcText style={styles.text}>
       {name} - {hex}
-    </Text>
-  </View>
+    </TcText>
+  </TcView>
 );
 
 ColourBox.propTypes = {
@@ -58,15 +58,15 @@ ColourBox.propTypes = {
 const fontDisplayer = (fontFamily, phrase, fontSizes) =>
   Object.keys(fontSizes).map(fontSize => (
     <Fragment key={fontSize}>
-      <Text style={styles.subHeadline}>{fontSize}</Text>
-      <Text
+      <TcText style={styles.subHeadline}>{fontSize}</TcText>
+      <TcText
         style={[
           styles.showoffFonts,
           { fontFamily, fontSize: fontSizes[fontSize] }
         ]}
       >
         {phrase}
-      </Text>
+      </TcText>
     </Fragment>
   ));
 
@@ -75,85 +75,85 @@ const fontFixture = select => {
   const styleguide = timesStyleguide({ scale });
   const phrase = "The Quick Brown Fox Jumps Over the Lazy Dog";
   return (
-    <ScrollView>
-      <View style={styles.showoffFontsContainer}>
-        <Text style={styles.headline}>Body</Text>
+    <TcView>
+      <TcView style={styles.showoffFontsContainer}>
+        <TcText style={styles.headline}>Body</TcText>
         {fontDisplayer(fonts.body, phrase, styleguide.fontSizes)}
-      </View>
-      <View style={styles.showoffFontsContainer}>
-        <Text style={styles.headline}>Body Regular</Text>
-        <Text>
+      </TcView>
+      <TcView style={styles.showoffFontsContainer}>
+        <TcText style={styles.headline}>Body Regular</TcText>
+        <TcText>
           Used for the body copy of articles or as the teaser copy on article
           links.
-        </Text>
+        </TcText>
         {fontDisplayer(fonts.bodyRegular, phrase, styleguide.fontSizes)}
-      </View>
-      <View style={styles.showoffFontsContainer}>
-        <Text style={styles.headline}>Body Regular Small Caps</Text>
-        <Text>
+      </TcView>
+      <TcView style={styles.showoffFontsContainer}>
+        <TcText style={styles.headline}>Body Regular Small Caps</TcText>
+        <TcText>
           Always used as a lowercase font, it is typically used to support the
           headline font. It’s used in various different places e.g. Journalist
           pages for the Journalist job title, article flags and show more
           buttons on the homepage.
-        </Text>
+        </TcText>
         {fontDisplayer(
           fonts.bodyRegularSmallCaps,
           phrase.toLowerCase(),
           styleguide.fontSizes
         )}
-      </View>
-      <View style={styles.showoffFontsContainer}>
-        <Text style={styles.headline}>Headline</Text>
-        <Text>
+      </TcView>
+      <TcView style={styles.showoffFontsContainer}>
+        <TcText style={styles.headline}>Headline</TcText>
+        <TcText>
           Used as the headline for components and articles across the site.
-        </Text>
+        </TcText>
         {fontDisplayer(fonts.headline, phrase, styleguide.fontSizes)}
-      </View>
-      <View style={styles.showoffFontsContainer}>
-        <Text style={styles.headline}>Headline Regular</Text>
-        <Text>
+      </TcView>
+      <TcView style={styles.showoffFontsContainer}>
+        <TcText style={styles.headline}>Headline Regular</TcText>
+        <TcText>
           Used primarily to style subheadings for components and stand firsts on
           the homepage and articles.
-        </Text>
+        </TcText>
         {fontDisplayer(fonts.headlineRegular, phrase, styleguide.fontSizes)}
-      </View>
-      <View style={styles.showoffFontsContainer}>
-        <Text style={styles.headline}>Supporting</Text>
-        <Text>
+      </TcView>
+      <TcView style={styles.showoffFontsContainer}>
+        <TcText style={styles.headline}>Supporting</TcText>
+        <TcText>
           Used as a supporting typeface in a variety of places including
           messaging banners, buttons, links, homepage labels and tags.
-        </Text>
+        </TcText>
         {fontDisplayer(fonts.supporting, phrase, styleguide.fontSizes)}
-      </View>
-      <View style={styles.showoffFontsContainer}>
-        <Text style={styles.headline}>
+      </TcView>
+      <TcView style={styles.showoffFontsContainer}>
+        <TcText style={styles.headline}>
           Style Magazine (Century Gothic Bold)
-        </Text>
-        <Text>
+        </TcText>
+        <TcText>
           Used for theme specific headlines, drop caps and pull-quotes in the
           Style magazine
-        </Text>
+        </TcText>
         {fontDisplayer(fonts.styleMagazine, phrase, styleguide.fontSizes)}
-      </View>
-      <View style={styles.showoffFontsContainer}>
-        <Text style={styles.headline}>Culture Magazine (Flama Bold)</Text>
-        <Text>
+      </TcView>
+      <TcView style={styles.showoffFontsContainer}>
+        <TcText style={styles.headline}>Culture Magazine (Flama Bold)</TcText>
+        <TcText>
           Used for theme specific headlines, drop caps and pull-quotes in the
           Culture magazine
-        </Text>
+        </TcText>
         {fontDisplayer(fonts.cultureMagazine, phrase, styleguide.fontSizes)}
-      </View>
-      <View style={styles.showoffFontsContainer}>
-        <Text style={styles.headline}>
+      </TcView>
+      <TcView style={styles.showoffFontsContainer}>
+        <TcText style={styles.headline}>
           Sunday Times Magazine (Tiempos Headline Bold)
-        </Text>
-        <Text>
+        </TcText>
+        <TcText>
           Used for theme specific headlines, drop caps and pull-quotes in the
           Sunday Times Magazine
-        </Text>
+        </TcText>
         {fontDisplayer(fonts.stMagazine, phrase, styleguide.fontSizes)}
-      </View>
-    </ScrollView>
+      </TcView>
+    </TcView>
   );
 };
 
@@ -172,9 +172,9 @@ export default {
     {
       component: () => (
         <Animations.FadeIn>
-          <View style={styles.animationBox}>
-            <Text style={styles.text}>Fade In</Text>
-          </View>
+          <TcView style={styles.animationBox}>
+            <TcText style={styles.text}>Fade In</TcText>
+          </TcView>
         </Animations.FadeIn>
       ),
       name: "Animations",

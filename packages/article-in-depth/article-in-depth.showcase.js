@@ -150,7 +150,7 @@ export default {
         });
       },
       name: "In Depth - Error",
-      platform: "native",
+      platform: "web",
       type: "story"
     }
   ],

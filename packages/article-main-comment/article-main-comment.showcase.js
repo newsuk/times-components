@@ -147,7 +147,7 @@ export default {
         });
       },
       name: "Main Comment - Error",
-      platform: "native",
+      platform: "web",
       type: "story"
     }
   ],

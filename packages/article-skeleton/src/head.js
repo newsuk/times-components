@@ -244,6 +244,7 @@ function Head({
     url
   } = article;
 
+  const { brightcoveAccountId, brightcoveVideoId } = leadAsset || {};
   const liveBlogArticleExpiry = getIsLiveBlogExpiryTime(article.expirableFlags);
   const isLiveBlogArticle = getIsLiveBlog(article.expirableFlags);
   const publication = PUBLICATION_NAMES[publicationName];
@@ -344,7 +345,7 @@ function Head({
           Array.isArray(descriptionMarkup) && descriptionMarkup.length
             ? renderTreeAsText({ children: descriptionMarkup })
             : seoDescription || leadAsset.title || title,
-        contentUrl: url
+        contentUrl: `https://players.brightcove.net/${brightcoveAccountId}/default_default/index.html?videoId=${brightcoveVideoId}`
       }
     : null;
 

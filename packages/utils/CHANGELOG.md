@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.14.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.13.0...@times-components/utils@6.14.0) (2022-07-12)
+
+
+### Features
+
+* **TDP-1713:** remove react native from showcase ([#3025](https://github.com/newsuk/times-components/issues/3025)) ([694e356](https://github.com/newsuk/times-components/commit/694e356fe262d795626a1ecb714556dc2df8fc89))
+
+
+
+
+
+# [6.13.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.12.2...@times-components/utils@6.13.0) (2022-07-11)
+
+
+### Features
+
+* **TDP-1696:** add TcFlatlist component, refactor slice-layout ([#3022](https://github.com/newsuk/times-components/issues/3022)) ([32dc942](https://github.com/newsuk/times-components/commit/32dc942c7e0895453d7c80d2e30b6bcf466c9bdf))
+
+
+
+
+
+## [6.12.2](https://github.com/newsuk/times-components/compare/@times-components/utils@6.12.1...@times-components/utils@6.12.2) (2022-07-11)
+
+
+### Bug Fixes
+
+* **TDP-1704:** Remove react-native from jest-serializer package ([#3015](https://github.com/newsuk/times-components/issues/3015)) ([5b6da8f](https://github.com/newsuk/times-components/commit/5b6da8f1392c3b42a9c0944d44be3d9ed3e7db2f))
+
+
+
+
+
 ## [6.12.1](https://github.com/newsuk/times-components/compare/@times-components/utils@6.12.0...@times-components/utils@6.12.1) (2022-05-16)
 
 **Note:** Version bump only for package @times-components/utils

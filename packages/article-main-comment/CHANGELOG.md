@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.51.11](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.51.10...@times-components/article-main-comment@2.51.11) (2022-07-13)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.51.10](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.51.9...@times-components/article-main-comment@2.51.10) (2022-07-13)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.51.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.51.8...@times-components/article-main-comment@2.51.9) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.51.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.51.7...@times-components/article-main-comment@2.51.8) (2022-07-12)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.51.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.51.6...@times-components/article-main-comment@2.51.7) (2022-07-11)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.51.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.51.5...@times-components/article-main-comment@2.51.6) (2022-07-11)
+
+
+### Bug Fixes
+
+* **TDP-1704:** Remove react-native from jest-serializer package ([#3015](https://github.com/newsuk/times-components/issues/3015)) ([5b6da8f](https://github.com/newsuk/times-components/commit/5b6da8f1392c3b42a9c0944d44be3d9ed3e7db2f))
+
+
+
+
+
 ## [2.51.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.51.4...@times-components/article-main-comment@2.51.5) (2022-07-11)
 
 **Note:** Version bump only for package @times-components/article-main-comment

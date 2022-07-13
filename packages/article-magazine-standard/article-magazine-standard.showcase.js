@@ -141,7 +141,7 @@ export default {
         });
       },
       name: "Magazine Standard - Error",
-      platform: "native",
+      platform: "web",
       type: "story"
     }
   ],
