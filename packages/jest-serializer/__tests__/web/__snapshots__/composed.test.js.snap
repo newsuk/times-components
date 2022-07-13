@@ -2,16 +2,12 @@
 
 exports[`The serializers should minimalise and create styles 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="sc-ifAKCX fyLOy"
   style={
-    Array [
-      Object {
-        "color": "red",
-      },
-      Object {
-        "padding": 1,
-      },
-    ]
+    Object {
+      "color": "red",
+      "padding": 1,
+    }
   }
 />
 `;
