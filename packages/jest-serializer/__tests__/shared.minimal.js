@@ -1,5 +1,5 @@
-import { TcText, TcView } from "@times-components/utils";
 import React from "react";
+import { TcText, TcView } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
