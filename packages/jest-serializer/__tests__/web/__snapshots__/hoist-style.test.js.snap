@@ -3,31 +3,49 @@
 exports[`hoist-style should hoist a style and leave existing props untouched 1`] = `
 <style>
 .IS1 {
-  color: rgba(255,0,0,1.00);
+  0: [object Object];
+  1: [object Object];
+}
+
+.IS2 {
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
-<div
-  className="css-text-901oao IS1"
-  dir="auto"
+<styled.div
+  className="IS2"
   foo="bar"
 >
-  Some text
-</div>
+  <div
+    className="sc-ifAKCX fyLOy IS1"
+  >
+    Some text
+  </div>
+</styled.div>
 `;
 
 exports[`hoist-style should hoist a style as well as an rnw class 1`] = `
 <style>
 .IS1 {
-  color: rgba(255,0,0,1.00);
+  0: [object Object];
+  1: [object Object];
+}
+
+.IS2 {
+  0: [object Object];
+  1: [object Object];
 }
 </style>
 
-<div
-  className="css-text-901oao IS1"
-  dir="auto"
+<styled.div
+  className="IS2"
   foo="bar"
 >
-  Some text
-</div>
+  <div
+    className="sc-ifAKCX fyLOy IS1"
+  >
+    Some text
+  </div>
+</styled.div>
 `;

@@ -2,7 +2,17 @@
 
 exports[`The minimal serializer should for web not remove className 1`] = `
 <div
-  className="css-text-901oao r-color-howw7u r-padding-ub6tad"
+  className="sc-ifAKCX fyLOy"
+  style={
+    Array [
+      Object {
+        "color": "red",
+      },
+      Object {
+        "padding": 1,
+      },
+    ]
+  }
 />
 `;
 

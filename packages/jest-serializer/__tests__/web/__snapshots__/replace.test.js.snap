@@ -2,104 +2,513 @@
 
 exports[`The replace serializer should provide a helper to remove native elements from a web tree 1`] = `
 <WrapperComponent>
-  <div
-    className="css-view-1dbjc4n"
-  >
-    <ChildComponent
-      text="Hello world!"
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "VXuSA",
+            "rules": Array [
+              "
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
       <div
-        className="css-text-901oao"
-        dir="auto"
+        className="sc-htpNat VXuSA"
       >
-        Hello world!
+        <ChildComponent
+          text="Hello world!"
+        >
+          <styled.div>
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "sc-ifAKCX",
+                    "isStatic": true,
+                    "lastClassName": "fyLOy",
+                    "rules": Array [
+                      "
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto,
+    Ubuntu, \\"Helvetica Neue\\", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+",
+                    ],
+                  },
+                  "displayName": "styled.div",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "sc-ifAKCX",
+                  "target": "div",
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
+            >
+              <div
+                className="sc-ifAKCX fyLOy"
+              >
+                Hello world!
+              </div>
+            </StyledComponent>
+          </styled.div>
+        </ChildComponent>
       </div>
-    </ChildComponent>
-  </div>
+    </StyledComponent>
+  </styled.div>
 </WrapperComponent>
 `;
 
 exports[`The replace serializer should provide a helper to return the child of an element only 1`] = `
 <WrapperComponent>
-  <View>
-    <div
-      className="css-view-1dbjc4n"
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "VXuSA",
+            "rules": Array [
+              "
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <Text>
-        <div
-          className="css-text-901oao"
-          dir="auto"
-        >
-          Hello world!
-        </div>
-      </Text>
-    </div>
-  </View>
+      <div
+        className="sc-htpNat VXuSA"
+      >
+        <styled.div>
+          <StyledComponent
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-ifAKCX",
+                  "isStatic": true,
+                  "lastClassName": "fyLOy",
+                  "rules": Array [
+                    "
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto,
+    Ubuntu, \\"Helvetica Neue\\", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+",
+                  ],
+                },
+                "displayName": "styled.div",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-ifAKCX",
+                "target": "div",
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+              }
+            }
+            forwardedRef={null}
+          >
+            <div
+              className="sc-ifAKCX fyLOy"
+            >
+              Hello world!
+            </div>
+          </StyledComponent>
+        </styled.div>
+      </div>
+    </StyledComponent>
+  </styled.div>
 </WrapperComponent>
 `;
 
 exports[`The replace serializer should provide a helper to return the children of an element only 1`] = `
-Array [
-  <ChildComponent
-    text="Hello world1!"
+<styled.div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": true,
+          "lastClassName": "VXuSA",
+          "rules": Array [
+            "
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+",
+          ],
+        },
+        "displayName": "styled.div",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
   >
-    <Text>
-      Hello world1!
-    </Text>
-  </ChildComponent>,
-  <ChildComponent
-    text="Hello world2!"
-  >
-    <Text>
-      Hello world2!
-    </Text>
-  </ChildComponent>,
-  <ChildComponent
-    text="Hello world3!"
-  >
-    <Text>
-      Hello world3!
-    </Text>
-  </ChildComponent>,
-]
+    <ChildComponent
+      text="Hello world1!"
+    >
+      <styled.div>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-ifAKCX",
+                "isStatic": true,
+                "lastClassName": "fyLOy",
+                "rules": Array [
+                  "
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto,
+    Ubuntu, \\"Helvetica Neue\\", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-ifAKCX",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          Hello world1!
+        </StyledComponent>
+      </styled.div>
+    </ChildComponent>
+    <ChildComponent
+      text="Hello world2!"
+    >
+      <styled.div>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-ifAKCX",
+                "isStatic": true,
+                "lastClassName": "fyLOy",
+                "rules": Array [
+                  "
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto,
+    Ubuntu, \\"Helvetica Neue\\", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-ifAKCX",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          Hello world2!
+        </StyledComponent>
+      </styled.div>
+    </ChildComponent>
+    <ChildComponent
+      text="Hello world3!"
+    >
+      <styled.div>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-ifAKCX",
+                "isStatic": true,
+                "lastClassName": "fyLOy",
+                "rules": Array [
+                  "
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto,
+    Ubuntu, \\"Helvetica Neue\\", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-ifAKCX",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
+        >
+          Hello world3!
+        </StyledComponent>
+      </styled.div>
+    </ChildComponent>
+  </StyledComponent>
+</styled.div>
 `;
 
 exports[`The replace serializer should provide a helper to return the component with props and no children 1`] = `
 <WrapperComponent>
-  <View>
-    <div
-      className="css-view-1dbjc4n"
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "VXuSA",
+            "rules": Array [
+              "
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <ChildComponent
-        text="Hello world!"
-      />
-    </div>
-  </View>
+      <div
+        className="sc-htpNat VXuSA"
+      >
+        <ChildComponent
+          text="Hello world!"
+        />
+      </div>
+    </StyledComponent>
+  </styled.div>
 </WrapperComponent>
 `;
 
 exports[`The replace serializer should replace the expected component 1`] = `
 <WrapperComponent>
-  <View>
-    <div
-      className="css-view-1dbjc4n"
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "VXuSA",
+            "rules": Array [
+              "
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
     >
-      <Placeholder>
-        <Text>
-          Replaced
-        </Text>
-      </Placeholder>
-    </div>
-  </View>
+      <div
+        className="sc-htpNat VXuSA"
+      >
+        <Placeholder>
+          <ForwardRef(styled.div)>
+            Replaced
+          </ForwardRef(styled.div)>
+        </Placeholder>
+      </div>
+    </StyledComponent>
+  </styled.div>
 </WrapperComponent>
 `;
 
 exports[`The replace serializer should replace the expected component completely 1`] = `
 <WrapperComponent>
-  <View>
-    <div
-      className="css-view-1dbjc4n"
-    />
-  </View>
+  <styled.div>
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-htpNat",
+            "isStatic": true,
+            "lastClassName": "VXuSA",
+            "rules": Array [
+              "
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+",
+            ],
+          },
+          "displayName": "styled.div",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-htpNat",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <div
+        className="sc-htpNat VXuSA"
+      />
+    </StyledComponent>
+  </styled.div>
 </WrapperComponent>
 `;

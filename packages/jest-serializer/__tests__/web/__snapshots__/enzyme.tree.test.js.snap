@@ -10,14 +10,50 @@ exports[`On web the Enzyme tree serializer should render the expected snapshot 1
     <div
       className="css-view-1dbjc4n"
     >
-      <Text>
-        <div
-          className="css-text-901oao"
-          dir="auto"
+      <styled.div>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "sc-ifAKCX",
+                "isStatic": true,
+                "lastClassName": "fyLOy",
+                "rules": Array [
+                  "
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto,
+    Ubuntu, \\"Helvetica Neue\\", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+",
+                ],
+              },
+              "displayName": "styled.div",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "sc-ifAKCX",
+              "target": "div",
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
         >
-          Hello!
-        </div>
-      </Text>
+          <div
+            className="sc-ifAKCX fyLOy"
+          >
+            Hello!
+          </div>
+        </StyledComponent>
+      </styled.div>
       <Text>
         <div
           className="css-text-901oao"
