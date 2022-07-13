@@ -1,14 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { AppRegistry } from "react-native-web";
 import { TcText, TcView } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
-import { addSerializers, rnw } from "../../src/index";
 
-describe("The React Native Web serializer should", () => {
+describe("The Web serializer should", () => {
   it("remove rnw-classnames and hoist the styles", () => {
-    addSerializers(expect, rnw(AppRegistry, ["color", "flex"]));
-
     const styles = {
       test: {
         color: "red",
@@ -24,8 +20,6 @@ describe("The React Native Web serializer should", () => {
   });
 
   it("effect children", () => {
-    addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
-
     const styles = {
       child: {
         fontSize: 9
@@ -46,8 +40,6 @@ describe("The React Native Web serializer should", () => {
   });
 
   it("effect multiple children", () => {
-    addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
-
     const styles = {
       child1: {
         fontSize: 9
@@ -79,8 +71,6 @@ describe("The React Native Web serializer should", () => {
   });
 
   it("squash identical styles", () => {
-    addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
-
     const styles = {
       child1: {
         fontSize: 10
@@ -112,8 +102,6 @@ describe("The React Native Web serializer should", () => {
   });
 
   it("effect render props", () => {
-    addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
-
     const styles = {
       child: {
         fontSize: 9

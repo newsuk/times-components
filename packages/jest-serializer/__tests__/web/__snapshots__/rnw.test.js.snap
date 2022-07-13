@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`The React Native Web serializer should effect children 1`] = `
+exports[`The Web serializer should effect children 1`] = `
 <div
   className="sc-htpNat VXuSA"
   style={
@@ -22,7 +22,7 @@ exports[`The React Native Web serializer should effect children 1`] = `
 </div>
 `;
 
-exports[`The React Native Web serializer should effect multiple children 1`] = `
+exports[`The Web serializer should effect multiple children 1`] = `
 <div
   className="sc-htpNat VXuSA"
   style={
@@ -69,7 +69,7 @@ exports[`The React Native Web serializer should effect multiple children 1`] = `
 </div>
 `;
 
-exports[`The React Native Web serializer should effect render props 1`] = `
+exports[`The Web serializer should effect render props 1`] = `
 <div
   className="sc-htpNat VXuSA"
   style={
@@ -84,7 +84,7 @@ exports[`The React Native Web serializer should effect render props 1`] = `
 </div>
 `;
 
-exports[`The React Native Web serializer should remove rnw-classnames and hoist the styles 1`] = `
+exports[`The Web serializer should remove rnw-classnames and hoist the styles 1`] = `
 <div
   className="sc-ifAKCX fyLOy"
   style={
@@ -97,7 +97,7 @@ exports[`The React Native Web serializer should remove rnw-classnames and hoist 
 />
 `;
 
-exports[`The React Native Web serializer should squash identical styles 1`] = `
+exports[`The Web serializer should squash identical styles 1`] = `
 <div
   className="sc-htpNat VXuSA"
   style={
