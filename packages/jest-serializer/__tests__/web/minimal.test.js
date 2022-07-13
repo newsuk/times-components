@@ -18,7 +18,7 @@ describe("The minimal serializer should", () => {
         }
       };
 
-      const component = <TcText style={[styles.colored, styles.padded]} />;
+      const component = <TcText style={{...styles.colored, ...styles.padded}} />;
       const tree = renderer.create(component);
 
       expect(tree.toJSON()).toMatchSnapshot();

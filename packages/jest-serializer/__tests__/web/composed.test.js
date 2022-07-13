@@ -30,7 +30,7 @@ describe("The serializers should", () => {
     const component = (
       <TcText
         func={() => {}}
-        style={[styles.colored, styles.padded]}
+        style={{...styles.colored, ...styles.padded}}
         undef={undefined}
       />
     );
