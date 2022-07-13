@@ -24,7 +24,7 @@ describe("hoist-style should", () => {
     addSerializers(expect, enzymeRenderedSerializer(), hoistStyle);
 
     const wrapper = mount(
-      <TcText foo="bar" style={{...styles.text, color: "red" }}>
+      <TcText foo="bar" style={{ ...styles.text, color: "red" }}>
         Some text
       </TcText>
     );
@@ -43,7 +43,7 @@ describe("hoist-style should", () => {
     );
 
     const wrapper = mount(
-      <TcText foo="bar" style={{...styles.text, color: "red" }}>
+      <TcText foo="bar" style={{ ...styles.text, color: "red" }}>
         Some text
       </TcText>
     );
