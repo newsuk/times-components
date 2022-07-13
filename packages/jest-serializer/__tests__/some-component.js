@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 import React from "react";
 import { TcText, TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
@@ -15,7 +16,7 @@ SomeComponent.propTypes = {
     PropTypes.arrayOf(PropTypes.element)
   ]).isRequired,
   style: PropTypes.object
-}
+};
 
 SomeComponent.defaultProps = {
   style: null
