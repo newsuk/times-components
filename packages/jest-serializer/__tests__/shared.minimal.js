@@ -38,7 +38,7 @@ export default () => {
   });
 
   it("remove functions as props", () => {
-    const Dummy = props => <Text {...props} />;
+    const Dummy = props => <TcText {...props} />;
     const DummyRenderer = () => (
       <TcView>
         <Dummy testFunc={() => 42} />

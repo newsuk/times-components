@@ -14,7 +14,7 @@ describe("The serializers should", () => {
       expect,
       compose(
         stylePrinter,
-        minimalWebTransform,
+        minimalWebTransform
       )
     );
 
