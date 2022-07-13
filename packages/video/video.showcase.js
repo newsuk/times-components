@@ -120,7 +120,7 @@ export default {
         </div>
       ),
       name: "100% width and height",
-      platform: "native",
+      platform: "web",
       type: "story"
     },
     {

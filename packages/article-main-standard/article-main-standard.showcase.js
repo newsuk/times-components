@@ -136,7 +136,7 @@ export default {
         });
       },
       name: "Error",
-      platform: "native",
+      platform: "web",
       type: "story"
     }
   ],

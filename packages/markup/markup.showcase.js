@@ -1,7 +1,7 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-env browser */
 import React from "react";
-import { View, Text } from "react-native";
+import { TcText, TcView } from "@times-components/utils";
 import { CenteredDecorator } from "@times-components/storybook";
 import { fonts } from "@times-components/ts-styleguide";
 import renderTrees, { renderTree } from "@times-components/markup-forest";
@@ -18,12 +18,12 @@ export default {
   children: [
     {
       decorator: CenteredDecorator,
-      platform: "native",
+      platform: "web",
       type: "decorator"
     },
     {
       component: () => (
-        <View>{renderTrees(multiParagraph, coreRenderers)}</View>
+        <TcView>{renderTrees(multiParagraph, coreRenderers)}</TcView>
       ),
       name: "Multiple paragraphs",
       type: "story"
@@ -34,15 +34,15 @@ export default {
           ...coreRenderers,
           block(key, attributes, renderedChildren) {
             return {
-              element: <View key={key}>{renderedChildren}</View>
+              element: <TcView key={key}>{renderedChildren}</TcView>
             };
           },
           link(key, attributes, renderedChildren) {
             return {
               element: (
-                <Text href={attributes.href} key={key}>
+                <TcText href={attributes.href} key={key}>
                   {renderedChildren}
-                </Text>
+                </TcText>
               )
             };
           }
@@ -51,34 +51,36 @@ export default {
       type: "story"
     },
     {
-      component: () => <Text>{renderTrees(bio, coreRenderers)}</Text>,
+      component: () => <TcText>{renderTrees(bio, coreRenderers)}</TcText>,
       name: "Biography",
       type: "story"
     },
     {
-      component: () => <View>{renderTrees(ratings, coreRenderers)}</View>,
+      component: () => <TcView>{renderTrees(ratings, coreRenderers)}</TcView>,
       name: "Ratings",
       type: "story"
     },
     {
-      component: () => <View>{renderTrees(subscript, coreRenderers)}</View>,
+      component: () => <TcView>{renderTrees(subscript, coreRenderers)}</TcView>,
       name: "Subscript",
       type: "story"
     },
     {
-      component: () => <View>{renderTrees(superscript, coreRenderers)}</View>,
+      component: () => (
+        <TcView>{renderTrees(superscript, coreRenderers)}</TcView>
+      ),
       name: "Superscript",
       type: "story"
     },
     {
       component: () => (
-        <View>
+        <TcView>
           {renderTrees(multiParagraph, {
             ...coreRenderers,
             paragraph(key, attributes, children) {
               return {
                 element: (
-                  <Text
+                  <TcText
                     key={key}
                     style={{
                       color: "red",
@@ -87,12 +89,12 @@ export default {
                     }}
                   >
                     {children}
-                  </Text>
+                  </TcText>
                 )
               };
             }
           })}
-        </View>
+        </TcView>
       ),
       name: "Multiple children with styling",
       type: "story"
