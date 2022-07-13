@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-in-depth",
-  "version": "3.54.10",
+  "version": "3.54.11",
   "description": "In Depth Article Template",
   "main": "dist/article-in-depth",
   "dev": "src/article-in-depth",
@@ -61,7 +61,7 @@
     "@times-components/article-byline": "3.7.27",
     "@times-components/article-label": "2.8.18",
     "@times-components/article-lead-asset": "1.8.17",
-    "@times-components/article-skeleton": "1.85.10",
+    "@times-components/article-skeleton": "1.85.11",
     "@times-components/caption": "3.1.4",
     "@times-components/context": "1.9.1",
     "@times-components/date-publication": "0.23.1",

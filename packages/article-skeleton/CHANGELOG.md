@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.85.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.10...@times-components/article-skeleton@1.85.11) (2022-07-13)
+
+
+### Bug Fixes
+
+* **TDP-398:** Added embedUrl ([#2803](https://github.com/newsuk/times-components/issues/2803)) ([60b9c1d](https://github.com/newsuk/times-components/commit/60b9c1de5e5c5f0e00dec87f9672eca6e73b9ec8))
+
+
+
+
+
 ## [1.85.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.9...@times-components/article-skeleton@1.85.10) (2022-07-13)
 
 **Note:** Version bump only for package @times-components/article-skeleton
