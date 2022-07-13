@@ -66,7 +66,9 @@ export default {
       type: "story"
     },
     {
-      component: () => <TcView>{renderTrees(superscript, coreRenderers)}</TcView>,
+      component: () => (
+        <TcView>{renderTrees(superscript, coreRenderers)}</TcView>
+      ),
       name: "Superscript",
       type: "story"
     },

@@ -1,4 +1,3 @@
-import { Text, View } from "react-native";
 import { TcText, TcView } from "@times-components/utils";
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
