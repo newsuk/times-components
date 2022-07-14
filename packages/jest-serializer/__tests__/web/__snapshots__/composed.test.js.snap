@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`The serializers should minimalise and create styles 1`] = `
-<style>
-.S1 {
-  color: rgba(255,0,0,1.00);
-}
-</style>
-
 <div
-  className="css-text-901oao r-color-howw7u r-padding-ub6tad S1"
+  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  style={
+    Object {
+      "color": "red",
+      "padding": 1,
+    }
+  }
 />
 `;

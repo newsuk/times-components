@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The Web serializer should effect children 1`] = `
+<div
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <div
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    style={
+      Object {
+        "fontSize": 9,
+      }
+    }
+  >
+    Hello World!
+  </div>
+</div>
+`;
+
+exports[`The Web serializer should effect multiple children 1`] = `
+<div
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  style={
+    Object {
+      "backgroundColor": "red",
+      "flex": 1,
+    }
+  }
+>
+  <div
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    style={
+      Object {
+        "fontSize": 9,
+      }
+    }
+  >
+    child 1
+  </div>
+  <div
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    style={
+      Object {
+        "fontSize": 10,
+      }
+    }
+  >
+    child 2
+  </div>
+  <div
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+  >
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      style={
+        Object {
+          "fontSize": 11,
+        }
+      }
+    >
+      child 3
+    </div>
+  </div>
+</div>
+`;
+
+exports[`The Web serializer should effect render props 1`] = `
+<div
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <div
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+  />
+</div>
+`;
+
+exports[`The Web serializer should remove rnw-classnames and hoist the styles 1`] = `
+<div
+  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  style={
+    Object {
+      "color": "red",
+      "flex": 1,
+      "fontSize": 14,
+    }
+  }
+/>
+`;
+
+exports[`The Web serializer should squash identical styles 1`] = `
+<div
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  style={
+    Object {
+      "backgroundColor": "red",
+      "flex": 1,
+    }
+  }
+>
+  <div
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    style={
+      Object {
+        "fontSize": 10,
+      }
+    }
+  >
+    child 1
+  </div>
+  <div
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    style={
+      Object {
+        "fontSize": 10,
+      }
+    }
+  >
+    child 2
+  </div>
+  <div
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+  >
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      style={
+        Object {
+          "fontSize": 10,
+        }
+      }
+    >
+      child 3
+    </div>
+  </div>
+</div>
+`;

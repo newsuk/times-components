@@ -1,45 +1,38 @@
 /* eslint-disable react/prop-types */
-
 import React from "react";
-import { AppRegistry } from "react-native-web";
-import { StyleSheet, Text, View } from "react-native";
+import { TcText, TcView } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
-import { addSerializers, rnw } from "../../src/index";
 
-describe("The React Native Web serializer should", () => {
+describe("The Web serializer should", () => {
   it("remove rnw-classnames and hoist the styles", () => {
-    addSerializers(expect, rnw(AppRegistry, ["color", "flex"]));
-
-    const styles = StyleSheet.create({
+    const styles = {
       test: {
         color: "red",
         flex: 1,
         fontSize: 14
       }
-    });
+    };
 
-    const component = <Text style={styles.test} testFunc={() => {}} />;
+    const component = <TcText style={styles.test} testFunc={() => {}} />;
     const testRenderer = TestRenderer.create(component);
 
     expect(testRenderer).toMatchSnapshot();
   });
 
   it("effect children", () => {
-    addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
-
-    const styles = StyleSheet.create({
+    const styles = {
       child: {
         fontSize: 9
       },
       parent: {
         flex: 1
       }
-    });
+    };
 
     const component = (
-      <View style={styles.parent}>
-        <Text style={styles.child}>Hello World!</Text>
-      </View>
+      <TcView style={styles.parent}>
+        <TcText style={styles.child}>Hello World!</TcText>
+      </TcView>
     );
     const testRenderer = TestRenderer.create(component);
 
@@ -47,9 +40,7 @@ describe("The React Native Web serializer should", () => {
   });
 
   it("effect multiple children", () => {
-    addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
-
-    const styles = StyleSheet.create({
+    const styles = {
       child1: {
         fontSize: 9
       },
@@ -63,16 +54,16 @@ describe("The React Native Web serializer should", () => {
         backgroundColor: "red",
         flex: 1
       }
-    });
+    };
 
     const component = (
-      <View style={styles.parent}>
-        <Text style={styles.child1}>child 1</Text>
-        <Text style={styles.child2}>child 2</Text>
-        <View>
-          <Text style={styles.child3}>child 3</Text>
-        </View>
-      </View>
+      <TcView style={styles.parent}>
+        <TcText style={styles.child1}>child 1</TcText>
+        <TcText style={styles.child2}>child 2</TcText>
+        <TcView>
+          <TcText style={styles.child3}>child 3</TcText>
+        </TcView>
+      </TcView>
     );
     const testRenderer = TestRenderer.create(component);
 
@@ -80,9 +71,7 @@ describe("The React Native Web serializer should", () => {
   });
 
   it("squash identical styles", () => {
-    addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
-
-    const styles = StyleSheet.create({
+    const styles = {
       child1: {
         fontSize: 10
       },
@@ -96,16 +85,16 @@ describe("The React Native Web serializer should", () => {
         backgroundColor: "red",
         flex: 1
       }
-    });
+    };
 
     const component = (
-      <View style={styles.parent}>
-        <Text style={styles.child1}>child 1</Text>
-        <Text style={styles.child2}>child 2</Text>
-        <View>
-          <Text style={styles.child3}>child 3</Text>
-        </View>
-      </View>
+      <TcView style={styles.parent}>
+        <TcText style={styles.child1}>child 1</TcText>
+        <TcText style={styles.child2}>child 2</TcText>
+        <TcView>
+          <TcText style={styles.child3}>child 3</TcText>
+        </TcView>
+      </TcView>
     );
     const testRenderer = TestRenderer.create(component);
 
@@ -113,23 +102,21 @@ describe("The React Native Web serializer should", () => {
   });
 
   it("effect render props", () => {
-    addSerializers(expect, rnw(AppRegistry, ["flex", "fontSize"]));
-
-    const styles = StyleSheet.create({
+    const styles = {
       child: {
         fontSize: 9
       },
       parent: {
         flex: 1
       }
-    });
+    };
 
-    const Container = ({ renderProp }) => <View prop={renderProp} />;
+    const Container = ({ renderProp }) => <TcView prop={renderProp} />;
 
     const component = (
-      <View style={styles.parent}>
-        <Container renderProp={<Text style={styles.child} />} />
-      </View>
+      <TcView style={styles.parent}>
+        <Container renderProp={<TcText style={styles.child} />} />
+      </TcView>
     );
     const testRenderer = TestRenderer.create(component);
 

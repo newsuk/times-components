@@ -1,5 +1,5 @@
-import { View, Text } from "react-native";
 import React from "react";
+import { TcText, TcView } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
 import Enzyme, { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
@@ -8,28 +8,28 @@ Enzyme.configure({ adapter: new Adapter() });
 
 export default () => {
   it("transform render props", () => {
-    const Foo = () => <Text>World</Text>;
+    const Foo = () => <TcText>World</TcText>;
     const PropRenderer = () => (
       <Foo
         prop={
-          <Text dir="dir" href="href">
+          <TcText dir="dir" href="href">
             Bar
-          </Text>
+          </TcText>
         }
       />
     );
 
-    const wrapper = shallow(<PropRenderer prop={<Text>Hello</Text>} />);
+    const wrapper = shallow(<PropRenderer prop={<TcText>Hello</TcText>} />);
 
     expect(wrapper).toMatchSnapshot();
   });
 
   it("remove undefined props", () => {
-    const Dummy = props => <Text {...props} />;
+    const Dummy = props => <TcText {...props} />;
     const DummyRenderer = () => (
-      <View>
+      <TcView>
         <Dummy False={false} Null={null} Undef={undefined} Zero={0} />
-      </View>
+      </TcView>
     );
 
     const testInstance = TestRenderer.create(<DummyRenderer />);
@@ -38,11 +38,11 @@ export default () => {
   });
 
   it("remove functions as props", () => {
-    const Dummy = props => <Text {...props} />;
+    const Dummy = props => <TcText {...props} />;
     const DummyRenderer = () => (
-      <View>
+      <TcView>
         <Dummy testFunc={() => 42} />
-      </View>
+      </TcView>
     );
 
     const testInstance = TestRenderer.create(<DummyRenderer />);
@@ -52,9 +52,9 @@ export default () => {
 
   it("remove empty objects as props", () => {
     const DummyRenderer = () => (
-      <View>
-        <Text test={{}} />
-      </View>
+      <TcView>
+        <TcText test={{}} />
+      </TcView>
     );
 
     const testInstance = TestRenderer.create(<DummyRenderer />);

@@ -2,39 +2,42 @@
 
 exports[`The minimal serializer should for web not remove className 1`] = `
 <div
-  className="css-text-901oao r-color-howw7u r-padding-ub6tad"
+  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  style={
+    Object {
+      "color": "red",
+      "padding": 1,
+    }
+  }
 />
 `;
 
 exports[`The minimal serializer should for web remove empty objects as props 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   />
 </div>
 `;
 
 exports[`The minimal serializer should for web remove functions as props 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   />
 </div>
 `;
 
 exports[`The minimal serializer should for web remove undefined props 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    False={false}
-    Null={null}
-    Zero={0}
-    className="css-text-901oao"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   />
 </div>
 `;
@@ -42,11 +45,11 @@ exports[`The minimal serializer should for web remove undefined props 1`] = `
 exports[`The minimal serializer should for web transform render props 1`] = `
 <Foo
   prop={
-    <Text
+    <ForwardRef(tc-text__TcText)
       href="href"
     >
       Bar
-    </Text>
+    </ForwardRef(tc-text__TcText)>
   }
 />
 `;
