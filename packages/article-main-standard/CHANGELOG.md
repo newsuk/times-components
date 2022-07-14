@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.59.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.58.11...@times-components/article-main-standard@3.59.0) (2022-07-14)
+
+
+### Features
+
+* **TDP-2110:** Replaced 'native' with 'web' in showcase ([#3028](https://github.com/newsuk/times-components/issues/3028)) ([e63ef53](https://github.com/newsuk/times-components/commit/e63ef53b58caf838004d1d25c33915cf576eb93a))
+
+
+
+
+
 ## [3.58.11](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.58.10...@times-components/article-main-standard@3.58.11) (2022-07-13)
 
 **Note:** Version bump only for package @times-components/article-main-standard

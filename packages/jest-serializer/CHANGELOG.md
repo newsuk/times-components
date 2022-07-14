@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.31](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.2.30...@times-components/jest-serializer@3.2.31) (2022-07-14)
+
+
+### Bug Fixes
+
+* **TDP-1704:** Remove react native from jest-serializer ([#3031](https://github.com/newsuk/times-components/issues/3031)) ([c4842b6](https://github.com/newsuk/times-components/commit/c4842b68bd394c43a397a7c2c67db068140ad2ea))
+
+
+
+
+
 ## [3.2.30](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.2.29...@times-components/jest-serializer@3.2.30) (2022-07-11)
 
 
