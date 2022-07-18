@@ -39,7 +39,6 @@ const sizeMap = {
   default: sizes.intervention,
   header: sizes.header,
   mpu: sizes.mpu,
-  "native-inline-ad": sizes.native,
   pixel: sizes.pixel,
   pixelskin: sizes.pixel,
   pixelteads: sizes.pixel
