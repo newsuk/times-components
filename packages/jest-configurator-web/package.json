@@ -1,6 +1,6 @@
 {
   "name": "@times-components/jest-configurator-web",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Web platform Jest Config",
   "main": "lib/jest-configurator.js",
   "dev": "src/jest-configurator.js",

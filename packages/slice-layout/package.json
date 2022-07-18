@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice-layout",
-  "version": "0.49.3",
+  "version": "0.49.4",
   "description": "Slice layout",
   "main": "dist/slice-layout",
   "scripts": {
@@ -58,8 +58,8 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/ts-styleguide": "1.36.6",
-    "@times-components/utils": "6.14.1",
+    "@times-components/ts-styleguide": "1.36.7",
+    "@times-components/utils": "6.14.2",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
