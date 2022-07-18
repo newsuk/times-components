@@ -143,12 +143,10 @@
   "dependencies": {
     "@babel/runtime-corejs2": "7.4.4",
     "@react-native-community/async-storage": "1.11.0",
-    "@react-native-community/netinfo": "5.3.3",
     "@times-components/svgs": "2.7.36",
     "opentype.js": "1.1.0",
     "react-art": "16.6.3",
     "react-native": "0.61.5",
-    "react-native-device-info": "5.3.1",
     "react-native-showcase-loader": "1.1.0",
     "react-native-svg": "9.11.1",
     "react-native-webview": "11.0.0"

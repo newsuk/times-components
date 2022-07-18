@@ -82,7 +82,7 @@ export default (platform, cwd, options = {}) => {
       "^.+\\.graphql": "babel-jest"
     },
     transformIgnorePatterns: [
-      "node_modules/(?!(react-native|react-native-svg|react-native-webview|react-native-iphone-x-helper|@times-components|@storybook/react-native|react-native-swipe-gestures|react-native-device-info)/)"
+      "node_modules/(?!(react-native|react-native-svg|react-native-webview|react-native-iphone-x-helper|@times-components|@storybook/react-native|react-native-swipe-gestures)/)"
     ]
   };
 
