@@ -5,6 +5,6 @@ module.exports = api => {
       "babel-plugin-styled-components",
       "@babel/plugin-transform-react-display-name"
     ],
-    presets:["@babel/preset-flow", "@babel/preset-react"]
+    presets:["@babel/preset-react"]
   };
 };
