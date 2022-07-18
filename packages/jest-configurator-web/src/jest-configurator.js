@@ -10,7 +10,7 @@ export default (cwd, options = {}) => {
     (global || local).replace("node_modules", "")
   );
 
-  const platformPath = "web"
+  const platformPath = "web";
 
   const config = {
     moduleFileExtensions: ["ts", "tsx", "graphql", "js", "json"],

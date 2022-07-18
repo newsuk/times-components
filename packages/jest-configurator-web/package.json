@@ -38,18 +38,19 @@
   "jest": {
     "rootDir": "../../",
     "collectCoverageFrom": [
-      "**/jest-configurator/src/**"
+      "**/jest-configurator-web/src/**"
     ],
-    "coverageDirectory": "<rootDir>/packages/jest-configurator/coverage",
+    "coverageDirectory": "<rootDir>/packages/jest-configurator-web/coverage",
     "transformIgnorePatterns": [
       "node_modules/(?!(@times-components)/)"
     ],
     "testMatch": [
-      "<rootDir>/packages/jest-configurator/__tests__/*.test.js"
+      "<rootDir>/packages/jest-configurator-web/__tests__/*.test.js"
     ]
   },
   "dependencies": {
     "@babel/core": "7.4.4",
+    "@babel/preset-react": "7.9.1",
     "@times-components/test-utils": "2.3.10",
     "babel-jest": "24.8.0",
     "babel-plugin-istanbul": "5.1.3",
@@ -76,8 +77,6 @@
   },
   "peerDependencies": {
     "react": ">=16.9",
-    "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-dom": ">=16.9"
   }
 }
