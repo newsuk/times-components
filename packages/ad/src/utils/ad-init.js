@@ -330,10 +330,6 @@ export default ({ el, data, platform, eventCallback, window }) => {
           this.init();
           return this.bid();
         }
-
-        const msg = "[Prebid] INFO: no prebid on native";
-        eventCallback("warn", msg);
-        return Promise.resolve(msg);
       },
 
       init({ prebidConfig, debug = false } = data) {
