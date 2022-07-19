@@ -1,4 +1,3 @@
-import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
@@ -6,7 +5,6 @@ import {
   flattenStyleTransform,
   hoistStyleTransform,
   minimalWebTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import { mount } from "enzyme";
@@ -20,8 +18,7 @@ export default () => {
       stylePrinter,
       flattenStyleTransform,
       hoistStyleTransform,
-      minimalWebTransform,
-      rnwTransform(AppRegistry)
+      minimalWebTransform
     )
   );
 
