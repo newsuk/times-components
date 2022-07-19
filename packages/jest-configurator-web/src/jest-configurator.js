@@ -31,7 +31,7 @@ export default (cwd, options = {}) => {
       "jest-plugin-context/setup"
     ],
     setupFilesAfterEnv: setupFilesAfterEnv ? [setupFilesAfterEnv] : [],
-    testMatch: [`${module}/__tests__/${platformPath}*.test.js`],
+    testMatch: [`${module}/__tests__/${platformPath}/*.test.js`],
     testPathIgnorePatterns: [
       path.join(module, "__tests__", platformPath, "jest.config.js")
     ],
