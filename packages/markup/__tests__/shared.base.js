@@ -1,5 +1,5 @@
 import React from "react";
-import { TcView } from "@times-components/utils"
+import { TcView } from "@times-components/utils";
 import { iterator } from "@times-components/test-utils";
 import renderTrees, { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "../src/markup";
