@@ -25,7 +25,6 @@ export default (cwd, options = {}) => {
       "node_modules/redbox-react/node_modules/react/",
       "node_modules/@storybook/"
     ],
-    preset: "react",
     rootDir,
     setupFiles: [
       path.resolve(__dirname, "../setup-jest.js"),
