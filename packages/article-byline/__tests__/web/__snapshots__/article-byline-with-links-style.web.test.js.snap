@@ -13,7 +13,7 @@ exports[`1. with a single author 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <a
     className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx IS1"
@@ -55,7 +55,7 @@ exports[`2. with a very long byline 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <a
     className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx IS1"

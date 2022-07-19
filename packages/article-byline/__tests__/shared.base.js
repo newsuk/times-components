@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
 import { shallow } from "enzyme";
 import { iterator } from "@times-components/test-utils";
@@ -10,9 +10,9 @@ import ArticleBylineWithLinks from "../src/article-byline-with-links";
 export default Component => {
   const renderArticleByline = props =>
     TestRenderer.create(
-      <View>
+      <TcView>
         <Component {...props} />
-      </View>
+      </TcView>
     );
 
   const tests = [

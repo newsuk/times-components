@@ -2,7 +2,7 @@
 
 exports[`1. with a single author 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
     className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
@@ -14,7 +14,7 @@ exports[`1. with a single author 1`] = `
 
 exports[`2. with a very long byline 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
     className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
