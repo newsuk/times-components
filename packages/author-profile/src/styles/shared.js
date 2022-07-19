@@ -10,10 +10,6 @@ const styles = {
     paddingBottom: spacing(8),
     width: "100%"
   },
-  authorHeadContainerNative: {
-    paddingBottom: spacing(4),
-    paddingTop: spacing(6)
-  },
   authorHeadWrapper: {
     alignItems: "center",
     backgroundColor: "transparent",
