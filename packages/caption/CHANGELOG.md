@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/newsuk/times-components/compare/@times-components/caption@3.1.7...@times-components/caption@3.2.0) (2022-07-19)
+
+
+### Features
+
+* **TDP-1712:** updated package/caption to use the new jest web config ([#3036](https://github.com/newsuk/times-components/issues/3036)) ([8f96fa9](https://github.com/newsuk/times-components/commit/8f96fa91f7ffd3f4397f909945541d181be80511))
+
+
+
+
+
 ## [3.1.7](https://github.com/newsuk/times-components/compare/@times-components/caption@3.1.6...@times-components/caption@3.1.7) (2022-07-19)
 
 **Note:** Version bump only for package @times-components/caption
