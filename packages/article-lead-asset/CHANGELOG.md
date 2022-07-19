@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.18...@times-components/article-lead-asset@1.9.0) (2022-07-19)
+
+
+### Features
+
+* **tdp-1712:** updated jest configurator ([#3034](https://github.com/newsuk/times-components/issues/3034)) ([af6061a](https://github.com/newsuk/times-components/commit/af6061ae8f196b33e5d48e4e706526e71f1538f5))
+
+
+
+
+
 ## [1.8.18](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.8.17...@times-components/article-lead-asset@1.8.18) (2022-07-14)
 
 **Note:** Version bump only for package @times-components/article-lead-asset

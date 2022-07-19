@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.10.3...@times-components/tracking@2.11.0) (2022-07-19)
+
+
+### Features
+
+* **tdp-1712:** updated jest configurator ([#3034](https://github.com/newsuk/times-components/issues/3034)) ([af6061a](https://github.com/newsuk/times-components/commit/af6061ae8f196b33e5d48e4e706526e71f1538f5))
+
+
+
+
+
 ## [2.10.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.10.2...@times-components/tracking@2.10.3) (2022-07-14)
 
 **Note:** Version bump only for package @times-components/tracking
