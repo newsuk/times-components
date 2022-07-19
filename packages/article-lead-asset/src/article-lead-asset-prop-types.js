@@ -65,14 +65,3 @@ export const defaultProps = {
   renderCaption: () => null,
   width: null
 };
-
-export const nativePropTypes = {
-  ...propTypes,
-  getImageCrop: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func
-};
-
-export const nativeDefaultProps = {
-  ...defaultProps,
-  onVideoPress: null
-};
