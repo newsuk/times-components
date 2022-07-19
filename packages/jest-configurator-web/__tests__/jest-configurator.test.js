@@ -10,7 +10,7 @@ describe("Jest Configurator Web Tests", () => {
   });
 
   it("should have the correct module name extensions", () => {
-    const config = jestConfigurator( dir);
+    const config = jestConfigurator(dir);
     expect(config.moduleFileExtensions).toEqual([
       "ts",
       "tsx",
