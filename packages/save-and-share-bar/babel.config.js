@@ -1,15 +1,17 @@
 module.exports = api => {
   api.cache(true);
   return {
-    plugins: [
-      "babel-plugin-styled-components",
+    plugins: ["babel-plugin-styled-components"],
+    presets: [
       [
-        "@babel/transform-runtime",
+        "@babel/preset-env",
         {
-          regenerator: true
+          targets: {
+            esmodules: true
+          }
         }
-      ]
-    ],
-    presets: ["@babel/preset-react", "@babel/preset-env"]
+      ],
+      "@babel/preset-react"
+    ]
   };
 };
