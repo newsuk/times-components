@@ -4571,6 +4571,34 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
+"@times-components/button@2.5.30":
+  version "2.5.30"
+  resolved "https://registry.yarnpkg.com/@times-components/button/-/button-2.5.30.tgz#fcd8fec697c220637b30e54190fed75f9f05d39a"
+  integrity sha512-GQyxxT7cegLxa/XpmD9SAx/qe7F8FYpDg4NZZIPFXeylUIMXcr23wnkALS3EA0cUZ/8CY7szCBEw70FUHGVasQ==
+  dependencies:
+    "@times-components/ts-styleguide" "1.36.8"
+    "@times-components/utils" "6.14.3"
+    prop-types "15.7.2"
+
+"@times-components/jest-configurator-web@0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator-web/-/jest-configurator-web-0.2.0.tgz#c5db8e0eac31e85f074dc7d734cd5d6df5f093c5"
+  integrity sha512-YCrNmoil2ghbbXK+HPYPCIHC7H2dE4TIVbVxwd2Qs0fQGCLFowuVkYruIGhXf6XwW2OXL3xJTCVSdzpJUHD/rQ==
+  dependencies:
+    "@babel/core" "7.4.4"
+    "@babel/preset-react" "7.9.1"
+    "@times-components/test-utils" "2.3.10"
+    babel-jest "24.8.0"
+    babel-plugin-istanbul "5.1.3"
+    babel-preset-jest "24.6.0"
+    enzyme "3.9.0"
+    enzyme-adapter-react-16 "1.12.1"
+    find-node-modules "1.0.4"
+    identity-obj-proxy "3.0.0"
+    jest "24.8.0"
+    jest-plugin-context "2.9.0"
+    jest-plugins "2.9.0"
+
 "@times-components/svgs@2.7.36":
   version "2.7.36"
   resolved "https://registry.yarnpkg.com/@times-components/svgs/-/svgs-2.7.36.tgz#a7a17502f7806ce59f39b7bf037e13753edfc905"
