@@ -40,7 +40,13 @@ export default (cwd, options = {}) => {
       "^.+\\.js$": path.resolve(__dirname, "source-loader.js"),
       // used to make jest understand graphql files once they're loaded
       "\\.(gql|graphql)$": "jest-transform-graphql",
-      "^.+\\.graphql": "babel-jest"
+      "^.+\\.graphql": "babel-jest",
+      ".+\\.tsx?$": "ts-jest"
+    },
+    globals: {
+      "ts-jest": {
+        tsConfigFile: "./tsconfig.jest.json"
+      }
     },
     transformIgnorePatterns: [
       "node_modules/(?!(@times-components|@storybook/react)/)"

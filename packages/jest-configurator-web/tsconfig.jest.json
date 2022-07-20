@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "target": "es2017",
+    "jsx": "react",
+    "module": "commonjs",
+    "inlineSourceMap": true
+  }
+}
