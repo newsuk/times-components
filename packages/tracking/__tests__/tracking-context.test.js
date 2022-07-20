@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import trackingContextTypes from "../src/tracking-context-types";
@@ -7,7 +7,7 @@ import { withTrackingContext } from "../src/tracking";
 
 module.exports = () => {
   describe("WithTrackingContext", () => {
-    const TestComponent = ({ someProp }) => <Text>{someProp}</Text>;
+    const TestComponent = ({ someProp }) => <TcText>{someProp}</TcText>;
     TestComponent.propTypes = { someProp: PropTypes.string };
     TestComponent.defaultProps = { someProp: "foo" };
     TestComponent.someStatic = { foo: "bar" };

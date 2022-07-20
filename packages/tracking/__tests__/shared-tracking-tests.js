@@ -1,9 +1,9 @@
-import { Text } from "react-native";
 import React from "react";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
+import { TcText } from "@times-components/utils";
 
-const TestComponent = ({ someProp }) => <Text>{someProp}</Text>;
+const TestComponent = ({ someProp }) => <TcText>{someProp}</TcText>;
 TestComponent.propTypes = { someProp: PropTypes.string };
 TestComponent.defaultProps = { someProp: "foo" };
 TestComponent.someStatic = { foo: "bar" };
