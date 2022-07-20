@@ -3,7 +3,6 @@ module.exports = api => {
   return {
     plugins: [
       "babel-plugin-styled-components",
-      "@babel/plugin-transform-react-display-name",
       [
         "@babel/transform-runtime",
         {
