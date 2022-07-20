@@ -1,6 +1,6 @@
 {
   "name": "@times-components/caption",
-  "version": "3.2.2",
+  "version": "3.2.3",
   "description": "Media caption component",
   "main": "dist/caption",
   "dev": "src/caption",
@@ -40,7 +40,7 @@
     "@babel/preset-env": "7.4.4",
     "@babel/preset-react": "7.9.1",
     "@times-components/eslint-config-thetimes": "0.8.18",
-    "@times-components/jest-configurator-web": "0.3.1",
+    "@times-components/jest-configurator-web": "0.4.0",
     "@times-components/jest-serializer": "3.3.0",
     "@times-components/storybook": "4.4.0",
     "@times-components/test-utils": "2.3.10",
