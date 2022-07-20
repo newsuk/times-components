@@ -45,7 +45,7 @@ export default (cwd, options = {}) => {
     },
     globals: {
       "ts-jest": {
-        tsConfigFile: "./tsconfig.jest.json"
+        tsConfigFile: "../tsconfig.jest.json"
       }
     },
     transformIgnorePatterns: [
