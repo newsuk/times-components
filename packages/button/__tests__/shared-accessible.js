@@ -1,11 +1,9 @@
-import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
   enzymeRenderedSerializer,
   minimalWebTransform,
-  print,
-  rnwTransform
+  print
 } from "@times-components/jest-serializer";
 import { mount } from "enzyme";
 import shared from "./shared-accessible.base";
@@ -16,7 +14,6 @@ export default () => {
     enzymeRenderedSerializer(),
     compose(
       print,
-      rnwTransform(AppRegistry),
       minimalWebTransform
     )
   );

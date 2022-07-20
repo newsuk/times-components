@@ -2,7 +2,7 @@
 
 exports[`1. single inline element 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
     className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 PgEZc"
@@ -14,7 +14,7 @@ exports[`1. single inline element 1`] = `
 
 exports[`2. with the author in the begining 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
     className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
@@ -31,7 +31,7 @@ exports[`2. with the author in the begining 1`] = `
 
 exports[`3. with the author at the end 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
     className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 PgEZc"
@@ -48,7 +48,7 @@ exports[`3. with the author at the end 1`] = `
 
 exports[`4. with multiple authors separated by a pipe 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
     className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
@@ -80,7 +80,7 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
 
 exports[`5. with multiple authors separated by text with commas 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
     className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
@@ -112,7 +112,7 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
 
 exports[`6. with multiple authors separated by spaces 1`] = `
 <div
-  className="css-view-1dbjc4n"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
     className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
