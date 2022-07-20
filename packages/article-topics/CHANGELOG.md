@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.6.0](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.5.13...@times-components/article-topics@4.6.0) (2022-07-20)
+
+
+### Features
+
+* **TDP-1712:** change jest config 01 ([#3038](https://github.com/newsuk/times-components/issues/3038)) ([a06acac](https://github.com/newsuk/times-components/commit/a06acac0a2a5812787ddd856a5a78faf000d224a))
+
+
+
+
+
 ## [4.5.13](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.5.12...@times-components/article-topics@4.5.13) (2022-07-19)
 
 **Note:** Version bump only for package @times-components/article-topics

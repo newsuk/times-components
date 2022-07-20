@@ -1,6 +1,6 @@
 {
   "name": "@times-components/button",
-  "version": "2.5.30",
+  "version": "2.6.0",
   "description": "Button component",
   "main": "dist/button",
   "dev": "src/button",
@@ -32,8 +32,8 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@babel/preset-react": "7.9.1",
     "@babel/preset-env": "7.4.4",
+    "@babel/preset-react": "7.9.1",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.2.0",
     "@times-components/jest-serializer": "3.3.0",
