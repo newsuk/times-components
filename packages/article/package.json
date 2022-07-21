@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "7.9.12",
+  "version": "7.10.0",
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",
@@ -32,8 +32,8 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@babel/preset-react": "7.9.1",
     "@babel/preset-env": "7.4.4",
+    "@babel/preset-react": "7.9.1",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.5.0",
     "@times-components/provider-test-tools": "1.26.5",

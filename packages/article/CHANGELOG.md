@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.10.0](https://github.com/newsuk/times-components/compare/@times-components/article@7.9.12...@times-components/article@7.10.0) (2022-07-21)
+
+
+### Features
+
+* **TDP-1712:** imported jest-config-web and updated with some local … ([#3043](https://github.com/newsuk/times-components/issues/3043)) ([d502434](https://github.com/newsuk/times-components/commit/d502434b1005da88567a3849155cf5fa2c6cc755))
+
+
+
+
+
 ## [7.9.12](https://github.com/newsuk/times-components/compare/@times-components/article@7.9.11...@times-components/article@7.9.12) (2022-07-21)
 
 **Note:** Version bump only for package @times-components/article
