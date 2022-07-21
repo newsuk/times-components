@@ -10,4 +10,3 @@ jc.globals = {
 };
 
 module.exports = jc;
-
