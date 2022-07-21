@@ -43,11 +43,6 @@ export default (cwd, options = {}) => {
       "^.+\\.graphql": "babel-jest",
       ".+\\.tsx?$": "ts-jest"
     },
-    globals: {
-      "ts-jest": {
-        tsConfigFile: path.resolve(__dirname, "../tsconfig.jest.json")
-      }
-    },
     transformIgnorePatterns: [
       "node_modules/(?!(@times-components|@storybook/react)/)"
     ]
