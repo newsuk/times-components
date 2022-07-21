@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator-web@0.4.0...@times-components/jest-configurator-web@0.5.0) (2022-07-21)
+
+
+### Features
+
+* **TDP-1712:** updated path again ([#3042](https://github.com/newsuk/times-components/issues/3042)) ([6f27ffd](https://github.com/newsuk/times-components/commit/6f27ffd4b8f29af55bfaa9fdbe121bb0d5ef1e6c))
+
+
+
+
+
 # [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator-web@0.3.1...@times-components/jest-configurator-web@0.4.0) (2022-07-20)
 
 

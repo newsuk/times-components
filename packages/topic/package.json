@@ -1,6 +1,6 @@
 {
   "name": "@times-components/topic",
-  "version": "5.6.9",
+  "version": "5.6.10",
   "description": "Topic page component",
   "main": "dist/topic",
   "dev": "src/topic",
@@ -63,7 +63,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-list": "9.10.31",
+    "@times-components/article-list": "9.10.32",
     "@times-components/context": "1.9.3",
     "@times-components/markup": "3.6.2",
     "@times-components/markup-forest": "1.8.1",
