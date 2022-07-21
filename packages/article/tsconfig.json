@@ -5,6 +5,6 @@
     "jsx": "preserve",
     "moduleResolution": "node",
     "module": "commonjs",
-    "esModuleInterop": true,
+    "esModuleInterop": true
   }
 }
