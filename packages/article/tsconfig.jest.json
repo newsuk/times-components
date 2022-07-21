@@ -1,9 +1,10 @@
 {
-  "extends": "./tsconfig",
   "compilerOptions": {
-    "target": "es2017",
-    "jsx": "react",
+    "target": "es6",
+    "rootDir": "src",
+    "jsx": "preserve",
+    "moduleResolution": "node",
     "module": "commonjs",
-    "inlineSourceMap": true
+    "esModuleInterop": true
   }
 }
