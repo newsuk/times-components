@@ -1,18 +1,15 @@
-const { AppRegistry } = require("react-native-web");
 const {
   addSerializers,
   compose,
   minimalWebTransform,
-  print,
-  rnwTransform
+  print
 } = require("@times-components/jest-serializer");
 
 addSerializers(
   expect,
   compose(
     print,
-    minimalWebTransform,
-    rnwTransform(AppRegistry)
+    minimalWebTransform
   )
 );
 

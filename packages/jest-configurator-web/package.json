@@ -5,6 +5,7 @@
   "main": "lib/jest-configurator.js",
   "dev": "src/jest-configurator.js",
   "scripts": {
+    "build:module": "tsc -p tsconfig.json",
     "prepublishOnly": "yarn transpile",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",

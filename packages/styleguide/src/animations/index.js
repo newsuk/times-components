@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import styled, { keyframes } from "styled-components";
 
 const fadingAnimation = keyframes`
@@ -11,7 +11,7 @@ const fadingAnimation = keyframes`
   }
 `;
 
-const FadeIn = styled(View)`
+const FadeIn = styled(TcView)`
   animation: ${fadingAnimation} 0.3s ease-in-out;
 `;
 
