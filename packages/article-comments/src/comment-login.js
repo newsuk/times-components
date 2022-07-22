@@ -13,11 +13,11 @@ const loginRequest = (url, completeSSOCallback) => {
   xhr.send();
 };
 
-const ssoCallbackReadOnly = (codeA, completeSSOCallback) =>
-  loginRequest(
-    `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}&readOnly=true`,
-    completeSSOCallback
-  );
+// const ssoCallbackReadOnly = (codeA, completeSSOCallback) =>
+//   loginRequest(
+//     `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}&readOnly=true`,
+//     completeSSOCallback
+//   );
 
 const ssoCallback = (codeA, completeSSOCallback) => {
   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
