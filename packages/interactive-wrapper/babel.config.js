@@ -4,16 +4,6 @@ module.exports = api => {
     plugins: [
       "babel-plugin-styled-components"
     ],
-    presets: [
-      [
-        '@babel/preset-env',
-        {
-          targets: {
-            esmodules: true,
-          },
-        },
-      ],
-      "@babel/preset-react"
-    ], 
-};
+    presets: ["module:metro-react-native-babel-preset"]
+  };
 };
