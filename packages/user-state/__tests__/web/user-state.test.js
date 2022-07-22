@@ -8,9 +8,9 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import UserState from "../src/user-state";
+import UserState from "../../src/user-state";
 
-jest.mock("../src/client-user-state-consumer", () => ({ children }) =>
+jest.mock("../../src/client-user-state-consumer", () => ({ children }) =>
   children({ user: global.mockUserState })
 );
 
