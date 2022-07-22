@@ -32,13 +32,9 @@
     "listFiles": false /* Print names of files part of the compilation. */,
     "pretty": true /* Stylize errors and messages using color and context. */,
 
-    "lib": ["esnext"],
-    "types": ["jest", "node"],
-    "typeRoots": [
-      "node_modules/@types",
-      "src/types",
-      "../../node_modules/@types"
-    ]
+    "lib": ["es6", "dom", "es2017"],
+    "types": ["jest"],
+    "typeRoots": ["node_modules/@types", "src/types", "../../node_modules/@types"]
   },
   "include": ["src/**/*.ts", "src/Utils.tsx"],
   "exclude": ["node_modules/**"],

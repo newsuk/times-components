@@ -1,4 +1,5 @@
 import React from "react";
+import { TcText } from "@times-components/utils";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import { TcText } from "@times-components/utils";
