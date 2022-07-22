@@ -15,23 +15,29 @@ const loginRequest = (url, completeSSOCallback) => {
 
 const ssoCallbackReadOnly = (codeA, completeSSOCallback) =>
   loginRequest(
-    `/api/comments/login?codeA=${encodeURIComponent(codeA)}&readOnly=true`,
+    `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}&readOnly=true`,
     completeSSOCallback
   );
 
-const ssoCallback = (codeA, completeSSOCallback) =>
-  loginRequest(
-    `/api/comments/login?codeA=${encodeURIComponent(codeA)}`,
+const ssoCallback = (codeA, completeSSOCallback) => {
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX codea', codeA)
+  return loginRequest(
+    `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}`,
     completeSSOCallback
-  );
+  )
+}
 
 const executeSSOtransaction = (isReadOnly, callback) => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
-    if (isReadOnly) {
-      window.SPOTIM.startSSO(ssoCallbackReadOnly);
-    } else {
+    // if (isReadOnly) {
+    //   window.SPOTIM.startSSO(ssoCallbackReadOnly);
+    // } else {
       window.SPOTIM.startSSO(ssoCallback);
-    }
+   // }
 
     callback();
   }
