@@ -1,6 +1,7 @@
-const jestConfigurator = require("@times-components/jest-configurator").default;
+const jestConfigurator = require("@times-components/jest-configurator-web")
+  .default;
 
-module.exports = jestConfigurator("web", __dirname, {
+const jc = jestConfigurator(__dirname, {
   coverageIgnoreGlobs: [
     "article-content.js",
     "article-lead-asset-image.js",
@@ -8,3 +9,11 @@ module.exports = jestConfigurator("web", __dirname, {
     "data-helper.js"
   ]
 });
+jc.preset = "ts-jest";
+jc.globals = {
+  "ts-jest": {
+    tsConfigFile: "./tsconfig.jest.json"
+  }
+};
+
+module.exports = jc;
