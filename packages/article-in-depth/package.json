@@ -9,12 +9,17 @@
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:web": "jest",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
     "bundle": "NODE_ENV=production webpack -p"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/__tests__/web/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -35,7 +40,6 @@
     "@babel/preset-react": "7.9.1",
     "@babel/preset-env": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
-    "@times-components/jest-configurator-web": "0.6.0",
     "@times-components/jest-serializer": "3.3.0",
     "@times-components/provider": "1.32.6",
     "@times-components/provider-test-tools": "1.26.5",
