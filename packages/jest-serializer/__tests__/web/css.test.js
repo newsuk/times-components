@@ -13,7 +13,7 @@ describe("The Web serializer should", () => {
       }
     };
 
-    const component = <TcText style={styles.test} testFunc={() => {}} />;
+    const component = <TcText style={{ ...styles.test }} testFunc={() => {}} />;
     const testRenderer = TestRenderer.create(component);
 
     expect(testRenderer).toMatchSnapshot();
@@ -30,8 +30,8 @@ describe("The Web serializer should", () => {
     };
 
     const component = (
-      <TcView style={styles.parent}>
-        <TcText style={styles.child}>Hello World!</TcText>
+      <TcView style={{ ...styles.parent }}>
+        <TcText style={{ ...styles.child }}>Hello World!</TcText>
       </TcView>
     );
     const testRenderer = TestRenderer.create(component);
@@ -57,11 +57,11 @@ describe("The Web serializer should", () => {
     };
 
     const component = (
-      <TcView style={styles.parent}>
-        <TcText style={styles.child1}>child 1</TcText>
-        <TcText style={styles.child2}>child 2</TcText>
+      <TcView style={{ ...styles.parent }}>
+        <TcText style={{ ...styles.child1 }}>child 1</TcText>
+        <TcText style={{ ...styles.child2 }}>child 2</TcText>
         <TcView>
-          <TcText style={styles.child3}>child 3</TcText>
+          <TcText style={{ ...styles.child3 }}>child 3</TcText>
         </TcView>
       </TcView>
     );
@@ -88,11 +88,11 @@ describe("The Web serializer should", () => {
     };
 
     const component = (
-      <TcView style={styles.parent}>
-        <TcText style={styles.child1}>child 1</TcText>
-        <TcText style={styles.child2}>child 2</TcText>
+      <TcView style={{ ...styles.parent }}>
+        <TcText style={{ ...styles.child1 }}>child 1</TcText>
+        <TcText style={{ ...styles.child2 }}>child 2</TcText>
         <TcView>
-          <TcText style={styles.child3}>child 3</TcText>
+          <TcText style={{ ...styles.child3 }}>child 3</TcText>
         </TcView>
       </TcView>
     );
@@ -114,8 +114,8 @@ describe("The Web serializer should", () => {
     const Container = ({ renderProp }) => <TcView prop={renderProp} />;
 
     const component = (
-      <TcView style={styles.parent}>
-        <Container renderProp={<TcText style={styles.child} />} />
+      <TcView style={{ ...styles.parent }}>
+        <Container renderProp={<TcText style={{ ...styles.child }} />} />
       </TcView>
     );
     const testRenderer = TestRenderer.create(component);
