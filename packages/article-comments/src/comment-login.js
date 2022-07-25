@@ -13,7 +13,7 @@ const loginRequest = (url, completeSSOCallback) => {
   xhr.send();
 };
 
-const isFeatureFlagEnabled = window.location.search.includes('article-comments');
+const isFeatureFlagEnabled = window.location.search.includes('enableRealNameCommenting');
 const loginRequestUrl = isFeatureFlagEnabled ? '/api/comments/loginv2' : '/api/comments/login'
 
 
