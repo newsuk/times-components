@@ -1,4 +1,4 @@
-import { Text, View } from 'react-native';
+import { TcText, TcView } from "@times-components/utils";
 import { configure, addDecorator } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import { withOptions } from '@storybook/addon-options';
@@ -11,7 +11,7 @@ const req = require.context(
 );
 
 addDecorator(withInfo({
-  propTablesExclude: [Text, View]
+  propTablesExclude: [TcText, TcView]
 }));
 addDecorator(withKnobs);
 addDecorator(withOptions({
