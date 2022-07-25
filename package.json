@@ -149,5 +149,11 @@
     "react-native-showcase-loader": "1.1.0",
     "react-native-svg": "9.11.1",
     "react-native-webview": "11.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   }
 }
