@@ -1,6 +1,14 @@
-const jestConfigurator = require("@times-components/jest-configurator-web").default;
-const path = require("path");
+const jestConfigurator = require("@times-components/jest-configurator-web")
+  .default;
 
-module.exports = jestConfigurator(__dirname, {
+const jc = jestConfigurator(__dirname, {
   setupFilesAfterEnv: path.join(__dirname, "./serializers")
 });
+jc.preset = "ts-jest";
+jc.globals = {
+  "ts-jest": {
+    tsConfigFile: "./tsconfig.jest.json"
+  }
+};
+
+module.exports = jc;
