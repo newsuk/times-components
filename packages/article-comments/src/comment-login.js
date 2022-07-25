@@ -28,7 +28,7 @@ const ssoCallback = (codeA, completeSSOCallback) => {
   );
 };
 
-const executeSSOtransaction = callback => {
+const executeSSOtransaction = (isReadOnly, callback) => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
     window.SPOTIM.startSSO(ssoCallback);
 
