@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ServerClientRender renders the client path on the front end 1`] = `
+<div
+  id="react-root"
+>
+  <h1>
+    Hello World
+  </h1>
+</div>
+`;
+
+exports[`ServerClientRender renders the server path on the server 1`] = `"<h1 data-reactroot=\\"\\">Hello World</h1>"`;
