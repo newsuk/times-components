@@ -1,5 +1,0 @@
-{
-  "jest": {
-    "transformIgnorePatterns": ["jest.config.json"]
-  }
-}
