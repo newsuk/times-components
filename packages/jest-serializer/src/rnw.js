@@ -1,3 +1,4 @@
+import { AppRegistry } from "react-native-web";
 import ReactDOMServer from "react-dom/server";
 import css from "css";
 import isEqual from "lodash.isequal";

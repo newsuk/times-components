@@ -1,8 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`The Web serializer should effect children 1`] = `
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto, Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="c0"
   style={
     Object {
       "flex": 1,
@@ -10,7 +40,7 @@ exports[`The Web serializer should effect children 1`] = `
   }
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="c1"
     style={
       Object {
         "fontSize": 9,
@@ -23,8 +53,38 @@ exports[`The Web serializer should effect children 1`] = `
 `;
 
 exports[`The Web serializer should effect multiple children 1`] = `
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto, Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="c0"
   style={
     Object {
       "backgroundColor": "red",
@@ -33,7 +93,7 @@ exports[`The Web serializer should effect multiple children 1`] = `
   }
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="c1"
     style={
       Object {
         "fontSize": 9,
@@ -43,7 +103,7 @@ exports[`The Web serializer should effect multiple children 1`] = `
     child 1
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="c1"
     style={
       Object {
         "fontSize": 10,
@@ -53,10 +113,10 @@ exports[`The Web serializer should effect multiple children 1`] = `
     child 2
   </div>
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    className="c0"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="c1"
       style={
         Object {
           "fontSize": 11,
@@ -70,8 +130,26 @@ exports[`The Web serializer should effect multiple children 1`] = `
 `;
 
 exports[`The Web serializer should effect render props 1`] = `
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="c0"
   style={
     Object {
       "flex": 1,
@@ -79,14 +157,26 @@ exports[`The Web serializer should effect render props 1`] = `
   }
 >
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    className="c0"
   />
 </div>
 `;
 
 exports[`The Web serializer should remove rnw-classnames and hoist the styles 1`] = `
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto, Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="c0"
   style={
     Object {
       "color": "red",
@@ -98,8 +188,38 @@ exports[`The Web serializer should remove rnw-classnames and hoist the styles 1`
 `;
 
 exports[`The Web serializer should squash identical styles 1`] = `
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto, Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
 <div
-  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  className="c0"
   style={
     Object {
       "backgroundColor": "red",
@@ -108,7 +228,7 @@ exports[`The Web serializer should squash identical styles 1`] = `
   }
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="c1"
     style={
       Object {
         "fontSize": 10,
@@ -118,7 +238,7 @@ exports[`The Web serializer should squash identical styles 1`] = `
     child 1
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="c1"
     style={
       Object {
         "fontSize": 10,
@@ -128,10 +248,10 @@ exports[`The Web serializer should squash identical styles 1`] = `
     child 2
   </div>
   <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    className="c0"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="c1"
       style={
         Object {
           "fontSize": 10,
