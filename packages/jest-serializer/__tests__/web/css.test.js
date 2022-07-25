@@ -2,6 +2,7 @@
 import React from "react";
 import { TcText, TcView } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
+import "jest-styled-components";
 
 describe("The Web serializer should", () => {
   it("remove rnw-classnames and hoist the styles", () => {
