@@ -104,7 +104,7 @@
     "jest": "24.8.0",
     "jest-environment-jsdom-sixteen": "2.0.0",
     "jest-fetch-mock": "3.0.3",
-    "jest-styled-components": "6.3.1",
+    "jest-styled-components": "7.0.8",
     "mockdate": "3.0.5",
     "prettier": "1.14.3",
     "react": "16.9.0",

@@ -53,6 +53,7 @@
     "@times-components/storybook": "4.4.0",
     "@times-components/test-utils": "2.3.10",
     "@times-components/webpack-configurator": "2.0.29",
+    "@typescript-eslint/parser": "5.30.7",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "eslint": "5.9.0",
