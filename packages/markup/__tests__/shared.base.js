@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { TcView } from "@times-components/utils";
 import { iterator } from "@times-components/test-utils";
 import renderTrees, { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "../src/markup";
@@ -56,7 +56,7 @@ export default renderComponent => {
       name: "image tag",
       test: () => {
         const output = renderComponent(
-          <View>{renderTrees(image, coreRenderers)}</View>
+          <TcView>{renderTrees(image, coreRenderers)}</TcView>
         );
 
         expect(output).toMatchSnapshot();
@@ -134,7 +134,7 @@ export default renderComponent => {
       name: "does not render a script tag",
       test: () => {
         const output = renderComponent(
-          <View>{renderTrees(script, coreRenderers)}</View>
+          <TcView>{renderTrees(script, coreRenderers)}</TcView>
         );
 
         expect(output).toMatchSnapshot();
