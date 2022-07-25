@@ -13,31 +13,28 @@ const loginRequest = (url, completeSSOCallback) => {
   xhr.send();
 };
 
-// const ssoCallbackReadOnly = (codeA, completeSSOCallback) =>
-//   loginRequest(
-//     `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}&readOnly=true`,
-//     completeSSOCallback
-//   );
+const isFeatureFlagEnabled = window.location.search.includes('article-comments');
+const loginRequestUrl = isFeatureFlagEnabled ? '/api/comments/loginv2' : '/api/comments/login'
 
-const ssoCallback = (codeA, completeSSOCallback) => {
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX codea', codeA)
-  return loginRequest(
-    `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}`,
+
+const ssoCallbackReadOnly = (codeA, completeSSOCallback) =>
+  loginRequest(
+    `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}&readOnly=true`,
+    completeSSOCallback
+  );
+
+const ssoCallback = (codeA, completeSSOCallback) =>  loginRequest(
+    `${loginRequestUrl}/loginv2?codeA=${encodeURIComponent(codeA)}`,
     completeSSOCallback
   )
-}
 
 const executeSSOtransaction = (isReadOnly, callback) => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
-    // if (isReadOnly) {
-    //   window.SPOTIM.startSSO(ssoCallbackReadOnly);
-    // } else {
+    if (isReadOnly) {
+      window.SPOTIM.startSSO(ssoCallbackReadOnly);
+    } else {
       window.SPOTIM.startSSO(ssoCallback);
-   // }
+   }
 
     callback();
   }
