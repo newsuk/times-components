@@ -9,12 +9,17 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,react-art,stylelint*,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && stylelint . && yarn prettier:diff && yarn depcheck",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:web": "jest",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
     "bundle": "NODE_ENV=production webpack -p"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/__tests__/web/**.test.js"
+    ]
   },
   "repository": {
     "type": "git",
