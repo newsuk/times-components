@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import gql from "graphql-tag";
 import {
   article as makeArticleParams,
@@ -49,7 +49,7 @@ export default {
         return (
           <MockedProvider mocks={mocks} removeTypename>
             <WithData debounceTimeMs={0} prop1={1} prop2={2}>
-              {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+              {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
             </WithData>
           </MockedProvider>
         );
@@ -83,7 +83,7 @@ export default {
         return (
           <MockedProvider mocks={mocks} removeTypename>
             <WithData debounceTimeMs={0} prop1={1} prop2={2}>
-              {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+              {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
             </WithData>
           </MockedProvider>
         );
@@ -118,7 +118,7 @@ export default {
                   pageSize={pageSize}
                   slug={slug}
                 >
-                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </AuthorProfileProvider>
               </MockedProvider>
             )}
@@ -142,7 +142,7 @@ export default {
             render={mocks => (
               <MockedProvider mocks={mocks}>
                 <ArticleProvider debounceTimeMs={0} id={id}>
-                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </ArticleProvider>
               </MockedProvider>
             )}
@@ -179,7 +179,7 @@ export default {
                   pageSize={pageSize}
                   slug={slug}
                 >
-                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </AuthorArticlesWithImagesProvider>
               </MockedProvider>
             )}
@@ -212,7 +212,7 @@ export default {
             render={mocks => (
               <MockedProvider mocks={mocks}>
                 <TopicProvider debounceTimeMs={0} slug="chelsea">
-                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </TopicProvider>
               </MockedProvider>
             )}
@@ -250,7 +250,7 @@ export default {
                   pageSize={pageSize}
                   slug={slug}
                 >
-                  {props => <Text>{JSON.stringify(props, null, 2)}</Text>}
+                  {props => <TcText>{JSON.stringify(props, null, 2)}</TcText>}
                 </TopicArticlesProvider>
               </MockedProvider>
             )}
