@@ -9,7 +9,6 @@ import { UserState } from "./mocks";
 import ArticleComments from "../../src/article-comments";
 import { ssoCallback } from "../../src/comment-login";
 
-
 const renderComments = ({
   enabled,
   publishedTime = "2021-08-10T16:00:00.000Z"
@@ -41,12 +40,13 @@ describe("comments-login", () => {
   const xhrMock = {
     open: jest.fn(),
     send: jest.fn(),
-    addEventListener: jest.fn(),
+    addEventListener: jest.fn()
   };
 
-  it("uses pre existing commenting service when there isn't a feature flag", async () => {
+  it("uses pre existing commenting service when there isn't a feature flag", () => {
     jest.spyOn(window, "XMLHttpRequest").mockImplementation(() => xhrMock);
-    await ssoCallback("mock-code-a", {});
+
+    ssoCallback("mock-code-a", {});
 
     expect(xhrMock.open).toHaveBeenCalledWith(
       "GET",
@@ -54,7 +54,7 @@ describe("comments-login", () => {
     );
   });
 
-  it("uses new commenting service when feature flag is enabled", async () => {
+  it("uses new commenting service when feature flag is enabled", () => {
     global.window = Object.create(window);
     const url = "    http://localhost/";
     Object.defineProperty(window, "location", {
@@ -66,15 +66,13 @@ describe("comments-login", () => {
 
     jest.spyOn(window, "XMLHttpRequest").mockImplementation(() => xhrMock);
 
-    await ssoCallback("mock-code-a", {});
+    ssoCallback("mock-code-a", {});
 
     expect(xhrMock.open).toHaveBeenCalledWith(
       "GET",
       "/api/comments/loginv2?codeA=mock-code-a"
     );
   });
-
-  
 });
 
 describe("User States", () => {
