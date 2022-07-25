@@ -1,4 +1,4 @@
 import shared from "../shared-with-style";
-import '../../../../setupTests';
+import "../../../../setupTests";
 
 shared();

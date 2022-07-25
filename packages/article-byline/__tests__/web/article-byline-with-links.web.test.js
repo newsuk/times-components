@@ -1,5 +1,5 @@
 import { ArticleBylineWithLinks } from "../../src/article-byline";
 import shared from "../shared";
-import '../../../../setupTests';
+import "../../../../setupTests";
 
 shared(ArticleBylineWithLinks);
