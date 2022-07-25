@@ -12,8 +12,8 @@ export const justChildren = (node, props, children) => ({
 });
 
 export const meltNative = {
-  Text: justChildren,
-  View: justChildren
+  TcText: justChildren,
+  TcView: justChildren
 };
 
 export const replaceTransform = config => (accum, node, props, children) => {
