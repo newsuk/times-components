@@ -32,9 +32,11 @@ exports[`4. emphasis 1`] = `
 `;
 
 exports[`5. image tag 1`] = `
-<div
-  className="css-view-1dbjc4n"
-/>
+<tc-view__TcView>
+  <div
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+  />
+</tc-view__TcView>
 `;
 
 exports[`6. inline 1`] = `
@@ -86,7 +88,9 @@ exports[`13. superscript with fallback 1`] = `
 `;
 
 exports[`14. does not render a script tag 1`] = `
-<div
-  className="css-view-1dbjc4n"
-/>
+<tc-view__TcView>
+  <div
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+  />
+</tc-view__TcView>
 `;
