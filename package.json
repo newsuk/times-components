@@ -48,7 +48,7 @@
     "watch": "lerna run watch --stream --no-sort --concurrency 100"
   },
   "jest": {
-    "preset": "react-native",
+    "preset": "react",
     "coveragePathIgnorePatterns": [
       "lib/cli/edition-checker/src/main.js"
     ],

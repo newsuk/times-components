@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-foreign-prop-types */
 import React from "react";
 import { TcText } from "@times-components/utils";
 import PropTypes from "prop-types";

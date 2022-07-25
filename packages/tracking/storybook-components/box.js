@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { TcView } from "@times-components/utils";
 
-export const boxStyles = ({
+export const boxStyles = {
   box: {
     borderColor: "black",
     borderStyle: "solid",
@@ -10,11 +10,13 @@ export const boxStyles = ({
     height: 200,
     width: 200
   }
-});
+};
 
 const Box = ({ children, color, id }) => (
   <div id={id}>
-    <TcView style={{ ...boxStyles.box, backgroundColor: color }}>{children}</TcView>
+    <TcView style={{ ...boxStyles.box, backgroundColor: color }}>
+      {children}
+    </TcView>
   </div>
 );
 Box.propTypes = {

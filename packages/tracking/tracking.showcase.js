@@ -12,13 +12,22 @@ import Boxes from "./storybook-components/boxes";
 
 const BoxWithButtons = ({ color, onClick }) => (
   <TcView>
-    <TcView style={{...boxStyles.box, backgroundColor: color }}>
-      <button onClick={() => onClick("button 1")} title="Press me">Press me</button>
+    <TcView style={{ ...boxStyles.box, backgroundColor: color }}>
       <button
-        style={{ backgroundColor: "LimeGreen"}}
+        type="button"
+        onClick={() => onClick("button 1")}
+        title="Press me"
+      >
+        Press me
+      </button>
+      <button
+        type="button"
+        style={{ backgroundColor: "LimeGreen" }}
         onClick={() => onClick("button 2")}
         title="Or me"
-      >Or me</button>
+      >
+        Or me
+      </button>
     </TcView>
   </TcView>
 );
