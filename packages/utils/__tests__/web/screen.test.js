@@ -4,6 +4,7 @@ import {
   normaliseWidthForAssetRequestCache,
   screenWidth
 } from "../../src/index";
+import "jest-styled-components";
 
 describe("screen utilities", () => {
   context("normaliseWidthForAssetRequestCache", () => {
