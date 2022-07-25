@@ -57,6 +57,7 @@
     "babel-loader": "8.0.5",
     "eslint": "5.9.0",
     "jest": "24.8.0",
+    "jest-styled-components": "7.0.8",
     "prettier": "1.14.3",
     "react": "16.9.0",
     "react-dom": "16.9.0",
@@ -74,5 +75,11 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   }
 }
