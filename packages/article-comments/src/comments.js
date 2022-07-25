@@ -23,7 +23,6 @@ class Comments extends Component {
   initialiseComments() {
     const {
       articleId,
-      isReadOnly,
       publishedTime,
       commentingConfig,
       onCommentStart,
@@ -123,14 +122,10 @@ class Comments extends Component {
       getShareEvent(event)
     );
 
-    if (!isReadOnly) {
-      if (window.SPOTIM && window.SPOTIM.startSSO) {
-        executeSSOtransaction(isSpotAccountReadOnly, () => {});
-      } else {
-        document.addEventListener("spot-im-api-ready", () =>
-          executeSSOtransaction(isSpotAccountReadOnly, () => {})
-        );
-      }
+    if (window.SPOTIM && window.SPOTIM.startSSO) {
+      document.addEventListener("spot-im-api-ready", () =>
+        executeSSOtransaction(isSpotAccountReadOnly, () => {})
+      );
     }
 
     const launcherScript = document.createElement("script");
@@ -207,7 +202,6 @@ class Comments extends Component {
 
 Comments.propTypes = {
   articleId: PropTypes.string.isRequired,
-  isReadOnly: PropTypes.bool.isRequired,
   commentingConfig: PropTypes.shape({
     accounts: PropTypes.shape({
       current: PropTypes.string.isRequired,
