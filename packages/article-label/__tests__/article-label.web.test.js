@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import ArticleLabel from "../../src/article-label";
+import ArticleLabel from "../src/article-label";
 
 describe("Article Label test on web", () => {
   it("renders ArticleLabel", () => {
