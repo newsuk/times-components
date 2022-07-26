@@ -1,4 +1,5 @@
-const jestConfigurator = require("@times-components/jest-configurator-web").default;
+const jestConfigurator = require("@times-components/jest-configurator-web")
+  .default;
 
 const jc = jestConfigurator(__dirname);
 jc.preset = "ts-jest";

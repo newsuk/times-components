@@ -5,6 +5,5 @@ fixtures
 coverage
 storybook-components
 *.stories.js
-*.stories.native.js
 *.test.js
 .*
