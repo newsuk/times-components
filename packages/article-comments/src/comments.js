@@ -75,13 +75,11 @@ class Comments extends Component {
       }
     };
 
-    let isSpotAccountReadOnly = true;
     let spotAccountId = commentingConfig.account.readOnly;
 
     if (commentingConfig && commentingConfig.switchOver) {
       const switchOverDate = commentingConfig.switchOver;
       if (publishedTime > switchOverDate) {
-        isSpotAccountReadOnly = false;
         spotAccountId = commentingConfig.account.current;
       }
     }
@@ -125,10 +123,10 @@ class Comments extends Component {
 
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
-        executeSSOtransaction(isSpotAccountReadOnly, () => {});
+        executeSSOtransaction(() => {});
       } else {
         document.addEventListener("spot-im-api-ready", () =>
-          executeSSOtransaction(isSpotAccountReadOnly, () => {})
+          executeSSOtransaction(() => {})
         );
       }
     }

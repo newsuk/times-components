@@ -13,28 +13,28 @@ const loginRequest = (url, completeSSOCallback) => {
   xhr.send();
 };
 
-const ssoCallbackReadOnly = (codeA, completeSSOCallback) =>
-  loginRequest(
-    `/api/comments/login?codeA=${encodeURIComponent(codeA)}&readOnly=true`,
-    completeSSOCallback
+const ssoCallback = (codeA, completeSSOCallback) => {
+  const isFeatureFlagEnabled = window.location.search.includes(
+    "enableRealNameCommenting"
   );
 
-const ssoCallback = (codeA, completeSSOCallback) =>
-  loginRequest(
-    `/api/comments/login?codeA=${encodeURIComponent(codeA)}`,
+  const loginRequestUrl = isFeatureFlagEnabled
+    ? "/api/comments/loginv2"
+    : "/api/comments/login";
+
+  return loginRequest(
+    `${loginRequestUrl}?codeA=${encodeURIComponent(codeA)}`,
     completeSSOCallback
   );
+};
 
-const executeSSOtransaction = (isReadOnly, callback) => {
+const executeSSOtransaction = callback => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
-    if (isReadOnly) {
-      window.SPOTIM.startSSO(ssoCallbackReadOnly);
-    } else {
-      window.SPOTIM.startSSO(ssoCallback);
-    }
+    window.SPOTIM.startSSO(ssoCallback);
 
     callback();
   }
 };
 
+export { ssoCallback };
 export default executeSSOtransaction;
