@@ -7,6 +7,7 @@ import "jest-styled-components";
 import { UserState } from "./mocks";
 
 import ArticleComments from "../../src/article-comments";
+import { ssoCallback } from "../../src/comment-login";
 
 const renderComments = ({
   enabled,
@@ -30,6 +31,49 @@ const renderComments = ({
       url="dummy-article-url"
     />
   );
+
+describe("comments-login", () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
+  const xhrMock = {
+    open: jest.fn(),
+    send: jest.fn(),
+    addEventListener: jest.fn()
+  };
+
+  it("uses pre existing commenting service when there isn't a feature flag", () => {
+    jest.spyOn(window, "XMLHttpRequest").mockImplementation(() => xhrMock);
+
+    ssoCallback("mock-code-a", {});
+
+    expect(xhrMock.open).toHaveBeenCalledWith(
+      "GET",
+      "/api/comments/login?codeA=mock-code-a"
+    );
+  });
+
+  it("uses new commenting service when feature flag is enabled", () => {
+    global.window = Object.create(window);
+    const url = "    http://localhost/";
+    Object.defineProperty(window, "location", {
+      value: {
+        href: url,
+        search: "?enableRealNameCommenting"
+      }
+    });
+
+    jest.spyOn(window, "XMLHttpRequest").mockImplementation(() => xhrMock);
+
+    ssoCallback("mock-code-a", {});
+
+    expect(xhrMock.open).toHaveBeenCalledWith(
+      "GET",
+      "/api/comments/loginv2?codeA=mock-code-a"
+    );
+  });
+});
 
 describe("User States", () => {
   it("enabled comments", () => {
