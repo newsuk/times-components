@@ -1,11 +1,11 @@
 /* eslint-disable react/prefer-stateless-function, react/require-render-return, react/no-multi-comp */
 import React, { Component } from "react";
-import { StyleSheet, Text, View, ViewPropTypes } from "react-native";
+import { TcText, TcView } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { fontSizes } from "@times-components/ts-styleguide";
 import ErrorView from "./src/error-view";
 
-const { style: ViewPropTypesStyle } = ViewPropTypes;
+const { style: ViewPropTypesStyle } = PropTypes.object;
 
 class BadComponent extends Component {
   render() {
@@ -13,7 +13,7 @@ class BadComponent extends Component {
   }
 }
 
-const styles = StyleSheet.create({
+const styles = {
   background: {
     backgroundColor: "red"
   },
@@ -27,12 +27,12 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: fontSizes.smallestHeadline
   }
-});
+};
 
 const ErrorState = ({ error: { message }, style }) => (
-  <View style={[styles.background, style]}>
-    <Text style={styles.text}>Err Message: {message}</Text>
-  </View>
+  <TcView style={{ ...styles.background, style }}>
+    <TcText style={styles.text}>Err Message: {message}</TcText>
+  </TcView>
 );
 
 ErrorState.defaultProps = {
@@ -55,7 +55,7 @@ class FiresOnError extends Component {
   }
 
   render() {
-    return <Text>Fires errors</Text>;
+    return <TcText>Fires errors</TcText>;
   }
 }
 
