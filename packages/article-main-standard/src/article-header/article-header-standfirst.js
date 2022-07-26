@@ -10,10 +10,6 @@ const HeaderStandfirst = ({ hasFlags, standfirst }) => {
     ...styles.standFirst
   };
 
-  if (!hasFlags && styles?.standFirstWithoutFlags) {
-    Object.assign(standFirstStyles, ...styles.standFirstWithoutFlags);
-  }
-
   return (
     <TcText
       role="heading"
