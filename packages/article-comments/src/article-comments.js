@@ -17,6 +17,7 @@ const ArticleComments = ({
   articleId,
   publishedTime,
   isEnabled,
+  isReadOnly,
   commentingConfig
 }) =>
   isEnabled ? (
@@ -46,6 +47,7 @@ const ArticleComments = ({
         <Comments
           articleId={articleId}
           publishedTime={publishedTime}
+          isReadOnly={isReadOnly}
           commentingConfig={commentingConfig}
         />
       </UserState>
@@ -58,6 +60,7 @@ ArticleComments.propTypes = {
   articleId: PropTypes.string.isRequired,
   publishedTime: PropTypes.string.isRequired,
   isEnabled: PropTypes.bool.isRequired,
+  isReadOnly: PropTypes.bool,
   commentingConfig: PropTypes.shape({
     accounts: PropTypes.shape({
       current: PropTypes.string.isRequired,
@@ -65,6 +68,10 @@ ArticleComments.propTypes = {
     }),
     switchOver: PropTypes.string.isRequired
   }).isRequired
+};
+
+ArticleComments.defaultProps = {
+  isReadOnly: false
 };
 
 export default ArticleComments;

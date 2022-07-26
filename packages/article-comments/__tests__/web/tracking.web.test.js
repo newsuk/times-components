@@ -18,6 +18,7 @@ class WithTrackingContext extends Component {
     return (
       <Comments
         articleId="test-article-id"
+        isReadOnly={false}
         commentingConfig="test-commentingConfig"
       />
     );
