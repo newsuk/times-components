@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.22.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.67...@times-components/article-comments@0.22.0) (2022-07-26)
+
+
+### Features
+
+* **TDP-2202:** integrate new openweb commenting endpoint ([#3046](https://github.com/newsuk/times-components/issues/3046)) ([c8c39d7](https://github.com/newsuk/times-components/commit/c8c39d76c39c1f0a6e7ceaa8e648c75e57fcf8e8)), closes [#3052](https://github.com/newsuk/times-components/issues/3052)
+
+
+
+
+
 ## [0.21.67](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.21.66...@times-components/article-comments@0.21.67) (2022-07-21)
 
 **Note:** Version bump only for package @times-components/article-comments
