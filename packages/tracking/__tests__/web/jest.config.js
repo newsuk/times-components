@@ -1,7 +1,14 @@
-const jestConfigurator = require("@times-components/jest-configurator").default;
-const path = require("path");
+const jestConfigurator = require("@times-components/jest-configurator-web")
+  .default;
 
-module.exports = jestConfigurator("web", __dirname, {
-  coverageIgnoreGlobs: ["tracking-context-types.js", "tracking.js"],
-  setupFilesAfterEnv: path.join(__dirname, "./serializers")
+const jc = jestConfigurator(__dirname, {
+  coverageIgnoreGlobs: ["tracking-context-types.js", "tracking.js"]
 });
+jc.preset = "ts-jest";
+jc.globals = {
+  "ts-jest": {
+    tsConfigFile: "./tsconfig.jest.json"
+  }
+};
+
+module.exports = jc;

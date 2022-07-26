@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import { TcFlatList } from "@times-components/utils";
 import PropTypes from "prop-types";
 
@@ -46,7 +47,7 @@ class ListComponent extends Component {
       <TcFlatList
         data={items}
         initialNumToRender={items.length}
-        renderItem={({ item }) => <Text>Item {item.someValue}</Text>}
+        renderItem={({ item }) => <TcText>Item {item.someValue}</TcText>}
       />
     );
   }
