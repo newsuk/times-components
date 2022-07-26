@@ -3667,6 +3667,25 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
+"@times-components/jest-configurator-web@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator-web/-/jest-configurator-web-0.7.0.tgz#d606b30f55ea8f770360e060bf6580abcf9fa108"
+  integrity sha512-OJwmfDUKVmY6AxpHza4o0B+5/sf8AkXq2xvROon2e/f7cQeE4hbsLCbCHML/5Hese132RubY6NYZO7vrnABNpw==
+  dependencies:
+    "@babel/core" "7.4.4"
+    "@babel/preset-react" "7.9.1"
+    "@times-components/test-utils" "2.3.10"
+    babel-jest "24.8.0"
+    babel-plugin-istanbul "5.1.3"
+    babel-preset-jest "24.6.0"
+    enzyme "3.9.0"
+    enzyme-adapter-react-16 "1.12.1"
+    find-node-modules "1.0.4"
+    identity-obj-proxy "3.0.0"
+    jest "24.8.0"
+    jest-plugin-context "2.9.0"
+    jest-plugins "2.9.0"
+
 "@times-components/svgs@2.7.36":
   version "2.7.36"
   resolved "https://registry.yarnpkg.com/@times-components/svgs/-/svgs-2.7.36.tgz#a7a17502f7806ce59f39b7bf037e13753edfc905"
