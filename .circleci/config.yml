@@ -1,26 +1,22 @@
 version: 2.1
-
 executors:
     node:
         docker:
-          - image: cimg/node:12.22.0-browsers
+          - image: cimg/node:12.15.0-browsers
         resource_class: 2xlarge
-
 commands:
     install-dependencies:
         description: 'Install Dependencies'
         steps:
             - run:
                   name: Install Dependencies
-                  command: npx yarn@1.22.19 install --frozen-lockfile
+                  command: npx yarn@1.22.15 install --frozen-lockfile
                   working_directory: ~/project/
-
     restore-yarn:
         description: 'Restore Yarn Package Cache'
         steps:
             - restore_cache:
                   key: yarn-packages-{{ checksum "yarn.lock" }}
-
     save-yarn:
         description: 'Save Yarn Package Cache'
         steps:
@@ -37,7 +33,6 @@ commands:
                     sudo apt-get update;
                     sudo add-apt-repository ppa:fontforge/fontforge -y;
                     sudo apt-get install fontforge -y;
-
 jobs:
     setup:
         executor: node
@@ -51,7 +46,6 @@ jobs:
                 root: ./
                 paths:
                     - ./
-
     run_lint:
         executor: node
         steps:
@@ -61,9 +55,8 @@ jobs:
             - run:
                   name: Run Lint
                   command: |
-                      npx yarn@1.22.19 lint
+                      npx yarn@1.22.15 lint
                   working_directory: ~/project/
-
     build_storybook:
         executor: node
         steps:
@@ -73,12 +66,11 @@ jobs:
             - run:
                   name: Run Tests
                   command: |
-                      npx yarn@1.22.19 test
+                      npx yarn@1.22.15 test
                   working_directory: ~/project/
             - store_artifacts:
                 path: ./storybook-static
                 destination: Storybook
-
     run_noplatform_tests:
         executor: node
         steps:
@@ -101,7 +93,6 @@ jobs:
                   command: |
                       npx lerna run test:web --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
-
     run_unit_tests:
         executor: node
         steps:
@@ -113,7 +104,6 @@ jobs:
                   command: |
                       npx lerna run test:unit --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
-
     run_cypress_tests:
         executor: node
         steps:
@@ -126,18 +116,17 @@ jobs:
                     sudo apt-get update;
                     sudo apt-get install -y lsof;
                     sudo apt-get install --no-install-recommends -y libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
-                    npx yarn@1.22.19 cypress install
+                    npx yarn@1.22.15 cypress install
                   working_directory: ~/project/
             - run:
                   name: Run Cypress Tests
                   command: |
-                    npx yarn@1.22.19 test:e2e
+                    npx yarn@1.22.15 test:e2e
                   working_directory: ~/project/
             - store_artifacts:
                 path: packages/ssr/__tests__/screenshots
             - store_artifacts:
                 path: packages/ssr/__tests__/snapshots
-
     publish_coverage:
         executor: node
         steps:
@@ -149,9 +138,8 @@ jobs:
                   command: |
                       export COVERALLS_GIT_COMMIT=$CIRCLE_SHA1
                       export COVERALLS_GIT_BRANCH=$CIRCLE_BRANCH
-                      npx yarn@1.22.19 coverage:publish
+                      npx yarn@1.22.15 coverage:publish
                   working_directory: ~/project/
-
     publish_npm:
         executor: node
         steps:
@@ -162,9 +150,8 @@ jobs:
                   name: Publish to npm
                   command: |
                       npx lerna run bundle --stream
-                      npx yarn@1.22.19 npm:publish
+                      npx yarn@1.22.15 npm:publish
                   working_directory: ~/project/
-
     publish_storybook:
         executor: node
         steps:
@@ -174,12 +161,10 @@ jobs:
             - run:
                   name: Publish Storybook
                   command: |
-                      npx yarn@1.22.19 storybook:publish
+                      npx yarn@1.22.15 storybook:publish
                   working_directory: ~/project/
-
 workflows:
     version: 2
-
     run_tests:
         jobs:
             - setup
