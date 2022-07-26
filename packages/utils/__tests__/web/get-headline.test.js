@@ -1,4 +1,4 @@
-import { getHeadline } from "../src/index";
+import { getHeadline } from "../../src/index";
 
 const headline = "A really long headline";
 const shortHeadline = "Short Headline";

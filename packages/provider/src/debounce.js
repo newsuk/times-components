@@ -1,4 +1,5 @@
 /* eslint-disable react/no-multi-comp */
+/* eslint-disable react/forbid-foreign-prop-types */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";

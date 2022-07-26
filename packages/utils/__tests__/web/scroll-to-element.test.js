@@ -1,4 +1,4 @@
-import { handleOnClickScrollTo, handleHrefScrollTo } from "../src/index";
+import { handleOnClickScrollTo, handleHrefScrollTo } from "../../src/index";
 
 const scrollTo = jest.fn();
 
