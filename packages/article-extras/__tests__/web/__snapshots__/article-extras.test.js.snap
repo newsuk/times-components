@@ -99,6 +99,7 @@ Array [
       }
     }
     isEnabled={true}
+    isReadOnly={true}
   />,
 ]
 `;

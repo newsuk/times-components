@@ -127,6 +127,7 @@ const ArticleExtras = ({
             articleId={articleId}
             isEnabled={commentsEnabled}
             commentingConfig={commentingConfig}
+            isReadOnly
           />
         }
       >
