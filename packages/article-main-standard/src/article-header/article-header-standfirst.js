@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { TcText, checkStylesForUnits } from "@times-components/utils";
 import styles from "../styles/article-header";
 
-const HeaderStandfirst = ({ hasFlags, standfirst }) => {
+const HeaderStandfirst = ({ standfirst }) => {
   if (!standfirst) return null;
 
   const standFirstStyles = {
@@ -23,7 +23,6 @@ const HeaderStandfirst = ({ hasFlags, standfirst }) => {
 };
 
 HeaderStandfirst.propTypes = {
-  hasFlags: PropTypes.bool.isRequired,
   standfirst: PropTypes.string
 };
 
