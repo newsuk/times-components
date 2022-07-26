@@ -50,6 +50,9 @@
     "node": ">=8.9"
   },
   "dependencies": {
+    "@babel/core": "7.4.4",
+    "@babel/preset-env": "7.4.4",
+    "@babel/preset-react": "7.9.1",
     "@times-components/button": "2.6.5",
     "@times-components/date-publication": "0.23.4",
     "@times-components/icons": "2.18.7",

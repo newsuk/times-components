@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Text } from "react-native";
 import { TcText } from "@times-components/utils";
 import { TcFlatList } from "@times-components/utils";
 import PropTypes from "prop-types";
