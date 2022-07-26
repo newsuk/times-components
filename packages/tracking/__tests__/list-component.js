@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { TcText } from "@times-components/utils";
-import { TcFlatList } from "@times-components/utils";
+import { TcText, TcFlatList } from "@times-components/utils";
 import PropTypes from "prop-types";
 
 class ListComponent extends Component {

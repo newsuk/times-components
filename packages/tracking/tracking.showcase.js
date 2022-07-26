@@ -43,7 +43,7 @@ const BoxWithTrackingContext = withTrackingContext(Box, {
   trackingObjectName: "TrackRenderStory"
 });
 
-const BoxWithPressTrackingAndContext = withTrackingContext(
+const BoxWithClickTrackingAndContext = withTrackingContext(
   withTrackEvents(BoxWithButtons, {
     analyticsEvents: [
       {
