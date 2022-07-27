@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import renderer from "react-test-renderer";
 import PropTypes from "prop-types";
 import { withTrackEvents } from "../src/tracking";
@@ -12,7 +12,7 @@ module.exports = () => {
       const { someProp } = props;
       event1("event1 arg");
       event2("event2 arg");
-      return <Text>{someProp}</Text>;
+      return <TcText>{someProp}</TcText>;
     };
     TestComponent.propTypes = {
       event1: PropTypes.func,
