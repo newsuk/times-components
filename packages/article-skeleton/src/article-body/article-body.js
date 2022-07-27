@@ -60,9 +60,6 @@ import {
   Heading4,
   Heading5,
   Heading6,
-  NativeAd,
-  NativeAdTitle,
-  Ad,
   InlineAdWrapper,
   InlineAdTitle
 } from "../styles/article-body/responsive";
@@ -151,15 +148,6 @@ const renderers = ({
           </DropCapView>
         )}
       </Context.Consumer>
-    );
-  },
-  nativeAd(key) {
-    return isLiveOrBreaking ? null : (
-      <NativeAd className="group-3 hidden" key={key}>
-        <NativeAdTitle>Sponsored</NativeAdTitle>
-        <Ad id="advert-inarticle-native-1" data-parent="group-3" />
-        <Ad id="advert-inarticle-native-2" data-parent="group-3" />
-      </NativeAd>
     );
   },
   image(key, { id, display, ratio, url, caption, credits }) {

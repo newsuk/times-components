@@ -3667,10 +3667,10 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
-"@times-components/jest-configurator-web@0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator-web/-/jest-configurator-web-0.7.0.tgz#d606b30f55ea8f770360e060bf6580abcf9fa108"
-  integrity sha512-OJwmfDUKVmY6AxpHza4o0B+5/sf8AkXq2xvROon2e/f7cQeE4hbsLCbCHML/5Hese132RubY6NYZO7vrnABNpw==
+"@times-components/jest-configurator-web@0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator-web/-/jest-configurator-web-0.6.0.tgz#1642f31e4ddde758754d70080688ea61a73d43ae"
+  integrity sha512-F3NVuHB+xYGkI2HKodTpneodVHUgI9BrDzSaEg3jGP8Qnr8v802roNna29paFMBG4jUWBUdtjQ/myc7QzW9r6Q==
   dependencies:
     "@babel/core" "7.4.4"
     "@babel/preset-react" "7.9.1"

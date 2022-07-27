@@ -34,7 +34,6 @@ import StickySaveAndShareBar from "./sticky-save-and-share-bar";
 import insertDropcapIntoAST from "./contentModifiers/dropcap-util";
 import insertNewsletterPuff from "./contentModifiers/newsletter-puff";
 import insertInlineRelatedArticles from "./contentModifiers/inline-related-article";
-import insertNativeAd from "./contentModifiers/native-ad";
 import insertInlineAd from "./contentModifiers/inline-ad";
 import { getIsLiveOrBreakingFlag } from "./data-helper";
 
@@ -83,7 +82,6 @@ const ArticleSkeleton = ({
   const articleContentReducers = [
     insertDropcapIntoAST(template, dropcapsDisabled),
     insertNewsletterPuff(section, isPreview, expirableFlags),
-    insertNativeAd,
     insertInlineAd,
     insertInlineRelatedArticles(
       relatedArticleSlice,
