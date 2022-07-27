@@ -31,7 +31,7 @@ export default () => {
       global.window.utag = realUtag;
     });
 
-    context("inject utag", () => {
+    describe("inject utag", () => {
       it("should throw if not given an env", () => {
         const makeTealiumScheduler = () =>
           new TealiumSendScheduler(
@@ -121,7 +121,7 @@ export default () => {
       });
     });
 
-    context("utag loaded", () => {
+    describe("utag loaded", () => {
       const realRequestIdleCallback = global.window.requestIdleCallback;
 
       const setup = () => {
