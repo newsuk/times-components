@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { TcText } from "@times-components/utils";
 import TestRenderer from "react-test-renderer";
 import PropTypes from "prop-types";
 import { iterator } from "@times-components/test-utils";
@@ -8,7 +8,7 @@ import InvokesError from "./invokes-error";
 import ThrowsError from "./throws-error";
 
 export default () => {
-  const ErrorState = ({ error }) => <Text>{error.toString()}</Text>;
+  const ErrorState = ({ error }) => <TcText>{error.toString()}</TcText>;
 
   ErrorState.propTypes = {
     error: PropTypes.shape({
@@ -17,7 +17,7 @@ export default () => {
     }).isRequired
   };
 
-  const GoodState = () => <Text>All good</Text>;
+  const GoodState = () => <TcText>All good</TcText>;
 
   const tests = [
     {
