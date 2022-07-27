@@ -19,9 +19,9 @@ const styles = {
   },
   customError: {
     alignItems: "center",
-    height: 300,
+    height: "300px",
     justifyContent: "center",
-    width: 400
+    width: "400px"
   },
   text: {
     color: "white",
@@ -30,7 +30,7 @@ const styles = {
 };
 
 const ErrorState = ({ error: { message }, style }) => (
-  <TcView style={{ ...styles.background, style }}>
+  <TcView style={{ ...styles.background, ...style }}>
     <TcText style={styles.text}>Err Message: {message}</TcText>
   </TcView>
 );
