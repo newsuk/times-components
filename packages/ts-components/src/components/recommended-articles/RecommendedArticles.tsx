@@ -40,7 +40,7 @@ export const RecommendedArticles: React.FC<{
 
   return (
     <div id="recommended-articles">
-      {heading && <Header>{heading}</Header>}
+      <Header>{heading}</Header>
       <Slice
         slice={getRecommendedArticlesSlice(articles)}
         clickHandler={onClickHandler}
