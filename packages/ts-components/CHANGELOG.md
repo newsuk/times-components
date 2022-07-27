@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.48.16](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.48.15...@times-components/ts-components@1.48.16) (2022-07-27)
+
+
+### Bug Fixes
+
+* **TDP-2268:** Double tracking bug - replace slice ([#3059](https://github.com/newsuk/times-components/issues/3059)) ([70783ce](https://github.com/newsuk/times-components/commit/70783ced2727227d0b41ce772307f9e9bc27fa15))
+
+
+
+
+
 ## [1.48.15](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.48.14...@times-components/ts-components@1.48.15) (2022-07-26)
 
 **Note:** Version bump only for package @times-components/ts-components
