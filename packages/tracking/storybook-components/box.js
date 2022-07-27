@@ -14,7 +14,9 @@ export const boxStyles = {
 
 const Box = ({ children, color, id }) => (
   <div id={id}>
-    <TcView style={{ ...boxStyles.box, backgroundColor: color }}>{children}</TcView>
+    <TcView style={{ ...boxStyles.box, backgroundColor: color }}>
+      {children}
+    </TcView>
   </div>
 );
 Box.propTypes = {
