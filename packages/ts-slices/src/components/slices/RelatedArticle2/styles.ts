@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { breakpoints } from '@times-components/ts-styleguide';
 
+import { calculateSlotWidth } from '../../../utils/getArticleStyles';
+
 import {
   SliceContainer as SliceContainerBase,
   SlotContainer as SlotContainerBase
@@ -8,7 +10,6 @@ import {
 
 export const SliceContainer = styled(SliceContainerBase)`
   @media (min-width: ${breakpoints.medium}px) {
-    flex-wrap: nowrap;
     width: 80.8%;
     max-width: none;
     padding: 0;
@@ -21,8 +22,21 @@ export const SliceContainer = styled(SliceContainerBase)`
 
 export const SlotContainer = styled(SlotContainerBase)`
   @media (min-width: ${breakpoints.medium}px) {
+    width: ${calculateSlotWidth(50, 2)};
     margin-bottom: 24px;
-    padding-right: 0;
     padding-bottom: 24px;
+
+    &:first-of-type {
+      padding-right: 12px;
+
+      :before {
+        display: block;
+        bottom: 24px;
+      }
+    }
+
+    &:last-of-type {
+      padding-left: 12px;
+    }
   }
 `;

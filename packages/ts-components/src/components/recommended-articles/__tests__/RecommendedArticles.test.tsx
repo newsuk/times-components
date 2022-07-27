@@ -13,16 +13,13 @@ jest.mock('../../../helpers/fetch/FetchProvider', () => ({
   useFetch: jest.fn()
 }));
 
-jest.mock('@times-components/related-articles', () => ({
+jest.mock('@times-components/ts-slices', () => ({
   __esModule: true,
-  default: (props: any) => (
+  Slice: (props: any) => (
     <div>
       RelatedArticles
-      <div>{props.heading}</div>
-      {props.slice.items.map(({ article }: any) => (
-        <div
-          onClick={() => props.onPress(null, { url: article.shortIdentifier })}
-        >
+      {props.slice.children.map(({ article }: any) => (
+        <div onClick={() => props.clickHandler(null, article)}>
           {article.headline}
         </div>
       ))}
