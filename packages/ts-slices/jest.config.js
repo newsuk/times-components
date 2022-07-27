@@ -17,7 +17,7 @@ const buildConfig = dir => {
       `**/packages/${name}/**/__tests__/*.test.ts`
     ],
     transform: {
-      '^.+\\.js$': path.resolve(__dirname, 'source-loader.js'),
+      '.+\\.js$': './node_modules/react-native/jest/preprocessor.js',
       '.+\\.tsx?$': 'ts-jest'
     },
     globals: {
