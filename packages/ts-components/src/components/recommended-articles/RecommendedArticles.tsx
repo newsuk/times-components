@@ -1,11 +1,14 @@
 import React from 'react';
 import get from 'lodash.get';
-
-import RelatedArticles from '@times-components/related-articles';
+import {
+  Slice,
+  SliceArticle,
+  MouseEventType
+} from '@times-components/ts-slices';
 
 import { useFetch } from '../../helpers/fetch/FetchProvider';
 import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvider';
-import { getRelatedArticlesSlice } from './formatters';
+import { getRecommendedArticlesSlice } from './formatters';
 
 export const RecommendedArticles: React.FC<{
   heading: string;
@@ -16,38 +19,33 @@ export const RecommendedArticles: React.FC<{
     return null;
   }
 
-  const articles = get(data, 'recommendations.articles');
+  let articles = get(data, 'recommendations.articles');
 
   if (!articles || !articles.length) {
     return null;
   }
 
+  if (articles.length > 3) {
+    articles = articles.slice(0, 3);
+  }
+
   const { fireAnalyticsEvent } = useTrackingContext();
 
-  const slice = getRelatedArticlesSlice(articles);
-
-  const onClickHandler = (__: MouseEvent, article: { url: string }) => {
-    const found = slice.items.find(
-      item => item.article.shortIdentifier === article.url.slice(-9)
-    );
-
+  const onClickHandler = (__: MouseEventType, article: SliceArticle) => {
     if (fireAnalyticsEvent) {
       fireAnalyticsEvent({
         action: 'Clicked',
-        attrs: { article_parent_name: found ? found.article.headline : '' }
+        attrs: { article_parent_name: article.headline }
       });
     }
   };
 
   return (
     <div id="recommended-articles">
-      <RelatedArticles
-        heading={heading}
-        slice={slice}
-        isVisible
-        onPress={onClickHandler}
-        // tslint:disable-next-line: no-empty
-        analyticsStream={() => {}}
+      {heading && <div className="heading">{heading}</div>}
+      <Slice
+        slice={getRecommendedArticlesSlice(articles)}
+        clickHandler={onClickHandler}
       />
     </div>
   );

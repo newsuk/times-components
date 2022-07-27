@@ -17,6 +17,8 @@ import Secondary4 from '../components/slices/Secondary4/Secondary4';
 import Secondary4Odd from '../components/slices/Secondary4Odd/Secondary4Odd';
 import Secondary10 from '../components/slices/Secondary10/Secondary10';
 import RelatedArticle1 from '../components/slices/RelatedArticle1/RelatedArticle1';
+import RelatedArticle2 from '../components/slices/RelatedArticle2/RelatedArticle2';
+import RelatedArticle3 from '../components/slices/RelatedArticle3/RelatedArticle3';
 
 export const getSliceComponent = (
   name: string
@@ -59,6 +61,10 @@ export const getSliceComponent = (
       return Secondary10;
     case 'RELATED_ARTICLE_1':
       return RelatedArticle1;
+    case 'RELATED_ARTICLE_2':
+      return RelatedArticle2;
+    case 'RELATED_ARTICLE_3':
+      return RelatedArticle3;
 
     default:
       return () => null;

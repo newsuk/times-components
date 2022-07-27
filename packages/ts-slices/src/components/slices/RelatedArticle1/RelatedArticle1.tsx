@@ -10,7 +10,7 @@ import { Article } from '../../article/Article/Article';
 
 import { SliceContainer, SlotContainer } from './styles';
 
-const Lead1: React.FC<{
+const RelatedArticle1: React.FC<{
   slice: SliceData;
   styles?: SliceStyle;
   clickHandler?: ClickHandlerType;
@@ -20,13 +20,8 @@ const Lead1: React.FC<{
       <Article
         article={get(slice, 'children[0].article')}
         displaySchema={setDisplaySchema({
-          sm: {
-            imageRatio: '3:2',
-            headlineFontSize: 28
-          },
-          md: { isSideBySide: true },
-          lg: { headlineFontSize: 32 },
-          xlg: { headlineFontSize: 36 }
+          sm: { imageRatio: '16:9', headlineFontSize: 22 },
+          md: { isSideBySide: true }
         })}
         clickHandler={clickHandler}
       />
@@ -34,4 +29,4 @@ const Lead1: React.FC<{
   </SliceContainer>
 ));
 
-export default Lead1;
+export default RelatedArticle1;

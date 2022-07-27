@@ -15,7 +15,7 @@ exports[`RelatedArticleSlice renders 1 1`] = `
       Related Articles
     </div>
     <div
-      class="shared-styles__SliceContainer-ismxwo-0 styles__SliceContainer-b33h2c-0 dDeBKy"
+      class="shared-styles__SliceContainer-ismxwo-0 styles__SliceContainer-b33h2c-0 bJHjPH"
     >
       <div
         class="shared-styles__SlotContainer-ismxwo-1 styles__SlotContainer-b33h2c-1 cKwigu"
@@ -33,14 +33,14 @@ exports[`RelatedArticleSlice renders 1 1`] = `
                 href="https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t"
               >
                 <div
-                  class="styles__ImageRatio-sc-8lglkt-1 gbnXjW"
+                  class="styles__ImageRatio-sc-8lglkt-1 kDSgGC"
                 >
                   <div
                     class="styles__LazyContainer-qsbah5-0 jRxzJB"
                   >
                     <img
                       alt=""
-                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3744%2C0%2C0&resize=80"
+                      src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7547ab46-ace4-11eb-bda6-057976012425.jpg?crop=5616%2C3159%2C0%2C293&resize=80"
                     />
                   </div>
                 </div>
@@ -56,7 +56,7 @@ exports[`RelatedArticleSlice renders 1 1`] = `
               Comment
             </p>
             <div
-              class="styles__HeadlineContainer-k0mgwi-0 jkGvyo"
+              class="styles__HeadlineContainer-k0mgwi-0 ghKmOQ"
             >
               <a
                 href="https://www.thetimes.co.uk/article/how-to-recruit-the-best-young-people-to-your-business-5kksq826t"
