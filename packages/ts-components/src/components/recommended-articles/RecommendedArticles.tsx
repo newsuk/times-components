@@ -10,6 +10,8 @@ import { useFetch } from '../../helpers/fetch/FetchProvider';
 import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvider';
 import { getRecommendedArticlesSlice } from './formatters';
 
+import { Header } from './styles';
+
 export const RecommendedArticles: React.FC<{
   heading: string;
 }> = ({ heading }) => {
@@ -19,14 +21,10 @@ export const RecommendedArticles: React.FC<{
     return null;
   }
 
-  let articles = get(data, 'recommendations.articles');
+  const articles = get(data, 'recommendations.articles');
 
   if (!articles || !articles.length) {
     return null;
-  }
-
-  if (articles.length > 3) {
-    articles = articles.slice(0, 3);
   }
 
   const { fireAnalyticsEvent } = useTrackingContext();
@@ -42,7 +40,7 @@ export const RecommendedArticles: React.FC<{
 
   return (
     <div id="recommended-articles">
-      {heading && <div className="heading">{heading}</div>}
+      {heading && <Header>{heading}</Header>}
       <Slice
         slice={getRecommendedArticlesSlice(articles)}
         clickHandler={onClickHandler}

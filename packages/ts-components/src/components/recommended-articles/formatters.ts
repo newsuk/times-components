@@ -79,8 +79,10 @@ const getSliceName = (numOfArticles: number) => {
 export const getRecommendedArticlesSlice = (articles: Article[]) => {
   return {
     name: getSliceName(articles.length),
-    children: articles.map((article: Article) => ({
-      article: formatArticle(article)
-    }))
+    children: articles
+      .map((article: Article) => ({
+        article: formatArticle(article)
+      }))
+      .slice(0, 3)
   };
 };
