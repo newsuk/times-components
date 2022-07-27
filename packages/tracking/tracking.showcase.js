@@ -83,7 +83,7 @@ export default {
     },
     {
       component: () => (
-        <BoxWithPressTrackingAndContext
+        <BoxWithClickTrackingAndContext
           analyticsStream={storybookReporter}
           color="red"
           onPress={() => {}}
