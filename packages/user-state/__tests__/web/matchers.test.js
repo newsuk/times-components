@@ -8,7 +8,7 @@ import {
   shouldShowFullArticle,
   isLoggedInOrShared,
   hasAccess
-} from "../src/matchers";
+} from "../../src/matchers";
 
 const defaultUserState = {
   isLoggedIn: false,
