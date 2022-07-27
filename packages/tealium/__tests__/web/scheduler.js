@@ -1,4 +1,3 @@
-/* global context */
 import { delayAndAdvance } from "@times-components/test-utils";
 import { TealiumSendScheduler } from "../../src";
 
