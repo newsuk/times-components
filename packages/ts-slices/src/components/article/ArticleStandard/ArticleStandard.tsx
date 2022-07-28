@@ -1,9 +1,9 @@
 import React from 'react';
-import { format } from 'date-fns';
 
 import { SliceArticle } from '../../../types/slice';
 import { ClickHandlerType } from '../../../types/event';
 import { DisplaySchema } from '../../../types/styles';
+import { getDate } from '../../../utils/getDate';
 
 import { Image } from '../../elements/Image/Image';
 import { Headline } from '../../elements/Headline/Headline';
@@ -20,9 +20,7 @@ export const ArticleStandard: React.FC<{
     return null;
   }
 
-  const date = article.datePublished
-    ? format(new Date(article.datePublished), 'MMMM d yyyy, h.mmaaa')
-    : null;
+  const date = getDate(article.datePublished);
 
   return (
     <ArticleContainer schema={displaySchema}>

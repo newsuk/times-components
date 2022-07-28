@@ -1,5 +1,4 @@
 import React from 'react';
-import MockDate from 'mockdate';
 import { render } from '@testing-library/react';
 
 import { ArticleStandard } from '../ArticleStandard';
@@ -18,8 +17,6 @@ describe('<ArticleStandard />', () => {
   });
 
   it('should render an article correctly', () => {
-    MockDate.set('2020-08-20T13:00:00.000Z');
-
     const article = {
       images: { crops: [] },
       label: 'Some text label',
