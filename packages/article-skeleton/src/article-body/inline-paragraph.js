@@ -3,11 +3,7 @@ import React, { useState } from "react";
 import { TcView, TcText, screenWidth } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { tabletWidth, styleguide } from "@times-components/ts-styleguide";
-import {
-  TextContainer,
-  LayoutManager,
-  BoxExclusion
-} from "@times-components/typeset";
+import { TextContainer, LayoutManager } from "@times-components/typeset";
 import ArticleParagraphWrapper from "@times-components/article-paragraph";
 
 const InlineParagraph = ({
@@ -23,7 +19,7 @@ const InlineParagraph = ({
   LinkComponent
 }) => {
   const { spacing } = styleguide({ scale });
-  const [inlineExclusion, setInlineExclusion] = useState(false);
+  const [inlineExclusion] = useState(false);
 
   if (!str.length) {
     return null;
@@ -60,20 +56,6 @@ const InlineParagraph = ({
           position: "absolute",
           left: gutters,
           width: contentWidth * 0.35
-        }}
-        onLayout={e => {
-          const { height } = e.nativeEvent.layout;
-          if (!inlineExclusion) {
-            setInlineExclusion({
-              exclusion: new BoxExclusion(
-                0,
-                0,
-                contentWidth * 0.35 + spacing(2),
-                height + spacing(2)
-              ),
-              height
-            });
-          }
         }}
       >
         {inline}
