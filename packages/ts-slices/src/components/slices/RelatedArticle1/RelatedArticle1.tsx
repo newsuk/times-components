@@ -6,7 +6,7 @@ import { SliceStyle } from '../../../types/styles';
 import { ClickHandlerType } from '../../../types/event';
 import { setDisplaySchema } from '../../../utils/getArticleStyles';
 
-import { Article } from '../../article/Article/Article';
+import { ArticleStandard } from '../../article/ArticleStandard/ArticleStandard';
 
 import { SliceContainer, SlotContainer } from './styles';
 
@@ -17,7 +17,7 @@ const RelatedArticle1: React.FC<{
 }> = React.memo(({ slice, styles, clickHandler }) => (
   <SliceContainer styles={styles}>
     <SlotContainer styles={styles}>
-      <Article
+      <ArticleStandard
         article={get(slice, 'children[0].article')}
         displaySchema={setDisplaySchema({
           sm: { imageRatio: '16:9', headlineFontSize: 22 },

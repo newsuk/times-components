@@ -5,7 +5,7 @@ import { SliceStyle } from '../../../types/styles';
 import { ClickHandlerType } from '../../../types/event';
 import { setDisplaySchema } from '../../../utils/getArticleStyles';
 
-import { Article } from '../../article/Article/Article';
+import { ArticleStandard } from '../../article/ArticleStandard/ArticleStandard';
 
 import { SliceContainer, SlotContainer } from './styles';
 
@@ -17,7 +17,7 @@ const RelatedArticle2: React.FC<{
   <SliceContainer styles={styles}>
     {slice.children.map((slot: SliceSlot, i: number) => (
       <SlotContainer key={i} styles={styles}>
-        <Article
+        <ArticleStandard
           article={slot.article}
           displaySchema={setDisplaySchema({
             sm: {
