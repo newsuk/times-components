@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ts-slices",
-  "version": "1.4.5",
+  "version": "1.5.0",
   "description": "Reuseable Typescript React Components",
   "main": "dist/index.js",
   "dev": "dist/index.js",
