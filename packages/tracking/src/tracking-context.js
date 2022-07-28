@@ -76,7 +76,7 @@ const withTrackingContext = (
         decoratedEvent.attrs.eventTime = new Date().toISOString();
       }
 
-      if(attrs.isLocked !== undefined) {
+      if (attrs?.isLocked) {
         decoratedEvent.article_locked_status = attrs.isLocked;
       }
 

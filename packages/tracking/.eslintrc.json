@@ -1,3 +1,4 @@
 {
-  "extends": ["@times-components/thetimes"]
+  "extends": ["@times-components/thetimes"],
+  "parser": "@babel/eslint-parser"
 }
