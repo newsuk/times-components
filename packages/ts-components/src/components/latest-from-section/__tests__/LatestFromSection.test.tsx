@@ -21,7 +21,6 @@ describe('<LatestFromSection>', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
-
   it('no data ', () => {
     const { asFragment } = render(
       <LatestFromSection
