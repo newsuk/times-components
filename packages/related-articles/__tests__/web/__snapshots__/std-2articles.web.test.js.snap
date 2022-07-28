@@ -51,15 +51,6 @@ exports[`1. two related articles 1`] = `
                       First Short Headline
                     </div>
                     <div>
-                      <div>
-                        <div>
-                          
-                          Summary 125
-                          ...
-                        </div>
-                      </div>
-                    </div>
-                    <div>
                       <time
                         dateTime="2015-03-13T18:54:58.000Z"
                       >
@@ -115,15 +106,6 @@ exports[`1. two related articles 1`] = `
                       role="heading"
                     >
                       Second Short Headline
-                    </div>
-                    <div>
-                      <div>
-                        <div>
-                          
-                          Summary 125
-                          ...
-                        </div>
-                      </div>
                     </div>
                     <div>
                       <time
