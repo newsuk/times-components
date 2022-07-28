@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`save and share tracking events when press share article url by email 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleHeadline": "test-headline",
+    "articleId": "id-123",
+  },
+  "component": "ArticleShareUrlByEmail",
+}
+`;
+
+exports[`save and share tracking events when press share on facebook 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleHeadline": "test-headline",
+    "articleId": "id-123",
+  },
+  "component": "ArticleShareOnFacebook",
+}
+`;
