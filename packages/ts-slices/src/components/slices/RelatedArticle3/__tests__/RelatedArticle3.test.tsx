@@ -5,8 +5,8 @@ import { getSlice } from '../../../../fixtures/getSlice';
 
 import RelatedArticle3 from '../RelatedArticle3';
 
-jest.mock('../../../article/Article/Article', () => ({
-  Article: () => <div>Article</div>
+jest.mock('../../../article/ArticleStandard/ArticleStandard', () => ({
+  ArticleStandard: () => <div>ArticleStandard</div>
 }));
 
 describe('<RelatedArticle3 />', () => {
@@ -21,7 +21,7 @@ describe('<RelatedArticle3 />', () => {
       <RelatedArticle3 slice={slice} />
     );
 
-    const article = getAllByText('Article');
+    const article = getAllByText('ArticleStandard');
     expect(article.length).toBe(3);
 
     expect(asFragment()).toMatchSnapshot();
