@@ -52,8 +52,8 @@ export default () => {
     const articleUrl = "https://www.thetimes.co.uk/";
     const getTokenisedShareUrl = jest.fn(mockGetTokenisedArticleUrl);
 
-    let stream = null;
-    let testInstance = null;
+    let stream;
+    let testInstance;
     let realLocation;
 
     beforeEach(() => {
@@ -88,9 +88,9 @@ export default () => {
       global.window.location = realLocation;
     });
 
-    it("when press share on twitter", () => {
+    it("when click share on twitter", () => {
       const shareOnTwitterBarItem = testInstance.root.findAllByType(BarItem)[1];
-      shareOnTwitterBarItem.props.onPress();
+      shareOnTwitterBarItem.props.onClick();
 
       const call = stream.mock.calls[0][0];
 
