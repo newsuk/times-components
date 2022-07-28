@@ -5,6 +5,7 @@ declare global {
   }
 }
 
+import startCase from 'lodash.startcase';
 import React, { useEffect, useState } from 'react';
 
 import { FetchProvider } from '../../helpers/fetch/FetchProvider';
@@ -38,7 +39,7 @@ export const RecommendedFetch: React.FC<{
     }
   }, []);
 
-  const heading = `Today's ${articleSection}`;
+  const heading = `Today's ${startCase(articleSection)}`;
 
   return isClientSide ? (
     <FetchProvider
