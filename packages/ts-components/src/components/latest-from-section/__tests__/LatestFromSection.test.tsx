@@ -21,8 +21,8 @@ describe('<LatestFromSection>', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
-  
-  xit('no data ', () => {
+
+  it('no data ', () => {
     const { asFragment } = render(
       <LatestFromSection
         analyticsStream={jest.fn()}
