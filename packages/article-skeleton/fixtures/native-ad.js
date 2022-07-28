@@ -139,7 +139,7 @@ const contentWithAd = [
         children: []
       },
       {
-        name: "ad",
+        name: "nativeAd",
         children: []
       },
       {
@@ -224,7 +224,7 @@ const contentIncludesPaywall = [
     children: []
   },
   {
-    name: "ad",
+    name: "nativeAd",
     children: []
   },
   {
