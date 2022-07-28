@@ -5,11 +5,13 @@ exports[`<RecommendedArticles> should render RelatedArticles correctly with 1 ar
   <div
     id="recommended-articles"
   >
+    <div
+      class="sc-bdVaJa layBAg"
+    >
+      Today's news
+    </div>
     <div>
       RelatedArticles
-      <div>
-        Today's news
-      </div>
       <div>
         Save or splurge: what experts spend their own money on
       </div>
@@ -23,11 +25,13 @@ exports[`<RecommendedArticles> should render RelatedArticles correctly with 2 ar
   <div
     id="recommended-articles"
   >
+    <div
+      class="sc-bdVaJa layBAg"
+    >
+      Today's news
+    </div>
     <div>
       RelatedArticles
-      <div>
-        Today's news
-      </div>
       <div>
         Save or splurge: what experts spend their own money on
       </div>
@@ -44,11 +48,13 @@ exports[`<RecommendedArticles> should render RelatedArticles correctly with 3 ar
   <div
     id="recommended-articles"
   >
+    <div
+      class="sc-bdVaJa layBAg"
+    >
+      Today's news
+    </div>
     <div>
       RelatedArticles
-      <div>
-        Today's news
-      </div>
       <div>
         Save or splurge: what experts spend their own money on
       </div>

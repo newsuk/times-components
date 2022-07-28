@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.4.5](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.4.4...@times-components/ts-slices@1.4.5) (2022-07-27)
+
+
+### Bug Fixes
+
+* **TDP-2268:** Double tracking bug - replace slice ([#3059](https://github.com/newsuk/times-components/issues/3059)) ([70783ce](https://github.com/newsuk/times-components/commit/70783ced2727227d0b41ce772307f9e9bc27fa15))
+
+
+
+
+
 ## [1.4.4](https://github.com/newsuk/times-components/compare/@times-components/ts-slices@1.4.3...@times-components/ts-slices@1.4.4) (2022-07-19)
 
 **Note:** Version bump only for package @times-components/ts-slices

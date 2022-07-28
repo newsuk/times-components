@@ -11,7 +11,18 @@ export default Component =>
   withTrackingContext(Component, {
     getAttrs: ({ data, pageSection, navigationMode, referralUrl = "" }) => {
       let editionType = "";
+      let hasAccessViaTimes = false;
       const flags = data.expirableFlags;
+
+      if (window) {
+        // eslint-disable-next-line
+        if (window.__TIMES_ACCESS_AND_IDENTITY__) {
+          // eslint-disable-next-line
+          if (window.__TIMES_ACCESS_AND_IDENTITY__.hasAccess) {
+            hasAccessViaTimes = true;
+          }
+        }
+      }
 
       if (navigationMode) {
         const { isMyArticles, isPastSixDays } = navigationMode;
@@ -27,10 +38,7 @@ export default Component =>
         article_topic_tags: data.topics
           ? data.topics.map(topic => topic.name)
           : [],
-        // eslint-disable-next-line
-        isLocked: window.__TIMES_ACCESS_AND_IDENTITY__?.hasAccess
-          ? "unlocked"
-          : "locked",
+        isLocked: hasAccessViaTimes ? "unlocked" : "locked",
         bylines: get(
           data,
           "bylines[0].byline[0].children[0].attributes.value",
