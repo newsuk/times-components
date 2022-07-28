@@ -7,37 +7,6 @@ cap" at the beginning of a paragraph.
 On the web, the drop cap is implemented using CSS floats, and should work with
 any styling or markup used.
 
-React Native does not support CSS floats. Therefore, on android,
-the drop cap is implemented by rendering three separate text boxes to
-mimic the expected layout, as shown below.
-
-```
- __________________________________________________________
-|     _     | Lorem ipsum dolor sit amet, consectetur      |
-|    / \    | adipiscing elit. Vivamus imperdiet dapibus   |
-|   / _ \   | justo, non varius turpis ornare at. Sed nec  |
-|  / ___ \  | tellus sit amet sapien pretium efficitur sit |
-| /_/   \_\ | amet et mi. Mauris vel lorem erat. Proin     |
-|‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾|
-| pulvinar eros purus, nec lobortis purus mollis viverra.  |
-| Nullam tristique id ligula eget ornare. Curabitur vitae  |
-| erat quam. Vivamus rutrum arcu enim, eu cursus nunc      |
-| congue faucibus. Proin lacinia facilisis auctor.         |
- ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
-```
-
-## Gotchas
-
-To implement this on Android, we must know the number of words that can fit
-next to the specified drop cap character, and then split the paragraph text at
-this point. Because of this, all styling or markup must be stripped.
-**This means on Android, you cannot have styling or markup in a paragraph containing a drop cap.**
-
-We use a [3rd party library](https://github.com/aMarCruz/react-native-text-size)
-to calculate the text to fit next to the drop cap. There is currently limited support for iOS
-from this library. **Therefore, this package
-does not currently have support for iOS.**
-
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
