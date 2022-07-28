@@ -12,7 +12,7 @@ describe('<LatestFromSection>', () => {
     };
   });
 
-  xit('renders ', () => {
+  it('renders ', () => {
     const { asFragment } = render(
       <LatestFromSection
         analyticsStream={jest.fn()}
