@@ -55,7 +55,7 @@
     "@times-components/storybook": "4.4.0",
     "@times-components/webpack-configurator": "2.0.29",
     "babel-jest": "24.8.0",
-    "babel-plugin-styled-components": "2.0.7",
+    "babel-plugin-styled-components": "1.10.6",
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
