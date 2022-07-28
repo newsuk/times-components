@@ -4,8 +4,6 @@ export const getSelfContainedFunctionErrors = f => {
   const linter = new Linter();
   // eslint can't handle top level unnamed function
   const source = String(f).replace(/^function\s*\(/, "function _(");
-  // eslint-disable-next-line no-console
-  console.error("getSelfContainedFunctionErrors: source", source);
   return linter
     .verify(source, {
       rules: { "no-undef": "error" }
@@ -38,8 +36,6 @@ ${String(source)
 
 export const expectFunctionToBeSelfContained = f => {
   const errors = getSelfContainedFunctionErrors(f);
-  // eslint-disable-next-line no-console
-  console.error("ADAM: THIS IS WITH errors", errors);
   reportErrors(errors);
   expect(errors).toEqual([]);
   // Object.assign transpiles to _extends global helper in react native compile, but
