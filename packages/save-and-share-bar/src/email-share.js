@@ -39,7 +39,7 @@ class EmailShare extends Component {
         })
         .catch(error => {
           this.setState({ isLoading: false });
-          console.error("Error in connecting to api", error); // eslint-disable-line no-console
+          console.error("Error in connecting to api", error);
         });
     } else {
       const matches = window.location.search.match(/[?&]shareToken=([^&]+)/);
