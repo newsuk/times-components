@@ -10,12 +10,6 @@ still be visible.
 For web the package is very simple, with the image component serving simple DOM
 elements. There is no concept of a modal for web.
 
-## On native
-
-## Android only
-
-Code for iOs and Android displaying a modal-image has been removed, and now modal-image just renders the web image.
-
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
@@ -46,10 +40,3 @@ yarn test:web
 Visit the official
 [storybook](http://components.thetimes.co.uk/?knob-Size%20of%20ad%20placeholder%3A=default&selectedKind=Primitives%2FImage&selectedStory=Fills%20parent%20width&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
 to see our available image templates.
-
-## Issues
-
-On Android, SVGs rendered using ART from React Native are disappearing after the
-app is moved into the background, and then refocused. This is a known RN issue
-which we intend to address shortly, perhaps by moving away from ART. Track the
-issue on [JIRA](https://nidigitalsolutions.jira.com/browse/REPLAT-3385).
