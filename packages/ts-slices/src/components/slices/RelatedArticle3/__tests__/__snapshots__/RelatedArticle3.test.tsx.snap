@@ -9,21 +9,21 @@ exports[`<RelatedArticle3 /> should render an RELATED_ARTICLE_3 slice correctly 
       class="sc-bwzfXH sc-htpNat kmrygX"
     >
       <div>
-        Article
+        ArticleStandard
       </div>
     </div>
     <div
       class="sc-bwzfXH sc-htpNat kmrygX"
     >
       <div>
-        Article
+        ArticleStandard
       </div>
     </div>
     <div
       class="sc-bwzfXH sc-htpNat kmrygX"
     >
       <div>
-        Article
+        ArticleStandard
       </div>
     </div>
   </div>

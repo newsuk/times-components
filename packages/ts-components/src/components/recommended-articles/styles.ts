@@ -3,7 +3,7 @@ import { colours, fonts } from '@times-components/ts-styleguide';
 
 export const Header = styled.div`
   margin-bottom: 12px;
-  padding: 12px;
+  padding: 16px 12px 12px 12px;
   color: ${colours.functional.brandColour};
   font-family: ${fonts.headline};
   font-size: 24px;

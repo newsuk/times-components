@@ -36,7 +36,7 @@ const initialContext = {
   object: 'RecommendedArticles',
   attrs: {
     event_navigation_action: 'navigation',
-    event_navigation_name: 'widget : relevant article',
+    event_navigation_name: 'widget:relevant article',
     event_navigation_browsing_method: 'click',
     section_details: `section : ${section}`,
     article_name: 'Headline',

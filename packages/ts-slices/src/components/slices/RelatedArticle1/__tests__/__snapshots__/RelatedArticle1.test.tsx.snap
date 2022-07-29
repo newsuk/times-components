@@ -9,7 +9,7 @@ exports[`<RelatedArticle1 /> should render an RELATED_ARTICLE_1 slice correctly 
       class="sc-bwzfXH sc-bxivhb jpYeVk"
     >
       <div>
-        Article
+        ArticleStandard
       </div>
     </div>
   </div>

@@ -67,9 +67,14 @@ exports[`RelatedArticleSlice renders 1 1`] = `
               </a>
             </div>
             <p
-              class="styles__Strapline-p3h2iu-0 iVGLEU"
+              class="styles__DateTime-sc-1p1alcs-0 lgyzmN"
             >
-              The average age of my colleagues at Gymshark was 26 when we had 260 staff in 2018. It is now 29, but we have almost tripled in size. Half our management team is younger than 30, including our founder Ben, who set up the
+              May 05 2021, 12.01am
+            </p>
+            <p
+              class="styles__Byline-sc-1p1alcs-1 eJxJuH"
+            >
+              Steve Hewitt
             </p>
           </div>
         </article>
