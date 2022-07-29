@@ -112,9 +112,11 @@ describe("interactive-wrapper", () => {
       window.dispatchEvent(new Event("WebComponentsReady"));
 
       jest.runAllTicks();
-      expect(hasResolved).toEqual(true);
 
       await promise;
+
+      expect(hasResolved).toEqual(true);
+
     });
 
     it("adds the polyfill to the page only once", async () => {
