@@ -15,14 +15,6 @@
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "bundle": "NODE_ENV=production webpack -p"
   },
-  "jest": {
-    "rootDir": "../..",
-    "coverageDirectory": "<rootDir>/packages/video/coverage/",
-    "testEnvironment": "jsdom",
-    "testMatch": [
-      "<rootDir>/packages/video/__tests__/*.test.js"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/newsuk/times-components.git"
