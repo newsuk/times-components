@@ -1,4 +1,3 @@
-/* global context */
 import {
   acceptedWidths,
   normaliseWidthForAssetRequestCache,
@@ -6,7 +5,7 @@ import {
 } from "../src/index";
 
 describe("screen utilities", () => {
-  context("normaliseWidthForAssetRequestCache", () => {
+  describe("normaliseWidthForAssetRequestCache", () => {
     it("should return the next highest value from the acceptedWidths array", () => {
       const firstAcceptedWidthItem = acceptedWidths[0];
       const width = firstAcceptedWidthItem - 1;
@@ -24,7 +23,7 @@ describe("screen utilities", () => {
     });
   });
 
-  context("screenWidth", () => {
+  describe("screenWidth", () => {
     it("should return the device screen width", () => {
       expect(screenWidth()).toMatchSnapshot();
     });

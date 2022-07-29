@@ -8,7 +8,6 @@ const buildConfig = dir => {
   const name = packageName.replace('@times-components/', '');
   return {
     rootDir: path.join(dir, '../..'),
-    preset: 'react-native-web',
     moduleFileExtensions: ['js', 'ts', 'tsx', 'node', 'json'],
     transformIgnorePatterns: [],
     testEnvironment: 'jsdom',
