@@ -116,7 +116,6 @@ describe("interactive-wrapper", () => {
       await promise;
 
       expect(hasResolved).toEqual(true);
-
     });
 
     it("adds the polyfill to the page only once", async () => {
