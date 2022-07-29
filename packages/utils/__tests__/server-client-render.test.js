@@ -6,7 +6,7 @@
 import React from "react";
 import { hydrate, render } from "react-dom";
 import { renderToString } from "react-dom/server";
-import ServerClientRender from "../../src/server-client-render";
+import ServerClientRender from "../src/server-client-render";
 
 describe("ServerClientRender", () => {
   it("renders the server path on the server", () => {

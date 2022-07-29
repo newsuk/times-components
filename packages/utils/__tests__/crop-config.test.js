@@ -1,4 +1,4 @@
-import getStandardTemplateCrop from "../../src/crop-config";
+import getStandardTemplateCrop from "../src/crop-config";
 
 const leadAsset = {
   crop11: {

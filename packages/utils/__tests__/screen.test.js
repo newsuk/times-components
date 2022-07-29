@@ -2,7 +2,7 @@ import {
   acceptedWidths,
   normaliseWidthForAssetRequestCache,
   screenWidth
-} from "../../src/index";
+} from "../src/index";
 
 describe("screen utilities", () => {
   describe("normaliseWidthForAssetRequestCache", () => {

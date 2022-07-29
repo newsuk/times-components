@@ -1,4 +1,4 @@
-import getLeadAsset, { defaultAsset } from "../../src/get-lead-asset";
+import getLeadAsset, { defaultAsset } from "../src/get-lead-asset";
 
 const leadAsset = {
   caption: null,

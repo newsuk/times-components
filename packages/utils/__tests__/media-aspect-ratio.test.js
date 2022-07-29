@@ -7,8 +7,8 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import TcText from "../../src/tc-text";
-import AspectRatioContainer from "../../src/media-aspect-ratio";
+import TcText from "../src/tc-text";
+import AspectRatioContainer from "../src/media-aspect-ratio";
 
 addSerializers(
   expect,
