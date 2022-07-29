@@ -4,7 +4,10 @@ export const getSelfContainedFunctionErrors = f => {
   const linter = new Linter();
   // eslint can't handle top level unnamed function
   const source = String(f).replace(/^function\s*\(/, "function _(");
-  return linter
+
+  console.log("ADAM: functions.... ", source);
+
+  const lintedResponse = linter
     .verify(source, {
       rules: { "no-undef": "error" }
     })
@@ -12,6 +15,10 @@ export const getSelfContainedFunctionErrors = f => {
     .filter(e => !/'console' is not defined./.test(e.message))
     .filter(e => !/'_toConsumableArray2' is not defined./.test(e.message))
     .filter(e => !/'Promise' is not defined./.test(e.message));
+
+  console.log("ADAM: lintedResponse.... ", lintedResponse);
+
+  return lintedResponse;
 };
 
 export const reportErrors = (errors, source) => {
