@@ -1,6 +1,6 @@
 /* eslint-disable react/no-danger */
 import React from "react";
-import { TcView } from "@times-components/utils";
+import { View } from "react-native";
 import Image from "./src/image";
 
 const squareUri =
@@ -29,45 +29,45 @@ export default {
     },
     {
       component: () => (
-        <TcView>
-          <TcView style={{ width: "300px" }}>
+        <View>
+          <View style={{ width: 300 }}>
             <SixteenNineImage />
-          </TcView>
-          <TcView style={{ width: "200px" }}>
+          </View>
+          <View style={{ width: 200 }}>
             <SixteenNineImage />
-          </TcView>
-          <TcView style={{ width: "100px" }}>
+          </View>
+          <View style={{ width: 100 }}>
             <SixteenNineImage />
-          </TcView>
-        </TcView>
+          </View>
+        </View>
       ),
       name: "Maintains aspect ratio",
       type: "story"
     },
     {
       component: () => (
-        <TcView>
-          <TcView style={{ width: "300px" }}>
+        <View>
+          <View style={{ width: 300 }}>
             <Image aspectRatio={16 / 9} uri="http://httpstat.us/404" />
-          </TcView>
-          <TcView style={{ width: "200px" }}>
+          </View>
+          <View style={{ width: 200 }}>
             <Image aspectRatio={16 / 9} uri="http://httpstat.us/404" />
-          </TcView>
-          <TcView style={{ width: "100px" }}>
+          </View>
+          <View style={{ width: 100 }}>
             <Image aspectRatio={16 / 9} uri="http://httpstat.us/404" />
-          </TcView>
-        </TcView>
+          </View>
+        </View>
       ),
       name: "Maintains aspect ratio with placeholders",
       type: "story"
     },
     {
       component: () => (
-        <TcView>
-          <TcView style={{ width: "300px" }}>
+        <View>
+          <View style={{ width: 300 }}>
             <Image aspectRatio={16 / 9} uri={null} />
-          </TcView>
-        </TcView>
+          </View>
+        </View>
       ),
       name: "Falls back to display the placeholder",
       type: "story"
@@ -79,70 +79,71 @@ export default {
     },
     {
       component: () => (
-        <TcView>
+        <View>
           <SquareImage
             style={{
-              borderRadius: "100px",
-              height: "200px",
+              borderRadius: 100,
+              height: 200,
               overflow: "hidden",
-              width: "200px"
+              width: 200
             }}
           />
           <SquareImage
             style={{
-              borderRadius: "50px",
-              height: "100px",
+              borderRadius: 50,
+              height: 100,
               overflow: "hidden",
-              width: "100px"
+              width: 100
             }}
           />
           <SquareImage
             style={{
-              borderRadius: "25px",
-              height: "50px",
+              borderRadius: 25,
+              height: 50,
               overflow: "hidden",
-              width: "50px"
+              width: 50
             }}
           />
-        </TcView>
+        </View>
       ),
       name: "Can be styled and keep aspect ratio",
       type: "story"
     },
     {
       component: () => (
-        <TcView>
-          <TcView
+        <View>
+          <View
             style={{
               borderColor: "black",
-              borderWidth: "1px",
-              width: "200px"
+              borderWidth: 1,
+              width: 200
             }}
           >
             <Image aspectRatio={1 / 1} uri={sixteenNineUri} />
-          </TcView>
-          <TcView
+          </View>
+          <View
             style={{
               borderColor: "black",
-              borderWidth: "1px",
-              width: "200px"
+              borderWidth: 1,
+              width: 200
             }}
           >
             <Image aspectRatio={16 / 9} uri={squareUri} />
-          </TcView>
-        </TcView>
+          </View>
+        </View>
       ),
-      name: "Handles incorrect aspect ratios inconsistently",
+      name:
+        "Handles incorrect aspect ratios inconsistently (web native mismatch)",
       type: "story"
     },
     {
       component: () => (
-        <TcView style={{ width: "300px" }}>
+        <View style={{ width: 300 }}>
           <Image
             aspectRatio={1 / 1}
             uri="//feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=400"
           />
-        </TcView>
+        </View>
       ),
       name: "Defaults schema to https",
       type: "story"
