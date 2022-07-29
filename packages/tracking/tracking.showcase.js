@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Button, View } from "react-native";
+import { TcView } from "@times-components/utils";
 import storybookReporter from "@times-components/tealium-utils";
 import {
   withTrackingContext,
@@ -10,19 +10,24 @@ import {
 import Box, { boxStyles } from "./storybook-components/box";
 import Boxes from "./storybook-components/boxes";
 
-const BoxWithButtons = ({ color, onPress }) => (
-  <View style={[boxStyles.box, { backgroundColor: color }]}>
-    <Button onPress={() => onPress("button 1")} title="Press me" />
-    <Button
-      color="limegreen"
-      onPress={() => onPress("button 2")}
+const BoxWithButtons = ({ color, onClick }) => (
+  <TcView style={{ ...boxStyles.box, backgroundColor: color }}>
+    <button type="button" onClick={() => onClick("button 1")} title="Press me">
+      Press me
+    </button>
+    <button
+      type="button"
+      style={{ backgroundColor: "LimeGreen" }}
+      onClick={() => onClick("button 2")}
       title="Or me"
-    />
-  </View>
+    >
+      Or me
+    </button>
+  </TcView>
 );
 BoxWithButtons.propTypes = {
   color: PropTypes.string.isRequired,
-  onPress: PropTypes.func.isRequired
+  onClick: PropTypes.func.isRequired
 };
 
 const BoxWithTrackingContext = withTrackingContext(Box, {
@@ -32,12 +37,12 @@ const BoxWithTrackingContext = withTrackingContext(Box, {
   trackingObjectName: "TrackRenderStory"
 });
 
-const BoxWithPressTrackingAndContext = withTrackingContext(
+const BoxWithClickTrackingAndContext = withTrackingContext(
   withTrackEvents(BoxWithButtons, {
     analyticsEvents: [
       {
-        actionName: "Pressed",
-        eventName: "onPress",
+        actionName: "Clicked",
+        eventName: "onClick",
         getAttrs: (props, eventArgs) => ({
           button: eventArgs[0]
         }),
@@ -72,7 +77,7 @@ export default {
     },
     {
       component: () => (
-        <BoxWithPressTrackingAndContext
+        <BoxWithClickTrackingAndContext
           analyticsStream={storybookReporter}
           color="red"
           onPress={() => {}}
