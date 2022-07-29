@@ -9,7 +9,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:web": "jest --config='./__tests__/jest.config.js'",
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
@@ -21,10 +21,7 @@
     "url": "git+https://github.com/newsuk/times-components.git"
   },
   "keywords": [
-    "react-native-web",
     "react",
-    "native",
-    "web",
     "watermark",
     "component"
   ],
@@ -35,8 +32,10 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
+    "@babel/preset-env": "7.4.4",
+    "@babel/preset-react": "7.9.1",
+    "@times-components/jest-configurator-web": "0.7.0",
     "@times-components/eslint-config-thetimes": "0.8.18",
-    "@times-components/jest-configurator": "2.8.0",
     "@times-components/jest-serializer": "3.3.0",
     "@times-components/storybook": "4.4.0",
     "@times-components/test-utils": "2.3.10",
@@ -51,7 +50,6 @@
     "prettier": "1.14.3",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "react-native": "0.61.5",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1"
   },
@@ -65,9 +63,7 @@
   },
   "peerDependencies": {
     "react": ">=16.9",
-    "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-dom": ">=16.9"
   },
   "publishConfig": {
     "access": "public"
