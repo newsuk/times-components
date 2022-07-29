@@ -50,7 +50,7 @@ export const RecommendedFetch: React.FC<{
           object: 'RecommendedArticles',
           attrs: {
             event_navigation_action: 'navigation',
-            event_navigation_name: 'widget : relevant article',
+            event_navigation_name: 'widget:relevant article',
             event_navigation_browsing_method: 'click',
             section_details: `section : ${articleSection}`,
             article_name: articleHeadline,
