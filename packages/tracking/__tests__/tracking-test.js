@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text } from "react-native";
+import { TcView, TcText } from "@times-components/utils";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import { mount } from "enzyme";
@@ -81,13 +81,13 @@ class ListComponent extends Component {
   render() {
     const { items } = this.props;
     return (
-      <View>
+      <TcView>
         {items.map(item => (
-          <Text id={item.elementId} key={item.someKey}>
+          <TcText id={item.elementId} key={item.someKey}>
             Item {item.someValue}
-          </Text>
+          </TcText>
         ))}
-      </View>
+      </TcView>
     );
   }
 }
