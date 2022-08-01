@@ -9,7 +9,7 @@ All the build steps have been updated to handle all the build steps:
 
 1. `yarn transpile` will build javascript into the `/dist` directory
 1. `yarn lint` will perform `tslint` and `prettier` tasks
-1. `yarn bundle` will generate the `rnw.js` (react-native-web) bundle
+1. `yarn bundle` will generate the `rnw.js` (react-web) bundle
 
 ## Storybook
 
