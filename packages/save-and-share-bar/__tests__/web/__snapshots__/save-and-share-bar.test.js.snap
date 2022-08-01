@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`save and share bar component email icon when tokenising with loading state while network request is fetching data 1`] = `
+<BarItem
+  dataTestId="email-share"
+  url=""
+>
+  <IconActivityIndicator
+    size="small"
+    style={
+      Object {
+        "borderRadius": 9999,
+        "height": 40,
+        "overflow": "hidden",
+        "width": 40,
+      }
+    }
+  />
+</BarItem>
+`;
+
+exports[`save and share bar component save and share bar renders correctly when logged in 1`] = `
+<div
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  data-testid="save-and-share-bar"
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "height": "100%",
+      "justifyContent": "space-between",
+      "paddingBottom": "10px",
+      "paddingTop": "10px",
+    }
+  }
+>
+  <div
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "height": 40,
+      }
+    }
+  >
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 14,
+          "lineHeight": "14px",
+          "marginRight": "10px",
+          "transform": "translateY(9%)",
+        }
+      }
+    >
+      Share
+    </div>
+    <BarItem
+      dataTestId="email-share"
+      url=""
+    >
+      <IconEmail
+        fillColour="currentColor"
+        height={16}
+        title="Share by email"
+      />
+    </BarItem>
+    <BarItem
+      dataTestId="share-twitter"
+      target="_blank"
+      url="https://twitter.com/intent/tweet?text=https://www.thetimes.co.uk/"
+    >
+      <IconTwitter
+        fillColour="currentColor"
+        height={16}
+        title="Share on Twitter"
+      />
+    </BarItem>
+    <BarItem
+      dataTestId="share-facebook"
+      target="_blank"
+      url="https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.co.uk/"
+    >
+      <IconFacebook
+        fillColour="currentColor"
+        height={18}
+        title="Share on Facebook"
+      />
+    </BarItem>
+    <BarItem
+      color="#696969"
+      dataTestId="copy-to-clickboard"
+      hoverColor="#1D1D1B"
+      url=""
+    >
+      <IconCopyLink
+        fillColour="currentColor"
+        height={16}
+        title="Copy link to clipboard"
+      />
+    </BarItem>
+  </div>
+  <div
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    data-testid="save-star"
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "height": 40,
+        "marginLeft": "auto",
+      }
+    }
+  >
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 14,
+          "lineHeight": "14px",
+          "marginRight": "10px",
+          "textAlign": "right",
+          "transform": Array [
+            Object {
+              "translateY": "9%",
+            },
+          ],
+        }
+      }
+    >
+      Save
+    </div>
+    <div
+      className="hover-icon__HoverIcon-sc-1ge5rtz-0 save-star-with-tracking__IconContainer-sc-1swm7v2-0 fVwGWc"
+    >
+      <IconActivityIndicator
+        style={
+          Object {
+            "backgroundColor": "#F5F5F5",
+            "borderRadius": 9999,
+            "height": 40,
+            "marginLeft": "5px",
+            "overflow": "hidden",
+            "width": 40,
+          }
+        }
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`save and share bar component save and share bar renders correctly when not logged in 1`] = `
+<div
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
+  data-testid="save-and-share-bar"
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "row",
+      "height": "100%",
+      "justifyContent": "space-between",
+      "paddingBottom": "10px",
+      "paddingTop": "10px",
+    }
+  }
+>
+  <div
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "height": 40,
+      }
+    }
+  >
+    <div
+      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": 14,
+          "lineHeight": "14px",
+          "marginRight": "10px",
+          "transform": "translateY(9%)",
+        }
+      }
+    >
+      Share
+    </div>
+    <BarItem
+      dataTestId="email-share"
+      url=""
+    >
+      <IconEmail
+        fillColour="currentColor"
+        height={16}
+        title="Share by email"
+      />
+    </BarItem>
+    <BarItem
+      dataTestId="share-twitter"
+      target="_blank"
+      url="https://twitter.com/intent/tweet?text=https://www.thetimes.co.uk/"
+    >
+      <IconTwitter
+        fillColour="currentColor"
+        height={16}
+        title="Share on Twitter"
+      />
+    </BarItem>
+    <BarItem
+      dataTestId="share-facebook"
+      target="_blank"
+      url="https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.co.uk/"
+    >
+      <IconFacebook
+        fillColour="currentColor"
+        height={18}
+        title="Share on Facebook"
+      />
+    </BarItem>
+    <BarItem
+      color="#696969"
+      dataTestId="copy-to-clickboard"
+      hoverColor="#1D1D1B"
+      url=""
+    >
+      <IconCopyLink
+        fillColour="currentColor"
+        height={16}
+        title="Copy link to clipboard"
+      />
+    </BarItem>
+  </div>
+</div>
+`;

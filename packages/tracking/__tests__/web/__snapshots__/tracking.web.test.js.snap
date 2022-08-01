@@ -135,9 +135,12 @@ Array [
 `;
 
 exports[`Tracking tests on web WithTrackingContext forwards props to wrapped component 1`] = `
-<Text>
+<div
+  className="css-text-901oao"
+  dir="auto"
+>
   bar
-</Text>
+</div>
 `;
 
 exports[`Tracking tests on web WithTrackingContext raises error when analyticsStream not supplied to top-level context 1`] = `"Missing prop analyticsStream of WithTrackingContext"`;
