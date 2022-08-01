@@ -52,15 +52,6 @@ exports[`1. no short headline 1`] = `
                       Test Headline
                     </div>
                     <div>
-                      <div>
-                        <div>
-                          
-                          Summary 125
-                          ...
-                        </div>
-                      </div>
-                    </div>
-                    <div>
                       <time
                         dateTime="2015-03-13T18:54:58.000Z"
                       >

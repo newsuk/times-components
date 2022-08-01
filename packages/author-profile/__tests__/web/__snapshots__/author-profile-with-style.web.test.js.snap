@@ -1,6 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. an article list header 1`] = `
+.c0 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  padding-top: 30px;
+}
+
 .c1 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -43,19 +63,7 @@ exports[`1. an article list header 1`] = `
   z-index: 0;
 }
 
-.c7 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-}
-
-.c0 {
+.c3 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -71,8 +79,7 @@ exports[`1. an article list header 1`] = `
   padding: 0px;
   position: relative;
   z-index: 0;
-  width: 100%;
-  padding-top: 30px;
+  width: 100px;
 }
 
 .c4 {
@@ -86,6 +93,18 @@ exports[`1. an article list header 1`] = `
   color: #1D1D1B;
   font-family: "TimesModern-Bold";
   font-size: 30px;
+}
+
+.c5 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
 }
 
 .c6 {
@@ -109,26 +128,7 @@ exports[`1. an article list header 1`] = `
   padding-right: 10px;
 }
 
-.c3 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  width: 100px;
-}
-
-.c5 {
+.c7 {
   border: 0px solid black;
   box-sizing: border-box;
   color: rgb(0,0,0);
@@ -143,6 +143,12 @@ exports[`1. an article list header 1`] = `
 @media (min-width:768px) {
   .c0 {
     padding-top: 60px;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    width: 116px;
   }
 }
 
@@ -166,12 +172,6 @@ exports[`1. an article list header 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c3 {
-    width: 116px;
-  }
-}
-
 <div
   alignItems="center"
   backgroundColor="#F9F9F9"
@@ -183,7 +183,7 @@ exports[`1. an article list header 1`] = `
   width="100%"
 >
   <div
-    className="c1"
+    className="TsTcView-sc-154dp5w-0 c1"
     width="100%"
   >
     <div
@@ -267,24 +267,6 @@ exports[`1. an article list header 1`] = `
 `;
 
 exports[`2. an article list header loading 1`] = `
-.c1 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-}
-
 .c0 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -303,6 +285,24 @@ exports[`2. an article list header loading 1`] = `
   z-index: 0;
   width: 100%;
   padding-top: 30px;
+}
+
+.c1 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
 }
 
 @media (min-width:768px) {

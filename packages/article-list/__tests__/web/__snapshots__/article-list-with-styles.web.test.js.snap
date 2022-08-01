@@ -1,29 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. article list 1`] = `
-.c3 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin: 0px;
-  border-bottom-color: black;
-  border-bottom-width: 0px;
-  margin: 0px;
-  min-height: 0px;
-  min-width: 0px;
-  padding: 0px;
-  position: relative;
-  z-index: 0;
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
-}
-
 .c0 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -83,6 +60,29 @@ exports[`1. article list 1`] = `
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0px;
+  border-bottom-color: black;
+  border-bottom-width: 0px;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
 }
 
 .c4 {
@@ -221,7 +221,7 @@ exports[`1. article list 1`] = `
               imageContainerClass="articleListImage"
             >
               <div
-                className="c3"
+                className="TsTcView-sc-154dp5w-0 c3"
               >
                 <ArticleSummary />
               </div>
@@ -252,7 +252,7 @@ exports[`1. article list 1`] = `
               imageContainerClass="articleListImage"
             >
               <div
-                className="c3"
+                className="TsTcView-sc-154dp5w-0 c3"
               >
                 <ArticleSummary />
               </div>
@@ -283,7 +283,7 @@ exports[`1. article list 1`] = `
               imageContainerClass="articleListImage"
             >
               <div
-                className="c3"
+                className="TsTcView-sc-154dp5w-0 c3"
               >
                 <ArticleSummary />
               </div>
@@ -314,7 +314,7 @@ exports[`1. article list 1`] = `
               imageContainerClass="articleListImage"
             >
               <div
-                className="c3"
+                className="TsTcView-sc-154dp5w-0 c3"
               >
                 <ArticleSummary />
               </div>
@@ -345,7 +345,7 @@ exports[`1. article list 1`] = `
               imageContainerClass="articleListImage"
             >
               <div
-                className="c3"
+                className="TsTcView-sc-154dp5w-0 c3"
               >
                 <ArticleSummary />
               </div>
