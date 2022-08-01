@@ -28,7 +28,7 @@
     "lint": "tslint --project . && prettier \"src/**/*.{ts,tsx}\" --list-different",
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,tslint*,typescript,jest,prettier,webpack*,@types/*' --ignore-bin-package=false --skip-missing",
     "test": "jest",
-    "test:lint": "tslint --project . && prettier \"src/**/*.{ts,tsx}\" --list-different",
+    "test:lint": "lint",
     "test:unit": "jest --coverage",
     "watch:tests": "run-s clean build:module && run-p \"build:module -- -w\" \"test:unit -- --watch\"",
     "doc": "run-s doc:html && open-cli build/docs/index.html",
