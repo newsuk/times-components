@@ -1,6 +1,4 @@
-import { Text, View } from 'react-native';
 import { configure, addDecorator } from '@storybook/react';
-import { withInfo } from '@storybook/addon-info';
 import { withOptions } from '@storybook/addon-options';
 import { withKnobs } from '@storybook/addon-knobs';
 
@@ -10,9 +8,6 @@ const req = require.context(
   /^((?!node_modules).)*\.(stories)\.(tsx|js)$/
 );
 
-addDecorator(withInfo({
-  propTablesExclude: [Text, View]
-}));
 addDecorator(withKnobs);
 addDecorator(withOptions({
   addonPanelInRight: true,
