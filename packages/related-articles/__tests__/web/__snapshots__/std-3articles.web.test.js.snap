@@ -51,22 +51,6 @@ exports[`1. three related articles 1`] = `
                       First Short Headline
                     </div>
                     <div>
-                      <div>
-                        <div>
-                          
-                          Summary 125
-                          ...
-                        </div>
-                      </div>
-                      <div>
-                        <div>
-                          
-                          Summary 145
-                          ...
-                        </div>
-                      </div>
-                    </div>
-                    <div>
                       <time
                         dateTime="2015-03-13T18:54:58.000Z"
                       >
@@ -124,22 +108,6 @@ exports[`1. three related articles 1`] = `
                       Second Short Headline
                     </div>
                     <div>
-                      <div>
-                        <div>
-                          
-                          Summary 125
-                          ...
-                        </div>
-                      </div>
-                      <div>
-                        <div>
-                          
-                          Summary 145
-                          ...
-                        </div>
-                      </div>
-                    </div>
-                    <div>
                       <time
                         dateTime="2018-01-17T12:00:00.000Z"
                       >
@@ -195,22 +163,6 @@ exports[`1. three related articles 1`] = `
                       role="heading"
                     >
                       Third Short Headline
-                    </div>
-                    <div>
-                      <div>
-                        <div>
-                          
-                          Summary 125
-                          ...
-                        </div>
-                      </div>
-                      <div>
-                        <div>
-                          
-                          Summary 145
-                          ...
-                        </div>
-                      </div>
                     </div>
                     <div>
                       <time
