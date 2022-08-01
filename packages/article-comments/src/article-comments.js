@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";
-import {HiddenDiv} from "@times-components/ts-components";
+import { HiddenDiv } from "@times-components/ts-components";
 
 import Comments from "./comments";
 
 import DisabledComments from "./disabled-comments";
-import {CommentContainer} from "./styles/responsive";
+import { CommentContainer } from "./styles/responsive";
 import JoinTheConversationDialog from "./join-the-conversation-dialog";
 
 const ArticleComments = ({
