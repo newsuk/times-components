@@ -12,10 +12,6 @@ const slices: SliceData[] = [
     children: [{ article: getArticleWithSummary() }]
   },
   {
-    name: 'RELATED_ARTICLE_1',
-    children: [{ article: getArticleWithSummary() }]
-  },
-  {
     name: 'LEAD_1_AND_1',
     children: [{ article: getArticle() }, { article: getArticleWithSummary() }]
   },
@@ -125,6 +121,25 @@ const slices: SliceData[] = [
       { article: getArticle() },
       { article: getArticle() },
       { article: getArticle() }
+    ]
+  },
+  {
+    name: 'RELATED_ARTICLE_1',
+    children: [{ article: getArticleWithSummary() }]
+  },
+  {
+    name: 'RELATED_ARTICLE_2',
+    children: [
+      { article: getArticleWithSummary() },
+      { article: getArticleWithSummary() }
+    ]
+  },
+  {
+    name: 'RELATED_ARTICLE_3',
+    children: [
+      { article: getArticleWithSummary() },
+      { article: getArticleWithSummary() },
+      { article: getArticleWithSummary() }
     ]
   }
 ];

@@ -9,6 +9,13 @@ import {
 export const SliceContainer = styled(SliceContainerBase)`
   @media (min-width: ${breakpoints.medium}px) {
     flex-wrap: nowrap;
+    width: 80.8%;
+    max-width: none;
+    padding: 0;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
   }
 `;
 
