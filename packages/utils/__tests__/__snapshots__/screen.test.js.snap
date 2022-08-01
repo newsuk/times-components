@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`screen utilities screenWidth should return the device screen width 1`] = `1024`;

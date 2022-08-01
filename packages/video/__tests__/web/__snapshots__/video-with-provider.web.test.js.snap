@@ -2,11 +2,11 @@
 
 exports[`1. video without a poster image 1`] = `
 <div>
-  <span>
-    Video unable to play
-  </span>
-  <span>
-    Please check your network connection and try refreshing the page. If that doesn't work, please try again later
-  </span>
+  <div>
+    <video
+      controls={true}
+      id="[video id]-[account id]-[tpa video id]"
+    />
+  </div>
 </div>
 `;
