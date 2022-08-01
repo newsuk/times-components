@@ -53,28 +53,28 @@ export default () => {
     const getTokenisedShareUrl = jest.fn(mockGetTokenisedArticleUrl);
 
     let stream = null;
-    let testInstance = null;
     let realLocation;
+
+    const TestComponent = () => (
+      <MockedProvider>
+        <WithTrackingContext
+          analyticsStream={stream}
+          articleUrl={articleUrl}
+          articleId={articleId}
+          articleHeadline={articleHeadline}
+          onCopyLink={onCopyLink}
+          onShareOnFB={onShareOnFB}
+          onShareOnTwitter={onShareOnTwitter}
+          getTokenisedShareUrl={getTokenisedShareUrl}
+          onShareEmail={onShareEmail}
+          sharingEnabled
+          savingEnabled
+        />
+      </MockedProvider>
+    );
 
     beforeEach(() => {
       stream = jest.fn();
-      testInstance = TestRenderer.create(
-        <MockedProvider>
-          <WithTrackingContext
-            analyticsStream={stream}
-            articleUrl={articleUrl}
-            articleId={articleId}
-            articleHeadline={articleHeadline}
-            onCopyLink={onCopyLink}
-            onShareOnFB={onShareOnFB}
-            onShareOnTwitter={onShareOnTwitter}
-            getTokenisedShareUrl={getTokenisedShareUrl}
-            onShareEmail={onShareEmail}
-            sharingEnabled
-            savingEnabled
-          />
-        </MockedProvider>
-      );
       realLocation = global.window.location;
       delete global.window.location;
       global.window.location = {
@@ -89,6 +89,7 @@ export default () => {
     });
 
     it("when press share on twitter", () => {
+      const testInstance = TestRenderer.create(<TestComponent />);
       const shareOnTwitterBarItem = testInstance.root.findAllByType(BarItem)[1];
       shareOnTwitterBarItem.props.onPress();
 
@@ -99,6 +100,7 @@ export default () => {
     });
 
     it("when press share on facebook", () => {
+      const testInstance = TestRenderer.create(<TestComponent />);
       const shareOnFacebookBarItem = testInstance.root.findAllByType(
         BarItem
       )[2];
@@ -111,6 +113,7 @@ export default () => {
     });
 
     xit("when press copy to clipboard", () => {
+      const testInstance = TestRenderer.create(<TestComponent />);
       const copyToClipboardBarItem = testInstance.root.findAllByType(
         BarItem
       )[3];
@@ -123,6 +126,7 @@ export default () => {
     });
 
     it("when press share article url by email", async () => {
+      const testInstance = TestRenderer.create(<TestComponent />);
       const shareArticleUrlByEmailBarItem = testInstance.root.findAllByType(
         BarItem
       )[0];
