@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ArticleStandard /> should render an article correctly 1`] = `
+<DocumentFragment>
+  <article
+    class="sc-bdVaJa febYmB"
+  >
+    <div
+      class="sc-bwzfXH iKKeUw"
+    >
+      <div>
+        Image
+      </div>
+    </div>
+    <div
+      class="sc-bwzfXH iKKeUw"
+    >
+      <p
+        class="sc-htpNat dtQRdf"
+      >
+        Some text label
+      </p>
+      <div>
+        Headline
+      </div>
+      <p
+        class="sc-bxivhb jpOhka"
+      >
+        August 20 2020, 1.00pm
+      </p>
+      <p
+        class="sc-ifAKCX bbXdqc"
+      >
+        Some author
+      </p>
+    </div>
+  </article>
+</DocumentFragment>
+`;

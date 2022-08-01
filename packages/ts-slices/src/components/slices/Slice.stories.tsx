@@ -134,6 +134,20 @@ const showcase = {
       ),
       name: 'RELATED_ARTICLE_1',
       type: 'story'
+    },
+    {
+      component: () => (
+        <Slice slice={getSlice('RELATED_ARTICLE_2')} clickHandler={onClick} />
+      ),
+      name: 'RELATED_ARTICLE_2',
+      type: 'story'
+    },
+    {
+      component: () => (
+        <Slice slice={getSlice('RELATED_ARTICLE_3')} clickHandler={onClick} />
+      ),
+      name: 'RELATED_ARTICLE_3',
+      type: 'story'
     }
   ],
   name: 'Typescript Slices/Slices'
