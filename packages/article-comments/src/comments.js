@@ -10,6 +10,10 @@ class Comments extends Component {
   constructor() {
     super();
     this.container = null;
+
+    this.state = {
+      shouldUpdateName: false
+    }
   }
 
   componentDidMount() {
@@ -75,6 +79,15 @@ class Comments extends Component {
       }
     };
 
+    const userShouldUpdateName = (username) => {
+      console.log(username)
+
+      //fetch api to return either true or false
+      this.setState({
+        shouldUpdateName: true
+      });
+    }
+
     let spotAccountId = commentingConfig.account.readOnly;
 
     if (commentingConfig && commentingConfig.switchOver) {
@@ -85,10 +98,36 @@ class Comments extends Component {
     }
 
     document.addEventListener(
-      "spot-im-current-user-typing-start",
-      onCommentStart,
-      { once: true }
+      "spot-im-current-user-typing-start", () => {
+        onCommentStart
+
+        const { shouldUpdateName } = this.state
+
+        if (shouldUpdateName) {
+          window.dispatchEvent(
+            new CustomEvent('SHOW_REAL_NAME_COMMENTING_BANNER', {})
+        );
+        }
+
+      },         { once: true }
     );
+
+
+    document.addEventListener(
+      "spot-im-user-auth-success", (event) => {
+
+        const {displayName, email, id, username} = event.detail
+
+        userShouldUpdateName(username)
+        console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+        console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+        console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', event)
+        console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+        console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+      },       
+    );
+
+
     document.addEventListener(
       "spot-im-current-user-sent-message",
       onCommentPost
