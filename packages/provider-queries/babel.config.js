@@ -3,9 +3,9 @@ module.exports = api => {
   return {
     plugins: [
       "babel-plugin-styled-components",
-      "@babel/plugin-transform-react-display-name",
+      "@babel/plugin-proposal-export-default-from",
       "import-graphql"
     ],
-    presets: ["module:metro-react-native-babel-preset"]
+    presets: ["@babel/preset-env", "@babel/preset-react"]
   };
 };
