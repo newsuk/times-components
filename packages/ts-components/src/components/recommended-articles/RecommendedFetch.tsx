@@ -23,10 +23,7 @@ export const RecommendedFetch: React.FC<{
     try {
       const acsCookie = window.nuk.getCookieValue('acs_tnl');
 
-      const params = new URLSearchParams(window.location.search);
-      const flag = params.get('recommendedArticles');
-
-      if (acsCookie && flag) {
+      if (acsCookie) {
         setIsClientSide(true);
       }
     } catch (e) {
