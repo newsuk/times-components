@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.17.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.17.0...@times-components/provider-queries@2.17.1) (2022-08-02)
+
+
+### Bug Fixes
+
+* **TDP-2320:** Remove react-native from provider-queries package ([#3085](https://github.com/newsuk/times-components/issues/3085)) ([a8fd834](https://github.com/newsuk/times-components/commit/a8fd83428960735551fa244244c4be8d0c5c8ecf))
+
+
+
+
+
 # [2.17.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.16.0...@times-components/provider-queries@2.17.0) (2022-06-08)
 
 
