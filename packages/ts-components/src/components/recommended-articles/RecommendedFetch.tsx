@@ -12,9 +12,6 @@ import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import { RecommendedArticles } from './RecommendedArticles';
 
-const isValidEnvironment = (name: string) =>
-  ['local-prod', 'pr', 'uat', 'staging', 'prod'].includes(name);
-
 export const RecommendedFetch: React.FC<{
   articleId: string;
   articleHeadline: string;
@@ -25,12 +22,8 @@ export const RecommendedFetch: React.FC<{
   useEffect(() => {
     try {
       const acsCookie = window.nuk.getCookieValue('acs_tnl');
-      const envName = window.__TIMES_CONFIG__.environmentName;
 
-      const params = new URLSearchParams(window.location.search);
-      const flag = params.get('recommendedArticles');
-
-      if (acsCookie && isValidEnvironment(envName) && flag) {
+      if (acsCookie) {
         setIsClientSide(true);
       }
     } catch (e) {

@@ -320,21 +320,6 @@ exports[`default styles 1`] = `
 }
 
 .IS5 {
-  color: inherit;
-  font: inherit;
-  white-space: inherit;
-}
-
-.IS6 {
-  color: #696969;
-  flex-wrap: wrap;
-  margin-bottom: 10px;
-  font-family: TimesDigitalW04;
-  font-size: 14;
-  line-height: 20px;
-}
-
-.IS7 {
   color: #696969;
   font-family: GillSansMTStd-Medium;
   font-size: 13;
@@ -392,22 +377,7 @@ exports[`default styles 1`] = `
                       Test Short Headline
                     </div>
                     <div
-                      className="c0"
-                    >
-                      <div
-                        className="summaryHidden summary125Class c6 IS6"
-                      >
-                        <div
-                          className="c6 IS5"
-                        >
-                          
-                          Summary 125
-                          ...
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className="c6 IS7"
+                      className="c6 IS5"
                     >
                       <time>
                         March 13 2015, 6.54pm
