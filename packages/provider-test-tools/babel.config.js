@@ -6,16 +6,6 @@ module.exports = api => {
       "@babel/plugin-proposal-export-default-from",
       "import-graphql"
     ],
-    presets: [
-      [
-        "@babel/preset-env",
-        {
-          targets: {
-            esmodules: true
-          }
-        }
-      ],
-      "@babel/preset-react"
-    ]
+    presets: ["@babel/preset-env", "@babel/preset-react"]
   };
 };
