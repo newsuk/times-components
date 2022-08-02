@@ -33,7 +33,7 @@ class RelatedArticles extends Component {
         isOpinionByline = false,
         isReversed = false,
         showImage = true,
-        showSummary = true,
+        showSummary = false,
         summaryConfig = {}
       } = config;
       return (
