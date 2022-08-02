@@ -1,6 +1,6 @@
 {
   "name": "@times-components/topic",
-  "version": "5.6.16",
+  "version": "5.6.17",
   "description": "Topic page component",
   "main": "dist/topic",
   "dev": "src/topic",
@@ -38,7 +38,7 @@
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator": "2.8.0",
     "@times-components/jest-serializer": "3.3.0",
-    "@times-components/provider-test-tools": "1.26.5",
+    "@times-components/provider-test-tools": "1.26.6",
     "@times-components/storybook": "4.4.0",
     "@times-components/tealium-utils": "0.7.75",
     "@times-components/test-utils": "2.3.10",
@@ -63,12 +63,12 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-list": "9.10.38",
+    "@times-components/article-list": "9.10.39",
     "@times-components/context": "1.9.3",
     "@times-components/markup": "3.6.2",
     "@times-components/markup-forest": "1.8.1",
     "@times-components/pagination": "3.8.7",
-    "@times-components/provider": "1.32.6",
+    "@times-components/provider": "1.32.7",
     "@times-components/responsive": "0.13.2",
     "@times-components/tracking": "2.11.0",
     "@times-components/ts-styleguide": "1.36.8",
