@@ -1,7 +1,5 @@
 import merge from "lodash.merge";
-import adInitOriginal from "../../src/utils/ad-init";
 import { makeAdInitMocks, adInit } from "../../fixtures/ad-init-mocks";
-import { expectFunctionToBeSelfContained } from "../../fixtures/check-self-contained-function";
 
 jest.useFakeTimers();
 
@@ -11,10 +9,6 @@ export default () => {
 
   beforeEach(() => {
     ({ initOptions, mock } = makeAdInitMocks());
-  });
-
-  it("should be self-contained", () => {
-    expectFunctionToBeSelfContained(adInitOriginal);
   });
 
   it("refresh the ads on a new breakpoint", () => {

@@ -1,5 +1,4 @@
 import webviewEventCallbackSetup from "../../src/utils/webview-event-callback-setup";
-import { expectFunctionToBeSelfContained } from "../../fixtures/check-self-contained-function";
 
 const realWindow = window;
 
@@ -32,10 +31,6 @@ export default () => {
 
   afterEach(() => {
     jest.useRealTimers();
-  });
-
-  it("is self-contained", () => {
-    expectFunctionToBeSelfContained(webviewEventCallbackSetup);
   });
 
   it("sets the eventCallback function on the window", () => {
