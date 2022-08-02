@@ -9,27 +9,11 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,**/eslint*,graphql,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
-    "test": "jest",
+    "test": "jest --config='./__tests__/jest.config.js'",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist --copy-files",
     "bundle": "NODE_ENV=production webpack -p"
-  },
-  "jest": {
-    "preset": "react-native",
-    "rootDir": "../../",
-    "testEnvironment": "jsdom",
-    "coverageDirectory": "<rootDir>/packages/provider-test-tools/coverage/",
-    "collectCoverageFrom": [
-      "**/packages/provider-test-tools/src/*.js"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|@times-components)/)"
-    ],
-    "testMatch": [
-      "<rootDir>/packages/provider-test-tools/__tests__/**.test.js"
-    ],
-    "testURL": "http://localhost"
   },
   "repository": {
     "type": "git",
@@ -37,7 +21,6 @@
   },
   "keywords": [
     "react",
-    "native",
     "web",
     "graphql",
     "provider",
@@ -50,7 +33,10 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
+    "@babel/preset-react": "7.9.1",
+    "@babel/preset-env": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
+    "@times-components/jest-configurator-web": "0.7.0",
     "@times-components/test-utils": "2.3.10",
     "@times-components/webpack-configurator": "2.0.29",
     "babel-jest": "24.8.0",
@@ -89,9 +75,7 @@
   },
   "peerDependencies": {
     "react": ">=16.9",
-    "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-dom": ">=16.9"
   },
   "publishConfig": {
     "access": "public"
