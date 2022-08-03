@@ -10,7 +10,8 @@ export default function JoinTheConversationDialog() {
   // this event triggers cps-content-render/packages/components-global/src/FreeArticlePromotion/FreeArticleBottomBanner/FreeArticleBottomBanner.tsx
   // todo: remove this event dispatching and implement the modal from the shared UI component repo
   const onClick = isLightPackUser
-    ? () => (document && document.dispatchEvent(new Event("show::upgrade::modal")))
+    ? () =>
+        document && document.dispatchEvent(new Event("show::upgrade::modal"))
     : null;
   return (
     <InlineDialog
