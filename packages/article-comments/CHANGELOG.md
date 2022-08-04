@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.23.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.22.7...@times-components/article-comments@0.23.0) (2022-08-04)
+
+
+### Features
+
+* triggering upgrade modal from article ([#3082](https://github.com/newsuk/times-components/issues/3082)) ([d35b130](https://github.com/newsuk/times-components/commit/d35b130ecc94e681549d55960307a6e805936483))
+
+
+
+
+
 ## [0.22.7](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.22.6...@times-components/article-comments@0.22.7) (2022-08-03)
 
 **Note:** Version bump only for package @times-components/article-comments
