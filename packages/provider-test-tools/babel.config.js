@@ -3,7 +3,8 @@ module.exports = api => {
   return {
     plugins: [
       "babel-plugin-styled-components",
-      "@babel/plugin-proposal-class-properties"
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-transform-runtime"
     ],
     presets: [
       [
