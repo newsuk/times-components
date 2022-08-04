@@ -4,7 +4,7 @@ import { InlineDialog } from "@times-components/ts-components";
 import getStoreLink from "./utils";
 
 export default function JoinTheConversationDialog() {
-  const isLightPackUser = window.nuk?.user?.isLightPackUser || true;
+  const isLightPackUser = window.nuk?.user?.isLightPackUser;
   const href = isLightPackUser ? null : getStoreLink();
   // temp solution until the modal is moved out to a proper UI repo
   // this event triggers cps-content-render/packages/components-global/src/FreeArticlePromotion/FreeArticleBottomBanner/FreeArticleBottomBanner.tsx
