@@ -14,7 +14,6 @@ export default ({ exists, readFile }, resolve) => {
       ...babelConfig,
       plugins: [
         ...(babelConfig.plugins || []),
-        ["react-native-web", { commonjs: true }],
         "transform-react-remove-prop-types"
       ]
     };
