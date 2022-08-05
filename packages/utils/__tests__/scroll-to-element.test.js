@@ -2,12 +2,6 @@ import { handleOnClickScrollTo, handleHrefScrollTo } from "../src/index";
 
 const scrollTo = jest.fn();
 
-global.window = { pageYOffset: 150, scrollTo };
-global.document = {
-  getElementById: () => ({ getBoundingClientRect: () => ({ top: 100 }) }),
-  querySelector: () => ({ offsetHeight: 0 })
-};
-
 const event = { preventDefault: () => {} };
 
 const id = "12345";
@@ -17,6 +11,12 @@ const link = "https://www.thetimes.co.uk";
 describe("handleOnClickScrollTo", () => {
   beforeEach(() => {
     jest.resetAllMocks();
+    window.pageYOffset = 150;
+    window.scrollTo = scrollTo;
+    document.getElementById = () => ({
+      getBoundingClientRect: () => ({ top: 100 })
+    });
+    document.querySelector = () => ({ offsetHeight: 0 });
   });
 
   it("should not call scrollTo - when no url is supplied", () => {
@@ -55,6 +55,7 @@ describe("handleOnClickScrollTo", () => {
   describe("large breakpoint", () => {
     it("should call scrollTo - with correct values - for large breakpoint", () => {
       window.innerWidth = 1420;
+      document.querySelector = () => ({ offsetHeight: 20 });
       handleOnClickScrollTo(event, hash);
       expect(scrollTo).toHaveBeenCalledWith({ top: 180, behavior: "smooth" });
     });

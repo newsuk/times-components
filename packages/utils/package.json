@@ -33,8 +33,10 @@
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
+    "@babel/preset-env": "7.4.4",
+    "@babel/preset-react": "7.9.1",
     "@times-components/eslint-config-thetimes": "0.8.18",
-    "@times-components/jest-configurator": "2.8.1",
+    "@times-components/jest-configurator-web": "0.7.0",
     "@times-components/jest-serializer": "3.3.1",
     "@times-components/webpack-configurator": "2.0.30",
     "babel-jest": "24.8.0",
