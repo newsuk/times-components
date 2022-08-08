@@ -79,38 +79,67 @@ class Comments extends Component {
       }
     };
 
+      
+
     const userShouldUpdateName = async (username) => {
 
-        const url= `http://localhost:8000/api/comments/display-names-pseudonyms?username=${username}`
-        const {isPseudonym} = await fetch(url)
+      console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+      console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+      console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX displayname', username)
+
+
+
+        const url= `https://www.uat-thetimes.co.uk/api/comments/display-names-pseudonyms?username=${username}`
+
+const { isPseudonym} = {isPseudonym: true}
+
+// fetch(url).then( (response) => {
+
+//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX response ', response)
+//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+
+//   return response.json()
+
+// }).then(data => {
+//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX res ',  data)
+//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+//   return data
+// })
+        
+        
+
+       console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX isPseudonym ', isPseudonym)
+
 
         const hasLocalStorageBeenSet = window.localStorage.getItem('realNameCommentingBannerViewCount')
 
-        if (isPseudonym ) {
+   
 
-          if (!hasLocalStorageBeenSet) {
+        // if (isPseudonym ) {
 
-            window.localStorage.setItem(
-              '',
-              JSON.stringify({ realNameCommentingBannerViewCount: 3 })
-            );
+        //   if (!hasLocalStorageBeenSet) {
+
+        //     window.localStorage.setItem(
+        //       '',
+        //       JSON.stringify({ realNameCommentingBannerViewCount: 3 })
+        //     );
   
-            window.localStorage.setItem(
-              '',
-              JSON.stringify({ isRealNameCommentingBannerVisible: false })
-            );
+        //     window.localStorage.setItem(
+        //       '',
+        //       JSON.stringify({ isRealNameCommentingBannerVisible: false })
+        //     );
 
 
-          }
+        //   }
 
-          window.dispatchEvent(new CustomEvent('SHOW_REAL_NAME_COMMENTING_BANNER', {})        );
-        }
-
-        
-
-
-
-
+        //   window.dispatchEvent(new CustomEvent('SHOW_REAL_NAME_COMMENTING_BANNER', {})        );
+        // }
     }
 
     let spotAccountId = commentingConfig.account.readOnly;
@@ -146,7 +175,7 @@ class Comments extends Component {
         userShouldUpdateName(username)
         console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
         console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-        console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', event)
+        console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX spot-im-user-auth-success', event)
         console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
         console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
       },       
@@ -315,3 +344,6 @@ Comments.defaultProps = {
 };
 
 export default withTrackEvents(Comments);
+
+
+
