@@ -52,8 +52,12 @@ const getImageCrops = (crops: MediaCrop[]) =>
 
 const getImage = (media?: Media) => {
   if (media) {
-    if (media.crops) { return getImageCrops(media.crops); }
-    if (media.posterImage) { return getImageCrops(media.posterImage.crops); }
+    if (media.crops) {
+      return getImageCrops(media.crops);
+    }
+    if (media.posterImage) {
+      return getImageCrops(media.posterImage.crops);
+    }
   }
   return [];
 };
