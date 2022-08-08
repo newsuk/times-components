@@ -23,7 +23,7 @@
       "**/packages/provider-test-tools/src/*.js"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native|@times-components)/)"
+      "node_modules/(?!@times-components/)"
     ],
     "testMatch": [
       "<rootDir>/packages/provider-test-tools/__tests__/**.test.js"
