@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.26.8](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.26.7...@times-components/provider-test-tools@1.26.8) (2022-08-08)
+
+
+### Bug Fixes
+
+* **TDP-2343:** Update provider-test-tools ([#3101](https://github.com/newsuk/times-components/issues/3101)) ([6b6b76a](https://github.com/newsuk/times-components/commit/6b6b76a581414cebd37d60fc5338ba3a0b53d65d))
+
+
+
+
+
 ## [1.26.7](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.26.6...@times-components/provider-test-tools@1.26.7) (2022-08-05)
 
 **Note:** Version bump only for package @times-components/provider-test-tools
