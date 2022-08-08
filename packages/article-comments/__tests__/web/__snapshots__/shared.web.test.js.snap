@@ -125,6 +125,7 @@ exports[`User States RA Users 1`] = `
   justify-content: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  cursor: pointer;
   background-color: #008387;
   color: white;
   font-family: GillSansMTStd-Medium;
