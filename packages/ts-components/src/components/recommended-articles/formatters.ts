@@ -3,26 +3,29 @@ import { SliceArticle } from '@times-components/ts-slices';
 // TYPES
 
 type Byline =
-  | { type: 'author'; name: string }
-  | { type: 'inline'; value: string };
+  | { __typename: string; type: 'author'; name: string }
+  | { __typename: string; type: 'inline'; value: string };
 
 type MediaCrop = {
+  __typename: string;
   url: string;
   alt?: string;
   aspectRatio: string;
 };
 type Media = {
+  __typename: string;
   crops: MediaCrop[];
   posterImage: { crops: MediaCrop[] };
 };
 
-type SummaryText = { text: string };
-type Summary = { children: SummaryText[] };
+type SummaryText = { __typename: string; text: string };
+type Summary = { __typename: string; children: SummaryText[] };
 
 type Article = {
+  __typename: string;
   url: string;
   slug: string;
-  label?: string;
+  label: string;
   headline: string;
   publishedDateTime: string;
   bylines?: Byline[];
