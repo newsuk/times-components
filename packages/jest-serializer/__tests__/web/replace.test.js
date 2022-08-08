@@ -7,7 +7,6 @@ import {
   compose,
   enzymeTreeSerializer,
   justChildren,
-  meltNative,
   propsNoChildren,
   replace,
   replaceTransform,
@@ -143,32 +142,6 @@ describe("The replace serializer should", () => {
         <ChildComponent text="Hello world1!" />
         <ChildComponent text="Hello world2!" />
         <ChildComponent text="Hello world3!" />
-      </WrapperComponent>
-    );
-
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it("provide a helper to remove native elements from a web tree", () => {
-    addSerializers(
-      expect,
-      enzymeTreeSerializer(),
-      compose(
-        stylePrinter,
-        replaceTransform({
-          ...meltNative
-        })
-      )
-    );
-
-    // eslint-disable-next-line react/prop-types
-    const WrapperComponent = ({ children }) => <TcView>{children}</TcView>;
-    // eslint-disable-next-line react/prop-types
-    const ChildComponent = ({ text }) => <TcText>{text}</TcText>;
-
-    const wrapper = mount(
-      <WrapperComponent>
-        <ChildComponent text="Hello world!" />
       </WrapperComponent>
     );
 

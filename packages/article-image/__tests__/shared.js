@@ -3,7 +3,6 @@ import {
   compose,
   enzymeRenderedSerializer,
   justChildren,
-  meltNative,
   minimaliseTransform,
   minimalWebTransform,
   print,
@@ -23,8 +22,7 @@ export default () => {
         ArticleImage: justChildren,
         ArticleImageWeb: justChildren,
         Caption: justChildren,
-        TimesImage: propsNoChildren,
-        ...meltNative
+        TimesImage: propsNoChildren
       }),
       minimalWebTransform,
       minimaliseTransform(

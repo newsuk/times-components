@@ -4,7 +4,6 @@ import {
   compose,
   enzymeTreeSerializer,
   justChildren,
-  meltNative,
   minimaliseTransform,
   minimalWebTransform,
   print,
@@ -28,8 +27,7 @@ export default () => {
         CardContent: justChildren,
         Gradient: propsNoChildren,
         Loading: justChildren,
-        TimesImage: propsNoChildren,
-        ...meltNative
+        TimesImage: propsNoChildren
       })
     )
   );
