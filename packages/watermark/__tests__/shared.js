@@ -4,7 +4,6 @@ import {
   addSerializers,
   compose,
   enzymeTreeSerializer,
-  minimalNativeTransform,
   print,
   replacePropTransform
 } from "@times-components/jest-serializer";
@@ -19,7 +18,6 @@ export default () => {
     enzymeTreeSerializer(),
     compose(
       print,
-      minimalNativeTransform,
       replacePropTransform((value, key) => (key === "d" ? hash(value) : value))
     )
   );
