@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.51.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.50.1...@times-components/ts-components@1.51.0) (2022-08-08)
+
+
+### Features
+
+* **TDP-2362:** Recommended Rail - add video images ([#3103](https://github.com/newsuk/times-components/issues/3103)) ([32decc8](https://github.com/newsuk/times-components/commit/32decc88f26535e603118a98904b067868cb2431))
+
+
+
+
+
 ## [1.50.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.50.0...@times-components/ts-components@1.50.1) (2022-08-08)
 
 **Note:** Version bump only for package @times-components/ts-components
