@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.50.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.49.5...@times-components/ts-components@1.50.0) (2022-08-08)
+
+
+### Features
+
+* **TDP-2259:** adding cursor: pointer style to inlinedialog component ([#3100](https://github.com/newsuk/times-components/issues/3100)) ([5da8ffc](https://github.com/newsuk/times-components/commit/5da8ffc2a8fb8fa59d87aedc882be03e1ac3d16f))
+
+
+
+
+
 ## [1.49.5](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.49.4...@times-components/ts-components@1.49.5) (2022-08-05)
 
 **Note:** Version bump only for package @times-components/ts-components
