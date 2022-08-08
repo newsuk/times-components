@@ -147,5 +147,4 @@ describe("The replace serializer should", () => {
 
     expect(wrapper).toMatchSnapshot();
   });
-
 });

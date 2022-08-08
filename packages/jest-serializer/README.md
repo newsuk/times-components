@@ -204,9 +204,7 @@ Use this serializer with any style properties you're interested in, and when
 e.g.
 
 ```javascript
-compose(
-  stylePrinter
-);
+compose(stylePrinter);
 ```
 
 will assign a generic `className` to the Node and print the styles with that
