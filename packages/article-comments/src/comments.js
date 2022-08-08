@@ -79,13 +79,38 @@ class Comments extends Component {
       }
     };
 
-    const userShouldUpdateName = (username) => {
-      console.log(username)
+    const userShouldUpdateName = async (username) => {
 
-      //fetch api to return either true or false
-      this.setState({
-        shouldUpdateName: true
-      });
+        const url= `http://localhost:8000/api/comments/display-names-pseudonyms?username=${username}`
+        const {isPseudonym} = await fetch(url)
+
+        const hasLocalStorageBeenSet = window.localStorage.getItem('realNameCommentingBannerViewCount')
+
+        if (isPseudonym ) {
+
+          if (!hasLocalStorageBeenSet) {
+
+            window.localStorage.setItem(
+              '',
+              JSON.stringify({ realNameCommentingBannerViewCount: 3 })
+            );
+  
+            window.localStorage.setItem(
+              '',
+              JSON.stringify({ isRealNameCommentingBannerVisible: false })
+            );
+
+
+          }
+
+          window.dispatchEvent(new CustomEvent('SHOW_REAL_NAME_COMMENTING_BANNER', {})        );
+        }
+
+        
+
+
+
+
     }
 
     let spotAccountId = commentingConfig.account.readOnly;
