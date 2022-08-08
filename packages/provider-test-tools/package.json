@@ -16,7 +16,6 @@
     "bundle": "NODE_ENV=production webpack -p"
   },
   "jest": {
-    "preset": "react-native",
     "rootDir": "../../",
     "testEnvironment": "jsdom",
     "coverageDirectory": "<rootDir>/packages/provider-test-tools/coverage/",
@@ -24,7 +23,7 @@
       "**/packages/provider-test-tools/src/*.js"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!(@times-components)/)"
+      "node_modules/(?!(react-native|@times-components)/)"
     ],
     "testMatch": [
       "<rootDir>/packages/provider-test-tools/__tests__/**.test.js"
