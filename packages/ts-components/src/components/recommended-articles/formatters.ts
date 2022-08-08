@@ -12,7 +12,11 @@ type MediaCrop = {
   alt?: string;
   aspectRatio: string;
 };
-type Media = { __typename: string; crops: MediaCrop[] };
+type Media = {
+  __typename: string;
+  crops: MediaCrop[];
+  posterImage: { crops: MediaCrop[] };
+};
 
 type SummaryText = { __typename: string; text: string };
 type Summary = { __typename: string; children: SummaryText[] };
@@ -43,10 +47,20 @@ const getSummary = (summary?: Summary) =>
     ? summary.children.map(child => child.text).join('') + '...'
     : undefined;
 
-const getImageCrops = (media?: Media) =>
-  media && media.crops
-    ? media.crops.map(crop => ({ url: crop.url, ratio: crop.aspectRatio }))
-    : [];
+const getImageCrops = (crops: MediaCrop[]) =>
+  crops.map(crop => ({ url: crop.url, ratio: crop.aspectRatio }));
+
+const getImage = (media?: Media) => {
+  if (media) {
+    if (media.crops) {
+      return getImageCrops(media.crops);
+    }
+    if (media.posterImage && media.posterImage.crops) {
+      return getImageCrops(media.posterImage.crops);
+    }
+  }
+  return [];
+};
 
 // MAIN
 
@@ -60,7 +74,7 @@ const formatArticle = (article: Article): SliceArticle => {
     datePublished: article.publishedDateTime,
     images: {
       alt: article.headline,
-      crops: getImageCrops(article.media)
+      crops: getImage(article.media)
     }
   };
 };
