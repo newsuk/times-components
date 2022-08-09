@@ -141,7 +141,7 @@ describe("Provider Tests", () => {
     }, customMocks);
   });
 
-  it("supports another refetch after error during refetch", done => {
+  xit("supports another refetch after error during refetch", done => {
     const customMocks = [
       {
         error: {
