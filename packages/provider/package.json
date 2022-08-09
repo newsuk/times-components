@@ -19,7 +19,7 @@
     "rootDir": "../../",
     "testEnvironment": "jsdom",
     "testMatch": [
-      "<rootDir>/packages/provider/__tests__/**.test.js"]
+      "<rootDir>/packages/provider/__tests__/**/*.test.js"]
   },
   "repository": {
     "type": "git",
