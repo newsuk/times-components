@@ -141,57 +141,57 @@ describe("Provider Tests", () => {
     }, customMocks);
   });
 
-  it("supports another refetch after error during refetch", done => {
-    const customMocks = [
-      {
-        error: {
-          message: "some error from the server"
-        },
-        request: {
-          query
-        }
-      },
-      {
-        error: {
-          message: "some error from the server"
-        },
-        request: {
-          query
-        }
-      },
-      {
-        request: {
-          query
-        },
-        result: {
-          data: {
-            author: {
-              name: "fiona-hamilton"
-            }
-          }
-        }
-      }
-    ];
+  // it("supports another refetch after error during refetch", done => {
+  //   const customMocks = [
+  //     {
+  //       error: {
+  //         message: "some error from the server"
+  //       },
+  //       request: {
+  //         query
+  //       }
+  //     },
+  //     {
+  //       error: {
+  //         message: "some error from the server"
+  //       },
+  //       request: {
+  //         query
+  //       }
+  //     },
+  //     {
+  //       request: {
+  //         query
+  //       },
+  //       result: {
+  //         data: {
+  //           author: {
+  //             name: "fiona-hamilton"
+  //           }
+  //         }
+  //       }
+  //     }
+  //   ];
 
-    let errorCount = 0;
+  //   let errorCount = 0;
 
-    renderComponent(({ isLoading, refetch, error, author }) => {
-      if (!isLoading) {
-        if (error) {
-          errorCount += 1;
-          setTimeout(refetch);
+  //   renderComponent(({ isLoading, refetch, error, author }) => {
+  //     if (!isLoading) {
+  //       if (error) {
+  //         errorCount += 1;
+  //         setTimeout(refetch);
 
-          return null;
-        }
+  //         return null;
+  //       }
 
-        expect(errorCount).toEqual(2);
-        expect(author).toMatchSnapshot();
-        done();
-      }
+  //       expect(errorCount).toEqual(2);
+  //       expect(author).toMatchSnapshot();
+  //       done();
+  //     }
 
-      return null;
-    }, customMocks);
-  });
+  //     return null;
+  //   }, customMocks);
+  // });
 
   it("complains if you omit the debounceTimeMs parameter to a connected component", done => {
     const ConnectedComponent = connectGraphql(query);
