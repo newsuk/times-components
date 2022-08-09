@@ -7,56 +7,41 @@ const storeURL = {
     "https://globalstore.thetimes.co.uk/?ILC=INTL-TNL_The_Times-Conversion_Page-Homepage-2020"
 };
 
-export const userShouldUpdateName = async (username) => {
-
+export const userShouldUpdateName = async username => {
   if (!username) {
-    return false
+    return false;
   }
-  const url = `/api/comments/display-names-pseudonyms?username=${username}`
+  const url = `/api/comments/display-names-pseudonyms?username=${username}`;
 
-  const checkUsername = fetch(url).then( (response) => {
-    return response.json()
-  }).then(data => {
+  const checkUsername = global
+    .fetch(url)
+    .then(response => response.json())
+    .then(data => data);
 
-
-    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX dataa', data )
-    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-
-    return data
-  })
-
-
-
-  const isPseudonym = await checkUsername
-
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX checkUsername ', isPseudonym )
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  const isPseudonym = await checkUsername;
 
   if (!isPseudonym) {
-    return false
+    return false;
   }
 
-  const bannerCount = window.localStorage.getItem('realNameCommentingBannerViewCount')
-  const isBannerVisible = window.localStorage.getItem('isRealNameCommentingBannerVisible')
-  const hasLocalStorageBeenSet = bannerCount && isBannerVisible
+  const bannerCount = global.window.localStorage.getItem(
+    "realNameCommentingBannerViewCount"
+  );
+  const isBannerVisible = global.window.localStorage.getItem(
+    "isRealNameCommentingBannerVisible"
+  );
+  const hasLocalStorageBeenSet = bannerCount && isBannerVisible;
 
-  
-      if (!hasLocalStorageBeenSet) {
-        window.localStorage.setItem('realNameCommentingBannerViewCount', 3);
-        window.localStorage.setItem('isRealNameCommentingBannerVisible', false);
-          }
+  if (!hasLocalStorageBeenSet) {
+    global.window.localStorage.setItem("realNameCommentingBannerViewCount", 3);
+    global.window.localStorage.setItem(
+      "isRealNameCommentingBannerVisible",
+      false
+    );
+  }
 
-
-return bannerCount >= 0 ? true : false
-
-    
-}
+  return bannerCount >= 0;
+};
 
 export default () => {
   const region =
@@ -64,6 +49,3 @@ export default () => {
     typeof window !== "undefined" && window.nuk && window.nuk.region;
   return storeURL[region] || storeURL.gb;
 };
-
-
-

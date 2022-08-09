@@ -6,6 +6,7 @@ import { CommentContainer } from "./styles/responsive";
 import executeSSOtransaction from "./comment-login";
 import withTrackEvents from "./tracking/with-track-events";
 import { userShouldUpdateName } from "./utils";
+
 class Comments extends Component {
   constructor() {
     super();
@@ -13,7 +14,7 @@ class Comments extends Component {
 
     this.state = {
       shouldUpdateName: false
-    }
+    };
   }
 
   componentDidMount() {
@@ -89,33 +90,28 @@ class Comments extends Component {
     }
 
     document.addEventListener(
-      "spot-im-current-user-typing-start", () => {
-        onCommentStart
+      "spot-im-current-user-typing-start",
+      event => {
+        onCommentStart(event);
 
-        const { shouldUpdateName } = this.state
+        const { shouldUpdateName } = this.state;
 
         if (shouldUpdateName) {
           window.dispatchEvent(
-            new CustomEvent('SHOW_REAL_NAME_COMMENTING_BANNER', {})
-        );
+            new CustomEvent("SHOW_REAL_NAME_COMMENTING_BANNER", {})
+          );
         }
-
-      },         { once: true }
-    );
-
-
-    document.addEventListener(
-      "spot-im-user-auth-success", async (event) => {
-
-        const { displayName } = event.detail
-
-        const shouldShowBanner =  await userShouldUpdateName(displayName)
-
-        this.setState({shouldUpdateName : shouldShowBanner})
-     
       },
+      { once: true }
     );
 
+    document.addEventListener("spot-im-user-auth-success", async event => {
+      const { displayName } = event.detail;
+
+      const shouldShowBanner = await userShouldUpdateName(displayName);
+
+      this.setState({ shouldUpdateName: shouldShowBanner });
+    });
 
     document.addEventListener(
       "spot-im-current-user-sent-message",
@@ -279,6 +275,3 @@ Comments.defaultProps = {
 };
 
 export default withTrackEvents(Comments);
-
-
-
