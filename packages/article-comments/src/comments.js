@@ -78,20 +78,15 @@ class Comments extends Component {
           return null;
       }
     };
-
-      
-
-    const userShouldUpdateName = async (username) => {
+     const userShouldUpdateName = async (username) => {
 
       console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
       console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
       console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX displayname', username)
 
+      const url= `https://www.uat-thetimes.co.uk/api/comments/display-names-pseudonyms?username=${username}`
 
-
-        const url= `https://www.uat-thetimes.co.uk/api/comments/display-names-pseudonyms?username=${username}`
-
-const { isPseudonym} = {isPseudonym: true}
+      const { isPseudonym} = {isPseudonym: true}
 
 // fetch(url).then( (response) => {
 
@@ -112,34 +107,16 @@ const { isPseudonym} = {isPseudonym: true}
 //   return data
 // })
         
-        
-
        console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX isPseudonym ', isPseudonym)
 
-
         const hasLocalStorageBeenSet = window.localStorage.getItem('realNameCommentingBannerViewCount')
-
-   
-
-        // if (isPseudonym ) {
-
-        //   if (!hasLocalStorageBeenSet) {
-
-        //     window.localStorage.setItem(
-        //       '',
-        //       JSON.stringify({ realNameCommentingBannerViewCount: 3 })
-        //     );
-  
-        //     window.localStorage.setItem(
-        //       '',
-        //       JSON.stringify({ isRealNameCommentingBannerVisible: false })
-        //     );
-
-
-        //   }
-
-        //   window.dispatchEvent(new CustomEvent('SHOW_REAL_NAME_COMMENTING_BANNER', {})        );
-        // }
+        if (isPseudonym ) {
+          if (!hasLocalStorageBeenSet) {
+            window.localStorage.setItem('realNameCommentingBannerViewCount', 3);
+            window.localStorage.setItem('isRealNameCommentingBannerVisible', false);
+              }
+          window.dispatchEvent(new CustomEvent('SHOW_REAL_NAME_COMMENTING_BANNER', {})        );
+        }
     }
 
     let spotAccountId = commentingConfig.account.readOnly;
