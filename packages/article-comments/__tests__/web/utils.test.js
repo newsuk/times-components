@@ -46,8 +46,13 @@ mockFetchResponse = { isPseudonym: false }
     })
 
 
-    it('should set local storage values if they do not alreadye xist and the user is on the banned list', () => {
+    it('should set local storage values if they do not already exist and the user is on the banned list', () => {
+      mockFetchResponse = { isPseudonym: true};
 
+     const result = await userShouldUpdateName('MockBannedName');
+
+     expect(result).toEqual(true);
+     expect(mockLocalStorage.setItem).toBeCalledWith('realNameCommentingBannerViewCount', '123');
 
 
     })
