@@ -11,16 +11,16 @@ exports[`hoist-style should hoist a style and leave existing props untouched 1`]
 }
 </style>
 
-<tc-text__TcText
+<styled.div
   className="IS2"
   foo="bar"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
+    className="sc-ifAKCX fyLOy IS1"
   >
     Some text
   </div>
-</tc-text__TcText>
+</styled.div>
 `;
 
 exports[`hoist-style should hoist a style as well as an rnw class 1`] = `
@@ -34,14 +34,14 @@ exports[`hoist-style should hoist a style as well as an rnw class 1`] = `
 }
 </style>
 
-<tc-text__TcText
+<styled.div
   className="IS2"
   foo="bar"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
+    className="sc-ifAKCX fyLOy IS1"
   >
     Some text
   </div>
-</tc-text__TcText>
+</styled.div>
 `;

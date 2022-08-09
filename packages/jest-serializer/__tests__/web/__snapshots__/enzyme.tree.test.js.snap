@@ -4,7 +4,7 @@ exports[`On web the Enzyme tree serializer should render the expected snapshot 1
 <SomeComponent
   style={null}
 >
-  <tc-view__TcView
+  <styled.div
     style={null}
   >
     <StyledComponent
@@ -13,17 +13,28 @@ exports[`On web the Enzyme tree serializer should render the expected snapshot 1
           "$$typeof": Symbol(react.forward_ref),
           "attrs": Array [],
           "componentStyle": ComponentStyle {
-            "componentId": "tc-view__TcView-nuazoi-0",
+            "componentId": "sc-htpNat",
             "isStatic": true,
-            "lastClassName": "fPjBcr",
+            "lastClassName": "VXuSA",
             "rules": Array [
-              "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:0px;min-height:0px;min-width:0px;padding:0px;position:relative;z-index:0;",
+              "
+  border: 0px solid black;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  min-height: 0px;
+  min-width: 0px;
+  padding: 0px;
+  position: relative;
+  z-index: 0;
+",
             ],
           },
-          "displayName": "tc-view__TcView",
+          "displayName": "styled.div",
           "foldedComponentIds": Array [],
           "render": [Function],
-          "styledComponentId": "tc-view__TcView-nuazoi-0",
+          "styledComponentId": "sc-htpNat",
           "target": "div",
           "toString": [Function],
           "warnTooManyClasses": [Function],
@@ -34,27 +45,38 @@ exports[`On web the Enzyme tree serializer should render the expected snapshot 1
       style={null}
     >
       <div
-        className="tc-view__TcView-nuazoi-0 fPjBcr"
+        className="sc-htpNat VXuSA"
         style={null}
       >
-        <tc-text__TcText>
+        <styled.div>
           <StyledComponent
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "tc-text__TcText-sc-15igzev-0",
+                  "componentId": "sc-ifAKCX",
                   "isStatic": true,
-                  "lastClassName": "lhcAkf",
+                  "lastClassName": "fyLOy",
                   "rules": Array [
-                    "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                    "
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto,
+    Ubuntu, \\"Helvetica Neue\\", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+",
                   ],
                 },
-                "displayName": "tc-text__TcText",
+                "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "tc-text__TcText-sc-15igzev-0",
+                "styledComponentId": "sc-ifAKCX",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -64,30 +86,41 @@ exports[`On web the Enzyme tree serializer should render the expected snapshot 1
             forwardedRef={null}
           >
             <div
-              className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+              className="sc-ifAKCX fyLOy"
             >
               Hello!
             </div>
           </StyledComponent>
-        </tc-text__TcText>
-        <tc-text__TcText>
+        </styled.div>
+        <styled.div>
           <StyledComponent
             forwardedComponent={
               Object {
                 "$$typeof": Symbol(react.forward_ref),
                 "attrs": Array [],
                 "componentStyle": ComponentStyle {
-                  "componentId": "tc-text__TcText-sc-15igzev-0",
+                  "componentId": "sc-ifAKCX",
                   "isStatic": true,
-                  "lastClassName": "lhcAkf",
+                  "lastClassName": "fyLOy",
                   "rules": Array [
-                    "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                    "
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  display: inline;
+  font: 14px system-ui, -apple-system, BlinkMacSystemFont, \\"Segoe UI\\", Roboto,
+    Ubuntu, \\"Helvetica Neue\\", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+",
                   ],
                 },
-                "displayName": "tc-text__TcText",
+                "displayName": "styled.div",
                 "foldedComponentIds": Array [],
                 "render": [Function],
-                "styledComponentId": "tc-text__TcText-sc-15igzev-0",
+                "styledComponentId": "sc-ifAKCX",
                 "target": "div",
                 "toString": [Function],
                 "warnTooManyClasses": [Function],
@@ -97,14 +130,14 @@ exports[`On web the Enzyme tree serializer should render the expected snapshot 1
             forwardedRef={null}
           >
             <div
-              className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+              className="sc-ifAKCX fyLOy"
             >
               deeply nested
             </div>
           </StyledComponent>
-        </tc-text__TcText>
+        </styled.div>
       </div>
     </StyledComponent>
-  </tc-view__TcView>
+  </styled.div>
 </SomeComponent>
 `;
