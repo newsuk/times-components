@@ -23,7 +23,7 @@ const mockLocalStorage = {
           json: () => Promise.resolve(mockFetchResponse),
         })
     })
-    
+
     afterAll(() => {
       global.fetch = unmockedFetch
     })
@@ -46,19 +46,22 @@ mockFetchResponse = { isPseudonym: false }
     })
 
 
-    it('should set local storage values if they do not already exist and the user is on the banned list', () => {
+    it('should set local storage values if they do not already exist and the user is on the banned list', async () => {
       mockFetchResponse = { isPseudonym: true};
 
      const result = await userShouldUpdateName('MockBannedName');
 
      expect(result).toEqual(true);
-     expect(mockLocalStorage.setItem).toBeCalledWith('realNameCommentingBannerViewCount', '123');
-
-
+     expect(mockLocalStorage.setItem).toBeCalledWith('realNameCommentingBannerViewCount', 3);
+     expect(mockLocalStorage.setItem).toBeCalledWith('isRealNameCommentingBannerVisible', false);
     })
 
-    it('should return true if the bannerCount vaue is greater than 0', () => {
+    it('should return true when localStorage is not set but the user is on the banned list', async () => {
+      mockFetchResponse = { isPseudonym: true};
+      const result = await userShouldUpdateName('MockBannedName');
 
+      expect(result).toEqual(true);
+      expect(mockLocalStorage.setItem).not.toBeCalledWith();
     })
 
 
