@@ -89,28 +89,36 @@ class Comments extends Component {
       }
     }
 
+    const isFeatureFlagEnabled = window.location.search.includes(
+      "enableRealNameCommenting"
+    );
+
     document.addEventListener(
       "spot-im-current-user-typing-start",
       event => {
         onCommentStart(event);
 
-        const { shouldUpdateName } = this.state;
+        if (isFeatureFlagEnabled) {
+          const { shouldUpdateName } = this.state;
 
-        if (shouldUpdateName) {
-          window.dispatchEvent(
-            new CustomEvent("SHOW_REAL_NAME_COMMENTING_BANNER", {})
-          );
+          if (shouldUpdateName) {
+            window.dispatchEvent(
+              new CustomEvent("SHOW_REAL_NAME_COMMENTING_BANNER", {})
+            );
+          }
         }
       },
       { once: true }
     );
 
     document.addEventListener("spot-im-user-auth-success", async event => {
-      const { displayName } = event.detail;
+      if (isFeatureFlagEnabled) {
+        const { displayName } = event.detail;
 
-      const shouldShowBanner = await userShouldUpdateName(displayName);
+        const shouldShowBanner = await userShouldUpdateName(displayName);
 
-      this.setState({ shouldUpdateName: shouldShowBanner });
+        this.setState({ shouldUpdateName: shouldShowBanner });
+      }
     });
 
     document.addEventListener(
