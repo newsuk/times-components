@@ -34,13 +34,6 @@ WithTrackingContext.propTypes = {
   analyticsStream: PropTypes.func.isRequired
 };
 
-
-describe('smart banner ui', () => {
-
-  
-})
-
-describe('tracking', () => {
 it("should track Comment start event ", () => {
   const analyticsStream = jest.fn();
 
@@ -250,4 +243,3 @@ it("should track when user clicks on their username", () => {
   const [[callParams]] = analyticsStream.mock.calls;
   expect(callParams).toMatchSnapshot();
 });
-})

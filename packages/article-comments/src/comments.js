@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import { CommentContainer } from "./styles/responsive";
 import executeSSOtransaction from "./comment-login";
 import withTrackEvents from "./tracking/with-track-events";
-
+import { userShouldUpdateName } from "./utils";
 class Comments extends Component {
   constructor() {
     super();
@@ -78,46 +78,6 @@ class Comments extends Component {
           return null;
       }
     };
-     const userShouldUpdateName = async (username) => {
-
-      console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-      console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-      console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX displayname', username)
-
-      const url= `https://www.uat-thetimes.co.uk/api/comments/display-names-pseudonyms?username=${username}`
-
-      const { isPseudonym} = {isPseudonym: true}
-
-// fetch(url).then( (response) => {
-
-//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX response ', response)
-//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-
-//   return response.json()
-
-// }).then(data => {
-//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX res ',  data)
-//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-//   console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-//   return data
-// })
-        
-       console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX isPseudonym ', isPseudonym)
-
-        const hasLocalStorageBeenSet = window.localStorage.getItem('realNameCommentingBannerViewCount')
-        if (isPseudonym ) {
-          if (!hasLocalStorageBeenSet) {
-            window.localStorage.setItem('realNameCommentingBannerViewCount', 3);
-            window.localStorage.setItem('isRealNameCommentingBannerVisible', false);
-              }
-          window.dispatchEvent(new CustomEvent('SHOW_REAL_NAME_COMMENTING_BANNER', {})        );
-        }
-    }
 
     let spotAccountId = commentingConfig.account.readOnly;
 
@@ -155,7 +115,7 @@ class Comments extends Component {
         console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX spot-im-user-auth-success', event)
         console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
         console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-      },       
+      },
     );
 
 
