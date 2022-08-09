@@ -10,6 +10,10 @@ import { shallow } from "enzyme";
 import gql from "graphql-tag";
 import omit from "lodash.omit";
 import connectGraphql, { QueryProvider } from "../src/connect";
+import Adapter from "enzyme-adapter-react-16";
+import Enzyme from "enzyme";
+
+Enzyme.configure({ adapter: new Adapter() });
 
 jest.mock("react-apollo", () => ({
   Query: ({ children }) =>

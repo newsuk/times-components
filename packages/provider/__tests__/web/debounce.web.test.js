@@ -2,6 +2,10 @@ import React from "react";
 import { mount } from "enzyme";
 import Inner from "../inner";
 import withDebounce from "../../src/debounce";
+import Adapter from "enzyme-adapter-react-16";
+import Enzyme from "enzyme";
+
+Enzyme.configure({ adapter: new Adapter() });
 
 jest.useFakeTimers();
 

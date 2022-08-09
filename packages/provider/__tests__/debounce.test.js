@@ -7,6 +7,10 @@ import {
   enzymeRootSerializer,
   minimalise
 } from "@times-components/jest-serializer";
+import Adapter from "enzyme-adapter-react-16";
+import Enzyme from "enzyme";
+
+Enzyme.configure({ adapter: new Adapter() });
 
 import Inner from "./inner";
 import withDebounce, { Debounce } from "../src/debounce";
