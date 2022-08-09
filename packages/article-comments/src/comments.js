@@ -107,14 +107,12 @@ class Comments extends Component {
     document.addEventListener(
       "spot-im-user-auth-success", (event) => {
 
-        const {displayName, email, id, username} = event.detail
+        const { displayName } = event.detail
 
-        userShouldUpdateName(username)
-        console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-        console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-        console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX spot-im-user-auth-success', event)
-        console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-        console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+        const shouldShowBanner =  userShouldUpdateName(displayName)
+
+        this.setState({shouldUpdateName : shouldShowBanner})
+     
       },
     );
 

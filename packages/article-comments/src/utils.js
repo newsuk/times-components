@@ -9,49 +9,41 @@ const storeURL = {
 
 export const userShouldUpdateName = async (username) => {
 
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX displayname', username)
-
-  const url = `https://www.uat-thetimes.co.uk/api/comments/display-names-pseudonyms?username=${username}`
+  if (!username) {
+    return false
+  }
+  const url = `/api/comments/display-names-pseudonyms?username=${username}`
 
   const checkUsername = fetch(url).then( (response) => {
-
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX response ', response)
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-
-  return response.json()
-
-}).then(data => {
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX res ',  data)
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  return data
-})
+    return response.json()
+  }).then(data => {
 
 
-const isPseudonym = await checkUsername
 
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX isPseudonym',   isPseudonym)
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
 
-    const hasLocalStorageBeenSet = window.localStorage.getItem('realNameCommentingBannerViewCount')
+    return data
+  })
 
-    if (isPseudonym ) {
+  const isPseudonym = await checkUsername
+
+  if (!isPseudonym) {
+    return false
+  }
+
+  const bannerCount = window.localStorage.getItem('realNameCommentingBannerViewCount')
+  const isBannerVisible = window.localStorage.getItem('isRealNameCommentingBannerVisible')
+  const hasLocalStorageBeenSet = bannerCount && isBannerVisible
+
+  
       if (!hasLocalStorageBeenSet) {
         window.localStorage.setItem('realNameCommentingBannerViewCount', 3);
         window.localStorage.setItem('isRealNameCommentingBannerVisible', false);
           }
-      window.dispatchEvent(new CustomEvent('SHOW_REAL_NAME_COMMENTING_BANNER', {})        );
-    }
+
+
+return bannerCount >= 0 ? true : false
+
+    
 }
 
 export default () => {

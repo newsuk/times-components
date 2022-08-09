@@ -1,45 +1,58 @@
 import { userShouldUpdateName } from "../../src/utils";
 
-
 const mockLocalStorage = {
     _storage: {},
     getItem: jest.fn((key) => {
       return mockLocalStorage._storage[key];
     }),
     setItem: jest.fn((key, value) => {
-      mLocalStorage._storage[key] = value;
+      mockLocalStorage._storage[key] = value;
     }),
   }
   Object.defineProperty(window, 'localStorage', {
     value: mockLocalStorage
   })
 
-
+  const unmockedFetch = global.fetch
+  let mockFetchResponse = {}
 
   describe('userShouldUpdateName()', () => {
-    it('it should return early if no username', () => {
-      userShouldUpdateName('John');
+    beforeAll(() => {
+      global.fetch = () =>
+        Promise.resolve({
+          json: () => Promise.resolve(mockFetchResponse),
+        })
+    })
+    
+    afterAll(() => {
+      global.fetch = unmockedFetch
+    })
+    it('it should return false if no username', () => {
+      const result = userShouldUpdateName();
+
+      expect(result).toEqual(false)
       expect(mockLocalStorage.setItem).not.toBeCalledWith('realNameCommentingBannerViewCount', '123');
     })
-  //     jest.spyOn(window, 'addEventListener').mockImplementationOnce((event, handler, options) => {
-  // return {detail: { displayName: 'Mock Name', email: 'mock@mock.com', id: '12345', username: 'Mock Smith'}}
-  //     })
-  //     expect(window.addEventListener).toBeCalledWith('spot-im-user-auth-success')
+
+    it('it should return false if the username is valid', async () => {
+
+mockFetchResponse = { isPseudonym: false }
+
+      const result = await userShouldUpdateName('john');
+
+      expect(result).toEqual(false)
+      expect(mockLocalStorage.setItem).not.toBeCalledWith('realNameCommentingBannerViewCount', '123');
+    })
 
 
-    it('calls the Render endpoint to check if the display name is a pseudonym', () => {
+    it('should set local storage values if they do not alreadye xist and the user is on the banned list', () => {
 
     })
 
-    it('sets realNameCommentingBannerViewCount to 3 if username is pseudonym and value for realNameCommentingBannerViewCount has not been set', () => {
-      //let
-    })
-
-    it('sets isRealNameCommentingBannerVisible to true if username is pseudonym and value for realNameCommentingBannerViewCount has not been set', () => {
+    it('should return true if the bannerCount vaue is greater than 0', () => {
 
     })
-    it('triggers the commenting banner when user uses a pseudonym', () => {
 
-    })
+
 
   })
