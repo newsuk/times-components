@@ -6,12 +6,11 @@ import {
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import renderer from "react-test-renderer";
-import { shallow } from "enzyme";
 import gql from "graphql-tag";
 import omit from "lodash.omit";
-import connectGraphql, { QueryProvider } from "../src/connect";
 import Adapter from "enzyme-adapter-react-16";
-import Enzyme from "enzyme";
+import Enzyme, { shallow } from "enzyme";
+import connectGraphql, { QueryProvider } from "../src/connect";
 
 Enzyme.configure({ adapter: new Adapter() });
 

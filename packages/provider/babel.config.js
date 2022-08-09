@@ -6,13 +6,16 @@ module.exports = api => {
       "transform-class-properties",
       "@babel/plugin-proposal-export-default-from"
     ],
-    presets: [[
-      "@babel/preset-env",
-      {
-        targets: {
-          esmodules: true
+    presets: [
+      [
+        "@babel/preset-env",
+        {
+          targets: {
+            esmodules: true
+          }
         }
-      }
-    ],"@babel/preset-react"]
+      ],
+      "@babel/preset-react"
+    ]
   };
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { shallow } from "enzyme";
+import Enzyme, { shallow } from "enzyme";
 import { iterator } from "@times-components/test-utils";
 import {
   addSerializers,
@@ -8,12 +8,11 @@ import {
   minimalise
 } from "@times-components/jest-serializer";
 import Adapter from "enzyme-adapter-react-16";
-import Enzyme from "enzyme";
-
-Enzyme.configure({ adapter: new Adapter() });
 
 import Inner from "./inner";
 import withDebounce, { Debounce } from "../src/debounce";
+
+Enzyme.configure({ adapter: new Adapter() });
 
 addSerializers(
   expect,
