@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.85.35](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.34...@times-components/article-skeleton@1.85.35) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.85.34](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.33...@times-components/article-skeleton@1.85.34) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.85.33](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.32...@times-components/article-skeleton@1.85.33) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.85.32](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.31...@times-components/article-skeleton@1.85.32) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.85.31](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.30...@times-components/article-skeleton@1.85.31) (2022-08-04)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.85.30](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.29...@times-components/article-skeleton@1.85.30) (2022-08-04)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.85.29](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.28...@times-components/article-skeleton@1.85.29) (2022-08-03)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.85.28](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.85.27...@times-components/article-skeleton@1.85.28) (2022-08-02)
 
 **Note:** Version bump only for package @times-components/article-skeleton

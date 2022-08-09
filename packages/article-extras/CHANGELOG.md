@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.48](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.15.47...@times-components/article-extras@0.15.48) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.15.47](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.15.46...@times-components/article-extras@0.15.47) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.15.46](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.15.45...@times-components/article-extras@0.15.46) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.15.45](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.15.44...@times-components/article-extras@0.15.45) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.15.44](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.15.43...@times-components/article-extras@0.15.44) (2022-08-04)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.15.43](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.15.42...@times-components/article-extras@0.15.43) (2022-08-04)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.15.42](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.15.41...@times-components/article-extras@0.15.42) (2022-08-03)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
 ## [0.15.41](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.15.40...@times-components/article-extras@0.15.41) (2022-08-02)
 
 **Note:** Version bump only for package @times-components/article-extras

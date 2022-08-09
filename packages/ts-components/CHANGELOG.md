@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.51.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.50.1...@times-components/ts-components@1.51.0) (2022-08-08)
+
+
+### Features
+
+* **TDP-2362:** Recommended Rail - add video images ([#3103](https://github.com/newsuk/times-components/issues/3103)) ([32decc8](https://github.com/newsuk/times-components/commit/32decc88f26535e603118a98904b067868cb2431))
+
+
+
+
+
+## [1.50.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.50.0...@times-components/ts-components@1.50.1) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+# [1.50.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.49.5...@times-components/ts-components@1.50.0) (2022-08-08)
+
+
+### Features
+
+* **TDP-2259:** adding cursor: pointer style to inlinedialog component ([#3100](https://github.com/newsuk/times-components/issues/3100)) ([5da8ffc](https://github.com/newsuk/times-components/commit/5da8ffc2a8fb8fa59d87aedc882be03e1ac3d16f))
+
+
+
+
+
+## [1.49.5](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.49.4...@times-components/ts-components@1.49.5) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.49.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.49.3...@times-components/ts-components@1.49.4) (2022-08-03)
+
+
+### Bug Fixes
+
+* **TDP-2264:** Fix for API call ([#3090](https://github.com/newsuk/times-components/issues/3090)) ([17c55de](https://github.com/newsuk/times-components/commit/17c55deda84a8e56a0c62ef15bcb2aca3a9e0f7c))
+
+
+
+
+
 ## [1.49.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.49.2...@times-components/ts-components@1.49.3) (2022-08-02)
 
 **Note:** Version bump only for package @times-components/ts-components

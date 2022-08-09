@@ -103,14 +103,16 @@ export default {
           ]
         },
         media: {
-          crops: [
-            {
-              url:
-                'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Feb05c224-e626-11ec-aa87-2eea7c6e5b01.jpg?crop=1500%2C844%2C0%2C78',
-              alt: null,
-              aspectRatio: '16:9'
-            }
-          ]
+          posterImage: {
+            crops: [
+              {
+                url:
+                  'https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Feb05c224-e626-11ec-aa87-2eea7c6e5b01.jpg?crop=1500%2C844%2C0%2C78',
+                alt: null,
+                aspectRatio: '16:9'
+              }
+            ]
+          }
         }
       },
       {
