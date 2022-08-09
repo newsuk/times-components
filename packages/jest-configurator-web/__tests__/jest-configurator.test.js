@@ -12,11 +12,11 @@ describe("Jest Configurator Web Tests", () => {
   it("should have the correct module name extensions", () => {
     const config = jestConfigurator(dir);
     expect(config.moduleFileExtensions).toEqual([
+      "js",
+      "json",
       "ts",
       "tsx",
-      "graphql",
-      "js",
-      "json"
+      "graphql"
     ]);
   });
 });

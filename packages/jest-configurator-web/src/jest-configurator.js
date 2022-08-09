@@ -11,22 +11,24 @@ export default (cwd, options = {}) => {
   );
 
   const config = {
-    moduleFileExtensions: ["ts", "tsx", "graphql", "js", "json"],
+    moduleFileExtensions: ["js", "json", "ts", "tsx", "graphql"],
     moduleNameMapper: {
       "\\.(png)$": "identity-obj-proxy"
     },
-    testEnvironment: "jsdom",
     modulePathIgnorePatterns: ["node_modules/@storybook/"],
     rootDir,
     setupFiles: [path.resolve(__dirname, "../setup-jest.js")],
     setupFilesAfterEnv: setupFilesAfterEnv ? [setupFilesAfterEnv] : [],
+    testEnvironment: "jsdom",
     testMatch: [`${module}/__tests__/**/*.test.js`],
     testPathIgnorePatterns: [path.join(module, "__tests__", "jest.config.js")],
     testURL: "http://localhost",
     transform: {
+      "^.+\\.js$": path.resolve(__dirname, "source-loader.js"),
       "\\.(gql|graphql)$": "jest-transform-graphql",
       "^.+\\.graphql": "babel-jest",
-      "^.+\\.[jt]sx?$": "babel-jest"
+      "^.+\\.[jt]sx?$": "babel-jest",
+      "^.+\\.[jt]s?$": "babel-jest"
     },
     transformIgnorePatterns: [
       "node_modules/(?!(@times-components|@storybook/react)/)"
