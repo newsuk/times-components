@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.53.23](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.53.22...@times-components/article-magazine-standard@3.53.23) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.53.22](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.53.21...@times-components/article-magazine-standard@3.53.22) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.53.21](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.53.20...@times-components/article-magazine-standard@3.53.21) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.53.20](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.53.19...@times-components/article-magazine-standard@3.53.20) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.53.19](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.53.18...@times-components/article-magazine-standard@3.53.19) (2022-08-04)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.53.18](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.53.17...@times-components/article-magazine-standard@3.53.18) (2022-08-04)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.53.17](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.53.16...@times-components/article-magazine-standard@3.53.17) (2022-08-03)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
 ## [3.53.16](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.53.15...@times-components/article-magazine-standard@3.53.16) (2022-08-02)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard

@@ -3,6 +3,68 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.24.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.24.1...@times-components/article-comments@0.24.2) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.24.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.24.0...@times-components/article-comments@0.24.1) (2022-08-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.24.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.23.2...@times-components/article-comments@0.24.0) (2022-08-08)
+
+
+### Features
+
+* **TDP-2259:** adding cursor: pointer style to inlinedialog component ([#3100](https://github.com/newsuk/times-components/issues/3100)) ([5da8ffc](https://github.com/newsuk/times-components/commit/5da8ffc2a8fb8fa59d87aedc882be03e1ac3d16f))
+
+
+
+
+
+## [0.23.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.23.1...@times-components/article-comments@0.23.2) (2022-08-05)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.23.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.23.0...@times-components/article-comments@0.23.1) (2022-08-04)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+# [0.23.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.22.7...@times-components/article-comments@0.23.0) (2022-08-04)
+
+
+### Features
+
+* triggering upgrade modal from article ([#3082](https://github.com/newsuk/times-components/issues/3082)) ([d35b130](https://github.com/newsuk/times-components/commit/d35b130ecc94e681549d55960307a6e805936483))
+
+
+
+
+
+## [0.22.7](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.22.6...@times-components/article-comments@0.22.7) (2022-08-03)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
 ## [0.22.6](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.22.5...@times-components/article-comments@0.22.6) (2022-08-02)
 
 **Note:** Version bump only for package @times-components/article-comments

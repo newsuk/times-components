@@ -1,17 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";
-import {
-  InlineDialog,
-  // InlineMessage,
-  HiddenDiv
-} from "@times-components/ts-components";
+import { HiddenDiv } from "@times-components/ts-components";
 
 import Comments from "./comments";
-import getStoreLink from "./utils";
 
 import DisabledComments from "./disabled-comments";
 import { CommentContainer } from "./styles/responsive";
+import JoinTheConversationDialog from "./join-the-conversation-dialog";
 
 const ArticleComments = ({
   articleId,
@@ -23,14 +19,7 @@ const ArticleComments = ({
   isEnabled ? (
     <>
       <UserState state={UserState.metered}>
-        <InlineDialog
-          title="Join the conversation"
-          buttonText="View offers"
-          href={getStoreLink()}
-        >
-          Commenting is only available to unlimited access subscribers. Upgrade
-          your subscription to have your say.
-        </InlineDialog>
+        <JoinTheConversationDialog />
       </UserState>
       <UserState state={UserState.subscriber}>
         <CommentContainer>
