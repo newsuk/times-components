@@ -27,11 +27,11 @@ const mockLocalStorage = {
     afterAll(() => {
       global.fetch = unmockedFetch
     })
-    it('it should return false if no username', () => {
-      const result = userShouldUpdateName();
+    it('it should return false if no username', async () => {
+      const result = await userShouldUpdateName();
 
       expect(result).toEqual(false)
-      expect(mockLocalStorage.setItem).not.toBeCalledWith('realNameCommentingBannerViewCount', '123');
+      expect(mockLocalStorage.setItem).not.toBeCalled();
     })
 
     it('it should return false if the username is valid', async () => {
@@ -41,11 +41,14 @@ mockFetchResponse = { isPseudonym: false }
       const result = await userShouldUpdateName('john');
 
       expect(result).toEqual(false)
-      expect(mockLocalStorage.setItem).not.toBeCalledWith('realNameCommentingBannerViewCount', '123');
+      expect(mockLocalStorage.setItem).not.toBeCalledWith();
+      //      expect(mockLocalStorage.setItem).not.toBeCalledWith('realNameCommentingBannerViewCount', '123');
     })
 
 
     it('should set local storage values if they do not alreadye xist and the user is on the banned list', () => {
+
+
 
     })
 

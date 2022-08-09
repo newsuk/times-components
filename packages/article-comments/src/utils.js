@@ -19,12 +19,24 @@ export const userShouldUpdateName = async (username) => {
   }).then(data => {
 
 
-
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX dataa', data )
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
 
     return data
   })
 
+
+
   const isPseudonym = await checkUsername
+
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX checkUsername ', isPseudonym )
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
 
   if (!isPseudonym) {
     return false

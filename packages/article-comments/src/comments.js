@@ -105,11 +105,11 @@ class Comments extends Component {
 
 
     document.addEventListener(
-      "spot-im-user-auth-success", (event) => {
+      "spot-im-user-auth-success", async (event) => {
 
         const { displayName } = event.detail
 
-        const shouldShowBanner =  userShouldUpdateName(displayName)
+        const shouldShowBanner =  await userShouldUpdateName(displayName)
 
         this.setState({shouldUpdateName : shouldShowBanner})
      
