@@ -2,7 +2,7 @@
 
 exports[`The minimal serializer should for web not remove className 1`] = `
 <div
-  className="sc-ifAKCX fyLOy"
+  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   style={
     Object {
       "color": "red",
@@ -14,30 +14,30 @@ exports[`The minimal serializer should for web not remove className 1`] = `
 
 exports[`The minimal serializer should for web remove empty objects as props 1`] = `
 <div
-  className="sc-htpNat VXuSA"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="sc-ifAKCX fyLOy"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   />
 </div>
 `;
 
 exports[`The minimal serializer should for web remove functions as props 1`] = `
 <div
-  className="sc-htpNat VXuSA"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="sc-ifAKCX fyLOy"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   />
 </div>
 `;
 
 exports[`The minimal serializer should for web remove undefined props 1`] = `
 <div
-  className="sc-htpNat VXuSA"
+  className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="sc-ifAKCX fyLOy"
+    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
   />
 </div>
 `;
@@ -45,11 +45,11 @@ exports[`The minimal serializer should for web remove undefined props 1`] = `
 exports[`The minimal serializer should for web transform render props 1`] = `
 <Foo
   prop={
-    <ForwardRef(styled.div)
+    <ForwardRef(tc-text__TcText)
       href="href"
     >
       Bar
-    </ForwardRef(styled.div)>
+    </ForwardRef(tc-text__TcText)>
   }
 />
 `;

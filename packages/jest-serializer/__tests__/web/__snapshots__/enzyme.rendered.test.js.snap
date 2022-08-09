@@ -1,27 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`On web the Enzyme rendered serializer should render the expected snapshot 1`] = `
-<styled.div
+<tc-view__TcView
   style={null}
 >
   <div
-    className="sc-htpNat VXuSA"
+    className="tc-view__TcView-nuazoi-0 fPjBcr"
     style={null}
   >
-    <styled.div>
+    <tc-text__TcText>
       <div
-        className="sc-ifAKCX fyLOy"
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       >
         Hello!
       </div>
-    </styled.div>
-    <styled.div>
+    </tc-text__TcText>
+    <tc-text__TcText>
       <div
-        className="sc-ifAKCX fyLOy"
+        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
       >
         deeply nested
       </div>
-    </styled.div>
+    </tc-text__TcText>
   </div>
-</styled.div>
+</tc-view__TcView>
 `;
