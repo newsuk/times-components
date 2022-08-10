@@ -40,7 +40,7 @@ export const userShouldUpdateName = async username => {
     );
   }
 
-  return bannerCount >= 0;
+  return bannerCount > 0;
 };
 
 export default () => {
