@@ -11,7 +11,7 @@ const buildConfig = dir => {
     setupFiles: [],
     testMatch: [`**/packages/${name}/__tests__/*.test.ts`],
     transform: {
-      ".+\\.js$": "./node_modules/react-native/jest/preprocessor.js",
+      ".+\\.js$": "babel-jest",
       ".+\\.tsx?$": "ts-jest"
     },
     globals: {
