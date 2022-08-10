@@ -59,7 +59,7 @@ const renderData = (app, helmetContext = {}) =>
 
     const responsiveStyles = serverStylesheet.getStyleTags();
     const styles = {};
-    
+
     const { helmet } = helmetContext;
     const headMarkup = helmet
       ? ["title", "meta", "link", "script"].reduce(
