@@ -5,8 +5,8 @@
 
 ### Purpose
 
-Home of The Times' `react`/`react native` components, using
-[react-native-web](https://github.com/necolas/react-native-web) to share across platforms
+Home of The Times' `react` components, using
+[react](https://github.com/facebook/react) to share across platforms
 
 ### Dev Environment
 
