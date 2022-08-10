@@ -86,5 +86,5 @@ module.exports = (component, clientOptions, data) => {
 
   const App = component(client, analyticsStream, data, {});
 
-  ReactDOMClient.render(App, document.getElementById(clientOptions.rootTag))
+  ReactDOMClient.render(App, document.getElementById(clientOptions.rootTag));
 };
