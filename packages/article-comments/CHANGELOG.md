@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.25.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.24.2...@times-components/article-comments@0.25.0) (2022-08-10)
+
+
+### Features
+
+* **TDP-2318:** enable sso loginv2 endpoint prod  ([d5b2952](https://github.com/newsuk/times-components/commit/d5b29520ff6d293e8a34e3493fcba30b3ca85242))
+
+
+
+
+
 ## [0.24.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.24.1...@times-components/article-comments@0.24.2) (2022-08-08)
 
 **Note:** Version bump only for package @times-components/article-comments

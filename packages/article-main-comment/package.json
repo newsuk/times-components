@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-main-comment",
-  "version": "2.52.23",
+  "version": "2.52.24",
   "description": "Main Comment Article Template",
   "main": "dist/article-main-comment",
   "dev": "src/article-main-comment",
@@ -60,7 +60,7 @@
     "@times-components/ad": "2.20.3",
     "@times-components/article-byline": "3.8.7",
     "@times-components/article-label": "2.9.7",
-    "@times-components/article-skeleton": "1.85.35",
+    "@times-components/article-skeleton": "1.85.36",
     "@times-components/context": "1.9.4",
     "@times-components/date-publication": "0.23.5",
     "@times-components/image": "6.12.8",
