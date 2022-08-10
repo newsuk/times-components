@@ -45,7 +45,6 @@ describe("comments-login", () => {
 
   it("uses new commenting service", () => {
     global.window = Object.create(window);
-    const url = "    http://localhost/";
 
     jest.spyOn(window, "XMLHttpRequest").mockImplementation(() => xhrMock);
 
