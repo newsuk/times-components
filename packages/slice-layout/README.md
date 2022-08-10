@@ -4,7 +4,7 @@ Slice layouts are re-usable templates. A slice layout lays itself out according 
 set of self-defined rules. The slice layout also provides a suggested default
 configuration that can be applied to the given components that are to be laid
 out within the template - this configuration is provided in the form of CSS
-class names and JS objects for web, and a JS API for native. The consumer of
+class names and JS objects. The consumer of
 slice layout can opt-in or out of utilising these suggested default configurations
 
 ## Contributing
@@ -27,8 +27,7 @@ yarn lint
 
 ## Testing
 
-This package uses [yarn](https://yarnpkg.com) (latest) to run unit tests on each
-platform with [jest](https://facebook.github.io/jest/).
+This package uses [yarn](https://yarnpkg.com) (latest) to run unit tests with [jest](https://facebook.github.io/jest/).
 
 ```
 yarn test:web
