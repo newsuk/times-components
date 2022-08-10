@@ -43,26 +43,8 @@ describe("comments-login", () => {
     addEventListener: jest.fn()
   };
 
-  it("uses pre existing commenting service when there isn't a feature flag", () => {
-    jest.spyOn(window, "XMLHttpRequest").mockImplementation(() => xhrMock);
-
-    ssoCallback("mock-code-a", {});
-
-    expect(xhrMock.open).toHaveBeenCalledWith(
-      "GET",
-      "/api/comments/login?codeA=mock-code-a"
-    );
-  });
-
-  it("uses new commenting service when feature flag is enabled", () => {
+  it("uses new commenting service", () => {
     global.window = Object.create(window);
-    const url = "    http://localhost/";
-    Object.defineProperty(window, "location", {
-      value: {
-        href: url,
-        search: "?enableRealNameCommenting"
-      }
-    });
 
     jest.spyOn(window, "XMLHttpRequest").mockImplementation(() => xhrMock);
 

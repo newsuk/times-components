@@ -13,20 +13,11 @@ const loginRequest = (url, completeSSOCallback) => {
   xhr.send();
 };
 
-const ssoCallback = (codeA, completeSSOCallback) => {
-  const isFeatureFlagEnabled = window.location.search.includes(
-    "enableRealNameCommenting"
-  );
-
-  const loginRequestUrl = isFeatureFlagEnabled
-    ? "/api/comments/loginv2"
-    : "/api/comments/login";
-
-  return loginRequest(
-    `${loginRequestUrl}?codeA=${encodeURIComponent(codeA)}`,
+const ssoCallback = (codeA, completeSSOCallback) =>
+  loginRequest(
+    `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}`,
     completeSSOCallback
   );
-};
 
 const executeSSOtransaction = callback => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
