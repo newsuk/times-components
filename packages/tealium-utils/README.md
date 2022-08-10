@@ -1,7 +1,6 @@
 # Tealium Utils
 
-Like the tealium package, this package is web-only. Mobile tracking is managed
-natively. This package simply sets up a "dev" instance of the Tealium reporter
+This package simply sets up a "dev" instance of the Tealium reporter
 for usage in the Times Components showcases. Showcases typically import this
 method and pass it to any component that utilises the tracking package.
 
