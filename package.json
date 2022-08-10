@@ -12,7 +12,6 @@
     "times-components": "times-components"
   },
   "scripts": {
-    "native": "node node_modules/react-native/local-cli/cli.js start",
     "coverage:publish": "lcov-result-merger './**/lcov.info' | coveralls -verbose",
     "prelint": "eslint . && prettier --list-different '**/*.js' && yarn deps:lint",
     "lint": "lerna run lint --since -- -- --ci",
@@ -55,7 +54,7 @@
       "<rootDir>/node_modules/"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!react-native|react-native-svg|@times-components)",
+      "node_modules/?!@times-components",
       "packages/?!author-profile"
     ]
   },
