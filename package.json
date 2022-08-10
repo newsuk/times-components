@@ -48,7 +48,6 @@
     "watch": "lerna run watch --stream --no-sort --concurrency 100"
   },
   "jest": {
-    "preset": "react-native",
     "coveragePathIgnorePatterns": [
       "lib/cli/edition-checker/src/main.js"
     ],
@@ -73,9 +72,7 @@
     "url": "git+https://github.com/newsuk/times-components.git"
   },
   "keywords": [
-    "react",
-    "native",
-    "web"
+    "react"
   ],
   "author": "News UK & Ireland Ltd",
   "license": "BSD-3-Clause",
@@ -87,6 +84,7 @@
     "@babel/cli": "7.4.4",
     "@babel/core": "7.4.4",
     "@babel/plugin-transform-runtime": "7.4.4",
+    "@babel/preset-react": "7.9.1",
     "@babel/preset-env": "7.4.4",
     "@babel/preset-typescript": "7.9.0",
     "@storybook/addon-actions": "5.3.18",
@@ -118,7 +116,6 @@
     "jest": "24.8.0",
     "lcov-result-merger": "1.2.0",
     "lerna": "3.2.1",
-    "metro-react-native-babel-preset": "0.53.1",
     "mkdirp": "0.5.1",
     "mockdate": "3.0.5",
     "node-fetch": "2.6.7",
@@ -127,8 +124,6 @@
     "prop-types": "15.7.2",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "react-native-web": "0.11.4",
-    "react-native-web-image-loader": "0.0.6",
     "react-scripts": "3.0.1",
     "rimraf": "2.6.1",
     "sort-pkg": "1.1.0",
@@ -140,15 +135,8 @@
   },
   "dependencies": {
     "@babel/runtime-corejs2": "7.4.4",
-    "@react-native-community/async-storage": "1.11.0",
-    "@react-native-community/netinfo": "5.3.3",
     "@times-components/svgs": "2.7.36",
     "opentype.js": "1.1.0",
-    "react-art": "16.6.3",
-    "react-native": "0.61.5",
-    "react-native-device-info": "5.3.1",
-    "react-native-showcase-loader": "1.1.0",
-    "react-native-svg": "9.11.1",
-    "react-native-webview": "11.0.0"
+    "react-art": "16.6.3"
   }
 }
