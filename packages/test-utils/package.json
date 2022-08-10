@@ -19,9 +19,6 @@
     "testEnvironment": "node",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ],
-    "coveragePathIgnorePatterns": [
-      "src/mock-native-modules.js"
     ]
   },
   "repository": {
