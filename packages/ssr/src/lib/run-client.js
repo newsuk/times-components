@@ -2,7 +2,7 @@
 /* eslint-disable no-underscore-dangle */
 
 const { ApolloClient } = require("apollo-client");
-const { AppRegistry } = require("react-native");
+const ReactDOMClient = require("react-dom");
 const { ApolloLink } = require("apollo-link");
 const { createHttpLink } = require("apollo-link-http");
 const { createPersistedQueryLink } = require("apollo-link-persisted-queries");
@@ -86,9 +86,5 @@ module.exports = (component, clientOptions, data) => {
 
   const App = component(client, analyticsStream, data, {});
 
-  AppRegistry.registerComponent("App", () => () => App);
-
-  AppRegistry.runApplication("App", {
-    rootTag: document.getElementById(clientOptions.rootTag)
-  });
+  ReactDOMClient.render(App, document.getElementById(clientOptions.rootTag));
 };

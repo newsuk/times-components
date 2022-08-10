@@ -1,7 +1,6 @@
 const path = require("path");
 const outputFolder = require("./src/lib/resolve-dist");
 
-const alias = { "react-native$": "react-native-web" };
 const extensions = [".js"];
 
 const productionOptions = {
@@ -20,12 +19,18 @@ const babelConfig = {
     loader: "babel-loader",
     options: {
       cacheDirectory: true,
-      plugins: [
-        "babel-plugin-styled-components",
-        "@babel/plugin-proposal-object-rest-spread",
-        "@babel/plugin-transform-react-display-name"
-      ],
-      presets: ["module:metro-react-native-babel-preset"]
+      plugins: ["babel-plugin-styled-components"],
+      presets: [
+        [
+          "@babel/preset-env",
+          {
+            targets: {
+              esmodules: true
+            }
+          }
+        ],
+        "@babel/preset-react"
+      ]
     }
   }
 };
@@ -62,7 +67,6 @@ module.exports = {
     path: outputFolder
   },
   resolve: {
-    alias,
     extensions
   }
 };

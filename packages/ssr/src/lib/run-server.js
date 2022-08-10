@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 
 const { ApolloClient } = require("apollo-client");
-const { AppRegistry } = require("react-native-web");
 const { ApolloLink } = require("apollo-link");
 const { createHttpLink } = require("apollo-link-http");
 const { createPersistedQueryLink } = require("apollo-link-persisted-queries");
@@ -52,17 +51,14 @@ const makeClient = options => {
 
 const renderData = (app, helmetContext = {}) =>
   getDataFromTree(app).then(() => {
-    AppRegistry.registerComponent("App", () => () => app);
-
-    const { element, getStyleElement } = AppRegistry.getApplication("App");
     const serverStylesheet = new ServerStyleSheet();
 
     const markup = ReactDOMServer.renderToString(
-      serverStylesheet.collectStyles(element)
+      serverStylesheet.collectStyles(app)
     );
 
     const responsiveStyles = serverStylesheet.getStyleTags();
-    const styles = ReactDOMServer.renderToStaticMarkup(getStyleElement());
+    const styles = {};
 
     const { helmet } = helmetContext;
     const headMarkup = helmet
