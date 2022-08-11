@@ -58,24 +58,11 @@ This mechanism helps us to determine if a certain Ad should not be shown on a
 particular page (e.g. because it contains terror or hate speech related
 content).
 
-### Web - With ADmantx
+### With ADmantx
 
 We use ADmantx as a Times brand safety mechanism. We send a uri to ADmantx, which crawls the page and returns an object of key value pairs they associate with that web page. The object has the follow keys: `admants`, `categories`, `feelings`, `entities`.
 
 This object is then passed to the DFP code via page targeting, which determines whether to show ads or not.
-
-### Mobile
-
-For native we do not use ADmantx. Instead, we pass a string of comma-seperated
-keywords that typically come from TPA. These keywords are then passed to DFP
-using page targeting, and DFP determines whether to show the page from this
-"list".
-
-Example:
-
-```
-googletag.setTargeting("kw", "these,are,my,example,keywords");
-```
 
 ## Ad slots
 
