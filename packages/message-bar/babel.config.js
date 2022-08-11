@@ -11,7 +11,8 @@ module.exports = api => {
           }
         }
       ],
-      "@babel/preset-react"
+      "@babel/preset-react",
+      "@babel/preset-typescript"
     ]
   };
 };
