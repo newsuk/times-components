@@ -8,39 +8,22 @@ const storeURL = {
 };
 
 export const userShouldUpdateName = async username => {
+  console.log('***1***')
   if (!username) {
+    console.log('***2***')
     return false;
   }
+  console.log('***3***')
   const url = `/api/comments/display-names-pseudonyms?username=${username}`;
-
+  console.log('***url***', url)
   const checkUsername = global
     .fetch(url)
     .then(response => response.json())
     .then(data => data);
-
+    console.log('***checkUsername***', checkUsername)
   const isPseudonym = await checkUsername;
-
-  if (!isPseudonym) {
-    return false;
-  }
-
-  const bannerCount = global.window.localStorage.getItem(
-    "realNameCommentingBannerViewCount"
-  );
-  const isBannerVisible = global.window.localStorage.getItem(
-    "isRealNameCommentingBannerVisible"
-  );
-  const hasLocalStorageBeenSet = bannerCount && isBannerVisible;
-
-  if (!hasLocalStorageBeenSet) {
-    global.window.localStorage.setItem("realNameCommentingBannerViewCount", 3);
-    global.window.localStorage.setItem(
-      "isRealNameCommentingBannerVisible",
-      false
-    );
-  }
-
-  return bannerCount > 0;
+  console.log('***isPseudonym***', isPseudonym)
+  return isPseudonym
 };
 
 export default () => {
