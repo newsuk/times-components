@@ -1,10 +1,9 @@
 # Article Paragraph
 
-This packages provides a component for displaying an article paragraph
-on android and web, including support for displaying a "drop
-cap" at the beginning of a paragraph.
+This packages provides a component for displaying an article paragraph, 
+including support for displaying a "drop cap" at the beginning of a paragraph.
 
-On the web, the drop cap is implemented using CSS floats, and should work with
+The drop cap is implemented using CSS floats, and should work with
 any styling or markup used.
 
 ## Contributing
@@ -46,8 +45,3 @@ feature we use this package for has since changed, and this presents the opportu
 simplifying the API. **In the future, this package will simply have a toggle for displaying a drop cap,
 and will display the first character as a drop cap when it is enabled.**
 
-We would like to support paragraph styling on Android when drop caps are enabled,
-but this is tricky and therefore it may take some time before support is
-implemented.
-
-We intend to add iOS support to this package.
