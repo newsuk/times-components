@@ -1,6 +1,6 @@
 # Article Paragraph
 
-This packages provides a component for displaying an article paragraph, 
+This packages provides a component for displaying an article paragraph,
 including support for displaying a "drop cap" at the beginning of a paragraph.
 
 The drop cap is implemented using CSS floats, and should work with
@@ -44,4 +44,3 @@ characters being displayed as a drop cap. However, the acceptance criteria for t
 feature we use this package for has since changed, and this presents the opportunity for
 simplifying the API. **In the future, this package will simply have a toggle for displaying a drop cap,
 and will display the first character as a drop cap when it is enabled.**
-
