@@ -3,15 +3,7 @@ module.exports = api => {
   return {
     plugins: ["babel-plugin-styled-components", "transform-class-properties"],
     presets: [
-      [
-        "@babel/preset-env",
-        {
-          targets: {
-            esmodules: false,
-            node: "current"
-          }
-        }
-      ],
+      "@babel/preset-env",
       "@babel/preset-react",
       "@babel/preset-typescript"
     ]
