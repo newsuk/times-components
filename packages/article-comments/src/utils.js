@@ -1,3 +1,5 @@
+import executeSSOtransaction from "./comment-login";
+
 const storeURL = {
   gb:
     "https://thetimes.co.uk/subscribe/digital?ILC=GB-TNL_The_Times-Conversion_Page-Homepage-2020",
@@ -73,31 +75,34 @@ export const reauthenticateUser = () => {
   const spotAB = global.window.localStorage.getItem('SPOT_AB');
   const spotImDeviceV2 = global.window.localStorage.getItem('SPOTIM_DEVICE_V2');
   const spotImCurrentUser = global.window.localStorage.getItem('SPOTIM_CURRENT_USER');
+  console.log("***spotImCurrentUser***", spotImCurrentUser);
+
   console.log("***1***");
   if (!spotImAccessToken) {
     console.log("***2***");
     return
   }
   console.log("***3***");
-  // u_rAGPG2gW1OUB
-  // u_sE9UoUYxWQ50
     const acsCookie = window.nuk.getCookieValue('acs_tnl')
     console.log("***acsCookie***", acsCookie);
     const cpn = getCpnId(acsCookie);
     console.log("***cpn***", cpn);
-//?enableRealNameCommenting
 };
 
-document.addEventListener(
-  "spot-im-user-auth-success", (event) => {
+const parsedId = JSON.parse(spotImCurrentUser).data.id;
+console.log('***userId***', userId);
+const stringId = JSON.stringify(parsedId);
+console.log('***stringId***', stringId);
+const doesUserIdIncludeCpn = stringId.includes(cpn);
+console.log('***doesUserIdIncludeCpn***', doesUserIdIncludeCpn)
+if (doesUserIdIncludeCpn) {
+  global.window.localStorage.removeItem('SPOTIM_ACCESS_TOKEN');
+  global.window.localStorage.removeItem('SPOTIM_DEVICE_UUID_V2');
+  global.window.localStorage.removeItem('SPOT_AB');
+  global.window.localStorage.removeItem('SPOTIM_DEVICE_V2');
+  global.window.localStorage.removeItem('SPOTIM_CURRENT_USER');
 
-    const {displayName, email, id, username} = event.detail
+  executeSSOtransaction(() => {});
 
+}
 
-    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', event.detail)
-    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
-  },
-);
