@@ -5,11 +5,16 @@ import PropTypes from "prop-types";
 import { CommentContainer } from "./styles/responsive";
 import executeSSOtransaction from "./comment-login";
 import withTrackEvents from "./tracking/with-track-events";
+import { userShouldUpdateName } from "./utils";
 
 class Comments extends Component {
   constructor() {
     super();
     this.container = null;
+
+    this.state = {
+      displayName: ""
+    };
   }
 
   componentDidMount() {
@@ -84,11 +89,36 @@ class Comments extends Component {
       }
     }
 
+    const isFeatureFlagEnabled = window.location.search.includes(
+      "enableRealNameCommenting"
+    );
+
     document.addEventListener(
       "spot-im-current-user-typing-start",
-      onCommentStart,
+      async event => {
+        onCommentStart(event);
+
+        if (isFeatureFlagEnabled) {
+          const { displayName } = this.state;
+          const shouldShowBanner = await userShouldUpdateName(displayName);
+          if (shouldShowBanner) {
+            window.dispatchEvent(
+              new CustomEvent("SHOW_REAL_NAME_COMMENTING_BANNER", {})
+            );
+          }
+        }
+      },
       { once: true }
     );
+
+    document.addEventListener("spot-im-user-auth-success", async event => {
+      if (isFeatureFlagEnabled) {
+        const { displayName } = event.detail;
+
+        this.setState({ displayName });
+      }
+    });
+
     document.addEventListener(
       "spot-im-current-user-sent-message",
       onCommentPost
