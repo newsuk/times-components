@@ -49,3 +49,55 @@ export default () => {
     typeof window !== "undefined" && window.nuk && window.nuk.region;
   return storeURL[region] || storeURL.gb;
 };
+
+const parseCookie = (value, valueSeparator, paramSeparator) => {
+  console.log("***value parse cookie***", value);
+  value = decodeURIComponent(value)
+
+  return value.split(valueSeparator).reduce((res, param) => {
+      const parts = param.split(paramSeparator);
+      res[parts[0]] = parts[1];
+      return res;
+  }, {});
+};
+  const getCpnId = value => {
+    console.log("***value***", value);
+    const cookie = parseCookie(value, '&', '=');
+    console.log("***cookie ***", cookie );
+    return cookie.eid || null;
+};
+
+export const reauthenticateUser = () => {
+  const spotImAccessToken = global.window.localStorage.getItem('SPOTIM_ACCESS_TOKEN');
+  const spotImDeviceUuid = global.window.localStorage.getItem('SPOTIM_DEVICE_UUID_V2');
+  const spotAB = global.window.localStorage.getItem('SPOT_AB');
+  const spotImDeviceV2 = global.window.localStorage.getItem('SPOTIM_DEVICE_V2');
+  const spotImCurrentUser = global.window.localStorage.getItem('SPOTIM_CURRENT_USER');
+  console.log("***1***");
+  if (!spotImAccessToken) {
+    console.log("***2***");
+    return
+  }
+  console.log("***3***");
+  // u_rAGPG2gW1OUB
+  // u_sE9UoUYxWQ50
+    const acsCookie = window.nuk.getCookieValue('acs_tnl')
+    console.log("***acsCookie***", acsCookie);
+    const cpn = getCpnId(acsCookie);
+    console.log("***cpn***", cpn);
+//?enableRealNameCommenting
+};
+
+document.addEventListener(
+  "spot-im-user-auth-success", (event) => {
+
+    const {displayName, email, id, username} = event.detail
+
+
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX', event.detail)
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+    console.log('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+  },
+);

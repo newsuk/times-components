@@ -81,6 +81,7 @@ class Comments extends Component {
     };
 
     let spotAccountId = commentingConfig.account.readOnly;
+    console.log('***spotAccountId***', spotAccountId)
 
     if (commentingConfig && commentingConfig.switchOver) {
       const switchOverDate = commentingConfig.switchOver;

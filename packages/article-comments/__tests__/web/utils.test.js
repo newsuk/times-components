@@ -1,11 +1,13 @@
-import { userShouldUpdateName } from "../../src/utils";
+import { reauthenticateUser, userShouldUpdateName } from "../../src/utils";
 
 const mockLocalStorage = {
   storage: {},
   getItem: jest.fn(key => mockLocalStorage.storage[key]),
   setItem: jest.fn((key, value) => {
     mockLocalStorage.storage[key] = value;
-  })
+  }),
+  removeItem: jest.fn(key => delete mockLocalStorage.storage[key])
+
 };
 Object.defineProperty(global.window, "localStorage", {
   value: mockLocalStorage
@@ -65,3 +67,26 @@ describe("userShouldUpdateName()", () => {
     expect(mockLocalStorage.setItem).not.toBeCalledWith();
   });
 });
+
+describe("reauthenticate user", () => {
+  it("should returns early if the user does not have a valid auth token", () => {
+    reauthenticateUser();
+    expect(mockLocalStorage.removeItem).not.toHaveBeenCalled();
+  })
+  it("should delete token if user has a valid auth token for the “old” (CPN) account", () => {
+    const mockToken = { 'SPOTIM_ACCESS_TOKEN': 'mockToken'};
+    const acsCookie = 'tid=788c8f54-1b50-417f-9184-a0a03dede14e&eid=AAAA025597045';
+    const mockCpn = 'mockCpn';
+    mockLocalStorage.setItem('SPOTIM_ACCESS_TOKEN', 'mockToken' );
+    window.nuk = { getCookieValue: () => acsCookie };
+
+    reauthenticateUser();
+
+    expect(mockLocalStorage.removeItem).toBeCalledWith(mockToken);
+  })
+  it("should sign user in if users has a valid auth token for the “new” (CPN+suffix) account", () => {
+    reauthenticateUser();
+
+    expect
+  })
+})
