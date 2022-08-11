@@ -93,7 +93,7 @@ exports[`1. card loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-w31u4-0",
+          "componentId": "Animations__FadeIn-je5757-0",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -128,10 +128,10 @@ exports[`1. card loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-sc-154dp5w-0",
+          "TsTcView-o5ytee-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-w31u4-0",
+        "styledComponentId": "Animations__FadeIn-je5757-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -427,7 +427,7 @@ exports[`2. card with reversed loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-w31u4-0",
+          "componentId": "Animations__FadeIn-je5757-0",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -462,10 +462,10 @@ exports[`2. card with reversed loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-sc-154dp5w-0",
+          "TsTcView-o5ytee-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-w31u4-0",
+        "styledComponentId": "Animations__FadeIn-je5757-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
