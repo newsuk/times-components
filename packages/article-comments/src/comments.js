@@ -13,7 +13,7 @@ class Comments extends Component {
     this.container = null;
 
     this.state = {
-      shouldUpdateName: false
+      displayName: ""
     };
   }
 
@@ -95,13 +95,13 @@ class Comments extends Component {
 
     document.addEventListener(
       "spot-im-current-user-typing-start",
-      event => {
+      async event => {
         onCommentStart(event);
 
         if (isFeatureFlagEnabled) {
-          const { shouldUpdateName } = this.state;
-
-          if (shouldUpdateName) {
+          const { displayName } = this.state;
+          const shouldShowBanner = await userShouldUpdateName(displayName);
+          if (shouldShowBanner) {
             window.dispatchEvent(
               new CustomEvent("SHOW_REAL_NAME_COMMENTING_BANNER", {})
             );
@@ -115,9 +115,7 @@ class Comments extends Component {
       if (isFeatureFlagEnabled) {
         const { displayName } = event.detail;
 
-        const shouldShowBanner = await userShouldUpdateName(displayName);
-
-        this.setState({ shouldUpdateName: shouldShowBanner });
+        this.setState({ displayName });
       }
     });
 
