@@ -3547,6 +3547,133 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
+"@times-components/article-byline@3.8.7":
+  version "3.8.7"
+  resolved "https://registry.yarnpkg.com/@times-components/article-byline/-/article-byline-3.8.7.tgz#f6b11a851297437792ffb7001894321d63e91ae6"
+  integrity sha512-yiGk+6NFSCg+U58Le3OvFX3BrKn2OsOW0EBXtLnSCQX3qjzx+ghlMjPnJIk+H5CgAGvz9XMtfmAsQ1jFYs1sdg==
+  dependencies:
+    "@times-components/link" "3.10.12"
+    "@times-components/markup" "3.6.3"
+    "@times-components/markup-forest" "1.8.2"
+    "@times-components/tracking" "2.11.1"
+    "@times-components/ts-styleguide" "1.36.9"
+    "@times-components/utils" "6.14.4"
+    prop-types "15.7.2"
+    styled-components "4.3.2"
+
+"@times-components/context@1.9.3":
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/@times-components/context/-/context-1.9.3.tgz#9492dab1f4d843cf07580a3652eae29126d6fb7d"
+  integrity sha512-DcRve1ZfAD/9bmpKejUcfCp/V8kTCU3BvAIo361GhoG9VVMfSofJwjEr1tyYqh4ARUfZonAuWXKFkrc32S+d4g==
+  dependencies:
+    "@times-components/ts-styleguide" "1.36.8"
+
+"@times-components/jest-configurator-web@0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator-web/-/jest-configurator-web-0.7.0.tgz#d606b30f55ea8f770360e060bf6580abcf9fa108"
+  integrity sha512-OJwmfDUKVmY6AxpHza4o0B+5/sf8AkXq2xvROon2e/f7cQeE4hbsLCbCHML/5Hese132RubY6NYZO7vrnABNpw==
+  dependencies:
+    "@babel/core" "7.4.4"
+    "@babel/preset-react" "7.9.1"
+    "@times-components/test-utils" "2.3.10"
+    babel-jest "24.8.0"
+    babel-plugin-istanbul "5.1.3"
+    babel-preset-jest "24.6.0"
+    enzyme "3.9.0"
+    enzyme-adapter-react-16 "1.12.1"
+    find-node-modules "1.0.4"
+    identity-obj-proxy "3.0.0"
+    jest "24.8.0"
+    jest-plugin-context "2.9.0"
+    jest-plugins "2.9.0"
+
+"@times-components/jest-configurator@2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@times-components/jest-configurator/-/jest-configurator-2.8.0.tgz#92d7196b8ed7be61cba3e8bb0336e86a935868f3"
+  integrity sha512-T8GNL5+7741y3xxdGv+aSQARcyce+JxUSe3tTneSymiIu5R3dSXORn3q1MvW+weuomlCG+IByXFiwkD+7ERCLw==
+  dependencies:
+    "@babel/core" "7.4.4"
+    "@times-components/test-utils" "2.3.10"
+    babel-jest "24.8.0"
+    babel-plugin-istanbul "5.1.3"
+    babel-preset-jest "24.6.0"
+    enzyme "3.9.0"
+    enzyme-adapter-react-16 "1.12.1"
+    find-node-modules "1.0.4"
+    identity-obj-proxy "3.0.0"
+    jest "24.8.0"
+    jest-plugin-context "2.9.0"
+    jest-plugins "2.9.0"
+
+"@times-components/jest-serializer@3.3.0":
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/@times-components/jest-serializer/-/jest-serializer-3.3.0.tgz#dfe7cd81b1511b852074204fbde6f11b17a0469d"
+  integrity sha512-n1IcaBdRv2tAhe4BIVIWa2wXfrtlf+P+MgwoyteiJiQM6Dcs+4eDUxvqChYb5oFqXAOTgWGLSxMA+fzntQxOnA==
+  dependencies:
+    "@times-components/jest-configurator" "2.8.0"
+    "@times-components/utils" "6.14.3"
+    css "^2.2.1"
+    enzyme-to-json "3.3.5"
+    hyphenate-style-name "1.0.2"
+    lodash.isequal "4.4.0"
+    lodash.omitby "4.6.0"
+
+"@times-components/link@3.10.11":
+  version "3.10.11"
+  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-3.10.11.tgz#16129dcd1136f8f80017d82c5ab50d1f21eb633d"
+  integrity sha512-Fe3fr/nAurojunTEel5vqdxaxFiHlxPCpev4i4KW5m+5fE7GYKb92/6uszb3yx7Z2LT43pmzV834xIQ47/VX7A==
+  dependencies:
+    "@times-components/ts-styleguide" "1.36.8"
+    "@times-components/utils" "6.14.3"
+    prop-types "15.7.2"
+    react "16.9.0"
+    react-dom "16.9.0"
+    styled-components "4.3.2"
+
+"@times-components/markup-forest@1.8.1":
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/@times-components/markup-forest/-/markup-forest-1.8.1.tgz#2c933906e56292dd2b9121498d79bb3dd0a20a8e"
+  integrity sha512-yGetLaq2hzMyLjkl3jlOBHYWKTqXZyi9OqMpiGs833VbAFJaVBxFSP5hRNh39VMwIT87LG08HNJhI3Rdqi/KOw==
+
+"@times-components/markup@3.6.2":
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/@times-components/markup/-/markup-3.6.2.tgz#8b64723af4534f4e000de14dd6b326e393fa1b8d"
+  integrity sha512-eeW+RA2x/GK7b9HSU0e1fhfbWhfBOMThyZAtWHCDeiLXFDhUQxToDsJkblrBJK5kF9tBJAnsDJcK5lZNN7gbZA==
+  dependencies:
+    "@times-components/ts-styleguide" "1.36.8"
+    "@times-components/utils" "6.14.3"
+
+"@times-components/schema@0.7.1":
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/@times-components/schema/-/schema-0.7.1.tgz#d813d21376876b3b26e272da95fdb12e7340d61a"
+  integrity sha512-Qx04v97ca22kld1wDnLPFwlnPIf7u0WFMgXq25H8JdZrG+RDaS8iSYiJrxdsp62KcQt4N+RJNvbjw5bgDvDnWg==
+  dependencies:
+    apollo-cache-inmemory "1.5.1"
+    chalk "2.4.1"
+    graphql "14.2.1"
+    node-fetch "2.6.7"
+
+"@times-components/storybook@4.4.0":
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/@times-components/storybook/-/storybook-4.4.0.tgz#31e3f4b890bff688a718ac3a6538d951089554f5"
+  integrity sha512-3Hwp57ZBXafsG+viVWiVt9DHEFFnReY836rVBbqmTx41n1R8u/dS1rXYIB0ozUPxwcd37Z8/HirewhaAXFbVww==
+  dependencies:
+    "@babel/core" "7.4.4"
+    "@storybook/addon-actions" "5.3.18"
+    "@storybook/addon-knobs" "5.3.18"
+    "@storybook/react" "5.3.18"
+    "@times-components/schema" "0.7.1"
+    "@times-components/user-state" "0.3.30"
+    "@times-components/utils" "6.14.3"
+    apollo-cache-inmemory "1.5.1"
+    apollo-client "2.5.1"
+    apollo-link-http "1.5.14"
+    prop-types "15.7.2"
+    react "16.9.0"
+    react-apollo "2.5.5"
+    react-helmet-async "1.0.2"
+    styled-components "4.3.2"
+
 "@times-components/svgs@2.7.36":
   version "2.7.36"
   resolved "https://registry.yarnpkg.com/@times-components/svgs/-/svgs-2.7.36.tgz#a7a17502f7806ce59f39b7bf037e13753edfc905"
@@ -3554,6 +3681,67 @@
   dependencies:
     prop-types "15.7.2"
     svgs "3.2.1"
+
+"@times-components/test-utils@2.3.10":
+  version "2.3.10"
+  resolved "https://registry.yarnpkg.com/@times-components/test-utils/-/test-utils-2.3.10.tgz#47b07dc81a2bcf23139b3250ae9061413ec10699"
+  integrity sha512-IarIYKKdvN9G/JRHSHFtOAxulkLVc5sooDsXlSmL4hkOFZeT193ThzDDSXytWilBZMY7TUNzU6dgiGZ43bpMVg==
+  dependencies:
+    opentype.js "1.1.0"
+
+"@times-components/tracking@2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@times-components/tracking/-/tracking-2.11.0.tgz#52e451e939211b0d50a987b75f51441b58f0648c"
+  integrity sha512-1UPzSjNoc5CoJkVSDXf9qa9dNrEozPYjRQ53MFRBzkDw/tup4uTc3C/VLDTb276UHmuDxB6SmNIXxy9ip61vPw==
+  dependencies:
+    hoist-non-react-statics "3.3.2"
+    lodash.get "4.4.2"
+    prop-types "15.7.2"
+    react-display-name "0.2.3"
+
+"@times-components/ts-styleguide@1.36.8":
+  version "1.36.8"
+  resolved "https://registry.yarnpkg.com/@times-components/ts-styleguide/-/ts-styleguide-1.36.8.tgz#55d4348b9302142fa351f9206b75c54ac7965e13"
+  integrity sha512-XHAOpD9I0Pd1GUdVRqhlQuo7tLae5cGBj/FULn/POAtrK8bs10QEbMF3WWB0A2AwudSPejc2c6W9rAEDPWfOsQ==
+  dependencies:
+    "@times-components/link" "3.10.11"
+    "@times-components/utils" "6.14.3"
+    react "16.9.0"
+    styled-components "4.3.2"
+
+"@times-components/user-state@0.3.30":
+  version "0.3.30"
+  resolved "https://registry.yarnpkg.com/@times-components/user-state/-/user-state-0.3.30.tgz#0d35a21e62a62be5a84715a2fac8e2bd7a355119"
+  integrity sha512-p680WNC52HAzy6vR2jzvan69Ppe2GqcWV79d76/i1eC+4GO+6Kv8jmlnNqlJoSQDCb7TGIakY3FGf+4/SDOYig==
+  dependencies:
+    "@storybook/addon-knobs" "5.3.18"
+    "@times-components/context" "1.9.3"
+    "@times-components/utils" "6.14.3"
+    prop-types "15.7.2"
+
+"@times-components/utils@6.14.3":
+  version "6.14.3"
+  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-6.14.3.tgz#87bcf935b6b35eabbfbb91ef9c1e421e2e315a55"
+  integrity sha512-25LWg+KL+tRZ79f+ppd4YodJa5ATAJX6/sNLT89bY7QTP+aOrxu5WIvRPi+pD5XeEgypTdOlB+DxtAskWhQxVw==
+  dependencies:
+    "@times-components/schema" "0.7.1"
+    "@times-components/ts-styleguide" "1.36.8"
+    apollo-cache-inmemory "1.5.1"
+    apollo-client "2.5.1"
+    apollo-link "1.2.4"
+    apollo-link-http "1.5.14"
+    apollo-link-persisted-queries "0.2.2"
+    lodash.omitby "4.6.0"
+    prop-types "15.7.2"
+    styled-components "4.3.2"
+    unfetch "^3.0.0"
+
+"@times-components/webpack-configurator@2.0.29":
+  version "2.0.29"
+  resolved "https://registry.yarnpkg.com/@times-components/webpack-configurator/-/webpack-configurator-2.0.29.tgz#4dd43be29dc915f679791533671d887312ad95d1"
+  integrity sha512-7tV461t9ay1GNGBhyLbCLKNGYDcD7im0p0LPbYeEzJYGAoRE6oFv1UgfRm7XoczdSJPR6sPzA0friv/jR0PNTw==
+  dependencies:
+    fs-extra "7.0.0"
 
 "@tootallnate/once@1":
   version "1.1.2"
