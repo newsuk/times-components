@@ -100,6 +100,7 @@ class Comments extends Component {
 
         if (isFeatureFlagEnabled) {
           const { displayName } = this.state;
+
           const shouldShowBanner = await userShouldUpdateName(displayName);
           if (shouldShowBanner) {
             window.dispatchEvent(
@@ -155,9 +156,9 @@ class Comments extends Component {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
         executeSSOtransaction(() => {});
       } else {
-        document.addEventListener("spot-im-api-ready", () =>
-          executeSSOtransaction(() => {})
-        );
+        document.addEventListener("spot-im-api-ready", () => {
+          executeSSOtransaction(() => {});
+        });
       }
     }
 

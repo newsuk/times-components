@@ -1,3 +1,5 @@
+/* global fetch window */
+
 const storeURL = {
   gb:
     "https://thetimes.co.uk/subscribe/digital?ILC=GB-TNL_The_Times-Conversion_Page-Homepage-2020",
@@ -8,22 +10,23 @@ const storeURL = {
 };
 
 export const userShouldUpdateName = async username => {
-  console.log('***1***')
   if (!username) {
-    console.log('***2***')
     return false;
   }
-  console.log('***3***')
+
   const url = `/api/comments/display-names-pseudonyms?username=${username}`;
-  console.log('***url***', url)
-  const checkUsername = global
-    .fetch(url)
+
+  const checkUsername = fetch(url)
     .then(response => response.json())
     .then(data => data);
-    console.log('***checkUsername***', checkUsername)
+
   const isPseudonym = await checkUsername;
-  console.log('***isPseudonym***', isPseudonym)
-  return isPseudonym
+
+  if (!isPseudonym) {
+    return false;
+  }
+
+  return isPseudonym;
 };
 
 export default () => {
