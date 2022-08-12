@@ -3,7 +3,7 @@
     "target": "es2017",
     "outDir": "build/main",
     "rootDir": "src",
-    "jsx": "react",
+    "jsx": "react-native",
     "moduleResolution": "node",
     "module": "commonjs",
     "declaration": true,
