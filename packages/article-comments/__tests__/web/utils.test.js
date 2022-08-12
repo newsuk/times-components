@@ -20,7 +20,7 @@ describe("userShouldUpdateName()", () => {
     expect(result).toEqual(false);
   });
 
-  it.only("it should return false if the username is valid", async () => {
+  it("it should return false if the username is valid", async () => {
     mockFetchResponse = { isPseudonym: false };
 
     const result = await userShouldUpdateName("john");
