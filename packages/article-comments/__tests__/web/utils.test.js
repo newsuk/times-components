@@ -21,7 +21,7 @@ describe("userShouldUpdateName()", () => {
   });
 
   it.only("it should return false if the username is valid", async () => {
-    mockFetchResponse = {isPseudonym: false};
+    mockFetchResponse = { isPseudonym: false };
 
     const result = await userShouldUpdateName("john");
 
@@ -29,7 +29,7 @@ describe("userShouldUpdateName()", () => {
   });
 
   it("should set local storage values if they do not already exist and the user is on the banned list", async () => {
-    mockFetchResponse = {isPseudonym: true};
+    mockFetchResponse = { isPseudonym: true };
 
     const result = await userShouldUpdateName("MockBannedName");
 

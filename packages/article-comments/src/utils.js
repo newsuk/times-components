@@ -20,7 +20,7 @@ export const userShouldUpdateName = async username => {
     .then(response => response.json())
     .then(data => data);
 
-  const {isPseudonym} = await checkUsername;
+  const { isPseudonym } = await checkUsername;
 
   if (!isPseudonym) {
     return false;
