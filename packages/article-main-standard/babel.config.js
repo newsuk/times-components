@@ -1,7 +1,10 @@
 module.exports = api => {
   api.cache(true);
   return {
-    plugins: ["babel-plugin-styled-components"],
+    plugins: [
+      "babel-plugin-styled-components",
+      "@babel/plugin-proposal-export-default-from"
+    ],
     presets: [
       [
         "@babel/preset-env",
@@ -11,7 +14,8 @@ module.exports = api => {
           }
         }
       ],
-      "@babel/preset-react"
+      "@babel/preset-react",
+      "@babel/preset-typescript"
     ]
   };
 };
