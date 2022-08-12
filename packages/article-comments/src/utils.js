@@ -13,13 +13,18 @@ export const userShouldUpdateName = async username => {
   if (!username) {
     return false;
   }
+
   const url = `/api/comments/display-names-pseudonyms?username=${username}`;
+
+  console.log('RealNameCommenting | userShouldUpdateName');
 
   const checkUsername = fetch(url)
     .then(response => response.json())
     .then(data => data);
 
   const isPseudonym = await checkUsername;
+
+  console.log('RealNameCommenting | userShouldUpdateName | isPseudonym:', isPseudonym);
 
   if (!isPseudonym) {
     return false;
@@ -37,6 +42,8 @@ export const userShouldUpdateName = async username => {
     window.localStorage.setItem("realNameCommentingBannerViewCount", 3);
     window.localStorage.setItem("isRealNameCommentingBannerVisible", false);
   }
+
+  console.log('RealNameCommenting | userShouldUpdateName | bannerCount:', bannerCount);
 
   return bannerCount > 0;
 };
