@@ -32,8 +32,6 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@babel/preset-react": "7.9.1",
-    "@babel/preset-env": "7.4.4",
     "@times-components/jest-configurator-web": "0.7.1",
     "@times-components/jest-serializer": "3.3.1",
     "@times-components/provider": "1.32.9",
@@ -50,8 +48,7 @@
     "react": "16.9.0",
     "react-dom": "16.9.0",
     "react-test-renderer": "16.9.0",
-    "webpack": "4.30.0",
-    "webpack-cli": "3.3.1"
+    "webpack": "4.30.0"
   },
   "dependencies": {
     "@times-components/ad": "2.20.3",
