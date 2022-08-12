@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-comments",
-  "version": "0.26.1",
+  "version": "0.27.0",
   "description": "Article Comments",
   "main": "dist/article-comments",
   "dev": "src/article-comments",
