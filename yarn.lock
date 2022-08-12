@@ -13595,16 +13595,6 @@ jest-mock@^25.1.0, jest-mock@^25.5.0:
   dependencies:
     "@jest/types" "^25.5.0"
 
-jest-plugin-context@2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/jest-plugin-context/-/jest-plugin-context-2.9.0.tgz#602aacbe61213a3bb229067db0eee9e003eb1931"
-  integrity sha1-YCqsvmEhOjuyKQZ9sO7p4APrGTE=
-
-jest-plugins@2.9.0:
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/jest-plugins/-/jest-plugins-2.9.0.tgz#9323583ad9d5eaa321723d7601c16192bfcda7db"
-  integrity sha1-kyNYOtnV6qMhcj12AcFhkr/Np9s=
-
 jest-pnp-resolver@^1.2.1:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/jest-pnp-resolver/-/jest-pnp-resolver-1.2.2.tgz#b704ac0ae028a89108a4d040b3f919dfddc8e33c"
@@ -13734,7 +13724,7 @@ jest-styled-components@6.3.1:
 jest-transform-graphql@2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/jest-transform-graphql/-/jest-transform-graphql-2.1.0.tgz#903cb66bb27bc2772fd3e5dd4f7e9b57230f5829"
-  integrity sha1-kDy2a7J7wncv0+XdT36bVyMPWCk=
+  integrity sha512-oLVErzg6bN9eJPB/b8c1+0go3K1F1OZNkvlbUfOgK+96ulfX/fnp+4jI3tjQ1IUVL2XcSjhzwDwNdwsNI5EhRg==
 
 jest-util@^24.5.0, jest-util@^24.9.0:
   version "24.9.0"
