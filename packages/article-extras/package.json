@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-extras",
-  "version": "0.15.49",
+  "version": "0.15.50",
   "description": "Extra information components at the bottom of the articles, such as topics, related articles and comments",
   "main": "dist/index",
   "dev": "src/index",
@@ -49,7 +49,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-comments": "0.25.0",
+    "@times-components/article-comments": "0.26.0",
     "@times-components/article-topics": "4.6.7",
     "@times-components/button": "2.6.7",
     "@times-components/context": "1.9.4",

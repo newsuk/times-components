@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.25.0...@times-components/article-comments@0.26.0) (2022-08-11)
+
+
+### Features
+
+* **TDP-2233:** Trigger real name commenting banner  ([9e78364](https://github.com/newsuk/times-components/commit/9e78364b6eeee02f9d84f46cae94b038a14212bc))
+
+
+
+
+
 # [0.25.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.24.2...@times-components/article-comments@0.25.0) (2022-08-10)
 
 
