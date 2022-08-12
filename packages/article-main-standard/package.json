@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-main-standard",
-  "version": "3.59.26",
+  "version": "3.59.27",
   "description": "Main Standard Article Template",
   "main": "dist/article-main-standard",
   "dev": "src/article-main-standard",
@@ -60,7 +60,7 @@
     "@times-components/article-byline": "3.8.7",
     "@times-components/article-label": "2.9.7",
     "@times-components/article-lead-asset": "1.10.7",
-    "@times-components/article-skeleton": "1.85.38",
+    "@times-components/article-skeleton": "1.85.39",
     "@times-components/article-topics": "4.6.7",
     "@times-components/caption": "3.2.7",
     "@times-components/context": "1.9.4",
