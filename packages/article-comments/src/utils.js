@@ -1,3 +1,5 @@
+/* global fetch window */
+
 const storeURL = {
   gb:
     "https://thetimes.co.uk/subscribe/digital?ILC=GB-TNL_The_Times-Conversion_Page-Homepage-2020",
@@ -13,8 +15,7 @@ export const userShouldUpdateName = async username => {
   }
   const url = `/api/comments/display-names-pseudonyms?username=${username}`;
 
-  const checkUsername = global
-    .fetch(url)
+  const checkUsername = fetch(url)
     .then(response => response.json())
     .then(data => data);
 
@@ -24,20 +25,17 @@ export const userShouldUpdateName = async username => {
     return false;
   }
 
-  const bannerCount = global.window.localStorage.getItem(
+  const bannerCount = window.localStorage.getItem(
     "realNameCommentingBannerViewCount"
   );
-  const isBannerVisible = global.window.localStorage.getItem(
+  const isBannerVisible = window.localStorage.getItem(
     "isRealNameCommentingBannerVisible"
   );
   const hasLocalStorageBeenSet = bannerCount && isBannerVisible;
 
   if (!hasLocalStorageBeenSet) {
-    global.window.localStorage.setItem("realNameCommentingBannerViewCount", 3);
-    global.window.localStorage.setItem(
-      "isRealNameCommentingBannerVisible",
-      false
-    );
+    window.localStorage.setItem("realNameCommentingBannerViewCount", 3);
+    window.localStorage.setItem("isRealNameCommentingBannerVisible", false);
   }
 
   return bannerCount > 0;
