@@ -41,5 +41,7 @@ export const expectFunctionToBeSelfContained = f => {
   const errors = getSelfContainedFunctionErrors(f);
   reportErrors(errors);
   expect(errors).toEqual([]);
+  // Object.assign transpiles to _extends global helper in react native compile, but
+  // not in web compile, so getSelfContainedFunctionErrors doesn't catch the error
   expect(String(f)).not.toContain("Object.assign");
 };

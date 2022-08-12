@@ -6,18 +6,19 @@ const buildConfig = dir => {
   const name = packageName.replace("@times-components/", '')
   return {
     rootDir: path.join(dir, '../..'),
+    preset: "react-native",
     moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
-    globals: {
-      "ts-jest": {
-        tsConfigFile: "./tsconfig.jest.json"
-      }
-    },
     transformIgnorePatterns: [],
     setupFiles: [],
     testMatch: [`**/packages/${name}/__tests__/*.test.ts`],
     transform: {
-      ".+\\.js$": "babel-jest",
+      ".+\\.js$": "./node_modules/react-native/jest/preprocessor.js",
       ".+\\.tsx?$": "ts-jest"
+    },
+    globals: {
+      "ts-jest": {
+        tsConfigFile: "./tsconfig.jest.json"
+      }
     },
     collectCoverage: true,
     coverageReporters: ["json", "html", "lcov", "text"],
