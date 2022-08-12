@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.27.1...@times-components/article-comments@0.28.0) (2022-08-12)
+
+
+### Features
+
+* **TDP-2382:** removing banner state logic  ([7ead194](https://github.com/newsuk/times-components/commit/7ead194a5d1d57a073530260c6f05e4296846a65))
+
+
+
+
+
 ## [0.27.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.27.0...@times-components/article-comments@0.27.1) (2022-08-12)
 
 **Note:** Version bump only for package @times-components/article-comments
