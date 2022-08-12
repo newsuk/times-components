@@ -61,7 +61,8 @@
     "identity-obj-proxy": "3.0.0",
     "jest": "24.8.0",
     "jest-plugin-context": "2.9.0",
-    "jest-plugins": "2.9.0"
+    "jest-plugins": "2.9.0",
+    "regenerator-runtime": "0.13.7"
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.18",
