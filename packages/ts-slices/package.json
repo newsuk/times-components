@@ -59,12 +59,10 @@
   "devDependencies": {
     "@testing-library/react": "^12.1.2",
     "@times-components/storybook": "4.4.1",
-    "@types/jest": "24.9.1",
     "@types/lodash.get": "4.4.6",
     "@types/lodash.shuffle": "4.2.6",
     "@types/mockdate": "2.0.0",
-    "@types/node-fetch": "2.5.10",
-    "@types/react-dom": "17.0.3",
+    "@types/react-dom": "16.9.8",
     "@types/styled-components": "5.1.9",
     "jest": "24.8.0",
     "lodash.shuffle": "4.2.0",

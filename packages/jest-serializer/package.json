@@ -30,20 +30,16 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@babel/preset-react": "7.9.1",
-    "@babel/preset-env": "7.4.4",
-    "@times-components/jest-configurator-web": "0.7.1",
+    "@times-components/jest-configurator-web": "0.7.2",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "babel-jest": "24.8.0",
     "depcheck": "0.6.9",
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.12.1",
     "eslint": "5.9.0",
-    "identity-obj-proxy": "3.0.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
     "prop-types": "15.7.2",
-    "react-art": "16.6.3",
     "react-test-renderer": "16.9.0"
   },
   "dependencies": {
