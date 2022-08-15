@@ -3,7 +3,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { CommentContainer } from "./styles/responsive";
-import executeSSOtransaction from "./comment-login";
+import executeSSOtransaction, { setNewUserToken } from "./comment-login";
 import withTrackEvents from "./tracking/with-track-events";
 import { userShouldUpdateName } from "./utils";
 
@@ -154,10 +154,10 @@ class Comments extends Component {
 
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
-        executeSSOtransaction(() => {});
+        executeSSOtransaction(setNewUserToken);
       } else {
         document.addEventListener("spot-im-api-ready", () => {
-          executeSSOtransaction(() => {});
+          executeSSOtransaction(setNewUserToken);
         });
       }
     }

@@ -1,7 +1,15 @@
-import { userShouldUpdateName } from "../../src/utils";
+import { reauthenticateUser, userShouldUpdateName } from "../../src/utils";
 
 const unmockedFetch = global.fetch;
+let  mockExecuteSSO = jest.fn(() => {
+  mocklocalstoreage.setItem()
+})
 let mockFetchResponse = {};
+
+jest.mock('../../src/comment-login', () => ({
+  executeSSoTransaction: () => mockExecuteSSO
+}));
+
 
 describe("userShouldUpdateName()", () => {
   beforeAll(() => {
@@ -36,3 +44,35 @@ describe("userShouldUpdateName()", () => {
     expect(result).toEqual(true);
   });
 });
+
+describe("reauthenticateUser()", () => {
+  const mockLocalStorage = {
+    storage: {},
+    getItem: jest.fn(key => mockLocalStorage.storage[key]),
+    setItem: jest.fn((key, value) => {
+      mockLocalStorage.storage[key] = value;
+    }),
+    removeItem: jest.fn(key => delete mockLocalStorage.storage[key])
+  };
+
+  Object.defineProperty(global.window, "localStorage", {
+    value: mockLocalStorage
+  });
+
+  // it("should authenticate a new user", () => {
+  //   reauthenticateUser();
+  //   expect(mockLocalStorage.setItem).toHaveBeenCalledWith("isUsingRealNameCommenting", true);
+  //   expect(mockExecuteSSO).toHaveBeenCalled();
+  // });
+  // it("should not reauthenticate if user has already signed into the new service", () => {
+  //   reauthenticateUser();
+  //   expect(mockLocalStorage.getItem).toHaveBeenLastCalledWith("isUsingRealNameCommenting", true);
+  //   expect(mockExecuteSSO).not.toHaveBeenCalled();
+  // });
+  it("should reauthenticate user if signed into the old system", () => {
+    // should test that SSO fires again
+    // should expect there is no localStorage token
+    // should set localStorage token to say that user is already in new system
+  });
+
+})

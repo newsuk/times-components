@@ -19,7 +19,12 @@ const ssoCallback = (codeA, completeSSOCallback) =>
     completeSSOCallback
   );
 
-const executeSSOtransaction = callback => {
+
+  const setNewUserToken = () => {
+    window.localStorage.setItem("isUsingRealNameCommenting", true);
+  };
+
+  const executeSSOtransaction = callback => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
     window.SPOTIM.startSSO(ssoCallback);
 
@@ -27,5 +32,5 @@ const executeSSOtransaction = callback => {
   }
 };
 
-export { ssoCallback };
+export { ssoCallback, setNewUserToken };
 export default executeSSOtransaction;

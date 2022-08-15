@@ -65,7 +65,6 @@ describe("User States", () => {
       count: 123,
       enabled: true
     });
-
     expect(baseElement.getElementsByTagName("script")[0].src).toEqual(
       "https://launcher.spot.im/spot/CurrentSpotID"
     );
@@ -130,6 +129,16 @@ it("single comment", () => {
 
 it("Render comments label, when comments are loaded", () => {
   // eslint-disable-next-line no-undef
+  const mockLocalStorage = {
+    storage: {},
+    setItem: jest.fn((key, value) => {
+      mockLocalStorage.storage[key] = value;
+    })
+  };
+
+  Object.defineProperty(global.window, "localStorage", {
+    value: mockLocalStorage
+  });
   window.SPOTIM = {
     startSSO: () => {}
   };
@@ -153,6 +162,7 @@ it("Render comments label, when comments are loaded", () => {
   );
 
   expect(asFragment()).toMatchSnapshot();
+  expect(mockLocalStorage.setItem).toHaveBeenCalledWith("isUsingRealNameCommenting", true);
 });
 
 describe("window listeners added", () => {
