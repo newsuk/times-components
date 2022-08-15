@@ -101,18 +101,8 @@ class Comments extends Component {
         if (isFeatureFlagEnabled) {
           const { displayName } = this.state;
 
-          console.log(
-            "RealNameCommenting | UserTyping | displayName:",
-            displayName
-          );
-
           const shouldShowBanner = await userShouldUpdateName(displayName);
           if (shouldShowBanner) {
-            console.log(
-              "RealNameCommenting | UserTyping | shouldShowBanner:",
-              shouldShowBanner
-            );
-
             window.dispatchEvent(
               new CustomEvent("SHOW_REAL_NAME_COMMENTING_BANNER", {})
             );
@@ -125,11 +115,6 @@ class Comments extends Component {
     document.addEventListener("spot-im-user-auth-success", async event => {
       if (isFeatureFlagEnabled) {
         const { displayName } = event.detail;
-
-        console.log(
-          "RealNameCommenting | UserAuth | displayName:",
-          displayName
-        );
 
         this.setState({ displayName });
       }
@@ -169,13 +154,9 @@ class Comments extends Component {
 
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
-        console.log("RealNameCommenting | startSSO");
-
         executeSSOtransaction(() => {});
       } else {
         document.addEventListener("spot-im-api-ready", () => {
-          console.log("RealNameCommenting | startSSO | APIReady");
-
           executeSSOtransaction(() => {});
         });
       }
