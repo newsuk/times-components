@@ -1,4 +1,7 @@
+/* global fetch window */
+
 import executeSSOtransaction from "./comment-login";
+
 
 const storeURL = {
   gb:
@@ -13,36 +16,22 @@ export const userShouldUpdateName = async username => {
   if (!username) {
     return false;
   }
+
+
   const url = `/api/comments/display-names-pseudonyms?username=${username}`;
 
-  const checkUsername = global
-    .fetch(url)
+  const checkUsername = fetch(url)
     .then(response => response.json())
     .then(data => data);
 
-  const isPseudonym = await checkUsername;
+  const { isPseudonym } = await checkUsername;
+
 
   if (!isPseudonym) {
     return false;
   }
 
-  const bannerCount = global.window.localStorage.getItem(
-    "realNameCommentingBannerViewCount"
-  );
-  const isBannerVisible = global.window.localStorage.getItem(
-    "isRealNameCommentingBannerVisible"
-  );
-  const hasLocalStorageBeenSet = bannerCount && isBannerVisible;
-
-  if (!hasLocalStorageBeenSet) {
-    global.window.localStorage.setItem("realNameCommentingBannerViewCount", 3);
-    global.window.localStorage.setItem(
-      "isRealNameCommentingBannerVisible",
-      false
-    );
-  }
-
-  return bannerCount > 0;
+  return isPseudonym;
 };
 
 export default () => {
