@@ -29,6 +29,19 @@ export const userShouldUpdateName = async username => {
   return isPseudonym;
 };
 
+export const getDisplayNameFromLocalStorage = () => {
+  const spotimUserDetails = window.localStorage.getItem("SPOTIM_CURRENT_USER");
+
+  if (!spotimUserDetails) return false;
+
+  const spotimUserDetailsJSON =
+    spotimUserDetails && JSON.parse(spotimUserDetails);
+
+  const { displayName } = spotimUserDetailsJSON.data;
+
+  return displayName || false;
+};
+
 export default () => {
   const region =
     // eslint-disable-next-line no-undef
