@@ -29,6 +29,14 @@ export const userShouldUpdateName = async username => {
   return isPseudonym;
 };
 
+export const reauthenticateUser = () => {
+  const realNameToken = window.localStorage.getItem('isUsingRealNameCommenting');
+  if (realNameToken) {
+    console.log('***There is a real name token***');
+    return }
+    ;
+};
+
 export default () => {
   const region =
     // eslint-disable-next-line no-undef

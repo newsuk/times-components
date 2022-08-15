@@ -66,7 +66,7 @@ describe("reauthenticateUser()", () => {
   // });
   it("should not reauthenticate if user has already signed into the new service", () => {
     reauthenticateUser();
-    expect(mockLocalStorage.getItem).toHaveBeenLastCalledWith("isUsingRealNameCommenting", true);
+    expect(mockLocalStorage.getItem).toHaveBeenLastCalledWith("isUsingRealNameCommenting");
     expect(mockExecuteSSO).not.toHaveBeenCalled();
   });
   it("should reauthenticate user if signed into the old system", () => {
