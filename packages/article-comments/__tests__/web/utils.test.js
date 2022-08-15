@@ -64,11 +64,11 @@ describe("reauthenticateUser()", () => {
   //   expect(mockLocalStorage.setItem).toHaveBeenCalledWith("isUsingRealNameCommenting", true);
   //   expect(mockExecuteSSO).toHaveBeenCalled();
   // });
-  // it("should not reauthenticate if user has already signed into the new service", () => {
-  //   reauthenticateUser();
-  //   expect(mockLocalStorage.getItem).toHaveBeenLastCalledWith("isUsingRealNameCommenting", true);
-  //   expect(mockExecuteSSO).not.toHaveBeenCalled();
-  // });
+  it("should not reauthenticate if user has already signed into the new service", () => {
+    reauthenticateUser();
+    expect(mockLocalStorage.getItem).toHaveBeenLastCalledWith("isUsingRealNameCommenting", true);
+    expect(mockExecuteSSO).not.toHaveBeenCalled();
+  });
   it("should reauthenticate user if signed into the old system", () => {
     // should test that SSO fires again
     // should expect there is no localStorage token
