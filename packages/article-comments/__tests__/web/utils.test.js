@@ -65,14 +65,23 @@ describe("reauthenticateUser()", () => {
   //   expect(mockExecuteSSO).toHaveBeenCalled();
   // });
   it("should not reauthenticate if user has already signed into the new service", () => {
+    mockLocalStorage.setItem("isUsingRealNameCommenting", true);
     reauthenticateUser();
     expect(mockLocalStorage.getItem).toHaveBeenLastCalledWith("isUsingRealNameCommenting");
     expect(mockExecuteSSO).not.toHaveBeenCalled();
   });
-  it("should reauthenticate user if signed into the old system", () => {
-    // should test that SSO fires again
-    // should expect there is no localStorage token
-    // should set localStorage token to say that user is already in new system
+  it("should delete Spot IM localStorage tokens if user is signed into the old system", () => {
+    reauthenticateUser();
+    expect(mockLocalStorage.getItem).not.toHaveBeenLastCalledWith("isUsingRealNameCommenting");
+    expect(mockLocalStorage.removeItem).toHaveBeenCalledWith("SPOTIM_DEVICE_V2");
+    expect(mockLocalStorage.removeItem).toHaveBeenCalledWith("SPOTIM_CURRENT_USER");
+    expect(mockLocalStorage.removeItem).toHaveBeenCalledWith("SPOTIM_ACCESS_TOKEN");
+    expect(mockLocalStorage.removeItem).toHaveBeenCalledWith("SPOT_AB");
+    expect(mockLocalStorage.removeItem).toHaveBeenCalledWith("SPOTIM_DEVICE_UUID_V2");
   });
-
+  it("should call executeSSOtransaction if user is signed into the old system", () => {
+    reauthenticateUser();
+    expect(mockLocalStorage.getItem).not.toHaveBeenLastCalledWith("isUsingRealNameCommenting");
+    expect(mockExecuteSSO).toHaveBeenCalled();
+  })
 })
