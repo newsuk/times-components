@@ -4,7 +4,8 @@ module.exports = api => {
     plugins: [
       "babel-plugin-styled-components",
       "@babel/plugin-transform-runtime",
-      "@babel/plugin-proposal-export-default-from"
+      "@babel/plugin-proposal-export-default-from",
+      "@babel/plugin-transform-modules-commonjs"
     ],
     presets: [
       [
