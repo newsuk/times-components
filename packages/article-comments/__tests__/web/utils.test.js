@@ -1,7 +1,52 @@
-import { userShouldUpdateName } from "../../src/utils";
+/* global window */
+
+import {
+  userShouldUpdateName,
+  getDisplayNameFromLocalStorage
+} from "../../src/utils";
 
 const unmockedFetch = global.fetch;
 let mockFetchResponse = {};
+
+const localStorageMock = (function() {
+  const store = {};
+  return {
+    getItem(key) {
+      return store[key];
+    },
+    setItem(key, value) {
+      store[key] = value.toString();
+    }
+  };
+})();
+
+Object.defineProperty(window, "localStorage", { value: localStorageMock });
+
+describe("", () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  });
+});
+describe("getDisplayNameFromLocalStorage()", () => {
+  it("should return false if user it not signed in", () => {
+    expect(getDisplayNameFromLocalStorage()).toEqual(false);
+  });
+
+  it("should return false if there is no display name", () => {
+    window.localStorage.setItem(
+      "SPOTIM_CURRENT_USER",
+      '{"data":{"id":"u_sgCrqrs7KNLv","imageId":"#Grey-Cactus","username":"JohnSmith750","isRegistered":true,"isCommunityModerator":false,"isJournalist":false,"isModerator":false,"isAdmin":false,"isSuperAdmin":false,"reputation":{"total":1},"ssoData":{},"email":"","isEmailVerified":false}}'
+    );
+    expect(getDisplayNameFromLocalStorage()).toEqual(false);
+  });
+  it.only("should return the display name ", () => {
+    window.localStorage.setItem(
+      "SPOTIM_CURRENT_USER",
+      '{"data":{"id":"u_sgCrqrs7KNLv","displayName":"John Smith","imageId":"#Grey-Cactus","username":"JohnSmith750","isRegistered":true,"isCommunityModerator":false,"isJournalist":false,"isModerator":false,"isAdmin":false,"isSuperAdmin":false,"reputation":{"total":1},"ssoData":{},"email":"","isEmailVerified":false}}'
+    );
+    expect(getDisplayNameFromLocalStorage()).toEqual("John Smith");
+  });
+});
 
 describe("userShouldUpdateName()", () => {
   beforeAll(() => {

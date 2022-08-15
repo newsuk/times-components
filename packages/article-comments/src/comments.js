@@ -5,16 +5,12 @@ import PropTypes from "prop-types";
 import { CommentContainer } from "./styles/responsive";
 import executeSSOtransaction from "./comment-login";
 import withTrackEvents from "./tracking/with-track-events";
-import { userShouldUpdateName } from "./utils";
+import { userShouldUpdateName, getDisplayNameFromLocalStorage } from "./utils";
 
 class Comments extends Component {
   constructor() {
     super();
     this.container = null;
-
-    this.state = {
-      displayName: ""
-    };
   }
 
   componentDidMount() {
@@ -99,7 +95,9 @@ class Comments extends Component {
         onCommentStart(event);
 
         if (isFeatureFlagEnabled) {
-          const { displayName } = this.state;
+          const displayName = getDisplayNameFromLocalStorage();
+
+          if (!displayName) return;
 
           const shouldShowBanner = await userShouldUpdateName(displayName);
           if (shouldShowBanner) {
@@ -111,14 +109,6 @@ class Comments extends Component {
       },
       { once: true }
     );
-
-    document.addEventListener("spot-im-user-auth-success", async event => {
-      if (isFeatureFlagEnabled) {
-        const { displayName } = event.detail;
-
-        this.setState({ displayName });
-      }
-    });
 
     document.addEventListener(
       "spot-im-current-user-sent-message",
