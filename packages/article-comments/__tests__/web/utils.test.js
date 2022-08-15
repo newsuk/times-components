@@ -22,11 +22,11 @@ const localStorageMock = (function() {
 
 Object.defineProperty(window, "localStorage", { value: localStorageMock });
 
-describe("", () => {
+describe("utils", () => {
   afterEach(() => {
     jest.clearAllMocks();
   });
-});
+
 describe("getDisplayNameFromLocalStorage()", () => {
   it("should return false if user it not signed in", () => {
     expect(getDisplayNameFromLocalStorage()).toEqual(false);
@@ -80,4 +80,5 @@ describe("userShouldUpdateName()", () => {
 
     expect(result).toEqual(true);
   });
+});
 });
