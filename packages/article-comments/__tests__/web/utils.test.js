@@ -39,7 +39,7 @@ describe("getDisplayNameFromLocalStorage()", () => {
     );
     expect(getDisplayNameFromLocalStorage()).toEqual(false);
   });
-  it.only("should return the display name ", () => {
+  it("should return the display name ", () => {
     window.localStorage.setItem(
       "SPOTIM_CURRENT_USER",
       '{"data":{"id":"u_sgCrqrs7KNLv","displayName":"John Smith","imageId":"#Grey-Cactus","username":"JohnSmith750","isRegistered":true}}'
