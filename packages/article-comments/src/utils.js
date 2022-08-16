@@ -1,5 +1,4 @@
 /* global fetch window */
-
 const storeURL = {
   gb:
     "https://thetimes.co.uk/subscribe/digital?ILC=GB-TNL_The_Times-Conversion_Page-Homepage-2020",
@@ -29,19 +28,21 @@ export const userShouldUpdateName = async username => {
   return isPseudonym;
 };
 
-export const reauthenticateUser = () => {
-  const realNameToken = window.localStorage.getItem('isUsingRealNameCommenting');
-  if (realNameToken) {
-    console.log('***There is a real name token***');
-    return
-      }
-      window.localStorage.removeItem("SPOTIM_DEVICE_V2");
-      window.localStorage.removeItem("SPOTIM_CURRENT_USER");
-      window.localStorage.removeItem("SPOTIM_ACCESS_TOKEN");
-      window.localStorage.removeItem("SPOT_AB");
-      window.localStorage.removeItem("SPOTIM_DEVICE_UUID_V2");
-
-}
+export const shouldReauthenticateUser = () => {
+  const isUsingRealNameCommenting = window.localStorage.getItem(
+    "isUsingRealNameCommenting"
+  );
+  if (isUsingRealNameCommenting) {
+    console.log("***There is a real name token***");
+    return false;
+  }
+  window.localStorage.removeItem("SPOTIM_DEVICE_V2");
+  window.localStorage.removeItem("SPOTIM_CURRENT_USER");
+  window.localStorage.removeItem("SPOTIM_ACCESS_TOKEN");
+  window.localStorage.removeItem("SPOT_AB");
+  window.localStorage.removeItem("SPOTIM_DEVICE_UUID_V2");
+  return true;
+};
 
 export const getDisplayNameFromLocalStorage = () => {
   const spotimUserDetails = window.localStorage.getItem("SPOTIM_CURRENT_USER");

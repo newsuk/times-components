@@ -1,5 +1,4 @@
 /* eslint-env browser */
-
 const loginRequest = (url, completeSSOCallback) => {
   const xhr = new XMLHttpRequest();
   xhr.addEventListener("load", () => {
@@ -19,15 +18,14 @@ const ssoCallback = (codeA, completeSSOCallback) =>
     completeSSOCallback
   );
 
+const setNewUserToken = () => {
+  window.localStorage.setItem("isUsingRealNameCommenting", true);
+};
 
-  const setNewUserToken = () => {
-    window.localStorage.setItem("isUsingRealNameCommenting", true);
-  };
-
-  const executeSSOtransaction = callback => {
+const executeSSOtransaction = callback => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
     window.SPOTIM.startSSO(ssoCallback);
-
+    setNewUserToken();
     callback();
   }
 };

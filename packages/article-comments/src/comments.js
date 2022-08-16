@@ -3,9 +3,13 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { CommentContainer } from "./styles/responsive";
-import executeSSOtransaction, { setNewUserToken } from "./comment-login";
+import executeSSOtransaction from "./comment-login";
 import withTrackEvents from "./tracking/with-track-events";
-import { userShouldUpdateName, getDisplayNameFromLocalStorage } from "./utils";
+import {
+  getDisplayNameFromLocalStorage,
+  shouldReauthenticateUser,
+  userShouldUpdateName
+} from "./utils";
 
 class Comments extends Component {
   constructor() {
@@ -109,7 +113,12 @@ class Comments extends Component {
       },
       { once: true }
     );
-
+    document.addEventListener("spot-im-user-auth-success", () => {
+      const shouldUserReauthenticate = shouldReauthenticateUser();
+      if (shouldUserReauthenticate) {
+        executeSSOtransaction();
+      }
+    });
     document.addEventListener(
       "spot-im-current-user-sent-message",
       onCommentPost
@@ -144,10 +153,10 @@ class Comments extends Component {
 
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
-        executeSSOtransaction(setNewUserToken);
+        executeSSOtransaction(() => {});
       } else {
         document.addEventListener("spot-im-api-ready", () => {
-          executeSSOtransaction(setNewUserToken);
+          executeSSOtransaction(() => {});
         });
       }
     }

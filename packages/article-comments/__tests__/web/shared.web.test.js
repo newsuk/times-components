@@ -162,7 +162,10 @@ it("Render comments label, when comments are loaded", () => {
   );
 
   expect(asFragment()).toMatchSnapshot();
-  expect(mockLocalStorage.setItem).toHaveBeenCalledWith("isUsingRealNameCommenting", true);
+  expect(mockLocalStorage.setItem).toHaveBeenCalledWith(
+    "isUsingRealNameCommenting",
+    true
+  );
 });
 
 describe("window listeners added", () => {
