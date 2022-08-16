@@ -1,4 +1,10 @@
-import { reauthenticateUser, userShouldUpdateName } from "../../src/utils";
+/* global window */
+
+import {
+  getDisplayNameFromLocalStorage,
+  reauthenticateUser,
+  userShouldUpdateName
+} from "../../src/utils";
 
 const unmockedFetch = global.fetch;
 let  mockExecuteSSO = jest.fn(() => {
@@ -19,29 +25,78 @@ describe("userShouldUpdateName()", () => {
       });
   });
 
-  afterAll(() => {
-    global.fetch = unmockedFetch;
+const localStorageMock = (function() {
+  const store = {};
+  return {
+    getItem(key) {
+      return store[key];
+    },
+    setItem(key, value) {
+      store[key] = value.toString();
+    }
+  };
+})();
+
+Object.defineProperty(window, "localStorage", { value: localStorageMock });
+
+describe("utils", () => {
+  afterEach(() => {
+    jest.clearAllMocks();
   });
-  it("it should return false if no username", async () => {
-    const result = await userShouldUpdateName();
 
-    expect(result).toEqual(false);
+  describe("getDisplayNameFromLocalStorage()", () => {
+    it("should return false if user it not signed in", () => {
+      expect(getDisplayNameFromLocalStorage()).toEqual(false);
+    });
+
+    it("should return false if there is no display name", () => {
+      window.localStorage.setItem(
+        "SPOTIM_CURRENT_USER",
+        '{"data":{"id":"u_sgCrqrs7KNLv","imageId":"#Grey-Cactus","username":"JohnSmith750","isRegistered":true}}'
+      );
+      expect(getDisplayNameFromLocalStorage()).toEqual(false);
+    });
+    it("should return the display name ", () => {
+      window.localStorage.setItem(
+        "SPOTIM_CURRENT_USER",
+        '{"data":{"id":"u_sgCrqrs7KNLv","displayName":"John Smith","imageId":"#Grey-Cactus","username":"JohnSmith750","isRegistered":true}}'
+      );
+      expect(getDisplayNameFromLocalStorage()).toEqual("John Smith");
+    });
   });
 
-  it("it should return false if the username is valid", async () => {
-    mockFetchResponse = { isPseudonym: false };
+  describe("userShouldUpdateName()", () => {
+    beforeAll(() => {
+      global.fetch = () =>
+        Promise.resolve({
+          json: () => Promise.resolve(mockFetchResponse)
+        });
+    });
 
-    const result = await userShouldUpdateName("john");
+    afterAll(() => {
+      global.fetch = unmockedFetch;
+    });
+    it("it should return false if no username", async () => {
+      const result = await userShouldUpdateName();
 
-    expect(result).toEqual(false);
-  });
+      expect(result).toEqual(false);
+    });
 
-  it("should set local storage values if they do not already exist and the user is on the banned list", async () => {
-    mockFetchResponse = { isPseudonym: true };
+    it("it should return false if the username is valid", async () => {
+      mockFetchResponse = { isPseudonym: false };
 
-    const result = await userShouldUpdateName("MockBannedName");
+      const result = await userShouldUpdateName("john");
 
-    expect(result).toEqual(true);
+      expect(result).toEqual(false);
+    });
+
+    it("should set local storage values if they do not already exist and the user is on the banned list", async () => {
+      mockFetchResponse = { isPseudonym: true };
+
+      const result = await userShouldUpdateName("MockBannedName");
+
+      expect(result).toEqual(true);
+    });
   });
 });
 

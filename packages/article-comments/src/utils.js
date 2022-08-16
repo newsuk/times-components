@@ -40,6 +40,18 @@ export const reauthenticateUser = () => {
       window.localStorage.removeItem("SPOTIM_ACCESS_TOKEN");
       window.localStorage.removeItem("SPOT_AB");
       window.localStorage.removeItem("SPOTIM_DEVICE_UUID_V2");
+
+export const getDisplayNameFromLocalStorage = () => {
+  const spotimUserDetails = window.localStorage.getItem("SPOTIM_CURRENT_USER");
+
+  if (!spotimUserDetails) return false;
+
+  const spotimUserDetailsJSON =
+    spotimUserDetails && JSON.parse(spotimUserDetails);
+
+  const { displayName } = spotimUserDetailsJSON.data;
+
+  return displayName || false;
 };
 
 export default () => {
