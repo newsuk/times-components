@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.55.30](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.55.29...@times-components/article-in-depth@3.55.30) (2022-08-15)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
 ## [3.55.29](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.55.28...@times-components/article-in-depth@3.55.29) (2022-08-12)
 
 **Note:** Version bump only for package @times-components/article-in-depth
