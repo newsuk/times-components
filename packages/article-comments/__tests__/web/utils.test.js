@@ -12,17 +12,27 @@ let  mockExecuteSSO = jest.fn(() => {
 })
 let mockFetchResponse = {};
 
-const localStorageMock = (function() {
-  const store = {};
-  return {
-    getItem(key) {
-      return store[key];
-    },
-    setItem(key, value) {
-      store[key] = value.toString();
-    }
-  };
-})();
+// const localStorageMock = (function() {
+//   const store = {};
+//   return {
+//     getItem(key) {
+//       return store[key];
+//     },
+//     setItem(key, value) {
+//       store[key] = value.toString();
+//     },
+//     removeItem(key) { delete localStorageMock.storage[key]}
+//   };
+// })();
+
+const localStorageMock = {
+  storage: {},
+  getItem: jest.fn(key => localStorageMock.storage[key]),
+  setItem: jest.fn((key, value) => {
+    localStorageMock.storage[key] = value;
+  }),
+  removeItem: jest.fn(key => delete localStorageMock.storage[key])
+};
 
 Object.defineProperty(window, "localStorage", { value: localStorageMock });
 
@@ -94,18 +104,18 @@ describe("utils", () => {
     // afterEach(() => {
     //   jest.clearAllMocks();
     // })
-    const mockLocalStorage = {
-      storage: {},
-      getItem: jest.fn(key => mockLocalStorage.storage[key]),
-      setItem: jest.fn((key, value) => {
-        mockLocalStorage.storage[key] = value;
-      }),
-      removeItem: jest.fn(key => delete mockLocalStorage.storage[key])
-    };
+    // const mockLocalStorage = {
+    //   storage: {},
+    //   getItem: jest.fn(key => mockLocalStorage.storage[key]),
+    //   setItem: jest.fn((key, value) => {
+    //     mockLocalStorage.storage[key] = value;
+    //   }),
+    //   removeItem: jest.fn(key => delete mockLocalStorage.storage[key])
+    // };
 
-    Object.defineProperty(global.window, "localStorage", {
-      value: mockLocalStorage
-    });
+    // Object.defineProperty(global.window, "localStorage", {
+    //   value: mockLocalStorage
+    // });
 
     // it("should authenticate a new user", () => {
     //   reauthenticateUser();
@@ -113,28 +123,28 @@ describe("utils", () => {
     //   expect(mockExecuteSSO).toHaveBeenCalled();
     // });
     it("should not reauthenticate if user has already signed into the new service", () => {
-      mockLocalStorage.setItem("isUsingRealNameCommenting", true);
+      localStorageMock.setItem("isUsingRealNameCommenting", true);
       reauthenticateUser();
-      expect(mockLocalStorage.getItem).toHaveBeenLastCalledWith("isUsingRealNameCommenting");
+      expect(localStorageMock.getItem).toHaveBeenLastCalledWith("isUsingRealNameCommenting");
       expect(mockExecuteSSO).not.toHaveBeenCalled();
     });
     it("should delete Spot IM localStorage tokens if user is signed into the old system", () => {
-      mockLocalStorage.removeItem("isUsingRealNameCommenting");
-      mockLocalStorage.setItem("SPOTIM_DEVICE_V2", "a_BC123");
-      mockLocalStorage.setItem("SPOTIM_CURRENT_USER", "1: {short_name: 32})");
-      mockLocalStorage.setItem("SPOTIM_ACCESS_TOKEN", "abc123");
-      mockLocalStorage.setItem("SPOT_AB", "d_EF456");
-      mockLocalStorage.setItem("SPOTIM_DEVICE_UUID_V2", "{UUID: abc123-def456}");
+      localStorageMock.removeItem("isUsingRealNameCommenting");
+      localStorageMock.setItem("SPOTIM_DEVICE_V2", "a_BC123");
+      localStorageMock.setItem("SPOTIM_CURRENT_USER", "1: {short_name: 32})");
+      localStorageMock.setItem("SPOTIM_ACCESS_TOKEN", "abc123");
+      localStorageMock.setItem("SPOT_AB", "d_EF456");
+      localStorageMock.setItem("SPOTIM_DEVICE_UUID_V2", "{UUID: abc123-def456}");
       reauthenticateUser();
-      expect(mockLocalStorage.removeItem).toHaveBeenCalledWith("SPOTIM_DEVICE_V2");
-      expect(mockLocalStorage.removeItem).toHaveBeenCalledWith("SPOTIM_CURRENT_USER");
-      expect(mockLocalStorage.removeItem).toHaveBeenCalledWith("SPOTIM_ACCESS_TOKEN");
-      expect(mockLocalStorage.removeItem).toHaveBeenCalledWith("SPOT_AB");
-      expect(mockLocalStorage.removeItem).toHaveBeenCalledWith("SPOTIM_DEVICE_UUID_V2");
+      expect(localStorageMock.removeItem).toHaveBeenCalledWith("SPOTIM_DEVICE_V2");
+      expect(localStorageMock.removeItem).toHaveBeenCalledWith("SPOTIM_CURRENT_USER");
+      expect(localStorageMock.removeItem).toHaveBeenCalledWith("SPOTIM_ACCESS_TOKEN");
+      expect(localStorageMock.removeItem).toHaveBeenCalledWith("SPOT_AB");
+      expect(localStorageMock.removeItem).toHaveBeenCalledWith("SPOTIM_DEVICE_UUID_V2");
     });
     it("should call executeSSOtransaction if user is signed into the old system", () => {
       reauthenticateUser();
-      expect(mockLocalStorage.getItem).not.toHaveBeenLastCalledWith("isUsingRealNameCommenting");
+      expect(localStorageMock.getItem).not.toHaveBeenLastCalledWith("isUsingRealNameCommenting");
       expect(mockExecuteSSO).toHaveBeenCalled();
     })
   })
