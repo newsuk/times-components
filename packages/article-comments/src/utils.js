@@ -33,8 +33,13 @@ export const reauthenticateUser = () => {
   const realNameToken = window.localStorage.getItem('isUsingRealNameCommenting');
   if (realNameToken) {
     console.log('***There is a real name token***');
-    return }
-    ;
+    return
+      }
+      window.localStorage.removeItem("SPOTIM_DEVICE_V2");
+      window.localStorage.removeItem("SPOTIM_CURRENT_USER");
+      window.localStorage.removeItem("SPOTIM_ACCESS_TOKEN");
+      window.localStorage.removeItem("SPOT_AB");
+      window.localStorage.removeItem("SPOTIM_DEVICE_UUID_V2");
 };
 
 export default () => {

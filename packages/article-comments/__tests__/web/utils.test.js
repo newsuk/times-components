@@ -46,6 +46,9 @@ describe("userShouldUpdateName()", () => {
 });
 
 describe("reauthenticateUser()", () => {
+  afterEach(() => {
+    jest.clearAllMocks();
+  })
   const mockLocalStorage = {
     storage: {},
     getItem: jest.fn(key => mockLocalStorage.storage[key]),
@@ -71,8 +74,13 @@ describe("reauthenticateUser()", () => {
     expect(mockExecuteSSO).not.toHaveBeenCalled();
   });
   it("should delete Spot IM localStorage tokens if user is signed into the old system", () => {
+    mockLocalStorage.removeItem("isUsingRealNameCommenting");
+    mockLocalStorage.setItem("SPOTIM_DEVICE_V2", "a_BC123");
+    mockLocalStorage.setItem("SPOTIM_CURRENT_USER", "1: {short_name: 32})");
+    mockLocalStorage.setItem("SPOTIM_ACCESS_TOKEN", "abc123");
+    mockLocalStorage.setItem("SPOT_AB", "d_EF456");
+    mockLocalStorage.setItem("SPOTIM_DEVICE_UUID_V2", "{UUID: abc123-def456}");
     reauthenticateUser();
-    expect(mockLocalStorage.getItem).not.toHaveBeenLastCalledWith("isUsingRealNameCommenting");
     expect(mockLocalStorage.removeItem).toHaveBeenCalledWith("SPOTIM_DEVICE_V2");
     expect(mockLocalStorage.removeItem).toHaveBeenCalledWith("SPOTIM_CURRENT_USER");
     expect(mockLocalStorage.removeItem).toHaveBeenCalledWith("SPOTIM_ACCESS_TOKEN");
