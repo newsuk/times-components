@@ -14,7 +14,7 @@ jest.mock("../src/article-list-item", () => ({ article }) => {
 
   return "ArticleListItem";
 });
-let consoleSpy = jest.spyOn(console, "error").mockImplementation();
+let consoleSpy;
 
 beforeAll(() => {
   consoleSpy = jest.spyOn(console, "error").mockImplementation();
