@@ -113,12 +113,14 @@ class Comments extends Component {
       },
       { once: true }
     );
-    document.addEventListener("spot-im-user-auth-success", () => {
-      const shouldUserReauthenticate = shouldReauthenticateUser();
-      if (shouldUserReauthenticate) {
-        executeSSOtransaction();
-      }
-    });
+    // document.addEventListener("spot-im-user-auth-success", () => {
+    //   console.log('***1 inside event listener***');
+    //   const shouldUserReauthenticate = shouldReauthenticateUser();
+    //   if (shouldUserReauthenticate) {
+    //     executeSSOtransaction();
+    //     console.log('***8 User has been reauthenticated***');
+    //   }
+    // });
     document.addEventListener(
       "spot-im-current-user-sent-message",
       onCommentPost
@@ -156,8 +158,12 @@ class Comments extends Component {
         executeSSOtransaction(() => {});
       } else {
         document.addEventListener("spot-im-api-ready", () => {
-          executeSSOtransaction(() => {});
-        });
+          console.log('***1 inside event listener***');
+          const shouldUserReauthenticate = shouldReauthenticateUser();
+          if (shouldUserReauthenticate) {
+          executeSSOtransaction();
+          console.log('***8 User has been reauthenticated***');
+        }});
       }
     }
 

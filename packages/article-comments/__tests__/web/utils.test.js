@@ -43,6 +43,10 @@ Object.defineProperty(window, "localStorage", { value: localStorageMock });
 // }));
 
 describe("utils", () => {
+  beforeEach(() => {
+    localStorageMock.removeItem("isUsingRealNameCommenting");
+  });
+
   afterEach(() => {
     jest.clearAllMocks();
   });
@@ -132,8 +136,7 @@ describe("utils", () => {
       );
       // expect(mockExecuteSSO).not.toHaveBeenCalled();
     });
-    it("should delete Spot IM localStorage tokens if user is signed into the old system", () => {
-      localStorageMock.removeItem("isUsingRealNameCommenting");
+    it("should reauthenticate if user is signed into the old system", () => {
       localStorageMock.setItem("SPOTIM_DEVICE_V2", "a_BC123");
       localStorageMock.setItem("SPOTIM_CURRENT_USER", "1: {short_name: 32})");
       localStorageMock.setItem("SPOTIM_ACCESS_TOKEN", "abc123");
@@ -143,6 +146,7 @@ describe("utils", () => {
         "{UUID: abc123-def456}"
       );
       shouldReauthenticateUser();
+      localStorageMock.setItem("isUsingRealNameCommenting", true);
       expect(localStorageMock.removeItem).toHaveBeenCalledWith(
         "SPOTIM_DEVICE_V2"
       );
@@ -156,10 +160,6 @@ describe("utils", () => {
       expect(localStorageMock.removeItem).toHaveBeenCalledWith(
         "SPOTIM_DEVICE_UUID_V2"
       );
-    });
-    it("should call executeSSOtransaction if user is signed into the old system", () => {
-      shouldReauthenticateUser();
-      // expect(mockExecuteSSO).toHaveBeenCalled();
     });
   });
 });

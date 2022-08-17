@@ -20,14 +20,19 @@ const ssoCallback = (codeA, completeSSOCallback) =>
 
 const setNewUserToken = () => {
   window.localStorage.setItem("isUsingRealNameCommenting", true);
+  console.log('***isUsingRealNameCommenting token set***');
 };
 
 const executeSSOtransaction = callback => {
+  console.log('***5 in executeSSOtransaction***');
   if (window.SPOTIM && window.SPOTIM.startSSO) {
+    console.log('***6A in window.SPOTIM exists and startSSO branch***');
     window.SPOTIM.startSSO(ssoCallback);
     setNewUserToken();
     callback();
+    console.log('***7 in executeSSOtransaction after setNewUserToken called***');
   }
+  console.log('***6B in window.SPOTIM does not exist branch***');
 };
 
 export { ssoCallback, setNewUserToken };
