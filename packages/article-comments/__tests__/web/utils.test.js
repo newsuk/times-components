@@ -5,23 +5,9 @@ import {
   shouldReauthenticateUser,
   userShouldUpdateName
 } from "../../src/utils";
-// import executeSSOtransaction from '../../src/comment-login';
 
 const unmockedFetch = global.fetch;
 let mockFetchResponse = {};
-
-// const localStorageMock = (function() {
-//   const store = {};
-//   return {
-//     getItem(key) {
-//       return store[key];
-//     },
-//     setItem(key, value) {
-//       store[key] = value.toString();
-//     },
-//     removeItem(key) { delete localStorageMock.storage[key]}
-//   };
-// })();
 
 const localStorageMock = {
   storage: {},
@@ -33,14 +19,6 @@ const localStorageMock = {
 };
 
 Object.defineProperty(window, "localStorage", { value: localStorageMock });
-
-// let  mockExecuteSSO = jest.fn(() => {
-//   localStorageMock.setItem("isUsingRealNameCommenting", true)
-// })
-
-// jest.mock('../../src/comment-login', () => () => ({
-//   executeSSoTransaction: () => mockExecuteSSO
-// }));
 
 describe("utils", () => {
   beforeEach(() => {
@@ -107,34 +85,12 @@ describe("utils", () => {
   });
 
   describe("shouldReauthenticateUser()", () => {
-    // afterEach(() => {
-    //   jest.clearAllMocks();
-    // })
-    // const mockLocalStorage = {
-    //   storage: {},
-    //   getItem: jest.fn(key => mockLocalStorage.storage[key]),
-    //   setItem: jest.fn((key, value) => {
-    //     mockLocalStorage.storage[key] = value;
-    //   }),
-    //   removeItem: jest.fn(key => delete mockLocalStorage.storage[key])
-    // };
-
-    // Object.defineProperty(global.window, "localStorage", {
-    //   value: mockLocalStorage
-    // });
-
-    // it("should authenticate a new user", () => {
-    //   reauthenticateUser();
-    //   expect(mockLocalStorage.setItem).toHaveBeenCalledWith("isUsingRealNameCommenting", true);
-    //   expect(mockExecuteSSO).toHaveBeenCalled();
-    // });
     it("should not reauthenticate if user has already signed into the new service", () => {
       localStorageMock.setItem("isUsingRealNameCommenting", true);
       shouldReauthenticateUser();
       expect(localStorageMock.getItem).toHaveBeenLastCalledWith(
         "isUsingRealNameCommenting"
       );
-      // expect(mockExecuteSSO).not.toHaveBeenCalled();
     });
     it("should reauthenticate if user is signed into the old system", () => {
       localStorageMock.setItem("SPOTIM_DEVICE_V2", "a_BC123");

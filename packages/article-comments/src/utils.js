@@ -29,26 +29,17 @@ export const userShouldUpdateName = async username => {
 };
 
 export const shouldReauthenticateUser = () => {
-  console.log('***2 inside shouldReauthenticateUser***');
   const isUsingRealNameCommenting = window.localStorage.getItem(
     "isUsingRealNameCommenting"
   );
-  console.log('***3 after looking for isUsingRealNameCommenting token***');
   if (isUsingRealNameCommenting) {
-    console.log('***4A in isUsingRealNameCommenting exists branch***');
-    console.log("***User has real name token***");
-    console.log("***shouldReauthenticateUser returns false***");
     return false;
   }
-  console.log('***4B in isUsingRealNameCommenting doesnt exist branch***');
   window.localStorage.removeItem("SPOTIM_DEVICE_V2");
   window.localStorage.removeItem("SPOTIM_CURRENT_USER");
   window.localStorage.removeItem("SPOTIM_ACCESS_TOKEN");
   window.localStorage.removeItem("SPOT_AB");
   window.localStorage.removeItem("SPOTIM_DEVICE_UUID_V2");
-  console.log("***No real name token***");
-  console.log("***SPOT tokens deleted***");
-  console.log("***shouldReauthenticateUser returns true***");
   return true;
 };
 
