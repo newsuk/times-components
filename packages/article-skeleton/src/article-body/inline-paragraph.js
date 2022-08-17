@@ -19,7 +19,6 @@ const InlineParagraph = ({
   LinkComponent
 }) => {
   const { spacing } = styleguide({ scale });
-  const [inlineExclusion] = useState(false);
 
   if (!str.length) {
     return null;
@@ -40,8 +39,7 @@ const InlineParagraph = ({
 
   const manager = new LayoutManager(
     dropCap ? str.slice(slice) : str,
-    [container],
-    inlineExclusion ? [inlineExclusion.exclusion] : []
+    [container]
   );
 
   const positioned = manager.layout();
@@ -70,8 +68,7 @@ const InlineParagraph = ({
         !positioned.length
           ? 0
           : positioned[positioned.length - 1].position.y +
-            defaultFont.lineHeight,
-        inlineExclusion ? inlineExclusion.height : 0
+            defaultFont.lineHeight
       )}
     >
       {positioned.map((p, i) => {
