@@ -19,9 +19,6 @@
     "testEnvironment": "node",
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
-    ],
-    "coveragePathIgnorePatterns": [
-      "src/mock-native-modules.js"
     ]
   },
   "repository": {
@@ -51,8 +48,7 @@
     "jest": "24.8.0",
     "prettier": "1.14.3",
     "react": "16.9.0",
-    "webpack": "4.30.0",
-    "webpack-cli": "3.3.1"
+    "webpack": "4.30.0"
   },
   "publishConfig": {
     "access": "public"

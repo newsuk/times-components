@@ -8,8 +8,6 @@ in snapshots rather than other data structures.
 It's designed to aid you with your tests that use Jest with no other
 requirements \* other than importing the desired serializers for your needs.
 
-\* there's currently a dependency on `react-native-web` that needs removal.
-
 ### Supported
 
 - Jest@21.2.1
@@ -26,11 +24,10 @@ within your tests you can now use code that looks like this:
 ```javascript
 import {
   addSerializers,
-  enzymeRenderedSerializer,
-  minimalNative
+  enzymeRenderedSerializer
 } from "@times-components/jest-serializer";
 
-addSerializers(expect, enzymeRenderedSerializer(), minimalNative);
+addSerializers(expect, enzymeRenderedSerializer());
 ```
 
 and any snapshot tests that run in the context of this serializer will generate
@@ -65,12 +62,9 @@ This allows us to only visit each node once and perform each transformation
 that have side-effects that another transformer was relying on e.g.
 
 ```javascript
-import { AppRegistry } from "react-native-web";
-
 compose(
   stylePrinter,
-  minimalWebTransform,
-  rnwTransform(AppRegistry, ["color"])
+  minimalWebTransform
 );
 ```
 
@@ -141,7 +135,7 @@ further.
 
 **hoistStyle: Serializer**
 
-While on Native it may make sense to show a snapshot with inline styles on web,
+It makes sense to show a snapshot with inline styles on web,
 it's perhaps a little more idiomatic to see it as a `className` and the style to
 reside in a `style` block. This is a better reflection of how it'll be rendered
 on the platform (RNW magic) and keeps the snapshots a little leaner too.
@@ -163,31 +157,12 @@ addSerializers(expect, minimalise((value, key) => key === "style"));
 
 will strip all styles from your JSX nodes.
 
-### minimalNative
-
-**minimalNative: Serializer**
-
-A convenience serializer to remove the plethora of `prop`s RN prints by default
-that may change between RN version but have no baring on your tests. In
-particular it removes `[Function]` values because they should be tested with
-either interactive tests and/or a type system rather than with snapshots.
-
-Refer to the code for the latest removed values.
-
-### minimalRnw
-
-**minimalRnw(AppRegistry): Serializer**
-
-An example of perhaps where this package is likely to move to as patterns and
-common use cases appear. This combines `minimalWeb` with `rnw` much like a babel
-preset.
-
 ### minimalWeb
 
 **minimalWeb: Serializer**
 
 A convenience serializer to remove the plethora of `prop`s React prints by
-default that may change between React and/or react-native-web versions but have
+default that may change React versions but have
 no baring on your tests. In particular it removes `[Function]` values because
 they should be tested with either interactive tests and/or a type system rather
 than with snapshots.
@@ -221,8 +196,7 @@ readability.
 
 **rnw(AppRegistry, string[]): Serializer**
 
-If you're using [react-native-web](https://github.com/necolas/react-native-web)
-and Jest snapshots on the web platform to ensure your components are rendering
+If you're using Jest snapshots on the web platform to ensure your components are rendering
 the expected web output, there'll be a lot of `className` noise.
 
 Use this serializer with any style properties you're interested in, and when
@@ -230,12 +204,7 @@ Use this serializer with any style properties you're interested in, and when
 e.g.
 
 ```javascript
-import { AppRegistry } from "react-native-web";
-
-compose(
-  stylePrinter,
-  rnwTransform(AppRegistry, ["color", "fontSize"])
-);
+compose(stylePrinter);
 ```
 
 will assign a generic `className` to the Node and print the styles with that
@@ -265,10 +234,7 @@ accumulated "bag" of styles and prints them in a `style` block
 
 ## Patterns and Practices
 
-As discussed in the blog post at the start of the document, there are currently
-numerous problems around "building trees" of React components and rendering them
-out nicely on both Native and Web platforms. Enzyme doesn't have the React
-Native adapter so using React Test Renderer tends to be your best bet. This
+Using React Test Renderer tends to be your best bet. This
 doesn't give you "host" objects for the `replace` serializer leaving you with
 `jest.mock`. It's currently advisable to mock all your dependencies even if you
 have the best intentions with "integration" testing. They usually lead to a
@@ -294,9 +260,6 @@ Another pattern you want to look out for is repeated props throughout a snapshot
 which probably means they should be removed and one test should represent them.
 It's discretionary but probably means the snapshots aren't focused on the tests
 enough.
-
-On Native you're likely going to want to use `minimalNative`, `flattenStyle` and
-`minimalise` to focus the given tests.
 
 On web you're similarly going to be looking at `minimalWeb`, `hoistStyle`,
 `minimalise`, and `rnw`.

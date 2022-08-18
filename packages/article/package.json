@@ -10,7 +10,7 @@
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,react-art,stylelint*,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "prepublishOnly": "yarn transpile && yarn bundle",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:web": "jest --config='./__tests__/jest.config.js'",
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
@@ -32,8 +32,6 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@babel/preset-env": "7.4.4",
-    "@babel/preset-react": "7.9.1",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.7.2",
     "@times-components/provider-test-tools": "1.26.8",
@@ -43,18 +41,14 @@
     "@times-components/webpack-configurator": "2.0.30",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
-    "babel-plugin-add-react-displayname": "0.0.5",
-    "babel-plugin-styled-components": "1.10.6",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
     "react": "16.9.0",
-    "react-art": "16.6.3",
     "react-dom": "16.9.0",
     "react-test-renderer": "16.9.0",
-    "webpack": "4.30.0",
-    "webpack-cli": "3.3.1"
+    "webpack": "4.30.0"
   },
   "dependencies": {
     "@times-components/ad": "2.20.3",

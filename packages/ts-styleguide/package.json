@@ -27,7 +27,7 @@
     "fix:prettier": "prettier \"src/**/*.{ts,tsx}\" \"__tests__/**/*.tsx\" --write",
     "fix:tslint": "tslint --fix --project .",
     "lint": "tslint --project . && prettier \"src/**/*.{ts,tsx}\" --list-different",
-    "test:lint": "tslint --project . && prettier \"src/**/*.{ts,tsx}\" --list-different",
+    "test:lint": "lint",
     "test:unit": "jest --coverage",
     "watch:build": "run-s clean && run-p build:* \"build:module -- -w\"",
     "watch:tests": "run-s clean build:module && run-p \"build:module -- -w\" \"test:unit -- --watch\"",
@@ -58,7 +58,6 @@
   "devDependencies": {
     "@storybook/react": "5.3.18",
     "@testing-library/react": "^12.1.2",
-    "@times-components/storybook": "4.4.1",
     "fetch-mock": "9.11.0",
     "jest": "24.8.0",
     "jest-environment-jsdom-sixteen": "2.0.0",

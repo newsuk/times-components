@@ -179,7 +179,7 @@ export default () => {
           />
         );
 
-        const evt = { nativeEvent: { layout: { height: 800, width: 400 } } };
+        const evt = { event: { layout: { height: "800px", width: "400px" } } };
         testRenderer.root.children[0].props.onLayout(evt);
 
         expect(onLayoutMock).toHaveBeenCalledWith(evt);

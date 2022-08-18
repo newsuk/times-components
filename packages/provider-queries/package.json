@@ -30,15 +30,12 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "7.18.10",
-    "@babel/preset-env": "7.4.4",
-    "@babel/preset-react": "7.9.1",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/webpack-configurator": "2.0.30",
     "babel-plugin-import-graphql": "2.7.0",
     "eslint-plugin-graphql": "2.1.1",
     "prettier": "1.14.3",
-    "webpack": "4.30.0",
-    "webpack-cli": "3.3.1"
+    "webpack": "4.30.0"
   },
   "dependencies": {
     "apollo-utilities": "1.2.1",

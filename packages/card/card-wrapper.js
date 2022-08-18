@@ -1,6 +1,6 @@
 import { TcView } from "@times-components/utils";
 import styled from "styled-components";
-import { breakpoints } from "../styleguide";
+import { breakpoints } from "@times-components/ts-styleguide";
 
 export const CardWrapper = styled(TcView)`
   @media (min-width: ${breakpoints.medium}px) {

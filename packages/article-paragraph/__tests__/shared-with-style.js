@@ -1,4 +1,3 @@
-import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -6,7 +5,6 @@ import {
   enzymeRenderedSerializer,
   minimaliseTransform,
   minimalWebTransform,
-  rnwTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
@@ -19,7 +17,6 @@ export default () => {
     enzymeRenderedSerializer(),
     compose(
       stylePrinter,
-      rnwTransform(AppRegistry),
       minimalWebTransform,
       minimaliseTransform(
         (value, key) => key !== "style" && key !== "className"

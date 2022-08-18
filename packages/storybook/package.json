@@ -9,7 +9,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,react-art,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:web": "jest --config='./__tests__/jest.config.js'",
     "prepublishOnly": "yarn transpile",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
@@ -25,15 +25,12 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@times-components/jest-configurator": "2.8.1",
+    "@times-components/jest-configurator-web": "0.7.2",
     "babel-jest": "24.8.0",
-    "babel-plugin-add-react-displayname": "0.0.5",
-    "babel-plugin-styled-components": "1.10.6",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
-    "react-art": "16.6.3",
     "react-test-renderer": "16.9.0"
   },
   "dependencies": {
