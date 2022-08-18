@@ -150,8 +150,8 @@ class Comments extends Component {
         executeSSOtransaction(() => {});
       } else {
         document.addEventListener("spot-im-api-ready", () => {
-          const shouldUserReauthenticate = shouldReauthenticateUser();
-          if (shouldUserReauthenticate) {
+          const shouldReauthenticateUser = shouldReauthenticateUser();
+          if (shouldReauthenticateUser) {
             executeSSOtransaction();
           }
         });
