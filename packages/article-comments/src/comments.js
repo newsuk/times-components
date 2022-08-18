@@ -150,9 +150,12 @@ class Comments extends Component {
         executeSSOtransaction(() => {});
       } else {
         document.addEventListener("spot-im-api-ready", () => {
-          if (shouldReauthenticateUser()) {
-            executeSSOtransaction();
+          if (isFeatureFlagEnabled) {
+            if (shouldReauthenticateUser()) {
+              executeSSOtransaction();
+            }
           }
+          executeSSOtransaction(() => {});
         });
       }
     }
