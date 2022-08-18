@@ -154,8 +154,9 @@ class Comments extends Component {
             if (shouldReauthenticateUser()) {
               executeSSOtransaction();
             }
+          } else {
+            executeSSOtransaction(() => {});
           }
-          executeSSOtransaction(() => {});
         });
       }
     }

@@ -28,10 +28,10 @@ const setNewUserToken = () => {
 const executeSSOtransaction = callback => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
     window.SPOTIM.startSSO(ssoCallback);
+    callback();
     if (isFeatureFlagEnabled) {
       setNewUserToken();
     }
-    callback();
   }
 };
 
