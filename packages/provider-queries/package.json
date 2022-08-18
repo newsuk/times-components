@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider-queries",
-  "version": "2.17.2",
+  "version": "2.18.0",
   "description": "GraphQL queries for sharing",
   "main": "dist/provider-queries",
   "dev": "src/provider-queries",
@@ -31,7 +31,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "7.18.10",
     "@times-components/eslint-config-thetimes": "0.8.18",
-    "@times-components/webpack-configurator": "2.0.30",
+    "@times-components/webpack-configurator": "2.1.0",
     "babel-plugin-import-graphql": "2.7.0",
     "eslint-plugin-graphql": "2.1.1",
     "prettier": "1.14.3",

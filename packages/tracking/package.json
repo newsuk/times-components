@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "2.11.1",
+  "version": "2.12.0",
   "main": "dist/tracking",
   "dev": "src/tracking",
   "scripts": {
@@ -31,11 +31,11 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@times-components/jest-configurator-web": "0.7.2",
     "@times-components/eslint-config-thetimes": "0.8.18",
-    "@times-components/jest-serializer": "3.3.1",
-    "@times-components/storybook": "4.4.1",
-    "@times-components/tealium-utils": "0.7.76",
+    "@times-components/jest-configurator-web": "0.8.0",
+    "@times-components/jest-serializer": "3.4.0",
+    "@times-components/storybook": "4.5.0",
+    "@times-components/tealium-utils": "0.8.0",
     "@times-components/utils": "6.14.4",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
@@ -48,7 +48,7 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/utils": "6.14.4",
+    "@times-components/utils": "6.15.0",
     "hoist-non-react-statics": "3.3.2",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2",

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/test-utils",
-  "version": "2.3.11",
+  "version": "2.4.0",
   "description": "Test helpers for Times Components",
   "main": "dist/index",
   "dev": "src/index",
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.18",
-    "@times-components/webpack-configurator": "2.0.30",
+    "@times-components/webpack-configurator": "2.1.0",
     "depcheck": "0.6.9",
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.12.1",
