@@ -32,9 +32,7 @@ export const shouldReauthenticateUser = () => {
   const isUsingRealNameCommenting = window.localStorage.getItem(
     "isUsingRealNameCommenting"
   );
-  if (isUsingRealNameCommenting) {
-    return false;
-  }
+  if (isUsingRealNameCommenting) return 
   window.localStorage.removeItem("SPOTIM_DEVICE_V2");
   window.localStorage.removeItem("SPOTIM_CURRENT_USER");
   window.localStorage.removeItem("SPOTIM_ACCESS_TOKEN");
