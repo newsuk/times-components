@@ -129,16 +129,6 @@ it("single comment", () => {
 
 it("Render comments label, when comments are loaded", () => {
   // eslint-disable-next-line no-undef
-  const mockLocalStorage = {
-    storage: {},
-    setItem: jest.fn((key, value) => {
-      mockLocalStorage.storage[key] = value;
-    })
-  };
-
-  Object.defineProperty(global.window, "localStorage", {
-    value: mockLocalStorage
-  });
   window.SPOTIM = {
     startSSO: () => {}
   };
