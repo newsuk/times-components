@@ -58,7 +58,8 @@ const renderData = (app, helmetContext = {}) =>
     );
 
     const responsiveStyles = serverStylesheet.getStyleTags();
-    const styles = {};
+    const newStylesheet = new ServerStyleSheet();
+    const styles = newStylesheet.getStyleTags();
 
     const { helmet } = helmetContext;
     const headMarkup = helmet
