@@ -21,10 +21,6 @@ const localStorageMock = {
 Object.defineProperty(window, "localStorage", { value: localStorageMock });
 
 describe("utils", () => {
-  beforeEach(() => {
-    localStorageMock.removeItem("isUsingRealNameCommenting");
-  });
-
   afterEach(() => {
     jest.clearAllMocks();
   });
@@ -85,6 +81,14 @@ describe("utils", () => {
   });
 
   describe("shouldReauthenticateUser()", () => {
+    beforeEach(() => {
+      localStorageMock.removeItem("isUsingRealNameCommenting");
+    });
+
+    afterEach(() => {
+      jest.clearAllMocks();
+    });
+
     it("should not reauthenticate if user has already signed into the new service", () => {
       localStorageMock.setItem("isUsingRealNameCommenting", true);
       shouldReauthenticateUser();
@@ -102,7 +106,6 @@ describe("utils", () => {
         "{UUID: abc123-def456}"
       );
       shouldReauthenticateUser();
-      localStorageMock.setItem("isUsingRealNameCommenting", true);
       expect(localStorageMock.removeItem).toHaveBeenCalledWith(
         "SPOTIM_DEVICE_V2"
       );
@@ -115,6 +118,9 @@ describe("utils", () => {
       expect(localStorageMock.removeItem).toHaveBeenCalledWith("SPOT_AB");
       expect(localStorageMock.removeItem).toHaveBeenCalledWith(
         "SPOTIM_DEVICE_UUID_V2"
+      );
+      expect(localStorageMock.getItem).toHaveBeenLastCalledWith(
+        "isUsingRealNameCommenting"
       );
     });
   });
