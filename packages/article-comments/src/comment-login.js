@@ -35,5 +35,5 @@ const executeSSOtransaction = callback => {
   }
 };
 
-export { ssoCallback, setNewUserToken };
+export { ssoCallback };
 export default executeSSOtransaction;
