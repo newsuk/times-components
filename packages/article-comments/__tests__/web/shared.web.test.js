@@ -65,6 +65,7 @@ describe("User States", () => {
       count: 123,
       enabled: true
     });
+
     expect(baseElement.getElementsByTagName("script")[0].src).toEqual(
       "https://launcher.spot.im/spot/CurrentSpotID"
     );

@@ -1,4 +1,5 @@
 /* global fetch window */
+
 const storeURL = {
   gb:
     "https://thetimes.co.uk/subscribe/digital?ILC=GB-TNL_The_Times-Conversion_Page-Homepage-2020",
