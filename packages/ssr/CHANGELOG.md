@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.36.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.36.0...@times-components/ssr@2.36.1) (2022-08-20)
+
+
+### Bug Fixes
+
+* **TDP-2385:** Fix object,Object error ([#3134](https://github.com/newsuk/times-components/issues/3134)) ([908e29c](https://github.com/newsuk/times-components/commit/908e29c2b672fc1af5ac5409146ac7abd9699f2d))
+
+
+
+
+
 # [2.36.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.35.38...@times-components/ssr@2.36.0) (2022-08-18)
 
 

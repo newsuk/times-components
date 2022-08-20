@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.12.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.12.0...@times-components/tracking@2.12.1) (2022-08-20)
+
+
+### Bug Fixes
+
+* **TDP-2385:** Fix object,Object error ([#3134](https://github.com/newsuk/times-components/issues/3134)) ([908e29c](https://github.com/newsuk/times-components/commit/908e29c2b672fc1af5ac5409146ac7abd9699f2d))
+
+
+
+
+
 # [2.12.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.11.1...@times-components/tracking@2.12.0) (2022-08-18)
 
 
