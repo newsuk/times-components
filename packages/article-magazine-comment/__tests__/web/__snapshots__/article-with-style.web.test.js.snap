@@ -203,6 +203,7 @@ exports[`full article with style 1`] = `
 
 .c21.hidden {
   visibility: hidden;
+  display: none;
 }
 
 .c22 {
@@ -1333,6 +1334,7 @@ exports[`full article with style in the culture magazine 1`] = `
 
 .c21.hidden {
   visibility: hidden;
+  display: none;
 }
 
 .c22 {
@@ -2464,6 +2466,7 @@ exports[`full article with style in the style magazine 1`] = `
 
 .c21.hidden {
   visibility: hidden;
+  display: none;
 }
 
 .c22 {
@@ -3596,6 +3599,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 
 .c21.hidden {
   visibility: hidden;
+  display: none;
 }
 
 .c22 {
