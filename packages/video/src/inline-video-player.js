@@ -32,6 +32,7 @@ const css = `
 
   .video-js .vjs-dock-text {
     visibility: hidden;
+    display:none;
   }
 
   .video-js .vjs-poster {

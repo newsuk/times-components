@@ -40,6 +40,7 @@ exports[`1. a primary image 1`] = `
 
 .c9.hidden {
   visibility: hidden;
+  display: none;
 }
 
 .c10 {
@@ -356,6 +357,7 @@ exports[`2. a fullwidth image 1`] = `
 
 .c9.hidden {
   visibility: hidden;
+  display: none;
 }
 
 .c10 {
@@ -668,6 +670,7 @@ exports[`3. a secondary image 1`] = `
 
 .c9.hidden {
   visibility: hidden;
+  display: none;
 }
 
 .c10 {
@@ -996,6 +999,7 @@ exports[`4. an inline image 1`] = `
 
 .c9.hidden {
   visibility: hidden;
+  display: none;
 }
 
 .c10 {

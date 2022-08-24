@@ -242,6 +242,7 @@ export const NativeAd = styled.div`
   }
   &.hidden {
     visibility: hidden;
+    display: none;
   }
 `;
 
