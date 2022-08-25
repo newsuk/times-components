@@ -1,3 +1,5 @@
+/* eslint-env browser */
+
 import React from "react";
 import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";

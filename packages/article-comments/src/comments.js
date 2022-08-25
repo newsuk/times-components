@@ -5,7 +5,11 @@ import PropTypes from "prop-types";
 import { CommentContainer } from "./styles/responsive";
 import executeSSOtransaction from "./comment-login";
 import withTrackEvents from "./tracking/with-track-events";
-import { userShouldUpdateName, getDisplayNameFromLocalStorage } from "./utils";
+import {
+  getDisplayNameFromLocalStorage,
+  shouldReauthenticateUser,
+  userShouldUpdateName
+} from "./utils";
 
 class Comments extends Component {
   constructor() {
@@ -147,6 +151,9 @@ class Comments extends Component {
         executeSSOtransaction(() => {});
       } else {
         document.addEventListener("spot-im-api-ready", () => {
+          if (isFeatureFlagEnabled) {
+            shouldReauthenticateUser();
+          }
           executeSSOtransaction(() => {});
         });
       }

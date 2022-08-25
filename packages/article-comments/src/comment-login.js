@@ -19,11 +19,23 @@ const ssoCallback = (codeA, completeSSOCallback) =>
     completeSSOCallback
   );
 
+const setNewUserToken = () => {
+  window.localStorage.setItem("isUsingRealNameCommenting", true);
+};
+
 const executeSSOtransaction = callback => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
     window.SPOTIM.startSSO(ssoCallback);
 
     callback();
+
+    const isFeatureFlagEnabled = window.location.search.includes(
+      "enableRealNameCommenting"
+    );
+
+    if (isFeatureFlagEnabled) {
+      setNewUserToken();
+    }
   }
 };
 

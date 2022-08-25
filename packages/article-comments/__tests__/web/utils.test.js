@@ -1,24 +1,22 @@
 /* global window */
 
 import {
-  userShouldUpdateName,
-  getDisplayNameFromLocalStorage
+  getDisplayNameFromLocalStorage,
+  shouldReauthenticateUser,
+  userShouldUpdateName
 } from "../../src/utils";
 
 const unmockedFetch = global.fetch;
 let mockFetchResponse = {};
 
-const localStorageMock = (function() {
-  const store = {};
-  return {
-    getItem(key) {
-      return store[key];
-    },
-    setItem(key, value) {
-      store[key] = value.toString();
-    }
-  };
-})();
+const localStorageMock = {
+  storage: {},
+  getItem: jest.fn(key => localStorageMock.storage[key]),
+  setItem: jest.fn((key, value) => {
+    localStorageMock.storage[key] = value;
+  }),
+  removeItem: jest.fn(key => delete localStorageMock.storage[key])
+};
 
 Object.defineProperty(window, "localStorage", { value: localStorageMock });
 
@@ -79,6 +77,51 @@ describe("utils", () => {
       const result = await userShouldUpdateName("MockBannedName");
 
       expect(result).toEqual(true);
+    });
+  });
+
+  describe("shouldReauthenticateUser()", () => {
+    beforeEach(() => {
+      localStorageMock.removeItem("isUsingRealNameCommenting");
+    });
+
+    afterEach(() => {
+      jest.clearAllMocks();
+    });
+
+    it("should not reauthenticate if user has already signed into the new service", () => {
+      localStorageMock.setItem("isUsingRealNameCommenting", true);
+      shouldReauthenticateUser();
+      expect(localStorageMock.getItem).toHaveBeenLastCalledWith(
+        "isUsingRealNameCommenting"
+      );
+    });
+    it("should reauthenticate if user is signed into the old system", () => {
+      localStorageMock.setItem("SPOTIM_DEVICE_V2", "a_BC123");
+      localStorageMock.setItem("SPOTIM_CURRENT_USER", "1: {short_name: 32})");
+      localStorageMock.setItem("SPOTIM_ACCESS_TOKEN", "abc123");
+      localStorageMock.setItem("SPOT_AB", "d_EF456");
+      localStorageMock.setItem(
+        "SPOTIM_DEVICE_UUID_V2",
+        "{UUID: abc123-def456}"
+      );
+      shouldReauthenticateUser();
+      expect(localStorageMock.removeItem).toHaveBeenCalledWith(
+        "SPOTIM_DEVICE_V2"
+      );
+      expect(localStorageMock.removeItem).toHaveBeenCalledWith(
+        "SPOTIM_CURRENT_USER"
+      );
+      expect(localStorageMock.removeItem).toHaveBeenCalledWith(
+        "SPOTIM_ACCESS_TOKEN"
+      );
+      expect(localStorageMock.removeItem).toHaveBeenCalledWith("SPOT_AB");
+      expect(localStorageMock.removeItem).toHaveBeenCalledWith(
+        "SPOTIM_DEVICE_UUID_V2"
+      );
+      expect(localStorageMock.getItem).toHaveBeenLastCalledWith(
+        "isUsingRealNameCommenting"
+      );
     });
   });
 });
