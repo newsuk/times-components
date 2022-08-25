@@ -18,9 +18,6 @@ const ssoCallback = (codeA, completeSSOCallback) =>
     `/api/comments/loginv2?codeA=${encodeURIComponent(codeA)}`,
     completeSSOCallback
   );
-const isFeatureFlagEnabled = window.location.search.includes(
-  "enableRealNameCommenting"
-);
 
 const setNewUserToken = () => {
   window.localStorage.setItem("isUsingRealNameCommenting", true);
@@ -31,6 +28,11 @@ const executeSSOtransaction = callback => {
     window.SPOTIM.startSSO(ssoCallback);
 
     callback();
+
+    const isFeatureFlagEnabled = window.location.search.includes(
+      "enableRealNameCommenting"
+    );
+
     if (isFeatureFlagEnabled) {
       setNewUserToken();
     }
