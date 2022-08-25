@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.30.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.29.1...@times-components/article-comments@0.30.0) (2022-08-25)
+
+
+### Features
+
+* **TDP-2203:** Reauthenticate users to real name commenting  ([2f0f215](https://github.com/newsuk/times-components/commit/2f0f21517edeef9f469eb3690b5c2b915966c29e))
+
+
+
+
+
 ## [0.29.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.29.0...@times-components/article-comments@0.29.1) (2022-08-20)
 
 **Note:** Version bump only for package @times-components/article-comments
