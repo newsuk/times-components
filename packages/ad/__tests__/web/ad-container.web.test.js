@@ -4,7 +4,6 @@ import {
   addSerializers,
   compose,
   minimaliseTransform,
-  minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
 import AdContainer from "../../src/ad-container";
@@ -14,8 +13,7 @@ describe("ad-container", () => {
     expect,
     compose(
       print,
-      minimaliseTransform((value, key) => key === "style"),
-      minimalNativeTransform
+      minimaliseTransform((value, key) => key === "style")
     )
   );
 

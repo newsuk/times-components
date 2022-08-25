@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-paragraph",
-  "version": "1.7.108",
+  "version": "1.8.1",
   "description": "Article Paragraph",
   "main": "dist/index",
   "dev": "src/index",
@@ -9,7 +9,7 @@
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:web": "jest --config='./__tests__/jest.config.js'",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
@@ -21,10 +21,7 @@
     "url": "git+https://github.com/newsuk/times-components.git"
   },
   "keywords": [
-    "react-native-web",
     "react",
-    "native",
-    "web",
     "article-paragraph",
     "component"
   ],
@@ -34,34 +31,31 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/article-skeleton": "1.85.42",
-    "@times-components/context": "1.9.4",
-    "@times-components/markup-forest": "1.8.2",
-    "@times-components/ts-styleguide": "1.36.9",
+    "@times-components/article-skeleton": "1.86.1",
+    "@times-components/context": "1.10.0",
+    "@times-components/markup-forest": "1.9.0",
+    "@times-components/ts-styleguide": "1.37.0",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
-    "@times-components/jest-configurator": "2.8.1",
-    "@times-components/jest-serializer": "3.3.1",
-    "@times-components/markup": "3.6.3",
-    "@times-components/storybook": "4.4.1",
-    "@times-components/test-utils": "2.3.11",
-    "@times-components/webpack-configurator": "2.0.30",
+    "@times-components/jest-configurator-web": "0.8.0",
+    "@times-components/jest-serializer": "3.4.0",
+    "@times-components/markup": "3.7.0",
+    "@times-components/storybook": "4.5.0",
+    "@times-components/test-utils": "2.4.0",
+    "@times-components/webpack-configurator": "2.1.0",
     "babel-jest": "24.8.0",
-    "babel-plugin-styled-components": "1.10.6",
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "jest-styled-components": "6.3.1",
     "prettier": "1.14.3",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "react-native": "0.61.5",
     "react-test-renderer": "16.9.0",
-    "webpack": "4.30.0",
-    "webpack-cli": "3.3.1"
+    "webpack": "4.30.0"
   },
   "resolutions": {
     "react": "16.9.0",
@@ -69,9 +63,7 @@
   },
   "peerDependencies": {
     "react": ">=16.9",
-    "react-dom": ">=16.9",
-    "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-dom": ">=16.9"
   },
   "publishConfig": {
     "access": "public"

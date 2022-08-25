@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "rootDir": "src",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "esModuleInterop": true
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/mock-tpa-server",
-  "version": "0.2.84",
+  "version": "0.3.0",
   "description": "utility for testing times component clients with mocked api",
   "main": "./dist/index",
   "scripts": {
@@ -17,7 +17,6 @@
   },
   "keywords": [
     "react",
-    "native",
     "web",
     "graphql",
     "provider",
@@ -31,10 +30,7 @@
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
-    "babel-jest": "24.8.0",
-    "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-2": "6.24.1",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "eslint-plugin-graphql": "2.1.1",
@@ -42,8 +38,8 @@
     "prettier": "1.14.3"
   },
   "dependencies": {
-    "@times-components/provider-test-tools": "1.26.8",
-    "@times-components/schema": "0.7.2",
+    "@times-components/provider-test-tools": "1.27.0",
+    "@times-components/schema": "0.7.3",
     "apollo-server": "2.4.8",
     "graphql": "14.2.1",
     "graphql-tools": "4.0.4"

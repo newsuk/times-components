@@ -1,13 +1,9 @@
 /* eslint-disable react/forbid-prop-types */
-import React, { useState } from "react";
+import React from "react";
 import { TcView, TcText, screenWidth } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { tabletWidth, styleguide } from "@times-components/ts-styleguide";
-import {
-  TextContainer,
-  LayoutManager,
-  BoxExclusion
-} from "@times-components/typeset";
+import { TextContainer, LayoutManager } from "@times-components/typeset";
 import ArticleParagraphWrapper from "@times-components/article-paragraph";
 
 const InlineParagraph = ({
@@ -23,7 +19,6 @@ const InlineParagraph = ({
   LinkComponent
 }) => {
   const { spacing } = styleguide({ scale });
-  const [inlineExclusion, setInlineExclusion] = useState(false);
 
   if (!str.length) {
     return null;
@@ -42,11 +37,9 @@ const InlineParagraph = ({
 
   const slice = str.charAt(1) === " " ? 2 : dropCap.length;
 
-  const manager = new LayoutManager(
-    dropCap ? str.slice(slice) : str,
-    [container],
-    inlineExclusion ? [inlineExclusion.exclusion] : []
-  );
+  const manager = new LayoutManager(dropCap ? str.slice(slice) : str, [
+    container
+  ]);
 
   const positioned = manager.layout();
 
@@ -61,20 +54,6 @@ const InlineParagraph = ({
           left: gutters,
           width: contentWidth * 0.35
         }}
-        onLayout={e => {
-          const { height } = e.nativeEvent.layout;
-          if (!inlineExclusion) {
-            setInlineExclusion({
-              exclusion: new BoxExclusion(
-                0,
-                0,
-                contentWidth * 0.35 + spacing(2),
-                height + spacing(2)
-              ),
-              height
-            });
-          }
-        }}
       >
         {inline}
       </TcView>
@@ -88,8 +67,7 @@ const InlineParagraph = ({
         !positioned.length
           ? 0
           : positioned[positioned.length - 1].position.y +
-            defaultFont.lineHeight,
-        inlineExclusion ? inlineExclusion.height : 0
+            defaultFont.lineHeight
       )}
     >
       {positioned.map((p, i) => {

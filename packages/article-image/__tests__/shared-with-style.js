@@ -3,7 +3,6 @@ import {
   compose,
   enzymeTreeSerializer,
   justChildren,
-  meltNative,
   minimaliseTransform,
   minimalWebTransform,
   print,
@@ -26,8 +25,7 @@ export default () => {
         InlineImage: justChildren,
         InsetCaptionWeb: justChildren,
         "responsive-styles__component": justChildren,
-        TimesImage: propsNoChildren,
-        ...meltNative
+        TimesImage: propsNoChildren
       }),
       minimalWebTransform,
       minimaliseTransform((value, key) => key === "style")

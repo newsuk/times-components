@@ -7,11 +7,7 @@ are primarily used for the layout of the individual article items themselves.
 
 ## Infinite Scrolling
 
-Whilst the web flavour of article list utilises the pagination package, the
-native version contains its own brand of pagination in the form of infinite
-scrolling. This utilises the react-native `FlatList` and the GraphQL `fetchMore`
-method to show more articles when a user has scrolled to the bottom of the
-article list.
+Article list utilises the pagination package for this.
 
 ## Error Handling
 
@@ -50,8 +46,7 @@ yarn lint
 
 ## Testing
 
-This package uses [yarn](https://yarnpkg.com) (latest) to run unit tests on each
-platform with [jest](https://facebook.github.io/jest/).
+This package uses [yarn](https://yarnpkg.com) (latest) to run unit tests with [jest](https://facebook.github.io/jest/).
 
 ```
 yarn test:web
@@ -60,13 +55,3 @@ yarn test:web
 Visit the official
 [storybook](http://components.thetimes.co.uk/?knob-Size%20of%20ad%20placeholder%3A=default&selectedKind=Composed%2FArticle%20List&selectedStory=Default%20with%20images&full=0&addons=1&stories=1&panelRight=0&addonPanel=storybooks%2Fstorybook-addon-knobs)
 to see our available article list templates.
-
-## Future
-
-Inifinite scroll pagination is baked into this package for the native
-experience. We are planning to fish this out into the pagination package in the
-future.
-
-A package like
-[`react-virtualized`](https://github.com/bvaughn/react-virtualized) could be
-utilised in the future for infinite scroll on mobweb.

@@ -5,7 +5,6 @@ import {
   flattenStyleTransform,
   hoistStyleTransform,
   justChildren,
-  meltNative,
   minimalWebTransform,
   propsNoChildren,
   replaceTransform,
@@ -23,8 +22,7 @@ export default () => {
         CardContent: justChildren,
         Gradient: propsNoChildren,
         Loading: justChildren,
-        TimesImage: propsNoChildren,
-        ...meltNative
+        TimesImage: propsNoChildren
       }),
       flattenStyleTransform,
       hoistStyleTransform,

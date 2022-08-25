@@ -14,13 +14,14 @@ jest.mock("../src/article-list-item", () => ({ article }) => {
 
   return "ArticleListItem";
 });
+let consoleSpy;
 
 beforeAll(() => {
-  this.spy = jest.spyOn(console, "error").mockImplementation();
+  consoleSpy = jest.spyOn(console, "error").mockImplementation();
 });
 
 afterAll(() => {
-  this.spy.mockRestore();
+  consoleSpy.mockRestore();
 });
 
 export default () => {
