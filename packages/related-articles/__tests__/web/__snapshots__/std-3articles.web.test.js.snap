@@ -27,7 +27,7 @@ exports[`1. three related articles 1`] = `
             >
               <div>
                 <Card
-                  highResSize={null}
+                  highResSize="663"
                   imageAccessibilityLabel="First Short Headline"
                   imageRatio={1.7777777777777777}
                   imageUri="https://crop1.io"
@@ -84,7 +84,7 @@ exports[`1. three related articles 1`] = `
             >
               <div>
                 <Card
-                  highResSize={null}
+                  highResSize="663"
                   imageAccessibilityLabel="Second Short Headline"
                   imageRatio={1.7777777777777777}
                   imageUri="https://crop2.io"
@@ -141,7 +141,7 @@ exports[`1. three related articles 1`] = `
             >
               <div>
                 <Card
-                  highResSize={null}
+                  highResSize="663"
                   imageAccessibilityLabel="Third Short Headline"
                   imageRatio={1.7777777777777777}
                   imageUri="https://crop3.io"
