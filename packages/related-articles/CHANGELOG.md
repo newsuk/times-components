@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.12.2](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.12.1...@times-components/related-articles@6.12.2) (2022-09-01)
+
+
+### Bug Fixes
+
+* **TDP-2399:** Added default value to hi-res images in Related Article ([#3136](https://github.com/newsuk/times-components/issues/3136)) ([305beb6](https://github.com/newsuk/times-components/commit/305beb670bbf5e19423bb20a93a60cd0415697cb))
+
+
+
+
+
 ## [6.12.1](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.12.0...@times-components/related-articles@6.12.1) (2022-08-20)
 
 **Note:** Version bump only for package @times-components/related-articles
