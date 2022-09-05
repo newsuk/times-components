@@ -34,7 +34,7 @@ class RelatedArticleItem extends Component {
     this.node = createRef();
 
     this.state = {
-      highResSize: "663"
+      highResSize: 663
     };
   }
 
@@ -47,9 +47,8 @@ class RelatedArticleItem extends Component {
 
   componentDidUpdate(prevProps) {
     const { imageConfig } = this.props;
-    if (
-      prevProps.imageConfig.showHiRes !== imageConfig.showHiRes &&
-      imageConfig.showHiRes
+    if (imageConfig.showHiRes && 
+      prevProps.imageConfig.showHiRes !== imageConfig.showHiRes     
     ) {
       this.setHighResSize();
     }
@@ -57,7 +56,7 @@ class RelatedArticleItem extends Component {
 
   setHighResSize() {
     this.setState({
-      highResSize: this.node.current.clientWidth
+      highResSize: 960
     });
   }
 
