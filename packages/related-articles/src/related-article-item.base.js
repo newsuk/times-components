@@ -57,7 +57,7 @@ class RelatedArticleItem extends Component {
 
   setHighResSize() {
     this.setState({
-      highResSize: this.node.current.clientWidth
+      highResSize: "960"
     });
   }
 
