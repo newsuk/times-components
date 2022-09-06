@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.13.2](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.1...@times-components/image@6.13.2) (2022-09-06)
+
+
+### Reverts
+
+* **TDP-000:** Image without resize attribute ([#3141](https://github.com/newsuk/times-components/issues/3141)) ([437d3c9](https://github.com/newsuk/times-components/commit/437d3c919a53a00fa8f2dd5f320b49dcbee7ea0f))
+
+
+
+
+
 ## [6.13.1](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.0...@times-components/image@6.13.1) (2022-09-06)
 
 
