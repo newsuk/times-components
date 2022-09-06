@@ -47,8 +47,9 @@ class RelatedArticleItem extends Component {
 
   componentDidUpdate(prevProps) {
     const { imageConfig } = this.props;
-    if (imageConfig.showHiRes && 
-      prevProps.imageConfig.showHiRes !== imageConfig.showHiRes     
+    if (
+      prevProps.imageConfig.showHiRes !== imageConfig.showHiRes &&
+      imageConfig.showHiRes
     ) {
       this.setHighResSize();
     }
@@ -56,7 +57,7 @@ class RelatedArticleItem extends Component {
 
   setHighResSize() {
     this.setState({
-      highResSize: 663
+      highResSize: this.node.current.clientWidth
     });
   }
 
@@ -95,7 +96,6 @@ class RelatedArticleItem extends Component {
       }
     } = this.props;
     const { article } = this.props;
-    const { highResSize } = this.state;
 
     const imageUri = getImageUri(leadAsset, leadAssetOverride, cropSize);
 
@@ -105,7 +105,7 @@ class RelatedArticleItem extends Component {
         <TcView ref={this.node}>
           <Card
             contentContainerClass={contentContainerClass}
-            highResSize={highResSize}
+            highResSize={663}
             imageContainerClass={imageContainerClass}
             imageAccessibilityLabel={shortHeadline}
             imageRatio={imageRatio}
