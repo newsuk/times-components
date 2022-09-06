@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.11.2](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.11.1...@times-components/article-list@9.11.2) (2022-09-06)
+
+
+### Bug Fixes
+
+* **TDP-000:** Image with resize attribute ([#3138](https://github.com/newsuk/times-components/issues/3138)) ([97137e7](https://github.com/newsuk/times-components/commit/97137e7eb0879b9ed12a8cafcc02e4f8639f0be4))
+
+
+
+
+
 ## [9.11.1](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.11.0...@times-components/article-list@9.11.1) (2022-08-20)
 
 **Note:** Version bump only for package @times-components/article-list
