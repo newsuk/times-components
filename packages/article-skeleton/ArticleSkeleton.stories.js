@@ -1,6 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { select, number, boolean } from "@storybook/addon-knobs";
+import { select, boolean } from "@storybook/addon-knobs";
 import { decorateAction } from "@storybook/addon-actions";
 import { sections } from "@times-components/storybook";
 import { HelmetProvider } from "react-helmet-async";
@@ -101,27 +101,6 @@ storiesOf("Composed/Article Skeleton", module)
     const article = select("Article", articleHeadlines, 0, "User State");
     const data = articles[article];
 
-    const afterParagraph = number(
-      "insert after paragraph",
-      7,
-      {
-        min: 0,
-        max: 15
-      },
-      "User State"
-    );
-
-    const paragraphPadding = number(
-      "paragraph padding",
-      2,
-      {
-        min: 0,
-        max: 3
-      },
-      "User State"
-    );
-    const inlineRelatedArticleOptions = { afterParagraph, paragraphPadding };
-
     return (
       <MockBookmarksProvider otherMocks={[]} delay={1000} articleId={data.id}>
         <ContextProviderWithDefaults
@@ -157,7 +136,6 @@ storiesOf("Composed/Article Skeleton", module)
             )}
             onViewableItemsChanged={() => null}
             olympicsKeys={endpoint}
-            inlineRelatedArticleOptions={inlineRelatedArticleOptions}
           />
         </ContextProviderWithDefaults>
       </MockBookmarksProvider>

@@ -312,45 +312,6 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
             headline="Some Headline"
             section="Some Section"
           />
-          <div>
-            <div>
-              <div>
-                Related Articles
-              </div>
-              <nav>
-                <div>
-                  <div>
-                    <a
-                      href="https://ra.io"
-                    >
-                      <div>
-                        <img
-                          src="https://racrop169.io"
-                        />
-                      </div>
-                    </a>
-                  </div>
-                  <section>
-                    <a
-                      href="https://ra.io"
-                    >
-                      <h3>
-                        Headline
-                      </h3>
-                    </a>
-                    <div />
-                    <div>
-                      <DatePublication
-                        date="2015-03-23T19:39:39.000Z"
-                        showDay={false}
-                      />
-                    </div>
-                    <div />
-                  </section>
-                </div>
-              </nav>
-            </div>
-          </div>
         </span>
         <div
           id="paywall-portal-article-footer"
@@ -726,45 +687,6 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
             headline="Some Headline"
             section="Some Section"
           />
-          <div>
-            <div>
-              <div>
-                Related Articles
-              </div>
-              <nav>
-                <div>
-                  <div>
-                    <a
-                      href="https://ra.io"
-                    >
-                      <div>
-                        <img
-                          src="https://racrop169.io"
-                        />
-                      </div>
-                    </a>
-                  </div>
-                  <section>
-                    <a
-                      href="https://ra.io"
-                    >
-                      <h3>
-                        Headline
-                      </h3>
-                    </a>
-                    <div />
-                    <div>
-                      <DatePublication
-                        date="2015-03-23T19:39:39.000Z"
-                        showDay={false}
-                      />
-                    </div>
-                    <div />
-                  </section>
-                </div>
-              </nav>
-            </div>
-          </div>
         </span>
         <div
           id="paywall-portal-article-footer"
