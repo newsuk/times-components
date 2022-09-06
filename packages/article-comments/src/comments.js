@@ -7,7 +7,7 @@ import executeSSOtransaction from "./comment-login";
 import withTrackEvents from "./tracking/with-track-events";
 import {
   getDisplayNameFromLocalStorage,
-  shouldReauthenticateUser,
+  hasRealNameCommentingToken,
   userShouldUpdateName
 } from "./utils";
 
@@ -146,9 +146,8 @@ class Comments extends Component {
       getShareEvent(event)
     );
     document.addEventListener("spot-im-user-auth-success", () => {
-      const realNameCommentingCheck = shouldReauthenticateUser();
       if (isFeatureFlagEnabled) {
-        if (realNameCommentingCheck) {
+        if (!hasRealNameCommentingToken()) {
           window.localStorage.removeItem("SPOTIM_DEVICE_V2");
           window.localStorage.removeItem("SPOTIM_CURRENT_USER");
           window.localStorage.removeItem("SPOTIM_ACCESS_TOKEN");

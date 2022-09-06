@@ -29,7 +29,7 @@ export const userShouldUpdateName = async username => {
   return isPseudonym;
 };
 
-export const shouldReauthenticateUser = () => {
+export const hasRealNameCommentingToken = () => {
   const isUsingRealNameCommenting = window.localStorage.getItem(
     "isUsingRealNameCommenting"
   );
