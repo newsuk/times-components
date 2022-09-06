@@ -7,6 +7,7 @@ import {
 import Placeholder from "./placeholder";
 import { defaultProps, propTypes } from "./image-prop-types";
 import StyledImage from "./styles/responsive";
+import image from "../dist/image";
 
 class TimesImage extends Component {
   constructor(props) {
@@ -63,6 +64,14 @@ class TimesImage extends Component {
     const { accessibilityLabel } = this.props;
 
     if (!lowResSize || highResSize) {
+      console.log("ImageRender", url, "highResImage", highResSize);
+      console.log(
+        "ImageRender",
+        url,
+        "highResImage",
+        appendToImageURL(url, "resize", highResSize)
+      );
+
       return (
         <StyledImage
           alt={accessibilityLabel}
