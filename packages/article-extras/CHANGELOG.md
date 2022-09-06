@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.16.5...@times-components/article-extras@0.17.0) (2022-09-06)
+
+
+### Features
+
+* **TDP-000:** Remove related slice ([#3142](https://github.com/newsuk/times-components/issues/3142)) ([23d8ed3](https://github.com/newsuk/times-components/commit/23d8ed3f0b8339b23eb3cf832979d16e4183e6b6))
+
+
+
+
+
 ## [0.16.5](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.16.4...@times-components/article-extras@0.16.5) (2022-09-06)
 
 **Note:** Version bump only for package @times-components/article-extras
