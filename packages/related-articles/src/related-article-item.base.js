@@ -32,33 +32,6 @@ class RelatedArticleItem extends Component {
     super(props);
 
     this.node = createRef();
-
-    this.state = {
-      highResSize: null
-    };
-  }
-
-  componentDidMount() {
-    const { imageConfig } = this.props;
-    if (imageConfig.showHiRes) {
-      this.setHighResSize();
-    }
-  }
-
-  componentDidUpdate(prevProps) {
-    const { imageConfig } = this.props;
-    if (
-      prevProps.imageConfig.showHiRes !== imageConfig.showHiRes &&
-      imageConfig.showHiRes
-    ) {
-      this.setHighResSize();
-    }
-  }
-
-  setHighResSize() {
-    this.setState({
-      highResSize: this.node.current.clientWidth
-    });
   }
 
   render() {
