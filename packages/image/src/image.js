@@ -7,7 +7,6 @@ import {
 import Placeholder from "./placeholder";
 import { defaultProps, propTypes } from "./image-prop-types";
 import StyledImage from "./styles/responsive";
-import image from "../dist/image";
 
 class TimesImage extends Component {
   constructor(props) {
