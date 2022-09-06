@@ -34,7 +34,7 @@ class RelatedArticleItem extends Component {
     this.node = createRef();
 
     this.state = {
-      highResSize: "663"
+      highResSize: null
     };
   }
 
