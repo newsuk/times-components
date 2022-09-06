@@ -16,9 +16,6 @@ Array [
     <RelatedArticles
       isVisible={true}
     />
-    <RelatedArticleSlice
-      heading="Related Articles"
-    />
     <div>
       RecommendedFetch
     </div>
@@ -73,9 +70,6 @@ Array [
     <RelatedArticles
       isVisible={true}
     />
-    <RelatedArticleSlice
-      heading="Related Articles"
-    />
     <div>
       RecommendedFetch
     </div>
@@ -119,9 +113,6 @@ Array [
   >
     <RelatedArticles
       isVisible={true}
-    />
-    <RelatedArticleSlice
-      heading="Related Articles"
     />
     <div>
       RecommendedFetch

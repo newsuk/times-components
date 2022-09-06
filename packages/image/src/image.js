@@ -62,17 +62,7 @@ class TimesImage extends Component {
     const { highResIsLoaded } = this.state;
     const { accessibilityLabel } = this.props;
 
-    console.log("ImageRender", url, "highResImage", !lowResSize || highResSize);
-
     if (!lowResSize || highResSize) {
-      console.log("ImageRender", url, "highResImage", highResSize);
-      console.log(
-        "ImageRender",
-        url,
-        "highResImage",
-        appendToImageURL(url, "resize", highResSize)
-      );
-
       return (
         <StyledImage
           alt={accessibilityLabel}
@@ -97,9 +87,6 @@ class TimesImage extends Component {
       if (lowResQuality) {
         imageSource = appendToImageURL(imageSource, "quality", lowResQuality);
       }
-
-      console.log("ImageRender", url, "lowResImage", lowResSize, lowResQuality);
-      console.log("ImageRender", url, "lowResImage", imageSource);
 
       return (
         <StyledImage
