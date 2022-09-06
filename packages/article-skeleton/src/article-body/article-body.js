@@ -34,8 +34,10 @@ import {
   OptaRugbyMatchStats,
   InfoCard,
   GalleryCarousel,
+  // InArticleRelatedArticles,
   InfoCardBulletPoints,
   BigNumbers,
+  // HiddenDiv,
   safeDecodeURIComponent,
   Timelines
 } from "@times-components/ts-components";
@@ -445,6 +447,21 @@ const renderers = ({
       />
     );
   },
+  // autoInlineRelatedArticles(key, { element }) {
+  //   return (
+  //     <Context.Consumer key={key}>
+  //       {({ theme }) => (
+  //         <HiddenDiv className="inlineRelatedArticles">
+  //           <InArticleRelatedArticles
+  //             heading="Related Articles"
+  //             relatedArticles={element.attributes.relatedArticles}
+  //             sectionColour={theme.sectionColour}
+  //           />
+  //         </HiddenDiv>
+  //       )}
+  //     </Context.Consumer>
+  //   );
+  // },
   keyFacts(key, attributes, renderedChildren, indx, node) {
     return (
       <KeyFacts
