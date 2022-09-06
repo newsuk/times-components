@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.56.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.55.7...@times-components/article-magazine-comment@3.56.0) (2022-09-06)
+
+
+### Features
+
+* **TDP-000:** Remove latest from section ([#3146](https://github.com/newsuk/times-components/issues/3146)) ([7ac0fc3](https://github.com/newsuk/times-components/commit/7ac0fc30b87ca98641997c0d7421c356e8b46917))
+
+
+
+
+
 ## [3.55.7](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.55.6...@times-components/article-magazine-comment@3.55.7) (2022-09-06)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
