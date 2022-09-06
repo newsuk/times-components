@@ -145,11 +145,18 @@ class Comments extends Component {
     document.addEventListener("spot-im-share-type", event =>
       getShareEvent(event)
     );
-    document.addEventListener("spot-im-user-auth-success", event => {
+    document.addEventListener("spot-im-user-auth-success", () => {
+      const realNameCommentingCheck = shouldReauthenticateUser();
       if (isFeatureFlagEnabled) {
-        shouldReauthenticateUser();
+        if (realNameCommentingCheck) {
+          window.localStorage.removeItem("SPOTIM_DEVICE_V2");
+          window.localStorage.removeItem("SPOTIM_CURRENT_USER");
+          window.localStorage.removeItem("SPOTIM_ACCESS_TOKEN");
+          window.localStorage.removeItem("SPOT_AB");
+          window.localStorage.removeItem("SPOTIM_DEVICE_UUID_V2");
+        }
+        executeSSOtransaction(() => {});
       }
-      executeSSOtransaction(() => {});
     });
 
     if (!isReadOnly) {
