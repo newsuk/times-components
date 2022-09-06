@@ -30,10 +30,10 @@ export const userShouldUpdateName = async username => {
 };
 
 export const hasRealNameCommentingToken = () => {
-  const isUsingRealNameCommenting = window.localStorage.getItem(
+  const getRealNameCommentingToken = window.localStorage.getItem(
     "isUsingRealNameCommenting"
   );
-  return isUsingRealNameCommenting;
+  return getRealNameCommentingToken;
 };
 
 export const getDisplayNameFromLocalStorage = () => {
