@@ -1,15 +1,11 @@
-import React, { useState, useMemo } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";
 import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import {
-  RecommendedFetch,
-  LatestFromSection,
-  useAlgoliaSearch
-} from "@times-components/ts-components";
+import { RecommendedFetch } from "@times-components/ts-components";
 
 import ArticleTopics from "./article-topics";
 import { ShareAndSaveContainer } from "./styles/responsive";
@@ -32,27 +28,8 @@ const ArticleExtras = ({
   relatedArticlesVisible,
   commentingConfig,
   topics,
-  additionalRelatedArticlesFlag,
-  latestFromSectionFlag,
-  latestFromSection,
   publishedTime
 }) => {
-  const [
-    algoliaRelatedArticleSlice,
-    setAlgoliaRelatedArticleSlice
-  ] = useState();
-
-  const { getRelatedArticles } = useAlgoliaSearch();
-
-  useMemo(
-    async () => {
-      if (additionalRelatedArticlesFlag) {
-        const data = await getRelatedArticles();
-        if (data) setAlgoliaRelatedArticleSlice(data);
-      }
-    },
-    [additionalRelatedArticlesFlag, getRelatedArticles]
-  );
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticles = (
     <div id="sponsored-article-container">
@@ -90,28 +67,11 @@ const ArticleExtras = ({
           isVisible={relatedArticlesVisible}
           slice={relatedArticleSlice}
         />
-        {latestFromSectionFlag &&
-          latestFromSection && (
-            <LatestFromSection
-              latestFromSection={latestFromSection}
-              analyticsStream={analyticsStream}
-            />
-          )}
         <RecommendedFetch
           articleId={articleId}
           articleHeadline={articleHeadline}
           articleSection={section}
         />
-        {additionalRelatedArticlesFlag &&
-          algoliaRelatedArticleSlice && (
-            <RelatedArticles
-              // heading="Additional Featured Articles"
-              heading={`AlgoliaSearch "${algoliaRelatedArticleSlice.query}"`}
-              analyticsStream={analyticsStream}
-              isVisible={relatedArticlesVisible}
-              slice={algoliaRelatedArticleSlice}
-            />
-          )}
       </div>
       {sponsoredArticles}
       <UserState
@@ -151,8 +111,6 @@ ArticleExtras.propTypes = {
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
-  additionalRelatedArticlesFlag: PropTypes.bool.isRequired,
-  latestFromSectionFlag: PropTypes.bool.isRequired,
   latestFromSection: PropTypes.shape({})
 };
 
