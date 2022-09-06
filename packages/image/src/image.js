@@ -64,13 +64,6 @@ class TimesImage extends Component {
     const { accessibilityLabel } = this.props;
 
     if (!lowResSize || highResSize) {
-      console.log("ImageRender", url, "highResImage", highResSize);
-      console.log(
-        "ImageRender",
-        url,
-        "highResImage",
-        appendToImageURL(url, "resize", highResSize)
-      );
 
       return (
         <StyledImage
