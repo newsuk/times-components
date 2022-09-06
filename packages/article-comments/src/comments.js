@@ -145,15 +145,18 @@ class Comments extends Component {
     document.addEventListener("spot-im-share-type", event =>
       getShareEvent(event)
     );
+    document.addEventListener("spot-im-user-auth-success", event => {
+      if (isFeatureFlagEnabled) {
+        shouldReauthenticateUser();
+      }
+      executeSSOtransaction(() => {});
+    });
 
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
         executeSSOtransaction(() => {});
       } else {
         document.addEventListener("spot-im-api-ready", () => {
-          if (isFeatureFlagEnabled) {
-            shouldReauthenticateUser();
-          }
           executeSSOtransaction(() => {});
         });
       }
