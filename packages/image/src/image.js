@@ -63,7 +63,6 @@ class TimesImage extends Component {
     const { accessibilityLabel } = this.props;
 
     if (!lowResSize || highResSize) {
-
       return (
         <StyledImage
           alt={accessibilityLabel}
