@@ -96,6 +96,7 @@ class RelatedArticleItem extends Component {
       }
     } = this.props;
     const { article } = this.props;
+    const { highResSize } = this.state;
 
     const imageUri = getImageUri(leadAsset, leadAssetOverride, cropSize);
 
@@ -105,7 +106,7 @@ class RelatedArticleItem extends Component {
         <TcView ref={this.node}>
           <Card
             contentContainerClass={contentContainerClass}
-            highResSize={663}
+            highResSize={highResSize}
             imageContainerClass={imageContainerClass}
             imageAccessibilityLabel={shortHeadline}
             imageRatio={imageRatio}
