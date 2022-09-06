@@ -224,6 +224,7 @@ const renderArticle = ({
   template,
   isTeaser,
   isMeteredExpired,
+  additionalRelatedArticlesFlag,
   algoliaSearchKeys
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
