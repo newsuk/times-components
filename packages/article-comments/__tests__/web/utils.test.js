@@ -2,7 +2,7 @@
 
 import {
   getDisplayNameFromLocalStorage,
-  shouldReauthenticateUser,
+  hasRealNameCommentingToken,
   userShouldUpdateName
 } from "../../src/utils";
 
@@ -80,7 +80,7 @@ describe("utils", () => {
     });
   });
 
-  describe("shouldReauthenticateUser()", () => {
+  describe("hasRealNameCommentingToken()", () => {
     beforeEach(() => {
       localStorageMock.removeItem("isUsingRealNameCommenting");
     });
@@ -91,7 +91,7 @@ describe("utils", () => {
 
     it("should not reauthenticate if user has already signed into the new service", () => {
       localStorageMock.setItem("isUsingRealNameCommenting", true);
-      shouldReauthenticateUser();
+      hasRealNameCommentingToken();
       expect(localStorageMock.getItem).toHaveBeenLastCalledWith(
         "isUsingRealNameCommenting"
       );
@@ -105,7 +105,7 @@ describe("utils", () => {
         "SPOTIM_DEVICE_UUID_V2",
         "{UUID: abc123-def456}"
       );
-      shouldReauthenticateUser();
+      hasRealNameCommentingToken();
       expect(localStorageMock.removeItem).toHaveBeenCalledWith(
         "SPOTIM_DEVICE_V2"
       );

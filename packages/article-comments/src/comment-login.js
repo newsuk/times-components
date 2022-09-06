@@ -29,11 +29,11 @@ const executeSSOtransaction = callback => {
 
     callback();
 
-    const isFeatureFlagEnabled = window.location.search.includes(
-      "enableRealNameCommenting"
+    const isReauthenticationEnabled = window.location.search.includes(
+      "enableReauthentication"
     );
 
-    if (isFeatureFlagEnabled) {
+    if (isReauthenticationEnabled) {
       setNewUserToken();
     }
   }

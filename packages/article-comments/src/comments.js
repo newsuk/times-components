@@ -89,8 +89,12 @@ class Comments extends Component {
       }
     }
 
-    const isFeatureFlagEnabled = window.location.search.includes(
+    const isRealNameCommentingEnabled = window.location.search.includes(
       "enableRealNameCommenting"
+    );
+
+    const isReauthenticationEnabled = window.location.search.includes(
+      "enableReauthentication"
     );
 
     document.addEventListener(
@@ -98,7 +102,7 @@ class Comments extends Component {
       async event => {
         onCommentStart(event);
 
-        if (isFeatureFlagEnabled) {
+        if (isRealNameCommentingEnabled) {
           const displayName = getDisplayNameFromLocalStorage();
 
           if (!displayName) return;
@@ -146,7 +150,7 @@ class Comments extends Component {
       getShareEvent(event)
     );
     document.addEventListener("spot-im-user-auth-success", () => {
-      if (isFeatureFlagEnabled) {
+      if (isReauthenticationEnabled) {
         if (!hasRealNameCommentingToken()) {
           window.localStorage.removeItem("SPOTIM_DEVICE_V2");
           window.localStorage.removeItem("SPOTIM_CURRENT_USER");
