@@ -7,7 +7,6 @@ import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 import {
   RecommendedFetch,
-  LatestFromSection,
   useAlgoliaSearch
 } from "@times-components/ts-components";
 
@@ -33,8 +32,6 @@ const ArticleExtras = ({
   commentingConfig,
   topics,
   additionalRelatedArticlesFlag,
-  latestFromSectionFlag,
-  latestFromSection,
   publishedTime
 }) => {
   const [
@@ -90,13 +87,6 @@ const ArticleExtras = ({
           isVisible={relatedArticlesVisible}
           slice={relatedArticleSlice}
         />
-        {latestFromSectionFlag &&
-          latestFromSection && (
-            <LatestFromSection
-              latestFromSection={latestFromSection}
-              analyticsStream={analyticsStream}
-            />
-          )}
         <RecommendedFetch
           articleId={articleId}
           articleHeadline={articleHeadline}
@@ -151,16 +141,13 @@ ArticleExtras.propTypes = {
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
-  additionalRelatedArticlesFlag: PropTypes.bool.isRequired,
-  latestFromSectionFlag: PropTypes.bool.isRequired,
-  latestFromSection: PropTypes.shape({})
+  additionalRelatedArticlesFlag: PropTypes.bool.isRequired
 };
 
 ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
   commentingConfig: null,
-  topics: null,
-  latestFromSection: null
+  topics: null
 };
 
 export default ArticleExtras;
