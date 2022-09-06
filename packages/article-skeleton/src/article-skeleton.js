@@ -54,8 +54,6 @@ const ArticleSkeleton = ({
   swgProductId,
   additionalRelatedArticlesFlag,
   algoliaSearchKeys,
-  latestFromSectionFlag,
-  latestFromSection,
   olympicsKeys,
   getFallbackThumbnailUrl169
 }) => {
@@ -229,8 +227,6 @@ const ArticleSkeleton = ({
                         additionalRelatedArticlesFlag={
                           additionalRelatedArticlesFlag
                         }
-                        latestFromSectionFlag={latestFromSectionFlag}
-                        latestFromSection={latestFromSection}
                       />
                     )}
                   </LazyLoad>

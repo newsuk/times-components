@@ -5,11 +5,7 @@ import styled from "styled-components";
 import { AlgoliaSearchProvider } from "@times-components/ts-components";
 
 import ArticleExtras from "./src/article-extras";
-import {
-  relatedArticleSlice,
-  topics,
-  latestFromSection
-} from "./fixtures/article-extras";
+import { relatedArticleSlice, topics } from "./fixtures/article-extras";
 
 const algoliaSearchKeys = {
   applicationId: process.env.STORYBOOK_ALGOLIA_ID || "",
@@ -68,13 +64,7 @@ export default {
                   false,
                   "User State"
                 )}
-                latestFromSectionFlag={boolean(
-                  "Latest from Section",
-                  false,
-                  "User State"
-                )}
                 section="Comment"
-                latestFromSection={latestFromSection}
               />
             </AlgoliaSearchProvider>
           </Container>
