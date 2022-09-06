@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.87.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.86.6...@times-components/article-skeleton@1.87.0) (2022-09-06)
+
+
+### Features
+
+* **TDP-000:** Remove inline related articles ([#3145](https://github.com/newsuk/times-components/issues/3145)) ([2569d4c](https://github.com/newsuk/times-components/commit/2569d4cbc648d3a32b7472701d71784819f5d134))
+
+
+
+
+
 ## [1.86.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.86.5...@times-components/article-skeleton@1.86.6) (2022-09-06)
 
 **Note:** Version bump only for package @times-components/article-skeleton
