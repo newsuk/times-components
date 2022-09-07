@@ -29,11 +29,11 @@ const executeSSOtransaction = callback => {
 
     callback();
 
-    const isReauthenticationEnabled = window.location.search.includes(
-      "enableReauthentication"
+    const isRealNameReauthenticationEnabled = window.location.search.includes(
+      "enableRealNameReauthentication"
     );
 
-    if (isReauthenticationEnabled) {
+    if (isRealNameReauthenticationEnabled) {
       setNewUserToken();
     }
   }

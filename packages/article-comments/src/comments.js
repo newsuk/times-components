@@ -93,8 +93,8 @@ class Comments extends Component {
       "enableRealNameCommenting"
     );
 
-    const isReauthenticationEnabled = window.location.search.includes(
-      "enableReauthentication"
+    const isRealNameReauthenticationEnabled = window.location.search.includes(
+      "enableRealNameReauthentication"
     );
 
     document.addEventListener(
@@ -150,7 +150,7 @@ class Comments extends Component {
       getShareEvent(event)
     );
     document.addEventListener("spot-im-user-auth-success", () => {
-      if (isReauthenticationEnabled) {
+      if (isRealNameReauthenticationEnabled) {
         if (!hasRealNameCommentingToken()) {
           window.localStorage.removeItem("SPOTIM_DEVICE_V2");
           window.localStorage.removeItem("SPOTIM_CURRENT_USER");
