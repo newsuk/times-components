@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.57.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.56.0...@times-components/article-magazine-comment@3.57.0) (2022-09-07)
+
+
+### Features
+
+* **TDP-000:** Remove algolia related articles and various TS imports ([#3147](https://github.com/newsuk/times-components/issues/3147)) ([c5601b4](https://github.com/newsuk/times-components/commit/c5601b41933f35a7a545a6f1c5b9297d76677305))
+
+
+
+
+
 # [3.56.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.55.7...@times-components/article-magazine-comment@3.56.0) (2022-09-06)
 
 
