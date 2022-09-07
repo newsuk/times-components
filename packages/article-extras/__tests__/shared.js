@@ -8,17 +8,10 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import { AlgoliaSearchProvider } from "@times-components/ts-components";
 
 import { UserState } from "./mocks";
 import ArticleExtras from "../src/article-extras";
 import { relatedArticleSlice, topics } from "../fixtures/article-extras";
-
-const algoliaSearchKeys = {
-  applicationId: "",
-  apiKey: "",
-  indexName: ""
-};
 
 const commentingConfig = {
   account: {
@@ -51,23 +44,17 @@ export default () => {
       test: () => {
         UserState.mockStates = [UserState.fullArticle, UserState.loggedIn];
         const testInstance = TestRenderer.create(
-          <AlgoliaSearchProvider
-            article={{ id: "dummy-article-id" }}
-            algoliaSearchKeys={algoliaSearchKeys}
-            analyticsStream={jest.fn()}
-          >
-            <ArticleExtras
-              analyticsStream={() => {}}
-              articleId="dummy-article-id"
-              commentsEnabled
-              registerNode={() => {}}
-              relatedArticleSlice={relatedArticleSlice}
-              relatedArticlesVisible
-              commentingConfig={commentingConfig}
-              topics={topics}
-              publishedTime="2020-07-10T16:00:00.000Z"
-            />
-          </AlgoliaSearchProvider>
+          <ArticleExtras
+            analyticsStream={() => {}}
+            articleId="dummy-article-id"
+            commentsEnabled
+            registerNode={() => {}}
+            relatedArticleSlice={relatedArticleSlice}
+            relatedArticlesVisible
+            commentingConfig={commentingConfig}
+            topics={topics}
+            publishedTime="2020-07-10T16:00:00.000Z"
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
@@ -79,23 +66,17 @@ export default () => {
       test: () => {
         UserState.mockStates = [];
         const testInstance = TestRenderer.create(
-          <AlgoliaSearchProvider
-            article={{ id: "dummy-article-id" }}
-            algoliaSearchKeys={algoliaSearchKeys}
-            analyticsStream={jest.fn()}
-          >
-            <ArticleExtras
-              analyticsStream={() => {}}
-              articleId="dummy-article-id"
-              commentsEnabled
-              registerNode={() => {}}
-              relatedArticleSlice={relatedArticleSlice}
-              relatedArticlesVisible
-              commentingConfig={commentingConfig}
-              topics={topics}
-              publishedTime="2020-07-10T16:00:00.000Z"
-            />
-          </AlgoliaSearchProvider>
+          <ArticleExtras
+            analyticsStream={() => {}}
+            articleId="dummy-article-id"
+            commentsEnabled
+            registerNode={() => {}}
+            relatedArticleSlice={relatedArticleSlice}
+            relatedArticlesVisible
+            commentingConfig={commentingConfig}
+            topics={topics}
+            publishedTime="2020-07-10T16:00:00.000Z"
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
@@ -106,23 +87,17 @@ export default () => {
       test: () => {
         UserState.mockStates = [UserState.fullArticle, UserState.shared];
         const testInstance = TestRenderer.create(
-          <AlgoliaSearchProvider
-            article={{ id: "dummy-article-id" }}
-            algoliaSearchKeys={algoliaSearchKeys}
-            analyticsStream={jest.fn()}
-          >
-            <ArticleExtras
-              analyticsStream={() => {}}
-              articleId="dummy-article-id"
-              commentsEnabled
-              registerNode={() => {}}
-              relatedArticleSlice={relatedArticleSlice}
-              relatedArticlesVisible
-              commentingConfig={commentingConfig}
-              topics={topics}
-              publishedTime="2020-07-10T16:00:00.000Z"
-            />
-          </AlgoliaSearchProvider>
+          <ArticleExtras
+            analyticsStream={() => {}}
+            articleId="dummy-article-id"
+            commentsEnabled
+            registerNode={() => {}}
+            relatedArticleSlice={relatedArticleSlice}
+            relatedArticlesVisible
+            commentingConfig={commentingConfig}
+            topics={topics}
+            publishedTime="2020-07-10T16:00:00.000Z"
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
@@ -133,24 +108,17 @@ export default () => {
       test: () => {
         UserState.mockStates = [UserState.fullArticle, UserState.loggedIn];
         const testInstance = TestRenderer.create(
-          <AlgoliaSearchProvider
-            article={{ id: "dummy-article-id" }}
-            algoliaSearchKeys={algoliaSearchKeys}
-            analyticsStream={jest.fn()}
-          >
-            <ArticleExtras
-              analyticsStream={() => {}}
-              articleId="dummy-article-id"
-              commentsEnabled
-              registerNode={() => {}}
-              relatedArticleSlice={relatedArticleSlice}
-              relatedArticlesVisible
-              commentingConfig={commentingConfig}
-              topics={topics}
-              additionalRelatedArticlesFlag
-              publishedTime="2020-07-10T16:00:00.000Z"
-            />
-          </AlgoliaSearchProvider>
+          <ArticleExtras
+            analyticsStream={() => {}}
+            articleId="dummy-article-id"
+            commentsEnabled
+            registerNode={() => {}}
+            relatedArticleSlice={relatedArticleSlice}
+            relatedArticlesVisible
+            commentingConfig={commentingConfig}
+            topics={topics}
+            publishedTime="2020-07-10T16:00:00.000Z"
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();

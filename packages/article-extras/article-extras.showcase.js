@@ -2,16 +2,9 @@
 
 import React from "react";
 import styled from "styled-components";
-import { AlgoliaSearchProvider } from "@times-components/ts-components";
 
 import ArticleExtras from "./src/article-extras";
 import { relatedArticleSlice, topics } from "./fixtures/article-extras";
-
-const algoliaSearchKeys = {
-  applicationId: process.env.STORYBOOK_ALGOLIA_ID || "",
-  apiKey: process.env.STORYBOOK_ALGOLIA_KEY || "",
-  indexName: process.env.STORYBOOK_ALGOLIA_INDEX || ""
-};
 
 const commentingConfig = {
   account: {
@@ -38,6 +31,7 @@ const getAnalyticsStream = action => event => {
   console.log("analytics-action", event);
   action("analytics-action")(event);
 };
+
 export default {
   children: [
     {
@@ -45,28 +39,17 @@ export default {
         const slice = boolean("Related Article Slice", false, "User State");
         return (
           <Container className={slice ? "slice" : undefined}>
-            <AlgoliaSearchProvider
-              algoliaSearchKeys={algoliaSearchKeys}
-              article={{ id: "dummy-article-id" }}
+            <ArticleExtras
               analyticsStream={getAnalyticsStream(action)}
-            >
-              <ArticleExtras
-                analyticsStream={() => {}}
-                articleId="dummy-article-id"
-                commentsEnabled
-                registerNode={() => {}}
-                relatedArticleSlice={relatedArticleSlice}
-                relatedArticlesVisible
-                commentingConfig={commentingConfig}
-                topics={topics}
-                additionalRelatedArticlesFlag={boolean(
-                  "Additional Featured Articles",
-                  false,
-                  "User State"
-                )}
-                section="Comment"
-              />
-            </AlgoliaSearchProvider>
+              articleId="dummy-article-id"
+              commentsEnabled
+              registerNode={() => {}}
+              relatedArticleSlice={relatedArticleSlice}
+              relatedArticlesVisible
+              commentingConfig={commentingConfig}
+              topics={topics}
+              section="Comment"
+            />
           </Container>
         );
       },
@@ -108,23 +91,16 @@ export default {
         };
         return (
           <>
-            <AlgoliaSearchProvider
-              algoliaSearchKeys={algoliaSearchKeys}
-              article={article}
+            <ArticleExtras
               analyticsStream={getAnalyticsStream(action)}
-            >
-              <ArticleExtras
-                analyticsStream={getAnalyticsStream(action)}
-                articleId={article.id}
-                commentsEnabled
-                registerNode={() => {}}
-                relatedArticleSlice={relatedArticleSlice}
-                relatedArticlesVisible={false}
-                commentingConfig={commentingConfig}
-                topics={topics}
-                additionalRelatedArticlesFlag
-              />
-            </AlgoliaSearchProvider>
+              articleId={article.id}
+              commentsEnabled
+              registerNode={() => {}}
+              relatedArticleSlice={relatedArticleSlice}
+              relatedArticlesVisible={false}
+              commentingConfig={commentingConfig}
+              topics={topics}
+            />
           </>
         );
       },

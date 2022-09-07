@@ -86,9 +86,6 @@ class ArticlePage extends Component {
       paidContentClassName,
       isPreview,
       swgProductId,
-      additionalRelatedArticlesFlag,
-      algoliaSearchKeys,
-      olympicsKeys,
       getFallbackThumbnailUrl169
     } = this.props;
 
@@ -109,9 +106,6 @@ class ArticlePage extends Component {
           paidContentClassName={paidContentClassName}
           isPreview={isPreview}
           swgProductId={swgProductId}
-          additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
-          algoliaSearchKeys={algoliaSearchKeys}
-          olympicsKeys={olympicsKeys}
         />
       </ArticleMainStandardContainer>
     );

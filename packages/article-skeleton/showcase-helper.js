@@ -114,20 +114,6 @@ const renderArticleSkeleton = ({
   const data = fullArticleFixture(config);
   const showHeader = header ? () => <TestHeader /> : () => null;
 
-  const olympicsKeys = {
-    staging: {
-      endpoint: "https://olympics-embed-staging.pamedia.io",
-      authToken: "6i3DuEwbVhr2Fht6",
-      gamesCode: "OG2020-TR2"
-    },
-    prod: {
-      endpoint: "https://olympics-embed.pamedia.io",
-      authToken: "6i3DuEwbVhr2Fht6",
-      gamesCode: "OG2020-TR2"
-    }
-  };
-  const endpoint = select("OlympicsKeys", olympicsKeys, olympicsKeys.staging);
-
   return (
     <MockBookmarksProvider otherMocks={mocks} delay={1000} articleId={data.id}>
       <ContextProviderWithDefaults value={{ theme: { scale, sectionColour } }}>
@@ -137,7 +123,6 @@ const renderArticleSkeleton = ({
           data={data}
           Header={showHeader}
           isPreview={isPreview}
-          olympicsKeys={endpoint}
           onAuthorPress={preventDefaultedAction(decorateAction)(
             "onAuthorPress"
           )}
