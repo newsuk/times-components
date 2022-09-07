@@ -7,7 +7,7 @@ import executeSSOtransaction from "./comment-login";
 import withTrackEvents from "./tracking/with-track-events";
 import {
   getDisplayNameFromLocalStorage,
-  shouldReauthenticateUser,
+  hasRealNameCommentingToken,
   userShouldUpdateName
 } from "./utils";
 
@@ -89,8 +89,12 @@ class Comments extends Component {
       }
     }
 
-    const isFeatureFlagEnabled = window.location.search.includes(
+    const isRealNameCommentingEnabled = window.location.search.includes(
       "enableRealNameCommenting"
+    );
+
+    const isRealNameReauthenticationEnabled = window.location.search.includes(
+      "enableRealNameReauthentication"
     );
 
     document.addEventListener(
@@ -98,7 +102,7 @@ class Comments extends Component {
       async event => {
         onCommentStart(event);
 
-        if (isFeatureFlagEnabled) {
+        if (isRealNameCommentingEnabled) {
           const displayName = getDisplayNameFromLocalStorage();
 
           if (!displayName) return;
@@ -145,15 +149,24 @@ class Comments extends Component {
     document.addEventListener("spot-im-share-type", event =>
       getShareEvent(event)
     );
+    document.addEventListener("spot-im-user-auth-success", () => {
+      if (isRealNameReauthenticationEnabled) {
+        if (!hasRealNameCommentingToken()) {
+          window.localStorage.removeItem("SPOTIM_DEVICE_V2");
+          window.localStorage.removeItem("SPOTIM_CURRENT_USER");
+          window.localStorage.removeItem("SPOTIM_ACCESS_TOKEN");
+          window.localStorage.removeItem("SPOT_AB");
+          window.localStorage.removeItem("SPOTIM_DEVICE_UUID_V2");
+          executeSSOtransaction(() => {});
+        }
+      }
+    });
 
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
         executeSSOtransaction(() => {});
       } else {
         document.addEventListener("spot-im-api-ready", () => {
-          if (isFeatureFlagEnabled) {
-            shouldReauthenticateUser();
-          }
           executeSSOtransaction(() => {});
         });
       }
