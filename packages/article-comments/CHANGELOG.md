@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.30.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.30.4...@times-components/article-comments@0.30.5) (2022-09-07)
+
+
+### Bug Fixes
+
+* **TDP-2475:** Add event listener to real name commenting reauthentication ([#3140](https://github.com/newsuk/times-components/issues/3140)) ([655b90d](https://github.com/newsuk/times-components/commit/655b90da4eff2afe0f4526b9ec26ce43fb92b747))
+
+
+
+
+
 ## [0.30.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.30.3...@times-components/article-comments@0.30.4) (2022-09-07)
 
 **Note:** Version bump only for package @times-components/article-comments
