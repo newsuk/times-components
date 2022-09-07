@@ -32,8 +32,6 @@ import {
   OptaRugbyStandings,
   OptaRugbySummary,
   OptaRugbyMatchStats,
-  OlympicsMedalTable,
-  OlympicsSchedule,
   InfoCard,
   GalleryCarousel,
   InfoCardBulletPoints,
@@ -100,7 +98,6 @@ const renderers = ({
   template,
   analyticsStream,
   isPreview,
-  olympicsKeys,
   isLiveOrBreaking,
   section,
   articleHeadline
@@ -416,34 +413,6 @@ const renderers = ({
           </div>
         );
 
-      case "olympics-medal-table":
-        return (
-          <Context.Consumer key={key}>
-            {({ theme }) => (
-              <div id={id}>
-                <OlympicsMedalTable
-                  keys={olympicsKeys}
-                  sectionColor={theme.sectionColour}
-                />
-              </div>
-            )}
-          </Context.Consumer>
-        );
-
-      case "olympics-schedule":
-        return (
-          <Context.Consumer key={key}>
-            {({ theme }) => (
-              <div id={id}>
-                <OlympicsSchedule
-                  keys={olympicsKeys}
-                  sectionColor={theme.sectionColour}
-                />
-              </div>
-            )}
-          </Context.Consumer>
-        );
-
       default:
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
@@ -608,7 +577,6 @@ const ArticleBody = ({
   isPreview,
   swgProductId,
   inArticlePuffFlag,
-  olympicsKeys,
   isLiveOrBreaking,
   articleHeadline
 }) =>
@@ -620,7 +588,6 @@ const ArticleBody = ({
       isPreview,
       swgProductId,
       inArticlePuffFlag,
-      olympicsKeys,
       isLiveOrBreaking,
       section,
       articleHeadline

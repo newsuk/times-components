@@ -59,30 +59,10 @@ export {
   OptaRugbyMatchStats
 } from './components/opta/rugby/match-stats/OptaRugbyMatchStats';
 
-export {
-  OlympicsMedalTable
-} from './components/olympics/medal-table/OlympicsMedalTable';
-export {
-  OlympicsSchedule
-} from './components/olympics/schedule/OlympicsSchedule';
-
 // Related Article Components
-export {
-  RelatedArticleSlice
-} from './components/related-article-slice/RelatedArticleSlice';
 export {
   RecommendedFetch
 } from './components/recommended-articles/RecommendedFetch';
-export {
-  LatestFromSection
-} from './components/latest-from-section/LatestFromSection';
-export {
-  InArticleRelatedArticles
-} from './components/in-article-related-articles/InArticleRelatedArticles';
-// Related Article helper
-export {
-  formatRelatedArticles
-} from './components/in-article-related-articles/formatters';
 
 // Helpers
 export { FetchProvider } from './helpers/fetch/FetchProvider';
@@ -92,14 +72,9 @@ export {
 export {
   TrackingContextProvider
 } from './helpers/tracking/TrackingContextProvider';
-export {
-  AlgoliaSearchProvider,
-  useAlgoliaSearch
-} from './helpers/algolia/AlgoliaSearchProvider';
+
 export { HiddenDiv } from './components/common-styles';
-
 export { InlineMessage } from './components/inline-message/InlineMessage';
-
 export { InlineDialog } from './components/inline-dialog/InlineDialog';
 
 export {

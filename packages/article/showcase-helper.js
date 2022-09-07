@@ -223,9 +223,7 @@ const renderArticle = ({
   section,
   template,
   isTeaser,
-  isMeteredExpired,
-  additionalRelatedArticlesFlag,
-  algoliaSearchKeys
+  isMeteredExpired
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, error, refetch }) => {
@@ -284,8 +282,6 @@ const renderArticle = ({
               "onVideoPress"
             )}
             refetch={refetch}
-            additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
-            algoliaSearchKeys={algoliaSearchKeys}
             commentingConfig={commentingConfig}
           />
         </ContextProviderWithDefaults>
@@ -338,18 +334,6 @@ const renderArticleConfig = ({
   const { isLoggedIn, isMeteredExpired, isShared } = user;
   const isTeaser = !isShared && (isMeteredExpired || !isLoggedIn);
 
-  const algoliaSearchKeys = {
-    applicationId: "",
-    apiKey: "",
-    indexName: ""
-  };
-
-  const additionalRelatedArticlesFlag = boolean(
-    "Additional Featured Articles",
-    false,
-    "User State"
-  );
-
   return (
     <Fragment>
       {link}
@@ -380,9 +364,7 @@ const renderArticleConfig = ({
             isMeteredExpired,
             scale,
             section,
-            template,
-            additionalRelatedArticlesFlag,
-            algoliaSearchKeys
+            template
           })}
         </ArticleConfigurator>
       }
