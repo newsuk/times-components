@@ -5,10 +5,7 @@ import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { StickyProvider } from "@times-components/sticky";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import {
-  TrackingContextProvider,
-  AlgoliaSearchProvider
-} from "@times-components/ts-components";
+import { TrackingContextProvider } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
@@ -52,9 +49,6 @@ const ArticleSkeleton = ({
   paidContentClassName,
   isPreview,
   swgProductId,
-  additionalRelatedArticlesFlag,
-  algoliaSearchKeys,
-  olympicsKeys,
   getFallbackThumbnailUrl169
 }) => {
   const {
@@ -153,90 +147,79 @@ const ArticleSkeleton = ({
             getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
             swgProductId={swgProductId}
           />
-          <AlgoliaSearchProvider
-            algoliaSearchKeys={algoliaSearchKeys}
-            article={{ id: articleId, label, section, topics }}
-            analyticsStream={analyticsStream}
-          >
-            <Fragment>
-              <HeaderAdContainer key="headerAd">
-                <AdContainer slotName="header" style={styles.adMarginStyle} />
-              </HeaderAdContainer>
-              <MainContainer>
-                <HeaderContainer>
-                  <Header />
-                  {savingEnabled || sharingEnabled ? (
-                    <UserState state={UserState.loggedInOrShared}>
-                      <MessageContext.Consumer>
-                        {({ showMessage }) => (
-                          <StickySaveAndShareBar
-                            articleId={articleId}
-                            articleHeadline={headline}
-                            articleUrl={url}
-                            onCopyLink={() =>
-                              showMessage("Article link copied")
-                            }
-                            onSaveToMyArticles={() => {}}
-                            onShareOnEmail={() => {}}
-                            savingEnabled={savingEnabled}
-                            sharingEnabled={sharingEnabled}
-                          />
-                        )}
-                      </MessageContext.Consumer>
-                    </UserState>
-                  ) : null}
-                </HeaderContainer>
-                <BodyContainer>
-                  {newContent && (
-                    <ArticleBody
+
+          <Fragment>
+            <HeaderAdContainer key="headerAd">
+              <AdContainer slotName="header" style={styles.adMarginStyle} />
+            </HeaderAdContainer>
+            <MainContainer>
+              <HeaderContainer>
+                <Header />
+                {savingEnabled || sharingEnabled ? (
+                  <UserState state={UserState.loggedInOrShared}>
+                    <MessageContext.Consumer>
+                      {({ showMessage }) => (
+                        <StickySaveAndShareBar
+                          articleId={articleId}
+                          articleHeadline={headline}
+                          articleUrl={url}
+                          onCopyLink={() => showMessage("Article link copied")}
+                          onSaveToMyArticles={() => {}}
+                          onShareOnEmail={() => {}}
+                          savingEnabled={savingEnabled}
+                          sharingEnabled={sharingEnabled}
+                        />
+                      )}
+                    </MessageContext.Consumer>
+                  </UserState>
+                ) : null}
+              </HeaderContainer>
+              <BodyContainer>
+                {newContent && (
+                  <ArticleBody
+                    analyticsStream={analyticsStream}
+                    content={newContent}
+                    contextUrl={url}
+                    section={section}
+                    articleHeadline={headline}
+                    paidContentClassName={paidContentClassName}
+                    template={template}
+                    isPreview={isPreview}
+                    isLiveOrBreaking={isLiveOrBreaking}
+                  />
+                )}
+                <PaywallPortal
+                  id="paywall-portal-article-footer"
+                  componentName="subscribe-cta"
+                />
+                <LazyLoad rootMargin={spacing(40)} threshold={0}>
+                  {({ observed, registerNode }) => (
+                    <ArticleExtras
                       analyticsStream={analyticsStream}
-                      content={newContent}
-                      contextUrl={url}
-                      section={section}
+                      articleId={articleId}
                       articleHeadline={headline}
-                      paidContentClassName={paidContentClassName}
-                      template={template}
-                      isPreview={isPreview}
-                      olympicsKeys={olympicsKeys}
-                      isLiveOrBreaking={isLiveOrBreaking}
+                      articleUrl={url}
+                      section={section}
+                      publishedTime={publishedTime}
+                      savingEnabled={savingEnabled}
+                      sharingEnabled={sharingEnabled}
+                      commentsEnabled={commentsEnabled}
+                      registerNode={registerNode}
+                      relatedArticleSlice={relatedArticleSlice}
+                      relatedArticlesVisible={
+                        !!observed.get("related-articles")
+                      }
+                      commentingConfig={commentingConfig}
+                      topics={topics}
                     />
                   )}
-                  <PaywallPortal
-                    id="paywall-portal-article-footer"
-                    componentName="subscribe-cta"
-                  />
-                  <LazyLoad rootMargin={spacing(40)} threshold={0}>
-                    {({ observed, registerNode }) => (
-                      <ArticleExtras
-                        analyticsStream={analyticsStream}
-                        articleId={articleId}
-                        articleHeadline={headline}
-                        articleUrl={url}
-                        section={section}
-                        publishedTime={publishedTime}
-                        savingEnabled={savingEnabled}
-                        sharingEnabled={sharingEnabled}
-                        commentsEnabled={commentsEnabled}
-                        registerNode={registerNode}
-                        relatedArticleSlice={relatedArticleSlice}
-                        relatedArticlesVisible={
-                          !!observed.get("related-articles")
-                        }
-                        commentingConfig={commentingConfig}
-                        topics={topics}
-                        additionalRelatedArticlesFlag={
-                          additionalRelatedArticlesFlag
-                        }
-                      />
-                    )}
-                  </LazyLoad>
-                </BodyContainer>
-              </MainContainer>
-            </Fragment>
-            <AdContainer slotName="pixel" />
-            <AdContainer slotName="pixelteads" />
-            <AdContainer slotName="pixelskin" />
-          </AlgoliaSearchProvider>
+                </LazyLoad>
+              </BodyContainer>
+            </MainContainer>
+          </Fragment>
+          <AdContainer slotName="pixel" />
+          <AdContainer slotName="pixelteads" />
+          <AdContainer slotName="pixelskin" />
         </article>
       </TrackingContextProvider>
     </StickyProvider>

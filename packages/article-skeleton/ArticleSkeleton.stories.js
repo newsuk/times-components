@@ -79,12 +79,6 @@ storiesOf("Composed/Article Skeleton", module)
       "User State"
     );
 
-    const endpoint = {
-      endpoint: "https://olympics-embed-staging.pamedia.io",
-      authToken: "6i3DuEwbVhr2Fht6",
-      gamesCode: "OG2020-TR2"
-    };
-
     const commentSwitchover = boolean(
       "Comment Switchover?",
       false,
@@ -135,7 +129,6 @@ storiesOf("Composed/Article Skeleton", module)
               "onVideoPress"
             )}
             onViewableItemsChanged={() => null}
-            olympicsKeys={endpoint}
           />
         </ContextProviderWithDefaults>
       </MockBookmarksProvider>

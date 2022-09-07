@@ -14,9 +14,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     userState,
     isPreview,
     swgProductId,
-    additionalRelatedArticlesFlag,
-    algoliaSearchKeys,
-    olympicsKeys,
     commentCount
   } = window.nuk.article;
   const { getCookieValue } = window.nuk;
@@ -33,9 +30,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     userState,
     isPreview,
     swgProductId,
-    additionalRelatedArticlesFlag,
-    algoliaSearchKeys,
-    olympicsKeys,
     commentCount
   };
 

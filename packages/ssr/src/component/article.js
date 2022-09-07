@@ -30,9 +30,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     paidContentClassName,
     isPreview,
     swgProductId,
-    additionalRelatedArticlesFlag,
-    algoliaSearchKeys,
-    olympicsKeys,
     getFallbackThumbnailUrl169
   } = data;
 
@@ -90,9 +87,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               paidContentClassName,
               isPreview,
               swgProductId,
-              additionalRelatedArticlesFlag,
-              algoliaSearchKeys,
-              olympicsKeys,
               getFallbackThumbnailUrl169
             })
           );

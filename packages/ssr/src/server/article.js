@@ -21,9 +21,6 @@ module.exports = (
     paidContentClassName,
     isPreview,
     swgProductId,
-    additionalRelatedArticlesFlag,
-    algoliaSearchKeys,
-    olympicsKeys,
     getFallbackThumbnailUrl169,
     commentCount
   },
@@ -75,9 +72,6 @@ module.exports = (
       paidContentClassName,
       isPreview,
       swgProductId,
-      additionalRelatedArticlesFlag,
-      algoliaSearchKeys,
-      olympicsKeys,
       commentCount
     },
     name: "article"
