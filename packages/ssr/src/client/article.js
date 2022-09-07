@@ -16,8 +16,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     swgProductId,
     additionalRelatedArticlesFlag,
     algoliaSearchKeys,
-    latestFromSectionFlag,
-    latestFromSection,
     olympicsKeys,
     commentCount
   } = window.nuk.article;
@@ -37,8 +35,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     swgProductId,
     additionalRelatedArticlesFlag,
     algoliaSearchKeys,
-    latestFromSectionFlag,
-    latestFromSection,
     olympicsKeys,
     commentCount
   };

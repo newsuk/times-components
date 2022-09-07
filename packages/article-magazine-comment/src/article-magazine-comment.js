@@ -83,8 +83,6 @@ class ArticlePage extends Component {
       swgProductId,
       additionalRelatedArticlesFlag,
       algoliaSearchKeys,
-      latestFromSectionFlag,
-      latestFromSection,
       olympicsKeys
     } = this.props;
 
@@ -106,8 +104,6 @@ class ArticlePage extends Component {
         swgProductId={swgProductId}
         additionalRelatedArticlesFlag={additionalRelatedArticlesFlag}
         algoliaSearchKeys={algoliaSearchKeys}
-        latestFromSectionFlag={latestFromSectionFlag}
-        latestFromSection={latestFromSection}
         olympicsKeys={olympicsKeys}
       />
     );

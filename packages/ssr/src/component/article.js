@@ -32,8 +32,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     swgProductId,
     additionalRelatedArticlesFlag,
     algoliaSearchKeys,
-    latestFromSectionFlag,
-    latestFromSection,
     olympicsKeys,
     getFallbackThumbnailUrl169
   } = data;
@@ -94,8 +92,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               swgProductId,
               additionalRelatedArticlesFlag,
               algoliaSearchKeys,
-              latestFromSectionFlag,
-              latestFromSection,
               olympicsKeys,
               getFallbackThumbnailUrl169
             })
