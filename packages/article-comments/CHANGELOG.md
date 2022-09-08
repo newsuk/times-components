@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.31.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.30.5...@times-components/article-comments@0.31.0) (2022-09-08)
+
+
+### Features
+
+* **TDP-000:** Commenting re-auth testing ([#3148](https://github.com/newsuk/times-components/issues/3148)) ([7e9c2db](https://github.com/newsuk/times-components/commit/7e9c2db20297fd512a0b9cd870112f2030c57853))
+
+
+
+
+
 ## [0.30.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.30.4...@times-components/article-comments@0.30.5) (2022-09-07)
 
 
