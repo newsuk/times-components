@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import Context from "@times-components/context";
 import { renderTreeAsText } from "@times-components/markup-forest";
 import { appendToImageURL } from "@times-components/utils";
+import { text } from "@storybook/addon-knobs";
 
 // Get the section for an article, preferring it not to be News
 function getSectionName(article) {
@@ -181,7 +182,7 @@ const getLiveBlogUpdates = (article, publisher, author) => {
           }
         } else if (contentObj[i].name === "paragraph") {
           if (update !== undefined) {
-            const text = get(contentObj[i], "children[0].attributes.value");
+            const text = contentObj[i].children[0].attributes.value;
             const updateText = text ? `${get(text)} ` : "";
             if (update.articleBody) {
               update.articleBody += updateText;
