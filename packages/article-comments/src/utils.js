@@ -29,13 +29,6 @@ export const userShouldUpdateName = async username => {
   return isPseudonym;
 };
 
-export const hasRealNameCommentingToken = () => {
-  const getRealNameCommentingToken = window.localStorage.getItem(
-    "isUsingRealNameCommenting"
-  );
-  return getRealNameCommentingToken;
-};
-
 export const getDisplayNameFromLocalStorage = () => {
   const spotimUserDetails = window.localStorage.getItem("SPOTIM_CURRENT_USER");
 

@@ -5,11 +5,7 @@ import PropTypes from "prop-types";
 import { CommentContainer } from "./styles/responsive";
 import executeSSOtransaction from "./comment-login";
 import withTrackEvents from "./tracking/with-track-events";
-import {
-  getDisplayNameFromLocalStorage,
-  hasRealNameCommentingToken,
-  userShouldUpdateName
-} from "./utils";
+import { getDisplayNameFromLocalStorage, userShouldUpdateName } from "./utils";
 
 class Comments extends Component {
   constructor() {
@@ -89,22 +85,13 @@ class Comments extends Component {
       }
     }
 
-    const isRealNameCommentingEnabled = window.location.search.includes(
-      "enableRealNameCommenting"
-    );
-
-    const isRealNameReauthenticationEnabled = window.location.search.includes(
-      "enableRealNameReauthentication"
-    );
-
     document.addEventListener(
       "spot-im-current-user-typing-start",
       async event => {
         onCommentStart(event);
 
-        if (isRealNameCommentingEnabled) {
+        if (window.location.search.includes("enableRealNameCommenting")) {
           const displayName = getDisplayNameFromLocalStorage();
-
           if (!displayName) return;
 
           const shouldShowBanner = await userShouldUpdateName(displayName);
@@ -150,24 +137,27 @@ class Comments extends Component {
       getShareEvent(event)
     );
     document.addEventListener("spot-im-user-auth-success", () => {
-      if (isRealNameReauthenticationEnabled) {
-        if (!hasRealNameCommentingToken()) {
+      if (window.location.search.includes("enableRealNameReauthentication")) {
+        if (!window.localStorage.getItem("isUsingRealNameCommentingV2")) {
           window.localStorage.removeItem("SPOTIM_DEVICE_V2");
-          window.localStorage.removeItem("SPOTIM_CURRENT_USER");
           window.localStorage.removeItem("SPOTIM_ACCESS_TOKEN");
-          window.localStorage.removeItem("SPOT_AB");
-          window.localStorage.removeItem("SPOTIM_DEVICE_UUID_V2");
-          executeSSOtransaction(() => {});
+
+          // window.localStorage.removeItem("SPOT_AB");
+          // window.localStorage.removeItem("SPOTIM_CURRENT_USER");
+          // window.localStorage.removeItem("SPOTIM_DEVICE_UUID_V2");
+
+          window.location.reload();
+          // executeSSOtransaction();
         }
       }
     });
 
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
-        executeSSOtransaction(() => {});
+        executeSSOtransaction();
       } else {
         document.addEventListener("spot-im-api-ready", () => {
-          executeSSOtransaction(() => {});
+          executeSSOtransaction();
         });
       }
     }
