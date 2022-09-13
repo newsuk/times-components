@@ -30,23 +30,13 @@ const ssoCallback = (codeA, completeSSOCallback) => {
   );
 };
 
-const setNewUserToken = () => {
-  window.localStorage.setItem("isUsingRealNameCommenting", true);
-};
-
-const executeSSOtransaction = callback => {
+const executeSSOtransaction = () => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
-    window.SPOTIM.startSSO(ssoCallback);
-
-    callback();
-
-    const isRealNameReauthenticationEnabled = window.location.search.includes(
-      "enableRealNameReauthentication"
-    );
-
-    if (isRealNameReauthenticationEnabled) {
-      setNewUserToken();
+    if (window.location.search.includes("enableRealNameReauthentication")) {
+      window.localStorage.setItem("isUsingRealNameCommentingV2", true);
     }
+
+    window.SPOTIM.startSSO(ssoCallback);
   }
 };
 
