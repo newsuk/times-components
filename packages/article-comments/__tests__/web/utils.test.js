@@ -2,7 +2,6 @@
 
 import {
   getDisplayNameFromLocalStorage,
-  hasRealNameCommentingToken,
   userShouldUpdateName
 } from "../../src/utils";
 
@@ -77,24 +76,6 @@ describe("utils", () => {
       const result = await userShouldUpdateName("MockBannedName");
 
       expect(result).toEqual(true);
-    });
-  });
-
-  describe("hasRealNameCommentingToken()", () => {
-    beforeEach(() => {
-      localStorageMock.removeItem("isUsingRealNameCommenting");
-    });
-
-    afterEach(() => {
-      jest.clearAllMocks();
-    });
-
-    it("should return the real name commenting token if the user has already signed into the new service", () => {
-      localStorageMock.setItem("isUsingRealNameCommenting", true);
-      hasRealNameCommentingToken();
-      expect(localStorageMock.getItem).toHaveBeenLastCalledWith(
-        "isUsingRealNameCommenting"
-      );
     });
   });
 });
