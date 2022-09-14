@@ -5,7 +5,6 @@ import PropTypes from "prop-types";
 import Context from "@times-components/context";
 import { renderTreeAsText } from "@times-components/markup-forest";
 import { appendToImageURL } from "@times-components/utils";
-import { text } from "@storybook/addon-knobs";
 
 // Get the section for an article, preferring it not to be News
 function getSectionName(article) {
