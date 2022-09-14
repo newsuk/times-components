@@ -5,7 +5,11 @@ import PropTypes from "prop-types";
 import { CommentContainer } from "./styles/responsive";
 import executeSSOtransaction from "./comment-login";
 import withTrackEvents from "./tracking/with-track-events";
-import { getDisplayNameFromLocalStorage, userShouldUpdateName } from "./utils";
+import {
+  getDisplayNameFromLocalStorage,
+  userShouldUpdateName,
+  getCpnId
+} from "./utils";
 
 class Comments extends Component {
   constructor() {
@@ -85,6 +89,14 @@ class Comments extends Component {
       }
     }
 
+    const acsTnlCookie =
+      window &&
+      window.nuk &&
+      window.nuk.getCookieValue &&
+      window.nuk.getCookieValue("acs_tnl");
+
+    const cpn = getCpnId(acsTnlCookie);
+
     document.addEventListener(
       "spot-im-current-user-typing-start",
       async event => {
@@ -139,25 +151,17 @@ class Comments extends Component {
     document.addEventListener("spot-im-user-auth-success", () => {
       if (window.location.search.includes("enableRealNameReauthentication")) {
         if (!window.localStorage.getItem("isUsingRealNameCommentingV2")) {
-          window.localStorage.removeItem("SPOTIM_DEVICE_V2");
-          window.localStorage.removeItem("SPOTIM_ACCESS_TOKEN");
-
-          // window.localStorage.removeItem("SPOT_AB");
-          // window.localStorage.removeItem("SPOTIM_CURRENT_USER");
-          // window.localStorage.removeItem("SPOTIM_DEVICE_UUID_V2");
-
-          window.location.reload();
-          // executeSSOtransaction();
+          executeSSOtransaction(`${cpn}_v2`);
         }
       }
     });
 
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
-        executeSSOtransaction();
+        executeSSOtransaction(cpn);
       } else {
         document.addEventListener("spot-im-api-ready", () => {
-          executeSSOtransaction();
+          executeSSOtransaction(cpn);
         });
       }
     }
