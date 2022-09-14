@@ -29,13 +29,6 @@ export const userShouldUpdateName = async username => {
   return isPseudonym;
 };
 
-export const hasRealNameCommentingToken = () => {
-  const getRealNameCommentingToken = window.localStorage.getItem(
-    "isUsingRealNameCommenting"
-  );
-  return getRealNameCommentingToken;
-};
-
 export const getDisplayNameFromLocalStorage = () => {
   const spotimUserDetails = window.localStorage.getItem("SPOTIM_CURRENT_USER");
 
@@ -47,6 +40,17 @@ export const getDisplayNameFromLocalStorage = () => {
   const { displayName } = spotimUserDetailsJSON.data;
 
   return displayName || false;
+};
+
+const parseCookie = cookie =>
+  cookie.split("&").reduce((acc, param) => {
+    const [key, value] = param.split("=");
+    acc[key] = value;
+    return acc;
+  }, {});
+
+export const getCpnId = (cookie) => {
+  return cookie ? parseCookie(cookie).eid : undefined;
 };
 
 export default () => {

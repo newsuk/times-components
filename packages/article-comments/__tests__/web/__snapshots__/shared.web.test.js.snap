@@ -563,6 +563,7 @@ Array [
   "spot-im-open-user-profile",
   "spot-im-share-type",
   "spot-im-user-auth-success",
+  "spot-im-api-ready",
 ]
 `;
 

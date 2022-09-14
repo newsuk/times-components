@@ -1,9 +1,9 @@
-/* global window */
+/* global window, document */
 
 import {
   getDisplayNameFromLocalStorage,
-  hasRealNameCommentingToken,
-  userShouldUpdateName
+  userShouldUpdateName,
+  getCpnId
 } from "../../src/utils";
 
 const unmockedFetch = global.fetch;
@@ -80,21 +80,14 @@ describe("utils", () => {
     });
   });
 
-  describe("hasRealNameCommentingToken()", () => {
-    beforeEach(() => {
-      localStorageMock.removeItem("isUsingRealNameCommenting");
+  describe("getCpnId()", () => {
+    it("should return undefined when the cookie does not contain a cpn", () => {
+      expect(getCpnId()).toBeUndefined();
+      expect(getCpnId('key=value')).toBeUndefined();
     });
 
-    afterEach(() => {
-      jest.clearAllMocks();
-    });
-
-    it("should return the real name commenting token if the user has already signed into the new service", () => {
-      localStorageMock.setItem("isUsingRealNameCommenting", true);
-      hasRealNameCommentingToken();
-      expect(localStorageMock.getItem).toHaveBeenLastCalledWith(
-        "isUsingRealNameCommenting"
-      );
+    it("should return a cpn when the cookie is valid", () => {
+      expect(getCpnId('eid=12345')).toEqual('12345');
     });
   });
 });
