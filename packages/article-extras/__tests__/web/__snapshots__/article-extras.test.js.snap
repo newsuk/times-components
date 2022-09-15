@@ -31,15 +31,10 @@ Array [
     articleId="dummy-article-id"
     commentingConfig={
       Object {
-        "account": Object {
-          "current": "CurrentSpotID",
-          "readOnly": "ReadOnlySpotID",
-        },
-        "switchOver": "2020-08-10T16:00:00.000Z",
+        "account": "sp_pCQgrRiN",
       }
     }
     isEnabled={true}
-    publishedTime="2020-07-10T16:00:00.000Z"
   />,
 ]
 `;
@@ -85,11 +80,7 @@ Array [
     articleId="dummy-article-id"
     commentingConfig={
       Object {
-        "account": Object {
-          "current": "CurrentSpotID",
-          "readOnly": "ReadOnlySpotID",
-        },
-        "switchOver": "2020-08-10T16:00:00.000Z",
+        "account": "sp_pCQgrRiN",
       }
     }
     isEnabled={true}
@@ -129,15 +120,10 @@ Array [
     articleId="dummy-article-id"
     commentingConfig={
       Object {
-        "account": Object {
-          "current": "CurrentSpotID",
-          "readOnly": "ReadOnlySpotID",
-        },
-        "switchOver": "2020-08-10T16:00:00.000Z",
+        "account": "sp_pCQgrRiN",
       }
     }
     isEnabled={true}
-    publishedTime="2020-07-10T16:00:00.000Z"
   />,
 ]
 `;

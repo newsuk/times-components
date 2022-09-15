@@ -8,11 +8,7 @@ const articleSkeletonPropTypes = {
   navigationMode: PropTypes.shape({}),
   receiveChildList: PropTypes.func,
   commentingConfig: PropTypes.shape({
-    accounts: PropTypes.shape({
-      current: PropTypes.string.isRequired,
-      readOnly: PropTypes.string.isRequired
-    }),
-    switchOver: PropTypes.string.isRequired
+    account: PropTypes.string.isRequired
   }).isRequired,
   swgProductId: PropTypes.string
 };

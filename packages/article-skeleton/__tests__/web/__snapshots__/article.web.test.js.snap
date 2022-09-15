@@ -354,9 +354,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -529,9 +527,7 @@ exports[`2. an article with interactives 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -661,9 +657,7 @@ exports[`3. an article with no content 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -793,9 +787,7 @@ exports[`4. an article with no content if content is set as null 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -953,9 +945,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -1053,9 +1043,7 @@ exports[`6. an article with heading tags 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -1207,9 +1195,7 @@ exports[`7. an article with link 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -1364,9 +1350,7 @@ exports[`8. an article with italic link 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -1520,9 +1504,7 @@ exports[`9. an article with bold text followed by bold link 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -1678,9 +1660,7 @@ exports[`10. an article with italic and normal text link 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -1830,9 +1810,7 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -1980,9 +1958,7 @@ exports[`12. an article with text wrapped in inline element 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -2131,9 +2107,7 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -2283,9 +2257,7 @@ exports[`14. an article with inline inside a bold tag 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -2434,9 +2406,7 @@ exports[`15. an article starting with single quote 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -2585,9 +2555,7 @@ exports[`16. an article starting with double quote 1`] = `
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}

@@ -203,9 +203,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -482,9 +480,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}

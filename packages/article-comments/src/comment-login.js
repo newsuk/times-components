@@ -1,4 +1,5 @@
 /* eslint-env browser */
+import { getCpnId } from "./utils";
 
 const loginRequest = (url, completeSSOCallback) => {
   const xhr = new XMLHttpRequest();
@@ -19,10 +20,24 @@ const ssoCallback = (codeA, completeSSOCallback) =>
     completeSSOCallback
   );
 
-const executeSSOtransaction = cpn => {
+const executeSSOtransaction = () => {
+  console.log("Comment SSO");
+
   if (window.SPOTIM && window.SPOTIM.startSSO) {
+    console.log("Comment SSO :: startSSO");
+
+    const acsTnlCookie =
+      window &&
+      window.nuk &&
+      window.nuk.getCookieValue &&
+      window.nuk.getCookieValue("acs_tnl");
+
+    let cpn = getCpnId(acsTnlCookie);
+    console.log("Comment SSO :: cpn ", cpn);
+
     if (window.location.search.includes("enableRealNameReauthentication")) {
-      window.localStorage.setItem("isUsingRealNameCommentingV2", true);
+      cpn = `${cpn}_v2`;
+      console.log("Comment SSO :: cpn ", cpn, "enableReauthentication");
     }
 
     window.SPOTIM.startSSO({ callback: ssoCallback, userId: cpn });
