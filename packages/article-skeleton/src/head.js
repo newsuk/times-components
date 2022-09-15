@@ -180,18 +180,12 @@ const getLiveBlogUpdates = (article, publisher, author) => {
             };
           }
         } else if (contentObj[i].name === "paragraph") {
-          if (contentObj[i].children) {
-            if (contentObj[i].children.length > 0) {
-            let text = get(contentObj[i], "children[0].attributes.value");
-              if (text !== undefined) {
-                if (update.articleBody) {
-                  update.articleBody += text;
-                } else {
-                  update.articleBody = text;
-                }
-              } else {
-                text = "";
-              }
+          if (update !== undefined) {
+            const text = get(contentObj[i], "children[0].attributes.value");
+            if (!update.articleBody) {
+              update.articleBody = text;
+            } else {
+              update.articleBody += text;
             }
           }
         } else if (contentObj[i].name === "image") {
