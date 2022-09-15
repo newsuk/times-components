@@ -322,9 +322,7 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -697,9 +695,7 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}

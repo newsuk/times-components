@@ -310,7 +310,7 @@ const renderArticle = () => (
       onTopicPress={() => {}}
       onTwitterLinkPress={() => {}}
       onVideoPress={() => {}}
-      commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
+      commentingConfig={{ account: "dummiy-spotim-id" }}
       isPreview={isPreview}
     />
   </Context.Provider>

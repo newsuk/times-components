@@ -6,7 +6,9 @@ import {
 
 const articlePropTypes = {
   ...articlePagePropTypes,
-  commentingConfig: PropTypes.string.isRequired,
+  commentingConfig: PropTypes.shape({
+    account: PropTypes.string.isRequired
+  }).isRequired,
   navigationMode: PropTypes.shape({}).isRequired
 };
 

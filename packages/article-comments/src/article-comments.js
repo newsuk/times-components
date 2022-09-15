@@ -13,7 +13,6 @@ import JoinTheConversationDialog from "./join-the-conversation-dialog";
 
 const ArticleComments = ({
   articleId,
-  publishedTime,
   isEnabled,
   isReadOnly,
   commentingConfig
@@ -37,7 +36,6 @@ const ArticleComments = ({
         </CommentContainer>
         <Comments
           articleId={articleId}
-          publishedTime={publishedTime}
           isReadOnly={isReadOnly}
           commentingConfig={commentingConfig}
         />
@@ -49,15 +47,10 @@ const ArticleComments = ({
 
 ArticleComments.propTypes = {
   articleId: PropTypes.string.isRequired,
-  publishedTime: PropTypes.string.isRequired,
   isEnabled: PropTypes.bool.isRequired,
   isReadOnly: PropTypes.bool,
   commentingConfig: PropTypes.shape({
-    accounts: PropTypes.shape({
-      current: PropTypes.string.isRequired,
-      readOnly: PropTypes.string.isRequired
-    }),
-    switchOver: PropTypes.string.isRequired
+    account: PropTypes.string.isRequired
   }).isRequired
 };
 

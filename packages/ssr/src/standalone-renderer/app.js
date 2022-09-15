@@ -82,11 +82,7 @@ server.get("/article/:id", (request, response) => {
   } = request;
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
   const commentingConfig = {
-    account: {
-      current: process.env.SPOT_ID,
-      readOnly: process.env.SPOT_ID
-    },
-    switchOver: "2020-08-10T16:00:00.000Z"
+    account: process.env.SPOT_ID
   };
 
   const headers = process.env.GRAPHQL_TOKEN

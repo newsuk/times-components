@@ -14,11 +14,7 @@ import ArticleExtras from "../src/article-extras";
 import { relatedArticleSlice, topics } from "../fixtures/article-extras";
 
 const commentingConfig = {
-  account: {
-    current: "CurrentSpotID",
-    readOnly: "ReadOnlySpotID"
-  },
-  switchOver: "2020-08-10T16:00:00.000Z"
+  account: "sp_pCQgrRiN"
 };
 
 export default () => {
@@ -53,7 +49,6 @@ export default () => {
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
-            publishedTime="2020-07-10T16:00:00.000Z"
           />
         );
 
@@ -75,7 +70,6 @@ export default () => {
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
-            publishedTime="2020-07-10T16:00:00.000Z"
           />
         );
 
@@ -96,7 +90,6 @@ export default () => {
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
-            publishedTime="2020-07-10T16:00:00.000Z"
           />
         );
 
@@ -117,7 +110,6 @@ export default () => {
             relatedArticlesVisible
             commentingConfig={commentingConfig}
             topics={topics}
-            publishedTime="2020-07-10T16:00:00.000Z"
           />
         );
 

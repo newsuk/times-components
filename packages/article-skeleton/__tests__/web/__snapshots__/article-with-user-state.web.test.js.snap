@@ -297,9 +297,7 @@ exports[`Article with user state Render full article when user has access to ful
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
@@ -672,9 +670,7 @@ exports[`Article with user state Render teaser article when user does not have a
           articleUrl="https://url.io"
           commentingConfig={
             Object {
-              "account": Object {
-                "current": "dummiy-spotim-id",
-              },
+              "account": "dummiy-spotim-id",
             }
           }
           commentsEnabled={true}
