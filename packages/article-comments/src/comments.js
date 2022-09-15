@@ -150,9 +150,7 @@ class Comments extends Component {
     );
     document.addEventListener("spot-im-user-auth-success", () => {
       if (window.location.search.includes("enableRealNameReauthentication")) {
-        if (!window.localStorage.getItem("isUsingRealNameCommentingV2")) {
-          executeSSOtransaction(`${cpn}_v2`);
-        }
+        executeSSOtransaction(`${cpn}_v2`);
       }
     });
 

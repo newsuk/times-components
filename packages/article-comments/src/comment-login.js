@@ -21,10 +21,6 @@ const ssoCallback = (codeA, completeSSOCallback) =>
 
 const executeSSOtransaction = cpn => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
-    if (window.location.search.includes("enableRealNameReauthentication")) {
-      window.localStorage.setItem("isUsingRealNameCommentingV2", true);
-    }
-
     window.SPOTIM.startSSO({ callback: ssoCallback, userId: cpn });
   }
 };
