@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.33.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.32.1...@times-components/article-comments@0.33.0) (2022-09-16)
+
+
+### Features
+
+* **TDP-000:** commenting reauth with cpn ([#3154](https://github.com/newsuk/times-components/issues/3154)) ([8c6d619](https://github.com/newsuk/times-components/commit/8c6d619a684cd71267a1e62bde5f168df8ceac39))
+
+
+
+
+
 ## [0.32.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.32.0...@times-components/article-comments@0.32.1) (2022-09-15)
 
 **Note:** Version bump only for package @times-components/article-comments
