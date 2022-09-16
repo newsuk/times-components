@@ -21,11 +21,7 @@ const ssoCallback = (codeA, completeSSOCallback) =>
   );
 
 const executeSSOtransaction = () => {
-  console.log("Comment SSO");
-
   if (window.SPOTIM && window.SPOTIM.startSSO) {
-    console.log("Comment SSO :: startSSO");
-
     const acsTnlCookie =
       window &&
       window.nuk &&
@@ -33,11 +29,15 @@ const executeSSOtransaction = () => {
       window.nuk.getCookieValue("acs_tnl");
 
     let cpn = getCpnId(acsTnlCookie);
-    console.log("Comment SSO :: cpn ", cpn);
 
     if (window.location.search.includes("enableRealNameReauthentication")) {
       cpn = `${cpn}_v2`;
-      console.log("Comment SSO :: cpn ", cpn, "enableReauthentication");
+
+      if (!window.localStorage.getItem("isUsingRealNameCommentingV2")) {
+        window.localStorage.removeItem("SPOTIM_DEVICE_V2");
+        window.localStorage.removeItem("SPOTIM_ACCESS_TOKEN");
+        window.localStorage.setItem("isUsingRealNameCommentingV2", true);
+      }
     }
 
     window.SPOTIM.startSSO({ callback: ssoCallback, userId: cpn });
