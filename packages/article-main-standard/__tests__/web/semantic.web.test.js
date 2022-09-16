@@ -149,7 +149,7 @@ const tests = [
               onRelatedArticlePress={() => {}}
               onTopicPress={() => {}}
               onVideoPress={() => {}}
-              commentingConfig={{ account: { current: "dummiy-spotim-id" } }}
+              commentingConfig={{ account: "dummiy-spotim-id" }}
             />
           </MockedProvider>
         </ContextProviderWithDefaults>

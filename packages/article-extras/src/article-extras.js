@@ -27,8 +27,7 @@ const ArticleExtras = ({
   relatedArticleSlice,
   relatedArticlesVisible,
   commentingConfig,
-  topics,
-  publishedTime
+  topics
 }) => {
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticles = (
@@ -88,7 +87,6 @@ const ArticleExtras = ({
         <ArticleComments
           articleId={articleId}
           isEnabled={commentsEnabled}
-          publishedTime={publishedTime}
           commentingConfig={commentingConfig}
         />
       </UserState>
@@ -99,7 +97,6 @@ const ArticleExtras = ({
 ArticleExtras.propTypes = {
   analyticsStream: PropTypes.func.isRequired,
   articleId: PropTypes.string.isRequired,
-  publishedTime: PropTypes.string.isRequired,
   articleUrl: PropTypes.string.isRequired,
   section: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
@@ -107,7 +104,9 @@ ArticleExtras.propTypes = {
   registerNode: PropTypes.func.isRequired,
   relatedArticleSlice: PropTypes.shape({}),
   relatedArticlesVisible: PropTypes.bool.isRequired,
-  commentingConfig: PropTypes.string,
+  commentingConfig: PropTypes.shape({
+    account: PropTypes.string.isRequired
+  }).isRequired,
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired
@@ -115,7 +114,6 @@ ArticleExtras.propTypes = {
 
 ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
-  commentingConfig: null,
   topics: null
 };
 
