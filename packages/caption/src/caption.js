@@ -1,5 +1,6 @@
 import React from "react";
 import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
+import { sanitiseCopy } from "@times-components/ts-components";
 import { defaultProps, propTypes } from "./caption-prop-types";
 import styles from "./styles";
 
@@ -7,6 +8,9 @@ const renderCredits = (style, credits) => {
   if (!credits || credits === "") {
     return null;
   }
+
+  const formattedCredit = sanitiseCopy(credits.toUpperCase())
+
   return (
     <TcText
       style={checkStylesForUnits({
@@ -15,9 +19,10 @@ const renderCredits = (style, credits) => {
         ...style.text,
         ...style.credits
       })}
-    >
-      {credits.toUpperCase()}
-    </TcText>
+      dangerouslySetInnerHTML={{
+        __html: formattedCredit
+      }}
+    />
   );
 };
 

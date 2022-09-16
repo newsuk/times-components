@@ -69,6 +69,9 @@ export { FetchProvider } from './helpers/fetch/FetchProvider';
 export {
   ViewCountWrapper
 } from './helpers/view-count-wrapper/ViewCountWrapper';
+
+export { sanitiseCopy } from './helpers/text-formatting/SanitiseCopy';
+
 export {
   TrackingContextProvider
 } from './helpers/tracking/TrackingContextProvider';
