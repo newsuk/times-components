@@ -180,12 +180,16 @@ const getLiveBlogUpdates = (article, publisher, author) => {
             };
           }
         } else if (contentObj[i].name === "paragraph") {
-          const text = contentObj[i].children[0].attributes.value;
           if (update !== undefined) {
-            if (!update.articleBody) {
-              update.articleBody = text;
+            const text = contentObj[i].children[0].attributes.value;
+            if (text !== undefined) {
+              if (!update.articleBody) {
+                update.articleBody = text;
+              } else {
+                update.articleBody += ` ${text}`;
+              }
             } else {
-              update.articleBody += ` ${text}`;
+              update.articleBody = '';
             }
           }
         } else if (contentObj[i].name === "image") {
