@@ -37,9 +37,12 @@ exports[`1. caption with container and text styles 1`] = `
     </div>
     <div
       className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
-    >
-      JUST CREDITS
-    </div>
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "JUST CREDITS",
+        }
+      }
+    />
   </div>
 </div>
 `;
@@ -81,9 +84,12 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
     </div>
     <div
       className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
-    >
-      JUST CREDITS
-    </div>
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "JUST CREDITS",
+        }
+      }
+    />
   </div>
 </div>
 `;
@@ -125,9 +131,12 @@ exports[`3. caption with only container styles 1`] = `
     </div>
     <div
       className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
-    >
-      JUST CREDITS
-    </div>
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "JUST CREDITS",
+        }
+      }
+    />
   </div>
 </div>
 `;
