@@ -180,9 +180,6 @@ const getLiveBlogUpdates = (article, publisher, author) => {
             };
           }
         } else if (contentObj[i].name === "paragraph") {
-          console.log('ContentObj: ', contentObj[i]); //eslint-disable no-console
-          const children = contentObj[i].children[0];
-          console.log('ContentObj.children[0]: ', children); //eslint-disable no-console
           const text = contentObj[i].children[0].attributes.value;
           if (update !== undefined) {
             if (!update.articleBody) {
