@@ -181,11 +181,12 @@ const getLiveBlogUpdates = (article, publisher, author) => {
           }
         } else if (contentObj[i].name === "paragraph") {
           const text = get(contentObj[i], 'children[0].attributes.value', '');
+          console.log('Text: ', text); //eslint-disable no-console
           if (update !== undefined) {
             if (!update.articleBody) {
-              update.articleBody = `${text}`;
+              update.articleBody = text;
             } else {
-              update.articleBody += `${text}`;
+              update.articleBody += ` ${text}`;
             }
           }
         } else if (contentObj[i].name === "image") {
