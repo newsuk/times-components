@@ -736,18 +736,4 @@ describe("Head", () => {
     );
     expect(testRenderer).toMatchSnapshot();
   });
-
-  it("shows articleBody", () => {
-    const testRenderer = TestRenderer.create(
-      <Head
-        article={{
-          ...article,
-          headline: null,
-          articleBody: "It was the longest of farewells, a day of history marked with tears and marching bands, timeless ceremony and an outpouring of emotion during which tens of thousands lined the streets to catch their last glimpse of the Queen."
-        }}
-      />
-    );
-
-    expect(testRenderer).toMatchSnapshot();
-  });
 });
