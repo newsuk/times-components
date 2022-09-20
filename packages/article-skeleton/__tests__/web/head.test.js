@@ -736,4 +736,51 @@ describe("Head", () => {
     );
     expect(testRenderer).toMatchSnapshot();
   });
+
+  it("outputs a live blog schema", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          expirableFlags: [{ type: "LIVE", expiryTime: null }],
+          content: [
+            {
+              name: "interactive",
+              attributes: {
+                element: {
+                  value: "article-header",
+                  attributes: {
+                    headline: "headline",
+                    updated: "2022-04-20T20:30:00"
+                  }
+                }
+              },
+              children: []
+            },
+            {
+              children: [
+                {
+                  attributes: { value: "Some content." },
+                  children: [],
+                  name: "text"
+                }
+              ],
+              name: "paragraph"
+            },
+            {
+              children: [
+                {
+                  attributes: { value: "Some more paragraph text." },
+                  children: [],
+                  name: "text"
+                }
+              ],
+              name: "paragraph"
+            }
+          ]
+        }}
+      />
+    );
+    expect(testRenderer).toMatchSnapshot();
+  });
 });
