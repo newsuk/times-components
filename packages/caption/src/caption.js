@@ -9,8 +9,6 @@ const renderCredits = (style, credits) => {
     return null;
   }
 
-  const formattedCredit = sanitiseCopy(credits.toUpperCase())
-
   return (
     <TcText
       style={checkStylesForUnits({
@@ -20,7 +18,7 @@ const renderCredits = (style, credits) => {
         ...style.credits
       })}
       dangerouslySetInnerHTML={{
-        __html: formattedCredit
+        __html: sanitiseCopy(credits.toUpperCase())
       }}
     />
   );
