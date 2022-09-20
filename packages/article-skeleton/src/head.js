@@ -189,7 +189,7 @@ const getLiveBlogUpdates = (article, publisher, author) => {
                 update.articleBody += ` ${text}`;
               }
             } else {
-              update.articleBody = '';
+              update.articleBody = "";
             }
           }
         } else if (contentObj[i].name === "image") {
