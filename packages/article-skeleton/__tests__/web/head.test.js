@@ -737,7 +737,7 @@ describe("Head", () => {
     expect(testRenderer).toMatchSnapshot();
   });
 
-  it("checks liveBlog Schema", () => {
+  it("outputs a live blog schema", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={{
