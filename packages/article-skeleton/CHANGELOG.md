@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.89.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.89.7...@times-components/article-skeleton@1.89.8) (2022-09-21)
+
+
+### Bug Fixes
+
+* **TDP-2477:** Should enable population of articleBody in Schema ([#3150](https://github.com/newsuk/times-components/issues/3150)) ([219b724](https://github.com/newsuk/times-components/commit/219b7241f991f34925b4e2518ddabf26cf5fd8c5))
+
+
+
+
+
 ## [1.89.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.89.6...@times-components/article-skeleton@1.89.7) (2022-09-21)
 
 **Note:** Version bump only for package @times-components/article-skeleton
