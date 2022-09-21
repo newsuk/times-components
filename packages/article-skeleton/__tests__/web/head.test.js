@@ -760,7 +760,10 @@ describe("Head", () => {
             {
               children: [
                 {
-                  attributes: { value: "Boris Johnson's sister an ex-BBC broadcaster and John Major's health secretary will stand for Change UK in next month's European elections." },
+                  attributes: {
+                    value:
+                      "Boris Johnson's sister an ex-BBC broadcaster and John Major's health secretary will stand for Change UK in next month's European elections."
+                  },
                   children: [],
                   name: "text"
                 }
@@ -770,7 +773,10 @@ describe("Head", () => {
             {
               children: [
                 {
-                  attributes: { value: "The pro-Remain party announced its MEP hopefuls from almost 4" },
+                  attributes: {
+                    value:
+                      "The pro-Remain party announced its MEP hopefuls from almost 4"
+                  },
                   children: [],
                   name: "text"
                 }
