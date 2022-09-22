@@ -18,7 +18,7 @@ const renderCredits = (style, credits) => {
         ...style.credits
       })}
       dangerouslySetInnerHTML={{
-        __html: credits.toUpperCase()
+        __html: sanitiseCopy(credits.toUpperCase())
       }}
     />
   );
