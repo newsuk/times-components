@@ -66,6 +66,7 @@ export {
 
 // Helpers
 export { FetchProvider } from './helpers/fetch/FetchProvider';
+export { sanitiseCopy } from './helpers/text-formatting/SanitiseCopy';
 export {
   ViewCountWrapper
 } from './helpers/view-count-wrapper/ViewCountWrapper';
