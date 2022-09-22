@@ -1,6 +1,5 @@
 import React from "react";
 import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
-import { sanitiseCopy } from "@times-components/ts-components";
 import { defaultProps, propTypes } from "./caption-prop-types";
 import styles from "./styles";
 
@@ -10,7 +9,6 @@ const renderCredits = (style, credits) => {
   }
 
   return (
-    // eslint-disable-next-line
     <TcText
       style={checkStylesForUnits({
         ...styles.text,
@@ -18,8 +16,7 @@ const renderCredits = (style, credits) => {
         ...style.text,
         ...style.credits
       })}
-      // eslint-disable-next-line
-      dangerouslySetInnerHTML={{ __html: sanitiseCopy(credits.toUpperCase()) }}
+      dangerouslySetInnerHTML={{ __html: credits.toUpperCase() }}
     />
   );
 };
