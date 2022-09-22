@@ -10,6 +10,7 @@ const renderCredits = (style, credits) => {
   }
 
   return (
+    // eslint-disable-next-line
     <TcText
       style={checkStylesForUnits({
         ...styles.text,
@@ -17,9 +18,8 @@ const renderCredits = (style, credits) => {
         ...style.text,
         ...style.credits
       })}
-      dangerouslySetInnerHTML={{
-        __html: sanitiseCopy(credits.toUpperCase())
-      }}
+      // eslint-disable-next-line
+      dangerouslySetInnerHTML={{ __html: sanitiseCopy(credits.toUpperCase()) }}
     />
   );
 };
