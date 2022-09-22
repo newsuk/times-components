@@ -3612,7 +3612,7 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
 
-    "@times-components/article-summary@3.20.1":
+"@times-components/article-summary@3.20.1":
   version "3.20.1"
   resolved "https://registry.yarnpkg.com/@times-components/article-summary/-/article-summary-3.20.1.tgz#1c30d783fe998098aceb2bbdb5b002796cd9cc7b"
   integrity sha512-QpTPiK4LFN5BNOkQ6CeMRCkIZT0CndnGa58U0PSU2iy7OWhXrS4+n+WHCcHuBqva2atIxHF0TIsAoDeN8tkQYw==
