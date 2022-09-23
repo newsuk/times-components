@@ -56,6 +56,11 @@ exports[`2. caption with credits 1`] = `
     </div>
     <div
       className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "JUST CREDITS",
+        }
+      }
       style={
         Object {
           "color": "#333333",
@@ -66,9 +71,7 @@ exports[`2. caption with credits 1`] = `
           "lineHeight": "17px",
         }
       }
-    >
-      JUST CREDITS
-    </div>
+    />
   </div>
 </div>
 `;
@@ -87,6 +90,11 @@ exports[`3. caption with credits only 1`] = `
   >
     <div
       className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "JUST CREDITS",
+        }
+      }
       style={
         Object {
           "color": "#333333",
@@ -97,9 +105,7 @@ exports[`3. caption with credits only 1`] = `
           "lineHeight": "17px",
         }
       }
-    >
-      JUST CREDITS
-    </div>
+    />
   </div>
 </div>
 `;
@@ -136,6 +142,11 @@ exports[`4. caption with child 1`] = `
     </div>
     <div
       className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "JUST CREDITS",
+        }
+      }
       style={
         Object {
           "color": "#333333",
@@ -146,9 +157,7 @@ exports[`4. caption with child 1`] = `
           "lineHeight": "17px",
         }
       }
-    >
-      JUST CREDITS
-    </div>
+    />
   </div>
 </div>
 `;
@@ -213,6 +222,11 @@ exports[`6. centred caption caption with credits 1`] = `
     </div>
     <div
       className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "JUST CREDITS",
+        }
+      }
       style={
         Object {
           "color": "#333333",
@@ -225,9 +239,7 @@ exports[`6. centred caption caption with credits 1`] = `
           "textAlign": "center",
         }
       }
-    >
-      JUST CREDITS
-    </div>
+    />
   </div>
 </div>
 `;
@@ -246,6 +258,11 @@ exports[`7. centred caption caption with credits only 1`] = `
   >
     <div
       className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "JUST CREDITS",
+        }
+      }
       style={
         Object {
           "color": "#333333",
@@ -258,9 +275,7 @@ exports[`7. centred caption caption with credits only 1`] = `
           "textAlign": "center",
         }
       }
-    >
-      JUST CREDITS
-    </div>
+    />
   </div>
 </div>
 `;
@@ -299,6 +314,11 @@ exports[`8. centred caption caption with child 1`] = `
     </div>
     <div
       className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "JUST CREDITS",
+        }
+      }
       style={
         Object {
           "color": "#333333",
@@ -311,9 +331,7 @@ exports[`8. centred caption caption with child 1`] = `
           "textAlign": "center",
         }
       }
-    >
-      JUST CREDITS
-    </div>
+    />
   </div>
 </div>
 `;

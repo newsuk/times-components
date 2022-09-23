@@ -19,10 +19,20 @@ exports[`4. inline image with no ratio only shows caption and credits 1`] = `
                   Some caption
                 </div>
               </tc-text__TcText>
-              <tc-text__TcText>
-                <div>
-                  SOME CREDIT
-                </div>
+              <tc-text__TcText
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "SOME CREDIT",
+                  }
+                }
+              >
+                <div
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "SOME CREDIT",
+                    }
+                  }
+                />
               </tc-text__TcText>
             </div>
           </tc-view__TcView>
@@ -117,10 +127,20 @@ exports[`7. image with no display only shows given credits 1`] = `
       <div>
         <tc-view__TcView>
           <div>
-            <tc-text__TcText>
-              <div>
-                SOME CREDIT
-              </div>
+            <tc-text__TcText
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "SOME CREDIT",
+                }
+              }
+            >
+              <div
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "SOME CREDIT",
+                  }
+                }
+              />
             </tc-text__TcText>
           </div>
         </tc-view__TcView>
@@ -196,10 +216,20 @@ Array [
                       Some caption
                     </div>
                   </tc-text__TcText>
-                  <tc-text__TcText>
-                    <div>
-                      SOME CREDIT
-                    </div>
+                  <tc-text__TcText
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "SOME CREDIT",
+                      }
+                    }
+                  >
+                    <div
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "SOME CREDIT",
+                        }
+                      }
+                    />
                   </tc-text__TcText>
                 </div>
               </tc-view__TcView>
@@ -289,10 +319,20 @@ Array [
                       Some caption
                     </div>
                   </tc-text__TcText>
-                  <tc-text__TcText>
-                    <div>
-                      SOME CREDIT
-                    </div>
+                  <tc-text__TcText
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "SOME CREDIT",
+                      }
+                    }
+                  >
+                    <div
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "SOME CREDIT",
+                        }
+                      }
+                    />
                   </tc-text__TcText>
                 </div>
               </tc-view__TcView>
