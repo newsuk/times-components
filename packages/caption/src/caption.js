@@ -1,5 +1,3 @@
-/* eslint-env browser */
-
 import React from "react";
 import xss from "xss";
 import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
