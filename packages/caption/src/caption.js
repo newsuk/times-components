@@ -1,4 +1,7 @@
+/* eslint-env browser */
+
 import React from "react";
+import xss from "xss";
 import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import { defaultProps, propTypes } from "./caption-prop-types";
 import styles from "./styles";
@@ -8,6 +11,24 @@ const renderCredits = (style, credits) => {
     return null;
   }
 
+  const sanitiseCopy = (copy, allowedTags) => {
+    const decodeEntities = inputString => {
+      const decodedString = document.createElement("textarea");
+      decodedString.innerHTML = inputString;
+      return decodedString.value;
+    };
+
+    const options = {
+      whiteList: allowedTags,
+      stripIgnoreTag: true,
+      stripIgnoreTagBody: ["script"]
+    };
+
+    const decodedCopy = decodeEntities(copy);
+
+    return xss(decodedCopy, options);
+  };
+
   return (
     <TcText
       style={checkStylesForUnits({
@@ -16,7 +37,7 @@ const renderCredits = (style, credits) => {
         ...style.text,
         ...style.credits
       })}
-      dangerouslySetInnerHTML={{ __html: credits.toUpperCase() }}
+      dangerouslySetInnerHTML={{ __html: sanitiseCopy(credits.toUpperCase()) }}
     />
   );
 };
