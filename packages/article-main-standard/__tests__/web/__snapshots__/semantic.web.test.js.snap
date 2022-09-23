@@ -104,6 +104,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       />
       <figcaption>
         Some Caption
+        SOME CREDITS
       </figcaption>
     </figure>
     Some byline
@@ -220,6 +221,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         </g>
       </svg>
       An image caption
+      THE IMAGE CREDITS
       <a
         href="https://link.io"
         target="_blank"

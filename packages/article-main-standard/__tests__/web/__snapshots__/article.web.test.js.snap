@@ -181,13 +181,9 @@ exports[`1. an article 1`] = `
                       <div>
                         Some Caption
                       </div>
-                      <div
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "SOME CREDITS",
-                          }
-                        }
-                      />
+                      <div>
+                        SOME CREDITS
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -876,13 +872,9 @@ exports[`6. should show topics when logged in or shared 1`] = `
                       <div>
                         Some Caption
                       </div>
-                      <div
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "SOME CREDITS",
-                          }
-                        }
-                      />
+                      <div>
+                        SOME CREDITS
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1202,13 +1194,9 @@ exports[`7. an article with no byline 1`] = `
                       <div>
                         Some Caption
                       </div>
-                      <div
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "SOME CREDITS",
-                          }
-                        }
-                      />
+                      <div>
+                        SOME CREDITS
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1505,13 +1493,9 @@ exports[`8. an article with no label 1`] = `
                       <div>
                         Some Caption
                       </div>
-                      <div
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "SOME CREDITS",
-                          }
-                        }
-                      />
+                      <div>
+                        SOME CREDITS
+                      </div>
                     </div>
                   </div>
                 </div>
