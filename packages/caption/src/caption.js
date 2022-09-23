@@ -11,23 +11,11 @@ const renderCredits = (style, credits) => {
     return null;
   }
 
-  const sanitiseCopy = (copy, allowedTags) => {
-    const decodeEntities = inputString => {
-      const decodedString = document.createElement("textarea");
-      decodedString.innerHTML = inputString;
-      return decodedString.value;
-    };
-
-    const options = {
-      whiteList: allowedTags,
-      stripIgnoreTag: true,
-      stripIgnoreTagBody: ["script"]
-    };
-
-    const decodedCopy = decodeEntities(copy);
-
-    return xss(decodedCopy, options);
-  };
+  const sanitisedText = xss(credits.toUpperCase(), {
+    whiteList: { p: [], a: ["href"], br: [], img: [], b: [], strong: [] },
+    stripIgnoreTag: true,
+    stripIgnoreTagBody: ["script"]
+  });
 
   return (
     <TcText
@@ -37,7 +25,7 @@ const renderCredits = (style, credits) => {
         ...style.text,
         ...style.credits
       })}
-      dangerouslySetInnerHTML={{ __html: sanitiseCopy(credits.toUpperCase()) }}
+      dangerouslySetInnerHTML={{ __html: sanitisedText }}
     />
   );
 };
