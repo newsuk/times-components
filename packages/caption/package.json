@@ -1,6 +1,6 @@
 {
   "name": "@times-components/caption",
-  "version": "3.3.1",
+  "version": "3.3.0",
   "description": "Media caption component",
   "main": "dist/caption",
   "dev": "src/caption",
@@ -33,8 +33,7 @@
   "dependencies": {
     "@times-components/ts-styleguide": "1.37.0",
     "@times-components/utils": "6.15.0",
-    "prop-types": "15.7.2",
-    "xss": "^1.0.10"
+    "prop-types": "15.7.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",

@@ -1,5 +1,4 @@
 import React from "react";
-import xss from "xss";
 import { TcText, TcView, checkStylesForUnits } from "@times-components/utils";
 import { defaultProps, propTypes } from "./caption-prop-types";
 import styles from "./styles";
@@ -8,13 +7,6 @@ const renderCredits = (style, credits) => {
   if (!credits || credits === "") {
     return null;
   }
-
-  const sanitisedText = xss(credits.toUpperCase(), {
-    whiteList: { p: [], a: ["href"], br: [], img: [], b: [], strong: [] },
-    stripIgnoreTag: true,
-    stripIgnoreTagBody: ["script"]
-  });
-
   return (
     <TcText
       style={checkStylesForUnits({
@@ -23,8 +15,9 @@ const renderCredits = (style, credits) => {
         ...style.text,
         ...style.credits
       })}
-      dangerouslySetInnerHTML={{ __html: sanitisedText }}
-    />
+    >
+      {credits.toUpperCase()}
+    </TcText>
   );
 };
 

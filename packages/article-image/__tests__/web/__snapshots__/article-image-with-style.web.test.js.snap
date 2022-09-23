@@ -272,19 +272,8 @@ Array [
                               </div>
                             </StyledComponent>
                           </tc-text__TcText>
-                          <tc-text__TcText
-                            dangerouslySetInnerHTML={
-                              Object {
-                                "__html": "SOME CREDITS",
-                              }
-                            }
-                          >
+                          <tc-text__TcText>
                             <StyledComponent
-                              dangerouslySetInnerHTML={
-                                Object {
-                                  "__html": "SOME CREDITS",
-                                }
-                              }
                               forwardedComponent={
                                 Object {
                                   "$$typeof": Symbol(react.forward_ref),
@@ -311,12 +300,9 @@ Array [
                             >
                               <div
                                 className="c3"
-                                dangerouslySetInnerHTML={
-                                  Object {
-                                    "__html": "SOME CREDITS",
-                                  }
-                                }
-                              />
+                              >
+                                SOME CREDITS
+                              </div>
                             </StyledComponent>
                           </tc-text__TcText>
                         </div>
@@ -545,19 +531,8 @@ Array [
                         </div>
                       </StyledComponent>
                     </tc-text__TcText>
-                    <tc-text__TcText
-                      dangerouslySetInnerHTML={
-                        Object {
-                          "__html": "OTHER CREDITS",
-                        }
-                      }
-                    >
+                    <tc-text__TcText>
                       <StyledComponent
-                        dangerouslySetInnerHTML={
-                          Object {
-                            "__html": "OTHER CREDITS",
-                          }
-                        }
                         forwardedComponent={
                           Object {
                             "$$typeof": Symbol(react.forward_ref),
@@ -584,12 +559,9 @@ Array [
                       >
                         <div
                           className="c2"
-                          dangerouslySetInnerHTML={
-                            Object {
-                              "__html": "OTHER CREDITS",
-                            }
-                          }
-                        />
+                        >
+                          OTHER CREDITS
+                        </div>
                       </StyledComponent>
                     </tc-text__TcText>
                   </div>

@@ -106,6 +106,7 @@ exports[`1. a full article 1`] = `
       />
       <figcaption>
         Some Caption
+        SOME CREDITS
       </figcaption>
     </figure>
     Share
@@ -212,6 +213,7 @@ exports[`1. a full article 1`] = `
         </g>
       </svg>
       An image caption
+      THE IMAGE CREDITS
       <a
         href="https://link.io"
         target="_blank"

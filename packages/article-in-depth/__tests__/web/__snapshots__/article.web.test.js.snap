@@ -118,13 +118,9 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                   <div>
                     Some Caption
                   </div>
-                  <div
-                    dangerouslySetInnerHTML={
-                      Object {
-                        "__html": "SOME CREDITS",
-                      }
-                    }
-                  />
+                  <div>
+                    SOME CREDITS
+                  </div>
                 </div>
               </div>
             </figcaption>
@@ -403,13 +399,9 @@ exports[`4. an article with ads 1`] = `
                   <div>
                     Some Caption
                   </div>
-                  <div
-                    dangerouslySetInnerHTML={
-                      Object {
-                        "__html": "SOME CREDITS",
-                      }
-                    }
-                  />
+                  <div>
+                    SOME CREDITS
+                  </div>
                 </div>
               </div>
             </figcaption>
