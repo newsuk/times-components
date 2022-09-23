@@ -24,8 +24,7 @@ const renderCredits = (style, credits) => {
         ...style.credits
       })}
       dangerouslySetInnerHTML={{ __html: sanitisedText }}
-   / >
-
+    />
   );
 };
 
