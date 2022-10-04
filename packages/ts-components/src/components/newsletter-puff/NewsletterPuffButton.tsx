@@ -32,7 +32,7 @@ export const NewsletterPuffButton = ({
   };
   return (
     <Button
-      title={updatingSubscription ? 'Saving…' : 'Sign up now'}
+      title='One click sign up'
       onPress={() => handlePress()}
       style={buttonStyles}
       underlayColor="transparent"

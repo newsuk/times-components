@@ -37,13 +37,20 @@ const Text = styled.div`
   word-wrap: break-word;
 `;
 
-export const InpContainer = styled(View)`
-  background-color: ${colours.functional.newsletterPuffBackground};
+/**
+ ${({ sectionColour}) =>
+    sectionColour && colours.section.sectionColour};
+ */
+
+export const InpContainer = styled(View)<{sectionColour?: string}>`
+border-top: 2px solid  ${({ sectionColour}) =>
+sectionColour && colours.section.sectionColour};
   display: flex;
   flex-direction: column;
   margin-right: ${spacing(2)};
   margin-bottom: ${spacing(4)};
   margin-left: ${spacing(2)};
+
 
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
@@ -52,12 +59,6 @@ export const InpContainer = styled(View)`
   }
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
-  }
-`;
-
-export const InpImageContainer = styled(View)`
-  @media (min-width: ${breakpoints.medium}px) {
-    width: 45%;
   }
 `;
 
@@ -81,7 +82,7 @@ export const InpSubscribedHeadline = styled(Text)`
 
 export const InpSignupContainer = styled(View)`
   justify-content: center;
-  padding: ${spacing(4)}px;
+  padding: 16px;
   @media (min-width: ${breakpoints.small}px) {
     padding: ${spacing(0)} ${spacing(4)};
     flex: 1;
@@ -102,15 +103,16 @@ export const InpSignupHeadline = styled(Text)`
   color: ${colours.functional.brandColour};
   font-family: ${fonts.headline};
   text-align: center;
-  font-size: ${fontSizes.newsletterPuffHeadline}px;
+  font-size: 18px;
   text-decoration: none;
   margin-bottom: ${spacing(1)};
 `;
 
 export const InpCopy = styled(Text)`
   font-family: ${fonts.body};
-  font-size: ${fontSizes.newsletterPuffCopy}px;
-  text-align: center;
+  font-size: 18px;
+  text-align: left;
+  letter-spacing: -0.4px;
   color: ${colours.functional.primary};
   margin-bottom: ${spacing(3)};
 `;
@@ -145,12 +147,12 @@ export const buttonStyles = {
   alignItems: 'center',
   backgroundColor: 'transparent',
   borderColor: colours.functional.brandColour,
-  borderStyle: 'solid',
-  borderWidth: 2,
+  borderStyle: 'thin',
+  borderWidth: 1,
   color: colours.functional.brandColour,
   elevation: 0,
   fontFamily: fonts.supporting,
-  height: 45,
+  height: 48,
   justifyContent: 'center',
   letterSpacing: 0.2,
   width: '100%'

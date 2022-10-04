@@ -3,7 +3,7 @@ import { Mutation } from 'react-apollo';
 
 import { GetNewsletter } from '@times-components/provider';
 import { subscribeNewsletter as subscribeNewsletterMutation } from '@times-components/provider-queries';
-import Image, { Placeholder } from '@times-components/image';
+import { Placeholder } from '@times-components/image';
 
 import { NewsletterPuffButton } from './NewsletterPuffButton';
 
@@ -11,10 +11,15 @@ import { NewsletterPuffLink } from './NewsletterPuffLink';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
+
+import {
+
+  colours,
+
+} from '@times-components/ts-styleguide';
 import {
   InpContainer,
   InpCopy,
-  InpImageContainer,
   InpPreferencesContainer,
   InpSignupContainer,
   InpSignupCTAContainer,
@@ -27,7 +32,7 @@ import {
 type InlineNewsletterPuffProps = {
   copy: string;
   headline: string;
-  imageUri: string;
+  sectionColour?: string;
   label?: string;
   code: string;
 };
@@ -36,10 +41,22 @@ export const InlineNewsletterPuff = ({
   code,
   copy,
   headline,
-  imageUri,
-  label
+  label,
+  sectionColour
 }: InlineNewsletterPuffProps) => {
   const [justSubscribed, setJustSubscribed] = useState(false);
+
+
+  const capitiliseUpperCase = (section?: string) => {
+if (!section) return
+    const firstLetter  = section.charAt(0); 
+    const restOfString = section.split(firstLetter);
+   return `${firstLetter.toUpperCase()}${restOfString[1]}`
+  }
+
+  const section = capitiliseUpperCase(  sectionColour)
+
+
 
   return (
     <GetNewsletter code={code} ssr={false} debounceTimeMs={0}>
@@ -90,10 +107,7 @@ export const InlineNewsletterPuff = ({
                 }}
               >
                 {({ intersectObserverRef }) => (
-                  <InpContainer>
-                    <InpImageContainer>
-                      <Image aspectRatio={1.42} uri={imageUri} />
-                    </InpImageContainer>
+                  <InpContainer sectionColour={section}>
                     {justSubscribed ? (
                       <InpSubscribedContainer>
                         <InpSubscribedHeadline>
@@ -108,8 +122,8 @@ export const InlineNewsletterPuff = ({
                     ) : (
                       <InpSignupContainer>
                         <InpSignupLabel>{label}</InpSignupLabel>
-                        <InpSignupHeadline>{headline}</InpSignupHeadline>
-                        <InpCopy>{copy}</InpCopy>
+                        
+                        <InpCopy><InpSignupHeadline>{headline}:  </InpSignupHeadline>{copy}</InpCopy>
                         <InpSignupCTAContainer ref={intersectObserverRef}>
                           <NewsletterPuffButton
                             updatingSubscription={updatingSubscription}

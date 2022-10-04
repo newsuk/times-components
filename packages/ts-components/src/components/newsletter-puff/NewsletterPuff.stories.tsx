@@ -72,10 +72,6 @@ const showcase = {
                 'copy',
                 'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
               )}
-              imageUri={text(
-                'imageUri',
-                'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800'
-              )}
             />
           </TrackingContextProvider>
         </MockedProvider>
@@ -94,15 +90,12 @@ const showcase = {
             context={{ component: 'ArticleSkeleton' }}
           >
             <InlineNewsletterPuff
+            sectionColour='news'
               code={text('code', 'TNL-101')}
               headline={text('headline', 'Best of Times')}
               copy={text(
                 'copy',
                 'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
-              )}
-              imageUri={text(
-                'imageUri',
-                'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800'
               )}
             />
           </TrackingContextProvider>
@@ -121,10 +114,6 @@ const showcase = {
           copy={text(
             'copy',
             'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
-          )}
-          imageUri={text(
-            'imageUri',
-            'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800'
           )}
         />
       ),

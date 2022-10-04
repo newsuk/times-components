@@ -6,8 +6,8 @@ export const AutoNewsletterPuff = ({
   code,
   copy,
   headline,
-  imageUri,
-  label
+  label,
+  sectionColour
 }: AutoNewsletterPuffProps) => (
   <ViewCountWrapper
     trackingName={`auto-puff-${code}`}
@@ -17,8 +17,8 @@ export const AutoNewsletterPuff = ({
       code={code}
       copy={copy}
       headline={headline}
-      imageUri={imageUri}
       label={label}
+      sectionColour={sectionColour}
     />
   </ViewCountWrapper>
 );
@@ -27,6 +27,6 @@ type AutoNewsletterPuffProps = {
   code: string;
   copy: string;
   headline: string;
-  imageUri: string;
   label?: string;
+  sectionColour?: string
 };
