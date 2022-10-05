@@ -8,15 +8,10 @@ import { Placeholder } from '@times-components/image';
 import { NewsletterPuffButton } from './NewsletterPuffButton';
 
 import { NewsletterPuffLink } from './NewsletterPuffLink';
+import {LoadingOverlay } from './LoadingOverlay'
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
-
-import {
-
-  colours,
-
-} from '@times-components/ts-styleguide';
 import {
   InpContainer,
   InpCopy,
@@ -26,7 +21,8 @@ import {
   InpSignupHeadline,
   InpSignupLabel,
   InpSubscribedContainer,
-  InpSubscribedHeadline
+  InpSubscribedHeadline,
+  Overlay
 } from './styles';
 
 type InlineNewsletterPuffProps = {
@@ -55,7 +51,10 @@ if (!section) return
   }
 
   const section = capitiliseUpperCase(  sectionColour)
-
+console.log('XXXXXXXXXXXXXXXXXXXXXX')
+console.log('XXXXXXXXXXXXXXXXXXXXXX')
+console.log('XXXXXXXXXXXXXXXXXXXXXX')
+console.log('XXXXXXXXXXXXXXXXXXXXXX', section)
 
 
   return (
@@ -107,6 +106,10 @@ if (!section) return
                 }}
               >
                 {({ intersectObserverRef }) => (
+                  <React.Fragment>
+                     { !updatingSubscription && <LoadingOverlay/>   }
+
+
                   <InpContainer sectionColour={section}>
                     {justSubscribed ? (
                       <InpSubscribedContainer>
@@ -137,6 +140,7 @@ if (!section) return
                       </InpSignupContainer>
                     )}
                   </InpContainer>
+                  </React.Fragment>
                 )}
               </TrackingContextProvider>
             )}

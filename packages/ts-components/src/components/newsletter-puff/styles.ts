@@ -10,7 +10,6 @@ import {
 
 const View = styled.div`
   align-items: stretch;
-  border: 0 solid black;
   box-sizing: border-box;
   display: flex;
   flex-basis: auto;
@@ -37,14 +36,64 @@ const Text = styled.div`
   word-wrap: break-word;
 `;
 
-/**
- ${({ sectionColour}) =>
-    sectionColour && colours.section.sectionColour};
- */
+export const Overlay = styled.div`
+position: fixed;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(255, 255, 255, 0.9);
+z-index: 1;
+`;
+
+export const Bubble = styled.div`
+animation: expand .75s ease-in-out infinite;
+border-radius: 20px;
+display: inline-block;
+transform-origin: center center;
+margin: 0 7px;
+width: 16px;
+height: 16px;
+
+background: #C4C4C4;
+
+:nth-child(1) {
+
+}
+
+:nth-child(2) {
+  animation-delay: 250ms;
+
+}
+
+:nth-child(3) {
+  animation-delay: 500ms;
+
+}
+
+@keyframes expand {
+
+  100% {
+    background: #6B6B6B;
+  }
+
+
+}
+`;
+
+export const Loader = styled.div`
+position: absolute;
+top: 50%;
+left: 50%;
+`;
+
+
 
 export const InpContainer = styled(View)<{sectionColour?: string}>`
 border-top: 2px solid  ${({ sectionColour}) =>
-sectionColour && colours.section.sectionColour};
+sectionColour ? colours.section[sectionColour] : 'black'};
   display: flex;
   flex-direction: column;
   margin-right: ${spacing(2)};
