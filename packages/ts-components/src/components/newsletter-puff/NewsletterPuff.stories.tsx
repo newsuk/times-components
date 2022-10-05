@@ -90,7 +90,7 @@ const showcase = {
             context={{ component: 'ArticleSkeleton' }}
           >
             <InlineNewsletterPuff
-            sectionColour='news'
+              sectionColour="news"
               code={text('code', 'TNL-101')}
               headline={text('headline', 'Best of Times')}
               copy={text(

@@ -5,10 +5,13 @@ import { GetNewsletter } from '@times-components/provider';
 import { subscribeNewsletter as subscribeNewsletterMutation } from '@times-components/provider-queries';
 import { Placeholder } from '@times-components/image';
 
-import { NewsletterPuffButton } from './NewsletterPuffButton';
+import {
+  NewsletterPuffLinkButton,
+  NewsletterPuffButton
+} from './NewsletterPuffButton';
 
 import { NewsletterPuffLink } from './NewsletterPuffLink';
-import {LoadingOverlay } from './LoadingOverlay'
+import { LoadingOverlay } from './LoadingOverlay';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
@@ -19,10 +22,7 @@ import {
   InpSignupContainer,
   InpSignupCTAContainer,
   InpSignupHeadline,
-  InpSignupLabel,
-  InpSubscribedContainer,
-  InpSubscribedHeadline,
-  Overlay
+  InpSubscribedContainer
 } from './styles';
 
 type InlineNewsletterPuffProps = {
@@ -42,20 +42,20 @@ export const InlineNewsletterPuff = ({
 }: InlineNewsletterPuffProps) => {
   const [justSubscribed, setJustSubscribed] = useState(false);
 
-
   const capitiliseUpperCase = (section?: string) => {
-if (!section) return
-    const firstLetter  = section.charAt(0); 
+    if (!section) {
+      return;
+    }
+    const firstLetter = section.charAt(0);
     const restOfString = section.split(firstLetter);
-   return `${firstLetter.toUpperCase()}${restOfString[1]}`
-  }
+    return `${firstLetter.toUpperCase()}${restOfString[1]}`;
+  };
 
-  const section = capitiliseUpperCase(  sectionColour)
-console.log('XXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXX')
-console.log('XXXXXXXXXXXXXXXXXXXXXX', section)
-
+  const section = capitiliseUpperCase(sectionColour);
+  console.log('XXXXXXXXXXXXXXXXXXXXXX');
+  console.log('XXXXXXXXXXXXXXXXXXXXXX');
+  console.log('XXXXXXXXXXXXXXXXXXXXXX');
+  console.log('XXXXXXXXXXXXXXXXXXXXXX', section);
 
   return (
     <GetNewsletter code={code} ssr={false} debounceTimeMs={0}>
@@ -107,40 +107,45 @@ console.log('XXXXXXXXXXXXXXXXXXXXXX', section)
               >
                 {({ intersectObserverRef }) => (
                   <React.Fragment>
-  
-
-
-                  <InpContainer sectionColour={section}>
-                  { !updatingSubscription && <LoadingOverlay/>   }
-                    {justSubscribed ? (
-                      <InpSubscribedContainer>
-                        <InpSubscribedHeadline>
-                          {`You’ve successfully signed up to ${
-                            newsletter.title
-                          }`}
-                        </InpSubscribedHeadline>
-                        <InpPreferencesContainer>
-                          <NewsletterPuffLink />
-                        </InpPreferencesContainer>
-                      </InpSubscribedContainer>
-                    ) : (
-                      <InpSignupContainer>
-                        <InpSignupLabel>{label}</InpSignupLabel>
-                        
-                        <InpCopy><InpSignupHeadline>{headline}:  </InpSignupHeadline>{copy}</InpCopy>
-                        <InpSignupCTAContainer ref={intersectObserverRef}>
-                          <NewsletterPuffButton
-                            updatingSubscription={updatingSubscription}
-                            onPress={() => {
-                              if (!updatingSubscription) {
-                                subscribeNewsletter({ variables: { code } });
-                              }
-                            }}
-                          />
-                        </InpSignupCTAContainer>
-                      </InpSignupContainer>
-                    )}
-                  </InpContainer>
+                    <InpContainer sectionColour={section}>
+                      {updatingSubscription && <LoadingOverlay />}
+                      {!justSubscribed ? (
+                        <InpSubscribedContainer>
+                          <InpCopy>
+                            You've succesfully signed up to{' '}
+                            <InpSignupHeadline>{headline}. </InpSignupHeadline>
+                            <NewsletterPuffLink />
+                          </InpCopy>
+                          <InpPreferencesContainer />
+                        </InpSubscribedContainer>
+                      ) : (
+                        <InpSignupContainer>
+                          <InpCopy>
+                            <InpSignupHeadline>{headline}: </InpSignupHeadline>
+                            {copy}<NewsletterPuffButton
+                            style='link'
+                              updatingSubscription={updatingSubscription}
+                              onPress={() => {
+                                if (!updatingSubscription) {
+                                  subscribeNewsletter({ variables: { code } });
+                                }
+                              }}
+                            />
+                          </InpCopy>
+                          <InpSignupCTAContainer ref={intersectObserverRef}>
+                            <NewsletterPuffButton
+                            style='button'
+                              updatingSubscription={updatingSubscription}
+                              onPress={() => {
+                                if (!updatingSubscription) {
+                                  subscribeNewsletter({ variables: { code } });
+                                }
+                              }}
+                            />
+                          </InpSignupCTAContainer>
+                        </InpSignupContainer>
+                      )}
+                    </InpContainer>
                   </React.Fragment>
                 )}
               </TrackingContextProvider>

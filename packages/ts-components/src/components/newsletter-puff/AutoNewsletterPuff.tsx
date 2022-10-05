@@ -28,5 +28,5 @@ type AutoNewsletterPuffProps = {
   copy: string;
   headline: string;
   label?: string;
-  sectionColour?: string
+  sectionColour?: string;
 };

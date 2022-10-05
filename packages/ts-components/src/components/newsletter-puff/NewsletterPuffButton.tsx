@@ -1,18 +1,18 @@
 import React from 'react';
 
-import Button from '@times-components/button';
-
-import { buttonStyles, textStyle } from './styles';
+import { buttonStyles, PuffButton, LinkButton, linkStyles } from './styles';
 import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvider';
 
 type NewsletterPuffProps = {
   onPress?: () => void;
   updatingSubscription?: boolean;
+  style: 'link' | 'button'
 };
 
 export const NewsletterPuffButton = ({
   updatingSubscription = false,
-  onPress
+  onPress,
+  style
 }: NewsletterPuffProps) => {
   const { fireAnalyticsEvent } = useTrackingContext();
   const handlePress = () => {
@@ -30,13 +30,25 @@ export const NewsletterPuffButton = ({
         });
     }
   };
+
+
   return (
-    <Button
-      title='One click sign up'
+
+
+  style === 'button' ?
+    <PuffButton
+      title="One click sign up"
       onPress={() => handlePress()}
       style={buttonStyles}
       underlayColor="transparent"
-      textStyle={textStyle}
-    />
+    /> :
+<LinkButton     onClick={() => handlePress()}>
+One click sign up
+  
+
+
+    </LinkButton>
+  
   );
 };
+
