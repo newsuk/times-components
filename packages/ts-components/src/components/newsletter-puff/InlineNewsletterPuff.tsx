@@ -107,10 +107,11 @@ console.log('XXXXXXXXXXXXXXXXXXXXXX', section)
               >
                 {({ intersectObserverRef }) => (
                   <React.Fragment>
-                     { !updatingSubscription && <LoadingOverlay/>   }
+  
 
 
                   <InpContainer sectionColour={section}>
+                  { !updatingSubscription && <LoadingOverlay/>   }
                     {justSubscribed ? (
                       <InpSubscribedContainer>
                         <InpSubscribedHeadline>
