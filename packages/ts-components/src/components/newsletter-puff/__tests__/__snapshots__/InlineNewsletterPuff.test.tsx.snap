@@ -1,45 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Inline Newsletter Puff Manage preferences  renders the success view after subscribing  1`] = `
-<body>
-  <div>
-    <div
-      class="sc-htpNat sc-ifAKCX fhfQYW"
-    >
-      <div
-        class="sc-htpNat sc-dnqmqq duLROv"
-      >
-        <div
-          class="sc-bxivhb sc-gqjmRU ibfCvU"
-        >
-          You've succesfully signed up to
-           
-          <div
-            class="sc-bxivhb sc-gZMcBi kRYdQT"
-          >
-            Politics. Explained.
-            . 
-          </div>
-          <a
-            class="link__RespLink-sc-1ocvixa-0 dfMuic"
-            href="https://home.thetimes.co.uk/myNews"
-          >
-            <div
-              class="sc-bxivhb sc-EHOje feQXiq"
-            >
-              Manage preferences here
-            </div>
-          </a>
-        </div>
-        <div
-          class="sc-htpNat sc-jTzLTM gzkEml"
-        />
-      </div>
-    </div>
-  </div>
-</body>
-`;
-
 exports[`Inline Newsletter Puff renders null when is already subscribed 1`] = `
 <body>
   <div />
@@ -50,7 +10,7 @@ exports[`Inline Newsletter Puff renders placeholder when loading 1`] = `
 <body>
   <div>
     <div
-      class="sc-htpNat sc-ifAKCX hTOJqD"
+      class="sc-bwzfXH sc-bxivhb jahLAV"
       style="height: 257px;"
     >
       <div
@@ -88,29 +48,33 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
 <body>
   <div>
     <div
-      class="sc-htpNat sc-ifAKCX fhfQYW"
+      class="sc-bwzfXH sc-bxivhb iFwRag"
     >
       <div
-        class="sc-htpNat sc-iwsKbI eqrSlC"
+        class="sc-bwzfXH sc-iwsKbI cuimXU"
       >
         <div
-          class="sc-bxivhb sc-gqjmRU ibfCvU"
+          class="sc-htpNat sc-gqjmRU imXojB"
         >
           <div
-            class="sc-bxivhb sc-gZMcBi kRYdQT"
+            class="sc-htpNat sc-gZMcBi kRYdQT"
           >
             Politics. Explained.
             : 
           </div>
           Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
-          <button
-            class="sc-bdVaJa QwSgx"
+          <div
+            class="sc-bwzfXH sc-VigVT fmakBT"
           >
-            One click sign up
-          </button>
+            <button
+              class="sc-bdVaJa jpAYNt"
+            >
+              One click sign up
+            </button>
+          </div>
         </div>
         <div
-          class="sc-htpNat sc-VigVT ipvAJp"
+          class="sc-bwzfXH sc-VigVT eLRpCm"
         >
           <button
             style="font-family: GillSansMTStd-Medium; font-size: 16px; line-height: 0; align-items: center; background-color: transparent; border-radius: 2px; color: rgb(29, 29, 27); cursor: pointer; height: 48px; justify-content: center; min-width: 100px; padding-top: 4px; width: 100%; border-color: #1d1d1b; border-width: 1px; elevation: 0; letter-spacing: 0.2px;"
@@ -129,29 +93,33 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
 <body>
   <div>
     <div
-      class="sc-htpNat sc-ifAKCX fhfQYW"
+      class="sc-bwzfXH sc-bxivhb iFwRag"
     >
       <div
-        class="sc-htpNat sc-iwsKbI eqrSlC"
+        class="sc-bwzfXH sc-iwsKbI cuimXU"
       >
         <div
-          class="sc-bxivhb sc-gqjmRU ibfCvU"
+          class="sc-htpNat sc-gqjmRU imXojB"
         >
           <div
-            class="sc-bxivhb sc-gZMcBi kRYdQT"
+            class="sc-htpNat sc-gZMcBi kRYdQT"
           >
             Politics. Explained.
             : 
           </div>
           Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
-          <button
-            class="sc-bdVaJa QwSgx"
+          <div
+            class="sc-bwzfXH sc-VigVT fmakBT"
           >
-            One click sign up
-          </button>
+            <button
+              class="sc-bdVaJa jpAYNt"
+            >
+              One click sign up
+            </button>
+          </div>
         </div>
         <div
-          class="sc-htpNat sc-VigVT ipvAJp"
+          class="sc-bwzfXH sc-VigVT eLRpCm"
         >
           <button
             style="font-family: GillSansMTStd-Medium; font-size: 16px; line-height: 0; align-items: center; background-color: transparent; border-radius: 2px; color: rgb(29, 29, 27); cursor: pointer; height: 48px; justify-content: center; min-width: 100px; padding-top: 4px; width: 100%; border-color: #1d1d1b; border-width: 1px; elevation: 0; letter-spacing: 0.2px;"

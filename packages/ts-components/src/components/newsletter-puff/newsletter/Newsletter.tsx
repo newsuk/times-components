@@ -45,7 +45,7 @@ export const Newsletter = ({
     <React.Fragment>
       <InpContainer sectionColour={section}>
         {updatingSubscription && <LoadingOverlay />}
-        {!justSubscribed ? (
+        {justSubscribed ? (
           <InpSubscribedContainer>
             <InpCopy>
               You've succesfully signed up to{' '}
