@@ -72,6 +72,7 @@ const showcase = {
                 'copy',
                 'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
               )}
+              sectionColour='sport'
             />
           </TrackingContextProvider>
         </MockedProvider>

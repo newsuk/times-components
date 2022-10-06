@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
-import {
-  colours,
-  fonts,
-} from '@times-components/ts-styleguide';
+import { colours, fonts } from '@times-components/ts-styleguide';
 
 export const buttonStyles = {
   alignItems: 'center',
@@ -21,7 +18,6 @@ export const buttonStyles = {
 };
 
 export const LinkButton = styled.button`
-
   color: ${colours.functional.action};
 
   font-family: ${fonts.body};
@@ -30,6 +26,4 @@ export const LinkButton = styled.button`
   letter-spacing: -0.4px;
   border: none;
   background-color: white;
-
-
 `;

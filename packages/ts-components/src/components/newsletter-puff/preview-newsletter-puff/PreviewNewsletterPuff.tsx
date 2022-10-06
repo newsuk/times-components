@@ -6,9 +6,7 @@ import {
   InpSignupHeadline
 } from '../newsletter/styles';
 
-import {
-  InpSignupCTAContainer,
-} from '../styles';
+import { InpSignupCTAContainer } from '../styles';
 
 import { NewsletterPuffButton } from '../newsletter-puff-button/NewsletterPuffButton';
 import React from 'react';

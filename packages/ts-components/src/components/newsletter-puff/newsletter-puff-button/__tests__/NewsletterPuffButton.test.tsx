@@ -5,10 +5,8 @@ import { NewsletterPuffButton } from '../NewsletterPuffButton';
 import { TrackingContextProvider } from '../../../../helpers/tracking/TrackingContextProvider';
 
 describe('NewsletterPuffButton', () => {
-
   beforeEach(() => {
     mockDate.set(1620000000000);
-
   });
 
   afterEach(() => {
@@ -21,18 +19,14 @@ describe('NewsletterPuffButton', () => {
     const mockedOnPress = jest.fn();
 
     const component = render(
-        <NewsletterPuffButton
-          style="button"
-          updatingSubscription={false}
-          onPress={mockedOnPress}
-        />
-   
+      <NewsletterPuffButton
+        style="button"
+        updatingSubscription={false}
+        onPress={mockedOnPress}
+      />
     );
 
-
     expect(component.getByText('One click sign up'));
-
-   
   });
 
   it('should track button viewed and clicked in analytics', () => {

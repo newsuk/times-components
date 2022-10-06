@@ -46,20 +46,16 @@ export const InpCopy = styled(Text)`
   line-height: 26px;
 `;
 
-export const InpSignupCTAContainer = styled(View)<{childStyle: any}>`
-display: ${({childStyle }) =>
-childStyle === 'link' ? 'none' : 'block'};
+export const InpSignupCTAContainer = styled(View)<{ childStyle: any }>`
+  display: ${({ childStyle }) => (childStyle === 'link' ? 'none' : 'block')};
   @media (min-width: ${breakpoints.medium}px) {
-    width:   ${({childStyle }) =>
-    childStyle === 'button' && '220px'};;
+    width: ${({ childStyle }) => childStyle === 'button' && '220px'};
     margin: 0px auto;
-
-
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    display: ${({childStyle }) =>
-    childStyle === 'link' ? 'inline-block' : 'none'};
+    display: ${({ childStyle }) =>
+      childStyle === 'link' ? 'inline-block' : 'none'};
   }
 `;
 

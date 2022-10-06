@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
-import {
-  breakpoints
-
-} from '@times-components/ts-styleguide';
+import { breakpoints } from '@times-components/ts-styleguide';
 
 import { View } from '../styles';
 
@@ -49,14 +46,14 @@ export const Bubble = styled.div`
 `;
 
 export const Loader = styled(View)`
-display:flex;
-flex-direction:row;
+  display: flex;
+  flex-direction: row;
 
-left: 40%;
-top:45%;
+  left: 40%;
+  top: 45%;
 
   @media (min-width: ${breakpoints.wide}px) {
     left: 40%;
-    top:28%;
+    top: 28%;
   }
 `;

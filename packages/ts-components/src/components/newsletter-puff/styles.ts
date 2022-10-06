@@ -65,11 +65,8 @@ export const InpPreferencesText = styled(Text)`
 `;
 
 export const InpSignupCTAContainer = styled(View)`
-
   @media (min-width: ${breakpoints.medium}px) {
     width: 220px;
     margin: 0px auto;
   }
-
-
 `;

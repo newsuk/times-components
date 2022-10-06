@@ -256,7 +256,7 @@ const renderers = ({
 
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations
-        const { code, copy, headline,label, section } = attributes;
+        const { code, copy, headline, section } = attributes;
 
         return isPreview ? (
           <div id={id}>
@@ -274,7 +274,6 @@ const renderers = ({
               code={code}
               copy={safeDecodeURIComponent(copy)}
               headline={safeDecodeURIComponent(headline)}
-              label={safeDecodeURIComponent(label)}
               sectionColour={section}
             />
           </div>
@@ -440,7 +439,6 @@ const renderers = ({
         code={code}
         copy={copy}
         headline={headline}
-        label={label}
         sectionColour={section}
       />
         );
