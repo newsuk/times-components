@@ -15,7 +15,6 @@ type InlineNewsletterPuffProps = {
   copy: string;
   headline: string;
   sectionColour?: string;
-  label?: string;
   code: string;
 };
 
@@ -87,18 +86,16 @@ export const InlineNewsletterPuff = ({
                 }}
               >
                 {({ intersectObserverRef }) => (
-                  <React.Fragment>
-                    <Newsletter
-                      intersectObserverRef={intersectObserverRef}
-                      section={section}
-                      justSubscribed={justSubscribed}
-                      headline={headline}
-                      updatingSubscription={updatingSubscription}
-                      copy={copy}
-                      code={code}
-                      subscribeNewsletter={subscribeNewsletter}
-                    />
-                  </React.Fragment>
+                  <Newsletter
+                    intersectObserverRef={intersectObserverRef}
+                    section={section}
+                    justSubscribed={justSubscribed}
+                    headline={headline}
+                    updatingSubscription={updatingSubscription}
+                    copy={copy}
+                    code={code}
+                    subscribeNewsletter={subscribeNewsletter}
+                  />
                 )}
               </TrackingContextProvider>
             )}

@@ -1,6 +1,6 @@
 import React from 'react';
-
-import { buttonStyles, PuffButton, LinkButton } from './styles';
+import Button from '@times-components/button';
+import { buttonStyles, LinkButton } from './styles';
 import { useTrackingContext } from '../../../helpers/tracking/TrackingContextProvider';
 
 type NewsletterPuffProps = {
@@ -32,7 +32,7 @@ export const NewsletterPuffButton = ({
   };
 
   return style === 'button' ? (
-    <PuffButton
+    <Button
       title="One click sign up"
       onPress={() => handlePress()}
       style={buttonStyles}

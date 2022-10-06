@@ -1,13 +1,9 @@
 import styled from 'styled-components';
 
 import {
-  breakpoints,
   colours,
   fonts,
-  spacing
 } from '@times-components/ts-styleguide';
-
-import Button from '@times-components/button';
 
 export const buttonStyles = {
   alignItems: 'center',
@@ -25,7 +21,7 @@ export const buttonStyles = {
 };
 
 export const LinkButton = styled.button`
-  display: none;
+
   color: ${colours.functional.action};
 
   font-family: ${fonts.body};
@@ -34,15 +30,6 @@ export const LinkButton = styled.button`
   letter-spacing: -0.4px;
   border: none;
   background-color: white;
-  margin-bottom: ${spacing(6)};
 
-  @media (min-width: ${breakpoints.wide}px) {
-    display: block;
-  }
-`;
 
-export const PuffButton = styled(Button)`
-  @media (min-width: ${breakpoints.wide}px) {
-    display: none;
-  }
 `;

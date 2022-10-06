@@ -1,9 +1,13 @@
+import { InpContainer } from '../styles';
+
 import {
-  InpContainer,
   InpCopy,
   InpSignupContainer,
-  InpSignupCTAContainer,
   InpSignupHeadline
+} from '../newsletter/styles';
+
+import {
+  InpSignupCTAContainer,
 } from '../styles';
 import { NewsletterPuffButton } from '../newsletter-puff-button/NewsletterPuffButton';
 import React from 'react';

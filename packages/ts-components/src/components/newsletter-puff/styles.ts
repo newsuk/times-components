@@ -63,3 +63,17 @@ export const InpPreferencesText = styled(Text)`
   letter-spacing: -0.4px;
   margin-bottom: ${spacing(3)};
 `;
+
+export const InpSignupCTAContainer = styled(View)<{childStyle: any}>`
+display:     ${({childStyle }) =>
+childStyle === 'link' ? 'none' : 'block'};
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 220px;
+    margin: 0px auto;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    display:     ${({childStyle }) =>
+    childStyle === 'link' ? 'block' : 'none'};
+  }
+`;

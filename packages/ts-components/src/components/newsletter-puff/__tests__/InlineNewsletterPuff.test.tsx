@@ -2,7 +2,7 @@ import React from 'react';
 
 import { delay } from '@times-components/test-utils';
 
-import { render, fireEvent, cleanup } from '@testing-library/react';
+import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 import { MockedProvider } from '@times-components/provider-test-tools';
@@ -136,56 +136,6 @@ describe('Inline Newsletter Puff', () => {
     expect(component.baseElement).toMatchSnapshot();
   });
 
-  describe('Manage preferences ', () => {
-    beforeEach(() => {
-      mockDate.set(1620000000000);
-    });
-
-    afterEach(() => {
-      mockDate.reset();
-      jest.clearAllMocks();
-      cleanup();
-    });
-
-    it('renders the success view after subscribing ', async () => {
-      const component = renderComponent(() => true);
-
-      const signupButton = await component.findAllByText('One click sign up');
-      fireEvent.click(signupButton[0]);
-
-      expect(
-        await component.findByText('Manage preferences here')
-      ).toBeTruthy();
-      expect(component.baseElement).toMatchSnapshot();
-    });
-
-    it('triggers analytics event when manage preferences clicked', async () => {
-      const analyticsStream = jest.fn();
-      const component = renderComponent(analyticsStream);
-
-      const signupButton = await component.findAllByText('One click sign up');
-      fireEvent.click(signupButton[0]);
-
-      const link = await component.findByText('Manage preferences here');
-
-      analyticsStream.mockClear();
-
-      fireEvent.click(link);
-      expect(analyticsStream).toHaveBeenCalledWith({
-        action: 'Clicked',
-        object: 'NewsletterPuffLink',
-        component: 'ArticleSkeleton',
-        attrs: {
-          article_parent_name: 'RED BOX',
-          eventTime: '2021-05-03T00:00:00.000Z',
-          event_navigation_action: 'navigation',
-          event_navigation_browsing_method: 'click',
-          event_navigation_name: 'widget : puff : manage preferences here'
-        }
-      });
-    });
-  });
-
   describe('intersectionObserverTests', () => {
     let oldIntersectionObserver: typeof IntersectionObserver;
     beforeEach(() => {
@@ -216,33 +166,6 @@ describe('Inline Newsletter Puff', () => {
           event_navigation_action: 'navigation',
           event_navigation_browsing_method: 'automated',
           event_navigation_name: 'widget : puff : sign up now : displayed'
-        }
-      });
-    });
-    it('manage preferences here : displayed', async () => {
-      const analyticsStream = jest.fn();
-      const component = renderComponent(analyticsStream);
-
-      const signupButton = await component.findAllByText('One click sign up');
-      fireEvent.click(signupButton[0]);
-
-      await component.findByText('Manage preferences here');
-
-      analyticsStream.mockClear();
-
-      FakeIntersectionObserver.intersect();
-
-      expect(analyticsStream).toHaveBeenCalledWith({
-        action: 'Scrolled',
-        component: 'ArticleSkeleton',
-        object: 'NewsletterPuffLink',
-        attrs: {
-          article_parent_name: 'RED BOX',
-          eventTime: '2021-05-03T00:00:00.000Z',
-          event_navigation_action: 'navigation',
-          event_navigation_browsing_method: 'automated',
-          event_navigation_name:
-            'widget : puff : manage preferences here : displayed'
         }
       });
     });

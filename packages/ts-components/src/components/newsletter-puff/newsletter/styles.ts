@@ -3,12 +3,11 @@ import styled from 'styled-components';
 import {
   breakpoints,
   colours,
-fonts,
+  fonts,
   spacing
 } from '@times-components/ts-styleguide';
 
 import { View, Text } from '../styles';
-
 
 export const InpSubscribedContainer = styled(View)`
   justify-content: center;
@@ -21,7 +20,7 @@ export const InpSubscribedContainer = styled(View)`
 
 export const InpSignupContainer = styled(View)`
   justify-content: center;
-  padding: 12px;
+  padding: 12px 16px;
   @media (min-width: ${breakpoints.wide}px) {
     padding: 16px 10px;
     flex: 1;
@@ -41,19 +40,26 @@ export const InpCopy = styled(Text)`
   font-family: ${fonts.body};
   font-size: 18px;
   text-align: left;
-  letter-spacing: -0.4px;
+  letter-spacing: -0.5px;
   color: ${colours.functional.primary};
   margin-bottom: ${spacing(6)};
+  line-height: 26px;
 `;
 
-export const InpSignupCTAContainer = styled(View)`
+export const InpSignupCTAContainer = styled(View)<{childStyle: any}>`
+display: ${({childStyle }) =>
+childStyle === 'link' ? 'none' : 'block'};
   @media (min-width: ${breakpoints.medium}px) {
-    width: 220px;
+    width:   ${({childStyle }) =>
+    childStyle === 'button' && '220px'};;
     margin: 0px auto;
+
+
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    display: none;
+    display: ${({childStyle }) =>
+    childStyle === 'link' ? 'inline-block' : 'none'};
   }
 `;
 
@@ -61,4 +67,3 @@ export const InpPreferencesContainer = styled(View)`
   flex-direction: row;
   justify-content: center;
 `;
-

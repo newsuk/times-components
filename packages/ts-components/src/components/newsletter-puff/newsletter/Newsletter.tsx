@@ -13,10 +13,8 @@ import {
   InpSubscribedContainer
 } from './styles';
 
-import {
-    InpContainer,
-  } from '../styles';
-  
+import { InpContainer } from '../styles';
+
 // type InlineNewsletterPuffProps = {};
 
 export const Newsletter = ({
@@ -29,15 +27,29 @@ export const Newsletter = ({
   code,
   subscribeNewsletter
 }: any) => {
+  const PuffButton = (style: 'link' | 'button') => (
+    <InpSignupCTAContainer ref={intersectObserverRef} childStyle={style}>
+      <NewsletterPuffButton
+        style={style}
+        updatingSubscription={updatingSubscription}
+        onPress={() => {
+          if (!updatingSubscription) {
+            subscribeNewsletter({ variables: { code } });
+          }
+        }}
+      />
+    </InpSignupCTAContainer>
+  );
+
   return (
     <React.Fragment>
       <InpContainer sectionColour={section}>
         {updatingSubscription && <LoadingOverlay />}
-        {justSubscribed ? (
+        {!justSubscribed ? (
           <InpSubscribedContainer>
             <InpCopy>
               You've succesfully signed up to{' '}
-              <InpSignupHeadline>{headline}. </InpSignupHeadline>
+              <InpSignupHeadline>{`${headline}.`}  </InpSignupHeadline>
               <NewsletterPuffLink />
             </InpCopy>
             <InpPreferencesContainer />
@@ -47,27 +59,11 @@ export const Newsletter = ({
             <InpCopy>
               <InpSignupHeadline>{headline}: </InpSignupHeadline>
               {copy}
-              <NewsletterPuffButton
-                style="link"
-                updatingSubscription={updatingSubscription}
-                onPress={() => {
-                  if (!updatingSubscription) {
-                    subscribeNewsletter({ variables: { code } });
-                  }
-                }}
-              />
+
+              {PuffButton('link')}
             </InpCopy>
-            <InpSignupCTAContainer ref={intersectObserverRef}>
-              <NewsletterPuffButton
-                style="button"
-                updatingSubscription={updatingSubscription}
-                onPress={() => {
-                  if (!updatingSubscription) {
-                    subscribeNewsletter({ variables: { code } });
-                  }
-                }}
-              />
-            </InpSignupCTAContainer>
+
+            {PuffButton('button')}
           </InpSignupContainer>
         )}
       </InpContainer>
