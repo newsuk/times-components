@@ -3,7 +3,7 @@ import Link from '@times-components/link';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 
-import { InpPreferencesText } from './styles';
+import {  InpPreferencesText } from './styles';
 
 export const NewsletterPuffLink = ({ onPress }: any) => {
   return (
@@ -32,12 +32,17 @@ export const NewsletterPuffLink = ({ onPress }: any) => {
             });
         };
         return (
+
           <Link
             url="https://home.thetimes.co.uk/myNews"
             onPress={() => handlePress()}
+         
           >
-            <InpPreferencesText>Manage preferences here</InpPreferencesText>
+           
+            <InpPreferencesText ref={intersectObserverRef} >Manage preferences here</InpPreferencesText>
+     
           </Link>
+
         );
       }}
     </TrackingContextProvider>

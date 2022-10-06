@@ -6,7 +6,6 @@ import { subscribeNewsletter as subscribeNewsletterMutation } from '@times-compo
 import { Placeholder } from '@times-components/image';
 
 import {
-  NewsletterPuffLinkButton,
   NewsletterPuffButton
 } from './NewsletterPuffButton';
 
@@ -37,7 +36,6 @@ export const InlineNewsletterPuff = ({
   code,
   copy,
   headline,
-  label,
   sectionColour
 }: InlineNewsletterPuffProps) => {
   const [justSubscribed, setJustSubscribed] = useState(false);
@@ -109,7 +107,7 @@ export const InlineNewsletterPuff = ({
                   <React.Fragment>
                     <InpContainer sectionColour={section}>
                       {updatingSubscription && <LoadingOverlay />}
-                      {!justSubscribed ? (
+                      {justSubscribed ? (
                         <InpSubscribedContainer>
                           <InpCopy>
                             You've succesfully signed up to{' '}

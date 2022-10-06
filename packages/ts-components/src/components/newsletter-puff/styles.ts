@@ -82,6 +82,8 @@ export const Loader = styled.div`
   left: 37%;
 `;
 
+
+
 export const InpContainer = styled(View)<{ sectionColour?: string }>`
   border-top: 2px solid
     ${({ sectionColour }) =>
@@ -169,11 +171,11 @@ export const InpIconContainer = styled(View)`
 `;
 
 export const InpPreferencesView = styled(View)`
-  display: flex;
-  flex-direction: row;
 `;
 
 export const LinkButton = styled.button`
+
+display:none;
   color: ${colours.functional.action};
 
 
@@ -184,9 +186,17 @@ export const LinkButton = styled.button`
   border: none;
   background-color: white;
   margin-bottom: ${spacing(6)};
+
+  @media (min-width: ${breakpoints.wide}px) {
+display:block;
+  }
 `;
 
 export const PuffButton = styled(Button)`
+
+@media (min-width: ${breakpoints.wide}px) {
+  display:none;
+    }
 `;
 
 export const buttonStyles = {

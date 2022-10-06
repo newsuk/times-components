@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { buttonStyles, PuffButton, LinkButton, linkStyles } from './styles';
+import { buttonStyles, PuffButton, LinkButton } from './styles';
 import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvider';
 
 type NewsletterPuffProps = {

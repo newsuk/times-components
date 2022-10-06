@@ -98,7 +98,7 @@ describe('Inline Newsletter Puff', () => {
 
   it('renders signup state', async () => {
     const component = renderComponent();
-    await component.findByText('Sign up now');
+    await component.findAllByText('One click sign up');
     expect(component.baseElement).toMatchSnapshot();
   });
 
@@ -136,41 +136,6 @@ describe('Inline Newsletter Puff', () => {
     expect(component.baseElement).toMatchSnapshot();
   });
 
-  describe('Clicking Subscribe', () => {
-    it("renders 'saving' when the button is clicked", async () => {
-      const component = renderComponent(() => true);
-
-      const signupButton = await component.findByText('Sign up now');
-      fireEvent.click(signupButton);
-
-      expect(component.baseElement).toMatchSnapshot();
-      expect(await component.findByText('Saving…')).toBeTruthy();
-    });
-
-    it('triggers analytics when subscribed', async () => {
-      const analyticsStream = jest.fn();
-      const component = renderComponent(analyticsStream);
-
-      const signupButton = await component.findByText('Sign up now');
-      fireEvent.click(signupButton);
-
-      await component.findByText('Saving…');
-
-      expect(analyticsStream).toHaveBeenCalledWith({
-        action: 'Clicked',
-        component: 'ArticleSkeleton',
-        object: 'NewsletterPuffButton',
-        attrs: {
-          article_parent_name: 'RED BOX',
-          eventTime: '2021-05-03T00:00:00.000Z',
-          event_navigation_action: 'navigation',
-          event_navigation_browsing_method: 'click',
-          event_navigation_name: 'widget : puff : sign up now'
-        }
-      });
-    });
-  });
-
   describe('Manage preferences ', () => {
     beforeEach(() => {
       mockDate.set(1620000000000);
@@ -181,11 +146,12 @@ describe('Inline Newsletter Puff', () => {
       jest.clearAllMocks();
       cleanup();
     });
+
     it('renders the success view after subscribing ', async () => {
       const component = renderComponent(() => true);
 
-      const signupButton = await component.findByText('Sign up now');
-      fireEvent.click(signupButton);
+      const signupButton = await component.findAllByText('One click sign up');
+      fireEvent.click(signupButton[0]);
 
       expect(
         await component.findByText('Manage preferences here')
@@ -197,8 +163,8 @@ describe('Inline Newsletter Puff', () => {
       const analyticsStream = jest.fn();
       const component = renderComponent(analyticsStream);
 
-      const signupButton = await component.findByText('Sign up now');
-      fireEvent.click(signupButton);
+      const signupButton = await component.findAllByText('One click sign up');
+      fireEvent.click(signupButton[0]);
 
       const link = await component.findByText('Manage preferences here');
 
@@ -232,11 +198,11 @@ describe('Inline Newsletter Puff', () => {
       window.IntersectionObserver = oldIntersectionObserver;
     });
 
-    it('sign up now : displayed', async () => {
+    it('One click sign up : displayed', async () => {
       const analyticsStream = jest.fn();
       const component = renderComponent(analyticsStream);
 
-      await component.findByText('Sign up now');
+      await component.findAllByText('One click sign up');
 
       FakeIntersectionObserver.intersect();
 
@@ -257,8 +223,8 @@ describe('Inline Newsletter Puff', () => {
       const analyticsStream = jest.fn();
       const component = renderComponent(analyticsStream);
 
-      const signupButton = await component.findByText('Sign up now');
-      fireEvent.click(signupButton);
+      const signupButton = await component.findAllByText('One click sign up');
+      fireEvent.click(signupButton[0]);
 
       await component.findByText('Manage preferences here');
 

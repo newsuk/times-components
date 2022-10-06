@@ -4,7 +4,6 @@ import {
   InpSignupContainer,
   InpSignupCTAContainer,
   InpSignupHeadline,
-  InpSignupLabel
 } from './styles';
 import { NewsletterPuffButton } from './NewsletterPuffButton';
 import React from 'react';
@@ -12,21 +11,18 @@ import React from 'react';
 type PreviewNewsletterPuffProps = {
   copy: string;
   headline: string;
-  label?: string;
 };
 
 export const PreviewNewsletterPuff = ({
   copy,
   headline,
-  label
 }: PreviewNewsletterPuffProps) => (
   <InpContainer>
     <InpSignupContainer>
-      <InpSignupLabel>{label}</InpSignupLabel>
       <InpSignupHeadline>{headline}</InpSignupHeadline>
       <InpCopy>{copy}</InpCopy>
       <InpSignupCTAContainer>
-        <NewsletterPuffButton />
+        <NewsletterPuffButton style='button'/>
       </InpSignupCTAContainer>
     </InpSignupContainer>
   </InpContainer>

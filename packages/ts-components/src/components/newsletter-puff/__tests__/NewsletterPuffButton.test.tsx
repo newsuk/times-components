@@ -21,26 +21,17 @@ describe('NewsletterPuffButton', () => {
 
     const component = render(
       <NewsletterPuffButton
+      style='button'
         updatingSubscription={false}
         onPress={mockedOnPress}
       />
     );
 
-    expect(component.baseElement).toMatchSnapshot();
+    const oneClickSignUp = component.getByText('One click sign up')
 
-    fireEvent.click(component.getByText('Sign up now'));
+    fireEvent.click(oneClickSignUp);
 
     expect(mockedOnPress).toHaveBeenCalledTimes(1);
-  });
-
-  it('renders the button with the text `Saving...`', () => {
-    const mockedOnPress = jest.fn();
-
-    const component = render(
-      <NewsletterPuffButton updatingSubscription onPress={mockedOnPress} />
-    );
-
-    expect(component.baseElement).toMatchSnapshot();
   });
 
   it('should track button viewed and clicked in analytics', () => {
@@ -52,11 +43,13 @@ describe('NewsletterPuffButton', () => {
         analyticsStream={mockedAnalyticsStream}
         context={{ component: 'ArticleSkeleton' }}
       >
-        <NewsletterPuffButton updatingSubscription={false} onPress={onPress} />
+        <NewsletterPuffButton updatingSubscription={false} onPress={onPress}  style='button'/>
       </TrackingContextProvider>
     );
 
-    fireEvent.click(component.getByText('Sign up now'));
+    const oneClickSignUp = component.getByText('One click sign up')
+
+    fireEvent.click(oneClickSignUp);
 
     expect(onPress).toHaveBeenCalled();
 
