@@ -1,12 +1,12 @@
 import React from 'react';
 
 import { buttonStyles, PuffButton, LinkButton } from './styles';
-import { useTrackingContext } from '../../helpers/tracking/TrackingContextProvider';
+import { useTrackingContext } from '../../../helpers/tracking/TrackingContextProvider';
 
 type NewsletterPuffProps = {
   onPress?: () => void;
   updatingSubscription?: boolean;
-  style: 'link' | 'button'
+  style: 'link' | 'button';
 };
 
 export const NewsletterPuffButton = ({
@@ -31,24 +31,14 @@ export const NewsletterPuffButton = ({
     }
   };
 
-
-  return (
-
-
-  style === 'button' ?
+  return style === 'button' ? (
     <PuffButton
       title="One click sign up"
       onPress={() => handlePress()}
       style={buttonStyles}
       underlayColor="transparent"
-    /> :
-<LinkButton     onClick={() => handlePress()}>
-One click sign up
-  
-
-
-    </LinkButton>
-  
+    />
+  ) : (
+    <LinkButton onClick={() => handlePress()}>One click sign up</LinkButton>
   );
 };
-

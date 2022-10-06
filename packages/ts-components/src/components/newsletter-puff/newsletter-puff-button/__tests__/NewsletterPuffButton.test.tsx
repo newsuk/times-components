@@ -3,7 +3,7 @@ import React from 'react';
 import { render, cleanup, fireEvent } from '@testing-library/react';
 import mockDate from 'mockdate';
 import { NewsletterPuffButton } from '../NewsletterPuffButton';
-import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
+import { TrackingContextProvider } from '../../../../helpers/tracking/TrackingContextProvider';
 
 describe('NewsletterPuffButton', () => {
   beforeEach(() => {
@@ -21,13 +21,13 @@ describe('NewsletterPuffButton', () => {
 
     const component = render(
       <NewsletterPuffButton
-      style='button'
+        style="button"
         updatingSubscription={false}
         onPress={mockedOnPress}
       />
     );
 
-    const oneClickSignUp = component.getByText('One click sign up')
+    const oneClickSignUp = component.getByText('One click sign up');
 
     fireEvent.click(oneClickSignUp);
 
@@ -43,11 +43,15 @@ describe('NewsletterPuffButton', () => {
         analyticsStream={mockedAnalyticsStream}
         context={{ component: 'ArticleSkeleton' }}
       >
-        <NewsletterPuffButton updatingSubscription={false} onPress={onPress}  style='button'/>
+        <NewsletterPuffButton
+          updatingSubscription={false}
+          onPress={onPress}
+          style="button"
+        />
       </TrackingContextProvider>
     );
 
-    const oneClickSignUp = component.getByText('One click sign up')
+    const oneClickSignUp = component.getByText('One click sign up');
 
     fireEvent.click(oneClickSignUp);
 

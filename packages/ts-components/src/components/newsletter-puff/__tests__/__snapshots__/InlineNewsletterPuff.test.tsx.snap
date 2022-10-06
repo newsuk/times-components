@@ -4,18 +4,18 @@ exports[`Inline Newsletter Puff Manage preferences  renders the success view aft
 <body>
   <div>
     <div
-      class="sc-bdVaJa sc-EHOje hyukSd"
+      class="sc-htpNat sc-ifAKCX fhfQYW"
     >
       <div
-        class="sc-bdVaJa sc-bZQynM WUEmI"
+        class="sc-htpNat sc-dnqmqq duLROv"
       >
         <div
-          class="sc-bwzfXH sc-dnqmqq bLBWjH"
+          class="sc-bxivhb sc-gqjmRU ibfCvU"
         >
           You've succesfully signed up to
            
           <div
-            class="sc-bwzfXH sc-htoDjs kzNeHZ"
+            class="sc-bxivhb sc-gZMcBi kRYdQT"
           >
             Politics. Explained.
             . 
@@ -25,14 +25,14 @@ exports[`Inline Newsletter Puff Manage preferences  renders the success view aft
             href="https://home.thetimes.co.uk/myNews"
           >
             <div
-              class="sc-bwzfXH sc-gqjmRU lkkVzv"
+              class="sc-bxivhb sc-EHOje feQXiq"
             >
               Manage preferences here
             </div>
           </a>
         </div>
         <div
-          class="sc-bdVaJa sc-gZMcBi iZxCaH"
+          class="sc-htpNat sc-jTzLTM gzkEml"
         />
       </div>
     </div>
@@ -50,7 +50,7 @@ exports[`Inline Newsletter Puff renders placeholder when loading 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa sc-EHOje frVZJs"
+      class="sc-htpNat sc-ifAKCX hTOJqD"
       style="height: 257px;"
     >
       <div
@@ -88,29 +88,29 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa sc-EHOje hyukSd"
+      class="sc-htpNat sc-ifAKCX fhfQYW"
     >
       <div
-        class="sc-bdVaJa sc-gzVnrw fvtpyU"
+        class="sc-htpNat sc-iwsKbI eqrSlC"
       >
         <div
-          class="sc-bwzfXH sc-dnqmqq bLBWjH"
+          class="sc-bxivhb sc-gqjmRU ibfCvU"
         >
           <div
-            class="sc-bwzfXH sc-htoDjs kzNeHZ"
+            class="sc-bxivhb sc-gZMcBi kRYdQT"
           >
             Politics. Explained.
             : 
           </div>
           Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
           <button
-            class="sc-fjdhpX dwNMSq"
+            class="sc-bdVaJa QwSgx"
           >
             One click sign up
           </button>
         </div>
         <div
-          class="sc-bdVaJa sc-iwsKbI hKKkan"
+          class="sc-htpNat sc-VigVT ipvAJp"
         >
           <button
             style="font-family: GillSansMTStd-Medium; font-size: 16px; line-height: 0; align-items: center; background-color: transparent; border-radius: 2px; color: rgb(29, 29, 27); cursor: pointer; height: 48px; justify-content: center; min-width: 100px; padding-top: 4px; width: 100%; border-color: #1d1d1b; border-width: 1px; elevation: 0; letter-spacing: 0.2px;"
@@ -129,29 +129,29 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
 <body>
   <div>
     <div
-      class="sc-bdVaJa sc-EHOje hyukSd"
+      class="sc-htpNat sc-ifAKCX fhfQYW"
     >
       <div
-        class="sc-bdVaJa sc-gzVnrw fvtpyU"
+        class="sc-htpNat sc-iwsKbI eqrSlC"
       >
         <div
-          class="sc-bwzfXH sc-dnqmqq bLBWjH"
+          class="sc-bxivhb sc-gqjmRU ibfCvU"
         >
           <div
-            class="sc-bwzfXH sc-htoDjs kzNeHZ"
+            class="sc-bxivhb sc-gZMcBi kRYdQT"
           >
             Politics. Explained.
             : 
           </div>
           Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
           <button
-            class="sc-fjdhpX dwNMSq"
+            class="sc-bdVaJa QwSgx"
           >
             One click sign up
           </button>
         </div>
         <div
-          class="sc-bdVaJa sc-iwsKbI hKKkan"
+          class="sc-htpNat sc-VigVT ipvAJp"
         >
           <button
             style="font-family: GillSansMTStd-Medium; font-size: 16px; line-height: 0; align-items: center; background-color: transparent; border-radius: 2px; color: rgb(29, 29, 27); cursor: pointer; height: 48px; justify-content: center; min-width: 100px; padding-top: 4px; width: 100%; border-color: #1d1d1b; border-width: 1px; elevation: 0; letter-spacing: 0.2px;"

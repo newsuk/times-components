@@ -11,7 +11,7 @@ import { AutoNewsletterPuff } from './AutoNewsletterPuff';
 import { InlineNewsletterPuff } from './InlineNewsletterPuff';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
-import { PreviewNewsletterPuff } from './PreviewNewsletterPuff';
+import { PreviewNewsletterPuff } from './preview-newsletter-puff/PreviewNewsletterPuff';
 
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 

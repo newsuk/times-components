@@ -2,8 +2,8 @@ import React from 'react';
 import { render, cleanup, fireEvent } from '@testing-library/react';
 import mockDate from 'mockdate';
 import { NewsletterPuffLink } from '../NewsletterPuffLink';
-import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
-import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
+import { TrackingContextProvider } from '../../../../helpers/tracking/TrackingContextProvider';
+import FakeIntersectionObserver from '../../../../test-utils/FakeIntersectionObserver';
 
 describe('NewsletterPuffLink', () => {
   let oldIntersectionObserver: typeof IntersectionObserver;
@@ -36,7 +36,7 @@ describe('NewsletterPuffLink', () => {
     );
     FakeIntersectionObserver.intersect();
 
-    expect(component.getByText('Manage preferences here')!)
+    expect(component.getByText('Manage preferences here')!);
 
     expect(mockedAnalyticsStream).toHaveBeenCalledWith({
       object: 'NewsletterPuffLink',
