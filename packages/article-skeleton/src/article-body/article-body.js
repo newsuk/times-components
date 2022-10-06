@@ -256,14 +256,14 @@ const renderers = ({
 
       case "newsletter-puff":
         // eslint-disable-next-line no-case-declarations
-        const { code, copy, headline, section } = attributes;
+        const { code, copy, headline } = attributes;
 
         return isPreview ? (
           <div id={id}>
             <PreviewNewsletterPuff
               copy={safeDecodeURIComponent(copy)}
               headline={safeDecodeURIComponent(headline)}
-              label={safeDecodeURIComponent(label)}
+              section={section}
             />
           </div>
         ) : (
@@ -274,7 +274,7 @@ const renderers = ({
               code={code}
               copy={safeDecodeURIComponent(copy)}
               headline={safeDecodeURIComponent(headline)}
-              sectionColour={section}
+              section={section}
             />
           </div>
         );
@@ -428,18 +428,17 @@ const renderers = ({
   },
   autoNewsletterPuff(key, { element }) {
     const {
-      attributes: { code, copy, headline, label, section }
+      attributes: { code, copy, headline }
     } = element;
 
     return (
-
       <AutoNewsletterPuff
         analyticsStream={analyticsStream}
         key={key}
         code={code}
         copy={copy}
         headline={headline}
-        sectionColour={section}
+        section={section}
       />
         );
   },
