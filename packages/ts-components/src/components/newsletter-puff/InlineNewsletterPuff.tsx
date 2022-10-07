@@ -8,7 +8,7 @@ import { Placeholder } from '@times-components/image';
 import { Newsletter } from './newsletter/Newsletter';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
-import { capitaliseFirstCharacter } from '../../helpers/text-formatting/CapitalizeFirstCharacter';
+import { capitaliseFirstCharacter } from '../../helpers/text-formatting/CapitaliseFirstCharacter';
 
 import { InpContainer } from './styles';
 
