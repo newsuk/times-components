@@ -13,8 +13,7 @@ import {
 const defaultProps = {
   code: '123',
   copy: 'abc',
-  headline: 'headline',
-  label: 'news'
+  headline: 'headline'
 };
 
 const mocks = [

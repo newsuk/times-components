@@ -26,17 +26,6 @@ export const InlineNewsletterPuff = ({
 }: InlineNewsletterPuffProps) => {
   const [justSubscribed, setJustSubscribed] = useState(false);
 
-  const formatSectionName = (sectionName?: string) => {
-    if (!sectionName) {
-      return;
-    }
-    const firstLetter = sectionName.charAt(0);
-    const restOfString = sectionName.split(firstLetter);
-    return `${firstLetter.toUpperCase()}${restOfString[1]}`;
-  };
-
-  const formattedSectionName = formatSectionName(section);
-
   return (
     <GetNewsletter code={code} ssr={false} debounceTimeMs={0}>
       {({ isLoading, error, newsletter }: any) => {
@@ -88,7 +77,7 @@ export const InlineNewsletterPuff = ({
                 {({ intersectObserverRef }) => (
                   <Newsletter
                     intersectObserverRef={intersectObserverRef}
-                    section={formattedSectionName}
+                    section={section}
                     justSubscribed={justSubscribed}
                     headline={headline}
                     updatingSubscription={updatingSubscription}
