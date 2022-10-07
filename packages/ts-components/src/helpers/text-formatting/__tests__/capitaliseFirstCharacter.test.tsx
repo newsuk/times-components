@@ -2,15 +2,12 @@ import { capitaliseFirstCharacter } from '../capitaliseFirstCharacter';
 
 describe('capitaliseFirstCharacter()', () => {
   it('capitalizes the first character of a string', async () => {
-    const copy = capitaliseFirstCharacter ('sport');
+    const copy = capitaliseFirstCharacter('sport');
     expect(copy).toBe('Sport');
   });
 
   it('returns early when a string is not passed as a parameter', async () => {
-    const copy = capitaliseFirstCharacter ();
+    const copy = capitaliseFirstCharacter();
     expect(copy).toBe(undefined);
   });
-
-
 });
-

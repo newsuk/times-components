@@ -10,8 +10,7 @@ const renderComponent = () =>
     <PreviewNewsletterPuff
       {...{
         code: 'TNL-119',
-
-        label: 'STRAIGHT IN YOUR INBOX',
+        section: 'news',
         headline: 'Politics. Explained.',
         copy:
           'Sign up to receive our brilliant Red Box newsletter, Matt Chorley`s poke at politics delivered every weekday morning at 8am.'
