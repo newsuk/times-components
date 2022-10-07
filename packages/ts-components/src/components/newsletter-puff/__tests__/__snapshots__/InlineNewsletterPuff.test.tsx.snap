@@ -48,7 +48,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
 <body>
   <div>
     <div
-      class="sc-bwzfXH sc-bxivhb iFwRag"
+      class="sc-bwzfXH sc-bxivhb jahLAV"
     >
       <div
         class="sc-bwzfXH sc-iwsKbI cuimXU"
@@ -64,17 +64,17 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
           </div>
           Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
           <div
-            class="sc-bwzfXH sc-VigVT fmakBT"
+            class="sc-bwzfXH sc-VigVT cSaWjg"
           >
             <button
-              class="sc-bdVaJa jpAYNt"
+              class="sc-bdVaJa ilXVfL"
             >
               One click sign up
             </button>
           </div>
         </div>
         <div
-          class="sc-bwzfXH sc-VigVT eLRpCm"
+          class="sc-bwzfXH sc-VigVT iWOUWL"
         >
           <button
             style="font-family: GillSansMTStd-Medium; font-size: 16px; line-height: 0; align-items: center; background-color: transparent; border-radius: 2px; color: rgb(29, 29, 27); cursor: pointer; height: 48px; justify-content: center; min-width: 100px; padding-top: 4px; width: 100%; border-color: #1d1d1b; border-width: 1px; elevation: 0; letter-spacing: 0.2px;"
@@ -93,7 +93,7 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
 <body>
   <div>
     <div
-      class="sc-bwzfXH sc-bxivhb iFwRag"
+      class="sc-bwzfXH sc-bxivhb jahLAV"
     >
       <div
         class="sc-bwzfXH sc-iwsKbI cuimXU"
@@ -109,17 +109,17 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
           </div>
           Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
           <div
-            class="sc-bwzfXH sc-VigVT fmakBT"
+            class="sc-bwzfXH sc-VigVT cSaWjg"
           >
             <button
-              class="sc-bdVaJa jpAYNt"
+              class="sc-bdVaJa ilXVfL"
             >
               One click sign up
             </button>
           </div>
         </div>
         <div
-          class="sc-bwzfXH sc-VigVT eLRpCm"
+          class="sc-bwzfXH sc-VigVT iWOUWL"
         >
           <button
             style="font-family: GillSansMTStd-Medium; font-size: 16px; line-height: 0; align-items: center; background-color: transparent; border-radius: 2px; color: rgb(29, 29, 27); cursor: pointer; height: 48px; justify-content: center; min-width: 100px; padding-top: 4px; width: 100%; border-color: #1d1d1b; border-width: 1px; elevation: 0; letter-spacing: 0.2px;"

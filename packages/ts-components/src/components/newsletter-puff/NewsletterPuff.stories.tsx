@@ -72,7 +72,7 @@ const showcase = {
                 'copy',
                 'We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.'
               )}
-              sectionColour='sport'
+              section="sport"
             />
           </TrackingContextProvider>
         </MockedProvider>
@@ -91,7 +91,7 @@ const showcase = {
             context={{ component: 'ArticleSkeleton' }}
           >
             <InlineNewsletterPuff
-              sectionColour="news"
+              section="news"
               code={text('code', 'TNL-101')}
               headline={text('headline', 'Best of Times')}
               copy={text(
@@ -111,6 +111,7 @@ const showcase = {
       // eslint-disable-next-line react/prop-types
       component: ({ text }: any) => (
         <PreviewNewsletterPuff
+          section="sport"
           headline={text('headline', 'Best of Times')}
           copy={text(
             'copy',

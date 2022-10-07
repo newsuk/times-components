@@ -14,7 +14,7 @@ import { InpContainer } from './styles';
 type InlineNewsletterPuffProps = {
   copy: string;
   headline: string;
-  sectionColour?: string;
+  section?: string;
   code: string;
 };
 
@@ -22,20 +22,20 @@ export const InlineNewsletterPuff = ({
   code,
   copy,
   headline,
-  sectionColour
+  section
 }: InlineNewsletterPuffProps) => {
   const [justSubscribed, setJustSubscribed] = useState(false);
 
-  const capitiliseUpperCase = (section?: string) => {
-    if (!section) {
+  const formatSectionName = (sectionName?: string) => {
+    if (!sectionName) {
       return;
     }
-    const firstLetter = section.charAt(0);
-    const restOfString = section.split(firstLetter);
+    const firstLetter = sectionName.charAt(0);
+    const restOfString = sectionName.split(firstLetter);
     return `${firstLetter.toUpperCase()}${restOfString[1]}`;
   };
 
-  const section = capitiliseUpperCase(sectionColour);
+  const formattedSectionName = formatSectionName(section);
 
   return (
     <GetNewsletter code={code} ssr={false} debounceTimeMs={0}>
@@ -88,7 +88,7 @@ export const InlineNewsletterPuff = ({
                 {({ intersectObserverRef }) => (
                   <Newsletter
                     intersectObserverRef={intersectObserverRef}
-                    section={section}
+                    section={formattedSectionName}
                     justSubscribed={justSubscribed}
                     headline={headline}
                     updatingSubscription={updatingSubscription}

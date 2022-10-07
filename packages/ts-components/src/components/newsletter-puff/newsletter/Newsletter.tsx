@@ -43,7 +43,7 @@ export const Newsletter = ({
 
   return (
     <React.Fragment>
-      <InpContainer sectionColour={section}>
+      <InpContainer section={section}>
         {updatingSubscription && <LoadingOverlay />}
         {justSubscribed ? (
           <InpSubscribedContainer>

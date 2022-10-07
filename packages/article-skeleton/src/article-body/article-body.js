@@ -268,7 +268,7 @@ const renderers = ({
           </div>
         ) : (
           <div id={id}>
-            <InlineNewsletterPuff 
+            <InlineNewsletterPuff
               analyticsStream={analyticsStream}
               key={key}
               code={code}
@@ -440,7 +440,7 @@ const renderers = ({
         headline={headline}
         section={section}
       />
-        );
+    );
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {
     return (

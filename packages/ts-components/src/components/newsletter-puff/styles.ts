@@ -35,10 +35,9 @@ export const Text = styled.div`
   word-wrap: break-word;
 `;
 
-export const InpContainer = styled(View)<{ sectionColour?: string }>`
+export const InpContainer = styled(View)<{ section?: string }>`
   border-top: 2px solid
-    ${({ sectionColour }) =>
-      sectionColour ? colours.section[sectionColour] : 'black'};
+    ${({ section }) => (section ? colours.section[section] : 'black')};
   display: flex;
   flex-direction: column;
   margin-right: ${spacing(2)};
