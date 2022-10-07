@@ -4,22 +4,22 @@ exports[`Inline Newsletter Puff renders loading state state 1`] = `
 <body>
   <div>
     <div
-      class="sc-bwzfXH sc-bxivhb jahLAV"
+      class="sc-bwzfXH sc-bxivhb iFwRag"
     >
       <div
         class="sc-bwzfXH sc-bZQynM fcQclH"
       >
         <div
-          class="sc-bwzfXH sc-htoDjs bzZAJn"
+          class="sc-bwzfXH sc-htoDjs bnLiNW"
         >
           <div
-            class="sc-gzVnrw fNbZDI"
+            class="sc-gzVnrw TDlzj"
           />
           <div
-            class="sc-gzVnrw fNbZDI"
+            class="sc-gzVnrw TDlzj"
           />
           <div
-            class="sc-gzVnrw fNbZDI"
+            class="sc-gzVnrw TDlzj"
           />
         </div>
       </div>
@@ -40,7 +40,7 @@ exports[`Inline Newsletter Puff renders loading state state 1`] = `
             class="sc-bwzfXH sc-VigVT cSaWjg"
           >
             <button
-              class="sc-bdVaJa ilXVfL"
+              class="sc-bdVaJa bXCphr"
             >
               One click sign up
             </button>
@@ -110,7 +110,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
 <body>
   <div>
     <div
-      class="sc-bwzfXH sc-bxivhb jahLAV"
+      class="sc-bwzfXH sc-bxivhb iFwRag"
     >
       <div
         class="sc-bwzfXH sc-iwsKbI cuimXU"
@@ -129,7 +129,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
             class="sc-bwzfXH sc-VigVT cSaWjg"
           >
             <button
-              class="sc-bdVaJa ilXVfL"
+              class="sc-bdVaJa bXCphr"
             >
               One click sign up
             </button>
@@ -155,7 +155,7 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
 <body>
   <div>
     <div
-      class="sc-bwzfXH sc-bxivhb jahLAV"
+      class="sc-bwzfXH sc-bxivhb iFwRag"
     >
       <div
         class="sc-bwzfXH sc-iwsKbI cuimXU"
@@ -174,7 +174,7 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
             class="sc-bwzfXH sc-VigVT cSaWjg"
           >
             <button
-              class="sc-bdVaJa ilXVfL"
+              class="sc-bdVaJa bXCphr"
             >
               One click sign up
             </button>

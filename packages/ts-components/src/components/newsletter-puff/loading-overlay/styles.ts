@@ -24,11 +24,7 @@ export const Bubble = styled.div`
   margin: 0 7px;
   width: 16px;
   height: 16px;
-
   background: #c4c4c4;
-
-  :nth-child(1) {
-  }
 
   :nth-child(2) {
     animation-delay: 250ms;
@@ -48,7 +44,6 @@ export const Bubble = styled.div`
 export const Loader = styled(View)`
   display: flex;
   flex-direction: row;
-
   left: 40%;
   top: 45%;
 

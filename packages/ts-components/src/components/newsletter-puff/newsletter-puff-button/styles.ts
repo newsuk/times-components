@@ -19,7 +19,6 @@ export const buttonStyles = {
 
 export const LinkButton = styled.button`
   color: ${colours.functional.action};
-
   font-family: ${fonts.body};
   font-size: 18px;
   text-align: left;
