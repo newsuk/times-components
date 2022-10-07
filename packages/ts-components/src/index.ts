@@ -30,7 +30,7 @@ export {
 } from './components/newsletter-puff/InlineNewsletterPuff';
 export {
   PreviewNewsletterPuff
-} from './components/newsletter-puff/PreviewNewsletterPuff';
+} from './components/newsletter-puff/preview-newsletter-puff/PreviewNewsletterPuff';
 
 // Sport Components
 export {

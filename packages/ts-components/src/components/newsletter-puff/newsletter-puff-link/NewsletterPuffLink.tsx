@@ -1,15 +1,9 @@
 import React from 'react';
 import Link from '@times-components/link';
-import { IconForwardArrow } from '@times-components/icons';
-import { colours } from '@times-components/ts-styleguide';
 
-import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
+import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 
-import {
-  InpPreferencesView,
-  InpPreferencesText,
-  InpIconContainer
-} from './styles';
+import { InpPreferencesText } from '../styles';
 
 export const NewsletterPuffLink = ({ onPress }: any) => {
   return (
@@ -42,12 +36,9 @@ export const NewsletterPuffLink = ({ onPress }: any) => {
             url="https://home.thetimes.co.uk/myNews"
             onPress={() => handlePress()}
           >
-            <InpPreferencesView ref={intersectObserverRef}>
-              <InpPreferencesText>Manage preferences here</InpPreferencesText>
-              <InpIconContainer>
-                <IconForwardArrow fillColour={colours.functional.action} />
-              </InpIconContainer>
-            </InpPreferencesView>
+            <InpPreferencesText ref={intersectObserverRef}>
+              Manage preferences here
+            </InpPreferencesText>
           </Link>
         );
       }}

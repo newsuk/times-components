@@ -13,9 +13,7 @@ import {
 const defaultProps = {
   code: '123',
   copy: 'abc',
-  headline: 'headline',
-  imageUri: 'http://jpeg.jpg',
-  label: 'news'
+  headline: 'headline'
 };
 
 const mocks = [

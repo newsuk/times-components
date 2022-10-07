@@ -3,32 +3,19 @@ import { Mutation } from 'react-apollo';
 
 import { GetNewsletter } from '@times-components/provider';
 import { subscribeNewsletter as subscribeNewsletterMutation } from '@times-components/provider-queries';
-import Image, { Placeholder } from '@times-components/image';
+import { Placeholder } from '@times-components/image';
 
-import { NewsletterPuffButton } from './NewsletterPuffButton';
-
-import { NewsletterPuffLink } from './NewsletterPuffLink';
+import { Newsletter } from './newsletter/Newsletter';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
+import { capitaliseFirstCharacter } from '../../helpers/text-formatting/CapitaliseFirstCharacter';
 
-import {
-  InpContainer,
-  InpCopy,
-  InpImageContainer,
-  InpPreferencesContainer,
-  InpSignupContainer,
-  InpSignupCTAContainer,
-  InpSignupHeadline,
-  InpSignupLabel,
-  InpSubscribedContainer,
-  InpSubscribedHeadline
-} from './styles';
+import { InpContainer } from './styles';
 
 type InlineNewsletterPuffProps = {
   copy: string;
   headline: string;
-  imageUri: string;
-  label?: string;
+  section?: string;
   code: string;
 };
 
@@ -36,8 +23,7 @@ export const InlineNewsletterPuff = ({
   code,
   copy,
   headline,
-  imageUri,
-  label
+  section
 }: InlineNewsletterPuffProps) => {
   const [justSubscribed, setJustSubscribed] = useState(false);
 
@@ -90,39 +76,16 @@ export const InlineNewsletterPuff = ({
                 }}
               >
                 {({ intersectObserverRef }) => (
-                  <InpContainer>
-                    <InpImageContainer>
-                      <Image aspectRatio={1.42} uri={imageUri} />
-                    </InpImageContainer>
-                    {justSubscribed ? (
-                      <InpSubscribedContainer>
-                        <InpSubscribedHeadline>
-                          {`You’ve successfully signed up to ${
-                            newsletter.title
-                          }`}
-                        </InpSubscribedHeadline>
-                        <InpPreferencesContainer>
-                          <NewsletterPuffLink />
-                        </InpPreferencesContainer>
-                      </InpSubscribedContainer>
-                    ) : (
-                      <InpSignupContainer>
-                        <InpSignupLabel>{label}</InpSignupLabel>
-                        <InpSignupHeadline>{headline}</InpSignupHeadline>
-                        <InpCopy>{copy}</InpCopy>
-                        <InpSignupCTAContainer ref={intersectObserverRef}>
-                          <NewsletterPuffButton
-                            updatingSubscription={updatingSubscription}
-                            onPress={() => {
-                              if (!updatingSubscription) {
-                                subscribeNewsletter({ variables: { code } });
-                              }
-                            }}
-                          />
-                        </InpSignupCTAContainer>
-                      </InpSignupContainer>
-                    )}
-                  </InpContainer>
+                  <Newsletter
+                    intersectObserverRef={intersectObserverRef}
+                    section={capitaliseFirstCharacter(section)}
+                    justSubscribed={justSubscribed}
+                    headline={headline}
+                    updatingSubscription={updatingSubscription}
+                    copy={copy}
+                    code={code}
+                    subscribeNewsletter={subscribeNewsletter}
+                  />
                 )}
               </TrackingContextProvider>
             )}

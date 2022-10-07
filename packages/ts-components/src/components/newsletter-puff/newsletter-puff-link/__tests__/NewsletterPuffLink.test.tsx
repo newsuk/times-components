@@ -2,8 +2,8 @@ import React from 'react';
 import { render, cleanup, fireEvent } from '@testing-library/react';
 import mockDate from 'mockdate';
 import { NewsletterPuffLink } from '../NewsletterPuffLink';
-import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
-import FakeIntersectionObserver from '../../../test-utils/FakeIntersectionObserver';
+import { TrackingContextProvider } from '../../../../helpers/tracking/TrackingContextProvider';
+import FakeIntersectionObserver from '../../../../test-utils/FakeIntersectionObserver';
 
 describe('NewsletterPuffLink', () => {
   let oldIntersectionObserver: typeof IntersectionObserver;
@@ -22,9 +22,9 @@ describe('NewsletterPuffLink', () => {
     cleanup();
   });
 
-  it('renders the link with the text `Manage preferences here`', () => {
-    const mockedOnPress = jest.fn();
+  it('should track link viewed in analytics', () => {
     const mockedAnalyticsStream = jest.fn();
+    const mockedOnPress = jest.fn();
 
     const component = render(
       <TrackingContextProvider
@@ -34,23 +34,9 @@ describe('NewsletterPuffLink', () => {
         <NewsletterPuffLink onPress={mockedOnPress} />
       </TrackingContextProvider>
     );
-
-    expect(component.baseElement).toMatchSnapshot();
-  });
-
-  it('should track link viewed in analytics', () => {
-    const mockedAnalyticsStream = jest.fn();
-    const mockedOnPress = jest.fn();
-
-    render(
-      <TrackingContextProvider
-        context={{ attrs: { context: 'value' } }}
-        analyticsStream={mockedAnalyticsStream}
-      >
-        <NewsletterPuffLink onPress={mockedOnPress} />
-      </TrackingContextProvider>
-    );
     FakeIntersectionObserver.intersect();
+
+    expect(component.getByText('Manage preferences here')!);
 
     expect(mockedAnalyticsStream).toHaveBeenCalledWith({
       object: 'NewsletterPuffLink',

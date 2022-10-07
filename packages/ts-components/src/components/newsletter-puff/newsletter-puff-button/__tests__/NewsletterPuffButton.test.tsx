@@ -1,9 +1,8 @@
 import React from 'react';
-
 import { render, cleanup, fireEvent } from '@testing-library/react';
 import mockDate from 'mockdate';
 import { NewsletterPuffButton } from '../NewsletterPuffButton';
-import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
+import { TrackingContextProvider } from '../../../../helpers/tracking/TrackingContextProvider';
 
 describe('NewsletterPuffButton', () => {
   beforeEach(() => {
@@ -21,26 +20,13 @@ describe('NewsletterPuffButton', () => {
 
     const component = render(
       <NewsletterPuffButton
+        style="button"
         updatingSubscription={false}
         onPress={mockedOnPress}
       />
     );
 
-    expect(component.baseElement).toMatchSnapshot();
-
-    fireEvent.click(component.getByText('Sign up now'));
-
-    expect(mockedOnPress).toHaveBeenCalledTimes(1);
-  });
-
-  it('renders the button with the text `Saving...`', () => {
-    const mockedOnPress = jest.fn();
-
-    const component = render(
-      <NewsletterPuffButton updatingSubscription onPress={mockedOnPress} />
-    );
-
-    expect(component.baseElement).toMatchSnapshot();
+    expect(component.getByText('One click sign up'));
   });
 
   it('should track button viewed and clicked in analytics', () => {
@@ -52,13 +38,19 @@ describe('NewsletterPuffButton', () => {
         analyticsStream={mockedAnalyticsStream}
         context={{ component: 'ArticleSkeleton' }}
       >
-        <NewsletterPuffButton updatingSubscription={false} onPress={onPress} />
+        <NewsletterPuffButton
+          updatingSubscription={false}
+          onPress={onPress}
+          style="button"
+        />
       </TrackingContextProvider>
     );
 
-    fireEvent.click(component.getByText('Sign up now'));
+    const oneClickSignUp = component.getByText('One click sign up');
 
-    expect(onPress).toHaveBeenCalled();
+    fireEvent.click(oneClickSignUp);
+
+    expect(onPress).toHaveBeenCalledTimes(1);
 
     expect(mockedAnalyticsStream).toHaveBeenCalledWith({
       action: 'Clicked',
