@@ -8,6 +8,7 @@ import { Placeholder } from '@times-components/image';
 import { Newsletter } from './newsletter/Newsletter';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
+import { capitaliseFirstCharacter } from '../../helpers/text-formatting/capitaliseFirstCharacter';
 
 import { InpContainer } from './styles';
 
@@ -77,7 +78,7 @@ export const InlineNewsletterPuff = ({
                 {({ intersectObserverRef }) => (
                   <Newsletter
                     intersectObserverRef={intersectObserverRef}
-                    section={section}
+                    section={capitaliseFirstCharacter(section)}
                     justSubscribed={justSubscribed}
                     headline={headline}
                     updatingSubscription={updatingSubscription}

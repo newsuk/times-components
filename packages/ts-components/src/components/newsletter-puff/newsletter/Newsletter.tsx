@@ -50,19 +50,9 @@ export const Newsletter = ({
     </InpSignupCTAContainer>
   );
 
-  const formatSectionName = (sectionName?: string) => {
-    if (!sectionName) { return; }
-
-    const firstLetter = sectionName.charAt(0);
-    const restOfString = sectionName.split(firstLetter);
-    return `${firstLetter.toUpperCase()}${restOfString[1]}`;
-  };
-
-  const formattedSectionName = formatSectionName(section);
-
   return (
     <React.Fragment>
-      <InpContainer section={formattedSectionName}>
+      <InpContainer section={section}>
         {updatingSubscription && <LoadingOverlay />}
         {justSubscribed ? (
           <InpSubscribedContainer>

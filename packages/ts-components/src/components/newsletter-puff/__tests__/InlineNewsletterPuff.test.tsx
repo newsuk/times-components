@@ -2,7 +2,7 @@ import React from 'react';
 
 import { delay } from '@times-components/test-utils';
 
-import { render, cleanup } from '@testing-library/react';
+import { render, fireEvent, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 import { MockedProvider } from '@times-components/provider-test-tools';
@@ -98,6 +98,14 @@ describe('Inline Newsletter Puff', () => {
   it('renders signup state', async () => {
     const component = renderComponent();
     await component.findAllByText('One click sign up');
+    expect(component.baseElement).toMatchSnapshot();
+  });
+
+  it('renders loading state state', async () => {
+    const component = renderComponent();
+    const oneClickSignUp = await component.findAllByText('One click sign up');
+
+fireEvent.click(oneClickSignUp[0])
     expect(component.baseElement).toMatchSnapshot();
   });
 
