@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.54.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.53.0...@times-components/ts-components@1.54.0) (2022-10-07)
+
+
+### Bug Fixes
+
+* **TDP-2487:**  inline image special characters  ([d9d2c22](https://github.com/newsuk/times-components/commit/d9d2c2256f86be3b951590135aac27c2b0ae0767))
+
+
+### Features
+
+* **TDP-1832:** newsletter puff restyling  ([bbe05d4](https://github.com/newsuk/times-components/commit/bbe05d4cca2246899da19de0879e1d6d2dab3f43))
+
+
+### Reverts
+
+* Revert "fix(TDP-2487):  inline image special characters" (#3159) ([7e54d2f](https://github.com/newsuk/times-components/commit/7e54d2fc7003b74b9050915e87eed1e09866ab40)), closes [#3159](https://github.com/newsuk/times-components/issues/3159)
+
+
+
+
+
 # [1.53.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.52.4...@times-components/ts-components@1.53.0) (2022-09-07)
 
 

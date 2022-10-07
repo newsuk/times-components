@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.90.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.89.9...@times-components/article-skeleton@1.90.0) (2022-10-07)
+
+
+### Features
+
+* **TDP-1832:** newsletter puff restyling  ([bbe05d4](https://github.com/newsuk/times-components/commit/bbe05d4cca2246899da19de0879e1d6d2dab3f43))
+
+
+
+
+
 ## [1.89.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.89.8...@times-components/article-skeleton@1.89.9) (2022-09-23)
 
 

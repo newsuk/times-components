@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.12.6](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.12.5...@times-components/related-articles@6.12.6) (2022-10-07)
+
+
+### Bug Fixes
+
+* **TDP-2487:**  inline image special characters  ([d9d2c22](https://github.com/newsuk/times-components/commit/d9d2c2256f86be3b951590135aac27c2b0ae0767))
+
+
+### Reverts
+
+* Revert "fix(TDP-2487):  inline image special characters" (#3159) ([7e54d2f](https://github.com/newsuk/times-components/commit/7e54d2fc7003b74b9050915e87eed1e09866ab40)), closes [#3159](https://github.com/newsuk/times-components/issues/3159)
+
+
+
+
+
 ## [6.12.5](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.12.4...@times-components/related-articles@6.12.5) (2022-09-07)
 
 **Note:** Version bump only for package @times-components/related-articles
