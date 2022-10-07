@@ -184,6 +184,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
               code="TNL-101"
               copy="We’ll send you our top stories, across all sections, straight to your inbox. Simple as that."
               headline="Best of Times"
+              section="News"
             />
           </div>
           <p
@@ -456,6 +457,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
           code="TNL-101"
           copy="We’ll send you our top stories, across all sections, straight to your inbox. Simple as that."
           headline="Best of Times"
+          section="News"
         />
         <span>
           <p>

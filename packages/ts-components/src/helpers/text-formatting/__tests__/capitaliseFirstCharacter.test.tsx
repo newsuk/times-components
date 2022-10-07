@@ -1,4 +1,4 @@
-import { capitaliseFirstCharacter } from '../capitaliseFirstCharacter';
+import { capitaliseFirstCharacter } from '../CapitaliseFirstCharacter';
 
 describe('capitaliseFirstCharacter()', () => {
   it('capitalizes the first character of a string', async () => {
