@@ -4,23 +4,33 @@ exports[`Preview Newsletter Puff renders 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa sc-htpNat iikmtA"
+      class="sc-bdVaJa sc-htpNat ljXtVU"
     >
       <div
-        class="sc-bdVaJa sc-bZQynM dePmGy"
+        class="sc-bdVaJa sc-EHOje hmOAGx"
       >
         <div
-          class="sc-bwzfXH sc-gzVnrw guVfgd"
+          class="sc-bwzfXH sc-gzVnrw keqsZo"
         >
-          Politics. Explained.
-        </div>
-        <div
-          class="sc-bwzfXH sc-htoDjs dLSNbg"
-        >
+          <div
+            class="sc-bwzfXH sc-bZQynM khoGuQ"
+          >
+            Politics. Explained.
+            : 
+          </div>
           Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
+          <div
+            class="sc-bdVaJa sc-htoDjs lnzLgr"
+          >
+            <button
+              class="sc-iwsKbI gJJUIY"
+            >
+              One click sign up
+            </button>
+          </div>
         </div>
         <div
-          class="sc-bdVaJa sc-ifAKCX jaUowH"
+          class="sc-bdVaJa sc-htoDjs fqXCoz"
         >
           <button
             style="font-family: GillSansMTStd-Medium; font-size: 16px; line-height: 0; align-items: center; background-color: transparent; border-radius: 2px; color: rgb(29, 29, 27); cursor: pointer; height: 48px; justify-content: center; min-width: 100px; padding-top: 4px; width: 100%; border-color: #1d1d1b; border-width: 1px; elevation: 0; letter-spacing: 0.2px;"

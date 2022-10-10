@@ -45,7 +45,6 @@ export const InpContainer = styled(View)<{ section?: string }>`
   margin-left: ${spacing(2)};
 
   @media (min-width: ${breakpoints.medium}px) {
-    flex-direction: row;
     margin: 0 auto ${spacing(4)};
     width: 80.8%;
   }
@@ -61,11 +60,4 @@ export const InpPreferencesText = styled(Text)`
   text-align: left;
   letter-spacing: -0.4px;
   margin-bottom: ${spacing(3)};
-`;
-
-export const InpSignupCTAContainer = styled(View)`
-  @media (min-width: ${breakpoints.medium}px) {
-    width: 220px;
-    margin: 0px auto;
-  }
 `;

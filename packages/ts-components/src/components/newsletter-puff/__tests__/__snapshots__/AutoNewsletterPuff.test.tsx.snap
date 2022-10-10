@@ -6,7 +6,7 @@ exports[`<AutoNewsletterPuff> display function always renders 1`] = `
   style="display: block;"
 >
   <div
-    class="sc-bwzfXH sc-bxivhb jahLAV"
+    class="sc-bwzfXH sc-bxivhb isparC"
     style="height: 257px;"
   >
     <div
@@ -45,7 +45,7 @@ exports[`<AutoNewsletterPuff> display function doesnt render without consent 1`]
   style="display: none;"
 >
   <div
-    class="sc-bwzfXH sc-bxivhb jahLAV"
+    class="sc-bwzfXH sc-bxivhb isparC"
     style="height: 257px;"
   >
     <div
@@ -84,7 +84,7 @@ exports[`<AutoNewsletterPuff> using a display function [1, 3] count = 1 1`] = `
   style="display: block;"
 >
   <div
-    class="sc-bwzfXH sc-bxivhb jahLAV"
+    class="sc-bwzfXH sc-bxivhb isparC"
     style="height: 257px;"
   >
     <div
@@ -123,7 +123,7 @@ exports[`<AutoNewsletterPuff> using a display function [1, 3] count = 2 1`] = `
   style="display: none;"
 >
   <div
-    class="sc-bwzfXH sc-bxivhb jahLAV"
+    class="sc-bwzfXH sc-bxivhb isparC"
     style="height: 257px;"
   >
     <div
