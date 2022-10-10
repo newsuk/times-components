@@ -45,7 +45,6 @@ export const InpContainer = styled(View)<{ section?: string }>`
   margin-left: ${spacing(2)};
 
   @media (min-width: ${breakpoints.medium}px) {
-    flex-direction: row;
     margin: 0 auto ${spacing(4)};
     width: 80.8%;
   }
