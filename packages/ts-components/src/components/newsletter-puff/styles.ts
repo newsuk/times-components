@@ -61,10 +61,3 @@ export const InpPreferencesText = styled(Text)`
   letter-spacing: -0.4px;
   margin-bottom: ${spacing(3)};
 `;
-
-export const InpSignupCTAContainer = styled(View)`
-  @media (min-width: ${breakpoints.medium}px) {
-    width: 220px;
-    margin: 0px auto;
-  }
-`;
