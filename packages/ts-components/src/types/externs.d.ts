@@ -134,6 +134,11 @@ declare module '@times-components/utils' {
     value: string | number
   ) => string;
 
+  export const HoverIcon: React.FC<{
+    colour?: string;
+    hoverColour?: string;
+    underline?: boolean;
+  }>;
   export const TcView: React.FC<{ style?: React.CSSProperties }>;
   export const TcText: React.FC<{ style?: React.CSSProperties }>;
   export const TcScrollView: React.FC<{ style?: React.CSSProperties }>;

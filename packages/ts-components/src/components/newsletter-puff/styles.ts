@@ -62,6 +62,6 @@ export const InpPreferencesText = styled(Text)`
   margin-bottom: ${spacing(3)};
 
   @media (min-width: ${breakpoints.wide}px) {
-    display:block;
+    display: block;
   }
 `;

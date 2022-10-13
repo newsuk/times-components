@@ -33,6 +33,8 @@ export const NewsletterPuffButton = ({
   return style === 'button' ? (
     <PuffButton onClick={() => handlePress()}>One click sign up</PuffButton>
   ) : (
-    <PuffLinkButton onClick={() => handlePress()}>One click sign up</PuffLinkButton>
-  )
+    <PuffLinkButton onClick={() => handlePress()}>
+      One click sign up
+    </PuffLinkButton>
+  );
 };

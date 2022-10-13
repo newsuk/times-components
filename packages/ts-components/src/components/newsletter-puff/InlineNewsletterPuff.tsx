@@ -4,7 +4,7 @@ import { Mutation } from 'react-apollo';
 import { GetNewsletter } from '@times-components/provider';
 import { subscribeNewsletter as subscribeNewsletterMutation } from '@times-components/provider-queries';
 import { Placeholder } from '@times-components/image';
-import { capitalise } from "@times-components/utils";
+import { capitalise } from '@times-components/utils';
 
 import { Newsletter } from './newsletter/Newsletter';
 
