@@ -4,40 +4,40 @@ exports[`Inline Newsletter Puff renders loading state state 1`] = `
 <body>
   <div>
     <div
-      class="sc-bwzfXH sc-bxivhb iFwRag"
+      class="sc-bwzfXH sc-bxivhb gBLWdB"
     >
       <div
-        class="sc-bwzfXH sc-bZQynM fcQclH"
+        class="sc-bwzfXH sc-EHOje jfKrZk"
       >
         <div
-          class="sc-bwzfXH sc-htoDjs bnLiNW"
+          class="sc-bwzfXH sc-gzVnrw dolbke"
         >
           <div
-            class="sc-gzVnrw TDlzj"
+            class="sc-bZQynM gfhMRw"
           />
           <div
-            class="sc-gzVnrw TDlzj"
+            class="sc-bZQynM gfhMRw"
           />
           <div
-            class="sc-gzVnrw TDlzj"
+            class="sc-bZQynM gfhMRw"
           />
         </div>
       </div>
       <div
-        class="sc-bwzfXH sc-iwsKbI cuimXU"
+        class="sc-bwzfXH sc-dnqmqq dLVcgB"
       >
         <div
-          class="sc-htpNat sc-gqjmRU imXojB"
+          class="sc-htpNat sc-gZMcBi kiYplO"
         >
           <div
-            class="sc-htpNat sc-gZMcBi kRYdQT"
+            class="sc-htpNat sc-iwsKbI eLieBX"
           >
             Politics. Explained.
             : 
           </div>
-          Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
+          Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am. 
           <div
-            class="sc-bwzfXH sc-VigVT cSaWjg"
+            class="sc-bwzfXH sc-gqjmRU hGzDOp"
           >
             <button
               class="sc-bdVaJa bXCphr"
@@ -47,7 +47,7 @@ exports[`Inline Newsletter Puff renders loading state state 1`] = `
           </div>
         </div>
         <div
-          class="sc-bwzfXH sc-VigVT iWOUWL"
+          class="sc-bwzfXH sc-gqjmRU hhmUDh"
         >
           <button
             style="font-family: GillSansMTStd-Medium; font-size: 16px; line-height: 0; align-items: center; background-color: transparent; border-radius: 2px; color: rgb(29, 29, 27); cursor: pointer; height: 48px; justify-content: center; min-width: 100px; padding-top: 4px; width: 100%; border-color: #1d1d1b; border-width: 1px; elevation: 0; letter-spacing: 0.2px;"
@@ -72,7 +72,7 @@ exports[`Inline Newsletter Puff renders placeholder when loading 1`] = `
 <body>
   <div>
     <div
-      class="sc-bwzfXH sc-bxivhb jahLAV"
+      class="sc-bwzfXH sc-bxivhb isparC"
       style="height: 257px;"
     >
       <div
@@ -110,23 +110,23 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
 <body>
   <div>
     <div
-      class="sc-bwzfXH sc-bxivhb iFwRag"
+      class="sc-bwzfXH sc-bxivhb gBLWdB"
     >
       <div
-        class="sc-bwzfXH sc-iwsKbI cuimXU"
+        class="sc-bwzfXH sc-dnqmqq dLVcgB"
       >
         <div
-          class="sc-htpNat sc-gqjmRU imXojB"
+          class="sc-htpNat sc-gZMcBi kiYplO"
         >
           <div
-            class="sc-htpNat sc-gZMcBi kRYdQT"
+            class="sc-htpNat sc-iwsKbI eLieBX"
           >
             Politics. Explained.
             : 
           </div>
-          Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
+          Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am. 
           <div
-            class="sc-bwzfXH sc-VigVT cSaWjg"
+            class="sc-bwzfXH sc-gqjmRU hGzDOp"
           >
             <button
               class="sc-bdVaJa bXCphr"
@@ -136,7 +136,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
           </div>
         </div>
         <div
-          class="sc-bwzfXH sc-VigVT iWOUWL"
+          class="sc-bwzfXH sc-gqjmRU hhmUDh"
         >
           <button
             style="font-family: GillSansMTStd-Medium; font-size: 16px; line-height: 0; align-items: center; background-color: transparent; border-radius: 2px; color: rgb(29, 29, 27); cursor: pointer; height: 48px; justify-content: center; min-width: 100px; padding-top: 4px; width: 100%; border-color: #1d1d1b; border-width: 1px; elevation: 0; letter-spacing: 0.2px;"
@@ -155,23 +155,23 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
 <body>
   <div>
     <div
-      class="sc-bwzfXH sc-bxivhb iFwRag"
+      class="sc-bwzfXH sc-bxivhb gBLWdB"
     >
       <div
-        class="sc-bwzfXH sc-iwsKbI cuimXU"
+        class="sc-bwzfXH sc-dnqmqq dLVcgB"
       >
         <div
-          class="sc-htpNat sc-gqjmRU imXojB"
+          class="sc-htpNat sc-gZMcBi kiYplO"
         >
           <div
-            class="sc-htpNat sc-gZMcBi kRYdQT"
+            class="sc-htpNat sc-iwsKbI eLieBX"
           >
             Politics. Explained.
             : 
           </div>
-          Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
+          Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am. 
           <div
-            class="sc-bwzfXH sc-VigVT cSaWjg"
+            class="sc-bwzfXH sc-gqjmRU hGzDOp"
           >
             <button
               class="sc-bdVaJa bXCphr"
@@ -181,7 +181,7 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
           </div>
         </div>
         <div
-          class="sc-bwzfXH sc-VigVT iWOUWL"
+          class="sc-bwzfXH sc-gqjmRU hhmUDh"
         >
           <button
             style="font-family: GillSansMTStd-Medium; font-size: 16px; line-height: 0; align-items: center; background-color: transparent; border-radius: 2px; color: rgb(29, 29, 27); cursor: pointer; height: 48px; justify-content: center; min-width: 100px; padding-top: 4px; width: 100%; border-color: #1d1d1b; border-width: 1px; elevation: 0; letter-spacing: 0.2px;"

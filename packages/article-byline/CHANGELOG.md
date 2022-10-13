@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.9.2](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.9.1...@times-components/article-byline@3.9.2) (2022-10-11)
+
+
+### Bug Fixes
+
+* **TDP-2097:** change onClick to onPress in article-byline-with-links ([#3163](https://github.com/newsuk/times-components/issues/3163)) ([6d5c8fe](https://github.com/newsuk/times-components/commit/6d5c8fef3d126660d86067f267e8885f5c807adf))
+
+
+
+
+
 ## [3.9.1](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.9.0...@times-components/article-byline@3.9.1) (2022-08-20)
 
 **Note:** Version bump only for package @times-components/article-byline
