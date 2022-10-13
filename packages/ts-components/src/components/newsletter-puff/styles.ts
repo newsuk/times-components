@@ -60,4 +60,8 @@ export const InpPreferencesText = styled(Text)`
   text-align: left;
   letter-spacing: -0.4px;
   margin-bottom: ${spacing(3)};
+
+  @media (min-width: ${breakpoints.wide}px) {
+    display: block;
+  }
 `;

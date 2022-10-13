@@ -25,5 +25,5 @@ type AutoNewsletterPuffProps = {
   code: string;
   copy: string;
   headline: string;
-  section?: string;
+  section: string;
 };

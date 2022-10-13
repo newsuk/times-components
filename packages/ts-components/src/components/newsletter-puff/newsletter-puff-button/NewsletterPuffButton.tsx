@@ -1,6 +1,5 @@
 import React from 'react';
-import Button from '@times-components/button';
-import { buttonStyles, LinkButton } from './styles';
+import { PuffButton, PuffLinkButton } from './styles';
 import { useTrackingContext } from '../../../helpers/tracking/TrackingContextProvider';
 
 type NewsletterPuffProps = {
@@ -32,13 +31,10 @@ export const NewsletterPuffButton = ({
   };
 
   return style === 'button' ? (
-    <Button
-      title="One click sign up"
-      onPress={() => handlePress()}
-      style={buttonStyles}
-      underlayColor="transparent"
-    />
+    <PuffButton onClick={() => handlePress()}>One click sign up</PuffButton>
   ) : (
-    <LinkButton onClick={() => handlePress()}>One click sign up</LinkButton>
+    <PuffLinkButton onClick={() => handlePress()}>
+      One click sign up
+    </PuffLinkButton>
   );
 };

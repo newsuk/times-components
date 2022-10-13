@@ -138,7 +138,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       Save
     </div>
     <div
-      className="hover-icon__HoverIcon-sc-1ge5rtz-0 save-star-with-tracking__IconContainer-sc-1swm7v2-0 fVwGWc"
+      className="hover-icon__HoverIcon-sc-1ge5rtz-0 save-star-with-tracking__IconContainer-sc-1swm7v2-0 jsLSpl"
     >
       <IconActivityIndicator
         style={

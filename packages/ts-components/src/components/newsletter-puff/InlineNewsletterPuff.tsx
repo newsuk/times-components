@@ -4,18 +4,18 @@ import { Mutation } from 'react-apollo';
 import { GetNewsletter } from '@times-components/provider';
 import { subscribeNewsletter as subscribeNewsletterMutation } from '@times-components/provider-queries';
 import { Placeholder } from '@times-components/image';
+import { capitalise } from '@times-components/utils';
 
 import { Newsletter } from './newsletter/Newsletter';
 
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
-import { capitaliseFirstCharacter } from '../../helpers/text-formatting/CapitaliseFirstCharacter';
 
 import { InpContainer } from './styles';
 
 type InlineNewsletterPuffProps = {
   copy: string;
   headline: string;
-  section?: string;
+  section: string;
   code: string;
 };
 
@@ -78,7 +78,7 @@ export const InlineNewsletterPuff = ({
                 {({ intersectObserverRef }) => (
                   <Newsletter
                     intersectObserverRef={intersectObserverRef}
-                    section={capitaliseFirstCharacter(section)}
+                    section={capitalise(section)}
                     justSubscribed={justSubscribed}
                     headline={headline}
                     updatingSubscription={updatingSubscription}

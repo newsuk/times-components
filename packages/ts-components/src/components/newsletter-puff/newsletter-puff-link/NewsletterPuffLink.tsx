@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from '@times-components/link';
+import { HoverIcon } from '@times-components/utils';
 
 import { TrackingContextProvider } from '../../../helpers/tracking/TrackingContextProvider';
 
@@ -36,9 +37,11 @@ export const NewsletterPuffLink = ({ onPress }: any) => {
             url="https://home.thetimes.co.uk/myNews"
             onPress={() => handlePress()}
           >
-            <InpPreferencesText ref={intersectObserverRef}>
-              Manage preferences here
-            </InpPreferencesText>
+            <HoverIcon underline={true} colour="#006699">
+              <InpPreferencesText ref={intersectObserverRef}>
+                Manage preferences here
+              </InpPreferencesText>
+            </HoverIcon>
           </Link>
         );
       }}
