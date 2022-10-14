@@ -25,7 +25,7 @@ exports[`Preview Newsletter Puff renders 1`] = `
             <button
               class="sc-gZMcBi jWMqgP"
             >
-              One click sign up
+              One-click sign-up
             </button>
           </div>
         </div>
@@ -33,9 +33,9 @@ exports[`Preview Newsletter Puff renders 1`] = `
           class="sc-bdVaJa sc-htoDjs fqXCoz"
         >
           <button
-            class="sc-iwsKbI clmQtq"
+            class="sc-iwsKbI beYQWx"
           >
-            One click sign up
+            One-click sign-up
           </button>
         </div>
       </div>

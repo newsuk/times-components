@@ -36,7 +36,7 @@ describe('NewsletterPuffLink', () => {
     );
     FakeIntersectionObserver.intersect();
 
-    expect(component.getByText('Manage preferences here')!);
+    expect(component.getByText('Explore our newsletters')!);
 
     expect(mockedAnalyticsStream).toHaveBeenCalledWith({
       object: 'NewsletterPuffLink',

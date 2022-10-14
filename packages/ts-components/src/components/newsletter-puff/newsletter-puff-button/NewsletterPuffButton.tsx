@@ -29,12 +29,11 @@ export const NewsletterPuffButton = ({
         });
     }
   };
+  const buttonText = 'One-click sign-up';
 
   return style === 'button' ? (
-    <PuffButton onClick={() => handlePress()}>One click sign up</PuffButton>
+    <PuffButton onClick={() => handlePress()}>{buttonText}</PuffButton>
   ) : (
-    <PuffLinkButton onClick={() => handlePress()}>
-      One click sign up
-    </PuffLinkButton>
+    <PuffLinkButton onClick={() => handlePress()}>{buttonText}</PuffLinkButton>
   );
 };

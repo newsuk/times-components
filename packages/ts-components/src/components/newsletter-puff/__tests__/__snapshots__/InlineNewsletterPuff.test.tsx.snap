@@ -42,7 +42,7 @@ exports[`Inline Newsletter Puff renders loading state state 1`] = `
             <button
               class="sc-bwzfXH gHDjoa"
             >
-              One click sign up
+              One-click sign-up
             </button>
           </div>
         </div>
@@ -50,9 +50,9 @@ exports[`Inline Newsletter Puff renders loading state state 1`] = `
           class="sc-htpNat sc-VigVT iWOUWL"
         >
           <button
-            class="sc-bdVaJa fhHIYP"
+            class="sc-bdVaJa qlAqK"
           >
-            One click sign up
+            One-click sign-up
           </button>
         </div>
       </div>
@@ -130,7 +130,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
             <button
               class="sc-bwzfXH gHDjoa"
             >
-              One click sign up
+              One-click sign-up
             </button>
           </div>
         </div>
@@ -138,9 +138,9 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
           class="sc-htpNat sc-VigVT iWOUWL"
         >
           <button
-            class="sc-bdVaJa fhHIYP"
+            class="sc-bdVaJa qlAqK"
           >
-            One click sign up
+            One-click sign-up
           </button>
         </div>
       </div>
@@ -174,7 +174,7 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
             <button
               class="sc-bwzfXH gHDjoa"
             >
-              One click sign up
+              One-click sign-up
             </button>
           </div>
         </div>
@@ -182,9 +182,9 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
           class="sc-htpNat sc-VigVT iWOUWL"
         >
           <button
-            class="sc-bdVaJa fhHIYP"
+            class="sc-bdVaJa qlAqK"
           >
-            One click sign up
+            One-click sign-up
           </button>
         </div>
       </div>
