@@ -39,7 +39,7 @@ export const NewsletterPuffLink = ({ onPress }: any) => {
           >
             <HoverIcon underline={true} colour="#006699">
               <InpPreferencesText ref={intersectObserverRef}>
-                Manage preferences here
+                Explore our newsletters
               </InpPreferencesText>
             </HoverIcon>
           </Link>
