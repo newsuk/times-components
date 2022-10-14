@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.50.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.50.0...@times-components/slice-layout@0.50.1) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
 # [0.50.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.49.6...@times-components/slice-layout@0.50.0) (2022-08-18)
 
 
