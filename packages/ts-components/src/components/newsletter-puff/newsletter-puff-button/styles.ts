@@ -23,6 +23,10 @@ export const PuffButton = styled.button`
   &:hover {
     background-color: #e4e4e4;
   }
+
+  &:active {
+    background-color: #cccccc;
+  }
 `;
 
 export const PuffLinkButton = styled.button`
