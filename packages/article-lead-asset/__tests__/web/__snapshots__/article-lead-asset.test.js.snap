@@ -19,6 +19,7 @@ exports[`1. renders correctly with an image lead asset 1`] = `
         width="100%"
       >
         <div
+          className="lcpItem"
           display="table"
           height={0}
           overflow="hidden"
@@ -130,6 +131,7 @@ exports[`5. it renders correctly with a classname 1`] = `
         width="100%"
       >
         <div
+          className="lcpItem"
           display="table"
           height={0}
           overflow="hidden"
