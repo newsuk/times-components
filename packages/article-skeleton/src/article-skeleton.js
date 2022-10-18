@@ -156,7 +156,7 @@ const ArticleSkeleton = ({
               <HeaderContainer>
                 <Header />
                 {savingEnabled || sharingEnabled ? (
-                  <UserState state={UserState.loggedInOrShared}>
+                  <UserState state={UserState.showSaveAndShareBar}>
                     <MessageContext.Consumer>
                       {({ showMessage }) => (
                         <StickySaveAndShareBar

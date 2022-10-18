@@ -920,11 +920,6 @@ exports[`full article with style 1`] = `
                   </div>
                 </div>
               </div>
-              <nav>
-                <ArticleTopics
-                  justifyContent="flex-start"
-                />
-              </nav>
             </div>
           </div>
           <ArticleLeadAsset

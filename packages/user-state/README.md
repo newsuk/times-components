@@ -37,17 +37,6 @@ The `state` property is simply a matcher function that gets passed the current u
 state and returns true/false to decide whether to return the children or
 the fallback.
 
-`UserState` also provides a number of preset matchers which you can use.
-
-- `loggedIn`: Is the user logged in at all (subscriber, RA, RA Expired)
-- `meteredExpired`: Is the user RA Expired
-- `metered`: Is the user RA or RA Expired
-- `shared`: Is the user viewing with a shareToken
-- `nonExpiredUser`: Is the user logged in with access (subscriber, RA)
-- `fullArticle`: Does the user have access to the full article (subscriber, RA, share token)
-- `subscriber`: Is the user a subscriber
-- `loggedInOrShared`: Is the user logged in or on a share token (subscriber, RA, RA Expired, share token)
-
 ```js
 // In the test file
 import { mockUserState } from "@times-components/user-state";
