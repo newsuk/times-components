@@ -1,22 +1,29 @@
-export const isLoggedIn = userState => userState.isLoggedIn;
+const isMeteredUser = userState =>
+  userState.isMetered || userState.isLightPackUser;
 
-export const hasAccess = userState => userState.hasAccess;
+const isLightPackExpired = userState =>
+  userState.isLightPackUser && userState.viewsRemaining === 0;
 
-export const isMeteredExpired = userState =>
-  isLoggedIn(userState) && userState.isMeteredExpired;
+const isMeteredExpiredUser = userState =>
+  userState.isMeteredExpired || isLightPackExpired(userState);
 
-export const isShared = userState => userState.isShared;
+const isSubscriber = userState =>
+  userState.isLoggedIn && !isMeteredUser(userState);
 
-export const isMetered = userState =>
-  isLoggedIn(userState) && userState.isMetered;
+export const showSaveAndShareBar = userState =>
+  userState.isLoggedIn || userState.isShared;
 
-export const isSubscriber = userState =>
-  isLoggedIn(userState) && !userState.isMetered && !userState.isMeteredExpired;
+export const showArticleExtras = userState =>
+  (userState.isLoggedIn && !isMeteredExpiredUser(userState)) ||
+  userState.isShared;
 
-export const isNonMeteredExpiredUser = user =>
-  isLoggedIn(user) && !isMeteredExpired(user);
+export const showTopicTags = userState =>
+  userState.isLoggedIn || userState.isShared;
 
-export const shouldShowFullArticle = user =>
-  isShared(user) || isNonMeteredExpiredUser(user) || hasAccess(user);
+export const showArticleSaveButton = userState => userState.isLoggedIn;
 
-export const isLoggedInOrShared = user => isShared(user) || isLoggedIn(user);
+export const showTokenisedEmailShare = userState => isSubscriber(userState);
+export const showCommentingModule = userState => isSubscriber(userState);
+
+export const showJoinTheConversationDialog = userState =>
+  userState.isLoggedIn && isMeteredUser(userState);
