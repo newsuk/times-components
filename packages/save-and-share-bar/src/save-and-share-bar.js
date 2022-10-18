@@ -50,7 +50,7 @@ class SaveAndShareBar extends Component {
             <SectionContext.Consumer>
               {({ publicationName }) => (
                 <UserState
-                  state={UserState.subscriber}
+                  state={UserState.showTokenisedEmailShare}
                   fallback={
                     <EmailShare
                       {...this.props}
@@ -107,7 +107,10 @@ class SaveAndShareBar extends Component {
           </TcView>
         )}
         {savingEnabled ? (
-          <UserState state={UserState.loggedIn} serverRender={false}>
+          <UserState
+            state={UserState.showArticleSaveButton}
+            serverRender={false}
+          >
             <TcView style={styles.rowItemRight} data-testid="save-star">
               <SaveStar
                 colour={styles.svgIcon.save.strokeColour}
