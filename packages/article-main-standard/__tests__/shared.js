@@ -43,7 +43,8 @@ export default () => {
       test() {
         UserState.mockStates = [
           UserState.showSaveAndShareBar,
-          UserState.showArticleExtras
+          UserState.showArticleExtras,
+          UserState.showTopicTags
         ];
 
         const output = TestRenderer.create(

@@ -842,6 +842,18 @@ exports[`6. should show topics when logged in or shared 1`] = `
                   </div>
                 </div>
               </div>
+              <nav>
+                <ArticleTopics
+                  topics={
+                    Array [
+                      Object {
+                        "name": "Topic",
+                        "slug": "topic",
+                      },
+                    ]
+                  }
+                />
+              </nav>
             </div>
           </div>
           <div>
