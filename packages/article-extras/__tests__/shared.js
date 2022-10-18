@@ -38,8 +38,6 @@ export default () => {
     {
       name: "renders correctly",
       test: () => {
-        UserState.mockStates = [UserState.showArticleExtras];
-
         const testInstance = TestRenderer.create(
           <ArticleExtras
             analyticsStream={() => {}}
@@ -80,8 +78,6 @@ export default () => {
     {
       name: "read only comments when the user is a share token reader",
       test: () => {
-        UserState.mockStates = [UserState.showArticleExtras];
-
         const testInstance = TestRenderer.create(
           <ArticleExtras
             analyticsStream={() => {}}
@@ -101,8 +97,6 @@ export default () => {
     {
       name: "renders the additional related articles",
       test: () => {
-        UserState.mockStates = [UserState.showArticleExtras];
-        
         const testInstance = TestRenderer.create(
           <ArticleExtras
             analyticsStream={() => {}}

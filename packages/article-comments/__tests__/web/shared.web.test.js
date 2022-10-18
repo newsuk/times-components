@@ -138,8 +138,6 @@ describe("window listeners added", () => {
   });
 
   it("all listeners added", () => {
-    UserState.mockStates = [UserState.showCommentingModule];
-
     render(
       <ArticleComments
         articleId="dummy-article-id"
