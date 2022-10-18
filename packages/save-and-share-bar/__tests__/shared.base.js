@@ -59,7 +59,12 @@ export default () => {
     });
 
     it("save and share bar renders correctly when logged in", () => {
-      UserState.mockStates = [UserState.subscriber, UserState.loggedIn];
+      UserState.mockStates = [
+        UserState.showSaveAndShareBar,
+        UserState.showTokenisedEmailShare,
+        UserState.showArticleSaveButton
+      ];
+
       const testInstance = TestRenderer.create(
         <MockedProvider>
           <SaveAndShareBar {...props} />
@@ -90,8 +95,11 @@ export default () => {
     });
 
     it("tokenises when logged in as a subscriber", () => {
-      UserState.mockStates = [UserState.showSaveAndShareBar, UserState.showTokenisedEmailShare];
-      
+      UserState.mockStates = [
+        UserState.showSaveAndShareBar,
+        UserState.showTokenisedEmailShare
+      ];
+
       const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
       expect(
         testInstance.root.findByType(EmailShare).props.shouldTokenise
