@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a primary image 1`] = `
-.c4 {
+.c8 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -24,7 +24,7 @@ exports[`1. a primary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c5 {
+.c9 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -38,11 +38,11 @@ exports[`1. a primary image 1`] = `
   min-height: 210px;
 }
 
-.c5.hidden {
+.c9.hidden {
   visibility: hidden;
 }
 
-.c6 {
+.c10 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -54,7 +54,7 @@ exports[`1. a primary image 1`] = `
   text-transform: uppercase;
 }
 
-.c7 {
+.c11 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -82,17 +82,59 @@ exports[`1. a primary image 1`] = `
   display: flex;
 }
 
-.c2 > .c8 {
+.c2 > .c3 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c7 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c6 {
+  background-color: #FFFFFF;
+  height: 60px;
+}
+
+.c6 [data-tc-sticky-sizer] {
+  border-bottom: 1px solid transparent;
+  will-change: border-bottom-color;
+}
+
+.c6.tc-sticky {
+  will-change: height,box-shadow;
+}
+
+.c6[MOCK-PROGRESS-SELECTOR] {
+  height: 59.5px;
+  box-shadow: 0 2px 5px 0 #c9c7c7ed;
+}
+
+.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+  border-bottom-color: #ffffffdb;
+}
+
+.c5 {
+  border: solid #DBDBDB;
+  border-width: 1px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c5 + .c4 {
+  margin-top: -1px !important;
+}
+
+.c5:last-child {
+  margin-bottom: 30px;
+}
+
+.c5.contains-tc-sticky {
+  border-bottom-color: transparent;
 }
 
 .c0 {
@@ -129,42 +171,42 @@ exports[`1. a primary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c8 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c8 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c9 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c9 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c11 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c7:first-of-type {
+  .c11:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c7:last-child {
+  .c11:last-child {
     margin-left: 1.5%;
   }
 }
@@ -173,6 +215,24 @@ exports[`1. a primary image 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    width: 56.2%;
   }
 }
 
@@ -204,32 +264,49 @@ exports[`1. a primary image 1`] = `
     >
       <div
         className="c2"
-      />
+      >
+        <div
+          className="c3 c4 c5"
+        >
+          <div
+            display="none"
+          />
+          <div>
+            <div
+              className="c6"
+            >
+              <div>
+                <SaveAndShareBar />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <article
-        className="c3"
+        className="c7"
       >
         <div>
           <div>
             <div
-              className="c4"
+              className="c8"
             >
               <ArticleImage />
             </div>
           </div>
         </div>
         <div
-          className="group-3 hidden c5"
+          className="group-3 hidden c9"
         >
           <h2
-            className="c6"
+            className="c10"
           >
             Sponsored
           </h2>
           <div
-            className="c7"
+            className="c11"
           />
           <div
-            className="c7"
+            className="c11"
           />
         </div>
         <div />
@@ -244,7 +321,7 @@ exports[`1. a primary image 1`] = `
 `;
 
 exports[`2. a fullwidth image 1`] = `
-.c4 {
+.c8 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -263,7 +340,7 @@ exports[`2. a fullwidth image 1`] = `
   padding-bottom: 20px;
 }
 
-.c5 {
+.c9 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -277,11 +354,11 @@ exports[`2. a fullwidth image 1`] = `
   min-height: 210px;
 }
 
-.c5.hidden {
+.c9.hidden {
   visibility: hidden;
 }
 
-.c6 {
+.c10 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -293,7 +370,7 @@ exports[`2. a fullwidth image 1`] = `
   text-transform: uppercase;
 }
 
-.c7 {
+.c11 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -321,17 +398,59 @@ exports[`2. a fullwidth image 1`] = `
   display: flex;
 }
 
-.c2 > .c8 {
+.c2 > .c3 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c7 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c6 {
+  background-color: #FFFFFF;
+  height: 60px;
+}
+
+.c6 [data-tc-sticky-sizer] {
+  border-bottom: 1px solid transparent;
+  will-change: border-bottom-color;
+}
+
+.c6.tc-sticky {
+  will-change: height,box-shadow;
+}
+
+.c6[MOCK-PROGRESS-SELECTOR] {
+  height: 59.5px;
+  box-shadow: 0 2px 5px 0 #c9c7c7ed;
+}
+
+.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+  border-bottom-color: #ffffffdb;
+}
+
+.c5 {
+  border: solid #DBDBDB;
+  border-width: 1px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c5 + .c4 {
+  margin-top: -1px !important;
+}
+
+.c5:last-child {
+  margin-bottom: 30px;
+}
+
+.c5.contains-tc-sticky {
+  border-bottom-color: transparent;
 }
 
 .c0 {
@@ -368,29 +487,29 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c9 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c9 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c11 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c7:first-of-type {
+  .c11:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c7:last-child {
+  .c11:last-child {
     margin-left: 1.5%;
   }
 }
@@ -399,6 +518,24 @@ exports[`2. a fullwidth image 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    width: 56.2%;
   }
 }
 
@@ -430,32 +567,49 @@ exports[`2. a fullwidth image 1`] = `
     >
       <div
         className="c2"
-      />
+      >
+        <div
+          className="c3 c4 c5"
+        >
+          <div
+            display="none"
+          />
+          <div>
+            <div
+              className="c6"
+            >
+              <div>
+                <SaveAndShareBar />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <article
-        className="c3"
+        className="c7"
       >
         <div>
           <div>
             <div
-              className="c4"
+              className="c8"
             >
               <ArticleImage />
             </div>
           </div>
         </div>
         <div
-          className="group-3 hidden c5"
+          className="group-3 hidden c9"
         >
           <h2
-            className="c6"
+            className="c10"
           >
             Sponsored
           </h2>
           <div
-            className="c7"
+            className="c11"
           />
           <div
-            className="c7"
+            className="c11"
           />
         </div>
         <div />
@@ -470,7 +624,7 @@ exports[`2. a fullwidth image 1`] = `
 `;
 
 exports[`3. a secondary image 1`] = `
-.c4 {
+.c8 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -498,7 +652,7 @@ exports[`3. a secondary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c5 {
+.c9 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -512,11 +666,11 @@ exports[`3. a secondary image 1`] = `
   min-height: 210px;
 }
 
-.c5.hidden {
+.c9.hidden {
   visibility: hidden;
 }
 
-.c6 {
+.c10 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -528,7 +682,7 @@ exports[`3. a secondary image 1`] = `
   text-transform: uppercase;
 }
 
-.c7 {
+.c11 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -556,17 +710,59 @@ exports[`3. a secondary image 1`] = `
   display: flex;
 }
 
-.c2 > .c8 {
+.c2 > .c3 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c7 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c6 {
+  background-color: #FFFFFF;
+  height: 60px;
+}
+
+.c6 [data-tc-sticky-sizer] {
+  border-bottom: 1px solid transparent;
+  will-change: border-bottom-color;
+}
+
+.c6.tc-sticky {
+  will-change: height,box-shadow;
+}
+
+.c6[MOCK-PROGRESS-SELECTOR] {
+  height: 59.5px;
+  box-shadow: 0 2px 5px 0 #c9c7c7ed;
+}
+
+.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+  border-bottom-color: #ffffffdb;
+}
+
+.c5 {
+  border: solid #DBDBDB;
+  border-width: 1px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c5 + .c4 {
+  margin-top: -1px !important;
+}
+
+.c5:last-child {
+  margin-bottom: 30px;
+}
+
+.c5.contains-tc-sticky {
+  border-bottom-color: transparent;
 }
 
 .c0 {
@@ -603,7 +799,7 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c8 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -612,35 +808,35 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c8 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c9 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c9 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c11 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c7:first-of-type {
+  .c11:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c7:last-child {
+  .c11:last-child {
     margin-left: 1.5%;
   }
 }
@@ -649,6 +845,24 @@ exports[`3. a secondary image 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    width: 56.2%;
   }
 }
 
@@ -680,32 +894,49 @@ exports[`3. a secondary image 1`] = `
     >
       <div
         className="c2"
-      />
+      >
+        <div
+          className="c3 c4 c5"
+        >
+          <div
+            display="none"
+          />
+          <div>
+            <div
+              className="c6"
+            >
+              <div>
+                <SaveAndShareBar />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <article
-        className="c3"
+        className="c7"
       >
         <div>
           <div>
             <div
-              className="c4"
+              className="c8"
             >
               <ArticleImage />
             </div>
           </div>
         </div>
         <div
-          className="group-3 hidden c5"
+          className="group-3 hidden c9"
         >
           <h2
-            className="c6"
+            className="c10"
           >
             Sponsored
           </h2>
           <div
-            className="c7"
+            className="c11"
           />
           <div
-            className="c7"
+            className="c11"
           />
         </div>
         <div />
@@ -720,7 +951,7 @@ exports[`3. a secondary image 1`] = `
 `;
 
 exports[`4. an inline image 1`] = `
-.c4 {
+.c8 {
   border: 0px solid black;
   box-sizing: border-box;
   display: -webkit-box;
@@ -749,7 +980,7 @@ exports[`4. an inline image 1`] = `
   display: block;
 }
 
-.c5 {
+.c9 {
   clear: both;
   display: -webkit-box;
   display: -webkit-flex;
@@ -763,11 +994,11 @@ exports[`4. an inline image 1`] = `
   min-height: 210px;
 }
 
-.c5.hidden {
+.c9.hidden {
   visibility: hidden;
 }
 
-.c6 {
+.c10 {
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   -webkit-flex: 1 1 100%;
@@ -779,7 +1010,7 @@ exports[`4. an inline image 1`] = `
   text-transform: uppercase;
 }
 
-.c7 {
+.c11 {
   -webkit-flex: 1 1 50%;
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
@@ -807,17 +1038,59 @@ exports[`4. an inline image 1`] = `
   display: flex;
 }
 
-.c2 > .c8 {
+.c2 > .c3 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c3 {
+.c7 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
+}
+
+.c6 {
+  background-color: #FFFFFF;
+  height: 60px;
+}
+
+.c6 [data-tc-sticky-sizer] {
+  border-bottom: 1px solid transparent;
+  will-change: border-bottom-color;
+}
+
+.c6.tc-sticky {
+  will-change: height,box-shadow;
+}
+
+.c6[MOCK-PROGRESS-SELECTOR] {
+  height: 59.5px;
+  box-shadow: 0 2px 5px 0 #c9c7c7ed;
+}
+
+.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+  border-bottom-color: #ffffffdb;
+}
+
+.c5 {
+  border: solid #DBDBDB;
+  border-width: 1px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c5 + .c4 {
+  margin-top: -1px !important;
+}
+
+.c5:last-child {
+  margin-bottom: 30px;
+}
+
+.c5.contains-tc-sticky {
+  border-bottom-color: transparent;
 }
 
 .c0 {
@@ -854,7 +1127,7 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c8 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -863,35 +1136,35 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c8 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c9 {
     min-height: 120px;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c9 {
     width: 56.2%;
   }
 }
 
 @media (max-width:767px) {
-  .c7 {
+  .c11 {
     -webkit-flex: 1 1 46%;
     -ms-flex: 1 1 46%;
     flex: 1 1 46%;
   }
 
-  .c7:first-of-type {
+  .c11:first-of-type {
     margin-right: 1.5%;
   }
 
-  .c7:last-child {
+  .c11:last-child {
     margin-left: 1.5%;
   }
 }
@@ -900,6 +1173,24 @@ exports[`4. an inline image 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    width: 56.2%;
   }
 }
 
@@ -931,32 +1222,49 @@ exports[`4. an inline image 1`] = `
     >
       <div
         className="c2"
-      />
+      >
+        <div
+          className="c3 c4 c5"
+        >
+          <div
+            display="none"
+          />
+          <div>
+            <div
+              className="c6"
+            >
+              <div>
+                <SaveAndShareBar />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <article
-        className="c3"
+        className="c7"
       >
         <div>
           <div>
             <div
-              className="c4"
+              className="c8"
             >
               <ArticleImage />
             </div>
           </div>
         </div>
         <div
-          className="group-3 hidden c5"
+          className="group-3 hidden c9"
         >
           <h2
-            className="c6"
+            className="c10"
           >
             Sponsored
           </h2>
           <div
-            className="c7"
+            className="c11"
           />
           <div
-            className="c7"
+            className="c11"
           />
         </div>
         <div />
