@@ -49,8 +49,6 @@ describe("comments-login", () => {
 
 describe("User States", () => {
   it("enabled comments", () => {
-    UserState.mockStates = [UserState.showCommentingModule];
-
     const { asFragment, baseElement } = renderComments({
       count: 123,
       enabled: true
@@ -95,22 +93,16 @@ it("disabled comments", () => {
 });
 
 it("zero comments", () => {
-  UserState.mockStates = [UserState.showCommentingModule];
-
   const { asFragment } = renderComments({ count: 0, enabled: true });
   expect(asFragment()).toMatchSnapshot();
 });
 
 it("single comment", () => {
-  UserState.mockStates = [UserState.showCommentingModule];
-
   const { asFragment } = renderComments({ count: 1, enabled: true });
   expect(asFragment()).toMatchSnapshot();
 });
 
 it("Render comments label, when comments are loaded", () => {
-  UserState.mockStates = [UserState.showCommentingModule];
-
   // eslint-disable-next-line no-undef
   window.SPOTIM = {
     startSSO: () => {}
