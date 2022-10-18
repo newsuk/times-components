@@ -315,7 +315,10 @@ const renderArticle = () => (
 
 describe("Article with user state", () => {
   it("Render full article when user has access to full article", () => {
-    UserState.mockStates = [UserState.showArticleExtras];
+    UserState.mockStates = [
+      UserState.showSaveAndShareBar,
+      UserState.showArticleExtras
+    ];
     const output = TestRenderer.create(renderArticle());
 
     expect(output).toMatchSnapshot();
