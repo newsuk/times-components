@@ -8,6 +8,7 @@ import {
   minimalWebTransform,
   print
 } from "@times-components/jest-serializer";
+import { UserState } from "./mocks";
 import shared from "./shared.base";
 import ArticleMainStandard from "../src/article-main-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";
@@ -32,10 +33,19 @@ export default () => {
     )
   );
 
+  beforeEach(() => {
+    UserState.mockStates = [];
+  });
+
   shared(TestRenderer.create, [
     {
       name: "should show topics when logged in or shared",
       test() {
+        UserState.mockStates = [
+          UserState.showSaveAndShareBar,
+          UserState.showArticleExtras
+        ];
+
         const output = TestRenderer.create(
           <ArticleMainStandard
             {...articleProps}
