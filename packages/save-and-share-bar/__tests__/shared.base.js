@@ -90,7 +90,8 @@ export default () => {
     });
 
     it("tokenises when logged in as a subscriber", () => {
-      UserState.mockStates = [UserState.subscriber];
+      UserState.mockStates = [UserState.showSaveAndShareBar, UserState.showTokenisedEmailShare];
+      
       const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
       expect(
         testInstance.root.findByType(EmailShare).props.shouldTokenise

@@ -105,55 +105,6 @@ exports[`save and share bar component save and share bar renders correctly when 
       />
     </BarItem>
   </div>
-  <div
-    className="tc-view__TcView-nuazoi-0 fPjBcr"
-    data-testid="save-star"
-    style={
-      Object {
-        "alignItems": "center",
-        "flexDirection": "row",
-        "height": 40,
-        "marginLeft": "auto",
-      }
-    }
-  >
-    <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
-      style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": 14,
-          "lineHeight": "14px",
-          "marginRight": "10px",
-          "textAlign": "right",
-          "transform": Array [
-            Object {
-              "translateY": "9%",
-            },
-          ],
-        }
-      }
-    >
-      Save
-    </div>
-    <div
-      className="hover-icon__HoverIcon-sc-1ge5rtz-0 save-star-with-tracking__IconContainer-sc-1swm7v2-0 jsLSpl"
-    >
-      <IconActivityIndicator
-        style={
-          Object {
-            "backgroundColor": "#F5F5F5",
-            "borderRadius": 9999,
-            "height": 40,
-            "marginLeft": "5px",
-            "overflow": "hidden",
-            "width": 40,
-          }
-        }
-      />
-    </div>
-  </div>
 </div>
 `;
 
