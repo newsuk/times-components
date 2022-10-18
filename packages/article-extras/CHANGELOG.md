@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.19.12](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.19.11...@times-components/article-extras@0.19.12) (2022-10-18)
+
+
+### Bug Fixes
+
+* **TDP-2612:** UserState refactor ([#3167](https://github.com/newsuk/times-components/issues/3167)) ([acb908b](https://github.com/newsuk/times-components/commit/acb908ba9827284f9d91b02c1246f4578716c559))
+
+
+
+
+
 ## [0.19.11](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.19.10...@times-components/article-extras@0.19.11) (2022-10-14)
 
 **Note:** Version bump only for package @times-components/article-extras
