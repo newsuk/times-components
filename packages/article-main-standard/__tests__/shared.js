@@ -41,7 +41,10 @@ export default () => {
     {
       name: "should show topics when logged in or shared",
       test() {
-        UserState.mockStates = [UserState.loggedInOrShared];
+        UserState.mockStates = [
+          UserState.showArticleExtras,
+          UserState.showTopicTags
+        ];
 
         const output = TestRenderer.create(
           <ArticleMainStandard
