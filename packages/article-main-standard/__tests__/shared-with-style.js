@@ -15,6 +15,7 @@ import ArticleMainStandard from "../src/article-main-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleProps from "./shared-article-props";
+import { UserState } from "./mocks";
 
 jest.mock("@times-components/article-lead-asset", () => "ArticleLeadAsset");
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
@@ -154,6 +155,12 @@ export default () => {
         }
       ]
     });
+
+    UserState.mockStates = [
+      UserState.showSaveAndShareBar,
+      UserState.showArticleExtras,
+      UserState.showTopicTags
+    ];
 
     const output = TestRenderer.create(
       <ContextProviderWithDefaults
