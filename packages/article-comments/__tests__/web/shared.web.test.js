@@ -95,20 +95,22 @@ it("disabled comments", () => {
 });
 
 it("zero comments", () => {
-  UserState.mockStates = [UserState.showJoinTheConversationDialog];
+  UserState.mockStates = [UserState.showCommentingModule];
 
   const { asFragment } = renderComments({ count: 0, enabled: true });
   expect(asFragment()).toMatchSnapshot();
 });
 
 it("single comment", () => {
-  UserState.mockStates = [UserState.showJoinTheConversationDialog];
+  UserState.mockStates = [UserState.showCommentingModule];
 
   const { asFragment } = renderComments({ count: 1, enabled: true });
   expect(asFragment()).toMatchSnapshot();
 });
 
-xit("Render comments label, when comments are loaded", () => {
+it("Render comments label, when comments are loaded", () => {
+  UserState.mockStates = [UserState.showCommentingModule];
+
   // eslint-disable-next-line no-undef
   window.SPOTIM = {
     startSSO: () => {}

@@ -1,6 +1,70 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Render comments label, when comments are loaded 1`] = `<DocumentFragment />`;
+exports[`Render comments label, when comments are loaded 1`] = `
+<DocumentFragment>
+  .c1 {
+  display: none;
+}
+
+.c0 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+<div
+    class="c0"
+  >
+    <div
+      class="comment-banner c1"
+    />
+  </div>
+  .c0 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+<div
+    class="c0"
+    id="comments-container"
+  >
+    <div>
+      <script
+        async="async"
+        data-livefyre-url="dummy-article-id"
+        data-post-id="dummy-article-id"
+        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
+        data-seo-enabled="true"
+        data-spotim-module="spotim-launcher"
+        src="https://launcher.spot.im/spot/sp_pCQgrRiN"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
 
 exports[`User States No user state 1`] = `<DocumentFragment />`;
 
@@ -256,81 +320,24 @@ exports[`disabled comments 1`] = `
 
 exports[`single comment 1`] = `
 <DocumentFragment>
-  .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 60px;
+  .c1 {
+  display: none;
 }
 
-.c1 {
-  font-family: TimesModern-Bold;
-  font-size: 32px;
-  line-height: 32px;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  text-align: center;
-  padding: 24px;
-}
-
-.c2 {
-  font-family: TimesDigitalW04;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  text-align: center;
-  max-width: 660px;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: #008387;
-  color: white;
-  font-family: GillSansMTStd-Medium;
-  width: 127px;
-  height: 48px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin: 24px;
+.c0 {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width:768px) {
   .c0 {
-    padding: 88px;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
   }
 }
 
@@ -338,21 +345,41 @@ exports[`single comment 1`] = `
     class="c0"
   >
     <div
-      class="c1"
-    >
-      Join the conversation
+      class="comment-banner c1"
+    />
+  </div>
+  .c0 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+<div
+    class="c0"
+    id="comments-container"
+  >
+    <div>
+      <script
+        async="async"
+        data-livefyre-url="dummy-article-id"
+        data-post-id="dummy-article-id"
+        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
+        data-seo-enabled="true"
+        data-spotim-module="spotim-launcher"
+        src="https://launcher.spot.im/spot/sp_pCQgrRiN"
+      />
     </div>
-    <div
-      class="c2"
-    >
-      Commenting is only available to unlimited access subscribers. Upgrade your subscription to have your say.
-    </div>
-    <a
-      class="c3"
-      href="https://thetimes.co.uk/subscribe/digital?ILC=GB-TNL_The_Times-Conversion_Page-Homepage-2020"
-    >
-      View offers
-    </a>
   </div>
 </DocumentFragment>
 `;
@@ -361,81 +388,24 @@ exports[`window listeners added all listeners added 1`] = `Array []`;
 
 exports[`zero comments 1`] = `
 <DocumentFragment>
-  .c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 60px;
+  .c1 {
+  display: none;
 }
 
-.c1 {
-  font-family: TimesModern-Bold;
-  font-size: 32px;
-  line-height: 32px;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  text-align: center;
-  padding: 24px;
-}
-
-.c2 {
-  font-family: TimesDigitalW04;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  text-align: center;
-  max-width: 660px;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  cursor: pointer;
-  background-color: #008387;
-  color: white;
-  font-family: GillSansMTStd-Medium;
-  width: 127px;
-  height: 48px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
-  margin: 24px;
+.c0 {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width:768px) {
   .c0 {
-    padding: 88px;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
   }
 }
 
@@ -443,21 +413,41 @@ exports[`zero comments 1`] = `
     class="c0"
   >
     <div
-      class="c1"
-    >
-      Join the conversation
+      class="comment-banner c1"
+    />
+  </div>
+  .c0 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 {
+    width: 56.2%;
+  }
+}
+
+<div
+    class="c0"
+    id="comments-container"
+  >
+    <div>
+      <script
+        async="async"
+        data-livefyre-url="dummy-article-id"
+        data-post-id="dummy-article-id"
+        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
+        data-seo-enabled="true"
+        data-spotim-module="spotim-launcher"
+        src="https://launcher.spot.im/spot/sp_pCQgrRiN"
+      />
     </div>
-    <div
-      class="c2"
-    >
-      Commenting is only available to unlimited access subscribers. Upgrade your subscription to have your say.
-    </div>
-    <a
-      class="c3"
-      href="https://thetimes.co.uk/subscribe/digital?ILC=GB-TNL_The_Times-Conversion_Page-Homepage-2020"
-    >
-      View offers
-    </a>
   </div>
 </DocumentFragment>
 `;
