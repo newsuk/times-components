@@ -59,12 +59,6 @@ export default () => {
     });
 
     it("save and share bar renders correctly when logged in", () => {
-      UserState.mockStates = [
-        UserState.showSaveAndShareBar,
-        UserState.showTokenisedEmailShare,
-        UserState.showArticleSaveButton
-      ];
-
       const testInstance = TestRenderer.create(
         <MockedProvider>
           <SaveAndShareBar {...props} />
@@ -75,6 +69,7 @@ export default () => {
 
     it("save and share bar renders correctly when not logged in", () => {
       UserState.mockStates = [];
+
       const testInstance = TestRenderer.create(
         <MockedProvider>
           <SaveAndShareBar {...props} />

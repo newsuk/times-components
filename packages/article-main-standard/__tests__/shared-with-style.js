@@ -9,7 +9,7 @@ import {
   minimalWebTransform,
   stylePrinter
 } from "@times-components/jest-serializer";
-import "./mocks";
+
 import { ContextProviderWithDefaults } from "@times-components/context";
 import ArticleMainStandard from "../src/article-main-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";
