@@ -140,7 +140,7 @@ const tests = [
         <ContextProviderWithDefaults
           value={{
             theme: { scale, sectionColour },
-            user: { isLoggedIn: true }
+            user: { hasAccess: true, isLoggedIn: true }
           }}
         >
           <MockedProvider>
@@ -178,6 +178,7 @@ beforeEach(() => {
 
   const nuk = {
     user: {
+      hasAccess: true,
       isLoggedIn: true
     }
   };

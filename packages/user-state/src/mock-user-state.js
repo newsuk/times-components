@@ -20,7 +20,9 @@ function mockUserState() {
       MockUserState.mockStates = [
         RealUserState.showSaveAndShareBar,
         RealUserState.showArticleExtras,
+        RealUserState.showTopicTags,
         RealUserState.showArticleSaveButton,
+        RealUserState.showTokenisedEmailShare,
         RealUserState.showCommentingModule
       ];
     };
