@@ -49,8 +49,6 @@ describe("comments-login", () => {
 
 describe("User States", () => {
   it("enabled comments", () => {
-    UserState.mockStates = [UserState.subscriber];
-
     const { asFragment, baseElement } = renderComments({
       count: 123,
       enabled: true
@@ -64,7 +62,7 @@ describe("User States", () => {
   });
 
   it("RA Users", () => {
-    UserState.mockStates = [UserState.metered, UserState.loggedIn];
+    UserState.mockStates = [UserState.showJoinTheConversationDialog];
 
     const { asFragment, getAllByText } = renderComments({
       count: 123,
