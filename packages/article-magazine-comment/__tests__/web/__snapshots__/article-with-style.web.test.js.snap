@@ -962,6 +962,7 @@ exports[`full article with style 1`] = `
                 width="100%"
               >
                 <div
+                  className="lcpItem"
                   display="table"
                   height={0}
                   overflow="hidden"
@@ -2093,6 +2094,7 @@ exports[`full article with style in the culture magazine 1`] = `
                 width="100%"
               >
                 <div
+                  className="lcpItem"
                   display="table"
                   height={0}
                   overflow="hidden"
@@ -3225,6 +3227,7 @@ exports[`full article with style in the style magazine 1`] = `
                 width="100%"
               >
                 <div
+                  className="lcpItem"
                   display="table"
                   height={0}
                   overflow="hidden"
@@ -4356,6 +4359,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
                 width="100%"
               >
                 <div
+                  className="lcpItem"
                   display="table"
                   height={0}
                   overflow="hidden"
