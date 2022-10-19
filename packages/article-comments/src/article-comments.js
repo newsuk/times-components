@@ -19,10 +19,10 @@ const ArticleComments = ({
 }) =>
   isEnabled ? (
     <>
-      <UserState state={UserState.metered}>
+      <UserState state={UserState.showJoinTheConversationDialog}>
         <JoinTheConversationDialog />
       </UserState>
-      <UserState state={UserState.subscriber}>
+      <UserState state={UserState.showCommentingModule}>
         <CommentContainer>
           <HiddenDiv className="comment-banner">
             {/* <InlineMessage title="Real-name Commenting" type="info">
