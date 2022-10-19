@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.4](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.4.3...@times-components/user-state@0.4.4) (2022-10-19)
+
+
+### Bug Fixes
+
+* **TDP-2612:** UserState refactor ([#3169](https://github.com/newsuk/times-components/issues/3169)) ([a0ba83a](https://github.com/newsuk/times-components/commit/a0ba83a3f4c8d2b0dcc2a6dbf3f126b8870de83a))
+
+
+
+
+
 ## [0.4.3](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.4.2...@times-components/user-state@0.4.3) (2022-10-18)
 
 

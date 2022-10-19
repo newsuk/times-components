@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.38.17](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.38.16...@times-components/ssr@2.38.17) (2022-10-19)
+
+
+### Bug Fixes
+
+* **TDP-2612:** UserState refactor ([#3169](https://github.com/newsuk/times-components/issues/3169)) ([a0ba83a](https://github.com/newsuk/times-components/commit/a0ba83a3f4c8d2b0dcc2a6dbf3f126b8870de83a))
+
+
+
+
+
 ## [2.38.16](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.38.15...@times-components/ssr@2.38.16) (2022-10-19)
 
 **Note:** Version bump only for package @times-components/ssr
