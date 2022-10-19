@@ -23,6 +23,7 @@ const LeadAssetImage = ({ aspectRatio, alt, uri }) => {
         style={styles.img}
         src={appendToImageURL(url, "resize", sizes[0])}
         srcSet={srcSet.join(",")}
+        fetchpriority="high" 
       />
     </div>
   );
