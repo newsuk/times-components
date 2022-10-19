@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.58.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.57.15...@times-components/article-magazine-comment@3.58.0) (2022-10-19)
+
+
+### Features
+
+* **TDP-2614:** added class lcpItem to article-lead-asset ([#3168](https://github.com/newsuk/times-components/issues/3168)) ([f8e1634](https://github.com/newsuk/times-components/commit/f8e16340798a7f41326253eadc53014bd1fb3112))
+
+
+
+
+
 ## [3.57.15](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.57.14...@times-components/article-magazine-comment@3.57.15) (2022-10-18)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

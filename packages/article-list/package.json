@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-list",
-  "version": "9.11.10",
+  "version": "9.11.11",
   "description": "Paginated list of articles",
   "main": "dist/article-list",
   "dev": "src/article-list",
@@ -60,7 +60,7 @@
   },
   "dependencies": {
     "@times-components/ad": "2.21.3",
-    "@times-components/article-summary": "3.20.11",
+    "@times-components/article-summary": "3.20.12",
     "@times-components/button": "2.7.3",
     "@times-components/card": "6.9.5",
     "@times-components/context": "1.10.2",
@@ -68,8 +68,8 @@
     "@times-components/image": "6.13.5",
     "@times-components/lazy-load": "0.7.2",
     "@times-components/link": "3.11.3",
-    "@times-components/pagination": "3.9.4",
-    "@times-components/tracking": "2.12.4",
+    "@times-components/pagination": "3.9.5",
+    "@times-components/tracking": "2.13.0",
     "@times-components/ts-styleguide": "1.37.3",
     "@times-components/utils": "6.15.2",
     "lodash.get": "4.4.2",

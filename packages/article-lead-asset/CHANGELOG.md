@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.11.5...@times-components/article-lead-asset@1.12.0) (2022-10-19)
+
+
+### Features
+
+* **TDP-2614:** added class lcpItem to article-lead-asset ([#3168](https://github.com/newsuk/times-components/issues/3168)) ([f8e1634](https://github.com/newsuk/times-components/commit/f8e16340798a7f41326253eadc53014bd1fb3112))
+
+
+
+
+
 ## [1.11.5](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.11.4...@times-components/article-lead-asset@1.11.5) (2022-10-18)
 
 **Note:** Version bump only for package @times-components/article-lead-asset
