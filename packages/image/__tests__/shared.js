@@ -194,7 +194,7 @@ export default () => {
             highResSize={1400}
             lowResSize={200}
             uri="https://image.io"
-            isLcpItem={true}
+            isLcpItem
           />
         );
 

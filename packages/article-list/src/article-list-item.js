@@ -125,7 +125,7 @@ const ArticleListItem = props => {
                 lowResQuality={lowResQuality}
                 lowResSize={lowResSize}
                 showImage={showImage}
-                isLcpItem={(index === 0 ? true : false)}
+                isLcpItem={index === 0}
               >
                 <Animations.FadeIn>{children}</Animations.FadeIn>
               </Card>
