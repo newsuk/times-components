@@ -14,7 +14,8 @@ class CardContent extends Component {
       lowResQuality,
       lowResSize,
       highResSize,
-      isLoading
+      isLoading,
+      index
     } = this.props;
 
     return (
@@ -22,7 +23,8 @@ class CardContent extends Component {
       lowResQuality !== nextProps.lowResQuality ||
       lowResSize !== nextProps.lowResSize ||
       highResSize !== nextProps.highResSize ||
-      isLoading !== nextProps.isLoading
+      isLoading !== nextProps.isLoading ||
+      index !== nextProps.index
     );
   }
 
@@ -42,7 +44,8 @@ class CardContent extends Component {
       lowResQuality,
       lowResSize,
       relatedArticle,
-      showImage
+      showImage,
+      isLcpItem
     } = this.props;
 
     const TcCardContainer = styled(TcView)`
@@ -73,6 +76,7 @@ class CardContent extends Component {
             lowResQuality={lowResQuality}
             lowResSize={lowResSize}
             uri={imageUri}
+            isLcpItem={isLcpItem}
           />
         </TcView>
       );

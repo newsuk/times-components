@@ -113,7 +113,8 @@ class TimesImage extends Component {
       style,
       uri,
       onLayout,
-      rounded
+      rounded,
+      isLcpItem
     } = this.props;
     const { imageIsLoaded } = this.state;
     const url = addMissingProtocol(uri);
@@ -125,7 +126,7 @@ class TimesImage extends Component {
     }
 
     return (
-      <TcView onLayout={onLayout} style={styles} testID="Image">
+      <TcView onLayout={onLayout} style={styles} testID="Image" className={`${(isLcpItem === true ? "lcpItem" : "")}`}>
         <div style={{ paddingBottom: `${100 / aspectRatio}%` }}>
           {this.highResImage({ highResSize, lowResSize, url })}
           {this.lowResImage({ lowResQuality, lowResSize, url })}
