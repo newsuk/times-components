@@ -108,6 +108,7 @@ Array [
           disablePlaceholder={false}
           fadeImageIn={false}
           highResSize={null}
+          isLcpItem={false}
           lowResSize={null}
           onImagePress={null}
           rounded={false}
@@ -417,6 +418,7 @@ Array [
           disablePlaceholder={false}
           fadeImageIn={false}
           highResSize={null}
+          isLcpItem={false}
           lowResSize={null}
           onImagePress={null}
           rounded={false}
