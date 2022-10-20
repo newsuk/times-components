@@ -3612,45 +3612,6 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
 
-"@times-components/link@3.11.3":
-  version "3.11.3"
-  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-3.11.3.tgz#034fc8dd841f66150cfaad2302de427f8ddf6e46"
-  integrity sha512-rnkxSJGU8C38lRfwEFAsxbPkgGpi4QniXRkpx1N0uHN2Ok3/CqqO0HGP86k9uBR1ZpkR/dqM40TIiZi9QhR3DA==
-  dependencies:
-    "@times-components/ts-styleguide" "1.37.3"
-    "@times-components/utils" "6.15.2"
-    prop-types "15.7.2"
-    react "16.9.0"
-    react-dom "16.9.0"
-    styled-components "4.3.2"
-
-"@times-components/ts-styleguide@1.37.3":
-  version "1.37.3"
-  resolved "https://registry.yarnpkg.com/@times-components/ts-styleguide/-/ts-styleguide-1.37.3.tgz#57165e2f88621260d3340363adc700067aad574a"
-  integrity sha512-g4dQM/Tc6g75r21k5//193Hu4/l7H+e9ggr5mK5VEH415lCETi9WDkHpDb3SOsFOjK5eRehMM4rUph18jktN/Q==
-  dependencies:
-    "@times-components/link" "3.11.3"
-    "@times-components/utils" "6.15.2"
-    react "16.9.0"
-    styled-components "4.3.2"
-
-"@times-components/utils@6.15.2":
-  version "6.15.2"
-  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-6.15.2.tgz#646af3ee2f4165551f820df3aa2f8a2dda6d7fe8"
-  integrity sha512-KxHBHhUth6gehKgGfdAfeDFXCAQeeqrXMlOR+u7bBUfSRfQYvseKsZUx5bpYiMKUuqd0gZ06viKre4JLVZZA+g==
-  dependencies:
-    "@times-components/schema" "0.7.3"
-    "@times-components/ts-styleguide" "1.37.3"
-    apollo-cache-inmemory "1.5.1"
-    apollo-client "2.5.1"
-    apollo-link "1.2.4"
-    apollo-link-http "1.5.14"
-    apollo-link-persisted-queries "0.2.2"
-    lodash.omitby "4.6.0"
-    prop-types "15.7.2"
-    styled-components "4.3.2"
-    unfetch "^3.0.0"
-
 "@tootallnate/once@1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
