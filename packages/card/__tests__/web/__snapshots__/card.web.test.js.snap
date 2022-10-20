@@ -60,6 +60,7 @@ exports[`1. card default state 1`] = `
               disablePlaceholder={false}
               fadeImageIn={false}
               highResSize={360}
+              isLcpItem={false}
               lowResQuality={null}
               lowResSize={50}
               rounded={false}
@@ -213,6 +214,7 @@ exports[`2. pass an empty state to the image component 1`] = `
               disablePlaceholder={false}
               fadeImageIn={false}
               highResSize={360}
+              isLcpItem={false}
               lowResQuality={null}
               lowResSize={50}
               rounded={false}
@@ -479,6 +481,7 @@ exports[`4. pass an empty state to the image component when the uri is null 1`] 
               disablePlaceholder={false}
               fadeImageIn={false}
               highResSize={360}
+              isLcpItem={false}
               lowResQuality={null}
               lowResSize={50}
               rounded={false}
@@ -712,6 +715,7 @@ exports[`5. card with reversed layout 1`] = `
               disablePlaceholder={false}
               fadeImageIn={false}
               highResSize={360}
+              isLcpItem={false}
               lowResQuality={null}
               lowResSize={50}
               rounded={false}
@@ -846,9 +850,9 @@ exports[`7. card with a loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-w31u4-0",
+          "componentId": "Animations__FadeIn-je5757-0",
           "isStatic": false,
-          "lastClassName": "ejSuos",
+          "lastClassName": "dazpaJ",
           "rules": Array [
             "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
             [Function],
@@ -881,10 +885,10 @@ exports[`7. card with a loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-sc-154dp5w-0",
+          "TsTcView-o5ytee-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-w31u4-0",
+        "styledComponentId": "Animations__FadeIn-je5757-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -953,6 +957,7 @@ exports[`7. card with a loading state 1`] = `
                     disablePlaceholder={false}
                     fadeImageIn={false}
                     highResSize={360}
+                    isLcpItem={false}
                     lowResQuality={null}
                     lowResSize={50}
                     rounded={false}
@@ -1050,9 +1055,9 @@ exports[`8. card with a loading state and no image 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-w31u4-0",
+          "componentId": "Animations__FadeIn-je5757-0",
           "isStatic": false,
-          "lastClassName": "ejSuos",
+          "lastClassName": "dazpaJ",
           "rules": Array [
             "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
             [Function],
@@ -1085,10 +1090,10 @@ exports[`8. card with a loading state and no image 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-sc-154dp5w-0",
+          "TsTcView-o5ytee-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-w31u4-0",
+        "styledComponentId": "Animations__FadeIn-je5757-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1214,9 +1219,9 @@ exports[`9. card with reversed loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-w31u4-0",
+          "componentId": "Animations__FadeIn-je5757-0",
           "isStatic": false,
-          "lastClassName": "ejSuos",
+          "lastClassName": "dazpaJ",
           "rules": Array [
             "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
             [Function],
@@ -1249,10 +1254,10 @@ exports[`9. card with reversed loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-sc-154dp5w-0",
+          "TsTcView-o5ytee-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-w31u4-0",
+        "styledComponentId": "Animations__FadeIn-je5757-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1394,6 +1399,7 @@ exports[`9. card with reversed loading state 1`] = `
                     disablePlaceholder={false}
                     fadeImageIn={false}
                     highResSize={360}
+                    isLcpItem={false}
                     lowResQuality={null}
                     lowResSize={50}
                     rounded={false}
@@ -1418,9 +1424,9 @@ exports[`10. card with reversed loading state with no image 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-w31u4-0",
+          "componentId": "Animations__FadeIn-je5757-0",
           "isStatic": false,
-          "lastClassName": "ejSuos",
+          "lastClassName": "dazpaJ",
           "rules": Array [
             "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
             [Function],
@@ -1453,10 +1459,10 @@ exports[`10. card with reversed loading state with no image 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-sc-154dp5w-0",
+          "TsTcView-o5ytee-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-w31u4-0",
+        "styledComponentId": "Animations__FadeIn-je5757-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
