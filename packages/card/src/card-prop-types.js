@@ -10,6 +10,7 @@ export const cardPropTypes = {
   imageStyle: PropTypes.object,
   imageUri: PropTypes.string,
   isLoading: PropTypes.bool,
+  isLcpItem: PropTypes.bool,
   lowResQuality: PropTypes.number,
   lowResSize: PropTypes.number
 };
@@ -23,6 +24,7 @@ export const cardDefaultProps = {
   imageStyle: {},
   imageUri: null,
   isLoading: false,
+  isLcpItem: false,
   lowResQuality: null,
   lowResSize: null
 };

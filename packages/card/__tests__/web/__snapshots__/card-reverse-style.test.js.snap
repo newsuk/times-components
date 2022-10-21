@@ -254,6 +254,7 @@ exports[`card with reversed layout 1`] = `
               disablePlaceholder={false}
               fadeImageIn={false}
               highResSize={600}
+              isLcpItem={false}
               lowResQuality={null}
               lowResSize={30}
               rounded={false}

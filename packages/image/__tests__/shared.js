@@ -184,6 +184,41 @@ export default () => {
 
         expect(onLayoutMock).toHaveBeenCalledWith(evt);
       }
+    },
+    {
+      name: "to have the lcpItem class",
+      test: () => {
+        const testRenderer = TestRenderer.create(
+          <Image
+            aspectRatio={2}
+            highResSize={1400}
+            lowResSize={200}
+            uri="https://image.io"
+            isLcpItem
+          />
+        );
+
+        const lcpImageItem = testRenderer.root.findByType("div");
+
+        expect(lcpImageItem.props.className.includes("lcpItem")).toBe(true);
+      }
+    },
+    {
+      name: "to not have the lcpItem class",
+      test: () => {
+        const testRenderer = TestRenderer.create(
+          <Image
+            aspectRatio={2}
+            highResSize={1400}
+            lowResSize={200}
+            uri="https://image.io"
+          />
+        );
+
+        const lcpImageItem = testRenderer.root.findByType("div");
+
+        expect(lcpImageItem.props.className.includes("lcpItem")).toBe(false);
+      }
     }
   ];
 
