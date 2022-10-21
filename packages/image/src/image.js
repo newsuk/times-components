@@ -130,7 +130,7 @@ class TimesImage extends Component {
         onLayout={onLayout}
         style={styles}
         testID="Image"
-        className={`${isLcpItem === true ? "lcpItem" : ""}`}
+        className={(isLcpItem && "lcpItem") || ""}
       >
         <div style={{ paddingBottom: `${100 / aspectRatio}%` }}>
           {this.highResImage({ highResSize, lowResSize, url })}
