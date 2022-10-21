@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.14.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.13.1...@times-components/tracking@2.14.0) (2022-10-21)
+
+
+### Features
+
+* **TDP-2618:** updated topic page to use the lcpItem class for the f… ([#3170](https://github.com/newsuk/times-components/issues/3170)) ([69eace6](https://github.com/newsuk/times-components/commit/69eace62da80cb58d9d3ee30b1f7dcb725fa3a5d))
+
+
+
+
+
 ## [2.13.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.13.0...@times-components/tracking@2.13.1) (2022-10-19)
 
 **Note:** Version bump only for package @times-components/tracking

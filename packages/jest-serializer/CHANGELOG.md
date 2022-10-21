@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.4.2...@times-components/jest-serializer@3.5.0) (2022-10-21)
+
+
+### Features
+
+* **TDP-2618:** updated topic page to use the lcpItem class for the f… ([#3170](https://github.com/newsuk/times-components/issues/3170)) ([69eace6](https://github.com/newsuk/times-components/commit/69eace62da80cb58d9d3ee30b1f7dcb725fa3a5d))
+
+
+
+
+
 ## [3.4.2](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.4.1...@times-components/jest-serializer@3.4.2) (2022-10-18)
 
 **Note:** Version bump only for package @times-components/jest-serializer
