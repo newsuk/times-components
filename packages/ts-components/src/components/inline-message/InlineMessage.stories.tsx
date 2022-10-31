@@ -6,10 +6,9 @@ import { select } from '@storybook/addon-knobs';
 storiesOf('Typescript Component/InlineMessage', module).add('default', () => {
   const type = select('Level', ['info', 'warning', 'error'], 'info');
   return (
-    <InlineMessage title="Real-name commenting" type={type}>
-      Digital commenters are now identified by their real name. We believe this
-      is the best way to ensure high-quality reader participation and
-      intelligent debate.
+    <InlineMessage title="Real-name comments" type={type} >
+    We&apos;ve changed our policy - if you need to,{" "}
+    <a href="https://home.thetimes.co.uk/">edit your screen name here</a>. 
     </InlineMessage>
-  );
+);
 });
