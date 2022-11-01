@@ -25,15 +25,17 @@ const ArticleComments = ({
       </UserState>
       <UserState state={UserState.showCommentingModule}>
         <CommentContainer>
-          <HiddenDiv className="comment-banner" style={`${realNameInlineBlueBanner && {display: "block"}}`}>
-            <InlineMessage title="Real-name comments" type="info">
+          {
+            realnameInlineBlueBanner ? (
+              <InlineMessage title="Real-name comments" type="info">
               We&apos;ve changed our policy - if you need to,{" "}
               <a href="https://home.thetimes.co.uk/">
                 edit your screen name here
               </a>
               .
             </InlineMessage>
-          </HiddenDiv>
+            ) :  <div>MY INLINE MESSAGE IS FALSE</div>
+          }
         </CommentContainer>
         <Comments
           articleId={articleId}

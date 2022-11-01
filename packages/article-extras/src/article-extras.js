@@ -36,7 +36,6 @@ const ArticleExtras = ({
       <div id="sponsored-article" />
     </div>
   );
-
   return (
     <UserState state={UserState.showArticleExtras} fallback={sponsoredArticles}>
       <div style={clearingStyle} />

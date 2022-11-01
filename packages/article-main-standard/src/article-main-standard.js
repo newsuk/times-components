@@ -87,7 +87,7 @@ class ArticlePage extends Component {
       isPreview,
       swgProductId,
       getFallbackThumbnailUrl169,
-      realNameInlineBlueBanner
+      realnameInlineBlueBanner
     } = this.props;
 
     if (error || isLoading) {
@@ -107,7 +107,7 @@ class ArticlePage extends Component {
           paidContentClassName={paidContentClassName}
           isPreview={isPreview}
           swgProductId={swgProductId}
-          realNameInlineBlueBanner={realNameInlineBlueBanner}
+          realnameInlineBlueBanner={realnameInlineBlueBanner}
         />
       </ArticleMainStandardContainer>
     );
