@@ -27,7 +27,8 @@ const ArticleExtras = ({
   relatedArticleSlice,
   relatedArticlesVisible,
   commentingConfig,
-  topics
+  topics,
+  realnameInlineBlueBanner
 }) => {
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticles = (
@@ -77,6 +78,7 @@ const ArticleExtras = ({
         articleId={articleId}
         isEnabled={commentsEnabled}
         commentingConfig={commentingConfig}
+        realnameInlineBlueBanner={realnameInlineBlueBanner}
       />
     </UserState>
   );

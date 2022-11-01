@@ -15,7 +15,8 @@ const ArticleComments = ({
   articleId,
   isEnabled,
   isReadOnly,
-  commentingConfig
+  commentingConfig,
+  realnameInlineBlueBanner
 }) =>
   isEnabled ? (
     <>
@@ -24,7 +25,7 @@ const ArticleComments = ({
       </UserState>
       <UserState state={UserState.showCommentingModule}>
         <CommentContainer>
-          <HiddenDiv className="comment-banner">
+          <HiddenDiv className="comment-banner" style={`${realNameInlineBlueBanner && {display: "block"}}`}>
             <InlineMessage title="Real-name comments" type="info">
               We&apos;ve changed our policy - if you need to,{" "}
               <a href="https://home.thetimes.co.uk/">
