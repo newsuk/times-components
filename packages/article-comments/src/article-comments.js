@@ -26,6 +26,7 @@ const ArticleComments = ({
       <UserState state={UserState.showCommentingModule}>
         <CommentContainer>
           <HiddenDiv
+            className="comment-banner"
             style={{
               display: `${realnameInlineBlueBanner ? "block" : "none"}`
             }}
