@@ -98,7 +98,8 @@ ArticleExtras.propTypes = {
   }).isRequired,
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
-  sharingEnabled: PropTypes.bool.isRequired
+  sharingEnabled: PropTypes.bool.isRequired,
+  realnameInlineBlueBanner: PropTypes.bool.isRequired
 };
 
 ArticleExtras.defaultProps = {
