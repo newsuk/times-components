@@ -362,6 +362,27 @@ exports[`1. a full article 1`] = `
         </svg>
       </a>
       Save
+      <svg
+        height="20"
+        viewBox="0 0 20 20"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="a4e230906ee0051a9ddc27f81fc43cb2"
+          fill-rule="evenodd"
+        />
+      </svg>
+      Real-name comments
+      We've changed our policy - if you need to,
+       
+      <a
+        href="https://home.thetimes.co.uk/"
+      >
+        edit your screen name here
+      </a>
+      .
     </article>
   </main>
 </article>

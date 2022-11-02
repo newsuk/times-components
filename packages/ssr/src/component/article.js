@@ -30,7 +30,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     paidContentClassName,
     isPreview,
     swgProductId,
-    getFallbackThumbnailUrl169
+    getFallbackThumbnailUrl169,
+    realnameInlineBlueBanner
   } = data;
 
   return React.createElement(
@@ -87,7 +88,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               paidContentClassName,
               isPreview,
               swgProductId,
-              getFallbackThumbnailUrl169
+              getFallbackThumbnailUrl169,
+              realnameInlineBlueBanner
             })
           );
         }
