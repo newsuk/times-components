@@ -25,8 +25,7 @@ const ArticleComments = ({
       </UserState>
       <UserState state={UserState.showCommentingModule}>
         <CommentContainer>
-          {
-            realnameInlineBlueBanner ? (
+        <HiddenDiv style={{display: `${realnameInlineBlueBanner ? 'block' : 'none'}`}}>
               <InlineMessage title="Real-name comments" type="info">
               We&apos;ve changed our policy - if you need to,{" "}
               <a href="https://home.thetimes.co.uk/">
@@ -34,8 +33,7 @@ const ArticleComments = ({
               </a>
               .
             </InlineMessage>
-            ) :  <div>MY INLINE MESSAGE IS FALSE</div>
-          }
+          </HiddenDiv>
         </CommentContainer>
         <Comments
           articleId={articleId}
