@@ -65,7 +65,9 @@ exports[`Real Name Banner feature flag Banner is not visible 1`] = `
 }
 
 .c6 a {
-  color: #000000;
+  color: #333333;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0 {
@@ -236,7 +238,9 @@ exports[`Real Name Banner feature flag Banner is visible 1`] = `
 }
 
 .c6 a {
-  color: #000000;
+  color: #333333;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0 {
@@ -407,7 +411,9 @@ exports[`Render comments label, when comments are loaded 1`] = `
 }
 
 .c6 a {
-  color: #000000;
+  color: #333333;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0 {
@@ -683,7 +689,9 @@ exports[`User States enabled comments 1`] = `
 }
 
 .c6 a {
-  color: #000000;
+  color: #333333;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0 {
@@ -935,7 +943,9 @@ exports[`single comment 1`] = `
 }
 
 .c6 a {
-  color: #000000;
+  color: #333333;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0 {
@@ -1121,7 +1131,9 @@ exports[`zero comments 1`] = `
 }
 
 .c6 a {
-  color: #000000;
+  color: #333333;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
 }
 
 .c0 {

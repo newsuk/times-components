@@ -56,6 +56,7 @@ export const Description = styled.div`
   font-size: 14px;
   line-height: 20px;
   & a {
-    color: #000000;
+    color: #333333;
+    text-decoration: underline;
   }
 `;
