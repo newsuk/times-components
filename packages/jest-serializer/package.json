@@ -1,6 +1,6 @@
 {
   "name": "@times-components/jest-serializer",
-  "version": "3.5.0",
+  "version": "3.5.1",
   "description": "serializer",
   "main": "dist/index",
   "dev": "src/jest-serializer",
@@ -43,7 +43,7 @@
     "react-test-renderer": "16.9.0"
   },
   "dependencies": {
-    "@times-components/utils": "6.15.5",
+    "@times-components/utils": "6.15.6",
     "css": "^2.2.1",
     "enzyme-to-json": "3.3.5",
     "hyphenate-style-name": "1.0.2",
