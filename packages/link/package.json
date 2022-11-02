@@ -1,6 +1,6 @@
 {
   "name": "@times-components/link",
-  "version": "3.11.4",
+  "version": "3.11.5",
   "description": "component to handle links and navigation",
   "main": "dist/link",
   "dev": "src/link",
@@ -50,8 +50,8 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/ts-styleguide": "1.37.4",
-    "@times-components/utils": "6.15.4",
+    "@times-components/ts-styleguide": "1.37.5",
+    "@times-components/utils": "6.15.5",
     "prop-types": "15.7.2",
     "react": "16.9.0",
     "react-dom": "16.9.0",

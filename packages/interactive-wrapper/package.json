@@ -1,6 +1,6 @@
 {
   "name": "@times-components/interactive-wrapper",
-  "version": "0.9.7",
+  "version": "0.9.8",
   "description": "Wrapper for legacy Interactive components",
   "main": "dist/interactive-wrapper",
   "dev": "src/interactive-wrapper",
@@ -50,7 +50,7 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/image": "6.14.0",
+    "@times-components/image": "6.14.1",
     "prop-types": "15.7.2"
   },
   "resolutions": {
