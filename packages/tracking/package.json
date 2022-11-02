@@ -36,7 +36,7 @@
     "@times-components/jest-serializer": "3.5.0",
     "@times-components/storybook": "4.5.5",
     "@times-components/tealium-utils": "0.8.0",
-    "@times-components/utils": "6.15.4",
+    "@times-components/utils": "6.15.5",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "depcheck": "0.6.9",
