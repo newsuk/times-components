@@ -73,16 +73,16 @@ describe('<FetchProvider>', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('preview', () => {
+  it('preview', async () => {
     const value = 'Preloaded';
 
-    const { asFragment, getByText } = render(
+    const { asFragment, findByText } = render(
       <FetchProvider previewData={{ value }}>
         <TestComponent />
       </FetchProvider>
     );
 
-    expect(getByText(value));
+    await findByText(value);
     expect(asFragment()).toMatchSnapshot();
   });
 });

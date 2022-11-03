@@ -50,10 +50,8 @@ export const FetchProvider: React.FC<FetchProviderProps> = ({
       };
 
       if (previewData) {
-        setTimeout(() => {
-          setData(previewData);
-          setLoading(false);
-        }, 1000);
+        setData(previewData);
+        setLoading(false);
       } else {
         fetchData();
       }
