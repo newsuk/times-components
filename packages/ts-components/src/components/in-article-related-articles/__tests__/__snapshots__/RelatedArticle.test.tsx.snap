@@ -50,7 +50,9 @@ exports[`<RelatedArticle> renders 1`] = `
           viewBox="42 12 60 120"
           width="8"
         >
-          <g>
+          <g
+            fill="#006699"
+          >
             <path
               d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
             />
