@@ -104,12 +104,16 @@ declare module '@times-components/ts-styleguide' {
 declare module '@times-components/icons' {
   import { FC } from 'react';
   type IconProps = {
-    fillColour: string | null;
+    fillColour?: string;
+    strokeColour?: string;
     height?: number;
     width?: number;
+    title?: string;
   };
   export const IconForwardChevron: FC<IconProps>;
   export const IconForwardArrow: FC<IconProps>;
+  export const IconStar: FC<IconProps>;
+  export const IconActivityIndicator: FC<IconProps>;
 }
 
 declare module '@times-components/image' {

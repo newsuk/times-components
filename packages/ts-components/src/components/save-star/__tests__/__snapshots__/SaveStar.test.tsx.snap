@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SaveStar should render the initial loading state correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-htpNat ffLxAf"
+  >
+    Save
+  </div>
+  <div
+    class="sc-bdVaJa llPcWQ"
+  >
+    <div
+      class="activity-indicator__ActivityIndicatorContainer-sc-1bvau9v-1 cVeDx"
+    >
+      <div
+        class="activity-indicator__ActivityIndicatorSpinner-sc-1bvau9v-0 kaKzrz"
+        data-fill-colour="#006699"
+        data-title="Activity Indicator"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`SaveStar should render the saved state 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-htpNat ffLxAf"
+  >
+    Saved
+  </div>
+  <button
+    class="sc-bxivhb dfgNGA"
+  >
+    <div
+      class="sc-bdVaJa llPcWQ"
+    >
+      <svg
+        aria-label="icon-save-star"
+        height="18"
+        role="img"
+        title="Remove from My Articles"
+        viewBox="0 0 18 18"
+        width="18"
+      >
+        <title>
+          Remove from My Articles
+        </title>
+        <path
+          d="M13.616 16.644l-1.778-5.711 4.674-3.554-5.768.013L9 1.705 7.256 7.392 1.488 7.38l4.674 3.554-1.778 5.71L9 13.102l4.616 3.543z"
+          fill="#006699"
+          stroke="#696969"
+        />
+      </svg>
+    </div>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`SaveStar should render the unsaved state 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-htpNat ffLxAf"
+  >
+    Save
+  </div>
+  <button
+    class="sc-bxivhb dfgNGA"
+  >
+    <div
+      class="sc-bdVaJa llPcWQ"
+    >
+      <svg
+        aria-label="icon-save-star"
+        height="18"
+        role="img"
+        title="Save to My Articles"
+        viewBox="0 0 18 18"
+        width="18"
+      >
+        <title>
+          Save to My Articles
+        </title>
+        <path
+          d="M13.616 16.644l-1.778-5.711 4.674-3.554-5.768.013L9 1.705 7.256 7.392 1.488 7.38l4.674 3.554-1.778 5.71L9 13.102l4.616 3.543z"
+          fill="#FFFFFF"
+          stroke="#696969"
+        />
+      </svg>
+    </div>
+  </button>
+</DocumentFragment>
+`;

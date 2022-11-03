@@ -10,6 +10,8 @@ import {
 import SaveStar from "@times-components/save-star-web";
 import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
+import { SaveStar as NewSaveStar } from "@times-components/ts-components";
+
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
@@ -112,12 +114,17 @@ class SaveAndShareBar extends Component {
             serverRender={false}
           >
             <TcView style={styles.rowItemRight} data-testid="save-star">
-              <SaveStar
-                colour={styles.svgIcon.save.strokeColour}
-                hoverColor={styles.svgIcon.hoverFillColour}
-                articleId={articleId}
-                height={styles.svgIcon.star.height}
-              />
+              {typeof window !== "undefined" &&
+              window.location.search.includes("saveStarSwitch") ? (
+                <NewSaveStar articleId={articleId} />
+              ) : (
+                <SaveStar
+                  colour={styles.svgIcon.save.strokeColour}
+                  hoverColor={styles.svgIcon.hoverFillColour}
+                  articleId={articleId}
+                  height={styles.svgIcon.star.height}
+                />
+              )}
             </TcView>
           </UserState>
         ) : null}

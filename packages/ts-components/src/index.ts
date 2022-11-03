@@ -20,6 +20,7 @@ export {
   LongReadArticleFlag
 } from './components/article-flag/ArticleFlag';
 export { Timelines } from './components/in-article-timelines/Timelines';
+export { SaveStar } from './components/save-star/SaveStar';
 
 // Newsletter Components
 export {
