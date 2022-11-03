@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.13.9...@times-components/save-and-share-bar@0.14.0) (2022-11-03)
+
+
+### Features
+
+* **TDP-000:** Bookmarks migrated to Newskit ([#3174](https://github.com/newsuk/times-components/issues/3174)) ([8d4f7ad](https://github.com/newsuk/times-components/commit/8d4f7ad7fd41d4e54c69ff626edefdd1c4413f36))
+
+
+
+
+
 ## [0.13.9](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.13.8...@times-components/save-and-share-bar@0.13.9) (2022-11-02)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar
