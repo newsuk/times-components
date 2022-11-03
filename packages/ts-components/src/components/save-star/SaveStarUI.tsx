@@ -25,7 +25,7 @@ const getIconFillColour = (isSaved: boolean) =>
 
 export const SaveStarUI: React.FC<{
   articleId: string;
-  onToggleSave: Function;
+  onToggleSave: (id: string, isSaved: boolean) => void;
 }> = ({ articleId, onToggleSave }) => {
   const [isLoading, setIsSavedLoading] = useState<boolean>(true);
   const [isSaved, setIsSaved] = useState<boolean>(false);

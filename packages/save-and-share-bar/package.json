@@ -39,6 +39,7 @@
     "@times-components/provider-queries": "2.18.0",
     "@times-components/save-star-web": "0.9.9",
     "@times-components/tracking": "2.14.2",
+    "@times-components/ts-components": "1.54.10",
     "@times-components/ts-styleguide": "1.37.6",
     "@times-components/user-state": "0.4.7",
     "@times-components/utils": "6.15.6",

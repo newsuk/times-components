@@ -15,14 +15,14 @@ export const SaveStar: React.FC<{
     isPreviewMode ? { isBookmarked: false } : undefined
   );
 
-  const onToggleSave = (articleId: string, isSaved: boolean) => {
+  const onToggleSave = (id: string, isSaved: boolean) => {
     if (isPreviewMode) {
       setPreviewData({ isBookmarked: !isSaved });
     } else {
       setUrl(
         isSaved
-          ? `/api/collections/delete/${articleId}`
-          : `/api/collections/save/${articleId}`
+          ? `/api/collections/delete/${id}`
+          : `/api/collections/save/${id}`
       );
     }
   };
