@@ -15,5 +15,5 @@ jest.mock("@times-components/icons", () => ({
 }));
 
 jest.mock("@times-components/ts-components", () => ({
-  SaveStar: "SaveStar",
+  SaveStar: "SaveStar"
 }));
