@@ -146,19 +146,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                       </Link>
                     </div>
                   </div>
-                  <div>
-                    <div>
-                      Save
-                    </div>
-                    <div>
-                      <div>
-                        <div
-                          data-fill-colour="#006699"
-                          data-title="Activity Indicator"
-                        />
-                      </div>
-                    </div>
-                  </div>
+                  <div />
                 </div>
               </div>
             </div>
@@ -424,19 +412,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                       </Link>
                     </div>
                   </div>
-                  <div>
-                    <div>
-                      Save
-                    </div>
-                    <div>
-                      <div>
-                        <div
-                          data-fill-colour="#006699"
-                          data-title="Activity Indicator"
-                        />
-                      </div>
-                    </div>
-                  </div>
+                  <div />
                 </div>
               </div>
             </div>

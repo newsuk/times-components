@@ -56,8 +56,6 @@ describe('SaveStar', () => {
   it('should move from unsaved to saved state', async () => {
     (useFetch as jest.Mock)
       .mockReturnValueOnce(unsaved)
-      .mockReturnValueOnce(unsaved)
-      .mockReturnValueOnce(saved)
       .mockReturnValueOnce(saved);
 
     const { baseElement, getByText } = render(<SaveStar articleId="12345" />);

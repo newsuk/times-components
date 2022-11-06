@@ -16,9 +16,18 @@ export const SaveStar: React.FC<{
   );
 
   const onToggleSave = (id: string, isSaved: boolean) => {
+    // tslint:disable-next-line:no-console
+    console.log('SaveStar onToggleSave', id, isSaved);
+
     if (isPreviewMode) {
+      // tslint:disable-next-line:no-console
+      console.log('SaveStar onToggleSave setPreviewData');
+
       setPreviewData({ isBookmarked: !isSaved });
     } else {
+      // tslint:disable-next-line:no-console
+      console.log('SaveStar onToggleSave save/delete');
+
       setUrl(
         isSaved
           ? `/api/collections/delete/${id}`
@@ -26,6 +35,9 @@ export const SaveStar: React.FC<{
       );
     }
   };
+
+  // tslint:disable-next-line:no-console
+  console.log('SaveStar render', url, previewData);
 
   return (
     <FetchProvider

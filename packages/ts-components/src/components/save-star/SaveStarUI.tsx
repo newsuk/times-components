@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React from 'react';
 import { colours } from '@times-components/ts-styleguide';
 import { IconStar } from '@times-components/icons';
 
@@ -27,27 +27,12 @@ export const SaveStarUI: React.FC<{
   articleId: string;
   onToggleSave: (id: string, isSaved: boolean) => void;
 }> = ({ articleId, onToggleSave }) => {
-  const [isLoading, setIsSavedLoading] = useState<boolean>(true);
-  const [isSaved, setIsSaved] = useState<boolean>(false);
+  const { loading, error, data } = useFetch<ArticleBookmark>();
 
-  const { loading, data } = useFetch<ArticleBookmark>();
+  // tslint:disable-next-line:no-console
+  console.log('SaveStarUI render', loading, error, data);
 
-  useEffect(
-    () => {
-      setIsSavedLoading(loading);
-      setIsSaved(data ? data.isBookmarked : false);
-    },
-    [loading, data]
-  );
-
-  const toggleSave = useCallback(
-    async () => {
-      onToggleSave(articleId, isSaved);
-    },
-    [articleId, isSaved]
-  );
-
-  if (isLoading) {
+  if (loading) {
     return (
       <>
         <SaveStarText>{getText(false)}</SaveStarText>
@@ -58,15 +43,21 @@ export const SaveStarUI: React.FC<{
     );
   }
 
+  if (error || !data) {
+    return null;
+  }
+
   return (
     <>
-      <SaveStarText>{getText(isSaved)}</SaveStarText>
-      <SaveStarButton onClick={toggleSave}>
+      <SaveStarText>{getText(data.isBookmarked)}</SaveStarText>
+      <SaveStarButton
+        onClick={() => onToggleSave(articleId, data.isBookmarked)}
+      >
         <IconContainer>
           <IconStar
             height={18}
-            title={getIconTitle(isSaved)}
-            fillColour={getIconFillColour(isSaved)}
+            title={getIconTitle(data.isBookmarked)}
+            fillColour={getIconFillColour(data.isBookmarked)}
             strokeColour={colours.functional.secondary}
           />
         </IconContainer>
