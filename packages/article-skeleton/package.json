@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-skeleton",
-  "version": "1.90.11",
+  "version": "1.90.12",
   "description": "The article skeleton",
   "main": "dist/article-skeleton",
   "dev": "src/article-skeleton",
@@ -61,9 +61,9 @@
   },
   "dependencies": {
     "@times-components/ad": "2.21.7",
-    "@times-components/article-extras": "0.19.18",
+    "@times-components/article-extras": "0.19.19",
     "@times-components/article-image": "7.13.2",
-    "@times-components/article-paragraph": "1.8.30",
+    "@times-components/article-paragraph": "1.8.31",
     "@times-components/article-topics": "4.7.10",
     "@times-components/caption": "3.3.8",
     "@times-components/context": "1.10.5",
@@ -76,7 +76,7 @@
     "@times-components/message-bar": "0.7.7",
     "@times-components/provider-queries": "2.18.0",
     "@times-components/pull-quote": "3.10.7",
-    "@times-components/save-and-share-bar": "0.14.0",
+    "@times-components/save-and-share-bar": "0.15.0",
     "@times-components/sticky": "0.5.7",
     "@times-components/tracking": "2.15.0",
     "@times-components/ts-components": "1.55.0",
