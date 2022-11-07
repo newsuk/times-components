@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { SaveStarUI, ArticleBookmark } from './SaveStarUI';
@@ -7,6 +7,16 @@ export const SaveStar: React.FC<{
   articleId: string;
   isPreviewMode?: boolean;
 }> = React.memo(({ articleId, isPreviewMode }) => {
+  const [isClientSide, setIsClientSide] = useState<boolean>(false);
+
+  useEffect(() => {
+    setIsClientSide(true);
+  }, []);
+
+  if (!isClientSide) {
+    return null;
+  }
+
   const [url, setUrl] = useState<string>(
     `/api/collections/is-bookmarked/${articleId}`
   );
