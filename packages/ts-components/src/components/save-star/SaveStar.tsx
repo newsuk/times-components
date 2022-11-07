@@ -6,7 +6,7 @@ import { SaveStarUI, ArticleBookmark } from './SaveStarUI';
 export const SaveStar: React.FC<{
   articleId: string;
   isPreviewMode?: boolean;
-}> = ({ articleId, isPreviewMode }) => {
+}> = React.memo(({ articleId, isPreviewMode }) => {
   const [url, setUrl] = useState<string>(
     `/api/collections/is-bookmarked/${articleId}`
   );
@@ -48,4 +48,4 @@ export const SaveStar: React.FC<{
       <SaveStarUI articleId={articleId} onToggleSave={onToggleSave} />
     </FetchProvider>
   );
-};
+});
