@@ -107,16 +107,20 @@ class SaveAndShareBar extends Component {
             </BarItem>
           </TcView>
         )}
+        <div>saving</div>
         {savingEnabled ? (
           <UserState
             state={UserState.showArticleSaveButton}
             serverRender={false}
           >
             <TcView style={styles.rowItemRight} data-testid="save-star">
+              <div>saving enabled</div>
               <SaveStar articleId={articleId} />
             </TcView>
           </UserState>
-        ) : null}
+        ) : (
+          <div>saving disabled</div>
+        )}
       </TcView>
     );
   }

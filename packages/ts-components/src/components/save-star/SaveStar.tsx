@@ -7,6 +7,9 @@ export const SaveStar: React.FC<{
   articleId: string;
   isPreviewMode?: boolean;
 }> = React.memo(({ articleId, isPreviewMode }) => {
+  // tslint:disable-next-line:no-console
+  console.log('SaveStar init');
+
   const [isClientSide, setIsClientSide] = useState<boolean>(false);
 
   const [url, setUrl] = useState<string>(
