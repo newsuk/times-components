@@ -9,14 +9,6 @@ export const SaveStar: React.FC<{
 }> = React.memo(({ articleId, isPreviewMode }) => {
   const [isClientSide, setIsClientSide] = useState<boolean>(false);
 
-  useEffect(() => {
-    setIsClientSide(true);
-  }, []);
-
-  if (!isClientSide) {
-    return null;
-  }
-
   const [url, setUrl] = useState<string>(
     `/api/collections/is-bookmarked/${articleId}`
   );
@@ -24,6 +16,14 @@ export const SaveStar: React.FC<{
   const [previewData, setPreviewData] = useState<ArticleBookmark | undefined>(
     isPreviewMode ? { isBookmarked: false } : undefined
   );
+
+  useEffect(() => {
+    setIsClientSide(true);
+  }, []);
+
+  if (!isClientSide) {
+    return null;
+  }
 
   const onToggleSave = (id: string, isSaved: boolean) => {
     // tslint:disable-next-line:no-console
