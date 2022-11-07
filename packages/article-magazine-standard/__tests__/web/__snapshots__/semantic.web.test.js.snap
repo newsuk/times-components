@@ -194,8 +194,6 @@ exports[`1. a full article 1`] = `
         />
       </svg>
     </a>
-    saving
-    saving enabled
     <article>
       <img
         alt="An image caption"
@@ -367,8 +365,6 @@ exports[`1. a full article 1`] = `
           />
         </svg>
       </a>
-      saving
-      saving enabled
       <svg
         height="20"
         viewBox="0 0 20 20"

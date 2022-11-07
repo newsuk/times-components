@@ -146,14 +146,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                       </Link>
                     </div>
                   </div>
-                  <div>
-                    saving
-                  </div>
-                  <div>
-                    <div>
-                      saving enabled
-                    </div>
-                  </div>
+                  <div />
                 </div>
               </div>
             </div>
@@ -419,14 +412,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                       </Link>
                     </div>
                   </div>
-                  <div>
-                    saving
-                  </div>
-                  <div>
-                    <div>
-                      saving enabled
-                    </div>
-                  </div>
+                  <div />
                 </div>
               </div>
             </div>
