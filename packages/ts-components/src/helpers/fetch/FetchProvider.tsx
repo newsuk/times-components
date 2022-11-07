@@ -24,36 +24,38 @@ export const FetchProvider: React.FC<FetchProviderProps> = ({
   previewData,
   children
 }) => {
-  const [loading, setLoading] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | undefined>();
   const [data, setData] = useState<any | undefined>();
 
   useEffect(
     () => {
-      setLoading(true);
+      if (!loading) {
+        setLoading(true);
 
-      const fetchData = async () => {
-        try {
-          if (url) {
-            const response = await fetch(url, options);
-            const json = await response.json();
+        const fetchData = async () => {
+          try {
+            if (url) {
+              const response = await fetch(url, options);
+              const json = await response.json();
 
-            setData(json);
+              setData(json);
+              setLoading(false);
+            } else {
+              throw new Error('must provide a Fetch url');
+            }
+          } catch (err) {
+            setError(err instanceof Error ? err.message : 'unknown error');
             setLoading(false);
-          } else {
-            throw new Error('must provide a Fetch url');
           }
-        } catch (err) {
-          setError(err instanceof Error ? err.message : 'unknown error');
-          setLoading(false);
-        }
-      };
+        };
 
-      if (previewData) {
-        setData(previewData);
-        setLoading(false);
-      } else {
-        fetchData();
+        if (previewData) {
+          setData(previewData);
+          setLoading(false);
+        } else {
+          fetchData();
+        }
       }
     },
     [url, options, previewData]
