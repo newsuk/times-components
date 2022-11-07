@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.56.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.55.24...@times-components/article-main-comment@2.56.0) (2022-11-07)
+
+
+### Features
+
+* **TDP-000:** Bookmarks migrated to Newskit ([#3179](https://github.com/newsuk/times-components/issues/3179)) ([b6a1603](https://github.com/newsuk/times-components/commit/b6a16037b1476ba1b72cf43873bc82f21ddecea3))
+
+
+
+
+
 ## [2.55.24](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.55.23...@times-components/article-main-comment@2.55.24) (2022-11-07)
 
 **Note:** Version bump only for package @times-components/article-main-comment
