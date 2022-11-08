@@ -29,9 +29,6 @@ export const SaveStarUI: React.FC<{
 }> = ({ articleId, onToggleSave }) => {
   const { loading, error, data } = useFetch<ArticleBookmark>();
 
-  // tslint:disable-next-line:no-console
-  console.log('SaveStarUI render', loading, error, data);
-
   if (loading) {
     return (
       <>

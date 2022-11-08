@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import { FetchProvider } from '../../helpers/fetch/FetchProvider';
 import { SaveStarUI, ArticleBookmark } from './SaveStarUI';
@@ -7,11 +7,6 @@ export const SaveStar: React.FC<{
   articleId: string;
   isPreviewMode?: boolean;
 }> = React.memo(({ articleId, isPreviewMode }) => {
-  // tslint:disable-next-line:no-console
-  console.log('SaveStar init');
-
-  const [isClientSide, setIsClientSide] = useState<boolean>(false);
-
   const [url, setUrl] = useState<string>(
     `/api/collections/is-bookmarked/${articleId}`
   );
@@ -20,27 +15,10 @@ export const SaveStar: React.FC<{
     isPreviewMode ? { isBookmarked: false } : undefined
   );
 
-  useEffect(() => {
-    setIsClientSide(true);
-  }, []);
-
-  if (!isClientSide) {
-    return null;
-  }
-
   const onToggleSave = (id: string, isSaved: boolean) => {
-    // tslint:disable-next-line:no-console
-    console.log('SaveStar onToggleSave', id, isSaved);
-
     if (isPreviewMode) {
-      // tslint:disable-next-line:no-console
-      console.log('SaveStar onToggleSave setPreviewData');
-
       setPreviewData({ isBookmarked: !isSaved });
     } else {
-      // tslint:disable-next-line:no-console
-      console.log('SaveStar onToggleSave save/delete');
-
       setUrl(
         isSaved
           ? `/api/collections/delete/${id}`
@@ -48,9 +26,6 @@ export const SaveStar: React.FC<{
       );
     }
   };
-
-  // tslint:disable-next-line:no-console
-  console.log('SaveStar render', url, previewData);
 
   return (
     <FetchProvider
