@@ -9,6 +9,7 @@ import { TrackingContextProvider } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
+import  StaticContent  from './static-content';
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
@@ -140,6 +141,8 @@ const ArticleSkeleton = ({
           data-article-sectionname={section}
           data-article-template={template}
         >
+          <StaticContent
+            html={'<div id="zephr-article-target">Here is static emptiness'} />
           <Head
             article={article}
             logoUrl={logoUrl}
@@ -175,6 +178,9 @@ const ArticleSkeleton = ({
                 ) : null}
               </HeaderContainer>
               <BodyContainer>
+
+          <StaticContent
+            html={'<div id="zephr-article-target-body">Here is static emptiness'} />
                 {newContent && (
                   <ArticleBody
                     analyticsStream={analyticsStream}
