@@ -1,7 +1,6 @@
-import { useEffect, createElement, useRef, useState } from 'react';
+import { useEffect, createElement, useRef, useState } from "react";
 
 function useStaticContent() {
-
   const ref = useRef(null);
   const [render, setRender] = useState(typeof window === "undefined");
 
