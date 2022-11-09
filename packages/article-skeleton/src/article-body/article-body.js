@@ -65,6 +65,43 @@ import {
 
 const deckApiUrl = "https://gobble.timesdev.tools/deck/api/deck-post-action/";
 
+function useStaticContent() {
+    const ref = useRef(null);
+    const [render, setRender] = useState(typeof window === 'undefined');
+
+    useEffect(() => {
+        const isEmpty = ref.current.innerHTML === '';
+        if (isEmpty) {
+            setRender(true);
+        }
+    }, []);
+
+    return [render, ref];
+}
+
+export default function StaticContent({
+    children,
+    element = 'div',
+    html,
+    ...props
+}) {
+    const [shouldRender, ref] = useStaticContent();
+
+    if (shouldRender) {
+        return createElement(element, {
+            ...props,
+            children,
+        });
+    }
+
+    return createElement(element, {
+        ...props,
+        ref,
+        suppressHydrationWarning: true,
+        dangerouslySetInnerHTML: { __html: html },
+    });
+}
+
 export const responsiveDisplayWrapper = displayType => {
   switch (displayType) {
     case "secondary":
@@ -487,9 +524,13 @@ const renderers = ({
   },
   paywall(key, attributes, children) {
     return (
+        <div>
       <span className={paidContentClassName} key={key}>
         {children}
       </span>
+      <StaticContent
+            html={"<div id='zephr-target-pw'>Here's static emptiness</div>"}/>
+        </div>
     );
   },
   pullQuote(
