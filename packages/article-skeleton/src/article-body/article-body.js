@@ -487,11 +487,9 @@ const renderers = ({
   },
   paywall(key, attributes, children) {
     return (
-      <div>
         <span className={paidContentClassName} key={key}>
           {children}
         </span>
-      </div>
     );
   },
   pullQuote(
