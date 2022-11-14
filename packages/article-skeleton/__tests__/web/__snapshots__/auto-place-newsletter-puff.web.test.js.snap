@@ -431,7 +431,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
         </p>
         <AutoNewsletterPuff
           code="TNL-101"
-          copy="We’ll send you our top stories, across all sections, straight to your inbox. Simple as that."
+          copy="Our flagship newsletter featuring our top stories and analysis, delivered every morning."
           headline="Best of Times"
           section="News"
         />
