@@ -41,7 +41,7 @@ const newslettersBySection = [
     section: "scotland",
     payload: setNewsletterPayload({
       code: "TNL-134",
-      headline: "Editor's Choice – Scotland",
+      headline: "Editor’s Choice – Scotland",
       copy:
         "The biggest stories from The Times and Sunday Times Scotland, every Saturday.",
       imageUri:
