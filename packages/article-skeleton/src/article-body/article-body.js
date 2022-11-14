@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 import { AdContainer } from "@times-components/ad";
 import LazyLoad from "@times-components/lazy-load";
 import ArticleImage from "@times-components/article-image";
-import StaticContent from '../static-content';
 
 import ArticleParagraph, {
   DropCapView
