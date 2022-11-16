@@ -5,7 +5,7 @@ function useStaticContent() {
   const [render, setRender] = useState(typeof window === "undefined");
 
   useEffect(() => {
-    const isEmpty = ref.current.innerHTML === "";
+    const isEmpty = !!ref.current && ref.current.innerHTML === "";
     if (isEmpty) {
       setRender(true);
     }

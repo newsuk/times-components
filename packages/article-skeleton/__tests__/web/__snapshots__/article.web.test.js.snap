@@ -45,6 +45,14 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           <span>
             T
@@ -475,6 +483,14 @@ exports[`2. an article with interactives 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <div>
           <div
             id="d2f83305-d558-4f78-f582-32115c659355"
@@ -649,6 +665,14 @@ exports[`3. an article with no content 1`] = `
       </div>
       <article>
         <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
           id="paywall-portal-article-footer"
         />
         <ArticleExtras
@@ -779,6 +803,14 @@ exports[`4. an article with no content if content is set as null 1`] = `
       </div>
       <article>
         <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
           id="paywall-portal-article-footer"
         />
         <ArticleExtras
@@ -908,6 +940,14 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           <span>
             <b>
@@ -1015,6 +1055,14 @@ exports[`6. an article with heading tags 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <h2>
           This is heading 2
         </h2>
@@ -1164,6 +1212,14 @@ exports[`7. an article with link 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           <Link
             underlined={true}
@@ -1316,6 +1372,14 @@ exports[`8. an article with italic link 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           In his 2015 book on the tournaments, 
           <Link
@@ -1471,6 +1535,14 @@ exports[`9. an article with bold text followed by bold link 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           <b>
             2 
@@ -1625,6 +1697,14 @@ exports[`10. an article with italic and normal text link 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           Family Action is one of two charities being supported by 
           <Link
@@ -1781,6 +1861,14 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           <b>
             <i>
@@ -1931,6 +2019,14 @@ exports[`12. an article with text wrapped in inline element 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           <span>
             They may have been improved by the controversy that ensued when Watson appeared on the cover of Vanity Fair to promote it, wearing a top that partially exposed her breasts. She rejected criticism that the pose was at odds with her claim to be a feminist. “Feminism is not a stick with which to beat other women. It’s about liberation. It’s about equality,” she said, adding: “I really don’t know what my tits have to do with it.” 
@@ -2079,6 +2175,14 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           20. 
           <span>
@@ -2228,6 +2332,14 @@ exports[`14. an article with inline inside a bold tag 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           <b>
             <span>
@@ -2378,6 +2490,14 @@ exports[`15. an article starting with single quote 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           <span>
             ‘S
@@ -2527,6 +2647,14 @@ exports[`16. an article starting with double quote 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           <span>
             “S
