@@ -54,7 +54,6 @@ class ArticlePage extends Component {
   }
 
   render() {
-    console.log('rendering main article')
     const {
       article,
       analyticsStream,
