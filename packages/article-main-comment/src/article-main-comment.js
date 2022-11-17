@@ -54,6 +54,7 @@ class ArticlePage extends Component {
   }
 
   render() {
+    console.log('rendering main article')
     const {
       article,
       analyticsStream,
@@ -65,7 +66,8 @@ class ArticlePage extends Component {
       commentingConfig,
       paidContentClassName,
       isPreview,
-      swgProductId
+      swgProductId,
+      zephrDivs
     } = this.props;
 
     if (error || isLoading) {
@@ -84,6 +86,7 @@ class ArticlePage extends Component {
         paidContentClassName={paidContentClassName}
         isPreview={isPreview}
         swgProductId={swgProductId}
+        zephrDivs={zephrDivs}
       />
     );
   }
