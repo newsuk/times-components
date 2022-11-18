@@ -10,7 +10,7 @@ export const fonts = {
   headlineRegular: 'TimesModern-Regular',
   stMagazine: 'Tiempos-Headline-Bold',
   styleMagazine: 'CenturyGothic-Bold',
-  supporting: 'GillSansMTStd-Medium'
+  supporting: 'Roboto-Regular'
 };
 
 export type Font = keyof typeof fonts;
