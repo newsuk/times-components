@@ -10,8 +10,7 @@ const messageBarBody = {
   height,
   flexGrow: 1,
   flexShrink: 0,
-  marginLeft: "auto",
-  marginRight: "auto"
+  marginHorizontal: "auto"
 };
 
 const messageBarCloseButton = {
