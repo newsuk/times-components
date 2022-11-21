@@ -5,7 +5,7 @@ exports[`<TextCrop> bottom adjustment 1`] = `
   .c0 {
   background-color: #ffb;
   padding: 0;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
 }
 
 .c0::before,
@@ -17,11 +17,11 @@ exports[`<TextCrop> bottom adjustment 1`] = `
 }
 
 .c0::before {
-  margin-bottom: calc(0em + 0px );
+  margin-bottom: calc(NaNem + 0px );
 }
 
 .c0::after {
-  margin-top: calc(-0.30625em + 2px );
+  margin-top: calc(NaNem + 2px );
 }
 
 <div
@@ -37,7 +37,7 @@ exports[`<TextCrop> default  1`] = `
   .c0 {
   background-color: #ffb;
   padding: 0;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
 }
 
 .c0::before,
@@ -49,11 +49,11 @@ exports[`<TextCrop> default  1`] = `
 }
 
 .c0::before {
-  margin-bottom: calc(0em + 0px );
+  margin-bottom: calc(NaNem + 0px );
 }
 
 .c0::after {
-  margin-top: calc(-0.30625em + 0px );
+  margin-top: calc(NaNem + 0px );
 }
 
 <div
@@ -69,7 +69,7 @@ exports[`<TextCrop> line height  1`] = `
   .c0 {
   background-color: #ffb;
   padding: 0;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   line-height: 1;
 }
 
@@ -82,11 +82,11 @@ exports[`<TextCrop> line height  1`] = `
 }
 
 .c0::before {
-  margin-bottom: calc(0em + 0px );
+  margin-bottom: calc(NaNem + 0px );
 }
 
 .c0::after {
-  margin-top: calc(-0.30625em + 0px );
+  margin-top: calc(NaNem + 0px );
 }
 
 <div
@@ -133,7 +133,7 @@ exports[`<TextCrop> top adjustment 1`] = `
   .c0 {
   background-color: #ffb;
   padding: 0;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
 }
 
 .c0::before,
@@ -145,11 +145,11 @@ exports[`<TextCrop> top adjustment 1`] = `
 }
 
 .c0::before {
-  margin-bottom: calc(0em + 1px );
+  margin-bottom: calc(NaNem + 1px );
 }
 
 .c0::after {
-  margin-top: calc(-0.30625em + 0px );
+  margin-top: calc(NaNem + 0px );
 }
 
 <div
