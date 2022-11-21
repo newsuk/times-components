@@ -94,7 +94,7 @@ exports[`different colours 1`] = `
       <div
         className="c1"
         color="#696969"
-        fontFamily="GillSansMTStd-Medium"
+        fontFamily="Roboto-Regular"
         fontSize={13}
         lineHeight="13px"
         marginBottom={0}
@@ -104,7 +104,7 @@ exports[`different colours 1`] = `
       <div
         className="c1"
         color="#696969"
-        fontFamily="GillSansMTStd-Medium"
+        fontFamily="Roboto-Regular"
         fontSize={13}
         lineHeight="13px"
         marginBottom={0}
@@ -129,7 +129,7 @@ exports[`different colours 1`] = `
         <TextLink
           className="pullQuoteTwitterLink"
           color="#006699"
-          fontFamily="GillSansMTStd-Medium"
+          fontFamily="Roboto-Regular"
           fontSize={13}
           lineHeight={13}
           marginLeft={4}
