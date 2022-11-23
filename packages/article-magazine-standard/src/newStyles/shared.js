@@ -56,7 +56,8 @@ const sharedStyles = {
     borderRightColor: colours.functional.keyline,
     borderRightWidth: 1,
     height: spacing(3),
-    marginHorizontal: spacing(2)
+    marginLeft: spacing(2),
+    marginRight: spacing(2)
   },
   standFirst: {
     ...fontFactory({
@@ -65,7 +66,8 @@ const sharedStyles = {
     }),
     color: colours.functional.primary,
     marginBottom: spacing(3),
-    paddingHorizontal: spacing(2),
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2),
     textAlign: "center"
   }
 };

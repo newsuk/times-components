@@ -182,7 +182,8 @@ exports[`5. centred caption without credits 1`] = `
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
           "lineHeight": "17px",
-          "paddingHorizontal": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
           "textAlign": "center",
         }
       }
@@ -213,7 +214,8 @@ exports[`6. centred caption caption with credits 1`] = `
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
           "lineHeight": "17px",
-          "paddingHorizontal": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
           "textAlign": "center",
         }
       }
@@ -235,7 +237,8 @@ exports[`6. centred caption caption with credits 1`] = `
           "fontWeight": "400",
           "letterSpacing": 1,
           "lineHeight": "17px",
-          "paddingHorizontal": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
           "textAlign": "center",
         }
       }
@@ -271,7 +274,8 @@ exports[`7. centred caption caption with credits only 1`] = `
           "fontWeight": "400",
           "letterSpacing": 1,
           "lineHeight": "17px",
-          "paddingHorizontal": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
           "textAlign": "center",
         }
       }
@@ -305,7 +309,8 @@ exports[`8. centred caption caption with child 1`] = `
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
           "lineHeight": "17px",
-          "paddingHorizontal": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
           "textAlign": "center",
         }
       }
@@ -327,7 +332,8 @@ exports[`8. centred caption caption with child 1`] = `
           "fontWeight": "400",
           "letterSpacing": 1,
           "lineHeight": "17px",
-          "paddingHorizontal": "10px",
+          "paddingLeft": "10px",
+          "paddingRight": "10px",
           "textAlign": "center",
         }
       }
