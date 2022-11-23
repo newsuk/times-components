@@ -8,7 +8,7 @@ TIP_COMMIT=$(git rev-parse HEAD)
 echo $(printf "CircleCI commit: %s, Head commit: %s" $CIRCLE_SHA1 $TIP_COMMIT)
 
 # make sure we only publish if we are at the head of master
-if [[ $TIP_COMMIT != $CIRCLE_SHA1 ]]
+if [[ "$TIP_COMMIT" != "$CIRCLE_SHA1" ]]
 then
   echo "Not on the tip of master!"
   exit 0
