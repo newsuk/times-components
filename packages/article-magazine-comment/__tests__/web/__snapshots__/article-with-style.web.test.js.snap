@@ -358,7 +358,7 @@ exports[`full article with style 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 13px;
   line-height: 15px;
   color: #696969;
@@ -894,7 +894,7 @@ exports[`full article with style 1`] = `
             <div
               className="c6"
               color="#1D1D1B"
-              fontFamily="GillSansMTStd-Medium"
+              fontFamily="Roboto-Regular"
               fontSize={12}
               fontWeight="400"
               letterSpacing={1}
@@ -1489,7 +1489,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 13px;
   line-height: 15px;
   color: #696969;
@@ -2026,7 +2026,7 @@ exports[`full article with style in the culture magazine 1`] = `
             <div
               className="c6"
               color="#7B0046"
-              fontFamily="GillSansMTStd-Medium"
+              fontFamily="Roboto-Regular"
               fontSize={12}
               fontWeight="400"
               letterSpacing={1}
@@ -2621,7 +2621,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 13px;
   line-height: 15px;
   color: #696969;
@@ -3159,7 +3159,7 @@ exports[`full article with style in the style magazine 1`] = `
             <div
               className="c6"
               color="#BC3385"
-              fontFamily="GillSansMTStd-Medium"
+              fontFamily="Roboto-Regular"
               fontSize={12}
               fontWeight="400"
               letterSpacing={1}
@@ -3754,7 +3754,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 13px;
   line-height: 15px;
   color: #696969;
@@ -4291,7 +4291,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             <div
               className="c6"
               color="#F13D00"
-              fontFamily="GillSansMTStd-Medium"
+              fontFamily="Roboto-Regular"
               fontSize={12}
               fontWeight="400"
               letterSpacing={1}
