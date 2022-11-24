@@ -23,7 +23,7 @@ exports[`<RelatedArticle> renders 1`] = `
           </a>
         </div>
         <div
-          class="sc-bxivhb kUXZco"
+          class="sc-bxivhb hpRUtX"
         >
           VIDEO
         </div>
@@ -40,7 +40,7 @@ exports[`<RelatedArticle> renders 1`] = `
         href="https://www.thetimes.co.uk/article/china-yunnan-mobilises-as-herd-of-15-marauding-elephants-approaches-capital-qvgttzz2w"
       >
         <div
-          class="sc-EHOje cjnDfc"
+          class="sc-EHOje jBZBgi"
         >
           Read Full Story
         </div>

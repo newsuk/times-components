@@ -6,7 +6,7 @@ exports[`OptaRugbyStandings should render correctly 1`] = `
     class="sc-bdVaJa giUBsz"
   >
     <div
-      class="sc-htpNat sc-bxivhb NeYJk"
+      class="sc-htpNat sc-bxivhb eqVwPd"
     />
     <div
       class="sc-bwzfXH kVYHKf"
@@ -23,7 +23,7 @@ exports[`OptaRugbyStandings should render correctly 2`] = `
     class="sc-bdVaJa hGXeaj"
   >
     <div
-      class="sc-htpNat sc-bxivhb NeYJk"
+      class="sc-htpNat sc-bxivhb eqVwPd"
     >
       <div>
         Widget
