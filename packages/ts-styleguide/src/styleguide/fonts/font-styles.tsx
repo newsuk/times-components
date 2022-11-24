@@ -8,5 +8,5 @@ export default {
   headlineRegular: 'TimesModern-Regular',
   stMagazine: 'Tiempos-Headline-Bold',
   styleMagazine: 'CenturyGothic-Bold',
-  supporting: 'GillSansMTStd-Medium'
+  supporting: 'Roboto-Regular'
 };

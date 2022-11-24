@@ -10,7 +10,7 @@ export const fonts = {
   headlineRegular: 'TimesModern-Regular',
   stMagazine: 'Tiempos-Headline-Bold',
   styleMagazine: 'CenturyGothic-Bold',
-  supporting: 'GillSansMTStd-Medium'
+  supporting: 'Roboto-Regular'
 };
 
 export type Font = keyof typeof fonts;
@@ -67,6 +67,14 @@ const GillSansMTStdMedium: FontTextCropSettings = {
   cropLineHeight: 1.2
 };
 
+const RobotoRegular: FontTextCropSettings = {
+  font: 'Roboto-Regular',
+  topCrop: 6,
+  bottomCrop: 26,
+  cropFontSize: 64,
+  cropLineHeight: 1.2
+};
+
 const FlamaBold: FontTextCropSettings = {
   font: 'Flama-Bold',
   topCrop: 19,
@@ -99,7 +107,8 @@ const fontCropSettings: { [font: string]: FontTextCropSettings } = keyBy(
     GillSansMTStdMedium,
     FlamaBold,
     TiemposHeadlineBold,
-    CenturyGothicBold
+    CenturyGothicBold,
+    RobotoRegular
   ],
   ({ font }) => font
 );
