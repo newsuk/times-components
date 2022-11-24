@@ -34,7 +34,8 @@ const styles = {
   },
   biographyContainer: {
     paddingBottom: spacing(6),
-    paddingHorizontal: spacing(2),
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2),
     width: "100%"
   },
   jobTitle: {
@@ -74,7 +75,8 @@ const styles = {
   },
   twitter: {
     flexDirection: "row",
-    paddingVertical: spacing(2)
+    paddingTop: spacing(2),
+    paddingBottom: spacing(2)
   },
   twitterLink: {
     color: colours.functional.action,

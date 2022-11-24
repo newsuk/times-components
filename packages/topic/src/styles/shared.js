@@ -35,7 +35,8 @@ const styles = {
     borderBottomWidth: 1,
     flexDirection: "column",
     minHeight: 90,
-    paddingHorizontal: spacing(2),
+    paddingLeft: spacing(2),
+    paddingRight: spacing(2),
     paddingTop: spacing(8),
     width: "100%"
   }
