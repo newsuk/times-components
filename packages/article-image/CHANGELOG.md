@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.13.2...@times-components/article-image@7.14.0) (2022-11-25)
+
+
+### Features
+
+* **TDP-2838:** updated styling to standard css from RN styles ([#3193](https://github.com/newsuk/times-components/issues/3193)) ([3abf4c8](https://github.com/newsuk/times-components/commit/3abf4c880f5bef1b2603ee5ed79e729fd653318b))
+
+
+
+
+
 ## [7.13.2](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.13.1...@times-components/article-image@7.13.2) (2022-11-02)
 
 **Note:** Version bump only for package @times-components/article-image
