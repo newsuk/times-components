@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.12.9...@times-components/article-list@9.13.0) (2022-11-25)
+
+
+### Features
+
+* **TDP-2838:** updated styling to standard css from RN styles ([#3193](https://github.com/newsuk/times-components/issues/3193)) ([3abf4c8](https://github.com/newsuk/times-components/commit/3abf4c880f5bef1b2603ee5ed79e729fd653318b))
+
+
+
+
+
 ## [9.12.9](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.12.8...@times-components/article-list@9.12.9) (2022-11-08)
 
 **Note:** Version bump only for package @times-components/article-list
