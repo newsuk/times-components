@@ -21,7 +21,7 @@ const newslettersBySection = [
       code: "TNL-101",
       headline: "Best of Times",
       copy:
-        "We’ll send you our top stories, across all sections, straight to your inbox. Simple as that.",
+        "Our flagship newsletter featuring our top stories and analysis, delivered every morning.",
       imageUri:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800"
     })
@@ -32,7 +32,7 @@ const newslettersBySection = [
       code: "TNL-103",
       headline: "Business briefing",
       copy:
-        "In-depth analysis and comment on the latest financial and economic news from our award-winning Business teams.",
+        "Morning and midday updates on financial and economic news from our award-winning business team.",
       imageUri:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F306637af-2b6f-48fc-b264-d661b2067818.jpg?resize=800"
     })
@@ -43,7 +43,7 @@ const newslettersBySection = [
       code: "TNL-134",
       headline: "Editor’s Choice – Scotland",
       copy:
-        "The biggest stories of the week from The Times and The Sunday Times Scotland, delivered directly to you every Saturday morning.",
+        "The biggest stories from The Times and Sunday Times Scotland, every Saturday.",
       imageUri:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5777acf9-363f-4aa3-8176-1ea09cdae7d6.jpg?resize=800"
     })
@@ -54,7 +54,7 @@ const newslettersBySection = [
       code: "TNL-107",
       headline: "Money newsletter",
       copy:
-        "We'll send you the latest personal finance and investment news to make your money go further.",
+        "Personal finance and investment news from our money experts, every Monday.",
       imageUri:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ffd44b15f-2fb8-4e5d-b409-315648b10646.jpg?resize=800"
     })
@@ -65,7 +65,7 @@ const newslettersBySection = [
       code: "TNL-121",
       headline: "The Brief",
       copy:
-        "A weekly overview of the significant issues in Law, drawing attention to expert analysis and exclusive commentary.",
+        "Get expert analysis, news and commentary in The Brief, our legal editor's insider's guide, every Thursday.",
       imageUri:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F27a231b4-5658-4852-a603-37c5210a946e.jpg?resize=800"
     })
@@ -76,7 +76,7 @@ const newslettersBySection = [
       code: "TNL-113",
       headline: "Property newsletter",
       copy:
-        "Get expert advice and find out what's really happening in the property market.",
+        "Inside Britain's most exclusive homes, expert advice and what's really happening in the property market, every Monday.",
       imageUri:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F42a688ec-f9ba-4684-90ce-17a9d1c19d8a.jpg?resize=800"
     })
