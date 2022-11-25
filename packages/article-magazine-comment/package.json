@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-magazine-comment",
-  "version": "3.59.6",
+  "version": "3.59.4",
   "description": "Magazine Comment Article Template",
   "main": "dist/article-magazine-comment",
   "dev": "src/article-magazine-comment",
