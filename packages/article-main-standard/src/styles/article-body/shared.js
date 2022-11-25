@@ -9,8 +9,7 @@ const sharedStyles = scale => {
       borderTopColor: colours.functional.keyline,
       borderTopWidth: 1,
       marginBottom: spacing(4),
-      paddingHorizontal: spacing(2),
-      paddingVertical: spacing(2)
+      padding: spacing(2)
     },
     articleLink: {
       color: colours.functional.action,
@@ -51,7 +50,8 @@ const sharedStyles = scale => {
       width: "100%"
     },
     captionContainer: {
-      paddingHorizontal: spacing(2)
+      paddingLeft: spacing(2),
+      paddingRight: spacing(2)
     }
   };
 };

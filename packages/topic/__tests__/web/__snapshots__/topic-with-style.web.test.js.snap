@@ -122,7 +122,8 @@ exports[`1. an article list header 1`] = `
   className="c0"
   flexDirection="column"
   minHeight={90}
-  paddingHorizontal="10px"
+  paddingLeft="10px"
+  paddingRight="10px"
   paddingTop="40px"
   width="100%"
 >
@@ -186,7 +187,8 @@ exports[`2. an article list header loading 1`] = `
   className="c0"
   flexDirection="column"
   minHeight={90}
-  paddingHorizontal="10px"
+  paddingLeft="10px"
+  paddingRight="10px"
   paddingTop="40px"
   width="100%"
 />
