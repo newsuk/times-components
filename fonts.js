@@ -5,6 +5,8 @@ const fonts = {
   "Flama-Bold": () => require("./dist/public/fonts/Flama-Bold.js").default,
   "GillSansMTStd-Medium": () =>
     require("./dist/public/fonts/GillSansMTStd-Medium.js").default,
+  "Roboto-Regular": () =>
+    require("./dist/public/fonts/Roboto-Regular.js").default,
   "Tiempos-Headline-Bold": () =>
     require("./dist/public/fonts/Tiempos-Headline-Bold.js").default,
   "TimesDigitalW04-Bold": () =>
