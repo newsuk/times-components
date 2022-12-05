@@ -79,8 +79,6 @@ class Comments extends Component {
       "spot-im-current-user-typing-start",
       async event => {
         onCommentStart(event);
-
-        if (window.location.search.includes("enableRealNameCommenting")) {
           const displayName = getDisplayNameFromLocalStorage();
           if (!displayName) return;
 
@@ -90,7 +88,6 @@ class Comments extends Component {
               new CustomEvent("SHOW_REAL_NAME_COMMENTING_BANNER", {})
             );
           }
-        }
       },
       { once: true }
     );
