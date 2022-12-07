@@ -79,15 +79,15 @@ class Comments extends Component {
       "spot-im-current-user-typing-start",
       async event => {
         onCommentStart(event);
-          const displayName = getDisplayNameFromLocalStorage();
-          if (!displayName) return;
+        const displayName = getDisplayNameFromLocalStorage();
+        if (!displayName) return;
 
-          const shouldShowBanner = await userShouldUpdateName(displayName);
-          if (shouldShowBanner) {
-            window.dispatchEvent(
-              new CustomEvent("SHOW_REAL_NAME_COMMENTING_BANNER", {})
-            );
-          }
+        const shouldShowBanner = await userShouldUpdateName(displayName);
+        if (shouldShowBanner) {
+          window.dispatchEvent(
+            new CustomEvent("SHOW_REAL_NAME_COMMENTING_BANNER", {})
+          );
+        }
       },
       { once: true }
     );
