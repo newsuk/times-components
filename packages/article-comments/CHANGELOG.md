@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.18...@times-components/article-comments@0.34.0) (2022-12-07)
+
+
+### Features
+
+* **TDP-2429:** Remove feature flag from real name commenting smart banner ([#3197](https://github.com/newsuk/times-components/issues/3197)) ([95c86a9](https://github.com/newsuk/times-components/commit/95c86a928781a12eb768ddd577da353a63125b62))
+
+
+
+
+
 ## [0.33.18](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.17...@times-components/article-comments@0.33.18) (2022-11-08)
 
 **Note:** Version bump only for package @times-components/article-comments
