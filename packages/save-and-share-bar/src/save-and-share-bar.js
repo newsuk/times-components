@@ -7,9 +7,10 @@ import {
   IconTwitter,
   IconCopyLink
 } from "@times-components/icons";
-import SaveStar from "@times-components/save-star-web";
 import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
+import { SaveStar } from "@times-components/ts-components";
+
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
@@ -50,7 +51,7 @@ class SaveAndShareBar extends Component {
             <SectionContext.Consumer>
               {({ publicationName }) => (
                 <UserState
-                  state={UserState.subscriber}
+                  state={UserState.showTokenisedEmailShare}
                   fallback={
                     <EmailShare
                       {...this.props}
@@ -107,14 +108,12 @@ class SaveAndShareBar extends Component {
           </TcView>
         )}
         {savingEnabled ? (
-          <UserState state={UserState.loggedIn} serverRender={false}>
+          <UserState
+            state={UserState.showArticleSaveButton}
+            serverRender={false}
+          >
             <TcView style={styles.rowItemRight} data-testid="save-star">
-              <SaveStar
-                colour={styles.svgIcon.save.strokeColour}
-                hoverColor={styles.svgIcon.hoverFillColour}
-                articleId={articleId}
-                height={styles.svgIcon.star.height}
-              />
+              <SaveStar articleId={articleId} />
             </TcView>
           </UserState>
         ) : null}

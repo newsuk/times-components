@@ -14,7 +14,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     userState,
     isPreview,
     swgProductId,
-    commentCount
+    commentCount,
+    realnameInlineBlueBanner
   } = window.nuk.article;
   const { getCookieValue } = window.nuk;
 
@@ -30,7 +31,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     userState,
     isPreview,
     swgProductId,
-    commentCount
+    commentCount,
+    realnameInlineBlueBanner
   };
 
   const clientOptions = {

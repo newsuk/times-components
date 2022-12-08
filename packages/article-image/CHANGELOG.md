@@ -3,6 +3,93 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.13.2...@times-components/article-image@7.14.0) (2022-11-25)
+
+
+### Features
+
+* **TDP-2838:** updated styling to standard css from RN styles ([#3193](https://github.com/newsuk/times-components/issues/3193)) ([3abf4c8](https://github.com/newsuk/times-components/commit/3abf4c880f5bef1b2603ee5ed79e729fd653318b))
+
+
+
+
+
+## [7.13.2](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.13.1...@times-components/article-image@7.13.2) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.13.1](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.13.0...@times-components/article-image@7.13.1) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+# [7.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.12.7...@times-components/article-image@7.13.0) (2022-10-21)
+
+
+### Features
+
+* **TDP-2618:** updated topic page to use the lcpItem class for the f… ([#3170](https://github.com/newsuk/times-components/issues/3170)) ([69eace6](https://github.com/newsuk/times-components/commit/69eace62da80cb58d9d3ee30b1f7dcb725fa3a5d))
+
+
+
+
+
+## [7.12.7](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.12.6...@times-components/article-image@7.12.7) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.12.6](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.12.5...@times-components/article-image@7.12.6) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.12.5](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.12.4...@times-components/article-image@7.12.5) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.12.4](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.12.3...@times-components/article-image@7.12.4) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
+## [7.12.3](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.12.2...@times-components/article-image@7.12.3) (2022-09-23)
+
+
+### Bug Fixes
+
+* **TDP-2487:**  inline image special characters  ([d9d2c22](https://github.com/newsuk/times-components/commit/d9d2c2256f86be3b951590135aac27c2b0ae0767))
+* **TDP-2487:** inline image special characters re merging ([#3160](https://github.com/newsuk/times-components/issues/3160)) ([44c4c92](https://github.com/newsuk/times-components/commit/44c4c92dad8aeacd99a94eac7f60036919fa7d95))
+
+
+### Reverts
+
+* Revert "fix(TDP-2487):  inline image special characters" (#3159) ([7e54d2f](https://github.com/newsuk/times-components/commit/7e54d2fc7003b74b9050915e87eed1e09866ab40)), closes [#3159](https://github.com/newsuk/times-components/issues/3159)
+
+
+
+
+
 ## [7.12.2](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.12.1...@times-components/article-image@7.12.2) (2022-09-06)
 
 **Note:** Version bump only for package @times-components/article-image

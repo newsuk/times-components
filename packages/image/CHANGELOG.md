@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.14.2](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.1...@times-components/image@6.14.2) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.14.1](https://github.com/newsuk/times-components/compare/@times-components/image@6.14.0...@times-components/image@6.14.1) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+# [6.14.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.6...@times-components/image@6.14.0) (2022-10-21)
+
+
+### Features
+
+* **TDP-2618:** updated topic page to use the lcpItem class for the f… ([#3170](https://github.com/newsuk/times-components/issues/3170)) ([69eace6](https://github.com/newsuk/times-components/commit/69eace62da80cb58d9d3ee30b1f7dcb725fa3a5d))
+
+
+
+
+
+## [6.13.6](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.5...@times-components/image@6.13.6) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.13.5](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.4...@times-components/image@6.13.5) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.13.4](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.3...@times-components/image@6.13.4) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.13.3](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.2...@times-components/image@6.13.3) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
 ## [6.13.2](https://github.com/newsuk/times-components/compare/@times-components/image@6.13.1...@times-components/image@6.13.2) (2022-09-06)
 
 

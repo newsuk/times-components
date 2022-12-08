@@ -3,6 +3,158 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.20.23](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.22...@times-components/article-summary@3.20.23) (2022-11-08)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.22](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.21...@times-components/article-summary@3.20.22) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.21](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.20...@times-components/article-summary@3.20.21) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.20](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.19...@times-components/article-summary@3.20.20) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.19](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.18...@times-components/article-summary@3.20.19) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.18](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.17...@times-components/article-summary@3.20.18) (2022-11-06)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.17](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.16...@times-components/article-summary@3.20.17) (2022-11-03)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.16](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.15...@times-components/article-summary@3.20.16) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.15](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.14...@times-components/article-summary@3.20.15) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.14](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.13...@times-components/article-summary@3.20.14) (2022-10-21)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.13](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.12...@times-components/article-summary@3.20.13) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.12](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.11...@times-components/article-summary@3.20.12) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.11](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.10...@times-components/article-summary@3.20.11) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.10](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.9...@times-components/article-summary@3.20.10) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.9](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.8...@times-components/article-summary@3.20.9) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.8](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.7...@times-components/article-summary@3.20.8) (2022-10-11)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.7](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.6...@times-components/article-summary@3.20.7) (2022-10-10)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.20.6](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.5...@times-components/article-summary@3.20.6) (2022-10-07)
+
+
+### Bug Fixes
+
+* **TDP-2487:**  inline image special characters  ([d9d2c22](https://github.com/newsuk/times-components/commit/d9d2c2256f86be3b951590135aac27c2b0ae0767))
+
+
+### Reverts
+
+* Revert "fix(TDP-2487):  inline image special characters" (#3159) ([7e54d2f](https://github.com/newsuk/times-components/commit/7e54d2fc7003b74b9050915e87eed1e09866ab40)), closes [#3159](https://github.com/newsuk/times-components/issues/3159)
+
+
+
+
+
 ## [3.20.5](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.20.4...@times-components/article-summary@3.20.5) (2022-09-07)
 
 **Note:** Version bump only for package @times-components/article-summary

@@ -227,7 +227,6 @@ exports[`1. an article list header 1`] = `
         flexDirection="row"
         paddingBottom="10px"
         paddingTop="15px"
-        paddingVertical="10px"
       >
         <div
           alignSelf="center"

@@ -162,6 +162,7 @@ exports[`card with default layout 1`] = `
               disablePlaceholder={false}
               fadeImageIn={false}
               highResSize={100}
+              isLcpItem={false}
               lowResQuality={null}
               lowResSize={50}
               rounded={false}

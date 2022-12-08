@@ -14,12 +14,16 @@ const LeadAssetImage = ({ aspectRatio, alt, uri }) => {
   );
 
   return (
-    <div style={{ ...styles.wrapper, paddingBottom: `${100 / ratio}%` }}>
+    <div
+      style={{ ...styles.wrapper, paddingBottom: `${100 / ratio}%` }}
+      className="lcpItem"
+    >
       <img
         alt={alt}
         style={styles.img}
         src={appendToImageURL(url, "resize", sizes[0])}
         srcSet={srcSet.join(",")}
+        fetchpriority="high"
       />
     </div>
   );

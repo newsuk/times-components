@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.10.2](https://github.com/newsuk/times-components/compare/@times-components/card@6.10.1...@times-components/card@6.10.2) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.10.1](https://github.com/newsuk/times-components/compare/@times-components/card@6.10.0...@times-components/card@6.10.1) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+# [6.10.0](https://github.com/newsuk/times-components/compare/@times-components/card@6.9.6...@times-components/card@6.10.0) (2022-10-21)
+
+
+### Features
+
+* **TDP-2618:** updated topic page to use the lcpItem class for the f… ([#3170](https://github.com/newsuk/times-components/issues/3170)) ([69eace6](https://github.com/newsuk/times-components/commit/69eace62da80cb58d9d3ee30b1f7dcb725fa3a5d))
+
+
+
+
+
+## [6.9.6](https://github.com/newsuk/times-components/compare/@times-components/card@6.9.5...@times-components/card@6.9.6) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.9.5](https://github.com/newsuk/times-components/compare/@times-components/card@6.9.4...@times-components/card@6.9.5) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.9.4](https://github.com/newsuk/times-components/compare/@times-components/card@6.9.3...@times-components/card@6.9.4) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.9.3](https://github.com/newsuk/times-components/compare/@times-components/card@6.9.2...@times-components/card@6.9.3) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
 ## [6.9.2](https://github.com/newsuk/times-components/compare/@times-components/card@6.9.1...@times-components/card@6.9.2) (2022-09-06)
 
 **Note:** Version bump only for package @times-components/card

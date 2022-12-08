@@ -80,7 +80,8 @@ class ArticlePage extends Component {
       commentingConfig,
       paidContentClassName,
       isPreview,
-      swgProductId
+      swgProductId,
+      realnameInlineBlueBanner
     } = this.props;
 
     if (error || isLoading) {
@@ -99,6 +100,7 @@ class ArticlePage extends Component {
         paidContentClassName={paidContentClassName}
         isPreview={isPreview}
         swgProductId={swgProductId}
+        realnameInlineBlueBanner={realnameInlineBlueBanner}
       />
     );
   }

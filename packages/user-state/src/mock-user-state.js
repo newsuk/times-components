@@ -18,10 +18,12 @@ function mockUserState() {
 
     MockUserState.mockReset = () => {
       MockUserState.mockStates = [
-        RealUserState.fullArticle,
-        RealUserState.loggedIn,
-        RealUserState.loggedInOrShared,
-        RealUserState.subscriber
+        RealUserState.showSaveAndShareBar,
+        RealUserState.showArticleExtras,
+        RealUserState.showTopicTags,
+        RealUserState.showArticleSaveButton,
+        RealUserState.showTokenisedEmailShare,
+        RealUserState.showCommentingModule
       ];
     };
 

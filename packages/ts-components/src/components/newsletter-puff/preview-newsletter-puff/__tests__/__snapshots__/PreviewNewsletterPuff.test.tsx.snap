@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Preview Newsletter Puff renders 1`] = `
+<body>
+  <div>
+    <div
+      class="sc-bdVaJa sc-htpNat ljXtVU"
+    >
+      <div
+        class="sc-bdVaJa sc-EHOje hmOAGx"
+      >
+        <div
+          class="sc-bwzfXH sc-gzVnrw keqsZo"
+        >
+          <div
+            class="sc-bwzfXH sc-bZQynM khoGuQ"
+          >
+            Politics. Explained.
+            : 
+          </div>
+          Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
+          <div
+            class="sc-bdVaJa sc-htoDjs lnzLgr"
+          >
+            <button
+              class="sc-gZMcBi jWMqgP"
+            >
+              One-click sign-up
+            </button>
+          </div>
+        </div>
+        <div
+          class="sc-bdVaJa sc-htoDjs fqXCoz"
+        >
+          <button
+            class="sc-iwsKbI beYQWx"
+          >
+            One-click sign-up
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

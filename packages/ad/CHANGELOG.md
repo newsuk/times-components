@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.21.7](https://github.com/newsuk/times-components/compare/@times-components/ad@2.21.6...@times-components/ad@2.21.7) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.21.6](https://github.com/newsuk/times-components/compare/@times-components/ad@2.21.5...@times-components/ad@2.21.6) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.21.5](https://github.com/newsuk/times-components/compare/@times-components/ad@2.21.4...@times-components/ad@2.21.5) (2022-10-21)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.21.4](https://github.com/newsuk/times-components/compare/@times-components/ad@2.21.3...@times-components/ad@2.21.4) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.21.3](https://github.com/newsuk/times-components/compare/@times-components/ad@2.21.2...@times-components/ad@2.21.3) (2022-10-18)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.21.2](https://github.com/newsuk/times-components/compare/@times-components/ad@2.21.1...@times-components/ad@2.21.2) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.21.1](https://github.com/newsuk/times-components/compare/@times-components/ad@2.21.0...@times-components/ad@2.21.1) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
 # [2.21.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.20.3...@times-components/ad@2.21.0) (2022-08-18)
 
 

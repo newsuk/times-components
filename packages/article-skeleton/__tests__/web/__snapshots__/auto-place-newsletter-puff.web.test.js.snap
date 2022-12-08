@@ -146,19 +146,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                       </Link>
                     </div>
                   </div>
-                  <div>
-                    <div>
-                      Save
-                    </div>
-                    <div>
-                      <div>
-                        <div
-                          data-fill-colour="#006699"
-                          data-title="Activity Indicator"
-                        />
-                      </div>
-                    </div>
-                  </div>
+                  <div />
                 </div>
               </div>
             </div>
@@ -184,8 +172,7 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
               code="TNL-101"
               copy="We’ll send you our top stories, across all sections, straight to your inbox. Simple as that."
               headline="Best of Times"
-              imageUri="https://www.thetimes.co.uk/imageserver/image/methode/times/prod/web/bin/728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800"
-              label="In your inbox"
+              section="News"
             />
           </div>
           <p
@@ -425,19 +412,7 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                       </Link>
                     </div>
                   </div>
-                  <div>
-                    <div>
-                      Save
-                    </div>
-                    <div>
-                      <div>
-                        <div
-                          data-fill-colour="#006699"
-                          data-title="Activity Indicator"
-                        />
-                      </div>
-                    </div>
-                  </div>
+                  <div />
                 </div>
               </div>
             </div>
@@ -456,10 +431,9 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
         </p>
         <AutoNewsletterPuff
           code="TNL-101"
-          copy="We’ll send you our top stories, across all sections, straight to your inbox. Simple as that."
+          copy="Our flagship newsletter featuring our top stories and analysis, delivered every morning."
           headline="Best of Times"
-          imageUri="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F728c3e68-5311-4533-809a-b313a6503789.jpg?resize=800"
-          label="In your inbox"
+          section="News"
         />
         <span>
           <p>

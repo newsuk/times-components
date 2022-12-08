@@ -19,6 +19,7 @@ exports[`1. renders correctly with an image lead asset 1`] = `
         width="100%"
       >
         <div
+          className="lcpItem"
           display="table"
           height={0}
           overflow="hidden"
@@ -29,6 +30,7 @@ exports[`1. renders correctly with an image lead asset 1`] = `
           <img
             alt="Chris Reynolds Gordon at one of his party venues in London"
             display="block"
+            fetchpriority="high"
             opacity={1}
             position="absolute"
             src="https://crop169.io/?resize=360"
@@ -130,6 +132,7 @@ exports[`5. it renders correctly with a classname 1`] = `
         width="100%"
       >
         <div
+          className="lcpItem"
           display="table"
           height={0}
           overflow="hidden"
@@ -140,6 +143,7 @@ exports[`5. it renders correctly with a classname 1`] = `
           <img
             alt="Chris Reynolds Gordon at one of his party venues in London"
             display="block"
+            fetchpriority="high"
             opacity={1}
             position="absolute"
             src="https://crop169.io/?resize=360"

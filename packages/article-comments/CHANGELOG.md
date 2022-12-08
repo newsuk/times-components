@@ -3,6 +3,172 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.18...@times-components/article-comments@0.34.0) (2022-12-07)
+
+
+### Features
+
+* **TDP-2429:** Remove feature flag from real name commenting smart banner ([#3197](https://github.com/newsuk/times-components/issues/3197)) ([95c86a9](https://github.com/newsuk/times-components/commit/95c86a928781a12eb768ddd577da353a63125b62))
+
+
+
+
+
+## [0.33.18](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.17...@times-components/article-comments@0.33.18) (2022-11-08)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.17](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.16...@times-components/article-comments@0.33.17) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.16](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.15...@times-components/article-comments@0.33.16) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.15](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.14...@times-components/article-comments@0.33.15) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.14](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.13...@times-components/article-comments@0.33.14) (2022-11-07)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.13](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.12...@times-components/article-comments@0.33.13) (2022-11-06)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.12](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.11...@times-components/article-comments@0.33.12) (2022-11-03)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.11](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.10...@times-components/article-comments@0.33.11) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.10](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.9...@times-components/article-comments@0.33.10) (2022-11-02)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.9](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.8...@times-components/article-comments@0.33.9) (2022-10-21)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.8](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.7...@times-components/article-comments@0.33.8) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.7](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.6...@times-components/article-comments@0.33.7) (2022-10-19)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.6](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.5...@times-components/article-comments@0.33.6) (2022-10-18)
+
+
+### Bug Fixes
+
+* **TDP-2612:** UserState refactor ([#3167](https://github.com/newsuk/times-components/issues/3167)) ([acb908b](https://github.com/newsuk/times-components/commit/acb908ba9827284f9d91b02c1246f4578716c559))
+
+
+
+
+
+## [0.33.5](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.4...@times-components/article-comments@0.33.5) (2022-10-14)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.4](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.3...@times-components/article-comments@0.33.4) (2022-10-13)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.3](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.2...@times-components/article-comments@0.33.3) (2022-10-11)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.1...@times-components/article-comments@0.33.2) (2022-10-10)
+
+**Note:** Version bump only for package @times-components/article-comments
+
+
+
+
+
+## [0.33.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.33.0...@times-components/article-comments@0.33.1) (2022-10-07)
+
+
+### Bug Fixes
+
+* **TDP-2487:**  inline image special characters  ([d9d2c22](https://github.com/newsuk/times-components/commit/d9d2c2256f86be3b951590135aac27c2b0ae0767))
+
+
+### Reverts
+
+* Revert "fix(TDP-2487):  inline image special characters" (#3159) ([7e54d2f](https://github.com/newsuk/times-components/commit/7e54d2fc7003b74b9050915e87eed1e09866ab40)), closes [#3159](https://github.com/newsuk/times-components/issues/3159)
+
+
+
+
+
 # [0.33.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.32.1...@times-components/article-comments@0.33.0) (2022-09-16)
 
 

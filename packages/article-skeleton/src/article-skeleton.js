@@ -49,7 +49,8 @@ const ArticleSkeleton = ({
   paidContentClassName,
   isPreview,
   swgProductId,
-  getFallbackThumbnailUrl169
+  getFallbackThumbnailUrl169,
+  realnameInlineBlueBanner
 }) => {
   const {
     commentsEnabled,
@@ -156,7 +157,7 @@ const ArticleSkeleton = ({
               <HeaderContainer>
                 <Header />
                 {savingEnabled || sharingEnabled ? (
-                  <UserState state={UserState.loggedInOrShared}>
+                  <UserState state={UserState.showSaveAndShareBar}>
                     <MessageContext.Consumer>
                       {({ showMessage }) => (
                         <StickySaveAndShareBar
@@ -211,6 +212,7 @@ const ArticleSkeleton = ({
                       }
                       commentingConfig={commentingConfig}
                       topics={topics}
+                      realnameInlineBlueBanner={realnameInlineBlueBanner}
                     />
                   )}
                 </LazyLoad>

@@ -145,6 +145,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                 <div>
                   <img
                     alt="Some Caption"
+                    fetchpriority="high"
                     src="https://crop169.io?resize=360"
                     srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                   />
@@ -420,6 +421,7 @@ exports[`4. an article with ads 1`] = `
                 <div>
                   <img
                     alt="Some Caption"
+                    fetchpriority="high"
                     src="https://crop169.io?resize=360"
                     srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                   />
@@ -721,6 +723,7 @@ exports[`7. an article with no author 1`] = `
                 <div>
                   <img
                     alt="Some Caption"
+                    fetchpriority="high"
                     src="https://crop169.io?resize=360"
                     srcSet="https://crop169.io?resize=360 360w,https://crop169.io?resize=520 520w,https://crop169.io?resize=680 680w,https://crop169.io?resize=860 860w,https://crop169.io?resize=1200 1200w,https://crop169.io?resize=1500 1500w"
                   />

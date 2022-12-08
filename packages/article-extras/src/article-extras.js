@@ -27,7 +27,8 @@ const ArticleExtras = ({
   relatedArticleSlice,
   relatedArticlesVisible,
   commentingConfig,
-  topics
+  topics,
+  realnameInlineBlueBanner
 }) => {
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticles = (
@@ -35,13 +36,12 @@ const ArticleExtras = ({
       <div id="sponsored-article" />
     </div>
   );
-
   return (
-    <UserState state={UserState.fullArticle} fallback={sponsoredArticles}>
+    <UserState state={UserState.showArticleExtras} fallback={sponsoredArticles}>
       <div style={clearingStyle} />
       <ArticleTopics topics={topics} />
       {(savingEnabled || sharingEnabled) && (
-        <UserState state={UserState.loggedInOrShared}>
+        <UserState state={UserState.showSaveAndShareBar}>
           <MessageContext.Consumer>
             {({ showMessage }) => (
               <ShareAndSaveContainer showBottomBorder={!relatedArticleSlice}>
@@ -73,23 +73,12 @@ const ArticleExtras = ({
         />
       </div>
       {sponsoredArticles}
-      <UserState
-        state={UserState.loggedIn}
-        fallback={
-          <ArticleComments
-            articleId={articleId}
-            isEnabled={commentsEnabled}
-            commentingConfig={commentingConfig}
-            isReadOnly
-          />
-        }
-      >
-        <ArticleComments
-          articleId={articleId}
-          isEnabled={commentsEnabled}
-          commentingConfig={commentingConfig}
-        />
-      </UserState>
+      <ArticleComments
+        articleId={articleId}
+        isEnabled={commentsEnabled}
+        commentingConfig={commentingConfig}
+        realnameInlineBlueBanner={realnameInlineBlueBanner}
+      />
     </UserState>
   );
 };
@@ -109,7 +98,8 @@ ArticleExtras.propTypes = {
   }).isRequired,
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
-  sharingEnabled: PropTypes.bool.isRequired
+  sharingEnabled: PropTypes.bool.isRequired,
+  realnameInlineBlueBanner: PropTypes.bool.isRequired
 };
 
 ArticleExtras.defaultProps = {

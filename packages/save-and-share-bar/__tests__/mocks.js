@@ -13,3 +13,7 @@ jest.mock("@times-components/icons", () => ({
   IconTwitter: "IconTwitter",
   IconActivityIndicator: "IconActivityIndicator"
 }));
+
+jest.mock("@times-components/ts-components", () => ({
+  SaveStar: "SaveStar"
+}));

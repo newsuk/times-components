@@ -20,7 +20,8 @@ const styles = {
   },
   fullwidthContainer: {
     marginBottom: spacing(2),
-    marginHorizontal: "auto",
+    marginLeft: "auto",
+    marginRight: "auto",
     maxWidth: tabletWidthMax
   },
   inlineCaption: {
