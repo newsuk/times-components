@@ -49,8 +49,7 @@ const ArticleSkeleton = ({
   paidContentClassName,
   isPreview,
   swgProductId,
-  getFallbackThumbnailUrl169,
-  realnameInlineBlueBanner
+  getFallbackThumbnailUrl169
 }) => {
   const {
     commentsEnabled,
@@ -212,7 +211,6 @@ const ArticleSkeleton = ({
                       }
                       commentingConfig={commentingConfig}
                       topics={topics}
-                      realnameInlineBlueBanner={realnameInlineBlueBanner}
                     />
                   )}
                 </LazyLoad>
