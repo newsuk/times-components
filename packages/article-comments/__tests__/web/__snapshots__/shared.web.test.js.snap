@@ -1,358 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Real Name Banner feature flag Banner is not visible 1`] = `
-<DocumentFragment>
-  .c1 {
-  display: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
-}
-
-.c2.info {
-  background-color: #bedeed;
-  border-left: 4px solid #1573a2;
-}
-
-.c2.info svg {
-  fill: #1573a2;
-}
-
-.c2.warning {
-  background-color: #ffeecc;
-  border-left: 4px solid #ffa300;
-}
-
-.c2.warning svg {
-  fill: #ffa300;
-}
-
-.c2.error {
-  background-color: #ffd6d6;
-  border-left: 4px solid #df0000;
-}
-
-.c2.error svg {
-  fill: #df0000;
-}
-
-.c3 {
-  margin: 12px 0 45px 12px;
-}
-
-.c4 {
-  margin: 12px;
-}
-
-.c5 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  margin-bottom: 6px;
-}
-
-.c6 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.c6 a {
-  color: #333333;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
-}
-
-<div
-    class="c0"
-  >
-    <div
-      class="comment-banner c1"
-      style="display: none;"
-    >
-      <div
-        class="info c2"
-      >
-        <div
-          class="c3"
-        >
-          <svg
-            fill="none"
-            height="20"
-            viewBox="0 0 20 20"
-            width="20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              clip-rule="evenodd"
-              d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
-              fill-rule="evenodd"
-            />
-          </svg>
-        </div>
-        <div
-          class="c4"
-        >
-          <div
-            class="c5"
-          >
-            Real-name comments
-          </div>
-          <div
-            class="c6"
-          >
-            We've changed our policy - if you need to, 
-            <a
-              href="https://home.thetimes.co.uk/"
-            >
-              edit your screen name here
-            </a>
-            .
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  .c0 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
-}
-
-<div
-    class="c0"
-    id="comments-container"
-  >
-    <div>
-      <script
-        async="async"
-        data-livefyre-url="dummy-article-id"
-        data-post-id="dummy-article-id"
-        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
-        data-seo-enabled="true"
-        data-spotim-module="spotim-launcher"
-        src="https://launcher.spot.im/spot/sp_pCQgrRiN"
-      />
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
-exports[`Real Name Banner feature flag Banner is visible 1`] = `
-<DocumentFragment>
-  .c1 {
-  display: none;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
-}
-
-.c2.info {
-  background-color: #bedeed;
-  border-left: 4px solid #1573a2;
-}
-
-.c2.info svg {
-  fill: #1573a2;
-}
-
-.c2.warning {
-  background-color: #ffeecc;
-  border-left: 4px solid #ffa300;
-}
-
-.c2.warning svg {
-  fill: #ffa300;
-}
-
-.c2.error {
-  background-color: #ffd6d6;
-  border-left: 4px solid #df0000;
-}
-
-.c2.error svg {
-  fill: #df0000;
-}
-
-.c3 {
-  margin: 12px 0 45px 12px;
-}
-
-.c4 {
-  margin: 12px;
-}
-
-.c5 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  margin-bottom: 6px;
-}
-
-.c6 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.c6 a {
-  color: #333333;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
-}
-
-<div
-    class="c0"
-  >
-    <div
-      class="comment-banner c1"
-      style="display: block;"
-    >
-      <div
-        class="info c2"
-      >
-        <div
-          class="c3"
-        >
-          <svg
-            fill="none"
-            height="20"
-            viewBox="0 0 20 20"
-            width="20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              clip-rule="evenodd"
-              d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
-              fill-rule="evenodd"
-            />
-          </svg>
-        </div>
-        <div
-          class="c4"
-        >
-          <div
-            class="c5"
-          >
-            Real-name comments
-          </div>
-          <div
-            class="c6"
-          >
-            We've changed our policy - if you need to, 
-            <a
-              href="https://home.thetimes.co.uk/"
-            >
-              edit your screen name here
-            </a>
-            .
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  .c0 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
-}
-
-<div
-    class="c0"
-    id="comments-container"
-  >
-    <div>
-      <script
-        async="async"
-        data-livefyre-url="dummy-article-id"
-        data-post-id="dummy-article-id"
-        data-post-url="https://www.thetimes.co.uk/article/dummy-article-id"
-        data-seo-enabled="true"
-        data-spotim-module="spotim-launcher"
-        src="https://launcher.spot.im/spot/sp_pCQgrRiN"
-      />
-    </div>
-  </div>
-</DocumentFragment>
-`;
-
 exports[`Render comments label, when comments are loaded 1`] = `
 <DocumentFragment>
   .c1 {
-  display: none;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -360,42 +10,42 @@ exports[`Render comments label, when comments are loaded 1`] = `
   margin-top: 50px;
 }
 
-.c2.info {
+.c1.info {
   background-color: #bedeed;
   border-left: 4px solid #1573a2;
 }
 
-.c2.info svg {
+.c1.info svg {
   fill: #1573a2;
 }
 
-.c2.warning {
+.c1.warning {
   background-color: #ffeecc;
   border-left: 4px solid #ffa300;
 }
 
-.c2.warning svg {
+.c1.warning svg {
   fill: #ffa300;
 }
 
-.c2.error {
+.c1.error {
   background-color: #ffd6d6;
   border-left: 4px solid #df0000;
 }
 
-.c2.error svg {
+.c1.error svg {
   fill: #df0000;
 }
 
-.c3 {
+.c2 {
   margin: 12px 0 45px 12px;
 }
 
-.c4 {
+.c3 {
   margin: 12px;
 }
 
-.c5 {
+.c4 {
   font-family: GillSansMTStd-Medium;
   font-weight: 700;
   font-size: 16px;
@@ -403,14 +53,14 @@ exports[`Render comments label, when comments are loaded 1`] = `
   margin-bottom: 6px;
 }
 
-.c6 {
+.c5 {
   font-family: GillSansMTStd-Medium;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
 }
 
-.c6 a {
+.c5 a {
   color: #333333;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -437,48 +87,43 @@ exports[`Render comments label, when comments are loaded 1`] = `
     class="c0"
   >
     <div
-      class="comment-banner c1"
-      style="display: none;"
+      class="info c1"
     >
       <div
-        class="info c2"
+        class="c2"
       >
-        <div
-          class="c3"
+        <svg
+          fill="none"
+          height="20"
+          viewBox="0 0 20 20"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            fill="none"
-            height="20"
-            viewBox="0 0 20 20"
-            width="20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              clip-rule="evenodd"
-              d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
-              fill-rule="evenodd"
-            />
-          </svg>
-        </div>
+          <path
+            clip-rule="evenodd"
+            d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="c3"
+      >
         <div
           class="c4"
         >
-          <div
-            class="c5"
+          Real-name comments
+        </div>
+        <div
+          class="c5"
+        >
+          We've changed our policy - if you need to, 
+          <a
+            href="https://home.thetimes.co.uk/"
           >
-            Real-name comments
-          </div>
-          <div
-            class="c6"
-          >
-            We've changed our policy - if you need to, 
-            <a
-              href="https://home.thetimes.co.uk/"
-            >
-              edit your screen name here
-            </a>
-            .
-          </div>
+            edit your screen name here
+          </a>
+          .
         </div>
       </div>
     </div>
@@ -627,10 +272,6 @@ exports[`User States RA Users 1`] = `
 exports[`User States enabled comments 1`] = `
 <DocumentFragment>
   .c1 {
-  display: none;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -638,42 +279,42 @@ exports[`User States enabled comments 1`] = `
   margin-top: 50px;
 }
 
-.c2.info {
+.c1.info {
   background-color: #bedeed;
   border-left: 4px solid #1573a2;
 }
 
-.c2.info svg {
+.c1.info svg {
   fill: #1573a2;
 }
 
-.c2.warning {
+.c1.warning {
   background-color: #ffeecc;
   border-left: 4px solid #ffa300;
 }
 
-.c2.warning svg {
+.c1.warning svg {
   fill: #ffa300;
 }
 
-.c2.error {
+.c1.error {
   background-color: #ffd6d6;
   border-left: 4px solid #df0000;
 }
 
-.c2.error svg {
+.c1.error svg {
   fill: #df0000;
 }
 
-.c3 {
+.c2 {
   margin: 12px 0 45px 12px;
 }
 
-.c4 {
+.c3 {
   margin: 12px;
 }
 
-.c5 {
+.c4 {
   font-family: GillSansMTStd-Medium;
   font-weight: 700;
   font-size: 16px;
@@ -681,14 +322,14 @@ exports[`User States enabled comments 1`] = `
   margin-bottom: 6px;
 }
 
-.c6 {
+.c5 {
   font-family: GillSansMTStd-Medium;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
 }
 
-.c6 a {
+.c5 a {
   color: #333333;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -715,48 +356,43 @@ exports[`User States enabled comments 1`] = `
     class="c0"
   >
     <div
-      class="comment-banner c1"
-      style="display: none;"
+      class="info c1"
     >
       <div
-        class="info c2"
+        class="c2"
       >
-        <div
-          class="c3"
+        <svg
+          fill="none"
+          height="20"
+          viewBox="0 0 20 20"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            fill="none"
-            height="20"
-            viewBox="0 0 20 20"
-            width="20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              clip-rule="evenodd"
-              d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
-              fill-rule="evenodd"
-            />
-          </svg>
-        </div>
+          <path
+            clip-rule="evenodd"
+            d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="c3"
+      >
         <div
           class="c4"
         >
-          <div
-            class="c5"
+          Real-name comments
+        </div>
+        <div
+          class="c5"
+        >
+          We've changed our policy - if you need to, 
+          <a
+            href="https://home.thetimes.co.uk/"
           >
-            Real-name comments
-          </div>
-          <div
-            class="c6"
-          >
-            We've changed our policy - if you need to, 
-            <a
-              href="https://home.thetimes.co.uk/"
-            >
-              edit your screen name here
-            </a>
-            .
-          </div>
+            edit your screen name here
+          </a>
+          .
         </div>
       </div>
     </div>
@@ -881,10 +517,6 @@ exports[`disabled comments 1`] = `
 exports[`single comment 1`] = `
 <DocumentFragment>
   .c1 {
-  display: none;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -892,42 +524,42 @@ exports[`single comment 1`] = `
   margin-top: 50px;
 }
 
-.c2.info {
+.c1.info {
   background-color: #bedeed;
   border-left: 4px solid #1573a2;
 }
 
-.c2.info svg {
+.c1.info svg {
   fill: #1573a2;
 }
 
-.c2.warning {
+.c1.warning {
   background-color: #ffeecc;
   border-left: 4px solid #ffa300;
 }
 
-.c2.warning svg {
+.c1.warning svg {
   fill: #ffa300;
 }
 
-.c2.error {
+.c1.error {
   background-color: #ffd6d6;
   border-left: 4px solid #df0000;
 }
 
-.c2.error svg {
+.c1.error svg {
   fill: #df0000;
 }
 
-.c3 {
+.c2 {
   margin: 12px 0 45px 12px;
 }
 
-.c4 {
+.c3 {
   margin: 12px;
 }
 
-.c5 {
+.c4 {
   font-family: GillSansMTStd-Medium;
   font-weight: 700;
   font-size: 16px;
@@ -935,14 +567,14 @@ exports[`single comment 1`] = `
   margin-bottom: 6px;
 }
 
-.c6 {
+.c5 {
   font-family: GillSansMTStd-Medium;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
 }
 
-.c6 a {
+.c5 a {
   color: #333333;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -969,48 +601,43 @@ exports[`single comment 1`] = `
     class="c0"
   >
     <div
-      class="comment-banner c1"
-      style="display: none;"
+      class="info c1"
     >
       <div
-        class="info c2"
+        class="c2"
       >
-        <div
-          class="c3"
+        <svg
+          fill="none"
+          height="20"
+          viewBox="0 0 20 20"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            fill="none"
-            height="20"
-            viewBox="0 0 20 20"
-            width="20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              clip-rule="evenodd"
-              d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
-              fill-rule="evenodd"
-            />
-          </svg>
-        </div>
+          <path
+            clip-rule="evenodd"
+            d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="c3"
+      >
         <div
           class="c4"
         >
-          <div
-            class="c5"
+          Real-name comments
+        </div>
+        <div
+          class="c5"
+        >
+          We've changed our policy - if you need to, 
+          <a
+            href="https://home.thetimes.co.uk/"
           >
-            Real-name comments
-          </div>
-          <div
-            class="c6"
-          >
-            We've changed our policy - if you need to, 
-            <a
-              href="https://home.thetimes.co.uk/"
-            >
-              edit your screen name here
-            </a>
-            .
-          </div>
+            edit your screen name here
+          </a>
+          .
         </div>
       </div>
     </div>
@@ -1069,10 +696,6 @@ Array [
 exports[`zero comments 1`] = `
 <DocumentFragment>
   .c1 {
-  display: none;
-}
-
-.c2 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1080,42 +703,42 @@ exports[`zero comments 1`] = `
   margin-top: 50px;
 }
 
-.c2.info {
+.c1.info {
   background-color: #bedeed;
   border-left: 4px solid #1573a2;
 }
 
-.c2.info svg {
+.c1.info svg {
   fill: #1573a2;
 }
 
-.c2.warning {
+.c1.warning {
   background-color: #ffeecc;
   border-left: 4px solid #ffa300;
 }
 
-.c2.warning svg {
+.c1.warning svg {
   fill: #ffa300;
 }
 
-.c2.error {
+.c1.error {
   background-color: #ffd6d6;
   border-left: 4px solid #df0000;
 }
 
-.c2.error svg {
+.c1.error svg {
   fill: #df0000;
 }
 
-.c3 {
+.c2 {
   margin: 12px 0 45px 12px;
 }
 
-.c4 {
+.c3 {
   margin: 12px;
 }
 
-.c5 {
+.c4 {
   font-family: GillSansMTStd-Medium;
   font-weight: 700;
   font-size: 16px;
@@ -1123,14 +746,14 @@ exports[`zero comments 1`] = `
   margin-bottom: 6px;
 }
 
-.c6 {
+.c5 {
   font-family: GillSansMTStd-Medium;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
 }
 
-.c6 a {
+.c5 a {
   color: #333333;
   -webkit-text-decoration: underline;
   text-decoration: underline;
@@ -1157,48 +780,43 @@ exports[`zero comments 1`] = `
     class="c0"
   >
     <div
-      class="comment-banner c1"
-      style="display: none;"
+      class="info c1"
     >
       <div
-        class="info c2"
+        class="c2"
       >
-        <div
-          class="c3"
+        <svg
+          fill="none"
+          height="20"
+          viewBox="0 0 20 20"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <svg
-            fill="none"
-            height="20"
-            viewBox="0 0 20 20"
-            width="20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              clip-rule="evenodd"
-              d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
-              fill-rule="evenodd"
-            />
-          </svg>
-        </div>
+          <path
+            clip-rule="evenodd"
+            d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <div
+        class="c3"
+      >
         <div
           class="c4"
         >
-          <div
-            class="c5"
+          Real-name comments
+        </div>
+        <div
+          class="c5"
+        >
+          We've changed our policy - if you need to, 
+          <a
+            href="https://home.thetimes.co.uk/"
           >
-            Real-name comments
-          </div>
-          <div
-            class="c6"
-          >
-            We've changed our policy - if you need to, 
-            <a
-              href="https://home.thetimes.co.uk/"
-            >
-              edit your screen name here
-            </a>
-            .
-          </div>
+            edit your screen name here
+          </a>
+          .
         </div>
       </div>
     </div>

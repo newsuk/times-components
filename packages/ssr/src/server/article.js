@@ -22,8 +22,7 @@ module.exports = (
     isPreview,
     swgProductId,
     getFallbackThumbnailUrl169,
-    commentCount,
-    realnameInlineBlueBanner
+    commentCount
   },
   userState
 ) => {
@@ -73,8 +72,7 @@ module.exports = (
       paidContentClassName,
       isPreview,
       swgProductId,
-      commentCount,
-      realnameInlineBlueBanner
+      commentCount
     },
     name: "article"
   };

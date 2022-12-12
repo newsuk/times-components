@@ -9,7 +9,7 @@ import { UserState } from "./mocks";
 import ArticleComments from "../../src/article-comments";
 import { ssoCallback } from "../../src/comment-login";
 
-const renderComments = ({ enabled, realnameInlineBlueBanner }) =>
+const renderComments = ({ enabled }) =>
   render(
     <ArticleComments
       articleId="dummy-article-id"
@@ -19,7 +19,6 @@ const renderComments = ({ enabled, realnameInlineBlueBanner }) =>
       onCommentsPress={() => {}}
       commentingConfig={{ account: "sp_pCQgrRiN" }}
       url="dummy-article-url"
-      realnameInlineBlueBanner={realnameInlineBlueBanner}
     />
   );
 
@@ -118,7 +117,6 @@ it("Render comments label, when comments are loaded", () => {
       onCommentsPress={() => {}}
       commentingConfig={{ account: "sp_pCQgrRiN" }}
       url="dummy-article-url"
-      realnameInlineBlueBanner={false}
     />
   );
 
@@ -149,28 +147,8 @@ describe("window listeners added", () => {
         onCommentsPress={() => {}}
         commentingConfig={{ account: "sp_pCQgrRiN" }}
         url="dummy-article-url"
-        realnameInlineBlueBanner={false}
       />
     );
     expect(Object.keys(listeners)).toMatchSnapshot();
-  });
-});
-
-describe("Real Name Banner feature flag", () => {
-  it("Banner is visible", () => {
-    const { asFragment, getByText } = renderComments({
-      enabled: true,
-      realnameInlineBlueBanner: true
-    });
-    expect(getByText("Real-name comments")).toBeVisible();
-    expect(asFragment()).toMatchSnapshot();
-  });
-  it("Banner is not visible", () => {
-    const { asFragment, getByText } = renderComments({
-      enabled: true,
-      realnameInlineBlueBanner: false
-    });
-    expect(getByText("Real-name comments")).not.toBeVisible();
-    expect(asFragment()).toMatchSnapshot();
   });
 });

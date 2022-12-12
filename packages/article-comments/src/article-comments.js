@@ -3,7 +3,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";
-import { HiddenDiv, InlineMessage } from "@times-components/ts-components";
+import { InlineMessage } from "@times-components/ts-components";
 
 import Comments from "./comments";
 
@@ -15,8 +15,7 @@ const ArticleComments = ({
   articleId,
   isEnabled,
   isReadOnly,
-  commentingConfig,
-  realnameInlineBlueBanner
+  commentingConfig
 }) =>
   isEnabled ? (
     <>
@@ -25,20 +24,13 @@ const ArticleComments = ({
       </UserState>
       <UserState state={UserState.showCommentingModule}>
         <CommentContainer>
-          <HiddenDiv
-            className="comment-banner"
-            style={{
-              display: `${realnameInlineBlueBanner ? "block" : "none"}`
-            }}
-          >
-            <InlineMessage title="Real-name comments" type="info">
-              We&apos;ve changed our policy - if you need to,{" "}
-              <a href="https://home.thetimes.co.uk/">
-                edit your screen name here
-              </a>
-              .
-            </InlineMessage>
-          </HiddenDiv>
+          <InlineMessage title="Real-name comments" type="info">
+            We&apos;ve changed our policy - if you need to,{" "}
+            <a href="https://home.thetimes.co.uk/">
+              edit your screen name here
+            </a>
+            .
+          </InlineMessage>
         </CommentContainer>
         <Comments
           articleId={articleId}
@@ -57,8 +49,7 @@ ArticleComments.propTypes = {
   isReadOnly: PropTypes.bool,
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
-  }).isRequired,
-  realnameInlineBlueBanner: PropTypes.bool.isRequired
+  }).isRequired
 };
 
 ArticleComments.defaultProps = {
