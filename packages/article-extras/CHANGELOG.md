@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.20.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.19.28...@times-components/article-extras@0.20.0) (2022-12-12)
+
+
+### Features
+
+* **TDP-1219:** Remove realnameInlineBlueBanner feature flag and HiddenDiv from InlineMessage ([#3201](https://github.com/newsuk/times-components/issues/3201)) ([ea107dd](https://github.com/newsuk/times-components/commit/ea107ddfcfa8c2c872e1aa0ed610c3dd39b7eaeb))
+
+
+
+
+
 ## [0.19.28](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.19.27...@times-components/article-extras@0.19.28) (2022-12-09)
 
 **Note:** Version bump only for package @times-components/article-extras

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.62.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.61.0...@times-components/ts-components@1.62.0) (2022-12-12)
+
+
+### Features
+
+* **TDP-1219:** Remove realnameInlineBlueBanner feature flag and HiddenDiv from InlineMessage ([#3201](https://github.com/newsuk/times-components/issues/3201)) ([ea107dd](https://github.com/newsuk/times-components/commit/ea107ddfcfa8c2c872e1aa0ed610c3dd39b7eaeb))
+
+
+
+
+
 # [1.61.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.60.0...@times-components/ts-components@1.61.0) (2022-11-08)
 
 
