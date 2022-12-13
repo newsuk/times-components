@@ -36,7 +36,14 @@ export const RecommendedFetch: React.FC<{
     }
   }, []);
 
-  const heading = `Today's ${startCase(articleSection)}`;
+  function getSectionHeadingText(section:string){
+    if (section.toLowerCase() === 'news') {
+      return 'news';
+    }
+    return startCase(articleSection);
+  }
+
+  const heading = `Today&rsquo;s ${getSectionHeadingText(articleSection)}`;
 
   return isClientSide ? (
     <FetchProvider

@@ -30,7 +30,7 @@ jest.mock('@times-components/ts-slices', () => ({
 const articles = previewData.recommendations.articles;
 
 const section = 'news';
-const heading = `Today's ${section}`;
+const heading = `Today&rsquo;s ${section}`;
 
 const initialContext = {
   object: 'RecommendedArticles',
@@ -40,7 +40,7 @@ const initialContext = {
     event_navigation_browsing_method: 'click',
     section_details: `section : ${section}`,
     article_name: 'Headline',
-    widget_headline: heading.toLowerCase(),
+    widget_headline: heading,
     widget_section: section,
     widget_type: "today's section"
   }
@@ -85,6 +85,17 @@ describe('<RecommendedArticles>', () => {
     expect(getByText(heading));
     expect(getByText(articles[0].headline));
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('should render heading lowercase for news', () => {
+    (useFetch as jest.Mock).mockReturnValue({
+      data: getArticles(previewData, 1)
+    });
+
+    const { getByText } = render(
+      <RecommendedArticles heading={heading} />
+    );
+    expect(getByText(heading).textContent).toBe('Today&rsquo;s news')
   });
 
   it('should render RelatedArticles correctly with 2 articles', () => {
