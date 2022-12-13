@@ -8,7 +8,7 @@ exports[`<RecommendedArticles> should render RelatedArticles correctly with 1 ar
     <div
       class="sc-bdVaJa vbIkV"
     >
-      Today's news
+      Today&rsquo;s news
     </div>
     <div>
       RelatedArticles
@@ -28,7 +28,7 @@ exports[`<RecommendedArticles> should render RelatedArticles correctly with 2 ar
     <div
       class="sc-bdVaJa vbIkV"
     >
-      Today's news
+      Today&rsquo;s news
     </div>
     <div>
       RelatedArticles
@@ -51,7 +51,7 @@ exports[`<RecommendedArticles> should render RelatedArticles correctly with 3 ar
     <div
       class="sc-bdVaJa vbIkV"
     >
-      Today's news
+      Today&rsquo;s news
     </div>
     <div>
       RelatedArticles
