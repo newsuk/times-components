@@ -29,7 +29,7 @@ jest.mock('@times-components/ts-slices', () => ({
 
 const articles = previewData.recommendations.articles;
 
-const section = 'news';
+const section = 'News';
 const heading = `Today&rsquo;s ${section}`;
 
 const initialContext = {
@@ -40,7 +40,7 @@ const initialContext = {
     event_navigation_browsing_method: 'click',
     section_details: `section : ${section}`,
     article_name: 'Headline',
-    widget_headline: heading,
+    widget_headline: heading.toLowerCase(),
     widget_section: section,
     widget_type: "today's section"
   }
@@ -93,7 +93,7 @@ describe('<RecommendedArticles>', () => {
     });
 
     const { getByText } = render(
-      <RecommendedArticles heading={heading} />
+      <RecommendedArticles heading="`${getSectionHeadingText({heading})`" />
     );
     expect(getByText(heading).textContent).toBe('Today&rsquo;s news')
   });
