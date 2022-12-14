@@ -36,7 +36,7 @@ export const RecommendedFetch: React.FC<{
     }
   }, []);
 
-  function getSectionHeadingText(section:string){
+  function getSectionHeadingText(section: string) {
     if (section.toLowerCase() === 'news') {
       return 'news';
     }
