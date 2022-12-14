@@ -36,12 +36,12 @@ export const RecommendedFetch: React.FC<{
     }
   }, []);
 
-  function getSectionHeadingText(section: string) {
+  const getSectionHeadingText = (section: string) => {
     if (section.toLowerCase() === 'news') {
       return 'news';
     }
     return startCase(articleSection);
-  }
+  };
 
   const heading = `Today&rsquo;s ${getSectionHeadingText(articleSection)}`;
 
