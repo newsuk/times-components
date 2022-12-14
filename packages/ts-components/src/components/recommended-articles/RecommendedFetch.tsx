@@ -5,7 +5,6 @@ declare global {
   }
 }
 
-import startCase from 'lodash.startcase';
 import React, { useEffect, useState } from 'react';
 
 import { FetchProvider } from '../../helpers/fetch/FetchProvider';
