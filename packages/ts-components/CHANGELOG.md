@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.62.1](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.62.0...@times-components/ts-components@1.62.1) (2022-12-14)
+
+
+### Bug Fixes
+
+* **TDP-2914:** Made News lowercase in title, and used curly apostrophe ([#3202](https://github.com/newsuk/times-components/issues/3202)) ([cb747fc](https://github.com/newsuk/times-components/commit/cb747fc7c15402beeb55c3849ba6020d569d9aed))
+
+
+
+
+
 # [1.62.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.61.0...@times-components/ts-components@1.62.0) (2022-12-12)
 
 
