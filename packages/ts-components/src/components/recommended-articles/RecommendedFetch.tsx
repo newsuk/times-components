@@ -35,7 +35,7 @@ export const RecommendedFetch: React.FC<{
     }
   }, []);
 
-  const heading = `Today&rsquo;s ${articleSection}`;
+  const heading = `Today\u{2019}s ${articleSection}`;
 
   return isClientSide ? (
     <FetchProvider
