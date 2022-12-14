@@ -33,7 +33,7 @@ storiesOf('Typescript Component/Recommended Articles', module)
   ))
   .add('Recommended Articles - 1 Article', () => (
     <FetchProvider previewData={getArticles(previewData, 1)}>
-      <RecommendedArticles heading="Today&rsquo;s news" />
+      <RecommendedArticles heading="Today's News" />
     </FetchProvider>
   ))
   .add('Recommended Articles - 2 Article', () => (
