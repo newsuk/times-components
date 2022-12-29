@@ -1,6 +1,6 @@
 /* eslint-env browser */
 
-import { select, boolean } from "@storybook/addon-knobs/react";
+import { select, boolean } from "@storybook/addon-knobs";
 import { SUBSCRIBER, RA, RA_EXPIRED, GUEST } from "./states";
 
 const activeStatesPerUserState = {

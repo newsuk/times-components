@@ -40,11 +40,6 @@ const addStories = (
       );
     });
   }
-
-  if (child.type === "decorator") {
-    builder.addDecorator(child.decorator);
-  }
-
   addStories(builder, knobs, actions, children);
 };
 

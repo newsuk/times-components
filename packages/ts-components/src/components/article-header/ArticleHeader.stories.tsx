@@ -29,12 +29,10 @@ const getAttributes = () => {
 };
 
 storiesOf('Typescript Component/Article Header', module)
-  .addDecorator((storyFn: () => React.ReactNode) => (
-    <ArticleHarness>{storyFn()}</ArticleHarness>
-  ))
   .add('Article Header with headline', () => {
     const props = getAttributes();
     return (
+      <ArticleHarness>
       <ArticleHeader
         updated={props.updated}
         // date={props.date}
@@ -42,16 +40,19 @@ storiesOf('Typescript Component/Article Header', module)
         breaking={props.breaking}
         headline={encodeURIComponent(props.headline)}
       />
+      </ArticleHarness>
     );
   })
   .add('Article Header without headline', () => {
     const props = getAttributes();
     return (
+    <ArticleHarness>
       <ArticleHeader
         updated={props.updated}
         // date={props.date}
         // time={props.time}
         breaking={props.breaking}
       />
+    </ArticleHarness>
     );
   });

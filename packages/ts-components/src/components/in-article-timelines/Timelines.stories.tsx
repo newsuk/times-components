@@ -7,8 +7,8 @@ import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextP
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
 storiesOf('Typescript Component/In Article/Timelines', module)
-  .addDecorator((storyFn: () => React.ReactNode) => (
-    <TrackingContextProvider
+  .add('Timelines with Bullet Point', () => (
+        <TrackingContextProvider
       context={{
         component: 'ArticleSkeleton',
         attrs: {
@@ -18,16 +18,30 @@ storiesOf('Typescript Component/In Article/Timelines', module)
       }}
       analyticsStream={analyticsStream}
     >
-      <ArticleHarness>{storyFn()}</ArticleHarness>
-    </TrackingContextProvider>
-  ))
-  .add('Timelines with Bullet Point', () => (
-    <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/45060">
+      <ArticleHarness>
+            <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/45060">
       <Timelines sectionColour="#008347" />
     </FetchProvider>
+      </ArticleHarness>
+    </TrackingContextProvider>
+
   ))
   .add('Timelines with Circular Image', () => (
-    <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/45061">
-      <Timelines sectionColour="#008347" />
-    </FetchProvider>
+            <TrackingContextProvider
+      context={{
+        component: 'ArticleSkeleton',
+        attrs: {
+          article_name: 'articleHeadline',
+          section_details: 'section'
+        }
+      }}
+      analyticsStream={analyticsStream}
+    >
+      <ArticleHarness>
+       <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/45061">
+          <Timelines sectionColour="#008347" />
+       </FetchProvider>
+      </ArticleHarness>
+    </TrackingContextProvider>
+ 
   ));

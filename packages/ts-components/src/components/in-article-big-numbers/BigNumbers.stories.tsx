@@ -7,8 +7,8 @@ import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextP
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
 storiesOf('Typescript Component/In Article/Big Numbers', module)
-  .addDecorator((storyFn: () => React.ReactNode) => (
-    <TrackingContextProvider
+  .add('Standard without a headline', () => (
+        <TrackingContextProvider
       context={{
         component: 'ArticleSkeleton',
         attrs: {
@@ -18,21 +18,49 @@ storiesOf('Typescript Component/In Article/Big Numbers', module)
       }}
       analyticsStream={analyticsStream}
     >
-      <ArticleHarness>{storyFn()}</ArticleHarness>
-    </TrackingContextProvider>
-  ))
-  .add('Standard without a headline', () => (
-    <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44335">
+      <ArticleHarness>
+            <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44335">
       <BigNumbers sectionColour="#636C17" />
     </FetchProvider>
+      </ArticleHarness>
+    </TrackingContextProvider>
+
   ))
   .add('Standard with One Card', () => (
+            <TrackingContextProvider
+      context={{
+        component: 'ArticleSkeleton',
+        attrs: {
+          article_name: 'articleHeadline',
+          section_details: 'section'
+        }
+      }}
+      analyticsStream={analyticsStream}
+    >
+      <ArticleHarness>
     <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44336">
       <BigNumbers sectionColour="#636C17" />
     </FetchProvider>
+      </ArticleHarness>
+    </TrackingContextProvider>
+
   ))
   .add('Wide with a headline', () => (
+                <TrackingContextProvider
+      context={{
+        component: 'ArticleSkeleton',
+        attrs: {
+          article_name: 'articleHeadline',
+          section_details: 'section'
+        }
+      }}
+      analyticsStream={analyticsStream}
+    >
+      <ArticleHarness>
     <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/44334">
       <BigNumbers sectionColour="#636C17" />
     </FetchProvider>
+      </ArticleHarness>
+    </TrackingContextProvider>
+
   ));
