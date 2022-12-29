@@ -42,7 +42,15 @@ const article3 = {
 };
 
 storiesOf('Typescript Component/In Article/Related Articles', module)
-  .addDecorator((storyFn: () => React.ReactNode) => (
+  .add('Related Articles', () => {
+    const numberOfArticles = select(
+      'Number of Articles',
+      { Three: 3, Two: 2, One: 1 },
+      3
+    );
+    // @ts-ignore
+    const sectionColor = select('Section', colours.section, '#636C17');
+    return (
     <TrackingContextProvider
       context={{
         component: 'ArticleSkeleton',
@@ -53,20 +61,8 @@ storiesOf('Typescript Component/In Article/Related Articles', module)
       }}
       analyticsStream={analyticsStream}
     >
-      <ArticleHarness>{storyFn()}</ArticleHarness>
-    </TrackingContextProvider>
-  ))
-
-  .add('Related Articles', () => {
-    const numberOfArticles = select(
-      'Number of Articles',
-      { Three: 3, Two: 2, One: 1 },
-      3
-    );
-    // @ts-ignore
-    const sectionColor = select('Section', colours.section, '#636C17');
-    return (
-      <InArticleRelatedArticles
+      <ArticleHarness>
+        <InArticleRelatedArticles
         sectionColour={sectionColor}
         heading="Related Articles"
         relatedArticles={[article1, article2, article3].filter(
@@ -74,5 +70,8 @@ storiesOf('Typescript Component/In Article/Related Articles', module)
         )}
         showImages={boolean('Show Images', true)}
       />
+      </ArticleHarness>
+    </TrackingContextProvider>
+
     );
   });

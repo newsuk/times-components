@@ -22,14 +22,7 @@ describe("The showcase converter should", () => {
           component: componentFn(),
           name
         });
-
-        return this;
-      }
-
-      addDecorator(item) {
-        this.items.push(item);
-
-        return this;
+         return this;
       }
     }
 

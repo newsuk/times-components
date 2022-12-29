@@ -7,12 +7,11 @@ import { boolean } from '@storybook/addon-knobs';
 import { config } from '../OlympicsKeys';
 
 storiesOf('Typescript Component/Olympics', module)
-  .addDecorator((storyFn: () => React.ReactNode) => (
-    <ArticleHarness>{storyFn()}</ArticleHarness>
-  ))
-
   .add('Schedule', () => {
     const inArticle = boolean('Is In Article', true);
-
-    return <OlympicsSchedule keys={config.prod} inArticle={inArticle} />;
+    return (
+          <ArticleHarness>
+              <OlympicsSchedule keys={config.prod} inArticle={inArticle} />
+          </ArticleHarness>
+    ) 
   });

@@ -48,23 +48,6 @@ const preventDefaultedAction = action =>
   ]);
 
 storiesOf("Composed/Article Skeleton", module)
-  .addDecorator(storyFn => (
-    <HelmetProvider context={{}}>
-      <TrackingContextProvider
-        analyticsStream={storybookReporter}
-        context={{
-          component: "ArticleSkeleton",
-          attrs: {
-            article_name: "Headline",
-            section_details: "Section"
-          }
-        }}
-      >
-        {storyFn()}
-      </TrackingContextProvider>
-    </HelmetProvider>
-  ))
-
   .add("Article Selection", () => {
     const scale = scales.medium;
     const sectionColour = select(
@@ -78,6 +61,17 @@ storiesOf("Composed/Article Skeleton", module)
     const data = articles[article];
 
     return (
+    <HelmetProvider context={{}}>
+      <TrackingContextProvider
+        analyticsStream={storybookReporter}
+        context={{
+          component: "ArticleSkeleton",
+          attrs: {
+            article_name: "Headline",
+            section_details: "Section"
+          }
+        }}
+      >
       <MockBookmarksProvider otherMocks={[]} delay={1000} articleId={data.id}>
         <ContextProviderWithDefaults
           value={{ theme: { scale, sectionColour } }}
@@ -113,6 +107,8 @@ storiesOf("Composed/Article Skeleton", module)
             onViewableItemsChanged={() => null}
           />
         </ContextProviderWithDefaults>
-      </MockBookmarksProvider>
+      </MockBookmarksProvider>      
+    </TrackingContextProvider>
+    </HelmetProvider>
     );
   });

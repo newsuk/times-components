@@ -7,8 +7,8 @@ import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextP
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
 storiesOf('Typescript Component/In Article/Info Card', module)
-  .addDecorator((storyFn: () => React.ReactNode) => (
-    <TrackingContextProvider
+  .add('Bullet Points', () => (
+        <TrackingContextProvider
       context={{
         component: 'ArticleSkeleton',
         attrs: {
@@ -18,12 +18,11 @@ storiesOf('Typescript Component/In Article/Info Card', module)
       }}
       analyticsStream={analyticsStream}
     >
-      <ArticleHarness>{storyFn()}</ArticleHarness>
-    </TrackingContextProvider>
-  ))
-
-  .add('Bullet Points', () => (
-    <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43978">
+      <ArticleHarness>
+            <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43978">
       <InfoCardBulletPoints sectionColour="#636C17" />
     </FetchProvider>
+      </ArticleHarness>
+    </TrackingContextProvider>
+
   ));

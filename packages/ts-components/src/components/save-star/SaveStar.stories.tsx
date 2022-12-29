@@ -14,18 +14,19 @@ const Wrapper = styled.div`
 `;
 
 storiesOf('Typescript Component/SaveStar', module)
-  .addDecorator((storyFn: () => React.ReactNode) => (
+  .add('SaveStar', () =>
     <TrackingContextProvider
-      context={{
-        component: 'ArticleSkeleton',
-        attrs: {
-          article_name: 'articleHeadline',
-          section_details: 'section'
+        context={{
+          component: 'ArticleSkeleton',
+          attrs: {
+            article_name: 'articleHeadline',
+            section_details: 'section'
         }
       }}
       analyticsStream={analyticsStream}
     >
-      <Wrapper>{storyFn()}</Wrapper>
+      <Wrapper>
+           <SaveStar articleId="12345" isPreviewMode />
+      </Wrapper>
     </TrackingContextProvider>
-  ))
-  .add('SaveStar', () => <SaveStar articleId="12345" isPreviewMode />);
+   );
