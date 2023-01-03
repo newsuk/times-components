@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import { RecommendedFetch } from '../RecommendedFetch';
+import { RecommendedFetch, getSectionText } from '../RecommendedFetch';
 
 jest.mock('../RecommendedArticles', () => ({
   RecommendedArticles: () => <div>RecommendedArticles</div>
@@ -39,3 +39,18 @@ describe('<RecommendedFetch>', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 });
+
+describe('getSectionText function', () => {
+  it('will capitalise the first letter on Scotland', () => {
+    const section = 'scotland';
+    expect(getSectionText(section)).toEqual('Scotland');
+  });
+  it('will capitalise the first letter on Ireland', () => {
+    const section = 'ireland';
+    expect(getSectionText(section)).toEqual('Ireland');
+  });
+  it('will not capitalise the first letter on other sections', () => {
+    const section = 'news';
+    expect(getSectionText(section)).toEqual('news');
+  })
+})

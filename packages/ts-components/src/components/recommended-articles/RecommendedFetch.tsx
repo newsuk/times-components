@@ -14,6 +14,13 @@ import { RecommendedArticles } from './RecommendedArticles';
 const isValidEnvironment = (name: string) =>
   ['local-prod', 'pr', 'uat', 'staging', 'prod'].includes(name);
 
+  export const getSectionText = (section: string): string => {
+    if (['scotland', 'ireland'].includes(section)) {
+      return section.charAt(0).toUpperCase() + section.slice(1);
+    }
+    return section;
+  };
+
 export const RecommendedFetch: React.FC<{
   articleId: string;
   articleHeadline: string;
@@ -35,12 +42,6 @@ export const RecommendedFetch: React.FC<{
     }
   }, []);
 
-  const getSectionText = (section: string): string => {
-    if (['scotland', 'ireland'].includes(section)) {
-      return section.charAt(0).toUpperCase() + section.slice(1);
-    }
-    return articleSection;
-  };
 
   const heading = `Today\u{2019}s ${getSectionText(articleSection)}`;
 
