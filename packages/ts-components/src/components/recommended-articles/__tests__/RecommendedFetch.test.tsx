@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import { RecommendedFetch, getSectionText } from '../RecommendedFetch';
+import { RecommendedFetch } from '../RecommendedFetch';
 
 jest.mock('../RecommendedArticles', () => ({
   RecommendedArticles: (props: any) => (
@@ -53,20 +53,5 @@ describe('<RecommendedFetch>', () => {
     );
 
     expect(getByText('Today’s Scotland'));
-  });
-});
-
-describe('getSectionText function', () => {
-  it('will capitalise the first letter on Scotland', () => {
-    const section = 'scotland';
-    expect(getSectionText(section)).toEqual('Scotland');
-  });
-  it('will capitalise the first letter on Ireland', () => {
-    const section = 'ireland';
-    expect(getSectionText(section)).toEqual('Ireland');
-  });
-  it('will not capitalise the first letter on other sections', () => {
-    const section = 'news';
-    expect(getSectionText(section)).toEqual('news');
   });
 });
