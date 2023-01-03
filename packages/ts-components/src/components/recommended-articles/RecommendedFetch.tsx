@@ -35,12 +35,12 @@ export const RecommendedFetch: React.FC<{
     }
   }, []);
 
-  let getSectionText = (section: string) => {
+  const getSectionText = (section: string): string => {
     if (['scotland', 'ireland'].includes(section)) {
       return section.charAt(0).toUpperCase() + section.slice(1);
     }
     return articleSection;
-  }
+  };
 
   const heading = `Today\u{2019}s ${getSectionText(articleSection)}`;
 
