@@ -35,7 +35,15 @@ export const RecommendedFetch: React.FC<{
     }
   }, []);
 
-  const heading = `Today\u{2019}s ${articleSection}`;
+  function getSectionText(section:string){
+    console.log('Section', section);
+    if (section === 'scotland') {
+      return 'Scotland';
+    }
+    return articleSection;
+  }
+
+  const heading = `Today\u{2019}s ${getSectionText(articleSection)}`;
 
   return isClientSide ? (
     <FetchProvider
