@@ -5,7 +5,12 @@ exports[`<RecommendedFetch> should render correctly 1`] = `
   <div>
     FetchProvider
     <div>
-      RecommendedArticles
+      <div>
+        RecommendedArticles
+      </div>
+      <div>
+        Today’s news
+      </div>
     </div>
   </div>
 </DocumentFragment>
