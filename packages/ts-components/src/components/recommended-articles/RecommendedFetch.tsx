@@ -35,7 +35,7 @@ export const RecommendedFetch: React.FC<{
     }
   }, []);
 
-  function getSectionText(section:string){
+  function getSectionText(section: string) {
     console.log('Section', section);
     if (section === 'scotland') {
       return 'Scotland';
