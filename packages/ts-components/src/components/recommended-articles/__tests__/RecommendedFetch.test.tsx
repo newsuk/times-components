@@ -68,5 +68,5 @@ describe('getSectionText function', () => {
   it('will not capitalise the first letter on other sections', () => {
     const section = 'news';
     expect(getSectionText(section)).toEqual('news');
-  })
-})
+  });
+});
