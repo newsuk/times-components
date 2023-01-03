@@ -27,7 +27,7 @@ describe('<RecommendedFetch>', () => {
     window.__TIMES_CONFIG__ = { environmentName: 'local-prod' };
   });
 
-  it('should render correctly', () => {
+  it('should render headers in lowercase correctly', () => {
     const { asFragment, getByText } = render(
       <RecommendedFetch
         articleId="1234"
@@ -43,7 +43,7 @@ describe('<RecommendedFetch>', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('should render an uppercase section name', () => {
+  it('should render an uppercase section name for Scotland', () => {
     const { getByText } = render(
       <RecommendedFetch
         articleId="1234"
@@ -53,5 +53,17 @@ describe('<RecommendedFetch>', () => {
     );
 
     expect(getByText('Today’s Scotland'));
+  });
+
+  it('should render an uppercase section name for Ireland', () => {
+    const { getByText } = render(
+      <RecommendedFetch
+        articleId="1234"
+        articleHeadline="Some headline"
+        articleSection="ireland"
+      />
+    );
+
+    expect(getByText('Today’s Ireland'));
   });
 });
