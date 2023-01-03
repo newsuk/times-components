@@ -35,10 +35,9 @@ export const RecommendedFetch: React.FC<{
     }
   }, []);
 
-  function getSectionText(section: string) {
-    console.log('Section', section);
-    if (section === 'scotland') {
-      return 'Scotland';
+  function getSectionText(section: string){
+    if (['scotland', 'ireland'].includes(section)) {
+      return section.charAt(0).toUpperCase() + section.slice(1);
     }
     return articleSection;
   }
