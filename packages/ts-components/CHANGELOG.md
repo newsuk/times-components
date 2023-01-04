@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.62.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.62.3...@times-components/ts-components@1.62.4) (2023-01-04)
+
+
+### Bug Fixes
+
+* **TDP-2934:** Update copy in real name commenting blue banner ([#3209](https://github.com/newsuk/times-components/issues/3209)) ([5aab697](https://github.com/newsuk/times-components/commit/5aab697d9459ffe326a7f14f5e8f4c15b63cf3f5))
+
+
+
+
+
 ## [1.62.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.62.2...@times-components/ts-components@1.62.3) (2023-01-04)
 
 
