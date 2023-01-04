@@ -25,7 +25,7 @@ const ArticleComments = ({
       <UserState state={UserState.showCommentingModule}>
         <CommentContainer>
           <InlineMessage title="Real-name comments" type="info">
-            We&apos;ve changed our policy - if you need to,{" "}
+            Our policy is now for commenters to use real names. You may{" "}
             <a href="https://home.thetimes.co.uk/">
               edit your screen name here
             </a>
