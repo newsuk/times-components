@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.62.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.62.2...@times-components/ts-components@1.62.3) (2023-01-04)
+
+
+### Bug Fixes
+
+* **TDP-2933:** Created basic framework to capitalise specific section names ([#3206](https://github.com/newsuk/times-components/issues/3206)) ([ed89175](https://github.com/newsuk/times-components/commit/ed891757a1a3c9d9c4b188aaccafaee5dd57a258)), closes [#3207](https://github.com/newsuk/times-components/issues/3207)
+
+
+
+
+
 ## [1.62.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.62.1...@times-components/ts-components@1.62.2) (2022-12-14)
 
 **Note:** Version bump only for package @times-components/ts-components
