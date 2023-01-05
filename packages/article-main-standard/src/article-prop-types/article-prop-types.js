@@ -11,7 +11,8 @@ const articlePropTypes = {
     // Could have more here
   }),
   receiveChildList: PropTypes.func,
-  navigationMode: PropTypes.shape({}).isRequired
+  navigationMode: PropTypes.shape({}).isRequired,
+  zephrDivs: PropTypes.bool
 };
 
 const articleDefaultProps = {

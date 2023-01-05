@@ -9,6 +9,7 @@ import { TrackingContextProvider } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
+import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
@@ -49,7 +50,8 @@ const ArticleSkeleton = ({
   paidContentClassName,
   isPreview,
   swgProductId,
-  getFallbackThumbnailUrl169
+  getFallbackThumbnailUrl169,
+  zephrDivs
 }) => {
   const {
     commentsEnabled,
@@ -175,6 +177,11 @@ const ArticleSkeleton = ({
                 ) : null}
               </HeaderContainer>
               <BodyContainer>
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={'<div id="nu-zephr-article-target-body">&nbsp;</div>'}
+                  />
+                )}
                 {newContent && (
                   <ArticleBody
                     analyticsStream={analyticsStream}

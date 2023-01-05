@@ -46,6 +46,7 @@ export const renderArticle = (data, header = null) => (
       onTwitterLinkPress={() => {}}
       onVideoPress={() => {}}
       commentingConfig={{ account: "dummiy-spotim-id" }}
+      zephrDivs
     />
   </ContextProviderWithDefaults>
 );
