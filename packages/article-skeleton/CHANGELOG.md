@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.94.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.93.5...@times-components/article-skeleton@1.94.0) (2023-01-05)
+
+
+### Features
+
+* **TDP-2601:** Update Google EA productID in the article header ([#3205](https://github.com/newsuk/times-components/issues/3205)) ([9cbeebc](https://github.com/newsuk/times-components/commit/9cbeebca4e36009427de556595d87378ef35c0c6))
+
+
+
+
+
 ## [1.93.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.93.4...@times-components/article-skeleton@1.93.5) (2023-01-05)
 
 **Note:** Version bump only for package @times-components/article-skeleton
