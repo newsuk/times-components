@@ -330,7 +330,7 @@ function Head({
     jsonLD.isPartOf = {
       "@type": ["CreativeWork", "Product"],
       name: "The Times & The Sunday Times",
-      productID: swgProductId
+      productID: "thetimes.co.uk:showcase"
     };
   }
   const videoJsonLD = hasVideo
