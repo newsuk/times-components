@@ -6,9 +6,10 @@ import { InfoCardBulletPoints } from './InfoCardBulletPoints';
 import { TrackingContextProvider } from '../../helpers/tracking/TrackingContextProvider';
 import analyticsStream from '../../fixtures/analytics-actions/analytics-actions';
 
-storiesOf('Typescript Component/In Article/Info Card', module)
-  .add('Bullet Points', () => (
-        <TrackingContextProvider
+storiesOf('Typescript Component/In Article/Info Card', module).add(
+  'Bullet Points',
+  () => (
+    <TrackingContextProvider
       context={{
         component: 'ArticleSkeleton',
         attrs: {
@@ -19,10 +20,10 @@ storiesOf('Typescript Component/In Article/Info Card', module)
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-            <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43978">
-      <InfoCardBulletPoints sectionColour="#636C17" />
-    </FetchProvider>
+        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/43978">
+          <InfoCardBulletPoints sectionColour="#636C17" />
+        </FetchProvider>
       </ArticleHarness>
     </TrackingContextProvider>
-
-  ));
+  )
+);

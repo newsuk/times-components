@@ -13,20 +13,19 @@ const Wrapper = styled.div`
   padding: 20px;
 `;
 
-storiesOf('Typescript Component/SaveStar', module)
-  .add('SaveStar', () =>
-    <TrackingContextProvider
-        context={{
-          component: 'ArticleSkeleton',
-          attrs: {
-            article_name: 'articleHeadline',
-            section_details: 'section'
-        }
-      }}
-      analyticsStream={analyticsStream}
-    >
-      <Wrapper>
-           <SaveStar articleId="12345" isPreviewMode />
-      </Wrapper>
-    </TrackingContextProvider>
-   );
+storiesOf('Typescript Component/SaveStar', module).add('SaveStar', () => (
+  <TrackingContextProvider
+    context={{
+      component: 'ArticleSkeleton',
+      attrs: {
+        article_name: 'articleHeadline',
+        section_details: 'section'
+      }
+    }}
+    analyticsStream={analyticsStream}
+  >
+    <Wrapper>
+      <SaveStar articleId="12345" isPreviewMode />
+    </Wrapper>
+  </TrackingContextProvider>
+));

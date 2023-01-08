@@ -8,7 +8,7 @@ import analyticsStream from '../../fixtures/analytics-actions/analytics-actions'
 
 storiesOf('Typescript Component/In Article/Timelines', module)
   .add('Timelines with Bullet Point', () => (
-        <TrackingContextProvider
+    <TrackingContextProvider
       context={{
         component: 'ArticleSkeleton',
         attrs: {
@@ -19,15 +19,14 @@ storiesOf('Typescript Component/In Article/Timelines', module)
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-            <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/45060">
-      <Timelines sectionColour="#008347" />
-    </FetchProvider>
+        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/45060">
+          <Timelines sectionColour="#008347" />
+        </FetchProvider>
       </ArticleHarness>
     </TrackingContextProvider>
-
   ))
   .add('Timelines with Circular Image', () => (
-            <TrackingContextProvider
+    <TrackingContextProvider
       context={{
         component: 'ArticleSkeleton',
         attrs: {
@@ -38,10 +37,9 @@ storiesOf('Typescript Component/In Article/Timelines', module)
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-       <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/45061">
+        <FetchProvider url="https://gobble.timesdev.tools/deck/api/deck-post-action/45061">
           <Timelines sectionColour="#008347" />
-       </FetchProvider>
+        </FetchProvider>
       </ArticleHarness>
     </TrackingContextProvider>
- 
   ));

@@ -33,26 +33,26 @@ storiesOf('Typescript Component/Article Header', module)
     const props = getAttributes();
     return (
       <ArticleHarness>
-      <ArticleHeader
-        updated={props.updated}
-        // date={props.date}
-        // time={props.time}
-        breaking={props.breaking}
-        headline={encodeURIComponent(props.headline)}
-      />
+        <ArticleHeader
+          updated={props.updated}
+          // date={props.date}
+          // time={props.time}
+          breaking={props.breaking}
+          headline={encodeURIComponent(props.headline)}
+        />
       </ArticleHarness>
     );
   })
   .add('Article Header without headline', () => {
     const props = getAttributes();
     return (
-    <ArticleHarness>
-      <ArticleHeader
-        updated={props.updated}
-        // date={props.date}
-        // time={props.time}
-        breaking={props.breaking}
-      />
-    </ArticleHarness>
+      <ArticleHarness>
+        <ArticleHeader
+          updated={props.updated}
+          // date={props.date}
+          // time={props.time}
+          breaking={props.breaking}
+        />
+      </ArticleHarness>
     );
   });
