@@ -11,7 +11,7 @@ import analyticsStream from '../../fixtures/analytics-actions/analytics-actions'
 
 storiesOf('Typescript Component/In Article/In Article Puff', module)
   .add('Image', () => (
-        <TrackingContextProvider
+    <TrackingContextProvider
       context={{
         component: 'ArticleSkeleton',
         attrs: {
@@ -22,15 +22,14 @@ storiesOf('Typescript Component/In Article/In Article Puff', module)
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-            <FetchProvider previewData={previewData[41548]}>
-                <InArticlePuff sectionColour="#13354e" />
-              </FetchProvider>
+        <FetchProvider previewData={previewData[41548]}>
+          <InArticlePuff sectionColour="#13354e" />
+        </FetchProvider>
       </ArticleHarness>
     </TrackingContextProvider>
-
   ))
   .add('Image 3:2', () => (
-            <TrackingContextProvider
+    <TrackingContextProvider
       context={{
         component: 'ArticleSkeleton',
         attrs: {
@@ -41,19 +40,18 @@ storiesOf('Typescript Component/In Article/In Article Puff', module)
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-            <FetchProvider previewData={previewData[41548]}>
-      <InArticlePuff
-        sectionColour="#13354e"
-        forceImageAspectRatio="3:2"
-        isLiveOrBreaking="breaking"
-      />
-    </FetchProvider>
+        <FetchProvider previewData={previewData[41548]}>
+          <InArticlePuff
+            sectionColour="#13354e"
+            forceImageAspectRatio="3:2"
+            isLiveOrBreaking="breaking"
+          />
+        </FetchProvider>
       </ArticleHarness>
     </TrackingContextProvider>
-
   ))
   .add('No Image', () => (
-                <TrackingContextProvider
+    <TrackingContextProvider
       context={{
         component: 'ArticleSkeleton',
         attrs: {
@@ -64,10 +62,9 @@ storiesOf('Typescript Component/In Article/In Article Puff', module)
       analyticsStream={analyticsStream}
     >
       <ArticleHarness>
-       <FetchProvider previewData={previewData[41547]}>
-         <InArticlePuff sectionColour="#184e13" isLiveOrBreaking="live" />
-       </FetchProvider>
+        <FetchProvider previewData={previewData[41547]}>
+          <InArticlePuff sectionColour="#184e13" isLiveOrBreaking="live" />
+        </FetchProvider>
       </ArticleHarness>
     </TrackingContextProvider>
-  
   ));

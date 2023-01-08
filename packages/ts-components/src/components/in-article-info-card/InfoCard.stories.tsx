@@ -22,15 +22,14 @@ storiesOf('Typescript Component/In Article/Info Card', module)
       }}
     >
       <ArticleHarness>
-           <FetchProvider previewData={previewData[43606]}>
-             <InfoCard sectionColour="#636C17" />
-           </FetchProvider>
+        <FetchProvider previewData={previewData[43606]}>
+          <InfoCard sectionColour="#636C17" />
+        </FetchProvider>
       </ArticleHarness>
     </TrackingContextProvider>
- 
   ))
   .add('Standard with Image', () => (
-        <TrackingContextProvider
+    <TrackingContextProvider
       analyticsStream={analyticsStream}
       context={{
         component: 'ArticleSkeleton',
@@ -41,15 +40,14 @@ storiesOf('Typescript Component/In Article/Info Card', module)
       }}
     >
       <ArticleHarness>
-          <FetchProvider previewData={previewData[43961]}>
-      <InfoCard sectionColour="#636C17" />
-    </FetchProvider>
+        <FetchProvider previewData={previewData[43961]}>
+          <InfoCard sectionColour="#636C17" />
+        </FetchProvider>
       </ArticleHarness>
     </TrackingContextProvider>
-
   ))
   .add('Wide with Copy', () => (
-            <TrackingContextProvider
+    <TrackingContextProvider
       analyticsStream={analyticsStream}
       context={{
         component: 'ArticleSkeleton',
@@ -60,15 +58,14 @@ storiesOf('Typescript Component/In Article/Info Card', module)
       }}
     >
       <ArticleHarness>
-    <FetchProvider previewData={previewData[43603]}>
-      <InfoCard sectionColour="#636C17" />
-    </FetchProvider>
+        <FetchProvider previewData={previewData[43603]}>
+          <InfoCard sectionColour="#636C17" />
+        </FetchProvider>
       </ArticleHarness>
     </TrackingContextProvider>
-
   ))
   .add('Wide with Image', () => (
-                <TrackingContextProvider
+    <TrackingContextProvider
       analyticsStream={analyticsStream}
       context={{
         component: 'ArticleSkeleton',
@@ -79,10 +76,9 @@ storiesOf('Typescript Component/In Article/Info Card', module)
       }}
     >
       <ArticleHarness>
-    <FetchProvider previewData={previewData[43614]}>
-      <InfoCard sectionColour="#636C17" />
-    </FetchProvider>
+        <FetchProvider previewData={previewData[43614]}>
+          <InfoCard sectionColour="#636C17" />
+        </FetchProvider>
       </ArticleHarness>
     </TrackingContextProvider>
-
   ));

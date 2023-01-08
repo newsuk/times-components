@@ -9,7 +9,7 @@ import { RecommendedArticles } from './RecommendedArticles';
 
 storiesOf('Typescript Component/Recommended Articles', module)
   .add('Recommended Articles - 1 Article', () => (
-  <TrackingContextProvider
+    <TrackingContextProvider
       context={{
         component: 'ArticleSkeleton',
         object: 'RecommendedArticles',
@@ -26,10 +26,10 @@ storiesOf('Typescript Component/Recommended Articles', module)
       }}
       analyticsStream={analyticsStream}
     >
-    <FetchProvider previewData={getArticles(previewData, 1)}>
-      <RecommendedArticles heading="Today's News" />
-    </FetchProvider>
-  </TrackingContextProvider>
+      <FetchProvider previewData={getArticles(previewData, 1)}>
+        <RecommendedArticles heading="Today's News" />
+      </FetchProvider>
+    </TrackingContextProvider>
   ))
   .add('Recommended Articles - 2 Article', () => (
     <TrackingContextProvider
@@ -49,10 +49,10 @@ storiesOf('Typescript Component/Recommended Articles', module)
       }}
       analyticsStream={analyticsStream}
     >
-    <FetchProvider previewData={getArticles(previewData, 2)}>
-      <RecommendedArticles heading="Today's Business" />
-    </FetchProvider>
-  </TrackingContextProvider>
+      <FetchProvider previewData={getArticles(previewData, 2)}>
+        <RecommendedArticles heading="Today's Business" />
+      </FetchProvider>
+    </TrackingContextProvider>
   ))
   .add('Recommended Articles - 3 Article', () => (
     <TrackingContextProvider
@@ -72,9 +72,8 @@ storiesOf('Typescript Component/Recommended Articles', module)
       }}
       analyticsStream={analyticsStream}
     >
-    <FetchProvider previewData={previewData}>
-      <RecommendedArticles heading="Today's Sport" />
-    </FetchProvider>
-  </TrackingContextProvider>
-
+      <FetchProvider previewData={previewData}>
+        <RecommendedArticles heading="Today's Sport" />
+      </FetchProvider>
+    </TrackingContextProvider>
   ));
