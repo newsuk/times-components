@@ -22,7 +22,7 @@ describe("The showcase converter should", () => {
           component: componentFn(),
           name
         });
-         return this;
+        return this;
       }
     }
 
