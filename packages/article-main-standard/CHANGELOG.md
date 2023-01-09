@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.66.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.66.5...@times-components/article-main-standard@3.66.6) (2023-01-05)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.66.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.66.4...@times-components/article-main-standard@3.66.5) (2023-01-05)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.66.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.66.3...@times-components/article-main-standard@3.66.4) (2023-01-04)
+
+
+### Bug Fixes
+
+* **TDP-2934:** Update copy in real name commenting blue banner ([#3209](https://github.com/newsuk/times-components/issues/3209)) ([5aab697](https://github.com/newsuk/times-components/commit/5aab697d9459ffe326a7f14f5e8f4c15b63cf3f5))
+
+
+
+
+
+## [3.66.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.66.2...@times-components/article-main-standard@3.66.3) (2023-01-04)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
 ## [3.66.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.66.1...@times-components/article-main-standard@3.66.2) (2022-12-14)
 
 **Note:** Version bump only for package @times-components/article-main-standard

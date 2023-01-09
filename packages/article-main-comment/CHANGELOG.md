@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.57.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.57.5...@times-components/article-main-comment@2.57.6) (2023-01-05)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.57.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.57.4...@times-components/article-main-comment@2.57.5) (2023-01-05)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.57.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.57.3...@times-components/article-main-comment@2.57.4) (2023-01-04)
+
+
+### Bug Fixes
+
+* **TDP-2934:** Update copy in real name commenting blue banner ([#3209](https://github.com/newsuk/times-components/issues/3209)) ([5aab697](https://github.com/newsuk/times-components/commit/5aab697d9459ffe326a7f14f5e8f4c15b63cf3f5))
+
+
+
+
+
+## [2.57.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.57.2...@times-components/article-main-comment@2.57.3) (2023-01-04)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
 ## [2.57.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.57.1...@times-components/article-main-comment@2.57.2) (2022-12-14)
 
 **Note:** Version bump only for package @times-components/article-main-comment

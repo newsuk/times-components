@@ -22,7 +22,8 @@ module.exports = (
     isPreview,
     swgProductId,
     getFallbackThumbnailUrl169,
-    commentCount
+    commentCount,
+    zephrDivs
   },
   userState
 ) => {
@@ -72,7 +73,8 @@ module.exports = (
       paidContentClassName,
       isPreview,
       swgProductId,
-      commentCount
+      commentCount,
+      zephrDivs
     },
     name: "article"
   };

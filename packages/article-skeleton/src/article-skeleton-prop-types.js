@@ -10,7 +10,8 @@ const articleSkeletonPropTypes = {
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
   }).isRequired,
-  swgProductId: PropTypes.string
+  swgProductId: PropTypes.string,
+  zephrDivs: PropTypes.bool
 };
 
 const articleSkeletonDefaultProps = {
@@ -18,7 +19,8 @@ const articleSkeletonDefaultProps = {
   data: { content: [] },
   Header: () => null,
   receiveChildList: () => {},
-  swgProductId: null
+  swgProductId: null,
+  zephrDivs: false
 };
 
 export { articleSkeletonPropTypes, articleSkeletonDefaultProps };

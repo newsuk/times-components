@@ -117,7 +117,7 @@ exports[`Render comments label, when comments are loaded 1`] = `
         <div
           class="c5"
         >
-          We've changed our policy - if you need to, 
+          Our policy is now for commenters to use real names. You may 
           <a
             href="https://home.thetimes.co.uk/"
           >
@@ -386,7 +386,7 @@ exports[`User States enabled comments 1`] = `
         <div
           class="c5"
         >
-          We've changed our policy - if you need to, 
+          Our policy is now for commenters to use real names. You may 
           <a
             href="https://home.thetimes.co.uk/"
           >
@@ -631,7 +631,7 @@ exports[`single comment 1`] = `
         <div
           class="c5"
         >
-          We've changed our policy - if you need to, 
+          Our policy is now for commenters to use real names. You may 
           <a
             href="https://home.thetimes.co.uk/"
           >
@@ -810,7 +810,7 @@ exports[`zero comments 1`] = `
         <div
           class="c5"
         >
-          We've changed our policy - if you need to, 
+          Our policy is now for commenters to use real names. You may 
           <a
             href="https://home.thetimes.co.uk/"
           >
