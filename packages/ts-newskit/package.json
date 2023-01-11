@@ -1,0 +1,81 @@
+{
+  "name": "@times-components/ts-newskit",
+  "version": "1.0.0",
+  "description": "Reuseable Typescript React Components",
+  "main": "dist/index.js",
+  "dev": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [],
+  "author": "News UK & Ireland Ltd",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "scripts": {
+    "describe": "npm-scripts-info",
+    "transpile": "run-s build",
+    "build": "run-s clean && run-p build:*",
+    "build:module": "tsc -p tsconfig.json",
+    "bundle": "NODE_ENV=production webpack -p",
+    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,tslint*,typescript,jest,prettier,webpack*,@types/*' --ignore-bin-package=false --skip-missing",
+    "fix": "run-s fix:*",
+    "fix:prettier": "prettier \"src/**/*.{ts,tsx}\" \"__tests__/**/*.tsx\" --write",
+    "fix:tslint": "tslint --fix --project .",
+    "lint": "tslint --project . && prettier \"src/**/*.{ts,tsx}\" --list-different",
+    "test:unit": "jest --coverage",
+    "watch:build": "run-s clean && run-p build:* \"build:module -- -w\"",
+    "watch:tests": "run-s clean build:module && run-p \"build:module -- -w\" \"test:unit -- --watch\"",
+    "doc": "run-s doc:html && open-cli build/docs/index.html",
+    "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
+    "reset": "git clean -dfx && git reset --hard && npm i",
+    "clean": "rm -rf build dist"
+  },
+  "scripts-info": {
+    "info": "Display information about the package scripts",
+    "build": "Clean and rebuild the project",
+    "fix": "Try to automatically fix any linting problems",
+    "test": "Lint and unit test the project",
+    "watch:tests": "Watch and rebuild the project on save, then rerun relevant tests",
+    "cov": "Rebuild, run tests, then create and open the coverage report",
+    "reset": "Delete all untracked files and reset the repo to the last commit",
+    "prepare-release": "One-step: clean, build, test, publish docs, and prep a release"
+  },
+  "engines": {
+    "node": ">=8.9"
+  },
+  "dependencies": {
+    "@emotion/react": "11.10.0",
+    "@emotion/styled": "11.10.0",
+    "newskit": "6.8.0",
+    "react": "16.9.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "5.3.18",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^12.1.2",
+    "jest": "24.8.0",
+    "jest-environment-jsdom-sixteen": "2.0.0",
+    "prettier": "1.14.3",
+    "tslint": "5.18.0",
+    "tslint-config-prettier": "1.18.0",
+    "typescript": "4.2.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-dom/extend-expect"
+    ]
+  }
+}
