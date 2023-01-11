@@ -2,23 +2,23 @@ export const textStylePresets = {
   articleLabel: {
     base: {
       color: '{{colors.inkContrast}}',
-      textTransform: 'uppercase',
-    },
+      textTransform: 'uppercase'
+    }
   },
   articleHeading: {
     base: {
-      color: '{{colors.inkContrast}}',
-    },
+      color: '{{colors.inkContrast}}'
+    }
   },
   articleParagraph: {
     base: {
       marginBottom: '25px',
-      color: '{{colors.inkBase}}',
-    },
+      color: '{{colors.inkBase}}'
+    }
   },
   cardTeaserParagraph: {
     base: {
-      color: '{{colors.inkSubtle}}',
-    },
-  },
+      color: '{{colors.inkSubtle}}'
+    }
+  }
 };

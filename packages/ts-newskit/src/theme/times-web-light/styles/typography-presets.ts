@@ -9,7 +9,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '{{fonts.fontSize060}}',
       lineHeight: '{{fonts.fontLineHeight030}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
-      fontStretch: 'normal',
+      fontStretch: 'normal'
     },
     editorialHeadline082: {
       fontFamily: '{{fonts.fontFamily010.fontFamily}}',
@@ -17,7 +17,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '{{fonts.fontSize112}}',
       lineHeight: '{{fonts.fontLineHeight030}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
-      fontStretch: 'normal',
+      fontStretch: 'normal'
     },
     editorialHeadline085: {
       fontFamily: '{{fonts.fontFamily010.fontFamily}}',
@@ -25,7 +25,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '{{fonts.fontSize115}}',
       lineHeight: '{{fonts.fontLineHeight030}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
-      fontStretch: 'normal',
+      fontStretch: 'normal'
     },
     editorialHeadline087: {
       fontFamily: '{{fonts.fontFamily010.fontFamily}}',
@@ -33,8 +33,8 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '{{fonts.fontSize117}}',
       lineHeight: '{{fonts.fontLineHeight030}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
-      fontStretch: 'normal',
-    },
+      fontStretch: 'normal'
+    }
   }).map(([key, value]) => {
     if (
       [
@@ -42,7 +42,7 @@ export const typographyPresets = Object.fromEntries(
         'editorialHeadline030',
         'editorialHeadline060',
         'editorialHeadline070',
-        'editorialHeadline080',
+        'editorialHeadline080'
       ].includes(key)
     ) {
       value.lineHeight = '{{fonts.fontLineHeight030}}';

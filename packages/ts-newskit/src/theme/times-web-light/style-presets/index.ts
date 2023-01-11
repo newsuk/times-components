@@ -5,5 +5,5 @@ import { textStylePresets } from './text';
 export const stylePresets = {
   ...colorStylePresets,
   ...pageStylePresets,
-  ...textStylePresets,
+  ...textStylePresets
 };
