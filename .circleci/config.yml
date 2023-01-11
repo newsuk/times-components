@@ -12,7 +12,7 @@ commands:
         steps:
             - run:
                   name: Install Dependencies
-                  command: npx yarn@1.22.15 install --frozen-lockfile
+                  command: npx yarn@1.22.15 install --frozen-lockfile --ignore-engines
                   working_directory: ~/project/
 
     restore-yarn:
