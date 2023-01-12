@@ -2,11 +2,11 @@ export default {
   body: 'TimesDigitalW04',
   bodyRegular: 'TimesDigitalW04-Regular',
   bodyRegularSmallCaps: 'TimesDigitalW04-RegularSC',
-  cultureMagazine: 'Flama-Bold',
+  cultureMagazine: 'TimesModern-Bold',
   dropCap: 'TimesModern-Regular',
   headline: 'TimesModern-Bold',
   headlineRegular: 'TimesModern-Regular',
-  stMagazine: 'Tiempos-Headline-Bold',
-  styleMagazine: 'CenturyGothic-Bold',
+  stMagazine: 'TimesModern-Bold',
+  styleMagazine: 'TimesModern-Bold',
   supporting: 'GillSansMTStd-Medium'
 };
