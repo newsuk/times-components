@@ -1,12 +1,7 @@
 /* eslint-disable global-require */
 const fonts = {
-  "CenturyGothic-Bold": () =>
-    require("./dist/public/fonts/CenturyGothic-Bold.js").default,
-  "Flama-Bold": () => require("./dist/public/fonts/Flama-Bold.js").default,
   "GillSansMTStd-Medium": () =>
     require("./dist/public/fonts/GillSansMTStd-Medium.js").default,
-  "Tiempos-Headline-Bold": () =>
-    require("./dist/public/fonts/Tiempos-Headline-Bold.js").default,
   "TimesDigitalW04-Bold": () =>
     require("./dist/public/fonts/TimesDigitalW04_bold.js").default,
   "TimesDigitalW04-Italic": () =>
