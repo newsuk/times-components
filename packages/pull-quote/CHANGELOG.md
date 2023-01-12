@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.11.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.10.7...@times-components/pull-quote@3.11.0) (2023-01-12)
+
+
+### Features
+
+* **TDP-2852:** Replaced Tiempo, Flama and Century fonts with Times Modern ([#3213](https://github.com/newsuk/times-components/issues/3213)) ([f727c75](https://github.com/newsuk/times-components/commit/f727c75fa0fea754b341205966de7c5ae1fc2240))
+
+
+
+
+
 ## [3.10.7](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.10.6...@times-components/pull-quote@3.10.7) (2022-11-02)
 
 **Note:** Version bump only for package @times-components/pull-quote

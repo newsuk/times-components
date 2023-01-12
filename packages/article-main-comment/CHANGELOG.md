@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.57.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.57.6...@times-components/article-main-comment@2.57.7) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
 ## [2.57.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.57.5...@times-components/article-main-comment@2.57.6) (2023-01-05)
 
 **Note:** Version bump only for package @times-components/article-main-comment

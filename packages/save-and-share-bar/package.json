@@ -1,6 +1,6 @@
 {
   "name": "@times-components/save-and-share-bar",
-  "version": "0.15.12",
+  "version": "0.15.13",
   "description": "Save and Share bar",
   "main": "dist/save-and-share-bar",
   "dev": "src/save-and-share-bar",
@@ -32,16 +32,16 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
     "@storybook/addon-knobs": "5.3.18",
-    "@times-components/context": "1.10.5",
-    "@times-components/icons": "2.19.7",
-    "@times-components/link": "3.11.6",
-    "@times-components/message-bar": "0.7.8",
+    "@times-components/context": "1.10.6",
+    "@times-components/icons": "2.19.8",
+    "@times-components/link": "3.11.7",
+    "@times-components/message-bar": "0.7.9",
     "@times-components/provider-queries": "2.18.0",
     "@times-components/tracking": "2.15.0",
-    "@times-components/ts-components": "1.62.4",
-    "@times-components/ts-styleguide": "1.37.6",
-    "@times-components/user-state": "0.4.7",
-    "@times-components/utils": "6.15.6",
+    "@times-components/ts-components": "1.63.0",
+    "@times-components/ts-styleguide": "1.38.0",
+    "@times-components/user-state": "0.4.8",
+    "@times-components/utils": "6.15.7",
     "prop-types": "15.7.2"
   },
   "devDependencies": {
