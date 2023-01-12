@@ -1,0 +1,59 @@
+{
+  "fontFamily010": {
+    "fontFamily": "TimesModern-Regular",
+    "cropConfig": {
+      "top": 0,
+      "bottom": 0
+    },
+    "cropAdjustments": {}
+  },
+  "fontFamily020": {
+    "fontFamily": "TimesDigitalW04-Regular",
+    "cropConfig": {
+      "top": 0,
+      "bottom": 0
+    },
+    "cropAdjustments": {}
+  },
+  "fontFamily030": {
+    "fontFamily": "GillSansMTStd-Medium",
+    "cropConfig": {
+      "top": 0,
+      "bottom": 0
+    },
+    "cropAdjustments": {}
+  },
+  "fontWeight010": 400,
+  "fontWeight020": 500,
+  "fontWeight030": 700,
+  "fontSize010": "12px",
+  "fontSize020": "14px",
+  "fontSize030": "16px",
+  "fontSize040": "18px",
+  "fontSize050": "20px",
+  "fontSize060": "22px",
+  "fontSize070": "24px",
+  "fontSize080": "28px",
+  "fontSize090": "32px",
+  "fontSize100": "36px",
+  "fontSize110": "40px",
+  "fontSize120": "56px",
+  "fontSize130": "64px",
+  "fontSize140": "72px",
+  "fontLineHeight010": "0.778",
+  "fontLineHeight020": "0.875",
+  "fontLineHeight030": "1.000",
+  "fontLineHeight040": "1.143",
+  "fontLineHeight050": "1.200",
+  "fontLineHeight060": "1.222",
+  "fontLineHeight070": "1.250",
+  "fontLineHeight080": "1.273",
+  "fontLineHeight090": "1.286",
+  "fontLineHeight100": "1.333",
+  "fontLineHeight110": "1.429",
+  "fontLineHeight120": "1.500",
+  "fontLineHeight130": "1.556",
+  "fontLineHeight140": "1.667",
+  "fontLetterSpacing010": "0%",
+  "fontLetterSpacing020": "10%"
+}
