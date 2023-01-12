@@ -4,12 +4,12 @@ export const fonts = {
   body: 'TimesDigitalW04',
   bodyRegular: 'TimesDigitalW04-Regular',
   bodyRegularSmallCaps: 'TimesDigitalW04-RegularSC',
-  cultureMagazine: 'Flama-Bold',
+  cultureMagazine: 'TimesModern-Bold',
   dropCap: 'TimesModern-Regular',
   headline: 'TimesModern-Bold',
   headlineRegular: 'TimesModern-Regular',
-  stMagazine: 'Tiempos-Headline-Bold',
-  styleMagazine: 'CenturyGothic-Bold',
+  stMagazine: 'TimesModern-Bold',
+  styleMagazine: 'TimesModern-Bold',
   supporting: 'GillSansMTStd-Medium'
 };
 
@@ -67,28 +67,6 @@ const GillSansMTStdMedium: FontTextCropSettings = {
   cropLineHeight: 1.2
 };
 
-const FlamaBold: FontTextCropSettings = {
-  font: 'Flama-Bold',
-  topCrop: 19,
-  bottomCrop: 13,
-  cropFontSize: 64,
-  cropLineHeight: 1.2
-};
-const TiemposHeadlineBold: FontTextCropSettings = {
-  font: 'Tiempos-Headline-Bold',
-  topCrop: 16,
-  bottomCrop: 17,
-  cropFontSize: 64,
-  cropLineHeight: 1.2
-};
-const CenturyGothicBold: FontTextCropSettings = {
-  font: 'CenturyGothic-Bold',
-  topCrop: 16,
-  bottomCrop: 16,
-  cropFontSize: 64,
-  cropLineHeight: 1.2
-};
-
 const fontCropSettings: { [font: string]: FontTextCropSettings } = keyBy(
   [
     TimesModernBold,
@@ -96,10 +74,7 @@ const fontCropSettings: { [font: string]: FontTextCropSettings } = keyBy(
     TimesDigitalW04,
     TimesDigitalW04Regular,
     TimesDigitalW04RegularSC,
-    GillSansMTStdMedium,
-    FlamaBold,
-    TiemposHeadlineBold,
-    CenturyGothicBold
+    GillSansMTStdMedium
   ],
   ({ font }) => font
 );

@@ -1561,7 +1561,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: Flama-Bold;
+  font-family: TimesModern-Bold;
   font-size: 30px;
   line-height: 33px;
   color: #1D1D1B;
@@ -2693,7 +2693,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: CenturyGothic-Bold;
+  font-family: TimesModern-Bold;
   font-size: 30px;
   line-height: 33px;
   color: #1D1D1B;
@@ -3826,7 +3826,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: Tiempos-Headline-Bold;
+  font-family: TimesModern-Bold;
   font-size: 30px;
   line-height: 33px;
   color: #1D1D1B;
