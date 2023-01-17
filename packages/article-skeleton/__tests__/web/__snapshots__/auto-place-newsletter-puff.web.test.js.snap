@@ -154,6 +154,14 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           Some paragraph 1
         </p>
@@ -420,6 +428,14 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           Some paragraph 1
         </p>

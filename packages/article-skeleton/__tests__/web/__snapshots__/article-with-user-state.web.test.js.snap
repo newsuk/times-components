@@ -22,6 +22,14 @@ exports[`Article with user state Render full article when user has access to ful
     <main>
       <div />
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           <span>
             T
@@ -395,6 +403,14 @@ exports[`Article with user state Render teaser article when user does not have a
     <main>
       <div />
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <p>
           <span>
             T

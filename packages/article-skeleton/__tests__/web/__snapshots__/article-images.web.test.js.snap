@@ -46,6 +46,14 @@ exports[`1. a primary image 1`] = `
       </div>
       <article>
         <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
           id="0"
         >
           <div>
@@ -163,6 +171,14 @@ exports[`2. a fullwidth image 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <div
           id="0"
         >
@@ -282,6 +298,14 @@ exports[`3. a secondary image 1`] = `
       </div>
       <article>
         <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
           id="0"
         >
           <div>
@@ -399,6 +423,14 @@ exports[`4. an inline image 1`] = `
         </div>
       </div>
       <article>
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-body\\">&nbsp;</div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
         <div
           id="0"
         >

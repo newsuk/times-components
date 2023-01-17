@@ -647,6 +647,7 @@ exports[`full article with style 1`] = `
       <article
         className="c7"
       >
+        <div />
         <p
           className="c8"
         >
