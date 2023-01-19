@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-comments",
-  "version": "0.36.5",
+  "version": "0.36.6",
   "description": "Article Comments",
   "main": "dist/article-comments",
   "dev": "src/article-comments",
@@ -32,11 +32,11 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/link": "3.11.7",
-    "@times-components/tracking": "2.15.0",
-    "@times-components/ts-components": "1.63.0",
-    "@times-components/ts-styleguide": "1.38.0",
-    "@times-components/user-state": "0.4.8",
+    "@times-components/link": "3.11.8",
+    "@times-components/tracking": "2.15.1",
+    "@times-components/ts-components": "1.63.1",
+    "@times-components/ts-styleguide": "1.38.1",
+    "@times-components/user-state": "0.4.9",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
@@ -46,7 +46,7 @@
     "@testing-library/react": "^12.1.2",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.0",
-    "@times-components/storybook": "4.5.6",
+    "@times-components/storybook": "4.5.7",
     "@times-components/webpack-configurator": "2.1.0",
     "babel-jest": "24.8.0",
     "eslint": "5.9.0",

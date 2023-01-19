@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.15.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.0...@times-components/tracking@2.15.1) (2023-01-19)
+
+
+### Bug Fixes
+
+* **TDP-2976:** update article query ([#3215](https://github.com/newsuk/times-components/issues/3215)) ([936b45a](https://github.com/newsuk/times-components/commit/936b45a04108de1a043a86a33ab6dba83fb89819))
+
+
+
+
+
 # [2.15.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.14.2...@times-components/tracking@2.15.0) (2022-11-03)
 
 

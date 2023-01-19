@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.4](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.12.3...@times-components/article-lead-asset@1.12.4) (2023-01-19)
+
+
+### Bug Fixes
+
+* **TDP-2976:** update article query ([#3215](https://github.com/newsuk/times-components/issues/3215)) ([936b45a](https://github.com/newsuk/times-components/commit/936b45a04108de1a043a86a33ab6dba83fb89819))
+
+
+
+
+
 ## [1.12.3](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.12.2...@times-components/article-lead-asset@1.12.3) (2022-11-02)
 
 **Note:** Version bump only for package @times-components/article-lead-asset

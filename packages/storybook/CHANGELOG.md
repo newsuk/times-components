@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.5.7](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.5.6...@times-components/storybook@4.5.7) (2023-01-19)
+
+
+### Bug Fixes
+
+* **TDP-2976:** update article query ([#3215](https://github.com/newsuk/times-components/issues/3215)) ([936b45a](https://github.com/newsuk/times-components/commit/936b45a04108de1a043a86a33ab6dba83fb89819))
+
+
+
+
+
 ## [4.5.6](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.5.5...@times-components/storybook@4.5.6) (2022-11-02)
 
 **Note:** Version bump only for package @times-components/storybook
