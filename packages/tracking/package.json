@@ -36,7 +36,7 @@
     "@times-components/jest-serializer": "3.5.1",
     "@times-components/storybook": "4.5.6",
     "@times-components/tealium-utils": "0.8.0",
-    "@times-components/utils": "6.15.6",
+    "@times-components/utils": "6.15.7",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "depcheck": "0.6.9",
@@ -48,7 +48,7 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/utils": "6.15.6",
+    "@times-components/utils": "6.15.7",
     "hoist-non-react-statics": "3.3.2",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2",
