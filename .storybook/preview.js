@@ -1,7 +1,6 @@
 import { addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
 import { configure } from '@storybook/react';
-import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport'; 
 
 
 const req = require.context(
@@ -9,6 +8,51 @@ const req = require.context(
   true,
   /^((?!node_modules).)*\.(stories)\.(tsx|js)$/
 );
+
+const customViewports = {
+  huge: {
+    name: 'huge',
+    styles: {
+      width: '1320px',
+      height: '963px',
+    },
+  },
+  medium: {
+    name: 'medium',
+    styles: {
+      width: '768px',
+      height: '1024px',
+    },
+  },
+  nativeTablet: {
+    name: 'nativeTablet',
+    styles: {
+      width: '660px',
+      height: '963px',
+    },
+  },
+  nativeTabletWide: {
+    name: 'nativeTabletWide',
+    styles: {
+      width: '1194px',
+      height: '963px',
+    },
+  },
+  small: {
+    name: 'small',
+    styles: {
+      width: '520px',
+      height: '720px',
+    },
+  },
+  wide: {
+    name: 'wide',
+    styles: {
+      width: '1024px',
+      height: '1366px',
+    },
+  },
+};
 
 addParameters({
   options: {
@@ -22,7 +66,7 @@ addParameters({
     hierarchySeparator: /\//
   },
   viewport: {
-    viewports: MINIMAL_VIEWPORTS
+    viewports: customViewports
   }
 });
 
