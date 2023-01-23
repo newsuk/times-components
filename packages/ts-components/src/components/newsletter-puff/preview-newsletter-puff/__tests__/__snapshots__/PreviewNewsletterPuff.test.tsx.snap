@@ -16,7 +16,7 @@ exports[`Preview Newsletter Puff renders 1`] = `
             class="sc-bwzfXH sc-bZQynM khoGuQ"
           >
             Politics. Explained.
-            : 
+             
           </div>
           Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
           <div
@@ -25,7 +25,7 @@ exports[`Preview Newsletter Puff renders 1`] = `
             <button
               class="sc-gZMcBi jWMqgP"
             >
-              One-click sign-up
+              Sign up with one click
             </button>
           </div>
         </div>
@@ -35,7 +35,7 @@ exports[`Preview Newsletter Puff renders 1`] = `
           <button
             class="sc-iwsKbI beYQWx"
           >
-            One-click sign-up
+            Sign up with one click
           </button>
         </div>
       </div>

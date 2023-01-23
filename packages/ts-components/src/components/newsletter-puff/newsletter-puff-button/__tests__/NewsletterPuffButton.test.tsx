@@ -26,7 +26,7 @@ describe('NewsletterPuffButton', () => {
       />
     );
 
-    expect(component.getByText('One-click sign-up'));
+    expect(component.getByText('Sign up with one click'));
   });
 
   it('should track button viewed and clicked in analytics', () => {
@@ -46,7 +46,7 @@ describe('NewsletterPuffButton', () => {
       </TrackingContextProvider>
     );
 
-    const oneClickSignUp = component.getByText('One-click sign-up');
+    const oneClickSignUp = component.getByText('Sign up with one click');
 
     fireEvent.click(oneClickSignUp);
 
