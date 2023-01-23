@@ -66,7 +66,7 @@ export const Newsletter = ({
         ) : (
           <InpSignupContainer>
             <InpCopy>
-              <InpSignupHeadline>{headline}: </InpSignupHeadline>
+              <InpSignupHeadline>{headline} </InpSignupHeadline>
               {`${copy} `}
               {PuffButton('link')}
             </InpCopy>
