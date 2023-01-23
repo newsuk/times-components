@@ -203,6 +203,7 @@ class InlineVideoPlayer extends Component {
         data-testid="video-component"
         ref={this.videoContainerRef}
         style={{ height, width }}
+        className="lcpItem"
       >
         <div style={{ height, width, position: "relative" }}>
           {!hasVideoPlayed && <Fragment>{is360 && <Video360Icon />}</Fragment>}
