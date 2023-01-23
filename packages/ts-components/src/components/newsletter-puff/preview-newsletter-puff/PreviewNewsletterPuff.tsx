@@ -24,7 +24,7 @@ export const PreviewNewsletterPuff = ({
   <InpContainer section={section}>
     <InpSignupContainer>
       <InpCopy>
-        <InpSignupHeadline>{headline}: </InpSignupHeadline>
+        <InpSignupHeadline>{headline} </InpSignupHeadline>
         {copy}
         <InpSignupCTAContainer childStyle="link">
           <NewsletterPuffButton style="link" />
