@@ -988,6 +988,7 @@ exports[`full article with style 1`] = `
                 width="100%"
               >
                 <div
+                  className="lcpItem"
                   height="100%"
                   width="100%"
                 >
@@ -2042,6 +2043,7 @@ exports[`full article with style in the culture magazine 1`] = `
                 width="100%"
               >
                 <div
+                  className="lcpItem"
                   height="100%"
                   width="100%"
                 >
@@ -3097,6 +3099,7 @@ exports[`full article with style in the style magazine 1`] = `
                 width="100%"
               >
                 <div
+                  className="lcpItem"
                   height="100%"
                   width="100%"
                 >
@@ -4151,6 +4154,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
                 width="100%"
               >
                 <div
+                  className="lcpItem"
                   height="100%"
                   width="100%"
                 >
