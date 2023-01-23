@@ -1045,6 +1045,7 @@ exports[`full article with style 1`] = `
                   width="100%"
                 >
                   <div
+                    className="lcpItem"
                     height="100%"
                     width="100%"
                   >
