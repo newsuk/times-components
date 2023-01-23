@@ -103,7 +103,9 @@ describe('Inline Newsletter Puff', () => {
 
   it('renders loading state state', async () => {
     const component = renderComponent();
-    const oneClickSignUp = await component.findAllByText('Sign up with one click');
+    const oneClickSignUp = await component.findAllByText(
+      'Sign up with one click'
+    );
 
     fireEvent.click(oneClickSignUp[0]);
     expect(component.baseElement).toMatchSnapshot();
