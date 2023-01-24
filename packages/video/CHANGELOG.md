@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.14.0](https://github.com/newsuk/times-components/compare/@times-components/video@4.13.11...@times-components/video@4.14.0) (2023-01-24)
+
+
+### Features
+
+* **TDP-3018:** Added lcpItem to video component ([#3217](https://github.com/newsuk/times-components/issues/3217)) ([5f66e47](https://github.com/newsuk/times-components/commit/5f66e47be1e9bc6008a681d87386ab9cb3f0c40c))
+
+
+
+
+
 ## [4.13.11](https://github.com/newsuk/times-components/compare/@times-components/video@4.13.10...@times-components/video@4.13.11) (2023-01-19)
 
 **Note:** Version bump only for package @times-components/video

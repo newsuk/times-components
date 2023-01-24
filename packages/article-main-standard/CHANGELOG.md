@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.67.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.66.9...@times-components/article-main-standard@3.67.0) (2023-01-24)
+
+
+### Features
+
+* **TDP-3018:** Added lcpItem to video component ([#3217](https://github.com/newsuk/times-components/issues/3217)) ([5f66e47](https://github.com/newsuk/times-components/commit/5f66e47be1e9bc6008a681d87386ab9cb3f0c40c))
+
+
+
+
+
 ## [3.66.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.66.8...@times-components/article-main-standard@3.66.9) (2023-01-23)
 
 **Note:** Version bump only for package @times-components/article-main-standard
