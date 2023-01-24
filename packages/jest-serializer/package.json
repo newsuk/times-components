@@ -10,6 +10,7 @@
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,identity-obj-proxy,jest,prettier,react-art,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test:web": "jest --config='./__tests__/jest.config.js'",
+    "test:web:updatesnapshot": "yarn test:web -u",
     "prepublishOnly": "yarn transpile",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"

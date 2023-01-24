@@ -28,6 +28,7 @@
     "fix:tslint": "tslint --fix --project .",
     "lint": "tslint --project . && prettier \"src/**/*.{ts,tsx}\" --list-different",
     "test:unit": "jest --coverage",
+    "test:unit:updatesnapshot": "yarn test:unit -u",
     "watch:build": "run-s clean && run-p build:* \"build:module -- -w\"",
     "watch:tests": "run-s clean build:module && run-p \"build:module -- -w\" \"test:unit -- --watch\"",
     "doc": "run-s doc:html && open-cli build/docs/index.html",
