@@ -1,12 +1,11 @@
 module.exports = {
   addons: [
-    "@storybook/addon-options",
+    "@storybook/addon-a11y",
     "@storybook/addon-actions",
+    "@storybook/addon-docs",
     "@storybook/addon-essentials",
     "@storybook/addon-knobs",
-    "@storybook/addon-info",
-    "@storybook/addon-docs",
-    "@storybook/addon-a11y",
+    "@storybook/addon-options",
     "@storybook/addon-viewport"
   ],
   framework: '@storybook/react',
