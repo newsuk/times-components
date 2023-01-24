@@ -6,7 +6,8 @@ module.exports = {
     "@storybook/addon-knobs",
     "@storybook/addon-info",
     "@storybook/addon-docs",
-    "@storybook/addon-a11y"
+    "@storybook/addon-a11y",
+    "@storybook/addon-viewport"
   ],
   framework: '@storybook/react',
 };
