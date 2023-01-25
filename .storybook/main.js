@@ -1,4 +1,7 @@
 module.exports = {
+  stories: [
+    "../packages/**/*.stories.mdx"
+  ],
   addons: [
     "@storybook/addon-a11y",
     "@storybook/addon-actions",

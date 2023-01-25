@@ -1,6 +1,7 @@
 import { addParameters } from '@storybook/react';
 import { create } from '@storybook/theming';
 import { configure } from '@storybook/react';
+import { DocsPage, DocsContainer } from '@storybook/addon-docs';
 
 const req = require.context(
   "../packages",
@@ -67,6 +68,10 @@ addParameters({
   },
   viewport: {
     viewports: customViewports
+  },
+  docs: {
+    container: DocsContainer,
+    page: DocsPage
   }
 });
 
