@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.9.0](https://github.com/newsuk/times-components/compare/@times-components/topic@5.8.8...@times-components/topic@5.9.0) (2023-01-26)
+
+
+### Features
+
+* **TDP-3046:** added a class to the heading of topics for lcp ([#3220](https://github.com/newsuk/times-components/issues/3220)) ([e023b09](https://github.com/newsuk/times-components/commit/e023b096f539be40f17a6020fb78ee2918c00514))
+
+
+
+
+
 ## [5.8.8](https://github.com/newsuk/times-components/compare/@times-components/topic@5.8.7...@times-components/topic@5.8.8) (2023-01-23)
 
 **Note:** Version bump only for package @times-components/topic

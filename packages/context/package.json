@@ -1,6 +1,6 @@
 {
   "name": "@times-components/context",
-  "version": "1.10.7",
+  "version": "1.10.8",
   "description": "Shared context between components",
   "main": "dist/context",
   "dev": "src/context",
@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/ts-styleguide": "1.38.1"
+    "@times-components/ts-styleguide": "1.38.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
