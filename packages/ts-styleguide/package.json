@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ts-styleguide",
-  "version": "1.38.2",
+  "version": "1.38.3",
   "description": "Reuseable Typescript React Components styleguide",
   "main": "dist/index.js",
   "dev": "dist/index.js",
@@ -51,8 +51,8 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@times-components/link": "3.11.9",
-    "@times-components/utils": "6.15.9",
+    "@times-components/link": "3.11.10",
+    "@times-components/utils": "6.15.10",
     "react": "16.9.0",
     "styled-components": "4.3.2"
   },

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.15.4](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.3...@times-components/tracking@2.15.4) (2023-01-27)
+
+
+### Bug Fixes
+
+* **TDP-3095:** changed uppercase to none for style section heading in… ([#3222](https://github.com/newsuk/times-components/issues/3222)) ([6a719b8](https://github.com/newsuk/times-components/commit/6a719b8f2fd5fea63b7fa62b49bbfa83aafb0e30))
+
+
+
+
+
 ## [2.15.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.2...@times-components/tracking@2.15.3) (2023-01-26)
 
 **Note:** Version bump only for package @times-components/tracking

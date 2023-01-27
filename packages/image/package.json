@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "6.14.5",
+  "version": "6.14.6",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -52,8 +52,8 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/ts-styleguide": "1.38.2",
-    "@times-components/utils": "6.15.9",
+    "@times-components/ts-styleguide": "1.38.3",
+    "@times-components/utils": "6.15.10",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.62.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.62.1...@times-components/article-magazine-standard@3.62.2) (2023-01-27)
+
+
+### Bug Fixes
+
+* **TDP-3095:** changed uppercase to none for style section heading in… ([#3222](https://github.com/newsuk/times-components/issues/3222)) ([6a719b8](https://github.com/newsuk/times-components/commit/6a719b8f2fd5fea63b7fa62b49bbfa83aafb0e30))
+
+
+
+
+
 ## [3.62.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.62.0...@times-components/article-magazine-standard@3.62.1) (2023-01-26)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard
