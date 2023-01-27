@@ -62,7 +62,7 @@ const headlineCasePicker = (
   section &&
   section.toLowerCase() === 'style' &&
   ['indepth', 'magazinestandard', 'magazinecomment'].includes(template)
-    ? 'uppercase'
+    ? 'none'
     : null;
 
 export default (

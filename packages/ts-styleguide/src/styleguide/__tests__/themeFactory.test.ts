@@ -18,7 +18,7 @@ describe('themeFactory()', () => {
       headlineFont: 'styleMagazine',
       pullQuoteFont: 'styleMagazine',
       sectionColour: undefined,
-      headlineCase: 'uppercase'
+      headlineCase: 'none'
     });
   });
 

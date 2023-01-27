@@ -2701,7 +2701,7 @@ exports[`full article with style in the style magazine 1`] = `
   color: #1D1D1B;
   margin-bottom: 10px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .c11 {
