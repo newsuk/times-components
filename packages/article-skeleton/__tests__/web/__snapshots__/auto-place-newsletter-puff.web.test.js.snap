@@ -38,8 +38,9 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                       Share
                     </div>
                     <div>
-                      <Link
-                        url=""
+                      <a
+                        href=""
+                        target={null}
                       >
                         <div>
                           <svg
@@ -63,12 +64,12 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                             </g>
                           </svg>
                         </div>
-                      </Link>
+                      </a>
                     </div>
                     <div>
-                      <Link
+                      <a
+                        href="https://twitter.com/intent/tweet?text=https://url.io"
                         target="_blank"
-                        url="https://twitter.com/intent/tweet?text=https://url.io"
                       >
                         <div>
                           <svg
@@ -88,12 +89,12 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                             />
                           </svg>
                         </div>
-                      </Link>
+                      </a>
                     </div>
                     <div>
-                      <Link
+                      <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
                         target="_blank"
-                        url="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
                       >
                         <div>
                           <svg
@@ -117,13 +118,12 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                             </g>
                           </svg>
                         </div>
-                      </Link>
+                      </a>
                     </div>
                     <div>
-                      <Link
-                        color="#696969"
-                        hoverColor="#1D1D1B"
-                        url=""
+                      <a
+                        href=""
+                        target={null}
                       >
                         <div>
                           <svg
@@ -143,10 +143,9 @@ exports[`Article with automatically placed NewsletterPuff should not render anot
                             />
                           </svg>
                         </div>
-                      </Link>
+                      </a>
                     </div>
                   </div>
-                  <div />
                 </div>
               </div>
             </div>
@@ -304,8 +303,9 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                       Share
                     </div>
                     <div>
-                      <Link
-                        url=""
+                      <a
+                        href=""
+                        target={null}
                       >
                         <div>
                           <svg
@@ -329,12 +329,12 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                             </g>
                           </svg>
                         </div>
-                      </Link>
+                      </a>
                     </div>
                     <div>
-                      <Link
+                      <a
+                        href="https://twitter.com/intent/tweet?text=https://url.io"
                         target="_blank"
-                        url="https://twitter.com/intent/tweet?text=https://url.io"
                       >
                         <div>
                           <svg
@@ -354,12 +354,12 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                             />
                           </svg>
                         </div>
-                      </Link>
+                      </a>
                     </div>
                     <div>
-                      <Link
+                      <a
+                        href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
                         target="_blank"
-                        url="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
                       >
                         <div>
                           <svg
@@ -383,13 +383,12 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                             </g>
                           </svg>
                         </div>
-                      </Link>
+                      </a>
                     </div>
                     <div>
-                      <Link
-                        color="#696969"
-                        hoverColor="#1D1D1B"
-                        url=""
+                      <a
+                        href=""
+                        target={null}
                       >
                         <div>
                           <svg
@@ -409,10 +408,9 @@ exports[`Article with automatically placed NewsletterPuff should render a Newsle
                             />
                           </svg>
                         </div>
-                      </Link>
+                      </a>
                     </div>
                   </div>
-                  <div />
                 </div>
               </div>
             </div>
