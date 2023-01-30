@@ -4,8 +4,7 @@ exports[`1. an article list loading with images 1`] = `
 <authorArticlesWithImagesProvider>
   <Helmet>
     <title>
-      
-       | The Times & The Sunday Times
+       | The Times &amp; The Sunday Times
     </title>
     <meta
       content="Get up to date information and read all the latest articles from ."
@@ -37,8 +36,7 @@ exports[`2. an article list loading without images 1`] = `
 <authorArticlesWithImagesProvider>
   <Helmet>
     <title>
-      
-       | The Times & The Sunday Times
+       | The Times &amp; The Sunday Times
     </title>
     <meta
       content="Get up to date information and read all the latest articles from ."

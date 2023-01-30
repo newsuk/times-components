@@ -16,7 +16,7 @@ function Head({ metaDescription, description, name }) {
 
   return (
     <Helmet>
-      <title>{name} | The Times &amp; The Sunday Times</title>
+      <title>{`${name} | The Times &amp; The Sunday Times`}</title>
       <meta content={content} name="description" />
     </Helmet>
   );
