@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@storybook/addon-actions": "6.5.15",
-    "@times-components/tealium": "1.15.0"
+    "@times-components/tealium": "1.15.1"
   },
   "resolutions": {
     "react": "16.9.0",
