@@ -10,46 +10,53 @@ const req = require.context(
 );
 
 const customViewports = {
-  huge: {
-    name: 'huge',
+  extraSmall: {
+    name: 'ExtraSmall',
     styles: {
-      width: '1320px',
-      height: '963px',
+      width: '320px',
+      height: '720px',
+    },
+  },
+  small: {
+    name: 'Small',
+    styles: {
+      width: '520px',
+      height: '720px',
     },
   },
   medium: {
-    name: 'medium',
+    name: 'Medium',
     styles: {
       width: '768px',
       height: '1024px',
     },
   },
+  wide: {
+    name: 'Wide',
+    styles: {
+      width: '1024px',
+      height: '1366px',
+    },
+  },
+  huge: {
+    name: 'Huge',
+    styles: {
+      width: '1320px',
+      height: '963px',
+    },
+  },
   nativeTablet: {
-    name: 'nativeTablet',
+    name: 'NativeTablet',
     styles: {
       width: '660px',
       height: '963px',
     },
   },
   nativeTabletWide: {
-    name: 'nativeTabletWide',
+    name: 'NativeTabletWide',
     styles: {
       width: '1194px',
       height: '963px',
-    },
-  },
-  small: {
-    name: 'small',
-    styles: {
-      width: '520px',
-      height: '720px',
-    },
-  },
-  wide: {
-    name: 'wide',
-    styles: {
-      width: '1024px',
-      height: '1366px',
     },
   },
 };
