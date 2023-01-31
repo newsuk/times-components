@@ -31,7 +31,7 @@ const AuthorProfileHead = ({
   const renderImage = () => {
     if (!uri) return null;
     return (
-      <ImageContainer>
+      <ImageContainer className="lcpItem">
         <AuthorProfileHeadImage uri={uri} />
       </ImageContainer>
     );
