@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.11.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.10.11...@times-components/author-profile@6.11.0) (2023-01-31)
+
+
+### Features
+
+* **TDP-3047:** Add lcpItem to Author Image BG ([#3224](https://github.com/newsuk/times-components/issues/3224)) ([f359fb2](https://github.com/newsuk/times-components/commit/f359fb28389d9ece227def02c4e6e4706b695f5c))
+
+
+
+
+
 ## [6.10.11](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.10.10...@times-components/author-profile@6.10.11) (2023-01-31)
 
 **Note:** Version bump only for package @times-components/author-profile
