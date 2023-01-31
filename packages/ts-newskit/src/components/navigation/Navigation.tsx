@@ -1,5 +1,6 @@
 import React from 'react';
-import { ThemeProvider, TextBlock } from 'newskit';
+import { TextBlock } from 'newskit/esm/text-block';
+import { ThemeProvider } from 'newskit/esm/theme';
 
 import { TimesWebLightTheme } from '../../theme';
 
