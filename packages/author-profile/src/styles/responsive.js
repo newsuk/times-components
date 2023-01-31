@@ -52,11 +52,7 @@ export const BioContainer = styled(TcView)`
 `;
 
 export const ImageContainer = styled(TcView)`
-  width: 100px;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    width: 116px;
-  }
+  width: 100%;
 `;
 
 export const AuthorProfileHeadJobTitleContainer = styled.h2`
