@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ts-slices",
-  "version": "1.6.11",
+  "version": "1.6.12",
   "description": "Reuseable Typescript React Components",
   "main": "dist/index.js",
   "dev": "dist/index.js",
@@ -51,7 +51,7 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@times-components/ts-styleguide": "1.38.3",
+    "@times-components/ts-styleguide": "1.38.4",
     "date-fns": "2.28.0",
     "lodash.get": "4.4.2",
     "react": "16.9.0",
@@ -59,7 +59,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^12.1.2",
-    "@times-components/storybook": "4.5.8",
+    "@times-components/storybook": "4.5.9",
     "@types/lodash.get": "4.4.6",
     "@types/lodash.shuffle": "4.2.6",
     "@types/mockdate": "2.0.0",
