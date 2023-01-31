@@ -41,7 +41,9 @@
     "test": "yarn storybook:test-build && jest ./lib --ci --bail --coverage",
     "test:all": "yarn test && lerna run test --since --stream && lerna run test:all --since --stream",
     "test:web": "lerna run test:web --stream",
+    "test:web:updatesnapshot": "lerna run test:web:updatesnapshot --stream",
     "test:unit": "lerna run test:unit --stream",
+    "test:unit:updatesnapshot": "lerna run test:unit:updatesnapshot --stream",
     "test:e2e": "yarn bundle && lerna run test:integration --stream",
     "test:e2e:debug": "yarn bundle && lerna run test:integration:debug --stream",
     "watch": "lerna run watch --stream --no-sort --concurrency 100"

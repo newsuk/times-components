@@ -1,6 +1,6 @@
 {
   "name": "@times-components/responsive",
-  "version": "0.14.6",
+  "version": "0.14.10",
   "description": "Responsive",
   "main": "dist/responsive",
   "dev": "src/responsive",
@@ -10,6 +10,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test:web": "jest --config='./__tests__/jest.config.js'",
+    "test:web:updatesnapshot": "yarn test:web -u",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
@@ -31,8 +32,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/ts-styleguide": "1.38.0",
-    "@times-components/utils": "6.15.7",
+    "@times-components/ts-styleguide": "1.38.4",
+    "@times-components/utils": "6.15.11",
     "prop-types": "15.7.2"
   },
   "devDependencies": {

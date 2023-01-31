@@ -1,6 +1,6 @@
 {
   "name": "@times-components/jest-serializer",
-  "version": "3.5.1",
+  "version": "3.5.4",
   "description": "serializer",
   "main": "dist/index",
   "dev": "src/jest-serializer",
@@ -10,6 +10,7 @@
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,identity-obj-proxy,jest,prettier,react-art,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test:web": "jest --config='./__tests__/jest.config.js'",
+    "test:web:updatesnapshot": "yarn test:web -u",
     "prepublishOnly": "yarn transpile",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
@@ -43,7 +44,7 @@
     "react-test-renderer": "16.9.0"
   },
   "dependencies": {
-    "@times-components/utils": "6.15.6",
+    "@times-components/utils": "6.15.11",
     "css": "^2.2.1",
     "enzyme-to-json": "3.3.5",
     "hyphenate-style-name": "1.0.2",

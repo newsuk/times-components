@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ts-styleguide",
-  "version": "1.38.0",
+  "version": "1.38.4",
   "description": "Reuseable Typescript React Components styleguide",
   "main": "dist/index.js",
   "dev": "dist/index.js",
@@ -29,6 +29,7 @@
     "lint": "tslint --project . && prettier \"src/**/*.{ts,tsx}\" --list-different",
     "test:lint": "lint",
     "test:unit": "jest --coverage",
+    "test:unit:updatesnapshot": "yarn test:unit -u",
     "watch:build": "run-s clean && run-p build:* \"build:module -- -w\"",
     "watch:tests": "run-s clean build:module && run-p \"build:module -- -w\" \"test:unit -- --watch\"",
     "doc": "run-s doc:html && open-cli build/docs/index.html",
@@ -50,8 +51,8 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@times-components/link": "3.11.7",
-    "@times-components/utils": "6.15.7",
+    "@times-components/link": "3.11.11",
+    "@times-components/utils": "6.15.11",
     "react": "16.9.0",
     "styled-components": "4.3.2"
   },

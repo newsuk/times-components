@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.95.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.95.2...@times-components/article-skeleton@1.95.3) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.95.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.95.1...@times-components/article-skeleton@1.95.2) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.95.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.95.0...@times-components/article-skeleton@1.95.1) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.95.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.94.3...@times-components/article-skeleton@1.95.0) (2023-01-24)
+
+
+### Features
+
+* **TDP-3018:** Added lcpItem to video component ([#3217](https://github.com/newsuk/times-components/issues/3217)) ([5f66e47](https://github.com/newsuk/times-components/commit/5f66e47be1e9bc6008a681d87386ab9cb3f0c40c))
+
+
+
+
+
+## [1.94.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.94.2...@times-components/article-skeleton@1.94.3) (2023-01-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.94.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.94.1...@times-components/article-skeleton@1.94.2) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.94.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.94.0...@times-components/article-skeleton@1.94.1) (2023-01-12)
 
 **Note:** Version bump only for package @times-components/article-skeleton

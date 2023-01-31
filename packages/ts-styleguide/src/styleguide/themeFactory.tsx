@@ -62,7 +62,7 @@ const headlineCasePicker = (
   section &&
   section.toLowerCase() === 'style' &&
   ['indepth', 'magazinestandard', 'magazinecomment'].includes(template)
-    ? 'uppercase'
+    ? 'none'
     : null;
 
 export default (
@@ -77,6 +77,6 @@ export default (
     headlineFont: magazineFontPicker('headline', section, template),
     pullQuoteFont: magazineFontPicker('headlineRegular', section, template),
     sectionColour: sectionColourPicker(section, template),
-    headlineCase: headlineCasePicker(section, template)
+    headlineCase: section.length ? headlineCasePicker(section, template) : null
   };
 };

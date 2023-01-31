@@ -97,13 +97,15 @@ describe('Inline Newsletter Puff', () => {
 
   it('renders signup state', async () => {
     const component = renderComponent();
-    await component.findAllByText('One-click sign-up');
+    await component.findAllByText('Sign up with one click');
     expect(component.baseElement).toMatchSnapshot();
   });
 
   it('renders loading state state', async () => {
     const component = renderComponent();
-    const oneClickSignUp = await component.findAllByText('One-click sign-up');
+    const oneClickSignUp = await component.findAllByText(
+      'Sign up with one click'
+    );
 
     fireEvent.click(oneClickSignUp[0]);
     expect(component.baseElement).toMatchSnapshot();
@@ -155,11 +157,11 @@ describe('Inline Newsletter Puff', () => {
       window.IntersectionObserver = oldIntersectionObserver;
     });
 
-    it('One-click sign-up : displayed', async () => {
+    it('Sign up with one click : displayed', async () => {
       const analyticsStream = jest.fn();
       const component = renderComponent(analyticsStream);
 
-      await component.findAllByText('One-click sign-up');
+      await component.findAllByText('Sign up with one click');
 
       FakeIntersectionObserver.intersect();
 

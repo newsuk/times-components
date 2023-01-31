@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.38.4](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.38.3...@times-components/ts-styleguide@1.38.4) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/ts-styleguide
+
+
+
+
+
+## [1.38.3](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.38.2...@times-components/ts-styleguide@1.38.3) (2023-01-27)
+
+
+### Bug Fixes
+
+* **TDP-3095:** changed uppercase to none for style section heading in… ([#3222](https://github.com/newsuk/times-components/issues/3222)) ([6a719b8](https://github.com/newsuk/times-components/commit/6a719b8f2fd5fea63b7fa62b49bbfa83aafb0e30))
+
+
+
+
+
+## [1.38.2](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.38.1...@times-components/ts-styleguide@1.38.2) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/ts-styleguide
+
+
+
+
+
+## [1.38.1](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.38.0...@times-components/ts-styleguide@1.38.1) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/ts-styleguide
+
+
+
+
+
 # [1.38.0](https://github.com/newsuk/times-components/compare/@times-components/ts-styleguide@1.37.6...@times-components/ts-styleguide@1.38.0) (2023-01-12)
 
 

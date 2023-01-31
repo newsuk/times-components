@@ -403,7 +403,7 @@ exports[`Head outputs correct metadata for a video article 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
+    {"@context":"https://schema.org","@type":"VideoObject","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
 </Helmet>
 `;
@@ -724,7 +724,7 @@ exports[`Head outputs seoDescription as video description for a video article wh
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"some seoDescription","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
+    {"@context":"https://schema.org","@type":"VideoObject","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"some seoDescription","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
 </Helmet>
 `;
@@ -1321,7 +1321,7 @@ exports[`Head outputs title as video description for a video article when there 
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Some Headline","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
+    {"@context":"https://schema.org","@type":"VideoObject","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Some Headline","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
 </Helmet>
 `;
@@ -1408,7 +1408,7 @@ exports[`Head outputs video schema for a video article 1`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
+    {"@context":"https://schema.org","@type":"VideoObject","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
 </Helmet>
 `;
@@ -1495,7 +1495,7 @@ exports[`Head outputs video schema for a video article 2`] = `
   <script
     type="application/ld+json"
   >
-    {"@context":"https://schema.org","@type":"VideoObject","name":"Some Headline","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
+    {"@context":"https://schema.org","@type":"VideoObject","uploadDate":"2015-03-13T18:54:58.000Z","thumbnailUrl":"https://video169.io","description":"Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4","contentUrl":"https://players.brightcove.net/5436121857001/default_default/index.html?videoId=5831024132001"}
   </script>
 </Helmet>
 `;

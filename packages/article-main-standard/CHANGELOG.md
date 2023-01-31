@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.67.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.67.2...@times-components/article-main-standard@3.67.3) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.67.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.67.1...@times-components/article-main-standard@3.67.2) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.67.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.67.0...@times-components/article-main-standard@3.67.1) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.67.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.66.9...@times-components/article-main-standard@3.67.0) (2023-01-24)
+
+
+### Features
+
+* **TDP-3018:** Added lcpItem to video component ([#3217](https://github.com/newsuk/times-components/issues/3217)) ([5f66e47](https://github.com/newsuk/times-components/commit/5f66e47be1e9bc6008a681d87386ab9cb3f0c40c))
+
+
+
+
+
+## [3.66.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.66.8...@times-components/article-main-standard@3.66.9) (2023-01-23)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.66.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.66.7...@times-components/article-main-standard@3.66.8) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
 ## [3.66.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.66.6...@times-components/article-main-standard@3.66.7) (2023-01-12)
 
 **Note:** Version bump only for package @times-components/article-main-standard
