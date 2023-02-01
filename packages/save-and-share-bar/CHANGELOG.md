@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.15.19...@times-components/save-and-share-bar@0.16.0) (2023-02-01)
+
+
+### Features
+
+* **TD-2979:** replace gillSans with roboto ([#3226](https://github.com/newsuk/times-components/issues/3226)) ([29f701e](https://github.com/newsuk/times-components/commit/29f701ea96c7e06767c23e01496f343b6d7a7db1))
+
+
+
+
+
 ## [0.15.19](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.15.18...@times-components/save-and-share-bar@0.15.19) (2023-01-31)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar

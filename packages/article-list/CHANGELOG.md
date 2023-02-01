@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.13.12...@times-components/article-list@9.14.0) (2023-02-01)
+
+
+### Features
+
+* **TD-2979:** replace gillSans with roboto ([#3226](https://github.com/newsuk/times-components/issues/3226)) ([29f701e](https://github.com/newsuk/times-components/commit/29f701ea96c7e06767c23e01496f343b6d7a7db1))
+
+
+
+
+
 ## [9.13.12](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.13.11...@times-components/article-list@9.13.12) (2023-01-31)
 
 **Note:** Version bump only for package @times-components/article-list
