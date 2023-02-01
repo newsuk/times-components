@@ -1,5 +1,7 @@
 import React from 'react';
+// tslint:disable-next-line:no-submodule-imports
 import { TextBlock } from 'newskit/esm/text-block';
+// tslint:disable-next-line:no-submodule-imports
 import { ThemeProvider } from 'newskit/esm/theme';
 
 import { TimesWebLightTheme } from '../../theme';
