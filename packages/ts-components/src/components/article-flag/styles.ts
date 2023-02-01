@@ -13,6 +13,8 @@ export const LiveArticleFlagContainer = styled.div`
 `;
 
 export const LiveArticleFlagText = styled.span`
+  display: flex;
+  align-items: center;
   font-family: ${fonts.supporting};
   color: #ffffff;
   font-weight: 500;

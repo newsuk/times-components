@@ -32,7 +32,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
 
 .IS5 {
   color: #696969;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 13;
   line-height: 15px;
   margin-bottom: 5px;

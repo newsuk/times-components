@@ -230,7 +230,7 @@ exports[`1. an article list header 1`] = `
         </div>
         <TextLink
           color="#006699"
-          fontFamily="GillSansMTStd-Medium"
+          fontFamily="Roboto-Regular"
           fontSize={15}
           lineHeight={17}
           paddingLeft="5px"

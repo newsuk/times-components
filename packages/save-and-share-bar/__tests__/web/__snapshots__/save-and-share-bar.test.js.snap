@@ -50,7 +50,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 14,
           "lineHeight": "14px",
           "marginRight": "10px",
@@ -155,7 +155,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 14,
           "lineHeight": "14px",
           "marginRight": "10px",

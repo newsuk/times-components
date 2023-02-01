@@ -4,7 +4,7 @@ exports[`1. with a single author 1`] = `
 <style>
 .IS1 {
   text-decoration: underline;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 13;
   line-height: 15px;
   color: #006699;
@@ -16,7 +16,7 @@ exports[`1. with a single author 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx IS1"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj IS1"
     href="/profile/alexandra-frean"
   >
     Alexandra Frean
@@ -28,7 +28,7 @@ exports[`2. with a very long byline 1`] = `
 <style>
 .IS1 {
   text-decoration: underline;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 13;
   line-height: 15px;
   color: #006699;
@@ -37,7 +37,7 @@ exports[`2. with a very long byline 1`] = `
 
 .IS2 {
   text-decoration: underline;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 13;
   line-height: 15px;
   color: #006699;
@@ -46,7 +46,7 @@ exports[`2. with a very long byline 1`] = `
 
 .IS3 {
   text-decoration: underline;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 13;
   line-height: 15px;
   color: #006699;
@@ -58,35 +58,35 @@ exports[`2. with a very long byline 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx IS1"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj IS1"
     href="/profile/camilla-long"
   >
     Camilla Long
   </a>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 ggpYCw"
   >
     , Environment Editor | 
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx IS2"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj IS2"
     href="/profile/camilla-long"
   >
     Camilla Long
   </a>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 ggpYCw"
   >
     , Environment Editor | 
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx IS3"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj IS3"
     href="/profile/camilla-long"
   >
     Camilla Long
   </a>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 ggpYCw"
   >
     , Environment Editor
   </div>

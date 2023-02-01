@@ -3,7 +3,7 @@
 exports[`SaveStar should render the initial loading state correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat ffLxAf"
+    class="sc-htpNat kAeOTu"
   >
     Save
   </div>
@@ -26,7 +26,7 @@ exports[`SaveStar should render the initial loading state correctly 1`] = `
 exports[`SaveStar should render the saved state 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat ffLxAf"
+    class="sc-htpNat kAeOTu"
   >
     Saved
   </div>
@@ -61,7 +61,7 @@ exports[`SaveStar should render the saved state 1`] = `
 exports[`SaveStar should render the unsaved state 1`] = `
 <DocumentFragment>
   <div
-    class="sc-htpNat ffLxAf"
+    class="sc-htpNat kAeOTu"
   >
     Save
   </div>
