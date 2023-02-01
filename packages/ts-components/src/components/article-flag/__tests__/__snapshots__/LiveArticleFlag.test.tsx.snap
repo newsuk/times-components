@@ -17,7 +17,7 @@ exports[`LiveArticleFlag should render the base live article flag 1`] = `
           />
         </div>
         <span
-          class="sc-bwzfXH cTEeiM"
+          class="sc-bwzfXH ePHQpf"
         >
           BASE
         </span>
@@ -44,7 +44,7 @@ exports[`LiveArticleFlag should render the breaking article flag 1`] = `
           />
         </div>
         <span
-          class="sc-bwzfXH cTEeiM"
+          class="sc-bwzfXH ePHQpf"
         >
           BREAKING
         </span>
@@ -71,7 +71,7 @@ exports[`LiveArticleFlag should render the live article flag 1`] = `
           />
         </div>
         <span
-          class="sc-bwzfXH cTEeiM"
+          class="sc-bwzfXH ePHQpf"
         >
           LIVE
         </span>

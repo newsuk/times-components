@@ -13,11 +13,14 @@ export const LiveArticleFlagContainer = styled.div`
 `;
 
 export const LiveArticleFlagText = styled.span`
+  display: flex;
+  align-items: center;
   font-family: ${fonts.supporting};
   color: #ffffff;
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.1em;
+
 `;
 
 const flashing = keyframes`
