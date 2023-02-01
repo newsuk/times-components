@@ -4,7 +4,7 @@ exports[`1. with a single author 1`] = `
 <style>
 .IS1 {
   text-decoration: underline;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 13;
   line-height: 15px;
   color: #006699;
@@ -28,7 +28,7 @@ exports[`2. with a very long byline 1`] = `
 <style>
 .IS1 {
   text-decoration: underline;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 13;
   line-height: 15px;
   color: #006699;
@@ -37,7 +37,7 @@ exports[`2. with a very long byline 1`] = `
 
 .IS2 {
   text-decoration: underline;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 13;
   line-height: 15px;
   color: #006699;
@@ -46,7 +46,7 @@ exports[`2. with a very long byline 1`] = `
 
 .IS3 {
   text-decoration: underline;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 13;
   line-height: 15px;
   color: #006699;

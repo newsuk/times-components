@@ -17,7 +17,7 @@ exports[`1. caption without credits 1`] = `
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 13,
           "lineHeight": "17px",
         }
@@ -46,7 +46,7 @@ exports[`2. caption with credits 1`] = `
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 13,
           "lineHeight": "17px",
         }
@@ -64,7 +64,7 @@ exports[`2. caption with credits 1`] = `
       style={
         Object {
           "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 9,
           "fontWeight": "400",
           "letterSpacing": 1,
@@ -98,7 +98,7 @@ exports[`3. caption with credits only 1`] = `
       style={
         Object {
           "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 9,
           "fontWeight": "400",
           "letterSpacing": 1,
@@ -132,7 +132,7 @@ exports[`4. caption with child 1`] = `
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 13,
           "lineHeight": "17px",
         }
@@ -150,7 +150,7 @@ exports[`4. caption with child 1`] = `
       style={
         Object {
           "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 9,
           "fontWeight": "400",
           "letterSpacing": 1,
@@ -179,7 +179,7 @@ exports[`5. centred caption without credits 1`] = `
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 13,
           "lineHeight": "17px",
           "paddingLeft": "10px",
@@ -211,7 +211,7 @@ exports[`6. centred caption caption with credits 1`] = `
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 13,
           "lineHeight": "17px",
           "paddingLeft": "10px",
@@ -232,7 +232,7 @@ exports[`6. centred caption caption with credits 1`] = `
       style={
         Object {
           "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 9,
           "fontWeight": "400",
           "letterSpacing": 1,
@@ -269,7 +269,7 @@ exports[`7. centred caption caption with credits only 1`] = `
       style={
         Object {
           "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 9,
           "fontWeight": "400",
           "letterSpacing": 1,
@@ -306,7 +306,7 @@ exports[`8. centred caption caption with child 1`] = `
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "GillSansMTStd-Medium",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 13,
           "lineHeight": "17px",
           "paddingLeft": "10px",
@@ -327,7 +327,7 @@ exports[`8. centred caption caption with child 1`] = `
       style={
         Object {
           "color": "#333333",
-          "fontFamily": "GillSansMTStd-Medium",
+          "fontFamily": "Roboto-Regular",
           "fontSize": 9,
           "fontWeight": "400",
           "letterSpacing": 1,

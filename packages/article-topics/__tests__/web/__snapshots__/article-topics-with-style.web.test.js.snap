@@ -31,7 +31,7 @@ exports[`1. group of topics 1`] = `
         <div
           className="tc-text__TcText-sc-15igzev-0 lhcAkf"
           color="#696969"
-          fontFamily="GillSansMTStd-Medium"
+          fontFamily="Roboto-Regular"
           fontSize={13}
           fontSizeStyle={
             Object {
@@ -81,7 +81,7 @@ exports[`2. group of topics at large scale 1`] = `
         <div
           className="tc-text__TcText-sc-15igzev-0 lhcAkf"
           color="#696969"
-          fontFamily="GillSansMTStd-Medium"
+          fontFamily="Roboto-Regular"
           fontSize={13}
           fontSizeStyle={
             Object {
@@ -131,7 +131,7 @@ exports[`3. group of topics at xlarge scale 1`] = `
         <div
           className="tc-text__TcText-sc-15igzev-0 lhcAkf"
           color="#696969"
-          fontFamily="GillSansMTStd-Medium"
+          fontFamily="Roboto-Regular"
           fontSize={13}
           fontSizeStyle={
             Object {
@@ -173,7 +173,7 @@ exports[`4. article topic with style 1`] = `
       <div
         className="tc-text__TcText-sc-15igzev-0 lhcAkf"
         color="#696969"
-        fontFamily="GillSansMTStd-Medium"
+        fontFamily="Roboto-Regular"
         fontSize={13}
         fontSizeStyle={
           Object {
@@ -214,7 +214,7 @@ exports[`5. article topic with no additional style 1`] = `
       <div
         className="tc-text__TcText-sc-15igzev-0 lhcAkf"
         color="#696969"
-        fontFamily="GillSansMTStd-Medium"
+        fontFamily="Roboto-Regular"
         fontSize={13}
         fontSizeStyle={null}
         lineHeight={13}

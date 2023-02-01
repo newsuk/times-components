@@ -8,5 +8,5 @@ export default {
   headlineRegular: 'TimesModern-Regular',
   stMagazine: 'TimesModern-Bold',
   styleMagazine: 'TimesModern-Bold',
-  supporting: 'GillSansMTStd-Medium'
+  supporting: 'Roboto-Regular'
 };

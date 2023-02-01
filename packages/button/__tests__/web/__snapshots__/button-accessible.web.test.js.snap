@@ -9,7 +9,7 @@ exports[`accessible button 1`] = `
       "borderRadius": 2,
       "color": "#FFFFFF",
       "cursor": "pointer",
-      "fontFamily": "GillSansMTStd-Medium",
+      "fontFamily": "Roboto-Regular",
       "fontSize": 16,
       "height": 45,
       "justifyContent": "center",

@@ -10,7 +10,7 @@ export const fonts = {
   headlineRegular: 'TimesModern-Regular',
   stMagazine: 'TimesModern-Bold',
   styleMagazine: 'TimesModern-Bold',
-  supporting: 'GillSansMTStd-Medium'
+  supporting: 'Roboto-Regular'
 };
 
 export type Font = keyof typeof fonts;
@@ -59,8 +59,16 @@ const TimesDigitalW04RegularSC: FontTextCropSettings = {
   cropLineHeight: 1.2
 };
 
-const GillSansMTStdMedium: FontTextCropSettings = {
-  font: 'GillSansMTStd-Medium',
+const robotoRegular: FontTextCropSettings = {
+  font: 'Roboto-Regular',
+  topCrop: 6,
+  bottomCrop: 26,
+  cropFontSize: 64,
+  cropLineHeight: 1.2
+};
+
+const robotoMedium: FontTextCropSettings = {
+  font: 'Roboto-Medium',
   topCrop: 6,
   bottomCrop: 26,
   cropFontSize: 64,
@@ -74,7 +82,8 @@ const fontCropSettings: { [font: string]: FontTextCropSettings } = keyBy(
     TimesDigitalW04,
     TimesDigitalW04Regular,
     TimesDigitalW04RegularSC,
-    GillSansMTStdMedium
+    robotoRegular,
+    robotoMedium
   ],
   ({ font }) => font
 );

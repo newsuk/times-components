@@ -16,7 +16,7 @@
     "cropAdjustments": {}
   },
   "fontFamily030": {
-    "fontFamily": "GillSansMTStd-Medium",
+    "fontFamily": "Roboto-Regular",
     "cropConfig": {
       "top": 0,
       "bottom": 0
