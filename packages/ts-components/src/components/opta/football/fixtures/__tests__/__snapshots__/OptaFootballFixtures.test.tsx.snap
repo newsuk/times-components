@@ -6,7 +6,7 @@ exports[`OptaFootballFixtures should render correctly 1`] = `
     class="sc-bdVaJa giUBsz"
   >
     <div
-      class="sc-htpNat sc-ifAKCX ceXVkP"
+      class="sc-htpNat sc-ifAKCX iKjrlk"
     />
     <div
       class="sc-bwzfXH kVYHKf"
@@ -23,7 +23,7 @@ exports[`OptaFootballFixtures should render correctly 2`] = `
     class="sc-bdVaJa hGXeaj"
   >
     <div
-      class="sc-htpNat sc-ifAKCX ceXVkP"
+      class="sc-htpNat sc-ifAKCX iKjrlk"
     >
       <div>
         Widget

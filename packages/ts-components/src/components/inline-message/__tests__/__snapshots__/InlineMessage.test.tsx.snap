@@ -27,12 +27,12 @@ exports[`<InlineMessage> should render the component 1`] = `
         class="sc-htpNat fMAJrN"
       >
         <div
-          class="sc-bxivhb dnEdgn"
+          class="sc-bxivhb bNdrQr"
         >
           Title
         </div>
         <div
-          class="sc-ifAKCX kbJgci"
+          class="sc-ifAKCX kJzwzo"
         />
       </div>
     </div>

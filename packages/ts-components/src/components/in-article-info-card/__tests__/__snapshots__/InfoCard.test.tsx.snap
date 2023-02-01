@@ -198,7 +198,7 @@ exports[`InfoCard renders 1`] = `
             class="sc-chPdSV cxUg"
           >
             <div
-              class="sc-dxgOiQ gNDmzV"
+              class="sc-dxgOiQ jWLilX"
             >
               Best places to stay
             </div>
@@ -468,7 +468,7 @@ exports[`InfoCard renders no image 1`] = `
             class="sc-chPdSV cxUg"
           >
             <div
-              class="sc-dxgOiQ gNDmzV"
+              class="sc-dxgOiQ jWLilX"
             >
               Best places to stay
             </div>
@@ -746,7 +746,7 @@ exports[`InfoCard should render the standard component 1`] = `
           class="sc-chPdSV cxUg"
         >
           <div
-            class="sc-dxgOiQ gNDmzV"
+            class="sc-dxgOiQ jWLilX"
           >
             Best places to stay
           </div>
@@ -1009,7 +1009,7 @@ exports[`InfoCard should render the wide component 1`] = `
           class="sc-chPdSV cxUg"
         >
           <div
-            class="sc-dxgOiQ gNDmzV"
+            class="sc-dxgOiQ jWLilX"
           >
             Best places to stay
           </div>
