@@ -20,7 +20,6 @@ export const LiveArticleFlagText = styled.span`
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.1em;
-
 `;
 
 const flashing = keyframes`
