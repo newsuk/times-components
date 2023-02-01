@@ -52,6 +52,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
           const article = isPreview
             ? providerData.draftArticle
             : providerData.article;
+          const articleTemplate = article ? article.template : null;
 
           return React.createElement(
             ContextProviderWithDefaults,
@@ -62,8 +63,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 makeTopicUrl,
                 theme: {
                   ...themeFactory(
-                    getSectionFromTiles(article),
-                    article.template
+                    article ? getSectionFromTiles(article) : "",
+                    articleTemplate
                   ),
                   scale: scale || defaults.theme.scale
                 },
@@ -74,7 +75,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               analyticsStream,
               article: {
                 ...article,
-                section: getSectionNameForAnalytics(article)
+                section: article
+                  ? getSectionNameForAnalytics(article)
+                  : "unknown section"
               },
               error,
               isLoading,

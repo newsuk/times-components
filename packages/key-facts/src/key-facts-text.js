@@ -10,9 +10,13 @@ import props from "./key-facts-text-prop-types";
 import { Text, KeyFactTextLink, BulletContainer, Bullet } from "./styles";
 
 const getTitle = data => {
-  if (data.children.length === 1) return data.children[0].attributes.value;
+  if (data.children.length === 1 && data.children[0].attributes) {
+    return data.children[0].attributes.value;
+  }
 
-  const linkText = data.children.map(child => child.attributes.value);
+  const linkText = data.children.map(
+    child => (child.attributes ? child.attributes.value : child.attributes)
+  );
   const title = linkText.join(" ");
   return title.length > 0 ? title : " ";
 };

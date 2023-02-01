@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "6.15.10",
+  "version": "6.15.11",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "main": "dist/index",
   "dev": "src/index",
@@ -35,7 +35,7 @@
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.0",
-    "@times-components/jest-serializer": "3.5.3",
+    "@times-components/jest-serializer": "3.5.4",
     "@times-components/webpack-configurator": "2.1.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
@@ -48,7 +48,7 @@
   },
   "dependencies": {
     "@times-components/schema": "0.7.3",
-    "@times-components/ts-styleguide": "1.38.3",
+    "@times-components/ts-styleguide": "1.38.4",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link": "1.2.4",
