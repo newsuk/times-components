@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.16.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.16.0...@times-components/tracking@2.16.1) (2023-02-02)
+
+
+### Bug Fixes
+
+* **TDP-3127:** Made Times2 Todays Section Title Uppercase ([#3227](https://github.com/newsuk/times-components/issues/3227)) ([c6a188a](https://github.com/newsuk/times-components/commit/c6a188af346d99ce70354f44b4c12c70fc31d3c0))
+
+
+
+
+
 # [2.16.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.5...@times-components/tracking@2.16.0) (2023-01-31)
 
 
