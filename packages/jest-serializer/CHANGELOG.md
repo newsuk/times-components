@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.5.5](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.5.4...@times-components/jest-serializer@3.5.5) (2023-02-02)
+
+
+### Bug Fixes
+
+* **TDP-3127:** Made Times2 Todays Section Title Uppercase ([#3227](https://github.com/newsuk/times-components/issues/3227)) ([c6a188a](https://github.com/newsuk/times-components/commit/c6a188af346d99ce70354f44b4c12c70fc31d3c0))
+
+
+
+
+
 ## [3.5.4](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.5.3...@times-components/jest-serializer@3.5.4) (2023-01-31)
 
 **Note:** Version bump only for package @times-components/jest-serializer
