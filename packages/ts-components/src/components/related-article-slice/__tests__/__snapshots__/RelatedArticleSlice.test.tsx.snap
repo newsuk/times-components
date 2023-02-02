@@ -51,7 +51,7 @@ exports[`RelatedArticleSlice renders 1 1`] = `
             class="shared-styles__SideBySideColumn-sc-1kek94e-1 jOKfAL"
           >
             <p
-              class="shared-styles__Label-sc-1kek94e-2 ijxkXb"
+              class="shared-styles__Label-sc-1kek94e-2 IvuEf"
             >
               Comment
             </p>
@@ -67,12 +67,12 @@ exports[`RelatedArticleSlice renders 1 1`] = `
               </a>
             </div>
             <p
-              class="styles__DateTime-sc-1p1alcs-0 gqTqqJ"
+              class="styles__DateTime-sc-1p1alcs-0 lgyzmN"
             >
               May 05 2021, 12.01am
             </p>
             <p
-              class="styles__Byline-sc-1p1alcs-1 dNmwSq"
+              class="styles__Byline-sc-1p1alcs-1 eJxJuH"
             >
               Steve Hewitt
             </p>
@@ -143,7 +143,7 @@ exports[`RelatedArticleSlice renders 2 1`] = `
             class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
           >
             <p
-              class="shared-styles__Label-sc-1kek94e-2 ijxkXb"
+              class="shared-styles__Label-sc-1kek94e-2 IvuEf"
             >
               Comment
             </p>
@@ -284,7 +284,7 @@ exports[`RelatedArticleSlice renders 3 1`] = `
             class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
           >
             <p
-              class="shared-styles__Label-sc-1kek94e-2 ijxkXb"
+              class="shared-styles__Label-sc-1kek94e-2 IvuEf"
             >
               Comment
             </p>
@@ -394,7 +394,7 @@ exports[`RelatedArticleSlice renders 3 1`] = `
               </a>
             </div>
             <p
-              class="styles__TimeSince-p3h2iu-1 hXPzMf"
+              class="styles__TimeSince-p3h2iu-1 lgXIbS"
             >
               3 days ago
             </p>

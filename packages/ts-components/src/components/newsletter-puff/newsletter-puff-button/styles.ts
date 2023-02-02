@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { colours, fonts } from '@times-components/ts-styleguide';
 
 export const PuffButton = styled.button`
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   font-size: 16px;
   line-height: 0;
   align-items: center;

@@ -351,7 +351,7 @@ exports[`full article with style 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   font-size: 13px;
   line-height: 15px;
   color: #696969;
@@ -879,7 +879,7 @@ exports[`full article with style 1`] = `
               <div
                 className="c5"
                 color="rgba(255, 255, 255, 1)"
-                fontFamily="Roboto-Regular"
+                fontFamily="GillSansMTStd-Medium"
                 fontSize={12}
                 fontWeight="400"
                 letterSpacing={1}
@@ -1059,7 +1059,7 @@ exports[`full article with style 1`] = `
                     <div
                       className="c5"
                       color="#696969"
-                      fontFamily="Roboto-Regular"
+                      fontFamily="GillSansMTStd-Medium"
                       fontSize={13}
                       lineHeight="17px"
                     >
@@ -1461,7 +1461,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   font-size: 13px;
   line-height: 15px;
   color: #696969;
@@ -1990,7 +1990,7 @@ exports[`full article with style in the culture magazine 1`] = `
               <div
                 className="c5"
                 color="rgba(255, 255, 255, 1)"
-                fontFamily="Roboto-Regular"
+                fontFamily="GillSansMTStd-Medium"
                 fontSize={12}
                 fontWeight="400"
                 letterSpacing={1}
@@ -2170,7 +2170,7 @@ exports[`full article with style in the culture magazine 1`] = `
                     <div
                       className="c5"
                       color="#696969"
-                      fontFamily="Roboto-Regular"
+                      fontFamily="GillSansMTStd-Medium"
                       fontSize={13}
                       lineHeight="17px"
                     >
@@ -2572,7 +2572,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   font-size: 13px;
   line-height: 15px;
   color: #696969;
@@ -3102,7 +3102,7 @@ exports[`full article with style in the style magazine 1`] = `
               <div
                 className="c5"
                 color="rgba(255, 255, 255, 1)"
-                fontFamily="Roboto-Regular"
+                fontFamily="GillSansMTStd-Medium"
                 fontSize={12}
                 fontWeight="400"
                 letterSpacing={1}
@@ -3282,7 +3282,7 @@ exports[`full article with style in the style magazine 1`] = `
                     <div
                       className="c5"
                       color="#696969"
-                      fontFamily="Roboto-Regular"
+                      fontFamily="GillSansMTStd-Medium"
                       fontSize={13}
                       lineHeight="17px"
                     >
@@ -3684,7 +3684,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   font-size: 13px;
   line-height: 15px;
   color: #696969;
@@ -4213,7 +4213,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
               <div
                 className="c5"
                 color="rgba(255, 255, 255, 1)"
-                fontFamily="Roboto-Regular"
+                fontFamily="GillSansMTStd-Medium"
                 fontSize={12}
                 fontWeight="400"
                 letterSpacing={1}
@@ -4393,7 +4393,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
                     <div
                       className="c5"
                       color="#696969"
-                      fontFamily="Roboto-Regular"
+                      fontFamily="GillSansMTStd-Medium"
                       fontSize={13}
                       lineHeight="17px"
                     >

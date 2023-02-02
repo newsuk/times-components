@@ -16,7 +16,7 @@ exports[`<ArticleStandard /> should render an article correctly 1`] = `
       class="sc-bwzfXH iKKeUw"
     >
       <p
-        class="sc-htpNat MOGoj"
+        class="sc-htpNat dtQRdf"
       >
         Some text label
       </p>
@@ -24,12 +24,12 @@ exports[`<ArticleStandard /> should render an article correctly 1`] = `
         Headline
       </div>
       <p
-        class="sc-bxivhb bJHcLn"
+        class="sc-bxivhb jpOhka"
       >
         August 20 2020, 1.00pm
       </p>
       <p
-        class="sc-ifAKCX hBknFI"
+        class="sc-ifAKCX bbXdqc"
       >
         Some author
       </p>

@@ -4,7 +4,7 @@ exports[`<SingleRelatedArticle> renders 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa jfCTOX"
+      class="sc-bdVaJa cHawYV"
     >
       <div
         class="sc-bwzfXH dFUiIq"
@@ -59,7 +59,7 @@ exports[`<SingleRelatedArticle> renders no image 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa jfCTOX"
+      class="sc-bdVaJa cHawYV"
     >
       <section>
         <a
