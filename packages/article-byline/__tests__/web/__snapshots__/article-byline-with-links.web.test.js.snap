@@ -5,7 +5,7 @@ exports[`1. single inline element 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 ggpYCw"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
   >
     Lindsay McIntosh, Scottish Political Editor
   </div>
@@ -17,13 +17,13 @@ exports[`2. with the author in the begining 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/camilla-long"
   >
     Camilla Long
   </a>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 ggpYCw"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
   >
     , Environment Editor
   </div>
@@ -35,12 +35,12 @@ exports[`3. with the author at the end 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 ggpYCw"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
   >
     RBS Six Nations, 
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/mike-atherton"
   >
     Mike Atherton
@@ -53,29 +53,29 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/camilla-long"
   >
     Camilla Long
   </a>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 ggpYCw"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
   >
      | 
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/mike-atherton"
   >
     Mike Atherton
   </a>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 ggpYCw"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
   >
      | 
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/alexandra-frean"
   >
     Alexandra Frean
@@ -88,29 +88,29 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/camilla-long"
   >
     Camilla Long
   </a>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 ggpYCw"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
   >
     , 
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/mike-atherton"
   >
     Mike Atherton
   </a>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 ggpYCw"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
   >
     , 
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/alexandra-frean"
   >
     Alexandra Frean
@@ -123,24 +123,24 @@ exports[`6. with multiple authors separated by spaces 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/camilla-long"
   >
     Camilla Long
   </a>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 ggpYCw"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 jnwPHu"
   >
      
   </div>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/mike-atherton"
   >
     Mike Atherton
   </a>
   <a
-    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 efouwj"
+    className="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fGCkRx"
     href="/profile/alexandra-frean"
   >
     Alexandra Frean

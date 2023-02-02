@@ -6,7 +6,7 @@ exports[`Article Label test on web renders ArticleLabel 1`] = `
   style={
     Object {
       "color": "#008347",
-      "fontFamily": "Roboto-Regular",
+      "fontFamily": "GillSansMTStd-Medium",
       "fontSize": 12,
       "fontWeight": "400",
       "letterSpacing": 1,
@@ -27,7 +27,7 @@ exports[`Article Label test on web renders ArticleLabel with GraphQL Colour type
   style={
     Object {
       "color": "#008347",
-      "fontFamily": "Roboto-Regular",
+      "fontFamily": "GillSansMTStd-Medium",
       "fontSize": 12,
       "fontWeight": "400",
       "letterSpacing": 1,

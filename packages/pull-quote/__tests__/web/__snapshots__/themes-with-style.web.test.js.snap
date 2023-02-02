@@ -95,7 +95,7 @@ exports[`1. pull quote in culture magazine 1`] = `
       <div
         className="c1"
         color="#696969"
-        fontFamily="Roboto-Regular"
+        fontFamily="GillSansMTStd-Medium"
         fontSize={13}
         lineHeight="13px"
         marginBottom={0}
@@ -105,7 +105,7 @@ exports[`1. pull quote in culture magazine 1`] = `
       <div
         className="c1"
         color="#696969"
-        fontFamily="Roboto-Regular"
+        fontFamily="GillSansMTStd-Medium"
         fontSize={13}
         lineHeight="13px"
         marginBottom={0}
@@ -212,7 +212,7 @@ exports[`2. pull quote in style magazine 1`] = `
       <div
         className="c1"
         color="#696969"
-        fontFamily="Roboto-Regular"
+        fontFamily="GillSansMTStd-Medium"
         fontSize={13}
         lineHeight="13px"
         marginBottom={0}
@@ -222,7 +222,7 @@ exports[`2. pull quote in style magazine 1`] = `
       <div
         className="c1"
         color="#696969"
-        fontFamily="Roboto-Regular"
+        fontFamily="GillSansMTStd-Medium"
         fontSize={13}
         lineHeight="13px"
         marginBottom={0}
@@ -329,7 +329,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
       <div
         className="c1"
         color="#696969"
-        fontFamily="Roboto-Regular"
+        fontFamily="GillSansMTStd-Medium"
         fontSize={13}
         lineHeight="13px"
         marginBottom={0}
@@ -339,7 +339,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
       <div
         className="c1"
         color="#696969"
-        fontFamily="Roboto-Regular"
+        fontFamily="GillSansMTStd-Medium"
         fontSize={13}
         lineHeight="13px"
         marginBottom={0}
