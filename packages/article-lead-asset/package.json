@@ -49,7 +49,7 @@
   "dependencies": {
     "@times-components/jest-serializer": "3.5.4",
     "@times-components/test-utils": "2.4.0",
-    "@times-components/utils": "6.15.11",
+    "@times-components/utils": "6.15.12",
     "@times-components/video": "4.14.3",
     "prop-types": "15.7.2"
   },
