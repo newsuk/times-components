@@ -840,7 +840,7 @@ exports[`full article with style 1`] = `
                   <div
                     className="c8"
                     color="#1D1D1B"
-                    fontFamily="Roboto-Regular"
+                    fontFamily="GillSansMTStd-Medium"
                     fontSize={12}
                     fontWeight="400"
                     letterSpacing={1}
@@ -890,7 +890,7 @@ exports[`full article with style 1`] = `
                     <div
                       className="c8"
                       color="#696969"
-                      fontFamily="Roboto-Regular"
+                      fontFamily="GillSansMTStd-Medium"
                       fontSize={13}
                       lineHeight="15px"
                     >
@@ -911,7 +911,7 @@ exports[`full article with style 1`] = `
                     <div
                       className="c8"
                       color="#696969"
-                      fontFamily="Roboto-Regular"
+                      fontFamily="GillSansMTStd-Medium"
                       fontSize={13}
                       lineHeight="15px"
                     >
@@ -942,7 +942,7 @@ exports[`full article with style 1`] = `
                 <div
                   className="c8"
                   color="#696969"
-                  fontFamily="Roboto-Regular"
+                  fontFamily="GillSansMTStd-Medium"
                   fontSize={13}
                   lineHeight="15px"
                 >
@@ -955,7 +955,7 @@ exports[`full article with style 1`] = `
                 <div
                   className="c8"
                   color="#696969"
-                  fontFamily="Roboto-Regular"
+                  fontFamily="GillSansMTStd-Medium"
                   fontSize={13}
                   lineHeight="15px"
                 >
@@ -1077,7 +1077,7 @@ exports[`full article with style 1`] = `
                       <div
                         className="c8"
                         color="#696969"
-                        fontFamily="Roboto-Regular"
+                        fontFamily="GillSansMTStd-Medium"
                         fontSize={13}
                         lineHeight="17px"
                       >

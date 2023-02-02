@@ -46,7 +46,7 @@ exports[`Render comments label, when comments are loaded 1`] = `
 }
 
 .c4 {
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
@@ -54,7 +54,7 @@ exports[`Render comments label, when comments are loaded 1`] = `
 }
 
 .c5 {
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -226,7 +226,7 @@ exports[`User States RA Users 1`] = `
   cursor: pointer;
   background-color: #008387;
   color: white;
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   width: 127px;
   height: 48px;
   font-size: 16px;
@@ -315,7 +315,7 @@ exports[`User States enabled comments 1`] = `
 }
 
 .c4 {
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
@@ -323,7 +323,7 @@ exports[`User States enabled comments 1`] = `
 }
 
 .c5 {
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -448,7 +448,7 @@ exports[`disabled comments 1`] = `
   -webkit-text-decoration: underline;
   text-decoration: underline;
   color: #006699;
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   font-size: 13px;
 }
 
@@ -459,7 +459,7 @@ exports[`disabled comments 1`] = `
 
 .c2 {
   color: #696969;
-  font-family: "Roboto-Regular";
+  font-family: "GillSansMTStd-Medium";
   font-size: 13px;
   margin: 0;
   padding-bottom: 30px;
@@ -504,7 +504,7 @@ exports[`disabled comments 1`] = `
       <a
         class="c3"
         href="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular; font-size: 13px;"
+        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: GillSansMTStd-Medium; font-size: 13px;"
       >
         here
       </a>
@@ -560,7 +560,7 @@ exports[`single comment 1`] = `
 }
 
 .c4 {
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
@@ -568,7 +568,7 @@ exports[`single comment 1`] = `
 }
 
 .c5 {
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -739,7 +739,7 @@ exports[`zero comments 1`] = `
 }
 
 .c4 {
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
@@ -747,7 +747,7 @@ exports[`zero comments 1`] = `
 }
 
 .c5 {
-  font-family: Roboto-Regular;
+  font-family: GillSansMTStd-Medium;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;

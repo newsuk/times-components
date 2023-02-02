@@ -516,7 +516,7 @@ exports[`2. article list 1`] = `
               <div
                 className="c4"
                 color="#696969"
-                fontFamily="Roboto-Regular"
+                fontFamily="GillSansMTStd-Medium"
                 fontSize={15}
                 lineHeight="15px"
                 paddingTop={4}

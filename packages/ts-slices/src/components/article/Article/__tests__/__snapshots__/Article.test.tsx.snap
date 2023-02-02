@@ -16,7 +16,7 @@ exports[`<Article /> should render an article correctly 1`] = `
       class="sc-bwzfXH iKKeUw"
     >
       <p
-        class="sc-htpNat MOGoj"
+        class="sc-htpNat dtQRdf"
       >
         Some text label
       </p>
@@ -24,7 +24,7 @@ exports[`<Article /> should render an article correctly 1`] = `
         Headline
       </div>
       <p
-        class="sc-ifAKCX cxDtmy"
+        class="sc-ifAKCX hVJTTS"
       >
         1 hour ago
       </p>

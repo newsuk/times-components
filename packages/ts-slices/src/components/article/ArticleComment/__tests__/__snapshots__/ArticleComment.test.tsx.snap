@@ -20,7 +20,7 @@ exports[`<ArticleComment /> should render a comment article corrctly 1`] = `
       class="sc-bwzfXH iKKeUw"
     >
       <p
-        class="sc-htpNat MOGoj"
+        class="sc-htpNat dtQRdf"
       >
         Some text label
       </p>
