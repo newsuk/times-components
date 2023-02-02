@@ -15,7 +15,7 @@ const isValidEnvironment = (name: string) =>
   ['local-prod', 'pr', 'uat', 'staging', 'prod'].includes(name);
 
 export const getSectionText = (section: string): string => {
-  if (['scotland', 'ireland'].includes(section)) {
+  if (['scotland', 'ireland', 'times2'].includes(section)) {
     return section.charAt(0).toUpperCase() + section.slice(1);
   }
   return section;
