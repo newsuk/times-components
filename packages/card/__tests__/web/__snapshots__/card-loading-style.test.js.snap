@@ -23,7 +23,6 @@ exports[`1. card loading state 1`] = `
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
 }
-
 .c1 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -41,7 +40,6 @@ exports[`1. card loading state 1`] = `
   position: relative;
   z-index: 0;
 }
-
 .c2 {
   display: block;
   opacity: 0;
@@ -51,7 +49,6 @@ exports[`1. card loading state 1`] = `
   width: 100%;
   z-index: 2;
 }
-
 .c3 {
   display: block;
   opacity: 1;
@@ -61,7 +58,6 @@ exports[`1. card loading state 1`] = `
   width: 100%;
   z-index: 1;
 }
-
 .c4 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -85,7 +81,6 @@ exports[`1. card loading state 1`] = `
   min-width: 100%;
   min-height: 84px;
 }
-
 <Animations__FadeIn>
   <StyledComponent
     forwardedComponent={
@@ -93,7 +88,7 @@ exports[`1. card loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-je5757-0",
+          "componentId": "Animations__FadeIn-w31u4-0",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -128,10 +123,10 @@ exports[`1. card loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-o5ytee-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-je5757-0",
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -358,7 +353,6 @@ exports[`2. card with reversed loading state 1`] = `
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
 }
-
 .c1 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -376,7 +370,6 @@ exports[`2. card with reversed loading state 1`] = `
   position: relative;
   z-index: 0;
 }
-
 .c3 {
   display: block;
   opacity: 0;
@@ -386,7 +379,6 @@ exports[`2. card with reversed loading state 1`] = `
   width: 100%;
   z-index: 2;
 }
-
 .c4 {
   display: block;
   opacity: 1;
@@ -396,7 +388,6 @@ exports[`2. card with reversed loading state 1`] = `
   width: 100%;
   z-index: 1;
 }
-
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -420,7 +411,6 @@ exports[`2. card with reversed loading state 1`] = `
   min-width: 100%;
   min-height: 84px;
 }
-
 <Animations__FadeIn>
   <StyledComponent
     forwardedComponent={
@@ -428,7 +418,7 @@ exports[`2. card with reversed loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-je5757-0",
+          "componentId": "Animations__FadeIn-w31u4-0",
           "isStatic": false,
           "lastClassName": "c0",
           "rules": Array [
@@ -463,10 +453,10 @@ exports[`2. card with reversed loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-o5ytee-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-je5757-0",
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
