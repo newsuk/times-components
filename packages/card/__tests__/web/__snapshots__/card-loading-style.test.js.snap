@@ -23,6 +23,7 @@ exports[`1. card loading state 1`] = `
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
 }
+
 .c1 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -40,6 +41,7 @@ exports[`1. card loading state 1`] = `
   position: relative;
   z-index: 0;
 }
+
 .c2 {
   display: block;
   opacity: 0;
@@ -49,6 +51,7 @@ exports[`1. card loading state 1`] = `
   width: 100%;
   z-index: 2;
 }
+
 .c3 {
   display: block;
   opacity: 1;
@@ -58,6 +61,7 @@ exports[`1. card loading state 1`] = `
   width: 100%;
   z-index: 1;
 }
+
 .c4 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -81,6 +85,7 @@ exports[`1. card loading state 1`] = `
   min-width: 100%;
   min-height: 84px;
 }
+
 <Animations__FadeIn>
   <StyledComponent
     forwardedComponent={
@@ -353,6 +358,7 @@ exports[`2. card with reversed loading state 1`] = `
   -webkit-animation: eMLfYp 0.3s ease-in-out;
   animation: eMLfYp 0.3s ease-in-out;
 }
+
 .c1 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -370,6 +376,7 @@ exports[`2. card with reversed loading state 1`] = `
   position: relative;
   z-index: 0;
 }
+
 .c3 {
   display: block;
   opacity: 0;
@@ -379,6 +386,7 @@ exports[`2. card with reversed loading state 1`] = `
   width: 100%;
   z-index: 2;
 }
+
 .c4 {
   display: block;
   opacity: 1;
@@ -388,6 +396,7 @@ exports[`2. card with reversed loading state 1`] = `
   width: 100%;
   z-index: 1;
 }
+
 .c2 {
   border: 0px solid black;
   box-sizing: border-box;
@@ -411,6 +420,7 @@ exports[`2. card with reversed loading state 1`] = `
   min-width: 100%;
   min-height: 84px;
 }
+
 <Animations__FadeIn>
   <StyledComponent
     forwardedComponent={
