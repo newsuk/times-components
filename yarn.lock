@@ -1631,6 +1631,13 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
+"@babel/runtime@^7.15.4":
+  version "7.20.13"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.20.13.tgz#7055ab8a7cff2b8f6058bf6ae45ff84ad2aded4b"
+  integrity sha512-gt3PKXs0DBoL9xCvOIIZ2NEqAGZqHjAnmVbfQtB620V0uReIQutpel14KcneZuer7UioY8ALKZ7iocavvzTNFA==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@babel/standalone@^7.4.5":
   version "7.14.3"
   resolved "https://registry.yarnpkg.com/@babel/standalone/-/standalone-7.14.3.tgz#0b65ed93c6b5a911d1e62dc10e7ea73d201d6783"
@@ -1765,6 +1772,14 @@
   dependencies:
     debug "^3.1.0"
     lodash.once "^4.1.1"
+
+"@emotion-icons/bootstrap@3.27.0":
+  version "3.27.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/bootstrap/-/bootstrap-3.27.0.tgz#53cde4cc341e0aa79f9a717ee78f2502c9bc1ae5"
+  integrity sha512-ZLUHpiXI/Lsej4i8T9do9Vrn5LGdcYtDAPz09cyHlp5cvEVkncgqAcGmeDVMnweNBf6wB+QzL33IqZiD43S/HA==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "@emotion-icons/emotion-icon" "4.1.0"
 
 "@emotion-icons/emotion-icon@4.0.0":
   version "4.0.0"

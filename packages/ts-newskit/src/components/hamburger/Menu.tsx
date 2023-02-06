@@ -1,13 +1,58 @@
 import React, { useState } from 'react';
-import { Menu, MenuSub, MenuItem, MenuDivider } from 'newskit';
+import { Menu, MenuSub, MenuItem, MenuDivider, Block, TextField, customToNewsKitIcon, Button } from 'newskit';
 import { ThemeProvider } from 'newskit/esm/theme';
+import { Search } from '@emotion-icons/bootstrap/Search';
+import styled from 'styled-components';
 
 import { TimesWebLightTheme } from '../../theme';
+
+const SearchIcon = customToNewsKitIcon(
+    'SearchIcon',
+    props => <Search {...props} />,
+);
+
+const MenuNav = styled(Menu)`
+  &.menuNav {
+    overflow-y: scroll;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 0;
+    max-width: 290px;
+    z-index: 9;
+    &.showMenu {
+      width: 100%;
+    }
+  }
+`;
+
+const NavButton = styled.button`
+  &.navButton {
+    position: fixed;
+    top: 0;
+  }
+  &.hideButton {
+    display: none
+  }
+`;
 
 const more = ['E-paper', 'Newsletters', 'Magazine', 'TV Guide', 'Times +', 'Times Radio', 'Podcasts', 'Money Mentor', 'Times Travel', 'Wine Club', 'Rich List', 'Uni Guide', 'School Guide', 'Best places to live', 'Best places to stay', 'Growth 100', 'Announcements'];
 
 export const NewMenu: React.FC<{}> = () => {
+  const [navbarVisibility, setNavbarVisibility] = useState(false)
   const [expandedL1, setExpandedL1] = useState('');
+
+  const handleOpen = () => {
+    setNavbarVisibility(true)
+  }
+
+  const handleClose = () => {
+    setNavbarVisibility(false)
+  };
+
   const href = "hello"
   const L1Overrides = {
         stylePreset: 'menuItemL1',
@@ -16,10 +61,27 @@ export const NewMenu: React.FC<{}> = () => {
     stylePreset: 'menuItemL2'
   };
 
-  return ( 
+  return (
     <ThemeProvider theme={TimesWebLightTheme}>
-    <div style={{ width: "300px"}}>
-        <Menu aria-label="menu-vertical" vertical align="spaceBetween" overrides={{spaceInline: 'space000'}}>
+      <nav style={{width: '300px'}}>
+      <NavButton onClick={handleOpen} className={`navButton ${navbarVisibility ? " hideButton" : " "}`}>{"Open"}</NavButton>
+        <MenuNav className={`menuNav ${navbarVisibility ? " showMenu" : ""}`} aria-label="menu-vertical" vertical align="spaceBetween" overrides={{spaceInline: 'space000'}}>
+        <div style={{ display: 'flex', flexDirection: 'row'}}>
+        <button onClick={handleClose}>X</button>
+        <div>Placeholder</div>
+        </div>
+        <div style={{ display: 'flex', flexDirection: 'row'}}>
+        <Button overrides={{stylePreset: "buttonSolidSecondary", width: '100%'}}>Login</Button>
+        <Button overrides={{stylePreset: "buttonSolidPrimary", width: '100%'}}>Subscribe</Button>
+        </div>
+        <TextField
+        id="icon-placement"
+        aria-describedby="icon-placement-at"
+        placeholder="Search"
+        startEnhancer={
+          <SearchIcon overrides={{size: 'iconSize010'}} />
+        }
+      />
         <MenuItem href={href} id="vertical-home" overrides={{...L1Overrides}}>
           Home
         </MenuItem>
@@ -167,15 +229,19 @@ export const NewMenu: React.FC<{}> = () => {
               <MenuDivider />
             </MenuSub>
             <MenuDivider />
-            <div>More</div>
+            <Block stylePreset="blockWrapper"
+              paddingInline="space040"
+              paddingBlock="space040">
+                More
+            </Block>
             {more.map(item => (
               <>
               <MenuItem href={href} id={`vertical-getting-${item}`} overrides={{...L1Overrides}}>{item}</MenuItem>
               <MenuDivider />
               </>
             ))}
-        </Menu>
-      </div>
+        </MenuNav>
+        </nav>
       </ThemeProvider>
   )
 }
