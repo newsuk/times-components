@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "7.13.49",
+  "version": "7.13.50",
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",
@@ -38,7 +38,7 @@
     "@times-components/provider-test-tools": "1.27.1",
     "@times-components/storybook": "4.5.10",
     "@times-components/tealium-utils": "0.8.1",
-    "@times-components/user-state": "0.4.14",
+    "@times-components/user-state": "0.4.15",
     "@times-components/webpack-configurator": "2.1.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
@@ -52,17 +52,17 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/ad": "2.21.14",
-    "@times-components/article-in-depth": "3.65.1",
-    "@times-components/article-magazine-comment": "3.63.1",
-    "@times-components/article-magazine-standard": "3.63.1",
-    "@times-components/article-main-comment": "2.59.1",
-    "@times-components/article-main-standard": "3.68.1",
-    "@times-components/context": "1.10.12",
-    "@times-components/message-bar": "0.7.15",
+    "@times-components/ad": "2.21.15",
+    "@times-components/article-in-depth": "3.65.2",
+    "@times-components/article-magazine-comment": "3.63.2",
+    "@times-components/article-magazine-standard": "3.63.2",
+    "@times-components/article-main-comment": "2.59.2",
+    "@times-components/article-main-standard": "3.68.2",
+    "@times-components/context": "1.10.13",
+    "@times-components/message-bar": "0.7.16",
     "@times-components/provider": "1.33.10",
-    "@times-components/responsive": "0.14.12",
-    "@times-components/ts-styleguide": "1.39.1"
+    "@times-components/responsive": "0.14.13",
+    "@times-components/ts-styleguide": "1.39.2"
   },
   "resolutions": {
     "react": "16.9.0",

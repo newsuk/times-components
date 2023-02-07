@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.2](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.37.1...@times-components/article-comments@0.37.2) (2023-02-02)
+
+
+### Reverts
+
+* Revert "feat(TD-2979): replace gillSans with roboto (#3226)" (#3228) ([834129f](https://github.com/newsuk/times-components/commit/834129f471197d50b1446a460e383910444aba15)), closes [#3226](https://github.com/newsuk/times-components/issues/3226) [#3228](https://github.com/newsuk/times-components/issues/3228)
+
+
+
+
+
 ## [0.37.1](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.37.0...@times-components/article-comments@0.37.1) (2023-02-02)
 
 **Note:** Version bump only for package @times-components/article-comments

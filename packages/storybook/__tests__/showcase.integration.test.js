@@ -1,6 +1,6 @@
 import { storiesOf } from "@storybook/react";
 import * as actions from "@storybook/addon-actions";
-import * as builtInKnobs from "@storybook/addon-knobs/react";
+import * as builtInKnobs from "@storybook/addon-knobs";
 import showcaseToStoryBook from "../src/showcase-to-storybook";
 
 jest.mock("../src/showcase-to-storybook");

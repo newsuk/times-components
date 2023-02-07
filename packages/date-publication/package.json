@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.24.13",
+  "version": "0.24.14",
   "description": "Date and Publication properties",
   "main": "dist/date-publication",
   "dev": "src/date-publication",
@@ -38,7 +38,7 @@
     "@times-components/jest-configurator-web": "0.8.0",
     "@times-components/storybook": "4.5.10",
     "@times-components/test-utils": "2.4.0",
-    "@times-components/utils": "6.15.13",
+    "@times-components/utils": "6.15.14",
     "@times-components/webpack-configurator": "2.1.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
@@ -52,7 +52,7 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/ts-styleguide": "1.39.1",
+    "@times-components/ts-styleguide": "1.39.2",
     "date-fns": "2.28.0",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"

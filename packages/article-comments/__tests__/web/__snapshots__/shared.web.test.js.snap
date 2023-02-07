@@ -2,132 +2,6 @@
 
 exports[`Render comments label, when comments are loaded 1`] = `
 <DocumentFragment>
-  .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
-}
-
-.c1.info {
-  background-color: #bedeed;
-  border-left: 4px solid #1573a2;
-}
-
-.c1.info svg {
-  fill: #1573a2;
-}
-
-.c1.warning {
-  background-color: #ffeecc;
-  border-left: 4px solid #ffa300;
-}
-
-.c1.warning svg {
-  fill: #ffa300;
-}
-
-.c1.error {
-  background-color: #ffd6d6;
-  border-left: 4px solid #df0000;
-}
-
-.c1.error svg {
-  fill: #df0000;
-}
-
-.c2 {
-  margin: 12px 0 45px 12px;
-}
-
-.c3 {
-  margin: 12px;
-}
-
-.c4 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  margin-bottom: 6px;
-}
-
-.c5 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.c5 a {
-  color: #333333;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
-}
-
-<div
-    class="c0"
-  >
-    <div
-      class="info c1"
-    >
-      <div
-        class="c2"
-      >
-        <svg
-          fill="none"
-          height="20"
-          viewBox="0 0 20 20"
-          width="20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            clip-rule="evenodd"
-            d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
-            fill-rule="evenodd"
-          />
-        </svg>
-      </div>
-      <div
-        class="c3"
-      >
-        <div
-          class="c4"
-        >
-          Real-name comments
-        </div>
-        <div
-          class="c5"
-        >
-          Our policy is now for commenters to use real names. You may 
-          <a
-            href="https://home.thetimes.co.uk/"
-          >
-            edit your screen name here
-          </a>
-          .
-        </div>
-      </div>
-    </div>
-  </div>
   .c0 {
   margin-left: auto;
   margin-right: auto;
@@ -271,132 +145,6 @@ exports[`User States RA Users 1`] = `
 
 exports[`User States enabled comments 1`] = `
 <DocumentFragment>
-  .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
-}
-
-.c1.info {
-  background-color: #bedeed;
-  border-left: 4px solid #1573a2;
-}
-
-.c1.info svg {
-  fill: #1573a2;
-}
-
-.c1.warning {
-  background-color: #ffeecc;
-  border-left: 4px solid #ffa300;
-}
-
-.c1.warning svg {
-  fill: #ffa300;
-}
-
-.c1.error {
-  background-color: #ffd6d6;
-  border-left: 4px solid #df0000;
-}
-
-.c1.error svg {
-  fill: #df0000;
-}
-
-.c2 {
-  margin: 12px 0 45px 12px;
-}
-
-.c3 {
-  margin: 12px;
-}
-
-.c4 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  margin-bottom: 6px;
-}
-
-.c5 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.c5 a {
-  color: #333333;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
-}
-
-<div
-    class="c0"
-  >
-    <div
-      class="info c1"
-    >
-      <div
-        class="c2"
-      >
-        <svg
-          fill="none"
-          height="20"
-          viewBox="0 0 20 20"
-          width="20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            clip-rule="evenodd"
-            d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
-            fill-rule="evenodd"
-          />
-        </svg>
-      </div>
-      <div
-        class="c3"
-      >
-        <div
-          class="c4"
-        >
-          Real-name comments
-        </div>
-        <div
-          class="c5"
-        >
-          Our policy is now for commenters to use real names. You may 
-          <a
-            href="https://home.thetimes.co.uk/"
-          >
-            edit your screen name here
-          </a>
-          .
-        </div>
-      </div>
-    </div>
-  </div>
   .c0 {
   margin-left: auto;
   margin-right: auto;
@@ -435,24 +183,7 @@ exports[`User States enabled comments 1`] = `
 
 exports[`disabled comments 1`] = `
 <DocumentFragment>
-  .c3 {
-  border: 0px solid black;
-  box-sizing: border-box;
-  color: rgb(0,0,0);
-  display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
-  margin: 0px;
-  padding: 0px;
-  white-space: pre-wrap;
-  overflow-wrap: break-word;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  color: #006699;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
-}
-
-.c0 {
+  .c0 {
   margin-left: auto;
   margin-right: auto;
 }
@@ -475,6 +206,23 @@ exports[`disabled comments 1`] = `
   padding-bottom: 5px;
   padding-top: 30px;
   text-align: center;
+}
+
+.c3 {
+  border: 0px solid black;
+  box-sizing: border-box;
+  color: rgb(0,0,0);
+  display: inline;
+  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  margin: 0px;
+  padding: 0px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  color: #006699;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
 }
 
 @media (min-width:768px) {
@@ -516,132 +264,6 @@ exports[`disabled comments 1`] = `
 
 exports[`single comment 1`] = `
 <DocumentFragment>
-  .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
-}
-
-.c1.info {
-  background-color: #bedeed;
-  border-left: 4px solid #1573a2;
-}
-
-.c1.info svg {
-  fill: #1573a2;
-}
-
-.c1.warning {
-  background-color: #ffeecc;
-  border-left: 4px solid #ffa300;
-}
-
-.c1.warning svg {
-  fill: #ffa300;
-}
-
-.c1.error {
-  background-color: #ffd6d6;
-  border-left: 4px solid #df0000;
-}
-
-.c1.error svg {
-  fill: #df0000;
-}
-
-.c2 {
-  margin: 12px 0 45px 12px;
-}
-
-.c3 {
-  margin: 12px;
-}
-
-.c4 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  margin-bottom: 6px;
-}
-
-.c5 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.c5 a {
-  color: #333333;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
-}
-
-<div
-    class="c0"
-  >
-    <div
-      class="info c1"
-    >
-      <div
-        class="c2"
-      >
-        <svg
-          fill="none"
-          height="20"
-          viewBox="0 0 20 20"
-          width="20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            clip-rule="evenodd"
-            d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
-            fill-rule="evenodd"
-          />
-        </svg>
-      </div>
-      <div
-        class="c3"
-      >
-        <div
-          class="c4"
-        >
-          Real-name comments
-        </div>
-        <div
-          class="c5"
-        >
-          Our policy is now for commenters to use real names. You may 
-          <a
-            href="https://home.thetimes.co.uk/"
-          >
-            edit your screen name here
-          </a>
-          .
-        </div>
-      </div>
-    </div>
-  </div>
   .c0 {
   margin-left: auto;
   margin-right: auto;
@@ -695,132 +317,6 @@ Array [
 
 exports[`zero comments 1`] = `
 <DocumentFragment>
-  .c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
-}
-
-.c1.info {
-  background-color: #bedeed;
-  border-left: 4px solid #1573a2;
-}
-
-.c1.info svg {
-  fill: #1573a2;
-}
-
-.c1.warning {
-  background-color: #ffeecc;
-  border-left: 4px solid #ffa300;
-}
-
-.c1.warning svg {
-  fill: #ffa300;
-}
-
-.c1.error {
-  background-color: #ffd6d6;
-  border-left: 4px solid #df0000;
-}
-
-.c1.error svg {
-  fill: #df0000;
-}
-
-.c2 {
-  margin: 12px 0 45px 12px;
-}
-
-.c3 {
-  margin: 12px;
-}
-
-.c4 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 16px;
-  margin-bottom: 6px;
-}
-
-.c5 {
-  font-family: GillSansMTStd-Medium;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.c5 a {
-  color: #333333;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-}
-
-.c0 {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
-}
-
-<div
-    class="c0"
-  >
-    <div
-      class="info c1"
-    >
-      <div
-        class="c2"
-      >
-        <svg
-          fill="none"
-          height="20"
-          viewBox="0 0 20 20"
-          width="20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            clip-rule="evenodd"
-            d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM9 15V9H11V15H9ZM9 5V7H11V5H9Z"
-            fill-rule="evenodd"
-          />
-        </svg>
-      </div>
-      <div
-        class="c3"
-      >
-        <div
-          class="c4"
-        >
-          Real-name comments
-        </div>
-        <div
-          class="c5"
-        >
-          Our policy is now for commenters to use real names. You may 
-          <a
-            href="https://home.thetimes.co.uk/"
-          >
-            edit your screen name here
-          </a>
-          .
-        </div>
-      </div>
-    </div>
-  </div>
   .c0 {
   margin-left: auto;
   margin-right: auto;

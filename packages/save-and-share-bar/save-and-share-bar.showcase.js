@@ -1,5 +1,5 @@
 import React from "react";
-import { boolean } from "@storybook/addon-knobs/react";
+import { boolean } from "@storybook/addon-knobs";
 import { scales } from "@times-components/ts-styleguide";
 import { MessageManager, MessageContext } from "@times-components/message-bar";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
