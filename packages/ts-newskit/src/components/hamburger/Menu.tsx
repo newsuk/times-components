@@ -1,17 +1,35 @@
 // @ts-nocheck
 import React, { useState } from 'react';
-import { Menu, MenuSub, MenuItem, MenuDivider, Block, TextField, customToNewsKitIcon, Button } from 'newskit';
+import { Menu, MenuSub, MenuItem, MenuDivider, Block, TextField, customToNewsKitIcon, Button, IconButton } from 'newskit';
 import { ThemeProvider } from 'newskit/esm/theme';
-import { Search } from '@emotion-icons/bootstrap/Search';
 import styled from 'styled-components';
 import mainNavItems from './menu-items.json';
 import accountItems from './account-items.json';
+import BurgerIcon from './assets/BurgerIcon';
+import SearchIcon from './assets/SearchIcon';
+import CloseIcon from './assets/CloseIcon';
 
 import { TimesWebLightTheme } from '../../theme';
+import Masthead from './assets/Masthead';
 
-const SearchIcon = customToNewsKitIcon(
-    'SearchIcon',
-    props => <Search {...props} />,
+const NewsKitSearchIcon = customToNewsKitIcon(
+    'NewskitSearchIcon',
+    props => <SearchIcon {...props} />,
+);
+
+const NewsKitBurger = customToNewsKitIcon(
+  'NewsKitBurger',
+  props => <BurgerIcon {...props}/>
+);
+
+const NewsKitMasthead = customToNewsKitIcon(
+  'NewsKitMasthead',
+  props => <Masthead {...props} />
+);
+
+const NewsKitCloseIcon = customToNewsKitIcon(
+  'NewsKitCloseIcon',
+  props => <CloseIcon />
 );
 
 const StyledMenu = styled(Menu)`
@@ -28,6 +46,8 @@ const StyledButton = styled(Button)`
 `
 
 const MenuNav = styled(Menu)`
+  padding-left: 12px;
+  padding-right: 12px;
   &.menuNav {
     overflow-y: scroll;
     background-color: #151515;
@@ -45,7 +65,7 @@ const MenuNav = styled(Menu)`
   }
 `;
 
-const NavButton = styled.button`
+const NavButton = styled(IconButton)`
   &.navButton {
     position: fixed;
     top: 0;
@@ -99,7 +119,7 @@ export const NewMenu: React.FC<{}> = ({ loggedIn }) => {
         aria-describedby="icon-placement-at"
         placeholder="Search"
         startEnhancer={
-          <SearchIcon overrides={{size: 'iconSize010', stylePreset: 'searchBarEnhancer'}} />
+          <NewsKitSearchIcon overrides={{size: 'iconSize010', stylePreset: 'searchBarEnhancer'}} />
         }
         overrides={{ stylePreset: 'searchBar' }}
       />
@@ -123,9 +143,12 @@ export const NewMenu: React.FC<{}> = ({ loggedIn }) => {
             overrides={{...L1Overrides}}
           >
             {item.items.map(i => (
+              <>
               <MenuItem href={i.url} id={`vertical-${i.slug}`} overrides={{...L2Overrides}}>
               {i.title}
             </MenuItem>
+            <MenuDivider />
+            </>
             ))}
           </MenuSub>
           <MenuDivider />
@@ -142,16 +165,18 @@ export const NewMenu: React.FC<{}> = ({ loggedIn }) => {
   )
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
-      <div style={{ width: '320px', backgroundColor: '#151515'}}>
-      <NavButton onClick={handleOpen} className={`navButton ${navbarVisibility ? " hideButton" : " "}`}>{"Open"}</NavButton>
-        <MenuNav id="Hi bibi" className={`menuNav ${navbarVisibility ? " showMenu" : ""}`} aria-label="menu-vertical" vertical align="spaceBetween" overrides={{spaceInline: 'space000', width: '100%'}}>
+      <NavButton onClick={handleOpen} className={`navButton ${navbarVisibility ? " hideButton" : " "}`}>
+        <NewsKitBurger/>
+      </NavButton>
+        <MenuNav className={`menuNav ${navbarVisibility ? " showMenu" : ""}`} aria-label="menu-vertical" vertical align="spaceBetween" overrides={{spaceInline: 'space000', width: '100%'}}>
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center'}}>
-        <Block paddingInline="space070"
-                  paddingBlock="space010">
-          <Button overrides={{stylePreset: "buttonSolidSecondary"}} onClick={handleClose}>X
-          </Button>
+        <Block paddingInline="space000"
+                  paddingBlock="space000">
+          <IconButton overrides={{stylePreset: "buttonSolidSecondary", width: '50px', height: '50px'}} onClick={handleClose}>
+          <NewsKitCloseIcon />
+          </IconButton>
         </Block>
-        <img style={{ height: '30px'}} src="https://globalstore.thetimes.co.uk/wp-content/themes/wp-storefront-global/imgs/TOL-masterhead-2017_white_logo.png"></img>
+        <NewsKitMasthead />
         </div>
         {getNavButtons()}
             {getNavItems(navigationData.menuItems)}
@@ -169,7 +194,6 @@ export const NewMenu: React.FC<{}> = ({ loggedIn }) => {
                 ) : null}
             
         </MenuNav>
-        </div>
       </ThemeProvider>
   )
 }

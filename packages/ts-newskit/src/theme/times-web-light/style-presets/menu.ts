@@ -29,10 +29,14 @@ export const menuStylePresets = {
     },
     hover: {
       backgroundColor: '#333333'
+    },
+    active: {
+      backgroundColor: '#333333'
     }
   },
   divider: {
     base: {
+      color: '#333333',
       borderColor: '#333333'
     }
   },
@@ -47,7 +51,8 @@ export const menuStylePresets = {
     base: {
       marginBottom: '0px',
       backgroundColor: '#333333',
-      color: '#9C9C9C'
+      color: '#9C9C9C',
+      borderRadius: '3px'
     },
   },
   searchBarEnhancer: {
