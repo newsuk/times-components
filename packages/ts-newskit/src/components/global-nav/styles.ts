@@ -1,6 +1,6 @@
-import { styled } from 'newskit';
+import { getColorCssFromTheme, styled } from 'newskit';
 
-export const NavigationContainer = styled.div`
-  padding: 20px;
-  background-color: hotpink;
+export const TopNavContainer = styled.div`
+  height: 60px;
+  ${getColorCssFromTheme('backgroundColor', 'interface060')};
 `;
