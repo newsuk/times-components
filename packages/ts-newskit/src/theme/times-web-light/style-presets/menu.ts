@@ -54,10 +54,5 @@ export const menuStylePresets = {
       color: '#9C9C9C',
       borderRadius: '3px'
     },
-  },
-  searchBarEnhancer: {
-    base: {
-      color: '#9C9C9C'
-    }
   }
 };

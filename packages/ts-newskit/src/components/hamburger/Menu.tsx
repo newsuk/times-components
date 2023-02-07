@@ -5,75 +5,11 @@ import { ThemeProvider } from 'newskit/esm/theme';
 import styled from 'styled-components';
 import mainNavItems from './menu-items.json';
 import accountItems from './account-items.json';
-import BurgerIcon from './assets/BurgerIcon';
-import SearchIcon from './assets/SearchIcon';
-import CloseIcon from './assets/CloseIcon';
+import { NewsKitBurger, NewsKitMasthead, NewsKitCloseIcon, NewsKitSearchIcon } from './icons';
+import { StyledMenu, MenuNav, StyledButton, NavButton } from './styles';
 
 import { TimesWebLightTheme } from '../../theme';
 import Masthead from './assets/Masthead';
-
-const NewsKitSearchIcon = customToNewsKitIcon(
-    'NewskitSearchIcon',
-    props => <SearchIcon {...props} />,
-);
-
-const NewsKitBurger = customToNewsKitIcon(
-  'NewsKitBurger',
-  props => <BurgerIcon {...props}/>
-);
-
-const NewsKitMasthead = customToNewsKitIcon(
-  'NewsKitMasthead',
-  props => <Masthead {...props} />
-);
-
-const NewsKitCloseIcon = customToNewsKitIcon(
-  'NewsKitCloseIcon',
-  props => <CloseIcon />
-);
-
-const StyledMenu = styled(Menu)`
-  ul {
-    justify-content: space-around;
-  }
-  li {
-    width: 100%;
-  }
-`
-
-const StyledButton = styled(Button)`
-  border-radius: 2px !important;
-`
-
-const MenuNav = styled(Menu)`
-  padding-left: 12px;
-  padding-right: 12px;
-  &.menuNav {
-    overflow-y: scroll;
-    background-color: #151515;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 0;
-    max-width: 320px;
-    z-index: 9;
-    &.showMenu {
-      width: 100%;
-    }
-  }
-`;
-
-const NavButton = styled(IconButton)`
-  &.navButton {
-    position: fixed;
-    top: 0;
-  }
-  &.hideButton {
-    display: none
-  }
-`;
 
 export const NewMenu: React.FC<{}> = ({ loggedIn }) => {
   const [navigationData, setNavigationData] = useState(mainNavItems)
@@ -95,10 +31,10 @@ export const NewMenu: React.FC<{}> = ({ loggedIn }) => {
     stylePreset: 'menuItemL2'
   };
 
-  const getNavButtons = () => (
+  const NavButtons: React.FC<{}> = () => (
     loggedIn ? (
       <>
-      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1D1D1B'}}>
+      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
         <StyledButton overrides={{stylePreset: "buttonSolidSecondary", width: '100%', marginBlock: 'space020', marginInline: 'space010'}}>Login</StyledButton>
         <StyledButton overrides={{stylePreset: "buttonSolidPrimary", width: '100%', marginBlock: 'space020', marginInline: 'space010'}}>Subscribe</StyledButton>
         </div>
@@ -107,7 +43,7 @@ export const NewMenu: React.FC<{}> = ({ loggedIn }) => {
         aria-describedby="icon-placement-at"
         placeholder="Search"
         startEnhancer={
-          <SearchIcon overrides={{size: 'iconSize010', stylePreset: 'searchBarEnhancer'}} />
+          <NewsKitSearchIcon overrides={{size: 'iconSize010'}} />
         }
         overrides={{ stylePreset: 'searchBar' }}
       />
@@ -144,7 +80,7 @@ export const NewMenu: React.FC<{}> = ({ loggedIn }) => {
           >
             {item.items.map(i => (
               <>
-              <MenuItem href={i.url} id={`vertical-${i.slug}`} overrides={{...L2Overrides}}>
+              <MenuItem href={i.url} id={`vertical-${i.slug}`} overrides={{...L2Overrides, paddingInline: "space020"}}>
               {i.title}
             </MenuItem>
             <MenuDivider />
@@ -172,13 +108,13 @@ export const NewMenu: React.FC<{}> = ({ loggedIn }) => {
         <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center'}}>
         <Block paddingInline="space000"
                   paddingBlock="space000">
-          <IconButton overrides={{stylePreset: "buttonSolidSecondary", width: '50px', height: '50px'}} onClick={handleClose}>
+          <IconButton overrides={{stylePreset: "buttonMinimalSecondary", width: '50px', height: '50px'}} onClick={handleClose}>
           <NewsKitCloseIcon />
           </IconButton>
         </Block>
         <NewsKitMasthead />
         </div>
-        {getNavButtons()}
+        <NavButtons />
             {getNavItems(navigationData.menuItems)}
             {
               navigationData.moreMenuItems ? (

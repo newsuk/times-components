@@ -11,19 +11,54 @@
       "slug": "news",
       "items": [
         {
-          "title": "News 1",
-          "url": "/news-1",
-          "slug": "news-1"
+          "title": "UK",
+          "url": "/uk",
+          "slug": "uk"
         },
         {
-          "title": "News 2",
-          "url": "/news-2",
-          "slug": "news-2"
+          "title": "World",
+          "url": "/world",
+          "slug": "world"
         },
         {
-          "title": "News 3",
-          "url": "/news-3",
-          "slug": "news-3"
+          "title": "Health & Science",
+          "url": "/health-and-science",
+          "slug": "health-and-science"
+        },
+        {
+          "title": "Environment",
+          "url": "/environment",
+          "slug": "environment"
+        },
+        {
+          "title": "Royal family",
+          "url": "/royal-family",
+          "slug": "royal-family"
+        },
+        {
+          "title": "Investigations",
+          "url": "/investigations",
+          "slug": "investigations"
+        },
+        {
+          "title": "Obituaries",
+          "url": "/obituaries",
+          "slug": "obituaries"
+        },
+        {
+          "title": "Education",
+          "url": "/education",
+          "slug": "education"
+        },
+        {
+          "title": "Scotland",
+          "url": "/scotland",
+          "slug": "scotland"
+        },
+        {
+          "title": "Law",
+          "url": "/law",
+          "slug": "law"
         }
       ]
     },
@@ -33,19 +68,29 @@
       "slug": "comment",
       "items": [
         {
-          "title": "Comment 1",
-          "url": "/comment-1",
-          "slug": "comment-1"
+          "title": "Columnists",
+          "url": "/columnists",
+          "slug": "columnists"
         },
         {
-          "title": "Comment 2",
-          "url": "/comment-2",
-          "slug": "comment-2"
+          "title": "The Times view",
+          "url": "/the-times-view",
+          "slug": "the-times-view"
         },
         {
-          "title": "Comment 3",
-          "url": "/comment-3",
-          "slug": "comment-3"
+          "title": "Letters to the Editor",
+          "url": "/letters-to-the-editor",
+          "slug": "letters-to-the-editor"
+        },
+        {
+          "title": "Cartoons",
+          "url": "/cartoons",
+          "slug": "cartoons"
+        },
+        {
+          "title": "Register",
+          "url": "/register",
+          "slug": "register"
         }
       ]
     },
@@ -55,14 +100,91 @@
       "slug": "life-and-style",
       "items": [
         {
-          "title": "Fashion",
-          "url": "/fashion",
-          "slug": "fashion"
+          "title": "Property",
+          "url": "/property",
+          "slug": "property"
+        },
+        {
+          "title": "Sex & Relationships",
+          "url": "/sex-and-relationships",
+          "slug": "sex-and-relationships"
         },
         {
           "title": "Food & Drink",
           "url": "/food-and-drink",
           "slug": "food-and-drink"
+        },
+        {
+          "title": "Travel",
+          "url": "/travel",
+          "slug": "travel"
+        },
+        {
+          "title": "Fashion",
+          "url": "/fashion",
+          "slug": "fashion"
+        },
+        {
+          "title": "Beauty",
+          "url": "/beauty",
+          "slug": "beauty"
+        },
+        {
+          "title": "Fitness & Wellbeing",
+          "url": "/fitness-and-wellbeing",
+          "slug": "fitness-and-wellbeing"
+        },
+        {
+          "title": "Luxury",
+          "url": "/luxury",
+          "slug": "luxury"
+        },
+        {
+          "title": "Driving",
+          "url": "/driving",
+          "slug": "driving"
+        },
+        {
+          "title": "Parenting",
+          "url": "/parenting",
+          "slug": "parenting"
+        }
+      ]
+    },
+    {
+      "title": "Arts & Books",
+      "url": "/arts-and-books",
+      "slug": "arts-and-books",
+      "items": [
+        {
+          "title": "TV & Radio",
+          "url": "/tv-and-radio",
+          "slug": "tv-and-radio"
+        },
+        {
+          "title": "Books",
+          "url": "/books",
+          "slug": "books"
+        },
+        {
+          "title": "Music",
+          "url": "/music",
+          "slug": "music"
+        },
+        {
+          "title": "Film",
+          "url": "/film",
+          "slug": "Theatre"
+        },
+        {
+          "title": "Opera",
+          "url": "/opera",
+          "slug": "opera"
+        },
+        {
+          "title": "Arts",
+          "url": "/arts",
+          "slug": "arts"
         }
       ]
     },
@@ -129,14 +251,34 @@
       "slug": "business-and-money",
       "items": [
         {
-          "title": "Business 1",
-          "url": "/business-1",
-          "slug": "business-1"
+          "title": "Money",
+          "url": "/money",
+          "slug": "money"
         },
         {
-          "title": "Business 2",
-          "url": "/business-2",
-          "slug": "business-2"
+          "title": "Economics",
+          "url": "/economics",
+          "slug": "economics"
+        },
+        {
+          "title": "Markets",
+          "url": "/markets",
+          "slug": "markets"
+        },
+        {
+          "title": "Technology",
+          "url": "/technology",
+          "slug": "technology"
+        },
+        {
+          "title": "Entrepreneurs",
+          "url": "/entrepreneurs",
+          "slug": "entrepreneurs"
+        },
+        {
+          "title": "Companies",
+          "url": "/companies",
+          "slug": "companies"
         }
       ]
     },
@@ -146,14 +288,61 @@
       "slug": "puzzles",
       "items": [
         {
-          "title": "Puzzle Club",
-          "url": "/puzzle-club",
-          "slug": "puzzle-club"
+          "title": "Crossword Club",
+          "url": "/crossword-club",
+          "slug": "crossword-club"
         },
         {
-          "title": "Crossword",
-          "url": "/crossword",
-          "slug": "crossword"
+          "title": "Crosswords",
+          "url": "/crosswords",
+          "slug": "crosswords"
+        },
+        {
+          "title": "Mind games",
+          "url": "/mind-games",
+          "slug": "mind-games"
+        },
+        {
+          "title": "Daily Quiz",
+          "url": "/daily-quiz",
+          "slug": "daily-quiz"
+        },
+        {
+          "title": "Soduku",
+          "url": "/soduku",
+          "slug": "soduku"
+        }
+      ]
+    },
+    {
+      "title": "Magazines",
+      "url": "/magazines",
+      "slug": "magazines",
+      "items": [
+        {
+          "title": "The Sunday Times magazine",
+          "url": "/the-sunday-times-magazine",
+          "slug": "the-sunday-times-magazine"
+        },
+        {
+          "title": "Culture magazine",
+          "url": "/culture-magazine",
+          "slug": "culture-magazine"
+        },
+        {
+          "title": "Weekend magazine",
+          "url": "/weekend-magazine",
+          "slug": "weekend-magazine"
+        },
+        {
+          "title": "Style magazine",
+          "url": "/style-magazine",
+          "slug": "style-magazine"
+        },
+        {
+          "title": "The Times magazine",
+          "url": "/the-times-magazine",
+          "slug": "the-times-magazine"
         }
       ]
     }
@@ -168,11 +357,6 @@
       "title": "Newsletters",
       "url": "/newsletters",
       "slug": "newsletters"
-    },
-    {
-      "title": "Magazine",
-      "url": "/magazine",
-      "slug": "magazine"
     },
     {
       "title": "TV Guide",
@@ -190,12 +374,12 @@
       "slug": "times-radio"
     },
     {
-      "title": "Podcasts",
+      "title": "Times Podcasts",
       "url": "/podcasts",
       "slug": "podcasts"
     },
     {
-      "title": "Money Mentor",
+      "title": "Times Money Mentor",
       "url": "/money-mentor",
       "slug": "money-mentor"
     },
@@ -205,32 +389,37 @@
       "slug": "times-travel"
     },
     {
-      "title": "Wine Club",
+      "title": "Times wine club",
       "url": "/wine-club",
       "slug": "wine-club"
     },
     {
-      "title": "Rich List",
+      "title": "Times appointments",
+      "url": "/times-appointments",
+      "slug": "times-appointments"
+    },
+    {
+      "title": "The Sunday Times Rich List",
       "url": "/rich-list",
       "slug": "rich-list"
     },
     {
-      "title": "Uni Guide",
+      "title": "The Times good uni guide",
       "url": "/uni-guide",
       "slug": "uni-guide"
     },
     {
-      "title": "School Guide",
+      "title": "The Times good school guide",
       "url": "/school-guide",
       "slug": "school-guide"
     },
     {
-      "title": "Best places to live",
+      "title": "The Times best places to live",
       "url": "/best-places-to-live",
       "slug": "best-places-to-live"
     },
     {
-      "title": "Best places to stay",
+      "title": "The Times best places to stay",
       "url": "/best-places-to-stay",
       "slug": "best-places-to-stay"
     },
@@ -238,11 +427,6 @@
       "title": "Growth 100",
       "url": "/growth-100",
       "slug": "growth-100"
-    },
-    {
-      "title": "Announcements",
-      "url": "/announcements",
-      "slug": "announcements"
     }
   ]
 }
