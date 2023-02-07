@@ -9,9 +9,9 @@ import { NewsKitBurger, NewsKitMasthead, NewsKitCloseIcon, NewsKitSearchIcon } f
 import { StyledMenu, MenuNav, StyledButton, NavButton } from './styles';
 
 import { TimesWebLightTheme } from '../../theme';
-import Masthead from './assets/Masthead';
+import Masthead from '../hamburger-menu/assets/Masthead';
 
-export const NewMenu: React.FC<{}> = ({ loggedIn }) => {
+export const HamburgerMenu: React.FC<{}> = ({ loggedIn }) => {
   const [navigationData, setNavigationData] = useState(mainNavItems)
   const [navbarVisibility, setNavbarVisibility] = useState(false)
   const [expandedL1, setExpandedL1] = useState('');
