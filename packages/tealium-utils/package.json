@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tealium-utils",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "React tealium helpers for Times Components",
   "main": "dist",
   "dev": "src",

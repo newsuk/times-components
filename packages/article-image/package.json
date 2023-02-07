@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-image",
-  "version": "7.14.8",
+  "version": "7.14.9",
   "description": "Article Image",
   "main": "dist/article-image",
   "dev": "src/article-image",
