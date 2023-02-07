@@ -6,10 +6,11 @@ import styled from 'styled-components';
 import mainNavItems from './fixtures/menu-items.json';
 import accountItems from './fixtures/account-items.json';
 import { NewsKitBurger, NewsKitMasthead, NewsKitCloseIcon, NewsKitSearchIcon } from './icons';
-import { StyledMenu, MenuNav, StyledButton, NavButton } from './styles';
+import { StyledMenu, MenuNav, NavButton } from './styles';
 
 import { TimesWebLightTheme } from '../../theme';
 import Masthead from '../hamburger-menu/assets/Masthead';
+import { IconFilledKeyboardArrowRight } from 'newskit/cjs/icons';
 
 export const FullHamburgerMenu: React.FC<{}> = ({ loggedIn }) => {
   const [navbarVisibility, setNavbarVisibility] = useState(false)
@@ -47,19 +48,23 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn, handleClose, navbarVisib
   const NavButtons: React.FC<{}> = () => (
     loggedIn ? (
       <>
-      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
-        <StyledButton overrides={{stylePreset: "buttonSolidSecondary", width: '100%', marginBlock: 'space020', marginInline: 'space010'}}>Login</StyledButton>
-        <StyledButton overrides={{stylePreset: "buttonSolidPrimary", width: '100%', marginBlock: 'space020', marginInline: 'space010'}}>Subscribe</StyledButton>
+      <div style={{display: 'flex'}}>
+        <Button size="small" overrides={{stylePreset: "buttonSolidSecondary"}}>Login</Button>
+        <div style={{margin: '4px'}}></div>
+        <Button size="small" overrides={{stylePreset: "buttonSolidPrimary"}}>Subscribe</Button>
         </div>
+        <Block marginBlock={'space030'}>
         <TextField
+        size="small"
         id="icon-placement"
         aria-describedby="icon-placement-at"
-        placeholder="Search"
+        placeholder="Search times.co.uk"
         startEnhancer={
           <NewsKitSearchIcon overrides={{size: 'iconSize010'}} />
         }
         overrides={{ stylePreset: 'searchBar' }}
       />
+      </Block>
         </>
     ) : (
       <>
@@ -80,8 +85,8 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn, handleClose, navbarVisib
     )
   )
 
-  const getNavItems = (navItems) => (
-    navItems.map(item => (
+  const NavItems = ({data}) => (
+    data.map(item => (
       item.items ? (
         <>
         <MenuSub
@@ -123,7 +128,7 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn, handleClose, navbarVisib
         </div>
         <Block paddingInline="space040">
         <NavButtons />
-            {getNavItems(navigationData.menuItems)}
+        <NavItems data={navigationData.menuItems}/>
             {
               navigationData.moreMenuItems ? (
                 <>
@@ -133,7 +138,7 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn, handleClose, navbarVisib
                   More
                 </Block>
                 <MenuDivider />
-                {getNavItems(navigationData.moreMenuItems)}
+                <NavItems data={navigationData.moreMenuItems}/>
                 </>
                 ) : null}
             </Block>

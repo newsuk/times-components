@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Menu, Button, IconButton, getColorCssFromTheme, getSizingCssFromTheme } from 'newskit';
+import { Menu, IconButton, getColorCssFromTheme, getSizingCssFromTheme } from 'newskit';
 
 export const StyledMenu = styled(Menu)`
   ul {
@@ -8,10 +8,6 @@ export const StyledMenu = styled(Menu)`
   li {
     width: 100%;
   }
-`
-
-export const StyledButton = styled(Button)`
-  border-radius: 2px !important;
 `
 
 export const MenuNav = styled(Menu)`

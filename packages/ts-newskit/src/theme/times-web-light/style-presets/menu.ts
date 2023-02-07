@@ -1,7 +1,9 @@
 export const menuStylePresets = {
   buttonSolidPrimary: {
     base: {
-      backgroundColor: '{{colors.interactivePrimary030}}'
+      backgroundColor: '{{colors.interactivePrimary030}}',
+      width: '100%',
+      borderRadius: '4px'
     },
     hover: {
       backgroundColor: '{{colors.interactivePrimary040}}'
@@ -11,6 +13,8 @@ export const menuStylePresets = {
     base: {
       backgroundColor: '{{colors.neutral090}}',
       border: 'solid 1px #333333',
+      width: '100%',
+      borderRadius: '4px'
     },
     hover: {
       backgroundColor: '{{colors.neutral080}}'
@@ -70,7 +74,8 @@ export const menuStylePresets = {
       marginBottom: '0px',
       backgroundColor: '{{colors.interfaceNeutral010}}',
       color: '#9C9C9C',
-      borderRadius: '3px'
+      borderRadius: '8px',
+      height: '40px'
     },
   }
 };
