@@ -1,8 +1,11 @@
+// @ts-nocheck
 import React, { useState } from 'react';
 import { Menu, MenuSub, MenuItem, MenuDivider, Block, TextField, customToNewsKitIcon, Button } from 'newskit';
 import { ThemeProvider } from 'newskit/esm/theme';
 import { Search } from '@emotion-icons/bootstrap/Search';
 import styled from 'styled-components';
+import mainNavItems from './menu-items.json';
+import accountItems from './account-items.json';
 
 import { TimesWebLightTheme } from '../../theme';
 
@@ -11,17 +14,30 @@ const SearchIcon = customToNewsKitIcon(
     props => <Search {...props} />,
 );
 
+const StyledMenu = styled(Menu)`
+  ul {
+    justify-content: space-around;
+  }
+  li {
+    width: 100%;
+  }
+`
+
+const StyledButton = styled(Button)`
+  border-radius: 2px !important;
+`
+
 const MenuNav = styled(Menu)`
   &.menuNav {
     overflow-y: scroll;
-    list-style: none;
+    background-color: #151515;
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     height: 100vh;
     width: 0;
-    max-width: 290px;
+    max-width: 320px;
     z-index: 9;
     &.showMenu {
       width: 100%;
@@ -39,9 +55,8 @@ const NavButton = styled.button`
   }
 `;
 
-const more = ['E-paper', 'Newsletters', 'Magazine', 'TV Guide', 'Times +', 'Times Radio', 'Podcasts', 'Money Mentor', 'Times Travel', 'Wine Club', 'Rich List', 'Uni Guide', 'School Guide', 'Best places to live', 'Best places to stay', 'Growth 100', 'Announcements'];
-
-export const NewMenu: React.FC<{}> = () => {
+export const NewMenu: React.FC<{}> = ({ loggedIn }) => {
+  const [navigationData, setNavigationData] = useState(mainNavItems)
   const [navbarVisibility, setNavbarVisibility] = useState(false)
   const [expandedL1, setExpandedL1] = useState('');
 
@@ -53,7 +68,6 @@ export const NewMenu: React.FC<{}> = () => {
     setNavbarVisibility(false)
   };
 
-  const href = "hello"
   const L1Overrides = {
         stylePreset: 'menuItemL1',
       };
@@ -61,187 +75,101 @@ export const NewMenu: React.FC<{}> = () => {
     stylePreset: 'menuItemL2'
   };
 
-  return (
-    <ThemeProvider theme={TimesWebLightTheme}>
-      <nav style={{width: '300px'}}>
-      <NavButton onClick={handleOpen} className={`navButton ${navbarVisibility ? " hideButton" : " "}`}>{"Open"}</NavButton>
-        <MenuNav className={`menuNav ${navbarVisibility ? " showMenu" : ""}`} aria-label="menu-vertical" vertical align="spaceBetween" overrides={{spaceInline: 'space000'}}>
-        <div style={{ display: 'flex', flexDirection: 'row'}}>
-        <button onClick={handleClose}>X</button>
-        <div>Placeholder</div>
-        </div>
-        <div style={{ display: 'flex', flexDirection: 'row'}}>
-        <Button overrides={{stylePreset: "buttonSolidSecondary", width: '100%'}}>Login</Button>
-        <Button overrides={{stylePreset: "buttonSolidPrimary", width: '100%'}}>Subscribe</Button>
+  const getNavButtons = () => (
+    loggedIn ? (
+      <>
+      <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', backgroundColor: '#1D1D1B'}}>
+        <StyledButton overrides={{stylePreset: "buttonSolidSecondary", width: '100%', marginBlock: 'space020', marginInline: 'space010'}}>Login</StyledButton>
+        <StyledButton overrides={{stylePreset: "buttonSolidPrimary", width: '100%', marginBlock: 'space020', marginInline: 'space010'}}>Subscribe</StyledButton>
         </div>
         <TextField
         id="icon-placement"
         aria-describedby="icon-placement-at"
         placeholder="Search"
         startEnhancer={
-          <SearchIcon overrides={{size: 'iconSize010'}} />
+          <SearchIcon overrides={{size: 'iconSize010', stylePreset: 'searchBarEnhancer'}} />
         }
+        overrides={{ stylePreset: 'searchBar' }}
       />
-        <MenuItem href={href} id="vertical-home" overrides={{...L1Overrides}}>
-          Home
-        </MenuItem>
-        <MenuDivider />
-          <MenuSub
-            title="News"
-            id="vertical-news"
-            expanded={expandedL1 === 'news'}
-            onClick={() => expandedL1 !== 'news' ? setExpandedL1('news'): setExpandedL1('')}
-            overrides={{...L1Overrides}}
-          >
-            <MenuItem href={href} id="vertical-news1" overrides={{...L2Overrides}}>
-              News 1
-            </MenuItem>
-            <MenuDivider />
-            <MenuItem href={href} id="vertical-news2" overrides={{...L2Overrides}}>
-              News 2
-            </MenuItem>
-            <MenuDivider />
-              <MenuItem href={href} id="vertical-politics" overrides={{...L2Overrides}}>
-                Politics
-              </MenuItem>
-              <MenuDivider />
-          </MenuSub>
-          <MenuDivider />
+        </>
+    ) : (
+      <>
+      <TextField
+        id="icon-placement"
+        aria-describedby="icon-placement-at"
+        placeholder="Search"
+        startEnhancer={
+          <SearchIcon overrides={{size: 'iconSize010', stylePreset: 'searchBarEnhancer'}} />
+        }
+        overrides={{ stylePreset: 'searchBar' }}
+      />
+      <StyledMenu>
+        <MenuItem selected={navigationData === mainNavItems} overrides={{ stylePreset: 'menuState'}} onClick={() => setNavigationData(mainNavItems)}>Sections</MenuItem>
+        <MenuItem selected={navigationData === accountItems} overrides={{ stylePreset: 'menuState'}} onClick={() => setNavigationData(accountItems)}>Account</MenuItem>
+        </StyledMenu>
+      </>
+    )
+  )
 
-          <MenuSub
-            title="Comment"
-            id="vertical-comment"
-            expanded={expandedL1 === 'comment'}
-            onClick={() => expandedL1 !== 'comment' ? setExpandedL1('comment') : setExpandedL1('') }
+  const getNavItems = (navItems) => (
+    navItems.map(item => (
+      item.items ? (
+        <>
+        <MenuSub
+            title={item.title}
+            id={`vertical-${item.slug}`}
+            expanded={expandedL1 === item.slug}
+            onClick={() => expandedL1 !== item.slug ? setExpandedL1(item.slug): setExpandedL1('')}
             overrides={{...L1Overrides}}
           >
-            <MenuItem href={href} id="vertical-overview" overrides={{...L2Overrides}}>
-              Commenty
+            {item.items.map(i => (
+              <MenuItem href={i.url} id={`vertical-${i.slug}`} overrides={{...L2Overrides}}>
+              {i.title}
             </MenuItem>
-            <MenuDivider />
+            ))}
           </MenuSub>
           <MenuDivider />
-          <MenuSub
-              title="Life & Style"
-              id="vertical-life-and-style"
-              expanded={expandedL1 === 'life-and-style'}
-              onClick={() => expandedL1 !== 'life-and-style' ? setExpandedL1('life-and-style') : setExpandedL1('')}
-              overrides={{...L1Overrides}}
-            >
-              <MenuItem href={href} id="vertical-fashion" overrides={{...L2Overrides}}>
-                Fashion
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href} id="vertical-food" overrides={{...L2Overrides}}>
-                Food & Recipes
-              </MenuItem>
-              <MenuDivider />
-            </MenuSub>
+          </>
+      ) : (
+        <>
+        <MenuItem href={item.url} id={`vertical-${item.slug}`} overrides={{...L1Overrides}}>
+              {item.title}
+            </MenuItem>
             <MenuDivider />
-            <MenuSub
-              title="Sport"
-              id="vertical-sport"
-              expanded={expandedL1 === 'sport'}
-              onClick={() => expandedL1 !== 'sport' ? setExpandedL1('sport') : setExpandedL1('')}
-              overrides={{...L1Overrides}}
-            >
-              <MenuItem href={href} id="vertical-top-stories" overrides={{...L2Overrides}}>
-                Top stories
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href} id="vertical-football" overrides={{...L2Overrides}}>
-                Football
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href} id="vertical-rugby-union" overrides={{...L2Overrides}}>
-                Rugby Union
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href} id="vertical-tennis" overrides={{...L2Overrides}}>
-                Tennis
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href} id="vertical-cricket" overrides={{...L2Overrides}}>
-                Cricket
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href} id="vertical-athletics" overrides={{...L2Overrides}}>
-                Athletics
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href} id="vertical-cycling" overrides={{...L2Overrides}}>
-                Cycling
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href} id="vertical-formula-one" overrides={{...L2Overrides}}>
-                Formula One
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href} id="vertical-golf" overrides={{...L2Overrides}}>
-                Golf
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href} id="vertical-horse-racing" overrides={{...L2Overrides}}>
-                Horse Racing
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href} id="vertical-boxing" overrides={{...L2Overrides}}>
-                Boxing
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href} id="vertical-other-sport" overrides={{...L2Overrides}}>
-                Other sport
-              </MenuItem>
-              <MenuDivider />
-              </MenuSub>
-              <MenuDivider />
-            <MenuSub
-              title="Business & Money"
-              id="vertical-business-money"
-              expanded={expandedL1 === 'business'}
-              onClick={() => expandedL1 !== 'business' ? setExpandedL1('business') : setExpandedL1('')}
-              overrides={{...L1Overrides}}
-            >
-              <MenuItem href={href} id="vertical-business1" overrides={{...L2Overrides}}>
-                Business 1
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href} id="vertical-business2" overrides={{...L2Overrides}}>
-                Business 2
-              </MenuItem>
-              <MenuDivider />
-            </MenuSub>
-            <MenuDivider />
-            <MenuSub
-              title="Puzzles"
-              id="vertical-puzzles"
-              expanded={expandedL1 === 'puzzles'}
-              onClick={() => expandedL1 !== 'puzzles' ? setExpandedL1('puzzles') : setExpandedL1('')}
-              overrides={{...L1Overrides}}
-            >
-              <MenuItem href={href} id="vertical-puzzle-club" overrides={{...L2Overrides}}>
-                Puzzle Club
-              </MenuItem>
-              <MenuDivider />
-              <MenuItem href={href} id="vertical-crossword" overrides={{...L2Overrides}}>
-                Crossword
-              </MenuItem>
-              <MenuDivider />
-            </MenuSub>
-            <MenuDivider />
-            <Block stylePreset="blockWrapper"
-              paddingInline="space040"
-              paddingBlock="space040">
-                More
-            </Block>
-            {more.map(item => (
-              <>
-              <MenuItem href={href} id={`vertical-getting-${item}`} overrides={{...L1Overrides}}>{item}</MenuItem>
-              <MenuDivider />
-              </>
-            ))}
+            </>
+      )
+    ))
+  )
+  return (
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <div style={{ width: '320px', backgroundColor: '#151515'}}>
+      <NavButton onClick={handleOpen} className={`navButton ${navbarVisibility ? " hideButton" : " "}`}>{"Open"}</NavButton>
+        <MenuNav id="Hi bibi" className={`menuNav ${navbarVisibility ? " showMenu" : ""}`} aria-label="menu-vertical" vertical align="spaceBetween" overrides={{spaceInline: 'space000', width: '100%'}}>
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center'}}>
+        <Block paddingInline="space070"
+                  paddingBlock="space010">
+          <Button overrides={{stylePreset: "buttonSolidSecondary"}} onClick={handleClose}>X
+          </Button>
+        </Block>
+        <img style={{ height: '30px'}} src="https://globalstore.thetimes.co.uk/wp-content/themes/wp-storefront-global/imgs/TOL-masterhead-2017_white_logo.png"></img>
+        </div>
+        {getNavButtons()}
+            {getNavItems(navigationData.menuItems)}
+            {
+              navigationData.moreMenuItems ? (
+                <>
+                <Block stylePreset="blockWrapper"
+                  paddingInline="space040"
+                  paddingBlock="space040">
+                  More
+                </Block>
+                <MenuDivider />
+                {getNavItems(navigationData.moreMenuItems)}
+                </>
+                ) : null}
+            
         </MenuNav>
-        </nav>
+        </div>
       </ThemeProvider>
   )
 }

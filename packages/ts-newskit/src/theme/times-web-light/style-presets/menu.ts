@@ -1,4 +1,13 @@
 export const menuStylePresets = {
+  menuState: {
+    base: {
+      backgroundColor: '#151515',
+      color: '#FFFFFF'
+    },
+    selected: {
+      borderBottom: '2px solid #EEEEEE'
+    }
+  },
   menuItemL1: {
     base: {
       backgroundColor: '#151515',
@@ -34,4 +43,16 @@ export const menuStylePresets = {
     fontFamily: 'GillSansMTStd-Medium'
     },
   },
+  searchBar: {
+    base: {
+      marginBottom: '0px',
+      backgroundColor: '#333333',
+      color: '#9C9C9C'
+    },
+  },
+  searchBarEnhancer: {
+    base: {
+      color: '#9C9C9C'
+    }
+  }
 };

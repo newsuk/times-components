@@ -1,0 +1,248 @@
+{
+  "menuItems": [
+    {
+      "title": "Home",
+      "url": "/home",
+      "slug": "home"
+    },
+    {
+      "title": "News",
+      "url": "/news",
+      "slug": "news",
+      "items": [
+        {
+          "title": "News 1",
+          "url": "/news-1",
+          "slug": "news-1"
+        },
+        {
+          "title": "News 2",
+          "url": "/news-2",
+          "slug": "news-2"
+        },
+        {
+          "title": "News 3",
+          "url": "/news-3",
+          "slug": "news-3"
+        }
+      ]
+    },
+    {
+      "title": "Comment",
+      "url": "/comment",
+      "slug": "comment",
+      "items": [
+        {
+          "title": "Comment 1",
+          "url": "/comment-1",
+          "slug": "comment-1"
+        },
+        {
+          "title": "Comment 2",
+          "url": "/comment-2",
+          "slug": "comment-2"
+        },
+        {
+          "title": "Comment 3",
+          "url": "/comment-3",
+          "slug": "comment-3"
+        }
+      ]
+    },
+    {
+      "title": "Life & Style",
+      "url": "/life-and-style",
+      "slug": "life-and-style",
+      "items": [
+        {
+          "title": "Fashion",
+          "url": "/fashion",
+          "slug": "fashion"
+        },
+        {
+          "title": "Food & Drink",
+          "url": "/food-and-drink",
+          "slug": "food-and-drink"
+        }
+      ]
+    },
+    {
+      "title": "Sport",
+      "url": "/sport",
+      "slug": "sport",
+      "items": [
+        {
+          "title": "Football",
+          "url": "/football",
+          "slug": "football"
+        },
+        {
+          "title": "Rugby Union",
+          "url": "/rugby-union",
+          "slug": "rugby-union"
+        },
+        {
+          "title": "Tennis",
+          "url": "/tennis",
+          "slug": "tennis"
+        },
+        {
+          "title": "Cricket",
+          "url": "/cricket",
+          "slug": "cricket"
+        },
+        {
+          "title": "Athletics",
+          "url": "/athletics",
+          "slug": "athletics"
+        },
+        {
+          "title": "Cycling",
+          "url": "/cycling",
+          "slug": "cycling"
+        },
+        {
+          "title": "Formula One",
+          "url": "/formula-one",
+          "slug": "formula-one"
+        },
+        {
+          "title": "Golf",
+          "url": "/golf",
+          "slug": "golf"
+        },
+        {
+          "title": "Horse Racing",
+          "url": "/horse-racing",
+          "slug": "horse-racing"
+        },
+        {
+          "title": "Boxing",
+          "url": "/boxing",
+          "slug": "boxing"
+        }
+      ]
+    },
+    {
+      "title": "Business & Money",
+      "url": "/business-and-money",
+      "slug": "business-and-money",
+      "items": [
+        {
+          "title": "Business 1",
+          "url": "/business-1",
+          "slug": "business-1"
+        },
+        {
+          "title": "Business 2",
+          "url": "/business-2",
+          "slug": "business-2"
+        }
+      ]
+    },
+    {
+      "title": "Puzzles",
+      "url": "/puzzles",
+      "slug": "puzzles",
+      "items": [
+        {
+          "title": "Puzzle Club",
+          "url": "/puzzle-club",
+          "slug": "puzzle-club"
+        },
+        {
+          "title": "Crossword",
+          "url": "/crossword",
+          "slug": "crossword"
+        }
+      ]
+    }
+  ],
+  "moreMenuItems": [
+    {
+      "title": "E-paper",
+      "url": "/e-paper",
+      "slug": "e-paper"
+    },
+    {
+      "title": "Newsletters",
+      "url": "/newsletters",
+      "slug": "newsletters"
+    },
+    {
+      "title": "Magazine",
+      "url": "/magazine",
+      "slug": "magazine"
+    },
+    {
+      "title": "TV Guide",
+      "url": "/tv-guide",
+      "slug": "tv-guide"
+    },
+    {
+      "title": "Times +",
+      "url": "/times-plus",
+      "slug": "times-plus"
+    },
+    {
+      "title": "Times Radio",
+      "url": "/times-radio",
+      "slug": "times-radio"
+    },
+    {
+      "title": "Podcasts",
+      "url": "/podcasts",
+      "slug": "podcasts"
+    },
+    {
+      "title": "Money Mentor",
+      "url": "/money-mentor",
+      "slug": "money-mentor"
+    },
+    {
+      "title": "Times Travel",
+      "url": "/times-travel",
+      "slug": "times-travel"
+    },
+    {
+      "title": "Wine Club",
+      "url": "/wine-club",
+      "slug": "wine-club"
+    },
+    {
+      "title": "Rich List",
+      "url": "/rich-list",
+      "slug": "rich-list"
+    },
+    {
+      "title": "Uni Guide",
+      "url": "/uni-guide",
+      "slug": "uni-guide"
+    },
+    {
+      "title": "School Guide",
+      "url": "/school-guide",
+      "slug": "school-guide"
+    },
+    {
+      "title": "Best places to live",
+      "url": "/best-places-to-live",
+      "slug": "best-places-to-live"
+    },
+    {
+      "title": "Best places to stay",
+      "url": "/best-places-to-stay",
+      "slug": "best-places-to-stay"
+    },
+    {
+      "title": "Growth 100",
+      "url": "/growth-100",
+      "slug": "growth-100"
+    },
+    {
+      "title": "Announcements",
+      "url": "/announcements",
+      "slug": "announcements"
+    }
+  ]
+}

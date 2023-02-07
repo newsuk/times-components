@@ -1,0 +1,34 @@
+{
+  "menuItems": [
+    {
+      "title": "Manage account",
+      "url": "/account",
+      "slug": "manage-account"
+    },
+    {
+      "title": "Change password",
+      "url": "/change-password",
+      "slug": "change-password"
+    },
+    {
+      "title": "My Newsletters",
+      "url": "/my-newsletters",
+      "slug": "my-newsletters"
+    },
+    {
+      "title": "My articles",
+      "url": "/my-articles",
+      "slug": "my-articles"
+    },
+    {
+      "title": "Contact us",
+      "url": "/contact-us",
+      "slug": "contact-us"
+    },
+    {
+      "title": "Log out",
+      "url": "/log-out",
+      "slug": "log-out"
+    }
+  ]
+}
