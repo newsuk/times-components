@@ -5,7 +5,7 @@ import { ApolloClient } from "apollo-client";
 import { HttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { fragmentMatcher } from "@times-components/schema";
-import { text } from "@storybook/addon-knobs/react";
+import { text } from "@storybook/addon-knobs";
 
 const StorybookProvider = ({ children }) => {
   const nbsp = "\u00A0";
