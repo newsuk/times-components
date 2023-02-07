@@ -1,7 +1,7 @@
 {
   "name": "times-components",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A collection of presentational components for The Times and Sunday Times",
   "main": "index.js",
   "engines": {
