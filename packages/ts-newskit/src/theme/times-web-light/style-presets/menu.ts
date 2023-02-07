@@ -1,21 +1,39 @@
 export const menuStylePresets = {
+  buttonSolidPrimary: {
+    base: {
+      backgroundColor: '{{colors.interactivePrimary030}}'
+    },
+    hover: {
+      backgroundColor: '{{colors.interactivePrimary040}}'
+    }
+  },
+  buttonSolidSecondary: {
+    base: {
+      backgroundColor: '{{colors.neutral090}}',
+      border: 'solid 1px #333333',
+    },
+    hover: {
+      backgroundColor: '{{colors.neutral080}}'
+    }
+  },
   menuState: {
     base: {
       backgroundColor: '#151515',
-      color: '#FFFFFF'
+      color: '{{colors.inkNonEssential}}'
     },
     selected: {
-      borderBottom: '2px solid #EEEEEE'
+      borderBottom: '2px solid #EEEEEE',
+      color: '{{colors.inkInverse}}',
     }
   },
   menuItemL1: {
     base: {
       backgroundColor: '#151515',
       iconColor: '#C2C2C2',
-      color: '#FFFFFF'
+      color: '{{colors.inkInverse}}'
     },
     hover: {
-      backgroundColor: '#333333'
+      backgroundColor: '{{colors.interfaceNeutral010}}'
     },
     active: {
       backgroundColor: '#222222'
@@ -24,20 +42,20 @@ export const menuStylePresets = {
   menuItemL2: {
     base: {
       backgroundColor: '#222222',
-      color: '#FFFFFF',
+      color: '{{colors.inkInverse}}',
       iconColor: '#C2C2C2',
     },
     hover: {
-      backgroundColor: '#333333'
+      backgroundColor: '{{colors.interfaceNeutral010}}'
     },
     active: {
-      backgroundColor: '#333333'
+      backgroundColor: '{{colors.interfaceNeutral010}}'
     }
   },
   divider: {
     base: {
-      color: '#333333',
-      borderColor: '#333333'
+      color: '{{colors.interfaceNeutral010}}',
+      borderColor: '{{colors.interfaceNeutral010}}'
     }
   },
   blockWrapper: {
@@ -50,7 +68,7 @@ export const menuStylePresets = {
   searchBar: {
     base: {
       marginBottom: '0px',
-      backgroundColor: '#333333',
+      backgroundColor: '{{colors.interfaceNeutral010}}',
       color: '#9C9C9C',
       borderRadius: '3px'
     },

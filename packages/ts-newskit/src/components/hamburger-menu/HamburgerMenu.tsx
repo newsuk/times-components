@@ -3,26 +3,39 @@ import React, { useState } from 'react';
 import { Menu, MenuSub, MenuItem, MenuDivider, Block, TextField, customToNewsKitIcon, Button, IconButton } from 'newskit';
 import { ThemeProvider } from 'newskit/esm/theme';
 import styled from 'styled-components';
-import mainNavItems from './menu-items.json';
-import accountItems from './account-items.json';
+import mainNavItems from './fixtures/menu-items.json';
+import accountItems from './fixtures/account-items.json';
 import { NewsKitBurger, NewsKitMasthead, NewsKitCloseIcon, NewsKitSearchIcon } from './icons';
 import { StyledMenu, MenuNav, StyledButton, NavButton } from './styles';
 
 import { TimesWebLightTheme } from '../../theme';
 import Masthead from '../hamburger-menu/assets/Masthead';
 
-export const HamburgerMenu: React.FC<{}> = ({ loggedIn }) => {
-  const [navigationData, setNavigationData] = useState(mainNavItems)
+export const FullHamburgerMenu: React.FC<{}> = ({ loggedIn }) => {
   const [navbarVisibility, setNavbarVisibility] = useState(false)
-  const [expandedL1, setExpandedL1] = useState('');
-
   const handleOpen = () => {
     setNavbarVisibility(true)
   }
 
-  const handleClose = () => {
+  const handleClose = () => (
     setNavbarVisibility(false)
-  };
+  );
+
+  return (
+    <ThemeProvider theme={TimesWebLightTheme}>
+    <NavButton onClick={handleOpen} className={`navButton ${navbarVisibility ? " hideButton" : " "}`}>
+        <NewsKitBurger/>
+      </NavButton>
+        <MenuNav className={`menuNav ${navbarVisibility ? " showMenu" : ""}`} aria-label="menu-vertical" vertical align="spaceBetween" overrides={{spaceInline: 'space000', width: '100%'}}>
+    <HamburgerMenu loggedIn={loggedIn} handleClose={handleClose} navbarVisiblity={navbarVisibility}/>
+    </MenuNav>
+    </ThemeProvider>
+  )
+}
+
+export const HamburgerMenu: React.FC<{}> = ({ loggedIn, handleClose, navbarVisibility }) => {
+  const [navigationData, setNavigationData] = useState(mainNavItems)
+  const [expandedL1, setExpandedL1] = useState('');
 
   const L1Overrides = {
         stylePreset: 'menuItemL1',
@@ -101,19 +114,14 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn }) => {
   )
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
-      <NavButton onClick={handleOpen} className={`navButton ${navbarVisibility ? " hideButton" : " "}`}>
-        <NewsKitBurger/>
-      </NavButton>
         <MenuNav className={`menuNav ${navbarVisibility ? " showMenu" : ""}`} aria-label="menu-vertical" vertical align="spaceBetween" overrides={{spaceInline: 'space000', width: '100%'}}>
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center'}}>
-        <Block paddingInline="space000"
-                  paddingBlock="space000">
+        <div id="containing div" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#01000D', height: '50px'}} >
           <IconButton overrides={{stylePreset: "buttonMinimalSecondary", width: '50px', height: '50px'}} onClick={handleClose}>
           <NewsKitCloseIcon />
           </IconButton>
-        </Block>
         <NewsKitMasthead />
         </div>
+        <Block paddingInline="space040">
         <NavButtons />
             {getNavItems(navigationData.menuItems)}
             {
@@ -128,7 +136,7 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn }) => {
                 {getNavItems(navigationData.moreMenuItems)}
                 </>
                 ) : null}
-            
+            </Block>
         </MenuNav>
       </ThemeProvider>
   )

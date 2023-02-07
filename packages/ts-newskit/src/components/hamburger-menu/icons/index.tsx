@@ -6,7 +6,7 @@ import Masthead from '../assets/Masthead';
 import CloseIcon from '../assets/CloseIcon';
 
 export const NewsKitSearchIcon = customToNewsKitIcon(
-  'NewskitSearchIcon',
+  'NewsKitSearchIcon',
   props => <SearchIcon {...props} />,
 );
 

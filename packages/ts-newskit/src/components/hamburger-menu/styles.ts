@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Menu, Button, IconButton } from 'newskit';
+import { Menu, Button, IconButton, getColorCssFromTheme, getSizingCssFromTheme } from 'newskit';
 
 export const StyledMenu = styled(Menu)`
   ul {
@@ -15,8 +15,6 @@ export const StyledButton = styled(Button)`
 `
 
 export const MenuNav = styled(Menu)`
-  padding-left: 12px;
-  padding-right: 12px;
   &.menuNav {
     overflow-y: scroll;
     background-color: #151515;
