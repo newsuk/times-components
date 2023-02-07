@@ -39,7 +39,7 @@
 
     "skipLibCheck": true,
 
-    "lib": ["es6", "dom", "es2017"],
+    "lib": ["es6", "dom", "es2019"],
     "types": ["jest"],
     "typeRoots": ["node_modules/@types", "src/types", "../../node_modules/@types"]
   },
