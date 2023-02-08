@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.60.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.59.2...@times-components/article-main-comment@2.60.0) (2023-02-08)
+
+
+### Features
+
+* **TDP-3135:** Remove Blue RNC Banner ([#3231](https://github.com/newsuk/times-components/issues/3231)) ([b7e6699](https://github.com/newsuk/times-components/commit/b7e6699ddc4b3d674d1ef5d259b4fd4ea8dc6fe6))
+
+
+
+
+
 ## [2.59.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.59.1...@times-components/article-main-comment@2.59.2) (2023-02-02)
 
 

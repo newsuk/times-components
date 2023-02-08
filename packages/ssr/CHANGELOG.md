@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.41.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.40.0...@times-components/ssr@2.41.0) (2023-02-08)
+
+
+### Features
+
+* **TDP-3135:** Updated Integration Snapshot ([#3232](https://github.com/newsuk/times-components/issues/3232)) ([4aa44cf](https://github.com/newsuk/times-components/commit/4aa44cf040d59a71183b796dd0358febdb6e0043))
+
+
+
+
+
 # [2.40.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.39.16...@times-components/ssr@2.40.0) (2023-02-02)
 
 
