@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { MenuSub, MenuItem, MenuDivider, Block, IconButton } from 'newskit';
+import { MenuSub, MenuItem, MenuDivider, Block, IconButton, Visible } from 'newskit';
 import { ThemeProvider } from 'newskit/esm/theme';
 import mainNavItems from './fixtures/menu-items.json';
 import accountItems from './fixtures/account-items.json';
@@ -62,16 +62,17 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn, handleClose, navbarVisib
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
         <MenuNav className={`menuNav ${navbarVisibility ? " showMenu" : ""}`} aria-label="menu-vertical" vertical align="spaceBetween" overrides={{spaceInline: 'space000', width: '100%'}}>
-        <div id="containing div" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', backgroundColor: '#01000D', height: '50px'}} >
+          <Visible xs sm>
+          <Block stylePreset="anotherBlock">
           <IconButton overrides={{stylePreset: "buttonMinimalSecondary", width: '50px', height: '50px'}} onClick={handleClose}>
           <NewsKitCloseIcon />
           </IconButton>
         <NewsKitMasthead />
-        </div>
-        <Block paddingInline="space040">
-        <Block marginBlock={'space030'}>
-        <NavButtonSection navigationData={navigationData} loggedIn={loggedIn} handleClickMain={handleClickMain} handleClickAccount={handleClickAccount}/>
         </Block>
+        <Block marginBlock={'space030'} id="Block with padding inline space030">
+        <NavButtonSection id="nav button section" navigationData={navigationData} loggedIn={loggedIn} handleClickMain={handleClickMain} handleClickAccount={handleClickAccount}/>
+        </Block>
+        </Visible>
         <NavItems data={navigationData.menuItems}/>
             {
               navigationData.moreMenuItems ? (
@@ -85,7 +86,6 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn, handleClose, navbarVisib
                 <NavItems data={navigationData.moreMenuItems}/>
                 </>
                 ) : null}
-            </Block>
         </MenuNav>
       </ThemeProvider>
   )

@@ -32,9 +32,8 @@ export const menuStylePresets = {
   },
   menuItemL1: {
     base: {
-      paddingLeft: 0,
       backgroundColor: '#151515',
-      iconColor: '#C2C2C2',
+      iconColor: '{{colors.neutral050}}',
       color: '{{colors.inkInverse}}'
     },
     hover: {
@@ -49,7 +48,7 @@ export const menuStylePresets = {
       paddingLeft: '16px',
       backgroundColor: '#222222',
       color: '{{colors.inkInverse}}',
-      iconColor: '#C2C2C2',
+      iconColor: '{{colors.neutral050}}',
     },
     hover: {
       backgroundColor: '{{colors.interfaceNeutral010}}'
@@ -77,6 +76,14 @@ export const menuStylePresets = {
       color: '#9C9C9C',
       borderRadius: '8px',
       height: '40px'
+    }
+  },
+  anotherBlock: {
+    base: {
+      backgroundColor: '{{colors.neutral100}}',
+      display: 'flex',
+      alignItems: 'center',
+      height: '50px'
     }
   }
 };
