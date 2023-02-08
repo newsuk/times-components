@@ -23,24 +23,30 @@ export const TopNav: React.FC<{}> = () => {
           }}>
           <Divider vertical />
           <MenuItem href="/" overrides={{
-            stylePreset: "topNavItem"
+            stylePreset: "topNavItem",
+            typographyPreset: "utilityLabel020"
           }}>
             Menu item 1
           </MenuItem>
           <MenuItem href="/" overrides={{
-            stylePreset: "topNavItem"
+            stylePreset: "topNavItem",
+            typographyPreset: "utilityLabel020"
           }}>Menu item 2</MenuItem>
           <MenuItem href="/" overrides={{
-            stylePreset: "topNavItem"
+            stylePreset: "topNavItem",
+            typographyPreset: "utilityLabel020"
           }}>Menu item 3</MenuItem>
           <MenuItem href="/" overrides={{
-            stylePreset: "topNavItem"
+            stylePreset: "topNavItem",
+            typographyPreset: "utilityLabel020"
           }}>Menu item 4</MenuItem>
           <MenuItem href="/" overrides={{
-            stylePreset: "topNavItem"
+            stylePreset: "topNavItem",
+            typographyPreset: "utilityLabel020"
           }}>Menu item 5</MenuItem>
           <MenuItem href="/" overrides={{
-            stylePreset: "topNavItem"
+            stylePreset: "topNavItem",
+            typographyPreset: "utilityLabel020"
           }}>Menu item 6</MenuItem>
           <MenuSub
             title="Menu item 7"
@@ -51,7 +57,8 @@ export const TopNav: React.FC<{}> = () => {
             }}
             overrides={{
               paddingInlineStart: '16px',
-              stylePreset: "topNavItem"
+              stylePreset: "topNavItem",
+              typographyPreset: "utilityLabel020"
             }}
           >
             <MenuItem href="/">Menu item 3.1</MenuItem>

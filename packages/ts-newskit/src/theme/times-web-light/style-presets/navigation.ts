@@ -4,7 +4,6 @@ export const navigationStylePresets = {
       backgroundColor: '{{colors.interface060}}',
       color: '{{colors.inkInverse}}',
       height: '60px',
-      fontSize: '{{fontSize.fontSize020}}',
       iconColor: '{{colors.inkInverse}}',
     },
     hover: {
