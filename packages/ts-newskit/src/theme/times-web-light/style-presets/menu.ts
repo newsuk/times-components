@@ -32,6 +32,7 @@ export const menuStylePresets = {
   },
   menuItemL1: {
     base: {
+      paddingLeft: 0,
       backgroundColor: '#151515',
       iconColor: '#C2C2C2',
       color: '{{colors.inkInverse}}'
@@ -45,6 +46,7 @@ export const menuStylePresets = {
   },
   menuItemL2: {
     base: {
+      paddingLeft: '16px',
       backgroundColor: '#222222',
       color: '{{colors.inkInverse}}',
       iconColor: '#C2C2C2',
@@ -71,11 +73,10 @@ export const menuStylePresets = {
   },
   searchBar: {
     base: {
-      marginBottom: '0px',
       backgroundColor: '{{colors.interfaceNeutral010}}',
       color: '#9C9C9C',
       borderRadius: '8px',
       height: '40px'
-    },
+    }
   }
 };

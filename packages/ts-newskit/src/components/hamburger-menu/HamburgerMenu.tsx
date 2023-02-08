@@ -1,16 +1,14 @@
 // @ts-nocheck
 import React, { useState } from 'react';
-import { Menu, MenuSub, MenuItem, MenuDivider, Block, TextField, customToNewsKitIcon, Button, IconButton } from 'newskit';
+import { MenuSub, MenuItem, MenuDivider, Block, IconButton } from 'newskit';
 import { ThemeProvider } from 'newskit/esm/theme';
-import styled from 'styled-components';
 import mainNavItems from './fixtures/menu-items.json';
 import accountItems from './fixtures/account-items.json';
-import { NewsKitBurger, NewsKitMasthead, NewsKitCloseIcon, NewsKitSearchIcon } from './icons';
-import { StyledMenu, MenuNav, NavButton } from './styles';
+import { NewsKitBurger, NewsKitMasthead, NewsKitCloseIcon } from './icons';
+import { MenuNav, NavButton } from './styles';
+import NavButtonSection from './NavButtons'
 
 import { TimesWebLightTheme } from '../../theme';
-import Masthead from '../hamburger-menu/assets/Masthead';
-import { IconFilledKeyboardArrowRight } from 'newskit/cjs/icons';
 
 export const FullHamburgerMenu: React.FC<{}> = ({ loggedIn }) => {
   const [navbarVisibility, setNavbarVisibility] = useState(false)
@@ -35,8 +33,14 @@ export const FullHamburgerMenu: React.FC<{}> = ({ loggedIn }) => {
 }
 
 export const HamburgerMenu: React.FC<{}> = ({ loggedIn, handleClose, navbarVisibility }) => {
-  const [navigationData, setNavigationData] = useState(mainNavItems)
   const [expandedL1, setExpandedL1] = useState('');
+  const [navigationData, setNavigationData] = useState(mainNavItems)
+  const handleClickMain = () => (
+    setNavigationData(mainNavItems)
+  );
+  const handleClickAccount = () => (
+    setNavigationData(accountItems)
+  );
 
   const L1Overrides = {
         stylePreset: 'menuItemL1',
@@ -45,47 +49,7 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn, handleClose, navbarVisib
     stylePreset: 'menuItemL2'
   };
 
-  const NavButtons: React.FC<{}> = () => (
-    loggedIn ? (
-      <>
-      <div style={{display: 'flex'}}>
-        <Button size="small" overrides={{stylePreset: "buttonSolidSecondary"}}>Login</Button>
-        <div style={{margin: '4px'}}></div>
-        <Button size="small" overrides={{stylePreset: "buttonSolidPrimary"}}>Subscribe</Button>
-        </div>
-        <Block marginBlock={'space030'}>
-        <TextField
-        size="small"
-        id="icon-placement"
-        aria-describedby="icon-placement-at"
-        placeholder="Search times.co.uk"
-        startEnhancer={
-          <NewsKitSearchIcon overrides={{size: 'iconSize010'}} />
-        }
-        overrides={{ stylePreset: 'searchBar' }}
-      />
-      </Block>
-        </>
-    ) : (
-      <>
-      <TextField
-        id="icon-placement"
-        aria-describedby="icon-placement-at"
-        placeholder="Search"
-        startEnhancer={
-          <NewsKitSearchIcon overrides={{size: 'iconSize010', stylePreset: 'searchBarEnhancer'}} />
-        }
-        overrides={{ stylePreset: 'searchBar' }}
-      />
-      <StyledMenu>
-        <MenuItem selected={navigationData === mainNavItems} overrides={{ stylePreset: 'menuState'}} onClick={() => setNavigationData(mainNavItems)}>Sections</MenuItem>
-        <MenuItem selected={navigationData === accountItems} overrides={{ stylePreset: 'menuState'}} onClick={() => setNavigationData(accountItems)}>Account</MenuItem>
-        </StyledMenu>
-      </>
-    )
-  )
-
-  const NavItems = ({data}) => (
+  const NavItems = ({ data }) => (
     data.map(item => (
       item.items ? (
         <>
@@ -98,7 +62,7 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn, handleClose, navbarVisib
           >
             {item.items.map(i => (
               <>
-              <MenuItem href={i.url} id={`vertical-${i.slug}`} overrides={{...L2Overrides, paddingInline: "space020"}}>
+              <MenuItem href={i.url} id={`vertical-${i.slug}`} overrides={{...L2Overrides}}>
               {i.title}
             </MenuItem>
             <MenuDivider />
@@ -109,7 +73,7 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn, handleClose, navbarVisib
           </>
       ) : (
         <>
-        <MenuItem href={item.url} id={`vertical-${item.slug}`} overrides={{...L1Overrides}}>
+            <MenuItem href={item.url} id={`vertical-${item.slug}`} overrides={{...L1Overrides}}>
               {item.title}
             </MenuItem>
             <MenuDivider />
@@ -127,7 +91,9 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn, handleClose, navbarVisib
         <NewsKitMasthead />
         </div>
         <Block paddingInline="space040">
-        <NavButtons />
+        <Block marginBlock={'space030'}>
+        <NavButtonSection navigationData={navigationData} loggedIn={loggedIn} handleClickMain={handleClickMain} handleClickAccount={handleClickAccount}/>
+        </Block>
         <NavItems data={navigationData.menuItems}/>
             {
               navigationData.moreMenuItems ? (

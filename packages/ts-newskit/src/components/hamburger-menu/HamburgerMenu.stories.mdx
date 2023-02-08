@@ -1,7 +1,14 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs'
 import { HamburgerMenu } from "./HamburgerMenu.tsx";
 import { FullHamburgerMenu } from './FullHamburgerMenu.tsx'
+import SearchBar from './SearchBar.tsx';
 import { boolean } from "@storybook/addon-knobs"
+import { TimesWebLightTheme } from '../../theme';
+import { ThemeProvider } from 'newskit';
+import NavButtonSection, { LoggedInNavButtons, LoggedOutNavButtons } from './NavButtons.tsx'
+import mainNavItems from './fixtures/menu-items.json';
+import LoggedInMenuItem from './LoggedInMenuItem.tsx';
+import LoggedOutNavButton from './LoggedOutNavButton';
 
 
 <Meta
@@ -14,11 +21,39 @@ import { boolean } from "@storybook/addon-knobs"
 Component's description and any notes worth mentioning
 
 <Canvas>
-    <Story name="HamburgerMenu">
-      <HamburgerMenu loggedIn={boolean('Is logged in', false)} navbarVisibility={true}/>
+  <Story name="HamburgerMenu Logged in">
+      <HamburgerMenu loggedIn={true} navbarVisibility={true} />
   </Story>
-   <Story name="HamburgerMenu with Open/close">
-      <FullHamburgerMenu loggedIn={boolean('Is logged in', false)} />
+  <Story name="HamburgerMenu Logged out">
+      <HamburgerMenu loggedIn={false} navbarVisibility={true}/>
+  </Story>
+    <Story name="Full HamburgerMenu">
+      <FullHamburgerMenu loggedIn={boolean('Is logged in', false)}/>
+  </Story>
+  <Story name="Search Bar">
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <SearchBar />
+    </ThemeProvider>
+  </Story>
+   <Story name="Nav Button Section">
+    <ThemeProvider theme={TimesWebLightTheme}> 
+      <NavButtonSection loggedIn={boolean('Is logged in', true)} handleClickMain={() => console.log('Handle Click Main')} handleClickAccount={() => console.log('Handle Click Account')} />
+        </ThemeProvider>
+  </Story>
+  <Story name="Logged In menu item">
+    <ThemeProvider theme={TimesWebLightTheme}>
+    <LoggedInMenuItem title="Section" handleClick={() => console.log('Clicked')} />
+    </ThemeProvider>
+  </Story>
+  <Story name="Logged Out Button Primary">
+    <ThemeProvider theme={TimesWebLightTheme}>
+    <LoggedOutNavButton title="Log in" preset="buttonSolidPrimary" />
+    </ThemeProvider>
+  </Story>
+  <Story name="Logged Out Button Secondary">
+    <ThemeProvider theme={TimesWebLightTheme}>
+    <LoggedOutNavButton title="Subscribe" preset="buttonSolidSecondary" />
+    </ThemeProvider>
   </Story>
 </Canvas>
 
