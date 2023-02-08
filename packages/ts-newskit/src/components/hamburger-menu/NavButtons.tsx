@@ -12,7 +12,6 @@ export const LoggedOutNavButtons = () => (
   <Block paddingInline='space030'>
     <div style={{display: 'flex'}}>
       <LoggedOutNavButton size="small" preset="buttonSolidSecondary" title="Log in"></LoggedOutNavButton>
-        {/* Resolve this */}
       <div style={{margin: '4px'}}></div>
       <LoggedOutNavButton size="small" preset="buttonSolidPrimary" title="Subscribe"></LoggedOutNavButton>
     </div>

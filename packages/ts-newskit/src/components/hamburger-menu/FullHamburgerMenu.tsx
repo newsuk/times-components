@@ -18,7 +18,7 @@ export const FullHamburgerMenu: React.FC<{}> = ({ loggedIn }) => {
 
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
-    <NavButton onClick={handleOpen} className={`navButton ${navbarVisibility ? " hideButton" : " "}`}>
+      <NavButton onClick={handleOpen} className={`navButton ${navbarVisibility ? " hideButton" : " "}`}>
         <NewsKitBurger />
       </NavButton>
       <HamburgerMenu loggedIn={loggedIn} handleClose={handleClose} navbarVisibility={navbarVisibility}/>
