@@ -26,7 +26,7 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn }) => {
 
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
-      <MenuNav aria-label="menu-vertical" vertical align="spaceBetween" overrides={{spaceInline: 'space000'}}>
+      <MenuNav aria-label="menu-vertical" vertical align="spaceBetween" overrides={{ spaceInline: 'space000' }}>
         <Visible xs sm>
             <NavButtonSection navigationData={navigationData} loggedIn={loggedIn} handleClickMain={handleClickMain} handleClickAccount={handleClickAccount}/>
         </Visible>
@@ -37,7 +37,7 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn }) => {
                 <Block stylePreset="blockWrapper"
                   paddingInline="space040"
                   paddingBlock="space040">
-                  <TextBlock>More</TextBlock>
+                  <TextBlock typographyPreset="">More</TextBlock>
                 </Block>
                 <MenuDivider />
                 <NavItems data={navigationData.moreMenuItems}/>

@@ -37,6 +37,8 @@ export const menuStylePresets = {
       backgroundColor: '#151515',
       iconColor: '{{colors.neutral050}}',
       color: '{{colors.inkInverse}}',
+      fontSize: '15px',
+      fontFamily: 'Roboto-Medium'
     },
     hover: {
       backgroundColor: '{{colors.interfaceNeutral010}}'
@@ -51,6 +53,8 @@ export const menuStylePresets = {
       backgroundColor: '#222222',
       color: '{{colors.inkInverse}}',
       iconColor: '{{colors.neutral050}}',
+      fontSize: '15px',
+      fontFamily: 'Roboto-Medium'
     },
     hover: {
       backgroundColor: '{{colors.interfaceNeutral010}}'
