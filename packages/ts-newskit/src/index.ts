@@ -1,1 +1,1 @@
-export { DynamicNav } from './components/global-nav/top-nav';
+export { TopNav } from './components/global-nav/top-nav';

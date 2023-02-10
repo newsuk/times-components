@@ -4,7 +4,7 @@ import { TopNav } from './top-nav';
 
 import { TimesWebLightTheme } from '../../theme';
 
-export const GlobalNav  = () => {
+export const GlobalNav = () => {
   return (
     <NewsKitProvider theme={TimesWebLightTheme}>
         <TopNav />
