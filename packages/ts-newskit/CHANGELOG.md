@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.1.2...@times-components/ts-newskit@1.2.0) (2023-02-10)
+
+
+### Features
+
+* **TDP-3186:** add roboto font ([#3236](https://github.com/newsuk/times-components/issues/3236)) ([d7a7099](https://github.com/newsuk/times-components/commit/d7a709979c99460feec0b224b47c64a40f45c294))
+
+
+
+
+
 ## [1.1.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.1.1...@times-components/ts-newskit@1.1.2) (2023-02-08)
 
 **Note:** Version bump only for package @times-components/ts-newskit
