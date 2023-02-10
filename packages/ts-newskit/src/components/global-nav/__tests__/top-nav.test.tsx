@@ -2,7 +2,7 @@ import React from 'react';
 import { render, cleanup } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
-import { Navigation } from '../Navigation';
+import { TopNav } from '../top-nav';
 
 describe('Navigation', () => {
   afterEach(() => {
@@ -11,7 +11,7 @@ describe('Navigation', () => {
   });
 
   it('should render correctly', () => {
-    const { asFragment, findByText } = render(<Navigation />);
+    const { asFragment, findByText } = render(<TopNav />);
 
     findByText('Hello this is the navigation component');
 

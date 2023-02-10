@@ -2,9 +2,9 @@ import * as React from "react"
 
 const Masthead = (props: any) => (
   <svg
-  width={200}
-  height={60}
-  fill="none"
+  width={167}
+  height={50}
+  viewBox="16 22 167 50"
   xmlns="http://www.w3.org/2000/svg"
   {...props}
 >

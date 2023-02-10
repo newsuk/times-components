@@ -9,8 +9,6 @@ import { fonts } from './styles/fonts';
 import { typographyPresets } from './styles/typography-presets';
 // import { navigationTypographyPresets } from '../style-presets/navigation';
 
-import { stylePresets } from './style-presets';
-
 export const TimesWebLightTheme = createTheme({
   name: 'times-web-light',
   overrides: {
@@ -26,7 +24,6 @@ export const TimesWebLightTheme = createTheme({
     overlays,
     shadows,
     fonts,
-    typographyPresets,
-    stylePresets
+    typographyPresets
   }
 });

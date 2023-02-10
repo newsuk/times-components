@@ -1,54 +1,45 @@
-import React, { useState } from 'react';
-import { ThemeProvider, Menu, MenuItem, MenuSub, Stack, Divider } from 'newskit';
+import React from 'react';
+import { ThemeProvider, Menu, MenuItem } from 'newskit';
 
 import { TimesWebLightTheme } from '../../theme';
 
-import { TopNavContainer } from './styles';
-import { NewsKitBurgerIcon, NewsKitMasthead, NewsKitSearchIcon } from '../../assets';
+import { MenuWrapper } from './styles';
 
-export const TopNav: React.FC<{}> = () => {
-  const [moreExpanded, setMoreExpanded] = useState(false);
-
+export const TopNav: React.FC<{}> = () => {  
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
-      <TopNavContainer>
-      <Stack spaceInline="space010" flow="horizontal-center">
-        <NewsKitBurgerIcon />
-        <Divider vertical />
-        <NewsKitSearchIcon />
-        <Divider vertical />
-        <NewsKitMasthead />
+      <MenuWrapper>
         <Menu aria-label="Main Navigation" overrides={{
-            spaceInline: "space000"
+            spaceInline: "space000",
           }}>
-          <Divider vertical />
           <MenuItem href="/" overrides={{
-            stylePreset: "topNavItem",
-            typographyPreset: "utilityLabel020"
-          }}>
-            Menu item 1
-          </MenuItem>
+            stylePreset: "menuItemL1"
+          }}>Home</MenuItem>
           <MenuItem href="/" overrides={{
-            stylePreset: "topNavItem",
-            typographyPreset: "utilityLabel020"
-          }}>Menu item 2</MenuItem>
+            stylePreset: "menuItemL1"
+          }}>News</MenuItem>
           <MenuItem href="/" overrides={{
-            stylePreset: "topNavItem",
-            typographyPreset: "utilityLabel020"
-          }}>Menu item 3</MenuItem>
+            stylePreset: "menuItemL1"
+          }}>Comment</MenuItem>
           <MenuItem href="/" overrides={{
-            stylePreset: "topNavItem",
-            typographyPreset: "utilityLabel020"
-          }}>Menu item 4</MenuItem>
+            stylePreset: "menuItemL1"
+          }}>Life&nbsp;&amp;&nbsp;Style</MenuItem>
           <MenuItem href="/" overrides={{
-            stylePreset: "topNavItem",
-            typographyPreset: "utilityLabel020"
-          }}>Menu item 5</MenuItem>
+            stylePreset: "menuItemL1"
+          }}>Arts&nbsp;&amp;&nbsp;Books</MenuItem>
           <MenuItem href="/" overrides={{
-            stylePreset: "topNavItem",
-            typographyPreset: "utilityLabel020"
-          }}>Menu item 6</MenuItem>
-          <MenuSub
+            stylePreset: "menuItemL1"
+          }}>Business&nbsp;&amp;&nbsp;Money</MenuItem>
+          <MenuItem href="/" overrides={{
+            stylePreset: "menuItemL1"
+          }}>Sport</MenuItem>
+          <MenuItem href="/" overrides={{
+            stylePreset: "menuItemL1"
+          }}>Magazine</MenuItem>
+          <MenuItem href="/" overrides={{
+            stylePreset: "menuItemL1"
+          }}>Puzzles</MenuItem>
+          {/* <MenuSub
             title="Menu item 7"
             selected={moreExpanded}
             expanded={moreExpanded}
@@ -57,16 +48,13 @@ export const TopNav: React.FC<{}> = () => {
             }}
             overrides={{
               paddingInlineStart: '16px',
-              stylePreset: "topNavItem",
+              stylePreset: "menuItemL1",
               typographyPreset: "utilityLabel020"
             }}
           >
-            <MenuItem href="/">Menu item 3.1</MenuItem>
-            <MenuItem href="/">Menu item 3.2</MenuItem>
-          </MenuSub>
+          </MenuSub> */}
         </Menu>
-        </Stack>
-      </TopNavContainer>
+      </MenuWrapper>
     </ThemeProvider>
   );
 };

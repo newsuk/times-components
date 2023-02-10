@@ -1,1 +1,2 @@
-export { Navigation } from './components/navigation/Navigation';
+export { TopNav } from './components/global-nav/top-nav';
+export { DynamicNav } from './components/global-nav/dynamic-nav';
