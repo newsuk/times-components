@@ -1,9 +1,12 @@
 // @ts-nocheck
 import React from 'react';
-import { MenuItem } from 'newskit';
+import { MenuItem, TextBlock } from 'newskit';
+
 
 const LoggedInMenuItem: React.FC<{}> = ({ title, navItems, navigationData, handleClick }) => (
-  <MenuItem style={{ fontSize: '15px'}} selected={navigationData === navItems} overrides={{ stylePreset: 'menuState' }} onClick={handleClick}>{title}</MenuItem>
+  <MenuItem selected={navigationData === navItems} overrides={{ stylePreset: 'menuState' }} onClick={handleClick}>
+    <TextBlock style={{ fontSize: '15px'}}>{title}</TextBlock>
+  </MenuItem>
 );
 
 export default LoggedInMenuItem;

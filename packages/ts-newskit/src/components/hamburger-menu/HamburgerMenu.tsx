@@ -37,7 +37,7 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn }) => {
                 <Block stylePreset="blockWrapper"
                   paddingInline="space040"
                   paddingBlock="space040">
-                  <TextBlock typographyPreset="">More</TextBlock>
+                  <TextBlock typographyPreset="newPreset010" style={{ fontSize: '14px'}}>More</TextBlock>
                 </Block>
                 <MenuDivider />
                 <NavItems data={navigationData.moreMenuItems}/>
