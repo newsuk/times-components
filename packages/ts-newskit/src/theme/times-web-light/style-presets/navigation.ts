@@ -41,8 +41,8 @@ export const navStylePresets = {
     },
     menuItemL1: {
       base: {
-        backgroundColor: '#FFFFFF',
-        color: '#000000',
+        backgroundColor: '{{colors.white}}',
+        color: '{{colors.black}}',
         iconColor: '{{colors.neutral050}}',
         borderBottom: '4px solid transparent'
       },
@@ -51,6 +51,20 @@ export const navStylePresets = {
       },
       active: {
         borderBottom: '4px solid #1E1E1E',
+      }
+    },
+    menuItemL1lg: {
+      base: {
+        backgroundColor: '{{colors.black}}',
+        color: '{{colors.white}}',
+        iconColor: '{{colors.neutral050}}',
+        borderBottom: '4px solid transparent'
+      },
+      hover: {
+        borderBottom: '4px solid #FFFFFF'
+      },
+      active: {
+        borderBottom: '4px solid #FFFFFF',
       }
     },
     menuItemL2: {

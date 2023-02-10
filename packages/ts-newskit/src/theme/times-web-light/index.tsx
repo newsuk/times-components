@@ -7,7 +7,6 @@ import shadows from './styles/shadows.json';
 
 import { fonts } from './styles/fonts';
 import { typographyPresets } from './styles/typography-presets';
-// import { navigationTypographyPresets } from '../style-presets/navigation';
 
 export const TimesWebLightTheme = createTheme({
   name: 'times-web-light',

@@ -1,7 +1,9 @@
 import React from 'react';
-import { ThemeProvider, Menu, MenuItem, MenuSub, styled, useMediaQueryObject, Visible } from 'newskit';
-
+import { ThemeProvider, Menu, MenuItem, MenuSub, styled, useBreakpointKey, useMediaQueryObject, Visible } from 'newskit';
 import { TimesWebLightTheme } from '../../theme';
+
+const breakpointKey = useBreakpointKey();
+
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
 
@@ -22,7 +24,7 @@ const createMenu = (items: MenuElement[]) =>
       return <MenuSub title={title}>{createMenu(subItems)}</MenuSub>;
     }
 
-    return <MenuItem href={href} overrides={{stylePreset: "menuItemL1"}}>{title}</MenuItem>;
+    return <MenuItem href={href} className="menuItemL1 menuItemL1{breakpointKey}">{title}</MenuItem>;
   });
 const createMoreMenu = (items: MenuElement[]) =>
   items.map(({title, items: subItems}) => {
