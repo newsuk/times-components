@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React, { useState } from 'react';
 import { MenuDivider, Block, Visible, TextBlock, ThemeProvider } from 'newskit';
 import mainNavItems from './fixtures/menu-items.json';
@@ -9,26 +8,49 @@ import { MenuNav } from './styles';
 
 import { TimesWebLightTheme } from '../../theme';
 
-export const HamburgerMenu: React.FC<{}> = ({ loggedIn }) => {
-  const [expandedL1, setExpandedL1] = useState('');
-  const [navigationData, setNavigationData] = useState(mainNavItems)
+type NavigationItemItem = {
+  title: string,
+  url: string,
+  slug: string
+} 
+
+type NavigationItem = {
+  title: string,
+  url: string
+  slug: string,
+  items?: NavigationItemItem[]
+}
+
+type NavigationData = {
+  menuItems: NavigationItem[],
+  moreMenuItems?: NavigationItem[]
+}
+
+const HamburgerMenu: React.FC<{ loggedIn: boolean }> = ({ loggedIn }) => {
+  const [expandedL1, setExpandedL1] = useState<string>('');
+  const [navigationData, setNavigationData] = useState<NavigationData>(mainNavItems)
+  const [selected, setSelected] = useState('Sections');
   
   const onExpand = (slug: string) => (
     setExpandedL1(slug)
   )
 
-  const handleClickMain = () => (
-    setNavigationData(mainNavItems)
-  );
-  const handleClickAccount = () => (
+  const handleClickAccount = () => {
+    setSelected('My account')
     setNavigationData(accountItems)
-  );
+  };
+
+  const handleClickMain = () => {
+    setSelected('Sections')
+    setNavigationData(mainNavItems)
+  };
+ 
 
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
       <MenuNav aria-label="menu-vertical" vertical align="spaceBetween" overrides={{ spaceInline: 'space000' }}>
         <Visible xs sm>
-            <NavButtonSection navigationData={navigationData} loggedIn={loggedIn} handleClickMain={handleClickMain} handleClickAccount={handleClickAccount}/>
+            <NavButtonSection loggedIn={loggedIn} handleClickMain={handleClickMain} handleClickAccount={handleClickAccount} selected={selected}/>
         </Visible>
         <NavItems data={navigationData.menuItems} onExpand={onExpand} expandedL1={expandedL1}/>
           {
@@ -47,3 +69,5 @@ export const HamburgerMenu: React.FC<{}> = ({ loggedIn }) => {
     </ThemeProvider>
   );
 };
+
+export default HamburgerMenu;

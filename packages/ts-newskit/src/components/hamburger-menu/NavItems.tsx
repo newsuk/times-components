@@ -1,8 +1,8 @@
-// @ts-nocheck
 import React from 'react';
 import { MenuSub, MenuItem, MenuDivider } from 'newskit';
+import { NavigationItem } from './types';
 
-const NavItems = ({ data, expandedL1, onExpand }) => {
+const NavItems: React.FC<{data: NavigationItem[], expandedL1?: string, onExpand?: Function}> = ({ data, expandedL1, onExpand }) => {
 
   const L1Overrides = {
     stylePreset: 'menuItemL1',
@@ -13,7 +13,8 @@ const NavItems = ({ data, expandedL1, onExpand }) => {
   };
   
   return (
-    data.map(item => (
+    <>
+    {data.map(item => (
       item.items ? (
         <>
           <MenuSub
@@ -48,7 +49,8 @@ const NavItems = ({ data, expandedL1, onExpand }) => {
           <MenuDivider />
         </>
       )
-    ))
+    ))}
+    </>
   );
 };
 
