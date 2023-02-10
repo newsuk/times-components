@@ -1,5 +1,6 @@
 import React from 'react';
-import { ThemeProvider } from 'newskit';
+// import { ThemeProvider } from 'newskit';
+import { NewsKitProvider } from 'newskit';
 
 import { TimesWebLightTheme } from '../../theme';
 
@@ -17,8 +18,8 @@ import { DynamicNav } from './dynamic-nav';
 
 export const GlobalNav  = () => {
   return (
-    <ThemeProvider theme={TimesWebLightTheme}>
+    <NewsKitProvider theme={TimesWebLightTheme}>
         <DynamicNav />
-    </ThemeProvider>
+    </NewsKitProvider>
   );
 };

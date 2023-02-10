@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeProvider, Menu, MenuItem, MenuSub, styled, useMediaQueryObject } from 'newskit';
+import { ThemeProvider, Menu, MenuItem, MenuSub, styled, useMediaQueryObject, Visible } from 'newskit';
 
 import { TimesWebLightTheme } from '../../theme';
 // eslint-disable-next-line no-script-url
@@ -42,37 +42,56 @@ const MenuMore = ({children}: {children: React.ReactNode}) => (
 );
 
 const items: MenuElement[] = [
-  {title: 'About'},
-  {
-    title: 'Guides',
-  },
-  {
-    title: 'Theme',
-  },
-  {
-    title: 'Components',
-    items: [
-      {title: 'Overview'},
-      {
-        title: 'Actions & Inputs',
-        items: [{title: 'Button'}, {title: 'Checkbox'}, {title: 'Form'}],
-      },
-    ],
-  },
+  {title: 'Home'},
+  {title: 'News'},
+  {title: 'Comment'},
+  {title: 'Life & Style'},
+  {title: 'Art & Books'},
+  {title: 'Business & Money'},
+  {title: 'Sport'},
+  {title: 'Magazines'},
+  {title: 'Puzzles'}
 ];
 
+// Left this here to demonstrtae we can use a seconadary NAV
+// automagically by including the data as structured below.
+//
+//
+// const items: MenuElement[] = [
+//   {title: 'Home'},
+//   {title: 'News'},
+//   {title: 'Comment'},
+//   {title: 'Life & Style'},
+//   {title: 'Art & Books'},
+//   {title: 'Business & Money'},
+//   {title: 'Sport'},
+//   {title: 'Magazines'},
+//   {title: 'Puzzles',
+//    // Introduces a secondary nav is required
+//     items: [
+//     {title: 'Crosswords'},
+//       // This introduces a third level Menu is require
+//       {
+//         title: 'Yesterday\'s Puzzles',
+//         items: [{title: 'Button'}, {title: 'Checkbox'}, {title: 'Form'}],
+//       },
+//       {title: 'Sudoku'},
+//       {title: 'Numberwang'},
+//     ],
+//   },
+// ];
+
 const HorizontalContainerLarge = styled.div`
-  min-height: 300px;
+  min-height: 50px;
 `;
 
-// export const DynamicNav = () => {  
-export const DynamicNav: React.FC<{}> = () => {
+export const DynamicNav = () => {
   const splitNumber = useMediaQueryObject({
-    xs: 2,
-    sm: 3,
-    md: 4,
-    lg: 5,
-    xl: 5,
+    xs: 0,
+    sm: 0,
+    md: 0,
+    lg: 4,
+    xl: 9,
   });
 
   const {visible, invisible} = splitMenuItems(items, splitNumber || 1000);
@@ -80,12 +99,14 @@ export const DynamicNav: React.FC<{}> = () => {
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
       <HorizontalContainerLarge>
-        <Menu aria-label="menu-multiple-auto">
-          {createMenu(visible)}
-          {invisible.length > 0 && (
-            <MenuMore>{createMoreMenu(invisible)}</MenuMore>
-          )}
-        </Menu>
+        <Visible lg xl>
+          <Menu aria-label="menu-multiple-auto">
+            {createMenu(visible)}
+            {invisible.length > 0 && (
+              <MenuMore>{createMoreMenu(invisible)}</MenuMore>
+            )}
+          </Menu>
+        </Visible>
       </HorizontalContainerLarge>
     </ThemeProvider>
   );
