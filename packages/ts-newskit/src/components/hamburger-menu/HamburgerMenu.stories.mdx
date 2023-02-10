@@ -1,14 +1,15 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs'
+import { Menu } from 'newskit';
 import { HamburgerMenu } from "./HamburgerMenu.tsx";
-import { FullHamburgerMenu } from './FullHamburgerMenu.tsx'
 import SearchBar from './SearchBar.tsx';
-import { boolean } from "@storybook/addon-knobs"
+import { boolean, object } from "@storybook/addon-knobs"
 import { TimesWebLightTheme } from '../../theme';
 import { ThemeProvider } from 'newskit';
 import NavButtonSection, { LoggedInNavButtons, LoggedOutNavButtons } from './NavButtons.tsx'
 import mainNavItems from './fixtures/menu-items.json';
 import LoggedInMenuItem from './LoggedInMenuItem.tsx';
 import LoggedOutNavButton from './LoggedOutNavButton';
+import NavItems from './NavItems.tsx';
 
 
 <Meta
@@ -27,9 +28,6 @@ Component's description and any notes worth mentioning
   <Story name="HamburgerMenu Logged out">
       <HamburgerMenu loggedIn={false} navbarVisibility={true}/>
   </Story>
-    <Story name="Full HamburgerMenu">
-      <FullHamburgerMenu loggedIn={boolean('Is logged in', false)}/>
-  </Story>
   <Story name="Search Bar">
     <ThemeProvider theme={TimesWebLightTheme}>
       <SearchBar />
@@ -47,12 +45,19 @@ Component's description and any notes worth mentioning
   </Story>
   <Story name="Logged Out Button Primary">
     <ThemeProvider theme={TimesWebLightTheme}>
-    <LoggedOutNavButton title="Log in" preset="buttonSolidPrimary" />
+    <LoggedOutNavButton title="Subscribe" preset="buttonSolidPrimary" />
     </ThemeProvider>
   </Story>
   <Story name="Logged Out Button Secondary">
     <ThemeProvider theme={TimesWebLightTheme}>
-    <LoggedOutNavButton title="Subscribe" preset="buttonSolidSecondary" />
+    <LoggedOutNavButton title="Log in" preset="buttonSolidSecondary" />
+    </ThemeProvider>
+  </Story>
+  <Story name="Nav Items">
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <Menu vertical>
+        <NavItems data={mainNavItems.menuItems} expandedL1={'news'} onExpand={() => console.log('Expaaand')} />
+      </Menu>
     </ThemeProvider>
   </Story>
 </Canvas>

@@ -23,7 +23,9 @@ export const menuStylePresets = {
   menuState: {
     base: {
       backgroundColor: '#151515',
-      color: '{{colors.inkNonEssential}}'
+      color: '{{colors.inkNonEssential}}',
+      borderBottom: '2px solid #333333',
+      marginRight: '0px',
     },
     selected: {
       borderBottom: '2px solid #EEEEEE',
@@ -34,7 +36,7 @@ export const menuStylePresets = {
     base: {
       backgroundColor: '#151515',
       iconColor: '{{colors.neutral050}}',
-      color: '{{colors.inkInverse}}'
+      color: '{{colors.inkInverse}}',
     },
     hover: {
       backgroundColor: '{{colors.interfaceNeutral010}}'
@@ -45,7 +47,7 @@ export const menuStylePresets = {
   },
   menuItemL2: {
     base: {
-      paddingLeft: '16px',
+      paddingLeft: '32px',
       backgroundColor: '#222222',
       color: '{{colors.inkInverse}}',
       iconColor: '{{colors.neutral050}}',
@@ -67,7 +69,6 @@ export const menuStylePresets = {
     base: {
     backgroundColor: '#151515',
     color: '#828282',
-    fontFamily: 'GillSansMTStd-Medium'
     },
   },
   searchBar: {
@@ -75,15 +76,18 @@ export const menuStylePresets = {
       backgroundColor: '{{colors.interfaceNeutral010}}',
       color: '#9C9C9C',
       borderRadius: '8px',
+      marginBottom: 0,
       height: '40px'
     }
   },
-  anotherBlock: {
+  IconPreset1: {
     base: {
-      backgroundColor: '{{colors.neutral100}}',
-      display: 'flex',
-      alignItems: 'center',
-      height: '50px'
+      transform: 'rotate(270deg)'
+    }
+  },
+  IconPreset2: {
+    base: {
+      transform: 'rotate(180deg)'
     }
   }
 };

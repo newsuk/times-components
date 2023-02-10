@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Menu, IconButton, getColorCssFromTheme, getSizingCssFromTheme } from 'newskit';
+import { Menu } from 'newskit';
 
 export const StyledMenu = styled(Menu)`
   ul {
@@ -7,33 +7,22 @@ export const StyledMenu = styled(Menu)`
   }
   li {
     width: 100%;
+    margin: 0px;
   }
 `
 
 export const MenuNav = styled(Menu)`
-  &.menuNav {
     overflow-y: scroll;
     background-color: #151515;
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
     height: 100vh;
-    width: 0;
-    max-width: 320px;
-    z-index: 9;
-    &.showMenu {
-      width: 100%;
+    width: 320px;
+    @media(min-width: 520px){
+      width: 520px;
     }
-  }
-`;
-
-export const NavButton = styled(IconButton)`
-  &.navButton {
-    position: fixed;
-    top: 0;
-  }
-  &.hideButton {
-    display: none
-  }
+    @media(min-width: 768px) {
+      width: 320px;
+    }
 `;

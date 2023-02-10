@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React from 'react';
-import { Button, Block } from 'newskit';
+import { Block } from 'newskit';
 import LoggedInMenuItem from './LoggedInMenuItem';
 import SearchBar from './SearchBar';
 import { StyledMenu } from './styles';
@@ -9,26 +9,28 @@ import accountItems from './fixtures/account-items.json';
 import LoggedOutNavButton from './LoggedOutNavButton';
 
 export const LoggedOutNavButtons = () => (
-  <Block paddingInline='space030'>
-    <div style={{display: 'flex'}}>
-      <LoggedOutNavButton size="small" preset="buttonSolidSecondary" title="Log in"></LoggedOutNavButton>
-      <div style={{margin: '4px'}}></div>
-      <LoggedOutNavButton size="small" preset="buttonSolidPrimary" title="Subscribe"></LoggedOutNavButton>
+  <>
+  <Block paddingInline='space040' paddingBlock="space030" style={{backgroundColor: '#1D1D1B'}}>
+  <div style={{ display: 'flex'}}>
+      <LoggedOutNavButton preset="buttonSolidSecondary" title="Log in"></LoggedOutNavButton>
+      <div style={{margin: "4px"}}></div>
+      <LoggedOutNavButton preset="buttonSolidPrimary" title="Subscribe"></LoggedOutNavButton>
     </div>
-    <Block marginBlock={'space030'}>
+    </Block>
+    <Block marginInline={'space040'} marginBlock={'space040'}>
       <SearchBar />
     </Block>
-  </Block>
+    </>
 );
 
 export const LoggedInNavButtons = ({ handleClickMain, handleClickAccount, navigationData }) => (
   <>
-    <Block paddingInline="space040">
-      <SearchBar/>
+  <Block paddingInline="space040" marginBlock={'space040'}>
+      <SearchBar />
     </Block>
     <StyledMenu>
       <LoggedInMenuItem navItems={mainNavItems} title="Sections" handleClick={handleClickMain} navigationData={navigationData} />
-      <LoggedInMenuItem navItems={accountItems} title="Account" handleClick={handleClickAccount} navigationData={navigationData} />
+      <LoggedInMenuItem navItems={accountItems} title="My account" handleClick={handleClickAccount} navigationData={navigationData} />
     </StyledMenu>
   </>
 )

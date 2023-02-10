@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import { MenuSub, MenuItem, MenuDivider } from 'newskit';
 
@@ -6,8 +7,9 @@ const NavItems = ({ data, expandedL1, onExpand }) => {
   const L1Overrides = {
     stylePreset: 'menuItemL1',
   };
+
   const L2Overrides = {
-    stylePreset: 'menuItemL2'
+    stylePreset: 'menuItemL2',
   };
   
   return (
@@ -19,7 +21,12 @@ const NavItems = ({ data, expandedL1, onExpand }) => {
             id={`vertical-${item.slug}`}
             expanded={expandedL1 === item.slug}
             onClick={() => expandedL1 !== item.slug ? onExpand(item.slug): onExpand('')}
-            overrides={{...L1Overrides}}
+            overrides={{...L1Overrides, indicatorIcon:  { props: {
+              overrides: {
+                stylePreset: `${expandedL1 !== item.slug ? 'IconPreset1' : 'IconPreset2'}`
+              }
+            }}}}
+            
           >
             {item.items.map(i => (
               <>
@@ -29,6 +36,7 @@ const NavItems = ({ data, expandedL1, onExpand }) => {
                 <MenuDivider />
               </>
             ))}
+            
           </MenuSub>
           <MenuDivider />
         </>
