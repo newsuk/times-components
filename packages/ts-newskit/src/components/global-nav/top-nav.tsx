@@ -24,7 +24,7 @@ const createMenu = (items: MenuElement[]) =>
       return <MenuSub title={title}>{createMenu(subItems)}</MenuSub>;
     }
 
-    return <MenuItem href={href} className="menuItemL1 menuItemL1{breakpointKey}">{title}</MenuItem>;
+    return <MenuItem href={href} className={"menuItemL1 menuItemL1"+breakpointKey}>{title}</MenuItem>;
   });
 const createMoreMenu = (items: MenuElement[]) =>
   items.map(({title, items: subItems}) => {
