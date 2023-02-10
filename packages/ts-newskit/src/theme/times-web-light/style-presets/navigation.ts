@@ -1,4 +1,4 @@
-export const menuStylePresets = {
+export const navStylePresets = {
     buttonSolidPrimary: {
       base: {
         backgroundColor: '{{colors.interactivePrimary030}}',
@@ -35,13 +35,14 @@ export const menuStylePresets = {
         color: '{{colors.inkNonEssential}}'
       },
       selected: {
-        borderBottom: '2px solid #EEEEEE',
+        borderBottom: '4px solid #1E1E1E',
         color: '{{colors.inkInverse}}',
       }
     },
     menuItemL1: {
       base: {
         backgroundColor: '#FFFFFF',
+        color: '#000000',
         iconColor: '{{colors.neutral050}}',
         borderBottom: '4px solid transparent'
       },

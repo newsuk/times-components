@@ -1,18 +1,17 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs'
-import { TopNav } from "./top-nav.tsx";
+import { GlobalNav } from "./index.tsx";
 
 <Meta
   title="Newskit/Global Navigation"
-  component={TopNav}
+  component={GlobalNav}
 />
 
 # Markdown Top Navigation component
-
-Component's description and any notes worth mentioning
+Only works at LG and XL viewports. Change the viewport above to see the content.
 
 <Canvas>
-  <Story name="TopNav">
-      <TopNav/>
+  <Story name="DynamicNav">
+      <GlobalNav/>
   </Story>
 </Canvas>
 
