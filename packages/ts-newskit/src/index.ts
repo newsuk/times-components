@@ -1,1 +1,1 @@
-export { TopNav } from './components/global-nav/top-nav';
+export { GlobalNav } from './components/global-nav/index';
