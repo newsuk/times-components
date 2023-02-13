@@ -28,22 +28,12 @@ commands:
                   key: yarn-packages-{{ checksum "yarn.lock" }}
                   paths:
                       - ~/.cache/yarn
-    install-fontforge:
-        description: 'Install fontforge'
-        steps:
-            - run:
-                  name: Install fontforge
-                  command: |
-                    sudo apt-get update;
-                    sudo add-apt-repository ppa:fontforge/fontforge -y;
-                    sudo apt-get install fontforge -y;
 
 jobs:
     setup:
         executor: node
         steps:
             - checkout
-            - install-fontforge
             - restore-yarn
             - install-dependencies
             - save-yarn

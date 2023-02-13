@@ -1,104 +1,64 @@
 <style>
   @font-face {
     font-family: TimesModern-Bold;
-    src: url(fonts/TimesModern-Bold.woff2) format("woff2"),
-      url(fonts/TimesModern-Bold.woff) format("woff"),
-      url(fonts/TimesModern-Bold.ttf) format("ttf"),
-      url(https://www.thetimes.co.uk/fonts/TimesModern-Bold.woff) format("woff"),
-      url(https://www.thetimes.co.uk/fonts/TimesModern-Bold.eot?iefix) format("eot"),
-      url(https://www.thetimes.co.uk/fonts/TimesModern-Bold.ttf) format("truetype"),
-      url(https://www.thetimes.co.uk/fonts/TimesModern-Bold.svg#webfont) format("svg");
+    src: url(./static/fonts/TimesModern-Bold.woff2) format("woff2"),
+      url(./static/fonts/TimesModern-Bold.woff) format("woff");
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face {
     font-family: TimesModern-Regular;
-    src: url(fonts/TimesModern-Regular.woff2) format("woff2"),
-      url(fonts/TimesModern-Regular.woff) format("woff"),
-      url(fonts/TimesModern-Regular.ttf) format("ttf"),
-      url(https://www.thetimes.co.uk/fonts/TimesModern-Regular.woff) format("woff"),
-      url(https://www.thetimes.co.uk/fonts/TimesModern-Regular.eot?iefix) format("eot"),
-      url(https://www.thetimes.co.uk/fonts/TimesModern-Regular.ttf) format("truetype"),
-      url(https://www.thetimes.co.uk/fonts/TimesModern-Regular.svg#webfont) format("svg");
+    src: url(./static/fonts/TimesModern-Regular.woff2) format("woff2"),
+      url(./static/fonts/TimesModern-Regular.woff) format("woff");
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face {
     font-family: TimesDigitalW04-RegularSC;
-    src: url(fonts/TimesDigitalW04-RegularSC.woff2) format("woff2"),
-      url(fonts/TimesDigitalW04-RegularSC.woff) format("woff"),
-      url(fonts/TimesDigitalW04-RegularSC.ttf) format("ttf"),
-      url(https://www.thetimes.co.uk/fonts/TimesDigital-RegularSC.woff2) format("woff2"),
-      url(https://www.thetimes.co.uk/fonts/TimesDigital-RegularSC.woff) format("woff"),
-      url(https://www.thetimes.co.uk/fonts/TimesDigital-RegularSC.ttf) format("truetype"),
-      url(https://www.thetimes.co.uk/fonts/TimesDigital-RegularSC.eot?iefix) format("eot"),
-      url(https://www.thetimes.co.uk/fonts/TimesDigital-RegularSC.svg#webfont) format("svg");
+    src: url(./static/fonts/TimesDigitalW04-RegularSC.woff2) format("woff2"),
+      url(./static/fonts/TimesDigitalW04-RegularSC.woff) format("woff");
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face {
     font-family: GillSansMTStd-Medium;
-    src: url(fonts/GillSansMTStd-Medium.woff2) format("woff2"),
-      url(fonts/GillSansMTStd-Medium.woff) format("woff"),
-      url(fonts/GillSansMTStd-Medium.ttf) format("ttf"),
-      url(https://www.thetimes.co.uk/fonts/GillSansW01-Medium.woff2) format("woff2"),
-      url(https://www.thetimes.co.uk/fonts/GillSansW01-Medium.woff) format("woff"),
-      url(https://www.thetimes.co.uk/fonts/GillSansW01-Medium.eot?iefix) format("eot"),
-      url(https://www.thetimes.co.uk/fonts/GillSansW01-Medium.svg#webfont) format("svg");
+    src: url(./static/fonts/GillSansMTStd-Medium.woff2) format("woff2"),
+      url(./static/fonts/GillSansMTStd-Medium.woff) format("woff");
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face {
     font-family: TimesDigitalW04;
-    src: url(fonts/TimesDigitalW04.woff2) format("woff2"),
-      url(fonts/TimesDigitalW04.woff) format("woff"),
-      url(fonts/TimesDigitalW04.ttf) format("truetype"),
-      url(https://www.thetimes.co.uk/fonts/TimesDigital-Regular.woff2) format("woff2"),
-      url(https://www.thetimes.co.uk/fonts/TimesDigital-Regular.woff) format("woff");
+    src: url(./static/fonts/TimesDigitalW04.woff2) format("woff2"),
+      url(./static/fonts/TimesDigitalW04.woff) format("woff");
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face {
     font-family: TimesDigitalW04-Regular;
-    src: url(fonts/TimesDigitalW04-Regular.woff2) format("woff2"),
-      url(fonts/TimesDigitalW04-Regular.woff) format("woff"),
-      url(fonts/TimesDigitalW04-Regular.ttf) format("ttf"),
-      url(https://www.thetimes.co.uk/fonts/TimesDigital-Regular.woff2) format("woff2"),
-      url(https://www.thetimes.co.uk/fonts/TimesDigital-Regular.woff) format("woff"),
-      url(https://www.thetimes.co.uk/fonts/TimesDigital-Regular.ttf) format("truetype"),
-      url(https://www.thetimes.co.uk/fonts/TimesDigital-Regular.eot?iefix) format("eot"),
-      url(https://www.thetimes.co.uk/fonts/TimesDigital-Regular.svg#webfont) format("svg");
+    src: url(./static/fonts/TimesDigitalW04-Regular.woff2) format("woff2"),
+      url(./static/fonts/TimesDigitalW04-Regular.woff) format("woff");
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face {
     font-family: Roboto-Regular;
-    src: url(fonts/Roboto-Regular.woff2) format("woff2"),
-      url(fonts/Roboto-Regular.woff) format("woff"),
-      url(fonts/Roboto-Regular.ttf) format("ttf"),
-      url(https://www.thetimes.co.uk/fonts/Roboto-Regular.woff2) format("woff2"),
-      url(https://www.thetimes.co.uk/fonts/Roboto-Regular.woff) format("woff"),
-      url(https://www.thetimes.co.uk/fonts/Roboto-Regular.eot?iefix) format("eot"),
-      url(https://www.thetimes.co.uk/fonts/Roboto-Regular.svg#webfont) format("svg");
+    src: url(./static/fonts/Roboto-Regular.woff2) format("woff2"),
+      url(./static/fonts/Roboto-Regular.woff) format("woff");
     font-weight: 400;
     font-style: normal;
   }
 
   @font-face {
     font-family: Roboto-Medium;
-    src: url(fonts/Roboto-Medium.woff2) format("woff2"),
-      url(fonts/Roboto-Medium.woff) format("woff"),
-      url(fonts/Roboto-Medium.ttf) format("ttf"),
-      url(https://www.thetimes.co.uk/fonts/Roboto-Medium.woff2) format("woff2"),
-      url(https://www.thetimes.co.uk/fonts/Roboto-Medium.woff) format("woff"),
-      url(https://www.thetimes.co.uk/fonts/Roboto-Medium.eot?iefix) format("eot"),
-      url(https://www.thetimes.co.uk/fonts/Roboto-Medium.svg#webfont) format("svg");
+    src: url(./static/fonts/Roboto-Medium.woff2) format("woff2"),
+      url(./static/fonts/Roboto-Medium.woff) format("woff");
     font-weight: 400;
     font-style: normal;
   }
