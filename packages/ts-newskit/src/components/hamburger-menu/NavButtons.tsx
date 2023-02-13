@@ -3,8 +3,6 @@ import { Block } from 'newskit';
 import LoggedInMenuItem from './LoggedInMenuItem';
 import SearchBar from './SearchBar';
 import { StyledMenu } from './styles';
-import mainNavItems from './fixtures/menu-items.json';
-import accountItems from './fixtures/account-items.json';
 import LoggedOutNavButton from './LoggedOutNavButton';
 
 export const LoggedOutNavButtons = () => (
@@ -22,24 +20,24 @@ export const LoggedOutNavButtons = () => (
     </>
 );
 
-export const LoggedInNavButtons: React.FC<{ handleClickMain: Function, handleClickAccount: Function, selected: string}> = ({ handleClickMain, handleClickAccount, selected }) => 
+export const LoggedInNavButtons: React.FC<{ handleClick: Function, selected: string}> = ({ handleClick, selected }) => 
   (
   <>
   <Block paddingInline="space040" marginBlock={'space040'}>
       <SearchBar />
     </Block>
     <StyledMenu>
-      <LoggedInMenuItem navItems={mainNavItems} title="Sections" handleClick={handleClickMain}  selected={selected}/>
-      <LoggedInMenuItem navItems={accountItems} title="My account" handleClick={handleClickAccount} selected={selected}/>
+      <LoggedInMenuItem title="Sections" handleClick={handleClick}  selected={selected}/>
+      <LoggedInMenuItem title="My account" handleClick={handleClick} selected={selected}/>
     </StyledMenu>
   </>
 )
 
 
-const NavButtonSection: React.FC<{ loggedIn: boolean, handleClickMain: Function, handleClickAccount: Function, selected: string}> = ({ loggedIn, handleClickMain, handleClickAccount, selected }) => {
+const NavButtonSection: React.FC<{ loggedIn: boolean, handleClick: Function, selected: string}> = ({ loggedIn, handleClick, selected }) => {
   return (
     loggedIn ? (
-      <LoggedInNavButtons handleClickMain={handleClickMain} handleClickAccount={handleClickAccount} selected={selected}/>
+      <LoggedInNavButtons handleClick={handleClick} selected={selected}/>
     ) : (
       <LoggedOutNavButtons />
     )

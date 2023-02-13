@@ -1,13 +1,25 @@
 import React from 'react';
-import { MenuItem, TextBlock } from 'newskit';
-import { NavigationData } from './types';
+import { Button, TextBlock } from 'newskit';
+import styled from 'styled-components';
+
+const StyledButton = styled(Button)<{ isSelected: boolean }>`
+  border-bottom: ${({ isSelected }) => (isSelected ? '1px solid #FFFFFF !important' : '1px solid #C2C2C2 !important')};
+  width: 100%;
+  font-family: Roboto-Regular;
+`;
+
+const StyledTextBlock = styled(TextBlock)<{ isSelected: boolean}>`
+  color: ${({ isSelected }) => (isSelected ? '#FFFFFF' : '#C2C2C2')};
+  font-size: 15px;
+`;
 
 
-const LoggedInMenuItem: React.FC<{ title: string, navItems: NavigationData, handleClick: Function, selected: string}> = ({ title, handleClick, selected }) => {
+const LoggedInMenuItem: React.FC<{ title: string, handleClick: Function, selected: string}> = ({ title, handleClick, selected }) => {
+  const isSelected = selected === title ? true : false; 
   return (
-  <MenuItem selected={selected === title} overrides={{ stylePreset: 'menuState' }} onClick={handleClick}>
-    <TextBlock style={{ fontSize: '15px'}}>{title}</TextBlock>
-  </MenuItem>
+  <StyledButton isSelected={isSelected} overrides={{ stylePreset: 'menuState' }} onClick={() => handleClick(title)}>
+    <StyledTextBlock isSelected={isSelected}>{title}</StyledTextBlock>
+  </StyledButton>
 )};
 
 export default LoggedInMenuItem;

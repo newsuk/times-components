@@ -2,7 +2,8 @@ import React from 'react';
 import { MenuSub, MenuItem, MenuDivider } from 'newskit';
 import { NavigationItem } from './types';
 
-const NavItems: React.FC<{data: NavigationItem[], expandedL1?: string, onExpand?: Function}> = ({ data, expandedL1, onExpand }) => {
+const NavItems: React.FC<{data: NavigationItem[], expandedL1?: string, onExpand: Function}> = ({ data, expandedL1, onExpand }) => {
+  console.log(data, 'DATA FROM NAV ITEMS');
 
   const L1Overrides = {
     stylePreset: 'menuItemL1',

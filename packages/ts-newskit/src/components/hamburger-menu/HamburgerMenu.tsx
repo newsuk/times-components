@@ -1,60 +1,68 @@
 import React, { useState } from 'react';
 import { MenuDivider, Block, Visible, TextBlock, ThemeProvider } from 'newskit';
 import mainNavItems from './fixtures/menu-items.json';
+import navdata from './fixtures/data.json';
 import accountItems from './fixtures/account-items.json';
 import NavButtonSection from './NavButtons'
 import NavItems from './NavItems';
 import { MenuNav } from './styles';
 
+
 import { TimesWebLightTheme } from '../../theme';
 
-type NavigationItemItem = {
+type MenuItemL2 = {
   title: string,
   url: string,
   slug: string
-} 
+}
 
-type NavigationItem = {
-  title: string,
-  url: string
-  slug: string,
-  items?: NavigationItemItem[]
+type MenuItemL1 = {
+    title: string,
+    url: string
+    slug: string,
+    items?: MenuItemL2[]
 }
 
 type NavigationData = {
-  menuItems: NavigationItem[],
-  moreMenuItems?: NavigationItem[]
+  mainMenuItems: MenuItemL1[],
+  moreMenuItems: MenuItemL1[],
+  accountMenuItems: MenuItemL1[],
 }
 
-const HamburgerMenu: React.FC<{ loggedIn: boolean }> = ({ loggedIn }) => {
+const HamburgerMenu: React.FC<{ loggedIn: boolean, data: NavigationData }> = ({ loggedIn, data }) => {
+  console.log(data, 'DATA');
   const [expandedL1, setExpandedL1] = useState<string>('');
-  const [navigationData, setNavigationData] = useState<NavigationData>(mainNavItems)
   const [selected, setSelected] = useState('Sections');
+
+  console.log(selected, 'SELECTED')
   
   const onExpand = (slug: string) => (
     setExpandedL1(slug)
-  )
+  );
 
   const handleClickAccount = () => {
-    setSelected('My account')
-    setNavigationData(accountItems)
+      setSelected('My account')
   };
 
   const handleClickMain = () => {
     setSelected('Sections')
-    setNavigationData(mainNavItems)
   };
- 
 
+const clickHandler = (title: string) => {
+  if(title === 'Sections') {
+    return handleClickMain();
+  }
+  else return handleClickAccount();
+}
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
       <MenuNav aria-label="menu-vertical" vertical align="spaceBetween" overrides={{ spaceInline: 'space000' }}>
         <Visible xs sm>
-            <NavButtonSection loggedIn={loggedIn} handleClickMain={handleClickMain} handleClickAccount={handleClickAccount} selected={selected}/>
+            <NavButtonSection loggedIn={loggedIn} handleClick={clickHandler} selected={selected}/>
         </Visible>
-        <NavItems data={navigationData.menuItems} onExpand={onExpand} expandedL1={expandedL1}/>
+        <NavItems data={selected === 'Sections' ? data.mainMenuItems : data.accountMenuItems} onExpand={onExpand} expandedL1={expandedL1}/>
           {
-            navigationData.moreMenuItems ? (
+            selected === 'Sections' ? (
               <>
                 <Block stylePreset="blockWrapper"
                   paddingInline="space040"
@@ -62,7 +70,7 @@ const HamburgerMenu: React.FC<{ loggedIn: boolean }> = ({ loggedIn }) => {
                   <TextBlock typographyPreset="newPreset010" style={{ fontSize: '14px'}}>More</TextBlock>
                 </Block>
                 <MenuDivider />
-                <NavItems data={navigationData.moreMenuItems}/>
+                <NavItems data={data.moreMenuItems} onExpand={() => {}}/>
               </>
             ) : null}
       </MenuNav>
