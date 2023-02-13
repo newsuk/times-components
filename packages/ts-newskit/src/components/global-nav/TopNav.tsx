@@ -1,9 +1,8 @@
 import React from 'react';
-import { ThemeProvider, Menu, MenuItem, MenuSub, styled, useBreakpointKey, useMediaQueryObject, Visible } from 'newskit';
+import { ThemeProvider, Menu, MenuItem, MenuSub, useBreakpointKey, useMediaQueryObject, Visible } from 'newskit';
 import { TimesWebLightTheme } from '../../theme';
 
 const breakpointKey = useBreakpointKey();
-
 // eslint-disable-next-line no-script-url
 const href = 'javascript:;';
 
@@ -83,11 +82,7 @@ const items: MenuElement[] = [
 //   },
 // ];
 
-const HorizontalContainerLarge = styled.div`
-  min-height: 50px;
-`;
-
-export const TopNav = () => {
+const TopNav: React.FC<{}> = () => {
   const splitNumber = useMediaQueryObject({
     xs: 9,
     sm: 9,
@@ -100,16 +95,16 @@ export const TopNav = () => {
 
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
-      <HorizontalContainerLarge>
-        <Visible xs sm lg xl>
-          <Menu aria-label="menu-multiple-auto">
-            {createMenu(visible)}
-            {invisible.length > 0 && (
-              <MenuMore>{createMoreMenu(invisible)}</MenuMore>
-            )}
-          </Menu>
-        </Visible>
-      </HorizontalContainerLarge>
+      <Visible xs sm lg xl>
+        <Menu aria-label="menu-multiple-auto">
+          {createMenu(visible)}
+          {invisible.length > 0 && (
+            <MenuMore>{createMoreMenu(invisible)}</MenuMore>
+          )}
+        </Menu>
+      </Visible>
     </ThemeProvider>
   );
 };
+
+export default TopNav;

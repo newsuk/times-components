@@ -1,13 +1,15 @@
 import React from 'react';
 import { NewsKitProvider } from 'newskit';
-import { TopNav } from './top-nav';
+import TopNav from './TopNav';
 
 import { TimesWebLightTheme } from '../../theme';
 
-export const GlobalNav = () => {
+const GlobalNav = () => {
   return (
     <NewsKitProvider theme={TimesWebLightTheme}>
         <TopNav />
     </NewsKitProvider>
   );
 };
+
+export default GlobalNav;

@@ -5,5 +5,6 @@
     "jsx": "react",
     "module": "commonjs",
     "inlineSourceMap": true
-  }
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.mdx"],
 }
