@@ -2,12 +2,13 @@ import React from 'react';
 import { cleanup, fireEvent } from '@testing-library/react';
 import { customRender } from './utils/test-utils';
 import '@testing-library/jest-dom';
+import data from '../fixtures/data.json';
 
 import HamburgerMenu from '../HamburgerMenu';
 
 describe('HamburgerMenu', () => {
   it('should render the component', () => {
-    const { asFragment } = customRender(<HamburgerMenu loggedIn={true}/>);
+    const { asFragment } = customRender(<HamburgerMenu data={data} loggedIn={true}/>);
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -21,26 +22,26 @@ describe('HamburgerMenu Logged In', () => {
   });
 
   it('should render the Sections and account section on smaller devices', () => {
-    const { asFragment } = customRender(<HamburgerMenu loggedIn={true}/>);
+    const { asFragment } = customRender(<HamburgerMenu data={data} loggedIn={true}/>);
 
     expect(asFragment()).toMatchSnapshot();
   })
 
   it('should not render the Navigaton Button section on larger devices', () => {
-    const { asFragment } = customRender(<HamburgerMenu loggedIn={true}/>);
+    const { asFragment } = customRender(<HamburgerMenu data={data} loggedIn={true}/>);
 
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('should default to show the Sections', () => {
-    const { getByText, queryByText } = customRender(<HamburgerMenu loggedIn={true} />)
+    const { getByText, queryByText } = customRender(<HamburgerMenu data={data} loggedIn={true} />)
 
     expect(getByText('Home')).toBeVisible();
     expect(queryByText('Manage account')).toBeFalsy();
   });
 
   it('should change the nav items if you click onto the my account button', () => {
-    const { getByText, queryByText } = customRender(<HamburgerMenu loggedIn={true} />)
+    const { getByText, queryByText } = customRender(<HamburgerMenu data={data} loggedIn={true} />)
     const myAccountButton = getByText('My account');
     expect(getByText('Home')).toBeVisible();
     expect(queryByText('Manage account')).toBeFalsy();
@@ -57,13 +58,13 @@ describe('HamburgerMenu Logged Out', () => {
   });
 
   it('should render the login and subscribe buttons when on smaller devices', () => {
-    const { asFragment } = customRender(<HamburgerMenu loggedIn={false}/>);
+    const { asFragment } = customRender(<HamburgerMenu data={data} loggedIn={false}/>);
 
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('should not render the login and subscribe buttons when larger devices', () => {
-    const { asFragment } = customRender(<HamburgerMenu loggedIn={false}/>);
+    const { asFragment } = customRender(<HamburgerMenu data={data} loggedIn={false}/>);
     expect(asFragment()).toMatchSnapshot();
   });
 });

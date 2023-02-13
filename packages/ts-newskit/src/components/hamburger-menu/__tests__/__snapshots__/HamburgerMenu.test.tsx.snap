@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HamburgerMenu Logged In - Small screen should not render the Sections and account section on larger devices 1`] = `
+exports[`HamburgerMenu Logged In should not render the Navigaton Button section on larger devices 1`] = `
 <DocumentFragment>
   <nav
     aria-label="menu-vertical"
@@ -13,7 +13,6 @@ exports[`HamburgerMenu Logged In - Small screen should not render the Sections a
     >
       <div
         class="css-gre9re"
-        data-testid="NavButtonSectionVisibility"
       >
         <div
           class="css-1l9jkg9"
@@ -2488,7 +2487,7 @@ exports[`HamburgerMenu Logged In - Small screen should not render the Sections a
 </DocumentFragment>
 `;
 
-exports[`HamburgerMenu Logged In - Small screen should render the Sections and account section on smaller devices 1`] = `
+exports[`HamburgerMenu Logged In should render the Sections and account section on smaller devices 1`] = `
 <DocumentFragment>
   <nav
     aria-label="menu-vertical"
@@ -2501,7 +2500,6 @@ exports[`HamburgerMenu Logged In - Small screen should render the Sections and a
     >
       <div
         class="css-gre9re"
-        data-testid="NavButtonSectionVisibility"
       >
         <div
           class="css-1l9jkg9"
@@ -4989,7 +4987,6 @@ exports[`HamburgerMenu Logged Out should not render the login and subscribe butt
     >
       <div
         class="css-gre9re"
-        data-testid="NavButtonSectionVisibility"
       >
         <div
           class="css-5qb4r1"
@@ -7479,7 +7476,6 @@ exports[`HamburgerMenu Logged Out should render the login and subscribe buttons 
     >
       <div
         class="css-gre9re"
-        data-testid="NavButtonSectionVisibility"
       >
         <div
           class="css-5qb4r1"
@@ -9969,7 +9965,6 @@ exports[`HamburgerMenu should render the component 1`] = `
     >
       <div
         class="css-gre9re"
-        data-testid="NavButtonSectionVisibility"
       >
         <div
           class="css-1l9jkg9"
