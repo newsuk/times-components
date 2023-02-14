@@ -1,0 +1,418 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Secondary Menu Desktop should render the dropdown 1`] = `
+<DocumentFragment>
+  <nav
+    aria-label="Secondary Navigation"
+    class="sc-bwzfXH kmAcDK css-yl1oeq"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul
+      role="list"
+    >
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/football"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Football
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/rugby-union"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Rugby Union
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/tennis"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Tennis
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/cricket"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Cricket
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/athletics"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Athletics
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/cycling"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Cycling
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/golf"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Golf
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/boxing"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Boxing
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <hr
+    class="sc-bdVaJa bxFYOn"
+  />
+</DocumentFragment>
+`;
+
+exports[`Secondary Menu Mobile should render the dropdown 1`] = `
+<DocumentFragment>
+  <nav
+    aria-label="Secondary Navigation"
+    class="sc-bwzfXH kmAcDK css-yl1oeq"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul
+      role="list"
+    >
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/football"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Football
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/rugby-union"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Rugby Union
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/tennis"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Tennis
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/cricket"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Cricket
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/athletics"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Athletics
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/cycling"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Cycling
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/golf"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Golf
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/boxing"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Boxing
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <hr
+    class="sc-bdVaJa bxFYOn"
+  />
+</DocumentFragment>
+`;
+
+exports[`Secondary Menu Mobile should render the menu 1`] = `
+<DocumentFragment>
+  <nav
+    aria-label="Secondary Navigation"
+    class="sc-bwzfXH kmAcDK css-yl1oeq"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul
+      role="list"
+    >
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/football"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Football
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/rugby-union"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Rugby Union
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/tennis"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Tennis
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/cricket"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Cricket
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/athletics"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Athletics
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/cycling"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Cycling
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/golf"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Golf
+          </span>
+        </a>
+      </li>
+      <li
+        class="nk-menu-item css-1qhmdz3"
+      >
+        <a
+          class="css-ji6zrt"
+          data-testid="buttonLink"
+          href="/boxing"
+        >
+          <span
+            class="css-1kfwj8t"
+          >
+            Boxing
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <hr
+    class="sc-bdVaJa bxFYOn"
+  />
+</DocumentFragment>
+`;
