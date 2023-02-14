@@ -1,7 +1,7 @@
 import React from 'react';
 import { MenuItem } from 'newskit';
-import { MenuDivider, MenuItems, MenuItemsWrapper } from './styles';
-import { SecondaryMenuItem } from './types';
+import { MenuDivider, MenuItems, MenuItemsWrapper } from '../styles';
+import { SecondaryMenuItem } from '../types';
 
 export const NavItems: React.FC<{
   data: SecondaryMenuItem[];

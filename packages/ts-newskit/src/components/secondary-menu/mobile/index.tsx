@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { ThemeProvider, Menu } from 'newskit';
-import { TimesWebLightTheme } from '../../theme';
+import { TimesWebLightTheme } from '../../../theme';
 import { Navigator } from './navigator';
-import { SecondaryMenuItem } from './types';
+import { SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 
 export const SecondaryNavMobile: React.FC<{
   data: SecondaryMenuItem[];
   title: string;
-  isActive:boolean
-}> = ({ data, title , isActive = false }) => {
+  isActive: boolean;
+}> = ({ data, title, isActive = false }) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(isActive);
   const subMenuTitle = isExpanded ? 'Close' : 'See all';
 

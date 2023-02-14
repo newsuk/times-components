@@ -1,15 +1,14 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs'
-import { SecondaryNavMobile } from "./mobile.tsx";
+import { SecondaryNavMobile } from "./index.tsx";
 import { NavItems } from './navItems';
 import { ThemeProvider } from 'newskit';
-import { TimesWebLightTheme } from '../../theme';
+import { TimesWebLightTheme } from '../../../theme';
 import { Menu } from 'newskit';
 import { Navigator } from './navigator';
-import data from './fixtures/menu-items.json';
-import { SecondaryNavDesktop } from "./desktop.tsx"
+import { mainMenuItems } from '../fixtures/menu-items.json';
 
 <Meta
-  title="Newskit/Secondary Menu"
+  title="Newskit/Secondary Menu Mobile"
   component={SecondaryNavMobile}
 />
 
@@ -18,8 +17,8 @@ import { SecondaryNavDesktop } from "./desktop.tsx"
 Secondary Navigation Mobile
  
 <Canvas>
-  <Story name="Secondary Menu">
-      <SecondaryNavMobile data={data} title="Top Stories" isActive={true}/>
+  <Story name="Secondary Menu Mobile">
+      <SecondaryNavMobile data={mainMenuItems} title="Top Stories" isActive={true}/>
   </Story>
 </Canvas>
 
@@ -29,7 +28,7 @@ NavItems
   <Story name="Secondary Menu Items">
     <ThemeProvider theme={TimesWebLightTheme}>
       <Menu vertical>
-         <NavItems data={data} />
+         <NavItems data={mainMenuItems} />
       </Menu>
     </ThemeProvider>
   </Story>
@@ -43,16 +42,6 @@ Text Block and Dropdown
       <Menu vertical>
          <Navigator title="Top Stories" subMenuTitle="Close"/>
       </Menu>
-    </ThemeProvider>
-  </Story>
-</Canvas>
-
-Secondary Navigation Desktop
-
-<Canvas>
-  <Story name="Secondary Navigator Desktop">
-    <ThemeProvider theme={TimesWebLightTheme}>
-         <SecondaryNavDesktop data={data}/>
     </ThemeProvider>
   </Story>
 </Canvas>

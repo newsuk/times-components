@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { ThemeProvider, MenuItem } from 'newskit';
-import { TimesWebLightTheme } from '../../theme';
-import { MenuDivider, MainMenu } from './styles';
-import { SecondaryMenuItem } from './types';
+import { TimesWebLightTheme } from '../../../theme';
+import { MenuDivider, MainMenu } from '../styles';
+import { SecondaryMenuItem } from '../types';
 
 export const SecondaryNavDesktop: React.FC<{ data: SecondaryMenuItem[] }> = ({
   data
 }) => {
-  const [selected, setSelected] = useState("");
+  
+  const [selected, setSelected] = useState('/home');
 
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
@@ -22,6 +23,8 @@ export const SecondaryNavDesktop: React.FC<{ data: SecondaryMenuItem[] }> = ({
             href={item.url}
             selected={selected === item.url}
             onClick={() => setSelected(item.url)}
+            key={item.slug}
+
           >
             {item.title}
           </MenuItem>
