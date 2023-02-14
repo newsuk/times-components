@@ -26,10 +26,16 @@ export const secondaryNavigationStylePresets = {
     base: {
       color: '#1D1D1B',
       backgroundColor: 'white',
-      padding: '12px',
-      minWidth:"100%"
+      padding: '12px 0',
+      minWidth:"100%",
+      borderBottom: '4px solid transparent'
     },
- 
+    hover: {
+      borderBottom: '4px solid black'
+    },
+    selected: {
+      borderBottom: '4px solid black'
+    }, 
   },
   menuItemL1: {
     base: {

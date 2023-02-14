@@ -20,12 +20,6 @@ export const MainMenu = styled(Menu)`
     height: 20px;
     color: '#1D1D1B';
   }
-
-  & li span:hover::after {
-    border: 4px solid black;
-    width: auto;
-    margin-top: 10px;
-  }
 `;
 
 export const MenuItems = styled.div`
