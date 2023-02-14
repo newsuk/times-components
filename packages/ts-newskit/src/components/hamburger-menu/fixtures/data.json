@@ -11,6 +11,11 @@
       "slug": "news",
       "items": [
         {
+          "title": "Top stories",
+          "url": "/news",
+          "slug": "top-stories-news"
+        },
+        {
           "title": "UK",
           "url": "/uk",
           "slug": "uk"
@@ -68,6 +73,11 @@
       "slug": "comment",
       "items": [
         {
+          "title": "Top stories",
+          "url": "/comment",
+          "slug": "top-stories-comment"
+        },
+        {
           "title": "Columnists",
           "url": "/columnists",
           "slug": "columnists"
@@ -99,6 +109,11 @@
       "url": "/life-and-style",
       "slug": "life-and-style",
       "items": [
+        {
+          "title": "Top stories",
+          "url": "/life-and-style",
+          "slug": "top-stories-life-and-style"
+        },
         {
           "title": "Property",
           "url": "/property",
@@ -157,6 +172,11 @@
       "slug": "arts-and-books",
       "items": [
         {
+          "title": "Top stories",
+          "url": "/arts-and-books",
+          "slug": "top-stories-arts-and-books"
+        },
+        {
           "title": "TV & Radio",
           "url": "/tv-and-radio",
           "slug": "tv-and-radio"
@@ -193,6 +213,11 @@
       "url": "/sport",
       "slug": "sport",
       "items": [
+        {
+          "title": "Top stories",
+          "url": "/sport",
+          "slug": "top-stories-sport"
+        },
         {
           "title": "Football",
           "url": "/football",
@@ -250,6 +275,11 @@
       "url": "/business-and-money",
       "slug": "business-and-money",
       "items": [
+        {
+          "title": "Top stories",
+          "url": "/business-and-money",
+          "slug": "top-stories-business-and-money"
+        },
         {
           "title": "Money",
           "url": "/money",

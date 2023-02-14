@@ -6,7 +6,6 @@ import { boolean, object } from "@storybook/addon-knobs"
 import { TimesWebLightTheme } from '../../theme';
 import { ThemeProvider } from 'newskit';
 import NavButtonSection, { LoggedInNavButtons, LoggedOutNavButtons } from './NavButtons.tsx'
-import mainNavItems from './fixtures/menu-items.json';
 import LoggedInMenuItem from './LoggedInMenuItem.tsx';
 import LoggedOutNavButton from './LoggedOutNavButton';
 import NavItems from './NavItems.tsx';
@@ -22,9 +21,9 @@ import data from './fixtures/data.json';
 
 Component's description and any notes worth mentioning
 
-<Canvas>
+<Canvas isColumn withSource="open" withToolbar>
   <Story name="HamburgerMenu Logged in">
-      <HamburgerMenu data={data} loggedIn={true} navbarVisibility={true} />
+    <HamburgerMenu data={data} loggedIn={true} navbarVisibility={true} />
   </Story>
   <Story name="HamburgerMenu Logged out">
       <HamburgerMenu data={data} loggedIn={false} navbarVisibility={true}/>
@@ -52,13 +51,6 @@ Component's description and any notes worth mentioning
   <Story name="Logged Out Button Secondary">
     <ThemeProvider theme={TimesWebLightTheme}>
     <LoggedOutNavButton title="Log in" preset="buttonSolidSecondary" />
-    </ThemeProvider>
-  </Story>
-  <Story name="Nav Items">
-    <ThemeProvider theme={TimesWebLightTheme}>
-      <Menu vertical>
-        <NavItems data={mainNavItems.menuItems} expandedL1={'news'} onExpand={() => console.log('Expaaand')} />
-      </Menu>
     </ThemeProvider>
   </Story>
 </Canvas>
