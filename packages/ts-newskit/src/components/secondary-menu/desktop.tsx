@@ -17,7 +17,7 @@ export const SecondaryNavDesktop: React.FC<{ data: SecondaryMenuItem[] }> = ({
         {data.map(item => (
           <MenuItem
             overrides={{ stylePreset: 'menuItemDesktop' }}
-            href={`/${item.slug}`}
+            href={item.url}
           >
             {item.title}
           </MenuItem>
