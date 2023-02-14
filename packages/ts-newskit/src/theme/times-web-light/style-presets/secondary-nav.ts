@@ -26,8 +26,10 @@ export const secondaryNavigationStylePresets = {
     base: {
       color: '#1D1D1B',
       backgroundColor: 'white',
-      padding: '12px'
-    }
+      padding: '12px',
+      minWidth:"100%"
+    },
+ 
   },
   menuItemL1: {
     base: {
@@ -37,7 +39,6 @@ export const secondaryNavigationStylePresets = {
       fontSize: '{{fonts.fontSize030}}',
       lineHeight: '{{fonts.fontLineHeight070}}',
       padding: '12px 32px',
-      width: '600px'
     },
     hover: {
       backgroundColor: 'rgba(245,245,245,1)'
