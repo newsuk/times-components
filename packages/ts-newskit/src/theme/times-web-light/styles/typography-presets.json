@@ -239,6 +239,14 @@
     "letterSpacing": "{{fonts.fontLetterSpacing010}}",
     "fontStretch": "normal"
   },
+  "utilityHeading060": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight030}}",
+    "fontSize": "{{fonts.fontSize020}}",
+    "lineHeight": "{{fonts.fontLineHeight090}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+    "fontStretch": "normal"
+  },
   "utilitySubheadline010": {
     "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
     "fontWeight": "{{fonts.fontWeight020}}",

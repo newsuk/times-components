@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Football",
+    "url": "/football",
+    "slug": "football"
+  },
+  {
+    "title": "Rugby Union",
+    "url": "/rugby-union",
+    "slug": "rugby-union"
+  },
+  {
+    "title": "Tennis",
+    "url": "/tennis",
+    "slug": "tennis"
+  },
+  {
+    "title": "Cricket",
+    "url": "/cricket",
+    "slug": "cricket"
+  },
+  {
+    "title": "Athletics",
+    "url": "/athletics",
+    "slug": "athletics"
+  },
+  {
+    "title": "Cycling",
+    "url": "/cycling",
+    "slug": "cycling"
+  },
+  {
+    "title": "Formula One",
+    "url": "/formula-one",
+    "slug": "formula-one"
+  },
+  {
+    "title": "Golf",
+    "url": "/golf",
+    "slug": "golf"
+  },
+  {
+    "title": "Horse Racing",
+    "url": "/horse-racing",
+    "slug": "horse-racing"
+  },
+  {
+    "title": "Boxing",
+    "url": "/boxing",
+    "slug": "boxing"
+  }
+]

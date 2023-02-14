@@ -1,0 +1,59 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs'
+import { SecondaryNavMobile } from "./mobile.tsx";
+import { NavItems } from './navItems';
+import { ThemeProvider } from 'newskit';
+import { TimesWebLightTheme } from '../../theme';
+import { Menu } from 'newskit';
+import { Navigator } from './navigator';
+import data from './fixtures/menu-items.json';
+import { SecondaryNavDesktop } from "./desktop.tsx"
+
+<Meta
+  title="Newskit/Secondary Menu"
+  component={SecondaryNavMobile}
+/>
+
+# Secondary Navigation component
+
+Secondary Navigation Mobile
+ 
+<Canvas>
+  <Story name="Secondary Menu">
+      <SecondaryNavMobile data={data} title="Top Stories" isActive={true}/>
+  </Story>
+</Canvas>
+
+NavItems
+
+<Canvas>
+  <Story name="Secondary Menu Items">
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <Menu vertical>
+         <NavItems data={data} />
+      </Menu>
+    </ThemeProvider>
+  </Story>
+</Canvas>
+
+Text Block and Dropdown
+
+<Canvas>
+  <Story name="Secondary Navigator">
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <Menu vertical>
+         <Navigator title="Top Stories" subMenuTitle="Close"/>
+      </Menu>
+    </ThemeProvider>
+  </Story>
+</Canvas>
+
+Secondary Navigation Desktop
+
+<Canvas>
+  <Story name="Secondary Navigator Desktop">
+    <ThemeProvider theme={TimesWebLightTheme}>
+         <SecondaryNavDesktop data={data}/>
+    </ThemeProvider>
+  </Story>
+</Canvas>
+
