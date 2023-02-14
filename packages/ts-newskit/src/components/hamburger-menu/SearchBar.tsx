@@ -8,9 +8,7 @@ const SearchBar: React.FC<{}> = () => (
     id="icon-placement"
     aria-describedby="icon-placement-at"
     placeholder="Search times.co.uk"
-    startEnhancer={
-      <NewsKitSearchIcon overrides={{size: 'iconSize010'}} />
-    }
+    startEnhancer={<NewsKitSearchIcon overrides={{ size: 'iconSize010' }} />}
     overrides={{ stylePreset: 'searchBar' }}
   />
 );

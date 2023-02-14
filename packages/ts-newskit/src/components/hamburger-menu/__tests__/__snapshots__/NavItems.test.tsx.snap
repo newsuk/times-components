@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NavItems renders the component with nested items 1`] = `
+exports[`NavigationList renders the component with nested items 1`] = `
 <DocumentFragment>
   <li
     class="nk-menu-item css-1kdinep"
@@ -236,7 +236,7 @@ exports[`NavItems renders the component with nested items 1`] = `
 </DocumentFragment>
 `;
 
-exports[`NavItems renders the component without nested items 1`] = `
+exports[`NavigationList renders the component without nested items 1`] = `
 <DocumentFragment>
   <li
     class="nk-menu-item css-1kdinep"

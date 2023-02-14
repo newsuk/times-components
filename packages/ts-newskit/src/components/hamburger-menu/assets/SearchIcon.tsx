@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from 'react';
 
 const SearchIcon = (props: any) => (
   <svg
@@ -13,6 +13,6 @@ const SearchIcon = (props: any) => (
       fill="#696969"
     />
   </svg>
-)
+);
 
-export default SearchIcon
+export default SearchIcon;

@@ -3,21 +3,17 @@ import { Menu } from 'newskit';
 import HamburgerMenu from "./HamburgerMenu.tsx";
 import SearchBar from './SearchBar.tsx';
 import { boolean, object } from "@storybook/addon-knobs"
-import { TimesWebLightTheme } from '../../theme';
-import { ThemeProvider } from 'newskit';
 import NavButtonSection, { LoggedInNavButtons, LoggedOutNavButtons } from './NavButtons.tsx'
 import LoggedInMenuItem from './LoggedInMenuItem.tsx';
 import LoggedOutNavButton from './LoggedOutNavButton';
-import NavItems from './NavItems.tsx';
 import data from './fixtures/data.json';
-
+import { StoryWithTheme } from './utils.tsx';
+import { TimesWebLightTheme } from '../../theme';
+import { ThemeProvider } from 'newskit';
 
 <Meta
   title="Newskit/HamburgerMenu"
   component={HamburgerMenu}
-  parameters={{
-    layout: 'centered',
-  }}
 />
 
 # Markdown HamburgerMenu component
@@ -26,7 +22,7 @@ Hamburger Menu Logged In - Buttons visible on XS and SM screens
 
 <Canvas>
   <Story name="HamburgerMenu Logged in">
-    <HamburgerMenu data={data} loggedIn={true} navbarVisibility={true} />
+    <HamburgerMenu data={data} loggedIn={true} />
   </Story>
 </Canvas>
 
@@ -34,7 +30,7 @@ Hamburger Menu Logged out -  Buttons available on XS and SM screens
 
 <Canvas>
   <Story name="HamburgerMenu Logged out">
-      <HamburgerMenu data={data} loggedIn={false} navbarVisibility={true}/>
+      <HamburgerMenu data={data} loggedIn={false} />
   </Story>
 </Canvas>
 
@@ -52,9 +48,9 @@ Nav button section
 
 <Canvas>
    <Story name="Nav Button Section">
-    <ThemeProvider theme={TimesWebLightTheme}> 
+    <ThemeProvider theme={TimesWebLightTheme}>
       <NavButtonSection loggedIn={boolean('Is logged in', false)} handleClickMain={() => console.log('Handle Click Main')} handleClickAccount={() => console.log('Handle Click Account')} />
-        </ThemeProvider>
+    </ThemeProvider>
   </Story>
 </Canvas>
 
@@ -72,14 +68,14 @@ Logged in Menu Items
   </Story>
 </Canvas>
 
-Logged out Buttons 
+Logged out Buttons
 
 <Canvas>
   <Story name="Logged Out Buttons">
     <ThemeProvider theme={TimesWebLightTheme}>
-    <LoggedOutNavButton title="Primary" preset="buttonSolidPrimary" />
-    <div style={{ height: '8px'}}></div>
-    <LoggedOutNavButton title="Secondary" preset="buttonSolidSecondary" />
+      <LoggedOutNavButton title="Primary" preset="buttonSolidPrimary" />
+        <div style={{ height: '8px'}}></div>
+      <LoggedOutNavButton title="Secondary" preset="buttonSolidSecondary" />
     </ThemeProvider>
   </Story>
 </Canvas>

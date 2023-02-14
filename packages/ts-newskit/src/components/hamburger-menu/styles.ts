@@ -9,7 +9,7 @@ export const StyledMenu = styled(Menu)`
     width: 100%;
     margin: 0px;
   }
-`
+`;
 
 export const HamburgerContainer = styled.div`
   position: fixed;
@@ -19,13 +19,13 @@ export const HamburgerContainer = styled.div`
 `;
 
 export const MenuNav = styled(Menu)`
-    overflow-y: scroll;
-    background-color: #151515;
+  overflow-y: scroll;
+  background-color: #151515;
+  width: 320px;
+  @media (min-width: 520px) {
+    width: 520px;
+  }
+  @media (min-width: 768px) {
     width: 320px;
-    @media(min-width: 520px){
-      width: 520px;
-    }
-    @media(min-width: 768px) {
-      width: 320px;
-    }
+  }
 `;

@@ -20,18 +20,6 @@ export const menuStylePresets = {
       backgroundColor: '{{colors.neutral080}}'
     }
   },
-  menuState: {
-    base: {
-      backgroundColor: '#151515',
-      color: '{{colors.inkNonEssential}}',
-      borderBottom: '2px solid #333333',
-      marginRight: '0px',
-    },
-    selected: {
-      borderBottom: '2px solid #EEEEEE',
-      color: '{{colors.inkInverse}}',
-    }
-  },
   menuItemL1: {
     base: {
       backgroundColor: '#151515',
@@ -71,9 +59,9 @@ export const menuStylePresets = {
   },
   blockWrapper: {
     base: {
-    backgroundColor: '#151515',
-    color: '#828282',
-    },
+      backgroundColor: '#151515',
+      color: '#828282'
+    }
   },
   searchBar: {
     base: {
