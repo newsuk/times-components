@@ -20,11 +20,9 @@ Go to http://components.thetimes.co.uk
 
 ## Getting Started
 
-1. Install [fontforge](http://fontforge.github.io/en-US/): `brew install fontforge` (See [Fonts section](#fonts))
+1. Run `yarn install`
 
-2. Run `yarn install`
-
-3. Components can be seen running in a storybook:
+2. Components can be seen running in a storybook
 
 - storybook
   1. `yarn storybook`
