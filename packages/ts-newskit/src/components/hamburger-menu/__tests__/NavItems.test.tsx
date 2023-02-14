@@ -27,8 +27,8 @@ describe('NavItems', () => {
     expect(getByText('Item 2')).not.toBeVisible();
   });
   it('calls onExpand when you click on an L1 with sub items', () => {
-    const { getByTestId } = customRender(<NavItems data={testData.mainMenuItems} expandedL1="main-menu-2" onExpand={onExpand}/>)
-    const Button = getByTestId('menu-sub-button')
+    const { getAllByTestId } = customRender(<NavItems data={testData.mainMenuItems} expandedL1="main-menu-2" onExpand={onExpand}/>)
+    const Button = getAllByTestId('menu-sub-button')[0]
     fireEvent.click(Button);
     expect(onExpand).toHaveBeenCalled();
   })

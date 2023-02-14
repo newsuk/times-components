@@ -21,6 +21,23 @@
           "slug": "item-2"
         }
       ]
+    },
+    {
+      "title": "Main Menu 3",
+      "url": "/main-menu-3",
+      "slug": "main-menu-3",
+      "items": [
+        {
+          "title": "Menu 3 Item 1",
+          "url": "/item-1",
+          "slug": "item-1"
+        },
+        {
+          "title": "Menu 3 Item 2",
+          "url": "/menu-3-item-2",
+          "slug": "menu-3-item-2"
+        }
+      ]
     }
   ],
   "accountMenuItems": [
