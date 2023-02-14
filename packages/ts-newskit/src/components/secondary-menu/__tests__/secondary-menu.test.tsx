@@ -5,7 +5,7 @@ import data from '../fixtures/menu-items.json';
 import { SecondaryNavMobile } from '../mobile';
 import { cleanup, fireEvent } from '@testing-library/react';
 
-describe('Secondary Manu Mobile', () => {
+describe('Secondary Menu Mobile', () => {
   afterEach(() => {
     jest.clearAllMocks();
     cleanup();
