@@ -6,12 +6,16 @@ import { SecondaryMenuItem } from './types';
 export const NavItems: React.FC<{
   data: SecondaryMenuItem[];
 }> = ({ data }) => {
+  const menuItemsPreset = {
+    stylePreset: 'menuItemL1'
+  };
+
   return (
     <MenuItemsWrapper>
       {data.map(item => (
         <MenuItems>
           <MenuItem
-            overrides={{ stylePreset: 'menuItemMobile' }}
+            overrides={{ ...menuItemsPreset, typographyPreset: 'newPreset01' }}
             href={item.url}
             id={`vertical-${item.slug}`}
             key={item.slug}

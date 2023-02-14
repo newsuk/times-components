@@ -7,7 +7,11 @@ export const Navigator: React.FC<{
   isExpanded: boolean;
   subMenuTitle: string;
   setIsExpanded: (value: boolean) => void;
-}> = ({ title, isExpanded, setIsExpanded, subMenuTitle,children }) => {
+}> = ({ title, isExpanded, setIsExpanded, subMenuTitle, children }) => {
+  const menuSubPreset = {
+    stylePreset: 'subMenu'
+  };
+
   return (
     <>
       <MenuWrapper>
@@ -19,8 +23,20 @@ export const Navigator: React.FC<{
           onClick={() => {
             setIsExpanded(!isExpanded);
           }}
-          overrides={{ stylePreset: 'subMenu' }}
-        >{children}</MenuSub>
+          overrides={{
+            ...menuSubPreset,
+            typographyPreset: 'newPreset02',
+            indicatorIcon: {
+              props: {
+                overrides: {
+                  stylePreset: 'icon'
+                }
+              }
+            }
+          }}
+        >
+          {children}
+        </MenuSub>
       </MenuWrapper>
     </>
   );

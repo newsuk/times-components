@@ -4,9 +4,10 @@ export const secondaryNavigationStylePresets = {
       borderRadius: '4px',
       backgroundColor: 'white',
       height: '32px',
-      width: '100px !important',
+      width: '87px !important',
       marginTop: '8px',
       marginRight: '16px',
+      iconSize: '16px',
       minHeight: '30px',
       padding: '12px 0 12px 12px'
     },
@@ -14,7 +15,7 @@ export const secondaryNavigationStylePresets = {
       borderRadius: '4px',
       backgroundColor: 'white',
       height: '32px',
-      width: '100px !important',
+      width: '87px !important',
       marginTop: '8px',
       marginRight: '16px',
       minHeight: '30px',
@@ -28,7 +29,7 @@ export const secondaryNavigationStylePresets = {
       padding: '12px'
     }
   },
-  menuItemMobile: {
+  menuItemL1: {
     base: {
       color: 'black',
       fontFamily: 'Roboto-Medium',
@@ -47,8 +48,13 @@ export const secondaryNavigationStylePresets = {
       color: '#1D1D1B',
       fontFamily: 'Roboto-Medium',
       marginTop: '16px',
-      // paddingLeft: '6px',
       padding: '1px 0 1px 6px'
+    }
+  },
+  icon: {
+    base: {
+      height: '16px',
+      width: '16px'
     }
   }
 };

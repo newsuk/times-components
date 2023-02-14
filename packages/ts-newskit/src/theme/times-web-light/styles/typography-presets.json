@@ -1,4 +1,20 @@
 {
+  "newPreset01": {
+    "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.newFontSize1}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+    "fontStretch": "normal"
+  },
+  "newPreset02": {
+    "fontFamily": "{{fonts.newFontFamily.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight020}}",
+    "fontSize": "{{fonts.newFontSize2}}",
+    "lineHeight": "{{fonts.fontLineHeight030}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+    "fontStretch": "normal"
+  },
   "editorialHeadline010": {
     "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
     "fontWeight": "{{fonts.fontWeight030}}",
