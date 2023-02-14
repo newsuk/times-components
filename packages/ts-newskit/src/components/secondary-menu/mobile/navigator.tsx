@@ -1,6 +1,6 @@
 import React from 'react';
 import { MenuSub, TextBlock } from 'newskit';
-import { MenuWrapper, TextBlockWrapper } from './styles';
+import { MenuWrapper, TextBlockWrapper } from '../styles';
 
 export const Navigator: React.FC<{
   title: string;

@@ -135,13 +135,13 @@ exports[`Secondary Menu Mobile should render the dropdown 1`] = `
             <a
               class="css-16h3dur"
               data-testid="buttonLink"
-              href="/football"
-              id="vertical-football"
+              href="/home"
+              id="vertical-home"
             >
               <span
                 class="css-1t9x538"
               >
-                Football
+                Home
               </span>
             </a>
           </li>
@@ -158,13 +158,13 @@ exports[`Secondary Menu Mobile should render the dropdown 1`] = `
             <a
               class="css-16h3dur"
               data-testid="buttonLink"
-              href="/rugby-union"
-              id="vertical-rugby-union"
+              href="/news"
+              id="vertical-news"
             >
               <span
                 class="css-1t9x538"
               >
-                Rugby Union
+                News
               </span>
             </a>
           </li>
@@ -181,13 +181,13 @@ exports[`Secondary Menu Mobile should render the dropdown 1`] = `
             <a
               class="css-16h3dur"
               data-testid="buttonLink"
-              href="/tennis"
-              id="vertical-tennis"
+              href="/comment"
+              id="vertical-comment"
             >
               <span
                 class="css-1t9x538"
               >
-                Tennis
+                Comment
               </span>
             </a>
           </li>
@@ -204,13 +204,13 @@ exports[`Secondary Menu Mobile should render the dropdown 1`] = `
             <a
               class="css-16h3dur"
               data-testid="buttonLink"
-              href="/cricket"
-              id="vertical-cricket"
+              href="/life-and-style"
+              id="vertical-life-and-style"
             >
               <span
                 class="css-1t9x538"
               >
-                Cricket
+                Life & Style
               </span>
             </a>
           </li>
@@ -227,13 +227,13 @@ exports[`Secondary Menu Mobile should render the dropdown 1`] = `
             <a
               class="css-16h3dur"
               data-testid="buttonLink"
-              href="/athletics"
-              id="vertical-athletics"
+              href="/arts-and-books"
+              id="vertical-arts-and-books"
             >
               <span
                 class="css-1t9x538"
               >
-                Athletics
+                Arts & Books
               </span>
             </a>
           </li>
@@ -250,13 +250,13 @@ exports[`Secondary Menu Mobile should render the dropdown 1`] = `
             <a
               class="css-16h3dur"
               data-testid="buttonLink"
-              href="/cycling"
-              id="vertical-cycling"
+              href="/sport"
+              id="vertical-sport"
             >
               <span
                 class="css-1t9x538"
               >
-                Cycling
+                Sport
               </span>
             </a>
           </li>
@@ -273,13 +273,13 @@ exports[`Secondary Menu Mobile should render the dropdown 1`] = `
             <a
               class="css-16h3dur"
               data-testid="buttonLink"
-              href="/golf"
-              id="vertical-golf"
+              href="/business-and-money"
+              id="vertical-business-and-money"
             >
               <span
                 class="css-1t9x538"
               >
-                Golf
+                Business & Money
               </span>
             </a>
           </li>
@@ -296,13 +296,36 @@ exports[`Secondary Menu Mobile should render the dropdown 1`] = `
             <a
               class="css-16h3dur"
               data-testid="buttonLink"
-              href="/boxing"
-              id="vertical-boxing"
+              href="/puzzles"
+              id="vertical-puzzles"
             >
               <span
                 class="css-1t9x538"
               >
-                Boxing
+                Puzzles
+              </span>
+            </a>
+          </li>
+          <hr
+            class="sc-bdVaJa bxFYOn"
+          />
+        </div>
+        <div
+          class="sc-htpNat jguJDu"
+        >
+          <li
+            class="nk-menu-item css-bkfzpe"
+          >
+            <a
+              class="css-16h3dur"
+              data-testid="buttonLink"
+              href="/magazines"
+              id="vertical-magazines"
+            >
+              <span
+                class="css-1t9x538"
+              >
+                Magazines
               </span>
             </a>
           </li>
