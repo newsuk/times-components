@@ -6,6 +6,7 @@ const SearchBar: React.FC<{}> = () => (
   <TextField
     size="small"
     id="icon-placement"
+    aria-label="Search times.co.uk"
     aria-describedby="icon-placement-at"
     placeholder="Search times.co.uk"
     startEnhancer={<NewsKitSearchIcon overrides={{ size: 'iconSize010' }} />}
