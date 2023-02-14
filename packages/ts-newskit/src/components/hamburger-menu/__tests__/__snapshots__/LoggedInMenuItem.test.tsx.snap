@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logged in Menu Item should render the component 1`] = `
+<DocumentFragment>
+  <button
+    class="sc-bdVaJa kZEdtz css-jsjf38"
+    data-testid="button"
+    type="button"
+  >
+    <p
+      class="sc-bwzfXH iMVHoe css-18mb4bh"
+    >
+      title
+    </p>
+  </button>
+</DocumentFragment>
+`;
