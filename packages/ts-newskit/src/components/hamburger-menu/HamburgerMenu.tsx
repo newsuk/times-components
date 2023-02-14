@@ -50,7 +50,8 @@ const clickHandler = (title: string) => {
             {
               selected === 'Sections' ? (
                 <>
-                  <Block stylePreset="blockWrapper"
+                  <Block 
+                    stylePreset="blockWrapper"
                     paddingInline="space040"
                     paddingBlock="space040">
                     <TextBlock typographyPreset="newPreset010" style={{ fontSize: '14px'}}>More</TextBlock>
