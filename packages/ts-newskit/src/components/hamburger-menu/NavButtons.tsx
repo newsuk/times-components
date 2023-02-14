@@ -11,7 +11,8 @@ export const LoggedOutNavButtons = () => (
       paddingInline="space040"
       paddingBlock="space030"
       style={{ backgroundColor: '#1D1D1B' }}
-      role="region" aria-label="Navigation Menu"
+      role="region"
+      aria-label="Navigation Menu"
     >
       <div style={{ display: 'flex' }}>
         <LoggedOutNavButton preset="buttonSolidSecondary" title="Log in" />
@@ -19,18 +20,28 @@ export const LoggedOutNavButtons = () => (
         <LoggedOutNavButton preset="buttonSolidPrimary" title="Subscribe" />
       </div>
     </Block>
-    <Block role="region" aria-label="Search Bar" marginInline={'space040'} marginBlock={'space040'}>
+    <Block
+      role="region"
+      aria-label="Search Bar"
+      marginInline={'space040'}
+      marginBlock={'space040'}
+    >
       <SearchBar />
     </Block>
   </>
 );
 
 export const LoggedInNavButtons: React.FC<{
-  handleClick: Function;
+  handleClick: (title: string) => void;
   selected: string;
 }> = ({ handleClick, selected }) => (
   <>
-    <Block paddingInline="space040" marginBlock={'space040'} role="region" aria-label="Search Bar">
+    <Block
+      paddingInline="space040"
+      marginBlock={'space040'}
+      role="region"
+      aria-label="Search Bar"
+    >
       <SearchBar />
     </Block>
     <StyledMenu role="region" aria-label="Navigation Menu">
@@ -50,7 +61,7 @@ export const LoggedInNavButtons: React.FC<{
 
 const NavButtonSection: React.FC<{
   loggedIn: boolean;
-  handleClick: Function;
+  handleClick: (title: string) => void;
   selected: string;
 }> = ({ loggedIn, handleClick, selected }) =>
   loggedIn ? (

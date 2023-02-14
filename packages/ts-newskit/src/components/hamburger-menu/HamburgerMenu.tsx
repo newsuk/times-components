@@ -84,7 +84,7 @@ const HamburgerMenu: React.FC<{ loggedIn: boolean; data: NavigationData }> = ({
                 </TextBlock>
               </Block>
               <MenuDivider />
-              <NavigationList data={data.moreMenuItems} onExpand={() => {}} />
+              <NavigationList data={data.moreMenuItems} onExpand={() => null} />
             </>
           ) : null}
         </MenuNav>

@@ -3,7 +3,9 @@
 exports[`NavButtons Logged In should render the component 1`] = `
 <DocumentFragment>
   <div
+    aria-label="Search Bar"
     class="css-1l9jkg9"
+    role="region"
   >
     <div
       class="css-1dghb8x"
@@ -27,6 +29,7 @@ exports[`NavButtons Logged In should render the component 1`] = `
       </div>
       <input
         aria-describedby="icon-placement-at"
+        aria-label="Search times.co.uk"
         class="css-57m4xd"
         id="icon-placement"
         placeholder="Search times.co.uk"
@@ -35,15 +38,16 @@ exports[`NavButtons Logged In should render the component 1`] = `
     </div>
   </div>
   <nav
+    aria-label="Navigation Menu"
     class="sc-htpNat dBqzbP css-yl1oeq"
     data-testid="menu-container"
-    role="navigation"
+    role="region"
   >
     <ul
       role="list"
     >
       <button
-        class="sc-bdVaJa kZEdtz css-jsjf38"
+        class="sc-bdVaJa ujKmM css-1u8vmha"
         data-testid="button"
         type="button"
       >
@@ -54,7 +58,7 @@ exports[`NavButtons Logged In should render the component 1`] = `
         </p>
       </button>
       <button
-        class="sc-bdVaJa kZEdtz css-jsjf38"
+        class="sc-bdVaJa ujKmM css-1u8vmha"
         data-testid="button"
         type="button"
       >
@@ -72,7 +76,9 @@ exports[`NavButtons Logged In should render the component 1`] = `
 exports[`NavButtons Logged Out should render the component 1`] = `
 <DocumentFragment>
   <div
+    aria-label="Navigation Menu"
     class="css-5qb4r1"
+    role="region"
     style="background-color: rgb(29, 29, 27);"
   >
     <div
@@ -106,7 +112,9 @@ exports[`NavButtons Logged Out should render the component 1`] = `
     </div>
   </div>
   <div
+    aria-label="Search Bar"
     class="css-1djk6be"
+    role="region"
   >
     <div
       class="css-1dghb8x"
@@ -130,6 +138,7 @@ exports[`NavButtons Logged Out should render the component 1`] = `
       </div>
       <input
         aria-describedby="icon-placement-at"
+        aria-label="Search times.co.uk"
         class="css-57m4xd"
         id="icon-placement"
         placeholder="Search times.co.uk"

@@ -18,7 +18,9 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           class="css-gre9re"
         >
           <div
+            aria-label="Search Bar"
             class="css-1l9jkg9"
+            role="region"
           >
             <div
               class="css-1dghb8x"
@@ -42,6 +44,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               </div>
               <input
                 aria-describedby="icon-placement-at"
+                aria-label="Search times.co.uk"
                 class="css-57m4xd"
                 id="icon-placement"
                 placeholder="Search times.co.uk"
@@ -50,15 +53,16 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
             </div>
           </div>
           <nav
+            aria-label="Navigation Menu"
             class="sc-htpNat dBqzbP css-yl1oeq"
             data-testid="menu-container"
-            role="navigation"
+            role="region"
           >
             <ul
               role="list"
             >
               <button
-                class="sc-bdVaJa gfkJlY css-jsjf38"
+                class="sc-bdVaJa faPpMj css-1u8vmha"
                 data-testid="button"
                 type="button"
               >
@@ -69,7 +73,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
                 </p>
               </button>
               <button
-                class="sc-bdVaJa kZEdtz css-jsjf38"
+                class="sc-bdVaJa ujKmM css-1u8vmha"
                 data-testid="button"
                 type="button"
               >
@@ -412,7 +416,9 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
           class="css-gre9re"
         >
           <div
+            aria-label="Navigation Menu"
             class="css-5qb4r1"
+            role="region"
             style="background-color: rgb(29, 29, 27);"
           >
             <div
@@ -446,7 +452,9 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
             </div>
           </div>
           <div
+            aria-label="Search Bar"
             class="css-1djk6be"
+            role="region"
           >
             <div
               class="css-1dghb8x"
@@ -470,6 +478,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               </div>
               <input
                 aria-describedby="icon-placement-at"
+                aria-label="Search times.co.uk"
                 class="css-57m4xd"
                 id="icon-placement"
                 placeholder="Search times.co.uk"
@@ -808,7 +817,9 @@ exports[`HamburgerMenu should render the component 1`] = `
           class="css-gre9re"
         >
           <div
+            aria-label="Search Bar"
             class="css-1l9jkg9"
+            role="region"
           >
             <div
               class="css-1dghb8x"
@@ -832,6 +843,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               </div>
               <input
                 aria-describedby="icon-placement-at"
+                aria-label="Search times.co.uk"
                 class="css-57m4xd"
                 id="icon-placement"
                 placeholder="Search times.co.uk"
@@ -840,15 +852,16 @@ exports[`HamburgerMenu should render the component 1`] = `
             </div>
           </div>
           <nav
+            aria-label="Navigation Menu"
             class="sc-htpNat dBqzbP css-yl1oeq"
             data-testid="menu-container"
-            role="navigation"
+            role="region"
           >
             <ul
               role="list"
             >
               <button
-                class="sc-bdVaJa gfkJlY css-jsjf38"
+                class="sc-bdVaJa faPpMj css-1u8vmha"
                 data-testid="button"
                 type="button"
               >
@@ -859,7 +872,7 @@ exports[`HamburgerMenu should render the component 1`] = `
                 </p>
               </button>
               <button
-                class="sc-bdVaJa kZEdtz css-jsjf38"
+                class="sc-bdVaJa ujKmM css-1u8vmha"
                 data-testid="button"
                 type="button"
               >

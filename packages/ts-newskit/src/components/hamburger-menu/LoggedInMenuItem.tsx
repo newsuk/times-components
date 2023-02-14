@@ -19,7 +19,7 @@ const StyledTextBlock = styled(TextBlock)<{ isSelected: boolean }>`
 
 const LoggedInMenuItem: React.FC<{
   title: string;
-  handleClick: Function;
+  handleClick: (title: string) => void;
   selected: string;
 }> = ({ title, handleClick, selected }) => {
   const isSelected = selected === title ? true : false;
