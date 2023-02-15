@@ -8,11 +8,7 @@ const LoggedInMenuItem: React.FC<{
 }> = ({ title, handleClick, selected }) => {
   const isSelected = selected === title ? true : false;
   return (
-    <StyledButton
-      isSelected={isSelected}
-      overrides={{ stylePreset: 'menuState' }}
-      onClick={() => handleClick(title)}
-    >
+    <StyledButton isSelected={isSelected} onClick={() => handleClick(title)}>
       <StyledTextBlock isSelected={isSelected}>{title}</StyledTextBlock>
     </StyledButton>
   );

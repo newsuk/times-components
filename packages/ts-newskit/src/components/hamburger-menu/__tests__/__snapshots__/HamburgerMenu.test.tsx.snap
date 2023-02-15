@@ -7,7 +7,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
   >
     <nav
       aria-label="menu-vertical"
-      class="css-yld2m2"
+      class="css-1ywhar0"
       data-testid="menu-container"
       role="navigation"
     >
@@ -62,23 +62,23 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               role="list"
             >
               <button
-                class="css-1wnub9"
+                class="css-1ifnmet"
                 data-testid="button"
                 type="button"
               >
                 <p
-                  class="css-1eq358o"
+                  class="css-1rudk3r"
                 >
                   Sections
                 </p>
               </button>
               <button
-                class="css-wf2vx0"
+                class="css-hy36md"
                 data-testid="button"
                 type="button"
               >
                 <p
-                  class="css-1djycmm"
+                  class="css-h276di"
                 >
                   My account
                 </p>
@@ -405,7 +405,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
   >
     <nav
       aria-label="menu-vertical"
-      class="css-yld2m2"
+      class="css-1ywhar0"
       data-testid="menu-container"
       role="navigation"
     >
@@ -806,7 +806,7 @@ exports[`HamburgerMenu should render the component 1`] = `
   >
     <nav
       aria-label="menu-vertical"
-      class="css-yld2m2"
+      class="css-1ywhar0"
       data-testid="menu-container"
       role="navigation"
     >
@@ -861,23 +861,23 @@ exports[`HamburgerMenu should render the component 1`] = `
               role="list"
             >
               <button
-                class="css-1wnub9"
+                class="css-1ifnmet"
                 data-testid="button"
                 type="button"
               >
                 <p
-                  class="css-1eq358o"
+                  class="css-1rudk3r"
                 >
                   Sections
                 </p>
               </button>
               <button
-                class="css-wf2vx0"
+                class="css-hy36md"
                 data-testid="button"
                 type="button"
               >
                 <p
-                  class="css-1djycmm"
+                  class="css-h276di"
                 >
                   My account
                 </p>
