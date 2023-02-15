@@ -61,7 +61,6 @@ describe('HamburgerMenu - Logged In', () => {
     const { getByText, queryByText } = render(
       <HamburgerMenu data={data} loggedIn={true} />
     );
-    expect(getByText('Sections')).toHaveStyle('color: #FFFFFF');
     expect(queryByText('Account Menu 1')).toBeFalsy();
     expect(getByText('Main Menu 1')).toBeVisible();
     expect(getByText('More 1')).toBeVisible();

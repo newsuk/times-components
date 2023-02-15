@@ -14,7 +14,7 @@ exports[`NavButtons Logged In should render the component 1`] = `
         class="css-wjzosl"
       >
         <svg
-          class="css-sw18ee"
+          class="css-192eire"
           fill="none"
           height="16"
           overrides="[object Object]"
@@ -47,23 +47,23 @@ exports[`NavButtons Logged In should render the component 1`] = `
       role="list"
     >
       <button
-        class="css-mozehc"
+        class="css-131g1wq"
         data-testid="button"
         type="button"
       >
         <p
-          class="css-9cvkg2"
+          class="css-18mb4bh"
         >
           Sections
         </p>
       </button>
       <button
-        class="css-mozehc"
+        class="css-131g1wq"
         data-testid="button"
         type="button"
       >
         <p
-          class="css-9cvkg2"
+          class="css-18mb4bh"
         >
           My account
         </p>
@@ -123,7 +123,7 @@ exports[`NavButtons Logged Out should render the component 1`] = `
         class="css-wjzosl"
       >
         <svg
-          class="css-sw18ee"
+          class="css-192eire"
           fill="none"
           height="16"
           overrides="[object Object]"

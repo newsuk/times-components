@@ -1,17 +1,18 @@
-export type NavigationItemItem = {
+type MenuItemL2 = {
   title: string;
   url: string;
   slug: string;
 };
 
-export type NavigationItem = {
+export type MenuItemL1 = {
   title: string;
   url: string;
   slug: string;
-  items?: NavigationItemItem[];
+  items?: MenuItemL2[];
 };
 
 export type NavigationData = {
-  menuItems: NavigationItem[];
-  moreMenuItems?: NavigationItem[];
+  mainMenuItems: MenuItemL1[];
+  moreMenuItems: MenuItemL1[];
+  accountMenuItems: MenuItemL1[];
 };

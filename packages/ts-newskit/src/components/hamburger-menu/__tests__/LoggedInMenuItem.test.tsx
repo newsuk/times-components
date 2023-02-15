@@ -19,26 +19,25 @@ describe('Logged in Menu Item', () => {
     expect(asFragment()).toMatchSnapshot();
   });
   it('should have default style when not selected', () => {
-    const { getByText, getByRole } = render(
+    const { getByRole } = render(
       <LoggedInMenuItem
         title="title"
         handleClick={handleClick}
         selected="not title"
       />
     );
-    expect(getByText('title')).toHaveStyle('color: #C2C2C2');
     expect(getByRole('button')).toHaveStyle('border-bottom: 2px solid #C2C2C2');
   });
   it('should change to different style when selected', () => {
-    const { getByText, getByRole } = render(
+    const { getByRole } = render(
       <LoggedInMenuItem
         title="title"
         handleClick={handleClick}
         selected="title"
       />
     );
-    expect(getByText('title')).toHaveStyle('color: #FFFFFF');
-    expect(getByRole('button')).toHaveStyle('border-bottom: 2px solid #FFFFFF');
+    expect(getByRole('button')).toHaveStyle('color: #FFFFFF');
+    expect(getByRole('button')).toHaveStyle('border-bottom: 2px solid #EEEEEE');
   });
   it('should call handleClick when clicked', () => {
     const { getByRole } = render(

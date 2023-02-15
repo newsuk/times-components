@@ -2,32 +2,26 @@ import {
   Menu,
   styled,
   Button,
-  TextBlock,
   getColorCssFromTheme,
   getMediaQueryFromTheme
 } from 'newskit';
 
 export const StyledButton = styled(Button)<{ isSelected: boolean }>`
-  border-radius: 0px;
-  border-bottom: ${({ isSelected }) =>
-    isSelected
-      ? '2px solid #FFFFFF !important'
-      : '2px solid #C2C2C2 !important'};
-  width: 100%;
-  font-family: Roboto-Regular;
-  background-color: #151515;
-  &:hover {
-    border-bottom: 2px solid #ffffff !important;
-    background-color: #151515 !important;
-  }
-`;
-
-export const StyledTextBlock = styled(TextBlock)<{ isSelected: boolean }>`
+  font-size: 15px;
   ${({ isSelected }) =>
     isSelected
       ? getColorCssFromTheme('color', 'white')
-      : getColorCssFromTheme('color', 'neutral050')} font-size: 15px;
+      : getColorCssFromTheme('color', 'neutral050')};
+  border-radius: 0px;
+  border-bottom: ${({ isSelected }) =>
+    isSelected
+      ? '2px solid #EEEEEE !important'
+      : '2px solid #C2C2C2 !important'};
+  width: 100%;
+  background-color: #151515;
   &:hover {
+    border-bottom: 2px solid #eeeeee !important;
+    background-color: #151515 !important;
     ${getColorCssFromTheme('color', 'white')};
   }
 `;
@@ -43,6 +37,7 @@ export const StyledMenu = styled(Menu)`
 `;
 
 export const MenuNav = styled(Menu)`
+  height: 100vh;
   overflow-y: scroll;
   background-color: #151515;
   width: 320px;

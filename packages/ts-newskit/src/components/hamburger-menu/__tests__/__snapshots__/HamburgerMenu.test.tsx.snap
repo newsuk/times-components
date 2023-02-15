@@ -4,7 +4,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
 <DocumentFragment>
   <nav
     aria-label="menu-vertical"
-    class="css-1ywhar0"
+    class="css-v73lr2"
     data-testid="menu-container"
     role="navigation"
   >
@@ -26,7 +26,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               class="css-wjzosl"
             >
               <svg
-                class="css-sw18ee"
+                class="css-192eire"
                 fill="none"
                 height="16"
                 overrides="[object Object]"
@@ -59,23 +59,23 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
             role="list"
           >
             <button
-              class="css-13d7nv5"
+              class="css-ctak3h"
               data-testid="button"
               type="button"
             >
               <p
-                class="css-tmojgc"
+                class="css-18mb4bh"
               >
                 Sections
               </p>
             </button>
             <button
-              class="css-mozehc"
+              class="css-131g1wq"
               data-testid="button"
               type="button"
             >
               <p
-                class="css-9cvkg2"
+                class="css-18mb4bh"
               >
                 My account
               </p>
@@ -398,7 +398,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
 <DocumentFragment>
   <nav
     aria-label="menu-vertical"
-    class="css-1ywhar0"
+    class="css-v73lr2"
     data-testid="menu-container"
     role="navigation"
   >
@@ -456,7 +456,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               class="css-wjzosl"
             >
               <svg
-                class="css-sw18ee"
+                class="css-192eire"
                 fill="none"
                 height="16"
                 overrides="[object Object]"
@@ -795,7 +795,7 @@ exports[`HamburgerMenu should render the component 1`] = `
 <DocumentFragment>
   <nav
     aria-label="menu-vertical"
-    class="css-1ywhar0"
+    class="css-v73lr2"
     data-testid="menu-container"
     role="navigation"
   >
@@ -817,7 +817,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               class="css-wjzosl"
             >
               <svg
-                class="css-sw18ee"
+                class="css-192eire"
                 fill="none"
                 height="16"
                 overrides="[object Object]"
@@ -850,23 +850,23 @@ exports[`HamburgerMenu should render the component 1`] = `
             role="list"
           >
             <button
-              class="css-13d7nv5"
+              class="css-ctak3h"
               data-testid="button"
               type="button"
             >
               <p
-                class="css-tmojgc"
+                class="css-18mb4bh"
               >
                 Sections
               </p>
             </button>
             <button
-              class="css-mozehc"
+              class="css-131g1wq"
               data-testid="button"
               type="button"
             >
               <p
-                class="css-9cvkg2"
+                class="css-18mb4bh"
               >
                 My account
               </p>

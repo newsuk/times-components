@@ -1,9 +1,9 @@
 import React from 'react';
 import { MenuSub, MenuItem, MenuDivider } from 'newskit';
-import { NavigationItem } from './types';
+import { MenuItemL1 } from './types';
 
 const NavigationList: React.FC<{
-  data: NavigationItem[];
+  data: MenuItemL1[];
   expandedL1?: string;
   onExpand?: (slug: string) => void;
 }> = ({ data, expandedL1, onExpand }) => {

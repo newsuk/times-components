@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyledButton, StyledTextBlock } from './styles';
+import { StyledButton } from './styles';
+import { TextBlock } from 'newskit';
 
 const LoggedInMenuItem: React.FC<{
   title: string;
@@ -9,7 +10,7 @@ const LoggedInMenuItem: React.FC<{
   const isSelected = selected === title ? true : false;
   return (
     <StyledButton isSelected={isSelected} onClick={() => handleClick(title)}>
-      <StyledTextBlock isSelected={isSelected}>{title}</StyledTextBlock>
+      <TextBlock>{title}</TextBlock>
     </StyledButton>
   );
 };

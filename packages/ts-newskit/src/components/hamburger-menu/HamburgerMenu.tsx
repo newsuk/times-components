@@ -4,25 +4,7 @@ import NavButtonSection from './NavButtons';
 import NavigationList from './NavigationList';
 import { MenuNav } from './styles';
 import { TimesWebLightTheme } from '../../theme';
-
-type MenuItemL2 = {
-  title: string;
-  url: string;
-  slug: string;
-};
-
-type MenuItemL1 = {
-  title: string;
-  url: string;
-  slug: string;
-  items?: MenuItemL2[];
-};
-
-type NavigationData = {
-  mainMenuItems: MenuItemL1[];
-  moreMenuItems: MenuItemL1[];
-  accountMenuItems: MenuItemL1[];
-};
+import { NavigationData } from './types';
 
 const HamburgerMenu: React.FC<{ loggedIn: boolean; data: NavigationData }> = ({
   loggedIn,
