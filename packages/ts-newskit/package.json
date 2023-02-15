@@ -53,8 +53,7 @@
     "@emotion/react": "11.10.0",
     "@emotion/styled": "11.10.0",
     "newskit": "6.8.0",
-    "react": "16.9.0",
-    "styled-components": "4.3.2"
+    "react": "16.9.0"
   },
   "devDependencies": {
     "@storybook/react": "6.5.15",
