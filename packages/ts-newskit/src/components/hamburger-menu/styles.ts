@@ -1,5 +1,19 @@
-import styled from 'styled-components';
-import { Menu } from 'newskit';
+import { Menu, styled, Button, TextBlock } from 'newskit';
+
+export const StyledButton = styled(Button)<{ isSelected: boolean }>`
+  border-bottom: ${({ isSelected }) =>
+    isSelected
+      ? '2px solid #FFFFFF !important'
+      : '2px solid #C2C2C2 !important'};
+  width: 100%;
+  font-family: Roboto-Regular;
+  background: #151515;
+`;
+
+export const StyledTextBlock = styled(TextBlock)<{ isSelected: boolean }>`
+  color: ${({ isSelected }) => (isSelected ? '#FFFFFF' : '#C2C2C2')};
+  font-size: 15px;
+`;
 
 export const StyledMenu = styled(Menu)`
   ul {

@@ -3,11 +3,11 @@
 exports[`HamburgerMenu - Logged In should render the Sections and account section on smaller devices 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb kTuKVy"
+    class="css-1k53ph5"
   >
     <nav
       aria-label="menu-vertical"
-      class="sc-ifAKCX dyIpRl css-1e8qhdd"
+      class="css-yld2m2"
       data-testid="menu-container"
       role="navigation"
     >
@@ -54,7 +54,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           </div>
           <nav
             aria-label="Navigation Menu"
-            class="sc-htpNat dBqzbP css-yl1oeq"
+            class="css-5p0tuz"
             data-testid="menu-container"
             role="region"
           >
@@ -62,23 +62,23 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               role="list"
             >
               <button
-                class="sc-bdVaJa faPpMj css-1u8vmha"
+                class="css-1wnub9"
                 data-testid="button"
                 type="button"
               >
                 <p
-                  class="sc-bwzfXH gEwvUA css-18mb4bh"
+                  class="css-1eq358o"
                 >
                   Sections
                 </p>
               </button>
               <button
-                class="sc-bdVaJa ujKmM css-1u8vmha"
+                class="css-wf2vx0"
                 data-testid="button"
                 type="button"
               >
                 <p
-                  class="sc-bwzfXH iMVHoe css-18mb4bh"
+                  class="css-1djycmm"
                 >
                   My account
                 </p>
@@ -401,11 +401,11 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
 exports[`HamburgerMenu - Logged Out should render the login and subscribe button section on smaller devices 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb kTuKVy"
+    class="css-1k53ph5"
   >
     <nav
       aria-label="menu-vertical"
-      class="sc-ifAKCX dyIpRl css-1e8qhdd"
+      class="css-yld2m2"
       data-testid="menu-container"
       role="navigation"
     >
@@ -802,11 +802,11 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
 exports[`HamburgerMenu should render the component 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bxivhb kTuKVy"
+    class="css-1k53ph5"
   >
     <nav
       aria-label="menu-vertical"
-      class="sc-ifAKCX dyIpRl css-1e8qhdd"
+      class="css-yld2m2"
       data-testid="menu-container"
       role="navigation"
     >
@@ -853,7 +853,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           </div>
           <nav
             aria-label="Navigation Menu"
-            class="sc-htpNat dBqzbP css-yl1oeq"
+            class="css-5p0tuz"
             data-testid="menu-container"
             role="region"
           >
@@ -861,23 +861,23 @@ exports[`HamburgerMenu should render the component 1`] = `
               role="list"
             >
               <button
-                class="sc-bdVaJa faPpMj css-1u8vmha"
+                class="css-1wnub9"
                 data-testid="button"
                 type="button"
               >
                 <p
-                  class="sc-bwzfXH gEwvUA css-18mb4bh"
+                  class="css-1eq358o"
                 >
                   Sections
                 </p>
               </button>
               <button
-                class="sc-bdVaJa ujKmM css-1u8vmha"
+                class="css-wf2vx0"
                 data-testid="button"
                 type="button"
               >
                 <p
-                  class="sc-bwzfXH iMVHoe css-18mb4bh"
+                  class="css-1djycmm"
                 >
                   My account
                 </p>

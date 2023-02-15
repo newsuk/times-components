@@ -39,7 +39,7 @@ exports[`NavButtons Logged In should render the component 1`] = `
   </div>
   <nav
     aria-label="Navigation Menu"
-    class="sc-htpNat dBqzbP css-yl1oeq"
+    class="css-5p0tuz"
     data-testid="menu-container"
     role="region"
   >
@@ -47,23 +47,23 @@ exports[`NavButtons Logged In should render the component 1`] = `
       role="list"
     >
       <button
-        class="sc-bdVaJa ujKmM css-1u8vmha"
+        class="css-wf2vx0"
         data-testid="button"
         type="button"
       >
         <p
-          class="sc-bwzfXH iMVHoe css-18mb4bh"
+          class="css-1djycmm"
         >
           Sections
         </p>
       </button>
       <button
-        class="sc-bdVaJa ujKmM css-1u8vmha"
+        class="css-wf2vx0"
         data-testid="button"
         type="button"
       >
         <p
-          class="sc-bwzfXH iMVHoe css-18mb4bh"
+          class="css-1djycmm"
         >
           My account
         </p>
