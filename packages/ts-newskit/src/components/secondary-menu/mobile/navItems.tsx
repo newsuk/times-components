@@ -6,7 +6,6 @@ import { SecondaryMenuItem } from '../types';
 export const NavItems: React.FC<{
   data: SecondaryMenuItem[];
 }> = ({ data }) => {
-  
   const menuItemsPreset = {
     stylePreset: 'menuItemL1'
   };

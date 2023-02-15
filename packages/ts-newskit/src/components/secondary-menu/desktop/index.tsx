@@ -7,7 +7,6 @@ import { SecondaryMenuItem } from '../types';
 export const SecondaryNavDesktop: React.FC<{ data: SecondaryMenuItem[] }> = ({
   data
 }) => {
-  
   const [selected, setSelected] = useState('/home');
 
   return (
@@ -24,7 +23,6 @@ export const SecondaryNavDesktop: React.FC<{ data: SecondaryMenuItem[] }> = ({
             selected={selected === item.url}
             onClick={() => setSelected(item.url)}
             key={item.slug}
-
           >
             {item.title}
           </MenuItem>

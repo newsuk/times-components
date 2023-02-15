@@ -27,7 +27,7 @@ export const secondaryNavigationStylePresets = {
       color: '#1D1D1B',
       backgroundColor: 'white',
       padding: '12px 0',
-      minWidth:"100%",
+      minWidth: '100%',
       borderBottom: '4px solid transparent'
     },
     hover: {
@@ -35,7 +35,7 @@ export const secondaryNavigationStylePresets = {
     },
     selected: {
       borderBottom: '4px solid black'
-    }, 
+    }
   },
   menuItemL1: {
     base: {
@@ -44,7 +44,7 @@ export const secondaryNavigationStylePresets = {
       fontWeight: '{{fonts.fontWeight020}}',
       fontSize: '{{fonts.fontSize030}}',
       lineHeight: '{{fonts.fontLineHeight070}}',
-      padding: '12px 32px',
+      padding: '12px 32px'
     },
     hover: {
       backgroundColor: 'rgba(245,245,245,1)'
