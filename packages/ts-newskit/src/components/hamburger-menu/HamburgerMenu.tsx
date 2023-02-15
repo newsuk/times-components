@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MenuDivider, Block, Visible, TextBlock, ThemeProvider } from 'newskit';
 import NavButtonSection from './NavButtons';
 import NavigationList from './NavigationList';
-import { MenuNav, HamburgerContainer } from './styles';
+import { MenuNav } from './styles';
 import { TimesWebLightTheme } from '../../theme';
 
 type MenuItemL2 = {
@@ -46,7 +46,6 @@ const HamburgerMenu: React.FC<{ loggedIn: boolean; data: NavigationData }> = ({
 
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
-      <HamburgerContainer>
         <MenuNav
           aria-label="menu-vertical"
           vertical
@@ -88,7 +87,6 @@ const HamburgerMenu: React.FC<{ loggedIn: boolean; data: NavigationData }> = ({
             </>
           ) : null}
         </MenuNav>
-      </HamburgerContainer>
     </ThemeProvider>
   );
 };

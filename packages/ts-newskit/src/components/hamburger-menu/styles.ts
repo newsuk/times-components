@@ -42,13 +42,6 @@ export const StyledMenu = styled(Menu)`
   }
 `;
 
-export const HamburgerContainer = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-`;
-
 export const MenuNav = styled(Menu)`
   overflow-y: scroll;
   background-color: #151515;
