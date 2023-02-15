@@ -6,6 +6,8 @@ import data from './fixtures/test-data.json';
 
 import HamburgerMenu from '../HamburgerMenu';
 
+const handleClick = jest.fn();
+
 describe('HamburgerMenu', () => {
   it('should render the component', () => {
     const { asFragment } = render(
@@ -81,6 +83,7 @@ describe('HamburgerMenu - Logged In', () => {
     expect(queryByText('Account Menu 1')).toBeFalsy();
     const myAccountButton = getByText('My account');
     fireEvent.click(myAccountButton);
+    expect(handleClick).toHaveBeenCalled();
     expect(getByText('Account Menu 1')).toBeVisible();
     expect(queryByText('Main Menu 1')).toBeFalsy();
   });

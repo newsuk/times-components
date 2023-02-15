@@ -5,7 +5,7 @@ import { NavigationItem } from './types';
 const NavigationList: React.FC<{
   data: NavigationItem[];
   expandedL1?: string;
-  onExpand: (slug: string) => void;
+  onExpand?: (slug: string) => void;
 }> = ({ data, expandedL1, onExpand }) => {
   const L1Overrides = {
     stylePreset: 'menuItemL1'
@@ -19,7 +19,7 @@ const NavigationList: React.FC<{
     <>
       {data.map(
         item =>
-          item.items ? (
+          item.items && onExpand ? (
             <>
               <MenuSub
                 title={item.title}
