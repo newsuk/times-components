@@ -46,47 +46,47 @@ const HamburgerMenu: React.FC<{ loggedIn: boolean; data: NavigationData }> = ({
 
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
-        <MenuNav
-          aria-label="menu-vertical"
-          vertical
-          align="spaceBetween"
-          overrides={{ spaceInline: 'space000' }}
-        >
-          <Visible xs sm>
-            <NavButtonSection
-              loggedIn={loggedIn}
-              handleClick={clickHandler}
-              selected={selected}
-            />
-          </Visible>
-          <NavigationList
-            data={
-              selected === mainNavigation
-                ? data.mainMenuItems
-                : data.accountMenuItems
-            }
-            onExpand={onExpand}
-            expandedL1={expandedL1}
+      <MenuNav
+        aria-label="menu-vertical"
+        vertical
+        align="spaceBetween"
+        overrides={{ spaceInline: 'space000' }}
+      >
+        <Visible xs sm>
+          <NavButtonSection
+            loggedIn={loggedIn}
+            handleClick={clickHandler}
+            selected={selected}
           />
-          {selected === mainNavigation ? (
-            <>
-              <Block
-                stylePreset="blockWrapper"
-                paddingInline="space040"
-                paddingBlock="space040"
+        </Visible>
+        <NavigationList
+          data={
+            selected === mainNavigation
+              ? data.mainMenuItems
+              : data.accountMenuItems
+          }
+          onExpand={onExpand}
+          expandedL1={expandedL1}
+        />
+        {selected === mainNavigation ? (
+          <>
+            <Block
+              stylePreset="blockWrapper"
+              paddingInline="space040"
+              paddingBlock="space040"
+            >
+              <TextBlock
+                typographyPreset="newPreset010"
+                style={{ fontSize: '14px' }}
               >
-                <TextBlock
-                  typographyPreset="newPreset010"
-                  style={{ fontSize: '14px' }}
-                >
-                  More
-                </TextBlock>
-              </Block>
-              <MenuDivider />
-              <NavigationList data={data.moreMenuItems} />
-            </>
-          ) : null}
-        </MenuNav>
+                More
+              </TextBlock>
+            </Block>
+            <MenuDivider />
+            <NavigationList data={data.moreMenuItems} />
+          </>
+        ) : null}
+      </MenuNav>
     </ThemeProvider>
   );
 };
