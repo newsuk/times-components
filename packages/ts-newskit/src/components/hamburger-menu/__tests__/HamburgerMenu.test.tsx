@@ -6,8 +6,6 @@ import data from './fixtures/test-data.json';
 
 import HamburgerMenu from '../HamburgerMenu';
 
-const handleClick = jest.fn();
-
 describe('HamburgerMenu', () => {
   it('should render the component', () => {
     const { asFragment } = render(
@@ -75,7 +73,7 @@ describe('HamburgerMenu - Logged In', () => {
     expect(getByText('More 1')).toBeVisible();
   });
 
-  it('should change the nav items if you click onto the my account button', () => {
+  it('should change the nav items if you click onto the Logged in Menu buttons', () => {
     const { getByText, queryByText } = render(
       <HamburgerMenu data={data} loggedIn={true} />
     );
@@ -83,9 +81,12 @@ describe('HamburgerMenu - Logged In', () => {
     expect(queryByText('Account Menu 1')).toBeFalsy();
     const myAccountButton = getByText('My account');
     fireEvent.click(myAccountButton);
-    expect(handleClick).toHaveBeenCalled();
     expect(getByText('Account Menu 1')).toBeVisible();
     expect(queryByText('Main Menu 1')).toBeFalsy();
+    const SectionsButton = getByText('Sections');
+    fireEvent.click(SectionsButton);
+    expect(getByText('Main Menu 1')).toBeVisible();
+    expect(queryByText('Account Menu 1')).toBeFalsy();
   });
   it('contains the search bar', () => {
     const { getByPlaceholderText } = render(
