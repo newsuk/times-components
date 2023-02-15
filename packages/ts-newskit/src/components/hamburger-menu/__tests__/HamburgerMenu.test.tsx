@@ -57,12 +57,6 @@ describe('HamburgerMenu - Logged In', () => {
     expect(getByText('My account')).toBeVisible();
   });
 
-  // it('should not render the Navigaton Button section on larger devices', () => {
-  //   const { asFragment, getByText } = render(<HamburgerMenu data={data} loggedIn={true}/>);
-
-  //   expect(asFragment()).toMatchSnapshot();
-  // });
-
   it('should default to show the Sections', () => {
     const { getByText, queryByText } = render(
       <HamburgerMenu data={data} loggedIn={true} />
@@ -105,12 +99,6 @@ describe('HamburgerMenu - Logged Out', () => {
     expect(getByText('Log in')).toBeVisible();
     expect(getByText('Subscribe')).toBeVisible();
   });
-
-  // it('should not render the Navigaton Button section on larger devices', () => {
-  //   const { asFragment, getByText } = render(<HamburgerMenu data={data} loggedIn={true}/>);
-
-  //   expect(asFragment()).toMatchSnapshot();
-  // });
 
   it('should only show the Sections and not the account menu', () => {
     const { getByText, queryByText } = render(
