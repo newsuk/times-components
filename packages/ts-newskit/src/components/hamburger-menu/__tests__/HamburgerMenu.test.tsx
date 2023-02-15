@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent } from '@testing-library/react';
-import { render } from './utils/test-utils';
+import { render } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
 import data from './fixtures/test-data.json';
 
