@@ -1,0 +1,89 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs'
+import { Menu } from 'newskit';
+import HamburgerMenu from "./HamburgerMenu.tsx";
+import SearchBar from './SearchBar.tsx';
+import { boolean, object } from "@storybook/addon-knobs"
+import NavButtonSection, { LoggedInNavButtons, LoggedOutNavButtons } from './NavButtons.tsx'
+import LoggedInMenuItem from './LoggedInMenuItem.tsx';
+import LoggedOutNavButton from './LoggedOutNavButton';
+import data from './fixtures/data.json';
+import { TimesWebLightTheme } from '../../theme';
+import { ThemeProvider } from 'newskit';
+
+<Meta
+  title="Newskit/HamburgerMenu"
+  component={HamburgerMenu}
+/>
+
+# Markdown HamburgerMenu component
+
+Hamburger Menu - With toggles for Logged in state and data object.
+
+<Canvas>
+  <Story name="HamburgerMenu">
+    <HamburgerMenu data={object('data', data)} loggedIn={boolean('Is logged in', false)} />
+  </Story>
+</Canvas>
+
+Hamburger Menu Logged In - Buttons visible on XS and SM screens
+
+<Canvas>
+  <Story name="HamburgerMenu Logged in">
+    <HamburgerMenu data={data} loggedIn={true} />
+  </Story>
+</Canvas>
+
+Hamburger Menu Logged out -  Buttons available on XS and SM screens
+
+<Canvas>
+  <Story name="HamburgerMenu Logged out">
+      <HamburgerMenu data={data} loggedIn={false} />
+  </Story>
+</Canvas>
+
+Search Bar
+
+<Canvas>
+  <Story name="Search Bar">
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <SearchBar />
+    </ThemeProvider>
+  </Story>
+</Canvas>
+
+Nav button section 
+
+<Canvas>
+   <Story name="Nav Button Section">
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <NavButtonSection loggedIn={boolean('Is logged in', false)} handleClickMain={() => console.log('Handle Click Main')} handleClickAccount={() => console.log('Handle Click Account')} />
+    </ThemeProvider>
+  </Story>
+</Canvas>
+
+Logged in Menu Items
+
+<Canvas>
+  <Story name="Logged In menu items">
+    <div style={{ padding: '12px', backgroundColor: 'red'}}>
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <LoggedInMenuItem selected={"Active"} title="Active" handleClick={() => console.log('Clicked')} />
+        <div style={{ height: '8px'}}></div>
+      <LoggedInMenuItem title="Inactive" handleClick={() => console.log('Clicked')} />
+    </ThemeProvider>
+    </div>
+  </Story>
+</Canvas>
+
+Logged out Buttons
+
+<Canvas>
+  <Story name="Logged Out Buttons">
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <LoggedOutNavButton title="Primary" preset="buttonSolidPrimary" />
+        <div style={{ height: '8px'}}></div>
+      <LoggedOutNavButton title="Secondary" preset="buttonSolidSecondary" />
+    </ThemeProvider>
+  </Story>
+</Canvas>
+

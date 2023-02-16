@@ -1,0 +1,296 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationList renders the component with nested items 1`] = `
+<DocumentFragment>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      class="css-1snhubz"
+      data-testid="buttonLink"
+      href="/main-menu-1"
+      id="vertical-main-menu-1"
+    >
+      <span
+        class="css-hrqj8j"
+      >
+        Main Menu 1
+      </span>
+    </a>
+  </li>
+  <li
+    aria-hidden="true"
+    class="css-1uftliw"
+    role="separator"
+  >
+    <hr
+      aria-hidden="true"
+      class="css-1px1mhi"
+      data-testid="divider"
+    />
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <button
+      aria-expanded="false"
+      class="css-ohan0o"
+      data-testid="menu-sub-button"
+      id="vertical-main-menu-2"
+      type="button"
+    >
+      <span
+        class="css-hrqj8j"
+      >
+        Main Menu 2
+      </span>
+      <svg
+        aria-hidden="true"
+        class="css-1f2bgiq-EmotionIconBase ex0cdmw0"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+        />
+      </svg>
+    </button>
+    <ul
+      class="css-8n1fik"
+    >
+      <li
+        class="nk-menu-item css-1kdinep"
+      >
+        <a
+          class="css-q2wmom"
+          data-testid="buttonLink"
+          href="/item-1"
+          id="vertical-item-1"
+        >
+          <span
+            class="css-hrqj8j"
+          >
+            Item 1
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="css-1uftliw"
+        role="separator"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-1px1mhi"
+          data-testid="divider"
+        />
+      </li>
+      <li
+        class="nk-menu-item css-1kdinep"
+      >
+        <a
+          class="css-q2wmom"
+          data-testid="buttonLink"
+          href="/item-2"
+          id="vertical-item-2"
+        >
+          <span
+            class="css-hrqj8j"
+          >
+            Item 2
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="css-1uftliw"
+        role="separator"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-1px1mhi"
+          data-testid="divider"
+        />
+      </li>
+    </ul>
+  </li>
+  <li
+    aria-hidden="true"
+    class="css-1uftliw"
+    role="separator"
+  >
+    <hr
+      aria-hidden="true"
+      class="css-1px1mhi"
+      data-testid="divider"
+    />
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <button
+      aria-expanded="false"
+      class="css-ohan0o"
+      data-testid="menu-sub-button"
+      id="vertical-main-menu-3"
+      type="button"
+    >
+      <span
+        class="css-hrqj8j"
+      >
+        Main Menu 3
+      </span>
+      <svg
+        aria-hidden="true"
+        class="css-1f2bgiq-EmotionIconBase ex0cdmw0"
+        fill="currentColor"
+        focusable="false"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+        />
+      </svg>
+    </button>
+    <ul
+      class="css-8n1fik"
+    >
+      <li
+        class="nk-menu-item css-1kdinep"
+      >
+        <a
+          class="css-q2wmom"
+          data-testid="buttonLink"
+          href="/item-1"
+          id="vertical-item-1"
+        >
+          <span
+            class="css-hrqj8j"
+          >
+            Menu 3 Item 1
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="css-1uftliw"
+        role="separator"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-1px1mhi"
+          data-testid="divider"
+        />
+      </li>
+      <li
+        class="nk-menu-item css-1kdinep"
+      >
+        <a
+          class="css-q2wmom"
+          data-testid="buttonLink"
+          href="/menu-3-item-2"
+          id="vertical-menu-3-item-2"
+        >
+          <span
+            class="css-hrqj8j"
+          >
+            Menu 3 Item 2
+          </span>
+        </a>
+      </li>
+      <li
+        aria-hidden="true"
+        class="css-1uftliw"
+        role="separator"
+      >
+        <hr
+          aria-hidden="true"
+          class="css-1px1mhi"
+          data-testid="divider"
+        />
+      </li>
+    </ul>
+  </li>
+  <li
+    aria-hidden="true"
+    class="css-1uftliw"
+    role="separator"
+  >
+    <hr
+      aria-hidden="true"
+      class="css-1px1mhi"
+      data-testid="divider"
+    />
+  </li>
+</DocumentFragment>
+`;
+
+exports[`NavigationList renders the component without nested items 1`] = `
+<DocumentFragment>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      class="css-1snhubz"
+      data-testid="buttonLink"
+      href="/account-menu-1"
+      id="vertical-account-menu-1"
+    >
+      <span
+        class="css-hrqj8j"
+      >
+        Account Menu 1
+      </span>
+    </a>
+  </li>
+  <li
+    aria-hidden="true"
+    class="css-1uftliw"
+    role="separator"
+  >
+    <hr
+      aria-hidden="true"
+      class="css-1px1mhi"
+      data-testid="divider"
+    />
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      class="css-1snhubz"
+      data-testid="buttonLink"
+      href="/account-menu-2"
+      id="vertical-account-menu-2"
+    >
+      <span
+        class="css-hrqj8j"
+      >
+        Account Menu 2
+      </span>
+    </a>
+  </li>
+  <li
+    aria-hidden="true"
+    class="css-1uftliw"
+    role="separator"
+  >
+    <hr
+      aria-hidden="true"
+      class="css-1px1mhi"
+      data-testid="divider"
+    />
+  </li>
+</DocumentFragment>
+`;

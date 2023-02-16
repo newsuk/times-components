@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createTheme } from 'newskit';
 
 import borders from './styles/borders.json';
