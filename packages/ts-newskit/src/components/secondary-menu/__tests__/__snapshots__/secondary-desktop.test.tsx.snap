@@ -4,7 +4,7 @@ exports[`Secondary Menu Mobile should render the menu 1`] = `
 <DocumentFragment>
   <nav
     aria-label="Secondary Navigation"
-    class="sc-bwzfXH bsXFsM css-yl1oeq"
+    class="css-deqwiu"
     data-testid="menu-container"
     role="navigation"
   >
@@ -158,7 +158,7 @@ exports[`Secondary Menu Mobile should render the menu 1`] = `
     </ul>
   </nav>
   <hr
-    class="sc-bdVaJa bxFYOn"
+    class="css-1nallzn"
   />
 </DocumentFragment>
 `;

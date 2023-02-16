@@ -1,5 +1,5 @@
 import React from 'react';
-import { customRender } from './utils/test-utils';
+import { customRender } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
 import { SecondaryNavDesktop } from '../desktop';
