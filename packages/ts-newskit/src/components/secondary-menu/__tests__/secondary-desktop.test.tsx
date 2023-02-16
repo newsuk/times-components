@@ -3,7 +3,7 @@ import { customRender } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
 import { SecondaryNavDesktop } from '../desktop';
-import { cleanup } from '@testing-library/react';
+import { cleanup, fireEvent } from '@testing-library/react';
 
 const handleSelect = jest.fn();
 
@@ -44,5 +44,17 @@ describe('Secondary Menu Desktop', () => {
     );
     const title = getAllByTestId('buttonLink')[0];
     expect(title).toHaveAttribute('href', '/home');
+  });
+  it('should call handleSelect when clicked', () => {
+    const { getAllByTestId } = customRender(
+      <SecondaryNavDesktop
+        data={mainMenuItems}
+        isSelected="Home"
+        handleSelect={handleSelect}
+      />
+    );
+    const Anchor = getAllByTestId('buttonLink')[0];
+    fireEvent.click(Anchor);
+    expect(handleSelect).toHaveBeenCalled();
   });
 });
