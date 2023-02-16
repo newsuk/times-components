@@ -5,7 +5,8 @@ import { SecondaryMenuItem } from '../types';
 
 export const NavItems: React.FC<{
   data: SecondaryMenuItem[];
-}> = ({ data }) => {
+  handleSelect: (title: string) => void;
+}> = ({ data, handleSelect }) => {
   const menuItemsPreset = {
     stylePreset: 'menuItemL1'
   };
@@ -19,6 +20,7 @@ export const NavItems: React.FC<{
             href={item.url}
             id={`vertical-${item.slug}`}
             key={item.slug}
+            onClick={() => handleSelect(item.title)}
           >
             {item.title}
           </MenuItem>

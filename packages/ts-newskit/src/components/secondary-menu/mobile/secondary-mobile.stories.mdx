@@ -17,8 +17,12 @@ import { mainMenuItems } from '../fixtures/menu-items.json';
 Secondary Navigation Mobile
  
 <Canvas>
-  <Story name="Secondary Menu Mobile">
-      <SecondaryNavMobile data={mainMenuItems} title="Top Stories" isActive={true}/>
+  <Story name="Secondary Navigator">
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <Menu vertical>
+         <Navigator  subMenuTitle="Close" title="Top stories" isActive={true}/>
+      </Menu>
+    </ThemeProvider>
   </Story>
 </Canvas>
 
@@ -33,16 +37,3 @@ NavItems
     </ThemeProvider>
   </Story>
 </Canvas>
-
-Text Block and Dropdown
-
-<Canvas>
-  <Story name="Secondary Navigator">
-    <ThemeProvider theme={TimesWebLightTheme}>
-      <Menu vertical>
-         <Navigator title="Top Stories" subMenuTitle="Close"/>
-      </Menu>
-    </ThemeProvider>
-  </Story>
-</Canvas>
-

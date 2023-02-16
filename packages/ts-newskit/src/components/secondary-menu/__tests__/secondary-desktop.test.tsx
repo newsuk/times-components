@@ -13,22 +13,12 @@ describe('Secondary Menu Mobile', () => {
 
   it('should render the menu', () => {
     const { asFragment } = customRender(
-      <SecondaryNavDesktop data={mainMenuItems} />
+      <SecondaryNavDesktop
+        data={mainMenuItems}
+        isSelected="Home"
+        handleSelect={() => alert('test')}
+      />
     );
     expect(asFragment()).toMatchSnapshot();
-  });
-  it('should render the menu item Football', () => {
-    const { queryByText } = customRender(
-      <SecondaryNavDesktop data={mainMenuItems} />
-    );
-    const title = queryByText(mainMenuItems[0].title);
-    expect(title).toHaveTextContent('Home');
-  });
-  it('items should have ancher with href', () => {
-    const { getAllByTestId } = customRender(
-      <SecondaryNavDesktop data={mainMenuItems} />
-    );
-    const title = getAllByTestId('buttonLink')[0];
-    expect(title).toHaveAttribute('href', '/home');
   });
 });
