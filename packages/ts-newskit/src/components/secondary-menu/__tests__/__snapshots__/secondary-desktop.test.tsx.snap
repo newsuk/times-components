@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Secondary Menu Mobile should render the menu 1`] = `
+exports[`Secondary Menu Desktop should render snapshot 1`] = `
 <DocumentFragment>
   <nav
     aria-label="Secondary Navigation"

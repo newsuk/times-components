@@ -5,7 +5,7 @@ import { mainMenuItems } from './fixtures/menu-items.json';
 import { Visible } from 'newskit';
 import { SecondaryMenuItem } from './types';
 
-export const SecondaryNav: React.FC<{
+export const SecondaryNavigation: React.FC<{
   title: string;
   isActive: boolean;
   data: SecondaryMenuItem[];
