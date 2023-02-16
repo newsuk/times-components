@@ -47,7 +47,7 @@ export const secondaryNavigationStylePresets = {
       padding: '12px 32px'
     },
     hover: {
-      backgroundColor: 'rgba(245,245,245,1)'
+      backgroundColor: '{{colors.neutral010}}'
     }
   },
   textBlock: {
