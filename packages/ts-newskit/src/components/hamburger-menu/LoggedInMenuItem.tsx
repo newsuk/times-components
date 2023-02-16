@@ -1,17 +1,23 @@
 import React from 'react';
-import { StyledButton } from './styles';
-import { TextBlock } from 'newskit';
+import { TextBlock, Button } from 'newskit';
 
 const LoggedInMenuItem: React.FC<{
   title: string;
-  handleClick: (title: string) => void;
   selected: string;
+  handleClick: (title: string) => void;
 }> = ({ title, handleClick, selected }) => {
   const isSelected = selected === title ? true : false;
   return (
-    <StyledButton isSelected={isSelected} onClick={() => handleClick(title)}>
+    <Button
+      overrides={{
+        stylePreset: `${
+          isSelected ? 'loggedInMenuItemActive' : 'loggedInMenuItem'
+        }`
+      }}
+      onClick={() => handleClick(title)}
+    >
       <TextBlock>{title}</TextBlock>
-    </StyledButton>
+    </Button>
   );
 };
 

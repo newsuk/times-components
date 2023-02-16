@@ -1,4 +1,28 @@
+const loggedInMenuItemBase = {
+  fontSize: '15px',
+  color: '{{colors.neutral050}}',
+  borderRadius: '{{sizing.sizing000}}',
+  borderBottom: '2px solid #333333',
+  width: '100%',
+  backgroundColor: '#151515'
+};
+
 export const menuStylePresets = {
+  loggedInMenuItem: {
+    base: loggedInMenuItemBase,
+    hover: {
+      borderBottom: '2px solid #FFFFFF',
+      backgroundColor: '#151515',
+      color: '{{colors.white}}'
+    }
+  },
+  loggedInMenuItemActive: {
+    base: {
+      ...loggedInMenuItemBase,
+      borderBottom: '2px solid #FFFFFF',
+      color: '{{colors.white}}'
+    }
+  },
   buttonSolidPrimary: {
     base: {
       backgroundColor: '{{colors.interactivePrimary030}}',

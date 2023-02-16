@@ -47,7 +47,7 @@ exports[`NavButtons Logged In should render the component 1`] = `
       role="list"
     >
       <button
-        class="css-1hsp1m"
+        class="css-sfx3g"
         data-testid="button"
         type="button"
       >
@@ -58,7 +58,7 @@ exports[`NavButtons Logged In should render the component 1`] = `
         </p>
       </button>
       <button
-        class="css-1hsp1m"
+        class="css-sfx3g"
         data-testid="button"
         type="button"
       >
