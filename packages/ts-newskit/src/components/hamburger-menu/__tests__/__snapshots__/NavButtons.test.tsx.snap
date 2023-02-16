@@ -47,7 +47,7 @@ exports[`NavButtons Logged In should render the component 1`] = `
       role="list"
     >
       <button
-        class="css-131g1wq"
+        class="css-1hsp1m"
         data-testid="button"
         type="button"
       >
@@ -58,7 +58,7 @@ exports[`NavButtons Logged In should render the component 1`] = `
         </p>
       </button>
       <button
-        class="css-131g1wq"
+        class="css-1hsp1m"
         data-testid="button"
         type="button"
       >
@@ -82,7 +82,7 @@ exports[`NavButtons Logged Out should render the component 1`] = `
     style="background-color: rgb(29, 29, 27);"
   >
     <div
-      style="display: flex;"
+      class="css-14f0ndj"
     >
       <button
         class="css-5kf7f9"
@@ -96,7 +96,7 @@ exports[`NavButtons Logged Out should render the component 1`] = `
         </span>
       </button>
       <div
-        style="margin: 4px;"
+        class="css-rl9h2w"
       />
       <button
         class="css-f5vstw"

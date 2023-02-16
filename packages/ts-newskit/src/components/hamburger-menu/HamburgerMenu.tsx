@@ -57,11 +57,7 @@ const HamburgerMenu: React.FC<{ loggedIn: boolean; data: NavigationData }> = ({
               paddingInline="space040"
               paddingBlock="space040"
             >
-              <TextBlock
-                typographyPreset="newPreset010"
-              >
-                More
-              </TextBlock>
+              <TextBlock typographyPreset="newPreset010">More</TextBlock>
             </Block>
             <MenuDivider />
             <NavigationList data={data.moreMenuItems} />

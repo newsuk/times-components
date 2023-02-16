@@ -3,7 +3,7 @@ export const menuStylePresets = {
     base: {
       backgroundColor: '{{colors.interactivePrimary030}}',
       width: '100%',
-      borderRadius: '4px'
+      borderRadius: '{{sizing.sizing010}}'
     },
     hover: {
       backgroundColor: '{{colors.interactivePrimary040}}'
@@ -14,7 +14,7 @@ export const menuStylePresets = {
       backgroundColor: '{{colors.neutral090}}',
       border: 'solid 1px #333333',
       width: '100%',
-      borderRadius: '4px'
+      borderRadius: '{{sizing.sizing010}}'
     },
     hover: {
       backgroundColor: '{{colors.neutral080}}'
@@ -67,7 +67,7 @@ export const menuStylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceNeutral010}}',
       color: '#9C9C9C',
-      borderRadius: '8px',
+      borderRadius: '{{sizing.sizing020}}',
       marginBottom: 0,
       height: '40px'
     }

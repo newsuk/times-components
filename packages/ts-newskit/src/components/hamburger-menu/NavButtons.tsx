@@ -16,7 +16,7 @@ export const LoggedOutNavButtons = () => (
     >
       <Stack flow="horizontal-top">
         <LoggedOutNavButton preset="buttonSolidSecondary" title="Log in" />
-        <Block marginInline="space010"/>
+        <Block marginInline="space010" />
         <LoggedOutNavButton preset="buttonSolidPrimary" title="Subscribe" />
       </Stack>
     </Block>

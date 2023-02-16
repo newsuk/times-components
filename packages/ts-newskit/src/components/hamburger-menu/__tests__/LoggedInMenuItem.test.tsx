@@ -26,7 +26,7 @@ describe('Logged in Menu Item', () => {
         selected="not title"
       />
     );
-    expect(getByRole('button')).toHaveStyle('border-bottom: 2px solid #C2C2C2');
+    expect(getByRole('button')).toHaveStyle('border-bottom: 2px solid #333333');
   });
   it('should change to different style when selected', () => {
     const { getByRole } = render(
@@ -37,7 +37,7 @@ describe('Logged in Menu Item', () => {
       />
     );
     expect(getByRole('button')).toHaveStyle('color: #FFFFFF');
-    expect(getByRole('button')).toHaveStyle('border-bottom: 2px solid #EEEEEE');
+    expect(getByRole('button')).toHaveStyle('border-bottom: 2px solid #FFFFFF');
   });
   it('should call handleClick when clicked', () => {
     const { getByRole } = render(

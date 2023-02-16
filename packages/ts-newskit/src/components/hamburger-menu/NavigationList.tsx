@@ -1,13 +1,12 @@
 import React from 'react';
 import { MenuSub, MenuItem, MenuDivider } from 'newskit';
-import { MenuItemL1 } from './types';
+import { MenuItemParent } from './types';
 
 const NavigationList: React.FC<{
-  data: MenuItemL1[];
+  data: MenuItemParent[];
   expandedL1?: string;
   onExpand?: (slug: string) => void;
 }> = ({ data, expandedL1, onExpand }) => {
-
   return (
     <>
       {data.map(
@@ -62,7 +61,10 @@ const NavigationList: React.FC<{
                 key={item.slug}
                 href={item.url}
                 id={`vertical-${item.slug}`}
-                overrides={{ stylePreset: 'menuItemL1', typographyPreset: 'newPreset020' }}
+                overrides={{
+                  stylePreset: 'menuItemL1',
+                  typographyPreset: 'newPreset020'
+                }}
               >
                 {item.title}
               </MenuItem>

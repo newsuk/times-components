@@ -5,7 +5,7 @@ import {
   getColorCssFromTheme,
   getMediaQueryFromTheme
 } from 'newskit';
-// Change border bottom back to white. 
+// Change border bottom back to white.
 export const StyledButton = styled(Button)<{ isSelected: boolean }>`
   font-size: 15px;
   ${({ isSelected }) =>
