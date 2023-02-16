@@ -95,4 +95,18 @@ describe('Secondary Menu Mobile', () => {
     fireEvent.click(Button);
     expect(queryByText('See all')).toBeInTheDocument();
   });
+  it('should call handleSelect when clicked', () => {
+    const { getAllByTestId } = customRender(
+      <SecondaryNavMobile
+        data={mainMenuItems}
+        isExpanded={true}
+        setIsExpanded={setIsExpanded}
+        isSelected="Home"
+        handleSelect={handleSelect}
+      />
+    );
+    const Anchor = getAllByTestId('buttonLink')[0];
+    fireEvent.click(Anchor);
+    expect(handleSelect).toHaveBeenCalled();
+  });
 });
