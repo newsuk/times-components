@@ -6,7 +6,7 @@ export const typographyPresets = Object.fromEntries(
     newPreset010: {
       fontFamily: 'Roboto-Medium',
       fontWeight: '500',
-      fontSize: '15px',
+      fontSize: '{{fonts.fontSize020}}',
       lineHeight: '16px',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'

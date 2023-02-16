@@ -5,7 +5,7 @@ import {
   getColorCssFromTheme,
   getMediaQueryFromTheme
 } from 'newskit';
-
+// Change border bottom back to white. 
 export const StyledButton = styled(Button)<{ isSelected: boolean }>`
   font-size: 15px;
   ${({ isSelected }) =>
@@ -15,8 +15,8 @@ export const StyledButton = styled(Button)<{ isSelected: boolean }>`
   border-radius: 0px;
   border-bottom: ${({ isSelected }) =>
     isSelected
-      ? '2px solid #EEEEEE !important'
-      : '2px solid #C2C2C2 !important'};
+      ? '2px solid #FFFFFF !important'
+      : '2px solid #333333 !important'};
   width: 100%;
   background-color: #151515;
   &:hover {

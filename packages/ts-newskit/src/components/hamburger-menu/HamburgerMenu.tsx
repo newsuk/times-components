@@ -59,7 +59,6 @@ const HamburgerMenu: React.FC<{ loggedIn: boolean; data: NavigationData }> = ({
             >
               <TextBlock
                 typographyPreset="newPreset010"
-                style={{ fontSize: '14px' }}
               >
                 More
               </TextBlock>

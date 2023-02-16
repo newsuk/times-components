@@ -7,13 +7,6 @@ const NavigationList: React.FC<{
   expandedL1?: string;
   onExpand?: (slug: string) => void;
 }> = ({ data, expandedL1, onExpand }) => {
-  const L1Overrides = {
-    stylePreset: 'menuItemL1'
-  };
-
-  const L2Overrides = {
-    stylePreset: 'menuItemL2'
-  };
 
   return (
     <>
@@ -29,7 +22,7 @@ const NavigationList: React.FC<{
                   expandedL1 !== item.slug ? onExpand(item.slug) : onExpand('')
                 }
                 overrides={{
-                  ...L1Overrides,
+                  stylePreset: 'menuItemL1',
                   typographyPreset: 'newPreset020',
                   indicatorIcon: {
                     props: {
@@ -51,7 +44,7 @@ const NavigationList: React.FC<{
                       href={i.url}
                       id={`vertical-${i.slug}`}
                       overrides={{
-                        ...L2Overrides,
+                        stylePreset: 'menuItemL2',
                         typographyPreset: 'newPreset020'
                       }}
                     >
@@ -69,7 +62,7 @@ const NavigationList: React.FC<{
                 key={item.slug}
                 href={item.url}
                 id={`vertical-${item.slug}`}
-                overrides={{ ...L1Overrides, typographyPreset: 'newPreset020' }}
+                overrides={{ stylePreset: 'menuItemL1', typographyPreset: 'newPreset020' }}
               >
                 {item.title}
               </MenuItem>

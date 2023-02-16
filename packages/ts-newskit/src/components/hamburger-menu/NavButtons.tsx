@@ -1,5 +1,5 @@
 import React from 'react';
-import { Block } from 'newskit';
+import { Block, Stack } from 'newskit';
 import LoggedInMenuItem from './LoggedInMenuItem';
 import SearchBar from './SearchBar';
 import { StyledMenu } from './styles';
@@ -14,11 +14,11 @@ export const LoggedOutNavButtons = () => (
       role="region"
       aria-label="Navigation Menu"
     >
-      <div style={{ display: 'flex' }}>
+      <Stack flow="horizontal-top">
         <LoggedOutNavButton preset="buttonSolidSecondary" title="Log in" />
-        <div style={{ margin: '4px' }} />
+        <Block marginInline="space010"/>
         <LoggedOutNavButton preset="buttonSolidPrimary" title="Subscribe" />
-      </div>
+      </Stack>
     </Block>
     <Block
       role="region"
