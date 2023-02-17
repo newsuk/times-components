@@ -17,7 +17,7 @@ export default {
   keyFactsTitle: 24,
   leadHeadline: 26,
   link: 13,
-  linkTopic: 12,  
+  linkTopic: 12,
   meta: 13,
   newsletterPuffLabel: 12,
   newsletterPuffHeadline: 28,
