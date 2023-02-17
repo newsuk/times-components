@@ -1,5 +1,5 @@
 import React from 'react';
-import { customRender } from '../../utils/test-utils';
+import { render } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
 import { SecondaryNavigation } from '../index';
@@ -12,13 +12,13 @@ describe('Secondary Menu', () => {
   });
 
   it('should render snapshot', () => {
-    const { asFragment } = customRender(
+    const { asFragment } = render(
       <SecondaryNavigation data={mainMenuItems} title="Home" isActive={true} />
     );
     expect(asFragment()).toMatchSnapshot();
   });
   it('should close the dropdown ', () => {
-    const { getByText, queryByText, getAllByText } = customRender(
+    const { getByText, queryByText, getAllByText } = render(
       <SecondaryNavigation data={mainMenuItems} title="Home" isActive={false} />
     );
     const SeeAllButton = getByText('See all');
@@ -30,7 +30,7 @@ describe('Secondary Menu', () => {
     waitFor(() => expect(queryByText('News')).toBeInTheDocument());
   });
   it('should change the home title if another item seleceted', () => {
-    const { getAllByText, container, queryByText } = customRender(
+    const { getAllByText, container, queryByText } = render(
       <SecondaryNavigation data={mainMenuItems} title="Home" isActive={true} />
     );
     const pTag = container.querySelector('p');

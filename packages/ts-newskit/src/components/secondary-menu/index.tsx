@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { SecondaryNavDesktop } from './desktop';
 import { SecondaryNavMobile } from './mobile';
 import { mainMenuItems } from './fixtures/menu-items.json';
-import { Visible } from 'newskit';
+import { Visible, ThemeProvider } from 'newskit';
 import { SecondaryMenuItem } from './types';
+import { TimesWebLightTheme } from '../../theme';
 
 export const SecondaryNavigation: React.FC<{
   title: string;
@@ -30,7 +31,7 @@ export const SecondaryNavigation: React.FC<{
   };
 
   return (
-    <>
+    <ThemeProvider theme={TimesWebLightTheme}>
       <Visible sm xs>
         <SecondaryNavMobile
           data={mainMenuItems}
@@ -47,6 +48,6 @@ export const SecondaryNavigation: React.FC<{
           handleSelect={handleSelect}
         />
       </Visible>
-    </>
+    </ThemeProvider>
   );
 };

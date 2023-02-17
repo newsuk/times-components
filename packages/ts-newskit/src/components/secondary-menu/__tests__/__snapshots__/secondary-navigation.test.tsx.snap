@@ -15,10 +15,10 @@ exports[`Secondary Menu should render snapshot 1`] = `
         role="list"
       >
         <div
-          class="css-at0nlu"
+          class="css-1rgm3vu"
         >
           <div
-            class="css-b1ujo"
+            class="css-3ae6t8"
           >
             <p
               class="css-14vx0gz"
@@ -31,7 +31,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <button
               aria-expanded="false"
-              class="css-15pgly0"
+              class="css-1y7zq27"
               data-testid="menu-sub-button"
               type="button"
             >
@@ -63,215 +63,211 @@ exports[`Secondary Menu should render snapshot 1`] = `
           </li>
         </div>
         <div
-          class="css-kbdtrd"
+          class="css-jceq9e"
         >
-          <div
-            class="css-ku499h"
+          <li
+            class="nk-menu-item css-bkfzpe"
           >
-            <li
-              class="nk-menu-item css-bkfzpe"
+            <a
+              class="css-29bzdg"
+              data-testid="buttonLink"
+              href="/home"
+              id="vertical-home"
             >
-              <a
-                class="css-16h3dur"
-                data-testid="buttonLink"
-                href="/home"
-                id="vertical-home"
+              <span
+                class="css-1t9x538"
               >
-                <span
-                  class="css-1t9x538"
-                >
-                  Home
-                </span>
-              </a>
-            </li>
-            <hr
-              class="css-1nallzn"
-            />
-          </div>
-          <div
-            class="css-ku499h"
+                Home
+              </span>
+            </a>
+          </li>
+          <hr
+            class="css-1nallzn"
+          />
+        </div>
+        <div
+          class="css-jceq9e"
+        >
+          <li
+            class="nk-menu-item css-bkfzpe"
           >
-            <li
-              class="nk-menu-item css-bkfzpe"
+            <a
+              class="css-29bzdg"
+              data-testid="buttonLink"
+              href="/news"
+              id="vertical-news"
             >
-              <a
-                class="css-16h3dur"
-                data-testid="buttonLink"
-                href="/news"
-                id="vertical-news"
+              <span
+                class="css-1t9x538"
               >
-                <span
-                  class="css-1t9x538"
-                >
-                  News
-                </span>
-              </a>
-            </li>
-            <hr
-              class="css-1nallzn"
-            />
-          </div>
-          <div
-            class="css-ku499h"
+                News
+              </span>
+            </a>
+          </li>
+          <hr
+            class="css-1nallzn"
+          />
+        </div>
+        <div
+          class="css-jceq9e"
+        >
+          <li
+            class="nk-menu-item css-bkfzpe"
           >
-            <li
-              class="nk-menu-item css-bkfzpe"
+            <a
+              class="css-29bzdg"
+              data-testid="buttonLink"
+              href="/comment"
+              id="vertical-comment"
             >
-              <a
-                class="css-16h3dur"
-                data-testid="buttonLink"
-                href="/comment"
-                id="vertical-comment"
+              <span
+                class="css-1t9x538"
               >
-                <span
-                  class="css-1t9x538"
-                >
-                  Comment
-                </span>
-              </a>
-            </li>
-            <hr
-              class="css-1nallzn"
-            />
-          </div>
-          <div
-            class="css-ku499h"
+                Comment
+              </span>
+            </a>
+          </li>
+          <hr
+            class="css-1nallzn"
+          />
+        </div>
+        <div
+          class="css-jceq9e"
+        >
+          <li
+            class="nk-menu-item css-bkfzpe"
           >
-            <li
-              class="nk-menu-item css-bkfzpe"
+            <a
+              class="css-29bzdg"
+              data-testid="buttonLink"
+              href="/life-and-style"
+              id="vertical-life-and-style"
             >
-              <a
-                class="css-16h3dur"
-                data-testid="buttonLink"
-                href="/life-and-style"
-                id="vertical-life-and-style"
+              <span
+                class="css-1t9x538"
               >
-                <span
-                  class="css-1t9x538"
-                >
-                  Life & Style
-                </span>
-              </a>
-            </li>
-            <hr
-              class="css-1nallzn"
-            />
-          </div>
-          <div
-            class="css-ku499h"
+                Life & Style
+              </span>
+            </a>
+          </li>
+          <hr
+            class="css-1nallzn"
+          />
+        </div>
+        <div
+          class="css-jceq9e"
+        >
+          <li
+            class="nk-menu-item css-bkfzpe"
           >
-            <li
-              class="nk-menu-item css-bkfzpe"
+            <a
+              class="css-29bzdg"
+              data-testid="buttonLink"
+              href="/arts-and-books"
+              id="vertical-arts-and-books"
             >
-              <a
-                class="css-16h3dur"
-                data-testid="buttonLink"
-                href="/arts-and-books"
-                id="vertical-arts-and-books"
+              <span
+                class="css-1t9x538"
               >
-                <span
-                  class="css-1t9x538"
-                >
-                  Arts & Books
-                </span>
-              </a>
-            </li>
-            <hr
-              class="css-1nallzn"
-            />
-          </div>
-          <div
-            class="css-ku499h"
+                Arts & Books
+              </span>
+            </a>
+          </li>
+          <hr
+            class="css-1nallzn"
+          />
+        </div>
+        <div
+          class="css-jceq9e"
+        >
+          <li
+            class="nk-menu-item css-bkfzpe"
           >
-            <li
-              class="nk-menu-item css-bkfzpe"
+            <a
+              class="css-29bzdg"
+              data-testid="buttonLink"
+              href="/sport"
+              id="vertical-sport"
             >
-              <a
-                class="css-16h3dur"
-                data-testid="buttonLink"
-                href="/sport"
-                id="vertical-sport"
+              <span
+                class="css-1t9x538"
               >
-                <span
-                  class="css-1t9x538"
-                >
-                  Sport
-                </span>
-              </a>
-            </li>
-            <hr
-              class="css-1nallzn"
-            />
-          </div>
-          <div
-            class="css-ku499h"
+                Sport
+              </span>
+            </a>
+          </li>
+          <hr
+            class="css-1nallzn"
+          />
+        </div>
+        <div
+          class="css-jceq9e"
+        >
+          <li
+            class="nk-menu-item css-bkfzpe"
           >
-            <li
-              class="nk-menu-item css-bkfzpe"
+            <a
+              class="css-29bzdg"
+              data-testid="buttonLink"
+              href="/business-and-money"
+              id="vertical-business-and-money"
             >
-              <a
-                class="css-16h3dur"
-                data-testid="buttonLink"
-                href="/business-and-money"
-                id="vertical-business-and-money"
+              <span
+                class="css-1t9x538"
               >
-                <span
-                  class="css-1t9x538"
-                >
-                  Business & Money
-                </span>
-              </a>
-            </li>
-            <hr
-              class="css-1nallzn"
-            />
-          </div>
-          <div
-            class="css-ku499h"
+                Business & Money
+              </span>
+            </a>
+          </li>
+          <hr
+            class="css-1nallzn"
+          />
+        </div>
+        <div
+          class="css-jceq9e"
+        >
+          <li
+            class="nk-menu-item css-bkfzpe"
           >
-            <li
-              class="nk-menu-item css-bkfzpe"
+            <a
+              class="css-29bzdg"
+              data-testid="buttonLink"
+              href="/puzzles"
+              id="vertical-puzzles"
             >
-              <a
-                class="css-16h3dur"
-                data-testid="buttonLink"
-                href="/puzzles"
-                id="vertical-puzzles"
+              <span
+                class="css-1t9x538"
               >
-                <span
-                  class="css-1t9x538"
-                >
-                  Puzzles
-                </span>
-              </a>
-            </li>
-            <hr
-              class="css-1nallzn"
-            />
-          </div>
-          <div
-            class="css-ku499h"
+                Puzzles
+              </span>
+            </a>
+          </li>
+          <hr
+            class="css-1nallzn"
+          />
+        </div>
+        <div
+          class="css-jceq9e"
+        >
+          <li
+            class="nk-menu-item css-bkfzpe"
           >
-            <li
-              class="nk-menu-item css-bkfzpe"
+            <a
+              class="css-29bzdg"
+              data-testid="buttonLink"
+              href="/magazines"
+              id="vertical-magazines"
             >
-              <a
-                class="css-16h3dur"
-                data-testid="buttonLink"
-                href="/magazines"
-                id="vertical-magazines"
+              <span
+                class="css-1t9x538"
               >
-                <span
-                  class="css-1t9x538"
-                >
-                  Magazines
-                </span>
-              </a>
-            </li>
-            <hr
-              class="css-1nallzn"
-            />
-          </div>
+                Magazines
+              </span>
+            </a>
+          </li>
+          <hr
+            class="css-1nallzn"
+          />
         </div>
       </ul>
     </nav>
@@ -293,7 +289,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
         >
           <a
             aria-current="page"
-            class="css-vvjukz"
+            class="css-nszwum"
             data-testid="buttonLink"
             href="/home"
           >
@@ -309,7 +305,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
         >
           <a
             aria-current="false"
-            class="css-15ih4zy"
+            class="css-g4yxr6"
             data-testid="buttonLink"
             href="/news"
           >
@@ -325,7 +321,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
         >
           <a
             aria-current="false"
-            class="css-15ih4zy"
+            class="css-g4yxr6"
             data-testid="buttonLink"
             href="/comment"
           >
@@ -341,7 +337,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
         >
           <a
             aria-current="false"
-            class="css-15ih4zy"
+            class="css-g4yxr6"
             data-testid="buttonLink"
             href="/life-and-style"
           >
@@ -357,7 +353,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
         >
           <a
             aria-current="false"
-            class="css-15ih4zy"
+            class="css-g4yxr6"
             data-testid="buttonLink"
             href="/arts-and-books"
           >
@@ -373,7 +369,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
         >
           <a
             aria-current="false"
-            class="css-15ih4zy"
+            class="css-g4yxr6"
             data-testid="buttonLink"
             href="/sport"
           >
@@ -389,7 +385,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
         >
           <a
             aria-current="false"
-            class="css-15ih4zy"
+            class="css-g4yxr6"
             data-testid="buttonLink"
             href="/business-and-money"
           >
@@ -405,7 +401,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
         >
           <a
             aria-current="false"
-            class="css-15ih4zy"
+            class="css-g4yxr6"
             data-testid="buttonLink"
             href="/puzzles"
           >
@@ -421,7 +417,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
         >
           <a
             aria-current="false"
-            class="css-15ih4zy"
+            class="css-g4yxr6"
             data-testid="buttonLink"
             href="/magazines"
           >
