@@ -9,7 +9,7 @@ export const SecondaryNavigation: React.FC<{
   title: string;
   isActive: boolean;
   data: SecondaryMenuItem[];
-}> = ({ isActive = false, data }) => {
+}> = ({ isActive, data }) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(isActive);
   const [isSelected, setIsSelected] = useState<string>('');
   const firstItem = data[0].title;
