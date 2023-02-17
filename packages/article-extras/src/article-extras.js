@@ -50,7 +50,10 @@ const ArticleExtras = ({
     </>
   );
   return (
-    <UserState state={UserState.showArticleExtras} fallback={sponsoredArticlesAndRelatedArticles}>
+    <UserState
+      state={UserState.showArticleExtras}
+      fallback={sponsoredArticlesAndRelatedArticles}
+    >
       <div style={clearingStyle} />
       <ArticleTopics topics={topics} />
       {(savingEnabled || sharingEnabled) && (
