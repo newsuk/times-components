@@ -18,6 +18,8 @@ export const LiveArticleFlagText = styled.span`
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
 `;
 
 const flashing = keyframes`

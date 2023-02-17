@@ -132,7 +132,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
           .Opta-Event-Text {
             color: ${colours.functional.brandColour};
             font-family: ${fonts.supporting};
-            font-size: 14px;
+            font-size: 13px;
             line-height: 16px;
 
             .Opta-Event-Player,

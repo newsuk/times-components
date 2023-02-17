@@ -78,7 +78,7 @@ exports[`GalleryCarousel should render the component 1`] = `
           class="sc-kAzzGY eTzlhe"
         >
           <div
-            class="sc-ckVGcZ pKgO"
+            class="sc-ckVGcZ gJwkWa"
           >
             Label 1
           </div>
@@ -159,7 +159,7 @@ exports[`GalleryCarousel should render the component 1`] = `
             </div>
             <div>
               <div
-                class="sc-gqjmRU cwbOMy"
+                class="sc-gqjmRU elBRrc"
               >
                 Michael Clarke
               </div>
@@ -222,7 +222,7 @@ exports[`GalleryCarousel should render the component 1`] = `
         style="padding-left: 16px; padding-right: 16px;"
       >
         <div
-          class="sc-gqjmRU cwbOMy"
+          class="sc-gqjmRU elBRrc"
         >
           Michael Clarke
         </div>

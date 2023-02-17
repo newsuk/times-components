@@ -19,7 +19,7 @@ const styles = {
     color: colours.functional.secondary,
     ...fontFactory({
       font: "supporting",
-      fontSize: "link"
+      fontSize: "linkTopic"
     }),
     position: "relative"
   },

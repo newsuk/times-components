@@ -34,14 +34,14 @@ export const TimeSincePublishingContainer = styled.div`
 export const TimeSincePublishing = styled.div`
   color: ${colours.functional.brandColour};
   font-family: ${fonts.supporting};
-  font-size: 14px;
+  font-size: 13px;
   line-height: 18px;
 `;
 
 const updatedStyle = css`
   color: ${colours.functional.secondary};
   font-family: ${fonts.supporting};
-  font-size: 14px;
+  font-size: 13px;
   line-height: 18px;
 `;
 

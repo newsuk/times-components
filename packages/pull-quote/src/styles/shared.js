@@ -30,7 +30,7 @@ const sharedStyles = {
   link: {
     ...fontFactory({
       font: "supporting",
-      fontSize: "link"
+      fontSize: "caption"
     }),
     color: colours.functional.action,
     marginLeft: 4,

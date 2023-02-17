@@ -4,7 +4,7 @@ import { colours, fonts } from '@times-components/ts-styleguide';
 export const DateTime = styled.p`
   margin: 8px 0 0 0;
   color: ${colours.functional.secondary};
-  font-size: 13px;
+  font-size: 12px;
   line-height: 16px;
   font-family: ${fonts.supporting};
 `;
@@ -12,7 +12,7 @@ export const DateTime = styled.p`
 export const Byline = styled.p`
   margin: 8px 0 0 0;
   color: ${colours.functional.brandColour};
-  font-size: 13px;
+  font-size: 12px;
   line-height: 16px;
   font-family: ${fonts.supporting};
 `;

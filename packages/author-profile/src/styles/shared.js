@@ -82,7 +82,7 @@ const styles = {
     color: colours.functional.action,
     ...fontFactory({
       font: "supporting",
-      fontSize: "tertiary"
+      fontSize: "tertiaryTwitter"
     }),
     paddingLeft: spacing(1),
     textDecorationLine: "none"
