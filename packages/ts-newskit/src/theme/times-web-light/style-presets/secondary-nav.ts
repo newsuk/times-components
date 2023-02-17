@@ -27,7 +27,7 @@ export const secondaryNavigationStylePresets = {
       color: '#1D1D1B',
       backgroundColor: 'white',
       padding: '12px 0',
-      minWidth: '100%',
+      minWidth: 'max-content',
       borderBottom: '4px solid transparent'
     },
     hover: {

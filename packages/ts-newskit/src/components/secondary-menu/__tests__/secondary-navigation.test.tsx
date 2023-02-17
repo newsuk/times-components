@@ -17,7 +17,7 @@ describe('Secondary Menu', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
-  it('should render snapshot', () => {
+  it('should close the dropdown ', () => {
     const { getByText, queryByText, getAllByText } = customRender(
       <SecondaryNavigation data={mainMenuItems} title="Home" isActive={false} />
     );
@@ -28,5 +28,19 @@ describe('Secondary Menu', () => {
     const newsButton = getAllByText('News')[0];
     fireEvent.click(newsButton);
     waitFor(() => expect(queryByText('News')).toBeInTheDocument());
+  });
+  it('should change the home title if another item seleceted', () => {
+    const { getAllByText, container, queryByText } = customRender(
+      <SecondaryNavigation data={mainMenuItems} title="Home" isActive={true} />
+    );
+    const pTag = container.querySelector('p');
+    const pTagTextContent = pTag ? pTag.textContent : 'Home';
+    expect(pTagTextContent).toBe('');
+
+    const newsButton = getAllByText('News')[0];
+    fireEvent.click(newsButton);
+    waitFor(() => expect(test).toBe('News'));
+    waitFor(() => expect(queryByText('News')).toBeInTheDocument());
+    waitFor(() => expect(queryByText('Home')).not.toBeInTheDocument());
   });
 });
