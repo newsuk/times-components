@@ -1,5 +1,5 @@
 {
-  "newPreset01": {
+  "newPreset020": {
     "fontFamily": "{{fonts.fontFamily030.fontFamily}}",
     "fontWeight": "{{fonts.fontWeight020}}",
     "fontSize": "{{fonts.newFontSize1}}",
@@ -7,10 +7,10 @@
     "letterSpacing": "{{fonts.fontLetterSpacing010}}",
     "fontStretch": "normal"
   },
-  "newPreset02": {
+  "newPreset030": {
     "fontFamily": "{{fonts.newFontFamily.fontFamily}}",
     "fontWeight": "{{fonts.fontWeight020}}",
-    "fontSize": "{{fonts.newFontSize2}}",
+    "fontSize": "{{fonts.newFontSize010}}",
     "lineHeight": "{{fonts.fontLineHeight030}}",
     "letterSpacing": "{{fonts.fontLetterSpacing010}}",
     "fontStretch": "normal"

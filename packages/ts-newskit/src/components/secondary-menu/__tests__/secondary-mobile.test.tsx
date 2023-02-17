@@ -1,5 +1,5 @@
 import React from 'react';
-import { customRender } from '../../utils/test-utils';
+import { render } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
 import { SecondaryNavMobile } from '../mobile';
@@ -14,7 +14,7 @@ describe('Secondary Menu Mobile', () => {
     cleanup();
   });
   it('should render the snapshot when dropdown is not expanded', () => {
-    const { asFragment } = customRender(
+    const { asFragment } = render(
       <SecondaryNavMobile
         data={mainMenuItems}
         isExpanded={false}
@@ -26,7 +26,7 @@ describe('Secondary Menu Mobile', () => {
     expect(asFragment()).toMatchSnapshot();
   });
   it('should render the snapshot when dropdown is expanded', () => {
-    const { asFragment } = customRender(
+    const { asFragment } = render(
       <SecondaryNavMobile
         data={mainMenuItems}
         isExpanded={true}
@@ -38,7 +38,7 @@ describe('Secondary Menu Mobile', () => {
     expect(asFragment()).toMatchSnapshot();
   });
   it('should expand the dropdown when you click on it', () => {
-    const { getByText, getByTestId } = customRender(
+    const { getByText, getByTestId } = render(
       <SecondaryNavMobile
         data={mainMenuItems}
         isExpanded={true}
@@ -53,7 +53,7 @@ describe('Secondary Menu Mobile', () => {
     expect(getByText('Close')).toBeInTheDocument();
   });
   it('should close the dropdown when you click on it again', () => {
-    const { queryByText, getByTestId } = customRender(
+    const { queryByText, getByTestId } = render(
       <SecondaryNavMobile
         data={mainMenuItems}
         isExpanded={false}
@@ -68,7 +68,7 @@ describe('Secondary Menu Mobile', () => {
     expect(queryByText('See all')).toBeInTheDocument();
   });
   it('should render Close button when dropdown is expanded', () => {
-    const { getByText, getByTestId } = customRender(
+    const { getByText, getByTestId } = render(
       <SecondaryNavMobile
         data={mainMenuItems}
         isExpanded={true}
@@ -82,7 +82,7 @@ describe('Secondary Menu Mobile', () => {
     expect(getByText('Close')).toBeInTheDocument();
   });
   it('should render See all button when dropdown is not expanded', () => {
-    const { queryByText, getByTestId } = customRender(
+    const { queryByText, getByTestId } = render(
       <SecondaryNavMobile
         data={mainMenuItems}
         isExpanded={false}
@@ -96,7 +96,7 @@ describe('Secondary Menu Mobile', () => {
     expect(queryByText('See all')).toBeInTheDocument();
   });
   it('should call handleSelect when clicked', () => {
-    const { getAllByTestId } = customRender(
+    const { getAllByTestId } = render(
       <SecondaryNavMobile
         data={mainMenuItems}
         isExpanded={true}

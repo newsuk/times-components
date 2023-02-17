@@ -1,5 +1,5 @@
 import React from 'react';
-import { customRender } from '../../utils/test-utils';
+import { render } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
 import { SecondaryNavDesktop } from '../desktop';
@@ -14,7 +14,7 @@ describe('Secondary Menu Desktop', () => {
   });
 
   it('should render snapshot', () => {
-    const { asFragment } = customRender(
+    const { asFragment } = render(
       <SecondaryNavDesktop
         data={mainMenuItems}
         isSelected="Home"
@@ -24,7 +24,7 @@ describe('Secondary Menu Desktop', () => {
     expect(asFragment()).toMatchSnapshot();
   });
   it('should render the menu item', () => {
-    const { getByText } = customRender(
+    const { getByText } = render(
       <SecondaryNavDesktop
         data={mainMenuItems}
         isSelected="Home"
@@ -35,7 +35,7 @@ describe('Secondary Menu Desktop', () => {
     expect(title).toBeInTheDocument();
   });
   it('items should have ancher with href', () => {
-    const { getAllByTestId } = customRender(
+    const { getAllByTestId } = render(
       <SecondaryNavDesktop
         data={mainMenuItems}
         isSelected="Home"
@@ -46,7 +46,7 @@ describe('Secondary Menu Desktop', () => {
     expect(title).toHaveAttribute('href', '/home');
   });
   it('should call handleSelect when clicked', () => {
-    const { getAllByTestId } = customRender(
+    const { getAllByTestId } = render(
       <SecondaryNavDesktop
         data={mainMenuItems}
         isSelected="Home"

@@ -1,6 +1,5 @@
 import React from 'react';
-import { ThemeProvider, MenuItem } from 'newskit';
-import { TimesWebLightTheme } from '../../../theme';
+import { MenuItem } from 'newskit';
 import { MenuDivider, MainMenu } from '../styles';
 import { SecondaryMenuItem } from '../types';
 
@@ -10,7 +9,7 @@ export const SecondaryNavDesktop: React.FC<{
   handleSelect: (value: string) => void;
 }> = ({ data, isSelected, handleSelect }) => {
   return (
-    <ThemeProvider theme={TimesWebLightTheme}>
+    <>
       <MainMenu
         aria-label="Secondary Navigation"
         overrides={{ spaceInline: 'space050' }}
@@ -29,6 +28,6 @@ export const SecondaryNavDesktop: React.FC<{
         ))}
       </MainMenu>
       <MenuDivider />
-    </ThemeProvider>
+    </>
   );
 };

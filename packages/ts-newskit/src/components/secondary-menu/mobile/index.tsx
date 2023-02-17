@@ -1,6 +1,5 @@
 import React from 'react';
-import { ThemeProvider, Menu } from 'newskit';
-import { TimesWebLightTheme } from '../../../theme';
+import { Menu } from 'newskit';
 import { Navigator } from './navigator';
 import { SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
@@ -15,18 +14,14 @@ export const SecondaryNavMobile: React.FC<{
   const subMenuTitle = isExpanded ? 'Close' : 'See all';
 
   return (
-    <ThemeProvider theme={TimesWebLightTheme}>
-      <Menu vertical aria-label="Secondary Navigation">
-        <Navigator
-          title={isSelected}
-          isExpanded={isExpanded}
-          setIsExpanded={setIsExpanded}
-          subMenuTitle={subMenuTitle}
-        />
-        {isExpanded ? (
-          <NavItems data={data} handleSelect={handleSelect} />
-        ) : null}
-      </Menu>
-    </ThemeProvider>
+    <Menu vertical aria-label="Secondary Navigation">
+      <Navigator
+        title={isSelected}
+        isExpanded={isExpanded}
+        setIsExpanded={setIsExpanded}
+        subMenuTitle={subMenuTitle}
+      />
+      {isExpanded ? <NavItems data={data} handleSelect={handleSelect} /> : null}
+    </Menu>
   );
 };

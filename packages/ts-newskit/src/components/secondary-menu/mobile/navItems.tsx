@@ -1,6 +1,6 @@
 import React from 'react';
-import { MenuItem } from 'newskit';
-import { MenuDivider, MenuItems, MenuItemsWrapper } from '../styles';
+import { MenuItem, Block } from 'newskit';
+import { MenuDivider } from '../styles';
 import { SecondaryMenuItem } from '../types';
 
 export const NavItems: React.FC<{
@@ -8,15 +8,15 @@ export const NavItems: React.FC<{
   handleSelect: (title: string) => void;
 }> = ({ data, handleSelect }) => {
   const menuItemsPreset = {
-    stylePreset: 'menuItemL1'
+    stylePreset: 'secondaryMenuItem'
   };
 
   return (
-    <MenuItemsWrapper>
+    <>
       {data.map(item => (
-        <MenuItems>
+        <Block stylePreset="blockDefault">
           <MenuItem
-            overrides={{ ...menuItemsPreset, typographyPreset: 'newPreset01' }}
+            overrides={{ ...menuItemsPreset, typographyPreset: 'newPreset020' }}
             href={item.url}
             id={`vertical-${item.slug}`}
             key={item.slug}
@@ -25,8 +25,8 @@ export const NavItems: React.FC<{
             {item.title}
           </MenuItem>
           <MenuDivider />
-        </MenuItems>
+        </Block>
       ))}
-    </MenuItemsWrapper>
+    </>
   );
 };

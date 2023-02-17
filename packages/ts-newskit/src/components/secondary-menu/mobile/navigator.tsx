@@ -1,6 +1,5 @@
 import React from 'react';
-import { MenuSub, TextBlock } from 'newskit';
-import { MenuWrapper, TextBlockWrapper } from '../styles';
+import { MenuSub, TextBlock, Block } from 'newskit';
 
 export const Navigator: React.FC<{
   title: string;
@@ -13,31 +12,29 @@ export const Navigator: React.FC<{
   };
 
   return (
-    <>
-      <MenuWrapper>
-        <TextBlockWrapper>
-          <TextBlock typographyPreset="utilityHeading060">{title}</TextBlock>
-        </TextBlockWrapper>
-        <MenuSub
-          title={subMenuTitle}
-          onClick={() => {
-            setIsExpanded(!isExpanded);
-          }}
-          overrides={{
-            ...menuSubPreset,
-            typographyPreset: 'newPreset02',
-            indicatorIcon: {
-              props: {
-                overrides: {
-                  stylePreset: 'icon'
-                }
+    <Block stylePreset="menuBlock">
+      <Block stylePreset="textBlock">
+        <TextBlock typographyPreset="utilityHeading060">{title}</TextBlock>
+      </Block>
+      <MenuSub
+        title={subMenuTitle}
+        onClick={() => {
+          setIsExpanded(!isExpanded);
+        }}
+        overrides={{
+          ...menuSubPreset,
+          typographyPreset: 'newPreset030',
+          indicatorIcon: {
+            props: {
+              overrides: {
+                stylePreset: 'icon'
               }
             }
-          }}
-        >
-          {children}
-        </MenuSub>
-      </MenuWrapper>
-    </>
+          }
+        }}
+      >
+        {children}
+      </MenuSub>
+    </Block>
   );
 };
