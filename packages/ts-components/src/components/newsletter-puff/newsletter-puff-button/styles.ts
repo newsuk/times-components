@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { colours, fonts } from '@times-components/ts-styleguide';
 
 export const PuffButton = styled.button`
-  font-family: GillSansMTStd-Medium;
-  font-size: 16px;
+  font-family: ${fonts.supporting};
+  font-size: 15px;
   line-height: 0;
   align-items: center;
   background-color: transparent;

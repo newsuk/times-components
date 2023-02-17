@@ -21,7 +21,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
               padding: 20px 0 0 0;
               color: ${colours.functional.brandColour};
               font-family: ${fonts.supporting};
-              font-size: 14px;
+              font-size: 13px;
               line-height: 14px;
             }
 

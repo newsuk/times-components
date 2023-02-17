@@ -65,6 +65,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
               span {
                 float: none;
                 padding: 0;
+                font-size: 13px;
               }
 
               @media (min-width: ${breakpoints.medium}px) {
@@ -106,7 +107,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
                 @media (min-width: ${breakpoints.medium}px) {
                   width: 60px !important;
                   padding: 6px 0 0 20px;
-                  font-size: 14px;
+                  font-size: 13px;
                   line-height: 14px;
                 }
               }
@@ -230,7 +231,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
                       .Opta-Event-Text {
                         color: ${colours.functional.primary};
                         font-family: ${fonts.supporting};
-                        font-size: 14px;
+                        font-size: 13px;
                         line-height: 16px;
 
                         .Opta-Event-Player,

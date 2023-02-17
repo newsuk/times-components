@@ -10,6 +10,6 @@ export const Container = styled.div`
 export const TimeSinceUpdate = styled.div<{ color?: string }>`
   color: ${({ color }) => color || colours.functional.primary};
   font-family: ${fonts.supporting};
-  font-size: 12px;
+  font-size: 11px;
   line-height: 16px;
 `;

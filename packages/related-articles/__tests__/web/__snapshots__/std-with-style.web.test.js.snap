@@ -112,8 +112,8 @@ exports[`default styles 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-family: Roboto-Regular;
+  font-size: 12px;
   line-height: 15px;
   color: #333333;
   -webkit-flex-direction: row;
@@ -131,8 +131,8 @@ exports[`default styles 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-family: Roboto-Regular;
+  font-size: 12px;
   line-height: 15px;
   color: #333333;
   -webkit-flex-direction: row;
@@ -294,7 +294,7 @@ exports[`default styles 1`] = `
 }
 
 .IS2 {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 12;
   line-height: 12px;
   font-weight: 400;
@@ -321,8 +321,8 @@ exports[`default styles 1`] = `
 
 .IS5 {
   color: #696969;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
+  font-family: Roboto-Regular;
+  font-size: 12;
   line-height: 15px;
   margin-bottom: 5px;
 }
