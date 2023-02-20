@@ -95,15 +95,5 @@ export const menuStylePresets = {
       marginBottom: 0,
       height: '40px'
     }
-  },
-  IconPreset1: {
-    base: {
-      transform: 'rotate(270deg)'
-    }
-  },
-  IconPreset2: {
-    base: {
-      transform: 'rotate(180deg)'
-    }
   }
 };
