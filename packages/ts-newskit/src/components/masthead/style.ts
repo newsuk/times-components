@@ -60,29 +60,9 @@ export const MastheadTitle = styled.h1`
 `;
 
 export const MastheadLogoImg = styled.img`
-    vertical-align: middle;
-    max-width: 100%;
+    display: block;
+    max-width: 436px;
     border: 0;
-    @media (min-width: 768px) {
-        height: 6rem;
-        max-height: 100%;
-        vertical-align: middle;
-        margin: 0 auto;
-    }
+    vertical-align: middle;
+    margin: 0 auto;
 `;
-
-// export const DateTime = styled.time`
-//     span {
-//         font-family: TimesDigitalW04-RegularSC',
-//         font-size: 1.4rem;
-//         line-height: 1.4rem;
-//         letter-spacing: 1.2px;
-//         margin-top: 3px;
-//         margin-bottom: 2rem;
-//         display: none;
-//         text-transform: capitalize',
-//         @media (min-width: 768px) {
-//             display: block;
-//         }
-//     }
-// `;

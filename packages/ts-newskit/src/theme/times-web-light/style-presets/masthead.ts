@@ -4,8 +4,8 @@ export const mastheadStylePresets = {
       color: 'inherit',
       textDecoration: 'none',
       height: 'auto',
-      margin: '2.2rem auto 0.8rem',
-      display: 'inline-block',
+      margin: '0 auto 0.8rem',
+      display: 'block'
     }
   },
   mastheadTime: {
@@ -15,8 +15,9 @@ export const mastheadStylePresets = {
       fontWeight: '400',
       lineHeight: '20px',
       marginTop: '3px',
-      marginBottom: '2rem',
+      marginBottom: '0.5rem',
       textTransform: 'capitalize',
+      display: 'block'
     }
   }
 };
