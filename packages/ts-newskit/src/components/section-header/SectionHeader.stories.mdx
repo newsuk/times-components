@@ -1,0 +1,18 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs'
+import { ThemeProvider } from 'newskit';
+import { TimesWebLightTheme } from '../../theme';
+import { SectionHeaderTitle } from "./index";
+import { sectionTitles } from './fixtures/sectiontitle-items.json';
+
+<Meta title="Newskit/Section Header" component={SectionHeaderTitle} />
+
+# Section Title component
+Simple Framework for displaying a section title.
+
+<Canvas>
+  <Story name="Section Title">
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <SectionHeaderTitle data={sectionTitles} />
+    </ThemeProvider>
+  </Story>
+</Canvas>

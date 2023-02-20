@@ -1,0 +1,24 @@
+Desktop Logic
+{/* is sundaytimes */}
+    {/* hasPoppy */}
+    <img className="Masthead-logo-image" src="/img/logos/sundaytimes-with-crest-black-poppy.png" alt="The Sunday Times Masthead" />
+    {/* noPoppy */}
+    <img className="Masthead-logo-image" src="/img/logos/sundaytimes-with-crest-black.png" alt="The Sunday Times Masthead" />
+{ /* is theTimes */ }
+    { /* hasPoppy */}
+    <img className="Masthead-logo-image" src="/img/logos/times-black-poppy.png" alt="The Times Masthead" />
+    {/* noPoppy */}
+    <img className="Masthead-logo-image" src="/img/logos/times-black.png" alt="The Times Masthead" />
+
+
+Mobile Logic:
+Fallsback to the mobile header
+
+<div class="GlobalNav-logoHolder">
+    <div class="GlobalNav-logo">
+        <a data-tracking="{&quot;event_navigation_name&quot;:&quot;header:global navigation:logo&quot;}" href="/" title="Link to homepage" class="js-tracking">
+            <img src="/d/img/logos/times-white-small-f4ad00a748.png" alt="times logo" class="GlobalNav-logoImg GlobalNav-logoImg--times">
+        </a>
+    </div>
+    <time datetime="2023-02-16">Thursday February 16 2023</time>
+</div>

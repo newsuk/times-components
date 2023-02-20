@@ -34,6 +34,13 @@ export const typographyPresets = Object.fromEntries(
       lineHeight: '{{fonts.fontLineHeight030}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
+    },
+    sectionTitle010: {
+      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight040}}',
+      lineHeight: '{{fonts.fontLineHeight030}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
     }
   }).map(([key, value]) => {
     if (
@@ -42,7 +49,8 @@ export const typographyPresets = Object.fromEntries(
         'editorialHeadline030',
         'editorialHeadline060',
         'editorialHeadline070',
-        'editorialHeadline080'
+        'editorialHeadline080',
+        'sectionTitle010'
       ].includes(key)
     ) {
       value.lineHeight = '{{fonts.fontLineHeight030}}';
