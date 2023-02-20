@@ -46,7 +46,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
       </span>
       <svg
         aria-hidden="true"
-        class="css-1f2bgiq-EmotionIconBase ex0cdmw0"
+        class="css-bl48kn-EmotionIconBase ex0cdmw0"
         fill="currentColor"
         focusable="false"
         viewBox="0 0 24 24"
@@ -148,7 +148,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
       </span>
       <svg
         aria-hidden="true"
-        class="css-1f2bgiq-EmotionIconBase ex0cdmw0"
+        class="css-bl48kn-EmotionIconBase ex0cdmw0"
         fill="currentColor"
         focusable="false"
         viewBox="0 0 24 24"

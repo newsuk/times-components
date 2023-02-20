@@ -4,7 +4,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
 <DocumentFragment>
   <nav
     aria-label="menu-vertical"
-    class="css-v73lr2"
+    class="css-1fherrp"
     data-testid="menu-container"
     role="navigation"
   >
@@ -127,7 +127,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           </span>
           <svg
             aria-hidden="true"
-            class="css-1f2bgiq-EmotionIconBase ex0cdmw0"
+            class="css-bl48kn-EmotionIconBase ex0cdmw0"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -229,7 +229,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           </span>
           <svg
             aria-hidden="true"
-            class="css-1f2bgiq-EmotionIconBase ex0cdmw0"
+            class="css-bl48kn-EmotionIconBase ex0cdmw0"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -397,7 +397,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
 <DocumentFragment>
   <nav
     aria-label="menu-vertical"
-    class="css-v73lr2"
+    class="css-1fherrp"
     data-testid="menu-container"
     role="navigation"
   >
@@ -523,7 +523,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
           </span>
           <svg
             aria-hidden="true"
-            class="css-1f2bgiq-EmotionIconBase ex0cdmw0"
+            class="css-bl48kn-EmotionIconBase ex0cdmw0"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -625,7 +625,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
           </span>
           <svg
             aria-hidden="true"
-            class="css-1f2bgiq-EmotionIconBase ex0cdmw0"
+            class="css-bl48kn-EmotionIconBase ex0cdmw0"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -793,7 +793,7 @@ exports[`HamburgerMenu should render the component 1`] = `
 <DocumentFragment>
   <nav
     aria-label="menu-vertical"
-    class="css-v73lr2"
+    class="css-1fherrp"
     data-testid="menu-container"
     role="navigation"
   >
@@ -916,7 +916,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           </span>
           <svg
             aria-hidden="true"
-            class="css-1f2bgiq-EmotionIconBase ex0cdmw0"
+            class="css-bl48kn-EmotionIconBase ex0cdmw0"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"
@@ -1018,7 +1018,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           </span>
           <svg
             aria-hidden="true"
-            class="css-1f2bgiq-EmotionIconBase ex0cdmw0"
+            class="css-bl48kn-EmotionIconBase ex0cdmw0"
             fill="currentColor"
             focusable="false"
             viewBox="0 0 24 24"

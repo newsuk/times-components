@@ -22,18 +22,7 @@ const NavigationList: React.FC<{
                 }
                 overrides={{
                   stylePreset: 'menuItemL1',
-                  typographyPreset: 'newPreset020',
-                  indicatorIcon: {
-                    props: {
-                      overrides: {
-                        stylePreset: `${
-                          expandedL1 !== item.slug
-                            ? 'IconPreset1'
-                            : 'IconPreset2'
-                        }`
-                      }
-                    }
-                  }
+                  typographyPreset: 'newPreset020'
                 }}
               >
                 {item.items.map(i => (
