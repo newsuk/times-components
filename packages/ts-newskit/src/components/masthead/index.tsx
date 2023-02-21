@@ -7,15 +7,12 @@ import { TimesWebLightTheme } from '../../theme';
 
 const todaysDate = (new Date()).toISOString();
 
-function showMasthead(props) {
-	const isSunday = props.isSunday;
-	if (isSunday) {
-		return <SundayTimesMasthead />;
-	}
-	return <TimesMasthead />;
-};
+type MastheadProps = {
+	isSunday?: boolean
+  }
 
-export const EditionMasthead = () => {
+export const EditionMasthead: React.FC<MastheadProps> = ({ isSunday = false }) => {
+	const showMasthead = (isSunday: boolean) => isSunday ? <SundayTimesMasthead />:<TimesMasthead />;
 	return (
 		<ThemeProvider theme={TimesWebLightTheme}>
 			<MainHeader>
@@ -31,7 +28,7 @@ export const EditionMasthead = () => {
 						}}
 					/>
 					<LinkInline href='/' overrides={{stylePreset: 'mastheadLogo' }}>
-						<showMasthead isSunday={false} />
+						{showMasthead(isSunday)}
 					</LinkInline>
 				</Masthead>
 			</MainHeader>

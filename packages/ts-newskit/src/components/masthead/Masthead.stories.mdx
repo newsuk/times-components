@@ -1,5 +1,7 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs'
-import { EditionMasthead } from "./Masthead";
+import { EditionMasthead } from "./index";
+
+import { boolean } from "@storybook/addon-knobs"
 
 <Meta title="Newskit/Masthead" component={EditionMasthead} />
 
@@ -7,7 +9,7 @@ import { EditionMasthead } from "./Masthead";
 Needs work, but this is the basic framework required for the masthead.
 
 <Canvas>
-  <Story name="The Times">
-      <EditionMasthead />
+  <Story name="Masthead">
+      <EditionMasthead isSunday={boolean('Is it sunday', false)} />
   </Story>
 </Canvas>
