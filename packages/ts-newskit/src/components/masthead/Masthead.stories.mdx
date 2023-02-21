@@ -6,16 +6,10 @@ import { boolean } from "@storybook/addon-knobs"
 <Meta title="Newskit/Masthead" component={EditionMasthead} />
 
 # Masthead component
-Needs work, but this is the basic framework required for the masthead.
+This is the basic framework required for The Times/The Sunday Times masthead.
 
 <Canvas>
-  <Story name="The Times">
+  <Story name="Not Sunday">
       <EditionMasthead isSunday={boolean('Is it sunday?', false)} />
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story name="The Sunday Times">
-      <EditionMasthead isSunday={boolean('Is it sunday?', true)} />
   </Story>
 </Canvas>
