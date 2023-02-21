@@ -7,5 +7,6 @@ export const stylePresets = {
   ...colorStylePresets,
   ...mastheadStylePresets,
   ...pageStylePresets,
+  
   ...textStylePresets
 };
