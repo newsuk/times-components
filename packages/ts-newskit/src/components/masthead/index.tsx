@@ -8,7 +8,7 @@ import { TimesWebLightTheme } from '../../theme';
 const todaysDate = (new Date()).toISOString();
 
 export const EditionMasthead: React.FC<{ isSunday: boolean }> = ({ isSunday }) => {
-	const ShowMasthead = (isSunday: boolean) => isSunday ? <SundayTimesMasthead />:<TimesMasthead />;
+	const ShowMasthead = isSunday ? <SundayTimesMasthead />:<TimesMasthead />;
 	return (
 		<ThemeProvider theme={TimesWebLightTheme}>
 			<MainHeader>

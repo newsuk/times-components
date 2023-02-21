@@ -1,5 +1,5 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs'
-import { EditionMasthead } from "./index";
+import EditionMasthead from "./index";
 
 import { boolean } from "@storybook/addon-knobs"
 
@@ -9,7 +9,7 @@ import { boolean } from "@storybook/addon-knobs"
 This is the basic framework required for The Times/The Sunday Times masthead.
 
 <Canvas>
-  <Story name="Not Sunday">
-      <EditionMasthead isSunday={boolean('Is it sunday?', false)} />
+  <Story name="Is Sunday?">
+    <EditionMasthead isSunday={boolean('Is It Sunday?', true)} />
   </Story>
 </Canvas>
