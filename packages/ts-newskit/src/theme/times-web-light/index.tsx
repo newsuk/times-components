@@ -7,9 +7,8 @@ import overlays from './styles/overlays.json';
 import shadows from './styles/shadows.json';
 
 import { fonts } from './styles/fonts';
-import { typographyPresets } from './styles/typography-presets';
-
 import { stylePresets } from './style-presets';
+import { typographyPresets } from './styles/typography-presets';
 
 export const TimesWebLightTheme = createTheme({
   name: 'times-web-light',

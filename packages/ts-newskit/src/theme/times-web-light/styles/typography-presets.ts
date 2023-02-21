@@ -5,11 +5,20 @@ export const typographyPresets = Object.fromEntries(
     ...themeDefault,
     newPreset010: {
       fontFamily: 'Roboto-Medium',
-      fontWeight: '500',
+      fontWeight: '{{fonts.fontWeight020}}',
       fontSize: '{{fonts.fontSize020}}',
       lineHeight: '16px',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
+    },
+    topNav010: {
+      fontFamily: 'Roboto-Medium',
+      fontWeight: '{{fonts.fontWeight020}}',
+      fontSize: '{{fonts.fontSize020}}',
+      lineHeight: '{{fonts.fontLineHeight010}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal',
+      whiteSpace: 'nowrap'
     },
     editorialHeadline035: {
       fontFamily: '{{fonts.fontFamily010.fontFamily}}',

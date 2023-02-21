@@ -1,15 +1,14 @@
 import React from 'react';
-import { ThemeProvider } from 'newskit';
+import TopNav from './topnav';
 
-import { TimesWebLightTheme } from '../../theme';
+type GlobalNavProps = {
+  isLoggedIn?: boolean
+};
 
-import { TopNav } from './top-nav';
-
-
-export const GlobalNav: React.FC<{}> = () => {
+const GlobalNav:React.FC<GlobalNavProps> = ({ isLoggedIn }) => {
   return (
-    <ThemeProvider theme={TimesWebLightTheme}>
-        <TopNav />
-    </ThemeProvider>
+    <TopNav isLoggedIn={isLoggedIn} />
   );
 };
+
+export default GlobalNav;

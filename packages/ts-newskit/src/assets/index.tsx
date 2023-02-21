@@ -3,7 +3,9 @@ import { customToNewsKitIcon } from "newskit";
 import SearchIcon from '../assets/SearchIcon';
 import BurgerIcon from '../assets/BurgerIcon';
 import Masthead from './Masthead';
-// import CloseIcon from '../assets/CloseIcon';
+import RoundedCloseIcon from './RoundedCloseIcon';
+import CloseIcon from '../assets/CloseIcon';
+import ChevronIcon from './ChevronIcon';
 
 export const NewsKitSearchIcon = customToNewsKitIcon(
   'NewskitSearchIcon',
@@ -20,7 +22,16 @@ export const NewsKitMasthead = customToNewsKitIcon(
   props => <Masthead {...props} />
 );
 
-// export const NewsKitCloseIcon = customToNewsKitIcon(
-// 'NewsKitCloseIcon',
-// props => <CloseIcon {...props} />
-// );
+export const NewsKitRoundedCloseIcon = customToNewsKitIcon(
+  'RoundedCloseIcon',
+  props => <RoundedCloseIcon {...props} />
+);
+
+export const NewsKitCloseIcon = customToNewsKitIcon(
+  'NewsKitCloseIcon',
+  props => <CloseIcon {...props} />
+);
+export const NewsKitChevronIcon = customToNewsKitIcon(
+  'NewsKitChevronIcon',
+  props => <ChevronIcon {...props} />
+);
