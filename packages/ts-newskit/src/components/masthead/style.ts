@@ -59,10 +59,10 @@ export const MastheadTitle = styled.h1`
     }
 `;
 
-export const MastheadLogoImg = styled.img`
-    display: block;
-    max-width: 436px;
-    border: 0;
-    vertical-align: middle;
-    margin: 0 auto;
-`;
+// export const MastheadLogoImg = styled.img`
+//     display: block;
+//     max-width: 436px;
+//     border: 0;
+//     vertical-align: middle;
+//     margin: 0 auto;
+// `;

@@ -1,9 +1,12 @@
 import React from 'react';
 import { ThemeProvider, DateTime, LinkInline } from 'newskit'
-import { MainHeader, Masthead, MastheadTitle, MastheadLogoImg } from './style'
+import { MainHeader, Masthead, MastheadTitle } from './style'
+
+import { TimesMasthead } from '../../assets';
 import { TimesWebLightTheme } from '../../theme';
 
 const todaysDate = (new Date()).toISOString();
+// const isSunday = ;
 
 export const EditionMasthead: React.FC<{}> = () => {
 	return (
@@ -20,11 +23,11 @@ export const EditionMasthead: React.FC<{}> = () => {
 							stylePreset: 'mastheadTime'
 						}}
 						/>
-					<LinkInline href='/' className='js-tracking' overrides={{stylePreset: 'mastheadLogo' }}>
-						<MastheadLogoImg src='https://www.thetimes.co.uk/d/img/logos/times-black-ee1e0ce4ed.png' alt='The Times' />
+					<LinkInline href='/' overrides={{stylePreset: 'mastheadLogo' }}>
+						<TimesMasthead />
 					</LinkInline>
 				</Masthead>
 			</MainHeader>
 		</ThemeProvider>
-  );
+	);
 };
