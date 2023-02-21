@@ -1,3 +1,3 @@
 export { Navigation } from './components/navigation/Navigation';
 export { EditionMasthead } from './components/masthead/Masthead';
-export { SectionHeaderTitle } from './components/section-header/';
+export { SectionHeader } from './components/section-header/';
