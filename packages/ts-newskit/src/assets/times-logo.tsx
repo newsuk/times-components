@@ -28,4 +28,4 @@ const TimesMasthead = (props: any) => (
   </svg>
 )
 
-export default TimesMasthead
+export default TimesMasthead;

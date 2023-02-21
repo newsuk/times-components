@@ -2,13 +2,20 @@ import React from 'react';
 import { ThemeProvider, DateTime, LinkInline } from 'newskit'
 import { MainHeader, Masthead, MastheadTitle } from './style'
 
-import { TimesMasthead } from '../../assets';
+import { TimesMasthead, SundayTimesMasthead } from '../../assets';
 import { TimesWebLightTheme } from '../../theme';
 
 const todaysDate = (new Date()).toISOString();
-// const isSunday = ;
 
-export const EditionMasthead: React.FC<{}> = () => {
+function showMasthead(props) {
+	const isSunday = props.isSunday;
+	if (isSunday) {
+		return <SundayTimesMasthead />;
+	}
+	return <TimesMasthead />;
+};
+
+export const EditionMasthead = () => {
 	return (
 		<ThemeProvider theme={TimesWebLightTheme}>
 			<MainHeader>
@@ -22,9 +29,9 @@ export const EditionMasthead: React.FC<{}> = () => {
 						overrides={{
 							stylePreset: 'mastheadTime'
 						}}
-						/>
+					/>
 					<LinkInline href='/' overrides={{stylePreset: 'mastheadLogo' }}>
-						<TimesMasthead />
+						<showMasthead isSunday={false} />
 					</LinkInline>
 				</Masthead>
 			</MainHeader>
