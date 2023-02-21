@@ -2,9 +2,7 @@ import { Meta, Story, Canvas } from '@storybook/addon-docs';
 import { ThemeProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../theme';
 import { SectionHeader } from "./index";
-
 import { text } from '@storybook/addon-knobs';
-const content = text('title', 'News');
 
 <Meta title="Newskit/Section Header" component={SectionHeader} />
 
@@ -14,7 +12,7 @@ Simple Framework for displaying a section title.
 <Canvas>
   <Story name="Section Title">
     <ThemeProvider theme={TimesWebLightTheme}>
-      <SectionHeader title={content} />
+      <SectionHeader title={text('Title', 'News')} />
     </ThemeProvider>
   </Story>
 </Canvas>

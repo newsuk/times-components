@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SectionHeader = styled.div`
+export const SectionHeaderText = styled.div`
     text-align: center;
     width: 100%;
     margin-bottom: 30px;
