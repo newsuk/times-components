@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider } from 'newskit'
-import { SectionHeaderTitle } from './SectionHeader';
+import { SectionHeaderTitle } from './SectionHeaderTitle';
 
 import { TimesWebLightTheme } from '../../theme';
 

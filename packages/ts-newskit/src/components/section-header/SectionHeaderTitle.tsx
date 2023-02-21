@@ -4,7 +4,7 @@ import { ThemeProvider, TextBlock } from 'newskit'
 import { SectionHeader } from './style'
 import { TimesWebLightTheme } from '../../theme';
 
-export const SectionHeaderTitle: React.FC<{ sectionTitle: string }> = ( sectionTitle ) => {
+export const SectionHeaderTitle: React.FC<{ sectionTitle: string }> = ( title ) => {
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
       <SectionHeader>
@@ -12,7 +12,7 @@ export const SectionHeaderTitle: React.FC<{ sectionTitle: string }> = ( sectionT
           as="span"
           typographyPreset="sectionTitle010"
         >
-          {sectionTitle}
+          {title}
         </TextBlock>
       </SectionHeader>
     </ThemeProvider>
