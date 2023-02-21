@@ -1,20 +1,13 @@
 import React from 'react';
-import { ThemeProvider, TextBlock } from 'newskit'
+import { ThemeProvider } from 'newskit'
 
 import { SectionHeader } from './style'
 import { TimesWebLightTheme } from '../../theme';
 
-export const SectionHeaderTitle: React.FC<{ sectionTitle: string }> = ( title ) => {
+export const SectionHeaderTitle: React.FC<{ title: string }> = ( title ) => {
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
-      <SectionHeader>
-        <TextBlock
-          as="span"
-          typographyPreset="sectionTitle010"
-        >
-          {title}
-        </TextBlock>
-      </SectionHeader>
+      <SectionHeader {...title} />
     </ThemeProvider>
   );
 };

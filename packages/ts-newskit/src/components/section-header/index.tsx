@@ -5,7 +5,7 @@ import { SectionHeaderTitle } from './SectionHeaderTitle';
 import { TimesWebLightTheme } from '../../theme';
 
 export const SectionHeader = () => {
-  const props = { sectionTitle: "News" };
+  const props = { title: "News" };
 
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
