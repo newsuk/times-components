@@ -9,10 +9,10 @@ const todaysDate = (new Date()).toISOString();
 
 type MastheadProps = {
 	isSunday?: boolean
-  }
+}
 
 export const EditionMasthead: React.FC<MastheadProps> = ({ isSunday = false }) => {
-	const showMasthead = (isSunday: boolean) => isSunday ? <SundayTimesMasthead />:<TimesMasthead />;
+	const ShowMasthead = (isSunday: boolean) => isSunday ? <SundayTimesMasthead />:<TimesMasthead />;
 	return (
 		<ThemeProvider theme={TimesWebLightTheme}>
 			<MainHeader>
@@ -28,7 +28,7 @@ export const EditionMasthead: React.FC<MastheadProps> = ({ isSunday = false }) =
 						}}
 					/>
 					<LinkInline href='/' overrides={{stylePreset: 'mastheadLogo' }}>
-						{showMasthead(isSunday)}
+						{ShowMasthead(isSunday)}
 					</LinkInline>
 				</Masthead>
 			</MainHeader>
