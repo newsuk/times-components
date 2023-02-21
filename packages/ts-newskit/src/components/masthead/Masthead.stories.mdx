@@ -9,7 +9,13 @@ import { boolean } from "@storybook/addon-knobs"
 Needs work, but this is the basic framework required for the masthead.
 
 <Canvas>
-  <Story name="Masthead">
+  <Story name="The Times">
       <EditionMasthead isSunday={boolean('Is it sunday?', false)} />
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="The Sunday Times">
+      <EditionMasthead isSunday={boolean('Is it sunday?', true)} />
   </Story>
 </Canvas>
