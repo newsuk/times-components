@@ -9,19 +9,27 @@ import LoggedOutNavButton from './LoggedOutNavButton';
 import data from './fixtures/data.json';
 import { TimesWebLightTheme } from '../../theme';
 import { ThemeProvider } from 'newskit';
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 <Meta
   title="Newskit/HamburgerMenu"
   component={HamburgerMenu}
+  parameters={{
+    layout: 'fullscreen',
+    viewport: {
+      viewports: INITIAL_VIEWPORTS,
+      defaultViewport: 'iphone6',
+    },
+  }}
 />
 
 # Markdown HamburgerMenu component
 
-Hamburger Menu - With toggles for Logged in state and data object.
+Hamburger Menu
 
 <Canvas>
-  <Story name="HamburgerMenu">
-    <HamburgerMenu data={object('data', data)} loggedIn={boolean('Is logged in', false)} />
+  <Story name="Hamburger Menu">
+    <HamburgerMenu data={data} loggedIn={boolean('Is logged in', false)} />
   </Story>
 </Canvas>
 
@@ -87,3 +95,10 @@ Logged out Buttons
   </Story>
 </Canvas>
 
+Hamburger Menu - With toggles for Logged in state and data object.
+
+<Canvas>
+  <Story name="HamburgerMenu - Data edit">
+    <HamburgerMenu data={object('data', data)} loggedIn={boolean('Is logged in', false)} />
+  </Story>
+</Canvas>
