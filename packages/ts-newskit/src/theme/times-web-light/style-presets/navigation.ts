@@ -38,31 +38,6 @@ export const navStylePresets = {
       backgroundColor: '#222222'
     }
   },
-  buttonSolidPrimary: {
-    base: {
-      backgroundColor: '{{colors.interactivePrimary030}}',
-      width: '50%',
-      borderRadius: '{{sizing.sizing010}}',
-      marginBottom: '10px 0 10px 4px',
-      display: 'inline-block'
-    },
-    hover: {
-      backgroundColor: '{{colors.interactivePrimary040}}'
-    }
-  },
-  buttonSolidSecondary: {
-    base: {
-      backgroundColor: '{{colors.neutral090}}',
-      border: 'solid 1px #222222',
-      width: '50%',
-      borderRadius: '{{sizing.sizing010}}',
-      marginBottom: '10px 4px 10px 0',
-      display: 'inline-block'
-    },
-    hover: {
-      backgroundColor: '#222222'
-    }
-  },
   menuState: {
     base: {
       backgroundColor: '#151515',

@@ -418,7 +418,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
             class="css-14f0ndj"
           >
             <button
-              class="css-1jzcr9z"
+              class="css-5kf7f9"
               data-testid="button"
               type="button"
             >
@@ -432,7 +432,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               class="css-rl9h2w"
             />
             <button
-              class="css-eotnty"
+              class="css-f5vstw"
               data-testid="button"
               type="button"
             >
