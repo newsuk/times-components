@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Create More Menu should render snapshot 1`] = `
+<DocumentFragment>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="page"
+      class="css-9l7jja"
+      data-testid="buttonLink"
+      href="/puzzles"
+    >
+      <span
+        class="css-1x36c5r"
+      >
+        Puzzles
+      </span>
+    </a>
+  </li>
+  <hr
+    class="css-l9jcpu"
+  />
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="false"
+      class="css-opm5yv"
+      data-testid="buttonLink"
+      href="/magazines"
+    >
+      <span
+        class="css-1x36c5r"
+      >
+        Magazines
+      </span>
+    </a>
+  </li>
+  <hr
+    class="css-l9jcpu"
+  />
+</DocumentFragment>
+`;

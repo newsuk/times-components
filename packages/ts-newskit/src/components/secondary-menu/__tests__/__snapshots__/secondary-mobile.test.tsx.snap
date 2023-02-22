@@ -28,7 +28,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
         >
           <button
             aria-expanded="false"
-            class="css-1y7zq27"
+            class="css-i6zo4w"
             data-testid="menu-sub-button"
             type="button"
           >
@@ -66,7 +66,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
           class="nk-menu-item css-bkfzpe"
         >
           <a
-            class="css-29bzdg"
+            class="css-6na7vz"
             data-testid="buttonLink"
             href="/home"
             id="vertical-home"
@@ -89,7 +89,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
           class="nk-menu-item css-bkfzpe"
         >
           <a
-            class="css-29bzdg"
+            class="css-6na7vz"
             data-testid="buttonLink"
             href="/news"
             id="vertical-news"
@@ -112,7 +112,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
           class="nk-menu-item css-bkfzpe"
         >
           <a
-            class="css-29bzdg"
+            class="css-6na7vz"
             data-testid="buttonLink"
             href="/comment"
             id="vertical-comment"
@@ -135,7 +135,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
           class="nk-menu-item css-bkfzpe"
         >
           <a
-            class="css-29bzdg"
+            class="css-6na7vz"
             data-testid="buttonLink"
             href="/life-and-style"
             id="vertical-life-and-style"
@@ -158,7 +158,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
           class="nk-menu-item css-bkfzpe"
         >
           <a
-            class="css-29bzdg"
+            class="css-6na7vz"
             data-testid="buttonLink"
             href="/arts-and-books"
             id="vertical-arts-and-books"
@@ -181,7 +181,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
           class="nk-menu-item css-bkfzpe"
         >
           <a
-            class="css-29bzdg"
+            class="css-6na7vz"
             data-testid="buttonLink"
             href="/sport"
             id="vertical-sport"
@@ -204,7 +204,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
           class="nk-menu-item css-bkfzpe"
         >
           <a
-            class="css-29bzdg"
+            class="css-6na7vz"
             data-testid="buttonLink"
             href="/business-and-money"
             id="vertical-business-and-money"
@@ -227,7 +227,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
           class="nk-menu-item css-bkfzpe"
         >
           <a
-            class="css-29bzdg"
+            class="css-6na7vz"
             data-testid="buttonLink"
             href="/puzzles"
             id="vertical-puzzles"
@@ -250,7 +250,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
           class="nk-menu-item css-bkfzpe"
         >
           <a
-            class="css-29bzdg"
+            class="css-6na7vz"
             data-testid="buttonLink"
             href="/magazines"
             id="vertical-magazines"
@@ -299,7 +299,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is not e
         >
           <button
             aria-expanded="false"
-            class="css-1y7zq27"
+            class="css-i6zo4w"
             data-testid="menu-sub-button"
             type="button"
           >

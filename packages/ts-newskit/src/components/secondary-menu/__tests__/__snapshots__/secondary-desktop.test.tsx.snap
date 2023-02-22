@@ -4,7 +4,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
 <DocumentFragment>
   <nav
     aria-label="Secondary Navigation"
-    class="css-deqwiu"
+    class="css-1hi4r6o"
     data-testid="menu-container"
     role="navigation"
   >
@@ -16,12 +16,12 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
       >
         <a
           aria-current="page"
-          class="css-nszwum"
+          class="css-zkudsr"
           data-testid="buttonLink"
           href="/home"
         >
           <span
-            class="css-1kfwj8t"
+            class="css-176g0l8"
           >
             Home
           </span>
@@ -32,12 +32,12 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
       >
         <a
           aria-current="false"
-          class="css-g4yxr6"
+          class="css-1hwortb"
           data-testid="buttonLink"
           href="/news"
         >
           <span
-            class="css-1kfwj8t"
+            class="css-176g0l8"
           >
             News
           </span>
@@ -48,12 +48,12 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
       >
         <a
           aria-current="false"
-          class="css-g4yxr6"
+          class="css-1hwortb"
           data-testid="buttonLink"
           href="/comment"
         >
           <span
-            class="css-1kfwj8t"
+            class="css-176g0l8"
           >
             Comment
           </span>
@@ -64,12 +64,12 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
       >
         <a
           aria-current="false"
-          class="css-g4yxr6"
+          class="css-1hwortb"
           data-testid="buttonLink"
           href="/life-and-style"
         >
           <span
-            class="css-1kfwj8t"
+            class="css-176g0l8"
           >
             Life & Style
           </span>
@@ -80,12 +80,12 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
       >
         <a
           aria-current="false"
-          class="css-g4yxr6"
+          class="css-1hwortb"
           data-testid="buttonLink"
           href="/arts-and-books"
         >
           <span
-            class="css-1kfwj8t"
+            class="css-176g0l8"
           >
             Arts & Books
           </span>
@@ -96,12 +96,12 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
       >
         <a
           aria-current="false"
-          class="css-g4yxr6"
+          class="css-1hwortb"
           data-testid="buttonLink"
           href="/sport"
         >
           <span
-            class="css-1kfwj8t"
+            class="css-176g0l8"
           >
             Sport
           </span>
@@ -112,12 +112,12 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
       >
         <a
           aria-current="false"
-          class="css-g4yxr6"
+          class="css-1hwortb"
           data-testid="buttonLink"
           href="/business-and-money"
         >
           <span
-            class="css-1kfwj8t"
+            class="css-176g0l8"
           >
             Business & Money
           </span>
@@ -126,34 +126,97 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
       <li
         class="nk-menu-item css-1iaj8wm"
       >
-        <a
-          aria-current="false"
-          class="css-g4yxr6"
-          data-testid="buttonLink"
-          href="/puzzles"
+        <button
+          aria-expanded="false"
+          class="css-9h6ke"
+          data-testid="menu-sub-button"
+          type="button"
         >
           <span
-            class="css-1kfwj8t"
+            class="css-176g0l8"
           >
-            Puzzles
+            See all
           </span>
-        </a>
-      </li>
-      <li
-        class="nk-menu-item css-1iaj8wm"
-      >
-        <a
-          aria-current="false"
-          class="css-g4yxr6"
-          data-testid="buttonLink"
-          href="/magazines"
+          <svg
+            aria-hidden="true"
+            class="css-bl48kn-EmotionIconBase ex0cdmw0"
+            fill="currentColor"
+            focusable="false"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+            />
+          </svg>
+        </button>
+        <ul
+          class="css-1me0nkm"
         >
-          <span
-            class="css-1kfwj8t"
+          <nav
+            class="css-1dqbkfx"
+            data-testid="menu-container"
+            role="navigation"
           >
-            Magazines
-          </span>
-        </a>
+            <ul
+              role="list"
+            >
+              <nav
+                aria-label="menu-multiple-auto"
+                class="css-1e8qhdd"
+                data-testid="menu-container"
+                role="navigation"
+              >
+                <ul
+                  role="list"
+                >
+                  <li
+                    class="nk-menu-item css-1kdinep"
+                  >
+                    <a
+                      aria-current="false"
+                      class="css-1min3iy"
+                      data-testid="buttonLink"
+                      href="/puzzles"
+                    >
+                      <span
+                        class="css-1x36c5r"
+                      >
+                        Puzzles
+                      </span>
+                    </a>
+                  </li>
+                  <hr
+                    class="css-l9jcpu"
+                  />
+                  <li
+                    class="nk-menu-item css-1kdinep"
+                  >
+                    <a
+                      aria-current="false"
+                      class="css-1min3iy"
+                      data-testid="buttonLink"
+                      href="/magazines"
+                    >
+                      <span
+                        class="css-1x36c5r"
+                      >
+                        Magazines
+                      </span>
+                    </a>
+                  </li>
+                  <hr
+                    class="css-l9jcpu"
+                  />
+                </ul>
+              </nav>
+            </ul>
+          </nav>
+        </ul>
       </li>
     </ul>
   </nav>
