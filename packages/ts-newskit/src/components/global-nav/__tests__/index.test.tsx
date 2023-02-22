@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
 
-import GlobalNav from '../index';
+import { GlobalNav } from '../index';
 
 const renderComponent = (isLoggedIn?: boolean) =>
   render(<GlobalNav isLoggedIn={isLoggedIn} />);

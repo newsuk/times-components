@@ -23,7 +23,7 @@ type TopNavProps = {
   accountMenu?: any;
 };
 
-const TopNav: React.FC<TopNavProps> = ({
+export const TopNav: React.FC<TopNavProps> = ({
   mainMenu = mainMenuItems,
   accountMenu = accountMenuItems,
   isLoggedIn = false
@@ -118,5 +118,3 @@ const TopNav: React.FC<TopNavProps> = ({
     </>
   );
 };
-
-export default TopNav;

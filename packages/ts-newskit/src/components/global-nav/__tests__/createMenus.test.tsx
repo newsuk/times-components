@@ -2,7 +2,7 @@ import React from 'react';
 import { screen, render, within, fireEvent } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { useBreakpointKey } from 'newskit';
-import TopNav from '../topnav';
+import { TopNav } from '../topnav';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
