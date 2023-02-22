@@ -10,5 +10,3 @@ export const NewsKitTimesMasthead = customToNewsKitIcon('NewskitTimesMasthead', 
 export const NewsKitSundayTimesMasthead = customToNewsKitIcon('NewskitSundayTimesMasthead', props => (
     <SundayTimesMasthead {...props} />
 ));
-
-export { TimesMasthead, SundayTimesMasthead };

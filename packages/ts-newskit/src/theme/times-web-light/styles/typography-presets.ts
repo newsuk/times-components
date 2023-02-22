@@ -43,12 +43,14 @@ export const typographyPresets = Object.fromEntries(
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     },
-    sectionTitle010: {
+    sectionHeader010: {
       fontFamily: '{{fonts.fontFamily010.fontFamily}}',
       fontWeight: '{{fonts.fontWeight040}}',
-      lineHeight: '{{fonts.fontLineHeight030}}',
-      letterSpacing: '{{fonts.fontLetterSpacing010}}',
-      fontStretch: 'normal'
+      fontSize: '{{fonts.newFontSize020}}',
+      lineHeight: '{{fonts.newFontLineHeight010}}',
+      letterSpacing: '{{fonts.fontLetterSpacing020}}',
+      fontStretch: 'normal',
+      textAlign: 'center'
     }
   }).map(([key, value]) => {
     if (
@@ -58,7 +60,7 @@ export const typographyPresets = Object.fromEntries(
         'editorialHeadline060',
         'editorialHeadline070',
         'editorialHeadline080',
-        'sectionTitle010'
+        'sectionHeader010'
       ].includes(key)
     ) {
       value.lineHeight = '{{fonts.fontLineHeight030}}';
