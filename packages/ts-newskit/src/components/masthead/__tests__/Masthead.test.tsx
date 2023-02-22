@@ -27,4 +27,11 @@ describe('EditionMasthead', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it('should render date correctly', () => {
+    const { getAllByText } = render(
+      <EditionMasthead isSunday={false} />
+    );
+    expect(getAllByText("Wednesday February 22 2023").length).toEqual(1);
+  });
 });
