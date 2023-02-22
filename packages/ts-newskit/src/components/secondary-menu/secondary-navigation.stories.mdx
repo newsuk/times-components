@@ -3,10 +3,18 @@ import { ThemeProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../theme';
 import { SecondaryNavigation } from './index.tsx';
 import { mainMenuItems } from './fixtures/menu-items.json';
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 <Meta
   title="Newskit/Secondary Navigation"
   component={SecondaryNavigation}
+  parameters={{
+    layout: 'fullscreen',
+    viewport: {
+      viewports: INITIAL_VIEWPORTS,
+      defaultViewport: 'md',
+    },
+  }}
 />
 
 # Secondary Navigation component

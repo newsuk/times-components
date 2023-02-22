@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navitems Desktop should render snapshot 1`] = `
+<DocumentFragment>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="false"
+      class="css-4498s"
+      data-testid="buttonLink"
+      href="/home"
+    >
+      <span
+        class="css-176g0l8"
+      >
+        Home
+      </span>
+    </a>
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="false"
+      class="css-4498s"
+      data-testid="buttonLink"
+      href="/news"
+    >
+      <span
+        class="css-176g0l8"
+      >
+        News
+      </span>
+    </a>
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="false"
+      class="css-4498s"
+      data-testid="buttonLink"
+      href="/comment"
+    >
+      <span
+        class="css-176g0l8"
+      >
+        Comment
+      </span>
+    </a>
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="false"
+      class="css-4498s"
+      data-testid="buttonLink"
+      href="/life-and-style"
+    >
+      <span
+        class="css-176g0l8"
+      >
+        Life & Style
+      </span>
+    </a>
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="false"
+      class="css-4498s"
+      data-testid="buttonLink"
+      href="/arts-and-books"
+    >
+      <span
+        class="css-176g0l8"
+      >
+        Arts & Books
+      </span>
+    </a>
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="false"
+      class="css-4498s"
+      data-testid="buttonLink"
+      href="/sport"
+    >
+      <span
+        class="css-176g0l8"
+      >
+        Sport
+      </span>
+    </a>
+  </li>
+  <li
+    class="nk-menu-item css-1kdinep"
+  >
+    <a
+      aria-current="false"
+      class="css-4498s"
+      data-testid="buttonLink"
+      href="/business-and-money"
+    >
+      <span
+        class="css-176g0l8"
+      >
+        Business & Money
+      </span>
+    </a>
+  </li>
+</DocumentFragment>
+`;

@@ -2,20 +2,17 @@ import React from 'react';
 import { render } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
-import { SecondaryNavDesktop } from '../desktop';
 import { cleanup, fireEvent } from '@testing-library/react';
+import { NavItems } from '../desktop/navItems';
 import { useBreakpointKey } from 'newskit';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
   useBreakpointKey: jest.fn().mockReturnValue('xl')
 }));
-
 const handleSelect = jest.fn();
-const isExpanded = false;
-const setIsExpanded = jest.fn();
 
-describe('Secondary Menu Desktop', () => {
+describe('Navitems Desktop', () => {
   afterEach(() => {
     jest.clearAllMocks();
     cleanup();
@@ -23,26 +20,21 @@ describe('Secondary Menu Desktop', () => {
 
   it('should render snapshot', () => {
     (useBreakpointKey as any).mockReturnValue('md');
-
     const { asFragment } = render(
-      <SecondaryNavDesktop
+      <NavItems
         data={mainMenuItems}
-        isSelected="Home"
+        isSelected="true"
         handleSelect={handleSelect}
-        isExpanded={isExpanded}
-        setIsExpanded={setIsExpanded}
       />
     );
     expect(asFragment()).toMatchSnapshot();
   });
   it('should render the menu item', () => {
     const { getByText } = render(
-      <SecondaryNavDesktop
+      <NavItems
         data={mainMenuItems}
-        isSelected="Home"
+        isSelected="true"
         handleSelect={handleSelect}
-        isExpanded={isExpanded}
-        setIsExpanded={setIsExpanded}
       />
     );
     const title = getByText('Home');
@@ -50,45 +42,26 @@ describe('Secondary Menu Desktop', () => {
   });
   it('items should have ancher with href', () => {
     const { getAllByTestId } = render(
-      <SecondaryNavDesktop
+      <NavItems
         data={mainMenuItems}
-        isSelected="Home"
+        isSelected="true"
         handleSelect={handleSelect}
-        isExpanded={isExpanded}
-        setIsExpanded={setIsExpanded}
       />
     );
     const title = getAllByTestId('buttonLink')[0];
     expect(title).toHaveAttribute('href', '/home');
   });
-  it('should call handleSelect when clicked', () => {
+
+  it('items should have ancher with href', () => {
     const { getAllByTestId } = render(
-      <SecondaryNavDesktop
+      <NavItems
         data={mainMenuItems}
-        isSelected="Home"
+        isSelected="true"
         handleSelect={handleSelect}
-        isExpanded={isExpanded}
-        setIsExpanded={setIsExpanded}
       />
     );
-    const Anchor = getAllByTestId('buttonLink')[0];
-    fireEvent.click(Anchor);
+    const title = getAllByTestId('buttonLink')[0];
+    fireEvent.click(title);
     expect(handleSelect).toHaveBeenCalled();
-  });
-
-  it('should call handleSelect when clicked', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
-
-    const { getAllByRole } = render(
-      <SecondaryNavDesktop
-        data={mainMenuItems}
-        isSelected="Home"
-        handleSelect={handleSelect}
-        isExpanded={isExpanded}
-        setIsExpanded={setIsExpanded}
-      />
-    );
-    const list = getAllByRole('listitem');
-    expect(list.length).toEqual(8);
   });
 });

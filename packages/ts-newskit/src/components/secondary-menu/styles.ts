@@ -1,4 +1,5 @@
 import { Menu, styled, getColorCssFromTheme } from 'newskit';
+import { MainMenuProp } from './types';
 
 export const MenuDivider = styled.hr`
   width: calc(100% - 64px);
@@ -7,16 +8,34 @@ export const MenuDivider = styled.hr`
   ${getColorCssFromTheme('color', 'neutral010')};
 `;
 
-export const MainMenu = styled(Menu)`
+export const MainMenu = styled(Menu)<MainMenuProp>`
+  padding-right: 20px;
+  ul {
+    justify-content: ${({ hasMoreItems }) => (hasMoreItems ? `end` : `center`)};
+  }
+`;
+
+export const MenuDividerDesktop = styled.hr`
+  margin: 0;
+  border: 1px solid;
+  ${getColorCssFromTheme('color', 'neutral030')};
+`;
+
+export const MenuContainer = styled(Menu)`
   ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    background-color: #f5f5f5;
+    float: right;
+    width: max-content;
+    min-width: 200px;
   }
 
-  & li span {
-    font-size: 14px;
-    line-height: 20px;
-    font-family: 'Roboto-Medium';
-    height: 20px;
+  & hr:last-child {
+    display: none;
+  }
+
+  li:hover {
+    background-color: #e4e4e4;
   }
 `;
