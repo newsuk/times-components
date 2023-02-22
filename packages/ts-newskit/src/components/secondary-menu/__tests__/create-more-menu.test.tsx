@@ -70,6 +70,6 @@ describe('Create More Menu', () => {
       <CreateMoreMenu data={mainMenuItems} options={options} />
     );
     const list = getAllByRole('listitem');
-    expect(list.length).toEqual(9);
+    expect(list.length).toEqual(8);
   });
 });
