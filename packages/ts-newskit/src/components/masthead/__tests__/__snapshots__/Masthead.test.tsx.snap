@@ -8,16 +8,19 @@ exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
     <div
       class="sc-bwzfXH gOBzRv"
     >
-      <h1
-        class="sc-htpNat coyXTL"
+      <span
+        class="css-13791zy"
+        id="sr-only"
       >
-        The Times & The Sunday Times Homepage
-      </h1>
+        <h1>
+          The Times & The Sunday Times Homepage
+        </h1>
+      </span>
       <time
         class="css-1oteowz"
       >
         <span
-          class="css-1083xdu"
+          class="css-u8o4qj"
         >
           Wednesday February 22 2023 
         </span>
@@ -112,16 +115,19 @@ exports[`EditionMasthead should render The Times masthead 1`] = `
     <div
       class="sc-bwzfXH gOBzRv"
     >
-      <h1
-        class="sc-htpNat coyXTL"
+      <span
+        class="css-13791zy"
+        id="sr-only"
       >
-        The Times & The Sunday Times Homepage
-      </h1>
+        <h1>
+          The Times & The Sunday Times Homepage
+        </h1>
+      </span>
       <time
         class="css-1oteowz"
       >
         <span
-          class="css-1083xdu"
+          class="css-u8o4qj"
         >
           Wednesday February 22 2023 
         </span>
