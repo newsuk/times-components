@@ -10,3 +10,5 @@ export const EditionMasthead: React.FC<{}> = () => {
 		</NewsKitProvider>
 	);
 };
+
+export default EditionMasthead
