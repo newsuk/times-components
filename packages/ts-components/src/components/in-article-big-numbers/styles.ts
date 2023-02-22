@@ -35,7 +35,7 @@ export const ContentContainer = styled.div`
 export const StyledShowAllButton = styled(ShowAllButton)`
   font-size: 12px;
   margin: 15px 0;
-  padding: 10px 12px 5px;
+  padding: 8px 12px 7px;
 `;
 
 export const ListItem = styled.li<{

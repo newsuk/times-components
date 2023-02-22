@@ -49,7 +49,7 @@ exports[`1. renders 1`] = `
   height: 15;
   font-family: Roboto-Regular;
   font-size: 14;
-  line-height: 15px;
+  line-height: 13px;
 }
 
 .IS8 {
@@ -59,7 +59,7 @@ exports[`1. renders 1`] = `
   height: 15;
   font-family: Roboto-Regular;
   font-size: 14;
-  line-height: 15px;
+  line-height: 13px;
 }
 
 .IS9 {
@@ -107,7 +107,7 @@ exports[`1. renders 1`] = `
   height: 15;
   font-family: Roboto-Regular;
   font-size: 14;
-  line-height: 15px;
+  line-height: 13px;
 }
 
 .IS16 {
@@ -117,7 +117,7 @@ exports[`1. renders 1`] = `
   height: 15;
   font-family: Roboto-Regular;
   font-size: 14;
-  line-height: 15px;
+  line-height: 13px;
 }
 
 .IS17 {

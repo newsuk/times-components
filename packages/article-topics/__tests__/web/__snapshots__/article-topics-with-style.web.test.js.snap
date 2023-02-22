@@ -40,7 +40,7 @@ exports[`1. group of topics 1`] = `
           }
           lineHeight="13px"
           position="relative"
-          top={2}
+          top={1}
         >
           Football
         </div>
@@ -90,7 +90,7 @@ exports[`2. group of topics at large scale 1`] = `
           }
           lineHeight="13px"
           position="relative"
-          top={2}
+          top={1}
         >
           Football
         </div>
@@ -140,7 +140,7 @@ exports[`3. group of topics at xlarge scale 1`] = `
           }
           lineHeight="13px"
           position="relative"
-          top={2}
+          top={1}
         >
           Football
         </div>
@@ -182,7 +182,7 @@ exports[`4. article topic with style 1`] = `
         }
         lineHeight="20px"
         position="relative"
-        top={2}
+        top={1}
       >
         Test
       </div>
@@ -219,7 +219,7 @@ exports[`5. article topic with no additional style 1`] = `
         fontSizeStyle={null}
         lineHeight={12}
         position="relative"
-        top={2}
+        top={1}
       >
         Test
       </div>

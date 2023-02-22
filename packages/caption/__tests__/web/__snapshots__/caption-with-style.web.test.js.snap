@@ -15,7 +15,7 @@ exports[`1. caption with container and text styles 1`] = `
   font-size: 9;
   line-height: 17px;
   font-weight: 400;
-  letter-spacing: 1;
+  letter-spacing: 0.5;
 }
 
 .IS3 {
@@ -62,7 +62,7 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
   font-size: 8;
   line-height: 17px;
   font-weight: 400;
-  letter-spacing: 1;
+  letter-spacing: 0.5;
 }
 
 .IS3 {
@@ -109,7 +109,7 @@ exports[`3. caption with only container styles 1`] = `
   font-size: 9;
   line-height: 17px;
   font-weight: 400;
-  letter-spacing: 1;
+  letter-spacing: 0.5;
 }
 
 .IS3 {

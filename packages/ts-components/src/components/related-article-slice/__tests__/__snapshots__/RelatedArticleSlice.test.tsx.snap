@@ -51,7 +51,7 @@ exports[`RelatedArticleSlice renders 1 1`] = `
             class="shared-styles__SideBySideColumn-sc-1kek94e-1 jOKfAL"
           >
             <p
-              class="shared-styles__Label-sc-1kek94e-2 ijxkXb"
+              class="shared-styles__Label-sc-1kek94e-2 jGUcDq"
             >
               Comment
             </p>
@@ -143,7 +143,7 @@ exports[`RelatedArticleSlice renders 2 1`] = `
             class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
           >
             <p
-              class="shared-styles__Label-sc-1kek94e-2 ijxkXb"
+              class="shared-styles__Label-sc-1kek94e-2 jGUcDq"
             >
               Comment
             </p>
@@ -284,7 +284,7 @@ exports[`RelatedArticleSlice renders 3 1`] = `
             class="shared-styles__SideBySideColumn-sc-1kek94e-1 jNutGa"
           >
             <p
-              class="shared-styles__Label-sc-1kek94e-2 ijxkXb"
+              class="shared-styles__Label-sc-1kek94e-2 jGUcDq"
             >
               Comment
             </p>

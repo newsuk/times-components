@@ -4,8 +4,7 @@ const styles = {
   ...sharedStyles,
   text: {
     ...sharedStyles.text,
-    // Gill Sans hack
-    top: 2
+    top: 1
   }
 };
 

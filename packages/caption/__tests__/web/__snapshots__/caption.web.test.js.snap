@@ -67,7 +67,7 @@ exports[`2. caption with credits 1`] = `
           "fontFamily": "Roboto-Regular",
           "fontSize": 9,
           "fontWeight": "400",
-          "letterSpacing": 1,
+          "letterSpacing": 0.5,
           "lineHeight": "17px",
         }
       }
@@ -101,7 +101,7 @@ exports[`3. caption with credits only 1`] = `
           "fontFamily": "Roboto-Regular",
           "fontSize": 9,
           "fontWeight": "400",
-          "letterSpacing": 1,
+          "letterSpacing": 0.5,
           "lineHeight": "17px",
         }
       }
@@ -153,7 +153,7 @@ exports[`4. caption with child 1`] = `
           "fontFamily": "Roboto-Regular",
           "fontSize": 9,
           "fontWeight": "400",
-          "letterSpacing": 1,
+          "letterSpacing": 0.5,
           "lineHeight": "17px",
         }
       }
@@ -235,7 +235,7 @@ exports[`6. centred caption caption with credits 1`] = `
           "fontFamily": "Roboto-Regular",
           "fontSize": 9,
           "fontWeight": "400",
-          "letterSpacing": 1,
+          "letterSpacing": 0.5,
           "lineHeight": "17px",
           "paddingLeft": "10px",
           "paddingRight": "10px",
@@ -272,7 +272,7 @@ exports[`7. centred caption caption with credits only 1`] = `
           "fontFamily": "Roboto-Regular",
           "fontSize": 9,
           "fontWeight": "400",
-          "letterSpacing": 1,
+          "letterSpacing": 0.5,
           "lineHeight": "17px",
           "paddingLeft": "10px",
           "paddingRight": "10px",
@@ -330,7 +330,7 @@ exports[`8. centred caption caption with child 1`] = `
           "fontFamily": "Roboto-Regular",
           "fontSize": 9,
           "fontWeight": "400",
-          "letterSpacing": 1,
+          "letterSpacing": 0.5,
           "lineHeight": "17px",
           "paddingLeft": "10px",
           "paddingRight": "10px",

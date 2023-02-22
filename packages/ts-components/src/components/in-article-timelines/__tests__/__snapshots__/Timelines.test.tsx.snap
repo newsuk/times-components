@@ -9,7 +9,7 @@ exports[`Timelines click show all 1`] = `
       class="sc-iwsKbI fMDvHO"
     >
       <div
-        class="sc-bwzfXH hwAlqD"
+        class="sc-bwzfXH gePxOS"
       >
         Venezuelan Politics
       </div>
@@ -255,7 +255,7 @@ exports[`Timelines should render the bullet points component 1`] = `
       class="sc-iwsKbI fMDvHO"
     >
       <div
-        class="sc-bwzfXH hwAlqD"
+        class="sc-bwzfXH gePxOS"
       >
         Venezuelan Politics
       </div>
@@ -477,7 +477,7 @@ exports[`Timelines should render the circle images component 1`] = `
       class="sc-iwsKbI fMDvHO"
     >
       <div
-        class="sc-bwzfXH hwAlqD"
+        class="sc-bwzfXH gePxOS"
       >
         Venezuelan Politics
       </div>

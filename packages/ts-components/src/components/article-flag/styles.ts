@@ -17,7 +17,7 @@ export const LiveArticleFlagText = styled.span`
   color: #ffffff;
   font-weight: 500;
   font-size: 12px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   display: flex;
   align-items: center;
 `;

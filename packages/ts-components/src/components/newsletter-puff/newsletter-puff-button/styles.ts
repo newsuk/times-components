@@ -14,7 +14,7 @@ export const PuffButton = styled.button`
   height: 48px;
   justify-content: center;
   min-width: 100px;
-  padding-top: 4px;
+  padding-top: 2px;
   width: 100%;
   border-color: rgb(29, 29, 27);
   border-width: 1px;
