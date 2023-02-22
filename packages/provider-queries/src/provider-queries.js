@@ -6,7 +6,6 @@ export draftArticle from "./draft-article";
 export edition from "./edition";
 export getBookmarks from "./get-bookmarks";
 export getNewsletter from "./get-newsletter";
-export getPublicationDate from "./get-tokenised-article-url";
 export getTokenisedArticleUrl from "./get-publication-date";
 export saveBookmarks from "./save-bookmark";
 export subscribeNewsletter from "./subscribe-newsletter";

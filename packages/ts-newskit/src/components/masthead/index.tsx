@@ -1,12 +1,12 @@
 import React from 'react';
-import { ThemeProvider } from 'newskit'
+import { NewsKitProvider } from 'newskit'
 import { TimesWebLightTheme } from '../../theme';
 import { MainMasthead } from './Masthead';
 
-export const EditionMasthead: React.FC<{ isSunday: boolean }> = ( {isSunday} ) => {
+export const EditionMasthead: React.FC<{}> = () => {
 	return (
-		<ThemeProvider theme={TimesWebLightTheme}>
-			<MainMasthead isSunday={isSunday} />
-		</ThemeProvider>
+		<NewsKitProvider theme={TimesWebLightTheme}>
+			<MainMasthead />
+		</NewsKitProvider>
 	);
 };
