@@ -33,7 +33,7 @@ export const MainHeader = styled.header`
 
 export const Masthead = styled.div`
     width: 100%;
-    border-bottom: 1px solid #DBDBDB;
+    border-bottom: 1px solid #E4E4E4;
     display: none;
     @media (min-width: 768px) {
         text-align: center;

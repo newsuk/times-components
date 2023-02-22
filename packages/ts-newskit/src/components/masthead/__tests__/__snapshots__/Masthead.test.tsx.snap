@@ -6,7 +6,7 @@ exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
     class="sc-bdVaJa fDzWQF"
   >
     <div
-      class="sc-bwzfXH gOBzRv"
+      class="sc-bwzfXH kyczjX"
     >
       <span
         class="css-13791zy"
@@ -114,7 +114,7 @@ exports[`EditionMasthead should render The Times masthead 1`] = `
     class="sc-bdVaJa fDzWQF"
   >
     <div
-      class="sc-bwzfXH gOBzRv"
+      class="sc-bwzfXH kyczjX"
     >
       <span
         class="css-13791zy"
