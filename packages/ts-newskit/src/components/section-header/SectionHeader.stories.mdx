@@ -7,12 +7,20 @@ import { text } from '@storybook/addon-knobs';
 <Meta title="Newskit/Section Header" component={SectionHeader} />
 
 # Section Title component
-Simple Framework for displaying a section title.
+Simple Framework for displaying section titles, the fixed test is to show that special characters are rendered properly.
 
 <Canvas>
   <Story name="Section Header">
     <ThemeProvider theme={TimesWebLightTheme}>
       <SectionHeader title={text('Title', 'News')} />
+    </ThemeProvider>
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Fixed Section Header">
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <SectionHeader title={'Bricks & Mortar'} />
     </ThemeProvider>
   </Story>
 </Canvas>
