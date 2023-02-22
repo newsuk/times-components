@@ -2,10 +2,14 @@
 
 exports[`Section Header should render News Section Header 1`] = `
 <DocumentFragment>
-  <div
-    class="sc-bdVaJa khBUBS"
+  <section
+    class="css-1tgw29k"
   >
-    News
-  </div>
+    <h1
+      class="nk-headline-heading css-18z875a"
+    >
+      News
+    </h1>
+  </section>
 </DocumentFragment>
 `;
