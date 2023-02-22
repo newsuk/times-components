@@ -3,6 +3,14 @@ import themeDefault from './typography-presets.json';
 export const typographyPresets = Object.fromEntries(
   Object.entries({
     ...themeDefault,
+    newPreset010: {
+      fontFamily: 'Roboto-Medium',
+      fontWeight: '500',
+      fontSize: '{{fonts.fontSize020}}',
+      lineHeight: '16px',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
     editorialHeadline035: {
       fontFamily: '{{fonts.fontFamily010.fontFamily}}',
       fontWeight: '{{fonts.fontWeight030}}',
