@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider, DateTime, LinkInline, ScreenReaderOnly } from 'newskit'
 import { TimesWebLightTheme } from '../../theme';
 import { MainHeader, Masthead } from './style';
-import { SundayTimesMasthead, TimesMasthead } from './assets';
+import { SundayTimesMasthead, TimesMasthead } from '../../assets';
 
 export const EditionMasthead: React.FC<{ isSunday: boolean }> = ( {isSunday} ) => {
 	const todaysDate = (new Date()).toISOString();

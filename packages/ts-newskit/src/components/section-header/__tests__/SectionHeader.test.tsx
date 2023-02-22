@@ -10,4 +10,11 @@ describe('Section Header', () => {
     );
     expect(asFragment()).toMatchSnapshot();
   });
+
+  it('should render Section Header text correctly', () => {
+    const { getAllByText } = render(
+      <SectionHeader title={'Business'} />
+    );
+    expect(getAllByText("Business").length).toEqual(1);
+  });
 });
