@@ -277,7 +277,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
   >
     <nav
       aria-label="Secondary Navigation"
-      class="css-1bqz0oq"
+      class="css-mzs071"
       data-testid="menu-container"
       role="navigation"
     >

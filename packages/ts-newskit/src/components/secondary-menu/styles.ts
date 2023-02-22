@@ -1,4 +1,9 @@
-import { Menu, styled, getColorCssFromTheme } from 'newskit';
+import {
+  Menu,
+  styled,
+  getColorCssFromTheme,
+  getSpacingCssFromTheme
+} from 'newskit';
 import { MainMenuProp } from './types';
 
 export const MenuDivider = styled.hr`
@@ -7,9 +12,10 @@ export const MenuDivider = styled.hr`
   border: 1px solid;
   ${getColorCssFromTheme('color', 'neutral010')};
 `;
+const setPadding = (space: string) => ({ paddingRight: `${space}` });
 
 export const MainMenu = styled(Menu)<MainMenuProp>`
-  padding-right: 20px;
+  ${getSpacingCssFromTheme(setPadding, 'space045')};
   ul {
     justify-content: ${({ hasMoreItems }) => (hasMoreItems ? `end` : `center`)};
   }
