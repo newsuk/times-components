@@ -117,7 +117,7 @@ export const Label = styled.p`
   color: ${colours.functional.secondary};
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   font-family: ${fonts.supporting};
   text-transform: uppercase;
 `;

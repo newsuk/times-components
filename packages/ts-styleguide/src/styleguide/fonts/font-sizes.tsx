@@ -8,7 +8,7 @@ export default {
   cardHeadline: 27,
   cardMeta: 12,
   cardMetaMobile: 12,
-  commentsGuidelines: 13,
+  commentsGuidelines: 12,
   commentsHeadline: 27,
   credits: 9,
   headline: 30,

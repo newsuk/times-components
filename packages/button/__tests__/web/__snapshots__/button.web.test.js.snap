@@ -15,7 +15,7 @@ exports[`1. button 1`] = `
       "justifyContent": "center",
       "lineHeight": 0,
       "minWidth": 100,
-      "paddingTop": 4,
+      "paddingTop": 2,
       "width": 160,
     }
   }
@@ -40,7 +40,7 @@ exports[`2. button with font and line-height 1`] = `
       "justifyContent": "center",
       "lineHeight": 10,
       "minWidth": 100,
-      "paddingTop": 4,
+      "paddingTop": 2,
       "width": 160,
     }
   }
