@@ -1,4 +1,4 @@
-import * as React from "react"
+import * as React from 'react';
 
 const RoundedCloseIcon = (props: any) => (
   <svg
@@ -11,7 +11,7 @@ const RoundedCloseIcon = (props: any) => (
     <mask
       id="a"
       style={{
-        maskType: "alpha",
+        maskType: 'alpha'
       }}
       maskUnits="userSpaceOnUse"
       x={0}
@@ -30,6 +30,6 @@ const RoundedCloseIcon = (props: any) => (
       <path fill="currentcolor" d="M0 0h16v16H0z" />
     </g>
   </svg>
-)
+);
 
-export default RoundedCloseIcon
+export default RoundedCloseIcon;

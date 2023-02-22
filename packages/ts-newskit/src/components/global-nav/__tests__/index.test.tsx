@@ -1,13 +1,11 @@
 import React from 'react';
 import { render } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
-// import data from './fixtures/test-data.json';
 
 import GlobalNav from '../index';
 
-const renderComponent = (isLoggedIn?: boolean) => render(
-  <GlobalNav isLoggedIn={isLoggedIn} />
-)
+const renderComponent = (isLoggedIn?: boolean) =>
+  render(<GlobalNav isLoggedIn={isLoggedIn} />);
 
 describe('Render GlobalNav', () => {
   it('should render the component in loggedIn state', () => {

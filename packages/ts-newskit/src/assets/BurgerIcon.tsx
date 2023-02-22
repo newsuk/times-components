@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react';
 
 const BurgerIcon = (props: any) => (
   <svg
@@ -14,6 +14,6 @@ const BurgerIcon = (props: any) => (
       fill="#fff"
     />
   </svg>
-)
+);
 
-export default BurgerIcon
+export default BurgerIcon;

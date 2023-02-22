@@ -1,4 +1,14 @@
-import { getColorCssFromTheme, styled, Stack, Menu, getSpacingCssFromTheme, Divider, Hidden, getMediaQueryFromTheme, IconButton } from 'newskit';
+import {
+  getColorCssFromTheme,
+  styled,
+  Stack,
+  Menu,
+  getSpacingCssFromTheme,
+  Divider,
+  Hidden,
+  getMediaQueryFromTheme,
+  IconButton
+} from 'newskit';
 
 export const TopNavContainer = styled(Stack)`
   height: 60px;
@@ -21,14 +31,14 @@ export const MastheadMob = styled(Hidden)`
   justify-content: center;
 `;
 
-const setMargin = (space: string)  => ({margin: `6px ${space}`});
+const setMargin = (space: string) => ({ margin: `6px ${space}` });
 export const AccountMenu = styled(Menu)`
-& li:last-of-type {
-  ${getSpacingCssFromTheme(setMargin, 'space040')};
-}
+  & li:last-of-type {
+    ${getSpacingCssFromTheme(setMargin, 'space040')};
+  }
 `;
 
-const setPadding = (space: string)  => ({paddingRight: `${space}`});
+const setPadding = (space: string) => ({ paddingRight: `${space}` });
 export const ScrollMenu = styled(Menu)`
   & li:last-of-type {
     ${getSpacingCssFromTheme(setPadding, 'space030')};
@@ -41,6 +51,7 @@ export const MenuScrollDivider = styled(Divider)`
 export const TopNavIcon = styled(IconButton)`
   height: 60px;
   width: 60px;
+  ${getColorCssFromTheme('color', 'inkInverse')};
 
   ${getMediaQueryFromTheme('xs', 'md')} {
     height: 50px;

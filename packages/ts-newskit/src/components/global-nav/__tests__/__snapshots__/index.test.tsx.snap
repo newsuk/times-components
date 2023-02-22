@@ -13,7 +13,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
         aria-controls="hamburgerMenu"
         aria-label="Open Menu"
         aria-selected="false"
-        class="css-gp5dta"
+        class="css-13gr04u"
         data-testid="button"
         type="button"
       >
@@ -43,7 +43,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
           aria-controls="searchTimes"
           aria-label="Open Search"
           aria-selected="false"
-          class="css-gp5dta"
+          class="css-13gr04u"
           data-testid="button"
           type="button"
         >
@@ -57,7 +57,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
           >
             <path
               d="m15.022 16-5.844-5.844a4.9 4.9 0 0 1-1.556.9 5.5 5.5 0 0 1-1.889.322c-1.6 0-2.955-.556-4.066-1.667C.556 8.6 0 7.26 0 5.69c0-1.57.556-2.911 1.667-4.022C2.777.556 4.126 0 5.71 0c1.57 0 2.908.556 4.011 1.667 1.104 1.11 1.656 2.452 1.656 4.022 0 .637-.104 1.252-.311 1.844a5.64 5.64 0 0 1-.934 1.667L16 15.022l-.978.978Zm-9.31-5.956c1.2 0 2.221-.425 3.066-1.277.844-.852 1.266-1.878 1.266-3.078S9.622 3.463 8.778 2.61C7.933 1.76 6.91 1.333 5.71 1.333c-1.215 0-2.248.426-3.1 1.278-.852.852-1.278 1.878-1.278 3.078s.426 2.226 1.278 3.078c.852.852 1.885 1.277 3.1 1.277Z"
-              fill="#fff"
+              fill="currentcolor"
             />
           </svg>
         </button>
@@ -130,7 +130,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Home
                   </span>
@@ -145,7 +145,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/news"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     News
                   </span>
@@ -160,7 +160,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Comment
                   </span>
@@ -175,7 +175,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/life-and-style"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Life & Style
                   </span>
@@ -190,7 +190,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Arts & Books
                   </span>
@@ -205,7 +205,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Sport
                   </span>
@@ -220,7 +220,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/business-and-money"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Business & Money
                   </span>
@@ -235,7 +235,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Puzzles
                   </span>
@@ -250,7 +250,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Magazines
                   </span>
@@ -335,7 +335,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
               href="/times-plus"
             >
               <span
-                class="css-1wpdaev"
+                class="css-b265mf"
               >
                 Times +
               </span>
@@ -362,7 +362,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
               type="button"
             >
               <span
-                class="css-1wpdaev"
+                class="css-b265mf"
               >
                 My Account
               </span>
@@ -404,7 +404,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/account"
                     >
                       <span
-                        class="css-1wpdaev"
+                        class="css-b265mf"
                       >
                         Manage account
                       </span>
@@ -419,7 +419,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/change-password"
                     >
                       <span
-                        class="css-1wpdaev"
+                        class="css-b265mf"
                       >
                         Change password
                       </span>
@@ -434,7 +434,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/my-newsletters"
                     >
                       <span
-                        class="css-1wpdaev"
+                        class="css-b265mf"
                       >
                         My Newsletters
                       </span>
@@ -449,7 +449,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/my-articles"
                     >
                       <span
-                        class="css-1wpdaev"
+                        class="css-b265mf"
                       >
                         My articles
                       </span>
@@ -464,7 +464,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/contact-us"
                     >
                       <span
-                        class="css-1wpdaev"
+                        class="css-b265mf"
                       >
                         Contact us
                       </span>
@@ -479,7 +479,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/log-out"
                     >
                       <span
-                        class="css-1wpdaev"
+                        class="css-b265mf"
                       >
                         Log out
                       </span>
@@ -525,7 +525,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Home
                   </span>
@@ -540,7 +540,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/news"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     News
                   </span>
@@ -555,7 +555,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Comment
                   </span>
@@ -570,7 +570,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/life-and-style"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Life & Style
                   </span>
@@ -585,7 +585,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Arts & Books
                   </span>
@@ -600,7 +600,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Sport
                   </span>
@@ -615,7 +615,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/business-and-money"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Business & Money
                   </span>
@@ -630,7 +630,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Puzzles
                   </span>
@@ -645,7 +645,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Magazines
                   </span>
@@ -678,7 +678,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
         aria-controls="hamburgerMenu"
         aria-label="Open Menu"
         aria-selected="false"
-        class="css-gp5dta"
+        class="css-13gr04u"
         data-testid="button"
         type="button"
       >
@@ -708,7 +708,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
           aria-controls="searchTimes"
           aria-label="Open Search"
           aria-selected="false"
-          class="css-gp5dta"
+          class="css-13gr04u"
           data-testid="button"
           type="button"
         >
@@ -722,7 +722,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
           >
             <path
               d="m15.022 16-5.844-5.844a4.9 4.9 0 0 1-1.556.9 5.5 5.5 0 0 1-1.889.322c-1.6 0-2.955-.556-4.066-1.667C.556 8.6 0 7.26 0 5.69c0-1.57.556-2.911 1.667-4.022C2.777.556 4.126 0 5.71 0c1.57 0 2.908.556 4.011 1.667 1.104 1.11 1.656 2.452 1.656 4.022 0 .637-.104 1.252-.311 1.844a5.64 5.64 0 0 1-.934 1.667L16 15.022l-.978.978Zm-9.31-5.956c1.2 0 2.221-.425 3.066-1.277.844-.852 1.266-1.878 1.266-3.078S9.622 3.463 8.778 2.61C7.933 1.76 6.91 1.333 5.71 1.333c-1.215 0-2.248.426-3.1 1.278-.852.852-1.278 1.878-1.278 3.078s.426 2.226 1.278 3.078c.852.852 1.885 1.277 3.1 1.277Z"
-              fill="#fff"
+              fill="currentcolor"
             />
           </svg>
         </button>
@@ -795,7 +795,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Home
                   </span>
@@ -810,7 +810,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/news"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     News
                   </span>
@@ -825,7 +825,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Comment
                   </span>
@@ -840,7 +840,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/life-and-style"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Life & Style
                   </span>
@@ -855,7 +855,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Arts & Books
                   </span>
@@ -870,7 +870,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Sport
                   </span>
@@ -885,7 +885,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/business-and-money"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Business & Money
                   </span>
@@ -900,7 +900,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Puzzles
                   </span>
@@ -915,7 +915,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Magazines
                   </span>
@@ -973,7 +973,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
     >
       <nav
         aria-label="My Account Menu"
-        class="css-nui7dx"
+        class="css-1vmpsnr"
         data-testid="menu-container"
         role="navigation"
       >
@@ -1000,7 +1000,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
               href="/login"
             >
               <span
-                class="css-1wpdaev"
+                class="css-b265mf"
               >
                 Login
               </span>
@@ -1026,7 +1026,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
               href="/"
             >
               <span
-                class="css-1wpdaev"
+                class="css-b265mf"
               >
                 Subscribe
               </span>
@@ -1068,7 +1068,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Home
                   </span>
@@ -1083,7 +1083,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/news"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     News
                   </span>
@@ -1098,7 +1098,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Comment
                   </span>
@@ -1113,7 +1113,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/life-and-style"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Life & Style
                   </span>
@@ -1128,7 +1128,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Arts & Books
                   </span>
@@ -1143,7 +1143,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Sport
                   </span>
@@ -1158,7 +1158,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/business-and-money"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Business & Money
                   </span>
@@ -1173,7 +1173,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Puzzles
                   </span>
@@ -1188,7 +1188,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1wpdaev"
+                    class="css-b265mf"
                   >
                     Magazines
                   </span>

@@ -1,28 +1,28 @@
 const topNavBtn = {
   backgroundColor: 'transparent',
-  height: "100%",
-  width: "60px",
+  height: '100%',
+  width: '60px',
   zIndex: 1
-}
+};
 
 export const navStylePresets = {
   topNavSearch: {
     base: {
       backgroundColor: '#222222',
       color: '{{colors.white}}',
-      height: "100%",
-      width: "200px",
-    },
+      height: '100%',
+      width: '200px'
+    }
   },
   topNavSearchClear: {
     base: {
       color: '{{colors.inkSubtle}}',
       backgroundColor: 'transparent',
-      minHeight: "{{sizing.sizing040}}",
-      minWidth: "{{sizing.sizing040}}",
-      padding: "0px",
+      minHeight: '{{sizing.sizing040}}',
+      minWidth: '{{sizing.sizing040}}',
+      padding: '0px',
       transform: 'rotate(45deg)'
-    },
+    }
   },
   buttonTopNav: {
     base: {
@@ -36,7 +36,7 @@ export const navStylePresets = {
     base: {
       ...topNavBtn,
       backgroundColor: '#222222'
-    },
+    }
   },
   buttonSolidPrimary: {
     base: {
@@ -70,7 +70,7 @@ export const navStylePresets = {
     },
     selected: {
       borderBottom: '4px solid #1E1E1E',
-      color: '{{colors.inkInverse}}',
+      color: '{{colors.inkInverse}}'
     }
   },
   menuItem: {
@@ -86,7 +86,7 @@ export const navStylePresets = {
     },
     selected: {
       backgroundColor: '#222222'
-    },
+    }
   },
   menuItemScroll: {
     base: {
@@ -100,12 +100,12 @@ export const navStylePresets = {
     },
     selected: {
       borderBottom: '4px solid black'
-    },
+    }
   },
   moreSubMenu: {
     base: {
-      justifyContent: 'end',
-    },
+      justifyContent: 'end'
+    }
   },
   subMenuItem: {
     base: {
@@ -115,14 +115,14 @@ export const navStylePresets = {
     },
     hover: {
       backgroundColor: '#333333'
-    },
+    }
   },
   menuSubscribe: {
     base: {
       backgroundColor: '{{colors.interactivePrimary030}}',
       borderRadius: '{{sizing.sizing010}}',
-      color: '{{colors.white}}',
-    },
+      color: '{{colors.white}}'
+    }
   },
   divider: {
     base: {
@@ -140,7 +140,7 @@ export const navStylePresets = {
       backgroundColor: '#151515',
       color: '#828282',
       fontFamily: 'GillSansMTStd-Medium'
-    },
+    }
   },
   searchBar: {
     base: {
