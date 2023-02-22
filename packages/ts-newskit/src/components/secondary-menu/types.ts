@@ -7,3 +7,10 @@ export type SecondaryMenuItem = {
 export type MainMenuProp = {
   hasMoreItems: boolean;
 };
+
+export type SecondaryMenuOptions = {
+  isSelected: string;
+  handleSelect: (value: string) => void;
+  isExpanded: boolean;
+  setIsExpanded: (value: boolean) => void;
+};

@@ -10,8 +10,12 @@ jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
   useBreakpointKey: jest.fn().mockReturnValue('xl')
 }));
-const handleSelect = jest.fn();
-
+const options = {
+  handleSelect: jest.fn(),
+  setIsExpanded: jest.fn(),
+  isExpanded: false,
+  isSelected: 'true'
+};
 describe('Navitems Desktop', () => {
   afterEach(() => {
     jest.clearAllMocks();
@@ -21,32 +25,20 @@ describe('Navitems Desktop', () => {
   it('should render snapshot', () => {
     (useBreakpointKey as any).mockReturnValue('md');
     const { asFragment } = render(
-      <NavItems
-        data={mainMenuItems}
-        isSelected="true"
-        handleSelect={handleSelect}
-      />
+      <NavItems data={mainMenuItems} options={options} />
     );
     expect(asFragment()).toMatchSnapshot();
   });
   it('should render the menu item', () => {
     const { getByText } = render(
-      <NavItems
-        data={mainMenuItems}
-        isSelected="true"
-        handleSelect={handleSelect}
-      />
+      <NavItems data={mainMenuItems} options={options} />
     );
     const title = getByText('Home');
     expect(title).toBeInTheDocument();
   });
   it('items should have ancher with href', () => {
     const { getAllByTestId } = render(
-      <NavItems
-        data={mainMenuItems}
-        isSelected="true"
-        handleSelect={handleSelect}
-      />
+      <NavItems data={mainMenuItems} options={options} />
     );
     const title = getAllByTestId('buttonLink')[0];
     expect(title).toHaveAttribute('href', '/home');
@@ -54,14 +46,10 @@ describe('Navitems Desktop', () => {
 
   it('items should have ancher with href', () => {
     const { getAllByTestId } = render(
-      <NavItems
-        data={mainMenuItems}
-        isSelected="true"
-        handleSelect={handleSelect}
-      />
+      <NavItems data={mainMenuItems} options={options} />
     );
     const title = getAllByTestId('buttonLink')[0];
     fireEvent.click(title);
-    expect(handleSelect).toHaveBeenCalled();
+    expect(options.handleSelect).toHaveBeenCalled();
   });
 });

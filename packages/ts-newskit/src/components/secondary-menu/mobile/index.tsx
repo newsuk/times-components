@@ -1,27 +1,24 @@
 import React from 'react';
 import { Menu } from 'newskit';
 import { Navigator } from './navigator';
-import { SecondaryMenuItem } from '../types';
+import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 
 export const SecondaryNavMobile: React.FC<{
+  options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-  isExpanded: boolean;
-  isSelected: string;
-  setIsExpanded: (value: boolean) => void;
-  handleSelect: (value: string) => void;
-}> = ({ data, isExpanded, setIsExpanded, isSelected, handleSelect }) => {
+}> = ({ options, data }) => {
+  const { isExpanded, isSelected } = options;
   const subMenuTitle = isExpanded ? 'Close' : 'See all';
 
   return (
     <Menu vertical aria-label="Secondary Navigation">
       <Navigator
         title={isSelected}
-        isExpanded={isExpanded}
-        setIsExpanded={setIsExpanded}
+        options={options}
         subMenuTitle={subMenuTitle}
       />
-      {isExpanded ? <NavItems data={data} handleSelect={handleSelect} /> : null}
+      {isExpanded ? <NavItems data={data} options={options} /> : null}
     </Menu>
   );
 };

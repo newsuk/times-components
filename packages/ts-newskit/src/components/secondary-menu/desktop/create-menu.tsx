@@ -1,33 +1,22 @@
 import React, { Fragment } from 'react';
 import { MenuSub, Menu } from 'newskit';
 import { MenuContainer } from '../styles';
-import { SecondaryMenuItem } from '../types';
+import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
-import { useBreakpoint } from '../../utils/test';
+import { getBreakpoint } from '../../utils/getBreakPoint';
 
 export const CreateMenu: React.FC<{
+  options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-  isSelected: string;
-  handleSelect: (value: string) => void;
-  isExpanded: boolean;
-  setIsExpanded: (value: boolean) => void;
-}> = ({
-  data,
-  handleSelect,
-  isSelected,
-  isExpanded = false,
-  setIsExpanded
-}) => {
-  const { moreMenuLength } = useBreakpoint(data);
+}> = ({ options, data }) => {
+  const { isExpanded, setIsExpanded } = options;
+
+  const { moreMenuLength } = getBreakpoint(data);
 
   return moreMenuLength > 0 ? (
     <Fragment>
-      <NavItems
-        data={data}
-        isSelected={isSelected}
-        handleSelect={handleSelect}
-      />
+      <NavItems data={data} options={options} />
       <MenuSub
         onClick={() => setIsExpanded(!isExpanded)}
         expanded={isExpanded}
@@ -47,18 +36,12 @@ export const CreateMenu: React.FC<{
             }}
             aria-label="menu-multiple-auto"
           >
-            <CreateMoreMenu
-              data={data}
-              isSelected={isSelected}
-              handleSelect={handleSelect}
-              isExpanded={isExpanded}
-              setIsExpanded={setIsExpanded}
-            />
+            <CreateMoreMenu data={data} options={options} />
           </Menu>
         </MenuContainer>
       </MenuSub>
     </Fragment>
   ) : (
-    <NavItems data={data} isSelected={isSelected} handleSelect={handleSelect} />
+    <NavItems data={data} options={options} />
   );
 };

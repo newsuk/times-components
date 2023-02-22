@@ -1,17 +1,15 @@
 import React, { Fragment } from 'react';
 import { MenuItem } from 'newskit';
 import { MenuDividerDesktop } from '../styles';
-import { SecondaryMenuItem } from '../types';
-import { useBreakpoint } from '../../utils/test';
+import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
+import { getBreakpoint } from '../../utils/getBreakPoint';
 
 export const CreateMoreMenu: React.FC<{
+  options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-  isSelected: string;
-  handleSelect: (value: string) => void;
-  isExpanded: boolean;
-  setIsExpanded: (value: boolean) => void;
-}> = ({ data, handleSelect, isSelected, isExpanded, setIsExpanded }) => {
-  const { moreMenuLength } = useBreakpoint(data);
+}> = ({ options, data }) => {
+  const { handleSelect, isSelected, isExpanded, setIsExpanded } = options;
+  const { moreMenuLength } = getBreakpoint(data);
 
   return (
     <>

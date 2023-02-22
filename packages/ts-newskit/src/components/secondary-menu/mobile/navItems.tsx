@@ -1,12 +1,13 @@
 import React from 'react';
 import { MenuItem, Block } from 'newskit';
 import { MenuDivider } from '../styles';
-import { SecondaryMenuItem } from '../types';
+import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 
 export const NavItems: React.FC<{
+  options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-  handleSelect: (title: string) => void;
-}> = ({ data, handleSelect }) => {
+}> = ({ options, data }) => {
+  const { handleSelect } = options;
   const menuItemsPreset = {
     stylePreset: 'secondaryMenuItem'
   };

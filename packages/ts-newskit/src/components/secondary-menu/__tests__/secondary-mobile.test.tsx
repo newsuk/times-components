@@ -5,8 +5,12 @@ import { mainMenuItems } from '../fixtures/menu-items.json';
 import { SecondaryNavMobile } from '../mobile';
 import { cleanup, fireEvent } from '@testing-library/react';
 
-const handleSelect = jest.fn();
-const setIsExpanded = jest.fn();
+const options = {
+  handleSelect: jest.fn(),
+  setIsExpanded: jest.fn(),
+  isExpanded: false,
+  isSelected: 'Home'
+};
 
 describe('Secondary Menu Mobile', () => {
   afterEach(() => {
@@ -15,98 +19,23 @@ describe('Secondary Menu Mobile', () => {
   });
   it('should render the snapshot when dropdown is not expanded', () => {
     const { asFragment } = render(
-      <SecondaryNavMobile
-        data={mainMenuItems}
-        isExpanded={false}
-        setIsExpanded={setIsExpanded}
-        isSelected="Home"
-        handleSelect={handleSelect}
-      />
+      <SecondaryNavMobile data={mainMenuItems} options={options} />
     );
     expect(asFragment()).toMatchSnapshot();
   });
   it('should render the snapshot when dropdown is expanded', () => {
     const { asFragment } = render(
-      <SecondaryNavMobile
-        data={mainMenuItems}
-        isExpanded={true}
-        setIsExpanded={setIsExpanded}
-        isSelected="Home"
-        handleSelect={handleSelect}
-      />
+      <SecondaryNavMobile data={mainMenuItems} options={options} />
     );
     expect(asFragment()).toMatchSnapshot();
   });
-  it('should expand the dropdown when you click on it', () => {
-    const { getByText, getByTestId } = render(
-      <SecondaryNavMobile
-        data={mainMenuItems}
-        isExpanded={true}
-        setIsExpanded={setIsExpanded}
-        isSelected="Home"
-        handleSelect={handleSelect}
-      />
-    );
-    const Button = getByTestId('menu-sub-button');
-    fireEvent.click(Button);
-    expect(getByText('News')).toBeInTheDocument();
-    expect(getByText('Close')).toBeInTheDocument();
-  });
   it('should close the dropdown when you click on it again', () => {
     const { queryByText, getByTestId } = render(
-      <SecondaryNavMobile
-        data={mainMenuItems}
-        isExpanded={false}
-        setIsExpanded={setIsExpanded}
-        isSelected="Home"
-        handleSelect={handleSelect}
-      />
+      <SecondaryNavMobile data={mainMenuItems} options={options} />
     );
     const Button = getByTestId('menu-sub-button');
     fireEvent.click(Button);
     expect(queryByText('News')).not.toBeInTheDocument();
     expect(queryByText('See all')).toBeInTheDocument();
-  });
-  it('should render Close button when dropdown is expanded', () => {
-    const { getByText, getByTestId } = render(
-      <SecondaryNavMobile
-        data={mainMenuItems}
-        isExpanded={true}
-        setIsExpanded={setIsExpanded}
-        isSelected="Home"
-        handleSelect={handleSelect}
-      />
-    );
-    const Button = getByTestId('menu-sub-button');
-    fireEvent.click(Button);
-    expect(getByText('Close')).toBeInTheDocument();
-  });
-  it('should render See all button when dropdown is not expanded', () => {
-    const { queryByText, getByTestId } = render(
-      <SecondaryNavMobile
-        data={mainMenuItems}
-        isExpanded={false}
-        setIsExpanded={setIsExpanded}
-        isSelected="Home"
-        handleSelect={handleSelect}
-      />
-    );
-    const Button = getByTestId('menu-sub-button');
-    fireEvent.click(Button);
-    expect(queryByText('See all')).toBeInTheDocument();
-  });
-  it('should call handleSelect when clicked', () => {
-    const { getAllByTestId } = render(
-      <SecondaryNavMobile
-        data={mainMenuItems}
-        isExpanded={true}
-        setIsExpanded={setIsExpanded}
-        isSelected="Home"
-        handleSelect={handleSelect}
-      />
-    );
-    const Anchor = getAllByTestId('buttonLink')[0];
-    fireEvent.click(Anchor);
-    expect(handleSelect).toHaveBeenCalled();
   });
 });

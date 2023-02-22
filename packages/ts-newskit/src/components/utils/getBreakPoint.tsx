@@ -1,11 +1,11 @@
 import { useBreakpointKey } from 'newskit';
 import { SecondaryMenuItem } from '../secondary-menu/types';
 
-export const useBreakpoint = (data: SecondaryMenuItem[]) => {
+export const getBreakpoint = (data: SecondaryMenuItem[]) => {
   const breakpointKey = useBreakpointKey();
 
   const menuItems =
-    breakpointKey === 'md' ? 7 : breakpointKey === 'lg' ? 10 : data.length;
+    breakpointKey === 'md' ? 7 : breakpointKey === 'lg' ? 9 : data.length;
 
   const moreMenuLength = data.length - menuItems;
 

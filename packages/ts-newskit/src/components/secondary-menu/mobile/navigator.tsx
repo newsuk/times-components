@@ -1,12 +1,13 @@
 import React from 'react';
 import { MenuSub, TextBlock, Block } from 'newskit';
+import { SecondaryMenuOptions } from '../types';
 
 export const Navigator: React.FC<{
+  options: SecondaryMenuOptions;
   title: string;
-  isExpanded: boolean;
   subMenuTitle: string;
-  setIsExpanded: (value: boolean) => void;
-}> = ({ title, isExpanded, setIsExpanded, subMenuTitle, children }) => {
+}> = ({ title, options, subMenuTitle, children }) => {
+  const { isExpanded, setIsExpanded } = options;
   const menuSubPreset = {
     stylePreset: 'subMenu'
   };

@@ -1,18 +1,15 @@
 import React, { Fragment } from 'react';
 import { MenuDivider, MainMenu } from '../styles';
-import { SecondaryMenuItem } from '../types';
+import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 
 import { CreateMenu } from './create-menu';
-import { useBreakpoint } from '../../utils/test';
+import { getBreakpoint } from '../../utils/getBreakPoint';
 
 export const SecondaryNavDesktop: React.FC<{
+  options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-  isSelected: string;
-  handleSelect: (value: string) => void;
-  isExpanded: boolean;
-  setIsExpanded: (value: boolean) => void;
-}> = ({ data, handleSelect, isSelected, isExpanded, setIsExpanded }) => {
-  const { moreMenuLength } = useBreakpoint(data);
+}> = ({ options, data }) => {
+  const { moreMenuLength } = getBreakpoint(data);
 
   return (
     <Fragment>
@@ -23,13 +20,7 @@ export const SecondaryNavDesktop: React.FC<{
           spaceInline: 'space050'
         }}
       >
-        <CreateMenu
-          data={data}
-          isSelected={isSelected}
-          handleSelect={handleSelect}
-          isExpanded={isExpanded}
-          setIsExpanded={setIsExpanded}
-        />
+        <CreateMenu data={data} options={options} />
       </MainMenu>
       <MenuDivider />
     </Fragment>
