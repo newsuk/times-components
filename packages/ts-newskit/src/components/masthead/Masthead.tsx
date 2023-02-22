@@ -1,7 +1,6 @@
 import React from 'react';
-import { DateTime, LinkInline } from 'newskit';
-import { MainHeader, Masthead, MastheadTitle } from './style';
-
+import { DateTime, LinkInline, ScreenReaderOnly } from 'newskit';
+import { MainHeader, Masthead } from './style';
 import { SundayTimesMasthead, TimesMasthead } from './assets';
 
 const todaysDate = (new Date()).toISOString();
@@ -10,7 +9,7 @@ export const MainMasthead: React.FC<{ isSunday: boolean }> = ( {isSunday} ) => {
 	return (
         <MainHeader>
             <Masthead>
-                <MastheadTitle>The Times & The Sunday Times Homepage</MastheadTitle>
+                <ScreenReaderOnly id="sr-only"><h1>The Times &amp; The Sunday Times Homepage</h1></ScreenReaderOnly>
                 <DateTime
                     date={todaysDate}
                     dateFormat='EEEE MMMM d yyyy'

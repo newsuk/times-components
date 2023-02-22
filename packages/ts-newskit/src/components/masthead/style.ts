@@ -40,21 +40,3 @@ export const Masthead = styled.div`
         display: block;
     }
 `;
-
-export const MastheadTitle = styled.h1`
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
-    font-size: 3rem;
-    line-height: 3rem;
-    color: #1D1D1B;
-    font-smoothing: auto;
-    @media (min-width: 768px) {
-        font-size: 3.5rem;
-        line-height: 3.5rem;
-    }
-    @media (min-width: 1024px) {
-        font-size: 4.5rem;
-        line-height: 4.5rem;
-    }
-`;
