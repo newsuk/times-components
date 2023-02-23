@@ -1,6 +1,5 @@
 import React from 'react';
 import { ThemeProvider, Headline } from 'newskit'
-// import { SectionHeaderText } from './style'
 import { TimesWebLightTheme } from '../../theme';
 
 export const SectionHeader: React.FC<{ title: string }> = ( {title} ) => {
