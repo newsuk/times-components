@@ -1,7 +1,7 @@
 import React from 'react';
 import { ThemeProvider, DateTime, LinkInline, ScreenReaderOnly } from 'newskit';
 import { TimesWebLightTheme } from '../../theme';
-import { MainHeader, Masthead } from './style';
+import { MainHeader, Masthead } from './styles';
 import { NewsKitTimesMasthead, NewsKitSundayTimesMasthead } from '../../assets';
 
 const dateNow = new Date().toISOString();
