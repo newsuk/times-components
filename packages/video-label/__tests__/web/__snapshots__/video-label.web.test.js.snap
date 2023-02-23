@@ -34,8 +34,8 @@ exports[`Video Label renders the component in the color passed to it 1`] = `
         </svg>
       </div>
       <div
-        class="tc-text__TcText-sc-15igzev-0 video-label__VideoLabelText-spiidi-0 bPmTbX"
-        style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; flex: -1; font-weight: 400; letter-spacing: 1.2px; margin-left: 5px; padding-top: 1px; color: blue;"
+        class="tc-text__TcText-sc-15igzev-0 video-label__VideoLabelText-spiidi-0 efxOKF"
+        style="font-family: Roboto-Regular; font-size: 12px; line-height: 13px; flex: -1; font-weight: 400; letter-spacing: 0.6px; margin-left: 5px; padding-top: 1px; color: blue;"
       >
         VIDEO
       </div>
@@ -78,8 +78,8 @@ exports[`Video Label renders the title that is passed to the component 1`] = `
         </svg>
       </div>
       <div
-        class="tc-text__TcText-sc-15igzev-0 video-label__VideoLabelText-spiidi-0 bPmTbX"
-        style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; flex: -1; font-weight: 400; letter-spacing: 1.2px; margin-left: 5px; padding-top: 1px; color: black;"
+        class="tc-text__TcText-sc-15igzev-0 video-label__VideoLabelText-spiidi-0 efxOKF"
+        style="font-family: Roboto-Regular; font-size: 12px; line-height: 13px; flex: -1; font-weight: 400; letter-spacing: 0.6px; margin-left: 5px; padding-top: 1px; color: black;"
       >
         SWIMMING
       </div>
@@ -122,8 +122,8 @@ exports[`Video Label shows the default text of VIDEO when no title is passed to 
         </svg>
       </div>
       <div
-        class="tc-text__TcText-sc-15igzev-0 video-label__VideoLabelText-spiidi-0 bPmTbX"
-        style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; flex: -1; font-weight: 400; letter-spacing: 1.2px; margin-left: 5px; padding-top: 1px; color: black;"
+        class="tc-text__TcText-sc-15igzev-0 video-label__VideoLabelText-spiidi-0 efxOKF"
+        style="font-family: Roboto-Regular; font-size: 12px; line-height: 13px; flex: -1; font-weight: 400; letter-spacing: 0.6px; margin-left: 5px; padding-top: 1px; color: black;"
       >
         VIDEO
       </div>

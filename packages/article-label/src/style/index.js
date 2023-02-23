@@ -5,7 +5,7 @@ const styles = {
   title: {
     ...sharedStyles.title,
     lineHeight: 12,
-    letterSpacing: 1
+    letterSpacing: 0.5
   }
 };
 

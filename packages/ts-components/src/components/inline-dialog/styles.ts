@@ -41,7 +41,7 @@ export const Button = styled.a`
   width: 127px;
   height: 48px;
 
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;

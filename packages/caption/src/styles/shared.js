@@ -13,7 +13,7 @@ const styles = {
     color: colours.functional.primary,
     fontSize: fontSizes.credits,
     fontWeight: "400",
-    letterSpacing: 1,
+    letterSpacing: 0.5,
     lineHeight: 16
   },
   text: {

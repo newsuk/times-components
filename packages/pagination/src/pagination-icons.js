@@ -9,7 +9,8 @@ const textStyle = {
   ...fontFactory({
     font: "supporting",
     fontSize: "pagingMeta"
-  })
+  }),
+  lineHeight: 13
 };
 
 const container = {

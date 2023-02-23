@@ -100,10 +100,10 @@ exports[`User States RA Users 1`] = `
   cursor: pointer;
   background-color: #008387;
   color: white;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   width: 127px;
   height: 48px;
-  font-size: 16px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
@@ -190,8 +190,8 @@ exports[`disabled comments 1`] = `
 
 .c2 {
   color: #696969;
-  font-family: "GillSansMTStd-Medium";
-  font-size: 13px;
+  font-family: "Roboto-Regular";
+  font-size: 12px;
   margin: 0;
   padding-bottom: 30px;
   padding-top: 5px;
@@ -221,8 +221,8 @@ exports[`disabled comments 1`] = `
   -webkit-text-decoration: underline;
   text-decoration: underline;
   color: #006699;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-family: Roboto-Regular;
+  font-size: 12px;
 }
 
 @media (min-width:768px) {
@@ -252,7 +252,7 @@ exports[`disabled comments 1`] = `
       <a
         class="c3"
         href="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: GillSansMTStd-Medium; font-size: 13px;"
+        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular; font-size: 12px;"
       >
         here
       </a>

@@ -17,7 +17,8 @@ const shared = {
       fontSize: "cardMeta"
     }),
     color: colours.functional.primary,
-    flexDirection: "row"
+    flexDirection: "row",
+    lineHeight: "25px"
   },
   opinion: {
     ...fontFactory({

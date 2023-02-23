@@ -119,7 +119,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         >
                           <div
                             class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                            style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 1px; color: rgb(0, 131, 71);"
+                            style="font-family: Roboto-Regular; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 0.5px; color: rgb(0, 131, 71);"
                           >
                             CYCLING | DAVID WALSH
                           </div>
@@ -134,7 +134,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         </div>
                         <div
                           class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                          style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
+                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular; font-size: 12px; line-height: 15px; margin-bottom: 5px;"
                         >
                           <time
                             datetime="2021-06-29T23:01:00Z"
@@ -146,7 +146,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           class="tc-text__TcText-sc-15igzev-0 lhcAkf"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 dNlbuS"
                           >
                             David Walsh
                           </div>
@@ -233,7 +233,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         >
                           <div
                             class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                            style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 1px; color: rgb(0, 131, 71);"
+                            style="font-family: Roboto-Regular; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 0.5px; color: rgb(0, 131, 71);"
                           >
                             EURO 2020 | MATT LAWTON
                           </div>
@@ -248,7 +248,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         </div>
                         <div
                           class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                          style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
+                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular; font-size: 12px; line-height: 15px; margin-bottom: 5px;"
                         >
                           <time
                             datetime="2021-06-30T11:00:00Z"
@@ -260,7 +260,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           class="tc-text__TcText-sc-15igzev-0 lhcAkf"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 dNlbuS"
                           >
                             Matt Lawton
                           </div>
@@ -347,7 +347,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         >
                           <div
                             class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                            style="font-family: GillSansMTStd-Medium; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 1px; color: rgb(0, 131, 71);"
+                            style="font-family: Roboto-Regular; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 0.5px; color: rgb(0, 131, 71);"
                           >
                             EURO 2020 | JONATHAN NORTHCROFT
                           </div>
@@ -362,7 +362,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         </div>
                         <div
                           class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                          style="color: rgb(105, 105, 105); font-family: GillSansMTStd-Medium; font-size: 13px; line-height: 15px; margin-bottom: 5px;"
+                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular; font-size: 12px; line-height: 15px; margin-bottom: 5px;"
                         >
                           <time
                             datetime="2021-06-29T23:01:00Z"
@@ -374,7 +374,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           class="tc-text__TcText-sc-15igzev-0 lhcAkf"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 hgOVOC"
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 dNlbuS"
                           >
                             Jonathan Northcroft
                           </div>

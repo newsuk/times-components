@@ -9,7 +9,7 @@ exports[`InfoCardBulletPoints should render the component 1`] = `
       class="sc-bwzfXH blmhpN"
     >
       <div
-        class="sc-dnqmqq cjsHty"
+        class="sc-dnqmqq gzKSHu"
       >
         Venezuelan Politics
       </div>
@@ -56,7 +56,7 @@ exports[`InfoCardBulletPoints should render the component 1`] = `
       class="sc-bxivhb hAzEyl"
     >
       <button
-        class="sc-ifAKCX kpjxlo"
+        class="sc-ifAKCX QXRPc"
       >
         Read more
       </button>
@@ -88,7 +88,7 @@ exports[`InfoCardBulletPoints tracking click read more 1`] = `
       class="sc-bwzfXH blmhpN"
     >
       <div
-        class="sc-dnqmqq cjsHty"
+        class="sc-dnqmqq gzKSHu"
       >
         Venezuelan Politics
       </div>
@@ -135,7 +135,7 @@ exports[`InfoCardBulletPoints tracking click read more 1`] = `
       class="sc-bxivhb hpabOq"
     >
       <button
-        class="sc-ifAKCX kpjxlo"
+        class="sc-ifAKCX QXRPc"
       >
         Collapse
       </button>

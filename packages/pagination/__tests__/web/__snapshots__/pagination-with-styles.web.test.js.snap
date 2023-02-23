@@ -4,16 +4,16 @@ exports[`1. renders 1`] = `
 <style>
 .IS1 {
   color: #696969;
-  font-family: GillSansMTStd-Medium;
-  font-size: 15;
+  font-family: Roboto-Regular;
+  font-size: 14;
   line-height: 15px;
   padding-top: 4;
 }
 
 .IS2 {
   color: #696969;
-  font-family: GillSansMTStd-Medium;
-  font-size: 15;
+  font-family: Roboto-Regular;
+  font-size: 14;
   line-height: 15px;
   padding-top: 4;
 }
@@ -47,9 +47,9 @@ exports[`1. renders 1`] = `
   text-align: left;
   color: #006699;
   height: 15;
-  font-family: GillSansMTStd-Medium;
-  font-size: 15;
-  line-height: 15px;
+  font-family: Roboto-Regular;
+  font-size: 14;
+  line-height: 13px;
 }
 
 .IS8 {
@@ -57,9 +57,9 @@ exports[`1. renders 1`] = `
   text-align: left;
   color: #006699;
   height: 15;
-  font-family: GillSansMTStd-Medium;
-  font-size: 15;
-  line-height: 15px;
+  font-family: Roboto-Regular;
+  font-size: 14;
+  line-height: 13px;
 }
 
 .IS9 {
@@ -105,9 +105,9 @@ exports[`1. renders 1`] = `
   text-align: right;
   color: #006699;
   height: 15;
-  font-family: GillSansMTStd-Medium;
-  font-size: 15;
-  line-height: 15px;
+  font-family: Roboto-Regular;
+  font-size: 14;
+  line-height: 13px;
 }
 
 .IS16 {
@@ -115,9 +115,9 @@ exports[`1. renders 1`] = `
   text-align: right;
   color: #006699;
   height: 15;
-  font-family: GillSansMTStd-Medium;
-  font-size: 15;
-  line-height: 15px;
+  font-family: Roboto-Regular;
+  font-size: 14;
+  line-height: 13px;
 }
 
 .IS17 {
