@@ -1,0 +1,494 @@
+{
+    "mainMenuItems": [
+      {
+        "title": "Home",
+        "url": "/home",
+        "slug": "home"
+      },
+      {
+        "title": "News",
+        "url": "/news",
+        "slug": "news",
+        "items": [
+          {
+            "title": "Top stories",
+            "url": "/news",
+            "slug": "top-stories-news"
+          },
+          {
+            "title": "UK",
+            "url": "/uk",
+            "slug": "uk"
+          },
+          {
+            "title": "World",
+            "url": "/world",
+            "slug": "world"
+          },
+          {
+            "title": "Health & Science",
+            "url": "/health-and-science",
+            "slug": "health-and-science"
+          },
+          {
+            "title": "Environment",
+            "url": "/environment",
+            "slug": "environment"
+          },
+          {
+            "title": "Royal family",
+            "url": "/royal-family",
+            "slug": "royal-family"
+          },
+          {
+            "title": "Investigations",
+            "url": "/investigations",
+            "slug": "investigations"
+          },
+          {
+            "title": "Obituaries",
+            "url": "/obituaries",
+            "slug": "obituaries"
+          },
+          {
+            "title": "Education",
+            "url": "/education",
+            "slug": "education"
+          },
+          {
+            "title": "Scotland",
+            "url": "/scotland",
+            "slug": "scotland"
+          },
+          {
+            "title": "Law",
+            "url": "/law",
+            "slug": "law"
+          }
+        ]
+      },
+      {
+        "title": "Comment",
+        "url": "/comment",
+        "slug": "comment",
+        "items": [
+          {
+            "title": "Top stories",
+            "url": "/comment",
+            "slug": "top-stories-comment"
+          },
+          {
+            "title": "Columnists",
+            "url": "/columnists",
+            "slug": "columnists"
+          },
+          {
+            "title": "The Times view",
+            "url": "/the-times-view",
+            "slug": "the-times-view"
+          },
+          {
+            "title": "Letters to the Editor",
+            "url": "/letters-to-the-editor",
+            "slug": "letters-to-the-editor"
+          },
+          {
+            "title": "Cartoons",
+            "url": "/cartoons",
+            "slug": "cartoons"
+          },
+          {
+            "title": "Register",
+            "url": "/register",
+            "slug": "register"
+          }
+        ]
+      },
+      {
+        "title": "Life & Style",
+        "url": "/life-and-style",
+        "slug": "life-and-style",
+        "items": [
+          {
+            "title": "Top stories",
+            "url": "/life-and-style",
+            "slug": "top-stories-life-and-style"
+          },
+          {
+            "title": "Property",
+            "url": "/property",
+            "slug": "property"
+          },
+          {
+            "title": "Sex & Relationships",
+            "url": "/sex-and-relationships",
+            "slug": "sex-and-relationships"
+          },
+          {
+            "title": "Food & Drink",
+            "url": "/food-and-drink",
+            "slug": "food-and-drink"
+          },
+          {
+            "title": "Travel",
+            "url": "/travel",
+            "slug": "travel"
+          },
+          {
+            "title": "Fashion",
+            "url": "/fashion",
+            "slug": "fashion"
+          },
+          {
+            "title": "Beauty",
+            "url": "/beauty",
+            "slug": "beauty"
+          },
+          {
+            "title": "Fitness & Wellbeing",
+            "url": "/fitness-and-wellbeing",
+            "slug": "fitness-and-wellbeing"
+          },
+          {
+            "title": "Luxury",
+            "url": "/luxury",
+            "slug": "luxury"
+          },
+          {
+            "title": "Driving",
+            "url": "/driving",
+            "slug": "driving"
+          },
+          {
+            "title": "Parenting",
+            "url": "/parenting",
+            "slug": "parenting"
+          }
+        ]
+      },
+      {
+        "title": "Arts & Books",
+        "url": "/arts-and-books",
+        "slug": "arts-and-books",
+        "items": [
+          {
+            "title": "Top stories",
+            "url": "/arts-and-books",
+            "slug": "top-stories-arts-and-books"
+          },
+          {
+            "title": "TV & Radio",
+            "url": "/tv-and-radio",
+            "slug": "tv-and-radio"
+          },
+          {
+            "title": "Books",
+            "url": "/books",
+            "slug": "books"
+          },
+          {
+            "title": "Music",
+            "url": "/music",
+            "slug": "music"
+          },
+          {
+            "title": "Film",
+            "url": "/film",
+            "slug": "Theatre"
+          },
+          {
+            "title": "Opera",
+            "url": "/opera",
+            "slug": "opera"
+          },
+          {
+            "title": "Arts",
+            "url": "/arts",
+            "slug": "arts"
+          }
+        ]
+      },
+      {
+        "title": "Sport",
+        "url": "/sport",
+        "slug": "sport",
+        "items": [
+          {
+            "title": "Top stories",
+            "url": "/sport",
+            "slug": "top-stories-sport"
+          },
+          {
+            "title": "Football",
+            "url": "/football",
+            "slug": "football"
+          },
+          {
+            "title": "Rugby Union",
+            "url": "/rugby-union",
+            "slug": "rugby-union"
+          },
+          {
+            "title": "Tennis",
+            "url": "/tennis",
+            "slug": "tennis"
+          },
+          {
+            "title": "Cricket",
+            "url": "/cricket",
+            "slug": "cricket"
+          },
+          {
+            "title": "Athletics",
+            "url": "/athletics",
+            "slug": "athletics"
+          },
+          {
+            "title": "Cycling",
+            "url": "/cycling",
+            "slug": "cycling"
+          },
+          {
+            "title": "Formula One",
+            "url": "/formula-one",
+            "slug": "formula-one"
+          },
+          {
+            "title": "Golf",
+            "url": "/golf",
+            "slug": "golf"
+          },
+          {
+            "title": "Horse Racing",
+            "url": "/horse-racing",
+            "slug": "horse-racing"
+          },
+          {
+            "title": "Boxing",
+            "url": "/boxing",
+            "slug": "boxing"
+          }
+        ]
+      },
+      {
+        "title": "Business & Money",
+        "url": "/business-and-money",
+        "slug": "business-and-money",
+        "items": [
+          {
+            "title": "Top stories",
+            "url": "/business-and-money",
+            "slug": "top-stories-business-and-money"
+          },
+          {
+            "title": "Money",
+            "url": "/money",
+            "slug": "money"
+          },
+          {
+            "title": "Economics",
+            "url": "/economics",
+            "slug": "economics"
+          },
+          {
+            "title": "Markets",
+            "url": "/markets",
+            "slug": "markets"
+          },
+          {
+            "title": "Technology",
+            "url": "/technology",
+            "slug": "technology"
+          },
+          {
+            "title": "Entrepreneurs",
+            "url": "/entrepreneurs",
+            "slug": "entrepreneurs"
+          },
+          {
+            "title": "Companies",
+            "url": "/companies",
+            "slug": "companies"
+          }
+        ]
+      },
+      {
+        "title": "Puzzles",
+        "url": "/puzzles",
+        "slug": "puzzles",
+        "items": [
+          {
+            "title": "Crossword Club",
+            "url": "/crossword-club",
+            "slug": "crossword-club"
+          },
+          {
+            "title": "Crosswords",
+            "url": "/crosswords",
+            "slug": "crosswords"
+          },
+          {
+            "title": "Mind games",
+            "url": "/mind-games",
+            "slug": "mind-games"
+          },
+          {
+            "title": "Daily Quiz",
+            "url": "/daily-quiz",
+            "slug": "daily-quiz"
+          },
+          {
+            "title": "Soduku",
+            "url": "/soduku",
+            "slug": "soduku"
+          }
+        ]
+      },
+      {
+        "title": "Magazines",
+        "url": "/magazines",
+        "slug": "magazines",
+        "items": [
+          {
+            "title": "The Sunday Times magazine",
+            "url": "/the-sunday-times-magazine",
+            "slug": "the-sunday-times-magazine"
+          },
+          {
+            "title": "Culture magazine",
+            "url": "/culture-magazine",
+            "slug": "culture-magazine"
+          },
+          {
+            "title": "Weekend magazine",
+            "url": "/weekend-magazine",
+            "slug": "weekend-magazine"
+          },
+          {
+            "title": "Style magazine",
+            "url": "/style-magazine",
+            "slug": "style-magazine"
+          },
+          {
+            "title": "The Times magazine",
+            "url": "/the-times-magazine",
+            "slug": "the-times-magazine"
+          }
+        ]
+      }
+    ],
+    "moreMenuItems": [
+      {
+        "title": "E-paper",
+        "url": "/e-paper",
+        "slug": "e-paper"
+      },
+      {
+        "title": "Newsletters",
+        "url": "/newsletters",
+        "slug": "newsletters"
+      },
+      {
+        "title": "TV Guide",
+        "url": "/tv-guide",
+        "slug": "tv-guide"
+      },
+      {
+        "title": "Times +",
+        "url": "/times-plus",
+        "slug": "times-plus"
+      },
+      {
+        "title": "Times Radio",
+        "url": "/times-radio",
+        "slug": "times-radio"
+      },
+      {
+        "title": "Times Podcasts",
+        "url": "/podcasts",
+        "slug": "podcasts"
+      },
+      {
+        "title": "Times Money Mentor",
+        "url": "/money-mentor",
+        "slug": "money-mentor"
+      },
+      {
+        "title": "Times Travel",
+        "url": "/times-travel",
+        "slug": "times-travel"
+      },
+      {
+        "title": "Times wine club",
+        "url": "/wine-club",
+        "slug": "wine-club"
+      },
+      {
+        "title": "Times appointments",
+        "url": "/times-appointments",
+        "slug": "times-appointments"
+      },
+      {
+        "title": "The Sunday Times Rich List",
+        "url": "/rich-list",
+        "slug": "rich-list"
+      },
+      {
+        "title": "The Times good uni guide",
+        "url": "/uni-guide",
+        "slug": "uni-guide"
+      },
+      {
+        "title": "The Times good school guide",
+        "url": "/school-guide",
+        "slug": "school-guide"
+      },
+      {
+        "title": "The Times best places to live",
+        "url": "/best-places-to-live",
+        "slug": "best-places-to-live"
+      },
+      {
+        "title": "The Times best places to stay",
+        "url": "/best-places-to-stay",
+        "slug": "best-places-to-stay"
+      },
+      {
+        "title": "Growth 100",
+        "url": "/growth-100",
+        "slug": "growth-100"
+      }
+    ],
+    "accountMenuItems": [
+      {
+        "title": "Manage account",
+        "url": "/account",
+        "slug": "manage-account"
+      },
+      {
+        "title": "Change password",
+        "url": "/change-password",
+        "slug": "change-password"
+      },
+      {
+        "title": "My Newsletters",
+        "url": "/my-newsletters",
+        "slug": "my-newsletters"
+      },
+      {
+        "title": "My articles",
+        "url": "/my-articles",
+        "slug": "my-articles"
+      },
+      {
+        "title": "Contact us",
+        "url": "/contact-us",
+        "slug": "contact-us"
+      },
+      {
+        "title": "Log out",
+        "url": "/log-out",
+        "slug": "log-out"
+      }
+    ]
+  }

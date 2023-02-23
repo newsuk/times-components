@@ -1,0 +1,67 @@
+{
+  "mainMenuItems": [
+    {
+      "title": "Main Menu 1",
+      "url": "/main-menu-1",
+      "slug": "main-menu-1"
+    },
+    {
+      "title": "Main Menu 2",
+      "url": "/main-menu-2",
+      "slug": "main-menu-2",
+      "items": [
+        {
+          "title": "Item 1",
+          "url": "/item-1",
+          "slug": "item-1"
+        },
+        {
+          "title": "Item 2",
+          "url": "/item-2",
+          "slug": "item-2"
+        }
+      ]
+    },
+    {
+      "title": "Main Menu 3",
+      "url": "/main-menu-3",
+      "slug": "main-menu-3",
+      "items": [
+        {
+          "title": "Menu 3 Item 1",
+          "url": "/item-1",
+          "slug": "item-1"
+        },
+        {
+          "title": "Menu 3 Item 2",
+          "url": "/menu-3-item-2",
+          "slug": "menu-3-item-2"
+        }
+      ]
+    }
+  ],
+  "accountMenuItems": [
+    {
+      "title": "Account Menu 1",
+      "url": "/account-menu-1",
+      "slug": "account-menu-1"
+    },
+    {
+      "title": "Account Menu 2",
+      "url": "/account-menu-2",
+      "slug": "account-menu-2"
+    }
+  ],
+  "moreMenuItems": [
+    {
+      "title": "More 1",
+      "url": "/more-1",
+      "slug": "more-1"
+    },
+    {
+      "title": "More 2",
+      "url": "/more-2",
+      "slug": "more-2"
+    }
+  ]
+}

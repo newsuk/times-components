@@ -25,7 +25,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
   >
     <hr
       aria-hidden="true"
-      class="css-1px1mhi"
+      class="css-1768wde"
       data-testid="divider"
     />
   </li>
@@ -87,7 +87,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1px1mhi"
+          class="css-1768wde"
           data-testid="divider"
         />
       </li>
@@ -114,7 +114,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1px1mhi"
+          class="css-1768wde"
           data-testid="divider"
         />
       </li>
@@ -127,7 +127,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
   >
     <hr
       aria-hidden="true"
-      class="css-1px1mhi"
+      class="css-1768wde"
       data-testid="divider"
     />
   </li>
@@ -189,7 +189,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1px1mhi"
+          class="css-1768wde"
           data-testid="divider"
         />
       </li>
@@ -216,7 +216,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1px1mhi"
+          class="css-1768wde"
           data-testid="divider"
         />
       </li>
@@ -229,7 +229,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
   >
     <hr
       aria-hidden="true"
-      class="css-1px1mhi"
+      class="css-1768wde"
       data-testid="divider"
     />
   </li>
@@ -261,7 +261,7 @@ exports[`NavigationList renders the component without nested items 1`] = `
   >
     <hr
       aria-hidden="true"
-      class="css-1px1mhi"
+      class="css-1768wde"
       data-testid="divider"
     />
   </li>
@@ -288,7 +288,7 @@ exports[`NavigationList renders the component without nested items 1`] = `
   >
     <hr
       aria-hidden="true"
-      class="css-1px1mhi"
+      class="css-1768wde"
       data-testid="divider"
     />
   </li>
