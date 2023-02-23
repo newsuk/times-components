@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Secondary Menu Mobile should render the snapshot when dropdown is expanded 1`] = `
+<DocumentFragment>
+  <nav
+    aria-label="Secondary Navigation"
+    class="css-1e8qhdd"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul
+      role="list"
+    >
+      <div
+        class="css-1rgm3vu"
+      >
+        <div
+          class="css-3ae6t8"
+        >
+          <p
+            class="css-14vx0gz"
+          >
+            Home
+          </p>
+        </div>
+        <li
+          class="nk-menu-item css-bkfzpe"
+        >
+          <button
+            aria-expanded="false"
+            class="css-i6zo4w"
+            data-testid="menu-sub-button"
+            type="button"
+          >
+            <span
+              class="css-1jsivz"
+            >
+              See all
+            </span>
+            <svg
+              aria-hidden="true"
+              class="css-1tvoidw-EmotionIconBase ex0cdmw0"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </button>
+          <ul
+            class="css-n5iuvv"
+          />
+        </li>
+      </div>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
+
+exports[`Secondary Menu Mobile should render the snapshot when dropdown is not expanded 1`] = `
+<DocumentFragment>
+  <nav
+    aria-label="Secondary Navigation"
+    class="css-1e8qhdd"
+    data-testid="menu-container"
+    role="navigation"
+  >
+    <ul
+      role="list"
+    >
+      <div
+        class="css-1rgm3vu"
+      >
+        <div
+          class="css-3ae6t8"
+        >
+          <p
+            class="css-14vx0gz"
+          >
+            Home
+          </p>
+        </div>
+        <li
+          class="nk-menu-item css-bkfzpe"
+        >
+          <button
+            aria-expanded="false"
+            class="css-i6zo4w"
+            data-testid="menu-sub-button"
+            type="button"
+          >
+            <span
+              class="css-1jsivz"
+            >
+              See all
+            </span>
+            <svg
+              aria-hidden="true"
+              class="css-1tvoidw-EmotionIconBase ex0cdmw0"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </button>
+          <ul
+            class="css-n5iuvv"
+          />
+        </li>
+      </div>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;
