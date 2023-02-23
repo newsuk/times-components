@@ -3,8 +3,8 @@ export const sectionheaderStylePresets = {
       base: {
         display: 'inline-block',
         width: '100%',
-        borderBottom: '1px solid {{neutral030}}',
-        paddingBottom: '1rem'
+        borderBottom: '1px solid #E4E4E4',
+        paddingBottom: '0.8rem'
       }
     }
   };

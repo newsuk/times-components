@@ -1,10 +1,6 @@
 export const mastheadStylePresets = {
   mastheadTime: {
     base: {
-      fontFamily: '{{fonts.fontFamily030}}',
-      fontSize: '{{fonts.fontSize010}}',
-      fontWeight: '{{fonts.fontWeight010}}',
-      lineHeight: '{{fonts.fontLineHeight070}}',
       marginTop: '3px',
       marginBottom: '0.5rem',
       textTransform: 'capitalize',

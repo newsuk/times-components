@@ -17,7 +17,8 @@ export const EditionMasthead: React.FC<{ isSunday: boolean, todaysDate?: string 
 						prefix=''
 						suffix=''
 						overrides={{
-							stylePreset: 'mastheadTime'
+							stylePreset: 'mastheadTime',
+							typographyPreset: 'mastheadTime'
 						}}
 					/>
 					<LinkInline href='/' overrides={{stylePreset: 'mastheadLogo' }}>

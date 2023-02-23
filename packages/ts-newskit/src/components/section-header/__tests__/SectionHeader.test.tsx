@@ -12,9 +12,9 @@ describe('Section Header', () => {
   });
 
   it('should render Section Header text correctly', () => {
-    const { getAllByText } = render(
+    const { getByText } = render(
       <SectionHeader title={'Business'} />
     );
-    expect(getAllByText("Business").length).toEqual(1);
+    expect(getByText("Business")).toBeVisible();
   });
 });
