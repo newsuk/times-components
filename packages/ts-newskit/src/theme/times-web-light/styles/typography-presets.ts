@@ -44,19 +44,19 @@ export const typographyPresets = Object.fromEntries(
       fontStretch: 'normal'
     },
     sectionHeader010: {
-      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+      fontFamily: '{{fonts.fontFamily040.fontFamily}}',
+      fontSize: '{{fonts.fontSize115}}',
       fontWeight: '{{fonts.fontWeight040}}',
-      fontSize: '{{fonts.newFontSize020}}',
-      lineHeight: '{{fonts.newFontLineHeight010}}',
+      lineHeight: '{{fonts.fontLineHeight270}}',
       letterSpacing: '{{fonts.fontLetterSpacing020}}',
       fontStretch: 'normal',
       textAlign: 'center'
     },
     mastheadTime: {
-      fontFamily: '{{fonts.fontFamily030}}',
+      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
       fontSize: '{{fonts.fontSize010}}',
       fontWeight: '{{fonts.fontWeight010}}',
-      lineHeight: '{{fonts.newFontLineHeight010}}',
+      lineHeight: '{{fonts.fontLineHeight070}}',
       letterSpacing: '{{fonts.fontLetterSpacing020}}',
       fontStretch: 'normal',
       textAlign: 'center'
