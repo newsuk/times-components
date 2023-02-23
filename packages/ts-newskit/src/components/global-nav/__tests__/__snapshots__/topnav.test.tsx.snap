@@ -13,7 +13,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
         aria-controls="hamburgerMenu"
         aria-label="Open Menu"
         aria-selected="false"
-        class="css-13gr04u"
+        class="css-bk9nnv"
         data-testid="button"
         type="button"
       >
@@ -43,7 +43,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
           aria-controls="searchTimes"
           aria-label="Open Search"
           aria-selected="false"
-          class="css-13gr04u"
+          class="css-bk9nnv"
           data-testid="button"
           type="button"
         >
@@ -678,7 +678,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
         aria-controls="hamburgerMenu"
         aria-label="Open Menu"
         aria-selected="false"
-        class="css-13gr04u"
+        class="css-bk9nnv"
         data-testid="button"
         type="button"
       >
@@ -708,7 +708,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
           aria-controls="searchTimes"
           aria-label="Open Search"
           aria-selected="false"
-          class="css-13gr04u"
+          class="css-bk9nnv"
           data-testid="button"
           type="button"
         >

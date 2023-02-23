@@ -49,12 +49,12 @@ export const MenuScrollDivider = styled(Divider)`
 `;
 
 export const TopNavIcon = styled(IconButton)`
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   ${getColorCssFromTheme('color', 'inkInverse')};
 
-  ${getMediaQueryFromTheme('xs', 'md')} {
-    height: 50px;
-    width: 50px;
+  ${getMediaQueryFromTheme('md')} {
+    height: 60px;
+    width: 60px;
   }
 `;
