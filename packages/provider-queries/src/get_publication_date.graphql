@@ -1,5 +1,0 @@
-query GetPublicationDate($id: ID!) {
-  edition(id: $id) {
-		date
-  }
-}

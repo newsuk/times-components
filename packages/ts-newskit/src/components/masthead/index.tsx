@@ -4,7 +4,7 @@ import { TimesWebLightTheme } from '../../theme';
 import { MainHeader, Masthead } from './style';
 import { NewsKitTimesMasthead, NewsKitSundayTimesMasthead } from '../../assets';
 
-export const EditionMasthead: React.FC<{ isSunday: boolean }> = ( {isSunday} ) => {
+export const EditionMasthead: React.FC<{}> = () => {
 	return (
 		<ThemeProvider theme={TimesWebLightTheme}>
 			<MainHeader>
