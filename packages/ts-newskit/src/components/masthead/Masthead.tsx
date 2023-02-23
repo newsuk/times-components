@@ -1,9 +1,12 @@
 import React from 'react';
 import { ThemeProvider, DateTime, LinkInline } from 'newskit'
-import { MainHeader, Masthead, MastheadTitle, MastheadLogoImg } from './style'
+import { MainHeader, Masthead, MastheadTitle } from './style'
+
+import { TimesMasthead } from '../../assets';
 import { TimesWebLightTheme } from '../../theme';
 
 const todaysDate = (new Date()).toISOString();
+// const isSunday = ;
 
 export const EditionMasthead: React.FC<{}> = () => {
   return (
