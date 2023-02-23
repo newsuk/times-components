@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
+import '@testing-library/jest-dom';
 
 import { EditionMasthead } from '../index';
 
@@ -8,7 +9,6 @@ describe('EditionMasthead', () => {
     const { asFragment } = render(
       <EditionMasthead
         isSunday={false}
-        todaysDate="Wed Feb 22 2023 00:00:00 GMT+0000 (Greenwich Mean Time)"
       />
     );
     expect(asFragment()).toMatchSnapshot();
@@ -18,11 +18,9 @@ describe('EditionMasthead', () => {
     const { asFragment, getByText } = render(
       <EditionMasthead
         isSunday={true}
-        todaysDate="Sun Feb 26 2023 00:00:00 GMT+0000 (Greenwich Mean Time)"
       />
     );
     expect(asFragment()).toMatchSnapshot();
-    expect(getByText('Sunday February 26 2023')).toBeVisible();
   });
 
   it('should render date correctly', () => {
