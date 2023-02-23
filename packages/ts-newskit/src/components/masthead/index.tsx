@@ -5,6 +5,7 @@ import { MainHeader, Masthead } from './style';
 import { NewsKitTimesMasthead, NewsKitSundayTimesMasthead } from '../../assets';
 
 export const EditionMasthead: React.FC<{ isSunday: boolean }> = ( {isSunday} ) => {
+	const todaysDate = (new Date()).toISOString();
 	return (
 		<ThemeProvider theme={TimesWebLightTheme}>
 			<MainHeader>
