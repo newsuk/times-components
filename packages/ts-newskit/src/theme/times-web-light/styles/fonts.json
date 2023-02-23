@@ -23,11 +23,21 @@
     },
     "cropAdjustments": {}
   },
+  "newFontFamily": {
+    "fontFamily": "Roboto-Medium",
+    "cropConfig": {
+      "top": 0,
+      "bottom": 0
+    },
+    "cropAdjustments": {}
+  },
   "fontWeight010": 400,
   "fontWeight020": 500,
   "fontWeight030": 700,
   "fontSize010": "12px",
+  "newFontSize010": "13px",
   "fontSize020": "14px",
+  "newFontSize1": "15px",
   "fontSize030": "16px",
   "fontSize040": "18px",
   "fontSize050": "20px",
