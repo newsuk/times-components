@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.2.2...@times-components/ts-newskit@1.3.0) (2023-02-23)
+
+
+### Features
+
+* **TDP-3009:** top global nav new ([#3242](https://github.com/newsuk/times-components/issues/3242)) ([556614e](https://github.com/newsuk/times-components/commit/556614ecc517022e5e9fa6a7fa3b10d6f9ab3d2d))
+
+
+
+
+
 ## [1.2.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.2.1...@times-components/ts-newskit@1.2.2) (2023-02-20)
 
 **Note:** Version bump only for package @times-components/ts-newskit

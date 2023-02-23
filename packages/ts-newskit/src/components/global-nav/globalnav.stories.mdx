@@ -1,0 +1,24 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs'
+import { boolean } from "@storybook/addon-knobs"
+import { NewsKitProvider } from 'newskit';
+import { TimesWebLightTheme } from '../../theme';
+import { GlobalNav } from './index.tsx';
+
+<Meta
+  title="Newskit/Global Navigation"
+  component={GlobalNav}
+/>
+
+# Markdown Global Navigation component
+Only works at XS, SM, LG and XL viewports. Change the viewport above to see the content.
+
+Global Nav
+<Canvas>
+  <Story name="GlobalNav Logged In/Out">
+    <NewsKitProvider theme={TimesWebLightTheme}>
+      <GlobalNav isLoggedIn={boolean('Is logged in', false)} />
+    </NewsKitProvider>
+  </Story>
+</Canvas>
+
+
