@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeProvider, DateTime, LinkInline, ScreenReaderOnly, Headline } from 'newskit';
+import { ThemeProvider, DateTime, LinkInline, ScreenReaderOnly, Headline, Visible } from 'newskit';
 import { TimesWebLightTheme } from '../../theme';
 import { MainHeader, Masthead } from './styles';
 import { NewsKitTimesMasthead, NewsKitSundayTimesMasthead } from '../../assets';
@@ -13,6 +13,7 @@ export const EditionMasthead: React.FC<{
   return (
     <ThemeProvider theme={TimesWebLightTheme}>
       <MainHeader>
+		<Visible md lg xl>
         <Masthead>
           <ScreenReaderOnly id="sr-only">
 		  	<Headline headingAs="h1">The Times &amp; The Sunday Times Homepage</Headline>
@@ -33,6 +34,7 @@ export const EditionMasthead: React.FC<{
             )}
           </LinkInline>
         </Masthead>
+		</Visible>
       </MainHeader>
     </ThemeProvider>
   );
