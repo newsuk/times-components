@@ -13,6 +13,5 @@ export const stylePresets = {
   ...sectionheaderStylePresets,
   ...textStylePresets,
   ...menuStylePresets,
-  ...sectionheaderStylePresets,
   ...navStylePresets
 };
