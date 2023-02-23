@@ -7,7 +7,6 @@ import { NewsKitSundayTimesMasthead, NewsKitTimesMasthead } from '../../assets';
 const todaysDate = (new Date()).toISOString();
 
 export const MainMasthead: React.FC<{ isSunday: boolean }> = ( {isSunday} ) => {
-	// const ShowMasthead = (isSunday: boolean) => isSunday ? <SundayTimesMasthead /> : <TimesMasthead />;
 	return (
         <MainHeader>
             <Masthead>
@@ -22,8 +21,7 @@ export const MainMasthead: React.FC<{ isSunday: boolean }> = ( {isSunday} ) => {
                     }}
                 />
                 <LinkInline href='/' overrides={{stylePreset: 'mastheadLogo' }}>
-                    {/* {ShowMasthead(isSunday)} */}
-                    {(isSunday === true) ? <NewsKitSundayTimesMasthead /> : <NewsKitTimesMasthead />}
+                    {isSunday ? <NewsKitSundayTimesMasthead /> : <NewsKitTimesMasthead />}
                 </LinkInline>
             </Masthead>
         </MainHeader>
