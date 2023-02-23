@@ -4,8 +4,10 @@ import { TimesWebLightTheme } from '../../theme';
 import { MainHeader, Masthead } from './style';
 import { NewsKitTimesMasthead, NewsKitSundayTimesMasthead } from '../../assets';
 
-const dateNow = (new Date()).toISOString();
-export const EditionMasthead: React.FC<{ isSunday: boolean, todaysDate?: string }> = ({ isSunday, todaysDate = dateNow }) => {
+const todaysDate = (new Date()).toISOString();
+
+export const EditionMasthead: React.FC<{ isSunday: boolean }> = ({ isSunday }) => {
+	const ShowMasthead = isSunday ? <SundayTimesMasthead />:<TimesMasthead />;
 	return (
 		<ThemeProvider theme={TimesWebLightTheme}>
 			<MainHeader>
