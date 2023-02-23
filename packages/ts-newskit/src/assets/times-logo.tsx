@@ -28,8 +28,4 @@ const TimesMasthead = (props: any) => (
   </svg>
 )
 
-<<<<<<< HEAD
 export default TimesMasthead;
-=======
-export default TimesMasthead
->>>>>>> f710385c5 (TDP-3011 Resolved merge conflict)

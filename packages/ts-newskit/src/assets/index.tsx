@@ -7,10 +7,7 @@ import RoundedCloseIcon from './RoundedCloseIcon';
 import CloseIcon from '../assets/CloseIcon';
 import ChevronIcon from './ChevronIcon';
 import TimesMasthead from './times-logo';
-<<<<<<< HEAD
 import SundayTimesMasthead from './sunday-times-logo';
-=======
->>>>>>> f710385c5 (TDP-3011 Resolved merge conflict)
 
 export const NewsKitSearchIcon = customToNewsKitIcon(
   'NewskitSearchIcon',
@@ -46,3 +43,4 @@ export const NewsKitTimesMasthead = customToNewsKitIcon('NewskitTimesMasthead', 
 export const NewsKitSundayTimesMasthead = customToNewsKitIcon('NewskitSundayTimesMasthead', props => (
   <SundayTimesMasthead {...props} />
 ));
+
