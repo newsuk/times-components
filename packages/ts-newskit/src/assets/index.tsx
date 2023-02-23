@@ -1,10 +1,10 @@
 import React from 'react';
 import { customToNewsKitIcon } from 'newskit';
-import SearchIcon from '../assets/SearchIcon';
-import BurgerIcon from '../assets/BurgerIcon';
+import SearchIcon from './SearchIcon';
+import BurgerIcon from './BurgerIcon';
 import Masthead from './Masthead';
 import RoundedCloseIcon from './RoundedCloseIcon';
-import CloseIcon from '../assets/CloseIcon';
+import CloseIcon from './CloseIcon';
 import ChevronIcon from './ChevronIcon';
 import TimesMasthead from './times-logo';
 import SundayTimesMasthead from './sunday-times-logo';
