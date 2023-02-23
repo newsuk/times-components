@@ -36,11 +36,12 @@ export const NewsKitChevronIcon = customToNewsKitIcon(
   props => <ChevronIcon {...props} />
 );
 
-export const NewsKitTimesMasthead = customToNewsKitIcon('NewskitTimesMasthead', props => (
-  <TimesMasthead {...props} />
-));
+export const NewsKitTimesMasthead = customToNewsKitIcon(
+  'NewskitTimesMasthead',
+  props => <TimesMasthead {...props} />
+);
 
-export const NewsKitSundayTimesMasthead = customToNewsKitIcon('NewskitSundayTimesMasthead', props => (
-  <SundayTimesMasthead {...props} />
-));
-
+export const NewsKitSundayTimesMasthead = customToNewsKitIcon(
+  'NewskitSundayTimesMasthead',
+  props => <SundayTimesMasthead {...props} />
+);

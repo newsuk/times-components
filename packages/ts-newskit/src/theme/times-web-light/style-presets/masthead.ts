@@ -14,7 +14,7 @@ export const mastheadStylePresets = {
       height: 'auto',
       margin: '0 auto 0.8rem',
       display: 'block',
-      width: '436px',
+      width: '436px'
     }
   }
 };

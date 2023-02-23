@@ -69,15 +69,6 @@ export const typographyPresets = Object.fromEntries(
       letterSpacing: '{{fonts.fontLetterSpacing020}}',
       fontStretch: 'normal',
       textAlign: 'center'
-    },
-    mastheadTime: {
-      fontFamily: '{{fonts.fontFamily030}}',
-      fontSize: '{{fonts.fontSize010}}',
-      fontWeight: '{{fonts.fontWeight010}}',
-      lineHeight: '{{fonts.newFontLineHeight010}}',
-      letterSpacing: '{{fonts.fontLetterSpacing020}}',
-      fontStretch: 'normal',
-      textAlign: 'center'
     }
   }).map(([key, value]) => {
     if (

@@ -3,10 +3,10 @@
 exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
 <DocumentFragment>
   <header
-    class="sc-bdVaJa fDzWQF"
+    class="sc-bdVaJa bvQdlr"
   >
     <div
-      class="sc-bwzfXH kyczjX"
+      class="sc-bwzfXH itgEXC"
     >
       <span
         class="css-13791zy"
@@ -20,9 +20,9 @@ exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
         class="css-1oteowz"
       >
         <span
-          class="css-u8o4qj"
+          class="css-1kdar37"
         >
-          Wednesday February 22 2023 
+          Sunday February 26 2023 
         </span>
       </time>
       <a
@@ -111,10 +111,10 @@ exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
 exports[`EditionMasthead should render The Times masthead 1`] = `
 <DocumentFragment>
   <header
-    class="sc-bdVaJa fDzWQF"
+    class="sc-bdVaJa bvQdlr"
   >
     <div
-      class="sc-bwzfXH kyczjX"
+      class="sc-bwzfXH itgEXC"
     >
       <span
         class="css-13791zy"
@@ -128,7 +128,7 @@ exports[`EditionMasthead should render The Times masthead 1`] = `
         class="css-1oteowz"
       >
         <span
-          class="css-u8o4qj"
+          class="css-1kdar37"
         >
           Wednesday February 22 2023 
         </span>
