@@ -22,7 +22,7 @@ const NavigationList: React.FC<{
                 }
                 overrides={{
                   stylePreset: 'menuItemL1',
-                  typographyPreset: 'newPreset020'
+                  typographyPreset: 'newPreset040'
                 }}
               >
                 {item.items.map(i => (
@@ -33,7 +33,7 @@ const NavigationList: React.FC<{
                       id={`vertical-${i.slug}`}
                       overrides={{
                         stylePreset: 'menuItemL2',
-                        typographyPreset: 'newPreset020'
+                        typographyPreset: 'newPreset040'
                       }}
                     >
                       {i.title}
@@ -52,7 +52,7 @@ const NavigationList: React.FC<{
                 id={`vertical-${item.slug}`}
                 overrides={{
                   stylePreset: 'menuItemL1',
-                  typographyPreset: 'newPreset020'
+                  typographyPreset: 'newPreset040'
                 }}
               >
                 {item.title}

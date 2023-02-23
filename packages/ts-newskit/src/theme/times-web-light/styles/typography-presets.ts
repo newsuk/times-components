@@ -20,6 +20,38 @@ export const typographyPresets = Object.fromEntries(
       fontStretch: 'normal',
       whiteSpace: 'nowrap'
     },
+    newPreset020: {
+      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight020}}',
+      fontSize: '{{fonts.newFontSize1}}',
+      lineHeight: '{{fonts.fontLineHeight030}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    newPreset030: {
+      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight020}}',
+      fontSize: '{{fonts.newFontSize010}}',
+      lineHeight: '{{fonts.fontLineHeight030}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    newPreset040: {
+      fontFamily: 'Roboto-Medium',
+      fontWeight: '{{fonts.fontWeight020}}',
+      fontSize: '15px',
+      lineHeight: '{{fonts.fontLineHeight070}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    newPreset050: {
+      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight010}}',
+      fontSize: '{{fonts.fontSize020}}',
+      lineHeight: '{{fonts.fontLineHeight030}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
     editorialHeadline035: {
       fontFamily: '{{fonts.fontFamily010.fontFamily}}',
       fontWeight: '{{fonts.fontWeight030}}',

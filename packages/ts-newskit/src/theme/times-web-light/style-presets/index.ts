@@ -4,6 +4,7 @@ import { menuStylePresets } from './menu';
 import { navStylePresets } from './navigation';
 import { pageStylePresets } from './page';
 import { sectionheaderStylePresets } from './sectionheader';
+import { secondaryNavigationStylePresets } from './secondary-nav';
 import { textStylePresets } from './text';
 
 export const stylePresets = {
@@ -13,5 +14,6 @@ export const stylePresets = {
   ...sectionheaderStylePresets,
   ...textStylePresets,
   ...menuStylePresets,
-  ...navStylePresets
+  ...navStylePresets,
+  ...secondaryNavigationStylePresets
 };
