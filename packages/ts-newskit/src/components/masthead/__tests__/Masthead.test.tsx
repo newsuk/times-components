@@ -15,7 +15,7 @@ describe('EditionMasthead', () => {
   });
 
   it('should render The Sunday Times masthead', () => {
-    const { asFragment, getByText } = render(
+    const { asFragment } = render(
       <EditionMasthead
         isSunday={true}
       />
