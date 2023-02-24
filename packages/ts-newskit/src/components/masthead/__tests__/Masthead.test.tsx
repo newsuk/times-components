@@ -39,10 +39,7 @@ describe('EditionMasthead', () => {
     const dateNow = new Date();
     const year = dateNow.getFullYear();
     const month = dateNow.toLocaleString('default', { month: 'long' });
-    const dayNumber = dateNow
-      .getDate()
-      .toString()
-      .padStart(2, '0');
+    const dayNumber = dateNow.getDate();
     const day = dateNow.toLocaleString('default', { weekday: 'long' });
     const today = `${day} ${month} ${dayNumber} ${year}`;
 
