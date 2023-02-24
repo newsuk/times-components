@@ -30,7 +30,7 @@ Hamburger Menu
 <Canvas>
   <Story name="Hamburger Menu">
     <ThemeProvider theme={TimesWebLightTheme}>
-      <HamburgerMenu data={data} loggedIn={boolean('Is logged in', false)} />
+      <HamburgerMenu data={data} isLoggedIn={boolean('Is logged in', false)} />
     </ThemeProvider>
   </Story>
 </Canvas>
@@ -40,7 +40,7 @@ Hamburger Menu Logged In - Buttons visible on XS and SM screens
 <Canvas>
   <Story name="HamburgerMenu Logged in">
     <ThemeProvider theme={TimesWebLightTheme}>
-      <HamburgerMenu data={data} loggedIn={true} />
+      <HamburgerMenu data={data} isLoggedIn={true} />
     </ThemeProvider>
   </Story>
 </Canvas>
@@ -50,7 +50,7 @@ Hamburger Menu Logged out -  Buttons available on XS and SM screens
 <Canvas>
   <Story name="HamburgerMenu Logged out">
     <ThemeProvider theme={TimesWebLightTheme}>
-      <HamburgerMenu data={data} loggedIn={false} />
+      <HamburgerMenu data={data} isLoggedIn={false} />
     </ThemeProvider>
   </Story>
 </Canvas>
@@ -105,6 +105,8 @@ Hamburger Menu - With toggles for Logged in state and data object.
 
 <Canvas>
   <Story name="HamburgerMenu - Data edit">
-    <HamburgerMenu data={object('data', data)} loggedIn={boolean('Is logged in', false)} />
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <HamburgerMenu data={object('data', data)} isLoggedIn={boolean('Is logged in', false)} />
+    </ThemeProvider>
   </Story>
 </Canvas>
