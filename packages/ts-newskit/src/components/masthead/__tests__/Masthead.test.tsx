@@ -1,22 +1,12 @@
 import React from 'react';
-import { render, cleanup } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 import EditionMasthead from '../index';
-import { useBreakpointKey } from 'newskit';
-jest.mock('newskit', () => ({
-  ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl')
-}));
 
 describe('EditionMasthead', () => {
-  afterEach(() => {
-    jest.clearAllMocks();
-    cleanup();
-  });
 
   it('should render The Times masthead', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
     const { asFragment } = render(
       <EditionMasthead
         isSunday={false}
@@ -27,7 +17,6 @@ describe('EditionMasthead', () => {
   });
 
   it('should render The Sunday Times masthead', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
     const { asFragment } = render(
       <EditionMasthead
         isSunday={true}
@@ -38,7 +27,6 @@ describe('EditionMasthead', () => {
   });
 
   it('should render date correctly', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
     const { getByText } = render(
       <EditionMasthead
         isSunday={false}
@@ -50,7 +38,6 @@ describe('EditionMasthead', () => {
   });
 
   it('should render todays date if no date passed', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
     const dateNow = new Date();
     const year = dateNow.getFullYear();
     const month = dateNow.toLocaleString('default', { month: 'long' });
