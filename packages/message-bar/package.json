@@ -1,6 +1,6 @@
 {
   "name": "@times-components/message-bar",
-  "version": "0.7.17",
+  "version": "0.7.18",
   "description": "A component for showing user notifications",
   "main": "dist/index",
   "dev": "src/index",
@@ -57,10 +57,10 @@
     "react-dom": ">=16.9"
   },
   "dependencies": {
-    "@times-components/icons": "2.19.16",
-    "@times-components/responsive": "0.14.14",
-    "@times-components/ts-styleguide": "1.39.3",
-    "@times-components/utils": "6.15.15",
+    "@times-components/icons": "2.19.17",
+    "@times-components/responsive": "0.14.15",
+    "@times-components/ts-styleguide": "1.40.0",
+    "@times-components/utils": "6.15.16",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },

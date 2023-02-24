@@ -840,10 +840,10 @@ exports[`full article with style 1`] = `
                   <div
                     className="c8"
                     color="#1D1D1B"
-                    fontFamily="GillSansMTStd-Medium"
+                    fontFamily="Roboto-Regular"
                     fontSize={12}
                     fontWeight="400"
-                    letterSpacing={1}
+                    letterSpacing={0.5}
                     lineHeight="12px"
                     marginBottom={0}
                     marginTop={-1}
@@ -890,8 +890,8 @@ exports[`full article with style 1`] = `
                     <div
                       className="c8"
                       color="#696969"
-                      fontFamily="GillSansMTStd-Medium"
-                      fontSize={13}
+                      fontFamily="Roboto-Regular"
+                      fontSize={12}
                       lineHeight="15px"
                     >
                       <ArticleBylineWithLinks />
@@ -911,8 +911,8 @@ exports[`full article with style 1`] = `
                     <div
                       className="c8"
                       color="#696969"
-                      fontFamily="GillSansMTStd-Medium"
-                      fontSize={13}
+                      fontFamily="Roboto-Regular"
+                      fontSize={12}
                       lineHeight="15px"
                     >
                       <DatePublication />
@@ -942,8 +942,8 @@ exports[`full article with style 1`] = `
                 <div
                   className="c8"
                   color="#696969"
-                  fontFamily="GillSansMTStd-Medium"
-                  fontSize={13}
+                  fontFamily="Roboto-Regular"
+                  fontSize={12}
                   lineHeight="15px"
                 >
                   <ArticleBylineWithLinks />
@@ -955,8 +955,8 @@ exports[`full article with style 1`] = `
                 <div
                   className="c8"
                   color="#696969"
-                  fontFamily="GillSansMTStd-Medium"
-                  fontSize={13}
+                  fontFamily="Roboto-Regular"
+                  fontSize={12}
                   lineHeight="15px"
                 >
                   <DatePublication />
@@ -1077,8 +1077,8 @@ exports[`full article with style 1`] = `
                       <div
                         className="c8"
                         color="#696969"
-                        fontFamily="GillSansMTStd-Medium"
-                        fontSize={13}
+                        fontFamily="Roboto-Regular"
+                        fontSize={12}
                         lineHeight="17px"
                       >
                         This is video caption

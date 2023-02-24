@@ -155,7 +155,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
               padding: 0;
               color: ${colours.functional.primary};
               font-family: ${fonts.supporting};
-              font-size: 14px;
+              font-size: 13px;
               line-height: 14px;
               font-weight: normal;
               text-align: center;
@@ -196,7 +196,7 @@ export const WidgetContainer = styled(WidgetContainerBase)`
 
               @media (min-width: ${breakpoints.medium}px) {
                 width: 50px;
-                font-size: 16px;
+                font-size: 15px;
                 line-height: 16px;
               }
             }

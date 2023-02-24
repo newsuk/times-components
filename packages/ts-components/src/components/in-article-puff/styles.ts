@@ -54,9 +54,8 @@ export const Label = styled.div<{ hasImage?: boolean; sectionColour: string }>`
   font-family: ${fonts.supporting};
   font-size: 12px;
 
-  letter-spacing: 0.1em;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 `;
 
 export const Headline = styled.h4<{ hasImage?: boolean }>`

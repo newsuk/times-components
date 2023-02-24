@@ -10,7 +10,7 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 }
 
 .c4 {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 14px;
   line-height: 20px;
   padding: 14px 16px;
@@ -28,7 +28,7 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
   font-size: 12px;
   line-height: 14px;
   color: #402f7a;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-weight: normal;
   text-transform: uppercase;
   -webkit-letter-spacing: 1px;
@@ -70,7 +70,7 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 .c0 .pa-medaltable .pa_MedalTableView_medaltable table thead {
   color: #1D1D1B;
   line-height: 48px;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 14px;
 }
 
@@ -102,7 +102,7 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 }
 
 .c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr td:first-child {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   color: #402f7a;
 }
 
@@ -118,7 +118,7 @@ exports[`<OlympicsMedalTable> click show all 1`] = `
 .c0 .pa-medaltable .pa_OdfFooter_ctr {
   position: relative;
   top: 60px;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   color: #1D1D1B;
 }
 
@@ -192,7 +192,7 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 }
 
 .c4 {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 14px;
   line-height: 20px;
   padding: 14px 16px;
@@ -210,7 +210,7 @@ exports[`<OlympicsMedalTable> renders 1`] = `
   font-size: 12px;
   line-height: 14px;
   color: #402f7a;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-weight: normal;
   text-transform: uppercase;
   -webkit-letter-spacing: 1px;
@@ -252,7 +252,7 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 .c0 .pa-medaltable .pa_MedalTableView_medaltable table thead {
   color: #1D1D1B;
   line-height: 48px;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 14px;
 }
 
@@ -284,7 +284,7 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 }
 
 .c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr td:first-child {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   color: #402f7a;
 }
 
@@ -300,7 +300,7 @@ exports[`<OlympicsMedalTable> renders 1`] = `
 .c0 .pa-medaltable .pa_OdfFooter_ctr {
   position: relative;
   top: 60px;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   color: #1D1D1B;
 }
 
@@ -374,7 +374,7 @@ exports[`<OlympicsMedalTable> renders default keys 1`] = `
 }
 
 .c4 {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 14px;
   line-height: 20px;
   padding: 14px 16px;
@@ -392,7 +392,7 @@ exports[`<OlympicsMedalTable> renders default keys 1`] = `
   font-size: 12px;
   line-height: 14px;
   color: #402f7a;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-weight: normal;
   text-transform: uppercase;
   -webkit-letter-spacing: 1px;
@@ -434,7 +434,7 @@ exports[`<OlympicsMedalTable> renders default keys 1`] = `
 .c0 .pa-medaltable .pa_MedalTableView_medaltable table thead {
   color: #1D1D1B;
   line-height: 48px;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 14px;
 }
 
@@ -466,7 +466,7 @@ exports[`<OlympicsMedalTable> renders default keys 1`] = `
 }
 
 .c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr td:first-child {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   color: #402f7a;
 }
 
@@ -482,7 +482,7 @@ exports[`<OlympicsMedalTable> renders default keys 1`] = `
 .c0 .pa-medaltable .pa_OdfFooter_ctr {
   position: relative;
   top: 60px;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   color: #1D1D1B;
 }
 
@@ -556,7 +556,7 @@ exports[`<OlympicsMedalTable> renders outside of article 1`] = `
 }
 
 .c4 {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 14px;
   line-height: 20px;
   padding: 14px 16px;
@@ -574,7 +574,7 @@ exports[`<OlympicsMedalTable> renders outside of article 1`] = `
   font-size: 12px;
   line-height: 14px;
   color: #402f7a;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-weight: normal;
   text-transform: uppercase;
   -webkit-letter-spacing: 1px;
@@ -616,7 +616,7 @@ exports[`<OlympicsMedalTable> renders outside of article 1`] = `
 .c0 .pa-medaltable .pa_MedalTableView_medaltable table thead {
   color: #1D1D1B;
   line-height: 48px;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 14px;
 }
 
@@ -648,7 +648,7 @@ exports[`<OlympicsMedalTable> renders outside of article 1`] = `
 }
 
 .c0 .pa-medaltable .pa_MedalTableView_medaltable tbody tr td:first-child {
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   color: #402f7a;
 }
 
@@ -664,7 +664,7 @@ exports[`<OlympicsMedalTable> renders outside of article 1`] = `
 .c0 .pa-medaltable .pa_OdfFooter_ctr {
   position: relative;
   top: 60px;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   color: #1D1D1B;
 }
 

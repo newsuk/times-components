@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.39.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.38.0...@times-components/article-comments@0.39.0) (2023-02-23)
+
+
+### Features
+
+* **TDP-2979:** updated times component to use Roboto ([#3244](https://github.com/newsuk/times-components/issues/3244)) ([45ba0ab](https://github.com/newsuk/times-components/commit/45ba0aba96f65670b4f24913398000667fc1f316))
+
+
+
+
+
 # [0.38.0](https://github.com/newsuk/times-components/compare/@times-components/article-comments@0.37.2...@times-components/article-comments@0.38.0) (2023-02-08)
 
 

@@ -209,7 +209,7 @@ exports[`1. an article list header 1`] = `
         className="c5"
         color="#696969"
         fontFamily="TimesDigitalW04-RegularSC"
-        fontSize={14}
+        fontSize={13}
         lineHeight="14px"
         marginTop="5px"
       >
@@ -230,9 +230,8 @@ exports[`1. an article list header 1`] = `
         </div>
         <TextLink
           color="#006699"
-          fontFamily="GillSansMTStd-Medium"
-          fontSize={15}
-          lineHeight={17}
+          fontFamily="Roboto-Regular"
+          fontSize={14}
           paddingLeft="5px"
           textDecorationLine="none"
         >

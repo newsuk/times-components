@@ -25,7 +25,7 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
     >
       <div>
         <div
-          class="sc-fjdhpX bCDTJX"
+          class="sc-fjdhpX ixGEuo"
         >
           interactive
         </div>
@@ -49,7 +49,7 @@ exports[`InArticlePuff should render optional fields correctly 1`] = `
         href="https://www.thetimes.co.uk"
       >
         <div
-          class="sc-htpNat irNLqr"
+          class="sc-htpNat fyASJZ"
         >
           Read the full article
         </div>
@@ -76,7 +76,7 @@ exports[`InArticlePuff should render required fields correctly 1`] = `
     >
       <div>
         <div
-          class="sc-fjdhpX gKXrO"
+          class="sc-fjdhpX cWEcCh"
         >
           interactive
         </div>
@@ -95,7 +95,7 @@ exports[`InArticlePuff should render required fields correctly 1`] = `
         href="https://www.thetimes.co.uk"
       >
         <div
-          class="sc-htpNat irNLqr"
+          class="sc-htpNat fyASJZ"
         >
           Read more
         </div>
