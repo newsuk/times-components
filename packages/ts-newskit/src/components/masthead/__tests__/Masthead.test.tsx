@@ -4,7 +4,6 @@ import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 describe('EditionMasthead', () => {
-
   it('should render The Times masthead', () => {
     const { asFragment } = render(
       <EditionMasthead
@@ -39,16 +38,15 @@ describe('EditionMasthead', () => {
   it('should render todays date if no date passed', () => {
     const dateNow = new Date();
     const year = dateNow.getFullYear();
-    const month = dateNow.toLocaleString('default', { month: 'long' })
-    const dayNumber = dateNow.getDate().toString().padStart(2, "0");
-    const day = dateNow.toLocaleString('default', { weekday: 'long' })
+    const month = dateNow.toLocaleString('default', { month: 'long' });
+    const dayNumber = dateNow
+      .getDate()
+      .toString()
+      .padStart(2, '0');
+    const day = dateNow.toLocaleString('default', { weekday: 'long' });
     const today = `${day} ${month} ${dayNumber} ${year}`;
 
-    const { getByText } = render(
-      <EditionMasthead
-        isSunday={false}
-      />
-    );
+    const { getByText } = render(<EditionMasthead isSunday={false} />);
     expect(getByText(today)).toBeInTheDocument();
   });
 });
