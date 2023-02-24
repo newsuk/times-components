@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.10.0](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.9.0...@times-components/video-label@2.10.0) (2023-02-24)
+
+
+### Features
+
+* **TDP-3274:** minor fix for roboto on articles ([#3249](https://github.com/newsuk/times-components/issues/3249)) ([a961c52](https://github.com/newsuk/times-components/commit/a961c5234ea488a5933e66a12f13317367ca2a38))
+
+
+
+
+
 # [2.9.0](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.8.3...@times-components/video-label@2.9.0) (2023-02-23)
 
 
