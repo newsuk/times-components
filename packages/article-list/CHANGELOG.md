@@ -3,6 +3,111 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.15.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.14.3...@times-components/article-list@9.15.0) (2023-02-23)
+
+
+### Features
+
+* **TDP-2979:** updated times component to use Roboto ([#3244](https://github.com/newsuk/times-components/issues/3244)) ([45ba0ab](https://github.com/newsuk/times-components/commit/45ba0aba96f65670b4f24913398000667fc1f316))
+
+
+
+
+
+## [9.14.3](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.14.2...@times-components/article-list@9.14.3) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.14.2](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.14.1...@times-components/article-list@9.14.2) (2023-02-02)
+
+
+### Reverts
+
+* Revert "feat(TD-2979): replace gillSans with roboto (#3226)" (#3228) ([834129f](https://github.com/newsuk/times-components/commit/834129f471197d50b1446a460e383910444aba15)), closes [#3226](https://github.com/newsuk/times-components/issues/3226) [#3228](https://github.com/newsuk/times-components/issues/3228)
+
+
+
+
+
+## [9.14.1](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.14.0...@times-components/article-list@9.14.1) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+# [9.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.13.12...@times-components/article-list@9.14.0) (2023-02-01)
+
+
+### Features
+
+* **TD-2979:** replace gillSans with roboto ([#3226](https://github.com/newsuk/times-components/issues/3226)) ([29f701e](https://github.com/newsuk/times-components/commit/29f701ea96c7e06767c23e01496f343b6d7a7db1))
+
+
+
+
+
+## [9.13.12](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.13.11...@times-components/article-list@9.13.12) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.13.11](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.13.10...@times-components/article-list@9.13.11) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.13.10](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.13.9...@times-components/article-list@9.13.10) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.13.9](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.13.8...@times-components/article-list@9.13.9) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.13.8](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.13.7...@times-components/article-list@9.13.8) (2023-01-23)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.13.7](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.13.6...@times-components/article-list@9.13.7) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.13.6](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.13.5...@times-components/article-list@9.13.6) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
 ## [9.13.5](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.13.4...@times-components/article-list@9.13.5) (2023-01-04)
 
 **Note:** Version bump only for package @times-components/article-list

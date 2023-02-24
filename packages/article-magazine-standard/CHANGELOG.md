@@ -3,6 +3,131 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.65.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.64.0...@times-components/article-magazine-standard@3.65.0) (2023-02-23)
+
+
+### Features
+
+* **TDP-2979:** updated times component to use Roboto ([#3244](https://github.com/newsuk/times-components/issues/3244)) ([45ba0ab](https://github.com/newsuk/times-components/commit/45ba0aba96f65670b4f24913398000667fc1f316))
+
+
+
+
+
+# [3.64.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.63.2...@times-components/article-magazine-standard@3.64.0) (2023-02-08)
+
+
+### Features
+
+* **TDP-3135:** Remove Blue RNC Banner ([#3231](https://github.com/newsuk/times-components/issues/3231)) ([b7e6699](https://github.com/newsuk/times-components/commit/b7e6699ddc4b3d674d1ef5d259b4fd4ea8dc6fe6))
+
+
+
+
+
+## [3.63.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.63.1...@times-components/article-magazine-standard@3.63.2) (2023-02-02)
+
+
+### Reverts
+
+* Revert "feat(TD-2979): replace gillSans with roboto (#3226)" (#3228) ([834129f](https://github.com/newsuk/times-components/commit/834129f471197d50b1446a460e383910444aba15)), closes [#3226](https://github.com/newsuk/times-components/issues/3226) [#3228](https://github.com/newsuk/times-components/issues/3228)
+
+
+
+
+
+## [3.63.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.63.0...@times-components/article-magazine-standard@3.63.1) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+# [3.63.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.62.4...@times-components/article-magazine-standard@3.63.0) (2023-02-01)
+
+
+### Features
+
+* **TD-2979:** replace gillSans with roboto ([#3226](https://github.com/newsuk/times-components/issues/3226)) ([29f701e](https://github.com/newsuk/times-components/commit/29f701ea96c7e06767c23e01496f343b6d7a7db1))
+
+
+
+
+
+## [3.62.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.62.3...@times-components/article-magazine-standard@3.62.4) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.62.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.62.2...@times-components/article-magazine-standard@3.62.3) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.62.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.62.1...@times-components/article-magazine-standard@3.62.2) (2023-01-27)
+
+
+### Bug Fixes
+
+* **TDP-3095:** changed uppercase to none for style section heading in… ([#3222](https://github.com/newsuk/times-components/issues/3222)) ([6a719b8](https://github.com/newsuk/times-components/commit/6a719b8f2fd5fea63b7fa62b49bbfa83aafb0e30))
+
+
+
+
+
+## [3.62.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.62.0...@times-components/article-magazine-standard@3.62.1) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+# [3.62.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.61.2...@times-components/article-magazine-standard@3.62.0) (2023-01-24)
+
+
+### Features
+
+* **TDP-3018:** Added lcpItem to video component ([#3217](https://github.com/newsuk/times-components/issues/3217)) ([5f66e47](https://github.com/newsuk/times-components/commit/5f66e47be1e9bc6008a681d87386ab9cb3f0c40c))
+
+
+
+
+
+## [3.61.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.61.1...@times-components/article-magazine-standard@3.61.2) (2023-01-23)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+## [3.61.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.61.0...@times-components/article-magazine-standard@3.61.1) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
+# [3.61.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.60.6...@times-components/article-magazine-standard@3.61.0) (2023-01-12)
+
+
+### Features
+
+* **TDP-2852:** Replaced Tiempo, Flama and Century fonts with Times Modern ([#3213](https://github.com/newsuk/times-components/issues/3213)) ([f727c75](https://github.com/newsuk/times-components/commit/f727c75fa0fea754b341205966de7c5ae1fc2240))
+
+
+
+
+
 ## [3.60.6](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.60.5...@times-components/article-magazine-standard@3.60.6) (2023-01-05)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard

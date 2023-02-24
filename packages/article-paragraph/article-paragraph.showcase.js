@@ -88,5 +88,5 @@ export default {
       type: "story"
     }
   ],
-  name: "Primitives/Article Paragraph|Dropcap"
+  name: "PRIMITIVES ARTICLE PARAGRAPH/Dropcap"
 };

@@ -4,18 +4,18 @@ exports[`1. caption with container and text styles 1`] = `
 <style>
 .IS1 {
   color: green;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
+  font-family: Roboto-Regular;
+  font-size: 12;
   line-height: 17px;
 }
 
 .IS2 {
   color: green;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 9;
   line-height: 17px;
   font-weight: 400;
-  letter-spacing: 1;
+  letter-spacing: 0.5;
 }
 
 .IS3 {
@@ -51,18 +51,18 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
 <style>
 .IS1 {
   color: green;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 10;
   line-height: 17px;
 }
 
 .IS2 {
   color: green;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 8;
   line-height: 17px;
   font-weight: 400;
-  letter-spacing: 1;
+  letter-spacing: 0.5;
 }
 
 .IS3 {
@@ -98,18 +98,18 @@ exports[`3. caption with only container styles 1`] = `
 <style>
 .IS1 {
   color: #696969;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13;
+  font-family: Roboto-Regular;
+  font-size: 12;
   line-height: 17px;
 }
 
 .IS2 {
   color: #333333;
-  font-family: GillSansMTStd-Medium;
+  font-family: Roboto-Regular;
   font-size: 9;
   line-height: 17px;
   font-weight: 400;
-  letter-spacing: 1;
+  letter-spacing: 0.5;
 }
 
 .IS3 {

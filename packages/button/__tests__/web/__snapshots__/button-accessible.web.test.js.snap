@@ -9,13 +9,13 @@ exports[`accessible button 1`] = `
       "borderRadius": 2,
       "color": "#FFFFFF",
       "cursor": "pointer",
-      "fontFamily": "GillSansMTStd-Medium",
-      "fontSize": 16,
+      "fontFamily": "Roboto-Regular",
+      "fontSize": 15,
       "height": 45,
       "justifyContent": "center",
       "lineHeight": 0,
       "minWidth": 100,
-      "paddingTop": 4,
+      "paddingTop": 2,
       "width": 160,
     }
   }

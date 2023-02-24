@@ -3,6 +3,113 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.95.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.95.8...@times-components/article-skeleton@1.95.9) (2023-02-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.95.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.95.7...@times-components/article-skeleton@1.95.8) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.95.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.95.6...@times-components/article-skeleton@1.95.7) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.95.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.95.5...@times-components/article-skeleton@1.95.6) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.95.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.95.4...@times-components/article-skeleton@1.95.5) (2023-02-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.95.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.95.3...@times-components/article-skeleton@1.95.4) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.95.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.95.2...@times-components/article-skeleton@1.95.3) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.95.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.95.1...@times-components/article-skeleton@1.95.2) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.95.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.95.0...@times-components/article-skeleton@1.95.1) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.95.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.94.3...@times-components/article-skeleton@1.95.0) (2023-01-24)
+
+
+### Features
+
+* **TDP-3018:** Added lcpItem to video component ([#3217](https://github.com/newsuk/times-components/issues/3217)) ([5f66e47](https://github.com/newsuk/times-components/commit/5f66e47be1e9bc6008a681d87386ab9cb3f0c40c))
+
+
+
+
+
+## [1.94.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.94.2...@times-components/article-skeleton@1.94.3) (2023-01-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.94.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.94.1...@times-components/article-skeleton@1.94.2) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.94.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.94.0...@times-components/article-skeleton@1.94.1) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 # [1.94.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.93.5...@times-components/article-skeleton@1.94.0) (2023-01-05)
 
 

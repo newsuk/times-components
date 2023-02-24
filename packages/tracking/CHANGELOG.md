@@ -3,6 +3,85 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.17.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.16.1...@times-components/tracking@2.17.0) (2023-02-08)
+
+
+### Features
+
+* **TDP-3135:** Remove Blue RNC Banner ([#3231](https://github.com/newsuk/times-components/issues/3231)) ([b7e6699](https://github.com/newsuk/times-components/commit/b7e6699ddc4b3d674d1ef5d259b4fd4ea8dc6fe6))
+
+
+
+
+
+## [2.16.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.16.0...@times-components/tracking@2.16.1) (2023-02-02)
+
+
+### Bug Fixes
+
+* **TDP-3127:** Made Times2 Todays Section Title Uppercase ([#3227](https://github.com/newsuk/times-components/issues/3227)) ([c6a188a](https://github.com/newsuk/times-components/commit/c6a188af346d99ce70354f44b4c12c70fc31d3c0))
+
+
+
+
+
+# [2.16.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.5...@times-components/tracking@2.16.0) (2023-01-31)
+
+
+### Features
+
+* **TDP-3047:** Add lcpItem to Author Image BG ([#3224](https://github.com/newsuk/times-components/issues/3224)) ([f359fb2](https://github.com/newsuk/times-components/commit/f359fb28389d9ece227def02c4e6e4706b695f5c))
+
+
+
+
+
+## [2.15.5](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.4...@times-components/tracking@2.15.5) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.15.4](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.3...@times-components/tracking@2.15.4) (2023-01-27)
+
+
+### Bug Fixes
+
+* **TDP-3095:** changed uppercase to none for style section heading in… ([#3222](https://github.com/newsuk/times-components/issues/3222)) ([6a719b8](https://github.com/newsuk/times-components/commit/6a719b8f2fd5fea63b7fa62b49bbfa83aafb0e30))
+
+
+
+
+
+## [2.15.3](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.2...@times-components/tracking@2.15.3) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.15.2](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.1...@times-components/tracking@2.15.2) (2023-01-23)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
+## [2.15.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.15.0...@times-components/tracking@2.15.1) (2023-01-19)
+
+
+### Bug Fixes
+
+* **TDP-2976:** update article query ([#3215](https://github.com/newsuk/times-components/issues/3215)) ([936b45a](https://github.com/newsuk/times-components/commit/936b45a04108de1a043a86a33ab6dba83fb89819))
+
+
+
+
+
 # [2.15.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.14.2...@times-components/tracking@2.15.0) (2022-11-03)
 
 

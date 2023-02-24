@@ -3,6 +3,111 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.11.0](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.10.3...@times-components/article-byline@3.11.0) (2023-02-23)
+
+
+### Features
+
+* **TDP-2979:** updated times component to use Roboto ([#3244](https://github.com/newsuk/times-components/issues/3244)) ([45ba0ab](https://github.com/newsuk/times-components/commit/45ba0aba96f65670b4f24913398000667fc1f316))
+
+
+
+
+
+## [3.10.3](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.10.2...@times-components/article-byline@3.10.3) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.10.2](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.10.1...@times-components/article-byline@3.10.2) (2023-02-02)
+
+
+### Reverts
+
+* Revert "feat(TD-2979): replace gillSans with roboto (#3226)" (#3228) ([834129f](https://github.com/newsuk/times-components/commit/834129f471197d50b1446a460e383910444aba15)), closes [#3226](https://github.com/newsuk/times-components/issues/3226) [#3228](https://github.com/newsuk/times-components/issues/3228)
+
+
+
+
+
+## [3.10.1](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.10.0...@times-components/article-byline@3.10.1) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+# [3.10.0](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.9.18...@times-components/article-byline@3.10.0) (2023-02-01)
+
+
+### Features
+
+* **TD-2979:** replace gillSans with roboto ([#3226](https://github.com/newsuk/times-components/issues/3226)) ([29f701e](https://github.com/newsuk/times-components/commit/29f701ea96c7e06767c23e01496f343b6d7a7db1))
+
+
+
+
+
+## [3.9.18](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.9.17...@times-components/article-byline@3.9.18) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.9.17](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.9.16...@times-components/article-byline@3.9.17) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.9.16](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.9.15...@times-components/article-byline@3.9.16) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.9.15](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.9.14...@times-components/article-byline@3.9.15) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.9.14](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.9.13...@times-components/article-byline@3.9.14) (2023-01-23)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.9.13](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.9.12...@times-components/article-byline@3.9.13) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.9.12](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.9.11...@times-components/article-byline@3.9.12) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
 ## [3.9.11](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.9.10...@times-components/article-byline@3.9.11) (2022-11-03)
 
 **Note:** Version bump only for package @times-components/article-byline

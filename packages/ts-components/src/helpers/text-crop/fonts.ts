@@ -4,13 +4,13 @@ export const fonts = {
   body: 'TimesDigitalW04',
   bodyRegular: 'TimesDigitalW04-Regular',
   bodyRegularSmallCaps: 'TimesDigitalW04-RegularSC',
-  cultureMagazine: 'Flama-Bold',
+  cultureMagazine: 'TimesModern-Bold',
   dropCap: 'TimesModern-Regular',
   headline: 'TimesModern-Bold',
   headlineRegular: 'TimesModern-Regular',
-  stMagazine: 'Tiempos-Headline-Bold',
-  styleMagazine: 'CenturyGothic-Bold',
-  supporting: 'GillSansMTStd-Medium'
+  stMagazine: 'TimesModern-Bold',
+  styleMagazine: 'TimesModern-Bold',
+  supporting: 'Roboto-Regular'
 };
 
 export type Font = keyof typeof fonts;
@@ -59,32 +59,18 @@ const TimesDigitalW04RegularSC: FontTextCropSettings = {
   cropLineHeight: 1.2
 };
 
-const GillSansMTStdMedium: FontTextCropSettings = {
-  font: 'GillSansMTStd-Medium',
+const RobotoRegular: FontTextCropSettings = {
+  font: 'Roboto-Regular',
   topCrop: 6,
   bottomCrop: 26,
   cropFontSize: 64,
   cropLineHeight: 1.2
 };
 
-const FlamaBold: FontTextCropSettings = {
-  font: 'Flama-Bold',
-  topCrop: 19,
-  bottomCrop: 13,
-  cropFontSize: 64,
-  cropLineHeight: 1.2
-};
-const TiemposHeadlineBold: FontTextCropSettings = {
-  font: 'Tiempos-Headline-Bold',
-  topCrop: 16,
-  bottomCrop: 17,
-  cropFontSize: 64,
-  cropLineHeight: 1.2
-};
-const CenturyGothicBold: FontTextCropSettings = {
-  font: 'CenturyGothic-Bold',
-  topCrop: 16,
-  bottomCrop: 16,
+const RobotoMedium: FontTextCropSettings = {
+  font: 'Roboto-Medium',
+  topCrop: 6,
+  bottomCrop: 26,
   cropFontSize: 64,
   cropLineHeight: 1.2
 };
@@ -96,10 +82,8 @@ const fontCropSettings: { [font: string]: FontTextCropSettings } = keyBy(
     TimesDigitalW04,
     TimesDigitalW04Regular,
     TimesDigitalW04RegularSC,
-    GillSansMTStdMedium,
-    FlamaBold,
-    TiemposHeadlineBold,
-    CenturyGothicBold
+    RobotoRegular,
+    RobotoMedium
   ],
   ({ font }) => font
 );

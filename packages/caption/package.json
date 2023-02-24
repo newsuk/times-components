@@ -1,6 +1,6 @@
 {
   "name": "@times-components/caption",
-  "version": "3.4.0",
+  "version": "3.6.0",
   "description": "Media caption component",
   "main": "dist/caption",
   "dev": "src/caption",
@@ -11,6 +11,7 @@
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "test:web": "jest --config='./__tests__/jest.config.js'",
+    "test:web:updatesnapshot": "yarn test:web -u",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
@@ -31,8 +32,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/ts-styleguide": "1.37.6",
-    "@times-components/utils": "6.15.6",
+    "@times-components/ts-styleguide": "1.40.0",
+    "@times-components/utils": "6.15.16",
     "prop-types": "15.7.2",
     "xss": "^1.0.10"
   },
@@ -40,8 +41,8 @@
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.0",
-    "@times-components/jest-serializer": "3.5.1",
-    "@times-components/storybook": "4.5.6",
+    "@times-components/jest-serializer": "3.6.0",
+    "@times-components/storybook": "4.6.0",
     "@times-components/test-utils": "2.4.0",
     "@times-components/webpack-configurator": "2.1.0",
     "babel-jest": "24.8.0",

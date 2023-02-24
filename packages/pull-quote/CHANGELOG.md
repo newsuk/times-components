@@ -3,6 +3,98 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.13.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.12.3...@times-components/pull-quote@3.13.0) (2023-02-23)
+
+
+### Features
+
+* **TDP-2979:** updated times component to use Roboto ([#3244](https://github.com/newsuk/times-components/issues/3244)) ([45ba0ab](https://github.com/newsuk/times-components/commit/45ba0aba96f65670b4f24913398000667fc1f316))
+
+
+
+
+
+## [3.12.3](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.12.2...@times-components/pull-quote@3.12.3) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.12.2](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.12.1...@times-components/pull-quote@3.12.2) (2023-02-02)
+
+
+### Reverts
+
+* Revert "feat(TD-2979): replace gillSans with roboto (#3226)" (#3228) ([834129f](https://github.com/newsuk/times-components/commit/834129f471197d50b1446a460e383910444aba15)), closes [#3226](https://github.com/newsuk/times-components/issues/3226) [#3228](https://github.com/newsuk/times-components/issues/3228)
+
+
+
+
+
+## [3.12.1](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.12.0...@times-components/pull-quote@3.12.1) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+# [3.12.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.11.4...@times-components/pull-quote@3.12.0) (2023-02-01)
+
+
+### Features
+
+* **TD-2979:** replace gillSans with roboto ([#3226](https://github.com/newsuk/times-components/issues/3226)) ([29f701e](https://github.com/newsuk/times-components/commit/29f701ea96c7e06767c23e01496f343b6d7a7db1))
+
+
+
+
+
+## [3.11.4](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.11.3...@times-components/pull-quote@3.11.4) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.11.3](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.11.2...@times-components/pull-quote@3.11.3) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.11.2](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.11.1...@times-components/pull-quote@3.11.2) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+## [3.11.1](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.11.0...@times-components/pull-quote@3.11.1) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
+# [3.11.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.10.7...@times-components/pull-quote@3.11.0) (2023-01-12)
+
+
+### Features
+
+* **TDP-2852:** Replaced Tiempo, Flama and Century fonts with Times Modern ([#3213](https://github.com/newsuk/times-components/issues/3213)) ([f727c75](https://github.com/newsuk/times-components/commit/f727c75fa0fea754b341205966de7c5ae1fc2240))
+
+
+
+
+
 ## [3.10.7](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.10.6...@times-components/pull-quote@3.10.7) (2022-11-02)
 
 **Note:** Version bump only for package @times-components/pull-quote

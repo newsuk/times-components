@@ -41,23 +41,9 @@ const article3 = {
     'https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Ff1a0847a-c3ea-11eb-a26e-4c086490cfe1.jpg?crop=4418%2C2945%2C0%2C0&resize=685'
 };
 
-storiesOf('Typescript Component/In Article/Related Articles', module)
-  .addDecorator((storyFn: () => React.ReactNode) => (
-    <TrackingContextProvider
-      context={{
-        component: 'ArticleSkeleton',
-        attrs: {
-          article_name: 'articleHeadline',
-          section_details: 'section'
-        }
-      }}
-      analyticsStream={analyticsStream}
-    >
-      <ArticleHarness>{storyFn()}</ArticleHarness>
-    </TrackingContextProvider>
-  ))
-
-  .add('Related Articles', () => {
+storiesOf('Typescript Component/In Article/Related Articles', module).add(
+  'Related Articles',
+  () => {
     const numberOfArticles = select(
       'Number of Articles',
       { Three: 3, Two: 2, One: 1 },
@@ -66,13 +52,27 @@ storiesOf('Typescript Component/In Article/Related Articles', module)
     // @ts-ignore
     const sectionColor = select('Section', colours.section, '#636C17');
     return (
-      <InArticleRelatedArticles
-        sectionColour={sectionColor}
-        heading="Related Articles"
-        relatedArticles={[article1, article2, article3].filter(
-          ({}, index) => index < numberOfArticles
-        )}
-        showImages={boolean('Show Images', true)}
-      />
+      <TrackingContextProvider
+        context={{
+          component: 'ArticleSkeleton',
+          attrs: {
+            article_name: 'articleHeadline',
+            section_details: 'section'
+          }
+        }}
+        analyticsStream={analyticsStream}
+      >
+        <ArticleHarness>
+          <InArticleRelatedArticles
+            sectionColour={sectionColor}
+            heading="Related Articles"
+            relatedArticles={[article1, article2, article3].filter(
+              ({}, index) => index < numberOfArticles
+            )}
+            showImages={boolean('Show Images', true)}
+          />
+        </ArticleHarness>
+      </TrackingContextProvider>
     );
-  });
+  }
+);

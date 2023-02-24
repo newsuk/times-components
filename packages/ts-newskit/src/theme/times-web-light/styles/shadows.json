@@ -1,0 +1,8 @@
+{
+  "shadow010": "0px 0.5px 0px 2px rgba(10,10,10,0.08)",
+  "shadow020": "0px 2px 0px 4px rgba(10,10,10,0.08)",
+  "shadow030": "0px 4px 0px 8px rgba(10,10,10,0.08)",
+  "shadow040": "0px 8px 0px 16px rgba(10,10,10,0.08)",
+  "shadow050": "0px 16px 0px 24px rgba(10,10,10,0.08)",
+  "shadow060": "0px 20px 0px 32px rgba(10,10,10,0.08)"
+}

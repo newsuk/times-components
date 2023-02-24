@@ -13,19 +13,19 @@ const Wrapper = styled.div`
   padding: 20px;
 `;
 
-storiesOf('Typescript Component/SaveStar', module)
-  .addDecorator((storyFn: () => React.ReactNode) => (
-    <TrackingContextProvider
-      context={{
-        component: 'ArticleSkeleton',
-        attrs: {
-          article_name: 'articleHeadline',
-          section_details: 'section'
-        }
-      }}
-      analyticsStream={analyticsStream}
-    >
-      <Wrapper>{storyFn()}</Wrapper>
-    </TrackingContextProvider>
-  ))
-  .add('SaveStar', () => <SaveStar articleId="12345" isPreviewMode />);
+storiesOf('Typescript Component/SaveStar', module).add('SaveStar', () => (
+  <TrackingContextProvider
+    context={{
+      component: 'ArticleSkeleton',
+      attrs: {
+        article_name: 'articleHeadline',
+        section_details: 'section'
+      }
+    }}
+    analyticsStream={analyticsStream}
+  >
+    <Wrapper>
+      <SaveStar articleId="12345" isPreviewMode />
+    </Wrapper>
+  </TrackingContextProvider>
+));

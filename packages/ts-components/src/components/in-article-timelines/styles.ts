@@ -32,7 +32,7 @@ export const ContentContainer = styled.div`
 `;
 
 export const StyledShowAllButton = styled(ShowAllButton)`
-  font-size: 14px;
+  font-size: 13px;
   margin: 11px 0;
   padding: 12px 15px 10px;
 `;

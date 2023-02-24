@@ -3,6 +3,114 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.13.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.12.3...@times-components/author-profile@6.13.0) (2023-02-23)
+
+
+### Features
+
+* **TDP-2979:** updated times component to use Roboto ([#3244](https://github.com/newsuk/times-components/issues/3244)) ([45ba0ab](https://github.com/newsuk/times-components/commit/45ba0aba96f65670b4f24913398000667fc1f316))
+
+
+
+
+
+## [6.12.3](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.12.2...@times-components/author-profile@6.12.3) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.12.2](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.12.1...@times-components/author-profile@6.12.2) (2023-02-02)
+
+
+### Reverts
+
+* Revert "feat(TD-2979): replace gillSans with roboto (#3226)" (#3228) ([834129f](https://github.com/newsuk/times-components/commit/834129f471197d50b1446a460e383910444aba15)), closes [#3226](https://github.com/newsuk/times-components/issues/3226) [#3228](https://github.com/newsuk/times-components/issues/3228)
+
+
+
+
+
+## [6.12.1](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.12.0...@times-components/author-profile@6.12.1) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+# [6.12.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.11.0...@times-components/author-profile@6.12.0) (2023-02-01)
+
+
+### Features
+
+* **TD-2979:** replace gillSans with roboto ([#3226](https://github.com/newsuk/times-components/issues/3226)) ([29f701e](https://github.com/newsuk/times-components/commit/29f701ea96c7e06767c23e01496f343b6d7a7db1))
+
+
+
+
+
+# [6.11.0](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.10.11...@times-components/author-profile@6.11.0) (2023-01-31)
+
+
+### Features
+
+* **TDP-3047:** Add lcpItem to Author Image BG ([#3224](https://github.com/newsuk/times-components/issues/3224)) ([f359fb2](https://github.com/newsuk/times-components/commit/f359fb28389d9ece227def02c4e6e4706b695f5c))
+
+
+
+
+
+## [6.10.11](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.10.10...@times-components/author-profile@6.10.11) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.10.10](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.10.9...@times-components/author-profile@6.10.10) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.10.9](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.10.8...@times-components/author-profile@6.10.9) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.10.8](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.10.7...@times-components/author-profile@6.10.8) (2023-01-23)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.10.7](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.10.6...@times-components/author-profile@6.10.7) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
+## [6.10.6](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.10.5...@times-components/author-profile@6.10.6) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/author-profile
+
+
+
+
+
 ## [6.10.5](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.10.4...@times-components/author-profile@6.10.5) (2023-01-04)
 
 **Note:** Version bump only for package @times-components/author-profile

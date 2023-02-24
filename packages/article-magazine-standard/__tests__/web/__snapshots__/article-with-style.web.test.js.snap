@@ -336,8 +336,8 @@ exports[`full article with style 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-family: Roboto-Regular;
+  font-size: 12px;
   line-height: 15px;
   color: #696969;
   margin-top: 15px;
@@ -850,10 +850,10 @@ exports[`full article with style 1`] = `
             <div
               className="c5"
               color="#1D1D1B"
-              fontFamily="GillSansMTStd-Medium"
+              fontFamily="Roboto-Regular"
               fontSize={12}
               fontWeight="400"
-              letterSpacing={1}
+              letterSpacing={0.5}
               lineHeight="12px"
               marginBottom={0}
               marginTop={-1}
@@ -988,6 +988,7 @@ exports[`full article with style 1`] = `
                 width="100%"
               >
                 <div
+                  className="lcpItem"
                   height="100%"
                   width="100%"
                 >
@@ -1389,8 +1390,8 @@ exports[`full article with style in the culture magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-family: Roboto-Regular;
+  font-size: 12px;
   line-height: 15px;
   color: #696969;
   margin-top: 15px;
@@ -1453,7 +1454,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: Flama-Bold;
+  font-family: TimesModern-Bold;
   font-size: 30px;
   line-height: 33px;
   color: #1D1D1B;
@@ -1904,10 +1905,10 @@ exports[`full article with style in the culture magazine 1`] = `
             <div
               className="c5"
               color="#7B0046"
-              fontFamily="GillSansMTStd-Medium"
+              fontFamily="Roboto-Regular"
               fontSize={12}
               fontWeight="400"
-              letterSpacing={1}
+              letterSpacing={0.5}
               lineHeight="12px"
               marginBottom={0}
               marginTop={-1}
@@ -2042,6 +2043,7 @@ exports[`full article with style in the culture magazine 1`] = `
                 width="100%"
               >
                 <div
+                  className="lcpItem"
                   height="100%"
                   width="100%"
                 >
@@ -2443,8 +2445,8 @@ exports[`full article with style in the style magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-family: Roboto-Regular;
+  font-size: 12px;
   line-height: 15px;
   color: #696969;
   margin-top: 15px;
@@ -2507,13 +2509,13 @@ exports[`full article with style in the style magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: CenturyGothic-Bold;
+  font-family: TimesModern-Bold;
   font-size: 30px;
   line-height: 33px;
   color: #1D1D1B;
   margin-bottom: 10px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .c10 {
@@ -2959,10 +2961,10 @@ exports[`full article with style in the style magazine 1`] = `
             <div
               className="c5"
               color="#BC3385"
-              fontFamily="GillSansMTStd-Medium"
+              fontFamily="Roboto-Regular"
               fontSize={12}
               fontWeight="400"
-              letterSpacing={1}
+              letterSpacing={0.5}
               lineHeight="12px"
               marginBottom={0}
               marginTop={-1}
@@ -3097,6 +3099,7 @@ exports[`full article with style in the style magazine 1`] = `
                 width="100%"
               >
                 <div
+                  className="lcpItem"
                   height="100%"
                   width="100%"
                 >
@@ -3498,8 +3501,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
+  font-family: Roboto-Regular;
+  font-size: 12px;
   line-height: 15px;
   color: #696969;
   margin-top: 15px;
@@ -3562,7 +3565,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: Tiempos-Headline-Bold;
+  font-family: TimesModern-Bold;
   font-size: 30px;
   line-height: 33px;
   color: #1D1D1B;
@@ -4013,10 +4016,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
             <div
               className="c5"
               color="#F13D00"
-              fontFamily="GillSansMTStd-Medium"
+              fontFamily="Roboto-Regular"
               fontSize={12}
               fontWeight="400"
-              letterSpacing={1}
+              letterSpacing={0.5}
               lineHeight="12px"
               marginBottom={0}
               marginTop={-1}
@@ -4151,6 +4154,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
                 width="100%"
               >
                 <div
+                  className="lcpItem"
                   height="100%"
                   width="100%"
                 >

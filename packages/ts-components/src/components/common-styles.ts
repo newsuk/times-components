@@ -22,7 +22,7 @@ export const Label = styled.div<{ sectionColour: string }>`
   text-transform: uppercase;
   color: ${({ sectionColour }) => `${sectionColour}`};
   padding-bottom: 5px;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 `;
 
 export const HiddenDiv = styled.div`

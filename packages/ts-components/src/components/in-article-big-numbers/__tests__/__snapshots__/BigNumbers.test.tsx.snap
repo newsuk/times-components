@@ -9,7 +9,7 @@ exports[`BigNumbers click show all 1`] = `
       class="sc-iwsKbI fMDvHO"
     >
       <div
-        class="sc-bwzfXH gzPkze"
+        class="sc-bwzfXH gePxOS"
       >
         President Race
       </div>
@@ -101,7 +101,7 @@ exports[`BigNumbers click show all 1`] = `
       class="sc-bZQynM iNwlGF"
     >
       <button
-        class="sc-htoDjs sc-gZMcBi fiRWob"
+        class="sc-htoDjs sc-gZMcBi gJkCHi"
       >
         Collapse
       </button>
@@ -131,7 +131,7 @@ exports[`BigNumbers should render the standard component 1`] = `
       class="sc-iwsKbI fMDvHO"
     >
       <div
-        class="sc-bwzfXH gzPkze"
+        class="sc-bwzfXH gePxOS"
       >
         President Race
       </div>
@@ -223,7 +223,7 @@ exports[`BigNumbers should render the standard component 1`] = `
       class="sc-bZQynM iNwlGF"
     >
       <button
-        class="sc-htoDjs sc-gZMcBi fiRWob"
+        class="sc-htoDjs sc-gZMcBi gJkCHi"
       >
         Show all
       </button>
@@ -241,7 +241,7 @@ exports[`BigNumbers should render the wide component 1`] = `
       class="sc-iwsKbI fMDvHO"
     >
       <div
-        class="sc-bwzfXH gzPkze"
+        class="sc-bwzfXH gePxOS"
       >
         President Race
       </div>
@@ -333,7 +333,7 @@ exports[`BigNumbers should render the wide component 1`] = `
       class="sc-bZQynM iNwlGF"
     >
       <button
-        class="sc-htoDjs sc-gZMcBi fiRWob"
+        class="sc-htoDjs sc-gZMcBi gJkCHi"
       >
         Show all
       </button>

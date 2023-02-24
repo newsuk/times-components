@@ -80,9 +80,6 @@ Array [
     </StrictWrapper>,
     "name": "My Story",
   },
-  <div>
-    Some decorator
-  </div>,
   Object {
     "component": <StrictWrapper>
       <div>
@@ -109,9 +106,6 @@ Array [
 
 exports[`The showcase converter should add a story with a decorator 1`] = `
 Array [
-  <div>
-    Some decorator
-  </div>,
   Object {
     "component": <StrictWrapper>
       <div>

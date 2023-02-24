@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ts-slices",
-  "version": "1.6.7",
+  "version": "1.8.0",
   "description": "Reuseable Typescript React Components",
   "main": "dist/index.js",
   "dev": "dist/index.js",
@@ -30,6 +30,7 @@
     "test": "jest",
     "test:lint": "lint",
     "test:unit": "jest --coverage",
+    "test:unit:updatesnapshot": "yarn test:unit -u",
     "watch:tests": "run-s clean build:module && run-p \"build:module -- -w\" \"test:unit -- --watch\"",
     "doc": "run-s doc:html && open-cli build/docs/index.html",
     "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
@@ -50,7 +51,7 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@times-components/ts-styleguide": "1.37.6",
+    "@times-components/ts-styleguide": "1.40.0",
     "date-fns": "2.28.0",
     "lodash.get": "4.4.2",
     "react": "16.9.0",
@@ -58,7 +59,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^12.1.2",
-    "@times-components/storybook": "4.5.6",
+    "@times-components/storybook": "4.6.0",
     "@types/lodash.get": "4.4.6",
     "@types/lodash.shuffle": "4.2.6",
     "@types/mockdate": "2.0.0",

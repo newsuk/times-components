@@ -161,7 +161,10 @@ const getLiveBlogUpdates = (article, publisher, author) => {
     const loopContent = contentObj => {
       for (let i = 0; i < contentObj.length; i += 1) {
         if (contentObj[i].name === "interactive") {
-          if (contentObj[i].attributes.element.value === "article-header") {
+          if (
+            contentObj[i].attributes.element &&
+            contentObj[i].attributes.element.value === "article-header"
+          ) {
             if (update !== undefined) {
               updates.push(update);
             }
@@ -337,7 +340,7 @@ function Head({
     ? {
         "@context": "https://schema.org",
         "@type": "VideoObject",
-        name: leadAsset.title || title,
+        name: leadAsset ? leadAsset.title : title,
         uploadDate: dateModified,
         thumbnailUrl,
         description:

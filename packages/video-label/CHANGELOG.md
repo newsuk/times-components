@@ -3,6 +3,95 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.8.3...@times-components/video-label@2.9.0) (2023-02-23)
+
+
+### Features
+
+* **TDP-2979:** updated times component to use Roboto ([#3244](https://github.com/newsuk/times-components/issues/3244)) ([45ba0ab](https://github.com/newsuk/times-components/commit/45ba0aba96f65670b4f24913398000667fc1f316))
+
+
+
+
+
+## [2.8.3](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.8.2...@times-components/video-label@2.8.3) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
+## [2.8.2](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.8.1...@times-components/video-label@2.8.2) (2023-02-02)
+
+
+### Reverts
+
+* Revert "feat(TD-2979): replace gillSans with roboto (#3226)" (#3228) ([834129f](https://github.com/newsuk/times-components/commit/834129f471197d50b1446a460e383910444aba15)), closes [#3226](https://github.com/newsuk/times-components/issues/3226) [#3228](https://github.com/newsuk/times-components/issues/3228)
+
+
+
+
+
+## [2.8.1](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.8.0...@times-components/video-label@2.8.1) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
+# [2.8.0](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.7.12...@times-components/video-label@2.8.0) (2023-02-01)
+
+
+### Features
+
+* **TD-2979:** replace gillSans with roboto ([#3226](https://github.com/newsuk/times-components/issues/3226)) ([29f701e](https://github.com/newsuk/times-components/commit/29f701ea96c7e06767c23e01496f343b6d7a7db1))
+
+
+
+
+
+## [2.7.12](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.7.11...@times-components/video-label@2.7.12) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
+## [2.7.11](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.7.10...@times-components/video-label@2.7.11) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
+## [2.7.10](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.7.9...@times-components/video-label@2.7.10) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
+## [2.7.9](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.7.8...@times-components/video-label@2.7.9) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
+## [2.7.8](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.7.7...@times-components/video-label@2.7.8) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/video-label
+
+
+
+
+
 ## [2.7.7](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.7.6...@times-components/video-label@2.7.7) (2022-11-02)
 
 **Note:** Version bump only for package @times-components/video-label

@@ -3,6 +3,105 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.9.8](https://github.com/newsuk/times-components/compare/@times-components/topic@5.9.7...@times-components/topic@5.9.8) (2023-02-23)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+## [5.9.7](https://github.com/newsuk/times-components/compare/@times-components/topic@5.9.6...@times-components/topic@5.9.7) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+## [5.9.6](https://github.com/newsuk/times-components/compare/@times-components/topic@5.9.5...@times-components/topic@5.9.6) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+## [5.9.5](https://github.com/newsuk/times-components/compare/@times-components/topic@5.9.4...@times-components/topic@5.9.5) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+## [5.9.4](https://github.com/newsuk/times-components/compare/@times-components/topic@5.9.3...@times-components/topic@5.9.4) (2023-02-01)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+## [5.9.3](https://github.com/newsuk/times-components/compare/@times-components/topic@5.9.2...@times-components/topic@5.9.3) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+## [5.9.2](https://github.com/newsuk/times-components/compare/@times-components/topic@5.9.1...@times-components/topic@5.9.2) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+## [5.9.1](https://github.com/newsuk/times-components/compare/@times-components/topic@5.9.0...@times-components/topic@5.9.1) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+# [5.9.0](https://github.com/newsuk/times-components/compare/@times-components/topic@5.8.8...@times-components/topic@5.9.0) (2023-01-26)
+
+
+### Features
+
+* **TDP-3046:** added a class to the heading of topics for lcp ([#3220](https://github.com/newsuk/times-components/issues/3220)) ([e023b09](https://github.com/newsuk/times-components/commit/e023b096f539be40f17a6020fb78ee2918c00514))
+
+
+
+
+
+## [5.8.8](https://github.com/newsuk/times-components/compare/@times-components/topic@5.8.7...@times-components/topic@5.8.8) (2023-01-23)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+## [5.8.7](https://github.com/newsuk/times-components/compare/@times-components/topic@5.8.6...@times-components/topic@5.8.7) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+## [5.8.6](https://github.com/newsuk/times-components/compare/@times-components/topic@5.8.5...@times-components/topic@5.8.6) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
 ## [5.8.5](https://github.com/newsuk/times-components/compare/@times-components/topic@5.8.4...@times-components/topic@5.8.5) (2023-01-04)
 
 **Note:** Version bump only for package @times-components/topic

@@ -3,6 +3,125 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.61.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.60.0...@times-components/article-main-comment@2.61.0) (2023-02-23)
+
+
+### Features
+
+* **TDP-2979:** updated times component to use Roboto ([#3244](https://github.com/newsuk/times-components/issues/3244)) ([45ba0ab](https://github.com/newsuk/times-components/commit/45ba0aba96f65670b4f24913398000667fc1f316))
+
+
+
+
+
+# [2.60.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.59.2...@times-components/article-main-comment@2.60.0) (2023-02-08)
+
+
+### Features
+
+* **TDP-3135:** Remove Blue RNC Banner ([#3231](https://github.com/newsuk/times-components/issues/3231)) ([b7e6699](https://github.com/newsuk/times-components/commit/b7e6699ddc4b3d674d1ef5d259b4fd4ea8dc6fe6))
+
+
+
+
+
+## [2.59.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.59.1...@times-components/article-main-comment@2.59.2) (2023-02-02)
+
+
+### Reverts
+
+* Revert "feat(TD-2979): replace gillSans with roboto (#3226)" (#3228) ([834129f](https://github.com/newsuk/times-components/commit/834129f471197d50b1446a460e383910444aba15)), closes [#3226](https://github.com/newsuk/times-components/issues/3226) [#3228](https://github.com/newsuk/times-components/issues/3228)
+
+
+
+
+
+## [2.59.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.59.0...@times-components/article-main-comment@2.59.1) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.59.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.58.4...@times-components/article-main-comment@2.59.0) (2023-02-01)
+
+
+### Features
+
+* **TD-2979:** replace gillSans with roboto ([#3226](https://github.com/newsuk/times-components/issues/3226)) ([29f701e](https://github.com/newsuk/times-components/commit/29f701ea96c7e06767c23e01496f343b6d7a7db1))
+
+
+
+
+
+## [2.58.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.58.3...@times-components/article-main-comment@2.58.4) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.58.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.58.2...@times-components/article-main-comment@2.58.3) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.58.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.58.1...@times-components/article-main-comment@2.58.2) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.58.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.58.0...@times-components/article-main-comment@2.58.1) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.58.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.57.9...@times-components/article-main-comment@2.58.0) (2023-01-24)
+
+
+### Features
+
+* **TDP-3018:** Added lcpItem to video component ([#3217](https://github.com/newsuk/times-components/issues/3217)) ([5f66e47](https://github.com/newsuk/times-components/commit/5f66e47be1e9bc6008a681d87386ab9cb3f0c40c))
+
+
+
+
+
+## [2.57.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.57.8...@times-components/article-main-comment@2.57.9) (2023-01-23)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.57.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.57.7...@times-components/article-main-comment@2.57.8) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.57.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.57.6...@times-components/article-main-comment@2.57.7) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
 ## [2.57.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.57.5...@times-components/article-main-comment@2.57.6) (2023-01-05)
 
 **Note:** Version bump only for package @times-components/article-main-comment

@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.6.0](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.5.10...@times-components/storybook@4.6.0) (2023-02-08)
+
+
+### Features
+
+* **TDP-3135:** Remove Blue RNC Banner ([#3231](https://github.com/newsuk/times-components/issues/3231)) ([b7e6699](https://github.com/newsuk/times-components/commit/b7e6699ddc4b3d674d1ef5d259b4fd4ea8dc6fe6))
+
+
+
+
+
+## [4.5.10](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.5.9...@times-components/storybook@4.5.10) (2023-02-02)
+
+
+### Bug Fixes
+
+* **TDP-3127:** Made Times2 Todays Section Title Uppercase ([#3227](https://github.com/newsuk/times-components/issues/3227)) ([c6a188a](https://github.com/newsuk/times-components/commit/c6a188af346d99ce70354f44b4c12c70fc31d3c0))
+
+
+
+
+
+## [4.5.9](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.5.8...@times-components/storybook@4.5.9) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/storybook
+
+
+
+
+
+## [4.5.8](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.5.7...@times-components/storybook@4.5.8) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/storybook
+
+
+
+
+
+## [4.5.7](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.5.6...@times-components/storybook@4.5.7) (2023-01-19)
+
+
+### Bug Fixes
+
+* **TDP-2976:** update article query ([#3215](https://github.com/newsuk/times-components/issues/3215)) ([936b45a](https://github.com/newsuk/times-components/commit/936b45a04108de1a043a86a33ab6dba83fb89819))
+
+
+
+
+
 ## [4.5.6](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.5.5...@times-components/storybook@4.5.6) (2022-11-02)
 
 **Note:** Version bump only for package @times-components/storybook

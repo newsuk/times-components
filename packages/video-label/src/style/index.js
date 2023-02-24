@@ -18,8 +18,8 @@ const styles = {
     }),
     flex: -1,
     fontWeight: "400",
-    letterSpacing: 1.2,
-    lineHeight: 12,
+    letterSpacing: 0.6,
+    lineHeight: 13,
     marginLeft: spacing(1),
     paddingTop: 1
   }

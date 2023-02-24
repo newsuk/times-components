@@ -3,6 +3,111 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.16.3...@times-components/save-and-share-bar@0.17.0) (2023-02-23)
+
+
+### Features
+
+* **TDP-2979:** updated times component to use Roboto ([#3244](https://github.com/newsuk/times-components/issues/3244)) ([45ba0ab](https://github.com/newsuk/times-components/commit/45ba0aba96f65670b4f24913398000667fc1f316))
+
+
+
+
+
+## [0.16.3](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.16.2...@times-components/save-and-share-bar@0.16.3) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.16.2](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.16.1...@times-components/save-and-share-bar@0.16.2) (2023-02-02)
+
+
+### Reverts
+
+* Revert "feat(TD-2979): replace gillSans with roboto (#3226)" (#3228) ([834129f](https://github.com/newsuk/times-components/commit/834129f471197d50b1446a460e383910444aba15)), closes [#3226](https://github.com/newsuk/times-components/issues/3226) [#3228](https://github.com/newsuk/times-components/issues/3228)
+
+
+
+
+
+## [0.16.1](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.16.0...@times-components/save-and-share-bar@0.16.1) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.15.19...@times-components/save-and-share-bar@0.16.0) (2023-02-01)
+
+
+### Features
+
+* **TD-2979:** replace gillSans with roboto ([#3226](https://github.com/newsuk/times-components/issues/3226)) ([29f701e](https://github.com/newsuk/times-components/commit/29f701ea96c7e06767c23e01496f343b6d7a7db1))
+
+
+
+
+
+## [0.15.19](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.15.18...@times-components/save-and-share-bar@0.15.19) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.15.18](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.15.17...@times-components/save-and-share-bar@0.15.18) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.15.17](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.15.16...@times-components/save-and-share-bar@0.15.17) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.15.16](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.15.15...@times-components/save-and-share-bar@0.15.16) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.15.15](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.15.14...@times-components/save-and-share-bar@0.15.15) (2023-01-23)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.15.14](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.15.13...@times-components/save-and-share-bar@0.15.14) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.15.13](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.15.12...@times-components/save-and-share-bar@0.15.13) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
 ## [0.15.12](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.15.11...@times-components/save-and-share-bar@0.15.12) (2023-01-04)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar

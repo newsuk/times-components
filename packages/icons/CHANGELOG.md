@@ -3,6 +3,86 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.19.17](https://github.com/newsuk/times-components/compare/@times-components/icons@2.19.16...@times-components/icons@2.19.17) (2023-02-23)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.19.16](https://github.com/newsuk/times-components/compare/@times-components/icons@2.19.15...@times-components/icons@2.19.16) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.19.15](https://github.com/newsuk/times-components/compare/@times-components/icons@2.19.14...@times-components/icons@2.19.15) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.19.14](https://github.com/newsuk/times-components/compare/@times-components/icons@2.19.13...@times-components/icons@2.19.14) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.19.13](https://github.com/newsuk/times-components/compare/@times-components/icons@2.19.12...@times-components/icons@2.19.13) (2023-02-01)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.19.12](https://github.com/newsuk/times-components/compare/@times-components/icons@2.19.11...@times-components/icons@2.19.12) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.19.11](https://github.com/newsuk/times-components/compare/@times-components/icons@2.19.10...@times-components/icons@2.19.11) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.19.10](https://github.com/newsuk/times-components/compare/@times-components/icons@2.19.9...@times-components/icons@2.19.10) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.19.9](https://github.com/newsuk/times-components/compare/@times-components/icons@2.19.8...@times-components/icons@2.19.9) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
+## [2.19.8](https://github.com/newsuk/times-components/compare/@times-components/icons@2.19.7...@times-components/icons@2.19.8) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/icons
+
+
+
+
+
 ## [2.19.7](https://github.com/newsuk/times-components/compare/@times-components/icons@2.19.6...@times-components/icons@2.19.7) (2022-11-02)
 
 **Note:** Version bump only for package @times-components/icons

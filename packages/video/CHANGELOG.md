@@ -3,6 +3,97 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.14.8](https://github.com/newsuk/times-components/compare/@times-components/video@4.14.7...@times-components/video@4.14.8) (2023-02-23)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.14.7](https://github.com/newsuk/times-components/compare/@times-components/video@4.14.6...@times-components/video@4.14.7) (2023-02-08)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.14.6](https://github.com/newsuk/times-components/compare/@times-components/video@4.14.5...@times-components/video@4.14.6) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.14.5](https://github.com/newsuk/times-components/compare/@times-components/video@4.14.4...@times-components/video@4.14.5) (2023-02-02)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.14.4](https://github.com/newsuk/times-components/compare/@times-components/video@4.14.3...@times-components/video@4.14.4) (2023-02-01)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.14.3](https://github.com/newsuk/times-components/compare/@times-components/video@4.14.2...@times-components/video@4.14.3) (2023-01-31)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.14.2](https://github.com/newsuk/times-components/compare/@times-components/video@4.14.1...@times-components/video@4.14.2) (2023-01-27)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.14.1](https://github.com/newsuk/times-components/compare/@times-components/video@4.14.0...@times-components/video@4.14.1) (2023-01-26)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+# [4.14.0](https://github.com/newsuk/times-components/compare/@times-components/video@4.13.11...@times-components/video@4.14.0) (2023-01-24)
+
+
+### Features
+
+* **TDP-3018:** Added lcpItem to video component ([#3217](https://github.com/newsuk/times-components/issues/3217)) ([5f66e47](https://github.com/newsuk/times-components/commit/5f66e47be1e9bc6008a681d87386ab9cb3f0c40c))
+
+
+
+
+
+## [4.13.11](https://github.com/newsuk/times-components/compare/@times-components/video@4.13.10...@times-components/video@4.13.11) (2023-01-19)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.13.10](https://github.com/newsuk/times-components/compare/@times-components/video@4.13.9...@times-components/video@4.13.10) (2023-01-12)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
 ## [4.13.9](https://github.com/newsuk/times-components/compare/@times-components/video@4.13.8...@times-components/video@4.13.9) (2022-11-02)
 
 **Note:** Version bump only for package @times-components/video

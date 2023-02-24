@@ -47,8 +47,19 @@ const preventDefaultedAction = action =>
     }
   ]);
 
-storiesOf("Composed/Article Skeleton", module)
-  .addDecorator(storyFn => (
+storiesOf("Composed/Article Skeleton", module).add("Article Selection", () => {
+  const scale = scales.medium;
+  const sectionColour = select(
+    "Section",
+    pick(colours.section, sections),
+    colours.section.default,
+    "User State"
+  );
+
+  const article = select("Article", articleHeadlines, 0, "User State");
+  const data = articles[article];
+
+  return (
     <HelmetProvider context={{}}>
       <TrackingContextProvider
         analyticsStream={storybookReporter}
@@ -60,59 +71,45 @@ storiesOf("Composed/Article Skeleton", module)
           }
         }}
       >
-        {storyFn()}
+        <MockBookmarksProvider otherMocks={[]} delay={1000} articleId={data.id}>
+          <ContextProviderWithDefaults
+            value={{ theme: { scale, sectionColour } }}
+          >
+            <ArticleSkeleton
+              adConfig={articleAdConfig}
+              commentingConfig={commentingConfig}
+              analyticsStream={storybookReporter}
+              data={data}
+              isPreview={false}
+              onAuthorPress={preventDefaultedAction(decorateAction)(
+                "onAuthorPress"
+              )}
+              onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
+                "onCommentGuidelinesPress"
+              )}
+              onCommentsPress={preventDefaultedAction(decorateAction)(
+                "onCommentsPress"
+              )}
+              onLinkPress={preventDefaultedAction(decorateAction)(
+                "onLinkPress"
+              )}
+              onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+                "onRelatedArticlePress"
+              )}
+              onTopicPress={preventDefaultedAction(decorateAction)(
+                "onTopicPress"
+              )}
+              onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+                "onTwitterLinkPress"
+              )}
+              onVideoPress={preventDefaultedAction(decorateAction)(
+                "onVideoPress"
+              )}
+              onViewableItemsChanged={() => null}
+            />
+          </ContextProviderWithDefaults>
+        </MockBookmarksProvider>
       </TrackingContextProvider>
     </HelmetProvider>
-  ))
-
-  .add("Article Selection", () => {
-    const scale = scales.medium;
-    const sectionColour = select(
-      "Section",
-      pick(colours.section, sections),
-      colours.section.default,
-      "User State"
-    );
-
-    const article = select("Article", articleHeadlines, 0, "User State");
-    const data = articles[article];
-
-    return (
-      <MockBookmarksProvider otherMocks={[]} delay={1000} articleId={data.id}>
-        <ContextProviderWithDefaults
-          value={{ theme: { scale, sectionColour } }}
-        >
-          <ArticleSkeleton
-            adConfig={articleAdConfig}
-            commentingConfig={commentingConfig}
-            analyticsStream={storybookReporter}
-            data={data}
-            isPreview={false}
-            onAuthorPress={preventDefaultedAction(decorateAction)(
-              "onAuthorPress"
-            )}
-            onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-              "onCommentGuidelinesPress"
-            )}
-            onCommentsPress={preventDefaultedAction(decorateAction)(
-              "onCommentsPress"
-            )}
-            onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
-            onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-              "onRelatedArticlePress"
-            )}
-            onTopicPress={preventDefaultedAction(decorateAction)(
-              "onTopicPress"
-            )}
-            onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-              "onTwitterLinkPress"
-            )}
-            onVideoPress={preventDefaultedAction(decorateAction)(
-              "onVideoPress"
-            )}
-            onViewableItemsChanged={() => null}
-          />
-        </ContextProviderWithDefaults>
-      </MockBookmarksProvider>
-    );
-  });
+  );
+});

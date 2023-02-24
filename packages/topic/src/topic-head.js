@@ -33,7 +33,7 @@ const TopicHead = ({ name, description, isLoading }) => {
   return isLoading ? (
     <TcView style={styles.wrapper} />
   ) : (
-    <TcView style={styles.wrapper}>
+    <TcView style={styles.wrapper} className="lcpHeading">
       <Container>
         <ResponsiveName accessibilityRole="header" testID="topic-name">
           {name}

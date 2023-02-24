@@ -33,7 +33,7 @@ exports[`Inline Newsletter Puff renders loading state state 1`] = `
             class="sc-bxivhb sc-gZMcBi kRYdQT"
           >
             Politics. Explained.
-            : 
+             
           </div>
           Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am. 
           <div
@@ -42,7 +42,7 @@ exports[`Inline Newsletter Puff renders loading state state 1`] = `
             <button
               class="sc-bwzfXH gHDjoa"
             >
-              One-click sign-up
+              Sign up with one click
             </button>
           </div>
         </div>
@@ -50,9 +50,9 @@ exports[`Inline Newsletter Puff renders loading state state 1`] = `
           class="sc-htpNat sc-VigVT iWOUWL"
         >
           <button
-            class="sc-bdVaJa qlAqK"
+            class="sc-bdVaJa knKdEu"
           >
-            One-click sign-up
+            Sign up with one click
           </button>
         </div>
       </div>
@@ -121,7 +121,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
             class="sc-bxivhb sc-gZMcBi kRYdQT"
           >
             Politics. Explained.
-            : 
+             
           </div>
           Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am. 
           <div
@@ -130,7 +130,7 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
             <button
               class="sc-bwzfXH gHDjoa"
             >
-              One-click sign-up
+              Sign up with one click
             </button>
           </div>
         </div>
@@ -138,9 +138,9 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
           class="sc-htpNat sc-VigVT iWOUWL"
         >
           <button
-            class="sc-bdVaJa qlAqK"
+            class="sc-bdVaJa knKdEu"
           >
-            One-click sign-up
+            Sign up with one click
           </button>
         </div>
       </div>
@@ -165,7 +165,7 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
             class="sc-bxivhb sc-gZMcBi kRYdQT"
           >
             Politics. Explained.
-            : 
+             
           </div>
           Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am. 
           <div
@@ -174,7 +174,7 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
             <button
               class="sc-bwzfXH gHDjoa"
             >
-              One-click sign-up
+              Sign up with one click
             </button>
           </div>
         </div>
@@ -182,9 +182,9 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
           class="sc-htpNat sc-VigVT iWOUWL"
         >
           <button
-            class="sc-bdVaJa qlAqK"
+            class="sc-bdVaJa knKdEu"
           >
-            One-click sign-up
+            Sign up with one click
           </button>
         </div>
       </div>

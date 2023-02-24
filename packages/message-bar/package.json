@@ -1,6 +1,6 @@
 {
   "name": "@times-components/message-bar",
-  "version": "0.7.8",
+  "version": "0.7.18",
   "description": "A component for showing user notifications",
   "main": "dist/index",
   "dev": "src/index",
@@ -10,6 +10,7 @@
     "prettier:diff": "prettier --list-different '**/*.{js,json}'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test:web": "jest --config='./__tests__/jest.config.js'",
+    "test:web:updatesnapshot": "yarn test:web -u",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
@@ -34,8 +35,8 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.0",
-    "@times-components/jest-serializer": "3.5.1",
-    "@times-components/storybook": "4.5.6",
+    "@times-components/jest-serializer": "3.6.0",
+    "@times-components/storybook": "4.6.0",
     "@times-components/test-utils": "2.4.0",
     "@times-components/webpack-configurator": "2.1.0",
     "enzyme": "3.9.0",
@@ -56,10 +57,10 @@
     "react-dom": ">=16.9"
   },
   "dependencies": {
-    "@times-components/icons": "2.19.7",
-    "@times-components/responsive": "0.14.5",
-    "@times-components/ts-styleguide": "1.37.6",
-    "@times-components/utils": "6.15.6",
+    "@times-components/icons": "2.19.17",
+    "@times-components/responsive": "0.14.15",
+    "@times-components/ts-styleguide": "1.40.0",
+    "@times-components/utils": "6.15.16",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },

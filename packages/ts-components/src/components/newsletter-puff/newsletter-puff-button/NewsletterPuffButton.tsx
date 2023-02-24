@@ -29,7 +29,7 @@ export const NewsletterPuffButton = ({
         });
     }
   };
-  const buttonText = 'One-click sign-up';
+  const buttonText = 'Sign up with one click';
 
   return style === 'button' ? (
     <PuffButton onClick={() => handlePress()}>{buttonText}</PuffButton>
