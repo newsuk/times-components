@@ -9,7 +9,7 @@ const styles = {
   },
   iconContainer: {
     alignSelf: "center",
-    paddingBottom: 2
+    paddingBottom: 1
   },
   title: {
     ...fontFactory({
