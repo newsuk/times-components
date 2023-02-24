@@ -1,8 +1,7 @@
 import React from 'react';
+import EditionMasthead from '../index';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom';
-
-import EditionMasthead from '../index';
 
 describe('EditionMasthead', () => {
 
@@ -40,13 +39,16 @@ describe('EditionMasthead', () => {
   it('should render todays date if no date passed', () => {
     const dateNow = new Date();
     const year = dateNow.getFullYear();
-    const month = dateNow.toLocaleString('default', { month: 'long' });
-    const dateToday = dateNow.getDate();
-    const today = `${month} ${dateToday} ${year}`;
+    const month = dateNow.toLocaleString('default', { month: 'long' })
+    const dayNumber = dateNow.getDate().toString().padStart(2, "0");
+    const day = dateNow.toLocaleString('default', { weekday: 'long' })
+    const today = `${day} ${month} ${dayNumber} ${year}`;
 
-    const { getByTestId } = render(<EditionMasthead isSunday={false} />);
-
-    const date = getByTestId('date-time');
-    expect(date).toHaveTextContent(String(today));
+    const { getByText } = render(
+      <EditionMasthead
+        isSunday={false}
+      />
+    );
+    expect(getByText(today)).toBeInTheDocument();
   });
 });
