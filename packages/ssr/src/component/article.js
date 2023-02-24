@@ -82,7 +82,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                   : "unknown section",
                 savingEnabled: sharingSavingFlag,
                 sharingEnabled: sharingSavingFlag,
-                commentsEnabled: commentingFlag
               },
               error,
               isLoading,
