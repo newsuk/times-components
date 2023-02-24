@@ -7,7 +7,8 @@ import {
   Divider,
   Hidden,
   getMediaQueryFromTheme,
-  IconButton
+  IconButton,
+  Drawer
 } from 'newskit';
 
 export const TopNavContainer = styled(Stack)`
@@ -18,6 +19,7 @@ export const TopNavContainer = styled(Stack)`
   ${getMediaQueryFromTheme('xs', 'md')} {
     height: 50px;
   }
+  z-index: 1;
 `;
 
 export const TopNavHide = styled(Hidden)`
@@ -38,10 +40,10 @@ export const AccountMenu = styled(Menu)`
   }
 `;
 
-const setPadding = (space: string) => ({ paddingRight: `${space}` });
+const setPaddingRight = (space: string) => ({ paddingRight: `${space}` });
 export const ScrollMenu = styled(Menu)`
   & li:last-of-type {
-    ${getSpacingCssFromTheme(setPadding, 'space030')};
+    ${getSpacingCssFromTheme(setPaddingRight, 'space030')};
   }
 `;
 export const MenuScrollDivider = styled(Divider)`
@@ -56,5 +58,25 @@ export const TopNavIcon = styled(IconButton)`
   ${getMediaQueryFromTheme('md')} {
     height: 60px;
     width: 60px;
+  }
+
+  & > svg {
+    height: auto;
+    width: auto;
+  }
+`;
+
+const setPadding = (space: string) => ({ padding: `${space}` });
+export const HamburgerMenuContainer = styled(Drawer)`
+  top: 50px;
+  box-shadow: none;
+  z-index: 1;
+
+  ${getMediaQueryFromTheme('md')} {
+    top: 60px;
+  }
+
+  & > div {
+    ${getSpacingCssFromTheme(setPadding, 'space000')};
   }
 `;

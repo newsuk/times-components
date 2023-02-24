@@ -3,6 +3,7 @@ import { boolean } from "@storybook/addon-knobs"
 import { NewsKitProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../theme';
 import { GlobalNav } from './index.tsx';
+import data from '../fixtures/data.json';
 
 <Meta
   title="Newskit/Global Navigation"
@@ -16,7 +17,7 @@ Global Nav
 <Canvas>
   <Story name="GlobalNav Logged In/Out">
     <NewsKitProvider theme={TimesWebLightTheme}>
-      <GlobalNav isLoggedIn={boolean('Is logged in', false)} />
+      <GlobalNav isLoggedIn={boolean('Is logged in', false)} data={data} />
     </NewsKitProvider>
   </Story>
 </Canvas>

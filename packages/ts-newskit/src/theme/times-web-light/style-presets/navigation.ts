@@ -38,16 +38,6 @@ export const navStylePresets = {
       backgroundColor: '#222222'
     }
   },
-  menuState: {
-    base: {
-      backgroundColor: '#151515',
-      color: '{{colors.inkNonEssential}}'
-    },
-    selected: {
-      borderBottom: '4px solid #1E1E1E',
-      color: '{{colors.inkInverse}}'
-    }
-  },
   menuItem: {
     base: {
       backgroundColor: 'transparent',
@@ -99,12 +89,6 @@ export const navStylePresets = {
       color: '{{colors.white}}'
     }
   },
-  divider: {
-    base: {
-      color: '{{colors.interfaceNeutral010}}',
-      borderColor: '#222222'
-    }
-  },
   menuScrollOverlay: {
     base: {
       backgroundImage: '{{overlays.overlayGradientInverseHorizontal}}'
@@ -123,14 +107,6 @@ export const navStylePresets = {
       color: '#9C9C9C',
       borderRadius: '{{sizing.sizing020}}',
       height: '40px'
-    }
-  },
-  anotherBlock: {
-    base: {
-      backgroundColor: '{{colors.neutral100}}',
-      display: 'flex',
-      alignItems: 'center',
-      height: '50px'
     }
   }
 };

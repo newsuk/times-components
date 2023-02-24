@@ -1,6 +1,6 @@
 import React from 'react';
 import { TextField } from 'newskit';
-import { NewsKitSearchIcon } from '../../assets';
+import { NewsKitSearchIcon } from '../../../assets';
 
 const SearchBar: React.FC<{}> = () => (
   <TextField

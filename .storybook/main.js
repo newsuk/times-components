@@ -9,7 +9,8 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-knobs",
     "@storybook/addon-options",
-    "@storybook/addon-viewport"
+    "@storybook/addon-viewport",
+    "storybook-addon-paddings"
   ],
   framework: '@storybook/react',
 };

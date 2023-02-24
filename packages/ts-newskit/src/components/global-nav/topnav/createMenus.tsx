@@ -6,7 +6,7 @@ import {
   MenuDivider,
   useBreakpointKey
 } from 'newskit';
-import { AccountMenu } from './styles';
+import { AccountMenu } from '../styles';
 
 export const createMenu = (menuData: any) => {
   const breakpointKey = useBreakpointKey();

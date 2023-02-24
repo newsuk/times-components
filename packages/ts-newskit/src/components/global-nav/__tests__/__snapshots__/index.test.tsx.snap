@@ -4,7 +4,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-1qbh56z"
+    class="css-yzdpcl"
   >
     <div
       class="css-1ycac6s"
@@ -13,7 +13,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
         aria-controls="hamburgerMenu"
         aria-label="Open Menu"
         aria-selected="false"
-        class="css-bk9nnv"
+        class="css-w74068"
         data-testid="button"
         type="button"
       >
@@ -36,14 +36,14 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
         <button
           aria-controls="searchTimes"
           aria-label="Open Search"
           aria-selected="false"
-          class="css-bk9nnv"
+          class="css-w74068"
           data-testid="button"
           type="button"
         >
@@ -63,7 +63,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
         </button>
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
         <a
@@ -106,7 +106,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
         </a>
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
         <div
@@ -322,7 +322,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-1768wde"
+              class="css-1px1mhi"
               data-testid="divider"
             />
           </li>
@@ -348,7 +348,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-1768wde"
+              class="css-1px1mhi"
               data-testid="divider"
             />
           </li>
@@ -658,7 +658,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
     </div>
     <hr
       aria-hidden="true"
-      class="css-nqo0jk"
+      class="css-1njghbt"
       data-testid="divider"
     />
   </div>
@@ -669,7 +669,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-1qbh56z"
+    class="css-yzdpcl"
   >
     <div
       class="css-1ycac6s"
@@ -678,7 +678,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
         aria-controls="hamburgerMenu"
         aria-label="Open Menu"
         aria-selected="false"
-        class="css-bk9nnv"
+        class="css-w74068"
         data-testid="button"
         type="button"
       >
@@ -701,14 +701,14 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
         <button
           aria-controls="searchTimes"
           aria-label="Open Search"
           aria-selected="false"
-          class="css-bk9nnv"
+          class="css-w74068"
           data-testid="button"
           type="button"
         >
@@ -728,7 +728,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
         </button>
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
         <a
@@ -771,7 +771,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
         </a>
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
         <div
@@ -987,7 +987,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-1768wde"
+              class="css-1px1mhi"
               data-testid="divider"
             />
           </li>
@@ -1013,7 +1013,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-1768wde"
+              class="css-1px1mhi"
               data-testid="divider"
             />
           </li>
@@ -1201,7 +1201,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
     </div>
     <hr
       aria-hidden="true"
-      class="css-nqo0jk"
+      class="css-1njghbt"
       data-testid="divider"
     />
   </div>
