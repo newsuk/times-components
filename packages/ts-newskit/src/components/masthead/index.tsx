@@ -34,6 +34,7 @@ export const EditionMasthead: React.FC<{
                 stylePreset: 'mastheadTime',
                 typographyPreset: 'mastheadTime'
               }}
+              data-testid="date-time"
             />
             <LinkInline href="/" overrides={{ stylePreset: 'mastheadLogo' }}>
               {isSunday ? (

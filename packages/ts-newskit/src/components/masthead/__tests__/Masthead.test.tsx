@@ -48,4 +48,22 @@ describe('EditionMasthead', () => {
     const date = getByText('Wednesday February 22 2023');
     expect(date).toBeInTheDocument();
   });
+
+  it('should render todays date if no date passed', () => {
+    (useBreakpointKey as any).mockReturnValue('md');
+    const dateNow = new Date();
+    const year = dateNow.getFullYear();
+    const month = dateNow.toLocaleString('default', { month: 'long' })
+    const dateToday = dateNow.getDate();
+    const today = `${month} ${dateToday} ${year}`;
+
+    const { getByTestId } = render(
+      <EditionMasthead
+        isSunday={false}
+      />
+    );
+
+    const date = getByTestId('date-time');
+    expect(date).toHaveTextContent(String(today));
+  });
 });
