@@ -83,6 +83,24 @@ export const typographyPresets = Object.fromEntries(
       lineHeight: '{{fonts.fontLineHeight030}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
+    },
+    sectionHeader010: {
+      fontFamily: '{{fonts.fontFamily040.fontFamily}}',
+      fontSize: '{{fonts.fontSize115}}',
+      fontWeight: '{{fonts.fontWeight040}}',
+      lineHeight: '{{fonts.fontLineHeight270}}',
+      letterSpacing: '{{fonts.fontLetterSpacing020}}',
+      fontStretch: 'normal',
+      textAlign: 'center'
+    },
+    mastheadTime: {
+      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+      fontSize: '{{fonts.fontSize010}}',
+      fontWeight: '{{fonts.fontWeight010}}',
+      lineHeight: '{{fonts.fontLineHeight070}}',
+      letterSpacing: '{{fonts.fontLetterSpacing020}}',
+      fontStretch: 'normal',
+      textAlign: 'center'
     }
   }).map(([key, value]) => {
     if (
@@ -91,7 +109,9 @@ export const typographyPresets = Object.fromEntries(
         'editorialHeadline030',
         'editorialHeadline060',
         'editorialHeadline070',
-        'editorialHeadline080'
+        'editorialHeadline080',
+        'sectionHeader010',
+        'mastheadTime'
       ].includes(key)
     ) {
       value.lineHeight = '{{fonts.fontLineHeight030}}';
