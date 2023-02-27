@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.3.1...@times-components/ts-newskit@1.4.0) (2023-02-27)
+
+
+### Features
+
+* **TDP-3011:** Restyled Masthead/Section Name Component ([#3246](https://github.com/newsuk/times-components/issues/3246)) ([0dcab84](https://github.com/newsuk/times-components/commit/0dcab841cd52257f6a4ff981a63452d7894ade9c))
+
+
+
+
+
 ## [1.3.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.3.0...@times-components/ts-newskit@1.3.1) (2023-02-23)
 
 **Note:** Version bump only for package @times-components/ts-newskit
