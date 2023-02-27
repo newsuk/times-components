@@ -9,7 +9,7 @@ const CloseIcon = (props: any) => (
     {...props}
   >
     <mask
-      id="a"
+      id="closeIconMask"
       style={{
         maskType: 'alpha'
       }}
@@ -21,7 +21,7 @@ const CloseIcon = (props: any) => (
     >
       <path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z" />
     </mask>
-    <g mask="url(#a)">
+    <g mask="url(#closeIconMask)">
       <path fill="currentcolor" d="M0 0h24v24H0z" />
     </g>
   </svg>
