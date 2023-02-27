@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.4.1...@times-components/ts-newskit@1.5.0) (2023-02-27)
+
+
+### Features
+
+* **TDP-3109:** update icon mask ids ([#3250](https://github.com/newsuk/times-components/issues/3250)) ([44b447a](https://github.com/newsuk/times-components/commit/44b447a30eac65a8afa2c6ace157ebf243e191bf))
+
+
+
+
+
 ## [1.4.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.4.0...@times-components/ts-newskit@1.4.1) (2023-02-27)
 
 **Note:** Version bump only for package @times-components/ts-newskit
