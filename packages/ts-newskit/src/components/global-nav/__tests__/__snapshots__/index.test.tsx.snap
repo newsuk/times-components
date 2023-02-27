@@ -11,8 +11,8 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
     >
       <button
         aria-controls="hamburgerMenu"
+        aria-expanded="false"
         aria-label="Open Menu"
-        aria-selected="false"
         class="css-w74068"
         data-testid="button"
         type="button"
@@ -41,8 +41,8 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
         />
         <button
           aria-controls="searchTimes"
+          aria-expanded="false"
           aria-label="Open Search"
-          aria-selected="false"
           class="css-w74068"
           data-testid="button"
           type="button"
@@ -74,6 +74,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
             class="css-17x5lw"
           >
             <svg
+              aria-label="The Times & The Sunday Times"
               class="css-j6fc06"
               fill="none"
               height="60"
@@ -271,6 +272,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
             class="css-17x5lw"
           >
             <svg
+              aria-label="The Times & The Sunday Times"
               class="css-j6fc06"
               fill="none"
               height="60"
@@ -676,8 +678,8 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
     >
       <button
         aria-controls="hamburgerMenu"
+        aria-expanded="false"
         aria-label="Open Menu"
-        aria-selected="false"
         class="css-w74068"
         data-testid="button"
         type="button"
@@ -706,8 +708,8 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
         />
         <button
           aria-controls="searchTimes"
+          aria-expanded="false"
           aria-label="Open Search"
-          aria-selected="false"
           class="css-w74068"
           data-testid="button"
           type="button"
@@ -739,6 +741,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
             class="css-17x5lw"
           >
             <svg
+              aria-label="The Times & The Sunday Times"
               class="css-j6fc06"
               fill="none"
               height="60"
@@ -936,6 +939,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
             class="css-17x5lw"
           >
             <svg
+              aria-label="The Times & The Sunday Times"
               class="css-j6fc06"
               fill="none"
               height="60"
@@ -1021,7 +1025,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
             class="nk-menu-item css-1qhmdz3"
           >
             <a
-              class="css-1odfnb9"
+              class="css-oz0cq0"
               data-testid="buttonLink"
               href="/"
             >

@@ -153,7 +153,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-1"
-              id="vertical-item-1"
+              id="vertical-sub-item-1"
             >
               <span
                 class="css-176g0l8"
@@ -180,7 +180,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-2"
-              id="vertical-item-2"
+              id="vertical-sub-item-2"
             >
               <span
                 class="css-176g0l8"
@@ -255,7 +255,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-1"
-              id="vertical-item-1"
+              id="vertical-sub-item-1"
             >
               <span
                 class="css-176g0l8"
@@ -282,7 +282,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/menu-3-item-2"
-              id="vertical-menu-3-item-2"
+              id="vertical-sub-menu-3-item-2"
             >
               <span
                 class="css-176g0l8"
@@ -550,7 +550,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-1"
-              id="vertical-item-1"
+              id="vertical-sub-item-1"
             >
               <span
                 class="css-176g0l8"
@@ -577,7 +577,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-2"
-              id="vertical-item-2"
+              id="vertical-sub-item-2"
             >
               <span
                 class="css-176g0l8"
@@ -652,7 +652,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-1"
-              id="vertical-item-1"
+              id="vertical-sub-item-1"
             >
               <span
                 class="css-176g0l8"
@@ -679,7 +679,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/menu-3-item-2"
-              id="vertical-menu-3-item-2"
+              id="vertical-sub-menu-3-item-2"
             >
               <span
                 class="css-176g0l8"
@@ -944,7 +944,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-1"
-              id="vertical-item-1"
+              id="vertical-sub-item-1"
             >
               <span
                 class="css-176g0l8"
@@ -971,7 +971,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-2"
-              id="vertical-item-2"
+              id="vertical-sub-item-2"
             >
               <span
                 class="css-176g0l8"
@@ -1046,7 +1046,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-1"
-              id="vertical-item-1"
+              id="vertical-sub-item-1"
             >
               <span
                 class="css-176g0l8"
@@ -1073,7 +1073,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/menu-3-item-2"
-              id="vertical-menu-3-item-2"
+              id="vertical-sub-menu-3-item-2"
             >
               <span
                 class="css-176g0l8"

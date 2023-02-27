@@ -30,7 +30,7 @@ const NavigationList: React.FC<{
                     <MenuItem
                       key={item.slug}
                       href={i.url}
-                      id={`vertical-${i.slug}`}
+                      id={`vertical-sub-${i.slug}`}
                       overrides={{
                         stylePreset: 'menuItemL2',
                         typographyPreset: 'newPreset040'

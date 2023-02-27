@@ -54,7 +54,7 @@ export const TopNav: React.FC<TopNavProps> = ({
             aria-label={isHamburgerOpen ? 'Close Menu' : 'Open Menu'}
             onClick={() => toggleHamburger(!isHamburgerOpen)}
             aria-controls="hamburgerMenu"
-            aria-selected={isHamburgerOpen}
+            aria-expanded={isHamburgerOpen}
           >
             {isHamburgerOpen ? <NewsKitCloseIcon /> : <NewsKitBurgerIcon />}
           </TopNavIcon>
@@ -69,7 +69,7 @@ export const TopNav: React.FC<TopNavProps> = ({
               aria-label={searchActive ? 'Close Search' : 'Open Search'}
               onClick={() => setSearchActive(!searchActive)}
               aria-controls="searchTimes"
-              aria-selected={searchActive}
+              aria-expanded={searchActive}
             >
               <NewsKitSearchIcon />
             </TopNavIcon>
@@ -78,7 +78,7 @@ export const TopNav: React.FC<TopNavProps> = ({
               <NavSearch />
             ) : (
               <LinkInline href="/">
-                <NewsKitMasthead />
+                <NewsKitMasthead aria-label="The Times &amp; The Sunday Times" />
               </LinkInline>
             )}
             <Divider vertical />
@@ -93,7 +93,7 @@ export const TopNav: React.FC<TopNavProps> = ({
           </TopNavHide>
           <MastheadMob md lg xl display="flex">
             <LinkInline href="/">
-              <NewsKitMasthead />
+              <NewsKitMasthead aria-label="The Times &amp; The Sunday Times" />
             </LinkInline>
           </MastheadMob>
         </Stack>

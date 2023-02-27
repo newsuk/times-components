@@ -87,6 +87,9 @@ export const navStylePresets = {
       backgroundColor: '{{colors.interactivePrimary030}}',
       borderRadius: '{{sizing.sizing010}}',
       color: '{{colors.white}}'
+    },
+    hover: {
+      backgroundColor: '{{colors.interactivePrimary040}}'
     }
   },
   menuScrollOverlay: {
