@@ -9,7 +9,7 @@ const RoundedCloseIcon = (props: any) => (
     {...props}
   >
     <mask
-      id="a"
+      id="closeIconMask"
       style={{
         maskType: 'alpha'
       }}
@@ -26,7 +26,7 @@ const RoundedCloseIcon = (props: any) => (
         fill="#0A0A0A"
       />
     </mask>
-    <g mask="url(#a)">
+    <g mask="url(#closeIconMask)">
       <path fill="currentcolor" d="M0 0h16v16H0z" />
     </g>
   </svg>
