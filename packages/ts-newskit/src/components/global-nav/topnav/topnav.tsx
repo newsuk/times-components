@@ -11,6 +11,7 @@ import {
   MastheadMob,
   MenuScrollDivider,
   ScrollMenu,
+  ScrollMenuContainer,
   TopNavContainer,
   TopNavHide,
   TopNavIcon
@@ -101,7 +102,7 @@ export const TopNav: React.FC<TopNavProps> = ({
           {createAccountMenu(isLoggedIn, accountMenu)}
         </Visible>
       </TopNavContainer>
-      <Visible xs sm>
+      <ScrollMenuContainer xs sm>
         <Scroll overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}>
           <Stack flow="horizontal-top">
             <ScrollMenu
@@ -117,7 +118,7 @@ export const TopNav: React.FC<TopNavProps> = ({
           </Stack>
         </Scroll>
         <MenuScrollDivider />
-      </Visible>
+      </ScrollMenuContainer>
     </>
   );
 };

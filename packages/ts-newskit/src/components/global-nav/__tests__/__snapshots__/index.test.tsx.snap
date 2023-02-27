@@ -496,7 +496,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
     </div>
   </div>
   <div
-    class="css-gre9re"
+    class="css-1e0kstp"
   >
     <div
       class="css-1r18k3i"
@@ -1041,7 +1041,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
     </div>
   </div>
   <div
-    class="css-gre9re"
+    class="css-1e0kstp"
   >
     <div
       class="css-1r18k3i"

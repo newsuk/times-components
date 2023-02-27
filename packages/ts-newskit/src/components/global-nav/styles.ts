@@ -8,7 +8,8 @@ import {
   Hidden,
   getMediaQueryFromTheme,
   IconButton,
-  Drawer
+  Drawer,
+  Visible
 } from 'newskit';
 
 export const TopNavContainer = styled(Stack)`
@@ -37,6 +38,12 @@ const setMargin = (space: string) => ({ margin: `6px ${space}` });
 export const AccountMenu = styled(Menu)`
   & li:last-of-type {
     ${getSpacingCssFromTheme(setMargin, 'space040')};
+  }
+`;
+
+export const ScrollMenuContainer = styled(Visible)`
+  & > div {
+    z-index: 0;
   }
 `;
 
@@ -70,7 +77,7 @@ const setPadding = (space: string) => ({ padding: `${space}` });
 export const HamburgerMenuContainer = styled(Drawer)`
   top: 50px;
   box-shadow: none;
-  z-index: 1;
+  z-index: 2;
 
   ${getMediaQueryFromTheme('md')} {
     top: 60px;
