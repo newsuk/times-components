@@ -4,7 +4,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
 <DocumentFragment>
   <nav
     aria-label="menu-vertical"
-    class="css-1fherrp"
+    class="css-oyjuht"
     data-testid="menu-container"
     role="navigation"
   >
@@ -107,7 +107,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -153,7 +153,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-1"
-              id="vertical-item-1"
+              id="vertical-sub-item-1"
             >
               <span
                 class="css-176g0l8"
@@ -169,7 +169,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           >
             <hr
               aria-hidden="true"
-              class="css-1uuatn7"
+              class="css-1s3b7bb"
               data-testid="divider"
             />
           </li>
@@ -180,7 +180,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-2"
-              id="vertical-item-2"
+              id="vertical-sub-item-2"
             >
               <span
                 class="css-176g0l8"
@@ -196,7 +196,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           >
             <hr
               aria-hidden="true"
-              class="css-1uuatn7"
+              class="css-1s3b7bb"
               data-testid="divider"
             />
           </li>
@@ -209,7 +209,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -255,7 +255,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-1"
-              id="vertical-item-1"
+              id="vertical-sub-item-1"
             >
               <span
                 class="css-176g0l8"
@@ -271,7 +271,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           >
             <hr
               aria-hidden="true"
-              class="css-1uuatn7"
+              class="css-1s3b7bb"
               data-testid="divider"
             />
           </li>
@@ -282,7 +282,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/menu-3-item-2"
-              id="vertical-menu-3-item-2"
+              id="vertical-sub-menu-3-item-2"
             >
               <span
                 class="css-176g0l8"
@@ -298,7 +298,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           >
             <hr
               aria-hidden="true"
-              class="css-1uuatn7"
+              class="css-1s3b7bb"
               data-testid="divider"
             />
           </li>
@@ -311,7 +311,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -331,7 +331,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -358,7 +358,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -385,7 +385,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -398,7 +398,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
 <DocumentFragment>
   <nav
     aria-label="menu-vertical"
-    class="css-1fherrp"
+    class="css-oyjuht"
     data-testid="menu-container"
     role="navigation"
   >
@@ -504,7 +504,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -550,7 +550,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-1"
-              id="vertical-item-1"
+              id="vertical-sub-item-1"
             >
               <span
                 class="css-176g0l8"
@@ -566,7 +566,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
           >
             <hr
               aria-hidden="true"
-              class="css-1uuatn7"
+              class="css-1s3b7bb"
               data-testid="divider"
             />
           </li>
@@ -577,7 +577,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-2"
-              id="vertical-item-2"
+              id="vertical-sub-item-2"
             >
               <span
                 class="css-176g0l8"
@@ -593,7 +593,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
           >
             <hr
               aria-hidden="true"
-              class="css-1uuatn7"
+              class="css-1s3b7bb"
               data-testid="divider"
             />
           </li>
@@ -606,7 +606,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -652,7 +652,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-1"
-              id="vertical-item-1"
+              id="vertical-sub-item-1"
             >
               <span
                 class="css-176g0l8"
@@ -668,7 +668,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
           >
             <hr
               aria-hidden="true"
-              class="css-1uuatn7"
+              class="css-1s3b7bb"
               data-testid="divider"
             />
           </li>
@@ -679,7 +679,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/menu-3-item-2"
-              id="vertical-menu-3-item-2"
+              id="vertical-sub-menu-3-item-2"
             >
               <span
                 class="css-176g0l8"
@@ -695,7 +695,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
           >
             <hr
               aria-hidden="true"
-              class="css-1uuatn7"
+              class="css-1s3b7bb"
               data-testid="divider"
             />
           </li>
@@ -708,7 +708,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -728,7 +728,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -755,7 +755,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -782,7 +782,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -795,7 +795,7 @@ exports[`HamburgerMenu should render the component 1`] = `
 <DocumentFragment>
   <nav
     aria-label="menu-vertical"
-    class="css-1fherrp"
+    class="css-oyjuht"
     data-testid="menu-container"
     role="navigation"
   >
@@ -898,7 +898,7 @@ exports[`HamburgerMenu should render the component 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -944,7 +944,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-1"
-              id="vertical-item-1"
+              id="vertical-sub-item-1"
             >
               <span
                 class="css-176g0l8"
@@ -960,7 +960,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-1uuatn7"
+              class="css-1s3b7bb"
               data-testid="divider"
             />
           </li>
@@ -971,7 +971,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-2"
-              id="vertical-item-2"
+              id="vertical-sub-item-2"
             >
               <span
                 class="css-176g0l8"
@@ -987,7 +987,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-1uuatn7"
+              class="css-1s3b7bb"
               data-testid="divider"
             />
           </li>
@@ -1000,7 +1000,7 @@ exports[`HamburgerMenu should render the component 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -1046,7 +1046,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/item-1"
-              id="vertical-item-1"
+              id="vertical-sub-item-1"
             >
               <span
                 class="css-176g0l8"
@@ -1062,7 +1062,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-1uuatn7"
+              class="css-1s3b7bb"
               data-testid="divider"
             />
           </li>
@@ -1073,7 +1073,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               class="css-46ys3g"
               data-testid="buttonLink"
               href="/menu-3-item-2"
-              id="vertical-menu-3-item-2"
+              id="vertical-sub-menu-3-item-2"
             >
               <span
                 class="css-176g0l8"
@@ -1089,7 +1089,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-1uuatn7"
+              class="css-1s3b7bb"
               data-testid="divider"
             />
           </li>
@@ -1102,7 +1102,7 @@ exports[`HamburgerMenu should render the component 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -1122,7 +1122,7 @@ exports[`HamburgerMenu should render the component 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -1149,7 +1149,7 @@ exports[`HamburgerMenu should render the component 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>
@@ -1176,7 +1176,7 @@ exports[`HamburgerMenu should render the component 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1uuatn7"
+          class="css-1s3b7bb"
           data-testid="divider"
         />
       </li>

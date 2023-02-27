@@ -25,7 +25,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
   >
     <hr
       aria-hidden="true"
-      class="css-1768wde"
+      class="css-1px1mhi"
       data-testid="divider"
     />
   </li>
@@ -71,7 +71,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
           class="css-q2wmom"
           data-testid="buttonLink"
           href="/item-1"
-          id="vertical-item-1"
+          id="vertical-sub-item-1"
         >
           <span
             class="css-176g0l8"
@@ -87,7 +87,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
       </li>
@@ -98,7 +98,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
           class="css-q2wmom"
           data-testid="buttonLink"
           href="/item-2"
-          id="vertical-item-2"
+          id="vertical-sub-item-2"
         >
           <span
             class="css-176g0l8"
@@ -114,7 +114,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
       </li>
@@ -127,7 +127,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
   >
     <hr
       aria-hidden="true"
-      class="css-1768wde"
+      class="css-1px1mhi"
       data-testid="divider"
     />
   </li>
@@ -173,7 +173,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
           class="css-q2wmom"
           data-testid="buttonLink"
           href="/item-1"
-          id="vertical-item-1"
+          id="vertical-sub-item-1"
         >
           <span
             class="css-176g0l8"
@@ -189,7 +189,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
       </li>
@@ -200,7 +200,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
           class="css-q2wmom"
           data-testid="buttonLink"
           href="/menu-3-item-2"
-          id="vertical-menu-3-item-2"
+          id="vertical-sub-menu-3-item-2"
         >
           <span
             class="css-176g0l8"
@@ -216,7 +216,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
       </li>
@@ -229,7 +229,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
   >
     <hr
       aria-hidden="true"
-      class="css-1768wde"
+      class="css-1px1mhi"
       data-testid="divider"
     />
   </li>
@@ -261,7 +261,7 @@ exports[`NavigationList renders the component without nested items 1`] = `
   >
     <hr
       aria-hidden="true"
-      class="css-1768wde"
+      class="css-1px1mhi"
       data-testid="divider"
     />
   </li>
@@ -288,7 +288,7 @@ exports[`NavigationList renders the component without nested items 1`] = `
   >
     <hr
       aria-hidden="true"
-      class="css-1768wde"
+      class="css-1px1mhi"
       data-testid="divider"
     />
   </li>

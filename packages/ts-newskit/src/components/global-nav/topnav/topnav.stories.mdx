@@ -1,7 +1,9 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs'
+import { boolean } from "@storybook/addon-knobs"
 import { NewsKitProvider } from 'newskit';
-import { TimesWebLightTheme } from '../../theme';
+import { TimesWebLightTheme } from '../../../theme';
 import { TopNav } from "./topnav.tsx";
+import data from '../../fixtures/data.json';
 
 <Meta
   title="Newskit/TopNavigation"
@@ -14,7 +16,7 @@ Only works at XS, SM, LG and XL viewports. Change the viewport above to see the 
 <Canvas>
   <Story name="TopNav">
     <NewsKitProvider theme={TimesWebLightTheme}>
-      <TopNav/>
+      <TopNav mainMenu={data.mainMenuItems} accountMenu={data.accountMenuItems} isLoggedIn={boolean('Is logged in', false)} />
     </NewsKitProvider>
   </Story>
 </Canvas>

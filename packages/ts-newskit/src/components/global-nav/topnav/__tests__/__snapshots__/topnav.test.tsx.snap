@@ -4,16 +4,16 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-1qbh56z"
+    class="css-yzdpcl"
   >
     <div
       class="css-1ycac6s"
     >
       <button
         aria-controls="hamburgerMenu"
+        aria-expanded="false"
         aria-label="Open Menu"
-        aria-selected="false"
-        class="css-bk9nnv"
+        class="css-w74068"
         data-testid="button"
         type="button"
       >
@@ -36,14 +36,14 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
         <button
           aria-controls="searchTimes"
+          aria-expanded="false"
           aria-label="Open Search"
-          aria-selected="false"
-          class="css-bk9nnv"
+          class="css-w74068"
           data-testid="button"
           type="button"
         >
@@ -63,7 +63,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
         </button>
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
         <a
@@ -74,6 +74,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
             class="css-17x5lw"
           >
             <svg
+              aria-label="The Times & The Sunday Times"
               class="css-j6fc06"
               fill="none"
               height="60"
@@ -106,7 +107,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
         </a>
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
         <div
@@ -271,6 +272,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
             class="css-17x5lw"
           >
             <svg
+              aria-label="The Times & The Sunday Times"
               class="css-j6fc06"
               fill="none"
               height="60"
@@ -322,7 +324,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-1768wde"
+              class="css-1px1mhi"
               data-testid="divider"
             />
           </li>
@@ -348,7 +350,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-1768wde"
+              class="css-1px1mhi"
               data-testid="divider"
             />
           </li>
@@ -494,7 +496,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
     </div>
   </div>
   <div
-    class="css-gre9re"
+    class="css-1e0kstp"
   >
     <div
       class="css-1r18k3i"
@@ -658,7 +660,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
     </div>
     <hr
       aria-hidden="true"
-      class="css-nqo0jk"
+      class="css-1njghbt"
       data-testid="divider"
     />
   </div>
@@ -669,16 +671,16 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
 <DocumentFragment>
   <div
     aria-label="header"
-    class="css-1qbh56z"
+    class="css-yzdpcl"
   >
     <div
       class="css-1ycac6s"
     >
       <button
         aria-controls="hamburgerMenu"
+        aria-expanded="false"
         aria-label="Open Menu"
-        aria-selected="false"
-        class="css-bk9nnv"
+        class="css-w74068"
         data-testid="button"
         type="button"
       >
@@ -701,14 +703,14 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
       >
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
         <button
           aria-controls="searchTimes"
+          aria-expanded="false"
           aria-label="Open Search"
-          aria-selected="false"
-          class="css-bk9nnv"
+          class="css-w74068"
           data-testid="button"
           type="button"
         >
@@ -728,7 +730,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
         </button>
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
         <a
@@ -739,6 +741,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
             class="css-17x5lw"
           >
             <svg
+              aria-label="The Times & The Sunday Times"
               class="css-j6fc06"
               fill="none"
               height="60"
@@ -771,7 +774,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
         </a>
         <hr
           aria-hidden="true"
-          class="css-1768wde"
+          class="css-1px1mhi"
           data-testid="divider"
         />
         <div
@@ -936,6 +939,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
             class="css-17x5lw"
           >
             <svg
+              aria-label="The Times & The Sunday Times"
               class="css-j6fc06"
               fill="none"
               height="60"
@@ -987,7 +991,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-1768wde"
+              class="css-1px1mhi"
               data-testid="divider"
             />
           </li>
@@ -1013,7 +1017,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
           >
             <hr
               aria-hidden="true"
-              class="css-1768wde"
+              class="css-1px1mhi"
               data-testid="divider"
             />
           </li>
@@ -1021,7 +1025,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
             class="nk-menu-item css-1qhmdz3"
           >
             <a
-              class="css-1odfnb9"
+              class="css-oz0cq0"
               data-testid="buttonLink"
               href="/"
             >
@@ -1037,7 +1041,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
     </div>
   </div>
   <div
-    class="css-gre9re"
+    class="css-1e0kstp"
   >
     <div
       class="css-1r18k3i"
@@ -1201,7 +1205,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
     </div>
     <hr
       aria-hidden="true"
-      class="css-nqo0jk"
+      class="css-1njghbt"
       data-testid="divider"
     />
   </div>

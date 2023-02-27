@@ -1,11 +1,11 @@
 import React from 'react';
-import { render } from '../../utils/test-utils';
+import { render, screen, fireEvent } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
-
+import data from '../../fixtures/data.json';
 import { GlobalNav } from '../index';
 
 const renderComponent = (isLoggedIn?: boolean) =>
-  render(<GlobalNav isLoggedIn={isLoggedIn} />);
+  render(<GlobalNav {...{ isLoggedIn, data }} />);
 
 describe('Render GlobalNav', () => {
   it('should render the component in loggedIn state', () => {
@@ -16,5 +16,29 @@ describe('Render GlobalNav', () => {
   it('should render the component in loggedOut state', () => {
     const { asFragment } = renderComponent();
     expect(asFragment()).toMatchSnapshot();
+  });
+});
+
+describe('Hamburger toggle', () => {
+  it('should trigger function when hamburger icon clicked', async () => {
+    renderComponent();
+    const hamburgerBtn = screen.getByRole('button', { name: 'Open Menu' });
+
+    expect(hamburgerBtn).toBeVisible();
+
+    fireEvent.click(hamburgerBtn);
+    expect(hamburgerBtn.getAttribute('aria-label')).toEqual('Close Menu');
+  });
+
+  it('should close HamburgerMenu when overlay is clicked', async () => {
+    renderComponent();
+    const hamburgerBtn = screen.getByRole('button', { name: 'Open Menu' });
+
+    fireEvent.click(hamburgerBtn);
+
+    const hamburgerOverlay = screen.getByTestId('overlay');
+    fireEvent.click(hamburgerOverlay);
+
+    expect(hamburgerBtn.getAttribute('aria-label')).toEqual('Open Menu');
   });
 });

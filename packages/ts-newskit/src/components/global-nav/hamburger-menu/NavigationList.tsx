@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { MenuSub, MenuItem, MenuDivider } from 'newskit';
-import { MenuItemParent } from './types';
+import { MenuItemParent } from '../types';
 
 const NavigationList: React.FC<{
   data: MenuItemParent[];
@@ -12,7 +12,7 @@ const NavigationList: React.FC<{
       {data.map(
         item =>
           item.items && onExpand ? (
-            <>
+            <Fragment key={item.slug}>
               <MenuSub
                 title={item.title}
                 id={`vertical-${item.slug}`}
@@ -26,11 +26,11 @@ const NavigationList: React.FC<{
                 }}
               >
                 {item.items.map(i => (
-                  <>
+                  <Fragment key={`sub-${i.slug}`}>
                     <MenuItem
                       key={item.slug}
                       href={i.url}
-                      id={`vertical-${i.slug}`}
+                      id={`vertical-sub-${i.slug}`}
                       overrides={{
                         stylePreset: 'menuItemL2',
                         typographyPreset: 'newPreset040'
@@ -39,13 +39,13 @@ const NavigationList: React.FC<{
                       {i.title}
                     </MenuItem>
                     <MenuDivider />
-                  </>
+                  </Fragment>
                 ))}
               </MenuSub>
               <MenuDivider />
-            </>
+            </Fragment>
           ) : (
-            <>
+            <Fragment key={item.slug}>
               <MenuItem
                 key={item.slug}
                 href={item.url}
@@ -58,7 +58,7 @@ const NavigationList: React.FC<{
                 {item.title}
               </MenuItem>
               <MenuDivider />
-            </>
+            </Fragment>
           )
       )}
     </>

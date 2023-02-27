@@ -6,7 +6,7 @@ export const Navigator: React.FC<{
   options: SecondaryMenuOptions;
   title: string;
   subMenuTitle: string;
-}> = ({ title, options, subMenuTitle, children }) => {
+}> = ({ title, options, subMenuTitle }) => {
   const { isExpanded, setIsExpanded } = options;
 
   return (
@@ -31,7 +31,7 @@ export const Navigator: React.FC<{
           }
         }}
       >
-        {children}
+        {null}
       </MenuSub>
     </Block>
   );
