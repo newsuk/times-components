@@ -1,0 +1,19 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs'
+import { EditionMasthead } from "./index";
+import { boolean } from "@storybook/addon-knobs"
+
+import { ThemeProvider } from 'newskit';
+import { TimesWebLightTheme } from '../../theme';
+
+<Meta title="Newskit/Masthead" component={EditionMasthead} />
+
+# Masthead component
+This is the basic framework required for The Times/The Sunday Times masthead.
+
+<Canvas>
+  <Story name="Masthead">
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <EditionMasthead isSunday={boolean('Is it Sunday', false)} />
+    </ThemeProvider>
+  </Story>
+</Canvas>

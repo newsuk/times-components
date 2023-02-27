@@ -23,6 +23,14 @@
     },
     "cropAdjustments": {}
   },
+  "fontFamily040": {
+    "fontFamily": "TimesModern-Bold",
+    "cropConfig": {
+      "top": 0,
+      "bottom": 0
+    },
+    "cropAdjustments": {}
+  },
   "newFontFamily": {
     "fontFamily": "Roboto-Medium",
     "cropConfig": {
@@ -34,6 +42,7 @@
   "fontWeight010": 400,
   "fontWeight020": 500,
   "fontWeight030": 700,
+  "fontWeight040": 800,
   "fontSize010": "12px",
   "newFontSize010": "13px",
   "fontSize020": "14px",
@@ -47,6 +56,7 @@
   "fontSize090": "32px",
   "fontSize100": "36px",
   "fontSize110": "40px",
+  "fontSize115": "44px",
   "fontSize120": "56px",
   "fontSize130": "64px",
   "fontSize140": "72px",
@@ -64,6 +74,9 @@
   "fontLineHeight120": "1.500",
   "fontLineHeight130": "1.556",
   "fontLineHeight140": "1.667",
+  "fontLineHeight270": "2.750",
   "fontLetterSpacing010": "0%",
-  "fontLetterSpacing020": "10%"
+  "fontLetterSpacing020": "10%",
+  "newFontSize020": "44px",
+  "newFontLineHeight010": "2.750"
 }

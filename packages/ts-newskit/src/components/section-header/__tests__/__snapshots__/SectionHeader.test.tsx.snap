@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section Header should render News Section Header 1`] = `
+<DocumentFragment>
+  <section
+    class="css-xg622u"
+  >
+    <h1
+      class="nk-headline-heading css-e5fswc"
+    >
+      News
+    </h1>
+  </section>
+</DocumentFragment>
+`;
