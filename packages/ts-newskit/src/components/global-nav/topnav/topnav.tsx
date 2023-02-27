@@ -1,34 +1,38 @@
 import React, { useState } from 'react';
 import { Menu, Visible, Divider, Scroll, Stack, LinkInline } from 'newskit';
 import { createAccountMenu, createMenu } from './createMenus';
-import { mainMenuItems, accountMenuItems } from './menu-items.json';
 import {
   NewsKitBurgerIcon,
+  NewsKitCloseIcon,
   NewsKitMasthead,
   NewsKitSearchIcon
-} from '../../assets';
+} from '../../../assets';
 import {
   MastheadMob,
   MenuScrollDivider,
   ScrollMenu,
+  ScrollMenuContainer,
   TopNavContainer,
   TopNavHide,
   TopNavIcon
-} from './styles';
+} from '../styles';
 import NavSearch from './search';
 
 type TopNavProps = {
   isLoggedIn?: boolean;
+  isHamburgerOpen: boolean;
+  toggleHamburger: (isHamburgerOpen: boolean) => void;
   mainMenu?: any;
   accountMenu?: any;
 };
 
 export const TopNav: React.FC<TopNavProps> = ({
-  mainMenu = mainMenuItems,
-  accountMenu = accountMenuItems,
+  mainMenu,
+  accountMenu,
+  isHamburgerOpen,
+  toggleHamburger,
   isLoggedIn = false
 }) => {
-  const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
   const [searchActive, setSearchActive] = useState<boolean>(false);
 
   return (
@@ -48,12 +52,12 @@ export const TopNav: React.FC<TopNavProps> = ({
             overrides={{
               stylePreset: 'buttonTopNav'
             }}
-            aria-label={hamburgerActive ? 'Close Menu' : 'Open Menu'}
-            onClick={() => setHamburgerActive(!hamburgerActive)}
+            aria-label={isHamburgerOpen ? 'Close Menu' : 'Open Menu'}
+            onClick={() => toggleHamburger(!isHamburgerOpen)}
             aria-controls="hamburgerMenu"
-            aria-selected={hamburgerActive}
+            aria-expanded={isHamburgerOpen}
           >
-            <NewsKitBurgerIcon />
+            {isHamburgerOpen ? <NewsKitCloseIcon /> : <NewsKitBurgerIcon />}
           </TopNavIcon>
           <TopNavHide xs sm display="flex">
             <Divider vertical />
@@ -66,7 +70,7 @@ export const TopNav: React.FC<TopNavProps> = ({
               aria-label={searchActive ? 'Close Search' : 'Open Search'}
               onClick={() => setSearchActive(!searchActive)}
               aria-controls="searchTimes"
-              aria-selected={searchActive}
+              aria-expanded={searchActive}
             >
               <NewsKitSearchIcon />
             </TopNavIcon>
@@ -75,7 +79,7 @@ export const TopNav: React.FC<TopNavProps> = ({
               <NavSearch />
             ) : (
               <LinkInline href="/">
-                <NewsKitMasthead />
+                <NewsKitMasthead aria-label="The Times &amp; The Sunday Times" />
               </LinkInline>
             )}
             <Divider vertical />
@@ -90,7 +94,7 @@ export const TopNav: React.FC<TopNavProps> = ({
           </TopNavHide>
           <MastheadMob md lg xl display="flex">
             <LinkInline href="/">
-              <NewsKitMasthead />
+              <NewsKitMasthead aria-label="The Times &amp; The Sunday Times" />
             </LinkInline>
           </MastheadMob>
         </Stack>
@@ -98,7 +102,7 @@ export const TopNav: React.FC<TopNavProps> = ({
           {createAccountMenu(isLoggedIn, accountMenu)}
         </Visible>
       </TopNavContainer>
-      <Visible xs sm>
+      <ScrollMenuContainer xs sm>
         <Scroll overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}>
           <Stack flow="horizontal-top">
             <ScrollMenu
@@ -114,7 +118,7 @@ export const TopNav: React.FC<TopNavProps> = ({
           </Stack>
         </Scroll>
         <MenuScrollDivider />
-      </Visible>
+      </ScrollMenuContainer>
     </>
   );
 };

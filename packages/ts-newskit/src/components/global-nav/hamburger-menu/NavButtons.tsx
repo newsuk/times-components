@@ -60,7 +60,7 @@ export const LoggedInNavButtons: React.FC<{
 );
 
 const NavButtonSection: React.FC<{
-  loggedIn: boolean;
+  loggedIn?: boolean;
   handleClick: (title: string) => void;
   selected: string;
 }> = ({ loggedIn, handleClick, selected }) =>

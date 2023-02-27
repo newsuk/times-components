@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { TextField, ScreenReaderOnly, IconButton } from 'newskit';
-import { NewsKitRoundedCloseIcon } from '../../assets';
+import { NewsKitRoundedCloseIcon } from '../../../assets';
 
 const NavSearch = () => {
   const [searchText, setSearchText] = useState<string>('');

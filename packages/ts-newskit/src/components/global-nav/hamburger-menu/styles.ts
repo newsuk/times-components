@@ -1,4 +1,4 @@
-import { Menu, styled, getMediaQueryFromTheme } from 'newskit';
+import { Menu, styled } from 'newskit';
 
 export const StyledMenu = styled(Menu)`
   ul {
@@ -15,7 +15,4 @@ export const MenuNav = styled(Menu)`
   overflow-y: scroll;
   background-color: #151515;
   width: 100%;
-  ${getMediaQueryFromTheme('md')} {
-    width: 320px;
-  }
 `;

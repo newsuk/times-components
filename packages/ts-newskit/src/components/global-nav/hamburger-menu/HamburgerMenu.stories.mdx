@@ -6,8 +6,8 @@ import { boolean, object } from "@storybook/addon-knobs"
 import NavButtonSection, { LoggedInNavButtons, LoggedOutNavButtons } from './NavButtons.tsx'
 import LoggedInMenuItem from './LoggedInMenuItem.tsx';
 import LoggedOutNavButton from './LoggedOutNavButton';
-import data from './fixtures/data.json';
-import { TimesWebLightTheme } from '../../theme';
+import data from '../../fixtures/data.json';
+import { TimesWebLightTheme } from '../../../theme';
 import { ThemeProvider } from 'newskit';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
@@ -29,7 +29,9 @@ Hamburger Menu
 
 <Canvas>
   <Story name="Hamburger Menu">
-    <HamburgerMenu data={data} loggedIn={boolean('Is logged in', false)} />
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <HamburgerMenu data={data} isLoggedIn={boolean('Is logged in', false)} />
+    </ThemeProvider>
   </Story>
 </Canvas>
 
@@ -37,7 +39,9 @@ Hamburger Menu Logged In - Buttons visible on XS and SM screens
 
 <Canvas>
   <Story name="HamburgerMenu Logged in">
-    <HamburgerMenu data={data} loggedIn={true} />
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <HamburgerMenu data={data} isLoggedIn={true} />
+    </ThemeProvider>
   </Story>
 </Canvas>
 
@@ -45,7 +49,9 @@ Hamburger Menu Logged out -  Buttons available on XS and SM screens
 
 <Canvas>
   <Story name="HamburgerMenu Logged out">
-      <HamburgerMenu data={data} loggedIn={false} />
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <HamburgerMenu data={data} isLoggedIn={false} />
+    </ThemeProvider>
   </Story>
 </Canvas>
 
@@ -99,6 +105,8 @@ Hamburger Menu - With toggles for Logged in state and data object.
 
 <Canvas>
   <Story name="HamburgerMenu - Data edit">
-    <HamburgerMenu data={object('data', data)} loggedIn={boolean('Is logged in', false)} />
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <HamburgerMenu data={object('data', data)} isLoggedIn={boolean('Is logged in', false)} />
+    </ThemeProvider>
   </Story>
 </Canvas>

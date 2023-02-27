@@ -1,8 +1,9 @@
 import React from 'react';
-import { screen, render, within, fireEvent } from '../../utils/test-utils';
+import { screen, render, within, fireEvent } from '../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { useBreakpointKey } from 'newskit';
 import { TopNav } from '../topnav';
+import data from '../../../fixtures/data.json';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
@@ -15,11 +16,23 @@ afterAll(() => {
   jest.restoreAllMocks();
 });
 
+const renderComponent = (isLoggedIn?: boolean) =>
+  render(
+    <TopNav
+      isLoggedIn={isLoggedIn}
+      mainMenu={data.mainMenuItems}
+      accountMenu={data.accountMenuItems}
+      isHamburgerOpen={false}
+      toggleHamburger={jest.fn}
+    />
+  );
+
 describe('createMenu', () => {
   it('should render the correct menu length at "lg" breakpoint', async () => {
     (useBreakpointKey as any).mockReturnValue('lg');
 
-    render(<TopNav />);
+    renderComponent();
+
     const menu = screen.getByRole('list');
     const menuItems = within(menu).queryAllByRole('listitem');
 
@@ -29,7 +42,7 @@ describe('createMenu', () => {
   it('should render the correct menu length at other breakpoints', async () => {
     (useBreakpointKey as any).mockReturnValue('xs');
 
-    render(<TopNav />);
+    renderComponent();
     const menu = screen.getByRole('list');
     const menuItems = within(menu).queryAllByRole('listitem');
 
@@ -39,7 +52,7 @@ describe('createMenu', () => {
   it('should trigger "selected" value when <MenuSub> is clicked', async () => {
     (useBreakpointKey as any).mockReturnValue('lg');
 
-    render(<TopNav />);
+    renderComponent();
     const menu = screen.getByRole('list');
     const MenuSub = within(menu).getByTestId('menu-sub-button');
 
@@ -50,7 +63,7 @@ describe('createMenu', () => {
 
 describe('accountCreateMenu', () => {
   it('isLoggedIn Menu', async () => {
-    render(<TopNav isLoggedIn />);
+    renderComponent(true);
     const menu = screen.getByLabelText('My Account Menu');
     const MenuSub = within(menu).getByTestId('menu-sub-button');
 

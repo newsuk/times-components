@@ -1,13 +1,21 @@
 import React from 'react';
 import { fireEvent } from '@testing-library/react';
-import { render, screen } from '../../utils/test-utils';
+import { render, screen } from '../../../utils/test-utils';
 import '@testing-library/jest-dom';
-
 import { TopNav } from '../topnav';
 import NavSearch from '../search';
+import data from '../../../fixtures/data.json';
 
 const renderComponent = (isLoggedIn?: boolean) =>
-  render(<TopNav isLoggedIn={isLoggedIn} />);
+  render(
+    <TopNav
+      isLoggedIn={isLoggedIn}
+      mainMenu={data.mainMenuItems}
+      accountMenu={data.accountMenuItems}
+      isHamburgerOpen={false}
+      toggleHamburger={jest.fn}
+    />
+  );
 
 describe('Render TopNav', () => {
   it('should render the component in loggedIn state', () => {
@@ -22,16 +30,6 @@ describe('Render TopNav', () => {
 });
 
 describe('TopNav button functions', () => {
-  it('should trigger function when hamburger icon clicked', async () => {
-    renderComponent();
-    const hamburgerBtn = screen.getByRole('button', { name: 'Open Menu' });
-
-    expect(hamburgerBtn).toBeVisible();
-
-    fireEvent.click(hamburgerBtn);
-    expect(hamburgerBtn.getAttribute('aria-label')).toEqual('Close Menu');
-  });
-
   it('should trigger function when search icon clicked', async () => {
     renderComponent();
     const searchBtn = screen.getByRole('button', {

@@ -15,12 +15,11 @@ export const NavItems: React.FC<{
   return (
     <>
       {data.map(item => (
-        <Block stylePreset="blockDefault">
+        <Block stylePreset="blockDefault" key={item.slug}>
           <MenuItem
             overrides={{ ...menuItemsPreset, typographyPreset: 'newPreset020' }}
             href={item.url}
             id={`vertical-${item.slug}`}
-            key={item.slug}
             onClick={() => handleSelect(item.title)}
           >
             {item.title}
