@@ -11,7 +11,7 @@ import { NewsKitTimesMasthead, NewsKitSundayTimesMasthead } from '../../assets';
 
 const dateNow = new Date().toISOString();
 
-export const EditionMasthead: React.FC<{
+const EditionMasthead: React.FC<{
   isSunday: boolean;
   todaysDate?: string;
 }> = ({ isSunday, todaysDate = dateNow }) => {
