@@ -198,7 +198,7 @@ Object {
       >
         <mask
           height="24"
-          id="a"
+          id="closeIconMask"
           maskUnits="userSpaceOnUse"
           style="mask-type: alpha;"
           width="24"
@@ -210,7 +210,7 @@ Object {
           />
         </mask>
         <g
-          mask="url(#a)"
+          mask="url(#closeIconMask)"
         >
           <path
             d="M0 0h24v24H0z"
@@ -230,7 +230,7 @@ Object {
     >
       <mask
         height="24"
-        id="a"
+        id="closeIconMask"
         maskUnits="userSpaceOnUse"
         style="mask-type: alpha;"
         width="24"
@@ -242,7 +242,7 @@ Object {
         />
       </mask>
       <g
-        mask="url(#a)"
+        mask="url(#closeIconMask)"
       >
         <path
           d="M0 0h24v24H0z"
@@ -440,7 +440,7 @@ Object {
       >
         <mask
           height="16"
-          id="a"
+          id="roundedCloseIconMask"
           maskUnits="userSpaceOnUse"
           style="mask-type: alpha;"
           width="16"
@@ -455,7 +455,7 @@ Object {
           />
         </mask>
         <g
-          mask="url(#a)"
+          mask="url(#roundedCloseIconMask)"
         >
           <path
             d="M0 0h16v16H0z"
@@ -475,7 +475,7 @@ Object {
     >
       <mask
         height="16"
-        id="a"
+        id="roundedCloseIconMask"
         maskUnits="userSpaceOnUse"
         style="mask-type: alpha;"
         width="16"
@@ -490,7 +490,7 @@ Object {
         />
       </mask>
       <g
-        mask="url(#a)"
+        mask="url(#roundedCloseIconMask)"
       >
         <path
           d="M0 0h16v16H0z"
