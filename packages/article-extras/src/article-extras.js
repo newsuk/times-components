@@ -68,8 +68,8 @@ const ArticleExtras = ({
                   articleHeadline={articleHeadline}
                   articleUrl={articleUrl}
                   onCopyLink={() => showMessage("Article link copied")}
-                  onSaveToMyArticles={() => { }}
-                  onShareOnEmail={() => { }}
+                  onSaveToMyArticles={() => {}}
+                  onShareOnEmail={() => {}}
                   savingEnabled={savingEnabled}
                   sharingEnabled={sharingEnabled}
                 />

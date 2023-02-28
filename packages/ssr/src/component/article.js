@@ -32,8 +32,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     swgProductId,
     getFallbackThumbnailUrl169,
     zephrDivs,
-    sharingSavingFlag,
-    commentingFlag
+    sharingSavingFlag
   } = data;
 
   return React.createElement(
@@ -81,15 +80,15 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                   ? getSectionNameForAnalytics(article)
                   : "unknown section",
                 savingEnabled: sharingSavingFlag,
-                sharingEnabled: sharingSavingFlag,
+                sharingEnabled: sharingSavingFlag
               },
               error,
               isLoading,
               logoUrl,
               navigationMode,
-              onAuthorPress: () => { },
-              onRelatedArticlePress: () => { },
-              onTopicPress: () => { },
+              onAuthorPress: () => {},
+              onRelatedArticlePress: () => {},
+              onTopicPress: () => {},
               refetch,
               commentingConfig,
               paidContentClassName,

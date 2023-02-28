@@ -26,7 +26,7 @@ const articlePageDefaultProps = {
   article: null,
   error: null,
   isLoading: false,
-  receiveChildList: () => { },
+  receiveChildList: () => {},
   commentingFlag: false,
   sharingSavingFlag: false
 };

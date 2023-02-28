@@ -20,7 +20,7 @@ const articleSkeletonDefaultProps = {
   adConfig: {},
   data: { content: [] },
   Header: () => null,
-  receiveChildList: () => { },
+  receiveChildList: () => {},
   swgProductId: null,
   zephrDivs: false,
   sharingSavingFlag: false,

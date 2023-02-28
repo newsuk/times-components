@@ -24,7 +24,6 @@ const articlePageDefaultProps = {
   onImagePress: null,
   sharingSavingFlag: false,
   commentingFlag: false
-
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };

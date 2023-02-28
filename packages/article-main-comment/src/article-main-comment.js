@@ -30,10 +30,10 @@ class ArticlePage extends Component {
 
     const authorImage =
       bylines &&
-        bylines.length > 0 &&
-        bylines[0].image &&
-        Object.keys(bylines[0].image).length !== 0 &&
-        bylines[0].image.crop
+      bylines.length > 0 &&
+      bylines[0].image &&
+      Object.keys(bylines[0].image).length !== 0 &&
+      bylines[0].image.crop
         ? bylines[0].image.crop.url
         : null;
 
