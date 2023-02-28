@@ -104,11 +104,12 @@ export const typographyPresets = Object.fromEntries(
     },
     breadcrumbText: {
       fontFamily: '{{fonts.fontFamily030.fontFamily}}',
-      fontSize: '{{fonts.fontSize010}}',
       fontWeight: '{{fonts.fontWeight020}}',
+      fontSize: '{{fonts.fontSize010}}',
       lineHeight: '{{fonts.fontLineHeight070}}',
       letterSpacing: '{{fonts.fontLetterSpacing020}}',
       fontStretch: 'normal',
+      color: '#696969'
     }
   }).map(([key, value]) => {
     if (

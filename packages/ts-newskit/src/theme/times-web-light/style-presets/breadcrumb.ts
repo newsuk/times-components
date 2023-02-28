@@ -1,8 +1,12 @@
 export const breadcrumbStylePresets = {
-    breadcrumbItem: {
+    breadcrumbColor: {
         base: {
-            fontFamily: '{{fonts.fontFamily030.fontFamily}}',
-            color: '{{colors.neutral070}}'
+            textDecoration: 'none !important',
+        }
+    },
+    breadcrumbSeparator: {
+        base: {
+            color: '{{colors.neutral050}}',
         }
     }
 };
