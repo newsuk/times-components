@@ -12,18 +12,14 @@ const articlePagePropTypes = {
   }),
   isLoading: PropTypes.bool,
   onImagePress: PropTypes.func,
-  receiveChildList: PropTypes.func.isRequired,
-  sharingSavingFlag: PropTypes.bool,
-  commentingFlag: PropTypes.bool
+  receiveChildList: PropTypes.func.isRequired
 };
 
 const articlePageDefaultProps = {
   article: null,
   error: null,
   isLoading: false,
-  onImagePress: null,
-  sharingSavingFlag: false,
-  commentingFlag: false
+  onImagePress: null
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };

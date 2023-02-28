@@ -11,9 +11,7 @@ const articleSkeletonPropTypes = {
     account: PropTypes.string.isRequired
   }).isRequired,
   swgProductId: PropTypes.string,
-  zephrDivs: PropTypes.bool,
-  sharingSavingFlag: PropTypes.bool,
-  commentingFlag: PropTypes.bool
+  zephrDivs: PropTypes.bool
 };
 
 const articleSkeletonDefaultProps = {
@@ -22,9 +20,7 @@ const articleSkeletonDefaultProps = {
   Header: () => null,
   receiveChildList: () => {},
   swgProductId: null,
-  zephrDivs: false,
-  sharingSavingFlag: false,
-  commentingFlag: false
+  zephrDivs: false
 };
 
 export { articleSkeletonPropTypes, articleSkeletonDefaultProps };

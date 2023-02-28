@@ -19,9 +19,7 @@ const articlePageDefaultProps = {
   article: null,
   error: null,
   isLoading: false,
-  onImagePress: null,
-  sharingSavingFlag: false,
-  commentingFlag: false
+  onImagePress: null
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };
