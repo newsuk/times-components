@@ -11,16 +11,20 @@ const articleSkeletonPropTypes = {
     account: PropTypes.string.isRequired
   }).isRequired,
   swgProductId: PropTypes.string,
-  zephrDivs: PropTypes.bool
+  zephrDivs: PropTypes.bool,
+  sharingSavingFlag: PropTypes.bool,
+  commentingFlag: PropTypes.bool
 };
 
 const articleSkeletonDefaultProps = {
   adConfig: {},
   data: { content: [] },
   Header: () => null,
-  receiveChildList: () => {},
+  receiveChildList: () => { },
   swgProductId: null,
-  zephrDivs: false
+  zephrDivs: false,
+  sharingSavingFlag: false,
+  commentingFlag: false
 };
 
 export { articleSkeletonPropTypes, articleSkeletonDefaultProps };

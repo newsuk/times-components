@@ -37,10 +37,10 @@ class ArticlePage extends Component {
 
     const authorImage =
       bylines &&
-      bylines.length > 0 &&
-      bylines[0].image &&
-      Object.keys(bylines[0].image).length !== 0 &&
-      bylines[0].image.crop
+        bylines.length > 0 &&
+        bylines[0].image &&
+        Object.keys(bylines[0].image).length !== 0 &&
+        bylines[0].image.crop
         ? bylines[0].image.crop.url
         : null;
 
@@ -80,7 +80,9 @@ class ArticlePage extends Component {
       commentingConfig,
       paidContentClassName,
       isPreview,
-      swgProductId
+      swgProductId,
+      sharingSavingFlag,
+      commentingFlag
     } = this.props;
 
     if (error || isLoading) {
@@ -99,6 +101,8 @@ class ArticlePage extends Component {
         paidContentClassName={paidContentClassName}
         isPreview={isPreview}
         swgProductId={swgProductId}
+        sharingSavingFlag={sharingSavingFlag}
+        commentingFlag={commentingFlag}
       />
     );
   }
