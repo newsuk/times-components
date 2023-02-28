@@ -13,14 +13,18 @@ const articlePagePropTypes = {
   isLoading: PropTypes.bool,
   onImagePress: PropTypes.func,
   receiveChildList: PropTypes.func.isRequired,
-  zephrDivs: PropTypes.bool
+  zephrDivs: PropTypes.bool,
+  sharingSavingFlag: PropTypes.bool,
+  commentingFlag: PropTypes.bool
 };
 
 const articlePageDefaultProps = {
   article: null,
   error: null,
   isLoading: false,
-  onImagePress: null
+  onImagePress: null,
+  sharingSavingFlag: true,
+  commentingFlag: false
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };

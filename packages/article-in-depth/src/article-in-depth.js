@@ -77,7 +77,9 @@ class ArticlePage extends Component {
       receiveChildList,
       commentingConfig,
       isPreview,
-      swgProductId
+      swgProductId,
+      sharingSavingFlag,
+      commentingFlag
     } = this.props;
 
     if (error || isLoading) {
@@ -95,6 +97,8 @@ class ArticlePage extends Component {
         commentingConfig={commentingConfig}
         isPreview={isPreview}
         swgProductId={swgProductId}
+        sharingSavingFlag={sharingSavingFlag}
+        commentingFlag={commentingFlag}
       />
     );
   }

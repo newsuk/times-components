@@ -17,14 +17,18 @@ const articlePagePropTypes = {
     })
   }),
   isLoading: PropTypes.bool,
-  receiveChildList: PropTypes.func
+  receiveChildList: PropTypes.func,
+  sharingSavingFlag: PropTypes.bool,
+  commentingFlag: PropTypes.bool
 };
 
 const articlePageDefaultProps = {
   article: null,
   error: null,
   isLoading: false,
-  receiveChildList: () => {}
+  receiveChildList: () => { },
+  commentingFlag: false,
+  sharingSavingFlag: false
 };
 
 export { articlePagePropTypes, articlePageDefaultProps };
