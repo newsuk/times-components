@@ -31,7 +31,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     isPreview,
     swgProductId,
     getFallbackThumbnailUrl169,
-    zephrDivs
+    zephrDivs,
+    sharingSavingFlag,
+    commentingFlag
   } = data;
 
   return React.createElement(
@@ -77,10 +79,10 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 ...article,
                 section: article
                   ? getSectionNameForAnalytics(article)
-                  : "unknown section"
-                // savingEnabled: sharingSavingFlag,
-                // sharingEnabled: sharingSavingFlag,
-                // commentsEnabled: commentingFlag
+                  : "unknown section",
+                isSavingEnabledFromZephr: sharingSavingFlag,
+                isSharingEnabledFromZephr: sharingSavingFlag,
+                isCommentEnabledFromZephr: commentingFlag
               },
               error,
               isLoading,

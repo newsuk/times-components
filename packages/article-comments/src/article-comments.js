@@ -11,9 +11,10 @@ const ArticleComments = ({
   articleId,
   isEnabled,
   isReadOnly,
-  commentingConfig
+  commentingConfig,
+  isCommentEnabledFromZephr
 }) =>
-  isEnabled ? (
+  isEnabled && isCommentEnabledFromZephr ? (
     <>
       <UserState state={UserState.showJoinTheConversationDialog}>
         <JoinTheConversationDialog />
@@ -36,7 +37,8 @@ ArticleComments.propTypes = {
   isReadOnly: PropTypes.bool,
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
-  }).isRequired
+  }).isRequired,
+  isCommentEnabledFromZephr: PropTypes.bool.isRequired
 };
 
 ArticleComments.defaultProps = {

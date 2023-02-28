@@ -69,7 +69,10 @@ const ArticleSkeleton = ({
     template,
     savingEnabled,
     sharingEnabled,
-    publishedTime
+    publishedTime,
+    isSavingEnabledFromZephr,
+    isSharingEnabledFromZephr,
+    isCommentEnabledFromZephr
   } = article;
 
   const articleContentReducers = [
@@ -94,6 +97,12 @@ const ArticleSkeleton = ({
       name: "related articles"
     }
   ]);
+
+  const isSharingSavingEnabledByZephr =
+    isSavingEnabledFromZephr || isSharingEnabledFromZephr;
+  const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
+  const isSharingSavingEnabled =
+    isSharingSavingEnabledByTPA && isSharingSavingEnabledByZephr;
 
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
 
@@ -157,7 +166,7 @@ const ArticleSkeleton = ({
             <MainContainer>
               <HeaderContainer>
                 <Header />
-                {savingEnabled || sharingEnabled ? (
+                {isSharingSavingEnabled ? (
                   <UserState state={UserState.showSaveAndShareBar}>
                     <MessageContext.Consumer>
                       {({ showMessage }) => (
@@ -218,6 +227,8 @@ const ArticleSkeleton = ({
                       }
                       commentingConfig={commentingConfig}
                       topics={topics}
+                      isSharingSavingEnabled={isSharingSavingEnabled}
+                      isCommentEnabledFromZephr={isCommentEnabledFromZephr}
                     />
                   )}
                 </LazyLoad>
