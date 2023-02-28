@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.5.0...@times-components/ts-newskit@1.6.0) (2023-02-28)
+
+
+### Features
+
+* **TDP-3290:** add ThemeProvider wrapper component ([#3254](https://github.com/newsuk/times-components/issues/3254)) ([5b3528a](https://github.com/newsuk/times-components/commit/5b3528a23b26ef113d3654df900d5e1e4b0da176))
+
+
+
+
+
 # [1.5.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.4.1...@times-components/ts-newskit@1.5.0) (2023-02-27)
 
 
