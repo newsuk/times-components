@@ -5,6 +5,7 @@ import {
   NewsKitBurgerIcon,
   NewsKitCloseIcon,
   NewsKitMasthead,
+  NewsKitTimesMasthead,
   NewsKitSearchIcon
 } from '../../../assets';
 import {
@@ -79,7 +80,9 @@ export const TopNav: React.FC<TopNavProps> = ({
               <NavSearch />
             ) : (
               <LinkInline href="/">
-                <NewsKitMasthead aria-label="The Times &amp; The Sunday Times" />
+                {/* <NewsKitMasthead aria-label="The Times &amp; The Sunday Times" /> */}
+                
+                <NewsKitTimesMasthead height={20} width={200} overrides={{ paddingInline: "space040" }} aria-label="The Times &amp; The Sunday Times" />
               </LinkInline>
             )}
             <Divider vertical />

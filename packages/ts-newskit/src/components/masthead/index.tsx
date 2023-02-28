@@ -7,7 +7,7 @@ import {
   Visible
 } from 'newskit';
 import { MainHeader, Masthead } from './styles';
-import { NewsKitTimesMasthead, NewsKitSundayTimesMasthead } from '../../assets';
+import { NewsKitTimesMasthead, NewsKitSundayTimesMasthead, NewsKitMasthead } from '../../assets';
 
 const dateNow = new Date().toISOString();
 
@@ -33,11 +33,11 @@ export const EditionMasthead: React.FC<{
             }}
             data-testid="date-time"
           />
-          <LinkInline href="/" overrides={{ stylePreset: 'mastheadLogo' }}>
+          <LinkInline href="/" color="black" overrides={{ stylePreset: 'mastheadLogo' }}>
             {isSunday ? (
               <NewsKitSundayTimesMasthead />
             ) : (
-              <NewsKitTimesMasthead />
+              <NewsKitMasthead width={434} height={53} />
             )}
           </LinkInline>
         </Masthead>
