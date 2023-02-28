@@ -3,9 +3,6 @@
 exports[`Head defaults to an empty string if both headline and shortHeadline are null 1`] = `
 Array [
   "",
-  " | ",
-  "Comment | ",
-  "The Times",
 ]
 `;
 
@@ -15,9 +12,6 @@ exports[`Head outputs a live blog schema 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -93,9 +87,6 @@ exports[`Head outputs array of author in context schema 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -171,9 +162,6 @@ exports[`Head outputs array of sameAs if there are multiple urls 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -249,9 +237,6 @@ exports[`Head outputs correct metadata 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -327,9 +312,6 @@ exports[`Head outputs correct metadata for a video article 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -414,9 +396,6 @@ exports[`Head outputs correct metadata for seoDescription 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -492,9 +471,6 @@ exports[`Head outputs correct metadata when the swgProductId is passed as prop 1
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -570,9 +546,6 @@ exports[`Head outputs profile url in sameAs if there is no twitter 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -648,9 +621,6 @@ exports[`Head outputs seoDescription as video description for a video article wh
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -735,9 +705,6 @@ exports[`Head outputs thumbnail urls for a article for 1.25:1 ratio 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -822,9 +789,6 @@ exports[`Head outputs thumbnail urls for a article for 1:1 ratio 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -909,9 +873,6 @@ exports[`Head outputs thumbnail urls for a article for 2:3 ratio 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -996,9 +957,6 @@ exports[`Head outputs thumbnail urls for a article for 3:2 ratio 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1083,9 +1041,6 @@ exports[`Head outputs thumbnail urls for a article for 4:5 ratio 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1170,9 +1125,6 @@ exports[`Head outputs thumbnail urls for a article for 16:9 ratio 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1257,9 +1209,6 @@ exports[`Head outputs title as video description for a video article when there 
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1332,9 +1281,6 @@ exports[`Head outputs video schema for a video article 1`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1419,9 +1365,6 @@ exports[`Head outputs video schema for a video article 2`] = `
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1506,9 +1449,6 @@ exports[`Head removes author from context schema if there is empty array of byli
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1581,9 +1521,6 @@ exports[`Head removes author from context schema if there is empty array of byli
 >
   <title>
     Some Headline
-     | 
-    Comment | 
-    The Times
   </title>
   <meta
     content="max-image-preview:large"
@@ -1652,71 +1589,47 @@ exports[`Head removes author from context schema if there is empty array of byli
 exports[`Head removes section from title if there are no tiles 1`] = `
 Array [
   "Some Headline",
-  " | ",
-  "",
-  "The Times",
 ]
 `;
 
 exports[`Head removes section from title if there are no tiles with sections 1`] = `
 Array [
   "Some Headline",
-  " | ",
-  "",
-  "The Times",
 ]
 `;
 
 exports[`Head shows Sunday Times in title if publication is SUNDAYTIMES 1`] = `
 Array [
   "Some Headline",
-  " | ",
-  "Comment | ",
-  "The Sunday Times",
 ]
 `;
 
 exports[`Head shows Times in title if publication is TIMES 1`] = `
 Array [
   "Some Headline",
-  " | ",
-  "Comment | ",
-  "The Times",
 ]
 `;
 
 exports[`Head uses news in title if news is the only available section 1`] = `
 Array [
   "Some Headline",
-  " | ",
-  "News | ",
-  "The Times",
 ]
 `;
 
 exports[`Head uses news in title if news is the only available section 2`] = `
 Array [
   "Some Headline",
-  " | ",
-  "News | ",
-  "The Times",
 ]
 `;
 
 exports[`Head uses short headline if headline not available 1`] = `
 Array [
   "short headline",
-  " | ",
-  "Comment | ",
-  "The Times",
 ]
 `;
 
 exports[`Head uses the first non-news section in title 1`] = `
 Array [
   "Some Headline",
-  " | ",
-  "Comment | ",
-  "The Times",
 ]
 `;
