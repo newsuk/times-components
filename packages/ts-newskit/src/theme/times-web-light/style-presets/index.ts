@@ -1,3 +1,4 @@
+import { breadcrumbStylePresets } from './breadcrumb';
 import { colorStylePresets } from './color';
 import { mastheadStylePresets } from './masthead';
 import { menuStylePresets } from './menu';
@@ -8,6 +9,7 @@ import { secondaryNavigationStylePresets } from './secondary-nav';
 import { textStylePresets } from './text';
 
 export const stylePresets = {
+  ...breadcrumbStylePresets,
   ...colorStylePresets,
   ...mastheadStylePresets,
   ...pageStylePresets,
