@@ -38,7 +38,7 @@ ArticleComments.propTypes = {
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
   }).isRequired,
-  isCommentEnabledFromZephr: PropTypes.bool.isRequired
+  isCommentEnabledFromZephr: PropTypes.bool
 };
 
 ArticleComments.defaultProps = {
