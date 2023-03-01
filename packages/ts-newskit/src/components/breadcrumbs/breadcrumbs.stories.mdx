@@ -1,5 +1,6 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs'
-import { NewsKitProvider } from 'newskit';
+import { object } from "@storybook/addon-knobs"
+import { ThemeProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../theme';
 import { Breadcrumb } from './index.tsx';
 import { breadcrumbItems } from './fixtures/breadcrumbs.json';
@@ -10,12 +11,12 @@ import { breadcrumbItems } from './fixtures/breadcrumbs.json';
 />
 
 # Breadcrumb component
-Breadcrumbs for days soooooonnn....
+Breadcrumb component
 
 <Canvas>
   <Story name="Breadcrumbs">
-    <NewsKitProvider theme={TimesWebLightTheme}>
-         <Breadcrumb data={breadcrumbItems} />
-    </NewsKitProvider>
+    <ThemeProvider theme={TimesWebLightTheme}>
+      <Breadcrumb data={object('data', breadcrumbItems)} />
+    </ThemeProvider>
   </Story>
 </Canvas>
