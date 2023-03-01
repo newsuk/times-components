@@ -1,11 +1,6 @@
 export const breadcrumbStylePresets = {
-    breadcrumbColor: {
+    breadcrumbStyle: {
         base: {
-            color: '{{colors.neutral070}}',
-            fontFamily: 'Roboto-Regular',
-            fontWeight: '{{fonts.fontWeight020}}',
-            fontSize: '{{fonts.fontSize010}}',
-            lineHeight: '{{fonts.fontLineHeight070}}',
             textDecoration: 'none'
         },
         active: {
@@ -17,17 +12,17 @@ export const breadcrumbStylePresets = {
             textDecoration: 'none'
         },
         hover: {
-            color: '#254CAC',
+            color: '{{colors.blue110}}',
             textDecoration: 'none'
         },
         selected: {
-            color: '#1D1D1B',
+            color: '{{colors.neutral090}}',
             textDecoration: 'none'
         }
     },
     breadcrumbSeparator: {
         base: {
-            color: '{{colors.neutral050}}'
+            iconColor: '{{colors.neutral050}}'
         }
     }
 };
