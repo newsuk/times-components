@@ -4,7 +4,6 @@ import { createAccountMenu, createMenu } from './createMenus';
 import {
   NewsKitBurgerIcon,
   NewsKitCloseIcon,
-  NewsKitMasthead,
   NewsKitTimesMasthead,
   NewsKitSearchIcon
 } from '../../../assets';
@@ -79,9 +78,7 @@ export const TopNav: React.FC<TopNavProps> = ({
             {searchActive ? (
               <NavSearch />
             ) : (
-              <LinkInline href="/">
-                {/* <NewsKitMasthead aria-label="The Times &amp; The Sunday Times" /> */}
-                
+              <LinkInline href="/" overrides={{ stylePreset: 'menuLogo' }} color="white">                
                 <NewsKitTimesMasthead height={20} width={200} overrides={{ paddingInline: "space040" }} aria-label="The Times &amp; The Sunday Times" />
               </LinkInline>
             )}
@@ -96,8 +93,8 @@ export const TopNav: React.FC<TopNavProps> = ({
             </Visible>
           </TopNavHide>
           <MastheadMob md lg xl display="flex">
-            <LinkInline href="/">
-              <NewsKitMasthead aria-label="The Times &amp; The Sunday Times" />
+            <LinkInline href="/" overrides={{ stylePreset: 'menuLogo' }}>
+              <NewsKitTimesMasthead height={20} width={200} overrides={{ paddingInline: "space040" }} aria-label="The Times &amp; The Sunday Times" />
             </LinkInline>
           </MastheadMob>
         </Stack>
