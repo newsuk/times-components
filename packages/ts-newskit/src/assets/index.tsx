@@ -5,8 +5,8 @@ import BurgerIcon from './BurgerIcon';
 import RoundedCloseIcon from './RoundedCloseIcon';
 import CloseIcon from './CloseIcon';
 import ChevronIcon from './ChevronIcon';
-import TimesMasthead from './times-logo';
-import SundayTimesMasthead from './sunday-times-logo';
+import TimesMasthead from './TimesMasthead';
+import SundayTimesMasthead from './SundayTimesMasthead';
 
 export const NewsKitSearchIcon = customToNewsKitIcon(
   'NewskitSearchIcon',

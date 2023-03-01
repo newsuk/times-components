@@ -40,8 +40,8 @@ export const navStylePresets = {
   },
   menuLogo: {
     base: {
-      color: '{{colors.white}}',
-    },
+      color: '{{colors.white}}'
+    }
   },
   menuItem: {
     base: {

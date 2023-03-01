@@ -6,16 +6,22 @@ import { HamburgerMenuContainer } from './styles';
 
 type GlobalNavProps = {
   isLoggedIn?: boolean;
+  isSunday?: boolean;
   data: NavigationData;
 };
 
-export const GlobalNav: React.FC<GlobalNavProps> = ({ isLoggedIn, data }) => {
+export const GlobalNav: React.FC<GlobalNavProps> = ({
+  isLoggedIn,
+  isSunday,
+  data
+}) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
 
   return (
     <>
       <TopNav
         isLoggedIn={isLoggedIn}
+        isSunday={isSunday}
         mainMenu={data.mainMenuItems}
         accountMenu={data.accountMenuItems}
         isHamburgerOpen={hamburgerActive}

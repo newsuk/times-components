@@ -6,10 +6,11 @@ import { TopNav } from '../topnav';
 import NavSearch from '../search';
 import data from '../../../fixtures/data.json';
 
-const renderComponent = (isLoggedIn?: boolean) =>
+const renderComponent = (isLoggedIn?: boolean, isSunday?: boolean) =>
   render(
     <TopNav
       isLoggedIn={isLoggedIn}
+      isSunday={isSunday}
       mainMenu={data.mainMenuItems}
       accountMenu={data.accountMenuItems}
       isHamburgerOpen={false}
@@ -25,6 +26,11 @@ describe('Render TopNav', () => {
 
   it('should render the component in loggedOut state', () => {
     const { asFragment } = renderComponent();
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('should render the component with Sunday Times Logo', () => {
+    const { asFragment } = renderComponent(true, true);
     expect(asFragment()).toMatchSnapshot();
   });
 });
