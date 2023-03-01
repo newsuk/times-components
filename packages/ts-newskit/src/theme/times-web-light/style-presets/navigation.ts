@@ -38,6 +38,11 @@ export const navStylePresets = {
       backgroundColor: '#222222'
     }
   },
+  menuLogo: {
+    base: {
+      color: '{{colors.white}}'
+    }
+  },
   menuItem: {
     base: {
       backgroundColor: 'transparent',
