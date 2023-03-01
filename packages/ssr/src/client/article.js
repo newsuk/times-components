@@ -16,8 +16,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     swgProductId,
     commentCount,
     zephrDivs,
-    sharingSavingFlag,
-    commentingFlag
+    sharingSavingFlag = true,
+    commentingFlag = true
   } = window.nuk.article;
   const { getCookieValue } = window.nuk;
 

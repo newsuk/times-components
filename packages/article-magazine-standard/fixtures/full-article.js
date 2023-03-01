@@ -2057,7 +2057,10 @@ const makeDefaultConfig = ({
   sharingEnabled = true,
   standfirst = defaultStandfirst,
   topics = defaultTopics,
-  url = defaultUrl
+  url = defaultUrl,
+  isSavingEnabledFromZephr = true,
+  isSharingEnabledFromZephr = true,
+  isCommentEnabledFromZephr = true
 } = {}) => ({
   bylines,
   commentsEnabled,
@@ -2078,7 +2081,10 @@ const makeDefaultConfig = ({
   slug,
   standfirst,
   topics,
-  url
+  url,
+  isSavingEnabledFromZephr,
+  isSharingEnabledFromZephr,
+  isCommentEnabledFromZephr
 });
 
 export default ({ withAds = true, ...config } = {}) => {
@@ -2271,5 +2277,8 @@ export const testFixture = {
       slug: "topic"
     }
   ],
-  url: "https://url.io"
+  url: "https://url.io",
+  isSavingEnabledFromZephr: true,
+  isSharingEnabledFromZephr: true,
+  isCommentEnabledFromZephr: true
 };

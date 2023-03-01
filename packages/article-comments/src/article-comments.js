@@ -42,7 +42,8 @@ ArticleComments.propTypes = {
 };
 
 ArticleComments.defaultProps = {
-  isReadOnly: false
+  isReadOnly: false,
+  isCommentEnabledFromZephr: true
 };
 
 export default ArticleComments;

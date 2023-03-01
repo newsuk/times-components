@@ -24,8 +24,8 @@ module.exports = (
     getFallbackThumbnailUrl169,
     commentCount,
     zephrDivs,
-    sharingSavingFlag,
-    commentingFlag
+    sharingSavingFlag = true,
+    commentingFlag = true
   },
   userState
 ) => {

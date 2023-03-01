@@ -107,13 +107,15 @@ ArticleExtras.propTypes = {
   topics: PropTypes.arrayOf(PropTypes.shape({})),
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired,
-  isSharingSavingEnabled: PropTypes.bool.isRequired,
-  isCommentEnabledFromZephr: PropTypes.bool.isRequired
+  isSharingSavingEnabled: PropTypes.bool,
+  isCommentEnabledFromZephr: PropTypes.bool
 };
 
 ArticleExtras.defaultProps = {
   relatedArticleSlice: null,
-  topics: null
+  topics: null,
+  isSharingSavingEnabled: true,
+  isCommentEnabledFromZephr: true
 };
 
 export default ArticleExtras;
