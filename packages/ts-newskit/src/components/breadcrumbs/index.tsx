@@ -18,7 +18,7 @@ export const Breadcrumb: React.FC<{ data: BreadcrumbsItem[]; }> = ({ data }) => 
                     href={breadcrumbItem.url}
                     selected={breadcrumbIndex + 1 === breadcrumbArr.length}
                     overrides={{
-                        typographyPreset: 'breadcrumbColor',
+                        typographyPreset: 'breadcrumbColor'
                     }}
                 >
                     {breadcrumbItem.title}
