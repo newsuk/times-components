@@ -1,7 +1,11 @@
 import React from 'react';
 import { Headline } from 'newskit';
 
-export const SectionHeader: React.FC<{ title: string }> = ({ title }) => {
+interface SectionTitleItems {
+  title: string;
+};
+
+export const SectionHeader = ({ title }: SectionTitleItems) => {
   return (
     <Headline
       headingAs="h1"
