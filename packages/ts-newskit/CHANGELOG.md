@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.6.1...@times-components/ts-newskit@1.7.0) (2023-03-02)
+
+
+### Features
+
+* **TDP-2766:** Build Breadcrumb Component ([#3252](https://github.com/newsuk/times-components/issues/3252)) ([ed3875c](https://github.com/newsuk/times-components/commit/ed3875c40011472bf21286a938e1dcbe54d501d3))
+
+
+
+
+
 ## [1.6.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.6.0...@times-components/ts-newskit@1.6.1) (2023-03-01)
 
 **Note:** Version bump only for package @times-components/ts-newskit
