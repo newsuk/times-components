@@ -19,7 +19,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
           href="/sport"
         >
           <span
-            class="css-qp2ggj"
+            class="css-3stwqv"
           >
             Sport
           </span>
@@ -31,7 +31,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="css-5vui0k-EmotionIconBase ex0cdmw0"
+          class="css-luf8la-EmotionIconBase ex0cdmw0"
           fill="currentColor"
           focusable="false"
           viewBox="0 0 24 24"
@@ -56,7 +56,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
           href="/sport/tennis"
         >
           <span
-            class="css-qp2ggj"
+            class="css-3stwqv"
           >
             Tennis
           </span>
@@ -68,7 +68,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       >
         <svg
           aria-hidden="true"
-          class="css-5vui0k-EmotionIconBase ex0cdmw0"
+          class="css-luf8la-EmotionIconBase ex0cdmw0"
           fill="currentColor"
           focusable="false"
           viewBox="0 0 24 24"
@@ -93,7 +93,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
           type="button"
         >
           <span
-            class="css-qp2ggj"
+            class="css-3stwqv"
           >
             Australian Open
           </span>

@@ -107,7 +107,7 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '{{fonts.fontSize010}}',
       fontWeight: '{{fonts.fontWeight020}}',
       lineHeight: '{{fonts.fontLineHeight070}}',
-      letterSpacing: '{{fonts.fontLetterSpacing020}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     }
   }).map(([key, value]) => {
