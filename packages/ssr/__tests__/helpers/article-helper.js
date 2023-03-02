@@ -30,7 +30,7 @@ const articleTemplateTest = (template, options = {}) => {
       cy.task("stopMockServer");
     });
 
-    xit("loads hi-res images for related articles", () =>
+    it("loads hi-res images for related articles", () =>
       cy
         .task("startMockServerWith", {
           Article: sundayTimesArticleWithThreeRelatedArticles,
@@ -110,7 +110,7 @@ const articleTemplateTest = (template, options = {}) => {
       cy.get("script[data-spotim-module]").should("not.exist");
     });
 
-    xit("should match snapshots", () => {
+    it("should match snapshots", () => {
       const {
         stickyElements = [],
         blackoutElements = [],
@@ -153,7 +153,7 @@ const articleTemplateTest = (template, options = {}) => {
         });
     });
 
-    xit("should pass basic a11y test", () => {
+    it("should pass basic a11y test", () => {
       cy.task("startMockServerWith", {
         Article: sundayTimesArticleWithThreeRelatedArticles,
         User: userWithBookmarks
