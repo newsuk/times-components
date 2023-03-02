@@ -5,16 +5,13 @@ export const breadcrumbStylePresets = {
       color: '{{colors.inkSubtle}}'
     },
     hover: {
-      color: '{{colors.blue110}}',
-      textDecoration: 'none'
+      color: '{{colors.blue110}}'
     },
     selected: {
-      color: '{{colors.inkContrast}}',
-      textDecoration: 'none'
+      color: '{{colors.inkContrast}}'
     },
     'selected:hover': {
-      color: '{{colors.inkContrast}}',
-      textDecoration: 'none'
+      color: '{{colors.inkContrast}}'
     }
   }
 };
