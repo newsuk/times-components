@@ -2059,7 +2059,7 @@ const makeDefaultConfig = ({
   topics = defaultTopics,
   url = defaultUrl,
   isSavingEnabled = true,
-  isSharingEnabledFromZephr = true,
+  isSharingEnabled = true,
   isCommentEnabled = true
 } = {}) => ({
   bylines,
@@ -2083,7 +2083,7 @@ const makeDefaultConfig = ({
   topics,
   url,
   isSavingEnabled,
-  isSharingEnabledFromZephr,
+  isSharingEnabled,
   isCommentEnabled
 });
 
@@ -2279,6 +2279,6 @@ export const testFixture = {
   ],
   url: "https://url.io",
   isSavingEnabled: true,
-  isSharingEnabledFromZephr: true,
+  isSharingEnabled: true,
   isCommentEnabled: true
 };

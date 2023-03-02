@@ -71,7 +71,7 @@ const ArticleSkeleton = ({
     sharingEnabled,
     publishedTime,
     isSavingEnabled,
-    isSharingEnabledFromZephr,
+    isSharingEnabled,
     isCommentEnabled
   } = article;
 
@@ -99,7 +99,7 @@ const ArticleSkeleton = ({
   ]);
 
   const isSharingSavingEnabledByZephr =
-    isSavingEnabled || isSharingEnabledFromZephr;
+    isSavingEnabled || isSharingEnabled;
   const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
   const isSharingSavingEnabled =
     isSharingSavingEnabledByTPA && isSharingSavingEnabledByZephr;
