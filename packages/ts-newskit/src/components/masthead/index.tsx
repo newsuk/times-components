@@ -9,12 +9,14 @@ import {
 import { MainHeader, Masthead } from './styles';
 import { NewsKitTimesMasthead, NewsKitSundayTimesMasthead } from '../../assets';
 
+interface EditionMastheadProps {
+  isSunday?: boolean;
+  todaysDate?: string;
+};
+
 const dateNow = new Date().toISOString();
 
-export const EditionMasthead: React.FC<{
-  isSunday: boolean;
-  todaysDate?: string;
-}> = ({ isSunday, todaysDate = dateNow }) => {
+export const EditionMasthead = ({ isSunday = false, todaysDate = dateNow }: EditionMastheadProps) => {
   return (
     <MainHeader>
       <Visible md lg xl>

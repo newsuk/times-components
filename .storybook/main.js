@@ -8,6 +8,7 @@ module.exports = {
     "@storybook/addon-actions",
     "@storybook/addon-docs",
     "@storybook/addon-essentials",
+    "@storybook/addon-controls",
     "@storybook/addon-knobs",
     "@storybook/addon-options",
     "@storybook/addon-viewport",
