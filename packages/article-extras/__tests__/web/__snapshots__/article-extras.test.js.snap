@@ -10,6 +10,9 @@ Array [
       <ArticleTopics />
     </nav>
   </div>,
+  <div>
+    <div />
+  </div>,
   <div
     id="related-articles"
   >
@@ -34,6 +37,7 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
+    isCommentEnabled={true}
     isEnabled={true}
   />,
 ]
@@ -68,6 +72,9 @@ Array [
       <ArticleTopics />
     </nav>
   </div>,
+  <div>
+    <div />
+  </div>,
   <div
     id="related-articles"
   >
@@ -92,6 +99,7 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
+    isCommentEnabled={true}
     isEnabled={true}
   />,
 ]
@@ -107,6 +115,9 @@ Array [
       <ArticleTopics />
     </nav>
   </div>,
+  <div>
+    <div />
+  </div>,
   <div
     id="related-articles"
   >
@@ -131,6 +142,7 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
+    isCommentEnabled={true}
     isEnabled={true}
   />,
 ]

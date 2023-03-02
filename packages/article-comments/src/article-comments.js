@@ -11,9 +11,10 @@ const ArticleComments = ({
   articleId,
   isEnabled,
   isReadOnly,
-  commentingConfig
+  commentingConfig,
+  isCommentEnabled
 }) =>
-  isEnabled ? (
+  isEnabled && isCommentEnabled ? (
     <>
       <UserState state={UserState.showJoinTheConversationDialog}>
         <JoinTheConversationDialog />
@@ -36,11 +37,13 @@ ArticleComments.propTypes = {
   isReadOnly: PropTypes.bool,
   commentingConfig: PropTypes.shape({
     account: PropTypes.string.isRequired
-  }).isRequired
+  }).isRequired,
+  isCommentEnabled: PropTypes.bool
 };
 
 ArticleComments.defaultProps = {
-  isReadOnly: false
+  isReadOnly: false,
+  isCommentEnabled: true
 };
 
 export default ArticleComments;
