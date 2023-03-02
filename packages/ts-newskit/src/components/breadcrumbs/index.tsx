@@ -3,7 +3,7 @@ import { Breadcrumbs, BreadcrumbItem } from 'newskit';
 
 export type BreadcrumbsItem = {
   title: string;
-  url: string;
+  url?: string;
 };
 
 export const Breadcrumb: React.FC<{ data: BreadcrumbsItem[] }> = ({ data }) => {
@@ -11,7 +11,7 @@ export const Breadcrumb: React.FC<{ data: BreadcrumbsItem[] }> = ({ data }) => {
     <Breadcrumbs size="small">
       {data.map((breadcrumbItem, breadcrumbIndex, breadcrumbArr) => (
         <BreadcrumbItem
-          href={breadcrumbItem.url}
+          href={breadcrumbIndex + 1 === breadcrumbArr.length ? undefined : breadcrumbItem.url}
           selected={breadcrumbIndex + 1 === breadcrumbArr.length}
           overrides={{
             stylePreset: 'breadcrumbStyle',
