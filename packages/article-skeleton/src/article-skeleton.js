@@ -98,8 +98,7 @@ const ArticleSkeleton = ({
     }
   ]);
 
-  const isSharingSavingEnabledExternal =
-    isSavingEnabled || isSharingEnabled;
+  const isSharingSavingEnabledExternal = isSavingEnabled || isSharingEnabled;
   const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
   const isSharingSavingEnabled =
     isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
