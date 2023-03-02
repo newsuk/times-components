@@ -28,10 +28,14 @@ Please click the 'Canvas' tab for a better viewing experience, where you can upd
 
 export const MastheadStory = ({ isSunday, todaysDate }) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <EditionMasthead isSunday={isSunday} todaysDate={todaysDate || '2023-03-03T13:22:39.971Z'} />
+    <EditionMasthead isSunday={isSunday} todaysDate={todaysDate} />
   </NewsKitProvider>
 );
 
-<Story name="Masthead">
+<Story
+  name="Masthead"
+  argTypes={{ todaysDate: { control: 'date' } }}
+  args={{ todaysDate: '2023-03-03T13:22:39.971Z' }}
+>
   {MastheadStory.bind({})}
 </Story>

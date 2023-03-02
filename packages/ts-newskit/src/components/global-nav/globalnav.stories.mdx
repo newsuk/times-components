@@ -1,5 +1,4 @@
 import { Meta, Story, Canvas, Props } from '@storybook/addon-docs'
-import { boolean, object } from "@storybook/addon-knobs"
 import { NewsKitProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../theme';
 import { GlobalNav } from './index.tsx';
@@ -8,10 +7,6 @@ import data from './fixtures/data.json';
 <Meta
   title="Newskit/GlobalNav"
   component={GlobalNav}
-  args={{
-    isLoggedIn='false'
-    isSunday='false'
-  }}
 />
 
 # Global Navigation component
@@ -22,21 +17,25 @@ This takes in a series of props, as below, to display data and render the correc
 ## Props
 <Props of={GlobalNav} />
 
+## Code Example
+`<GlobalNav
+  isLoggedIn={false}
+  isSunday={false}
+  data={data}
+/>
+`
+
 An example of the `data` structure can be found in the 'Knobs' section on the 'Canvas' tab, where you can customise the data being fed to the GlobalNav component.
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, LG and XL).
 
-<Canvas>
-  <Story name="GlobalNav">
-    <NewsKitProvider theme={TimesWebLightTheme}>
-      <GlobalNav
-        isLoggedIn={boolean('Is logged in', false)}
-        isSunday={boolean('Is Sunday?', false)}
-        data={object('data', data)}
-      />
-    </NewsKitProvider>
-  </Story>
-</Canvas>
+export const GlobalNavStory = ({ isLoggedIn, isSunday, data }) => (
+  <NewsKitProvider theme={TimesWebLightTheme}>
+    <GlobalNav {...{ isLoggedIn, isSunday, data }} />
+  </NewsKitProvider>
+);
 
-
+<Story name="GlobalNav" args={{ data }}>
+  {GlobalNavStory.bind({})}
+</Story>
