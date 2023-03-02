@@ -30,29 +30,30 @@ const ArticleExtras = ({
   topics
 }) => {
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
-  const sponsoredArticlesAndRelatedArticles = isRecommendedActive => (
-    <>
-      <div id="related-articles" ref={node => registerNode(node)}>
-        {isRecommendedActive && (
+  const sponsoredArticlesAndRelatedArticles = isFallback => {
+    const observerFunc = isFallback ? registerNode : () => {};
+    return (
+      <>
+        <div id="related-articles" ref={node => observerFunc(node)}>
           <RelatedArticles
             analyticsStream={analyticsStream}
             isVisible={relatedArticlesVisible}
             slice={relatedArticleSlice}
           />
-        )}
-        {isRecommendedActive && (
-          <RecommendedFetch
-            articleId={articleId}
-            articleHeadline={articleHeadline}
-            articleSection={section}
-          />
-        )}
-      </div>
-      <div id="sponsored-article-container">
-        <div id="sponsored-article" />
-      </div>
-    </>
-  );
+          {isFallback && (
+            <RecommendedFetch
+              articleId={articleId}
+              articleHeadline={articleHeadline}
+              articleSection={section}
+            />
+          )}
+        </div>
+        <div id="sponsored-article-container">
+          <div id="sponsored-article" />
+        </div>
+      </>
+    );
+  };
   return (
     <UserState
       state={UserState.showArticleExtras}
