@@ -98,11 +98,11 @@ const ArticleSkeleton = ({
     }
   ]);
 
-  const isSharingSavingEnabledByZephr =
+  const isSharingSavingEnabledExternal =
     isSavingEnabled || isSharingEnabled;
   const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
   const isSharingSavingEnabled =
-    isSharingSavingEnabledByTPA && isSharingSavingEnabledByZephr;
+    isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
 
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
 
