@@ -47,9 +47,6 @@ Array [
     <RelatedArticles
       isVisible={true}
     />
-    <div>
-      RecommendedFetch
-    </div>
   </div>,
   <div
     id="sponsored-article-container"
