@@ -22,4 +22,10 @@ describe('Render Breadcrumbs', () => {
     const title = getAllByTestId('buttonLink')[0];
     expect(title).toHaveAttribute('href', '/sport');
   });
+
+  it('last breadcrumb should be selected', () => {
+    const { getAllByTestId } = render(<Breadcrumb data={breadcrumbItems} />);
+    const title = getAllByTestId('buttonLink')[2];
+    expect(title).toHaveAttribute('aria-current', 'page');
+  });
 });
