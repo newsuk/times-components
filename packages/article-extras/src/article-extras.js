@@ -33,11 +33,13 @@ const ArticleExtras = ({
   const sponsoredArticlesAndRelatedArticles = isRecommendedActive => (
     <>
       <div id="related-articles" ref={node => registerNode(node)}>
-        <RelatedArticles
-          analyticsStream={analyticsStream}
-          isVisible={relatedArticlesVisible}
-          slice={relatedArticleSlice}
-        />
+        {isRecommendedActive && (
+          <RelatedArticles
+            analyticsStream={analyticsStream}
+            isVisible={relatedArticlesVisible}
+            slice={relatedArticleSlice}
+          />
+        )}
         {isRecommendedActive && (
           <RecommendedFetch
             articleId={articleId}
