@@ -18282,10 +18282,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.1.tgz#26c8a3cee6cc05fbcf1e333cd2fc3e003326c0b5"
   integrity sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==
 
-newskit@6.8.0:
-  version "6.8.0"
-  resolved "https://registry.yarnpkg.com/newskit/-/newskit-6.8.0.tgz#b20d3d6f341896015ee7a9e69599cef5edac1376"
-  integrity sha512-6U4BWFdX9mmMzLqt1PodcQaMYDxhPMvrGuLmAm8CQnXwBpXDVW7xGHWHE1U4DZDSdJXwrDFNujaD18+l3M3HHA==
+newskit@6.9.0:
+  version "6.9.0"
+  resolved "https://registry.yarnpkg.com/newskit/-/newskit-6.9.0.tgz#5c5b14d962b752058b8153dc5b0463dbd4f1e86c"
+  integrity sha512-go6yK1Y62CfUj1mvND91oDJyh3JTv0llV/LUyrUh0mAdYExkT0F9EbigaarkVfHZSSsztXka+y/GblNOivkGRA==
   dependencies:
     "@capsizecss/core" "^3.0.0"
     "@emotion-icons/emotion-icon" "4.1.0"
