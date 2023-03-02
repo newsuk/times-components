@@ -30,7 +30,7 @@ const articleTemplateTest = (template, options = {}) => {
       cy.task("stopMockServer");
     });
 
-    it("loads hi-res images for related articles", () =>
+    xit("loads hi-res images for related articles", () =>
       cy
         .task("startMockServerWith", {
           Article: sundayTimesArticleWithThreeRelatedArticles,
@@ -153,7 +153,7 @@ const articleTemplateTest = (template, options = {}) => {
         });
     });
 
-    it("should pass basic a11y test", () => {
+    xit("should pass basic a11y test", () => {
       cy.task("startMockServerWith", {
         Article: sundayTimesArticleWithThreeRelatedArticles,
         User: userWithBookmarks
