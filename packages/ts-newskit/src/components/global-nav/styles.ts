@@ -1,12 +1,12 @@
 import {
-  getColorCssFromTheme,
   styled,
+  getColorCssFromTheme,
+  getSpacingCssFromTheme,
+  getMediaQueryFromTheme,
   Stack,
   Menu,
-  getSpacingCssFromTheme,
   Divider,
   Hidden,
-  getMediaQueryFromTheme,
   IconButton,
   Drawer,
   Visible
@@ -86,4 +86,21 @@ export const HamburgerMenuContainer = styled(Drawer)`
   & > div {
     ${getSpacingCssFromTheme(setPadding, 'space000')};
   }
+`;
+
+export const HamburgerStyledMenu = styled(Menu)`
+  ul {
+    justify-content: space-around;
+  }
+  li {
+    width: 100%;
+    margin: 0px;
+  }
+`;
+
+export const HamburgerMenuNav = styled(Menu)`
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #151515;
+  width: 100%;
 `;

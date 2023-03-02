@@ -4,7 +4,7 @@ import HamburgerMenu from './hamburger-menu/HamburgerMenu';
 import { NavigationData } from './types';
 import { HamburgerMenuContainer } from './styles';
 
-export interface GlobalNavProps {
+interface GlobalNavProps {
   isLoggedIn?: boolean;
   isSunday?: boolean;
   data: NavigationData;

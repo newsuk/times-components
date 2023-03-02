@@ -2,7 +2,7 @@ import React from 'react';
 import { Block, Stack } from 'newskit';
 import LoggedInMenuItem from './LoggedInMenuItem';
 import SearchBar from './SearchBar';
-import { StyledMenu } from './styles';
+import { HamburgerStyledMenu } from '../styles';
 import LoggedOutNavButton from './LoggedOutNavButton';
 
 export const LoggedOutNavButtons = () => (
@@ -44,7 +44,7 @@ export const LoggedInNavButtons: React.FC<{
     >
       <SearchBar />
     </Block>
-    <StyledMenu role="region" aria-label="Navigation Menu">
+    <HamburgerStyledMenu role="region" aria-label="Navigation Menu">
       <LoggedInMenuItem
         title="Sections"
         handleClick={handleClick}
@@ -55,7 +55,7 @@ export const LoggedInNavButtons: React.FC<{
         handleClick={handleClick}
         selected={selected}
       />
-    </StyledMenu>
+    </HamburgerStyledMenu>
   </>
 );
 
