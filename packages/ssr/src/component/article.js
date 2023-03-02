@@ -80,9 +80,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 section: article
                   ? getSectionNameForAnalytics(article)
                   : "unknown section",
-                isSavingEnabledFromZephr: sharingSavingFlag,
+                isSavingEnabled: sharingSavingFlag,
                 isSharingEnabledFromZephr: sharingSavingFlag,
-                isCommentEnabledFromZephr: commentingFlag
+                isCommentEnabled: commentingFlag
               },
               error,
               isLoading,

@@ -70,9 +70,9 @@ const ArticleSkeleton = ({
     savingEnabled,
     sharingEnabled,
     publishedTime,
-    isSavingEnabledFromZephr,
+    isSavingEnabled,
     isSharingEnabledFromZephr,
-    isCommentEnabledFromZephr
+    isCommentEnabled
   } = article;
 
   const articleContentReducers = [
@@ -99,7 +99,7 @@ const ArticleSkeleton = ({
   ]);
 
   const isSharingSavingEnabledByZephr =
-    isSavingEnabledFromZephr || isSharingEnabledFromZephr;
+    isSavingEnabled || isSharingEnabledFromZephr;
   const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
   const isSharingSavingEnabled =
     isSharingSavingEnabledByTPA && isSharingSavingEnabledByZephr;
@@ -228,7 +228,7 @@ const ArticleSkeleton = ({
                       commentingConfig={commentingConfig}
                       topics={topics}
                       isSharingSavingEnabled={isSharingSavingEnabled}
-                      isCommentEnabledFromZephr={isCommentEnabledFromZephr}
+                      isCommentEnabled={isCommentEnabled}
                     />
                   )}
                 </LazyLoad>

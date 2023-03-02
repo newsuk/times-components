@@ -19,7 +19,7 @@ const renderComments = ({ enabled }) =>
       onCommentsPress={() => {}}
       commentingConfig={{ account: "sp_pCQgrRiN" }}
       url="dummy-article-url"
-      isCommentEnabledFromZephr
+      isCommentEnabled
     />
   );
 
@@ -118,7 +118,7 @@ it("Render comments label, when comments are loaded", () => {
       onCommentsPress={() => {}}
       commentingConfig={{ account: "sp_pCQgrRiN" }}
       url="dummy-article-url"
-      isCommentEnabledFromZephr
+      isCommentEnabled
     />
   );
 
@@ -149,7 +149,7 @@ describe("window listeners added", () => {
         onCommentsPress={() => {}}
         commentingConfig={{ account: "sp_pCQgrRiN" }}
         url="dummy-article-url"
-        isCommentEnabledFromZephr
+        isCommentEnabled
       />
     );
     expect(Object.keys(listeners)).toMatchSnapshot();

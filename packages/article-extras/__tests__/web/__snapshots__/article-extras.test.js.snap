@@ -37,7 +37,7 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
-    isCommentEnabledFromZephr={true}
+    isCommentEnabled={true}
     isEnabled={true}
   />,
 ]
@@ -99,7 +99,7 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
-    isCommentEnabledFromZephr={true}
+    isCommentEnabled={true}
     isEnabled={true}
   />,
 ]
@@ -142,7 +142,7 @@ Array [
         "account": "sp_pCQgrRiN",
       }
     }
-    isCommentEnabledFromZephr={true}
+    isCommentEnabled={true}
     isEnabled={true}
   />,
 ]

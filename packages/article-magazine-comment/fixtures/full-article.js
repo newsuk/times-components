@@ -1950,9 +1950,9 @@ const makeDefaultConfig = ({
   standfirst = defaultStandfirst,
   topics = defaultTopics,
   url = defaultUrl,
-  isSavingEnabledFromZephr = true,
+  isSavingEnabled = true,
   isSharingEnabledFromZephr = true,
-  isCommentEnabledFromZephr = true
+  isCommentEnabled = true
 } = {}) => ({
   author,
   bylines,
@@ -1975,9 +1975,9 @@ const makeDefaultConfig = ({
   standfirst,
   topics,
   url,
-  isSavingEnabledFromZephr,
+  isSavingEnabled,
   isSharingEnabledFromZephr,
-  isCommentEnabledFromZephr
+  isCommentEnabled
 });
 
 export default ({ withAds = true, ...config } = {}) => {
@@ -2161,7 +2161,7 @@ export const testFixture = {
     }
   ],
   url: "https://url.io",
-  isSavingEnabledFromZephr: true,
+  isSavingEnabled: true,
   isSharingEnabledFromZephr: true,
-  isCommentEnabledFromZephr: true
+  isCommentEnabled: true
 };
