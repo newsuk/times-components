@@ -1,14 +1,13 @@
 import React from 'react';
 import { MenuItem } from 'newskit';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
-import { getBreakpoint } from '../../utils/getBreakPoint';
 
 export const NavItems: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-}> = ({ options, data }) => {
+  menuItems: number;
+}> = ({ options, data, menuItems }) => {
   const { handleSelect, isSelected } = options;
-  const { menuItems } = getBreakpoint(data);
 
   return (
     <>

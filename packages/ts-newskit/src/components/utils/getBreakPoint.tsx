@@ -9,5 +9,5 @@ export const getBreakpoint = (data: SecondaryMenuItem[]) => {
 
   const moreMenuLength = data.length - menuItems;
 
-  return { moreMenuLength, menuItems };
+  return { moreMenuLength, menuItems, breakpointKey };
 };

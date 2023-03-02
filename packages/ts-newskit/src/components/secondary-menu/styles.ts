@@ -16,8 +16,10 @@ const setPadding = (space: string) => ({ paddingRight: `${space}` });
 
 export const MainMenu = styled(Menu)<MainMenuProp>`
   ${getSpacingCssFromTheme(setPadding, 'space045')};
+  padding-left: 20px;
   ul {
-    justify-content: ${({ hasMoreItems }) => (hasMoreItems ? `end` : `center`)};
+    justify-content: ${({ hasMoreItems }) =>
+      hasMoreItems ? `space-between` : `center`};
   }
 `;
 
@@ -25,6 +27,16 @@ export const MenuDividerDesktop = styled.hr`
   margin: 0;
   border: 1px solid;
   ${getColorCssFromTheme('color', 'neutral030')};
+`;
+
+export const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
 `;
 
 export const MenuContainer = styled(Menu)`

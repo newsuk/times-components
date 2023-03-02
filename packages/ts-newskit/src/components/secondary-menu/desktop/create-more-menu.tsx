@@ -2,15 +2,13 @@ import React, { Fragment } from 'react';
 import { MenuItem } from 'newskit';
 import { MenuDividerDesktop } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
-import { getBreakpoint } from '../../utils/getBreakPoint';
 
 export const CreateMoreMenu: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-}> = ({ options, data }) => {
+  moreMenuLength: number;
+}> = ({ options, data, moreMenuLength }) => {
   const { handleSelect, isSelected, isExpanded, setIsExpanded } = options;
-  const { moreMenuLength } = getBreakpoint(data);
-
   return (
     <>
       {data.slice(-moreMenuLength).map(({ title, url }) => (
