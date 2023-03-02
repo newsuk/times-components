@@ -30,13 +30,32 @@ const ArticleExtras = ({
   topics
 }) => {
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
-  const sponsoredArticles = (
-    <div id="sponsored-article-container">
-      <div id="sponsored-article" />
-    </div>
+  const sponsoredArticlesAndRelatedArticles = isRecommendedActive => (
+    <>
+      <div id="related-articles" ref={node => registerNode(node)}>
+        <RelatedArticles
+          analyticsStream={analyticsStream}
+          isVisible={relatedArticlesVisible}
+          slice={relatedArticleSlice}
+        />
+        {isRecommendedActive && (
+          <RecommendedFetch
+            articleId={articleId}
+            articleHeadline={articleHeadline}
+            articleSection={section}
+          />
+        )}
+      </div>
+      <div id="sponsored-article-container">
+        <div id="sponsored-article" />
+      </div>
+    </>
   );
   return (
-    <UserState state={UserState.showArticleExtras} fallback={sponsoredArticles}>
+    <UserState
+      state={UserState.showArticleExtras}
+      fallback={sponsoredArticlesAndRelatedArticles(false)}
+    >
       <div style={clearingStyle} />
       <ArticleTopics topics={topics} />
       {(savingEnabled || sharingEnabled) && (
@@ -59,19 +78,7 @@ const ArticleExtras = ({
           </MessageContext.Consumer>
         </UserState>
       )}
-      <div id="related-articles" ref={node => registerNode(node)}>
-        <RelatedArticles
-          analyticsStream={analyticsStream}
-          isVisible={relatedArticlesVisible}
-          slice={relatedArticleSlice}
-        />
-        <RecommendedFetch
-          articleId={articleId}
-          articleHeadline={articleHeadline}
-          articleSection={section}
-        />
-      </div>
-      {sponsoredArticles}
+      {sponsoredArticlesAndRelatedArticles(true)}
       <ArticleComments
         articleId={articleId}
         isEnabled={commentsEnabled}

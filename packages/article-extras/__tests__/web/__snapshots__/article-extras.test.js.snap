@@ -39,14 +39,23 @@ Array [
 ]
 `;
 
-exports[`2. no related articles, topics and comments when user not logged in, only sponsored div 1`] = `
-<div
-  id="sponsored-article-container"
->
+exports[`2. no topics and comments when user not logged in, only related articles and sponsored div 1`] = `
+Array [
   <div
-    id="sponsored-article"
-  />
-</div>
+    id="related-articles"
+  >
+    <RelatedArticles
+      isVisible={true}
+    />
+  </div>,
+  <div
+    id="sponsored-article-container"
+  >
+    <div
+      id="sponsored-article"
+    />
+  </div>,
+]
 `;
 
 exports[`3. read only comments when the user is a share token reader 1`] = `
