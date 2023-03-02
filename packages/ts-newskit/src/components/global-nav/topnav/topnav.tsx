@@ -4,8 +4,9 @@ import { createAccountMenu, createMenu } from './createMenus';
 import {
   NewsKitBurgerIcon,
   NewsKitCloseIcon,
-  NewsKitMasthead,
-  NewsKitSearchIcon
+  NewsKitTimesMasthead,
+  NewsKitSearchIcon,
+  NewsKitSundayTimesMasthead
 } from '../../../assets';
 import {
   MastheadMob,
@@ -20,6 +21,7 @@ import NavSearch from './search';
 
 type TopNavProps = {
   isLoggedIn?: boolean;
+  isSunday?: boolean;
   isHamburgerOpen: boolean;
   toggleHamburger: (isHamburgerOpen: boolean) => void;
   mainMenu?: any;
@@ -31,9 +33,23 @@ export const TopNav: React.FC<TopNavProps> = ({
   accountMenu,
   isHamburgerOpen,
   toggleHamburger,
-  isLoggedIn = false
+  isLoggedIn = false,
+  isSunday = false
 }) => {
   const [searchActive, setSearchActive] = useState<boolean>(false);
+
+  const logoProps = {
+    height: 20,
+    width: 200,
+    overrides: { paddingInline: 'space040' },
+    'aria-label': 'The Times &amp; The Sunday Times'
+  };
+
+  const NavMasthead = isSunday ? (
+    <NewsKitSundayTimesMasthead {...logoProps} />
+  ) : (
+    <NewsKitTimesMasthead {...logoProps} />
+  );
 
   return (
     <>
@@ -78,8 +94,8 @@ export const TopNav: React.FC<TopNavProps> = ({
             {searchActive ? (
               <NavSearch />
             ) : (
-              <LinkInline href="/">
-                <NewsKitMasthead aria-label="The Times &amp; The Sunday Times" />
+              <LinkInline href="/" overrides={{ stylePreset: 'menuLogo' }}>
+                {NavMasthead}
               </LinkInline>
             )}
             <Divider vertical />
@@ -93,8 +109,8 @@ export const TopNav: React.FC<TopNavProps> = ({
             </Visible>
           </TopNavHide>
           <MastheadMob md lg xl display="flex">
-            <LinkInline href="/">
-              <NewsKitMasthead aria-label="The Times &amp; The Sunday Times" />
+            <LinkInline href="/" overrides={{ stylePreset: 'menuLogo' }}>
+              {NavMasthead}
             </LinkInline>
           </MastheadMob>
         </Stack>

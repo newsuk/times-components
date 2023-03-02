@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TCThemeProvider> should match snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="css-xg622u"
+  >
+    <h1
+      class="nk-headline-heading css-e5fswc"
+    >
+      test
+    </h1>
+  </section>
+</DocumentFragment>
+`;

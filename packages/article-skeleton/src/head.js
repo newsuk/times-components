@@ -382,10 +382,7 @@ function Head({
         jsonLD.mainEntityOfPage["@id"] = makeArticleUrl(article);
         return (
           <Helmet encodeSpecialCharacters={false}>
-            <title>
-              {title} | {sectionname ? `${sectionname} | ` : ""}
-              {publication}
-            </title>
+            <title>{title}</title>
             <meta name="robots" content="max-image-preview:large" />
             <meta content={title} name="article:title" />
             <meta content={publication} name="article:publication" />

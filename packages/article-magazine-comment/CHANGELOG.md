@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.65.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.65.1...@times-components/article-magazine-comment@3.65.2) (2023-02-28)
+
+
+### Bug Fixes
+
+* **TDP-3079:** remove section name from page meta title ([#3251](https://github.com/newsuk/times-components/issues/3251)) ([2ada58f](https://github.com/newsuk/times-components/commit/2ada58f3b121d52f8f177bf8fa655ab1bd12c559))
+
+
+
+
+
 ## [3.65.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.65.0...@times-components/article-magazine-comment@3.65.1) (2023-02-24)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
