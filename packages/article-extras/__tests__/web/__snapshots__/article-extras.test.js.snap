@@ -43,11 +43,7 @@ exports[`2. no topics and comments when user not logged in, only related article
 Array [
   <div
     id="related-articles"
-  >
-    <RelatedArticles
-      isVisible={true}
-    />
-  </div>,
+  />,
   <div
     id="sponsored-article-container"
   >
