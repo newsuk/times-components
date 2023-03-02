@@ -11,7 +11,11 @@ export const Breadcrumb: React.FC<{ data: BreadcrumbsItem[] }> = ({ data }) => {
     <Breadcrumbs size="small">
       {data.map((breadcrumbItem, breadcrumbIndex, breadcrumbArr) => (
         <BreadcrumbItem
-          href={breadcrumbIndex + 1 === breadcrumbArr.length ? undefined : breadcrumbItem.url}
+          href={
+            breadcrumbIndex + 1 === breadcrumbArr.length
+              ? undefined
+              : breadcrumbItem.url
+          }
           selected={breadcrumbIndex + 1 === breadcrumbArr.length}
           overrides={{
             stylePreset: 'breadcrumbStyle',
