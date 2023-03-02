@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.43.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.42.2...@times-components/ssr@2.43.0) (2023-03-02)
+
+
+### Features
+
+* **TDP-3100:** related article fix ([#3243](https://github.com/newsuk/times-components/issues/3243)) ([e486b59](https://github.com/newsuk/times-components/commit/e486b59ef557542f96383e57beb325b6450a8472))
+
+
+
+
+
 ## [2.42.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.42.1...@times-components/ssr@2.42.2) (2023-02-28)
 
 **Note:** Version bump only for package @times-components/ssr
