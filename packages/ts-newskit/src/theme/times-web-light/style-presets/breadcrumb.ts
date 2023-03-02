@@ -14,7 +14,7 @@ export const breadcrumbStylePresets = {
     },
     'selected:hover': {
       color: '{{colors.inkContrast}}',
-      textDecoration: 'none',
-    },
+      textDecoration: 'none'
+    }
   }
 };
