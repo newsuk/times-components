@@ -31,10 +31,11 @@ const ArticleExtras = ({
 }) => {
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticlesAndRelatedArticles = isFallback => {
-    const observerFunc = isFallback ? () => {} : registerNode;
+    // const observerFunc = isFallback ? () => {} : registerNode;
+    //  ref={node => observerFunc(node)}
     return (
       <>
-        <div id="related-articles" ref={node => observerFunc(node)}>
+        <div id="related-articles">
           <RelatedArticles
             analyticsStream={analyticsStream}
             isVisible={relatedArticlesVisible}
