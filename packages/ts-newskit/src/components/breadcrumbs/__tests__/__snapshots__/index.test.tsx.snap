@@ -14,7 +14,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       >
         <a
           aria-current="false"
-          class="css-9o22td"
+          class="css-bswvcz"
           data-testid="buttonLink"
           href="/sport"
         >
@@ -51,7 +51,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       >
         <a
           aria-current="false"
-          class="css-9o22td"
+          class="css-bswvcz"
           data-testid="buttonLink"
           href="/sport/tennis"
         >
@@ -88,7 +88,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       >
         <a
           aria-current="page"
-          class="css-1hote62"
+          class="css-g2ynx"
           data-testid="buttonLink"
           href="/sport/tennis/australian-open"
         >
