@@ -1,10 +1,10 @@
 import React from 'react';
 import {
-  LinkInline,
   ScreenReaderOnly,
   Headline,
   Visible,
-  Block
+  Block,
+  LinkInline
 } from 'newskit';
 import { Masthead, MastheadDate } from './styles';
 import { NewsKitTimesMasthead, NewsKitSundayTimesMasthead } from '../../assets';
@@ -20,7 +20,7 @@ export const EditionMasthead = ({ isSunday = false, todaysDate = dateNow }: Edit
   return (
     <Block as="header">
       <Visible md lg xl>
-        <Masthead>
+        <Masthead paddingBlockEnd="space040">
           <ScreenReaderOnly id="sr-times-logo">
             <Headline headingAs="h1">
               The Times &amp; The Sunday Times Homepage
@@ -30,18 +30,19 @@ export const EditionMasthead = ({ isSunday = false, todaysDate = dateNow }: Edit
             date={todaysDate}
             dateFormat="EEEE MMMM d yyyy"
             overrides={{
-              marginBlockEnd: 'space020',
               typographyPreset: 'mastheadTime'
             }}
             data-testid="date-time"
           />
-          <LinkInline href="/" overrides={{ stylePreset: 'mastheadLogo' }} aria-labelledby="sr-times-logo" >
-            {isSunday ? (
-              <NewsKitSundayTimesMasthead />
-            ) : (
-              <NewsKitTimesMasthead />
-            )}
-          </LinkInline>
+          <Block>
+            <LinkInline href="/" overrides={{ stylePreset: 'mastheadLogo' }} aria-labelledby="sr-times-logo" >
+              {isSunday ? (
+                <NewsKitSundayTimesMasthead />
+              ) : (
+                <NewsKitTimesMasthead />
+              )}
+            </LinkInline>
+          </Block>
         </Masthead>
       </Visible>
     </Block>

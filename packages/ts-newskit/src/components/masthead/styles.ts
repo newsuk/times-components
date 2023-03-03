@@ -1,4 +1,4 @@
-import { styled, Block, DateTime } from 'newskit';
+import { styled, Block, DateTime, getColorCssFromTheme } from 'newskit';
 
 export const Masthead = styled(Block)`
   border-bottom: 1px solid #e4e4e4;
@@ -6,6 +6,8 @@ export const Masthead = styled(Block)`
 `;
 
 export const MastheadDate = styled(DateTime)`
-  textTransform: 'capitalize',
-  display: 'block'
+  textTransform: 'capitalize';
+  & > span {
+    ${getColorCssFromTheme('color', 'inkBase')};
+  }
 `;
