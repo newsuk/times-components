@@ -6,12 +6,12 @@ import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 export const CreateMoreMenu: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-  moreMenuLength: number;
-}> = ({ options, data, moreMenuLength }) => {
+  moreMenuItemsLength: number;
+}> = ({ options, data, moreMenuItemsLength }) => {
   const { handleSelect, isSelected, isExpanded, setIsExpanded } = options;
   return (
     <>
-      {data.slice(-moreMenuLength).map(({ title, url }) => (
+      {data.slice(-moreMenuItemsLength).map(({ title, url }) => (
         <Fragment>
           <MenuItem
             href={url}

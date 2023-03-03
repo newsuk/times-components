@@ -4,7 +4,7 @@ import {
   getColorCssFromTheme,
   getSpacingCssFromTheme
 } from 'newskit';
-import { MainMenuProp } from './types';
+import { MainMenuProp, MoreMenuItemsProp } from './types';
 
 export const MenuDivider = styled.hr`
   width: calc(100% - 64px);
@@ -29,9 +29,10 @@ export const MenuDividerDesktop = styled.hr`
   ${getColorCssFromTheme('color', 'neutral030')};
 `;
 
-export const Container = styled.div`
+export const Container = styled.div<MoreMenuItemsProp>`
   display: flex;
-  justify-content: space-between;
+  justify-content: ${({ moreMenuItemsLength }) =>
+    moreMenuItemsLength > 0 ? `space-between` : `center`};
   width: 100%;
 `;
 

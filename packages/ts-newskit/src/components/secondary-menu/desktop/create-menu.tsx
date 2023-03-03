@@ -14,17 +14,22 @@ export const CreateMenu: React.FC<{
   const contanierRef = useRef<HTMLDivElement>(null);
   const { isExpanded, setIsExpanded } = options;
   const { moreMenuLength, menuItems, breakpointKey } = getBreakpoint(data);
-  const [moreMenuItemsLength, setMoreMenuItemsLength] = useState<number>(
-    moreMenuLength
-  );
-  const [hasMenuItem, setHasMenuItem] = useState<number>(menuItems);
+  const [moreMenuItemsLength, setMoreMenuItemsLength] = useState<number>(0);
+  const [hasMenuItem, setHasMenuItem] = useState<number>(data.length);
 
   useEffect(
     () => {
       if (ref.current) {
-        if (ref.current.offsetWidth > 883 && breakpointKey === 'lg') {
+        if (ref.current.offsetWidth > 532 && breakpointKey === 'lg') {
           setMoreMenuItemsLength(moreMenuLength + 1);
           setHasMenuItem(menuItems - 1);
+        } else if (
+          ref.current.offsetWidth > 633 &&
+          breakpointKey === 'md' &&
+          data.length < 7
+        ) {
+          setMoreMenuItemsLength(moreMenuItemsLength + 2);
+          setHasMenuItem(hasMenuItem - 2);
         } else if (ref.current.offsetWidth > 633 && breakpointKey === 'md') {
           setMoreMenuItemsLength(moreMenuLength + 1);
           setHasMenuItem(menuItems - 1);
@@ -39,7 +44,7 @@ export const CreateMenu: React.FC<{
 
   useEffect(
     () => {
-      const checkIfClickedOutside = e => {
+      const checkIfClickedOutside = (e: any) => {
         if (
           isExpanded &&
           contanierRef.current &&
@@ -48,50 +53,52 @@ export const CreateMenu: React.FC<{
           setIsExpanded(!isExpanded);
         }
       };
-      document.addEventListener('mousedown', checkIfClickedOutside);
+      document.addEventListener('click', checkIfClickedOutside);
       return () => {
-        document.removeEventListener('mousedown', checkIfClickedOutside);
+        document.removeEventListener('click', checkIfClickedOutside);
       };
     },
     [isExpanded]
   );
 
-  return moreMenuLength > 0 ? (
+  return (
     <Fragment>
-      <Container ref={contanierRef}>
+      <Container ref={contanierRef} moreMenuItemsLength={moreMenuItemsLength}>
         <Wrapper ref={ref}>
-          <NavItems data={data} options={options} menuItems={hasMenuItem} />
+          <NavItems data={data} options={options} hasMenuItem={hasMenuItem} />
         </Wrapper>
-        <MenuSub
-          onClick={() => setIsExpanded(!isExpanded)}
-          expanded={isExpanded}
-          title="See all"
-          overrides={{
-            stylePreset: `${isExpanded ? 'subMenuPreset2' : 'subMenuPreset1'}`,
-            list: { stylePreset: 'subMenuItems' },
-            typographyPreset: 'newPreset040'
-          }}
-          data-testid="more-sub-menu"
-        >
-          <MenuContainer>
-            <Menu
-              vertical
-              overrides={{
-                spaceInline: 'sizing000'
-              }}
-              aria-label="menu-multiple-auto"
-            >
-              <CreateMoreMenu
-                data={data}
-                options={options}
-                moreMenuLength={moreMenuItemsLength}
-              />
-            </Menu>
-          </MenuContainer>
-        </MenuSub>
+        {moreMenuItemsLength > 0 && (
+          <MenuSub
+            onClick={() => setIsExpanded(!isExpanded)}
+            expanded={isExpanded}
+            title="See all"
+            overrides={{
+              stylePreset: `${
+                isExpanded ? 'subMenuPreset2' : 'subMenuPreset1'
+              }`,
+              list: { stylePreset: 'subMenuItems' },
+              typographyPreset: 'newPreset040'
+            }}
+            data-testid="more-sub-menu"
+          >
+            <MenuContainer>
+              <Menu
+                vertical
+                overrides={{
+                  spaceInline: 'sizing000'
+                }}
+                aria-label="menu-multiple-auto"
+              >
+                <CreateMoreMenu
+                  data={data}
+                  options={options}
+                  moreMenuItemsLength={moreMenuItemsLength}
+                />
+              </Menu>
+            </MenuContainer>
+          </MenuSub>
+        )}
       </Container>
     </Fragment>
-  ) : (
-    <NavItems data={data} options={options} menuItems={hasMenuItem} />
   );
 };

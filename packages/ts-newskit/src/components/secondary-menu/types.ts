@@ -8,6 +8,10 @@ export type MainMenuProp = {
   hasMoreItems: boolean;
 };
 
+export type MoreMenuItemsProp = {
+  moreMenuItemsLength: number;
+};
+
 export type SecondaryMenuOptions = {
   isSelected: string;
   handleSelect: (value: string) => void;
