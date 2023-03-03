@@ -190,6 +190,8 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
           commentsEnabled={true}
+          isCommentEnabled={true}
+          isSharingSavingEnabled={true}
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {
@@ -453,6 +455,8 @@ exports[`4. an article with ads 1`] = `
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
           commentsEnabled={true}
+          isCommentEnabled={true}
+          isSharingSavingEnabled={true}
           publishedTime="2015-03-13T18:54:58.000Z"
           relatedArticleSlice={
             Object {

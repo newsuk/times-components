@@ -15,7 +15,9 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     isPreview,
     swgProductId,
     commentCount,
-    zephrDivs
+    zephrDivs,
+    sharingSavingFlag = true,
+    commentingFlag = true
   } = window.nuk.article;
   const { getCookieValue } = window.nuk;
 
@@ -32,7 +34,9 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     isPreview,
     swgProductId,
     commentCount,
-    zephrDivs
+    zephrDivs,
+    sharingSavingFlag,
+    commentingFlag
   };
 
   const clientOptions = {
