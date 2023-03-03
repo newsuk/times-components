@@ -6,11 +6,9 @@ type BreadcrumbsItem = {
   url?: string;
 };
 
-export interface BreadcrumbProps {
+interface BreadcrumbProps {
   data: BreadcrumbsItem[];
 };
-
-
 
 export const Breadcrumb = ({ data }: BreadcrumbProps) => {
   return (

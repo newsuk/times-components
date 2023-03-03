@@ -97,10 +97,9 @@ export const typographyPresets = Object.fromEntries(
       fontFamily: '{{fonts.fontFamily030.fontFamily}}',
       fontSize: '{{fonts.fontSize010}}',
       fontWeight: '{{fonts.fontWeight010}}',
-      lineHeight: '{{fonts.fontLineHeight070}}',
-      letterSpacing: '{{fonts.fontLetterSpacing020}}',
+      lineHeight: '{{fonts.fontLineHeight020}}',
+      letterSpacing: '{{fonts.fontLetterSpacing050}}',
       fontStretch: 'normal',
-      textAlign: 'center'
     },
     breadcrumbText: {
       fontFamily: '{{fonts.fontFamily030.fontFamily}}',
