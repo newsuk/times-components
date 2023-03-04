@@ -24,19 +24,27 @@ export const CreateMenu: React.FC<{
           setMoreMenuItemsLength(moreMenuLength + 1);
           setHasMenuItem(menuItems - 1);
         } else if (
-          ref.current.offsetWidth > 633 &&
+          ref.current.offsetWidth > 540 &&
+          ref.current.offsetWidth < 645 &&
+          breakpointKey === 'md'
+        ) {
+          setMoreMenuItemsLength(moreMenuLength - 1);
+          setHasMenuItem(menuItems + 1);
+        } else if (
+          ref.current.offsetWidth > 645 &&
           breakpointKey === 'md' &&
           data.length < 7
         ) {
-          setMoreMenuItemsLength(moreMenuItemsLength + 2);
-          setHasMenuItem(hasMenuItem - 2);
-        } else if (ref.current.offsetWidth > 633 && breakpointKey === 'md') {
+          setMoreMenuItemsLength(moreMenuItemsLength + 1);
+          setHasMenuItem(hasMenuItem - 1);
+        } else if (ref.current.offsetWidth > 645 && breakpointKey === 'md') {
           setMoreMenuItemsLength(moreMenuLength + 1);
           setHasMenuItem(menuItems - 1);
         } else {
           setMoreMenuItemsLength(moreMenuLength);
           setHasMenuItem(menuItems);
         }
+        console.log(ref.current.offsetWidth);
       }
     },
     [breakpointKey]

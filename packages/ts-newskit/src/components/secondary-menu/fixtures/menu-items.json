@@ -73,9 +73,9 @@
       "slug": "comment",
       "items": [
         {
-          "title": "Top stories",
+          "title": "Today's columns",
           "url": "/comment",
-          "slug": "top-stories-comment"
+          "slug": "comment"
         },
         {
           "title": "Columnists",
@@ -83,14 +83,14 @@
           "slug": "columnists"
         },
         {
-          "title": "The Times view",
-          "url": "/the-times-view",
-          "slug": "the-times-view"
+          "title": "Times View",
+          "url": "/times-view",
+          "slug": "times-view"
         },
         {
-          "title": "Letters to the Editor",
-          "url": "/letters-to-the-editor",
-          "slug": "letters-to-the-editor"
+          "title": "Letters",
+          "url": "/letters",
+          "slug": "letters"
         },
         {
           "title": "Cartoons",
@@ -194,7 +194,12 @@
         {
           "title": "Film",
           "url": "/film",
-          "slug": "Theatre"
+          "slug": "film"
+        },
+        {
+          "title": "Theatre",
+          "url": "theatre",
+          "slug": "/theatre"
         },
         {
           "title": "Opera",
@@ -202,71 +207,9 @@
           "slug": "opera"
         },
         {
-          "title": "Arts",
-          "url": "/arts",
-          "slug": "arts"
-        }
-      ]
-    },
-    {
-      "title": "Sport",
-      "url": "/sport",
-      "slug": "sport",
-      "items": [
-        {
-          "title": "Top stories",
-          "url": "/sport",
-          "slug": "top-stories-sport"
-        },
-        {
-          "title": "Football",
-          "url": "/football",
-          "slug": "football"
-        },
-        {
-          "title": "Rugby Union",
-          "url": "/rugby-union",
-          "slug": "rugby-union"
-        },
-        {
-          "title": "Tennis",
-          "url": "/tennis",
-          "slug": "tennis"
-        },
-        {
-          "title": "Cricket",
-          "url": "/cricket",
-          "slug": "cricket"
-        },
-        {
-          "title": "Athletics",
-          "url": "/athletics",
-          "slug": "athletics"
-        },
-        {
-          "title": "Cycling",
-          "url": "/cycling",
-          "slug": "cycling"
-        },
-        {
-          "title": "Formula One",
-          "url": "/formula-one",
-          "slug": "formula-one"
-        },
-        {
-          "title": "Golf",
-          "url": "/golf",
-          "slug": "golf"
-        },
-        {
-          "title": "Horse Racing",
-          "url": "/horse-racing",
-          "slug": "horse-racing"
-        },
-        {
-          "title": "Boxing",
-          "url": "/boxing",
-          "slug": "boxing"
+          "title": "Art",
+          "url": "/art",
+          "slug": "art"
         }
       ]
     },
@@ -296,9 +239,9 @@
           "slug": "markets"
         },
         {
-          "title": "Technology",
-          "url": "/technology",
-          "slug": "technology"
+          "title": "Tech",
+          "url": "/tech",
+          "slug": "tech"
         },
         {
           "title": "Entrepreneurs",
@@ -313,15 +256,84 @@
       ]
     },
     {
+      "title": "Sport",
+      "url": "/sport",
+      "slug": "sport",
+      "items": [
+        {
+          "title": "Top stories",
+          "url": "/sport",
+          "slug": "top-stories-sport"
+        },
+        {
+          "title": "Football",
+          "url": "/football",
+          "slug": "football"
+        },
+        {
+          "title": "Cricket",
+          "url": "/cricket",
+          "slug": "cricket"
+        },
+        {
+          "title": "Rugby Union",
+          "url": "/rugby-union",
+          "slug": "rugby-union"
+        },
+        {
+          "title": "Formula 1",
+          "url": "/formula-1",
+          "slug": "formula-1"
+        },
+        {
+          "title": "Tennis",
+          "url": "/tennis",
+          "slug": "tennis"
+        },
+        {
+          "title": "Golf",
+          "url": "/golf",
+          "slug": "golf"
+        },
+        {
+          "title": "Other sport",
+          "url": "/other-sport",
+          "slug": "other-sport"
+        }
+      ]
+    },
+    {
+      "title": "Magazines",
+      "url": "/magazines",
+      "slug": "magazines",
+      "items": [
+        {
+          "title": "The Sunday Times magazine",
+          "url": "/the-sunday-times-magazine",
+          "slug": "the-sunday-times-magazine"
+        },
+        {
+          "title": "Culture magazine",
+          "url": "/culture-magazine",
+          "slug": "culture-magazine"
+        },
+        {
+          "title": "Style magazine",
+          "url": "/style-magazine",
+          "slug": "style-magazine"
+        },
+        {
+          "title": "The Times magazine",
+          "url": "/the-times-magazine",
+          "slug": "the-times-magazine"
+        }
+      ]
+    },
+    {
       "title": "Puzzles",
       "url": "/puzzles",
       "slug": "puzzles",
       "items": [
-        {
-          "title": "Crossword Club",
-          "url": "/crossword-club",
-          "slug": "crossword-club"
-        },
         {
           "title": "Crosswords",
           "url": "/crosswords",
@@ -343,46 +355,9 @@
           "slug": "soduku"
         }
       ]
-    },
-    {
-      "title": "Magazines",
-      "url": "/magazines",
-      "slug": "magazines",
-      "items": [
-        {
-          "title": "The Sunday Times magazine",
-          "url": "/the-sunday-times-magazine",
-          "slug": "the-sunday-times-magazine"
-        },
-        {
-          "title": "Culture magazine",
-          "url": "/culture-magazine",
-          "slug": "culture-magazine"
-        },
-        {
-          "title": "Weekend magazine",
-          "url": "/weekend-magazine",
-          "slug": "weekend-magazine"
-        },
-        {
-          "title": "Style magazine",
-          "url": "/style-magazine",
-          "slug": "style-magazine"
-        },
-        {
-          "title": "The Times magazine",
-          "url": "/the-times-magazine",
-          "slug": "the-times-magazine"
-        }
-      ]
     }
   ],
   "moreMenuItems": [
-    {
-      "title": "E-paper",
-      "url": "/e-paper",
-      "slug": "e-paper"
-    },
     {
       "title": "Newsletters",
       "url": "/newsletters",
@@ -394,7 +369,7 @@
       "slug": "tv-guide"
     },
     {
-      "title": "Times +",
+      "title": "Times+",
       "url": "/times-plus",
       "slug": "times-plus"
     },
@@ -404,12 +379,12 @@
       "slug": "times-radio"
     },
     {
-      "title": "Times Podcasts",
+      "title": "Podcasts",
       "url": "/podcasts",
       "slug": "podcasts"
     },
     {
-      "title": "Times Money Mentor",
+      "title": "Money Mentor",
       "url": "/money-mentor",
       "slug": "money-mentor"
     },
@@ -419,37 +394,32 @@
       "slug": "times-travel"
     },
     {
-      "title": "Times wine club",
+      "title": "Wine club",
       "url": "/wine-club",
       "slug": "wine-club"
     },
     {
-      "title": "Times appointments",
-      "url": "/times-appointments",
-      "slug": "times-appointments"
-    },
-    {
-      "title": "The Sunday Times Rich List",
+      "title": "Rich List",
       "url": "/rich-list",
       "slug": "rich-list"
     },
     {
-      "title": "The Times good uni guide",
+      "title": "Uni guide",
       "url": "/uni-guide",
       "slug": "uni-guide"
     },
     {
-      "title": "The Times good school guide",
+      "title": "School guide",
       "url": "/school-guide",
       "slug": "school-guide"
     },
     {
-      "title": "The Times best places to live",
+      "title": "Best places to live",
       "url": "/best-places-to-live",
       "slug": "best-places-to-live"
     },
     {
-      "title": "The Times best places to stay",
+      "title": "Best places to stay",
       "url": "/best-places-to-stay",
       "slug": "best-places-to-stay"
     },

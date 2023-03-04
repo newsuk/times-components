@@ -186,29 +186,6 @@ exports[`Secondary Menu should render snapshot 1`] = `
             <a
               class="css-6na7vz"
               data-testid="buttonLink"
-              href="/sport"
-              id="vertical-sport"
-            >
-              <span
-                class="css-1t9x538"
-              >
-                Sport
-              </span>
-            </a>
-          </li>
-          <hr
-            class="css-1nallzn"
-          />
-        </div>
-        <div
-          class="css-jceq9e"
-        >
-          <li
-            class="nk-menu-item css-bkfzpe"
-          >
-            <a
-              class="css-6na7vz"
-              data-testid="buttonLink"
               href="/business-and-money"
               id="vertical-business-and-money"
             >
@@ -232,13 +209,13 @@ exports[`Secondary Menu should render snapshot 1`] = `
             <a
               class="css-6na7vz"
               data-testid="buttonLink"
-              href="/puzzles"
-              id="vertical-puzzles"
+              href="/sport"
+              id="vertical-sport"
             >
               <span
                 class="css-1t9x538"
               >
-                Puzzles
+                Sport
               </span>
             </a>
           </li>
@@ -262,6 +239,29 @@ exports[`Secondary Menu should render snapshot 1`] = `
                 class="css-1t9x538"
               >
                 Magazines
+              </span>
+            </a>
+          </li>
+          <hr
+            class="css-1nallzn"
+          />
+        </div>
+        <div
+          class="css-jceq9e"
+        >
+          <li
+            class="nk-menu-item css-bkfzpe"
+          >
+            <a
+              class="css-6na7vz"
+              data-testid="buttonLink"
+              href="/puzzles"
+              id="vertical-puzzles"
+            >
+              <span
+                class="css-1t9x538"
+              >
+                Puzzles
               </span>
             </a>
           </li>
@@ -377,22 +377,6 @@ exports[`Secondary Menu should render snapshot 1`] = `
                 aria-current="false"
                 class="css-1hwortb"
                 data-testid="buttonLink"
-                href="/sport"
-              >
-                <span
-                  class="css-176g0l8"
-                >
-                  Sport
-                </span>
-              </a>
-            </li>
-            <li
-              class="nk-menu-item css-1iaj8wm"
-            >
-              <a
-                aria-current="false"
-                class="css-1hwortb"
-                data-testid="buttonLink"
                 href="/business-and-money"
               >
                 <span
@@ -409,12 +393,12 @@ exports[`Secondary Menu should render snapshot 1`] = `
                 aria-current="false"
                 class="css-1hwortb"
                 data-testid="buttonLink"
-                href="/puzzles"
+                href="/sport"
               >
                 <span
                   class="css-176g0l8"
                 >
-                  Puzzles
+                  Sport
                 </span>
               </a>
             </li>
@@ -431,6 +415,22 @@ exports[`Secondary Menu should render snapshot 1`] = `
                   class="css-176g0l8"
                 >
                   Magazines
+                </span>
+              </a>
+            </li>
+            <li
+              class="nk-menu-item css-1iaj8wm"
+            >
+              <a
+                aria-current="false"
+                class="css-1hwortb"
+                data-testid="buttonLink"
+                href="/puzzles"
+              >
+                <span
+                  class="css-176g0l8"
+                >
+                  Puzzles
                 </span>
               </a>
             </li>
