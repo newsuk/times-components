@@ -5,6 +5,7 @@ import { mainMenuItems } from '../fixtures/menu-items.json';
 import { cleanup, fireEvent } from '@testing-library/react';
 import { CreateMenu } from '../desktop/create-menu';
 import { useBreakpointKey } from 'newskit';
+
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
   useBreakpointKey: jest.fn().mockReturnValue('xl')
@@ -46,5 +47,13 @@ describe('Create Menu', () => {
     );
     const seeAllButton = getByRole('button');
     expect(seeAllButton).toHaveStyle('background-color: rgb(245, 245, 245)');
+  });
+  it('should render correct list items when data length smaller then 10', () => {
+    (useBreakpointKey as any).mockReturnValue('lg');
+    const { getAllByRole } = render(
+      <CreateMenu data={mainMenuItems} options={options} />
+    );
+    const list = getAllByRole('listitem');
+    expect(list).toHaveLength(9);
   });
 });
