@@ -38,7 +38,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               <span
                 class="css-1jsivz"
               >
-                Close
+                See all
               </span>
               <svg
                 aria-hidden="true"
@@ -62,213 +62,6 @@ exports[`Secondary Menu should render snapshot 1`] = `
             />
           </li>
         </div>
-        <div
-          class="css-jceq9e"
-        >
-          <li
-            class="nk-menu-item css-bkfzpe"
-          >
-            <a
-              class="css-6na7vz"
-              data-testid="buttonLink"
-              href="/home"
-              id="vertical-home"
-            >
-              <span
-                class="css-1t9x538"
-              >
-                Home
-              </span>
-            </a>
-          </li>
-          <hr
-            class="css-1nallzn"
-          />
-        </div>
-        <div
-          class="css-jceq9e"
-        >
-          <li
-            class="nk-menu-item css-bkfzpe"
-          >
-            <a
-              class="css-6na7vz"
-              data-testid="buttonLink"
-              href="/news"
-              id="vertical-news"
-            >
-              <span
-                class="css-1t9x538"
-              >
-                News
-              </span>
-            </a>
-          </li>
-          <hr
-            class="css-1nallzn"
-          />
-        </div>
-        <div
-          class="css-jceq9e"
-        >
-          <li
-            class="nk-menu-item css-bkfzpe"
-          >
-            <a
-              class="css-6na7vz"
-              data-testid="buttonLink"
-              href="/comment"
-              id="vertical-comment"
-            >
-              <span
-                class="css-1t9x538"
-              >
-                Comment
-              </span>
-            </a>
-          </li>
-          <hr
-            class="css-1nallzn"
-          />
-        </div>
-        <div
-          class="css-jceq9e"
-        >
-          <li
-            class="nk-menu-item css-bkfzpe"
-          >
-            <a
-              class="css-6na7vz"
-              data-testid="buttonLink"
-              href="/life-and-style"
-              id="vertical-life-and-style"
-            >
-              <span
-                class="css-1t9x538"
-              >
-                Life & Style
-              </span>
-            </a>
-          </li>
-          <hr
-            class="css-1nallzn"
-          />
-        </div>
-        <div
-          class="css-jceq9e"
-        >
-          <li
-            class="nk-menu-item css-bkfzpe"
-          >
-            <a
-              class="css-6na7vz"
-              data-testid="buttonLink"
-              href="/arts-and-books"
-              id="vertical-arts-and-books"
-            >
-              <span
-                class="css-1t9x538"
-              >
-                Arts & Books
-              </span>
-            </a>
-          </li>
-          <hr
-            class="css-1nallzn"
-          />
-        </div>
-        <div
-          class="css-jceq9e"
-        >
-          <li
-            class="nk-menu-item css-bkfzpe"
-          >
-            <a
-              class="css-6na7vz"
-              data-testid="buttonLink"
-              href="/business-and-money"
-              id="vertical-business-and-money"
-            >
-              <span
-                class="css-1t9x538"
-              >
-                Business & Money
-              </span>
-            </a>
-          </li>
-          <hr
-            class="css-1nallzn"
-          />
-        </div>
-        <div
-          class="css-jceq9e"
-        >
-          <li
-            class="nk-menu-item css-bkfzpe"
-          >
-            <a
-              class="css-6na7vz"
-              data-testid="buttonLink"
-              href="/sport"
-              id="vertical-sport"
-            >
-              <span
-                class="css-1t9x538"
-              >
-                Sport
-              </span>
-            </a>
-          </li>
-          <hr
-            class="css-1nallzn"
-          />
-        </div>
-        <div
-          class="css-jceq9e"
-        >
-          <li
-            class="nk-menu-item css-bkfzpe"
-          >
-            <a
-              class="css-6na7vz"
-              data-testid="buttonLink"
-              href="/magazines"
-              id="vertical-magazines"
-            >
-              <span
-                class="css-1t9x538"
-              >
-                Magazines
-              </span>
-            </a>
-          </li>
-          <hr
-            class="css-1nallzn"
-          />
-        </div>
-        <div
-          class="css-jceq9e"
-        >
-          <li
-            class="nk-menu-item css-bkfzpe"
-          >
-            <a
-              class="css-6na7vz"
-              data-testid="buttonLink"
-              href="/puzzles"
-              id="vertical-puzzles"
-            >
-              <span
-                class="css-1t9x538"
-              >
-                Puzzles
-              </span>
-            </a>
-          </li>
-          <hr
-            class="css-1nallzn"
-          />
-        </div>
       </ul>
     </nav>
   </div>
@@ -277,7 +70,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
   >
     <nav
       aria-label="Secondary Navigation"
-      class="css-1x0dow3"
+      class="css-1hyt1wq"
       data-testid="menu-container"
       role="navigation"
     >
@@ -295,7 +88,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
             >
               <a
                 aria-current="page"
-                class="css-zkudsr"
+                class="css-1tthl9t"
                 data-testid="buttonLink"
                 href="/home"
               >
@@ -311,7 +104,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
             >
               <a
                 aria-current="false"
-                class="css-1hwortb"
+                class="css-78mr69"
                 data-testid="buttonLink"
                 href="/news"
               >
@@ -327,7 +120,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
             >
               <a
                 aria-current="false"
-                class="css-1hwortb"
+                class="css-78mr69"
                 data-testid="buttonLink"
                 href="/comment"
               >
@@ -343,7 +136,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
             >
               <a
                 aria-current="false"
-                class="css-1hwortb"
+                class="css-78mr69"
                 data-testid="buttonLink"
                 href="/life-and-style"
               >
@@ -359,7 +152,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
             >
               <a
                 aria-current="false"
-                class="css-1hwortb"
+                class="css-78mr69"
                 data-testid="buttonLink"
                 href="/arts-and-books"
               >
@@ -375,7 +168,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
             >
               <a
                 aria-current="false"
-                class="css-1hwortb"
+                class="css-78mr69"
                 data-testid="buttonLink"
                 href="/business-and-money"
               >
@@ -391,7 +184,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
             >
               <a
                 aria-current="false"
-                class="css-1hwortb"
+                class="css-78mr69"
                 data-testid="buttonLink"
                 href="/sport"
               >
@@ -407,7 +200,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
             >
               <a
                 aria-current="false"
-                class="css-1hwortb"
+                class="css-78mr69"
                 data-testid="buttonLink"
                 href="/magazines"
               >
@@ -423,7 +216,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
             >
               <a
                 aria-current="false"
-                class="css-1hwortb"
+                class="css-78mr69"
                 data-testid="buttonLink"
                 href="/puzzles"
               >
@@ -439,7 +232,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
       </ul>
     </nav>
     <hr
-      class="css-1nallzn"
+      class="css-rx56cc"
     />
   </div>
 </DocumentFragment>

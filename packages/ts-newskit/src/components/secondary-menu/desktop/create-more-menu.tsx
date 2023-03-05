@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { MenuItem } from 'newskit';
-import { MenuDividerDesktop } from '../styles';
+import { MenuDividerDropdown } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 
 export const CreateMoreMenu: React.FC<{
@@ -9,6 +9,7 @@ export const CreateMoreMenu: React.FC<{
   moreMenuItemsLength: number;
 }> = ({ options, data, moreMenuItemsLength }) => {
   const { handleSelect, isSelected, isExpanded, setIsExpanded } = options;
+
   return (
     <>
       {data.slice(-moreMenuItemsLength).map(({ title, url }) => (
@@ -27,7 +28,7 @@ export const CreateMoreMenu: React.FC<{
           >
             {title}
           </MenuItem>
-          <MenuDividerDesktop />
+          <MenuDividerDropdown />
         </Fragment>
       ))}
     </>

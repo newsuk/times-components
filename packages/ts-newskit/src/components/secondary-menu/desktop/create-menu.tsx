@@ -1,6 +1,6 @@
-import React, { Fragment, useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { MenuSub, Menu } from 'newskit';
-import { MenuContainer, Container, Wrapper } from '../styles';
+import { MenuContainer, Container, Wrapper, MainMenu } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
@@ -20,7 +20,14 @@ export const CreateMenu: React.FC<{
   useEffect(
     () => {
       if (ref.current) {
-        if (ref.current.offsetWidth > 532 && breakpointKey === 'lg') {
+        if (
+          ref.current.offsetWidth < 900 &&
+          breakpointKey === 'lg' &&
+          data.length < 10
+        ) {
+          setMoreMenuItemsLength(moreMenuLength - 1);
+          setHasMenuItem(menuItems + 1);
+        } else if (ref.current.offsetWidth > 532 && breakpointKey === 'lg') {
           setMoreMenuItemsLength(moreMenuLength + 1);
           setHasMenuItem(menuItems - 1);
         } else if (
@@ -44,7 +51,6 @@ export const CreateMenu: React.FC<{
           setMoreMenuItemsLength(moreMenuLength);
           setHasMenuItem(menuItems);
         }
-        console.log(ref.current.offsetWidth);
       }
     },
     [breakpointKey]
@@ -70,7 +76,13 @@ export const CreateMenu: React.FC<{
   );
 
   return (
-    <Fragment>
+    <MainMenu
+      hasMoreItems={moreMenuItemsLength > 0 ? true : false}
+      aria-label="Secondary Navigation"
+      overrides={{
+        spaceInline: 'space050'
+      }}
+    >
       <Container ref={contanierRef} moreMenuItemsLength={moreMenuItemsLength}>
         <Wrapper ref={ref}>
           <NavItems data={data} options={options} hasMenuItem={hasMenuItem} />
@@ -107,6 +119,6 @@ export const CreateMenu: React.FC<{
           </MenuSub>
         )}
       </Container>
-    </Fragment>
+    </MainMenu>
   );
 };

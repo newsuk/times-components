@@ -6,10 +6,9 @@ import { SecondaryMenuItem } from './types';
 
 export const SecondaryNavigation: React.FC<{
   title: string;
-  isActive: boolean;
   data: SecondaryMenuItem[];
-}> = ({ isActive, data }) => {
-  const [isExpanded, setIsExpanded] = useState<boolean>(isActive);
+}> = ({ data }) => {
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [isSelected, setIsSelected] = useState<string>('');
   const firstItem = data[0].title;
 
@@ -21,10 +20,8 @@ export const SecondaryNavigation: React.FC<{
     const filteredItem = data.find(item => item.title === title);
     if (filteredItem) {
       setIsSelected(filteredItem.title);
-      setIsExpanded(false);
     } else {
       setIsSelected(firstItem);
-      setIsExpanded(isActive);
     }
   };
 

@@ -8,6 +8,10 @@ export type MainMenuProp = {
   hasMoreItems: boolean;
 };
 
+export type BreakPointProp = {
+  breakpointKey: string;
+};
+
 export type MoreMenuItemsProp = {
   moreMenuItemsLength: number;
 };

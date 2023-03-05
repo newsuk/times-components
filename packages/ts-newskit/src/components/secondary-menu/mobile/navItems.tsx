@@ -1,6 +1,6 @@
 import React from 'react';
 import { MenuItem, Block } from 'newskit';
-import { MenuDivider } from '../styles';
+import { MenuDividerMobile } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 
 export const NavItems: React.FC<{
@@ -24,7 +24,7 @@ export const NavItems: React.FC<{
           >
             {item.title}
           </MenuItem>
-          <MenuDivider />
+          <MenuDividerMobile />
         </Block>
       ))}
     </>

@@ -4,7 +4,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
 <DocumentFragment>
   <nav
     aria-label="Secondary Navigation"
-    class="css-7lee07"
+    class="css-xb2l4b"
     data-testid="menu-container"
     role="navigation"
   >
@@ -22,7 +22,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           >
             <a
               aria-current="page"
-              class="css-zkudsr"
+              class="css-1tthl9t"
               data-testid="buttonLink"
               href="/home"
             >
@@ -38,7 +38,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1hwortb"
+              class="css-78mr69"
               data-testid="buttonLink"
               href="/news"
             >
@@ -54,7 +54,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1hwortb"
+              class="css-78mr69"
               data-testid="buttonLink"
               href="/comment"
             >
@@ -70,7 +70,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1hwortb"
+              class="css-78mr69"
               data-testid="buttonLink"
               href="/life-and-style"
             >
@@ -86,7 +86,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1hwortb"
+              class="css-78mr69"
               data-testid="buttonLink"
               href="/arts-and-books"
             >
@@ -102,7 +102,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1hwortb"
+              class="css-78mr69"
               data-testid="buttonLink"
               href="/business-and-money"
             >
@@ -118,7 +118,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1hwortb"
+              class="css-78mr69"
               data-testid="buttonLink"
               href="/sport"
             >
@@ -165,7 +165,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
             class="css-1me0nkm"
           >
             <nav
-              class="css-1dqbkfx"
+              class="css-q3prat"
               data-testid="menu-container"
               role="navigation"
             >
@@ -198,7 +198,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
                       </a>
                     </li>
                     <hr
-                      class="css-l9jcpu"
+                      class="css-1r4u4vf"
                     />
                     <li
                       class="nk-menu-item css-1kdinep"
@@ -217,7 +217,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
                       </a>
                     </li>
                     <hr
-                      class="css-l9jcpu"
+                      class="css-1r4u4vf"
                     />
                   </ul>
                 </nav>
@@ -229,7 +229,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
     </ul>
   </nav>
   <hr
-    class="css-1nallzn"
+    class="css-rx56cc"
   />
 </DocumentFragment>
 `;
