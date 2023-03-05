@@ -56,4 +56,20 @@ describe('Create Menu', () => {
     const list = getAllByRole('listitem');
     expect(list).toHaveLength(9);
   });
+  it('should render correct list items when screen size is medium', () => {
+    (useBreakpointKey as any).mockReturnValue('md');
+    const { getByTestId } = render(
+      <CreateMenu data={mainMenuItems} options={options} />
+    );
+    const list = getByTestId('navitems-test-id').querySelectorAll('a');
+    expect(list).toHaveLength(7);
+  });
+  it('should render correct list items when screen size is large', () => {
+    (useBreakpointKey as any).mockReturnValue('lg');
+    const { getByTestId } = render(
+      <CreateMenu data={mainMenuItems} options={options} />
+    );
+    const list = getByTestId('navitems-test-id').querySelectorAll('a');
+    expect(list).toHaveLength(9);
+  });
 });

@@ -82,6 +82,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
         >
           <div
             class="css-ov1ktg"
+            data-testid="navitems-test-id"
           >
             <li
               class="nk-menu-item css-1iaj8wm"

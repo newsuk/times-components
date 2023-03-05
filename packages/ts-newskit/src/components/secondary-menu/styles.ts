@@ -65,3 +65,12 @@ export const MenuContainer = styled(Menu)`
     margin: -2px 0;
   }
 `;
+
+export const NavItemsContainer = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  ${getColorCssFromTheme('backgroundColor', 'white')};
+`;

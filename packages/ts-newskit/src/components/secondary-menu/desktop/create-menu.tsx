@@ -84,7 +84,7 @@ export const CreateMenu: React.FC<{
       }}
     >
       <Container ref={contanierRef} moreMenuItemsLength={moreMenuItemsLength}>
-        <Wrapper ref={ref}>
+        <Wrapper ref={ref} data-testid="navitems-test-id">
           <NavItems data={data} options={options} hasMenuItem={hasMenuItem} />
         </Wrapper>
         {moreMenuItemsLength > 0 && (
