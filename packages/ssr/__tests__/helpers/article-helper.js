@@ -43,7 +43,7 @@ const articleTemplateTest = (template, options = {}) => {
           // wait for the image to transition and be removed (unfortunately Cypress doesn't auto wait for this)
           // cy.wait(2000);
 
-          cy.get("#related-articles > div:first-child img", {timeout:2000}).as("raImages");
+          cy.get("#related-articles > div:first-child img").as("raImages");
 
           cy.get("@raImages")
             .its("length")
