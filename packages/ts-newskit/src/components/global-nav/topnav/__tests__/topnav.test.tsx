@@ -3,7 +3,7 @@ import { fireEvent } from '@testing-library/react';
 import { render, screen } from '../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { TopNav } from '../topnav';
-import NavSearch from '../search';
+import NavSearch from '../../search';
 import data from '../../fixtures/data.json';
 
 const renderComponent = (isLoggedIn?: boolean, isSunday?: boolean) =>

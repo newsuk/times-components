@@ -90,10 +90,8 @@ export const menuStylePresets = {
   searchBar: {
     base: {
       backgroundColor: '{{colors.interfaceNeutral010}}',
-      color: '#9C9C9C',
       borderRadius: '{{sizing.sizing020}}',
-      marginBottom: 0,
-      height: '40px'
+      color:'{{colors.white}}'
     }
   }
 };

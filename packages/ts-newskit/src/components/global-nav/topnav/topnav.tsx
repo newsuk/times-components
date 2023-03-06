@@ -17,7 +17,7 @@ import {
   TopNavHide,
   TopNavIcon
 } from '../styles';
-import NavSearch from './search';
+import NavSearch from '../search';
 
 type TopNavProps = {
   isLoggedIn?: boolean;

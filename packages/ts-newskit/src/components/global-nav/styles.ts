@@ -34,10 +34,10 @@ export const MastheadMob = styled(Hidden)`
   justify-content: center;
 `;
 
-const setMargin = (space: string) => ({ margin: `6px ${space}` });
+const setAccountMenuMargin = (space: string) => ({ margin: `6px ${space}` });
 export const AccountMenu = styled(Menu)`
   & li:last-of-type {
-    ${getSpacingCssFromTheme(setMargin, 'space040')};
+    ${getSpacingCssFromTheme(setAccountMenuMargin, 'space040')};
   }
 `;
 
@@ -60,6 +60,9 @@ export const MenuScrollDivider = styled(Divider)`
 export const TopNavIcon = styled(IconButton)`
   height: 50px;
   width: 50px;
+  z-index: 1;
+
+
   ${getColorCssFromTheme('color', 'inkInverse')};
 
   ${getMediaQueryFromTheme('md')} {
@@ -73,7 +76,7 @@ export const TopNavIcon = styled(IconButton)`
   }
 `;
 
-const setPadding = (space: string) => ({ padding: `${space}` });
+const setHamburgerMenuPadding = (space: string) => ({ padding: `${space}` });
 export const HamburgerMenuContainer = styled(Drawer)`
   top: 50px;
   box-shadow: none;
@@ -84,7 +87,7 @@ export const HamburgerMenuContainer = styled(Drawer)`
   }
 
   & > div {
-    ${getSpacingCssFromTheme(setPadding, 'space000')};
+    ${getSpacingCssFromTheme(setHamburgerMenuPadding, 'space000')};
   }
 `;
 
@@ -94,7 +97,7 @@ export const HamburgerStyledMenu = styled(Menu)`
   }
   li {
     width: 100%;
-    margin: 0px;
+    margin: 0;
   }
 `;
 

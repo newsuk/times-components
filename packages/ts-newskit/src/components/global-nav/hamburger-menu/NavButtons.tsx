@@ -1,9 +1,9 @@
 import React from 'react';
 import { Block, Stack } from 'newskit';
 import LoggedInMenuItem from './LoggedInMenuItem';
-import SearchBar from './SearchBar';
 import { HamburgerStyledMenu } from '../styles';
 import LoggedOutNavButton from './LoggedOutNavButton';
+import NavSearch from '../search';
 
 export const LoggedOutNavButtons = () => (
   <>
@@ -23,10 +23,10 @@ export const LoggedOutNavButtons = () => (
     <Block
       role="region"
       aria-label="Search Bar"
-      marginInline={'space040'}
-      marginBlock={'space040'}
+      marginInline="space040"
+      marginBlock="space040"
     >
-      <SearchBar />
+      <NavSearch isHamburger />
     </Block>
   </>
 );
@@ -38,11 +38,11 @@ export const LoggedInNavButtons: React.FC<{
   <>
     <Block
       paddingInline="space040"
-      marginBlock={'space040'}
+      marginBlock="space040"
       role="region"
       aria-label="Search Bar"
     >
-      <SearchBar />
+      <NavSearch isHamburger />
     </Block>
     <HamburgerStyledMenu role="region" aria-label="Navigation Menu">
       <LoggedInMenuItem

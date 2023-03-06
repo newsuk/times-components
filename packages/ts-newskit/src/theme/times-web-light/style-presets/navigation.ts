@@ -1,17 +1,8 @@
-const topNavBtn = {
-  backgroundColor: 'transparent',
-  height: '100%',
-  width: '60px',
-  zIndex: 1
-};
-
 export const navStylePresets = {
   topNavSearch: {
     base: {
       backgroundColor: '#222222',
       color: '{{colors.white}}',
-      height: '100%',
-      width: '200px'
     }
   },
   topNavSearchClear: {
@@ -20,13 +11,12 @@ export const navStylePresets = {
       backgroundColor: 'transparent',
       minHeight: '{{sizing.sizing040}}',
       minWidth: '{{sizing.sizing040}}',
-      padding: '0px',
       transform: 'rotate(45deg)'
     }
   },
   buttonTopNav: {
     base: {
-      ...topNavBtn
+      backgroundColor: 'transparent',
     },
     hover: {
       backgroundColor: '#222222'
@@ -34,7 +24,6 @@ export const navStylePresets = {
   },
   buttonTopNavActive: {
     base: {
-      ...topNavBtn,
       backgroundColor: '#222222'
     }
   },
