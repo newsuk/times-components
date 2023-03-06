@@ -95,36 +95,6 @@ const fontFixture = () => {
         </TsTcText>
         {fontDisplayer(fonts.supporting, phrase, styleguide.fontSizes)}
       </TsTcView>
-      <TsTcView style={styles.showoffFontsContainer}>
-        <TsTcText style={styles.headline}>
-          Style Magazine (Century Gothic Bold)
-        </TsTcText>
-        <TsTcText>
-          Used for theme specific headlines, drop caps and pull-quotes in the
-          Style magazine
-        </TsTcText>
-        {fontDisplayer(fonts.styleMagazine, phrase, styleguide.fontSizes)}
-      </TsTcView>
-      <TsTcView style={styles.showoffFontsContainer}>
-        <TsTcText style={styles.headline}>
-          Culture Magazine (Flama Bold)
-        </TsTcText>
-        <TsTcText>
-          Used for theme specific headlines, drop caps and pull-quotes in the
-          Culture magazine
-        </TsTcText>
-        {fontDisplayer(fonts.cultureMagazine, phrase, styleguide.fontSizes)}
-      </TsTcView>
-      <TsTcView style={styles.showoffFontsContainer}>
-        <TsTcText style={styles.headline}>
-          Sunday Times Magazine (Tiempos Headline Bold)
-        </TsTcText>
-        <TsTcText>
-          Used for theme specific headlines, drop caps and pull-quotes in the
-          Sunday Times Magazine
-        </TsTcText>
-        {fontDisplayer(fonts.stMagazine, phrase, styleguide.fontSizes)}
-      </TsTcView>
     </TcScrollView>
   );
 };
