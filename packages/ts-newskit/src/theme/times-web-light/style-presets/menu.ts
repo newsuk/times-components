@@ -1,20 +1,22 @@
 const loggedInMenuItemBase = {
-  fontSize: '15px',
   color: '{{colors.neutral050}}',
   borderRadius: '{{sizing.sizing000}}',
   borderBottom: '2px solid #333333',
-  width: '100%',
   backgroundColor: '#151515'
 };
 
 export const menuStylePresets = {
+  loggedOutMenu: {
+    base: {
+      backgroundColor: '{{colors.neutral090}}',
+    }
+  },
   loggedInMenuItem: {
     base: loggedInMenuItemBase,
     hover: {
       borderBottom: '2px solid #FFFFFF',
-      backgroundColor: '#151515',
       color: '{{colors.white}}'
-    }
+    },
   },
   loggedInMenuItemActive: {
     base: {
@@ -26,7 +28,6 @@ export const menuStylePresets = {
   buttonSolidPrimary: {
     base: {
       backgroundColor: '{{colors.interactivePrimary030}}',
-      width: '100%',
       borderRadius: '{{sizing.sizing010}}'
     },
     hover: {
@@ -37,7 +38,6 @@ export const menuStylePresets = {
     base: {
       backgroundColor: '{{colors.neutral090}}',
       border: 'solid 1px #333333',
-      width: '100%',
       borderRadius: '{{sizing.sizing010}}'
     },
     hover: {
@@ -49,8 +49,6 @@ export const menuStylePresets = {
       backgroundColor: '#151515',
       iconColor: '{{colors.neutral050}}',
       color: '{{colors.inkInverse}}',
-      fontSize: '15px',
-      fontFamily: 'Roboto-Medium'
     },
     hover: {
       backgroundColor: '{{colors.interfaceNeutral010}}'
@@ -61,12 +59,9 @@ export const menuStylePresets = {
   },
   menuItemL2: {
     base: {
-      paddingLeft: '32px',
       backgroundColor: '#222222',
       color: '{{colors.inkInverse}}',
       iconColor: '{{colors.neutral050}}',
-      fontSize: '15px',
-      fontFamily: 'Roboto-Medium'
     },
     hover: {
       backgroundColor: '{{colors.interfaceNeutral010}}'
@@ -85,13 +80,6 @@ export const menuStylePresets = {
     base: {
       backgroundColor: '#151515',
       color: '#828282'
-    }
-  },
-  searchBar: {
-    base: {
-      backgroundColor: '{{colors.interfaceNeutral010}}',
-      borderRadius: '{{sizing.sizing020}}',
-      color:'{{colors.white}}'
     }
   }
 };

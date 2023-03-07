@@ -11,7 +11,7 @@ const NavSearch = ({ isHamburger }: NavSearchProps) => {
 
   const presets = isHamburger ? {
     minHeight: '40px',
-    stylePreset: 'searchBar'
+    stylePreset: 'hamburgerSearch'
   } : {
     width: '200px',
     minHeight: '100%',
@@ -41,7 +41,9 @@ const NavSearch = ({ isHamburger }: NavSearchProps) => {
               size="small"
               onClick={() => setSearchText('')}
               overrides={{
-                stylePreset: 'topNavSearchClear',
+                minHeight: 'sizing040',
+                minWidth: 'sizing040',
+                stylePreset: 'searchClear',
                 marginInline: 'space000'
               }}
             >

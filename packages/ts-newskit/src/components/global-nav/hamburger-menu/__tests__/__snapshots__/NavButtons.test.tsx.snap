@@ -4,11 +4,11 @@ exports[`NavButtons Logged In should render the component 1`] = `
 <DocumentFragment>
   <div
     aria-label="Search Bar"
-    class="css-1l9jkg9"
+    class="css-nang7u"
     role="region"
   >
     <div
-      class="css-xsmvhl"
+      class="css-93pna7"
     >
       <div
         class="css-wjzosl"
@@ -29,18 +29,23 @@ exports[`NavButtons Logged In should render the component 1`] = `
         </svg>
       </div>
       <input
-        aria-describedby="icon-placement-at"
-        aria-label="Search times.co.uk"
-        class="css-57m4xd"
-        id="icon-placement"
+        aria-describedby="searchTimesLabel"
+        class="css-pvilfn"
         placeholder="Search times.co.uk"
         type="text"
+        value=""
       />
     </div>
+    <span
+      class="css-13791zy"
+      id="searchTimesLabel"
+    >
+      Search times.co.uk
+    </span>
   </div>
   <nav
     aria-label="Navigation Menu"
-    class="css-5p0tuz"
+    class="css-19o37qh"
     data-testid="menu-container"
     role="region"
   >
@@ -48,26 +53,26 @@ exports[`NavButtons Logged In should render the component 1`] = `
       role="list"
     >
       <button
-        class="css-sfx3g"
+        class="css-g6ka6m"
         data-testid="button"
         type="button"
       >
-        <p
-          class="css-18mb4bh"
+        <span
+          class="css-1bgi23z"
         >
           Sections
-        </p>
+        </span>
       </button>
       <button
-        class="css-sfx3g"
+        class="css-g6ka6m"
         data-testid="button"
         type="button"
       >
-        <p
-          class="css-18mb4bh"
+        <span
+          class="css-1bgi23z"
         >
           My account
-        </p>
+        </span>
       </button>
     </ul>
   </nav>
@@ -78,34 +83,33 @@ exports[`NavButtons Logged Out should render the component 1`] = `
 <DocumentFragment>
   <div
     aria-label="Navigation Menu"
-    class="css-5qb4r1"
+    class="css-1q6m5b0"
     role="region"
-    style="background-color: rgb(29, 29, 27);"
   >
     <div
       class="css-14f0ndj"
     >
       <button
-        class="css-5kf7f9"
+        class="css-55uab"
         data-testid="button"
         type="button"
       >
         <span
-          class="css-1kfwj8t"
+          class="css-1e6qfd8"
         >
           Log in
         </span>
       </button>
       <div
-        class="css-rl9h2w"
+        class="css-b6vv9c"
       />
       <button
-        class="css-f5vstw"
+        class="css-1yh0br7"
         data-testid="button"
         type="button"
       >
         <span
-          class="css-1kfwj8t"
+          class="css-1e6qfd8"
         >
           Subscribe
         </span>
@@ -114,11 +118,11 @@ exports[`NavButtons Logged Out should render the component 1`] = `
   </div>
   <div
     aria-label="Search Bar"
-    class="css-1djk6be"
+    class="css-w3cs1x"
     role="region"
   >
     <div
-      class="css-xsmvhl"
+      class="css-93pna7"
     >
       <div
         class="css-wjzosl"
@@ -139,14 +143,19 @@ exports[`NavButtons Logged Out should render the component 1`] = `
         </svg>
       </div>
       <input
-        aria-describedby="icon-placement-at"
-        aria-label="Search times.co.uk"
-        class="css-57m4xd"
-        id="icon-placement"
+        aria-describedby="searchTimesLabel"
+        class="css-pvilfn"
         placeholder="Search times.co.uk"
         type="text"
+        value=""
       />
     </div>
+    <span
+      class="css-13791zy"
+      id="searchTimesLabel"
+    >
+      Search times.co.uk
+    </span>
   </div>
 </DocumentFragment>
 `;

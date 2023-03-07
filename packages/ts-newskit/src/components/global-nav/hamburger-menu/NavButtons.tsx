@@ -10,7 +10,7 @@ export const LoggedOutNavButtons = () => (
     <Block
       paddingInline="space040"
       paddingBlock="space030"
-      style={{ backgroundColor: '#1D1D1B' }}
+      stylePreset="loggedOutMenu"
       role="region"
       aria-label="Navigation Menu"
     >
@@ -64,10 +64,9 @@ const NavButtonSection: React.FC<{
   handleClick: (title: string) => void;
   selected: string;
 }> = ({ loggedIn, handleClick, selected }) =>
-  loggedIn ? (
-    <LoggedInNavButtons handleClick={handleClick} selected={selected} />
-  ) : (
-    <LoggedOutNavButtons />
-  );
+  loggedIn
+    ? <LoggedInNavButtons handleClick={handleClick} selected={selected} />
+    : <LoggedOutNavButtons />
+  ;
 
 export default NavButtonSection;

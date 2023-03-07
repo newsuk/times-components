@@ -6,7 +6,7 @@ const LoggedOutNavButton: React.FC<{ title: string; preset: string }> = ({
   preset
 }) => (
   <Button
-    overrides={{ stylePreset: preset, width: '140px', height: '40px' }}
+    overrides={{ stylePreset: preset, width: '100%', height: '40px' }}
     size="medium"
   >
     {title}

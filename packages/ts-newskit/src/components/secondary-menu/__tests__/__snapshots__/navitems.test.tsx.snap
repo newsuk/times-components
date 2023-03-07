@@ -12,7 +12,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
       href="/home"
     >
       <span
-        class="css-176g0l8"
+        class="css-1bgi23z"
       >
         Home
       </span>
@@ -28,7 +28,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
       href="/news"
     >
       <span
-        class="css-176g0l8"
+        class="css-1bgi23z"
       >
         News
       </span>
@@ -44,7 +44,7 @@ exports[`Navitems Desktop should render snapshot 1`] = `
       href="/comment"
     >
       <span
-        class="css-176g0l8"
+        class="css-1bgi23z"
       >
         Comment
       </span>
