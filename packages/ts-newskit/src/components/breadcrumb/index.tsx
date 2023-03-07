@@ -22,6 +22,7 @@ export const Breadcrumb = ({ data }: BreadcrumbProps) => {
     >
       {data.map((breadcrumbItem, breadcrumbIndex, breadcrumbArr) => (
         <BreadcrumbItem
+          key={breadcrumbItem.title}
           href={
             breadcrumbIndex + 1 === breadcrumbArr.length
               ? undefined

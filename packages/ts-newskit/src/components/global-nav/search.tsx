@@ -46,6 +46,7 @@ const NavSearch = ({ isHamburger }: NavSearchProps) => {
                 stylePreset: 'searchClear',
                 marginInline: 'space000'
               }}
+              aria-label='Clear search'
             >
               <NewsKitRoundedCloseIcon />
             </IconButton>

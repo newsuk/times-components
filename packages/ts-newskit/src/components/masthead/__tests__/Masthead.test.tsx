@@ -7,7 +7,6 @@ describe('EditionMasthead', () => {
   it('should render The Times masthead', () => {
     const { asFragment } = render(
       <EditionMasthead
-        isSunday={false}
         todaysDate="Wed Feb 22 2023 00:01:00 GMT+0000 (Greenwich Mean Time)"
       />
     );

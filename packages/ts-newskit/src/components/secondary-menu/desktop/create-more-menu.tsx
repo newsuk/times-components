@@ -13,7 +13,7 @@ export const CreateMoreMenu: React.FC<{
   return (
     <>
       {data.slice(-moreMenuItemsLength).map(({ title, url }) => (
-        <Fragment>
+        <Fragment key={title}>
           <MenuItem
             href={url}
             overrides={{

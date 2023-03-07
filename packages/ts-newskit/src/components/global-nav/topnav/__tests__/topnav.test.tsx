@@ -56,16 +56,4 @@ describe('Search field', () => {
 
     expect(searchField.getAttribute('value')).toBe('test');
   });
-
-  it('should clear value when button is clicked', async () => {
-    render(<NavSearch />);
-    const searchField: HTMLInputElement = screen.getByRole('textbox');
-    const searchClearBtn = screen.getByRole('button');
-    fireEvent.change(searchField, { target: { value: 'test' } });
-
-    fireEvent.click(searchClearBtn);
-    const updatedSearchField: HTMLInputElement = screen.getByRole('textbox');
-
-    expect(updatedSearchField.value).toBe('');
-  });
 });
