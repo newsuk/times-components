@@ -52,8 +52,26 @@ describe('Create Menu', () => {
     fireEvent.click(seeAllButton);
     expect(options.setIsExpanded).toHaveBeenCalled();
   });
-  it('should expand on click', async () => {
+  it('should expand on click', () => {
     (useBreakpointKey as any).mockReturnValue('md');
+    const { getByText } = render(
+      <CreateMenu data={mainMenuItems} options={options} />
+    );
+    expect(getByText('See all')).toBeVisible();
+    const seeAllButton = getByText('See all');
+    fireEvent.click(seeAllButton);
+    expect(options.setIsExpanded).toHaveBeenCalled();
+  });
+  it('should render navitems', () => {
+    (useBreakpointKey as any).mockReturnValue('lg');
+    const { getAllByRole } = render(
+      <CreateMenu data={mainMenuItems} options={options} />
+    );
+    const lists = getAllByRole('listitem');
+    expect(lists.length).toEqual(9);
+  });
+  it('should not render navitems if screen size is sm', async () => {
+    (useBreakpointKey as any).mockReturnValue('sm');
     render(<CreateMenu data={mainMenuItems} options={options} />);
     const navListContainerWidth = {
       clientWidth: 0

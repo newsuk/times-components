@@ -35,13 +35,13 @@ export const CreateMenu: React.FC<{
             const navListWidth = getWidth(navListRef.current);
             if (
               navListWidth >
-                navListContainerWidth - seeAllButtonWidth[breakpointKey] &&
-              navListWidth !== 0 &&
-              navListContainerWidth !== 0
+              navListContainerWidth - seeAllButtonWidth[breakpointKey]
             ) {
               setMoreMenuItemsLength(moreMenuLength + navAdjustCount);
               setHasMenuItem(menuItems - navAdjustCount);
-              updateNav(navAdjustCount + 1);
+              if (navListWidth !== 0 && navListContainerWidth !== 0) {
+                updateNav(navAdjustCount + 1);
+              }
             }
           }, 1000);
         };
