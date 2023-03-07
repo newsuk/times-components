@@ -1,94 +1,52 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { MenuSub, Menu } from 'newskit';
 import { MenuContainer, Container, Wrapper, MainMenu } from '../styles';
-import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
+import {
+  SecondaryMenuOptions,
+  SecondaryMenuItem,
+  seeAllButtonWidth
+} from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
 import { getBreakpoint } from '../../utils/getBreakPoint';
+import { getWidth } from '../../utils/getWidth';
 
 export const CreateMenu: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
 }> = ({ options, data }) => {
-  const navListContainerRef = useRef<HTMLDivElement>(null);
   const contanierRef = useRef<HTMLDivElement>(null);
+  const navListRef = useRef<HTMLDivElement>(null);
   const { isExpanded, setIsExpanded } = options;
   const { moreMenuLength, menuItems, breakpointKey } = getBreakpoint(data);
-  const [moreMenuItemsLength, setMoreMenuItemsLength] = useState<number>(0);
-  const [hasMenuItem, setHasMenuItem] = useState<number>(data.length);
+  const [moreMenuItemsLength, setMoreMenuItemsLength] = useState<number>(
+    moreMenuLength
+  );
+  const [hasMenuItem, setHasMenuItem] = useState<number>(menuItems);
 
-    const getWidth = (el: any) => el.clientWidth
-
-    useEffect(() => {
-    setMoreMenuItemsLength(0);
-    setHasMenuItem(data.length);
-
-
-
-      const updateNav = (navAdjustCount = 1) => {
-        const navListContainerWidth = getWidth(contanierRef.current);
-        const navListWidth = getWidth(navListContainerRef.current);
-
-        if(navListWidth && navListContainerWidth) {
-          console.log("contanierRef: ", navListContainerWidth);
-          console.log("navListContainer: ", navListWidth);
-          console.log("called");
-
-          if(navListWidth > navListContainerWidth - 150) {
-            console.log("updated", navAdjustCount);
-            console.log("moreMenuLength", moreMenuLength);
-            console.log("menuItems", menuItems);
-
-            setMoreMenuItemsLength(moreMenuLength + navAdjustCount);
-            setHasMenuItem(menuItems - navAdjustCount);
-
-            setTimeout(() => updateNav(navAdjustCount + 1), 1000);
-          } 
-        }
-        // else {
-        //   console.log("updated", navAdjustCount);
-        //   setMoreMenuItemsLength(moreMenuLength - 2);
-        //   setHasMenuItem(menuItems + 2);
-        //   // updateNav(navAdjustCount + 1);
-        // }
+  useEffect(
+    () => {
+      if (breakpointKey !== 'sm' && breakpointKey !== 'xs') {
+        setMoreMenuItemsLength(moreMenuLength);
+        setHasMenuItem(menuItems);
+        const updateNav = (navAdjustCount = 1) => {
+          setTimeout(() => {
+            const navListContainerWidth = getWidth(contanierRef.current);
+            const navListWidth = getWidth(navListRef.current);
+            if (
+              navListWidth >
+                navListContainerWidth - seeAllButtonWidth[breakpointKey] &&
+              navListWidth !== 0 &&
+              navListContainerWidth !== 0
+            ) {
+              setMoreMenuItemsLength(moreMenuLength + navAdjustCount);
+              setHasMenuItem(menuItems - navAdjustCount);
+              updateNav(navAdjustCount + 1);
+            }
+          }, 1000);
+        };
+        updateNav();
       }
-  
-      updateNav();
-      // setTimeout(() => updateNav(), 1000);
-
-      // if (ref.current) {
-      //   if (
-      //     ref.current.offsetWidth < 900 &&
-      //     breakpointKey === 'lg' &&
-      //     data.length < 10
-      //   ) {
-      //     setMoreMenuItemsLength(moreMenuLength - 1);
-      //     setHasMenuItem(menuItems + 1);
-      //   } else if (ref.current.offsetWidth > 532 && breakpointKey === 'lg') {
-      //     setMoreMenuItemsLength(moreMenuLength + 1);
-      //     setHasMenuItem(menuItems - 1);
-      //   } else if (
-      //     ref.current.offsetWidth > 540 &&
-      //     ref.current.offsetWidth < 645 &&
-      //     breakpointKey === 'md'
-      //   ) {
-      //     setMoreMenuItemsLength(moreMenuLength - 1);
-      //     setHasMenuItem(menuItems + 1);
-      //   } else if (
-      //     ref.current.offsetWidth > 645 &&
-      //     breakpointKey === 'md' &&
-      //     data.length < 7
-      //   ) {
-      //     setMoreMenuItemsLength(moreMenuItemsLength + 1);
-      //     setHasMenuItem(hasMenuItem - 1);
-      //   } else if (ref.current.offsetWidth > 645 && breakpointKey === 'md') {
-      //     setMoreMenuItemsLength(moreMenuLength + 1);
-      //     setHasMenuItem(menuItems - 1);
-      //   } else {
-      //     setMoreMenuItemsLength(moreMenuLength);
-      //     setHasMenuItem(menuItems);
-      //   }
-      // }
     },
     [breakpointKey]
   );
@@ -121,7 +79,7 @@ export const CreateMenu: React.FC<{
       }}
     >
       <Container ref={contanierRef} moreMenuItemsLength={moreMenuItemsLength}>
-        <Wrapper ref={navListContainerRef} data-testid="navitems-test-id">
+        <Wrapper ref={navListRef} data-testid="navitems-test-id">
           <NavItems data={data} options={options} hasMenuItem={hasMenuItem} />
         </Wrapper>
         {moreMenuItemsLength > 0 && (

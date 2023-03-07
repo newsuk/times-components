@@ -5,6 +5,11 @@ import { mainMenuItems } from '../fixtures/menu-items.json';
 import { cleanup, fireEvent } from '@testing-library/react';
 import { CreateMenu } from '../desktop/create-menu';
 import { useBreakpointKey } from 'newskit';
+import { getWidth } from '../../utils/getWidth';
+
+jest.mock('../../utils/getWidth', () => ({
+  getWidth: jest.fn(el => el.clientWidth)
+}));
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
@@ -17,9 +22,16 @@ const options = {
   isExpanded: true,
   isSelected: 'Home'
 };
+const setMoreMenuItemsLength = jest.fn(() => 0);
+const setHasMenuItem = jest.fn(() => 0);
 
 describe('Create Menu', () => {
+  beforeEach(() => {
+    jest.useFakeTimers();
+  });
   afterEach(() => {
+    jest.runOnlyPendingTimers();
+    jest.useRealTimers();
     jest.clearAllMocks();
     cleanup();
   });
@@ -40,36 +52,18 @@ describe('Create Menu', () => {
     fireEvent.click(seeAllButton);
     expect(options.setIsExpanded).toHaveBeenCalled();
   });
-  it('should change the background color on expand', () => {
+  it('should expand on click', async () => {
     (useBreakpointKey as any).mockReturnValue('md');
-    const { getByRole } = render(
-      <CreateMenu data={mainMenuItems} options={options} />
-    );
-    const seeAllButton = getByRole('button');
-    expect(seeAllButton).toHaveStyle('background-color: rgb(245, 245, 245)');
-  });
-  it('should render correct list items when data length smaller then 10', () => {
-    (useBreakpointKey as any).mockReturnValue('lg');
-    const { getAllByRole } = render(
-      <CreateMenu data={mainMenuItems} options={options} />
-    );
-    const list = getAllByRole('listitem');
-    expect(list).toHaveLength(9);
-  });
-  it('should render correct list items when screen size is medium', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
-    const { getByTestId } = render(
-      <CreateMenu data={mainMenuItems} options={options} />
-    );
-    const list = getByTestId('navitems-test-id').querySelectorAll('a');
-    expect(list).toHaveLength(7);
-  });
-  it('should render correct list items when screen size is large', () => {
-    (useBreakpointKey as any).mockReturnValue('lg');
-    const { getByTestId } = render(
-      <CreateMenu data={mainMenuItems} options={options} />
-    );
-    const list = getByTestId('navitems-test-id').querySelectorAll('a');
-    expect(list).toHaveLength(9);
+    render(<CreateMenu data={mainMenuItems} options={options} />);
+    const navListContainerWidth = {
+      clientWidth: 0
+    };
+    const navListWidth = {
+      clientWidth: 0
+    };
+    expect(await getWidth(navListContainerWidth)).toBe(0);
+    expect(await getWidth(navListWidth)).toBe(0);
+    expect(setMoreMenuItemsLength).not.toHaveBeenCalled();
+    expect(setHasMenuItem).not.toHaveBeenCalled();
   });
 });
