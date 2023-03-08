@@ -12,11 +12,14 @@ import { NewsKitTimesMasthead, NewsKitSundayTimesMasthead } from '../../assets';
 interface EditionMastheadProps {
   isSunday?: boolean;
   todaysDate?: string;
-};
+}
 
 const dateNow = new Date().toISOString();
 
-export const EditionMasthead = ({ isSunday = false, todaysDate = dateNow }: EditionMastheadProps) => {
+export const EditionMasthead = ({
+  isSunday = false,
+  todaysDate = dateNow
+}: EditionMastheadProps) => {
   return (
     <Block as="header">
       <Visible md lg xl>
@@ -35,7 +38,11 @@ export const EditionMasthead = ({ isSunday = false, todaysDate = dateNow }: Edit
             data-testid="date-time"
           />
           <Block>
-            <LinkInline href="/" overrides={{ stylePreset: 'mastheadLogo' }} aria-labelledby="sr-times-logo" >
+            <LinkInline
+              href="/"
+              overrides={{ stylePreset: 'mastheadLogo' }}
+              aria-labelledby="sr-times-logo"
+            >
               {isSunday ? (
                 <NewsKitSundayTimesMasthead />
               ) : (

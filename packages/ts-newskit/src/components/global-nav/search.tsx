@@ -3,25 +3,27 @@ import { TextField, ScreenReaderOnly, IconButton } from 'newskit';
 import { NewsKitRoundedCloseIcon, NewsKitSearchIcon } from '../../assets';
 
 type NavSearchProps = {
-  isHamburger?: boolean
-}
+  isHamburger?: boolean;
+};
 
 const NavSearch = ({ isHamburger }: NavSearchProps) => {
   const [searchText, setSearchText] = useState<string>('');
 
-  const presets = isHamburger ? {
-    minHeight: '40px',
-    stylePreset: 'hamburgerSearch'
-  } : {
-    width: '200px',
-    minHeight: '100%',
-    stylePreset: 'topNavSearch',
-  }
+  const presets = isHamburger
+    ? {
+        minHeight: '40px',
+        stylePreset: 'hamburgerSearch'
+      }
+    : {
+        width: '200px',
+        minHeight: '100%',
+        stylePreset: 'topNavSearch'
+      };
 
   return (
     <>
       <TextField
-        id={isHamburger ? undefined : "searchTimes"}
+        id={isHamburger ? undefined : 'searchTimes'}
         aria-describedby="searchTimesLabel"
         value={searchText}
         onChange={event => setSearchText(event.target.value)}
@@ -30,13 +32,15 @@ const NavSearch = ({ isHamburger }: NavSearchProps) => {
           ...presets,
           typographyPreset: 'topNav010'
         }}
-        startEnhancer={ isHamburger &&
-          <NewsKitSearchIcon
-            overrides={{ size: 'iconSize010', marginInline: 'space010' }}
-          />
-        }    
+        startEnhancer={
+          isHamburger && (
+            <NewsKitSearchIcon
+              overrides={{ size: 'iconSize010', marginInline: 'space010' }}
+            />
+          )
+        }
         endEnhancer={
-          searchText &&
+          searchText && (
             <IconButton
               size="small"
               onClick={() => setSearchText('')}
@@ -46,10 +50,11 @@ const NavSearch = ({ isHamburger }: NavSearchProps) => {
                 stylePreset: 'searchClear',
                 marginInline: 'space000'
               }}
-              aria-label='Clear search'
+              aria-label="Clear search"
             >
               <NewsKitRoundedCloseIcon />
             </IconButton>
+          )
         }
       />
       <ScreenReaderOnly id="searchTimesLabel">

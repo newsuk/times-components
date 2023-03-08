@@ -62,7 +62,6 @@ export const TopNavIcon = styled(IconButton)`
   width: 50px;
   z-index: 1;
 
-
   ${getColorCssFromTheme('color', 'inkInverse')};
 
   ${getMediaQueryFromTheme('md')} {

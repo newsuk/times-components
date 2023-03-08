@@ -26,7 +26,7 @@ exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
           </section>
         </span>
         <time
-          class="css-9bjkza"
+          class="css-1kjj3du"
           data-testid="date-time"
         >
           <span
@@ -150,7 +150,7 @@ exports[`EditionMasthead should render The Times masthead 1`] = `
           </section>
         </span>
         <time
-          class="css-9bjkza"
+          class="css-1kjj3du"
           data-testid="date-time"
         >
           <span

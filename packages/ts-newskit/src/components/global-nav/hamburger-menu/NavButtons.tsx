@@ -64,9 +64,10 @@ const NavButtonSection: React.FC<{
   handleClick: (title: string) => void;
   selected: string;
 }> = ({ loggedIn, handleClick, selected }) =>
-  loggedIn
-    ? <LoggedInNavButtons handleClick={handleClick} selected={selected} />
-    : <LoggedOutNavButtons />
-  ;
+  loggedIn ? (
+    <LoggedInNavButtons handleClick={handleClick} selected={selected} />
+  ) : (
+    <LoggedOutNavButtons />
+  );
 
 export default NavButtonSection;

@@ -8,7 +8,7 @@ const loggedInMenuItemBase = {
 export const menuStylePresets = {
   loggedOutMenu: {
     base: {
-      backgroundColor: '{{colors.neutral090}}',
+      backgroundColor: '{{colors.neutral090}}'
     }
   },
   loggedInMenuItem: {
@@ -16,7 +16,7 @@ export const menuStylePresets = {
     hover: {
       borderBottom: '2px solid #FFFFFF',
       color: '{{colors.white}}'
-    },
+    }
   },
   loggedInMenuItemActive: {
     base: {
@@ -48,7 +48,7 @@ export const menuStylePresets = {
     base: {
       backgroundColor: '#151515',
       iconColor: '{{colors.neutral050}}',
-      color: '{{colors.inkInverse}}',
+      color: '{{colors.inkInverse}}'
     },
     hover: {
       backgroundColor: '{{colors.interfaceNeutral010}}'
@@ -61,7 +61,7 @@ export const menuStylePresets = {
     base: {
       backgroundColor: '#222222',
       color: '{{colors.inkInverse}}',
-      iconColor: '{{colors.neutral050}}',
+      iconColor: '{{colors.neutral050}}'
     },
     hover: {
       backgroundColor: '{{colors.interfaceNeutral010}}'

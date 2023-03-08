@@ -13,7 +13,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
         aria-controls="hamburgerMenu"
         aria-expanded="false"
         aria-label="Open Menu"
-        class="css-7vq67"
+        class="css-1704mz3"
         data-testid="button"
         type="button"
       >
@@ -43,7 +43,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
           aria-controls="searchTimes"
           aria-expanded="false"
           aria-label="Open Search"
-          class="css-7vq67"
+          class="css-1704mz3"
           data-testid="button"
           type="button"
         >
@@ -782,7 +782,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
         aria-controls="hamburgerMenu"
         aria-expanded="false"
         aria-label="Open Menu"
-        class="css-7vq67"
+        class="css-1704mz3"
         data-testid="button"
         type="button"
       >
@@ -812,7 +812,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
           aria-controls="searchTimes"
           aria-expanded="false"
           aria-label="Open Search"
-          class="css-7vq67"
+          class="css-1704mz3"
           data-testid="button"
           type="button"
         >
@@ -1429,7 +1429,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
         aria-controls="hamburgerMenu"
         aria-expanded="false"
         aria-label="Open Menu"
-        class="css-7vq67"
+        class="css-1704mz3"
         data-testid="button"
         type="button"
       >
@@ -1459,7 +1459,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
           aria-controls="searchTimes"
           aria-expanded="false"
           aria-label="Open Search"
-          class="css-7vq67"
+          class="css-1704mz3"
           data-testid="button"
           type="button"
         >

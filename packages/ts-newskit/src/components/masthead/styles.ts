@@ -6,7 +6,7 @@ export const Masthead = styled(Block)`
 `;
 
 export const MastheadDate = styled(DateTime)`
-  textTransform: 'capitalize';
+  texttransform: 'capitalize';
   & > span {
     ${getColorCssFromTheme('color', 'inkBase')};
   }

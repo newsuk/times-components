@@ -17,10 +17,9 @@ export const NewsKitSearchIcon = customToNewsKitIcon(
   props => <SearchIcon {...props} />
 );
 
-export const NewsKitBurgerIcon = customToNewsKitIcon(
-  'NewsKitBurger',
-  props => <BurgerIcon {...props} />
-);
+export const NewsKitBurgerIcon = customToNewsKitIcon('NewsKitBurger', props => (
+  <BurgerIcon {...props} />
+));
 
 export const NewsKitRoundedCloseIcon = customToNewsKitIcon(
   'NewsKitRoundedCloseIcon',

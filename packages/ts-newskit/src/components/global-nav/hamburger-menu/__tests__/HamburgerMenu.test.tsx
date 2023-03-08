@@ -105,36 +105,30 @@ describe('HamburgerMenu - Logged Out', () => {
 
 describe('Search field', () => {
   it('contains the search bar', () => {
-    const { getByPlaceholderText } = render(
-      <HamburgerMenu data={data} />
-    );
+    const { getByPlaceholderText } = render(<HamburgerMenu data={data} />);
     expect(getByPlaceholderText('Search times.co.uk')).toBeVisible();
   });
 
   it('should update search field value', async () => {
-    render(
-      <HamburgerMenu data={data} />
-    );
+    render(<HamburgerMenu data={data} />);
 
     const searchField = screen.getByPlaceholderText('Search times.co.uk');
 
     fireEvent.change(searchField, {
-      target: { value: "Test Value" }
+      target: { value: 'Test Value' }
     });
     expect(searchField.getAttribute('value')).toEqual('Test Value');
   });
 
   it('should clear search field when clicked', async () => {
-    render(
-      <HamburgerMenu data={data} />
-    );
+    render(<HamburgerMenu data={data} />);
 
     const searchField = screen.getByPlaceholderText('Search times.co.uk');
 
     fireEvent.change(searchField, {
-      target: { value: "Test Value" }
+      target: { value: 'Test Value' }
     });
-    
+
     const clearSearchBtn = screen.getByRole('button', { name: 'Clear search' });
     expect(searchField).toBeVisible();
     expect(clearSearchBtn).toBeVisible();
@@ -143,5 +137,4 @@ describe('Search field', () => {
 
     expect(searchField.getAttribute('value')).toEqual('');
   });
-
 });

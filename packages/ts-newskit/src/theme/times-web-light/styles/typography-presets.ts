@@ -99,7 +99,7 @@ export const typographyPresets = Object.fromEntries(
       fontWeight: '{{fonts.fontWeight010}}',
       lineHeight: '{{fonts.fontLineHeight270}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
-      fontStretch: 'normal',
+      fontStretch: 'normal'
     },
     breadcrumbText: {
       fontFamily: '{{fonts.fontFamily030.fontFamily}}',
@@ -116,7 +116,7 @@ export const typographyPresets = Object.fromEntries(
         'editorialHeadline030',
         'editorialHeadline060',
         'editorialHeadline070',
-        'editorialHeadline080',
+        'editorialHeadline080'
       ].includes(key)
     ) {
       value.lineHeight = '{{fonts.fontLineHeight030}}';

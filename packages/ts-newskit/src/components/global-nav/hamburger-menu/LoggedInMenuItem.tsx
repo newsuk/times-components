@@ -7,7 +7,7 @@ const LoggedInMenuItem: React.FC<{
   handleClick: (title: string) => void;
 }> = ({ title, handleClick, selected }) => {
   const isSelected = selected === title ? true : false;
-  
+
   return (
     <Button
       overrides={{
@@ -17,7 +17,6 @@ const LoggedInMenuItem: React.FC<{
           isSelected ? 'loggedInMenuItemActive' : 'loggedInMenuItem'
         }`
       }}
-      
       onClick={() => handleClick(title)}
     >
       {title}

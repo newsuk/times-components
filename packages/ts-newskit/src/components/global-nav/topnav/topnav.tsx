@@ -45,12 +45,15 @@ export const TopNav: React.FC<TopNavProps> = ({
     'aria-label': 'The Times &amp; The Sunday Times'
   };
 
-  const NavMasthead = <LinkInline href="/" overrides={{ stylePreset: 'menuLogo' }}>
-    {isSunday
-      ? <NewsKitSundayTimesMasthead {...logoProps} />
-      : <NewsKitTimesMasthead {...logoProps} />
-    }
-  </LinkInline>
+  const NavMasthead = (
+    <LinkInline href="/" overrides={{ stylePreset: 'menuLogo' }}>
+      {isSunday ? (
+        <NewsKitSundayTimesMasthead {...logoProps} />
+      ) : (
+        <NewsKitTimesMasthead {...logoProps} />
+      )}
+    </LinkInline>
+  );
 
   return (
     <>

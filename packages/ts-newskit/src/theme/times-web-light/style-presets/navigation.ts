@@ -1,7 +1,7 @@
 const navSearch = {
   backgroundColor: '{{colors.interfaceNeutral010}}',
-  color:'{{colors.white}}'
-}
+  color: '{{colors.white}}'
+};
 
 export const navStylePresets = {
   hamburgerSearch: {
@@ -18,12 +18,12 @@ export const navStylePresets = {
   searchClear: {
     base: {
       color: '{{colors.inkSubtle}}',
-      backgroundColor: 'transparent',
+      backgroundColor: 'transparent'
     }
   },
   buttonTopNav: {
     base: {
-      backgroundColor: 'transparent',
+      backgroundColor: 'transparent'
     },
     hover: {
       backgroundColor: '#222222'
@@ -43,7 +43,7 @@ export const navStylePresets = {
     base: {
       backgroundColor: 'transparent',
       color: '{{colors.white}}',
-      iconColor: '{{colors.white}}',
+      iconColor: '{{colors.white}}'
     },
     hover: {
       backgroundColor: '#222222'
@@ -55,7 +55,7 @@ export const navStylePresets = {
   menuItemScroll: {
     base: {
       color: '{{colors.interface060}}',
-      borderBottom: '4px solid transparent',
+      borderBottom: '4px solid transparent'
     },
     hover: {
       borderBottom: '4px solid black'
@@ -76,7 +76,7 @@ export const navStylePresets = {
       color: '{{colors.white}}'
     },
     hover: {
-      backgroundColor: '{{colors.interfaceNeutral010}}',
+      backgroundColor: '{{colors.interfaceNeutral010}}'
     }
   },
   menuSubscribe: {

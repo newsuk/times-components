@@ -8,13 +8,13 @@ interface GlobalNavProps {
   isLoggedIn?: boolean;
   isSunday?: boolean;
   data: NavigationData;
-};
+}
 
 export const GlobalNav = ({
-  isLoggedIn = false,
-  isSunday = false,
+  isLoggedIn,
+  isSunday,
   data
-} : GlobalNavProps) => {
+}: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
 
   return (
