@@ -49,7 +49,7 @@ const splitNode = node => {
     };
   }
   if (children[0].name === "link") {
-    return null
+    return null;
   }
   const firstChild = splitNode(children[0]);
   if (firstChild.attributes.dropCap && node.name !== "paragraph") {

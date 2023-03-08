@@ -9,26 +9,29 @@ import withTrackEvents from "./article-link-tracking-events";
 
 const ArticleLink = ({ children, target, url, onPress, dropCap }) => (
   <>
-    { children.length === 0 ? (
-    <Link
-    responsiveLinkStyles={linkStyles}
-    target={target}
-    onPress={onPress}
-  >
-    {url}
-  </Link>
-    ) : (<Link
-      underlined={!(dropCap && children[0].length === 1)}
-      responsiveLinkStyles={dropCap ? dropCapLinkStyles : linkStyles}
-      target={target}
-      url={url}
-      onPress={onPress}
-    >
-      {children}
-    </Link>)
-  }
+    {children.length === 0 ? (
+      <>
+        <Link
+          responsiveLinkStyles={linkStyles}
+          target={target}
+          onPress={onPress}
+          url={url}
+        >
+          {url}
+        </Link>{" "}
+      </>
+    ) : (
+      <Link
+        underlined={!(dropCap && children[0].length === 1)}
+        responsiveLinkStyles={dropCap ? dropCapLinkStyles : linkStyles}
+        target={target}
+        url={url}
+        onPress={onPress}
+      >
+        {children}
+      </Link>
+    )}
   </>
-  
 );
 
 ArticleLink.defaultProps = {

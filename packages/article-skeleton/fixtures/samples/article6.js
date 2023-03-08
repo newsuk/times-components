@@ -1,6 +1,9 @@
 export default {
   data: {
     article: {
+      headline:
+        "It’s not just Poland’s plumbers we can admire, but also its economic record",
+      dataSource: null,
       backgroundColour: null,
       commentsEnabled: true,
       content: [
@@ -8,1029 +11,290 @@ export default {
           name: "paragraph",
           children: [
             {
-              name: "bold",
+              name: "link",
+              children: [],
+              attributes: {
+                href:
+                  "https://www.telegraph.co.uk/business/2023/03/05/huawei-abandons-plans-1bn-cambridge-research-campus/"
+              }
+            },
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  "Some sort of diagnostic economic consensus may be breaking out across the political spectrum. Last week, Sir Keir Starmer highlighted the woeful long-term growth rates of the UK by pointing out that — if current trajectories continued — the average Pole would be richer than the average Brit by the end of the decade to the tune of about £500 a year. If we extrapolate further into the future, then Hungarian and Romanian incomes will overtake us by 2040."
+              }
+            }
+          ]
+        },
+        {
+          name: "paragraph",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  "World Bank data shows that Poland’s economy has grown at an annual rate of 3.6 per cent since 2010. The UK has been almost flatlining, pootling along at a miserable growth rate of just 0.5 per cent. As Albert Einstein observed: “Compound interest is the eighth wonder of the world. He who understands it, earns it; he who doesn’t, pays it.”"
+              }
+            }
+          ]
+        },
+        {
+          name: "paragraph",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  "The difference between 0.5 per cent and 3.6 per cent might not seem colossal at first glance — and indeed, over the very short term such variance has limited impact. But, over a longer time horizon, the gap becomes eye-watering."
+              }
+            }
+          ]
+        },
+        {
+          name: "image",
+          attributes: {
+            id: "0b2fa52f-e2a6-4c35-b9b7-bff08e29dd68",
+            display: "primary",
+            caption:
+              "Poles are on track to celebrate being richer than Britons by 2030",
+            credits: "CATHERINE IVILL/GETTY IMAGES",
+            url:
+              "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0b61b620-bb6c-11ed-b386-2854db7a4e6a.jpg?crop=4824%2C3216%2C0%2C0",
+            ratio: "1500:1000",
+            relativeHorizontalOffset: 0,
+            relativeVerticalOffset: 0,
+            relativeWidth: 1,
+            relativeHeight: 0.9591410677005666
+          },
+          children: []
+        },
+        {
+          name: "paragraph",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  "If you can maintain Polish growth rates of 3.6 per cent for half a century, your economy will be nearly six times the size at the end of that period. If you crawl along at a mere 0.5 per cent, your economy will expand by barely a quarter in the same 50 years."
+              }
+            }
+          ]
+        },
+        {
+          name: "paragraph",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value: "In analysis, if not in prescription, "
+              }
+            },
+            {
+              name: "link",
               children: [
                 {
                   name: "text",
+                  children: [],
                   attributes: {
-                    value: "The Ocean at the End of the Lane ★★★★★"
-                  },
-                  children: []
+                    value: "Starmer was in effect repeating the prognosis"
+                  }
                 }
-              ]
+              ],
+              attributes: {
+                href:
+                  "https://www.thetimes.co.uk/article/keir-starmer-starts-with-economy-as-he-reveals-10-year-labour-vision-z9b9frfgf",
+                type: "article",
+                canonicalId:
+                  "keir-starmer-starts-with-economy-as-he-reveals-10-year-labour-vision-z9b9frfgf"
+              }
             },
             {
-              name: "break",
-              children: []
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  " of the former prime minister Liz Truss. Her view was that most of Britain’s economic and social problems could be solved, or at least mitigated, if a policy mix could be found to boost the UK’s underlying growth trajectory by several notches. The leader of the Labour Party appears to concur."
+              }
+            }
+          ]
+        },
+        {
+          name: "ad",
+          children: []
+        },
+        {
+          name: "paragraph",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  "It might be a sensible next step to move on from seeing Poland as a convenient source of plumbers and fruit-pickers to asking ourselves what it seems to have got right in the past few decades, in the hope that we can copy it."
+              }
+            }
+          ]
+        },
+        {
+          name: "paragraph",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  "Unpicking the vast range of factors that lead to successes or failures in a modern economy is no small task. However, it is reasonable to say that — at least until very recently — Poland has had a broad and long-standing consensus in favour of free market reform. Following the collapse of the Soviet bloc, Poland was one of the poorer eastern European nations, having about the same average income as Ukraine in 1989. Of course, Ukraine has been devastated by the Russian invasion, but looking back to 2021, before Putin sent in his troops, Poland had managed to reach a level of income six times greater than its Ukrainian neighbours."
+              }
+            }
+          ],
+          attributes: {
+            id: "U11302418597726WzC"
+          }
+        },
+        {
+          name: "paragraph",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  "If we in the United Kingdom wish to emulate Polish growth rates, we should surely take an interest in the means by which they achieved it. Relatively low taxes do appear to be a standout feature. Ironically, Poland has the same rate of corporation tax as the UK at present (although it is more simple in design) at 19 per cent. However, the Conservative and Labour front benches seem united in agreeing that this is unacceptably low and should be raised to 25 per cent at the earliest opportunity."
+              }
+            }
+          ],
+          attributes: {
+            id: "U11302418597726cIB"
+          }
+        },
+        {
+          name: "paragraph",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  "On personal tax rates, the picture is also clear and stark. The highest rate of tax on earnings in Poland is 32 per cent. Here in the UK, the proposal in the "
+              }
             },
+            {
+              name: "link",
+              children: [
+                {
+                  name: "text",
+                  children: [],
+                  attributes: {
+                    value: "Truss-Kwarteng mini-budget"
+                  }
+                }
+              ],
+              attributes: {
+                href:
+                  "https://www.thetimes.co.uk/article/how-liz-truss-and-kwasi-kwartengs-mini-budget-turned-into-a-major-disaster-t88xzvkx9",
+                type: "article",
+                canonicalId:
+                  "how-liz-truss-and-kwasi-kwartengs-mini-budget-turned-into-a-major-disaster-t88xzvkx9"
+              }
+            },
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  " to cut our top rate from 45 per cent to 40 per cent caused such consternation from politicians of all stripes that it was swiftly abandoned. The absurdly complex nature of the British tax system means that at various points across the income range, individuals can face effective tax rates of above 60 per cent — and not at the super-rich end but rather for those who are able to nudge their salaries into six figures and those seeking to get off benefits and into more full-time work. The default setting of most British politicians seems to be to put these perverse anomalies in the “too hard to solve” pile."
+              }
+            }
+          ],
+          attributes: {
+            id: "U11302418597726SXH"
+          }
+        },
+        {
+          name: "paragraph",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  "Poland has also been relatively frugal in terms of deficit-spending. Its national debt as a proportion of GDP is 46 per cent. Here in the UK, it’s about twice that and that is without taking into account our off-balance-sheet liabilities which run into trillions. Ask a leading British politician what sort of spending cuts they would advocate to get the UK to Polish debt levels and you can expect the question to be ducked. However, the basic mathematical truth is that many hundreds of billions of pounds of savings will need to be found in the state sector to get to Poland’s more manageable debt levels. No one with any prospect of power has laid out what these might be."
+              }
+            }
+          ]
+        },
+        {
+          name: "paragraph",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  "Past performance, as they say, is no guarantee of future results. Under the "
+              }
+            },
+            {
+              name: "link",
+              children: [
+                {
+                  name: "text",
+                  children: [],
+                  attributes: {
+                    value: "Law and Justice Party"
+                  }
+                }
+              ],
+              attributes: {
+                href:
+                  "https://www.thetimes.co.uk/article/the-times-view-on-polands-new-abortion-ban-law-and-injustice-s90vq9w2m",
+                type: "article",
+                canonicalId:
+                  "the-times-view-on-polands-new-abortion-ban-law-and-injustice-s90vq9w2m"
+              }
+            },
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  ", Poland is beginning to embark on a more populist rather than liberalising approach. Even parts of the tourist industry have been earmarked for nationalisation. Maybe Poland’s impressive economic record over the past three decades will begin to unwind. If they begin to embrace a UK-style approach to economics of high spending, high taxes, heavy debt and more state control, their prospects of surpassing average British incomes will sharply recede."
+              }
+            }
+          ]
+        },
+        {
+          name: "paragraph",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value:
+                  "Perhaps here in Britain, we have some modest grounds for long-term optimism. Although the tax-cutting, supply-side reform agenda of Truss failed to get off the launchpad, there has been a shift in the narrative to prioritising GDP growth over the long term. It is hard to find a major political party with a coherent plan of how to get there, but at least they may now be looking in the right direction. If you want to replicate the high growth rates of the more impressive central and eastern European countries, you will eventually need to follow the same sort of policies they embraced to achieve it. We have no automatic right to be richer than our Polish counterparts. If we want to be, we will need to adopt a Polish-style economic diet."
+              }
+            }
+          ]
+        },
+        {
+          name: "paragraph",
+          children: [
             {
               name: "italic",
               children: [
                 {
                   name: "text",
-                  attributes: {
-                    value:
-                      "Dorfman, National Theatre, London SE1; until Jan 25 "
-                  },
-                  children: []
-                }
-              ]
-            },
-            {
-              name: "break",
-              children: []
-            },
-            {
-              name: "text",
-              attributes: {
-                value:
-                  "Grief is a thing with feathers and claws in this mesmerising adaptation of Neil Gaiman’s hit fantasy novel. Katy Rudd’s production begins with a wordless scene of theatrical magic: a flock of black umbrellas, plangent music, an open grave and sleet conjured up by Paule Constable’s lighting. Seconds later, a middle-aged man stands alone, groping for an unfathomable childhood memory. Spool back to the 1980s, and the woes piling on the motherless family of Boy (Samuel Blenkin, heart-piercing). Something dark has been disturbed in the earth, warns his odd new friend Lettie (Marli Siu), scion of an ancient neighbouring female farming clan. This sounds complicated, but Joel Horwood’s"
-              },
-              children: []
-            },
-            {
-              name: "paywall",
-              children: [
-                {
-                  name: "text",
-                  attributes: {
-                    value:
-                      " movingly acted adaptation is clear and swift-paced, visually translated with vigour and wit by the set designer Fly Davis and a crack creative team, including puppeteers and illusionists. On a set bordered by gnarled briars, terrors and wonders otherworldly and intimate materialise. "
-                  },
-                  children: []
-                }
-              ]
-            },
-            {
-              name: "paywall",
-              children: [
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "PN "
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          name: "paywall",
-          children: [
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "The Wizard of Oz ★★★★"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Leeds Playhouse; until Jan 25"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "text",
                   children: [],
                   attributes: {
                     value:
-                      "Leeds Playhouse celebrates Christmas in grand style with a buoyant version of the classic film. Agatha Meehan (sharing the role with Lucy Sherman) is a determined Dorothy, and her pigtails suggest Greta Thunberg. Simon Higlett’s design includes a spectacular twister (video effects by Simon Wainwright) as beige Kansas gives way to the colourful land of the Munchkins. Scarecrow (Eleanor Sutton), Tin Man (Sam Harrison) and Lion (Marcus Ayton) make a lovable trio; they are in danger of being upstaged by the puppeteer Ailsa Dalling’s delicate handling of Toto, Dorothy’s dog. Polly Lister is magnificently evil as the Wicked Witch: some of the younger children snuggled up to their parents whenever she appeared. James Brining’s production proves L Frank Baum’s story still appeals to all ages. "
+                      "Mark Littlewood is director-general of the Institute of Economic Affairs"
                   }
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "JE"
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Snow White ★★★★"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Richmond Theatre, London TW9; until Jan 5"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "Exotic sets, eye-candy costumes, a Prince Charming as handsome as your average Foxtons employee — this is the best-looking panto in town. Oh yes it is! That’s not to mention Mia Starbuck’s dazzling Snow White, who uncannily resembles the cartoon character. No surprise that the hapless palace servant Muddles (Jon Clegg) is lovelorn. Ahhh! It’s all a backdrop for a slovenly, slouching Jo Brand, who, as the Wicked Queen, is destined to captivate the audience regardless of how much effort she puts in. For the adults, there are potshots at parts of west London (“I’ve been in a bad place recently — Hounslow”) and blunderbuss innuendo (“Snow White expects to be wooed” — “She can be as wooed as she likes with me”); for the children, forgettable pop, energetic dancing and effortful comic routines. It’s as mad and random as a panto ought to be, and a knockout. "
-                  }
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "TWH"
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              name: "image",
-              attributes: {
-                id: "76ec71f9-b1e7-4d31-f0ed-35c6698e63e3",
-                display: "primary",
-                caption: "Paterson Joseph as Scrooge in A Christmas Carol",
-                credits: "MANUEL HARLAN",
-                url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F06b62f6c-20dc-11ea-81b4-b78674dd3224.jpg?crop=2250%2C1500%2C0%2C0",
-                ratio: "1500:1000",
-                relativeHorizontalOffset: 0,
-                relativeVerticalOffset: 0,
-                relativeWidth: 1,
-                relativeHeight: 1
-              },
-              children: []
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "A Christmas Carol ★★★★"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Old Vic, London SE1; until Jan 18 "
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "Anyone feeling remotely Scrooge-like in the run-up to Christmas will have their heart melted by this roistering, rosy-cheeked revival of Matthew Warchus’s production of the festive parable. It’s not perfect. The playwright Jack Thorne’s interpolations — he explains the miser’s misanthropy by giving him an abusive, debt-ridden father — don’t seem necessary and can’t match the original’s voracious verbal inventiveness. Yet Paterson Joseph commands the stage as an energetic and very sweaty Scrooge, Steven Miller excels as a stammering, palpably worthy Bob Cratchit, and Andrew Langtree, dragging a truckload of self-forged chains, makes a chilling Father/Marley. Adults can reflect on the universality of the story and consider whether for us, as for Scrooge, it’s not too late to change our ways. Children get satsumas, melodious campanology and a Tiny Tim to die for (Lara Mehmet). It adds up to a magical treat. "
-                  }
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "TWH"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value:
-                          "Nicholas, aged 5 : “I liked it because he became nice.”"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Ottilie, 5: “I liked the snow.”"
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "A Christmas Carol ★★★★"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Bristol Old Vic; until Jan 12"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "It’s Dickens with a twist in Tom Morris’s lively adaptation, as he and the director Lee Lyford give a playful vaudeville-style spin on Victorian London. The Poldark star John Hopkins anchors the action as Scrooge, as he rightly should, with strength and charisma, sneering scornfully at the “wavy language” used by BSL-deploying Bob Cratchit (Stephen Collins). On press night, an increasingly reluctant young member of the audience was dragooned into playing Tiny Tim; “Bah humbug” she might have said as she was pulled on stage. Around Scrooge bubbles much original music (Gwyneth Herbert), inventive ensemble work and wacky wigs. It’s a treat to watch the monochrome costumes begin to burst with colour as Scrooge treads his path towards human connection. "
-                  }
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "FM"
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              name: "ad",
-              children: []
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Christmas Carol — A Fairy Tale ★★★★ "
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Wilton’s Music Hall, London E1; until Jan 4"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "Dickens’s 1843 “little Christmas book” had a purpose: to entertain, but also to flag ignorance, want and child poverty. At one of London’s most atmospherically dilapidated Victorian venues, Piers Torday’s adaptation takes bold liberties. Scrooge is not Ebenezer, who died young, but his sister Fan (Sally Dexter), widowed after an unhappy marriage to Jacob Marley. The Ghost of Christmas Future transports Scrooge to the payday lender MarleyScrooge.com, where a scion struggles to juggle family and career. Scrooge’s awakening owes as much to left-wing feminism as to philanthropy. At times, this occasionally scrappy adaptation strains too hard for contemporary kudos, but imaginative ghosts and puppetry impress, and its warm humour lands. "
-                  }
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "PN"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value:
-                          "Joe Philp, 10: “Fantastic! Incredibly well made.”"
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              name: "image",
-              attributes: {
-                id: "bb021483-1fc0-4ef7-87c7-6f9e59c5b3b2",
-                display: "primary",
-                caption: "Punky and spunky: Peter Pan",
-                credits: "JOHAN PERSSON",
-                url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F1e163846-20dc-11ea-81b4-b78674dd3224.jpg?crop=2250%2C1500%2C0%2C0",
-                ratio: "1500:1000",
-                relativeHorizontalOffset: 0,
-                relativeVerticalOffset: 0,
-                relativeWidth: 1,
-                relativeHeight: 1
-              },
-              children: []
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Peter Pan ★★★★"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Birmingham Repertory; until Jan 19"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "This punky, spunky production takes the tale of the boy who never grew up and tells it to grow up, a little. In the director Liam Steel’s relatable reimagining, Wendy (Cora Tsang) is a bolshy teenager eking out life on a Birmingham housing estate. There’s no dad, only a harassed, often absent foster mum, played by Nia Gwynne, who — as JM Barrie originally intended — doubles as the dastardly Captain Hook. The graffiti-sprayed set transforms a concrete courtyard into Neverland’s lagoon, a pirate galleon and the subterranean home of the “Lost Ones” (girls as well as boys here) with terrific ingenuity. Lawrence Walker makes an intriguingly dim Peter Pan, yet this is Wendy’s story. In an effective reversal, Tsang, who has had to play mother to her two brothers, must learn to be a child. "
-                  }
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "TWH"
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Boing! ★★★★"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Bristol Old Vic; until Jan 5"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "The title certainly doesn’t lie: Sally Cookson’s charming, dance-inflected show for smaller children is boisterously bouncy. Two grown-up actors (Kel Matsena and Wilkie Branson) play exuberant, occasionally fractious young brothers sleeplessly waiting for Santa on Christmas Eve; in between anxiously checking the large, empty stockings that hang overhead, they pass the time by capering rumbustiously on a large bed. The young audience were enchanted and enthused by the energy on display; there were only a couple of occasions on which the 50-minute run overextended. "
-                  }
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "FM"
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "The Wolf, the Duck and the Mouse ★★★"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Unicorn, London SE1; until Jan 5"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "There’s an addictive weirdness to the picture books of Jon Klassen. The Wolf, The Duck and the Mouse is a fairly recent Klassen story, written with Mac Barnett, and Jack McNamara’s stage version doesn’t pull together the worlds of adult and child in a way that’s entirely satisfying. The set evokes Klassen’s instantly recognisable visual style, Cath Whitefield’s Wolf is suitably hapless, and Sam Buttery’s burbling Duck entertains. But the script embellishes the tale of their strange symbiosis so much that it becomes confusing. The production is watchable, but less visceral than the original."
-                  }
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: " MS"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value:
-                          "Nicholas, 5: “I liked it because they was flying.” "
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                }
-              ]
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "White Christmas ★★★"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Dominion, London W1; until Jan 4"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "This syrupy production, based on the 1954 musical film, could sweeten your pancakes for a year. The script is unadulterated corn, but there’s no resisting the temptation of Irving Berlin’s timeless standards. As song-and-dance men on a romantic pursuit to Vermont, Danny Mac and Dan Burton furnish a fine bromance. "
-                  }
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "MS"
-                      }
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Goldilocks and the Three Bears ★★★"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Palladium, London W1; until Jan 12"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "That subtle method actor Julian Clary is back in panto at the Palladium for another Christmas season of furtive filth. Actually, it’s not remotely furtive. Clary, who plays a circus ringmaster, wears thigh-high black boots, dolly-mixture colours and shoulder pads as wide as a Vulcan bomber’s wings. “I’m constantly honing my act,” he says in that distinctive drawl. “I’ve spent the last 40 minutes polishing the juggler’s balls.”"
-                  }
-                }
-              ]
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "Goldilocks and the Three Bears may be the title of this show, but they do not get much of a sniff at the plot. Did I say plot? Perhaps 10 minutes of the entire show is devoted to narrative development. The rest is campery by Clary and Paul O’Grady (who plays the baddie, Baron von Savage), chorus dancing, Nigel Havers in a bear costume and accomplished comedy from the ventriloquist Paul Zerdin. There is also a conjurer called the Marvellous Mysterioso — he lives up to the adjective — plus a naff roller-skating duo and cage-of-death routines with motorcyclists. The One Show’s Matt Baker plays the wet, likeable Joey the Clown. He is well cast."
-                  }
-                }
-              ]
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "This is one of those pantos at which grown-ups may have more fun than under-10s, but the main stars did do an ace slapstick song near the end. Havers was so exhausted by this that he took off his bear head and mopped his brow, saying: “If Prince Andrew is in, this is sweat.” Buckingham Palace may or may not like to know that this got one of the biggest laughs of the night. "
-                  }
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "QL"
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              name: "image",
-              attributes: {
-                id: "97a662d6-12bf-40ae-c498-23be6be8e2ea",
-                display: "primary",
-                caption: "Seeing the world: The Snail and the Whale",
-                credits: "TALL STORIES",
-                url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F48e8c4da-20dc-11ea-81b4-b78674dd3224.jpg?crop=1300%2C1625%2C0%2C0",
-                ratio: "1200:1500",
-                relativeHorizontalOffset: 0,
-                relativeVerticalOffset: 0,
-                relativeWidth: 1,
-                relativeHeight: 1
-              },
-              children: []
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "The Snail and the Whale ★★★ "
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Apollo, London W1; until Jan 5"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "Julia Donaldson’s tale is a bedtime favourite. It is about a snail hitching a lift on a whale and travelling around the world. How disappointing, then, that on stage, as imagined by Tall Stories, the snail is a soft toy and the whale a few blocks of wood — and, metaphorically, a dad who is in the navy, telling his daughter, the snail, the story. The three actors on stage (dad; girl at two different ages) are engaging, and the humour is good throughout, but, as we left, my five-year-old did comment on the obvious thing that is missing. "
-                  }
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "JD"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Ezra, 5: “Where’s the whale?”"
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Dick Whittington and His Cat ★★★"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Hackney Empire, London E8; until Jan 5"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "Susie McKenna injects a touch of topicality, with Dick (a sweet-voiced Tarinn Callender) arriving in London on the Empire Windrush in 1948, then falling for Alderman Fitzwarren’s daughter Alice (Christina Tedders). The real fun occurs when we’re in the presence of Hackney stalwarts Clive Rowe (as Sarah the Cook) and Tony Whittle (a lovely Tommy Cooperesque turn as the Alderman). I’m not sure I’ve seen a performance on a London stage as deliciously lubricious as Rowe’s since Douglas Hodge romped through La Cage aux folles. The plot loses its way at times, which tested the patience of my eight-year-old daughter, but this is a heartwarming affair from a team who know which buttons to press. See feature, in this section. "
-                  }
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "DC"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value:
-                          "Vivienne, 8: “I wish I could have seen more of the cat.”"
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              name: "image",
-              attributes: {
-                id: "30bc8b47-4857-430d-e143-c9b8eba4f75a",
-                display: "primary",
-                caption: "Spook at bedtime: The Canterville Ghost",
-                credits: "MANUEL HARLAN",
-                url:
-                  "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F6ce985e0-20dc-11ea-81b4-b78674dd3224.jpg?crop=2250%2C1500%2C0%2C0",
-                ratio: "1500:1000",
-                relativeHorizontalOffset: 0,
-                relativeVerticalOffset: 0,
-                relativeWidth: 1,
-                relativeHeight: 1
-              },
-              children: []
-            },
-            {
-              name: "paragraph",
-              children: [
-                {
-                  name: "bold",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "The Canterville Ghost ★★★"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "Unicorn, London SE1; until Jan 5"
-                      }
-                    }
-                  ]
-                },
-                {
-                  name: "break",
-                  children: []
-                },
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      "“You know nothing of the horrors that await you in the night,” glooms a thistly Scottish housekeeper when the American Otis family move into Canterville Chase, a gothic pile with a resident ghost. Many claps of thunder ensue, as do attempts at haunting by the 400-year-old Sir Simon Canterville, who ran his wife through with a cooking skewer. But the brunch-obsessed, matter-of-fact Otis clan take little notice. Couldn’t they be a teensy bit more disturbed by the blood-soaked carpet? And why aren’t they dying to solve the riddle of Canterville Chase? Anthony Weigh’s adaptation of Oscar Wilde’s gothic spoof is too leisurely to get your child’s hair standing on end, and Justin Audibert’s production betrays its own anxieties about how much it should spook the over-7s. But this is a decent theatrical intro to the “man with a large hat and an even larger wit”. "
-                  }
-                },
-                {
-                  name: "italic",
-                  children: [
-                    {
-                      name: "text",
-                      children: [],
-                      attributes: {
-                        value: "MS"
-                      }
-                    }
-                  ]
                 }
               ]
             }
@@ -1042,85 +306,72 @@ export default {
           name: "paragraph",
           children: [
             {
-              name: "bold",
-              children: [
-                {
-                  name: "text",
-                  attributes: {
-                    value: "The Ocean at the End of the Lane ★★★★★"
-                  },
-                  children: []
-                }
-              ]
-            },
-            {
-              name: "break",
-              children: []
-            },
-            {
-              name: "italic",
-              children: [
-                {
-                  name: "text",
-                  attributes: {
-                    value:
-                      "Dorfman, National Theatre, London SE1; until Jan 25 "
-                  },
-                  children: []
-                }
-              ]
-            },
-            {
-              name: "break",
+              name: "link",
+              attributes: {
+                href:
+                  "https://www.telegraph.co.uk/business/2023/03/05/huawei-abandons-plans-1bn-cambridge-research-campus/"
+              },
               children: []
             },
             {
               name: "text",
               attributes: {
                 value:
-                  "Grief is a thing with feathers and claws in this mesmerising adaptation of Neil Gaiman’s hit fantasy novel"
+                  "Some sort of diagnostic economic consensus may be breaking out across the political spectrum. Last week, Sir Keir Starmer highlighted the woeful long-term growth rates of the UK by pointing out that —"
               },
               children: []
             }
           ]
         }
       ],
-      dropcapsDisabled: true,
+      dropcapsDisabled: false,
       expirableFlags: [],
-      keywords: ["this", "year’s", "best", "christmas", "shows"],
+      keywords: [
+        "it’s",
+        "not",
+        "just",
+        "poland’s",
+        "plumbers",
+        "we",
+        "can",
+        "admire",
+        "but",
+        "also",
+        "its",
+        "economic",
+        "record"
+      ],
       leadAsset: {
-        caption:
-          "Deck the halls: from left, Wilton’s Christmas Carol, the Old Vic’s Christmas Carol, Birmingham Rep’s Peter Pan, the National’s The Ocean at the End of the Lane, Hackney Empire’s Dick Whittington, Goldilocks and the Three Bears at the London Palladium and The Snail and the Whale at the Apollo",
-        credits:
-          "ALISTAIR MUIR, MANUEL HARLAN, MARK DOUET, JOHAN PERSSON, ROBERT WORKMAN, PAUL COLTAS",
+        caption: null,
+        credits: null,
         crop169: {
           ratio: "16:9",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb9b852ac-20fa-11ea-81b4-b78674dd3224.jpg?crop=1600%2C900%2C0%2C0"
+            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd8dc796a-bb98-11ed-b039-425ba6c60d6d.jpg?crop=694%2C390%2C224%2C58"
         },
         crop32: {
           ratio: "3:2",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb701b94c-2102-11ea-9a1b-70ae6678484b.jpg?crop=1500%2C1000%2C0%2C0"
+            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd8dc796a-bb98-11ed-b039-425ba6c60d6d.jpg?crop=533%2C355%2C314%2C77"
         },
         crop1251: null,
         crop11: {
           ratio: "1:1",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb701b94c-2102-11ea-9a1b-70ae6678484b.jpg?crop=1000%2C1000%2C250%2C0"
+            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd8dc796a-bb98-11ed-b039-425ba6c60d6d.jpg?crop=476%2C476%2C322%2C57"
         },
         crop45: {
           ratio: "4:5",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb701b94c-2102-11ea-9a1b-70ae6678484b.jpg?crop=800%2C1000%2C350%2C0"
+            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd8dc796a-bb98-11ed-b039-425ba6c60d6d.jpg?crop=284%2C355%2C438%2C77"
         },
         crop23: {
           ratio: "2:3",
           url:
-            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fb701b94c-2102-11ea-9a1b-70ae6678484b.jpg?crop=667%2C1000%2C417%2C0"
+            "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd8dc796a-bb98-11ed-b039-425ba6c60d6d.jpg?crop=237%2C355%2C462%2C77"
         },
         crop2251: null,
-        id: "e1c1f753-64aa-47bd-9726-5ba3a3b05276",
+        id: "a121554b-370e-4f68-bcc1-9f739848838d",
         title: ""
       },
       relatedArticleSlice: {
@@ -1132,158 +383,13 @@ export default {
               leadAsset: {
                 crop169: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fe9ffb10e-20bd-11ea-81b4-b78674dd3224.jpg?crop=1600%2C900%2C0%2C0"
+                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3ed398e-b08b-11ed-b55e-bcc1e3eac15b.jpg?crop=648%2C364%2C215%2C66"
                 },
                 crop32: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fee78e692-20bd-11ea-81b4-b78674dd3224.jpg?crop=1500%2C1000%2C0%2C0"
+                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3ed398e-b08b-11ed-b55e-bcc1e3eac15b.jpg?crop=648%2C432%2C215%2C32"
                 },
-                id: "00bf1ad1-d244-49c5-8f6e-7650ab8b5211",
-                title: ""
-              },
-              bylines: [
-                {
-                  byline: [
-                    {
-                      name: "author",
-                      children: [
-                        {
-                          name: "text",
-                          children: [],
-                          attributes: {
-                            value: "Grant Tucker"
-                          }
-                        }
-                      ],
-                      attributes: {
-                        slug: "grant-tucker"
-                      }
-                    }
-                  ],
-                  image: null
-                }
-              ],
-              hasVideo: false,
-              headline:
-                "Pantomime games: behind the scenes of Hackney Empire’s Dick Whittington and His Cat",
-              id: "3a7ae4c0-20cb-11ea-9a1b-70ae6678484b",
-              label: "CHRISTMAS THEATRE",
-              publicationName: "SUNDAYTIMES",
-              publishedTime: "2019-12-22T00:01:00.000Z",
-              updatedTime: "2019-12-22T18:04:30.000Z",
-              section: "culture",
-              shortIdentifier: "25ffr8xd3",
-              shortHeadline:
-                "Pantomime games: behind the scenes of Hackney Empire’s Dick Whittington and His Cat",
-              slug:
-                "pantomime-games-behind-the-scenes-of-hackney-empires-dick-whittington-and-his-cat",
-              url:
-                "https://www.thetimes.co.uk/article/pantomime-games-behind-the-scenes-of-hackney-empires-dick-whittington-and-his-cat-25ffr8xd3",
-              summary105: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "I thought my acting days were behind me. “Oh no they’re not,” insisted Susie McKenna, the writer and"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary125: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "I thought my acting days were behind me. “Oh no they’re not,” insisted Susie McKenna, the writer and director of the Hackney"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary145: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "I thought my acting days were behind me. “Oh no they’re not,” insisted Susie McKenna, the writer and director of the Hackney Empire pantomime for"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary160: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "I thought my acting days were behind me. “Oh no they’re not,” insisted Susie McKenna, the writer and director of the Hackney Empire pantomime for the past two"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary175: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "I thought my acting days were behind me. “Oh no they’re not,” insisted Susie McKenna, the writer and director of the Hackney Empire pantomime for the past two decades. Ten"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ],
-              summary225: [
-                {
-                  name: "paragraph",
-                  children: [
-                    {
-                      name: "text",
-                      attributes: {
-                        value:
-                          "I thought my acting days were behind me. “Oh no they’re not,” insisted Susie McKenna, the writer and director of the Hackney Empire pantomime for the past two decades. Ten years had passed since I last trod the boards, in a"
-                      },
-                      children: []
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          {
-            leadAsset: null,
-            article: {
-              leadAsset: {
-                crop169: {
-                  url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1493%2C840%2C4%2C152"
-                },
-                crop32: {
-                  url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F45c33d56-20f7-11ea-9a1b-70ae6678484b.jpg?crop=1500%2C1000%2C0%2C0"
-                },
-                id: "7781b9f1-6623-4700-9618-d012e2a40028",
+                id: "4e4c4eb6-d47a-478a-a5bb-f2aa5c0c03d0",
                 title: ""
               },
               bylines: [
@@ -1296,80 +402,52 @@ export default {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: "Jane Edwardes and Fiona Mountford"
+                            value: "Mark Littlewood"
                           }
                         }
                       ]
                     }
                   ],
-                  image: null
+                  image: {
+                    id: "4e4c4eb6-d47a-478a-a5bb-f2aa5c0c03d0",
+                    caption: "",
+                    credits: "",
+                    title: "",
+                    crop: {
+                      ratio: "1:1",
+                      url:
+                        "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3ed398e-b08b-11ed-b55e-bcc1e3eac15b.jpg?crop=432%2C432%2C323%2C32"
+                    }
+                  }
                 }
               ],
               hasVideo: false,
-              headline: "Theatre, also showing",
-              id: "7ddc2df0-20d0-11ea-81b4-b78674dd3224",
-              label: "CHRISTMAS THEATRE",
-              publicationName: "SUNDAYTIMES",
-              publishedTime: "2019-12-22T00:01:00.000Z",
-              updatedTime: "2019-12-22T18:04:30.000Z",
-              section: "culture",
-              shortIdentifier: "pldxw3prv",
-              shortHeadline: "Theatre, also showing",
-              slug: "theatre-also-showing",
+              headline:
+                "Mark Littlewood: With Nicola Sturgeon gone we can finally transfer meaningful power to Scotland",
+              id: "fad724c2-b06a-11ed-b55e-bcc1e3eac15b",
+              label: "mark littlewood | comment",
+              publicationName: "TIMES",
+              publishedTime: "2023-02-20T00:01:00.000Z",
+              updatedTime: "2023-02-19T21:11:33.000Z",
+              section: "business",
+              shortIdentifier: "9k8m97nlk",
+              shortHeadline:
+                "With Sturgeon gone we can transfer meaningful power to Scotland",
+              seoDescription:
+                "Within minutes of Nicola Sturgeon resigning as Scotland’s first minister, pundits and commentators were seeking to understand and explain the long-term conseque",
+              slug:
+                "mark-littlewood-with-nicola-sturgeon-gone-we-can-finally-transfer-meaningful-power-to-scotland",
               url:
-                "https://www.thetimes.co.uk/article/theatre-also-showing-pldxw3prv",
+                "https://www.thetimes.co.uk/article/mark-littlewood-with-nicola-sturgeon-gone-we-can-finally-transfer-meaningful-power-to-scotland-9k8m97nlk",
               summary105: [
                 {
                   name: "paragraph",
                   children: [
                     {
-                      name: "bold",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Guys and Dolls"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
-                      name: "italic",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Crucible, Sheffield"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
-                      name: "text",
-                      attributes: {
-                        value: "★★★★"
-                      },
-                      children: []
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
                       name: "text",
                       attributes: {
                         value:
-                          "The Crucible has a history of staging great musicals, and while"
+                          "Within minutes of Nicola Sturgeon resigning as Scotland’s first minister, pundits and commentators were"
                       },
                       children: []
                     }
@@ -1381,53 +459,10 @@ export default {
                   name: "paragraph",
                   children: [
                     {
-                      name: "bold",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Guys and Dolls"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
-                      name: "italic",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Crucible, Sheffield"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
-                      name: "text",
-                      attributes: {
-                        value: "★★★★"
-                      },
-                      children: []
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
                       name: "text",
                       attributes: {
                         value:
-                          "The Crucible has a history of staging great musicals, and while Frank Loesser’s classic"
+                          "Within minutes of Nicola Sturgeon resigning as Scotland’s first minister, pundits and commentators were seeking to understand"
                       },
                       children: []
                     }
@@ -1439,53 +474,10 @@ export default {
                   name: "paragraph",
                   children: [
                     {
-                      name: "bold",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Guys and Dolls"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
-                      name: "italic",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Crucible, Sheffield"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
-                      name: "text",
-                      attributes: {
-                        value: "★★★★"
-                      },
-                      children: []
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
                       name: "text",
                       attributes: {
                         value:
-                          "The Crucible has a history of staging great musicals, and while Frank Loesser’s classic isn’t as radical as"
+                          "Within minutes of Nicola Sturgeon resigning as Scotland’s first minister, pundits and commentators were seeking to understand and explain the"
                       },
                       children: []
                     }
@@ -1497,53 +489,10 @@ export default {
                   name: "paragraph",
                   children: [
                     {
-                      name: "bold",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Guys and Dolls"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
-                      name: "italic",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Crucible, Sheffield"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
-                      name: "text",
-                      attributes: {
-                        value: "★★★★"
-                      },
-                      children: []
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
                       name: "text",
                       attributes: {
                         value:
-                          "The Crucible has a history of staging great musicals, and while Frank Loesser’s classic isn’t as radical as some of its"
+                          "Within minutes of Nicola Sturgeon resigning as Scotland’s first minister, pundits and commentators were seeking to understand and explain the long-term"
                       },
                       children: []
                     }
@@ -1555,53 +504,10 @@ export default {
                   name: "paragraph",
                   children: [
                     {
-                      name: "bold",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Guys and Dolls"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
-                      name: "italic",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Crucible, Sheffield"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
-                      name: "text",
-                      attributes: {
-                        value: "★★★★"
-                      },
-                      children: []
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
                       name: "text",
                       attributes: {
                         value:
-                          "The Crucible has a history of staging great musicals, and while Frank Loesser’s classic isn’t as radical as some of its previous shows, it"
+                          "Within minutes of Nicola Sturgeon resigning as Scotland’s first minister, pundits and commentators were seeking to understand and explain the long-term consequences, at least"
                       },
                       children: []
                     }
@@ -1613,53 +519,10 @@ export default {
                   name: "paragraph",
                   children: [
                     {
-                      name: "bold",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Guys and Dolls"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
-                      name: "italic",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Crucible, Sheffield"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
-                      name: "text",
-                      attributes: {
-                        value: "★★★★"
-                      },
-                      children: []
-                    },
-                    {
-                      name: "break",
-                      children: []
-                    },
-                    {
                       name: "text",
                       attributes: {
                         value:
-                          "The Crucible has a history of staging great musicals, and while Frank Loesser’s classic isn’t as radical as some of its previous shows, it still hits the spot. Broadway’s lowlife of"
+                          "Within minutes of Nicola Sturgeon resigning as Scotland’s first minister, pundits and commentators were seeking to understand and explain the long-term consequences, at least in electoral terms. Might we have moved beyond the"
                       },
                       children: []
                     }
@@ -1674,63 +537,62 @@ export default {
               leadAsset: {
                 crop169: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F291526ea-1c30-11ea-ac3f-e63900c37a3c.jpg?crop=2667%2C1500%2C0%2C0"
+                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fec82ec4c-a559-11ed-9311-522a2d54b6fd.jpg?crop=749%2C422%2C184%2C52"
                 },
                 crop32: {
                   url:
-                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F68ca198a-1c35-11ea-aa74-16c5e3bdce26.jpg?crop=1500%2C1000%2C0%2C0"
+                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fec82ec4c-a559-11ed-9311-522a2d54b6fd.jpg?crop=617%2C411%2C239%2C47"
                 },
-                id: "74462401-0f48-40ef-97cc-8e0c6d8ced76",
+                id: "888edc22-be0f-4ea9-9c76-dda10abf8c28",
                 title: ""
               },
               bylines: [
                 {
                   byline: [
                     {
-                      name: "author",
+                      name: "inline",
                       children: [
                         {
                           name: "text",
                           children: [],
                           attributes: {
-                            value: "Quentin Letts"
+                            value: "Mark Littlewood"
                           }
                         }
-                      ],
-                      attributes: {
-                        slug: "quentin-letts"
-                      }
+                      ]
                     }
                   ],
                   image: {
-                    id: "29d9c40c-70c8-4ec2-ca35-54faca7e4f89",
+                    id: "888edc22-be0f-4ea9-9c76-dda10abf8c28",
                     caption: "",
                     credits: "",
                     title: "",
                     crop: {
                       ratio: "1:1",
                       url:
-                        "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0b1ced7e-0bb6-11ea-8f6d-195dfbf668c7.jpg?crop=1429%2C1429%2C1014%2C7"
+                        "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fec82ec4c-a559-11ed-9311-522a2d54b6fd.jpg?crop=411%2C411%2C360%2C67"
                     }
                   }
                 }
               ],
               hasVideo: false,
               headline:
-                "Theatre review: Three Sisters, Lyttelton Theatre, National; Cyrano de Bergerac, Playhouse",
-              id: "ce2b7864-1c08-11ea-aa74-16c5e3bdce26",
-              label: "THEATRE",
-              publicationName: "SUNDAYTIMES",
-              publishedTime: "2019-12-15T00:01:00.000Z",
-              updatedTime: "2019-12-15T18:08:03.000Z",
-              section: "culture",
-              shortIdentifier: "8blm6bf37",
+                "When institutions fail to do their jobs, radical thinking is impossible",
+              id: "c3af1d90-a559-11ed-9311-522a2d54b6fd",
+              label: "comment",
+              publicationName: "TIMES",
+              publishedTime: "2023-02-06T00:01:00.000Z",
+              updatedTime: "2023-02-05T19:36:03.000Z",
+              section: "business",
+              shortIdentifier: "b26xp37vl",
               shortHeadline:
-                "Theatre review: Three Sisters, Lyttelton Theatre, National; Cyrano de Bergerac, Playhouse",
+                "When institutions fail to do their jobs, radical thinking is impossible",
+              seoDescription:
+                "Liz Truss’s re-entry into public debate is widely being analysed through a political lens. Will she prove a thorn in the side for her successor Rishi Sun",
               slug:
-                "theatre-review-three-sisters-lyttelton-theatre-national-cyrano-de-bergerac-playhouse",
+                "when-institutions-fail-to-do-their-jobs-radical-thinking-is-impossible",
               url:
-                "https://www.thetimes.co.uk/article/theatre-review-three-sisters-lyttelton-theatre-national-cyrano-de-bergerac-playhouse-8blm6bf37",
+                "https://www.thetimes.co.uk/article/when-institutions-fail-to-do-their-jobs-radical-thinking-is-impossible-b26xp37vl",
               summary105: [
                 {
                   name: "paragraph",
@@ -1738,27 +600,8 @@ export default {
                     {
                       name: "text",
                       attributes: {
-                        value: "Chekhov’s "
-                      },
-                      children: []
-                    },
-                    {
-                      name: "bold",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Three Sisters"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "text",
-                      attributes: {
                         value:
-                          " has been rewritten and shifted to Biafra, the independent state that flickered"
+                          "Liz Truss’s re-entry into public debate is widely being analysed through a political lens. Will she prove"
                       },
                       children: []
                     }
@@ -1772,27 +615,8 @@ export default {
                     {
                       name: "text",
                       attributes: {
-                        value: "Chekhov’s "
-                      },
-                      children: []
-                    },
-                    {
-                      name: "bold",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Three Sisters"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "text",
-                      attributes: {
                         value:
-                          " has been rewritten and shifted to Biafra, the independent state that flickered briefly in the late"
+                          "Liz Truss’s re-entry into public debate is widely being analysed through a political lens. Will she prove a thorn in the side"
                       },
                       children: []
                     }
@@ -1806,27 +630,8 @@ export default {
                     {
                       name: "text",
                       attributes: {
-                        value: "Chekhov’s "
-                      },
-                      children: []
-                    },
-                    {
-                      name: "bold",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Three Sisters"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "text",
-                      attributes: {
                         value:
-                          " has been rewritten and shifted to Biafra, the independent state that flickered briefly in the late 1960s before being"
+                          "Liz Truss’s re-entry into public debate is widely being analysed through a political lens. Will she prove a thorn in the side for her successor"
                       },
                       children: []
                     }
@@ -1840,27 +645,8 @@ export default {
                     {
                       name: "text",
                       attributes: {
-                        value: "Chekhov’s "
-                      },
-                      children: []
-                    },
-                    {
-                      name: "bold",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Three Sisters"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "text",
-                      attributes: {
                         value:
-                          " has been rewritten and shifted to Biafra, the independent state that flickered briefly in the late 1960s before being clawed back into"
+                          "Liz Truss’s re-entry into public debate is widely being analysed through a political lens. Will she prove a thorn in the side for her successor Rishi Sunak?"
                       },
                       children: []
                     }
@@ -1874,27 +660,8 @@ export default {
                     {
                       name: "text",
                       attributes: {
-                        value: "Chekhov’s "
-                      },
-                      children: []
-                    },
-                    {
-                      name: "bold",
-                      children: [
-                        {
-                          name: "text",
-                          attributes: {
-                            value: "Three Sisters"
-                          },
-                          children: []
-                        }
-                      ]
-                    },
-                    {
-                      name: "text",
-                      attributes: {
                         value:
-                          " has been rewritten and shifted to Biafra, the independent state that flickered briefly in the late 1960s before being clawed back into Nigeria’s maw"
+                          "Liz Truss’s re-entry into public debate is widely being analysed through a political lens. Will she prove a thorn in the side for her successor Rishi Sunak? What does the"
                       },
                       children: []
                     }
@@ -1908,27 +675,162 @@ export default {
                     {
                       name: "text",
                       attributes: {
-                        value: "Chekhov’s "
+                        value:
+                          "Liz Truss’s re-entry into public debate is widely being analysed through a political lens. Will she prove a thorn in the side for her successor Rishi Sunak? What does the difference between her and the present government on"
                       },
                       children: []
-                    },
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            leadAsset: null,
+            article: {
+              leadAsset: {
+                crop169: {
+                  url:
+                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7f601f4e-9a6f-11ed-b81d-ce538d806950.jpg?crop=714%2C402%2C169%2C71"
+                },
+                crop32: {
+                  url:
+                    "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7f601f4e-9a6f-11ed-b81d-ce538d806950.jpg?crop=714%2C476%2C169%2C34"
+                },
+                id: "56eab475-7f26-46a6-a11c-c5b77b08b0ad",
+                title: ""
+              },
+              bylines: [
+                {
+                  byline: [
                     {
-                      name: "bold",
+                      name: "inline",
                       children: [
                         {
                           name: "text",
+                          children: [],
                           attributes: {
-                            value: "Three Sisters"
-                          },
-                          children: []
+                            value: "Mark Littlewood"
+                          }
                         }
                       ]
-                    },
+                    }
+                  ],
+                  image: {
+                    id: "56eab475-7f26-46a6-a11c-c5b77b08b0ad",
+                    caption: "",
+                    credits: "",
+                    title: "",
+                    crop: {
+                      ratio: "1:1",
+                      url:
+                        "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7f601f4e-9a6f-11ed-b81d-ce538d806950.jpg?crop=446%2C446%2C334%2C71"
+                    }
+                  }
+                }
+              ],
+              hasVideo: false,
+              headline:
+                "Local communities need more say in how levelling up funds are spent",
+              id: "2a24b18a-9a69-11ed-8201-2ed91f44d1e8",
+              label: "Comment",
+              publicationName: "TIMES",
+              publishedTime: "2023-01-23T00:01:00.000Z",
+              updatedTime: "2023-01-23T06:43:23.000Z",
+              section: "business",
+              shortIdentifier: "crzlf3tw6",
+              shortHeadline:
+                "Local communities need more say in how levelling up funds are spent",
+              seoDescription:
+                "Confusingly, it’s increasingly rare for leading politicians to enjoy much of a honeymoon period, but all of them get to a point when it is universally agreed th",
+              slug:
+                "local-communities-need-more-say-in-how-levelling-up-funds-are-spent",
+              url:
+                "https://www.thetimes.co.uk/article/local-communities-need-more-say-in-how-levelling-up-funds-are-spent-crzlf3tw6",
+              summary105: [
+                {
+                  name: "paragraph",
+                  children: [
                     {
                       name: "text",
                       attributes: {
                         value:
-                          " has been rewritten and shifted to Biafra, the independent state that flickered briefly in the late 1960s before being clawed back into Nigeria’s maw. It’s a long evening, but it works. The story"
+                          "Confusingly, it’s increasingly rare for leading politicians to enjoy much of a honeymoon period, but all"
+                      },
+                      children: []
+                    }
+                  ]
+                }
+              ],
+              summary125: [
+                {
+                  name: "paragraph",
+                  children: [
+                    {
+                      name: "text",
+                      attributes: {
+                        value:
+                          "Confusingly, it’s increasingly rare for leading politicians to enjoy much of a honeymoon period, but all of them get to a"
+                      },
+                      children: []
+                    }
+                  ]
+                }
+              ],
+              summary145: [
+                {
+                  name: "paragraph",
+                  children: [
+                    {
+                      name: "text",
+                      attributes: {
+                        value:
+                          "Confusingly, it’s increasingly rare for leading politicians to enjoy much of a honeymoon period, but all of them get to a point when it is"
+                      },
+                      children: []
+                    }
+                  ]
+                }
+              ],
+              summary160: [
+                {
+                  name: "paragraph",
+                  children: [
+                    {
+                      name: "text",
+                      attributes: {
+                        value:
+                          "Confusingly, it’s increasingly rare for leading politicians to enjoy much of a honeymoon period, but all of them get to a point when it is universally agreed"
+                      },
+                      children: []
+                    }
+                  ]
+                }
+              ],
+              summary175: [
+                {
+                  name: "paragraph",
+                  children: [
+                    {
+                      name: "text",
+                      attributes: {
+                        value:
+                          "Confusingly, it’s increasingly rare for leading politicians to enjoy much of a honeymoon period, but all of them get to a point when it is universally agreed that their"
+                      },
+                      children: []
+                    }
+                  ]
+                }
+              ],
+              summary225: [
+                {
+                  name: "paragraph",
+                  children: [
+                    {
+                      name: "text",
+                      attributes: {
+                        value:
+                          "Confusingly, it’s increasingly rare for leading politicians to enjoy much of a honeymoon period, but all of them get to a point when it is universally agreed that their honeymoon is over. That time appears to have arrived for"
                       },
                       children: []
                     }
@@ -1941,23 +843,28 @@ export default {
       },
       sharingEnabled: true,
       savingEnabled: true,
-      standfirst:
-        "A punky Peter Pan, a female Scrooge, a Goldilocks where the innuendo is just right — here are the pantos and plays to see this festive season",
+      standfirst: null,
       tiles: [
         {
           slices: [
             {
-              sections: []
+              sections: [
+                {
+                  title: "Business"
+                }
+              ]
             }
           ]
+        },
+        {
+          slices: []
         },
         {
           slices: [
             {
               sections: [
                 {
-                  id: "91663692-19ee-11ea-aa74-16c5e3bdce26",
-                  title: "Culture"
+                  title: "Business"
                 }
               ]
             }
@@ -1966,24 +873,36 @@ export default {
         {
           slices: [
             {
-              sections: []
+              sections: [
+                {
+                  title: "Business"
+                }
+              ]
             }
           ]
         },
         {
           slices: [
             {
-              sections: []
+              sections: [
+                {
+                  title: "Business"
+                }
+              ]
             }
           ]
         }
       ],
-      template: "magazinestandard",
+      template: "maincomment",
       textColour: null,
       topics: [
         {
-          name: "Theatre",
-          slug: "theatre"
+          name: "Economy",
+          slug: "economics"
+        },
+        {
+          name: "Personal finance",
+          slug: "personal-finance"
         }
       ],
       bylines: [
@@ -1996,103 +915,41 @@ export default {
                   name: "text",
                   children: [],
                   attributes: {
-                    value: "Dan Cairns, "
+                    value: "Mark Littlewood"
                   }
                 }
               ]
             }
           ],
-          image: null
-        },
-        {
-          byline: [
-            {
-              name: "author",
-              children: [
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value: "Jonathan Dean"
-                  }
-                }
-              ],
-              attributes: {
-                slug: "jonathan-dean"
-              }
+          image: {
+            id: "a121554b-370e-4f68-bcc1-9f739848838d",
+            caption: "",
+            credits: "",
+            title: "",
+            crop: {
+              ratio: "1:1",
+              url:
+                "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd8dc796a-bb98-11ed-b039-425ba6c60d6d.jpg?crop=476%2C476%2C322%2C57"
             }
-          ],
-          image: null
-        },
-        {
-          byline: [
-            {
-              name: "inline",
-              children: [
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value: ", Jane Edwardes, Thomas W Hodgkinson, David Jays, "
-                  }
-                }
-              ]
-            }
-          ],
-          image: null
-        },
-        {
-          byline: [
-            {
-              name: "author",
-              children: [
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value: "Quentin Letts"
-                  }
-                }
-              ],
-              attributes: {
-                slug: "quentin-letts"
-              }
-            }
-          ],
-          image: null
-        },
-        {
-          byline: [
-            {
-              name: "inline",
-              children: [
-                {
-                  name: "text",
-                  children: [],
-                  attributes: {
-                    value:
-                      ", Fiona Mountford, Patricia Nicol and Maxie Szalwinska"
-                  }
-                }
-              ]
-            }
-          ],
-          image: null
+          }
         }
       ],
       hasVideo: false,
-      headline: "This year’s best Christmas shows",
-      id: "d596c370-20cb-11ea-9a1b-70ae6678484b",
-      label: "CHRISTMAS SHOWS",
-      publicationName: "SUNDAYTIMES",
-      publishedTime: "2019-12-22T00:01:00.000Z",
-      updatedTime: "2019-12-22T18:04:30.000Z",
-      section: "culture",
-      shortIdentifier: "z8snn8fr3",
-      shortHeadline: "This year’s best Christmas shows",
-      slug: "this-years-best-christmas-shows",
+      id: "42530a4a-bb6b-11ed-b039-425ba6c60d6d",
+      label: "comment",
+      publicationName: "TIMES",
+      publishedTime: "2023-03-06T00:01:00.000Z",
+      updatedTime: "2023-03-07T16:02:46.000Z",
+      section: "business",
+      shortIdentifier: "x7wrbth5l",
+      shortHeadline:
+        "It’s not just Poland’s plumbers we can admire, but also its economic record",
+      seoDescription:
+        "Some sort of diagnostic economic consensus may be breaking out across the political spectrum. Last week, Sir Keir Starmer highlighted the woeful long-term growth rates of the UK by pointing out that — if current trajectories continued — the average Pole would be richer than the average Brit by the e",
+      slug:
+        "its-not-just-polands-plumbers-we-can-admire-but-also-its-economic-record",
       url:
-        "https://www.thetimes.co.uk/article/this-years-best-christmas-shows-z8snn8fr3"
+        "https://www.thetimes.co.uk/article/its-not-just-polands-plumbers-we-can-admire-but-also-its-economic-record-x7wrbth5l"
     }
   }
 };
