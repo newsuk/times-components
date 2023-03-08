@@ -7,17 +7,30 @@ import {
 } from "../styles/article-body/article-link";
 import withTrackEvents from "./article-link-tracking-events";
 
-const ArticleLink = ({ children, target, url, onPress, dropCap }) => (
-  <Link
-    underlined={!(dropCap && children[0].length === 1)}
-    responsiveLinkStyles={dropCap ? dropCapLinkStyles : linkStyles}
+const ArticleLink = ({ children, target, url, onPress, dropCap }) => {
+  return (
+  <>
+  { children.length === 0 ? (
+    <Link
+    responsiveLinkStyles={linkStyles}
     target={target}
-    url={url}
     onPress={onPress}
   >
-    {children}
+    {url}
   </Link>
-);
+    ) : (<Link
+      underlined={!(dropCap && children[0].length === 1)}
+      responsiveLinkStyles={dropCap ? dropCapLinkStyles : linkStyles}
+      target={target}
+      url={url}
+      onPress={onPress}
+    >
+      {children}
+    </Link>)
+  }
+  </>
+  
+)};
 
 ArticleLink.defaultProps = {
   ...Link.defaultProps,
