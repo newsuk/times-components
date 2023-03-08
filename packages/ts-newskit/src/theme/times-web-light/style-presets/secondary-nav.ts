@@ -15,7 +15,7 @@ export const secondaryNavigationStylePresets = {
     base: {
       color: '#1D1D1B',
       backgroundColor: '{{colors.white}}',
-      padding: '12px 0',
+      padding: '10px 0',
       minWidth: 'max-content',
       borderBottom: '4px solid transparent'
     },

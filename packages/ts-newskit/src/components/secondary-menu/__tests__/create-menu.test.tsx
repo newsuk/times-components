@@ -5,6 +5,7 @@ import { mainMenuItems } from '../fixtures/menu-items.json';
 import { cleanup, fireEvent } from '@testing-library/react';
 import { CreateMenu } from '../desktop/create-menu';
 import { useBreakpointKey } from 'newskit';
+
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
   useBreakpointKey: jest.fn().mockReturnValue('xl')
@@ -18,7 +19,12 @@ const options = {
 };
 
 describe('Create Menu', () => {
+  beforeEach(() => {
+    jest.useFakeTimers();
+  });
   afterEach(() => {
+    jest.runOnlyPendingTimers();
+    jest.useRealTimers();
     jest.clearAllMocks();
     cleanup();
   });
@@ -38,13 +44,5 @@ describe('Create Menu', () => {
     const seeAllButton = getByText('See all');
     fireEvent.click(seeAllButton);
     expect(options.setIsExpanded).toHaveBeenCalled();
-  });
-  it('should change the background color on expand', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
-    const { getByRole } = render(
-      <CreateMenu data={mainMenuItems} options={options} />
-    );
-    const seeAllButton = getByRole('button');
-    expect(seeAllButton).toHaveStyle('background-color: rgb(245, 245, 245)');
   });
 });

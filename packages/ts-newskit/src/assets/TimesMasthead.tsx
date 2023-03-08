@@ -9,7 +9,7 @@ const TimesMasthead = (props: any) => (
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <g clip-path="url(#clip0_1565_54429)">
+    <g clipPath="url(#clip0_1565_54429)">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

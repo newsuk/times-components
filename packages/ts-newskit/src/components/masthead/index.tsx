@@ -1,47 +1,57 @@
 import React from 'react';
 import {
-  DateTime,
-  LinkInline,
   ScreenReaderOnly,
   Headline,
-  Visible
+  Visible,
+  Block,
+  LinkInline
 } from 'newskit';
-import { MainHeader, Masthead } from './styles';
+import { Masthead, MastheadDate } from './styles';
 import { NewsKitTimesMasthead, NewsKitSundayTimesMasthead } from '../../assets';
+
+interface EditionMastheadProps {
+  isSunday?: boolean;
+  todaysDate?: string;
+}
 
 const dateNow = new Date().toISOString();
 
-export const EditionMasthead: React.FC<{
-  isSunday: boolean;
-  todaysDate?: string;
-}> = ({ isSunday, todaysDate = dateNow }) => {
+export const EditionMasthead = ({
+  isSunday = false,
+  todaysDate = dateNow
+}: EditionMastheadProps) => {
   return (
-    <MainHeader>
+    <Block as="header">
       <Visible md lg xl>
-        <Masthead>
-          <ScreenReaderOnly id="sr-only">
+        <Masthead paddingBlockEnd="space040">
+          <ScreenReaderOnly id="sr-times-logo">
             <Headline headingAs="h1">
               The Times &amp; The Sunday Times Homepage
             </Headline>
           </ScreenReaderOnly>
-          <DateTime
+          <MastheadDate
             date={todaysDate}
             dateFormat="EEEE MMMM d yyyy"
             overrides={{
-              stylePreset: 'mastheadTime',
               typographyPreset: 'mastheadTime'
             }}
             data-testid="date-time"
           />
-          <LinkInline href="/" overrides={{ stylePreset: 'mastheadLogo' }}>
-            {isSunday ? (
-              <NewsKitSundayTimesMasthead />
-            ) : (
-              <NewsKitTimesMasthead />
-            )}
-          </LinkInline>
+          <Block>
+            <LinkInline
+              href="/"
+              overrides={{ stylePreset: 'mastheadLogo' }}
+              aria-labelledby="sr-times-logo"
+            >
+              {isSunday ? (
+                <NewsKitSundayTimesMasthead />
+              ) : (
+                <NewsKitTimesMasthead />
+              )}
+            </LinkInline>
+          </Block>
         </Masthead>
       </Visible>
-    </MainHeader>
+    </Block>
   );
 };

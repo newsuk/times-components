@@ -1,32 +1,29 @@
-const topNavBtn = {
-  backgroundColor: 'transparent',
-  height: '100%',
-  width: '60px',
-  zIndex: 1
+const navSearch = {
+  backgroundColor: '{{colors.interfaceNeutral010}}',
+  color: '{{colors.white}}'
 };
 
 export const navStylePresets = {
-  topNavSearch: {
+  hamburgerSearch: {
     base: {
-      backgroundColor: '#222222',
-      color: '{{colors.white}}',
-      height: '100%',
-      width: '200px'
+      ...navSearch,
+      borderRadius: '{{sizing.sizing020}}'
     }
   },
-  topNavSearchClear: {
+  topNavSearch: {
+    base: {
+      ...navSearch
+    }
+  },
+  searchClear: {
     base: {
       color: '{{colors.inkSubtle}}',
-      backgroundColor: 'transparent',
-      minHeight: '{{sizing.sizing040}}',
-      minWidth: '{{sizing.sizing040}}',
-      padding: '0px',
-      transform: 'rotate(45deg)'
+      backgroundColor: 'transparent'
     }
   },
   buttonTopNav: {
     base: {
-      ...topNavBtn
+      backgroundColor: 'transparent'
     },
     hover: {
       backgroundColor: '#222222'
@@ -34,7 +31,6 @@ export const navStylePresets = {
   },
   buttonTopNavActive: {
     base: {
-      ...topNavBtn,
       backgroundColor: '#222222'
     }
   },
@@ -47,9 +43,7 @@ export const navStylePresets = {
     base: {
       backgroundColor: 'transparent',
       color: '{{colors.white}}',
-      iconColor: '{{colors.white}}',
-      height: '60px',
-      minWidth: 0
+      iconColor: '{{colors.white}}'
     },
     hover: {
       backgroundColor: '#222222'
@@ -61,9 +55,7 @@ export const navStylePresets = {
   menuItemScroll: {
     base: {
       color: '{{colors.interface060}}',
-      borderBottom: '4px solid transparent',
-      minWidth: 0,
-      padding: '12px 0'
+      borderBottom: '4px solid transparent'
     },
     hover: {
       borderBottom: '4px solid black'
@@ -84,7 +76,7 @@ export const navStylePresets = {
       color: '{{colors.white}}'
     },
     hover: {
-      backgroundColor: '#333333'
+      backgroundColor: '{{colors.interfaceNeutral010}}'
     }
   },
   menuSubscribe: {
@@ -100,21 +92,6 @@ export const navStylePresets = {
   menuScrollOverlay: {
     base: {
       backgroundImage: '{{overlays.overlayGradientInverseHorizontal}}'
-    }
-  },
-  blockWrapper: {
-    base: {
-      backgroundColor: '#151515',
-      color: '#828282',
-      fontFamily: 'GillSansMTStd-Medium'
-    }
-  },
-  searchBar: {
-    base: {
-      backgroundColor: '{{colors.interfaceNeutral010}}',
-      color: '#9C9C9C',
-      borderRadius: '{{sizing.sizing020}}',
-      height: '40px'
     }
   }
 };

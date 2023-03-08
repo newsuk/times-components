@@ -1,12 +1,16 @@
 import React from 'react';
-import { customToNewsKitIcon } from 'newskit';
+import { customToNewsKitIcon, styled } from 'newskit';
 import SearchIcon from './SearchIcon';
 import BurgerIcon from './BurgerIcon';
-import RoundedCloseIcon from './RoundedCloseIcon';
+import RoundedPlusIcon from './RoundedPlusIcon';
 import CloseIcon from './CloseIcon';
 import ChevronIcon from './ChevronIcon';
 import TimesMasthead from './TimesMasthead';
 import SundayTimesMasthead from './SundayTimesMasthead';
+
+const RoundedCloseIcon = styled(RoundedPlusIcon)`
+  transform: rotate(45deg);
+`;
 
 export const NewsKitSearchIcon = customToNewsKitIcon(
   'NewskitSearchIcon',
@@ -18,7 +22,7 @@ export const NewsKitBurgerIcon = customToNewsKitIcon('NewsKitBurger', props => (
 ));
 
 export const NewsKitRoundedCloseIcon = customToNewsKitIcon(
-  'RoundedCloseIcon',
+  'NewsKitRoundedCloseIcon',
   props => <RoundedCloseIcon {...props} />
 );
 
@@ -26,6 +30,7 @@ export const NewsKitCloseIcon = customToNewsKitIcon(
   'NewsKitCloseIcon',
   props => <CloseIcon {...props} />
 );
+
 export const NewsKitChevronIcon = customToNewsKitIcon(
   'NewsKitChevronIcon',
   props => <ChevronIcon {...props} />
