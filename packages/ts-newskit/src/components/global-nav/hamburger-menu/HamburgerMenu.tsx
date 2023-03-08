@@ -17,13 +17,13 @@ const HamburgerMenu: React.FC<{
 
   const onExpand = (slug: string) => setExpandedL1(slug);
 
-  const clickHandler = (title: string) => {
-    if (title === mainNavigation) {
-      return setSelected(mainNavigation);
-    } else {
-      return setSelected(secondaryNavigation);
-    }
-  };
+  const setAccount = () => {
+    return setSelected(secondaryNavigation)
+  }
+
+  const setMain = () => {
+    return setSelected(mainNavigation)
+  }
 
   return (
     <HamburgerMenuNav
@@ -35,7 +35,8 @@ const HamburgerMenu: React.FC<{
       <Visible xs sm>
         <NavButtonSection
           loggedIn={isLoggedIn}
-          handleClick={clickHandler}
+          setAccount={setAccount}
+          setMain={setMain}
           selected={selected}
         />
       </Visible>

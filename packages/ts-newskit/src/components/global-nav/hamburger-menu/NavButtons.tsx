@@ -32,9 +32,10 @@ export const LoggedOutNavButtons = () => (
 );
 
 export const LoggedInNavButtons: React.FC<{
-  handleClick: (title: string) => void;
+  setAccount: () => void;
+  setMain: () => void;
   selected: string;
-}> = ({ handleClick, selected }) => (
+}> = ({ setAccount, setMain, selected }) => (
   <>
     <Block
       paddingInline="space040"
@@ -47,12 +48,12 @@ export const LoggedInNavButtons: React.FC<{
     <HamburgerStyledMenu role="region" aria-label="Navigation Menu">
       <LoggedInMenuItem
         title="Sections"
-        handleClick={handleClick}
+        handleClick={setMain}
         selected={selected}
       />
       <LoggedInMenuItem
         title="My account"
-        handleClick={handleClick}
+        handleClick={setAccount}
         selected={selected}
       />
     </HamburgerStyledMenu>
@@ -61,11 +62,12 @@ export const LoggedInNavButtons: React.FC<{
 
 const NavButtonSection: React.FC<{
   loggedIn?: boolean;
-  handleClick: (title: string) => void;
+  setAccount: () => void;
+  setMain: () => void; 
   selected: string;
-}> = ({ loggedIn, handleClick, selected }) =>
+}> = ({ loggedIn, setAccount, setMain, selected }) =>
   loggedIn ? (
-    <LoggedInNavButtons handleClick={handleClick} selected={selected} />
+    <LoggedInNavButtons setAccount={setAccount} setMain={setMain} selected={selected} />
   ) : (
     <LoggedOutNavButtons />
   );
