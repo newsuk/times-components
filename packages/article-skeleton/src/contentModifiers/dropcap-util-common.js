@@ -48,8 +48,7 @@ const splitNode = node => {
       ]
     };
   }
-  if (children[0].name === "link" && children[0].children[0].length === 0 ) {
-    console.log(children[0].children[0])
+  if (children[0].name === "link" && children[0].children.length === 0) {
     return null;
   }
   const firstChild = splitNode(children[0]);

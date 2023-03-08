@@ -495,8 +495,9 @@ describe("insertDropcapIntoAST", () => {
   });
   it("should NOT insert dropcap if the markup does not contain children", () => {
     const template = "indepth";
-    console.log(JSON.stringify(insertDropcapIntoAST(template)([childWithMarkupNoTextChildren])), 'RESULT')
-    expect(insertDropcapIntoAST(template)([childWithMarkupNoTextChildren])).toEqual(
+    const isDropcapDisabled = false;
+    console.log(JSON.stringify(insertDropcapIntoAST(template, isDropcapDisabled)([childWithMarkupNoTextChildren])), 'RESULT')
+    expect(insertDropcapIntoAST(template, isDropcapDisabled)([childWithMarkupNoTextChildren])).toEqual(
       [childWithMarkupNoTextChildren]
     );
   })
