@@ -1,7 +1,7 @@
 import insertDropcapIntoAST from "../../src/contentModifiers/dropcap-util";
 import { isQuote } from "../../src/contentModifiers/dropcap-util-common";
 
-const childWithMarkupNoTextChildren = {
+const childWithMarkupNoChildren = {
     "name": "paragraph",
     "children": [
       {
@@ -493,12 +493,11 @@ describe("insertDropcapIntoAST", () => {
     const template = "mainstandard";
     expect(insertDropcapIntoAST(template)([child])).toEqual([child]);
   });
-  it("should NOT insert dropcap if the markup does not contain children", () => {
+  it("should NOT insert dropcap if the markup does not contain children even with disableDropcap true", () => {
     const template = "indepth";
     const isDropcapDisabled = false;
-    console.log(JSON.stringify(insertDropcapIntoAST(template, isDropcapDisabled)([childWithMarkupNoTextChildren])), 'RESULT')
-    expect(insertDropcapIntoAST(template, isDropcapDisabled)([childWithMarkupNoTextChildren])).toEqual(
-      [childWithMarkupNoTextChildren]
+    expect(insertDropcapIntoAST(template, isDropcapDisabled)([childWithMarkupNoChildren])).toEqual(
+      [childWithMarkupNoChildren]
     );
   })
 
