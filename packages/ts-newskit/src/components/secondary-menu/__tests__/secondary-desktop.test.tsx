@@ -63,4 +63,13 @@ describe('Secondary Menu Desktop', () => {
     const list = getAllByRole('listitem');
     expect(list.length).toEqual(8);
   });
+  it('should change the width of menudivader when screen size change', () => {
+    (useBreakpointKey as any).mockReturnValue('xl');
+
+    const { getByRole } = render(
+      <SecondaryNavDesktop data={mainMenuItems} options={options} />
+    );
+    const hr = getByRole('hr');
+    expect(hr).toHaveStyle('width: 1140px');
+  });
 });

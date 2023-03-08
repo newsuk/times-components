@@ -231,6 +231,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
   </nav>
   <hr
     class="css-rx56cc"
+    role="hr"
   />
 </DocumentFragment>
 `;
