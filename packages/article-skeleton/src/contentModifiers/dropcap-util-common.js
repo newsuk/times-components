@@ -49,7 +49,6 @@ const splitNode = node => {
     };
   }
   if (children[0].name === "link") {
-    console.log('IM A LINK')
     return null
   }
   const firstChild = splitNode(children[0]);
