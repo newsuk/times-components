@@ -7,10 +7,9 @@ import {
 } from "../styles/article-body/article-link";
 import withTrackEvents from "./article-link-tracking-events";
 
-const ArticleLink = ({ children, target, url, onPress, dropCap }) => {
-  return (
+const ArticleLink = ({ children, target, url, onPress, dropCap }) => (
   <>
-  { children.length === 0 ? (
+    { children.length === 0 ? (
     <Link
     responsiveLinkStyles={linkStyles}
     target={target}
@@ -30,7 +29,7 @@ const ArticleLink = ({ children, target, url, onPress, dropCap }) => {
   }
   </>
   
-)};
+);
 
 ArticleLink.defaultProps = {
   ...Link.defaultProps,
