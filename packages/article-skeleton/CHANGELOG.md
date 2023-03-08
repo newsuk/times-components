@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.95.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.95.15...@times-components/article-skeleton@1.95.16) (2023-03-08)
+
+
+### Bug Fixes
+
+* **TDP-3336:** Allow links to render without text in articles ([#3266](https://github.com/newsuk/times-components/issues/3266)) ([25d48ed](https://github.com/newsuk/times-components/commit/25d48ed1376578939f71de39c6784bbe858f0032))
+
+
+
+
+
 ## [1.95.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.95.14...@times-components/article-skeleton@1.95.15) (2023-03-08)
 
 **Note:** Version bump only for package @times-components/article-skeleton
