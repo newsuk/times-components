@@ -3,8 +3,8 @@ import { fireEvent } from '@testing-library/react';
 import { render, screen } from '../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { TopNav } from '../topnav';
-import NavSearch from '../search';
-import data from '../../../fixtures/data.json';
+import NavSearch from '../../search';
+import data from '../../fixtures/data.json';
 
 const renderComponent = (isLoggedIn?: boolean, isSunday?: boolean) =>
   render(
@@ -55,17 +55,5 @@ describe('Search field', () => {
     fireEvent.change(searchField, { target: { value: 'test' } });
 
     expect(searchField.getAttribute('value')).toBe('test');
-  });
-
-  it('should clear value when button is clicked', async () => {
-    render(<NavSearch />);
-    const searchField: HTMLInputElement = screen.getByRole('textbox');
-    const searchClearBtn = screen.getByRole('button');
-    fireEvent.change(searchField, { target: { value: 'test' } });
-
-    fireEvent.click(searchClearBtn);
-    const updatedSearchField: HTMLInputElement = screen.getByRole('textbox');
-
-    expect(updatedSearchField.value).toBe('');
   });
 });

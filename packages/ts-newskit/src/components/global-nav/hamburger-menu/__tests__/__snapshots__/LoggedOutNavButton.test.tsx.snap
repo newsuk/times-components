@@ -3,12 +3,12 @@
 exports[`LoggedOutNavButton should render the component 1`] = `
 <DocumentFragment>
   <button
-    class="css-f5vstw"
+    class="css-1yh0br7"
     data-testid="button"
     type="button"
   >
     <span
-      class="css-1kfwj8t"
+      class="css-1e6qfd8"
     >
       title
     </span>

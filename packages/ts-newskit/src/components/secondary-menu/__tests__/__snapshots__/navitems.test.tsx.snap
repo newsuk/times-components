@@ -7,12 +7,12 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-pedah3"
+      class="css-kallke"
       data-testid="buttonLink"
       href="/home"
     >
       <span
-        class="css-176g0l8"
+        class="css-1bgi23z"
       >
         Home
       </span>
@@ -23,12 +23,12 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-pedah3"
+      class="css-kallke"
       data-testid="buttonLink"
       href="/news"
     >
       <span
-        class="css-176g0l8"
+        class="css-1bgi23z"
       >
         News
       </span>
@@ -39,12 +39,12 @@ exports[`Navitems Desktop should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-pedah3"
+      class="css-kallke"
       data-testid="buttonLink"
       href="/comment"
     >
       <span
-        class="css-176g0l8"
+        class="css-1bgi23z"
       >
         Comment
       </span>

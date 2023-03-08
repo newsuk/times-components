@@ -14,12 +14,12 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       >
         <a
           aria-current="false"
-          class="css-b53lh0"
+          class="css-py9ney"
           data-testid="buttonLink"
           href="/sport"
         >
           <span
-            class="css-3stwqv"
+            class="css-10nx92p"
           >
             Sport
           </span>
@@ -51,12 +51,12 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       >
         <a
           aria-current="false"
-          class="css-b53lh0"
+          class="css-py9ney"
           data-testid="buttonLink"
           href="/sport/tennis"
         >
           <span
-            class="css-3stwqv"
+            class="css-10nx92p"
           >
             Tennis
           </span>
@@ -88,12 +88,12 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
       >
         <button
           aria-current="page"
-          class="css-u8ldoz"
+          class="css-1sioj94"
           data-testid="button"
           type="button"
         >
           <span
-            class="css-3stwqv"
+            class="css-10nx92p"
           >
             Australian Open
           </span>

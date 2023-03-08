@@ -97,10 +97,9 @@ export const typographyPresets = Object.fromEntries(
       fontFamily: '{{fonts.fontFamily030.fontFamily}}',
       fontSize: '{{fonts.fontSize010}}',
       fontWeight: '{{fonts.fontWeight010}}',
-      lineHeight: '{{fonts.fontLineHeight070}}',
-      letterSpacing: '{{fonts.fontLetterSpacing020}}',
-      fontStretch: 'normal',
-      textAlign: 'center'
+      lineHeight: '{{fonts.fontLineHeight270}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
     },
     breadcrumbText: {
       fontFamily: '{{fonts.fontFamily030.fontFamily}}',
@@ -117,10 +116,7 @@ export const typographyPresets = Object.fromEntries(
         'editorialHeadline030',
         'editorialHeadline060',
         'editorialHeadline070',
-        'editorialHeadline080',
-        'sectionHeader010',
-        'mastheadTime',
-        'breadcrumbText'
+        'editorialHeadline080'
       ].includes(key)
     ) {
       value.lineHeight = '{{fonts.fontLineHeight030}}';

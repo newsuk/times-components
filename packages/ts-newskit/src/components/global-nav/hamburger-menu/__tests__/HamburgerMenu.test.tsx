@@ -1,6 +1,6 @@
 import React from 'react';
 import { fireEvent } from '@testing-library/react';
-import { render } from '../../../utils/test-utils';
+import { render, screen } from '../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import data from '../../__tests__/fixtures/test-data.json';
 
@@ -81,12 +81,6 @@ describe('HamburgerMenu - Logged In', () => {
     expect(getByText('Main Menu 1')).toBeVisible();
     expect(queryByText('Account Menu 1')).toBeFalsy();
   });
-  it('contains the search bar', () => {
-    const { getByPlaceholderText } = render(
-      <HamburgerMenu data={data} isLoggedIn={true} />
-    );
-    expect(getByPlaceholderText('Search times.co.uk')).toBeVisible();
-  });
 });
 
 describe('HamburgerMenu - Logged Out', () => {
@@ -107,10 +101,40 @@ describe('HamburgerMenu - Logged Out', () => {
     expect(getByText('Main Menu 1')).toBeVisible();
     expect(getByText('More 1')).toBeVisible();
   });
+});
+
+describe('Search field', () => {
   it('contains the search bar', () => {
-    const { getByPlaceholderText } = render(
-      <HamburgerMenu data={data} isLoggedIn={false} />
-    );
+    const { getByPlaceholderText } = render(<HamburgerMenu data={data} />);
     expect(getByPlaceholderText('Search times.co.uk')).toBeVisible();
+  });
+
+  it('should update search field value', async () => {
+    render(<HamburgerMenu data={data} />);
+
+    const searchField = screen.getByPlaceholderText('Search times.co.uk');
+
+    fireEvent.change(searchField, {
+      target: { value: 'Test Value' }
+    });
+    expect(searchField.getAttribute('value')).toEqual('Test Value');
+  });
+
+  it('should clear search field when clicked', async () => {
+    render(<HamburgerMenu data={data} />);
+
+    const searchField = screen.getByPlaceholderText('Search times.co.uk');
+
+    fireEvent.change(searchField, {
+      target: { value: 'Test Value' }
+    });
+
+    const clearSearchBtn = screen.getByRole('button', { name: 'Clear search' });
+    expect(searchField).toBeVisible();
+    expect(clearSearchBtn).toBeVisible();
+
+    fireEvent.click(clearSearchBtn);
+
+    expect(searchField.getAttribute('value')).toEqual('');
   });
 });

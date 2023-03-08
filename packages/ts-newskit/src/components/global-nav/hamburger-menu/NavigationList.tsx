@@ -32,6 +32,7 @@ const NavigationList: React.FC<{
                       href={i.url}
                       id={`vertical-sub-${i.slug}`}
                       overrides={{
+                        paddingInlineStart: 'space060',
                         stylePreset: 'menuItemL2',
                         typographyPreset: 'newPreset040'
                       }}

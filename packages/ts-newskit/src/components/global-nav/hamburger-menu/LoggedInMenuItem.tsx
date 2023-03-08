@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextBlock, Button } from 'newskit';
+import { Button } from 'newskit';
 
 const LoggedInMenuItem: React.FC<{
   title: string;
@@ -7,16 +7,19 @@ const LoggedInMenuItem: React.FC<{
   handleClick: (title: string) => void;
 }> = ({ title, handleClick, selected }) => {
   const isSelected = selected === title ? true : false;
+
   return (
     <Button
       overrides={{
+        width: '100%',
+        typographyPreset: 'newPreset040',
         stylePreset: `${
           isSelected ? 'loggedInMenuItemActive' : 'loggedInMenuItem'
         }`
       }}
       onClick={() => handleClick(title)}
     >
-      <TextBlock>{title}</TextBlock>
+      {title}
     </Button>
   );
 };

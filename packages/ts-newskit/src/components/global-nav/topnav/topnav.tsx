@@ -17,7 +17,7 @@ import {
   TopNavHide,
   TopNavIcon
 } from '../styles';
-import NavSearch from './search';
+import NavSearch from '../search';
 
 type TopNavProps = {
   isLoggedIn?: boolean;
@@ -45,10 +45,14 @@ export const TopNav: React.FC<TopNavProps> = ({
     'aria-label': 'The Times &amp; The Sunday Times'
   };
 
-  const NavMasthead = isSunday ? (
-    <NewsKitSundayTimesMasthead {...logoProps} />
-  ) : (
-    <NewsKitTimesMasthead {...logoProps} />
+  const NavMasthead = (
+    <LinkInline href="/" overrides={{ stylePreset: 'menuLogo' }}>
+      {isSunday ? (
+        <NewsKitSundayTimesMasthead {...logoProps} />
+      ) : (
+        <NewsKitTimesMasthead {...logoProps} />
+      )}
+    </LinkInline>
   );
 
   return (
@@ -91,27 +95,19 @@ export const TopNav: React.FC<TopNavProps> = ({
               <NewsKitSearchIcon />
             </TopNavIcon>
             <Divider vertical />
-            {searchActive ? (
-              <NavSearch />
-            ) : (
-              <LinkInline href="/" overrides={{ stylePreset: 'menuLogo' }}>
-                {NavMasthead}
-              </LinkInline>
-            )}
+            {searchActive ? <NavSearch /> : NavMasthead}
             <Divider vertical />
             <Visible lg xl>
               <Menu
                 overrides={{ spaceInline: 'space000' }}
-                aria-label="menu-multiple-auto"
+                aria-label="Main menu"
               >
                 {createMenu(mainMenu)}
               </Menu>
             </Visible>
           </TopNavHide>
           <MastheadMob md lg xl display="flex">
-            <LinkInline href="/" overrides={{ stylePreset: 'menuLogo' }}>
-              {NavMasthead}
-            </LinkInline>
+            {NavMasthead}
           </MastheadMob>
         </Stack>
         <Visible md lg xl>
@@ -127,7 +123,7 @@ export const TopNav: React.FC<TopNavProps> = ({
                 paddingInlineEnd: 'space030',
                 spaceInline: 'space050'
               }}
-              aria-label="menu-multiple-auto"
+              aria-label="Main menu"
             >
               {createMenu(mainMenu)}
             </ScrollMenu>
