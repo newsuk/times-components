@@ -105,12 +105,12 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
               aria-current="false"
               class="css-78mr69"
               data-testid="buttonLink"
-              href="/business-and-money"
+              href="/sport"
             >
               <span
                 class="css-176g0l8"
               >
-                Business & Money
+                Sport
               </span>
             </a>
           </li>
@@ -121,12 +121,12 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
               aria-current="false"
               class="css-78mr69"
               data-testid="buttonLink"
-              href="/sport"
+              href="/business-and-money"
             >
               <span
                 class="css-176g0l8"
               >
-                Sport
+                Business & Money
               </span>
             </a>
           </li>
@@ -189,12 +189,12 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
                         aria-current="false"
                         class="css-1min3iy"
                         data-testid="buttonLink"
-                        href="/magazines"
+                        href="/puzzles"
                       >
                         <span
                           class="css-1x36c5r"
                         >
-                          Magazines
+                          Puzzles
                         </span>
                       </a>
                     </li>
@@ -208,12 +208,12 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
                         aria-current="false"
                         class="css-1min3iy"
                         data-testid="buttonLink"
-                        href="/puzzles"
+                        href="/magazines"
                       >
                         <span
                           class="css-1x36c5r"
                         >
-                          Puzzles
+                          Magazines
                         </span>
                       </a>
                     </li>

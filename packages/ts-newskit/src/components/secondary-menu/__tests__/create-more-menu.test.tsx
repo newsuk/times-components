@@ -55,7 +55,7 @@ describe('Create More Menu', () => {
       />
     );
     const title = getAllByTestId('buttonLink')[0];
-    expect(title).toHaveAttribute('href', '/magazines');
+    expect(title).toHaveAttribute('href', '/puzzles');
   });
 
   it('items should have ancher with href', () => {
