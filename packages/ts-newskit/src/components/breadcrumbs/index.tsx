@@ -8,7 +8,14 @@ export type BreadcrumbsItem = {
 
 export const Breadcrumb: React.FC<{ data: BreadcrumbsItem[] }> = ({ data }) => {
   return (
-    <Breadcrumbs size="small">
+    <Breadcrumbs
+      size="small"
+      overrides={{
+        separator: {
+          stylePreset: 'breadcrumbSeparator'
+        }
+      }}
+    >
       {data.map((breadcrumbItem, breadcrumbIndex, breadcrumbArr) => (
         <BreadcrumbItem
           href={

@@ -19,6 +19,7 @@ const renderComments = ({ enabled }) =>
       onCommentsPress={() => {}}
       commentingConfig={{ account: "sp_pCQgrRiN" }}
       url="dummy-article-url"
+      isCommentEnabled
     />
   );
 
@@ -117,6 +118,7 @@ it("Render comments label, when comments are loaded", () => {
       onCommentsPress={() => {}}
       commentingConfig={{ account: "sp_pCQgrRiN" }}
       url="dummy-article-url"
+      isCommentEnabled
     />
   );
 
@@ -147,6 +149,7 @@ describe("window listeners added", () => {
         onCommentsPress={() => {}}
         commentingConfig={{ account: "sp_pCQgrRiN" }}
         url="dummy-article-url"
+        isCommentEnabled
       />
     );
     expect(Object.keys(listeners)).toMatchSnapshot();

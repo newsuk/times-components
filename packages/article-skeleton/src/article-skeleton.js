@@ -69,7 +69,10 @@ const ArticleSkeleton = ({
     template,
     savingEnabled,
     sharingEnabled,
-    publishedTime
+    publishedTime,
+    isSavingEnabled,
+    isSharingEnabled,
+    isCommentEnabled
   } = article;
 
   const articleContentReducers = [
@@ -94,6 +97,11 @@ const ArticleSkeleton = ({
       name: "related articles"
     }
   ]);
+
+  const isSharingSavingEnabledExternal = isSavingEnabled || isSharingEnabled;
+  const isSharingSavingEnabledByTPA = savingEnabled || sharingEnabled;
+  const isSharingSavingEnabled =
+    isSharingSavingEnabledByTPA && isSharingSavingEnabledExternal;
 
   const isLiveOrBreaking = getIsLiveOrBreakingFlag(expirableFlags);
 
@@ -157,7 +165,7 @@ const ArticleSkeleton = ({
             <MainContainer>
               <HeaderContainer>
                 <Header />
-                {savingEnabled || sharingEnabled ? (
+                {isSharingSavingEnabled ? (
                   <UserState state={UserState.showSaveAndShareBar}>
                     <MessageContext.Consumer>
                       {({ showMessage }) => (
@@ -218,6 +226,8 @@ const ArticleSkeleton = ({
                       }
                       commentingConfig={commentingConfig}
                       topics={topics}
+                      isSharingSavingEnabled={isSharingSavingEnabled}
+                      isCommentEnabled={isCommentEnabled}
                     />
                   )}
                 </LazyLoad>

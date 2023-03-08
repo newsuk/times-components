@@ -15,5 +15,10 @@ export const breadcrumbStylePresets = {
       color: '{{colors.inkContrast}}',
       textDecoration: 'none'
     }
+  },
+  breadcrumbSeparator: {
+    base: {
+      color: '{{colors.inkNonEssential}}'
+    }
   }
 };
