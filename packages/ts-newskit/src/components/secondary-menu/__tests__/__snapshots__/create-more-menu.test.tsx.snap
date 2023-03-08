@@ -19,7 +19,7 @@ exports[`Create More Menu should render snapshot 1`] = `
     </a>
   </li>
   <hr
-    class="css-l9jcpu"
+    class="css-1r4u4vf"
   />
   <li
     class="nk-menu-item css-1kdinep"
@@ -38,7 +38,7 @@ exports[`Create More Menu should render snapshot 1`] = `
     </a>
   </li>
   <hr
-    class="css-l9jcpu"
+    class="css-1r4u4vf"
   />
 </DocumentFragment>
 `;

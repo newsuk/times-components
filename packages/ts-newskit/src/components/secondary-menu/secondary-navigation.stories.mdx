@@ -2,7 +2,7 @@ import { Meta, Story, Canvas } from '@storybook/addon-docs'
 import { NewsKitProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../theme';
 import { SecondaryNavigation } from './index.tsx';
-import { mainMenuItems } from './fixtures/menu-items.json';
+import { mainMenuItems } from '../fixtures/data.json';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 <Meta
@@ -24,7 +24,7 @@ Secondary Navigation
 <Canvas>
   <Story name="Secondary Navigation">
     <NewsKitProvider theme={TimesWebLightTheme}>
-         <SecondaryNavigation data={mainMenuItems[5].items} />
+         <SecondaryNavigation data={mainMenuItems[1].items}/>
     </NewsKitProvider>
   </Story>
 </Canvas>

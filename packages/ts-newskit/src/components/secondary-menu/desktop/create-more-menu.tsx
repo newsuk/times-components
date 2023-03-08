@@ -1,19 +1,18 @@
 import React, { Fragment } from 'react';
 import { MenuItem } from 'newskit';
-import { MenuDividerDesktop } from '../styles';
+import { MenuDividerDropdown } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
-import { getBreakpoint } from '../../utils/getBreakPoint';
 
 export const CreateMoreMenu: React.FC<{
   options: SecondaryMenuOptions;
   data: SecondaryMenuItem[];
-}> = ({ options, data }) => {
+  moreMenuItemsLength: number;
+}> = ({ options, data, moreMenuItemsLength }) => {
   const { handleSelect, isSelected, isExpanded, setIsExpanded } = options;
-  const { moreMenuLength } = getBreakpoint(data);
 
   return (
     <>
-      {data.slice(-moreMenuLength).map(({ title, url }) => (
+      {data.slice(-moreMenuItemsLength).map(({ title, url }) => (
         <Fragment>
           <MenuItem
             href={url}
@@ -29,7 +28,7 @@ export const CreateMoreMenu: React.FC<{
           >
             {title}
           </MenuItem>
-          <MenuDividerDesktop />
+          <MenuDividerDropdown />
         </Fragment>
       ))}
     </>
