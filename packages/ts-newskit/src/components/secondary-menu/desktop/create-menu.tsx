@@ -9,7 +9,6 @@ import {
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
 import { getBreakpoint } from '../../utils/getBreakPoint';
-import { getWidth } from '../../utils/getWidth';
 
 export const CreateMenu: React.FC<{
   options: SecondaryMenuOptions;
@@ -23,6 +22,7 @@ export const CreateMenu: React.FC<{
     moreMenuLength
   );
   const [hasMenuItem, setHasMenuItem] = useState<number>(menuItems);
+  const getWidth = (el: any) => el.clientWidth;
 
   useEffect(
     () => {
@@ -39,9 +39,7 @@ export const CreateMenu: React.FC<{
             ) {
               setMoreMenuItemsLength(moreMenuLength + navAdjustCount);
               setHasMenuItem(menuItems - navAdjustCount);
-              if (navListWidth !== 0 && navListContainerWidth !== 0) {
-                updateNav(navAdjustCount + 1);
-              }
+              updateNav(navAdjustCount + 1);
             }
           }, 1000);
         };
