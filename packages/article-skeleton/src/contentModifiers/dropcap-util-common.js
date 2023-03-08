@@ -48,6 +48,9 @@ const splitNode = node => {
       ]
     };
   }
+  if (children[0].name === "link" && children[0].children.length === 0) {
+    return null;
+  }
   const firstChild = splitNode(children[0]);
   if (firstChild.attributes.dropCap && node.name !== "paragraph") {
     const result = {
