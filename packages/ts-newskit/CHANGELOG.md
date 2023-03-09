@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.4](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.8.0...@times-components/ts-newskit@1.7.4) (2023-03-09)
+
+
+### Bug Fixes
+
+* **TDP-3107:** Simplify hooks and remove from conditional logic ([#3269](https://github.com/newsuk/times-components/issues/3269)) ([e3d80f4](https://github.com/newsuk/times-components/commit/e3d80f40304c9c7370ec494a5f113f36666ffa79))
+
+
+
+
+
 ## [1.7.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.7.2...@times-components/ts-newskit@1.7.3) (2023-03-08)
 
 **Note:** Version bump only for package @times-components/ts-newskit
