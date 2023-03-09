@@ -5,7 +5,7 @@ import NavigationList from './NavigationList';
 import { HamburgerMenuNav } from '../styles';
 import { NavigationData } from '../types';
 
-export const HamburgerMenu: React.FC<{
+const HamburgerMenu: React.FC<{
   isLoggedIn?: boolean;
   data: NavigationData;
 }> = ({ isLoggedIn, data }) => {
@@ -53,3 +53,5 @@ export const HamburgerMenu: React.FC<{
     </HamburgerMenuNav>
   );
 };
+
+export default HamburgerMenu;

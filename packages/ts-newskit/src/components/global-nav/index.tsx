@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { TopNav } from './topnav/topnav';
-import { HamburgerMenu } from './hamburger-menu/HamburgerMenu';
+import HamburgerMenu from './hamburger-menu/HamburgerMenu';
 import { NavigationData } from './types';
 import { HamburgerMenuContainer } from './styles';
 
