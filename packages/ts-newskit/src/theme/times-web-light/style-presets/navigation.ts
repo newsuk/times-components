@@ -31,7 +31,7 @@ export const navStylePresets = {
   },
   buttonTopNavActive: {
     base: {
-      backgroundColor: '{{colors.interfaceNeutral010}}'
+      backgroundColor: '#222222'
     }
   },
   menuLogo: {

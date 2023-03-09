@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { fireEvent } from '@testing-library/react';
 import { render } from '../../../utils/test-utils';
 
-const handleClick = jest.fn();
+const setSelected = jest.fn();
 
 import LoggedInMenuItem from '../LoggedInMenuItem';
 
@@ -12,7 +12,7 @@ describe('Logged in Menu Item', () => {
     const { asFragment } = render(
       <LoggedInMenuItem
         title="title"
-        handleClick={handleClick}
+        setSelected={setSelected}
         selected="not title"
       />
     );
@@ -22,7 +22,7 @@ describe('Logged in Menu Item', () => {
     const { getByRole } = render(
       <LoggedInMenuItem
         title="title"
-        handleClick={handleClick}
+        setSelected={setSelected}
         selected="not title"
       />
     );
@@ -32,23 +32,23 @@ describe('Logged in Menu Item', () => {
     const { getByRole } = render(
       <LoggedInMenuItem
         title="title"
-        handleClick={handleClick}
+        setSelected={setSelected}
         selected="title"
       />
     );
     expect(getByRole('button')).toHaveStyle('color: #FFFFFF');
     expect(getByRole('button')).toHaveStyle('border-bottom: 2px solid #FFFFFF');
   });
-  it('should call handleClick when clicked', () => {
+  it('should call setSelected when clicked', () => {
     const { getByRole } = render(
       <LoggedInMenuItem
         title="title"
-        handleClick={handleClick}
+        setSelected={setSelected}
         selected="title"
       />
     );
     const Button = getByRole('button');
     fireEvent.click(Button);
-    expect(handleClick).toHaveBeenCalled();
+    expect(setSelected).toHaveBeenCalled();
   });
 });

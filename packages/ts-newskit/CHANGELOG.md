@@ -3,17 +3,6 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.7.3...@times-components/ts-newskit@1.8.0) (2023-03-09)
-
-
-### Features
-
-* **TDP-3291:** export TopNav and HamburgerMenu ([#3268](https://github.com/newsuk/times-components/issues/3268)) ([27acea4](https://github.com/newsuk/times-components/commit/27acea4b3594833f4e9f866a5c6ceaa88e6e3123))
-
-
-
-
-
 ## [1.7.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.7.2...@times-components/ts-newskit@1.7.3) (2023-03-08)
 
 **Note:** Version bump only for package @times-components/ts-newskit

@@ -5,25 +5,14 @@ import NavigationList from './NavigationList';
 import { HamburgerMenuNav } from '../styles';
 import { NavigationData } from '../types';
 
-export const HamburgerMenu: React.FC<{
+const HamburgerMenu: React.FC<{
   isLoggedIn?: boolean;
   data: NavigationData;
 }> = ({ isLoggedIn, data }) => {
   const mainNavigation = 'Sections';
-  const secondaryNavigation = 'My account';
 
   const [expandedL1, setExpandedL1] = useState<string>('');
   const [selected, setSelected] = useState(mainNavigation);
-
-  const onExpand = (slug: string) => setExpandedL1(slug);
-
-  const clickHandler = (title: string) => {
-    if (title === mainNavigation) {
-      return setSelected(mainNavigation);
-    } else {
-      return setSelected(secondaryNavigation);
-    }
-  };
 
   return (
     <HamburgerMenuNav
@@ -35,7 +24,7 @@ export const HamburgerMenu: React.FC<{
       <Visible xs sm>
         <NavButtonSection
           loggedIn={isLoggedIn}
-          handleClick={clickHandler}
+          setSelected={setSelected}
           selected={selected}
         />
       </Visible>
@@ -45,7 +34,7 @@ export const HamburgerMenu: React.FC<{
             ? data.mainMenuItems
             : data.accountMenuItems
         }
-        onExpand={onExpand}
+        onExpand={setExpandedL1}
         expandedL1={expandedL1}
       />
       {selected === mainNavigation ? (
@@ -64,3 +53,5 @@ export const HamburgerMenu: React.FC<{
     </HamburgerMenuNav>
   );
 };
+
+export default HamburgerMenu;
