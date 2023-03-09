@@ -12,13 +12,13 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
       role="list"
     >
       <div
-        class="css-eoq587"
+        class="css-1rgm3vu"
       >
         <div
-          class="css-1eave7u"
+          class="css-3ae6t8"
         >
           <p
-            class="css-11f4rbf"
+            class="css-14vx0gz"
           >
             Home
           </p>
@@ -28,12 +28,12 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
         >
           <button
             aria-expanded="false"
-            class="css-qa8sb4"
+            class="css-i6zo4w"
             data-testid="menu-sub-button"
             type="button"
           >
             <span
-              class="css-9c0528"
+              class="css-1jsivz"
             >
               See all
             </span>
@@ -76,13 +76,13 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is not e
       role="list"
     >
       <div
-        class="css-eoq587"
+        class="css-1rgm3vu"
       >
         <div
-          class="css-1eave7u"
+          class="css-3ae6t8"
         >
           <p
-            class="css-11f4rbf"
+            class="css-14vx0gz"
           >
             Home
           </p>
@@ -92,12 +92,12 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is not e
         >
           <button
             aria-expanded="false"
-            class="css-qa8sb4"
+            class="css-i6zo4w"
             data-testid="menu-sub-button"
             type="button"
           >
             <span
-              class="css-9c0528"
+              class="css-1jsivz"
             >
               See all
             </span>
