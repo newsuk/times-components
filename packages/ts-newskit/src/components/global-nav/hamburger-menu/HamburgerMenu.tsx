@@ -9,7 +9,7 @@ export const HamburgerMenu: React.FC<{
   isLoggedIn?: boolean;
   data: NavigationData;
 }> = ({ isLoggedIn, data }) => {
-  const mainNavigation = 'Sections'
+  const mainNavigation = 'Sections';
 
   const [expandedL1, setExpandedL1] = useState<string>('');
   const [selected, setSelected] = useState(mainNavigation);
