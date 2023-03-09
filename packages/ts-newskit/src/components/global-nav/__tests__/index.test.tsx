@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
-import data from '../../fixtures/data.json';
+import data from '../fixtures/data.json';
 import { GlobalNav } from '../index';
 
 const renderComponent = (isLoggedIn?: boolean) =>

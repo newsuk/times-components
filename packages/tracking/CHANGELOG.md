@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.18.1](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.18.0...@times-components/tracking@2.18.1) (2023-03-08)
+
+
+### Bug Fixes
+
+* **TDP-3304:** secondary navigation desktop design optimisation ([#3263](https://github.com/newsuk/times-components/issues/3263)) ([cae2ed9](https://github.com/newsuk/times-components/commit/cae2ed9c4c64880b66fe5c2ba3c86266eca17b57))
+
+
+
+
+
 # [2.18.0](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.17.0...@times-components/tracking@2.18.0) (2023-02-24)
 
 

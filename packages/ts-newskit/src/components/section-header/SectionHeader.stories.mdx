@@ -1,27 +1,32 @@
-import { Meta, Story, Canvas } from '@storybook/addon-docs';
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { TCThemeProvider } from '../utils/TCThemeProvider';
 import { SectionHeader } from "./index";
-import { text } from '@storybook/addon-knobs';
 
-import { ThemeProvider } from 'newskit';
-import { TimesWebLightTheme } from '../../theme';
+<Meta
+  title="Newskit/Section Header"
+  component={SectionHeader}
+/>
 
-<Meta title="Newskit/Section Header" component={SectionHeader} />
+# SectionHeader component
+The `SectionHeader` component is used to display section titles across the Times website.
 
-# Section Title component
-Simple Framework for displaying section titles, the fixed test is to show that special characters are rendered properly.
+This takes in a `title` prop, as below, to display the correct text for the associated section.
 
-<Canvas>
-  <Story name="Section Header">
-    <ThemeProvider theme={TimesWebLightTheme}>
-      <SectionHeader title={text('Title', 'News')} />
-    </ThemeProvider>
-  </Story>
-</Canvas>
+## Props
+<Props of={SectionHeader} />
 
-<Canvas>
-  <Story name="Fixed Section Header">
-    <ThemeProvider theme={TimesWebLightTheme}>
-      <SectionHeader title={'Bricks & Mortar'} />
-    </ThemeProvider>
-  </Story>
-</Canvas>
+## Code Example
+`<SectionHeader title='Title' />`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can review and configure with different titles.
+
+export const SectionHeaderStory = ({ title }) => (
+  <TCThemeProvider>
+    <SectionHeader {...{ title }} />
+  </TCThemeProvider>
+);
+
+<Story name="SectionHeader" args={{ title: 'Section Title' }}>
+  {SectionHeaderStory.bind({})}
+</Story>

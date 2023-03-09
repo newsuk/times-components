@@ -17,6 +17,7 @@ describe('<TCThemeProvider>', () => {
 
     expect(asFragment()).toMatchSnapshot();
   });
+
   it('should wrap child components with theme and pass styling', () => {
     renderComponent();
 
@@ -24,8 +25,8 @@ describe('<TCThemeProvider>', () => {
 
     expect(title).toHaveStyle({
       font: 'inherit',
-      display: 'inline-block',
-      paddingBottom: '0.8rem'
+      display: 'inline',
+      margin: '0'
     });
   });
 });

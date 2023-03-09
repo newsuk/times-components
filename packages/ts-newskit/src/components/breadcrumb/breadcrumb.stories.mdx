@@ -1,0 +1,35 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { TCThemeProvider } from '../utils/TCThemeProvider';
+import { Breadcrumb } from './index.tsx';
+import { breadcrumbItems } from './fixtures/breadcrumbs.json';
+
+<Meta
+  title="Newskit/Breadcrumb"
+  component={Breadcrumb}
+/>
+
+# Breadcrumb component
+The `Breadcrumb` component displays your hierarchical position on the website.
+
+This takes in a `data` prop, as below, to display the links in their order within the data object.
+
+## Props
+<Props of={Breadcrumb} />
+
+## Code Example
+`<Breadcrumb data={data} />`
+
+An example of the `data` structure can be found in the 'Controls' section on the 'Canvas' tab, where you can customise the data being fed to the Breadcrumb component.
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can updatte the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, LG and XL).
+
+export const BreadcrumbStory = ({ data }) => (
+  <TCThemeProvider>
+    <Breadcrumb {...{ data }} />
+  </TCThemeProvider>
+);
+
+<Story name="Breadcrumb" args={{ data: breadcrumbItems }}>
+  {BreadcrumbStory.bind({})}
+</Story>

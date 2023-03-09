@@ -8,6 +8,13 @@ import {
 } from 'newskit';
 import { AccountMenu } from '../styles';
 
+const menuItemPresets = {
+  minHeight: '60px',
+  minWidth: '0',
+  stylePreset: 'menuItem',
+  typographyPreset: 'topNav010'
+};
+
 export const createMenu = (menuData: any) => {
   const breakpointKey = useBreakpointKey();
   const [moreSelected, setMoreSelected] = useState<boolean>(false);
@@ -15,18 +22,19 @@ export const createMenu = (menuData: any) => {
   const menuItems = breakpointKey === 'lg' ? 4 : menuData.length;
   const menuStyle =
     breakpointKey === 'xs' || breakpointKey === 'sm'
-      ? 'menuItemScroll'
-      : 'menuItem';
+      ? {
+          minWidth: '0',
+          paddingBlock: 'space030',
+          stylePreset: 'menuItemScroll',
+          typographyPreset: 'topNav010'
+        }
+      : menuItemPresets;
 
   const moreMenuLength = menuData.length - menuItems;
   const navItems = menuData
     .slice(0, menuItems)
     .map(({ title, url }: { title: string; url: string }) => (
-      <MenuItem
-        href={url}
-        overrides={{ stylePreset: menuStyle, typographyPreset: 'topNav010' }}
-        key={url}
-      >
+      <MenuItem href={url} overrides={menuStyle} key={url}>
         {title}
       </MenuItem>
     ));
@@ -40,9 +48,8 @@ export const createMenu = (menuData: any) => {
         selected={moreSelected}
         expanded={moreSelected}
         overrides={{
-          stylePreset: 'menuItem',
-          list: { stylePreset: 'moreSubMenu' },
-          typographyPreset: 'topNav010'
+          ...menuItemPresets,
+          list: { stylePreset: 'moreSubMenu' }
         }}
         data-testid="more-sub-menu"
       >
@@ -85,7 +92,9 @@ export const createAccountMenu = (isLoggedIn: boolean, menuData: any) => {
       <MenuDivider />
       <MenuItem
         href="/times-plus"
-        overrides={{ stylePreset: 'menuItem', typographyPreset: 'topNav010' }}
+        overrides={{
+          ...menuItemPresets
+        }}
       >
         Times +
       </MenuItem>
@@ -96,9 +105,8 @@ export const createAccountMenu = (isLoggedIn: boolean, menuData: any) => {
         selected={myAccountSelected}
         expanded={myAccountSelected}
         overrides={{
-          stylePreset: 'menuItem',
-          list: { stylePreset: 'moreSubMenu' },
-          typographyPreset: 'topNav010'
+          ...menuItemPresets,
+          list: { stylePreset: 'moreSubMenu' }
         }}
         data-testid="more-sub-menu"
       >
@@ -130,10 +138,7 @@ export const createAccountMenu = (isLoggedIn: boolean, menuData: any) => {
       aria-label="My Account Menu"
     >
       <MenuDivider />
-      <MenuItem
-        href="/login"
-        overrides={{ stylePreset: 'menuItem', typographyPreset: 'topNav010' }}
-      >
+      <MenuItem href="/login" overrides={{ ...menuItemPresets }}>
         Login
       </MenuItem>
       <MenuDivider />

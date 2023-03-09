@@ -16,6 +16,8 @@ const options = {
   isExpanded: false,
   isSelected: 'true'
 };
+
+const hasMenuItem = 3;
 describe('Navitems Desktop', () => {
   afterEach(() => {
     jest.clearAllMocks();
@@ -25,20 +27,32 @@ describe('Navitems Desktop', () => {
   it('should render snapshot', () => {
     (useBreakpointKey as any).mockReturnValue('md');
     const { asFragment } = render(
-      <NavItems data={mainMenuItems} options={options} />
+      <NavItems
+        data={mainMenuItems}
+        options={options}
+        hasMenuItem={hasMenuItem}
+      />
     );
     expect(asFragment()).toMatchSnapshot();
   });
   it('should render the menu item', () => {
     const { getByText } = render(
-      <NavItems data={mainMenuItems} options={options} />
+      <NavItems
+        data={mainMenuItems}
+        options={options}
+        hasMenuItem={hasMenuItem}
+      />
     );
     const title = getByText('Home');
     expect(title).toBeInTheDocument();
   });
   it('items should have ancher with href', () => {
     const { getAllByTestId } = render(
-      <NavItems data={mainMenuItems} options={options} />
+      <NavItems
+        data={mainMenuItems}
+        options={options}
+        hasMenuItem={hasMenuItem}
+      />
     );
     const title = getAllByTestId('buttonLink')[0];
     expect(title).toHaveAttribute('href', '/home');
@@ -46,7 +60,11 @@ describe('Navitems Desktop', () => {
 
   it('items should have ancher with href', () => {
     const { getAllByTestId } = render(
-      <NavItems data={mainMenuItems} options={options} />
+      <NavItems
+        data={mainMenuItems}
+        options={options}
+        hasMenuItem={hasMenuItem}
+      />
     );
     const title = getAllByTestId('buttonLink')[0];
     fireEvent.click(title);

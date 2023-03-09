@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ts-newskit",
-  "version": "1.7.1",
+  "version": "1.7.3",
   "description": "Reuseable Typescript React Components",
   "main": "dist/index.js",
   "dev": "dist/index.js",
@@ -52,7 +52,7 @@
   "dependencies": {
     "@emotion/react": "11.10.0",
     "@emotion/styled": "11.10.0",
-    "newskit": "6.9.0",
+    "newskit": "7.0.0",
     "react": "16.9.0"
   },
   "devDependencies": {

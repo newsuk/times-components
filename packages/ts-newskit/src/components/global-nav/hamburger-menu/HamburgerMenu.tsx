@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { MenuDivider, Block, Visible, TextBlock } from 'newskit';
 import NavButtonSection from './NavButtons';
 import NavigationList from './NavigationList';
-import { MenuNav } from './styles';
+import { HamburgerMenuNav } from '../styles';
 import { NavigationData } from '../types';
 
 const HamburgerMenu: React.FC<{
@@ -26,7 +26,7 @@ const HamburgerMenu: React.FC<{
   };
 
   return (
-    <MenuNav
+    <HamburgerMenuNav
       aria-label="menu-vertical"
       vertical
       align="spaceBetween"
@@ -61,7 +61,7 @@ const HamburgerMenu: React.FC<{
           <NavigationList data={data.moreMenuItems} />
         </>
       ) : null}
-    </MenuNav>
+    </HamburgerMenuNav>
   );
 };
 
