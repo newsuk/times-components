@@ -13,7 +13,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
         aria-controls="hamburgerMenu"
         aria-expanded="false"
         aria-label="Open Menu"
-        class="css-1704mz3"
+        class="css-17yp3v1"
         data-testid="button"
         type="button"
       >
@@ -43,7 +43,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
           aria-controls="searchTimes"
           aria-expanded="false"
           aria-label="Open Search"
-          class="css-1704mz3"
+          class="css-17yp3v1"
           data-testid="button"
           type="button"
         >
@@ -177,12 +177,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/home"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Home
                   </span>
@@ -192,12 +192,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/news"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     News
                   </span>
@@ -207,12 +207,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/comment"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Comment
                   </span>
@@ -222,12 +222,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Life & Style
                   </span>
@@ -237,12 +237,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Arts & Books
                   </span>
@@ -252,12 +252,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/sport"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Sport
                   </span>
@@ -267,12 +267,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Business & Money
                   </span>
@@ -282,12 +282,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Puzzles
                   </span>
@@ -297,12 +297,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Magazines
                   </span>
@@ -434,12 +434,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
             class="nk-menu-item css-1qhmdz3"
           >
             <a
-              class="css-6qmzmp"
+              class="css-gyyvog"
               data-testid="buttonLink"
               href="/times-plus"
             >
               <span
-                class="css-b265mf"
+                class="css-1a1cw23"
               >
                 Times +
               </span>
@@ -461,12 +461,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
           >
             <button
               aria-expanded="false"
-              class="css-bvcuob"
+              class="css-1qh1q9o"
               data-testid="menu-sub-button"
               type="button"
             >
               <span
-                class="css-b265mf"
+                class="css-1a1cw23"
               >
                 My Account
               </span>
@@ -503,12 +503,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-16y9yzr"
                       data-testid="buttonLink"
                       href="/account"
                     >
                       <span
-                        class="css-b265mf"
+                        class="css-1a1cw23"
                       >
                         Manage account
                       </span>
@@ -518,12 +518,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-16y9yzr"
                       data-testid="buttonLink"
                       href="/change-password"
                     >
                       <span
-                        class="css-b265mf"
+                        class="css-1a1cw23"
                       >
                         Change password
                       </span>
@@ -533,12 +533,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-16y9yzr"
                       data-testid="buttonLink"
                       href="/my-newsletters"
                     >
                       <span
-                        class="css-b265mf"
+                        class="css-1a1cw23"
                       >
                         My Newsletters
                       </span>
@@ -548,12 +548,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-16y9yzr"
                       data-testid="buttonLink"
                       href="/my-articles"
                     >
                       <span
-                        class="css-b265mf"
+                        class="css-1a1cw23"
                       >
                         My articles
                       </span>
@@ -563,12 +563,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-16y9yzr"
                       data-testid="buttonLink"
                       href="/contact-us"
                     >
                       <span
-                        class="css-b265mf"
+                        class="css-1a1cw23"
                       >
                         Contact us
                       </span>
@@ -578,12 +578,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-16y9yzr"
                       data-testid="buttonLink"
                       href="/log-out"
                     >
                       <span
-                        class="css-b265mf"
+                        class="css-1a1cw23"
                       >
                         Log out
                       </span>
@@ -624,12 +624,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/home"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Home
                   </span>
@@ -639,12 +639,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/news"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     News
                   </span>
@@ -654,12 +654,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/comment"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Comment
                   </span>
@@ -669,12 +669,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Life & Style
                   </span>
@@ -684,12 +684,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Arts & Books
                   </span>
@@ -699,12 +699,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/sport"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Sport
                   </span>
@@ -714,12 +714,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Business & Money
                   </span>
@@ -729,12 +729,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Puzzles
                   </span>
@@ -744,12 +744,12 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Magazines
                   </span>
@@ -782,7 +782,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
         aria-controls="hamburgerMenu"
         aria-expanded="false"
         aria-label="Open Menu"
-        class="css-1704mz3"
+        class="css-17yp3v1"
         data-testid="button"
         type="button"
       >
@@ -812,7 +812,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
           aria-controls="searchTimes"
           aria-expanded="false"
           aria-label="Open Search"
-          class="css-1704mz3"
+          class="css-17yp3v1"
           data-testid="button"
           type="button"
         >
@@ -946,12 +946,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/home"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Home
                   </span>
@@ -961,12 +961,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/news"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     News
                   </span>
@@ -976,12 +976,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/comment"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Comment
                   </span>
@@ -991,12 +991,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Life & Style
                   </span>
@@ -1006,12 +1006,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Arts & Books
                   </span>
@@ -1021,12 +1021,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/sport"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Sport
                   </span>
@@ -1036,12 +1036,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Business & Money
                   </span>
@@ -1051,12 +1051,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Puzzles
                   </span>
@@ -1066,12 +1066,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Magazines
                   </span>
@@ -1203,12 +1203,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
             class="nk-menu-item css-1qhmdz3"
           >
             <a
-              class="css-6qmzmp"
+              class="css-gyyvog"
               data-testid="buttonLink"
               href="/login"
             >
               <span
-                class="css-b265mf"
+                class="css-1a1cw23"
               >
                 Login
               </span>
@@ -1229,12 +1229,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
             class="nk-menu-item css-1qhmdz3"
           >
             <a
-              class="css-a3b9wc"
+              class="css-oz0cq0"
               data-testid="buttonLink"
               href="/"
             >
               <span
-                class="css-b265mf"
+                class="css-1a1cw23"
               >
                 Subscribe
               </span>
@@ -1271,12 +1271,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/home"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Home
                   </span>
@@ -1286,12 +1286,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/news"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     News
                   </span>
@@ -1301,12 +1301,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/comment"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Comment
                   </span>
@@ -1316,12 +1316,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Life & Style
                   </span>
@@ -1331,12 +1331,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Arts & Books
                   </span>
@@ -1346,12 +1346,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/sport"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Sport
                   </span>
@@ -1361,12 +1361,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Business & Money
                   </span>
@@ -1376,12 +1376,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Puzzles
                   </span>
@@ -1391,12 +1391,12 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-regc7m"
+                  class="css-qsmj82"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-1a1cw23"
                   >
                     Magazines
                   </span>
