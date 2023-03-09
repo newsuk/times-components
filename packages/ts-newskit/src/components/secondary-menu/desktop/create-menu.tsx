@@ -1,11 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { MenuSub, Menu } from 'newskit';
 import { MenuContainer, Container, Wrapper, MainMenu } from '../styles';
-import {
-  SecondaryMenuOptions,
-  SecondaryMenuItem,
-  seeAllButtonWidth
-} from '../types';
+import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
 import { getBreakpoint } from '../../utils/getBreakPoint';
@@ -15,14 +11,12 @@ export const CreateMenu: React.FC<{
   data: SecondaryMenuItem[];
 }> = ({ options, data }) => {
   const contanierRef = useRef<HTMLDivElement>(null);
-  const navListRef = useRef<HTMLDivElement>(null);
   const { isExpanded, setIsExpanded } = options;
   const { moreMenuLength, menuItems, breakpointKey } = getBreakpoint(data);
   const [moreMenuItemsLength, setMoreMenuItemsLength] = useState<number>(
     moreMenuLength
   );
   const [hasMenuItem, setHasMenuItem] = useState<number>(menuItems);
-  const getWidth = (el: any) => el.clientWidth;
 
   useEffect(
     () => {
@@ -31,17 +25,19 @@ export const CreateMenu: React.FC<{
         setHasMenuItem(menuItems);
         const updateNav = (navAdjustCount = 1) => {
           setTimeout(() => {
-            const navListContainerWidth = getWidth(contanierRef.current);
-            const navListWidth = getWidth(navListRef.current);
-            if (
-              navListWidth >
-              navListContainerWidth - seeAllButtonWidth[breakpointKey]
-            ) {
-              setMoreMenuItemsLength(moreMenuLength + navAdjustCount);
-              setHasMenuItem(menuItems - navAdjustCount);
-              updateNav(navAdjustCount + 1);
+            let elem = document.getElementById('navItems');
+            let elementProp = elem && elem.getBoundingClientRect();
+            if (elementProp) {
+              if (
+                (elementProp.width > 575 && breakpointKey === 'md') ||
+                (elementProp.width > 830 && breakpointKey === 'lg')
+              ) {
+                setMoreMenuItemsLength(moreMenuLength + navAdjustCount);
+                setHasMenuItem(menuItems - navAdjustCount);
+                updateNav(navAdjustCount + 1);
+              }
             }
-          }, 1000);
+          });
         };
         updateNav();
       }
@@ -77,7 +73,7 @@ export const CreateMenu: React.FC<{
       }}
     >
       <Container ref={contanierRef} moreMenuItemsLength={moreMenuItemsLength}>
-        <Wrapper ref={navListRef} data-testid="navitems-test-id">
+        <Wrapper id="navItems" data-testid="navitems-test-id">
           <NavItems data={data} options={options} hasMenuItem={hasMenuItem} />
         </Wrapper>
         {moreMenuItemsLength > 0 && (

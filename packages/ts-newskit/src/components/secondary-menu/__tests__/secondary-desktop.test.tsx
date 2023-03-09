@@ -54,7 +54,7 @@ describe('Secondary Menu Desktop', () => {
     expect(options.handleSelect).toHaveBeenCalled();
   });
 
-  it('should call handleSelect when clicked', () => {
+  it('should render navitems', () => {
     (useBreakpointKey as any).mockReturnValue('md');
 
     const { getAllByRole } = render(

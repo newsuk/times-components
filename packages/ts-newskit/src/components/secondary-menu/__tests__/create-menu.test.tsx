@@ -45,4 +45,20 @@ describe('Create Menu', () => {
     fireEvent.click(seeAllButton);
     expect(options.setIsExpanded).toHaveBeenCalled();
   });
+  it('should render correct navitems', () => {
+    (useBreakpointKey as any).mockReturnValue('md');
+    const { getAllByRole } = render(
+      <CreateMenu data={mainMenuItems} options={options} />
+    );
+    const list = getAllByRole('listitem');
+    expect(list.length).toEqual(10);
+  });
+  it('should render correct navitems', async () => {
+    (useBreakpointKey as any).mockReturnValue('lg');
+    const { getAllByRole } = render(
+      <CreateMenu data={mainMenuItems} options={options} />
+    );
+    const list = getAllByRole('listitem');
+    expect(list.length).toEqual(9);
+  });
 });
