@@ -7,3 +7,7 @@ export {
 } from './components/global-nav/hamburger-menu/HamburgerMenu';
 export { EditionMasthead } from './components/masthead';
 export { SectionHeader } from './components/section-header/';
+export {
+  WrappedHamburger,
+  WrappedGlobalNav
+} from './components/global-nav/wrapped-components/WrappedComponents';
