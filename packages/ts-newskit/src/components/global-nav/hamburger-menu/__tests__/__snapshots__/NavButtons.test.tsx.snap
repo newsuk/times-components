@@ -4,11 +4,11 @@ exports[`NavButtons Logged In should render the component 1`] = `
 <DocumentFragment>
   <div
     aria-label="Search Bar"
-    class="css-1l9jkg9"
+    class="css-nang7u"
     role="region"
   >
     <div
-      class="css-19372ym"
+      class="css-93pna7"
     >
       <div
         class="css-wjzosl"
@@ -30,7 +30,7 @@ exports[`NavButtons Logged In should render the component 1`] = `
       </div>
       <input
         aria-describedby="searchTimesLabel"
-        class="css-1rqbdih"
+        class="css-pvilfn"
         placeholder="Search times.co.uk"
         type="text"
         value=""
@@ -53,23 +53,23 @@ exports[`NavButtons Logged In should render the component 1`] = `
       role="list"
     >
       <button
-        class="css-a2eeyv"
+        class="css-g6ka6m"
         data-testid="button"
         type="button"
       >
         <span
-          class="css-176g0l8"
+          class="css-1bgi23z"
         >
           Sections
         </span>
       </button>
       <button
-        class="css-a2eeyv"
+        class="css-g6ka6m"
         data-testid="button"
         type="button"
       >
         <span
-          class="css-176g0l8"
+          class="css-1bgi23z"
         >
           My account
         </span>
@@ -83,33 +83,33 @@ exports[`NavButtons Logged Out should render the component 1`] = `
 <DocumentFragment>
   <div
     aria-label="Navigation Menu"
-    class="css-1lbbsbz"
+    class="css-1q6m5b0"
     role="region"
   >
     <div
       class="css-14f0ndj"
     >
       <button
-        class="css-10we811"
+        class="css-55uab"
         data-testid="button"
         type="button"
       >
         <span
-          class="css-1kfwj8t"
+          class="css-1e6qfd8"
         >
           Log in
         </span>
       </button>
       <div
-        class="css-rl9h2w"
+        class="css-b6vv9c"
       />
       <button
-        class="css-kzf3cw"
+        class="css-1yh0br7"
         data-testid="button"
         type="button"
       >
         <span
-          class="css-1kfwj8t"
+          class="css-1e6qfd8"
         >
           Subscribe
         </span>
@@ -118,11 +118,11 @@ exports[`NavButtons Logged Out should render the component 1`] = `
   </div>
   <div
     aria-label="Search Bar"
-    class="css-1djk6be"
+    class="css-w3cs1x"
     role="region"
   >
     <div
-      class="css-19372ym"
+      class="css-93pna7"
     >
       <div
         class="css-wjzosl"
@@ -144,7 +144,7 @@ exports[`NavButtons Logged Out should render the component 1`] = `
       </div>
       <input
         aria-describedby="searchTimesLabel"
-        class="css-1rqbdih"
+        class="css-pvilfn"
         placeholder="Search times.co.uk"
         type="text"
         value=""

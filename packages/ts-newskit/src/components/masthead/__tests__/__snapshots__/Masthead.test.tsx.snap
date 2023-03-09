@@ -3,20 +3,20 @@
 exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
 <DocumentFragment>
   <header
-    class="css-30qa7x"
+    class="css-13byt3y"
   >
     <div
       class="css-11l110t"
     >
       <div
-        class="css-1ekphgi"
+        class="css-3wh6qj"
       >
         <span
           class="css-13791zy"
           id="sr-times-logo"
         >
           <section
-            class="css-uydri7"
+            class="css-1c70wx0"
           >
             <h1
               class="nk-headline-heading css-1spnxj1"
@@ -30,13 +30,13 @@ exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
           data-testid="date-time"
         >
           <span
-            class="css-zq3fyt"
+            class="css-qozwmz"
           >
             Sunday February 26 2023 
           </span>
         </time>
         <div
-          class="css-30qa7x"
+          class="css-13byt3y"
         >
           <a
             aria-labelledby="sr-times-logo"
@@ -127,20 +127,20 @@ exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
 exports[`EditionMasthead should render The Times masthead 1`] = `
 <DocumentFragment>
   <header
-    class="css-30qa7x"
+    class="css-13byt3y"
   >
     <div
       class="css-11l110t"
     >
       <div
-        class="css-1ekphgi"
+        class="css-3wh6qj"
       >
         <span
           class="css-13791zy"
           id="sr-times-logo"
         >
           <section
-            class="css-uydri7"
+            class="css-1c70wx0"
           >
             <h1
               class="nk-headline-heading css-1spnxj1"
@@ -154,13 +154,13 @@ exports[`EditionMasthead should render The Times masthead 1`] = `
           data-testid="date-time"
         >
           <span
-            class="css-zq3fyt"
+            class="css-qozwmz"
           >
             Wednesday February 22 2023 
           </span>
         </time>
         <div
-          class="css-30qa7x"
+          class="css-13byt3y"
         >
           <a
             aria-labelledby="sr-times-logo"
