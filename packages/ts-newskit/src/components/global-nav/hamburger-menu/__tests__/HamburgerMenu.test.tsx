@@ -4,7 +4,7 @@ import { render, screen } from '../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import data from '../../__tests__/fixtures/test-data.json';
 
-import HamburgerMenu from '../HamburgerMenu';
+import { HamburgerMenu } from '../HamburgerMenu';
 
 describe('HamburgerMenu', () => {
   it('should render the component', () => {
