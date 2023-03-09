@@ -3,14 +3,14 @@ import '@testing-library/jest-dom';
 import { render } from '../../../utils/test-utils';
 import NavButtonSection from '../NavButtons';
 
-const handleClick = jest.fn();
+const setSelected = jest.fn();
 
 describe('NavButtons Logged In', () => {
   it('should render the component', () => {
     const { asFragment } = render(
       <NavButtonSection
         loggedIn={true}
-        handleClick={handleClick}
+        setSelected={setSelected}
         selected="selected"
       />
     );
@@ -20,7 +20,7 @@ describe('NavButtons Logged In', () => {
     const { getAllByRole } = render(
       <NavButtonSection
         loggedIn={true}
-        handleClick={handleClick}
+        setSelected={setSelected}
         selected="selected"
       />
     );
@@ -34,7 +34,7 @@ describe('NavButtons Logged Out', () => {
     const { asFragment } = render(
       <NavButtonSection
         loggedIn={false}
-        handleClick={handleClick}
+        setSelected={setSelected}
         selected="selected"
       />
     );
@@ -44,7 +44,7 @@ describe('NavButtons Logged Out', () => {
     const { getAllByRole } = render(
       <NavButtonSection
         loggedIn={false}
-        handleClick={handleClick}
+        setSelected={setSelected}
         selected="selected"
       />
     );
