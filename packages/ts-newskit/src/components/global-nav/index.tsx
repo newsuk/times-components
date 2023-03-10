@@ -12,6 +12,12 @@ interface GlobalNavProps {
 
 export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
+  const mainNavigation = 'Sections';
+
+  const [expandedL1, setExpandedL1] = useState<string>('');
+  const [selected, setSelected] = useState(mainNavigation);
+
+  const [searchActive, setSearchActive] = useState<boolean>(false);
 
   return (
     <>
@@ -22,6 +28,8 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
         accountMenu={data.accountMenuItems}
         isHamburgerOpen={hamburgerActive}
         toggleHamburger={setHamburgerActive}
+        searchActive={searchActive}
+        setSearchActive={setSearchActive}
       />
       <HamburgerMenuContainer
         open={hamburgerActive}
@@ -29,7 +37,7 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
         closePosition="none"
         overrides={{ panel: { size: { xs: '100%', md: '322px' } } }}
       >
-        <HamburgerMenu {...{ isLoggedIn, data }} />
+        <HamburgerMenu {...{ isLoggedIn, data, expandedL1, setExpandedL1, selected, setSelected, mainNavigation }} />
       </HamburgerMenuContainer>
     </>
   );

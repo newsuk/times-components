@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { MenuDivider, Block, Visible, TextBlock } from 'newskit';
 import NavButtonSection from './NavButtons';
 import NavigationList from './NavigationList';
@@ -8,12 +8,12 @@ import { NavigationData } from '../types';
 export const HamburgerMenu: React.FC<{
   isLoggedIn?: boolean;
   data: NavigationData;
-}> = ({ isLoggedIn, data }) => {
-  const mainNavigation = 'Sections';
-
-  const [expandedL1, setExpandedL1] = useState<string>('');
-  const [selected, setSelected] = useState(mainNavigation);
-
+  expandedL1: string;
+  selected: string;
+  setExpandedL1: (title: string) => void;
+  setSelected: (title: string) => void;
+  mainNavigation: string;
+}> = ({ isLoggedIn, data, expandedL1, selected, setExpandedL1, setSelected, mainNavigation }) => {
   return (
     <HamburgerMenuNav
       aria-label="menu-vertical"

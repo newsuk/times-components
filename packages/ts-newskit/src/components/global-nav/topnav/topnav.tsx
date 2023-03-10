@@ -26,6 +26,8 @@ type TopNavProps = {
   toggleHamburger: (isHamburgerOpen: boolean) => void;
   mainMenu?: any;
   accountMenu?: any;
+  searchActive?: boolean;
+  setSearchActive: (searchActive: boolean) => void; 
 };
 
 export const TopNav: React.FC<TopNavProps> = ({
@@ -34,9 +36,10 @@ export const TopNav: React.FC<TopNavProps> = ({
   isHamburgerOpen,
   toggleHamburger,
   isLoggedIn = false,
-  isSunday = false
+  isSunday = false,
+  searchActive = false,
+  setSearchActive,
 }) => {
-  const [searchActive, setSearchActive] = useState<boolean>(false);
 
   const logoProps = {
     height: 20,
