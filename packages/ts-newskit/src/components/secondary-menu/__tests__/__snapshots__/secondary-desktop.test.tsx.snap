@@ -166,7 +166,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
             class="css-1me0nkm"
           >
             <nav
-              class="css-q3prat"
+              class="css-wbgi5o"
               data-testid="menu-container"
               role="navigation"
             >
@@ -199,7 +199,9 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
                       </a>
                     </li>
                     <hr
-                      class="css-1r4u4vf"
+                      aria-hidden="true"
+                      class="css-ladkak"
+                      data-testid="divider"
                     />
                     <li
                       class="nk-menu-item css-1kdinep"
@@ -218,7 +220,9 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
                       </a>
                     </li>
                     <hr
-                      class="css-1r4u4vf"
+                      aria-hidden="true"
+                      class="css-ladkak"
+                      data-testid="divider"
                     />
                   </ul>
                 </nav>
@@ -230,8 +234,9 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
     </ul>
   </nav>
   <hr
-    class="css-rx56cc"
-    role="hr"
+    aria-hidden="true"
+    class="css-fdgl4i"
+    data-testid="divider"
   />
 </DocumentFragment>
 `;

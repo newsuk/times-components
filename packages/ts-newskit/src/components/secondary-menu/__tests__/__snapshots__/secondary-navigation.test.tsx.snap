@@ -233,8 +233,9 @@ exports[`Secondary Menu should render snapshot 1`] = `
       </ul>
     </nav>
     <hr
-      class="css-rx56cc"
-      role="hr"
+      aria-hidden="true"
+      class="css-fdgl4i"
+      data-testid="divider"
     />
   </div>
 </DocumentFragment>

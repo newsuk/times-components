@@ -66,10 +66,10 @@ describe('Secondary Menu Desktop', () => {
   it('should change the width of menudivader when screen size change', () => {
     (useBreakpointKey as any).mockReturnValue('xl');
 
-    const { getByRole } = render(
+    const { getByTestId } = render(
       <SecondaryNavDesktop data={mainMenuItems} options={options} />
     );
-    const hr = getByRole('hr');
+    const hr = getByTestId('divider');
     expect(hr).toHaveStyle('width: 1140px');
   });
 });
