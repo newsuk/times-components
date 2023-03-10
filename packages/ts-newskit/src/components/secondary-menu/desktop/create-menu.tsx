@@ -1,11 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { MenuSub, Menu } from 'newskit';
-import { MenuContainer, Container, Wrapper, MainMenu } from '../styles';
-import {
-  SecondaryMenuOptions,
-  SecondaryMenuItem,
-  seeAllButtonWidth
-} from '../types';
+import { MenuContainer, Wrapper, MainMenu } from '../styles';
+import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
 import { getBreakpoint } from '../../utils/getBreakPoint';
@@ -22,6 +18,7 @@ export const CreateMenu: React.FC<{
     moreMenuLength
   );
   const [hasMenuItem, setHasMenuItem] = useState<number>(menuItems);
+
   const getWidth = (el: any) => el.clientWidth;
 
   useEffect(
@@ -31,17 +28,16 @@ export const CreateMenu: React.FC<{
         setHasMenuItem(menuItems);
         const updateNav = (navAdjustCount = 1) => {
           setTimeout(() => {
-            const navListContainerWidth = getWidth(contanierRef.current);
             const navListWidth = getWidth(navListRef.current);
             if (
-              navListWidth >
-              navListContainerWidth - seeAllButtonWidth[breakpointKey]
+              (navListWidth > 575 && breakpointKey === 'md') ||
+              (navListWidth > 830 && breakpointKey === 'lg')
             ) {
               setMoreMenuItemsLength(moreMenuLength + navAdjustCount);
               setHasMenuItem(menuItems - navAdjustCount);
               updateNav(navAdjustCount + 1);
             }
-          }, 1000);
+          });
         };
         updateNav();
       }
@@ -75,43 +71,40 @@ export const CreateMenu: React.FC<{
       overrides={{
         spaceInline: 'space050'
       }}
+      ref={contanierRef}
     >
-      <Container ref={contanierRef} moreMenuItemsLength={moreMenuItemsLength}>
-        <Wrapper ref={navListRef} data-testid="navitems-test-id">
-          <NavItems data={data} options={options} hasMenuItem={hasMenuItem} />
-        </Wrapper>
-        {moreMenuItemsLength > 0 && (
-          <MenuSub
-            onClick={() => setIsExpanded(!isExpanded)}
-            expanded={isExpanded}
-            title="See all"
-            overrides={{
-              stylePreset: `${
-                isExpanded ? 'subMenuPreset2' : 'subMenuPreset1'
-              }`,
-              list: { stylePreset: 'subMenuItems' },
-              typographyPreset: 'newPreset040'
-            }}
-            data-testid="more-sub-menu"
-          >
-            <MenuContainer>
-              <Menu
-                vertical
-                overrides={{
-                  spaceInline: 'sizing000'
-                }}
-                aria-label="menu-multiple-auto"
-              >
-                <CreateMoreMenu
-                  data={data}
-                  options={options}
-                  moreMenuItemsLength={moreMenuItemsLength}
-                />
-              </Menu>
-            </MenuContainer>
-          </MenuSub>
-        )}
-      </Container>
+      <Wrapper ref={navListRef} data-testid="navitems-test-id">
+        <NavItems data={data} options={options} hasMenuItem={hasMenuItem} />
+      </Wrapper>
+      {moreMenuItemsLength > 0 && (
+        <MenuSub
+          onClick={() => setIsExpanded(!isExpanded)}
+          expanded={isExpanded}
+          title="See all"
+          overrides={{
+            stylePreset: `${isExpanded ? 'subMenuPreset2' : 'subMenuPreset1'}`,
+            list: { stylePreset: 'subMenuItems' },
+            typographyPreset: 'newPreset040'
+          }}
+          data-testid="more-sub-menu"
+        >
+          <MenuContainer>
+            <Menu
+              vertical
+              overrides={{
+                spaceInline: 'sizing000'
+              }}
+              aria-label="menu-multiple-auto"
+            >
+              <CreateMoreMenu
+                data={data}
+                options={options}
+                moreMenuItemsLength={moreMenuItemsLength}
+              />
+            </Menu>
+          </MenuContainer>
+        </MenuSub>
+      )}
     </MainMenu>
   );
 };

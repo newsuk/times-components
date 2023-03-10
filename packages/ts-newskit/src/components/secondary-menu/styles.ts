@@ -1,5 +1,5 @@
 import { Menu, styled, getColorCssFromTheme, Divider } from 'newskit';
-import { MainMenuProp, MoreMenuItemsProp, BreakPointProp } from './types';
+import { MainMenuProp, BreakPointProp } from './types';
 
 export const MenuDivider = styled(Divider)<BreakPointProp>`
   width: ${({ breakpointKey }) =>
@@ -28,13 +28,6 @@ export const MainMenu = styled(Menu)<MainMenuProp>`
     justify-content: ${({ hasMoreItems }) =>
       hasMoreItems ? `space-between` : `center`};
   }
-`;
-
-export const Container = styled.div<MoreMenuItemsProp>`
-  display: flex;
-  justify-content: ${({ moreMenuItemsLength }) =>
-    moreMenuItemsLength > 0 ? `space-between` : `center`};
-  width: 100%;
 `;
 
 export const Wrapper = styled.div`
