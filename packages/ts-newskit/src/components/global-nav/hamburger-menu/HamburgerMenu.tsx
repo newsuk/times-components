@@ -5,7 +5,7 @@ import NavigationList from './NavigationList';
 import { HamburgerMenuNav } from '../styles';
 import { NavigationData } from '../types';
 
-const HamburgerMenu: React.FC<{
+export const HamburgerMenu: React.FC<{
   isLoggedIn?: boolean;
   data: NavigationData;
 }> = ({ isLoggedIn, data }) => {
