@@ -39,7 +39,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
             </span>
             <svg
               aria-hidden="true"
-              class="css-1tvoidw-EmotionIconBase ex0cdmw0"
+              class="css-1auvcm3-EmotionIconBase ex0cdmw0"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -103,7 +103,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is not e
             </span>
             <svg
               aria-hidden="true"
-              class="css-1tvoidw-EmotionIconBase ex0cdmw0"
+              class="css-1auvcm3-EmotionIconBase ex0cdmw0"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"

@@ -18,6 +18,7 @@ export const CreateMenu: React.FC<{
     moreMenuLength
   );
   const [hasMenuItem, setHasMenuItem] = useState<number>(menuItems);
+  const subMenuTitle = isExpanded ? 'Less' : 'More';
 
   const getWidth = (el: any) => el.clientWidth;
 
@@ -80,7 +81,7 @@ export const CreateMenu: React.FC<{
         <MenuSub
           onClick={() => setIsExpanded(!isExpanded)}
           expanded={isExpanded}
-          title="See all"
+          title={subMenuTitle}
           overrides={{
             stylePreset: `${isExpanded ? 'subMenuPreset2' : 'subMenuPreset1'}`,
             list: { stylePreset: 'subMenuItems' },

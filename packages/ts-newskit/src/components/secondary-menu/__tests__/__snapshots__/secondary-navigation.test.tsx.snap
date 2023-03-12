@@ -42,7 +42,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               </span>
               <svg
                 aria-hidden="true"
-                class="css-1tvoidw-EmotionIconBase ex0cdmw0"
+                class="css-1auvcm3-EmotionIconBase ex0cdmw0"
                 fill="currentColor"
                 focusable="false"
                 viewBox="0 0 24 24"

@@ -20,7 +20,7 @@ exports[`Create More Menu should render snapshot 1`] = `
   </li>
   <hr
     aria-hidden="true"
-    class="css-ladkak"
+    class="css-1njghbt"
     data-testid="divider"
   />
   <li
@@ -41,7 +41,7 @@ exports[`Create More Menu should render snapshot 1`] = `
   </li>
   <hr
     aria-hidden="true"
-    class="css-ladkak"
+    class="css-1njghbt"
     data-testid="divider"
   />
 </DocumentFragment>

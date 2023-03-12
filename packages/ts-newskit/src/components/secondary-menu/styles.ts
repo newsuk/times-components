@@ -8,17 +8,8 @@ export const MenuDivider = styled(Divider)<BreakPointProp>`
   ${getColorCssFromTheme('borderColor', 'neutral030')};
 `;
 
-export const MenuDividerMobile = styled(Divider)`
-  width: calc(100% - 64px);
-  margin: auto;
-  ${getColorCssFromTheme('borderColor', 'neutral030')};
-`;
-
 export const MenuDividerDropdown = styled(Divider)`
-  margin: 0;
-  margin: 0 16px;
   ${getColorCssFromTheme('borderColor', 'neutral030')};
-  width: auto;
 `;
 
 export const MainMenu = styled(Menu)<MainMenuProp>`
@@ -43,13 +34,6 @@ export const MenuContainer = styled(Menu)`
     width: max-content;
     min-width: 200px;
   }
-  li {
-    margin: -2px 0;
-  }
-
-  li:first-child {
-    margin: 0 0 -2px 0;
-  }
 
   & hr:last-child {
     display: none;
@@ -57,12 +41,10 @@ export const MenuContainer = styled(Menu)`
 
   li:hover {
     background-color: #e4e4e4;
-    margin: -2px 0;
   }
 
-  li:hover:first-child {
+  li button:hover {
     background-color: #e4e4e4;
-    margin: 0 0 -2px 0;
   }
 `;
 

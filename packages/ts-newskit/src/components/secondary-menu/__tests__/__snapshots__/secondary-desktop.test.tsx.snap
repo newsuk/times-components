@@ -133,14 +133,14 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
       >
         <button
           aria-expanded="false"
-          class="css-1lnpsxq"
+          class="css-w3e6qd"
           data-testid="menu-sub-button"
           type="button"
         >
           <span
             class="css-1bgi23z"
           >
-            See all
+            More
           </span>
           <svg
             aria-hidden="true"
@@ -163,7 +163,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
           class="css-1me0nkm"
         >
           <nav
-            class="css-wbgi5o"
+            class="css-191sdml"
             data-testid="menu-container"
             role="navigation"
           >
@@ -197,7 +197,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
                   </li>
                   <hr
                     aria-hidden="true"
-                    class="css-ladkak"
+                    class="css-1njghbt"
                     data-testid="divider"
                   />
                   <li
@@ -218,7 +218,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
                   </li>
                   <hr
                     aria-hidden="true"
-                    class="css-ladkak"
+                    class="css-1njghbt"
                     data-testid="divider"
                   />
                 </ul>

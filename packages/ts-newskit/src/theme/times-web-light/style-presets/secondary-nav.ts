@@ -35,24 +35,26 @@ export const secondaryNavigationStylePresets = {
       fontWeight: '{{fonts.fontWeight020}}',
       fontSize: '{{fonts.fontSize030}}',
       lineHeight: '{{fonts.fontLineHeight070}}',
-      padding: '{{sizing.sizing030}} {{sizing.sizing060}}'
+      padding: '{{sizing.sizing030}} {{sizing.sizing060}}',
+      marginTop: '-2px',
+      borderBottom: '1px solid #E4E4E4',
+      marginBottom: '-8px'
+    },
+    hover: {
+      marginTop: '-2px',
+      backgroundColor: '{{colors.neutral010}}',
+      borderBottom: '1px solid #F5F5F5'
     }
   },
   icon: {
     base: {
+      position: 'absolute',
+      right: '25px',
       height: '{{sizing.sizing040}}',
       width: '{{sizing.sizing040}}'
     }
   },
-  blockDefault: {
-    base: {
-      marginTop: '-2px'
-    },
-    hover: {
-      marginTop: '-2px',
-      backgroundColor: '{{colors.neutral010}}'
-    }
-  },
+
   textBlock: {
     base: {
       marginTop: '{{sizing.sizing040}}',
@@ -81,16 +83,19 @@ export const secondaryNavigationStylePresets = {
   },
   subMenuPreset1: {
     base: {
-      minWidth: 'max-content',
+      minWidth: '100px',
       color: '#1D1D1B',
       backgroundColor: '{{colors.white}}',
       padding:
         '{{sizing.sizing020}} {{sizing.sizing040}} {{sizing.sizing030}} {{sizing.sizing040}}'
+    },
+    hover: {
+      backgroundColor: '{{colors.neutral010}}'
     }
   },
   subMenuPreset2: {
     base: {
-      minWidth: 'max-content',
+      minWidth: '100px',
       color: '#1D1D1B',
       backgroundColor: '{{colors.neutral010}}',
       padding:

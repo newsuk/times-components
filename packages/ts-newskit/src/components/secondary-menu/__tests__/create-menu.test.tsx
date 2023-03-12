@@ -40,8 +40,8 @@ describe('Create Menu', () => {
     const { getByText } = render(
       <CreateMenu data={mainMenuItems} options={options} />
     );
-    expect(getByText('See all')).toBeVisible();
-    const seeAllButton = getByText('See all');
+    expect(getByText('Less')).toBeVisible();
+    const seeAllButton = getByText('Less');
     fireEvent.click(seeAllButton);
     expect(options.setIsExpanded).toHaveBeenCalled();
   });
