@@ -12,4 +12,4 @@ export {
   WrappedGlobalNav
 } from './components/global-nav/wrapped-components/WrappedComponents';
 export { HamburgerMenuContainer } from './components/global-nav/styles';
-export { TSNewskitDrawer } from './components/global-nav';
+export { GlobalNavWithCustomDrawer } from './components/global-nav';
