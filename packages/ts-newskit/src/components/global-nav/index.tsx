@@ -39,10 +39,11 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
 export const TSNewskitDrawer: React.FC<{
   children: ReactChildren;
   open: boolean;
-}> = ({ children, open }) => {
+  onDismiss: () => void;
+}> = ({ children, open, onDismiss }) => {
   return (
     // tslint:disable-next-line: no-console
-    <Drawer onDismiss={() => console.log('dismissed from drawer')} open={open}>
+    <Drawer onDismiss={onDismiss} open={open}>
       {children}
     </Drawer>
   );
