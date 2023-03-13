@@ -40,10 +40,9 @@ const articleTemplateTest = (template, options = {}) => {
         .get("#related-articles")
         .scrollIntoView()
         .then(() => {
-          // wait for the image to transition and be removed (unfortunately Cypress doesn't auto wait for this)
-          // cy.wait(2000);
-
-          cy.get("#related-articles > div:first-child img:first-child").as("raImages");
+          cy.get("#related-articles > div:first-child img:first-child").as(
+            "raImages"
+          );
 
           cy.get("@raImages")
             .its("length")
