@@ -4,8 +4,8 @@ import { Button } from 'newskit';
 const LoggedInMenuItem: React.FC<{
   title: string;
   selected: string;
-  handleClick: (title: string) => void;
-}> = ({ title, handleClick, selected }) => {
+  setSelected: (title: string) => void;
+}> = ({ title, setSelected, selected }) => {
   const isSelected = selected === title ? true : false;
 
   return (
@@ -17,7 +17,7 @@ const LoggedInMenuItem: React.FC<{
           isSelected ? 'loggedInMenuItemActive' : 'loggedInMenuItem'
         }`
       }}
-      onClick={() => handleClick(title)}
+      onClick={() => setSelected(title)}
     >
       {title}
     </Button>
