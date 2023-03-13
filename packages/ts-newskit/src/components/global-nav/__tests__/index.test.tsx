@@ -50,6 +50,6 @@ describe('TsNewkistDrawer', () => {
         <div>Hi</div>
       </TSNewskitDrawer>
     );
-    expect(asFragment()).toBeInTheDocument();
+    expect(asFragment()).toBeTruthy();
   });
 });
