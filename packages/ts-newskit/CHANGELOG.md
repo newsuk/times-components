@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.8](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.7.7...@times-components/ts-newskit@1.7.8) (2023-03-13)
+
+
+### Bug Fixes
+
+* **TDP-3223:** Create custom drawer component ([#3277](https://github.com/newsuk/times-components/issues/3277)) ([1cc2ddd](https://github.com/newsuk/times-components/commit/1cc2ddd2a1e5b498440e801f834ce1337c049edb))
+
+
+
+
+
 ## [1.7.7](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.7.6...@times-components/ts-newskit@1.7.7) (2023-03-13)
 
 **Note:** Version bump only for package @times-components/ts-newskit
