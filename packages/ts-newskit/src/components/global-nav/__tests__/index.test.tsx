@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
 import data from '../fixtures/data.json';
-import { GlobalNav } from '../index';
+import { GlobalNav, GlobalNavWithCustomDrawer } from '../index';
 
 const renderComponent = (isLoggedIn?: boolean) =>
   render(<GlobalNav {...{ isLoggedIn, data }} />);
@@ -40,5 +40,18 @@ describe('Hamburger toggle', () => {
     fireEvent.click(hamburgerOverlay);
 
     expect(hamburgerBtn.getAttribute('aria-label')).toEqual('Open Menu');
+  });
+});
+
+describe('GlobalNavWithCustomDrawer', () => {
+  it('renders', () => {
+    const { asFragment } = render(
+      <GlobalNavWithCustomDrawer
+        data={data}
+        isLoggedIn={false}
+        isSunday={false}
+      />
+    );
+    expect(asFragment()).toBeTruthy();
   });
 });
