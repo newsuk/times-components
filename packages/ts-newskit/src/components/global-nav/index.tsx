@@ -1,4 +1,4 @@
-import React, { ReactChildren, useState } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { TopNav } from './topnav/topnav';
 import { HamburgerMenu } from './hamburger-menu/HamburgerMenu';
 import { NavigationData } from './types';
@@ -37,12 +37,11 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
 };
 
 export const TSNewskitDrawer: React.FC<{
-  children: ReactChildren;
+  children: ReactNode;
   open: boolean;
   onDismiss: () => void;
 }> = ({ children, open, onDismiss }) => {
   return (
-    // tslint:disable-next-line: no-console
     <Drawer onDismiss={onDismiss} open={open}>
       {children}
     </Drawer>

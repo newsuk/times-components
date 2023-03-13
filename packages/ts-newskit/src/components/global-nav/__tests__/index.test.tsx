@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
 import data from '../fixtures/data.json';
-import { GlobalNav } from '../index';
+import { GlobalNav, TSNewskitDrawer } from '../index';
 
 const renderComponent = (isLoggedIn?: boolean) =>
   render(<GlobalNav {...{ isLoggedIn, data }} />);
@@ -40,5 +40,16 @@ describe('Hamburger toggle', () => {
     fireEvent.click(hamburgerOverlay);
 
     expect(hamburgerBtn.getAttribute('aria-label')).toEqual('Open Menu');
+  });
+});
+
+describe('TsNewkistDrawer', () => {
+  it('renders', () => {
+    const { asFragment } = render(
+      <TSNewskitDrawer open={false} onDismiss={() => {}}>
+        <div>Hi</div>
+      </TSNewskitDrawer>
+    );
+    expect(asFragment()).toBeInTheDocument();
   });
 });
