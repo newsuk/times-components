@@ -28,9 +28,15 @@ export const CustomHamburgerMenuContainer: React.FC<{
   children: ReactNode;
   setHamburgerActive: (arg: boolean) => void;
   hamburgerActive: boolean;
-}> = ({ children, hamburgerActive, setHamburgerActive }) => (
-  <>
-    <Overlay onClick={() => setHamburgerActive(false)} open={hamburgerActive} />
-    <MenuDrawer open={hamburgerActive}>{children}</MenuDrawer>
-  </>
-);
+}> = ({ children, hamburgerActive, setHamburgerActive }) => {
+  return (
+    <>
+      <Overlay
+        data-testid="overlay"
+        onClick={() => setHamburgerActive(false)}
+        open={hamburgerActive}
+      />
+      <MenuDrawer open={hamburgerActive}>{children}</MenuDrawer>
+    </>
+  );
+};

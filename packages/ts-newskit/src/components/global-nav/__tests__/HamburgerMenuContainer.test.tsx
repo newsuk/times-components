@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render } from '../../utils/test-utils';
+import { fireEvent, render } from '../../utils/test-utils';
 import { CustomHamburgerMenuContainer } from '../HamburgerMenuContainer';
 
 describe('HamburgerMenuContainer', () => {
@@ -14,5 +14,19 @@ describe('HamburgerMenuContainer', () => {
       </CustomHamburgerMenuContainer>
     );
     expect(asFragment()).toBeTruthy();
+  });
+  it('calls the function on click', async () => {
+    const setHamburgerActive = jest.fn();
+    const { getByTestId } = render(
+      <CustomHamburgerMenuContainer
+        hamburgerActive={true}
+        setHamburgerActive={setHamburgerActive}
+      >
+        <div>hi</div>
+      </CustomHamburgerMenuContainer>
+    );
+    const Overlay = getByTestId('overlay');
+    fireEvent.click(Overlay);
+    expect(setHamburgerActive).toHaveBeenCalled();
   });
 });
