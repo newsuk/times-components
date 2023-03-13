@@ -43,11 +43,16 @@ describe('Hamburger toggle', () => {
   });
 });
 
-describe('TsNewkistDrawer', () => {
+describe('TSNewskitDrawer', () => {
   it('renders', () => {
     const { asFragment } = render(
-      <TSNewskitDrawer open={false} onDismiss={() => {}}>
-        <div>Hi</div>
+      <TSNewskitDrawer
+        open={true}
+        onDismiss={() => {
+          '';
+        }}
+      >
+        <div>hi</div>
       </TSNewskitDrawer>
     );
     expect(asFragment()).toBeTruthy();
