@@ -11,4 +11,4 @@ export {
   WrappedHamburger,
   WrappedGlobalNav
 } from './components/global-nav/wrapped-components/WrappedComponents';
-export { HamburgerMenuContainer } from './components/global-nav/styles'
+export { HamburgerMenuContainer } from './components/global-nav/styles';
