@@ -36,7 +36,11 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
   );
 };
 
-export const GlobalNavWithCustomDrawer = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
+export const GlobalNavWithCustomDrawer = ({
+  isLoggedIn,
+  isSunday,
+  data
+}: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
   return (
     <>
@@ -55,5 +59,5 @@ export const GlobalNavWithCustomDrawer = ({ isLoggedIn, isSunday, data }: Global
         <HamburgerMenu {...{ isLoggedIn, data }} />
       </CustomHamburgerMenuContainer>
     </>
-  )
-}
+  );
+};
