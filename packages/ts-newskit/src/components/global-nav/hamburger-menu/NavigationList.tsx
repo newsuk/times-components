@@ -33,13 +33,12 @@ const NavigationList: React.FC<{
                       id={`vertical-sub-${i.slug}`}
                       overrides={{
                         paddingInlineStart: 'space060',
-                        stylePreset: 'menuItemL2',
+                        stylePreset: 'subMenuItem',
                         typographyPreset: 'newPreset040'
                       }}
                     >
                       {i.title}
                     </MenuItem>
-                    <MenuDivider />
                   </Fragment>
                 ))}
               </MenuSub>
