@@ -3,6 +3,7 @@ import { styled } from 'newskit';
 
 const MenuDrawer = styled.div<{ open: boolean }>`
   z-index: 1;
+  top: 50px;
   position: absolute;
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   transition: transform 0.3s ease-in-out;
@@ -10,6 +11,7 @@ const MenuDrawer = styled.div<{ open: boolean }>`
   height: 100%;
   @media screen and (min-width: 780px) {
     width: 320px;
+    top: 60px;
   }
 `;
 
