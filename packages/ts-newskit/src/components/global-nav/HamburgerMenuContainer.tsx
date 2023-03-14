@@ -16,7 +16,7 @@ const MenuDrawer = styled.div<{ open: boolean }>`
 const Overlay = styled.div<{ open: boolean }>`
   z-index: 0;
   position: absolute;
-  width: ${({ open }) => open ? '100%' : '0'};
+  width: ${({ open }) => (open ? '100%' : '0')};
   height: 100vh;
   opacity: ${({ open }) => (open ? 1 : 0)};
   background-color: rgba(10, 10, 10, 0.8);
