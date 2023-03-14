@@ -4,7 +4,8 @@ import { MenuContainer, Wrapper, MainMenu } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
-import { getBreakpoint } from '../../utils/getBreakPoint';
+import { debounce } from '../../utils/debounced';
+import { getWidth } from '../../utils/getWidth';
 
 export const CreateMenu: React.FC<{
   options: SecondaryMenuOptions;
@@ -13,38 +14,39 @@ export const CreateMenu: React.FC<{
   const contanierRef = useRef<HTMLDivElement>(null);
   const navListRef = useRef<HTMLDivElement>(null);
   const { isExpanded, setIsExpanded } = options;
-  const { moreMenuLength, menuItems, breakpointKey } = getBreakpoint(data);
-  const [moreMenuItemsLength, setMoreMenuItemsLength] = useState<number>(
-    moreMenuLength
-  );
-  const [hasMenuItem, setHasMenuItem] = useState<number>(menuItems);
+  const [hasMenuItem, setHasMenuItem] = useState<number>(data.length);
+  const [moreMenuItemsLength, setMoreMenuItemsLength] = useState<number>(0);
   const subMenuTitle = isExpanded ? 'Less' : 'More';
 
-  const getWidth = (el: any) => el.clientWidth;
+  useEffect(() => {
+    const handleResize = async (navAdjustCount = 1) => {
+      setMoreMenuItemsLength(moreMenuItemsLength);
+      setHasMenuItem(hasMenuItem);
 
-  useEffect(
-    () => {
-      if (breakpointKey !== 'sm' && breakpointKey !== 'xs') {
-        setMoreMenuItemsLength(moreMenuLength);
-        setHasMenuItem(menuItems);
-        const updateNav = (navAdjustCount = 1) => {
-          setTimeout(() => {
-            const navListWidth = getWidth(navListRef.current);
-            if (
-              (navListWidth > 575 && breakpointKey === 'md') ||
-              (navListWidth > 830 && breakpointKey === 'lg')
-            ) {
-              setMoreMenuItemsLength(moreMenuLength + navAdjustCount);
-              setHasMenuItem(menuItems - navAdjustCount);
-              updateNav(navAdjustCount + 1);
-            }
-          });
-        };
-        updateNav();
+      const navListContainerWidth = await getWidth(contanierRef.current);
+      const navListWidth = await getWidth(navListRef.current);
+
+      if (
+        navListWidth > navListContainerWidth - 200 &&
+        navListWidth > 0 &&
+        navListContainerWidth > 0
+      ) {
+        setMoreMenuItemsLength(moreMenuItemsLength + navAdjustCount);
+        setHasMenuItem(hasMenuItem - navAdjustCount);
+
+        const updatedNavListWidth = await getWidth(navListRef.current);
+        updatedNavListWidth > navListContainerWidth - 200 &&
+          handleResize(navAdjustCount + 1);
       }
-    },
-    [breakpointKey]
-  );
+    };
+
+    window.addEventListener('resize', debounce(() => handleResize(), 500));
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', debounce(() => handleResize(), 500));
+    };
+  }, []);
 
   useEffect(
     () => {
