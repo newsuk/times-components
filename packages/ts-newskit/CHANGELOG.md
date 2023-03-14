@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.9](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.7.8...@times-components/ts-newskit@1.7.9) (2023-03-14)
+
+
+### Bug Fixes
+
+* **TDP-3223:** Fix overlay of navigation drawer ([#3278](https://github.com/newsuk/times-components/issues/3278)) ([000c3c7](https://github.com/newsuk/times-components/commit/000c3c7b250f45698f2fe4db0c0af24682dcee4d))
+
+
+
+
+
 ## [1.7.8](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.7.7...@times-components/ts-newskit@1.7.8) (2023-03-13)
 
 
