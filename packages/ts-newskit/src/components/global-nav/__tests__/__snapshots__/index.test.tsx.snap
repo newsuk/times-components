@@ -182,7 +182,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Home
                   </span>
@@ -197,7 +197,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/news"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     News
                   </span>
@@ -212,7 +212,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Comment
                   </span>
@@ -227,7 +227,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/life-and-style"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Life & Style
                   </span>
@@ -242,7 +242,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Arts & Books
                   </span>
@@ -257,7 +257,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Sport
                   </span>
@@ -272,7 +272,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/business-and-money"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Business & Money
                   </span>
@@ -287,7 +287,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Puzzles
                   </span>
@@ -302,7 +302,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Magazines
                   </span>
@@ -439,7 +439,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
               href="/times-plus"
             >
               <span
-                class="css-b265mf"
+                class="css-mvu7fj"
               >
                 Times +
               </span>
@@ -466,7 +466,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
               type="button"
             >
               <span
-                class="css-b265mf"
+                class="css-mvu7fj"
               >
                 My Account
               </span>
@@ -508,7 +508,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/account"
                     >
                       <span
-                        class="css-b265mf"
+                        class="css-mvu7fj"
                       >
                         Manage account
                       </span>
@@ -523,7 +523,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/change-password"
                     >
                       <span
-                        class="css-b265mf"
+                        class="css-mvu7fj"
                       >
                         Change password
                       </span>
@@ -538,7 +538,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/my-newsletters"
                     >
                       <span
-                        class="css-b265mf"
+                        class="css-mvu7fj"
                       >
                         My Newsletters
                       </span>
@@ -553,7 +553,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/my-articles"
                     >
                       <span
-                        class="css-b265mf"
+                        class="css-mvu7fj"
                       >
                         My articles
                       </span>
@@ -568,7 +568,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/contact-us"
                     >
                       <span
-                        class="css-b265mf"
+                        class="css-mvu7fj"
                       >
                         Contact us
                       </span>
@@ -583,7 +583,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                       href="/log-out"
                     >
                       <span
-                        class="css-b265mf"
+                        class="css-mvu7fj"
                       >
                         Log out
                       </span>
@@ -629,7 +629,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Home
                   </span>
@@ -644,7 +644,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/news"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     News
                   </span>
@@ -659,7 +659,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Comment
                   </span>
@@ -674,7 +674,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/life-and-style"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Life & Style
                   </span>
@@ -689,7 +689,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Arts & Books
                   </span>
@@ -704,7 +704,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Sport
                   </span>
@@ -719,7 +719,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/business-and-money"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Business & Money
                   </span>
@@ -734,7 +734,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Puzzles
                   </span>
@@ -749,7 +749,7 @@ exports[`Render GlobalNav should render the component in loggedIn state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Magazines
                   </span>
@@ -951,7 +951,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Home
                   </span>
@@ -966,7 +966,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/news"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     News
                   </span>
@@ -981,7 +981,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Comment
                   </span>
@@ -996,7 +996,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/life-and-style"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Life & Style
                   </span>
@@ -1011,7 +1011,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Arts & Books
                   </span>
@@ -1026,7 +1026,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Sport
                   </span>
@@ -1041,7 +1041,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/business-and-money"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Business & Money
                   </span>
@@ -1056,7 +1056,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Puzzles
                   </span>
@@ -1071,7 +1071,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Magazines
                   </span>
@@ -1208,7 +1208,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
               href="/login"
             >
               <span
-                class="css-b265mf"
+                class="css-mvu7fj"
               >
                 Login
               </span>
@@ -1234,7 +1234,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
               href="/"
             >
               <span
-                class="css-b265mf"
+                class="css-mvu7fj"
               >
                 Subscribe
               </span>
@@ -1276,7 +1276,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Home
                   </span>
@@ -1291,7 +1291,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/news"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     News
                   </span>
@@ -1306,7 +1306,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Comment
                   </span>
@@ -1321,7 +1321,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/life-and-style"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Life & Style
                   </span>
@@ -1336,7 +1336,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Arts & Books
                   </span>
@@ -1351,7 +1351,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Sport
                   </span>
@@ -1366,7 +1366,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/business-and-money"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Business & Money
                   </span>
@@ -1381,7 +1381,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Puzzles
                   </span>
@@ -1396,7 +1396,7 @@ exports[`Render GlobalNav should render the component in loggedOut state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-b265mf"
+                    class="css-mvu7fj"
                   >
                     Magazines
                   </span>

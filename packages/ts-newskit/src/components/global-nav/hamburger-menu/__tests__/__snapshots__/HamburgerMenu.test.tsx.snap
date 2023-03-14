@@ -42,7 +42,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
             </div>
             <input
               aria-describedby="searchTimesLabel"
-              class="css-pvilfn"
+              class="css-19h8b0g"
               placeholder="Search times.co.uk"
               type="text"
               value=""
@@ -70,7 +70,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               type="button"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Sections
               </span>
@@ -81,7 +81,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               type="button"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 My account
               </span>
@@ -99,7 +99,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           id="vertical-main-menu-1"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             Main Menu 1
           </span>
@@ -127,7 +127,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           type="button"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             Main Menu 2
           </span>
@@ -161,7 +161,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               id="vertical-sub-item-1"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Item 1
               </span>
@@ -188,7 +188,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               id="vertical-sub-item-2"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Item 2
               </span>
@@ -229,7 +229,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           type="button"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             Main Menu 3
           </span>
@@ -263,7 +263,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               id="vertical-sub-item-1"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Menu 3 Item 1
               </span>
@@ -290,7 +290,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               id="vertical-sub-menu-3-item-2"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Menu 3 Item 2
               </span>
@@ -324,7 +324,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
         class="css-1ybfqts"
       >
         <p
-          class="css-9id5ai"
+          class="css-1yl2qsr"
         >
           More
         </p>
@@ -350,7 +350,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           id="vertical-more-1"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             More 1
           </span>
@@ -377,7 +377,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
           id="vertical-more-2"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             More 2
           </span>
@@ -427,7 +427,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               type="button"
             >
               <span
-                class="css-1e6qfd8"
+                class="css-bspkx3"
               >
                 Log in
               </span>
@@ -441,7 +441,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               type="button"
             >
               <span
-                class="css-1e6qfd8"
+                class="css-bspkx3"
               >
                 Subscribe
               </span>
@@ -476,7 +476,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
             </div>
             <input
               aria-describedby="searchTimesLabel"
-              class="css-pvilfn"
+              class="css-19h8b0g"
               placeholder="Search times.co.uk"
               type="text"
               value=""
@@ -500,7 +500,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
           id="vertical-main-menu-1"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             Main Menu 1
           </span>
@@ -528,7 +528,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
           type="button"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             Main Menu 2
           </span>
@@ -562,7 +562,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               id="vertical-sub-item-1"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Item 1
               </span>
@@ -589,7 +589,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               id="vertical-sub-item-2"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Item 2
               </span>
@@ -630,7 +630,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
           type="button"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             Main Menu 3
           </span>
@@ -664,7 +664,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               id="vertical-sub-item-1"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Menu 3 Item 1
               </span>
@@ -691,7 +691,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
               id="vertical-sub-menu-3-item-2"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Menu 3 Item 2
               </span>
@@ -725,7 +725,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
         class="css-1ybfqts"
       >
         <p
-          class="css-9id5ai"
+          class="css-1yl2qsr"
         >
           More
         </p>
@@ -751,7 +751,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
           id="vertical-more-1"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             More 1
           </span>
@@ -778,7 +778,7 @@ exports[`HamburgerMenu - Logged Out should render the login and subscribe button
           id="vertical-more-2"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             More 2
           </span>
@@ -842,7 +842,7 @@ exports[`HamburgerMenu should render the component 1`] = `
             </div>
             <input
               aria-describedby="searchTimesLabel"
-              class="css-pvilfn"
+              class="css-19h8b0g"
               placeholder="Search times.co.uk"
               type="text"
               value=""
@@ -870,7 +870,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               type="button"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Sections
               </span>
@@ -881,7 +881,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               type="button"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 My account
               </span>
@@ -899,7 +899,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           id="vertical-main-menu-1"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             Main Menu 1
           </span>
@@ -927,7 +927,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           type="button"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             Main Menu 2
           </span>
@@ -961,7 +961,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               id="vertical-sub-item-1"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Item 1
               </span>
@@ -988,7 +988,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               id="vertical-sub-item-2"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Item 2
               </span>
@@ -1029,7 +1029,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           type="button"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             Main Menu 3
           </span>
@@ -1063,7 +1063,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               id="vertical-sub-item-1"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Menu 3 Item 1
               </span>
@@ -1090,7 +1090,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               id="vertical-sub-menu-3-item-2"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Menu 3 Item 2
               </span>
@@ -1124,7 +1124,7 @@ exports[`HamburgerMenu should render the component 1`] = `
         class="css-1ybfqts"
       >
         <p
-          class="css-9id5ai"
+          class="css-1yl2qsr"
         >
           More
         </p>
@@ -1150,7 +1150,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           id="vertical-more-1"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             More 1
           </span>
@@ -1177,7 +1177,7 @@ exports[`HamburgerMenu should render the component 1`] = `
           id="vertical-more-2"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             More 2
           </span>

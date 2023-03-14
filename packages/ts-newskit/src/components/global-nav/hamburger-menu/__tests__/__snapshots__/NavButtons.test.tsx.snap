@@ -30,7 +30,7 @@ exports[`NavButtons Logged In should render the component 1`] = `
       </div>
       <input
         aria-describedby="searchTimesLabel"
-        class="css-pvilfn"
+        class="css-19h8b0g"
         placeholder="Search times.co.uk"
         type="text"
         value=""
@@ -58,7 +58,7 @@ exports[`NavButtons Logged In should render the component 1`] = `
         type="button"
       >
         <span
-          class="css-1bgi23z"
+          class="css-wo6lye"
         >
           Sections
         </span>
@@ -69,7 +69,7 @@ exports[`NavButtons Logged In should render the component 1`] = `
         type="button"
       >
         <span
-          class="css-1bgi23z"
+          class="css-wo6lye"
         >
           My account
         </span>
@@ -95,7 +95,7 @@ exports[`NavButtons Logged Out should render the component 1`] = `
         type="button"
       >
         <span
-          class="css-1e6qfd8"
+          class="css-bspkx3"
         >
           Log in
         </span>
@@ -109,7 +109,7 @@ exports[`NavButtons Logged Out should render the component 1`] = `
         type="button"
       >
         <span
-          class="css-1e6qfd8"
+          class="css-bspkx3"
         >
           Subscribe
         </span>
@@ -144,7 +144,7 @@ exports[`NavButtons Logged Out should render the component 1`] = `
       </div>
       <input
         aria-describedby="searchTimesLabel"
-        class="css-pvilfn"
+        class="css-19h8b0g"
         placeholder="Search times.co.uk"
         type="text"
         value=""

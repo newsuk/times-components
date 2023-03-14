@@ -12,7 +12,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
       id="vertical-main-menu-1"
     >
       <span
-        class="css-1bgi23z"
+        class="css-wo6lye"
       >
         Main Menu 1
       </span>
@@ -40,7 +40,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
       type="button"
     >
       <span
-        class="css-1bgi23z"
+        class="css-wo6lye"
       >
         Main Menu 2
       </span>
@@ -74,7 +74,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
           id="vertical-sub-item-1"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             Item 1
           </span>
@@ -101,7 +101,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
           id="vertical-sub-item-2"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             Item 2
           </span>
@@ -142,7 +142,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
       type="button"
     >
       <span
-        class="css-1bgi23z"
+        class="css-wo6lye"
       >
         Main Menu 3
       </span>
@@ -176,7 +176,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
           id="vertical-sub-item-1"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             Menu 3 Item 1
           </span>
@@ -203,7 +203,7 @@ exports[`NavigationList renders the component with nested items 1`] = `
           id="vertical-sub-menu-3-item-2"
         >
           <span
-            class="css-1bgi23z"
+            class="css-wo6lye"
           >
             Menu 3 Item 2
           </span>
@@ -248,7 +248,7 @@ exports[`NavigationList renders the component without nested items 1`] = `
       id="vertical-account-menu-1"
     >
       <span
-        class="css-1bgi23z"
+        class="css-wo6lye"
       >
         Account Menu 1
       </span>
@@ -275,7 +275,7 @@ exports[`NavigationList renders the component without nested items 1`] = `
       id="vertical-account-menu-2"
     >
       <span
-        class="css-1bgi23z"
+        class="css-wo6lye"
       >
         Account Menu 2
       </span>
