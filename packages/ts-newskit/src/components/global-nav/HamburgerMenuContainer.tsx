@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { styled } from 'newskit';
 
 const MenuDrawer = styled.div<{ open: boolean }>`
-  z-index: 100;
+  z-index: 1;
   position: absolute;
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
   transition: transform 0.3s ease-in-out;
@@ -14,9 +14,9 @@ const MenuDrawer = styled.div<{ open: boolean }>`
 `;
 
 const Overlay = styled.div<{ open: boolean }>`
-  z-index: 99;
+  z-index: 0;
   position: absolute;
-  width: 100%;
+  width: ${({ open }) => (open ? '100%' : '0')};
   height: 100vh;
   opacity: ${({ open }) => (open ? 1 : 0)};
   background-color: rgba(10, 10, 10, 0.8);
