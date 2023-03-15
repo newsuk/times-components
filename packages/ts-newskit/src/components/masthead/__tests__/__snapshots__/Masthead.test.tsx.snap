@@ -16,7 +16,7 @@ exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
           id="sr-times-logo"
         >
           <section
-            class="css-1c70wx0"
+            class="css-1jupc52"
           >
             <h1
               class="nk-headline-heading css-1spnxj1"
@@ -30,7 +30,7 @@ exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
           data-testid="date-time"
         >
           <span
-            class="css-qozwmz"
+            class="css-100bbur"
           >
             Sunday February 26 2023 
           </span>
@@ -140,7 +140,7 @@ exports[`EditionMasthead should render The Times masthead 1`] = `
           id="sr-times-logo"
         >
           <section
-            class="css-1c70wx0"
+            class="css-1jupc52"
           >
             <h1
               class="nk-headline-heading css-1spnxj1"
@@ -154,7 +154,7 @@ exports[`EditionMasthead should render The Times masthead 1`] = `
           data-testid="date-time"
         >
           <span
-            class="css-qozwmz"
+            class="css-100bbur"
           >
             Wednesday February 22 2023 
           </span>

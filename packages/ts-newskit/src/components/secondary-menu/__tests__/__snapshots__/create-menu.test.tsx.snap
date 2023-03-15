@@ -28,7 +28,7 @@ exports[`Create Menu should render snapshot 1`] = `
               href="/home"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Home
               </span>
@@ -44,7 +44,7 @@ exports[`Create Menu should render snapshot 1`] = `
               href="/news"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 News
               </span>
@@ -60,7 +60,7 @@ exports[`Create Menu should render snapshot 1`] = `
               href="/comment"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Comment
               </span>
@@ -76,7 +76,7 @@ exports[`Create Menu should render snapshot 1`] = `
               href="/life-and-style"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Life & Style
               </span>
@@ -92,7 +92,7 @@ exports[`Create Menu should render snapshot 1`] = `
               href="/arts-and-books"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Arts & Books
               </span>
@@ -108,7 +108,7 @@ exports[`Create Menu should render snapshot 1`] = `
               href="/sport"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Sport
               </span>
@@ -124,7 +124,7 @@ exports[`Create Menu should render snapshot 1`] = `
               href="/business-and-money"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Business & Money
               </span>
@@ -140,7 +140,7 @@ exports[`Create Menu should render snapshot 1`] = `
               href="/puzzles"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Puzzles
               </span>
@@ -156,7 +156,7 @@ exports[`Create Menu should render snapshot 1`] = `
               href="/magazines"
             >
               <span
-                class="css-1bgi23z"
+                class="css-wo6lye"
               >
                 Magazines
               </span>

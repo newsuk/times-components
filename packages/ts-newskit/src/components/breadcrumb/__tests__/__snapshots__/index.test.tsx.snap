@@ -19,7 +19,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
           href="/sport"
         >
           <span
-            class="css-10nx92p"
+            class="css-1i8ei5j"
           >
             Sport
           </span>
@@ -56,7 +56,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
           href="/sport/tennis"
         >
           <span
-            class="css-10nx92p"
+            class="css-1i8ei5j"
           >
             Tennis
           </span>
@@ -93,7 +93,7 @@ exports[`Render Breadcrumbs should render a snapshot 1`] = `
           type="button"
         >
           <span
-            class="css-10nx92p"
+            class="css-1i8ei5j"
           >
             Australian Open
           </span>

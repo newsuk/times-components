@@ -1,43 +1,63 @@
 {
   "fontFamily010": {
     "fontFamily": "TimesModern-Regular",
-    "cropConfig": {
-      "top": 0,
-      "bottom": 0
-    },
-    "cropAdjustments": {}
+    "fontMetrics": {
+      "fontWeight010": {
+        "capHeight": 671,
+        "ascent": 695,
+        "descent": -172,
+        "lineGap": 65,
+        "unitsPerEm": 1000
+      }
+    }
   },
   "fontFamily020": {
     "fontFamily": "TimesDigitalW04-Regular",
-    "cropConfig": {
-      "top": 0,
-      "bottom": 0
-    },
-    "cropAdjustments": {}
+    "fontMetrics": {
+      "fontWeight010": {
+        "capHeight": 713,
+        "ascent": 992,
+        "descent": -319,
+        "lineGap": 0,
+        "unitsPerEm": 1000
+      }
+    }
   },
   "fontFamily030": {
     "fontFamily": "Roboto-Regular",
-    "cropConfig": {
-      "top": 0,
-      "bottom": 0
-    },
-    "cropAdjustments": {}
+    "fontMetrics": {
+      "fontWeight010": {
+        "capHeight": 1456,
+        "ascent": 1900,
+        "descent": -500,
+        "lineGap": 0,
+        "unitsPerEm": 2048
+      }
+    }
   },
   "fontFamily040": {
     "fontFamily": "TimesModern-Bold",
-    "cropConfig": {
-      "top": 0,
-      "bottom": 0
-    },
-    "cropAdjustments": {}
+    "fontMetrics": {
+      "fontWeight010": {
+        "capHeight": 671,
+        "ascent": 695,
+        "descent": -172,
+        "lineGap": 65,
+        "unitsPerEm": 1000
+      }
+    }
   },
   "newFontFamily": {
     "fontFamily": "Roboto-Medium",
-    "cropConfig": {
-      "top": 0,
-      "bottom": 0
-    },
-    "cropAdjustments": {}
+    "fontMetrics": {
+      "fontWeight010": {
+        "capHeight": 1456,
+        "ascent": 1900,
+        "descent": -500,
+        "lineGap": 0,
+        "unitsPerEm": 2048
+      }
+    }
   },
   "fontWeight010": 400,
   "fontWeight020": 500,
