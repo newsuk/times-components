@@ -1,18 +1,4 @@
-import { useEffect, createElement, useRef, useState } from "react";
-
-function useStaticContent() {
-  const ref = useRef(null);
-  const [render, setRender] = useState(typeof window === "undefined");
-
-  useEffect(() => {
-    const isEmpty = !!ref.current && ref.current.innerHTML === "";
-    if (isEmpty) {
-      setRender(true);
-    }
-  }, []);
-
-  return [render, ref];
-}
+import { createElement } from "react";
 
 export default function StaticContent({
   children,
@@ -20,18 +6,9 @@ export default function StaticContent({
   html,
   ...props
 }) {
-  const [shouldRender, ref] = useStaticContent();
-
-  if (shouldRender) {
-    return createElement(element, {
-      ...props,
-      children
-    });
-  }
-
   return createElement(element, {
     ...props,
-    ref,
+    undefined,
     suppressHydrationWarning: true,
     dangerouslySetInnerHTML: { __html: html }
   });
