@@ -8,7 +8,7 @@ exports[`LoggedOutNavButton should render the component 1`] = `
     type="button"
   >
     <span
-      class="css-1e6qfd8"
+      class="css-bspkx3"
     >
       title
     </span>

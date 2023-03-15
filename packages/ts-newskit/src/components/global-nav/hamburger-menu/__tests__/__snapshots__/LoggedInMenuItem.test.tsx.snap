@@ -8,7 +8,7 @@ exports[`Logged in Menu Item should render the component 1`] = `
     type="button"
   >
     <span
-      class="css-1bgi23z"
+      class="css-wo6lye"
     >
       title
     </span>

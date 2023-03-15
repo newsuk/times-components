@@ -12,7 +12,7 @@ exports[`Create More Menu should render snapshot 1`] = `
       href="/puzzles"
     >
       <span
-        class="css-80nvvq"
+        class="css-13r5wx9"
       >
         Puzzles
       </span>
@@ -31,7 +31,7 @@ exports[`Create More Menu should render snapshot 1`] = `
       href="/magazines"
     >
       <span
-        class="css-80nvvq"
+        class="css-13r5wx9"
       >
         Magazines
       </span>
