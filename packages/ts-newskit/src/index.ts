@@ -13,3 +13,4 @@ export {
 } from './components/global-nav/wrapped-components/WrappedComponents';
 export { HamburgerMenuContainer } from './components/global-nav/styles';
 export { GlobalNavWithCustomDrawer } from './components/global-nav';
+export { SecondaryNavigation } from './components/secondary-menu';
