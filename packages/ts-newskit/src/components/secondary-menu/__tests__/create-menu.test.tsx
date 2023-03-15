@@ -5,11 +5,6 @@ import { mainMenuItems } from '../fixtures/menu-items.json';
 import { cleanup, waitFor, fireEvent } from '@testing-library/react';
 import { CreateMenu } from '../desktop/create-menu';
 
-jest.mock('newskit', () => ({
-  ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('lg')
-}));
-
 const options = {
   handleSelect: jest.fn(),
   setIsExpanded: jest.fn(),

@@ -1,4 +1,4 @@
-import { debounce } from '../debounced';
+import { debounce } from '../index';
 
 jest.useFakeTimers();
 

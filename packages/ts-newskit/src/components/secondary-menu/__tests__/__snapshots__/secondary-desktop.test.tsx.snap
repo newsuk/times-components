@@ -164,7 +164,7 @@ exports[`Secondary Menu Desktop should render snapshot 1`] = `
   </nav>
   <hr
     aria-hidden="true"
-    class="css-fdgl4i"
+    class="css-17c7vvt"
     data-testid="divider"
   />
 </DocumentFragment>

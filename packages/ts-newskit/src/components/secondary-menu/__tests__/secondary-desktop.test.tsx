@@ -24,8 +24,6 @@ describe('Secondary Menu Desktop', () => {
   });
 
   it('should render snapshot', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
-
     const { asFragment } = render(
       <SecondaryNavDesktop data={mainMenuItems} options={options} />
     );
@@ -55,8 +53,6 @@ describe('Secondary Menu Desktop', () => {
   });
 
   it('should render navitems', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
-
     const { getAllByRole } = render(
       <SecondaryNavDesktop data={mainMenuItems} options={options} />
     );

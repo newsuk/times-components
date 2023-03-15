@@ -4,12 +4,6 @@ import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
 import { cleanup, fireEvent } from '@testing-library/react';
 import { CreateMoreMenu } from '../desktop/create-more-menu';
-import { useBreakpointKey } from 'newskit';
-
-jest.mock('newskit', () => ({
-  ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl')
-}));
 
 const options = {
   handleSelect: jest.fn(),
@@ -25,7 +19,6 @@ describe('Create More Menu', () => {
   });
 
   it('should render snapshot', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
     const { asFragment } = render(
       <CreateMoreMenu
         data={mainMenuItems}
@@ -73,7 +66,6 @@ describe('Create More Menu', () => {
   });
 
   it('items should have length of 2', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
     const { getAllByRole } = render(
       <CreateMoreMenu
         data={mainMenuItems}
@@ -85,7 +77,6 @@ describe('Create More Menu', () => {
     expect(list.length).toEqual(2);
   });
   it('items should have length of 8', () => {
-    (useBreakpointKey as any).mockReturnValue('lg');
     const { getAllByRole } = render(
       <CreateMoreMenu
         data={mainMenuItems}
