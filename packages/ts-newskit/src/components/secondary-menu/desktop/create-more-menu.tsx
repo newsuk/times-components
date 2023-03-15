@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { MenuItem } from 'newskit';
-import { MenuDividerDropdown } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
+import { MenuDividerDropdown } from '../styles';
 
 export const CreateMoreMenu: React.FC<{
   options: SecondaryMenuOptions;

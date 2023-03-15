@@ -4,12 +4,7 @@ import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
 import { cleanup, fireEvent } from '@testing-library/react';
 import { NavItems } from '../desktop/navItems';
-import { useBreakpointKey } from 'newskit';
 
-jest.mock('newskit', () => ({
-  ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl')
-}));
 const options = {
   handleSelect: jest.fn(),
   setIsExpanded: jest.fn(),
@@ -25,7 +20,6 @@ describe('Navitems Desktop', () => {
   });
 
   it('should render snapshot', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
     const { asFragment } = render(
       <NavItems
         data={mainMenuItems}

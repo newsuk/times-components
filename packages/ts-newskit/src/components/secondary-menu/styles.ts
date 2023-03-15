@@ -1,19 +1,15 @@
-import { Menu, styled, getColorCssFromTheme } from 'newskit';
-import { MainMenuProp, MoreMenuItemsProp, BreakPointProp } from './types';
+import { Menu, styled, getColorCssFromTheme, Divider } from 'newskit';
+import { MainMenuProp, BreakPointProp } from './types';
 
-export const MenuDivider = styled.hr<BreakPointProp>`
+export const MenuDivider = styled(Divider)<BreakPointProp>`
   width: ${({ breakpointKey }) =>
     breakpointKey === 'xl' ? '1140px' : 'calc(100% - 54px)'};
   margin: auto;
-  border: 1px solid;
-  ${getColorCssFromTheme('color', 'neutral010')};
+  ${getColorCssFromTheme('borderColor', 'neutral030')};
 `;
 
-export const MenuDividerMobile = styled.hr`
-  width: calc(100% - 64px);
-  margin: auto;
-  border: 1px solid;
-  ${getColorCssFromTheme('color', 'neutral010')};
+export const MenuDividerDropdown = styled(Divider)`
+  ${getColorCssFromTheme('borderColor', 'neutral030')};
 `;
 
 export const MainMenu = styled(Menu)<MainMenuProp>`
@@ -23,20 +19,6 @@ export const MainMenu = styled(Menu)<MainMenuProp>`
     justify-content: ${({ hasMoreItems }) =>
       hasMoreItems ? `space-between` : `center`};
   }
-`;
-
-export const MenuDividerDropdown = styled.hr`
-  margin: 0;
-  border: 1px solid;
-  ${getColorCssFromTheme('color', 'neutral030')};
-  margin: 0 16px;
-`;
-
-export const Container = styled.div<MoreMenuItemsProp>`
-  display: flex;
-  justify-content: ${({ moreMenuItemsLength }) =>
-    moreMenuItemsLength > 0 ? `space-between` : `center`};
-  width: 100%;
 `;
 
 export const Wrapper = styled.div`
@@ -52,9 +34,6 @@ export const MenuContainer = styled(Menu)`
     width: max-content;
     min-width: 200px;
   }
-  li {
-    margin: -2px 0;
-  }
 
   & hr:last-child {
     display: none;
@@ -62,7 +41,10 @@ export const MenuContainer = styled(Menu)`
 
   li:hover {
     background-color: #e4e4e4;
-    margin: -2px 0;
+  }
+
+  li button:hover {
+    background-color: #e4e4e4;
   }
 `;
 

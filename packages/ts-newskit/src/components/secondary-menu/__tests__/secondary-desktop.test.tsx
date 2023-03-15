@@ -24,8 +24,6 @@ describe('Secondary Menu Desktop', () => {
   });
 
   it('should render snapshot', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
-
     const { asFragment } = render(
       <SecondaryNavDesktop data={mainMenuItems} options={options} />
     );
@@ -54,22 +52,20 @@ describe('Secondary Menu Desktop', () => {
     expect(options.handleSelect).toHaveBeenCalled();
   });
 
-  it('should call handleSelect when clicked', () => {
-    (useBreakpointKey as any).mockReturnValue('md');
-
+  it('should render navitems', () => {
     const { getAllByRole } = render(
       <SecondaryNavDesktop data={mainMenuItems} options={options} />
     );
     const list = getAllByRole('listitem');
-    expect(list.length).toEqual(8);
+    expect(list.length).toEqual(9);
   });
   it('should change the width of menudivader when screen size change', () => {
     (useBreakpointKey as any).mockReturnValue('xl');
 
-    const { getByRole } = render(
+    const { getByTestId } = render(
       <SecondaryNavDesktop data={mainMenuItems} options={options} />
     );
-    const hr = getByRole('hr');
+    const hr = getByTestId('divider');
     expect(hr).toHaveStyle('width: 1140px');
   });
 });

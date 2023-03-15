@@ -4,10 +4,11 @@ import { SecondaryNavMobile } from './mobile';
 import { Visible } from 'newskit';
 import { SecondaryMenuItem } from './types';
 
-export const SecondaryNavigation: React.FC<{
-  title: string;
+interface SecondaryNavigationProps {
   data: SecondaryMenuItem[];
-}> = ({ data }) => {
+}
+
+export const SecondaryNavigation = ({ data }: SecondaryNavigationProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [isSelected, setIsSelected] = useState<string>('');
   const firstItem = data[0].title;

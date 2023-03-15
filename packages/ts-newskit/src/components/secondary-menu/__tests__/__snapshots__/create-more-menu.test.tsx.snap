@@ -19,7 +19,9 @@ exports[`Create More Menu should render snapshot 1`] = `
     </a>
   </li>
   <hr
-    class="css-1r4u4vf"
+    aria-hidden="true"
+    class="css-1njghbt"
+    data-testid="divider"
   />
   <li
     class="nk-menu-item css-1kdinep"
@@ -38,7 +40,9 @@ exports[`Create More Menu should render snapshot 1`] = `
     </a>
   </li>
   <hr
-    class="css-1r4u4vf"
+    aria-hidden="true"
+    class="css-1njghbt"
+    data-testid="divider"
   />
 </DocumentFragment>
 `;

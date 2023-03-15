@@ -1,14 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { MenuSub, Menu } from 'newskit';
-import { MenuContainer, Container, Wrapper, MainMenu } from '../styles';
-import {
-  SecondaryMenuOptions,
-  SecondaryMenuItem,
-  seeAllButtonWidth
-} from '../types';
+import { MenuContainer, Wrapper, MainMenu } from '../styles';
+import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
-import { getBreakpoint } from '../../utils/getBreakPoint';
+import { debounce, getWidth } from '../../utils';
 
 export const CreateMenu: React.FC<{
   options: SecondaryMenuOptions;
@@ -17,37 +13,39 @@ export const CreateMenu: React.FC<{
   const contanierRef = useRef<HTMLDivElement>(null);
   const navListRef = useRef<HTMLDivElement>(null);
   const { isExpanded, setIsExpanded } = options;
-  const { moreMenuLength, menuItems, breakpointKey } = getBreakpoint(data);
-  const [moreMenuItemsLength, setMoreMenuItemsLength] = useState<number>(
-    moreMenuLength
-  );
-  const [hasMenuItem, setHasMenuItem] = useState<number>(menuItems);
-  const getWidth = (el: any) => el.clientWidth;
+  const [hasMenuItem, setHasMenuItem] = useState<number>(data.length);
+  const [moreMenuItemsLength, setMoreMenuItemsLength] = useState<number>(0);
+  const subMenuTitle = isExpanded ? 'Less' : 'More';
 
-  useEffect(
-    () => {
-      if (breakpointKey !== 'sm' && breakpointKey !== 'xs') {
-        setMoreMenuItemsLength(moreMenuLength);
-        setHasMenuItem(menuItems);
-        const updateNav = (navAdjustCount = 1) => {
-          setTimeout(() => {
-            const navListContainerWidth = getWidth(contanierRef.current);
-            const navListWidth = getWidth(navListRef.current);
-            if (
-              navListWidth >
-              navListContainerWidth - seeAllButtonWidth[breakpointKey]
-            ) {
-              setMoreMenuItemsLength(moreMenuLength + navAdjustCount);
-              setHasMenuItem(menuItems - navAdjustCount);
-              updateNav(navAdjustCount + 1);
-            }
-          }, 1000);
-        };
-        updateNav();
+  useEffect(() => {
+    const handleResize = async (navAdjustCount = 1) => {
+      setMoreMenuItemsLength(moreMenuItemsLength);
+      setHasMenuItem(hasMenuItem);
+
+      const navListContainerWidth = await getWidth(contanierRef.current);
+      const navListWidth = await getWidth(navListRef.current);
+
+      if (
+        navListWidth > navListContainerWidth - 200 &&
+        navListWidth > 0 &&
+        navListContainerWidth > 0
+      ) {
+        setMoreMenuItemsLength(moreMenuItemsLength + navAdjustCount);
+        setHasMenuItem(hasMenuItem - navAdjustCount);
+
+        const updatedNavListWidth = await getWidth(navListRef.current);
+        updatedNavListWidth > navListContainerWidth - 200 &&
+          handleResize(navAdjustCount + 1);
       }
-    },
-    [breakpointKey]
-  );
+    };
+
+    window.addEventListener('resize', debounce(() => handleResize(), 500));
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', debounce(() => handleResize(), 500));
+    };
+  }, []);
 
   useEffect(
     () => {
@@ -75,43 +73,40 @@ export const CreateMenu: React.FC<{
       overrides={{
         spaceInline: 'space050'
       }}
+      ref={contanierRef}
     >
-      <Container ref={contanierRef} moreMenuItemsLength={moreMenuItemsLength}>
-        <Wrapper ref={navListRef} data-testid="navitems-test-id">
-          <NavItems data={data} options={options} hasMenuItem={hasMenuItem} />
-        </Wrapper>
-        {moreMenuItemsLength > 0 && (
-          <MenuSub
-            onClick={() => setIsExpanded(!isExpanded)}
-            expanded={isExpanded}
-            title="See all"
-            overrides={{
-              stylePreset: `${
-                isExpanded ? 'subMenuPreset2' : 'subMenuPreset1'
-              }`,
-              list: { stylePreset: 'subMenuItems' },
-              typographyPreset: 'newPreset040'
-            }}
-            data-testid="more-sub-menu"
-          >
-            <MenuContainer>
-              <Menu
-                vertical
-                overrides={{
-                  spaceInline: 'sizing000'
-                }}
-                aria-label="menu-multiple-auto"
-              >
-                <CreateMoreMenu
-                  data={data}
-                  options={options}
-                  moreMenuItemsLength={moreMenuItemsLength}
-                />
-              </Menu>
-            </MenuContainer>
-          </MenuSub>
-        )}
-      </Container>
+      <Wrapper ref={navListRef} data-testid="navitems-test-id">
+        <NavItems data={data} options={options} hasMenuItem={hasMenuItem} />
+      </Wrapper>
+      {moreMenuItemsLength > 0 && (
+        <MenuSub
+          onClick={() => setIsExpanded(!isExpanded)}
+          expanded={isExpanded}
+          title={subMenuTitle}
+          overrides={{
+            stylePreset: `${isExpanded ? 'subMenuPreset2' : 'subMenuPreset1'}`,
+            list: { stylePreset: 'subMenuItems' },
+            typographyPreset: 'newPreset040'
+          }}
+          data-testid="more-sub-menu"
+        >
+          <MenuContainer>
+            <Menu
+              vertical
+              overrides={{
+                spaceInline: 'sizing000'
+              }}
+              aria-label="menu-multiple-auto"
+            >
+              <CreateMoreMenu
+                data={data}
+                options={options}
+                moreMenuItemsLength={moreMenuItemsLength}
+              />
+            </Menu>
+          </MenuContainer>
+        </MenuSub>
+      )}
     </MainMenu>
   );
 };

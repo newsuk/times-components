@@ -16,6 +16,7 @@ export const Navigator: React.FC<{
       </Block>
       <MenuSub
         title={subMenuTitle}
+        expanded={isExpanded}
         onClick={() => {
           setIsExpanded(!isExpanded);
         }}

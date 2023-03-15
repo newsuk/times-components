@@ -22,19 +22,3 @@ export type SecondaryMenuOptions = {
   isExpanded: boolean;
   setIsExpanded: (value: boolean) => void;
 };
-
-interface Size {
-  xl: number;
-  lg: number;
-  md: number;
-  sm: number;
-  xs: number;
-}
-
-export const seeAllButtonWidth: Size = {
-  xl: 0,
-  lg: 120,
-  md: 110,
-  sm: 0,
-  xs: 0
-};
