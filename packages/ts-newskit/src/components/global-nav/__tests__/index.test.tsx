@@ -72,10 +72,7 @@ describe('GlobalNavWithCustomDrawer', () => {
 
   it('matches snapshot when logged out', () => {
     const { asFragment } = render(
-      <GlobalNavWithCustomDrawer
-        data={data}
-        isSunday={false}
-      />
+      <GlobalNavWithCustomDrawer data={data} isSunday={false} />
     );
     expect(asFragment()).toMatchSnapshot();
   });
