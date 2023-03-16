@@ -2,7 +2,11 @@ import React from 'react';
 import { render, screen, fireEvent } from '../../utils/test-utils';
 import '@testing-library/jest-dom';
 import data from '../fixtures/data.json';
-import { GlobalNav, GlobalNavWithCustomDrawer } from '../index';
+import {
+  GlobalNav,
+  GlobalNavWithCustomDrawer,
+  TSNewskitDrawer
+} from '../index';
 
 const renderComponent = (isLoggedIn?: boolean) =>
   render(<GlobalNav {...{ isLoggedIn, data }} />);
@@ -51,6 +55,22 @@ describe('GlobalNavWithCustomDrawer', () => {
         isLoggedIn={false}
         isSunday={false}
       />
+    );
+    expect(asFragment()).toBeTruthy();
+  });
+});
+
+describe('TSNewskitDrawer', () => {
+  it('renders', () => {
+    const { asFragment } = render(
+      <TSNewskitDrawer
+        open={true}
+        onDismiss={() => {
+          '';
+        }}
+      >
+        <div>hi</div>
+      </TSNewskitDrawer>
     );
     expect(asFragment()).toBeTruthy();
   });
