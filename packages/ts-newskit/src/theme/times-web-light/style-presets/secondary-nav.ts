@@ -15,13 +15,14 @@ export const secondaryNavigationStylePresets = {
     base: {
       color: '#1D1D1B',
       backgroundColor: '{{colors.white}}',
-      padding: '10px 0',
+      padding: '10px 7px',
       minWidth: 'max-content',
       borderBottom: '4px solid transparent',
-      display: 'flex'
+      display: 'flex',
+      marginRight: '-14px'
     },
     hover: {
-      borderBottom: '4px solid #01000D'
+      backgroundColor: '{{colors.neutral010}}'
     },
     selected: {
       borderBottom: '4px solid #01000D'
