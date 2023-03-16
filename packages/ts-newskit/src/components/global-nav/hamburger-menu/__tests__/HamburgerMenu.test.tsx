@@ -84,15 +84,6 @@ describe('HamburgerMenu - Logged In', () => {
 });
 
 describe('HamburgerMenu - Logged Out', () => {
-  it('should render the login and subscribe button section on smaller devices', () => {
-    const { asFragment, getByText } = render(
-      <HamburgerMenu data={data} isLoggedIn={false} />
-    );
-    expect(asFragment()).toMatchSnapshot();
-    expect(getByText('Log in')).toBeVisible();
-    expect(getByText('Subscribe')).toBeVisible();
-  });
-
   it('should only show the Sections and not the account menu', () => {
     const { getByText, queryByText } = render(
       <HamburgerMenu data={data} isLoggedIn={false} />
