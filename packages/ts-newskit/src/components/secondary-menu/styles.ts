@@ -33,6 +33,7 @@ export const MenuContainer = styled(Menu)`
     float: right;
     width: max-content;
     min-width: 200px;
+    z-index: 1;
   }
 
   & hr:last-child {
