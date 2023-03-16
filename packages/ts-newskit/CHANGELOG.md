@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.8.1...@times-components/ts-newskit@1.8.2) (2023-03-16)
+
+
+### Bug Fixes
+
+* **TDP-3295:** add z index ([#3284](https://github.com/newsuk/times-components/issues/3284)) ([91d5195](https://github.com/newsuk/times-components/commit/91d5195446d205add7c864368619b80f9d47dfab))
+
+
+
+
+
 ## [1.8.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.8.0...@times-components/ts-newskit@1.8.1) (2023-03-16)
 
 
