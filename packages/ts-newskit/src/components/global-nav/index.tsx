@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, ReactNode } from 'react';
 import { TopNav } from './topnav/topnav';
 import { HamburgerMenu } from './hamburger-menu/HamburgerMenu';
 import { NavigationData } from './types';
 import { CustomHamburgerMenuContainer } from './HamburgerMenuContainer';
 import { HamburgerMenuContainer } from './styles';
+import { Drawer } from 'newskit';
 
 interface GlobalNavProps {
   isLoggedIn?: boolean;
@@ -59,5 +60,17 @@ export const GlobalNavWithCustomDrawer = ({
         <HamburgerMenu {...{ isLoggedIn, data }} />
       </CustomHamburgerMenuContainer>
     </>
+  );
+};
+
+export const TSNewskitDrawer: React.FC<{
+  children: ReactNode;
+  open: boolean;
+  onDismiss: () => void;
+}> = ({ children, open, onDismiss }) => {
+  return (
+    <Drawer onDismiss={onDismiss} open={open}>
+      {children}
+    </Drawer>
   );
 };
