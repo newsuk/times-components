@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.8.2...@times-components/ts-newskit@1.8.3) (2023-03-16)
+
+
+### Bug Fixes
+
+* **TDP-3295:** change hover style ([#3285](https://github.com/newsuk/times-components/issues/3285)) ([0ea65a7](https://github.com/newsuk/times-components/commit/0ea65a742a9cb411fe2cf9c74cf8b334c688c1c4))
+
+
+
+
+
 ## [1.8.2](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.8.1...@times-components/ts-newskit@1.8.2) (2023-03-16)
 
 
