@@ -70,7 +70,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
   >
     <nav
       aria-label="Secondary Navigation"
-      class="css-1hyt1wq"
+      class="css-sieal6"
       data-testid="menu-container"
       role="navigation"
     >
@@ -86,7 +86,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="page"
-              class="css-75deup"
+              class="css-13lxomi"
               data-testid="buttonLink"
               href="/home"
             >
@@ -102,7 +102,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1fbfbp8"
+              class="css-ffp9mv"
               data-testid="buttonLink"
               href="/news"
             >
@@ -118,7 +118,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1fbfbp8"
+              class="css-ffp9mv"
               data-testid="buttonLink"
               href="/comment"
             >
@@ -134,7 +134,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1fbfbp8"
+              class="css-ffp9mv"
               data-testid="buttonLink"
               href="/life-and-style"
             >
@@ -150,7 +150,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1fbfbp8"
+              class="css-ffp9mv"
               data-testid="buttonLink"
               href="/arts-and-books"
             >
@@ -166,7 +166,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1fbfbp8"
+              class="css-ffp9mv"
               data-testid="buttonLink"
               href="/sport"
             >
@@ -182,7 +182,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1fbfbp8"
+              class="css-ffp9mv"
               data-testid="buttonLink"
               href="/business-and-money"
             >
@@ -198,7 +198,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1fbfbp8"
+              class="css-ffp9mv"
               data-testid="buttonLink"
               href="/puzzles"
             >
@@ -214,7 +214,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
           >
             <a
               aria-current="false"
-              class="css-1fbfbp8"
+              class="css-ffp9mv"
               data-testid="buttonLink"
               href="/magazines"
             >

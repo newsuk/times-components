@@ -13,7 +13,7 @@ export const MenuDividerDropdown = styled(Divider)`
 `;
 
 export const MainMenu = styled(Menu)<MainMenuProp>`
-  padding-left: 54px;
+  padding-left: 47px;
   padding-right: ${({ hasMoreItems }) => (hasMoreItems ? '28px' : '54px')};
   ul {
     justify-content: ${({ hasMoreItems }) =>
