@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.7.11...@times-components/ts-newskit@1.8.0) (2023-03-16)
+
+
+### Features
+
+* **TDP-3295:** secondary menu component documentation ([#3272](https://github.com/newsuk/times-components/issues/3272)) ([5fea236](https://github.com/newsuk/times-components/commit/5fea2363fb5c98733e4536d7ad56a24d01bcafba))
+
+
+
+
+
 ## [1.7.11](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.7.10...@times-components/ts-newskit@1.7.11) (2023-03-15)
 
 **Note:** Version bump only for package @times-components/ts-newskit
