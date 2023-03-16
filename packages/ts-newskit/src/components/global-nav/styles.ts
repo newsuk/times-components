@@ -44,6 +44,7 @@ export const AccountMenu = styled(Menu)`
 export const ScrollMenuContainer = styled(Visible)`
   & > div {
     z-index: 0;
+    background-color: white;
   }
 `;
 

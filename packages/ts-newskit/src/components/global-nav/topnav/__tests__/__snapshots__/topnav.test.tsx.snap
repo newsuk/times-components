@@ -598,7 +598,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
     </div>
   </div>
   <div
-    class="css-1e0kstp"
+    class="css-w2idll"
   >
     <div
       class="css-1r18k3i"
@@ -1245,7 +1245,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
     </div>
   </div>
   <div
-    class="css-1e0kstp"
+    class="css-w2idll"
   >
     <div
       class="css-1r18k3i"
@@ -1994,7 +1994,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
     </div>
   </div>
   <div
-    class="css-1e0kstp"
+    class="css-w2idll"
   >
     <div
       class="css-1r18k3i"
