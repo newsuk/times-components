@@ -80,8 +80,6 @@ describe('NavButtons Logged Out', () => {
     const accountButtons = screen.getByRole('region', {
       name: 'My Account Navigation'
     });
-    // const loginBtn = screen.getByRole('link', { name: 'Login' });
-    // const subscribeBtn = screen.getByRole('link', { name: 'Subscribe' });
 
     expect(accountButtons).toBeInTheDocument();
   });
