@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.8.0...@times-components/ts-newskit@1.8.1) (2023-03-16)
+
+
+### Bug Fixes
+
+* **TDP-0000:** fix publish npm ([#3283](https://github.com/newsuk/times-components/issues/3283)) ([b0f1528](https://github.com/newsuk/times-components/commit/b0f15283c677630fdbd0d5a888f60237afbcb3e4))
+
+
+
+
+
 # [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.7.11...@times-components/ts-newskit@1.8.0) (2023-03-16)
 
 
