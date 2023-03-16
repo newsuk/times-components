@@ -163,7 +163,7 @@ exports[`Create Menu should render snapshot 1`] = `
           class="css-1me0nkm"
         >
           <nav
-            class="css-191sdml"
+            class="css-ntkh1s"
             data-testid="menu-container"
             role="navigation"
           >
