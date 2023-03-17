@@ -1,11 +1,7 @@
 import React from 'react';
 import { MenuSub, TextBlock } from 'newskit';
 import { SecondaryMenuOptions } from '../types';
-import {
-  StyledBlock,
-  subMenuStylePreset,
-  secondaryNavMenuBlockStylePreset
-} from '../styles';
+import { StyledBlock } from '../styles';
 
 export const Navigator: React.FC<{
   options: SecondaryMenuOptions;
@@ -13,6 +9,20 @@ export const Navigator: React.FC<{
   subMenuTitle: string;
 }> = ({ title, options, subMenuTitle }) => {
   const { isExpanded, setIsExpanded } = options;
+
+  const subMenuStylePreset = {
+    marginBlockStart: 'space020',
+    marginInlineEnd: 'space020',
+    paddingInline: 'space030',
+    minHeight: 'sizing060',
+    stylePreset: 'subMenu'
+  };
+
+  const secondaryNavMenuBlockStylePreset = {
+    paddingInlineStart: 'space040',
+    paddingInlineEnd: 'space040',
+    stylePreset: 'secondaryNavMenuBlock'
+  };
 
   return (
     <StyledBlock {...secondaryNavMenuBlockStylePreset}>

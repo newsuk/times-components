@@ -1,12 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Menu } from 'newskit';
-import {
-  MenuContainer,
-  Wrapper,
-  MainMenu,
-  StyledMenuSub,
-  subMenuDesktopStylePreset
-} from '../styles';
+import { MenuContainer, Wrapper, MainMenu, StyledMenuSub } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
@@ -71,6 +65,13 @@ export const CreateMenu: React.FC<{
     },
     [isExpanded]
   );
+
+  const subMenuDesktopStylePreset = {
+    paddingBlockStart: 'space020',
+    paddingBlockEnd: 'space030',
+    paddingInlineStart: 'space040',
+    paddingInlineEnd: 'space040'
+  };
 
   return (
     <MainMenu

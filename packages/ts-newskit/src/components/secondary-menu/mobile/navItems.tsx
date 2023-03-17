@@ -1,9 +1,6 @@
 import React from 'react';
 import { MenuItem } from 'newskit';
-import {
-  NavItemsContainer,
-  secondaryMenuItemMobileStylePreset
-} from '../styles';
+import { NavItemsContainer } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 
 export const NavItems: React.FC<{
@@ -11,6 +8,14 @@ export const NavItems: React.FC<{
   data: SecondaryMenuItem[];
 }> = ({ options, data }) => {
   const { handleSelect } = options;
+
+  const secondaryMenuItemMobileStylePreset = {
+    paddingInlineStart: 'space060',
+    paddingInlineEnd: 'space060',
+    marginBlockStart: '-2px',
+    marginInlineEnd: '-2px',
+    stylePreset: 'secondaryMenuItem'
+  };
 
   return (
     <NavItemsContainer>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
-import { StyledMenuItemsDesktop, menuItemDesktopStylePreset } from '../styles';
+import { StyledMenuItemsDesktop } from '../styles';
 
 export const NavItems: React.FC<{
   options: SecondaryMenuOptions;
@@ -8,6 +8,12 @@ export const NavItems: React.FC<{
   hasMenuItem: number;
 }> = ({ options, data, hasMenuItem }) => {
   const { handleSelect, isSelected } = options;
+
+  const menuItemDesktopStylePreset = {
+    paddingInlineStart: '6px',
+    paddingInlineEnd: '6px',
+    stylePreset: 'menuItemDesktop'
+  };
 
   return (
     <>
