@@ -54,13 +54,13 @@ export const secondaryNavigationStylePresets = {
     }
   },
 
-  textBlock: {
+  secondaryNavTextBlock: {
     base: {
       marginTop: '{{sizing.sizing040}}',
       marginLeft: '6px'
     }
   },
-  menuBlock: {
+  secondaryNavMenuBlock: {
     base: {
       height: '{{sizing.sizing080}}',
       display: 'flex',

@@ -10,8 +10,11 @@ export const Navigator: React.FC<{
   const { isExpanded, setIsExpanded } = options;
 
   return (
-    <Block stylePreset="menuBlock">
-      <TextBlock stylePreset="textBlock" typographyPreset="utilityHeading060">
+    <Block stylePreset="secondaryNavMenuBlock">
+      <TextBlock
+        stylePreset="secondaryNavTextBlock"
+        typographyPreset="utilityHeading060"
+      >
         {title}
       </TextBlock>
       <MenuSub
