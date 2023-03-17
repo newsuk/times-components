@@ -1,4 +1,12 @@
-import { Menu, styled, getColorCssFromTheme, Divider } from 'newskit';
+import {
+  Menu,
+  styled,
+  getColorCssFromTheme,
+  Divider,
+  Block,
+  MenuSub,
+  MenuItem
+} from 'newskit';
 import { MainMenuProp, BreakPointProp } from './types';
 
 export const MenuDivider = styled(Divider)<BreakPointProp>`
@@ -23,6 +31,20 @@ export const MainMenu = styled(Menu)<MainMenuProp>`
 
 export const Wrapper = styled.div`
   display: flex;
+`;
+
+export const StyledMenuSub = styled(MenuSub)`
+  min-width: 100px;
+`;
+
+export const StyledMenuItemsDesktop = styled(MenuItem)`
+  min-width: max-content;
+`;
+
+export const StyledBlock = styled(Block)`
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
 `;
 
 export const MenuContainer = styled(Menu)`

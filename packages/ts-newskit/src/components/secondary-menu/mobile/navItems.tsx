@@ -2,6 +2,7 @@ import React from 'react';
 import { MenuItem } from 'newskit';
 import { NavItemsContainer } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
+import { secondaryMenuItemMobileStylePreset } from '../../../theme/times-web-light/style-presets/secondary-nav';
 
 export const NavItems: React.FC<{
   options: SecondaryMenuOptions;
@@ -14,7 +15,7 @@ export const NavItems: React.FC<{
       {data.map(({ url, slug, title }) => (
         <MenuItem
           overrides={{
-            stylePreset: 'secondaryMenuItem',
+            ...secondaryMenuItemMobileStylePreset,
             typographyPreset: 'newPreset020'
           }}
           href={url}

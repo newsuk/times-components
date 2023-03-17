@@ -1,6 +1,11 @@
 import React from 'react';
-import { MenuSub, TextBlock, Block } from 'newskit';
+import { MenuSub, TextBlock } from 'newskit';
 import { SecondaryMenuOptions } from '../types';
+import { StyledBlock } from '../styles';
+import {
+  subMenuStylePreset,
+  secondaryNavMenuBlockStylePreset
+} from '../../../theme/times-web-light/style-presets/secondary-nav';
 
 export const Navigator: React.FC<{
   options: SecondaryMenuOptions;
@@ -10,9 +15,9 @@ export const Navigator: React.FC<{
   const { isExpanded, setIsExpanded } = options;
 
   return (
-    <Block stylePreset="secondaryNavMenuBlock">
+    <StyledBlock {...secondaryNavMenuBlockStylePreset}>
       <TextBlock
-        stylePreset="secondaryNavTextBlock"
+        marginBlockStart="space040"
         typographyPreset="utilityHeading060"
       >
         {title}
@@ -24,7 +29,7 @@ export const Navigator: React.FC<{
           setIsExpanded(!isExpanded);
         }}
         overrides={{
-          stylePreset: 'subMenu',
+          ...subMenuStylePreset,
           typographyPreset: 'newPreset030',
           indicatorIcon: {
             props: {
@@ -37,6 +42,6 @@ export const Navigator: React.FC<{
       >
         {null}
       </MenuSub>
-    </Block>
+    </StyledBlock>
   );
 };
