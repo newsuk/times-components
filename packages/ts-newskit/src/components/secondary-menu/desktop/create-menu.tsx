@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { MenuSub, Menu } from 'newskit';
-import { MenuContainer, Wrapper, MainMenu } from '../styles';
+import { Menu } from 'newskit';
+import { MenuContainer, Wrapper, MainMenu, StyledMenuSub } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
@@ -71,19 +71,23 @@ export const CreateMenu: React.FC<{
       hasMoreItems={moreMenuItemsLength > 0 ? true : false}
       aria-label="Secondary Navigation"
       overrides={{
-        spaceInline: 'space050'
+        spaceInline: 'space030'
       }}
       ref={contanierRef}
     >
-      <Wrapper ref={navListRef} data-testid="navitems-test-id">
+      <Wrapper ref={navListRef}>
         <NavItems data={data} options={options} hasMenuItem={hasMenuItem} />
       </Wrapper>
       {moreMenuItemsLength > 0 && (
-        <MenuSub
+        <StyledMenuSub
           onClick={() => setIsExpanded(!isExpanded)}
           expanded={isExpanded}
           title={subMenuTitle}
           overrides={{
+            paddingBlockStart: 'space020',
+            paddingBlockEnd: 'space030',
+            paddingInlineStart: 'space040',
+            paddingInlineEnd: 'space040',
             stylePreset: `${isExpanded ? 'subMenuPreset2' : 'subMenuPreset1'}`,
             list: { stylePreset: 'subMenuItems' },
             typographyPreset: 'newPreset040'
@@ -105,7 +109,7 @@ export const CreateMenu: React.FC<{
               />
             </Menu>
           </MenuContainer>
-        </MenuSub>
+        </StyledMenuSub>
       )}
     </MainMenu>
   );

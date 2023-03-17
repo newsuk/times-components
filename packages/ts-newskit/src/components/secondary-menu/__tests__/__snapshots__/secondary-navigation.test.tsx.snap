@@ -15,23 +15,19 @@ exports[`Secondary Menu should render snapshot 1`] = `
         role="list"
       >
         <div
-          class="css-eoq587"
+          class="css-ss2ymz"
         >
-          <div
-            class="css-1eave7u"
+          <p
+            class="css-dmifd7"
           >
-            <p
-              class="css-cgkz7y"
-            >
-              Home
-            </p>
-          </div>
+            Home
+          </p>
           <li
-            class="nk-menu-item css-bkfzpe"
+            class="nk-menu-item css-1gz71w1"
           >
             <button
               aria-expanded="false"
-              class="css-qa8sb4"
+              class="css-i3znmg"
               data-testid="menu-sub-button"
               type="button"
             >
@@ -70,7 +66,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
   >
     <nav
       aria-label="Secondary Navigation"
-      class="css-sieal6"
+      class="css-1hyt1wq"
       data-testid="menu-container"
       role="navigation"
     >
@@ -79,14 +75,13 @@ exports[`Secondary Menu should render snapshot 1`] = `
       >
         <div
           class="css-ov1ktg"
-          data-testid="navitems-test-id"
         >
           <li
-            class="nk-menu-item css-1iaj8wm"
+            class="nk-menu-item css-1e8z97h"
           >
             <a
               aria-current="page"
-              class="css-13lxomi"
+              class="css-iy3300"
               data-testid="buttonLink"
               href="/home"
             >
@@ -98,11 +93,11 @@ exports[`Secondary Menu should render snapshot 1`] = `
             </a>
           </li>
           <li
-            class="nk-menu-item css-1iaj8wm"
+            class="nk-menu-item css-1e8z97h"
           >
             <a
               aria-current="false"
-              class="css-ffp9mv"
+              class="css-839xlo"
               data-testid="buttonLink"
               href="/news"
             >
@@ -114,11 +109,11 @@ exports[`Secondary Menu should render snapshot 1`] = `
             </a>
           </li>
           <li
-            class="nk-menu-item css-1iaj8wm"
+            class="nk-menu-item css-1e8z97h"
           >
             <a
               aria-current="false"
-              class="css-ffp9mv"
+              class="css-839xlo"
               data-testid="buttonLink"
               href="/comment"
             >
@@ -130,11 +125,11 @@ exports[`Secondary Menu should render snapshot 1`] = `
             </a>
           </li>
           <li
-            class="nk-menu-item css-1iaj8wm"
+            class="nk-menu-item css-1e8z97h"
           >
             <a
               aria-current="false"
-              class="css-ffp9mv"
+              class="css-839xlo"
               data-testid="buttonLink"
               href="/life-and-style"
             >
@@ -146,11 +141,11 @@ exports[`Secondary Menu should render snapshot 1`] = `
             </a>
           </li>
           <li
-            class="nk-menu-item css-1iaj8wm"
+            class="nk-menu-item css-1e8z97h"
           >
             <a
               aria-current="false"
-              class="css-ffp9mv"
+              class="css-839xlo"
               data-testid="buttonLink"
               href="/arts-and-books"
             >
@@ -162,11 +157,11 @@ exports[`Secondary Menu should render snapshot 1`] = `
             </a>
           </li>
           <li
-            class="nk-menu-item css-1iaj8wm"
+            class="nk-menu-item css-1e8z97h"
           >
             <a
               aria-current="false"
-              class="css-ffp9mv"
+              class="css-839xlo"
               data-testid="buttonLink"
               href="/sport"
             >
@@ -178,11 +173,11 @@ exports[`Secondary Menu should render snapshot 1`] = `
             </a>
           </li>
           <li
-            class="nk-menu-item css-1iaj8wm"
+            class="nk-menu-item css-1e8z97h"
           >
             <a
               aria-current="false"
-              class="css-ffp9mv"
+              class="css-839xlo"
               data-testid="buttonLink"
               href="/business-and-money"
             >
@@ -194,11 +189,11 @@ exports[`Secondary Menu should render snapshot 1`] = `
             </a>
           </li>
           <li
-            class="nk-menu-item css-1iaj8wm"
+            class="nk-menu-item css-1e8z97h"
           >
             <a
               aria-current="false"
-              class="css-ffp9mv"
+              class="css-839xlo"
               data-testid="buttonLink"
               href="/puzzles"
             >
@@ -210,11 +205,11 @@ exports[`Secondary Menu should render snapshot 1`] = `
             </a>
           </li>
           <li
-            class="nk-menu-item css-1iaj8wm"
+            class="nk-menu-item css-1e8z97h"
           >
             <a
               aria-current="false"
-              class="css-ffp9mv"
+              class="css-839xlo"
               data-testid="buttonLink"
               href="/magazines"
             >

@@ -1,4 +1,12 @@
-import { Menu, styled, getColorCssFromTheme, Divider } from 'newskit';
+import {
+  Menu,
+  styled,
+  getColorCssFromTheme,
+  Divider,
+  Block,
+  MenuSub,
+  MenuItem
+} from 'newskit';
 import { MainMenuProp, BreakPointProp } from './types';
 
 export const MenuDivider = styled(Divider)<BreakPointProp>`
@@ -13,7 +21,7 @@ export const MenuDividerDropdown = styled(Divider)`
 `;
 
 export const MainMenu = styled(Menu)<MainMenuProp>`
-  padding-left: 47px;
+  padding-left: ${({ hasMoreItems }) => (hasMoreItems ? '48px' : '54px')};
   padding-right: ${({ hasMoreItems }) => (hasMoreItems ? '28px' : '54px')};
   ul {
     justify-content: ${({ hasMoreItems }) =>
@@ -23,6 +31,20 @@ export const MainMenu = styled(Menu)<MainMenuProp>`
 
 export const Wrapper = styled.div`
   display: flex;
+`;
+
+export const StyledMenuSub = styled(MenuSub)`
+  min-width: 100px;
+`;
+
+export const StyledMenuItemsDesktop = styled(MenuItem)`
+  min-width: max-content;
+`;
+
+export const StyledBlock = styled(Block)`
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
 `;
 
 export const MenuContainer = styled(Menu)`

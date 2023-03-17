@@ -1,6 +1,7 @@
 import React from 'react';
-import { MenuSub, TextBlock, Block } from 'newskit';
+import { MenuSub, TextBlock } from 'newskit';
 import { SecondaryMenuOptions } from '../types';
+import { StyledBlock } from '../styles';
 
 export const Navigator: React.FC<{
   options: SecondaryMenuOptions;
@@ -10,10 +11,17 @@ export const Navigator: React.FC<{
   const { isExpanded, setIsExpanded } = options;
 
   return (
-    <Block stylePreset="menuBlock">
-      <Block stylePreset="textBlock">
-        <TextBlock typographyPreset="utilityHeading060">{title}</TextBlock>
-      </Block>
+    <StyledBlock
+      paddingInlineStart="space040"
+      paddingInlineEnd="space040"
+      stylePreset="secondaryNavMenuBlock"
+    >
+      <TextBlock
+        marginBlockStart="space040"
+        typographyPreset="utilityHeading060"
+      >
+        {title}
+      </TextBlock>
       <MenuSub
         title={subMenuTitle}
         expanded={isExpanded}
@@ -21,6 +29,10 @@ export const Navigator: React.FC<{
           setIsExpanded(!isExpanded);
         }}
         overrides={{
+          marginBlockStart: 'space020',
+          marginInlineEnd: 'space020',
+          paddingInline: 'space030',
+          minHeight: 'sizing060',
           stylePreset: 'subMenu',
           typographyPreset: 'newPreset030',
           indicatorIcon: {
@@ -34,6 +46,6 @@ export const Navigator: React.FC<{
       >
         {null}
       </MenuSub>
-    </Block>
+    </StyledBlock>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
-import { MenuItem } from 'newskit';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
+import { StyledMenuItemsDesktop } from '../styles';
 
 export const NavItems: React.FC<{
   options: SecondaryMenuOptions;
@@ -12,8 +12,10 @@ export const NavItems: React.FC<{
   return (
     <>
       {data.slice(0, hasMenuItem).map(({ title, url }) => (
-        <MenuItem
+        <StyledMenuItemsDesktop
           overrides={{
+            paddingInlineStart: '6px',
+            paddingInlineEnd: '6px',
             stylePreset: 'menuItemDesktop',
             typographyPreset: 'newPreset040'
           }}
@@ -23,7 +25,7 @@ export const NavItems: React.FC<{
           selected={isSelected === title}
         >
           {title}
-        </MenuItem>
+        </StyledMenuItemsDesktop>
       ))}
     </>
   );
