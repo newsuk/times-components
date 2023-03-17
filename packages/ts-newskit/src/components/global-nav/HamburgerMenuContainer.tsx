@@ -9,7 +9,7 @@ const MenuDrawer = styled.div<{ open: boolean; isLoggedIn?: boolean }>`
   transition: transform 0.3s ease-in-out;
   width: 100%;
   height: 100%;
-  @media screen and (min-width: 780px) {
+  @media screen and (min-width: 768px) {
     width: 320px;
     top: 60px;
   }
