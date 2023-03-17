@@ -4,7 +4,7 @@ exports[`Create Menu should render snapshot 1`] = `
 <DocumentFragment>
   <nav
     aria-label="Secondary Navigation"
-    class="css-1m6trdj"
+    class="css-al5e3d"
     data-testid="menu-container"
     role="navigation"
   >
