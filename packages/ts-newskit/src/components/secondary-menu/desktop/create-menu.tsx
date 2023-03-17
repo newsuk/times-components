@@ -1,11 +1,16 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Menu } from 'newskit';
-import { MenuContainer, Wrapper, MainMenu, StyledMenuSub } from '../styles';
+import {
+  MenuContainer,
+  Wrapper,
+  MainMenu,
+  StyledMenuSub,
+  subMenuDesktopStylePreset
+} from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
 import { debounce, getWidth } from '../../utils';
-import { subMenuDesktopStylePreset } from '../../../theme/times-web-light/style-presets/secondary-nav';
 
 export const CreateMenu: React.FC<{
   options: SecondaryMenuOptions;

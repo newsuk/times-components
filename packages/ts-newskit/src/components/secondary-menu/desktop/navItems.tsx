@@ -1,7 +1,6 @@
 import React from 'react';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
-import { menuItemDesktopStylePreset } from '../../../theme/times-web-light/style-presets/secondary-nav';
-import { StyledMenuItemsDesktop } from '../styles';
+import { StyledMenuItemsDesktop, menuItemDesktopStylePreset } from '../styles';
 
 export const NavItems: React.FC<{
   options: SecondaryMenuOptions;

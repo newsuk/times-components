@@ -79,3 +79,38 @@ export const NavItemsContainer = styled.div`
   z-index: 1;
   ${getColorCssFromTheme('backgroundColor', 'white')};
 `;
+
+export const subMenuDesktopStylePreset = {
+  paddingBlockStart: 'space020',
+  paddingBlockEnd: 'space030',
+  paddingInlineStart: 'space040',
+  paddingInlineEnd: 'space040'
+};
+
+export const subMenuStylePreset = {
+  marginBlockStart: 'space020',
+  marginInlineEnd: 'space020',
+  paddingInline: 'space030',
+  minHeight: 'sizing060',
+  stylePreset: 'subMenu'
+};
+
+export const secondaryNavMenuBlockStylePreset = {
+  paddingInlineStart: 'space040',
+  paddingInlineEnd: 'space040',
+  stylePreset: 'secondaryNavMenuBlock'
+};
+
+export const menuItemDesktopStylePreset = {
+  paddingInlineStart: '6px',
+  paddingInlineEnd: '6px',
+  stylePreset: 'menuItemDesktop'
+};
+
+export const secondaryMenuItemMobileStylePreset = {
+  paddingInlineStart: 'space060',
+  paddingInlineEnd: 'space060',
+  marginBlockStart: '-2px',
+  marginInlineEnd: '-2px',
+  stylePreset: 'secondaryMenuItem'
+};

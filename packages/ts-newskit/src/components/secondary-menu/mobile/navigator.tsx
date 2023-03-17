@@ -1,11 +1,11 @@
 import React from 'react';
 import { MenuSub, TextBlock } from 'newskit';
 import { SecondaryMenuOptions } from '../types';
-import { StyledBlock } from '../styles';
 import {
+  StyledBlock,
   subMenuStylePreset,
   secondaryNavMenuBlockStylePreset
-} from '../../../theme/times-web-light/style-presets/secondary-nav';
+} from '../styles';
 
 export const Navigator: React.FC<{
   options: SecondaryMenuOptions;

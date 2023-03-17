@@ -1,8 +1,10 @@
 import React from 'react';
 import { MenuItem } from 'newskit';
-import { NavItemsContainer } from '../styles';
+import {
+  NavItemsContainer,
+  secondaryMenuItemMobileStylePreset
+} from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
-import { secondaryMenuItemMobileStylePreset } from '../../../theme/times-web-light/style-presets/secondary-nav';
 
 export const NavItems: React.FC<{
   options: SecondaryMenuOptions;
