@@ -66,13 +66,6 @@ export const CreateMenu: React.FC<{
     [isExpanded]
   );
 
-  const subMenuDesktopStylePreset = {
-    paddingBlockStart: 'space020',
-    paddingBlockEnd: 'space030',
-    paddingInlineStart: 'space040',
-    paddingInlineEnd: 'space040'
-  };
-
   return (
     <MainMenu
       hasMoreItems={moreMenuItemsLength > 0 ? true : false}
@@ -91,7 +84,10 @@ export const CreateMenu: React.FC<{
           expanded={isExpanded}
           title={subMenuTitle}
           overrides={{
-            ...subMenuDesktopStylePreset,
+            paddingBlockStart: 'space020',
+            paddingBlockEnd: 'space030',
+            paddingInlineStart: 'space040',
+            paddingInlineEnd: 'space040',
             stylePreset: `${isExpanded ? 'subMenuPreset2' : 'subMenuPreset1'}`,
             list: { stylePreset: 'subMenuItems' },
             typographyPreset: 'newPreset040'

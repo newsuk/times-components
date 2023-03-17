@@ -10,22 +10,12 @@ export const Navigator: React.FC<{
 }> = ({ title, options, subMenuTitle }) => {
   const { isExpanded, setIsExpanded } = options;
 
-  const subMenuStylePreset = {
-    marginBlockStart: 'space020',
-    marginInlineEnd: 'space020',
-    paddingInline: 'space030',
-    minHeight: 'sizing060',
-    stylePreset: 'subMenu'
-  };
-
-  const secondaryNavMenuBlockStylePreset = {
-    paddingInlineStart: 'space040',
-    paddingInlineEnd: 'space040',
-    stylePreset: 'secondaryNavMenuBlock'
-  };
-
   return (
-    <StyledBlock {...secondaryNavMenuBlockStylePreset}>
+    <StyledBlock
+      paddingInlineStart="space040"
+      paddingInlineEnd="space040"
+      stylePreset="secondaryNavMenuBlock"
+    >
       <TextBlock
         marginBlockStart="space040"
         typographyPreset="utilityHeading060"
@@ -39,7 +29,11 @@ export const Navigator: React.FC<{
           setIsExpanded(!isExpanded);
         }}
         overrides={{
-          ...subMenuStylePreset,
+          marginBlockStart: 'space020',
+          marginInlineEnd: 'space020',
+          paddingInline: 'space030',
+          minHeight: 'sizing060',
+          stylePreset: 'subMenu',
           typographyPreset: 'newPreset030',
           indicatorIcon: {
             props: {

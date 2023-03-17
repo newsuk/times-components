@@ -9,18 +9,14 @@ export const NavItems: React.FC<{
 }> = ({ options, data, hasMenuItem }) => {
   const { handleSelect, isSelected } = options;
 
-  const menuItemDesktopStylePreset = {
-    paddingInlineStart: '6px',
-    paddingInlineEnd: '6px',
-    stylePreset: 'menuItemDesktop'
-  };
-
   return (
     <>
       {data.slice(0, hasMenuItem).map(({ title, url }) => (
         <StyledMenuItemsDesktop
           overrides={{
-            ...menuItemDesktopStylePreset,
+            paddingInlineStart: '6px',
+            paddingInlineEnd: '6px',
+            stylePreset: 'menuItemDesktop',
             typographyPreset: 'newPreset040'
           }}
           href={url}

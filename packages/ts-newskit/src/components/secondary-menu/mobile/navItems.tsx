@@ -9,20 +9,16 @@ export const NavItems: React.FC<{
 }> = ({ options, data }) => {
   const { handleSelect } = options;
 
-  const secondaryMenuItemMobileStylePreset = {
-    paddingInlineStart: 'space060',
-    paddingInlineEnd: 'space060',
-    marginBlockStart: '-2px',
-    marginInlineEnd: '-2px',
-    stylePreset: 'secondaryMenuItem'
-  };
-
   return (
     <NavItemsContainer>
       {data.map(({ url, slug, title }) => (
         <MenuItem
           overrides={{
-            ...secondaryMenuItemMobileStylePreset,
+            paddingInlineStart: 'space060',
+            paddingInlineEnd: 'space060',
+            marginBlockStart: '-2px',
+            marginInlineEnd: '-2px',
+            stylePreset: 'secondaryMenuItem',
             typographyPreset: 'newPreset020'
           }}
           href={url}
