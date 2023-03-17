@@ -58,6 +58,24 @@ describe('GlobalNavWithCustomDrawer', () => {
     );
     expect(asFragment()).toBeTruthy();
   });
+
+  it('matches snapshot when logged in', () => {
+    const { asFragment } = render(
+      <GlobalNavWithCustomDrawer
+        data={data}
+        isLoggedIn={true}
+        isSunday={false}
+      />
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('matches snapshot when logged out', () => {
+    const { asFragment } = render(
+      <GlobalNavWithCustomDrawer data={data} isSunday={false} />
+    );
+    expect(asFragment()).toMatchSnapshot();
+  });
 });
 
 describe('TSNewskitDrawer', () => {

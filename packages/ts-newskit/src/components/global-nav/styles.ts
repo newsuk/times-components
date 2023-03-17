@@ -41,10 +41,18 @@ export const AccountMenu = styled(Menu)`
   }
 `;
 
-export const ScrollMenuContainer = styled(Visible)`
+export const LoggedOutButtonsContainer = styled(Stack)`
+  ${getColorCssFromTheme('backgroundColor', 'neutral090')};
   & > div {
-    z-index: 0;
+    width: 100%;
+    z-index: 1;
+  }
+`;
+
+export const ScrollMenuContainer = styled(Visible)`
+  & > div:last-of-type {
     background-color: white;
+    z-index: 0;
   }
 `;
 
@@ -77,8 +85,8 @@ export const TopNavIcon = styled(IconButton)`
 `;
 
 const setHamburgerMenuPadding = (space: string) => ({ padding: `${space}` });
-export const HamburgerMenuContainer = styled(Drawer)`
-  top: 50px;
+export const HamburgerMenuContainer = styled(Drawer)<{ isLoggedIn?: boolean }>`
+  top: ${({ isLoggedIn }) => (isLoggedIn ? '50px' : '114px')};
   box-shadow: none;
   z-index: 2;
 

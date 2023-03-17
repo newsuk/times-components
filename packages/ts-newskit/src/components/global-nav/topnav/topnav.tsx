@@ -18,6 +18,7 @@ import {
   TopNavIcon
 } from '../styles';
 import NavSearch from '../search';
+import { LoggedOutButtons } from './loggedOutButtons';
 
 type TopNavProps = {
   isLoggedIn?: boolean;
@@ -115,6 +116,7 @@ export const TopNav: React.FC<TopNavProps> = ({
         </Visible>
       </TopNavContainer>
       <ScrollMenuContainer xs sm>
+        {!isLoggedIn && <LoggedOutButtons loginUrl={'/'} subscribeUrl={'/'} />}
         <Scroll overrides={{ overlays: { stylePreset: 'menuScrollOverlay' } }}>
           <Stack flow="horizontal-top">
             <ScrollMenu

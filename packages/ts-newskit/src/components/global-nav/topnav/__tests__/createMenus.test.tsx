@@ -71,3 +71,25 @@ describe('accountCreateMenu', () => {
     expect(MenuSub.getAttribute('aria-expanded')).toEqual('true');
   });
 });
+
+describe('NavButtons Logged Out', () => {
+  it('should render the correct menu length at other breakpoints', async () => {
+    (useBreakpointKey as any).mockReturnValue('xs');
+
+    renderComponent();
+    const accountButtons = screen.getByRole('region', {
+      name: 'My Account Navigation'
+    });
+
+    expect(accountButtons).toBeInTheDocument();
+  });
+
+  it('should change the style based on the preset prop passed - Secondary', () => {
+    renderComponent();
+    const loginBtn = screen.getByRole('link', { name: 'Log in' });
+    const subscribeBtn = screen.getByRole('link', { name: 'Subscribe' });
+
+    expect(loginBtn).toHaveStyle('background-color: rgba(29,29,27,1)');
+    expect(subscribeBtn).toHaveStyle('background-color: rgba(21,115,162,1)');
+  });
+});

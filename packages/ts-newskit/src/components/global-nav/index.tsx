@@ -26,6 +26,7 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
         toggleHamburger={setHamburgerActive}
       />
       <HamburgerMenuContainer
+        isLoggedIn={isLoggedIn}
         open={hamburgerActive}
         onDismiss={() => setHamburgerActive(false)}
         closePosition="none"
@@ -56,6 +57,7 @@ export const GlobalNavWithCustomDrawer = ({
       <CustomHamburgerMenuContainer
         setHamburgerActive={setHamburgerActive}
         hamburgerActive={hamburgerActive}
+        isLoggedIn={isLoggedIn}
       >
         <HamburgerMenu {...{ isLoggedIn, data }} />
       </CustomHamburgerMenuContainer>
