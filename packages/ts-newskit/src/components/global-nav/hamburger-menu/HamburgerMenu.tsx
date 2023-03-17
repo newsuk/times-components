@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { MenuDivider, Block, Visible, TextBlock } from 'newskit';
-import NavButtonSection from './NavButtons';
 import NavigationList from './NavigationList';
 import { HamburgerMenuNav } from '../styles';
 import { NavigationData } from '../types';
+import NavSearch from '../search';
+import NavButtonSection from './NavButtons';
 
 export const HamburgerMenu: React.FC<{
   isLoggedIn?: boolean;
@@ -22,11 +23,17 @@ export const HamburgerMenu: React.FC<{
       overrides={{ spaceInline: 'space000' }}
     >
       <Visible xs sm>
-        <NavButtonSection
-          loggedIn={isLoggedIn}
-          setSelected={setSelected}
-          selected={selected}
-        />
+        <Block
+          paddingInline="space040"
+          marginBlock="space040"
+          role="region"
+          aria-label="Search Bar"
+        >
+          <NavSearch isHamburger />
+        </Block>
+        {isLoggedIn && (
+          <NavButtonSection setSelected={setSelected} selected={selected} />
+        )}
       </Visible>
       <NavigationList
         data={

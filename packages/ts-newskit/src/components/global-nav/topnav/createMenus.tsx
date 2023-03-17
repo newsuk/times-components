@@ -24,7 +24,9 @@ export const createMenu = (menuData: any) => {
     breakpointKey === 'xs' || breakpointKey === 'sm'
       ? {
           minWidth: '0',
-          paddingBlock: 'space030',
+          paddingInline: 'space000',
+          paddingBlockEnd: 'space000',
+          paddingBlockStart: 'space010',
           stylePreset: 'menuItemScroll',
           typographyPreset: 'topNav010'
         }
