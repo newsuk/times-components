@@ -8,24 +8,21 @@ export const NavItems: React.FC<{
   data: SecondaryMenuItem[];
 }> = ({ options, data }) => {
   const { handleSelect } = options;
-  const menuItemsPreset = {
-    stylePreset: 'secondaryMenuItem'
-  };
 
   return (
     <NavItemsContainer>
-      {data.map(item => (
+      {data.map(({ url, slug, title }) => (
         <MenuItem
           overrides={{
-            ...menuItemsPreset,
+            stylePreset: 'secondaryMenuItem',
             typographyPreset: 'newPreset020'
           }}
-          href={item.url}
-          id={`vertical-${item.slug}`}
-          onClick={() => handleSelect(item.title)}
-          key={item.slug}
+          href={url}
+          id={`vertical-${slug}`}
+          onClick={() => handleSelect(title)}
+          key={slug}
         >
-          {item.title}
+          {title}
         </MenuItem>
       ))}
     </NavItemsContainer>

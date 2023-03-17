@@ -12,7 +12,13 @@ export const SecondaryNavMobile: React.FC<{
   const subMenuTitle = isExpanded ? 'Close' : 'See all';
 
   return (
-    <Menu vertical aria-label="Secondary Navigation">
+    <Menu
+      vertical
+      aria-label="Secondary Navigation"
+      overrides={{
+        spaceInline: 'space000'
+      }}
+    >
       <Navigator
         title={isSelected}
         options={options}

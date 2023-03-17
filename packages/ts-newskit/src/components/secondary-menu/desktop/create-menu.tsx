@@ -71,11 +71,11 @@ export const CreateMenu: React.FC<{
       hasMoreItems={moreMenuItemsLength > 0 ? true : false}
       aria-label="Secondary Navigation"
       overrides={{
-        spaceInline: 'space050'
+        spaceInline: 'space030'
       }}
       ref={contanierRef}
     >
-      <Wrapper ref={navListRef} data-testid="navitems-test-id">
+      <Wrapper ref={navListRef}>
         <NavItems data={data} options={options} hasMenuItem={hasMenuItem} />
       </Wrapper>
       {moreMenuItemsLength > 0 && (

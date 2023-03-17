@@ -15,11 +15,10 @@ export const secondaryNavigationStylePresets = {
     base: {
       color: '#1D1D1B',
       backgroundColor: '{{colors.white}}',
-      padding: '10px 7px',
+      padding: '10px 6px',
       minWidth: 'max-content',
       borderBottom: '4px solid transparent',
-      display: 'flex',
-      marginRight: '-14px'
+      display: 'flex'
     },
     hover: {
       backgroundColor: '{{colors.neutral010}}'
@@ -38,8 +37,7 @@ export const secondaryNavigationStylePresets = {
       lineHeight: '{{fonts.fontLineHeight070}}',
       padding: '{{sizing.sizing030}} {{sizing.sizing060}}',
       marginTop: '-2px',
-      borderBottom: '1px solid #E4E4E4',
-      marginBottom: '-8px'
+      borderBottom: '1px solid #E4E4E4'
     },
     hover: {
       marginTop: '-2px',
@@ -59,7 +57,7 @@ export const secondaryNavigationStylePresets = {
   textBlock: {
     base: {
       marginTop: '{{sizing.sizing040}}',
-      paddingLeft: '6px'
+      marginLeft: '6px'
     }
   },
   menuBlock: {

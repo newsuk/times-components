@@ -11,9 +11,9 @@ export const Navigator: React.FC<{
 
   return (
     <Block stylePreset="menuBlock">
-      <Block stylePreset="textBlock">
-        <TextBlock typographyPreset="utilityHeading060">{title}</TextBlock>
-      </Block>
+      <TextBlock stylePreset="textBlock" typographyPreset="utilityHeading060">
+        {title}
+      </TextBlock>
       <MenuSub
         title={subMenuTitle}
         expanded={isExpanded}
