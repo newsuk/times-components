@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.1](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator-web@0.8.0...@times-components/jest-configurator-web@0.8.1) (2023-03-20)
+
+**Note:** Version bump only for package @times-components/jest-configurator-web
+
+
+
+
+
 # [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator-web@0.7.2...@times-components/jest-configurator-web@0.8.0) (2022-08-18)
 
 
