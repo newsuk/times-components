@@ -1,24 +1,10 @@
-import { styled, Block, getMediaQueryFromTheme, TextBlock } from 'newskit';
+import { styled, Stack, TextBlock, getMediaQueryFromTheme } from 'newskit';
 
-export const StyledBlock = styled(Block)`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+export const StyledBlock = styled(Stack)`
   height: 60px;
-  margin: 0 21px 0 20px;
   border-top: 1px dashed #666666;
-
-  ${getMediaQueryFromTheme('md')} {
-    margin: 0 24px 0 23px;
-  }
-
   ${getMediaQueryFromTheme('lg')} {
     height: 80px;
-    margin: 0 24px 0 23px;
-  }
-
-  ${getMediaQueryFromTheme('xl')} {
-    margin: 0 83px 0 80px;
   }
 `;
 

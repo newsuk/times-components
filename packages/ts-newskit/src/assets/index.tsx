@@ -47,7 +47,7 @@ export const NewsKitSundayTimesMasthead = customToNewsKitIcon(
   props => <SundayTimesMasthead {...props} />
 );
 
-export const NewsKitChevronRigthIcon = customToNewsKitIcon(
-  'NewsKitTestIcon',
+export const NewsKitChevronRightIcon = customToNewsKitIcon(
+  'NewsKitChevronRightIcon',
   props => <ChevronRigthIcon {...props} />
 );
