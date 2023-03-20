@@ -4,8 +4,8 @@ import { StyledBlock, StyledTextBlock, StyledButton } from './styles';
 import { NewsKitChevronRigthIcon } from '../../../assets';
 
 interface HeaderProps {
-  title?: string;
-  color?: string;
+  title: string;
+  color: string;
 }
 export const SliceHeader = ({ title, color }: HeaderProps) => {
   const breakpointKey = useBreakpointKey();
@@ -31,8 +31,8 @@ export const SliceHeader = ({ title, color }: HeaderProps) => {
         <NewsKitChevronRigthIcon
           height={iconSize}
           width={iconSize}
-          data-testid="icon"
           color={color}
+          data-testid="icon"
           href="#"
         />
       </StyledButton>
