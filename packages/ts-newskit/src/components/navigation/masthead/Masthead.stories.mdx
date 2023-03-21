@@ -1,0 +1,41 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { EditionMasthead } from "./index";
+
+import { NewsKitProvider } from 'newskit';
+import { TimesWebLightTheme } from '../../../theme';
+
+<Meta
+  title="Newskit/Masthead"
+  component={EditionMasthead}
+/>
+
+# Masthead component
+The `Masthead` component is used to display the Times and the Sunday Times logos in the header, along with the date.
+
+This takes in a series of props, as below, to display data and render the correct state, what logo and what date to display.
+
+## Props
+<Props of={EditionMasthead} />
+
+## Code Example
+`<EditionMasthead
+  isSunday={false}
+  todaysDate={2023-03-02T13:22:39.971Z}
+/>`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const MastheadStory = ({ isSunday, todaysDate }) => (
+  <NewsKitProvider theme={TimesWebLightTheme}>
+    <EditionMasthead isSunday={isSunday} todaysDate={todaysDate} />
+  </NewsKitProvider>
+);
+
+<Story
+  name="Masthead"
+  argTypes={{ todaysDate: { control: 'date' } }}
+  args={{ todaysDate: '2023-03-03T13:22:39.971Z' }}
+>
+  {MastheadStory.bind({})}
+</Story>

@@ -52,6 +52,22 @@ export const typographyPresets = Object.fromEntries(
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     },
+    newPreset060: {
+      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight040}}',
+      fontSize: '{{fonts.fontSize080}}',
+      lineHeight: '{{fonts.fontLineHeight150}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    newPreset070: {
+      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight040}}',
+      fontSize: '{{fonts.fontSize060}}',
+      lineHeight: '{{fonts.fontLineHeight030}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
     editorialHeadline035: {
       fontFamily: '{{fonts.fontFamily010.fontFamily}}',
       fontWeight: '{{fonts.fontWeight030}}',

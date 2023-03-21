@@ -1,0 +1,33 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { SliceHeader } from "./index";
+import { NewsKitProvider } from 'newskit';
+import { TimesWebLightTheme } from '../../../theme';
+
+<Meta
+  title="Newskit/SliceHeader"
+  component={SliceHeader}
+/>
+
+# SliceHeader component
+The `SliceHeader` component is used to display the Header of slices.
+
+This takes in a series of props, as below, to display title and color.
+
+## Props
+<Props of={SliceHeader} />
+
+## Code Example
+`<SliceHeader title='Title' color='#008347' />`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const HeaderStory = ({ title , color}) => (
+  <NewsKitProvider theme={TimesWebLightTheme}>
+    <SliceHeader {...{ title,color }} />
+  </NewsKitProvider>
+);
+
+<Story name="SliceHeader" args={{ title: 'Rugby Union', color : '#008347' }}>
+  {HeaderStory.bind({})}
+</Story>
