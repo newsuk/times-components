@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
-import { SectionHeader } from '../../section-header';
+import { SectionHeader } from '../../navigation/section-header';
 import { TCThemeProvider } from '../index';
 
 const renderComponent = () =>

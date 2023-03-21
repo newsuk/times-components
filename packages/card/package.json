@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "6.10.15",
+  "version": "6.10.16",
   "main": "dist/card",
   "dev": "src/card",
   "scripts": {
@@ -33,10 +33,10 @@
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
-    "@times-components/jest-configurator-web": "0.8.0",
-    "@times-components/jest-serializer": "3.7.1",
-    "@times-components/storybook": "4.7.1",
-    "@times-components/test-utils": "2.4.0",
+    "@times-components/jest-configurator-web": "0.8.1",
+    "@times-components/jest-serializer": "3.7.2",
+    "@times-components/storybook": "4.7.2",
+    "@times-components/test-utils": "2.4.1",
     "@times-components/webpack-configurator": "2.1.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
@@ -53,11 +53,11 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/gradient": "3.4.20",
-    "@times-components/image": "6.14.15",
-    "@times-components/responsive": "0.14.18",
-    "@times-components/ts-styleguide": "1.40.3",
-    "@times-components/utils": "6.15.19",
+    "@times-components/gradient": "3.4.21",
+    "@times-components/image": "6.14.16",
+    "@times-components/responsive": "0.14.19",
+    "@times-components/ts-styleguide": "1.40.4",
+    "@times-components/utils": "6.15.20",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },

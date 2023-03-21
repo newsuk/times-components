@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavButtons Logged In should render the component 1`] = `
+<DocumentFragment>
+  <nav
+    aria-label="Navigation Menu"
+    class="css-19o37qh"
+    data-testid="menu-container"
+    role="region"
+  >
+    <ul
+      role="list"
+    >
+      <button
+        class="css-g6ka6m"
+        data-testid="button"
+        type="button"
+      >
+        <span
+          class="css-wo6lye"
+        >
+          Sections
+        </span>
+      </button>
+      <button
+        class="css-g6ka6m"
+        data-testid="button"
+        type="button"
+      >
+        <span
+          class="css-wo6lye"
+        >
+          My account
+        </span>
+      </button>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;

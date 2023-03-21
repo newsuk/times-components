@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.9.1...@times-components/ts-newskit@1.10.0) (2023-03-21)
+
+
+### Features
+
+* **TDP-3411:** develop topic section headline component ([#3291](https://github.com/newsuk/times-components/issues/3291)) ([fdf44a1](https://github.com/newsuk/times-components/commit/fdf44a1ca09e03c604266204324e318149244da6))
+
+
+
+
+
+## [1.9.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.9.0...@times-components/ts-newskit@1.9.1) (2023-03-17)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
+# [1.9.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.8.3...@times-components/ts-newskit@1.9.0) (2023-03-17)
+
+
+### Features
+
+* **TDP-3224:** update global nav and masthead date ([#3286](https://github.com/newsuk/times-components/issues/3286)) ([e579b4b](https://github.com/newsuk/times-components/commit/e579b4b214c3de9f378e0207d0ae3243cd98f49b))
+
+
+
+
+
 ## [1.8.3](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.8.2...@times-components/ts-newskit@1.8.3) (2023-03-16)
 
 

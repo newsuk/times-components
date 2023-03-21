@@ -10,8 +10,8 @@ describe('Icons', () => {
 
     describe(`Component: ${componentName}`, () => {
       test(`${componentName} renders with default props`, () => {
-        const wrapper = render(<Component />);
-        expect(wrapper).toMatchSnapshot();
+        const { asFragment } = render(<Component />);
+        expect(asFragment()).toMatchSnapshot();
       });
     });
   });

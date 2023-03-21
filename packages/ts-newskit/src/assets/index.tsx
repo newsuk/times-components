@@ -7,6 +7,7 @@ import CloseIcon from './CloseIcon';
 import ChevronIcon from './ChevronIcon';
 import TimesMasthead from './TimesMasthead';
 import SundayTimesMasthead from './SundayTimesMasthead';
+import ChevronRigthIcon from './ChevronRightIcon';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
@@ -44,4 +45,9 @@ export const NewsKitTimesMasthead = customToNewsKitIcon(
 export const NewsKitSundayTimesMasthead = customToNewsKitIcon(
   'NewskitSundayTimesMasthead',
   props => <SundayTimesMasthead {...props} />
+);
+
+export const NewsKitChevronRightIcon = customToNewsKitIcon(
+  'NewsKitChevronRightIcon',
+  props => <ChevronRigthIcon {...props} />
 );

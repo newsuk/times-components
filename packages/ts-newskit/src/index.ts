@@ -1,17 +1,19 @@
 export { TCThemeProvider } from './components/utils/TCThemeProvider';
-export { Breadcrumb } from './components/breadcrumb';
-export { GlobalNav } from './components/global-nav';
-export { TopNav } from './components/global-nav/topnav/topnav';
+export { Breadcrumb } from './components/navigation/breadcrumb';
+export { GlobalNav } from './components/navigation/global-nav';
+export { TopNav } from './components/navigation/global-nav/topnav/topnav';
 export {
   HamburgerMenu
-} from './components/global-nav/hamburger-menu/HamburgerMenu';
-export { EditionMasthead } from './components/masthead';
-export { SectionHeader } from './components/section-header/';
+} from './components/navigation/global-nav/hamburger-menu/HamburgerMenu';
+export { EditionMasthead } from './components/navigation/masthead';
+export { SectionHeader } from './components/navigation/section-header';
 export {
   WrappedHamburger,
   WrappedGlobalNav
-} from './components/global-nav/wrapped-components/WrappedComponents';
-export { HamburgerMenuContainer } from './components/global-nav/styles';
-export { GlobalNavWithCustomDrawer } from './components/global-nav';
-export { SecondaryNavigation } from './components/secondary-menu';
-export { TSNewskitDrawer } from './components/global-nav';
+} from './components/navigation/global-nav/wrapped-components/WrappedComponents';
+export {
+  HamburgerMenuContainer
+} from './components/navigation/global-nav/styles';
+export { GlobalNavWithCustomDrawer } from './components/navigation/global-nav';
+export { SecondaryNavigation } from './components/navigation/secondary-menu';
+export { TSNewskitDrawer } from './components/navigation/global-nav';

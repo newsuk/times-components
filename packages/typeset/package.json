@@ -1,6 +1,6 @@
 {
   "name": "@times-components/typeset",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A package for markup layout with arbitrary shapes",
   "main": "src/index.ts",
   "typings": "build/main/index.d.ts",
@@ -53,7 +53,7 @@
     "point-in-polygon": "1.0.1"
   },
   "devDependencies": {
-    "@times-components/test-utils": "2.4.0",
+    "@times-components/test-utils": "2.4.1",
     "@types/point-in-polygon": "1.0.0",
     "cz-conventional-changelog": "2.1.0",
     "gh-pages": "2.0.1",

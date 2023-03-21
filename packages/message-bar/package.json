@@ -1,6 +1,6 @@
 {
   "name": "@times-components/message-bar",
-  "version": "0.7.21",
+  "version": "0.7.22",
   "description": "A component for showing user notifications",
   "main": "dist/index",
   "dev": "src/index",
@@ -34,10 +34,10 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.18",
-    "@times-components/jest-configurator-web": "0.8.0",
-    "@times-components/jest-serializer": "3.7.1",
-    "@times-components/storybook": "4.7.1",
-    "@times-components/test-utils": "2.4.0",
+    "@times-components/jest-configurator-web": "0.8.1",
+    "@times-components/jest-serializer": "3.7.2",
+    "@times-components/storybook": "4.7.2",
+    "@times-components/test-utils": "2.4.1",
     "@times-components/webpack-configurator": "2.1.0",
     "enzyme": "3.9.0",
     "eslint": "5.9.0",
@@ -57,10 +57,10 @@
     "react-dom": ">=16.9"
   },
   "dependencies": {
-    "@times-components/icons": "2.19.20",
-    "@times-components/responsive": "0.14.18",
-    "@times-components/ts-styleguide": "1.40.3",
-    "@times-components/utils": "6.15.19",
+    "@times-components/icons": "2.19.21",
+    "@times-components/responsive": "0.14.19",
+    "@times-components/ts-styleguide": "1.40.4",
+    "@times-components/utils": "6.15.20",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
