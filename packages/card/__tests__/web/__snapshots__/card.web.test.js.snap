@@ -124,7 +124,7 @@ exports[`1. card default state 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "tc-text__TcText-sc-15igzev-0",
                       "isStatic": true,
-                      "lastClassName": "kwFxdN",
+                      "lastClassName": "lhcAkf",
                       "rules": Array [
                         "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                       ],
@@ -278,7 +278,7 @@ exports[`2. pass an empty state to the image component 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "tc-text__TcText-sc-15igzev-0",
                       "isStatic": true,
-                      "lastClassName": "kwFxdN",
+                      "lastClassName": "lhcAkf",
                       "rules": Array [
                         "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                       ],
@@ -391,7 +391,7 @@ exports[`3. card without an image when showimage is false 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "tc-text__TcText-sc-15igzev-0",
                       "isStatic": true,
-                      "lastClassName": "kwFxdN",
+                      "lastClassName": "lhcAkf",
                       "rules": Array [
                         "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                       ],
@@ -545,7 +545,7 @@ exports[`4. pass an empty state to the image component when the uri is null 1`] 
                     "componentStyle": ComponentStyle {
                       "componentId": "tc-text__TcText-sc-15igzev-0",
                       "isStatic": true,
-                      "lastClassName": "kwFxdN",
+                      "lastClassName": "lhcAkf",
                       "rules": Array [
                         "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                       ],
@@ -658,7 +658,7 @@ exports[`5. card with reversed layout 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "tc-text__TcText-sc-15igzev-0",
                       "isStatic": true,
-                      "lastClassName": "kwFxdN",
+                      "lastClassName": "lhcAkf",
                       "rules": Array [
                         "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                       ],
@@ -812,7 +812,7 @@ exports[`6. card with reversed layout and no image 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "tc-text__TcText-sc-15igzev-0",
                       "isStatic": true,
-                      "lastClassName": "kwFxdN",
+                      "lastClassName": "lhcAkf",
                       "rules": Array [
                         "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                       ],
@@ -850,9 +850,9 @@ exports[`7. card with a loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-je5757-0",
+          "componentId": "Animations__FadeIn-w31u4-0",
           "isStatic": false,
-          "lastClassName": "dazpaJ",
+          "lastClassName": "ejSuos",
           "rules": Array [
             "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
             [Function],
@@ -885,10 +885,10 @@ exports[`7. card with a loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-o5ytee-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-je5757-0",
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1055,9 +1055,9 @@ exports[`8. card with a loading state and no image 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-je5757-0",
+          "componentId": "Animations__FadeIn-w31u4-0",
           "isStatic": false,
-          "lastClassName": "dazpaJ",
+          "lastClassName": "ejSuos",
           "rules": Array [
             "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
             [Function],
@@ -1090,10 +1090,10 @@ exports[`8. card with a loading state and no image 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-o5ytee-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-je5757-0",
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1219,9 +1219,9 @@ exports[`9. card with reversed loading state 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-je5757-0",
+          "componentId": "Animations__FadeIn-w31u4-0",
           "isStatic": false,
-          "lastClassName": "dazpaJ",
+          "lastClassName": "ejSuos",
           "rules": Array [
             "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
             [Function],
@@ -1254,10 +1254,10 @@ exports[`9. card with reversed loading state 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-o5ytee-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-je5757-0",
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],
@@ -1424,9 +1424,9 @@ exports[`10. card with reversed loading state with no image 1`] = `
         "$$typeof": Symbol(react.forward_ref),
         "attrs": Array [],
         "componentStyle": ComponentStyle {
-          "componentId": "Animations__FadeIn-je5757-0",
+          "componentId": "Animations__FadeIn-w31u4-0",
           "isStatic": false,
-          "lastClassName": "dazpaJ",
+          "lastClassName": "ejSuos",
           "rules": Array [
             "border:0px solid black;box-sizing:border-box;display:flex;flex-direction:column;margin:",
             [Function],
@@ -1459,10 +1459,10 @@ exports[`10. card with reversed loading state with no image 1`] = `
         },
         "displayName": "Animations__FadeIn",
         "foldedComponentIds": Array [
-          "TsTcView-o5ytee-0",
+          "TsTcView-sc-154dp5w-0",
         ],
         "render": [Function],
-        "styledComponentId": "Animations__FadeIn-je5757-0",
+        "styledComponentId": "Animations__FadeIn-w31u4-0",
         "target": "div",
         "toString": [Function],
         "warnTooManyClasses": [Function],

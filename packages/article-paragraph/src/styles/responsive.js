@@ -37,7 +37,7 @@ export const Paragraph = styled.p`
   margin: 0 auto ${spacing(5)};
   padding-right: ${spacing(2)};
   padding-left: ${spacing(2)};
-   
+
   // Clear fix for floated dropcap
   &:first-of-type:after {
     content: "";
@@ -45,13 +45,13 @@ export const Paragraph = styled.p`
     display: table;
   }
 
-  @media (min-width: ${breakpoints.medium}px){ 
-      font-size: ${fontSizes.body}px;
-      line-height: 30px;
-      padding-left: 0;
-      padding-right: 0;
-      width: 80.8%; 
-}
+  @media (min-width: ${breakpoints.medium}px) {
+    font-size: ${fontSizes.body}px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
 
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
@@ -68,6 +68,6 @@ export const DropCap = styled.span`
     margin-top: ${dropCapMargins[font]}em;
     line-height: ${lineHeights[font]}em;
     font-size: ${dropCapFontSizes[font]}px;
-    font-family:${fontsWithFallback[font]};
+    font-family: ${fontsWithFallback[font]};
   `};
 `;

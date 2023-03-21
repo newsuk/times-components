@@ -2,7 +2,12 @@
 
 import React from "react";
 import { TcView } from "@times-components/utils";
-import { colours, fontsWithFallback, fontSizes } from "@times-components/ts-styleguide";
+import {
+  colours,
+  fontsWithFallback,
+  fontSizes
+} from "@times-components/ts-styleguide";
+
 const styles = {
   color: colours.section.comment,
   fontFamily: fontsWithFallback.supporting,

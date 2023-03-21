@@ -12,7 +12,7 @@ const PullQuoteContent = styled(TcText)`
   font-family: ${fontsWithFallback.headlineRegular};
   font-size: ${fontSizes.pageComponentHeadline}px;
   line-height: 30px;
-  
+
   cite {
     font-style: normal;
   }
