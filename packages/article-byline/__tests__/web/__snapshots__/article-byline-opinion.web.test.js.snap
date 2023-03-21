@@ -5,7 +5,7 @@ exports[`1. single inline element 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 PgEZc"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 iWIdRx"
   >
     Lindsay McIntosh, Scottish Political Editor
   </div>
@@ -17,12 +17,12 @@ exports[`2. with the author in the begining 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Camilla Long
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 PgEZc"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 iWIdRx"
   >
     , Environment Editor
   </div>
@@ -34,12 +34,12 @@ exports[`3. with the author at the end 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 PgEZc"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 iWIdRx"
   >
     RBS Six Nations, 
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Mike Atherton
   </div>
@@ -51,27 +51,27 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Camilla Long
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 PgEZc"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 iWIdRx"
   >
      | 
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Mike Atherton
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 PgEZc"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 iWIdRx"
   >
      | 
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Alexandra Frean
   </div>
@@ -83,27 +83,27 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Camilla Long
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 PgEZc"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 iWIdRx"
   >
     , 
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Mike Atherton
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 PgEZc"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 iWIdRx"
   >
     , 
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Alexandra Frean
   </div>
@@ -115,22 +115,22 @@ exports[`6. with multiple authors separated by spaces 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Camilla Long
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 PgEZc"
+    className="tc-text__TcText-sc-15igzev-0 render-byline__InlineText-sc-8i7rg2-0 iWIdRx"
   >
      
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Mike Atherton
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 haWteD"
+    className="tc-text__TcText-sc-15igzev-0 article-byline-opinion__OpinionText-aqlxmn-0 fWBnyA"
   >
     Alexandra Frean
   </div>

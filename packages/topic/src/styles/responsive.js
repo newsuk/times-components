@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {
   breakpoints,
   colours,
-  fonts,
+  fontsWithFallback,
   fontSizes,
   spacing
 } from "@times-components/ts-styleguide";
@@ -51,7 +51,7 @@ export const HeadContainer = styled(TcView)`
 `;
 
 export const ResponsiveName = styled.h1`
-  font-family: "${fonts.headline}";
+  font-family: ${fontsWithFallback.headline};
   font-size: ${fontSizes.pageHeadline}px;
   color: ${colours.functional.brandColour};
   padding-bottom: ${spacing(4)};

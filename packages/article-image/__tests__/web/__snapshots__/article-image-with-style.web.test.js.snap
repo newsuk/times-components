@@ -24,7 +24,8 @@ exports[`1. mobile primary image with caption and credits 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -251,7 +252,7 @@ Array [
                                     "isStatic": true,
                                     "lastClassName": "c3",
                                     "rules": Array [
-                                      "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                                      "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                                     ],
                                   },
                                   "displayName": "tc-text__TcText",
@@ -295,7 +296,7 @@ Array [
                                     "isStatic": true,
                                     "lastClassName": "c3",
                                     "rules": Array [
-                                      "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                                      "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                                     ],
                                   },
                                   "displayName": "tc-text__TcText",
@@ -359,7 +360,8 @@ exports[`2. secondary image with caption and credits 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -525,7 +527,7 @@ Array [
                               "isStatic": true,
                               "lastClassName": "c2",
                               "rules": Array [
-                                "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                                "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                               ],
                             },
                             "displayName": "tc-text__TcText",
@@ -569,7 +571,7 @@ Array [
                               "isStatic": true,
                               "lastClassName": "c2",
                               "rules": Array [
-                                "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                                "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                               ],
                             },
                             "displayName": "tc-text__TcText",

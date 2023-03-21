@@ -3,13 +3,13 @@ import styled from "styled-components";
 import {
   breakpoints,
   colours,
-  fonts,
+  fontsWithFallback,
   fontSizes
 } from "@times-components/ts-styleguide";
 
 const PullQuoteContent = styled(TcText)`
   color: ${colours.functional.primary};
-  font-family: "${fonts.headlineRegular}";
+  font-family: ${fontsWithFallback.headlineRegular};
   font-size: ${fontSizes.pageComponentHeadline}px;
   line-height: 30px;
   

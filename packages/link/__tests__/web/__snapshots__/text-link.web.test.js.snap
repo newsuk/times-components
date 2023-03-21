@@ -4,7 +4,7 @@ exports[`Test Link calls onPress when clicked 1`] = `
 <body>
   <div>
     <a
-      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 iBCxFV"
+      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fEeqxv"
       href="http://thetimes.co.uk"
       style="text-decoration: underline; color: rgb(0, 102, 153); background-color: rgb(0, 102, 153);"
     >
@@ -18,7 +18,7 @@ exports[`Test Link renders the link 1`] = `
 <body>
   <div>
     <a
-      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 iPyfCs"
+      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 iNSZau"
       href="http://thetimes.co.uk"
       style="text-decoration: underline;"
     >
@@ -32,7 +32,7 @@ exports[`Test Link renders the link with children 1`] = `
 <body>
   <div>
     <a
-      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 iPyfCs"
+      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 iNSZau"
       href="http://thetimes.co.uk"
       style="text-decoration: underline;"
     >
@@ -48,7 +48,7 @@ exports[`Test Link renders the link with the styles passed down 1`] = `
 <body>
   <div>
     <a
-      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 iBCxFV"
+      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 fEeqxv"
       href="http://thetimes.co.uk"
       style="text-decoration: underline; color: rgb(0, 102, 153); background-color: rgb(0, 102, 153);"
     >
@@ -62,7 +62,7 @@ exports[`Test Link renders the text link with target passed to it 1`] = `
 <body>
   <div>
     <a
-      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 iPyfCs"
+      class="tc-text-link__TcTextLink-sc-1voa8bp-0 text-link__LinkTextObj-xyehx2-0 iNSZau"
       href="http://thetimes.co.uk"
       style="text-decoration: underline;"
       target="_blank"

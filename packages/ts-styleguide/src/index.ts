@@ -11,6 +11,7 @@ export {
   fonts,
   fontFactory,
   fontSizes,
+  fontsWithFallback,
   getEditionBreakpoint,
   lineHeight,
   scales,

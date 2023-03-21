@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import {
   breakpoints,
   colours,
-  fonts,
+  fontsWithFallback,
   fontSizes,
   spacing
 } from "@times-components/ts-styleguide";
@@ -31,7 +31,7 @@ const dropCapMargins = {
 export const Paragraph = styled.p`
   color: ${colours.functional.primary};
   display: block;
-  font-family: "${fonts.bodyRegular}";
+  font-family: ${fontsWithFallback.bodyRegular};
   line-height: 26px;
   font-size: ${fontSizes.bodyMobile}px;
   margin: 0 auto ${spacing(5)};
@@ -68,6 +68,6 @@ export const DropCap = styled.span`
     margin-top: ${dropCapMargins[font]}em;
     line-height: ${lineHeights[font]}em;
     font-size: ${dropCapFontSizes[font]}px;
-    font-family: "${fonts[font]}";
+    font-family:${fontsWithFallback[font]};
   `};
 `;
