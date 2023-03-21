@@ -1,7 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { TcText } from "@times-components/utils";
-import { colours, fontsWithFallback, fontSizes } from "@times-components/ts-styleguide";
+import {
+  colours,
+  fontsWithFallback,
+  fontSizes
+} from "@times-components/ts-styleguide";
 import DatePublication from "./src/date-publication";
 
 const styles = {
