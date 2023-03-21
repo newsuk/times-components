@@ -24,7 +24,8 @@ exports[`1. pull quote in culture magazine 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -36,13 +37,14 @@ exports[`1. pull quote in culture magazine 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
   color: #333333;
-  font-family: "TimesModern-Regular";
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
   font-size: 25px;
   line-height: 30px;
 }
@@ -69,7 +71,7 @@ exports[`1. pull quote in culture magazine 1`] = `
     <div
       className="c1"
       color="#696969"
-      fontFamily="TimesModern-Bold"
+      fontFamily="TimesModern-Bold, TimesModern-Bold-fallback, serif"
       fontSize={75}
       marginBottom="-40px"
       marginLeft={-3}
@@ -95,7 +97,7 @@ exports[`1. pull quote in culture magazine 1`] = `
       <div
         className="c1"
         color="#696969"
-        fontFamily="Roboto-Regular"
+        fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
         fontSize={12}
         lineHeight="13px"
         marginBottom={0}
@@ -105,7 +107,7 @@ exports[`1. pull quote in culture magazine 1`] = `
       <div
         className="c1"
         color="#696969"
-        fontFamily="Roboto-Regular"
+        fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
         fontSize={12}
         lineHeight="13px"
         marginBottom={0}
@@ -141,7 +143,8 @@ exports[`2. pull quote in style magazine 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -153,13 +156,14 @@ exports[`2. pull quote in style magazine 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
   color: #333333;
-  font-family: "TimesModern-Regular";
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
   font-size: 25px;
   line-height: 30px;
 }
@@ -186,7 +190,7 @@ exports[`2. pull quote in style magazine 1`] = `
     <div
       className="c1"
       color="#696969"
-      fontFamily="TimesModern-Bold"
+      fontFamily="TimesModern-Bold, TimesModern-Bold-fallback, serif"
       fontSize={75}
       marginBottom="-40px"
       marginLeft={-5}
@@ -212,7 +216,7 @@ exports[`2. pull quote in style magazine 1`] = `
       <div
         className="c1"
         color="#696969"
-        fontFamily="Roboto-Regular"
+        fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
         fontSize={12}
         lineHeight="13px"
         marginBottom={0}
@@ -222,7 +226,7 @@ exports[`2. pull quote in style magazine 1`] = `
       <div
         className="c1"
         color="#696969"
-        fontFamily="Roboto-Regular"
+        fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
         fontSize={12}
         lineHeight="13px"
         marginBottom={0}
@@ -258,7 +262,8 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -270,13 +275,14 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
   color: #333333;
-  font-family: "TimesModern-Regular";
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
   font-size: 25px;
   line-height: 30px;
 }
@@ -303,7 +309,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
     <div
       className="c1"
       color="#696969"
-      fontFamily="TimesModern-Bold"
+      fontFamily="TimesModern-Bold, TimesModern-Bold-fallback, serif"
       fontSize={75}
       marginBottom="-40px"
       marginLeft={-2}
@@ -329,7 +335,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
       <div
         className="c1"
         color="#696969"
-        fontFamily="Roboto-Regular"
+        fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
         fontSize={12}
         lineHeight="13px"
         marginBottom={0}
@@ -339,7 +345,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
       <div
         className="c1"
         color="#696969"
-        fontFamily="Roboto-Regular"
+        fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
         fontSize={12}
         lineHeight="13px"
         marginBottom={0}

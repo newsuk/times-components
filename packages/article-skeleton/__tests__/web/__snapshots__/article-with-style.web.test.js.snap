@@ -22,7 +22,7 @@ exports[`full article with style 1`] = `
 .c4 {
   color: #333333;
   display: block;
-  font-family: "TimesDigitalW04-Regular";
+  font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   line-height: 26px;
   font-size: 17px;
   margin: 0 auto 25px;
@@ -44,7 +44,7 @@ exports[`full article with style 1`] = `
   margin-top: 0.2em;
   line-height: 0.55em;
   font-size: 110px;
-  font-family: "TimesModern-Regular";
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
 }
 
 .c14 {
@@ -198,7 +198,7 @@ exports[`full article with style 1`] = `
 
 .c15 {
   color: #333333;
-  font-family: "TimesModern-Bold";
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-weight: 400;
   margin: 0 auto 10px;
   padding-right: 10px;
@@ -209,7 +209,7 @@ exports[`full article with style 1`] = `
 
 .c16 {
   color: #333333;
-  font-family: "TimesModern-Bold";
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-weight: 400;
   margin: 0 auto 10px;
   padding-right: 10px;
@@ -220,7 +220,7 @@ exports[`full article with style 1`] = `
 
 .c17 {
   color: #333333;
-  font-family: "TimesModern-Bold";
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-weight: 400;
   margin: 0 auto 10px;
   padding-right: 10px;
@@ -231,7 +231,7 @@ exports[`full article with style 1`] = `
 
 .c18 {
   color: #333333;
-  font-family: "TimesModern-Bold";
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-weight: 400;
   margin: 0 auto 10px;
   padding-right: 10px;
@@ -242,7 +242,7 @@ exports[`full article with style 1`] = `
 
 .c19 {
   color: #333333;
-  font-family: "TimesModern-Bold";
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-weight: 400;
   margin: 0 auto 10px;
   padding-right: 10px;

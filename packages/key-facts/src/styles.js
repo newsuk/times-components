@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {
   breakpoints,
   spacing,
-  fonts,
+  fontsWithFallback,
   colours,
   fontSizes
 } from "@times-components/ts-styleguide";
@@ -38,7 +38,7 @@ export const Bullet = styled.div`
 `;
 
 export const KeyFactsTitle = styled.h2`
-  font-family: ${fonts.headline};
+  font-family: ${fontsWithFallback.headline};
   font-size: ${fontSizes.keyFactsTitle}px;
   font-weight: 400;
   margin: 0px 0px 20px 0px;
@@ -47,7 +47,7 @@ export const KeyFactsTitle = styled.h2`
 
 export const Text = styled.span`
   color: ${colours.functional.primary};
-  font-family: ${fonts.bodyRegular};
+  font-family: ${fontsWithFallback.bodyRegular};
   font-size: ${fontSizes.infoSubText}px;
   margin-top: -8px;
   padding-left: ${spacing(3)};

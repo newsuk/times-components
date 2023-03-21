@@ -11,7 +11,7 @@ exports[`<LatestFromSection> no data  1`] = `
     >
       <h3
         aria-level="3"
-        class="related-articles-heading__HeadingForRelatedArticles-sc-1m1bjcq-0 cDImeD"
+        class="related-articles-heading__HeadingForRelatedArticles-sc-1m1bjcq-0 fZqlzx"
         role="heading"
       >
         Latest from Sport
@@ -32,7 +32,7 @@ exports[`<LatestFromSection> renders  1`] = `
     >
       <h3
         aria-level="3"
-        class="related-articles-heading__HeadingForRelatedArticles-sc-1m1bjcq-0 cDImeD"
+        class="related-articles-heading__HeadingForRelatedArticles-sc-1m1bjcq-0 fZqlzx"
         role="heading"
       >
         Latest from Sport
@@ -118,23 +118,23 @@ exports[`<LatestFromSection> renders  1`] = `
                           style="margin-bottom: 0px;"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                            style="font-family: Roboto-Regular; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 0.5px; color: rgb(0, 131, 71);"
+                            class="tc-text__TcText-sc-15igzev-0 kwFxdN"
+                            style="font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 0.5px; color: rgb(0, 131, 71);"
                           >
                             CYCLING | DAVID WALSH
                           </div>
                         </div>
                         <div
                           aria-level="3"
-                          class="headlineClass tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="headlineClass tc-text__TcText-sc-15igzev-0 kwFxdN"
                           role="heading"
-                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
+                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold, TimesModern-Bold-fallback, serif; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
                         >
                           The entire Tour bows to the greatness of Cavendish
                         </div>
                         <div
-                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular; font-size: 12px; line-height: 15px; margin-bottom: 5px;"
+                          class="tc-text__TcText-sc-15igzev-0 kwFxdN"
+                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px; line-height: 15px; margin-bottom: 5px;"
                         >
                           <time
                             datetime="2021-06-29T23:01:00Z"
@@ -143,10 +143,10 @@ exports[`<LatestFromSection> renders  1`] = `
                           </time>
                         </div>
                         <div
-                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="tc-text__TcText-sc-15igzev-0 kwFxdN"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 dNlbuS"
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 kwwMme"
                           >
                             David Walsh
                           </div>
@@ -232,23 +232,23 @@ exports[`<LatestFromSection> renders  1`] = `
                           style="margin-bottom: 0px;"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                            style="font-family: Roboto-Regular; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 0.5px; color: rgb(0, 131, 71);"
+                            class="tc-text__TcText-sc-15igzev-0 kwFxdN"
+                            style="font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 0.5px; color: rgb(0, 131, 71);"
                           >
                             EURO 2020 | MATT LAWTON
                           </div>
                         </div>
                         <div
                           aria-level="3"
-                          class="headlineClass tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="headlineClass tc-text__TcText-sc-15igzev-0 kwFxdN"
                           role="heading"
-                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
+                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold, TimesModern-Bold-fallback, serif; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
                         >
                           Flawless Pickford repels everything Germans muster
                         </div>
                         <div
-                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular; font-size: 12px; line-height: 15px; margin-bottom: 5px;"
+                          class="tc-text__TcText-sc-15igzev-0 kwFxdN"
+                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px; line-height: 15px; margin-bottom: 5px;"
                         >
                           <time
                             datetime="2021-06-30T11:00:00Z"
@@ -257,10 +257,10 @@ exports[`<LatestFromSection> renders  1`] = `
                           </time>
                         </div>
                         <div
-                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="tc-text__TcText-sc-15igzev-0 kwFxdN"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 dNlbuS"
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 kwwMme"
                           >
                             Matt Lawton
                           </div>
@@ -346,23 +346,23 @@ exports[`<LatestFromSection> renders  1`] = `
                           style="margin-bottom: 0px;"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                            style="font-family: Roboto-Regular; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 0.5px; color: rgb(0, 131, 71);"
+                            class="tc-text__TcText-sc-15igzev-0 kwFxdN"
+                            style="font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; margin-bottom: 0px; margin-top: -1px; padding-top: 1px; letter-spacing: 0.5px; color: rgb(0, 131, 71);"
                           >
                             EURO 2020 | JONATHAN NORTHCROFT
                           </div>
                         </div>
                         <div
                           aria-level="3"
-                          class="headlineClass tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="headlineClass tc-text__TcText-sc-15igzev-0 kwFxdN"
                           role="heading"
-                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
+                          style="color: rgb(51, 51, 51); font-family: TimesModern-Bold, TimesModern-Bold-fallback, serif; font-weight: 400; margin-bottom: 5px; font-size: 22px; line-height: 27px; margin-top: 0px;"
                         >
                           The tactical masterstrokes behind England’s ruthless win
                         </div>
                         <div
-                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
-                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular; font-size: 12px; line-height: 15px; margin-bottom: 5px;"
+                          class="tc-text__TcText-sc-15igzev-0 kwFxdN"
+                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px; line-height: 15px; margin-bottom: 5px;"
                         >
                           <time
                             datetime="2021-06-29T23:01:00Z"
@@ -371,10 +371,10 @@ exports[`<LatestFromSection> renders  1`] = `
                           </time>
                         </div>
                         <div
-                          class="tc-text__TcText-sc-15igzev-0 lhcAkf"
+                          class="tc-text__TcText-sc-15igzev-0 kwFxdN"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 dNlbuS"
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 kwwMme"
                           >
                             Jonathan Northcroft
                           </div>

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {
   breakpoints,
   colours,
-  fonts,
+  fontsWithFallback,
   fontSizes,
   spacing
 } from "@times-components/ts-styleguide";
@@ -27,7 +27,7 @@ export const AuthorNameWrapper = styled.h1`
   overflow-wrap: break-word;
 
   color: ${colours.functional.brandColour};
-  font-family: "${fonts.headline}";
+  font-family: ${fontsWithFallback.headline};
   font-size: ${fontSizes.headline}px;
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -60,8 +60,8 @@ export const AuthorProfileHeadJobTitleContainer = styled.h2`
   box-sizing: border-box;
   color: rgb(0, 0, 0);
   display: inline;
-  font: 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;

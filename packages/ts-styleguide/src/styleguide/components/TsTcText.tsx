@@ -9,8 +9,6 @@ export default styled.div<{ style?: Style }>`
   color: ${({ style }) =>
     style && style.color ? style.color : 'rgb(0, 0, 0)'};
   display: inline;
-  font: 14px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Ubuntu, 'Helvetica Neue', sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -25,7 +23,5 @@ export default styled.div<{ style?: Style }>`
   margin-top: ${({ style }) =>
     style && style.marginTop ? style.marginTop : '0px'};
   font-family: ${({ style }) =>
-    style && style.fontFamily
-      ? style.fontFamily
-      : 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif'};
+    style && style.fontFamily ? style.fontFamily : 'sans-serif'};
 `;

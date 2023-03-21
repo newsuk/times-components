@@ -43,12 +43,12 @@ exports[`1. renders correctly with an image lead asset 1`] = `
     </div>
     <figcaption>
       <div
-        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+        className="tc-text__TcText-sc-15igzev-0 kwFxdN"
       >
         Chris Reynolds Gordon at one of his party venues in London
       </div>
       <div
-        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+        className="tc-text__TcText-sc-15igzev-0 kwFxdN"
       >
         The credits
       </div>
@@ -95,12 +95,12 @@ exports[`2. renders correctly with a video lead asset 1`] = `
     </div>
     <figcaption>
       <div
-        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+        className="tc-text__TcText-sc-15igzev-0 kwFxdN"
       >
         Chris Reynolds Gordon at one of his party venues in London
       </div>
       <div
-        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+        className="tc-text__TcText-sc-15igzev-0 kwFxdN"
       >
         The credits
       </div>
@@ -156,12 +156,12 @@ exports[`5. it renders correctly with a classname 1`] = `
     </div>
     <figcaption>
       <div
-        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+        className="tc-text__TcText-sc-15igzev-0 kwFxdN"
       >
         Chris Reynolds Gordon at one of his party venues in London
       </div>
       <div
-        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+        className="tc-text__TcText-sc-15igzev-0 kwFxdN"
       >
         The credits
       </div>
