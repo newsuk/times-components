@@ -9,13 +9,13 @@ exports[`Render Component one should render a snapshot 1`] = `
       class="css-mxu7ds"
     >
       <p
-        class="css-88c9we"
+        class="css-kkq2ir"
         color="#008347"
       >
         JOEL KPOKU INTERVIEW
       </p>
       <section
-        class="css-1trd85"
+        class="css-1nztlxo"
       >
         <h1
           class="nk-headline-heading css-1spnxj1"
@@ -37,10 +37,10 @@ exports[`Render Component one should render a snapshot 1`] = `
         </h1>
       </section>
       <p
-        class="css-f1ccxe"
+        class="css-1w7gqe7"
       >
         <a
-          class="css-13fiaa0"
+          class="css-173icha"
           href="https://www.thetimes.co.uk/"
         >
           <span
@@ -55,7 +55,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         </a>
       </p>
       <p
-        class="css-1597hc5"
+        class="css-8tll0o"
       >
         4 min read
       </p>
@@ -103,7 +103,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-1de9iv"
       >
         <p
-          class="css-7yb78l"
+          class="css-1iv11ld"
         >
           REUTERS/PHIL NOBLE
         </p>

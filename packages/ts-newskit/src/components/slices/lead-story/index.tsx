@@ -70,11 +70,11 @@ export const LeadStory = ({
             xs: 'editorialParagraph020',
             md: 'editorialParagraph010'
           }}
-          paddingBlockEnd={{ xs: 'space020' }}
         >
           <LinkInline
             overrides={{
-              stylePreset: 'leadStoryDescription'
+              stylePreset: 'leadStoryDescription',
+              paddingBlockEnd: 'space020'
             }}
             external={false}
             href={url}
@@ -85,7 +85,7 @@ export const LeadStory = ({
         <TextBlock
           stylePreset="leadStoryTextColor"
           typographyPreset="newPreset100"
-          paddingBlockStart="space020"
+          paddingBlockStart="space010"
         >
           {readingTime}
         </TextBlock>
@@ -117,7 +117,11 @@ export const LeadStory = ({
       </Block>
       <Visible lg xl>
         <Stack flow="horizontal-bottom" paddingInlineStart="space010">
-          <StyledTextBlock stylePreset="leadStoryTextColor">
+          <StyledTextBlock
+            stylePreset="leadStoryTextColor"
+            typographyPreset="newPreset100"
+            marginInlineEnd="space045"
+          >
             {bylines}
           </StyledTextBlock>
         </Stack>

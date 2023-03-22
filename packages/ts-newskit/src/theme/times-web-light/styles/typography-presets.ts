@@ -69,15 +69,15 @@ export const typographyPresets = Object.fromEntries(
       fontStretch: 'normal'
     },
     newPreset080: {
-      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+      fontFamily: '{{fonts.fontFamily040.fontFamily}}',
       fontWeight: '{{fonts.fontWeight030}}',
       fontSize: '{{fonts.fontSize080}}',
       lineHeight: '{{fonts.fontLineHeight040}}',
-      letterSpacing: '{{fonts.fontLetterSpacing020}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     },
     newPreset090: {
-      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
       fontSize: '{{fonts.fontSize010}}',
       fontWeight: '{{fonts.fontWeight030}}',
       lineHeight: '{{fonts.fontLineHeight050}}',

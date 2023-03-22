@@ -4,7 +4,6 @@ export const StyledTextBlock = styled(TextBlock)`
   writing-mode: vertical-lr;
   text-orientation: sideways;
   transform: scale(-1, -1);
-  margin-bottom: 20px;
 `;
 
 export const StyledTextStack = styled(Stack)`
