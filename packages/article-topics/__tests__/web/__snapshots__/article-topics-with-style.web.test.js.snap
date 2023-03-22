@@ -29,9 +29,9 @@ exports[`1. group of topics 1`] = `
         paddingTop="10px"
       >
         <div
-          className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+          className="tc-text__TcText-sc-15igzev-0 kwFxdN"
           color="#696969"
-          fontFamily="Roboto-Regular"
+          fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
           fontSize={12}
           fontSizeStyle={
             Object {
@@ -79,9 +79,9 @@ exports[`2. group of topics at large scale 1`] = `
         paddingTop="10px"
       >
         <div
-          className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+          className="tc-text__TcText-sc-15igzev-0 kwFxdN"
           color="#696969"
-          fontFamily="Roboto-Regular"
+          fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
           fontSize={12}
           fontSizeStyle={
             Object {
@@ -129,9 +129,9 @@ exports[`3. group of topics at xlarge scale 1`] = `
         paddingTop="10px"
       >
         <div
-          className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+          className="tc-text__TcText-sc-15igzev-0 kwFxdN"
           color="#696969"
-          fontFamily="Roboto-Regular"
+          fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
           fontSize={12}
           fontSizeStyle={
             Object {
@@ -171,9 +171,9 @@ exports[`4. article topic with style 1`] = `
       paddingTop="10px"
     >
       <div
-        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+        className="tc-text__TcText-sc-15igzev-0 kwFxdN"
         color="#696969"
-        fontFamily="Roboto-Regular"
+        fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
         fontSize={12}
         fontSizeStyle={
           Object {
@@ -212,9 +212,9 @@ exports[`5. article topic with no additional style 1`] = `
       paddingTop="10px"
     >
       <div
-        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+        className="tc-text__TcText-sc-15igzev-0 kwFxdN"
         color="#696969"
-        fontFamily="Roboto-Regular"
+        fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
         fontSize={12}
         fontSizeStyle={null}
         lineHeight={12}

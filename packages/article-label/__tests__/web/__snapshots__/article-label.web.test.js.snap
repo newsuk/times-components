@@ -2,11 +2,11 @@
 
 exports[`Article Label test on web renders ArticleLabel 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   style={
     Object {
       "color": "#008347",
-      "fontFamily": "Roboto-Regular",
+      "fontFamily": "Roboto-Regular, Roboto-Regular-fallback, sans-serif",
       "fontSize": 12,
       "fontWeight": "400",
       "letterSpacing": 0.5,
@@ -23,11 +23,11 @@ exports[`Article Label test on web renders ArticleLabel 1`] = `
 
 exports[`Article Label test on web renders ArticleLabel with GraphQL Colour type 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   style={
     Object {
       "color": "#008347",
-      "fontFamily": "Roboto-Regular",
+      "fontFamily": "Roboto-Regular, Roboto-Regular-fallback, sans-serif",
       "fontSize": 12,
       "fontWeight": "400",
       "letterSpacing": 0.5,

@@ -48,7 +48,7 @@ exports[`1. a primary image 1`] = `
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
+  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   margin-bottom: 10px;
   padding: 5px 0;
   text-transform: uppercase;
@@ -287,7 +287,7 @@ exports[`2. a fullwidth image 1`] = `
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
+  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   margin-bottom: 10px;
   padding: 5px 0;
   text-transform: uppercase;
@@ -522,7 +522,7 @@ exports[`3. a secondary image 1`] = `
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
+  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   margin-bottom: 10px;
   padding: 5px 0;
   text-transform: uppercase;
@@ -773,7 +773,7 @@ exports[`4. an inline image 1`] = `
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
+  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   margin-bottom: 10px;
   padding: 5px 0;
   text-transform: uppercase;

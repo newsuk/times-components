@@ -3,7 +3,7 @@
 exports[`1. inner component with page 1`] = `
 <tc-text__TcText>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     {
   "page": 1
@@ -14,7 +14,7 @@ exports[`1. inner component with page 1`] = `
 
 exports[`does not update the page state when the history changes without a page 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
 >
   2
 </div>
@@ -22,7 +22,7 @@ exports[`does not update the page state when the history changes without a page 
 
 exports[`updates the page state when the history changes 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
 >
   4
 </div>

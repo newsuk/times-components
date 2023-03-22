@@ -24,7 +24,8 @@ exports[`full article with style 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -34,7 +35,7 @@ exports[`full article with style 1`] = `
 .c24 {
   color: #333333;
   display: block;
-  font-family: "TimesDigitalW04-Regular";
+  font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   line-height: 26px;
   font-size: 17px;
   margin: 0 auto 25px;
@@ -211,7 +212,7 @@ exports[`full article with style 1`] = `
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
+  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   margin-bottom: 10px;
   padding: 5px 0;
   text-transform: uppercase;
@@ -238,7 +239,7 @@ exports[`full article with style 1`] = `
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
+  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   -webkit-letter-spacing: 0.6px;
   -moz-letter-spacing: 0.6px;
   -ms-letter-spacing: 0.6px;
@@ -353,12 +354,13 @@ exports[`full article with style 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 12px;
   line-height: 15px;
   color: #696969;
@@ -425,7 +427,7 @@ exports[`full article with style 1`] = `
   border: 0px solid black;
   box-sizing: border-box;
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -515,12 +517,12 @@ exports[`full article with style 1`] = `
   border: 0px solid black;
   box-sizing: border-box;
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: TimesModern-Regular;
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
   font-size: 20px;
   line-height: 26px;
   color: #333333;
@@ -891,7 +893,7 @@ exports[`full article with style 1`] = `
             <div
               className="c6"
               color="#1D1D1B"
-              fontFamily="Roboto-Regular"
+              fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
               fontSize={12}
               fontWeight="400"
               letterSpacing={0.5}
@@ -1153,7 +1155,8 @@ exports[`full article with style in the culture magazine 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -1163,7 +1166,7 @@ exports[`full article with style in the culture magazine 1`] = `
 .c24 {
   color: #333333;
   display: block;
-  font-family: "TimesDigitalW04-Regular";
+  font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   line-height: 26px;
   font-size: 17px;
   margin: 0 auto 25px;
@@ -1340,7 +1343,7 @@ exports[`full article with style in the culture magazine 1`] = `
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
+  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   margin-bottom: 10px;
   padding: 5px 0;
   text-transform: uppercase;
@@ -1367,7 +1370,7 @@ exports[`full article with style in the culture magazine 1`] = `
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
+  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   -webkit-letter-spacing: 0.6px;
   -moz-letter-spacing: 0.6px;
   -ms-letter-spacing: 0.6px;
@@ -1482,12 +1485,13 @@ exports[`full article with style in the culture magazine 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 12px;
   line-height: 15px;
   color: #696969;
@@ -1554,12 +1558,12 @@ exports[`full article with style in the culture magazine 1`] = `
   border: 0px solid black;
   box-sizing: border-box;
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: TimesModern-Bold;
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-size: 30px;
   line-height: 33px;
   color: #1D1D1B;
@@ -1645,12 +1649,12 @@ exports[`full article with style in the culture magazine 1`] = `
   border: 0px solid black;
   box-sizing: border-box;
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: TimesModern-Regular;
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
   font-size: 20px;
   line-height: 26px;
   color: #333333;
@@ -2021,7 +2025,7 @@ exports[`full article with style in the culture magazine 1`] = `
             <div
               className="c6"
               color="#7B0046"
-              fontFamily="Roboto-Regular"
+              fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
               fontSize={12}
               fontWeight="400"
               letterSpacing={0.5}
@@ -2283,7 +2287,8 @@ exports[`full article with style in the style magazine 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -2293,7 +2298,7 @@ exports[`full article with style in the style magazine 1`] = `
 .c24 {
   color: #333333;
   display: block;
-  font-family: "TimesDigitalW04-Regular";
+  font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   line-height: 26px;
   font-size: 17px;
   margin: 0 auto 25px;
@@ -2470,7 +2475,7 @@ exports[`full article with style in the style magazine 1`] = `
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
+  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   margin-bottom: 10px;
   padding: 5px 0;
   text-transform: uppercase;
@@ -2497,7 +2502,7 @@ exports[`full article with style in the style magazine 1`] = `
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
+  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   -webkit-letter-spacing: 0.6px;
   -moz-letter-spacing: 0.6px;
   -ms-letter-spacing: 0.6px;
@@ -2612,12 +2617,13 @@ exports[`full article with style in the style magazine 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 12px;
   line-height: 15px;
   color: #696969;
@@ -2684,12 +2690,12 @@ exports[`full article with style in the style magazine 1`] = `
   border: 0px solid black;
   box-sizing: border-box;
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: TimesModern-Bold;
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-size: 30px;
   line-height: 33px;
   color: #1D1D1B;
@@ -2776,12 +2782,12 @@ exports[`full article with style in the style magazine 1`] = `
   border: 0px solid black;
   box-sizing: border-box;
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: TimesModern-Regular;
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
   font-size: 20px;
   line-height: 26px;
   color: #333333;
@@ -3152,7 +3158,7 @@ exports[`full article with style in the style magazine 1`] = `
             <div
               className="c6"
               color="#BC3385"
-              fontFamily="Roboto-Regular"
+              fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
               fontSize={12}
               fontWeight="400"
               letterSpacing={0.5}
@@ -3414,7 +3420,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -3424,7 +3431,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 .c24 {
   color: #333333;
   display: block;
-  font-family: "TimesDigitalW04-Regular";
+  font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   line-height: 26px;
   font-size: 17px;
   margin: 0 auto 25px;
@@ -3601,7 +3608,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
+  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   margin-bottom: 10px;
   padding: 5px 0;
   text-transform: uppercase;
@@ -3628,7 +3635,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   -webkit-flex: 1 1 100%;
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  font: normal 14px / 17px TimesDigitalW04-Regular;
+  font: normal 14px / 17px TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   -webkit-letter-spacing: 0.6px;
   -moz-letter-spacing: 0.6px;
   -ms-letter-spacing: 0.6px;
@@ -3743,12 +3750,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 12px;
   line-height: 15px;
   color: #696969;
@@ -3815,12 +3823,12 @@ exports[`full article with style in the sunday times magazine 1`] = `
   border: 0px solid black;
   box-sizing: border-box;
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: TimesModern-Bold;
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-size: 30px;
   line-height: 33px;
   color: #1D1D1B;
@@ -3906,12 +3914,12 @@ exports[`full article with style in the sunday times magazine 1`] = `
   border: 0px solid black;
   box-sizing: border-box;
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  font-family: TimesModern-Regular;
+  font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
   font-size: 20px;
   line-height: 26px;
   color: #333333;
@@ -4282,7 +4290,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             <div
               className="c6"
               color="#F13D00"
-              fontFamily="Roboto-Regular"
+              fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
               fontSize={12}
               fontWeight="400"
               letterSpacing={0.5}

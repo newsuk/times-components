@@ -1,7 +1,12 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import styleguide, { colours, fonts, spacing } from '../Styleguide';
+import styleguide, {
+  colours,
+  fonts,
+  fontsWithFallback,
+  spacing
+} from '../Styleguide';
 import { Animations, TsTcText, TsTcView } from '../components';
 
 import styles from '../helpers/storybookStyles';
@@ -41,11 +46,21 @@ describe('styleguide', () => {
       expect(typeof fonts).toBe('object');
     });
 
+    it('should render the object of font and fallback references', () => {
+      expect(typeof fontsWithFallback).toBe('object');
+    });
+
+    it('should render the supporting font roboto should correctly show font and fallback references', () => {
+      expect(fontsWithFallback.supporting).toEqual(
+        'Roboto-Regular, Roboto-Regular-fallback, sans-serif'
+      );
+    });
+
     it('should return object when fontFactory is called', () => {
       expect(
         styleguide().fontFactory({ font: 'headline', fontSize: 'body' })
       ).toEqual({
-        fontFamily: 'TimesModern-Bold',
+        fontFamily: 'TimesModern-Bold, TimesModern-Bold-fallback, serif',
         fontSize: 18,
         lineHeight: undefined
       });

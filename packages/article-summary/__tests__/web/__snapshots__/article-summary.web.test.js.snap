@@ -14,16 +14,16 @@ exports[`1. article summary component with a single paragraph 1`] = `
   </div>
   <div
     aria-level="3"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Headline
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       Test paragraph
@@ -45,7 +45,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     }
   />
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -53,7 +53,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <ArticleByline
       ast={
@@ -106,7 +106,7 @@ exports[`2. article summary with opinion byline 1`] = `
     />
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <ArticleBylineOpinion
       ast={
@@ -135,16 +135,16 @@ exports[`2. article summary with opinion byline 1`] = `
   </div>
   <div
     aria-level="3"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Headline
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       Test paragraph
@@ -152,7 +152,7 @@ exports[`2. article summary with opinion byline 1`] = `
     </div>
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -168,22 +168,22 @@ exports[`3. article summary component with multiple paragraphs 1`] = `
 >
   <div
     aria-level="3"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Headline
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       Test paragraph 1.
     </div>
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
        
       Test paragraph 2
@@ -191,7 +191,7 @@ exports[`3. article summary component with multiple paragraphs 1`] = `
     </div>
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -199,7 +199,7 @@ exports[`3. article summary component with multiple paragraphs 1`] = `
     />
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <ArticleByline
       ast={
@@ -233,10 +233,10 @@ exports[`4. article summary component with content including line breaks 1`] = `
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       <b>
@@ -248,7 +248,7 @@ exports[`4. article summary component with content including line breaks 1`] = `
       ★★★★☆
     </div>
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
        
       <b>
@@ -260,7 +260,7 @@ exports[`4. article summary component with content including line breaks 1`] = `
       ★★★☆☆
     </div>
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
        
       Test paragraph
@@ -284,26 +284,26 @@ exports[`5. article summary component containing links 1`] = `
   </div>
   <div
     aria-level="3"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Headline
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       <div
-        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+        className="tc-text__TcText-sc-15igzev-0 kwFxdN"
       >
         Sajid Javid
       </div>
        has warned the Home Office to expect an overhaul after the 
       <div
-        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+        className="tc-text__TcText-sc-15igzev-0 kwFxdN"
       >
         Windrush scandal
       </div>
@@ -312,7 +312,7 @@ exports[`5. article summary component containing links 1`] = `
     </div>
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -336,13 +336,13 @@ exports[`6. article summary component with headline and no content 1`] = `
   </div>
   <div
     aria-level="3"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Headline
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <DatePublication
       date="2017-07-01T14:32:00.000Z"
@@ -366,35 +366,35 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
   </div>
   <div
     aria-level="3"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Headline
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       Test paragraph 1.
     </div>
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
        
       Test paragraph 2
     </div>
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
        
       ...
     </div>
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <DatePublication
       date="2017-07-01T14:32:00.000Z"
@@ -402,7 +402,7 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
     />
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <ArticleByline
       ast={
@@ -437,16 +437,16 @@ exports[`8. article summary component with no byline 1`] = `
 >
   <div
     aria-level="3"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Headline
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       Test paragraph
@@ -454,7 +454,7 @@ exports[`8. article summary component with no byline 1`] = `
     </div>
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -470,16 +470,16 @@ exports[`9. article summary component with no label 1`] = `
 >
   <div
     aria-level="3"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Headline
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       Test paragraph
@@ -487,7 +487,7 @@ exports[`9. article summary component with no label 1`] = `
     </div>
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -495,7 +495,7 @@ exports[`9. article summary component with no label 1`] = `
     />
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <ArticleByline
       ast={
@@ -537,10 +537,10 @@ exports[`10. article summary component with no headline 1`] = `
     />
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       Test paragraph
@@ -548,7 +548,7 @@ exports[`10. article summary component with no headline 1`] = `
     </div>
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <DatePublication
       date="2017-07-01T14:32:00.000Z"
@@ -572,16 +572,16 @@ exports[`11. article summary component with no date publication 1`] = `
   </div>
   <div
     aria-level="3"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Headline
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       Test paragraph
@@ -589,7 +589,7 @@ exports[`11. article summary component with no date publication 1`] = `
     </div>
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <ArticleByline
       ast={
@@ -633,16 +633,16 @@ exports[`12. article summary component with a video label 1`] = `
   </div>
   <div
     aria-level="3"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Headline
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       Test paragraph
@@ -650,7 +650,7 @@ exports[`12. article summary component with a video label 1`] = `
     </div>
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -658,7 +658,7 @@ exports[`12. article summary component with a video label 1`] = `
     />
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <ArticleByline
       ast={
@@ -701,23 +701,23 @@ exports[`13. article summary component with a strapline 1`] = `
   </div>
   <div
     aria-level="3"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Headline
   </div>
   <div
     aria-level="4"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Strapline
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       Test paragraph
@@ -739,7 +739,7 @@ exports[`13. article summary component with a strapline 1`] = `
     }
   />
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -747,7 +747,7 @@ exports[`13. article summary component with a strapline 1`] = `
     />
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <ArticleByline
       ast={
@@ -802,10 +802,10 @@ exports[`16. article summary component with no headline and no label title 1`] =
   className="tc-view__TcView-nuazoi-0 fPjBcr"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       Test paragraph
@@ -813,7 +813,7 @@ exports[`16. article summary component with no headline and no label title 1`] =
     </div>
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <DatePublication
       date="2017-07-01T14:32:00.000Z"
@@ -825,10 +825,10 @@ exports[`16. article summary component with no headline and no label title 1`] =
 
 exports[`17. article summary content component with white space height 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     
     Test paragraph
@@ -839,10 +839,10 @@ exports[`17. article summary content component with white space height 1`] = `
 
 exports[`18. article summary content component without white space height 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     
     Test paragraph
@@ -865,7 +865,7 @@ exports[`19. article summary component with a single paragraph and flag on table
   </div>
   <div
     aria-level="3"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Headline
@@ -885,10 +885,10 @@ exports[`19. article summary component with a single paragraph and flag on table
     }
   />
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       Test paragraph
@@ -896,7 +896,7 @@ exports[`19. article summary component with a single paragraph and flag on table
     </div>
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -904,7 +904,7 @@ exports[`19. article summary component with a single paragraph and flag on table
     />
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <ArticleByline
       ast={
@@ -958,14 +958,14 @@ exports[`20. article summary component with a strapline and flag on tablet 1`] =
   </div>
   <div
     aria-level="3"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Headline
   </div>
   <div
     aria-level="4"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     role="heading"
   >
     Test Strapline
@@ -985,10 +985,10 @@ exports[`20. article summary component with a strapline and flag on tablet 1`] =
     }
   />
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     >
       
       Test paragraph
@@ -996,7 +996,7 @@ exports[`20. article summary component with a strapline and flag on tablet 1`] =
     </div>
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -1004,7 +1004,7 @@ exports[`20. article summary component with a strapline and flag on tablet 1`] =
     />
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <ArticleByline
       ast={

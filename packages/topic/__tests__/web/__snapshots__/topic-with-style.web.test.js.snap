@@ -24,7 +24,8 @@ exports[`1. an article list header 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -54,7 +55,7 @@ exports[`1. an article list header 1`] = `
 }
 
 .c2 {
-  font-family: "TimesModern-Bold";
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-size: 40px;
   color: #1D1D1B;
   padding-bottom: 20px;
@@ -141,7 +142,7 @@ exports[`1. an article list header 1`] = `
     <div
       className="c4"
       color="#333333"
-      fontFamily="TimesDigitalW04"
+      fontFamily="TimesDigitalW04, TimesDigitalW04-fallback, serif"
       fontSize={15}
       lineHeight="26px"
       paddingBottom="15px"

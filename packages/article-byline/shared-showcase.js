@@ -2,11 +2,15 @@
 
 import React from "react";
 import { TcView } from "@times-components/utils";
-import { colours, fonts, fontSizes } from "@times-components/ts-styleguide";
+import {
+  colours,
+  fontsWithFallback,
+  fontSizes
+} from "@times-components/ts-styleguide";
 
 const styles = {
   color: colours.section.comment,
-  fontFamily: fonts.supporting,
+  fontFamily: fontsWithFallback.supporting,
   fontSize: fontSizes.cardMetaMobile,
   letterSpacing: 0.6,
   lineHeight: 12

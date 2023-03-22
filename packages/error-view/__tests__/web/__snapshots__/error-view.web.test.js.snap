@@ -2,7 +2,7 @@
 
 exports[`1. error state if a component throws an error 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
 >
   Error: an error occurred
 </div>
@@ -10,7 +10,7 @@ exports[`1. error state if a component throws an error 1`] = `
 
 exports[`2. error state if a component invokes an error 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
 >
   Error: some error
 </div>
@@ -18,7 +18,7 @@ exports[`2. error state if a component invokes an error 1`] = `
 
 exports[`3. good state if there is no error 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
 >
   All good
 </div>

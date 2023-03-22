@@ -2,7 +2,7 @@
 
 exports[`Tracking tests on web TrackEvents forwards props to wrapped component 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
 >
   bar
 </div>
@@ -16,7 +16,7 @@ exports[`Tracking tests on web TrackEvents raises error when trying to track the
 
 exports[`Tracking tests on web TrackEvents renders when tracking context is missing 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
 >
   foo
 </div>
@@ -59,7 +59,7 @@ exports[`Tracking tests on web WithTrackScrollDepth does not tracks scroll depth
 
 exports[`Tracking tests on web WithTrackScrollDepth forwards props to wrapped component 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
 >
   bar
 </div>
@@ -67,7 +67,7 @@ exports[`Tracking tests on web WithTrackScrollDepth forwards props to wrapped co
 
 exports[`Tracking tests on web WithTrackScrollDepth renders when tracking context is missing 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
 >
   foo
 </div>
@@ -132,7 +132,7 @@ Array [
 
 exports[`Tracking tests on web WithTrackingContext forwards props to wrapped component 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
 >
   bar
 </div>

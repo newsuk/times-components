@@ -124,9 +124,9 @@ exports[`1. card default state 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "tc-text__TcText-sc-15igzev-0",
                       "isStatic": true,
-                      "lastClassName": "lhcAkf",
+                      "lastClassName": "kwFxdN",
                       "rules": Array [
-                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                       ],
                     },
                     "displayName": "tc-text__TcText",
@@ -278,9 +278,9 @@ exports[`2. pass an empty state to the image component 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "tc-text__TcText-sc-15igzev-0",
                       "isStatic": true,
-                      "lastClassName": "lhcAkf",
+                      "lastClassName": "kwFxdN",
                       "rules": Array [
-                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                       ],
                     },
                     "displayName": "tc-text__TcText",
@@ -391,9 +391,9 @@ exports[`3. card without an image when showimage is false 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "tc-text__TcText-sc-15igzev-0",
                       "isStatic": true,
-                      "lastClassName": "lhcAkf",
+                      "lastClassName": "kwFxdN",
                       "rules": Array [
-                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                       ],
                     },
                     "displayName": "tc-text__TcText",
@@ -545,9 +545,9 @@ exports[`4. pass an empty state to the image component when the uri is null 1`] 
                     "componentStyle": ComponentStyle {
                       "componentId": "tc-text__TcText-sc-15igzev-0",
                       "isStatic": true,
-                      "lastClassName": "lhcAkf",
+                      "lastClassName": "kwFxdN",
                       "rules": Array [
-                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                       ],
                     },
                     "displayName": "tc-text__TcText",
@@ -658,9 +658,9 @@ exports[`5. card with reversed layout 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "tc-text__TcText-sc-15igzev-0",
                       "isStatic": true,
-                      "lastClassName": "lhcAkf",
+                      "lastClassName": "kwFxdN",
                       "rules": Array [
-                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                       ],
                     },
                     "displayName": "tc-text__TcText",
@@ -812,9 +812,9 @@ exports[`6. card with reversed layout and no image 1`] = `
                     "componentStyle": ComponentStyle {
                       "componentId": "tc-text__TcText-sc-15igzev-0",
                       "isStatic": true,
-                      "lastClassName": "lhcAkf",
+                      "lastClassName": "kwFxdN",
                       "rules": Array [
-                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                        "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                       ],
                     },
                     "displayName": "tc-text__TcText",

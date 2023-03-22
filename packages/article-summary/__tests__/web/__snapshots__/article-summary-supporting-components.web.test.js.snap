@@ -3,7 +3,7 @@
 exports[`1. article summary headline component 1`] = `
 <div
   aria-level="3"
-  className="bigOne tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="bigOne tc-text__TcText-sc-15igzev-0 kwFxdN"
   role="heading"
 >
   PM hails breakthrough ahead of key Commons vote
@@ -13,7 +13,7 @@ exports[`1. article summary headline component 1`] = `
 exports[`2. article summary strapline component 1`] = `
 <div
   aria-level="4"
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   role="heading"
 >
   PM hails breakthrough ahead of key Commons vote

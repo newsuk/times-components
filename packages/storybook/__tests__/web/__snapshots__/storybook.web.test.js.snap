@@ -11,7 +11,7 @@ exports[`Bar Spacing Decorator 1`] = `
   }
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     I am in Storybook!
   </div>
@@ -36,7 +36,7 @@ exports[`Centered Decorator 1`] = `
   }
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     I am in Storybook!
   </div>
@@ -55,7 +55,7 @@ exports[`Lateral Spacing Decorator 1`] = `
   }
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     I am in Storybook!
   </div>
@@ -64,7 +64,7 @@ exports[`Lateral Spacing Decorator 1`] = `
 
 exports[`StrictWrapper to wrap child components in Strict Mode 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
 >
   I am in Storybook!
 </div>
@@ -229,7 +229,7 @@ exports[`White Background Decorator 1`] = `
   }
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     I am in Storybook!
   </div>

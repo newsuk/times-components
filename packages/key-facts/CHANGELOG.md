@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.12.0](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.44...@times-components/key-facts@2.12.0) (2023-03-22)
+
+
+### Features
+
+* **TDP-3084:** updated fallback font settings for overrides ([#3292](https://github.com/newsuk/times-components/issues/3292)) ([12f9c6c](https://github.com/newsuk/times-components/commit/12f9c6c06fdfaf52b7b28bbcc2bbeb8b39d29d57))
+
+
+
+
+
 ## [2.11.44](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.11.43...@times-components/key-facts@2.11.44) (2023-03-20)
 
 **Note:** Version bump only for package @times-components/key-facts
