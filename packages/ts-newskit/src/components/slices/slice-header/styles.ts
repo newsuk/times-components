@@ -8,8 +8,8 @@ export const StyledBlock = styled(Stack)`
   }
 `;
 
-export const StyledTextBlock = styled(TextBlock)`
-  color: ${({ color }) => color};
+export const StyledTextBlock = styled(TextBlock)<{ $color: string }>`
+  color: ${({ $color }) => $color};
 `;
 
 export const StyledButton = styled.button`

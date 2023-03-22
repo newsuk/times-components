@@ -7,7 +7,6 @@ exports[`Render Header should render a snapshot 1`] = `
   >
     <p
       class="css-1nwwu0a"
-      color="red"
     >
       Rugby Union
     </p>

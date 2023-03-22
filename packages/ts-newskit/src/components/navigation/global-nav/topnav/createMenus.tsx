@@ -20,23 +20,25 @@ export const createMenu = (menuData: any) => {
   const [moreSelected, setMoreSelected] = useState<boolean>(false);
 
   const menuItems = breakpointKey === 'lg' ? 4 : menuData.length;
-  const menuStyle =
-    breakpointKey === 'xs' || breakpointKey === 'sm'
-      ? {
-          minWidth: '0',
-          paddingInline: 'space000',
-          paddingBlockEnd: 'space000',
-          paddingBlockStart: 'space010',
-          stylePreset: 'menuItemScroll',
-          typographyPreset: 'topNav010'
-        }
-      : menuItemPresets;
 
   const moreMenuLength = menuData.length - menuItems;
   const navItems = menuData
     .slice(0, menuItems)
     .map(({ title, url }: { title: string; url: string }) => (
-      <MenuItem href={url} overrides={menuStyle} key={url}>
+      <MenuItem
+        href={url}
+        overrides={{
+          ...menuItemPresets,
+          paddingInline: { xs: 'space000', md: 'space040' },
+          paddingBlockEnd: { xs: 'space000', md: 'space040' },
+          paddingBlockStart: { xs: 'space010', md: 'space040' },
+          stylePreset: {
+            xs: 'menuItemScroll',
+            md: 'menuItem'
+          }
+        }}
+        key={url}
+      >
         {title}
       </MenuItem>
     ));
