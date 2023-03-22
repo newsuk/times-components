@@ -99,18 +99,13 @@ export const LeadStory = ({
         <LinkInline external={false} href={url}>
           <Image
             src={image}
-            alt="Example"
+            alt={headline}
             width="100%"
             height="100%"
             loadingAspectRatio="3:2"
           />
         </LinkInline>
-        <Block
-          paddingInlineStart={{
-            xs: '21px',
-            md: 'space000'
-          }}
-        >
+        <Block>
           <TextBlock
             stylePreset="leadStoryTextColor"
             paddingBlockStart="space020"
