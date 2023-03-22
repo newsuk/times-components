@@ -190,7 +190,7 @@ exports[`disabled comments 1`] = `
 
 .c2 {
   color: #696969;
-  font-family: "Roboto-Regular";
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 12px;
   margin: 0;
   padding-bottom: 30px;
@@ -200,7 +200,7 @@ exports[`disabled comments 1`] = `
 
 .c1 {
   color: #333333;
-  font-family: "TimesModern-Bold";
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-size: 27px;
   margin: 0;
   padding-bottom: 5px;
@@ -213,7 +213,8 @@ exports[`disabled comments 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -221,7 +222,7 @@ exports[`disabled comments 1`] = `
   -webkit-text-decoration: underline;
   text-decoration: underline;
   color: #006699;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
   font-size: 12px;
 }
 
@@ -252,7 +253,7 @@ exports[`disabled comments 1`] = `
       <a
         class="c3"
         href="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular; font-size: 12px;"
+        style="text-decoration: underline; color: rgb(0, 102, 153); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px;"
       >
         here
       </a>

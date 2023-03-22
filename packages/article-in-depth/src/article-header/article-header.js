@@ -3,7 +3,7 @@ import {
   ArticleFlags,
   UpdatedTimeProvider
 } from "@times-components/ts-components";
-import { fonts } from "@times-components/ts-styleguide";
+import { fontsWithFallback } from "@times-components/ts-styleguide";
 import Context from "@times-components/context";
 import {
   gqlRgbaToStyle,
@@ -41,7 +41,7 @@ const ArticleHeader = ({
     checkStylesForUnits({
       ...styles.articleHeadline,
       color: textColour,
-      fontFamily: headlineFont ? fonts[headlineFont] : null,
+      fontFamily: headlineFont ? fontsWithFallback[headlineFont] : null,
       textTransform: headlineCase || null
     });
 

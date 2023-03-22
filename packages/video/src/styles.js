@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import { fonts, spacing, colours } from "@times-components/ts-styleguide";
+import {
+  fontsWithFallback,
+  spacing,
+  colours
+} from "@times-components/ts-styleguide";
 
 export const Video360Container = styled.div`
   border-radius: 100%;
@@ -27,7 +31,7 @@ export const VideoErrorContainer = styled.div`
 
 export const VideoErrorHeading = styled.span`
   color: white;
-  font-family: ${fonts.headline};
+  font-family: ${fontsWithFallback.headline};
   font-size: 20px;
   height: auto;
   width: auto;
@@ -37,7 +41,7 @@ export const VideoErrorHeading = styled.span`
 
 export const VideoErrorBody = styled.span`
   color: rgba(255, 255, 255, 0.8);
-  font-family: ${fonts.body};
+  font-family: ${fontsWithFallback.body};
   font-size: 14px;
   height: auto;
   max-width: 80%;
@@ -63,6 +67,6 @@ export const NoSubscriptionMessage = styled.span`
   padding: ${spacing(2)};
   text-align: center;
   width: 300px;
-  font-family: ${fonts.body};
+  font-family: ${fontsWithFallback.body};
   font-size: 14px;
 `;

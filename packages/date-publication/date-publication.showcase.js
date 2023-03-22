@@ -1,13 +1,17 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { TcText } from "@times-components/utils";
-import { colours, fonts, fontSizes } from "@times-components/ts-styleguide";
+import {
+  colours,
+  fontsWithFallback,
+  fontSizes
+} from "@times-components/ts-styleguide";
 import DatePublication from "./src/date-publication";
 
 const styles = {
   text: {
     color: colours.functional.secondary,
-    fontFamily: fonts.supporting,
+    fontFamily: fontsWithFallback.supporting,
     fontSize: fontSizes.cardMeta,
     lineHeight: "15px"
   }

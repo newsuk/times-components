@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {
   breakpoints,
   colours,
-  fonts,
+  fontsWithFallback,
   fontSizes,
   spacing
 } from "@times-components/ts-styleguide";
@@ -28,7 +28,7 @@ export const ParagraphContainer = styled.div`
 
 export const Paragraph = styled.p`
   color: ${colours.functional.primary};
-  font-family: "${fonts.bodyRegular}";
+  font-family: ${fontsWithFallback.bodyRegular};
   line-height: 26px;
   font-size: ${fontSizes.bodyMobile}px;
   margin-bottom: ${spacing(5)};

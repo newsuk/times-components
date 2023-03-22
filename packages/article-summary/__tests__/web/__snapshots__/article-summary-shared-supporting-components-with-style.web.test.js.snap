@@ -4,7 +4,7 @@ exports[`1. article summary headline component 1`] = `
 <style>
 .IS1 {
   color: black;
-  font-family: TimesModern-Bold;
+  font-family: TimesModern-Bold, TimesModern-Bold-fallback, serif;
   font-weight: 400;
   margin-bottom: 5px;
   font-size: 22;
@@ -14,7 +14,7 @@ exports[`1. article summary headline component 1`] = `
 
 <div
   aria-level="3"
-  className="bigOne tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
+  className="bigOne tc-text__TcText-sc-15igzev-0 kwFxdN IS1"
   role="heading"
 >
   PM hails breakthrough ahead of key Commons vote
@@ -24,7 +24,7 @@ exports[`1. article summary headline component 1`] = `
 exports[`2. article summary strapline component 1`] = `
 <style>
 .IS1 {
-  font-family: TimesModern-Regular;
+  font-family: TimesModern-Regular, TimesModern-Regular-fallback, serif;
   font-size: 22;
   line-height: 24;
   color: black;
@@ -34,7 +34,7 @@ exports[`2. article summary strapline component 1`] = `
 
 <div
   aria-level="4"
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN IS1"
   role="heading"
 >
   PM hails breakthrough ahead of key Commons vote

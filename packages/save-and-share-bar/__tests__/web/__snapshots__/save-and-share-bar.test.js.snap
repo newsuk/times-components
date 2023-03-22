@@ -46,11 +46,11 @@ exports[`save and share bar component save and share bar renders correctly when 
     }
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "Roboto-Regular",
+          "fontFamily": "Roboto-Regular, Roboto-Regular-fallback, sans-serif",
           "fontSize": 13,
           "lineHeight": "14px",
           "marginRight": "10px",
@@ -151,11 +151,11 @@ exports[`save and share bar component save and share bar renders correctly when 
     }
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "Roboto-Regular",
+          "fontFamily": "Roboto-Regular, Roboto-Regular-fallback, sans-serif",
           "fontSize": 13,
           "lineHeight": "14px",
           "marginRight": "10px",

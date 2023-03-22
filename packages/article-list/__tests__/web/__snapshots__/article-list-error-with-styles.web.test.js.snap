@@ -24,7 +24,8 @@ exports[`1. page error 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -197,7 +198,7 @@ exports[`1. page error 1`] = `
       alignSelf="center"
       className="c5"
       color="#1D1D1B"
-      fontFamily="TimesModern-Bold"
+      fontFamily="TimesModern-Bold, TimesModern-Bold-fallback, serif"
       fontSize={26}
       lineHeight="26px"
       marginBottom="10px"
@@ -209,7 +210,7 @@ exports[`1. page error 1`] = `
     <div
       className="c5"
       color="#696969"
-      fontFamily="TimesDigitalW04-Regular"
+      fontFamily="TimesDigitalW04-Regular, TimesDigitalW04-Regular-fallback, serif"
       fontSize={18}
       lineHeight="27px"
       textAlign="center"
@@ -249,7 +250,8 @@ exports[`2. article list 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -516,7 +518,7 @@ exports[`2. article list 1`] = `
               <div
                 className="c4"
                 color="#696969"
-                fontFamily="Roboto-Regular"
+                fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
                 fontSize={14}
                 lineHeight="15px"
                 paddingTop={4}

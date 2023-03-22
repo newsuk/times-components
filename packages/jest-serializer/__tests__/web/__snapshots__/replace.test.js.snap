@@ -40,9 +40,9 @@ exports[`The replace serializer should provide a helper to return the child of a
                 "componentStyle": ComponentStyle {
                   "componentId": "tc-text__TcText-sc-15igzev-0",
                   "isStatic": true,
-                  "lastClassName": "lhcAkf",
+                  "lastClassName": "kwFxdN",
                   "rules": Array [
-                    "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                    "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                   ],
                 },
                 "displayName": "tc-text__TcText",
@@ -58,7 +58,7 @@ exports[`The replace serializer should provide a helper to return the child of a
             forwardedRef={null}
           >
             <div
-              className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+              className="tc-text__TcText-sc-15igzev-0 kwFxdN"
             >
               Hello world!
             </div>
@@ -109,9 +109,9 @@ exports[`The replace serializer should provide a helper to return the children o
               "componentStyle": ComponentStyle {
                 "componentId": "tc-text__TcText-sc-15igzev-0",
                 "isStatic": true,
-                "lastClassName": "lhcAkf",
+                "lastClassName": "kwFxdN",
                 "rules": Array [
-                  "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                  "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                 ],
               },
               "displayName": "tc-text__TcText",
@@ -142,9 +142,9 @@ exports[`The replace serializer should provide a helper to return the children o
               "componentStyle": ComponentStyle {
                 "componentId": "tc-text__TcText-sc-15igzev-0",
                 "isStatic": true,
-                "lastClassName": "lhcAkf",
+                "lastClassName": "kwFxdN",
                 "rules": Array [
-                  "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                  "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                 ],
               },
               "displayName": "tc-text__TcText",
@@ -175,9 +175,9 @@ exports[`The replace serializer should provide a helper to return the children o
               "componentStyle": ComponentStyle {
                 "componentId": "tc-text__TcText-sc-15igzev-0",
                 "isStatic": true,
-                "lastClassName": "lhcAkf",
+                "lastClassName": "kwFxdN",
                 "rules": Array [
-                  "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font:14px system-ui,-apple-system,BlinkMacSystemFont,\\"Segoe UI\\",Roboto,Ubuntu,\\"Helvetica Neue\\",sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
+                  "border:0px solid black;box-sizing:border-box;color:rgb(0,0,0);display:inline;font-size:14px;font-family:sans-serif;margin:0px;padding:0px;white-space:pre-wrap;overflow-wrap:break-word;",
                 ],
               },
               "displayName": "tc-text__TcText",

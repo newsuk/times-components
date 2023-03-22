@@ -8,7 +8,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
 
 .IS2 {
   color: #333333;
-  font-family: TimesModern-Bold;
+  font-family: TimesModern-Bold, TimesModern-Bold-fallback, serif;
   font-weight: 400;
   margin-bottom: 5px;
   font-size: 22;
@@ -25,14 +25,14 @@ exports[`1. article summary component with a single paragraph 1`] = `
   color: #696969;
   flex-wrap: wrap;
   margin-bottom: 10px;
-  font-family: TimesDigitalW04;
+  font-family: TimesDigitalW04, TimesDigitalW04-fallback, serif;
   font-size: 14;
   line-height: 20px;
 }
 
 .IS5 {
   color: #696969;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif;
   font-size: 12;
   line-height: 15px;
   margin-bottom: 5px;
@@ -53,16 +53,16 @@ exports[`1. article summary component with a single paragraph 1`] = `
   </div>
   <div
     aria-level="3"
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN IS2"
     role="heading"
   >
     Test Headline
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS4"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN IS4"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf IS3"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN IS3"
     >
       
       Test paragraph
@@ -84,7 +84,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     }
   />
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS5"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN IS5"
   >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
@@ -92,7 +92,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   >
     <ArticleByline
       ast={
@@ -144,17 +144,17 @@ exports[`2. article summary content component with the given style 1`] = `
   color: #696969;
   flex-wrap: wrap;
   margin-bottom: 10px;
-  font-family: TimesDigitalW04;
+  font-family: TimesDigitalW04, TimesDigitalW04-fallback, serif;
   font-size: 14;
   line-height: 20px;
 }
 </style>
 
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN IS2"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN IS1"
   >
     
     Test
@@ -175,17 +175,17 @@ exports[`3. article summary content component with white space height and linehe
   color: #696969;
   flex-wrap: wrap;
   margin-bottom: 10px;
-  font-family: TimesDigitalW04;
+  font-family: TimesDigitalW04, TimesDigitalW04-fallback, serif;
   font-size: 14;
   line-height: 30px;
 }
 </style>
 
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN IS2"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN IS1"
   >
     
     Test
@@ -206,17 +206,17 @@ exports[`4. article summary content component without white space height 1`] = `
   color: #696969;
   flex-wrap: wrap;
   margin-bottom: 10px;
-  font-family: TimesDigitalW04;
+  font-family: TimesDigitalW04, TimesDigitalW04-fallback, serif;
   font-size: 14;
   line-height: 20px;
 }
 </style>
 
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf IS2"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN IS2"
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN IS1"
   >
     
     Test

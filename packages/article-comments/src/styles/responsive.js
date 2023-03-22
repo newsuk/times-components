@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {
   breakpoints,
   colours,
-  fonts,
+  fontsWithFallback,
   fontSizes,
   spacing
 } from "@times-components/ts-styleguide";
@@ -22,7 +22,7 @@ export const CommentContainer = styled.div`
 
 export const CommentEnabledGuidelines = styled.p`
   color: ${colours.functional.secondary};
-  font-family: "${fonts.supporting}";
+  font-family: ${fontsWithFallback.supporting};
   font-size: ${fontSizes.commentsGuidelines}px;
   margin: 0 0 ${spacing(-2)} 0;
   padding-left: 7px;
@@ -31,7 +31,7 @@ export const CommentEnabledGuidelines = styled.p`
 
 export const CommentDisabledGuidelines = styled.p`
   color: ${colours.functional.secondary};
-  font-family: "${fonts.supporting}";
+  font-family: ${fontsWithFallback.supporting};
   font-size: ${fontSizes.commentsGuidelines}px;
   margin: 0;
   padding-bottom: ${spacing(6)};
@@ -41,7 +41,7 @@ export const CommentDisabledGuidelines = styled.p`
 
 export const CommentDisabledHeadline = styled.p`
   color: ${colours.functional.primary};
-  font-family: "${fonts.headline}";
+  font-family: ${fontsWithFallback.headline};
   font-size: ${fontSizes.commentsHeadline}px;
   margin: 0;
   padding-bottom: ${spacing(1)};
