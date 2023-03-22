@@ -10,14 +10,14 @@ exports[`On web the Enzyme rendered serializer should render the expected snapsh
   >
     <tc-text__TcText>
       <div
-        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+        className="tc-text__TcText-sc-15igzev-0 kwFxdN"
       >
         Hello!
       </div>
     </tc-text__TcText>
     <tc-text__TcText>
       <div
-        className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+        className="tc-text__TcText-sc-15igzev-0 kwFxdN"
       >
         deeply nested
       </div>

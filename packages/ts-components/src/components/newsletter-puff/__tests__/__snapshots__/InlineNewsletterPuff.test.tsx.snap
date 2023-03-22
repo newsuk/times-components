@@ -27,10 +27,10 @@ exports[`Inline Newsletter Puff renders loading state state 1`] = `
         class="sc-htpNat sc-iwsKbI cuimXU"
       >
         <div
-          class="sc-bxivhb sc-gqjmRU imXojB"
+          class="sc-bxivhb sc-gqjmRU kcwRFH"
         >
           <div
-            class="sc-bxivhb sc-gZMcBi kRYdQT"
+            class="sc-bxivhb sc-gZMcBi bklePC"
           >
             Politics. Explained.
              
@@ -115,10 +115,10 @@ exports[`Inline Newsletter Puff renders signup state 1`] = `
         class="sc-htpNat sc-iwsKbI cuimXU"
       >
         <div
-          class="sc-bxivhb sc-gqjmRU imXojB"
+          class="sc-bxivhb sc-gqjmRU kcwRFH"
         >
           <div
-            class="sc-bxivhb sc-gZMcBi kRYdQT"
+            class="sc-bxivhb sc-gZMcBi bklePC"
           >
             Politics. Explained.
              
@@ -159,10 +159,10 @@ exports[`Inline Newsletter Puff renders signup view when not already subscribed 
         class="sc-htpNat sc-iwsKbI cuimXU"
       >
         <div
-          class="sc-bxivhb sc-gqjmRU imXojB"
+          class="sc-bxivhb sc-gqjmRU kcwRFH"
         >
           <div
-            class="sc-bxivhb sc-gZMcBi kRYdQT"
+            class="sc-bxivhb sc-gZMcBi bklePC"
           >
             Politics. Explained.
              

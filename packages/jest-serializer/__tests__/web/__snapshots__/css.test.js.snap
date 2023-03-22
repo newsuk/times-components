@@ -10,7 +10,7 @@ exports[`The Web serializer should effect children 1`] = `
   }
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     style={
       Object {
         "fontSize": 9,
@@ -33,7 +33,7 @@ exports[`The Web serializer should effect multiple children 1`] = `
   }
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     style={
       Object {
         "fontSize": 9,
@@ -43,7 +43,7 @@ exports[`The Web serializer should effect multiple children 1`] = `
     child 1
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     style={
       Object {
         "fontSize": 10,
@@ -56,7 +56,7 @@ exports[`The Web serializer should effect multiple children 1`] = `
     className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
       style={
         Object {
           "fontSize": 11,
@@ -86,7 +86,7 @@ exports[`The Web serializer should effect render props 1`] = `
 
 exports[`The Web serializer should remove rnw-classnames and hoist the styles 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   style={
     Object {
       "color": "red",
@@ -108,7 +108,7 @@ exports[`The Web serializer should squash identical styles 1`] = `
   }
 >
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     style={
       Object {
         "fontSize": 10,
@@ -118,7 +118,7 @@ exports[`The Web serializer should squash identical styles 1`] = `
     child 1
   </div>
   <div
-    className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+    className="tc-text__TcText-sc-15igzev-0 kwFxdN"
     style={
       Object {
         "fontSize": 10,
@@ -131,7 +131,7 @@ exports[`The Web serializer should squash identical styles 1`] = `
     className="tc-view__TcView-nuazoi-0 fPjBcr"
   >
     <div
-      className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+      className="tc-text__TcText-sc-15igzev-0 kwFxdN"
       style={
         Object {
           "fontSize": 10,

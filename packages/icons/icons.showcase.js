@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { TcView, TcText } from "@times-components/utils";
-import { colours, fonts } from "@times-components/ts-styleguide";
+import { colours, fontsWithFallback } from "@times-components/ts-styleguide";
 import * as Icons from "./src/icons";
 
 const borderWidth = 1;
@@ -19,7 +19,7 @@ const styles = {
     padding: 20
   },
   label: {
-    fontFamily: fonts.supporting,
+    fontFamily: fontsWithFallback.supporting,
     paddingTop: 15
   },
   wrapper: {

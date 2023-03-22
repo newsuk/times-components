@@ -4,7 +4,7 @@ exports[`1. mpu config 1`] = `
 .c0 {
   color: #333333;
   display: block;
-  font-family: "TimesDigitalW04-Regular";
+  font-family: TimesDigitalW04-Regular,TimesDigitalW04-Regular-fallback,serif;
   line-height: 26px;
   font-size: 17px;
   margin: 0 auto 25px;

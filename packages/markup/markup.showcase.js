@@ -3,7 +3,7 @@
 import React from "react";
 import { TcText, TcView } from "@times-components/utils";
 import { CenteredDecorator } from "@times-components/storybook";
-import { fonts } from "@times-components/ts-styleguide";
+import { fontsWithFallback } from "@times-components/ts-styleguide";
 import renderTrees, { renderTree } from "@times-components/markup-forest";
 import coreRenderers from "./src/markup";
 
@@ -84,7 +84,7 @@ export default {
                     key={key}
                     style={{
                       color: "red",
-                      fontFamily: fonts.headline,
+                      fontFamily: fontsWithFallback.headline,
                       margin: 10
                     }}
                   >

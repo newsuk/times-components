@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {
   breakpoints,
   colours,
-  fonts,
+  fontsWithFallback,
   fontSizes
 } from "@times-components/ts-styleguide";
 
@@ -11,14 +11,13 @@ export const HeadlineContainer = styled.h1`
   border: 0px solid black;
   box-sizing: border-box;
   display: inline;
-  font: 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-size: ${fontSizes.headline}px;
   color: ${colours.functional.brandColour};
   margin: 0 0 8px 0;
-  font-family: "${fonts.headline}";
+  font-family: ${fontsWithFallback.headline};
   font-weight: 400;
   line-height: 30px;
   ${props => props.styles && props.styles}

@@ -48,7 +48,8 @@ exports[`1. an article list header 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -84,7 +85,7 @@ exports[`1. an article list header 1`] = `
   white-space: pre-wrap;
   overflow-wrap: break-word;
   color: #1D1D1B;
-  font-family: "TimesModern-Bold";
+  font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-size: 30px;
 }
 
@@ -133,7 +134,8 @@ exports[`1. an article list header 1`] = `
   box-sizing: border-box;
   color: rgb(0,0,0);
   display: inline;
-  font: 14px system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -208,7 +210,7 @@ exports[`1. an article list header 1`] = `
         WebkitFontSmoothing="antialiased"
         className="c5"
         color="#696969"
-        fontFamily="TimesDigitalW04-RegularSC"
+        fontFamily="TimesDigitalW04-RegularSC, TimesDigitalW04-RegularSC-fallback, serif"
         fontSize={13}
         lineHeight="14px"
         marginTop="5px"
@@ -230,7 +232,7 @@ exports[`1. an article list header 1`] = `
         </div>
         <TextLink
           color="#006699"
-          fontFamily="Roboto-Regular"
+          fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
           fontSize={14}
           paddingLeft="5px"
           textDecorationLine="none"
@@ -245,7 +247,7 @@ exports[`1. an article list header 1`] = `
         <div
           className="c7"
           color="#333333"
-          fontFamily="TimesDigitalW04"
+          fontFamily="TimesDigitalW04, TimesDigitalW04-fallback, serif"
           fontSize={16}
           lineHeight="27px"
           textAlign="center"

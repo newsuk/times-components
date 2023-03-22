@@ -49,7 +49,7 @@ export const HeadlineContainer = styled.h1`
   border: 0px solid black;
   box-sizing: border-box;
   display: inline;
-  font: 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-family: sans-serif;  
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;
@@ -103,7 +103,7 @@ export const StandfirstContainer = styled.h2`
   border: 0px solid black;
   box-sizing: border-box;
   display: inline;
-  font: 14px system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-family: sans-serif;  
   margin: 0px;
   padding: 0px;
   white-space: pre-wrap;

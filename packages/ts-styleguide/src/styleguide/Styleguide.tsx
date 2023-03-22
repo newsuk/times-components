@@ -10,7 +10,12 @@ import breakpoints, {
   sliceContentMaxWidth
 } from './breakpoints';
 import lineHeight from './lineHeight';
-import { timesFontFactory, timesFontSizes, fontStyles } from './fonts/fonts';
+import {
+  timesFontFactory,
+  timesFontSizes,
+  fontStyles,
+  fontStylesWithFallback
+} from './fonts/fonts';
 import themeFactory from './themeFactory';
 
 import scales from './scales';
@@ -26,6 +31,7 @@ export default () => {
     colours,
     fontFactory: timesFontFactory,
     fonts: fontStyles,
+    fontsWithFallback: fontStylesWithFallback,
     fontSizes: timesFontSizes,
     lineHeight,
     spacing
@@ -41,6 +47,7 @@ export {
   editionMaxWidth,
   sliceContentMaxWidth,
   fontStyles as fonts,
+  fontStylesWithFallback as fontsWithFallback,
   timesFontFactory as fontFactory,
   timesFontSizes as fontSizes,
   getEditionBreakpoint,

@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import {
   breakpoints,
   colours,
-  fonts,
+  fontsWithFallback,
   fontSizes,
   spacing
 } from "@times-components/ts-styleguide";
@@ -28,7 +28,7 @@ export const ParagraphContainer = styled.div`
 
 export const Paragraph = styled.p`
   color: ${colours.functional.primary};
-  font-family: "${fonts.bodyRegular}";
+  font-family: ${fontsWithFallback.bodyRegular};
   line-height: 26px;
   font-size: ${fontSizes.bodyMobile}px;
   margin-bottom: ${spacing(5)};
@@ -161,7 +161,7 @@ export const PullQuoteContainer = styled(TcView)`
 `;
 
 const sharedHeadingStyles = `color: ${colours.functional.primary};
-  font-family: "${fonts.headline}";
+  font-family: ${fontsWithFallback.headline};
   font-weight: 400;
   margin: 0 auto ${spacing(2)};
   padding-right: ${spacing(2)};
@@ -249,7 +249,7 @@ export const NativeAdTitle = styled.h2`
   border-bottom: 1px solid #dbdbdb;
   color: #333;
   flex: 1 1 100%;
-  font: normal ${fontSizes.teaser}px / 17px ${fonts.bodyRegular};
+  font: normal ${fontSizes.teaser}px / 17px ${fontsWithFallback.bodyRegular};
   margin-bottom: 10px;
   padding: 5px 0;
   text-transform: uppercase;
@@ -289,7 +289,7 @@ export const InlineAdTitle = styled.h2`
   border-bottom: 1px solid rgb(219, 219, 219);
   color: #696969;
   flex: 1 1 100%;
-  font: normal ${fontSizes.teaser}px / 17px ${fonts.bodyRegular};
+  font: normal ${fontSizes.teaser}px / 17px ${fontsWithFallback.bodyRegular};
   letter-spacing: 0.6px;
   margin: 0 0 10px;
   padding: 0 0 5px;

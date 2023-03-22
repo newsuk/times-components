@@ -1,6 +1,6 @@
 import {
   colours,
-  fonts,
+  fontsWithFallback,
   fontSizes,
   spacing
 } from "@times-components/ts-styleguide";
@@ -8,7 +8,7 @@ import {
 export const linkStyles = {
   base: `
       color: ${colours.functional.action};
-      font-family: "${fonts.bodyRegular}";
+      font-family: ${fontsWithFallback.bodyRegular};
       line-height: 26px;
       font-size: ${fontSizes.bodyMobile}px;
       margin-bottom: ${spacing(5)}px;

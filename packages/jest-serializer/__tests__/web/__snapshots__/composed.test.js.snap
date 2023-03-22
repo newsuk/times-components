@@ -2,7 +2,7 @@
 
 exports[`The serializers should minimalise and create styles 1`] = `
 <div
-  className="tc-text__TcText-sc-15igzev-0 lhcAkf"
+  className="tc-text__TcText-sc-15igzev-0 kwFxdN"
   style={
     Object {
       "color": "red",

@@ -4,7 +4,7 @@ exports[`1. renders 1`] = `
 <style>
 .IS1 {
   color: #696969;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif;
   font-size: 14;
   line-height: 15px;
   padding-top: 4;
@@ -12,7 +12,7 @@ exports[`1. renders 1`] = `
 
 .IS2 {
   color: #696969;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif;
   font-size: 14;
   line-height: 15px;
   padding-top: 4;
@@ -47,7 +47,7 @@ exports[`1. renders 1`] = `
   text-align: left;
   color: #006699;
   height: 15;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif;
   font-size: 14;
   line-height: 13px;
 }
@@ -57,7 +57,7 @@ exports[`1. renders 1`] = `
   text-align: left;
   color: #006699;
   height: 15;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif;
   font-size: 14;
   line-height: 13px;
 }
@@ -105,7 +105,7 @@ exports[`1. renders 1`] = `
   text-align: right;
   color: #006699;
   height: 15;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif;
   font-size: 14;
   line-height: 13px;
 }
@@ -115,7 +115,7 @@ exports[`1. renders 1`] = `
   text-align: right;
   color: #006699;
   height: 15;
-  font-family: Roboto-Regular;
+  font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif;
   font-size: 14;
   line-height: 13px;
 }
@@ -148,7 +148,7 @@ exports[`1. renders 1`] = `
           testID="results-message"
         >
           <div
-            className="tc-text__TcText-sc-15igzev-0 lhcAkf IS1"
+            className="tc-text__TcText-sc-15igzev-0 kwFxdN IS1"
           >
             Showing 4 - 6 of 21 results
           </div>
@@ -186,20 +186,20 @@ exports[`1. renders 1`] = `
                       className="IS8"
                     >
                       <div
-                        className="tc-text__TcText-sc-15igzev-0 lhcAkf IS7"
+                        className="tc-text__TcText-sc-15igzev-0 kwFxdN IS7"
                       >
                         <tc-text__TcText
                           className="IS6"
                         >
                           <div
-                            className="tc-text__TcText-sc-15igzev-0 lhcAkf IS5"
+                            className="tc-text__TcText-sc-15igzev-0 kwFxdN IS5"
                           >
                             Previous
                             <page-label__ResponsiveLabel
                               className="IS4"
                             >
                               <div
-                                className="tc-text__TcText-sc-15igzev-0 page-label__ResponsiveLabel-sc-1m9jh18-0 fZKlQl IS3"
+                                className="tc-text__TcText-sc-15igzev-0 page-label__ResponsiveLabel-sc-1m9jh18-0 iLtDNG IS3"
                               >
                                  page
                               </div>
@@ -241,20 +241,20 @@ exports[`1. renders 1`] = `
                       className="IS16"
                     >
                       <div
-                        className="tc-text__TcText-sc-15igzev-0 lhcAkf IS15"
+                        className="tc-text__TcText-sc-15igzev-0 kwFxdN IS15"
                       >
                         <tc-text__TcText
                           className="IS14"
                         >
                           <div
-                            className="tc-text__TcText-sc-15igzev-0 lhcAkf IS13"
+                            className="tc-text__TcText-sc-15igzev-0 kwFxdN IS13"
                           >
                             Next
                             <page-label__ResponsiveLabel
                               className="IS12"
                             >
                               <div
-                                className="tc-text__TcText-sc-15igzev-0 page-label__ResponsiveLabel-sc-1m9jh18-0 fZKlQl IS11"
+                                className="tc-text__TcText-sc-15igzev-0 page-label__ResponsiveLabel-sc-1m9jh18-0 iLtDNG IS11"
                               >
                                  page
                               </div>

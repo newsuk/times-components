@@ -11,7 +11,7 @@ export default ({
 }) => {
   const styles = styleguide();
   return {
-    fontFamily: styles.fonts[font],
+    fontFamily: styles.fontsWithFallback[font],
     fontSize: timesFontSizes[fontSize],
     lineHeight: lineHeight({ font, fontSize })
   };

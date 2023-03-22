@@ -27,8 +27,8 @@ export const Text = styled.div`
   box-sizing: border-box;
   color: rgba(0, 0, 0, 1);
   display: inline;
-  font: 14px system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Ubuntu, 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
   white-space: pre-wrap;
