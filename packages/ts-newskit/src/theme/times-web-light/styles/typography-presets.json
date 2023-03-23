@@ -81,9 +81,9 @@
   },
   "editorialSubheadline030": {
     "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
-    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontWeight": "{{fonts.fontWeight030}}",
     "fontSize": "{{fonts.fontSize060}}",
-    "lineHeight": "{{fonts.fontLineHeight080}}",
+    "lineHeight": "{{fonts.fontLineHeight050}}",
     "letterSpacing": "{{fonts.fontLetterSpacing010}}",
     "fontStretch": "normal"
   },
@@ -172,6 +172,24 @@
     "fontWeight": "{{fonts.fontWeight010}}",
     "fontSize": "{{fonts.fontSize030}}",
     "lineHeight": "{{fonts.fontLineHeight120}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+    "fontStretch": "normal"
+  },
+  "editorialItalic050": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontSize": "{{fonts.fontSize050}}",
+    "fontStyle": "italic",
+    "lineHeight": "{{fonts.fontLineHeight050}}",
+    "letterSpacing": "{{fonts.fontLetterSpacing010}}",
+    "fontStretch": "normal"
+  },
+  "editorialItalic060": {
+    "fontFamily": "{{fonts.fontFamily010.fontFamily}}",
+    "fontWeight": "{{fonts.fontWeight010}}",
+    "fontSize": "{{fonts.fontSize060}}",
+    "fontStyle": "italic",
+    "lineHeight": "{{fonts.fontLineHeight050}}",
     "letterSpacing": "{{fonts.fontLetterSpacing010}}",
     "fontStretch": "normal"
   },

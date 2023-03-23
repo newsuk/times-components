@@ -14,7 +14,7 @@ export const SliceHeader = ({ title, color }: HeaderProps) => {
           xs: 'newPreset070',
           lg: 'newPreset060'
         }}
-        color={color}
+        $color={color}
       >
         {title}
       </StyledTextBlock>
