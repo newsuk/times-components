@@ -28,15 +28,12 @@ export const ArticleListItem: React.FC<{ data: ArticleListItem[]; }> = ({ data }
                         loadingAspectRatio="3:2"
                         width="100%"
                         overrides={{
-                            stylePreset: 'imageSharp'
+                            marginBlock: '0 10px',
                         }}
                     />
                     <Headline
                         headingAs="h3"
                         overrides={{
-                            heading: {
-                                stylePreset: 'articleList'
-                            },
                             typographyPreset: 'articleListTitle'
                         }}>
                         {articleListItem.title}
