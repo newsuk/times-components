@@ -8,7 +8,7 @@ import {
   LinkInline
 } from 'newskit';
 import React from 'react';
-import { StyledTextBlock, StyledTextStack, Styledinterviewee } from './styles';
+import { StyledTextBlock, StyledTextStack, StyledInterviewee } from './styles';
 
 interface LeadStoryPropsDataProp {
   headline: string;
@@ -36,7 +36,7 @@ export const LeadStory = ({
   return (
     <Stack flow={{ sm: 'vertical-center', md: 'horizontal-stretch' }}>
       <StyledTextStack marginInlineEnd={{ md: 'space040' }}>
-        <Styledinterviewee
+        <StyledInterviewee
           color={color}
           paddingBlockStart={{
             xs: 'space040',
@@ -47,7 +47,7 @@ export const LeadStory = ({
           typographyPreset="newPreset090"
         >
           {interviewee}
-        </Styledinterviewee>
+        </StyledInterviewee>
         <Headline
           headingAs="h1"
           overrides={{

@@ -10,6 +10,6 @@ export const StyledTextStack = styled(Stack)`
   border-top: 1px dotted black;
 `;
 
-export const Styledinterviewee = styled(TextBlock)`
+export const StyledInterviewee = styled(TextBlock)`
   color: ${({ color }) => color};
 `;
