@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledBlock, StyledTextBlock, StyledButton } from './styles';
+import { StyledStack, StyledTextBlock, StyledButton } from './styles';
 import { NewsKitChevronRightIcon } from '../../../assets';
 
 interface HeaderProps {
@@ -8,7 +8,14 @@ interface HeaderProps {
 }
 export const SliceHeader = ({ title, color }: HeaderProps) => {
   return (
-    <StyledBlock flow="horizontal-center" stackDistribution="space-between">
+    <StyledStack
+      marginInline={{
+        xs: 'space045',
+        md: 'space000'
+      }}
+      flow="horizontal-center"
+      stackDistribution="space-between"
+    >
       <StyledTextBlock
         typographyPreset={{
           xs: 'newPreset070',
@@ -32,6 +39,6 @@ export const SliceHeader = ({ title, color }: HeaderProps) => {
           href="#"
         />
       </StyledButton>
-    </StyledBlock>
+    </StyledStack>
   );
 };
