@@ -46,4 +46,4 @@ const buildConfig = dir => {
   };
 };
 
-module.exports = buildConfig(__dirname)
+module.exports = buildConfig(__dirname);

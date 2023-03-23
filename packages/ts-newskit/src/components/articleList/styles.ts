@@ -2,6 +2,7 @@ import { styled, getColorCssFromTheme, Block } from 'newskit';
 import { fontsWithFallback } from '@times-components/ts-styleguide';
 
 export const ArticleList = styled.div`
+  margin: 0 15px;
   & > a {
     text-decoration: none;
     ${getColorCssFromTheme('color', 'inkSubtle')};
