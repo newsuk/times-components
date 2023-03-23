@@ -5,7 +5,8 @@ import {
     LinkStandalone,
     Headline
 } from 'newskit';
-import { ArticleList, ArticleListFooter } from './styles';
+import { ArticleList, ArticleListFooter, TimeToRead } from './styles';
+import './articleList.css';
 
 interface ArticleListItemProps {
     image?: string;
@@ -37,7 +38,10 @@ export const ArticleListItem = ({ title,timeToRead,articleType,image,url }: Arti
                         }}>
                         {title}
                     </Headline>
-                    <ArticleListFooter>{articleType} | {timeToRead}</ArticleListFooter>
+                    <ArticleListFooter>
+                        <span className={"articleListType__" + articleType}>{articleType}</span>
+                        <TimeToRead>{timeToRead}</TimeToRead>
+                    </ArticleListFooter>
                 </Block>
             </LinkStandalone>
         </ArticleList>
