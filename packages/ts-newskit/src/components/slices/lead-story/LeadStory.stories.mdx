@@ -1,0 +1,35 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { LeadStory } from "./index";
+import { NewsKitProvider } from 'newskit';
+import { TimesWebLightTheme } from '../../../theme/times-web-light/index';
+import { headline,color,readingTime,summary,bylines,interviewee,caption,image,url } from '../fixture/data.json';
+
+<Meta
+  title="Newskit/Slices/LeadStory"
+  component={LeadStory}
+/>
+
+# LeadStory component
+The `LeadStory` component is used to display the main story of slices.
+
+This takes in a series of props, as below, to display the part of the slices.
+
+## Props
+<Props of={LeadStory} />
+
+## Code Example
+`<LeadStory data={{headline, color, readingTime, summary, bylines, interviewee, caption, image, url}}/>`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const HeaderStory = ({headline, color, readingTime, summary, bylines, interviewee, caption, image, url}) => (
+  <NewsKitProvider theme={TimesWebLightTheme}>
+    <LeadStory {...{headline, color, readingTime, summary, bylines, interviewee, caption, image, url}} />
+  </NewsKitProvider>
+);
+
+<Story name="LeadStory"
+   args={{headline, color, readingTime, summary, bylines, interviewee, caption, image, url}}>
+  {HeaderStory.bind({})}
+</Story>

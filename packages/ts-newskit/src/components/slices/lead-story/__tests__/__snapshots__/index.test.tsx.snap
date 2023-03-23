@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Component one should render a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-10zrx1s"
+  >
+    <div
+      class="css-mxu7ds"
+    >
+      <p
+        class="css-kkq2ir"
+        color="#008347"
+      >
+        JOEL KPOKU INTERVIEW
+      </p>
+      <section
+        class="css-1nztlxo"
+      >
+        <h1
+          class="nk-headline-heading css-1spnxj1"
+        >
+          <a
+            class="css-gc5coy"
+            href="https://www.thetimes.co.uk"
+          >
+            <span
+              class="css-17x5lw"
+            >
+              <span
+                class="css-1wc2zh5"
+              >
+                Sarcacens an inclusive club? They didnt look out for me
+              </span>
+            </span>
+          </a>
+        </h1>
+      </section>
+      <p
+        class="css-1w7gqe7"
+      >
+        <a
+          class="css-173icha"
+          href="https://www.thetimes.co.uk"
+        >
+          <span
+            class="css-17x5lw"
+          >
+            <span
+              class="css-1wc2zh5"
+            >
+              Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France
+            </span>
+          </span>
+        </a>
+      </p>
+      <p
+        class="css-16wx5b7"
+      >
+        4 min read
+      </p>
+    </div>
+    <div
+      class="css-1kc6n1m"
+    >
+      <a
+        class="css-143897p"
+        href="https://www.thetimes.co.uk"
+      >
+        <span
+          class="css-17x5lw"
+        >
+          <picture
+            class="css-18ycrwi"
+          >
+            <div
+              class="css-5pczz7"
+            />
+            <img
+              alt="Sarcacens an inclusive club? They didnt look out for me"
+              class="css-1t2lz8m"
+              height="100%"
+              src="https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0"
+              width="100%"
+            />
+          </picture>
+        </span>
+      </a>
+      <div
+        class="css-13byt3y"
+      >
+        <p
+          class="css-13pwpap"
+        >
+          Caption One Line Dummy Caption Here
+        </p>
+      </div>
+    </div>
+    <div
+      class="css-15edd2j"
+    >
+      <div
+        class="css-1de9iv"
+      >
+        <p
+          class="css-55j7i6"
+        >
+          REUTERS/PHIL NOBLE
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

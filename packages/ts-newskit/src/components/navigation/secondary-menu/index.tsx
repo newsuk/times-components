@@ -14,7 +14,7 @@ export const SecondaryNavigation = ({ data }: SecondaryNavigationProps) => {
   const firstItem = data[0].title;
 
   useEffect(() => {
-    handleSelect('');
+    handleSelect(isSelected);
   }, []);
 
   const handleSelect = (title: string) => {

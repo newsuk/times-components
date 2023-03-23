@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render } from '../../utils/test-utils';
-import { SliceHeader } from '../slice-header/index';
+import { render } from '../../../utils/test-utils';
+import { SliceHeader } from '../index';
 import { useBreakpointKey } from 'newskit';
 
 jest.mock('newskit', () => ({
