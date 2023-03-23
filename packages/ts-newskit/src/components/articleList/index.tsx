@@ -20,11 +20,7 @@ export const ArticleListItem: React.FC<{ data: ArticleListItem[]; }> = ({ data }
     return (
     <ArticleList>
         {data.map((articleListItem) => (
-            <LinkStandalone
-                href={articleListItem.url}
-                overrides={{
-                    typographyPreset: 'articleListLink'
-                }}>
+            <LinkStandalone href={articleListItem.url}>
                 <Block as="section">
                     <Image
                         src={articleListItem.image}
