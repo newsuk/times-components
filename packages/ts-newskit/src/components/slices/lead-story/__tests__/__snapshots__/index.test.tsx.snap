@@ -55,7 +55,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         </a>
       </p>
       <p
-        class="css-8tll0o"
+        class="css-16wx5b7"
       >
         4 min read
       </p>
@@ -90,7 +90,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-13byt3y"
       >
         <p
-          class="css-1597hc5"
+          class="css-13pwpap"
         >
           Caption One Line Dummy Caption Here
         </p>
@@ -103,7 +103,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-1de9iv"
       >
         <p
-          class="css-1iv11ld"
+          class="css-55j7i6"
         >
           REUTERS/PHIL NOBLE
         </p>
