@@ -22,7 +22,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         >
           <a
             class="css-gc5coy"
-            href="https://www.thetimes.co.uk/"
+            href="https://www.thetimes.co.uk"
           >
             <span
               class="css-17x5lw"
@@ -41,7 +41,7 @@ exports[`Render Component one should render a snapshot 1`] = `
       >
         <a
           class="css-173icha"
-          href="https://www.thetimes.co.uk/"
+          href="https://www.thetimes.co.uk"
         >
           <span
             class="css-17x5lw"
@@ -65,7 +65,7 @@ exports[`Render Component one should render a snapshot 1`] = `
     >
       <a
         class="css-143897p"
-        href="https://www.thetimes.co.uk/"
+        href="https://www.thetimes.co.uk"
       >
         <span
           class="css-17x5lw"

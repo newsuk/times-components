@@ -156,7 +156,7 @@ describe('Render Component one', () => {
 
     expect(getByText(summary).closest('a')).toHaveAttribute(
       'href',
-      'https://www.thetimes.co.uk/'
+      'https://www.thetimes.co.uk'
     );
   });
 
@@ -177,7 +177,7 @@ describe('Render Component one', () => {
 
     expect(getByText(headline).closest('a')).toHaveAttribute(
       'href',
-      'https://www.thetimes.co.uk/'
+      'https://www.thetimes.co.uk'
     );
   });
 });
