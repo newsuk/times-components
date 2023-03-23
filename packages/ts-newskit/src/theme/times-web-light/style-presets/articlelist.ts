@@ -5,5 +5,15 @@ export const articleListStylePresets = {
       margin: '10px 0',
       textDecoration: 'none'
     }
+  },
+  articleListLink: {
+    base: {
+      color: '{{colors.inkSubtle}}',
+      textDecoration: 'none'
+    },
+    hover: {
+      color: '{{colors.inkSubtle}}',
+      textDecoration: 'none'
+    }
   }
 };

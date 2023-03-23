@@ -28,7 +28,13 @@ export const ArticleListItem = ({
 }: ArticleListItemProps) => {
   return (
     <ArticleList>
-      <LinkStandalone href={url} data-testid="article-ListItem">
+        <LinkStandalone
+              href={url}
+              data-testid="article-ListItem"
+              overrides={{
+                  stylePreset: 'articleListLink'
+              }}
+          >
         <Block as="section">
           <Visible xs sm md xl>
             <Image

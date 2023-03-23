@@ -3,21 +3,6 @@ import { fontsWithFallback } from '@times-components/ts-styleguide';
 
 export const ArticleList = styled(Block)`
   margin: 0 15px;
-
-  & > a {
-    text-decoration: none;
-    ${getColorCssFromTheme('color', 'inkSubtle')};
-
-    &:hover {
-      text-decoration: none;
-      ${getColorCssFromTheme('color', 'inkSubtle')};
-    }
-
-    &:hover:not([disabled]) {
-      text-decoration: none;
-      ${getColorCssFromTheme('color', 'inkSubtle')};
-    }
-  }
 `;
 
 export const ArticleListFooter = styled(Block)`

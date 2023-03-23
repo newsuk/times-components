@@ -3,10 +3,10 @@
 exports[`Render Article List Item should render a snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-l7v213"
+    class="css-o2zrac"
   >
     <a
-      class="css-18gx45v"
+      class="css-n12c2i"
       data-testid="article-ListItem"
       href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
     >
