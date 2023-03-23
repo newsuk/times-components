@@ -1,10 +1,13 @@
 import React from 'react';
-import { Block, Image, LinkStandalone, Headline, Stack, Visible } from 'newskit';
 import {
-  ArticleListFooter,
-  ArticleListType,
-  TimeToRead
-} from './styles';
+  Block,
+  Image,
+  LinkStandalone,
+  Headline,
+  Stack,
+  Visible
+} from 'newskit';
+import { ArticleListFooter, ArticleListType, TimeToRead } from './styles';
 
 interface ArticleListItemProps {
   image?: string;
@@ -26,14 +29,14 @@ export const ArticleListItem = ({
   timeToRead
 }: ArticleListItemProps) => {
   return (
-    <Stack marginInline='space040'>
-        <LinkStandalone
-              href={url}
-              data-testid="article-ListItem"
-              overrides={{
-                  stylePreset: 'articleListLink'
-              }}
-          >
+    <Stack marginInline="space040">
+      <LinkStandalone
+        href={url}
+        data-testid="article-ListItem"
+        overrides={{
+          stylePreset: 'articleListLink'
+        }}
+      >
         <Block as="section">
           <Visible xs sm md xl>
             <Image
