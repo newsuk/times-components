@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.12.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.11.0...@times-components/ts-newskit@1.12.0) (2023-03-23)
+
+
+### Features
+
+* **TDP-3413:** add journalist quote component  ([#3296](https://github.com/newsuk/times-components/issues/3296)) ([77a9ab5](https://github.com/newsuk/times-components/commit/77a9ab5d18fd8f878295a1153c7d14c82e5d3d13))
+
+
+
+
+
 # [1.11.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.10.0...@times-components/ts-newskit@1.11.0) (2023-03-23)
 
 
