@@ -1,6 +1,7 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
 import { ArticleListItem } from "./index.tsx";
 import { articleListItems } from './fixtures/data.json';
+import { title,timeToRead,articleType,image,url } from './fixtures/data.json';
 
 import { NewsKitProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../theme';
@@ -19,19 +20,19 @@ This takes in a `data` prop, as below, to display the links in their order withi
 <Props of={ArticleListItem} />
 
 ## Code Example
-`<ArticleListItem data={data} />`
+`<ArticleListItem data={title,timeToRead,articleType,image,url} />`
 
 An example of the `data` structure can be found in the 'Controls' section on the 'Canvas' tab, where you can customise the data being fed to the Breadcrumb component.
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const ArticleListStory = ({ data }) => (
+export const ArticleListStory = ({ title,timeToRead,articleType,image,url }) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <ArticleListItem {...{ data }} />
+    <ArticleListItem {...{ title,timeToRead,articleType,image,url }} />
   </NewsKitProvider>
 );
 
-<Story name="ArticleListItem" args={{ data: articleListItems }}>
+<Story name="ArticleListItem" args={{ title,timeToRead,articleType,image,url }}>
   {ArticleListStory.bind({})}
 </Story>

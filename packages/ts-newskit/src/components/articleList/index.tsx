@@ -7,7 +7,7 @@ import {
 } from 'newskit';
 import { ArticleList, ArticleListFooter } from './styles';
 
-export type ArticleListItem = {
+interface ArticleListItemProps {
     image?: string;
     alt?: string;
     title: string;
@@ -16,14 +16,13 @@ export type ArticleListItem = {
     timeToRead?: string;
 };
 
-export const ArticleListItem: React.FC<{ data: ArticleListItem[]; }> = ({ data }) => {
+export const ArticleListItem = ({ title,timeToRead,articleType,image,url }: ArticleListItemProps) => {
     return (
-    <ArticleList>
-        {data.map((articleListItem) => (
-            <LinkStandalone href={articleListItem.url}>
+        <ArticleList>
+            <LinkStandalone href={url}>
                 <Block as="section">
                     <Image
-                        src={articleListItem.image}
+                        src={image}
                         alt=""
                         loadingAspectRatio="3:2"
                         width="100%"
@@ -36,12 +35,11 @@ export const ArticleListItem: React.FC<{ data: ArticleListItem[]; }> = ({ data }
                         overrides={{
                             typographyPreset: 'articleListTitle'
                         }}>
-                        {articleListItem.title}
+                        {title}
                     </Headline>
-                    <ArticleListFooter>{articleListItem.articleType} | {articleListItem.timeToRead}</ArticleListFooter>
+                    <ArticleListFooter>{articleType} | {timeToRead}</ArticleListFooter>
                 </Block>
             </LinkStandalone>
-        ))}
-    </ArticleList>
+        </ArticleList>
     );
 };

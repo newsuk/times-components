@@ -18,7 +18,7 @@ export const ArticleList = styled.div`
       ${getColorCssFromTheme('color', 'inkSubtle')};
     }
   }
-  text-align: center;
+  text-align: left;
 `;
 
 export const ArticleListFooter = styled.div`
