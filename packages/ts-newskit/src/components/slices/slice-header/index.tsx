@@ -6,6 +6,7 @@ interface HeaderProps {
   title: string;
   color: string;
 }
+
 export const SliceHeader = ({ title, color }: HeaderProps) => {
   return (
     <StyledStack

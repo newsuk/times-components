@@ -3,6 +3,8 @@ import { NewsKitProvider } from 'newskit';
 import { ContentBucket1 } from "./";
 import { TimesWebLightTheme } from '../../theme/times-web-light/index';
 
+import { headline,color,readingTime,summary,bylines,subHeadline,caption,image,url } from '../../components/slices/fixture/data.json';
+
 <Meta
   title="Newskit Slices/Content Bucket 1"
   component={ContentBucket1}
@@ -17,17 +19,42 @@ This takes in a series of props, as below, to display the part of the slices.
 <Props of={ContentBucket1} />
 
 ## Code Example
-`<ContentBucket1 />`
+`<ContentBucket1 section={section} />`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const ContentBucket1Story = () => (
+export const ContentBucket1Story = ({ section, leadStory, journalists }) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <ContentBucket1 />
+    <ContentBucket1 {...{ section, leadStory, journalists }} />
   </NewsKitProvider>
 );
 
-<Story name="ContentBucket1">
+<Story name="ContentBucket1" args={{
+  section: { title: 'Rugby Union', color : '#008347' },
+  leadStory: { headline,color,readingTime,summary,bylines,subHeadline,caption,image,url },
+  journalists: [
+    {
+      journalist: {
+        name: 'Deborah Haynes',
+        image: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
+      },
+      quote: 'Now is Willis’s chance to show he’s got more to offer than Curry',
+      heading: '',
+      sectionColour: '#008347',
+      textColour: '#222222'
+    },
+    {
+      journalist: {
+        name: 'Deborah Haynes',
+        image: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
+      },
+      quote: 'Now is Willis’s chance to show he’s got more to offer than Curry',
+      heading: '',
+      sectionColour: '#008347',
+      textColour: '#222222'
+    }
+  ]
+}}>
   {ContentBucket1Story.bind({})}
 </Story>

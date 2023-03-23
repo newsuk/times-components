@@ -8,7 +8,7 @@ import {
   readingTime,
   summary,
   bylines,
-  interviewee,
+  subHeadline,
   caption,
   image,
   url
@@ -23,7 +23,7 @@ describe('Render Component one', () => {
         readingTime={readingTime}
         summary={summary}
         bylines={bylines}
-        interviewee={interviewee}
+        subHeadline={subHeadline}
         caption={caption}
         image={image}
         url={url}
@@ -40,7 +40,7 @@ describe('Render Component one', () => {
         readingTime={readingTime}
         summary={summary}
         bylines={bylines}
-        interviewee={interviewee}
+        subHeadline={subHeadline}
         caption={caption}
         image={image}
         url={url}
@@ -49,7 +49,7 @@ describe('Render Component one', () => {
     const headlineText = getByText(headline);
     expect(headlineText).toBeInTheDocument();
   });
-  it('should render correct interviewee color', () => {
+  it('should render correct subHeadline color', () => {
     const { getByText } = render(
       <LeadStory
         headline={headline}
@@ -57,15 +57,15 @@ describe('Render Component one', () => {
         readingTime={readingTime}
         summary={summary}
         bylines={bylines}
-        interviewee={interviewee}
+        subHeadline={subHeadline}
         caption={caption}
         image={image}
         url={url}
       />
     );
 
-    const intervieweeText = getByText('JOEL KPOKU INTERVIEW');
-    expect(intervieweeText).toHaveStyle('color: #008347');
+    const subHeadlineText = getByText('JOEL KPOKU INTERVIEW');
+    expect(subHeadlineText).toHaveStyle('color: #008347');
   });
   it('should render correct summary', () => {
     const { getByText } = render(
@@ -75,7 +75,7 @@ describe('Render Component one', () => {
         readingTime={readingTime}
         summary={summary}
         bylines={bylines}
-        interviewee={interviewee}
+        subHeadline={subHeadline}
         caption={caption}
         image={image}
         url={url}
@@ -93,7 +93,7 @@ describe('Render Component one', () => {
         readingTime={readingTime}
         summary={summary}
         bylines={bylines}
-        interviewee={interviewee}
+        subHeadline={subHeadline}
         caption={caption}
         image={image}
         url={url}
@@ -111,7 +111,7 @@ describe('Render Component one', () => {
         readingTime={readingTime}
         summary={summary}
         bylines={bylines}
-        interviewee={interviewee}
+        subHeadline={subHeadline}
         caption={caption}
         image={image}
         url={url}
@@ -129,7 +129,7 @@ describe('Render Component one', () => {
         readingTime={readingTime}
         summary={summary}
         bylines={bylines}
-        interviewee={interviewee}
+        subHeadline={subHeadline}
         caption={caption}
         image={image}
         url={url}
@@ -147,7 +147,7 @@ describe('Render Component one', () => {
         readingTime={readingTime}
         summary={summary}
         bylines={bylines}
-        interviewee={interviewee}
+        subHeadline={subHeadline}
         caption={caption}
         image={image}
         url={url}
@@ -168,7 +168,7 @@ describe('Render Component one', () => {
         readingTime={readingTime}
         summary={summary}
         bylines={bylines}
-        interviewee={interviewee}
+        subHeadline={subHeadline}
         caption={caption}
         image={image}
         url={url}
