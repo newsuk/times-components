@@ -1,52 +1,55 @@
 import React from 'react';
-import {
-    Block,
-    Image,
-    LinkStandalone,
-    Headline,
-    Visible
-} from 'newskit';
+import { Block, Image, LinkStandalone, Headline, Visible } from 'newskit';
 import { ArticleList, ArticleListFooter, TimeToRead } from './styles';
 import './articleList.css';
 
 interface ArticleListItemProps {
-    image?: string;
-    alt?: string;
-    title: string;
-    url: string;
-    articleType?: string;
-    timeToRead?: string;
-};
+  image?: string;
+  alt?: string;
+  title: string;
+  url: string;
+  articleType?: string;
+  timeToRead?: string;
+}
 
-export const ArticleListItem = ({ title, timeToRead, articleType, image, url }: ArticleListItemProps) => {
-    return (
-        <ArticleList>
-            <LinkStandalone href={url} data-testid="article-ListItem">
-                <Block as="section">
-                    <Visible xs sm md>
-                    <Image
-                        src={image}
-                        alt=""
-                        loadingAspectRatio="3:2"
-                        width="100%"
-                        overrides={{
-                            marginBlock: '0 10px',
-                        }}
-                        />
-                    </Visible>
-                    <Headline
-                        headingAs="h3"
-                        overrides={{
-                            typographyPreset: 'articleListTitle'
-                        }}>
-                        {title}
-                    </Headline>
-                    <ArticleListFooter>
-                        <span className={"articleListType__" + articleType}>{articleType}</span>
-                        <TimeToRead>{timeToRead}</TimeToRead>
-                    </ArticleListFooter>
-                </Block>
-            </LinkStandalone>
-        </ArticleList>
-    );
+export const ArticleListItem = ({
+  title,
+  timeToRead,
+  articleType,
+  image,
+  url
+}: ArticleListItemProps) => {
+  return (
+    <ArticleList>
+      <LinkStandalone href={url} data-testid="article-ListItem">
+        <Block as="section">
+          <Visible xs sm md>
+            <Image
+              src={image}
+              alt=""
+              loadingAspectRatio="3:2"
+              width="100%"
+              overrides={{
+                marginBlock: '0 10px'
+              }}
+            />
+          </Visible>
+          <Headline
+            headingAs="h3"
+            overrides={{
+              typographyPreset: 'articleListTitle'
+            }}
+          >
+            {title}
+          </Headline>
+          <ArticleListFooter>
+            <span className={'articleListType__' + articleType}>
+              {articleType}
+            </span>
+            <TimeToRead>{timeToRead}</TimeToRead>
+          </ArticleListFooter>
+        </Block>
+      </LinkStandalone>
+    </ArticleList>
+  );
 };
