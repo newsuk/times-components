@@ -127,7 +127,7 @@ export const typographyPresets = Object.fromEntries(
     },
     articleListTitle: {
       fontFamily: '{{fonts.fontFamily010.fontFamily}}',
-      fontSize: '{{fonts.fontSize045}}',
+      fontSize: '{{fonts.fontSize040}}',
       fontWeight: '{{fonts.fontWeight010}}',
       lineHeight: '{{fonts.fontLineHeight080}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',

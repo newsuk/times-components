@@ -1,8 +1,9 @@
 import { styled, getColorCssFromTheme, Block } from 'newskit';
 import { fontsWithFallback } from '@times-components/ts-styleguide';
 
-export const ArticleList = styled.div`
+export const ArticleList = styled(Block)`
   margin: 0 15px;
+
   & > a {
     text-decoration: none;
     ${getColorCssFromTheme('color', 'inkSubtle')};
@@ -17,11 +18,9 @@ export const ArticleList = styled.div`
       ${getColorCssFromTheme('color', 'inkSubtle')};
     }
   }
-  text-align: left;
 `;
 
 export const ArticleListFooter = styled(Block)`
-  text-align: left;
   font-family: ${fontsWithFallback.supporting};
   font-size: 12px;
   line-height: 14px;
