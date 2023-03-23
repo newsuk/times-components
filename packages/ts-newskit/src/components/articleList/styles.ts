@@ -1,10 +1,6 @@
 import { styled, getColorCssFromTheme, Block } from 'newskit';
 import { fontsWithFallback } from '@times-components/ts-styleguide';
 
-export const ArticleList = styled(Block)`
-  margin: 0 15px;
-`;
-
 export const ArticleListFooter = styled(Block)`
   font-family: ${fontsWithFallback.supporting};
   font-size: 12px;

@@ -1,7 +1,6 @@
 import React from 'react';
-import { Block, Image, LinkStandalone, Headline, Visible } from 'newskit';
+import { Block, Image, LinkStandalone, Headline, Stack, Visible } from 'newskit';
 import {
-  ArticleList,
   ArticleListFooter,
   ArticleListType,
   TimeToRead
@@ -27,7 +26,7 @@ export const ArticleListItem = ({
   timeToRead
 }: ArticleListItemProps) => {
   return (
-    <ArticleList>
+    <Stack marginInline='space040'>
         <LinkStandalone
               href={url}
               data-testid="article-ListItem"
@@ -50,6 +49,9 @@ export const ArticleListItem = ({
           <Headline
             headingAs="h3"
             overrides={{
+              heading: {
+                stylePreset: ''
+              },
               typographyPreset: 'articleListTitle'
             }}
           >
@@ -61,6 +63,6 @@ export const ArticleListItem = ({
           </ArticleListFooter>
         </Block>
       </LinkStandalone>
-    </ArticleList>
+    </Stack>
   );
 };
