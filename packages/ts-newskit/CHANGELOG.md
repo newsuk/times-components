@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.11.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.10.0...@times-components/ts-newskit@1.11.0) (2023-03-23)
+
+
+### Features
+
+* **TDP-3412:** develop lead story component ([#3293](https://github.com/newsuk/times-components/issues/3293)) ([b46d7e3](https://github.com/newsuk/times-components/commit/b46d7e3cd200be1497c2b77bab202b9e6f93c418))
+
+
+
+
+
 # [1.10.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.9.1...@times-components/ts-newskit@1.10.0) (2023-03-21)
 
 
