@@ -1,5 +1,4 @@
 import { styled, getColorCssFromTheme, Block } from 'newskit';
-
 import { fontsWithFallback } from '@times-components/ts-styleguide';
 
 export const ArticleList = styled.div`
@@ -38,6 +37,10 @@ export const ArticleListFooter = styled(Block)`
       font-weight: 700;
     }
   }
+`;
+
+export const ArticleListType = styled.span`
+  color: ${({ color }) => color};
 `;
 
 export const TimeToRead = styled.span`

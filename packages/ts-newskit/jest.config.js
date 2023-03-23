@@ -42,9 +42,6 @@ const buildConfig = dir => {
         lines: 95,
         functions: 95
       }
-    },
-    moduleNameMapper: {
-      '\\.(css)$': 'identity-obj-proxy'
     }
   };
 };

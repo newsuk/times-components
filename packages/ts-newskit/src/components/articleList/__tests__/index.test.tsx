@@ -3,11 +3,13 @@ import '@testing-library/jest-dom';
 import { render } from '../../utils/test-utils';
 import { ArticleListItem } from '../index';
 import {
-  title,
-  timeToRead,
-  articleType,
   image,
-  url
+  color,
+  alt,
+  title,
+  url,
+  articleType,
+  timeToRead
 } from '../fixtures/data.json';
 
 describe('Render Article List Item', () => {
@@ -19,6 +21,8 @@ describe('Render Article List Item', () => {
         articleType={articleType}
         image={image}
         url={url}
+        color={color}
+        alt={alt}
       />
     );
     expect(asFragment()).toMatchSnapshot();
@@ -32,6 +36,8 @@ describe('Render Article List Item', () => {
         articleType={articleType}
         image={image}
         url={url}
+        color={color}
+        alt={alt}
       />
     );
     const getArticleListItem = getByText("Harry & Meghan's New Project?");
@@ -46,6 +52,8 @@ describe('Render Article List Item', () => {
         articleType={articleType}
         image={image}
         url={url}
+        color={color}
+        alt={alt}
       />
     );
     const articleListUrl = getAllByTestId('article-ListItem')[0];

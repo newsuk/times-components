@@ -1,10 +1,15 @@
 import React from 'react';
 import { Block, Image, LinkStandalone, Headline, Visible } from 'newskit';
-import { ArticleList, ArticleListFooter, TimeToRead } from './styles';
-import './articleList.css';
+import {
+  ArticleList,
+  ArticleListFooter,
+  ArticleListType,
+  TimeToRead
+} from './styles';
 
 interface ArticleListItemProps {
   image?: string;
+  color?: string;
   alt?: string;
   title: string;
   url: string;
@@ -13,20 +18,22 @@ interface ArticleListItemProps {
 }
 
 export const ArticleListItem = ({
-  title,
-  timeToRead,
-  articleType,
   image,
-  url
+  color,
+  alt,
+  title,
+  url,
+  articleType,
+  timeToRead
 }: ArticleListItemProps) => {
   return (
     <ArticleList>
       <LinkStandalone href={url} data-testid="article-ListItem">
         <Block as="section">
-          <Visible xs sm md>
+          <Visible xs sm md xl>
             <Image
               src={image}
-              alt=""
+              alt={alt}
               loadingAspectRatio="3:2"
               width="100%"
               overrides={{
@@ -43,9 +50,7 @@ export const ArticleListItem = ({
             {title}
           </Headline>
           <ArticleListFooter>
-            <span className={'articleListType__' + articleType}>
-              {articleType}
-            </span>
+            <ArticleListType color={color}>{articleType}</ArticleListType>
             <TimeToRead>{timeToRead}</TimeToRead>
           </ArticleListFooter>
         </Block>
