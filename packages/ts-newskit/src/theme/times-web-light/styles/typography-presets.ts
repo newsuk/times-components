@@ -56,7 +56,7 @@ export const typographyPresets = Object.fromEntries(
       fontFamily: '{{fonts.fontFamily010.fontFamily}}',
       fontWeight: '{{fonts.fontWeight040}}',
       fontSize: '{{fonts.fontSize080}}',
-      lineHeight: '{{fonts.fontLineHeight150}}',
+      lineHeight: '{{fonts.fontLineHeight040}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     },
@@ -64,7 +64,31 @@ export const typographyPresets = Object.fromEntries(
       fontFamily: '{{fonts.fontFamily010.fontFamily}}',
       fontWeight: '{{fonts.fontWeight040}}',
       fontSize: '{{fonts.fontSize060}}',
-      lineHeight: '{{fonts.fontLineHeight030}}',
+      lineHeight: '{{fonts.fontLineHeight110}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    newPreset080: {
+      fontFamily: '{{fonts.fontFamily040.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight030}}',
+      fontSize: '{{fonts.fontSize080}}',
+      lineHeight: '{{fonts.fontLineHeight040}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    newPreset090: {
+      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
+      fontSize: '{{fonts.fontSize010}}',
+      fontWeight: '{{fonts.fontWeight030}}',
+      lineHeight: '{{fonts.fontLineHeight050}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    newPreset100: {
+      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+      fontSize: '{{fonts.fontSize010}}',
+      fontWeight: '{{fonts.fontWeight010}}',
+      lineHeight: '{{fonts.fontLineHeight060}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     },
