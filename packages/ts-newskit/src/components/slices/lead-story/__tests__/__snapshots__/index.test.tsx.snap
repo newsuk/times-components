@@ -6,11 +6,10 @@ exports[`Render Component one should render a snapshot 1`] = `
     class="css-10zrx1s"
   >
     <div
-      class="css-mxu7ds"
+      class="css-15nnp69"
     >
       <p
         class="css-kkq2ir"
-        color="#008347"
       >
         JOEL KPOKU INTERVIEW
       </p>
@@ -90,7 +89,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-13byt3y"
       >
         <p
-          class="css-13pwpap"
+          class="css-5frf24"
         >
           Caption One Line Dummy Caption Here
         </p>

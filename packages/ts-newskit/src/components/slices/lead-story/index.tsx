@@ -35,9 +35,15 @@ export const LeadStory = ({
 }: LeadStoryPropsDataProp) => {
   return (
     <Stack flow={{ sm: 'vertical-center', md: 'horizontal-stretch' }}>
-      <StyledTextStack marginInlineEnd={{ md: 'space040' }}>
+      <StyledTextStack
+        marginInlineEnd={{ md: 'space040' }}
+        marginInline={{
+          xs: 'space045',
+          md: 'space000'
+        }}
+      >
         <StyledInterviewee
-          color={color}
+          $color={color}
           paddingBlockStart={{
             xs: 'space040',
             md: 'space020',
@@ -110,6 +116,10 @@ export const LeadStory = ({
             stylePreset="leadStoryTextColor"
             paddingBlockStart="space020"
             typographyPreset="newPreset100"
+            marginInline={{
+              xs: 'space045',
+              md: 'space000'
+            }}
           >
             {caption}
           </TextBlock>

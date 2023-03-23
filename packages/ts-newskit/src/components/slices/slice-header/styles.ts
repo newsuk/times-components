@@ -1,6 +1,6 @@
 import { styled, Stack, TextBlock, getMediaQueryFromTheme } from 'newskit';
 
-export const StyledBlock = styled(Stack)`
+export const StyledStack = styled(Stack)`
   height: 60px;
   border-top: 1px dashed #666666;
   ${getMediaQueryFromTheme('lg')} {
