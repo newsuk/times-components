@@ -5,7 +5,7 @@ import {
     LinkStandalone,
     Headline
 } from 'newskit';
-import { ArticleList } from './styles';
+import { ArticleList, ArticleListFooter } from './styles';
 
 export type ArticleListItem = {
     image?: string;
@@ -19,22 +19,18 @@ export type ArticleListItem = {
 export const ArticleListItem: React.FC<{ data: ArticleListItem[]; }> = ({ data }) => {
     return (
     <ArticleList>
-        {data.map((articleListItem, articleListIndex, articleListArr) => (
+        {data.map((articleListItem) => (
             <LinkStandalone
                 href={articleListItem.url}
                 overrides={{
-                    typographyPreset: 'articleListTitle'
+                    typographyPreset: 'articleListLink'
                 }}>
                 <Block as="section">
                     <Image
                         src={articleListItem.image}
-                        alt={
-                            articleListIndex + 1 === articleListArr.length
-                            ? undefined
-                            : articleListItem.alt
-                        }
+                        alt=""
                         loadingAspectRatio="3:2"
-                        width="186px"
+                        width="100%"
                         overrides={{
                             stylePreset: 'imageSharp'
                         }}
@@ -49,7 +45,7 @@ export const ArticleListItem: React.FC<{ data: ArticleListItem[]; }> = ({ data }
                         }}>
                         {articleListItem.title}
                     </Headline>
-                    <div>{articleListItem.articleType} | {articleListItem.timeToRead}</div>
+                    <ArticleListFooter>{articleListItem.articleType} | {articleListItem.timeToRead}</ArticleListFooter>
                 </Block>
             </LinkStandalone>
         ))}
