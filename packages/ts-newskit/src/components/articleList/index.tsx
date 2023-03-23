@@ -3,7 +3,8 @@ import {
     Block,
     Image,
     LinkStandalone,
-    Headline
+    Headline,
+    Visible
 } from 'newskit';
 import { ArticleList, ArticleListFooter, TimeToRead } from './styles';
 import './articleList.css';
@@ -22,6 +23,7 @@ export const ArticleListItem = ({ title,timeToRead,articleType,image,url }: Arti
         <ArticleList>
             <LinkStandalone href={url}>
                 <Block as="section">
+                    <Visible xs sm md>
                     <Image
                         src={image}
                         alt=""
@@ -30,7 +32,8 @@ export const ArticleListItem = ({ title,timeToRead,articleType,image,url }: Arti
                         overrides={{
                             marginBlock: '0 10px',
                         }}
-                    />
+                        />
+                    </Visible>
                     <Headline
                         headingAs="h3"
                         overrides={{
