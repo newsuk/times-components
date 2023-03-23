@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Article List Item should render a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-bgurfh"
+  >
+    <a
+      class="css-18gx45v"
+      data-testid="article-ListItem"
+      href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
+    >
+      <span
+        class="css-17x5lw"
+      >
+        <section
+          class="css-13byt3y"
+        >
+          <div
+            class="css-1osy5lm"
+          >
+            <picture
+              class="css-hcneqw"
+            >
+              <div
+                class="css-5pczz7"
+              />
+              <img
+                alt=""
+                class="css-1t6p58q"
+                src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+                width="100%"
+              />
+            </picture>
+          </div>
+          <section
+            class="css-1g1610w"
+          >
+            <h3
+              class="nk-headline-heading css-1spnxj1"
+            >
+              Harry & Meghan's New Project?
+            </h3>
+          </section>
+          <div
+            class="css-9mtglm"
+          >
+            <span
+              class="articleListType__Interview"
+            >
+              Interview
+            </span>
+            <span
+              class="css-bxjfy5"
+            >
+              4 min read
+            </span>
+          </div>
+        </section>
+      </span>
+    </a>
+  </div>
+</DocumentFragment>
+`;

@@ -18,10 +18,10 @@ interface ArticleListItemProps {
     timeToRead?: string;
 };
 
-export const ArticleListItem = ({ title,timeToRead,articleType,image,url }: ArticleListItemProps) => {
+export const ArticleListItem = ({ title, timeToRead, articleType, image, url }: ArticleListItemProps) => {
     return (
         <ArticleList>
-            <LinkStandalone href={url}>
+            <LinkStandalone href={url} data-testid="article-ListItem">
                 <Block as="section">
                     <Visible xs sm md>
                     <Image
