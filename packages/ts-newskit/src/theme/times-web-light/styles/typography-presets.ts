@@ -157,7 +157,15 @@ export const typographyPresets = Object.fromEntries(
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     },
-    articleListFooter: {
+    articleListArticleType: {
+      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+      fontSize: '{{fonts.fontSize010}}',
+      fontWeight: '{{fonts.fontWeight030}}',
+      lineHeight: '{{fonts.fontLineHeight020}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    articleListTimeToRead: {
       fontFamily: '{{fonts.fontFamily030.fontFamily}}',
       fontSize: '{{fonts.fontSize010}}',
       fontWeight: '{{fonts.fontWeight010}}',

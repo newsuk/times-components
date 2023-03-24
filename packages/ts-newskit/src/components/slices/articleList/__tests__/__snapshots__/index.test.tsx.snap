@@ -6,7 +6,7 @@ exports[`Render Article List Item should render a snapshot 1`] = `
     class="css-1c2ypzx"
   >
     <a
-      class="css-n12c2i"
+      class="css-13fiaa0"
       data-testid="article-ListItem"
       href="/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m"
     >
@@ -43,16 +43,15 @@ exports[`Render Article List Item should render a snapshot 1`] = `
             </h3>
           </section>
           <div
-            class="css-n0np2o"
+            class="css-1kfcs9m"
           >
             <span
-              class="css-1izzjsz"
-              color="#E34605"
+              class="css-865zf5"
             >
               Review
             </span>
             <span
-              class="css-hrqj8j"
+              class="css-kn4pt5"
             >
               4 min read
             </span>

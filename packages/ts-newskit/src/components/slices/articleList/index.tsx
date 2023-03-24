@@ -8,11 +8,11 @@ import {
   Visible,
   TextBlock
 } from 'newskit';
-import { ArticleListType } from './styles';
+import { ArticleListType, ArticleListFooterWrapper } from './styles';
 
 interface ArticleListItemProps {
   image?: string;
-  color?: string;
+  color: string;
   alt?: string;
   title: string;
   url: string;
@@ -59,12 +59,23 @@ export const ArticleListItem = ({
           >
             {title}
           </Headline>
-          <TextBlock as="div"
-            typographyPreset="articleListFooter"
-          >
-              <ArticleListType as="span" color={color}>{articleType}</ArticleListType>
-              <TextBlock as="span">{timeToRead}</TextBlock>
-          </TextBlock>
+          <ArticleListFooterWrapper>
+            <ArticleListType
+              paddingInlineEnd="space020"
+              typographyPreset="articleListArticleType"
+              as="span"
+              $color={color}
+            >
+              {articleType}
+            </ArticleListType>
+            <TextBlock
+              paddingInline="space020"
+              typographyPreset="articleListTimeToRead"
+              as="span"
+            >
+              {timeToRead}
+            </TextBlock>
+          </ArticleListFooterWrapper>
         </Block>
       </LinkStandalone>
     </Stack>
