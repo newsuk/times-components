@@ -2,7 +2,7 @@ import { styled, TextBlock, Block } from 'newskit';
 
 export const ArticleListFooterWrapper = styled(Block)`
   span {
-    border-left: 1px solid #ccc;
+    border-left: 1px solid #666;
 
     &:first-child {
       border-left: none;
@@ -13,5 +13,5 @@ export const ArticleListFooterWrapper = styled(Block)`
 
 export const ArticleListType = styled(TextBlock)<{ $color: string }>`
   color: ${({ $color }) => $color};
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #666;
 `;

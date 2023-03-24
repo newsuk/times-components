@@ -4,5 +4,10 @@ export const articleListStylePresets = {
       color: '{{colors.inkSubtle}}',
       textDecoration: 'none'
     }
+  },
+  articleListTimeToRead: {
+    base: {
+      color: '{{colors.grey010}}'
+    }
   }
 };

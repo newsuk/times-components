@@ -60,21 +60,26 @@ export const ArticleListItem = ({
             {title}
           </Headline>
           <ArticleListFooterWrapper>
-            <ArticleListType
-              paddingInlineEnd="space020"
-              typographyPreset="articleListArticleType"
-              as="span"
-              $color={color}
-            >
-              {articleType}
-            </ArticleListType>
-            <TextBlock
-              paddingInline="space020"
-              typographyPreset="articleListTimeToRead"
-              as="span"
-            >
-              {timeToRead}
-            </TextBlock>
+            {articleType ? (
+              <ArticleListType
+                paddingInlineEnd="space020"
+                typographyPreset="articleListArticleType"
+                as="span"
+                $color={color}
+              >
+                {articleType}
+              </ArticleListType>
+            ) : null}
+            {timeToRead ? (
+              <TextBlock
+                paddingInline="space020"
+                typographyPreset="articleListTimeToRead"
+                stylePreset="articleListTimeToRead"
+                as="span"
+              >
+                {timeToRead}
+              </TextBlock>
+            ) : null}
           </ArticleListFooterWrapper>
         </Block>
       </LinkStandalone>
