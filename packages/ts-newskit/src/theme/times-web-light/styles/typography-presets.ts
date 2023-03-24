@@ -156,6 +156,14 @@ export const typographyPresets = Object.fromEntries(
       lineHeight: '{{fonts.fontLineHeight080}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
+    },
+    articleListFooter: {
+      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+      fontSize: '{{fonts.fontSize010}}',
+      fontWeight: '{{fonts.fontWeight010}}',
+      lineHeight: '{{fonts.fontLineHeight020}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
     }
   }).map(([key, value]) => {
     if (

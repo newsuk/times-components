@@ -5,9 +5,10 @@ import {
   LinkStandalone,
   Headline,
   Stack,
-  Visible
+  Visible,
+  TextBlock
 } from 'newskit';
-import { ArticleListFooter, ArticleListType, TimeToRead } from './styles';
+import { ArticleListType } from './styles';
 
 interface ArticleListItemProps {
   image?: string;
@@ -29,7 +30,7 @@ export const ArticleListItem = ({
   timeToRead
 }: ArticleListItemProps) => {
   return (
-    <Stack marginInline="space040">
+    <Stack>
       <LinkStandalone
         href={url}
         data-testid="article-ListItem"
@@ -41,29 +42,29 @@ export const ArticleListItem = ({
           <Visible xs sm md xl>
             <Image
               src={image}
-              alt={alt}
+              alt={alt || title}
               loadingAspectRatio="3:2"
               width="100%"
               overrides={{
-                marginBlock: '0 10px'
+                marginBlockEnd: 'space020'
               }}
             />
           </Visible>
           <Headline
             headingAs="h3"
             overrides={{
-              heading: {
-                stylePreset: ''
-              },
+              marginBlock: 'space020',
               typographyPreset: 'articleListTitle'
             }}
           >
             {title}
           </Headline>
-          <ArticleListFooter>
-            <ArticleListType color={color}>{articleType}</ArticleListType>
-            <TimeToRead>{timeToRead}</TimeToRead>
-          </ArticleListFooter>
+          <TextBlock as="div"
+            typographyPreset="articleListFooter"
+          >
+              <ArticleListType as="span" color={color}>{articleType}</ArticleListType>
+              <TextBlock as="span">{timeToRead}</TextBlock>
+          </TextBlock>
         </Block>
       </LinkStandalone>
     </Stack>
