@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render } from '../../utils/test-utils';
+import { render } from '../../../utils/test-utils';
 import { ArticleListItem } from '../index';
 import {
   image,
