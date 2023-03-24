@@ -43,15 +43,24 @@ exports[`Render Article List Item should render a snapshot 1`] = `
             </h3>
           </section>
           <div
-            class="css-wcwcfq"
+            class="css-13byt3y"
           >
             <span
-              class="css-dqez74"
+              class="css-1mr0p1r"
             >
               Review
             </span>
+            <div
+              class="css-lew009"
+            >
+              <hr
+                aria-hidden="true"
+                class="css-b2ej4n"
+                data-testid="divider"
+              />
+            </div>
             <span
-              class="css-1lxs5yg"
+              class="css-8so0cn"
             >
               4 min read
             </span>
