@@ -5,7 +5,7 @@ import {
   LinkStandalone,
   Headline,
   Stack,
-  Visible,
+  Hidden,
   TextBlock
 } from 'newskit';
 import { ArticleListType, ArticleListFooterWrapper } from './styles';
@@ -39,7 +39,7 @@ export const ArticleListItem = ({
         }}
       >
         <Block as="section">
-          <Visible xs sm md xl>
+          <Hidden lg>
             <Image
               src={image}
               alt={alt || title}
@@ -49,7 +49,7 @@ export const ArticleListItem = ({
                 marginBlockEnd: 'space020'
               }}
             />
-          </Visible>
+          </Hidden>
           <Headline
             headingAs="h3"
             overrides={{
