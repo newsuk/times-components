@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.12.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.12.0...@times-components/ts-newskit@1.12.1) (2023-03-23)
+
+
+### Bug Fixes
+
+* **TDP-3230:** fix padding issue on mobile ([#3297](https://github.com/newsuk/times-components/issues/3297)) ([2eabd09](https://github.com/newsuk/times-components/commit/2eabd0920a908d85dfeebe6795e24c4e8d942033))
+
+
+
+
+
 # [1.12.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.11.0...@times-components/ts-newskit@1.12.0) (2023-03-23)
 
 
