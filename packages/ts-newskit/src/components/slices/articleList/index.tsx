@@ -5,11 +5,11 @@ import {
   LinkStandalone,
   Headline,
   Stack,
-  Hidden,
-  TextBlock
+  Visible,
+  TextBlock,
+  Divider
 } from 'newskit';
-import { ArticleListType, ArticleListFooterWrapper } from './styles';
-
+import { ArticleListType, ContainerInline } from './styles';
 interface ArticleListItemProps {
   image?: string;
   color: string;
@@ -19,7 +19,6 @@ interface ArticleListItemProps {
   articleType?: string;
   timeToRead?: string;
 }
-
 export const ArticleListItem = ({
   image,
   color,
@@ -39,7 +38,7 @@ export const ArticleListItem = ({
         }}
       >
         <Block as="section">
-          <Hidden lg>
+          <Visible xs sm md xl>
             <Image
               src={image}
               alt={alt || title}
@@ -49,7 +48,7 @@ export const ArticleListItem = ({
                 marginBlockEnd: 'space020'
               }}
             />
-          </Hidden>
+          </Visible>
           <Headline
             headingAs="h3"
             overrides={{
@@ -59,28 +58,31 @@ export const ArticleListItem = ({
           >
             {title}
           </Headline>
-          <ArticleListFooterWrapper>
-            {articleType ? (
-              <ArticleListType
-                paddingInlineEnd="space020"
-                typographyPreset="articleListArticleType"
-                as="span"
-                $color={color}
-              >
-                {articleType}
-              </ArticleListType>
+          <Block>
+            <ArticleListType
+              typographyPreset="articleListArticleType"
+              as="span"
+              $color={color}
+            >
+              {articleType}
+            </ArticleListType>
+            {articleType && timeToRead ? (
+              <ContainerInline>
+                <Divider vertical
+                  overrides={{
+                    marginInline: 'space020'
+                  }}
+                />
+              </ContainerInline>
             ) : null}
-            {timeToRead ? (
-              <TextBlock
-                paddingInline="space020"
-                typographyPreset="articleListTimeToRead"
-                stylePreset="articleListTimeToRead"
-                as="span"
-              >
-                {timeToRead}
-              </TextBlock>
-            ) : null}
-          </ArticleListFooterWrapper>
+            <TextBlock
+              typographyPreset="articleListTimeToRead"
+              stylePreset="articleListTimeToRead"
+              as="span"
+            >
+              {timeToRead}
+            </TextBlock>
+          </Block>
         </Block>
       </LinkStandalone>
     </Stack>
