@@ -69,7 +69,8 @@ export const ArticleListItem = ({
             </ArticleListType>
             {articleType && timeToRead ? (
               <ContainerInline>
-                <Divider vertical
+                <Divider
+                  vertical
                   overrides={{
                     marginInline: 'space020'
                   }}

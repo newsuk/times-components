@@ -75,8 +75,8 @@ describe('Render Article List Item', () => {
         alt={alt || title}
       />
     );
-    const articleListUrl = screen.getByAltText("This is ALT Text");
-    expect(articleListUrl).toHaveAttribute('alt', "This is ALT Text");
+    const articleListUrl = screen.getByAltText('This is ALT Text');
+    expect(articleListUrl).toHaveAttribute('alt', 'This is ALT Text');
   });
 
   it('items should render TITLE text if ALT is missing', () => {
@@ -92,6 +92,9 @@ describe('Render Article List Item', () => {
       />
     );
     const articleListUrl = screen.getByAltText("Harry & Meghan's New Project?");
-    expect(articleListUrl).toHaveAttribute('alt', "Harry & Meghan's New Project?");
+    expect(articleListUrl).toHaveAttribute(
+      'alt',
+      "Harry & Meghan's New Project?"
+    );
   });
 });
