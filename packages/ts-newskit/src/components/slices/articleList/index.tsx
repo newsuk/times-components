@@ -41,6 +41,7 @@ export const ArticleListItem = ({
           <Visible xs sm md xl>
             <Image
               src={image}
+              data-testid="article-ListItemImg"
               alt={alt || title}
               loadingAspectRatio="3:2"
               width="100%"

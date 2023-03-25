@@ -26,8 +26,9 @@ exports[`Render Article List Item should render a snapshot 1`] = `
                 class="css-5pczz7"
               />
               <img
-                alt="Harry & Meghan's New Project?"
+                alt="This is ALT Text"
                 class="css-1t6p58q"
+                data-testid="article-ListItemImg"
                 src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
                 width="100%"
               />

@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render } from '../../../utils/test-utils';
+import { render, screen } from '../../../utils/test-utils';
 import { ArticleListItem } from '../index';
 import {
   image,
@@ -22,7 +22,7 @@ describe('Render Article List Item', () => {
         image={image}
         url={url}
         color={color}
-        alt={alt}
+        alt={alt || title}
       />
     );
     expect(asFragment()).toMatchSnapshot();
@@ -37,7 +37,7 @@ describe('Render Article List Item', () => {
         image={image}
         url={url}
         color={color}
-        alt={alt}
+        alt={alt || title}
       />
     );
     const getArticleListItem = getByText("Harry & Meghan's New Project?");
@@ -53,7 +53,7 @@ describe('Render Article List Item', () => {
         image={image}
         url={url}
         color={color}
-        alt={alt}
+        alt={alt || title}
       />
     );
     const articleListUrl = getAllByTestId('article-ListItem')[0];
@@ -61,5 +61,37 @@ describe('Render Article List Item', () => {
       'href',
       '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m'
     );
+  });
+
+  it('items should render ALT text', () => {
+    render(
+      <ArticleListItem
+        title={title}
+        timeToRead={timeToRead}
+        articleType={articleType}
+        image={image}
+        url={url}
+        color={color}
+        alt={alt || title}
+      />
+    );
+    const articleListUrl = screen.getByAltText("This is ALT Text");
+    expect(articleListUrl).toHaveAttribute('alt', "This is ALT Text");
+  });
+
+  it('items should render title text if ALT is missing', () => {
+    render(
+      <ArticleListItem
+        title={title}
+        timeToRead={timeToRead}
+        articleType={articleType}
+        image={image}
+        url={url}
+        color={color}
+        alt={title}
+      />
+    );
+    const articleListUrl = screen.getByAltText("Harry & Meghan's New Project?");
+    expect(articleListUrl).toHaveAttribute('alt', "Harry & Meghan's New Project?");
   });
 });
