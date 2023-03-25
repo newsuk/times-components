@@ -79,7 +79,7 @@ describe('Render Article List Item', () => {
     expect(articleListUrl).toHaveAttribute('alt', "This is ALT Text");
   });
 
-  it('items should render title text if ALT is missing', () => {
+  it('items should render TITLE text if ALT is missing', () => {
     render(
       <ArticleListItem
         title={title}
