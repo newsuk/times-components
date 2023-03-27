@@ -73,7 +73,7 @@ describe('Render Article List Item', () => {
     );
   });
 
-    it('Article Type should fall back to grey if colour prop is missing', () => {
+  it('Article Type should fall back to grey if colour prop is missing', () => {
     renderComponent({
       image:
         '//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63',
