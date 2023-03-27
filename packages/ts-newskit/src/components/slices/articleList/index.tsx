@@ -10,7 +10,7 @@ import {
   Divider
 } from 'newskit';
 import { ArticleListType, ContainerInline } from './styles';
-interface ArticleListItemProps {
+export interface ArticleListItemProps {
   image?: string;
   color: string;
   alt?: string;
