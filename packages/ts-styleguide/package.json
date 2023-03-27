@@ -57,7 +57,7 @@
     "styled-components": "4.3.2"
   },
   "devDependencies": {
-    "@storybook/react": "6.5.15",
+    "@storybook/react": "6.5.16",
     "@testing-library/react": "^12.1.2",
     "fetch-mock": "9.11.0",
     "jest": "24.8.0",
