@@ -13,13 +13,13 @@ describe('Secondary Menu', () => {
 
   it('should render snapshot', () => {
     const { asFragment } = render(
-      <SecondaryNavigation data={mainMenuItems} slug="home" />
+      <SecondaryNavigation data={mainMenuItems} pageSlug="home" />
     );
     expect(asFragment()).toMatchSnapshot();
   });
   it('should close the dropdown ', () => {
     const { getByText, queryByText, getAllByText } = render(
-      <SecondaryNavigation data={mainMenuItems} slug="home" />
+      <SecondaryNavigation data={mainMenuItems} pageSlug="home" />
     );
     const SeeAllButton = getByText('See all');
     fireEvent.click(SeeAllButton);
