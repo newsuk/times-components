@@ -2,15 +2,6 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render, screen } from '../../../utils/test-utils';
 import { ArticleListItem, ArticleListItemProps } from '../index';
-// import {
-//   image,
-//   color,
-//   alt,
-//   title,
-//   url,
-//   articleType,
-//   timeToRead
-// } from '../fixtures/data.json';
 
 const renderComponent = (props: ArticleListItemProps) =>
   render(<ArticleListItem {...props} />);
