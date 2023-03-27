@@ -6,19 +6,23 @@ import { SecondaryMenuItem } from './types';
 
 interface SecondaryNavigationProps {
   data: SecondaryMenuItem[];
+  pageSlug: string;
 }
 
-export const SecondaryNavigation = ({ data }: SecondaryNavigationProps) => {
+export const SecondaryNavigation = ({
+  data,
+  pageSlug
+}: SecondaryNavigationProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [isSelected, setIsSelected] = useState<string>('');
   const firstItem = data[0].title;
 
   useEffect(() => {
-    handleSelect(isSelected);
+    handleSelect(pageSlug);
   }, []);
 
-  const handleSelect = (title: string) => {
-    const filteredItem = data.find(item => item.title === title);
+  const handleSelect = (slug: string) => {
+    const filteredItem = data.find(item => item.slug === slug);
     if (filteredItem) {
       setIsSelected(filteredItem.title);
     } else {

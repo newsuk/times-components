@@ -25,13 +25,12 @@ An example of the `data` structure can be found in the 'Controls' section on the
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const SecondaryNavStory = ({data}) => (
+export const SecondaryNavStory = ({data, pageSlug}) => (
   <TCThemeProvider>
-    <SecondaryNavigation data={mainMenuItems} />
+    <SecondaryNavigation data={mainMenuItems} pageSlug={pageSlug}/>
   </TCThemeProvider>
 );
 
-<Story name="Secondary Navigation" args={{ data: mainMenuItems }}>
+<Story name="Secondary Navigation" args={{ data: mainMenuItems, pageSlug: 'news' }}>
   {SecondaryNavStory.bind({})}
 </Story>
-

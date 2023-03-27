@@ -44,7 +44,7 @@
     "react-test-renderer": "16.9.0"
   },
   "dependencies": {
-    "@times-components/utils": "6.16.0",
+    "@times-components/utils": "6.16.1",
     "css": "^2.2.1",
     "enzyme-to-json": "3.3.5",
     "hyphenate-style-name": "1.0.2",
