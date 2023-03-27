@@ -77,9 +77,9 @@
     "xss": "^1.0.10"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "6.5.15",
+    "@storybook/addon-actions": "6.5.16",
     "@storybook/addon-knobs": "6.4.0",
-    "@storybook/react": "6.5.15",
+    "@storybook/react": "6.5.16",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^12.1.2",
     "@times-components/provider-test-tools": "1.27.2",

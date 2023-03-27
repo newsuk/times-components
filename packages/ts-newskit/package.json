@@ -56,7 +56,7 @@
     "react": "16.9.0"
   },
   "devDependencies": {
-    "@storybook/react": "6.5.15",
+    "@storybook/react": "6.5.16",
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^12.1.2",
     "@times-components/ts-styleguide": "1.41.0",

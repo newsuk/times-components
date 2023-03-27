@@ -36,9 +36,9 @@
   },
   "dependencies": {
     "@babel/core": "7.4.4",
-    "@storybook/addon-actions": "6.5.15",
+    "@storybook/addon-actions": "6.5.16",
     "@storybook/addon-knobs": "6.4.0",
-    "@storybook/react": "6.5.15",
+    "@storybook/react": "6.5.16",
     "@times-components/schema": "0.7.4",
     "@times-components/user-state": "0.4.22",
     "@times-components/utils": "6.16.0",
