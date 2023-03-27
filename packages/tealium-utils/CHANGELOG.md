@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.9.0](https://github.com/newsuk/times-components/compare/@times-components/tealium-utils@0.8.3...@times-components/tealium-utils@0.9.0) (2023-03-27)
+
+
+### Features
+
+* **TDP-0000:** upgrade storybook version ([#3299](https://github.com/newsuk/times-components/issues/3299)) ([14db022](https://github.com/newsuk/times-components/commit/14db0222b4b2d7ace7b7515cf464c4c70d3a8efa))
+
+
+
+
+
 ## [0.8.3](https://github.com/newsuk/times-components/compare/@times-components/tealium-utils@0.8.2...@times-components/tealium-utils@0.8.3) (2023-03-20)
 
 **Note:** Version bump only for package @times-components/tealium-utils

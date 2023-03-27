@@ -1,6 +1,6 @@
 {
   "name": "@times-components/message-bar",
-  "version": "0.7.23",
+  "version": "0.7.24",
   "description": "A component for showing user notifications",
   "main": "dist/index",
   "dev": "src/index",
@@ -36,7 +36,7 @@
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.1",
     "@times-components/jest-serializer": "3.8.0",
-    "@times-components/storybook": "4.8.0",
+    "@times-components/storybook": "4.9.0",
     "@times-components/test-utils": "2.4.1",
     "@times-components/webpack-configurator": "2.1.0",
     "enzyme": "3.9.0",
@@ -57,10 +57,10 @@
     "react-dom": ">=16.9"
   },
   "dependencies": {
-    "@times-components/icons": "2.20.0",
-    "@times-components/responsive": "0.14.20",
-    "@times-components/ts-styleguide": "1.41.0",
-    "@times-components/utils": "6.16.0",
+    "@times-components/icons": "2.20.1",
+    "@times-components/responsive": "0.14.21",
+    "@times-components/ts-styleguide": "1.42.0",
+    "@times-components/utils": "6.16.1",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
