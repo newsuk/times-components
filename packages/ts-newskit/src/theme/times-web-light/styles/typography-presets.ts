@@ -148,6 +148,30 @@ export const typographyPresets = Object.fromEntries(
       lineHeight: '{{fonts.fontLineHeight070}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
+    },
+    articleListTitle: {
+      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+      fontSize: '{{fonts.fontSize040}}',
+      fontWeight: '{{fonts.fontWeight010}}',
+      lineHeight: '{{fonts.fontLineHeight080}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    articleListArticleType: {
+      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+      fontSize: '{{fonts.fontSize010}}',
+      fontWeight: '{{fonts.fontWeight030}}',
+      lineHeight: '{{fonts.fontLineHeight020}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    articleListTimeToRead: {
+      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+      fontSize: '{{fonts.fontSize010}}',
+      fontWeight: '{{fonts.fontWeight010}}',
+      lineHeight: '{{fonts.fontLineHeight020}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
     }
   }).map(([key, value]) => {
     if (

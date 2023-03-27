@@ -1,0 +1,38 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { ArticleListItem } from "./index.tsx";
+import { articleListItems } from './fixtures/data.json';
+import { image, color, alt, title, url, articleType, timeToRead } from './fixtures/data.json';
+
+import { NewsKitProvider } from 'newskit';
+import { TimesWebLightTheme } from '../../../theme';
+
+<Meta
+  title="Newskit Components/Slices/Article List Item"
+  component={ArticleListItem}
+/>
+
+# Article List component
+The `Article List` component displays articles within slices.
+
+This takes in a `data` prop, as below, to display the links in their order within the data object.
+
+## Props
+<Props of={ArticleListItem} />
+
+## Code Example
+`<ArticleListItem data={image, color, alt, title, url, articleType, timeToRead} />`
+
+An example of the `data` structure can be found in the 'Controls' section on the 'Canvas' tab, where you can customise the data being fed to the Breadcrumb component.
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const ArticleListStory = ({ image, color, alt, title, url, articleType, timeToRead }) => (
+  <NewsKitProvider theme={TimesWebLightTheme}>
+    <ArticleListItem {...{ image, color, alt, title, url, articleType, timeToRead }} />
+  </NewsKitProvider>
+);
+
+<Story name="ArticleListItem" args={{ image, color, alt, title, url, articleType, timeToRead }}>
+  {ArticleListStory.bind({})}
+</Story>
