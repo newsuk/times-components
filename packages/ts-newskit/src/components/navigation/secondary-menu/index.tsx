@@ -9,7 +9,10 @@ interface SecondaryNavigationProps {
   slug: string;
 }
 
-export const SecondaryNavigation = ({ data, slug }: SecondaryNavigationProps) => {
+export const SecondaryNavigation = ({
+  data,
+  slug
+}: SecondaryNavigationProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [isSelected, setIsSelected] = useState<string>('');
   const firstItem = data[0].title;
