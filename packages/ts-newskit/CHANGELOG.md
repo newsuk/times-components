@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.13.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.12.1...@times-components/ts-newskit@1.13.0) (2023-03-27)
+
+
+### Features
+
+* **TDP-3414:** Create Article List Component ([#3294](https://github.com/newsuk/times-components/issues/3294)) ([8d089ed](https://github.com/newsuk/times-components/commit/8d089ed3d85896b0f8445840e97958dbe231be7d))
+
+
+
+
+
 ## [1.12.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.12.0...@times-components/ts-newskit@1.12.1) (2023-03-23)
 
 
