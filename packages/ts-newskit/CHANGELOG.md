@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.14.0...@times-components/ts-newskit@1.14.1) (2023-03-27)
+
+
+### Bug Fixes
+
+* **TDP-000:** pass slug to secondary nav for selection ([#3301](https://github.com/newsuk/times-components/issues/3301)) ([97a0e79](https://github.com/newsuk/times-components/commit/97a0e79ab7a7e9167a7bb24504aa1529301d46ec))
+
+
+
+
+
 # [1.14.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.13.1...@times-components/ts-newskit@1.14.0) (2023-03-27)
 
 
