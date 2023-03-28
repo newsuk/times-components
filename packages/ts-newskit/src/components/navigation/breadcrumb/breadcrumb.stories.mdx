@@ -2,6 +2,7 @@ import { Meta, Story, Props } from '@storybook/addon-docs'
 import { TCThemeProvider } from '../../utils/index.tsx';
 import { Breadcrumb } from './index.tsx';
 import { breadcrumbItems } from './fixtures/breadcrumbs.json';
+import { Breadcrumbs, BreadcrumbItem } from 'newskit';
 
 <Meta
   title="Newskit Components/Navigation/Breadcrumb"
@@ -26,7 +27,32 @@ Please click the 'Canvas' tab for a better viewing experience, where you can upd
 
 export const BreadcrumbStory = ({ data }) => (
   <TCThemeProvider>
-    <Breadcrumb {...{ data }} />
+   <Breadcrumbs
+      size="small"
+      overrides={{
+        separator: {
+          stylePreset: 'breadcrumbSeparator'
+        }
+      }}
+    >
+      {data.map((breadcrumbItem, breadcrumbIndex, breadcrumbArr) => (
+        <BreadcrumbItem
+          key={breadcrumbItem.title}
+          href={
+            breadcrumbIndex + 1 === breadcrumbArr.length
+              ? undefined
+              : breadcrumbItem.url
+          }
+          selected={breadcrumbIndex + 1 === breadcrumbArr.length}
+          overrides={{
+            stylePreset: 'breadcrumbStyle',
+            typographyPreset: 'breadcrumbText'
+          }}
+        >
+          {breadcrumbItem.title}
+        </BreadcrumbItem>
+      ))}
+    </Breadcrumbs>
   </TCThemeProvider>
 );
 

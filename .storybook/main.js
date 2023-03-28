@@ -12,7 +12,8 @@ module.exports = {
     "@storybook/addon-knobs",
     "@storybook/addon-options",
     "@storybook/addon-viewport",
-    "storybook-addon-paddings"
+    "storybook-addon-paddings",
+    "@storybook/addon-storysource",
   ],
   framework: '@storybook/react',
 };
