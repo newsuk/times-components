@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.12.2](https://github.com/newsuk/times-components/compare/@times-components/link@3.12.1...@times-components/link@3.12.2) (2023-04-03)
+
+
+### Bug Fixes
+
+* **TDP-3396:** Return the first tile in the article ([#3303](https://github.com/newsuk/times-components/issues/3303)) ([811ee57](https://github.com/newsuk/times-components/commit/811ee5779bf3abd620df729a8eb3b86fac5e9acb))
+
+
+
+
+
 ## [3.12.1](https://github.com/newsuk/times-components/compare/@times-components/link@3.12.0...@times-components/link@3.12.1) (2023-03-27)
 
 **Note:** Version bump only for package @times-components/link

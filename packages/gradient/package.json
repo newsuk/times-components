@@ -1,6 +1,6 @@
 {
   "name": "@times-components/gradient",
-  "version": "3.5.2",
+  "version": "3.5.3",
   "description": "Renders a gradient background",
   "main": "dist/gradient",
   "dev": "src/gradient",
@@ -51,8 +51,8 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/ts-styleguide": "1.42.0",
-    "@times-components/utils": "6.16.2",
+    "@times-components/ts-styleguide": "1.42.1",
+    "@times-components/utils": "6.16.3",
     "prop-types": "15.7.2"
   },
   "resolutions": {
