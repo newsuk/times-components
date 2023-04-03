@@ -1,4 +1,4 @@
-import { Cell, Grid, Stack } from 'newskit'
+import { Cell, Divider, Grid, GridLayout, Stack } from 'newskit'
 import React from 'react'
 import { JournalistQuote } from '../../components/slices/journalist-quote'
 import { LeadStory } from '../../components/slices/lead-story'
@@ -46,9 +46,22 @@ export const ContentBucket1 = ({ section, leadStory, journalists }: ContentBucke
       <Cell xs="full-width" lg={8}>
         <LeadStory {...leadStory} />
       </Cell>
+      <Cell xs="full-width" lg={4} xsOrder={1} mdOrder={0}>
+        <LeadStory {...leadStory} />
+      </Cell>
       <Cell xs="full-width" lg={8}>
-        <Stack flow={{xs:"vertical-center", md:"horizontal-center"}} stackDistribution="center">
-          {journalists.map(journalist => <JournalistQuote key={journalist.journalist.name} {...journalist} />)}
+        <Divider overrides={{ marginBlock:"space040", stylePreset: "dashedDivider" }} />
+        <Stack flow={{xs:"vertical-left", md:"horizontal-center"}} stackDistribution="space-evenly">
+          {journalists.map((journalist, journalistIndex, journalistArr) => {
+            const hasBorder = journalistIndex < journalistArr.length - 1 && <Divider overrides={{ marginInline:{md:"space040"}, marginBlock:"space040", stylePreset: "lightDivider" }} vertical={{xs: false, md: true}} />;
+
+            return (
+              <React.Fragment key={journalist.journalist.name}>
+                <JournalistQuote {...journalist} />
+                {hasBorder}
+              </React.Fragment>
+            )
+          })}
         </Stack>
       </Cell>
     </Grid>
