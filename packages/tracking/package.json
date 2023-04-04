@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "2.19.2",
+  "version": "2.19.3",
   "main": "dist/tracking",
   "dev": "src/tracking",
   "scripts": {
@@ -34,8 +34,8 @@
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.1",
-    "@times-components/jest-serializer": "3.8.1",
-    "@times-components/storybook": "4.9.1",
+    "@times-components/jest-serializer": "3.8.2",
+    "@times-components/storybook": "4.9.2",
     "@times-components/tealium-utils": "0.9.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
@@ -48,7 +48,7 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/utils": "6.16.3",
+    "@times-components/utils": "6.16.4",
     "hoist-non-react-statics": "3.3.2",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2",

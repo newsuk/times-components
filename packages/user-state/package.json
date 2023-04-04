@@ -1,6 +1,6 @@
 {
   "name": "@times-components/user-state",
-  "version": "0.4.25",
+  "version": "0.4.26",
   "description": "Selectively render react components based on current user state",
   "main": "dist/user-state",
   "dev": "src/user-state",
@@ -32,15 +32,15 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
     "@storybook/addon-knobs": "6.4.0",
-    "@times-components/context": "1.10.22",
-    "@times-components/utils": "6.16.3",
+    "@times-components/context": "1.10.23",
+    "@times-components/utils": "6.16.4",
     "prop-types": "15.7.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.18",
     "@times-components/jest-configurator-web": "0.8.1",
-    "@times-components/jest-serializer": "3.8.1",
+    "@times-components/jest-serializer": "3.8.2",
     "@times-components/webpack-configurator": "2.1.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
