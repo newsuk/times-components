@@ -49,8 +49,8 @@
   "dependencies": {
     "@times-components/jest-serializer": "3.8.1",
     "@times-components/test-utils": "2.4.1",
-    "@times-components/utils": "6.16.2",
-    "@times-components/video": "4.15.2",
+    "@times-components/utils": "6.16.3",
+    "@times-components/video": "4.15.3",
     "prop-types": "15.7.2"
   },
   "resolutions": {

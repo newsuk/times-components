@@ -48,7 +48,7 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/utils": "6.16.2",
+    "@times-components/utils": "6.16.3",
     "hoist-non-react-statics": "3.3.2",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2",
