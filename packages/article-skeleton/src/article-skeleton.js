@@ -192,6 +192,13 @@ const ArticleSkeleton = ({
                     }
                   />
                 )}
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={`<!-- ZEPHR_FEATURE registration -->
+                            <div></div>
+                           <!-- ZEPHR_FEATURE_END registration -->`}
+                  />
+                )}
                 {newContent && (
                   <ArticleBody
                     analyticsStream={analyticsStream}
