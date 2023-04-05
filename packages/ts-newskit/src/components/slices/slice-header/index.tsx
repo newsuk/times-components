@@ -10,10 +10,6 @@ interface HeaderProps {
 export const SliceHeader = ({ title, color }: HeaderProps) => {
   return (
     <StyledStack
-      marginInline={{
-        xs: 'space045',
-        md: 'space000'
-      }}
       flow="horizontal-center"
       stackDistribution="space-between"
     >

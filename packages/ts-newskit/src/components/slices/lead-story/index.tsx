@@ -34,6 +34,7 @@ export const LeadStory = ({
   url
 }: LeadStoryPropsDataProps) => {
   return (
+    // <Stack flow={{ sm: 'vertical-center', md: 'horizontal-stretch' }}>
     <Stack flow={{ sm: 'vertical-center', md: 'horizontal-stretch' }}>
       <StyledTextStack marginInlineEnd={{ md: 'space040' }}>
         <StyledSubHeadline
