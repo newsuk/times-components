@@ -11,5 +11,5 @@ export const StyledTextStack = styled(Stack)`
 `;
 
 export const StyledSubHeadline = styled(TextBlock)<{ $color: string }>`
-  color: ${({ color }) => color};
+  color: ${({ $color }) => $color};
 `;

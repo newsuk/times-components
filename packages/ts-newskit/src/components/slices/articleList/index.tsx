@@ -72,7 +72,7 @@ export const ArticleListItem = ({
             >
               {articleType}
             </ArticleListType>
-            {articleType && timeToRead ? (
+            {articleType && timeToRead && (
               <ContainerInline>
                 <Divider
                   vertical
@@ -81,7 +81,7 @@ export const ArticleListItem = ({
                   }}
                 />
               </ContainerInline>
-            ) : null}
+            )}
             <TextBlock
               typographyPreset="articleListTimeToRead"
               stylePreset="articleListTimeToRead"

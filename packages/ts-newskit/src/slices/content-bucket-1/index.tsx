@@ -47,7 +47,7 @@ export const ContentBucket1 = ({ section, leadStory, journalists, articles }: Co
       <Cell xs={12}>
         <SliceHeader {...section} />
       </Cell>
-      <LeadStoryCell xs={12} lg={8}>
+      <LeadStoryCell xs={12} lg={10} xl={8}>
         <Block>
           <Visible lg xl>
             <LeadStoryDivider overrides={{ stylePreset: "lightDivider" }} vertical />
@@ -72,7 +72,7 @@ export const ContentBucket1 = ({ section, leadStory, journalists, articles }: Co
           </Hidden>
         </Block>
       </LeadStoryCell>
-      <CellNoMargin xs={12} lg={4}>
+      <CellNoMargin xs={12} lg={2} xl={4}>
         <Hidden lg xl>
           <Divider overrides={{ marginBlock:"space040", stylePreset: "dashedDivider" }} />
         </Hidden>
