@@ -6,7 +6,7 @@ import {
   JournalistImageContainer,
   JournalistName,
   QuoteText,
-  JournalistContainer,
+  JournalistContainer
 } from './styles';
 
 type Journalist = {
@@ -27,7 +27,7 @@ export const JournalistQuote = ({
   heading,
   quote,
   sectionColour,
-  textColour,
+  textColour
 }: JournalistQuoteProps) => {
   return (
     <>
@@ -46,7 +46,7 @@ export const JournalistQuote = ({
             as="h4"
             typographyPreset={{
               xs: 'editorialSubheadline030',
-              sm: 'editorialHeadline030',
+              sm: 'editorialHeadline030'
             }}
             marginBlockEnd="space030"
           >
@@ -64,7 +64,7 @@ export const JournalistQuote = ({
             $color={textColour}
             typographyPreset={{
               xs: 'editorialItalic060',
-              sm: 'editorialItalic050',
+              sm: 'editorialItalic050'
             }}
           >
             {quote}

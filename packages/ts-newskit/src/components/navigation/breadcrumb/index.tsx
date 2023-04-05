@@ -16,8 +16,8 @@ export const Breadcrumb = ({ data }: BreadcrumbProps) => {
       size="small"
       overrides={{
         separator: {
-          stylePreset: 'breadcrumbSeparator',
-        },
+          stylePreset: 'breadcrumbSeparator'
+        }
       }}
     >
       {data.map((breadcrumbItem, breadcrumbIndex, breadcrumbArr) => (
@@ -31,7 +31,7 @@ export const Breadcrumb = ({ data }: BreadcrumbProps) => {
           selected={breadcrumbIndex + 1 === breadcrumbArr.length}
           overrides={{
             stylePreset: 'breadcrumbStyle',
-            typographyPreset: 'breadcrumbText',
+            typographyPreset: 'breadcrumbText'
           }}
         >
           {breadcrumbItem.title}

@@ -15,40 +15,39 @@ const RoundedCloseIcon = styled(RoundedPlusIcon)`
 
 export const NewsKitSearchIcon = customToNewsKitIcon(
   'NewskitSearchIcon',
-  (props) => <SearchIcon {...props} />
+  props => <SearchIcon {...props} />
 );
 
-export const NewsKitBurgerIcon = customToNewsKitIcon(
-  'NewsKitBurger',
-  (props) => <BurgerIcon {...props} />
-);
+export const NewsKitBurgerIcon = customToNewsKitIcon('NewsKitBurger', props => (
+  <BurgerIcon {...props} />
+));
 
 export const NewsKitRoundedCloseIcon = customToNewsKitIcon(
   'NewsKitRoundedCloseIcon',
-  (props) => <RoundedCloseIcon {...props} />
+  props => <RoundedCloseIcon {...props} />
 );
 
 export const NewsKitCloseIcon = customToNewsKitIcon(
   'NewsKitCloseIcon',
-  (props) => <CloseIcon {...props} />
+  props => <CloseIcon {...props} />
 );
 
 export const NewsKitChevronIcon = customToNewsKitIcon(
   'NewsKitChevronIcon',
-  (props) => <ChevronIcon {...props} />
+  props => <ChevronIcon {...props} />
 );
 
 export const NewsKitTimesMasthead = customToNewsKitIcon(
   'NewskitTimesMasthead',
-  (props) => <TimesMasthead {...props} />
+  props => <TimesMasthead {...props} />
 );
 
 export const NewsKitSundayTimesMasthead = customToNewsKitIcon(
   'NewskitSundayTimesMasthead',
-  (props) => <SundayTimesMasthead {...props} />
+  props => <SundayTimesMasthead {...props} />
 );
 
 export const NewsKitChevronRightIcon = customToNewsKitIcon(
   'NewsKitChevronRightIcon',
-  (props) => <ChevronRigthIcon {...props} />
+  props => <ChevronRigthIcon {...props} />
 );

@@ -41,7 +41,7 @@ export const GlobalNav = ({ isLoggedIn, isSunday, data }: GlobalNavProps) => {
 export const GlobalNavWithCustomDrawer = ({
   isLoggedIn,
   isSunday,
-  data,
+  data
 }: GlobalNavProps) => {
   const [hamburgerActive, setHamburgerActive] = useState<boolean>(false);
   return (

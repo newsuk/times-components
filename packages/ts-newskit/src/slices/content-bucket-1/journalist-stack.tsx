@@ -2,7 +2,7 @@ import { Divider, Stack } from 'newskit';
 import React from 'react';
 import {
   JournalistQuote,
-  JournalistQuoteProps,
+  JournalistQuoteProps
 } from '../../components/slices/journalist-quote';
 import { JournalistDivider } from './styles';
 
@@ -25,7 +25,7 @@ export const JournalistStack = ({ journalists }: JournalistStackProps) => {
               overrides={{
                 marginInline: { md: 'space040' },
                 marginBlock: { xs: 'space040', md: 'space000' },
-                stylePreset: 'lightDivider',
+                stylePreset: 'lightDivider'
               }}
               vertical={{ xs: false, md: true }}
             />

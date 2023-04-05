@@ -3,7 +3,7 @@ import {
   Divider,
   getMediaQueryFromTheme,
   getSpacingCssFromTheme,
-  styled,
+  styled
 } from 'newskit';
 
 export const CellNoMargin = styled(Cell)`

@@ -7,7 +7,7 @@ import data from '../../fixtures/data.json';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl'),
+  useBreakpointKey: jest.fn().mockReturnValue('xl')
 }));
 
 afterAll(() => {
@@ -36,21 +36,22 @@ describe('Content Bucket 1 Articles list ', () => {
 
   test('articleBorder render after odd numbered items', () => {
     (useBreakpointKey as any).mockReturnValue('xl');
-    expect(articleItem1?.nextSibling).toHaveAttribute('data-testid', 'divider');
-    expect(articleItem2?.nextSibling).not.toHaveAttribute(
+
+    expect(articleItem1!.nextSibling).toHaveAttribute('data-testid', 'divider');
+    expect(articleItem2!.nextSibling).not.toHaveAttribute(
       'data-testid',
       'divider'
     );
-    expect(articleItem3?.nextSibling).toHaveAttribute('data-testid', 'divider');
+    expect(articleItem3!.nextSibling).toHaveAttribute('data-testid', 'divider');
   });
 
   test("articleTopBorder renders correctly at 'xl' breakpoint", () => {
     (useBreakpointKey as any).mockReturnValue('xl');
-    expect(articleItem1?.firstChild).not.toHaveAttribute(
+    expect(articleItem1!.firstChild).not.toHaveAttribute(
       'data-testid',
       'divider'
     );
-    expect(articleItem3?.firstChild).toHaveAttribute('data-testid', 'divider');
+    expect(articleItem3!.firstChild).toHaveAttribute('data-testid', 'divider');
   });
 
   test("articleTopBorder renders correctly at 'lg' breakpoint", () => {
@@ -63,11 +64,11 @@ describe('Content Bucket 1 Articles list ', () => {
       .getByText(data.articles[1].title)
       .closest('div');
 
-    expect(articleItem1LG?.firstChild).not.toHaveAttribute(
+    expect(articleItem1LG!.firstChild).not.toHaveAttribute(
       'data-testid',
       'divider'
     );
-    expect(articleItem2LG?.firstChild).toHaveAttribute(
+    expect(articleItem2LG!.firstChild).toHaveAttribute(
       'data-testid',
       'divider'
     );

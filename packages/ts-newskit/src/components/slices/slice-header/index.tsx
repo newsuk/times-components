@@ -13,7 +13,7 @@ export const SliceHeader = ({ title, color }: SliceHeaderProps) => {
       <StyledTextBlock
         typographyPreset={{
           xs: 'newPreset070',
-          lg: 'newPreset060',
+          lg: 'newPreset060'
         }}
         $color={color}
       >
@@ -25,8 +25,8 @@ export const SliceHeader = ({ title, color }: SliceHeaderProps) => {
             size: {
               xs: '40px',
               md: '32px',
-              lg: '48px',
-            },
+              lg: '48px'
+            }
           }}
           color={color}
           data-testid="icon"

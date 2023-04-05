@@ -40,7 +40,7 @@ describe('TopNav button functions', () => {
     renderComponent();
     const searchBtn = screen.getByRole('button', {
       name: 'Open Search',
-      hidden: true,
+      hidden: true
     });
 
     fireEvent.click(searchBtn);

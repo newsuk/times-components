@@ -9,7 +9,7 @@ const options = {
   handleSelect: jest.fn(),
   setIsExpanded: jest.fn(),
   isExpanded: false,
-  isSelected: 'Puzzles',
+  isSelected: 'Puzzles'
 };
 
 describe('Create More Menu', () => {

@@ -4,12 +4,12 @@ import {
   Headline,
   Visible,
   Block,
-  LinkInline,
+  LinkInline
 } from 'newskit';
 import { Masthead, MastheadDate } from './styles';
 import {
   NewsKitTimesMasthead,
-  NewsKitSundayTimesMasthead,
+  NewsKitSundayTimesMasthead
 } from '../../../assets';
 
 interface EditionMastheadProps {
@@ -21,7 +21,7 @@ const dateNow = new Date().toISOString();
 
 export const EditionMasthead = ({
   isSunday = false,
-  todaysDate = dateNow,
+  todaysDate = dateNow
 }: EditionMastheadProps) => {
   return (
     <Block as="header">
@@ -36,7 +36,7 @@ export const EditionMasthead = ({
             date={todaysDate}
             dateFormat="EEEE MMMM d yyyy"
             overrides={{
-              typographyPreset: 'mastheadTime',
+              typographyPreset: 'mastheadTime'
             }}
             data-testid="date-time"
           />

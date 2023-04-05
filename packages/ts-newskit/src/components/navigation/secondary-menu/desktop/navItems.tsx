@@ -17,7 +17,7 @@ export const NavItems: React.FC<{
             paddingInlineStart: '6px',
             paddingInlineEnd: '6px',
             stylePreset: 'menuItemDesktop',
-            typographyPreset: 'newPreset040',
+            typographyPreset: 'newPreset040'
           }}
           href={url}
           key={url}

@@ -12,12 +12,12 @@ const NavSearch = ({ isHamburger }: NavSearchProps) => {
   const presets = isHamburger
     ? {
         minHeight: '40px',
-        stylePreset: 'hamburgerSearch',
+        stylePreset: 'hamburgerSearch'
       }
     : {
         width: '200px',
         minHeight: '100%',
-        stylePreset: 'topNavSearch',
+        stylePreset: 'topNavSearch'
       };
 
   return (
@@ -26,11 +26,11 @@ const NavSearch = ({ isHamburger }: NavSearchProps) => {
         id={isHamburger ? undefined : 'searchTimes'}
         aria-describedby="searchTimesLabel"
         value={searchText}
-        onChange={(event) => setSearchText(event.target.value)}
+        onChange={event => setSearchText(event.target.value)}
         placeholder="Search times.co.uk"
         overrides={{
           ...presets,
-          typographyPreset: 'topNav010',
+          typographyPreset: 'topNav010'
         }}
         startEnhancer={
           isHamburger && (
@@ -48,7 +48,7 @@ const NavSearch = ({ isHamburger }: NavSearchProps) => {
                 minHeight: 'sizing040',
                 minWidth: 'sizing040',
                 stylePreset: 'searchClear',
-                marginInline: 'space000',
+                marginInline: 'space000'
               }}
               aria-label="Clear search"
             >

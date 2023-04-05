@@ -8,14 +8,14 @@ import { useBreakpointKey } from 'newskit';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl'),
+  useBreakpointKey: jest.fn().mockReturnValue('xl')
 }));
 
 const options = {
   handleSelect: jest.fn(),
   setIsExpanded: jest.fn(),
   isExpanded: false,
-  isSelected: 'Home',
+  isSelected: 'Home'
 };
 describe('Secondary Menu Desktop', () => {
   afterEach(() => {

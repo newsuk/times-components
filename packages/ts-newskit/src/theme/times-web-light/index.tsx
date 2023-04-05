@@ -18,7 +18,7 @@ export const TimesWebLightTheme = createTheme({
       sm: 520,
       md: 768,
       lg: 1024,
-      xl: 1320,
+      xl: 1320
     },
     borders,
     colors,
@@ -26,6 +26,6 @@ export const TimesWebLightTheme = createTheme({
     shadows,
     fonts,
     typographyPresets,
-    stylePresets,
-  },
+    stylePresets
+  }
 });

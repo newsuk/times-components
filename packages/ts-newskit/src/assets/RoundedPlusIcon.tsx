@@ -11,7 +11,7 @@ const RoundedPlusIcon = (props: any) => (
     <mask
       id="roundedCloseIconMask"
       style={{
-        maskType: 'alpha',
+        maskType: 'alpha'
       }}
       maskUnits="userSpaceOnUse"
       x={0}

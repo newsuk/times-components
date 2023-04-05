@@ -4,7 +4,7 @@ import {
   styled,
   TextBlock,
   getMediaQueryFromTheme,
-  Stack,
+  Stack
 } from 'newskit';
 
 export const JournalistContainer = styled(Stack)`

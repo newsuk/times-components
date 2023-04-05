@@ -9,7 +9,7 @@ const options = {
   handleSelect: jest.fn(),
   setIsExpanded: jest.fn(),
   isExpanded: false,
-  isSelected: 'Home',
+  isSelected: 'Home'
 };
 
 describe('Create Menu', () => {
@@ -33,7 +33,7 @@ describe('Create Menu', () => {
           .fn()
           .mockReturnValueOnce([initialStateForFirstUseStateCall, () => null])
           .mockReturnValueOnce([initialStateForSecondUseStateCall, () => null])
-          .mockImplementation((x) => [x, () => null]))
+          .mockImplementation(x => [x, () => null]))
     );
     const { asFragment } = await waitFor(() =>
       render(<CreateMenu data={mainMenuItems} options={options} />)
@@ -50,7 +50,7 @@ describe('Create Menu', () => {
           .fn()
           .mockReturnValueOnce([initialStateForFirstUseStateCall, () => null])
           .mockReturnValueOnce([initialStateForSecondUseStateCall, () => null])
-          .mockImplementation((x) => [x, () => null]))
+          .mockImplementation(x => [x, () => null]))
     );
     await waitFor(() =>
       render(<CreateMenu data={mainMenuItems} options={options} />)
@@ -66,7 +66,7 @@ describe('Create Menu', () => {
           .fn()
           .mockReturnValueOnce([initialStateForFirstUseStateCall, () => null])
           .mockReturnValueOnce([initialStateForSecondUseStateCall, () => null])
-          .mockImplementation((x) => [x, () => null]))
+          .mockImplementation(x => [x, () => null]))
     );
     const { findByTestId } = await waitFor(() =>
       render(<CreateMenu data={mainMenuItems} options={options} />)
@@ -87,7 +87,7 @@ describe('Create Menu', () => {
           .fn()
           .mockReturnValueOnce([initialStateForFirstUseStateCall, () => null])
           .mockReturnValueOnce([initialStateForSecondUseStateCall, () => null])
-          .mockImplementation((x) => [x, () => null]))
+          .mockImplementation(x => [x, () => null]))
     );
     const { findByTestId } = await waitFor(() =>
       render(

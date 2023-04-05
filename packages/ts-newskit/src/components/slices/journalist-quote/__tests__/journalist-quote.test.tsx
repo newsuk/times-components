@@ -9,12 +9,12 @@ const renderComponent = (props: JournalistQuoteProps) =>
 const defaultProps = {
   journalist: {
     name: 'Journalist name',
-    image: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg',
+    image: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
   },
   heading: 'Heading text',
   quote: 'Quote text',
   sectionColour: '#008347',
-  textColour: '#222222',
+  textColour: '#222222'
 };
 
 it('should render component to match snapshot', () => {
@@ -37,11 +37,11 @@ it('should render the correct text, without Heading', () => {
   renderComponent({
     journalist: {
       name: 'Journalist name',
-      image: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg',
+      image: 'https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg'
     },
     quote: 'Quote text',
     sectionColour: '#008347',
-    textColour: '#222222',
+    textColour: '#222222'
   });
 
   const heading = screen.queryByText('Heading text');

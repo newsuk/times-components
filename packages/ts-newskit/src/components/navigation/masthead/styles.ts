@@ -3,7 +3,7 @@ import {
   Block,
   DateTime,
   getColorCssFromTheme,
-  getSpacingCssFromTheme,
+  getSpacingCssFromTheme
 } from 'newskit';
 
 export const Masthead = styled(Block)`

@@ -5,7 +5,7 @@ import { HamburgerMenu } from '../hamburger-menu/HamburgerMenu';
 import { NavigationData } from '../types';
 
 export const WrappedGlobalNav: React.FC<{ data: NavigationData }> = ({
-  data,
+  data
 }) => (
   <TCThemeProvider>
     <GlobalNav data={data} />

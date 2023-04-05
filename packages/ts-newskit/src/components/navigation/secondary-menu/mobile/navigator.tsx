@@ -38,10 +38,10 @@ export const Navigator: React.FC<{
           indicatorIcon: {
             props: {
               overrides: {
-                stylePreset: 'icon',
-              },
-            },
-          },
+                stylePreset: 'icon'
+              }
+            }
+          }
         }}
       >
         {null}

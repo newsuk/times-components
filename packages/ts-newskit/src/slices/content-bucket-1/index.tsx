@@ -7,18 +7,18 @@ import {
   Hidden,
   Scroll,
   useBreakpointKey,
-  Visible,
+  Visible
 } from 'newskit';
 import React from 'react';
 import { JournalistQuoteProps } from '../../components/slices/journalist-quote';
 import { LeadStory, LeadStoryProps } from '../../components/slices/lead-story';
 import {
   SliceHeader,
-  SliceHeaderProps,
+  SliceHeaderProps
 } from '../../components/slices/slice-header';
 import {
   ArticleListItem,
-  ArticleListItemProps,
+  ArticleListItemProps
 } from '../../components/slices/articleList';
 import { LeadStoryDivider, LeadStoryCell, CellNoMargin } from './styles';
 import { JournalistStack } from './journalist-stack';
@@ -34,7 +34,7 @@ export const ContentBucket1 = ({
   section,
   leadStory,
   journalists,
-  articles,
+  articles
 }: ContentBucket1Props) => {
   const breakpointKey = useBreakpointKey();
   return (
@@ -63,7 +63,7 @@ export const ContentBucket1 = ({
           <Divider
             overrides={{
               marginBlock: 'space040',
-              stylePreset: 'dashedDivider',
+              stylePreset: 'dashedDivider'
             }}
           />
         </Hidden>
@@ -73,7 +73,7 @@ export const ContentBucket1 = ({
               xs: '170px 1px 170px 1px 170px 1px 170px',
               md: '1fr 1px 1fr 1px 1fr 1px 1fr',
               lg: '1fr',
-              xl: '1fr 1px 1fr',
+              xl: '1fr 1px 1fr'
             }}
             columnGap="space040"
           >

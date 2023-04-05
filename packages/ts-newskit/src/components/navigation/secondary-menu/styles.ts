@@ -5,7 +5,7 @@ import {
   Divider,
   Block,
   MenuSub,
-  MenuItem,
+  MenuItem
 } from 'newskit';
 import { MainMenuProp, BreakPointProp } from './types';
 

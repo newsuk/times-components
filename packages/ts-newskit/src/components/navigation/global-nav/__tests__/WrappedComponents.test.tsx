@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import { render } from '../../../utils/test-utils';
 import {
   WrappedGlobalNav,
-  WrappedHamburger,
+  WrappedHamburger
 } from '../wrapped-components/WrappedComponents';
 import data from '../fixtures/data.json';
 

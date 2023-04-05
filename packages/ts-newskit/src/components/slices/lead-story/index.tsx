@@ -5,7 +5,7 @@ import {
   Visible,
   Block,
   Headline,
-  LinkInline,
+  LinkInline
 } from 'newskit';
 import React from 'react';
 import { StyledTextBlock, StyledTextStack, StyledSubHeadline } from './styles';
@@ -31,7 +31,7 @@ export const LeadStory = ({
   subHeadline,
   caption,
   image,
-  url,
+  url
 }: LeadStoryProps) => {
   return (
     <Stack flow={{ sm: 'vertical-center', md: 'horizontal-stretch' }}>
@@ -41,7 +41,7 @@ export const LeadStory = ({
           paddingBlockStart={{
             xs: 'space040',
             md: 'space020',
-            lg: 'space040',
+            lg: 'space040'
           }}
           paddingBlockEnd="space020"
           typographyPreset="newPreset090"
@@ -52,12 +52,12 @@ export const LeadStory = ({
           headingAs="h1"
           overrides={{
             typographyPreset: 'newPreset080',
-            paddingBlockEnd: 'space020',
+            paddingBlockEnd: 'space020'
           }}
         >
           <LinkInline
             overrides={{
-              stylePreset: 'leadStoryHeader',
+              stylePreset: 'leadStoryHeader'
             }}
             external={false}
             href={url}
@@ -68,13 +68,13 @@ export const LeadStory = ({
         <TextBlock
           typographyPreset={{
             xs: 'editorialParagraph020',
-            md: 'editorialParagraph010',
+            md: 'editorialParagraph010'
           }}
         >
           <LinkInline
             overrides={{
               stylePreset: 'leadStoryDescription',
-              paddingBlockEnd: 'space020',
+              paddingBlockEnd: 'space020'
             }}
             external={false}
             href={url}
@@ -93,7 +93,7 @@ export const LeadStory = ({
       <Block
         paddingBlockStart={{
           xs: 'space040',
-          md: 'space000',
+          md: 'space000'
         }}
       >
         <LinkInline external={false} href={url}>
@@ -112,7 +112,7 @@ export const LeadStory = ({
             typographyPreset="newPreset100"
             marginInline={{
               xs: 'space045',
-              md: 'space000',
+              md: 'space000'
             }}
           >
             {caption}
