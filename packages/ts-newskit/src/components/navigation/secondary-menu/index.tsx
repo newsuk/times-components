@@ -11,7 +11,7 @@ interface SecondaryNavigationProps {
 
 export const SecondaryNavigation = ({
   data,
-  pageSlug
+  pageSlug,
 }: SecondaryNavigationProps) => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [isSelected, setIsSelected] = useState<string>('');
@@ -22,7 +22,7 @@ export const SecondaryNavigation = ({
   }, []);
 
   const handleSelect = (slug: string) => {
-    const filteredItem = data.find(item => item.slug === slug);
+    const filteredItem = data.find((item) => item.slug === slug);
     if (filteredItem) {
       setIsSelected(filteredItem.title);
     } else {
@@ -34,7 +34,7 @@ export const SecondaryNavigation = ({
     isSelected,
     handleSelect,
     isExpanded,
-    setIsExpanded
+    setIsExpanded,
   };
 
   return (

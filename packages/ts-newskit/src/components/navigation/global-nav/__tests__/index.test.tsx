@@ -5,7 +5,7 @@ import data from '../fixtures/data.json';
 import {
   GlobalNav,
   GlobalNavWithCustomDrawer,
-  TSNewskitDrawer
+  TSNewskitDrawer,
 } from '../index';
 
 const renderComponent = (isLoggedIn?: boolean) =>

@@ -3,14 +3,14 @@ export const sliceStylePresets = {
     base: {
       borderStyle: 'solid',
       borderWidth: '{{borders.borderWidth010}}',
-      borderColor: '{{colors.interface040}}'
-    }
+      borderColor: '{{colors.interface040}}',
+    },
   },
   dashedDivider: {
     base: {
       borderStyle: 'dashed',
       borderWidth: '{{borders.borderWidth010}}',
-      borderColor: '{{colors.interface060}}'
-    }
+      borderColor: '{{colors.interface060}}',
+    },
   },
 };

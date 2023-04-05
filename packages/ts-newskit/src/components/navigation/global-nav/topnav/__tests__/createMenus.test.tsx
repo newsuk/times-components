@@ -3,7 +3,7 @@ import {
   screen,
   render,
   within,
-  fireEvent
+  fireEvent,
 } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { useBreakpointKey } from 'newskit';
@@ -12,7 +12,7 @@ import data from '../../fixtures/data.json';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl')
+  useBreakpointKey: jest.fn().mockReturnValue('xl'),
 }));
 
 afterAll(() => {
@@ -83,7 +83,7 @@ describe('NavButtons Logged Out', () => {
 
     renderComponent();
     const accountButtons = screen.getByRole('region', {
-      name: 'My Account Navigation'
+      name: 'My Account Navigation',
     });
 
     expect(accountButtons).toBeInTheDocument();

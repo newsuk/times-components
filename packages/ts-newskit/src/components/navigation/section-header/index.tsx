@@ -11,7 +11,7 @@ export const SectionHeader = ({ title }: SectionTitleItems) => {
       headingAs="h1"
       overrides={{
         paddingBlockEnd: 'space030',
-        typographyPreset: 'sectionHeader010'
+        typographyPreset: 'sectionHeader010',
       }}
     >
       {title}

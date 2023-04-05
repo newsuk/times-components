@@ -4,7 +4,7 @@ import { render } from '../../components/utils/test-utils';
 import * as icons from '../index';
 
 describe('Icons', () => {
-  Object.keys(icons).forEach(componentName => {
+  Object.keys(icons).forEach((componentName) => {
     // @ts-ignore
     const Component = icons[componentName];
 

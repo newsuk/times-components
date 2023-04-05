@@ -2,23 +2,23 @@ export const breadcrumbStylePresets = {
   breadcrumbStyle: {
     base: {
       textDecoration: 'none',
-      color: '{{colors.inkSubtle}}'
+      color: '{{colors.inkSubtle}}',
     },
     hover: {
-      color: '{{colors.blue110}}'
+      color: '{{colors.blue110}}',
     },
     selected: {
       color: '{{colors.inkContrast}}',
-      backgroundColor: 'transparent'
+      backgroundColor: 'transparent',
     },
     'selected:hover': {
       color: '{{colors.inkContrast}}',
-      textDecoration: 'none'
-    }
+      textDecoration: 'none',
+    },
   },
   breadcrumbSeparator: {
     base: {
-      color: '{{colors.inkNonEssential}}'
-    }
-  }
+      color: '{{colors.inkNonEssential}}',
+    },
+  },
 };

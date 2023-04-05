@@ -6,7 +6,7 @@ import {
   NewsKitCloseIcon,
   NewsKitTimesMasthead,
   NewsKitSearchIcon,
-  NewsKitSundayTimesMasthead
+  NewsKitSundayTimesMasthead,
 } from '../../../../assets';
 import {
   MastheadMob,
@@ -15,7 +15,7 @@ import {
   ScrollMenuContainer,
   TopNavContainer,
   TopNavHide,
-  TopNavIcon
+  TopNavIcon,
 } from '../styles';
 import NavSearch from '../search';
 import { LoggedOutButtons } from './loggedOutButtons';
@@ -35,7 +35,7 @@ export const TopNav: React.FC<TopNavProps> = ({
   isHamburgerOpen,
   toggleHamburger,
   isLoggedIn = false,
-  isSunday = false
+  isSunday = false,
 }) => {
   const [searchActive, setSearchActive] = useState<boolean>(false);
 
@@ -43,7 +43,7 @@ export const TopNav: React.FC<TopNavProps> = ({
     height: 20,
     width: 200,
     overrides: { paddingInline: 'space040' },
-    'aria-label': 'The Times &amp; The Sunday Times'
+    'aria-label': 'The Times &amp; The Sunday Times',
   };
 
   const NavMasthead = (
@@ -71,7 +71,7 @@ export const TopNav: React.FC<TopNavProps> = ({
         >
           <TopNavIcon
             overrides={{
-              stylePreset: 'buttonTopNav'
+              stylePreset: 'buttonTopNav',
             }}
             aria-label={isHamburgerOpen ? 'Close Menu' : 'Open Menu'}
             onClick={() => toggleHamburger(!isHamburgerOpen)}
@@ -86,7 +86,7 @@ export const TopNav: React.FC<TopNavProps> = ({
               overrides={{
                 stylePreset: searchActive
                   ? 'buttonTopNavActive'
-                  : 'buttonTopNav'
+                  : 'buttonTopNav',
               }}
               aria-label={searchActive ? 'Close Search' : 'Open Search'}
               onClick={() => setSearchActive(!searchActive)}
@@ -123,7 +123,7 @@ export const TopNav: React.FC<TopNavProps> = ({
               overrides={{
                 paddingInlineStart: 'space030',
                 paddingInlineEnd: 'space030',
-                spaceInline: 'space050'
+                spaceInline: 'space050',
               }}
               aria-label="Main menu"
             >

@@ -9,7 +9,7 @@ import {
   Hidden,
   IconButton,
   Drawer,
-  Visible
+  Visible,
 } from 'newskit';
 
 export const TopNavContainer = styled(Stack)`

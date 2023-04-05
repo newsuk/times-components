@@ -11,7 +11,7 @@ import {
   subHeadline,
   caption,
   image,
-  url
+  url,
 } from '../../fixture/data.json';
 
 describe('Render Component one', () => {

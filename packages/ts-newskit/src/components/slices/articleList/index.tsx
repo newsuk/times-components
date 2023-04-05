@@ -7,7 +7,7 @@ import {
   Stack,
   Hidden,
   TextBlock,
-  Divider
+  Divider,
 } from 'newskit';
 import { ArticleListType, ContainerInline } from './styles';
 
@@ -30,16 +30,20 @@ export const ArticleListItem = ({
   url,
   articleType,
   timeToRead,
-  hasTopBorder
+  hasTopBorder,
 }: ArticleListItemProps) => {
   return (
     <Stack>
-      {hasTopBorder && <Divider overrides={{ marginBlock:"space040", stylePreset: "dashedDivider" }} />}
+      {hasTopBorder && (
+        <Divider
+          overrides={{ marginBlock: 'space040', stylePreset: 'dashedDivider' }}
+        />
+      )}
       <LinkStandalone
         href={url}
         data-testid="article-ListItem"
         overrides={{
-          stylePreset: 'articleListLink'
+          stylePreset: 'articleListLink',
         }}
       >
         <Block as="section">
@@ -51,7 +55,7 @@ export const ArticleListItem = ({
               loadingAspectRatio="3:2"
               width="100%"
               overrides={{
-                marginBlockEnd: 'space020'
+                marginBlockEnd: 'space020',
               }}
             />
           </Hidden>
@@ -59,7 +63,7 @@ export const ArticleListItem = ({
             headingAs="h3"
             overrides={{
               marginBlock: 'space020',
-              typographyPreset: 'articleListTitle'
+              typographyPreset: 'articleListTitle',
             }}
           >
             {title}
@@ -77,7 +81,7 @@ export const ArticleListItem = ({
                 <Divider
                   vertical
                   overrides={{
-                    marginInline: 'space020'
+                    marginInline: 'space020',
                   }}
                 />
               </ContainerInline>

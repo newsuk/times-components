@@ -26,7 +26,7 @@ describe('<TCThemeProvider>', () => {
     expect(title).toHaveStyle({
       font: 'inherit',
       display: 'inline',
-      margin: '0'
+      margin: '0',
     });
   });
 });

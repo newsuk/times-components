@@ -9,7 +9,7 @@ const options = {
   handleSelect: jest.fn(),
   setIsExpanded: jest.fn(),
   isExpanded: false,
-  isSelected: 'Home'
+  isSelected: 'Home',
 };
 
 describe('Secondary Menu Mobile', () => {

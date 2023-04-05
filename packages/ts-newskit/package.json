@@ -24,7 +24,7 @@
     "bundle": "NODE_ENV=production webpack -p",
     "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,tslint*,typescript,jest,prettier,webpack*,@types/*' --ignore-bin-package=false --skip-missing",
     "fix": "run-s fix:*",
-    "fix:prettier": "prettier \"src/**/*.{ts,tsx}\" \"__tests__/**/*.tsx\" --write",
+    "fix:prettier": "prettier \"src/**/*.{ts,tsx}\" \"**/__tests__/**/*.tsx\" --write",
     "fix:tslint": "tslint --fix --project .",
     "lint": "tslint --project . && prettier \"src/**/*.{ts,tsx}\" --list-different",
     "test:unit": "jest --coverage",
@@ -62,7 +62,7 @@
     "@times-components/ts-styleguide": "1.42.3",
     "jest": "24.8.0",
     "jest-environment-jsdom-sixteen": "2.0.0",
-    "prettier": "1.14.3",
+    "prettier": "2.0.5",
     "tslint": "5.18.0",
     "tslint-config-prettier": "1.18.0",
     "typescript": "4.2.4"

@@ -4,14 +4,14 @@ import {
   styled,
   TextBlock,
   getMediaQueryFromTheme,
-  Stack
+  Stack,
 } from 'newskit';
 
 export const JournalistContainer = styled(Stack)`
   width: 100%;
 
   ${getMediaQueryFromTheme('md')} {
-    width: 50%
+    width: 50%;
   }
 `;
 export const JournalistImageContainer = styled(Block)`

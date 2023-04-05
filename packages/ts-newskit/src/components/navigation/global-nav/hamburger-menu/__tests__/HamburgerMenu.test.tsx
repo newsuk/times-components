@@ -106,7 +106,7 @@ describe('Search field', () => {
     const searchField = screen.getByPlaceholderText('Search times.co.uk');
 
     fireEvent.change(searchField, {
-      target: { value: 'Test Value' }
+      target: { value: 'Test Value' },
     });
     expect(searchField.getAttribute('value')).toEqual('Test Value');
   });
@@ -117,7 +117,7 @@ describe('Search field', () => {
     const searchField = screen.getByPlaceholderText('Search times.co.uk');
 
     fireEvent.change(searchField, {
-      target: { value: 'Test Value' }
+      target: { value: 'Test Value' },
     });
 
     const clearSearchBtn = screen.getByRole('button', { name: 'Clear search' });

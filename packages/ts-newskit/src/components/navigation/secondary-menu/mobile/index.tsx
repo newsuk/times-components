@@ -16,7 +16,7 @@ export const SecondaryNavMobile: React.FC<{
       vertical
       aria-label="Secondary Navigation"
       overrides={{
-        spaceInline: 'space000'
+        spaceInline: 'space000',
       }}
     >
       <Navigator

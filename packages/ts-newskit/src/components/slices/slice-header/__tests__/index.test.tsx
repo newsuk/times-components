@@ -6,7 +6,7 @@ import { useBreakpointKey } from 'newskit';
 
 jest.mock('newskit', () => ({
   ...jest.requireActual('newskit'),
-  useBreakpointKey: jest.fn().mockReturnValue('xl')
+  useBreakpointKey: jest.fn().mockReturnValue('xl'),
 }));
 
 describe('Render Header', () => {
