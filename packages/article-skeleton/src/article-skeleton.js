@@ -187,9 +187,7 @@ const ArticleSkeleton = ({
               <BodyContainer>
                 {!!zephrDivs && (
                   <StaticContent
-                    html={
-                      '<div id="nu-zephr-article-target-body"></div>'
-                    }
+                    html={'<div id="nu-zephr-article-target-body"></div>'}
                   />
                 )}
                 {!!zephrDivs && (
