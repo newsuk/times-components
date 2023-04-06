@@ -38,7 +38,7 @@ export const ContentBucket1 = ({
 }: ContentBucket1Props) => {
   const breakpointKey = useBreakpointKey();
   return (
-    <Grid xsMargin="space040" mdMargin="space050">
+    <Grid xsMargin="space045" mdMargin="space050">
       <Cell xs={12}>
         <SliceHeader {...section} />
       </Cell>

@@ -5,7 +5,8 @@ import {
   Visible,
   Block,
   Headline,
-  LinkInline
+  LinkInline,
+  useTheme
 } from 'newskit';
 import React from 'react';
 import { StyledTextBlock, StyledTextStack, StyledSubHeadline } from './styles';
@@ -33,6 +34,7 @@ export const LeadStory = ({
   image,
   url
 }: LeadStoryProps) => {
+  const theme = useTheme();
   return (
     <Stack flow={{ sm: 'vertical-center', md: 'horizontal-stretch' }}>
       <StyledTextStack marginInlineEnd={{ md: 'space040' }}>
@@ -93,6 +95,10 @@ export const LeadStory = ({
       <Block
         paddingBlockStart={{
           xs: 'space040',
+          md: 'space000'
+        }}
+        marginInline={{
+          xs: `-${theme.spacePresets.space045}`,
           md: 'space000'
         }}
       >
