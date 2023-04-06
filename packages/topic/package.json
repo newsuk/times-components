@@ -1,7 +1,7 @@
 {
   "name": "@times-components/topic",
   "version": "5.10.4",
-  "description": "Topic page component",
+  "description": "Topic page component ",
   "main": "dist/topic",
   "dev": "src/topic",
   "scripts": {

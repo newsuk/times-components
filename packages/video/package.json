@@ -3,6 +3,7 @@
   "version": "4.15.4",
   "main": "dist/video",
   "dev": "src/video",
+  "description": "Video",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",

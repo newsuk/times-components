@@ -1,7 +1,7 @@
 {
   "name": "@times-components/article-byline",
   "version": "3.12.4",
-  "description": "Article byline information",
+  "description": "Article byline information ",
   "main": "dist/article-byline",
   "dev": "src/article-byline",
   "scripts": {

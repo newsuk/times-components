@@ -3,6 +3,7 @@
   "version": "2.19.3",
   "main": "dist/tracking",
   "dev": "src/tracking",
+  "description": "Tracking",
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
