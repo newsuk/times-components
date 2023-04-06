@@ -42,7 +42,7 @@ export const ContentBucket1 = ({
       <Cell xs={12}>
         <SliceHeader {...section} />
       </Cell>
-      <LeadStoryCell xs={12} lg={10} xl={8}>
+      <LeadStoryCell xs={12} lg={9} xl={8}>
         <Block>
           <Visible lg xl>
             <LeadStoryDivider
@@ -58,7 +58,7 @@ export const ContentBucket1 = ({
           </Hidden>
         </Block>
       </LeadStoryCell>
-      <CellNoMargin xs={12} lg={2} xl={4}>
+      <CellNoMargin xs={12} lg={3} xl={4}>
         <Hidden lg xl>
           <Divider
             overrides={{
@@ -104,7 +104,7 @@ export const ContentBucket1 = ({
         </Scroll>
       </CellNoMargin>
       <Visible md>
-        <CellNoMargin xs={12} lg={8}>
+        <CellNoMargin xs={12}>
           <JournalistStack journalists={journalists} />
         </CellNoMargin>
       </Visible>
