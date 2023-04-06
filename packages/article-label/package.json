@@ -1,7 +1,7 @@
 {
   "name": "@times-components/article-label",
   "version": "2.13.3",
-  "description": "The article label",
+  "description": "The article label ",
   "main": "dist/article-label",
   "dev": "src/article-label",
   "scripts": {

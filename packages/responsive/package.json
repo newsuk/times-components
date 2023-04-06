@@ -1,7 +1,7 @@
 {
   "name": "@times-components/responsive",
   "version": "0.14.23",
-  "description": "Responsive",
+  "description": "Responsive ",
   "main": "dist/responsive",
   "dev": "src/responsive",
   "scripts": {

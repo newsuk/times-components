@@ -1,7 +1,7 @@
 {
   "name": "@times-components/link",
   "version": "3.12.3",
-  "description": "component to handle links and navigation",
+  "description": "component to handle links and navigation ",
   "main": "dist/link",
   "dev": "src/link",
   "scripts": {

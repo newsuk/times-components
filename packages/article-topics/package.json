@@ -1,7 +1,7 @@
 {
   "name": "@times-components/article-topics",
   "version": "4.10.4",
-  "description": "Map of Topics related to the Article",
+  "description": "Map of Topics related to the Article ",
   "main": "dist/article-topics",
   "dev": "src/article-topics",
   "scripts": {

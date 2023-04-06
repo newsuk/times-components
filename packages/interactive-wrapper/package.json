@@ -1,7 +1,7 @@
 {
   "name": "@times-components/interactive-wrapper",
   "version": "0.9.28",
-  "description": "Wrapper for legacy Interactive components",
+  "description": "Wrapper for legacy Interactive components ",
   "main": "dist/interactive-wrapper",
   "dev": "src/interactive-wrapper",
   "scripts": {
