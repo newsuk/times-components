@@ -150,6 +150,11 @@ const ArticleSkeleton = ({
           data-article-sectionname={section}
           data-article-template={template}
         >
+          {!!zephrDivs && (
+            <StaticContent
+              html={'<div id="nu-zephr-article-target-top-head"></div>'}
+            />
+          )}
           <Head
             article={article}
             logoUrl={logoUrl}
@@ -157,13 +162,31 @@ const ArticleSkeleton = ({
             getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
             swgProductId={swgProductId}
           />
-
+          {!!zephrDivs && (
+            <StaticContent
+              html={'<div id="nu-zephr-article-target-below-head"></div>'}
+            />
+          )}
           <Fragment>
             <HeaderAdContainer key="headerAd">
               <AdContainer slotName="header" style={styles.adMarginStyle} />
             </HeaderAdContainer>
             <MainContainer>
+              {!!zephrDivs && (
+                <StaticContent
+                  html={
+                    '<div id="nu-zephr-article-target-top-maincontainer"></div>'
+                  }
+                />
+              )}
               <HeaderContainer>
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={
+                      '<div id="nu-zephr-article-target-top-headercontainer"></div>'
+                    }
+                  />
+                )}
                 <Header />
                 {isSharingSavingEnabled ? (
                   <UserState state={UserState.showSaveAndShareBar}>
@@ -183,18 +206,20 @@ const ArticleSkeleton = ({
                     </MessageContext.Consumer>
                   </UserState>
                 ) : null}
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={
+                      '<div id="nu-zephr-article-target-bottom-headercontainer"></div>'
+                    }
+                  />
+                )}
               </HeaderContainer>
               <BodyContainer>
                 {!!zephrDivs && (
                   <StaticContent
-                    html={'<div id="nu-zephr-article-target-body"></div>'}
-                  />
-                )}
-                {!!zephrDivs && (
-                  <StaticContent
-                    html={`<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->`}
+                    html={
+                      '<div id="nu-zephr-article-target-top-bodycontainer"></div>'
+                    }
                   />
                 )}
                 {newContent && (
@@ -213,7 +238,13 @@ const ArticleSkeleton = ({
                 <PaywallPortal
                   id="paywall-portal-article-footer"
                   componentName="subscribe-cta"
-                />
+                >
+                  {!!zephrDivs && (
+                    <StaticContent
+                      html={'<div id="nu-zephr-article-target-paywall"></div>'}
+                    />
+                  )}
+                </PaywallPortal>
                 <LazyLoad rootMargin={spacing(40)} threshold={0}>
                   {({ observed, registerNode }) => (
                     <ArticleExtras
@@ -238,7 +269,21 @@ const ArticleSkeleton = ({
                     />
                   )}
                 </LazyLoad>
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={
+                      '<div id="nu-zephr-article-target-bottom-bodycontainer"></div>'
+                    }
+                  />
+                )}
               </BodyContainer>
+              {!!zephrDivs && (
+                <StaticContent
+                  html={
+                    '<div id="nu-zephr-article-target-bottom-maincontainer"></div>'
+                  }
+                />
+              )}
             </MainContainer>
           </Fragment>
           <AdContainer slotName="pixel" />
