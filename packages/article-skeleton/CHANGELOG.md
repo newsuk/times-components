@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.97.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.97.6...@times-components/article-skeleton@1.97.7) (2023-04-11)
+
+
+### Reverts
+
+* Revert "chore: add some more zephr divs" ([6f2a98f](https://github.com/newsuk/times-components/commit/6f2a98f202f570dacf9a6d2d118870bd03c84b11))
+
+
+
+
+
 ## [1.97.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.97.5...@times-components/article-skeleton@1.97.6) (2023-04-06)
 
 **Note:** Version bump only for package @times-components/article-skeleton
