@@ -69,7 +69,6 @@ export const ArticleListItem = ({
             <Headline
               headingAs="h3"
               overrides={{
-                marginBlockEnd: 'space030',
                 typographyPreset: 'articleListTitle'
               }}
             >
@@ -79,6 +78,7 @@ export const ArticleListItem = ({
               typographyPreset="articleListArticleType"
               as="span"
               $color={color}
+              marginBlockStart='space030'
             >
               {articleType}
             </ArticleListType>
@@ -97,6 +97,7 @@ export const ArticleListItem = ({
               typographyPreset="articleListTimeToRead"
               stylePreset="articleListTimeToRead"
               as="span"
+              marginBlockStart='space030'
             >
               {timeToRead}
             </TextBlock>
