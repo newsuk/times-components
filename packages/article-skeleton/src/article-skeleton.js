@@ -174,13 +174,17 @@ const ArticleSkeleton = ({
             <MainContainer>
               {!!zephrDivs && (
                 <StaticContent
-                  html={'<div id="nu-zephr-article-target-top-maincontainer"></div>'}
+                  html={
+                    '<div id="nu-zephr-article-target-top-maincontainer"></div>'
+                  }
                 />
               )}
               <HeaderContainer>
                 {!!zephrDivs && (
                   <StaticContent
-                    html={'<div id="nu-zephr-article-target-top-headercontainer"></div>'}
+                    html={
+                      '<div id="nu-zephr-article-target-top-headercontainer"></div>'
+                    }
                   />
                 )}
                 <Header />
@@ -193,8 +197,8 @@ const ArticleSkeleton = ({
                           articleHeadline={headline}
                           articleUrl={url}
                           onCopyLink={() => showMessage("Article link copied")}
-                          onSaveToMyArticles={() => { }}
-                          onShareOnEmail={() => { }}
+                          onSaveToMyArticles={() => {}}
+                          onShareOnEmail={() => {}}
                           savingEnabled={savingEnabled}
                           sharingEnabled={sharingEnabled}
                         />
@@ -204,14 +208,18 @@ const ArticleSkeleton = ({
                 ) : null}
                 {!!zephrDivs && (
                   <StaticContent
-                    html={'<div id="nu-zephr-article-target-bottom-headercontainer"></div>'}
+                    html={
+                      '<div id="nu-zephr-article-target-bottom-headercontainer"></div>'
+                    }
                   />
                 )}
               </HeaderContainer>
               <BodyContainer>
                 {!!zephrDivs && (
                   <StaticContent
-                    html={'<div id="nu-zephr-article-target-top-bodycontainer"></div>'}
+                    html={
+                      '<div id="nu-zephr-article-target-top-bodycontainer"></div>'
+                    }
                   />
                 )}
                 {newContent && (
@@ -263,13 +271,17 @@ const ArticleSkeleton = ({
                 </LazyLoad>
                 {!!zephrDivs && (
                   <StaticContent
-                    html={'<div id="nu-zephr-article-target-bottom-bodycontainer"></div>'}
+                    html={
+                      '<div id="nu-zephr-article-target-bottom-bodycontainer"></div>'
+                    }
                   />
                 )}
               </BodyContainer>
               {!!zephrDivs && (
                 <StaticContent
-                  html={'<div id="nu-zephr-article-target-bottom-maincontainer"></div>'}
+                  html={
+                    '<div id="nu-zephr-article-target-bottom-maincontainer"></div>'
+                  }
                 />
               )}
             </MainContainer>
