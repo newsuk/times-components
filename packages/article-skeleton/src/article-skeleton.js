@@ -183,6 +183,11 @@ const ArticleSkeleton = ({
                     </MessageContext.Consumer>
                   </UserState>
                 ) : null}
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={'<div id="nu-zephr-article-target-header"></div>'}
+                  />
+                )}
               </HeaderContainer>
               <BodyContainer>
                 {!!zephrDivs && (
@@ -213,7 +218,13 @@ const ArticleSkeleton = ({
                 <PaywallPortal
                   id="paywall-portal-article-footer"
                   componentName="subscribe-cta"
-                />
+                >
+                  {!!zephrDivs && (
+                    <StaticContent
+                      html={'<div id="nu-zephr-article-target-paywall"></div>'}
+                    />
+                  )}
+                </PaywallPortal>
                 <LazyLoad rootMargin={spacing(40)} threshold={0}>
                   {({ observed, registerNode }) => (
                     <ArticleExtras
@@ -238,6 +249,11 @@ const ArticleSkeleton = ({
                     />
                   )}
                 </LazyLoad>
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={'<div id="nu-zephr-article-target-bottom"></div>'}
+                  />
+                )}
               </BodyContainer>
             </MainContainer>
           </Fragment>
