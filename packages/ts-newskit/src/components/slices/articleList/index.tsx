@@ -10,15 +10,18 @@ import {
   Divider
 } from 'newskit';
 import { ArticleListType, ContainerInline } from './styles';
+
 export interface ArticleListItemProps {
   image?: string;
-  color: string;
+  color?: string;
   alt?: string;
   title: string;
   url: string;
   articleType?: string;
   timeToRead?: string;
+  hasTopBorder?: boolean;
 }
+
 export const ArticleListItem = ({
   image,
   color,
@@ -26,10 +29,16 @@ export const ArticleListItem = ({
   title,
   url,
   articleType,
-  timeToRead
+  timeToRead,
+  hasTopBorder
 }: ArticleListItemProps) => {
   return (
     <Stack>
+      {hasTopBorder && (
+        <Divider
+          overrides={{ marginBlock: 'space040', stylePreset: 'dashedDivider' }}
+        />
+      )}
       <LinkStandalone
         href={url}
         data-testid="article-ListItem"
@@ -67,16 +76,17 @@ export const ArticleListItem = ({
             >
               {articleType}
             </ArticleListType>
-            {articleType && timeToRead ? (
-              <ContainerInline>
-                <Divider
-                  vertical
-                  overrides={{
-                    marginInline: 'space020'
-                  }}
-                />
-              </ContainerInline>
-            ) : null}
+            {articleType &&
+              timeToRead && (
+                <ContainerInline>
+                  <Divider
+                    vertical
+                    overrides={{
+                      marginInline: 'space020'
+                    }}
+                  />
+                </ContainerInline>
+              )}
             <TextBlock
               typographyPreset="articleListTimeToRead"
               stylePreset="articleListTimeToRead"

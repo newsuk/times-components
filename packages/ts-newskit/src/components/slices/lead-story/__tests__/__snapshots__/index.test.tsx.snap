@@ -6,7 +6,7 @@ exports[`Render Component one should render a snapshot 1`] = `
     class="css-10zrx1s"
   >
     <div
-      class="css-15nnp69"
+      class="css-1hdbizi"
     >
       <p
         class="css-kkq2ir"
@@ -60,7 +60,7 @@ exports[`Render Component one should render a snapshot 1`] = `
       </p>
     </div>
     <div
-      class="css-1kc6n1m"
+      class="css-11qxz0s"
     >
       <a
         class="css-143897p"

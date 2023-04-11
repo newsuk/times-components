@@ -2,20 +2,14 @@ import React from 'react';
 import { StyledStack, StyledTextBlock, StyledButton } from './styles';
 import { NewsKitChevronRightIcon } from '../../../assets';
 
-interface HeaderProps {
+export interface SliceHeaderProps {
   title: string;
   color: string;
 }
-export const SliceHeader = ({ title, color }: HeaderProps) => {
+
+export const SliceHeader = ({ title, color }: SliceHeaderProps) => {
   return (
-    <StyledStack
-      marginInline={{
-        xs: 'space045',
-        md: 'space000'
-      }}
-      flow="horizontal-center"
-      stackDistribution="space-between"
-    >
+    <StyledStack flow="horizontal-center" stackDistribution="space-between">
       <StyledTextBlock
         typographyPreset={{
           xs: 'newPreset070',

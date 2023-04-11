@@ -1,0 +1,74 @@
+{
+  "section": { "title": "Rugby Union", "color" : "#008347" },
+  "leadStory": {
+    "headline": "Sarcacens an inclusive club? They didnt look out for me",
+    "color": "#008347",
+    "readingTime": "4 min read",
+    "summary": "Lyon lock Joel Kpoku tells Will Kelleher that he’s fired up to face old team — and urges more English stars to move to France",
+    "bylines": "REUTERS/PHIL NOBLE",
+    "subHeadline": "JOEL KPOKU INTERVIEW",
+    "caption": "Caption One Line Dummy Caption Here",
+    "image": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0",
+    "url": "https://www.thetimes.co.uk"
+  },  
+  "articles": [
+    {
+      "image": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63",
+      "title": "European cup winner Mihajlovic dies aged 53 after battle with leukaemia",
+      "alt": "This is ALT Text",
+      "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
+      "articleType": "Review",
+      "timeToRead": "4 min read",
+      "color": "#E34605"
+    },
+    {
+      "image": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63",
+      "title": "‘American owners pose threat to English pyramid’",
+      "alt": "This is ALT Text",
+      "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
+      "articleType": "Review",
+      "timeToRead": "4 min read",
+      "color": "#E34605"
+    },
+    {
+      "image": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63",
+      "title": "£60m Brazilian prodigy Endrick snubs Chelsea to join Real Madrid",
+      "alt": "This is ALT Text",
+      "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
+      "articleType": "Review",
+      "timeToRead": "4 min read",
+      "color": "#E34605"
+    },
+    {
+      "image": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63",
+      "title": "Blow for rebel clubs as court says Uefa can block Super League ",
+      "alt": "This is ALT Text",
+      "url": "/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m",
+      "articleType": "Review",
+      "timeToRead": "4 min read",
+      "color": "#E34605"
+    }
+  ],
+  "journalists": [
+    {
+      "journalist": {
+        "name": "Deborah Haynes",
+        "image": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+      },
+      "quote": "Now is Willis’s chance to show he’s got more to offer than Curry",
+      "heading": "",
+      "sectionColour": "#008347",
+      "textColour": "#222222"
+    },
+    {
+      "journalist": {
+        "name": "Deborah Haynes 2",
+        "image": "https://www.thetimes.co.uk/d/img/profile/deborah-haynes.jpg"
+      },
+      "quote": "Now is Willis’s chance to show he’s got more to offer than Curry",
+      "heading": "",
+      "sectionColour": "#008347",
+      "textColour": "#222222"
+    }
+  ]
+}
