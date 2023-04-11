@@ -19,12 +19,7 @@ const renderComponent = () => render(<ContentBucket1 {...data} />);
 describe('Render Content Bucket 1 Slice', () => {
   test('Slice matches snapshot', () => {
     const { asFragment } = renderComponent();
-    expect(asFragment).toMatchSnapshot();
-  });
-
-  test('Slice matches snapshot', () => {
-    const { asFragment } = renderComponent();
-    expect(asFragment).toMatchSnapshot();
+    expect(asFragment()).toMatchSnapshot();
   });
 });
 
