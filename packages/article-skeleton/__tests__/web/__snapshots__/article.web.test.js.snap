@@ -11,8 +11,24 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
     data-article-template="maincomment"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -20,11 +36,27 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -34,17 +66,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -422,12 +444,20 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -453,8 +483,24 @@ exports[`2. an article with interactives 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -462,11 +508,27 @@ exports[`2. an article with interactives 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -476,17 +538,7 @@ exports[`2. an article with interactives 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -607,12 +659,20 @@ exports[`2. an article with interactives 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -638,8 +698,24 @@ exports[`3. an article with no content 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -647,11 +723,27 @@ exports[`3. an article with no content 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -661,17 +753,7 @@ exports[`3. an article with no content 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -749,12 +831,20 @@ exports[`3. an article with no content 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -780,8 +870,24 @@ exports[`4. an article with no content if content is set as null 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -789,11 +895,27 @@ exports[`4. an article with no content if content is set as null 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -803,17 +925,7 @@ exports[`4. an article with no content if content is set as null 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -891,12 +1003,20 @@ exports[`4. an article with no content if content is set as null 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -922,8 +1042,24 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
     data-article-template="maincomment"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -931,11 +1067,27 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -945,17 +1097,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -1010,12 +1152,20 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -1041,8 +1191,24 @@ exports[`6. an article with heading tags 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -1050,11 +1216,27 @@ exports[`6. an article with heading tags 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -1064,17 +1246,7 @@ exports[`6. an article with heading tags 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -1171,12 +1343,20 @@ exports[`6. an article with heading tags 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -1202,8 +1382,24 @@ exports[`7. an article with link 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -1211,11 +1407,27 @@ exports[`7. an article with link 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -1225,17 +1437,7 @@ exports[`7. an article with link 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -1335,12 +1537,20 @@ exports[`7. an article with link 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -1366,8 +1576,24 @@ exports[`8. an article with italic link 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -1375,11 +1601,27 @@ exports[`8. an article with italic link 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -1389,17 +1631,7 @@ exports[`8. an article with italic link 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -1502,12 +1734,20 @@ exports[`8. an article with italic link 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -1533,8 +1773,24 @@ exports[`9. an article with bold text followed by bold link 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -1542,11 +1798,27 @@ exports[`9. an article with bold text followed by bold link 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -1556,17 +1828,7 @@ exports[`9. an article with bold text followed by bold link 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -1668,12 +1930,20 @@ exports[`9. an article with bold text followed by bold link 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -1699,8 +1969,24 @@ exports[`10. an article with italic and normal text link 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -1708,11 +1994,27 @@ exports[`10. an article with italic and normal text link 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -1722,17 +2024,7 @@ exports[`10. an article with italic and normal text link 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -1836,12 +2128,20 @@ exports[`10. an article with italic and normal text link 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -1867,8 +2167,24 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -1876,11 +2192,27 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -1890,17 +2222,7 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -1998,12 +2320,20 @@ exports[`11. an article with bold and italic text at the same time 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -2029,8 +2359,24 @@ exports[`12. an article with text wrapped in inline element 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -2038,11 +2384,27 @@ exports[`12. an article with text wrapped in inline element 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -2052,17 +2414,7 @@ exports[`12. an article with text wrapped in inline element 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -2158,12 +2510,20 @@ exports[`12. an article with text wrapped in inline element 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -2189,8 +2549,24 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -2198,11 +2574,27 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -2212,17 +2604,7 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -2319,12 +2701,20 @@ exports[`13. an article with paragraph with text and inline element 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -2350,8 +2740,24 @@ exports[`14. an article with inline inside a bold tag 1`] = `
     data-article-template="mainstandard"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -2359,11 +2765,27 @@ exports[`14. an article with inline inside a bold tag 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -2373,17 +2795,7 @@ exports[`14. an article with inline inside a bold tag 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -2481,12 +2893,20 @@ exports[`14. an article with inline inside a bold tag 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -2512,8 +2932,24 @@ exports[`15. an article starting with single quote 1`] = `
     data-article-template="maincomment"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -2521,11 +2957,27 @@ exports[`15. an article starting with single quote 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -2535,17 +2987,7 @@ exports[`15. an article starting with single quote 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -2642,12 +3084,20 @@ exports[`15. an article starting with single quote 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
@@ -2673,8 +3123,24 @@ exports[`16. an article starting with double quote 1`] = `
     data-article-template="maincomment"
     id="article-main"
   >
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-top-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
+    />
     <Head
       swgProductId={null}
+    />
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "<div id=\\"nu-zephr-article-target-below-head\\"></div>",
+        }
+      }
+      suppressHydrationWarning={true}
     />
     <div>
       <AdContainer
@@ -2682,11 +3148,27 @@ exports[`16. an article starting with double quote 1`] = `
       />
     </div>
     <main>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-top-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
       <div>
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-header\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-top-headercontainer\\"></div>",
+            }
+          }
+          suppressHydrationWarning={true}
+        />
+        <div
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-headercontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -2696,17 +3178,7 @@ exports[`16. an article starting with double quote 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-body\\"></div>",
-            }
-          }
-          suppressHydrationWarning={true}
-        />
-        <div
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<!-- ZEPHR_FEATURE registration -->
-                            <div></div>
-                           <!-- ZEPHR_FEATURE_END registration -->",
+              "__html": "<div id=\\"nu-zephr-article-target-top-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
@@ -2803,12 +3275,20 @@ exports[`16. an article starting with double quote 1`] = `
         <div
           dangerouslySetInnerHTML={
             Object {
-              "__html": "<div id=\\"nu-zephr-article-target-bottom\\"></div>",
+              "__html": "<div id=\\"nu-zephr-article-target-bottom-bodycontainer\\"></div>",
             }
           }
           suppressHydrationWarning={true}
         />
       </article>
+      <div
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<div id=\\"nu-zephr-article-target-bottom-maincontainer\\"></div>",
+          }
+        }
+        suppressHydrationWarning={true}
+      />
     </main>
     <AdContainer
       slotName="pixel"
