@@ -1,0 +1,16 @@
+{
+    "personalStatsItems": [
+        {
+            "value": 508,
+            "label": "Puzzles played"
+        },
+        {
+            "value": 180,
+            "label": "Current streak"
+        },
+        {
+            "value": 280,
+            "label": "Longest streak"
+        }
+    ]
+}
