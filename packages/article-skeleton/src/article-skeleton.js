@@ -157,12 +157,22 @@ const ArticleSkeleton = ({
             getFallbackThumbnailUrl169={getFallbackThumbnailUrl169}
             swgProductId={swgProductId}
           />
+                  {!!zephrDivs && (
+                    <StaticContent
+                      html={'<div id="nu-zephr-article-target-head"></div>'}
+                    />
+                  )}
 
           <Fragment>
             <HeaderAdContainer key="headerAd">
               <AdContainer slotName="header" style={styles.adMarginStyle} />
             </HeaderAdContainer>
             <MainContainer>
+              {!!zephrDivs && (
+                <StaticContent
+                  html={'<div id="nu-zephr-article-target-top"></div>'}
+                />
+              )}
               <HeaderContainer>
                 <Header />
                 {isSharingSavingEnabled ? (
@@ -183,6 +193,11 @@ const ArticleSkeleton = ({
                     </MessageContext.Consumer>
                   </UserState>
                 ) : null}
+                {!!zephrDivs && (
+                  <StaticContent
+                    html={'<div id="nu-zephr-article-target-header"></div>'}
+                  />
+                )}
               </HeaderContainer>
               <BodyContainer>
                 {!!zephrDivs && (
@@ -213,7 +228,13 @@ const ArticleSkeleton = ({
                 <PaywallPortal
                   id="paywall-portal-article-footer"
                   componentName="subscribe-cta"
-                />
+                >
+                  {!!zephrDivs && (
+                    <StaticContent
+                      html={'<div id="nu-zephr-article-target-paywall-provider"></div>'}
+                    />
+                  )}
+                </PaywallPortal>
                 <LazyLoad rootMargin={spacing(40)} threshold={0}>
                   {({ observed, registerNode }) => (
                     <ArticleExtras
