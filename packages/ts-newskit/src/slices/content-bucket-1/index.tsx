@@ -95,6 +95,7 @@ export const ContentBucket1 = ({
                   <ArticleListItem
                     {...article}
                     hasTopBorder={articleTopBorder}
+                    hideImage={breakpointKey === 'lg'}
                   />
                   {articleBorder}
                 </React.Fragment>

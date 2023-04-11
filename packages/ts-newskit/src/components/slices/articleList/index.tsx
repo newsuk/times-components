@@ -5,9 +5,9 @@ import {
   LinkStandalone,
   Headline,
   Stack,
-  Hidden,
   TextBlock,
-  Divider
+  Divider,
+  useTheme
 } from 'newskit';
 import { ArticleListType, ContainerInline } from './styles';
 
@@ -20,6 +20,8 @@ export interface ArticleListItemProps {
   articleType?: string;
   timeToRead?: string;
   hasTopBorder?: boolean;
+  hideImage?: boolean;
+  isLeadImage?: boolean;
 }
 
 export const ArticleListItem = ({
@@ -30,10 +32,14 @@ export const ArticleListItem = ({
   url,
   articleType,
   timeToRead,
-  hasTopBorder
+  hasTopBorder,
+  hideImage,
+  isLeadImage
 }: ArticleListItemProps) => {
+  const theme = useTheme();
+
   return (
-    <Stack>
+    <Stack marginInline={isLeadImage ? `-${theme.spacePresets.space045}` : 'space000'}>
       {hasTopBorder && (
         <Divider
           overrides={{ marginBlock: 'space040', stylePreset: 'dashedDivider' }}
@@ -47,7 +53,7 @@ export const ArticleListItem = ({
         }}
       >
         <Block as="section">
-          <Hidden lg>
+          {!hideImage && (
             <Image
               src={image}
               data-testid="article-ListItemImg"
@@ -55,20 +61,20 @@ export const ArticleListItem = ({
               loadingAspectRatio="3:2"
               width="100%"
               overrides={{
-                marginBlockEnd: 'space020'
+                marginBlockEnd: 'space040'
               }}
             />
-          </Hidden>
-          <Headline
-            headingAs="h3"
-            overrides={{
-              marginBlock: 'space020',
-              typographyPreset: 'articleListTitle'
-            }}
-          >
-            {title}
-          </Headline>
-          <Block>
+          )}
+          <Block marginInline={isLeadImage ? 'space045' : 'space000'}>
+            <Headline
+              headingAs="h3"
+              overrides={{
+                marginBlockEnd: 'space030',
+                typographyPreset: 'articleListTitle'
+              }}
+            >
+              {title}
+            </Headline>
             <ArticleListType
               typographyPreset="articleListArticleType"
               as="span"
