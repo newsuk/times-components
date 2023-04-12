@@ -9,7 +9,3 @@ export const StyledTextBlock = styled(TextBlock)`
 export const StyledTextStack = styled(Stack)`
   border-top: 1px dashed black;
 `;
-
-export const StyledSubHeadline = styled(TextBlock)<{ $color: string }>`
-  color: ${({ $color }) => $color};
-`;

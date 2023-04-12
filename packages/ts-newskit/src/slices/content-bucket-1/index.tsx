@@ -20,7 +20,11 @@ import {
   ArticleListItem,
   ArticleListItemProps
 } from '../../components/slices/articleList';
-import { LeadStoryDivider, LeadStoryCell, CellNoMargin } from './styles';
+import {
+  LeadStoryDivider,
+  LeadStoryCell,
+  CellNoMargin
+} from '../shared-styles';
 import { JournalistStack } from './journalist-stack';
 
 export interface ContentBucket1Props {

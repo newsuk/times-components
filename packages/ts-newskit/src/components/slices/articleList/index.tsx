@@ -9,7 +9,8 @@ import {
   Divider,
   useTheme
 } from 'newskit';
-import { ArticleListType, ContainerInline } from './styles';
+import { ContainerInline } from './styles';
+import { ColouredText } from '../shared-styles';
 
 export interface ArticleListItemProps {
   image?: string;
@@ -39,7 +40,11 @@ export const ArticleListItem = ({
   const theme = useTheme();
 
   return (
-    <Stack marginInline={isLeadImage ? `-${theme.spacePresets.space045}` : 'space000'}>
+    <Stack
+      marginInline={
+        isLeadImage ? `-${theme.spacePresets.space045}` : 'space000'
+      }
+    >
       {hasTopBorder && (
         <Divider
           overrides={{ marginBlock: 'space040', stylePreset: 'dashedDivider' }}
@@ -65,23 +70,24 @@ export const ArticleListItem = ({
               }}
             />
           )}
+          <Headline
+            headingAs="h3"
+            overrides={{
+              typographyPreset: 'articleListTitle',
+              marginInline: isLeadImage ? 'space045' : 'space000'
+            }}
+          >
+            {title}
+          </Headline>
           <Block marginInline={isLeadImage ? 'space045' : 'space000'}>
-            <Headline
-              headingAs="h3"
-              overrides={{
-                typographyPreset: 'articleListTitle'
-              }}
-            >
-              {title}
-            </Headline>
-            <ArticleListType
+            <ColouredText
               typographyPreset="articleListArticleType"
               as="span"
               $color={color}
-              marginBlockStart='space030'
+              marginBlockStart="space030"
             >
               {articleType}
-            </ArticleListType>
+            </ColouredText>
             {articleType &&
               timeToRead && (
                 <ContainerInline>
@@ -97,7 +103,7 @@ export const ArticleListItem = ({
               typographyPreset="articleListTimeToRead"
               stylePreset="articleListTimeToRead"
               as="span"
-              marginBlockStart='space030'
+              marginBlockStart="space030"
             >
               {timeToRead}
             </TextBlock>

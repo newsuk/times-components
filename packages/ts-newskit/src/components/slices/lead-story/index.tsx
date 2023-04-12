@@ -9,11 +9,12 @@ import {
   useTheme
 } from 'newskit';
 import React from 'react';
-import { StyledTextBlock, StyledTextStack, StyledSubHeadline } from './styles';
+import { ColouredText } from '../shared-styles';
+import { StyledTextBlock, StyledTextStack } from './styles';
 
 export interface LeadStoryProps {
   headline: string;
-  color: string;
+  color?: string;
   readingTime: string;
   summary: string;
   bylines: string;
@@ -38,7 +39,7 @@ export const LeadStory = ({
   return (
     <Stack flow={{ sm: 'vertical-center', md: 'horizontal-stretch' }}>
       <StyledTextStack marginInlineEnd={{ md: 'space040' }}>
-        <StyledSubHeadline
+        <ColouredText
           $color={color}
           paddingBlockStart={{
             xs: 'space040',
@@ -49,7 +50,7 @@ export const LeadStory = ({
           typographyPreset="newPreset090"
         >
           {subHeadline}
-        </StyledSubHeadline>
+        </ColouredText>
         <Headline
           headingAs="h1"
           overrides={{
