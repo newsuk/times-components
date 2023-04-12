@@ -1,6 +1,7 @@
 import React from 'react';
-import { StyledStack, StyledTextBlock, StyledButton } from './styles';
+import { StyledStack, StyledButton } from './styles';
 import { NewsKitChevronRightIcon } from '../../../assets';
+import { ColouredText } from '../shared-styles';
 
 export interface SliceHeaderProps {
   title: string;
@@ -10,7 +11,7 @@ export interface SliceHeaderProps {
 export const SliceHeader = ({ title, color }: SliceHeaderProps) => {
   return (
     <StyledStack flow="horizontal-center" stackDistribution="space-between">
-      <StyledTextBlock
+      <ColouredText
         typographyPreset={{
           xs: 'newPreset070',
           lg: 'newPreset060'
@@ -18,7 +19,7 @@ export const SliceHeader = ({ title, color }: SliceHeaderProps) => {
         $color={color}
       >
         {title}
-      </StyledTextBlock>
+      </ColouredText>
       <StyledButton>
         <NewsKitChevronRightIcon
           overrides={{

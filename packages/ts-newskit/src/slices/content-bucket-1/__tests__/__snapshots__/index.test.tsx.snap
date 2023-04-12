@@ -15,7 +15,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
           class="css-58ces8"
         >
           <p
-            class="css-1d5rowl"
+            class="css-16fouza"
           >
             Rugby Union
           </p>
@@ -68,7 +68,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               class="css-1hdbizi"
             >
               <p
-                class="css-kkq2ir"
+                class="css-1x3okx2"
               >
                 JOEL KPOKU INTERVIEW
               </p>
@@ -211,7 +211,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     class="css-1rffhsu"
                   >
                     <span
-                      class="css-1tpbptv"
+                      class="css-11wi9d7"
                     >
                       Deborah Haynes
                     </span>
@@ -256,7 +256,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     class="css-1rffhsu"
                   >
                     <span
-                      class="css-1tpbptv"
+                      class="css-11wi9d7"
                     >
                       Deborah Haynes 2
                     </span>
@@ -296,7 +296,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
               class="css-5e9od2"
             >
               <div
-                class="css-1c2ypzx"
+                class="css-bhyki6"
               >
                 <a
                   class="css-13fiaa0"
@@ -309,26 +309,22 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     <section
                       class="css-13byt3y"
                     >
-                      <div
-                        class="css-wct8n6"
+                      <picture
+                        class="css-ta48gm"
                       >
-                        <picture
-                          class="css-xyvbls"
-                        >
-                          <div
-                            class="css-5pczz7"
-                          />
-                          <img
-                            alt="This is ALT Text"
-                            class="css-1t6p58q"
-                            data-testid="article-ListItemImg"
-                            src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
-                            width="100%"
-                          />
-                        </picture>
-                      </div>
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="This is ALT Text"
+                          class="css-1t6p58q"
+                          data-testid="article-ListItemImg"
+                          src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+                          width="100%"
+                        />
+                      </picture>
                       <section
-                        class="css-bdlzo2"
+                        class="css-ab1uvh"
                       >
                         <h3
                           class="nk-headline-heading css-1spnxj1"
@@ -337,10 +333,10 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         </h3>
                       </section>
                       <div
-                        class="css-13byt3y"
+                        class="css-tpekxe"
                       >
                         <span
-                          class="css-9jjs01"
+                          class="css-l4eawk"
                         >
                           Review
                         </span>
@@ -354,7 +350,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           />
                         </div>
                         <span
-                          class="css-8so0cn"
+                          class="css-l03yw1"
                         >
                           4 min read
                         </span>
@@ -369,7 +365,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 data-testid="divider"
               />
               <div
-                class="css-1c2ypzx"
+                class="css-bhyki6"
               >
                 <a
                   class="css-13fiaa0"
@@ -382,26 +378,22 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     <section
                       class="css-13byt3y"
                     >
-                      <div
-                        class="css-wct8n6"
+                      <picture
+                        class="css-ta48gm"
                       >
-                        <picture
-                          class="css-xyvbls"
-                        >
-                          <div
-                            class="css-5pczz7"
-                          />
-                          <img
-                            alt="This is ALT Text"
-                            class="css-1t6p58q"
-                            data-testid="article-ListItemImg"
-                            src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
-                            width="100%"
-                          />
-                        </picture>
-                      </div>
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="This is ALT Text"
+                          class="css-1t6p58q"
+                          data-testid="article-ListItemImg"
+                          src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+                          width="100%"
+                        />
+                      </picture>
                       <section
-                        class="css-bdlzo2"
+                        class="css-ab1uvh"
                       >
                         <h3
                           class="nk-headline-heading css-1spnxj1"
@@ -410,10 +402,10 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         </h3>
                       </section>
                       <div
-                        class="css-13byt3y"
+                        class="css-tpekxe"
                       >
                         <span
-                          class="css-9jjs01"
+                          class="css-l4eawk"
                         >
                           Review
                         </span>
@@ -427,7 +419,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           />
                         </div>
                         <span
-                          class="css-8so0cn"
+                          class="css-l03yw1"
                         >
                           4 min read
                         </span>
@@ -437,7 +429,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 </a>
               </div>
               <div
-                class="css-1c2ypzx"
+                class="css-bhyki6"
               >
                 <hr
                   aria-hidden="true"
@@ -455,26 +447,22 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     <section
                       class="css-13byt3y"
                     >
-                      <div
-                        class="css-wct8n6"
+                      <picture
+                        class="css-ta48gm"
                       >
-                        <picture
-                          class="css-xyvbls"
-                        >
-                          <div
-                            class="css-5pczz7"
-                          />
-                          <img
-                            alt="This is ALT Text"
-                            class="css-1t6p58q"
-                            data-testid="article-ListItemImg"
-                            src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
-                            width="100%"
-                          />
-                        </picture>
-                      </div>
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="This is ALT Text"
+                          class="css-1t6p58q"
+                          data-testid="article-ListItemImg"
+                          src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+                          width="100%"
+                        />
+                      </picture>
                       <section
-                        class="css-bdlzo2"
+                        class="css-ab1uvh"
                       >
                         <h3
                           class="nk-headline-heading css-1spnxj1"
@@ -483,10 +471,10 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                         </h3>
                       </section>
                       <div
-                        class="css-13byt3y"
+                        class="css-tpekxe"
                       >
                         <span
-                          class="css-9jjs01"
+                          class="css-l4eawk"
                         >
                           Review
                         </span>
@@ -500,7 +488,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           />
                         </div>
                         <span
-                          class="css-8so0cn"
+                          class="css-l03yw1"
                         >
                           4 min read
                         </span>
@@ -515,7 +503,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                 data-testid="divider"
               />
               <div
-                class="css-1c2ypzx"
+                class="css-bhyki6"
               >
                 <hr
                   aria-hidden="true"
@@ -533,38 +521,34 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                     <section
                       class="css-13byt3y"
                     >
-                      <div
-                        class="css-wct8n6"
+                      <picture
+                        class="css-ta48gm"
                       >
-                        <picture
-                          class="css-xyvbls"
-                        >
-                          <div
-                            class="css-5pczz7"
-                          />
-                          <img
-                            alt="This is ALT Text"
-                            class="css-1t6p58q"
-                            data-testid="article-ListItemImg"
-                            src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
-                            width="100%"
-                          />
-                        </picture>
-                      </div>
+                        <div
+                          class="css-5pczz7"
+                        />
+                        <img
+                          alt="This is ALT Text"
+                          class="css-1t6p58q"
+                          data-testid="article-ListItemImg"
+                          src="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63"
+                          width="100%"
+                        />
+                      </picture>
                       <section
-                        class="css-bdlzo2"
+                        class="css-ab1uvh"
                       >
                         <h3
                           class="nk-headline-heading css-1spnxj1"
                         >
-                          Blow for rebel clubs as court says Uefa can block Super League 
+                          Blow for rebel clubs as court says Uefa can block Super League
                         </h3>
                       </section>
                       <div
-                        class="css-13byt3y"
+                        class="css-tpekxe"
                       >
                         <span
-                          class="css-9jjs01"
+                          class="css-l4eawk"
                         >
                           Review
                         </span>
@@ -578,7 +562,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                           />
                         </div>
                         <span
-                          class="css-8so0cn"
+                          class="css-l03yw1"
                         >
                           4 min read
                         </span>
@@ -633,7 +617,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   class="css-1rffhsu"
                 >
                   <span
-                    class="css-1tpbptv"
+                    class="css-11wi9d7"
                   >
                     Deborah Haynes
                   </span>
@@ -678,7 +662,7 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   class="css-1rffhsu"
                 >
                   <span
-                    class="css-1tpbptv"
+                    class="css-11wi9d7"
                   >
                     Deborah Haynes 2
                   </span>

@@ -1,4 +1,4 @@
-import { styled, Stack, TextBlock, getMediaQueryFromTheme } from 'newskit';
+import { styled, Stack, getMediaQueryFromTheme } from 'newskit';
 
 export const StyledStack = styled(Stack)`
   height: 60px;
@@ -6,10 +6,6 @@ export const StyledStack = styled(Stack)`
   ${getMediaQueryFromTheme('lg')} {
     height: 80px;
   }
-`;
-
-export const StyledTextBlock = styled(TextBlock)<{ $color: string }>`
-  color: ${({ $color }) => $color};
 `;
 
 export const StyledButton = styled.button`
