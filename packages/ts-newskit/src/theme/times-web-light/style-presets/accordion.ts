@@ -6,6 +6,7 @@ export const accordionStylePresets = {
         iconColor: '{{colors.inkSubtle}}',
       },
       hover: {
+        backgroundColor: 'none',
         color: '{{colors.inkPuzzle}}',
         iconColor: '{{colors.inkSubtle}}',
       }

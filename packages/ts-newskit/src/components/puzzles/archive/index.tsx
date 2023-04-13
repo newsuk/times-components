@@ -1,6 +1,6 @@
 import React from 'react';
 import { Accordion, GridLayout, Scroll, getSSRId, Stack, toNewsKitIcon, TextBlock } from 'newskit';
-import { CardContainer, StyledAccordionGroup } from './styles';
+import { CardContainer, SeeMoreBox, StyledAccordionGroup } from './styles';
 import { East } from '@emotion-icons/material'
 import { Puzzles } from './types';
 
@@ -44,7 +44,7 @@ export const Archive = ({ data }: ArchiveProps) => {
                 <CardContainer id={getSSRId()}>
                 </CardContainer>
               )}
-              <CardContainer> 
+              <SeeMoreBox> 
                 <Stack flow='vertical-center' stackDistribution='center'>
                   <IconEast     
                     overrides={{
@@ -59,7 +59,7 @@ export const Archive = ({ data }: ArchiveProps) => {
                     See more
                   </TextBlock>
                 </Stack>
-              </CardContainer>
+              </SeeMoreBox>
             </GridLayout>
           </Scroll>
         </Accordion>
