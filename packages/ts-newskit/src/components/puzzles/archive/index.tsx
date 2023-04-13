@@ -11,9 +11,10 @@ interface ArchiveProps {
 const IconEast = toNewsKitIcon(East)
 
 export const Archive = ({ data }: ArchiveProps) => {
+
   const [expandedMultiple, setExpandedMultiple] = React.useState([0]);
-  const puzzleTitleSet = new Set<string>()
-  data?.list?.forEach(puzzle => puzzleTitleSet.add(puzzle.title))
+  const puzzleTitleSet = new Set<string>();
+  data?.list?.forEach(puzzle => puzzleTitleSet.add(puzzle.title));
   const puzzleTitles: string[] = Array.from(puzzleTitleSet);
 
   return (
