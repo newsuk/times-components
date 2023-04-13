@@ -33,7 +33,7 @@ const ArticleHeader = ({
       <div
         suppressHydrationWarning
         dangerouslySetInnerHTML={{
-          __html: '<div id="nu-zephr-header-target">/div>'
+          __html: '<div id="nu-zephr-header-target"></div>'
         }}
       />
     </HeadlineContainer>
