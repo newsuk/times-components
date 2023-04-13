@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.62.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.62.7...@times-components/article-main-comment@2.62.8) (2023-04-11)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.62.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.62.6...@times-components/article-main-comment@2.62.7) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.62.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.62.5...@times-components/article-main-comment@2.62.6) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.62.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.62.4...@times-components/article-main-comment@2.62.5) (2023-04-05)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.62.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.62.3...@times-components/article-main-comment@2.62.4) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
 ## [2.62.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.62.2...@times-components/article-main-comment@2.62.3) (2023-04-03)
 
 **Note:** Version bump only for package @times-components/article-main-comment

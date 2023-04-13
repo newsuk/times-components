@@ -86,5 +86,9 @@ module.exports = (component, clientOptions, data) => {
 
   const App = component(client, analyticsStream, data, {});
 
-  ReactDOMClient.render(App, document.getElementById(clientOptions.rootTag));
+  if (clientOptions.zephrDivs && clientOptions.zephrDivs === true) {
+    ReactDOMClient.hydrate(App, document.getElementById(clientOptions.rootTag));
+  } else {
+    ReactDOMClient.render(App, document.getElementById(clientOptions.rootTag));
+  }
 };

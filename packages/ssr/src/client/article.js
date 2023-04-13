@@ -44,7 +44,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     useGET: false,
     headers: {
       "x-new-topic-data-source": true
-    }
+    },
+    zephrDivs
   };
 
   runClient(article, clientOptions, data);
