@@ -94,6 +94,14 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             role="heading"
           >
             Some Short Headline
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-header-target\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
           </h1>
           <div>
             <ArticleFlags />
@@ -354,6 +362,14 @@ exports[`4. an article with ads 1`] = `
             role="heading"
           >
             Some Headline
+            <div
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<div id=\\"nu-zephr-header-target\\"></div>",
+                }
+              }
+              suppressHydrationWarning={true}
+            />
           </h1>
           <div>
             <ArticleFlags />
