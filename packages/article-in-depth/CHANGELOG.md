@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.68.9](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.68.8...@times-components/article-in-depth@3.68.9) (2023-04-13)
+
+
+### Bug Fixes
+
+* **TMRX-1148:** fonts displaying bold when they dont need tobe ([#3312](https://github.com/newsuk/times-components/issues/3312)) ([03e9ab4](https://github.com/newsuk/times-components/commit/03e9ab42777bc43fcc49d2865e4ecdad641d09ed))
+
+
+
+
+
 ## [3.68.8](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.68.7...@times-components/article-in-depth@3.68.8) (2023-04-11)
 
 **Note:** Version bump only for package @times-components/article-in-depth

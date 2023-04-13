@@ -45,6 +45,7 @@ export const HeaderContainer = styled(TcView)`
 `;
 
 export const HeadlineContainer = styled(TcText)`
+  font-weight: 400;
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.articleHeadline}px;
     line-height: 50px;
@@ -90,6 +91,7 @@ export const Separator = styled(TcView)`
 `;
 
 export const StandfirstContainer = styled(TcText)`
+  font-weight: 400;
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.infoTitle}px;
     line-height: ${lineHeight({
