@@ -30,6 +30,7 @@ const ArticleHeader = ({
       styles={checkStylesForUnits(styles.articleHeadLineText)}
     >
       {headline}
+      <div dangerouslySetInnerHTML={{__html: '<div id="nu-zephr-header-target">/div>'}} />
     </HeadlineContainer>
     <HeaderStandfirst standfirst={standfirst} />
     <TcView style={styles.flags}>
