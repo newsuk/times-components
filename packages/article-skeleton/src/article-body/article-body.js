@@ -149,7 +149,7 @@ const renderers = ({
     );
   },
   nativeAd(key) {
-    return (
+    return isLiveOrBreaking ? null : (
       <NativeAd className="group-3 hidden" key={key}>
         <NativeAdTitle>Sponsored</NativeAdTitle>
         <Ad id="advert-inarticle-native-1" data-parent="group-3" />
