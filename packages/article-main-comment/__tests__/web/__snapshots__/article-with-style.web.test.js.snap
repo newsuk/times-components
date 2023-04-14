@@ -424,6 +424,7 @@ exports[`full article with style 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-weight: 400;
   font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-size: 30px;
   line-height: 33px;
@@ -514,6 +515,7 @@ exports[`full article with style 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-weight: 400;
   font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
   font-size: 20px;
   line-height: 26px;

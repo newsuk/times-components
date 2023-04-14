@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.97.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.97.9...@times-components/article-skeleton@1.97.10) (2023-04-13)
+
+
+### Reverts
+
+* Revert "Remove logic disabling ads on live/breaking articles (#3314)" (#3316) ([3954642](https://github.com/newsuk/times-components/commit/39546428cb4047be4c7158dccbb80d8801a0c64b)), closes [#3314](https://github.com/newsuk/times-components/issues/3314) [#3316](https://github.com/newsuk/times-components/issues/3316)
+
+
+
+
+
+## [1.97.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.97.8...@times-components/article-skeleton@1.97.9) (2023-04-13)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.97.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.97.7...@times-components/article-skeleton@1.97.8) (2023-04-13)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.97.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.97.6...@times-components/article-skeleton@1.97.7) (2023-04-11)
 
 
