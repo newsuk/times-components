@@ -57,7 +57,8 @@ const mapping: Record<string, Record<string, {}>> = {
     linkTopic: 12,
     meta: 14,
     pagingMeta: 15,
-    tertiary: 17
+    tertiary: 17,
+    saveAndShare: 14
   }
 };
 
