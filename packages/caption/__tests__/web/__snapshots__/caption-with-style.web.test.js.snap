@@ -5,8 +5,9 @@ exports[`1. caption with container and text styles 1`] = `
 .IS1 {
   color: green;
   font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif;
-  font-size: 12;
-  line-height: 17px;
+  font-size: 14;
+  line-height: 19px;
+  margin-bottom: 4;
 }
 
 .IS2 {
@@ -14,6 +15,7 @@ exports[`1. caption with container and text styles 1`] = `
   font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif;
   font-size: 9;
   line-height: 17px;
+  margin-bottom: 0;
   font-weight: 400;
   letter-spacing: 0.5;
 }
@@ -53,7 +55,8 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
   color: green;
   font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif;
   font-size: 10;
-  line-height: 17px;
+  line-height: 19px;
+  margin-bottom: 4;
 }
 
 .IS2 {
@@ -61,6 +64,7 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
   font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif;
   font-size: 8;
   line-height: 17px;
+  margin-bottom: 0;
   font-weight: 400;
   letter-spacing: 0.5;
 }
@@ -99,8 +103,9 @@ exports[`3. caption with only container styles 1`] = `
 .IS1 {
   color: #696969;
   font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif;
-  font-size: 12;
-  line-height: 17px;
+  font-size: 14;
+  line-height: 19px;
+  margin-bottom: 4;
 }
 
 .IS2 {
@@ -108,6 +113,7 @@ exports[`3. caption with only container styles 1`] = `
   font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif;
   font-size: 9;
   line-height: 17px;
+  margin-bottom: 0;
   font-weight: 400;
   letter-spacing: 0.5;
 }
