@@ -50,7 +50,7 @@ const mapping: Record<string, Record<string, {}>> = {
   supporting: {
     button: 16,
     caption: 13,
-    cardMeta: 15,
+    cardMeta: 17,
     cardMetaMobile: 14,
     keyFactsTitle: 18,
     link: 13,
