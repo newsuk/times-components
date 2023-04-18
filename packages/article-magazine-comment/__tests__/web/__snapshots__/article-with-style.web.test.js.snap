@@ -361,8 +361,8 @@ exports[`full article with style 1`] = `
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 17px;
   color: #696969;
   margin-top: 15px;
   -webkit-flex-direction: row;
@@ -1494,8 +1494,8 @@ exports[`full article with style in the culture magazine 1`] = `
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 17px;
   color: #696969;
   margin-top: 15px;
   -webkit-flex-direction: row;
@@ -2628,8 +2628,8 @@ exports[`full article with style in the style magazine 1`] = `
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 17px;
   color: #696969;
   margin-top: 15px;
   -webkit-flex-direction: row;
@@ -3763,8 +3763,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 17px;
   color: #696969;
   margin-top: 15px;
   -webkit-flex-direction: row;

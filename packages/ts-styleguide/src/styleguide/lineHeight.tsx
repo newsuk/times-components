@@ -50,14 +50,15 @@ const mapping: Record<string, Record<string, {}>> = {
   supporting: {
     button: 16,
     caption: 13,
-    cardMeta: 15,
+    cardMeta: 17,
     cardMetaMobile: 14,
     keyFactsTitle: 18,
     link: 13,
     linkTopic: 12,
     meta: 14,
     pagingMeta: 15,
-    tertiary: 17
+    tertiary: 17,
+    saveAndShare: 14
   }
 };
 

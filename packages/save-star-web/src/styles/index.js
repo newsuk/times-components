@@ -14,7 +14,7 @@ const styles = {
   label: {
     ...fontFactory({
       font: "supporting",
-      fontSize: "meta"
+      fontSize: "saveAndShare"
     }),
     color: colours.functional.secondary,
     marginRight: spacing(2),
