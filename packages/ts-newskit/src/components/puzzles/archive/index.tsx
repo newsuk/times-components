@@ -14,7 +14,7 @@ export const Archive = ({ data }: ArchiveProps) => {
 
   const [expandedMultiple, setExpandedMultiple] = React.useState([0]);
   const puzzleTitleSet = new Set<string>();
-  data?.list?.forEach(puzzle => puzzleTitleSet.add(puzzle.title));
+  data.list.forEach(puzzle => puzzleTitleSet.add(puzzle.title));
   const puzzleTitles: string[] = Array.from(puzzleTitleSet);
 
   return (
@@ -41,7 +41,7 @@ export const Archive = ({ data }: ArchiveProps) => {
             <GridLayout autoFlow="column" 
               autoColumns={{xs: '110px', lg: '111.25px', xl: '148.75px'}} columnGap='space030'            
             >
-              {data?.list?.filter(puzzle => puzzle.title === title).map(() => 
+              {data.list.filter(puzzle => puzzle.title === title).map(() => 
                 <CardContainer id={getSSRId()}>
                 </CardContainer>
               )}
