@@ -23,5 +23,5 @@ export const stylePresets = {
   ...secondaryNavigationStylePresets,
   ...leadStoryStylePresets,
   ...sliceStylePresets,
-  ...breakoutSectionStylePresets,
+  ...breakoutSectionStylePresets
 };

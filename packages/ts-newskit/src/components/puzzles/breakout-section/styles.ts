@@ -12,7 +12,6 @@ import {
 import SudokuIconD4 from '../../../assets/SudokuIconD4';
 import SudokuIconD2 from '../../../assets/SudokuIconD2';
 import SudokuIconA4 from '../../../assets/SudokuIconA4';
-import { GridLayoutProps } from 'newskit/cjs/grid-layout/types';
 
 export const BreakoutSectionContainer = styled(Block)<BlockProps>`
   position: relative;
@@ -48,7 +47,7 @@ export const BreakoutSectionSubtitle = styled(TextBlock)<TextBlockProps>`
   color: #1d1d1b;
 `;
 
-export const BreakoutSectionGridLayout = styled(GridLayout)<GridLayoutProps>`
+export const BreakoutSectionGridLayout = styled(GridLayout)`
   position: relative;
 `;
 
