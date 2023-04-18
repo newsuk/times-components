@@ -8,7 +8,7 @@ import { navStylePresets } from './navigation';
 import { pageStylePresets } from './page';
 import { secondaryNavigationStylePresets } from './secondary-nav';
 import { textStylePresets } from './text';
-import { breakoutSectionStylePresets } from './breakoutSection'
+import { breakoutSectionStylePresets } from './breakoutSection';
 
 export const stylePresets = {
   ...articleListStylePresets,

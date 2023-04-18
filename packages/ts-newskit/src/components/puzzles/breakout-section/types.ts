@@ -1,5 +1,5 @@
 export type BreakoutSectionItem = {
-    id: string;
-    url: string;
-    title: string;
-}
+  id: string;
+  url: string;
+  title: string;
+};

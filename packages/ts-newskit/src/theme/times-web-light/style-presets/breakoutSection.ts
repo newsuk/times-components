@@ -1,7 +1,7 @@
 export const breakoutSectionStylePresets = {
-    breakoutSectionBtn: {
-      base: {
-        color: '{{colors.inkBase}}',
-      },
-    },
+  breakoutSectionBtn: {
+    base: {
+      color: '{{colors.inkBase}}'
+    }
+  }
 };
