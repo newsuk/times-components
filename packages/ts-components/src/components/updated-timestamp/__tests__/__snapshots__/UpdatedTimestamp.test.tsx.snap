@@ -4,7 +4,7 @@ exports[`UpdatedTimestamp does not show the timestamp within the first minute af
 <body>
   <div>
     <div
-      class="sc-bdVaJa kkCchc"
+      class="sc-bdVaJa bLzRZB"
     />
   </div>
 </body>
@@ -14,7 +14,7 @@ exports[`UpdatedTimestamp shows timestamp with an overrided color 1`] = `
 <body>
   <div>
     <div
-      class="sc-bdVaJa kkCchc"
+      class="sc-bdVaJa bLzRZB"
     >
       <div
         class="sc-bwzfXH jZDdnH"
