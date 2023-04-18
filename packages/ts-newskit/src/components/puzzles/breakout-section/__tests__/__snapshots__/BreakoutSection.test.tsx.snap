@@ -6,20 +6,20 @@ exports[`BreakoutSection should render Breakout section 1`] = `
     class="css-13byt3y"
   >
     <div
-      class="css-urw5po"
+      class="css-1ru4qn9"
     >
       <h2
-        class="css-1ikioj3"
+        class="css-bpx9h6"
       >
         Add a challenge to your day
       </h2>
       <p
-        class="css-p6k6eq"
+        class="css-dqbc4d"
       >
         Play exclusive Word puzzles, Number puzzles, Quizzes and more
       </p>
       <div
-        class="css-1htyn54"
+        class="css-kh0hs8"
       >
         <svg
           class="css-lbfshm"
@@ -124,7 +124,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="0"
         >
           <a
-            class="css-8kpfs8"
+            class="css-82qz4z"
             data-testid="buttonLink"
             href="/"
           >
@@ -140,7 +140,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="1"
         >
           <a
-            class="css-8kpfs8"
+            class="css-82qz4z"
             data-testid="buttonLink"
             href="/"
           >
@@ -156,7 +156,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="2"
         >
           <a
-            class="css-8kpfs8"
+            class="css-82qz4z"
             data-testid="buttonLink"
             href="/"
           >
@@ -172,7 +172,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="3"
         >
           <a
-            class="css-8kpfs8"
+            class="css-82qz4z"
             data-testid="buttonLink"
             href="/"
           >
@@ -188,7 +188,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="4"
         >
           <a
-            class="css-8kpfs8"
+            class="css-82qz4z"
             data-testid="buttonLink"
             href="/"
           >
@@ -204,7 +204,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="5"
         >
           <a
-            class="css-8kpfs8"
+            class="css-82qz4z"
             data-testid="buttonLink"
             href="/"
           >
