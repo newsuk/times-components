@@ -7,6 +7,7 @@ import { menuStylePresets } from './menu';
 import { navStylePresets } from './navigation';
 import { pageStylePresets } from './page';
 import { secondaryNavigationStylePresets } from './secondary-nav';
+import { sliceStylePresets } from './slices';
 import { textStylePresets } from './text';
 import { breakoutSectionStylePresets } from './breakoutSection';
 
@@ -22,4 +23,5 @@ export const stylePresets = {
   ...secondaryNavigationStylePresets,
   ...leadStoryStylePresets,
   ...breakoutSectionStylePresets
+  ...sliceStylePresets
 };

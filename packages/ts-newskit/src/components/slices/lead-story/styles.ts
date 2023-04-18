@@ -7,9 +7,5 @@ export const StyledTextBlock = styled(TextBlock)`
 `;
 
 export const StyledTextStack = styled(Stack)`
-  border-top: 1px dotted black;
-`;
-
-export const StyledInterviewee = styled(TextBlock)<{ $color: string }>`
-  color: ${({ $color }) => $color};
+  border-top: 1px dashed black;
 `;
