@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.72.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.71.11...@times-components/article-main-standard@3.72.0) (2023-04-18)
+
+
+### Features
+
+* **TMRX-753:** article page typography updates ([#3318](https://github.com/newsuk/times-components/issues/3318)) ([43a193a](https://github.com/newsuk/times-components/commit/43a193a88a8d1cfbb8389628af37f244849eb110))
+
+
+
+
+
 ## [3.71.11](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.71.10...@times-components/article-main-standard@3.71.11) (2023-04-13)
 
 **Note:** Version bump only for package @times-components/article-main-standard
