@@ -134,7 +134,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         </div>
                         <div
                           class="tc-text__TcText-sc-15igzev-0 kwFxdN"
-                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px; line-height: 15px; margin-bottom: 5px;"
+                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 14px; line-height: 17px; margin-bottom: 5px;"
                         >
                           <time
                             datetime="2021-06-29T23:01:00Z"
@@ -146,7 +146,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           class="tc-text__TcText-sc-15igzev-0 kwFxdN"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 kwwMme"
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 gfNVkP"
                           >
                             David Walsh
                           </div>
@@ -248,7 +248,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         </div>
                         <div
                           class="tc-text__TcText-sc-15igzev-0 kwFxdN"
-                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px; line-height: 15px; margin-bottom: 5px;"
+                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 14px; line-height: 17px; margin-bottom: 5px;"
                         >
                           <time
                             datetime="2021-06-30T11:00:00Z"
@@ -260,7 +260,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           class="tc-text__TcText-sc-15igzev-0 kwFxdN"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 kwwMme"
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 gfNVkP"
                           >
                             Matt Lawton
                           </div>
@@ -362,7 +362,7 @@ exports[`<LatestFromSection> renders  1`] = `
                         </div>
                         <div
                           class="tc-text__TcText-sc-15igzev-0 kwFxdN"
-                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 12px; line-height: 15px; margin-bottom: 5px;"
+                          style="color: rgb(105, 105, 105); font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif; font-size: 14px; line-height: 17px; margin-bottom: 5px;"
                         >
                           <time
                             datetime="2021-06-29T23:01:00Z"
@@ -374,7 +374,7 @@ exports[`<LatestFromSection> renders  1`] = `
                           class="tc-text__TcText-sc-15igzev-0 kwFxdN"
                         >
                           <div
-                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 kwwMme"
+                            class="tc-text__TcText-sc-15igzev-0 article-byline__BylineText-ynke2n-0 gfNVkP"
                           >
                             Jonathan Northcroft
                           </div>

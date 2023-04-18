@@ -116,7 +116,7 @@ exports[`default styles 1`] = `
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 25px;
   color: #333333;
   -webkit-flex-direction: row;
@@ -136,7 +136,7 @@ exports[`default styles 1`] = `
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 25px;
   color: #333333;
   -webkit-flex-direction: row;
@@ -326,8 +326,8 @@ exports[`default styles 1`] = `
 .IS5 {
   color: #696969;
   font-family: Roboto-Regular, Roboto-Regular-fallback, sans-serif;
-  font-size: 12;
-  line-height: 15px;
+  font-size: 14;
+  line-height: 17px;
   margin-bottom: 5px;
 }
 </style>

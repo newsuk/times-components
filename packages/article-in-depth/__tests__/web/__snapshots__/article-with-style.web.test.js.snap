@@ -354,8 +354,8 @@ exports[`full article with style 1`] = `
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 17px;
   color: #696969;
   margin-top: 5px;
   -webkit-flex-direction: row;
@@ -425,6 +425,7 @@ exports[`full article with style 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-weight: 400;
   font-size: 30px;
   line-height: 33px;
   font-weight: 400;
@@ -502,6 +503,7 @@ exports[`full article with style 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-weight: 400;
   font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
   font-size: 20px;
   line-height: 26px;
@@ -1059,8 +1061,9 @@ exports[`full article with style 1`] = `
                       className="c5"
                       color="#696969"
                       fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                      fontSize={12}
-                      lineHeight="17px"
+                      fontSize={14}
+                      lineHeight="19px"
+                      marginBottom={4}
                     >
                       This is video caption
                     </div>
@@ -1463,8 +1466,8 @@ exports[`full article with style in the culture magazine 1`] = `
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 17px;
   color: #696969;
   margin-top: 5px;
   -webkit-flex-direction: row;
@@ -1534,6 +1537,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-weight: 400;
   font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-size: 30px;
   line-height: 33px;
@@ -1612,6 +1616,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-weight: 400;
   font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
   font-size: 20px;
   line-height: 26px;
@@ -2169,8 +2174,9 @@ exports[`full article with style in the culture magazine 1`] = `
                       className="c5"
                       color="#696969"
                       fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                      fontSize={12}
-                      lineHeight="17px"
+                      fontSize={14}
+                      lineHeight="19px"
+                      marginBottom={4}
                     >
                       This is video caption
                     </div>
@@ -2573,8 +2579,8 @@ exports[`full article with style in the style magazine 1`] = `
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 17px;
   color: #696969;
   margin-top: 5px;
   -webkit-flex-direction: row;
@@ -2644,6 +2650,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-weight: 400;
   font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-size: 30px;
   line-height: 33px;
@@ -2723,6 +2730,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-weight: 400;
   font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
   font-size: 20px;
   line-height: 26px;
@@ -3280,8 +3288,9 @@ exports[`full article with style in the style magazine 1`] = `
                       className="c5"
                       color="#696969"
                       fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                      fontSize={12}
-                      lineHeight="17px"
+                      fontSize={14}
+                      lineHeight="19px"
+                      marginBottom={4}
                     >
                       This is video caption
                     </div>
@@ -3684,8 +3693,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
   white-space: pre-wrap;
   overflow-wrap: break-word;
   font-family: Roboto-Regular,Roboto-Regular-fallback,sans-serif;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 17px;
   color: #696969;
   margin-top: 5px;
   -webkit-flex-direction: row;
@@ -3755,6 +3764,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-weight: 400;
   font-family: TimesModern-Bold,TimesModern-Bold-fallback,serif;
   font-size: 30px;
   line-height: 33px;
@@ -3833,6 +3843,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-weight: 400;
   font-family: TimesModern-Regular,TimesModern-Regular-fallback,serif;
   font-size: 20px;
   line-height: 26px;
@@ -4390,8 +4401,9 @@ exports[`full article with style in the sunday times magazine 1`] = `
                       className="c5"
                       color="#696969"
                       fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                      fontSize={12}
-                      lineHeight="17px"
+                      fontSize={14}
+                      lineHeight="19px"
+                      marginBottom={4}
                     >
                       This is video caption
                     </div>
