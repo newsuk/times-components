@@ -1,0 +1,18 @@
+import React from 'react';
+import { render } from '../../../utils/test-utils';
+import { archivedGames } from '../fixtures/data.json';
+import '@testing-library/jest-dom';
+
+import { DateCard } from '../index';
+
+describe('Date Card', () => {
+  it('should render puzzles Date Card', () => {
+    const { asFragment } = render(<DateCard sectionColour={'#333'} data={archivedGames[0]['games'][0]}/>);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
+  it('should render Date Card', () => {
+    const { getByText } = render(<DateCard sectionColour={'#333'} data={archivedGames[0]['games'][0]} />);
+    expect(getByText('Business')).toBeVisible();
+  });
+});
