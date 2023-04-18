@@ -2790,6 +2790,14 @@
     "@babel/runtime" "^7.12.13"
     "@emotion-icons/emotion-icon" "4.0.0"
 
+"@emotion-icons/material@3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@emotion-icons/material/-/material-3.14.0.tgz#7575c7c11671a78790413da63bb6e1884e74fff7"
+  integrity sha512-VQrlJReCLpdntuMhRFTEGNQUVHgCorpyXpiYvXTlNHZXlgiDg5qKTPl5JwHz+LLcDazTN5ND8SieG62BTq+mxg==
+  dependencies:
+    "@babel/runtime" "^7.14.0"
+    "@emotion-icons/emotion-icon" "4.1.0"
+
 "@emotion-icons/material@3.9.0":
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/@emotion-icons/material/-/material-3.9.0.tgz#52c5a973c07cfcab870758eb1375f3dbc6f731df"
@@ -5486,81 +5494,81 @@
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
 
-"@times-components/context@1.10.21":
-  version "1.10.21"
-  resolved "https://registry.yarnpkg.com/@times-components/context/-/context-1.10.21.tgz#1aa80471cbfbf37bcf5fa177b3515e96d57e8273"
-  integrity sha512-yfeCQ9yjEczcznlM95n0iILUkUidHTuGRCIonbLCleeOdRwU2mr4Sn8iDNG6fc8keGWjDZgcGQzKWIljs3lv2g==
+"@times-components/context@1.10.25":
+  version "1.10.25"
+  resolved "https://registry.yarnpkg.com/@times-components/context/-/context-1.10.25.tgz#29623d198f751fa82ea97ba31fa20f684257fbf3"
+  integrity sha512-cnx/d5sBaF5yCxlE/9HveajM5O3y2fQ8zgOLHYXtpe7q7IgQqtYjCCQ4CdiqjwEa1lkFBDfjwDBLa34/7F88Ww==
   dependencies:
-    "@times-components/ts-styleguide" "1.42.0"
+    "@times-components/ts-styleguide" "1.43.0"
 
-"@times-components/error-view@2.6.2":
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/@times-components/error-view/-/error-view-2.6.2.tgz#1f10371d96670f24dfbf9270e74902a4d487be7c"
-  integrity sha512-K4Jm8lYkLxfmJbrk4Vs4wR946UsZG/31BPBjYNjSO+t1us50tBWxu6glmcfuDzbFqm8sHga81tLtAv8IVnAARw==
+"@times-components/error-view@2.6.6":
+  version "2.6.6"
+  resolved "https://registry.yarnpkg.com/@times-components/error-view/-/error-view-2.6.6.tgz#9fd2ce886b389fad0cd53e07ba11046265b6a309"
+  integrity sha512-TBw9rQpWSyVM5wrKNOJfIJT3y/3uSMS9Jxthw4tgt2DVxmjEWm7paH6wW3q0CLb7PYx+FThwWbr/BmzWpBNJHw==
   dependencies:
-    "@times-components/ts-styleguide" "1.42.0"
-    "@times-components/utils" "6.16.2"
+    "@times-components/ts-styleguide" "1.43.0"
+    "@times-components/utils" "6.16.6"
     prop-types "15.7.2"
 
-"@times-components/icons@2.20.2":
-  version "2.20.2"
-  resolved "https://registry.yarnpkg.com/@times-components/icons/-/icons-2.20.2.tgz#5068a446f094f9d5813b8caaa8c900de9664f504"
-  integrity sha512-ygreMLF/t5dULCbJFIIBR220aLWBt1SmMaKt5OM54mG4zSJnLPdQwJ0peRGZOhnQPSbvxrpqiwld+GyVkhqgOA==
+"@times-components/icons@2.20.6":
+  version "2.20.6"
+  resolved "https://registry.yarnpkg.com/@times-components/icons/-/icons-2.20.6.tgz#7987422ff2b8218f8d400fa0b9fe9132ae730e51"
+  integrity sha512-/JXbd3W25QyB/t4N5+k1CxBBZWZocadi5pGttLrWYBXbD0YfTAYy06U0/T/XoF1zT1SjsYXdsZgBQemCPAPapA==
   dependencies:
-    "@times-components/ts-styleguide" "1.42.0"
-    "@times-components/utils" "6.16.2"
-    prop-types "15.7.2"
-    styled-components "4.3.2"
-
-"@times-components/image@6.14.19":
-  version "6.14.19"
-  resolved "https://registry.yarnpkg.com/@times-components/image/-/image-6.14.19.tgz#9a8faa4f8523403d957c55fb26af9945560faef0"
-  integrity sha512-y0I+hP8bb1IvPKqRY5rpOzKGn9t3fDAheUuGAz2JZadZcFMC5Yfqjp6Do+vbvPbocfb0iQ9Y7zXtlzfN37KknQ==
-  dependencies:
-    "@times-components/ts-styleguide" "1.42.0"
-    "@times-components/utils" "6.16.2"
+    "@times-components/ts-styleguide" "1.43.0"
+    "@times-components/utils" "6.16.6"
     prop-types "15.7.2"
     styled-components "4.3.2"
 
-"@times-components/link@3.12.1":
-  version "3.12.1"
-  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-3.12.1.tgz#7b381b1f96a62ddfbbaca7257a33e35d9e8f64e0"
-  integrity sha512-86alyaAT7ApdJRL1Rcv1tdOolL+CX/M2G9oi6Nvo3v4mDOtgGpwPLYG0H7n6nV39VpH31myIvdQ8YUnh8IcqUQ==
+"@times-components/image@6.14.23":
+  version "6.14.23"
+  resolved "https://registry.yarnpkg.com/@times-components/image/-/image-6.14.23.tgz#4eefe9c568af2c4263ea717406dbd3f22ba65ce8"
+  integrity sha512-05wvlrwRTQSzfNT3arxaAGqp/jhdy8LZc16JcwS9u8WFUaOddNo6DHdX89VSvFSGyPZeEGtN88cXpAZly6uB9A==
   dependencies:
-    "@times-components/ts-styleguide" "1.42.0"
-    "@times-components/utils" "6.16.1"
+    "@times-components/ts-styleguide" "1.43.0"
+    "@times-components/utils" "6.16.6"
+    prop-types "15.7.2"
+    styled-components "4.3.2"
+
+"@times-components/link@3.12.5":
+  version "3.12.5"
+  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-3.12.5.tgz#0700ab8c5b78bdc73cb188962b49dd6675487126"
+  integrity sha512-Jnov2vAKHdQb4NsbvT5z/8VQTg9WirRKQ4sxxcPw4KtCnUU/7r1otYk0gax9O1k1pDtoPnGNN8gAwoSwvkn3Tw==
+  dependencies:
+    "@times-components/ts-styleguide" "1.43.0"
+    "@times-components/utils" "6.16.6"
     prop-types "15.7.2"
     react "16.9.0"
     react-dom "16.9.0"
     styled-components "4.3.2"
 
-"@times-components/ts-styleguide@1.42.0":
-  version "1.42.0"
-  resolved "https://registry.yarnpkg.com/@times-components/ts-styleguide/-/ts-styleguide-1.42.0.tgz#e6993b7ed8485b9e4ffb6f1fdfc16a783dde6cc6"
-  integrity sha512-yXzDnwolyBR8Q62h+uOVOUT3Id2dFwoN6BIa74SHxCoIuTb1P9W0M3r8IS0HlWJvYDJUO0vnF/Siq9BwzlOXoQ==
+"@times-components/ts-styleguide@1.43.0":
+  version "1.43.0"
+  resolved "https://registry.yarnpkg.com/@times-components/ts-styleguide/-/ts-styleguide-1.43.0.tgz#443ba2de8f7cd4e87831ed4136dd95aa24bbf9ab"
+  integrity sha512-woU/4glr4FcnHHI9Fzg5b3qALRz6OgaR8Qy/6mns/8eKW5GAH+ZYeoXEQYYgEMmV9U9UzUNXhc2pHlT24C/kqA==
   dependencies:
-    "@times-components/link" "3.12.1"
-    "@times-components/utils" "6.16.1"
+    "@times-components/link" "3.12.5"
+    "@times-components/utils" "6.16.6"
     react "16.9.0"
     styled-components "4.3.2"
 
-"@times-components/user-state@0.4.24":
-  version "0.4.24"
-  resolved "https://registry.yarnpkg.com/@times-components/user-state/-/user-state-0.4.24.tgz#df8ab2ec75c543e4e0adfc438b230d029b523617"
-  integrity sha512-dyc7i56ku7scUQJBsMOYIj/Dz5tfc+Wca6Xv05MMpyzfxBfr6NINLKnOYaBshu8M7vKKB5r2m1XMs1lnzOXpKQ==
+"@times-components/user-state@0.4.28":
+  version "0.4.28"
+  resolved "https://registry.yarnpkg.com/@times-components/user-state/-/user-state-0.4.28.tgz#66419365559bcced009b22c243caf8b3db984a78"
+  integrity sha512-PhLvNf5mL8ZYqnp8hFSEaQtRhPvoyFIZ96R5TbEw8LFVvgVe7S/BLUGEqrejjiwkjBk76737bMAUZoLVuE5cZw==
   dependencies:
     "@storybook/addon-knobs" "6.4.0"
-    "@times-components/context" "1.10.21"
-    "@times-components/utils" "6.16.2"
+    "@times-components/context" "1.10.25"
+    "@times-components/utils" "6.16.6"
     prop-types "15.7.2"
 
-"@times-components/utils@6.16.1":
-  version "6.16.1"
-  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-6.16.1.tgz#4733571134ea89ac9bba6cee00df1f4573204181"
-  integrity sha512-aUgX+28z1nqxzYBHnRxo0ZKzMB7/Umzwl3S1OnbvehIKMjiQv1X+xdThdKJPDUbh+mlvw5jeBaPh84AUL8A38A==
+"@times-components/utils@6.16.6":
+  version "6.16.6"
+  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-6.16.6.tgz#af701c257a506e2ba10bed36df958c20766531ee"
+  integrity sha512-saNia9iomUr6ALZThyVckyuEEtNj752Ow6ixuBReUsGnnEc95mUSxTWpF+BRQfqATyS6i7AIFkDLWsE/5ENMxw==
   dependencies:
     "@times-components/schema" "0.7.4"
-    "@times-components/ts-styleguide" "1.42.0"
+    "@times-components/ts-styleguide" "1.43.0"
     apollo-cache-inmemory "1.5.1"
     apollo-client "2.5.1"
     apollo-link "1.2.4"
@@ -5571,33 +5579,16 @@
     styled-components "4.3.2"
     unfetch "^3.0.0"
 
-"@times-components/utils@6.16.2":
-  version "6.16.2"
-  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-6.16.2.tgz#b28e519899cf540c2530567008ed82a1b0b33465"
-  integrity sha512-BmfQxiy+N5ZjExi3La7q6npbCYL9XIRnYGqTxBQx2kFqfkiPOKRY2KAH0efBym8YQEAse5t43KKy6YUS3OjR/w==
+"@times-components/video@4.15.6":
+  version "4.15.6"
+  resolved "https://registry.yarnpkg.com/@times-components/video/-/video-4.15.6.tgz#44cf8396a581e6196fe63891e353bf1417cbea70"
+  integrity sha512-SptK8jrYR0mTbBdFziWhn8DeuzkSFNtPNKW0WSlnjFn389Lwyi6/EKtoeS12FyO41xnts2Lbd8BDEZWQJARGCg==
   dependencies:
-    "@times-components/schema" "0.7.4"
-    "@times-components/ts-styleguide" "1.42.0"
-    apollo-cache-inmemory "1.5.1"
-    apollo-client "2.5.1"
-    apollo-link "1.2.4"
-    apollo-link-http "1.5.14"
-    apollo-link-persisted-queries "0.2.2"
-    lodash.omitby "4.6.0"
-    prop-types "15.7.2"
-    styled-components "4.3.2"
-    unfetch "^3.0.0"
-
-"@times-components/video@4.15.2":
-  version "4.15.2"
-  resolved "https://registry.yarnpkg.com/@times-components/video/-/video-4.15.2.tgz#69d01e167f6699697bff939171503045a53a05bb"
-  integrity sha512-3vAvLkbvUHMyjvOac8L2BM0QXsX8g/szRXXE7Sla1m7RYCHOENTKVTXuYh5eVDdqQu+jD65UGfwL0/sCXOw8Kw==
-  dependencies:
-    "@times-components/error-view" "2.6.2"
-    "@times-components/icons" "2.20.2"
-    "@times-components/image" "6.14.19"
-    "@times-components/ts-styleguide" "1.42.0"
-    "@times-components/utils" "6.16.2"
+    "@times-components/error-view" "2.6.6"
+    "@times-components/icons" "2.20.6"
+    "@times-components/image" "6.14.23"
+    "@times-components/ts-styleguide" "1.43.0"
+    "@times-components/utils" "6.16.6"
     prop-types "15.7.2"
     styled-components "4.3.2"
 
@@ -21337,19 +21328,10 @@ react-virtual@^2.10.4:
   dependencies:
     "@reach/observe-rect" "^1.1.0"
 
-react@16.9.0:
+react@16.9.0, react@^16.8.3:
   version "16.9.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.9.0.tgz#40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa"
   integrity sha512-+7LQnFBwkiw+BobzOF6N//BdoNw0ouwmSJTEm9cglOOmsg/TMiFHZLe2sEoN5M7LgJTj9oHH0gxklfnQe66S1w==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-
-react@^16.8.3:
-  version "16.14.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
-  integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
