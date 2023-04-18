@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.67.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.66.12...@times-components/article-magazine-comment@3.67.0) (2023-04-18)
+
+
+### Features
+
+* **TMRX-753:** article page typography updates ([#3318](https://github.com/newsuk/times-components/issues/3318)) ([43a193a](https://github.com/newsuk/times-components/commit/43a193a88a8d1cfbb8389628af37f244849eb110))
+
+
+
+
+
 ## [3.66.12](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.66.11...@times-components/article-magazine-comment@3.66.12) (2023-04-13)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
