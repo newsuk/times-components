@@ -1,19 +1,39 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Date Card should render render a snapshot 1`] = `
+exports[`Date Card should render puzzles Date Card 1`] = `
 <DocumentFragment>
-  <div class="css-ho1b0g">
-    <div class="css-1shocxe">
-      <div class="css-l3wl0d">
-        <a class="nk-card-link css-satdfy" href="https://newskit.co.uk/">
-          <div class="css-1a10mp9">
-            <label class="css-1rcjn43">Quick</label>
-            <div class="css-1dfr6je">
-              <div class="css-1hdzxmh">Fri</div>
-              <p class="css-g4bjk0">Mar 3, 2023</p>
+  <div
+    class="css-ho1b0g"
+  >
+    <div
+      class="css-1shocxe"
+    >
+      <div
+        class="css-l3wl0d"
+      >
+        <div
+          class="css-1a10mp9"
+        >
+          <label
+            class="css-1rcjn43"
+          >
+            Jumbo
+          </label>
+          <div
+            class="css-1dfr6je"
+          >
+            <div
+              class="css-1hdzxmh"
+            >
+              Sat
             </div>
+            <p
+              class="css-fn1n1g"
+            >
+              Mar 4, 2023
+            </p>
           </div>
-        </a>
+        </div>
       </div>
     </div>
   </div>
