@@ -1,6 +1,6 @@
 import React from 'react';
 import { PersonalStats } from '../index';
-import { personalStatsItems } from '../mock/personalStats.json';
+import { personalStatsItems } from '../fixtures/personalStats.json';
 import { render } from '../../../utils/test-utils';
 import '@testing-library/jest-dom';
 
