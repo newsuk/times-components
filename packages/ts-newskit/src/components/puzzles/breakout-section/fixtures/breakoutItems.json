@@ -1,0 +1,34 @@
+{
+    "breakoutItems": [
+        {
+            "id": "0",
+            "url": "/",
+            "title": "Crosswords"
+        },
+        {
+            "id": "1",
+            "url": "/",
+            "title": "Sudokus"
+        },
+        {
+            "id": "2",
+            "url": "/",
+            "title": "Word Puzzles"
+        },
+        {
+            "id": "3",
+            "url": "/",
+            "title": "Numbers and Logic"
+        },
+        {
+            "id": "4",
+            "url": "/",
+            "title": "Quizzes and Teasers"
+        },
+        {
+            "id": "5",
+            "url": "/",
+            "title": "Board and Card Games"
+        }
+    ]
+}

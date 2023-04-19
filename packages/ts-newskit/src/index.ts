@@ -17,3 +17,4 @@ export {
 export { GlobalNavWithCustomDrawer } from './components/navigation/global-nav';
 export { SecondaryNavigation } from './components/navigation/secondary-menu';
 export { TSNewskitDrawer } from './components/navigation/global-nav';
+export { BreakoutSection } from './components/puzzles/breakout-section';
