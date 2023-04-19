@@ -9,7 +9,7 @@ const SudokuIconD4 = (props: any) => (
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <g clip-path="url(#clip0_3201_320799)">
+    <g clipPath="url(#clip0_3201_320799)">
       <mask
         id="mask0_3201_320799"
         style={{ maskType: 'alpha' }}
