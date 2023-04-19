@@ -12,12 +12,12 @@ exports[`Date Card should render puzzles Date Card 1`] = `
         class="css-l3wl0d"
       >
         <div
-          class="css-1a10mp9"
+          class="css-1da1hpo"
         >
           <label
-            class="css-1rcjn43"
+            class="css-1q5hjdt"
           >
-            Jumbo
+            Quick
           </label>
           <div
             class="css-1dfr6je"
@@ -25,12 +25,12 @@ exports[`Date Card should render puzzles Date Card 1`] = `
             <div
               class="css-1hdzxmh"
             >
-              Sat
+              Fri
             </div>
             <p
               class="css-fn1n1g"
             >
-              Mar 4, 2023
+              Mar 3, 2023
             </p>
           </div>
         </div>
