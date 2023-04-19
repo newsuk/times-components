@@ -5,11 +5,12 @@ import {
   LinkStandalone,
   Headline,
   Stack,
-  Hidden,
   TextBlock,
-  Divider
+  Divider,
+  useTheme
 } from 'newskit';
-import { ArticleListType, ContainerInline } from './styles';
+import { ContainerInline } from './styles';
+import { ColouredText } from '../shared-styles';
 
 export interface ArticleListItemProps {
   image?: string;
@@ -20,6 +21,8 @@ export interface ArticleListItemProps {
   articleType?: string;
   timeToRead?: string;
   hasTopBorder?: boolean;
+  hideImage?: boolean;
+  isLeadImage?: boolean;
 }
 
 export const ArticleListItem = ({
@@ -30,10 +33,18 @@ export const ArticleListItem = ({
   url,
   articleType,
   timeToRead,
-  hasTopBorder
+  hasTopBorder,
+  hideImage,
+  isLeadImage
 }: ArticleListItemProps) => {
+  const theme = useTheme();
+
   return (
-    <Stack>
+    <Stack
+      marginInline={
+        isLeadImage ? `-${theme.spacePresets.space045}` : 'space000'
+      }
+    >
       {hasTopBorder && (
         <Divider
           overrides={{ marginBlock: 'space040', stylePreset: 'dashedDivider' }}
@@ -47,7 +58,7 @@ export const ArticleListItem = ({
         }}
       >
         <Block as="section">
-          <Hidden lg>
+          {!hideImage && (
             <Image
               src={image}
               data-testid="article-ListItemImg"
@@ -55,27 +66,28 @@ export const ArticleListItem = ({
               loadingAspectRatio="3:2"
               width="100%"
               overrides={{
-                marginBlockEnd: 'space020'
+                marginBlockEnd: 'space040'
               }}
             />
-          </Hidden>
+          )}
           <Headline
             headingAs="h3"
             overrides={{
-              marginBlock: 'space020',
-              typographyPreset: 'articleListTitle'
+              typographyPreset: 'articleListTitle',
+              marginInline: isLeadImage ? 'space045' : 'space000'
             }}
           >
             {title}
           </Headline>
-          <Block>
-            <ArticleListType
+          <Block marginInline={isLeadImage ? 'space045' : 'space000'}>
+            <ColouredText
               typographyPreset="articleListArticleType"
               as="span"
               $color={color}
+              marginBlockStart="space030"
             >
               {articleType}
-            </ArticleListType>
+            </ColouredText>
             {articleType &&
               timeToRead && (
                 <ContainerInline>
@@ -91,6 +103,7 @@ export const ArticleListItem = ({
               typographyPreset="articleListTimeToRead"
               stylePreset="articleListTimeToRead"
               as="span"
+              marginBlockStart="space030"
             >
               {timeToRead}
             </TextBlock>

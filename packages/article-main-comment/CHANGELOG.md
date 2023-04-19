@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.63.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.62.12...@times-components/article-main-comment@2.63.0) (2023-04-18)
+
+
+### Features
+
+* **TMRX-753:** article page typography updates ([#3318](https://github.com/newsuk/times-components/issues/3318)) ([43a193a](https://github.com/newsuk/times-components/commit/43a193a88a8d1cfbb8389628af37f244849eb110))
+
+
+
+
+
+## [2.62.12](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.62.11...@times-components/article-main-comment@2.62.12) (2023-04-13)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.62.11](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.62.10...@times-components/article-main-comment@2.62.11) (2023-04-13)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.62.10](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.62.9...@times-components/article-main-comment@2.62.10) (2023-04-13)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.62.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.62.8...@times-components/article-main-comment@2.62.9) (2023-04-13)
+
+
+### Bug Fixes
+
+* **TMRX-1148:** fonts displaying bold when they dont need tobe ([#3312](https://github.com/newsuk/times-components/issues/3312)) ([03e9ab4](https://github.com/newsuk/times-components/commit/03e9ab42777bc43fcc49d2865e4ecdad641d09ed))
+
+
+
+
+
 ## [2.62.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.62.7...@times-components/article-main-comment@2.62.8) (2023-04-11)
 
 **Note:** Version bump only for package @times-components/article-main-comment

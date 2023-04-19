@@ -1,10 +1,10 @@
 import { Block } from 'newskit';
 import React from 'react';
+import { ColouredText } from '../shared-styles';
 import {
   StyledTextBlock,
   JournalistImage,
   JournalistImageContainer,
-  JournalistName,
   QuoteText,
   JournalistContainer
 } from './styles';
@@ -18,7 +18,7 @@ export interface JournalistQuoteProps {
   journalist: Journalist;
   heading?: string;
   quote: string;
-  sectionColour: string;
+  sectionColour?: string;
   textColour?: string;
 }
 
@@ -51,14 +51,14 @@ export const JournalistQuote = ({
             marginBlockEnd="space030"
           >
             {heading}
-            <JournalistName
+            <ColouredText
               as="span"
               $color={sectionColour}
               marginInlineStart={heading ? 'space020' : 'space000'}
               marginInlineEnd="space020"
             >
               {journalist.name}
-            </JournalistName>
+            </ColouredText>
           </StyledTextBlock>
           <QuoteText
             $color={textColour}

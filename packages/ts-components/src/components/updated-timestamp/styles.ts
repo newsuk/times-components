@@ -4,12 +4,12 @@ import { colours, fonts } from '@times-components/ts-styleguide';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 3px 0 0 8px;
+  padding-left: 8px;
 `;
 
 export const TimeSinceUpdate = styled.div<{ color?: string }>`
   color: ${({ color }) => color || colours.functional.primary};
   font-family: ${fonts.supporting};
-  font-size: 11px;
+  font-size: 14px;
   line-height: 16px;
 `;

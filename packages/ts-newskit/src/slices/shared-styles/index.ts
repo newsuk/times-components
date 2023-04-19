@@ -21,7 +21,7 @@ export const LeadStoryDivider = styled(Divider)`
   top: 0;
   ${getSpacingCssFromTheme(setMarginBottom, 'space020')};
 `;
-export const JournalistDivider = styled(Divider)`
+export const AvatarDivider = styled(Divider)`
   ${getMediaQueryFromTheme('md')} {
     height: 77px;
   }

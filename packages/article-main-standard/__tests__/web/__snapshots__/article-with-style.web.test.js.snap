@@ -829,8 +829,8 @@ exports[`full article with style 1`] = `
                       className="c8"
                       color="#696969"
                       fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                      fontSize={12}
-                      lineHeight="15px"
+                      fontSize={14}
+                      lineHeight="17px"
                     >
                       <ArticleBylineWithLinks />
                     </div>
@@ -850,8 +850,8 @@ exports[`full article with style 1`] = `
                       className="c8"
                       color="#696969"
                       fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                      fontSize={12}
-                      lineHeight="15px"
+                      fontSize={14}
+                      lineHeight="17px"
                     >
                       <DatePublication />
                     </div>
@@ -881,8 +881,8 @@ exports[`full article with style 1`] = `
                   className="c8"
                   color="#696969"
                   fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                  fontSize={12}
-                  lineHeight="15px"
+                  fontSize={14}
+                  lineHeight="17px"
                 >
                   <ArticleBylineWithLinks />
                 </div>
@@ -894,8 +894,8 @@ exports[`full article with style 1`] = `
                   className="c8"
                   color="#696969"
                   fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                  fontSize={12}
-                  lineHeight="15px"
+                  fontSize={14}
+                  lineHeight="17px"
                 >
                   <DatePublication />
                 </div>
@@ -1000,8 +1000,9 @@ exports[`full article with style 1`] = `
                         className="c8"
                         color="#696969"
                         fontFamily="Roboto-Regular, Roboto-Regular-fallback, sans-serif"
-                        fontSize={12}
-                        lineHeight="17px"
+                        fontSize={14}
+                        lineHeight="19px"
+                        marginBottom={4}
                       >
                         This is video caption
                       </div>

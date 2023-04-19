@@ -4,7 +4,7 @@ import {
   JournalistQuote,
   JournalistQuoteProps
 } from '../../components/slices/journalist-quote';
-import { JournalistDivider } from './styles';
+import { AvatarDivider } from '../shared-styles';
 
 interface JournalistStackProps {
   journalists: JournalistQuoteProps[];
@@ -21,7 +21,7 @@ export const JournalistStack = ({ journalists }: JournalistStackProps) => {
       >
         {journalists.map((journalist, journalistIndex, journalistArr) => {
           const hasBorder = journalistIndex < journalistArr.length - 1 && (
-            <JournalistDivider
+            <AvatarDivider
               overrides={{
                 marginInline: { md: 'space040' },
                 marginBlock: { xs: 'space040', md: 'space000' },
