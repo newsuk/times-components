@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.16.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.15.4...@times-components/article-lead-asset@1.16.0) (2023-04-19)
+
+
+### Features
+
+* **TMRX-753:** update save text font size ([#3323](https://github.com/newsuk/times-components/issues/3323)) ([764ee59](https://github.com/newsuk/times-components/commit/764ee593536dc752ba537f87d1261bb22c64b00e))
+
+
+
+
+
 ## [1.15.4](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.15.3...@times-components/article-lead-asset@1.15.4) (2023-04-06)
 
 **Note:** Version bump only for package @times-components/article-lead-asset

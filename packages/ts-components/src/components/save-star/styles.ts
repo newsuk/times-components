@@ -21,7 +21,7 @@ export const SaveStarText = styled.div`
   margin-right: 15px;
   color: ${colours.functional.secondary};
   font-family: ${fonts.supporting};
-  font-size: 13px;
+  font-size: 14px;
   line-height: 14px;
 `;
 

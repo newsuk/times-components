@@ -51,7 +51,7 @@ exports[`save and share bar component save and share bar renders correctly when 
         Object {
           "color": "#696969",
           "fontFamily": "Roboto-Regular, Roboto-Regular-fallback, sans-serif",
-          "fontSize": 13,
+          "fontSize": 14,
           "lineHeight": "14px",
           "marginRight": "10px",
           "transform": "translateY(9%)",
@@ -156,7 +156,7 @@ exports[`save and share bar component save and share bar renders correctly when 
         Object {
           "color": "#696969",
           "fontFamily": "Roboto-Regular, Roboto-Regular-fallback, sans-serif",
-          "fontSize": 13,
+          "fontSize": 14,
           "lineHeight": "14px",
           "marginRight": "10px",
           "transform": "translateY(9%)",
