@@ -9,6 +9,7 @@ import { pageStylePresets } from './page';
 import { secondaryNavigationStylePresets } from './secondary-nav';
 import { textStylePresets } from './text';
 import { flagStylePresets } from './flag';
+import { storyCardStylePresets } from './storyCard';
 
 export const stylePresets = {
   ...articleListStylePresets,
@@ -21,5 +22,6 @@ export const stylePresets = {
   ...navStylePresets,
   ...secondaryNavigationStylePresets,
   ...leadStoryStylePresets,
-  ...flagStylePresets
+  ...flagStylePresets,
+  ...storyCardStylePresets
 };

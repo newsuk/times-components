@@ -1,0 +1,22 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { TCThemeProvider } from '../../utils/index.tsx';
+import { StoryCard } from './index.tsx';
+
+<Meta
+  title="Newskit Components/Puzzles/StoryCard"
+  component={StoryCard}
+/>
+
+## Props
+<Props of={StoryCard} />
+
+export const StoryCardStory = ({ status }) => (
+  <TCThemeProvider>
+    <StoryCard {...{ status }} />
+  </TCThemeProvider>
+);
+
+
+<Story name="StoryCard" >
+  {StoryCardStory.bind({})}
+</Story>
