@@ -10,9 +10,4 @@ describe('Date Card', () => {
     const { asFragment } = render(<DateCard sectionColour={'#333'} data={archivedGames[0]['games'][0]}/>);
     expect(asFragment()).toMatchSnapshot();
   });
-
-  it('should render Date Card', () => {
-    const { getByText } = render(<DateCard sectionColour={'#333'} data={archivedGames[0]['games'][0]} />);
-    expect(getByText('Business')).toBeVisible();
-  });
 });

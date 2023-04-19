@@ -3,21 +3,21 @@ import { styled, getColorCssFromTheme, Label, getMediaQueryFromTheme, getSpacing
 export const Container = styled.div`
   border: 1px solid;
   border-radius: 6px;
-  ${getColorCssFromTheme('backgroundColor', '#F9F9F9')};
+  background-color: #F9F9F9;
   ${getColorCssFromTheme('borderColor', 'interface050')};
-  ${getSizingCssFromTheme('height', '138px')};
-  ${getSizingCssFromTheme('width', '110px')};
+  height: 138px;
+  width: 110px;
   ${getMediaQueryFromTheme('xs')} {
-    ${getSizingCssFromTheme('width', '110px')};
+    width: 110px;
   }
   ${getMediaQueryFromTheme('sm')} {
-    ${getSizingCssFromTheme('width', '110px')};
+    width: 110px;
   }
   ${getMediaQueryFromTheme('lg')} {
-    ${getSizingCssFromTheme('width', '111.25px')};
+    width: 111.25px;
   }
   ${getMediaQueryFromTheme('xl')} {
-    ${getSizingCssFromTheme('width', '148.75px')};
+    width: 148.75px;
   }
 `;
 
@@ -36,7 +36,7 @@ export const StyledLabel = styled(Label)<{
   ${getSpacingCssFromTheme('paddingInline', 'space010')};
   ${getSizingCssFromTheme('height', 'sizing050')};
   ${getSpacingCssFromTheme('marginInlineEnd', 'space000')};
-  ${getColorCssFromTheme('color', '#F9F9F9')};
+  color: #F9F9F9;
   ${({ hasGameLevel, sectionColour }) =>
     hasGameLevel
       ? sectionColour

@@ -1,13 +1,7 @@
 import React from "react";
 import { Container, StyledLabel } from "./styles";
-import { Card, Stack, Headline, TextBlock } from "newskit";
-
-interface DateCardItems {
-  date: string;
-  status?: string;
-  gameLevel?: string;
-  url: string;
-}
+import { Card, Stack, TextBlock } from "newskit";
+import { DateCardItems } from './types';
 
 interface DateCardProps {
   data: DateCardItems;
@@ -25,49 +19,39 @@ export const DateCard = ({ data, sectionColour }: DateCardProps) => {
   });
 
   return (
-    <Stack
-      flow="horizontal-center"
-      stackDistribution="flex-start"
-      spaceInline="space050"
-      height="auto"
-    >
-      <Card href={url}>
-        <Container>
-          <StyledLabel
-            size="small"
-            sectionColour={sectionColour}
-            hasGameLevel={!!gameLevel}
-          >
-            {gameLevel && gameLevel}
-          </StyledLabel>
-          <Stack
-            flow="vertical-center"
-            stackDistribution="flex-start"
-            height="auto"
-          >
-            {dayOfWeek && (
-              <Headline
-                headingAs="h2"
-                overrides={{
-                  paddingBlockEnd: "space000",
-                  typographyPreset: "datecardHeader",
-                  heading: {
-                    stylePreset: "inkBase",
-                  },
-                }}
-              >
-                {dayOfWeek}
-              </Headline>
-            )}
+    <Card href={url}>
+      <Container>
+        <StyledLabel
+          size="small"
+          sectionColour={sectionColour}
+          hasGameLevel={!!gameLevel}
+        >
+          {gameLevel && gameLevel}
+        </StyledLabel>
+        <Stack
+          flow="vertical-center"
+          stackDistribution="flex-start"
+          height="auto"
+        >
+          {dayOfWeek && (
             <TextBlock
-              typographyPreset="utilityLabel010"
-              stylePreset="inkSubtle"
+                as="div"
+                paddingBlock= "space020"
+                typographyPreset= "datecardHeader"
+                stylePreset= "inkBase"
             >
-              {dateString}
+              {dayOfWeek}
             </TextBlock>
-          </Stack>
-        </Container>
-      </Card>
-    </Stack>
+          )}
+          <TextBlock
+            paddingBlock= "space010"
+            typographyPreset="utilityLabel010"
+            stylePreset="inkSubtle"
+          >
+            {dateString}
+          </TextBlock>
+        </Stack>
+      </Container>
+    </Card>
   );
 };

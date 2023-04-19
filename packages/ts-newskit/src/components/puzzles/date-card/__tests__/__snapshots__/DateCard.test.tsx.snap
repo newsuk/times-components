@@ -2,26 +2,20 @@
 
 exports[`Date Card should render render a snapshot 1`] = `
 <DocumentFragment>
-  <div class="css-5axd01">
-  <div class="css-7i4qsc">
-    <div class="css-ho1b0g">
-      <div class="css-1shocxe">
-        <div class="css-l3wl0d">
-          <div class="css-1n1p8pz">
-            <label class="css-tzrxff">Quick</label>
+  <div class="css-ho1b0g">
+    <div class="css-1shocxe">
+      <div class="css-l3wl0d">
+        <a class="nk-card-link css-satdfy" href="https://newskit.co.uk/">
+          <div class="css-1a10mp9">
+            <label class="css-1rcjn43">Quick</label>
             <div class="css-1dfr6je">
-              <a class="nk-card-link css-17cr39m" href="https://newskit.co.uk/">
-                <section class="css-r67wan">
-                  <h2 class="nk-headline-heading css-zoawlk">Fri</h2>
-                </section>
-              </a>
+              <div class="css-1hdzxmh">Fri</div>
               <p class="css-g4bjk0">Mar 3, 2023</p>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
-</div>
 </DocumentFragment>
 `;
