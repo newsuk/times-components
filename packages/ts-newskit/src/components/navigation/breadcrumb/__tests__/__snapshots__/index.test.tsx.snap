@@ -3,6 +3,7 @@
 exports[`Render Breadcrumbs should render a snapshot 1`] = `
 <DocumentFragment>
   <nav
+    aria-label="breadcrumbs"
     class="css-elzvrz"
     data-testid="breadcrumb-container"
   >
