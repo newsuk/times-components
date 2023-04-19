@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.9.0](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.8.3...@times-components/jest-serializer@3.9.0) (2023-04-19)
+
+
+### Features
+
+* **TMRX-753:** update save text font size ([#3323](https://github.com/newsuk/times-components/issues/3323)) ([764ee59](https://github.com/newsuk/times-components/commit/764ee593536dc752ba537f87d1261bb22c64b00e))
+
+
+
+
+
 ## [3.8.3](https://github.com/newsuk/times-components/compare/@times-components/jest-serializer@3.8.2...@times-components/jest-serializer@3.8.3) (2023-04-06)
 
 **Note:** Version bump only for package @times-components/jest-serializer
