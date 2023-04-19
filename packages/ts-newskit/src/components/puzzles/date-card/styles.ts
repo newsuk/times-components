@@ -1,9 +1,16 @@
-import { styled, getColorCssFromTheme, Label, getMediaQueryFromTheme, getSpacingCssFromTheme, getSizingCssFromTheme } from 'newskit';
+import {
+  styled,
+  getColorCssFromTheme,
+  Label,
+  getMediaQueryFromTheme,
+  getSpacingCssFromTheme,
+  getSizingCssFromTheme
+} from 'newskit';
 
 export const Container = styled.div`
   border: 1px solid;
   border-radius: 6px;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   ${getColorCssFromTheme('borderColor', 'interface050')};
   height: 138px;
   width: 110px;
@@ -36,7 +43,7 @@ export const StyledLabel = styled(Label)<{
   ${getSpacingCssFromTheme('paddingInline', 'space010')};
   ${getSizingCssFromTheme('height', 'sizing050')};
   ${getSpacingCssFromTheme('marginInlineEnd', 'space000')};
-  color: #F9F9F9;
+  color: #f9f9f9;
   ${({ hasGameLevel, sectionColour }) =>
     hasGameLevel
       ? sectionColour

@@ -1,6 +1,6 @@
-import React from "react";
-import { Container, StyledLabel } from "./styles";
-import { Card, Stack, TextBlock } from "newskit";
+import React from 'react';
+import { Container, StyledLabel } from './styles';
+import { Card, Stack, TextBlock } from 'newskit';
 import { DateCardItems } from './types';
 
 interface DateCardProps {
@@ -10,12 +10,12 @@ interface DateCardProps {
 
 export const DateCard = ({ data, sectionColour }: DateCardProps) => {
   const { date, gameLevel, url } = data;
-  const timestamp  = new Date(date);
-  const dayOfWeek  = timestamp.toLocaleString("en-us", { weekday: "short" });
-  const dateString = timestamp.toLocaleDateString("en-US", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
+  const timestamp = new Date(date);
+  const dayOfWeek = timestamp.toLocaleString('en-us', { weekday: 'short' });
+  const dateString = timestamp.toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric'
   });
 
   return (
@@ -35,16 +35,16 @@ export const DateCard = ({ data, sectionColour }: DateCardProps) => {
         >
           {dayOfWeek && (
             <TextBlock
-                as="div"
-                paddingBlock= "space020"
-                typographyPreset= "datecardHeader"
-                stylePreset= "inkBase"
+              as="div"
+              paddingBlock="space020"
+              typographyPreset="datecardHeader"
+              stylePreset="inkBase"
             >
               {dayOfWeek}
             </TextBlock>
           )}
           <TextBlock
-            paddingBlock= "space010"
+            paddingBlock="space010"
             typographyPreset="utilityLabel010"
             stylePreset="inkSubtle"
           >
