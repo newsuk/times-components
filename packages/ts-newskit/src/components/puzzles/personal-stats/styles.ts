@@ -4,7 +4,8 @@ import {
   BlockProps,
   TextBlockProps,
   styled,
-  getMediaQueryFromTheme
+  getMediaQueryFromTheme,
+  getColorCssFromTheme
 } from 'newskit';
 
 export const PersonalStatisticsContainer = styled(Block)<BlockProps>`
@@ -47,8 +48,5 @@ export const PersonalStatisticsNumber = styled(TextBlock)<TextBlockProps>`
 `;
 
 export const PersonalStatisticsLabel = styled(TextBlock)<TextBlockProps>`
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 18px;
-  color: #696969;
+  ${getColorCssFromTheme('color', 'inkNonEssential')};
 `;

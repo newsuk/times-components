@@ -52,6 +52,7 @@
   "dependencies": {
     "@emotion/react": "11.10.0",
     "@emotion/styled": "11.10.0",
+    "@newskit-themes/the-times": "0.0.2",
     "newskit": "7.1.0",
     "react": "16.9.0"
   },

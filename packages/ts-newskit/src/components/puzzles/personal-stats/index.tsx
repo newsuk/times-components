@@ -21,10 +21,10 @@ export const PersonalStats: FC<PersonalStatsProps> = ({ data }) => {
         <PersonalStatisticsCard>
           {data.map(({ value, label }) => (
             <PersonalStatisticsItem as="article">
-              <PersonalStatisticsNumber as="span">
+              <PersonalStatisticsNumber as="span" typographyPreset="editorialHeadline040">
                 {value}
               </PersonalStatisticsNumber>
-              <PersonalStatisticsLabel as="span">
+              <PersonalStatisticsLabel as="span" typographyPreset="utilityLabel020">
                 {label}
               </PersonalStatisticsLabel>
             </PersonalStatisticsItem>
