@@ -37,7 +37,7 @@ export const DateCard = ({ data, sectionColour }: DateCardProps) => {
             <TextBlock
               as="div"
               paddingBlock="space020"
-              typographyPreset="datecardHeader"
+              typographyPreset="dateCardHeader"
               stylePreset="inkBase"
             >
               {dayOfWeek}

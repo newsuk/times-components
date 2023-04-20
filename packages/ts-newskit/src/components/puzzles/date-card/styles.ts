@@ -2,12 +2,13 @@ import {
   styled,
   getColorCssFromTheme,
   Label,
+  Block,
   getMediaQueryFromTheme,
   getSpacingCssFromTheme,
   getSizingCssFromTheme
 } from 'newskit';
 
-export const Container = styled.div`
+export const Container = styled(Block)`
   border: 1px solid;
   border-radius: 6px;
   background-color: #f9f9f9;
@@ -15,9 +16,6 @@ export const Container = styled.div`
   height: 138px;
   width: 110px;
   ${getMediaQueryFromTheme('xs')} {
-    width: 110px;
-  }
-  ${getMediaQueryFromTheme('sm')} {
     width: 110px;
   }
   ${getMediaQueryFromTheme('lg')} {

@@ -173,7 +173,7 @@ export const typographyPresets = Object.fromEntries(
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     },
-    datecardHeader: {
+    dateCardHeader: {
       fontFamily: '{{fonts.fontFamily040.fontFamily}}',
       fontSize: '{{fonts.fontSize090}}',
       fontWeight: '{{fonts.fontWeight040}}',
