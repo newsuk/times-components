@@ -1,0 +1,26 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { TCThemeProvider } from '../../utils/index.tsx';
+import { PuzzlesFlag } from './index.tsx';
+
+<Meta
+  title="Newskit Components/Puzzles/Flag"
+  component={PuzzlesFlag}
+/>
+
+## Props
+<Props of={PuzzlesFlag} />
+
+export const FlagStory = ({ status }) => (
+  <TCThemeProvider>
+    <PuzzlesFlag {...{ status }} />
+  </TCThemeProvider>
+);
+
+
+<Story name="Flag" args={{ status: 'COMPLETE' }} 
+  argTypes={{
+    status: { control: "select", options: ["COMPLETE", "IN PROGRESS"] }
+  }}
+>
+  {FlagStory.bind({})}
+</Story>
