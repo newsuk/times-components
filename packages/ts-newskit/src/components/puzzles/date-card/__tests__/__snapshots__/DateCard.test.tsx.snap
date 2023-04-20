@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Date Card should render puzzles Date Card 1`] = `
+<DocumentFragment>
+  <div
+    class="css-ho1b0g"
+  >
+    <div
+      class="css-1shocxe"
+    >
+      <div
+        class="css-l3wl0d"
+      >
+        <div
+          class="css-n81net"
+        >
+          <label
+            class="css-1q5hjdt"
+          >
+            Quick
+          </label>
+          <div
+            class="css-1dfr6je"
+          >
+            <div
+              class="css-1hdzxmh"
+            >
+              Thu
+            </div>
+            <p
+              class="css-fn1n1g"
+            >
+              Mar 2, 2023
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

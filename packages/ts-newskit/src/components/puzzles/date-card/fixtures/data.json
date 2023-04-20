@@ -1,0 +1,166 @@
+{
+    "archivedGames": [
+      {
+        "type": "Cryptic",
+        "games": [
+            {
+                "date": "Sat Mar 04 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "Jumbo",
+                "url": ""
+            },
+            {
+                "date": "Fri Mar 03 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "Quick",
+                "url": ""
+            },
+            {
+                "date": "Mon Feb 27 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "COMPLETE",
+                "gameLevel": "Quick",
+                "url": ""
+            },
+            {
+                "date": "Sun Feb 26 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "",
+                "url": ""
+            },
+            {
+                "date": "Sat Feb 25 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "COMPLETE",
+                "gameLevel": "Jumbo",
+                "url": ""
+            },
+            {
+                "date": "Fri Feb 24 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "Quick",
+                "url": ""
+            },
+            {
+                "date": "Thu Feb 23 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "Quick",
+                "url": ""
+            }
+        ]
+      },
+      {
+        "type": "Concise",
+        "games": [
+            {
+                "date": "Sat Mar 04 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "Jumbo",
+                "url": ""
+            },
+            {
+                "date": "Fri Mar 03 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "Quick",
+                "url": ""
+            },
+            {
+                "date": "Mon Feb 27 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "COMPLETE",
+                "gameLevel": "Quick",
+                "url": ""
+            }
+        ]
+      },
+      {
+        "type": "Mephisto",
+        "games": [
+            {
+                "date": "Sat Mar 04 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "Jumbo",
+                "url": ""
+            },
+            {
+                "date": "Fri Mar 03 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "Quick",
+                "url": ""
+            },
+            {
+                "date": "Mon Feb 27 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "COMPLETE",
+                "gameLevel": "Quick",
+                "url": ""
+            }
+        ]
+      },
+      {
+        "type": "General Knowledge",
+        "games": [
+            {
+                "date": "Sat Mar 04 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "Jumbo",
+                "url": ""
+            },
+            {
+                "date": "Fri Mar 03 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "Quick",
+                "url": ""
+            },
+            {
+                "date": "Mon Feb 27 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "COMPLETE",
+                "gameLevel": "Quick",
+                "url": ""
+            }
+        ]
+      },
+      {
+        "type": "O Tempora!",
+        "games": [
+            {
+                "date": "Sat Mar 04 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "Jumbo",
+                "url": ""
+            },
+            {
+                "date": "Fri Mar 03 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "Quick",
+                "url": ""
+            },
+            {
+                "date": "Mon Feb 27 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "COMPLETE",
+                "gameLevel": "Quick",
+                "url": ""
+            }
+        ]
+      },
+      {
+        "type": "Listener",
+        "games": [
+            {
+                "date": "Sat Mar 04 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "Jumbo",
+                "url": ""
+            },
+            {
+                "date": "Fri Mar 03 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "Quick",
+                "url": ""
+            },
+            {
+                "date": "Mon Feb 27 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "COMPLETE",
+                "gameLevel": "Quick",
+                "url": ""
+            }
+        ]
+      }
+    ]
+}
