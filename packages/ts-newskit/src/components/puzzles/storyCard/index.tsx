@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { CardMedia } from 'newskit';
 import { Headline } from 'newskit';
 //import { IconFilledImage } from 'newskit';
@@ -10,16 +10,32 @@ import {
   Visible
 } from 'newskit';
 
-export const StoryCard = () => {
+interface CardProps {
+  image: string;
+  title: string;
+  url: string;
+  category: string;
+  categoryUrl: string;
+  timeToRead: string;
+}
+
+export const StoryCard: FC<CardProps> = ({
+  image,
+  title,
+  url,
+  category,
+  categoryUrl,
+  timeToRead
+}) => {
   return (
     <CardComposable overrides={{}}>
-      <Visible sm xs>
+      <Visible lg sm xs>
         <CardMedia
           media={{
             hidden: true,
             loadingAspectRatio: '3:2',
             alt: 'story image',
-            src: 'https://storybook.newskit.co.uk/placeholder-3x2.png'
+            src: image
           }}
         />
       </Visible>
@@ -28,10 +44,10 @@ export const StoryCard = () => {
           headingAs="h3"
           overrides={{
             marginBlock: 'space030',
-            typographyPreset: 'utilityLabel010'
+            typographyPreset: 'editorialHeadline020'
           }}
         >
-          ChatGPT invents Sudoku-style puzzle to keep the humans busy
+          {title}
         </Headline>
       </CardContent>
       <CardActions
@@ -44,18 +60,18 @@ export const StoryCard = () => {
           overrides={{
             stylePreset: 'StoryCardCategory',
             marginInlineEnd: 'space020',
-            typographyPreset: 'articleListTimeToRead'
+            typographyPreset: 'utilityLabel010'
           }}
         >
-          Technology
+          {category}
         </Tag>
         <Tag
           overrides={{
             stylePreset: 'StoryCardTime',
-            typographyPreset: 'articleListTimeToRead'
+            typographyPreset: 'utilityLabel010'
           }}
         >
-          4 min read
+          {timeToRead}
         </Tag>
       </CardActions>
     </CardComposable>

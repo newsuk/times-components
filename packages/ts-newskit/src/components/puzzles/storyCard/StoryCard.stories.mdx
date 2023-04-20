@@ -10,13 +10,13 @@ import { StoryCard } from './index.tsx';
 ## Props
 <Props of={StoryCard} />
 
-export const StoryCardStory = ({ status }) => (
+export const StoryCardStory = ({ image, title, url, category, categoryUrl, timeToRead }) => (
   <TCThemeProvider>
-    <StoryCard {...{ status }} />
+    <StoryCard {...{ image, title, url, category, categoryUrl, timeToRead}} />
   </TCThemeProvider>
 );
 
 
-<Story name="StoryCard" >
+<Story name="StoryCard" args={{ image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX6TXlmeO7_R_AQY1c1T18bfldaLhxiIjIpwMFJZZsCQ&s', title: 'Test title', url: 'https://www.thetimes.co.uk/', category: 'test category', categoryUrl: 'https://www.thetimes.co.uk/', timeToRead: '4 min read' }}>
   {StoryCardStory.bind({})}
 </Story>
