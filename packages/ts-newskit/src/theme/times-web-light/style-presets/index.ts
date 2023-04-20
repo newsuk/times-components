@@ -9,6 +9,7 @@ import { pageStylePresets } from './page';
 import { secondaryNavigationStylePresets } from './secondary-nav';
 import { sliceStylePresets } from './slices';
 import { textStylePresets } from './text';
+import { accordionStylePresets } from './accordion';
 
 export const stylePresets = {
   ...articleListStylePresets,
@@ -21,5 +22,6 @@ export const stylePresets = {
   ...navStylePresets,
   ...secondaryNavigationStylePresets,
   ...leadStoryStylePresets,
+  ...accordionStylePresets,
   ...sliceStylePresets
 };
