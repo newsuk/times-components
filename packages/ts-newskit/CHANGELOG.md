@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.16.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.15.0...@times-components/ts-newskit@1.16.0) (2023-04-20)
+
+
+### Features
+
+* **TMST-632:** create flag component ([#3322](https://github.com/newsuk/times-components/issues/3322)) ([23ee2ce](https://github.com/newsuk/times-components/commit/23ee2ce9fd8558ede53e6f3141739da2d4c49a50))
+
+
+
+
+
 # [1.15.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.14.8...@times-components/ts-newskit@1.15.0) (2023-04-20)
 
 
