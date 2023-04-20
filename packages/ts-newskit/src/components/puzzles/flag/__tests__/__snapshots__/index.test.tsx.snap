@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Flag test should render a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-vylmno"
+    data-testid="flag"
+  >
+    <span
+      class="css-n79ak9"
+    >
+      COMPLETE
+    </span>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Flag test should render a snapshot with label in progress 1`] = `
+<DocumentFragment>
+  <div
+    class="css-smvdva"
+    data-testid="flag"
+  >
+    <span
+      class="css-n79ak9"
+    >
+      IN PROGRESS
+    </span>
+  </div>
+</DocumentFragment>
+`;

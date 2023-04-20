@@ -1,0 +1,698 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Archive should render a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-zrkbze"
+  >
+    <div
+      class="css-1oteowz"
+    >
+      <h3
+        class="css-18mb4bh"
+      >
+        <button
+          aria-controls="nk-29-content"
+          aria-expanded="true"
+          class="css-kc6xpy"
+          data-testid="accordion-control"
+          id="nk-1"
+        >
+          <div
+            class="css-1gwez8i"
+          >
+            CRYPTIC
+          </div>
+          <div
+            class="css-1cwczap"
+          >
+            <svg
+              aria-hidden="true"
+              class="css-bl48kn-EmotionIconBase ex0cdmw0"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14z"
+              />
+            </svg>
+          </div>
+        </button>
+      </h3>
+      <div
+        class="nk-accordion-enter-done css-84bues"
+        data-testid="panel-transition-container"
+        style="max-height: 0px;"
+      >
+        <div
+          aria-labelledby="nk-1"
+          class="css-1ed3eu9"
+          data-testid="accordion-content"
+          id="nk-29-content"
+          role="region"
+        >
+          <div
+            class="css-1r18k3i"
+          >
+            <div
+              class="css-6uqogc"
+              data-testid="scroll-container"
+              tabindex="0"
+            >
+              <div
+                class="css-84xlto"
+              >
+                <div
+                  class="css-pp7bhn"
+                  id="nk-2"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-3"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-4"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-5"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-6"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-7"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-8"
+                />
+                <div
+                  class="css-d8xcm6"
+                >
+                  <div
+                    class="css-efqjdh"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="css-b9exj6-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      overrides="[object Object]"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        fill="none"
+                        height="24"
+                        width="24"
+                      />
+                      <path
+                        d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
+                      />
+                    </svg>
+                    <p
+                      class="css-pe2a7o"
+                    >
+                      See more
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-1oteowz"
+    >
+      <h3
+        class="css-18mb4bh"
+      >
+        <button
+          aria-controls="nk-30-content"
+          aria-expanded="false"
+          class="css-kc6xpy"
+          data-testid="accordion-control"
+          id="nk-9"
+        >
+          <div
+            class="css-1gwez8i"
+          >
+            CONCISE
+          </div>
+          <div
+            class="css-1cwczap"
+          >
+            <svg
+              aria-hidden="true"
+              class="css-bl48kn-EmotionIconBase ex0cdmw0"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </div>
+        </button>
+      </h3>
+      <div
+        class="nk-accordion-exit-done css-84bues"
+        data-testid="panel-transition-container"
+        style="max-height: 0px;"
+      >
+        <div
+          aria-labelledby="nk-9"
+          class="css-1ed3eu9"
+          data-testid="accordion-content"
+          id="nk-30-content"
+          role="region"
+        >
+          <div
+            class="css-1r18k3i"
+          >
+            <div
+              class="css-6uqogc"
+              data-testid="scroll-container"
+              tabindex="0"
+            >
+              <div
+                class="css-84xlto"
+              >
+                <div
+                  class="css-pp7bhn"
+                  id="nk-10"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-11"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-12"
+                />
+                <div
+                  class="css-d8xcm6"
+                >
+                  <div
+                    class="css-efqjdh"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="css-b9exj6-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      overrides="[object Object]"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        fill="none"
+                        height="24"
+                        width="24"
+                      />
+                      <path
+                        d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
+                      />
+                    </svg>
+                    <p
+                      class="css-pe2a7o"
+                    >
+                      See more
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-1oteowz"
+    >
+      <h3
+        class="css-18mb4bh"
+      >
+        <button
+          aria-controls="nk-31-content"
+          aria-expanded="false"
+          class="css-kc6xpy"
+          data-testid="accordion-control"
+          id="nk-13"
+        >
+          <div
+            class="css-1gwez8i"
+          >
+            MEPHISTO
+          </div>
+          <div
+            class="css-1cwczap"
+          >
+            <svg
+              aria-hidden="true"
+              class="css-bl48kn-EmotionIconBase ex0cdmw0"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </div>
+        </button>
+      </h3>
+      <div
+        class="nk-accordion-exit-done css-84bues"
+        data-testid="panel-transition-container"
+        style="max-height: 0px;"
+      >
+        <div
+          aria-labelledby="nk-13"
+          class="css-1ed3eu9"
+          data-testid="accordion-content"
+          id="nk-31-content"
+          role="region"
+        >
+          <div
+            class="css-1r18k3i"
+          >
+            <div
+              class="css-6uqogc"
+              data-testid="scroll-container"
+              tabindex="0"
+            >
+              <div
+                class="css-84xlto"
+              >
+                <div
+                  class="css-pp7bhn"
+                  id="nk-14"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-15"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-16"
+                />
+                <div
+                  class="css-d8xcm6"
+                >
+                  <div
+                    class="css-efqjdh"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="css-b9exj6-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      overrides="[object Object]"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        fill="none"
+                        height="24"
+                        width="24"
+                      />
+                      <path
+                        d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
+                      />
+                    </svg>
+                    <p
+                      class="css-pe2a7o"
+                    >
+                      See more
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-1oteowz"
+    >
+      <h3
+        class="css-18mb4bh"
+      >
+        <button
+          aria-controls="nk-32-content"
+          aria-expanded="false"
+          class="css-kc6xpy"
+          data-testid="accordion-control"
+          id="nk-17"
+        >
+          <div
+            class="css-1gwez8i"
+          >
+            GENERAL KNOWLEDGE
+          </div>
+          <div
+            class="css-1cwczap"
+          >
+            <svg
+              aria-hidden="true"
+              class="css-bl48kn-EmotionIconBase ex0cdmw0"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </div>
+        </button>
+      </h3>
+      <div
+        class="nk-accordion-exit-done css-84bues"
+        data-testid="panel-transition-container"
+        style="max-height: 0px;"
+      >
+        <div
+          aria-labelledby="nk-17"
+          class="css-1ed3eu9"
+          data-testid="accordion-content"
+          id="nk-32-content"
+          role="region"
+        >
+          <div
+            class="css-1r18k3i"
+          >
+            <div
+              class="css-6uqogc"
+              data-testid="scroll-container"
+              tabindex="0"
+            >
+              <div
+                class="css-84xlto"
+              >
+                <div
+                  class="css-pp7bhn"
+                  id="nk-18"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-19"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-20"
+                />
+                <div
+                  class="css-d8xcm6"
+                >
+                  <div
+                    class="css-efqjdh"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="css-b9exj6-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      overrides="[object Object]"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        fill="none"
+                        height="24"
+                        width="24"
+                      />
+                      <path
+                        d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
+                      />
+                    </svg>
+                    <p
+                      class="css-pe2a7o"
+                    >
+                      See more
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-1oteowz"
+    >
+      <h3
+        class="css-18mb4bh"
+      >
+        <button
+          aria-controls="nk-33-content"
+          aria-expanded="false"
+          class="css-kc6xpy"
+          data-testid="accordion-control"
+          id="nk-21"
+        >
+          <div
+            class="css-1gwez8i"
+          >
+            O TEMPORA!
+          </div>
+          <div
+            class="css-1cwczap"
+          >
+            <svg
+              aria-hidden="true"
+              class="css-bl48kn-EmotionIconBase ex0cdmw0"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </div>
+        </button>
+      </h3>
+      <div
+        class="nk-accordion-exit-done css-84bues"
+        data-testid="panel-transition-container"
+        style="max-height: 0px;"
+      >
+        <div
+          aria-labelledby="nk-21"
+          class="css-1ed3eu9"
+          data-testid="accordion-content"
+          id="nk-33-content"
+          role="region"
+        >
+          <div
+            class="css-1r18k3i"
+          >
+            <div
+              class="css-6uqogc"
+              data-testid="scroll-container"
+              tabindex="0"
+            >
+              <div
+                class="css-84xlto"
+              >
+                <div
+                  class="css-pp7bhn"
+                  id="nk-22"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-23"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-24"
+                />
+                <div
+                  class="css-d8xcm6"
+                >
+                  <div
+                    class="css-efqjdh"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="css-b9exj6-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      overrides="[object Object]"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        fill="none"
+                        height="24"
+                        width="24"
+                      />
+                      <path
+                        d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
+                      />
+                    </svg>
+                    <p
+                      class="css-pe2a7o"
+                    >
+                      See more
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-1oteowz"
+    >
+      <h3
+        class="css-18mb4bh"
+      >
+        <button
+          aria-controls="nk-34-content"
+          aria-expanded="false"
+          class="css-kc6xpy"
+          data-testid="accordion-control"
+          id="nk-25"
+        >
+          <div
+            class="css-1gwez8i"
+          >
+            LISTENER
+          </div>
+          <div
+            class="css-1cwczap"
+          >
+            <svg
+              aria-hidden="true"
+              class="css-bl48kn-EmotionIconBase ex0cdmw0"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </div>
+        </button>
+      </h3>
+      <div
+        class="nk-accordion-exit-done css-84bues"
+        data-testid="panel-transition-container"
+        style="max-height: 0px;"
+      >
+        <div
+          aria-labelledby="nk-25"
+          class="css-1ed3eu9"
+          data-testid="accordion-content"
+          id="nk-34-content"
+          role="region"
+        >
+          <div
+            class="css-1r18k3i"
+          >
+            <div
+              class="css-6uqogc"
+              data-testid="scroll-container"
+              tabindex="0"
+            >
+              <div
+                class="css-84xlto"
+              >
+                <div
+                  class="css-pp7bhn"
+                  id="nk-26"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-27"
+                />
+                <div
+                  class="css-pp7bhn"
+                  id="nk-28"
+                />
+                <div
+                  class="css-d8xcm6"
+                >
+                  <div
+                    class="css-efqjdh"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="css-b9exj6-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      overrides="[object Object]"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect
+                        fill="none"
+                        height="24"
+                        width="24"
+                      />
+                      <path
+                        d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
+                      />
+                    </svg>
+                    <p
+                      class="css-pe2a7o"
+                    >
+                      See more
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
