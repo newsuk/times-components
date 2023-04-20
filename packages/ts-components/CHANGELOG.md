@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.69.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.68.0...@times-components/ts-components@1.69.0) (2023-04-19)
+
+
+### Features
+
+* **TMRX-753:** update save text font size ([#3323](https://github.com/newsuk/times-components/issues/3323)) ([764ee59](https://github.com/newsuk/times-components/commit/764ee593536dc752ba537f87d1261bb22c64b00e))
+
+
+
+
+
 # [1.68.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.67.4...@times-components/ts-components@1.68.0) (2023-04-18)
 
 
