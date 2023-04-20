@@ -6,19 +6,22 @@ import {
   getSSRId,
   Stack,
   toNewsKitIcon,
-  TextBlock
+  TextBlock,
+  Card
 } from 'newskit';
 import { CardContainer, SeeMoreBox, StyledAccordionGroup } from './styles';
 import { East } from '@emotion-icons/material';
 import { Puzzles } from './types';
+import { DateCard } from '../date-card';
 
 interface ArchiveProps {
   data: Puzzles;
+  seeMoreLink?: string;
 }
 
 const IconEast = toNewsKitIcon(East);
 
-export const Archive = ({ data }: ArchiveProps) => {
+export const Archive = ({ data, seeMoreLink }: ArchiveProps) => {
   const [expandedMultiple, setExpandedMultiple] = React.useState([0]);
   const puzzleTitleSet = new Set<string>();
   data.list.forEach(puzzle => puzzleTitleSet.add(puzzle.title));
@@ -45,32 +48,46 @@ export const Archive = ({ data }: ArchiveProps) => {
             }
           }}
         >
-          <Scroll overrides={{ overlays: { stylePreset: '__delete' } }}>
+          <Scroll
+            overrides={{ overlays: { stylePreset: '__delete' } }}
+            controls="hover"
+          >
             <GridLayout
               autoFlow="column"
               autoColumns={{ xs: '110px', lg: '111.25px', xl: '148.75px' }}
               columnGap="space030"
             >
-              {data.list.filter(puzzle => puzzle.title === title).map(() => (
-                <CardContainer id={getSSRId()} />
-              ))}
-              <SeeMoreBox>
-                <Stack flow="vertical-center" stackDistribution="center">
-                  <IconEast
-                    overrides={{
-                      size: 'iconSize030',
-                      stylePreset: 'inkBase'
+              {data.list.filter(puzzle => puzzle.title === title).map(item => (
+                <CardContainer id={getSSRId()}>
+                  <DateCard
+                    data={{
+                      publishedAt: item.publishedAt,
+                      url: item.url,
+                      status: item.status,
+                      gameLevel: item.gameLevel
                     }}
                   />
-                  <TextBlock
-                    typographyPreset="utilityButton020"
-                    stylePreset="inkContrast"
-                    marginBlockStart="space030"
-                  >
-                    See more
-                  </TextBlock>
-                </Stack>
-              </SeeMoreBox>
+                </CardContainer>
+              ))}
+              <Card href={seeMoreLink}>
+                <SeeMoreBox>
+                  <Stack flow="vertical-center" stackDistribution="center">
+                    <IconEast
+                      overrides={{
+                        size: 'iconSize030',
+                        stylePreset: 'inkBase'
+                      }}
+                    />
+                    <TextBlock
+                      typographyPreset="utilityButton020"
+                      stylePreset="inkContrast"
+                      marginBlockStart="space030"
+                    >
+                      See more
+                    </TextBlock>
+                  </Stack>
+                </SeeMoreBox>
+              </Card>
             </GridLayout>
           </Scroll>
         </Accordion>
