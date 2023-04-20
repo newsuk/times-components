@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.17.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.16.0...@times-components/ts-newskit@1.17.0) (2023-04-20)
+
+
+### Features
+
+* **TMST-630:** Date component for archive ([#3320](https://github.com/newsuk/times-components/issues/3320)) ([2e80b1d](https://github.com/newsuk/times-components/commit/2e80b1d805693e852a499a6b8a655da2a3d02ae0))
+
+
+
+
+
 # [1.16.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.15.0...@times-components/ts-newskit@1.16.0) (2023-04-20)
 
 
