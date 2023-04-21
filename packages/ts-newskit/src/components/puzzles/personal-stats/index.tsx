@@ -1,13 +1,10 @@
 import React, { FC } from 'react';
-import { Block } from 'newskit';
-import WaveBg from '../../../assets/WaveBg';
+import { Block, GridLayout, GridLayoutItem, TextBlock } from 'newskit';
 import { PersonalStatsItem } from './types';
 import {
   PersonalStatisticsCard,
   PersonalStatisticsContainer,
-  PersonalStatisticsItem,
-  PersonalStatisticsLabel,
-  PersonalStatisticsNumber
+  StyledNewskitWaveBg
 } from './styles';
 
 interface PersonalStatsProps {
@@ -17,21 +14,57 @@ interface PersonalStatsProps {
 export const PersonalStats: FC<PersonalStatsProps> = ({ data }) => {
   return (
     <Block as="section">
-      <PersonalStatisticsContainer>
-        <PersonalStatisticsCard>
+      <PersonalStatisticsContainer
+        flow="vertical-stretch"
+        paddingBlock="space045"
+        paddingInlineStart="space045"
+        paddingInlineEnd="space050"
+      >
+        <PersonalStatisticsCard
+          columns={{ sm: 'repeat(3, max-content)' }}
+          rowGap="space040"
+          columnGap="space070"
+          overrides={{
+            paddingBlock: 'space060',
+            paddingInline: 'space060',
+            marginInline: 'auto',
+            width: '100%',
+            maxWidth: '613px'
+          }}
+          justifyContent="center"
+        >
           {data.map(({ value, label }) => (
-            <PersonalStatisticsItem as="article">
-              <PersonalStatisticsNumber as="span" typographyPreset="editorialHeadline040">
-                {value}
-              </PersonalStatisticsNumber>
-              <PersonalStatisticsLabel as="span" typographyPreset="utilityLabel020">
-                {label}
-              </PersonalStatisticsLabel>
-            </PersonalStatisticsItem>
+            <GridLayout
+              as="article"
+              columns={{ xs: 'auto auto', sm: 'auto' }}
+              columnGap="space040"
+              rowGap="space040"
+              alignItems="center"
+              justifyContent="center"
+            >
+              <GridLayoutItem justifySelf="center">
+                <TextBlock
+                  as="span"
+                  typographyPreset="editorialHeadline040"
+                  stylePreset="inkInverse"
+                >
+                  {value}
+                </TextBlock>
+              </GridLayoutItem>
+              <GridLayoutItem justifySelf="center">
+                <TextBlock
+                  as="span"
+                  typographyPreset="utilityLabel020"
+                  stylePreset="inkNonEssential"
+                >
+                  {label}
+                </TextBlock>
+              </GridLayoutItem>
+            </GridLayout>
           ))}
         </PersonalStatisticsCard>
       </PersonalStatisticsContainer>
-      <WaveBg fill="#FFBB6A" />
+      <StyledNewskitWaveBg />
     </Block>
   );
 };
