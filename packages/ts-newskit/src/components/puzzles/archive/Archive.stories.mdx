@@ -26,15 +26,15 @@ The `Archive` component is used to display a list of archived Puzzle games, filt
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const ArchiveStory = ({ data }) => (
+export const ArchiveStory = ({ data, seeMoreLink }) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
     <Block marginInline='space030' marginBlock='space020'>
-      <Archive {...{ data }} />
+      <Archive data={data} seeMoreLink={seeMoreLink}/>
     </Block>
   </NewsKitProvider>
 );
 
-<Story name="Archive" args={{data: sudokuArchive}} argTypes={{
+<Story name="Archive" args={{data: sudokuArchive, seeMoreLink: 'https://newskit.co.uk/'}} argTypes={{
   data: {
     control: 'select', 
     options: ['Sudoku', 'Crosswords', 'WordPuzzles', 'NumbersAndLogic', 'QuizzesAndTeasers', 'BoardAndCard'],
@@ -46,7 +46,8 @@ export const ArchiveStory = ({ data }) => (
       QuizzesAndTeasers: quizzesAndTeasersArchive,
       BoardAndCard: boardAndCardArchive            
     },
-  }
+  },
+  seeMoreLink: { control: 'text'}
 }}>
   {ArchiveStory.bind({})}
 </Story>
