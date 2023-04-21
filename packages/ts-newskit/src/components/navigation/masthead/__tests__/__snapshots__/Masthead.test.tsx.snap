@@ -25,16 +25,17 @@ exports[`EditionMasthead should render The Sunday Times masthead 1`] = `
             </h1>
           </section>
         </span>
-        <time
-          class="css-1elr04d"
+        <span
+          class="css-6trbv7"
           data-testid="date-time"
         >
-          <span
+          <time
             class="css-100bbur"
+            datetime="2023-02-26 12:01:00+00"
           >
             Sunday February 26 2023 
-          </span>
-        </time>
+          </time>
+        </span>
         <div
           class="css-13byt3y"
         >
@@ -149,16 +150,17 @@ exports[`EditionMasthead should render The Times masthead 1`] = `
             </h1>
           </section>
         </span>
-        <time
-          class="css-1elr04d"
+        <span
+          class="css-6trbv7"
           data-testid="date-time"
         >
-          <span
+          <time
             class="css-100bbur"
+            datetime="2023-02-22 12:01:00+00"
           >
             Wednesday February 22 2023 
-          </span>
-        </time>
+          </time>
+        </span>
         <div
           class="css-13byt3y"
         >

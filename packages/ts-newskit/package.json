@@ -28,7 +28,7 @@
     "fix:tslint": "tslint --fix --project .",
     "lint": "tslint --project . && prettier \"src/**/*.{ts,tsx}\" --list-different",
     "test:unit": "TZ=UTC jest --coverage",
-    "test:unit:updatesnapshot": "yarn test:unit -u",
+    "test:unit:updatesnapshot": "TZ=UTC yarn test:unit -u",
     "watch:build": "run-s clean && run-p build:* \"build:module -- -w\"",
     "watch:tests": "run-s clean build:module && run-p \"build:module -- -w\" \"test:unit -- --watch\"",
     "doc": "run-s doc:html && open-cli build/docs/index.html",
@@ -53,7 +53,8 @@
     "@emotion-icons/material": "3.14.0",
     "@emotion/react": "11.10.0",
     "@emotion/styled": "11.10.0",
-    "newskit": "7.0.0",
+    "@newskit-themes/the-times": "0.0.2",
+    "newskit": "7.2.0",
     "react": "16.9.0"
   },
   "devDependencies": {

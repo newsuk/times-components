@@ -4142,6 +4142,11 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+"@newskit-themes/the-times@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@newskit-themes/the-times/-/the-times-0.0.2.tgz#ac30fe1da87d9a136c31346204bc2b6ac99338ef"
+  integrity sha512-w7+sKXspgNPe9Fdtw5KqDBkoH8YK7Euo35DoPvtZ9XYuVqqYjB3s0QJB93TJvX9/0v05Db6YQER+m6av7ETw7Q==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -5479,121 +5484,6 @@
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^8.0.0"
-
-"@times-components/context@1.10.21":
-  version "1.10.21"
-  resolved "https://registry.yarnpkg.com/@times-components/context/-/context-1.10.21.tgz#1aa80471cbfbf37bcf5fa177b3515e96d57e8273"
-  integrity sha512-yfeCQ9yjEczcznlM95n0iILUkUidHTuGRCIonbLCleeOdRwU2mr4Sn8iDNG6fc8keGWjDZgcGQzKWIljs3lv2g==
-  dependencies:
-    "@times-components/ts-styleguide" "1.42.0"
-
-"@times-components/error-view@2.6.2":
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/@times-components/error-view/-/error-view-2.6.2.tgz#1f10371d96670f24dfbf9270e74902a4d487be7c"
-  integrity sha512-K4Jm8lYkLxfmJbrk4Vs4wR946UsZG/31BPBjYNjSO+t1us50tBWxu6glmcfuDzbFqm8sHga81tLtAv8IVnAARw==
-  dependencies:
-    "@times-components/ts-styleguide" "1.42.0"
-    "@times-components/utils" "6.16.2"
-    prop-types "15.7.2"
-
-"@times-components/icons@2.20.2":
-  version "2.20.2"
-  resolved "https://registry.yarnpkg.com/@times-components/icons/-/icons-2.20.2.tgz#5068a446f094f9d5813b8caaa8c900de9664f504"
-  integrity sha512-ygreMLF/t5dULCbJFIIBR220aLWBt1SmMaKt5OM54mG4zSJnLPdQwJ0peRGZOhnQPSbvxrpqiwld+GyVkhqgOA==
-  dependencies:
-    "@times-components/ts-styleguide" "1.42.0"
-    "@times-components/utils" "6.16.2"
-    prop-types "15.7.2"
-    styled-components "4.3.2"
-
-"@times-components/image@6.14.19":
-  version "6.14.19"
-  resolved "https://registry.yarnpkg.com/@times-components/image/-/image-6.14.19.tgz#9a8faa4f8523403d957c55fb26af9945560faef0"
-  integrity sha512-y0I+hP8bb1IvPKqRY5rpOzKGn9t3fDAheUuGAz2JZadZcFMC5Yfqjp6Do+vbvPbocfb0iQ9Y7zXtlzfN37KknQ==
-  dependencies:
-    "@times-components/ts-styleguide" "1.42.0"
-    "@times-components/utils" "6.16.2"
-    prop-types "15.7.2"
-    styled-components "4.3.2"
-
-"@times-components/link@3.12.1":
-  version "3.12.1"
-  resolved "https://registry.yarnpkg.com/@times-components/link/-/link-3.12.1.tgz#7b381b1f96a62ddfbbaca7257a33e35d9e8f64e0"
-  integrity sha512-86alyaAT7ApdJRL1Rcv1tdOolL+CX/M2G9oi6Nvo3v4mDOtgGpwPLYG0H7n6nV39VpH31myIvdQ8YUnh8IcqUQ==
-  dependencies:
-    "@times-components/ts-styleguide" "1.42.0"
-    "@times-components/utils" "6.16.1"
-    prop-types "15.7.2"
-    react "16.9.0"
-    react-dom "16.9.0"
-    styled-components "4.3.2"
-
-"@times-components/ts-styleguide@1.42.0":
-  version "1.42.0"
-  resolved "https://registry.yarnpkg.com/@times-components/ts-styleguide/-/ts-styleguide-1.42.0.tgz#e6993b7ed8485b9e4ffb6f1fdfc16a783dde6cc6"
-  integrity sha512-yXzDnwolyBR8Q62h+uOVOUT3Id2dFwoN6BIa74SHxCoIuTb1P9W0M3r8IS0HlWJvYDJUO0vnF/Siq9BwzlOXoQ==
-  dependencies:
-    "@times-components/link" "3.12.1"
-    "@times-components/utils" "6.16.1"
-    react "16.9.0"
-    styled-components "4.3.2"
-
-"@times-components/user-state@0.4.24":
-  version "0.4.24"
-  resolved "https://registry.yarnpkg.com/@times-components/user-state/-/user-state-0.4.24.tgz#df8ab2ec75c543e4e0adfc438b230d029b523617"
-  integrity sha512-dyc7i56ku7scUQJBsMOYIj/Dz5tfc+Wca6Xv05MMpyzfxBfr6NINLKnOYaBshu8M7vKKB5r2m1XMs1lnzOXpKQ==
-  dependencies:
-    "@storybook/addon-knobs" "6.4.0"
-    "@times-components/context" "1.10.21"
-    "@times-components/utils" "6.16.2"
-    prop-types "15.7.2"
-
-"@times-components/utils@6.16.1":
-  version "6.16.1"
-  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-6.16.1.tgz#4733571134ea89ac9bba6cee00df1f4573204181"
-  integrity sha512-aUgX+28z1nqxzYBHnRxo0ZKzMB7/Umzwl3S1OnbvehIKMjiQv1X+xdThdKJPDUbh+mlvw5jeBaPh84AUL8A38A==
-  dependencies:
-    "@times-components/schema" "0.7.4"
-    "@times-components/ts-styleguide" "1.42.0"
-    apollo-cache-inmemory "1.5.1"
-    apollo-client "2.5.1"
-    apollo-link "1.2.4"
-    apollo-link-http "1.5.14"
-    apollo-link-persisted-queries "0.2.2"
-    lodash.omitby "4.6.0"
-    prop-types "15.7.2"
-    styled-components "4.3.2"
-    unfetch "^3.0.0"
-
-"@times-components/utils@6.16.2":
-  version "6.16.2"
-  resolved "https://registry.yarnpkg.com/@times-components/utils/-/utils-6.16.2.tgz#b28e519899cf540c2530567008ed82a1b0b33465"
-  integrity sha512-BmfQxiy+N5ZjExi3La7q6npbCYL9XIRnYGqTxBQx2kFqfkiPOKRY2KAH0efBym8YQEAse5t43KKy6YUS3OjR/w==
-  dependencies:
-    "@times-components/schema" "0.7.4"
-    "@times-components/ts-styleguide" "1.42.0"
-    apollo-cache-inmemory "1.5.1"
-    apollo-client "2.5.1"
-    apollo-link "1.2.4"
-    apollo-link-http "1.5.14"
-    apollo-link-persisted-queries "0.2.2"
-    lodash.omitby "4.6.0"
-    prop-types "15.7.2"
-    styled-components "4.3.2"
-    unfetch "^3.0.0"
-
-"@times-components/video@4.15.2":
-  version "4.15.2"
-  resolved "https://registry.yarnpkg.com/@times-components/video/-/video-4.15.2.tgz#69d01e167f6699697bff939171503045a53a05bb"
-  integrity sha512-3vAvLkbvUHMyjvOac8L2BM0QXsX8g/szRXXE7Sla1m7RYCHOENTKVTXuYh5eVDdqQu+jD65UGfwL0/sCXOw8Kw==
-  dependencies:
-    "@times-components/error-view" "2.6.2"
-    "@times-components/icons" "2.20.2"
-    "@times-components/image" "6.14.19"
-    "@times-components/ts-styleguide" "1.42.0"
-    "@times-components/utils" "6.16.2"
-    prop-types "15.7.2"
-    styled-components "4.3.2"
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -18296,10 +18186,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.1.tgz#26c8a3cee6cc05fbcf1e333cd2fc3e003326c0b5"
   integrity sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==
 
-newskit@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/newskit/-/newskit-7.0.0.tgz#9bdc1a032f81dcb7028f6af00af60014005c1cbc"
-  integrity sha512-6Hx5rvQ3CJqNd/1dMrsEO7BivZ/xv3q5z2ujL+LSq8ejBPssOF99USFZkH6KytNw9S8A2Z43smRny2mUBDSGKQ==
+newskit@7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/newskit/-/newskit-7.2.0.tgz#fdb668fe3ebc9a8dbf1e66447f3ebc43c93bb3c9"
+  integrity sha512-4EH8TyqwvqYPe6BXr0aItCr6o4s0vBtkOOiF8rCt7+e7TW4ihPCYXNCegL5vi8ZO61wk8+uFpn2bpgQ2nqpBxA==
   dependencies:
     "@capsizecss/core" "^3.0.0"
     "@emotion-icons/emotion-icon" "4.1.0"
@@ -18313,7 +18203,7 @@ newskit@7.0.0:
     dequal "^1.0.0"
     downshift "^6.1.7"
     react-focus-lock "^2.5.0"
-    react-hook-form "^7.5.3"
+    react-hook-form "^7.43.1"
     react-hot-toast "^1.0.2"
     react-range "^1.8.12"
     react-transition-group "^4.4.1"
@@ -21130,10 +21020,10 @@ react-helmet-async@1.0.2:
     react-fast-compare "2.0.4"
     shallowequal "1.1.0"
 
-react-hook-form@^7.5.3:
-  version "7.41.5"
-  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.41.5.tgz#dcd0e7438c15044eadc99df6deb889da5858a03b"
-  integrity sha512-DAKjSJ7X9f16oQrP3TW2/eD9N6HOgrmIahP4LOdFphEWVfGZ2LulFd6f6AQ/YS/0cx/5oc4j8a1PXxuaurWp/Q==
+react-hook-form@^7.43.1:
+  version "7.43.9"
+  resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.43.9.tgz#84b56ac2f38f8e946c6032ccb760e13a1037c66d"
+  integrity sha512-AUDN3Pz2NSeoxQ7Hs6OhQhDr6gtF9YRuutGDwPQqhSUAHJSgGl2VeY3qN19MG0SucpjgDiuMJ4iC5T5uB+eaNQ==
 
 react-hot-toast@^1.0.2:
   version "1.0.2"
