@@ -5,21 +5,18 @@ import {
   Scroll,
   getSSRId,
   Stack,
-  toNewsKitIcon,
   TextBlock,
   Card
 } from 'newskit';
 import { CardContainer, SeeMoreBox, StyledAccordionGroup } from './styles';
-import { East } from '@emotion-icons/material';
 import { Puzzles } from './types';
 import { DateCard } from '../date-card';
+import { NewskitIconEast } from '../../../assets';
 
 interface ArchiveProps {
   data: Puzzles;
   seeMoreLink?: string;
 }
-
-const IconEast = toNewsKitIcon(East);
 
 export const Archive = ({ data, seeMoreLink }: ArchiveProps) => {
   const [expandedMultiple, setExpandedMultiple] = React.useState([0]);
@@ -72,7 +69,7 @@ export const Archive = ({ data, seeMoreLink }: ArchiveProps) => {
               <Card href={seeMoreLink}>
                 <SeeMoreBox>
                   <Stack flow="vertical-center" stackDistribution="center">
-                    <IconEast
+                    <NewskitIconEast
                       overrides={{
                         size: 'iconSize030',
                         stylePreset: 'inkBase'
