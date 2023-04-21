@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.18.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.17.0...@times-components/ts-newskit@1.18.0) (2023-04-21)
+
+
+### Features
+
+* **TMST-619:** create puzzles archive component ([#3324](https://github.com/newsuk/times-components/issues/3324)) ([7765bff](https://github.com/newsuk/times-components/commit/7765bff9209d73b51fad9081f97f36aa45c265a3))
+
+
+
+
+
 # [1.17.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.16.0...@times-components/ts-newskit@1.17.0) (2023-04-20)
 
 
