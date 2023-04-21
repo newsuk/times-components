@@ -1,15 +1,6 @@
 // @ts-nocheck
 import { createTheme } from 'newskit';
-import {
-  typographyPresets,
-  colors,
-  borders,
-  fonts,
-  overlays,
-  shadows,
-  sizing,
-  spacePresets
-} from '@newskit-themes/the-times/TheTimes-light-puzzle.json';
+import { TheTimesLightPuzzle } from '@newskit-themes/the-times';
 import { stylePresets } from './style-presets';
 
 export const PuzzlesWebLightTheme = createTheme({
@@ -22,14 +13,7 @@ export const PuzzlesWebLightTheme = createTheme({
       lg: 1024,
       xl: 1320
     },
-    colors,
-    borders,
-    fonts,
-    overlays,
-    shadows,
-    sizing,
-    spacePresets,
-    typographyPresets,
+    ...TheTimesLightPuzzle,
     stylePresets
   }
 });
