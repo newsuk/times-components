@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container, StyledLabel } from './styles';
-import { Card, Stack, TextBlock } from 'newskit';
+import { Block, Card, Stack, TextBlock } from 'newskit';
 import { DateCardItems } from './types';
+import { PuzzlesFlag } from '../flag';
 
 interface DateCardProps {
   data: DateCardItems;
@@ -9,8 +10,8 @@ interface DateCardProps {
 }
 
 export const DateCard = ({ data, sectionColour }: DateCardProps) => {
-  const { date, gameLevel, url } = data;
-  const timestamp = new Date(date);
+  const { publishedAt, gameLevel, url, status } = data;
+  const timestamp = new Date(publishedAt);
   const dayOfWeek = timestamp.toLocaleString('en-us', { weekday: 'short' });
   const dateString = timestamp.toLocaleDateString('en-US', {
     month: 'short',
@@ -50,6 +51,11 @@ export const DateCard = ({ data, sectionColour }: DateCardProps) => {
           >
             {dateString}
           </TextBlock>
+          {status && (
+            <Block marginBlockStart="space030">
+              <PuzzlesFlag status={status} />
+            </Block>
+          )}
         </Stack>
       </Container>
     </Card>

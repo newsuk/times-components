@@ -17,3 +17,6 @@ export {
 export { GlobalNavWithCustomDrawer } from './components/navigation/global-nav';
 export { SecondaryNavigation } from './components/navigation/secondary-menu';
 export { TSNewskitDrawer } from './components/navigation/global-nav';
+export { Archive } from './components/puzzles/archive';
+export { DateCard } from './components/puzzles/date-card';
+export { PuzzlesFlag } from './components/puzzles/flag';
