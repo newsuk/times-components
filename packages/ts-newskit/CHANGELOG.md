@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.19.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.18.0...@times-components/ts-newskit@1.19.0) (2023-04-21)
+
+
+### Features
+
+* **TMST-621:** Added PersonalStats component ([#3313](https://github.com/newsuk/times-components/issues/3313)) ([36ef1c4](https://github.com/newsuk/times-components/commit/36ef1c466d3e3fec02728a43621500ec68ad11f3))
+
+
+
+
+
 # [1.18.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.17.0...@times-components/ts-newskit@1.18.0) (2023-04-21)
 
 
