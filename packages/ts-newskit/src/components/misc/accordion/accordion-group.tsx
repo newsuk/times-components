@@ -24,7 +24,6 @@ const sanitiseCopy = (copy: string = '', allowedTags: {} = {}) => {
   return xss(decodedCopy, options);
 };
 
-
 type AccordionProps = {
   header: string;
   content: string;
