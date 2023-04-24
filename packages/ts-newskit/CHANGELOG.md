@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.24.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.23.0...@times-components/ts-newskit@1.24.0) (2023-04-24)
+
+
+### Features
+
+* **TDP-000:** toast component ([#3330](https://github.com/newsuk/times-components/issues/3330)) ([c7a92a8](https://github.com/newsuk/times-components/commit/c7a92a89e238df4c08a148e679f10adbd6db8658))
+
+
+
+
+
 # [1.23.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.22.0...@times-components/ts-newskit@1.23.0) (2023-04-24)
 
 
