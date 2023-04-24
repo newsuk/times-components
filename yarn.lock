@@ -4142,10 +4142,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@newskit-themes/the-times@0.0.0":
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/@newskit-themes/the-times/-/the-times-0.0.0.tgz#fb3d9ac827e5935317c996c3f671682f914e9a67"
-  integrity sha512-9DvP1evsnb3rcG+7fhzUImypPbvb4r7KUQJa5BO8KFJamFFkOCpsHSpadEktbJFLP7JoOcUZ9Vynlmel/esI1A==
+"@newskit-themes/the-times@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@newskit-themes/the-times/-/the-times-0.0.2.tgz#ac30fe1da87d9a136c31346204bc2b6ac99338ef"
+  integrity sha512-w7+sKXspgNPe9Fdtw5KqDBkoH8YK7Euo35DoPvtZ9XYuVqqYjB3s0QJB93TJvX9/0v05Db6YQER+m6av7ETw7Q==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -18186,10 +18186,10 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.1.tgz#26c8a3cee6cc05fbcf1e333cd2fc3e003326c0b5"
   integrity sha512-9iN1ka/9zmX1ZvLV9ewJYEk9h7RyRRtqdK0woXcqohu8EWIerfPUjYJPg0ULy0UqP7cslmdGc8xKDJcojlKiaw==
 
-newskit@7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/newskit/-/newskit-7.1.0.tgz#cf0799dcf9226a4b0c9353351d6c12be3ad306c4"
-  integrity sha512-glioV9jCjHprUidoa6+Q4HS6venNg6AJOoHzUotFw1EzK01tLe2ZptKIjRdrC3eGO/G3gNK8LF64QDtEf179qA==
+newskit@7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/newskit/-/newskit-7.2.0.tgz#fdb668fe3ebc9a8dbf1e66447f3ebc43c93bb3c9"
+  integrity sha512-4EH8TyqwvqYPe6BXr0aItCr6o4s0vBtkOOiF8rCt7+e7TW4ihPCYXNCegL5vi8ZO61wk8+uFpn2bpgQ2nqpBxA==
   dependencies:
     "@capsizecss/core" "^3.0.0"
     "@emotion-icons/emotion-icon" "4.1.0"
@@ -18203,7 +18203,7 @@ newskit@7.1.0:
     dequal "^1.0.0"
     downshift "^6.1.7"
     react-focus-lock "^2.5.0"
-    react-hook-form "^7.5.3"
+    react-hook-form "^7.43.1"
     react-hot-toast "^1.0.2"
     react-range "^1.8.12"
     react-transition-group "^4.4.1"
@@ -21020,7 +21020,7 @@ react-helmet-async@1.0.2:
     react-fast-compare "2.0.4"
     shallowequal "1.1.0"
 
-react-hook-form@^7.5.3:
+react-hook-form@^7.43.1:
   version "7.43.9"
   resolved "https://registry.yarnpkg.com/react-hook-form/-/react-hook-form-7.43.9.tgz#84b56ac2f38f8e946c6032ccb760e13a1037c66d"
   integrity sha512-AUDN3Pz2NSeoxQ7Hs6OhQhDr6gtF9YRuutGDwPQqhSUAHJSgGl2VeY3qN19MG0SucpjgDiuMJ4iC5T5uB+eaNQ==

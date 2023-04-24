@@ -20,11 +20,11 @@ const WaveBg = (props: any) => (
     >
       <path
         d="M474.841 15.7801C158.779 25.2562 18.9736 20.2453 0 7.33101V0L1440 0.10673V13.8289C1373.09 21.4422 1238.28 27.2728 1014.59 20.3727C791.335 13.4861 558.225 13.8289 474.841 15.7801Z"
-        fill={props.fill}
+        fill="currentcolor"
       />
     </mask>
     <g mask="url(#mask0_3001_253095)">
-      <rect width="100%" height="24" fill={props.fill} />
+      <rect width="100%" height="24" fill="currentcolor" />
     </g>
   </svg>
 );

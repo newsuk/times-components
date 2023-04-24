@@ -3,6 +3,80 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.20.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.19.0...@times-components/ts-newskit@1.20.0) (2023-04-21)
+
+
+### Features
+
+* **TDP-000:** Accordion ([#3325](https://github.com/newsuk/times-components/issues/3325)) ([3b8d2fe](https://github.com/newsuk/times-components/commit/3b8d2febca05113f4aa36ba2719f5c3774d3bf1a))
+
+
+
+
+
+# [1.19.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.18.0...@times-components/ts-newskit@1.19.0) (2023-04-21)
+
+
+### Features
+
+* **TMST-621:** Added PersonalStats component ([#3313](https://github.com/newsuk/times-components/issues/3313)) ([36ef1c4](https://github.com/newsuk/times-components/commit/36ef1c466d3e3fec02728a43621500ec68ad11f3))
+
+
+
+
+
+# [1.18.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.17.0...@times-components/ts-newskit@1.18.0) (2023-04-21)
+
+
+### Features
+
+* **TMST-619:** create puzzles archive component ([#3324](https://github.com/newsuk/times-components/issues/3324)) ([7765bff](https://github.com/newsuk/times-components/commit/7765bff9209d73b51fad9081f97f36aa45c265a3))
+
+
+
+
+
+# [1.17.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.16.0...@times-components/ts-newskit@1.17.0) (2023-04-20)
+
+
+### Features
+
+* **TMST-630:** Date component for archive ([#3320](https://github.com/newsuk/times-components/issues/3320)) ([2e80b1d](https://github.com/newsuk/times-components/commit/2e80b1d805693e852a499a6b8a655da2a3d02ae0))
+
+
+
+
+
+# [1.16.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.15.0...@times-components/ts-newskit@1.16.0) (2023-04-20)
+
+
+### Features
+
+* **TMST-632:** create flag component ([#3322](https://github.com/newsuk/times-components/issues/3322)) ([23ee2ce](https://github.com/newsuk/times-components/commit/23ee2ce9fd8558ede53e6f3141739da2d4c49a50))
+
+
+
+
+
+# [1.15.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.14.8...@times-components/ts-newskit@1.15.0) (2023-04-20)
+
+
+### Features
+
+* **TMST-631:** accordions for archived puzzles ([#3317](https://github.com/newsuk/times-components/issues/3317)) ([896e1cd](https://github.com/newsuk/times-components/commit/896e1cd36294b417bdfbe07be887e643cb403872))
+
+
+
+
+
+## [1.14.8](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.14.7...@times-components/ts-newskit@1.14.8) (2023-04-19)
+
+**Note:** Version bump only for package @times-components/ts-newskit
+
+
+
+
+
 ## [1.14.7](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.14.6...@times-components/ts-newskit@1.14.7) (2023-04-18)
 
 **Note:** Version bump only for package @times-components/ts-newskit

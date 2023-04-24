@@ -1,0 +1,126 @@
+{
+    "sudokuArchive": {
+        "list": [
+            {
+                "hideOnMobile": true,
+                "id": 1,
+                "shortIdentifier": "test-1",
+                "slug": "",
+                "title": "Sudoku",
+                "type": "Sudoku",
+                "publishedAt": "Sat Mar 04 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "easy",
+                "url": "https://www.newskit.co.uk/components/accordion/"
+            },
+            {
+                "hideOnMobile": true,
+                "id": 2,
+                "shortIdentifier": "test-2",
+                "slug": "",
+                "title": "Sudoku",
+                "type": "Sudoku",
+                "publishedAt": "Fri Mar 03 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "mild",
+                "url": "https://www.newskit.co.uk/components/accordion/"
+            },
+            {
+                "hideOnMobile": true,
+                "id": 3,
+                "shortIdentifier": "test-3",
+                "slug": "",
+                "title": "Sudoku",
+                "type": "Sudoku",
+                "publishedAt": "Mon Feb 27 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "COMPLETE",
+                "gameLevel": "difficult",
+                "url": "https://www.newskit.co.uk/components/accordion/"
+            },
+            {
+                "hideOnMobile": true,
+                "id": 4,
+                "shortIdentifier": "test-4",
+                "slug": "",
+                "title": "Sudoku",
+                "type": "Sudoku",
+                "publishedAt": "Sun Feb 26 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "warm up",
+                "url": "https://www.newskit.co.uk/components/accordion/"
+            },
+            {
+                "hideOnMobile": true,
+                "id": 5,
+                "shortIdentifier": "test-5",
+                "slug": "",
+                "title": "Sudoku",
+                "type": "Sudoku",
+                "publishedAt": "Sat Feb 25 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "COMPLETE",
+                "gameLevel": "hard",
+                "url": "https://www.newskit.co.uk/components/accordion/"
+            },
+            {
+                "hideOnMobile": true,
+                "id": 6,
+                "shortIdentifier": "test-6",
+                "slug": "",
+                "title": "Sudoku",
+                "type": "Sudoku",
+                "publishedAt": "Fri Feb 24 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "very hard",
+                "url": "https://www.newskit.co.uk/components/accordion/"
+            },
+            {
+                "hideOnMobile": true,
+                "id": 7,
+                "shortIdentifier": "test-7",
+                "slug": "",
+                "title": "Sudoku",
+                "type": "Sudoku",
+                "publishedAt": "Thu Feb 23 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "fiendish",
+                "url": "https://www.newskit.co.uk/components/accordion/"
+            },
+            {
+                "hideOnMobile": true,
+                "id": 8,
+                "shortIdentifier": "test-8",
+                "slug": "",
+                "title": "Killer sudoku",
+                "type": "Sudoku",
+                "publishedAt": "Sat Mar 04 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "hard",
+                "url": "https://www.newskit.co.uk/components/accordion/"
+            },
+            {
+                "hideOnMobile": true,
+                "id": 9,
+                "shortIdentifier": "test-9",
+                "slug": "",
+                "title": "Killer sudoku",
+                "type": "Sudoku",
+                "publishedAt": "Fri Mar 03 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "",
+                "gameLevel": "warm up",
+                "url": "https://www.newskit.co.uk/components/accordion/"
+            },
+            {
+                "hideOnMobile": true,
+                "id": 10,
+                "shortIdentifier": "test-10",
+                "slug": "",
+                "title": "Killer sudoku",
+                "type": "Sudoku",
+                "publishedAt": "Mon Feb 27 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "COMPLETE",
+                "gameLevel": "mild",
+                "url": "https://www.newskit.co.uk/components/accordion/"
+            }
+        ]
+    }
+}

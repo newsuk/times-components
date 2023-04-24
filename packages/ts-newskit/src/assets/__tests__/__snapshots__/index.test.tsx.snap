@@ -307,3 +307,62 @@ exports[`Icons Component: NewsKitTimesMasthead NewsKitTimesMasthead renders with
   </svg>
 </DocumentFragment>
 `;
+
+exports[`Icons Component: NewsKitWaveBg NewsKitWaveBg renders with default props 1`] = `
+<DocumentFragment>
+  <svg
+    class="css-j6fc06"
+    height="24"
+    preserveAspectRatio="none"
+    viewBox="0 0 1440 24"
+    width="100%"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <mask
+      height="24"
+      id="mask0_3001_253095"
+      maskUnits="userSpaceOnUse"
+      style="mask-type: alpha;"
+      width="100%"
+      x="0"
+      y="0"
+    >
+      <path
+        d="M474.841 15.7801C158.779 25.2562 18.9736 20.2453 0 7.33101V0L1440 0.10673V13.8289C1373.09 21.4422 1238.28 27.2728 1014.59 20.3727C791.335 13.4861 558.225 13.8289 474.841 15.7801Z"
+        fill="currentcolor"
+      />
+    </mask>
+    <g
+      mask="url(#mask0_3001_253095)"
+    >
+      <rect
+        fill="currentcolor"
+        height="24"
+        width="100%"
+      />
+    </g>
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Icons Component: NewskitIconEast NewskitIconEast renders with default props 1`] = `
+<DocumentFragment>
+  <svg
+    aria-hidden="true"
+    class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+    fill="currentColor"
+    focusable="false"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      fill="none"
+      height="24"
+      width="24"
+    />
+    <path
+      d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
+    />
+  </svg>
+</DocumentFragment>
+`;

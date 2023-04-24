@@ -1,0 +1,37 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { TCThemeProvider } from '../../utils/index.tsx';
+import { PuzzlesWebLightTheme } from '../../../theme';
+import { PersonalStats } from './index.tsx';
+import { personalStatsItems } from './fixtures/personalStats.json'
+
+<Meta
+  title="Newskit Components/Puzzles/PersonalStats"
+  component={PersonalStats}
+/>
+
+# PersonalStats component
+The `PersonalStats` component is used to display personal statistics in the form of a structured list.
+
+## Props
+<Props of={PersonalStats} />
+
+## Code Example
+`<PersonalStats
+  data={data}
+/>
+`
+
+An example of the `data` structure can be found in the 'Controls' section on the 'Canvas' tab, where you can customise the data being fed to the PersonalStats component.
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const PersonalStatsStory = ({ data }) => (
+  <TCThemeProvider theme={PuzzlesWebLightTheme}>
+    <PersonalStats {...{data}} />
+  </TCThemeProvider>
+);
+
+<Story name="PersonalStats" args={{ data: personalStatsItems }}>
+  {PersonalStatsStory.bind({})}
+</Story>

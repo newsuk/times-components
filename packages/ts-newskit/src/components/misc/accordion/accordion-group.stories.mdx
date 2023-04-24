@@ -1,0 +1,43 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+
+import { TCThemeProvider } from '../../utils/index.tsx';
+import { TimesWebLightTheme } from '../../../theme';
+
+import { AccordionGroup } from './accordion-group.tsx';
+
+<Meta
+  title="Newskit Components/Misc/AccordionGroup"
+  component={AccordionGroup}
+/>
+
+# AccordionGroup component
+The `AccordionGroup` component is used to show and hide related content.
+
+This component takes in a two props, as below, to display text based content.
+
+## Props
+<Props of={AccordionGroup} />
+
+## Code Example
+`<Accordion group={[{ header: "text", content: "text" }]} />`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const AccordionGroupStory = ({ group }) => (
+  <TCThemeProvider theme={TimesWebLightTheme}>
+    <AccordionGroup group={group} />
+  </TCThemeProvider>
+);
+
+<Story name="AccordionGroup" args={{
+  group: [{
+    header: "This is the accordion header 1",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dolor purus, mattis nec sapien quis, ultrices aliquet nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse est felis, mollis ut vestibulum et, sagittis id purus. Donec eu euismod magna. Donec id iaculis lacus, sed tempus risus."
+  },{
+    header: "This is the accordion header 2",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dolor purus, mattis nec sapien quis, ultrices aliquet nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse est felis, mollis ut vestibulum et, sagittis id purus. Donec eu euismod magna. Donec id iaculis lacus, sed tempus risus."
+  }]
+}}>
+  {AccordionGroupStory.bind({})}
+</Story>

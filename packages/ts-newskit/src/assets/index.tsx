@@ -1,5 +1,6 @@
 import React from 'react';
 import { customToNewsKitIcon, styled } from 'newskit';
+import { East } from '@emotion-icons/material';
 import SearchIcon from './SearchIcon';
 import BurgerIcon from './BurgerIcon';
 import RoundedPlusIcon from './RoundedPlusIcon';
@@ -8,6 +9,7 @@ import ChevronIcon from './ChevronIcon';
 import TimesMasthead from './TimesMasthead';
 import SundayTimesMasthead from './SundayTimesMasthead';
 import ChevronRigthIcon from './ChevronRightIcon';
+import WaveBg from './WaveBg';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
@@ -51,3 +53,11 @@ export const NewsKitChevronRightIcon = customToNewsKitIcon(
   'NewsKitChevronRightIcon',
   props => <ChevronRigthIcon {...props} />
 );
+
+export const NewsKitWaveBg = customToNewsKitIcon('NewskitWaveBg', props => (
+  <WaveBg {...props} />
+));
+
+export const NewskitIconEast = customToNewsKitIcon('NewskitIconEast', props => (
+  <East {...props} />
+));
