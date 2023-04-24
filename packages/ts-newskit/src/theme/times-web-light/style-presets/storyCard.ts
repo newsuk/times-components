@@ -19,5 +19,10 @@ export const storyCardStylePresets = {
     base: {
       display: 'flex'
     }
+  },
+  StoryCardLink: {
+    base: {
+      color: '{{colors.inkContrast}}'
+    }
   }
 };

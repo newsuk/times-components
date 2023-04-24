@@ -1,78 +1,95 @@
 import React, { FC } from 'react';
-import { CardMedia } from 'newskit';
+import { CardMedia, GridLayout } from 'newskit';
 import { Headline } from 'newskit';
-//import { IconFilledImage } from 'newskit';
+import { NewsKitArticlePlaceholder } from '../../../assets';
 import {
   CardActions,
   CardContent,
   Tag,
   CardComposable,
-  Visible
+  Visible,
+  CardLink
 } from 'newskit';
 
-interface CardProps {
+export interface StoryCardProps {
   image: string;
+  altText: string;
   title: string;
   url: string;
   category: string;
-  categoryUrl: string;
   timeToRead: string;
+  imgHiddenMobile: boolean;
 }
 
-export const StoryCard: FC<CardProps> = ({
+export const StoryCard: FC<StoryCardProps> = ({
   image,
+  altText,
   title,
   url,
   category,
-  categoryUrl,
-  timeToRead
+  timeToRead,
+  imgHiddenMobile
 }) => {
   return (
-    <CardComposable overrides={{}}>
-      <Visible lg sm xs>
-        <CardMedia
-          media={{
-            hidden: true,
-            loadingAspectRatio: '3:2',
-            alt: 'story image',
-            src: image
-          }}
-        />
+    <CardComposable>
+      <Visible xs={!imgHiddenMobile} sm={!imgHiddenMobile} md lg xl>
+        {image ? (
+          <CardMedia
+            media={{
+              loadingAspectRatio: '3:2',
+              alt: altText ? altText : title,
+              src: image,
+              placeholderIcon: true
+            }}
+          />
+        ) : (
+          <NewsKitArticlePlaceholder data-testid="storyCard-placeholder" />
+        )}
       </Visible>
       <CardContent>
-        <Headline
-          headingAs="h3"
+        <CardLink
+          expand
+          href={url}
+          data-testid="storyCard-link"
           overrides={{
-            marginBlock: 'space030',
-            typographyPreset: 'editorialHeadline020'
+            externalIcon: {
+              size: '0'
+            },
+            stylePreset: 'StoryCardLink'
           }}
         >
-          {title}
-        </Headline>
+          <Headline
+            headingAs="h3"
+            overrides={{
+              marginBlock: 'space040',
+              typographyPreset: 'editorialHeadline020'
+            }}
+          >
+            {title}
+          </Headline>
+        </CardLink>
       </CardContent>
-      <CardActions
-        overrides={{
-          stylePreset: 'StoryCardFlexWrapper'
-        }}
-      >
-        <Tag
-          href="#"
-          overrides={{
-            stylePreset: 'StoryCardCategory',
-            marginInlineEnd: 'space020',
-            typographyPreset: 'utilityLabel010'
-          }}
-        >
-          {category}
-        </Tag>
-        <Tag
-          overrides={{
-            stylePreset: 'StoryCardTime',
-            typographyPreset: 'utilityLabel010'
-          }}
-        >
-          {timeToRead}
-        </Tag>
+      <CardActions>
+        <GridLayout columns="repeat(2, auto)" columnGap="space020">
+          <Tag
+            overrides={{
+              stylePreset: 'StoryCardCategory',
+              typographyPreset: 'utilityLabel010',
+              minHeight: '16px'
+            }}
+          >
+            {category}
+          </Tag>
+          <Tag
+            overrides={{
+              stylePreset: 'StoryCardTime',
+              typographyPreset: 'utilityLabel010',
+              minHeight: '16px'
+            }}
+          >
+            {timeToRead}
+          </Tag>
+        </GridLayout>
       </CardActions>
     </CardComposable>
   );
