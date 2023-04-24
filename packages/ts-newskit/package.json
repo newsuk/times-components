@@ -54,9 +54,9 @@
     "@emotion/react": "11.10.0",
     "@emotion/styled": "11.10.0",
     "@newskit-themes/the-times": "0.0.2",
-    "@times-components/ts-components": "1.70.0",
     "newskit": "7.2.0",
-    "react": "16.9.0"
+    "react": "16.9.0",
+    "xss": "^1.0.10"
   },
   "devDependencies": {
     "@storybook/react": "6.5.16",
