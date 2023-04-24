@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Toast should render the component 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1vp7t0d"
+    data-testid="toast-container"
+  >
+    <div
+      class="css-ojf8hg"
+    >
+      <div
+        aria-live="polite"
+        class="css-1a0v2ke"
+        role="status"
+      >
+        <p
+          class="css-1hlqbq2"
+        >
+          Toast message will display here
+        </p>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
