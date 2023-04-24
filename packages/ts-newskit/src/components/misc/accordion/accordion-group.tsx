@@ -38,18 +38,15 @@ export const AccordionGroup = ({ group }: AccordionGroupProps) => {
           <TextBlock
             typographyPreset="editorialParagraph010"
             stylePreset="neutral070"
-          >
-            <div
-              dangerouslySetInnerHTML={{
-                __html: sanitiseCopy(accordion.content, {
-                  b: {},
-                  i: {},
-                  p: {},
-                  a: ['href']
-                })
-              }}
-            />
-          </TextBlock>
+            dangerouslySetInnerHTML={{
+              __html: sanitiseCopy(accordion.content, {
+                b: {},
+                i: {},
+                p: {},
+                a: ['href']
+              })
+            }}
+          />
         </NewskitAccordion>
       ))}
     </NewskitAccordionGroup>
