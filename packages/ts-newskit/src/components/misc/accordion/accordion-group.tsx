@@ -40,9 +40,9 @@ export const AccordionGroup = ({ group }: AccordionGroupProps) => {
             stylePreset="neutral070"
             dangerouslySetInnerHTML={{
               __html: sanitiseCopy(accordion.content, {
+                br: {},
                 b: {},
                 i: {},
-                p: {},
                 a: ['href']
               })
             }}
