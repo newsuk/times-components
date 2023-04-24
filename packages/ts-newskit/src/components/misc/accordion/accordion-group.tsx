@@ -44,7 +44,7 @@ export const AccordionGroup = ({ group }: AccordionGroupProps) => {
                 b: {},
                 i: {},
                 p: {},
-                a: {}
+                a: ['href']
               })
             }}
           />
