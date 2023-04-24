@@ -4,8 +4,10 @@ import {
   AccordionGroup as NewskitAccordionGroup,
   TextBlock
 } from 'newskit';
-import xss from 'xss';
 
+// import xss from 'xss';
+
+/*
 const sanitiseCopy = (copy: string = '', allowedTags: {} = {}) => {
   const decodeEntities = (inputString: string) => {
     let decodedString = document.createElement('textarea');
@@ -23,6 +25,7 @@ const sanitiseCopy = (copy: string = '', allowedTags: {} = {}) => {
 
   return xss(decodedCopy, options);
 };
+*/
 
 type AccordionProps = {
   header: string;
@@ -55,7 +58,7 @@ export const AccordionGroup = ({ group }: AccordionGroupProps) => {
           <TextBlock
             typographyPreset="editorialParagraph010"
             stylePreset="neutral070"
-            dangerouslySetInnerHTML={{
+            /*dangerouslySetInnerHTML={{
               __html: sanitiseCopy(accordion.content, {
                 br: {},
                 b: {},
@@ -63,8 +66,8 @@ export const AccordionGroup = ({ group }: AccordionGroupProps) => {
                 p: {},
                 a: ['href']
               })
-            }}
-          />
+            }}*/
+          >{accordion.content}</TextBlock>
         </NewskitAccordion>
       ))}
     </NewskitAccordionGroup>
