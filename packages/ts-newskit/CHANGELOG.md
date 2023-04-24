@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.22.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.21.0...@times-components/ts-newskit@1.22.0) (2023-04-24)
+
+
+### Features
+
+* **TDP-000:** Accordion ([#3327](https://github.com/newsuk/times-components/issues/3327)) ([5233614](https://github.com/newsuk/times-components/commit/52336149cba250ad408884f95de457a7cf5d4014))
+
+
+
+
+
 # [1.21.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.20.0...@times-components/ts-newskit@1.21.0) (2023-04-24)
 
 
