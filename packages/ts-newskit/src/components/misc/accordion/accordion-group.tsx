@@ -67,7 +67,9 @@ export const AccordionGroup = ({ group }: AccordionGroupProps) => {
                 a: ['href']
               })
             }}*/
-          >{accordion.content}</TextBlock>
+          >
+            {accordion.content}
+          </TextBlock>
         </NewskitAccordion>
       ))}
     </NewskitAccordionGroup>
