@@ -1,6 +1,6 @@
 export type DateCardItems = {
-  date: string;
-  status?: string;
+  publishedAt: string;
+  status?: 'COMPLETE' | 'IN PROGRESS' | string;
   gameLevel?: string;
   url: string;
 };

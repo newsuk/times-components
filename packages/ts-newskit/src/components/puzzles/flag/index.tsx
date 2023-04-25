@@ -2,7 +2,7 @@ import React, { FC } from 'react';
 import { Flag } from 'newskit';
 
 interface FlagProps {
-  status: 'COMPLETE' | 'IN PROGRESS';
+  status: 'COMPLETE' | 'IN PROGRESS' | string;
 }
 
 const FlagStatuses = new Map([

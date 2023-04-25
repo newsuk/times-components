@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PersonalStats should render PersonalStats component 1`] = `
+<DocumentFragment>
+  <section
+    class="css-13byt3y"
+  >
+    <div
+      class="css-1a2x76v"
+    >
+      <div
+        class="css-bj811j"
+      >
+        <article
+          class="css-sm6e1g"
+        >
+          <div
+            class="css-xy1p36"
+          >
+            <span
+              class="css-13n98kf"
+            >
+              508
+            </span>
+          </div>
+          <div
+            class="css-xy1p36"
+          >
+            <span
+              class="css-wwlb4"
+            >
+              Puzzles played
+            </span>
+          </div>
+        </article>
+        <article
+          class="css-sm6e1g"
+        >
+          <div
+            class="css-xy1p36"
+          >
+            <span
+              class="css-13n98kf"
+            >
+              180
+            </span>
+          </div>
+          <div
+            class="css-xy1p36"
+          >
+            <span
+              class="css-wwlb4"
+            >
+              Current streak
+            </span>
+          </div>
+        </article>
+        <article
+          class="css-sm6e1g"
+        >
+          <div
+            class="css-xy1p36"
+          >
+            <span
+              class="css-13n98kf"
+            >
+              280
+            </span>
+          </div>
+          <div
+            class="css-xy1p36"
+          >
+            <span
+              class="css-wwlb4"
+            >
+              Longest streak
+            </span>
+          </div>
+        </article>
+      </div>
+    </div>
+    <svg
+      class="css-17hrftr"
+      height="24"
+      preserveAspectRatio="none"
+      viewBox="0 0 1440 24"
+      width="100%"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <mask
+        height="24"
+        id="mask0_3001_253095"
+        maskUnits="userSpaceOnUse"
+        style="mask-type: alpha;"
+        width="100%"
+        x="0"
+        y="0"
+      >
+        <path
+          d="M474.841 15.7801C158.779 25.2562 18.9736 20.2453 0 7.33101V0L1440 0.10673V13.8289C1373.09 21.4422 1238.28 27.2728 1014.59 20.3727C791.335 13.4861 558.225 13.8289 474.841 15.7801Z"
+          fill="currentcolor"
+        />
+      </mask>
+      <g
+        mask="url(#mask0_3001_253095)"
+      >
+        <rect
+          fill="currentcolor"
+          height="24"
+          width="100%"
+        />
+      </g>
+    </svg>
+  </section>
+</DocumentFragment>
+`;

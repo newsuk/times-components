@@ -15,5 +15,23 @@ export const accordionStylePresets = {
     base: {
       borderStyle: 'none none dashed none'
     }
+  },
+
+  accordionHeaderPrimary: {
+    base: {
+      color: '{{colors.inkBase}}',
+      backgroundColor: '{{colors.white}}',
+      borderWidth: '1px',
+      borderStyle: 'none none solid none',
+      borderColor: '{{colors.neutral050}}'
+    }
+  },
+  accordionPanelPrimary: {
+    base: {
+      color: '{{colors.inkSubtle}}',
+      borderWidth: '1px',
+      borderStyle: 'none none solid none',
+      borderColor: '{{colors.neutral050}}'
+    }
   }
 };

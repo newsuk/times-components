@@ -1,6 +1,5 @@
 import { Meta, Story, Props } from '@storybook/addon-docs';
 import { DateCard } from "./index";
-import { archivedGames } from './fixtures/data.json';
 import { NewsKitProvider } from 'newskit';
 import { TimesWebLightTheme } from '../../../theme';
 import { fonts } from '@times-components/ts-styleguide';
@@ -19,30 +18,32 @@ This takes in a `data` and `sectionColour` props, as below, to display the card.
 <Props of={DateCard} />
 
 ## Code Example
-`<DateCard data={ date, status, gameLevel, url } sectionColour={sectionColour} />`
+`<DateCard data={ publishedAt, status, gameLevel, url } sectionColour={sectionColour} />`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can review and configure with different titles.
 
-export const DateCardStory = ({ date, status, gameLevel, url, sectionColour }) => (
+export const DateCardStory = ({ publishedAt, status, gameLevel, url, sectionColour }) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <DateCard data={{ date, status, gameLevel, url }} sectionColour={sectionColour} />
+    <DateCard data={{ publishedAt, status, gameLevel, url }} sectionColour={sectionColour} />
   </NewsKitProvider>
 );
 
 <Story
   name="DateCard"
   argTypes={{
-    date: { control: 'date' },
+    publishedAt: { control: 'date' },
     gameLevel: { control: 'text' },
     url: { control: 'text' },
-    sectionColour: { control: 'color' }
+    sectionColour: { control: 'color' },
+    status: { control: "select", options: ["COMPLETE", "IN PROGRESS"] }
   }}
   args={{
-    date: new Date('2023-03-03T00:00:00+01:00'),
+    publishedAt: new Date('2023-03-03T00:00:00+01:00'),
     gameLevel: 'Quick',
     url: 'https://newskit.co.uk/',
-    sectionColour: '#333'
+    sectionColour: '#333',
+    status: 'COMPLETE'
   }}
 >
   {DateCardStory.bind({})}
