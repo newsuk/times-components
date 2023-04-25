@@ -1,0 +1,23 @@
+{
+    "puzzles": {
+        "list": [
+            {
+                "hideOnMobile": true,
+                "id": 10,
+                "shortIdentifier": "No. 9873",
+                "slug": "",
+                "title": "General Knowledge",
+                "type": "boardAndCard",
+                "publishedAt": "Mon Feb 27 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+                "status": "COMPLETE",
+                "gameLevel": "Quick",
+                "url": "https://www.newskit.co.uk/",
+                "image": {
+                   "id": 1234,
+                   "src": "",
+                   "title": "puzzle image title"
+                }
+            }
+        ]
+    }
+}

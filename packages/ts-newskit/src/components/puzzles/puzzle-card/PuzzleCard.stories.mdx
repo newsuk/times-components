@@ -1,0 +1,37 @@
+import { Meta, Story, Props } from '@storybook/addon-docs';
+import { PuzzleCard } from "./index";
+import { puzzles } from './fixtures/data.json';
+import { NewsKitProvider } from 'newskit';
+import { TimesWebLightTheme } from '../../../theme';
+
+<Meta
+  title="Newskit Components/Puzzles/Puzzle Card"
+  component={PuzzleCard}
+/>
+
+# PuzzleCard component
+The `PuzzleCard` component is used to display puzzles date cards.
+
+This takes in a `data` and `sectionColour` props, as below, to display the card.
+
+## Props
+<Props of={PuzzleCard} />
+
+## Code Example
+`<PuzzleCard data={ puzzles }/>`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can review and configure with different titles.
+
+export const PuzzleCardStory = ({ data }) => (
+  <NewsKitProvider theme={TimesWebLightTheme}>
+    <PuzzleCard {...{ data }} />
+  </NewsKitProvider>
+);
+
+<Story
+  name="PuzzleCard"
+  args={{data: puzzles}} 
+>
+  {PuzzleCardStory.bind({})}
+</Story>

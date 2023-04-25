@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Puzzle Card should render Puzzle Card 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1gg3xnp"
+  >
+    <div
+      class="css-li3rmr"
+    >
+      <div
+        class="css-1shocxe"
+      >
+        <div
+          class="css-l3wl0d"
+        >
+          <a
+            class="nk-card-link css-1h2izf8"
+            href="https://www.newskit.co.uk/"
+          >
+            <svg
+              class="css-j6fc06"
+              fill="none"
+              viewBox="0 0 293 196"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                clip-path="url(#clip0_3503_95754)"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M0 4C0 1.79086 1.79086 0 4 0H289C291.209 0 293 1.79086 293 4V195.333H0V4Z"
+                  fill="#FFEED9"
+                  fill-rule="evenodd"
+                />
+              </g>
+              <defs>
+                <clippath
+                  id="clip0_3503_95754"
+                >
+                  <path
+                    d="M0 4C0 1.79086 1.79086 0 4 0H289C291.209 0 293 1.79086 293 4V195.333H0V4Z"
+                    fill="white"
+                  />
+                </clippath>
+              </defs>
+            </svg>
+            <div
+              class="css-19mwb4y"
+            >
+              <div
+                class="css-11wmp6b"
+              >
+                General Knowledge
+              </div>
+              <div
+                class="css-1dfr6je"
+              >
+                <div>
+                  <span
+                    class="css-927qvd"
+                  >
+                    Sunday
+                  </span>
+                  <span
+                    class="css-etibl"
+                  >
+                     | No. 9873
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
