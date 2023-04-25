@@ -52,6 +52,7 @@ export const HeadlineContainer = styled.h1`
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-weight: 400;
   ${props => props.styles && props.styles}
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.articleHeadline}px;
@@ -104,6 +105,7 @@ export const StandfirstContainer = styled.h2`
   padding: 0px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  font-weight: 400;
   ${props => props.styles && props.styles}
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.infoTitle}px;

@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.1](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.10.0...@times-components/save-star-web@0.10.1) (2023-04-19)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+# [0.10.0](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.9.32...@times-components/save-star-web@0.10.0) (2023-04-18)
+
+
+### Features
+
+* **TMRX-753:** article page typography updates ([#3318](https://github.com/newsuk/times-components/issues/3318)) ([43a193a](https://github.com/newsuk/times-components/commit/43a193a88a8d1cfbb8389628af37f244849eb110))
+
+
+
+
+
+## [0.9.32](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.9.31...@times-components/save-star-web@0.9.32) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.9.31](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.9.30...@times-components/save-star-web@0.9.31) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
 ## [0.9.30](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.9.29...@times-components/save-star-web@0.9.30) (2023-04-03)
 
 **Note:** Version bump only for package @times-components/save-star-web

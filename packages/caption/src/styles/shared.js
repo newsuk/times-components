@@ -20,7 +20,7 @@ const styles = {
     color: colours.functional.secondary,
     ...fontFactory({
       font: "supporting",
-      fontSize: "caption"
+      fontSize: "captionText"
     })
   }
 };

@@ -3,9 +3,17 @@ import {
   Image,
   styled,
   TextBlock,
-  getMediaQueryFromTheme
+  getMediaQueryFromTheme,
+  Stack
 } from 'newskit';
 
+export const JournalistContainer = styled(Stack)`
+  width: 100%;
+
+  ${getMediaQueryFromTheme('md')} {
+    width: 50%;
+  }
+`;
 export const JournalistImageContainer = styled(Block)`
   width: 77px;
 `;

@@ -3,16 +3,14 @@ export const storyCardStylePresets = {
     base: {
       color: '{{colors.inkContrast}}',
       border: 'none',
-      padding: '0',
-      minHeight: '16px'
+      padding: '0'
     }
   },
   StoryCardTime: {
     base: {
       color: '{{colors.inkSubtle}}',
       border: 'none',
-      padding: '0',
-      minHeight: '16px'
+      padding: '0'
     }
   },
   StoryCardFlexWrapper: {

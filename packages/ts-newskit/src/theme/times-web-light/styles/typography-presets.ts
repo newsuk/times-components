@@ -172,6 +172,14 @@ export const typographyPresets = Object.fromEntries(
       lineHeight: '{{fonts.fontLineHeight020}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
+    },
+    dateCardHeader: {
+      fontFamily: '{{fonts.fontFamily040.fontFamily}}',
+      fontSize: '{{fonts.fontSize090}}',
+      fontWeight: '{{fonts.fontWeight040}}',
+      lineHeight: '{{fonts.fontLineHeight070}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
     }
   }).map(([key, value]) => {
     if (

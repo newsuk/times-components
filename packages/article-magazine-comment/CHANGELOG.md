@@ -3,6 +3,108 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.67.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.67.1...@times-components/article-magazine-comment@3.67.2) (2023-04-24)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.67.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.67.0...@times-components/article-magazine-comment@3.67.1) (2023-04-19)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+# [3.67.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.66.12...@times-components/article-magazine-comment@3.67.0) (2023-04-18)
+
+
+### Features
+
+* **TMRX-753:** article page typography updates ([#3318](https://github.com/newsuk/times-components/issues/3318)) ([43a193a](https://github.com/newsuk/times-components/commit/43a193a88a8d1cfbb8389628af37f244849eb110))
+
+
+
+
+
+## [3.66.12](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.66.11...@times-components/article-magazine-comment@3.66.12) (2023-04-13)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.66.11](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.66.10...@times-components/article-magazine-comment@3.66.11) (2023-04-13)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.66.10](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.66.9...@times-components/article-magazine-comment@3.66.10) (2023-04-13)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.66.9](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.66.8...@times-components/article-magazine-comment@3.66.9) (2023-04-13)
+
+
+### Bug Fixes
+
+* **TMRX-1148:** fonts displaying bold when they dont need tobe ([#3312](https://github.com/newsuk/times-components/issues/3312)) ([03e9ab4](https://github.com/newsuk/times-components/commit/03e9ab42777bc43fcc49d2865e4ecdad641d09ed))
+
+
+
+
+
+## [3.66.8](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.66.7...@times-components/article-magazine-comment@3.66.8) (2023-04-11)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.66.7](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.66.6...@times-components/article-magazine-comment@3.66.7) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.66.6](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.66.5...@times-components/article-magazine-comment@3.66.6) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.66.5](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.66.4...@times-components/article-magazine-comment@3.66.5) (2023-04-05)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.66.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.66.3...@times-components/article-magazine-comment@3.66.4) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
 ## [3.66.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.66.2...@times-components/article-magazine-comment@3.66.3) (2023-04-03)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

@@ -3,6 +3,108 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.69.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.69.1...@times-components/article-in-depth@3.69.2) (2023-04-24)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.69.1](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.69.0...@times-components/article-in-depth@3.69.1) (2023-04-19)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+# [3.69.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.68.12...@times-components/article-in-depth@3.69.0) (2023-04-18)
+
+
+### Features
+
+* **TMRX-753:** article page typography updates ([#3318](https://github.com/newsuk/times-components/issues/3318)) ([43a193a](https://github.com/newsuk/times-components/commit/43a193a88a8d1cfbb8389628af37f244849eb110))
+
+
+
+
+
+## [3.68.12](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.68.11...@times-components/article-in-depth@3.68.12) (2023-04-13)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.68.11](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.68.10...@times-components/article-in-depth@3.68.11) (2023-04-13)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.68.10](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.68.9...@times-components/article-in-depth@3.68.10) (2023-04-13)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.68.9](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.68.8...@times-components/article-in-depth@3.68.9) (2023-04-13)
+
+
+### Bug Fixes
+
+* **TMRX-1148:** fonts displaying bold when they dont need tobe ([#3312](https://github.com/newsuk/times-components/issues/3312)) ([03e9ab4](https://github.com/newsuk/times-components/commit/03e9ab42777bc43fcc49d2865e4ecdad641d09ed))
+
+
+
+
+
+## [3.68.8](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.68.7...@times-components/article-in-depth@3.68.8) (2023-04-11)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.68.7](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.68.6...@times-components/article-in-depth@3.68.7) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.68.6](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.68.5...@times-components/article-in-depth@3.68.6) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.68.5](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.68.4...@times-components/article-in-depth@3.68.5) (2023-04-05)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.68.4](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.68.3...@times-components/article-in-depth@3.68.4) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
 ## [3.68.3](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.68.2...@times-components/article-in-depth@3.68.3) (2023-04-03)
 
 **Note:** Version bump only for package @times-components/article-in-depth

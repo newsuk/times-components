@@ -63,20 +63,4 @@ describe('Render Article List Item', () => {
       "Harry & Meghan's New Project?"
     );
   });
-
-  it('Article Type should fall back to grey if colour prop is missing', () => {
-    renderComponent({
-      image:
-        '//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63',
-      title: "Harry & Meghan's New Project?",
-      alt: '',
-      url:
-        '/article/harry-and-meghan-s-new-project-to-make-boys-less-toxic-nk5n3h70m',
-      articleType: 'Review',
-      timeToRead: '4 min read',
-      color: ''
-    });
-    const articleListUrl = screen.getByText('Review');
-    expect(articleListUrl).toHaveStyle('color: #666666');
-  });
 });

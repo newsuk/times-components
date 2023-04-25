@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.70.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.69.0...@times-components/ts-components@1.70.0) (2023-04-24)
+
+
+### Features
+
+* **TDP-000:** Accordion ([#3326](https://github.com/newsuk/times-components/issues/3326)) ([2f789d6](https://github.com/newsuk/times-components/commit/2f789d66f8d93334032d7f8e8535848ee44500ea))
+
+
+
+
+
+# [1.69.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.68.0...@times-components/ts-components@1.69.0) (2023-04-19)
+
+
+### Features
+
+* **TMRX-753:** update save text font size ([#3323](https://github.com/newsuk/times-components/issues/3323)) ([764ee59](https://github.com/newsuk/times-components/commit/764ee593536dc752ba537f87d1261bb22c64b00e))
+
+
+
+
+
+# [1.68.0](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.67.4...@times-components/ts-components@1.68.0) (2023-04-18)
+
+
+### Features
+
+* **TMRX-753:** article page typography updates ([#3318](https://github.com/newsuk/times-components/issues/3318)) ([43a193a](https://github.com/newsuk/times-components/commit/43a193a88a8d1cfbb8389628af37f244849eb110))
+
+
+
+
+
+## [1.67.4](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.67.3...@times-components/ts-components@1.67.4) (2023-04-06)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
+## [1.67.3](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.67.2...@times-components/ts-components@1.67.3) (2023-04-04)
+
+**Note:** Version bump only for package @times-components/ts-components
+
+
+
+
+
 ## [1.67.2](https://github.com/newsuk/times-components/compare/@times-components/ts-components@1.67.1...@times-components/ts-components@1.67.2) (2023-04-03)
 
 **Note:** Version bump only for package @times-components/ts-components

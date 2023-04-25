@@ -6,6 +6,7 @@ export default function StaticContent({
   html,
   ...props
 }) {
+  // set the HTML dangerously
   return createElement(element, {
     ...props,
     undefined,
