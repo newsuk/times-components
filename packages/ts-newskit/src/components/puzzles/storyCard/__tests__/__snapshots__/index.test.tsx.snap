@@ -103,7 +103,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
         class="css-1wxz2ss"
       >
         <div
-          class="css-1acvqng"
+          class="css-1bbuehr"
           data-testid="tag"
         >
           <span
@@ -113,7 +113,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
           </span>
         </div>
         <div
-          class="css-1krm3h"
+          class="css-kiz99p"
           data-testid="tag"
         >
           <span

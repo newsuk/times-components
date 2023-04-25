@@ -1,6 +1,4 @@
 import React, { FC } from 'react';
-import { CardMedia, GridLayout } from 'newskit';
-import { Headline } from 'newskit';
 import { NewsKitArticlePlaceholder } from '../../../assets';
 import {
   CardActions,
@@ -8,7 +6,10 @@ import {
   Tag,
   CardComposable,
   Visible,
-  CardLink
+  CardLink,
+  Headline,
+  CardMedia,
+  GridLayout
 } from 'newskit';
 
 export interface StoryCardProps {
