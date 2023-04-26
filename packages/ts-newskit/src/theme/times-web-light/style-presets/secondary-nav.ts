@@ -7,7 +7,7 @@ export const secondaryNavigationStylePresets = {
   },
   menuItemDesktop: {
     base: {
-      color: '#1D1D1B',
+      color: '{{colors.neutral090}}',
       backgroundColor: '{{colors.white}}',
       borderBottom: '4px solid transparent'
     },
@@ -15,14 +15,14 @@ export const secondaryNavigationStylePresets = {
       backgroundColor: '{{colors.neutral010}}'
     },
     selected: {
-      borderBottom: '4px solid #01000D'
+      borderBottom: '4px solid {{colors.neutral100}}'
     }
   },
 
   secondaryMenuItem: {
     base: {
-      color: '#1D1D1B',
-      borderBottom: '1px solid #E4E4E4'
+      color: '{{colors.neutral090}}',
+      borderBottom: '1px solid {{colors.neutral030}}'
     },
     hover: {
       backgroundColor: '{{colors.neutral010}}',
@@ -46,7 +46,7 @@ export const secondaryNavigationStylePresets = {
 
   menuItemMore: {
     base: {
-      color: '#1D1D1B'
+      color: '{{colors.neutral090}}'
     }
   },
   subMenuPreset1: {
