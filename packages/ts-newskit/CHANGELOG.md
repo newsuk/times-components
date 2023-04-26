@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.25.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.24.0...@times-components/ts-newskit@1.25.0) (2023-04-24)
+
+
+### Features
+
+* **TDP-000:** Update accordion ([4f75b2a](https://github.com/newsuk/times-components/commit/4f75b2a4b2b095d4875add8eeed5dc174c375193))
+
+
+
+
+
+# [1.24.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.23.0...@times-components/ts-newskit@1.24.0) (2023-04-24)
+
+
+### Features
+
+* **TDP-000:** toast component ([#3330](https://github.com/newsuk/times-components/issues/3330)) ([c7a92a8](https://github.com/newsuk/times-components/commit/c7a92a89e238df4c08a148e679f10adbd6db8658))
+
+
+
+
+
+# [1.23.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.22.0...@times-components/ts-newskit@1.23.0) (2023-04-24)
+
+
+### Features
+
+* **TDP-000:** Accordion ([#3328](https://github.com/newsuk/times-components/issues/3328)) ([56b893c](https://github.com/newsuk/times-components/commit/56b893cc15b528957b075edbb91978bf81abbe4d))
+
+
+
+
+
 # [1.22.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.21.0...@times-components/ts-newskit@1.22.0) (2023-04-24)
 
 

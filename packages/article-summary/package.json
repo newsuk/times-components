@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "3.24.2",
+  "version": "3.24.3",
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {
@@ -55,7 +55,7 @@
     "@times-components/date-publication": "0.25.6",
     "@times-components/markup": "3.8.7",
     "@times-components/markup-forest": "1.9.1",
-    "@times-components/ts-components": "1.70.0",
+    "@times-components/ts-components": "1.71.0",
     "@times-components/ts-styleguide": "1.43.1",
     "@times-components/utils": "6.16.7",
     "@times-components/video-label": "2.11.7",
