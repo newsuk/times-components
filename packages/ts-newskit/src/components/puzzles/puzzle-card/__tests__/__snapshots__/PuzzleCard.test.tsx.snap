@@ -3,20 +3,21 @@
 exports[`Puzzle Card should render Puzzle Card 1`] = `
 <DocumentFragment>
   <div
-    class="css-1gg3xnp"
+    class="css-icew21"
   >
     <div
-      class="css-li3rmr"
+      class="css-1shocxe"
     >
       <div
-        class="css-1shocxe"
+        class="css-l3wl0d"
       >
-        <div
-          class="css-l3wl0d"
+        <a
+          class="nk-card-link css-1h2izf8"
+          href="https://www.newskit.co.uk/"
         >
-          <a
-            class="nk-card-link css-1h2izf8"
-            href="https://www.newskit.co.uk/"
+          <div
+            class="css-13byt3y"
+            style="position: relative;"
           >
             <svg
               class="css-j6fc06"
@@ -46,32 +47,46 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
               </defs>
             </svg>
             <div
-              class="css-19mwb4y"
+              class="css-1sgbmxk"
             >
               <div
-                class="css-11wmp6b"
+                class="css-vylmno"
+                data-testid="flag"
               >
-                General Knowledge
-              </div>
-              <div
-                class="css-1dfr6je"
-              >
-                <div>
-                  <span
-                    class="css-927qvd"
-                  >
-                    Sunday
-                  </span>
-                  <span
-                    class="css-etibl"
-                  >
-                     | No. 9873
-                  </span>
-                </div>
+                <span
+                  class="css-n79ak9"
+                >
+                  COMPLETE
+                </span>
               </div>
             </div>
-          </a>
-        </div>
+          </div>
+          <div
+            class="css-19mwb4y"
+          >
+            <div
+              class="css-13f5s0n"
+            >
+              General Knowledge
+            </div>
+            <div
+              class="css-1dfr6je"
+            >
+              <div>
+                <span
+                  class="css-927qvd"
+                >
+                  Sunday
+                </span>
+                <span
+                  class="css-etibl"
+                >
+                   | No. 9873
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   </div>

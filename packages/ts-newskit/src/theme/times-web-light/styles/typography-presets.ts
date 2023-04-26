@@ -189,6 +189,14 @@ export const typographyPresets = Object.fromEntries(
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     },
+    puzzleCardHeaderLg: {
+      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+      fontSize: '{{fonts.newFontSize2}}',
+      fontWeight: '{{fonts.fontWeight030}}',
+      lineHeight: '{{fonts.fontLineHeight030}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
     puzzleCardDay: {
       fontFamily: '{{fonts.fontFamily030.fontFamily}}',
       fontSize: '{{fonts.fontSize010}}',
