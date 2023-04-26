@@ -5,6 +5,8 @@ import {
   TextBlock
 } from 'newskit';
 
+import { sanitiseCopy } from '../../utils/text-formatting';
+
 type AccordionProps = {
   header: string;
   content: string;
@@ -36,9 +38,15 @@ export const AccordionGroup = ({ group }: AccordionGroupProps) => {
           <TextBlock
             typographyPreset="editorialParagraph010"
             stylePreset="neutral070"
-          >
-            {accordion.content}
-          </TextBlock>
+            dangerouslySetInnerHTML={{
+              __html: sanitiseCopy(accordion.content, {
+                br: {},
+                b: {},
+                i: {},
+                a: ['href']
+              })
+            }}
+          />
         </NewskitAccordion>
       ))}
     </NewskitAccordionGroup>
