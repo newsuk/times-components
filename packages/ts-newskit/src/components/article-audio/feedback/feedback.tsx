@@ -56,7 +56,7 @@ export const FeedbackText: React.FC<{
         stackDistribution="flex-start"
         spaceInline="space040"
         flow="horizontal-top"
-        marginBlockStart="space040"
+        marginBlockStart="space030"
       >
         <IconButton
           overrides={{
