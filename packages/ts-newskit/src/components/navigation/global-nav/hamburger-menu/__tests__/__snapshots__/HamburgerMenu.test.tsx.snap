@@ -65,7 +65,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
             role="list"
           >
             <button
-              class="css-1234wqe"
+              class="css-j8uzx8"
               data-testid="button"
               type="button"
             >
@@ -76,7 +76,7 @@ exports[`HamburgerMenu - Logged In should render the Sections and account sectio
               </span>
             </button>
             <button
-              class="css-g6ka6m"
+              class="css-1ntc43f"
               data-testid="button"
               type="button"
             >
@@ -464,7 +464,7 @@ exports[`HamburgerMenu should render the component 1`] = `
             role="list"
           >
             <button
-              class="css-1234wqe"
+              class="css-j8uzx8"
               data-testid="button"
               type="button"
             >
@@ -475,7 +475,7 @@ exports[`HamburgerMenu should render the component 1`] = `
               </span>
             </button>
             <button
-              class="css-g6ka6m"
+              class="css-1ntc43f"
               data-testid="button"
               type="button"
             >

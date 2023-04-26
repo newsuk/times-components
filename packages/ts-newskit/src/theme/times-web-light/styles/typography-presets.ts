@@ -4,7 +4,7 @@ export const typographyPresets = Object.fromEntries(
   Object.entries({
     ...themeDefault,
     newPreset010: {
-      fontFamily: 'Roboto-Medium',
+      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
       fontWeight: '{{fonts.fontWeight020}}',
       fontSize: '{{fonts.fontSize020}}',
       lineHeight: '{{fonts.fontLineHeight030}}',
@@ -12,7 +12,7 @@ export const typographyPresets = Object.fromEntries(
       fontStretch: 'normal'
     },
     topNav010: {
-      fontFamily: 'Roboto-Medium',
+      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
       fontWeight: '{{fonts.fontWeight020}}',
       fontSize: '{{fonts.fontSize020}}',
       lineHeight: '{{fonts.fontLineHeight010}}',
