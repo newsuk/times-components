@@ -1,17 +1,15 @@
 import React, { FC } from 'react';
-import { Block, GridLayoutItem } from 'newskit';
-import WaveBg from '../../../assets/WaveBg';
+import { Block, GridLayoutItem, TextBlock } from 'newskit';
 import {
   BreakoutSectionBtn,
   BreakoutSectionContainer,
   BreakoutSectionGridLayout,
-  BreakoutSectionSubtitle,
-  BreakoutSectionTitle,
   StyledSudokuIconA4,
   StyledSudokuIconD2,
   StyledSudokuIconD4
 } from './styles';
 import { BreakoutSectionItem } from './types';
+import { StyledNewskitWaveBg } from '../personal-stats/styles';
 
 interface BreakoutSectionProps {
   data: BreakoutSectionItem[];
@@ -20,19 +18,32 @@ interface BreakoutSectionProps {
 export const BreakoutSection: FC<BreakoutSectionProps> = ({ data }) => {
   return (
     <Block as="section">
-      <BreakoutSectionContainer>
-        <BreakoutSectionTitle as="h2">
+      <BreakoutSectionContainer
+        flow="vertical-center"
+        paddingBlock="space070"
+        paddingInline={{ xs: 'space045', md: 'space050' }}
+      >
+        <TextBlock
+          as="h2"
+          typographyPreset="editorialDisplay004"
+          stylePreset="puzzlesCenterAlignedText"
+        >
           Add a challenge to your day
-        </BreakoutSectionTitle>
-        <BreakoutSectionSubtitle as="p">
+        </TextBlock>
+        <TextBlock
+          as="p"
+          typographyPreset="editorialParagraph020"
+          marginBlockStart="space045"
+          stylePreset="puzzlesCenterAlignedText"
+        >
           Play exclusive Word puzzles, Number puzzles, Quizzes and more
-        </BreakoutSectionSubtitle>
+        </TextBlock>
         <BreakoutSectionGridLayout
           columns={{ sm: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }}
-          rowGap={{ xs: '20px', sm: '28px', md: '24px' }}
-          columnGap={{ sm: '28px', md: '36px' }}
+          rowGap="space050"
+          columnGap="space050"
           overrides={{
-            marginBlockStart: { xs: '40px', sm: '44px', md: '52px' },
+            marginBlockStart: { xs: 'space070', sm: 'space080' },
             width: '100%',
             maxWidth: '1272px'
           }}
@@ -44,7 +55,11 @@ export const BreakoutSection: FC<BreakoutSectionProps> = ({ data }) => {
               <BreakoutSectionBtn
                 size="medium"
                 href={url}
-                overrides={{ stylePreset: 'breakoutSectionBtn' }}
+                overrides={{
+                  stylePreset: 'puzzlesShadowBtn',
+                  typographyPreset: 'utilityButton020',
+                  width: '100%'
+                }}
               >
                 {title}
               </BreakoutSectionBtn>
@@ -53,7 +68,7 @@ export const BreakoutSection: FC<BreakoutSectionProps> = ({ data }) => {
         </BreakoutSectionGridLayout>
         <StyledSudokuIconD4 />
       </BreakoutSectionContainer>
-      <WaveBg fill="#FFBB6A" />
+      <StyledNewskitWaveBg />
     </Block>
   );
 };
