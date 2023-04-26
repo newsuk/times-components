@@ -3,23 +3,23 @@
 exports[`Message Component should render snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="css-h0jm43"
+    class="css-jxknkc"
   >
     <div
-      class="css-7i4qsc"
+      class="css-fcx7ij"
     >
       <p
-        class="css-ntpk9b"
+        class="css-fl8ixt"
       >
         Thank you for your feedback. We're always trying to give you the best possible experience – your feedback helps us do this.
       </p>
     </div>
     <div
-      class="css-7i4qsc"
+      class="css-fcx7ij"
     >
       <button
         aria-label="Thank you Close"
-        class="css-7vk0l8"
+        class="css-1s20ceq"
         data-testid="button"
         type="button"
       >

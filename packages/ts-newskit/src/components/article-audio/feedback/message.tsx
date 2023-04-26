@@ -11,13 +11,16 @@ export const Message: React.FC<{
     <Stack
       stackDistribution="space-between"
       flow="horizontal-top"
-      spaceInline="space050"
+      spaceInline="space030"
     >
-      <TextBlock typographyPreset="utilityBody020">{message}</TextBlock>
+      <TextBlock typographyPreset="utilityBody020" marginInline="space000">
+        {message}
+      </TextBlock>
       <IconButton
         overrides={{
           stylePreset: 'feedbackIconButtonOutlineSecondary',
-          iconSize: 'iconSize080'
+          iconSize: 'iconSize080',
+          marginInline: 'space000'
         }}
         onClick={() => setClosed(!closed)}
         aria-label="Thank you Close"

@@ -20,7 +20,11 @@ export const FeedbackText: React.FC<{
         flow="horizontal-top"
         spaceInline="space050"
       >
-        <Stack stackDistribution="space-between" flow="vertical-left">
+        <Stack
+          stackDistribution="space-between"
+          flow="vertical-left"
+          marginInlineEnd="space000"
+        >
           <TextBlock typographyPreset="utilityBody020">
             {feedbackMessage}
           </TextBlock>
@@ -39,7 +43,8 @@ export const FeedbackText: React.FC<{
         <IconButton
           overrides={{
             stylePreset: 'feedbackIconButtonOutlineSecondary',
-            iconSize: 'iconSize080'
+            iconSize: 'iconSize080',
+            marginInline: 'space000'
           }}
           onClick={() => setClosed(!closed)}
           aria-label="Feedback Close"
