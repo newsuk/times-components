@@ -21,12 +21,15 @@ An example of the `data` structure can be found in the 'Controls' section on the
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const FeedbackStory = () => (
+export const FeedbackStory = (feedbackProps) => (
   <TCThemeProvider>
-    <Feedback />
+    <Feedback {...feedbackProps}/>
   </TCThemeProvider>
 );
 
-<Story name="Feedback">
+<Story name="Feedback"args={{
+    feedbackMessage: "Thank you for your feedback. We're always trying to give you the best possible experience – your feedback helps us do this.",
+    message: "Want to listen to more articles? Give your feedback below or email",
+}}>
   {FeedbackStory.bind({})}
 </Story>

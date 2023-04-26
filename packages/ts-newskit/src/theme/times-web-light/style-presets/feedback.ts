@@ -1,7 +1,6 @@
 export const feedbackStylePresets = {
   feedbackPreset: {
     base: {
-      textDecoration: 'underline',
       color: '#005C8A',
       wordBreak: 'break-all '
     }

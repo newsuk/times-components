@@ -20,7 +20,7 @@ exports[`Feedback Component should render snapshot 1`] = `
             Want to listen to more articles? Give your feedback below or email
           </p>
           <a
-            class="css-j1c36s"
+            class="css-g07ezv"
             href="mailto:comments+engagement@thetimes.co.uk"
           >
             <span
