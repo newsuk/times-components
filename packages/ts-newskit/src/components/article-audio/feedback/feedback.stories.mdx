@@ -8,22 +8,28 @@ import { Feedback } from './index.tsx';
 />
 
 # Feedback component
-The `Feedback` component displays feedback of radio player.
+The `Feedback` component displays feedback section of radio player.
+
+This takes in a series of props, as below, to display feedbackMessage and message.
+
 
 ## Props
 <Props of={Feedback} />
 
 ## Code Example
-`<Feedback />`
+`<Feedback 
+       feedbackMessage: "Thank you for your feedback.",
+       message: "Want to listen to more articles? Give your feedback below or email",
+ />`
 
 An example of the `data` structure can be found in the 'Controls' section on the 'Canvas' tab, where you can customise the data being fed to the Feedback component.
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const FeedbackStory = (feedbackProps) => (
+export const FeedbackStory = ({feedbackMessage,message}) => (
   <TCThemeProvider>
-    <Feedback {...feedbackProps}/>
+    <Feedback {...{feedbackMessage,message}}/>
   </TCThemeProvider>
 );
 
