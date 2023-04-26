@@ -6,20 +6,20 @@ exports[`BreakoutSection should render Breakout section 1`] = `
     class="css-13byt3y"
   >
     <div
-      class="css-1aolyyy"
+      class="css-rnfvhm"
     >
       <h2
-        class="css-d33d3q"
+        class="css-18mb4bh"
       >
         Add a challenge to your day
       </h2>
       <p
-        class="css-dqbc4d"
+        class="css-1020wg1"
       >
         Play exclusive Word puzzles, Number puzzles, Quizzes and more
       </p>
       <div
-        class="css-kh0hs8"
+        class="css-yysdkh"
       >
         <svg
           class="css-lbfshm"
@@ -124,7 +124,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="0"
         >
           <a
-            class="css-1h1nx05"
+            class="css-hisx5a"
             data-testid="buttonLink"
             href="/"
           >
@@ -140,7 +140,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="1"
         >
           <a
-            class="css-1h1nx05"
+            class="css-hisx5a"
             data-testid="buttonLink"
             href="/"
           >
@@ -156,7 +156,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="2"
         >
           <a
-            class="css-1h1nx05"
+            class="css-hisx5a"
             data-testid="buttonLink"
             href="/"
           >
@@ -172,7 +172,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="3"
         >
           <a
-            class="css-1h1nx05"
+            class="css-hisx5a"
             data-testid="buttonLink"
             href="/"
           >
@@ -188,7 +188,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="4"
         >
           <a
-            class="css-1h1nx05"
+            class="css-hisx5a"
             data-testid="buttonLink"
             href="/"
           >
@@ -204,7 +204,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
           id="5"
         >
           <a
-            class="css-1h1nx05"
+            class="css-hisx5a"
             data-testid="buttonLink"
             href="/"
           >
@@ -304,7 +304,7 @@ exports[`BreakoutSection should render Breakout section 1`] = `
       </svg>
     </div>
     <svg
-      fill="#FFBB6A"
+      class="css-17hrftr"
       height="24"
       preserveAspectRatio="none"
       viewBox="0 0 1440 24"
@@ -322,14 +322,14 @@ exports[`BreakoutSection should render Breakout section 1`] = `
       >
         <path
           d="M474.841 15.7801C158.779 25.2562 18.9736 20.2453 0 7.33101V0L1440 0.10673V13.8289C1373.09 21.4422 1238.28 27.2728 1014.59 20.3727C791.335 13.4861 558.225 13.8289 474.841 15.7801Z"
-          fill="#FFBB6A"
+          fill="currentcolor"
         />
       </mask>
       <g
         mask="url(#mask0_3001_253095)"
       >
         <rect
-          fill="#FFBB6A"
+          fill="currentcolor"
           height="24"
           width="100%"
         />
