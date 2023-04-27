@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.27.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.26.0...@times-components/ts-newskit@1.27.0) (2023-04-27)
+
+
+### Features
+
+* **TMST-618:** Breakout section component ([#3321](https://github.com/newsuk/times-components/issues/3321)) ([58d60ff](https://github.com/newsuk/times-components/commit/58d60ffd9f3a94c208c682ac0536d62c9bdce4be))
+
+
+
+
+
 # [1.26.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.25.0...@times-components/ts-newskit@1.26.0) (2023-04-27)
 
 
