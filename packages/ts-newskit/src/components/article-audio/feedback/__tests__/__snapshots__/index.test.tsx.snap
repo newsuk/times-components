@@ -39,7 +39,7 @@ exports[`Feedback Component should render snapshot 1`] = `
         class="css-7i4qsc"
       >
         <button
-          aria-label="Feedback Close"
+          aria-label="close"
           class="css-1662jff"
           data-testid="button"
           type="button"

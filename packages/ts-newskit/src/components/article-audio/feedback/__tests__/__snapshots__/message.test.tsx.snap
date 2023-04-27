@@ -18,7 +18,7 @@ exports[`Message Component should render snapshot 1`] = `
       class="css-fcx7ij"
     >
       <button
-        aria-label="Thank you Close"
+        aria-label="close"
         class="css-1662jff"
         data-testid="button"
         type="button"

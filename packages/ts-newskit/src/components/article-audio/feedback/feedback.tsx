@@ -47,7 +47,7 @@ export const FeedbackText: React.FC<{
             marginInline: 'space000'
           }}
           onClick={() => setClosed(!closed)}
-          aria-label="Feedback Close"
+          aria-label="close"
         >
           <NewsKitCloseIcon />
         </IconButton>

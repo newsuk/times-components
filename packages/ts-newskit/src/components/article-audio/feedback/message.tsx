@@ -23,7 +23,7 @@ export const Message: React.FC<{
           marginInline: 'space000'
         }}
         onClick={() => setClosed(!closed)}
-        aria-label="Thank you Close"
+        aria-label="close"
       >
         <NewsKitCloseIcon />
       </IconButton>

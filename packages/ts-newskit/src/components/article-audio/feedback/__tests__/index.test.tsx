@@ -34,7 +34,7 @@ describe('Feedback Component', () => {
   it('handleFeedback should close showFeedback', async () => {
     render(<Feedback feedbackMessage={feedbackMessage} message={message} />);
     const test = screen.getByText(feedbackMessage);
-    const closeButton = screen.getByRole('button', { name: 'Feedback Close' });
+    const closeButton = screen.getByRole('button', { name: 'close' });
     fireEvent.click(closeButton);
     expect(test).not.toBeInTheDocument();
   });
@@ -44,7 +44,7 @@ describe('Feedback Component', () => {
     const thumbsUpButton = screen.getByRole('button', { name: 'Thumbs Down' });
     fireEvent.click(thumbsUpButton);
     const test = screen.getByText(message);
-    const closeButton = screen.getByRole('button', { name: 'Thank you Close' });
+    const closeButton = screen.getByRole('button', { name: 'close' });
     fireEvent.click(closeButton);
     expect(test).not.toBeInTheDocument();
   });
