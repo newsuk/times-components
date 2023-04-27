@@ -36,8 +36,7 @@ export const PuzzleCard = ({ data: { list } }: PuzzleCardProps) => {
         {puzzle.title && (
           <TextBlock
             as="div"
-            marginBlockStart="space030"
-            marginBlockEnd="space020"
+            marginBlock="space020"
             marginInline="space020"
             stylePreset="inkContrast"
             typographyPreset={{
@@ -53,8 +52,8 @@ export const PuzzleCard = ({ data: { list } }: PuzzleCardProps) => {
           stackDistribution="flex-start"
           height="auto"
         >
-          {dayOfWeek && (
-            <div>
+          <Block>
+            {dayOfWeek && (
               <TextBlock
                 as="span"
                 paddingBlockStart="space010"
@@ -64,6 +63,8 @@ export const PuzzleCard = ({ data: { list } }: PuzzleCardProps) => {
               >
                 {dayOfWeek}
               </TextBlock>
+            )}
+            {puzzle.shortIdentifier && (
               <TextBlock
                 as="span"
                 paddingBlockStart="space010"
@@ -74,8 +75,8 @@ export const PuzzleCard = ({ data: { list } }: PuzzleCardProps) => {
               >
                 {` | ${puzzle.shortIdentifier}`}
               </TextBlock>
-            </div>
-          )}
+            )}
+          </Block>
         </Stack>
       </CardContent>
     </StyledCard>

@@ -65,14 +65,16 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
             class="css-1u48n0x"
           >
             <div
-              class="css-1hbxf3t"
+              class="css-12p5eap"
             >
               General Knowledge
             </div>
             <div
               class="css-1dfr6je"
             >
-              <div>
+              <div
+                class="css-13byt3y"
+              >
                 <span
                   class="css-1x9evae"
                 >
