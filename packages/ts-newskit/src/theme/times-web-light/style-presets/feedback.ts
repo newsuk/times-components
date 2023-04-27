@@ -1,18 +1,18 @@
 export const feedbackStylePresets = {
   feedbackPreset: {
     base: {
-      color: '#005C8A',
-      wordBreak: 'break-all '
+      color: '{{colors.interactivePrimary050}}',
+      wordBreak: 'break-all'
     }
   },
   feedbackContainerPreset: {
     base: {
-      backgroundColor: '#bedeed'
+      backgroundColor: '{{colors.interfaceInformative020}}'
     }
   },
   feedbackIconButtonOutlineSecondary: {
     base: {
-      backgroundColor: '#bedeed'
+      backgroundColor: '{{colors.interfaceInformative020}}'
     }
   }
 };

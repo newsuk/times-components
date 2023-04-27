@@ -17,7 +17,7 @@ exports[`FeedbackText Component should render snapshot 1`] = `
           Want to listen to more articles? Give your feedback below or email
         </p>
         <a
-          class="css-g07ezv"
+          class="css-1arsg2x"
           href="mailto:comments+engagement@thetimes.co.uk"
         >
           <span
@@ -37,7 +37,7 @@ exports[`FeedbackText Component should render snapshot 1`] = `
     >
       <button
         aria-label="Feedback Close"
-        class="css-1s20ceq"
+        class="css-1662jff"
         data-testid="button"
         type="button"
       >
@@ -81,7 +81,7 @@ exports[`FeedbackText Component should render snapshot 1`] = `
     >
       <button
         aria-label="Thumbs Down"
-        class="css-7vk0l8"
+        class="css-8ril9u"
         data-testid="button"
         type="button"
       >
@@ -135,7 +135,7 @@ exports[`FeedbackText Component should render snapshot 1`] = `
     >
       <button
         aria-label="Thumbs Up"
-        class="css-7vk0l8"
+        class="css-8ril9u"
         data-testid="button"
         type="button"
       >
