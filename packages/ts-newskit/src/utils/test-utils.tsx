@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import { render, RenderOptions } from '@testing-library/react';
 import { ThemeProvider } from 'newskit';
-import { TimesWebLightTheme } from '../../theme';
+import { TimesWebLightTheme } from '../theme';
 
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
   return <ThemeProvider theme={TimesWebLightTheme}>{children}</ThemeProvider>;

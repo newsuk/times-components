@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render } from '../../components/utils/test-utils';
+import { render } from '../../utils/test-utils';
 import * as icons from '../index';
 
 describe('Icons', () => {

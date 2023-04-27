@@ -1,0 +1,58 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { TCThemeProvider } from '../../../utils/index.tsx';
+import { InArticleAudio } from './index.tsx';
+
+<Meta
+  title="Newskit Components/Article Audio/InArticleAudio"
+  component={InArticleAudio}
+/>
+
+# InArticleAudio component
+The `InArticleAudio` component displays your hierarchical position on the website.
+
+This takes in a `data` prop, as below, to display the links in their order within the data object.
+
+## Props
+<Props of={InArticleAudio} />
+
+## Code Example
+```
+<InArticleAudio
+  src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
+  readyToPlayText='Listen to article'
+  playingText='Playing'
+  narrator='James Marriott'
+  headline='Article headline'
+  feedback={{
+    requestFeedback: true,
+    feedbackMessage: "Want to listen to more articles? Give your feedback below or email",
+    thankyouMessage: "Thank you for your feedback. We're always trying to give you the best possible experience – your feedback helps us do this."
+  }}
+/>
+```
+
+An example of the `data` structure can be found in the 'Controls' section on the 'Canvas' tab, where you can customise the data being fed to the InArticleAudio component.
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const InArticleAudioStory = ({ src, readyToPlayText, playingText, narrator, headline, feedback }) => (
+  <TCThemeProvider>
+    <InArticleAudio {...{ src, readyToPlayText, playingText, narrator, headline, feedback }} />
+  </TCThemeProvider>
+);
+
+<Story name="InArticleAudio" args={{ 
+  src: "https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3",
+  readyToPlayText: 'Listen to article',
+  playingText: 'Playing',
+  narrator: 'James Marriott',
+  headline: 'Article headline',
+  feedback: {
+    requestFeedback: true,
+    feedbackMessage: "Want to listen to more articles? Give your feedback below or email",
+    thankyouMessage: "Thank you for your feedback. We're always trying to give you the best possible experience – your feedback helps us do this."
+  }
+}}>
+  {InArticleAudioStory.bind({})}
+</Story>
