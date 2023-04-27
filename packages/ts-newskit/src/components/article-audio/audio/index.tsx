@@ -8,17 +8,24 @@ import {
   Visible
 } from 'newskit';
 import React, { useEffect, useRef, useState } from 'react';
+import { Feedback } from '../feedback';
 import { StickyPlayerDesktop } from './sticky-player/stickyplayer.desktop';
 import { StickyPlayerExpanded } from './sticky-player/stickyplayer.expanded';
 import { StickyPlayerMob } from './sticky-player/stickyplayer.mob';
 import { StickyAudioPlayer, StickyAudioPlayerContainer } from './styles';
 
+type FeedbackProps = {
+  requestFeedback: boolean;
+  feedbackMessage: string;
+  thankyouMessage: string;
+};
 export interface InArticleAudioProps {
   src: string;
   playingText?: string;
   readyToPlayText?: string;
   narrator: string;
   headline: string;
+  feedback?: FeedbackProps;
 }
 
 export const InArticleAudio = ({
@@ -26,7 +33,8 @@ export const InArticleAudio = ({
   readyToPlayText = 'Listen to article',
   playingText = 'Playing',
   narrator,
-  headline
+  headline,
+  feedback
 }: InArticleAudioProps) => {
   const [isPlayed, setIsPlayed] = useState<boolean>(false);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
@@ -85,6 +93,14 @@ export const InArticleAudio = ({
             </TextBlock>
           </Block>
         </Stack>
+
+        {feedback &&
+          feedback.requestFeedback && (
+            <Feedback
+              feedbackMessage={feedback.feedbackMessage}
+              message={feedback.thankyouMessage}
+            />
+          )}
 
         {showStickyPlayer && (
           <StickyAudioPlayerContainer>

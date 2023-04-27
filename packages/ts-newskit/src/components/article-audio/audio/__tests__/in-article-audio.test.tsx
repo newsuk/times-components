@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render, screen, fireEvent } from '../../../utils/test-utils';
+import { render, screen, fireEvent } from '../../../../utils/test-utils';
 import { InArticleAudio, InArticleAudioProps } from '..';
 
 export const data = {

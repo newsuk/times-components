@@ -227,6 +227,7 @@ exports[`Icons Component: NewsKitSundayTimesMasthead NewsKitSundayTimesMasthead 
 exports[`Icons Component: NewsKitThumbsDownIcon NewsKitThumbsDownIcon renders with default props 1`] = `
 <DocumentFragment>
   <svg
+    class="css-j6fc06"
     fill="none"
     height="32"
     viewBox="0 0 32 32"
@@ -260,14 +261,6 @@ exports[`Icons Component: NewsKitThumbsDownIcon NewsKitThumbsDownIcon renders wi
         y="8"
       />
     </g>
-    <rect
-      height="31"
-      rx="15.5"
-      stroke="currentcolor"
-      width="31"
-      x="0.5"
-      y="0.5"
-    />
   </svg>
 </DocumentFragment>
 `;
@@ -275,6 +268,7 @@ exports[`Icons Component: NewsKitThumbsDownIcon NewsKitThumbsDownIcon renders wi
 exports[`Icons Component: NewsKitThumbsUpIcon NewsKitThumbsUpIcon renders with default props 1`] = `
 <DocumentFragment>
   <svg
+    class="css-j6fc06"
     fill="none"
     height="32"
     viewBox="0 0 32 32"
@@ -308,14 +302,6 @@ exports[`Icons Component: NewsKitThumbsUpIcon NewsKitThumbsUpIcon renders with d
         y="8"
       />
     </g>
-    <rect
-      height="31"
-      rx="15.5"
-      stroke="currentcolor"
-      width="31"
-      x="0.5"
-      y="0.5"
-    />
   </svg>
 </DocumentFragment>
 `;

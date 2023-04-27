@@ -18,7 +18,7 @@ export const Message: React.FC<{
       </TextBlock>
       <IconButton
         overrides={{
-          stylePreset: 'feedbackIconButtonOutlineSecondary',
+          stylePreset: 'iconButtonOutlinedSecondary',
           iconSize: 'iconSize080',
           marginInline: 'space000'
         }}

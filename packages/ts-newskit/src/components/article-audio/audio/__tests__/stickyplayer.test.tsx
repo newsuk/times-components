@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { useBreakpointKey } from 'newskit';
-import { render, screen, fireEvent } from '../../../utils/test-utils';
+import { render, screen, fireEvent } from '../../../../utils/test-utils';
 import { InArticleAudio, InArticleAudioProps } from '..';
 
 jest.mock('newskit', () => ({
