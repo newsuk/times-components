@@ -5,7 +5,7 @@ import {
   TextBlock
 } from 'newskit';
 
-import { sanitiseCopy } from '../../utils/text-formatting';
+import { sanitiseCopy } from '../../../utils/text-formatting';
 
 type AccordionProps = {
   header: string;
