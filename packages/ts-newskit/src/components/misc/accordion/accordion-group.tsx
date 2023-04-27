@@ -26,6 +26,7 @@ export const AccordionGroup = ({ group }: AccordionGroupProps) => {
     >
       {group.map(accordion => (
         <NewskitAccordion
+          key={accordion.header}
           header={accordion.header}
           overrides={{
             header: {

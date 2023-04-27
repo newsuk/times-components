@@ -94,7 +94,8 @@ export const InArticleAudio = ({
           </Block>
         </Stack>
 
-        {feedback &&
+        {isPlayed &&
+          feedback &&
           feedback.requestFeedback && (
             <Feedback
               feedbackMessage={feedback.feedbackMessage}
