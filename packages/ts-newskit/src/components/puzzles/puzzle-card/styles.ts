@@ -2,12 +2,12 @@ import {
   styled,
   getColorCssFromTheme,
   getMediaQueryFromTheme,
+  getStylePresetFromTheme,
   Image,
   Card
 } from 'newskit';
 
 export const StyledImage = styled(Image)`
-  border-radius: 3px 3px 0 0;
   ${getMediaQueryFromTheme('xs')} {
     max-width: 126px;
     height: 84px;
@@ -31,30 +31,27 @@ export const StyledImage = styled(Image)`
 `;
 
 export const StyledCard = styled(Card)`
-  text-align: center;
-  border: 1px solid;
-  border-radius: 4px;
+  ${getStylePresetFromTheme('puzzleCard')};
   ${getColorCssFromTheme('borderColor', 'interface040')};
   ${getColorCssFromTheme('backgroundColor', 'transparent')};
-  height: 211.33px;
   ${getMediaQueryFromTheme('xs')} {
-    height: 168px;
+    min-height: 168px;
     width: 126px;
   }
   ${getMediaQueryFromTheme('sm')} {
-    height: 201.33px;
+    min-height: 201.33px;
     width: 206px;
   }
   ${getMediaQueryFromTheme('md')} {
-    height: 186.67px;
+    min-height: 186.67px;
     width: 154px;
   }
   ${getMediaQueryFromTheme('lg')} {
-    height: 211.33px;
+    min-height: 211.33px;
     width: 218px;
   }
   ${getMediaQueryFromTheme('xl')} {
-    height: 261.33px;
+    min-height: 261.33px;
     width: 293px;
   }
 `;

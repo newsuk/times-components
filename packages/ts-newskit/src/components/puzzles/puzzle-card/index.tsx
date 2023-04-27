@@ -32,7 +32,7 @@ export const PuzzleCard = ({ data: { list } }: PuzzleCardProps) => {
           </Wrap>
         )}
       </Block>
-      <CardContent justifyItems="center" alignContent="start">
+      <CardContent justifyItems="center">
         {puzzle.title && (
           <TextBlock
             as="div"
@@ -41,8 +41,8 @@ export const PuzzleCard = ({ data: { list } }: PuzzleCardProps) => {
             marginInline="space020"
             stylePreset="inkContrast"
             typographyPreset={{
-              xs: 'puzzleCardHeader',
-              lg: 'puzzleCardHeaderLg'
+              xs: 'editorialHeadline010',
+              lg: 'editorialHeadline020'
             }}
           >
             {puzzle.title}
@@ -59,7 +59,7 @@ export const PuzzleCard = ({ data: { list } }: PuzzleCardProps) => {
                 as="span"
                 paddingBlockStart="space010"
                 paddingBlockEnd="space030"
-                typographyPreset="puzzleCardDay"
+                typographyPreset="utilityLabel010"
                 stylePreset="inkBase"
               >
                 {dayOfWeek}
@@ -69,7 +69,7 @@ export const PuzzleCard = ({ data: { list } }: PuzzleCardProps) => {
                 paddingBlockStart="space010"
                 paddingBlockEnd="space030"
                 paddingInlineStart="space010"
-                typographyPreset="puzzleCardText"
+                typographyPreset="utilityBody010"
                 stylePreset="inkSubtle"
               >
                 {` | ${puzzle.shortIdentifier}`}

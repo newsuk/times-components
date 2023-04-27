@@ -3,7 +3,7 @@
 exports[`Puzzle Card should render Puzzle Card 1`] = `
 <DocumentFragment>
   <div
-    class="css-icew21"
+    class="css-qnrxjz"
   >
     <div
       class="css-1shocxe"
@@ -62,10 +62,10 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
             </div>
           </div>
           <div
-            class="css-19mwb4y"
+            class="css-1u48n0x"
           >
             <div
-              class="css-13f5s0n"
+              class="css-1hbxf3t"
             >
               General Knowledge
             </div>
@@ -74,12 +74,12 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
             >
               <div>
                 <span
-                  class="css-927qvd"
+                  class="css-1x9evae"
                 >
                   Sunday
                 </span>
                 <span
-                  class="css-etibl"
+                  class="css-178hr5"
                 >
                    | No. 9873
                 </span>
