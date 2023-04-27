@@ -9,10 +9,5 @@ export const feedbackStylePresets = {
     base: {
       backgroundColor: '{{colors.interfaceInformative020}}'
     }
-  },
-  feedbackIconButtonOutlineSecondary: {
-    base: {
-      backgroundColor: '{{colors.interfaceInformative020}}'
-    }
   }
 };

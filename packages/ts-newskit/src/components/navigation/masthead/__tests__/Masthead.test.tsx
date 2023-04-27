@@ -1,6 +1,6 @@
 import React from 'react';
 import { EditionMasthead } from '../index';
-import { render } from '../../../utils/test-utils';
+import { render } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 
 describe('EditionMasthead', () => {

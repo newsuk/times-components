@@ -1,6 +1,6 @@
 import React from 'react';
 import { NewsKitProvider, Theme } from 'newskit';
-import { TimesWebLightTheme } from '../../theme';
+import { TimesWebLightTheme } from '../theme';
 
 type TCThemeProviderProps = {
   theme?: Theme;

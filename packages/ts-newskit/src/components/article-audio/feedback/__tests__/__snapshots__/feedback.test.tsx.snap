@@ -37,7 +37,7 @@ exports[`FeedbackText Component should render snapshot 1`] = `
     >
       <button
         aria-label="close"
-        class="css-1662jff"
+        class="css-1z0ieme"
         data-testid="button"
         type="button"
       >
@@ -81,11 +81,12 @@ exports[`FeedbackText Component should render snapshot 1`] = `
     >
       <button
         aria-label="Thumbs Down"
-        class="css-8ril9u"
+        class="css-196hyhg"
         data-testid="button"
         type="button"
       >
         <svg
+          class="css-j6fc06"
           fill="none"
           height="32"
           viewBox="0 0 32 32"
@@ -119,14 +120,6 @@ exports[`FeedbackText Component should render snapshot 1`] = `
               y="8"
             />
           </g>
-          <rect
-            height="31"
-            rx="15.5"
-            stroke="currentcolor"
-            width="31"
-            x="0.5"
-            y="0.5"
-          />
         </svg>
       </button>
     </div>
@@ -135,11 +128,12 @@ exports[`FeedbackText Component should render snapshot 1`] = `
     >
       <button
         aria-label="Thumbs Up"
-        class="css-8ril9u"
+        class="css-196hyhg"
         data-testid="button"
         type="button"
       >
         <svg
+          class="css-j6fc06"
           fill="none"
           height="32"
           viewBox="0 0 32 32"
@@ -173,14 +167,6 @@ exports[`FeedbackText Component should render snapshot 1`] = `
               y="8"
             />
           </g>
-          <rect
-            height="31"
-            rx="15.5"
-            stroke="currentcolor"
-            width="31"
-            x="0.5"
-            y="0.5"
-          />
         </svg>
       </button>
     </div>

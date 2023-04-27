@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '../../../utils/test-utils';
+import { render } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { Message } from '../message';
 import { screen } from '@testing-library/react';

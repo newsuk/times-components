@@ -1,7 +1,7 @@
 import React from 'react';
 import { BreakoutSection } from '../index';
 import { breakoutItems } from '../fixtures/breakoutItems.json';
-import { render } from '../../../utils/test-utils';
+import { render } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 
 describe('BreakoutSection', () => {

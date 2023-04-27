@@ -42,10 +42,11 @@ export const FeedbackText: React.FC<{
         </Stack>
         <IconButton
           overrides={{
-            stylePreset: 'feedbackIconButtonOutlineSecondary',
+            stylePreset: 'iconButtonMinimalSecondary',
             iconSize: 'iconSize080',
             marginInline: 'space000'
           }}
+          size="small"
           onClick={() => setClosed(!closed)}
           aria-label="close"
         >
@@ -60,9 +61,10 @@ export const FeedbackText: React.FC<{
       >
         <IconButton
           overrides={{
-            stylePreset: 'feedbackIconButtonOutlineSecondary',
+            stylePreset: 'iconButtonOutlinedSecondary',
             iconSize: 'iconSize080'
           }}
+          size="small"
           onClick={() => handleFeedback(!showFeedback)}
           aria-label="Thumbs Down"
         >
@@ -70,9 +72,10 @@ export const FeedbackText: React.FC<{
         </IconButton>
         <IconButton
           overrides={{
-            stylePreset: 'feedbackIconButtonOutlineSecondary',
+            stylePreset: 'iconButtonOutlinedSecondary',
             iconSize: 'iconSize080'
           }}
+          size="small"
           onClick={() => handleFeedback(!showFeedback)}
           aria-label="Thumbs Up"
         >

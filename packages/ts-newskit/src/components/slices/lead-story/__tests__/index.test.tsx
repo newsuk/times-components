@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render } from '../../../utils/test-utils';
+import { render } from '../../../../utils/test-utils';
 import { LeadStory } from '../index';
 import { leadStory } from '../../../../slices/fixtures/data.json';
 
