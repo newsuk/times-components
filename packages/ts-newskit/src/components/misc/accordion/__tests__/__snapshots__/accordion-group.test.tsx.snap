@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Toast should render the component 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="css-1oteowz"
+    >
+      <h3
+        class="css-18mb4bh"
+      >
+        <button
+          aria-controls="nk-1-content"
+          aria-expanded="false"
+          class="css-1r0iinl"
+          data-testid="accordion-control"
+          id="nk-1-control"
+        >
+          <div
+            class="css-1gwez8i"
+          >
+            header
+          </div>
+          <div
+            class="css-1cwczap"
+          >
+            <svg
+              aria-hidden="true"
+              class="css-bl48kn-EmotionIconBase ex0cdmw0"
+              fill="currentColor"
+              focusable="false"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+              />
+            </svg>
+          </div>
+        </button>
+      </h3>
+      <div
+        class="nk-accordion-exit-done css-84bues"
+        data-testid="panel-transition-container"
+        style="max-height: 0px;"
+      >
+        <div
+          aria-labelledby="nk-1-control"
+          class="css-1b62ctp"
+          data-testid="accordion-content"
+          id="nk-1-content"
+          role="region"
+        >
+          <p
+            class="css-80786y"
+          >
+            content
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
