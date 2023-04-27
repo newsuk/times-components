@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Message Component should render snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-jxknkc"
+  >
+    <div
+      class="css-fcx7ij"
+    >
+      <p
+        class="css-fl8ixt"
+      >
+        Thank you for your feedback. We're always trying to give you the best possible experience – your feedback helps us do this.
+      </p>
+    </div>
+    <div
+      class="css-fcx7ij"
+    >
+      <button
+        aria-label="close"
+        class="css-1662jff"
+        data-testid="button"
+        type="button"
+      >
+        <svg
+          class="css-j6fc06"
+          fill="none"
+          height="24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <mask
+            height="24"
+            id="closeIconMask"
+            maskUnits="userSpaceOnUse"
+            style="mask-type: alpha;"
+            width="24"
+            x="0"
+            y="0"
+          >
+            <path
+              d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"
+            />
+          </mask>
+          <g
+            mask="url(#closeIconMask)"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="currentcolor"
+            />
+          </g>
+        </svg>
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
