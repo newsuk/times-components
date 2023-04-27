@@ -4142,10 +4142,10 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
-"@newskit-themes/the-times@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@newskit-themes/the-times/-/the-times-0.0.2.tgz#ac30fe1da87d9a136c31346204bc2b6ac99338ef"
-  integrity sha512-w7+sKXspgNPe9Fdtw5KqDBkoH8YK7Euo35DoPvtZ9XYuVqqYjB3s0QJB93TJvX9/0v05Db6YQER+m6av7ETw7Q==
+"@newskit-themes/the-times@0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@newskit-themes/the-times/-/the-times-0.1.0.tgz#b35b7736172b39493f867204728f460f016f8f45"
+  integrity sha512-LfjCTJdIrj6PSjtdRB5UIXP1avxUXSqavGTR66eya8XUkUoYQ2XAfCOGzH9Ujmdevtb/CxkkUiZzIwFhQ5PxaQ==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -21216,19 +21216,10 @@ react-virtual@^2.10.4:
   dependencies:
     "@reach/observe-rect" "^1.1.0"
 
-react@16.9.0:
+react@16.9.0, react@^16.8.3:
   version "16.9.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.9.0.tgz#40ba2f9af13bc1a38d75dbf2f4359a5185c4f7aa"
   integrity sha512-+7LQnFBwkiw+BobzOF6N//BdoNw0ouwmSJTEm9cglOOmsg/TMiFHZLe2sEoN5M7LgJTj9oHH0gxklfnQe66S1w==
-  dependencies:
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-
-react@^16.8.3:
-  version "16.14.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.14.0.tgz#94d776ddd0aaa37da3eda8fc5b6b18a4c9a3114d"
-  integrity sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
