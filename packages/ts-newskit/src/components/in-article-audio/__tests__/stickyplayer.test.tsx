@@ -51,6 +51,7 @@ describe('StickyPlayerMob functions', () => {
       `${data.headline} - ${data.narrator}`
     )[0];
     expect(scrollText).toBeVisible();
+    expect(scrollText).toHaveStyle({ width: '240px' });
 
     await fireEvent.click(scrollText);
     const audioSlider = screen.queryAllByTestId('audio-slider');
@@ -72,7 +73,7 @@ describe('StickyPlayerMob functions', () => {
     expect(collapseButton).not.toBeVisible();
   });
 
-  test('minimises expanded panel when outsside component is clicked', async () => {
+  test('minimises expanded panel when outside component is clicked', async () => {
     const scrollText = screen.queryAllByText(
       `${data.headline} - ${data.narrator}`
     )[0];

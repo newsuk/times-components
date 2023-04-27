@@ -36,7 +36,7 @@ export const InArticleAudio = ({
   const breakpoint = useBreakpointKey();
 
   const pausedText = isPlayed ? 'Paused' : readyToPlayText;
-  const playButtonSize = breakpoint === "xs" ? "small" : "medium";
+  const playButtonSize = breakpoint === 'xs' ? 'small' : 'medium';
 
   const handleClickPlayPause = () => {
     !isPlayed && setIsPlayed(true);
@@ -69,7 +69,10 @@ export const InArticleAudio = ({
     <Block ref={audioRef}>
       <AudioPlayerComposable src={src}>
         <Stack flow="horizontal-center" marginBlock="space040">
-          <AudioPlayerPlayPauseButton onClick={handleClickPlayPause} size={playButtonSize} />
+          <AudioPlayerPlayPauseButton
+            onClick={handleClickPlayPause}
+            size={playButtonSize}
+          />
           <Block marginInlineStart="space020">
             <TextBlock
               typographyPreset="utilityHeading010"

@@ -13,11 +13,11 @@ export const ScrollingText: React.FC = ({ children }) => {
       setScrollTextWidth(textWidth + 40);
     };
 
-    window.addEventListener('resize', debounce(() => handleResize(), 500));
+    window.addEventListener('resize', debounce(handleResize, 500));
     handleResize();
 
     return () => {
-      window.removeEventListener('resize', debounce(() => handleResize(), 500));
+      window.removeEventListener('resize', debounce(handleResize, 500));
     };
   }, []);
 
