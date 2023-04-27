@@ -9,7 +9,8 @@ import {
   IconButton,
   Stack,
   getShadowCssFromTheme,
-  getBorderCssFromTheme
+  getBorderCssFromTheme,
+  getMediaQueryFromTheme
 } from 'newskit';
 
 const setBlockPadding = (space: string) => ({ paddingBlock: `${space}` });
@@ -33,8 +34,13 @@ export const StickyAudioPlayerContainer = styled(Block)`
   bottom: 0;
   left: 0;
   width: 100vw;
-  ${getSpacingCssFromTheme(setBlockPadding, 'space040')};
-  ${getSpacingCssFromTheme(setInlinePadding, 'space045')};
+  ${getSpacingCssFromTheme(setBlockPadding, 'space010')};
+  ${getSpacingCssFromTheme(setInlinePadding, 'space040')};
+
+  ${getMediaQueryFromTheme('md')} {
+    ${getSpacingCssFromTheme(setBlockPadding, 'space040')};
+    ${getSpacingCssFromTheme(setInlinePadding, 'space045')};
+  }
 `;
 
 export const StickyAudioPlayer = styled(Block)`
