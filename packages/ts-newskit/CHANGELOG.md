@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.28.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.27.0...@times-components/ts-newskit@1.28.0) (2023-04-27)
+
+
+### Features
+
+* **TMRX-1198:** in article audio player ([#3336](https://github.com/newsuk/times-components/issues/3336)) ([ab52180](https://github.com/newsuk/times-components/commit/ab521804abad058f6d0ebd97736b9b1d26a06203))
+
+
+
+
+
 # [1.27.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.26.0...@times-components/ts-newskit@1.27.0) (2023-04-27)
 
 
