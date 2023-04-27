@@ -1,0 +1,63 @@
+import { Meta, Story, Props } from '@storybook/addon-docs'
+import { CardsContainer } from "./index";
+import { NewsKitProvider, Block } from 'newskit';
+import { PuzzlesWebLightTheme } from '../../../theme';
+import { ContentWrapper } from './styles';
+import { puzzleGame} from './fixtures/puzzleGame.json';
+
+<Meta
+  title="Newskit Components/Puzzles/Cards Container"
+  component={CardsContainer}
+/>
+
+# CardsContainer component
+The `CardsContainer` component is used to display Puzzle cards using the NewsKit Grid
+
+## Props 
+<Props of={CardsContainer} />               
+
+## Code Example
+`<CardsContainer cards={[puzzleGame]} title='Crosswords'/>`
+
+## View Component
+Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
+
+export const CardsContainerStory = ({cards, title, isScrollable, seeAllLink}) => (
+  <NewsKitProvider theme={PuzzlesWebLightTheme}>
+    <ContentWrapper marginInline='auto' paddingBlock='space020' paddingInline='space020'>
+      <CardsContainer cards={cards} title={title} isScrollable={isScrollable} seeAllLink={seeAllLink}/>
+    </ContentWrapper>
+  </NewsKitProvider>
+);
+
+<Story name="Cards Container" args={{cards: Array(4).fill(puzzleGame), title: 'Latest Crosswords', isScrollable: false, seeAllLink: 'https://www.newskit.co.uk/'}}
+argTypes={{
+  cards: {
+    control: 'select',
+    name: 'Cards (choose number of cards)',
+    options: ['3 cards', '4 cards', '5 cards', '6 cards', '7 cards', '8 cards'],
+    mapping: { 
+      '3 cards': Array(3).fill(puzzleGame),
+      '4 cards': Array(4).fill(puzzleGame),
+      '5 cards': Array(5).fill(puzzleGame),
+      '6 cards': Array(6).fill(puzzleGame),
+      '7 cards': Array(7).fill(puzzleGame),
+      '8 cards': Array(8).fill(puzzleGame)          
+    }
+  },
+  title: {
+    control: 'text',
+    name: 'Title'
+  },
+isScrollable: {
+    control: 'boolean',
+    name: 'Scrollable Container'
+  },
+  seeAllLink: {
+    control: 'text',
+    name: 'See All Link'
+  }
+}}
+>
+  {CardsContainerStory.bind({})}
+</Story>
