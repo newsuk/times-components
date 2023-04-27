@@ -5,7 +5,7 @@ import {
   TextBlock
 } from 'newskit';
 
-import { sanitiseCopy } from '../../utils/text-formatting';
+import { sanitiseCopy } from '../../../utils/text-formatting';
 
 type AccordionProps = {
   header: string;
@@ -26,6 +26,7 @@ export const AccordionGroup = ({ group }: AccordionGroupProps) => {
     >
       {group.map(accordion => (
         <NewskitAccordion
+          key={accordion.header}
           header={accordion.header}
           overrides={{
             header: {

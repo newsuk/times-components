@@ -13,6 +13,7 @@ const buildConfig = dir => {
     transformIgnorePatterns: [],
     testEnvironment: 'jest-environment-jsdom-sixteen',
     setupFiles: [],
+    setupFilesAfterEnv: ['<rootDir>/packages/ts-newskit/jest.setup.js'],
     testMatch: [
       `**/packages/${name}/**/__tests__/*.test.tsx`,
       `**/packages/${name}/**/__tests__/*.test.ts`

@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { fireEvent, render } from '../../../utils/test-utils';
+import { fireEvent, render } from '../../../../utils/test-utils';
 import { CustomHamburgerMenuContainer } from '../HamburgerMenuContainer';
 
 describe('HamburgerMenuContainer', () => {
