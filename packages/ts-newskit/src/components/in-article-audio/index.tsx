@@ -63,7 +63,7 @@ export const InArticleAudio = ({
   );
 
   return (
-    <div ref={audioRef}>
+    <Block ref={audioRef}>
       <AudioPlayerComposable src={src}>
         <Stack flow="horizontal-center">
           <AudioPlayerPlayPauseButton onClick={handleClickPlayPause} />
@@ -113,6 +113,6 @@ export const InArticleAudio = ({
           </StickyAudioPlayerContainer>
         )}
       </AudioPlayerComposable>
-    </div>
+    </Block>
   );
 };
