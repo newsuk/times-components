@@ -4,6 +4,7 @@ import {
   Block,
   Stack,
   TextBlock,
+  useBreakpointKey,
   Visible
 } from 'newskit';
 import React, { useEffect, useRef, useState } from 'react';
@@ -32,8 +33,10 @@ export const InArticleAudio = ({
   const [showStickyPlayer, setShowStickyPlayer] = useState<boolean>(false);
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const audioRef = useRef<HTMLDivElement>(null);
+  const breakpoint = useBreakpointKey();
 
   const pausedText = isPlayed ? 'Paused' : readyToPlayText;
+  const playButtonSize = breakpoint === "xs" ? "small" : "medium";
 
   const handleClickPlayPause = () => {
     !isPlayed && setIsPlayed(true);
@@ -65,8 +68,8 @@ export const InArticleAudio = ({
   return (
     <Block ref={audioRef}>
       <AudioPlayerComposable src={src}>
-        <Stack flow="horizontal-center">
-          <AudioPlayerPlayPauseButton onClick={handleClickPlayPause} />
+        <Stack flow="horizontal-center" marginBlock="space040">
+          <AudioPlayerPlayPauseButton onClick={handleClickPlayPause} size={playButtonSize} />
           <Block marginInlineStart="space020">
             <TextBlock
               typographyPreset="utilityHeading010"

@@ -13,20 +13,20 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
         src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
       />
       <div
-        class="css-17x5lw"
+        class="css-qoq9ah"
       >
         <button
           aria-busy="true"
           aria-label="Play"
           aria-live="polite"
           aria-pressed="false"
-          class="css-1xklm8t"
+          class="css-1vd1omt"
           data-testid="audio-player-play-pause-button"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="css-1i0beyd"
+            class="css-1su91n6"
             fill="currentColor"
             viewBox="0 0 64 64"
             xmlns="http://www.w3.org/2000/svg"
