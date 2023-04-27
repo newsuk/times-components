@@ -42,7 +42,7 @@ export const FeedbackText: React.FC<{
         </Stack>
         <IconButton
           overrides={{
-            stylePreset: 'iconButtonOutlinedSecondary',
+            stylePreset: 'iconButtonMinimalSecondary',
             iconSize: 'iconSize080',
             marginInline: 'space000'
           }}
