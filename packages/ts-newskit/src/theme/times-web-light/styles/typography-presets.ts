@@ -92,6 +92,38 @@ export const typographyPresets = Object.fromEntries(
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     },
+    editorialHeadline035: {
+      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight030}}',
+      fontSize: '{{fonts.fontSize060}}',
+      lineHeight: '{{fonts.fontLineHeight030}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    editorialHeadline082: {
+      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight030}}',
+      fontSize: '{{fonts.fontSize112}}',
+      lineHeight: '{{fonts.fontLineHeight030}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    editorialHeadline085: {
+      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight030}}',
+      fontSize: '{{fonts.fontSize115}}',
+      lineHeight: '{{fonts.fontLineHeight030}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    editorialHeadline087: {
+      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight030}}',
+      fontSize: '{{fonts.fontSize117}}',
+      lineHeight: '{{fonts.fontLineHeight030}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
     sectionHeader010: {
       fontFamily: '{{fonts.fontFamily040.fontFamily}}',
       fontSize: '{{fonts.fontSize115}}',
