@@ -109,8 +109,8 @@ export const LeadStory = ({
               </ContainerInline>
             )}
           <TextBlock
-            typographyPreset="articleListTimeToRead"
-            stylePreset="articleListTimeToRead"
+            typographyPreset="newPreset100"
+            stylePreset="leadStoryTextColor"
             as="span"
             paddingBlockStart="space010"
           >
