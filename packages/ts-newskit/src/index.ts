@@ -1,4 +1,4 @@
-export { TCThemeProvider } from './components/utils/TCThemeProvider';
+export { TCThemeProvider } from './utils/TCThemeProvider';
 export { Breadcrumb } from './components/navigation/breadcrumb';
 export { GlobalNav } from './components/navigation/global-nav';
 export { TopNav } from './components/navigation/global-nav/topnav/topnav';
