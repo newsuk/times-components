@@ -2,7 +2,9 @@
 
 exports[`Audio player renders correctly 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    class="css-13byt3y"
+  >
     <section
       aria-label="Audio Player"
     >
