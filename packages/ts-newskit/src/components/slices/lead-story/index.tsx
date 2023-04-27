@@ -6,11 +6,12 @@ import {
   Block,
   Headline,
   LinkInline,
-  useTheme
+  useTheme,
+  Divider
 } from 'newskit';
 import React from 'react';
-import { ColouredText } from '../shared-styles';
 import { StyledTextBlock, StyledTextStack } from './styles';
+import { ContainerInline, ColouredText } from '../shared-styles';
 
 export interface LeadStoryProps {
   headline: string;
@@ -22,6 +23,7 @@ export interface LeadStoryProps {
   caption: string;
   image: string;
   url: string;
+  articleType?: string;
 }
 
 export const LeadStory = ({
@@ -33,7 +35,8 @@ export const LeadStory = ({
   subHeadline,
   caption,
   image,
-  url
+  url,
+  articleType
 }: LeadStoryProps) => {
   const theme = useTheme();
   return (
@@ -85,13 +88,35 @@ export const LeadStory = ({
             {summary}
           </LinkInline>
         </TextBlock>
-        <TextBlock
-          stylePreset="leadStoryTextColor"
-          typographyPreset="newPreset100"
-          paddingBlockStart="space010"
-        >
-          {readingTime}
-        </TextBlock>
+        <Block>
+          <ColouredText
+            typographyPreset="articleListArticleType"
+            as="span"
+            $color={color}
+            paddingBlockStart="space010"
+          >
+            {articleType}
+          </ColouredText>
+          {articleType &&
+            readingTime && (
+              <ContainerInline>
+                <Divider
+                  vertical
+                  overrides={{
+                    marginInline: 'space020'
+                  }}
+                />
+              </ContainerInline>
+            )}
+          <TextBlock
+            typographyPreset="articleListTimeToRead"
+            stylePreset="articleListTimeToRead"
+            as="span"
+            paddingBlockStart="space010"
+          >
+            {readingTime}
+          </TextBlock>
+        </Block>
       </StyledTextStack>
       <Block
         paddingBlockStart={{

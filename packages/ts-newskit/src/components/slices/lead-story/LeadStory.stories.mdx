@@ -23,9 +23,9 @@ This takes in a series of props, as below, to display the part of the slices.
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
-export const HeaderStory = ({headline, color, readingTime, summary, bylines, subHeadline, caption, image, url}) => (
+export const HeaderStory = ({headline, color, readingTime, summary, bylines, subHeadline, caption, image, url, articleType}) => (
   <NewsKitProvider theme={TimesWebLightTheme}>
-    <LeadStory {...{headline, color, readingTime, summary, bylines, subHeadline, caption, image, url}} />
+    <LeadStory {...{headline, color, readingTime, summary, bylines, subHeadline, caption, image, url, articleType}} />
   </NewsKitProvider>
 );
 
