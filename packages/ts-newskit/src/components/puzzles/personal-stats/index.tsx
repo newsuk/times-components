@@ -45,8 +45,8 @@ export const PersonalStats: FC<PersonalStatsProps> = ({ data }) => {
               <GridLayoutItem justifySelf="center">
                 <TextBlock
                   as="span"
-                  typographyPreset="editorialHeadline040"
-                  stylePreset="inkInverse"
+                  typographyPreset="editorialDisplay004"
+                  stylePreset="inkContrast"
                 >
                   {value}
                 </TextBlock>
@@ -55,7 +55,7 @@ export const PersonalStats: FC<PersonalStatsProps> = ({ data }) => {
                 <TextBlock
                   as="span"
                   typographyPreset="utilityLabel020"
-                  stylePreset="inkNonEssential"
+                  stylePreset="inkSubtle"
                 >
                   {label}
                 </TextBlock>
