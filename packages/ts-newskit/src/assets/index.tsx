@@ -1,6 +1,10 @@
 import React from 'react';
 import { customToNewsKitIcon, styled } from 'newskit';
-import { East } from '@emotion-icons/material';
+import {
+  East,
+  ArrowForwardIos,
+  ArrowBackIosNew
+} from '@emotion-icons/material';
 import SearchIcon from './SearchIcon';
 import BurgerIcon from './BurgerIcon';
 import RoundedPlusIcon from './RoundedPlusIcon';
@@ -11,6 +15,8 @@ import SundayTimesMasthead from './SundayTimesMasthead';
 import ChevronRigthIcon from './ChevronRightIcon';
 import ArticlePlaceholder from './ArticlePlaceholder';
 import WaveBg from './WaveBg';
+import ThumbsDownIcon from './ThumbsDown';
+import ThumbsUpIcon from './ThumbsUp';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
@@ -66,3 +72,22 @@ export const NewsKitWaveBg = customToNewsKitIcon('NewskitWaveBg', props => (
 export const NewskitIconEast = customToNewsKitIcon('NewskitIconEast', props => (
   <East {...props} />
 ));
+
+export const NewskitIconBack = customToNewsKitIcon('NewskitIconBack', props => (
+  <ArrowBackIosNew {...props} />
+));
+
+export const NewskitIconForward = customToNewsKitIcon(
+  'NewskitIconForward',
+  props => <ArrowForwardIos {...props} />
+);
+
+export const NewsKitThumbsDownIcon = customToNewsKitIcon(
+  'NewsKitThumbsDownIcon',
+  props => <ThumbsDownIcon {...props} />
+);
+
+export const NewsKitThumbsUpIcon = customToNewsKitIcon(
+  'NewsKitThumbsUpIcon',
+  props => <ThumbsUpIcon {...props} />
+);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TCThemeProvider } from '../../../utils';
+import { TCThemeProvider } from '../../../../utils';
 import { GlobalNav } from '..';
 import { HamburgerMenu } from '../hamburger-menu/HamburgerMenu';
 import { NavigationData } from '../types';

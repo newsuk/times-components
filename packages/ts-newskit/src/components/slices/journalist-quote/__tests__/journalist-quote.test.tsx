@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render, screen } from '../../../utils/test-utils';
+import { render, screen } from '../../../../utils/test-utils';
 import { JournalistQuote, JournalistQuoteProps } from '..';
 
 const renderComponent = (props: JournalistQuoteProps) =>
@@ -31,6 +31,17 @@ it('should render the correct text, with Heading', () => {
 
   expect(heading).toBeInTheDocument();
   expect(quote).toBeInTheDocument();
+});
+
+it('should render the correct journalist name and colour', () => {
+  renderComponent(defaultProps);
+
+  const journalist = screen.getByText('Journalist name');
+
+  expect(journalist).toBeInTheDocument();
+  expect(journalist).toHaveStyle({
+    color: '#008347'
+  });
 });
 
 it('should render the correct text, without Heading', () => {

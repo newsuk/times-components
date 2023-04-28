@@ -1,0 +1,363 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StickyPlayerMob renders renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="css-13byt3y"
+  >
+    <section
+      aria-label="Audio Player"
+    >
+      <audio
+        data-testid="audio-element"
+        src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
+      />
+      <div
+        class="css-qoq9ah"
+      >
+        <button
+          aria-busy="true"
+          aria-label="Play"
+          aria-live="polite"
+          aria-pressed="false"
+          class="css-1vd1omt"
+          data-testid="audio-player-play-pause-button"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="css-1su91n6"
+            fill="currentColor"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="50%"
+              cy="50%"
+            />
+          </svg>
+        </button>
+        <div
+          class="css-1iuvgg2"
+        >
+          <p
+            class="css-1lyk11c"
+          >
+            Playing
+          </p>
+          <p
+            class="css-nv3u4r"
+          >
+            Narrated by James Marriott
+          </p>
+        </div>
+      </div>
+      <div
+        class="css-bwpmjx"
+      >
+        <div
+          class="css-gsu0bj"
+        >
+          <div
+            class="css-gre9re"
+          >
+            <div
+              class="css-fovh8v"
+            >
+              <div
+                class="css-rk6o65"
+              >
+                <div
+                  class="css-14pak4p"
+                  style="width: 480px;"
+                >
+                  <p
+                    class="css-ytul36"
+                    style="width: 240px;"
+                  >
+                    Article headline - James Marriott
+                  </p>
+                  <p
+                    class="css-ytul36"
+                    style="width: 240px;"
+                  >
+                    Article headline - James Marriott
+                  </p>
+                </div>
+              </div>
+              <div
+                class="css-4hdd64"
+              >
+                <button
+                  aria-busy="true"
+                  aria-label="Play"
+                  aria-live="polite"
+                  aria-pressed="false"
+                  class="css-1xklm8t"
+                  data-testid="audio-player-play-pause-button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1i0beyd"
+                    fill="currentColor"
+                    viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="50%"
+                      cy="50%"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="css-4hdd64"
+              >
+                <button
+                  aria-label="Close"
+                  class="css-scb009"
+                  data-testid="button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="css-11l110t"
+          >
+            <div
+              class="css-fovh8v"
+            >
+              <div
+                class="css-6sy2di"
+              >
+                <button
+                  aria-busy="true"
+                  aria-label="Play"
+                  aria-live="polite"
+                  aria-pressed="false"
+                  class="css-1xklm8t"
+                  data-testid="audio-player-play-pause-button"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1i0beyd"
+                    fill="currentColor"
+                    viewBox="0 0 64 64"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="50%"
+                      cy="50%"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div
+                class="css-4zjfzx"
+              >
+                <div
+                  class="css-12bqscs"
+                >
+                  <button
+                    aria-label="Mute"
+                    class="css-scb009"
+                    data-testid="mute-button"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+                      fill="currentColor"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0 0h24v24H0z"
+                        fill="none"
+                      />
+                      <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0014 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div
+                  class="css-1ekkk1b"
+                >
+                  <div
+                    class="nk-vc-exit-done css-f1zp3k"
+                  >
+                    <div
+                      class="css-1ae0owa"
+                      data-testid="volume-control-slider"
+                    >
+                      <div
+                        class="css-1bdos4z"
+                        data-testid="volume-control-slider-track"
+                        values="0.7"
+                      >
+                        <div
+                          aria-describedby="nk-1"
+                          aria-label="Volume Control"
+                          aria-orientation="horizontal"
+                          aria-valuemax="1"
+                          aria-valuemin="0"
+                          aria-valuenow="0.7"
+                          aria-valuetext="volume level 7 of 10"
+                          class="css-ofkkqx"
+                          data-testid="volume-control-slider-thumb"
+                          draggable="false"
+                          role="slider"
+                          style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                          tabindex="0"
+                          values="0.7"
+                        >
+                          <span
+                            class="css-bcct6d"
+                            data-testid="volume-control-slider-feedback"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    aria-hidden="true"
+                    class="css-13791zy"
+                    id="nk-1"
+                  >
+                    Use the arrow keys to adjust volume
+                  </span>
+                </div>
+              </div>
+              <div
+                class="css-1iuvgg2"
+              >
+                <span
+                  class="css-fs9xh8"
+                  data-testid="audio-player-time-display"
+                >
+                  00:00
+                </span>
+              </div>
+              <div
+                class="css-82c2kw"
+              >
+                <div
+                  class="css-1ae0owa"
+                  data-testid="audio-slider"
+                >
+                  <div
+                    class="css-1qq0c6x"
+                    data-testid="audio-slider-track"
+                    values="0"
+                  >
+                    <div
+                      aria-describedby="nk-2"
+                      aria-label="seek bar"
+                      aria-orientation="horizontal"
+                      aria-valuemax="1"
+                      aria-valuemin="0"
+                      aria-valuenow="0"
+                      aria-valuetext="Playback time: 0 seconds of 0 seconds"
+                      class="css-d2s48r"
+                      data-testid="audio-slider-thumb"
+                      draggable="false"
+                      role="slider"
+                      style="position: absolute; z-index: 0; cursor: grab; user-select: none; transform: translate(NaNpx, NaNpx);"
+                      tabindex="0"
+                      values="0"
+                    >
+                      <span
+                        class="css-bcct6d"
+                        data-testid="audio-slider-feedback"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <span
+                  aria-hidden="true"
+                  class="css-13791zy"
+                  id="nk-2"
+                >
+                  Use the arrow keys to fast forward or rewind
+                </span>
+              </div>
+              <div
+                class="css-11r7h3x"
+              >
+                <span
+                  class="css-fs9xh8"
+                  data-testid="audio-player-time-display"
+                >
+                  00:00
+                </span>
+              </div>
+              <button
+                aria-haspopup="dialog"
+                class="css-16oh7p0"
+                data-testid="button"
+                id="ref-floating-ui-3"
+                type="button"
+              >
+                <span
+                  class="css-11svpdx"
+                >
+                  Speed
+                </span>
+              </button>
+              <div
+                class="css-rghmyf"
+              >
+                <button
+                  aria-label="Close"
+                  class="css-scb009"
+                  data-testid="CloseBtnDesktop"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+                    fill="currentColor"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0V0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</DocumentFragment>
+`;

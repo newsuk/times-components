@@ -1,4 +1,4 @@
-export { TCThemeProvider } from './components/utils/TCThemeProvider';
+export { TCThemeProvider } from './utils/TCThemeProvider';
 export { Breadcrumb } from './components/navigation/breadcrumb';
 export { GlobalNav } from './components/navigation/global-nav';
 export { TopNav } from './components/navigation/global-nav/topnav/topnav';
@@ -21,3 +21,4 @@ export { Archive } from './components/puzzles/archive';
 export { DateCard } from './components/puzzles/date-card';
 export { PuzzlesFlag } from './components/puzzles/flag';
 export { AccordionGroup } from './components/misc/accordion/accordion-group';
+export { BreakoutSection } from './components/puzzles/breakout-section';
