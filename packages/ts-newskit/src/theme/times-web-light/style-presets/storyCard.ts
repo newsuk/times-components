@@ -13,11 +13,6 @@ export const storyCardStylePresets = {
       padding: '0'
     }
   },
-  StoryCardFlexWrapper: {
-    base: {
-      display: 'flex'
-    }
-  },
   StoryCardLink: {
     base: {
       color: '{{colors.inkContrast}}'
