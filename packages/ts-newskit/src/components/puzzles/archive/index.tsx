@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Accordion,
   GridLayout,
@@ -19,7 +19,7 @@ interface ArchiveProps {
 }
 
 export const Archive = ({ data, seeMoreLink }: ArchiveProps) => {
-  const [expandedMultiple, setExpandedMultiple] = React.useState([0]);
+  const [expandedMultiple, setExpandedMultiple] = useState([0]);
   const puzzleTitleSet = new Set<string>();
   data.list.forEach(puzzle => puzzleTitleSet.add(puzzle.title));
   const puzzleTitles: string[] = Array.from(puzzleTitleSet);
