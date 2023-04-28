@@ -1,39 +1,38 @@
 import React from 'react';
 import { CardContent, Stack, TextBlock, Block } from 'newskit';
 import { StyledImage, StyledCard, Wrap } from './styles';
-import { Puzzles } from './types';
+import { PuzzleCardItem } from './types';
 import { NewsKitPuzzlePlaceholder } from './assets';
 import { PuzzlesFlag } from '../flag';
 
 interface PuzzleCardProps {
-  data: Puzzles;
+  data: PuzzleCardItem;
 }
 
-export const PuzzleCard = ({ data: { list } }: PuzzleCardProps) => {
-  const puzzle = list[0];
-  if (!puzzle) {
+export const PuzzleCard = ({ data }: PuzzleCardProps) => {
+  if (!data) {
     return null;
   }
-  const timestamp = new Date(puzzle.publishedAt);
+  const timestamp = new Date(data.publishedAt);
   const dayOfWeek = timestamp.toLocaleString('en-us', { weekday: 'long' });
-  const imageUrl = puzzle.image!.src;
+  const imageUrl = data.image && data.image.src ? data.image.src : '';
 
   return (
-    <StyledCard key={puzzle.id} href={puzzle.url}>
+    <StyledCard key={data.id} href={data.url}>
       <Block style={{ position: 'relative' }}>
         {imageUrl ? (
           <StyledImage src={imageUrl} alt="puzzle" />
         ) : (
           <NewsKitPuzzlePlaceholder />
         )}
-        {puzzle.status && (
+        {data.status && (
           <Wrap>
-            <PuzzlesFlag status={puzzle.status} />
+            <PuzzlesFlag status={data.status} />
           </Wrap>
         )}
       </Block>
       <CardContent justifyItems="center">
-        {puzzle.title && (
+        {data.title && (
           <TextBlock
             as="div"
             marginBlock="space020"
@@ -44,7 +43,7 @@ export const PuzzleCard = ({ data: { list } }: PuzzleCardProps) => {
               lg: 'editorialHeadline020'
             }}
           >
-            {puzzle.title}
+            {data.title}
           </TextBlock>
         )}
         <Stack
@@ -64,7 +63,7 @@ export const PuzzleCard = ({ data: { list } }: PuzzleCardProps) => {
                 {dayOfWeek}
               </TextBlock>
             )}
-            {puzzle.shortIdentifier && (
+            {data.shortIdentifier && (
               <TextBlock
                 as="span"
                 paddingBlockStart="space010"
@@ -73,7 +72,7 @@ export const PuzzleCard = ({ data: { list } }: PuzzleCardProps) => {
                 typographyPreset="utilityBody010"
                 stylePreset="inkSubtle"
               >
-                {` | ${puzzle.shortIdentifier}`}
+                {` | ${data.shortIdentifier}`}
               </TextBlock>
             )}
           </Block>

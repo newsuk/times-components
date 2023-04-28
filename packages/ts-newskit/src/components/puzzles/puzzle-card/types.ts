@@ -6,7 +6,7 @@ type Image = {
   credit?: string;
 };
 
-export type PuzzleCardItems = {
+export type PuzzleCardItem = {
   hideOnMobile: boolean;
   id: number;
   shortIdentifier: string;
@@ -18,8 +18,4 @@ export type PuzzleCardItems = {
   gameLevel: string;
   url: string;
   image?: Image;
-};
-
-export type Puzzles = {
-  list: PuzzleCardItems[];
 };

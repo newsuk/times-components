@@ -10,7 +10,7 @@ import { PuzzlesWebLightTheme } from '../../../theme';
 />
 
 # PuzzleCard component
-The `PuzzleCard` component is used to display puzzles date cards.
+The `PuzzleCard` component is used to display puzzle card.
 
 This takes in a `data` props, as below, to display the card.
 
@@ -18,7 +18,7 @@ This takes in a `data` props, as below, to display the card.
 <Props of={PuzzleCard} />
 
 ## Code Example
-`<PuzzleCard data={ puzzles }/>`
+`<PuzzleCard data={ puzzles.list[0] }/>`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can review and configure with different titles.
@@ -31,7 +31,7 @@ export const PuzzleCardStory = ({ data }) => (
 
 <Story
   name="PuzzleCard"
-  args={{data: puzzles}} 
+  args={{data: puzzles.list[0]}} 
 >
   {PuzzleCardStory.bind({})}
 </Story>

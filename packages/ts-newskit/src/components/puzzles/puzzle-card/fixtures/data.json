@@ -17,23 +17,6 @@
                    "src": "",
                    "title": "puzzle image title"
                 }
-            },
-            {
-                "hideOnMobile": true,
-                "id": 3,
-                "shortIdentifier": "No. 7789",
-                "slug": "",
-                "title": "Sudoku",
-                "type": "Sudoku",
-                "publishedAt": "Mon Feb 27 2023 00:00:00 GMT+0100 (Central European Standard Time)",
-                "status": "IN PROGRESS",
-                "gameLevel": "difficult",
-                "url": "https://www.newskit.co.uk/components/accordion/",
-                "image": {
-                   "id": 3788,
-                   "src": "",
-                   "title": "puzzle image title"
-                }
             }
         ]
     }

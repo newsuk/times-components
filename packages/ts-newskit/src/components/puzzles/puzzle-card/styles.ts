@@ -4,7 +4,8 @@ import {
   getMediaQueryFromTheme,
   getStylePresetFromTheme,
   Image,
-  Card
+  Card,
+  Block
 } from 'newskit';
 
 export const StyledImage = styled(Image)`
@@ -56,7 +57,7 @@ export const StyledCard = styled(Card)`
   }
 `;
 
-export const Wrap = styled.div`
+export const Wrap = styled(Block)`
   position: absolute;
   top: 50%;
   left: 50%;
