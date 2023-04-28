@@ -4,7 +4,7 @@ import {
   render,
   within,
   fireEvent
-} from '../../../../utils/test-utils';
+} from '../../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { useBreakpointKey } from 'newskit';
 import { TopNav } from '../topnav';

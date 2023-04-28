@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '../../../utils/test-utils';
+import { render } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { mainMenuItems } from '../fixtures/menu-items.json';
 import { SecondaryNavMobile } from '../mobile';

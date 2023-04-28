@@ -11,10 +11,13 @@ import { sliceStylePresets } from './slices';
 import { textStylePresets } from './text';
 import { flagStylePresets } from './flag';
 import { accordionStylePresets } from './accordion';
+import { feedbackStylePresets } from './feedback';
+import { buttonStylePresets } from './buttons';
 
 export const stylePresets = {
   ...articleListStylePresets,
   ...breadcrumbStylePresets,
+  ...buttonStylePresets,
   ...colorStylePresets,
   ...mastheadStylePresets,
   ...pageStylePresets,
@@ -25,5 +28,6 @@ export const stylePresets = {
   ...leadStoryStylePresets,
   ...sliceStylePresets,
   ...flagStylePresets,
-  ...accordionStylePresets
+  ...accordionStylePresets,
+  ...feedbackStylePresets
 };

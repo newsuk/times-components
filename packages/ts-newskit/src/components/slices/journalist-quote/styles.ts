@@ -21,10 +21,6 @@ export const JournalistImage = styled(Image)`
   border-radius: 50%;
 `;
 
-export const JournalistName = styled(TextBlock)<{ $color: string }>`
-  color: ${({ $color }) => $color};
-`;
-
 export const StyledTextBlock = styled(TextBlock)`
   display: inline;
   ${getMediaQueryFromTheme('sm')} {

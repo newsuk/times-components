@@ -1,6 +1,6 @@
 import React from 'react';
 import { useBreakpointKey } from 'newskit';
-import { render, screen } from '../../../components/utils/test-utils';
+import { render, screen } from '../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import { ContentBucket1 } from '..';
 import data from '../../fixtures/data.json';

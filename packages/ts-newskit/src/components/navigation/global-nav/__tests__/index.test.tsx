@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent } from '../../../utils/test-utils';
+import { render, screen, fireEvent } from '../../../../utils/test-utils';
 import '@testing-library/jest-dom';
 import data from '../fixtures/data.json';
 import {

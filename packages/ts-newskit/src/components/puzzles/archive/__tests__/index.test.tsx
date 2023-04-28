@@ -1,7 +1,7 @@
 import React from 'react';
 import '@testing-library/jest-dom';
 import { fireEvent } from '@testing-library/react';
-import { render } from '../../../utils/test-utils';
+import { render } from '../../../../utils/test-utils';
 import { Archive } from '../index';
 import { corsswordsArchive } from '../fixtures/corsswordsArchive.json';
 import { sudokuArchive } from '../fixtures/sudokuArchive.json';
