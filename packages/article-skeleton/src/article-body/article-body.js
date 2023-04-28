@@ -65,6 +65,10 @@ import {
 
 const deckApiUrl = "https://gobble.timesdev.tools/deck/api/deck-post-action/";
 
+
+const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
+const hasDisabledAds = (id) => disabledAds.includes(id);
+
 export const responsiveDisplayWrapper = displayType => {
   switch (displayType) {
     case "secondary":
@@ -113,7 +117,7 @@ const renderers = ({
     );
   },
   inlineAd1(key) {
-    return id === 'c8bf6998-d498-11ed-b5c3-54651fc826e9' ? null : (
+    return hasDisabledAds(id) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd1" />
@@ -121,7 +125,7 @@ const renderers = ({
     );
   },
   inlineAd2(key) {
-    return id === 'c8bf6998-d498-11ed-b5c3-54651fc826e9' ? null : (
+    return hasDisabledAds(id)  ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd2" />
@@ -129,7 +133,7 @@ const renderers = ({
     );
   },
   inlineAd3(key) {
-    return id === 'c8bf6998-d498-11ed-b5c3-54651fc826e9' ? null : (
+    return hasDisabledAds(id)  ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd3" />
@@ -150,7 +154,7 @@ const renderers = ({
     );
   },
   nativeAd(key) {
-    return isLiveOrBreaking || id === 'c8bf6998-d498-11ed-b5c3-54651fc826e9' ? null : (
+    return isLiveOrBreaking || hasDisabledAds(id)  ? null : (
       <NativeAd className="group-3 hidden" key={key}>
         <NativeAdTitle>Sponsored</NativeAdTitle>
         <Ad id="advert-inarticle-native-1" data-parent="group-3" />
