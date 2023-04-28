@@ -4,7 +4,7 @@ import { MenuContainer, Wrapper, MainMenu, StyledMenuSub } from '../styles';
 import { SecondaryMenuOptions, SecondaryMenuItem } from '../types';
 import { NavItems } from './navItems';
 import { CreateMoreMenu } from './create-more-menu';
-import { debounce, getWidth } from '../../../utils';
+import { debounce, getWidth } from '../../../../utils';
 
 export const CreateMenu: React.FC<{
   options: SecondaryMenuOptions;

@@ -4,7 +4,7 @@ export const typographyPresets = Object.fromEntries(
   Object.entries({
     ...themeDefault,
     newPreset010: {
-      fontFamily: 'Roboto-Medium',
+      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
       fontWeight: '{{fonts.fontWeight020}}',
       fontSize: '{{fonts.fontSize020}}',
       lineHeight: '{{fonts.fontLineHeight030}}',
@@ -12,7 +12,7 @@ export const typographyPresets = Object.fromEntries(
       fontStretch: 'normal'
     },
     topNav010: {
-      fontFamily: 'Roboto-Medium',
+      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
       fontWeight: '{{fonts.fontWeight020}}',
       fontSize: '{{fonts.fontSize020}}',
       lineHeight: '{{fonts.fontLineHeight010}}',
@@ -37,9 +37,9 @@ export const typographyPresets = Object.fromEntries(
       fontStretch: 'normal'
     },
     newPreset040: {
-      fontFamily: 'Roboto-Medium',
+      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
       fontWeight: '{{fonts.fontWeight020}}',
-      fontSize: '15px',
+      fontSize: '{{fonts.newFontSize1}}',
       lineHeight: '{{fonts.fontLineHeight070}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'

@@ -12,10 +12,12 @@ import { textStylePresets } from './text';
 import { flagStylePresets } from './flag';
 import { accordionStylePresets } from './accordion';
 import { feedbackStylePresets } from './feedback';
+import { buttonStylePresets } from './buttons';
 
 export const stylePresets = {
   ...articleListStylePresets,
   ...breadcrumbStylePresets,
+  ...buttonStylePresets,
   ...colorStylePresets,
   ...mastheadStylePresets,
   ...pageStylePresets,

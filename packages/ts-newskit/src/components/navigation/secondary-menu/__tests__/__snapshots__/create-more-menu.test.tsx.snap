@@ -7,7 +7,7 @@ exports[`Create More Menu should render snapshot 1`] = `
   >
     <a
       aria-current="page"
-      class="css-1tbahvt"
+      class="css-1h4khac"
       data-testid="buttonLink"
       href="/puzzles"
     >
@@ -28,7 +28,7 @@ exports[`Create More Menu should render snapshot 1`] = `
   >
     <a
       aria-current="false"
-      class="css-1qcz2v0"
+      class="css-gtvcho"
       data-testid="buttonLink"
       href="/magazines"
     >

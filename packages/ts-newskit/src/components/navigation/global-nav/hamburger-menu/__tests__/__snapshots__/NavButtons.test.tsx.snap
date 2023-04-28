@@ -12,7 +12,7 @@ exports[`NavButtons Logged In should render the component 1`] = `
       role="list"
     >
       <button
-        class="css-g6ka6m"
+        class="css-1ntc43f"
         data-testid="button"
         type="button"
       >
@@ -23,7 +23,7 @@ exports[`NavButtons Logged In should render the component 1`] = `
         </span>
       </button>
       <button
-        class="css-g6ka6m"
+        class="css-1ntc43f"
         data-testid="button"
         type="button"
       >

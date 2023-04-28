@@ -1,0 +1,14 @@
+{
+    "puzzleGame": {
+        "hideOnMobile": false,
+        "id": 1,
+        "shortIdentifier": "test-1",
+        "slug": "",
+        "title": "Puzzle Name",
+        "type": "Crosswords",
+        "publishedAt": "Sat Mar 04 2023 00:00:00 GMT+0100 (Central European Standard Time)",
+        "status": "IN PROGRESS",
+        "gameLevel": "Jumbo",
+        "url": "https://www.newskit.co.uk/components/accordion/"
+    }
+}

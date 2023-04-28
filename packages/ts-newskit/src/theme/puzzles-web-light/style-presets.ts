@@ -6,8 +6,15 @@ stylePresets.puzzlesShadowBtn = {
   base: {
     borderWidth: '{{borders.borderWidth030}}',
     borderStyle: 'solid',
-    borderColor: '#000000',
-    backgroundColor: '#ffffff',
-    boxShadow: '{{shadows.shadow020}}'
+    borderColor: '{{colors.interface060}}',
+    backgroundColor: '{{colors.interface010}}',
+    boxShadow: '{{shadows.shadow020}}',
+    color: '{{colors.inkContrast}}'
+  }
+};
+
+stylePresets.puzzlesCenterAlignedText = {
+  base: {
+    textAlign: 'center'
   }
 };
