@@ -1,6 +1,6 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render, screen } from '../../../utils/test-utils';
+import { render, screen } from '../../../../utils/test-utils';
 import { StoryCard, StoryCardProps } from '../index';
 
 const renderComponent = (props: StoryCardProps) =>
