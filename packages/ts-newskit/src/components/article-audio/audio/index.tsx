@@ -48,7 +48,7 @@ export const InArticleAudio = ({
 
   const handleClickPlayPause = () => {
     !isPlayed && setIsPlayed(true);
-    !isPlayed && setShowStickyPlayer(true);
+    !showStickyPlayer && setShowStickyPlayer(true);
     setIsPlaying(!isPlaying);
   };
 
