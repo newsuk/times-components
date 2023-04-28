@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.31.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.30.0...@times-components/ts-newskit@1.31.0) (2023-04-28)
+
+
+### Features
+
+* **TMRX-1198:** update logic for close button ([#3339](https://github.com/newsuk/times-components/issues/3339)) ([c3171c3](https://github.com/newsuk/times-components/commit/c3171c3d9e2c0bed0909a7e4bb91e3aa75cbd5cf))
+
+
+
+
+
 # [1.30.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.29.0...@times-components/ts-newskit@1.30.0) (2023-04-28)
 
 
