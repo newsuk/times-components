@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.29.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.28.0...@times-components/ts-newskit@1.29.0) (2023-04-28)
+
+
+### Features
+
+* **TMST-624-and-625:** create cards container ([#3337](https://github.com/newsuk/times-components/issues/3337)) ([c256e0d](https://github.com/newsuk/times-components/commit/c256e0de621a985bb746ae5cb9fc10c81682a2bb))
+
+
+
+
+
 # [1.28.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.27.0...@times-components/ts-newskit@1.28.0) (2023-04-27)
 
 

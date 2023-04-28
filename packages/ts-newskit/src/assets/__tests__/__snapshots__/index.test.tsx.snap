@@ -427,6 +427,28 @@ exports[`Icons Component: NewsKitWaveBg NewsKitWaveBg renders with default props
 </DocumentFragment>
 `;
 
+exports[`Icons Component: NewskitIconBack NewskitIconBack renders with default props 1`] = `
+<DocumentFragment>
+  <svg
+    aria-hidden="true"
+    class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+    fill="currentColor"
+    focusable="false"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect
+      fill="none"
+      height="24"
+      width="24"
+    />
+    <polygon
+      points="17.77,3.77 16,2 6,12 16,22 17.77,20.23 9.54,12"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
 exports[`Icons Component: NewskitIconEast NewskitIconEast renders with default props 1`] = `
 <DocumentFragment>
   <svg
@@ -444,6 +466,27 @@ exports[`Icons Component: NewskitIconEast NewskitIconEast renders with default p
     />
     <path
       d="M15 5l-1.41 1.41L18.17 11H2v2h16.17l-4.59 4.59L15 19l7-7-7-7z"
+    />
+  </svg>
+</DocumentFragment>
+`;
+
+exports[`Icons Component: NewskitIconForward NewskitIconForward renders with default props 1`] = `
+<DocumentFragment>
+  <svg
+    aria-hidden="true"
+    class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+    fill="currentColor"
+    focusable="false"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 0h24v24H0z"
+      fill="none"
+    />
+    <path
+      d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
     />
   </svg>
 </DocumentFragment>
