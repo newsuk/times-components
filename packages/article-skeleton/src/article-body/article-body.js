@@ -66,7 +66,7 @@ import {
 const deckApiUrl = "https://gobble.timesdev.tools/deck/api/deck-post-action/";
 
 const disabledAds = ["c8bf6998-d498-11ed-b5c3-54651fc826e9"];
-const hasDisabledAds = identifier => disabledAds.includes(identifier);
+const hasDisabledAds = id => disabledAds.includes(id);
 
 export const responsiveDisplayWrapper = displayType => {
   switch (displayType) {
@@ -104,11 +104,11 @@ const renderers = ({
   isLiveOrBreaking,
   section,
   articleHeadline,
-  id
+  articleId
 }) => ({
   ...coreRenderers,
   ad(key) {
-    return hasDisabledAds(id) ? null : (
+    return hasDisabledAds(articleId) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inline-ad" />
@@ -116,7 +116,7 @@ const renderers = ({
     );
   },
   inlineAd1(key) {
-    return hasDisabledAds(id) ? null : (
+    return hasDisabledAds(articleId) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd1" />
@@ -124,7 +124,7 @@ const renderers = ({
     );
   },
   inlineAd2(key) {
-    return hasDisabledAds(id) ? null : (
+    return hasDisabledAds(articleId) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd2" />
@@ -132,7 +132,7 @@ const renderers = ({
     );
   },
   inlineAd3(key) {
-    return hasDisabledAds(id) ? null : (
+    return hasDisabledAds(articleId) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inlineAd3" />
@@ -153,7 +153,7 @@ const renderers = ({
     );
   },
   nativeAd(key) {
-    return isLiveOrBreaking || hasDisabledAds(id) ? null : (
+    return isLiveOrBreaking || hasDisabledAds(articleId) ? null : (
       <NativeAd className="group-3 hidden" key={key}>
         <NativeAdTitle>Sponsored</NativeAdTitle>
         <Ad id="advert-inarticle-native-1" data-parent="group-3" />
@@ -580,7 +580,7 @@ const ArticleBody = ({
   inArticlePuffFlag,
   isLiveOrBreaking,
   articleHeadline,
-  id
+  id: articleId
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
@@ -591,7 +591,7 @@ const ArticleBody = ({
       swgProductId,
       inArticlePuffFlag,
       isLiveOrBreaking,
-      id,
+      articleId,
       section,
       articleHeadline
     })
