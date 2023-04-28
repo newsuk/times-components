@@ -76,7 +76,7 @@ export const Archive = ({ data, seeMoreLink }: ArchiveProps) => {
                       }}
                     />
                     <TextBlock
-                      typographyPreset="utilityButton020"
+                      typographyPreset="utilitySubheadline010"
                       stylePreset="inkContrast"
                       marginBlockStart="space030"
                     >
