@@ -1,6 +1,14 @@
 import React from 'react';
-import { CardContent, Stack, TextBlock, Block } from 'newskit';
-import { StyledImage, StyledCard, Wrap } from './styles';
+import {
+  CardComposable,
+  CardContent,
+  CardLink,
+  CardMedia,
+  Stack,
+  TextBlock,
+  Block
+} from 'newskit';
+import { Wrap } from './styles';
 import { PuzzleCardItem } from './types';
 import { NewsKitPuzzlePlaceholder } from './assets';
 import { PuzzlesFlag } from '../flag';
@@ -15,10 +23,46 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
   const imageUrl = data.image && data.image.src ? data.image.src : '';
 
   return (
-    <StyledCard key={data.id} href={data.url}>
+    <CardComposable
+      key={data.id}
+      overrides={{
+        minHeight: {
+          xs: '186.67px',
+          sm: '201.33px',
+          md: '186.67px',
+          lg: '211.33px',
+          xl: '261.33px'
+        },
+        width: {
+          xs: '126px',
+          sm: '206px',
+          md: '154px',
+          lg: '218px',
+          xl: '293px'
+        },
+        stylePreset: 'puzzleCard'
+      }}
+    >
       <Block style={{ position: 'relative' }}>
         {imageUrl ? (
-          <StyledImage src={imageUrl} alt="Puzzle thumbnail" />
+          <CardMedia
+            media={{
+              loadingAspectRatio: '3:2',
+              alt: data.title || 'Puzzle thumbnail',
+              src: imageUrl,
+              placeholderIcon: true,
+              overrides: {
+                maxHeight: {
+                  xs: '84px',
+                  sm: '137.33px',
+                  md: '102.67px',
+                  lg: '145.33px',
+                  xl: '195.33px'
+                }
+              }
+            }}
+            data-testid="puzzle-image"
+          />
         ) : (
           <NewsKitPuzzlePlaceholder data-testid="puzzle-placeholder" />
         )}
@@ -29,20 +73,30 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
         )}
       </Block>
       <CardContent justifyItems="center">
-        {data.title && (
-          <TextBlock
-            as="div"
-            marginBlock="space020"
-            marginInline="space020"
-            stylePreset="inkContrast"
-            typographyPreset={{
-              xs: 'editorialHeadline010',
-              lg: 'editorialHeadline020'
-            }}
-          >
-            {data.title}
-          </TextBlock>
-        )}
+        <CardLink
+          expand
+          href={data.url}
+          data-testid="puzzleCard-link"
+          overrides={{
+            externalIcon: { size: '0' },
+            stylePreset: 'puzzleCardLink'
+          }}
+        >
+          {data.title && (
+            <TextBlock
+              as="div"
+              marginBlock="space020"
+              marginInline="space020"
+              stylePreset="inkContrast"
+              typographyPreset={{
+                xs: 'editorialHeadline010',
+                lg: 'editorialHeadline020'
+              }}
+            >
+              {data.title}
+            </TextBlock>
+          )}
+        </CardLink>
         <Stack
           flow="vertical-center"
           stackDistribution="flex-start"
@@ -75,6 +129,6 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
           </Block>
         </Stack>
       </CardContent>
-    </StyledCard>
+    </CardComposable>
   );
 };

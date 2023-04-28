@@ -46,3 +46,8 @@ stylePresets.puzzleCard = {
     textAlign: 'center'
   }
 };
+stylePresets.puzzleCardLink = {
+  base: {
+    color: '{{colors.inkContrast}}'
+  }
+};
