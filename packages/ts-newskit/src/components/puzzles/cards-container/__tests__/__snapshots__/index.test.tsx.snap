@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardsContainer tests should render a snapshot with scroller 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1y25n6u"
+    data-testid="title-bar"
+  >
+    <div
+      class="css-16bai6p"
+    >
+      <section
+        class="css-1oteowz"
+      >
+        <h2
+          class="nk-headline-heading css-sxktxw"
+        >
+          Crosswords
+        </h2>
+      </section>
+    </div>
+    <div
+      class="css-11l110t"
+    >
+      <div
+        class="css-17x5lw"
+      >
+        <a
+          class="css-1tarvo2"
+          data-testid="buttonLink"
+          href="https://newskit.co.uk/components"
+        >
+          <span
+            class="css-n79ak9"
+          >
+            SEE ALL
+          </span>
+        </a>
+        <button
+          class="css-1llax8i"
+          data-testid="scroll-left"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="css-1arce68-EmotionIconBase ex0cdmw0"
+            fill="currentColor"
+            focusable="false"
+            overrides="[object Object]"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              fill="none"
+              height="24"
+              width="24"
+            />
+            <polygon
+              points="17.77,3.77 16,2 6,12 16,22 17.77,20.23 9.54,12"
+            />
+          </svg>
+        </button>
+        <button
+          class="css-13tcow"
+          data-testid="scroll-right"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="css-1arce68-EmotionIconBase ex0cdmw0"
+            fill="currentColor"
+            focusable="false"
+            overrides="[object Object]"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M5.88 4.12L13.76 12l-7.88 7.88L8 22l10-10L8 2z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="css-1r18k3i"
+  >
+    <div
+      class="css-6uqogc"
+      data-testid="scroll-container"
+      tabindex="0"
+    >
+      <div
+        class="css-ocffxe"
+      >
+         
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`CardsContainer tests should render a snapshot without scroller 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1y25n6u"
+    data-testid="title-bar"
+  >
+    <div
+      class="css-16bai6p"
+    >
+      <section
+        class="css-1oteowz"
+      >
+        <h2
+          class="nk-headline-heading css-sxktxw"
+        >
+          Crosswords
+        </h2>
+      </section>
+    </div>
+    <div
+      class="css-11l110t"
+    />
+  </div>
+  <div
+    class="css-1r18k3i"
+  >
+    <div
+      class="css-6uqogc"
+      data-testid="scroll-container"
+      tabindex="0"
+    >
+      <div
+        class="css-13ctbov"
+      >
+         
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+        <div
+          class="css-1kxmbtt"
+          data-test-id="single-card"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
