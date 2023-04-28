@@ -224,6 +224,7 @@ const ArticleSkeleton = ({
                 )}
                 {newContent && (
                   <ArticleBody
+                    id={article.id}
                     analyticsStream={analyticsStream}
                     content={newContent}
                     contextUrl={url}
