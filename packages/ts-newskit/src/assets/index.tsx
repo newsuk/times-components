@@ -14,6 +14,8 @@ import TimesMasthead from './TimesMasthead';
 import SundayTimesMasthead from './SundayTimesMasthead';
 import ChevronRigthIcon from './ChevronRightIcon';
 import WaveBg from './WaveBg';
+import ThumbsDownIcon from './ThumbsDown';
+import ThumbsUpIcon from './ThumbsUp';
 
 const RoundedCloseIcon = styled(RoundedPlusIcon)`
   transform: rotate(45deg);
@@ -73,4 +75,14 @@ export const NewskitIconBack = customToNewsKitIcon('NewskitIconBack', props => (
 export const NewskitIconForward = customToNewsKitIcon(
   'NewskitIconForward',
   props => <ArrowForwardIos {...props} />
+)
+
+export const NewsKitThumbsDownIcon = customToNewsKitIcon(
+  'NewsKitThumbsDownIcon',
+  props => <ThumbsDownIcon {...props} />
+);
+
+export const NewsKitThumbsUpIcon = customToNewsKitIcon(
+  'NewsKitThumbsUpIcon',
+  props => <ThumbsUpIcon {...props} />
 );

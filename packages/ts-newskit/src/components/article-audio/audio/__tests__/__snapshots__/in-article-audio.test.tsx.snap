@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Audio player renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="css-13byt3y"
+  >
+    <section
+      aria-label="Audio Player"
+    >
+      <audio
+        data-testid="audio-element"
+        src="https://ncu-newskit-docs.s3.eu-west-1.amazonaws.com/storybook-assets/audio_file_1.mp3"
+      />
+      <div
+        class="css-qoq9ah"
+      >
+        <button
+          aria-busy="true"
+          aria-label="Play"
+          aria-live="polite"
+          aria-pressed="false"
+          class="css-1vd1omt"
+          data-testid="audio-player-play-pause-button"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="css-1su91n6"
+            fill="currentColor"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="50%"
+              cy="50%"
+            />
+          </svg>
+        </button>
+        <div
+          class="css-1iuvgg2"
+        >
+          <p
+            class="css-1lyk11c"
+          >
+            Listen to article
+          </p>
+          <p
+            class="css-nv3u4r"
+          >
+            Narrated by James Marriott
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+</DocumentFragment>
+`;
