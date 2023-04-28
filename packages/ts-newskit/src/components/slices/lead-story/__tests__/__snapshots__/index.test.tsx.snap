@@ -57,7 +57,7 @@ exports[`Render Component one should render a snapshot 1`] = `
         class="css-13byt3y"
       >
         <span
-          class="css-7etyut"
+          class="css-1bfgzir"
         >
           Review
         </span>
@@ -71,7 +71,7 @@ exports[`Render Component one should render a snapshot 1`] = `
           />
         </div>
         <span
-          class="css-13ecuyk"
+          class="css-u3nbck"
         >
           4 min read
         </span>

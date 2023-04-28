@@ -93,7 +93,6 @@ export const LeadStory = ({
             typographyPreset="articleListArticleType"
             as="span"
             $color={color}
-            paddingBlockStart="space010"
           >
             {articleType}
           </ColouredText>
@@ -110,9 +109,8 @@ export const LeadStory = ({
             )}
           <TextBlock
             typographyPreset="newPreset100"
-            stylePreset="leadStoryTextColor"
+            stylePreset="leadStoryText"
             as="span"
-            paddingBlockStart="space010"
           >
             {readingTime}
           </TextBlock>
@@ -139,7 +137,7 @@ export const LeadStory = ({
         </LinkInline>
         <Block>
           <TextBlock
-            stylePreset="leadStoryTextColor"
+            stylePreset="leadStoryText"
             paddingBlockStart="space020"
             typographyPreset="newPreset100"
             marginInline={{
@@ -154,7 +152,7 @@ export const LeadStory = ({
       <Visible lg xl>
         <Stack flow="horizontal-bottom" paddingInlineStart="space010">
           <StyledTextBlock
-            stylePreset="leadStoryTextColor"
+            stylePreset="leadStoryText"
             typographyPreset="newPreset100"
             marginInlineEnd="space045"
           >
