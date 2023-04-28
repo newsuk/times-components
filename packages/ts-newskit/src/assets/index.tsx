@@ -75,7 +75,7 @@ export const NewskitIconBack = customToNewsKitIcon('NewskitIconBack', props => (
 export const NewskitIconForward = customToNewsKitIcon(
   'NewskitIconForward',
   props => <ArrowForwardIos {...props} />
-)
+);
 
 export const NewsKitThumbsDownIcon = customToNewsKitIcon(
   'NewsKitThumbsDownIcon',

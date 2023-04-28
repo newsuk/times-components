@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '../../../utils/test-utils';
+import { render } from '../../../../utils/test-utils';
 import { CardsContainer } from '../index';
 import '@testing-library/jest-dom';
 import { fireEvent } from '@testing-library/react';
