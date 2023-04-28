@@ -109,7 +109,7 @@ const renderers = ({
 }) => ({
   ...coreRenderers,
   ad(key) {
-    return id === 'c8bf6998-d498-11ed-b5c3-54651fc826e9' ? null : (
+    return hasDisabledAds(id) ? null : (
       <InlineAdWrapper>
         <InlineAdTitle>Advertisement</InlineAdTitle>
         <AdContainer key={key} slotName="inline-ad" />
