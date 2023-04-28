@@ -177,7 +177,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/home"
                 >
@@ -192,7 +192,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/news"
                 >
@@ -207,7 +207,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -222,7 +222,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
@@ -237,7 +237,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
@@ -252,7 +252,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -267,7 +267,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
@@ -282,7 +282,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -297,7 +297,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
@@ -503,7 +503,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-1xuadgf"
                       data-testid="buttonLink"
                       href="/account"
                     >
@@ -518,7 +518,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-1xuadgf"
                       data-testid="buttonLink"
                       href="/change-password"
                     >
@@ -533,7 +533,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-1xuadgf"
                       data-testid="buttonLink"
                       href="/my-newsletters"
                     >
@@ -548,7 +548,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-1xuadgf"
                       data-testid="buttonLink"
                       href="/my-articles"
                     >
@@ -563,7 +563,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-1xuadgf"
                       data-testid="buttonLink"
                       href="/contact-us"
                     >
@@ -578,7 +578,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-1xuadgf"
                       data-testid="buttonLink"
                       href="/log-out"
                     >
@@ -624,7 +624,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/home"
                 >
@@ -639,7 +639,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/news"
                 >
@@ -654,7 +654,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -669,7 +669,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
@@ -684,7 +684,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
@@ -699,7 +699,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -714,7 +714,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
@@ -729,7 +729,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -744,7 +744,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
@@ -946,7 +946,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/home"
                 >
@@ -961,7 +961,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/news"
                 >
@@ -976,7 +976,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -991,7 +991,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
@@ -1006,7 +1006,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
@@ -1021,7 +1021,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -1036,7 +1036,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
@@ -1051,7 +1051,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -1066,7 +1066,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
@@ -1256,7 +1256,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
         class="css-12u9ntt"
       >
         <a
-          class="css-55uab"
+          class="css-1kznnii"
           data-testid="buttonLink"
           href="/"
         >
@@ -1306,7 +1306,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/home"
                 >
@@ -1321,7 +1321,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/news"
                 >
@@ -1336,7 +1336,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -1351,7 +1351,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
@@ -1366,7 +1366,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
@@ -1381,7 +1381,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -1396,7 +1396,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
@@ -1411,7 +1411,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -1426,7 +1426,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
@@ -1618,7 +1618,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/home"
                 >
@@ -1633,7 +1633,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/news"
                 >
@@ -1648,7 +1648,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -1663,7 +1663,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
@@ -1678,7 +1678,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
@@ -1693,7 +1693,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -1708,7 +1708,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
@@ -1723,7 +1723,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -1738,7 +1738,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1qhmdz3"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/magazines"
                 >
@@ -1934,7 +1934,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-1xuadgf"
                       data-testid="buttonLink"
                       href="/account"
                     >
@@ -1949,7 +1949,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-1xuadgf"
                       data-testid="buttonLink"
                       href="/change-password"
                     >
@@ -1964,7 +1964,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-1xuadgf"
                       data-testid="buttonLink"
                       href="/my-newsletters"
                     >
@@ -1979,7 +1979,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-1xuadgf"
                       data-testid="buttonLink"
                       href="/my-articles"
                     >
@@ -1994,7 +1994,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-1xuadgf"
                       data-testid="buttonLink"
                       href="/contact-us"
                     >
@@ -2009,7 +2009,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                     class="nk-menu-item css-1kdinep"
                   >
                     <a
-                      class="css-1xrkc63"
+                      class="css-1xuadgf"
                       data-testid="buttonLink"
                       href="/log-out"
                     >
@@ -2055,7 +2055,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/home"
                 >
@@ -2070,7 +2070,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/news"
                 >
@@ -2085,7 +2085,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/comment"
                 >
@@ -2100,7 +2100,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/life-and-style"
                 >
@@ -2115,7 +2115,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/arts-and-books"
                 >
@@ -2130,7 +2130,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/sport"
                 >
@@ -2145,7 +2145,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/business-and-money"
                 >
@@ -2160,7 +2160,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/puzzles"
                 >
@@ -2175,7 +2175,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                 class="nk-menu-item css-1iaj8wm"
               >
                 <a
-                  class="css-oty4sd"
+                  class="css-ake6bf"
                   data-testid="buttonLink"
                   href="/magazines"
                 >

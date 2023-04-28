@@ -1,7 +1,7 @@
 const loggedInMenuItemBase = {
   color: '{{colors.neutral050}}',
   borderRadius: '{{sizing.sizing000}}',
-  borderBottom: '2px solid #333333',
+  borderBottom: '2px solid {{colors.neutral080}}',
   backgroundColor: '#151515'
 };
 
@@ -14,14 +14,14 @@ export const menuStylePresets = {
   loggedInMenuItem: {
     base: loggedInMenuItemBase,
     hover: {
-      borderBottom: '2px solid #FFFFFF',
+      borderBottom: '2px solid {{colors.white}}',
       color: '{{colors.white}}'
     }
   },
   loggedInMenuItemActive: {
     base: {
       ...loggedInMenuItemBase,
-      borderBottom: '2px solid #FFFFFF',
+      borderBottom: '2px solid {{colors.white}}',
       color: '{{colors.white}}'
     }
   },
@@ -37,7 +37,7 @@ export const menuStylePresets = {
   buttonSolidSecondary: {
     base: {
       backgroundColor: '{{colors.neutral090}}',
-      border: 'solid 1px #333333',
+      border: 'solid 1px {{colors.neutral080}}',
       borderRadius: '{{sizing.sizing010}}'
     },
     hover: {
