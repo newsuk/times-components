@@ -10,9 +10,6 @@ interface PuzzleCardProps {
 }
 
 export const PuzzleCard = ({ data }: PuzzleCardProps) => {
-  if (!data) {
-    return null;
-  }
   const timestamp = new Date(data.publishedAt);
   const dayOfWeek = timestamp.toLocaleString('en-us', { weekday: 'long' });
   const imageUrl = data.image && data.image.src ? data.image.src : '';
@@ -21,9 +18,9 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
     <StyledCard key={data.id} href={data.url}>
       <Block style={{ position: 'relative' }}>
         {imageUrl ? (
-          <StyledImage src={imageUrl} alt="puzzle" />
+          <StyledImage src={imageUrl} alt="Puzzle thumbnail" />
         ) : (
-          <NewsKitPuzzlePlaceholder />
+          <NewsKitPuzzlePlaceholder data-testid="puzzle-placeholder" />
         )}
         {data.status && (
           <Wrap>

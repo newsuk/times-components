@@ -21,6 +21,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
           >
             <svg
               class="css-j6fc06"
+              data-testid="puzzle-placeholder"
               fill="none"
               viewBox="0 0 293 196"
               xmlns="http://www.w3.org/2000/svg"
