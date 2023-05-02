@@ -17,14 +17,6 @@ This component takes in the following props:
 ## Props
 <Props of={PuzzleCard} />
 
-- `id` (number): The ID of the puzzle.
-- `shortIdentifier` (string): The short identifier of the puzzle.
-- `title` (string): The title of the puzzle.
-- `publishedAt` (string): The publish date of the puzzle.
-- `status` (string): The status of the puzzle.
-- `url` (string): The URL of the puzzle.
-- `image` (object): The image object that contains the source and caption.
-
 ## Code Example
 `<PuzzleCard data={ id, shortIdentifier, title, publishedAt, status, url, image } />`
 
@@ -33,7 +25,7 @@ Please click the 'Canvas' tab for a better viewing experience, where you can rev
 
 export const PuzzleCardStory = ({id, shortIdentifier, title, publishedAt, status, url, image}) => (
   <NewsKitProvider theme={PuzzlesWebLightTheme}>
-    <PuzzleCard data={{id, shortIdentifier, title, publishedAt, status, url, image}} />
+    <PuzzleCard {...{ id, shortIdentifier, title, publishedAt, status, url, image }} />
   </NewsKitProvider>
 );
 

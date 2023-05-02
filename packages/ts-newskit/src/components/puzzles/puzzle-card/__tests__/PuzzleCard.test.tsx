@@ -2,23 +2,34 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { render } from '../../../../utils/test-utils';
 import { puzzles } from '../fixtures/data.json';
-import { PuzzleCard } from '../index';
+import { PuzzleCard, PuzzleCardProps } from '../index';
+
+const renderComponent = (props: PuzzleCardProps) =>
+  render(<PuzzleCard {...props} />);
+
+const defaultProps = {
+  id: puzzles.list[0].id,
+  shortIdentifier: puzzles.list[0].shortIdentifier,
+  title: puzzles.list[0].title,
+  publishedAt: puzzles.list[0].publishedAt,
+  status: puzzles.list[0].status,
+  url: puzzles.list[0].url,
+  image: puzzles.list[0].image
+};
 
 describe('Puzzle Card', () => {
   it('should render Puzzle Card', () => {
-    const { asFragment } = render(<PuzzleCard data={puzzles.list[0]} />);
+    const { asFragment } = renderComponent(defaultProps);
     expect(asFragment()).toMatchSnapshot();
   });
 
   it('renders the puzzle card title', () => {
-    const { getByText } = render(<PuzzleCard data={puzzles.list[0]} />);
+    const { getByText } = renderComponent(defaultProps);
     expect(getByText(puzzles.list[0].title)).toBeInTheDocument();
   });
 
   it('renders the puzzle card image placeholder', () => {
-    const { getByTestId, queryByTestId } = render(
-      <PuzzleCard data={puzzles.list[0]} />
-    );
+    const { getByTestId, queryByTestId } = renderComponent(defaultProps);
     const image = queryByTestId('puzzle-image');
     if (image) {
       expect(queryByTestId('puzzle-placeholder')).not.toBeInTheDocument();
@@ -36,7 +47,15 @@ describe('Puzzle Card', () => {
     };
     const imageAlt = puzzles.list[0].title || 'Puzzle thumbnail';
     const { getByRole } = render(
-      <PuzzleCard data={{ ...puzzles.list[0], image: imageData }} />
+      <PuzzleCard
+        id={puzzles.list[0].id}
+        shortIdentifier={puzzles.list[0].shortIdentifier}
+        title={puzzles.list[0].title}
+        publishedAt={puzzles.list[0].publishedAt}
+        status={puzzles.list[0].status}
+        url={puzzles.list[0].url}
+        image={imageData}
+      />
     );
     expect(getByRole('img', { name: imageAlt })).toHaveAttribute(
       'src',

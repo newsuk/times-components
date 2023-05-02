@@ -9,21 +9,35 @@ import {
   Block
 } from 'newskit';
 import { Wrap, StyledNewsKitPuzzlePlaceholder } from './styles';
-import { PuzzleCardItem } from './types';
+import { Image } from './types';
 import { PuzzlesFlag } from '../flag';
 
-interface PuzzleCardProps {
-  data: PuzzleCardItem;
+export interface PuzzleCardProps {
+  id: number;
+  shortIdentifier: string;
+  title: string;
+  publishedAt: string;
+  status: 'COMPLETE' | 'IN PROGRESS' | string;
+  url: string;
+  image?: Image;
 }
 
-export const PuzzleCard = ({ data }: PuzzleCardProps) => {
-  const timestamp = new Date(data.publishedAt);
+export const PuzzleCard = ({
+  id,
+  shortIdentifier,
+  title,
+  publishedAt,
+  status,
+  url,
+  image
+}: PuzzleCardProps) => {
+  const timestamp = new Date(publishedAt);
   const dayOfWeek = timestamp.toLocaleString('en-us', { weekday: 'long' });
-  const imageUrl = data.image!.src || '';
+  const imageUrl = image!.src || '';
 
   return (
     <CardComposable
-      key={data.id}
+      key={id}
       overrides={{
         minHeight: {
           xs: '186.67px',
@@ -40,7 +54,7 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
           <CardMedia
             media={{
               loadingAspectRatio: '3:2',
-              alt: data.title || 'Puzzle thumbnail',
+              alt: title || 'Puzzle thumbnail',
               src: imageUrl,
               placeholderIcon: true,
               overrides: {
@@ -52,23 +66,23 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
         ) : (
           <StyledNewsKitPuzzlePlaceholder data-testid="puzzle-placeholder" />
         )}
-        {data.status && (
+        {status && (
           <Wrap>
-            <PuzzlesFlag status={data.status} />
+            <PuzzlesFlag status={status} />
           </Wrap>
         )}
       </Block>
       <CardContent justifyItems="center">
         <CardLink
           expand
-          href={data.url}
+          href={url}
           data-testid="puzzleCard-link"
           overrides={{
             externalIcon: { size: '0' },
             stylePreset: 'puzzleCardLink'
           }}
         >
-          {data.title && (
+          {title && (
             <TextBlock
               as="div"
               marginBlock="space020"
@@ -79,7 +93,7 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
                 lg: 'editorialHeadline020'
               }}
             >
-              {data.title}
+              {title}
             </TextBlock>
           )}
         </CardLink>
@@ -100,7 +114,7 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
                 {dayOfWeek}
               </TextBlock>
             )}
-            {data.shortIdentifier && (
+            {shortIdentifier && (
               <TextBlock
                 as="span"
                 paddingBlockStart="space010"
@@ -109,7 +123,7 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
                 typographyPreset="utilityBody010"
                 stylePreset="inkSubtle"
               >
-                {` | ${data.shortIdentifier}`}
+                {` | ${shortIdentifier}`}
               </TextBlock>
             )}
           </Block>
