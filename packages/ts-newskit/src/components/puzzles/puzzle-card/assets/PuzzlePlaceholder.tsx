@@ -12,14 +12,14 @@ const PuzzlePlaceholder = (props: any) => (
         fillRule="evenodd"
         clipRule="evenodd"
         d="M0 4C0 1.79086 1.79086 0 4 0H289C291.209 0 293 1.79086 293 4V195.333H0V4Z"
-        fill="#FFEED9"
+        fill="currentcolor"
       />
     </g>
     <defs>
       <clipPath id="clip0_3503_95754">
         <path
           d="M0 4C0 1.79086 1.79086 0 4 0H289C291.209 0 293 1.79086 293 4V195.333H0V4Z"
-          fill="white"
+          fill="currentcolor"
         />
       </clipPath>
     </defs>

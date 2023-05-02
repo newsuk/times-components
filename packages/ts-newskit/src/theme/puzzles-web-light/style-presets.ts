@@ -23,7 +23,7 @@ stylePresets.flagProgress = {
   base: {
     backgroundColor: '{{colors.interfaceInformative010}}',
     color: '{{colors.inkInverse}}',
-    borderRadius: '2px',
+    borderRadius: '{{borders.borderWidth020}}',
     textTransform: 'uppercase'
   }
 };
@@ -32,7 +32,7 @@ stylePresets.flagComplete = {
   base: {
     backgroundColor: '{{colors.interfacePositive010}}',
     color: '{{colors.inkInverse}}',
-    borderRadius: '2px',
+    borderRadius: '{{borders.borderWidth020}}',
     textTransform: 'uppercase'
   }
 };
@@ -46,8 +46,16 @@ stylePresets.puzzleCard = {
     textAlign: 'center'
   }
 };
+
 stylePresets.puzzleCardLink = {
   base: {
     color: '{{colors.inkContrast}}'
+  }
+};
+
+stylePresets.puzzleCardMedia = {
+  base: {
+    borderRadius:
+      '{{borders.borderRadiusRounded010}} {{borders.borderRadiusRounded010}} 0 0'
   }
 };

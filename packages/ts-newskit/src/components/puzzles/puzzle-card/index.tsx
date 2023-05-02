@@ -8,9 +8,8 @@ import {
   TextBlock,
   Block
 } from 'newskit';
-import { Wrap } from './styles';
+import { Wrap, StyledNewsKitPuzzlePlaceholder } from './styles';
 import { PuzzleCardItem } from './types';
-import { NewsKitPuzzlePlaceholder } from './assets';
 import { PuzzlesFlag } from '../flag';
 
 interface PuzzleCardProps {
@@ -20,7 +19,7 @@ interface PuzzleCardProps {
 export const PuzzleCard = ({ data }: PuzzleCardProps) => {
   const timestamp = new Date(data.publishedAt);
   const dayOfWeek = timestamp.toLocaleString('en-us', { weekday: 'long' });
-  const imageUrl = data.image && data.image.src ? data.image.src : '';
+  const imageUrl = data.image!.src || '';
 
   return (
     <CardComposable
@@ -32,13 +31,6 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
           md: '186.67px',
           lg: '211.33px',
           xl: '261.33px'
-        },
-        width: {
-          xs: '126px',
-          sm: '206px',
-          md: '154px',
-          lg: '218px',
-          xl: '293px'
         },
         stylePreset: 'puzzleCard'
       }}
@@ -52,19 +44,13 @@ export const PuzzleCard = ({ data }: PuzzleCardProps) => {
               src: imageUrl,
               placeholderIcon: true,
               overrides: {
-                maxHeight: {
-                  xs: '84px',
-                  sm: '137.33px',
-                  md: '102.67px',
-                  lg: '145.33px',
-                  xl: '195.33px'
-                }
+                stylePreset: 'puzzleCardMedia'
               }
             }}
             data-testid="puzzle-image"
           />
         ) : (
-          <NewsKitPuzzlePlaceholder data-testid="puzzle-placeholder" />
+          <StyledNewsKitPuzzlePlaceholder data-testid="puzzle-placeholder" />
         )}
         {data.status && (
           <Wrap>

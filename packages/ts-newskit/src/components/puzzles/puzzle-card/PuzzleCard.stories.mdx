@@ -10,28 +10,48 @@ import { PuzzlesWebLightTheme } from '../../../theme';
 />
 
 # PuzzleCard component
-The `PuzzleCard` component is used to display puzzle card.
+The `PuzzleCard` component is used to display a puzzle card.
 
-This takes in a `data` props, as below, to display the card.
+This component takes in the following props:
 
 ## Props
 <Props of={PuzzleCard} />
 
+- `id` (number): The ID of the puzzle.
+- `shortIdentifier` (string): The short identifier of the puzzle.
+- `title` (string): The title of the puzzle.
+- `publishedAt` (string): The publish date of the puzzle.
+- `status` (string): The status of the puzzle.
+- `url` (string): The URL of the puzzle.
+- `image` (object): The image object that contains the source and caption.
+
 ## Code Example
-`<PuzzleCard data={ puzzles.list[0] }/>`
+`<PuzzleCard data={ id, shortIdentifier, title, publishedAt, status, url, image } />`
 
 ## View Component
 Please click the 'Canvas' tab for a better viewing experience, where you can review and configure with different titles.
 
-export const PuzzleCardStory = ({ data }) => (
+export const PuzzleCardStory = ({id, shortIdentifier, title, publishedAt, status, url, image}) => (
   <NewsKitProvider theme={PuzzlesWebLightTheme}>
-    <PuzzleCard {...{ data }} />
+    <PuzzleCard data={{id, shortIdentifier, title, publishedAt, status, url, image}} />
   </NewsKitProvider>
 );
 
 <Story
   name="PuzzleCard"
-  args={{data: puzzles.list[0]}} 
+  argTypes={{
+    publishedAt: { control: 'date' },
+    status: { control: "select", options: ["COMPLETE", "IN PROGRESS"] }
+  }}
+  args={{
+    id: puzzles.list[0].id,
+    shortIdentifier: puzzles.list[0].shortIdentifier,
+    title: puzzles.list[0].title,
+    publishedAt: puzzles.list[0].publishedAt,
+    status: puzzles.list[0].status,
+    url: puzzles.list[0].url,
+    image: puzzles.list[0].image,
+  }}
 >
   {PuzzleCardStory.bind({})}
 </Story>
