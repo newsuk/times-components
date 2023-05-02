@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.31.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.31.0...@times-components/ts-newskit@1.31.1) (2023-05-02)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** add missing article type to lead story ([#3338](https://github.com/newsuk/times-components/issues/3338)) ([5bc7c66](https://github.com/newsuk/times-components/commit/5bc7c66c4f8f0dde2ab3836d03793b3409b9b8fe))
+
+
+
+
+
 # [1.31.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.30.0...@times-components/ts-newskit@1.31.0) (2023-04-28)
 
 
