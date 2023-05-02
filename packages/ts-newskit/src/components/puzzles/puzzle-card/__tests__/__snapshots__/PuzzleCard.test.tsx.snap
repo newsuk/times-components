@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Puzzle Card should render Puzzle Card 1`] = `
+<DocumentFragment>
+  <div
+    class="css-z9y7jf"
+  >
+    <div
+      class="css-13byt3y"
+      style="position: relative;"
+    >
+      <svg
+        class="css-17hrftr"
+        data-testid="puzzle-placeholder"
+        fill="none"
+        viewBox="0 0 293 196"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          clip-path="url(#clip0_3503_95754)"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M0 4C0 1.79086 1.79086 0 4 0H289C291.209 0 293 1.79086 293 4V195.333H0V4Z"
+            fill="currentcolor"
+            fill-rule="evenodd"
+          />
+        </g>
+        <defs>
+          <clippath
+            id="clip0_3503_95754"
+          >
+            <path
+              d="M0 4C0 1.79086 1.79086 0 4 0H289C291.209 0 293 1.79086 293 4V195.333H0V4Z"
+              fill="currentcolor"
+            />
+          </clippath>
+        </defs>
+      </svg>
+      <div
+        class="css-7wldo2"
+      >
+        <div
+          class="css-vylmno"
+          data-testid="flag"
+        >
+          <span
+            class="css-n79ak9"
+          >
+            COMPLETE
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-5p0hht"
+    >
+      <a
+        class="css-1r8aulg"
+        data-testid="puzzleCard-link"
+        href="https://www.newskit.co.uk/"
+      >
+        <span
+          class="css-pqzzby"
+        >
+          <span
+            class="css-1xzc2un"
+          >
+            <div
+              class="css-12p5eap"
+            >
+              General Knowledge
+            </div>
+          </span>
+          <span
+            class="css-1xzc2un"
+          >
+            <svg
+              class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+              fill="currentColor"
+              focusable="false"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                External link
+              </title>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+              />
+            </svg>
+          </span>
+        </span>
+      </a>
+      <div
+        class="css-1dfr6je"
+      >
+        <div
+          class="css-13byt3y"
+        >
+          <span
+            class="css-1x9evae"
+          >
+            Sunday
+          </span>
+          <span
+            class="css-178hr5"
+          >
+             | No. 9873
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
