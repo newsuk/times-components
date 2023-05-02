@@ -50,7 +50,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
       class="css-diffbd"
     >
       <a
-        class="css-r8jvu5"
+        class="css-5huxlf"
         data-testid="storyCard-link"
         href="https://newskit.co.uk/"
       >
@@ -103,7 +103,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
         class="css-1wxz2ss"
       >
         <div
-          class="css-1bbuehr"
+          class="css-5pyblu"
           data-testid="tag"
         >
           <span
@@ -113,7 +113,7 @@ exports[`Render puzzles story card should render a snapshot 1`] = `
           </span>
         </div>
         <div
-          class="css-kiz99p"
+          class="css-1nxfrzf"
           data-testid="tag"
         >
           <span
