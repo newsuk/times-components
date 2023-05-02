@@ -1,5 +1,5 @@
 {
-  "section": { "title": "Rugby Union", "color" : "#008347" },
+  "section": { "title": "Rugby Union", "color": "#008347" },
   "leadStory": {
     "headline": "Sarcacens an inclusive club? They didnt look out for me",
     "color": "#008347",
@@ -9,8 +9,9 @@
     "subHeadline": "JOEL KPOKU INTERVIEW",
     "caption": "Caption One Line Dummy Caption Here",
     "image": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7bfd3356-be8c-11e7-8bb9-94e1372175c0.jpg?crop=1500%2C1200%2C0%2C0",
-    "url": "https://www.thetimes.co.uk"
-  },  
+    "url": "https://www.thetimes.co.uk",
+    "articleType": "Review"
+  },
   "articles": [
     {
       "image": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3c293bea-c74a-11ed-84e7-e2697ffed9a9.jpg?crop=2721%2C1531%2C216%2C63",
