@@ -33,7 +33,7 @@ export const PuzzleCard = ({
 }: PuzzleCardProps) => {
   const timestamp = new Date(publishedAt);
   const dayOfWeek = timestamp.toLocaleString('en-us', { weekday: 'long' });
-  const imageUrl = image!.src || '';
+  const imageUrl = image ? image.src : '';
 
   return (
     <CardComposable
