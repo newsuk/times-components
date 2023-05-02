@@ -56,7 +56,7 @@ export const StoryCard: FC<StoryCardProps> = ({
             externalIcon: {
               size: '0'
             },
-            stylePreset: 'StoryCardLink'
+            stylePreset: 'inkContrast'
           }}
         >
           <Headline
@@ -74,18 +74,22 @@ export const StoryCard: FC<StoryCardProps> = ({
         <GridLayout columns="repeat(2, auto)" columnGap="space020">
           <Tag
             overrides={{
-              stylePreset: 'StoryCardCategory',
+              stylePreset: 'inkContrast',
               typographyPreset: 'utilityLabel010',
-              minHeight: '16px'
+              minHeight: '16px',
+              paddingBlock: '0',
+              paddingInline: '0'
             }}
           >
             {category}
           </Tag>
           <Tag
             overrides={{
-              stylePreset: 'StoryCardTime',
+              stylePreset: 'inkSubtle',
               typographyPreset: 'utilityLabel010',
-              minHeight: '16px'
+              minHeight: '16px',
+              paddingBlock: '0',
+              paddingInline: '0'
             }}
           >
             {timeToRead}

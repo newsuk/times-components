@@ -10,7 +10,6 @@ import { secondaryNavigationStylePresets } from './secondary-nav';
 import { sliceStylePresets } from './slices';
 import { textStylePresets } from './text';
 import { flagStylePresets } from './flag';
-import { storyCardStylePresets } from './storyCard';
 import { accordionStylePresets } from './accordion';
 import { feedbackStylePresets } from './feedback';
 import { buttonStylePresets } from './buttons';
@@ -30,6 +29,5 @@ export const stylePresets = {
   ...sliceStylePresets,
   ...flagStylePresets,
   ...accordionStylePresets,
-  ...storyCardStylePresets,
   ...feedbackStylePresets
 };
