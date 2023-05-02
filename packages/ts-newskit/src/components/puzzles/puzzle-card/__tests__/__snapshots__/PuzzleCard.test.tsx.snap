@@ -3,14 +3,14 @@
 exports[`Puzzle Card should render Puzzle Card 1`] = `
 <DocumentFragment>
   <div
-    class="css-kg3sfy"
+    class="css-z9y7jf"
   >
     <div
       class="css-13byt3y"
       style="position: relative;"
     >
       <svg
-        class="css-j6fc06"
+        class="css-17hrftr"
         data-testid="puzzle-placeholder"
         fill="none"
         viewBox="0 0 293 196"
@@ -22,7 +22,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
           <path
             clip-rule="evenodd"
             d="M0 4C0 1.79086 1.79086 0 4 0H289C291.209 0 293 1.79086 293 4V195.333H0V4Z"
-            fill="#FFEED9"
+            fill="currentcolor"
             fill-rule="evenodd"
           />
         </g>
@@ -32,7 +32,7 @@ exports[`Puzzle Card should render Puzzle Card 1`] = `
           >
             <path
               d="M0 4C0 1.79086 1.79086 0 4 0H289C291.209 0 293 1.79086 293 4V195.333H0V4Z"
-              fill="white"
+              fill="currentcolor"
             />
           </clippath>
         </defs>
