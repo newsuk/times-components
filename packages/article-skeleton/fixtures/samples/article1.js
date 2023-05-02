@@ -848,7 +848,7 @@ export default {
       hasVideo: false,
       headline:
         "Tokyo Olympics: ‘Denmark bent rules and caused crash’ that ended British team’s hopes",
-      id: "b708d244-f46f-11eb-a2a3-afea84050239",
+      id: "c8bf6998-d498-11ed-b5c3-54651fc826e9",
       label: "Olympics",
       publicationName: "TIMES",
       publishedTime: "2021-08-03T16:00:00.000Z",
