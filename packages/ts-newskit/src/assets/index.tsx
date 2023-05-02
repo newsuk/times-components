@@ -13,6 +13,7 @@ import ChevronIcon from './ChevronIcon';
 import TimesMasthead from './TimesMasthead';
 import SundayTimesMasthead from './SundayTimesMasthead';
 import ChevronRigthIcon from './ChevronRightIcon';
+import ArticlePlaceholder from './ArticlePlaceholder';
 import WaveBg from './WaveBg';
 import ThumbsDownIcon from './ThumbsDown';
 import ThumbsUpIcon from './ThumbsUp';
@@ -60,6 +61,10 @@ export const NewsKitChevronRightIcon = customToNewsKitIcon(
   props => <ChevronRigthIcon {...props} />
 );
 
+export const NewsKitArticlePlaceholder = customToNewsKitIcon(
+  'NewsKitArticlePlaceholder',
+  props => <ArticlePlaceholder {...props} />
+);
 export const NewsKitWaveBg = customToNewsKitIcon('NewskitWaveBg', props => (
   <WaveBg {...props} />
 ));
