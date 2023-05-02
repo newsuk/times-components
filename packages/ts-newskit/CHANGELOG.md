@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.31.1](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.31.0...@times-components/ts-newskit@1.31.1) (2023-05-02)
+
+
+### Bug Fixes
+
+* **TMRX-0000:** add missing article type to lead story ([#3338](https://github.com/newsuk/times-components/issues/3338)) ([5bc7c66](https://github.com/newsuk/times-components/commit/5bc7c66c4f8f0dde2ab3836d03793b3409b9b8fe))
+
+
+
+
+
+# [1.31.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.30.0...@times-components/ts-newskit@1.31.0) (2023-04-28)
+
+
+### Features
+
+* **TMRX-1198:** update logic for close button ([#3339](https://github.com/newsuk/times-components/issues/3339)) ([c3171c3](https://github.com/newsuk/times-components/commit/c3171c3d9e2c0bed0909a7e4bb91e3aa75cbd5cf))
+
+
+
+
+
+# [1.30.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.29.0...@times-components/ts-newskit@1.30.0) (2023-04-28)
+
+
+### Features
+
+* **TMRX-1186:** Update ts-newskit package with new theme ([#3335](https://github.com/newsuk/times-components/issues/3335)) ([5321902](https://github.com/newsuk/times-components/commit/5321902425beaf1611530efff911eea480490833))
+
+
+
+
+
 # [1.29.0](https://github.com/newsuk/times-components/compare/@times-components/ts-newskit@1.28.0...@times-components/ts-newskit@1.29.0) (2023-04-28)
 
 

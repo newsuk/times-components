@@ -58,10 +58,10 @@ export const navStylePresets = {
       borderBottom: '4px solid transparent'
     },
     hover: {
-      borderBottom: '4px solid black'
+      borderBottom: '4px solid {{colors.black}}'
     },
     selected: {
-      borderBottom: '4px solid black'
+      borderBottom: '4px solid {{colors.black}}'
     }
   },
   moreSubMenu: {
@@ -72,7 +72,7 @@ export const navStylePresets = {
   subMenuItem: {
     base: {
       backgroundColor: '#222222',
-      borderBottom: 'solid 1px #333333',
+      borderBottom: 'solid 1px {{colors.neutral080}}',
       color: '{{colors.white}}'
     },
     hover: {

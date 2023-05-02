@@ -11,7 +11,7 @@ export const leadStoryStylePresets = {
       textDecoration: 'none'
     }
   },
-  leadStoryTextColor: {
+  leadStoryText: {
     base: {
       color: '{{colors.grey010}}'
     }

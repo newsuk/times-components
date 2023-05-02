@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.98.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.97.15...@times-components/article-skeleton@1.98.0) (2023-04-28)
+
+
+### Features
+
+* **TNLT-10974:** Remove ads from coronation article ([#3340](https://github.com/newsuk/times-components/issues/3340)) ([abe17e5](https://github.com/newsuk/times-components/commit/abe17e5c4ce340201b7d6ada283412cce7296488))
+
+
+
+
+
 ## [1.97.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.97.14...@times-components/article-skeleton@1.97.15) (2023-04-26)
 
 **Note:** Version bump only for package @times-components/article-skeleton
