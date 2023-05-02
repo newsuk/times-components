@@ -9,8 +9,7 @@ import {
   Divider,
   useTheme
 } from 'newskit';
-import { ContainerInline } from './styles';
-import { ColouredText } from '../shared-styles';
+import { ColouredText, ContainerInline } from '../shared-styles';
 
 export interface ArticleListItemProps {
   image?: string;

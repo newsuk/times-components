@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render puzzles story card should render a snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="css-9de76o"
+  >
+    <div
+      class="css-9fndha"
+    >
+      <div
+        class="css-1kwj960"
+      >
+        <picture
+          class="css-18ycrwi"
+        >
+          <div
+            class="css-5pczz7"
+          >
+            <div
+              class="css-1q2lbmy"
+            >
+              <svg
+                aria-hidden="true"
+                class="css-cn3v4a-EmotionIconBase ex0cdmw0"
+                fill="currentColor"
+                focusable="false"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"
+                />
+              </svg>
+            </div>
+          </div>
+          <img
+            alt="Some alt text"
+            class="css-1qgqq71"
+            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F086a8da2-dec6-11ed-9cc2-0f7e26ed83eb.jpg?crop=3995%2C2247%2C0%2C208&resize=498"
+          />
+        </picture>
+      </div>
+    </div>
+    <div
+      class="css-diffbd"
+    >
+      <a
+        class="css-5huxlf"
+        data-testid="storyCard-link"
+        href="https://newskit.co.uk/"
+      >
+        <span
+          class="css-pqzzby"
+        >
+          <span
+            class="css-1xzc2un"
+          >
+            <section
+              class="css-1ep19sd"
+            >
+              <h3
+                class="nk-headline-heading css-1spnxj1"
+              >
+                ChatGPT invents Sudoku-style puzzle to keep the humans busy
+              </h3>
+            </section>
+          </span>
+          <span
+            class="css-1xzc2un"
+          >
+            <svg
+              class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+              fill="currentColor"
+              focusable="false"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                External link
+              </title>
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"
+              />
+            </svg>
+          </span>
+        </span>
+      </a>
+    </div>
+    <div
+      class="css-2drvku"
+    >
+      <div
+        class="css-1wxz2ss"
+      >
+        <div
+          class="css-5pyblu"
+          data-testid="tag"
+        >
+          <span
+            class="css-n79ak9"
+          >
+            Review
+          </span>
+        </div>
+        <div
+          class="css-1nxfrzf"
+          data-testid="tag"
+        >
+          <span
+            class="css-n79ak9"
+          >
+            4 min read
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

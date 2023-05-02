@@ -112,11 +112,29 @@ exports[`Render Content Bucket 1 Slice Slice matches snapshot 1`] = `
                   </span>
                 </a>
               </p>
-              <p
-                class="css-16wx5b7"
+              <div
+                class="css-13byt3y"
               >
-                4 min read
-              </p>
+                <span
+                  class="css-1bfgzir"
+                >
+                  Review
+                </span>
+                <div
+                  class="css-lew009"
+                >
+                  <hr
+                    aria-hidden="true"
+                    class="css-b2ej4n"
+                    data-testid="divider"
+                  />
+                </div>
+                <span
+                  class="css-u3nbck"
+                >
+                  4 min read
+                </span>
+              </div>
             </div>
             <div
               class="css-11qxz0s"
