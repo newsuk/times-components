@@ -52,11 +52,7 @@ exports[`Render Archive should render a snapshot 1`] = `
       >
         <div
           aria-labelledby="nk-1"
-<<<<<<< HEAD
           class="css-13x0634"
-=======
-          class="css-rujccu"
->>>>>>> d0ebdfc03 (update snnapshot)
           data-testid="accordion-content"
           id="nk-29-content"
           role="region"
@@ -90,17 +86,10 @@ exports[`Render Archive should render a snapshot 1`] = `
                           href="https://www.newskit.co.uk/components/accordion/"
                         >
                           <div
-<<<<<<< HEAD
                             class="css-1r6lj58"
                           >
                             <label
                               class="css-6ye54p"
-=======
-                            class="css-uvlugr"
-                          >
-                            <label
-                              class="css-zhjf1k"
->>>>>>> d0ebdfc03 (update snnapshot)
                             >
                               Jumbo
                             </label>
@@ -109,10 +98,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Fri
                               </div>
@@ -187,10 +180,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Thu
                               </div>
@@ -247,10 +244,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Sun
                               </div>
@@ -323,10 +324,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Sat
                               </div>
@@ -383,10 +388,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Fri
                               </div>
@@ -461,10 +470,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Thu
                               </div>
@@ -521,10 +534,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Wed
                               </div>
@@ -579,10 +596,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                           </svg>
                           <p
 <<<<<<< HEAD
+<<<<<<< HEAD
                             class="css-pe2a7o"
 =======
                             class="css-wt2eve"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                            class="css-uvqptz"
+>>>>>>> b28b48ebf (update snapshot)
                           >
                             See more
                           </p>
@@ -705,10 +726,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Fri
                               </div>
@@ -765,10 +790,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Thu
                               </div>
@@ -825,10 +854,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Sun
                               </div>
@@ -901,10 +934,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                           </svg>
                           <p
 <<<<<<< HEAD
+<<<<<<< HEAD
                             class="css-pe2a7o"
 =======
                             class="css-wt2eve"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                            class="css-uvqptz"
+>>>>>>> b28b48ebf (update snapshot)
                           >
                             See more
                           </p>
@@ -1027,10 +1064,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Fri
                               </div>
@@ -1087,10 +1128,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Thu
                               </div>
@@ -1147,10 +1192,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Sun
                               </div>
@@ -1223,10 +1272,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                           </svg>
                           <p
 <<<<<<< HEAD
+<<<<<<< HEAD
                             class="css-pe2a7o"
 =======
                             class="css-wt2eve"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                            class="css-uvqptz"
+>>>>>>> b28b48ebf (update snapshot)
                           >
                             See more
                           </p>
@@ -1349,10 +1402,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Fri
                               </div>
@@ -1409,10 +1466,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Thu
                               </div>
@@ -1469,10 +1530,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Sun
                               </div>
@@ -1545,10 +1610,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                           </svg>
                           <p
 <<<<<<< HEAD
+<<<<<<< HEAD
                             class="css-pe2a7o"
 =======
                             class="css-wt2eve"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                            class="css-uvqptz"
+>>>>>>> b28b48ebf (update snapshot)
                           >
                             See more
                           </p>
@@ -1671,10 +1740,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Fri
                               </div>
@@ -1731,10 +1804,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Thu
                               </div>
@@ -1791,10 +1868,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Sun
                               </div>
@@ -1867,10 +1948,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                           </svg>
                           <p
 <<<<<<< HEAD
+<<<<<<< HEAD
                             class="css-pe2a7o"
 =======
                             class="css-wt2eve"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                            class="css-uvqptz"
+>>>>>>> b28b48ebf (update snapshot)
                           >
                             See more
                           </p>
@@ -1993,10 +2078,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Fri
                               </div>
@@ -2053,10 +2142,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Thu
                               </div>
@@ -2113,10 +2206,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                             >
                               <div
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 class="css-4a6i60"
 =======
                                 class="css-1cvlhtx"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                                class="css-18nirtd"
+>>>>>>> b28b48ebf (update snapshot)
                               >
                                 Sun
                               </div>
@@ -2189,10 +2286,14 @@ exports[`Render Archive should render a snapshot 1`] = `
                           </svg>
                           <p
 <<<<<<< HEAD
+<<<<<<< HEAD
                             class="css-pe2a7o"
 =======
                             class="css-wt2eve"
 >>>>>>> d0ebdfc03 (update snnapshot)
+=======
+                            class="css-uvqptz"
+>>>>>>> b28b48ebf (update snapshot)
                           >
                             See more
                           </p>

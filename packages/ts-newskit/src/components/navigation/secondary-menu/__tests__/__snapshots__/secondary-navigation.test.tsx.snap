@@ -18,7 +18,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
           class="css-11tcrto"
         >
           <p
-            class="css-hdv779"
+            class="css-yhevtm"
           >
             Home
           </p>
@@ -32,7 +32,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               type="button"
             >
               <span
-                class="css-1kct0xl"
+                class="css-vx6avn"
               >
                 See all
               </span>
@@ -86,7 +86,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               href="/home"
             >
               <span
-                class="css-10aw0xd"
+                class="css-t9dmcw"
               >
                 Home
               </span>
@@ -102,7 +102,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               href="/news"
             >
               <span
-                class="css-10aw0xd"
+                class="css-t9dmcw"
               >
                 News
               </span>
@@ -118,7 +118,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               href="/comment"
             >
               <span
-                class="css-10aw0xd"
+                class="css-t9dmcw"
               >
                 Comment
               </span>
@@ -134,7 +134,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               href="/life-and-style"
             >
               <span
-                class="css-10aw0xd"
+                class="css-t9dmcw"
               >
                 Life & Style
               </span>
@@ -150,7 +150,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               href="/arts-and-books"
             >
               <span
-                class="css-10aw0xd"
+                class="css-t9dmcw"
               >
                 Arts & Books
               </span>
@@ -166,7 +166,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               href="/sport"
             >
               <span
-                class="css-10aw0xd"
+                class="css-t9dmcw"
               >
                 Sport
               </span>
@@ -182,7 +182,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               href="/business-and-money"
             >
               <span
-                class="css-10aw0xd"
+                class="css-t9dmcw"
               >
                 Business & Money
               </span>
@@ -198,7 +198,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               href="/puzzles"
             >
               <span
-                class="css-10aw0xd"
+                class="css-t9dmcw"
               >
                 Puzzles
               </span>
@@ -214,7 +214,7 @@ exports[`Secondary Menu should render snapshot 1`] = `
               href="/magazines"
             >
               <span
-                class="css-10aw0xd"
+                class="css-t9dmcw"
               >
                 Magazines
               </span>

@@ -182,7 +182,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Home
                   </span>
@@ -197,7 +197,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/news"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     News
                   </span>
@@ -212,7 +212,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Comment
                   </span>
@@ -227,7 +227,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/life-and-style"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Life & Style
                   </span>
@@ -242,7 +242,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Arts & Books
                   </span>
@@ -257,7 +257,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Sport
                   </span>
@@ -272,7 +272,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/business-and-money"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Business & Money
                   </span>
@@ -287,7 +287,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Puzzles
                   </span>
@@ -302,7 +302,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Magazines
                   </span>
@@ -439,7 +439,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
               href="/times-plus"
             >
               <span
-                class="css-1jzay6n"
+                class="css-1pur78d"
               >
                 Times +
               </span>
@@ -466,7 +466,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
               type="button"
             >
               <span
-                class="css-1jzay6n"
+                class="css-1pur78d"
               >
                 My Account
               </span>
@@ -508,7 +508,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                       href="/account"
                     >
                       <span
-                        class="css-1jzay6n"
+                        class="css-1pur78d"
                       >
                         Manage account
                       </span>
@@ -523,7 +523,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                       href="/change-password"
                     >
                       <span
-                        class="css-1jzay6n"
+                        class="css-1pur78d"
                       >
                         Change password
                       </span>
@@ -538,7 +538,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                       href="/my-newsletters"
                     >
                       <span
-                        class="css-1jzay6n"
+                        class="css-1pur78d"
                       >
                         My Newsletters
                       </span>
@@ -553,7 +553,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                       href="/my-articles"
                     >
                       <span
-                        class="css-1jzay6n"
+                        class="css-1pur78d"
                       >
                         My articles
                       </span>
@@ -568,7 +568,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                       href="/contact-us"
                     >
                       <span
-                        class="css-1jzay6n"
+                        class="css-1pur78d"
                       >
                         Contact us
                       </span>
@@ -583,7 +583,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                       href="/log-out"
                     >
                       <span
-                        class="css-1jzay6n"
+                        class="css-1pur78d"
                       >
                         Log out
                       </span>
@@ -629,7 +629,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Home
                   </span>
@@ -644,7 +644,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/news"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     News
                   </span>
@@ -659,7 +659,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Comment
                   </span>
@@ -674,7 +674,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/life-and-style"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Life & Style
                   </span>
@@ -689,7 +689,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Arts & Books
                   </span>
@@ -704,7 +704,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Sport
                   </span>
@@ -719,7 +719,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/business-and-money"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Business & Money
                   </span>
@@ -734,7 +734,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Puzzles
                   </span>
@@ -749,7 +749,7 @@ exports[`Render TopNav should render the component in loggedIn state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Magazines
                   </span>
@@ -951,7 +951,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Home
                   </span>
@@ -966,7 +966,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/news"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     News
                   </span>
@@ -981,7 +981,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Comment
                   </span>
@@ -996,7 +996,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/life-and-style"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Life & Style
                   </span>
@@ -1011,7 +1011,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Arts & Books
                   </span>
@@ -1026,7 +1026,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Sport
                   </span>
@@ -1041,7 +1041,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/business-and-money"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Business & Money
                   </span>
@@ -1056,7 +1056,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Puzzles
                   </span>
@@ -1071,7 +1071,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Magazines
                   </span>
@@ -1208,7 +1208,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
               href="/login"
             >
               <span
-                class="css-1jzay6n"
+                class="css-1pur78d"
               >
                 Login
               </span>
@@ -1234,7 +1234,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
               href="/"
             >
               <span
-                class="css-1jzay6n"
+                class="css-1pur78d"
               >
                 Subscribe
               </span>
@@ -1311,7 +1311,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/home"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Home
                   </span>
@@ -1326,7 +1326,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/news"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     News
                   </span>
@@ -1341,7 +1341,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/comment"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Comment
                   </span>
@@ -1356,7 +1356,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/life-and-style"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Life & Style
                   </span>
@@ -1371,7 +1371,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Arts & Books
                   </span>
@@ -1386,7 +1386,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/sport"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Sport
                   </span>
@@ -1401,7 +1401,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/business-and-money"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Business & Money
                   </span>
@@ -1416,7 +1416,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/puzzles"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Puzzles
                   </span>
@@ -1431,7 +1431,7 @@ exports[`Render TopNav should render the component in loggedOut state 1`] = `
                   href="/magazines"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Magazines
                   </span>
@@ -1623,7 +1623,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/home"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Home
                   </span>
@@ -1638,7 +1638,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/news"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     News
                   </span>
@@ -1653,7 +1653,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/comment"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Comment
                   </span>
@@ -1668,7 +1668,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/life-and-style"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Life & Style
                   </span>
@@ -1683,7 +1683,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Arts & Books
                   </span>
@@ -1698,7 +1698,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/sport"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Sport
                   </span>
@@ -1713,7 +1713,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/business-and-money"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Business & Money
                   </span>
@@ -1728,7 +1728,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/puzzles"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Puzzles
                   </span>
@@ -1743,7 +1743,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/magazines"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Magazines
                   </span>
@@ -1870,7 +1870,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
               href="/times-plus"
             >
               <span
-                class="css-1jzay6n"
+                class="css-1pur78d"
               >
                 Times +
               </span>
@@ -1897,7 +1897,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
               type="button"
             >
               <span
-                class="css-1jzay6n"
+                class="css-1pur78d"
               >
                 My Account
               </span>
@@ -1939,7 +1939,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                       href="/account"
                     >
                       <span
-                        class="css-1jzay6n"
+                        class="css-1pur78d"
                       >
                         Manage account
                       </span>
@@ -1954,7 +1954,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                       href="/change-password"
                     >
                       <span
-                        class="css-1jzay6n"
+                        class="css-1pur78d"
                       >
                         Change password
                       </span>
@@ -1969,7 +1969,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                       href="/my-newsletters"
                     >
                       <span
-                        class="css-1jzay6n"
+                        class="css-1pur78d"
                       >
                         My Newsletters
                       </span>
@@ -1984,7 +1984,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                       href="/my-articles"
                     >
                       <span
-                        class="css-1jzay6n"
+                        class="css-1pur78d"
                       >
                         My articles
                       </span>
@@ -1999,7 +1999,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                       href="/contact-us"
                     >
                       <span
-                        class="css-1jzay6n"
+                        class="css-1pur78d"
                       >
                         Contact us
                       </span>
@@ -2014,7 +2014,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                       href="/log-out"
                     >
                       <span
-                        class="css-1jzay6n"
+                        class="css-1pur78d"
                       >
                         Log out
                       </span>
@@ -2060,7 +2060,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/home"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Home
                   </span>
@@ -2075,7 +2075,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/news"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     News
                   </span>
@@ -2090,7 +2090,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/comment"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Comment
                   </span>
@@ -2105,7 +2105,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/life-and-style"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Life & Style
                   </span>
@@ -2120,7 +2120,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/arts-and-books"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Arts & Books
                   </span>
@@ -2135,7 +2135,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/sport"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Sport
                   </span>
@@ -2150,7 +2150,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/business-and-money"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Business & Money
                   </span>
@@ -2165,7 +2165,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/puzzles"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Puzzles
                   </span>
@@ -2180,7 +2180,7 @@ exports[`Render TopNav should render the component with Sunday Times Logo 1`] = 
                   href="/magazines"
                 >
                   <span
-                    class="css-1jzay6n"
+                    class="css-1pur78d"
                   >
                     Magazines
                   </span>

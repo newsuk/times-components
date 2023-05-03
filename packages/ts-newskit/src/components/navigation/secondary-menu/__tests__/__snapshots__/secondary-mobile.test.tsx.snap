@@ -15,7 +15,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
         class="css-11tcrto"
       >
         <p
-          class="css-hdv779"
+          class="css-yhevtm"
         >
           Home
         </p>
@@ -29,7 +29,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is expan
             type="button"
           >
             <span
-              class="css-1kct0xl"
+              class="css-vx6avn"
             >
               See all
             </span>
@@ -75,7 +75,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is not e
         class="css-11tcrto"
       >
         <p
-          class="css-hdv779"
+          class="css-yhevtm"
         >
           Home
         </p>
@@ -89,7 +89,7 @@ exports[`Secondary Menu Mobile should render the snapshot when dropdown is not e
             type="button"
           >
             <span
-              class="css-1kct0xl"
+              class="css-vx6avn"
             >
               See all
             </span>
