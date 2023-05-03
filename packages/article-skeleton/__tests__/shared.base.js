@@ -47,7 +47,6 @@ export const renderArticle = (data, header = null) => (
       onVideoPress={() => {}}
       commentingConfig={{ account: "dummiy-spotim-id" }}
       zephrDivs
-      showAudioPlayer
     />
   </ContextProviderWithDefaults>
 );
