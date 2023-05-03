@@ -1,6 +1,7 @@
 import { Meta, Story, Props } from '@storybook/addon-docs'
-import { TCThemeProvider } from '../../../utils/index.tsx';
 import { PuzzlesFlag } from './index.tsx';
+import { NewsKitProvider } from 'newskit';
+import { PuzzlesWebLightTheme } from '../../../theme';
 
 <Meta
   title="Newskit Components/Puzzles/Flag"
@@ -22,9 +23,9 @@ This takes in a status prop, as below, to display the status of the puzzle game.
 Please click the 'Canvas' tab for a better viewing experience, where you can update the props and review at the different breakpoints by clicking the preview icon and selecting from our list of pre-defined breakpoints (XS, SM, MD, LG and XL).
 
 export const FlagStory = ({ status }) => (
-  <TCThemeProvider>
+  <NewsKitProvider theme={PuzzlesWebLightTheme}>
     <PuzzlesFlag {...{ status }} />
-  </TCThemeProvider>
+  </NewsKitProvider>
 );
 
 
