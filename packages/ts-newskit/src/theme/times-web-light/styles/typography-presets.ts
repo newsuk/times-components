@@ -1,10 +1,7 @@
-import themeDefault from './typography-presets.json';
-
 export const typographyPresets = Object.fromEntries(
   Object.entries({
-    ...themeDefault,
     newPreset010: {
-      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
+      fontFamily: 'Roboto-Medium',
       fontWeight: '{{fonts.fontWeight020}}',
       fontSize: '{{fonts.fontSize020}}',
       lineHeight: '{{fonts.fontLineHeight030}}',
@@ -12,7 +9,7 @@ export const typographyPresets = Object.fromEntries(
       fontStretch: 'normal'
     },
     topNav010: {
-      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
+      fontFamily: 'Roboto-Medium',
       fontWeight: '{{fonts.fontWeight020}}',
       fontSize: '{{fonts.fontSize020}}',
       lineHeight: '{{fonts.fontLineHeight010}}',
@@ -23,29 +20,29 @@ export const typographyPresets = Object.fromEntries(
     newPreset020: {
       fontFamily: '{{fonts.fontFamily030.fontFamily}}',
       fontWeight: '{{fonts.fontWeight020}}',
-      fontSize: '{{fonts.newFontSize1}}',
+      fontSize: '15px',
       lineHeight: '{{fonts.fontLineHeight030}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     },
     newPreset030: {
-      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
+      fontFamily: 'Roboto-Medium',
       fontWeight: '{{fonts.fontWeight020}}',
-      fontSize: '{{fonts.newFontSize010}}',
+      fontSize: '13px',
       lineHeight: '{{fonts.fontLineHeight030}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     },
     newPreset040: {
-      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
+      fontFamily: 'Roboto-Medium',
       fontWeight: '{{fonts.fontWeight020}}',
-      fontSize: '{{fonts.newFontSize1}}',
+      fontSize: '15px',
       lineHeight: '{{fonts.fontLineHeight070}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     },
     newPreset050: {
-      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
+      fontFamily: 'Roboto-Medium',
       fontWeight: '{{fonts.fontWeight010}}',
       fontSize: '{{fonts.fontSize020}}',
       lineHeight: '{{fonts.fontLineHeight030}}',
@@ -69,7 +66,7 @@ export const typographyPresets = Object.fromEntries(
       fontStretch: 'normal'
     },
     newPreset080: {
-      fontFamily: '{{fonts.fontFamily040.fontFamily}}',
+      fontFamily: 'TimesModern-Bold',
       fontWeight: '{{fonts.fontWeight030}}',
       fontSize: '{{fonts.fontSize080}}',
       lineHeight: '{{fonts.fontLineHeight040}}',
@@ -77,7 +74,7 @@ export const typographyPresets = Object.fromEntries(
       fontStretch: 'normal'
     },
     newPreset090: {
-      fontFamily: '{{fonts.newFontFamily.fontFamily}}',
+      fontFamily: 'Roboto-Medium',
       fontSize: '{{fonts.fontSize010}}',
       fontWeight: '{{fonts.fontWeight030}}',
       lineHeight: '{{fonts.fontLineHeight050}}',
@@ -103,7 +100,7 @@ export const typographyPresets = Object.fromEntries(
     editorialHeadline082: {
       fontFamily: '{{fonts.fontFamily010.fontFamily}}',
       fontWeight: '{{fonts.fontWeight030}}',
-      fontSize: '{{fonts.fontSize112}}',
+      fontSize: '44px',
       lineHeight: '{{fonts.fontLineHeight030}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
@@ -119,14 +116,14 @@ export const typographyPresets = Object.fromEntries(
     editorialHeadline087: {
       fontFamily: '{{fonts.fontFamily010.fontFamily}}',
       fontWeight: '{{fonts.fontWeight030}}',
-      fontSize: '{{fonts.fontSize117}}',
+      fontSize: '52px',
       lineHeight: '{{fonts.fontLineHeight030}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     },
     sectionHeader010: {
-      fontFamily: '{{fonts.fontFamily040.fontFamily}}',
-      fontSize: '{{fonts.fontSize115}}',
+      fontFamily: 'TimesModern-Bold',
+      fontSize: '44px',
       fontWeight: '{{fonts.fontWeight040}}',
       lineHeight: '{{fonts.fontLineHeight270}}',
       letterSpacing: '{{fonts.fontLetterSpacing020}}',
@@ -170,6 +167,80 @@ export const typographyPresets = Object.fromEntries(
       fontSize: '{{fonts.fontSize010}}',
       fontWeight: '{{fonts.fontWeight010}}',
       lineHeight: '{{fonts.fontLineHeight020}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    editorialItalic060: {
+      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight010}}',
+      fontSize: '{{fonts.fontSize060}}',
+      fontStyle: 'italic',
+      lineHeight: '{{fonts.fontLineHeight050}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    utilityHeading060: {
+      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight030}}',
+      fontSize: '{{fonts.fontSize020}}',
+      lineHeight: '{{fonts.fontLineHeight090}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    editorialItalic050: {
+      fontFamily: '{{fonts.fontFamily010.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight010}}',
+      fontSize: '{{fonts.fontSize050}}',
+      fontStyle: 'italic',
+      lineHeight: '{{fonts.fontLineHeight050}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    utilitySubheadline010: {
+      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight020}}',
+      fontSize: '{{fonts.fontSize030}}',
+      lineHeight: '{{fonts.fontLineHeight070}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    utilitySubheadline020: {
+      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight020}}',
+      fontSize: '{{fonts.fontSize040}}',
+      lineHeight: '{{fonts.fontLineHeight100}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    utilitySubheadline030: {
+      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight020}}',
+      fontSize: '{{fonts.fontSize060}}',
+      lineHeight: '{{fonts.fontLineHeight080}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    utilitySubheadline040: {
+      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight020}}',
+      fontSize: '{{fonts.fontSize070}}',
+      lineHeight: '{{fonts.fontLineHeight100}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    utilitySubheadline050: {
+      fontFamily: '{{fonts.fontFamily030.fontFamily}}',
+      fontWeight: '{{fonts.fontWeight020}}',
+      fontSize: '{{fonts.fontSize080}}',
+      lineHeight: '{{fonts.fontLineHeight090}}',
+      letterSpacing: '{{fonts.fontLetterSpacing010}}',
+      fontStretch: 'normal'
+    },
+    dateCardHeader: {
+      fontFamily: 'TimesModern-Bold',
+      fontSize: '{{fonts.fontSize090}}',
+      fontWeight: '{{fonts.fontWeight040}}',
+      lineHeight: '{{fonts.fontLineHeight070}}',
       letterSpacing: '{{fonts.fontLetterSpacing010}}',
       fontStretch: 'normal'
     }
