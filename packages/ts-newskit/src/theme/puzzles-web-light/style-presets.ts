@@ -18,3 +18,11 @@ stylePresets.puzzlesCenterAlignedText = {
     textAlign: 'center'
   }
 };
+
+stylePresets.dashedDivider = {
+  base: {
+    borderStyle: 'dashed',
+    borderWidth: '{{borders.borderWidth010}}',
+    borderColor: '{{colors.interface060}}'
+  }
+};
