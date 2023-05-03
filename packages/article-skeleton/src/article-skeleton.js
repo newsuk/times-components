@@ -9,6 +9,7 @@ import { TrackingContextProvider } from "@times-components/ts-components";
 import { spacing } from "@times-components/ts-styleguide";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
+import InArticleAudio from "@times-components/ts-newskit";
 import StaticContent from "./static-content";
 
 import ArticleBody, { ArticleLink } from "./article-body/article-body";
@@ -51,7 +52,8 @@ const ArticleSkeleton = ({
   isPreview,
   swgProductId,
   getFallbackThumbnailUrl169,
-  zephrDivs
+  zephrDivs,
+  showAudioPlayer
 }) => {
   const {
     commentsEnabled,
@@ -188,6 +190,12 @@ const ArticleSkeleton = ({
                   />
                 )}
                 <Header />
+                {!!showAudioPlayer && (
+                  <>
+                    <InArticleAudio />
+                    <StaticContent html={"<div>Hello Sweetie</div>"} />
+                  </>
+                )}
                 {isSharingSavingEnabled ? (
                   <UserState state={UserState.showSaveAndShareBar}>
                     <MessageContext.Consumer>

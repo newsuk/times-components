@@ -66,7 +66,8 @@ class ArticlePage extends Component {
       paidContentClassName,
       isPreview,
       swgProductId,
-      zephrDivs
+      zephrDivs,
+      showAudioPlayer
     } = this.props;
 
     if (error || isLoading) {
@@ -86,6 +87,7 @@ class ArticlePage extends Component {
         isPreview={isPreview}
         swgProductId={swgProductId}
         zephrDivs={zephrDivs}
+        showAudioPlayer={showAudioPlayer}
       />
     );
   }

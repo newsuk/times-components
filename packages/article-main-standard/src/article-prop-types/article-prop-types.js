@@ -12,7 +12,8 @@ const articlePropTypes = {
   }),
   receiveChildList: PropTypes.func,
   navigationMode: PropTypes.shape({}).isRequired,
-  zephrDivs: PropTypes.bool
+  zephrDivs: PropTypes.bool,
+  showAudioPlayer: PropTypes.bool
 };
 
 const articleDefaultProps = {

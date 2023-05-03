@@ -17,7 +17,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     commentCount,
     zephrDivs,
     sharingSavingFlag = true,
-    commentingFlag = true
+    commentingFlag = true,
+    showAudioPlayer
   } = window.nuk.article;
   const { getCookieValue } = window.nuk;
 
@@ -36,7 +37,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     commentCount,
     zephrDivs,
     sharingSavingFlag,
-    commentingFlag
+    commentingFlag,
+    showAudioPlayer
   };
 
   const clientOptions = {
@@ -45,7 +47,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     headers: {
       "x-new-topic-data-source": true
     },
-    zephrDivs
+    zephrDivs,
+    showAudioPlayer
   };
 
   runClient(article, clientOptions, data);

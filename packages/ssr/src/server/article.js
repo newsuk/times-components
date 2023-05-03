@@ -25,7 +25,8 @@ module.exports = (
     commentCount,
     zephrDivs,
     sharingSavingFlag = true,
-    commentingFlag = true
+    commentingFlag = true,
+    showAudioPlayer
   },
   userState
 ) => {
@@ -78,7 +79,8 @@ module.exports = (
       commentCount,
       zephrDivs,
       sharingSavingFlag,
-      commentingFlag
+      commentingFlag,
+      showAudioPlayer
     },
     name: "article"
   };
