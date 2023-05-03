@@ -5,7 +5,7 @@ import {
 } from "@times-components/ts-components";
 import Image from "@times-components/image";
 import { checkStylesForUnits } from "@times-components/utils";
-
+import InArticleAudio from "@times-components/ts-newskit";
 import Label from "../article-label/article-label";
 import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
@@ -31,6 +31,7 @@ const ArticleHeader = ({
   label,
   publicationName,
   publishedTime,
+  showAudioPlayer,
   standfirst,
   updatedTime
 }) => (
@@ -50,6 +51,14 @@ const ArticleHeader = ({
     >
       {headline}
     </HeadlineContainer>
+    {!!showAudioPlayer && (
+      <>
+        <InArticleAudio {...props} />
+        <StaticContent
+          html={'<div>Hello Sweetie</div>'}
+        />
+      </>
+    )}
     <FlagsContainer>
       <UpdatedTimeProvider updatedTime={updatedTime}>
         <ArticleFlags flags={flags} />
