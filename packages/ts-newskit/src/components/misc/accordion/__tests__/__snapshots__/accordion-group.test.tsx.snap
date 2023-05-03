@@ -26,7 +26,7 @@ exports[`Render Toast should render the component 1`] = `
           >
             <svg
               aria-hidden="true"
-              class="css-bl48kn-EmotionIconBase ex0cdmw0"
+              class="css-1m7j8ss-EmotionIconBase ex0cdmw0"
               fill="currentColor"
               focusable="false"
               viewBox="0 0 24 24"
@@ -50,13 +50,17 @@ exports[`Render Toast should render the component 1`] = `
       >
         <div
           aria-labelledby="nk-1-control"
+<<<<<<< HEAD
           class="css-ltus7y"
+=======
+          class="css-1s3yo5k"
+>>>>>>> d0ebdfc03 (update snnapshot)
           data-testid="accordion-content"
           id="nk-1-content"
           role="region"
         >
           <p
-            class="css-80786y"
+            class="css-z5m428"
           >
             content
           </p>

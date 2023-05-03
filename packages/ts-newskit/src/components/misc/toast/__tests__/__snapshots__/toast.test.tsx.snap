@@ -3,7 +3,7 @@
 exports[`Render Toast should render the component 1`] = `
 <DocumentFragment>
   <div
-    class="css-hmshun"
+    class="css-vy57qy"
     data-testid="toast-container"
   >
     <div
@@ -15,7 +15,7 @@ exports[`Render Toast should render the component 1`] = `
         role="status"
       >
         <p
-          class="css-1hlqbq2"
+          class="css-1eikd47"
         >
           Toast message will display here
         </p>

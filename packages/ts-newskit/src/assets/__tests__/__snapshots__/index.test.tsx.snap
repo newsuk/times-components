@@ -3,7 +3,7 @@
 exports[`Icons Component: NewsKitArticlePlaceholder NewsKitArticlePlaceholder renders with default props 1`] = `
 <DocumentFragment>
   <svg
-    class="css-j6fc06"
+    class="css-ny3roy"
     fill="none"
     height="auto"
     viewBox="0 0 600 400"
@@ -27,7 +27,7 @@ exports[`Icons Component: NewsKitArticlePlaceholder NewsKitArticlePlaceholder re
 exports[`Icons Component: NewsKitBurgerIcon NewsKitBurgerIcon renders with default props 1`] = `
 <DocumentFragment>
   <svg
-    class="css-j6fc06"
+    class="css-ny3roy"
     fill="none"
     height="16"
     viewBox="0 0 16 12"
@@ -46,7 +46,7 @@ exports[`Icons Component: NewsKitChevronIcon NewsKitChevronIcon renders with def
 <DocumentFragment>
   <svg
     aria-hidden="true"
-    class="css-j6fc06"
+    class="css-ny3roy"
     fill="currentcolor"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +66,7 @@ exports[`Icons Component: NewsKitChevronIcon NewsKitChevronIcon renders with def
 exports[`Icons Component: NewsKitChevronRightIcon NewsKitChevronRightIcon renders with default props 1`] = `
 <DocumentFragment>
   <svg
-    class="css-j6fc06"
+    class="css-ny3roy"
     fill="none"
     viewBox="0 0 32 32"
     xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ exports[`Icons Component: NewsKitChevronRightIcon NewsKitChevronRightIcon render
 exports[`Icons Component: NewsKitCloseIcon NewsKitCloseIcon renders with default props 1`] = `
 <DocumentFragment>
   <svg
-    class="css-j6fc06"
+    class="css-ny3roy"
     fill="none"
     height="24"
     width="24"
@@ -122,7 +122,7 @@ exports[`Icons Component: NewsKitCloseIcon NewsKitCloseIcon renders with default
 exports[`Icons Component: NewsKitRoundedCloseIcon NewsKitRoundedCloseIcon renders with default props 1`] = `
 <DocumentFragment>
   <svg
-    class="css-1qej0od"
+    class="css-umzw79"
     fill="none"
     height="16"
     width="16"
@@ -159,7 +159,7 @@ exports[`Icons Component: NewsKitRoundedCloseIcon NewsKitRoundedCloseIcon render
 exports[`Icons Component: NewsKitSearchIcon NewsKitSearchIcon renders with default props 1`] = `
 <DocumentFragment>
   <svg
-    class="css-j6fc06"
+    class="css-ny3roy"
     fill="none"
     height="16"
     viewBox="0 0 16 16"
@@ -177,7 +177,7 @@ exports[`Icons Component: NewsKitSearchIcon NewsKitSearchIcon renders with defau
 exports[`Icons Component: NewsKitSundayTimesMasthead NewsKitSundayTimesMasthead renders with default props 1`] = `
 <DocumentFragment>
   <svg
-    class="css-j6fc06"
+    class="css-ny3roy"
     fill="none"
     height="45"
     viewBox="0 0 520 45"
@@ -251,7 +251,7 @@ exports[`Icons Component: NewsKitSundayTimesMasthead NewsKitSundayTimesMasthead 
 exports[`Icons Component: NewsKitThumbsDownIcon NewsKitThumbsDownIcon renders with default props 1`] = `
 <DocumentFragment>
   <svg
-    class="css-j6fc06"
+    class="css-ny3roy"
     fill="none"
     height="32"
     viewBox="0 0 32 32"
@@ -292,7 +292,7 @@ exports[`Icons Component: NewsKitThumbsDownIcon NewsKitThumbsDownIcon renders wi
 exports[`Icons Component: NewsKitThumbsUpIcon NewsKitThumbsUpIcon renders with default props 1`] = `
 <DocumentFragment>
   <svg
-    class="css-j6fc06"
+    class="css-ny3roy"
     fill="none"
     height="32"
     viewBox="0 0 32 32"
@@ -333,7 +333,7 @@ exports[`Icons Component: NewsKitThumbsUpIcon NewsKitThumbsUpIcon renders with d
 exports[`Icons Component: NewsKitTimesMasthead NewsKitTimesMasthead renders with default props 1`] = `
 <DocumentFragment>
   <svg
-    class="css-j6fc06"
+    class="css-ny3roy"
     fill="none"
     height="53"
     viewBox="0 0 434 53"
@@ -417,7 +417,7 @@ exports[`Icons Component: NewsKitTimesMasthead NewsKitTimesMasthead renders with
 exports[`Icons Component: NewsKitWaveBg NewsKitWaveBg renders with default props 1`] = `
 <DocumentFragment>
   <svg
-    class="css-j6fc06"
+    class="css-ny3roy"
     height="24"
     preserveAspectRatio="none"
     viewBox="0 0 1440 24"
@@ -455,7 +455,7 @@ exports[`Icons Component: NewskitIconBack NewskitIconBack renders with default p
 <DocumentFragment>
   <svg
     aria-hidden="true"
-    class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+    class="css-1my36lh-EmotionIconBase ex0cdmw0"
     fill="currentColor"
     focusable="false"
     viewBox="0 0 24 24"
@@ -477,7 +477,7 @@ exports[`Icons Component: NewskitIconEast NewskitIconEast renders with default p
 <DocumentFragment>
   <svg
     aria-hidden="true"
-    class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+    class="css-1my36lh-EmotionIconBase ex0cdmw0"
     fill="currentColor"
     focusable="false"
     viewBox="0 0 24 24"
@@ -499,7 +499,7 @@ exports[`Icons Component: NewskitIconForward NewskitIconForward renders with def
 <DocumentFragment>
   <svg
     aria-hidden="true"
-    class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+    class="css-1my36lh-EmotionIconBase ex0cdmw0"
     fill="currentColor"
     focusable="false"
     viewBox="0 0 24 24"

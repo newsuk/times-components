@@ -20,13 +20,13 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
           aria-label="Play"
           aria-live="polite"
           aria-pressed="false"
-          class="css-1vd1omt"
+          class="css-7ycgmb"
           data-testid="audio-player-play-pause-button"
           type="button"
         >
           <svg
             aria-hidden="true"
-            class="css-1su91n6"
+            class="css-mxa34f"
             fill="currentColor"
             viewBox="0 0 64 64"
             xmlns="http://www.w3.org/2000/svg"
@@ -41,19 +41,19 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
           class="css-1iuvgg2"
         >
           <p
-            class="css-1lyk11c"
+            class="css-1f17fhc"
           >
             Playing
           </p>
           <p
-            class="css-nv3u4r"
+            class="css-19ti35d"
           >
             Narrated by James Marriott
           </p>
         </div>
       </div>
       <div
-        class="css-bwpmjx"
+        class="css-1m31ofc"
       >
         <div
           class="css-gsu0bj"
@@ -72,13 +72,13 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                   style="width: 480px;"
                 >
                   <p
-                    class="css-ytul36"
+                    class="css-em8uz"
                     style="width: 240px;"
                   >
                     Article headline - James Marriott
                   </p>
                   <p
-                    class="css-ytul36"
+                    class="css-em8uz"
                     style="width: 240px;"
                   >
                     Article headline - James Marriott
@@ -93,13 +93,13 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                   aria-label="Play"
                   aria-live="polite"
                   aria-pressed="false"
-                  class="css-1xklm8t"
+                  class="css-16wgoqe"
                   data-testid="audio-player-play-pause-button"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="css-1i0beyd"
+                    class="css-1126nsi"
                     fill="currentColor"
                     viewBox="0 0 64 64"
                     xmlns="http://www.w3.org/2000/svg"
@@ -116,13 +116,13 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
               >
                 <button
                   aria-label="Close"
-                  class="css-scb009"
+                  class="css-wai3td"
                   data-testid="button"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
@@ -154,13 +154,13 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                   aria-label="Play"
                   aria-live="polite"
                   aria-pressed="false"
-                  class="css-1xklm8t"
+                  class="css-16wgoqe"
                   data-testid="audio-player-play-pause-button"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="css-1i0beyd"
+                    class="css-1126nsi"
                     fill="currentColor"
                     viewBox="0 0 64 64"
                     xmlns="http://www.w3.org/2000/svg"
@@ -180,13 +180,13 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                 >
                   <button
                     aria-label="Mute"
-                    class="css-scb009"
+                    class="css-wai3td"
                     data-testid="mute-button"
                     type="button"
                   >
                     <svg
                       aria-hidden="true"
-                      class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+                      class="css-1my36lh-EmotionIconBase ex0cdmw0"
                       fill="currentColor"
                       focusable="false"
                       viewBox="0 0 24 24"
@@ -213,7 +213,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                       data-testid="volume-control-slider"
                     >
                       <div
-                        class="css-1bdos4z"
+                        class="css-1rylget"
                         data-testid="volume-control-slider-track"
                         values="0.7"
                       >
@@ -225,7 +225,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                           aria-valuemin="0"
                           aria-valuenow="0.7"
                           aria-valuetext="volume level 7 of 10"
-                          class="css-ofkkqx"
+                          class="css-hsn5fu"
                           data-testid="volume-control-slider-thumb"
                           draggable="false"
                           role="slider"
@@ -234,7 +234,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                           values="0.7"
                         >
                           <span
-                            class="css-bcct6d"
+                            class="css-dwx3pl"
                             data-testid="volume-control-slider-feedback"
                           />
                         </div>
@@ -254,7 +254,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                 class="css-1iuvgg2"
               >
                 <span
-                  class="css-fs9xh8"
+                  class="css-gtloop"
                   data-testid="audio-player-time-display"
                 >
                   00:00
@@ -268,7 +268,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                   data-testid="audio-slider"
                 >
                   <div
-                    class="css-1qq0c6x"
+                    class="css-j7b3lo"
                     data-testid="audio-slider-track"
                     values="0"
                   >
@@ -280,7 +280,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                       aria-valuemin="0"
                       aria-valuenow="0"
                       aria-valuetext="Playback time: 0 seconds of 0 seconds"
-                      class="css-d2s48r"
+                      class="css-1gwmfwo"
                       data-testid="audio-slider-thumb"
                       draggable="false"
                       role="slider"
@@ -289,7 +289,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                       values="0"
                     >
                       <span
-                        class="css-bcct6d"
+                        class="css-dwx3pl"
                         data-testid="audio-slider-feedback"
                       />
                     </div>
@@ -307,7 +307,7 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
                 class="css-11r7h3x"
               >
                 <span
-                  class="css-fs9xh8"
+                  class="css-gtloop"
                   data-testid="audio-player-time-display"
                 >
                   00:00
@@ -315,13 +315,13 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
               </div>
               <button
                 aria-haspopup="dialog"
-                class="css-16oh7p0"
+                class="css-45bu9g"
                 data-testid="button"
                 id="ref-floating-ui-3"
                 type="button"
               >
                 <span
-                  class="css-11svpdx"
+                  class="css-1pjbpyz"
                 >
                   Speed
                 </span>
@@ -331,13 +331,13 @@ exports[`StickyPlayerMob renders renders correctly 1`] = `
               >
                 <button
                   aria-label="Close"
-                  class="css-scb009"
+                  class="css-wai3td"
                   data-testid="CloseBtnDesktop"
                   type="button"
                 >
                   <svg
                     aria-hidden="true"
-                    class="css-1jjeofw-EmotionIconBase ex0cdmw0"
+                    class="css-1my36lh-EmotionIconBase ex0cdmw0"
                     fill="currentColor"
                     focusable="false"
                     viewBox="0 0 24 24"
